@@ -46,10 +46,17 @@ Detaliile mici dau viață unui oraș. Dar nu le faci pe rând, una câte una: f
 3. **L**: stâlp și cap — mijloc pe stânga–dreapta și mijloc pe față–spate *(capul stă centrat deasupra stâlpului, ca un T; arată la fel din orice parte)*  
 4. **Ctrl+G** → „felinarul”
 
+**Gata când:**  
+- [ ] Felinarul are stâlp (la **4 mm**) și cap (la **12 mm**), centrat  
+- [ ] Felinarul e grupat  
+
 ### 3) Felinarele în șir
 1. Felinarul → pe zona din spate, la 1 mm de marginea dinspre strada orizontală și la 3 mm de colțul stâng al zonei  
 2. Snap Grid: **2.0 mm** → **Ctrl+D** → muți copia **20 mm** spre dreapta  
 3. **Ctrl+D** de încă 2 ori → **4 felinare** egal distanțate *(Minim)*
+
+**Gata când:**  
+- [ ] Ai **4** felinare egal distanțate (la **20 mm**), la **1 mm** de marginea străzii  
 
 ### 4) Semaforul
 1. **Cylinder** **0,8 · 0,8 · 9** *(stâlpul)* → gri, la **4 mm**  
@@ -58,22 +65,38 @@ Detaliile mici dau viață unui oraș. Dar nu le faci pe rând, una câte una: f
 4. **Ctrl+D** pe sferă → muți copia **1,5 mm în jos** → **galben** → **Ctrl+D** → **1,5 mm în jos** → **verde** *(cele 3 lumini, de sus în jos: roșu, galben, verde)*  
 5. Selectezi stâlpul, cutia și cele 3 sfere → **Ctrl+G**
 
+**Gata când:**  
+- [ ] Semaforul are **3** sfere: roșu, galben, verde  
+- [ ] Semaforul e grupat  
+
 ### 5) Indicatorul
 1. **Cylinder** **0,6 · 0,6 · 7** → gri, la **4 mm**  
 2. **Box** **3 · 0,3 · 3** *(placa)* → roșu sau albastru, la **8 mm**; mijloc pe ambele axe cu stâlpul  
 3. **Ctrl+G**
 
+**Gata când:**  
+- [ ] Indicatorul are stâlp și placă, centrate și grupate  
+
 ### 6) Complet — felinare pe ambele părți
 1. Selectezi cele 4 felinare → **Ctrl+D** → muți copiile **18 mm spre față** *(16 mm cât e golul + 2 mm: ajung pe zona de cealaltă parte a străzii, tot la 1 mm de margine)* — Snap Grid 2.0, 9 sărituri  
 2. Verifici din **Top**: 4 felinare pe fiecare parte a străzii
+
+**Gata când:**  
+- [ ] Ai **4** felinare pe fiecare parte a străzii (din **Top**)  
 
 ### 7) Complet — semafoare la colțuri
 1. Semaforul → la colțul intersecției *(pe zona din dreapta-spate, adică parcul, în colțul dinspre intersecție, la 1 mm de ambele margini)*  
 2. **Ctrl+D** → **18 mm** spre stânga *(colțul de peste strada verticală)* → selectezi ambele → **Ctrl+D** → **18 mm** spre față → **4 semafoare** *(Snap Grid 2.0)*
 
+**Gata când:**  
+- [ ] Ai semafoare la colțurile intersecției  
+
 ### 8) Complet — 3 indicatoare
 1. Indicatorul → pe margini de străzi  
 2. **Ctrl+D** de 2 ori → alte culori și locuri *(unul de **STOP**, unul de **parcare**, unul pentru **pietoni**)*
+
+**Gata când:**  
+- [ ] Ai **3** indicatoare: STOP, parcare, pietoni  
 
 ---
 

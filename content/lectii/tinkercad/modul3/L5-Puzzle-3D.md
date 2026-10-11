@@ -47,10 +47,17 @@ Un dop **asimetric** (al doilea, mai mic) arată cum pui piesa: nu se poate înt
 4. Ridici dopul cu **conul negru** la **20 mm** — stă pe fața de sus a cubului  
 5. Selectezi dopul și cubul → **Ctrl+G** — piesa A
 
+**Gata când:**  
+- [ ] Piesa A: cub **40 · 40 · 20** și dop **16 · 16 · 10** pe fața de sus  
+- [ ] Cubul și dopul sunt grupate  
+
 ### 3) Piesa B — stivuită pe A
 1. **Box** → **40 · 40 · 20**  
 2. Selectezi B și A → **L** → mijloc pe cele două direcții de pe plan  
 3. Ridici B cu conul negru la **20 mm** — stă exact pe A, ca un cub întreg de 40
+
+**Gata când:**  
+- [ ] Piesa B stă exact pe A, ca un cub întreg de **40**  
 
 ### 4) Locașul din B
 1. **Box** → **16,4 · 16,4 · 12** → **Hole** *(scrii zecimala cu punct sau cu virgulă, cum cere Tinkercad)*  
@@ -59,10 +66,19 @@ Un dop **asimetric** (al doilea, mai mic) arată cum pui piesa: nu se poate înt
 4. Din **Front**: locașul înconjoară dopul, cu loc pe lateral  
 5. Selectezi **locașul și B** (nu și A!) → **Ctrl+G** — locaș cu 0,2 mm joc pe fiecare parte
 
+**Gata când:**  
+- [ ] Locașul (**16,4 · 16,4 · 12**, Hole) e la **19 mm**  
+- [ ] Locașul e grupat cu **B**, nu cu A  
+- [ ] Din **Front**, locașul înconjoară dopul, cu joc  
+
 ### 5) Separarea
 1. Selectezi B → o muți **60 mm** lateral (rămâne la aceeași înălțime, în aer — e ok) — sunt acum două piese  
 2. **View Cube** → **Front**: dopul se vede la A, locașul la B  
 3. Muți B **60 mm** înapoi, deasupra lui A (cum era): dopul intră în locaș
+
+**Gata când:**  
+- [ ] B mutată lateral: sunt **două** piese separate  
+- [ ] B pusă la loc: dopul intră în locaș  
 
 ### 6) Complet — al doilea dop și culori
 1. Piesa A → **Ctrl+Shift+G** (desfaci cubul și dopul)  
@@ -73,6 +89,12 @@ Un dop **asimetric** (al doilea, mai mic) arată cum pui piesa: nu se poate înt
 6. Selectezi B, locașul mare și locașul mic → **Ctrl+G**  
 7. **Color**: A o culoare, B alta  
 8. Rotești B cu **180°** (pe loc, săgeata de sus): dopul mic nu mai are locaș — piesele se potrivesc **într-un singur fel**
+
+**Gata când:**  
+- [ ] Al doilea dop (**8 · 8 · 10**) e la **14 mm** de centru, la **20 mm** înălțime  
+- [ ] Locașul mic (**8,4**) e în B, la **14 mm**  
+- [ ] Cu B rotită **180°**, dopul mic nu mai intră: piesele se potrivesc într-un singur fel  
+- [ ] A și B au culori diferite  
 
 ---
 

@@ -41,11 +41,17 @@ Axul e prins în zid; podul e separat și se poate roti pe el.
 2. Snap Grid: **1.0 mm**  
 3. **Box** → **120 · 70 · 4** *(placa)*
 
+**Gata când:**  
+- [ ] Placa are **120 · 70 · 4**  
+
 ### 2) Zidul cu poartă
 1. **Box** → **80 · 8 · 30** *(zidul)*  
 2. **Box** → **20 · 12 · 22** → **Hole** *(poarta)*  
 3. Selectezi poarta și zidul → **L** → mijloc pe cele două direcții de pe plan și punctul de **jos**  
 4. **Ctrl+G** — zid cu deschidere (poarta e mai groasă decât zidul, deci taie complet)
+
+**Gata când:**  
+- [ ] Zidul (**80 · 8 · 30**) are poarta (**20 · 12 · 22**, Hole) tăiată complet  
 
 ### 3) Turnurile
 1. **Cylinder** → **20 · 20 · 40**  
@@ -53,9 +59,16 @@ Axul e prins în zid; podul e separat și se poate roti pe el.
 3. **Ctrl+D** → copia; selectezi copia și zidul → **L** → marginea din **dreapta**  
 4. Selectezi zidul și cele două turnuri → **Ctrl+G** — fortul
 
+**Gata când:**  
+- [ ] Turnurile (**20 · 20 · 40**) sunt la **stânga** și la **dreapta** zidului  
+- [ ] Zidul și turnurile sunt grupate  
+
 ### 4) Fortul pe placă
 1. Selectezi fortul și placa → **L** → mijloc pe cele două direcții de pe plan  
 2. **Ctrl+G** — fortăreață cu podea (placa se vede prin poartă)
+
+**Gata când:**  
+- [ ] Fortul stă centrat pe placă; placa se vede prin poartă  
 
 ### 5) Axul, butucul și podul (le facem lângă fort, apoi le mutăm)
 *Atenție la **Align**: mută **ambele** piese spre mijlocul lor. De aceea facem balamaua întâi separat, o grupăm temporar și abia apoi o aducem la poartă.*  
@@ -65,6 +78,10 @@ Axul e prins în zid; podul e separat și se poate roti pe el.
 4. Tragi butucul și gaura **peste** ax; selectezi **butucul, gaura și axul** → **L** → mijloc pe cele **trei** direcții — toate trei au același centru  
 5. Selectezi **doar butucul și gaura** → **Ctrl+G** — butuc cu gaură; axul rămâne separat și trece prin gaură, cu **0,5 mm** joc pe parte *(gaura 5, axul 4)*
 
+**Gata când:**  
+- [ ] Axul (**4 · 4 · 24**) trece prin butuc (**10 · 10 · 18**), prin gaura de **5 mm**  
+- [ ] Butucul și gaura sunt grupate; axul rămâne separat  
+
 ### 6) Podul
 1. Selectezi **butucul și axul** → **Ctrl+G** *(temporar)* → **D** (stau pe plan)  
 2. **Box** → **18 · 24 · 2** *(podul)* → îl tragi **în fața** butucului  
@@ -73,12 +90,19 @@ Axul e prins în zid; podul e separat și se poate roti pe el.
 5. Selectezi **podul și butucul** → **Ctrl+G** — podul cu balama *(axul nu e în el)*  
 6. Podul (2 mm) stă mai jos decât gaura (care începe la 2,5 mm de jos), deci nu atinge axul
 
+**Gata când:**  
+- [ ] Podul (**18 · 24 · 2**) e grupat cu butucul, fără ax  
+- [ ] Podul nu atinge axul  
+
 ### 7) Balama pe poartă
 1. Selectezi **axul** și **podul cu balama** → **Ctrl+G** *(temporar)*  
 2. Selectezi grupul temporar și fortăreața → **L** → mijloc pe direcția stânga–dreapta și pe adâncime  
 3. Snap Grid **1.0** → grupul temporar îl muți **7 mm** spre față *(podul iese în față, deci centrul grupului nu e pe ax — mutarea pune axul în mijlocul porții)*  
 4. Îl ridici cu **conul negru** cu **4 mm** — podul stă pe podeaua porții, axul e la **9 mm** de plan  
 5. **Ctrl+Shift+G** pe grupul temporar — ax și pod sunt din nou separate
+
+**Gata când:**  
+- [ ] Axul e la **9 mm** de plan, iar podul stă pe podeaua porții  
 
 ### 8) Verificare
 1. View Cube → **Right**: axul (cerc mic) în gaura butucului  
@@ -93,6 +117,11 @@ Axul e prins în zid; podul e separat și se poate roti pe el.
 3. Selectezi cele 3 creneluri și fortăreața → **Ctrl+G**  
 4. **Ruler**: gaura butucului (5 mm) față de ax (4 mm)  
 5. **Color**: zid, turnuri, pod în culori diferite
+
+**Gata când:**  
+- [ ] Ai **3** creneluri, la **10 mm** unul de altul  
+- [ ] Cu **Ruler**: gaura **5 mm**, axul **4 mm**  
+- [ ] Zidul, turnurile și podul au culori diferite  
 
 ---
 

@@ -48,12 +48,19 @@ Un oraș are adesea un râu. Podul leagă cele două maluri. Aici folosești **H
 
 > **Atenție:** nu selecta placa! Dacă o grupezi și pe ea, găurești tot cartierul.
 
+**Gata când:**  
+- [ ] Râul (**67 · 12 · 2**, Hole) taie zona de parc în două  
+- [ ] Placa nu e atinsă (Hole-ul e grupat doar cu zona de parc)  
+
 ### 3) Apa
 1. Snap Grid: **0.5 mm**  
 2. **Box** → **67 · 12 · 0,5** → **Color** albastru  
 3. **L** cu zona de parc: mijloc pe ambele axe *(în canal)*  
 4. O ridici la **3 mm** *(pe placă)*  
 5. Din **Top**: râu albastru între două maluri verzi *(apa e puțin mai jos decât malurile)*
+
+**Gata când:**  
+- [ ] Apa albastră e în canal, la **3 mm**, puțin mai jos decât malurile  
 
 ### 4) Podul
 1. Snap Grid: **1.0 mm**  
@@ -62,11 +69,18 @@ Un oraș are adesea un râu. Podul leagă cele două maluri. Aici folosești **H
 4. O ridici la **4 mm** *(stă pe cele două maluri)*  
 5. **Color**: gri sau maro
 
+**Gata când:**  
+- [ ] Podul (**8 · 20 · 2**) e la **4 mm** și are câte **4 mm** pe fiecare mal  
+
 ### 5) Parapetele
 1. **Box** → **1 · 20 · 1,5**  
 2. **L** cu platforma: marginea din **stânga** *(la stânga și în față–spate: mijloc)*; ridicat la **6 mm** *(pe platformă)*  
 3. **Ctrl+D** → muți copia **7 mm spre dreapta** → parapetul de la marginea din dreapta  
 4. Selectezi platforma și parapetele → **Ctrl+G** → „podul”
+
+**Gata când:**  
+- [ ] Ai **2** parapete, câte unul pe fiecare margine  
+- [ ] Podul (platformă + parapete) e grupat  
 
 ### 6) Complet — stâlpi
 1. **Cylinder** **1,5 · 1,5 · 4**, ridicat la **6 mm**  
@@ -75,12 +89,19 @@ Un oraș are adesea un râu. Podul leagă cele două maluri. Aici folosești **H
 4. Selectezi ambii stâlpi → **Ctrl+D** → selectezi și platforma → **L** → punctul din **față** *(copiile se aliniază cu capătul din față al podului)*  
 5. Din **Top**: câte un stâlp la fiecare colț al podului
 
+**Gata când:**  
+- [ ] Ai câte un stâlp la fiecare colț al podului (din **Top**)  
+
 ### 7) Complet — barca
 1. Snap Grid: **0.5 mm**  
 2. **Box** **8 · 3 · 1** *(corpul)* maro, pe apă, la **3,5 mm**, departe de pod  
 3. **Cylinder** **0,6 · 0,6 · 6** *(catargul)*, pe mijlocul bărcii, ridicat la **4,5 mm**  
 4. **Box** **3 · 0,3 · 4** *(pânza)* albă, lipită de catarg, la **6 mm**  
 5. **Ctrl+G** pe barcă
+
+**Gata când:**  
+- [ ] Barca (corp, catarg, pânză) stă pe apă, departe de pod  
+- [ ] Barca e grupată  
 
 ---
 

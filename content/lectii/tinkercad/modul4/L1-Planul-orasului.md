@@ -43,9 +43,15 @@ Scara te ajută să știi cât de mare e o casă, o stradă sau o mașină faț�
 2. Pe foaie, completezi: **1 m = 2 mm** → o casă de 10 m = **__ mm** · o mașină de 4 m = **__ mm** · o stradă de 8 m = **__ mm** *(20 · 8 · 16)*  
 3. Snap Grid: **1.0 mm**
 
+**Gata când:**  
+- [ ] Ai completat pe foaie calculele pentru scara **1 m = 2 mm**  
+
 ### 2) Placa
 1. **Box** → **150 · 150 · 3** *(un pătrat de 75 m × 75 m în realitate)*  
 2. Culoare neutră (gri deschis)
+
+**Gata când:**  
+- [ ] Placa are **150 · 150 · 3** și o culoare neutră  
 
 ### 3) Cele 4 zone
 1. **Box** → **67 · 67 · 1** → **L** cu placa → punctul din **stânga** și punctul din **spate** *(colțul din stânga-spate)*  
@@ -56,10 +62,19 @@ Scara te ajută să știi cât de mare e o casă, o stradă sau o mașină faț�
 6. Între zone rămâne un gol de **16 mm** — acolo vor veni străzile  
 7. **Color** pe zone: **stânga-spate** = locuințe (galben), **dreapta-spate** = parc (verde), **stânga-față** = centru (portocaliu), **dreapta-față** = clădiri publice (albastru)
 
+**Gata când:**  
+- [ ] Ai **4** zone (**67 · 67 · 1**), la **3 mm** înălțime  
+- [ ] Între zone sunt **16 mm** (pentru străzi)  
+- [ ] Zonele au culori diferite (locuințe, parc, centru, clădiri publice)  
+
 ### 4) Scara pe placă
 1. **Text** (din Basic Shapes) → scrii `1 m = 2 mm`; înălțime (Height) **1 mm**; îl tragi de pătratele albe până are cam **30 mm** lungime  
 2. Îl pui **pe zona de locuințe**, lângă marginea plăcii, ridicat la **4 mm** *(NU în golurile dintre zone: în L5 acolo vin străzile și ți-ar acoperi textul)*  
 3. Verifici din **Top** că se citește
+
+**Gata când:**  
+- [ ] Textul `1 m = 2 mm` e pe zona de locuințe, la **4 mm**  
+- [ ] Se citește din **Top**  
 
 ### 5) Complet — legenda, numele, săgeata
 1. **Legenda:** 4 pătrățele **5 · 5 · 1** în culorile zonelor, într-un rând pe **zona de parc**, lângă marginea din spate a plăcii, ridicate la **4 mm**, cu câte un **Text** mic lângă fiecare *(„Locuințe”, „Parc”…; poți scrie doar „Loc.”, „Parc”, „Centru”, „Publ.”)*  
@@ -67,6 +82,11 @@ Scara te ajută să știi cât de mare e o casă, o stradă sau o mașină faț�
 3. **Săgeata N:** un **Wedge** sau un **Cone** mic (6 mm) + litera `N`, pe **zona de locuințe**, lângă marginea din spate, la **4 mm**
 
 *(Tot ce scrii rămâne la marginea zonelor, ca să fie loc pentru clădiri. În golurile dintre zone vin străzile.)*
+
+**Gata când:**  
+- [ ] Legenda are **4** pătrățele în culorile zonelor  
+- [ ] Numele cartierului e scris pe zona de centru  
+- [ ] Săgeata **N** e pe zona de locuințe  
 
 ---
 

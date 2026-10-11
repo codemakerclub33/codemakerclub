@@ -49,6 +49,10 @@ Trecerile de pietoni se fac din **dungi egale** — iar Ctrl+D le repetă perfec
 5. Din **Top**: o cruce de asfalt prin golul dintre zone  
 6. **Color**: gri închis
 
+**Gata când:**  
+- [ ] Cele două străzi formează o cruce centrată pe placă, la **3 mm**  
+- [ ] Asfaltul e gri închis  
+
 ### 3) Prima trecere de pietoni
 1. **Box** → **6 · 1 · 0,4** *(o dungă)* → **Color** alb  
 2. **L** cu strada orizontală → mijloc pe stânga–dreapta **și** mijloc pe față–spate; apoi (Snap Grid 5.0) o muți **15 mm spre dreapta** de centrul străzii *(dunga ocupă între 12 și 18 mm de centru, lângă intersecție)*  
@@ -57,13 +61,23 @@ Trecerile de pietoni se fac din **dungi egale** — iar Ctrl+D le repetă perfec
 5. **Ctrl+D** → muți copia **2 mm spre spate** → **Ctrl+D** de încă 4 ori → **6 dungi** egale, între cele două trotuare  
 6. Selectezi cele 6 dungi → **Ctrl+G** → „trecerea”
 
+**Gata când:**  
+- [ ] Trecerea are **6** dungi albe egale, la **4 mm**  
+- [ ] Dungile sunt grupate  
+
 ### 4) A doua trecere
 1. Trecerea → **Ctrl+D** → (Snap Grid 5.0) muți copia **30 mm spre stânga** *(ajunge simetric, de cealaltă parte a intersecției)*  
 2. Verifici din **Top**: câte o trecere de fiecare parte a intersecției
 
+**Gata când:**  
+- [ ] Din **Top**: câte o trecere de fiecare parte a intersecției  
+
 ### 5) Complet — trecerile pe strada verticală
 1. Selectezi ambele treceri → **Ctrl+D** → rotești copiile cu **4 pași** (90°, săgeata curbă; se rotesc în jurul centrului lor, adică al intersecției) → ajung pe strada verticală, simetric  
 2. Din **Top**: 4 treceri, câte una pe fiecare braț al intersecției
+
+**Gata când:**  
+- [ ] Ai **4** treceri, câte una pe fiecare braț al intersecției  
 
 ### 6) Complet — trotuarele
 1. **Box** **67 · 2 · 2** *(un trotuar)* → ridicat la **3 mm** → **Color** gri deschis  
@@ -73,10 +87,16 @@ Trecerile de pietoni se fac din **dungi egale** — iar Ctrl+D le repetă perfec
 5. Selectezi ambele → **Ctrl+D** → muți copiile **14 mm spre față** *(trotuarele de pe partea de jos a străzii)*  
 6. Selectezi cele **4 trotuare** → **Ctrl+D** → rotești copiile **90°** → 4 trotuare pe strada verticală *(poziția trebuie să fie simetrică: dacă un trotuar iese din gol, verifică din Top)*
 
+**Gata când:**  
+- [ ] Ai **4** trotuare pe strada orizontală și **4** pe cea verticală  
+
 ### 7) Complet — sensul giratoriu
 1. **Cylinder** **20 · 20 · 1** *(cercul de asfalt)* → centrat pe placă → ridicat la **3 mm** → gri închis  
 2. **Cylinder** **8 · 8 · 3,5** *(insula)* → centrat pe placă → ridicat la **3 mm** → verde  
 3. Din **Top**: un inel de asfalt în jurul unei insule verzi
+
+**Gata când:**  
+- [ ] Sensul giratoriu are un inel de asfalt (**20 mm**) în jurul unei insule verzi (**8 mm**)  
 
 ---
 

@@ -47,6 +47,9 @@ La finalul orei ai o felie de brânză cu **găuri** care trec prin ea (nu cercu
 2. Îl scalezi ca să arate a **felie**: ~**60 × 40 × 30** (pătrățelele albe)  
 3. Pe plan (dacă plutește → **D**) · rămâne **Solid**
 
+**Gata când:**  
+- [ ] Felia (**Wedge**) are ~**60 × 40 × 30** și stă pe plan  
+
 ### 3) Cilindrii care vor tăia
 1. Felia stă pe plan. Tragi un **Cylinder** — rămâne **în picioare** (vertical). Îl faci **8 × 8** și **înalt de 40** (mai înalt decât felia, care are 30)  
 2. Îl muți **în interiorul** conturului feliei, din **Top** — în partea **înaltă** a rampei, nu pe margine (altfel taie doar un colț)  
@@ -54,16 +57,27 @@ La finalul orei ai o felie de brânză cu **găuri** care trec prin ea (nu cercu
 4. Verifici din **lateral** (View Cube → Front / Right): se vede capătul de sus ieșit deasupra feliei  
 5. **Ctrl+D** pentru încă 2 → muți copia (apare peste) · Minim: **≥3** cilindri. Pentru **Complet** faci unul mai mare (ex. **12 × 12**) și unul mai mic (**5 × 5**) chiar acum, cu **Shift** pe colț
 
+**Gata când:**  
+- [ ] Ai **cel puțin 3** cilindri, **înăuntrul** feliei  
+- [ ] Din lateral, cilindrii ies **deasupra** feliei și pornesc de pe plan  
+
 ### 4) Hole
 1. Selectezi un cilindru (click pe el — ca să se deschidă panoul)  
 2. În panoul **Shape**, alegi **Hole** (varianta cu **dungi**), **nu** Solid  
 3. La fel pentru ceilalți cilindri  
 4. Brânza rămâne **Solid**
 
+**Gata când:**  
+- [ ] Cilindrii au **dungi** (Hole)  
+- [ ] Brânza a rămas **Solid**  
+
 ### 5) Group = se taie
 1. **Ctrl+A** — doar dacă pe plan sunt **numai** brânza + cilindrii. Dacă ai deja și altceva (șoricel…): **Shift+click** pe felie + cilindri  
 2. **Ctrl+G** (Mac: **Cmd+G**)  
 3. Găurile dispar ca piese — rămân **goluri** în felie
+
+**Gata când:**  
+- [ ] După **Group**, în felie sunt goluri, nu cilindri  
 
 ### 6) Verificare
 1. Rotești vederea: găurile se văd și din **spate**?  
@@ -73,6 +87,10 @@ La finalul orei ai o felie de brânză cu **găuri** care trec prin ea (nu cercu
 1. Selectezi **grupul** (brânza cu găuri)  
 2. În panoul **Shape**, lângă Solid/Hole, apeși **Color** → gălbui / portocaliu *(dacă panoul arată altfel la tine, caută pătrățelul de culoare)*  
 3. Găuri de **mărimi diferite**: dacă n-ai deja — **Ctrl+Shift+G** (Ungroup), scalezi un cilindru cu **Shift** pe colț (înălțimea să rămână peste 30), **Ctrl+G** din nou (culoarea poți s-o pui după)
+
+**Gata când:**  
+- [ ] Brânza are culoare  
+- [ ] Găurile au mărimi **diferite**  
 
 ### 8) Complet+ (opțional) — șoricelul
 1. Doar dacă ai terminat Minim + culoare și mai ai timp  

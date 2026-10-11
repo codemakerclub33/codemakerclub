@@ -44,6 +44,9 @@ Cavitățile sunt peste tot: căni, cutii, vaze. **Ordinea pieselor contează** 
 1. Tragi un **Cylinder** și îl faci **40 × 40 × 45** (diametru 40, înălțime 45) — corpul cănii  
 2. Pe plan (dacă plutește → **D**)
 
+**Gata când:**  
+- [ ] Corpul are **40 × 40 × 45** și stă pe plan  
+
 ### 3) Golul (Hole)
 1. Tragi al doilea **Cylinder**, **mai îngust** decât corpul: **32 × 32 × 42** (peretele va avea 4 mm)  
 2. Îl pui pe **Hole** (panoul Shape, varianta cu dungi)  
@@ -52,6 +55,10 @@ Cavitățile sunt peste tot: căni, cutii, vaze. **Ordinea pieselor contează** 
 5. Îl pui **în centru**: selectezi **corpul + golul** (Shift+click), apeși **L** și alegi **punctul din mijloc** pe ambele direcții din Top. Verifici din Top că peretele are aceeași grosime peste tot  
 6. Verifici din **Front**: golul începe **deasupra** planului (5 mm) și iese deasupra marginii cănii
 
+**Gata când:**  
+- [ ] Golul (**Hole**) are **32 × 32 × 42**, începe la **5** mm și iese deasupra marginii  
+- [ ] Din **Top**, peretele are aceeași grosime peste tot  
+
 ### 4) Toarta (Complet) — înainte de Group
 1. Tragi un **Torus** (gogoașă din Basic Shapes) și îl scalezi cu **Shift** la ~**25 mm** diametru  
 2. Îl **rotești la 90°** cu săgeata curbă, ca să stea **vertical** și, din **Front**, să vezi un **cerc** (inel) — dacă vezi doar o linie, rotești 90° pe cealaltă axă  
@@ -59,16 +66,28 @@ Cavitățile sunt peste tot: căni, cutii, vaze. **Ordinea pieselor contează** 
 4. Îl scalezi dacă iese prea mare sau strâmb (pătrățele albe + **Shift**)  
 5. Verifici din **Top**: toarta intră doar în perete (peretele are 4 mm; **nu** intră mai mult de 3 mm, ca să nu ajungă în gol)
 
+**Gata când:**  
+- [ ] Toarta e vertical (din **Front** vezi un cerc)  
+- [ ] Intră cel mult ~3 mm în perete, la ~**10** înălțime  
+
 ### 5) Group
 1. Selectezi **corpul + golul Hole + toarta** (Shift+click)  
 2. **Ctrl+G** (Mac: **Cmd+G**)  
 3. Rotești vederea: cana e goală, are fund, toarta e afară  
 4. Dacă toarta intră în cavitate (Hole-ul o taie), **Ctrl+Shift+G** (Ungroup), o muți spre exterior, **Ctrl+G** din nou
 
+**Gata când:**  
+- [ ] Cana e goală, cu fund  
+- [ ] Toarta e pe exterior, nu în cavitate  
+
 ### 6) Complet
 1. **Color**: selectezi grupul → o singură culoare pentru tot (pentru culori diferite la cană și toartă, le colorezi **înainte** de Group)  
 2. **Model:** cercuri mici sau dungi subțiri lipite pe exterior (formă **Solid**, nu Hole)  
 3. Nume corect
+
+**Gata când:**  
+- [ ] Cana are culoare (sau culori făcute **înainte** de Group)  
+- [ ] Modelul lipit pe exterior e **Solid**, nu Hole  
 
 ---
 

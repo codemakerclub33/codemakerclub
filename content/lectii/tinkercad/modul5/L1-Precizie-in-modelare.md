@@ -48,6 +48,9 @@ Astăzi înveți trei obiceiuri: **tastezi** mărimile, folosești **Snap Grid**
 1. **Box** → mânerul alb din colț → tastezi **60 · 30 · 5**  
 2. Placa stă pe plan; o poți lăsa unde e — **Ruler** se pune mai târziu pe colțul ei
 
+**Gata când:**  
+- [ ] Placa are **60 · 30 · 5**  
+
 ### 3) Prima gaură
 1. **Cylinder** → **6 · 6 · 7** → **Hole**  
 2. Selectezi gaura și placa → **L** → mijloc pe **față–spate** *(centrată pe lățime)*  
@@ -55,9 +58,17 @@ Astăzi înveți trei obiceiuri: **tastezi** mărimile, folosești **Snap Grid**
 4. O muți **7 mm spre dreapta** *(gaura are Ø6; marginea ei din stânga la 7 mm înseamnă centrul la 7 + 3 = **10 mm**)*  
 5. O cobori **1 mm** cu conul negru *(gaura merge de la −1 la 6 mm: trece prin toată placa de 5 mm, cu 1 mm în plus pe fiecare parte)*
 
+**Gata când:**  
+- [ ] Prima gaură (**6 · 6 · 7**, Hole) începe la **7 mm** de marginea stângă  
+- [ ] Gaura trece prin toată placa (coborâtă **1 mm**)  
+
 ### 4) A doua gaură
 1. **Ctrl+D** → muți copia **40 mm spre dreapta** *(40 de apăsări · centrul ajunge la 50 mm: tot la 10 mm de celălalt capăt)*  
 2. Selectezi placa și ambele găuri → **Ctrl+G**
+
+**Gata când:**  
+- [ ] A doua gaură e la **40 mm** de prima (centrul la **50 mm**)  
+- [ ] Placa și găurile sunt grupate  
 
 ### 5) Verificare cu Ruler
 1. Apeși **Ruler** *(colțul din dreapta-sus)* și îl pui pe colțul din stânga-față al plăcii  
@@ -71,6 +82,10 @@ Astăzi înveți trei obiceiuri: **tastezi** mărimile, folosești **Snap Grid**
 4. Cu Ruler: fanta începe la **20 mm** de capătul din stânga și se termină la **40 mm** *(20 + 20)*
 5. Verifici că nu atinge găurile *(găurile se termină la 13 și încep la 47)*
 
+**Gata când:**  
+- [ ] Fanta (**20 · 6 · 7**) începe la **20 mm** și se termină la **40 mm**  
+- [ ] Fanta nu atinge găurile  
+
 ### 7) Fișa de cote *(pe foaie)*
 
 | Element | Mărime | Unde e |
@@ -80,6 +95,9 @@ Astăzi înveți trei obiceiuri: **tastezi** mărimile, folosești **Snap Grid**
 | Gaura 2 | Ø6 | centrul la 50 de margine |
 | Distanța între găuri | 40 | de la centru la centru |
 | Fantă *(Complet)* | 20 · 6 | începe la 20 |
+
+**Gata când:**  
+- [ ] Fișa de cote e completată pe foaie  
 
 ---
 

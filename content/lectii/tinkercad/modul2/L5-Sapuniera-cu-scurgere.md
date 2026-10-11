@@ -47,11 +47,19 @@ Fanta e mai îngustă decât săpunul și **nu atinge pereții**: dacă taie per
 4. Ridici Hole-ul cu **3 mm**, folosind **conul negru**: fund de 3 mm, iar Hole-ul iese 3 mm deasupra  
 5. **Ctrl+A** → **Ctrl+G** — tava goală, cu fund de 3 mm
 
+**Gata când:**  
+- [ ] Tava are **100 · 70 · 20**, cu gol **94 · 64** (Hole)  
+- [ ] Fundul tăvii are **3 mm**  
+
 ### 3) Prima fantă
 1. **Box** → **70 · 6 · 10** → **Hole**  
 2. Selectezi fanta și tava → **L** → mijloc pe **ambele** direcții de pe plan  
 3. Cobori fanta cu **1 mm** sub plan, folosind **conul negru**: să iasă și pe sub fund  
 4. Fanta trece prin fund (3 mm) și **nu atinge pereții**: ea are 70 mm, golul tăvii are 94
+
+**Gata când:**  
+- [ ] Prima fantă (**70 · 6 · 10**, Hole) e centrată  
+- [ ] Trece prin fund și nu atinge pereții  
 
 ### 4) Fantele egale
 1. Snap Grid: **5.0 mm**  
@@ -59,6 +67,9 @@ Fanta e mai îngustă decât săpunul și **nu atinge pereții**: dacă taie per
 3. **Ctrl+D** → muți copia **15 mm** spre spate (3 apăsări) → fanta din mijloc  
 4. **Ctrl+D** din nou — repetă aceeași mutare → a treia fantă  
 5. Rezultat: 3 fante, distanță egală între ele (15 mm între centre; fanta de la margine ajunge la 18 mm de mijloc, iar peretele e la 32 mm — nu-l atinge)
+
+**Gata când:**  
+- [ ] Ai **3** fante, la **15 mm** distanță între centre  
 
 ### 5) Group + verificare
 1. **Ctrl+A** → **Ctrl+G**  
@@ -74,6 +85,11 @@ Fanta e mai îngustă decât săpunul și **nu atinge pereții**: dacă taie per
 6. Ridici **tava** (grupul) cu 4 mm, folosind **conul negru** — tava stă pe piciorușe, apa curge pe dedesubt  
 7. Piciorușele se înfig 1 mm în tavă (5 mm înălțime) — se prind  
 8. **Ctrl+A** → **Ctrl+G** · **Color**
+
+**Gata când:**  
+- [ ] Ai **4** piciorușe (**10 · 10 · 5**), câte unul în fiecare colț  
+- [ ] Tava e ridicată cu **4 mm**, pe piciorușe  
+- [ ] Suportul e colorat  
 
 ---
 

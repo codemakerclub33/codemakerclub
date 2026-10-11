@@ -45,11 +45,18 @@ gaura = cablu **+ 1 mm** · fanta = cablu **− 1 mm** · exteriorul = gaura **+
    gaura = 5 + 1 = **6** · fanta = 5 − 1 = **4** · exteriorul = 6 + 6 = **12**  
 3. Snap Grid: **1.0 mm**
 
+**Gata când:**  
+- [ ] Ai calculat pe foaie: gaura, fanta și exteriorul pentru cablul tău  
+
 ### 2) Inelul
 1. **Cylinder** → **12 · 12 · 12** *(exteriorul și lungimea clemei)*  
 2. Alt **Cylinder** → **6 · 6 · 16** → **Hole** *(gaura cablului, mai lungă decât inelul)*  
 3. Selectezi Hole-ul și cilindrul → **L** → mijloc pe cele **trei** direcții  
 4. **Ctrl+A** → **Ctrl+G**, apoi **D** — un tub scurt, cu pereți de 3 mm, pe plan
+
+**Gata când:**  
+- [ ] Tubul (**12 · 12 · 12**) are gaura **6** (Hole, mai lungă decât tubul)  
+- [ ] Pereții sunt de **3 mm** și tubul stă pe plan  
 
 ### 3) Rotirea
 1. Selectezi tubul → rotești **90°** (4 pași de câte 22,5° pe o săgeată curbă **de pe lateral**, sau scrii **90**)  
@@ -57,16 +64,26 @@ gaura = cablu **+ 1 mm** · fanta = cablu **− 1 mm** · exteriorul = gaura **+
 3. Dacă din **Top** e un cerc, mai rotești 90° pe altă săgeată curbă; dacă dreptunghiul e stânga–dreapta, rotești 90° pe săgeata plată de pe plan  
 4. Dacă tubul a rămas sub plan sau plutește, apasă **D**
 
+**Gata când:**  
+- [ ] Din **Top**, tubul e un dreptunghi lung față–spate (gaura trece de la față la spate)  
+
 ### 4) Plăcuța
 1. **Box** → **30 · 12 · 3** *(plăcuța de prindere)*  
 2. Selectezi tubul și plăcuța → **L** → mijloc pe ambele direcții de pe plan  
 3. Plăcuța și tubul sunt acum amândouă pe plan: selectezi **tubul** și îl ridici cu **conul negru** la **2 mm** (scrii 2): se **înfige 1 mm** în plăcuță (grosime 3) și se prinde
+
+**Gata când:**  
+- [ ] Plăcuța are **30 · 12 · 3**  
+- [ ] Tubul e ridicat la **2 mm** și se înfige 1 mm în plăcuță  
 
 ### 5) Fanta
 1. **Box** → **4 · 12 · 10** → **Hole** *(lățimea 4 mm = cablu − 1)*  
 2. Selectezi fanta și tubul → **L** → **mijloc** pe cele două direcții de pe plan  
 3. Ridici fanta cu **conul negru** la **8 mm** de plan: ea pornește de la mijlocul tubului și iese 4 mm deasupra lui. Fanta taie peretele de sus și lasă cablul să intre apăsat  
 4. **Ctrl+A** → **Ctrl+G**
+
+**Gata când:**  
+- [ ] Fanta (**4 · 12 · 10**, Hole) e la **8 mm** și taie peretele de sus  
 
 ### 6) Găurile de prindere
 1. **Cylinder** → **3 · 3 · 8** → **Hole**  
@@ -75,12 +92,21 @@ gaura = cablu **+ 1 mm** · fanta = cablu **− 1 mm** · exteriorul = gaura **+
 4. **Ctrl+D** → copia + plăcuța → **L** → punctul din **dreapta**, apoi **săgeata stânga** de **4 ori**: la **4 mm** de capătul opus  
 5. **Ctrl+A** → **Ctrl+G**
 
+**Gata când:**  
+- [ ] Cele **2** găuri de prindere (**3 mm**) sunt la **4 mm** de capete  
+- [ ] Trec prin toată plăcuța  
+
 ### 7) Complet — a doua clemă
 1. Un cablu gros de **8 mm**: gaura 9 · fanta 7 · exteriorul 15 — calculezi tu pe foaie  
 2. Refaci pașii 2–6 cu numerele noi: tub **15 · 15 · 15**, Hole **9 · 9 · 19**, plăcuță **36 · 15 · 3**, fantă **7 · 15 · 10** (ridicată la **9 mm**), tubul ridicat la 2 mm, găuri Ø3 la 4 mm de capete  
 3. Pune a doua clemă lângă prima, pe plan  
 4. **Ruler**: măsori gaura (6 mm) și fanta (4 mm) *(Hole-urile se măsoară doar separat: **Ctrl+Shift+G**, măsori, apoi **Ctrl+A** → **Ctrl+G** la loc; la tub: **Ctrl+Shift+G** pe grupul mare, apoi pe tub)*  
 5. **Color**
+
+**Gata când:**  
+- [ ] Ai a doua clemă, pentru un cablu de **8 mm**  
+- [ ] Cu **Ruler**: gaura **6 mm** și fanta **4 mm**  
+- [ ] Clemele sunt colorate  
 
 ---
 

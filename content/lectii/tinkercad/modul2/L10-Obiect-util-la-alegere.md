@@ -54,20 +54,36 @@ Alege **unul** (sau propune tu, cu acordul profesorului):
 2. Scrii **cel puțin 3 mărimi** (ex. 80 × 50 × 20)  
 3. Marchezi unde ai **Hole**, unde ai **piese repetate** și unde piesele **se potrivesc**
 
+**Gata când:**  
+- [ ] Ai desenat obiectul din față și de sus, cu **cel puțin 3** mărimi  
+- [ ] Ai marcat Hole-urile, piesele repetate și potrivirile  
+
 ### 3) Proiect nou și piesa de bază
 1. **Create new design** · nume `Prenume_Nume_T2_L10`  
 2. Snap Grid potrivit (1 mm pentru mărimi fine, 5 mm pentru copii mari)  
 3. Piesa mare întâi (cutia, baza, tubul), cu mărimile din schiță scrise cu numere
+
+**Gata când:**  
+- [ ] Piesa mare are mărimile din schiță, scrise cu numere  
 
 ### 4) Găurile și copiile
 1. Hole-urile: trec prin tot ce vrei să taie și ies puțin (≥1 mm) din piesă, dar nu ating pereții. Un Hole taie **tot** ce e în același Group: piesele pline care trebuie să rămână (ex. pereți interiori) se adaugă **după** Group, apoi Group din nou  
 2. Piese repetate: o dată, apoi **Ctrl+D** + aceeași mutare  
 3. **Align** pentru centre (alegi doar direcțiile de care ai nevoie); după Group, **D** dacă piesa a rămas ridicată de pe plan
 
+**Gata când:**  
+- [ ] Hole-urile trec prin piese și nu ating pereții  
+- [ ] Piesele repetate sunt egale (**Ctrl+D** + aceeași mutare)  
+
 ### 5) Complet
 1. A doua piesă care se potrivește cu prima (capac, farfurie, suport) cu **joc de 0,5 mm pe parte**, **sau** un test: din **Front** partea de sus nu iese în afara bazei  
 2. **Ruler** pe o mărime importantă și compari cu schița  
 3. **Color** coerent
+
+**Gata când:**  
+- [ ] A doua piesă se potrivește cu prima, cu joc de **0,5 mm** pe parte  
+- [ ] Cu **Ruler**, mărimile se potrivesc cu schița  
+- [ ] Culorile se potrivesc între ele  
 
 ### 6) Verificare finală
 1. Rotești vederea din toate părțile: nimic nu plutește  

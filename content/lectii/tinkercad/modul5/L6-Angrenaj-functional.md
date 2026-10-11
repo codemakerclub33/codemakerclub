@@ -48,10 +48,18 @@ Raportul de transmisie arată cât de repede se rotește fiecare roată: **roata
 3. Cu **Ruler** măsori **diametrul exterior** al roții *(distanța dintre marginile ei, sau selectezi roata și citești lungimea din câmpul de mărime)* și îl notezi: **D1 = …**  
 4. Dacă roata nu are gaură în mijloc: **Cylinder** **5,8 · 5,8** și înălțime **cât grosimea roții + 2 mm** → **Hole** → **L** mijloc pe ambele axe cu roata → îl cobori 1 mm → **Ctrl+G**
 
+**Gata când:**  
+- [ ] Roata mică are **12** dinți și gaura **Ø5,8**  
+- [ ] Ai notat diametrul exterior **D1**  
+
 ### 3) Roata mare
 1. Tragi o a doua roată din generator, cu **24 de dinți**; restul valorilor (mărimea dintelui, grosimea) **la fel** ca la prima  
 2. Măsori **D2 = …**  
 3. Dacă nu are gaură: la fel, **Hole Ø5,8**
+
+**Gata când:**  
+- [ ] Roata mare are **24** de dinți și gaura **Ø5,8**  
+- [ ] Ai notat diametrul exterior **D2**  
 
 ### 4) Distanța dintre axe
 1. Distanța teoretică: **d ≈ (D1 + D2) ÷ 2** *(aproximativ; dinții intră unul în altul, deci poate fi puțin mai mică)*  
@@ -62,6 +70,10 @@ Raportul de transmisie arată cât de repede se rotește fiecare roată: **roata
 
 > **Dacă dinții se ciocnesc, dar distanța pare bună:** poate roata mică e doar rotită „nepotrivit”. Rotește-o cu **15°** *(jumătate din pasul unui dinte: 360 ÷ 12 ÷ 2; tastezi unghiul la săgeata curbă)* și privește din nou din **Top**: dinții ei trebuie să intre în golurile roții mari.
 
+**Gata când:**  
+- [ ] Din **Top**, dinții intră în goluri, fără să se suprapună  
+- [ ] Ai notat distanța dintre axe: **d final**  
+
 ### 5) Axele și placa
 1. **Cylinder** **5 · 5 · H** *(axul; H = grosimea roții + 6 mm, ca să încapă și manivela)*, câte unul în centrul fiecărei roți *(L: mijloc pe ambele axe)* · ridicat la **4 mm** *(stă pe placă)*  
 2. **Box** pentru placă: lungimea = **d + D1 ÷ 2 + D2 ÷ 2 + 10**, lățimea = **cea mai mare roată + 10**, grosimea = **4** · **L** cu cele două axe: mijloc pe față–spate și pe stânga–dreapta  
@@ -69,6 +81,10 @@ Raportul de transmisie arată cât de repede se rotește fiecare roată: **roata
 4. Roțile: ridicate la **5 mm** *(1 mm de aer față de placă)*  
 5. Roțile **nu** se grupează cu axele sau cu placa  
 6. Din **Front**: roțile plutesc pe ax, nu ating placa
+
+**Gata când:**  
+- [ ] Axele (**Ø5**) și placa sunt grupate  
+- [ ] Roțile sunt **separate**, ridicate la **5 mm**  
 
 ### 6) Tabelul pe foaie
 
@@ -78,12 +94,19 @@ Raportul de transmisie arată cât de repede se rotește fiecare roată: **roata
 | Diametru exterior | D1 = … | D2 = … |
 | Distanța dintre axe | d = … | |
 
+**Gata când:**  
+- [ ] Tabelul de pe foaie e completat  
+
 ### 7) Complet — manivela și raportul
 1. **Manivela:** **Box** **L_m · 6 · 4**, unde **L_m = 25** sau mai puțin, dar **mai mic decât d − 5** *(altfel lovește axul roții mici)* · **L** cu axul roții mari: mijloc pe față–spate și marginea din stânga sau din dreapta cu axul *(manivela pornește de la ax, de preferat în partea opusă roții mici)* · ridicată pe roata mare, la **5 mm + grosimea roții** · **Hole** **Cylinder 5,8** peste ax, prin manivelă · **Ctrl+G** manivelă + gaură + **roata mare**  
 2. **Raportul:** 24 ÷ 12 = **2** → scrii în trei propoziții:  
    - Când roata mare face **1 tură**, roata mică face **… ture**.  
    - Roata mică se învârte **mai repede / mai încet** decât cea mare.  
    - Dacă vrei ca o roată să meargă mai încet și să aibă mai multă forță, o conectezi la o roată **mai mare / mai mică**.
+
+**Gata când:**  
+- [ ] Ai făcut manivela, mai scurtă decât **d − 5**  
+- [ ] Ai scris raportul **24 ÷ 12 = 2** în trei propoziții  
 
 ---
 

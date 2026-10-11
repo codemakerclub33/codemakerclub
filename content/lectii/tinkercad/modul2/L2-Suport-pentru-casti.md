@@ -44,9 +44,15 @@ Un obiect înalt se **răstoarnă** dacă are baza prea mică. Azi înveți regu
 1. **Cylinder** → scrie **70 · 70 · 8** (un disc lat)  
 2. Culoarea o alegi la sfârșit
 
+**Gata când:**  
+- [ ] Baza e un disc **70 · 70 · 8**  
+
 ### 3) Stâlpul
 1. Alt **Cylinder** → scrie **14 · 14 · 150**  
 2. Îl pui oriunde lângă bază, pe plan
+
+**Gata când:**  
+- [ ] Stâlpul are **14 · 14 · 150**  
 
 ### 4) Align — același centru
 1. Selectezi **baza** și **stâlpul** (Shift+click)  
@@ -55,11 +61,18 @@ Un obiect înalt se **răstoarnă** dacă are baza prea mică. Azi înveți regu
 4. Stâlpul stă acum exact în mijlocul bazei și **se înfige** în ea  
 5. **Ctrl+G** — baza și stâlpul sunt o singură piesă
 
+**Gata când:**  
+- [ ] Stâlpul e în centrul bazei și se înfige în ea  
+- [ ] Baza și stâlpul sunt un singur grup  
+
 ### 5) Bara de sus
 1. **Box** → scrie **60 · 14 · 12**  
 2. Selectezi **bara** și **grupul** (baza + stâlp) → **L**  
 3. Click pe punctul de mijloc pe ambele direcții de pe plan **și** pe punctul de **sus** (pe înălțime): bara urcă și se așază la vârf  
 4. Bara trece peste stâlp, ca un „T” — căștile se agață pe ea
+
+**Gata când:**  
+- [ ] Bara (**60 · 14 · 12**) e centrată și stă la vârful stâlpului, în formă de **T**  
 
 ### 6) Verificare + Group
 1. View Cube → **Front**  
@@ -73,6 +86,11 @@ Un obiect înalt se **răstoarnă** dacă are baza prea mică. Azi înveți regu
 4. **Ruler**: pui rigla pe plan în **centrul bazei**; click pe **bară**: capătul ei e la **30 mm**; click pe **bază**: marginea e la **35 mm** *(bara și baza trebuie să fie piese separate: dacă baza e încă în Group cu stâlpul, fă și pe ea **Ctrl+Shift+G**)*  
 5. **Ctrl+A** → **Ctrl+G** (de câte ori e nevoie, până e un singur suport)  
 6. **Color** pe tot suportul
+
+**Gata când:**  
+- [ ] Bilele (**16 · 16 · 16**) sunt la capetele barei  
+- [ ] Cu **Ruler**: **30 mm** de la centru la capătul barei și **35 mm** la marginea bazei  
+- [ ] Suportul e un singur obiect, colorat  
 
 ---
 

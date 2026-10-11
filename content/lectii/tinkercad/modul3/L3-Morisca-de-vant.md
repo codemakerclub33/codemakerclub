@@ -47,10 +47,17 @@ Capacul de sus împiedică rotorul să iasă. Același principiu ca la roțile m
 4. **Ctrl+G** — baza cu stâlp  
 5. Snap Grid **5.0** → muți grupul **100 mm** deoparte (rotorul se face separat, lângă el) → Snap Grid înapoi pe **1.0**
 
+**Gata când:**  
+- [ ] Baza are **50 · 50 · 5**, iar stâlpul **8 · 8 · 70**, centrat  
+- [ ] Baza și stâlpul sunt grupate  
+
 ### 3) Butucul
 1. **Cylinder** → **20 · 20 · 8** *(butucul rotorului)*  
 2. **Cylinder** → **9 · 9 · 14** → **Hole**  
 3. Selectezi gaura și butucul → **L** → mijloc pe cele **trei** direcții *(gaura iese sus și jos)*
+
+**Gata când:**  
+- [ ] Butucul (**20 · 20 · 8**) are gaura de **9 mm** (Hole), centrată pe trei direcții  
 
 ### 4) Paletele
 1. **Box** → **80 · 12 · 2** *(prima bară = două palete)*  
@@ -60,17 +67,28 @@ Capacul de sus împiedică rotorul să iasă. Același principiu ca la roțile m
 5. Selectezi cu Shift+click **butucul, gaura și cele două bare** *(nu Ctrl+A — ar prinde și baza)* → **Ctrl+G** — butucul are gaura, paletele sunt lipite de el  
 6. Din **Top**: 4 palete egale, în cruce
 
+**Gata când:**  
+- [ ] Din **Top**: **4** palete egale, în cruce  
+- [ ] Butucul, gaura și paletele sunt grupate  
+
 ### 5) Rotorul pe stâlp
 1. Apeși **D** pe rotor (stă pe plan)  
 2. Muți rotorul **peste** stâlp: selectezi rotorul și baza cu stâlp → **L** → mijloc pe ambele direcții de pe plan  
 3. Snap Grid **5.0** → ridici rotorul cu **conul negru** la **40 mm** (8 sărituri)  
 4. Din **Front**: stâlpul trece prin gaura rotorului; rotorul e **între** bază și vârf
 
+**Gata când:**  
+- [ ] Rotorul e ridicat la **40 mm** și stâlpul trece prin gaura lui  
+
 ### 6) Capacul
 1. **Cylinder** → **14 · 14 · 4** → îl tragi peste stâlp  
 2. Selectezi capacul și baza cu stâlp → **L** → mijloc pe ambele direcții de pe plan și punctul de **sus**  
 3. Capacul stă pe vârful stâlpului și e mai lat decât el  
 4. Selectezi capacul și baza cu stâlp → **Ctrl+G** — rotorul rămâne separat
+
+**Gata când:**  
+- [ ] Capacul (**14 · 14 · 4**) stă pe vârful stâlpului  
+- [ ] Rotorul rămâne o piesă separată  
 
 ### 7) Verificare
 1. View Cube → **Front**: rotorul **nu atinge** baza și nici capacul  
@@ -84,6 +102,11 @@ Capacul de sus împiedică rotorul să iasă. Același principiu ca la roțile m
 3. Selectezi cu Shift+click **butucul, gaura și toate cele 4 bare** → **Ctrl+G**  
 4. **Ruler**: gaura (9 mm) față de stâlp (8 mm)  
 5. **Color**: paletele în culori diferite
+
+**Gata când:**  
+- [ ] Ai **8** palete (bare la 0°, 45°, 90°, 135°)  
+- [ ] Cu **Ruler**: gaura **9 mm**, stâlpul **8 mm**  
+- [ ] Paletele au culori diferite  
 
 ---
 

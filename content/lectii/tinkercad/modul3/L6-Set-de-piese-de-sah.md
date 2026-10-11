@@ -44,6 +44,9 @@ Copiezi baza o dată, apoi construiești fiecare piesă pe ea.
 4. **Ctrl+D** de două ori, mutând copiile pe rând, la **40 mm** una de alta (Snap Grid **5.0 mm**, 8 sărituri) — 3 baze identice  
 *Atenție la **Align**: mută **ambele** piese spre mijlocul lor. Ca baza să rămână pe loc, trage forma nouă **peste** baza ei înainte de **L**.*
 
+**Gata când:**  
+- [ ] Ai **3** baze identice (**30 · 30 · 4**), la **40 mm** una de alta  
+
 ### 2) Pionul
 1. Snap Grid înapoi pe **1.0 mm** (pentru înălțimi)  
 2. **Cylinder** → **14 · 14 · 18** *(gâtul)* → **L** cu prima bază → mijloc pe cele două direcții de pe plan  
@@ -51,6 +54,10 @@ Copiezi baza o dată, apoi construiești fiecare piesă pe ea.
 4. Ridici sfera cu conul negru la **14 mm** — capul se așază pe vârful gâtului  
 5. Din **Front**: baza, gâtul, capul — o siluetă clară de pion  
 6. Selectezi baza, gâtul și capul (Shift+click) → **Ctrl+G**
+
+**Gata când:**  
+- [ ] Pionul are bază, gât (**14 · 14 · 18**) și cap (sferă **16**, la **14 mm**)  
+- [ ] Pionul e grupat  
 
 ### 3) Turnul
 1. **Cylinder** → **18 · 18 · 34** *(corpul)* → **L** cu a doua bază → mijloc pe cele două direcții de pe plan  
@@ -61,6 +68,11 @@ Copiezi baza o dată, apoi construiești fiecare piesă pe ea.
 6. Selectezi baza, corpul, coroana și cele două Hole-uri (Shift+click) → **Ctrl+G**  
 7. Din **Top**: coroana are 4 creneluri; din **Front**: turnul e mai înalt decât pionul
 
+**Gata când:**  
+- [ ] Turnul are corp (**18 · 18 · 34**) și coroană (**24 · 24 · 8**, la **30 mm**)  
+- [ ] Coroana are **4** creneluri în cruce (din **Top**)  
+- [ ] Turnul e mai înalt decât pionul (din **Front**)  
+
 ### 4) Complet — nebunul
 1. **Cone** → **18 · 18 · 32** → **L** cu a treia bază → mijloc pe cele două direcții de pe plan  
 2. **Sphere** → **12 · 12 · 12** → **L** cu a treia bază (mijloc, două direcții), ridicat la **28 mm** *(capul)*  
@@ -68,10 +80,18 @@ Copiezi baza o dată, apoi construiești fiecare piesă pe ea.
 4. Selectezi baza, conul, capul și crestătura → **Ctrl+G**  
 5. Din **Front**: nebunul e cel mai înalt (**40 mm**), turnul are 38 mm, pionul 30 mm
 
+**Gata când:**  
+- [ ] Nebunul are con (**18 · 18 · 32**), cap (sferă **12**, la **28 mm**) și crestătură rotită **45°**  
+- [ ] Nebunul e cel mai înalt (**40 mm**)  
+
 ### 5) Complet — alb și negru
 1. Snap Grid **5.0 mm** → pionul → **Ctrl+D** → muți copia la **120 mm** de prima bază (după nebun, 8 sărituri după a treia bază)  
 2. **Color**: pionul original alb (sau deschis), copia neagră (sau închis)  
 3. La fel poți colora turnul
+
+**Gata când:**  
+- [ ] Ai un pion alb și unul negru  
+- [ ] Piesele au culorile alese  
 
 ---
 

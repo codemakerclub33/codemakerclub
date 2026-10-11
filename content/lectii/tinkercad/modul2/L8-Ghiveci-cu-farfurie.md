@@ -46,11 +46,17 @@ Gaura de scurgere lasă apa să iasă din ghiveci în farfurie.
 3. Selectezi Hole-ul și ghiveciul → **L** → **mijloc** pe ambele direcții de pe plan. Apoi ridici Hole-ul cu **3 mm**, folosind **conul negru** (fund de 3 mm; Hole-ul iese deasupra)  
 4. **Ctrl+A** → **Ctrl+G**
 
+**Gata când:**  
+- [ ] Ghiveciul (**60 · 60 · 50**) are gol **54 · 54** și fund de **3 mm**  
+
 ### 3) Gaura de scurgere
 1. **Cylinder** → **8 · 8 · 10** → **Hole**  
 2. Selectezi gaura și ghiveciul → **L** → mijloc pe ambele direcții de pe plan  
 3. Cobori gaura cu **1 mm** sub plan, folosind **conul negru**: ea stă în centrul fundului și îl taie complet (3 mm)  
 4. **Ctrl+A** → **Ctrl+G**
+
+**Gata când:**  
+- [ ] Gaura de scurgere (**8 · 8 · 10**) e în centrul fundului și îl taie complet  
 
 ### 4) Farfuria
 1. **Cylinder** → **78 · 78 · 12** (lângă ghiveci, nu peste el)  
@@ -58,11 +64,17 @@ Gaura de scurgere lasă apa să iasă din ghiveci în farfurie.
 3. Selectezi Hole-ul și farfuria → **L** → **mijloc** pe ambele direcții de pe plan. Apoi ridici Hole-ul cu **3 mm**, folosind **conul negru** (fund de 3 mm)  
 4. Selectezi Hole-ul și farfuria → **Ctrl+G** — farfurie cu pereți de 3 mm
 
+**Gata când:**  
+- [ ] Farfuria (**78 · 78 · 12**) are gol **72 · 72** și pereți de **3 mm**  
+
 ### 5) Potrivirea
 1. Muți farfuria lângă ghiveci  
 2. De ce farfuria are 78 și nu 60? Golul farfuriei (72) trebuie să fie **mai larg** decât ghiveciul (60)  
 3. Pune ghiveciul **în** farfurie, pe fundul ei: îl tragi întâi **complet în interiorul** farfuriei, apoi selectezi ghiveciul și farfuria → **L** pe ambele direcții de pe plan (farfuria rămâne pe loc, ghiveciul se centrează; nu alege nimic pe sus–jos) și îl ridici cu 3 mm, folosind **conul negru**  
 4. View Cube → **Front**: ghiveciul stă pe fundul farfuriei, între pereți
+
+**Gata când:**  
+- [ ] Ghiveciul stă pe fundul farfuriei, între pereți (din **Front**)  
 
 ### 6) Complet — guler, Ruler, culori
 1. Gulerul e un **inel** făcut separat: **Cylinder** **66 · 66 · 6** + **Cylinder Hole** **54 · 54 · 10**, centrate pe cele **trei** direcții (**L**) → **Ctrl+G** → **D**  
@@ -70,6 +82,11 @@ Gaura de scurgere lasă apa să iasă din ghiveci în farfurie.
 3. **Ctrl+G** — ghiveciul are guler, golul rămâne deschis  
 4. **Ruler**: măsori ghiveciul (60) și gaura farfuriei (72) → spațiu de 6 mm pe fiecare parte *(Hole-ul farfuriei se măsoară doar separat: **Ctrl+Shift+G** pe farfurie, măsori, apoi **Ctrl+A** pe Hole+farfurie → **Ctrl+G**)*  
 5. **Color**: ghiveciul o culoare, farfuria alta
+
+**Gata când:**  
+- [ ] Gulerul stă pe marginea de sus a ghiveciului, golul rămâne deschis  
+- [ ] Cu **Ruler**: spațiu de **6 mm** între ghiveci și peretele farfuriei  
+- [ ] Ghiveciul și farfuria au culori diferite  
 
 ---
 

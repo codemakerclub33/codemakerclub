@@ -47,6 +47,9 @@ Un proiect propriu arată ce ai reținut. Îți pregătește și **portofoliul**
 3. Pe plan (dacă plutește → **D**)  
 *(Un Half Sphere turtit arată mai bine, dar suprafața e curbă — doar dacă vrei să te complici.)*
 
+**Gata când:**  
+- [ ] Terenul are **120 × 120 × 6**, e colorat și stă pe plan  
+
 ### 3) Refolosire (min. 2 elemente)
 1. Deschizi un proiect vechi (casa, omul de zăpadă, barca, castelul, racheta…) în alt tab (din lista **Designs** a contului tău)  
 2. Selectezi **toate piesele** obiectului (**Ctrl+A** dacă în proiect e doar obiectul acela; altfel Shift+click) → **Ctrl+C** (Mac: **Cmd+C**)  
@@ -55,17 +58,30 @@ Un proiect propriu arată ce ai reținut. Îți pregătește și **portofoliul**
 5. Dacă n-ai proiectul vechi, refaci rapid o versiune simplă (Minim din lecția aceea)  
 6. Dacă piesele includ și o bază sau apă (ex. apa de la barcă), le ștergi — nu le vrei pe insulă
 
+**Gata când:**  
+- [ ] Ai **cel puțin 2** obiecte din proiectele vechi  
+- [ ] Sunt scalate să încapă și ridicate la **5**  
+
 ### 4) Elemente noi
 1. **Copaci:** Cylinder trunchi (**4 × 4 × 10**, la 5) + Cone coroană (**16 × 16 × 18**, ridicat la 14) (**Ctrl+D** pentru mai mulți)  
 2. **Stânci:** sfere turtite  
 3. **Potecă:** Box plat, colorat  
 4. Fiecare element **stă pe teren** (nu în aer): baza lui e la **5 mm** (ridici cu conul negru; intră 1 mm în teren). **D** nu ajută aici — coboară elementul pe plan, adică **în** teren
 
+**Gata când:**  
+- [ ] Copacii, stâncile sau poteca stau pe teren, la **5** mm  
+- [ ] Nimic nu plutește  
+
 ### 5) Complet
 1. **O piesă cu Hole + Group** (peșteră, fereastră la casă, poartă…)  
 2. **Text** cu numele insulei, pe o plăcuță (Box + Text, ca la L5: plăcuța **40 × 15 × 3**, textul **5 mm** înalt, ambele ridicate la 5 pe teren; textul nu trebuie oglindit)  
 3. **Culori coerente** (nu toate la întâmplare)  
 4. Ajungi la **6 elemente** (fără să strici ce ai)
+
+**Gata când:**  
+- [ ] Ai o piesă cu **Hole + Group**  
+- [ ] Plăcuța cu text e **neoglindită**  
+- [ ] Ai **6 elemente**, cu culori care se potrivesc  
 
 ### 6) Verificare finală
 1. Rotești vederea: nimic nu plutește, nimic nu e în aer  

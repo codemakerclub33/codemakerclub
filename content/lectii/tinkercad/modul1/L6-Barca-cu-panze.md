@@ -48,11 +48,19 @@ La finalul orei ai o barcă recunoscută din lateral: **corp** + **catarg** + **
 5. Verifici din **Front** sau **Right**: vezi rotundul jos, plat sus?  
 6. Baza (acum vârful rotund) să fie pe plan (dacă plutește → **D**)
 
+**Gata când:**  
+- [ ] Half Sphere **60 × 20 × 15**, partea plată **sus**  
+- [ ] Din **Front**: rotund jos, plat sus  
+
 ### 3) Catargul
 1. **Cylinder** subțire și înalt: **3 × 3 × 40**  
 2. Îl pui pe **mijlocul** bărcii, pe partea plată de sus (verifici din **Top**)  
 3. Îl ridici cu **conul negru** la **14** — puntea e la 15, deci catargul intră 1 mm în corp  
 4. Verifici din **Front**: catargul intră puțin în barcă (nu plutește)
+
+**Gata când:**  
+- [ ] Catargul are **3 × 3 × 40**, e pe mijlocul bărcii, la **14**  
+- [ ] Din **Front**, intră 1 mm în corp  
 
 ### 4) Pânza
 1. Tragi un **Wedge** (pană)  
@@ -61,15 +69,28 @@ La finalul orei ai o barcă recunoscută din lateral: **corp** + **catarg** + **
 4. Îl ridici cu conul negru la **15** (pe punte) și îl muți cu mouse-ul din **Top** / **Front** până latura dreaptă **intră 1 mm** în catarg  
 5. **L** nu e necesar azi — muți manual
 
+**Gata când:**  
+- [ ] Din **Front**, pânza e un **triunghi** cu latura dreaptă lângă catarg  
+- [ ] Pânza e subțire (**2 mm**), la **15**, și intră 1 mm în catarg  
+
 ### 5) Complet
 1. A doua pânză mai mică, de **cealaltă parte** a catargului: **Ctrl+D** pe prima, o micșorezi cu **Shift**, o oglindești cu **M** (ca în L3), ca latura dreaptă să fie tot lângă catarg, apoi o muți  
 2. **Steag:** Box plat mic (**8 × 1 × 5**) ridicat la **49**, lipit de vârful catargului (catargul se termină la 54)  
 3. **Color** pe barcă, pânze, steag
 
+**Gata când:**  
+- [ ] A doua pânză e oglindită, pe cealaltă parte a catargului  
+- [ ] Steagul e la vârful catargului  
+- [ ] Piesele au culori  
+
 ### 6) Apa (Complet)
 1. Box plat, **albastru**, **90 × 50 × 8**, pe plan, **în jurul** bărcii (barca e pe plan, deci jumătatea ei de jos intră în apă). Îl centrezi din **Top**  
 2. Apa are 8 mm, barca 15: puțin peste jumătate din corp e „în apă”, restul iese deasupra  
 3. Verifici din **Front**: barca nu „zboară” deasupra apei, apa nu acoperă puntea
+
+**Gata când:**  
+- [ ] Apa e albastră, **90 × 50 × 8**, în jurul bărcii  
+- [ ] Barca nu „zboară” și apa nu acoperă puntea  
 
 ---
 

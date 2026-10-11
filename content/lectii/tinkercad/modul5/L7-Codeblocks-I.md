@@ -49,6 +49,9 @@ Dacă schimbi un număr, schimbi tot obiectul: așa gândesc inginerii care fac 
 3. Apeși **Run** → apare un cub pe plan  
 4. Ștergi sau resetezi și treci mai departe
 
+**Gata când:**  
+- [ ] Apare un cub **10 · 10 · 10** când apeși **Run**  
+
 ### 3) Bucla
 1. Din blocurile de **repetare** tragi **„repetă de … ori”** și pui **5**  
 2. În ea pui blocul care creează cubul *(10·10·10)*  
@@ -58,6 +61,9 @@ Dacă schimbi un număr, schimbi tot obiectul: așa gândesc inginerii care fac 
 
 > **Ordinea contează:** *„creează cubul, apoi mută-te”*. Încearcă și invers și compară cele două rezultate pe ecran *(șirul își schimbă poziția față de început)*.
 
+**Gata când:**  
+- [ ] Bucla face **5** cuburi, la **15 mm** unul de altul  
+
 ### 4) Complet — variabile
 1. Creezi variabila **n** și o pui pe **5**  
 2. Creezi variabila **pas** și o pui pe **15**  
@@ -65,12 +71,20 @@ Dacă schimbi un număr, schimbi tot obiectul: așa gândesc inginerii care fac 
 4. Schimbi **n** în 8 → **Run**: apar 8 cuburi  
 5. Schimbi **pas** în 20 → **Run**: sunt mai depărtate
 
+**Gata când:**  
+- [ ] Variabilele **n** și **pas** controlează numărul și distanța  
+- [ ] Cu **n = 8** apar 8 cuburi  
+
 ### 5) Complet — scara
 1. Creezi variabila **h** și o pui pe **10** înainte de buclă  
 2. Cubul din buclă are înălțimea **h**  
 3. La sfârșitul buclei: **h devine h + 5**  
 4. **Run**: cuburile cresc ca niște trepte  
 5. Pe foaie: cât e înălțimea ultimului cub cu n = 5? *(10, 15, 20, 25, **30**)*
+
+**Gata când:**  
+- [ ] Cuburile cresc ca niște trepte (**h** crește cu 5)  
+- [ ] Ai calculat înălțimea ultimului cub: **30**  
 
 ---
 

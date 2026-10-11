@@ -55,12 +55,20 @@ Desenezi placa A de sus: un cerc mare și, lipită de el, o fantă îngustă spr
 7. Din **Top**: fanta pornește din mijlocul cercului și merge spre dreapta, 14 mm  
 8. Selectezi placa și **ambele** Hole-uri → **Ctrl+G**
 
+**Gata când:**  
+- [ ] Placa A (**40 · 30 · 5**) are gaura **Ø10** și fanta **14 · 5,4**  
+- [ ] Placa și Hole-urile sunt grupate  
+
 ### 3) Placa B — bolțul
 1. **Box** → **30 · 20 · 3** *(placa B)* · o muți în afara plăcii A  
 2. **Cylinder** → **5 · 5 · 6** *(axul)* → **L** cu placa B: mijloc pe față–spate și marginea din stânga; îl muți **7,5 mm spre dreapta** *(centrul la 10 mm de margine)*; îl ridici la **3 mm** *(stă pe placă)*  
 3. **Cylinder** → **9 · 9 · 2** *(capul)* → **L** cu axul: mijloc pe ambele axe; capul ridicat la **9 mm** *(în vârful axului: 3 + 6)*  
 4. Selectezi placa B, axul și capul → **Ctrl+G**  
 5. Din **Front**: placă, ax subțire, cap lat
+
+**Gata când:**  
+- [ ] Placa B (**30 · 20 · 3**) are axul **Ø5** și capul **Ø9**, la **9 mm**  
+- [ ] Placa B, axul și capul sunt grupate  
 
 ### 4) Verificarea *(din Front, pe foaie)*
 | Piesă | Mărime | Trebuie |
@@ -77,11 +85,19 @@ Desenezi placa A de sus: un cerc mare și, lipită de el, o fantă îngustă spr
 4. Placa A → o muți **7 mm spre stânga** *(bolțul ajunge în fanta îngustă)*  
 5. Din **Top**: axul e acum în fantă, capul stă peste margini — **blocat**
 
+**Gata când:**  
+- [ ] Capul trece prin gaura din A, cu **1 mm** de aer deasupra  
+- [ ] A împinsă **7 mm**: axul e în fantă și capul îl blochează  
+
 ### 6) Complet — al doilea bolț
 Atenție: dacă mărești un Group, **întinzi și bolțul, și găurile**. De aceea desfaci întâi Group-ul.
 1. Placa B: **Ctrl+Shift+G** *(desface)* → mărești **doar placa** la **45 · 20 · 3**, trăgând din **dreapta** *(marginea din stânga rămâne pe loc; verifică cu Ruler că bolțul e tot la 10 mm de margine)* → bolțul (ax + cap) → **Ctrl+D** → **22 mm spre dreapta** *(al doilea bolț la 32 mm; trebuie să rămână între găuri cel puțin 1,2 mm de perete)* → **Ctrl+G** pe tot  
 2. Placa A: **Ctrl+Shift+G** → mărești **doar placa** la **55 · 30 · 5**, tot din dreapta → selectezi cele 2 Hole-uri (gaură + fantă) → **Ctrl+D** → **22 mm spre dreapta** *(a doua gaură la 32 mm; de la capătul primei fante, la 24 mm, până la a doua gaură, la 27 mm, rămân 3 mm de perete)* → **Ctrl+G** pe tot  
 3. Refaci asamblarea de la pasul 5 *(A împinsă tot 7 mm: ambele bolțuri intră în fante)*
+
+**Gata când:**  
+- [ ] Ai al doilea bolț și plăcile mărite (**45 · 20 · 3** și **55 · 30 · 5**)  
+- [ ] Asamblarea merge și cu **2** bolțuri  
 
 ---
 

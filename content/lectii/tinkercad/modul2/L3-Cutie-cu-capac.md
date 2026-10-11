@@ -44,15 +44,25 @@ Dacă marginea capacului e **exact** cât gaura, la printare nu intră. Azi laș
 1. **Box** → **60 · 40 · 30**  
 2. Rămâne **Solid**
 
+**Gata când:**  
+- [ ] Cutia exterioară are **60 · 40 · 30** (Solid)  
+
 ### 3) Cutia — golul
 1. Alt **Box** → **54 · 34 · 30** → panoul **Shape** → **Hole**  
 2. Selectezi Hole-ul și cutia → **L** → **mijloc** pe cele două direcții de pe plan (stânga–dreapta și față–spate)  
 3. Ridici Hole-ul cu **3 mm**, folosind **conul negru** (scrii 3): golul începe la 3 mm de jos (fundul) și iese 3 mm deasupra, deci cutia e **deschisă sus**  
 4. **Ctrl+A** → **Ctrl+G** — cutie goală, cu pereți de 3 mm
 
+**Gata când:**  
+- [ ] Golul (**54 · 34 · 30**) e **Hole**, centrat, ridicat cu **3 mm**  
+- [ ] După Group, cutia e goală, cu pereți de **3 mm**  
+
 ### 4) Capacul — placa
 1. Alt **Box** → **60 · 40 · 4**  
 2. Îl muți lângă cutie, pe plan
+
+**Gata când:**  
+- [ ] Placa capacului are **60 · 40 · 4**  
 
 ### 5) Capacul — marginea care intră
 1. Alt **Box** → **53 · 33 · 3**  
@@ -61,12 +71,21 @@ Dacă marginea capacului e **exact** cât gaura, la printare nu intră. Azi laș
 4. Selectezi marginea și placa → **L** → mijloc pe ambele direcții  
 5. Dai **Group** doar la cele două (capacul = 1 piesă); cutia rămâne separată
 
+**Gata când:**  
+- [ ] Marginea (**53 · 33 · 3**) stă pe placă, centrată  
+- [ ] Capacul e un singur grup; cutia rămâne separată  
+
 ### 6) Complet — capacul pe cutie
 1. Selectezi capacul → rotești **180°** cu o săgeată curbă **de pe lateral** (8 pași de 22,5°, sau scrii **180**) ca marginea să arate **în jos**  
 2. Selectezi capacul și cutia → **L** → mijloc pe cele două direcții de pe plan. Apoi ridici capacul cu **conul negru** la **27 mm**: placa lui stă pe pereți (la 30 mm), iar marginea de 3 mm intră în gol  
 3. View Cube → **Front**: capacul stă pe pereți, nu e „înfipt” în ei  
 4. **Ruler**: pe o piesă selectată citești mărimea ei. Din **Top**, măsori marginea capacului (**53**) și golul cutiei (**54**) — diferența e 1 mm (0,5 pe parte). *(Golul se măsoară doar dacă Hole-ul e separat: **Ctrl+Shift+G** pe cutie, măsori, apoi **Ctrl+A** pe Hole+cutie → **Ctrl+G** la loc)*  
 5. **Color**: cutia o culoare, capacul alta
+
+**Gata când:**  
+- [ ] Capacul e rotit **180°** (marginea în jos) și stă pe pereți, la **27 mm**  
+- [ ] Din **Front**, capacul nu e „înfipt” în pereți  
+- [ ] Cutia și capacul au culori diferite  
 
 ---
 

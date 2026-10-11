@@ -47,10 +47,17 @@ Multe obiecte reale (logo-uri, ștampile, brelocuri) pornesc de la un **desen pl
 3. Simbolul apare pe plan, probabil prea mare sau prea mic  
 4. **Dacă nu merge importul:** pune o **stea** sau o **inimă** din forme; continuăm la fel
 
+**Gata când:**  
+- [ ] Simbolul SVG (sau o stea / o inimă) apare pe plan  
+
 ### 3) Mărimea simbolului
 1. Selectezi simbolul. Ții apăsat **Shift** și tragi de un mâner alb din colț, ca proporțiile să rămână; apoi corectezi cu numere până când **latura cea mai lungă** (lungimea sau lățimea) e **20 mm**. *Dacă simbolul iese întins sau turtit, ai uitat Shift: apasă Ctrl+Z și reia.*  
 2. Apoi tastezi **grosimea (pe verticală)** la **2 mm** *(doar înălțimea; lungimea și lățimea nu le mai atingi)*  
 3. Din **Front**: un simbol subțire; din **Top**: silueta lui
+
+**Gata când:**  
+- [ ] Proporțiile simbolului sunt păstrate  
+- [ ] Grosimea (înălțimea) e de **2 mm**  
 
 ### 4) Placa-bază
 1. **Box** → **50 · 30 · 3**  
@@ -58,11 +65,20 @@ Multe obiecte reale (logo-uri, ștampile, brelocuri) pornesc de la un **desen pl
 3. Selectezi doar simbolul și îl ridici la **3 mm** cu conul negru *(stă pe placă)*  
 4. **Color**: placa o culoare, simbolul alta
 
+**Gata când:**  
+- [ ] Placa are **50 · 30 · 3**  
+- [ ] Simbolul e centrat pe placă și stă pe ea, la **3 mm**  
+- [ ] Placa și simbolul au culori diferite  
+
 ### 5) Complet — gaura de breloc
 1. **Cylinder** → **4 · 4 · 7** → **Hole**  
 2. **L** cu placa → mijloc pe față–spate și marginea din stânga; o muți **5 mm spre dreapta** *(marginea găurii la 5 mm, deci centrul la 5 + 2 = 7 mm: 2 mm e raza)*  
 3. O cobori **1 mm** → **Ctrl+G** cu **placa** *(nu cu simbolul)*  
 4. Simbolul (20 mm, la mijloc) ocupă de la 15 la 35 mm; gaura e la 5–9 mm, deci nu se ating. Dacă simbolul tău e mai lat, mută-l spre dreapta
+
+**Gata când:**  
+- [ ] Gaura de breloc (**4 · 4 · 7**) e la **5 mm** de margine  
+- [ ] Nu atinge simbolul și e grupată cu **placa**  
 
 ### 6) Complet — numele pe spate
 1. **Text** cu numele tău → mărimi: lungime cel mult **30 mm**, înălțimea literelor în jur de **8 mm**, grosime **2 mm** → **Hole**  
@@ -70,6 +86,10 @@ Multe obiecte reale (logo-uri, ștampile, brelocuri) pornesc de la un **desen pl
 3. **L** cu placa: mijloc pe stânga–dreapta și pe față–spate; îl cobori **1 mm** *(jumătate în placă, adâncime 1 mm)* → **Ctrl+G** cu **placa**  
 4. Dacă nu reușești, lasă numele ca Text normal pe placă — tot e Complet  
 5. La final: selectezi tot → **Ctrl+G**
+
+**Gata când:**  
+- [ ] Numele e oglindit și stă pe dedesubt (sau e Text normal pe placă)  
+- [ ] Totul e grupat  
 
 ---
 

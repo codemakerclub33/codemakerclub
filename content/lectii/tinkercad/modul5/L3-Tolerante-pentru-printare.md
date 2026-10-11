@@ -61,11 +61,18 @@ Cât de mare? Depinde de imprimantă. Tu faci acum testul; **după oră** (la pr
 4. **Ctrl+D** → muți copia **15 mm spre dreapta** → **Ctrl+D** *(repetă aceeași mutare)* → al treilea știft: centre la **25, 40, 55**  
 5. Selectezi placa și știfturile → **Ctrl+G**
 
+**Gata când:**  
+- [ ] Placa A (**80 · 20 · 5**) are **3** știfturi (**6 · 6 · 8**), la **25, 40 și 55 mm**  
+- [ ] Placa și știfturile sunt grupate  
+
 ### 3) Placa B și ghidurile
 1. **Box** → **80 · 20 · 5** *(placa B)* → o muți **în fața plăcii A**, la 30 mm distanță *(cele două plăci aliniate pe stânga–dreapta, **L** → marginea din stânga)*  
 2. **Box** → **8 · 8 · 1** *(ghidul)* → **L** cu placa B: mijloc pe față–spate și marginea din stânga  
 3. Îl muți **21 mm spre dreapta** *(centrul la 25)* și îl ridici la **6 mm** *(în aer, ca să nu strice nimic)*  
 4. **Ctrl+D** → copia **15 mm spre dreapta** → **Ctrl+D** → **3 ghiduri**, la **25, 40, 55**
+
+**Gata când:**  
+- [ ] Placa B are **3** ghiduri, la **25, 40 și 55 mm**  
 
 ### 4) Găurile
 1. **Cylinder** → **6,2 · 6,2 · 7** → **Hole**  
@@ -75,6 +82,11 @@ Cât de mare? Depinde de imprimantă. Tu faci acum testul; **după oră** (la pr
 5. A treia: **6,6 · 6,6 · 7** → Hole → **L** cu al treilea ghid → coborâtă 1 mm  
 6. **Ștergi cele 3 ghiduri**  
 7. Selectezi placa B și cele 3 găuri → **Ctrl+G**
+
+**Gata când:**  
+- [ ] Găurile au **6,2**, **6,4** și **6,6**, coborâte **1 mm**  
+- [ ] Ghidurile sunt șterse  
+- [ ] Placa B și găurile sunt grupate  
 
 ### 5) Verificare
 1. Din **Top**: fiecare gaură e în dreptul unui știft *(prima placă și a doua au aceleași centre pe stânga–dreapta)*  
@@ -86,11 +98,18 @@ Cât de mare? Depinde de imprimantă. Tu faci acum testul; **după oră** (la pr
 2. Ghiduri noi la 10 și 70 *(la fel, pe placa B)*  
 3. Găuri **Ø6,0** la 10 și **Ø6,8** la 70, centrate cu **L** pe ghiduri, coborâte 1 mm, apoi ghidurile șterse → **Ctrl+G** cu placa B *(care e deja Group: merge)*
 
+**Gata când:**  
+- [ ] Ai încă **2** perechi: gaura **Ø6,0** la 10 mm și **Ø6,8** la 70 mm  
+
 ### 7) Complet — cutiuța
 1. **Box** → **30 · 20 · 15**  
 2. **Box** → **26,8 · 16,8 · 14** → **Hole** *(30 − 2·1,6 = 26,8; 20 − 2·1,6 = 16,8; înălțime: 15 − 1,6 = 13,4, plus 0,6 ca să iasă pe deasupra)*  
 3. **L** cu cutia: mijloc pe stânga–dreapta și pe față–spate; gaura ridicată la **1,6 mm** *(fundul de 1,6 mm rămâne)*  
 4. **Ctrl+G** · din **Top**: pereții de 1,6 mm
+
+**Gata când:**  
+- [ ] Cutiuța (**30 · 20 · 15**) are gol **26,8 · 16,8 · 14** și fundul de **1,6 mm**  
+- [ ] Din **Top**, pereții au **1,6 mm**  
 
 ---
 

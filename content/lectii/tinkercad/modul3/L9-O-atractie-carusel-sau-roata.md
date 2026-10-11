@@ -47,9 +47,16 @@ Repetarea stâlpilor în cerc o faci cu **Ctrl+D + rotire**, ca la morișcă și
 6. Selectezi baza, stâlpul și capacul → **Ctrl+G** — baza cu stâlp  
 7. Muți grupul **150 mm** deoparte (rotorul se face separat, lângă el)
 
+**Gata când:**  
+- [ ] Baza (**100 · 100 · 4**) are stâlp (**12 · 12 · 60**) și capac (**18 · 18 · 3**), grupate  
+- [ ] Grupul e mutat deoparte, la **150 mm**  
+
 ### 2) Platforma
 1. **Cylinder** → **80 · 80 · 4** *(platforma rotorului)*  
 2. Snap Grid rămâne **1.0 mm** (pentru înălțimi)
+
+**Gata când:**  
+- [ ] Platforma are **80 · 80 · 4**  
 
 ### 3) Un stâlp cu scaun
 1. **Cylinder** → **4 · 4 · 36** *(stâlpul)* și **Box** → **10 · 10 · 3** *(scaunul)* — le tragi peste platformă  
@@ -58,9 +65,16 @@ Repetarea stâlpilor în cerc o faci cu **Ctrl+D + rotire**, ca la morișcă și
 4. Selectezi stâlpul și scaunul → **Ctrl+G** — un „stâlp cu scaun”  
 5. Snap Grid: **5.0 mm** → muți stâlpul cu scaun **30 mm** spre dreapta (6 sărituri) — la raza 30
 
+**Gata când:**  
+- [ ] Stâlpul cu scaun (**4 · 4 · 36** + **10 · 10 · 3**, scaunul la **10 mm**) e la **30 mm** de centru  
+
 ### 4) Al doilea stâlp, de partea opusă
 1. **Ctrl+D** pe stâlpul cu scaun → muți copia **60 mm** spre stânga (12 sărituri)  
 2. Selectezi cei **doi** stâlpi cu scaun → **Ctrl+G** — o „bară”, centrată pe platformă
+
+**Gata când:**  
+- [ ] Al doilea stâlp e la **60 mm** de primul, de partea opusă  
+- [ ] Cei doi stâlpi formează o „bară” grupată  
 
 ### 5) Cei 8 stâlpi
 1. Selectezi bara → **Ctrl+D** → rotești copia **45°** (2 pași de câte 22,5°)  
@@ -68,11 +82,18 @@ Repetarea stâlpilor în cerc o faci cu **Ctrl+D + rotire**, ca la morișcă și
 3. Din **Top**: 4 bare = **8 stâlpi** egal depărtați, în cerc  
 4. Fiecare scaun e la fel de sus; platforma e centrată
 
+**Gata când:**  
+- [ ] Ai **4** bare = **8** stâlpi în cerc (din **Top**)  
+- [ ] Toate scaunele sunt la aceeași înălțime  
+
 ### 6) Acoperișul
 1. **Cone** → **90 · 90 · 14** → îl tragi peste platformă  
 2. Selectezi **conul, platforma și cele 4 bare** → **L** → mijloc pe cele două direcții de pe plan *(toate împreună, ca să rămână centrate)*  
 3. Selectezi doar conul → ridici cu conul negru la **35 mm** (7 sărituri) — stă pe vârful stâlpilor  
 4. Din **Front**: stâlpii ating acoperișul
+
+**Gata când:**  
+- [ ] Acoperișul (con **90 · 90 · 14**) stă la **35 mm**, pe vârful stâlpilor  
 
 ### 7) Gaura centrală și Group
 1. **Cylinder** → **13 · 13 · 70** → **Hole**  
@@ -80,10 +101,18 @@ Repetarea stâlpilor în cerc o faci cu **Ctrl+D + rotire**, ca la morișcă și
 3. Selectezi platforma, cele 4 bare, acoperișul și gaura (Shift+click) → **Ctrl+G** — rotorul  
 4. Gaura Ø13 e mai mare decât stâlpul Ø12: **0,5 mm joc pe parte**
 
+**Gata când:**  
+- [ ] Gaura (**13 · 13 · 70**, Hole) e centrată și grupată în rotor  
+- [ ] Stâlpul (12) e mai subțire decât gaura (13)  
+
 ### 8) Rotorul pe stâlp
 1. Selectezi rotorul și baza cu stâlp → **L** → mijloc pe cele două direcții de pe plan  
 2. Apeși **D**, apoi Snap Grid: **1.0 mm** → ridici rotorul cu conul negru la **8 mm**  
 3. **Front**: stâlpul trece prin rotor, rotorul stă între bază și capac, **nelipit**
+
+**Gata când:**  
+- [ ] Rotorul e ridicat la **8 mm** și stâlpul trece prin el  
+- [ ] Rotorul e între bază și capac, **nelipit**  
 
 ### 9) Complet — steag, culori, Ruler
 1. **Cylinder** **2 · 2 · 15** → îl tragi peste baza cu stâlp → **L** cu baza cu stâlp: mijloc pe cele două direcții → îl ridici la **58 mm** (se înfige 2 mm în capac)  
@@ -91,6 +120,11 @@ Repetarea stâlpilor în cerc o faci cu **Ctrl+D + rotire**, ca la morișcă și
    Selectezi cilindrul, panoul și baza cu stâlp → **Ctrl+G** *(rotorul rămâne separat)*  
 2. **Ruler**: gaura 13 mm față de stâlp 12 mm  
 3. **Color**: acoperiș, scaune, platformă în culori diferite
+
+**Gata când:**  
+- [ ] Steagul stă pe stâlp, la **58 mm**  
+- [ ] Cu **Ruler**: gaura **13 mm**, stâlpul **12 mm**  
+- [ ] Acoperișul, scaunele și platforma au culori diferite  
 
 ---
 

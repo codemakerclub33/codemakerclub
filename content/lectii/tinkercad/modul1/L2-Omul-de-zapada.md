@@ -45,6 +45,9 @@ Azi le exersezi pe piese rotunde. Fără **Shift** la scalare, sfera se „strâ
 2. Scalezi **proporțional**: ții **Shift** și tragi de un **pătrățel alb din colț** până vezi **40 × 40 × 40**  
 3. Ea e cea mai mare (baza) · stă pe plan (dacă plutește → **D**)
 
+**Gata când:**  
+- [ ] Sfera de jos e **40 × 40 × 40** și stă pe plan  
+
 ### 3) Mijlocul
 1. Selectezi sfera → **Ctrl+D**  
 2. **Copia apare peste original** — o tragi **în lateral** sau **în sus**, ca să o vezi  
@@ -52,10 +55,17 @@ Azi le exersezi pe piese rotunde. Fără **Shift** la scalare, sfera se „strâ
 4. După scalare, verifici din **Top** (View Cube): sfera e pe **mijlocul** celei de jos? Dacă nu, o muți cu mouse-ul (alinierea cu **L** vine la L3)  
 5. O ridici cu **conul negru de deasupra piesei** până la **32** — ea intră **8 mm** în sfera de jos (sferele doar „atinse” ar avea un singur punct comun)
 
+**Gata când:**  
+- [ ] Sfera din mijloc e **30 × 30 × 30**, centrată, la **32** (intră în cea de jos)  
+
 ### 4) Capul
 1. **Ctrl+D** pe sfera din mijloc → tragi copia în lateral → cu **Shift** o faci și mai mică: **20 × 20 × 20**  
 2. Centrezi din Top cu ochiul, apoi ridici cu conul negru la **54** (intră 8 mm în sfera din mijloc)  
 3. Din **lateral** (View Cube → Front / Right): sferele se suprapun puțin — fără gol între ele
+
+**Gata când:**  
+- [ ] Capul e **20 × 20 × 20**, la **54**  
+- [ ] Din lateral nu e gol între sfere  
 
 ### 5) Nasul (Minim) — rotirea
 1. Tragi un **Cone** și îl faci mic: baza **6 × 6**, înălțimea **10** (pătrățele albe)  
@@ -64,10 +74,19 @@ Azi le exersezi pe piese rotunde. Fără **Shift** la scalare, sfera se „strâ
 4. Îl muți în fața capului, la înălțimea feței: ridici cu conul negru la ~**61** (ca mijlocul lui să fie pe la mijlocul capului, 64). Partea lată a conului **intră 2–3 mm** în cap  
 5. Verifici din lateral (Right) că vârful iese în față și e la înălțimea feței
 
+**Gata când:**  
+- [ ] Conul e rotit **90°**, vârful spre față  
+- [ ] Din **Right**, vârful iese în față, la înălțimea feței  
+
 ### 6) Complet
 1. **Pălărie:** Cylinder lat și scund (bor: **26 × 26 × 2**, ridicat la **68**) + Cylinder mai îngust deasupra (cupolă: **16 × 16 × 12**, ridicat la **70**). Vârful capului e la 74, deci borul **intră** în cap  
 2. Pe capul **rotund**, verifici din Front că pălăria **intră puțin** în sferă — altfel rămâne un gol urât. Centrezi din Top  
 3. **Ochi:** 2 Sphere de ~**3 mm**, jumătate în cap, pe față, deasupra nasului, la ~**67** înălțime · **Nasturi:** 2–3 Sphere de ~**4 mm** pe fața corpului, pe mijloc, pe verticală, jumătate înfundate · **Color**
+
+**Gata când:**  
+- [ ] Pălăria intră puțin în cap, fără gol  
+- [ ] Ochii și nasturii sunt înfipți pe jumătate, nu plutesc  
+- [ ] Piesele au culori  
 
 ---
 

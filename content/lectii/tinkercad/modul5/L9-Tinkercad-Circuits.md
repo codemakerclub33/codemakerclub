@@ -50,16 +50,25 @@ Obiectele din jur nu sunt doar formă: o lanternă are și **circuit**. Un desig
 2. Rezistorul: click pe el → în căsuța care apare scrii **Resistance = 470 Ω**  
 3. LED-ul: are un picior **lung (anod, +)** și unul **scurt (catod, −)**
 
+**Gata când:**  
+- [ ] Ai bateria, rezistorul (**470 Ω**) și LED-ul  
+
 ### 3) Firele
 1. Click pe piciorul **+** al bateriei → tragi un fir până la un capăt al rezistorului  
 2. Celălalt capăt al rezistorului → fir la **anodul (+)** LED-ului  
 3. **Catodul (−)** LED-ului → fir la piciorul **−** al bateriei  
 4. Verifici: **+ bateria → rezistor → LED → − bateria** *(un cerc complet)*
 
+**Gata când:**  
+- [ ] Circuitul e complet: **+** baterie → rezistor → LED → **−** baterie  
+
 ### 4) Simularea
 1. **Start Simulation**  
 2. LED-ul se aprinde · dacă nu, vezi „Greșeli frecvente”  
 3. **Stop Simulation** înainte să muți piesele
+
+**Gata când:**  
+- [ ] LED-ul se aprinde la **Start Simulation**  
 
 ### 5) Rezistorul — de ce?
 LED-ul lasă să treacă prea mult curent și s-ar arde. Rezistorul **îl limitează**.  
@@ -70,6 +79,10 @@ LED-ul lasă să treacă prea mult curent și s-ar arde. Rezistorul **îl limite
 2. LED + rezistor **220 Ω**: **pin 13** al Arduino → rezistor → anodul LED · catodul LED → **GND**  
 3. **Code → Blocks** *(sau Text)*: programul „repetă pentru totdeauna: pin 13 **HIGH**, așteaptă **1 secundă**, pin 13 **LOW**, așteaptă **1 secundă**”  
 4. **Start Simulation** → LED-ul clipește la fiecare secundă
+
+**Gata când:**  
+- [ ] LED-ul e legat la **pin 13** printr-un rezistor de **220 Ω**, iar catodul la **GND**  
+- [ ] LED-ul clipește la fiecare secundă  
 
 ---
 
@@ -84,6 +97,9 @@ Un LED standard are diametrul de **5 mm**. Gaura se face cu joc: **Ø5,4**.
 4. **Cylinder** → **20,4 · 20,4 · 4** → **Hole** *(locul pentru o baterie-nasture de Ø20 și 3 mm grosime; adâncitura din fund e de 3,4 mm)* · **L** mijloc pe ambele axe cu cutia · ridicat la **1,6 mm** *(fundul rămâne de 1,6 mm)*  
 5. **Ctrl+G** cu cutia
 
+**Gata când:**  
+- [ ] Cutia (**60 · 36 · 20**) are gol și loc pentru baterie, grupate  
+
 ### 2) Capacul
 1. **Box** → **60 · 36 · 3** · **L** cu cutia: marginea din stânga și din față · ridicat la **20 mm**  
 2. **Cylinder** → **5,4 · 5,4 · 5** → **Hole** · **L** cu capacul: mijloc pe ambele axe · ridicat la **19 mm** *(trece prin capac)*  
@@ -91,11 +107,19 @@ Un LED standard are diametrul de **5 mm**. Gaura se face cu joc: **Ø5,4**.
 4. Rămân **două piese separate**: cutia și capacul  
 5. Pentru print, capacul se pune **cu fața plată în jos**, lângă cutie: îl cobori pe plan și îl muți în lateral *(acum stă pe cutie doar ca să vezi cum se potrivește)*
 
+**Gata când:**  
+- [ ] Capacul (**60 · 36 · 3**) e la **20 mm** și are gaura pentru LED (**Ø5,4**)  
+- [ ] Cutia și capacul sunt **două** piese separate  
+
 ### 3) Complet — două LED-uri
 1. Capacul e un Group: **Ctrl+Shift+G** *(desface)*, apoi capacul și gaura LED sunt iar separate  
 2. Gaura LED → **Ctrl+D** → **20 mm spre dreapta**; originalul îl muți **20 mm spre stânga** *(două LED-uri simetrice, la 10 și 50 mm de marginea capacului)*  
 3. Fiecare gaură rămâne cu marginea la mai mult de 5 mm de marginea capacului *(aici: 7,3 mm)*  
 4. Selectezi capacul și cele 2 găuri → **Ctrl+G**
+
+**Gata când:**  
+- [ ] Cele **2** găuri LED sunt la **20 mm** una de alta  
+- [ ] Fiecare e la mai mult de **5 mm** de marginea capacului  
 
 ### 4) Schema pe foaie
 Desenezi circuitul: baterie, rezistor, LED, cu **+** și **−** marcate. Scrii: **470 Ω** *(sau 220 Ω la Arduino)*.

@@ -61,10 +61,16 @@ Desenezi cutia **din lateral**: în spate, la înălțimea capacului, un cerc ma
 3. **L** cu cutia → mijloc pe stânga–dreapta și pe față–spate; gaura ridicată la **2 mm** *(fund de 2 mm; sus iese peste cutie)*  
 4. **Ctrl+G** → „cutia”
 
+**Gata când:**  
+- [ ] Cutia (**50 · 40 · 20**) are gol cu fund de **2 mm** și e grupată  
+
 ### 3) Capacul
 1. **Box** → **50 · 39,5 · 3**  
 2. **L** cu cutia: marginea din stânga și marginea din față  
 3. Îl ridici la **20,5 mm** *(0,5 mm de aer peste cutie, ca să nu se lipească la printare)* — rămâne un singur obiect, deocamdată
+
+**Gata când:**  
+- [ ] Capacul (**50 · 39,5 · 3**) e la **20,5 mm**, cu **0,5 mm** de aer deasupra cutiei  
 
 ### 4) Articulația capacului *(prima piesă a balamalei)*
 1. **Cylinder** → **8 · 8 · 23**  
@@ -73,30 +79,49 @@ Desenezi cutia **din lateral**: în spate, la înălțimea capacului, un cerc ma
 4. Îl muți: **13,5 mm spre dreapta** · **40 mm spre spate** *(Snap 5: 8 apăsări de săgeată)* · **17,5 mm în sus** *(conul negru, Snap 0.5)*  
    *Verifici cu Ruler: marginea din spate a articulației e la 48 mm și cea de sus la 25,5 — deci centrul e la 44 mm în spate și 21,5 sus.*
 
+**Gata când:**  
+- [ ] Articulația capacului (**Ø8 · 23**) stă culcată, în colțul din spate  
+
 ### 5) Știftul
 1. Articulația → **Ctrl+D** *(copia apare exact deasupra și e deja selectată)*  
 2. Copiei îi tastezi mărimile: **50 · 4 · 4** *(lungime · lățime · înălțime)*  
 3. **L** cu articulația Ø8 *(cea mare)*: mijloc pe față–spate și mijloc pe verticală *(articulația mare rămâne pe loc, știftul se centrează în ea)*  
 4. **L** cu cutia: marginea din stânga → știftul începe de la 0 și se termină la 50
 
+**Gata când:**  
+- [ ] Știftul (**50 · 4 · 4**) trece prin articulația mare, de la **0** la **50 mm**  
+
 ### 6) Articulațiile cutiei
 1. Articulația capacului → **Ctrl+D** → mărimi **13 · 8 · 8**  
 2. **L** cu cutia: doar marginea din stânga *(pe înălțime și pe față–spate rămâne pe loc)* → x de la 0 la 13  
 3. **Ctrl+D** → o muți **37 mm spre dreapta** *(Snap 1)* → x de la 37 la 50
+
+**Gata când:**  
+- [ ] Cele **2** articulații ale cutiei (**13 · 8 · 8**) sunt la 0–13 și la 37–50 mm  
 
 ### 7) Punțile
 1. **Box** **13 · 6 · 6** *(puntea articulației din stânga)* → **L** cu cutia: marginea din stânga și din față → o muți **39 mm spre spate** *(1 mm intră în peretele din spate, 5 mm ies în afară, spre articulație)* și o ridici la **14 mm** *(de la 14 la 20)*  
 2. **Ctrl+D** → o muți **37 mm spre dreapta** *(puntea din dreapta)*  
 3. **Box** **23 · 6 · 3** *(puntea capacului)* → **L** cu cutia: marginea din față → o muți **38 mm spre spate** *(ajunge până la 44, adică 1,5 mm peste capac și până la axa articulației)* și o ridici la **20,5 mm**; **L** cu articulația capacului: doar marginea din stânga *(x de la 13,5 la 36,5)*
 
+**Gata când:**  
+- [ ] Cele **3** punți sunt la locul lor  
+
 ### 8) Gaura din capac
 1. Știftul → **Ctrl+D** → mărimi **25 · 5 · 5** → **Hole**  
 2. **L** cu articulația capacului Ø8: mijloc pe toate cele trei axe *(gaura Ø5 în articulația Ø8)*
+
+**Gata când:**  
+- [ ] Gaura (**25 · 5 · 5**, Hole) e în articulația capacului  
 
 ### 9) Grupurile *(foarte important)*
 1. **Capacul:** selectezi capacul, articulația Ø8·23, puntea capacului și gaura Ø5 → **Ctrl+G**  
 2. **Cutia:** selectezi cutia (grupul), cele 2 articulații Ø8·13, cele 2 punți și **știftul** → **Ctrl+G**  
 3. Rămân **două obiecte**: cutia (cu știftul) și capacul. **Nu** le grupezi între ele!
+
+**Gata când:**  
+- [ ] Ai **două** obiecte: cutia (cu știftul) și capacul  
+- [ ] Cele două **nu** sunt grupate între ele  
 
 ### 10) Verificarea balamalei
 1. **View Cube → Right**: vezi cercul mare (articulația capacului), în el gaura de Ø5 și, în gaură, știftul de Ø4 *(un inel de aer între ele)*  
@@ -107,6 +132,9 @@ Desenezi cutia **din lateral**: în spate, la înălțimea capacului, un cerc ma
 ### 11) Complet — adâncitura și numele
 1. **Cylinder** **12 · 12 · 5** → **Hole** · **L** cu capacul: mijloc pe stânga–dreapta și marginea din **față** · îl muți **6 mm spre față** *(centrul pe marginea capacului: taie o jumătate de cerc)* · ridicat la **19 mm** *(trece prin capac, care e între 20,5 și 23,5)* → **Ctrl+G** cu **capacul**  
 2. **Text** cu numele tău *(lungime cel mult 30 mm)* → **Hole** · înălțime **2 mm** · **L** cu capacul: mijloc pe stânga–dreapta · îl muți la mijlocul capacului pe față–spate · ridicat la **22,5 mm** *(taie 1 mm din capac, care are 3)* → **Ctrl+G** cu capacul
+
+**Gata când:**  
+- [ ] Ai adâncitura pentru deget și numele ca Hole în capac  
 
 ---
 

@@ -49,6 +49,10 @@ Lumina trece **doar** prin golurile pe care le-ai tăiat tu.
 4. Hole-ul iese deasupra și dedesubt → **tub deschis la capete**, cu pereți de 3 mm  
 5. **Ctrl+A** → **Ctrl+G**, apoi **D** — tubul (un singur corp) coboară pe plan
 
+**Gata când:**  
+- [ ] Tubul (**70 · 70 · 70**) are gol **64 · 64 · 80**  
+- [ ] E deschis la capete și stă pe plan  
+
 ### 3) Bara care face ferestrele
 1. **Box** → **90 · 8 · 15** → **Hole**  
 2. Selectezi bara și tubul → **L** → mijloc pe ambele direcții de pe plan  
@@ -56,12 +60,20 @@ Lumina trece **doar** prin golurile pe care le-ai tăiat tu.
 4. Ridici bara cu conul negru la **10 mm** de plan (scrii 10): fereastra începe la 10 mm și urcă până la 25 mm  
 5. Fereastra are 15 mm înălțime; sub ea (10 mm) și deasupra ei (45 mm) rămâne perete plin
 
+**Gata când:**  
+- [ ] Bara (**90 · 8 · 15**, Hole) e la **10 mm** de plan  
+- [ ] Taie ambii pereți dintr-o singură mișcare  
+
 ### 4) Rotire și copiere
 1. Selectezi bara → **Ctrl+D**  
 2. Rotești copia **45°** (2 pași de câte 22,5° pe săgeata curbă)  
 3. **Ctrl+D** din nou — repetă aceeași rotire → a treia bară  
 4. **Ctrl+D** încă o dată → a patra  
 5. Rezultat: 4 bare la 0°, 45°, 90°, 135° → **8 ferestre** în jurul tubului
+
+**Gata când:**  
+- [ ] Ai **4** bare, la **0°, 45°, 90°, 135°**  
+- [ ] În jurul tubului sunt **8** ferestre  
 
 ### 5) Group + verificare
 1. **Ctrl+A** → **Ctrl+G**  
@@ -74,6 +86,10 @@ Lumina trece **doar** prin golurile pe care le-ai tăiat tu.
 3. Rotești copiile **22,5°** (un pas) → ferestrele de sus sunt **decalate** față de cele de jos  
 4. **Ctrl+A** → **Ctrl+G**  
 5. **Color**
+
+**Gata când:**  
+- [ ] Rândul al doilea e la **40 mm** și rotit cu **22,5°** (ferestrele sunt decalate)  
+- [ ] Abajurul e colorat  
 
 ---
 

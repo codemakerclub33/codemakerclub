@@ -50,10 +50,17 @@ Toate înălțimile sunt socotite **de la suprafața asfaltului (4 mm)**.
 5. Roata → **Ctrl+D** → **6 mm spre dreapta** → selectezi ambele roți → **Ctrl+D** → **4 mm spre spate** → **4 roți**  
 6. Selectezi toate piesele → **Ctrl+G** → **Color**
 
+**Gata când:**  
+- [ ] Mașina are caroserie, cabină și **4** roți  
+- [ ] Mașina e grupată și colorată  
+
 ### 3) Mașina pe stradă
 1. Mașina e deja la înălțimea corectă (roțile pe asfalt)  
 2. O pui pe **banda din față** a străzii orizontale *(centrul mașinii la 3 mm spre față de mijlocul străzii)*, cu lungimea de-a lungul străzii, **departe de trecerea de pietoni**  
 3. Din **Top**: mașina se vede între marginile străzii
+
+**Gata când:**  
+- [ ] Mașina stă pe banda din față a străzii, între marginile ei (din **Top**)  
 
 ### 4) Autobuzul
 1. **Box** **24 · 5 · 8** → galben, ridicat la **5 mm**  
@@ -64,16 +71,29 @@ Toate înălțimile sunt socotite **de la suprafața asfaltului (4 mm)**.
 6. Selectezi corpul autobuzului și roțile → **Ctrl+G**  
 7. Autobuzul (cu tot cu roți) → pe strada orizontală, pe **banda din spate**, cu fața în direcția contrară mașinii *(mașina merge spre dreapta, autobuzul spre stânga)*
 
+**Gata când:**  
+- [ ] Autobuzul (**24 · 5 · 8**) are **5** ferestre și roți  
+- [ ] Stă pe banda din spate, cu fața în direcția contrară mașinii  
+
 ### 5) Stația
 1. **Box** **10 · 3 · 0,6** *(acoperișul)*, **2** stâlpi **Box** **0,8 · 0,8 · 6** la capetele din spate  
 2. Primul stâlp: **L** cu acoperișul → marginea din **stânga** și marginea din **spate**; ridicat la **4 mm**. **Ctrl+D** → copia → **L** cu acoperișul → marginea din **dreapta** *(al doilea stâlp, la celălalt capăt)*  
 3. Acoperișul: ridicat la **10 mm** *(4 + 6)*, deasupra stâlpilor  
 4. **Ctrl+G** → stația. O așezi pe **zona de clădiri publice**, la marginea dinspre strada orizontală, la **4 mm** *(nu pe trotuar)*
 
+**Gata când:**  
+- [ ] Stația are acoperiș și **2** stâlpi  
+- [ ] Stă pe zona de clădiri publice, la **4 mm**  
+
 ### 6) Complet
 1. **Mașini în plus:** mașina → **Ctrl+D** → mută-o în urma ei, cu spațiu între ele; schimbă culoarea fiecăreia (3 mașini)  
 2. **Un vehicul pe cealaltă bandă:** o mașină → **Ctrl+D** → rotită 180° (8 pași) → pe banda din spate  
 3. **Semn de stație:** **Cylinder** **0,6 · 0,6 · 10** *(stâlpul)* la **4 mm** și **Box** **3 · 0,3 · 3** *(placa albastră)*, **L** cu stâlpul (mijloc pe ambele axe), ridicată la **11 mm** *(sus pe stâlp)*
+
+**Gata când:**  
+- [ ] Ai mai multe mașini, de culori diferite  
+- [ ] Ai un vehicul pe cealaltă bandă  
+- [ ] Ai un semn de stație  
 
 ---
 

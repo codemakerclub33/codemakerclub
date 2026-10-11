@@ -55,26 +55,47 @@ Alege **unul** (sau propune tu, cu acordul profesorului):
 2. Marchezi **piesa fixă** și **piesa mobilă**  
 3. Scrii **cel puțin 3 mărimi**, inclusiv axul și gaura (ax **+ 1 mm** pentru gaură)
 
+**Gata când:**  
+- [ ] Ai desenat mecanismul din față și de sus  
+- [ ] Ai marcat piesa **fixă** și piesa **mobilă**  
+- [ ] Ai scris **cel puțin 3** mărimi (ax și gaură cu **+ 1 mm**)  
+
 ### 3) Proiect nou și piesa fixă
 1. **Create new design** · nume `Prenume_Nume_T3_L10`  
 2. Snap Grid potrivit (1 mm pentru mărimi fine, 5 mm pentru mutări mari)  
 3. Piesa fixă: baza și axul (grupate între ele)  
 4. *Atenție la **Align**: mută **ambele** piese. Tragi forma nouă **peste** cea veche; ce trebuie să rămână împreună, grupezi temporar (**Ctrl+G**), aliniezi, apoi **Ctrl+Shift+G**.*
 
+**Gata când:**  
+- [ ] Piesa fixă (baza și axul) e grupată  
+
 ### 4) Piesa mobilă
 1. Piesa care se mișcă, cu **Hole** mai mare decât axul  
 2. Repetările: **Ctrl+D** + aceeași mutare sau aceeași rotire  
 3. Piesa mobilă rămâne **separată** de piesa fixă (nu le grupezi între ele)
+
+**Gata când:**  
+- [ ] Piesa mobilă are un **Hole** mai mare decât axul  
+- [ ] Piesa mobilă rămâne **separată** de cea fixă  
 
 ### 5) Verificare
 1. **Right** și **Top**: axul trece prin gaură, nimic nu se atinge  
 2. Mărimile din Tinkercad se potrivesc cu schița  
 3. **Ruler**: măsori gaura și axul
 
+**Gata când:**  
+- [ ] Din **Right** și **Top**, axul trece prin gaură și nimic nu se atinge  
+- [ ] Cu **Ruler**, gaura și axul au mărimile din schiță  
+
 ### 6) Complet
 1. A doua piesă mobilă (alt rotor, altă roată) **sau** un test: spui din ce vedere verifici că rotirea e liberă  
 2. **Color** coerent  
 3. Pregătești prezentarea: ce se mișcă, pe ce se mișcă, ce joc ai
+
+**Gata când:**  
+- [ ] Ai a doua piesă mobilă sau un test de rotire liberă  
+- [ ] Culorile sunt coerente  
+- [ ] Știi să explici: ce se mișcă, pe ce și ce joc ai  
 
 ---
 

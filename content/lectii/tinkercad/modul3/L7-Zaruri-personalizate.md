@@ -41,11 +41,17 @@ Ca să pui punctele exact, faci câte o **pereche de fețe** odată, într-un si
 2. Snap Grid: **1.0 mm** *(pentru adâncimi)*  
 3. **Box** → **40 · 40 · 40**
 
+**Gata când:**  
+- [ ] Cubul are **40 · 40 · 40**  
+
 ### 2) Un punct
 1. **Cylinder** → **6 · 6 · 4** → **Hole**  
 2. Îl pui deasupra cubului: **L** cu cubul → mijloc pe cele două direcții de pe plan și punctul de **sus**  
 3. Îl ridici cu conul negru cu **2 mm** — taie 2 mm adâncime în fața de sus și iese afară  
 4. Snap Grid: **5.0 mm** *(pentru mutări de 10 mm; rămâne așa până la sfârșit)*
+
+**Gata când:**  
+- [ ] Punctul (**6 · 6 · 4**, Hole) taie **2 mm** în fața de sus  
 
 ### Unde pui punctele *(față de centrul feței, în mm: dreapta/stânga, spate/față)*
 
@@ -71,6 +77,10 @@ Ca să pui punctele exact, faci câte o **pereche de fețe** odată, într-un si
 8. Din **Front**: un punct sus, șase jos  
 9. Muți perechea **60 mm deoparte** pe plan, ca să nu te încurce — o aduci la loc la pasul 6
 
+**Gata când:**  
+- [ ] Perechea **1–6**: un punct sus și **6** jos, la pozițiile din tabel  
+- [ ] Cele **7** puncte sunt grupate  
+
 ### 4) Perechea 2–5
 1. Un punct nou **6 · 6 · 4** (Hole), făcut ca în pasul 2 (sus, +2 mm — Snap Grid 1.0 la ridicare, apoi **5.0** la loc)  
 2. Fața de sus = **2**: pui punctele din tabel (Ctrl+D + mutare)  
@@ -79,11 +89,17 @@ Ca să pui punctele exact, faci câte o **pereche de fețe** odată, într-un si
 5. Rotești grupul **90°** (4 pași de câte 22,5°, săgeata curbă care îl culcă) — acum cele două fețe sunt **stânga** și **dreapta**  
 6. Muți perechea **60 mm deoparte**, în altă direcție
 
+**Gata când:**  
+- [ ] Perechea **2–5** e făcută după tabel și rotită **90°**  
+
 ### 5) Perechea 3–4
 1. Sus = **3** și jos = **4**, după tabel, făcute ca la perechea 2–5  
 2. Selectezi cele 7 puncte → **Ctrl+G**  
 3. Rotești 90° pe **cealaltă** săgeată curbă — fețele sunt acum **față** și **spate**  
 4. Muți perechea **60 mm deoparte**, în altă direcție
+
+**Gata când:**  
+- [ ] Perechea **3–4** e făcută după tabel și rotită **90°** pe cealaltă săgeată  
 
 ### 6) Zarul gata
 1. Selectezi **cubul și toate cele 3 perechi** (4 obiecte) → **L** → mijloc pe cele **trei** direcții, **o singură dată** *(așa nu rămâne nicio pereche în urmă)*  
@@ -91,10 +107,18 @@ Ca să pui punctele exact, faci câte o **pereche de fețe** odată, într-un si
 3. Rotești vederea: 1 opus 6, 2 opus 5, 3 opus 4  
 4. Adunate două câte două: **7**
 
+**Gata când:**  
+- [ ] Cubul și cele **3** perechi sunt centrate dintr-o singură dată și grupate  
+- [ ] 1 e opus lui 6, 2 opus lui 5, 3 opus lui 4  
+
 ### 7) Complet — al doilea zar
 1. Zarul → **Ctrl+D** → muți copia **60 mm** lateral  
 2. **Color**: un zar o culoare, celălalt alta  
 3. Spui pe rând: 1+6, 2+5, 3+4 → toate dau 7
+
+**Gata când:**  
+- [ ] Ai **2** zaruri, de culori diferite  
+- [ ] Pe fiecare zar, fețele opuse dau **7**  
 
 ---
 

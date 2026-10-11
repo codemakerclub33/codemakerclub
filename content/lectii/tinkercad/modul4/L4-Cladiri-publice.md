@@ -49,21 +49,35 @@ Fără semn, un cub gri poate fi orice.
 
 > **Ordinea contează:** dăm **Ctrl+G** acum, **înainte** de trepte și coloane, ca Hole-urile să taie doar corpul.
 
+**Gata când:**  
+- [ ] Corpul (**40 · 20 · 16**) are ușă (**6 · 4 · 10**) și **2** ferestre, la **30 mm** una de alta  
+- [ ] Corpul, ușa și ferestrele sunt grupate  
+
 ### 3) Treptele
 1. **Box** **14 · 6 · 1** *(treapta de jos)*: **L** cu corpul → mijloc stânga–dreapta, punctul de **jos**, punctul din **față** → o muți **6 mm spre față** *(se lipește de perete)*  
 2. **Box** **14 · 3 · 2** *(treapta de sus)*: aceleași aliniări → o muți **3 mm spre față**  
 3. Din **Right**: două trepte, ca o scară mică spre ușă
+
+**Gata când:**  
+- [ ] Ai **2** trepte, ca o scară mică spre ușă (din **Right**)  
 
 ### 4) Steagul
 1. **Cylinder** **1 · 1 · 14** *(stâlpul)*, ridicat la **16 mm** (pe acoperiș), într-un colț al clădirii  
 2. **Box** **6 · 0,5 · 4** *(pânza)*, lipită de stâlp, sus, ridicată la **26 mm** *(vârful stâlpului: 30 − 4)*  
 3. Culori: pânza roșie sau albastră
 
+**Gata când:**  
+- [ ] Steagul are stâlp (la **16 mm**) și pânză (la **26 mm**), roșie sau albastră  
+
 ### 5) Pe placă
 1. Selectezi tot (corpul grupat, treptele, stâlpul și pânza) cu Shift+click  
 2. Ridici la **4 mm** și muți pe zona de **clădiri publice** *(dreapta-față)*  
 3. **Color**: pereți o culoare deschisă, treptele gri  
 4. Dacă faci **doar Minim**: cu tot ce ai selectat → **Ctrl+G**. Dacă mergi la **Complet**, **nu grupa încă** (ai nevoie să te aliniezi la corp) — grupezi la sfârșitul pasului 6
+
+**Gata când:**  
+- [ ] Clădirea stă pe zona de clădiri publice, la **4 mm**  
+- [ ] Pereții au culoare deschisă, treptele gri  
 
 ### 6) Complet — acoperiș, coloane, spital
 1. **Acoperiș:** **Box** **42 · 26 · 1,5**, **L** cu corpul (mijloc pe ambele axe), ridicat la **20 mm** *(16 mm cât e corpul + 4 mm de la placă; iese 1 mm pe laterale și 3 mm în față și în spate)*  
@@ -73,6 +87,12 @@ Fără semn, un cub gri poate fi orice.
 3. **Spital:** **Box** **30 · 18 · 24** + **Hole** ușă **6·4·8** *(ca la școală: aliniată pe față, mutată 2 mm spre față, **Ctrl+G**)*, pe aceeași zonă, în spatele școlii *(școala + trepte are 26 mm adâncime, spitalul 18 → încap în 67)*, la **4 mm**  
 4. **Crucea:** două Box-uri roșii **8·1·2** și **2·1·8** → le grupezi (**Ctrl+G**) → **L** cu spitalul: mijloc stânga–dreapta, **mijloc sus–jos** *(înălțime)* și punctul din **față**; apoi o muți **1 mm spre față** *(se lipește de fațadă)*
 5. **Grupezi** (**Ctrl+G**) școala cu tot ce ține de ea: corp, trepte, steag, acoperiș, coloane. Spitalul rămâne separat
+
+**Gata când:**  
+- [ ] Acoperișul (**42 · 26 · 1,5**) e la **20 mm**  
+- [ ] Ai **4** coloane  
+- [ ] Spitalul (**30 · 18 · 24**) are ușă și cruce roșie  
+- [ ] Școala e grupată cu tot ce ține de ea, iar spitalul rămâne separat  
 
 ---
 

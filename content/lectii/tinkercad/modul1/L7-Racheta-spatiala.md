@@ -46,6 +46,9 @@ Exersezi ce ai învățat: **rotire**, **aliniere**, **Hole**, **Group**.
 3. Din **Top** conul e pe mijlocul cilindrului (muți cu mouse-ul)  
 4. Dacă vârful e prea lat: scalezi **lățimea**, nu doar înălțimea
 
+**Gata când:**  
+- [ ] Cilindrul (**20 × 20 × 50**) și conul (**20 × 20 × 25**, la **49**) sunt centrate din **Top**  
+
 ### 3) Aripioare (4, în cruce)
 *Motiv: o piesă se rotește în jurul **propriului** centru. De aceea facem o placă simetrică, al cărei centru e chiar axa rachetei.*  
 1. Tragi un **Roof** (acoperiș) din Basic Shapes. Din **Front** trebuie să vezi un **triunghi cu vârful sus** (dacă nu, îl rotești 90° în jurul axei de sus)  
@@ -55,10 +58,18 @@ Exersezi ce ai învățat: **rotire**, **aliniere**, **Hole**, **Group**.
 5. Verifici din **Top**: 4 aripioare egale, în cruce (+). Din **Front**: aripioarele sunt la bază  
 *(Plan B pentru Minim: aripioare din Box-uri subțiri lipite manual pe față, spate, stânga și dreapta, din Top, la distanțe egale)*
 
+**Gata când:**  
+- [ ] Placa-aripă (Roof) e **50 × 2 × 20** și centrată pe corp  
+- [ ] Din **Top** vezi **4** aripioare egale, în cruce  
+
 ### 4) Hublou (Complet)
 1. **Cylinder** **8 × 8 × 30**, culcat (săgeata curbă, 90°), pus pe **Hole**  
 2. Îl pui în mijlocul corpului, spre față, la înălțimea **~35** (conul negru). Corpul e plin, deci hublou = un tunel care **străpunge corpul** și iese pe ambele părți (30 > 20) — verifici din Top și Front  
 3. **Ctrl+G** doar pe **corp + hublou** (Shift+click pe cele două; nu pe vârf sau aripioare)
+
+**Gata când:**  
+- [ ] Hublou-ul (**Hole**) străpunge corpul pe ambele părți  
+- [ ] L-ai grupat doar cu **corpul**, nu cu vârful sau aripioarele  
 
 ### 5) Flăcări (Complet)
 Racheta stă pe plan, deci flăcările nu pot fi *sub* ea. O ridicăm și o „sprijinim” pe flăcări.  
@@ -66,6 +77,10 @@ Racheta stă pe plan, deci flăcările nu pot fi *sub* ea. O ridicăm și o „s
 2. **Cone** **12 × 12 × 18**, rotit 180° (**vârful în jos**), sub centrul rachetei, vârful pe plan (verifici din Top și Front). Încă 2 conuri mai mici (Ctrl+D + Shift) lângă el, tot cu vârful pe plan  
 3. Conurile intră 1 mm în baza rachetei (sus la 18, racheta începe la 17)  
 4. **Color**: galben / portocaliu
+
+**Gata când:**  
+- [ ] Racheta e ridicată la **17**, iar vârfurile flăcărilor ating planul  
+- [ ] Conurile intră 1 mm în baza rachetei  
 
 ### 6) Verificare finală
 1. **Front**: racheta e dreaptă, aripioarele la bază  

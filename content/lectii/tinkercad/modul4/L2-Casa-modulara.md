@@ -45,11 +45,17 @@ Ușile și ferestrele de pe model sunt **de 2 ori mai mari decât în realitate*
 1. **Box** → **24 · 20 · 12** *(în afara plăcii, deocamdată, pe plan)*  
 2. Ținem minte: 24 mm = 12 m, 20 mm = 10 m, 12 mm = 6 m (2 etaje)
 
+**Gata când:**  
+- [ ] Corpul casei are **24 · 20 · 12**  
+
 ### 3) Ușa
 1. **Box** → **4 · 4 · 8** → **Hole**  
 2. Selectezi ușa și corpul → **L** → mijloc pe stânga–dreapta și punctul de **jos**  
 3. Selectezi ușa și corpul → **L** → punctul din **față** al corpului (ușa e acum cu fața lipită de perete)  
 4. O muți **2 mm spre față** — jumătate din Hole iese afară, jumătate taie peretele (adâncime 2 mm)
+
+**Gata când:**  
+- [ ] Ușa (**4 · 4 · 8**, Hole) taie **2 mm** în perete  
 
 ### 4) Ferestrele de sus
 1. **Box** → **4 · 4 · 4** → **Hole**  
@@ -57,11 +63,18 @@ Ușile și ferestrele de pe model sunt **de 2 ori mai mari decât în realitate*
 3. O muți **6 mm** spre stânga și o ridici cu conul negru la **6 mm** — fereastra de sus-stânga  
 4. **Ctrl+D** → muți copia **12 mm** spre dreapta — fereastra de sus-dreapta
 
+**Gata când:**  
+- [ ] Ai **2** ferestre sus, la **12 mm** una de alta  
+
 ### 5) Group
 1. Selectezi corpul, ușa și cele 2 ferestre (Shift+click) → **Ctrl+G**  
    *(Dacă faci și Complet: înainte să adaugi acoperișul, apeși **Ctrl+D** de două ori pe corpul grupat și lași cele 2 copii deoparte, în afara plăcii. Vor fi casele 2 și 3.)*  
 2. Din **Front**: ușa jos la mijloc, ferestrele sus  
 3. Din **Right**: golurile taie doar 2 mm în perete
+
+**Gata când:**  
+- [ ] Din **Front**: ușa jos la mijloc, ferestrele sus  
+- [ ] Corpul, ușa și ferestrele sunt grupate  
 
 ### 6) Primul acoperiș — într-o apă
 1. **Wedge** → **24 · 20 · 8**  
@@ -69,9 +82,17 @@ Ușile și ferestrele de pe model sunt **de 2 ori mai mari decât în realitate*
 3. **L** cu casa → mijloc pe cele două direcții de pe plan → ridici la **12 mm**  
 4. Selectezi casa și acoperișul → **Ctrl+G**
 
+**Gata când:**  
+- [ ] Acoperișul (**Wedge 24 · 20 · 8**) are partea înaltă spre spate (din **Right**)  
+- [ ] Stă pe casă, la **12 mm**  
+
 ### 7) Casa pe placă
 1. Casa → ridici la **4 mm** (suprafața zonei) și o muți pe zona de locuințe  
 2. Culori: pereți o culoare, acoperiș alta
+
+**Gata când:**  
+- [ ] Casa stă pe zona de locuințe, la **4 mm**  
+- [ ] Pereții și acoperișul au culori diferite  
 
 ### 8) Complet — 3 case, 3 acoperișuri
 1. Ai acum casa 1 (cu acoperiș într-o apă, **Wedge**) și **2 corpuri grupate fără acoperiș** (copiile lăsate deoparte la pasul 5)  
@@ -80,6 +101,10 @@ Ușile și ferestrele de pe model sunt **de 2 ori mai mari decât în realitate*
 4. Acoperiș casa 3: **Box** **26 · 22 · 1,5** (iese 1 mm în afară), **L** cu corpul (mijloc pe cele două direcții), ridicat la 12 mm  
 5. Pe casele 2 și 3, selectezi corpul și acoperișul → **Ctrl+G**  
 6. Casele 2 și 3 ridicate la 4 mm și așezate pe zona de locuințe, cu spațiu între ele  
+
+**Gata când:**  
+- [ ] Ai **3** case, cu **3** acoperișuri diferite (Wedge, Pyramid, Box)  
+- [ ] Casele sunt pe zonă, cu spațiu între ele  
 
 ---
 

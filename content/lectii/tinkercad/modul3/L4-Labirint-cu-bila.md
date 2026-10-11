@@ -41,6 +41,9 @@ Planul pe hârtie te scutește să muți pereții de zece ori.
 2. Pe foaie desenezi pătratul de 100 × 100, **3 pereți** orizontali și săgeți: drumul merge **în zigzag** de jos în sus  
 3. Snap Grid: **1.0 mm**
 
+**Gata când:**  
+- [ ] Ai schița pe foaie: pătrat 100 × 100, **3** pereți și săgeți în zigzag  
+
 ### 2) Placa și cadrul
 1. **Box** → **100 · 100 · 4** *(placa)*  
 2. **Box** → **100 · 100 · 10** *(cadrul, încă plin)*  
@@ -50,17 +53,27 @@ Planul pe hârtie te scutește să muți pereții de zece ori.
 6. Apeși **D** pe inel (stă pe plan), apoi îl ridici cu **conul negru** cu **4 mm** — stă **pe** placă, nu în ea  
 7. **Ctrl+G** — placă cu cadru (pereții se văd 10 mm deasupra podelei)
 
+**Gata când:**  
+- [ ] Placa (**100 · 100 · 4**) are cadrul (inel cu pereți de **3 mm**)  
+- [ ] Cadrul stă **pe** placă, la 4 mm  
+
 ### 3) Primul perete interior
 1. **Box** → **75 · 3 · 10** *(Snap Grid rămâne 1.0)*  
 2. Selectezi peretele și placa → **L** → punctul din **stânga** (marginea stângă) și punctul de la **marginea din față**  
 3. Îl ridici cu **conul negru** cu **4 mm** — stă pe placă  
 4. Snap Grid: **5.0 mm** → muți peretele **25 mm** spre spate (5 sărituri) — culoarul de jos are 22 mm
 
+**Gata când:**  
+- [ ] Primul perete (**75 · 3 · 10**) e lipit de stânga, la **25 mm** de față  
+
 ### 4) Al doilea și al treilea perete
 1. Selectezi primul perete → **Ctrl+D** → muți copia încă **25 mm** spre spate  
 2. **L** cu placa → punctul din **dreapta** (marginea dreaptă) — peretele se lipește de dreapta, golul rămâne în stânga  
 3. Primul perete → **Ctrl+D** → muți copia **50 mm** spre spate → al treilea perete, lipit de stânga  
 4. Din **Top**: pereții alternează — gol la dreapta, gol la stânga, gol la dreapta
+
+**Gata când:**  
+- [ ] Pereții alternează: gol la dreapta, la stânga, la dreapta  
 
 ### 5) Start și final
 1. Snap Grid: **1.0 mm** → **Box** → **12 · 12 · 1** *(marcaj de start)*  
@@ -69,17 +82,31 @@ Planul pe hârtie te scutește să muți pereții de zece ori.
 4. **Ctrl+D** → marcajul de final: la fel, dar în colțul din **stânga-spate** (margini: stânga și spate; 5 mm spre dreapta și 5 mm spre față)  
 5. **Color**: start verde, final roșu
 
+**Gata când:**  
+- [ ] Start-ul e în colțul din față, iar final-ul în colțul din spate  
+- [ ] Start-ul e verde și final-ul roșu  
+
 ### 6) Bila
 1. **Sphere** **10 · 10 · 10**  
 2. **L** cu marcajul de start (mijloc pe cele două direcții de pe plan)  
 3. O ridici cu conul negru la **5 mm** — stă pe marcajul de start  
 4. **Ctrl+A** pe tot ce e labirint, **fără bilă** (Shift+click pe bilă ca s-o scoți) → **Ctrl+G**
 
+**Gata când:**  
+- [ ] Bila (**10 mm**) stă pe marcajul de start  
+- [ ] Bila rămâne în afara grupului  
+
 ### 7) Complet — pinteni, test, culori
 1. Doi pereți scurți **3 · 8 · 10** (ridicați 4 mm, ca peretele lung), lipiți de un perete lung și ieșiți în culoar = **pinteni**; între pinten și peretele din față rămân **14 mm** — bila trece (nu bloca drumul!)  
 2. Trasezi cu degetul pe ecran drumul de la start la final: nu trebuie să treci prin perete  
 3. **Ruler**: culoarul (22 mm) față de bilă (10 mm)  
 4. **Color**: **Ctrl+Shift+G** pe labirint → colorezi placa cu cadru într-o culoare și pereții interiori în alta → îi regrupezi, **fără bilă**
+
+**Gata când:**  
+- [ ] Ai **2** pinteni (**3 · 8 · 10**)  
+- [ ] Cu degetul pe ecran, drumul start → final nu trece prin perete  
+- [ ] Cu **Ruler**: culoarul **22 mm**, bila **10 mm**  
+- [ ] Placa și pereții interiori au culori diferite  
 
 ---
 

@@ -50,10 +50,17 @@ Azi avem joc de **1 mm pe parte**: gaura 7, axul 5.
 6. View Cube → **Front**: roata se vede ca un **cerc**? Dacă vezi o linie, mai rotește 90° pe cealaltă săgeată  
 7. **D** — roata se sprijină pe plan
 
+**Gata când:**  
+- [ ] Roata (**24 · 24 · 6**, gaură **7 mm**) se vede ca un **cerc** din **Front**  
+- [ ] Roata stă pe plan  
+
 ### 3) Axul
 1. **Cylinder** → **5 · 5 · 52**  
 2. Îl rotești la fel ca roata, până când din **Front** se vede ca un **cerc** mic  
 3. **D** — axul se sprijină pe plan
+
+**Gata când:**  
+- [ ] Axul (**5 · 5 · 52**) se vede ca un cerc mic din **Front** și stă pe plan  
 
 ### 4) Setul „ax + 2 roți”
 1. Roata → **Ctrl+D** → ai 2 roți; le tragi pe amândouă **peste ax**, între capetele lui (din **Top**, axul trece prin ele)  
@@ -62,6 +69,10 @@ Azi avem joc de **1 mm pe parte**: gaura 7, axul 5.
 4. Selectezi **axul** și **a doua roată** → **L** → pe adâncime, punctul de la **capătul din față**  
 5. Fiecare roată stă acum la capătul axului, **nelipită de el** — axul trece prin gaura de 7 mm  
 6. Selectezi **cele trei piese** → **Ctrl+D** → muți copia **50 mm** pe direcția lungimii mașinii *(Snap Grid 5.0 mm, 10 sărituri)* — al doilea set
+
+**Gata când:**  
+- [ ] Axul trece prin gaura roților, fără să le lipească  
+- [ ] Ai al doilea set „ax + 2 roți”, la **50 mm** de primul  
 
 ### 5) Caroseria
 1. Selectezi **cele două seturi** (ax + roți) → **Ctrl+G** *(temporar)* → le muți **60 mm** spre față (Snap Grid 5.0, 12 sărituri), ca să nu te încurci  
@@ -73,20 +84,36 @@ Azi avem joc de **1 mm pe parte**: gaura 7, axul 5.
 6. Shift+click pe **caroserie și pe cele două găuri** *(nu Ctrl+A — ar prinde și roțile)* → **Ctrl+G**  
 7. Apeși **D** (caroseria stă pe plan), apoi o ridici cu **conul negru** cu **6 mm** (Snap Grid 1.0) — găurile ajung la **12 mm** de plan, ca axele
 
+**Gata când:**  
+- [ ] Caroseria are **80 · 36 · 12**  
+- [ ] Cele două găuri pentru axe sunt la **50 mm** una de alta  
+- [ ] Găurile sunt la **12 mm** de plan, ca axele  
+
 ### 6) Axele prin caroserie
 1. Selectezi grupul temporar (cele două seturi) și caroseria → **L** → mijloc pe cele **două** direcții de pe plan (stânga–dreapta și față–spate) — **nu** pe înălțime  
 2. Selectezi grupul temporar → **Ctrl+Shift+G**  
 3. View Cube → **Front** și **Top**: axele trec prin găuri, roțile sunt în afara caroseriei
+
+**Gata când:**  
+- [ ] Din **Front** și **Top**, axele trec prin găuri și roțile sunt în afara caroseriei  
 
 ### 7) Cabina
 1. **Box** → **40 · 32 · 12** → **L** cu caroseria, mijloc pe cele două direcții de pe plan  
 2. Îl ridici cu conul negru la **18 mm**, pe acoperișul caroseriei  
 3. Selectezi cabina și caroseria → **Ctrl+G**
 
+**Gata când:**  
+- [ ] Cabina (**40 · 32 · 12**) stă pe acoperișul caroseriei, la **18 mm**  
+
 ### 8) Complet — faruri, Ruler, culori
 1. **Sphere** **6 · 6 · 6** → Snap Grid 1.0 → o tragi peste caroserie, **L** → marginea din **dreapta**, apoi o muți **3 mm** spre dreapta (iese în afară) și o ridici la **9 mm** · **Ctrl+D** → copia o muți **20 mm** pe adâncime — două faruri pe fața din dreapta  
 2. **Ruler**: măsori gaura roții (7 mm) și axul (5 mm)  
 3. **Color**: caroseria o culoare, roțile alta
+
+**Gata când:**  
+- [ ] Farurile ies puțin în afară  
+- [ ] Cu **Ruler**: gaura roții **7 mm**, axul **5 mm**  
+- [ ] Caroseria și roțile au culori diferite  
 
 ---
 

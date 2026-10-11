@@ -44,6 +44,10 @@ Multe obiecte sunt simetrice. Faci **o jumătate** și o **oglindești** — nu 
 2. Din **Top** (View Cube), corpul trebuie să fie ca o baghetă **în sus–jos** pe ecran, iar aripile vor ieși **stânga–dreapta**. Dacă e pe orizontală, îl rotești încă 90° pe verticală (în jurul axei de sus)  
 3. După rotire poate pluti → **D**
 
+**Gata când:**  
+- [ ] Corpul e culcat, pe verticală pe ecran (sus–jos) din **Top**  
+- [ ] Stă pe plan  
+
 ### 3) O aripă (trebuie să fie asimetrică)
 1. Tragi un **Wedge** din Basic Shapes și îl **culci pe o latură** (rotire 90° cu săgeata curbă) până când din **Top** vezi un **triunghi**. Apoi îl subțiezi (pătrățelul de sus) la **3 mm** înălțime și îl faci ~**30 × 22** văzut din Top. Pe plan → **D**  
    *(Varianta: un Box 30 × 15 × 3 înclinat ~22° cu săgeata curbă)*  
@@ -51,9 +55,16 @@ Multe obiecte sunt simetrice. Faci **o jumătate** și o **oglindești** — nu 
 3. Aripa = **o singură piesă**  
 4. O așezi lângă corp, pe o parte (intră 1–2 mm în corp)
 
+**Gata când:**  
+- [ ] Aripa e asimetrică: din **Top** vezi un triunghi  
+- [ ] E **o singură** piesă și intră 1–2 mm în corp  
+
 ### 4) Duplicare
 1. Selectezi aripa → **Ctrl+D** (Mac: **Cmd+D**)  
 2. Copia e **peste** original — o tragi în lateral
+
+**Gata când:**  
+- [ ] Ai o copie a aripii, mutată în lateral, pe care o vezi  
 
 ### 5) Oglindire (**M**)
 1. Selectezi **copia** → apeși **M**  
@@ -62,16 +73,30 @@ Multe obiecte sunt simetrice. Faci **o jumătate** și o **oglindești** — nu 
 4. Aripa oglindită trebuie să fie **înclinată invers** — așa știi că M a mers. Copia rămâne în același loc (peste original)  
 5. Muți copia **în linie dreaptă, orizontal**, pe **cealaltă** parte a corpului — aceeași distanță față de corp ca prima. Poți apăsa și săgețile tastaturii (mută piesa selectată) ca să corectezi puțin
 
+**Gata când:**  
+- [ ] Copia e înclinată **invers** față de original  
+- [ ] E pe cealaltă parte a corpului, la aceeași distanță  
+
 ### 6) Simetria (**L** sau manual)
 1. Verifici din **Top**: aripile sunt oglindă una alteia, corpul la mijloc între ele  
 2. **Aliniere cu L:** selectezi cele **două aripi** (Shift+click pe fiecare), apeși **L**. Apar **puncte negre** pe margini — fiecare aliniază pe o direcție. Alegi **punctul din mijloc** pe direcția **în sus–jos** din Top (lungimea corpului): aripile ajung la același nivel. **Nu** apeși punctele pe direcția stânga–dreapta (ai lipi aripile una peste alta)  
 3. Dacă aripile ajung **peste corp** sau Align e confuz: **Ctrl+Z** și **muți manual** din Top — e OK pentru Minim
+
+**Gata când:**  
+- [ ] Din **Top**, aripile sunt oglindă una alteia  
+- [ ] Corpul e la mijloc între ele  
 
 ### 7) Complet
 1. **Cap:** Sphere de ~**12 mm** la **un capăt** al corpului (intră 2 mm în corp)  
 2. **O antenă:** cilindru subțire (**2 × 2 × 14**) înclinat ~**22°** spre exterior, înfipt în cap → **Ctrl+D** → **M** → pe cealaltă parte (înclinată invers)  
 3. **A doua pereche de aripi:** Ctrl+D pe o aripă mare → o micșorezi cu **Shift** → o așezi lângă partea din spate a corpului (pe plan, intră 1–2 mm în corp) → Ctrl+D → **M** → pe cealaltă parte  
 4. **Color** pe corp și aripi
+
+**Gata când:**  
+- [ ] Capul e la un capăt și intră 2 mm în corp  
+- [ ] Antenele sunt înclinate invers una față de alta  
+- [ ] A doua pereche de aripi e simetrică, la fel ca prima  
+- [ ] Corpul și aripile au culori  
 
 ---
 

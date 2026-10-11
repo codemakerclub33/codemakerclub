@@ -49,11 +49,18 @@ Azi înveți să **scrii mărimile cu numere**, nu doar să măsori cu ochiul. A
 4. Apasă pe un număr și **scrie** valoarea: **120** · **30** · **5**  
 5. Asta e **placa**: lungă, îngustă și subțire, culcată pe plan
 
+**Gata când:**  
+- [ ] Placa are **120 · 30 · 5** și stă culcată pe plan  
+
 ### 3) Primul cârlig
 1. Trage un **Cylinder** și scrie mărimile: **10 · 10 · 25** (stă „în picioare”)  
 2. Selectezi cilindrul și placa → **L** (Align): click pe punctul din **stânga** (stânga–dreapta) și pe punctul de **mijloc** (față–spate). *Nu* alege nimic pe direcția sus–jos  
 3. Cilindrul are acum marginea lipită de capătul plăcii. Apasă **săgeata dreapta** de **5 ori** (5 × 5 = 25 mm): centrul cârligului e la **30 mm** de capăt  
 4. Cilindrul stă pe plan și **se înfige în placă** — așa se lipește bine; deasupra plăcii rămân ~20 mm de cârlig
+
+**Gata când:**  
+- [ ] Cârligul are **10 · 10 · 25** și se înfige în placă  
+- [ ] Centrul lui e la **30 mm** de capăt (5 apăsări pe săgeată)  
 
 ### 4) Copii egale
 1. Cârligul selectat → **Ctrl+D** (Mac: **Cmd+D**) → copia apare **peste** original  
@@ -61,12 +68,20 @@ Azi înveți să **scrii mărimile cu numere**, nu doar să măsori cu ochiul. A
 3. **Ctrl+D** din nou — repetă **aceeași mutare** automat  
 4. Rezultat: 3 cârlige la 30, 60, 90 mm — la fel de departe unul de altul și de capete
 
+**Gata când:**  
+- [ ] Ai **3** cârlige, la **30, 60 și 90 mm**  
+- [ ] Distanțele dintre ele sunt egale  
+
 ### 5) Găurile pentru șuruburi
 1. Trage un **Cylinder** → scrie **6 · 6 · 15**  
 2. În panoul **Shape**, alege **Hole** (cu dungi)  
 3. Selectezi gaura și placa → **L** → punctul din **stânga** și **mijloc** pe față–spate. Apoi **săgeata dreapta** o dată (5 mm): gaura e la **5 mm** de capăt, **departe de cârlige**  
 4. Coboar-o puțin sub plan cu **conul negru** (trage-o în jos ~2 mm, sub linia plasei), ca să treacă **prin toată placa**  
 5. **Ctrl+D** → copia + placa → **L** → punctul din **dreapta** (placa nu se mișcă), apoi **săgeata stânga** o dată: a doua gaură e tot la 5 mm de margine
+
+**Gata când:**  
+- [ ] Găurile (**6 · 6 · 15**) sunt **Hole** (dungi)  
+- [ ] Sunt la **5 mm** de fiecare capăt și trec prin toată placa  
 
 ### 6) Group și verificare
 1. **Ctrl+A** → **Ctrl+G** (Mac: **Cmd+G**)  
@@ -79,6 +94,11 @@ Azi înveți să **scrii mărimile cu numere**, nu doar să măsori cu ochiul. A
 2. **Ctrl+D** de două ori, mutând copiile **30 mm** → câte o bilă pe fiecare cârlig *(dacă ai ales Hole din greșeală, pune Solid)*  
 3. **Ruler** (sus-dreapta) → pui rigla pe plan la marginea stângă a primului cârlig, apoi dai click pe al doilea cârlig: citești **30 mm** *(Ruler măsoară o piesă separată: dacă cârligele sunt în Group, fă întâi **Ctrl+Shift+G**, măsori, apoi **Ctrl+A** → **Ctrl+G** la loc)*  
 4. Selectezi tot → **Color** în panoul **Shape** → culoarea ta
+
+**Gata când:**  
+- [ ] Bilele (**12 · 12 · 12**) stau pe vârfurile cârligelor  
+- [ ] Cu **Ruler** ai citit **30 mm** între cârlige  
+- [ ] Suportul e colorat  
 
 ---
 

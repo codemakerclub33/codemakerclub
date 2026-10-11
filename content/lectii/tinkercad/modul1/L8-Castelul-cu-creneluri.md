@@ -45,6 +45,9 @@ La oraș (M4) vei repeta ferestre la fel.
 1. Tragi un **Box** și îl faci **104 lungime × 10 grosime × 20 înălțime**  
 2. Pe plan (dacă plutește → **D**)
 
+**Gata când:**  
+- [ ] Zidul are **104 × 10 × 20** și stă pe plan  
+
 ### 3) Crenelurile (repetarea Ctrl+D)
 1. Tragi un **Box mic** **8 × 10 × 6** (10 = cât grosimea zidului) și îl pui în **capătul de sus** al zidului: ridicat cu conul negru la **20** — acesta e primul crenel  
 2. Selectezi crenelul → **Ctrl+D** (Mac: **Cmd+D**) — copia apare **peste** primul  
@@ -54,10 +57,18 @@ La oraș (M4) vei repeta ferestre la fel.
 6. **Atenție:** nu muți alte copii între timp — doar prima mutare, apoi doar Ctrl+D  
 7. Dacă golurile nu ies egale cu crenelurile, nu e grav — important e să fie **toate la fel**; altfel **Ctrl+Z** și refaci prima mutare
 
+**Gata când:**  
+- [ ] Ai **7** creneluri, toate la aceeași distanță  
+- [ ] Primul crenel e ridicat la **20**  
+
 ### 4) Turnul
 1. **Cylinder** **26 × 26 × 40**, pe plan, cu centrul pe **capătul zidului** (jumătate intră în zid; primul crenel se ascunde în turn — e OK)  
 2. Acoperiș: **Cone** **30 × 30 × 15** ridicat la **40** **sau** creneluri mici pe margine (Ctrl+D ca la zid)  
 3. Turnul pe plan; dacă plutește → **D** (dar **nu** pe con — conul îl ridici la 40)
+
+**Gata când:**  
+- [ ] Turnul are **26 × 26 × 40**, centrat pe capătul zidului  
+- [ ] Acoperișul (con la **40**) sau crenelurile mici sunt la locul lor  
 
 ### 5) Complet
 1. **Al doilea turn** la celălalt capăt **sau** zid pe încă o latură (Ctrl+D pe zid + rotire dacă trebuie)  
@@ -68,6 +79,12 @@ La oraș (M4) vei repeta ferestre la fel.
    - *(Arc cu cilindru culcat deasupra = Bonus, pentru cine apucă)*  
 3. **Steag:** un stâlp (Cylinder **2 × 2 × 12**) înfipt 3 mm în vârful conului + un Box **8 × 1 × 5** lipit de capătul de sus al stâlpului  
 4. **Color**
+
+**Gata când:**  
+- [ ] Ai al doilea turn sau zid pe încă o latură  
+- [ ] Poarta (**Hole**) taie zidul pe ambele fețe  
+- [ ] Steagul e înfipt în vârf  
+- [ ] Piesele au culori  
 
 ---
 

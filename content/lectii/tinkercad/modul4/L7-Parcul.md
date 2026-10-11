@@ -46,10 +46,17 @@ Un parc face orașul mai plăcut. Copacii se repetă cu **Ctrl+D**, ca ferestrel
 4. Selectezi ambele → **L** → mijloc pe stânga–dreapta și pe față–spate → ele au același centru  
 5. **Ctrl+G** → „copacul”
 
+**Gata când:**  
+- [ ] Copacul are trunchi (maro) și coroană (verde), centrate  
+- [ ] Trunchiul și coroana sunt grupate  
+
 ### 3) Copacii în rând
 1. Copacul → pe malul din spate al râului, **în partea stângă** a zonei de parc *(centrul la 7 mm de marginea din stânga a zonei și la 7 mm de râu; în dreapta rămâne loc pentru pod și alee)*  
 2. Snap Grid: **2.0 mm** → **Ctrl+D** → muți copia **14 mm** spre dreapta  
 3. **Ctrl+D** de încă 2 ori → **4 copaci** egal distanțați *(Minim)*
+
+**Gata când:**  
+- [ ] Ai **4** copaci egal distanțați, pe malul din spate  
 
 ### 4) Banca
 1. **Box** **8 · 3 · 1** *(scaunul)*, **Box** **1 · 3 · 2** *(piciorul)*  
@@ -59,14 +66,26 @@ Un parc face orașul mai plăcut. Copacii se repetă cu **Ctrl+D**, ca ferestrel
 5. Selectezi toate piesele → **Ctrl+G** → „banca”  
 6. Banca pe mal, cu spatele spre râu *(Snap Grid 1.0; stă pe mal la 4 mm, picioarele pe zonă)*
 
+**Gata când:**  
+- [ ] Banca are scaun, **2** picioare și spătar  
+- [ ] Banca stă pe mal, cu spatele spre râu  
+
 ### 5) Aleea
 1. **Box** **4 · 20 · 0,4** → culoare nisip  
 2. **L** cu podul: mijloc pe stânga–dreapta și marginea din **spate** a aleii cu marginea din **față** a podului *(aleea începe unde se termină podul, pe malul dinspre stradă)*  
 3. O ridici la **4 mm** *(pe mal)* — ea merge de la pod spre stradă și nu trece printre copaci
 
+**Gata când:**  
+- [ ] Aleea (**4 · 20 · 0,4**) e la **4 mm**, de la pod spre stradă  
+- [ ] Nu trece printre copaci  
+
 ### 6) Complet — mai mulți copaci și bănci
 1. Încă un rând de copaci pe celălalt mal: selectezi cei 4 copaci → **Ctrl+D** → (Snap Grid 2.0) muți copiile **26 mm spre față** *(7 mm mal + 12 mm râu + 7 mm mal)*  
 2. A doua bancă: **Ctrl+D** pe prima, o rotești **180°** (8 pași) și o muți pe malul din față, tot cu spatele spre râu
+
+**Gata când:**  
+- [ ] Ai un rând de copaci și pe celălalt mal  
+- [ ] A doua bancă e rotită **180°**, cu spatele spre râu  
 
 ### 7) Complet — fântâna
 0. Snap Grid: **0.5 mm**  
@@ -78,6 +97,10 @@ Un parc face orașul mai plăcut. Copacii se repetă cu **Ctrl+D**, ca ferestrel
 6. **Cylinder** **2 · 2 · 5** *(coloana)*, la **4,5 mm**, în centru  
 7. **Sphere** **4 · 4 · 4** deasupra coloanei, la **9,5 mm**, centrată  
 8. Selectezi toate piesele fântânii → **Ctrl+G**
+
+**Gata când:**  
+- [ ] Fântâna are bazin cu fund de **0,5 mm**, apă, coloană și sferă  
+- [ ] Fântâna e grupată și stă pe un mal, departe de aleea de pod  
 
 ---
 

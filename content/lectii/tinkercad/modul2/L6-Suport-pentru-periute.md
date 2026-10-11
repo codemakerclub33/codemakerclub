@@ -44,10 +44,17 @@ Cu **Ctrl+D** faci un rând, apoi copiezi tot rândul — fără să măsori de 
 1. **Cylinder** → **70 · 70 · 40**  
 2. Rămâne **Solid**
 
+**Gata când:**  
+- [ ] Corpul are **70 · 70 · 40** (Solid)  
+
 ### 3) Prima gaură
 1. **Cylinder** → **16 · 16 · 40** → **Hole**  
 2. Selectezi gaura și corpul → **L** → **mijloc** pe ambele direcții de pe plan  
 3. Ridici gaura cu **5 mm**, folosind **conul negru** (scrii 5): începe la 5 mm de jos și iese 5 mm deasupra → **fund închis de 5 mm**
+
+**Gata când:**  
+- [ ] Prima gaură (**16 · 16 · 40**, Hole) e centrată  
+- [ ] E ridicată cu **5 mm**, deci fundul e închis  
 
 ### 4) Matricea 2 × 2
 1. Snap Grid: **5.0 mm**  
@@ -55,6 +62,10 @@ Cu **Ctrl+D** faci un rând, apoi copiezi tot rândul — fără să măsori de 
 3. **Ctrl+D** → muți copia **30 mm** spre stânga (6 apăsări) → 2 găuri într-un rând  
 4. Shift+click pe **ambele** găuri → **Ctrl+D** → muți cele două copii **30 mm** spre spate (6 apăsări) → rândul 2  
 5. Rezultat: 4 găuri în pătrat, centrele la 30 mm unele de altele
+
+**Gata când:**  
+- [ ] Ai **4** găuri într-un pătrat  
+- [ ] Centrele sunt la **30 mm** unele de altele  
 
 ### 5) Group + verificare
 1. **Ctrl+A** → **Ctrl+G**  
@@ -66,6 +77,11 @@ Cu **Ctrl+D** faci un rând, apoi copiezi tot rândul — fără să măsori de 
 2. Din **Front**: baza e mai lată decât corpul → suportul nu se răstoarnă  
 3. **Ruler**: pui rigla la marginea stângă a unei găuri, click pe gaura vecină din rând: **30 mm** între aceleași margini, adică între centre *(Hole-urile se măsoară doar separat: dacă sunt în Group, **Ctrl+Shift+G**, măsori, apoi **Ctrl+A** → **Ctrl+G** la loc)*  
 4. Selectezi tot → **Ctrl+G** (suport și bază) · **Color**
+
+**Gata când:**  
+- [ ] Baza (**80 · 80 · 4**) e sub corp și mai lată decât el (din **Front**)  
+- [ ] Cu **Ruler**: **30 mm** între găuri  
+- [ ] Suportul și baza sunt grupate și colorate  
 
 ---
 

@@ -46,6 +46,10 @@ O clădire înaltă are zeci de ferestre identice. Nu le faci una câte una: fac
 3. Selectezi ușa și blocul → **L** → mijloc pe stânga–dreapta, punctul de **jos** și punctul din **față** al blocului  
 4. O muți **2 mm spre față** — taie 2 mm în perete
 
+**Gata când:**  
+- [ ] Blocul are **30 · 20 · 54**  
+- [ ] Ușa (**8 · 4 · 8**, Hole) taie **2 mm** în perete  
+
 ### 3) Rândul de ferestre
 1. **Box** → **4 · 4 · 3** → **Hole** *(o fereastră)*  
 2. **L** cu blocul → mijloc pe stânga–dreapta și punctul din **față**; o muți **2 mm spre față** (jumătate afară)  
@@ -54,24 +58,44 @@ O clădire înaltă are zeci de ferestre identice. Nu le faci una câte una: fac
 5. Snap Grid: **2.0 mm** → **Ctrl+D** → muți copia **8 mm** spre dreapta → **Ctrl+D** → **Ctrl+D** — 4 ferestre egale, la 8 mm una de alta  
 6. Selectezi cele 4 ferestre → **Ctrl+G** *(un singur „rând”, un Group de Hole-uri)*
 
+**Gata când:**  
+- [ ] Ai un rând de **4** ferestre egale, la **8 mm** înălțime  
+- [ ] Cele 4 ferestre sunt grupate  
+
 ### 4) Rândurile în sus
 1. Rândul → **Ctrl+D** → muți copia **6 mm** în sus (un etaj)  
 2. **Ctrl+D** → repetă aceeași mutare → al treilea rând  
 3. Ai 3 rânduri, câte 6 mm între ele *(Minim)*
 
+**Gata când:**  
+- [ ] Ai **3** rânduri, la **6 mm** unul de altul  
+
 ### 5) Group
 1. Selectezi blocul, ușa și toate rândurile (Shift+click) → **Ctrl+G**  
 2. Din **Front**: ușă jos, 3 rânduri de ferestre egale
 
+**Gata când:**  
+- [ ] Din **Front**: ușă jos și **3** rânduri de ferestre egale  
+- [ ] Blocul, ușa și rândurile sunt grupate  
+
 ### 6) Blocul pe placă
 1. Ridici blocul la **4 mm** și îl muți pe zona **centru**  
 2. **Color**: blocul o culoare, ferestrele rămân găuri
+
+**Gata când:**  
+- [ ] Blocul stă pe zona **centru**, la **4 mm**  
+- [ ] Blocul are culoare, iar ferestrele rămân găuri  
 
 ### 7) Complet — 8 rânduri, terasă, antenă
 1. Desfaci Group-ul (**Ctrl+Shift+G**), selectezi ultimul rând și continui să-l copiezi în sus cu **Ctrl+D** și aceeași mutare de 6 mm, până ai **8 rânduri** (ultimul rând e la 50 mm de baza blocului); apoi selectezi blocul, ușa și toate rândurile → **Ctrl+G**  
 2. **Terasa:** **Box** **30·20·2** și **Hole** **26·16·3** → **L**: mijloc pe ambele axe între ele și cu blocul → ambele ridicate la **58 mm** *(54 mm cât e blocul + 4 mm de la placă)* → selectezi **doar** Box-ul și Hole-ul → **Ctrl+G** *(un parapet de 2 mm)*  
 3. **Antena:** **Cylinder** **1,5·1,5·12** pe mijlocul terasei, ridicat la **58 mm**  
 4. **Al doilea bloc:** **Box** **30·20·30** (5 etaje) + ușă + 4 rânduri de ferestre, făcut după același tipar; îl pui lângă primul, tot pe zona centru
+
+**Gata când:**  
+- [ ] Blocul are **8** rânduri de ferestre  
+- [ ] Are terasă și antenă  
+- [ ] Ai al doilea bloc, mai mic (5 etaje)  
 
 ---
 

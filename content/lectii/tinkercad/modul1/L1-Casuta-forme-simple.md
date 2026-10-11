@@ -50,12 +50,20 @@ Fără cameră, plan, Undo și nume de proiect, restul orelor se blochează.
 4. **Undo:** **Ctrl+Z** (Mac: **Cmd+Z**) — revine ce-ai șters  
 5. Eliberezi planul: **Ctrl+A** → **Delete**
 
+**Gata când:**  
+- [ ] 5 forme diferite stau pe plan, nu plutesc  
+- [ ] Ai șters o formă și ai adus-o înapoi cu **Ctrl+Z**  
+
 ### 3) Cum te uiți în spațiu
 1. **Click dreapta + tragere** — **rotește** vederea *(pe touchpad: de obicei două degete + click / gestul de click dreapta)*  
 2. **Scroll** — zoom *(touchpad: două degete sus/jos)*  
 3. **Muți vederea (pan):** Shift + click dreapta **sau** rotița mouse-ului apăsată + tragere **sau** pe touchpad: două degete glisate (dacă merge panul în browser)  
 4. **View Cube** (colț) — te întorci pe o față (Top, Front…)  
 5. Dacă doar **rotești camera**, obiectele **rămân** pe plan
+
+**Gata când:**  
+- [ ] Poți roti vederea și face zoom  
+- [ ] Te întorci pe **Top** și pe **Front** cu View Cube  
 
 ### 4) Cubul = corpul casei
 1. Tragi un **Box** pe plan  
@@ -65,6 +73,10 @@ Fără cameră, plan, Undo și nume de proiect, restul orelor se blochează.
 5. Opțional: ții **Shift** când tragi un pătrățel de colț — scalare proporțională  
 6. Dacă plutește: selectezi → tasta **D** — cade pe plan
 
+**Gata când:**  
+- [ ] Corpul are baza **40 × 40** și înălțimea **25**  
+- [ ] Stă pe plan, nu plutește  
+
 ### 5) Piramida = acoperișul
 1. Tragi un **Pyramid** pe plan  
 2. Cu pătrățelele albe din colțuri, faci baza piramidei **50 × 50** (puțin mai mare decât cubul — streașină). Înălțimea poate rămâne cum e  
@@ -72,11 +84,20 @@ Fără cameră, plan, Undo și nume de proiect, restul orelor se blochează.
 4. Din **Top** o centrezi cu mouse-ul peste cub (marginea de streașină egală pe toate laturile)  
 5. Din două unghiuri trebuie să arate a **căsuță**
 
+**Gata când:**  
+- [ ] Baza piramidei e **50 × 50** și stă pe cub (la **25**)  
+- [ ] Din două unghiuri arată a **căsuță**  
+
 ### 6) Complet — culori + ușă/fereastră
 1. Selectezi corpul. În fereastra care apare, apeși pe pătrățelul **Color** și alegi o culoare  
 2. Selectezi acoperișul → **Color** → altă culoare  
 3. Ușă: **Box** de ~**10 × 4 × 16**, pe plan, în mijlocul fațadei, cu **2 mm intrați** în perete.  
    Fereastră: **Box** de ~**8 × 4 × 8**, ridicat cu conul negru la ~**10** (să nu plutească fără perete în spate: tot 2 mm intrați în perete)
+
+**Gata când:**  
+- [ ] Corpul și acoperișul au culori **diferite**  
+- [ ] Ușa e pe fațadă și intră **2 mm** în perete  
+- [ ] Fereastra e în perete, nu plutește  
 
 ### Dacă ai terminat devreme
 - [ ] O **a doua casă** lângă prima, cu **alt acoperiș**  

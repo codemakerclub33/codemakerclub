@@ -46,16 +46,26 @@ Ca amprenta să iasă **corectă**, textul de pe ștampilă trebuie să fie **og
 2. Pe plan (dacă plutește → **D**)  
 3. 5 mm grosime — să nu fie ca o foaie
 
+**Gata când:**  
+- [ ] Baza e **60 × 30 × 5** și stă pe plan  
+
 ### 3) Textul
 1. Din **Basic Shapes** tragi piesa **Text** pe plan  
 2. Selectezi textul. În panoul care apare, în câmpul de text scrii un cuvânt **scurt** (ex. prenumele tău)  
 3. Dacă diacriticele nu apar, folosești litere **fără diacritice**  
 4. Scalezi textul cu **Shift** pe un pătrățel de colț (ca să nu se deformeze literele) până are cel mult **50 mm** lungime și ~**14 mm** lățime — să **încapă** pe bază (60 × 30) cu loc pe margini
 
+**Gata când:**  
+- [ ] Textul scurt încape pe bază (cel mult **50 × 14**)  
+- [ ] Literele nu sunt deformate  
+
 ### 4) Ridicat
 1. Textul trebuie să iasă **deasupra bazei** — ca niște litere în relief  
 2. Textul și baza stau amândouă **pe plan**. Baza are 5 mm înălțime, deci faci textul **7 mm** înalt (pătrățelul alb de sus): iese **2 mm** deasupra bazei și nu mai trebuie ridicat  
 3. Dacă literele sunt prea subțiri și nu se văd bine, încerci alt font din panou (dacă există) sau mărești litera / grosimea liniilor (scrii cu litere mari, ex. MAJUSCULE)
+
+**Gata când:**  
+- [ ] Textul e **7 mm** înalt și iese **2 mm** deasupra bazei  
 
 ### 5) Oglindire (**M**)
 1. Selectezi **textul**  
@@ -64,17 +74,30 @@ Ca amprenta să iasă **corectă**, textul de pe ștampilă trebuie să fie **og
 4. Dacă literele s-au răsturnat **sus–jos**: **Ctrl+Z** și altă săgeată  
 5. *Pe ștampila reală, textul oglindit apasă pe hârtie și iese corect.*
 
+**Gata când:**  
+- [ ] Textul e **oglindit** (literele se citesc invers)  
+- [ ] Nu s-a răsturnat sus–jos  
+
 ### 6) Așezare pe bază
 1. Textul stă **pe baza** ta, pe fața de sus: îl muți peste bază (din **Top**)  
 2. Dacă plutește: **D** (îl coboară pe plan, unde e și baza — exact ce vrem)  
 3. **L** — selectezi **textul + baza** (Shift+click), apeși **L** și alegi **punctul din mijloc** pe ambele direcții (stânga–dreapta și sus–jos) — textul ajunge pe **centrul bazei** (sau muți manual din **Top**)  
 4. Din **Front** verifici: textul iese 2 mm deasupra bazei
 
+**Gata când:**  
+- [ ] Textul e centrat pe bază, din **Top**  
+- [ ] Din **Front**, textul iese 2 mm deasupra bazei  
+
 ### 7) Complet
 1. **Mâner:** un Box **20 × 12 × 12** (sau Cylinder), pe plan, lipit de **capătul scurt** al bazei (intră 2 mm în ea). *(Pe o ștampilă adevărată mânerul e pe spate; aici desenăm fața în sus și mânerul în lateral.)*  
 2. **Margine:** 4 Box-uri subțiri (**2 mm** grosime, **7 mm** înălțime — ca textul) pe marginea bazei, pe plan  
 3. **2 cuvinte** (text mai lung care încape, ex. „ANA POP”, sau două piese Text una sub alta — **Ctrl+D**, schimbi cuvântul, ambele oglindite)  
 4. **Color**
+
+**Gata când:**  
+- [ ] Mânerul e lipit de capătul scurt și intră 2 mm în bază  
+- [ ] Ai margine sau două cuvinte oglindite  
+- [ ] Piesele au culori  
 
 ---
 

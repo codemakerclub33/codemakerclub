@@ -48,6 +48,10 @@ Ca să se potrivească, dinții unei roți trebuie să intre în **golurile** ce
 3. Selectezi bara și discul → **L** → mijloc pe cele **două** direcții de pe plan și punctul de **jos**  
 4. Bara trece prin centru și iese **8 mm** în fiecare parte → doi dinți
 
+**Gata când:**  
+- [ ] Discul are **40 · 40 · 6**, iar bara **56 · 6 · 6** e centrată pe el  
+- [ ] Capetele barei ies afară ca **doi dinți**  
+
 ### 3) Toți cei 8 dinți
 1. Selectezi **bara** → **Ctrl+D**  
 2. Rotești copia **45°** (2 pași de câte 22,5° pe săgeata curbă)  
@@ -55,11 +59,19 @@ Ca să se potrivească, dinții unei roți trebuie să intre în **golurile** ce
 4. **Ctrl+D** încă o dată → a patra bară  
 5. Rezultat: 4 bare la 0°, 45°, 90°, 135° → **8 dinți** egal depărtați
 
+**Gata când:**  
+- [ ] Ai **4** bare, la **0°, 45°, 90°, 135°**  
+- [ ] Sunt **8** dinți egal depărtați  
+
 ### 4) Gaura din mijloc și Group
 1. **Cylinder** → **8 · 8 · 10** → **Hole**  
 2. **Ctrl+A** (discul, cele 4 bare și gaura) → **L** → mijloc pe cele **trei** direcții  
 3. **Ctrl+G** — prima roată → apeși **D** (stă pe plan)  
 4. View Cube → **Top**: 8 dinți, gaura în centru
+
+**Gata când:**  
+- [ ] Gaura (**8 · 8 · 10**, Hole) e în centru  
+- [ ] Prima roată e grupată și stă pe plan  
 
 ### 5) A doua roată
 1. Selectezi roata → **Ctrl+D**  
@@ -68,11 +80,19 @@ Ca să se potrivească, dinții unei roți trebuie să intre în **golurile** ce
 4. O muți **50 mm** spre dreapta (10 sărituri de câte 5 mm)  
 5. Din **Top**: dinții primei roți intră în golurile celei de-a doua și invers
 
+**Gata când:**  
+- [ ] A doua roată e rotită cu **22,5°** și mutată cu **50 mm**  
+- [ ] Din **Top**, dinții unei roți intră în golurile celeilalte  
+
 ### 6) Pivoturile
 1. Snap Grid: **1.0 mm**  
 2. **Cylinder** → **6 · 6 · 16** → îl tragi **peste** prima roată și îl așezi cu **L** pe centrul ei (mijloc pe cele două direcții de pe plan)  
 3. **Ctrl+D**, copia o tragi peste a doua roată și o aliniezi la fel cu **L**  
 4. Pivotul e mai subțire (6) decât gaura (8): roata se poate învârti pe el — **joc de 1 mm pe parte**
+
+**Gata când:**  
+- [ ] Pivoturile (**6 · 6 · 16**) sunt centrate pe cele două roți  
+- [ ] Pivotul (6) e mai subțire decât gaura (8): roata se poate învârti  
 
 ### 7) Placa
 1. **Box** → **120 · 64 · 4**  
@@ -81,10 +101,17 @@ Ca să se potrivească, dinții unei roți trebuie să intre în **golurile** ce
 4. Selectezi grupul → **Ctrl+Shift+G** — piesele sunt din nou separate, dar rămân centrate pe placă  
 5. Selectezi **cele două pivoturi** și **placa** → **Ctrl+G** — placa are pivoturi
 
+**Gata când:**  
+- [ ] Placa are **120 · 64 · 4**, cu roțile centrate pe ea  
+- [ ] Pivoturile și placa sunt grupate; roțile rămân separate  
+
 ### 8) Roțile stau pe pivoturi
 1. Selectezi **cele două roți** (Shift+click)  
 2. Le ridici cu **conul negru** cu **5 mm** — stau deasupra plăcii, nu lipite de ea  
 3. View Cube → **Front**: între placă și roți e un gol mic; pivoturile trec prin roți
+
+**Gata când:**  
+- [ ] Roțile sunt ridicate cu **5 mm** și stau pe pivoturi, nelipite de placă  
 
 ### 9) Complet — a treia roată
 1. Snap Grid: **5.0 mm**  
@@ -95,6 +122,11 @@ Ca să se potrivească, dinții unei roți trebuie să intre în **golurile** ce
 6. Selectezi **cele trei roți** și **cele trei pivoturi** → **Ctrl+G** *(temporar)* → cu placa → **L** → mijloc pe direcția lungă → **Ctrl+Shift+G** pe grupul temporar  
 7. Selectezi placa și **cele trei pivoturi** → **Ctrl+G**  
 8. **Color**: câte o culoare pe roată
+
+**Gata când:**  
+- [ ] A treia roată e la **100 mm** de prima, la aceeași înălțime  
+- [ ] Placa are lungimea **170** și **3** pivoturi  
+- [ ] Fiecare roată are altă culoare  
 
 ---
 

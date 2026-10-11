@@ -44,6 +44,9 @@ Buzunarul din spate e o piesă făcută din **două straturi** — așa se const
 1. **Box** → **90 · 70 · 3** (o placă subțire)  
 2. Rămâne **Solid**
 
+**Gata când:**  
+- [ ] Placa are **90 · 70 · 3** (Solid)  
+
 ### 3) Fereastra
 1. Alt **Box** → **60 · 40 · 7** → panoul Shape → **Hole**  
 2. Selectezi Hole-ul și placa → **L**  
@@ -51,6 +54,10 @@ Buzunarul din spate e o piesă făcută din **două straturi** — așa se const
 4. Hole-ul e mai gros decât placa și centrat pe înălțime → iese **2 mm sus și 2 mm jos**. *(Align poate ridica placa 2 mm de pe plan — nu-i nimic.)*  
 5. **Ctrl+A** → **Ctrl+G** — fereastra e tăiată  
 6. Apasă **D** — rama coboară pe plan
+
+**Gata când:**  
+- [ ] Fereastra (**60 · 40 · 7**) e **Hole**, centrată pe cele **trei** direcții  
+- [ ] După Group și **D**, rama stă pe plan, cu fereastra tăiată  
 
 ### 4) Verificare
 1. View Cube → **Top**: marginile sunt egale? (**15 mm** stânga–dreapta, **15 mm** sus–jos)  
@@ -65,11 +72,19 @@ Buzunarul din spate e o piesă făcută din **două straturi** — așa se const
 5. Selectezi ambele straturi → **L** → mijloc pe cele două direcții de pe plan  
 6. **Ctrl+A** → **Ctrl+G** — o ramă din două straturi
 
+**Gata când:**  
+- [ ] Al doilea strat are **90 · 70 · 3**, cu gol **70 · 50**  
+- [ ] Straturile sunt grupate; stratul din spate e peste cel din față  
+
 ### 6) Cum se folosește
 *(Rama stă pe plan cu **fața în jos**; stratul cu buzunar e deasupra, pe spate.)*  
 1. Poza (70 × 50) intră în **buzunarul** din stratul de sus  
 2. Fereastra din față (60 × 40) lasă să se vadă poza, dar nu o lasă să cadă  
 3. **Color** — rama într-o culoare care se potrivește cu poza ta
+
+**Gata când:**  
+- [ ] Poți spune unde intră poza (în buzunarul din stratul de sus)  
+- [ ] Rama are o culoare care se potrivește cu poza  
 
 ---
 

@@ -62,6 +62,9 @@ La 8 etaje: ultimul are lățimea 20 − 14 = **6** și începe la **42**.
 2. **lat** = 20 *(lățimea etajului curent)*  
 3. **z** = 0 *(înălțimea la care începe etajul curent)*
 
+**Gata când:**  
+- [ ] Ai variabilele **etaje**, **lat** și **z**  
+
 ### 3) Bucla
 1. „Repetă de **etaje** ori”  
 2. În buclă, în ordine:  
@@ -70,10 +73,17 @@ La 8 etaje: ultimul are lățimea 20 − 14 = **6** și începe la **42**.
    - **z** devine **z + 6** *(în afara Group-ului)*  
 3. **Run**: apare turnul cu 5 etaje, treptat mai îngust
 
+**Gata când:**  
+- [ ] **Run** face un turn cu **5** etaje, tot mai îngust  
+
 ### 4) A doua rulare
 1. Schimbi **etaje** în **8** → **Run**  
 2. Salvezi sau faci o captură a fiecărei variante: `Turn_5` și `Turn_8`  
 3. Compari: care e mai înalt? Cu cât? *(3 etaje × 6 mm = 18 mm)*
+
+**Gata când:**  
+- [ ] Ai varianta cu **8** etaje și le-ai salvat: `Turn_5` și `Turn_8`  
+- [ ] Ai comparat înălțimile  
 
 ### 5) Complet — al doilea parametru
 1. Variabilă nouă **L** = 20 la început *(lățimea de bază)*  
@@ -83,6 +93,10 @@ La 8 etaje: ultimul are lățimea 20 − 14 = **6** și începe la **42**.
    - „Dacă schimb **etaje**, se schimbă …”  
    - „Dacă schimb **L**, se schimbă …”  
    - „Un parametru bun este … deoarece …”
+
+**Gata când:**  
+- [ ] Ai parametrul **L** și ai rulat cu **L = 30**, **etaje = 8**  
+- [ ] Ai scris cele 3 propoziții  
 
 ---
 
