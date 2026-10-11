@@ -1,0 +1,23 @@
+Lecția șapte din Modulul doi. ClickDetector.
+
+Astăzi faci un Part care reacționează la click. Lucrezi pe Prenume, linie jos, Nume, linie jos, M doi.
+
+Obiectivul. Minim: un Buton care, la click, își schimbă culoarea și afișează în Output numele jucătorului care a apăsat, fără erori. Complet: minim, plus o Platforma, linie jos, Ascunsa, care la fiecare click apare sau dispare, folosind not.
+
+Primul pas. Touched și click. Touched reacționează la atingere. ClickDetector reacționează la click, deci jucătorul decide când.
+
+Al doilea pas. Adaugi un ClickDetector în Part, ca obiect copil.
+
+Al treilea pas. Primul click. Evenimentul se numește MouseClick. Funcția primește un parametru: jucătorul care a dat click. Din el afli numele.
+
+Al patrulea pas. Butonul își schimbă culoarea. Folosești o variabilă și o condiție, ca să alternezi între două culori.
+
+Al cincilea pas. Comutatorul. Cu not întorci o valoare adevărat în fals și invers. Platforma devine solidă sau fantomă la fiecare click.
+
+Al șaselea pas. Doar de aproape. ClickDetector poate fi apăsat de la o anumită distanță. O poți regla.
+
+Greșeli frecvente. Pui scriptul fără ClickDetector. Confunzi MouseClick cu Touched. Uiți că parametrul este jucătorul, nu piesa atinsă. Scrii greșit numele evenimentului.
+
+Provocare Pro, opțională. Faci un buton care aprinde și stinge o lumină, cu not. Numeri click-urile. Reglezi distanța de la care se poate apăsa. Și adaugi o pauză de două secunde între click-uri, cu o variabilă.
+
+Recapitulare. ClickDetector reacționează la click. Parametrul este jucătorul. Not schimbă adevărat în fals. Succes cu butonul.

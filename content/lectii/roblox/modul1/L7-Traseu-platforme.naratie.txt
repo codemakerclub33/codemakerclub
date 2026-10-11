@@ -1,0 +1,19 @@
+Lecția șapte din Modulul unu. Traseul Obby: platforme.
+
+Astăzi construiești drumul dintre start și finish din mai multe platforme. Rămâi pe fișierul tău, Prenume, linie jos, Nume, linie jos, M unu.
+
+Obiectivul. Minim: cel puțin cinci platforme pe drum, ancorate și cu nume, iar în Play poți ajunge la Finish. Complet: minim, plus cel puțin una dintre trei variante: o diferență de înălțime, o cotitură laterală sau un salt peste un gol mic, plus un retest.
+
+Primul pas. Reguli de traseu. Golul dintre platforme să nu fie mai mare de cinci unități. Nu pune totul jos, pe Baseplate: urcă puțin. Nu face prima parte prea grea.
+
+Al doilea pas. Lanțul. Construiești o platformă, o numești, de exemplu Plat unu, lipit, apoi o copiezi și o muți mai departe. Ancorezi fiecare Part.
+
+Al treilea pas. Completezi până la Finish. Finish este capătul drumului, nu mijlocul.
+
+Al patrulea pas. Varietate. Adaugi o platformă mai sus, o cotitură sau un salt peste un gol mic. Complet nu înseamnă imposibil, ci doar un pic mai interesant. Apoi testezi din nou.
+
+Greșeli frecvente. Platforme prea departe. Tot traseul pe Baseplate. Prea greu din prima. Finish pus în mijlocul drumului. Nume lipsă, adică douăzeci de Part-uri numite Part.
+
+Provocare Pro, opțională. Cauți cel mai mare gol peste care poți sări și construiești golurile traseului la aproximativ șaptezeci la sută din el. Folosești ritmul ușor, ușor, greu, odihnă. Împarți traseul în trei secțiuni: verde, galben și roșu, după dificultate.
+
+Recapitulare. Platforme apropiate, ancorate, cu nume. Finish la capăt. Testezi după fiecare schimbare. Succes cu traseul.

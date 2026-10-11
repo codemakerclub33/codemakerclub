@@ -1,0 +1,21 @@
+Lecția zece din Modulul doi. Completare și prezentare.
+
+Astăzi îmbunătățești mecanismul și îl prezinți. Rămâi pe Prenume, linie jos, Nume, linie jos, M doi.
+
+Obiectivul. Minim: o îmbunătățire dintre șase, testată, cu Output curat, Place salvat și prezentare. Este suficient pentru insigna Script Starter. Complet: două îmbunătățiri, prezentarea și salvarea.
+
+Primul pas. Alegi o idee dintre cele șase, notate cu litere, de la A la F. Nu începi a doua până nu funcționează prima.
+
+Al doilea pas. Lista de verificare, la fiecare îmbunătățire. Rulezi Play. Output-ul este curat. Obby-ul se poate termina. Salvezi.
+
+Al treilea pas. Rețete scurte. Pentru fiecare idee ai un exemplu mic de cod, pe care îl adaptezi.
+
+Al patrulea pas. Lucrezi singur la îmbunătățire și ceri ajutor doar după ce ai citit eroarea din Output.
+
+Al cincilea pas. Prezentarea durează unu sau două minute. Spui ce mecanism ai făcut. Arăți un script și explici ce face, cu cuvintele tale. Arăți jocul în Play.
+
+Al șaselea pas. Insigna. Cu minim primești insigna Script Starter.
+
+Provocare Pro, opțională. Schimbi scripturile cu un coleg și verificați numele, comentariile și print-urile uitate. Scrii cinci rânduri despre Obby-ul tău. Scurtezi un script lung, mutând o parte într-o funcție. Și notezi cinci lucruri pe care ar trebui să le țină minte jocul în Modulul trei: scorul, monedele, etapa, viețile.
+
+Recapitulare. Un lucru terminat și testat valorează mai mult decât trei lucruri începute. Felicitări și mult succes în Modulul trei.

@@ -212,6 +212,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Butonul scrie în Output **câte click-uri** a primit (variabilă `numarClick` crescută cu 1 la fiecare apăsare)  
 - [ ] La click, platforma apare și **dispare singură** după 3 secunde (`task.wait(3)`)
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Lumină:** adaugi un `PointLight` într-un Part și un buton care o aprinde/stinge cu `light.Enabled = not light.Enabled`  
+- [ ] **Contor de click-uri:** o variabilă `clickuri` crește la fiecare click și o afișezi  
+- [ ] **Distanța:** setezi `MaxActivationDistance` pe ClickDetector și testezi din aproape și din departe  
+- [ ] **Pauză între click-uri:** o variabilă `liber` care blochează butonul 2 secunde după fiecare apăsare  
+
 ## Recapitulare rapidă
 1. **ClickDetector** pe Part + `MouseClick:Connect(funcție)`  
 2. La click, funcția primește **jucătorul** (nu `hit`)  

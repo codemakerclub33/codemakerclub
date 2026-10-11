@@ -154,6 +154,14 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Un Part **rotit** (Rotate) ca rampă mică  
 - [ ] Redenumești un Part în Explorer (click pe nume) — ex. `Treapta1` *(preview L2)*  
 
+## Provocare Pro (opțional, după Complet)
+*Pentru cei care știu deja ceva Studio sau termină repede. Nu e obligatorie.*
+
+- [ ] **Duplicare rapidă:** selectezi un Part și îl dublezi cu **Ctrl+D** (pe Mac: **Cmd+D**); apoi construiești o cale de **5 Parts** fără să mai inserezi nimic din meniu  
+- [ ] **Selecție multiplă:** ții **Shift** sau **Ctrl** și selectezi mai multe Parts; le muți odată  
+- [ ] **Aliniere exactă:** cauți în meniu setările de **snap** (grila de mutare) și așezi platformele la distanțe egale  
+- [ ] **Test rapid:** cauți în meniul **Test** variantele de pornire a testului și spui care e diferența dintre ele *(profesorul confirmă)*
+
 ## Recapitulare rapidă
 1. **Viewport** = lumea · **Play / Stop** = testezi / editezi  
 2. **Part** = pui obiecte · **Anchor** = nu cad  

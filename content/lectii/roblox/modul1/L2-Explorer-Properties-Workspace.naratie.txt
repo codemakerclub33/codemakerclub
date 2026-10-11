@@ -1,0 +1,21 @@
+Lecția doi din Modulul unu. Explorer, Properties și Workspace.
+
+Astăzi înveți lista obiectelor, numită Explorer, și fișa de setări a fiecărui obiect, numită Properties. Lucrezi pe același fișier: Prenume, linie jos, Nume, linie jos, M unu.
+
+Obiectivul. Găsești obiectele în Explorer, le selectezi din listă, le redenumești și schimbi setări simple. Minim: Explorer și Properties deschise, știi unde e Workspace și ai cel puțin două Part-uri cu nume clare. Complet: minim, plus schimbi Size sau Position din Properties și faci un Play de verificare.
+
+De ce contează. Când ai douăzeci de cuburi, să dai click în lume devine haos. Explorer este lista, ca un dosar. Properties este fișa obiectului selectat.
+
+Primul pas. Deschizi panourile din meniul View: Explorer și Properties. Le așezi astfel încât să vezi lista, lumea și setările.
+
+Al doilea pas. Workspace este casa lumii. Tot ce vezi în lume stă, de obicei, în Workspace. Îl desfaci și găsești Baseplate, locul de start și Part-urile tale.
+
+Al treilea pas. Redenumirea. Un Part se numește implicit Part. Dacă ai multe, nu mai știi care e care. Dă nume clare, de exemplu Treapta unu. Regula de aur: fără spații și fără diacritice. Scrii Treapta unu lipit, nu cu spațiu. De ce? În Modulul doi vei căuta aceste nume direct în cod, iar spațiile și diacriticele complică lucrurile.
+
+Al patrulea pas. Properties. Name este numele. Anchored este bifa care oprește căderea. Size spune cât de mare este. Position spune unde se află. Schimbi puțin Size sau Position, te uiți în lume, apoi faci Play și Stop.
+
+Greșeli frecvente. Nu vezi Explorer: îl deschizi din View. Ai selectat altceva decât Workspace: te întorci la Workspace. Ai redenumit Baseplate sau locul de start: apeși Undo. Locul de start rămâne cu numele lui, pentru că este special pentru Roblox.
+
+Provocare Pro, opțională. Grupezi mai multe Part-uri într-un Model, cu Control G, și îl redenumești. Creezi un Folder numit Platforme și muți în el platformele. Cauți un Part în Explorer după nume și schimbi o setare la trei Part-uri deodată. Folderele te ajută mult în Modulul trei.
+
+Recapitulare. Explorer selectează, Properties schimbă. Workspace conține lumea. Nume clare, fără spații. Succes cu ordinea pe Place.

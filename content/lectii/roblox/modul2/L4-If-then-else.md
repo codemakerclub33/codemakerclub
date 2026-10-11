@@ -244,6 +244,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Semafor + poartă împreună: **dacă** stare e `"verde"` poarta se deschide, altfel se închide *(un singur script, două Part-uri: `workspace.Poarta`)*  
 - [ ] Schimbi **Transparency** a poartei în trepte după `monede` (0 → 0.3 → 0.7) cu `elseif`
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Nota:** cu `if / elseif / else` transformi un scor (0–100) într-un mesaj: *Excelent / Bine / Mai încearcă*  
+- [ ] **Par sau impar:** cu `numar % 2 == 0` afișezi dacă un număr este par  
+- [ ] **Semafor aleator:** `stare` e aleasă cu `math.random(1, 3)` și Part-ul se colorează după ea  
+- [ ] **`if` în `if`:** o poartă care se deschide doar dacă `ai_cheie` este `true` **și** `esti_aproape` este `true`  
+
 ## Recapitulare rapidă
 1. `if condiție then … elseif … else … end` — codul **alege**  
 2. Compari cu `==` (egal), `~=` (diferit), `<`, `>`, `<=`, `>=`  

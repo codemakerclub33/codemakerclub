@@ -1,0 +1,23 @@
+Lecția nouă din Modulul doi. Mini-proiect: un mecanism pe Obby.
+
+Astăzi folosești tot ce ai învățat ca să construiești un mecanism pentru Obby-ul tău, o monedă sau o ușă. Lucrezi pe Prenume, linie jos, Nume, linie jos, M doi.
+
+Obiectivul. Minim: un mecanism care funcționează, monedă sau ușă, cu scripturi cu prefixul corect, Srv sau Cli, fără erori, iar Obby-ul rămâne terminabil. Complet: minim, plus al doilea mecanism, un coleg care îți joacă jocul și îți dă un feedback, apoi repari.
+
+Primul pas. Lista de verificare. Știi ce este un Script, ce este un eveniment, o variabilă, un if și o funcție.
+
+Al doilea pas. Ordinea bună de lucru. Mai întâi planul, scris pe hârtie. Apoi scriptul cel mai mic care merge. Apoi îl testezi. Apoi îl îmbunătățești.
+
+Al treilea pas. Calea A, moneda. La atingere, moneda dispare și afișezi un mesaj. Poți folosi un scor într-o variabilă. Folosești frâna, ca să nu se numere de mai multe ori.
+
+Al patrulea pas. Calea B, ușa. La click sau la atingere, ușa se deschide, adică devine fantomă, apoi se închide.
+
+Al cincilea pas. Verificarea finală. Rulezi, te uiți la Output. Dacă vezi linii roșii, le repari mai întâi.
+
+Al șaselea pas. Complet. Construiești și al doilea mecanism, apoi rogi un coleg să joace. Notezi ce a observat.
+
+Greșeli frecvente. Încerci totul odată. Scrii un script prea lung fără teste. Uiți frâna la monedă. Ușa blochează traseul pentru totdeauna, iar jocul nu mai poate fi terminat.
+
+Provocare Pro, opțională. Faci o ușă care se deschide după trei monede. Monedele reapar după cinci secunde. Folosești un singur script pentru toate monedele dintr-un folder, cu un for. Și un coleg îți citește codul și îți spune cu cuvintele lui ce face.
+
+Recapitulare. Mai întâi planul, apoi un lucru mic care merge, apoi testul. Succes cu mecanismul.

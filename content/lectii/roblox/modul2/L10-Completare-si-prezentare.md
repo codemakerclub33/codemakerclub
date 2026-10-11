@@ -164,6 +164,12 @@ Dacă rămâi în urmă: **prezinți cu o îmbunătățire — e suficient pentr
 - [ ] Pe foaie: **1 idee** pentru M3 (ex. „aș vrea să văd câte monede am pe ecran”) — M3 face exact asta  
 - [ ] Mecanism cu **trei monede și o ușă** care se deschide când le-ai luat pe toate *(greu — se rezolvă mult mai ușor în M3)*
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Revizuire de cod:** schimbi scripturile cu un coleg; verificați nume (`Srv_`/`Cli_`), comentarii și `print`-uri uitate  
+- [ ] **Mini-README:** scrii 5 rânduri despre Obby-ul tău: ce face, ce scripturi are, cum se joacă  
+- [ ] **Simplificare:** alegi un script lung și scoți o parte în funcție  
+- [ ] **Idei pentru Modulul 3:** scrii 5 lucruri pe care ar trebui să le țină minte jocul (scor, monede, etapă, vieți…)  
+
 ## Recapitulare rapidă
 1. L10 = **completezi** L9, apoi **prezinți**  
 2. **Minim** = 1 upgrade + Output curat + prezentare → **insignă**  

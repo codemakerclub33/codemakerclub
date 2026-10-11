@@ -1,0 +1,23 @@
+Lecția cinci din Modulul doi. Funcții simple.
+
+Astăzi înveți să-ți faci rețete de cod, pe care le chemi când ai nevoie. Lucrezi pe Prenume, linie jos, Nume, linie jos, M doi.
+
+Obiectivul. Minim: în scriptul Srv, linie jos, Lampa ai două funcții, aprinde și stinge, care schimbă lampa, și le chemi în ordinea stinge, pauză, aprinde, fără erori. Complet: minim, plus o funcție cu parametru, care primește o culoare, și o funcție care întoarce un rezultat.
+
+Primul pas. O funcție este o rețetă cu nume. O scrii o dată, o chemi de câte ori vrei. O creezi cu cuvântul function, numele, paranteze, apoi corpul și end.
+
+Al doilea pas. Ordinea contează. Definești funcția înainte să o chemi. Dacă o chemi mai devreme, Output-ul spune că este o valoare goală, adică nil.
+
+Al treilea pas. Pauza. Task punct wait oprește scriptul pentru câteva secunde. Nu folosim vechiul wait, ci task punct wait.
+
+Al patrulea pas. Lampa. Una dintre funcții o face portocalie și luminoasă, cealaltă gri. Le chemi una după alta, cu pauze.
+
+Al cincilea pas. Parametri. O funcție primește ingrediente între paranteze. De exemplu, culoarea pe care vrei să o pui. Aceeași funcție face lucruri diferite, în funcție de parametru.
+
+Al șaselea pas. Return. O funcție poate da un răspuns. Cu cuvântul return întoarce o valoare, pe care o păstrezi într-o variabilă.
+
+Greșeli frecvente. Chemi funcția înainte să o definești. Uiți parantezele la apel: fără ele funcția nu rulează. Uiți end. Definești funcția, dar nu o chemi deloc.
+
+Provocare Pro, opțională. Faci o funcție cu două argumente, culoare și material. Faci o funcție care întoarce aria unui dreptunghi. Faci o funcție care cheamă alte funcții. Și provoci intenționat eroarea de ordine, ca să o citești și să o repari.
+
+Recapitulare. Funcția este o rețetă. Parametrul este un ingredient. Return este răspunsul. Succes cu lampa.

@@ -1,0 +1,23 @@
+Lecția patru din Modulul doi. If, then, else.
+
+Astăzi înveți cum ia o decizie un program. Lucrezi pe Prenume, linie jos, Nume, linie jos, M doi.
+
+Obiectivul. Minim: un semafor, adică un Part cu trei stări, verde, galben și roșu, colorat cu if, elseif și else după o variabilă numită stare, fără erori. Complet: minim, plus o poartă care, după variabila deschisă, este solidă sau devine fantomă, plus un exemplu cu and, or și not.
+
+Primul pas. Prima alegere. If înseamnă: dacă. Scrii if, condiția, then, ce se întâmplă, apoi end. Dacă ai o a doua variantă, folosești else.
+
+Al doilea pas. Comparații. Egal se scrie cu două semne egal. Diferit, cu tilda și egal. Mai mare, mai mic, mai mare sau egal. Un singur semn egal înseamnă atribuire, nu comparație. Aici greșesc mulți.
+
+Al treilea pas. Mai multe variante: elseif. Pui condițiile una după alta. Prima adevărată câștigă.
+
+Al patrulea pas. Semaforul. Variabila stare are una dintre trei valori, iar if-ul colorează Part-ul în verde, galben sau roșu.
+
+Al cincilea pas. Poarta. O variabilă adevărat sau fals decide dacă poți trece prin ea. Un Part poate fi solid sau fantomă, cu proprietatea CanCollide.
+
+Al șaselea pas. And înseamnă și, or înseamnă sau, not înseamnă contrariul. Cu ele combini condiții: de exemplu, ai cheie și ești aproape.
+
+Greșeli frecvente. Un singur egal în loc de două. Uiți then sau end. Scrii else if în loc de elseif. Condiții care se acoperă și nu înțelegi care rulează.
+
+Provocare Pro, opțională. Transformi un scor într-un mesaj: excelent, bine sau mai încearcă. Verifici dacă un număr e par, cu restul împărțirii. Alegi starea semaforului la întâmplare. Și faci o poartă care se deschide doar dacă ai cheie și ești aproape.
+
+Recapitulare. If decide. Elseif adaugă variante. Dublu egal compară. Succes cu semaforul.

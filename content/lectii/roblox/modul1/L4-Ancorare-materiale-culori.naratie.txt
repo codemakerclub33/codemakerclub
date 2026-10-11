@@ -1,0 +1,19 @@
+Lecția patru din Modulul unu. Ancorare, materiale și culori.
+
+Astăzi faci construcția stabilă și o faci să arate bine. Rămâi pe fișierul tău, Prenume, linie jos, Nume, linie jos, M unu.
+
+Obiectivul. Minim: toate Part-urile importante sunt ancorate și ai cel puțin două culori diferite. Complet: minim, plus cel puțin două materiale diferite și o regulă vizuală simplă, de exemplu verde pentru loc sigur. Este doar decor, fără cod.
+
+Primul pas. Anchor are două locuri cu același efect: butonul Anchor din meniul Home sau bifa Anchored din Properties. Un Part ancorat nu cade și nu este împins. Faci Play ca să verifici. Dacă ceva cade, apeși Stop, ancorezi și încerci din nou.
+
+Al doilea pas. Culoarea. O alegi din meniul Home sau din Properties. Alege culori clare, care se văd de departe, nu gri pe gri. Locul de start vine deja verde în Roblox, așa că verdele rămâne culoarea startului.
+
+Al treilea pas. Materialul. Spune din ce este făcut Part-ul: plastic, iarbă, lemn, metal, beton. Schimbă mai ales aspectul. Unele materiale, ca gheața, sunt și alunecoase. Dacă simți asta, nu este o greșeală, este frecarea.
+
+Al patrulea pas. Regula vizuală. Alegi o regulă și o aplici pe trei sau patru Part-uri. De exemplu: verde înseamnă loc sigur, galben înseamnă atenție. Roșul nu omoară pe nimeni, deocamdată. Asta se face mai târziu, cu script.
+
+Greșeli frecvente. Ai colorat, dar tot cade: culoarea nu înlocuiește Anchor. Ai selectat Baseplate-ul din greșeală: Undo. Culori prea apropiate: alege contrast. Material neon peste tot: doare ochii, ajung unu sau două accente.
+
+Provocare Pro, opțională. Alegi o paletă de doar trei culori pentru tot Place-ul. Faci o platformă de sticlă, cu Transparency, și una lucioasă. Faci un Part prin care poți trece. Construiești o platformă de gheață și hotărăști unde ar fi corect să o pui.
+
+Recapitulare. Anchored înseamnă că stă pe loc. Culoarea se vede de departe. Materialul schimbă aspectul. Succes cu aspectul Place-ului.

@@ -131,6 +131,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] O rampă Wedge pe o secțiune  
 - [ ] Marchezi mijlocul traseului cu o culoare „galben = jumătate”  
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Găsești limita:** în Play, încerci salturi pe goluri din ce în ce mai mari și notezi **cel mai mare gol** peste care treci; apoi construiești golurile din traseu la aproximativ **70% din acest număr**  
+- [ ] **Ritm:** construiești traseul în tiparul **ușor – ușor – greu – odihnă**; marchezi „odihna” cu o platformă lată  
+- [ ] **Trei secțiuni:** Verde (ușor), Galben (mediu), Roșu (greu), fiecare cu cel puțin 3 platforme  
+- [ ] **Unghi neașteptat:** o platformă înclinată sau în trepte opuse, dar tot trecută de colegi la test  
+
 ## Recapitulare rapidă
 1. Start + **mijloc** + Finish = Obby  
 2. Gol **sub ~5 studs** + lat + Anchor  

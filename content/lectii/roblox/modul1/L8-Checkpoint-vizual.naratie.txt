@@ -1,0 +1,19 @@
+Lecția opt din Modulul unu. Checkpoint vizual, fără script.
+
+Astăzi marchezi pe traseu locurile de odihnă, numite checkpoint-uri. Rămâi pe fișierul tău, Prenume, linie jos, Nume, linie jos, M unu.
+
+Obiectivul. Minim: un Part numit Checkpoint unu, cu o culoare deosebită, ancorat și pe traseu, iar în Play treci pe el. Complet: minim, plus al doilea checkpoint, Checkpoint doi, pe altă secțiune, și o regulă de culoare scrisă, de exemplu portocaliu înseamnă checkpoint.
+
+Primul pas. Ce înseamnă vizual. Azi checkpoint-ul este doar un semn pe hartă. Nu te teleportează și nu salvează nimic. Funcționarea reală vine mai târziu, cu cod.
+
+Al doilea pas. Construiești Checkpoint unu. Faci un Part vizibil, cu o culoare clară, îl ancorezi și îl pui pe traseu, la jumătatea drumului.
+
+Al treilea pas. Verifici din lume dacă se vede de la distanță.
+
+Al patrulea pas. Al doilea checkpoint, pe altă secțiune, în aceeași familie de culoare.
+
+Greșeli frecvente. Checkpoint de aceeași culoare cu Finish: jucătorul se încurcă. Checkpoint verde: verdele este doar pentru start. Checkpoint în aer. Prea mic: nu se vede. Ai pus un script: azi nu. Checkpoint înainte de start: ordinea este start, checkpoint-uri, finish.
+
+Provocare Pro, opțională. Creezi un Folder numit exact Checkpoints și pui în el toate checkpoint-urile, numerotate, fără spații. Adaugi câte un arc deasupra fiecăruia și le așezi la distanțe cam egale pe traseu. În Modulul trei un script le va căuta în acest folder.
+
+Recapitulare. Un checkpoint este un semn vizual, cu culoare proprie, pe traseu. Succes cu checkpoint-urile.

@@ -1,0 +1,25 @@
+Lecția opt din Modulul doi. Bucle: for și while.
+
+Astăzi înveți să repeți o acțiune fără să scrii codul de zece ori. Lucrezi pe Prenume, linie jos, Nume, linie jos, M doi.
+
+Obiectivul. Minim: un Semnal care pâlpâie între două culori, cu while true do, și o numărătoare trei, doi, unu, start, în Output, cu for, fără erori. Complet: minim, plus numărătoarea schimbă culorile unui semafor și construiești o scară de opt trepte dintr-un for.
+
+Primul pas. For repetă de un număr de ori. Spui de la ce număr pornești, până la ce număr mergi.
+
+Al doilea pas. For înapoi. Dacă pasul este minus unu, numeri invers: trei, doi, unu.
+
+Al treilea pas. While repetă cât timp o condiție este adevărată. While true do repetă la nesfârșit.
+
+Al patrulea pas. Regula de aur. While fără pauză este un pericol. Dacă nu pui task punct wait în buclă, scriptul blochează jocul și Studio dă eroare de timp depășit.
+
+Al cincilea pas. Semnalul care pâlpâie. În buclă schimbi culoarea, aștepți o secundă, o schimbi iar.
+
+Al șaselea pas. Numărătoare cu semafor. La trei, roșu, la doi, galben, la unu, verde.
+
+Al șaptelea pas. Scara din cod. Într-un for creezi o treaptă nouă la fiecare repetare, cu o poziție mai sus.
+
+Greșeli frecvente. While fără pauză. Uiți end. Scrii intervalul invers și bucla nu rulează. Creezi sute de obiecte și jocul încetinește.
+
+Provocare Pro, opțională. Numeri din doi în doi, înapoi. Faci o grilă de trei pe trei cu două bucle, una în alta, fără să depășești cincizeci de Part-uri. Colorezi pe rând cu o listă de culori. Și scrii un while care se oprește singur când un contor ajunge la zece.
+
+Recapitulare. For repetă de un număr de ori. While repetă cât timp. În while pui mereu pauză. Succes cu buclele.

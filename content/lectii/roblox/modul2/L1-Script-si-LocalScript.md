@@ -217,6 +217,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] `print(5 + 3)` — Roblox **calculează**: ce apare în Output?  
 - [ ] Un `print` cu **mai multe lucruri**, separate prin virgulă: `print("Salut", "lume", 7)`  
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Mai multe valori:** `print("Salut,", "lume", 2026)` — vezi cum le afișează Output-ul când le separi cu virgulă  
+- [ ] **`warn`:** folosești `warn("Atenție!")` și spui cu ce diferă de `print` (culoarea din Output)  
+- [ ] **Numele scriptului:** afișezi `script.Name` și explici ce înseamnă  
+- [ ] **Predicție:** ai două scripturi cu câte 3 `print`; scrii pe hârtie în ce ordine crezi că apar, apoi verifici în Output  
+
 ## Recapitulare rapidă
 1. **Script** = cod pe **server** · **LocalScript** = cod pe **jucător**  
 2. Prefix: `Srv_` pentru Script, `Cli_` pentru LocalScript  

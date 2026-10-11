@@ -1,0 +1,23 @@
+Lecția unu din Modulul doi, Script Starter. Script, LocalScript și primul print.
+
+Astăzi scrii primul tău cod. Lucrezi pe o copie a Place-ului tău, numită: Prenume, linie jos, Nume, linie jos, M doi. Faci copia cu Save As, ca Obby-ul din Modulul unu să rămână întreg.
+
+Obiectivul. Minim: un Script numit Srv, linie jos, Salut, cu cel puțin două linii print, pe care le vezi în Output după Play. Complet: minim, plus un comentariu în cod, o eroare provocată, citită și reparată, și un LocalScript numit Cli, linie jos, Salut, care afișează și el un mesaj.
+
+Primul pas. Ce este un Script? Este un fișier cu instrucțiuni scrise în limbajul Luau. Calculatorul le citește de sus în jos, o linie după alta. Print înseamnă: scrie un mesaj în Output.
+
+Al doilea pas. Output. Este fereastra în care apar mesajele și erorile. Îl deschizi din meniul View. Fără Output nu vezi ce face codul.
+
+Al treilea pas. Primul Script. Îl pui în ServerScriptService, îi dai numele cu prefixul Srv, scrii două linii print cu un mesaj între ghilimele și apeși Play. Mesajele apar în Output.
+
+Al patrulea pas. Comentariile. O linie care începe cu două liniuțe nu este executată. Este o notiță pentru oameni.
+
+Al cincilea pas. Prima eroare. Dacă scrii greșit un cuvânt, Output-ul îți arată linia roșie și numărul liniei. Nu este un pericol. Este o informație. Citești mesajul, repari și încerci din nou.
+
+Al șaselea pas. LocalScript. Rulează pe calculatorul jucătorului, nu pe server. Îl pui într-un loc special, în StarterPlayerScripts, și îi dai prefixul Cli.
+
+Greșeli frecvente. Nu vezi nimic: nu ai deschis Output. Scriptul nu rulează: este în alt loc decât cel potrivit. Ai scris Print cu literă mare: Luau face diferența dintre litere mari și mici. Ai uitat ghilimelele sau parantezele.
+
+Provocare Pro, opțională. Încerci print cu mai multe valori, separate prin virgulă. Folosești warn, care afișează galben. Afișezi numele scriptului. Și scrii pe hârtie în ce ordine crezi că apar mesajele a două scripturi, apoi verifici.
+
+Recapitulare. Script rulează pe server, LocalScript pe client. Print scrie în Output. Erorile se citesc, nu se ocolesc. Succes cu primul cod.

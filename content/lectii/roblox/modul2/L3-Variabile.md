@@ -241,6 +241,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] `platforma.CanCollide = false` — treci **prin** ea. Merge? Ce observi?  
 - [ ] `print(typeof(platforma))` — ce tip e un Part? (indiciu: **Instance**)
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Salut personalizat:** `local nume = "Ana"` și `print("Salut, " .. nume .. "!")`  
+- [ ] **Zarul:** `local zar = math.random(1, 6)` și `print("Ai dat: " .. zar)`; rulezi de mai multe ori  
+- [ ] **Culoare la întâmplare:** `Color3.fromRGB(math.random(0, 255), math.random(0, 255), math.random(0, 255))` pe un Part  
+- [ ] **Constante:** o variabilă cu nume mare (ex. `VITEZA`) pe care **nu o schimbi** în cod, ca să o recunoști ușor  
+
 ## Recapitulare rapidă
 1. **Variabilă** = cutie cu nume + valoare · se face cu **`local`**  
 2. Tipuri: **număr**, **text** (ghilimele), **da/nu** (`true`/`false`)  

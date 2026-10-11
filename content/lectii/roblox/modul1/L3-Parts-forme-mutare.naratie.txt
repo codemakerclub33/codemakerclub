@@ -1,0 +1,21 @@
+Lecția trei din Modulul unu. Part-uri: forme, mutare și scalare.
+
+Astăzi controlezi Part-urile. Alegi forma, le muți, le mărești și le rotești, ca să construiești trepte și platforme. Rămâi pe fișierul tău, Prenume, linie jos, Nume, linie jos, M unu.
+
+Obiectivul. Folosești cu încredere uneltele Move, Scale și Rotate. Minim: cel puțin trei Part-uri ancorate, așezate cu Move și Scale. Complet: minim, plus un Part rotit, ca o rampă, și o scară scurtă pe care o urci în Play.
+
+De ce contează. Un Obby înseamnă platforme la înălțimi și distanțe diferite. Azi antrenezi mâna pe unelte. La Lecția șapte faci traseul lung.
+
+Primul pas. Cele trei unelte. Move mută Part-ul pe cele trei direcții, trăgând de săgeți colorate. Scale schimbă mărimea, trăgând de mânere. Rotate îl învârte, trăgând de inele. Dacă Part-ul sare în pași, este normal: te ajută să aliniezi.
+
+Al doilea pas. Forme. Part-ul obișnuit este un bloc. Cu click dreapta poți alege Change to și forma Wedge, adică o pană, bună pentru rampe, sau cilindru ori sferă. Azi bazează-te mai ales pe bloc.
+
+Al treilea pas. Trepte. Faci prima treaptă mai lată și subțire. O lipești de locul de start. A doua treaptă e puțin mai sus și puțin mai în față. Verifici din lateral cu camera de constructor, ținând click dreapta pe lume și mișcând mouse-ul.
+
+Al patrulea pas. Rotate pentru pantă. Rotești un Part până seamănă cu o rampă.
+
+Greșeli frecvente. Totul cade la Play: lipsește Anchor. Ai scalat pe axa greșită: apeși Undo. Treptele sunt prea departe: golul trebuie să fie de cel mult cinci unități, ca să poți sări. Ai rotit cu nouăzeci de grade din greșeală: rotești înapoi.
+
+Provocare Pro, opțională. Construiești o scară în spirală, cu cel puțin șase trepte, fiecare ușor rotită. Faci un copac sau un turn din trei forme diferite. Încerci Union, ca să lipești două Part-uri într-unul singur, și setezi dimensiuni exacte din Properties.
+
+Recapitulare. Move arată unde. Scale arată cât de mare. Rotate arată ce unghi. Succes cu scara ta.

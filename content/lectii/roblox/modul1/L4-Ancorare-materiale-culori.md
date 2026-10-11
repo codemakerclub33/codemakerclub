@@ -147,6 +147,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] **CanCollide** = false pe un Part decorativ (treci prin el) — apoi true înapoi dacă te-ai încurcat  
 - [ ] Un Part **Neon** doar ca accent pe finish-ul viitor  
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Paletă de 3 culori:** alegi doar **3 culori** pentru tot Place-ul și explici de ce se potrivesc  
+- [ ] **Transparency și Reflectance:** faci o platformă „de sticlă” (Transparency între 0.3 și 0.6) și una lucioasă  
+- [ ] **CanCollide:** faci un Part decorativ prin care treci, apoi îl pui la loc  
+- [ ] **Zonă alunecoasă:** construiești intenționat o platformă din **Ice** și testezi cum se simte mersul; apoi spui un loc din Obby unde ar fi bună și un loc unde ar fi nedreaptă  
+
 ## Recapitulare rapidă
 1. **Anchored** = stă · verifici cu Play  
 2. **Color** = se citește de departe  

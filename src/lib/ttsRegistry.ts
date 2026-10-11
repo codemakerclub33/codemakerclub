@@ -6,6 +6,7 @@ import { SCRATCH_M5_MODUL_ID } from '@/lib/scratchM5'
 import { SCRATCH_M6_MODUL_ID } from '@/lib/scratchM6'
 import { arduinoModulNumar, arduinoTtsApiUrl, isArduinoLesson } from '@/lib/arduino'
 import { isPythonLesson, pythonModulNumar, pythonTtsApiUrl } from '@/lib/python'
+import { isRobloxLesson, robloxModulNumar, robloxTtsApiUrl } from '@/lib/roblox'
 import { isBlenderLesson, blenderModulNumar, blenderTtsApiUrl } from '@/lib/blender'
 import { isMicrobitLesson, microbitModulNumar, microbitTtsApiUrl } from '@/lib/microbit'
 import { isTinkercadLesson, tinkercadModulNumar, tinkercadTtsApiUrl } from '@/lib/tinkercad'
@@ -67,6 +68,11 @@ export function getAscultaConfig(modulId: string, ordine: number): AscultaConfig
   const bl = blenderModulNumar(modulId)
   if (bl !== null && isBlenderLesson(ordine)) {
     return { apiUrl: o => blenderTtsApiUrl(bl, o), logLabel: `AscultaBlenderM${bl}` }
+  }
+
+  const rb = robloxModulNumar(modulId)
+  if (rb !== null && isRobloxLesson(ordine)) {
+    return { apiUrl: o => robloxTtsApiUrl(rb, o), logLabel: `AscultaRobloxM${rb}` }
   }
 
   return null

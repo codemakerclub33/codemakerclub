@@ -246,6 +246,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Un al doilea Part cu **același script** copiat — verifici că și el merge (copiezi scriptul **în** noul Part)  
 - [ ] Scrii un `print` cu `task.wait` care numără 1, 2, 3 după atingere
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Platformă de viteză:** la atingere pui `humanoid.WalkSpeed = 32`, aștepți 3 secunde cu `task.wait(3)` și revii la `16`; cu o **frână** ca să nu se repete  
+- [ ] **Contor:** o variabilă `contor` crește la fiecare atingere (cu frână) și o afișezi în Output  
+- [ ] **Lava mai blândă:** în loc de reset, folosești `humanoid:TakeDamage(20)` și te uiți ce se întâmplă  
+- [ ] **De ce `Humanoid`?:** explici unui coleg ce s-ar întâmpla fără filtrul `Humanoid`  
+
 ## Recapitulare rapidă
 1. **Eveniment** = semnal; **funcția** legată de el rulează când apare semnalul  
 2. `Part.Touched:Connect(functie)` — `hit` = ce a atins  

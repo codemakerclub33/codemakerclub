@@ -1,0 +1,23 @@
+Lecția șase din Modulul doi. Evenimentul Touched.
+
+Astăzi înveți cum reacționează un obiect când este atins. Este una dintre cele mai importante lecții din modul. Lucrezi pe Prenume, linie jos, Nume, linie jos, M doi.
+
+Obiectivul. Minim: Platforma, linie jos, Vie își schimbă culoarea când un jucător calcă pe ea, apoi revine, fără erori. Complet: minim, plus o lavă care resetează jucătorul și un mesaj cu numele jucătorului în Output.
+
+Primul pas. Un eveniment înseamnă: când se întâmplă ceva. Touched se petrece când ceva atinge Part-ul. Îi spui ce să facă, într-o funcție.
+
+Al doilea pas. Cine m-a atins? Funcția primește un parametru, de obicei numit hit, adică partea care a atins. Poate fi un picior al jucătorului sau orice altceva.
+
+Al treilea pas. Este un jucător? Părintele piesei atinse poate avea un Humanoid. Dacă îl are, este un personaj. Verifici asta cu un if. Fără verificare, scriptul reacționează la orice atingere.
+
+Al patrulea pas. Frâna. Touched se declanșează de zeci de ori într-o secundă. Folosești o variabilă, de exemplu liber, care e adevărată sau falsă. Cât timp efectul rulează, o pui pe fals. La final, o readuci pe adevărat.
+
+Al cincilea pas. Funcția fără nume. O poți scrie direct în paranteza evenimentului. O vei vedea peste tot, în codul altora.
+
+Al șaselea pas. Lava. Dacă atinge un jucător, îi pui viața la zero și el reapare. Poți afișa și numele lui.
+
+Greșeli frecvente. Uiți filtrul Humanoid. Uiți frâna, și efectul se repetă. Scrii Touched cu literă mică. Pui scriptul pe Part-ul greșit.
+
+Provocare Pro, opțională. Faci o platformă de viteză, care schimbă viteza jucătorului trei secunde, apoi o readuce, cu frână. Numeri atingerile cu o variabilă. Faci o lavă mai blândă, cu TakeDamage. Și îi explici unui coleg de ce este nevoie de filtrul Humanoid.
+
+Recapitulare. Touched se declanșează la atingere. Hit este cine a atins. Humanoid arată că e un jucător. Frâna oprește repetările. Succes cu lava.

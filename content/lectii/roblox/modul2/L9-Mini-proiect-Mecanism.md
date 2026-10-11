@@ -221,6 +221,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] **Ușa cu 2 butoane** (unul înainte, unul după, ca să nu rămâi blocat)  
 - [ ] La ușă, un `print` cu ce jucător a deschis
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Monede și ușă:** ușa se deschide abia după ce aduni **3 monede** (o variabilă `monede` pe care o crești)  
+- [ ] **Monedele reapar:** după 5 secunde moneda revine (`task.wait(5)`)  
+- [ ] **Un singur script pentru toate monedele:** un folder `Monede` și o buclă `for _, moneda in folder:GetChildren() do`  
+- [ ] **Citire de cod:** un coleg citește scriptul tău și îți spune cu cuvintele lui ce face  
+
 ## Recapitulare rapidă
 1. Mecanismele de joc sunt pe **server** (`Script`, `Srv_…`)  
 2. **Monedă** = `Touched` + `Humanoid` + `Destroy()` (sau ascunzi)  

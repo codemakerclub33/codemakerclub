@@ -196,6 +196,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] În `Cli_Panou`, adaugi `print("Salut, ", game.Players.LocalPlayer.Name)` — apare **numele tău**. `LocalPlayer` există doar la client, fiindcă fiecare client e **un** jucător  
 - [ ] Notezi pe o foaie 3 lucruri dintr-un joc Roblox care ar trebui să fie pe **server** (ex. scorul, monedele)  
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Efect doar la tine:** într-un `LocalScript` pus în `StarterPlayer → StarterPlayerScripts` schimbi `game.Lighting.ClockTime` (de ex. la `0`) și vezi noaptea doar la tine; explici de ce serverul nu „vede" schimbarea  
+- [ ] **Desen:** faci pe hârtie o schemă cu **Server**, **Client**, **Output** și ce script merge unde  
+- [ ] **Doi jucători:** cu profesorul, pornești un test cu doi jucători *(meniul Test; poate diferi după versiune)* și vezi ce se schimbă la fiecare  
+- [ ] **Întrebarea de interviu:** „De ce nu pui toate scripturile pe client?" — răspunzi în 2–3 propoziții  
+
 ## Recapitulare rapidă
 1. **Server** = arbitrul · schimbările lui le văd **toți**  
 2. **Client** = calculatorul tău · schimbările lui le vezi **doar tu**  

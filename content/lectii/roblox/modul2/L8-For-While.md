@@ -252,6 +252,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Un `for` care face **5 monede** galbene în linie (Part rotunjit, **Anchored**, **CanCollide = false**) — le vei folosi la L9  
 - [ ] Un `while true` cu culori **aleatoare**: `Color3.fromRGB(math.random(0, 255), math.random(0, 255), math.random(0, 255))`
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Pas diferit:** `for i = 10, 0, -2 do` — numeri din 2 în 2, înapoi  
+- [ ] **Grilă:** două bucle `for` una în alta fac o grilă de **3 × 3** Parts, cu `Instance.new("Part")`, `Anchored = true`, `Position` și `Parent = workspace` *(nu depăși 50 de Parts)*  
+- [ ] **Culorile curcubeului:** o listă de culori și `for _, culoare in culori do` colorează pe rând un Part  
+- [ ] **`while` cu condiție:** o buclă care se oprește singură când un contor ajunge la 10  
+
 ## Recapitulare rapidă
 1. `for i = a, b do … end` — repetă de un număr de ori · pasul e al treilea număr (`-1` = înapoi)  
 2. `while condiție do … end` — repetă cât timp e adevărată  

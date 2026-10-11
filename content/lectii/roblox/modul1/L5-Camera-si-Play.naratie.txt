@@ -1,0 +1,19 @@
+Lecția cinci din Modulul unu. Camera și Playtest.
+
+Astăzi controlezi camera în editare și faci un test serios. Te plimbi pe traseu, cauți probleme, repari și testezi din nou. Rămâi pe fișierul tău, Prenume, linie jos, Nume, linie jos, M unu.
+
+Obiectivul. Minim: vezi construcția din trei unghiuri, sus, lateral și aproape, faci un tur complet cu Play și apeși Stop. Complet: minim, plus notezi și repari cel puțin o problemă, apoi faci al doilea Play curat.
+
+De ce contează. O construcție poate arăta bine dintr-un unghi și să fie imposibilă din altul. Testul înseamnă că joci ca un elev care nu știe ce ai vrut tu.
+
+Primul pas. Camera de editare. Nu ești încă avatarul. Ții click dreapta pe lume și miști mouse-ul ca să te uiți în jur. Cu rotița mouse-ului faci zoom. Cu un Part selectat, tasta F îți aduce obiectul în centru. Nu trebuie să memorezi toate tastele. Trebuie doar să vezi construcția din trei părți.
+
+Al doilea pas. Play. Acum ești jucătorul. Te miști cu W, A, S, D, sari cu bara de spațiu. După ce pornește testul, apare și butonul de pauză, care oprește jocul ca să te uiți liniștit. Stop te întoarce la editare. Urmează propria construcție, de la start la capăt. Dacă cazi, notezi de ce: prea departe, prea sus sau un Part lipsă.
+
+Al treilea pas. Găsești, repari, retestezi. Dacă cazi între trepte, le apropii. Dacă nu ajungi cu saltul, lărgești platforma sau o cobori. Dacă un Part cade, îl ancorezi. Scrii o problemă pe hârtie, repari și faci Play din nou. Ai remediat-o?
+
+Greșeli frecvente. Editezi în timpul testului: apasă mai întâi Stop. Camera e înăuntrul unui Part: faci zoom înapoi. Faci un singur test: la al doilea apar alte probleme. Uiți să salvezi după reparație.
+
+Provocare Pro, opțională. Schimbi în Lighting ora din zi și luminozitatea, și compari ziua cu seara. Adaugi Atmosphere și îi schimbi puțin densitatea. Încerci o bucată mică de teren, cu Terrain Editor, și ții un raport de test cu trei coloane: ce am testat, ce s-a întâmplat, ce am schimbat.
+
+Recapitulare. Play testează, Stop editează, apoi salvezi. Un unghi poate înșela, folosește trei. Găsești, repari, retestezi. Succes la test.

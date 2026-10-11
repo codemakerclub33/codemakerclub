@@ -142,6 +142,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] O rampă sau un salt „wow” (tot testat)  
 - [ ] **Script de-a gata** (doar dacă îl primești): lipești pe un Part — **nu** scrii tu sintaxă; vezi efectul (preview M2)  
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Explorer curat:** în Workspace ai foldere precum `Traseu`, `Decor` și `Checkpoints`, iar în ele toate obiectele  
+- [ ] **Atmosferă:** setezi Lighting (ClockTime, Atmosphere) potrivit temei  
+- [ ] **Foaie pentru colegi:** pui 3 întrebări (Ce ai înțeles? Unde ai greșit? Ce ți-a plăcut?) și notezi răspunsurile  
+- [ ] **Tur filmat:** faci o captură sau un scurt tur din 3 unghiuri ale lumii tale  
+
 ## Recapitulare rapidă
 1. Minim = **se poate termina**  
 2. Complet = + temă + checkpoint + ochi de coleg  

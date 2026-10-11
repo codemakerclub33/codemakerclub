@@ -133,6 +133,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Checkpoint pe o **platformă mai lată** („zonă de odihnă”)  
 - [ ] Marchezi pe foaie: la M3, aici voi pune script de salvare  
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Folder `Checkpoints`:** creezi un Folder numit exact `Checkpoints` și pui în el `Checkpoint1`, `Checkpoint2`… *(în Modulul 3 un script le va căuta aici)*  
+- [ ] **Numerotare:** fiecare Checkpoint are un număr în nume, fără spații și fără diacritice  
+- [ ] **Arc de intrare:** un arc din 3 Parts deasupra fiecărui checkpoint, cu aceeași culoare  
+- [ ] **Distanță echilibrată:** pui checkpoint-urile la distanțe cam egale pe traseu, nu doar unul lângă altul  
+
 ## Recapitulare rapidă
 1. Checkpoint M1 = **marcaj**, nu salvare automată  
 2. Culori: **verde** = Start · **portocaliu** (familie) = CP · Finish = **altceva, nu verde**  

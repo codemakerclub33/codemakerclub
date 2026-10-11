@@ -236,6 +236,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Funcție `semnalizeaza(deCateOri)` — o scrii pentru 3 clipiri și chemi `aprinde()` / `stinge()` de 3 ori, unul după altul *(**L8** îți arată o variantă mult mai scurtă)*  
 - [ ] Observi cât cod repeți și gândești: „oare nu există ceva mai scurt?” (spoiler: **bucla**)
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Două argumente:** `seteaza(culoare, material)` care schimbă ambele pe lampă  
+- [ ] **`return` cu calcule:** `arie(lungime, latime)` care întoarce `lungime * latime`; afișezi rezultatul  
+- [ ] **Funcție care cheamă funcții:** `ciclu()` care apelează `stinge`, apoi `aprinde`, cu pauză între ele  
+- [ ] **Eroarea de ordine:** chemi o funcție **înainte** să o definești, citești mesajul din Output și o repari  
+
 ## Recapitulare rapidă
 1. **Definești** funcția: `local function nume() … end`  
 2. **Chemi** funcția: `nume()`  

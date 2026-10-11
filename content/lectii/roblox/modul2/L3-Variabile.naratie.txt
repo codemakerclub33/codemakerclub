@@ -1,0 +1,25 @@
+Lecția trei din Modulul doi. Variabile.
+
+Astăzi înveți cum ține minte un program informații. Lucrezi pe Prenume, linie jos, Nume, linie jos, M doi.
+
+Obiectivul. Minim: în scriptul Srv, linie jos, Variabile ai trei variabile, un număr, un text și un da sau nu, afișate în Output, plus un script într-un Part care îi schimbă culoarea cu ajutorul unei variabile, fără erori. Complet: minim, plus schimbi mărimea și materialul din cod și folosești calcule și lipirea textelor.
+
+Primul pas. O variabilă este o cutie cu etichetă. Eticheta este numele, iar în cutie este valoarea. O creezi cu cuvântul local, apoi numele, apoi egal și valoarea.
+
+Al doilea pas. Trei tipuri. Un număr, de exemplu zece. Un text, între ghilimele. Și un boolean, adică adevărat sau fals.
+
+Al treilea pas. Reguli pentru nume. Fără spații, fără diacritice, nu începi cu o cifră. Nume clare, scrise cu litere mici și cu majuscule la începutul cuvintelor următoare.
+
+Al patrulea pas. Poți schimba valoarea oricând: scrii numele și o valoare nouă.
+
+Al cincilea pas. Calcule și lipirea textelor. Poți aduna, scădea, înmulți. Două puncte alăturate lipesc texte. Atenție: un număr se lipește cu un text, dar scrii cu grijă ce afișezi.
+
+Al șaselea pas. Scriptul stă într-un Part. Din interior, îl găsești cu cuvântul script, punct, Parent.
+
+Al șaptelea pas. Variabilele controlează Part-ul. Una pentru culoare, una pentru mărime, una pentru material. Schimbi variabila și Part-ul se schimbă.
+
+Greșeli frecvente. Folosești o variabilă înainte să o creezi. Scrii numele diferit, cu altă literă mare sau mică. Pui spațiu în nume. Compari un număr cu un text, de exemplu zece cu ghilimele, care nu sunt egale.
+
+Provocare Pro, opțională. Faci un salut personalizat, lipind un nume într-un mesaj. Dai cu zarul, cu math punct random, și afișezi rezultatul. Alegi o culoare la întâmplare pentru un Part. Și creezi o constantă, cu nume scris cu litere mari, pe care nu o schimbi.
+
+Recapitulare. Variabila este o cutie cu nume. Trei tipuri: număr, text, boolean. Succes cu variabilele.

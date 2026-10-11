@@ -129,6 +129,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Finish pe o **platformă mai înaltă** (mic podium)  
 - [ ] Un al doilea Spawn „de rezervă” (ex. după o zonă grea): îl pui, apoi **Enabled = false** până îl activezi mai târziu — exercițiu de Properties, fără să strici nașterea de la start  
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **SpawnLocation în Properties:** cauți setările **Neutral**, **Duration** și **AllowTeamChangeOnTouch** și spui ce face fiecare *(le citești în Properties; nu le schimbi dacă nu ești sigur)*  
+- [ ] **Podium:** un Finish pe 3 trepte (aur, argint, bronz), cu nume clare pentru fiecare  
+- [ ] **Semn vizual:** un „arc” din 3 Parts deasupra lui Finish, ca să se vadă de departe  
+- [ ] **Citire din afară:** pui un coleg să găsească Finish-ul **fără** să-i spui unde e; măsori în secunde cât durează  
+
 ## Recapitulare rapidă
 1. **SpawnLocation** = unde te naști (numele rămâne; culoare ok)  
 2. **Finish** = țintă vizuală (încă fără script)  

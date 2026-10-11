@@ -147,6 +147,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Un **Cylinder** sau **Sphere** ca obstacol decorativ (doar vizual) — Change to / ribbon Part  
 - [ ] Dublezi o treaptă cu **Duplicate** (**Ctrl+D**; pe Mac: Cmd+D) și o muți — mai rapid decât de la zero  
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Scară în spirală:** cel puțin **6 trepte**, fiecare rotită puțin față de precedenta (Rotate + Duplicate), pe care o urci în Play  
+- [ ] **Forme combinate:** un „copac” sau un „turn” din cel puțin 3 forme diferite (Block, Cylinder, Wedge)  
+- [ ] **Union (avansat):** cauți în tab-ul **Model** unealta **Union** și lipești două Parts într-unul singur *(salvează înainte; dacă iese ciudat, **Ctrl+Z**)*  
+- [ ] **Precizie:** setezi din **Properties → Size** exact aceleași dimensiuni pentru 5 trepte, fără să tragi cu mouse-ul  
+
 ## Recapitulare rapidă
 1. **Move** = unde · **Scale** = cât de mare · **Rotate** = unghi  
 2. Block = baza Obby; Wedge = rampă bună (Change to → Wedge)  

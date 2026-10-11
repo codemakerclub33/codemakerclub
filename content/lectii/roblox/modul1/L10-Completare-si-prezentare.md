@@ -151,6 +151,12 @@ Dacă rămâi în urmă: **prezinți cu o îmbunătățire — e suficient pentr
 - [ ] Schimb: un coleg joacă 2 min, notează 1 bug  
 - [ ] Pe foaie: **1 idee** de script pentru M2 (ex. „moneda dispare”)  
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Post-mortem:** scrii 3 lucruri care au mers bine și 3 pe care le-ai face diferit  
+- [ ] **Ordine finală:** Explorer curat (foldere, nume clare, fără obiecte rătăcite)  
+- [ ] **Idei pentru Modulul 2:** scrii o listă cu 5 lucruri pe care ai vrea să le facă Obby-ul **singur** (de ex. „un mesaj când ajung la Finish")  
+- [ ] **Prezentare în 60 de secunde:** o repeți cu un cronometru  
+
 ## Recapitulare rapidă
 1. L10 = **completezi** L9, apoi **prezinți**  
 2. **Minim** = 1 upgrade + prezentare → **insignă**  

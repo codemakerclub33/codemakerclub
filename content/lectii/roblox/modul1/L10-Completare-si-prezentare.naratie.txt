@@ -1,0 +1,21 @@
+Lecția zece din Modulul unu. Completare și prezentare.
+
+Astăzi îmbunătățești Obby-ul și îl prezinți. Rămâi pe fișierul tău, Prenume, linie jos, Nume, linie jos, M unu.
+
+Obiectivul. Minim: o îmbunătățire, testată în Play, plus prezentarea și salvarea. Este suficient pentru insigna Place Builder. Complet: două îmbunătățiri, prezentarea și salvarea.
+
+Primul pas. Alegi dintre șase idei, numerotate cu litere. A: trei platforme noi. B: al doilea checkpoint. C: o rampă sau un salt lateral. D: o temă vizuală mai puternică. E: Finish pe un podium. F: o platformă mai lată, de odihnă, la mijloc. Nu începi a doua idee până ce prima nu funcționează.
+
+Al doilea pas. Faci prima îmbunătățire și testezi cu Play de două ori. Traseul trebuie să se poată termina.
+
+Al treilea pas. Prezentarea durează unu sau două minute. Spui cum se numește Obby-ul sau care e tema. Spui unde începi și unde termini. Spui ce ai adăugat azi. Arăți un tur scurt în Play. Clasa aplaudă și spune un compliment, iar tu spui mulțumesc.
+
+Al patrulea pas. Recapitulare a modulului: Studio și Part, Explorer și Properties, Move, Scale și Rotate, Anchor, culori și materiale, cameră și test, start și finish, traseu, checkpoint și mini-proiect.
+
+Al cincilea pas. Ce urmează. În Modulul doi începi să scrii cod, cu primul tău script.
+
+Greșeli frecvente. Refaci tot Obby-ul: nu, doar adaugi. O îmbunătățire care strică traseul: testezi după fiecare schimbare. Prezentarea fără Play: arată lumea în mișcare.
+
+Provocare Pro, opțională. Scrii trei lucruri care au mers bine și trei pe care le-ai face diferit. Pui ordine finală în Explorer. Scrii cinci lucruri pe care ai vrea să le facă Obby-ul singur, ca idei pentru Modulul doi, și îți repeți prezentarea în șaizeci de secunde.
+
+Insigna. Cu minim primești insigna Place Builder. Felicitări și mult succes în Modulul doi.

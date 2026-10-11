@@ -1,0 +1,19 @@
+Lecția nouă din Modulul unu. Mini-proiect: Lumea Obby.
+
+Astăzi legi tot ce ai învățat într-un singur Obby. Rămâi pe fișierul tău, Prenume, linie jos, Nume, linie jos, M unu.
+
+Obiectivul. Minim: scheletul funcționează, adică ai start, traseu și Finish, totul ancorat, iar un tur în Play reușește. Complet: minim, plus o temă vizuală, cel puțin un checkpoint, un aspect curat și un coleg care îți joacă jocul.
+
+Primul pas. Lista de verificare. Lumea trebuie să aibă un start, un traseu, un Finish, Part-uri ancorate și nume clare.
+
+Al doilea pas. Ordinea bună de lucru. Mai întâi scheletul, apoi decorul. Nu începe cu decorul, pentru că poate să nu se mai termine.
+
+Al treilea pas. Scheletul pentru Minim. Faci un Play de la start la Finish, fără să cazi.
+
+Al patrulea pas. Complet. Alegi o temă: pădure, spațiu, oraș, lavă decorativă sau gheață. Folosești culori potrivite și două materiale. Adaugi un checkpoint și rogi un coleg să joace.
+
+Greșeli frecvente. Decor înainte de traseu. Finish imposibil de atins. Totul rămâne gri. Crezi că ai nevoie de script: nu ai nevoie pentru acest modul. Fișier cu alt nume decât cel cerut.
+
+Provocare Pro, opțională. Pui ordine în Explorer, cu foldere pentru traseu, decor și checkpoint-uri. Setezi lumina potrivit temei. Pui trei întrebări colegilor care îți joacă jocul și notezi răspunsurile. Faci apoi un scurt tur al lumii din trei unghiuri.
+
+Recapitulare. Mai întâi un schelet care merge, apoi tema. Testezi tot, de la start la finish. Succes cu lumea ta.

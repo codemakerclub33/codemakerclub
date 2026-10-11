@@ -159,6 +159,16 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Un Part nou: îl creezi, îl ancorezi, îl denumești `DemoL2`, îi schimbi Size din Properties  
 - [ ] Găsești în Properties câmpul **BrickColor** / **Color** și schimbi o dată *(preview L4)*  
 
+## Provocare Pro (opțional, după Complet)
+*Ordinea din Explorer contează mai târziu: scripturile vor căuta obiectele după nume și după folder.*
+
+- [ ] **Grupare în Model:** selectezi mai multe Parts care aparțin împreună (ex. o scară) și le grupezi cu **Ctrl+G**; redenumești grupul, de ex. `Scara1`  
+- [ ] **Folder:** creezi un **Folder** (click dreapta pe Workspace → **Insert Object** → **Folder**), îl numești `Platforme` și tragi în el toate platformele  
+- [ ] **Căutare:** folosești câmpul de căutare din Explorer ca să găsești un Part după nume  
+- [ ] **Properties pe mai multe:** selectezi 3 Parts și schimbi **Anchored** sau **Color** la toate odată  
+
+*De ce Folder acum:* în Modulul 3 vei avea foldere precum `Checkpoints` și `Monede`, iar scripturile le vor căuta după nume.
+
 ## Recapitulare rapidă
 1. **Explorer** = lista · **Properties** = setările obiectului selectat  
 2. **Workspace** = obiectele din lume  

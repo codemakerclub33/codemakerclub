@@ -1,0 +1,21 @@
+Lecția unu din Modulul unu, Place Builder. Roblox Studio și primul tău Place.
+
+Astăzi deschizi Roblox Studio, înveți cinci lucruri de pe ecran și construiești ceva ce poți testa cu butonul Play. Fișierul tău, numit Place, se numește: Prenume, linie jos, Nume, linie jos, M unu. De exemplu: Ana, linie jos, Pop, linie jos, M unu. Obby-ul tău crește de-a lungul întregului curs. În Modulul unu rămâi pe același fișier. La începutul fiecărui modul nou faci o copie, ca versiunea veche să rămână întreagă. Dacă îți pierzi fișierul, profesorul are unul de rezervă.
+
+Obiectivul. La final ai un Place salvat cu numele corect. Știi unde e lumea tridimensională, cum pui un Part, cum îl ancorezi și cum pornești și oprești testul. Minim: Place salvat, cel puțin două Part-uri ancorate și un tur scurt cu Play. Complet: minim, plus o cale scurtă pe care o poți străbate și o culoare diferită pe un Part.
+
+Azi nu scriem cod. Roblox Studio este șantierul jocului. Aici construiești lumea.
+
+Primul pas. Cele cinci lucruri. Viewport este lumea tridimensională, cu podeaua în pătrățele, numită Baseplate. Play este săgeata albastră: testezi ca jucător. Stop este pătratul roșu: te întorci la editare. Part este o formă, de exemplu un cub, pe care o adaugi din meniul Home. Move, Scale și Rotate mută, mărește și rotesc Part-ul. Anchor face Part-ul să nu cadă atunci când apeși Play.
+
+Al doilea pas. Salvarea. Creezi un Place nou de tip Baseplate și îl salvezi cu numele tău, unic în grupă. Nu folosi doar prenumele și nu folosi încă terminațiile pentru modulele următoare.
+
+Al treilea pas. Primul Part. Îl inserezi, îl ancorezi și îl muți lângă locul de start. Dacă nu îl ancorezi, la Play poate cădea prin podea.
+
+Al patrulea pas. Play. Te miști cu tastele W, A, S, D, te uiți cu mouse-ul și sari cu bara de spațiu. Apoi apeși Stop. Play nu salvează. După ce îți place rezultatul, salvezi din nou.
+
+Greșeli frecvente. Totul cade la Play: lipsește Anchor. Nu găsești Place-ul: numele e greșit sau nu l-ai salvat. Rămâi în test: apeși Stop.
+
+Provocare Pro, opțională. Dacă termini repede: dublezi un Part cu Control D și construiești o cale de cinci Part-uri fără meniu, selectezi mai multe Part-uri odată și le muți împreună, apoi cauți setările de snap și așezi platformele la distanțe egale.
+
+Recapitulare. Viewport este lumea. Play testează, Stop te întoarce la editare. Anchor oprește căderea. Succes cu primul tău Place.

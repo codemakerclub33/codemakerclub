@@ -1,0 +1,23 @@
+Lecția doi din Modulul doi. Client și server.
+
+Astăzi înțelegi unde rulează un script. Este una dintre cele mai importante idei din Roblox. Lucrezi pe Prenume, linie jos, Nume, linie jos, M doi.
+
+Obiectivul. Minim: un Script numit Srv, linie jos, Panou colorează panoul server în albastru, un LocalScript numit Cli, linie jos, Panou colorează panoul client în roșu, iar ambele rulează fără erori. Complet: minim, plus vezi în Play, pe vederea de server, că panoul roșu nu este roșu acolo, și descoperi că un LocalScript pus în Workspace nu rulează.
+
+Primul pas. Analogia: un joc de masă. Serverul este masa și regulile jocului, la care se uită toți. Clientul este foaia fiecărui jucător. Dacă îți colorezi singur foaia, ceilalți nu văd schimbarea.
+
+Al doilea pas. Pregătești două panouri, ca două Part-uri, unul numit Panou, linie jos, Server și altul Panou, linie jos, Client.
+
+Al treilea pas. Scriptul de server schimbă culoarea panoului server. Toți jucătorii văd schimbarea.
+
+Al patrulea pas. LocalScript-ul schimbă culoarea panoului client. Schimbarea se vede doar la jucătorul respectiv.
+
+Al cincilea pas. Ce vede serverul? În Play poți comuta între vederea de client și cea de server. Pe server, panoul client rămâne cu culoarea inițială. Asta arată clar că serverul nu vede schimbările făcute doar de client.
+
+Al șaselea pas. LocalScript într-un loc greșit. Dacă îl pui în Workspace, nu rulează deloc. LocalScript-urile funcționează doar în anumite locuri, de exemplu StarterPlayerScripts.
+
+Greșeli frecvente. Pui Script-ul pe client sau LocalScript-ul pe server. Crezi că o schimbare făcută de client se vede la toți. Nu schimbi vederea în Play și nu înțelegi de ce nu apare culoarea.
+
+Provocare Pro, opțională. Schimbi cu un LocalScript ora din zi, doar la tine. Desenezi pe hârtie schema server, client și Output. Încerci, cu profesorul, un test cu doi jucători. Și răspunzi în două sau trei propoziții: de ce nu punem toate scripturile pe client?
+
+Recapitulare. Serverul decide pentru toți. Clientul vede doar pentru el. Succes cu panourile.

@@ -145,6 +145,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Marchezi cu culoare punctul greu (L4) după playtest  
 - [ ] Încerci **Pause / Resume** în mijlocul unui salt *(butonul din bara de playtest, după Play)* — vezi diferența față de Stop  
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Atmosferă:** deschizi **Lighting** în Explorer și schimbi **ClockTime** (ora din zi) și **Brightness**; compari Place-ul „ziua” cu „seara”  
+- [ ] **Atmosphere:** adaugi un obiect **Atmosphere** în Lighting (click dreapta → Insert Object) și îi schimbi puțin **Density**  
+- [ ] **Terrain (scurt):** din tab-ul **Home** sau **Model** cauți **Terrain Editor** și generezi o bucată mică de teren *(pe calculatoare lente poate încetini Studio; dacă se întâmplă, **Ctrl+Z**)*  
+- [ ] **Raport de test:** ții o foaie cu 3 coloane: *Ce am testat / Ce s-a întâmplat / Ce am schimbat*  
+
 ## Recapitulare rapidă
 1. Cameră în editare ≠ mișcare în Play  
 2. Play → testezi · Stop → editezi · **salvezi**  

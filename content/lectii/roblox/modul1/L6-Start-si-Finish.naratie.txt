@@ -1,0 +1,19 @@
+Lecția șase din Modulul unu. Start și Finish.
+
+Astăzi stabilești de unde pornește jucătorul și unde trebuie să ajungă. Rămâi pe fișierul tău, Prenume, linie jos, Nume, linie jos, M unu.
+
+Obiectivul. Minim: locul de start așezat corect, o zonă Finish vizibilă, cu culoare și nume, iar în Play te naști la start. Complet: minim, plus o cale care leagă startul de finish, un finish ridicat sau deosebit vizual și poți ajunge la el în Play.
+
+Primul pas. SpawnLocation este locul de naștere. Îl muți la începutul traseului și îl ancorezi. Îi lași numele, pentru că este special pentru Roblox. Poți doar să-l colorezi verde, ca regulă vizuală.
+
+Al doilea pas. Finish. Faci un Part și îl numești Finish. Îl colorezi cu auriu, albastru sau magenta. Verdele rămâne doar pentru start. Azi este doar vizual. Nu apare niciun mesaj de câștig. Acela vine mai târziu, cu cod.
+
+Al treilea pas. Traseul. Pui Finish departe de start și legi cele două cu o cale simplă, în linie dreaptă.
+
+Al patrulea pas. Verifici dacă se înțelege fără explicații. Un coleg ar trebui să vadă direcția și țelul.
+
+Greșeli frecvente. Ai colorat un Part drept start, dar nu e SpawnLocation: te naști tot pe cel vechi. Finish verde: se confundă cu startul. Finish lipit de start: nu mai e un Obby. Finish sub podea sau imposibil de atins. Două locuri de start: te naști la întâmplare, lași doar unul.
+
+Provocare Pro, opțională. Citești în Properties setările locului de start și spui ce face fiecare. Construiești un Finish pe trei trepte, aur, argint și bronz. Adaugi un arc deasupra, ca să se vadă de departe, și măsori cât timp îi ia unui coleg să găsească Finish-ul fără ajutor.
+
+Recapitulare. SpawnLocation este locul de naștere. Finish este ținta vizuală. Succes cu traseul.
