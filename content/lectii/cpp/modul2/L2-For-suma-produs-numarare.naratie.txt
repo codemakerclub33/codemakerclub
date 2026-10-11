@@ -1,0 +1,23 @@
+Lecția doi din Modulul doi. For: sumă, produs și numărare.
+
+Astăzi bucla for începe să țină minte: aduni numere, le înmulțești, le numeri și afli cel mai mic și cel mai mare. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L doi.
+
+Obiectivul. Minim: un program care citește n numere și afișează suma lor. Complet: minim, plus media, câte numere sunt pare și cel mai mare număr citit.
+
+Primul pas. Acumulatorul. Pentru sumă ai nevoie de o variabilă care strânge totalul, numită acumulator. O creezi înainte de buclă, cu valoarea zero. În buclă adaugi la ea fiecare număr. Poți aduna numai numerele pare sau numai pe cele care îndeplinesc o condiție, dacă pui un if în buclă.
+
+Al doilea pas. Produsul. La produs acumulatorul pornește de la unu, nu de la zero, pentru că zero ori orice dă zero. Așa calculezi factorialul. Dar atenție, numerele cresc repede: int ajunge doar până la aproximativ două miliarde. Pentru numere mai mari folosești long long.
+
+Al treilea pas. Citim n numere în buclă. Pui c-in în interiorul buclei și aduni fiecare număr citit. Media este suma împărțită la n, dar scrii double în fața sumei, ca să nu pierzi zecimalele.
+
+Al patrulea pas. Contorul. Pentru numărare ai o variabilă care pornește de la zero și crește cu unu de fiecare dată când găsești ce cauți, deci în interiorul unui if. Așa afli câte numere sunt pare și câte impare sau câte note sunt de trecere.
+
+Al cincilea pas. Minim și maxim. Pornești de la primul număr citit și, când găsești unul mai mare, îl pui în variabila maxim. La minim faci la fel, dar cu un număr mai mic. Poți nota și poziția maximului.
+
+Al șaselea pas. Proiecte mici. Puterea unui număr fără formulă, o pușculiță care se dublează și mini-proiectul Statistici de clasă.
+
+Greșeli frecvente. Suma iese ciudată, pentru că acumulatorul nu are valoare de pornire. Produsul iese zero, pentru că a pornit de la zero. Suma este doar ultimul număr, pentru că ai pus variabila în interiorul buclei. Maximul este greșit la numere negative, pentru că l-ai pornit de la zero. Media are doar partea întreagă. Contorul nu crește, pentru că este în afara if-ului.
+
+Tema. Citești n și aduni numerele impare divizibile cu trei. Citești n temperaturi și numeri câte sunt sub zero, câte între zero și douăzeci și câte peste douăzeci. Salvezi ca Tema, linie jos, M doi, L doi.
+
+Recapitulare. Suma pornește de la zero, produsul de la unu. Contorul crește în if. Succes!

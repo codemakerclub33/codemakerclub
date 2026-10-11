@@ -115,6 +115,10 @@ Turnul: nimic
 
 Tabloul `obiect` pornește cu toate textele goale. Camera 2 (Armuraria) are o sabie, camera 3 o poțiune, camera 4 o cheie.
 
+**Încearcă tu (8 min)**  
+- [ ] Creezi rucsacul ca un `vector<string>`  
+- [ ] Pui câte un obiect în fiecare cameră  
+
 ---
 
 ## 2. Căutarea în rucsac
@@ -161,6 +165,9 @@ Ai o sabie!
 ```
 
 Regula: `pozitie(...) >= 0` înseamnă „îl am”; `-1` înseamnă „nu îl am”.
+
+**Încearcă tu (5 min)**  
+- [ ] Scrii `pozitie` care găsește un obiect în rucsac  
 
 ---
 
@@ -252,6 +259,10 @@ In rucsac:
   1. Sabie
   2. Potiune
 ```
+
+**Încearcă tu (8 min)**  
+- [ ] Scrii comanda `ia`  
+- [ ] Scrii comanda `inventar`  
 
 ---
 
@@ -406,6 +417,10 @@ int main() {
 Fara sabie, atacul este 5
 Cu sabia, atacul este 8
 ```
+
+**Încearcă tu (10 min)**  
+- [ ] Scrii `foloseste` pentru o poțiune  
+- [ ] Poțiunea dispare din rucsac după folosire  
 
 ---
 

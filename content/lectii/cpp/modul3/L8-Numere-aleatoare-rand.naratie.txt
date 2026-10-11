@@ -1,0 +1,23 @@
+Lecția opt din Modulul trei. Numere aleatoare cu rand.
+
+Astăzi faci programele imprevizibile: un zar virtual, o monedă care se învârte, un număr secret de ghicit, o parolă generată la întâmplare. Fără numere aleatoare nu există jocuri interesante. Fișierul tău este Prenume, linie jos, Nume, linie jos, M trei, L opt.
+
+Obiectivul. Minim: un zar virtual care dă numere între unu și șase, diferite la fiecare rulare. Complet: minim, plus jocul de ghicit numărul secret și duelul de zaruri.
+
+Primul pas. Rand și srand. Funcția rand, din biblioteca cstdlib, dă un număr întreg mare, ales la întâmplare. Dar fără altceva, dă aceleași numere la fiecare rulare. Ca să difere, scrii la începutul lui main, o singură dată, srand de time de zero, cu biblioteca ctime. Atenție: srand se apelează o singură dată, nu în buclă și nu în funcție.
+
+Al doilea pas. Numere într-un interval. Zarul este rand procent șase, plus unu. Moneda este rand procent doi. Formula generală pentru un interval de la a la b este a plus rand procent, între paranteze, b minus a plus unu. Poți pune formula într-o funcție, numită de exemplu între, și o folosești oricând.
+
+Al treilea pas. Statistici și alegeri. Arunci zarul de multe ori și numeri câte ori iese fiecare față, ca să vezi dacă e corect. Poți genera numere zecimale între zero și unu, litere și cuvinte la întâmplare, sau alegi un element dintr-un vector cu v de rand procent n.
+
+Al patrulea pas. Ghicește numărul. Calculatorul alege un număr secret, iar tu ghicești, primind indicii „mai mare” sau „mai mic”. Mai înveți să amesteci un vector, cu algoritmul Fisher și Yates, și să generezi un PIN de patru cifre.
+
+Al cincilea pas. Proiecte. Piatră, foarfecă, hârtie, estimarea lui pi cu numere aleatoare și mini-proiectul Duelul de zaruri.
+
+Un sfat bun: rezultatele diferă la fiecare rulare, așa că verifici regulile, adică intervalele, nu valorile exacte.
+
+Greșeli frecvente. Aceleași numere la fiecare rulare, pentru că lipsește srand. Același număr de mai multe ori la rând, pentru că ai pus srand în buclă. Lipsește una dintre biblioteci, cstdlib sau ctime. Zarul dă zero sau șapte, pentru că intervalul e greșit. Rand procent zero oprește programul, pentru că împarți la zero.
+
+Tema. Faci un zar de joc de rol, pe care îl alege utilizatorul, de exemplu cu patru, șase sau douăzeci de fețe. Generezi zece note aleatoare între unu și zece și afli media, minimul, maximul și câte note sunt de zece. Salvezi ca Tema, linie jos, M trei, L opt.
+
+Recapitulare. Srand o singură dată, la început. Zarul este rand procent șase plus unu. Succes!

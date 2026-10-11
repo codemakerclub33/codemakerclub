@@ -140,6 +140,10 @@ Dan: viata 30, atac 5, monede 50
 
 Ambii eroi au pornit cu aceleași valori, dar `b` și-a schimbat monedele. Fiecare variabilă de tip `Jucator` are propriile câmpuri.
 
+**Încearcă tu (8 min)**  
+- [ ] Definești `struct Jucator` cu nume, viață și monede  
+- [ ] Pui valori implicite în structură  
+
 ---
 
 ## 2. Afișarea stării
@@ -226,6 +230,10 @@ int main() {
 ```
 
 `valoare * 10 / maxim` este o împărțire între numere întregi, deci rezultatul se rotunjește în jos: `24 * 10 / 30` este `8`. Bara se „golește” treptat, pe măsură ce viața scade.
+
+**Încearcă tu (8 min)**  
+- [ ] Scrii funcția `afiseazaStare`  
+- [ ] Afișezi bara de viață pentru viață plină, pe jumătate și zero  
 
 ---
 
@@ -422,6 +430,11 @@ Lovitura de 10 -> viata 20 (mai lupta)
 Lovitura de 12 -> viata 8 (mai lupta)
 Lovitura de 15 -> viata 0 (a cazut!)
 ```
+
+**Încearcă tu (10 min)**  
+- [ ] Scrii `raneste` și `vindeca`, cu limite  
+- [ ] Verifici că viața nu coboară sub `0` și nu trece de `viataMax`  
+- [ ] Scrii `creeazaJucator()` care întoarce un erou nou  
 
 ---
 

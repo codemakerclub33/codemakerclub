@@ -108,6 +108,10 @@ Scris in C++, in consola, cu structuri, vectori si fisiere.
 Autor: Ana Popescu
 ```
 
+**Încearcă tu (8 min)**  
+- [ ] Pui rangul pe ecranul final  
+- [ ] Faci ecranul „Despre joc”  
+
 ---
 
 ## 2. Jocul devine al tău
@@ -259,6 +263,11 @@ Dragon de gheata: viata 35, atac 6, recompensa 50 monede
 
 **Echilibrul jocului:** un monstru foarte puternic poate face jocul imposibil. Înainte de a-l adăuga, joacă și întreabă-te: „Pot să-l înving cu obiectele pe care le am până atunci?”.
 
+**Încearcă tu (10 min)**  
+- [ ] Schimbi tema jocului  
+- [ ] Adaugi o cameră nouă  
+- [ ] Adaugi un monstru nou  
+
 ---
 
 ## 3. Fișa, ghidul și diploma
@@ -383,6 +392,10 @@ int main() {
          a creat un joc in C++
 ========================================
 ```
+
+**Încearcă tu (8 min)**  
+- [ ] Completezi fișa jocului  
+- [ ] Afișezi diploma centrată în consolă  
 
 ---
 

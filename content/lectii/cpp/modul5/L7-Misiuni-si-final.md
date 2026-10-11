@@ -113,6 +113,10 @@ int main() {
 [x] Deschide cufarul din Turn
 ```
 
+**Încearcă tu (8 min)**  
+- [ ] Creezi steagurile jocului  
+- [ ] Faci lista de misiuni, cu bife  
+
 ---
 
 ## 2. Câștig și pierdere
@@ -250,6 +254,11 @@ Scor final: 35
 (ai iesit din joc)
 ```
 
+**Încearcă tu (10 min)**  
+- [ ] Scrii condiția de deschidere cu `&&`  
+- [ ] Scrii condiția de pierdere  
+- [ ] Afișezi ecranul final pentru cele trei situații  
+
 ---
 
 ## 3. Cufărul și scorul
@@ -371,6 +380,10 @@ Ia cheia din pivnita.
 Du cheia in Turn si deschide cufarul.
 Ai terminat toate misiunile!
 ```
+
+**Încearcă tu (8 min)**  
+- [ ] Scrii `deschide` cu mesaj pentru fiecare caz  
+- [ ] Calculezi și afișezi scorul final  
 
 ---
 

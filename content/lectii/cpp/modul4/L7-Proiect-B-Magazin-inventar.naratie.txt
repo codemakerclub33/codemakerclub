@@ -1,0 +1,21 @@
+Lecția șapte din Modulul patru. Proiect B: magazin și inventar.
+
+Astăzi construiești aplicația unui mic magazin: ții evidența produselor, le cauți, le vinzi și afli rapoarte. Este genul de program pe care îl folosesc magazinele adevărate. Fișierul tău este Prenume, linie jos, Nume, linie jos, M patru, L șapte.
+
+Obiectivul. Minim: adaugi, afișezi și cauți produse și salvezi inventarul în fișier. Complet: minim, plus vânzare cu bon, ștergere, rapoarte, sortare și proiectul Magazinul meu.
+
+Primul pas. Produsul și fișierul. Un produs este o structură, cu id, nume, preț și stoc. Afișezi produsele ca un tabel, cu coloane aliniate. Numele cu spații se citesc cu getline, pe un format ales de tine, de exemplu câte o valoare pe linie. Fiecare produs are un id unic, ales automat, ca să nu existe două produse la fel.
+
+Al doilea pas. Căutare, validare, modificare. Cauți după id sau după o parte din nume, fără să conteze literele mari și mici. Validezi un produs: numele nu e gol, prețul e pozitiv, stocul nu e negativ. Modifici prețul și stocul unui produs.
+
+Al treilea pas. Vânzare, alerte, rapoarte. La vânzare scazi stocul, dar doar dacă ai destule bucăți. Poți vinde mai multe produse pe un bon și afișa totalul. Faci o alertă când stocul e mic și rapoarte: valoarea totală a stocului, cel mai scump produs, produsele epuizate.
+
+Al patrulea pas. Sortare, ștergere, istoric și copie. Sortezi produsele în trei feluri, de exemplu după nume, după preț și după stoc. Ștergi un produs după ce ai cerut confirmare. Provocări opționale: istoricul vânzărilor și o copie de siguranță a inventarului.
+
+Al cincilea pas. Proiectul Magazinul meu, cu meniu și salvare în fișier. Ții un steag, care îți spune dacă ai modificări nesalvate.
+
+Greșeli frecvente. Numele cu spații se citesc doar până la primul spațiu. Produsele se încarcă deplasate, cu numele în locul prețului, pentru că ai amestecat formatul de citire. Două produse au același id. Căutarea nu găsește pix când numele este Pix albastru. Stocul devine negativ. Bonul arată alt preț decât cel din inventar.
+
+Tema. Termini exercițiile A, B și unul dintre C, D sau E. Testezi aplicația cu date greșite: litere în loc de numere, nume gol, prețuri negative, id inexistent, ștergere cu „nu”. Notezi într-un comentariu ce ai verificat. Adaugi un câmp nou la produs. Salvezi ca Tema, linie jos, M patru, L șapte.
+
+Recapitulare. Un program bun se testează cu date greșite, nu doar cu date bune. Succes!

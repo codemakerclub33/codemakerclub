@@ -1,0 +1,25 @@
+Lecția nouă din Modulul trei. Debugging și stil de cod.
+
+Orice programator greșește, zilnic. Diferența dintre un începător și un profesionist este că profesionistul știe cum să găsească și să repare greșelile. Astăzi înveți să citești mesajele compilatorului, să urmărești un program pas cu pas și să scrii cod curat, ca să faci mai puține greșeli. Fișierul tău este Prenume, linie jos, Nume, linie jos, M trei, L nouă.
+
+Obiectivul. Minim: repari trei dintre cele cinci programe din proiect. Complet: repari toate cele cinci, explici fiecare greșeală și rescrii un program urât într-unul curat.
+
+Primul pas. Tipuri de erori. Eroarea de sintaxă apare la compilare, de exemplu un punct și virgulă lipsă. Eroarea de logică înseamnă că programul rulează, dar dă un rezultat greșit. Eroarea de execuție înseamnă că programul se oprește sau se blochează în timp ce rulează.
+
+Al doilea pas. Mesajele compilatorului. Uneori apar zeci de erori deodată, dar de multe ori ele vin dintr-una singură. Repară prima eroare și recompilează. Dacă eroarea apare pe o linie care pare corectă, uită-te la linia de dinainte.
+
+Al treilea pas. Greșeli clasice de logică. Cu unu mai puțin sau mai mult, de exemplu mai mic în loc de mai mic sau egal. Un singur egal în loc de două. Împărțire între numere întregi. Variabilă care nu a fost pusă la zero. Punct și virgulă după for sau if. Ordinea operațiilor. Buclă care nu se termină. Și o variabilă umbrită, adică una cu același nume declarată în interior.
+
+Al patrulea pas. Tehnici. Prima: afișări de control, adică pui c-out în program ca să vezi valorile variabilelor. A doua: tabelul de urmărire, în care notezi pe foaie valorile pas cu pas. A treia: assert, o verificare care oprește programul dacă rezultatul nu e cel așteptat. Mai testezi mereu cazurile limită, nu doar un exemplu.
+
+Al cincilea pas. Stil de cod. Nume clare pentru variabile, indentare corectă, o instrucțiune pe linie, constante în loc de numere scrise direct în cod, funcții mici cu un singur scop și comentarii scurte. Un main lung se împarte în funcții.
+
+Al șaselea pas. Proiectul. Clinica de programe: primești cinci programe cu greșeli și le repari pe rând.
+
+O metodă bună: reproduci greșeala pe un exemplu mic, o izolezi, afișezi valorile și abia apoi repari.
+
+Greșeli frecvente. Repari ceva și apar alte greșeli, pentru că nu ai teste. Programul nu face nimic, pentru că bucla e infinită sau ai uitat un apel. Rezultate uriașe, pentru că variabila nu are valoare de început. Pierzi timp căutând la întâmplare, fără o metodă.
+
+Tema. Repari toate programele cu greșeli. Scrii teste cu assert pentru cinci funcții. Rescrii un program mai vechi, după regulile de stil. Salvezi ca Tema, linie jos, M trei, L nouă.
+
+Recapitulare. Prima eroare, mai întâi. Afișează valorile. Scrie cod curat. Succes!

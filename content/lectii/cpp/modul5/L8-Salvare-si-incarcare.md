@@ -129,6 +129,10 @@ int main() {
 Nu am gasit nicio salvare.
 ```
 
+**Încearcă tu (8 min)**  
+- [ ] Scrii un fișier și îl citești înapoi  
+- [ ] Afișezi un mesaj dacă fișierul nu există  
+
 ---
 
 ## 2. Salvăm eroul
@@ -287,6 +291,11 @@ Am citit 3 obiecte:
 
 Observă linia `getline(fin, linie);` de după `fin >> n;`: ea explică următoarea capcană.
 
+**Încearcă tu (10 min)**  
+- [ ] Scrii `salveaza` pentru erou  
+- [ ] Scrii `incarca` și verifici că eroul revine la fel  
+- [ ] Salvezi și rucsacul  
+
 ---
 
 ## 3. Capcane
@@ -387,6 +396,10 @@ stricat.txt: esuat, eroul este Original
 ```
 
 La `stricat.txt` încărcarea eșuează, iar eroul `Original` rămâne neatins. `!fin` este `true` când o citire a eșuat (aici, `abc` nu e număr).
+
+**Încearcă tu (8 min)**  
+- [ ] Rezolvi capcana `>>` urmat de `getline`  
+- [ ] Jocul nu se strică dacă fișierul e stricat  
 
 ---
 

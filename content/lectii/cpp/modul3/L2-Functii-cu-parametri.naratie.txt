@@ -1,0 +1,23 @@
+Lecția doi din Modulul trei. Funcții cu parametri.
+
+Astăzi înveți să trimiți informații unei funcții. O funcție linie fără parametri desenează mereu aceeași linie, dar una cu parametru desenează o linie de orice lungime îi ceri. Parametrii fac funcțiile flexibile. Fișierul tău este Prenume, linie jos, Nume, linie jos, M trei, L doi.
+
+Obiectivul. Minim: o funcție cu un parametru și una cu doi parametri. Complet: minim, plus o funcție care primește un vector și un program cu meniu, organizat pe funcții cu parametri.
+
+Primul pas. Primul parametru. Între parantezele funcției scrii tipul și numele, de exemplu int n. La apel scrii doar valoarea, de exemplu linie de zece. Cu doi parametri îi desparți prin virgulă și fiecare are propriul tip, de exemplu un caracter și o lungime. Argumentele se potrivesc cu parametrii în ordine, deci ordinea contează. Parametrul este variabila din definiție, iar argumentul este valoarea trimisă la apel.
+
+Al doilea pas. Parametrii sunt copii. Dacă funcția modifică parametrul, variabila din main rămâne neschimbată. Funcția lucrează pe o copie. Argumentul poate fi un număr, o variabilă sau chiar o expresie.
+
+Al treilea pas. Tipuri diferite. Poți trimite double, string, char. Un double trimis într-un parametru int pierde zecimalele, așa că alege tipul potrivit.
+
+Al patrulea pas. Vectori. Un vector se trimite ca tip, nume și paranteze pătrate goale, împreună cu n, numărul de elemente. Funcția poate modifica vectorul primit, pentru că primește chiar vectorul, nu o copie.
+
+Al cincilea pas. Referința. Dacă vrei ca funcția să schimbe o variabilă simplă din main, pui semnul ampersand înaintea numelui parametrului. Atunci funcția lucrează chiar cu variabila originală. Așa faci o funcție care schimbă între ele două valori. Este o provocare opțională, dar foarte utilă.
+
+Al șaselea pas. Proiecte. Statistici pentru un vector, într-o funcție, un program cu referință pentru citire și mini-proiectul Desenatorul parametric.
+
+Greșeli frecvente. Prea puține sau prea multe argumente la apel. Rezultate inversate, pentru că ai trimis argumentele în altă ordine. Funcția nu schimbă variabila din main, pentru că parametrul este o copie, fără ampersand. Ai uitat tipul pentru al doilea parametru. Ai uitat să trimiți și n, împreună cu vectorul. Ai scris tipul și la apel, nu doar valoarea.
+
+Tema. Faci o funcție triunghi și una piramidă, apelate pentru n de la unu la patru. Citești cinci note și faci funcții separate pentru afișare, medie, maxim și numărul notelor peste medie. Salvezi ca Tema, linie jos, M trei, L doi.
+
+Recapitulare. Parametrul primește o copie. Ampersandul îi dă funcției variabila originală. Succes!

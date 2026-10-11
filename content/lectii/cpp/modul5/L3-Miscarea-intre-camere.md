@@ -460,6 +460,11 @@ Pe pereti atarna scuturi si sulite ruginite.
 Iesiri: est
 ```
 
+**Încearcă tu (10 min)**  
+- [ ] Transformi cuvântul „nord” într-o direcție  
+- [ ] Scrii funcția `muta`  
+- [ ] Afișezi descrierea camerei, cu ieșirile ei  
+
 ---
 
 ## 4. Alte comenzi
@@ -591,6 +596,10 @@ Probleme gasite: 0
 ```
 
 Dacă adaugi o cameră nouă și greșești un număr, programul îți spune imediat unde.
+
+**Încearcă tu (8 min)**  
+- [ ] Adaugi comenzile `ajutor` și `stare`  
+- [ ] Afișezi un mesaj la o comandă necunoscută  
 
 ---
 

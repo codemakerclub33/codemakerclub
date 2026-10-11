@@ -1,0 +1,23 @@
+Lecția opt din Modulul doi. Căutarea în vector.
+
+Astăzi înveți să cauți într-un vector, ca atunci când apeși Control F într-o listă: există valoarea? Unde se află? De câte ori apare? Înveți și să ștergi și să inserezi elemente. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L opt.
+
+Obiectivul. Minim: un program care spune dacă un număr există într-un vector și pe ce poziție. Complet: minim, plus numărarea aparițiilor și o agendă cu meniu, în care cauți un nume și afișezi telefonul.
+
+Primul pas. Există valoarea? Folosești o variabilă bool, numită de exemplu gasit, care pornește pe fals. Parcurgi vectorul și, când găsești valoarea, o pui pe adevărat. Atenție: nu o pui înapoi pe fals în interiorul buclei, pentru că ai pierde rezultatul.
+
+Al doilea pas. Pe ce poziție? Folosești o variabilă poziție, care pornește de la minus unu, adică negăsit. Când găsești valoarea, pui în ea indicele și oprești bucla cu break. Poți căuta și cu while, care se oprește singur. În while, scrie întâi condiția pe indice: i mai mic ca n, și abia apoi comparația cu valoarea.
+
+Al treilea pas. De câte ori apare, toate pozițiile și ultima apariție. Pentru numărare folosești un contor. Pentru ultima apariție parcurgi tot vectorul și reții ultima poziție găsită. Mai poți afla dacă toate numerele sunt pozitive, căutând un contraexemplu, sau dacă există duplicate.
+
+Al patrulea pas. Căutare de nume. Cauți un nume într-un vector de texte și afișezi răspunsul dintr-un alt vector, de exemplu telefonul. Atenție: Ana cu literă mare și ana cu literă mică sunt texte diferite.
+
+Al cincilea pas. Ștergere și inserare. La ștergere muți elementele de după poziția ștearsă cu un loc la stânga, începând de la început, apoi micșorezi n cu unu. La inserare muți elementele cu un loc la dreapta, începând de la coadă, ca să nu pierzi valori, pui valoarea nouă și mărești n cu unu.
+
+Al șaselea pas. Proiectul. Agenda telefonică, cu meniu, în care adaugi, cauți și ștergi contacte.
+
+Greșeli frecvente. Spune negăsit, deși valoarea există, pentru că ai pus fals în buclă. Poziția este mereu minus unu, pentru că ai folosit un singur egal sau cauți în vectorul greșit. Ai găsit valoarea, dar bucla continuă, pentru că lipsește break. Citești dincolo de vector, pentru că ai scris condițiile în ordinea greșită. La ștergere dispare un element în plus, pentru că ai uitat să micșorezi n. La inserare se pierd valori, pentru că ai mutat de la început.
+
+Tema. Citești zece numere și un număr x, și spui dacă apare, pe ce poziții și de câte ori. Afișezi primul și ultimul număr negativ. Verifici dacă un cuvânt se află printre șase cuvinte. Salvezi ca Tema, linie jos, M doi, L opt.
+
+Recapitulare. Căutarea liniară parcurge elementele pe rând. Ștergerea mută la stânga, inserarea mută la dreapta. Succes!

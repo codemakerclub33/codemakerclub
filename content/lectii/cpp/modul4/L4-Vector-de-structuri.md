@@ -195,6 +195,10 @@ Ai introdus:
 
 `clasa.push_back(citesteElev());` citește un elev și îl adaugă imediat în vector, totul într-o singură linie.
 
+**Încearcă tu (8 min)**  
+- [ ] Adaugi 3 elevi într-un `vector<Elev>` și îi afișezi  
+- [ ] Citești elevii de la tastatură într-o buclă  
+
 ---
 
 ## 2. Citire din fișier și căutare
@@ -372,6 +376,11 @@ Cel mai bun: Carmen (10)
 Elevii de 12 ani: Ana Carmen Elena
 Elevi cu nota sub 5: 0
 ```
+
+**Încearcă tu (10 min)**  
+- [ ] Încarci catalogul dintr-un fișier în vector  
+- [ ] Cauți un elev după nume și afișezi nota lui  
+- [ ] Afli elevul cu nota cea mai mare  
 
 ---
 
@@ -630,6 +639,11 @@ Promovati (3): Ana Carmen Elena
 Corigenti (2): Bogdan Dan
 ```
 
+**Încearcă tu (10 min)**  
+- [ ] Modifici nota unui elev găsit  
+- [ ] Ștergi un elev din vector  
+- [ ] Filtrezi elevii cu nota peste 8 într-un vector nou  
+
 ---
 
 ## 4. Sortarea după un câmp
@@ -824,6 +838,11 @@ Ordinea originala ramane: Ana este tot primul.
 ```
 
 Aici parametrul este `vector<Elev> lista`, **fără `&`**, tocmai ca să primim o copie și să sortăm copia, nu catalogul original. Până acum îți spuneam să folosești `&`, dar nu este o regulă fără excepții: când vrei intenționat o copie, nu pui `&`.
+
+**Încearcă tu (10 min)**  
+- [ ] Sortezi elevii descrescător după notă  
+- [ ] Sortezi elevii după nume  
+- [ ] Afișezi primii 3 elevi (Top 3)  
 
 ---
 

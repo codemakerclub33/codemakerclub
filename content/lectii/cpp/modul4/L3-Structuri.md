@@ -164,6 +164,11 @@ Erou: viata 100, scor 250
 
 Fără valori implicite, câmpurile numerice ale unei variabile locale ar conține „gunoi” (valori întâmplătoare), exact ca la variabilele obișnuite. Cu `= 100` știi mereu de la ce valoare pornești. Obișnuiește-te să le pui.
 
+**Încearcă tu (8 min)**  
+- [ ] Definești `struct Elev` cu `nume` și `nota`  
+- [ ] Creezi un elev și afișezi câmpurile lui  
+- [ ] Inițializezi un elev cu acolade și îl copiezi în altul  
+
 ---
 
 ## 2. Citire, afișare, funcții
@@ -385,6 +390,11 @@ Dan, 13 ani, nota 8
 Ana are nota mai mare.
 ```
 
+**Încearcă tu (10 min)**  
+- [ ] Citești un `Elev` de la tastatură  
+- [ ] Scrii o funcție care afișează un `Elev`  
+- [ ] Scrii o funcție care modifică nota unui elev (cu referință)  
+
 ---
 
 ## 3. Structuri în structuri, tablouri de structuri
@@ -522,6 +532,10 @@ int main() {
 p si q egale? 1
 p si r egale? 0
 ```
+
+**Încearcă tu (8 min)**  
+- [ ] Creezi un tablou de 3 elevi și îl afișezi  
+- [ ] Pui o structură `Data` în structura `Elev`  
 
 ---
 
@@ -732,6 +746,10 @@ Citit: Bogdan, 13 ani, nota 7.25
 ```
 
 Observă că un fișier (`ofstream &fout`) poate fi trimis și el într-o funcție, tot prin referință. Funcția `scrie` poate scrie deopotrivă într-un fișier sau, dacă i-ai trimite `cout`, pe ecran, pentru că ambele sunt fluxuri.
+
+**Încearcă tu (10 min)**  
+- [ ] Scrii un elev într-un fișier și îl citești înapoi  
+- [ ] Definești o structură `Produs` cu nume și preț  
 
 ---
 

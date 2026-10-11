@@ -1,0 +1,23 @@
+Lecția zece din Modulul doi. Recapitulare și proiectul Catalogul de note.
+
+Astăzi încheiem Modulul doi. Recapitulăm tot ce am învățat, bucle și vectori, reparăm greșeli într-un cod stricat, rezolvăm un test scurt și construim Catalogul de note: un program cu meniu care adaugă, afișează, caută, sortează și șterge elevi. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L zece.
+
+Obiectivul. Minim: catalogul cu adăugare, afișare și statistici, adică medie, minim și maxim. Complet: minim, plus căutare, clasament sortat și ștergere, cu verificări pentru situațiile limită: catalog gol, catalog plin și nume inexistent.
+
+Primul pas. Recapitulare. Reiei buclele: for, când știi de câte ori repeți, while, când nu știi și poate nu rulează deloc, și do while, când trebuie să ruleze măcar o dată. Reiei bucle imbricate, vectori, statistici, numărări, căutare și sortare cu metoda bulelor.
+
+Cele cinci șabloane de care ai nevoie mereu: acumulatorul pentru sumă, contorul pentru numărare, minimul și maximul care pornesc de la primul element, steagul bool pentru „am găsit”, și poziția care pornește de la minus unu.
+
+Al doilea pas. Vânătoarea de greșeli. Primești coduri stricate: un maxim care nu e maxim, o medie fără zecimale și o buclă care nu face nimic. Tu găsești ce nu merge și repari.
+
+Al treilea pas. Testul scurt. Zece minute, fără calculator. Spui ce afișează fiecare secvență, apoi verifici răspunsurile.
+
+Al patrulea pas. Proiectul. Catalogul de note are un meniu într-un do while. Opțiunile sunt: adaugi un elev, afișezi catalogul, afli statisticile, cauți un elev, vezi clasamentul și ștergi un elev. În varianta de bază faci adăugarea, afișarea și statisticile. În varianta completă adaugi căutarea, clasamentul și ștergerea.
+
+Atenție la situațiile limită. Dacă ai trei elevi și ceri statistici, merge. Dar dacă e gol, nu împărți la zero. Dacă e plin, nu mai adăuga. Dacă numele nu există, spune asta.
+
+Greșeli frecvente. Catalogul uită elevii, pentru că ai declarat variabilele în interiorul buclei. După sortare, numele nu se potrivesc cu notele, pentru că ai sortat un singur vector. Media este greșită, pentru că împarți la numărul maxim de locuri, nu la n. La ștergere rămâne un gol, pentru că ai uitat să micșorezi n. Se pot adăuga mai mult de treizeci de elevi, pentru că lipsește verificarea.
+
+Tema. Termini și testezi catalogul și îl încarci. Refaci din memorie trei programe mici: suma unui vector, maximul cu poziția și sortarea crescătoare. Scrii cinci greșeli pe care le-ai făcut în acest modul. Salvezi ca Tema, linie jos, M doi, L zece.
+
+Bravo, ai terminat Modulul doi!

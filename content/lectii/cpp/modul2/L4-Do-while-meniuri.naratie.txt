@@ -1,0 +1,23 @@
+Lecția patru din Modulul doi. Do while și alegerea buclei.
+
+Astăzi înveți bucla care rulează cel puțin o dată. Este perfectă pentru meniurile care se repetă și pentru validarea datelor. Înveți și cum alegi cea mai potrivită buclă pentru fiecare problemă. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L patru.
+
+Obiectivul. Minim: un meniu cu cel puțin trei opțiuni, care se repetă până alegi zero. Complet: minim, plus o validare cu do while și întrebarea „Mai vrei o dată?”.
+
+Primul pas. Structura. Scrii do, apoi corpul între acolade, apoi while cu condiția între paranteze și, la final, punct și virgulă. Diferența față de while: do while face mai întâi corpul și abia apoi verifică condiția. Așa corpul rulează sigur cel puțin o dată.
+
+Al doilea pas. Validarea datelor. Citești nota în corpul buclei și repeți cât timp nota nu este între unu și zece. Nu mai repeți codul de citire de două ori. Poți face și un PIN cu număr limitat de încercări.
+
+Al treilea pas. Meniuri. Un meniu clasic arată așa: afișezi opțiunile, citești alegerea, o tratezi cu switch, iar bucla continuă cât timp alegerea nu este zero. Cu aceeași idee faci întrebarea „Mai vrei o dată? d sau n” și un coș în care adaugi produse.
+
+Al patrulea pas. Cifrele unui număr, inclusiv zero. Cu while, numărul zero ar avea zero cifre. Cu do while corpul rulează o dată, deci zero are o cifră, cum e corect.
+
+Al cincilea pas. Ce buclă alegi. For, când știi de câte ori repeți. While, când nu știi și e posibil să nu ruleze deloc. Do while, când trebuie să ruleze măcar o dată.
+
+Al șaselea pas. Proiecte mici. Ghicește numărul cu do while, tabla înmulțirii repetată la cerere, un bancomat și jocul în care scapi din camera încuiată.
+
+Greșeli frecvente. Ai uitat punct și virgulă după while la do while. Ai pus punct și virgulă după while la bucla while obișnuită: doar do while îl are. Meniul nu se oprește, pentru că în condiție nu apare opțiunea de ieșire. Ai declarat o variabilă în interiorul buclei, iar condiția nu o mai vede: declar-o înainte de do. Soldul revine mereu la o mie, pentru că l-ai creat în interiorul buclei. Ai declarat o variabilă într-un case, fără acolade.
+
+Tema. Faci un meniu pentru o librărie, cu cărți, caiete, pixuri și ieșire. Afișezi cifrele unui număr, câte una pe linie, de la ultima la prima. Faci jocul Ghicește litera. Salvezi ca Tema, linie jos, M doi, L patru.
+
+Recapitulare. Do while rulează măcar o dată și are punct și virgulă la final. Succes!

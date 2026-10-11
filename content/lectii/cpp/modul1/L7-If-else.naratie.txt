@@ -1,0 +1,21 @@
+Lecția șapte din Modulul unu. If else și else if.
+
+Astăzi înveți să alegi exact un drum dintre două sau mai multe: dacă ceva este adevărat faci un lucru, altfel faci altul. Fișierul tău este Prenume, linie jos, Nume, linie jos, L șapte.
+
+Obiectivul. Minim: un program cu if și else, testat pe ambele ramuri. Complet: minim, plus un lanț else if cu cel puțin trei cazuri și un caz final else.
+
+Primul pas. If și else. If alege un drum, iar else este drumul de rezervă, pe care îl urmezi când condiția nu este adevărată. Din cele două drumuri se execută exact unul. Cu el faci programe pentru admis sau respins, par sau impar, maximul dintre două numere și o parolă cu mesaj pentru ambele cazuri.
+
+Al doilea pas. Else if. Când ai mai mult de două drumuri, pui else if între if și else. Programul execută primul bloc a cărui condiție este adevărată și sare peste restul. Cu el faci calificativul unei note, semnul unui număr, prețul unui bilet în funcție de vârstă și un semafor cu litere. Else de la final prinde tot ce nu a fost acoperit și este locul pentru valorile neașteptate. Else nu are condiție, doar else if are.
+
+Al treilea pas. Ordinea contează. Dacă pui un caz larg înaintea unui caz restrictiv, cel restrictiv nu mai ajunge niciodată la rând. Așa că pune întâi cazul cel mai restrictiv. Testează și valorile de la graniță, de exemplu cinci, nouă și optsprezece.
+
+Al patrulea pas. If în if. Când a doua întrebare depinde de prima, pui un if în interiorul altuia. Un exemplu este un login în doi pași: verifici întâi numele, apoi parola.
+
+Al cincilea pas. Proiecte mici. Ghici numărul, maximul dintre trei numere, reducerea de la magazin și prețul unui taxi în funcție de distanță.
+
+Greșeli frecvente. Ai pus punct și virgulă înaintea lui else, așa că apare o eroare. Ai scris o condiție după else, în loc de else if. Ai folosit mai multe if-uri separate și s-au afișat două mesaje. Lanțul tău nu are else și niciun mesaj nu se mai afișează. Ai greșit mai mare cu mai mare sau egal, iar rezultatul e greșit exact la limită.
+
+Tema. Citești un număr de la unu la doisprezece și afișezi luna. Citești lungimile a trei bețe și vezi dacă pot forma un triunghi. Calculezi prețul unei excursii în funcție de vârstă. Salvezi ca Tema, linie jos, L șapte.
+
+Recapitulare. If else alege unul din două drumuri. Else if adaugă cazuri. Ordinea contează. Succes!

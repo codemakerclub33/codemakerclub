@@ -1,0 +1,21 @@
+Lecția zece din Modulul cinci. Prezentare și finalul jocului.
+
+Astăzi încheiem cursul de C plus plus. Ai un joc terminat, îl faci al tău, după povestea ta, și îl prezinți în trei, cinci minute. Primești diploma RPG Creator. Fișierul tău este Joc, linie jos, L cincizeci, punct c p p.
+
+Obiectivul. Minim: jocul rulează de la început până la final, are numele tău în ecranul Despre joc și îl poți prezenta. Complet: jocul are rang pe ecranul final, o temă proprie, cel puțin o cameră sau un monstru nou, și o prezentare clară.
+
+Primul pas. Ultimele retușuri. Adaugi un rang pe ecranul final, în funcție de scor. Faci ecranul Despre joc, cu numele tău.
+
+Al doilea pas. Jocul devine al tău. Alegi cel puțin una dintre variante: schimbi numele jocului, numele camerelor și descrierile, adaugi o cameră nouă, adaugi un monstru sau un obiect nou, sau schimbi misiunile și mesajele de final. Atenție la o cameră nouă: trebuie să poți intra și ieși din ea, deci verifică drumurile. Trebuie să se salveze corect și testele trebuie să treacă. Un monstru nou nu trebuie să facă jocul imposibil.
+
+Al treilea pas. Fișa, ghidul și diploma. Completezi fișa jocului: cum se numește, cine este eroul, ce misiuni are. Citești ghidul prezentării. Diploma ta, centrată în consolă, apare cu numele tău.
+
+Al patrulea pas. Prezentarea. Pregătești trei, cinci minute: spui povestea, arăți jocul, explici o bucată de cod și spui ce ți-a plăcut cel mai mult. Mai poți adăuga statistici de joc, clasamentul celor mai bune trei scoruri sau un mesaj de întâmpinare aleator. Sunt provocări opționale.
+
+Al cincilea pas. Jocul final. Rulezi tot jocul de la început până la câștig, ca un jucător nou.
+
+Greșeli frecvente. Jucătorul intră într-o cameră nouă și nu mai poate ieși. Programul se oprește la o cameră nouă, pentru că ai ieșit din tablou. Salvarea nu merge după ce ai adăugat o cameră. Monstrul nou face jocul imposibil. Prenume Nume apare în joc, în loc de numele tău adevărat.
+
+Rulează opțiunea de teste interne după personalizare, ca să vezi că nu ai stricat nimic.
+
+Ai parcurs un drum lung: de la primul cout la un joc întreg, cu erou, hartă, luptă, magazin și salvare. Bravo, ești un RPG Creator!

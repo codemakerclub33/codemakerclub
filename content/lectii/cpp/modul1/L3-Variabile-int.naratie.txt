@@ -1,0 +1,23 @@
+Lecția trei din Modulul unu. Variabile de tip int.
+
+Astăzi înveți să păstrezi numere în memoria calculatorului, să le dai un nume, să le schimbi și să calculezi cu ele. Fișierul tău este Prenume, linie jos, Nume, linie jos, L trei.
+
+Obiectivul. Minim: un program cu cel puțin trei variabile int și o sumă afișată. Complet: minim, plus un produs, o valoare schimbată pe parcurs și cel puțin un const.
+
+Primul pas. O variabilă este o cutie cu nume, tip și valoare. Tipul int înseamnă număr întreg. O creezi scriind int, apoi numele, apoi egal și valoarea, de exemplu int scor egal zero, cu punct și virgulă.
+
+Al doilea pas. Semnul egal înseamnă „pune în cutie”. Calculatorul rezolvă mai întâi partea din dreapta și apoi pune rezultatul în variabila din stânga. Valoarea se poate schimba oricând. Atenție la afișare: dacă scrii c-out scor, apare numărul, dar dacă scrii scor între ghilimele, apare chiar cuvântul scor. Mai ține minte că literele mari și mici contează: scor și Scor sunt două variabile diferite.
+
+Al treilea pas. Calcule. Poți aduna, scădea și înmulți variabile. Ca la matematică, înmulțirea se face înaintea adunării, iar parantezele schimbă ordinea. Cu aceste calcule poți afla perimetrul și aria unui pătrat sau a unui dreptunghi.
+
+Al patrulea pas. Const. Dacă o valoare nu trebuie să se schimbe niciodată, o scrii cu cuvântul const în față. Dacă încerci s-o modifici, compilatorul te oprește. Mai înveți scurtături: plus egal adaugă la o variabilă, minus egal scade, iar plus plus mărește cu unu. Înveți și schimbul între două variabile, cu ajutorul unei a treia, ca la două pahare cu sucuri diferite.
+
+Al cincilea pas. Proiecte mici. Faci o fișă a jucătorului și un bon de casă, cu variabile.
+
+Nume bune pentru variabile: fără spații, fără diacritice și fără cifră la început. De exemplu nivel doi este bun, dar doi nivel nu.
+
+Greșeli frecvente. Ai folosit o variabilă fără să o declari. Ai scris int de două ori pentru aceeași variabilă. Ai folosit o variabilă fără valoare și a apărut un număr ciudat, așa că pune de la început o valoare, de exemplu zero. Ai încercat să schimbi un const.
+
+Tema. Scrii programul Fișa mea, cu cinci variabile. Calculezi costul unei excursii cu patru bilete de treizeci și cinci de lei și trei mese de douăzeci și doi de lei, folosind variabile și const. Salvezi ca Tema, linie jos, L trei.
+
+Recapitulare. Variabila este o cutie. Int ține numere întregi. Egal pune valoarea în cutie. Const blochează valoarea. Succes!

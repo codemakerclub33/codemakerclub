@@ -1,0 +1,23 @@
+Lecția unu din Modulul cinci. Ideea jocului și harta.
+
+Începem cea mai frumoasă parte a cursului: ne facem propriul joc. Un joc de aventură are un erou, camere de explorat, obiecte de găsit, monștri de învins și o comoară de câștigat. În următoarele zece lecții construim, pas cu pas, jocul Castelul Uitat, în consolă, fără grafică. La sfârșitul fiecărei lecții jocul rulează într-o versiune nouă. Fișierul tău de azi este Joc, linie jos, L patruzeci și unu, punct c p p.
+
+Obiectivul. Minim: un meniu principal funcțional, cu joc nou, harta, cum se joacă și ieșire. Complet: minim, plus harta cu un semn care arată unde se află eroul și povestea jocului, scrise în funcții separate.
+
+Cum arată jocul. Se joacă prin comenzi scrise de la tastatură. Eroul pornește de la poarta castelului, explorează camerele, ia obiecte, învinge un goblin, găsește o cheie și deschide cufărul din turn. Castelul are șase camere. Dacă vrei altă temă, pirați, spațiu, școală sau junglă, o schimbi ușor, pentru că numele și descrierile stau în tablouri, nu în mijlocul codului.
+
+Primul pas. Titlul și povestea. Afișezi titlul jocului și o poveste scurtă, fiecare într-o funcție.
+
+Al doilea pas. Meniul principal. Faci un meniu cu switch și îl repeți până când alegi ieșirea. Meniul trebuie să nu se strice dacă scrii litere în loc de numere.
+
+Al treilea pas. Funcții pentru fiecare parte. Fiecare lucru stă într-o funcție, iar main arată ca un cuprins.
+
+Al patrulea pas. Camerele și harta. Pui camerele într-un tablou. Desenezi o cameră ca o casetă, folosind caractere. Ca să ai spații la început de rând, folosești string cu numărul de spații și caracterul spațiu. Apoi desenezi harta întreagă și marchezi cu o steluță camera în care se află eroul.
+
+Al cincilea pas. Planul proiectului. Completezi o foaie de plan, cu bife, pentru următoarele nouă lecții: erou, mișcare, obiecte, luptă, magazin, misiuni, salvare, curățare și prezentare.
+
+Greșeli frecvente. Harta nu este aliniată. Apar caractere ciudate în loc de diacritice: scrie fără diacritice în consolă. Lipsește biblioteca pentru to string. Meniul se repetă la nesfârșit după ce ai scris o literă. Apare eroarea jump to case label.
+
+Tema. Termini exercițiul A și rulezi jocul de cel puțin trei ori, cu date corecte și greșite. Desenezi pe hârtie harta jocului tău, cu șase camere. Scrii trei lucruri pe care vrei să le poată face eroul tău. Salvezi ca Joc, linie jos, L patruzeci și unu.
+
+Recapitulare. Un meniu care nu se strică, o poveste și o hartă. Succes la primul pas spre jocul tău!

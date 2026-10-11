@@ -175,6 +175,10 @@ Inaltimea in metri (0.5 - 2.5): 1.45
 Ana Maria are 1.45 m.
 ```
 
+**Încearcă tu (8 min)**  
+- [ ] Introduci litere în loc de număr și vezi ce face `cin.fail()`  
+- [ ] Scrii `citesteInt` care cere un număr dintr-un interval  
+
 ---
 
 ## 2. Meniuri
@@ -600,6 +604,12 @@ Ai ramas cu 2 produse.
 ```
 
 Acum `case ADAUGA:` se citește singur. Dacă într-un `switch` pe un `enum` uiți să tratezi o valoare, compilatorul te avertizează, încă un avantaj. Observă acoladele `{ … }` din `case ADAUGA`: când declari o variabilă (`string produs`) într-un `case`, ai nevoie de ele.
+
+**Încearcă tu (10 min)**  
+- [ ] Faci un calculator cu meniu și `switch`  
+- [ ] Muți meniul într-o funcție  
+- [ ] Adaugi întrebarea „Ești sigur?” înainte de ștergere  
+- [ ] Folosești un `enum` pentru opțiunile din meniu  
 
 ---
 
@@ -1171,6 +1181,10 @@ Gata.
 ```
 
 `string(n, '=')` creează un text cu `n` caractere `=` (de exemplu `string(5, '*')` este `*****`). Nu există o instrucțiune universală pentru „șterge ecranul” (comenzile diferă între Windows și restul sistemelor), deci în proiecte rămânem la linii separatoare și la afișare curată.
+
+**Încearcă tu (8 min)**  
+- [ ] Ții starea programului într-un `struct`  
+- [ ] Salvezi în fișier doar dacă s-a modificat ceva (steagul „modificat”)  
 
 ---
 

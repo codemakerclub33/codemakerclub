@@ -1,0 +1,19 @@
+Lecția șase din Modulul patru. Proiect A: joc pe consolă.
+
+Astăzi construiești un joc adevărat, în consolă, din funcții mici, pe care le poți testa pe rând. Ai două jocuri de ales: Ghici numărul și X și zero. Fișierul tău este Prenume, linie jos, Nume, linie jos, M patru, L șase.
+
+Obiectivul. Minim: Ghici numărul cu limită de încercări și mesajele „prea mic” și „prea mare”. Complet: ambele jocuri funcționale, cu meniu și scor, fiecare cu citire sigură a datelor.
+
+Primul pas. Cum planifici un joc. Înainte de cod scrii pe foaie ce are jocul: ce date ține minte, ce reguli are și ce funcții îl alcătuiesc. Apoi construiești pe bucăți și testezi fiecare bucată.
+
+Al doilea pas. Ghici numărul. Pornești de la o versiune simplă, cu număr fix. Apoi numărul secret devine aleator, cu srand o singură dată și rand într-un interval. Adaugi limita de încercări, apoi scorul, care scade cu fiecare încercare. Adaugi niveluri de dificultate, cu intervale diferite. Poți salva un clasament cu cele mai bune cinci scoruri într-un fișier. La final pui totul împreună.
+
+Al treilea pas. X și zero. Reprezinți tabla într-un vector, cu nouă poziții. Faci o funcție care o afișează, una care verifică cine a câștigat, una care citește o mutare validă și una care decide remiza. Jocul pentru doi jucători merge pe rând. Provocare opțională: calculatorul ca adversar, cu o strategie simplă, care întâi caută să câștige, apoi să blocheze.
+
+Un sfat bun: joacă jocul tău, cu atenție. Așa găsești greșelile.
+
+Greșeli frecvente. Numărul secret este mereu același, pentru că lipsește srand sau l-ai pus în buclă. Numărul iese din interval, de exemplu zero sau o sută unu, pentru că formula e greșită. Mutarea nouă este tratată ca poziția nouă din vector, dar vectorul începe de la zero. Tabla arată mutări fantomă. Se declară remiză, deși cineva a câștigat, pentru că ai verificat remiza înaintea câștigătorului. Calculatorul nu blochează niciodată.
+
+Tema. Termini jocul ales și, jucându-l, găsești cel puțin o greșeală, o corectezi și notezi ce ai descoperit. Scrii și celălalt joc, dacă nu l-ai terminat. Alegi unul dintre exercițiile B-E. Te gândești la proiectul de la lecția următoare. Salvezi ca Tema, linie jos, M patru, L șase.
+
+Recapitulare. Planifici, construiești pe bucăți, testezi. Succes!

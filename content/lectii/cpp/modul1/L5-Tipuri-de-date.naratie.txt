@@ -1,0 +1,23 @@
+Lecția cinci din Modulul unu. Tipuri de date: double, char, bool și string.
+
+Astăzi afli că nu tot ce păstrezi în memorie este un număr întreg. Există numere cu zecimale, litere, valori de adevăr și texte întregi. Fișierul tău este Prenume, linie jos, Nume, linie jos, L cinci.
+
+Obiectivul. Minim: un program care folosește cel puțin patru tipuri diferite. Complet: minim, plus citire de double și string, un calcul cu zecimale și o literă tratată ca număr.
+
+Primul pas. Panorama tipurilor. Int ține un număr întreg. Double ține un număr cu zecimale, scrise cu punct, nu cu virgulă: trei punct paisprezece. Char ține un singur caracter, între apostrofuri. Bool ține adevărat sau fals, adică true sau false, scrise cu litere mici și în engleză. String ține un text, între ghilimele.
+
+Al doilea pas. Double. Cu double faci reduceri, medii și aria cercului. Capcana mare: dacă împarți șapte la doi, ambele numere întregi, rezultatul este trei. Ca să obții trei virgulă cinci, măcar unul dintre numere trebuie să fie cu zecimale, de exemplu doi punct zero. Poți schimba tipul pentru un calcul scriind double în paranteze înaintea numărului.
+
+Al treilea pas. Char. O literă are în spate un cod numeric, numit ASCII. De exemplu, A mare are codul șaizeci și cinci, iar a mic are nouăzeci și șapte. Așa poți face calcule cu litere, de exemplu să treci dintr-o literă mare într-una mică.
+
+Al patrulea pas. Bool. Spune doar adevărat sau fals, de exemplu dacă un număr este mai mare ca altul.
+
+Al cincilea pas. String. Poți lipi texte cu plus, afli lungimea cu punct length și iei o literă cu paranteze pătrate. Prima literă are numărul zero. Atenție: c-in citește doar primul cuvânt, până la spațiu.
+
+Al șaselea pas. Afișarea cu două zecimale. Folosești fixed și set-precision de doi, din biblioteca iomanip. Așa faci un bon cu T V A sau un convertor din lei în euro.
+
+Greșeli frecvente. Ai scris trei virgulă paisprezece în loc de trei punct paisprezece. Ai pus ghilimele la un char sau apostrofuri la un string. Ai scris String cu literă mare. Ai ieșit din text, cu un număr prea mare între parantezele pătrate. Ai împărțit două numere întregi și ai pierdut zecimalele.
+
+Tema. Citești prețul și cantitatea unui produs și afișezi totalul cu două zecimale. Afișezi fiecare literă din numele tău pe câte un rând. Convertești kilometri în mile. Salvezi ca Tema, linie jos, L cinci.
+
+Recapitulare. Fiecare informație are tipul ei. Alege tipul potrivit. Succes!

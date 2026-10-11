@@ -1,0 +1,21 @@
+Lecția cinci din Modulul patru. Meniuri și starea programului: scheletul unei aplicații.
+
+Astăzi înveți ce trebuie să aibă o aplicație adevărată: citire sigură, care nu se strică dacă utilizatorul scrie litere în loc de numere, meniuri bine făcute și o stare a programului, adică datele pe care aplicația le ține minte. Fișierul tău este Prenume, linie jos, Nume, linie jos, M patru, L cinci.
+
+Obiectivul. Minim: o funcție citește int care nu se strică la litere și un meniu care o folosește. Complet: minim, plus o structură de stare, confirmarea „Ești sigur?” și salvarea doar dacă s-a schimbat ceva.
+
+Primul pas. Când citirea eșuează. Dacă programul așteaptă un număr și tu scrii litere, c-in intră în starea de eroare, iar meniul se poate repeta la nesfârșit. Cu c-in punct fail afli dacă citirea a eșuat. Apoi cu c-in punct clear scoți programul din eroare, iar cu c-in punct ignore arunci ce a rămas pe linie. Pui totul într-o funcție, citește int, care repetă cererea până primește un număr dintr-un interval. Faci funcții asemănătoare pentru numere cu zecimale și pentru texte.
+
+Al doilea pas. Meniuri. Un calculator cu meniu și switch. Meniul într-o funcție, iar starea în main. Confirmarea „Ești sigur?” înainte de ștergere. Un enum, adică o listă de nume pentru opțiuni, ca să scrii case adaugă, nu case unu. Dacă declari o variabilă într-un case, ai nevoie de acolade.
+
+Al treilea pas. Comenzi text și submeniuri. Provocări opționale: comenzi scrise în loc de numere și meniuri în meniuri.
+
+Al patrulea pas. Starea programului. Ții datele aplicației într-o structură, de exemplu portofelul cu sold și tranzacții. Mai poți ține un jurnal de activitate, cu ios două puncte app, și setări salvate. Ții și un steag, modificat: la ieșire salvezi în fișier doar dacă s-a schimbat ceva. Mai faci un meniu frumos, cu antet, linii și pauză.
+
+Al cincilea pas. Scheletul unei aplicații. Încarci datele la pornire, rulezi meniul și salvezi la ieșire. Proiectul este Lista de sarcini.
+
+Greșeli frecvente. Meniul se repetă la nesfârșit când scrii o literă, pentru că nu ai curățat c-in. Lipsește biblioteca limits pentru numeric limits. Getline citește un șir gol, pentru că a rămas Enter pe linie. Funcția acceptă douăsprezece a-b-c ca douăsprezece. Apare eroarea jump to case label. Se execută mai multe case-uri, pentru că lipsește break.
+
+Tema. Termini exercițiile A, B și C. Scrii o funcție care repetă întrebarea până când utilizatorul scrie un nume cu cel puțin trei litere, formate doar din litere. Alegi proiectul pentru lecțiile următoare. Salvezi ca Tema, linie jos, M patru, L cinci.
+
+Recapitulare. Citirea sigură, meniul și starea sunt scheletul oricărei aplicații. Succes!

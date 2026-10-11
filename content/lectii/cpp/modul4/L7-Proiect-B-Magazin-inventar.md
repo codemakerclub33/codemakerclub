@@ -242,6 +242,11 @@ Dupa stergerea lui 2 -> urmatorul id: 4
 (size() + 1 ar fi dat 3, adica un id deja folosit)
 ```
 
+**Încearcă tu (8 min)**  
+- [ ] Afișezi produsele ca tabel, cu coloane aliniate  
+- [ ] Citești produse cu nume cu spații dintr-un fișier  
+- [ ] Dai fiecărui produs un `id` unic  
+
 ---
 
 ## 2. Căutare, validare, modificare
@@ -487,6 +492,10 @@ Aprovizionare pix +0: REFUZAT
 Caiet: 5 lei, stoc 20
 Pix:   2 lei, stoc 75
 ```
+
+**Încearcă tu (8 min)**  
+- [ ] Cauți un produs după `id`  
+- [ ] Modifici prețul și stocul unui produs  
 
 ---
 
@@ -824,6 +833,11 @@ Cel mai ieftin: Pix albastru (2.00 lei)
 Produse epuizate: 1
 ```
 
+**Încearcă tu (10 min)**  
+- [ ] Vinzi un produs și scazi stocul  
+- [ ] Afișezi o alertă când stocul e mic  
+- [ ] Afișezi un raport cu valoarea totală a stocului  
+
 ---
 
 ## 4. Sortare, ștergere, istoric, copie de siguranță
@@ -1092,6 +1106,10 @@ int main() {
 Copie creata: 4 linii (original: 4)
 Nu pot copia un fisier inexistent.
 ```
+
+**Încearcă tu (8 min)**  
+- [ ] Sortezi produsele după preț  
+- [ ] Ștergi un produs după confirmare  
 
 ---
 

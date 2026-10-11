@@ -1,0 +1,21 @@
+Lecția zece din Modulul patru. Showcase final.
+
+Astăzi încheiem Modulul patru cu o recapitulare, un proiect mic, complet, și prezentarea proiectului tău final. Fișierul tău este Prenume, linie jos, Nume, linie jos, M patru, L zece.
+
+Obiectivul. Minim: proiectul tău din lecțiile șase, șapte sau opt, curățat în lecția nouă, care rulează fără greșeli și are meniu, fișier și date demo. Complet: minim, plus prezentarea de trei minute, o autoevaluare după grilă și un plan scris pentru ce ai adăuga în continuare.
+
+Primul pas. Testul de recapitulare. Răspunzi la întrebările despre fișiere, vectori, structuri, citire sigură și meniuri, fără să te uiți în lecții.
+
+Al doilea pas. Fișele de recapitulare. Reiei pe scurt programele-cheie: scrierea și citirea fișierelor, vectorul cu funcții cu const și ampersand, structura cu sortare după un comparator, citirea sigură și meniul cu enum și switch. Mai reiei citirea unei linii cu nume și notă, ștergerea și inserarea în vector, amestecarea cu algoritmul Fisher și Yates, căutarea binară cu numărarea comparațiilor și mini-testele automate.
+
+Al treilea pas. Un proiect mic, complet. Jurnalul de note: adaugi note, le salvezi într-un fișier și le citești la următoarea rulare. Verifici ce a rămas în fișier. Poți face și statistici despre un fișier text.
+
+Al patrulea pas. Proiectul final. Îl pui în ordine, cu meniu, fișier, date demo, comentarii și teste. Îl rulezi de la zero, ca un utilizator nou, ca să vezi dacă e clar.
+
+Al cincilea pas. Showcase. Prezinți în trei minute: ce problemă rezolvă proiectul, o demonstrație cu date demo, o bucată de cod de care ești mândru și ce ai învățat. Apoi te evaluezi singur, după grilă, și scrii un plan pentru ce ai adăuga în continuare.
+
+Greșeli frecvente la proiecte. Ultima valoare din fișier apare de două ori. Programul se blochează la introducerea unei litere. Getline sare peste o linie după c-in. Datele dispar la următoarea rulare, pentru că nu le-ai salvat. Elemente sărite la ștergerea din vector. Fișierul de date lipsește și programul se oprește, în loc să explice.
+
+Tema. Păstrezi proiectul final și continui să-l îmbunătățești. Rezolvi din nou întrebările din test la care ai greșit. Alegi un nume și un decor pentru jocul din Modulul cinci și scrii o jumătate de pagină despre el: cine este eroul, unde se petrece povestea și ce vrea să facă.
+
+Bravo, ai terminat Modulul patru!

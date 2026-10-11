@@ -204,6 +204,11 @@ Rucsac: Sabie Cheie
 
 Dacă vrei să schimbi felul în care arată rucsacul, știi exact unde: în `afiseazaRucsac`.
 
+**Încearcă tu (10 min)**  
+- [ ] Redenumești variabilele ca să spună ce conțin  
+- [ ] Înlocuiești numerele magice cu constante  
+- [ ] Împarți o funcție mare în funcții mici  
+
 ---
 
 ## 2. Depanare (*debugging*)
@@ -292,6 +297,10 @@ int main() {
 ```
 
 Cauza: `15 / 30` este **împărțire între întregi**, deci `0` (nu `0.5`), iar `0 * 10` rămâne `0`. Dacă **înmulțim întâi** (`15 * 10 / 30`), obținem `5`. Este o capcană clasică la împărțirea cu numere întregi.
+
+**Încearcă tu (8 min)**  
+- [ ] Găsești de ce viața depășește maximul  
+- [ ] Găsești de ce bara de viață rămâne goală  
 
 ---
 
@@ -390,6 +399,10 @@ Teste: 3, picate: 2
 ```
 
 Două teste pică și arată exact unde e problema. Înlocuiește `i + 1` cu `i`, rulează din nou și toate trec. Fără teste, greșeala ar fi apărut abia în joc, când rucsacul ar fi „pierdut” obiecte.
+
+**Încearcă tu (8 min)**  
+- [ ] Scrii funcția `verifica`  
+- [ ] Scrii un test care prinde o greșeală  
 
 ---
 

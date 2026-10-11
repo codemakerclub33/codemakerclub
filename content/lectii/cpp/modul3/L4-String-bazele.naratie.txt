@@ -1,0 +1,21 @@
+Lecția patru din Modulul trei. String: bazele.
+
+Până acum ai lucrat mai ales cu numere. Astăzi intri în lumea textului: un string este un șir de litere pe care îl poți măsura, îl poți parcurge literă cu literă, îl poți lipi cu altul și îl poți răsturna. Fișierul tău este Prenume, linie jos, Nume, linie jos, M trei, L patru.
+
+Obiectivul. Minim: un program care citește un cuvânt și îi afișează lungimea, prima și ultima literă. Complet: minim, plus afișarea cuvântului invers și verificarea palindromului, într-o funcție.
+
+Primul pas. Lungime și litere. Un string se scrie între ghilimele duble. Lungimea o afli cu punct length, iar spațiul se numără și el. O literă o iei scriind numele și, între paranteze pătrate, poziția. Pozițiile încep de la zero, iar ultima literă este pe poziția lungime minus unu. Parcurgi textul litera cu literă cu un for.
+
+Al doilea pas. Lipirea. Lipești două texte cu plus, sau adaugi la un text cu plus egal. Măcar unul dintre cele două trebuie să fie string. Nu poți lipi direct două texte scrise între ghilimele. Poți schimba și o singură literă din text.
+
+Al treilea pas. Citirea. C-in citește doar un cuvânt, până la spațiu. Pentru o propoziție întreagă folosești getline. Dacă ai citit înainte ceva cu c-in, scrii cin punct ignore înainte de getline, ca să dispară Enter-ul rămas. Compari texte cu egal egal, iar literele mari și mici sunt diferite: Ana nu este ana.
+
+Al patrulea pas. Substr, inversare și palindrom. Cu substr scoți o bucată din text, dând poziția și lungimea. Inversezi un text parcurgându-l de la coadă la cap. Un palindrom este un text care este egal cu inversul lui.
+
+Al cincilea pas. Proiecte. Construiești texte cu string de n ori un caracter, scoți inițialele numelui și faci mini-proiectul Analizorul de nume.
+
+Greșeli frecvente. Getline sare peste citire, pentru că a rămas Enter în memorie. Se citește doar primul cuvânt, pentru că ai folosit c-in în loc de getline. Ultima literă nu apare, pentru că ai scris lungimea fără minus unu. Substr cu o poziție mai mare decât lungimea oprește programul. Ai încurcat apostroful, pentru un caracter, cu ghilimelele, pentru un text.
+
+Tema. Citești o propoziție și afișezi lungimea, numărul de cuvinte, prima și ultima literă și propoziția scrisă invers. Scrii o funcție care repetă un text de mai multe ori. Citești cinci cuvinte într-un vector și afișezi palindroamele. Salvezi ca Tema, linie jos, M trei, L patru.
+
+Recapitulare. Pozițiile încep de la zero. Getline citește o linie întreagă. Succes!

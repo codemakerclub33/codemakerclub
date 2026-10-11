@@ -1,0 +1,19 @@
+Lecția patru din Modulul unu. C-in și operațiile aritmetice.
+
+Astăzi programul tău învață să asculte: citește numere de la tastatură, calculează cu ele și afișează rezultatul. Fișierul tău este Prenume, linie jos, Nume, linie jos, L patru.
+
+Obiectivul. Minim: un program care citește două numere și afișează suma și produsul. Complet: minim, plus câtul și restul împărțirii, mesaje clare pentru utilizator și test cu cel puțin două seturi de numere.
+
+Primul pas. C-in. Scrii c-in, apoi două semne mai mare, apoi numele variabilei. Programul se oprește și așteaptă să tastezi un număr și să apeși Enter. Ține minte săgețile: la c-out merg spre afară, adică semne mai mic, iar la c-in merg spre variabilă, adică semne mai mare. Poți citi mai multe numere deodată, puse unul după altul. Înainte de fiecare c-in, afișează un mesaj, ca cel care folosește programul să știe ce să introducă.
+
+Al doilea pas. Împărțirea și restul. Cu numere întregi, semnul slash dă câtul, fără zecimale. Semnul procent dă restul. De exemplu, șapte împărțit la doi dă trei, iar restul este unu. Capcana: șapte împărțit la doi nu dă trei virgulă cinci, pentru că tipul int nu are zecimale. Zecimalele le vei învăța în lecția următoare. Mai ține minte ordinea operațiilor: mai întâi parantezele, apoi înmulțirea, împărțirea și restul, apoi adunarea și scăderea.
+
+Al treilea pas. Probleme cu împărțire și rest. Restul la zece este ultima cifră a unui număr. Câtul la zece este numărul fără ultima cifră. Așa poți afla cifrele unui număr de trei cifre. Cu aceeași idee transformi minutele în ore și minute, secundele în ore, minute și secunde, calculezi ora de peste câteva ore și numeri câte bancnote îi dai unui client.
+
+Al patrulea pas. Proiecte mici. Construiești un calculator complet și un program care schimbă între ele două valori citite.
+
+Greșeli frecvente. Programul stă și așteaptă: probabil are nevoie de un număr, tastează-l și apasă Enter. Ai întors săgețile, de exemplu c-in cu semne mai mic. Ai uitat să citești variabila. Ai scris numele variabilei între ghilimele. Ai împărțit la zero: asta oprește programul. Ai folosit procentul cu numere cu zecimale, dar el merge doar cu numere întregi.
+
+Tema. Citești secundele și le afișezi ca minute și secunde. Citești prețul unui bilet și numărul de persoane și afli totalul și restul dintr-o bancnotă de două sute de lei. Citești un număr de trei cifre și afli suma și produsul cifrelor. Salvezi ca Tema, linie jos, L patru.
+
+Recapitulare. C-in citește de la tastatură. Slash dă câtul, procent dă restul. Niciodată nu împărțim la zero. Succes!

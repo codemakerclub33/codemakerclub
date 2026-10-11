@@ -1,0 +1,23 @@
+Lecția unu din Modulul patru. Fișiere text: citire și scriere.
+
+Până acum, tot ce făcea programul tău dispărea în clipa în care îl închideai. Astăzi înveți să salvezi date într-un fișier și să le citești înapoi data viitoare. Așa funcționează jocurile care își țin scorul și aplicațiile care își țin lista de contacte: programul își amintește. Fișierul tău este Prenume, linie jos, Nume, linie jos, M patru, L unu.
+
+Obiectivul. Minim: scrii un fișier cu of-stream și îl citești cu if-stream, cu verificarea deschiderii. Complet: minim, plus proiectul Raportul de note, cu două fișiere, unul de intrare și unul de ieșire.
+
+Primul pas. Scrierea. Ai nevoie de biblioteca f-stream. Creezi un of-stream cu numele fișierului, apoi scrii în el exact ca la c-out, dar cu numele fișierului în loc de c-out. La final îl închizi cu close. Atenție: of-stream golește fișierul și scrie de la început.
+
+Al doilea pas. Citirea. If-stream citește ca c-in, dar din fișier. Înainte să citești, verifici dacă fișierul s-a deschis, cu is open. Dacă nu s-a deschis, afișezi un mesaj, pentru că probabil fișierul nu există sau este în alt folder. Citești cuvinte sau numere cu semnele mai mare, iar linii întregi cu getline. Ca să citești până la sfârșit, folosești while cu citirea în condiție. Nu folosești e-o-f, pentru că ultima valoare s-ar citi de două ori.
+
+Al treilea pas. Citirea numerelor. Pregătești un fișier cu note și calculezi suma, media, minimul și maximul. Poți copia datele dintr-un fișier în altul.
+
+Al patrulea pas. Adăugarea. Dacă vrei să adaugi la sfârșit, fără să ștergi ce era, deschizi fișierul cu i-o-s două puncte app. Așa faci un jurnal.
+
+Al cincilea pas. Date structurate. Scrii perechi de nume și notă, apoi le citești și găsești elevul cu cea mai mare notă. Mai înveți fișiere în care prima linie spune câte valori urmează și citirea caracter cu caracter.
+
+Al șaselea pas. Proiectul. Raportul de note citește un fișier cu elevi și scrie un raport în alt fișier. Dacă schimbi fișierul de intrare, raportul se schimbă singur.
+
+Greșeli frecvente. Programul nu afișează nimic, pentru că fișierul nu există sau este în alt folder. Lipsește biblioteca f-stream. Conținutul vechi dispare, pentru că of-stream golește fișierul. Ultima valoare se citește de două ori, pentru că ai folosit e-o-f. Datele scrise nu apar, pentru că ai uitat close. Numele cu spații se citesc greșit, pentru că semnul mai mare se oprește la primul spațiu.
+
+Tema. Creezi un fișier cu zece numere și afișezi suma, media și cel mai mare. Salvezi într-un fișier primele treizeci de numere prime. Faci o agendă simplă, în care adaugi nume și telefon într-un fișier. Salvezi ca Tema, linie jos, M patru, L unu.
+
+Recapitulare. Of-stream scrie, if-stream citește. Verifici mereu deschiderea. Închizi fișierele. Succes!

@@ -1,0 +1,23 @@
+Lecția cinci din Modulul doi. Bucle imbricate.
+
+Astăzi pui o buclă în interiorul altei bucle. Așa desenezi triunghiuri, piramide și table de șah din caractere și construiești tabele întregi, rând cu rând. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L cinci.
+
+Obiectivul. Minim: un dreptunghi și un triunghi desenate cu bucle imbricate. Complet: minim, plus o piramidă și un meniu cu mai multe figuri.
+
+Primul pas. Cum funcționează. Gândește-te la un ceas: acul mare face o tură completă pentru fiecare pas al acului mic. La fel, pentru fiecare pas al buclei din afară, bucla din interior rulează complet, de la început până la sfârșit. Numărul total de execuții este numărul de repetări din afară înmulțit cu cel din interior.
+
+Al doilea pas. Șablonul de desen. Bucla din afară este pentru rânduri, iar bucla din interior este pentru coloane. După bucla din interior, pui rând nou. Așa desenezi un rând de steluțe, un dreptunghi cu trei rânduri și cinci coloane, un pătrat cu latura citită.
+
+Al treilea pas. Triunghiuri. La triunghi, bucla din interior merge nu până la n, ci până la i, adică numărul rândului. Pe primul rând sunt puține steluțe, pe ultimul sunt multe. Poți face triunghiul întors sau un triunghi de numere.
+
+Al patrulea pas. Piramida. Pe rândul i pui n minus i spații, apoi două ori i minus unu steluțe, ca să iasă centrată. Faci și tabla înmulțirii completă, cu antet pentru rânduri și coloane.
+
+Al cincilea pas. Provocări. Tabla de șah, dreptunghiul gol și numerele prime până la treizeci. Ține minte: break oprește doar bucla în care se află.
+
+Al șaselea pas. Proiectul. Desenatorul de figuri: un meniu din care alegi ce figură vrei, iar programul o desenează.
+
+Greșeli frecvente. Toate steluțele apar pe un singur rând, pentru că ai uitat rândul nou. Fiecare steluță apare pe alt rând, pentru că ai pus rândul nou în bucla din interior. Triunghiul are mereu aceeași lățime, pentru că bucla din interior merge până la n. Piramida nu e centrată: numără spațiile. Ai folosit aceeași variabilă în ambele bucle, așa că folosește nume diferite, i și j. Ai pus limite foarte mari la ambele bucle și programul rulează foarte mult.
+
+Tema. Desenezi un brad de Crăciun: o piramidă de cinci rânduri și un trunchi de două rânduri. Afișezi tabla înmulțirii de la unu la zece, cu antet. Salvezi ca Tema, linie jos, M doi, L cinci.
+
+Recapitulare. Rânduri în afară, coloane în interior. Rând nou după bucla din interior. Succes!

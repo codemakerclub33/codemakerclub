@@ -1,0 +1,21 @@
+Lecția trei din Modulul patru. Structuri: date grupate.
+
+Un elev nu are doar un nume, ci și o clasă, o notă și o vârstă. Astăzi înveți să ții toate aceste date împreună, într-o singură cutie cu mai multe sertare, numită structură. Fișierul tău este Prenume, linie jos, Nume, linie jos, M patru, L trei.
+
+Obiectivul. Minim: o structură cu trei câmpuri, citită de la tastatură și afișată cu o funcție. Complet: minim, plus funcții care modifică structura, un tablou de structuri și proiectul Fișa elevului.
+
+Primul pas. Prima structură. Scrii cuvântul struct, apoi numele, de exemplu Elev, și între acolade câmpurile, fiecare cu tipul ei. După acoladă pui punct și virgulă, iar fără el apar erori ciudate. Apoi creezi variabile de acest tip, ca la int, și accesezi câmpurile cu punct: numele variabilei, punct, numele câmpului. Poți da valori cu acolade, de exemplu nume, vârstă și notă, și poți copia o structură în alta. Câmpurile pot avea și valori implicite.
+
+Al doilea pas. Citire, afișare și funcții. Citești o structură câmp cu câmp. Scrii o funcție care afișează un elev. Dacă funcția doar citește structura, o primești cu const și ampersand. Dacă o modifici, o primești cu ampersand, altfel lucrezi pe o copie și în main nu se schimbă nimic. O funcție poate și să întoarcă o structură.
+
+Al treilea pas. Structuri în structuri și tablouri. O structură poate conține altă structură, de exemplu o dată calendaristică în fișa elevului. Poți face un tablou de structuri, un fel de catalog. Atenție: două structuri nu se compară cu egal egal. Compari câmp cu câmp.
+
+Al patrulea pas. Alte structuri. Un produs de magazin, o dată calendaristică, funcții în interiorul structurii. Scrii o structură într-un fișier și o citești înapoi, pe un format stabilit.
+
+Al cincilea pas. Proiectul. Fișa elevului, cu citire, afișare și salvare.
+
+Greșeli frecvente. Ai uitat punct și virgulă după acolada structurii. Ai scris numele structurii în loc de numele variabilei, de exemplu Elev punct nume, în loc de ana punct nume. Funcția nu schimbă elevul din main, pentru că lipsește ampersandul. Ai încercat să modifici o structură primită cu const. Ai comparat două structuri cu egal egal.
+
+Tema. Faci o structură Telefon cu marcă, preț și memorie, citești trei telefoane și afișezi cel mai ieftin și pe cel cu memoria cea mai mare. Faci o structură pentru numere complexe, cu funcții de adunare și înmulțire. Salvezi ca Tema, linie jos, M patru, L trei.
+
+Recapitulare. Struct grupează date. Câmpurile se accesează cu punct. Pentru modificare folosești ampersand. Succes!

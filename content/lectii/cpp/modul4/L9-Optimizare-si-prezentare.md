@@ -484,6 +484,12 @@ Gasit (scris cu == true)
 Gasit (scris simplu)
 ```
 
+**Încearcă tu (10 min)**  
+- [ ] Redenumești variabilele ca să spună ce conțin  
+- [ ] Înlocuiești numerele magice cu constante `const`  
+- [ ] Împarți programul în funcții mici  
+- [ ] Elimini o repetiție cu o funcție  
+
 ---
 
 ## 2. Optimizare: ce înseamnă „rapid”?
@@ -790,6 +796,10 @@ Varianta 2: valoarea 34 apare de 130 ori (5129 operatii)
 
 Aceeași valoare, același număr de apariții, dar a doua variantă face de **mii de ori** mai puțini pași (și diferența crește repede dacă șirul se lungește: la 50000 de elemente prima variantă ar face 2,5 miliarde de operații). Când valorile sunt într-un interval mic și cunoscut, un „vector de numărare” (*counting array*) bate aproape orice altă variantă.
 
+**Încearcă tu (8 min)**  
+- [ ] Măsori timpul unei bucle cu `<chrono>`  
+- [ ] Compari căutarea liniară cu cea binară  
+
 ---
 
 ## 3. Teste automate
@@ -933,6 +943,10 @@ Ai scris nota 9
 ```
 
 `istringstream` transformă un text într-un „flux de intrare”, ca și cum acel text ar fi fost tastat. Poți testa orice funcție de citire cu zeci de intrări greșite, în câteva secunde, fără să tastezi. Aceeași funcție merge cu `cin`, cu un fișier (`ifstream`) sau cu un text, pentru că toate sunt `istream`.
+
+**Încearcă tu (8 min)**  
+- [ ] Scrii 3 teste pentru o funcție și le rulezi  
+- [ ] Testezi citirea cu `istringstream`  
 
 ---
 

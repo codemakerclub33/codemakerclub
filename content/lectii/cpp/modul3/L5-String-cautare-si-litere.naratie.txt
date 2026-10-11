@@ -1,0 +1,23 @@
+Lecția cinci din Modulul trei. String: căutare și litere.
+
+Astăzi deschizi un text și te uiți în el literă cu literă: numeri vocale, transformi literele mici în mari, cauți un cuvânt, înlocuiești caractere și afli ce literă apare cel mai des. Așa lucrează un editor de text când apeși Control F. Fișierul tău este Prenume, linie jos, Nume, linie jos, M trei, L cinci.
+
+Obiectivul. Minim: un program care numără vocalele dintr-un text. Complet: minim, plus transformarea în litere mari, căutarea unui cuvânt cu find și un raport de statistici.
+
+Primul pas. Caracterele sunt numere. Fiecare caracter are un cod. A mare are șaizeci și cinci, a mic are nouăzeci și șapte, iar cifra zero are patruzeci și opt. Din biblioteca cctype ai funcții care te ajută: is alpha spune dacă e literă, is digit dacă e cifră, is space dacă e spațiu, is upper și is lower pentru litere mari și mici. To upper și to lower schimbă o literă în mare sau în mică.
+
+Al doilea pas. Transformarea textului. Ca să faci tot textul cu litere mari, parcurgi literele și pui înapoi în text rezultatul lui to upper. Atenție: dacă doar apelezi funcția, fără să salvezi rezultatul, nu se schimbă nimic. Poți pune cu majusculă și prima literă a fiecărui cuvânt.
+
+Al treilea pas. Numărări. Pentru vocale ai nevoie de un contor și de o funcție mică, este vocală. Înainte să compari, transformi litera în literă mică, ca să prinzi și vocalele mari. Numeri la fel consoane, cifre și spații, sau de câte ori apare o anumită literă.
+
+Al patrulea pas. Find și înlocuire. Cu find cauți o bucată de text și primești poziția sau valoarea npos, dacă nu o găsești. Compari cu string două puncte npos, nu cu minus unu. Poți găsi toate aparițiile, dacă reiei căutarea de la poziția următoare. Poți înlocui caractere. Dacă find nu găsește deși textul există, transformă ambele texte în litere mici.
+
+Al cincilea pas. Frecvența literelor. Folosești un vector cu douăzeci și șase de contoare, câte unul pentru fiecare literă. Scazi a mic din literă și obții poziția în vector. Cu aceeași idee afli litera cea mai frecventă și verifici anagramele, adică două cuvinte cu aceleași litere. Mai ai palindromul serios, care ignoră spațiile și literele mari. Acestea sunt provocări opționale.
+
+Al șaselea pas. Proiectul Statistica textului.
+
+Greșeli frecvente. După to upper apare un număr în loc de literă, pentru că funcția întoarce un cod. Vocalele mari nu sunt numărate. Frecvența dă rezultate ciudate, pentru că litera nu e literă mică. Ai apelat to upper fără să salvezi rezultatul. Se citește doar primul cuvânt, pentru că ai folosit c-in.
+
+Tema. Scrii funcții pentru numărarea vocalelor și a consoanelor. Afișezi un cuvânt cu litere despărțite prin liniuțe. Scrii o funcție care păstrează doar literele și cifrele. Salvezi ca Tema, linie jos, M trei, L cinci.
+
+Recapitulare. Caracterele au coduri. Find întoarce poziția sau npos. Succes!

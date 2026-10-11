@@ -1,0 +1,21 @@
+Lecția șase din Modulul trei. Algoritmi pe cifre.
+
+Astăzi desfaci numerele cifră cu cifră: le aduni, le numeri, le răstorni, le verifici și le transformi în binar. Sunt probleme clasice de olimpiadă, iar soluțiile se bazează pe două operații pe care le cunoști deja: restul și câtul. Fișierul tău este Prenume, linie jos, Nume, linie jos, M trei, L șase.
+
+Obiectivul. Minim: funcțiile pentru suma cifrelor, numărul de cifre și oglindit. Complet: minim, plus palindrom numeric, cifra maximă, conversia în binar și un meniu care le folosește.
+
+Primul pas. Ideea de bază. Restul împărțirii la zece este ultima cifră. Câtul împărțirii la zece este numărul fără ultima cifră. Repeți cât timp numărul este mai mare decât zero și ai toate cifrele, de la ultima spre prima. Suma cifrelor o aduni într-un acumulator. Numărul de cifre îl numeri cu un contor, cu do while, ca zero să aibă o cifră.
+
+Al doilea pas. Oglindit. La fiecare cifră înmulțești rezultatul cu zece și adaugi cifra. Așa un număr se citește invers. Zerourile de la sfârșit dispar, deci o sută douăzeci oglindit devine douăzeci și unu. Un număr este palindrom numeric dacă este egal cu oglinditul lui. Mai afli cifra maximă, care pornește de la zero, și cifra minimă, care pornește de la nouă.
+
+Al treilea pas. Apariții, produs și prima cifră. Numeri de câte ori apare o cifră. Faci produsul cifrelor, pornind de la unu, nu de la zero. Prima cifră o afli împărțind la zece cât timp numărul are mai mult de o cifră.
+
+Al patrulea pas. Binar și numere noi. Pentru binar împarți repetat la doi, iar fiecare rest se lipește în fața rezultatului. Poți elimina toate aparițiile unei cifre sau adăuga o cifră la început ori la sfârșit. Pentru a păstra ordinea folosești o poziție care crește: unu, zece, o sută.
+
+Al cincilea pas. Provocări opționale: numerele Armstrong, rădăcina digitală și numere cu cifrele în ordine crescătoare. Proiectul este Laboratorul de cifre.
+
+Greșeli frecvente. Bucla nu rulează pentru zero, pentru că while cu mai mare ca zero nu intră. Ai nevoie de n la final, dar bucla l-a modificat: lucrezi pe o copie. Rezultat greșit la numere mari, pentru că int a depășit limita: folosește long long. Produsul cifrelor e mereu zero, pentru că ai pornit de la zero. Ai încurcat restul cu câtul. Binarul apare în ordine inversă, pentru că ai lipit cifra la sfârșit.
+
+Tema. Scrii funcții pentru suma cifrelor pare și pentru numărul de cifre impare. Afișezi palindroamele de trei cifre cu suma cifrelor peste zece. Numeri cifrele zero din scrierea binară a unui număr. Salvezi ca Tema, linie jos, M trei, L șase.
+
+Recapitulare. Rest la zece, ultima cifră. Cât la zece, numărul fără ultima cifră. Succes!

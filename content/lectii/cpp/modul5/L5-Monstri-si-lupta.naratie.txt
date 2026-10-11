@@ -1,0 +1,23 @@
+Lecția cinci din Modulul cinci. Monștri și luptă.
+
+Azi apare pericolul. Folosești numere aleatoare ca un zar, creezi un monstru și scrii o luptă pe ture. Când eroul intră în pivniță, lupta începe automat. Fișierul tău este Joc, linie jos, L patruzeci și cinci, punct c p p.
+
+Obiectivul. Minim: o luptă simplă pe ture între erou și monstru, până când unul dintre ei rămâne fără viață. Complet: meniul de luptă, cu atac, poțiune și fugă, bonusul sabiei, recompensa și monstrul care apare o singură dată.
+
+Primul pas. Zarul. Cu rand procent șase plus unu obții un număr de la unu la șase. Dar fără srand, dă aceleași numere la fiecare rulare, așa că pui srand de time de zero o singură dată, la început.
+
+Al doilea pas. Monstrul. Faci o structură Monstru, cu nume, viață și atac, așa cum ai făcut pentru erou.
+
+Al treilea pas. Lupta pe ture. Mai întâi scrii o lovitură: arunci zarul și scazi din viața celuilalt. Apoi o rundă: lovește eroul, apoi monstrul. Apoi lupta întreagă, într-o buclă, până când unul rămâne fără viață. Apoi meniul de luptă, în care alegi să ataci, să bei o poțiune sau să fugi. La final, dacă ai câștigat, primești o recompensă, de exemplu monede.
+
+Al patrulea pas. Alte idei. Monstrul apare o singură dată, cu un steag. Poți verifica dacă lupta este echilibrată, simulând-o de multe ori. Poți alege un monstru la întâmplare. Sunt provocări opționale.
+
+Al cincilea pas. Jocul lecției. Lupta cu goblinul din pivniță.
+
+Un sfat bun: joacă lupta de mai multe ori, ca să vezi dacă este prea ușoară sau prea grea, și ajustează valorile.
+
+Greșeli frecvente. Zarul dă mereu aceleași numere, pentru că lipsește srand. Zarul dă toate aceleași numere în aceeași rulare, pentru că ai pus srand în buclă. Zarul dă șapte sau zero, pentru că formula e greșită. Monstrul mort mai lovește, pentru că nu ai verificat viața după lovitura eroului. Lupta nu se termină niciodată.
+
+Tema. Termini exercițiul A și joci până reușești să câștigi și să pierzi măcar o dată. Notezi într-un tabel cât de grea a fost lupta și ajustezi valorile. Desenezi pe hârtie magazinul: ce produse vinde și la ce preț. Salvezi ca Joc, linie jos, L patruzeci și cinci.
+
+Recapitulare. Zarul, monstrul și lupta pe ture. Verifică viața după fiecare lovitură. Succes!

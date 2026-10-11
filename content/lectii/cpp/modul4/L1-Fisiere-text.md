@@ -85,6 +85,11 @@ Ce s-a întâmplat, pe rând:
 
 > **Atenție:** `ofstream fout("salut.txt");` șterge conținutul vechi al fișierului. Dacă ai notat acolo ceva important, a dispărut. Mai jos vedem cum adaugi text fără să ștergi.
 
+**Încearcă tu (5 min)**  
+- [ ] Scrii un program care creează `salut.txt` cu 3 rânduri  
+- [ ] Deschizi `salut.txt` și verifici că textul e acolo  
+- [ ] Rulezi din nou și vezi că fișierul a fost suprascris  
+
 ---
 
 ## 2. Citirea dintr-un fișier
@@ -233,6 +238,11 @@ Total linii: 10
 `getline(fin, linie)` are o proprietate utilă: dacă a reușit să citească o linie, e considerat „adevărat”, iar când ajunge la sfârșitul fișierului e considerat „fals”. De aceea `while (getline(fin, linie))` citește tot fișierul, pe rând, și apoi se oprește.
 
 > **Nu scrie** `while (!fin.eof())`. Pare logic („cât timp nu s-a terminat fișierul”), dar `eof` devine adevărat abia **după** ce o citire a eșuat, deci ultima iterație lucrează cu date vechi sau goale. Forma corectă este `while (getline(fin, linie))` sau `while (fin >> x)`.
+
+**Încearcă tu (8 min)**  
+- [ ] Citești primele două linii dintr-un fișier și le afișezi  
+- [ ] Verifici cu `is_open()` și afișezi un mesaj dacă fișierul lipsește  
+- [ ] Citești un fișier linie cu linie, până la final  
 
 ---
 
@@ -399,6 +409,11 @@ int main() {
 Am copiat 3 note in note_mari.txt
 ```
 
+**Încearcă tu (10 min)**  
+- [ ] Pregătești un fișier cu note și calculezi suma și media  
+- [ ] Afli minimul și maximul notelor din fișier  
+- [ ] Copiezi notele într-un alt fișier  
+
 ---
 
 ## 4. Adăugarea la sfârșitul fișierului
@@ -447,6 +462,10 @@ Linia C
 ```
 
 „Linia A” a dispărut când am redeschis fișierul fără `ios::app`, dar „Linia B” a rămas, pentru că „Linia C” a fost **adăugată** după ea. Ține minte regula: **fără `ios::app` se șterge, cu `ios::app` se adaugă**.
+
+**Încearcă tu (5 min)**  
+- [ ] Adaugi o linie la un fișier cu `ios::app`  
+- [ ] Rulezi de 2 ori și vezi că liniile se adună, nu se șterg  
 
 ---
 
@@ -659,6 +678,10 @@ Fișierul `mare.txt` arată acum așa:
 SALUT, FISIER!
 ANUL 2026
 ```
+
+**Încearcă tu (8 min)**  
+- [ ] Citești prima linie ca număr de valori și apoi valorile  
+- [ ] Salvezi în fișier ce scrii de la tastatură  
 
 ---
 

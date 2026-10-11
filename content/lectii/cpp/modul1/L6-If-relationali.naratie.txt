@@ -1,0 +1,23 @@
+Lecția șase din Modulul unu. Operatori de comparare și instrucțiunea if.
+
+Astăzi programul tău învață să ia decizii: face anumite lucruri doar dacă o condiție este adevărată, exact ca blocul „dacă” din Scratch. Fișierul tău este Prenume, linie jos, Nume, linie jos, L șase.
+
+Obiectivul. Minim: un program cu un if și o condiție reală, testat cu valori pentru care condiția este adevărată și cu valori pentru care este falsă. Complet: minim, plus cel puțin trei if-uri, date citite cu c-in și condiția spusă în cuvinte pe foaie.
+
+Primul pas. Operatorii de comparare. Mai mic, mai mare, mai mic sau egal, mai mare sau egal, egal egal și diferit. Rezultatul este adevărat, adică unu, sau fals, adică zero.
+
+Al doilea pas. If. Scrii if, apoi condiția între paranteze, apoi blocul între acolade. Blocul se execută doar când condiția este adevărată. Poți pune mai multe if-uri la rând. Cu restul împărțirii la doi afli dacă un număr este par.
+
+Al treilea pas. Cea mai mare capcană: un singur egal pune o valoare, iar două egaluri compară. Dacă scrii un singur egal în condiție, programul nu compară nimic. Alte două capcane: nu pune punct și virgulă imediat după if și nu uita acoladele.
+
+Al patrulea pas. Poți compara și alte tipuri: caractere, între apostrofuri, și texte, între ghilimele. Poți folosi direct și o variabilă bool.
+
+Al cincilea pas. Proiecte mici. Programul pentru temperatură, biletul de la cinema, viețile din joc și „Ești admis?”.
+
+Un sfat bun: testează fiecare program de două ori, o dată cu valori pentru care condiția este adevărată și o dată cu valori pentru care este falsă.
+
+Greșeli frecvente. Mesajul apare mereu, pentru că ai scris un singur egal sau ai pus punct și virgulă după if. Ai uitat parantezele condiției. Ai greșit sensul, mai mic în loc de mai mare, așa că citește condiția cu voce tare. Ai uitat acoladele și a doua instrucțiune apare mereu. Ai încercat să înlănțui comparațiile, de exemplu cinci mai mic ca x mai mic ca zece: asta se rezolvă în lecția opt.
+
+Tema. Citești temperatura corpului și afișezi „Ai febră” peste treizeci și șapte virgulă cinci. Citești un număr și afli dacă este par, dacă se împarte la trei și dacă este mai mare decât o sută. Salvezi ca Tema, linie jos, L șase.
+
+Recapitulare. Comparațiile dau adevărat sau fals. If execută blocul doar dacă e adevărat. Un egal pune, două egaluri compară. Succes!

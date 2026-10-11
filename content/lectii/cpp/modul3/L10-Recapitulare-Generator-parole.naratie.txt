@@ -1,0 +1,19 @@
+Lecția zece din Modulul trei. Recapitulare și proiectul Seiful secret.
+
+Astăzi încheiem Modulul trei. Recapitulăm funcțiile, textele, algoritmii pe numere și numerele aleatoare, apoi le folosim într-un proiect: un generator de parole, un verificator de parole și un cifru pentru mesaje secrete, toate într-un singur program cu meniu. Fișierul tău este Prenume, linie jos, Nume, linie jos, M trei, L zece.
+
+Obiectivul. Minim: generatorul de parole și cifrul lui Cezar, fiecare ca funcție, chemate din main. Complet: minim, plus verificatorul de parole și un meniu complet, cu teste assert pentru cifru.
+
+Primul pas. Recapitulare. Funcții cu parametri, funcții care întorc un rezultat, funcția bool pentru numere prime, numărarea vocalelor într-un string, suma și oglinditul cifrelor, două zaruri aleatoare și sortarea unui vector, într-o funcție.
+
+Al doilea pas. Cifrul lui Cezar. E un cifru foarte vechi: muți fiecare literă cu un număr fix de poziții în alfabet, numit cheie. Pentru o literă mare scazi A mare, adaugi cheia, iei restul împărțirii la douăzeci și șase și adaugi înapoi A mare. La fel faci cu literele mici. Caracterele care nu sunt litere rămân neschimbate. Pentru decriptare folosești aceeași funcție, dar cu cheia douăzeci și șase minus cheia.
+
+Al treilea pas. Parole aleatoare. Generezi o parolă dintr-un alfabet ales, cu rand. Apoi faci o parolă cu cerințe: cel puțin o literă mare, una mică, o cifră și un simbol. Ca să te asiguri, alegi obligatoriu câte unul din fiecare categorie și completezi restul la întâmplare. La final faci o funcție care evaluează cât de puternică este o parolă.
+
+Al patrulea pas. Testul scurt. Zece minute, fără calculator.
+
+Al cincilea pas. Proiectul. Seiful secret este un program cu meniu în care generezi parole, verifici parole, criptezi și decriptezi mesaje. Ai nevoie de funcții bine alese, cu un main scurt. Testezi cifrul cu assert: un mesaj criptat și apoi decriptat trebuie să revină la ce era.
+
+Greșeli frecvente. Cifrul strică literele mari, pentru că ai folosit doar litera a mică. După Z apar caractere ciudate, pentru că ai uitat restul la douăzeci și șase. Decriptarea nu dă mesajul inițial, pentru că ai folosit aceeași cheie. Getline sare peste mesaj, pentru că ai citit înainte un număr: folosești cin punct ignore. Parolele sunt la fel la fiecare rulare, pentru că lipsește srand. Parola nu are cifră, pentru că ai ales totul la întâmplare. Main-ul are o sută de linii, pentru că ai pus toată logica în el.
+
+Tema. Termini și testezi Seiful secret și îl încarci. Alegi și implementezi o extindere. Scrii cele mai utile cinci funcții din acest modul, cu câte un exemplu de apel. Bravo, ai terminat Modulul trei!

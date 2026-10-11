@@ -1,0 +1,23 @@
+Lecția unu din Modulul unu. Introducere în C plus plus și primul program.
+
+Astăzi scrii primul tău program și faci calculatorul să afișeze exact ce vrei tu: text, tabele și chiar desene. Fișierul tău se numește Prenume, linie jos, Nume, linie jos, L unu, punct c p p.
+
+Obiectivul. Minim: un program care afișează cel puțin patru rânduri, fiecare pe linia lui. Complet: minim, plus un tabel făcut cu tab, ghilimele în text și un desen din caractere.
+
+Primul pas. Ce este C plus plus. Este un limbaj de programare. Tu scrii instrucțiuni într-un fișier cu extensia c p p. Compilatorul le traduce pe limba calculatorului, iar apoi rulezi programul. Dacă ai greșit ceva la scris, compilatorul îți spune printr-un mesaj de eroare. Nu te speria de ele, sunt un ajutor.
+
+Al doilea pas. În Code Blocks alegi File, apoi New, apoi Empty File. Salvezi imediat fișierul cu numele tău și cu extensia c p p. Pentru a rula apeși Build and Run, adică tasta F nouă.
+
+Al treilea pas. Programul de bază. Începe cu hash include, între semnele mai mic și mai mare, iostream. Urmează using namespace std, cu punct și virgulă. Apoi int main, cu paranteze rotunde și o acoladă deschisă. Înăuntru scrii c-out, două semne mai mic, textul între ghilimele și punct și virgulă. La final scrii return zero și închizi acolada. Reține trei reguli: fiecare instrucțiune se termină cu punct și virgulă, textul stă între ghilimele drepte, iar C plus plus face diferență între litere mari și mici.
+
+Al patrulea pas. Rând nou. C-out nu trece singur pe rândul următor, așa că două afișări apar lipite. Ca să treci pe rând nou, scrii bară oblică inversă și litera n, în interiorul ghilimelelor, sau scrii end ell.
+
+Al cincilea pas. Caractere speciale. Bară oblică inversă și litera t face un spațiu mare, ca la tabel. Bară oblică inversă și ghilimele afișează ghilimele în text. Două bare oblice inverse afișează o singură bară, de exemplu într-o cale de fișier.
+
+Al șaselea pas. Desene din caractere. Aici contează fiecare spațiu. Faci o pisică, un brad, o casă sau un robot, rând cu rând. Numără spațiile și compară rândurile ca să nu iasă strâmb.
+
+Greșeli frecvente. Ai uitat punct și virgulă. Ai scris C-out cu literă mare. Ai uitat iostream sau using namespace. Ai copiat ghilimele curbe din alt loc, în loc de ghilimelele de la tastatură. Fereastra se închide imediat: rulează din Build and Run.
+
+Tema. Refaci exemplele de mână, nu prin copy-paste. Scrii un program Despre mine, de cel puțin șase rânduri, cu tab și ghilimele. Desenezi o scenă din opt, zece rânduri. Salvezi tot ca Tema, linie jos, L unu.
+
+Recapitulare. Un program are include, using namespace și main. C-out afișează, rând nou se face cu bară și n sau cu end ell. Succes la primul tău program!

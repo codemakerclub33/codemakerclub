@@ -172,6 +172,11 @@ Dupa dublare: 8 16 30 32 46 84
 
 `for (int x : v)` se citește „pentru fiecare `x` din `v`”. La fiecare pas, `x` este o **copie** a elementului curent, deci dacă îl modifici, vectorul rămâne neschimbat. Dacă vrei să modifici chiar elementele vectorului, scrii `&` după tip: `for (int &x : v)`. Atunci `x` este chiar elementul, nu o copie (aceeași idee ca la funcțiile cu referințe din Modulul 3).
 
+**Încearcă tu (8 min)**  
+- [ ] Adaugi 5 note într-un `vector` cu `push_back` și afișezi `size()`  
+- [ ] Parcurgi vectorul cu `for (int x : v)`  
+- [ ] Creezi un vector cu valori inițiale  
+
 ---
 
 ## 2. Un număr necunoscut de valori
@@ -308,6 +313,10 @@ Pozitia -1 nu exista (avem 3 elemente)
 
 Pozițiile valide sunt de la `0` până la `size() - 1`. Mai există și `v.at(i)`, care în loc să citească memoria străină **oprește programul cu o eroare clară**. Este mai sigură la început, dar verificarea manuală (`i >= 0 && i < n`) rămâne cea mai bună obișnuință.
 
+**Încearcă tu (8 min)**  
+- [ ] Citești note de la tastatură până la `0` și le pui în vector  
+- [ ] Citești un fișier de numere într-un vector  
+
 ---
 
 ## 3. Ștergere și inserare
@@ -435,6 +444,11 @@ Note ramase: 9 10 8
 
 Dacă ai fi scris un `for` cu `i++` la fiecare pas, după fiecare ștergere ai fi sărit peste un element. Soluția cu `while` avansează **doar** când nu ștergi.
 
+**Încearcă tu (8 min)**  
+- [ ] Ștergi un element cu `erase` și vezi cum se mută restul  
+- [ ] Inserezi un element la început cu `insert`  
+- [ ] Elimini din vector toate valorile egale cu 5  
+
 ---
 
 ## 4. Alte tipuri de vectori
@@ -545,6 +559,10 @@ De cate ori apare 8: 1
 - `count(…, x)` numără de câte ori apare `x`.
 
 La teme, când ți se cere să arăți că ai înțeles algoritmul, scrie-l singur cu bucle. În proiecte, folosește aceste instrumente: sunt corecte și rapide.
+
+**Încearcă tu (8 min)**  
+- [ ] Creezi un `vector<string>` cu 4 nume  
+- [ ] Sortezi un vector cu `sort` și afișezi minimul și maximul  
 
 ---
 
@@ -703,6 +721,11 @@ int main() {
 Multipli de 3 pana la 20: 3 6 9 12 15 18
 Sunt 6 numere, iar vectorul initial are tot 20 elemente.
 ```
+
+**Încearcă tu (10 min)**  
+- [ ] Scrii o funcție care primește un `vector` și întoarce suma  
+- [ ] Scrii o funcție care întoarce un vector cu numerele pare  
+- [ ] Folosești `const &` la parametrul vector  
 
 ---
 

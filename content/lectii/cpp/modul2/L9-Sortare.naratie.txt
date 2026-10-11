@@ -1,0 +1,23 @@
+Lecția nouă din Modulul doi. Sortarea vectorilor.
+
+Astăzi pui valorile în ordine, crescătoare sau descrescătoare. Înveți să interschimbi două valori, scrii două metode de sortare făcute de tine și vezi la final și comanda gata făcută din C plus plus. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L nouă.
+
+Obiectivul. Minim: un program care sortează crescător un vector de numere. Complet: minim, plus sortare descrescătoare și un clasament cu nume și notă, afișat în ordine.
+
+Primul pas. Interschimbarea. Imaginează-ți două pahare, unul cu suc de portocale și unul cu suc de mere. Ca să le schimbi conținutul ai nevoie de un al treilea pahar gol. La fel, în cod ai nevoie de o variabilă ajutătoare. Pui prima valoare în ajutătoare, a doua în prima, apoi ajutătoarea în a doua. Dacă scrii doar a egal b și apoi b egal a, ambele ajung egale. Același lucru faci între două elemente ale vectorului.
+
+Al doilea pas. Metoda bulelor. Compari vecinii și, dacă sunt în ordine greșită, îi schimbi. După o trecere, cel mai mare element ajunge la capăt, ca o bulă care iese la suprafață. Repeți trecerile până se sortează tot. Folosești două bucle: una pentru treceri și una pentru perechile de vecini. Pentru descrescător întorci semnul comparației.
+
+Al treilea pas. Metoda selecției. La fiecare pas cauți cel mai mic element din partea nesortată și îl muți în față. Poți folosi aceeași idee pentru un podium cu primele trei valori.
+
+Al patrulea pas. Nume, vectori paraleli și mediană. Poți sorta alfabetic și poți sorta după notă, dar atunci trebuie să interschimbi și vectorul numelor, în același timp. Altfel numele nu mai corespund notelor. După sortare, minimul este primul element, maximul este ultimul, duplicatele sunt vecine, iar mediana este la mijloc.
+
+Al cincilea pas. Comanda gata făcută. Cu sort, din biblioteca algorithm, sortezi un vector într-o singură linie, mult mai rapid. Dar ai învățat metodele tale ca să înțelegi ce se întâmplă în spate.
+
+Al șaselea pas. Proiectul. Clasamentul clasei, cu nume și note.
+
+Greșeli frecvente. Ambele valori devin egale, pentru că ai uitat variabila ajutătoare. Citești dincolo de vector, pentru că bucla merge până la n, nu până la n minus unu. Vectorul nu e complet sortat, pentru că ai prea puține treceri. Sortează invers, pentru că ai pus semnul greșit. Numele nu se potrivesc cu notele, pentru că ai schimbat un singur vector. Sort dă eroare, pentru că lipsește biblioteca algorithm.
+
+Tema. Sortezi opt numere și afișezi al doilea cel mai mic și al doilea cel mai mare. Sortezi cinci copii după vârstă. Sortezi zece numere descrescător și afișezi primele trei. Salvezi ca Tema, linie jos, M doi, L nouă.
+
+Recapitulare. Swap are trei pași. Bulele compară vecinii, selecția caută minimul. Succes!

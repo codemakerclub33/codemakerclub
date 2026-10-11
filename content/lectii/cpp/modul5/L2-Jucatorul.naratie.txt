@@ -1,0 +1,23 @@
+Lecția doi din Modulul cinci. Jucătorul.
+
+Azi îți creezi eroul. Eroul are un nume, viață, monede și un nivel, iar toate acestea stau într-o structură. Fișierul tău este Joc, linie jos, L patruzeci și doi, punct c p p.
+
+Obiectivul. Minim: o structură Jucator și o funcție care îi afișează starea. Complet: minim, plus bara de viață, funcțiile care îl rănesc și îl vindecă, citirea numelui și integrarea în jocul din lecția unu.
+
+Primul pas. Problema. Dacă ții numele, viața și monedele în variabile separate, ajungi să le trimiți pe toate la fiecare funcție. E încurcat.
+
+Al doilea pas. Prima structură. Faci struct Jucator, cu câmpuri pentru nume, viață, viață maximă, monede și nivel. Apoi îi dai valori implicite, ca să pornească mereu corect. Atenție la punct și virgulă după acoladă.
+
+Al treilea pas. Afișarea stării. O funcție, afișează starea, scrie numele, viața și monedele eroului. Apoi faci o bară de viață din caractere, de exemplu o paranteză pătrată cu semne egal pentru viața rămasă și puncte pentru restul. Verifici bara pentru viață plină, pe jumătate și zero.
+
+Al patrulea pas. Rănire și vindecare. Funcția raneste scade viața, iar vindeca o crește. Amândouă primesc eroul prin referință, adică cu ampersand, altfel lucrează pe o copie și nu se schimbă nimic. Viața nu trebuie să coboare sub zero și nu trebuie să treacă de viața maximă, așa că pui limitele în funcție. Mai scrii o funcție care citește numele eroului, cu getline, și una, creează jucător, care întoarce un erou nou. Și o funcție, mai trăiește, care spune dacă viața este mai mare decât zero.
+
+Al cincilea pas. Provocări opționale: doi eroi și un câștigător, alegerea clasei eroului.
+
+Al șaselea pas. Jocul lecției. Eroul intră în joc, iar starea lui se vede în meniu.
+
+Greșeli frecvente. Funcția raneste nu schimbă viața, pentru că lipsește ampersandul. Lipsește punct și virgulă după structură. Viața devine negativă sau mai mare decât maximul. Getline citește un text gol, pentru că a rămas Enter pe linie. Bara arată goală când viața este plină, pentru că ai calculat greșit proporția.
+
+Tema. Termini exercițiul A și testezi jocul cu nume lungi, cu spații și cu nume gol. Rulezi raneste și vindeca cu valori mari și verifici limitele. Scrii pe hârtie ce obiecte ar putea găsi eroul tău, cel puțin patru. Salvezi ca Joc, linie jos, L patruzeci și doi.
+
+Recapitulare. Eroul este o structură. Funcțiile care îl schimbă primesc referință și respectă limitele. Succes!

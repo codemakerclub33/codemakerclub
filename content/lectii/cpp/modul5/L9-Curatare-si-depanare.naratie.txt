@@ -1,0 +1,21 @@
+Lecția nouă din Modulul cinci. Curățare cod și depanare.
+
+Azi jocul tău devine mai curat și mai sigur. Înveți să faci codul ușor de citit, să cauți o greșeală cu afișări de control și să scrii teste simple. Jocul tău primește și o opțiune, teste interne, care verifică cincisprezece lucruri deodată. Fișierul tău este Joc, linie jos, L patruzeci și nouă, punct c p p.
+
+Obiectivul. Minim: înțelegi diferența dintre cod încâlcit și cod curat și rulezi testele interne. Complet: adaugi testele în jocul tău, găsești o greșeală ascunsă și îți îngrijești codul.
+
+Primul pas. Cod curat. Compari același program scris încâlcit și scris curat. Numerele scrise direct în cod devin constante, cu nume care spun ce sunt. Comentariile explică de ce, nu ce se vede deja. O funcție mare se împarte în funcții mici, fiecare cu un scop.
+
+Al doilea pas. Depanare. Debugging-ul înseamnă să cauți și să repari o greșeală. Vei găsi două greșeli ascunse: viața depășește maximul și bara de viață rămâne goală. Metoda este simplă: afișezi valorile variabilelor în punctele importante, vezi unde apare diferența și abia apoi repari. Mesajele de depanare le ștergi sau le oprești înainte de jocul final.
+
+Al treilea pas. Teste automate. Scrii funcția verifică, care compară ce ai primit cu ce te așteptai și afișează reușit sau eșuat. Apoi scrii un test care prinde o greșeală. Poți folosi și assert, care oprește programul când o condiție nu este adevărată. Alte teste: ieșirile din hartă sunt simetrice și o luptă simulată de două sute de ori.
+
+Al patrulea pas. Jocul lecției. Adaugi o opțiune, teste interne, în meniu.
+
+Un lucru important: testele care trec nu înseamnă că jocul nu mai are bug-uri. Dacă testezi doar ce te-ai gândit, ai nevoie și de joc real, jucat de oameni.
+
+Greșeli frecvente. Viața depășește maximul. Bara de viață apare goală. Pozițiile din rucsac sunt mutate cu unu. Testele trec, dar jocul tot greșește. Mesajele de debug apar și în jocul final.
+
+Tema. Termini exercițiul A și rulezi testele interne. Parcurgi lista de la exercițiul B și cureți cel puțin trei locuri din codul tău. Pregătești prezentarea de mâine: scrii, în trei sau patru propoziții, ce face jocul tău și ce ți-a plăcut cel mai mult. Salvezi ca Joc, linie jos, L patruzeci și nouă.
+
+Recapitulare. Cod curat, depanare cu afișări și teste. Succes!

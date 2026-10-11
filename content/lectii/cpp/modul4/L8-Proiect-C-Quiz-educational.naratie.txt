@@ -1,0 +1,21 @@
+Lecția opt din Modulul patru. Proiect C: quiz educațional.
+
+Astăzi construiești un quiz pe care colegii tăi îl pot juca: întrebări, patru variante de răspuns, scor și explicații. Întrebările stau într-un fișier, deci poți adăuga altele fără să schimbi programul. Fișierul tău este Prenume, linie jos, Nume, linie jos, M patru, L opt.
+
+Obiectivul. Minim: un quiz cu întrebări într-un vector, scor și mesaj final. Complet: minim, plus întrebări în fișier, amestecare, explicații, rezultate salvate și adăugare de întrebări noi.
+
+Primul pas. Întrebarea ca structură. O întrebare are un text, patru variante, răspunsul corect și o explicație. Afișezi o întrebare și verifici răspunsul. Apoi pui mai multe întrebări într-un vector și numeri scorul. Citești răspunsul în siguranță: doar o literă de la A la D. Dacă utilizatorul scrie două litere, programul nu trebuie să se strice.
+
+Al doilea pas. Întrebări în fișier. Stabilești un format, de exemplu câte o linie pentru fiecare parte, și citești întrebările, una după alta. Atenție la getline după ce ai citit un număr. Validezi fiecare întrebare: textul nu e gol și răspunsul corect e între A și D.
+
+Al treilea pas. Amestecare și selecție. Amesteci întrebările, ca să nu vină mereu în aceeași ordine. Amesteci și variantele de răspuns, dar atenție: răspunsul corect trebuie să călătorească odată cu varianta lui. Alegi k întrebări diferite, fără repetiții. Provocare opțională: un bonus pentru răspunsuri corecte la rând.
+
+Al patrulea pas. Feedback și rezultate. După fiecare răspuns afișezi o explicație. La final dai un calificativ, în funcție de scor. Salvezi rezultatele într-un fișier și afișezi statistici. Poți afla care întrebare e cea mai grea.
+
+Al cincilea pas. Întrebări noi. Programul îți permite să scrii întrebări noi, direct din meniu, și să le adaugi în fișier. Proiectul este Quiz C plus plus.
+
+Greșeli frecvente. Toate întrebările se încarcă deplasate, pentru că ai citit greșit formatul. Răspunsul corect e cu o poziție în plus, pentru că pozițiile încep de la zero. După amestecarea variantelor, răspunsul corect e greșit. Aceeași întrebare apare de două ori. Răspunsul cu două litere este acceptat sau strică întrebarea următoare. Primul răspuns este sărit după ce ai citit numărul de întrebări.
+
+Tema. Termini exercițiile A și E: un coleg trebuie să poată juca quiz-ul fără să-l ghidezi. Alegi un subiect care îți place și scrii cincisprezece întrebări cu explicații. Faci un program care verifică fișierul de întrebări. Salvezi ca Tema, linie jos, M patru, L opt.
+
+Recapitulare. Datele stau în fișier, programul le citește și le validează. Succes!

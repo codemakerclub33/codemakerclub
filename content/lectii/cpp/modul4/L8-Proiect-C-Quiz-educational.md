@@ -226,6 +226,11 @@ Ai ales varianta D (indicele 3).
 
 Citim un `string` și verificăm lungimea, în loc să citim un `char`: dacă ai citi un singur caracter, `ab` ar părea răspunsul `A`, iar restul (`b`) ar rămâne în buffer și ar strica întrebarea următoare.
 
+**Încearcă tu (8 min)**  
+- [ ] Definești `struct Intrebare` cu text, variante și răspuns corect  
+- [ ] Afișezi o întrebare și verifici răspunsul  
+- [ ] Citești răspunsul în siguranță (fără blocaje)  
+
 ---
 
 ## 2. Întrebările într-un fișier
@@ -382,6 +387,10 @@ Cat face 5 + 5? -> INVALIDA: raspunsul corect nu este intre 1 si 4
 ```
 
 `string(1, (char)('A' + i))` creează un text de un singur caracter (litera variantei) ca să-l putem lipi cu `+` de alt text. Perechile `(i, j)` cu `j > i` compară fiecare variantă cu toate cele de după ea, exact o dată.
+
+**Încearcă tu (8 min)**  
+- [ ] Încarci întrebările dintr-un fișier  
+- [ ] Validezi că fiecare întrebare e completă  
 
 ---
 
@@ -644,6 +653,10 @@ Scor final: 80 puncte
 
 Observă: după primul `G`, seria revine la 0 și bonusul crește din nou de la început. Cele trei răspunsuri corecte consecutive (4–6) dau `10 + 15 + 20 = 45` de puncte.
 
+**Încearcă tu (10 min)**  
+- [ ] Amesteci întrebările  
+- [ ] Alegi `k` întrebări diferite  
+
 ---
 
 ## 4. Explicații, rezultate, statistici
@@ -867,6 +880,11 @@ Cea mai grea intrebare: nr. 3
 ```
 
 Un tablou `rezultate[JUCATORI][INTREBARI]` se parcurge cu două bucle: cea din afară alege coloana (întrebarea), cea dinăuntru trece prin toți jucătorii. Pe cele două dimensiuni ți le imaginezi ca un tabel: rânduri = jucători, coloane = întrebări.
+
+**Încearcă tu (8 min)**  
+- [ ] Afișezi explicația după fiecare răspuns  
+- [ ] Afișezi calificativul final  
+- [ ] Salvezi rezultatul în fișier  
 
 ---
 

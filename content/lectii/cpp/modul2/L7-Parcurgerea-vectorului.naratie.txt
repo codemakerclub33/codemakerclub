@@ -1,0 +1,21 @@
+Lecția șapte din Modulul doi. Calcule cu vectori: sumă, medie, minim și maxim.
+
+Astăzi parcurgi un vector și afli lucruri despre el: suma, media, cel mai mic și cel mai mare element, câte elemente respectă o regulă și unde se află. Exact ce face un catalog sau o aplicație de statistici. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L șapte.
+
+Obiectivul. Minim: suma, media, minimul și maximul unui vector de note. Complet: minim, plus numărarea notelor peste medie și un raport cu numele elevului cu cea mai mare notă.
+
+Primul pas. Suma și media. Pornești de la zero și aduni fiecare element, într-un for. Media este suma împărțită la n, numărul real de elemente, cu double în fața sumei, ca să nu pierzi zecimalele.
+
+Al doilea pas. Maximul și minimul. Pornești de la primul element al vectorului, nu de la zero, și parcurgi restul. Când găsești un element mai bun, îl înlocuiești. Dacă vrei și poziția maximului, păstrezi indicele. Atenție: indicele nu este valoarea. Valoarea se află scriind vectorul cu acel indice între paranteze pătrate.
+
+Al treilea pas. Numărări cu condiție. Numeri câte elemente sunt pare, câte note sunt de promovare sau suma doar a elementelor care respectă o regulă. Un contor crește în interiorul unui if.
+
+Al patrulea pas. Două parcurgeri. Uneori ai nevoie de două parcurgeri: prima calculează media, a doua numără câte note sunt peste medie. Nu poți număra peste medie înainte să știi media. Poți afla și cele două note extreme și diferența dintre ele.
+
+Al cincilea pas. Proiecte. Histograma notelor, elevul cu cea mai mare notă, cu doi vectori paraleli, unul pentru nume și unul pentru note, legați prin același indice. Mini-proiectul este Statistica clasei.
+
+Greșeli frecvente. Suma are o valoare uriașă, pentru că nu ai pornit-o de la zero. Media apare întreagă, pentru că ai împărțit două numere întregi. Maximul este greșit la numere negative, pentru că ai pornit de la zero. Ai pus semnul mai mic în loc de mai mare. Ai împărțit media la un număr scris de mână, în loc de n. Ai afișat poziția în loc de valoare.
+
+Tema. Citești zece numere și afișezi suma, media, minimul, maximul și cât depășește maximul media. Citești opt prețuri și numeri câte sunt sub douăzeci de lei, câte între douăzeci și cincizeci și câte peste cincizeci. Salvezi ca Tema, linie jos, M doi, L șapte.
+
+Recapitulare. Suma pornește de la zero. Maximul și minimul pornesc de la primul element. Media se împarte la n. Succes!

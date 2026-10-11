@@ -277,6 +277,10 @@ Alege: 0
 La revedere!
 ```
 
+**Încearcă tu (8 min)**  
+- [ ] Faci meniul principal cu `switch`  
+- [ ] Meniul se repetă până alegi „Ieșire”  
+
 ---
 
 ## 3. Funcții pentru fiecare parte
@@ -515,6 +519,11 @@ Esti la Poarta:
 ```
 
 Expresia `(numar == camera) ? "*" : " "` înseamnă: „dacă `numar == camera`, rezultatul este `*`, altfel spațiu”.
+
+**Încearcă tu (10 min)**  
+- [ ] Desenezi o cameră ca o casetă  
+- [ ] Desenezi harta întreagă  
+- [ ] Marchezi cu `*` camera în care ești  
 
 ---
 

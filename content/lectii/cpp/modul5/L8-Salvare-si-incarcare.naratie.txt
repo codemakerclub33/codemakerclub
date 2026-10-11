@@ -1,0 +1,21 @@
+Lecția opt din Modulul cinci. Salvare și încărcare.
+
+Azi jocul tău învață să-și amintească. Poți salva jocul cu comanda salvează și îl continui mai târziu din meniu, cu eroul, rucsacul și obiectele din camere exact ca înainte. Fișierul tău este Joc, linie jos, L patruzeci și opt, punct c p p.
+
+Obiectivul. Minim: salvezi și încarci numele, viața și monedele eroului. Complet: salvezi tot, adică eroul, rucsacul, obiectele din camere și misiunile, și tratezi cazul când fișierul lipsește sau este stricat.
+
+Primul pas. Fișiere text. Reiei ce ai învățat în Modulul patru: of-stream scrie într-un fișier, if-stream citește. Scrii un fișier, îl citești înapoi și verifici ce se întâmplă dacă fișierul nu există.
+
+Al doilea pas. Salvăm eroul. Funcția salvează scrie în fișierul salvare punct t-x-t numele, viața, monedele și nivelul, în ordine. Funcția încarcă citește exact în aceeași ordine. Apoi salvezi și rucsacul: mai întâi scrii câte obiecte sunt, apoi obiectele. La citire, mai întâi citești numărul, apoi obiectele.
+
+Al treilea pas. Capcane. Prima: dacă citești un număr cu semnul mai mare și apoi un text cu getline, rămâne Enter pe linie și getline citește un text gol. Rezolvi cu c-in punct ignore sau cu fișier punct ignore. A doua: un fișier stricat nu trebuie să strice jocul. Verifici fiecare citire și, dacă ceva nu merge, afișezi un mesaj și pornești un joc nou.
+
+Al patrulea pas. Alte idei. Un marcator, de exemplu liniuță, pentru camerele fără obiect, mai multe locuri de salvare și un jurnal al aventurii, adăugat cu ios două puncte app. Sunt provocări opționale.
+
+Al cincilea pas. Jocul lecției. Salvare și continuare.
+
+Greșeli frecvente. Numele eroului apare gol după încărcare, din cauza capcanei cu getline. Datele apar amestecate, pentru că ai citit într-o altă ordine decât ai scris. Fișierul de salvare nu apare, pentru că ai uitat close sau îl cauți în alt folder. Programul se blochează dacă nu există salvare. Obiectele din camere se pierd, pentru că nu le-ai salvat.
+
+Tema. Termini exercițiul A și testezi salvarea de cel puțin trei ori, în momente diferite. Deschizi fișierul și schimbi un număr, de exemplu monedele, încarci jocul și observi ce se întâmplă. Te gândești ce ar fi dacă cineva ar scrie litere în loc de număr. Salvezi ca Joc, linie jos, L patruzeci și opt.
+
+Recapitulare. Citești în aceeași ordine în care scrii. Un fișier stricat nu strică jocul. Succes!

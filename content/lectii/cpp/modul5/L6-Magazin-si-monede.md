@@ -111,6 +111,10 @@ Vrei sa cumperi: Amuleta (20)
 Nu ai destule monede (iti trebuie 20, ai 8).
 ```
 
+**Încearcă tu (8 min)**  
+- [ ] Faci lista de produse cu prețuri  
+- [ ] Verifici dacă ai destule monede înainte să cumperi  
+
 ---
 
 ## 2. Funcția `cumpara` și meniul
@@ -322,6 +326,11 @@ Camera 3: Negustorul nu este aici. Il gasesti in Sala Mare.
 Camera 1: Bine ai venit la negustorul Pip!
 ```
 
+**Încearcă tu (10 min)**  
+- [ ] Scrii funcția `cumpara`  
+- [ ] Faci meniul magazinului  
+- [ ] Magazinul apare doar într-o cameră  
+
 ---
 
 ## 3. Vânzarea
@@ -428,6 +437,9 @@ Ai vandut: Sabie. Monede: 13
 ```
 
 Prima vânzare: poțiunea (`PRET / 2 = 4`). A doua: încearcă să vândă cheia (respinsă). A treia: vinde sabia (valoarea implicită `4`).
+
+**Încearcă tu (8 min)**  
+- [ ] Scrii `vinde`, la jumătate de preț  
 
 ---
 
@@ -551,6 +563,9 @@ Folosesti Elixir: +30. Viata: 30/30
 Scut nu se foloseste asa.
 Nu ai Elixir.
 ```
+
+**Încearcă tu (8 min)**  
+- [ ] Scutul sau amuleta te ajută automat din rucsac  
 
 ---
 

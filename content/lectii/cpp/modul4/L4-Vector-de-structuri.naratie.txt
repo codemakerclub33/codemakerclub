@@ -1,0 +1,21 @@
+Lecția patru din Modulul patru. Vector de structuri: catalogul.
+
+Astăzi combini două lucruri pe care le știi: vectorul și structura. Un vector de structuri este ca un catalog: fiecare element este un elev cu nume, vârstă și notă. Fișierul tău este Prenume, linie jos, Nume, linie jos, M patru, L patru.
+
+Obiectivul. Minim: adaugi elevi într-un vector de elevi, îi afișezi și cauți un elev după nume. Complet: minim, plus ștergere, modificare, sortare și proiectul Catalogul clasei, cu salvare în fișier.
+
+Primul pas. Adăugare și afișare. Declari un vector, între semnele mai mic și mai mare punând numele structurii. Cu push back adaugi elevi. Parcurgi catalogul cu un for obișnuit sau cu for pe elemente. Poți citi elevii de la tastatură, într-o buclă.
+
+Al doilea pas. Citire din fișier și căutare. Încarci catalogul dintr-un fișier, citind elev după elev. Cauți un elev după nume și afișezi nota lui. Dacă nu l-ai găsit, nu folosești poziția, pentru că ar fi o poziție în afara vectorului. Afli și cel mai bun elev sau toți elevii care îndeplinesc o condiție.
+
+Al treilea pas. Modificare, ștergere și filtrare. Modifici nota unui elev găsit. Ștergi un elev cu erase. Adaugi un elev doar dacă nu există deja. Filtrezi într-un vector nou elevii care respectă o regulă. Dacă vrei ca o funcție să schimbe catalogul, trebuie să-l primești cu ampersand.
+
+Al patrulea pas. Sortare. Sortezi cu sort din biblioteca algorithm, dar pentru structuri îi dai o funcție de comparare, care spune după ce câmp se ordonează. Poți sorta descrescător după notă, alfabetic după nume sau după vârstă. Pentru Top trei iei primele trei elemente după sortare.
+
+Al cincilea pas. Salvare și proiect. Salvezi lista într-un fișier, faci statistici pe catalog și construiești mini-proiectul Catalogul clasei, cu meniu.
+
+Greșeli frecvente. Ai scris numele vectorului cu punct nume. Ai folosit poziția după o căutare eșuată. Catalogul nu se modifică dintr-o funcție, pentru că ai uitat ampersandul. Sort dă erori lungi, pentru că funcția de comparare e greșită. Sortarea nu respectă ordinea dorită, pentru că ai întors semnul comparației.
+
+Tema. Termini exercițiile A, B și C. Faci o structură Produs cu nume, preț și stoc, citești produse dintr-un fișier, le afișezi sortate după preț și afișezi pe cele cu stocul zero. Salvezi ca Tema, linie jos, M patru, L patru.
+
+Recapitulare. Vectorul de structuri este un catalog. Pentru sortare dai o funcție de comparare. Succes!

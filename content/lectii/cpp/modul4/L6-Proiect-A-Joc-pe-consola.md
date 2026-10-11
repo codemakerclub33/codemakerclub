@@ -644,6 +644,11 @@ La revedere!
 
 Cum a ghicit „jucătorul” din transcriere? De fiecare dată a ales **mijlocul** intervalului rămas posibil (de exemplu, după „Prea mic” pentru 50, a încercat 75). Strategia se numește **căutare binară** și ghicește oricare număr între 1 și 100 în cel mult 7 încercări, exact câte primești la nivelul „Mediu”. Nu întâmplător: jocul este croit astfel încât să se poată câștiga mereu, dacă joci bine.
 
+**Încearcă tu (10 min)**  
+- [ ] Rulezi „Ghici numărul” cu număr fix  
+- [ ] Schimbi numărul secret într-unul aleator  
+- [ ] Adaugi limita de încercări și scorul  
+
 ---
 
 ## 2. „X și 0”
@@ -1557,6 +1562,11 @@ Multumesc ca ai jucat!
 ```
 
 Prima partidă (doi jucători) este câștigată de `X` pe rândul de sus. În a doua partidă, jucătorul `X` joacă împotriva calculatorului: calculatorul **blochează** când trebuie și **câștigă** când poate. Scorul se acumulează între partide, pentru că `Scor` trăiește în `main`, în afara funcției `joc`.
+
+**Încearcă tu (10 min)**  
+- [ ] Afișezi tabla de „X și 0”  
+- [ ] Verifici cine a câștigat  
+- [ ] Joci cu un coleg o partidă completă  
 
 ---
 

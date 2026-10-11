@@ -120,6 +120,10 @@ Samanta = ora: 6 1 5 2 3 5
 
 Primele două linii sunt **identice** (aceeași sămânță), a treia diferă la fiecare rulare. Apelăm `srand(...)` **o singură dată**, la începutul programului, nu la fiecare aruncare.
 
+**Încearcă tu (8 min)**  
+- [ ] Arunci un zar cu `rand()`  
+- [ ] Pui `srand(time(0))` ca zarul să difere la fiecare rulare  
+
 ---
 
 ## 2. Monstrul
@@ -168,6 +172,9 @@ Dupa o lovitura: Goblin: viata 8/14, atac 4, recompensa 15 monede
 ```
 
 Ordinea valorilor din acolade este ordinea câmpurilor din structură.
+
+**Încearcă tu (5 min)**  
+- [ ] Definești `struct Monstru` cu nume, viață și atac  
 
 ---
 
@@ -456,6 +463,12 @@ int main() {
 Ai invins Goblin! Primesti 15 monede.
 Monede: 25, scor: 20
 ```
+
+**Încearcă tu (12 min)**  
+- [ ] Scrii o lovitură  
+- [ ] Scrii o rundă: lovește eroul, apoi monstrul  
+- [ ] Faci lupta întreagă, până se termină  
+- [ ] Faci meniul: ataci, bei, fugi  
 
 ---
 

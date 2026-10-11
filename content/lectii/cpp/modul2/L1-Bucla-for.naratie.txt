@@ -1,0 +1,21 @@
+Lecția unu din Modulul doi. Bucla for.
+
+Astăzi înveți să-i spui calculatorului „repetă de câte ori vreau eu”, fără să scrii aceeași linie de o sută de ori. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L unu.
+
+Obiectivul. Minim: un program care afișează numerele de la unu la n, cu n citit de la tastatură. Complet: minim, plus o numărătoare inversă, un pas diferit de unu și tabla înmulțirii pentru un număr citit.
+
+Primul pas. De ce bucle. Imaginează-ți că vrei să afișezi numerele de la unu la o sută. Fără buclă ai scrie o sută de linii, dar cu buclă scrii una singură.
+
+Al doilea pas. Cum arată for. Scrii for, apoi între paranteze trei părți despărțite prin punct și virgulă. Prima parte este startul, adică de unde pornești, de exemplu int i egal unu. A doua parte este condiția: bucla merge cât timp ea este adevărată, de exemplu i mai mic sau egal cu zece. A treia parte este pasul: ce se întâmplă după fiecare rotire, de exemplu i plus plus. Startul se execută o singură dată, condiția se verifică înainte de fiecare rotire, iar pasul se face după fiecare rotire. Poți lăsa chiar utilizatorul să aleagă de câte ori se repetă, citind n cu c-in.
+
+Al treilea pas. Variații. Pentru numărătoare inversă pornești de la n și scazi cu unu. Pentru din doi în doi scrii i plus egal doi. Poți afișa numerele dintre două numere citite. Ține minte: pornești de la zero cu semnul mai mic sau de la unu cu mai mic sau egal, și bucla se repetă de același număr de ori.
+
+Al patrulea pas. Contorul poate fi și un char, ca să afișezi literele alfabetului. Poți pune în buclă și un if, ca în jocul Fizz Buzz.
+
+Al cincilea pas. Proiecte mici. Tabla înmulțirii, o linie de steluțe, o rachetă cu numărătoare inversă și raportul unui an de economii.
+
+Greșeli frecvente. Bucla nu se oprește niciodată, pentru că pasul nu duce spre oprire. Bucla nu se execută deloc, pentru că de la început condiția este falsă. Se repetă cu o dată mai mult sau mai puțin: testează cu n egal unu și n egal doi. Ai pus punct și virgulă după paranteza lui for și corpul rulează o singură dată. Ai pus virgule în loc de punct și virgulă între cele trei părți.
+
+Tema. Citești n și afișezi primele n numere pare. Afișezi tabla înmulțirii cu nouă, de la nouă ori zece în jos. Salvezi ca Tema, linie jos, M doi, L unu.
+
+Recapitulare. For are start, condiție și pas. Verifică mereu că pasul duce spre oprire. Succes!

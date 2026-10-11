@@ -1,0 +1,21 @@
+Lecția nouă din Modulul unu. Instrucțiunea switch.
+
+Astăzi înveți instrucțiunea potrivită pentru meniuri: alegi o opțiune numerotată, iar programul face exact acțiunea ei. Fișierul tău este Prenume, linie jos, Nume, linie jos, L nouă.
+
+Obiectivul. Minim: un meniu cu cel puțin trei opțiuni și default. Complet: minim, plus un meniu care calculează ceva, de exemplu un preț sau o operație, și testarea unei opțiuni invalide.
+
+Primul pas. Structura. Scrii switch, apoi între paranteze valoarea de verificat. În interior, pentru fiecare opțiune scrii case, valoarea și două puncte, apoi acțiunea. La final de fiecare case pui break. La sfârșit scrii default, care prinde orice altă valoare. Cu el faci meniul unui restaurant sau zilele săptămânii.
+
+Al doilea pas. Break. Fără break, programul nu se oprește la opțiunea ta, ci cade în următoarea și se afișează mai multe mesaje. Uneori folosești asta intenționat: dacă pui mai multe case-uri unul sub altul, fără nimic între ele, formezi un grup, ca un „sau”. Așa afli câte zile are o lună.
+
+Al treilea pas. Switch cu litere. Funcționează și cu char, între apostrofuri. Poți accepta litera mare și litera mică împreună. Un calculator poate citi operatorul ca pe o literă.
+
+Al patrulea pas. Limite. Switch merge cu int și char, nu cu string și nu cu double. Compară doar egalitatea, nu intervale. Pentru intervale folosești if și else if. Ai și un truc: împărțirea la zece transformă un interval într-o singură valoare.
+
+Al cincilea pas. Proiecte mici. Cafeneaua cu preț, aventura în care îți alegi drumul, meniul jocului cu două niveluri și un convertor de unități.
+
+Greșeli frecvente. Ai uitat break și apar mai multe mesaje. Ai pus punct și virgulă în loc de două puncte după case. Ai pus o condiție după case, dar case primește doar o valoare fixă. Ai încercat switch cu un text. Ai scris aceeași valoare de două ori. Ai uitat apostrofurile la o literă. Ai uitat default. Ai declarat o variabilă într-un case fără acolade: pune acolade în jurul case-ului.
+
+Tema. Faci un meniu de pizza cu patru tipuri și prețuri. Citești o cifră și o afișezi cu litere. Citești o notă și afișezi calificativul, cu grupare de cazuri. Salvezi ca Tema, linie jos, L nouă.
+
+Recapitulare. Switch alege după o valoare fixă. Fiecare case se termină cu break. Default prinde restul. Succes!

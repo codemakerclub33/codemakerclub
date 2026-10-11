@@ -1,0 +1,23 @@
+Lecția patru din Modulul cinci. Obiecte și rucsac.
+
+Azi eroul tău începe să strângă comori. Pui obiecte în camere, iar eroul le poate lua în rucsac, le poate vedea și le poate folosi. Fișierul tău este Joc, linie jos, L patruzeci și patru, punct c p p.
+
+Obiectivul. Minim: un rucsac, adică un vector de texte, în care adaugi și din care afișezi obiecte. Complet: obiectele din camere, comenzile ia, inventar și folosește, și funcția poziție.
+
+Primul pas. Rucsacul și obiectele. Rucsacul este un vector de string-uri. Obiectele din camere stau într-un tablou, câte un obiect pentru fiecare cameră, sau un text gol, dacă nu e nimic. Poți pune, de exemplu, o poțiune într-o cameră, o sabie în alta și cheia în a treia.
+
+Al doilea pas. Căutarea în rucsac. Funcția poziție spune pe ce loc se află un obiect în rucsac sau minus unu, dacă nu este acolo. Ai învățat deja căutarea liniară.
+
+Al treilea pas. Comenzile ia și inventar. Comanda ia mută obiectul din cameră în rucsac, iar camera rămâne goală. Atenție: dacă nu golești camera, obiectul poate fi luat la nesfârșit. Comanda inventar afișează ce ai în rucsac, sau spune că rucsacul e gol.
+
+Al patrulea pas. Comanda folosește. Poțiunea se consumă: cauți obiectul și îl ștergi cu erase, iar eroul primește viață înapoi. Obiectul îl scrie jucătorul, iar tu verifici dacă îl are. Unele obiecte te ajută singure. Dacă ștergi greșit un element, verifică poziția.
+
+Al cincilea pas. Provocări opționale. Un rucsac cu loc limitat, inventarul în ordine alfabetică și un contor care spune câte poțiuni ai.
+
+Al șaselea pas. Jocul lecției. Găsești și folosești obiecte.
+
+Greșeli frecvente. Obiectul rămâne pe jos după ce l-ai luat. Programul se oprește la erase, pentru că poziția nu există. Se șterge alt obiect decât cel dorit. Erase primește începutul vectorului plus poziția elementului. Poți folosi o poțiune de câte ori vrei, pentru că nu o ștergi din rucsac.
+
+Tema. Termini exercițiul A și joci de câteva ori, încercând toate comenzile, inclusiv cele greșite. Scrii pe hârtie monstrul jocului tău: nume, viață, cât de tare lovește și ce recompensă dă. Adaugi încă un tip de obiect. Salvezi ca Joc, linie jos, L patruzeci și patru.
+
+Recapitulare. Rucsacul este un vector. Ia mută obiectul, folosește îl consumă. Succes!

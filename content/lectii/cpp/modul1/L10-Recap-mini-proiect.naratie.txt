@@ -1,0 +1,21 @@
+Lecția zece din Modulul unu. Recapitulare și mini-proiect.
+
+Astăzi aduni tot ce ai învățat în Modulul unu într-un singur program: un quiz sau un calculator cu meniu. La final primești insigna Junior Coder. Fișierul tău este Prenume, linie jos, Nume, linie jos, L zece.
+
+Obiectivul. Minim: proiectul ales funcționează și folosește c-in, c-out și if sau switch. Complet: minim, plus un antet cu comentarii, mesaje clare, un else sau un default pentru date greșite, test cu cel puțin două seturi de date și o prezentare.
+
+Primul pas. Recapitulare. Reiei pe scurt cele nouă lecții, în nouă programe: afișarea și caracterele speciale, antetul și comentariile, variabilele int și const, c-in cu câtul și restul, tipurile de date, if, else if, operatorii logici și switch.
+
+Al doilea pas. Depanare. Primești un program care are șase greșeli, de scriere și de logică. Le cauți singur, înainte să te uiți la soluție. Așa înveți să citești mesajele compilatorului.
+
+Al treilea pas. Alegi proiectul. Varianta A este un quiz: pune întrebări, numără punctele și spune rezultatul. Varianta B este un calculator cu meniu: oferă o listă de operații și calculează. Ai modele pentru ambele: un quiz cu trei întrebări, un quiz cu mesaj final după scor, un calculator cu switch și un calculator protejat la împărțirea cu zero.
+
+Înainte de demo, verifici lista: ai un antet și cel puțin trei comentarii utile, ai mesaje clare înainte de fiecare citire, folosești if sau switch, ai un else sau default pentru date greșite, programul rulează fără erori cu două seturi de date, indentarea este corectă și poți explica programul în treizeci de secunde.
+
+Al patrulea pas. Prezentarea. Spui într-o propoziție ce face programul, îl rulezi cu un set de date, arăți o secvență din cod și spui ce lecție ilustrează, apoi răspunzi la o întrebare.
+
+Al cincilea pas. Mini-testul. Fără să rulezi nimic, scrii pe foaie ce afișează fiecare secvență, apoi verifici răspunsurile.
+
+Greșeli frecvente. Scorul rămâne zero, pentru că punerea lui în plus este în afara if-ului sau compari cu un singur egal. Răspunsul din mai multe cuvinte nu este recunoscut, pentru că c-in citește un singur cuvânt. Rezultat greșit la împărțire, pentru că ai folosit int în loc de double. Programul se oprește la împărțirea cu zero, deci verifică împărțitorul. Litera mare nu este acceptată, deși răspunsul e corect.
+
+Tema. Îmbunătățești proiectul cu o singură idee mică. Scrii pe foaie trei lucruri învățate în modulul unu și unul pe care vrei să-l înțelegi mai bine. Bravo, ai terminat Modulul unu!

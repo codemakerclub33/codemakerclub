@@ -1,0 +1,21 @@
+Lecția trei din Modulul doi. Bucla while.
+
+Astăzi înveți să repeți o acțiune cât timp o condiție este adevărată, chiar dacă nu știi dinainte de câte ori. Citești numere până se introduce zero, ghicești un număr sau prelucrezi cifrele unui număr. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L trei.
+
+Obiectivul. Minim: un program care citește numere până se introduce zero și afișează suma lor. Complet: minim, plus validarea unei note, suma cifrelor unui număr și o buclă oprită cu break.
+
+Primul pas. Structura. Scrii while și între paranteze condiția. Corpul se repetă cât timp condiția este adevărată. Dacă este falsă de la început, nu se execută deloc. Tu trebuie să te asiguri că ceva din corp face condiția falsă la un moment dat, altfel programul nu se mai oprește.
+
+Al doilea pas. Citire până la o valoare de oprire. Tiparul este: citești primul număr, apoi, cât timp numărul nu este zero, îl prelucrezi și citești următorul. Așa zero-ul de oprire nu intră în sumă. Aceeași idee te ajută la validare: repeți cererea cât timp valoarea introdusă este greșită.
+
+Al treilea pas. Cifrele unui număr. Restul împărțirii la zece este ultima cifră, iar împărțirea la zece o elimină. Faci asta cât timp numărul este mai mare ca zero. Așa afli suma cifrelor, câte cifre are un număr și oglinditul lui. Lucrează pe o copie, ca să nu pierzi numărul original.
+
+Al patrulea pas. Break și continue. Break oprește bucla pe loc. Continue sare peste restul corpului și trece la următoarea rotire. Un tipar des întâlnit este while cu true, adică o buclă fără sfârșit, oprită din interior cu break.
+
+Al cincilea pas. Probleme și proiecte. Provocări opționale: cel mai mare divizor comun cu algoritmul lui Euclid, un număr în binar și conjectura trei n plus unu. Proiecte: ghicește numărul cu mai multe încercări și calculatorul care nu se oprește singur.
+
+Greșeli frecvente. Programul îngheață, pentru că nimic din corp nu schimbă condiția. Ai scris un singur egal în condiție, în loc de două. Ai pus punct și virgulă după paranteză. Ultimul număr, zero, intră în sumă, pentru că ai adunat înainte de verificare. Ai împărțit chiar numărul original, nu o copie.
+
+Tema. Citești numere până la zero și afișezi media, cu grijă la cazul în care nu s-a citit niciun număr. Numeri câte cifre de zero are un număr. Afișezi puterile lui doi mai mici decât un număr citit. Salvezi ca Tema, linie jos, M doi, L trei.
+
+Recapitulare. While repetă cât timp condiția este adevărată. Citești, verifici, prelucrezi, citești din nou. Succes!

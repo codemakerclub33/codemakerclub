@@ -1,0 +1,23 @@
+Lecția șase din Modulul doi. Vectori: mai multe valori sub un singur nume.
+
+Astăzi înveți să păstrezi mai multe valori de același tip într-o singură cutie cu sertare, numită vector. Îl citești, îl afișezi și îl modifici cu ajutorul buclelor for. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L șase.
+
+Obiectivul. Minim: un vector de cinci numere, citit și afișat. Complet: minim, plus modificarea elementelor și afișarea lor în ordine inversă, cu indicii verificați.
+
+Primul pas. De ce vectori. Dacă ai douăzeci de note, nu vrei douăzeci de variabile cu nume diferite. Un vector are un singur nume și mai multe poziții. Îl declari scriind tipul, numele și, între paranteze pătrate, câte locuri are. Poți să-i dai valori chiar de la început, între acolade. Mărimea o poți ține într-o constantă.
+
+Al doilea pas. Indicii. Fiecare loc are un număr, numit indice. Atenție: indicii încep de la zero. Primul element este la poziția zero, iar ultimul este la poziția n minus unu. Parcurgerea standard este un for de la zero, cât timp i este mai mic decât n.
+
+Al treilea pas. Citire și afișare. Citești cu c-in într-un for, afișezi cu c-out într-un for. Poți afișa în ordine inversă, numerotat, de exemplu Elevul unu, Elevul doi, sau doar elementele de pe poziții pare.
+
+Al patrulea pas. Modificare. Un element se folosește ca orice variabilă: îi dai o valoare nouă sau îl mărești. Poți mări toate elementele într-o buclă. Vectorii pot ține și double, char și string.
+
+Al cincilea pas. Capacitate și număr real. Dacă nu știi câte elemente vor fi, declari un vector mare, de exemplu o sută de locuri, și ții minte într-o variabilă câte folosești. Verifică mereu indicii: de la zero până la mai puțin de n. Dacă ieși din vector, citești gunoaie sau programul se blochează.
+
+Al șaselea pas. Proiecte. Ziua săptămânii după număr, inversarea vectorului pe loc și mini-proiectul Notele mele.
+
+Greșeli frecvente. Apar valori ciudate, pentru că ai afișat elemente fără valoare. Ultimul element lipsește, pentru că ai scris mai mic decât n minus unu. Ai folosit indicele n, care e în afara vectorului. Ai început de la unu și prima notă lipsește. Ai încercat să copiezi un vector cu egal: se copiază element cu element, într-un for.
+
+Tema. Citești zece numere și le afișezi în trei feluri. Faci un vector cu zilele fiecărei luni și afișezi „Luna trei are treizeci și una de zile”. Aplici o reducere de zece la sută la cinci prețuri. Salvezi ca Tema, linie jos, M doi, L șase.
+
+Recapitulare. Un vector are indici de la zero la n minus unu. Verifică mereu indicii. Succes!

@@ -1,0 +1,23 @@
+Lecția trei din Modulul trei. Funcții care returnează valori.
+
+Până acum funcțiile tale afișau ceva. Astăzi înveți funcții care calculează un răspuns și îl trimit înapoi, cu return, ca să-l folosești mai departe: într-o variabilă, într-o condiție sau în alt calcul. Fișierul tău este Prenume, linie jos, Nume, linie jos, M trei, L trei.
+
+Obiectivul. Minim: funcțiile maxim cu doi parametri și este par. Complet: minim, plus factorial, o funcție pe un vector și un calculator cu meniu, construit din funcții.
+
+Primul pas. Tipul funcției. În locul lui void scrii tipul răspunsului: int pentru un număr întreg, double pentru zecimale, bool pentru da sau nu, string pentru text, long long pentru numere foarte mari. Cu return trimiți valoarea la locul apelului și, în același timp, oprești funcția. Orice drum prin funcție trebuie să se termine cu return.
+
+Al doilea pas. Folosirea valorii. Un apel de funcție se comportă ca o valoare. Îl poți pune într-o variabilă, într-un calcul, într-un if sau în c-out. Dacă îl scrii singur, fără să faci ceva cu rezultat, valoarea se pierde.
+
+Al treilea pas. Maxim și minim. Faci maximul a două numere, apoi maximul a trei numere, folosind funcția pentru două. Funcțiile se ajută între ele, ca niște cărămizi.
+
+Al patrulea pas. Funcții da sau nu. O funcție bool, de exemplu este par, spune adevărat sau fals. Numele care încep cu este sau are fac codul să se citească ca o propoziție. Poți scrie și o funcție care spune dacă o valoare există într-un vector.
+
+Al cincilea pas. Factorial și putere. Factorialul crește foarte repede, așa că folosești long long. Faci funcții pe vectori: suma, media și maximul. Poți returna și o poziție, unde minus unu înseamnă negăsit.
+
+Al șaselea pas. Proiecte. Calificativul unei note, ca text, ipotenuza unui triunghi, mini-teste pentru funcțiile tale și Calculatorul cu funcții.
+
+Greșeli frecvente. Pe unele drumuri nu ai return, iar compilatorul se plânge că ai ajuns la sfârșit fără valoare. Ai scris return cu valoare într-o funcție void. Rezultat greșit la factorial de cincisprezece, pentru că ai folosit int. Ai chemat funcția și nu ai folosit valoarea. Bool se afișează ca unu sau zero: folosește un if și afișează un text. Media apare întreagă, pentru că ai împărțit două numere întregi.
+
+Tema. Scrii funcții pentru maximul, minimul și media unui vector și faci un raport pentru șapte temperaturi. Scrii funcția este palindrom și afișezi palindroamele între o sută și trei sute. Salvezi ca Tema, linie jos, M trei, L trei.
+
+Recapitulare. Return trimite valoarea înapoi și oprește funcția. Tipul din față spune ce fel de valoare se întoarce. Succes!

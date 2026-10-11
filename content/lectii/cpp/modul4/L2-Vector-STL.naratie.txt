@@ -1,0 +1,23 @@
+Lecția doi din Modulul patru. Vector din S-T-L: lista care crește singură.
+
+În Modulul doi ai lucrat cu vectori la care alegeai dimensiunea dinainte. Dacă primeai mai multe date, nu mai aveai loc. Astăzi cunoști varianta modernă, din biblioteca standard: vector. Este o listă care crește singură când adaugi elemente, își cunoaște lungimea și se dă ușor funcțiilor. Fișierul tău este Prenume, linie jos, Nume, linie jos, M patru, L doi.
+
+Obiectivul. Minim: push back, size și parcurgerea unui vector cu for. Complet: minim, plus funcții care primesc vectorul prin referință și proiectul Lista de note, cu meniu și salvare în fișier.
+
+Primul pas. Primul vector. Scrii include vector, apoi vector, între semnele mai mic și mai mare tipul, apoi numele. Fără tip primești o eroare. Cu push back adaugi la sfârșit, iar cu size afli câte elemente are. Poți să-i dai valori de la început sau să-l parcurgi cu un for obișnuit sau cu for pe elemente.
+
+Al doilea pas. Un număr necunoscut de valori. Citești note până la zero și le pui în vector, fără să știi dinainte câte sunt. Citești la fel un fișier întreg într-un vector. Atenție: pozițiile valide sunt de la zero până la size minus unu. În afara lor, programul dă valori ciudate.
+
+Al treilea pas. Ștergere și inserare. Pop back șterge ultimul element. Front și back dau primul și ultimul. Clear golește vectorul. Erase șterge un element de pe o poziție, iar insert inserează. Dacă ștergi într-o buclă, atenție să nu sari peste elemente.
+
+Al patrulea pas. Alte tipuri. Poți avea vector de string sau de double. Cu biblioteca algorithm sortezi, inversezi și găsești minimul și maximul.
+
+Al cincilea pas. Vectorul în funcții. Dacă funcția doar citește vectorul, îl primești cu const și ampersand, ca să nu faci o copie. Dacă îl modifici, folosești ampersand fără const. O funcție poate și să întoarcă un vector, de exemplu cu numerele filtrate.
+
+Al șaselea pas. Salvarea. Salvezi vectorul într-un fișier și îl încarci înapoi. Tiparul este: încarci la pornire, salvezi la ieșire. Așa programul își amintește datele. Proiectul este Lista de note.
+
+Greșeli frecvente. Lipsește biblioteca vector. Ai scris vector fără tip. Ai ieșit din vector. Ai folosit primul element pe un vector gol: verifică cu empty. Funcția modifică vectorul, dar în main nu se vede, pentru că lipsește ampersandul.
+
+Tema. Citești n numere și afișezi suma, media, minimul, maximul și câte numere sunt peste medie. Citești numere până la zero și le afișezi invers și sortate. Salvezi ca Tema, linie jos, M patru, L doi.
+
+Recapitulare. Vectorul crește singur. Pozițiile merg de la zero la size minus unu. Succes!
