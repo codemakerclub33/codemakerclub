@@ -45,7 +45,7 @@ sau, mai greu: **„Fă un târnăcop și construiește 8 blocuri.”**
 2. Variabila `puse` *(câte blocuri ai pus)*; pe steag `setează puse la 0`  
 3. În scriptul de pus *(L3)*, după ce apare blocul: `schimbă puse cu 1`
 
-**Verifici:** misiunea se vede pe ecran, iar `puse` crește cu 1 la fiecare bloc pus.
+- [ ] **Verifici:** misiunea se vede pe ecran, iar `puse` crește cu 1 la fiecare bloc pus.
 
 ### 2) Condiția de victorie *(Minim · 30 minute)*
 La Scenă *(sau la Erou)*, `repetă la nesfârșit`:
@@ -56,10 +56,10 @@ La Scenă *(sau la Erou)*, `repetă la nesfârșit`:
 Un sprite `Final`, ascuns la steag, cu costumul **Ai câștigat!**: `când primesc win` → `arată` · `treci în față` · `oprește tot` *(după o secundă)*.
 
 **Verifici (de fiecare dată):**  
-- La steag: `puse = 0` și nu apare „Ai câștigat!”.  
-- Pui 7 blocuri: nimic încă.  
-- Pui al 8-lea: apare „Ai câștigat!” și jocul se oprește.  
-- Poți pierde în continuare *(HP din L6)*.
+- [ ] La steag: `puse = 0` și nu apare „Ai câștigat!”.  
+- [ ] Pui 7 blocuri: nimic încă.  
+- [ ] Pui al 8-lea: apare „Ai câștigat!” și jocul se oprește.  
+- [ ] Poți pierde în continuare *(HP din L6)*.
 
 ### 3) Complet *(alege cel puțin una)*
 Condiția folosește regula altui pas:

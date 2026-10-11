@@ -44,7 +44,7 @@ Azi adaugi un al treilea tip, **pământ**, și o variabilă `tip_activ` *(1 = l
 3. La generator *(L1)*: `treci la costumul (număr aleatoriu între 1 și 3)`  
 4. La spargere *(L2)*: adaugi `dacă <costum [număr] = 3>` → `schimbă pamant cu 1`
 
-**Verifici:** spargi mai multe blocuri și toate cele trei numere cresc, după culoare.
+- [ ] **Verifici:** spargi mai multe blocuri și toate cele trei numere cresc, după culoare.
 
 ### 3) Tipul activ *(Minim, partea 2 · 15 minute)*
 1. Variabila `tip_activ`; pe steag: `setează tip_activ la 1`  
@@ -56,7 +56,7 @@ Azi adaugi un al treilea tip, **pământ**, și o variabilă `tip_activ` *(1 = l
    - altfel `spune Nu ai destule!` timp de `1` secundă  
 4. La `Bloc`, în `când primesc pune`: `treci la costumul tip_activ` *(în loc de `1`)* și ștergi `schimbă lemn cu -1` de acolo *(scăderea e acum la Erou)*
 
-**Verifici:** spargi 3 blocuri, pui 2, rămâne 1 pe ecran. Schimbi tipul cu tastele 1/2/3 și pui blocuri de altă culoare. Cu 0 dintr-un tip, nu pui nimic.
+- [ ] **Verifici:** spargi 3 blocuri, pui 2, rămâne 1 pe ecran. Schimbi tipul cu tastele 1/2/3 și pui blocuri de altă culoare. Cu 0 dintr-un tip, nu pui nimic.
 
 ### 4) Complet *(alege cel puțin una)*
 - [ ] **Indicator:** un sprite mic `Activ` cu 3 costume ale tipurilor: `când primesc …` sau într-un `repetă la nesfârșit`: `treci la costumul tip_activ`  

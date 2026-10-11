@@ -48,7 +48,7 @@ Azi pornești de la jocul din **L3** *(„Evită patrula”)*. În el, „du-te 
 2. **Fă un bloc** nou: `reset erou`  
    Sub `definește reset erou` pui: blocul `du-te la start` *(îl găsești în paleta roz)* și `setează viață la 3`
 
-**Verifici:** în paleta roz sunt două blocuri, iar „definește” are blocurile de mai sus sub el.
+- [ ] **Verifici:** în paleta roz sunt două blocuri, iar „definește” are blocurile de mai sus sub el.
 
 ### 4) Folosești blocurile *(Minim, partea 2 · 10 minute)*
 1. Pe steag, la Erou: ștergi `du-te la …` și `setează viață …` și pui un singur bloc: `reset erou`  
@@ -56,7 +56,7 @@ Azi pornești de la jocul din **L3** *(„Evită patrula”)*. În el, „du-te 
 
 Blocul `du-te la start` e acum folosit în **două** locuri *(direct în lovitură și prin `reset erou`)*.
 
-**Verifici:** apeși steagul — jocul pornește ca înainte. Te lovește inamicul — pierzi o viață și te întorci la start. **Jocul merge la fel**, doar scriptul e mai scurt.
+- [ ] **Verifici:** apeși steagul — jocul pornește ca înainte. Te lovește inamicul — pierzi o viață și te întorci la start. **Jocul merge la fel**, doar scriptul e mai scurt.
 
 ### 5) Complet *(alege una)*
 **A — Valoare primită (parametru):**  
@@ -68,7 +68,8 @@ Blocul `du-te la start` e acum folosit în **două** locuri *(direct în lovitur
 1. Faci blocul `ieși din podea` cu `repetă până când <nu <atinge Teren?>>` → `schimbă y cu 1` înăuntru  
 2. La „Fă un bloc” bifezi **Rulează fără reîmprospătarea ecranului**  
 3. Folosești blocul în locul buclei din L1  
-**Verifici:** eroul nu mai tremură vizibil când aterizează, pentru că bucla se termină înainte să se deseneze ecranul.
+
+- [ ] **Verifici:** eroul nu mai tremură vizibil când aterizează, pentru că bucla se termină înainte să se deseneze ecranul.
 
 
 ---

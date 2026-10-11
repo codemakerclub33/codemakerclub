@@ -53,12 +53,12 @@ Trei mesaje, trimise cu `trimite … către toți`:
 6. Sub `când primesc start_joc`, la fiecare dintre ele: `arată` *(unde e cazul)* și scripturile de joc *(patrulare, click, mers)*  
 7. Primul bloc sub fiecare `când primesc start_joc`: `oprește [celelalte scripturi din acest sprite]`
 
-**Verifici:** apeși steagul — se vede doar meniul. Apeși Start — apare lumea cu eroul și blocurile.
+- [ ] **Verifici:** apeși steagul — se vede doar meniul. Apeși Start — apare lumea cu eroul și blocurile.
 
 ### 3) Resetul complet *(Minim, partea 2 · 15 minute)*
 Sub `când primesc start_joc` la Erou, înainte de joc: `setează lemn la 0` · `piatra` · `pamant` · `tarnacop` · `sabie` *(dacă ai făcut-o la L7)* · `puse` · `setează vieti la 3` · `setează raza la 80` · `setează tip_activ la 1` · `du-te la x: 0 y: -160`.
 
-**Verifici:** joci, ajungi la meniu, apeși Start din nou — totul e curat: numerele la 0, lumea refăcută.
+- [ ] **Verifici:** joci, ajungi la meniu, apeși Start din nou — totul e curat: numerele la 0, lumea refăcută.
 
 ### 4) Instrucțiunile *(Minim, partea 3 · 15 minute)*
 Pe `Meniu`, un al doilea costum sau text, maxim **5–6 rânduri**:
@@ -68,7 +68,7 @@ Pe `Meniu`, un al doilea costum sau text, maxim **5–6 rânduri**:
 - 1 / 2 / 3 = tipul  
 - Click pe Craft = fă un târnăcop
 
-**Verifici:** un coleg care n-a mai văzut jocul găsește singur cum se minează.
+- [ ] **Verifici:** un coleg care n-a mai văzut jocul găsește singur cum se minează.
 
 ### 5) Întoarcerea la meniu *(Minim · 10 minute)*
 1. Când `win` sau `lose`, după 3 secunde: `trimite revino_meniu`  

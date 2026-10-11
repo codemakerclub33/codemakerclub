@@ -45,14 +45,14 @@ La `Bloc`, în generator *(L1)*, înlocuiești `treci la costumul (număr aleato
 - `dacă <cx < 0>` **atunci** *(Pădure)*: `dacă <(număr aleatoriu între 1 și 2) = 1>` → `treci la costumul 1` *(lemn)*, `altfel` `treci la costumul 3` *(pământ)*  
 - `altfel` *(Deșert)*: la fel, dar `treci la costumul 2` *(piatră)* sau `3` *(pământ)*
 
-**Verifici:** pe ecran, stânga are blocuri maro și verzi *(lemn și pământ)*, dreapta gri și verzi *(piatră și pământ)*.
+- [ ] **Verifici:** pe ecran, stânga are blocuri maro și verzi *(lemn și pământ)*, dreapta gri și verzi *(piatră și pământ)*.
 
 ### 3) Fundalul și trecerea *(Minim, partea 2 · 15 minute)*
 1. Două fundaluri: `Pădure` *(verde)* și `Deșert` *(galben)*  
 2. La Scenă, `repetă la nesfârșit`: `dacă <(x poziția lui [Erou]) < 0>` → `treci la fundalul Pădure`, `altfel` `treci la fundalul Deșert`  
 3. Inventarul nu se șterge la trecere — resetezi numerele **doar la steag**
 
-**Verifici:** mergi de la stânga la dreapta pe un rând liber: fundalul se schimbă când treci de mijloc. Numerele din inventar rămân. Spargi tipuri diferite în cele două zone.
+- [ ] **Verifici:** mergi de la stânga la dreapta pe un rând liber: fundalul se schimbă când treci de mijloc. Numerele din inventar rămân. Spargi tipuri diferite în cele două zone.
 
 ### 4) Complet *(alege cel puțin una)*
 - [ ] **Mesaj la intrare:** variabila `zona` *(1 = Pădure, 2 = Deșert)*. În scriptul Scenei: dacă zona nouă ≠ `zona`, schimbi `zona` și Erou `spune Ai intrat în Deșert!` timp de `2` secunde *(prin `trimite zona_noua`)*  

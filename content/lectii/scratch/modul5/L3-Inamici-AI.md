@@ -43,7 +43,7 @@ Inamicul are o variabilă `dir`: **1** înseamnă „merge spre dreapta”, **-1
 4. În `repetă la nesfârșit`: mersul stânga/dreapta, cu `schimbă x cu 4` / `-4`  
 5. Săritura simplă *(o rețetă fără fizică)*: `dacă <tasta spațiu apăsată?>` → `repetă 10` { `schimbă y cu 6` }, apoi `repetă 10` { `schimbă y cu -6` }
 
-**Verifici:** eroul merge și sare cam 60 de pași înălțime, apoi revine exact unde era.
+- [ ] **Verifici:** eroul merge și sare cam 60 de pași înălțime, apoi revine exact unde era.
 
 ### 3) Inamicul care patrulează *(Minim, partea 2 · 15 minute)*
 Sprite `Inamic`, variabila `dir` **numai pentru acest sprite**:
@@ -53,7 +53,7 @@ Sprite `Inamic`, variabila `dir` **numai pentru acest sprite**:
    - `dacă <x poziția > 100>` **atunci** `setează dir la -1`  
    - `dacă <x poziția < -100>` **atunci** `setează dir la 1`
 
-**Verifici:** inamicul merge între **-100 și 100** și se întoarce de fiecare dată. Dacă iese de pe ecran, vezi „Greșeli frecvente”.
+- [ ] **Verifici:** inamicul merge între **-100 și 100** și se întoarce de fiecare dată. Dacă iese de pe ecran, vezi „Greșeli frecvente”.
 
 ### 4) Lovitura *(Minim, partea 3 · 10 minute)*
 La **Erou**, în același `repetă la nesfârșit`:
@@ -63,7 +63,7 @@ La **Erou**, în același `repetă la nesfârșit`:
   3. `spune Au!` timp de `1` secundă *(asta e și „pauză între lovituri”: eroul stă o secundă și nu mai e lovit imediat)*  
   4. `dacă viață = 0` → `spune Game over` și `oprește tot`
 
-**Verifici:** te lovești o dată — pierzi **o** viață, nu trei deodată. Poți trece sărind peste inamic: apeși spațiu când e aproape și aterizezi de cealaltă parte.
+- [ ] **Verifici:** te lovești o dată — pierzi **o** viață, nu trei deodată. Poți trece sărind peste inamic: apeși spațiu când e aproape și aterizezi de cealaltă parte.
 
 ### 5) Complet *(alege cel puțin una)*
 - [ ] **Al doilea inamic:** duplici sprite-ul `Inamic` *(click dreapta)*, schimbi limitele și poziția de start  

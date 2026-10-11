@@ -49,14 +49,14 @@ Săritura e deci o **frână care devine cădere**, nu o teleportare.
 4. Variabile *(pentru toate sprite-urile)*: `viteza_y` și `pe_sol`  
 5. Pe **steag**, la Erou: `du-te la x: -200 y: -100` · `setează viteza_y la 0` · `setează pe_sol la 0`  
 
-**Verifici:** dacă muți manual eroul pe ecran, el nu intră în Teren la start.
+- [ ] **Verifici:** dacă muți manual eroul pe ecran, el nu intră în Teren la start.
 
 ### 3) Gravitația *(Minim, partea 1 · 10 minute)*
 Sub `la apăsarea steagului` ai deja pasul 2.4. Adaugi un `repetă la nesfârșit` și, înăuntru, **în ordinea asta**:
 1. <span style="color:#FF8C1A;font-weight:700">schimbă viteza_y cu</span> `-1`  
 2. <span style="color:#4C97FF;font-weight:700">schimbă y cu</span> `viteza_y` *(pui variabila `viteza_y` în loc de număr)*  
 
-**Verifici:** apeși steagul — eroul **cade** și trece prin podea, ieșind din ecran. Așa trebuie! Podeaua nu l-a oprit încă.
+- [ ] **Verifici:** apeși steagul — eroul **cade** și trece prin podea, ieșind din ecran. Așa trebuie! Podeaua nu l-a oprit încă.
 
 ### 4) Podeaua *(Minim, partea 2 · 15 minute)*
 Sub cele două blocuri, în același `repetă la nesfârșit`, pui `dacă … atunci … altfel`:
@@ -66,23 +66,23 @@ Sub cele două blocuri, în același `repetă la nesfârșit`, pui `dacă … at
   3. `setează viteza_y la 0`  
 - **altfel**: `setează pe_sol la 0` *(ești în aer)*
 
-**Verifici:** apeși steagul — eroul cade, aterizează pe podea și rămâne pe ea, **fără să tremure**. În timp ce stă, `pe_sol` rămâne 1 *(bifează căsuța variabilei, ca s-o vezi pe scenă)*.
+- [ ] **Verifici:** apeși steagul — eroul cade, aterizează pe podea și rămâne pe ea, **fără să tremure**. În timp ce stă, `pe_sol` rămâne 1 *(bifează căsuța variabilei, ca s-o vezi pe scenă)*.
 
 ### 5) Săritura *(Minim, partea 3 · 10 minute)*
 Sub `dacă … altfel`, tot în `repetă la nesfârșit`:
 - `dacă <<tasta spațiu apăsată?> și <pe_sol = 1>>` **atunci** `setează viteza_y la 12`
 
 **Verifici, de fiecare dată:**  
-- Apeși spațiu pe sol → sari.  
-- Apeși spațiu în aer → **nu** sari a doua oară.  
-- Ții spațiul apăsat → sari din nou imediat ce aterizezi *(e normal)*.
+- [ ] Apeși spațiu pe sol → sari.  
+- [ ] Apeși spațiu în aer → **nu** sari a doua oară.  
+- [ ] Ții spațiul apăsat → sari din nou imediat ce aterizezi *(e normal)*.
 
 ### 6) Stânga și dreapta *(Minim, partea 4 · 10 minute)*
 Tot în `repetă la nesfârșit`:
 - `dacă <tasta săgeată dreapta apăsată?>` → `schimbă x cu 4`  
 - `dacă <tasta săgeată stânga apăsată?>` → `schimbă x cu -4`
 
-**Verifici:** poți merge pe podea și urca pe cel puțin **2 platforme**, săltând de pe podea. Steagul readuce eroul la start.
+- [ ] **Verifici:** poți merge pe podea și urca pe cel puțin **2 platforme**, săltând de pe podea. Steagul readuce eroul la start.
 
 ### 7) Complet *(alege cel puțin una)*
 - [ ] **3 platforme** pe un traseu scurt  

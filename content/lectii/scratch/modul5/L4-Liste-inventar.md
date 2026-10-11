@@ -51,7 +51,7 @@ O listă e un **rând de cutii cu nume**: `Cheie`, `Monedă`… Tu faci trei luc
 3. Eroul `Erou`, la `x: -200 y: 0`; pe steag: `șterge tot din inventar` și `du-te la x: -200 y: 0`  
 4. Mersul în toate direcțiile, în `repetă la nesfârșit`: `schimbă x cu 4` / `-4` și `schimbă y cu 4` / `-4`, cu săgețile
 
-**Verifici:** la steag lista e goală, iar eroul se mișcă peste tot.
+- [ ] **Verifici:** la steag lista e goală, iar eroul se mișcă peste tot.
 
 ### 3) Colectarea *(Minim, partea 1 · 20 minute)*
 Trei sprite-uri-obiecte: `Cheie`, `Monedă`, `Floare`. Pentru fiecare, același script:
@@ -60,7 +60,7 @@ Trei sprite-uri-obiecte: `Cheie`, `Monedă`, `Floare`. Pentru fiecare, același 
 - `adaugă [Cheie] la inventar` *(numele lui)*  
 - `ascunde`
 
-**Verifici:** atingi pe rând obiectele — fiecare apare **o singură dată** în listă și dispare de pe scenă. *(Un sprite ascuns nu mai poate fi atins, deci nu se adaugă de 100 de ori.)*
+- [ ] **Verifici:** atingi pe rând obiectele — fiecare apare **o singură dată** în listă și dispare de pe scenă. *(Un sprite ascuns nu mai poate fi atins, deci nu se adaugă de 100 de ori.)*
 
 ### 4) Ușa, `conține?` și consumul *(Minim, partea 2 · 20 minute)*
 Sprite `Ușă`, în `repetă la nesfârșit`:
@@ -71,8 +71,8 @@ Sprite `Ușă`, în `repetă la nesfârșit`:
   - `altfel`: `spune Îți trebuie Cheia!` timp de `1` secundă
 
 **Verifici (de fiecare dată):**  
-- Ajungi la ușă **fără** cheie → mesajul „Îți trebuie Cheia!”.  
-- Iei cheia, ajungi la ușă → se deschide, iar în listă **nu mai e** Cheia *(Monedă și Floare rămân)*.
+- [ ] Ajungi la ușă **fără** cheie → mesajul „Îți trebuie Cheia!”.  
+- [ ] Iei cheia, ajungi la ușă → se deschide, iar în listă **nu mai e** Cheia *(Monedă și Floare rămân)*.
 
 ### 5) Complet *(alege cel puțin una)*
 - [ ] **Doi, cu reacții diferite:** `Monedă` + `Cheie` — Moneda dă `schimbă puncte cu 1`, Cheia deschide ușa  

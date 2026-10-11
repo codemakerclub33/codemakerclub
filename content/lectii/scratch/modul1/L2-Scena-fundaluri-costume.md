@@ -35,6 +35,11 @@ Ca într-un joc sau o poveste pe telefon: schimbi **locul** (oraș → pădure) 
 3. Adaugi încă un fundal (al doilea loc)
 4. Redenumești-le clar, ex. `Casa` și `Parc` (click pe nume)
 
+
+**Încearcă tu — fundaluri (1–2 min)**  
+- [ ] Ai **2** fundaluri în listă  
+- [ ] Se numesc `Casa` și `Parc` (nu `Fundal1`)  
+
 ### 2) Schimbi scena cu un bloc (pe **Scenă**)
 1. Selectezi **Scena** (nu personajul)
 2. Din <span style="color:#E6A800;font-weight:700">Evenimente</span>:  
@@ -42,6 +47,11 @@ Ca într-un joc sau o poveste pe telefon: schimbi **locul** (oraș → pădure) 
 3. Din <span style="color:#9966FF;font-weight:700">Aspect</span>:  
    <span style="color:#9966FF;font-weight:700">comută fundalul la</span> `Casa` *(mereu start pe scena 1)*
 4. Apeși steagul — trebuie să începi pe scena 1
+
+
+**Încearcă tu — start pe scena 1 (1–2 min)**  
+- [ ] Scriptul e pe **Scenă**, nu pe personaj  
+- [ ] La steag vezi mereu fundalul `Casa`  
 
 ### 3) Costume pe personaj
 1. Selectezi **personajul**
@@ -52,6 +62,11 @@ Ca într-un joc sau o poveste pe telefon: schimbi **locul** (oraș → pădure) 
    înăuntru: <span style="color:#9966FF;font-weight:700">următorul costum</span> →  
    <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.2`  
 4. Personajul „se animă” pe loc (~2 secunde: 10 × 0,2)
+
+
+**Încearcă tu — costume (2 min)**  
+- [ ] Personajul are **cel puțin 3** costume  
+- [ ] Se vede animația (~2 secunde), nu o clipire  
 
 ### 4) Trecere la scena 2 + sincron cu personajul
 **Pe Scenă** (același script de la pasul 2), adaugi **sub** start:
@@ -75,6 +90,11 @@ Prima replică se termină la 2 + 3 = **5** secunde, cât timp se vede `Casa`. D
 Nu există un „cablu” între cele două scripturi — **tu** potrivești numerele. Dacă schimbi `5` pe Scenă, schimbă și pe personaj.
 
 *(Mesajele / broadcast le învățăm în Modulul 2 — azi potrivim timpii cu `așteaptă`.)*
+
+
+**Încearcă tu — sincron (2–3 min)**  
+- [ ] Scena așteaptă `5`, iar personajul are în total aceeași durată înainte de replica din parc  
+- [ ] Replica `Am ajuns în parc!` apare **după** ce fundalul s-a schimbat  
 
 ---
 

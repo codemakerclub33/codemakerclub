@@ -47,12 +47,12 @@ Trei mesaje, trimise cu `trimite … către toți`:
 4. La **toate celelalte** sprite-uri: pe steag doar `ascunde`; scripturile de joc *(gravitație, patrulă, monede)* le muți sub `când primesc start_joc`, cu `arată` la început  
 5. La **fiecare** sprite, primul bloc de sub `când primesc start_joc` e `oprește [celelalte scripturi din acest sprite]` *(ca să nu pornească jocul de două ori)*
 
-**Verifici:** apeși steagul — vezi doar meniul. Apeși Start — jocul apare și merge ca înainte.
+- [ ] **Verifici:** apeși steagul — vezi doar meniul. Apeși Start — jocul apare și merge ca înainte.
 
 ### 3) Resetul total *(Minim, partea 2 · 10 minute)*
 Sub `când primesc start_joc` la **Erou**, înainte de joc: `setează viață la 3` · `setează scor la 0` · `setează monede la 0` · `setează viteza_y la 0` · `șterge tot din inventar` *(dacă ai listă)* · `du-te la start`.
 
-**Verifici:** apeși Start, joci puțin, ajungi la meniu și apeși Start din nou: totul începe curat.
+- [ ] **Verifici:** apeși Start, joci puțin, ajungi la meniu și apeși Start din nou: totul începe curat.
 
 ### 4) Victoria și înfrângerea *(Minim, partea 3 · 20 minute)*
 1. **Victoria:** la `Țel`, sub `când primesc start_joc`, `repetă la nesfârșit` → `dacă <atinge Erou?>` **atunci** `trimite win` și `oprește acest script`  
@@ -63,7 +63,7 @@ Sub `când primesc start_joc` la **Erou**, înainte de joc: `setează viață la
 4. Meniul: `când primesc revino_meniu` → `arată`  
 5. Toate celelalte sprite-uri: `când primesc revino_meniu` → `oprește celelalte scripturi din acest sprite` și `ascunde`; clonele: `șterge această clonă`
 
-**Verifici:** poți câștiga *(ajungi la Țel)* și poți pierde *(te lasă fără viață)*. După fiecare, vezi mesajul 3 secunde și revii la meniu.
+- [ ] **Verifici:** poți câștiga *(ajungi la Țel)* și poți pierde *(te lasă fără viață)*. După fiecare, vezi mesajul 3 secunde și revii la meniu.
 
 ### 5) Test cu un coleg *(10 minute)*
 Colegul joacă **fără ajutor**. Dacă se blochează, notezi unde: asta repari.

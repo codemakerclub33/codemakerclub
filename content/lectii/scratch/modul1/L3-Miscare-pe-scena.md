@@ -85,6 +85,11 @@ Fără `așteaptă`, cele 3 `mergi` durează sub o secundă — nu poți urmări
    <span style="color:#9966FF;font-weight:700">spune</span> `Am ajuns!` pentru `2` secunde
 2. Opțional: un <span style="color:#CF63CF;font-weight:700">sunet</span> scurt
 
+
+**Încearcă tu — final (1 min)**  
+- [ ] La capătul traseului apare `Am ajuns!`  
+- [ ] Mesajul se vede cel puțin **2** secunde  
+
 ---
 
 ## Greșeli frecvente

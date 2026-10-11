@@ -61,7 +61,7 @@ Lumea e o **grilă** de pătrate de **32 × 32** pași. Eroul nu merge fluid: la
    - `când se apasă tasta săgeată sus` → `dacă <y poziția < 160>` → `schimbă y cu 32`  
    - `când se apasă tasta săgeată jos` → `dacă <y poziția > -160>` → `schimbă y cu -32`
 
-**Verifici:** fiecare apăsare te mută exact o celulă. Nu poți ieși din ecran. Steagul te readuce la `0, -160`.
+- [ ] **Verifici:** fiecare apăsare te mută exact o celulă. Nu poți ieși din ecran. Steagul te readuce la `0, -160`.
 
 ### 4) Blocurile lumii *(Minim, partea 2 · 25 minute)*
 Un sprite nou `Bloc`, un pătrat de **32 × 32** cu **două costume**: 1 = maro *(lemn)* și 2 = gri *(piatră)*. Variabile *(pentru toate sprite-urile)*: `cx` și `cy`.
@@ -79,13 +79,13 @@ Pe steag, la `Bloc`:
    - `schimbă cx cu 32`  
 4. `când încep ca o clonă` → `arată`
 
-**Verifici:** pe ecran apare un câmp de 15 × 9 blocuri, în două culori. Jos rămân **două rânduri libere**, unde stă eroul. *(Sunt 135 de clone — e normal.)*
+- [ ] **Verifici:** pe ecran apare un câmp de 15 × 9 blocuri, în două culori. Jos rămân **două rânduri libere**, unde stă eroul. *(Sunt 135 de clone — e normal.)*
 
 ### 5) Blocurile nu se traversează *(Minim, partea 3 · 10 minute)*
 În fiecare din cele patru scripturi de mers, **după** `schimbă x/y`, adaugi:  
 `dacă <atinge Bloc?>` → mișcarea inversă *(`schimbă x cu -32` după dreapta, etc.)*
 
-**Verifici:** poți merge pe rândurile libere, dar nu poți intra într-un bloc *(vei sparge blocuri la L2)*. Steagul de două ori dă aceeași lume și același start.
+- [ ] **Verifici:** poți merge pe rândurile libere, dar nu poți intra într-un bloc *(vei sparge blocuri la L2)*. Steagul de două ori dă aceeași lume și același start.
 
 ### 6) Complet *(alege cel puțin una)*
 - [ ] **Grilă vizibilă:** costumele blocurilor au o margine neagră subțire  

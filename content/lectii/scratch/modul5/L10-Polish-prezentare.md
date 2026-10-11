@@ -50,7 +50,7 @@ Joci și încerci să-l strici, bifând fiecare test:
 - [ ] După `win`, apeși Start: jocul începe de la zero  
 - [ ] Nu poți câștiga la start
 
-**Verifici:** cel puțin **o** greșeală găsită și reparată, **sau** un coleg a jucat și a scris „ok”.
+- [ ] **Verifici:** cel puțin **o** greșeală găsită și reparată, **sau** un coleg a jucat și a scris „ok”.
 
 ### 3) Prezentarea *(1–2 minute)*
 Cinci propoziții, scrise pe foaie înainte:

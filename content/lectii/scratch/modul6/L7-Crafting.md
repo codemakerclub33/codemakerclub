@@ -45,8 +45,8 @@ Un craft are aceiași trei pași ca magazinul din M5: **verifici** dacă ai dest
    - `altfel` → `spune Îți trebuie 2 lemn!` timp de `2` secunde
 
 **Verifici (de fiecare dată):**  
-- Cu 1 lemn: click pe `Craft` → „Îți trebuie 2 lemn!”, lemnul rămâne 1.  
-- Cu 2 sau mai mult: click → lemn scade cu 2 și `tarnacop` crește cu 1.
+- [ ] Cu 1 lemn: click pe `Craft` → „Îți trebuie 2 lemn!”, lemnul rămâne 1.  
+- [ ] Cu 2 sau mai mult: click → lemn scade cu 2 și `tarnacop` crește cu 1.
 
 ### 3) Complet — itemul contează *(alege cel puțin una)*
 - [ ] **Târnăcopul sparge mai departe:** la steag, `setează raza la 80`. În scriptul de craft, după ce dai târnăcopul: `setează raza la 128`. *(Spargerea din L2 folosește `raza`.)*  

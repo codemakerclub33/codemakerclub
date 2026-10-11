@@ -36,7 +36,7 @@ HP + mob pregătesc misiunea „învinge / supraviețuiește” (L8) și craftul
 3. Un script la Erou, `repetă la nesfârșit`: `dacă <vieti = 0>` **atunci** `spune Sfârșitul jocului!` și `oprește tot`  
    *(Meniul vine la L9; acum doar oprim jocul.)*
 
-**Verifici:** pe scenă se vede `vieti = 3`; steagul îl pune la loc.
+- [ ] **Verifici:** pe scenă se vede `vieti = 3`; steagul îl pune la loc.
 
 ### 2) Creatura care patrulează *(Minim · 30 minute)*
 Sprite nou `Creatură` *(un pătrat roșu de 28 × 28)*. Variabila `dir`, **numai pentru acest sprite**.
@@ -54,10 +54,10 @@ Creatura merge pe **rândul liber de deasupra startului** *(y = -128)*: eroul tr
    - `spune Au!` timp de `1` secundă *(asta e și „pauză între lovituri”)*
 
 **Verifici (de fiecare dată):**  
-- Creatura merge dus-întors, în pași de 32, fără să iasă din ecran.  
-- Te atinge și pierzi **o** viață, nu trei; te întorci la start.  
-- Poți trece prin spatele ei, la timp.  
-- La `vieti = 0` apare „Sfârșitul jocului!” și totul se oprește.
+- [ ] Creatura merge dus-întors, în pași de 32, fără să iasă din ecran.  
+- [ ] Te atinge și pierzi **o** viață, nu trei; te întorci la start.  
+- [ ] Poți trece prin spatele ei, la timp.  
+- [ ] La `vieti = 0` apare „Sfârșitul jocului!” și totul se oprește.
 
 ### 3) Complet *(alege cel puțin una)*
 - [ ] **Apariții la interval:** în sprite-ul `Creatură`, alt script: `repetă la nesfârșit` → `așteaptă 8 secunde` → `creează o clonă a mea` *(clona patrulează la fel; scriptul de patrulare e sub `când încep ca o clonă` pentru ea)*  

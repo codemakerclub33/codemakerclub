@@ -50,7 +50,7 @@ Joci și încerci să-l strici, bifând:
 - [ ] Steagul de două ori la rând: lumea nu se dublează  
 - [ ] Nu poți câștiga la start
 
-**Verifici:** ai găsit și reparat cel puțin **un** greșeală, **sau** un coleg a jucat și a scris „ok”.
+- [ ] **Verifici:** ai găsit și reparat cel puțin **un** greșeală, **sau** un coleg a jucat și a scris „ok”.
 
 ### 3) Prezentarea *(1–2 minute)*
 Patru propoziții pe foaie, înainte:

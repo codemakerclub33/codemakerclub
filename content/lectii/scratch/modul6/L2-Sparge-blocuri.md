@@ -45,7 +45,7 @@ Distanța dintre centrele a două celule vecine e 32; două celule mai departe, 
 1. Variabile *(pentru toate sprite-urile, bifate pe scenă)*: `lemn`, `piatra`, `raza`  
 2. Pe steag, la Scenă *sau* la Erou: `setează lemn la 0` · `setează piatra la 0` · `setează raza la 80`
 
-**Verifici:** pe scenă se văd trei numere. Steagul le pune pe 0, 0 și 80.
+- [ ] **Verifici:** pe scenă se văd trei numere. Steagul le pune pe 0, 0 și 80.
 
 ### 3) Spargerea *(Minim · 25 minute)*
 La `Bloc`, un script nou:
@@ -58,10 +58,10 @@ La `Bloc`, un script nou:
 *(Scriptul rulează pe fiecare clonă, nu pe original. Clona ștearsă nu mai e pe scenă, iar în locul ei rămâne un **gol**.)*
 
 **Verifici (de fiecare dată):**  
-- Un bloc **departe**: click, nu se întâmplă nimic.  
-- Un bloc **aproape**: click, dispare și `lemn` sau `piatra` crește cu 1, după culoarea blocului.  
-- Spargi cel puțin **5** blocuri într-o sesiune și ai ambele resurse.  
-- Un click pe un gol nu face nimic *(nu e nimic de apăsat)*.
+- [ ] Un bloc **departe**: click, nu se întâmplă nimic.  
+- [ ] Un bloc **aproape**: click, dispare și `lemn` sau `piatra` crește cu 1, după culoarea blocului.  
+- [ ] Spargi cel puțin **5** blocuri într-o sesiune și ai ambele resurse.  
+- [ ] Un click pe un gol nu face nimic *(nu e nimic de apăsat)*.
 
 ### 4) Complet *(alege cel puțin una)*
 - [ ] **Sunet:** `pornește sunetul [Pop]` înainte de `șterge această clonă`  

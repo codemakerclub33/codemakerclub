@@ -52,7 +52,7 @@ La **Erou**, `repetă la nesfârșit`:
 - `dacă <tasta săgeată dreapta apăsată?>` → `schimbă camera_x cu 4`  
 - `dacă <tasta săgeată stânga apăsată?>` → `schimbă camera_x cu -4`
 
-**Verifici:** eroul nu se mișcă deloc pe ecran, dar `camera_x` *(bifează căsuța)* crește când apeși dreapta și scade când apeși stânga.
+- [ ] **Verifici:** eroul nu se mișcă deloc pe ecran, dar `camera_x` *(bifează căsuța)* crește când apeși dreapta și scade când apeși stânga.
 
 ### 4) Lumea care alunecă *(Minim, partea 2 · 15 minute)*
 Mai întâi pentru **Copac**:
@@ -63,14 +63,14 @@ Mai întâi pentru **Copac**:
    - `dacă <(abs din poz) < 250>` **atunci** `du-te la x: poz y: -100` și `arată`  
    - `altfel` `ascunde` *(în afara ecranului, Scratch nu-l lasă să plece de tot, îl lipește de margine)*
 
-**Verifici:** apeși dreapta — copacul vine din dreapta spre tine și iese pe stânga. Apeși stânga — se întoarce.
+- [ ] **Verifici:** apeși dreapta — copacul vine din dreapta spre tine și iese pe stânga. Apeși stânga — se întoarce.
 
 **Copiezi scriptul** în `Piatră` și `Țel`: tragi scriptul peste sprite-ul din lista de sprite-uri. Apoi schimbi doar `lume_x`: **Piatră = 800**, **Țel = 1200**.
 
 ### 5) Obiectivul *(Minim, partea 3 · 5 minute)*
 La **Țel**, în același `repetă la nesfârșit`: `dacă <atinge Erou?>` **atunci** `spune Ai ajuns!` *și* `oprește tot`.
 
-**Verifici:** mergi, treci de copac și piatră, ajungi la Țel și jocul se oprește. Pe steag, totul revine la început *(camera_x = 0)*.
+- [ ] **Verifici:** mergi, treci de copac și piatră, ajungi la Țel și jocul se oprește. Pe steag, totul revine la început *(camera_x = 0)*.
 
 ### 6) Complet *(alege cel puțin una)*
 - [ ] **Limite:** la Erou, după mers: `dacă camera_x < 0` → `setează camera_x la 0`; `dacă camera_x > 1200` → `setează camera_x la 1200`  

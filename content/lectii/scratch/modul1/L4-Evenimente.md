@@ -90,6 +90,11 @@ La finalul orei pornești acțiuni pe **evenimente diferite** din <span style="c
 4. Așază butonul **lângă** erou, nu peste el  
 5. Test: steag → reset; click pe **buton** → „Go!”; click pe **erou** / spațiu → eroul reacționează  
 
+**Încearcă tu — buton + erou (2–3 min)**  
+- [ ] Ai **2** personaje: butonul și eroul  
+- [ ] Click pe **buton** → spune `Go!`  
+- [ ] Click pe **erou** sau spațiu → eroul reacționează  
+
 ---
 
 ## Greșeli frecvente

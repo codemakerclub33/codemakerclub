@@ -52,7 +52,7 @@ Dacă n-ai destul, nu scazi nimic și spui „Nu ai destule monede!”.
    - `du-te la x: (număr aleatoriu între -200 și 200) y: (număr aleatoriu între -100 și 100)` · `arată`  
 5. Pe steag, la Scenă *sau* la Monedă: `setează monede la 0`
 
-**Verifici:** aduni monede — la fiecare atingere `monede` crește cu 5, iar moneda reapare în alt loc.
+- [ ] **Verifici:** aduni monede — la fiecare atingere `monede` crește cu 5, iar moneda reapare în alt loc.
 
 ### 3) Magazinul *(Minim, partea 2 · 20 minute)*
 Sprite `Cumpără viteza` *(un buton, cu prețul scris pe el: 10)*, undeva în colț:
@@ -64,8 +64,8 @@ Sprite `Cumpără viteza` *(un buton, cu prețul scris pe el: 10)*, undeva în c
 - `altfel` `spune Nu ai destule monede!` timp de `2` secunde
 
 **Verifici (de fiecare dată):**  
-- Cu 5 monede: apeși butonul → „Nu ai destule”, monedele rămân 5.  
-- Cu 10 sau mai multe: apeși → monedele scad cu 10, iar eroul merge **mai repede**. *(Acesta e „efectul”: îl simți.)*
+- [ ] Cu 5 monede: apeși butonul → „Nu ai destule”, monedele rămân 5.  
+- [ ] Cu 10 sau mai multe: apeși → monedele scad cu 10, iar eroul merge **mai repede**. *(Acesta e „efectul”: îl simți.)*
 
 ### 4) Complet *(alege cel puțin una)*
 - [ ] **Al doilea upgrade:** un buton `Cumpără viață` cu alt preț, 20: același tipar, efectul `schimbă viață cu 1` *(adaugi variabila `viață`)*  

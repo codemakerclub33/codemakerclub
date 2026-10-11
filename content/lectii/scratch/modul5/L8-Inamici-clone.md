@@ -41,7 +41,7 @@ Din cele 3 note de la L7 alegi pentru Minim: **un pericol** *(inamic care patrul
 2. Sprite `Inamic`, cu `dir` **numai pentru acest sprite**. Aceeași patrulare ca în L3, dar pe o platformă: `du-te la x: 0 y: (înălțimea platformei)`, apoi `repetă la nesfârșit` → `schimbă x cu (dir * 2)` și întoarcere la limitele platformei  
 3. La **Erou**, în `repetă la nesfârșit`: `dacă <atinge Inamic?>` **atunci** → `schimbă viață cu -1` → `du-te la start` → `spune Au!` timp de `1` secundă
 
-**Verifici:** inamicul patrulează doar pe platforma lui. Te atinge și pierzi **o** viață, nu toate deodată.
+- [ ] **Verifici:** inamicul patrulează doar pe platforma lui. Te atinge și pierzi **o** viață, nu toate deodată.
 
 ### 3) Colectabilul din clone *(Minim, partea 2 · 20 minute)*
 Sprite `Monedă`, variabilele `scor` și `k` *(pentru toate sprite-urile)*:
@@ -50,7 +50,7 @@ Sprite `Monedă`, variabilele `scor` și `k` *(pentru toate sprite-urile)*:
 3. `când încep ca o clonă`: `arată` și `repetă la nesfârșit`:  
    - `dacă <atinge Erou?>` **atunci** `schimbă scor cu 1` și `șterge această clonă`
 
-**Verifici:** pe traseu apar 5 monede; când le atingi, `scor` crește cu 1 și moneda dispare **o singură dată**.
+- [ ] **Verifici:** pe traseu apar 5 monede; când le atingi, `scor` crește cu 1 și moneda dispare **o singură dată**.
 
 ### 4) Resetul *(Minim · 5 minute)*
 Pe steag, apasă din nou — monedele reapar și `viață` și `scor` sunt iar la început. *(Clonele sunt șterse automat când apeși steagul sau oprirea.)*

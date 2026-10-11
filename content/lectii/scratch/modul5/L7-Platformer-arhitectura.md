@@ -40,7 +40,7 @@ Completezi pe o foaie, cu creionul:
 5. **Hartă**: un desen cu start, 3 platforme și obiectivul  
 6. **Ce iei din L1–L6** — alege **2 sau 3**, nu toate: gravitație *(obligatoriu)*, plus, de exemplu, inamic *(L3)* sau monede/magazin *(L6)*
 
-**Verifici:** poți arăta cuiva foaia și el înțelege cum se câștigă.
+- [ ] **Verifici:** poți arăta cuiva foaia și el înțelege cum se câștigă.
 
 ### 2) Scheletul *(Minim · până la minutul 50)*
 1. Deschizi `Prenume_Nume_M5_L1` → **Fișier → Salvează o copie** → `Prenume_Nume_M5_Proiect`  
@@ -50,7 +50,7 @@ Completezi pe o foaie, cu creionul:
 4. La `Țel`: `repetă la nesfârșit` → `dacă <atinge Erou?>` **atunci** `spune Ai ajuns!` timp de `2` secunde  
 5. Pe steag, Erou: `du-te la x: -200 y: -100` · `setează viteza_y la 0`
 
-**Verifici:** poți sări de pe podea pe platforme și ajungi la `Țel`, iar steagul readuce eroul la start.
+- [ ] **Verifici:** poți sări de pe podea pe platforme și ajungi la `Țel`, iar steagul readuce eroul la start.
 
 > **Regula minutului 50:** până atunci, **fără** costume noi, fără fundaluri frumoase. Doar fizica și harta.
 

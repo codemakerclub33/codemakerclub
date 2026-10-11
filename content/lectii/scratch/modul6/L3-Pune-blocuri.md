@@ -52,7 +52,7 @@ Snap-ul face lumea să arate a cuburi, nu a haos.
    dreapta *(1, 0)* · stânga *(-1, 0)* · sus *(0, 1)* · jos *(0, -1)*  
 3. Pe steag: `setează dx la 0` și `setează dy la 1`
 
-**Verifici:** bifezi `dx` și `dy` și vezi cum se schimbă la fiecare săgeată.
+- [ ] **Verifici:** bifezi `dx` și `dy` și vezi cum se schimbă la fiecare săgeată.
 
 ### 3) Mesajul „pune” *(Minim, partea 2 · 15 minute)*
 La **Erou**:
@@ -72,14 +72,14 @@ La **Bloc**, un script nou, **doar pentru originalul** care nu e clonă:
    - `schimbă lemn cu -1`
 
 **Verifici (de fiecare dată):**  
-- Cu `lemn = 0`: apeși E → „Nu ai lemn!”, nu apare nimic.  
-- Cu `lemn ≥ 1`: apeși E → apare un bloc exact în celula din fața eroului, **aliniat pe grilă**; `lemn` scade cu 1.  
-- Poți sparge blocul pus și lemnul revine.
+- [ ] Cu `lemn = 0`: apeși E → „Nu ai lemn!”, nu apare nimic.  
+- [ ] Cu `lemn ≥ 1`: apeși E → apare un bloc exact în celula din fața eroului, **aliniat pe grilă**; `lemn` scade cu 1.  
+- [ ] Poți sparge blocul pus și lemnul revine.
 
 ### 5) Adăpostul *(Minim · 15 minute)*
 Spargi 4–6 blocuri, apoi pui cel puțin **4 blocuri** *(un zid sau un colț)* într-un loc curat.
 
-**Verifici:** se vede un zid făcut de tine, iar `lemn` a scăzut cu 4.
+- [ ] **Verifici:** se vede un zid făcut de tine, iar `lemn` a scăzut cu 4.
 
 ### 6) Complet *(alege cel puțin una)*
 - [ ] **Nu pui peste alt bloc sau peste erou:** la `Bloc`, după `arată`, `dacă <nu <<atinge Bloc?> sau <atinge Erou?>>>` → `creează o clonă a mea` și `schimbă lemn cu -1`; apoi `ascunde` *(un sprite ascuns nu detectează atingerea, de aceea îl arătăm o clipă)*  
