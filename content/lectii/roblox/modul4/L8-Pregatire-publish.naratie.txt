@@ -1,0 +1,31 @@
+Lecția opt din Modulul patru. Pregătirea pentru publicare.
+
+Astăzi pregătești jocul să fie văzut de alții. Lucrezi pe Prenume, linie jos, Nume, linie jos, M patru.
+
+Obiectivul. Minim: nume, descriere fără date personale, setări de bază, numele final al DataStore-ului și lista de verificare bifată. Complet: minim, plus iconița sau captura, setările de siguranță și, dacă este permis, o publicare privată și un test.
+
+Primul pas. Regulile de siguranță. Fără nume real, adresă, școală sau telefon. Fără cuvinte urâte. Fără muzică sau imagini fără drepturi. Publici doar cu acordul părinților și al profesorului.
+
+Al doilea pas. Numele și descrierea. Un nume scurt și clar. O descriere de trei până la cinci propoziții: ce faci, cum câștigi, ce e special, ce controale folosești.
+
+Al treilea pas. Setările jocului. Începi cu accesul privat. Alegi doar dispozitivele pe care le-ai testat.
+
+Al patrulea pas. Restaurezi numele final al caietului DataStore, cel schimbat la testare. Verifici ca toate scripturile să folosească același modul.
+
+Al cincilea pas. Curățenia. Ștergi scripturile și valorile de test. Verifici obiectele rătăcite.
+
+Al șaselea pas. Iconița și miniatura. O captură frumoasă din joc, fără date personale.
+
+Al șaptelea pas. Chestionarul de conținut, la care răspunzi sincer.
+
+Al optulea pas. Salvare și publicare sunt două lucruri diferite.
+
+Al nouălea pas. Publicare privată și test în Roblox Player, dacă este permis.
+
+Al zecelea pas. Lista de verificare finală.
+
+Greșeli frecvente. Uiți numele de test al DataStore-ului. Dai drumul public fără să testezi. Pui date personale. Lași valori de test. Confunzi salvarea cu publicarea.
+
+Provocare Pro, opțională. Cauți numele caietului în toate scripturile, ca să fii sigur că este unul singur. Scrii note de versiune. Un coleg verifică dacă ai date personale. Și scrii două descrieri, apoi o alegi pe cea mai clară.
+
+Recapitulare. Nume clar, descriere sigură, date corecte, curățenie. Publici doar cu acord. Succes la pregătire.

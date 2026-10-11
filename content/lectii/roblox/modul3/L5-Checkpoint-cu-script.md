@@ -234,6 +234,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Un **al patrulea** checkpoint — adaugi un singur Part nou, **fără** să schimbi scriptul  
 - [ ] Testezi în **Test → Clients and Servers** cu 2 jucători: fiecare are **etapa lui**?
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **5 checkpoint-uri:** `Checkpoint1` … `Checkpoint5`, fără să schimbi scriptul  
+- [ ] **Efect:** la atingere, checkpoint-ul devine scurt `Neon` și revine la material normal  
+- [ ] **Etapa pe ecran:** un `TextLabel` arată `Etapa: N`  
+- [ ] **Ce se întâmplă dacă lipsește unul?** ștergi `Checkpoint3` și explici de ce jocul tot merge (bucla sare peste lipsuri)  
+
 ## Recapitulare rapidă
 1. Checkpoint funcțional = **număr (`Etapa`) pe fiecare jucător**, ținut pe **server**  
 2. `for numar = 1, 20` + `"Checkpoint" .. numar` = un singur script pentru toate  

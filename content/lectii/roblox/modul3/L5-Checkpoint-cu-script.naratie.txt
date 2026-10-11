@@ -1,0 +1,23 @@
+Lecția cinci din Modulul trei. Checkpoint care ține minte.
+
+Astăzi faci checkpoint-urile să funcționeze. Lucrezi pe Prenume, linie jos, Nume, linie jos, M trei.
+
+Obiectivul. Minim: folderul Checkpoints cu Checkpoint unu, statistica Etapa în leaderstats și un script, Srv, linie jos, Checkpoint, care salvează etapa și te mută la checkpoint când reapari, fără erori. Complet: minim, plus trei checkpoint-uri, checkpoint-ul nu poate fi dat înapoi, iar la fiecare checkpoint nou apare un mesaj.
+
+Primul pas. Planul. Fiecare jucător are un număr, Etapa. Zero înseamnă că n-a atins niciun checkpoint. Când atinge Checkpoint doi, Etapa devine doi.
+
+Al doilea pas. Pregătești lumea. Folderul se numește Checkpoints, iar checkpoint-urile Checkpoint unu, Checkpoint doi și așa mai departe, exact așa, fără spații.
+
+Al treilea pas. Adaugi Etapa în scor, ca IntValue, cu valoarea zero.
+
+Al patrulea pas. Atingerea. Scriptul parcurge toate checkpoint-urile din folder. La atingere, verifică dacă este un jucător și dacă numărul este mai mare decât Etapa curentă. Doar atunci o schimbă. Așa nu te mai poți întoarce la un checkpoint mai vechi.
+
+Al cincilea pas. Reapariția. La CharacterAdded, adică la reapariție, scriptul mută personajul la checkpoint-ul curent, cu PivotTo, puțin mai sus, ca să nu intre în podea.
+
+Al șaselea pas. Mesaj la fiecare checkpoint nou, prin Ev, linie jos, Mesaj.
+
+Greșeli frecvente. Nume greșite, cu spațiu sau cu literă mică. Checkpoint-uri în afara folderului. Reapari mereu la start: Etapa a rămas zero. Reapari înfipt în checkpoint: lipsește înălțimea. Mai multe scripturi mută jucătorul în locuri diferite: doar unul se ocupă de reapariție. Etapa scade: lipsește condiția mai mare decât.
+
+Provocare Pro, opțională. Faci cinci checkpoint-uri fără să schimbi scriptul. La atingere checkpoint-ul devine scurt neon. Afișezi Etapa pe ecran. Și ștergi un checkpoint, ca să vezi de ce jocul merge în continuare.
+
+Recapitulare. Etapa ține minte ultimul checkpoint. Un singur script mută jucătorul. Succes cu checkpoint-urile.

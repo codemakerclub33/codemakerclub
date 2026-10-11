@@ -1,0 +1,23 @@
+Lecția zece din Modulul trei. Completare și prezentare.
+
+Astăzi îmbunătățești jocul și îl prezinți. Rămâi pe Prenume, linie jos, Nume, linie jos, M trei.
+
+Obiectivul. Minim: o îmbunătățire dintre șase, testată, Output curat, Place salvat și prezentare. Este suficient pentru insigna Game Logic. Complet: două îmbunătățiri, prezentarea și salvarea.
+
+Primul pas. Idei. A: monede cu valori diferite. B: un bonus cu mesaj de pauză. C: o zonă de odihnă și un checkpoint nou. D: o bară de progres. E: timer sau vieți, cu mesaj și culoare de alertă. F: un Finish cu bonus mai mare dacă ai multe monede. Începi a doua idee abia după ce prima merge.
+
+Al doilea pas. Lista de verificare. Rulezi Play, Output-ul este curat, jocul se termină. Abia apoi salvezi.
+
+Al treilea pas. Rețete scurte pentru fiecare idee, pe care le adaptezi.
+
+Al patrulea pas. Lucrezi singur și ceri ajutor după ce ai citit eroarea.
+
+Al cincilea pas. Prezentarea durează unu sau două minute. Numele jocului și scopul. Arăți jocul în Play: monede, checkpoint, cădere, Finish. Deschizi un script și spui de ce este Script sau LocalScript. Spui o regulă a serverului: clientul cere, serverul hotărăște. Și povestești o greșeală pe care ai reparat-o.
+
+Al șaselea pas. Insigna Game Logic.
+
+Greșeli frecvente. Refaci totul: doar adaugi. Două îmbunătățiri netestate. Prezentare doar din editare. Roșu în Output, dar zici că merge. Schimbi scorul din LocalScript. Schimbi numele obiectelor, și scripturile nu le mai găsesc.
+
+Provocare Pro, opțională. Schimbi jocul cu un coleg și căutați scripturi duplicate, nume schimbate și mesaje lipsă. Scrii trei reguli de securitate pe care le aplică jocul tău. Muți o bucată de cod repetată într-o funcție. Și scrii ce ar trebui să țină minte jocul când te întorci mâine, pentru Modulul patru.
+
+Recapitulare. Un joc terminat, testat și explicat valorează mai mult decât multe idei începute. Felicitări și mult succes în Modulul patru.

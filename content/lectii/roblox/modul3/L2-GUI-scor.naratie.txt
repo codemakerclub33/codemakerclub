@@ -1,0 +1,21 @@
+Lecția doi din Modulul trei. GUI: scorul pe ecran.
+
+Astăzi arăți scorul pe ecranul jucătorului. Lucrezi pe Prenume, linie jos, Nume, linie jos, M trei.
+
+Obiectivul. Minim: un ScreenGui numit GUI, linie jos, Joc, cu o etichetă numită Txt, linie jos, Monede și un LocalScript numit Cli, linie jos, Scor, care arată Monede și numărul, și crește la fiecare monedă, fără erori. Complet: minim, plus un panou frumos și textul își schimbă culoarea când ai cel puțin cinci monede.
+
+Primul pas. GUI înseamnă interfața de pe ecran, nu din lumea 3D. Stă în StarterGui, într-un ScreenGui.
+
+Al doilea pas. Creezi panoul. Un TextLabel în GUI, linie jos, Joc, cu poziție și mărime date în procente, nu în pixeli, ca să arate bine pe orice ecran.
+
+Al treilea pas. Cli, linie jos, Scor este un LocalScript, pus în interiorul panoului. Ia jucătorul tău, cu Players punct LocalPlayer, găsește Monede și scrie valoarea în text.
+
+Al patrulea pas. Cine schimbă scorul? Foarte important: serverul. Clientul doar îl arată. Cu evenimentul Changed, textul se actualizează de fiecare dată când valoarea se schimbă. Funcția de actualizare o chemi și o dată la început.
+
+Al cincilea pas. Panou mai frumos. Culori, mărime, poziție. La cinci monede sau mai multe, schimbi culoarea textului.
+
+Greșeli frecvente. LocalScript în ServerScriptService: acolo nu rulează. Panoul nu apare, pentru că nu e în StarterGui. Panou prea mic sau pe margine. Scorul nu se schimbă: serverul nu dă punctele. Avertisment galben, infinite yield: numele nu se potrivește. Ai uitat Changed. Ai încercat să schimbi scorul din client: nu contează.
+
+Provocare Pro, opțională. Afișezi Monede, numărul curent și totalul. Adaugi colțuri rotunjite și un contur. Faci culoarea să treacă de la alb, la galben, la verde. Și ții un record local într-o variabilă.
+
+Recapitulare. GUI este interfața. LocalScript citește de la server. Changed spune când s-a schimbat valoarea. Succes cu panoul.

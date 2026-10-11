@@ -266,6 +266,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] A treia verificare: jucătorul trebuie să fie **în viață** (`humanoid.Health > 0`)  
 - [ ] Scrie pe o foaie **3 lucruri dintr-un joc Roblox** pe care serverul trebuie să le verifice (ex. cumpărături, teleportări, damage)
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Test de „atac" în jocul tău:** un `LocalScript` temporar trimite `Ev_Bonus:FireServer("hack", 9999)` și verifici că serverul **refuză** și scorul nu se schimbă *(îl ștergi după test)*  
+- [ ] **Jurnal:** pe cereri suspecte serverul scrie un `warn` cu numele jucătorului  
+- [ ] **Tabel în loc de `if`-uri:** sumele pe tipuri într-un tabel, ca `{ mic = 1, mare = 5 }`  
+- [ ] **Altă situație:** scrii 3 reguli de server pentru un **magazin** (ce verifici înainte să vinzi ceva?)  
+
 ## Recapitulare rapidă
 1. **Clientul poate minți. Serverul verifică.**  
 2. Clientul trimite **cereri**; **suma / rezultatul** îl hotărăște serverul  

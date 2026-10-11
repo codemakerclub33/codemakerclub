@@ -1,0 +1,25 @@
+Lecția nouă din Modulul patru. Proiect final: Obby-ul tău, gata de joc.
+
+Astăzi închei jocul. Nu mai adaugi nimic nou, doar finisezi. Lucrezi pe Prenume, linie jos, Nume, linie jos, M patru, apoi faci o copie numită Prenume, linie jos, Nume, linie jos, Final.
+
+Obiectivul. Minim: jocul se joacă de la start la final fără erori, folosește un ModuleScript sau DataStore, și ai copia Final și fișa proiectului. Complet: minim, plus DataStore, un inamic sau un magazin cu verificare pe server, un coleg care îl joacă fără ajutor și o prezentare pregătită.
+
+Primul pas. Feature freeze înseamnă înghețarea funcțiilor. Nu mai adaugi lucruri noi. Notezi ideile pentru versiunea doi.
+
+Al doilea pas. Lista finală de verificare: început, platforme, monede, checkpoint-uri, cădere, inamic sau magazin, Finish, salvare, interfață, sunet și Output.
+
+Al treilea pas. Reparații și finisări. Întâi blocantele, apoi importantele. Folosești metoda din lecția șapte.
+
+Al patrulea pas. Testul cu un coleg. Nu îl ajuți. Te uiți și notezi.
+
+Al cincilea pas. Fișa proiectului: numele, ce face jucătorul, cum se câștigă, scripturile, ce face modulul, ce se salvează, o regulă de securitate, un bug rezolvat și ce ai face în versiunea doi.
+
+Al șaselea pas. Copia Final. Salvezi, apoi Save As. De acum, doar Final este versiunea de prezentat.
+
+Al șaptelea pas. Pregătești prezentarea: demo, un script, o regulă de securitate, DataStore și un bug rezolvat.
+
+Greșeli frecvente. Încă o funcție, și strici ce merge. Nu testezi după ultima modificare. Ajuți colegul în timpul testului. Nu faci copia Final. Lași valori de test.
+
+Provocare Pro, opțională. Faci un mesaj de întâmpinare pentru jucătorii noi. Scrii cinci finisaje mici, în ordinea valorii. Pregătești un demo de șaizeci de secunde. Și scrii un plan pentru versiunea doi, cu cinci idei.
+
+Recapitulare. Nu adaugi, finisezi. Un coleg testează fără ajutor. Final este versiunea de prezentat. Succes cu jocul tău.

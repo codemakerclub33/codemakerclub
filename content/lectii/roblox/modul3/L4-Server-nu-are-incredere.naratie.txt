@@ -1,0 +1,23 @@
+Lecția patru din Modulul trei. Serverul decide: securitate de bază.
+
+Astăzi înveți cea mai importantă regulă a jocurilor online: clientul poate minți, serverul verifică. Lucrezi pe Prenume, linie jos, Nume, linie jos, M trei.
+
+Obiectivul. Minim: Srv, linie jos, Bonus cu o pauză de treizeci de secunde între două bonusuri, iar suma o stabilește serverul, fără erori. Complet: minim, plus verifici tipul primit de la client, mic sau mare, verifici că jucătorul este aproape de Zona, linie jos, Bonus și trimiți un mesaj de refuz.
+
+Primul pas. Ce poate merge prost? Un jucător poate trimite orice cerere, chiar și cu un număr uriaș. Dacă serverul are încredere, cineva poate câștiga o mie de monede dintr-un click.
+
+Al doilea pas. Cinci reguli. Unu: clientul cere, serverul hotărăște. Doi: verifici tot ce primești. Trei: limitezi cât de des. Patru: verifici situația, de exemplu dacă jucătorul este aproape. Cinci: nu te bazezi pe ce spune clientul, ci pe ce vede serverul.
+
+Al treilea pas. Pauza. Serverul ține minte, pe jucător, ora ultimului bonus. Dacă n-au trecut treizeci de secunde, refuză.
+
+Al patrulea pas. Suma nu vine de la client. Clientul spune doar vreau bonus. Serverul știe suma.
+
+Al cincilea pas. Verificăm ce primim. Dacă tipul nu este exact mic sau mare, serverul ignoră cererea.
+
+Al șaselea pas. Ești aproape? Serverul calculează distanța dintre jucător și zonă. Dacă este prea departe, refuză. Personajul poate lipsi la reapariție, așa că verifici și asta.
+
+Greșeli frecvente. Suma vine de la client. Lipsește pauza. Pui pauza sau distanța pe client: nu ajută, pentru că clientul le poate ocoli. Nu verifici dacă personajul există. Uiți mesajul de refuz. Ai încredere când clientul spune că a terminat jocul: Finish-ul se verifică pe server.
+
+Provocare Pro, opțională. În propriul tău joc, ca test, un LocalScript trimite o cerere falsă și verifici că serverul refuză. Serverul scrie un avertisment cu numele jucătorului. Pui sumele într-un tabel. Și scrii trei reguli pentru un magazin.
+
+Recapitulare. Clientul cere, serverul hotărăște. Verifici tot. Limitezi frecvența. Succes cu securitatea.

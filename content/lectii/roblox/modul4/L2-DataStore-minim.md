@@ -330,6 +330,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Un caiet pentru **cel mai bun timp** (dacă ai timer)  
 - [ ] Citești despre `UpdateAsync` (varianta „mai sigură" la scrieri simultane) și explici diferența față de `SetAsync`
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Versiunea datelor:** pui în tabela salvată un câmp `versiune = 1` și îl verifici la încărcare  
+- [ ] **Ultima vizită:** salvezi `os.time()` și, la intrare, afișezi în Output cât a trecut de la ultima vizită  
+- [ ] **Test de eșec:** simulezi o încărcare eșuată (cu un steag de test) și verifici că protecția `DateIncarcate` **nu** suprascrie datele cu 0  
+- [ ] **Planul datelor:** pe hârtie, o listă cu ce **salvezi** și ce **nu** (de ce nu salvezi, de ex., poziția jucătorului)  
+
 ## Recapitulare rapidă
 1. **DataStore** = caiet în cloud; **doar serverul** îl poate folosi  
 2. Cheia = `"Jucator_" .. player.UserId`  

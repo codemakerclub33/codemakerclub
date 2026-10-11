@@ -1,0 +1,27 @@
+Lecția cinci din Modulul patru. Polish: lumini, sunete și interfață.
+
+Astăzi dai jocului o atmosferă. Lucrezi pe Prenume, linie jos, Nume, linie jos, M patru.
+
+Obiectivul. Minim: o atmosferă, cu ora din zi și cel puțin un efect, un sunet, adică muzică de fundal sau sunet la monedă, și un element de interfață îngrijit, cu culori și colțuri rotunjite, iar Obby-ul merge ca înainte. Complet: minim, plus lumini pe checkpoint-uri, sunet de monedă pornit din script, mesaje care apar lin și un control de confort.
+
+Primul pas. Tema și paleta. Alegi o temă și câteva culori care se potrivesc.
+
+Al doilea pas. Lumina. Serviciul Lighting controlează ora din zi, atmosfera, strălucirea și culoarea. Adaugi un efect, de exemplu Bloom sau ColorCorrection. Nu exagera.
+
+Al treilea pas. Lumini punctuale. Un PointLight pe un checkpoint îl face să se vadă de departe.
+
+Al patrulea pas. Sunetul. Folosești doar sunete permise, nu modele din Toolbox, pentru că pot avea scripturi ascunse. Volumul rămâne sub jumătate.
+
+Al cincilea pas. Interfața îngrijită. Colțuri rotunjite, contur, culori din paletă, text clar.
+
+Al șaselea pas. Sunet la monedă, din script. Îl pornești când jucătorul ia moneda.
+
+Al șaptelea pas. Mesaje cu apariție lină. Un Tween schimbă treptat transparența. Păstrezi o versiune a mesajului, ca un mesaj nou să nu fie șters de unul vechi.
+
+Al optulea pas. Controlul de confort. Volum rezonabil și fără lumini care clipesc repede, ca să nu deranjeze pe nimeni.
+
+Greșeli frecvente. Prea multe efecte. Volum prea mare. Lumini care clipesc. Culori care nu se citesc. Sunete din surse necunoscute.
+
+Provocare Pro, opțională. Muți încet ora din zi, de la după-amiază spre seară, cu TweenService. Faci un buton care oprește muzica, doar pentru jucător. Folosești cel mult trei culori principale. Și verifici că textele se citesc pe un ecran mic.
+
+Recapitulare. Atmosfera vine din lumină, sunet și interfață, dar cu măsură. Confortul jucătorului contează. Succes cu polish-ul.

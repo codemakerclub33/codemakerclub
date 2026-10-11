@@ -1,0 +1,25 @@
+Lecția unu din Modulul patru, Game Creator. ModuleScript: o trusă de scule pentru cod.
+
+Astăzi înveți să-ți aduni codul într-un loc, ca să nu-l mai copiezi peste tot. Începi Modulul patru cu o copie a Place-ului, numită: Prenume, linie jos, Nume, linie jos, M patru, făcută cu Save As.
+
+Obiectivul. Minim: un ModuleScript numit Mod, linie jos, Statistici, cu funcția adauga, și un script, Srv, linie jos, Monede, care o folosește în locul liniei vechi, iar Obby-ul merge ca înainte, fără erori. Complet: minim, plus funcțiile ia și seteaza, modulul folosit în cel puțin trei scripturi și un tabel cu valorile monedelor.
+
+Primul pas. Copia și lista de nume. Rămâi la aceleași nume de obiecte, ca scripturile să nu se strice.
+
+Al doilea pas. Problema. Același cod scris în mai multe locuri. Dacă schimbi regula, trebuie să o schimbi peste tot, și uiți un loc.
+
+Al treilea pas. Tabele. Un tabel este o colecție de valori. Poate fi o listă, cu elemente una după alta, sau un dicționar, cu nume și valori.
+
+Al patrulea pas. Primul ModuleScript. Creezi un tabel, îi adaugi funcții, iar la final îl întorci, cu return. Funcția adauga caută statistica jucătorului și îi adună o cantitate. Funcția de căutare rămâne privată, folosită doar în interior.
+
+Al cincilea pas. Folosești modulul cu require. În scriptul tău scrii require, apoi locul modulului, în ServerScriptService, și obții tabelul. Apoi chemi funcția.
+
+Al șaselea pas. Mai multe unelte. Funcția ia citește o valoare, iar seteaza o stabilește.
+
+Al șaptelea pas. Valorile monedelor într-un tabel. Mică, mare, specială, fiecare cu valoarea ei.
+
+Greșeli frecvente. Uiți return la sfârșitul modulului. Scrii greșit numele din require. Pui modulul într-un loc pe care scriptul nu îl vede. Schimbi numele modulului și scripturile nu îl mai găsesc.
+
+Provocare Pro, opțională. Faci o funcție scade, care nu coboară sub zero. Faci un modul de configurare cu constantele jocului. Faci o funcție care întoarce un raport cu toate statisticile. Și explici de ce un modul rulează o singură dată, iar toate scripturile primesc același tabel.
+
+Recapitulare. Un ModuleScript este o trusă de scule. Îl chemi cu require. Succes cu prima ta trusă.

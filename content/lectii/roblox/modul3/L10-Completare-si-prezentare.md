@@ -208,6 +208,12 @@ Dacă rămâi în urmă: **prezinți cu o îmbunătățire — e suficient pentr
 - [ ] Un **ecran de titlu** (un `Frame` care acoperă ecranul 3 secunde cu numele jocului)  
 - [ ] Pe foaie: **1 idee** pentru M4 — „ce aș vrea să-mi rămână după ce ies din joc?"
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Revizuire:** schimbi jocul cu un coleg și caută scripturi duplicate, nume schimbate și mesaje lipsă  
+- [ ] **Regulile serverului:** scrii pe o foaie 3 reguli de securitate pe care le aplică jocul tău  
+- [ ] **Funcție în loc de copiere:** găsești o bucată de cod repetată și o muți într-o funcție  
+- [ ] **Idei pentru Modulul 4:** scrii ce ar trebui să **țină minte** jocul când te întorci mâine (monede? etapă? victorii?)  
+
 ## Recapitulare rapidă
 1. L10 = **completezi** L9, apoi **prezinți**  
 2. **Minim** = 1 upgrade + Output curat + prezentare → **insignă**  

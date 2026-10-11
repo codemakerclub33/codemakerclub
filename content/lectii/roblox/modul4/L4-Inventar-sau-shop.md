@@ -353,6 +353,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Panou de magazin care **se deschide / se închide** dintr-un buton `Btn_Magazin` (`Visible = not Visible`)  
 - [ ] Notezi 3 lucruri pe care un magazin **nu** trebuie să le facă (ex. să ia bani fără acord)
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **A treia opțiune:** un articol `Viata` care dă +1 la `Vieti` *(dacă ai statistica din M3)*, cu preț și verificări ca la celelalte  
+- [ ] **Jurnal de cumpărări:** serverul scrie un `print` cu `jucător – articol – rezultat`  
+- [ ] **Trei „păcăleli":** încerci în propriul joc trei cereri false (articol inexistent, text în loc de nume, cerere repetată) și completezi un tabel cu ce a răspuns serverul  
+- [ ] **De ce nu în client?:** explici de ce prețul nu se verifică doar în butonul de pe ecran  
+
 ## Recapitulare rapidă
 1. Clientul trimite **doar numele**; **prețul** e pe server  
 2. Serverul verifică **tipul**, **articolul**, **banii**, **dublura**  

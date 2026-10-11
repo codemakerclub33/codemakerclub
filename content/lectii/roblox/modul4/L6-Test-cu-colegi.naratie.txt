@@ -1,0 +1,27 @@
+Lecția șase din Modulul patru. Playtest cu colegii.
+
+Astăzi afli ce spun alții despre jocul tău. Lucrezi pe Prenume, linie jos, Nume, linie jos, M patru.
+
+Obiectivul. Minim: un playtest, în care un coleg joacă, iar tu observi, cu cel puțin trei observații notate și răspunsurile colegului la cinci întrebări. Complet: minim, plus două playtesturi cu colegi diferiți, lista ordonată după gravitate, o eroare din Output notată, cu script și linie, și alegerea primelor trei lucruri de reparat.
+
+Primul pas. Trei roluri: jucătorul, observatorul, care tace, și scribul, care notează.
+
+Al doilea pas. Pregătim jocul. Verifici că jocul pornește curat. Pentru test, schimbi temporar numele caietului DataStore, ca să nu strici datele reale. Îți notezi asta pe hârtie, ca să îl pui la loc la L8.
+
+Al treilea pas. Testul celor treizeci de secunde. Colegul se uită la joc fără explicații. Vezi ce înțelege singur.
+
+Al patrulea pas. Foaia de observații. Unde se oprește, unde greșește, ce spune cu voce tare.
+
+Al cincilea pas. Cinci întrebări la final. Ai înțeles ce ai de făcut? Unde te-ai blocat? Ce ți-a plăcut? Ce ai schimba? Ai mai juca?
+
+Al șaselea pas. Cum dai feedback. Cu formula: mi-a plăcut, aș schimba, pentru că.
+
+Al șaptelea pas. Lista de probleme, în trei grupe: blocant, important, mic.
+
+Al optulea pas. Erorile din Output. Notezi scriptul și linia.
+
+Greșeli frecvente. Explici jocul în timpul testului. Te aperi când primești critici. Nu notezi nimic. Repari totul odată. Uiți să pui numele final la DataStore, mai târziu.
+
+Provocare Pro, opțională. Găsești un al treilea tester, din afara grupei, cu acord. Marchezi pe o schiță locurile unde cad cei mai mulți. Schimbi un singur lucru și refaci testul. Și scrii un raport pentru cel mai grav bug.
+
+Recapitulare. Observi, nu explici. Notezi, apoi ordonezi. Alegi primele trei lucruri. Succes cu testele.

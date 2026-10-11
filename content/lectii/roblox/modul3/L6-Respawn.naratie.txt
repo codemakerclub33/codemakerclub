@@ -1,0 +1,23 @@
+Lecția șase din Modulul trei. Cădere și respawn.
+
+Astăzi faci ca o cădere să aibă o regulă clară. Lucrezi pe Prenume, linie jos, Nume, linie jos, M trei.
+
+Obiectivul. Minim: Zona, linie jos, Cadere, un script Srv, linie jos, Zona care resetează jucătorul la cădere și statistica Caderi, care crește la fiecare reset, fără erori. Complet: minim, plus un mesaj pe ecran, un timp scurt de reapariție și pierderea unei monede la cădere, fără să cobori sub zero.
+
+Primul pas. Ce se întâmplă acum? Dacă cazi de pe hartă, tragi mult și reapari târziu.
+
+Al doilea pas. Zona de cădere este o plasă mare, sub traseu. Ancorată, cu coliziunea oprită, ca jucătorul să cadă prin ea, și aproape invizibilă. Trebuie să fie mai jos decât orice platformă.
+
+Al treilea pas. Cădere înseamnă reset. La atingere, dacă este un jucător viu, îi pui viața la zero. Verifici că este viu, ca să nu se repete.
+
+Al patrulea pas. Caderi. O statistică nouă, care crește la fiecare moarte. Legi evenimentul Died la fiecare personaj nou, la CharacterAdded.
+
+Al cincilea pas. Reapariție rapidă. Timpul de reapariție se poate scurta.
+
+Al șaselea pas. Mesaj și o mică pedeapsă. Afișezi Ai căzut, reapari la checkpoint. Scazi o monedă, cu math punct max, ca scorul să nu devină negativ.
+
+Greșeli frecvente. Zona cu coliziune activă: jucătorul stă pe ea. Zona mai sus decât o platformă. Zona prea mică. Resetul se repetă. Caderi nu crește, pentru că Died e legat o singură dată. Două scripturi fac reapariția: doar Srv, linie jos, Checkpoint mută jucătorul. Monede negative. Obby-ul devine imposibil de terminat.
+
+Provocare Pro, opțională. Faci o a doua zonă, de lavă, cu altă regulă. Afișezi un mesaj diferit după cinci căderi. Ții o hârtie cu locurile unde cad cel mai des colegii și înlocuiești unul prea greu. Și arăți Caderi pe ecran.
+
+Recapitulare. Zona de cădere este o plasă fără coliziune. Died se leagă la fiecare personaj nou. Succes cu căderile.

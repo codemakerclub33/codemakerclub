@@ -1,0 +1,21 @@
+Lecția șapte din Modulul trei. Timer sau vieți.
+
+Astăzi dai jocului un risc. Alegi o cale, vieți sau timer, iar la Complet le faci pe amândouă. Lucrezi pe Prenume, linie jos, Nume, linie jos, M trei.
+
+Obiectivul. Minim: o cale funcțională, vieți sau timer, cu un rezultat vizibil pentru jucător, fără erori. Complet: ambele căi împreună și un mesaj la game over sau când expiră timpul.
+
+Primul pas. Ce alegem? Viețile înseamnă că ai de trei ori o șansă. Timerul înseamnă că ai un timp limitat. Poți alege oricare.
+
+Al doilea pas. Calea vieților. Adaugi în leaderstats o statistică numită Vieti, cu valoarea trei. La fiecare moarte scazi una. Când ajunge la zero, este game over: etapa revine la zero, viețile la trei, iar jucătorul reîncepe.
+
+Al treilea pas. Calea timerului. Pui un IntValue numit Timp în ReplicatedStorage. Serverul numără înapoi, secundă după secundă. Clientul doar afișează valoarea, într-o etichetă. Pauza stă în buclă, cu task punct wait, altfel jocul se blochează.
+
+Al patrulea pas. Mesaj la finalul rundei. Când timpul expiră sau pierzi toate viețile, jucătorul vede un mesaj.
+
+Al cincilea pas. Ambele căi împreună. La expirarea timpului revin și viețile la trei. Verifici că nu se încurcă, iar mesajele nu se dublează.
+
+Greșeli frecvente. Vieti lipsește din leaderstats. Viețile nu scad: Died e legat o singură dată. După game over reapari la checkpoint: n-ai pus Etapa pe zero. Timp creat ca alt tip de valoare: trebuie IntValue. Timerul nu se vede, pentru că scriptul nu e în etichetă. While true fără pauză blochează totul. Timp prea scurt: Obby-ul nu se mai poate termina.
+
+Provocare Pro, opțională. Faci timerul roșu sub zece secunde. Adaugi o monedă specială, care dă trei secunde în plus. Arăți scorul final în mesajul de game over. Și ții durata într-o variabilă, ca să schimbi ușor dificultatea.
+
+Recapitulare. Viețile scad la fiecare moarte. Timerul este numărat de server și afișat de client. Succes cu riscul.

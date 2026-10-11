@@ -1,0 +1,23 @@
+Lecția unu din Modulul trei, Game Logic. Leaderstats: scorul fiecărui jucător.
+
+Astăzi dai fiecărui jucător un scor. Începi Modulul trei cu o copie nouă a Place-ului, numită: Prenume, linie jos, Nume, linie jos, M trei. O faci cu Save As, ca versiunea din Modulul doi să rămână întreagă. Obby-ul tău nu începe de la zero, ci crește.
+
+Obiectivul. Minim: un script numit Srv, linie jos, Leaderstats, care creează statistica Monede, cel puțin o monedă care dă plus unu și scorul vizibil în lista de jucători, fără erori. Complet: minim, plus toate monedele într-un Folder numit Monede, gestionate de un singur script, Srv, linie jos, Monede, iar moneda reapare după cinci secunde.
+
+Primul pas. Ce este leaderstats? Este un folder cu un nume special, pus pe jucător. Tot ce pui în el apare în lista de jucători din colțul ecranului. Numele se scrie exact, cu litere mici.
+
+Al doilea pas. Players și PlayerAdded. Serviciul Players știe toți jucătorii. Evenimentul PlayerAdded se declanșează când intră un jucător nou, iar scriptul îi creează scorul.
+
+Al treilea pas. Creezi scorul. Faci un folder numit leaderstats, adaugi în el un IntValue numit Monede, care ține un număr, începând cu zero. Folderul îl pui pe jucător abia la sfârșit, după ce ai adăugat statisticile.
+
+Al patrulea pas. Plasa de siguranță. Dacă un jucător a intrat înaintea scriptului, nu l-ar prinde evenimentul. De aceea parcurgi cu un for și jucătorii deja prezenți.
+
+Al cincilea pas. Moneda dă plus unu. La atingere, dacă este un jucător, adaugi unu la Monede. Folosești o frână, ca să nu o ia de zeci de ori, apoi moneda dispare.
+
+Al șaselea pas. Toate monedele, un singur script. Le pui într-un folder și le parcurgi cu un for. Ștergi scripturile vechi din monede, altfel punctele se dau de două ori. Moneda reapare după cinci secunde.
+
+Greșeli frecvente. Numele folderului diferit de leaderstats: nu apare nimic. Folderul pus pe jucător prea devreme. Script într-un Part, în loc de ServerScriptService. LocalScript în loc de Script: scorul se creează pe server. Scor dublu, pentru că a rămas și scriptul vechi.
+
+Provocare Pro, opțională. Pui pe fiecare monedă o valoare, ca atribut, și o citești în script. Creezi un titlu, care devine Colecționar la zece monede. Testezi cu doi jucători. Și explici de ce scorul îl creează serverul.
+
+Recapitulare. Leaderstats este folderul scorului, IntValue este un număr, serverul îl creează. Succes cu monedele.

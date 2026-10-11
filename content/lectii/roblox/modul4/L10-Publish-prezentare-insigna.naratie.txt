@@ -1,0 +1,25 @@
+Lecția zece din Modulul patru. Publicare, prezentare și insigna Roblox Creator.
+
+Astăzi îți prezinți jocul și, dacă este permis, îl publici. Lucrezi pe Prenume, linie jos, Nume, linie jos, Final.
+
+Obiectivul. Minim: o prezentare de trei minute, cu demo, un script explicat și o regulă de securitate, jocul final fiind salvat. Complet: minim, plus prezentarea în cinci puncte, publicarea conform regulilor, o reflecție scrisă pe cele patru module și un plan pentru ce urmează.
+
+Primul pas. Lista finală. Deschizi Final. Output-ul este curat. DataStore are numele final. Nu mai sunt scripturi sau valori de test. Salvezi.
+
+Al doilea pas. Publicarea, dacă este permis. Hotărâți cu profesorul: privat, public sau deloc. Dacă publici, testezi în Roblox Player și verifici salvarea. Dacă nu publici, prezinți din Studio, și este în regulă.
+
+Al treilea pas. Prezentarea durează trei până la cinci minute. Demo, un script explicat cu cuvinte simple, o regulă de securitate, DataStore și un bug rezolvat. Vorbești încet. Explici ideea, nu citești codul rând cu rând. Folosești formula: acest script face asta, atunci când se întâmplă aceea.
+
+Al patrulea pas. Când asculți. Aplauzi. Pregătești o întrebare sau un compliment, cu formula: mi-a plăcut, mă întreb.
+
+Al cincilea pas. Reflecția, de la Modulul unu la patru: ce ai învățat, ce a fost cel mai greu și de ce ești cel mai mândru.
+
+Al șaselea pas. Ce urmează? Mai multe niveluri, multiplayer, interfețe mai avansate, un joc cu poveste, alt limbaj, de exemplu Python sau C plus plus, sau modele 3D. Cele mai bune reguli: proiecte mici, pe care le termini, și învățat din greșeli.
+
+Insigna Roblox Creator. O primești dacă ai un joc final jucabil, folosești un ModuleScript sau DataStore, ai prezentat proiectul și ai respectat regulile de siguranță.
+
+Greșeli frecvente. Prezentare neexersată. Citești codul rând cu rând. Publici fără acord. Nu testezi în Player. Uiți numele final al DataStore-ului.
+
+Provocare Pro, opțională. Îți înregistrezi prezentarea, cu acord, sau o cronometrezi. Ajuți un coleg începător, cu metoda din lecția șapte. Faci o pagină de portofoliu cu captură, descriere și trei lucruri învățate. Și scrii numele, scopul și primii trei pași ai următorului proiect.
+
+Recapitulare. Un joc terminat este un început. Felicitări pentru tot drumul parcurs, de la primul Part până la un joc cu server, salvare și magazin.

@@ -258,6 +258,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Un „bonus de timp": o monedă specială care dă **+10 secunde** (indiciu: `timp.Value += 10` pe server)  
 - [ ] Testezi cu 2 jucători: fiecare își pierde viețile separat?
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Alertă:** timerul devine roșu când mai sunt sub 10 secunde (în `Cli_Timp`, cu `if`)  
+- [ ] **Monedă specială:** adaugă +3 secunde la timer *(serverul modifică `Timp`)*  
+- [ ] **Scor final:** mesajul de game over arată câte monede ai adunat  
+- [ ] **Dificultate:** o variabilă `DURATA` (ușor: 90, greu: 45) pe care o schimbi într-un singur loc  
+
 ## Recapitulare rapidă
 1. **Vieți** = `IntValue` în `leaderstats`, scade la `Died`, la 0 → game over  
 2. **Timer** = `IntValue` în `ReplicatedStorage`, **serverul numără**, clientul **afișează**  

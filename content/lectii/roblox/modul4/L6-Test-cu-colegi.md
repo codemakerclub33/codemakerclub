@@ -184,6 +184,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] **Joacă tu** jocul unui coleg și scrie **feedback după formula** „Mi-a plăcut…, aș schimba…"  
 - [ ] Numără **câte încercări** i-au trebuit colegului până la Finish — e un indicator bun de dificultate
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Al treilea tester:** cineva din afara grupei (un adult sau un frate/soră, cu acord), care nu a mai văzut jocul  
+- [ ] **Harta căderilor:** marchezi pe o schiță locurile unde cad cei mai mulți testeri  
+- [ ] **O schimbare, un retest:** schimbi **un singur lucru** (de ex. un gol mai mic) și refaci testul ca să vezi diferența  
+- [ ] **Raport de bug:** pentru cel mai grav bug scrii: *Ce am făcut / Ce s-a întâmplat / Ce mă așteptam / Cât de grav*  
+
 ## Recapitulare rapidă
 1. **Creatorul știe prea multe** → ai nevoie de ochi noi  
 2. Roluri: **jucător** (gândește cu voce tare), **observator** (tace și notează)  

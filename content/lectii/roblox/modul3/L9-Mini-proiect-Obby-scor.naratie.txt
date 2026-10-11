@@ -1,0 +1,21 @@
+Lecția nouă din Modulul trei. Mini-proiect: Obby cu scor.
+
+Astăzi legi tot ce ai învățat într-un Obby care se joacă. Lucrezi pe Prenume, linie jos, Nume, linie jos, M trei.
+
+Obiectivul. Minim: un Obby care se poate parcurge, scor vizibil, cel puțin un checkpoint cu script, fără erori. Complet: minim, plus un RemoteEvent folosit corect, timer sau vieți, un panou cu instrucțiuni și un coleg care joacă și îți dă feedback.
+
+Primul pas. Lista de verificare. Ce trebuie să existe în joc: traseu, monede, scor, checkpoint-uri, cădere, Finish.
+
+Al doilea pas. Fișa jocului, în trei rânduri. Numele jocului. Scopul: ce trebuie să facă jucătorul. Regula de risc: ce se întâmplă dacă cazi, checkpoint, vieți sau timp.
+
+Al treilea pas. Ordinea bună de lucru. Salvezi o copie de siguranță, cu terminația bak. Joci tot Obby-ul o dată și notezi ce nu merge. Apoi repari.
+
+Al patrulea pas. Minim: se joacă de la start la final.
+
+Al cincilea pas. Complet: bonusul cu pauză și suma stabilită de server, viețile sau timerul, un panou de instrucțiuni cu două sau trei rânduri, apoi un coleg joacă tot Obby-ul fără să-i explici, iar tu observi unde se oprește.
+
+Greșeli frecvente. Decor înainte de reguli. Scripturi duplicate, care dau scor dublu. Nume diferite, și scripturile nu găsesc obiectele. Etapa se resetează prost. Încerci să schimbi scorul din client. Obby imposibil. Testezi doar cu un jucător.
+
+Provocare Pro, opțională. Faci o bară de progres, care crește cu Etapa. Desenezi harta riscului, cu zonele ușoare, medii și grele. Un coleg joacă trei minute fără ajutor, iar tu notezi unde se oprește. Și verifici că ai o copie de siguranță care se deschide.
+
+Recapitulare. Mai întâi un joc care merge, apoi complicațiile. Serverul decide. Succes cu Obby-ul tău.

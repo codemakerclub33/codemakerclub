@@ -217,6 +217,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Scrii o **listă de „noutăți"** pentru o versiune viitoare (v2)  
 - [ ] Faci o captură ca „coperta" jocului și o explici
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Caută în tot jocul:** cauți numele caietului DataStore în **toate** scripturile (Find All în editor, dacă există în versiunea ta) ca să fii sigur că e unul singur  
+- [ ] **Note de versiune:** scrii „v1.0" cu 3 rânduri: ce are jocul și ce lipsește  
+- [ ] **Audit de confidențialitate:** un coleg citește numele, descrierea și iconița și caută date personale  
+- [ ] **Două descrieri:** scrii două variante și alegi, cu un coleg, care e mai clară  
+
 ## Recapitulare rapidă
 1. **Nume și descriere** clare, **fără date personale**  
 2. Începi **Privat**, publici doar cu acord  

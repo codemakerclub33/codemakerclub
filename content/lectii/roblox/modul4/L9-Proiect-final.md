@@ -177,6 +177,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Scrii un **plan v2** cu 5 idei ordonate  
 - [ ] Ajuți un coleg (acum chiar poți!) să-și repare un bug
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Mesaj de întâmpinare:** jucătorul nou vede o dată un mesaj scurt de ajutor  
+- [ ] **Lista de finisaje:** 5 lucruri mici care fac jocul să arate „gata", în ordinea valorii  
+- [ ] **Demo de 60 de secunde:** un traseu scurt prin joc pe care îl poți arăta rapid  
+- [ ] **Plan v2:** 5 idei ordonate, cu cât timp crezi că ar lua fiecare  
+
 ## Recapitulare rapidă
 1. **Feature freeze:** nu mai adaugi, finisezi  
 2. Parcurgi **lista finală**, apoi repari **blocantele**  

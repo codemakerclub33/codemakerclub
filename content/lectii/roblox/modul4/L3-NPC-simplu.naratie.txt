@@ -1,0 +1,21 @@
+Lecția trei din Modulul patru. Inamic simplu, un NPC.
+
+Astăzi adaugi în joc un inamic. Lucrezi pe Prenume, linie jos, Nume, linie jos, M patru.
+
+Obiectivul. Minim: un Part numit Inamic, care patrulează între două puncte, cu TweenService, și un script, Srv, linie jos, Inamic, care îi ia jucătorului treizeci și patru de viață, cu TakeDamage, cu pauză între lovituri, fără erori. Complet: minim, plus un al doilea inamic, Inamic, linie jos, Urmaritor, un personaj cu Humanoid, care urmărește cel mai apropiat jucător.
+
+Primul pas. Un inamic corect. Nu trebuie să fie nedrept: lovește rar, vizibil, și cu o pauză.
+
+Al doilea pas. Construiești inamicul. Un Part ancorat, cu nume clar, într-un loc care nu blochează traseul.
+
+Al treilea pas. Patrulare cu TweenService. Un Tween mută Part-ul lin între două puncte. Setezi durata, tipul mișcării, repetarea la nesfârșit și întoarcerea.
+
+Al patrulea pas. Lovitura. La atingere, dacă este un jucător, serverul îi ia treizeci și patru de viață, cu TakeDamage. O variabilă liber oprește loviturile repetate, apoi se deschide din nou după puțin timp.
+
+Al cincilea pas. Inamicul urmăritor. Este un personaj cu Humanoid, făcut cu Rig Builder. Script-ul caută cel mai apropiat jucător, calculând distanța, și îl mută spre el cu MoveTo. Serverul rămâne responsabil de mișcare, ca să nu apară sacadări. Verifici ca lovitura să vină doar de la propriul inamic.
+
+Greșeli frecvente. Inamicul nu este ancorat. Lovitura se repetă: lipsește pauza. Inamicul blochează traseul. Prea multă daună: jocul devine nedrept. Urmăritorul cade de pe hartă.
+
+Provocare Pro, opțională. Faci patrula între trei puncte. Faci un tabel cu viteza și dauna pentru fiecare tip de inamic. Schimbi scurt culoarea inamicului când lovește. Și calculezi câte lovituri poate primi un jucător, dacă fiecare ia treizeci și patru din o sută.
+
+Recapitulare. Tween mută lin. TakeDamage scade viața. Pauza face inamicul corect. Succes cu inamicii.

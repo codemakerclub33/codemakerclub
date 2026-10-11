@@ -1,0 +1,23 @@
+Lecția opt din Modulul trei. Bucla de joc curată.
+
+Astăzi închizi cercul jocului: joci, termini, primești o recompensă, reiei. Lucrezi pe Prenume, linie jos, Nume, linie jos, M trei.
+
+Obiectivul. Minim: un script, Srv, linie jos, Finish, care la atingerea lui Finish dă o victorie și zece monede, o singură dată pe terminare, și repornește jucătorul, fără erori, iar fiecare script este în locul și cu numele corect. Complet: minim, plus un mesaj pe ecran pentru jucător, un anunț pentru ceilalți, și un test cu doi jucători.
+
+Primul pas. Bucla de joc. Pornești, joci, ajungi la final, primești recompensa, reiei.
+
+Al doilea pas. Statistica Victorii, adăugată în leaderstats, cu valoarea zero.
+
+Al treilea pas. Scriptul de Finish. La atingere, dacă este un jucător, dă recompensa. Folosește o frână, un atribut numit Terminat, ca să nu o dea de zeci de ori. Apoi aduce etapa la zero și reîncarcă personajul, ca să reapară la start.
+
+Al patrulea pas. Curățenia. Fiecare script are prefixul corect și stă în locul potrivit. Nu ai duplicate. Output-ul este curat.
+
+Al cincilea pas. Mesajul de victorie. Jucătorul primește un mesaj pe ecran, iar ceilalți, un anunț: un jucător a terminat Obby-ul.
+
+Al șaselea pas. Testul cu doi jucători. Unele greșeli apar abia atunci.
+
+Greșeli frecvente. Finish cu alt nume: Output arată infinite yield. Recompensă de zeci de ori: lipsește frâna. Nu reapari după finish. Victorii lipsește. Scripturi vechi rămase, care dau scor dublu. Testezi cu un singur jucător. Ștergi un script fiindcă nu știi la ce e, dar poate ține un mecanism.
+
+Provocare Pro, opțională. Dai mai mult la Finish dacă ai cel puțin zece monede. Afișezi numărul victoriei. Testezi cu doi jucători, în care unul termină și celălalt vede anunțul. Și faci o listă cu toate scripturile tale, locul și rolul lor.
+
+Recapitulare. Bucla jocului se închide cu recompensă și repornire. Frâna oprește recompensa dublă. Serverul dă recompensa. Succes cu bucla de joc.

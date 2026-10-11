@@ -1,0 +1,25 @@
+Lecția doi din Modulul patru. DataStore: jocul își amintește.
+
+Astăzi înveți să salvezi datele jucătorului, ca să le găsească și a doua zi. Lucrezi pe Prenume, linie jos, Nume, linie jos, M patru.
+
+Obiectivul. Minim: un modul, Mod, linie jos, Salvare, și un script, Srv, linie jos, Salvare, care salvează și încarcă o valoare, Monede, cu pcall, iar la al doilea Play monedele sunt aceleași ca la ieșire, fără erori. Complet: minim, plus două valori într-un tabel, Monede și Victorii, și o autosalvare la fiecare șaizeci de secunde.
+
+Primul pas. Ce este un DataStore? Este un caiet pe serverele Roblox, în care scrii și citești date. Fiecare jucător are o filă a lui, după un număr unic, UserId.
+
+Al doilea pas. Pregătim Studio. Trebuie activat accesul Studio la serviciile API, în setările jocului, la secțiunea Security. Fără asta, în Studio nu poți salva.
+
+Al treilea pas. Pcall înseamnă încearcă, dar nu te prăbuși. Salvarea poate eșua, de exemplu fără internet. Pcall prinde eroarea, iar jocul merge mai departe.
+
+Al patrulea pas. Modulul pentru salvare are două funcții: încarcă și salvează. Dacă încărcarea a eșuat, nu salvezi niciodată peste date, ca să nu ștergi progresul cu zero. De aceea ai o protecție.
+
+Al cincilea pas. Când citim și când scriem. La intrarea jucătorului citim. La ieșire scriem. Și la închiderea serverului scriem, cu BindToClose. Citirea rulează într-un fir separat, ca să nu blocheze jocul.
+
+Al șaselea pas. Date de test și versiuni. Ca să nu strici datele reale în timpul testelor, folosești un nume de caiet de test, de exemplu cu terminația v unu, v doi. La final îl pui pe cel final.
+
+Al șaptelea pas. Două valori într-un tabel și autosalvare la șaizeci de secunde.
+
+Greșeli frecvente. Accesul API neactivat. Salvezi fără protecție la încărcarea eșuată. Nu salvezi la ieșire. Cheia de salvare diferă între citire și scriere. Încerci să salvezi un lucru care nu se poate salva.
+
+Provocare Pro, opțională. Adaugi în datele salvate un număr de versiune. Salvezi ora ultimei vizite și afișezi cât a trecut. Simulezi o încărcare eșuată și verifici că datele nu sunt șterse. Și scrii pe hârtie ce salvezi și ce nu.
+
+Recapitulare. DataStore este un caiet. Pcall protejează jocul. Nu scrii peste date dacă încărcarea a eșuat. Succes cu salvarea.

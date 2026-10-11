@@ -284,6 +284,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Inamicul **moare** dacă sari pe el (verifici dacă `hit` e deasupra) — cercetează și întreabă  
 - [ ] `PAUZA` **per jucător** (cu un `Attribute`, ca la M3 L8), ca un jucător să nu „acopere" lovitura altuia
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Trei puncte:** inamicul patrulează între **3** puncte, nu doar între două  
+- [ ] **Inamici diferiți:** un tabel cu viteză și daună pentru fiecare tip de inamic (ușor, mediu, greu)  
+- [ ] **Semnal:** inamicul își schimbă scurt culoarea când lovește  
+- [ ] **Matematica loviturii:** calculezi cu cât a murit un jucător: cu 34 de daună, câte lovituri pot fi primite din 100 de viață?  
+
 ## Recapitulare rapidă
 1. **NPC** = personaj sau obiect controlat de joc, **pe server**  
 2. **`TweenService`** animă o proprietate (de ex. `Position`) fără bucle  

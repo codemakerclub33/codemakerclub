@@ -165,6 +165,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] O **platformă de odihnă** cu checkpoint, în fața celei mai grele secțiuni  
 - [ ] Notezi pe foaie 3 idei pentru **M4** (ex. „aș vrea să-mi rămână scorul după ce ies din joc")
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Bară de progres:** un `Frame` a cărui lățime crește cu `Etapa`  
+- [ ] **Harta riscului:** o schiță cu zonele ușoare, medii și grele ale Obby-ului și unde sunt checkpoint-urile  
+- [ ] **Test de 3 minute:** un coleg joacă fără ajutor, iar tu notezi unde se oprește și de ce  
+- [ ] **Copia de siguranță:** verifici că `Prenume_Nume_M3_bak` se deschide și are tot  
+
 ## Recapitulare rapidă
 1. Minim = **se joacă** (traseu + scor + checkpoint)  
 2. Complet = + RemoteEvent corect + risc + instrucțiuni + ochi de coleg  

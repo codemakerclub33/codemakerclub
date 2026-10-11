@@ -1,0 +1,25 @@
+Lecția șapte din Modulul patru. Depanare: cum vânezi un bug.
+
+Astăzi înveți o metodă pentru a găsi și a repara greșelile din cod. Lucrezi pe Prenume, linie jos, Nume, linie jos, M patru.
+
+Obiectivul. Minim: repari trei bug-uri, folosind metoda în cinci pași, cu retest și Output curat. Complet: minim, plus toate cele șase bug-uri din vânătoare, primele trei din lista de la lecția șase și un test complet al jocului.
+
+Primul pas. Metoda în cinci pași. Reproduci bug-ul. Citești mesajul din Output. Izolezi locul, cu print-uri. Repari, schimbând un singur lucru odată. Retestezi tot jocul.
+
+Al doilea pas. Cum citim o eroare. Mesajul spune scriptul, linia și problema. Un click pe mesaj te duce la linie. Mesaje frecvente: ai încercat să iei ceva dintr-un obiect care nu există. Ceva nu este un membru valid. Un avertisment galben, infinite yield, arată că aștepți ceva care nu apare. Lipsește un end sau un then. Un while fără pauză dă eroare de timp depășit.
+
+Al treilea pas. Instrumentele. Output, print, warn, breakpoint, adică un punct de oprire pe care profesorul îl arată, și analiza scriptului din editor.
+
+Al patrulea pas. Vânătoarea de bug-uri. Șase mici coduri cu greșeli: un then uitat, un nume greșit la Finish, un semn egal în loc de două, un while fără pauză, o recompensă dată de mai multe ori și un LocalScript care schimbă scorul doar la client.
+
+Al cincilea pas. Bug-urile tale. Iei primele trei din lista de la lecția șase și aplici metoda.
+
+Al șaselea pas. Testul complet. După reparații, joci tot jocul, ca să vezi dacă n-ai stricat altceva.
+
+Al șaptelea pas. Actualizezi lista: rezolvat, amânat sau nu e bug.
+
+Greșeli frecvente. Schimbi mai multe lucruri odată. Nu citești Output-ul. Ștergi codul care nu merge. Lași print-urile de test. Nu retestezi tot.
+
+Provocare Pro, opțională. Faci o funcție care scrie avertismente cu numele scriptului. Colecționezi cele mai ciudate trei bug-uri ale tale. Găsești un bug la un coleg și îl raportezi cu pașii. Și, cu profesorul, oprești scriptul la o linie și citești valorile.
+
+Recapitulare. Reproduc, citesc, izolez, repar un singur lucru, retestez. Succes la vânătoare.

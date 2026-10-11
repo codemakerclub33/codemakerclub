@@ -241,6 +241,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Folosești un **breakpoint** (cu profesorul) și citești valorile variabilelor  
 - [ ] Faci o **listă a celor mai frecvente 5 bug-uri** ale tale, cu cum le recunoști
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Funcția `jurnal`:** o mică funcție care scrie `warn` cu numele scriptului și un mesaj, ca să găsești repede de unde vine  
+- [ ] **Muzeul tău:** colecția celor mai ciudate 3 bug-uri **ale tale**, cu cauza fiecăruia  
+- [ ] **Vânător la colegi:** găsești și raportezi un bug în jocul unui coleg, cu pașii de reproducere  
+- [ ] **Breakpoint:** cu profesorul, oprești scriptul la o linie și citești valorile variabilelor  
+
 ## Recapitulare rapidă
 1. **Metoda:** Reproduc → Citesc → Izolez → Repar (**un lucru odată**) → Retestez  
 2. Mesajul de eroare spune **scriptul**, **linia**, **problema**  

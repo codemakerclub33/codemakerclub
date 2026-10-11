@@ -255,6 +255,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] **Buton de mute** pentru muzică, în interfață (`Muzica.Volume = 0` din LocalScript — doar pentru tine)  
 - [ ] Un **ecran de titlu** cu numele jocului și tema
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Zi → seară:** cu `TweenService` muți încet `Lighting.ClockTime` (de ex. de la 14 la 18, în 60 de secunde)  
+- [ ] **Buton „mut":** un buton care oprește sau pornește muzica doar pentru jucătorul respectiv  
+- [ ] **Paletă:** folosești maximum 3 culori principale în tot jocul și poți explica de ce  
+- [ ] **Lizibilitate:** verifici că textele se citesc pe fundal și pe un ecran mai mic  
+
 ## Recapitulare rapidă
 1. **Temă + paletă** = baza unui joc care arată bine  
 2. **Lighting**: `ClockTime`, efecte (`Atmosphere`, `Bloom`, `ColorCorrection`)  

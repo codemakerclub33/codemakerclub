@@ -223,6 +223,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Zonă de **lavă** colorată (Part roșu, cu script ca la M2 L6) în plus față de `Zona_Cadere`  
 - [ ] O platformă „de relaxare" cu un `TextLabel` în lume care spune „Respiră. Ai trecut de partea grea."
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **A doua zonă:** `Zona_Lava` cu altă regulă (pierzi 2 monede, nu 1; tot fără să cobori sub 0)  
+- [ ] **Mesaj diferit:** după 5 căderi apare „Respiră și încearcă din nou!"  
+- [ ] **Hartă a căderilor:** ții o hârtie cu locurile unde cad cel mai des colegii; înlocuiești unul prea greu  
+- [ ] **Căderi pe ecran:** `Caderi` apare într-un `TextLabel`  
+
 ## Recapitulare rapidă
 1. **Zona de cădere** = Part mare sub traseu, `CanCollide` oprit, la atingere `Health = 0`  
 2. **`Humanoid.Died`** se leagă la **fiecare** personaj nou (`CharacterAdded`)  

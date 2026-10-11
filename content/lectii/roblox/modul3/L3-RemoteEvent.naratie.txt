@@ -1,0 +1,23 @@
+Lecția trei din Modulul trei. RemoteEvent: clientul vorbește cu serverul.
+
+Astăzi înveți cum trimite jucătorul o cerere către server. Lucrezi pe Prenume, linie jos, Nume, linie jos, M trei.
+
+Obiectivul. Minim: un RemoteEvent numit Ev, linie jos, Bonus, un buton Btn, linie jos, Bonus cu LocalScript, și un Script, Srv, linie jos, Bonus, care la apăsare afișează numele jucătorului în Output și îi dă cinci monede, fără erori. Complet: minim, plus un al doilea RemoteEvent, Ev, linie jos, Mesaj, prin care serverul trimite jucătorului un mesaj pe ecran: Ai primit cinci monede.
+
+Primul pas. Analogia telefonului. Clientul și serverul nu pot vorbi direct. Un RemoteEvent este telefonul dintre ei.
+
+Al doilea pas. Pregătești telefonul. RemoteEvent-ul se pune în ReplicatedStorage, un loc pe care îl văd ambele părți.
+
+Al treilea pas. Butonul de pe ecran, în GUI. LocalScript-ul din buton, la click, trimite cererea cu FireServer.
+
+Al patrulea pas. Serverul răspunde. Cu OnServerEvent primește cererea. Primul parametru este întotdeauna jucătorul care a trimis-o. Serverul adaugă cele cinci monede.
+
+Al cincilea pas. Cine este client și cine este server în Output? Mesajele de pe server și cele de pe client se pot recunoaște după locul de unde vin.
+
+Al șaselea pas. Serverul vorbește clientului. Cu FireClient trimite un mesaj unui jucător anume. Pe client, OnClientEvent îl primește și îl afișează.
+
+Greșeli frecvente. RemoteEvent în ServerScriptService, nu în ReplicatedStorage: clientul nu îl vede. Nume diferite, cu literă mare sau mică. FireServer folosit într-un Script: se folosește doar în LocalScript. FireClient fără jucător ca prim argument. Aștepți răspuns de la FireServer: nu întoarce nimic. Conectezi evenimentul în două scripturi și mesajul apare de două ori.
+
+Provocare Pro, opțională. Faci un al doilea buton, care trimite cuvântul mare. Faci butonul să afișeze Așteaptă trei secunde, doar vizual. Desenezi drumul unui click, de la buton la mesaj. Și explici de ce FireServer nu întoarce un răspuns.
+
+Recapitulare. RemoteEvent este telefonul. FireServer trimite la server, FireClient trimite la client. Succes cu telefonul.

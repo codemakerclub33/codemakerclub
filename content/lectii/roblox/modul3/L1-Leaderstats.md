@@ -281,6 +281,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Un `print` cu `player.Name .. " are " .. player.leaderstats.Monede.Value .. " monede"` la fiecare monedă  
 - [ ] Testezi cu **2 jucători**: **Test → Clients and Servers** → fiecare are scorul lui?
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Valoare per monedă:** pui pe fiecare monedă un `Attribute` numit `Valoare` (ex. `1` sau `5`) și în `Srv_Monede` citești `moneda:GetAttribute("Valoare") or 1`  
+- [ ] **Titlu:** o statistică `Titlu` (`StringValue`, text) care devine `"Colecționar"` când ai cel puțin 10 monede  
+- [ ] **Doi jucători:** testezi cu doi jucători și verifici că fiecare are **scorul lui**  
+- [ ] **Explicație:** spui unui coleg de ce `leaderstats` trebuie creat de **server**  
+
 ## Recapitulare rapidă
 1. **`leaderstats`** = folder pe `Player`; ce pui în el apare în listă  
 2. Se creează pe **server**, la `PlayerAdded` (+ bucla pentru cei deja intrați)  

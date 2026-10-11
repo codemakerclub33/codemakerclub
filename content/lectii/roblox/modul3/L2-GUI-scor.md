@@ -189,6 +189,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Un **text care apare doar** la 10 monede („Ești campion!") — `Visible = true/false`  
 - [ ] Testezi în **Test → Clients and Servers** cu 2 jucători: fiecare vede **scorul lui**?
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Format „X / Y":** textul arată `Monede: 3 / 20` (cu numărul total de monede din folder)  
+- [ ] **Aspect:** adaugi `UICorner` (colțuri rotunjite) și `UIStroke` (contur) pe panou  
+- [ ] **Trepte de culoare:** textul e alb, galben de la 5 monede, verde de la 10 (`if / elseif / else`)  
+- [ ] **Record local:** un al doilea `TextLabel` care arată cel mai mare scor din sesiune, ținut într-o variabilă în `Cli_Scor`  
+
 ## Recapitulare rapidă
 1. **GUI** = interfața de pe ecran; stă în **StarterGui**, în `ScreenGui`  
 2. **LocalScript** în GUI citește valorile de la server  

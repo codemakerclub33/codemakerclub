@@ -231,6 +231,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Un **sunet** (`Sound`) la Finish — pui un `Sound` în `Finish` și `finish.Sound:Play()`  
 - [ ] Un **alt fel de final**: un al doilea `Finish2` (alt traseu) cu alt premiu
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Finish cu bonus:** dacă ai cel puțin 10 monede, `Srv_Finish` dă +20 în loc de +10  
+- [ ] **Mesaj cu număr:** „Ai ajuns la Finish! Victoria numărul N" (cu `..` și `Victorii`)  
+- [ ] **Două sesiuni:** testezi cu doi jucători, în care unul termină și celălalt vede anunțul  
+- [ ] **Inventar de scripturi:** faci o listă cu **toate** scripturile tale: nume, loc, ce face (un rând pentru fiecare)  
+
 ## Recapitulare rapidă
 1. **Bucla de joc:** pornești → joci → final → recompensă → reiei  
 2. **Frâna** (`Attribute`) oprește recompensa dublă  

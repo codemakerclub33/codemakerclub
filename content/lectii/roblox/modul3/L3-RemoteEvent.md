@@ -213,6 +213,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] `Ev_Mesaj:FireAllClients("Cineva a luat bonusul!")` — **toți** jucătorii văd mesajul  
 - [ ] Gândește-te: ce s-ar întâmpla dacă cineva ar apăsa butonul de **1000** de ori? *(chiar despre asta e L4)*
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Al doilea buton:** `Btn_Mare` care trimite spre server textul `"mare"` prin același `Ev_Bonus`; serverul hotărăște suma  
+- [ ] **Buton „obosit":** după apăsare, textul butonului devine `Așteaptă…` trei secunde *(doar vizual; serverul decide oricum, ca la L4)*  
+- [ ] **Schema:** desenezi pe hârtie drumul unui click: buton → `FireServer` → `OnServerEvent` → `FireClient` → mesaj  
+- [ ] **De ce nu avem răspuns direct?** explici de ce `FireServer` nu întoarce nimic  
+
 ## Recapitulare rapidă
 1. **RemoteEvent** = telefon între client și server · stă în **ReplicatedStorage**  
 2. **Client → server:** `FireServer(…)` → pe server `OnServerEvent:Connect(function(player, …))`  

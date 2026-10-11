@@ -292,6 +292,12 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Afișezi în Output, cu `print`, **toate** monedele fiecărui jucător când cineva termină Obby-ul  
 - [ ] Explici colegului, în 3 propoziții, ce e un modul
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **`scade` fără minus:** adaugi în `Mod_Statistici` o funcție `scade(player, numeStat, cantitate)` care nu coboară sub 0 (cu `math.max`)  
+- [ ] **Modul de configurare:** un `Mod_Config` cu constantele jocului (de ex. `DURATA`, `VALORI`), folosit de mai multe scripturi  
+- [ ] **Raport:** o funcție care întoarce un text cu toate statisticile unui jucător și o afișezi în Output  
+- [ ] **O singură dată:** explici de ce un `ModuleScript` rulează o singură dată, iar toate scripturile primesc **aceeași** tabelă de la `require`  
+
 ## Recapitulare rapidă
 1. **ModuleScript** = trusă de funcții care nu rulează singură; se termină cu **`return`**  
 2. `require(modul)` aduce trusa într-un script (o dată, sus)  

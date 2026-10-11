@@ -1,0 +1,27 @@
+Lecția patru din Modulul patru. Magazinul din joc.
+
+Astăzi faci un magazin în care jucătorul cheltuiește monedele. Atenție mare la siguranță: serverul verifică plata. Lucrezi pe Prenume, linie jos, Nume, linie jos, M patru.
+
+Obiectivul. Minim: un modul, Mod, linie jos, Magazin, cu un articol, Viteza, la zece monede, un script, Srv, linie jos, Magazin, și un buton pe ecran care trimite doar numele articolului. Serverul verifică articolul, banii și dacă îl ai deja. Efectul, adică alergi mai repede, rămâne și după reapariție. Complet: minim, plus al doilea articol, Salt, o pauză între cereri, mesaje clare, iar puterile se salvează.
+
+Primul pas. Regulile unui magazin sigur. Clientul spune doar ce vrea, nu prețul. Serverul știe prețul și verifică totul.
+
+Al doilea pas. Un dicționar în dicționar. Fiecare articol are un nume și, în el, un preț.
+
+Al treilea pas. Funcții care întorc două valori. Funcția de cumpărare spune dacă a reușit și un mesaj.
+
+Al patrulea pas. Modulul Mod, linie jos, Magazin. Verifică tipul cererii, dacă articolul există, dacă nu îl ai deja și dacă ai destule monede. Apoi aplică efectul: viteza de mers crește, iar pentru salt se schimbă înălțimea săriturii.
+
+Al cincilea pas. Telefonul și serverul. Un RemoteEvent, Ev, linie jos, Cumpara, duce cererea la server.
+
+Al șaselea pas. Magazinul pe ecran. Butoanele au chiar numele articolelor, iar scriptul trimite doar numele butonului.
+
+Al șaptelea pas. Testul de păcălire, doar în propriul joc: încerci cereri false și vezi că serverul le refuză.
+
+Al optulea pas. Articol nou, pauză și salvare. Cu o pauză între cereri și cu puterile salvate în DataStore.
+
+Greșeli frecvente. Prețul vine de la client. Nu verifici dacă ai deja articolul. Efectul dispare la reapariție. Nu există mesaje pentru jucător. Uiți să salvezi puterile.
+
+Provocare Pro, opțională. Adaugi un articol, Viata, care dă o viață în plus. Serverul scrie un jurnal al cumpărăturilor. Încerci trei cereri false și notezi răspunsurile. Și explici de ce prețul nu se verifică doar în butonul de pe ecran.
+
+Recapitulare. Clientul cere, serverul verifică și plătește. Succes cu magazinul.

@@ -175,6 +175,12 @@ La finalul modulului primești **insigna Roblox Creator** dacă:
 - [ ] Alegi **proiectul următor** și scrii primul pas  
 - [ ] Ajuți un coleg care a rămas în urmă
 
+## Provocare Pro (opțional, după Complet)
+- [ ] **Prezentare înregistrată:** te filmezi (cu acord) sau te cronometrezi și îți îmbunătățești prezentarea  
+- [ ] **Mentor:** ajuți un coleg începător să-și rezolve un bug, cu metoda în 5 pași din L7  
+- [ ] **Portofoliu:** o pagină cu nume, captură, descriere și 3 lucruri învățate  
+- [ ] **Următorul proiect:** scrii numele, scopul și primii 3 pași  
+
 ## Recapitulare rapidă
 1. **Prezentarea:** demo → script → securitate → DataStore → bug  
 2. **Publicare** doar cu **acord**; Privat e implicit  
