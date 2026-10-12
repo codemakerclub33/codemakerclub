@@ -75,6 +75,10 @@ Pentru fiecare problemă notată:
 
 **Ordinea:** întâi Blocant, apoi Important. Micile — doar dacă ai timp.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Reparații și finisări”  
+- [ ] Ce văd pe ecran seamănă cu descrierea  
+
 ### 4) Testul cu un coleg
 Fără să-l ajuți:
 1. Dai colegului jocul (în Studio, pe calculatorul tău sau în echipa de test).  
@@ -114,6 +118,10 @@ Completează:
 
 > Dacă strici ceva după `_FINAL`, te întorci la ultima versiune bună (profesorul te ajută).
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Copia `_FINAL`”  
+- [ ] Ce văd pe ecran seamănă cu descrierea  
+
 ### 7) Pregătirea prezentării *(Complet)*
 La L10 prezinți 3–5 minute:
 1. **Demo:** joacă-ți jocul (1–2 min)  
@@ -123,6 +131,10 @@ La L10 prezinți 3–5 minute:
 5. **Un bug rezolvat:** cum l-ai găsit
 
 Pregătești pe hârtie câte **o propoziție** pentru fiecare.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Pregătirea prezentării”  
+- [ ] Ce văd pe ecran seamănă cu descrierea  
 
 ---
 

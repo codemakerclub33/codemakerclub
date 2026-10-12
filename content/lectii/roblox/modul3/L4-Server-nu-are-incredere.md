@@ -79,6 +79,10 @@ Aici, orice cod care sună serverul poate trimite `suma = 1000000`.
 
 **Frază de ținut minte:** *„Clientul poate minți. Serverul verifică."*
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Regulile serverului”  
+- [ ] Ce văd pe ecran seamănă cu descrierea  
+
 ### 3) Pauza între bonusuri (cooldown)
 Un jucător poate cere bonus doar la **30 de secunde**. Trebuie să ținem minte **când** a cerut ultima oară. Pentru asta folosim un **„post-it" pe jucător**: un **Attribute**.
 

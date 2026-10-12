@@ -190,6 +190,10 @@ end
 
 *Ai nevoie de `Ev_Mesaj` și `Txt_Mesaj` / `Cli_Mesaj` (M3 L3 §6). Dacă nu le ai, le faci acum — 5 minute.*
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Telefonul și serverul”  
+- [ ] Merge fără erori roșii în Output (dacă apar, citesc mesajul și repar)  
+
 ### 6) Magazinul pe ecran
 1. În `GUI_Joc`: **+** → **Frame** → **`Magazin`** (un panou, pe marginea ecranului)  
 2. În `Magazin`: **+** → **TextButton** → numește-l **`Viteza`** (**exact** ca articolul!) · `Text` = `Viteză — 10 monede`  

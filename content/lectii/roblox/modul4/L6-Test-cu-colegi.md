@@ -70,6 +70,10 @@ La început, **înainte** să joace, arată colegului ecranul jocului **30 de se
 
 Dacă nu ghicește scopul, **instrucțiunile și interfața** trebuie îmbunătățite.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Testul celor 30 de secunde”  
+- [ ] Ce văd pe ecran seamănă cu descrierea  
+
 ### 4) Foaia de observații
 Pe foaie (sau în caiet) faci un tabel:
 

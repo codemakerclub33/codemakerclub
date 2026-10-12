@@ -57,6 +57,10 @@ Pentru fiecare săgeată întreabă-te:
     adaugaStat(leaderstats, "Victorii", 0)
 ```
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Statistica `Victorii`”  
+- [ ] Merge fără erori roșii în Output (dacă apar, citesc mesajul și repar)  
+
 ### 3) `Srv_Finish`
 Platforma `Finish` din M1 trebuie să se numească exact **`Finish`** și să fie în Workspace. În **ServerScriptService** creează `Srv_Finish` și completează `____`:
 

@@ -186,6 +186,10 @@ local Ev_Mesaj = ReplicatedStorage:WaitForChild("Ev_Mesaj")
 
 *(`Srv_Timp` are deja `local ReplicatedStorage` — nu-l scrie a doua oară în același script; adaugi doar linia cu `Ev_Mesaj`.)*
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Mesaj la finalul rundei / game over”  
+- [ ] Merge fără erori roșii în Output (dacă apar, citesc mesajul și repar)  
+
 ### 5) Ambele căi împreună *(Complet)*
 Când le ai pe amândouă:
 

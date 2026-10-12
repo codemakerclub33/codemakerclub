@@ -61,6 +61,10 @@ Imaginează-ți că **serverul** e un arbitru într-o cameră închisă, iar **c
 
 Atât. Un RemoteEvent nu are cod în el; el doar **duce** mesaje.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Pregătim telefonul”  
+- [ ] Ce văd pe ecran seamănă cu descrierea  
+
 ### 3) Butonul pe ecran
 1. În `GUI_Joc` (de la L2): **+** → **TextButton** → redenumește **`Btn_Bonus`**  
 2. Properties: `Text` = `Cere bonus (+5)` · `Position` jos-mijloc (ex. `{0.4, 0}, {0.88, 0}`) · `Size` = `{0.2, 0}, {0.08, 0}` · `TextScaled` bifat  

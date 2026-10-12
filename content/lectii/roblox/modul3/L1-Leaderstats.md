@@ -124,6 +124,10 @@ Cum se citește:
 - `.Parent = …` pus **ultimul** = „abia acum îl pun în lume, când e gata"  
 - Mai târziu adăugăm statistici noi cu **o singură linie**: `adaugaStat(leaderstats, "Etapa", 0)`
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Creăm scorul”  
+- [ ] Merge fără erori roșii în Output (dacă apar, citesc mesajul și repar)  
+
 ### 5) Plasa de siguranță: jucătorii care sunt deja în joc
 În Studio, la Play, jucătorul tău poate intra **înainte** ca scriptul să fie gata, și atunci `PlayerAdded` nu mai „prinde" evenimentul. Adăugi **la final** în script:
 

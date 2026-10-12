@@ -151,6 +151,10 @@ După modificări, **ambele** sunt necesare dacă vrei ca jucătorii să vadă s
 
 **De ce testăm în Player:** în Studio e „aproape" la fel, dar în joc real pot apărea diferențe (ping, mai mulți jucători, datele salvate).
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Publicare privată + test”  
+- [ ] Ce văd pe ecran seamănă cu descrierea  
+
 ### 10) Lista de verificare înainte de lansare
 - [ ] Nume + descriere gata, fără date personale  
 - [ ] Setări: Privat, dispozitive testate  

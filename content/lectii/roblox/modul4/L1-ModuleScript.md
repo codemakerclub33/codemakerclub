@@ -212,6 +212,10 @@ Folosește-le:
 - `Srv_Finish`: `Statistici.adauga(player, "Victorii", 1)` și `Statistici.adauga(player, "Monede", BONUS_MONEDE)` (după ce pui `require` sus în fiecare script)  
 - `Statistici.ia(player, "Monede")` îți dă numărul de monede (de exemplu pentru un `if`)
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Mai multe unelte”  
+- [ ] Merge fără erori roșii în Output (dacă apar, citesc mesajul și repar)  
+
 ### 7) Valorile monedelor într-o tabelă *(Complet)*
 Dacă ai monede diferite (`Moneda`, `MonedaMare`), pune valorile într-un **dicționar**, în `Srv_Monede`, sus:
 

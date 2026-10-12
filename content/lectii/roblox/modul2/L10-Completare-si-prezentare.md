@@ -95,6 +95,10 @@ end
 3. Abia apoi **al doilea** (pentru Complet)  
 4. La fiecare pas: **Play · Stop · Salvat**
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Completare — lucru individual”  
+- [ ] Ce văd pe ecran seamănă cu descrierea  
+
 ### 5) Prezentare (1–2 minute)
 Spui, în ordine:
 1. **Ce mecanisme** are Obby-ul tău (monedă, ușă, semnal…)  

@@ -55,6 +55,10 @@ Ce trebuie să facă jocul:
 
 *Nu ai trei? Pune `Checkpoint1` + `Checkpoint2` pentru Minim; pentru Complet mai adaugi unul.*
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Pregătim lumea”  
+- [ ] Ce văd pe ecran seamănă cu descrierea  
+
 ### 3) Adăugăm `Etapa` în scor
 În `Srv_Leaderstats` (L1), sub linia cu `Monede`, adaugi **o linie**:
 
