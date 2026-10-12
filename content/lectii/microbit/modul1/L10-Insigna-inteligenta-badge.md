@@ -70,6 +70,10 @@ on shake
 
 **Ce vezi pe ecran:** mai întâi trece numele. Apoi: A → față veselă · B → temperatura (de exemplu `23`) · scuturare → bifă sau X.
 
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
+
 ### 3) Complet — lumina și contorul
 Creezi variabila `apasari` (câte ori ai apăsat A).
 
@@ -102,6 +106,10 @@ on shake
 - La a 10-a apăsare de A, fața veselă e înlocuită imediat de **inimă**, apoi contorul pornește iar de la `0`.  
 - **A+B** derulează valoarea luminii (de la 0 la 255).  
 - Dacă apeși două butoane în același timp cu scuturarea, blocurile pot rula **unul peste altul**. Testează pe rând.
+
+**Gata când:**  
+- [ ] Blocurile pentru „Complet” sunt adăugate  
+- [ ] Simulatorul face tot ce scrie în „Complet”  
 
 ### 4) Testul insignei
 Dă insigna unui coleg și lasă-l să-i testeze toate gesturile. El notează:

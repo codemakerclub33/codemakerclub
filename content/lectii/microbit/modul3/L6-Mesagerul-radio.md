@@ -63,6 +63,10 @@ while True:
 ```
 De fiecare dată când apeși A, mesajul pleacă; bifa apare pentru o clipă.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 2 — Primim
 ```python
 from microbit import *
@@ -82,6 +86,10 @@ while True:
 
 **Ce vezi pe placă:** la apăsarea lui A pe placa colegului, tu vezi derulând `salut`.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 3 — Același program pe ambele plăci
 Fiecare placă poate trimite **și** primi.
 ```python
@@ -100,6 +108,10 @@ while True:
     sleep(50)
 ```
 Descarci **același** program pe ambele plăci. Apeși A pe una și pe cealaltă derulează `salut`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 4 — Coduri în loc de cuvinte
 Trimitem coduri scurte, apoi **traducem** codul în imagini.
@@ -125,6 +137,10 @@ while True:
 ```
 Codurile sunt scrise între **ghilimele** (`"1"`), chiar dacă sunt cifre, pentru că `radio.send` trimite doar text.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 5 — Un mesaj necunoscut
 Ce facem dacă vine altceva decât `"1"` sau `"2"`? Folosim `else`.
 ```python
@@ -146,6 +162,10 @@ while True:
 ```
 `elif mesaj:` înseamnă „a venit **ceva**, dar nu `1` sau `2`”.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 6 — Alegem grupul cu o variabilă
 ```python
 from microbit import *
@@ -157,6 +177,10 @@ radio.config(group=GRUP)
 display.scroll(str(GRUP))
 ```
 Fiecare pereche își pune propriul număr, iar placa îl arată la pornire.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 7 — Mai mulți colegi, mai multe grupuri
 Doi colegi din **grupuri diferite** nu se aud. Încearcă: ține o placă pe grupul `7` și alta pe `8`. Apeși A: nu se întâmplă nimic. Radio **nu e secret**: cine e în același grup și în apropiere poate citi mesajele, deci nu trimitem date personale.
@@ -183,6 +207,10 @@ while True:
 ```
 Pe una dintre plăci trimiți mesaje la fiecare 200 ms. Pe cealaltă vezi **bara de semnal** crescând când te apropii.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 8** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 9 — Putere de transmisie
 `radio.config(power=…)` alege cât de departe ajunge semnalul: de la `0` (foarte slab) la `7` (cel mai puternic, 6 e implicit).
 ```python
@@ -195,6 +223,10 @@ radio.send("slab")
 display.show(Image.YES)
 ```
 La **putere mică** plăcile trebuie să fie mai aproape.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 9** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 10 — Mesagerul
 ```python
@@ -237,6 +269,10 @@ while True:
 - **A** = „sunt bine” (`1`), **B** = „sunt trist” (`2`), **A+B** = îți trimit numele.  
 - Bifa și inima arată că **mesajul a plecat**.  
 - Orice alt mesaj text se derulează.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 10** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

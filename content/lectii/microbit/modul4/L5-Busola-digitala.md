@@ -61,6 +61,10 @@ display.show(Image.YES)
 ```
 Inclină placa până se umple ecranul; la final apare o **bifă**.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 2 — Citim gradele
 ```python
 from microbit import *
@@ -73,6 +77,10 @@ while True:
     sleep(300)
 ```
 Întoarce-te încet în cerc: numărul crește de la `0` la `359`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 3 — Împărțim cercul în 4
 Dorim direcția: N, E, S sau V. Fiecare ocupă **90°**, dar „Nord” e în jurul lui `0`, adică de la `315` la `45`. Adunăm `45`, împărțim la `90` și luăm restul la `4`:
@@ -98,6 +106,10 @@ display.scroll(directie4(350))
 ```
 **Ce vezi pe placă:** `N`, `E`, `N`.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 4 — Busola Minim
 ```python
 from microbit import *
@@ -115,6 +127,10 @@ while True:
 ```
 Rotește-te: litera se schimbă între `N`, `E`, `S` și `V`.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 5 — 8 direcții
 Pentru 8 sectoare (de câte 45°), adunăm `22`, împărțim la `45`:
 ```python
@@ -130,6 +146,10 @@ for h in [0, 50, 90, 140, 200, 275, 330]:
 ```
 Se afișează `N`, `NE`, `E`, `SE`, `S`, `V`, `NV`.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 6 — Săgețile
 `Image.ALL_ARROWS` e o **listă cu 8 săgeți**, în ordinea `N, NE, E, SE, S, SV, V, NV`. Deci avem același **index** ca la sectoare:
 ```python
@@ -140,6 +160,10 @@ for i in range(8):
     sleep(500)
 ```
 Săgeata se rotește în sensul acelor de ceasornic.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 7 — Acul care arată spre Nord
 Dacă ești întors spre **Est** (sector 2), Nordul e **la stânga ta**, deci acul trebuie să arate spre **Vest** (index 6). Formula: `(8 - sector) % 8`.
@@ -158,6 +182,10 @@ display.show(ac(180))
 ```
 **Ce vezi pe placă:** o săgeată în sus (`N`), apoi spre stânga (`V`), apoi în jos (`S`).
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 7** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 8 — Busola cu ac
 ```python
 from microbit import *
@@ -174,6 +202,10 @@ while True:
 ```
 Oriunde te învârți, săgeata arată **spre Nord**.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 8** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 9 — Buton pentru grade
 ```python
 from microbit import *
@@ -185,6 +217,10 @@ while True:
         display.scroll(str(compass.heading()))
     sleep(100)
 ```
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 9** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 10 — Busola Complet
 ```python
@@ -215,6 +251,10 @@ while True:
 - **A** = recalibrează (de exemplu când te muți în altă sală).  
 - **B** = afișează gradele.  
 - Altfel, săgeata arată Nordul.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 10** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

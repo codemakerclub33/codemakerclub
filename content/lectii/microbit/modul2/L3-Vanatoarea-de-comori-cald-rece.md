@@ -82,6 +82,10 @@ forever
 ```
 Comoara spune de 5 ori pe secundă: „Sunt aici!” Numărul `1` nu contează, important e că **trimite ceva**.
 
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
+
 ### 5) Detectorul ascultă — Minim
 ```text
 on radio received (receivedNumber)
@@ -106,6 +110,10 @@ on radio received (receivedNumber)
 . # # # .
 . . # . .
 ```
+
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
 
 ### 6) Măsurăm și reglăm pragurile
 Sălile sunt diferite, deci `-60` și `-75` pot să nu fie potrivite. Facem o **măsurătoare**:
@@ -153,6 +161,10 @@ forever
     pause (ms) 200
 ```
 `running time (ms)` e numărul de milisecunde de la pornirea plăcii (în **Input**). Dacă au trecut mai mult de `1500` ms (1,5 secunde) de la ultimul mesaj, detectorul „adoarme”.
+
+**Gata când:**  
+- [ ] Blocurile pentru „Complet” sunt adăugate  
+- [ ] Simulatorul face tot ce scrie în „Complet”  
 
 ### 8) Regulile jocului
 - Comoara se ascunde **în clasă**, pe o înălțime sigură (pe un raft, într-o cutie), **nu** în buzunarul cuiva și **nu** lângă apă.  

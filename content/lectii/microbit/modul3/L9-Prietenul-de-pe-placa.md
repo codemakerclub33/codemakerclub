@@ -62,6 +62,10 @@ print(limiteaza(3, 0, 5))
 ```
 `print` scrie în **consola serială** din editor (nu pe LED-uri). Se afișează `5`, `0` și `3`.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 2 — Fața lui Pixi
 O funcție care **alege fața** după stări. Valorile le punem la început, ca să testăm:
 ```python
@@ -91,6 +95,10 @@ sleep(1500)
 
 > Funcția **returnează** o imagine (`return`), iar `display.show(...)` o afișează.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 3 — A hrănește
 ```python
 from microbit import *
@@ -109,6 +117,10 @@ while True:
     sleep(100)
 ```
 Prima apăsare: `4 − 2 = 2`. A doua: `0`. A treia: tot `0`, nu `−2`, datorită lui `limiteaza`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 4 — B se joacă
 Aici e o **regulă**: Pixi refuză dacă e foarte flămând.
@@ -136,6 +148,10 @@ while True:
 ```
 La final se afișează `fericire` și `foame` (de exemplu `4 2`), ca să vezi cum se schimbă.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 5 — Timpul trece
 Ca să-i vină foame singur, ne uităm la ceas. `running_time()` dă **milisecundele** de când a pornit placa.
 ```python
@@ -157,6 +173,10 @@ La fiecare **4 secunde** `foame` crește cu 1, până la 5.
 
 > De ce nu folosim `sleep(4000)`? Pentru că atunci placa **nu ar mai vedea butoanele** 4 secunde. Cu `running_time()` programul rămâne atent tot timpul.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 6 — Pixi doarme
 ```python
 from microbit import *
@@ -174,6 +194,10 @@ while True:
     sleep(200)
 ```
 Acoperă placa cu mâna: Pixi adoarme. Dacă lumina ambientală e mică, schimbă pragul.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 7 — Ecranul de stare
 Un mic grafic: **prima coloană** arată `foame`, **ultima** arată `fericire`.
@@ -195,6 +219,10 @@ display.show(ecran_stare())
 sleep(2000)
 ```
 **Ce vezi pe placă:** o coloană cu 3 LED-uri în stânga și una cu 4 în dreapta.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 7** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 8 — Pixi Minim
 ```python
@@ -240,6 +268,10 @@ while True:
     sleep(100)
 ```
 Observă că **funcțiile doar citesc** `foame` și `fericire`. De aceea nu au nevoie de `global`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 8** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 9 — Pixi Complet
 Adăugăm timpul, somnul, scuturarea și ecranul de stare:
@@ -327,6 +359,10 @@ Cum funcționează:
 - Când `doarme()` e adevărat, `pass` înseamnă „nu fac nimic” (și timpul **nu** trece).  
 - Ordinea contează: `a and b` e verificat **înaintea** lui `a` și `b` separat.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 9** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 10 — Idei pentru Pixi 2.0
 ```python
 from microbit import *
@@ -336,6 +372,10 @@ nume = ["Pixi", "Lumi", "Bobo", "Nori"]
 display.scroll(random.choice(nume))
 ```
 Fiecare prieten de pe placă poate primi **un nume la întâmplare**. Alte idei: un Pixi care **crește** (nivel), o **inimă** la 5 jocuri la rând, o altă imagine pentru **cald/rece** (`temperature()`).
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 10** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

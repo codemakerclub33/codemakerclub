@@ -68,6 +68,10 @@ display.show(Image.YES)
 ```
 Placa se calibrează (joc de înclinare), apoi o săgeată arată spre Nord. **A** oprește unealta și apare o bifă.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 2 — Recordul în fișier
 Funcțiile din L8, pentru **temperatura maximă**:
 ```python
@@ -93,6 +97,10 @@ vechi = citeste_record()
 display.scroll(str(vechi))
 ```
 Se afișează `25`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 3 — Unealta Termometru
 **B** măsoară; dacă temperatura bate recordul, se salvează și apare o inimă:
@@ -136,6 +144,10 @@ modul_termometru()
 display.show(Image.YES)
 ```
 Observă `break`: când apeși **A**, bucla se oprește și funcția se termină.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 4 — Unealta Semnal
 Folosim `parseaza` din L7. **B** trimite mesajul `S:1`; când o placă primește `S:1`, pornește o **alarmă** (față mirată care clipește):
@@ -183,6 +195,10 @@ def modul_semnal():
 modul_semnal()
 ```
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 5 — Scheletul meniului
 Înainte să punem uneltele, testăm **meniul** singur. B doar afișează numărul modului:
 ```python
@@ -206,6 +222,10 @@ while True:
     sleep(100)
 ```
 Apăsând **A** treci prin `B`, `T`, `S` și revii la `B`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 6 — Cutia Minim
 Punem totul împreună. Funcția `porneste(m)` alege unealta după numărul modului:
@@ -322,6 +342,10 @@ while True:
 - Recordul se **păstrează** după RESET.  
 - Radio-ul se pornește **o singură dată**, la început.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 7 — Unealta Jurnal (pentru Complet)
 ```text
 Idee: B pune temperatura in lista `jurnal`; pastram doar ultimele 5.
@@ -355,6 +379,10 @@ modul_jurnal()
 ```
 `jurnal` este o listă; o modificăm cu `append` și `pop`, deci **nu** avem nevoie de `global`.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 7** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 8 — Ce schimbăm în meniu
 Pentru a 4-a unealtă, schimbăm **doar două lucruri**:
 ```text
@@ -362,6 +390,10 @@ Pentru a 4-a unealtă, schimbăm **doar două lucruri**:
 2. in porneste(m):  elif m == 3:  modul_jurnal()
 ```
 Meniul folosește `% len(NUME)`, deci **nu** mai modificăm nimic altceva. Asta e avantajul listei.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 8** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 9 — Ecranul de pornire
 Un mic efect: ceasul se învârte și apare numele Cutiei:
@@ -377,6 +409,10 @@ def pornire():
 pornire()
 ```
 `Image.ALL_CLOCKS` e o listă cu 12 imagini de ceas.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 9** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 10 — Cutia Complet
 ```python
@@ -520,6 +556,10 @@ while True:
 - **A** = următoarea unealtă, **B** = pornește, iar în unealtă **A** = ieșire.  
 - Toate cele **4 unelte** au aceeași formă: o buclă cu `break` pe **A**.  
 - Programul are **mai multe funcții mici**, nu un bloc mare.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 10** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

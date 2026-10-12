@@ -55,6 +55,10 @@ display.show(Image.HAPPY)
 ```
 **Ce vezi pe placă:** `5, 4, 3, 2, 1`, apoi o față veselă.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 2 — Din 2 în 2
 ```python
 from microbit import *
@@ -64,6 +68,10 @@ for x in range(0, 5, 2):
     sleep(400)
 ```
 Se aprind LED-urile de pe coloanele `0`, `2` și `4`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 3 — Buclă într-o buclă
 O buclă `for` **în interiorul** alteia: pentru fiecare rând, parcurgem toate coloanele.
@@ -76,6 +84,10 @@ for y in range(5):
         sleep(60)
 ```
 **Ce vezi pe placă:** ecranul se umple, rând cu rând, de sus în jos. Bucla de dentro face 5 pași pentru **fiecare** pas al celei de afară: în total 25.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 4 — Curățăm și umplem
 ```python
@@ -95,6 +107,10 @@ for y in range(4, -1, -1):
 ```
 Prima parte umple ecranul, a doua îl **golește de jos în sus** (`range(4, -1, -1)`).
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 5 — Bucla `while` cu condiție
 `for` repetă de un număr **știut** de ori. `while` repetă **până când** condiția devine falsă:
 ```python
@@ -111,6 +127,10 @@ display.show(Image.YES)
 ```
 Se numără `1 … 5`, apoi apare bifa.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 6 — Așteptăm lumina
 ```python
 from microbit import *
@@ -123,6 +143,10 @@ while display.read_light_level() < 100:
 display.show(Image.HAPPY)
 ```
 Acoperă placa: apare somnul. Când e lumină (peste `100`), placa se trezește. Dacă în sala ta lumina nu trece niciodată de `100`, scade pragul.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 7 — `break`
 `break` **iese** din buclă imediat:
@@ -139,6 +163,10 @@ display.show(Image.YES)
 ```
 Numără până la 99, dar apăsând **A** oprești numărătoarea.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 7** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 8 — Picăturile ca listă
 Fiecare **coloană** are o picătură. Lista ține **înălțimea** ei: `-1` înseamnă „nu e picătură”.
 ```python
@@ -154,6 +182,10 @@ for x in range(5):
 sleep(2000)
 ```
 Pe ecran apar 3 picături: în coloanele 1, 3 și 4.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 8** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 9 — Ploaia Minim
 Picăturile **cad** (y crește), iar în coloanele goale pot apărea altele noi:
@@ -181,6 +213,10 @@ while True:
 - Întâi **mutăm** picăturile.  
 - Apoi **desenăm** toată imaginea nouă.  
 - `random.randint(1, 4) == 1` se întâmplă în ~1 din 4 ture.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 9** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 10 — Ploaia Complet
 ```python
@@ -223,6 +259,10 @@ while True:
 - **B** o crește (mai lent), dar nu peste `500`.  
 - `max` și `min` ține viteza între limite.  
 - La **scuturare**, toate coloanele primesc o picătură.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 10** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

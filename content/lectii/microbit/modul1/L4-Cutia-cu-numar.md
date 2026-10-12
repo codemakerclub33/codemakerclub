@@ -83,6 +83,10 @@ on button A+B pressed
 
 > Numerele cu **o cifră** apar fixe. Numerele cu **două cifre** (de la 10) se derulează. Dacă scorul coboară sub zero, apare semnul `-` înaintea cifrei.
 
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
+
 ### 5) Complet — tabela de scor
 Facem o tabelă pentru un joc între două echipe: **roșu** și **verde**.
 
@@ -114,6 +118,10 @@ on button A+B pressed
 - Dacă apeși **Reset**, ambele scoruri se fac din nou **0** (pentru că `on start` rulează iar).
 
 **Ce vezi pe ecran la A+B după 2 puncte roșu și 1 verde:** `R` → `2` → `V` → `1`.
+
+**Gata când:**  
+- [ ] Blocurile pentru „Complet” sunt adăugate  
+- [ ] Simulatorul face tot ce scrie în „Complet”  
 
 ### 6) Probe pentru mintea de programator
 Fără să rulezi, spune ce număr apare:

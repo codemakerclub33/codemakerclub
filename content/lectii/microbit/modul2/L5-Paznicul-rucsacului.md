@@ -85,6 +85,10 @@ on button A pressed
 ```
 Un singur LED în mijloc: ochiul paznicului.
 
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
+
 ### 5) Alarma scurtă — Minim
 
 ```text
@@ -103,6 +107,10 @@ on shake
 - Apoi paznicul „adoarme” din nou.
 
 **Test:** apasă A, așteaptă 3–2–1, apoi scutură placa. Ea pâlpâie de 10 ori.
+
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
 
 ### 6) Complet — alarma până o oprești
 Vrem ca alarma să sune **până apeși A+B**. Folosim `while`, o buclă care repetă **atâta timp cât** o condiție e adevărată.
@@ -154,6 +162,10 @@ on button A+B pressed
 - A+B dezarmează și când paznicul e doar **armat** (fără alarmă).
 
 > Nu apăsa butoanele în timpul numărătorii 3–2–1: placa e ocupată cu ea.
+
+**Gata când:**  
+- [ ] Blocurile pentru „Complet” sunt adăugate  
+- [ ] Simulatorul face tot ce scrie în „Complet”  
 
 ### 7) Ce se poate strica? (testăm împreună)
 Încearcă fiecare situație și bifează ce se întâmplă:

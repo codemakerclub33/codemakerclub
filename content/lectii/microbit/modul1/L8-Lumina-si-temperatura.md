@@ -90,6 +90,10 @@ La lumină ecranul e **stins**.
 - `pause (ms) 100` îl lasă pe senzor să respire și pe ecran să nu clipească.  
 - Testează: acoperă placa cu palma. Se aprinde felinarul? Dacă nu, mărește pragul (de exemplu `80`).
 
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
+
 ### 4) Complet — temperatura fără încurcături
 Dacă apeși A, placa vrea să deruleze temperatura, dar `forever` desenează în același timp (aprinde sau stinge LED-urile) și strică numărul. Rezolvăm cu o **variabilă-semnal** numită `ocupat`.
 
@@ -121,6 +125,10 @@ on button A pressed
 
 **Ce vezi pe ecran la apăsarea lui A:** numărul derulează o dată, apoi ecranul se întoarce la felinar.
 
+**Gata când:**  
+- [ ] Blocurile pentru „Complet” sunt adăugate  
+- [ ] Simulatorul face tot ce scrie în „Complet”  
+
 ### 5) Depanare în pereche
 Spune ce nu e bine aici:
 ```text
@@ -131,6 +139,10 @@ forever
         clear screen
 ```
 Răspuns: semnul e **greșit**. Cu `>` felinarul se aprinde la **lumină** și se stinge la **întuneric**, exact invers.
+
+**Gata când:**  
+- [ ] Am găsit greșeala colegului și am explicat de ce apare  
+- [ ] Programul reparat merge  
 
 ---
 

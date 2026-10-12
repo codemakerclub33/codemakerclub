@@ -60,6 +60,10 @@ display.clear()
 ```
 Auzi un **do**.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 2 — O gamă
 Mai multe note, într-o **listă**:
 ```python
@@ -71,6 +75,10 @@ music.play(gama)
 ```
 Placa cântă do–re–mi–fa–sol–la–si–do.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 3 — Durate diferite
 ```python
 from microbit import *
@@ -79,6 +87,10 @@ import music
 music.play(["c4:2", "c4:2", "g4:2", "g4:2", "a4:2", "a4:2", "g4:4"])
 ```
 Notele cu `:2` sunt scurte, cea cu `:4` e mai lungă. Cunoști melodia?
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 4 — Pauze și tempo
 ```python
@@ -90,6 +102,10 @@ music.play(["e4:2", "r:2", "e4:2", "r:2", "g4:4"])
 music.set_tempo(bpm=120)               # inapoi la normal
 ```
 `r:2` e o **pauză** scurtă. `bpm` = bătăi pe minut.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 5 — Melodii gata făcute
 Modulul `music` are melodii în el:
@@ -103,6 +119,10 @@ music.play(music.POWER_UP)
 ```
 Încearcă și `music.JUMP_UP`, `music.POWER_DOWN`, `music.WAWAWAWAA`.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 6 — Frecvența cu `pitch`
 `music.pitch(frecventa, durata_ms)` cântă o frecvență exactă, în hertzi:
 ```python
@@ -114,6 +134,10 @@ music.pitch(330, 300)      # mi
 music.pitch(392, 300)      # sol
 ```
 Cu cât numărul e mai mare, cu atât sunetul e mai ascuțit. Frecvența trebuie să fie **număr întreg**.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 7 — Sirena
 Frecvențe care cresc și scad, cu o buclă:
@@ -127,6 +151,10 @@ for f in range(800, 400, -40):
     music.pitch(f, 60)
 ```
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 7** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 8 — Instrumentul cu lumina
 Cu cât e mai multă lumină, cu atât sunetul e mai ascuțit (ca un **theremin**):
 ```python
@@ -138,6 +166,10 @@ for i in range(40):
     music.pitch(200 + lumina * 3, 100)
 ```
 Mișcă mâna deasupra plăcii și ascultă. Pe ecran nu e nevoie să apară nimic.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 8** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 9 — Pianul Minim
 Ținem minte **ce notă** am ales cu variabila `i` (indexul în gamă):
@@ -165,6 +197,10 @@ while True:
     sleep(100)
 ```
 **A** urcă, **B** coboară. `min` și `max` opresc indexul la capete (între `0` și `7`).
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 9** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 10 — Pianul Complet
 Fiecare notă cântată se **adaugă** într-o listă `inregistrat`. Păstrăm doar ultimele 16:
@@ -205,6 +241,10 @@ while True:
 - `canta(n)` face **trei lucruri**: afișează, cântă și înregistrează.  
 - `inregistrat` e o listă; `music.play(inregistrat)` o redă toată.  
 - Modificăm cu `inregistrat.append(…)` o listă existentă, deci **nu** avem nevoie de `global` pentru ea, dar `i` este o variabilă care se **re-atribuie**, deci o declarăm `global`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 10** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

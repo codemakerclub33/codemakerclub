@@ -92,6 +92,10 @@ Da:                      Nu:
 . # . . .                # . . . #
 ```
 
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
+
 ### 5) Complet — „Poate” și o întrebare nouă
 Adăugăm un al treilea răspuns și un semnal când placa e gata pentru următoarea întrebare.
 
@@ -116,6 +120,10 @@ on tilt left
 - Pentru `else if` apeși pe semnul **+** al blocului `if` și alegi `else if`.  
 - Acum `pick random 0 to 2` poate da **0 (Da)**, **1 (Nu)** sau **2 (Poate)**. Pentru `2` intră ramura `else`.  
 - Dacă înclini placa **spre stânga**, ea se curăță și arată `?`, gata de o nouă întrebare.
+
+**Gata când:**  
+- [ ] Blocurile pentru „Complet” sunt adăugate  
+- [ ] Simulatorul face tot ce scrie în „Complet”  
 
 ### 6) Cum verificăm că e cinstită?
 Fă un **experiment** în grup: fiecare scutură de 20 de ori și notează câte `Da` și câte `Nu` au ieșit. Nu va fi exact 10 și 10, dar nici 20 și 0. Noroc! Dacă ai 20 de scuturări cu același răspuns, verifică programul.

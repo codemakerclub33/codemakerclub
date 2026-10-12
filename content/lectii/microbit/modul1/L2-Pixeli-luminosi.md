@@ -39,6 +39,9 @@ Ecranul plăcii e un tablou cu 25 de pătrățele. Fiecare LED e un **pixel**. T
 1. **New Project** → numele `Prenume_Nume_MB1_L02` → **Create**.  
 2. Lași blocurile **on start** și **forever** unde sunt.
 
+**Gata când:**  
+- [ ] Proiectul nou e creat cu numele `Prenume_Nume_MB1_L02`  
+
 ### 2) Harta LED-urilor
 Ecranul are **5 rânduri** și **5 coloane**. Un LED are o adresă: **(coloană, rând)**, iar numărătoarea începe de la **0**.
 
@@ -115,6 +118,10 @@ Cele trei cadre (desenează-le apăsând pătrățelele):
 
 `forever` repetă totul la nesfârșit, deci floarea se deschide mereu. Vezi animația în simulator, apoi apeși **Download** și o vezi pe placă.
 
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
+
 ### 6) Text și numere
 - **show string** arată un text care **se derulează** de la dreapta la stânga. Fără diacritice.  
 - **show number** arată un număr. Un număr cu **o singură cifră** (ca `3`) apare fix. Un număr mai lung (ca `42`) se derulează.  
@@ -141,6 +148,10 @@ forever
 Poți copia un bloc `show leds` cu **clic dreapta → Duplicate**, ca să nu desenezi de la capăt.
 
 **Atenție:** `forever` pornește **imediat**, în același timp cu `on start`. Dacă și `on start`, și `forever` desenează pe LED-uri, ele se încurcă. De aceea azi punem desenele doar în `forever`.
+
+**Gata când:**  
+- [ ] Blocurile pentru „Complet” sunt adăugate  
+- [ ] Simulatorul face tot ce scrie în „Complet”  
 
 ---
 

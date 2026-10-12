@@ -62,6 +62,9 @@ on start
     show number score
 ```
 
+**Gata când:**  
+- [ ] Proiectul nou e creat cu numele `Prenume_Nume_MB1_L05`  
+
 ### 4) Cursa până la 10 — Minim
 La fiecare apăsare de **A** creștem scorul. **Apoi** întrebăm: „Am ajuns la 10?”
 
@@ -97,6 +100,10 @@ Cum construiești `if … else`:
 
 > **Ordinea contează.** Mai întâi `change score by 1`, **apoi** `if`. Dacă ai verifica înainte de a adăuga, ai vedea 10 abia la a 11-a apăsare.
 
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
+
 ### 5) Complet — B scade, dar nu sub 0
 Dacă `score` e `0` și apeși B, ar ieși `-1`. Vrem să **nu** se întâmple.
 
@@ -118,6 +125,10 @@ on button A+B pressed
     set score to 0
     show number score
 ```
+
+**Gata când:**  
+- [ ] Blocurile pentru „Complet” sunt adăugate  
+- [ ] Simulatorul face tot ce scrie în „Complet”  
 
 ### 6) Găsește greșeala
 Un coleg a scris programul de mai jos pentru „Cursa până la 10”, dar nu funcționează corect:

@@ -56,6 +56,10 @@ display.scroll(mesaj)
 ```
 **Ce vezi pe placă:** `E:2`. Numărul trebuie transformat în text cu `str()`.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 2 — Desfacem un mesaj cu `split`
 `split(":")` taie textul la fiecare `:` și dă o **listă**:
 ```python
@@ -69,6 +73,10 @@ display.scroll(parti[1])        # 23
 display.scroll(str(len(parti))) # 2
 ```
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 3 — Din text în număr
 `parti[1]` e text. Pentru calcule, îl facem număr cu `int()`:
 ```python
@@ -79,6 +87,10 @@ temperatura = int(parti[1])
 
 display.scroll(str(temperatura + 1))     # 24
 ```
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 4 — Mesaje stricate: `try / except`
 Dacă ajunge un mesaj ca `E:abc`, `int("abc")` dă o eroare și programul se oprește. Cu `try / except` **prindem** eroarea:
@@ -95,6 +107,10 @@ display.scroll(str(citeste_numar("17")))     # 17
 display.scroll(str(citeste_numar("abc")))    # None
 ```
 `None` înseamnă „nimic, nu e valoare”. Sub `try:` punem ce **poate** da eroare, iar sub `except ValueError:` ce facem **dacă** apare.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 5 — Funcția `parseaza`
 O funcție care desface orice mesaj și returnează `(tip, valoare)`, sau `(None, None)` dacă mesajul e stricat:
@@ -116,6 +132,10 @@ for m in ["E:2", "OK:2", "salut", "E:abc", "T:23"]:
     sleep(300)
 ```
 Se afișează pe rând: `E/2`, `OK/2`, `None/None`, `None/None`, `T/23`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 6 — Emițătorul
 **A** alege emoji-ul, **B** îl trimite:
@@ -142,6 +162,10 @@ while True:
         display.show(EMOJI[alege])
     sleep(100)
 ```
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 7 — Receptorul
 ```python
@@ -171,6 +195,10 @@ while True:
 Verificăm **tot**: există două părți, tipul e `E`, valoarea e număr și este între `0` și `4`. Orice mesaj în plus (de la altă pereche, sau stricat) este **ignorat**.
 
 > `radio.receive()` dă `None` când nu a venit nimic. Verificăm cu `is not None`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 7** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 8 — Același program pe ambele plăci
 Mai simplu pentru noi: **un singur program**, încărcat pe ambele plăci. Fiecare poate și trimite, și primi.
@@ -219,6 +247,10 @@ while True:
 ```
 Aceasta este varianta **Minim**: ai nevoie de două plăci, în același grup.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 8** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 9 — Confirmarea `OK`
 Receptorul răspunde cu `OK:<număr>`, iar emițătorul arată o **bifă**. Atenție: răspunsul `OK` **nu** primește la rândul lui răspuns, altfel plăcile s-ar tot răspunde la nesfârșit!
 ```python
@@ -247,6 +279,10 @@ if mesaj is not None:
         display.show(Image.YES)
 ```
 Programul de mai sus arată doar **ideea**: `E` → răspunde `OK`; `OK` → arată bifa, **fără** alt răspuns.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 9** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 10 — Mesaje cu cod, Complet
 ```python
@@ -309,6 +345,10 @@ while True:
 - Receptorul afișează emoji-ul și **trimite `OK`**.  
 - Emițătorul primește `OK` și arată **bifa**.  
 - Mesajele stricate sunt **ignorate**.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 10** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

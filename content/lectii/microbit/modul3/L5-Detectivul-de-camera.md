@@ -53,6 +53,10 @@ display.scroll(str(temperature()))
 ```
 **Ce vezi pe placă:** un număr ca `23`.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 2 — Cald sau rece?
 ```python
 from microbit import *
@@ -66,6 +70,10 @@ else:
     display.show(Image.HAPPY)      # bine
 ```
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 3 — Lumina
 Placa măsoară lumina cu **LED-urile** ecranului. Acoperă placa cu palma și vezi cum scade valoarea.
 ```python
@@ -75,6 +83,10 @@ while True:
     display.scroll(str(display.read_light_level()))
     sleep(500)
 ```
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 4 — Felinarul
 ```python
@@ -91,6 +103,10 @@ while True:
 ```
 Valoarea `40` e **pragul**. Alege altul dacă sala ta e mai luminoasă sau mai întunecată.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 5 — Accelerometrul: bula de nivel
 `accelerometer.get_x()` spune cât de **înclinată** e placa spre stânga (valori negative) sau spre dreapta (valori pozitive). Plată pe masă: aproape `0`.
 ```python
@@ -105,6 +121,10 @@ while True:
     sleep(50)
 ```
 **Ce vezi pe placă:** un punct în rândul din mijloc, care se mișcă spre stânga sau dreapta când înclini placa, ca bula unui nivel de constructor.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 6 — Gesturi
 Python recunoaște gesturi cu nume: `"shake"` (scuturat), `"up"`, `"down"`, `"left"`, `"right"`, `"face up"`, `"face down"`, `"freefall"`, `"3g"`, `"6g"`, `"8g"`.
@@ -122,6 +142,10 @@ while True:
     sleep(100)
 ```
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 7 — `was_gesture`
 Ca la butoane: `was_gesture` ține minte o scuturare **scurtă**.
 ```python
@@ -135,6 +159,10 @@ while True:
     sleep(100)
 ```
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 7** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 8 — Sunetul (doar V2)
 ```python
 from microbit import *
@@ -146,6 +174,10 @@ while True:
 ```
 Dacă ai placa V1, sari peste acest exemplu: ea **nu are microfon**.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 8** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 9 — Raport cu text
 ```python
 from microbit import *
@@ -155,6 +187,10 @@ luminos = display.read_light_level()
 display.scroll("T" + str(t) + " L" + str(luminos))
 ```
 **Ce vezi pe placă:** un text ca `T23 L140`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 9** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 10 — Detectivul de cameră
 ```python
@@ -186,6 +222,10 @@ while True:
 - **A** → temperatura. **B** → lumina. **Scuturare** → raportul.  
 - Dacă nu apeși nimic, placa **veghează**: `SAD` pentru prea cald, `ASLEEP` pentru prea întuneric, `HAPPY` dacă e bine.  
 - Alertele sunt la final, deci **comenzile tale au prioritate**.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 10** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

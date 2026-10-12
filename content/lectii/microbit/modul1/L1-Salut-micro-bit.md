@@ -93,6 +93,10 @@ on start
 
 > Un bloc care **nu e lipit** de `on start` sau `forever` rămâne gri și **nu rulează**.
 
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
+
 ### 4) Trimitem programul pe placă
 Conectezi placa la calculator cu cablul micro-USB. Placa apare ca o unitate numită **MICROBIT**. Ai două metode:
 
@@ -108,6 +112,10 @@ Conectezi placa la calculator cu cablul micro-USB. Placa apare ca o unitate numi
 
 Dacă placa nu se vede ca unitate, verifică dacă cablul e **de date**, nu doar de încărcat.
 
+**Gata când:**  
+- [ ] Programul e trimis pe placă  
+- [ ] Placa face același lucru ca simulatorul  
+
 ### 5) Complet — numele tău, apoi inima
 1. Din **Basic** tragi **show string** și îl pui **deasupra** lui **show icon**, tot în **on start**.  
 2. În bloc ștergi cuvântul `Hello!` și scrii prenumele tău. **Fără diacritice!** LED-urile nu știu `ă, â, î, ș, ț`. Scrie `Ana`, nu `Ană`.  
@@ -122,6 +130,10 @@ on start
 **Ce vezi pe ecran:** literele A, n, a trec una după alta, apoi inima rămâne aprinsă.
 
 4. Descarci din nou și verifici pe placă. Apeși **Reset** ca să vezi programul de la început.
+
+**Gata când:**  
+- [ ] Blocurile pentru „Complet” sunt adăugate  
+- [ ] Simulatorul face tot ce scrie în „Complet”  
 
 ---
 

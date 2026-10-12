@@ -80,6 +80,10 @@ on button B pressed
 ```
 Bifa `Yes` îți spune că mesajul **a plecat**.
 
+**Gata când:**  
+- [ ] Programul e trimis pe placă  
+- [ ] Placa face același lucru ca simulatorul  
+
 ### 5) Primim — Minim
 
 ```text
@@ -99,6 +103,10 @@ Descarci **același** program pe **ambele plăci** și le pui la câțiva metri 
 # . . . #
 . # # # .
 ```
+
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
 
 ### 6) Complet — text și grup
 1. **Grupul afișat:** creezi variabila `grupa`. La pornire o setezi și o arăți:
@@ -124,6 +132,10 @@ on radio received (receivedString)
 Textul **nu** are diacritice și e scurt.
 
 3. Poți păstra și blocul pentru numere. Radio trimite numerele și textele separat, deci cele două blocuri de primire funcționează independent.
+
+**Gata când:**  
+- [ ] Blocurile pentru „Complet” sunt adăugate  
+- [ ] Simulatorul face tot ce scrie în „Complet”  
 
 ### 7) Experiment: ce se aude în grupuri?
 Două perechi vecine aleg **același grup** (de exemplu `4`). Apasă A pe o placă. Pe câte plăci apare mesajul? Pe **toate** din grupul 4. Apoi schimbați una dintre perechi pe grupul `5`. Ce se întâmplă?

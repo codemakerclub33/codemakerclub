@@ -70,6 +70,10 @@ display.scroll(harta[1][0])      # #
 ```
 Se afișează `S`, `E`, `#`.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 2 — Desenăm harta
 Parcurgem toate rândurile și coloanele:
 ```python
@@ -99,6 +103,10 @@ sleep(3000)
 ```
 **Ce vezi pe placă:** pereții (slab luminoși) și ieșirea (mai puternică).
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 3 — Înclinarea plăcii
 Placa are un accelerometru: `get_x()` crește când o **înclini spre dreapta**, `get_y()` când o înclini **spre tine**.
 ```python
@@ -111,6 +119,10 @@ while True:
     sleep(200)
 ```
 Înclină placa în toate direcțiile și observă cum se schimbă numerele (aproape `0` când e dreaptă; peste `±300` când e înclinată bine).
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 4 — O funcție care dă două valori
 Din înclinare vrem o **direcție**: `dx` (stânga/dreapta) și `dy` (sus/jos). O funcție poate **returna două valori** deodată:
@@ -138,6 +150,10 @@ for i in range(30):
     sleep(100)
 ```
 `dx, dy = inclinare()` **despachetează** cele două valori. În direcția `y`: valoarea `1` înseamnă „în jos pe ecran”.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 5 — Bila se mișcă
 Un singur pixel, `x` și `y` ținând poziția bilei:
@@ -171,6 +187,10 @@ for i in range(60):
 ```
 `max(0, min(4, …))` păstrează bila **în ecran** (de la 0 la 4).
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 6 — Pereții
 Înainte să mutăm bila, **verificăm** locul nou: dacă e perete, nu ne mișcăm.
 ```python
@@ -198,6 +218,10 @@ sleep(1500)
 ```
 Sub `S` e un `#`, deci apare `NO`.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 7 — Găsim startul
 Nu vrem să scriem de mână unde e `S` în fiecare hartă. Funcția îl caută:
 ```python
@@ -222,6 +246,10 @@ sx, sy = gaseste_start(harta)
 display.scroll(str(sx) + "," + str(sy))
 ```
 Se afișează `2,0`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 7** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 8 — Labirintul Minim
 ```python
@@ -289,6 +317,10 @@ while True:
 - Se mută doar dacă locul nou e **în ecran** și **nu e perete**.  
 - Când ajunge pe `E`, apare bifa și bila revine la start.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 8** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 9 — Mai multe niveluri
 O listă de hărți. Funcția `incarca(n)` dă harta, plus **startul**:
 ```python
@@ -334,6 +366,10 @@ harta, x, y = incarca(1)
 display.scroll(harta[0] + " " + str(x) + str(y))
 ```
 Se afișează `S#..E 00`. Cu trei valori returnate, le despachetezi în trei variabile.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 9** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 10 — Labirintul Complet
 ```python
@@ -441,6 +477,10 @@ while True:
 - `pasi` numără **doar** mutările reale.  
 - **A** reia nivelul curent (dacă te blochezi).  
 - După ultimul nivel apare inima, apoi numărul de pași, iar jocul reîncepe.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 10** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

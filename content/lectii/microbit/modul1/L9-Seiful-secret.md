@@ -75,6 +75,9 @@ Pătratul `Square` înseamnă „seif închis”.
 # # # # #
 ```
 
+**Gata când:**  
+- [ ] Proiectul nou e creat cu numele `Prenume_Nume_MB1_L09`  
+
 ### 3) Butonul A — Minim
 
 ```text
@@ -97,6 +100,10 @@ on button A pressed
 - Dacă `pas = 2`, ai făcut A–B și acum A deschide seiful: bifa stă **2 secunde**, apoi seiful se închide.  
 - În orice alt caz (de exemplu `pas = 1`: A a doua oară) e greșeală.
 
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
+
 ### 4) Butonul B — Minim
 
 ```text
@@ -111,10 +118,18 @@ on button B pressed
 ```
 B e corect **doar** dacă ai apăsat înainte exact un A.
 
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
+
 ### 5) Testăm
 Fă fiecare încercare din tabel pe simulator și pe placă. Pune o bifă în tabel după ce rezultatul e cel dorit.
 
 > **Fără grabă:** nu apăsa butoane cât timp se vede `Yes` sau `No`. Așteaptă să revină pătratul.
+
+**Gata când:**  
+- [ ] Am încercat fiecare situație din listă  
+- [ ] Am notat ce nu a mers și am corectat  
 
 ### 6) Complet — alarma și funcția
 Vrem ca după **3 greșeli la rând** placa să arate `ALARMA`.
@@ -166,6 +181,10 @@ on button B pressed
 
 - O deschidere reușită pune `greseli` înapoi la `0`.  
 - Funcția `greseala` e scrisă **o dată**, iar o schimbi **într-un singur loc**.
+
+**Gata când:**  
+- [ ] Blocurile pentru „Complet” sunt adăugate  
+- [ ] Simulatorul face tot ce scrie în „Complet”  
 
 ---
 

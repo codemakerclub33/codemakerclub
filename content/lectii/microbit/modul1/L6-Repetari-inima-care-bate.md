@@ -75,6 +75,10 @@ Heart:                   Small Heart:
 . . # . .                . . . . .
 ```
 
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
+
 ### 4) Valul de lumină — `for index`
 Aici folosim numărul `index`, ca să aprindem LED-urile unul după altul, pe rândul din mijloc.
 
@@ -133,6 +137,10 @@ on button B pressed
 
 **Testează:** apasă A de trei ori. `ritm` trece din 150 în 100, 50, apoi nu mai scade. Inima e acum foarte rapidă. Apasă B de câteva ori și o încetinești.
 
+**Gata când:**  
+- [ ] Blocurile pentru „Complet” sunt adăugate  
+- [ ] Simulatorul face tot ce scrie în „Complet”  
+
 ### 6) Depanare în pereche
 Colegul tău a greșit. Găsește bug-ul:
 
@@ -144,6 +152,10 @@ forever
     pause (ms) 700
 ```
 **Ce vezi?** Inima pare fixă, iar pe ecran nu se vede schimbarea. **De ce?** Pozele se schimbă atât de repede încât ochiul nu le vede; lipsesc pauzele dintre ele. Soluție: `pause (ms) 150` după fiecare `show icon`.
+
+**Gata când:**  
+- [ ] Am găsit greșeala colegului și am explicat de ce apare  
+- [ ] Programul reparat merge  
 
 ---
 

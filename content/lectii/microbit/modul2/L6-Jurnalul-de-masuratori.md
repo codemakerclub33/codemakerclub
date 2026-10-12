@@ -69,6 +69,10 @@ on start
     set minim to temperature
 ```
 
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
+
 ### 4) Butoanele — Minim
 
 ```text
@@ -82,6 +86,10 @@ on button A+B pressed
     set minim to temperature
 ```
 A schimbă modul, iar A+B **șterge recordurile** (le pune pe temperatura de acum).
+
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
 
 ### 5) `forever` desenează — Minim
 Regula din L1 e încă valabilă: **desenează doar `forever`**.
@@ -110,6 +118,10 @@ forever
 **Ce vezi pe ecran la modul 3** (dacă maxim e 25 și minim 21): `+` → `25` → `-` → `21`.
 
 **Test:** ține placa în mână ca să se încălzească sau apropie-o de fereastră. Cu A mergi la modul 3 și vezi cum recordurile s-au schimbat.
+
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
 
 ### 6) Complet — jurnalul cu listă
 O **listă** (în MakeCode, **Array**) e o înșiruire de valori, ca un tabel cu o singură coloană. Ține mai multe numere într-o singură variabilă.
@@ -182,6 +194,10 @@ forever
 - Dacă lista e goală, arată `No` (nu împărțim la zero).
 
 **Exemplu:** salvezi `21`, `23`, `22`. Suma e `66`, sunt 3 valori, media e `66 / 3 = 22`.
+
+**Gata când:**  
+- [ ] Blocurile pentru „Complet” sunt adăugate  
+- [ ] Simulatorul face tot ce scrie în „Complet”  
 
 ### 7) Experimentul „Cel mai cald loc”
 În grup, mergeți cu plăcile în 4 locuri din clasă. La fiecare loc apăsați B. După patru locuri mergeți la modul 4 și comparați **media** cu cea a altui grup. Care e mai mare? De ce?

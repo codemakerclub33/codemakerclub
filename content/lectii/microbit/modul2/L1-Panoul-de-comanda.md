@@ -55,6 +55,9 @@ on start
     set mod to 1
 ```
 
+**Gata când:**  
+- [ ] Proiectul nou e creat cu numele `Prenume_Nume_MB2_L01`  
+
 ### 4) Panoul cu 2 moduri — Minim
 `forever` desenează pe ecran în funcție de `mod`. Butonul A **schimbă** `mod`.
 
@@ -80,6 +83,10 @@ forever
 **Ce vezi pe ecran:** la `mod = 1` o bară de LED-uri care crește cu lumina; la `mod = 2` temperatura (de exemplu `23`), care se derulează.
 
 > Temperatura cu două cifre derulează puțin. Dacă apeși A în timpul derulării, schimbarea se vede după ce se termină numărul.
+
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
 
 ### 5) Complet — trei moduri și mers înapoi
 
@@ -115,6 +122,10 @@ forever
 - B merge **înapoi**: 3 → 2 → 1 → 3 …  
 - A+B sare direct la modul `1`.  
 - În loc de `Ana` scrii **prenumele tău**, fără diacritice.
+
+**Gata când:**  
+- [ ] Blocurile pentru „Complet” sunt adăugate  
+- [ ] Simulatorul face tot ce scrie în „Complet”  
 
 ### 6) Fișa proiectului
 Un maker adevărat își **planifică** proiectul. Completează pe foaie sau în caiet:

@@ -57,6 +57,10 @@ display.scroll(str(NR_MISIUNI))
 ```
 Dacă mai târziu vrei 4 misiuni, schimbi **un singur loc**.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 2 — Operatorul `%`
 `a % b` dă **restul** împărțirii lui `a` la `b`.
 ```python
@@ -66,6 +70,10 @@ display.scroll(str(7 % 3))    # 7 = 2*3 + 1  ->  1
 display.scroll(str(6 % 3))    # 6 = 2*3 + 0  ->  0
 ```
 **Ce vezi pe placă:** `1`, apoi `0`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 3 — Meniul care se învârte
 Dacă ai **3** misiuni numerotate `0, 1, 2`, după `2` vrei să revii la `0`. Cu `%` merge ușor:
@@ -82,6 +90,10 @@ while True:
     sleep(100)
 ```
 Apeși **A**: `1 → 2 → 3 → 1 → 2 …`. Pe ecran numerele sunt `1, 2, 3` (am adăugat `+ 1` doar la afișare).
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 4 — Misiunea „Lumină”
 O funcție care arată un **grafic de lumină**: cu cât e mai multă lumină, cu atât mai multe rânduri aprinse.
@@ -103,6 +115,10 @@ display.clear()
 ```
 Durează 3 secunde (30 × 100 ms). `//` e împărțirea fără zecimale.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 5 — Misiunea „Temperatură”
 ```python
 from microbit import *
@@ -112,6 +128,10 @@ def misiune_temperatura():
 
 misiune_temperatura()
 ```
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 6 — Misiunea „Inimă”
 ```python
@@ -127,6 +147,10 @@ def misiune_inima():
 misiune_inima()
 display.clear()
 ```
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 7 — Panoul Minim
 Punem totul împreună. Funcția `porneste(m)` alege misiunea după număr:
@@ -178,6 +202,10 @@ while True:
 ```
 **A** schimbă misiunea (1, 2, 3), **B** o pornește, iar după ea panoul arată din nou numărul.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 7** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 8 — Misiunea „Nivela”
 A 4-a misiune: placa e **dreaptă** dacă nu e înclinată nici pe x, nici pe y.
 ```python
@@ -197,6 +225,10 @@ misiune_nivela()
 display.clear()
 ```
 `abs()` scoate semnul minus: `abs(-100)` este `100`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 8** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 9 — Contorul de misiuni
 Vrem să numărăm câte misiuni ai făcut. Funcția schimbă o variabilă de afară, deci are nevoie de `global`:
@@ -224,6 +256,10 @@ display.scroll(str(facute))
 **Ce vezi pe placă:** două serii de bătăi de inimă, apoi `2`.
 
 > Observă `ruleaza(misiune_inima)` — **fără paranteze** după `misiune_inima`. Dăm funcția ca pe o „unealtă” și `ruleaza` o apelează cu `f()`. Pentru moment, e suficient să știi că merge.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 9** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 10 — Panoul Complet
 ```python
@@ -291,6 +327,10 @@ while True:
 ```
 - **A** = următoarea misiune, **B** = pornește, **A+B** = câte misiuni ai făcut.  
 - Cazul `a and b` e **primul**, ca să nu fie „mâncat” de `a` sau `b`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 10** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

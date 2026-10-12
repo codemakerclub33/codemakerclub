@@ -55,6 +55,10 @@ while True:
 ```
 Cât ții apăsat A, apare săgeata spre vest (stânga). Atenție: după ce lași butonul, săgeata **rămâne** pe ecran, pentru că nu am dat comanda de a o șterge.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 2 — `if` și `else`
 ```python
 from microbit import *
@@ -67,6 +71,10 @@ while True:
     sleep(100)
 ```
 Acum, când lași butonul, ecranul se curăță.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 3 — `if`, `elif`, `else`
 `elif` înseamnă „altfel dacă”.
@@ -86,6 +94,10 @@ while True:
 - B → săgeată dreapta (`ARROW_E`)  
 - niciun buton → ecran curat
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 4 — Două butoane deodată
 Cu `and` verificăm că **amândouă** condițiile sunt adevărate.
 ```python
@@ -104,6 +116,10 @@ while True:
 ```
 > **Ordinea contează.** Python verifică de sus în jos și se oprește la **prima** condiție adevărată. Dacă am pune întâi `if button_a.is_pressed():`, pe A+B s-ar vedea mereu doar săgeata spre stânga. De aceea verificăm **A+B primul**.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 5 — Pâlpâirea
 Un semnalizator **pâlpâie**: aprins, stins, aprins, stins.
 ```python
@@ -119,6 +135,10 @@ while True:
         sleep(50)
 ```
 `else: sleep(50)` e o pauză mică ca bucla să nu alerge prea repede.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 6 — `is_pressed()` și `was_pressed()`
 
@@ -140,6 +160,10 @@ while True:
         sleep(100)
 ```
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 7 — Numărăm apăsările
 ```python
 from microbit import *
@@ -149,6 +173,10 @@ while True:
     display.scroll(str(button_a.get_presses()))
 ```
 `get_presses()` spune **de câte ori** a fost apăsat A în ultimele 2 secunde (cât a dormit programul).
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 7** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 8 — O variabilă cu text
 O variabilă poate ține și text. Pentru a compara folosim `==` (două semne egal).
@@ -172,6 +200,10 @@ while True:
     sleep(100)
 ```
 `=` **pune** o valoare, iar `==` **întreabă** dacă două valori sunt egale.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 8** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 9 — Semnalizatorul care rămâne pornit (Complet)
 ```python
@@ -207,6 +239,10 @@ while True:
 - **A+B** îl oprește.  
 - Liniile `button_a.was_pressed()` fără nimic în jurul lor doar **golesc** memoria; fără ele, după A+B placa ar „crede” că A a fost apăsat.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 9** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 10 — Avariile (Minim, varianta pâlpâitoare)
 ```python
 from microbit import *
@@ -232,6 +268,10 @@ while True:
         sleep(50)
 ```
 Pâlpâie doar cât ții butonul apăsat. Pentru apăsări scurte folosești varianta din Exemplul 9.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 10** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

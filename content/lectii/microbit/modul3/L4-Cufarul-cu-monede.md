@@ -53,6 +53,10 @@ display.scroll(str(monede))
 
 **Ce vezi pe placă:** cifra `5`.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 2 — Schimbăm valoarea
 ```python
 from microbit import *
@@ -68,6 +72,10 @@ display.scroll(str(monede))
 - `monede -= 3` → `5`
 
 **Ce vezi pe placă:** `5`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 3 — Comparații
 | Se scrie | Înseamnă |
@@ -90,6 +98,10 @@ else:
 ```
 Cu 5 monede apare bifa.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 4 — `and` și `or`
 - `and` = **amândouă** adevărate.  
 - `or` = **cel puțin una** adevărată.
@@ -106,6 +118,10 @@ else:
 ```
 Cu 7 monede, prima condiție e adevărată: apare `HAPPY`.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 5 — Limite
 Cufărul are loc pentru cel mult 20 de monede.
 ```python
@@ -121,6 +137,10 @@ Chiar dacă încercăm de 3 ori, ajungem la `20`, nu mai sus.
 
 **Ce vezi pe placă:** `20`.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 6 — Prescurtare cu `min` și `max`
 `min(a, b)` dă cel mai mic dintre două numere, iar `max(a, b)` pe cel mai mare.
 ```python
@@ -135,6 +155,10 @@ Prima linie dă `20`, a doua linie dă `0`.
 
 **Ce vezi pe placă:** `0`.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 7 — Text + număr
 Textul și numărul se pot lipi doar dacă numărul devine text.
 ```python
@@ -144,6 +168,10 @@ monede = 12
 display.scroll("Monede: " + str(monede))
 ```
 **Ce vezi pe placă:** `Monede: 12`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 7** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 8 — Citim butoanele o singură dată
 Citim memoria butoanelor **la începutul** fiecărei ture și o folosim apoi de mai multe ori:
@@ -163,6 +191,10 @@ while True:
 ```
 `a` și `b` sunt variabile care țin `True` sau `False`. Astfel, A+B se recunoaște corect și nu rămâne nimic „în memorie”.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 8** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 9 — Constante
 Valorile care nu se schimbă (prețul, limita) le scriem cu **litere mari** ca să se vadă.
 ```python
@@ -173,6 +205,10 @@ MAXIM = 20
 display.scroll(str(PRET) + "/" + str(MAXIM))
 ```
 **Ce vezi pe placă:** `3/20`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 9** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 10 — Proiectul: cufărul cu monede
 ```python
@@ -220,6 +256,10 @@ while True:
 - **B:** dacă ai cel puțin 3 monede, cheltuiești 3 și crești `cumparaturi`; altfel arată `SAD`.  
 - **A+B:** derulează soldul și numărul de cumpărături.  
 - `def cufar():` e o mică **funcție** care arată cufărul. O vom învăța la lecția 7: pentru azi, o copiezi așa.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 10** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

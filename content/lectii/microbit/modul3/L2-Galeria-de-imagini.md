@@ -44,6 +44,10 @@ from microbit import *
 display.show(Image.DUCK)
 ```
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 2 — Mai multe imagini într-o listă
 O **listă** se scrie între paranteze drepte `[ ]`, cu virgulă între elemente.
 ```python
@@ -52,6 +56,10 @@ from microbit import *
 display.show([Image.HEART, Image.HAPPY, Image.DUCK], delay=700)
 ```
 `delay=700` înseamnă că fiecare imagine stă **700 ms**. Afișează cele trei imagini pe rând, o singură dată.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### 2) Propriile imagini: șirul de cifre
 O imagine are **5 rânduri**, iar fiecare rând are **5 cifre**. Rândurile se despart cu `:`. Fiecare cifră e luminozitatea unui LED:
@@ -84,6 +92,10 @@ Fiecare rând al imaginii e scris pe un rând al programului, ca să vezi desenu
 . . # . .
 ```
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 4 — Galeria cu trei imagini
 ```python
 from microbit import *
@@ -101,6 +113,10 @@ while True:
     sleep(1000)
 ```
 Numele `pom`, `casa` și `soare` sunt **variabile**: păstrează imaginile ca să le folosim apoi. (Nu folosim `ă`, `î` în numele variabilelor.)
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### 3) Luminozitate diferită
 ```python
@@ -136,6 +152,10 @@ display.set_pixel(2, 2, 9)
 . . . . .
 ```
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 6 — Bucla `for`
 `for i in range(5):` repetă de **5 ori**, iar `i` ia valorile `0, 1, 2, 3, 4`.
 ```python
@@ -156,6 +176,10 @@ Se aprinde diagonala, un LED pe rând.
 . . . . #
 ```
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 7 — Coborâșul soarelui
 `display.clear()` stinge toate LED-urile.
 ```python
@@ -168,6 +192,10 @@ for y in range(5):
 ```
 Un punct coboară pe coloana din mijloc: rândul 0, apoi 1, 2, 3, 4.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 7** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 8 — Înmulțim luminozitatea
 ```python
 from microbit import *
@@ -178,6 +206,10 @@ display.show(Image.HEART)
 ```
 `Image.HEART * 0.3` face inima mai **slabă**. Poți înmulți orice imagine.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 8** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 9 — Inima care se aprinde treptat
 ```python
 from microbit import *
@@ -187,6 +219,10 @@ for i in range(10):
     sleep(200)
 ```
 Pentru `i = 0` inima e stinsă, pentru `i = 9` e la fel de luminoasă ca originalul.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 9** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 10 — Galerie cu o listă proprie
 ```python
@@ -202,6 +238,10 @@ while True:
     display.show(cadre, delay=400)
 ```
 Un punct, apoi un pătrat mic, apoi unul mare: o animație cu trei cadre.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 10** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

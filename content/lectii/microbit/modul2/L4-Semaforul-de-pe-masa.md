@@ -91,6 +91,10 @@ on button B pressed
     clear screen
 ```
 
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
+
 ### 5) Semaforul — ce culori și ce pini?
 Legăm trei LED-uri:
 
@@ -115,6 +119,10 @@ function stinge
     digital write pin P2 to 0
 ```
 
+**Gata când:**  
+- [ ] Blocurile pentru „Complet” sunt adăugate  
+- [ ] Simulatorul face tot ce scrie în „Complet”  
+
 ### 7) Programul semaforului — Complet
 
 ```text
@@ -133,6 +141,10 @@ forever
 - `call stinge` apelează funcția de fiecare dată.
 
 **Ce vezi:** LED-urile se aprind pe rând, ca la un semafor. Doar unul e aprins în același timp.
+
+**Gata când:**  
+- [ ] Blocurile pentru „Complet” sunt adăugate  
+- [ ] Simulatorul face tot ce scrie în „Complet”  
 
 ### 8) Varianta pe ecran (fără fire)
 Rândurile ecranului sunt semaforul: **rândul de sus** = roșu, **mijloc** = galben, **jos** = verde.

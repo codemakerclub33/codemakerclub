@@ -89,6 +89,10 @@ forever
 
 **Ce vezi pe ecran:** `4` … pauză … `7` … pauză și tot așa, la nesfârșit.
 
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
+
 ### 4) Programul seifului — Minim
 Proiect: `Prenume_Nume_MB2_L09_seif`. Variabilă: `secret`.
 
@@ -111,6 +115,10 @@ on radio received (receivedNumber)
 - Cod corect → bifă 2 secunde; cod greșit → X o secundă.
 
 **Test:** setează pe cheie `4` și `7`, apoi apasă A+B. Pe seif apare bifa.
+
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
 
 ### 5) Complet — răspunsul și blocarea
 Acum seiful răspunde cheii și se blochează după 3 greșeli.
@@ -204,6 +212,10 @@ forever
         clear screen
         pause (ms) 400
 ```
+
+**Gata când:**  
+- [ ] Blocurile pentru „Complet” sunt adăugate  
+- [ ] Simulatorul face tot ce scrie în „Complet”  
 
 ### 6) „Spargătorul de coduri”
 Doi colegi lucrează împreună: unul are seiful (și știe codul), celălalt are doar cheia. Cel cu cheia încearcă să ghicească codul. Câte încercări are? **3**. Apoi seiful se blochează.

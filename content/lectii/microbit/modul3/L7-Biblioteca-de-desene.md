@@ -58,6 +58,10 @@ bate_inima()
 
 **Ce vezi pe placă:** inima bate de trei ori.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 2 — Parametri
 Un **parametru** e o valoare pe care o dai funcției la apel.
 ```python
@@ -71,6 +75,10 @@ arata(Image.HAPPY, 500)
 arata(Image.SAD, 1000)
 ```
 `imagine` și `pauza` sunt **parametrii**. La apel le dăm valori: `Image.HAPPY` și `500`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 3 — Parametrul care numără
 ```python
@@ -89,6 +97,10 @@ bate_inima(5)
 ```
 Aceeași funcție face 2 bătăi, apoi 5.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 4 — Valori implicite
 Dacă nu dai un parametru, poate avea o valoare **de rezervă**.
 ```python
@@ -106,6 +118,10 @@ clipeste(Image.DUCK, 2)          # 2 ori
 clipeste(Image.HOUSE, 1, 800)    # 1 data, 800 ms
 ```
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 5 — `return`
 O funcție poate **întoarce** un rezultat, ca un răspuns.
 ```python
@@ -118,6 +134,10 @@ rezultat = dublu(21)
 display.scroll(str(rezultat))
 ```
 **Ce vezi pe placă:** `42`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 6 — Funcția care limitează
 ```python
@@ -135,6 +155,10 @@ display.scroll(str(limiteaza(-3, 0, 4)))
 display.scroll(str(limiteaza(2, 0, 4)))
 ```
 **Ce vezi pe placă:** `4`, apoi `0`, apoi `2`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 7 — O funcție care cheamă alta
 ```python
@@ -154,6 +178,10 @@ blit(Image.TARGET)
 ```
 Funcțiile se pot chema una pe alta.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 7** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 8 — Variabile din interiorul funcției
 Variabilele create **în interior** nu se văd **în afară**.
 ```python
@@ -167,6 +195,10 @@ x = calculeaza()
 display.scroll(str(x))
 ```
 `mic` nu există după ce funcția s-a terminat; de aceea o **returnăm** (`return`) ca să primim valoarea în `x`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 8** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 9 — Bara de nivel
 ```python
@@ -189,6 +221,10 @@ sleep(1000)
 bara(9)        # il taie la 5
 ```
 Funcția `bara` aprinde `nivel` coloane întregi.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 9** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 10 — Biblioteca de desene
 ```python
@@ -240,6 +276,10 @@ while True:
 - **A+B** → bara arată cât de multă lumină e (de la 0 la 5 coloane).  
 - `range(de_la, 0, -1)` numără **în jos**: `3, 2, 1`.  
 - Toate funcțiile sunt **definite înainte** de bucla principală.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 10** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

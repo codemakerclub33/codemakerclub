@@ -58,6 +58,10 @@ forever
 - Blocul se numește **radio send value** și are două locuri: **numele** (text, între ghilimele) și **valoarea**.  
 - Numele sunt scurte și fără diacritice: `temp` și `lum`.
 
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
+
 ### 4) Programul receptorului — Minim
 Receptorul primește mesajele, își notează valorile în variabile și le arată la cerere.
 
@@ -97,6 +101,10 @@ forever
 **Ce vezi pe ecran la receptor după A:** `T` și apoi temperatura trimisă de stație (de exemplu `22`). După B: `L` și lumina (de exemplu `140`).
 
 **Test:** pune stația lângă fereastră sau în mână ca să se încălzească. Peste câteva secunde vezi temperatura crescând pe receptor.
+
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
 
 ### 5) Complet — alerta de căldură
 Adăugăm trei variabile: `prag` (de exemplu `28`), `alerta` (`0` sau `1`) și `ultimul` (momentul ultimului mesaj primit).
@@ -141,6 +149,10 @@ forever
 - Dacă nu am primit nimic de **6 secunde** (`6000` ms), receptorul arată `Asleep`: „stația nu mai vorbește”. Pentru asta ai nevoie de variabila `ultimul` (pusă pe `0` în `on start`).  
 - Altfel, arată `T` sau `L`.  
 - Pentru test, setează `prag` mai jos (de exemplu `24`) și încălzește stația în mână.
+
+**Gata când:**  
+- [ ] Blocurile pentru „Complet” sunt adăugate  
+- [ ] Simulatorul face tot ce scrie în „Complet”  
 
 ### 6) Cine e vinovat? (depanare logică)
 Receptorul nu arată nimic. Care e **ordinea de verificat**?

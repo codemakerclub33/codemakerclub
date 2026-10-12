@@ -78,6 +78,10 @@ while True:
     sleep(100)
 ```
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 2 — Cursa până la 10 (din L5)
 Blocuri: la 10 apare bifă și `Bravo`, scorul revine la 0.
 ```python
@@ -97,6 +101,10 @@ while True:
         display.scroll(str(score))
     sleep(100)
 ```
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 3 — Bila magică (din L7)
 Blocuri: la scuturare alege 0, 1 sau 2. Pentru Python avem nevoie de modulul `random`.
@@ -119,6 +127,10 @@ while True:
 ```
 `random.randint(0, 2)` poate da `0`, `1` **sau** `2` (ambele capete sunt incluse).
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 4 — Felinarul (din L8)
 ```python
 from microbit import *
@@ -130,6 +142,10 @@ while True:
         display.clear()
     sleep(200)
 ```
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### 2) Seiful — planul
 Codul secret e **A, B, A**. Variabila `pas` ține minte în ce pas ești:
@@ -183,6 +199,10 @@ while True:
 ```
 Se vede cum aceleași blocuri `Yes` / `No` se repetă. Cu o **funcție** scăpăm de repetări.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 6 — Probleme cu `global`
 Încercăm să mutăm greșeala într-o funcție:
 ```text
@@ -212,6 +232,10 @@ display.scroll(str(pas))
 
 > `global pas` se pune **înainte** să schimbi `pas` în funcție. Dacă doar **citești** o variabilă de afară, nu ai nevoie de `global`.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 7 — Alegem un text la întâmplare
 ```python
 from microbit import *
@@ -221,6 +245,10 @@ raspunsuri = ["Da", "Nu", "Poate"]
 display.scroll(random.choice(raspunsuri))
 ```
 `random.choice(lista)` alege un element **la întâmplare** dintr-o listă.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 7** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 8 — Seiful Complet, pe bucăți
 Pregătim două funcții mici:
@@ -245,6 +273,10 @@ alarma()
 seif_inchis()
 ```
 `alarma()` pâlpâie craniul de 5 ori, apoi seiful revine.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 8** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 9 — Funcția `greseala`
 ```python
@@ -277,6 +309,10 @@ def greseala():
 greseala()
 ```
 La a treia greșeală (`greseli` ajunge la `3`) pornește alarma.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 9** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 10 — Seiful Complet
 ```python
@@ -336,6 +372,10 @@ while True:
 - Orice altă secvență (inclusiv **A+B**) e **greșeală**.  
 - La **3 greșeli la rând** pornește alarma; o deschidere reușită pune `greseli` înapoi pe `0`.  
 - Programul are **mai puține rânduri repetate** decât Exemplul 5.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 10** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

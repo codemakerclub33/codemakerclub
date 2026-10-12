@@ -51,6 +51,10 @@ display.scroll(prieteni[2])
 ```
 **Ce vezi pe placă:** `Ana`, apoi `Mia`.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 2 — Lungimea și ultimul element
 ```python
 from microbit import *
@@ -64,6 +68,10 @@ display.scroll(prieteni[-1])           # ultimul: Mia
 
 > Cu 3 elemente, indexurile sunt `0, 1, 2`. Dacă scrii `prieteni[3]`, apare eroarea `IndexError` („nu există locul 3”).
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 3 — Parcurgem lista cu `for`
 ```python
 from microbit import *
@@ -74,6 +82,10 @@ for c in culori:
     display.scroll(c)
 ```
 La fiecare tură, `c` ia pe rând câte un element.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 4 — Schimbăm o listă
 ```python
@@ -88,6 +100,10 @@ for x in lista:
 ```
 Se afișează `UNU`, `doi`, `trei`.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 5 — Scoatem elemente
 ```python
 from microbit import *
@@ -100,6 +116,10 @@ display.scroll(str(len(lista)))   # raman 2
 display.scroll(ultimul)           # d
 ```
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 6 — Este în listă?
 ```python
 from microbit import *
@@ -111,6 +131,10 @@ if "caine" in animale:
 else:
     display.show(Image.NO)
 ```
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 7 — Meniul în cerc, din nou
 Reluăm `%` din L1. Cu liste, lungimea vine singură din `len()`:
@@ -130,6 +154,10 @@ while True:
 ```
 Dacă adaugi un mesaj în listă, **nu mai schimbi nimic altceva**.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 7** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 8 — Înapoi: `%` și numerele negative
 În Python, `(-1) % 5` este `4`, deci putem merge înapoi în cerc:
 ```python
@@ -148,6 +176,10 @@ while True:
     sleep(100)
 ```
 De la mesajul `0`, apăsând **B** ajungi la ultimul (`2`).
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 8** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 9 — Cartea Minim
 ```python
@@ -171,6 +203,10 @@ while True:
     sleep(100)
 ```
 Fără diacritice în mesaje, ca placa să le poată afișa.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 9** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 10 — Cartea Complet
 ```python
@@ -208,6 +244,10 @@ while True:
 - **A+B** adaugă temperatura **la sfârșit**; dacă lista are mai mult de `MAXIM` elemente, scoate cel mai vechi (`pop(0)`).  
 - Scuturarea alege un index la întâmplare, de la `0` până la `len(mesaje) - 1`.  
 - Placa are **memorie mică**, de aceea limităm lista.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 10** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

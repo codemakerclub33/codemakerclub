@@ -65,6 +65,10 @@ display.scroll("Salut!")
 
 **Ce vezi pe placă:** literele S, a, l, u, t, ! trec de la dreapta la stânga, o singură dată.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### 4) Exemplul 2 — O imagine
 ```python
 from microbit import *
@@ -82,6 +86,10 @@ display.show(Image.HEART)
 . . # . .
 ```
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### 5) Exemplul 3 — Pauza
 ```python
 from microbit import *
@@ -91,6 +99,10 @@ sleep(1000)
 display.show(Image.SAD)
 ```
 `sleep(1000)` așteaptă **1000 de milisecunde** = 1 secundă. Mai întâi apare fața veselă, după o secundă cea tristă (rămâne pe ecran).
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### 6) Exemplul 4 — Bucla `while True:`
 ```python
@@ -108,6 +120,10 @@ while True:
 
 **Ce vezi pe placă:** inima mare și inima mică se schimbă la nesfârșit, ca o inimă care bate.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### 7) Exemplul 5 — Comentarii
 Un comentariu începe cu `#`. Python **îl ignoră**: e doar o notiță pentru oameni.
 
@@ -122,6 +138,10 @@ while True:
     sleep(300)
 ```
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### 8) Exemplul 6 — Numere
 ```python
 from microbit import *
@@ -131,6 +151,10 @@ display.scroll(str(2 + 3))
 Placa știe să calculeze. `2 + 3` face `5`. Pentru a-l arăta pe LED-uri, îl transformăm în text cu `str()`.
 
 **Ce vezi pe placă:** cifra `5`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### 9) Exemplul 7 — Mai multe imagini una după alta
 ```python
@@ -143,6 +167,10 @@ sleep(800)
 display.show(Image.HAPPY)
 ```
 Mai întâi doarme, apoi se miră, apoi se bucură. Fiecare linie se execută **de sus în jos**.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 7** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### 10) Exemplul 8 — Erorile sunt normale
 Dacă greșești o literă, placa **nu se supără**, ci îți spune ce e greșit: afișează o față tristă și **derulează un mesaj** cu numărul liniei.

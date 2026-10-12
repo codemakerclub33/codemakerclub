@@ -52,6 +52,10 @@ display.show(Image.YES)
 ```
 Placa are acum un fișier `salut.txt`. Poți să-l vezi în editor, la fila **Files**, cu placa conectată.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 2 — Citim un fișier
 ```python
 from microbit import *
@@ -65,6 +69,10 @@ with open("salut.txt") as f:
 display.scroll(text)
 ```
 `f.read()` dă **tot textul** din fișier.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 3 — Fișierul nu există
 Dacă încerci să citești un fișier care **nu există**, apare eroarea `OSError`. O prindem:
@@ -80,6 +88,10 @@ except OSError:
 ```
 Programul **nu se oprește**, ci ne spune frumos că fișierul lipsește.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 4 — Salvăm un număr
 Fișierele păstrează **text**. Numărul îl transformăm cu `str()` la scriere și cu `int()` la citire:
 ```python
@@ -94,6 +106,10 @@ with open("numar.txt") as f:
 display.scroll(str(n + 1))
 ```
 Se afișează `43`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 5 — Funcții pentru record
 Punem citirea și scrierea în **funcții**, ca să le folosim ușor:
@@ -120,6 +136,10 @@ display.scroll(str(citeste_record()))
 ```
 Se afișează `7`. Dacă fișierul lipsește sau are conținut ciudat, recordul e `0`.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 6 — Câte porniri?
 Un mic truc: placa numără **de câte ori a pornit** (tot cu fișier):
 ```python
@@ -142,6 +162,10 @@ with open("porniri.txt", "w") as f:
 display.scroll("Pornire " + str(porniri))
 ```
 Apasă butonul **RESET** (în spate): numărul crește. **Nu reîncărca** programul, altfel pornești de la început.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 7 — O rundă de joc
 Numărăm scuturările în **10 secunde**. Folosim `running_time()` ca să măsurăm timpul fără să oprim programul:
@@ -167,6 +191,10 @@ display.scroll(str(scor))
 ```
 Pe ecran se arată **ultima cifră** a scorului (de exemplu `3` pentru 13); la final se derulează scorul întreg.
 
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 7** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ### Exemplul 8 — Numărătoarea inversă
 ```python
 from microbit import *
@@ -180,6 +208,10 @@ def numaratoare():
 
 numaratoare()
 ```
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 8** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 9 — Jocul Minim
 ```python
@@ -236,6 +268,10 @@ while True:
 - Dacă scorul **bate recordul**, îl salvăm în fișier (și apare o inimă).  
 - **B** arată recordul.  
 - La pornire, recordul se **citește din fișier**.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 9** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 10 — Jocul Complet
 ```python
@@ -305,6 +341,10 @@ while True:
 ```
 - **A+B** pune recordul pe `0` și îl salvează (resetare).  
 - Verificăm `a and b` **primul**, ca să nu fie „mâncat” de `a` sau `b`.
+
+**Gata când:**  
+- [ ] Am scris și am rulat **Exemplul 10** în simulator sau pe placă  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

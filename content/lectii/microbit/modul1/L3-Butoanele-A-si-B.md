@@ -46,6 +46,9 @@ Tu ai fost „placa” care așteaptă un eveniment și apoi răspunde. Exact as
 ### 2) Proiect nou
 **New Project** → `Prenume_Nume_MB1_L03` → **Create**.
 
+**Gata când:**  
+- [ ] Proiectul nou e creat cu numele `Prenume_Nume_MB1_L03`  
+
 ### 3) Blocul de eveniment
 1. Categoria **Input** (săgeata de la mijloc).  
 2. Tragi **on button A pressed** în zona de lucru. Nu-l pui în `on start` sau `forever`, pentru că e **un bloc de sine stătător**, care începe singur programul lui când apeși A.  
@@ -83,6 +86,10 @@ Apeși A:                 Apeși B:
 
 Trimite pe placă și apasă butoanele adevărate.
 
+**Gata când:**  
+- [ ] Blocurile sunt puse în ordinea din lecție  
+- [ ] Simulatorul face ce scrie în „Minim”  
+
 ### 5) Complet — două butoane deodată
 1. Mai tragi un bloc **on button … pressed** și alegi **A+B** din listă.  
 2. Înăuntru: **show icon [Heart]**.  
@@ -103,6 +110,10 @@ on button A+B pressed
 ```
 
 > **Cum apeși A+B:** apasă ambele butoane **exact în același timp**. Dacă apeși A puțin mai devreme, placa crede că ai apăsat doar A.
+
+**Gata când:**  
+- [ ] Blocurile pentru „Complet” sunt adăugate  
+- [ ] Simulatorul face tot ce scrie în „Complet”  
 
 ### 6) Experimente — ce se întâmplă?
 Încearcă și notează pe foaie:
