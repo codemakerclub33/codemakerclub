@@ -41,6 +41,9 @@ Ușile și ferestrele de pe model sunt **de 2 ori mai mari decât în realitate*
    *(Dacă nu ai placa, o refaci rapid: 150·150·3 + 4 zone, ca la L1.)*  
 2. Snap Grid: **1.0 mm**
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T4_L01`  
+
 ### 2) Corpul casei
 1. **Box** → **24 · 20 · 12** *(în afara plăcii, deocamdată, pe plan)*  
 2. Ținem minte: 24 mm = 12 m, 20 mm = 10 m, 12 mm = 6 m (2 etaje)

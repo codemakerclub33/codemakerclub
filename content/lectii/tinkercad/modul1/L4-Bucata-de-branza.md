@@ -42,6 +42,9 @@ La finalul orei ai o felie de brânză cu **găuri** care trec prin ea (nu cercu
 2. Nume: `Prenume_Nume_T1_L04`  
 3. Salvare automată — verifici numele
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T1_L04`  
+
 ### 2) Brânza (felie)
 1. Tragi un **Wedge** pe plan (o rampă: înaltă la un capăt, ascuțită la celălalt)  
 2. Îl scalezi ca să arate a **felie**: ~**60 × 40 × 30** (pătrățelele albe)  
@@ -82,6 +85,10 @@ La finalul orei ai o felie de brânză cu **găuri** care trec prin ea (nu cercu
 ### 6) Verificare
 1. Rotești vederea: găurile se văd și din **spate**?  
 2. Dacă nu: **Ctrl+Shift+G** → **lungești** / muți cilindrii → Hole din nou dacă trebuie → **Ctrl+G**
+
+**Gata când:**  
+- [ ] Am parcurs toate punctele din verificare  
+- [ ] Am corectat ce nu se potrivea  
 
 ### 7) Complet — culoare și găuri
 1. Selectezi **grupul** (brânza cu găuri)  

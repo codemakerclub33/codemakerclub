@@ -40,6 +40,9 @@ Un obiect înalt se **răstoarnă** dacă are baza prea mică. Azi înveți regu
 1. **Create new design** · nume `Prenume_Nume_T2_L02`  
 2. Snap Grid: **1.0 mm** (jos-dreapta) — azi lucrăm cu mărimi fine
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T2_L02`  
+
 ### 2) Baza
 1. **Cylinder** → scrie **70 · 70 · 8** (un disc lat)  
 2. Culoarea o alegi la sfârșit
@@ -78,6 +81,10 @@ Un obiect înalt se **răstoarnă** dacă are baza prea mică. Azi înveți regu
 1. View Cube → **Front**  
 2. Capetele barei (30 mm în fiecare parte) sunt **în interiorul** bazei (35 mm de la centru)?  
 3. **Ctrl+A** → **Ctrl+G**
+
+**Gata când:**  
+- [ ] Am parcurs toate punctele din verificare  
+- [ ] Am corectat ce nu se potrivea  
 
 ### 7) Complet — bile, Ruler, culoare
 1. Selectezi suportul → **Ctrl+Shift+G** (desface ultimul Group): bara e din nou separată  

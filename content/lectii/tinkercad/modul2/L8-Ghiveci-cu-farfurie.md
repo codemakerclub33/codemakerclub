@@ -40,6 +40,9 @@ Gaura de scurgere lasă apa să iasă din ghiveci în farfurie.
 1. **Create new design** · nume `Prenume_Nume_T2_L08`  
 2. Snap Grid: **1.0 mm**
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T2_L08`  
+
 ### 2) Ghiveciul — exterior și gol
 1. **Cylinder** → **60 · 60 · 50**  
 2. Alt **Cylinder** → **54 · 54 · 50** → **Hole**  

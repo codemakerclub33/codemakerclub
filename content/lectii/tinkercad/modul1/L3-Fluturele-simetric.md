@@ -39,6 +39,9 @@ Multe obiecte sunt simetrice. Faci **o jumătate** și o **oglindești** — nu 
 2. Nume: `Prenume_Nume_T1_L03`  
 3. Salvare automată — verifici numele
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T1_L03`  
+
 ### 2) Corpul (pe plan)
 1. **Cylinder** subțire: **8 × 8 × 40**, apoi rotit **culcat** cu săgeata curbă (90°)  
 2. Din **Top** (View Cube), corpul trebuie să fie ca o baghetă **în sus–jos** pe ecran, iar aripile vor ieși **stânga–dreapta**. Dacă e pe orizontală, îl rotești încă 90° pe verticală (în jurul axei de sus)  

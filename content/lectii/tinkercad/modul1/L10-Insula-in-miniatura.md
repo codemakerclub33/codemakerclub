@@ -41,6 +41,9 @@ Un proiect propriu arată ce ai reținut. Îți pregătește și **portofoliul**
 2. Pe foaie: desenezi o insulă și **4–6 elemente** (ce pui unde)  
 3. Salvare automată — verifici numele
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T1_L10`  
+
 ### 2) Terenul
 1. **Cylinder** plat, **120 × 120 × 6** (cel mai simplu: suprafață plată, elementele se așază ușor)  
 2. **Color**: verde sau galben (nisip)  
@@ -87,6 +90,10 @@ Un proiect propriu arată ce ai reținut. Îți pregătește și **portofoliul**
 1. Rotești vederea: nimic nu plutește, nimic nu e în aer  
 2. Verifici din **Top** și din **Front**  
 3. Numele proiectului e corect
+
+**Gata când:**  
+- [ ] Am parcurs toate punctele din verificare  
+- [ ] Am corectat ce nu se potrivea  
 
 ---
 

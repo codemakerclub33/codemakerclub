@@ -42,6 +42,9 @@ Ca să se potrivească, dinții unei roți trebuie să intre în **golurile** ce
 2. Snap Grid: **1.0 mm**  
 *Atenție la **Align**: mută **ambele** piese spre mijlocul lor. Ca piesa veche să rămână pe loc, trage forma nouă **peste** ea înainte de **L**.*
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T3_L01`  
+
 ### 2) Discul și dinții
 1. **Cylinder** → **40 · 40 · 6** *(discul roții)*  
 2. **Box** → **56 · 6 · 6** *(o „bară” de dinți: capetele ies afară și devin dinți)*  

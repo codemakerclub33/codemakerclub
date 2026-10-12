@@ -40,6 +40,9 @@ O clădire înaltă are zeci de ferestre identice. Nu le faci una câte una: fac
 1. Copia proiectului `Prenume_Nume_T4_L02` (**Duplicate**), redenumită `Prenume_Nume_T4_L03` *(sau placa refăcută rapid)*  
 2. Snap Grid: **1.0 mm**
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T4_L02`  
+
 ### 2) Blocul și ușa
 1. **Box** → **30 · 20 · 54** *(în afara plăcii, deocamdată)*  
 2. **Box** → **8 · 4 · 8** → **Hole** *(ușa)*  

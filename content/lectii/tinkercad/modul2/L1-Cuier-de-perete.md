@@ -42,6 +42,9 @@ Azi înveți să **scrii mărimile cu numere**, nu doar să măsori cu ochiul. A
 3. Jos-dreapta, la **Snap Grid**, alege **5.0 mm** — piesele sar din 5 în 5 mm și e mai ușor să cadă exact unde vrei
 4. Piesa selectată se mută și cu **săgețile de la tastatură** (privești din **Top**): o apăsare = un pas de grilă = **5 mm**
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T2_L01`  
+
 ### 2) Mărimi cu numere (truc nou)
 1. Trage un **Box** pe plan  
 2. Click pe el → apar **pătrățele albe** în colțuri  
@@ -88,6 +91,10 @@ Azi înveți să **scrii mărimile cu numere**, nu doar să măsori cu ochiul. A
 2. Dacă placa pare ridicată de pe plan, apasă **D**  
 3. View Cube → **Top**: găurile se văd ca goluri?  
 4. View Cube → **Front**: cârligele ies în sus, placa e plată
+
+**Gata când:**  
+- [ ] Am parcurs toate punctele din verificare  
+- [ ] Am corectat ce nu se potrivea  
 
 ### 7) Complet — bile, Ruler, culoare
 1. **Sphere** de **12 · 12 · 12** → selectezi sfera și un cârlig → **L** → **mijloc** pe ambele direcții de pe plan (nu și sus–jos). Apoi o ridici cu **conul negru** la **19 mm** — se înfige puțin în vârful cârligului  

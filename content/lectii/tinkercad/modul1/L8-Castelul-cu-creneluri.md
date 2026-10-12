@@ -41,6 +41,9 @@ La oraș (M4) vei repeta ferestre la fel.
 2. Nume: `Prenume_Nume_T1_L08`  
 3. Salvare automată — verifici numele
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T1_L08`  
+
 ### 2) Zidul
 1. Tragi un **Box** și îl faci **104 lungime × 10 grosime × 20 înălțime**  
 2. Pe plan (dacă plutește → **D**)

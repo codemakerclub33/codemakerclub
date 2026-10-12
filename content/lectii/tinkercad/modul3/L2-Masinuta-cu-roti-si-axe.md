@@ -41,6 +41,9 @@ Azi avem joc de **1 mm pe parte**: gaura 7, axul 5.
 2. Snap Grid: **1.0 mm**  
 *Mașinuța „merge” spre stânga–dreapta pe ecran, văzută din **Front**. Axele merg pe adâncime (față–spate).*
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T3_L02`  
+
 ### 2) O roată
 1. **Cylinder** → **24 · 24 · 6** *(un disc subțire)*  
 2. Alt **Cylinder** → **7 · 7 · 10** → **Hole**  

@@ -40,6 +40,9 @@ Un dop **asimetric** (al doilea, mai mic) arată cum pui piesa: nu se poate înt
 1. **Create new design** · nume `Prenume_Nume_T3_L05`  
 2. Snap Grid: **1.0 mm**
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T3_L05`  
+
 ### 2) Piesa A — cu dop
 1. **Box** → **40 · 40 · 20**  
 2. **Box** → **16 · 16 · 10** *(dopul)*  

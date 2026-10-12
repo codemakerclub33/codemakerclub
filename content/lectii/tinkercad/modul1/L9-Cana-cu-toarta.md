@@ -40,6 +40,9 @@ Cavitățile sunt peste tot: căni, cutii, vaze. **Ordinea pieselor contează** 
 2. Nume: `Prenume_Nume_T1_L09`  
 3. Salvare automată — verifici numele
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T1_L09`  
+
 ### 2) Corpul
 1. Tragi un **Cylinder** și îl faci **40 × 40 × 45** (diametru 40, înălțime 45) — corpul cănii  
 2. Pe plan (dacă plutește → **D**)

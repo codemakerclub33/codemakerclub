@@ -57,6 +57,9 @@ La 8 etaje: ultimul are lățimea 20 − 14 = **6** și începe la **42**.
 ### 1) Proiect nou
 1. Design nou · **Codeblocks** · `Prenume_Nume_T5_L08`
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T5_L08`  
+
 ### 2) Variabilele
 1. **etaje** = 5  
 2. **lat** = 20 *(lățimea etajului curent)*  

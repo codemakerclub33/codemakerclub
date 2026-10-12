@@ -43,6 +43,9 @@ Dacă schimbi un număr, schimbi tot obiectul: așa gândesc inginerii care fac 
 1. Creezi un design nou · alegi **Codeblocks** *(în meniul de creare, sau din lista de unelte, în funcție de cont)*  
 2. Nume: `Prenume_Nume_T5_L07`
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T5_L07`  
+
 ### 2) Un cub din cod
 1. Din blocurile de **forme** tragi blocul care **creează un cub (box)**  
 2. Îi pui mărimile **10 · 10 · 10**  

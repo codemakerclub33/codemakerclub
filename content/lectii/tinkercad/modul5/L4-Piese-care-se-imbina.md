@@ -45,6 +45,9 @@ Desenezi placa A de sus: un cerc mare și, lipită de el, o fantă îngustă spr
 ### 1) Proiect nou
 1. `Prenume_Nume_T5_L04` · Snap Grid **0.5 mm** *(pentru mutări de milimetri întregi poți trece pe 1.0)*
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T5_L04`  
+
 ### 2) Placa A — gaura-cheie
 1. **Box** → **40 · 30 · 5** *(placa A)*  
 2. **Cylinder** → **10 · 10 · 7** → **Hole**  
@@ -77,6 +80,10 @@ Desenezi placa A de sus: un cerc mare și, lipită de el, o fantă îngustă spr
 | Capul | 9 | mai mare decât fanta |
 | Fanta | 5,4 | mai mare decât axul *(joc 0,2 pe parte)* |
 | Axul | 5 | — |
+
+**Gata când:**  
+- [ ] Am parcurs toate punctele din verificare  
+- [ ] Am corectat ce nu se potrivea  
 
 ### 5) Complet — asamblarea
 1. Placa A → **ridicată la 3 mm** *(stă pe placa B)*  

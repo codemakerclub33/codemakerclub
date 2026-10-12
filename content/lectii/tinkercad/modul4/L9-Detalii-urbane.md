@@ -40,6 +40,9 @@ Detaliile mici dau viață unui oraș. Dar nu le faci pe rând, una câte una: f
 2. Snap Grid: **0.5 mm**  
 3. Toate piesele stau pe zone, **la 1 mm de marginea dinspre stradă**, la **4 mm** *(nu pe trotuar, nu pe asfalt)*
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T4_L08`  
+
 ### 2) Felinarul
 1. **Box** **0,8 · 0,8 · 8** *(stâlpul)* → gri, ridicat la **4 mm**  
 2. **Box** **3 · 1,2 · 1** *(capul)* → galben, ridicat la **12 mm** *(deasupra stâlpului)*  

@@ -55,6 +55,9 @@ Desenezi cutia **din lateral**: în spate, la înălțimea capacului, un cerc ma
 ### 1) Proiect nou
 1. `Prenume_Nume_T5_L05` · Snap Grid **0.5 mm**
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T5_L05`  
+
 ### 2) Cutia
 1. **Box** → **50 · 40 · 20**  
 2. **Box** → **45,2 · 35,2 · 19** → **Hole** *(50 − 2·2,4 = 45,2; 40 − 2·2,4 = 35,2)*  
@@ -128,6 +131,10 @@ Desenezi cutia **din lateral**: în spate, la înălțimea capacului, un cerc ma
 2. **Top**: între articulația capacului și cele ale cutiei e un spațiu de **0,5 mm** de fiecare parte  
 3. Între spatele capacului și articulațiile cutiei rămâne **0,5 mm** *(capacul are 39,5 mm, cutia 40)*  
 4. Din **Front**: între cutie și capac e un strat de aer de **0,5 mm** *(capacul e la 20,5)*
+
+**Gata când:**  
+- [ ] Am parcurs toate punctele din verificare  
+- [ ] Am corectat ce nu se potrivea  
 
 ### 11) Complet — adâncitura și numele
 1. **Cylinder** **12 · 12 · 5** → **Hole** · **L** cu capacul: mijloc pe stânga–dreapta și marginea din **față** · îl muți **6 mm spre față** *(centrul pe marginea capacului: taie o jumătate de cerc)* · ridicat la **19 mm** *(trece prin capac, care e între 20,5 și 23,5)* → **Ctrl+G** cu **capacul**  

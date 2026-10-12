@@ -45,6 +45,9 @@ Obiectele din jur nu sunt doar formă: o lanternă are și **circuit**. Un desig
 1. În Tinkercad alegi **Circuits** → **Create new Circuit**  
 2. Nume: `Prenume_Nume_T5_L09`
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T5_L09`  
+
 ### 2) Piesele
 1. Din lista de componente tragi: o **baterie 9 V**, un **rezistor**, un **LED**  
 2. Rezistorul: click pe el → în căsuța care apare scrii **Resistance = 470 Ω**  

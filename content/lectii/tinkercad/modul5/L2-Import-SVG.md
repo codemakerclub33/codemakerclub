@@ -41,6 +41,9 @@ Multe obiecte reale (logo-uri, ștampile, brelocuri) pornesc de la un **desen pl
 ### 1) Proiect nou
 1. `Prenume_Nume_T5_L02` · Snap Grid **1.0 mm**
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T5_L02`  
+
 ### 2) Importul
 1. Apeși **Import** *(sus, dreapta)* și alegi fișierul **SVG** primit  
 2. În fereastra de import poți vedea mărimea și, uneori, o opțiune de scalare — lași valorile și apeși **Import**  

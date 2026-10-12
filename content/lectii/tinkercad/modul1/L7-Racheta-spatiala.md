@@ -40,6 +40,9 @@ Exersezi ce ai învățat: **rotire**, **aliniere**, **Hole**, **Group**.
 2. Nume: `Prenume_Nume_T1_L07`  
 3. Salvare automată — verifici numele
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T1_L07`  
+
 ### 2) Corpul și vârful
 1. **Cylinder** în picioare, pe plan: **20 × 20 × 50**  
 2. **Cone** deasupra: **20 × 20 × 25**, ridicat cu conul negru la **49** (intră 1 mm în cilindru). **D** doar dacă ai greșit cilindrul, nu pe con  
@@ -86,6 +89,10 @@ Racheta stă pe plan, deci flăcările nu pot fi *sub* ea. O ridicăm și o „s
 1. **Front**: racheta e dreaptă, aripioarele la bază  
 2. **Top**: simetrie  
 3. Minim: racheta stă pe plan · Complet: stă pe flăcări (vârfurile lor ating planul)
+
+**Gata când:**  
+- [ ] Am parcurs toate punctele din verificare  
+- [ ] Am corectat ce nu se potrivea  
 
 ---
 

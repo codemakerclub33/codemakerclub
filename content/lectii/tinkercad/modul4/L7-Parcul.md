@@ -39,6 +39,9 @@ Un parc face orașul mai plăcut. Copacii se repetă cu **Ctrl+D**, ca ferestrel
 1. Copia proiectului `Prenume_Nume_T4_L06` (**Duplicate**), redenumită `Prenume_Nume_T4_L07`  
 2. Snap Grid: **1.0 mm**
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T4_L06`  
+
 ### 2) Un copac
 1. **Cylinder** **2 · 2 · 6** *(trunchiul)* → maro  
 2. **Cone** **10 · 10 · 14** *(coroana)* → verde  

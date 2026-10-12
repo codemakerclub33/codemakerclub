@@ -40,6 +40,9 @@ Cu **Ctrl+D** faci un rând, apoi copiezi tot rândul — fără să măsori de 
 1. **Create new design** · nume `Prenume_Nume_T2_L06`  
 2. Snap Grid: **1.0 mm** pentru început
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T2_L06`  
+
 ### 2) Corpul
 1. **Cylinder** → **70 · 70 · 40**  
 2. Rămâne **Solid**
@@ -71,6 +74,10 @@ Cu **Ctrl+D** faci un rând, apoi copiezi tot rândul — fără să măsori de 
 1. **Ctrl+A** → **Ctrl+G**  
 2. View Cube → **Top**: 4 găuri, pereți între ele vizibil egali?  
 3. Perete minim între găuri: cât? (30 − 16 = **14 mm** pe axă, **mai mult** pe diagonală)
+
+**Gata când:**  
+- [ ] Am parcurs toate punctele din verificare  
+- [ ] Am corectat ce nu se potrivea  
 
 ### 6) Complet — bază lată + Ruler
 1. **Cylinder** **80 · 80 · 4** (lângă suport) → selectezi baza și suportul → **L** → mijloc pe ambele direcții de pe plan: baza stă pe plan, sub corp  

@@ -40,6 +40,9 @@ Dacă marginea capacului e **exact** cât gaura, la printare nu intră. Azi laș
 1. **Create new design** · nume `Prenume_Nume_T2_L03`  
 2. Snap Grid: **1.0 mm**
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T2_L03`  
+
 ### 2) Cutia — exteriorul
 1. **Box** → **60 · 40 · 30**  
 2. Rămâne **Solid**

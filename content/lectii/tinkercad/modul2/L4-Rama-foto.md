@@ -40,6 +40,9 @@ Buzunarul din spate e o piesă făcută din **două straturi** — așa se const
 1. **Create new design** · nume `Prenume_Nume_T2_L04`  
 2. Snap Grid: **1.0 mm**
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T2_L04`  
+
 ### 2) Placa
 1. **Box** → **90 · 70 · 3** (o placă subțire)  
 2. Rămâne **Solid**
@@ -63,6 +66,10 @@ Buzunarul din spate e o piesă făcută din **două straturi** — așa se const
 1. View Cube → **Top**: marginile sunt egale? (**15 mm** stânga–dreapta, **15 mm** sus–jos)  
 2. **Ruler**: pui rigla în colțul plăcii și măsori până la fereastră: o margine lungă și una scurtă — amândouă 15 mm *(Hole-ul se măsoară doar separat: **Ctrl+Shift+G**, măsori, apoi **Ctrl+A** → **Ctrl+G** și **D**)*  
 3. Rotești vederea: golul se vede și din spate?
+
+**Gata când:**  
+- [ ] Am parcurs toate punctele din verificare  
+- [ ] Am corectat ce nu se potrivea  
 
 ### 5) Complet — stratul din spate
 1. **Box** **90 · 70 · 3** (alt strat, la fel de mare) — îl pui **lângă** ramă, nu peste ea  

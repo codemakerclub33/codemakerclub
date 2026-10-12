@@ -41,6 +41,9 @@ Trecerile de pietoni se fac din **dungi egale** — iar Ctrl+D le repetă perfec
 2. Snap Grid: **1.0 mm** *(la mutările mari de 15 sau 30 mm treci pe **5.0 mm**, ca să nu apeși de 30 de ori)*  
 3. **View Cube → Top**: vezi golul în formă de cruce dintre cele 4 zone
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T4_L04`  
+
 ### 2) Asfaltul
 1. **Box** → **150 · 12 · 1** *(strada orizontală)*  
 2. Selectezi strada și **placa** → **L** → mijloc pe stânga–dreapta și pe față–spate *(centrată)*  

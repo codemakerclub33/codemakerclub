@@ -110,6 +110,10 @@ Axul e prins în zid; podul e separat și se poate roti pe el.
 3. Selectezi **axul** și fortăreața → **Ctrl+G** *(axul se prinde de ea)*  
 4. Click pe pod: se selectează singur — e **separat**
 
+**Gata când:**  
+- [ ] Am parcurs toate punctele din verificare  
+- [ ] Am corectat ce nu se potrivea  
+
 ### 9) Complet — creneluri, Ruler, culori
 1. **Box** → **6 · 12 · 8** → **Hole** → **L** cu fortăreața: mijloc pe cele două direcții (zidul e în mijlocul plăcii) → Snap Grid **5.0** → ridici cu conul negru la **25 mm**  
 2. **Ctrl+D** → muți copia **10 mm** spre dreapta  

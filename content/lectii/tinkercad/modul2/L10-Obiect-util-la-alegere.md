@@ -90,6 +90,10 @@ Alege **unul** (sau propune tu, cu acordul profesorului):
 2. Numele proiectului e corect  
 3. Mărimile din Tinkercad se potrivesc cu schița
 
+**Gata când:**  
+- [ ] Am parcurs toate punctele din verificare  
+- [ ] Am corectat ce nu se potrivea  
+
 ---
 
 ## Greșeli frecvente

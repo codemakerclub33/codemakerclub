@@ -42,6 +42,9 @@ Lumina trece **doar** prin golurile pe care le-ai tăiat tu.
 1. **Create new design** · nume `Prenume_Nume_T2_L07`  
 2. Snap Grid: **5.0 mm**
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T2_L07`  
+
 ### 2) Tubul
 1. **Cylinder** → **70 · 70 · 70**  
 2. Alt **Cylinder** → **64 · 64 · 80** → **Hole**  
@@ -79,6 +82,10 @@ Lumina trece **doar** prin golurile pe care le-ai tăiat tu.
 1. **Ctrl+A** → **Ctrl+G**  
 2. View Cube → **Top**: tubul gol, 8 deschideri în perete  
 3. **Front**: ferestre egale, aceeași înălțime, același loc
+
+**Gata când:**  
+- [ ] Am parcurs toate punctele din verificare  
+- [ ] Am corectat ce nu se potrivea  
 
 ### 6) Complet — al doilea rând
 1. Dacă ai grupat deja: **Ctrl+Shift+G** pe tot. Apoi **Ctrl+A** și **Shift+click** pe tub (îl scoți din selecție) → rămân selectate doar cele **4 bare Hole**  

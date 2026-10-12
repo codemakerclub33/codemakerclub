@@ -54,6 +54,9 @@ Cât de mare? Depinde de imprimantă. Tu faci acum testul; **după oră** (la pr
 ### 1) Proiect nou
 1. `Prenume_Nume_T5_L03` · Snap Grid **1.0 mm** *(mutările mari le faci cu săgețile, ca în L1; pentru mărimi ca 6,2 tastezi cifrele — Snap Grid nu contează)*
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T5_L03`  
+
 ### 2) Placa A — știfturile
 1. **Box** → **80 · 20 · 5** *(placa A)*  
 2. **Cylinder** → **6 · 6 · 8** *(știftul)* → **L** cu placa: mijloc pe față–spate și marginea din stânga  
@@ -92,6 +95,10 @@ Cât de mare? Depinde de imprimantă. Tu faci acum testul; **după oră** (la pr
 1. Din **Top**: fiecare gaură e în dreptul unui știft *(prima placă și a doua au aceleași centre pe stânga–dreapta)*  
 2. Selectezi fiecare gaură: câmpurile de mărime arată 6,2 · 6,4 · 6,6 *(cu **Ruler** verifici și distanțele: 15 mm între centre)*  
 3. Pe foaie: notezi jocul pe parte *(6,2 − 6) ÷ 2 = 0,1 mm; 6,4 → 0,2 mm; 6,6 → 0,3 mm*
+
+**Gata când:**  
+- [ ] Am parcurs toate punctele din verificare  
+- [ ] Am corectat ce nu se potrivea  
 
 ### 6) Complet — încă 2 perechi
 1. Placa A e un Group: **Ctrl+Shift+G** *(desface)*. Știft nou la **10** *(Ctrl+D din știftul de la 25, 15 mm spre stânga)* și la **70** *(Ctrl+D din cel de la 55, 15 mm spre dreapta)* → apoi **Ctrl+G** pe placa A și toți cei 5 știfturi  

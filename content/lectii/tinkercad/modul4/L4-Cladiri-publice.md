@@ -40,6 +40,9 @@ Fără semn, un cub gri poate fi orice.
 1. Copia proiectului `Prenume_Nume_T4_L03` (**Duplicate**), redenumită `Prenume_Nume_T4_L04` *(sau placa refăcută rapid)*  
 2. Snap Grid: **1.0 mm**
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T4_L03`  
+
 ### 2) Corpul, ușa, ferestrele
 1. **Box** → **40 · 20 · 16** *(în afara plăcii, deocamdată)*  
 2. **Box** → **6 · 4 · 10** → **Hole** *(ușa)*: **L** cu corpul → mijloc stânga–dreapta, punctul de **jos**, punctul din **față**; apoi **2 mm spre față**  

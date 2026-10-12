@@ -41,6 +41,9 @@ Ca amprenta să iasă **corectă**, textul de pe ștampilă trebuie să fie **og
 2. Nume: `Prenume_Nume_T1_L05`  
 3. Salvare automată — verifici numele
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T1_L05`  
+
 ### 2) Baza
 1. Tragi un **Box** și îl faci **60 × 30 × 5** (lungime × lățime × înălțime)  
 2. Pe plan (dacă plutește → **D**)  

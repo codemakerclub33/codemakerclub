@@ -40,6 +40,9 @@ La finalul orei ai o barcă recunoscută din lateral: **corp** + **catarg** + **
 2. Nume: `Prenume_Nume_T1_L06`  
 3. Salvare automată — verifici numele
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T1_L06`  
+
 ### 2) Corpul bărcii
 1. Tragi un **Half Sphere** din Basic Shapes  
 2. Îl scalezi **lung și îngust** (pătrățelele albe): **60 lungime × 20 lățime × 15 înălțime**  

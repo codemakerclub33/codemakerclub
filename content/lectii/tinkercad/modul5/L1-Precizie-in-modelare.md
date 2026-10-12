@@ -44,6 +44,9 @@ Astăzi înveți trei obiceiuri: **tastezi** mărimile, folosești **Snap Grid**
 > • **Mutare exactă:** selectezi piesa și apeși **săgețile** de la tastatură. O apăsare = un pas de Snap Grid *(la 1.0 mm: 7 apăsări = 7 mm; poți ține tasta apăsată)*. Lucrează din vederea normală sau din **Top**.  
 > • **Zecimale:** în Tinkercad scrii **6.2** cu **punct** (nu cu virgulă). În lecție le scriem cu virgulă, ca în română.
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T5_L01`  
+
 ### 2) Placa
 1. **Box** → mânerul alb din colț → tastezi **60 · 30 · 5**  
 2. Placa stă pe plan; o poți lăsa unde e — **Ruler** se pune mai târziu pe colțul ei
@@ -74,6 +77,10 @@ Astăzi înveți trei obiceiuri: **tastezi** mărimile, folosești **Snap Grid**
 1. Apeși **Ruler** *(colțul din dreapta-sus)* și îl pui pe colțul din stânga-față al plăcii  
 2. Selectezi o gaură: Ruler arată distanțele până la **marginile** ei  
 3. Gaura 1: marginile la **7** și **13** *(centrul = la mijloc = 10)* · gaura 2: **47** și **53** *(centrul 50)*
+
+**Gata când:**  
+- [ ] Am parcurs toate punctele din verificare  
+- [ ] Am corectat ce nu se potrivea  
 
 ### 6) Complet — fanta
 1. **Box** → **20 · 6 · 7** → **Hole**  

@@ -40,6 +40,9 @@ Capacul de sus împiedică rotorul să iasă. Același principiu ca la roțile m
 1. **Create new design** · nume `Prenume_Nume_T3_L03`  
 2. Snap Grid: **1.0 mm**
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T3_L03`  
+
 ### 2) Baza și stâlpul
 1. **Cylinder** → **50 · 50 · 5** *(baza)*  
 2. **Cylinder** → **8 · 8 · 70** *(stâlpul)*  
@@ -93,6 +96,10 @@ Capacul de sus împiedică rotorul să iasă. Același principiu ca la roțile m
 ### 7) Verificare
 1. View Cube → **Front**: rotorul **nu atinge** baza și nici capacul  
 2. Rotorul e o piesă **separată** (click pe el → se selectează singur)
+
+**Gata când:**  
+- [ ] Am parcurs toate punctele din verificare  
+- [ ] Am corectat ce nu se potrivea  
 
 ### 8) Complet — 8 palete, Ruler, culori
 1. Rotorul → **Ctrl+Shift+G** (desfaci ultimul Group: butuc cu gaură + bare)  

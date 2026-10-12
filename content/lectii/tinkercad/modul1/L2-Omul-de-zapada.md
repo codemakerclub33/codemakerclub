@@ -40,6 +40,9 @@ Azi le exersezi pe piese rotunde. Fără **Shift** la scalare, sfera se „strâ
 2. Nume: `Prenume_Nume_T1_L02`  
 3. Tinkercad salvează automat — verifici numele sus
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T1_L02`  
+
 ### 2) Corpul (sfera de jos)
 1. Tragi o **Sphere** pe plan  
 2. Scalezi **proporțional**: ții **Shift** și tragi de un **pătrățel alb din colț** până vezi **40 × 40 × 40**  

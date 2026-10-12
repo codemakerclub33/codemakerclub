@@ -43,6 +43,9 @@ Fără cameră, plan, Undo și nume de proiect, restul orelor se blochează.
 3. Redenumești: `Prenume_Nume_T1_L01` (click pe numele de sus)  
 4. Tinkercad **salvează automat** — verifici doar că numele e corect
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T1_L01`  
+
 ### 2) Provocare — 5 forme
 1. Din panoul din dreapta (**Basic Shapes**), tragi pe plan **5 forme diferite** (ex. Box, Pyramid, Cylinder, Sphere, Cone)  
 2. Le așezi una lângă alta, pe plan (nu plutind)  

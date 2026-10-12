@@ -42,6 +42,9 @@ Raportul de transmisie arată cât de repede se rotește fiecare roată: **roata
 ### 1) Proiect nou
 1. `Prenume_Nume_T5_L06` · Snap Grid **0.5 mm**
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T5_L06`  
+
 ### 2) Roata mică
 1. Din lista de forme alegi **Shape Generators** și găsești **Gear**  
 2. O tragi pe plan · în meniul ei pui **12 dinți** *(restul valorilor rămân cele de bază)*  

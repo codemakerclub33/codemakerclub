@@ -40,6 +40,9 @@ Fanta e mai îngustă decât săpunul și **nu atinge pereții**: dacă taie per
 1. **Create new design** · nume `Prenume_Nume_T2_L05`  
 2. Snap Grid: **1.0 mm**
 
+**Gata când:**  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T2_L05`  
+
 ### 2) Tava
 1. **Box** → **100 · 70 · 20**  
 2. Alt **Box** → **94 · 64 · 20** → **Hole**  
@@ -75,6 +78,10 @@ Fanta e mai îngustă decât săpunul și **nu atinge pereții**: dacă taie per
 1. **Ctrl+A** → **Ctrl+G**  
 2. View Cube → **Top**: se văd 3 fante prin fund?  
 3. **Front**: fantele nu ating pereții
+
+**Gata când:**  
+- [ ] Am parcurs toate punctele din verificare  
+- [ ] Am corectat ce nu se potrivea  
 
 ### 6) Complet — piciorușe
 1. Snap Grid: **1.0 mm**  
