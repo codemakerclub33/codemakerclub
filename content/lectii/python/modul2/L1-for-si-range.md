@@ -86,6 +86,11 @@ for i in range(5):
 
 Atenție! `range(5)` dă numerele **0, 1, 2, 3, 4**: începe de la `0` și se oprește **înainte** de 5. Sunt tot 5 numere, deci bucla se repetă de 5 ori.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Repetăm de 5 ori)  
+- [ ] Am scris și am rulat **Exemplul 2** (Ce valori ia `i`?)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. `range` cu mai multe numere
@@ -136,6 +141,11 @@ print()
 - `end=" "` face ca `print` să pună un spațiu la sfârșit, în loc să treacă pe rând nou. Așa numerele apar toate pe **același rând**.
 - `print()` fără nimic trece pe rândul următor.
 - Un pas **negativ** numără invers.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (De la 1 la 5)  
+- [ ] Am scris și am rulat **Exemplul 4** (Cu pas: din 2 în 2)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -192,6 +202,12 @@ Gata!
 
 Aici `fruct` primește pe rând fiecare element din listă. Observă că linia `print("Gata!")` nu e indentată: se execută **o singură dată**, după buclă.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 5** (Suma numerelor de la 1 la 10)  
+- [ ] Am scris și am rulat **Exemplul 6** (`for` pe un text)  
+- [ ] Am scris și am rulat **Exemplul 7** (`for` pe o listă)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 5. Buclă și `input`
@@ -232,6 +248,11 @@ print("START!")
 START!
 ```
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 8** (Repetăm de câte ori vrea utilizatorul)  
+- [ ] Am scris și am rulat **Exemplul 9** (Numărătoarea inversă)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 6. Mini-proiect
@@ -271,6 +292,10 @@ Racheta urca:
 ```
 
 În ultimul `for`, folosim un calcul cu `rand` ca să aliniem desenul: spațiile din stânga scad, iar semnele `^` cresc.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Numărătoarea rachetei)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

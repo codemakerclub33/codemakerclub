@@ -73,6 +73,10 @@ Cum citești:
 - `salut()` o **apelează**: abia atunci se execută corpul. Parantezele sunt obligatorii.
 - Funcția trebuie definită **înainte** de a fi apelată.
 
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Funcție fără parametri)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Parametri
@@ -112,6 +116,11 @@ Radu are 11 ani si locuieste in Bucuresti.
 ```
 
 Valorile se potrivesc cu parametrii **în ordine**: prima valoare merge în primul parametru, a doua în al doilea etc.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 2** (Un parametru)  
+- [ ] Am scris și am rulat **Exemplul 3** (Mai mulți parametri)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -196,6 +205,12 @@ Insuficient
 
 O funcție poate returna `True` / `False`, text, numere, liste, orice. Când `return` este executat, funcția se **termină**: de aceea ultimul `return "Insuficient"` nu are nevoie de `else`.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 4** (`return`)  
+- [ ] Am scris și am rulat **Exemplul 5** (`print` sau `return`?)  
+- [ ] Am scris și am rulat **Exemplul 6** (Funcție cu decizie)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 5. Valori implicite, variabile locale
@@ -239,6 +254,11 @@ In functie: 100
 
 Variabila `rezultat` există **doar în interiorul funcției**: este **locală**. După ce funcția se termină, ea dispare. Dacă ai încerca `print(rezultat)` în afara funcției, Python ar da `NameError`.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 7** (Valoare implicită)  
+- [ ] Am scris și am rulat **Exemplul 8** (Variabile locale)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 6. O funcție utilă
@@ -267,6 +287,10 @@ chenar("Python este super", "#")
 ```
 
 Scrisă o singură dată, funcția poate desena chenare pentru orice text.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 9** (Chenar pentru orice text)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -310,6 +334,10 @@ Aria 5 x 3: 15
 Cel mai mare din 4, 9, 6: 9
 Suma patratelor 3 si 4: 25
 ```
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Cutia cu unelte)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

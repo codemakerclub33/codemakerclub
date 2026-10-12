@@ -113,6 +113,12 @@ turtle.done()
 
 **Ce vezi pe ecran:** pe fundal albastru foarte închis, o **stea galbenă**, cu contur alb.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Prima stea)  
+- [ ] Am scris și am rulat **Exemplul 2** (De ce 144?)  
+- [ ] Am scris și am rulat **Exemplul 3** (Steaua umplută)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Orice număr de colțuri
@@ -163,6 +169,10 @@ turtle.done()
 **Ce vezi pe ecran:** **trei stele** în linie, una lângă alta: roșie (5 colțuri), verde (7 colțuri) și albastră (9 colțuri). Cu cât are mai multe colțuri, cu atât steaua seamănă mai mult cu un cerc.
 
 Funcția `unghi_stea(n)` **returnează** unghiul (nu desenează nimic). Folosim formula de două ori: o dată la afișare și o dată la desen.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 4** (Stele cu 5, 7 și 9 colțuri)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -216,6 +226,10 @@ turtle.done()
 - funcția `stea(x, y, marime, culoare)` desenează o stea umplută oriunde.
 
 Luna este desenată la final, deci acoperă stelele aflate în spatele ei.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 5** (Stele la întâmplare)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -310,6 +324,12 @@ turtle.done()
 ```
 
 **Ce vezi pe ecran:** o **spirală cu cinci brațe** în culorile roșu, auriu, verde deschis, azuriu și magenta. Este spirala din Lecția 3, dar cu unghiul `144°` de la stele: aceeași idee, alt rezultat.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 6** (Stele în cerc)  
+- [ ] Am scris și am rulat **Exemplul 7** (Inel de stele cu funcție)  
+- [ ] Am scris și am rulat **Exemplul 8** (Spirala de stele)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -412,6 +432,11 @@ turtle.done()
 **Ce vezi pe ecran:** pe fundal albastru închis, o **mandală cu 4 inele**: 24 de stele albastru-deschis în exterior, apoi 18 aurii, 12 roz și 8 verzi în centru. În mijloc este un **punct alb**, iar sus, deasupra mandalei, apare scris cu litere îngroșate textul **„Mandala mea”**.
 
 Programul este ușor de schimbat: lista `straturi` conține, pentru fiecare inel, **numărul de stele, mărimea, distanța și culoarea**. Adaugi un strat nou, adăugând doar un rând în listă.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 9** (Inele diferite)  
+- [ ] Am scris și am rulat **Exemplul 10** (Mandala mea)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

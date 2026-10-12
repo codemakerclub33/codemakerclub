@@ -477,6 +477,13 @@ Aceleasi rezultate: True
 
 Cele două funcții fac **exact același lucru**, dar a doua este mai bună: numerele „magice” (`7`, `550`) au primit **nume** (`VITEZA_NAVA`, `LATIME_ECRAN - LATIME_NAVA`). Dacă vrei o navă mai rapidă sau un ecran mai lat, schimbi **un singur loc**, iar numele îți spun la ce folosește fiecare valoare. Înainte de expoziție, caută în jocul tău numere care se repetă și dă-le nume.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Ecran de reguli)  
+- [ ] Am scris și am rulat **Exemplul 2** (Tranziție cu fade)  
+- [ ] Am scris și am rulat **Exemplul 3** (Captură de ecran)  
+- [ ] Am rulat și restul exemplelor din secțiune  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Cadrul expoziției
@@ -683,6 +690,10 @@ pygame.quit()
 - **Oricând**: **F12** salvează o captură de ecran, iar **F3** arată sau ascunde FPS-ul.
 
 **Înlocuiește mini-jocul cu jocul tău!** Starea `"joc"` este locul unde pui bucla jocului tău: ce desenează și ce actualizează jocul. Meniul, regulile, creditele, fade-ul și captura **rămân la fel**, schimbi doar titlul, autorul, regulile și creditele (listele de la început).
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** („Expoziția”)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

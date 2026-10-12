@@ -173,6 +173,12 @@ pygame.quit()
 
 Cu `or`, aceeași acțiune se declanșează de la oricare dintre două taste. De acum personajul este un `Rect` (`jucator`), care ne va fi util la coliziuni.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Un pas la fiecare apăsare)  
+- [ ] Am scris și am rulat **Exemplul 2** (Mers continuu)  
+- [ ] Am scris și am rulat **Exemplul 3** (Săgeți și WASD)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Margini, viteză, direcție
@@ -337,6 +343,12 @@ pygame.quit()
 
 Creăm **două imagini** (originalul și varianta oglindită, cu `transform.flip`) și, la fiecare cadru, o alegem pe cea potrivită cu variabila `directie`.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 4** (Rămânem în fereastră)  
+- [ ] Am scris și am rulat **Exemplul 5** (Turbo cu Shift)  
+- [ ] Am scris și am rulat **Exemplul 6** (Personajul se întoarce)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 4. Săritura
@@ -395,6 +407,10 @@ pygame.quit()
 Ingredientele sunt cele din lecția trecută (gravitația), plus două idei noi:
 - săritura se declanșează cu **`KEYDOWN`** (o singură dată), nu cu `get_pressed`, altfel pătratul ar zbura cât ții tasta;
 - variabila `pe_pamant` **interzice săritura în aer**: se poate sări doar când ești pe iarbă (`pe_pamant` este `True`).
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 7** (Sărim pe loc)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -531,6 +547,11 @@ True
 
 `pygame.time.get_ticks()` dă **milisecundele trecute de la pornirea jocului**. Reținem momentul ultimului foc (`ultima_tragere`) și permitem un foc nou doar dacă a trecut cel puțin `PAUZA`. Funcția `poate_trage` este testată cu trei exemple: la 1000 ms după un foc de la 0, putem trage; la 100 ms după ultimul foc, nu; la 300 ms, din nou da. (`print`-urile arată `True`, `False`, `True`.)
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 8** (Gloanțe)  
+- [ ] Am scris și am rulat **Exemplul 9** (Pauză între focuri (cooldown))  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 6. Mini-proiect
@@ -626,6 +647,10 @@ pygame.quit()
 **Ce vezi pe ecran:** un **cer cu 60 de stele** care **cad încet** (stelele mari cad mai repede, ca un efect de adâncime) și o **navă albastră** cu un geam alb și o flacără portocalie, jos, în centru. Conduci nava cu **săgețile** sau cu **W, A, S, D**; ea nu iese din ecran. Cu **spațiu** tragi gloanțe galbene (maximum 5 pe secundă). Sus, în stânga, un text arată **câte focuri ai tras** și câte gloanțe sunt acum pe ecran. **Escape** închide jocul.
 
 Ce este nou aici: stelele sunt liste mici `[x, y, viteză]`; cele care ies jos **reapar sus**, în alt loc. Nava este o **imagine** (desenată cu `polygon` și `circle`) și o poziție (`Rect`) creată cu `get_rect()`.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Nava mea)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

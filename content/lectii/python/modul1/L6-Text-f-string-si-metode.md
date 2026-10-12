@@ -96,6 +96,12 @@ O treime: 3.3
 
 `:.2f` înseamnă „arată numărul cu **2 zecimale**”. `:.1f` arată o zecimală. Foarte util pentru prețuri.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Prima f-string)  
+- [ ] Am scris și am rulat **Exemplul 2** (Calcule în acolade)  
+- [ ] Am scris și am rulat **Exemplul 3** (Numere cu zecimale)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Metode: comenzi ale textului
@@ -165,6 +171,12 @@ salut
 
 `strip()` șterge spațiile de la **începutul** și de la **sfârșitul** textului. Util când utilizatorul scrie din greșeală spații în plus.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 4** (Litere mari și mici)  
+- [ ] Am scris și am rulat **Exemplul 5** (Înlocuim cuvinte)  
+- [ ] Am scris și am rulat **Exemplul 6** (Curățăm spațiile)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 4. Literele dintr-un text
@@ -223,6 +235,11 @@ nohtyP
 - `[:2]` ia de la început până la 2 (fără 2).
 - `[::-1]` ia tot textul **invers**.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 7** (O literă)  
+- [ ] Am scris și am rulat **Exemplul 8** (O bucată de text (slicing))  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 5. Căutăm în text
@@ -252,6 +269,10 @@ False
 | `"an" in text` | `True` dacă bucata se află în text |
 | `text.count("a")` | de câte ori apare `"a"` |
 | `text.find("n")` | indexul primei apariții (sau `-1` dacă nu există) |
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 9** (`in`, `count`, `find`)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -286,6 +307,10 @@ Lungime:         5
 Litere 'a':      2
 -------------------------
 ```
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Laboratorul de cuvinte)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

@@ -164,6 +164,13 @@ Ai scris: 42
 
 Dacă jucătorul scrie `abc` sau un număr în afara intervalului, jocul **nu se oprește cu eroare**: îl roagă din nou. Această funcție se poate reutiliza în orice program.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Cel mai simplu joc)  
+- [ ] Am scris și am rulat **Exemplul 2** (Cu număr aleator)  
+- [ ] Am scris și am rulat **Exemplul 3** (Încercări limitate)  
+- [ ] Am rulat și restul exemplelor din secțiune  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Funcții și runde
@@ -252,6 +259,12 @@ g: numere 1..1000, 10 incercari
 
 O funcție care returnează **două valori** (de la Lecția 9) ne ajută să alegem nivelul: *ușor*, *mediu* sau *greu*. Pentru 1000 de numere, cu 10 încercări tot se poate: de fiecare dată înjumătățești intervalul.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 5** (Funcția care joacă o rundă)  
+- [ ] Am scris și am rulat **Exemplul 6** (Mai multe runde)  
+- [ ] Am scris și am rulat **Exemplul 7** (Dificultate)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 4. Statistici și strategie
@@ -308,6 +321,11 @@ Gasit in 6 incercari
 ```
 
 Este **cea mai bună strategie**: încerci mereu numărul din **mijlocul** intervalului și eliminezi jumătate din posibilități. Pentru numere de la 1 la 100, ai nevoie de cel mult **7 încercări**. De aceea jocul nostru are 7 încercări: se poate câștiga mereu!
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 8** (Statistici cu o listă)  
+- [ ] Am scris și am rulat **Exemplul 9** (Strategia: tăiem intervalul în două)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -403,6 +421,10 @@ Media: 5.0 incercari
 ```
 
 Programul are **trei funcții**: `citeste_numar` (citire sigură), `joaca_runda` (o rundă) și `main` (runde, scor, statistici). În exemplul de mai sus, jucătorul a scris la început `abc` și `500` (greșit, jocul l-a ajutat să corecteze), apoi a jucat două runde cu strategia „mijlocul intervalului”.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** („Ghicește numărul”)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

@@ -126,6 +126,12 @@ A mers spre dreapta: True
 
 **Ce vezi pe ecran:** o țestoasă verde care face **30 de pași** de mărimi diferite (de la 1 la 15) și se oprește. De fiecare dată ajunge în alt loc, pentru că pașii sunt aleatori. Rândul `print` este un test: țestoasa a făcut doar pași înainte, deci răspunsul este mereu `True`.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Două țestoase)  
+- [ ] Am scris și am rulat **Exemplul 2** (Linia de sosire)  
+- [ ] Am scris și am rulat **Exemplul 3** (O țestoasă aleargă)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Cursa cu două țestoase
@@ -171,6 +177,10 @@ A castigat testoasa ALBASTRA!
 **Ce vezi pe ecran:** cele două țestoase pornesc de la start și **aleargă spre dreapta**, cu pași diferiți, până când **una** trece de `FINAL`. Atunci bucla `while` se oprește, iar în fereastra de text apare câștigătoarea.
 
 Bucla `while` merge **cât timp amândouă** sunt încă înainte de linia de sosire. (Dacă amândouă trec linia în același pas, câștigă roșia, pentru că o verificăm prima.)
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 4** (Cine ajunge prima?)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -247,6 +257,11 @@ A castigat: verde
 
 Variabila `castigator` pornește de la `-1` (nimeni). Când o țestoasă trece linia, în `castigator` se păstrează **numărul ei din listă** (0, 1, 2, 3 sau 4), iar `nume[castigator]` ne dă culoarea.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 5** (Cinci țestoase într-o listă)  
+- [ ] Am scris și am rulat **Exemplul 6** (Cursa celor cinci)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 5. Funcții: câștigătorul și clasamentul
@@ -308,6 +323,11 @@ for loc in range(len(ordine)):
 
 Funcția pune fiecare **poziție** împreună cu **numele** (o listă mică `[poziție, nume]`), sortează lista descrescător (cel mai departe primul) și păstrează doar numele. Așa obținem clasamentul: albastru (250), mov (240), verde (180), roșu (120) și portocaliu (90).
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 7** (Cine este mai departe?)  
+- [ ] Am scris și am rulat **Exemplul 8** (Clasamentul)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 6. Pariul
@@ -350,6 +370,10 @@ Ai castigat pariul!
 - `screen.textinput(titlu, mesaj)` este ca `input()`, dar într-o fereastră;
 - dacă apeși **Cancel**, răspunsul este `None` și îl transformăm în text gol;
 - `lower()` face literele mici, iar `strip()` taie spațiile de la margini: `" Verde "` devine `"verde"`.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 9** (Alegem câștigătoarea)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -470,6 +494,10 @@ Ce este nou aici:
 - `screen.tracer(0)` oprește desenarea automată: ecranul se reîmprospătează doar când spunem noi `screen.update()`. Astfel mișcarea celor cinci țestoase este **fluidă**;
 - `time.sleep(0.02)` face o pauză de 0,02 secunde la fiecare „cadru”, ca să putem vedea cursa;
 - funcția `cursa` **returnează** numărul câștigătorului, iar `main()` folosește rezultatul.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Cursa țestoaselor)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

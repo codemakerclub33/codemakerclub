@@ -129,6 +129,11 @@ Ana: scor 6, vieti 0
 
 Valorile de pornire ale jucătorului (3 vieți, scor 0) sunt puse **în `__init__`**, nu cerute la creare. Metodele `ia_moneda` și `pierde_viata` **schimbă** obiectul. `este_viu` **întoarce** `True` sau `False`. Observă: la ultima apelare, viețile rămân 0, nu devin −1, pentru că metoda verifică întâi `if self.vieti > 0`.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Clasa `Caine`)  
+- [ ] Am scris și am rulat **Exemplul 2** (Metode care schimbă obiectul)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Clase în Pygame
@@ -346,6 +351,12 @@ Inamici: 5
 **Ce vezi pe ecran:** **cinci inamici roșii** cu câte doi ochi albi, care se plimbă prin ecran și **se întorc** când ating marginile. Fiecare merge în alt loc, cu altă viteză.
 
 Primele două `print`-uri sunt teste: inamicul de la marginea dreaptă este **împins înapoi** exact în ecran (`x = 560`, pentru că lățimea lui este 40) și își schimbă direcția (`dx` devine −5). Fără linia `self.rect.right = LATIME`, un inamic poate „rămâne lipit” de margine!
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (Jucătorul ca obiect)  
+- [ ] Am scris și am rulat **Exemplul 4** (Liste de monede)  
+- [ ] Am scris și am rulat **Exemplul 5** (Inamici care sar de pereți)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -600,6 +611,13 @@ True True False
 
 Clasa de bază `Obiect` ține ce au toate obiectele în comun (poziția, culoarea, `deseneaza`). `Inamic` și `Bonus` o **moștenesc** și adaugă fiecare ce-i trebuie. `isinstance(obiect, Clasa)` verifică dacă un obiect este făcut dintr-o clasă (sau din „copilul” ei): primul `print` arată `True True False`.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 6** (Picăturile de ploaie)  
+- [ ] Am scris și am rulat **Exemplul 7** (Afișarea unui obiect cu `__str__`)  
+- [ ] Am scris și am rulat **Exemplul 8** (Clase „copil” (moștenire))  
+- [ ] Am rulat și restul exemplelor din secțiune  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 5. Mini-proiect
@@ -774,6 +792,10 @@ pygame.quit()
 **Ce vezi pe ecran:** jocul începe cu **un inamic roșu** (departe de tine), o **monedă aurie** și **pătratul tău verde** în mijloc. Cu **săgețile** sau **W A S D** strângi moneda; fiecare monedă prinsă îți dă **un punct** și moneda **reapare în alt loc**. La fiecare **5 puncte** apare **un inamic nou**. Dacă un inamic te atinge, pierzi o **viață** și devii **alb** pentru o secundă și jumătate (nu poți fi lovit). Cu 0 vieți apare **„GAME OVER”**; apeși **R** și jocul începe din nou, iar recordul se păstrează. Sus, în stânga, vezi **scorul** și **viețile**; sus, în dreapta, **inamicii** și **recordul**.
 
 Codul principal este foarte scurt, pentru că **fiecare clasă își știe singură treaba**: `Jucator` se mișcă și primește lovituri, `Inamic` ricoșează, `Moneda` apare în alt loc. Funcția `inamic_nou` alege un loc **la peste 150 de pixeli** de jucător, ca să nu fii lovit imediat.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** („Arena monedelor”)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

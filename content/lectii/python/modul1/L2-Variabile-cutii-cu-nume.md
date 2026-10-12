@@ -99,6 +99,12 @@ print(scor)
 
 Când pui o valoare nouă în cutie, **cea veche dispare**. De aceea ele se numesc „variabile”: valoarea lor poate **varia** (se poate schimba).
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Prima variabilă)  
+- [ ] Am scris și am rulat **Exemplul 2** (Variabilă număr)  
+- [ ] Am scris și am rulat **Exemplul 3** (Schimbăm valoarea)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Calcule cu variabile
@@ -171,6 +177,12 @@ print(a, b)
 ```
 
 `b = a` pune în `b` o **copie** a valorii din `a`. După aceea, cele două cutii sunt independente: dacă schimbi `a`, `b` rămâne cu `7`.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 4** (Aria unui dreptunghi)  
+- [ ] Am scris și am rulat **Exemplul 5** (Creștem un scor)  
+- [ ] Am scris și am rulat **Exemplul 6** (Copiem valoarea unei variabile)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -259,6 +271,12 @@ print(a, b, c)
 - `x = y = 0` pune `0` în ambele cutii.
 - `a, b, c = 1, 2, 3` pune câte o valoare în fiecare cutie, în ordine.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 7** (Schimbăm conținutul a două cutii)  
+- [ ] Am scris și am rulat **Exemplul 8** (Literele mari și mici contează)  
+- [ ] Am scris și am rulat **Exemplul 9** (Mai multe variabile deodată)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 5. Mini-proiect
@@ -305,6 +323,10 @@ Puncte: 50
 Vieti: 2
 ====================
 ```
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Fișa de jucător)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

@@ -89,6 +89,11 @@ turtle.done()
 
 Funcția `pune_punct(x, y)` **trebuie** să aibă exact doi parametri, `x` și `y`, chiar dacă nu îi folosești pe amândoi.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Țestoasa merge la click)  
+- [ ] Am scris și am rulat **Exemplul 2** (Un punct colorat la click)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Alegem la întâmplare, citim coordonatele
@@ -146,6 +151,11 @@ La început apelăm noi funcția, ca test: `arata(120.4, -80.7)` afișează `Cli
 
 Coordonatele click-ului au zecimale (de exemplu `120.4`), de aceea le rotunjim cu `round`.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (Confetti)  
+- [ ] Am scris și am rulat **Exemplul 4** (Coordonatele click-ului)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 4. Tragem și atingem
@@ -199,6 +209,11 @@ turtle.done()
 **Ce vezi pe ecran:** o **țestoasă mare** (de 4 ori mai mare ca normal), în centrul ferestrei. Dacă dai click **pe ea**, își schimbă culoarea la întâmplare. Click-urile în afara ei nu fac nimic.
 
 Aici legăm click-ul de **țestoasă** (`t.onclick`), nu de întreaga fereastră (`screen.onscreenclick`).
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 5** (Desen liber)  
+- [ ] Am scris și am rulat **Exemplul 6** (Click pe țestoasă)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -311,6 +326,11 @@ Scor dupa test: 2
 
 Formula `(x ** 2 + y ** 2) ** 0.5` este **distanța de la centru** până la punctul `(x, y)` (Pitagora!). Dacă este mai mică decât raza (100), click-ul este în disc. Cele trei apeluri de test: `(0, 0)` și `(50, 50)` sunt în disc (distanța 0 și aproximativ 70,7), iar `(300, 300)` este departe. De aceea scorul este 2.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 7** (Paleta de culori)  
+- [ ] Am scris și am rulat **Exemplul 8** (Contor de click-uri)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 6. Unim punctele
@@ -362,6 +382,10 @@ Puncte: 3
 **Ce vezi pe ecran:** programul desenează singur, ca test, un **triunghi** cu vârfurile în `(-100, -50)`, `(100, -50)` și `(0, 100)`, fiecare marcat cu un **punct roșu**. Apoi poți da click și pentru alte puncte: fiecare se **leagă cu o linie** de cel precedent. Apeși **bara de spațiu** și ultima linie se închide la primul punct.
 
 Lista `puncte` memorează toate punctele (ca perechi `(x, y)`). Primul click ridică creionul, ca să nu apară o linie din centru.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 9** (Poligonul din click-uri)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -453,6 +477,10 @@ c: stergi desenul
 **Ce vezi pe ecran:** sus, o **paletă cu 7 culori** (negru, roșu, portocaliu, auriu, verde, albastru, mov). Click pe un pătrat alege culoarea, click în restul ferestrei pune un punct de **mărimea 12**. Cu săgețile **sus** și **jos** schimbi mărimea punctului, iar cu **c** ștergi desenul fără să dispară paleta.
 
 De ce avem **două țestoase**? Paleta este desenată de `paleta`, iar punctele de `pensula`. Astfel, `pensula.clear()` șterge **doar** desenul, nu și paleta.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Paint-ul meu)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

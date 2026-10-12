@@ -95,6 +95,11 @@ print("Decolare!")
 Decolare!
 ```
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Numărăm cu `while`)  
+- [ ] Am scris și am rulat **Exemplul 2** (Numărătoare inversă)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Condiții care se schimbă
@@ -118,6 +123,10 @@ Am adunat 10 numere
 ```
 
 Cu `for` nu am fi știut câte numere trebuie adunate. Aici bucla se oprește singură când suma ajunge la cel puțin 50.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (Adunăm până depășim 50)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -164,6 +173,11 @@ Dupa 10 zile ai 1024 lei
 
 Povestea clasică: dacă îți dublezi banii în fiecare zi, în doar 10 zile treci de 1000. Cu `while`, calculatorul găsește răspunsul fără să știm dinainte numărul de zile.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 4** (Parola)  
+- [ ] Am scris și am rulat **Exemplul 5** (Câte zile până la 1000?)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 5. Bucla infinită și `while True`
@@ -204,6 +218,11 @@ La revedere!
 ```
 
 `while True` înseamnă „mereu”. `break` iese din buclă imediat.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 6** (Atenție la buclele infinite)  
+- [ ] Am scris și am rulat **Exemplul 7** (`while True` cu `break`)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -279,6 +298,11 @@ Pa!
 
 Aproape toate programele cu meniuri sunt făcute așa: bucla se repetă până alegi „Ieșire”.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 8** (Aceeași treabă, două feluri)  
+- [ ] Am scris și am rulat **Exemplul 9** (Meniu care se repetă)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 7. Mini-proiect
@@ -309,6 +333,10 @@ Ai strans 80 lei. Cat pui acum? 40
 Bravo! Ai strans 120 lei din 3 depuneri.
 Ai depasit tinta cu 20 lei.
 ```
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Pușculița)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

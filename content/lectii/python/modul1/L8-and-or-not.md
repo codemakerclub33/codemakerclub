@@ -85,6 +85,11 @@ Este weekend!
 
 Atenție la scriere: de fiecare dată scrii **ambele comparații complete**. Varianta `zi == "sambata" or "duminica"` este greșită, deși sună bine în română!
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (`and`: și una, și alta)  
+- [ ] Am scris și am rulat **Exemplul 2** (`or`: sau una, sau alta)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. `not` și tabelele de adevăr
@@ -139,6 +144,11 @@ Rezumat:
 | `False` | `False` | `False` | `False` |
 
 Poți ține minte simplu: `and` este „strict” (cere ambele), `or` este „blând” (îi ajunge una).
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (`not`: invers)  
+- [ ] Am scris și am rulat **Exemplul 4** (Tabelele de adevăr)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -204,6 +214,12 @@ Este vocala
 
 `litera in "aeiou"` verifică dacă litera se află în text (ai văzut `in` în lecția 6). Observă și `.lower()` lipit direct de `input(...)`: transformăm răspunsul în litere mici imediat.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 5** (Interval: nota trebuie să fie între 1 și 10)  
+- [ ] Am scris și am rulat **Exemplul 6** (Reducere la bilet)  
+- [ ] Am scris și am rulat **Exemplul 7** (Vocală sau consoană?)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 5. Parole și ordinea de evaluare
@@ -250,6 +266,11 @@ Ordinea este:
 
 Ca la matematică, `and` „se leagă” mai tare decât `or`, ca înmulțirea față de adunare. **Parantezele** schimbă ordinea și fac codul ușor de înțeles: folosește-le oricând nu ești sigur.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 8** (Validăm o parolă)  
+- [ ] Am scris și am rulat **Exemplul 9** (Ordinea de evaluare)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 6. Mini-proiect
@@ -290,6 +311,10 @@ Montagne rusesti: DA
 Carusel: DA
 Casa groazei: DA
 ```
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Poarta parcului de distracții)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

@@ -77,6 +77,10 @@ print(10 ** 2)
 
 `2 ** 3` înseamnă `2 · 2 · 2 = 8`. Nu confunda `**` cu `^`: în Python, `^` face altceva!
 
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Operatorii de bază)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Câtul și restul
@@ -123,6 +127,11 @@ print(33 % 2)
 
 Dacă `număr % 2` dă `0`, numărul este **par**. Dacă dă `1`, este **impar**. Trucul acesta îl vei folosi des cu `if`.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 2** (`//` și `%`)  
+- [ ] Am scris și am rulat **Exemplul 3** (Par sau impar?)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 4. Ordinea operațiilor
@@ -154,6 +163,10 @@ Python respectă ordinea de la matematică:
 
 Când ai nevoie de altă ordine, pune **paranteze**. Ele nu strică niciodată: pune-le și atunci când nu ești sigur.
 
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 4** (Ca la matematică)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 5. Împărțim lucruri, rest
@@ -176,6 +189,10 @@ Raman 2 bomboane
 ```
 
 Aceasta este problema clasică: **împărțirea cu rest**. `//` spune câte primește fiecare, iar `%` spune câte rămân.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 5** (Bomboane pentru prieteni)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -237,6 +254,11 @@ print(x)
 | `x %= 3` | `x = x % 3` |
 | `x **= 2` | `x = x ** 2` |
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 6** (Un mic secret al calculatoarelor)  
+- [ ] Am scris și am rulat **Exemplul 7** (Prescurtări)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 7. Aplicații
@@ -278,6 +300,11 @@ Cate secunde? 135
 
 Același truc cu `//` și `%` îl folosești pentru ceasuri, cronometre și pentru jocuri cu timp.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 8** (Media a trei note)  
+- [ ] Am scris și am rulat **Exemplul 9** (Secunde în minute și secunde)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 8. Mini-proiect
@@ -312,6 +339,10 @@ Al doilea numar: 5
 17 % 5 = 2
 17 ** 5 = 1419857
 ```
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Calculatorul de buzunar)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

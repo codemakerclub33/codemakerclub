@@ -91,6 +91,11 @@ turtle.done()
 
 Parametrul `latura` ne lasă să alegem mărimea la fiecare apel.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Funcția `patrat()`)  
+- [ ] Am scris și am rulat **Exemplul 2** (Funcție cu parametru)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Forme cu poziție și culoare
@@ -170,6 +175,11 @@ turtle.done()
 
 În funcția `cerc` punem țestoasa la `y - r`, adică **sub** centru, pentru că `circle` desenează în sus de la punctul de plecare. Așa, `x` și `y` sunt chiar **centrul** cercului, mult mai ușor de folosit.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (Dreptunghiul)  
+- [ ] Am scris și am rulat **Exemplul 4** (Triunghi și cerc)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 4. O funcție care dă o valoare
@@ -204,6 +214,10 @@ Aria este: 4900
 **Ce vezi pe ecran:** un pătrat cu latura 70.
 
 O funcție de desen poate și să **returneze** o valoare, aici perimetrul. Desenul apare pe ecran, iar numerele apar în fereastra de text din Thonny.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 5** (Desenăm și calculăm)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -265,6 +279,10 @@ Funcția `casa` nu desenează nimic direct, ci **apelează alte funcții**:
 - fereastra: la 10% din stânga și la 55% din înălțime.
 
 Pentru că folosim `m` peste tot, **toată casa se mărește sau se micșorează odată cu `m`**.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 6** (Funcția `casa()`)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -334,6 +352,10 @@ turtle.done()
 **Ce vezi pe ecran:** o **floare cu 8 petale** portocalii, care pornesc toate din centrul ferestrei, rotite cu `360 / 8 = 45` de grade una față de alta.
 
 Încearcă `floare(12, 80, "violet")` sau `floare(6, 100, "red")`: aceeași funcție, alte flori!
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 7** (Petala și floarea)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -443,6 +465,11 @@ turtle.done()
 
 Bucla apelează funcția `casa` de 4 ori, iar `culori[i]` alege culoarea. O stradă întreagă a costat doar două rânduri!
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 8** (Copacul și soarele)  
+- [ ] Am scris și am rulat **Exemplul 9** (Un rând de case, cu buclă)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 8. Mini-proiect
@@ -532,6 +559,10 @@ turtle.done()
 **Ce vezi pe ecran:** o **fereastră de 700 × 500**, cu cer albastru și o fâșie de **iarbă verde** jos. Pe iarbă: două case (una galbenă, mare, și una albastră, mai mică), doi copaci, iar pe cer: un soare auriu și doi nori albi.
 
 Programul are 7 funcții mici și o funcție `peisaj()` care le aduce împreună. Dacă vrei un peisaj nou, **schimbi doar `peisaj()`**. Rândul `screen.setup(700, 500)` stabilește mărimea ferestrei (lățime 700, înălțime 500), deci coordonatele merg de la -350 la 350 pe `x` și de la -250 la 250 pe `y`.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Satul meu)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

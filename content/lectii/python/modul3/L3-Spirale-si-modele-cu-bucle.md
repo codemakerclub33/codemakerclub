@@ -80,6 +80,11 @@ turtle.done()
 
 **Ce vezi pe ecran:** o **spirală triunghiulară** (colțurile sunt de 60°). Observă ce se întâmplă când schimbi unghiul: `90` dă pătrate, `120` dă triunghiuri. Încearcă și `72`, `144`, sau un număr „aproape” de 90, ca `91`: spirala începe să se **răsucească**.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Spirala pătrată)  
+- [ ] Am scris și am rulat **Exemplul 2** (Alt unghi, altă spirală)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Spirala colorată
@@ -108,6 +113,10 @@ turtle.done()
 **Ce vezi pe ecran:** pe fundal negru, o **spirală răsucită**, ale cărei linii se schimbă ciclic: roșu, portocaliu, galben, verde, albastru, mov, apoi din nou roșu.
 
 Cum merge: `i % 6` este restul împărțirii la 6, deci ia pe rând valorile `0, 1, 2, 3, 4, 5, 0, 1, ...`. Așa alegem din listă culoarea numărul `0`, `1`, ..., `5`, apoi o luăm de la capăt. Poți folosi `%` ori de câte ori vrei să parcurgi o listă în cerc.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (Culoarea se schimbă)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -172,6 +181,12 @@ turtle.done()
 
 Aici avem **o buclă în altă buclă**: bucla de afară (`i`) repetă de 36 de ori, iar bucla din interior (`j`) desenează un pătrat. Pentru fiecare valoare a lui `i`, bucla din interior face un pătrat întreg.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 4** (Cercuri imbricate)  
+- [ ] Am scris și am rulat **Exemplul 5** (Rozeta din cercuri)  
+- [ ] Am scris și am rulat **Exemplul 6** (Pătrate rotite)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 5. Buclă în buclă
@@ -211,6 +226,10 @@ Puncte desenate: 20
 - pentru fiecare rând (`rand`) parcurgem toate cele 5 coloane (`coloana`): 4 × 5 = **20** de puncte;
 - poziția fiecărui punct se calculează din `rand` și `coloana`: `x = -100 + coloana * 50`, iar `y = 75 - rand * 50`;
 - `(rand + coloana) % 2 == 0` alternează culorile.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 7** (Grila de puncte)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -269,6 +288,11 @@ turtle.done()
 
 (`//` este împărțirea întreagă: `45 // 20` este `2`.)
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 8** (Soarele cu raze)  
+- [ ] Am scris și am rulat **Exemplul 9** (Linie tot mai groasă)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 7. Mini-proiect
@@ -306,6 +330,10 @@ turtle.done()
 - `t.home()` duce țestoasa în centru (și o orientează spre dreapta);
 - `t.setheading(brat * 60)` o rotește la 0°, 60°, 120°... deci brațele pleacă la distanțe egale;
 - bucla `for i in range(40)` desenează un braț: pași tot mai lungi, cu o mică rotire de 4° la fiecare pas.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Galaxia)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

@@ -132,6 +132,11 @@ turtle.done()
 
 Cum facem o formă nouă: `screen.register_shape("stea", puncte)` înregistrează o formă cu numele `"stea"`, făcută din 10 puncte (colțurile exterioare și interioare ale stelei, alternativ). Apoi o folosim ca orice formă: `stea.shape("stea")`. (`math.cos` și `math.sin` calculează poziția punctelor pe un cerc. Nu trebuie să le înțelegi acum, doar să copiezi forma.)
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Jucătorul)  
+- [ ] Am scris și am rulat **Exemplul 2** (Steaua)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Coliziune și scor
@@ -235,6 +240,11 @@ turtle.done()
 **Ce vezi pe ecran:** sus, în stânga, scrie **Scor: 0**. Conduci țestoasa până la **cercul auriu** (steaua provizorie). Când ajungi la mai puțin de 25 de pași de ea, scorul crește cu 1, iar cercul **sare în alt loc**.
 
 După fiecare mișcare apelăm `verifica()`: ea compară distanța cu 25 și, dacă am „prins” ținta, mărește scorul și mută ținta. `panou.clear()` șterge scorul vechi înainte să scriem unul nou.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (Când se ating două lucruri?)  
+- [ ] Am scris și am rulat **Exemplul 4** (Scorul pe ecran)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -379,6 +389,12 @@ turtle.done()
 
 `"O " * 3` repetă textul de 3 ori: `"O O O "`. Variabila `activ` ne spune dacă jocul încă merge: după `GAME OVER`, tasta **x** nu mai face nimic.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 5** (Bomba care ricoșează)  
+- [ ] Am scris și am rulat **Exemplul 6** (Cronometrul)  
+- [ ] Am scris și am rulat **Exemplul 7** (Viețile)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 5. Niveluri, record, restart
@@ -434,6 +450,11 @@ Cel mai bun scor: 12
 ```
 
 Păstrăm într-o variabilă cel mai bun scor. După fiecare rundă, comparăm: dacă `scor > record`, avem **record nou** și îl memorăm. Variabila `record` **nu se resetează** când repornești jocul, dar scorul da.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 8** (Nivelurile)  
+- [ ] Am scris și am rulat **Exemplul 9** (Recordul)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -602,6 +623,10 @@ Cum sunt legate piesele:
 - **timpul** se măsoară cu ceasul calculatorului: `time.time()` dă secundele trecute de la o dată fixă, deci `time.time() - stare["start"]` este timpul scurs de la începutul jocului;
 - **`sfarsit(mesaj)`** oprește jocul, actualizează recordul și afișează mesajul;
 - **`joc_nou()`** resetează tot și repornește bucla. Funcționează doar dacă jocul s-a terminat.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** („Prinde steaua”)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

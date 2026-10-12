@@ -105,6 +105,11 @@ Cel mai mare: 40
 - `linie.strip()` scoate rândul nou (`\n`) și spațiile de la capete;
 - Tot ce citim din fișier este **text**, așa că `int(text)` îl transformă în număr.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Scriem și citim)  
+- [ ] Am scris și am rulat **Exemplul 2** (Adăugăm și citim linie cu linie)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. try / except
@@ -188,6 +193,12 @@ print(citeste_record("record_inexistent.txt"))
 ```
 
 Funcția întoarce **0** în loc să se strice, în două situații: fișierul lipsește (`FileNotFoundError`) sau conține altceva decât un număr (`ValueError`). Prima rulare a jocului, când nu există încă niciun record, merge perfect. Observă că putem pune **mai multe** `except` la rând, câte unul pentru fiecare tip de eroare.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (Fișier care nu există)  
+- [ ] Am scris și am rulat **Exemplul 4** (Text în loc de număr)  
+- [ ] Am scris și am rulat **Exemplul 5** (Citirea sigură a recordului)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -378,6 +389,13 @@ print(incarca("stricat.json", {"nivel": 1}))
 
 Cu modulul **`json`** poți salva dintr-o dată un dicționar sau o listă întreagă (cu numere, texte, liste în ele), fără să împarți tu textul pe linii. `json.dump(date, f)` scrie, iar `json.load(f)` citește și îți dă înapoi **dicționarul**. Dacă fișierul lipsește sau e stricat, funcția `incarca` întoarce valoarea **implicită**, așa că jocul pornește cu setări de bază.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 6** (Păstrăm recordul)  
+- [ ] Am scris și am rulat **Exemplul 7** (Topul scorurilor)  
+- [ ] Am scris și am rulat **Exemplul 8** (`else` și `finally`)  
+- [ ] Am rulat și restul exemplelor din secțiune  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 5. Mini-proiect
@@ -496,6 +514,10 @@ pygame.quit()
 **Ce vezi pe ecran:** programul te întreabă întâi **numele** în consolă (în Thonny, în fereastra *Shell*). Apoi se deschide jocul: pe fundal albastru închis apare o **țintă** (cerc roșu cu alb și roșu în el). Ai **15 secunde** să dai click pe ea cât poți de repede. De fiecare dată când o nimerești, scorul crește, iar ținta **sare în alt loc**. Sus vezi **scorul**, **timpul rămas** și **recordul**. Când timpul se termină, apare **„TIMPUL A TRECUT!”**, scorul tău și **TOP 5**. Tasta **R** pornește o nouă rundă.
 
 Topul rămâne în fișierul `top_click.txt` (în folderul programului): **închide jocul și deschide-l mâine**, iar scorurile vor fi tot acolo! Dacă fișierul lipsește sau e stricat, jocul pornește cu un top gol, fără erori.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** („Click rapid”)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

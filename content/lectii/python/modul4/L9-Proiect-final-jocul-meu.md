@@ -331,6 +331,13 @@ pygame.quit()
 
 Meteoritul are **rază** și **viteză** proprii (alese la întâmplare). Pătratul `rect` (de latură `2 * raza`) este folosit pentru coliziuni, iar cercul este doar pentru desen. Un meteorit nou apare din **30 în 30 de cadre** (de două ori pe secundă): condiția **`cadru % 30 == 0`** este adevărată atunci când numărul cadrului se împarte exact la 30.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Scheletul unui joc)  
+- [ ] Am scris și am rulat **Exemplul 2** (Cer cu stele care se mișcă)  
+- [ ] Am scris și am rulat **Exemplul 3** (Gloanțe și ritmul de tragere)  
+- [ ] Am rulat și restul exemplelor din secțiune  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Lovituri, explozii, butoane, dificultate, scut
@@ -622,6 +629,13 @@ True False False
 **Ce vezi pe ecran:** din când în când cade de sus o **bilă albastră** (power-up). Dacă o prinzi cu nava, în jurul navei apare un **cerc albastru** (scutul) și, sus-stânga, o **bară** care se **golește în 4 secunde**, cu textul „SCUT”. Când bara s-a golit, scutul dispare.
 
 Scutul funcționează cu **timpul**: la prindere reținem **până când** este activ (`scut_pana = acum + 4000`), apoi la fiecare cadru verificăm `scut_activ(scut_pana, acum)`. Variabila `orb` este `None` (adică „nimic”) cât timp nu există nicio bilă; verificăm cu `is None` / `is not None`.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 5** (Glonț lovește meteorit)  
+- [ ] Am scris și am rulat **Exemplul 6** (Explozii cu particule)  
+- [ ] Am scris și am rulat **Exemplul 7** (Butoane)  
+- [ ] Am rulat și restul exemplelor din secțiune  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -955,6 +969,10 @@ pygame.quit()
 - **Final:** apare **„GAME OVER”**, scorul și recordul, cu butoanele **Din nou** și **Meniu**. Dacă ai bătut recordul, el este **salvat în fișierul** `record_galaxie.txt`, deci rămâne și după ce închizi jocul.
 
 Privește cum este organizat: **clase** pentru lucrurile din joc (`Nava`, `Glont`, `Meteorit`, `Particula`, `Buton`), **funcții** pentru acțiuni (`joc_nou`, `explozie`, `dificultate`, `scut_activ`), un **dicționar `joc`** cu tot ce se schimbă și o **buclă** care le coordonează. Același tipar îl vei folosi la jocul tău!
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** („Apărătorii galaxiei”)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

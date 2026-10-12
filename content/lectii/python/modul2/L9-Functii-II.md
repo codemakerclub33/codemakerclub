@@ -72,6 +72,10 @@ print(media([5, 5]))
 
 O funcție poate primi **o listă întreagă** ca parametru. Observă și că funcția `media` o **apelează** pe `suma_lista`: așa se construiesc funcții din funcții.
 
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (O funcție primește o listă)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Mai multe valori
@@ -98,6 +102,10 @@ Cel mai mare: 9
 ```
 
 Cu `return a, b` funcția dă **două valori deodată**. Le primești în două variabile: `mic, mare = ...`. Dacă le pui într-o singură variabilă, obții o pereche între paranteze rotunde `(3, 8)`.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 2** (`return` cu două valori)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -150,6 +158,11 @@ Dan, 12 ani, hobby: desen
 ```
 
 Când apelezi o funcție, poți scrie `parametru=valoare`. Atunci **ordinea nu mai contează**, iar codul se citește mai ușor.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (Funcții care apelează funcții)  
+- [ ] Am scris și am rulat **Exemplul 4** (Argumente cu nume)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -224,6 +237,12 @@ Ai 12 ani
 
 Funcția **nu se oprește** până nu primește un număr valid: `return` iese din funcție și din buclă deodată. Acum, de câte ori ai nevoie de un număr, apelezi `citeste_numar(...)` și gata, fără să repeți codul.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 5** (Descrierea unei funcții (docstring))  
+- [ ] Am scris și am rulat **Exemplul 6** (O funcție cu noroc)  
+- [ ] Am scris și am rulat **Exemplul 7** (Citire cu validare)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 6. O funcție care se cheamă pe ea însăși
@@ -257,6 +276,10 @@ Start!
 ```
 
 O funcție se poate **chema pe ea însăși**; aceasta se numește **recursivitate**. Trebuie un **caz de oprire** (`n == 0` sau `n <= 1`), altfel funcția s-ar chema la nesfârșit. `factorial(5)` este `5 · 4 · 3 · 2 · 1 = 120`. Nu trebuie să stăpânești asta acum; e doar un gust din ce urmează.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 8** (Recursivitate (pentru curioși))  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -293,6 +316,10 @@ Gata!
 ```
 
 Programele organizate au **funcții mici** deasupra și o funcție **`main()`** care le folosește, apelată **o singură dată**, la sfârșit. Așa vezi imediat „povestea” programului.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 9** (Funcția `main()`)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -377,6 +404,10 @@ Pa!
 ```
 
 Programul are **7 funcții mici**, fiecare cu un singur rol, și un `main()` care le leagă. Dacă vrei să adaugi ridicarea la putere, adaugi o funcție și un `elif`.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Calculatorul cu funcții)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

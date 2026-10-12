@@ -82,6 +82,11 @@ Primul multiplu de 7 dupa 50 este 56
 
 Fără `break`, bucla ar continua până la 99 și ar afișa **toți** multiplii. Cu `break`, ne oprim la primul.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Ne oprim la 5)  
+- [ ] Am scris și am rulat **Exemplul 2** (Căutăm primul multiplu de 7)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. `continue`: sărim peste un pas
@@ -110,6 +115,10 @@ for n in range(1, 8):
 | `break` | iese **complet** din buclă |
 | `continue` | sare la **următorul pas** al buclei |
 
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (Sărim peste numerele pare)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 4. `while True` cu `break`
@@ -135,6 +144,10 @@ Suma este 15
 ```
 
 Schema `while True` + `break` este foarte folosită: bucla rulează „la nesfârșit”, iar noi ieșim când avem motiv.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 4** (Adunăm până scrii 0)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -192,6 +205,11 @@ Bravo, ai ghicit!
 ```
 
 Detaliu nou: un `else` scris la **nivelul lui `for`** se execută doar dacă bucla s-a terminat **fără `break`**. Dacă ghiceai, `break` sărea peste el. Dacă epuizai toate încercările, apărea mesajul „Ai pierdut”.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 5** (Este prim?)  
+- [ ] Am scris și am rulat **Exemplul 6** (Ghicești în 3 încercări)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -273,6 +291,12 @@ Media este 8.5
 
 Aici folosim ambele: `continue` sare peste notele greșite (nu le adună), iar `break` oprește bucla când scrii `0`.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 7** (Nu accept un nume gol)  
+- [ ] Am scris și am rulat **Exemplul 8** (`break` în buclă imbricată)  
+- [ ] Am scris și am rulat **Exemplul 9** (Media notelor, cu validare)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 7. Mini-proiect
@@ -312,6 +336,10 @@ Incercarea 3: comoara
 -------------------------
 Usa se deschide... Ai gasit tezaurul!
 ```
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Păzitorul tezaurului)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

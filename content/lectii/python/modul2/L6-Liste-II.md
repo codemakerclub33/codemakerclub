@@ -104,6 +104,12 @@ print(nume)
 
 Textele se sortează în **ordine alfabetică**. Atenție: literele **mari** se sortează înaintea celor mici (`"Zoe"` vine înaintea lui `"ana"`). Dacă amesteci, transformă mai întâi totul în litere mici.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (`sort()` schimbă lista)  
+- [ ] Am scris și am rulat **Exemplul 2** (`sorted()` lasă lista neschimbată)  
+- [ ] Am scris și am rulat **Exemplul 3** (Sortăm texte)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Construim și lipim liste
@@ -147,6 +153,11 @@ print(lista_range)
 
 Pornim de la o listă goală și o umplem cu `append`. Funcția `list(...)` transformă un `range` într-o listă.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 4** (Lipire și repetare)  
+- [ ] Am scris și am rulat **Exemplul 5** (Construim o listă cu `for`)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 4. Text în listă și listă în text
@@ -181,6 +192,10 @@ Python-este-super-distractiv
 | `text.split()` | desparte textul în **cuvinte** (după spații) și dă o **listă** |
 | `text.split(",")` | desparte după un alt semn (aici, virgula) |
 | `"separator".join(lista)` | lipește elementele listei (care trebuie să fie **texte**) cu separatorul între ele |
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 6** (`split()` și `join()`)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -241,6 +256,11 @@ d: [1, 2, 3, 99]
 
 Gândește-te la o telecomandă: `b = a` este ca și cum ai da altcuiva **aceeași telecomandă** a televizorului. `copy()` este ca și cum ai cumpăra una nouă.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 7** (Tabel din liste)  
+- [ ] Am scris și am rulat **Exemplul 8** (Capcana copierii)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 6. Funcții utile
@@ -273,6 +293,10 @@ print(len(litere))
 | `lista.count(x)` | de câte ori apare `x` |
 | `del lista[i]` | șterge elementul de pe poziția `i` |
 | `lista.clear()` | golește lista |
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 9** (Mai multe despre `index`, `count`, `del`)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -324,6 +348,10 @@ Media scorurilor: 71.25
 Idei noi în acest program:
 - `[scor, nume]` este o **listă mică** pusă în lista mare. Când sortăm, Python compară mai întâi **scorul**, deci clasamentul iese după scor.
 - Construcția `[j[1] for j in jucatori[:3]]` creează o listă nouă dintr-una existentă, într-o singură linie. Este o **listă comprehension**: o scurtătură pentru un `for` cu `append`. O vei întâlni des; deocamdată, poți scrie același lucru cu o buclă obișnuită.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Clasamentul)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

@@ -141,6 +141,12 @@ pygame.quit()
 - `pygame.draw.line(ecran, culoare, început, sfârșit, grosime)` unește două puncte;
 - `pygame.draw.polygon(ecran, culoare, lista_de_puncte)` desenează orice formă cu colțurile date; prima oară plin, a doua oară (cu grosime 3) doar conturul.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Dreptunghiuri)  
+- [ ] Am scris și am rulat **Exemplul 2** (Cercuri și elipse)  
+- [ ] Am scris și am rulat **Exemplul 3** (Linii și poligoane)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Un peisaj
@@ -180,6 +186,10 @@ pygame.quit()
 
 Ordinea contează: **ce desenezi mai târziu se vede peste ce ai desenat mai devreme**. De aceea mai întâi cerul și iarba, apoi casa, abia la sfârșit detaliile.
 
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 4** (Peisaj din forme)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 4. Obiectul `Rect`
@@ -215,6 +225,10 @@ dupa mutarea centrului, stanga-sus este (300, 260)
 Un `Rect` (de la „rectangle”) memorează un dreptunghi și știe să-și calculeze singur marginile: `left`, `right`, `top`, `bottom` și `center`. Poți și să-l **muți**: dacă schimbi `r.center`, tot dreptunghiul se mută. Vom folosi `Rect` pentru personaje și, în Lecția 5, pentru **coliziuni**.
 
 Un `Rect` se poate da și la `pygame.draw.rect(ecran, culoare, r)`.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 5** (Dreptunghiul ca obiect)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -342,6 +356,12 @@ pygame.quit()
 
 De aceea, pentru personajele din jocuri folosim `pygame.SRCALPHA`: partea pe care nu o desenăm rămâne **transparentă**.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 6** (O imagine făcută de noi (`Surface`))  
+- [ ] Am scris și am rulat **Exemplul 7** (Salvăm și încărcăm o imagine)  
+- [ ] Am scris și am rulat **Exemplul 8** (Transparența)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 6. Mărire, rotire, oglindire
@@ -397,6 +417,10 @@ Oglinda: (60, 30)
 - `transform.flip(imagine, orizontal, vertical)` o oglindește.
 
 Aceste comenzi **returnează o imagine nouă**; originalul rămâne neschimbat.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 9** (Transformări)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -462,6 +486,10 @@ pygame.quit()
 **Ce vezi pe ecran:** un **orășel** pe cer albastru, cu soare și doi nori albi. Pe iarbă stau **patru case** (nisipie, albastră, roz și verde), toate cu acoperiș roșu, ușă și două ferestre, iar în dreapta un **copac**. Jos, **un drum gri**. Sus, în stânga, cu litere albe, titlul **ORASUL MEU**.
 
 Ideea cea mai importantă: funcția `creeaza_casa(culoare)` **construiește o imagine** și o **returnează**; o apelăm de patru ori cu culori diferite și punem rezultatele într-o **listă**. Apoi o buclă `for` le lipește pe ecran, la distanțe egale (`20 + i * 165`).
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Orășelul meu)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

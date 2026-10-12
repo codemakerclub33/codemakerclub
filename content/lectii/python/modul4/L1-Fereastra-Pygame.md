@@ -70,6 +70,10 @@ Pygame 2 sau mai nou: True
 
 `import pygame` aduce biblioteca. `pygame.init()` o pornește, iar `pygame.quit()` o oprește. Dacă vezi `True`, totul este în regulă. (Pygame poate afișa și un rând cu versiunea și un salut; este normal.)
 
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Funcționează?)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Prima fereastră
@@ -110,6 +114,10 @@ Rând cu rând:
 - dacă evenimentul este `pygame.QUIT` (ai apăsat X), punem `ruleaza = False`, iar bucla se oprește;
 - `ecran.fill(culoare)` **umple tot ecranul** cu o culoare;
 - `pygame.display.flip()` **arată** pe monitor ce am desenat.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 2** (Fereastra și bucla jocului)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -155,6 +163,10 @@ Alb: (255, 255, 255) Negru: (0, 0, 0)
 
 O culoare se scrie ca **trei numere** de la 0 la 255: cât **roșu**, cât **verde**, cât **albastru** conține (**RGB**). `(255, 0, 0)` este roșu pur, `(255, 255, 255)` este alb (totul la maxim), iar `(0, 0, 0)` este negru (nimic). Amestecând, obții orice culoare: `(255, 140, 0)` este portocaliu. Numele scrise cu litere mari (`ROSU`, `ALB`) sunt **constante**: valori care nu se schimbă.
 
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (Culorile RGB)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 5. Evenimente
@@ -186,6 +198,10 @@ pygame.quit()
 **Ce vezi pe ecran:** o fereastră **verde închis**. Se închide și când apeși **X**, și când apeși tasta **Escape**.
 
 `pygame.KEYDOWN` înseamnă „s-a apăsat o tastă”. Care tastă? Aflăm din `eveniment.key`: `pygame.K_ESCAPE`, `pygame.K_SPACE`, `pygame.K_LEFT`, `pygame.K_a`... Toate numele tastelor încep cu `K_`.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 4** (Închidem cu Escape)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -247,6 +263,11 @@ pygame.quit()
 **Ce vezi pe ecran:** o fereastră **mov închis**, iar în titlul ei un **număr care crește foarte repede**: câte cadre s-au desenat.
 
 `ceas.tick(60)` cere ca bucla să ruleze **cel mult 60 de ori pe secundă** (60 FPS, „frames per second”). Fără el, calculatorul ar repeta bucla de mii de ori pe secundă, degeaba. În 1 secundă, numărul din titlu crește cu aproximativ 60.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 5** (Cât de mare este fereastra?)  
+- [ ] Am scris și am rulat **Exemplul 6** (Cadre pe secundă)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -310,6 +331,11 @@ pygame.quit()
 
 `pygame.MOUSEBUTTONDOWN` apare când apeși un buton al mouse-ului. Poziția click-ului este în `eveniment.pos`, o pereche `(x, y)`.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 7** (Culoarea se schimbă la tastă)  
+- [ ] Am scris și am rulat **Exemplul 8** (Culoarea se schimbă la click)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 8. Text pe ecran
@@ -352,6 +378,10 @@ Pașii pentru text sunt:
 3. `ecran.blit(text, (x, y))` **lipește** imaginea pe ecran, cu colțul din stânga-sus la `(x, y)`.
 
 Fontul standard nu are toate literele românești, deci în jocuri scriem fără diacritice.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 9** (Primul text)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -407,6 +437,10 @@ pygame.quit()
 Ce este nou:
 - `pygame.draw.rect(ecran, culoare, (x, y, lățime, înălțime), grosime)` desenează un dreptunghi; cu grosime 4 este doar **conturul**. Vom învăța mai multe în lecția următoare;
 - funcția `scrie_centrat` calculează `x` ca textul să fie **la mijloc**: `(LATIME - lățimea textului) // 2`.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Ecranul meu de start)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

@@ -90,6 +90,11 @@ print(elev)
 
 `dictionar["cheie"] = valoare` face două lucruri: dacă cheia **nu există**, o **adaugă**; dacă **există**, îi **schimbă** valoarea.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Creăm și citim)  
+- [ ] Am scris și am rulat **Exemplul 2** (Adăugăm și schimbăm)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Căutăm în dicționar
@@ -137,6 +142,11 @@ print(elev)
 ```
 
 `del` șterge o pereche. `pop("cheie")` o șterge și îți **dă valoarea înapoi**.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (`in` și `get`)  
+- [ ] Am scris și am rulat **Exemplul 4** (Ștergem)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -193,6 +203,11 @@ Total: 10 lei
 
 - `for cheie in dictionar:` parcurge **cheile**.
 - `for cheie, valoare in dictionar.items():` parcurge **perechile**; primești amândouă deodată.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 5** (Chei, valori, perechi)  
+- [ ] Am scris și am rulat **Exemplul 6** (`for` pe dicționar)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -264,6 +279,12 @@ litera 'n': 2
 
 Un dicționar este perfect pentru a **număra**: cheia este litera, valoarea este câte ori a apărut. Dacă litera e deja cheie, creștem contorul; dacă nu, o adăugăm cu valoarea 1.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 7** (Dicționar în loc de `if`-uri)  
+- [ ] Am scris și am rulat **Exemplul 8** (Dicționar construit din `input`)  
+- [ ] Am scris și am rulat **Exemplul 9** (Numărăm literele)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 6. Mini-proiect
@@ -329,6 +350,10 @@ Nu exista in agenda.
 Alege: 0
 Pe curand!
 ```
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Agenda mea)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

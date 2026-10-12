@@ -93,6 +93,11 @@ turtle.done()
 
 `turtle.Screen()` este **ecranul** (fereastra). Țestoasa este cea care desenează, ecranul este foaia. Cu `bgcolor` schimbi culoarea foii.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Culoare și grosime)  
+- [ ] Am scris și am rulat **Exemplul 2** (Fundalul și titlul ferestrei)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Triunghi și umplere
@@ -137,6 +142,11 @@ turtle.done()
 - `color("darkblue", "gold")` — **primul** nume este culoarea liniei, **al doilea** este culoarea de umplere;
 - `begin_fill()` spune „de aici încep să umplu”;
 - `end_fill()` spune „am terminat, umple acum forma desenată”.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (Triunghiul)  
+- [ ] Am scris și am rulat **Exemplul 4** (Umplem o formă)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -194,6 +204,11 @@ Unghiul de rotire: 60.0
 
 Pune în `laturi` orice număr: `3` triunghi, `4` pătrat, `5` pentagon, `8` octogon, `12` aproape un cerc. Programul își calculează singur unghiul: `360 / laturi`.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 5** (Cercul)  
+- [ ] Am scris și am rulat **Exemplul 6** (Orice poligon)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 5. Culori mai multe
@@ -246,6 +261,11 @@ turtle.done()
 Există două feluri de a scrie o culoare cu cod:
 - **cod hexazecimal**: `"#ff8800"` (cele trei perechi sunt cantitatea de roșu, verde și albastru);
 - **trei numere** de la 0 la 255 (roșu, verde, albastru), după ce scrii `turtle.colormode(255)`.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 7** (Culori dintr-o listă)  
+- [ ] Am scris și am rulat **Exemplul 8** (Culori cu cod)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -317,6 +337,11 @@ Cum funcționează:
 - fiecare cerc pornește de jos, din punctul `(0, y)`, și crește în sus; raza `50` pornește la `y = -150` și ajunge la `y = -50`, exact unde începe al doilea;
 - bucla `for raza, y in [...]` primește pe rând perechile `(50, -150)`, `(35, -50)` și `(25, 20)`;
 - ochii și nasul sunt trei puncte.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 9** (Semaforul)  
+- [ ] Am scris și am rulat **Exemplul 10** (Omul de zăpadă)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

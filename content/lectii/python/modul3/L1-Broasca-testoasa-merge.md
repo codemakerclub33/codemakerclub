@@ -98,6 +98,11 @@ Comenzile sunt:
 | `left(g)` | se rotește la stânga cu `g` grade |
 | `right(g)` | se rotește la dreapta cu `g` grade |
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Fereastra și o linie)  
+- [ ] Am scris și am rulat **Exemplul 2** (Înainte, înapoi, stânga, dreapta)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Unghiuri și pătratul
@@ -158,6 +163,12 @@ turtle.done()
 
 **Ce vezi pe ecran:** exact același pătrat ca la Exemplul 4, dar cu 3 linii în loc de 8. Ai învățat în Modulul 2 că `for` repetă instrucțiunile: acum le folosești la desen.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (`left` și `right`)  
+- [ ] Am scris și am rulat **Exemplul 4** (Pătratul „cu mâna”)  
+- [ ] Am scris și am rulat **Exemplul 5** (Pătratul cu `for`)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 4. Viteză, formă și creion
@@ -207,6 +218,11 @@ turtle.done()
 
 Fereastra are un sistem de coordonate: centrul este `(0, 0)`. `x` crește spre **dreapta**, `y` crește în **sus**. Deci `(-100, 50)` este la stânga și deasupra centrului.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 6** (Țestoasă adevărată și viteză)  
+- [ ] Am scris și am rulat **Exemplul 7** (Ridicăm creionul)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 5. Unde este țestoasa?
@@ -252,6 +268,11 @@ turtle.done()
 
 `write("text", font=(nume, mărime, stil))` scrie pe ecran. `hideturtle()` ascunde țestoasa (`showturtle()` o arată din nou).
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 8** (Poziția și direcția)  
+- [ ] Am scris și am rulat **Exemplul 9** (Scriem pe ecran)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 6. Mini-proiect
@@ -281,6 +302,10 @@ turtle.done()
 **Ce vezi pe ecran:** o **scară cu 5 trepte**, care urcă spre dreapta. Fiecare treaptă înseamnă: 40 spre dreapta, 40 în sus, apoi țestoasa se îndreaptă din nou spre dreapta. Scara începe jos, în partea stângă a ferestrei.
 
 Începem cu `penup()` și `goto`, ca desenul să nu pornească din centru. Treapta se repetă de 5 ori cu `for`.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Scara țestoasei)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

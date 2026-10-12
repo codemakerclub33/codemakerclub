@@ -120,6 +120,11 @@ pygame.quit()
 
 Condiția `if x > LATIME` verifică dacă a ieșit complet din ecran, iar `x = -50` îl mută chiar **înainte** de marginea din stânga (cu lățimea lui, 50), ca să intre încet, nu să apară brusc.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Pătratul care aleargă)  
+- [ ] Am scris și am rulat **Exemplul 2** (Apare din partea cealaltă)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Ricoșeul
@@ -215,6 +220,11 @@ pygame.quit()
 **Ce vezi pe ecran:** o **minge roșie** care se deplasează pe diagonală (4 pixeli spre dreapta și 3 în jos la fiecare cadru) și **ricoșează de toate cele patru margini**, ca la biliard.
 
 Aici folosim un `Rect` pentru minge: `minge.left`, `minge.right`, `minge.top`, `minge.bottom` ne dau marginile, iar `minge.x += vx` o mută. Sunt **două viteze**: `vx` pe orizontală, `vy` pe verticală. La un perete vertical se schimbă semnul lui `vx`, la unul orizontal semnul lui `vy`. `pygame.draw.ellipse(ecran, culoare, rect)` desenează o elipsă în interiorul dreptunghiului: pentru un dreptunghi pătrat, rezultă un **cerc**.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (Ricoșează pe orizontală)  
+- [ ] Am scris și am rulat **Exemplul 4** (Ricoșează pe diagonală)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -328,6 +338,11 @@ Mingi create: 8
 **Ce vezi pe ecran:** pe fundal foarte închis, **opt mingi** colorate, de mărimi și viteze diferite, fiecare ricoșând prin fereastră în felul ei.
 
 Fiecare minge este un **dicționar** cu `x`, `y`, viteze, rază și culoare. Toate se află într-o **listă**, iar o buclă `for` le mută și le desenează pe rând. Cu aceeași schemă ai putea avea 8 mingi sau 800: de aceea folosim liste, nu variabile separate.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 5** (Mingea ca imagine)  
+- [ ] Am scris și am rulat **Exemplul 6** (Mai multe mingi)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -505,6 +520,12 @@ pygame.quit()
 
 **Ce vezi pe ecran:** un **pătrat galben** care traversează fereastra cu **200 de pixeli pe secundă**, aproximativ **3 secunde** de la un capăt la altul, **pe orice calculator**.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 7** (Mingea lasă o urmă)  
+- [ ] Am scris și am rulat **Exemplul 8** (Gravitația)  
+- [ ] Am scris și am rulat **Exemplul 9** (Viteză independentă de calculator)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 6. Mini-proiect
@@ -596,6 +617,10 @@ Ce este nou:
 - `mingi.clear()` golește lista;
 - `eveniment.pos` este `(x, y)` al click-ului; `minge["x"], minge["y"] = eveniment.pos` pune cele două valori deodată;
 - banda cu text se desenează **peste** urme, ca textul să rămână clar.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Screensaver)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

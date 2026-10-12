@@ -59,6 +59,10 @@ Un obiect: cheie
 Eroul: Ana, animalul: dragon, locul: padure, obiectul: cheie
 ```
 
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Citim datele)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 2. Părți alese la întâmplare
@@ -111,6 +115,11 @@ Un dragon a furat cheie lui Ana.
 
 Poți pune f-string-uri chiar **în interiorul listei**: Python le completează imediat, folosind variabilele de până atunci.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 2** (Începuturi)  
+- [ ] Am scris și am rulat **Exemplul 3** (Întâmplări cu f-string)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Zarul decide finalul
@@ -137,6 +146,10 @@ print(final)
 Zarul a aratat: 4
 Totul s-a rezolvat, dar cu putin efort.
 ```
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 4** (Final fericit sau nu?)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -200,6 +213,10 @@ Totul s-a rezolvat, dar cu putin efort.
 ```
 
 Observă `print()` fără nimic în paranteze: afișează un **rând gol**.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 5** (Generatorul)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

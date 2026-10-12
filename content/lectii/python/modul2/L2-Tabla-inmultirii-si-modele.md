@@ -88,6 +88,11 @@ Care tabla? 6
 6 x 10 = 60
 ```
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Tabla lui 7)  
+- [ ] Am scris și am rulat **Exemplul 2** (Tabla numărului ales)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Bucle imbricate
@@ -119,6 +124,10 @@ Cum funcționează:
 - `print()` de după bucla interioară (la **același nivel** cu `for j`) trece pe rândul următor, după ce rândul a fost scris.
 
 Dacă bucla de afară face 5 pași și cea din interior tot 5, linia `print(...)` se execută de `5 × 5 = 25` de ori.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (Tabla de înmulțire completă)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -179,6 +188,12 @@ for i in range(1, inaltime + 1):
 
 Pe rândul `i` avem `inaltime - i` spații și `2 * i - 1` stele. Verifică: pe rândul 1 → 4 spații și 1 stea; pe rândul 5 → 0 spații și 9 stele.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 4** (Triunghiul)  
+- [ ] Am scris și am rulat **Exemplul 5** (Dreptunghiul de `#`)  
+- [ ] Am scris și am rulat **Exemplul 6** (Piramida)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 5. Mai multe modele
@@ -236,6 +251,12 @@ Media: 6.0
 
 Aici bucla **citește** numerele, nu doar le afișează. Așa nu scrii de 3 ori aceeași linie.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 7** (Numerele pare)  
+- [ ] Am scris și am rulat **Exemplul 8** (Cifre repetate)  
+- [ ] Am scris și am rulat **Exemplul 9** (Suma și media a 3 numere)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 6. Mini-proiect
@@ -288,6 +309,10 @@ Piramida de cifre:
  4444
 55555
 ```
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Atelierul de modele)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

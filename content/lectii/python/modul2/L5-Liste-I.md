@@ -94,6 +94,11 @@ Sofia
 - `jucatori[1] = "Radu"` **înlocuiește** al doilea element.
 - Dacă ceri un index care nu există (de exemplu `jucatori[5]`), Python dă `IndexError: list index out of range`.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Creăm o listă)  
+- [ ] Am scris și am rulat **Exemplul 2** (Citim și schimbăm elemente)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Adăugăm și ștergem
@@ -150,6 +155,11 @@ Elena
 
 Dacă încerci `remove` pe o valoare care nu există, Python dă `ValueError`. Verifică întâi cu `in`.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (`append` și `insert`)  
+- [ ] Am scris și am rulat **Exemplul 4** (`remove` și `pop`)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 4. Căutăm și parcurgem
@@ -198,6 +208,11 @@ Salut, Sofia
 Două moduri de a parcurge:
 - `for nume in jucatori:` îți dă **direct elementele**; este cel mai simplu.
 - `for i in range(len(jucatori)):` îți dă **indexurile**, util când ai nevoie de poziție.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 5** (`in` și `not in`)  
+- [ ] Am scris și am rulat **Exemplul 6** (Parcurgem lista)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -250,6 +265,11 @@ print(zile[::-1])
 
 Feliile merg ca la text: `lista[de_la:pana_la]`, **fără** ultimul. `[::-1]` inversează lista.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 7** (Calcule cu numere)  
+- [ ] Am scris și am rulat **Exemplul 8** (Felii (slicing))  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 6. Lista din `input`
@@ -282,6 +302,10 @@ Ai scris 3 cuvinte:
 ```
 
 `cuvinte = []` creează o **listă goală**. O umplem pe parcurs cu `append`.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 9** (Colectăm cuvinte)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -330,6 +354,10 @@ Alege: 2
 Alege: 3
 La cumparaturi placute!
 ```
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Lista de cumpărături)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

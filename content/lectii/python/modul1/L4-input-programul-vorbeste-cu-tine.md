@@ -87,6 +87,11 @@ Cati ani ai? 10
 
 Chiar dacă ai scris un număr, `input()` îl dă ca **text** (`str`). Dacă vrei să calculezi cu el, trebuie să-l transformi.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Prima întrebare)  
+- [ ] Am scris și am rulat **Exemplul 2** (`input` dă mereu text)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Numere de la tastatură
@@ -136,6 +141,12 @@ Al doilea numar: 30
 Suma este 42
 ```
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (`int(input(...))`)  
+- [ ] Am scris și am rulat **Exemplul 4** (`float(input(...))` pentru numere cu virgulă)  
+- [ ] Am scris și am rulat **Exemplul 5** (Suma a două numere)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 4. Mai multe întrebări
@@ -171,6 +182,11 @@ Aria este 12.56
 
 Aici am folosit `3.14` pentru π. Chiar dacă utilizatorul a scris `2`, `float` îl transformă în `2.0` și calculul merge.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 6** (Un mic dialog)  
+- [ ] Am scris și am rulat **Exemplul 7** (Aria unui cerc)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 5. Erori și calcule utile
@@ -196,6 +212,11 @@ print(ore, "ore =", minute, "minute")
 Cate ore a durat filmul? 3
 3 ore = 180 minute
 ```
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 8** (Ce se întâmplă dacă scrii litere unde cerem număr?)  
+- [ ] Am scris și am rulat **Exemplul 9** (Din ore în minute)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -234,6 +255,10 @@ Peste 5 ani vei avea 16 ani
 Jocul preferat: Minecraft
 Multumesc, Alex!
 ```
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Interviul)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

@@ -135,6 +135,11 @@ False
 
 Funcția `in_cerc(punct, centru, raza)` returnează `True` dacă punctul este în cerc. Primele trei rânduri `print` sunt teste: centrul este în cerc, punctul `(350, 260)` este la distanța ~64 (în cerc), iar `(500, 50)` este departe.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Funcția `scrie`)  
+- [ ] Am scris și am rulat **Exemplul 2** (Scorul crește)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Vieți
@@ -190,6 +195,10 @@ Vieti ramase: 3 din 5
 **Ce vezi pe ecran:** sus, în stânga, **cinci inimioare**: trei sunt **roșii** (vieți), două sunt **gri** (vieți pierdute). Cu săgeata **jos** pierzi o viață (o inimă devine gri), cu săgeata **sus** primești una înapoi (maximum 5).
 
 Inima este făcută din **două cercuri** și **un triunghi** (jos). Funcția `deseneaza_vieti(vieti, maxim)` desenează `maxim` inimioare, în care primele `vieti` sunt roșii.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (Inimioare)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -279,6 +288,11 @@ Scor 23 -> nivel 5 , viteza 8
 ```
 
 La fiecare **5 puncte** începe un **nivel nou** (`scor // 5` este câtul împărțirii întregi: 0 pentru 0–4, 1 pentru 5–9, 2 pentru 10–14 etc.). Cu cât nivelul este mai mare, cu atât jocul este mai **rapid**. Așa jocul rămâne provocator.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 4** (Meniu, joc, final)  
+- [ ] Am scris și am rulat **Exemplul 5** (Nivelurile)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -452,6 +466,12 @@ pygame.quit()
 ```
 
 **Ce vezi pe ecran:** o **bară lungă** cu contur alb, plină de **verde**. Cu săgeata **jos** energia scade, iar bara se golește. Sub 50 devine **galbenă**, sub 25 **roșie**. Cu săgeata **sus** crește din nou.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 6** (Pauză)  
+- [ ] Am scris și am rulat **Exemplul 7** (Mesaje care dispar)  
+- [ ] Am scris și am rulat **Exemplul 8** (Bara și recordul)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -675,6 +695,11 @@ pygame.quit()
 - **Final**: când nu mai ai vieți, apare **„GAME OVER”**, scorul final, iar **SPATIU** pornește un joc nou. **Recordul** rămâne.
 
 Așa se leagă lucrurile: **un dicționar `stare`** păstrează totul (scor, vieți, nivel, record și în ce ecran suntem), funcțiile mici (`scrie`, `deseneaza_stea`, `inima`, `joc_nou`, `pierde_viata`) fac fiecare câte un lucru, iar bucla jocului doar le **coordonează**.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 9** (Orice obiect care cade)  
+- [ ] Am scris și am rulat **Exemplul 10** („Ploaia de stele”)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

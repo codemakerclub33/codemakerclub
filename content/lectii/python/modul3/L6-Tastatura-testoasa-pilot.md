@@ -110,6 +110,11 @@ turtle.done()
 
 Numele tastelor sunt scrise exact așa: `"Up"`, `"Down"`, `"Left"`, `"Right"`, `"space"` (bara de spațiu), iar literele cu litere mici: `"a"`, `"r"`. Atenție la **majuscule**: `"up"` nu funcționează!
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (O tastă)  
+- [ ] Am scris și am rulat **Exemplul 2** (Cele patru săgeți)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Culori, creion, grosime
@@ -242,6 +247,12 @@ Grosime: 4
 
 Valoarea grosimii o păstrăm într-un **dicționar** (`setari`), ca să o putem schimba din mai multe funcții.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (Culori din taste)  
+- [ ] Am scris și am rulat **Exemplul 4** (Creionul sus sau jos)  
+- [ ] Am scris și am rulat **Exemplul 5** (Grosimea liniei)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 4. Ștergere și viteză
@@ -342,6 +353,11 @@ Pas: 5
 
 **Ce vezi pe ecran:** săgeata sus face un pas egal cu `setari["pas"]`. Cu **f** pasul crește cu 5, cu **l** scade cu 5, dar niciodată sub 5. Cele șase apeluri de la început arată cum se schimbă pasul (începe de la 10).
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 6** (Ștergem și ne întoarcem acasă)  
+- [ ] Am scris și am rulat **Exemplul 7** (Pas mai mare, pas mai mic)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 5. Mișcare automată și pereți
@@ -418,6 +434,11 @@ turtle.done()
 **Ce vezi pe ecran:** ca la Exemplul 8, dar când țestoasa ajunge aproape de marginea ferestrei (la mai mult de 280 de pași de centru pe orizontală sau verticală) **se întoarce înapoi**, ca la un perete. Nu mai poate ieși din ecran!
 
 `abs(...)` este valoarea fără semn: `abs(-300)` este `300`. Așa verificăm cu o singură condiție atât marginea din stânga, cât și pe cea din dreapta.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 8** (Țestoasa merge singură)  
+- [ ] Am scris și am rulat **Exemplul 9** (Pereți: țestoasa se întoarce)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -521,6 +542,10 @@ c: sterge desenul
 **Ce vezi pe ecran:** o fereastră albă de 700 × 600, cu țestoasa în centru. Cu **săgețile** o conduci, cu **r, g, b, n** schimbi culoarea (roșu, verde, albastru, negru), cu **+** și **−** schimbi grosimea, cu **spațiu** ridici sau cobori creionul, iar cu **c** ștergi desenul. În fereastra de text apar, o dată, instrucțiunile.
 
 Observă funcția `culoare(nume)`: cele patru funcții de culoare o folosesc ca să nu repete codul. Funcțiile legate de taste nu au voie să aibă parametri, de aceea `rosu`, `verde` etc. apelează ele funcția `culoare`.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Tabla de desen)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

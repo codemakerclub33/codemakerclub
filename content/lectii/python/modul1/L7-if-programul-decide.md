@@ -103,6 +103,11 @@ Gata.
 
 Toate liniile indentate la fel formează un **bloc**: se execută împreună, dacă condiția e adevărată. Dacă `scor` era `50`, ar fi apărut doar `Gata.`.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Prima decizie)  
+- [ ] Am scris și am rulat **Exemplul 2** (Mai multe linii în `if`)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 4. `else`: altfel
@@ -124,6 +129,10 @@ Numarul este par
 ```
 
 `else` este „în caz contrar”. Se execută **doar** când condiția de la `if` este falsă. Și `else` are `:` și un bloc indentat. Încearcă programul cu `7`!
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (Una sau alta)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -167,6 +176,11 @@ Suficient
 ```
 
 Pentru nota `10`, prima condiție (`nota >= 5`) e adevărată, deci Python nu se mai uită la a doua. De aceea am început cu `>= 9` în exemplul anterior!
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 4** (Calificativul)  
+- [ ] Am scris și am rulat **Exemplul 5** (Ce se întâmplă dacă schimbi ordinea?)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -233,6 +247,12 @@ Numar pozitiv
 
 Poți pune un `if` **în interiorul** altui `if`. Fiecare nivel se **indentează încă o dată** (încă 4 spații).
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 6** (Parola)  
+- [ ] Am scris și am rulat **Exemplul 7** (Temperatura)  
+- [ ] Am scris și am rulat **Exemplul 8** (`if` în `if`)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 7. Litere mari sau mici?
@@ -254,6 +274,10 @@ Continuam!
 ```
 
 Utilizatorul poate scrie `da`, `Da`, `DA` sau `dA`. Cu `.lower()` transformăm răspunsul în litere mici înainte de comparație, ca să funcționeze pentru toate.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 9** (Răspuns „da” în orice fel)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -309,6 +333,10 @@ Corect!
 Scor: 3 din 3
 Excelent!
 ```
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Chestionarul)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

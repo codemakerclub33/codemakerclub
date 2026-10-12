@@ -95,6 +95,11 @@ print(round(3.14159, 2))
 
 > Atenție: `"123"` cu ghilimele este **text**, nu număr, chiar dacă arată ca un număr!
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Aflăm tipul cu `type()`)  
+- [ ] Am scris și am rulat **Exemplul 2** (Numere întregi și cu virgulă)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Lucrăm cu text
@@ -153,6 +158,12 @@ print(len(""))
 
 `len(...)` numără **caracterele** (litere, spații, semne). Un text gol `""` are lungimea 0.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (Lipim texte cu `+`)  
+- [ ] Am scris și am rulat **Exemplul 4** (Repetăm text cu `*`)  
+- [ ] Am scris și am rulat **Exemplul 5** (Lungimea unui text)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 4. Transformăm tipurile
@@ -206,6 +217,11 @@ Am 10 ani
 - Prima soluție: transformi numărul în text cu `str(...)`.
 - A doua: folosești virgula în `print`, care le afișează pe amândouă fără probleme.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 6** (`int()`, `float()` și `str()`)  
+- [ ] Am scris și am rulat **Exemplul 7** (Eroarea clasică)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 5. Adevărat sau fals, text lung
@@ -257,6 +273,11 @@ si nu te lasa.
 
 Trei ghilimele la început și trei la sfârșit (`"""`) lasă textul să treacă pe mai multe rânduri, exact cum l-ai scris.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 8** (`bool`)  
+- [ ] Am scris și am rulat **Exemplul 9** (Text pe mai multe rânduri)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 6. Mini-proiect
@@ -290,6 +311,10 @@ Numele are 5 litere
 Peste 5 ani voi avea 16 ani
 ********************
 ```
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** (Fișa de tipuri)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

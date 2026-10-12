@@ -118,6 +118,11 @@ pygame.quit()
 
 `eveniment.pos` este poziția click-ului, iar `pygame.mouse.get_pos()` este poziția mouse-ului **acum**. Ambele pot fi date lui `collidepoint`. Așa se fac **toate butoanele** din jocuri!
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Se ating sau nu?)  
+- [ ] Am scris și am rulat **Exemplul 2** (Punem mouse-ul la treabă)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Monede
@@ -295,6 +300,12 @@ Monede la inceput: 10
 
 Folosim lista **ramase**, ca în lecția trecută: păstrăm doar monedele care **nu au fost luate**. Dacă o monedă este atinsă, nu o mai punem în noua listă.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (Atingem un obstacol)  
+- [ ] Am scris și am rulat **Exemplul 4** (Prima monedă)  
+- [ ] Am scris și am rulat **Exemplul 5** (Mai multe monede)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 4. Pereți
@@ -365,6 +376,10 @@ Cum merge:
 Mutăm și verificăm **separat** pe `x` și pe `y`: așa poți **aluneca** pe lângă perete (dacă te lovești doar pe orizontală, poți merge în continuare pe verticală).
 
 `jucator.collidelist(lista)` caută în lista de `Rect`-uri un obiect care se atinge de `jucator` și returnează **numărul lui** din listă, sau **-1** dacă nu atinge nimic.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 6** (Nu trecem prin pereți)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -508,6 +523,12 @@ True
 
 De ce avem nevoie de **imunitate**? Fără ea, un contact de o secundă ar fi detectat în **60 de cadre** la rând, iar cele trei vieți ar dispărea instantaneu. Funcția `poate_fi_lovit` verifică dacă au trecut cel puțin 1500 ms de la ultima lovitură (ca la pauza între focuri).
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 7** (Coliziune între cercuri)  
+- [ ] Am scris și am rulat **Exemplul 8** (Căutăm în listă)  
+- [ ] Am scris și am rulat **Exemplul 9** (Imunitate după o lovitură)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 6. Mini-proiect
@@ -631,6 +652,10 @@ Ce este nou aici:
 - `pozitie_libera()` caută un loc pentru o monedă cu `while True`, până găsește unul care **nu atinge nimic**; apoi îl returnează cu `return`;
 - `joc_nou()` pune totul la loc de la capăt, iar `monede.clear()` și `monede[:] = ramase` schimbă **lista existentă** (nu creează alta);
 - cheia `stare["castigat"]` oprește mișcarea după victorie.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** („Strânge monedele”)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

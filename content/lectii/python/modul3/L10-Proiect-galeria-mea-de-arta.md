@@ -146,6 +146,11 @@ turtle.done()
 
 Regula galeriei: **fiecare operă începe cu `curata()`**. Funcția `curata()` șterge desenul vechi, mută țestoasa în centru și pune fundalul alb.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (O operă mică)  
+- [ ] Am scris și am rulat **Exemplul 2** (Două opere, două taste)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Opere cu parametri
@@ -252,6 +257,12 @@ turtle.done()
 
 Semiluna se obține din **două cercuri**: unul galben deschis și, peste el, unul cu **culoarea fundalului**, mutat puțin spre dreapta. Partea din primul cerc rămasă vizibilă arată ca o semilună.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (Spirala cu parametri)  
+- [ ] Am scris și am rulat **Exemplul 4** (Mandala cu parametri)  
+- [ ] Am scris și am rulat **Exemplul 5** (Cer înstelat cu lună)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 4. Meniu și semnătură
@@ -313,6 +324,11 @@ turtle.done()
 **Ce vezi pe ecran:** apare o căsuță „Cum te cheama?”. Scrii numele, apeși OK, iar jos, în stânga, apare cu litere gri înclinate: **„Primul meu desen - de <numele tău>”**.
 
 Dacă lași căsuța goală sau apeși Cancel, numele rămâne **„Artistul”**. Condiția `nume is not None and nume.strip() != ""` verifică ambele cazuri: răspunsul există și nu este gol.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 6** (Meniul pe ecran)  
+- [ ] Am scris și am rulat **Exemplul 7** (Numele artistului)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -398,6 +414,11 @@ Exista opera 6? False
 ```
 
 Un dicționar poate să ne dea și un **catalog**: parcurgem cheile și afișăm numele operei. `len(opere)` numără operele, iar `"6" in opere` verifică dacă există cheia `"6"`.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 8** (Tastele și operele într-un dicționar)  
+- [ ] Am scris și am rulat **Exemplul 9** (Catalogul galeriei)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -582,6 +603,10 @@ Opere: 5
 Fiecare operă are jos, în stânga, **semnătura ta**. (În exemplu, numele este cel scris în căsuță; dacă nu scrii nimic, apare „Artistul”.)
 
 Programul este făcut din **piese mici**: funcțiile ajutătoare (`mergi`, `dreptunghi`, `triunghi`, `cerc`, `curata`, `semneaza`), cele 5 opere, meniul și dicționarul `opere` care le leagă de taste. Ca să adaugi o operă nouă: scrii funcția, apoi adaugi un rând în dicționar și o mențiune în meniu.
+
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 10** („Galeria mea de artă”)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

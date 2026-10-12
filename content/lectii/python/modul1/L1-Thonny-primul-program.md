@@ -79,6 +79,10 @@ Ai scris o singură linie, dar ea conține câteva lucruri importante:
 
 > Scrie `print` cu **litere mici**. `Print` sau `PRINT` nu funcționează!
 
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Salut, lume!)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Mai multe linii
@@ -161,6 +165,13 @@ Salut! Ce faci?
 - `sep="-"` schimbă separatorul (în loc de spațiu pune `-`).
 - `end="!"` schimbă ce vine **la sfârșit** (în loc să treacă pe rând nou, pune `!`).
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 2** (Rânduri una sub alta)  
+- [ ] Am scris și am rulat **Exemplul 3** (Python calculează)  
+- [ ] Am scris și am rulat **Exemplul 4** (Text sau număr?)  
+- [ ] Am rulat și restul exemplelor din secțiune  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 4. Ghilimele, rând nou și comentarii
@@ -219,6 +230,12 @@ Un **comentariu** începe cu `#`. Tot ce vine după `#`, până la capătul rân
 - **explicăm** ce face codul (pentru noi sau pentru alții);
 - **oprim temporar** o linie, fără să o ștergem.
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 6** (Ghilimele simple și duble)  
+- [ ] Am scris și am rulat **Exemplul 7** (Rând nou cu `\n`)  
+- [ ] Am scris și am rulat **Exemplul 8** (Comentarii)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 5. Desen din caractere
@@ -265,6 +282,11 @@ print("=" * 22)
 ```
 
 Trucul nou: `"=" * 22` repetă textul `=` de 22 de ori. Așa faci repede un chenar.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 9** (Bradul)  
+- [ ] Am scris și am rulat **Exemplul 10** (Mini-proiect: carte de vizită)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 

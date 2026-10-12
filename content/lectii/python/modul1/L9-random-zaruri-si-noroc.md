@@ -116,6 +116,12 @@ print(round(b, 1))
 
 (Numerele de la tine vor arăta altfel și vor avea mai multe zecimale.)
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 1** (Aruncăm un zar)  
+- [ ] Am scris și am rulat **Exemplul 2** (Două zaruri)  
+- [ ] Am scris și am rulat **Exemplul 3** (Numere cu zecimale)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 3. Liste simple și `random.choice`
@@ -162,6 +168,11 @@ Pornesc eu primul!
 ```
 
 Poți scrie lista direct în `choice(...)`, fără să-i dai un nume.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 4** (Alegem la întâmplare)  
+- [ ] Am scris și am rulat **Exemplul 5** (Moneda)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
@@ -230,6 +241,12 @@ Norocul tau azi: 63%
 O zi obisnuita.
 ```
 
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 6** (Zarul norocos)  
+- [ ] Am scris și am rulat **Exemplul 7** (Ghicește numărul (o încercare))  
+- [ ] Am scris și am rulat **Exemplul 8** (Cât de norocos ești azi?)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+
 ---
 
 ## 5. Mini-proiecte
@@ -295,6 +312,11 @@ Numarul tau norocos: 4
 ```
 
 Lista de răspunsuri a fost scrisă pe mai multe rânduri, ca să fie ușor de citit; Python o înțelege la fel.
+
+**Încearcă tu (5 min)**  
+- [ ] Am scris și am rulat **Exemplul 9** (Piatră, foarfecă, hârtie (jumătate))  
+- [ ] Am scris și am rulat **Exemplul 10** (Oracolul)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
