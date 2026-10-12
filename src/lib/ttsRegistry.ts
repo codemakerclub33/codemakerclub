@@ -8,6 +8,7 @@ import { arduinoModulNumar, arduinoTtsApiUrl, isArduinoLesson } from '@/lib/ardu
 import { isPythonLesson, pythonModulNumar, pythonTtsApiUrl } from '@/lib/python'
 import { isRobloxLesson, robloxModulNumar, robloxTtsApiUrl } from '@/lib/roblox'
 import { cppModulNumar, cppTtsApiUrl, isCppLesson } from '@/lib/cpp'
+import { webModulNumar, webTtsApiUrl, isWebLesson } from '@/lib/web'
 import { isBlenderLesson, blenderModulNumar, blenderTtsApiUrl } from '@/lib/blender'
 import { isMicrobitLesson, microbitModulNumar, microbitTtsApiUrl } from '@/lib/microbit'
 import { isTinkercadLesson, tinkercadModulNumar, tinkercadTtsApiUrl } from '@/lib/tinkercad'
@@ -81,5 +82,9 @@ export function getAscultaConfig(modulId: string, ordine: number): AscultaConfig
     return { apiUrl: o => cppTtsApiUrl(cp, o), logLabel: `AscultaCppM${cp}` }
   }
 
+  const wb = webModulNumar(modulId)
+  if (wb !== null && isWebLesson(ordine)) {
+    return { apiUrl: o => webTtsApiUrl(wb, o), logLabel: `AscultaWebM${wb}` }
+  }
   return null
 }
