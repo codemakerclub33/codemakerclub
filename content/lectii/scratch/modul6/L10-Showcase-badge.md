@@ -60,6 +60,8 @@ Patru propoziții pe foaie, înainte:
 4. „Sunt mândru de …”  
 **Demo 30–40 de secunde:** Start → minezi → pui sau faci craft → misiunea.
 
+- [ ] **Verifici:** ai cele 4 propoziții scrise pe foaie și ai exersat demo-ul de 30–40 de secunde o dată.
+
 ### 4) Insigna
 - [ ] Ai parcurs modulul 6 *(sau ai recuperat lecțiile lipsă)*  
 - [ ] Ai prezentat  

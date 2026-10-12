@@ -62,6 +62,8 @@ La **Erou**:
 - `dacă <lemn > 0>` **atunci** `trimite pune`  
 - `altfel` `spune Nu ai lemn!` timp de `1` secundă
 
+- [ ] **Verifici:** cu lemn în inventar, apeși tasta și apare blocul; fără lemn, spune „Nu ai lemn!” și nu pune nimic.
+
 ### 4) Blocul apare *(Minim, partea 3 · 15 minute)*
 La **Bloc**, un script nou, **doar pentru originalul** care nu e clonă:
 1. O variabilă `este_clona`, **numai pentru acest sprite**, pusă pe `0` pe steag *(în scriptul din L1, înainte de generator)*  

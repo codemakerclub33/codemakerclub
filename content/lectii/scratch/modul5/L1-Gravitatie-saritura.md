@@ -44,7 +44,7 @@ Săritura e deci o **frână care devine cădere**, nu o teleportare.
 
 ### 2) Scena *(10 minute)*
 1. Proiect nou → `Prenume_Nume_M5_L1`  
-2. Un sprite **Teren**, desenat dintr-un singur costum: o **podea** jos și **2–3 platforme** deasupra. Platformele sunt la cel mult **60 de pași** una deasupra celeilalte *(săritura urcă ~78 de pași; cu 60 ai loc să nu te lovești)*  
+2. Un sprite **Teren**, desenat dintr-un singur costum: o **podea** jos și **2–3 platforme** deasupra. Platformele sunt la cel mult **60 de pași** una deasupra celeilalte *(săritura urcă ~66 de pași; cu 60 ai loc să nu te lovești)*  
 3. Eroul *(Erou)* sus, deasupra podelei  
 4. Variabile *(pentru toate sprite-urile)*: `viteza_y` și `pe_sol`  
 5. Pe **steag**, la Erou: `du-te la x: -200 y: -100` · `setează viteza_y la 0` · `setează pe_sol la 0`  

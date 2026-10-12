@@ -62,6 +62,8 @@ Cinci propoziții, scrise pe foaie înainte:
 
 Regulile sălii: aplauze la final · fiecare spune **un compliment** și **o idee**.
 
+- [ ] **Verifici:** ai cele 5 propoziții scrise pe foaie și ai exersat demo-ul de 30–40 de secunde o dată.
+
 ### 4) Insigna
 - [ ] Ai parcurs modulul 5 *(sau ai recuperat lecțiile lipsă)*  
 - [ ] Ai prezentat  

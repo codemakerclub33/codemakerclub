@@ -68,6 +68,8 @@ Sub `când primesc start_joc` la **Erou**, înainte de joc: `setează viață la
 ### 5) Test cu un coleg *(10 minute)*
 Colegul joacă **fără ajutor**. Dacă se blochează, notezi unde: asta repari.
 
+- [ ] **Verifici:** colegul a jucat fără ajutor și ai notat pe foaie cel puțin un loc unde s-a blocat (sau ai scris „nicăieri”).
+
 ### 6) Complet *(alege cel puțin una)*
 - [ ] Ambele finaluri complete, cu mesaje clare  
 - [ ] **Nivel 2:** la `win`, `trimite nivel_2`; `Teren` și `Țel` trec la alt costum  

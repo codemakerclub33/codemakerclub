@@ -47,6 +47,8 @@ Exemplu: un copac stă în lume la 400. Când `camera_x` = 0, copacul e la 400 *
 4. Trei sprite-uri pentru **lume**: `Copac`, `Piatră` și `Țel` *(un steag sau o ușă)*  
 5. La **Erou**, pe steag: `du-te la x: 0 y: -100` și `setează camera_x la 0`
 
+- [ ] **Verifici:** pe scenă vezi eroul, `Copac`, `Piatră` și `Țel`; variabila `camera_x` există; apeși steagul și eroul pornește la `x: 0 y: -100`.
+
 ### 3) Mersul eroului *(Minim, partea 1 · 5 minute)*
 La **Erou**, `repetă la nesfârșit`:
 - `dacă <tasta săgeată dreapta apăsată?>` → `schimbă camera_x cu 4`  

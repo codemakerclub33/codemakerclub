@@ -75,6 +75,8 @@ Pe `Meniu`, un al doilea costum sau text, maxim **5–6 rânduri**:
 2. Meniul: `când primesc revino_meniu` → `arată` și `treci în față`  
 3. Celelalte sprite-uri: `când primesc revino_meniu` → `oprește celelalte scripturi din acest sprite` și `ascunde`; clonele de bloc: `șterge această clonă`
 
+- [ ] **Verifici:** câștigi sau pierzi, după 3 secunde reapare meniul, iar jocul vechi dispare complet; poți porni jocul din nou fără erori.
+
 ### 6) Complet *(alege cel puțin una)*
 - [ ] **Buton/tastă înapoi:** `când se apasă tasta m` → `trimite revino_meniu`  
 - [ ] **Ecran „Cum se joacă”** separat: un buton pe meniu care arată instrucțiunile  

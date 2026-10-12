@@ -92,7 +92,9 @@ Bifează ≥**2** din: scor · vieți · timer · mesaje (`trimite`) · clone ·
 **Nu contează ca „gata”:**  
 - doar baza jocului L1, fără final  
 - „Bravo” fără restart care resetează  
-- reguli pe care doar tu le știi  
+- reguli pe care doar tu le știi
+
+- [ ] **Verifici:** colegul a jucat fără ajutor, ai notat 3 lucruri de reparat pentru L7 și proiectul e salvat.
 
 ### 6) Complet
 Alege **cel puțin una**:  

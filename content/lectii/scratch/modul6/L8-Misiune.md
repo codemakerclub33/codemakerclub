@@ -70,6 +70,7 @@ Condiția folosește regula altui pas:
 ### 4) Test cu un coleg *(5 minute)*
 Colegul citește misiunea de pe ecran și o îndeplinește **fără ajutor**.
 
+- [ ] **Verifici:** colegul a înțeles misiunea doar din ce scrie pe ecran și a îndeplinit-o fără ajutor; ai notat ce l-a încurcat.
 
 ---
 

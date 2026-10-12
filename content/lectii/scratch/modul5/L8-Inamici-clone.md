@@ -57,6 +57,8 @@ Pe steag, apasă din nou — monedele reapar și `viață` și `scor` sunt iar l
 
 **Dacă ai derulare:** inamicul și monedele trebuie să se miște cu lumea, nu să rămână „lipite” de ecran.
 
+- [ ] **Verifici:** apeși steagul de două ori la rând — monedele reapar, `viață` și `scor` sunt iar la început și nu rămân clone în plus.
+
 ### 5) Complet *(alege cel puțin una)*
 - [ ] **Generator:** în `Monedă`, după primele 5: `repetă la nesfârșit` → `așteaptă 3 secunde` → `creează o clonă a mea` *(la poziție aleatorie pe x)*  
 - [ ] **Viață pe Scenă:** `viață` afișată mare; la `viață = 0` → `spune Sfârșit` și `oprește tot`  

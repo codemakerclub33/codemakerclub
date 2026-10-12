@@ -42,6 +42,8 @@ Azi pornești de la jocul din **L3** *(„Evită patrula”)*. În el, „du-te 
 1. Deschizi proiectul `Prenume_Nume_M5_L3`  
 2. **Fișier → Salvează o copie** · numele `Prenume_Nume_M5_L5`
 
+- [ ] **Verifici:** ai deschis proiectul `Prenume_Nume_M5_L3`, iar copia `Prenume_Nume_M5_L5` apare salvată.
+
 ### 3) Creezi blocurile *(Minim, partea 1 · 10 minute)*
 1. La **Erou** → paleta **Blocurile mele** *(roz, jos)* → **Fă un bloc** → numele `du-te la start` → **OK**  
    Sub `definește du-te la start` pui: `du-te la x: -200 y: -100`  
