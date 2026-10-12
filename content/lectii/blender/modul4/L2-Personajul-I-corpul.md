@@ -38,6 +38,10 @@ Un personaj bun are o **siluetă clară**. Dacă îl recunoști doar după umbra
 2. **Cube**, **Dimensions X 1.6, Y 1.2, Z 1.8**, **Z = 1.5** (stă cu picioarele sub el).  
 3. **Alt + Z**, vederea din față (**1**) cu imaginea de referință vizibilă.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Pornim de la un cub”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Jumătate de corp + Mirror
 1. **Tab**, **Ctrl + R** vertical, la mijloc (click dreapta ca să rămână centrat).  
 2. Selectează vârfurile din **stânga** și **X → Vertices**.  
@@ -45,6 +49,10 @@ Un personaj bun are o **siluetă clară**. Dacă îl recunoști doar după umbra
 4. Apoi **Subdivision Surface** (**Ctrl + 2**). Ordinea: **Mirror primul, Subdivision al doilea**.
 
 Acum modelezi doar partea dreaptă și forma e rotundă.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Jumătate de corp + Mirror”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Picioarele
 1. **Tab**, modul **Face** (**3**), selectează fața de **jos**.  
@@ -54,12 +62,20 @@ Acum modelezi doar partea dreaptă și forma e rotundă.
 
 > Dacă picioarele se unesc la mijloc, înseamnă că nu ai lăsat loc: mărește inset-ul (I 0.45).
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Picioarele”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Silueta: burta și capul
 1. **O** (Proportional Editing). **Alt + Z**.  
 2. Selectează vârfurile din față, de la mijloc, și **G Y −0.3** cu raza mare (rotița): ai o **burtă** bombată.  
 3. Sus, selectează vârfurile din partea de sus și **G Z 0.2**: o creștere pentru **cap**.  
 4. Încet, **S 0.9** pe zona gâtului, ca să se vadă capul față de corp.  
 5. Verifică din lateral (**3**) cu imaginea de referință.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Silueta: burta și capul”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 5) Verificarea siluetei
 1. Pune materialul **negru** corpului (sau treci în **Solid → Flat → Single Color**).  
@@ -70,6 +86,10 @@ Acum modelezi doar partea dreaptă și forma e rotundă.
 - **Shade Smooth**.  
 - **Ctrl + R** ca să adaugi detalii unde ai nevoie (la brațe, vezi lecția următoare).  
 - Salvează o **copie**: `Prenume_Nume_B4_L02_v1.blend`.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — finisări de bază”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] O **coadă** (extrudată din spate)  

@@ -42,6 +42,10 @@ Low-poly e **rapid de făcut** și arată bine chiar și fără detalii. Fiecare
 
 În Object Mode: **click dreapta → Shade Flat**. Pentru low-poly avem nevoie de **Flat**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Flat și Smooth”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Bradul low-poly
 1. **Cone**: **Vertices = 6**, **Radius = 1.2**, **Depth = 1.5**, **Z = 2**.  
 2. **Shift + D**, mută copia în sus: **G Z 0.8**, apoi **S 0.8**.  
@@ -52,6 +56,10 @@ Low-poly e **rapid de făcut** și arată bine chiar și fără detalii. Fiecare
 
 > Varierea mărimii și a rotației face brazii „vii”. Fă 3 brazi: unul înalt, unul mic, unul lat.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Bradul low-poly”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 3) Stânca low-poly
 1. **Shift + A → Mesh → Ico Sphere**: **Subdivisions = 1**, **Radius = 1**.  
 2. **Tab**, modul **Vertex**. **A** (selectează tot).  
@@ -60,11 +68,19 @@ Low-poly e **rapid de făcut** și arată bine chiar și fără detalii. Fiecare
 5. Cu **O** (Proportional Editing) pornit și raza mică, tragi câte o „umflătură”.  
 6. **Shade Flat**, material gri-albăstrui, **Roughness 1**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Stânca low-poly”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Pădurea
 1. Un **plan** mare ca pământ, verde închis, **Z = 0**.  
 2. **Shift + D** pe brazi, în locuri diferite; **R Z** cu valori diferite; **S** de la 0.6 la 1.3.  
 3. 2 stânci mari, alta mai mică, lângă brazi.  
 4. **Sun** cu **Strength 3**, culoare caldă, într-un unghi care dă umbre.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Pădurea”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 5) Complet — „decimare” (opțional)
 Pentru a simplifica un model cu prea multe fețe:
@@ -72,6 +88,10 @@ Pentru a simplifica un model cu prea multe fețe:
 1. Modificator **Decimate** (Generate → Decimate).  
 2. **Ratio** 0.2–0.5.  
 3. **Apply** (Ctrl + A pe modificator) când ești mulțumit.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — „decimare” (opțional)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] O **ciupercă** (cilindru + con aplatizat)  

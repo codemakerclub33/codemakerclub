@@ -42,12 +42,20 @@ Detaliile mici fac diferența între „cutie” și „personaj”. Inset + Ext
 | scrie un număr + **Enter** | o distanță exactă (ex. **I 0.2 Enter**) |
 | apasă **I** a doua oară în timp ce lucrezi | **Individual** (fiecare față separat, dacă ai mai multe) |
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Inset (tasta I)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Inset + Extrude = detaliu
 Rețeta de bază pentru ochi, butoane, ferestre:
 
 1. Selectează fața.  
 2. **I** (inset).  
 3. **E** (extrude) spre interior sau exterior.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Inset + Extrude = detaliu”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Bevel (Ctrl + B)
 Rotunjește muchiile ca să nu fie „tăioase”.
@@ -61,6 +69,10 @@ Rotunjește muchiile ca să nu fie „tăioase”.
 | **Enter** | confirmi |
 
 Pentru vârfuri: **Ctrl + Shift + B**.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Bevel (Ctrl + B)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Robotul, pe rând
 Începe cu scena de start, șterge cubul și pornește de la **Cube**.
@@ -82,10 +94,18 @@ Pentru vârfuri: **Ctrl + Shift + B**.
 **Butoanele**  
 7. Pe piept: selectează o față (după un Loop Cut, vezi lecția următoare) sau folosește 3 cuburi mici. Pe fiecare: **I 0.2**, **E 0.1**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Robotul, pe rând”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 5) Complet — finisaje
 - **A** (selectează toate), **Ctrl + B**, scroll la **3 segmente**, mărime mică (~0.05).  
 - **Object → Shade Smooth**.  
 - Un material pentru corp (gri-albastru), unul pentru ochi (galben), unul pentru butoane (roșu).
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — finisaje”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] Fă un **robot-fată** cu zâmbet  

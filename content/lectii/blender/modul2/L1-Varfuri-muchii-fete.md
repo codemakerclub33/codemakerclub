@@ -42,6 +42,10 @@ Orice model 3D e o „plasă” (**mesh**) făcută din puncte, linii și supraf
 
 Selectează cubul și apasă **Tab**: apare o rețea portocalie. Apasă **Tab** din nou ca să ieși. În partea de sus-stânga a viewport-ului vezi numele modului.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Două moduri de lucru”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Cele 3 piese ale unei plase
 
 | Piesă | Ce e | Tasta pentru selectare |
@@ -54,6 +58,10 @@ Selectează cubul și apasă **Tab**: apare o rețea portocalie. Apasă **Tab** 
 
 Cubul are **8 vârfuri**, **12 muchii** și **6 fețe**. Numără-le!
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Cele 3 piese ale unei plase”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 3) Selectăm și mutăm
 - **Click** pe o piesă → o selectează.  
 - **Shift + click** → adaugă la selecție.  
@@ -62,6 +70,10 @@ Cubul are **8 vârfuri**, **12 muchii** și **6 fețe**. Numără-le!
 
 > **Verifică:** apasă **Alt + Z** (X-ray) ca să vezi și piesele din spate.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Selectăm și mutăm”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Piramida
 1. Pe un cub nou, **Tab** → modul **Face** (**3**).  
 2. Click pe **fața de sus**.  
@@ -69,16 +81,28 @@ Cubul are **8 vârfuri**, **12 muchii** și **6 fețe**. Numără-le!
 4. Dar sunt **4 vârfuri suprapuse**. Le unim: **M → At Center** (Merge).  
 5. Ieși din Edit Mode cu **Tab**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Piramida”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 5) Rampa
 1. Cub nou, **Tab**, modul **Edge** (**2**).  
 2. Selectează **muchia de sus** din partea din față (cu **Alt + Z**, ca să o vezi mai ușor).  
 3. **G Z −2 Enter**: muchia coboară și cubul devine o **pană/rampă**.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Rampa”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 6) Diamantul
 1. Cub nou, **Tab**, modul **Face**.  
 2. Selectează fața de sus → **S 0.4 Enter**.  
 3. Selectează fața de jos → **S 0.4 Enter**.  
 4. Selectează vârfurile / fețele laterale și trage-le **în afară** cu **G** + axă. Încearcă și **Shade Smooth** (L5 din Modulul 1).
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Diamantul”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] Fă un **cort** (prismă): mută doar **muchia de sus** în sus și în lateral  

@@ -44,9 +44,17 @@ Muchiile rotunjite fac obiectele să pară **reale** și prind lumina frumos. Be
 
 Pentru majoritatea obiectelor: **Width 0.03**, **Segments 3**, **Limit Method: Angle**. Apoi **Shade Smooth**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Modificatorul Bevel”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Corpul cufărului
 1. Cubul: **Dimensions X 2, Y 1.2, Z 1**, **Z = 0.5**.  
 2. **Bevel** cu setările de mai sus. **Shade Smooth**.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Corpul cufărului”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Capacul rotunjit
 1. **Cylinder**: **Vertices = 32**, **Radius = 0.6**, **Depth = 2**.  
@@ -54,14 +62,26 @@ Pentru majoritatea obiectelor: **Width 0.03**, **Segments 3**, **Limit Method: A
 3. Pune-o deasupra corpului: **Z = 1** (și verifică din lateral).  
 4. Adaugă **Solidify** (lecția 2), **Thickness 0.04**, ca să aibă grosime. Apoi **Bevel**. Capetele rămân deschise, dar Solidify le dă grosime.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Capacul rotunjit”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Benzile metalice
 - **Cube** subțire: **Dimensions X 0.12, Y 1.3, Z 1.02**, la **X = −0.6**. Duplică la **X = 0.6**.  
 - Pe capac: două benzi curbe — jumătăți de **Torus** cu raza capacului (sau cilindri subțiri turtiți).  
 - **Bevel** pe benzi.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Benzile metalice”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 5) Lacătul
 - Un **Cube** mic (0.25 × 0.1 × 0.3) pe față, la mijloc, **Bevel**.  
 - Gaura cheii: un **Cylinder** subțire + un **Cube**, ambele întunecate.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Lacătul”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 6) Monedele de aur
 1. **Cylinder**: **Vertices = 24**, **Radius = 0.15**, **Depth = 0.03**.  
@@ -70,12 +90,20 @@ Pentru majoritatea obiectelor: **Width 0.03**, **Segments 3**, **Limit Method: A
 4. Fă 3 stive cu **Shift + D**, în locuri diferite, cu rotații diferite.  
 5. Câteva monede **aruncate** pe lângă cufăr (rotite la unghiuri diferite).
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Monedele de aur”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 7) Complet — materiale
 | Piesă | Material |
 |-------|----------|
 | Corp, capac | **Lemn**: maro închis, Roughness 0.7 |
 | Benzi, lacăt | **Metal**: gri-închis, Metallic 1, Roughness 0.4 |
 | Monede | **Aur** |
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — materiale”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] Capacul **întredeschis** (rotit cu **R X** în jurul balamalei)  

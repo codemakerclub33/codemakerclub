@@ -38,12 +38,20 @@ Blender are multe butoane, dar le folosești doar pe câteva. Dacă știi **unde
 2. La pornire apare o fereastră de bun venit: alege **General**.  
 3. Vezi o scenă cu **un cub**, **o lumină** și **o cameră**. Asta e „scena de start”.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Pornim Blender”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Pregătirea mouse-ului (doar dacă n-ai rotiță)
 Blender folosește des **butonul din mijloc** al mouse-ului. Pe laptop fără mouse:
 
 1. **Edit → Preferences → Input**.  
 2. Bifează **Emulate 3 Button Mouse** (acum **Alt + click stânga** = buton din mijloc).  
 3. Bifează și **Emulate Numpad** (tastele de sus 1, 2, 3… fac ce fac cele de la numpad).
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Pregătirea mouse-ului (doar dacă n-ai rotiță)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Cele 4 zone ale ecranului
 
@@ -57,6 +65,10 @@ Blender folosește des **butonul din mijloc** al mouse-ului. Pe laptop fără mo
 În partea de sus ai meniurile **File, Edit, Render, Window, Help**, iar sub ele, **Layout, Modeling, Sculpting…** (spațiile de lucru).
 
 > **Regulă de aur:** scurtăturile de la tastatură merg doar când **mouse-ul e deasupra zonei** în care vrei să lucrezi.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Cele 4 zone ale ecranului”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Primele acțiuni
 Mouse-ul peste **3D Viewport**:
@@ -73,16 +85,28 @@ Mouse-ul peste **3D Viewport**:
 
 Încearcă: selectează cubul, apasă **G**, mută-l, confirmă; apoi **Ctrl + Z** și vezi cum se întoarce.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Primele acțiuni”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 5) Complet — maimuța Suzanne
 1. Selectează cubul și apasă **X** → **Delete** (șterge).  
 2. Apasă **Shift + A** (meniul „Add”) → **Mesh → Monkey**. Apare **Suzanne**, mascota Blender!  
 3. Cu mouse-ul peste viewport apasă **F2** și scrie numele: `Maimutica`. Enter.  
 4. Verifică în **Outliner**: numele a apărut acolo.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — maimuța Suzanne”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 6) Salvarea
 - **File → Save As** (sau **Ctrl + Shift + S**).  
 - Numește fișierul `Prenume_Nume_B1_L01.blend`.  
 - De acum, **Ctrl + S** salvează rapid. Fă-o des!
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Salvarea”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] Adaugă **5 maimuțe** și mută-le în cerc  

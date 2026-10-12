@@ -44,12 +44,20 @@ Tasta **E** în Edit Mode **dublează piesa selectată și o mută**, lăsând �
 
 După **E**, mișcă mouse-ul sau scrie o distanță (**E Z 2 Enter**) și **Enter**. Dacă apeși **Esc** sau click dreapta, piesa nouă rămâne în același loc (nu o muți), dar **rămâne extrudată**; atenție la asta!
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Ce face E”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Turnul în 3 pași
 1. Adaugă un **Cylinder** cu **Vertices = 8**, **Radius = 1.5**, **Depth = 2**. Pune-l pe podea (**G Z 1**).  
 2. **Tab** → modul **Face** (**3**) → click pe **fața de sus** a cilindrului.  
 3. **E Z 3 Enter** → turnul crește. Faci încă un nivel mai sus.
 
 Observă: dacă nu scrii numărul, ai nevoie să **confirmi cu click**.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Turnul în 3 pași”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Balconul
 Un turn de castel are balcon mai lat sub creneluri.
@@ -58,11 +66,19 @@ Un turn de castel are balcon mai lat sub creneluri.
 2. Apoi **S 1.3 Enter** (mărești fața).  
 3. **E Z 0.3 Enter** (zidul balconului).
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Balconul”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Rama dinăuntru (Inset, în avans)
 Ca să faci balconul **gol** pe dinăuntru:
 
 1. Cu fața de sus selectată, apasă **I** (Inset) și trage puțin spre interior.  
 2. **E Z −0.4 Enter** (extrudezi **în jos**): apare o „gaură”.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Rama dinăuntru (Inset, în avans)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 5) Crenelurile
 Crenelurile sunt zidurile joase de sus, din loc în loc.
@@ -70,6 +86,10 @@ Crenelurile sunt zidurile joase de sus, din loc în loc.
 1. Cu fața din mijloc selectată și **Inset** făcut, selectează **fețele de pe margine** (inelul exterior de fețe, cele 8).  
 2. Cu **Shift + click** alege **una da, una nu**.  
 3. **E Z 0.5 Enter** → crenelurile alternante.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Crenelurile”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 6) Complet — turnul final
 Ar trebui să ai, de jos în sus:
@@ -82,6 +102,10 @@ Ar trebui să ai, de jos în sus:
 | **Golul** | inset + extrude în jos |
 | **Crenelurile** | fețe alternate, extrude |
 | **Acoperiș opțional** | un con deasupra |
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — turnul final”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] O **ușă** extrudată **în interior** pe peretele turnului  

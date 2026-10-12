@@ -52,6 +52,10 @@ Cablurile, toboganele, roller coaster-ele și părul se modelează cu curbe. Sun
 
 Pentru o curbă în spațiu (nu doar plată), mută punctele și pe **Z**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Curba Bezier”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Îngroșăm curba
 **Properties → tab-ul curbei verzi (Data) → Geometry → Bevel:**
 
@@ -63,11 +67,19 @@ Pentru o curbă în spațiu (nu doar plată), mută punctele și pe **Z**.
 
 Pune **Depth = 0.15**, **Resolution = 6**, bifează **Fill Caps**. Țeava e gata!
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Îngroșăm curba”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 3) Țeava cu coturi
 1. Curba Bezier: ține-o în **Edit Mode** și adaugă 4–5 puncte cu **E**.  
 2. Pentru **coturi bruște**, selectează un punct și apasă **V → Vector**: mânerele devin „drepte” și curba face un colț.  
 3. Material **metalic** (Metallic 1, Roughness 0.4).  
 4. Adaugă la capete **inele** (Torus aplatizate) ca flanșe.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Țeava cu coturi”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Șarpele
 1. O nouă curbă Bezier, cu **6–8 puncte** care formează un „S” (poate și pe podea).  
@@ -78,6 +90,10 @@ Pune **Depth = 0.15**, **Resolution = 6**, bifează **Fill Caps**. Țeava e gata
 5. **Ochii:** două sfere mici, albe cu pupile negre.  
 6. **Limba:** un **Plane** subțire, roșu, despicat cu un **Loop Cut** și mutat într-un „V”.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Șarpele”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 5) Transformăm curba în obiect (opțional)
 Când vrei să o editezi ca pe orice mesh: **Object → Convert → Mesh**. După asta nu o mai poți modifica ca pe o curbă.
 
@@ -85,6 +101,10 @@ Când vrei să o editezi ca pe orice mesh: **Object → Convert → Mesh**. Dup�
 - Șarpele: verde cu **Noise** (L8), sau verde cu galben pe spate.  
 - Țeava: gri metalic.  
 - O podea simplă, cu lumină care scoate în evidență forma.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — materiale”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] Un **tobogan** în spirală  

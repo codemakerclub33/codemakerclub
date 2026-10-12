@@ -44,6 +44,10 @@ Selectează cubul, mouse peste viewport:
 
 Mișcă mouse-ul după ce ai apăsat tasta: obiectul te urmează.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Cele trei transformări”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Blocare pe o axă
 După ce apeși **G**, **R** sau **S**, apasă **X**, **Y** sau **Z** și obiectul se mișcă **doar pe acea axă**.
 
@@ -53,6 +57,10 @@ După ce apeși **G**, **R** sau **S**, apasă **X**, **Y** sau **Z** și obiect
 | **R**, **Z** | rotește ca un titirez |
 | **S**, **Z** | întinde doar pe înălțime |
 | **G**, **Shift + Z** | mută **fără** axa Z (doar pe podea) |
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Blocare pe o axă”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Numere exacte
 După **G + axă**, scrie un **număr** și apasă **Enter**:
@@ -66,6 +74,10 @@ După **G + axă**, scrie un **număr** și apasă **Enter**:
 
 Poți scrie și cu minus: **G X −2 Enter** mută spre stânga.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Numere exacte”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Panoul de transformare (tasta N)
 Apasă **N** și, în tab-ul **Item**, vezi **Location, Rotation, Scale**. Poți scrie acolo direct valorile:
 
@@ -75,6 +87,10 @@ Apasă **N** și, în tab-ul **Item**, vezi **Location, Rotation, Scale**. Poți
 | **Rotation** X, Y, Z | cât e rotit (grade) |
 | **Scale** X, Y, Z | cât e de mare (1 = normal) |
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Panoul de transformare (tasta N)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 5) Resetări utile
 
 | Scurtătură | Ce face |
@@ -82,6 +98,10 @@ Apasă **N** și, în tab-ul **Item**, vezi **Location, Rotation, Scale**. Poți
 | **Alt + G** | pune obiectul înapoi în centru |
 | **Alt + R** | scoate rotația |
 | **Alt + S** | readuce mărimea la 1 |
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Resetări utile”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 6) Complet — „Scara spre cer”
 1. Selectează cubul → **S** → **0.5 Enter**. Acum are latura de 1 unitate.  
@@ -92,6 +112,10 @@ Apasă **N** și, în tab-ul **Item**, vezi **Location, Rotation, Scale**. Poți
 6. La final, adaugă un **plan** (Shift + A → Mesh → Plane), mărit cu **S 8 Enter**, ca podea.
 
 > **Sfat:** în loc să faci 6 cuburi de la zero, duplică-l pe ultimul. Mai repede și mai exact.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — „Scara spre cer””  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] Fă o **scară în spirală** (rotește și mută fiecare treaptă)  

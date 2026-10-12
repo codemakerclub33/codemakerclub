@@ -48,6 +48,10 @@ Modelatorii profesioniști încep adesea cu forme simple, pe care le combină ș
 | **Torus** | inele, covrigi, roți groase |
 | **Monkey** | Suzanne |
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Meniul Add”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Locul unde apar formele
 Obiectele noi apar la **cursorul 3D** (cercul alb-roșu din mijloc, la început).
 
@@ -55,6 +59,10 @@ Obiectele noi apar la **cursorul 3D** (cercul alb-roșu din mijloc, la început)
 |---------|-----|
 | Muți cursorul | **Shift + click dreapta** unde vrei |
 | Îl readuci în centru | **Shift + C** |
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Locul unde apar formele”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Panoul „Adjust Last Operation”
 Imediat după ce adaugi o formă, în **colțul stânga-jos** al viewport-ului apare un panou mic, pe care îl deschizi cu click:
@@ -68,9 +76,17 @@ Imediat după ce adaugi o formă, în **colțul stânga-jos** al viewport-ului a
 
 > Atenție: panoul dispare când faci altă acțiune. Reglează **imediat** după ce adaugi forma.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Panoul „Adjust Last Operation””  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Origine și nume
 - Orice obiect are un **punct de origine** (punctul portocaliu mic). Rotația și scalarea se fac **în jurul lui**.  
 - Redenumește fiecare obiect cu **F2**, ca să nu te încurci.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Origine și nume”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 5) Complet — „Racheta mea”
 Construiește pe rând (șterge mai întâi cubul de start, cu **X**):
@@ -89,6 +105,10 @@ Construiește pe rând (șterge mai întâi cubul de start, cu **X**):
 3. Adaugă o aripă. Ridică-o la **Z = 0.4** și mută-o la **X = 0.7**. Pentru celelalte aripi, folosește **Shift + D** și rotește copiile **în jurul corpului**: cel mai simplu e să muți mai întâi cursorul 3D în centru (**Shift + C**), să alegi **Pivot: 3D Cursor** (butonul din bara de sus a viewport-ului) și apoi să apeși **R Z 120** și **R Z 240**.  
 4. Geamul: o sferă mică la **Y = −0.45**, **Z = 2.3**.  
 5. Fiecare piesă primește un nume (**F2**): `Corp`, `Varf`, `Aripa1`…
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — „Racheta mea””  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 6) Verifică din toate părțile
 Folosește vederile din L2: **1** (față), **3** (dreapta), **7** (sus). Sunt aripile la distanțe egale?

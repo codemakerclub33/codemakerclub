@@ -42,6 +42,10 @@ Până acum ai lucrat în viewport. Randarea face **imaginea finală**: calculea
 
 > Dacă ai pierdut fereastra, **F11** o aduce înapoi.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Prima randare”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Setările de randare
 **Properties → tab Render** (aparatul foto):
 
@@ -49,6 +53,10 @@ Până acum ai lucrat în viewport. Randarea face **imaginea finală**: calculea
 |--------|---------|
 | **Render Engine** | „motorul” care calculează imaginea |
 | **Samples** | câte „încercări” face per pixel (mai multe = mai curat, dar mai lent) |
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Setările de randare”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Cele două motoare
 
@@ -58,6 +66,10 @@ Până acum ai lucrat în viewport. Randarea face **imaginea finală**: calculea
 | **Cycles** | lent (minute) | foarte realist | imagini finale speciale |
 
 Pentru calculatoare mai slabe, rămâi pe **EEVEE**.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Cele două motoare”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Rezoluția
 **Properties → tab Output** (imprimanta):
@@ -70,6 +82,10 @@ Pentru calculatoare mai slabe, rămâi pe **EEVEE**.
 
 > **Truc:** testează cu **50%**, ca să mergi rapid, iar pentru poza finală treci la **100%**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Rezoluția”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 5) Experiment: Cycles
 1. Render → **Cycles**.  
 2. **Render → Max Samples** pune **64**.  
@@ -77,12 +93,20 @@ Pentru calculatoare mai slabe, rămâi pe **EEVEE**.
 4. F12. Compară cu EEVEE: umbrele și reflexiile sunt mai fine?  
 5. Notează cât a durat. Dacă e prea lent, scade **Resolution %**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Experiment: Cycles”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 6) Complet — fundal transparent
 Vrei omulețul fără cer, ca să-l lipești pe altă imagine:
 
 1. **Properties → Render → Film → Transparent** (bifează).  
 2. **Output → Output → File Format: PNG**, **Color: RGBA**.  
 3. F12 și salvează. În editorul de imagini vezi pătrățele gri-albe în loc de fundal.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — fundal transparent”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] Schimbă culoarea **cerului** în **Properties → World → Color**  

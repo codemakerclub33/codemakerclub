@@ -46,6 +46,10 @@ Un obiect 3D are **lățime, înălțime și adâncime**. Ca să-l modelezi bine
 
 Încearcă fiecare 1 minut. La început pare ciudat, dar în 10 minute e firesc!
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Cele 3 mișcări de bază (mouse peste viewport)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 3) „Giroscopul” din colțul dreapta sus
 În colțul viewport-ului e o **sferă cu axe colorate**:
 
@@ -58,6 +62,10 @@ Un obiect 3D are **lățime, înălțime și adâncime**. Ca să-l modelezi bine
 - **Click** pe o axă → te uiți **de-a lungul** ei.  
 - **Trage** cu mouse-ul pe sferă → rotești vederea.  
 - Mici butoane lângă ea: **mâna** (deplasare) și **lupa** (zoom). Le tragi cu mouse-ul.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „„Giroscopul” din colțul dreapta sus”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Vederi standard
 Cu **Numpad** (sau emulat, cu tastele de sus):
@@ -74,6 +82,10 @@ Cu **Numpad** (sau emulat, cu tastele de sus):
 - **Perspectivă:** ca ochiul tău, lucrurile îndepărtate par mici.  
 - **Ortografic:** toate liniile paralele rămân paralele, perfect pentru a modela precis.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Vederi standard”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 5) Nu te pierde!
 
 | Tasta | Ce face |
@@ -82,11 +94,19 @@ Cu **Numpad** (sau emulat, cu tastele de sus):
 | **Numpad .** (punct) | **apropie** obiectul selectat |
 | **Shift + C** | resetează vederea și cursorul 3D |
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Nu te pierde!”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 6) Complet — jocul „Găsește obiectul”
 1. Adaugă 3 obiecte (**Shift + A → Mesh**: Cone, Torus, Monkey) și mută-le departe de centru cu **G**.  
 2. Apasă **Home**: le vezi pe toate.  
 3. Click pe fiecare în **Outliner**, apoi **Numpad .**: vederea sare la el.  
 4. Fă un scurt „tur”: față (1), dreapta (3), sus (7) și cameră (0).
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — jocul „Găsește obiectul””  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] Fă un **screenshot** din fiecare vedere și lipește-le într-un document  

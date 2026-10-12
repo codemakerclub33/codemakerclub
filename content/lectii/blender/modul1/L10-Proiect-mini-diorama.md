@@ -43,12 +43,20 @@ Un proiect complet leagă toate pașii: modelare, culoare, lumină, cameră, ran
 
 Desenează un plan scurt: **ce obiecte**, **unde stau**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Alege o temă”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Baza
 O diorama arată bine pe o **bază** care „ține” scena:
 
 1. **Shift + A → Mesh → Cylinder** (Vertices 64, Radius 6, Depth 0.5), sau un **Cube** aplatizat.  
 2. Pune-o la **Z = 0** ca vârful să fie sus.  
 3. Pe baza aceasta pui totul.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Baza”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Obiecte din lecțiile trecute
 Poți **copia** obiecte din alte fișiere:
@@ -66,16 +74,28 @@ Sau refă-le simplu, direct în scenă.
 | Coroană | Cone sau Ico Sphere | verde |
 | Brad | 3 conuri suprapuse | verde închis |
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Obiecte din lecțiile trecute”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Organizare
 - **Redenumește** fiecare obiect (**F2**): `Casa`, `Pom1`, `Omulet`…  
 - **Grupează** (Ctrl + P) piesele care merg împreună.  
 - Păstrează **câte puțin spațiu între obiecte**, ca să nu fie aglomerat.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Organizare”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 5) Culori, lumini, cameră
 1. **Materiale:** minim 5 culori diferite (L7).  
 2. **Sun** (caldă) + **Area** (rece, mică) ca lumină de umplere (L8).  
 3. **Camera** din colț, 35–50 mm, regula treimilor.  
 4. **Randare:** EEVEE, 1920 × 1080, 100%, **PNG** (L9).
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Culori, lumini, cameră”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 6) Lista de verificare
 
@@ -87,6 +107,10 @@ Sau refă-le simplu, direct în scenă.
 | ☐ | Se văd umbre |
 | ☐ | Subiectul principal e vizibil din cameră |
 | ☐ | Imaginea PNG e salvată |
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Lista de verificare”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 7) Verificare finală Modul 1
 

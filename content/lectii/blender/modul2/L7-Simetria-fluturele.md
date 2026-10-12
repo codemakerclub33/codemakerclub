@@ -43,6 +43,10 @@ Un **modificator** e o „regulă” pusă pe un obiect, care îi schimbă forma
 3. **G X 1 Enter**: planul se mută spre dreapta, iar marginea lui din stânga ajunge exact pe **X = 0**. Centrul obiectului (punctul portocaliu) rămâne la mijloc.  
 4. Cu planul selectat: **click dreapta → Subdivide**, apoi în panoul **Adjust Last Operation** pune **Number of Cuts = 3**. Ai o grilă de 4 × 4 pătrate.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Pregătim jumătatea de aripă”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 3) Adăugăm Mirror
 1. **Tab** (Object Mode).  
 2. **Properties → Modifiers → Add Modifier → Generate → Mirror**.  
@@ -50,6 +54,10 @@ Un **modificator** e o „regulă” pusă pe un obiect, care îi schimbă forma
 4. Dacă oglinda apare pe o altă axă, setează **Axis** doar pe **X**.
 
 Acum modelezi doar în dreapta, iar în stânga apare **oglindirea**.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Adăugăm Mirror”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Forma aripii
 Revino în Edit Mode (**Tab**), modul **Vertex** (**1**), vedere de sus (**7**), **Alt + Z** pornit:
@@ -62,11 +70,19 @@ Revino în Edit Mode (**Tab**), modul **Vertex** (**1**), vedere de sus (**7**),
 
 Privește și din față (**1**): aripile fac un „V” ușor.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Forma aripii”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 5) Grosime
 O aripă fără grosime dispare când o privești din lateral:
 
 1. **A** (selectează tot), **E Z 0.03 Enter**.  
 2. **Shade Smooth** (Object Mode).
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Grosime”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 6) Corpul
 Corpul nu are nevoie de Mirror: e deja simetric.
@@ -75,11 +91,19 @@ Corpul nu are nevoie de Mirror: e deja simetric.
 2. **Shade Smooth**. Corpul e acum ca un ou lung, în lungul axei Y.  
 3. **Capul:** altă UV Sphere, **Dimensions 0.4 × 0.4 × 0.4**, la **Y = 1.1**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Corpul”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 7) Antenele
 1. **Shift + A → Mesh → Cylinder**: **Vertices 8, Radius 0.015, Depth 0.8**.  
 2. **R X 90**, ca să fie pe lungimea lui Y.  
 3. **R Z −20**, **Location X 0.1, Y 1.5**.  
 4. **Shift + D**, **Enter**, apoi în **N → Item** schimbă **Location X** în **−0.1** și **Rotation Z** în **20°**.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Antenele”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 8) Complet — model și culori
 **Modelul pe aripă** (în Edit Mode, pe aripă):
@@ -92,6 +116,10 @@ Corpul nu are nevoie de Mirror: e deja simetric.
 - Pete: negru sau galben: slot nou + **Assign** pe fețele cu inset (vei folosi același truc la rachetă, în lecția 10).  
 - Corp și cap: maro închis, antene negre.  
 - Randare: fundal deschis sau verde, lumină de sus.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — model și culori”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] Un fluture **mare** (de junglă) și unul **mic** (de grădină)  

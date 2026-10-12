@@ -49,15 +49,27 @@ Cum le scalezi: **S** → numărul → **Enter**. Locul: **N** → Location Z.
 
 > Sferele trebuie să **se atingă ușor** și să se suprapună puțin. Verifică din față (**1**).
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Corpul din 3 sfere”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 3) Nasul — morcovul
 1. **Shift + A → Mesh → Cone.**  
 2. În panoul din stânga-jos setează: **Radius 0.15**, **Depth 0.8**, **Rotation X = 90°**. Vârful conului arată acum spre față (spre −Y).  
 3. Mută-l la **Location**: X = 0, **Y = −0.9**, **Z = 4.4**. Baza intră puțin în cap, iar vârful iese în față.  
 4. Verifică din dreapta (**3**): nasul iese din „față”?
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Nasul — morcovul”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Ochii și nasturii
 - **UV Sphere** mică: **S 0.08**. Locație ochi: **X = ±0.2**, **Y = −0.52**, **Z = 4.6**. Fă unul, duplică-l (**Shift + D**) și schimbă semnul lui X.  
 - Nasturii: 3 sfere mici (**S 0.1**) pe mijloc: **X = 0**, **Y = −0.88**, **Z = 3.3, 3.0 și 2.7**.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Ochii și nasturii”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 5) Shade Smooth — suprafață netedă
 Sferele arată „cu fațete”. Le netezești:
@@ -66,9 +78,17 @@ Sferele arată „cu fațete”. Le netezești:
 2. **Click dreapta → Shade Smooth** (sau din meniul **Object → Shade Smooth**).  
 3. Compară: rotunjimile sunt acum fine.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Shade Smooth — suprafață netedă”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 6) Pălăria
 - **Cylinder** (Radius 0.5, Depth 0.7) pentru corpul pălăriei, la **Z = 5.35**.  
 - Un al doilea **Cylinder** plat (Radius 0.8, Depth 0.08) ca boruri, la **Z = 5.0**.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Pălăria”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 7) Brațele (crengi)
 **Cylinder** subțire (Radius 0.05, Depth 1.5), rotit **R Y 60** și pus pe lateral. Duplic-o pentru celălalt braț.
@@ -81,6 +101,10 @@ Vrei să muți omulețul întreg dintr-o mișcare. Soluția: **părinte și copi
 3. Apasă **Ctrl + P → Object**.  
 4. Acum, când muți sfera de jos cu **G**, toate piesele merg după ea!  
 5. În **Outliner** vezi piesele „ascunse” sub părinte, ca într-o ierarhie.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — legăm totul (parent)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] Un **fular** din Torus în jurul gâtului  

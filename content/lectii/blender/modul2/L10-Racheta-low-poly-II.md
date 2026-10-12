@@ -45,6 +45,10 @@ Alege **3–4 culori** care se potrivesc:
 | Duză | gri închis |
 | Dungă pe corp | albastru închis |
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Paleta rachetei”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Materiale multiple pe un obiect
 1. Selectează racheta. **Properties → Material → New**. Numește-l `Corp`, culoare **albă**.  
 2. Apasă **+** ca să adaugi un slot nou. **New**, numește-l `Rosu` (roșu).  
@@ -56,6 +60,10 @@ Alege **3–4 culori** care se potrivesc:
 
 > Ai atribuit greșit? Selectează fețele din nou și dă **Assign** pe slotul corect.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Materiale multiple pe un obiect”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 3) Flacăra
 1. **Tab** (ieși din Edit Mode).  
 2. **Shift + A → Mesh → Cone**: **Vertices 8, Radius 0.4, Depth 1.5**.  
@@ -64,10 +72,18 @@ Alege **3–4 culori** care se potrivesc:
 5. Un al doilea con mai mic, galben, **Radius 0.2, Depth 1.0**, în interiorul primului: flacăra are un **miez** mai fierbinte.  
 6. **Ctrl + J** pe cele două conuri (să fie un singur obiect), apoi **F2** → „Flacara”.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Flacăra”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Fumul
 1. **Shift + A → Mesh → Ico Sphere** (Subdivisions 1), **Radius 0.3**, **Shade Smooth**, material alb sau gri deschis.  
 2. Pune **5–6 sfere** sub flacără, în linie, cu **mărimi diferite** (**S**): cele mai apropiate de rachetă sunt mici, cele mai îndepărtate — mari.  
 3. Mută-le puțin stânga-dreapta ca să nu fie în linie dreaptă.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Fumul”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 5) Poziția de zbor
 1. Selectează **racheta**, **flacăra** și **fumul**.  
@@ -75,15 +91,27 @@ Alege **3–4 culori** care se potrivesc:
 3. Selectează doar racheta și **R Y 20**: se înclină ca în zbor.  
 4. Ridic-o puțin de la „sol” (**G Z 2**).
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Poziția de zbor”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 6) Cerul cu stele
 1. **Properties → World → Color**: albastru foarte închis (aproape negru).  
 2. **Stele:** 20–30 de sfere foarte mici (**Radius 0.03**), cu material alb **Emission Strength 3**. Duplică-le (**Shift + D**) și împrăștie-le în spatele rachetei.  
 3. Mai multe mici, câteva mai mari.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Cerul cu stele”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 7) Lumini și cameră
 1. **Sun** cu **Strength 3**, venind din lateral-sus; **Area** albastră mică, de umplere.  
 2. Camera ușor **de jos în sus**, **Focal Length 35–50 mm**, racheta în treimea din stânga și drumul ei spre colțul din dreapta-sus.  
 3. **EEVEE**, 1920 × 1080, **F12**, **Save As PNG**.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Lumini și cameră”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 8) Verificare finală Modul 2
 

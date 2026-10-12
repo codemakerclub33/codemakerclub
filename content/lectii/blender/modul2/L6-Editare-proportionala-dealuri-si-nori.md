@@ -38,11 +38,19 @@ Natura nu are colțuri: dealurile, norii, fețele sunt moi. Editarea proporțion
 
 > Grila trebuie să aibă **multe** vârfuri ca dealurile să iasă netede.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Pregătirea”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Pornim Proportional Editing
 - Apasă **O** (litera) în Edit Mode. În bara de sus apare cercul cu puncte.  
 - Selectează **un singur vârf** din mijloc.  
 - **G Z 3**: nu mai spune Enter încă! Mișcă **rotița mouse-ului**: un cerc mare apare în jurul punctului, iar zona din cerc se ridică **odată cu el**. Rotița mărește sau micșorează cercul.  
 - Confirmă cu **Enter**.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Pornim Proportional Editing”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Tipuri de atenuare (Falloff)
 În bara de sus, lângă cerc, ai o listă:
@@ -57,6 +65,10 @@ Natura nu are colțuri: dealurile, norii, fețele sunt moi. Editarea proporțion
 
 Încearcă fiecare pe un deal diferit. Schimbarea se face și cu **Shift + O**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Tipuri de atenuare (Falloff)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Dealurile
 1. Alege 3 vârfuri în locuri diferite.  
 2. Pentru fiecare: **G Z** (cu cifre diferite, 2, 3, 1.5) și reglează raza cu rotița.  
@@ -64,6 +76,10 @@ Natura nu are colțuri: dealurile, norii, fețele sunt moi. Editarea proporțion
 4. Pentru o **vale**: **G Z −2** pe un vârf.
 
 Ieși cu **Tab**, **Shade Smooth**.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Dealurile”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 5) Norii
 1. **Shift + A → Mesh → UV Sphere** (Segments 32, Rings 16). Mută-l sus: **Z = 6**.  
@@ -74,11 +90,19 @@ Ieși cu **Tab**, **Shade Smooth**.
 
 Mărește cu **Shift + D** și așază 3 nori în locuri diferite, cu mărimi diferite.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Norii”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 6) Complet — scenă completă
 - Peisajul: material verde (iarbă). Un deal în plan apropiat, două în fundal.  
 - Norii: 3 bucăți, în locuri diferite.  
 - Lumină **Sun** caldă + cameră de unde se văd dealurile (L8, Modulul 1).  
 - Randează o imagine PNG.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — scenă completă”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] Un **lac** (plan albastru în vale)  

@@ -40,11 +40,19 @@ Insulele plutitoare apar în jocuri și filme fantastice. Se modelează simplu: 
 4. **E Z −3 Enter**: stânca coboară.  
 5. **S 0.2** din nou: vârful devine ascuțit.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Forma de bază”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Stânca de jos
 1. Adaugă încă **2 inele** cu **Ctrl + R** pe porțiunea de jos.  
 2. Selectează **inelele**, **S 0.8**, **S 1.2** alternativ, ca să apară **denivelări**.  
 3. **O** (Proportional Editing, raza mare) și **G** pe vârfuri aleatorii: stânca devine **neregulată**.  
 4. Pentru stil **low-poly**: **Shade Flat**.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Stânca de jos”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Marginea neregulată
 Un disc perfect rotund arată artificial.
@@ -53,11 +61,19 @@ Un disc perfect rotund arată artificial.
 2. Cu **O** pornit, selectează câte un vârf din inel și **G** în afară sau în interior, cu raza mică.  
 3. Fă **marginea** să aibă 4–5 „golfuri” și „peninsule”.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Marginea neregulată”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Dealurile
 1. Selectează **vârfurile din partea de sus** în 2–3 zone.  
 2. **O**, **G Z 0.6**, cu **raza mare**. Un deal.  
 3. Un deal mai mic, în altă parte: **G Z 0.3**. O vale: **G Z −0.2**.  
 4. **Marginea** să fie mai joasă decât mijlocul (ca o insulă ușor bombată).
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Dealurile”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 5) Straturile terenului
 Un teren adevărat are **două straturi**: iarbă deasupra și pământ dedesubt.
@@ -66,10 +82,18 @@ Un teren adevărat are **două straturi**: iarbă deasupra și pământ dedesubt
 2. În Edit Mode, **fețele de sus** (selectate cu **Box** și **Alt + Z**) primesc **Iarba**; **cele de jos**, **Piatra** (**Assign**).  
 3. Fă ca iarba să **acopere marginea** puțin (un strat subțire verde).
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Straturile terenului”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 6) Complet — finisări
 - **Modificator Bevel** mic (Width 0.05) pentru lumina pe margini.  
 - **Subdivision** nivel 1 doar dacă vrei o insulă mai rotundă (omite pentru low-poly).  
 - Pune insula **la Z = 3** ca să „plutească”. O să adaugi nori mai târziu.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — finisări”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] O **a doua insulă mică**, la distanță  

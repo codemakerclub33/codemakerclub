@@ -47,6 +47,10 @@ Un model are sute de piese. Dacă le selectezi pe rând, pierzi mult timp. Metod
 | **L** (cursorul peste piesă) | selectează tot ce e **legat** | piese separate |
 | **Ctrl + I** | **inversează** selecția | „tot, în afară de…” |
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Metodele de selectare”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 3) Atenție la X-ray
 Box select selectează doar ce **se vede**. Ca să prinzi și piesele din spate, apasă **Alt + Z**.
 
@@ -65,10 +69,18 @@ Ieși cu **Tab** și apasă **Shade Smooth** (click dreapta).
 
 > Dealurile au colțuri ascuțite pentru că mutăm puține vârfuri. În lecția 6 vei învăța o metodă care le face rotunde.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Peisajul din grilă”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 6) Complet — mai mult peisaj
 - Fă **trei dealuri** de înălțimi diferite.  
 - Fă o **vale** care trece de-a lungul grilei (selectează un rând cu Alt + click și coboară-l).  
 - Adaugă un **lac**: Plane albastră (Z = 0.2) în vale.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — mai mult peisaj”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] Un **drum** (șir de fețe coborâte puțin) care șerpuiește prin peisaj  

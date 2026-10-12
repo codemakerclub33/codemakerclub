@@ -43,10 +43,18 @@ Desenează pe hârtie camera văzută de sus: unde sunt patul, biroul, fereastra
 | Birou | 1.2 × 0.6 × 0.75 |
 | Raft | 1 × 0.25 × 1.5 |
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Planul”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Pereții și podeaua
 - **Plane** pentru podea (Dimensions X 5, Y 4).  
 - 2 sau 3 **Cube**-uri subțiri (Y 0.1) pentru pereți, **Z = 1.35**.  
 - **Fereastra:** un cub tăietor + **Boolean → Difference** (L5).
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Pereții și podeaua”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Patul (modificatori)
 - **Cadru:** cub cu **Bevel**.  
@@ -54,15 +62,27 @@ Desenează pe hârtie camera văzută de sus: unde sunt patul, biroul, fereastra
 - **Pernă:** cub, **Ctrl + 2** (Subdivision), puțin turtit; **Shade Smooth**.  
 - **Pătură:** plan cu **Subdivision**, ușor ondulat cu **Proportional Editing**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Patul (modificatori)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Biroul și scaunul
 - **Blat:** cub, **Bevel**.  
 - **Picioare:** 4 cilindri subțiri (un picior + **Array** sau **Mirror**).  
 - **Scaun:** un cub (șezut) + 4 picioare + spătar, cu **Bevel**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Biroul și scaunul”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 5) Raftul (Array)
 - Un **plan** vertical, **Solidify** (grosime 0.03).  
 - O **placă** orizontală: **Array → Count 4 → Constant Offset Z 0.4** (4 rafturi).  
 - Pe raft: câteva cărți (cuburi colorate cu **Array**), o plantă (sferă + cilindru).
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Raftul (Array)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 6) Materiale
 | Element | Material |
@@ -74,15 +94,27 @@ Desenează pe hârtie camera văzută de sus: unde sunt patul, biroul, fereastra
 | Fereastră | geam (Transmission) |
 | Lampă | **Emission** |
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Materiale”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 7) Lumini
 - **Sun** prin fereastră (lumina de zi), culoare caldă, Strength 3.  
 - **Area** albastră deasupra, mică, ca umplere.  
 - **Point** (lampa de birou), galbenă, Power 200 W.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Lumini”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 8) Camera și randarea
 - Camera într-un colț, lentilă **24–28 mm** (camere interioare, cadrul larg).  
 - Verifică **regula treimilor**.  
 - **EEVEE**, 1920 × 1080, F12, `Prenume_Nume_B3_L10.png`.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Camera și randarea”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 9) Verificare finală Modul 3
 

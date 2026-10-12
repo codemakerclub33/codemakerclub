@@ -43,16 +43,28 @@ Un cilindru simplu are doar fețe sus și jos. Cu **Loop Cut** adaugi inele la m
 | 3 | **rotița** = câte tăieturi (3 tăieturi → 3 inele) |
 | 4 | **click stânga** = confirmi poziția, apoi **click dreapta** ca să rămână **exact la mijloc** (altfel o poți glisa) |
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Loop Cut (Ctrl + R)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Pregătim cana
 1. Șterge cubul, adaugă un **Cylinder**: **Vertices = 32**, **Radius = 1**, **Depth = 2**, **Z = 1** (stă pe podea).  
 2. **Tab**. **Ctrl + R** → 2 tăieturi orizontale.  
 3. Ai acum 3 benzi de fețe.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Pregătim cana”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Forma
 Cana e puțin mai lată la mijloc:
 
 1. Modul **Edge** (**2**). **Alt + click** pe inelul din mijloc (selectează tot inelul).  
 2. **S 1.15 Enter** (mărești inelul).
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Forma”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Golul
 1. Modul **Face** (**3**). Click pe fața **de sus** (cercul).  
@@ -61,9 +73,17 @@ Cana e puțin mai lată la mijloc:
 
 Ar trebui să vezi un interior gol, ca la o cană adevărată.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Golul”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 5) Buza rotunjită
 1. Selectează muchiile de la **marginea de sus** (interior + exterior), cu **Alt + click**.  
 2. **Ctrl + B**, ~0.04, rotița pe 3 segmente.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Buza rotunjită”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 6) Toarta din Torus
 1. **Shift + A → Mesh → Torus.** În panoul din stânga-jos: **Major Radius 0.5**, **Minor Radius 0.09**.  
@@ -71,10 +91,18 @@ Ar trebui să vezi un interior gol, ca la o cană adevărată.
 3. Mută-l lângă cană: **Location X = 1.15**, **Z = 1.2**.  
 4. Verifică din față (**1**): jumătate din Torus intră în cană, iar cealaltă jumătate iese.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Toarta din Torus”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 7) Complet — finisare
 - **Shade Smooth** pe cană și pe toartă.  
 - Material alb ceramic (Roughness 0.2) pentru cană; poți adăuga o culoare diferită pentru interior (material nou pentru fețele interioare, cu **Assign**, în lecția 10).  
 - Mută cana într-un colț și adaugă un **Plane** drept „masă”.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — finisare”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] O **farfurioară** (cilindru aplatizat, cu un inset)  

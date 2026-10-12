@@ -44,22 +44,38 @@ Racheta are **corp lung** și **vârf ascuțit**:
 | Vârf | cam 1.5 înălțime |
 | Aripioare | ies ~0.8 în afară |
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Proporțiile”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Corpul
 1. Șterge cubul (**X**).  
 2. **Shift + A → Mesh → Cylinder**. În panoul din stânga jos (**Adjust Last Operation**) pune **Vertices 12, Radius 0.6, Depth 3**.  
 3. În **N → Item**, **Location Z = 1.5**: baza rachetei e acum la **Z = 0**.  
 4. **Shade Flat** (look low-poly).
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Corpul”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 3) Tăieturile pentru detalii
 1. **Tab**, **Alt + Z**.  
 2. **Ctrl + R** (cu mouse-ul pe o față laterală) și pune **2 inele orizontale** cu rotița, apoi **Enter** și **click dreapta** ca să rămână la locul lor. Pune-le aproximativ la **Z 0.8** și **Z 2.2**.  
 3. Ai acum 3 benzi: **jos** (aripioare), **mijloc** (hublou), **sus** (vârf).
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Tăieturile pentru detalii”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Vârful
 1. Treci pe modul **Face** (**3**) și selectează fața de **sus**.  
 2. **E Z 0.8 Enter**, apoi **S 0.6 Enter**.  
 3. **E Z 0.8 Enter**, apoi **S 0.15 Enter**.  
 4. Vârful e acum un con, dar încă are o fețișoară sus. Ca să se închidă: **M → At Center**.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Vârful”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 5) Cele 4 aripioare
 Cilindrul are 12 fețe laterale. Alegem **4** dintre ele, la distanță egală.
@@ -71,16 +87,28 @@ Cilindrul are 12 fețe laterale. Alegem **4** dintre ele, la distanță egală.
 
 > Ai greșit fețele? **Ctrl + Z** și alege din nou, numărând: față aleasă, 2 sărite, față aleasă.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Cele 4 aripioare”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 6) Duza motorului
 1. Selectează fața de **jos**.  
 2. **I 0.3 Enter** (inset), apoi **E Z −0.4 Enter**.  
 3. **S 1.3 Enter**: duza se lărgește.  
 4. **I 0.25 Enter**, apoi **E Z 0.3 Enter**: gaura din duză intră în interior.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Duza motorului”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 7) Hublou (Complet)
 1. În banda din **mijloc**, selectează o față laterală, în partea din față (spre −Y).  
 2. **I 0.12 Enter**, apoi **E −0.05 Enter**: hublou adâncit.  
 3. Încă o inset mai mică (**I 0.1**) pentru un cerc în cerc, dacă vrei.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Hublou (Complet)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 8) Verificarea formei
 Ieși din Edit Mode (**Tab**). Privește racheta din **față (1)**, **dreapta (3)** și **sus (7)**.

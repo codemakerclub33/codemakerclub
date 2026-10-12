@@ -44,6 +44,10 @@ Fă ochi **mari**, ca la personajele din desene animate:
 
 > Ochii mai apropiați = personaj mai prostuț; mai depărtați = mai fricos. Experimentează.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Ochii”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Gura
 **Metoda simplă:** o **fâșie curbată**.
 
@@ -55,6 +59,10 @@ Fă ochi **mari**, ca la personajele din desene animate:
 
 **Metoda 2 (Boolean):** o sferă mare, scoasă din corp cu un modificator **Boolean** (Operation: Difference), pentru o gură deschisă; **dinții** sunt conuri mici, albe.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Gura”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 3) Brațele
 1. **Tab** pe corp, modul **Face**, selectează o față laterală, în dreapta.  
 2. **I 0.2**, **E X 0.5**, **S 0.7**, **E X 0.5**, **S 0.8**.  
@@ -63,17 +71,29 @@ Fă ochi **mari**, ca la personajele din desene animate:
 
 > **Mirror** pe corp copiază brațul automat și pe stânga.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Brațele”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Coarnele
 1. **Cone**: **Radius 0.2, Depth 0.7**, la **X 0.4, Z 3.1**, ușor înclinat (**R Y 15**).  
 2. **Subdivision** + **Shade Smooth**.  
 3. Material galben-pal (ca osul).  
 4. Dublează pe stânga cu Mirror sau cu **Shift + D**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Coarnele”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 5) Detalii „drăguțe” (Complet)
 - **Sprâncene:** două cuburi subțiri cu Bevel, deasupra ochilor, înclinate: **R Y ±15°**.  
 - **Pistrui:** sfere mici (Array pe 3).  
 - **Limbă:** plan subțire, roșu, în gură.  
 - **Nas:** două puncte mici.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Detalii „drăguțe” (Complet)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] Un **al treilea ochi** sau o **antenă**  

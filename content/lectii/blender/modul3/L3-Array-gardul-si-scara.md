@@ -40,6 +40,10 @@ Repetiția e peste tot: ferestre, trepte, dinți de fierăstrău, spițe. Array 
 4. **Relative Offset X = 1.5** (distanța între scânduri, în „lățimi de scândură”; 1 = lipite, 1.5 = cu spațiu).  
 5. Adaugă **2 șipci orizontale**: un **Cube** lung (X 4, Y 0.05, Z 0.1) la **Z 0.4** și **Z 1.1**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Gardul”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Offset relativ vs. constant
 
 | Tip | Cum se măsoară | Bun pentru |
@@ -50,12 +54,20 @@ Repetiția e peste tot: ferestre, trepte, dinți de fierăstrău, spițe. Array 
 
 Poți combina mai multe, bifând-le.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Offset relativ vs. constant”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 3) Scara
 1. Cub nou, **Dimensions X 2, Y 0.6, Z 0.2**.  
 2. **Array → Count = 8**.  
 3. Dezactivează **Relative Offset**, bifează **Constant Offset**: **X 0**, **Y 0.6**, **Z 0.2**.  
 4. Cuburile urcă și înaintează treptat: o scară!  
 5. Pune niște **balustrade** din cilindri subțiri (cu Array pe ei!).
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Scara”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Roata cu 12 spițe
 Aici folosim un **Empty**, un obiect invizibil care servește drept „centru de rotație”.
@@ -66,6 +78,10 @@ Aici folosim un **Empty**, un obiect invizibil care servește drept „centru de
 4. Pe spiță: **Array → Count = 12**. Debifează **Relative Offset**, bifează **Object Offset** și alege **Empty-ul** din listă.  
 5. Spițele se rotesc în cerc, ca la o roată! (Roata e „culcată”, ca un ceas văzut de sus; vezi-o din vederea **7**.)  
 6. Adaugă un **Torus** mare pentru janta roții (Major Radius 1, Minor 0.08).
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Roata cu 12 spițe”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 5) Aplicăm modificatorul
 Când ești mulțumit și vrei să editezi fiecare piesă separat: în lista de modificatori, **butonul ▼ → Apply** (sau **Ctrl + A** cu mouse-ul peste modificator). Modificatorul dispare, iar piesele rămân.

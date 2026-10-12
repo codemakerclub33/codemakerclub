@@ -45,12 +45,20 @@ Colțul din dreapta sus al viewport-ului are 4 butoane („sfere”) pentru **mo
 
 Treci pe **Material Preview**, ca să vezi culorile.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Vezi culorile în viewport”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Primul material
 1. Selectează corpul casei.  
 2. În **Properties** (dreapta-jos) alege tab-ul cu **sfera roșie** (Material).  
 3. Apasă **New**.  
 4. Vezi lista „Surface”. Click pe **Base Color** și alege o culoare (ex. galben).  
 5. Dă un nume materialului (dublu click pe nume): `Perete`.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Primul material”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Cele trei butoane magice
 
@@ -69,6 +77,10 @@ Treci pe **Material Preview**, ca să vezi culorile.
 | Metal lucios | 0.2 | 1 |
 | Metal mat | 0.6 | 1 |
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Cele trei butoane magice”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Culori pentru casă
 Dă materiale diferite, câte unul pe piesă:
 
@@ -81,6 +93,10 @@ Dă materiale diferite, câte unul pe piesă:
 | Horn | Caramida | roșu închis |
 | Pământ | Iarba | verde, Roughness 1 |
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Culori pentru casă”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 5) Copiem materiale
 Dacă ai 3 ferestre și vrei **același** material pe toate:
 
@@ -88,6 +104,10 @@ Dacă ai 3 ferestre și vrei **același** material pe toate:
 2. **La final** selectează fereastra care **are deja** materialul (ea e „activă”).  
 3. **Ctrl + L → Link Materials.**  
 Toate primesc materialul. Dacă modifici culoarea unui material, se schimbă **pe toate** obiectele care îl folosesc.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Copiem materiale”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 6) Complet — omulețul colorat
 Deschide fișierul cu omulețul (L5) și dă-i culori:
@@ -98,6 +118,10 @@ Deschide fișierul cu omulețul (L5) și dă-i culori:
 | Nas | portocaliu |
 | Ochi, nasturi | negru |
 | Pălărie | negru sau albastru închis |
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — omulețul colorat”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] O sferă cu aspect de **aur** (galben, Metallic 1, Roughness 0.25)  

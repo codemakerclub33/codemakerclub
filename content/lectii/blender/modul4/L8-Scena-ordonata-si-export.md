@@ -44,6 +44,10 @@ Deschide **Outliner**, **dublu-click** (sau **F2** în viewport) și redenumeșt
 
 > Folosește **fără spații sau diacritice** (Casa_Pereti, nu „Casa pereți”): evită probleme la export.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Nume clare”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Colecții
 **Colecțiile** sunt „dosare” în Outliner.
 
@@ -52,9 +56,17 @@ Deschide **Outliner**, **dublu-click** (sau **F2** în viewport) și redenumeșt
 3. La fel: „Casa”, „Teren”, „Nori”, „Lumini”, „Camera”.  
 4. În Outliner, **ochiul** ascunde / arată o colecție, **camera** (Disable in Renders) o scoate din randare.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Colecții”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 3) Legare și grupare
 - Piesele unui obiect complex (casa) sunt fie **unite** (**Ctrl + J**), fie **legate** cu **Ctrl + P**.  
 - Fiecare obiect principal are **origin la baza lui**.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Legare și grupare”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Apply Scale
 Dacă ai scalat obiecte cu **S**, ele rețin „scara” (3D scale ≠ 1). Asta poate strica modificatorii și exportul.
@@ -63,10 +75,18 @@ Dacă ai scalat obiecte cu **S**, ele rețin „scara” (3D scale ≠ 1). Asta 
 2. **Ctrl + A → Scale** (Apply).  
 3. Verifică în **N → Item → Scale = 1.000**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Apply Scale”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 5) Curățenia fișierului
 1. **File → Clean Up → Purge Unused Data** (Recursive).  
 2. Șterge materialele neutilizate din Material Properties.  
 3. Verifică în Outliner → **Blender File** dacă mai ai obiecte inutile.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Curățenia fișierului”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 6) Export pentru alte programe
 Format **glTF** (.glb): „JPEG-ul 3D”, citit de browsere, jocuri, aplicații.
@@ -77,14 +97,26 @@ Format **glTF** (.glb): „JPEG-ul 3D”, citit de browsere, jocuri, aplicații.
 4. Alege nume și **Export**.  
 5. Vizualizează-l online cu un **glTF viewer** din browser, sau cu aplicația „3D Viewer” din Windows.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Export pentru alte programe”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 7) Imagine pentru portofoliu
 1. **F12**, **Image → Save As**, format **PNG**.  
 2. Rezoluția **1920 × 1080**, apoi o variantă **pătrată** 1080 × 1080 pentru social media.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Imagine pentru portofoliu”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 8) Fișierul final
 - **File → Save As**, nume clar cu versiune: `Insula_v3.blend`.  
 - **File → External Data → Pack Resources** dacă ai texturi externe.  
 - Pune **toate fișierele** (blend, glb, png) într-un singur folder: `Prenume_Nume_Proiect`.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Fișierul final”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] Un fișier `README.txt` cu titlul proiectului și ce ai folosit  

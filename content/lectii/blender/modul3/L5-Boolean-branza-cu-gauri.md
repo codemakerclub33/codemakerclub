@@ -43,6 +43,10 @@ Când vrei o gaură „perfectă” (fereastră, șurub, țeavă) într-un obiec
 | **Union** | unește cele două |
 | **Intersect** | păstrează doar ce se suprapune |
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Cum merge Boolean”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Brânza
 1. Un **Cylinder** ca o roată de brânză: **Vertices 32**, **Radius 1**, **Depth 0.8**, **Z = 0.4**.  
 2. **Shift + A → Mesh → UV Sphere**, **Radius 0.25**, pune-o pe marginea de sus a brânzei, cu jumătate din sferă înăuntru.  
@@ -50,11 +54,19 @@ Când vrei o gaură „perfectă” (fereastră, șurub, țeavă) într-un obiec
 4. **Operation: Difference**. **Object**: alege sfera.  
 5. Apare o gaură! Mută sfera cu **G** și vezi cum gaura se mută.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Brânza”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 3) Ascundem tăietorul
 Sfera tăietor stă acolo și te încurcă. Îi poți schimba felul de afișare:
 
 - Selectează sfera, **Properties → Object → Viewport Display → Display As: Wire** (sau **Bounds**). Se vede doar contururile.  
 - Sau ascunde-o cu **H** (și o readuci cu **Alt + H**).
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Ascundem tăietorul”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Mai multe găuri dintr-o dată
 Ar fi obositor să pui 10 modificatoare. Folosește o **colecție**:
@@ -64,9 +76,17 @@ Ar fi obositor să pui 10 modificatoare. Folosește o **colecție**:
 3. Pe brânză, **Boolean → Operand Type: Collection → Collection: Gauri**.  
 4. Toate găurile apar deodată. Mută o sferă și gaura se mișcă.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Mai multe găuri dintr-o dată”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 5) Complet — „materialul brânzei”
 - Brânza: galben pal, **Roughness 0.5**.  
 - Poți face un șoricel (sfere + conuri) lângă ea.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — „materialul brânzei””  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 6) Casa cu ușă și fereastră
 1. **Cube** mare pentru perete (Dimensions X 4, Y 0.3, Z 3).  
@@ -75,6 +95,10 @@ Ar fi obositor să pui 10 modificatoare. Folosește o **colecție**:
 4. Pune-le într-o colecție `Taieturi` (M → New Collection).  
 5. Pe perete: **Boolean → Difference → Collection: Taieturi**.  
 6. Ascunde tăietorii (**Display As: Wire** sau **H**). Peretele are ușă și fereastră!
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Casa cu ușă și fereastră”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 7) Aplicăm modificatorul
 Când ești mulțumit, **Apply** (Ctrl + A pe modificator) ca peretele să devină un obiect normal. Atenție: nu mai poți muta găurile.

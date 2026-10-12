@@ -41,6 +41,10 @@ Detaliile fac o scenă credibilă. Trucul: câteva **forme simple**, repetate cu
 4. Selectează toate piesele copacului și **Ctrl + J** (Join), apoi **F2** → „Copac”.  
 5. **Origin** la baza copacului: **Shift + S → Cursor to Selected** pe vârfurile din bază (Edit Mode), apoi **Object → Set Origin → Origin to 3D Cursor**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Copacul low-poly”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Duplicare cu variații
 1. **Shift + D**, **Enter**, mută copacul pe insulă; fă **5–8** copaci.  
 2. Pentru fiecare: **S** diferit (0.7 – 1.3) și **R Z** diferit (rotire aleatorie).  
@@ -48,6 +52,10 @@ Detaliile fac o scenă credibilă. Trucul: câteva **forme simple**, repetate cu
 4. **Alt + D** (linked duplicate) = copiile **împart aceeași formă**: dacă schimbi unul, se schimbă toate. Bun pentru economie, dar evită-l când vrei modificări diferite.
 
 > Nu pune copacii în **linie**. Grupează-i în 2–3 **păduri mici** și lasă spații libere.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Duplicare cu variații”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Casa
 Refolosește casa din Modulul 1 (L6) sau construiește una mică:
@@ -59,22 +67,38 @@ Refolosește casa din Modulul 1 (L6) sau construiește una mică:
 
 Poți **importa** casa din alt fișier: **File → Append → fișier.blend → Object → Casa**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Casa”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Lacul
 1. Selectează fețele dintr-o **vale** a terenului.  
 2. **I 0.8** (inset), **E Z −0.15** (scoate o adâncitură).  
 3. **Plane** albastru deschis, semi-transparent, la nivelul apei: **Principled BSDF → Alpha 0.7**, **Roughness 0.05**.  
 4. Pentru EEVEE: **Material → Settings → Blend Mode: Alpha Blend** (în 4.2: **Render Method: Blended**).
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Lacul”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 5) Stâncile
 1. **Ico Sphere**, **Subdivisions 1**, **S 0.4**.  
 2. **Tab**, mută câteva vârfuri aleatoriu (**G**), **Shade Flat**, material gri.  
 3. Duplică de 4–5 ori, mărimi și rotiri diferite, lângă lac și copaci.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Stâncile”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 6) Norii
 1. **Ico Sphere** (Subdivisions 2) sau **UV Sphere**, **Shade Smooth**, material alb.  
 2. Fă un nor din **3–4 sfere** de mărimi diferite, lipite. **Ctrl + J**.  
 3. **Material alb** cu **Roughness 1**; Emission mic (0.3) ca să arate luminos.  
 4. 3 nori la înălțimi și mărimi diferite, **în jurul** insulei, nu deasupra ei.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Norii”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 7) Privirea de ansamblu
 **Numpad 0** (din cameră): ai o **poveste**? Un drum între casă și lac? Un copac „special”?

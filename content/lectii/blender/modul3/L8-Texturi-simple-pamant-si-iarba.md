@@ -43,7 +43,11 @@ Texturile fac lumea 3D credibilă. Blender poate genera pete, vene sau zgomot **
 |---------|-----|
 | Adaugi un nod | **Shift + A** |
 | Legi noduri | tragi un fir între două „puncte” |
-| Ștergi un fir | **Ctrl + click-drag** peste el |
+| Ștergi un fir | **Ctrl + click dreapta** și tragi peste el |
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Editorul de noduri”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 2) Iarba: Noise + Color Ramp
 1. **Shift + A → Texture → Noise Texture.**  
@@ -53,6 +57,10 @@ Texturile fac lumea 3D credibilă. Blender poate genera pete, vene sau zgomot **
 5. În **Noise Texture**: **Scale = 15**, **Detail = 8**, **Roughness 0.6**.  
 6. Iarba are acum pete naturale!
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Iarba: Noise + Color Ramp”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 3) Pământul
 Alt material (alt obiect, sau o bandă pe peisaj):
 
@@ -60,6 +68,10 @@ Alt material (alt obiect, sau o bandă pe peisaj):
 2. Culori: **maro închis** și **maro deschis**.  
 3. **Scale = 30**, **Detail = 12**.  
 4. **Roughness** al materialului: **0.95**.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Pământul”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Relieful (Bump)
 Culorile par plate, dar putem simula **denivelări** fără să adăugăm geometrie:
@@ -69,16 +81,28 @@ Culorile par plate, dar putem simula **denivelări** fără să adăugăm geomet
 3. Leagă **Bump → Normal** în **Principled BSDF → Normal**.  
 4. **Strength = 0.3**: lumina creează umbre mici pe denivelări.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Relieful (Bump)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 5) Podeaua cu pătrățele
 1. **Shift + A → Texture → Checker Texture.**  
 2. **Color1 / Color2:** alb și gri-albastru.  
 3. **Scale = 10**.  
 4. **Color → Base Color**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Podeaua cu pătrățele”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 6) Complet — scena finală
 - Peisajul din L6 (Modulul 2): **iarbă** pe dealuri, **pământ** pe o potecă (alege fețele cu **Assign**, ca la rachetă).  
 - Podea cu pătrățele pentru un „plan de testare”.  
 - Randare cu **Sun** și cer albastru.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — scena finală”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 7) Dacă nu vezi texturile
 Treci pe **Material Preview** sau **Rendered**. În **Solid** nu se văd.

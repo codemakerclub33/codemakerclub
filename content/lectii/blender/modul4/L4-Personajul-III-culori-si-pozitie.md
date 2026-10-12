@@ -44,6 +44,10 @@ Alege **3 culori** care se potrivesc:
 
 > Culori **calde** (roșu, portocaliu) = energie, **reci** (albastru, verde) = calm.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Palete de culori”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Materialele
 | Piesă | Material |
 |-------|----------|
@@ -56,12 +60,20 @@ Alege **3 culori** care se potrivesc:
 
 Pentru burtă pe același obiect: adaugă un **al doilea slot** de material și **Assign** pe fețe (ca la rachetă).
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Materialele”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 3) Piele cu textură
 Pe materialul corpului, în **Shader Editor** (lecția 8, Modulul 3):
 
 1. **Noise Texture**, **Scale 80**, **Detail 6**.  
 2. Leagă **Fac** într-un nod **Bump** (**Strength 0.15**), apoi **Normal** în Principled BSDF.  
 3. Pielea are acum micro-denivelări, ca o piele fină.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Piele cu textură”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Legarea pieselor (parent)
 Blobi are corp, ochi, coarne, gură. Ca să-l muți odată:
@@ -72,6 +84,10 @@ Blobi are corp, ochi, coarne, gură. Ca să-l muți odată:
 4. Mută corpul: toate piesele merg după el.
 
 Verifică în **Outliner**: piesele sunt în ierarhie sub corp.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Legarea pieselor (parent)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 5) Poziția (pose)
 Fără schelet (asta e pentru animație), poți pune personajul într-o poziție **mutând și rotind părțile**:
@@ -84,10 +100,18 @@ Fără schelet (asta e pentru animație), poți pune personajul într-o poziție
 
 > Încearcă 2–3 poziții diferite și păstrează-o pe cea mai simpatică.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Poziția (pose)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 6) Studioul și randarea
 - Folosește studioul din L9 (Modulul 3): fundal curbat, **Key + Fill + Rim**.  
 - Camera la **60–85 mm**, personajul în treimea stângă.  
 - **EEVEE**, 1920 × 1080, **F12**, salvează `Prenume_Nume_B4_L04.png`.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Studioul și randarea”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] Un **prieten** pentru Blobi, de altă culoare  

@@ -48,10 +48,18 @@ Setările importante:
 | **Levels Viewport** | nivel pe ecran (2 e bun) |
 | **Render** | nivel la randare (poate fi mai mare, ex. 3) |
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Ce face Subdivision”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Din cub, o sferă
 Apasă **Ctrl + 2** pe cubul de start. Apoi **Tab** și mută un colț: forma se schimbă **fin**, ca plastilina.
 
 > **Regula de aur:** cu cât mai **puține** vârfuri ai, cu atât forma e mai **moale**. Adaugă vârfuri doar unde ai nevoie de mai mult detaliu.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Din cub, o sferă”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Mărul
 1. Cub, **Ctrl + 2** (Subdivision).  
@@ -63,6 +71,10 @@ Apasă **Ctrl + 2** pe cubul de start. Apoi **Tab** și mută un colț: forma se
 
 **Codița:** un **Cylinder** subțire (Radius 0.04, Depth 0.5), puțin curbat (în Edit Mode, mută vârful de sus lateral). Maro.  
 **Frunza:** un **Plane**, rotit și îngustat, cu Subdivision. Verde.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Mărul”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Pară și prună
 **Para:**  
@@ -76,15 +88,27 @@ Apasă **Ctrl + 2** pe cubul de start. Apoi **Tab** și mută un colț: forma se
 2. O linie care o împarte în două: o **adâncitură pe lung** (Alt + click pe un inel lateral, **S 0.9**).  
 3. Mov închis, **Roughness 0.3**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Pară și prună”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 5) Margini ascuțite pe loc (opțional)
 Uneori vrei ca o margine să rămână ascuțită, ca la o cutie cu colțuri.
 
 - Selectează muchia în Edit Mode, **Shift + E**, trage mouse-ul spre **1**: ai marcat o **muchie ascuțită** (crease). Subdivision nu o mai rotunjește.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Margini ascuțite pe loc (opțional)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 6) Complet — coșul
 - Pune cele 3 fructe într-un **coș** simplu (cilindru fără capac, făcut în lecția următoare) sau pe un **plan**.  
 - Materiale diferite.  
 - **Randare** cu o singură lumină Area, deasupra.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — coșul”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] O **banană** (curbă din cilindru + Subdivision)  

@@ -43,12 +43,20 @@ Aceeași casă arată **foarte diferit** la prânz și la apus. Lumina face jum�
 | **Spot** | con de lumină | far, lanternă |
 | **Area** | panou luminos | studio foto, ferestre |
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Tipuri de lumină”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Setări (Properties → tab Light, becul verde)
 - **Color** — culoarea luminii (galben cald, albastru rece).  
 - **Power / Strength** — cât de puternică e.  
 - Pentru **Sun**: **Strength** 2–4. Pentru **Point**: **Power** 500–1000 W.
 
 > Lumina **Sun** se rotește cu **R** ca să se schimbe unghiul umbrei; poziția ei nu contează, doar **direcția**.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Setări (Properties → tab Light, becul verde)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Experimentul zilei
 
@@ -60,6 +68,10 @@ Aceeași casă arată **foarte diferit** la prânz și la apus. Lumina face jum�
 
 Treci în modul **Rendered** (sfera din dreapta sus) ca să vezi umbrele.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Experimentul zilei”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Camera
 Camera din scena de start e la dreapta și sus. O poți muta cu **G** și roti cu **R**, dar există un mod mult mai ușor:
 
@@ -67,6 +79,10 @@ Camera din scena de start e la dreapta și sus. O poți muta cu **G** și roti c
 2. Apasă **Ctrl + Alt + Numpad 0** (sau **View → Align View → Align Active Camera to View**): camera „sare” la vederea ta.  
 3. Verifică prin camera: **Numpad 0**.  
 4. Dacă ai nevoie să ajustezi **fără să te încurci**, în **N → View → Camera to View** bifează opțiunea și poți naviga, iar camera te urmează (**debifează după!**).
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Camera”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 5) Regula treimilor
 Imaginează-ți ecranul împărțit în 3×3 pătrate. Pune subiectul **pe linii sau la intersecții**, nu mereu în mijloc. În **Properties → Camera → Viewport Display** bifează **Composition Guides → Thirds** (liniile apar în vederea camerei).
@@ -82,10 +98,18 @@ Imaginează-ți ecranul împărțit în 3×3 pătrate. Pune subiectul **pe linii
 
 Pentru scena noastră, **35–50 mm** merge bine.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Lentila camerei”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 7) Complet — compoziția finală
 - Un **Sun** cald (portocaliu deschis, Strength 3).  
 - Un **Area** mic, albastru, **Power 200**, ca lumină de umplere din partea opusă.  
 - Camera la 35 mm, așezată din colț, ca să vezi **două fețe** ale casei.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — compoziția finală”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] Fă „apusul” și „răsăritul” ca două fișiere diferite  

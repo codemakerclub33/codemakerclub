@@ -39,6 +39,10 @@ Multe obiecte sunt „cochilii”: cănile, cutiile, ferestrele, hainele. Solidi
 3. **Thickness = 0.2**: planul devine o placă.  
 4. Schimbă **Offset** (−1, 0, 1): grosimea crește în sus, în ambele sensuri sau în jos.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Solidify pe un plan”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Coșul
 1. **Cylinder**: **Vertices = 24**, **Radius = 1**, **Depth = 1.5**, **Z = 0.75**.  
 2. **Tab** → modul **Face** → click pe **fața de sus** → **X → Faces** (o ștergi). Coșul e deschis deasupra.  
@@ -48,6 +52,10 @@ Multe obiecte sunt „cochilii”: cănile, cutiile, ferestrele, hainele. Solidi
 6. **Shade Smooth**. Maro deschis.
 
 > Dacă pereții par „inversați”, în Edit Mode apasă **Alt + N → Recalculate Outside**.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Coșul”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Împletitura (Wireframe)
 Pe o **copie** a coșului (**Shift + D**, click dreapta):
@@ -59,6 +67,10 @@ Pe o **copie** a coșului (**Shift + D**, click dreapta):
 
 Mai poți combina: **un coș cu Solidify** pentru corp și **unul cu Wireframe** pentru decor.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Împletitura (Wireframe)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Fereastra
 1. **Plane**, rotit **R X 90** (în picioare), **Dimensions X 2, Z 3**.  
 2. **Tab**. **I 0.2 Enter** (rama). Apoi **X → Faces** pe fața din mijloc (rămâne doar rama).  
@@ -66,10 +78,18 @@ Mai poți combina: **un coș cu Solidify** pentru corp și **unul cu Wireframe**
 4. Geamul: alt **Plane**, la același loc, **Dimensions 1.6 × 2.6**, un material **transparent** (L7 din acest modul).  
 5. **Bară de mijloc**: **Cube** subțire (X 0.06, Y 0.1, Z 2.6). Duplică-l pe orizontală.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Fereastra”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 5) Complet — fereastra cu 4 geamuri
 - Bara verticală + cea orizontală formează o cruce.  
 - Selectează rama și bara (**Shift + click**), **Ctrl + J** (se unesc într-un obiect).  
 - Material alb pentru ramă, albastru foarte deschis pentru geam.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — fereastra cu 4 geamuri”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] Un **mâner** pentru coș din Torus tăiat  

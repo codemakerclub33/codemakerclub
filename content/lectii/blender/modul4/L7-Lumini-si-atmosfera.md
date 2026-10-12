@@ -43,6 +43,10 @@ Filmele aleg ora zilei pentru fiecare scenă. Lumina de apus (galbenă, joasă) 
 
 > Elevation **60°** = amiază; **3–10°** = răsărit/apus; **negativ** = noapte.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Cerul realist”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Soarele din scenă
 Cerul dă lumină ambientală, dar pentru **umbre clare** adaugă un **Sun**:
 
@@ -50,6 +54,10 @@ Cerul dă lumină ambientală, dar pentru **umbre clare** adaugă un **Sun**:
 2. **Color** portocaliu pal.  
 3. Rotește-l cu **R** până umbrele cad frumos pe insulă. Cât de lungi sunt umbrele?  
 4. Pune soarele în **aceeași direcție** cu cel din cer.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Soarele din scenă”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Culorile atmosferei
 | Momentul | Lumină | Cer |
@@ -61,6 +69,10 @@ Cerul dă lumină ambientală, dar pentru **umbre clare** adaugă un **Sun**:
 
 Experimentează 3 variante cu **Sun Elevation** și culoarea Sun.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Culorile atmosferei”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Adâncimea imaginii (DoF)
 Cu **Depth of Field**, ce e aproape sau departe de țintă devine **estompat**, ca într-o fotografie.
 
@@ -70,10 +82,18 @@ Cu **Depth of Field**, ce e aproape sau departe de țintă devine **estompat**, 
 4. **F-Stop 2.8** (mai mic = mai estompat).  
 5. Vezi fundalul estompat în **Rendered**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Adâncimea imaginii (DoF)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 5) Camera artistică
 - Pune camera **ușor de jos în sus** pentru un aer „epic”.  
 - **Focal Length 35–50 mm** pentru peisaj.  
 - Insula în **treimea** inferioară, cerul în rest.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Camera artistică”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 6) Cycles pentru calitate finală
 1. **Properties → Render → Render Engine: Cycles**.  
@@ -83,6 +103,10 @@ Cu **Depth of Field**, ce e aproape sau departe de țintă devine **estompat**, 
 5. Compară cu **EEVEE**.
 
 > Dacă durează prea mult: scade **Resolution %** la 50%.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Cycles pentru calitate finală”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 7) Salvează o variantă de zi
 Fă o copie a fișierului, **Sun Elevation 50°**, culoare albă. Randează `zi.png` și `apus.png`. Care ți se pare mai frumoasă?

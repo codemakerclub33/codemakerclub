@@ -45,6 +45,10 @@ Cei mai buni artiști 3D petrec mult timp **planificând**. Un model fără schi
 
 Azi pregătim **monstrulețul** și te gândești la **proiectul final**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Proiectele din acest modul”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Ideea personajului
 Răspunde pe hârtie:
 
@@ -55,10 +59,18 @@ Răspunde pe hârtie:
 
 Exemplu: „Blobi, un monstruleț rotund, verde, cu 2 ochi mari, 2 coarne mici și picioare scurte, mereu zâmbitor.”
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Ideea personajului”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 3) Schița din două vederi
 Desenează personajul **din față** și **din lateral**, la **aceeași înălțime** și cu **aceleași proporții**. Marchează cu linii orizontale unde sunt ochii, brațele, genunchii.
 
 > Fotografiază desenele cu telefonul (drept, fără umbre).
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Schița din două vederi”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Imagini de referință în Blender
 1. Pe calculator, pune pozele cu schițele într-un folder.  
@@ -66,6 +78,10 @@ Desenează personajul **din față** și **din lateral**, la **aceeași înălț
 3. Vezi imaginea în scenă. În vederea din față (**1**), mută-o și scalează-o cu **G** și **S** ca să aibă înălțimea de **3 unități**.  
 4. Repetă pentru poza de lateral în vederea din dreapta (**3**), rotește cu **R Z 90**.  
 5. Fă imaginile **semi-transparente**: **Properties → Object Data (imaginea) → Opacity 0.5**.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Imagini de referință în Blender”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 5) Blocajul (blockout)
 „Blockout” înseamnă să construiești personajul din **forme simple și grosiere**, ca să fixezi proporțiile **înainte** de detalii:
@@ -80,6 +96,10 @@ Desenează personajul **din față** și **din lateral**, la **aceeași înălț
 | Coarne | conuri |
 
 Folosește **Alt + Z** (X-ray) ca să vezi imaginile de referință prin modele. Compară cu desenul din față și lateral.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Blocajul (blockout)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 6) Verificarea proporțiilor
 Întreabă-te:

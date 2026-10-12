@@ -55,6 +55,10 @@ Scrie pe hârtie, în ordinea în care construiești:
 3. **Detalii** (steaguri, ferestre, pietre)  
 4. **Atmosfera** (zi / apus / noapte)
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Planul tău (10 minute)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Blockout rapid (20 minute)
 Construiește **toate** formele din primitive, grosier. Nu mergi la detalii înainte ca **întreaga scenă** să existe.
 
@@ -64,10 +68,18 @@ Construiește **toate** formele din primitive, grosier. Nu mergi la detalii îna
 - Alege **Edit Mode** doar când trebuie.  
 - Salvează des: **Ctrl + S**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Modelarea (40 minute)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Materiale (20 minute)
 - Definește o **paletă** de 3–4 culori.  
 - Un material cu **textură** (Noise + Bump).  
 - Verifică în **Material Preview**.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Materiale (20 minute)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 5) Autocritică
 Fă un pas înapoi: privește scena de **departe** (zoom out).
@@ -79,9 +91,17 @@ Fă un pas înapoi: privește scena de **departe** (zoom out).
 | Este ceva neterminat? | |
 | Există un punct de interes clar? | |
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Autocritică”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 6) Salvează versiuni
 - **File → Save As**: `Proiect_v1`, `Proiect_v2`...  
 - Dacă strici ceva, revii la versiunea bună.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Salvează versiuni”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ---
 

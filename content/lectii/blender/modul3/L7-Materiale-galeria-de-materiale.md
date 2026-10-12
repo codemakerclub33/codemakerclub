@@ -45,10 +45,18 @@ Materialul standard din Blender se numește **Principled BSDF**. Setările lui p
 | **IOR** | cât „îndoaie” lumina (sticla ≈ 1.45) |
 | **Emission** | face materialul să strălucească |
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Principled BSDF”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Scena galeriei
 1. Un **Plane** mare ca podea (S 12), gri deschis.  
 2. 6 **UV Sphere** (Radius 1), în șir, **X = −7.5, −4.5, −1.5, 1.5, 4.5, 7.5**; **Shade Smooth**.  
 3. **Sun** + **Area**, cameră în față, **Rendered**.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Scena galeriei”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Rețetele
 
@@ -63,6 +71,10 @@ Materialul standard din Blender se numește **Principled BSDF**. Setările lui p
 
 **Sticla:** dacă arată opacă, în **Properties → Render** activează **Raytracing** (EEVEE) sau folosește **Cycles**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Rețetele”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Cum creezi fiecare
 1. Selectezi sfera.  
 2. **Properties → Material → New**.  
@@ -72,10 +84,18 @@ Materialul standard din Blender se numește **Principled BSDF**. Setările lui p
 
 > **Sfat:** denumirile bune te ajută să-ți găsești materialele mai târziu: **Browse Material** (lângă nume) îți arată lista lor.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Cum creezi fiecare”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 5) Complet — galeria
 - Fiecare sferă are un **mic suport** (cilindru) sub ea.  
 - **Camera** priveste de la nivelul podelei, ușor în sus.  
 - **Randare** 1920 × 1080: salvează `Prenume_Nume_B3_L07.png`.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — galeria”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 6) Reutilizarea materialelor
 Materialele sunt salvate în fișier. În alt proiect: **File → Append → fișierul → Material → alege**. Așa îți construiești o **bibliotecă** proprie.

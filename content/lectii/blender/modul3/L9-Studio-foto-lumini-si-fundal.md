@@ -42,6 +42,10 @@ Un fundal fără colțuri, ca să nu vezi unde se termină podeaua și începe p
 4. Selectează **muchia colțului**, dintre podea și perete, și apasă **Ctrl + B**; cu **rotița** pune **8 segmente**, iar din mouse alege o rază mare (~3). Colțul devine o curbă lină.  
 5. **Tab**, **Shade Smooth**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Fundalul curbat („ciclorama”)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Obiectul de fotografiat
 Pune cana, cufărul sau racheta în centrul curbei, deasupra podelei.
 
@@ -54,6 +58,10 @@ Pune cana, cufărul sau racheta în centrul curbei, deasupra podelei.
 
 **Cum le orientezi:** cel mai ușor e cu o constrângere. Selectează lumina → **Properties → tab-ul Object Constraints → Add Object Constraint → Track To → Target: obiectul tău**. Lumina „se uită” singură la obiect, oriunde o muți. (Dacă ținta pare greșită: **To: −Z**, **Up: Y**.)
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Cele 3 lumini”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 4) Moliciunea umbrelor
 O lumină **Area mare** dă umbre **moi**; una mică dă umbre **dure**. Schimbă **Size** în **Properties → Light** și compară (de ex. 1 m și 4 m).
 
@@ -61,13 +69,25 @@ O lumină **Area mare** dă umbre **moi**; una mică dă umbre **dure**. Schimb�
 - Culoare simplă pe fundal: **material cu Base Color** (albastru-pal, gri, roz).  
 - Culoare a „cerului” din jur: **Properties → World → Color** (negru pentru atmosferă dramatică).
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Fundalul colorat”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 6) Camera
 - Lentilă **70–85 mm** (portrete și produse arată bine cu o lentilă mai lungă).  
 - Dacă vrei **fundal ușor încețoșat** (bokeh): **Camera → Depth of Field → Focus on Object**: alege obiectul; **F-Stop 2**.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Camera”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 7) Complet — randare și variante
 - Randează **trei variante**: fundal alb, fundal colorat, fundal negru.  
 - Salvează fiecare: `…_alb.png`, `…_color.png`, `…_negru.png`.
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Complet — randare și variante”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
 - [ ] Un **reflector** (o foaie albă) care „întoarce” lumina  

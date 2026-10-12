@@ -40,6 +40,10 @@ Un proiect devine „real” când îl arăți. Să povestești ce ai făcut te 
 4. **Render:** EEVEE pentru viteză, Cycles pentru calitate. **1920 × 1080**.  
 5. **F12 → Image → Save As** `Prenume_Nume_B4_L10.png`.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Randarea finală (30 minute)”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 2) Prezentarea de 1–2 minute
 Folosește structura:
 
@@ -49,10 +53,18 @@ Folosește structura:
 4. **Ce sunt cel mai mândru**  
 5. **Ce aș schimba**
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Prezentarea de 1–2 minute”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 3) Expoziția
 - Fiecare prezintă proiectul pe ecran.  
 - Colegii dau **feedback pozitiv**: „Îmi place ___ pentru că ___.”  
 - Opțional, un **sfat**: „Ai putea încerca ___.”
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Expoziția”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Verificarea cerințelor
 - [ ] 8+ obiecte  
@@ -83,6 +95,10 @@ Câte ai răspuns corect?
 - **7–8:** Foarte bine, mai repetă câteva.  
 - **<7:** Recitește lecțiile marcate din modulele 1–3.
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Quiz final”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 6) Autoevaluare
 Colorează 1–5 (1 = greu, 5 = ușor):
 
@@ -95,6 +111,10 @@ Colorează 1–5 (1 = greu, 5 = ușor):
 | Să pun lumini și să randez | |
 | Să-mi organizez scena | |
 
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Autoevaluare”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
+
 ### 7) Ce urmează?
 Ai acum o bază solidă. Direcții posibile:
 
@@ -105,6 +125,10 @@ Ai acum o bază solidă. Direcții posibile:
 | **Geometry Nodes** | Generezi forme cu noduri |
 | **Imprimare 3D** | Modele pentru imprimantă |
 | **Jocuri** | Modele pentru Unity / Godot |
+
+**Gata când:**  
+- [ ] Am făcut toți pașii din „Ce urmează?”  
+- [ ] Ce văd în Blender seamănă cu descrierea  
 
 ---
 
