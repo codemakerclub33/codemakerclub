@@ -36,6 +36,9 @@ Un pin Arduino poate da doar ~**20 mA**. Un motor cere mult mai mult. De aceea f
 ### 1) Circuit nou
 `Prenume_Nume_A3_L07`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A3_L07`  
+
 ### 2) Cum funcționează tranzistorul
 Un tranzistor NPN are 3 picioare: **Bază (B)**, **Colector (C)**, **Emitor (E)**. Un curent mic în bază lasă un curent mare să curgă de la colector la emitor.
 
@@ -87,6 +90,10 @@ void loop() {
 ```
 
 Fiecare apăsare **schimbă starea** (pornit ↔ oprit), tot cu tehnica „frontului” din lecțiile trecute.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 4) Viteză cu PWM
 Pin 9 poate face **PWM**. Un motor primește mai mult sau mai puțin curent în medie:
@@ -162,6 +169,10 @@ void loop() {
 | **Automat** | temperatura: 20 °C = oprit, 40 °C = viteză maximă |
 
 `(int)t` transformă `float` în întreg (taie zecimalele), ca `map` să primească numere întregi.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ---
 

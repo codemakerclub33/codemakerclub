@@ -36,6 +36,9 @@ Cifrele de pe ceasuri, cuptoare și aparate digitale sunt făcute din segmente. 
 ### 1) Circuit nou
 `Prenume_Nume_A3_L03`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A3_L03`  
+
 ### 2) Segmentele
 Segmentele sunt numite **a, b, c, d, e, f, g**:
 
@@ -68,6 +71,10 @@ Afișajul cu **catod comun** are un pin comun (GND), iar fiecare segment are pro
 | **LED** | pin **12** → 220 Ω → anod · catod → GND |
 
 > Pe afișajul din Tinkercad, treci cursorul peste pini ca să vezi literele a–g. Dacă ai un afișaj cu **anod comun**, îl legi la 5V și logica se inversează.
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 4) Tabelul cifrelor
 Fiecare cifră înseamnă o combinație de segmente. `1` = aprins, `0` = stins. Ordinea: **a b c d e f g**.
@@ -126,6 +133,10 @@ void loop() {
 - `CIFRE[10][7]` e un **tablou cu două dimensiuni**: 10 rânduri (cifre), 7 coloane (segmente).  
 - `afiseaza(c)` parcurge cele 7 segmente și le aprinde / stinge după tabel.  
 - `for (int c = 9; c >= 0; c--)` numără **înapoi** (`c--` scade cu 1).
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 6) Complet — start, bip, decolare
 
@@ -189,6 +200,10 @@ void loop() {
 ```
 
 **Cum merge:** apeși butonul → numără 9…0 cu un bip scurt la fiecare cifră → la 0 sună lung și se aprinde LED-ul („Decolare!”) → totul revine la 9.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ---
 

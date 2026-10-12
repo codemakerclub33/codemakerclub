@@ -36,6 +36,9 @@ Ecranul telefonului, televizorul și luminile de petrecere folosesc **același t
 ### 1) Circuit nou
 `Prenume_Nume_A1_L06`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A1_L06`  
+
 ### 2) LED-ul RGB
 Un LED RGB are **4 picioare**: câte unul pentru **roșu**, **verde**, **albastru** și unul **comun**. În Tinkercad, trece cursorul peste fiecare picior ca să vezi numele. Folosim varianta cu **catod comun** (piciorul comun merge la GND).
 
@@ -142,6 +145,10 @@ void loop() {
 ```
 
 Rotește pe rând: vezi cum apar **portocaliul**, **roz-ul**, **turcoazul**.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ---
 

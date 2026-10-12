@@ -153,6 +153,10 @@ void loop() {
 
 `scurt()` și `lung()` sunt **funcții** — grupuri de comenzi cu nume. Le scrii o dată, le chemi de câte ori vrei.
 
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
+
 ---
 
 ## Greșeli frecvente

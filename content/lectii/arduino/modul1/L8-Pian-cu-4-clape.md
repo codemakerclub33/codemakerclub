@@ -36,6 +36,9 @@ Un tablou (`array`) e o **listă cu nume**: în loc de 4 variabile separate ai u
 ### 1) Circuit nou
 `Prenume_Nume_A1_L08`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A1_L08`  
+
 ### 2) Conexiuni
 
 | Piesă | Pin | Se conectează |
@@ -46,6 +49,10 @@ Un tablou (`array`) e o **listă cu nume**: în loc de 4 variabile separate ai u
 | Buton **Mi** | **4** | idem |
 | Buton **Fa** | **5** | idem |
 | Buton **Melodie** (Complet) | **6** | idem |
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Frecvențele notelor
 
@@ -125,6 +132,10 @@ void loop() {
 
 Dacă vrei un buton în plus, adaugi un număr în ambele liste și mărești `NR`.
 
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
+
 ### 6) Complet — melodie automată
 Un al cincilea buton (pin 6) cântă „Ode bucuriei” (primele note), cu o listă de note și o listă de durate:
 
@@ -174,6 +185,10 @@ void loop() {
 ```
 
 `tone(pin, frecventa, durata)` cântă nota **exact cât** îi spui. `delay(durate[i] + 50)` lasă o mică pauză între note.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ---
 

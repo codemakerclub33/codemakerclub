@@ -36,6 +36,9 @@ Sistemele reale nu fac un singur lucru. Azi înveți să **împarți un proiect 
 ### 1) Circuit nou
 `Prenume_Nume_A2_L10`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A2_L10`  
+
 ### 2) Planul: 3 sisteme într-o casă
 
 | Sistem | Senzor | Reacție |
@@ -56,6 +59,10 @@ Sistemele reale nu fac un singur lucru. Azi înveți să **împarți un proiect 
 | **LED alarmă (roșu)** | pin **10** → 220 Ω → anod · catod → GND |
 | **LED căldură (portocaliu/roșu)** | pin **7** → 220 Ω → anod · catod → GND |
 | **Piezo** | pin **8** și **GND** |
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 4) Structura codului
 Fiecare sistem are **propria funcție**, iar `loop()` doar le apelează:
@@ -166,6 +173,10 @@ void loop() {
 | Dezarmare | apeși butonul | LED alarmă stins |
 
 Bifează fiecare scenariu în caiet.
+
+**Gata când:**  
+- [ ] Am încercat fiecare situație din listă  
+- [ ] Am notat ce nu a mers și am corectat  
 
 ---
 

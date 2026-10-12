@@ -36,6 +36,9 @@ Telecomenzile TV, aerul condiționat și boxele folosesc **infraroșu**: un LED 
 ### 1) Circuit nou
 `Prenume_Nume_A3_L10`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A3_L10`  
+
 ### 2) Conexiuni
 
 | Piesă | Se conectează |
@@ -50,10 +53,18 @@ Telecomenzile TV, aerul condiționat și boxele folosesc **infraroșu**: un LED 
 
 Telecomanda din Tinkercad nu se conectează la nimic: o selectezi, ținând-o „spre” receptor, și apeși butoanele cu mouse-ul.
 
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
+
 ### 3) Cum merge
 - Fiecare buton trimite un **cod numeric** unic (în hexazecimal, de ex. `FF30CF`).  
 - Receptorul primește codul, iar biblioteca `IRremote` îl **decodează**.  
 - Tu compari codul primit cu codurile pe care le cunoști și decizi ce faci.
+
+**Gata când:**  
+- [ ] Am încercat fiecare situație din listă  
+- [ ] Am notat ce nu a mers și am corectat  
 
 ### 4) Pasul 1 — Aflăm codurile
 Orice telecomandă are alte coduri, deci mai întâi le **citim**:
@@ -141,6 +152,10 @@ void loop() {
 
 `comuta(pin)` **inversează** starea LED-ului: dacă era aprins se stinge și invers.
 
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
+
 ### 6) Complet — Power și luminozitate
 
 ```cpp
@@ -212,6 +227,10 @@ void loop() {
 | Power | stinge totul |
 | Vol + | LED 4 mai luminos (+25) |
 | Vol − | LED 4 mai slab (−25) |
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ---
 

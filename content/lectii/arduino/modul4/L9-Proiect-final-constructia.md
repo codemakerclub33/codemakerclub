@@ -153,6 +153,10 @@ Completează un tabel de teste pentru proiectul tău:
 
 Un proiect bun are **cel puțin 5 teste**, inclusiv unul „cu probleme” (ex. senzor deconectat, valori extreme).
 
+**Gata când:**  
+- [ ] Am încercat fiecare situație din listă  
+- [ ] Am notat ce nu a mers și am corectat  
+
 ### 5) Dacă te blochezi
 Mergi pe această listă:
 

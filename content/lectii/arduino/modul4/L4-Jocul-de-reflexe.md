@@ -36,6 +36,9 @@ Jocurile electronice sunt făcute din aceleași ingrediente: **timp**, **aleator
 ### 1) Circuit nou
 `Prenume_Nume_A4_L04`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A4_L04`  
+
 ### 2) Conexiuni
 
 | Piesă | Se conectează |
@@ -44,6 +47,10 @@ Jocurile electronice sunt făcute din aceleași ingrediente: **timp**, **aleator
 | **LED verde** | pin **7** → 220 Ω → anod · catod → GND |
 | **Buton** | pin **8** și **GND** |
 | **Piezo** | pin **13** și **GND** |
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Reguli
 1. Pe ecran: „Pregateste-te...”.  
@@ -96,6 +103,10 @@ void loop() {
 - `random(1000, 4000)` — număr între 1000 și 3999.  
 - `while (digitalRead(BUTON) == HIGH) { }` — așteaptă **cât timp** butonul nu e apăsat.  
 - `millis() - start` — timpul scurs de când s-a aprins LED-ul.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 5) Complet — 5 runde, start greșit, record
 Folosim funcții și variabile globale:
@@ -201,6 +212,10 @@ void loop() {
 - `continue;` sare la următoarea rundă fără să o numere.  
 - `"Runda " + String(valide)` — lipim text cu numere.  
 - `record` rămâne în memorie cât timp e placa pornită.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ### 6) Cum arată reflexele tale
 

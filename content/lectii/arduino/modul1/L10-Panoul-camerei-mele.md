@@ -36,6 +36,9 @@ Un proiect adevărat nu e o singură piesă, ci **mai multe care lucrează împr
 ### 1) Circuit nou
 `Prenume_Nume_A1_L10`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A1_L10`  
+
 ### 2) Conexiuni
 
 | Piesă | Pin | Observații |
@@ -47,6 +50,10 @@ Un proiect adevărat nu e o singură piesă, ci **mai multe care lucrează împr
 | **Potențiometru** | **A0** | capete la 5V și GND |
 | **Buton** | **2** | picior diagonal la GND |
 | **Piezo** | **8** | celălalt picior la GND |
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Schema modurilor
 
@@ -116,6 +123,10 @@ void loop() {
 - `switch (mod) { case 0: ... }` alege **un singur bloc** în funcție de valoare. Mai curat decât mai multe `if`.  
 - Fiecare `case` se termină cu `break`.
 
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
+
 ### 5) Complet — petrecere și bip
 
 ```cpp
@@ -184,6 +195,10 @@ void loop() {
 ```
 
 La modul 3, potențiometrul reglează **cât de repede** se schimbă culorile.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ### 6) Prezentare (2 minute)
 Spune colegilor:

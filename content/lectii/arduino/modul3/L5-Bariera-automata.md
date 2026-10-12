@@ -36,6 +36,9 @@ Barierele, ușile automate și porțile de garaj au aceeași logică: **detectez
 ### 1) Circuit nou
 `Prenume_Nume_A3_L05`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A3_L05`  
+
 ### 2) Conexiuni
 
 | Piesă | Se conectează |
@@ -46,6 +49,10 @@ Barierele, ușile automate și porțile de garaj au aceeași logică: **detectez
 | **LED roșu** | pin **5** → 220 Ω → anod · catod → GND |
 
 În Tinkercad, pune o **săgeată** (un obiect lung) pe brațul servo, ca să arate ca o barieră.
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Minim — varianta simplă
 
@@ -89,6 +96,10 @@ void loop() {
 - `0°` = barieră **coborâtă**, `90°` = **ridicată**.  
 - `cm > 0` filtrează „fără ecou” (0), când nu e nimic în față.  
 - Problema: bariera se închide **imediat** ce mașina trece de senzor, deci poate lovi mașina!
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 4) Mașina de stări
 Vrem ca bariera să rămână ridicată **încă 3 secunde** după ce mașina a plecat. Folosim **stări**:
@@ -178,6 +189,10 @@ void loop() {
 - Variabila `stare` ține minte **în ce situație** e bariera.  
 - În starea `ASTEAPTA`, nu blocăm programul cu `delay(3000)`; verificăm timpul scurs cu `millis()`, deci dacă apare altă mașină, bariera reacționează imediat.
 
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
+
 ### 6) Test
 
 | Scenariu | Ce faci | Rezultat |
@@ -186,6 +201,10 @@ void loop() {
 | 2 | Muți obiectul departe | 3 secunde bariera rămâne sus |
 | 3 | Aduci obiectul în timpul așteptării | Revine în „deschisă” |
 | 4 | Aștepți 3 s fără obiect | Bariera jos, LED roșu |
+
+**Gata când:**  
+- [ ] Am încercat fiecare situație din listă  
+- [ ] Am notat ce nu a mers și am corectat  
 
 ---
 

@@ -36,6 +36,9 @@ Temperatura e cea mai folosită măsurătoare: termostate, frigidere, sere, vrem
 ### 1) Circuit nou
 `Prenume_Nume_A2_L03`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A2_L03`  
+
 ### 2) Conexiuni
 TMP36 are **3 picioare**; în Tinkercad treci cursorul peste ele ca să vezi numele. Dacă ții senzorul cu partea **plată** spre tine, ordinea e: **5V · semnal · GND**.
 
@@ -46,6 +49,10 @@ TMP36 are **3 picioare**; în Tinkercad treci cursorul peste ele ca să vezi num
 | **GND** (dreapta) | **GND** |
 
 Atenție: dacă pui senzorul invers (5V și GND schimbate), citirile ies aiurea. Verifică numele picioarelor înainte să pornești simularea.
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Formula
 TMP36 dă o tensiune care crește cu **10 mV pe grad**, cu o decalare de **0,5 V** (ca să poată arăta și grade negative):
@@ -79,6 +86,10 @@ void loop() {
 ```
 
 În Tinkercad, dai click pe TMP36 și muți glisorul de temperatură: valoarea se schimbă.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 5) Complet — media a 10 citiri
 Citirile „tremură” puțin. Media lor e mai stabilă:
@@ -121,6 +132,10 @@ void loop() {
 - `long` e un întreg mai mare, ca să nu depășim limita la sumă.  
 - Formula Fahrenheit: `F = C × 9/5 + 32`.
 
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
+
 ### 6) Cum verifici că merge
 Într-un caiet, compară cu valori cunoscute:
 
@@ -129,6 +144,10 @@ void loop() {
 | Cameră | ~ 20–25 °C |
 | Apă cu gheață | ~ 0 °C |
 | Corp uman | ~ 36–37 °C |
+
+**Gata când:**  
+- [ ] Am încercat fiecare situație din listă  
+- [ ] Am notat ce nu a mers și am corectat  
 
 ---
 

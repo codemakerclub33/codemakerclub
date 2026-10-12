@@ -36,6 +36,9 @@ Senzorii de ultrasunete trimit un sunet, **așteaptă ecoul** și calculează di
 ### 1) Circuit nou
 `Prenume_Nume_A2_L05`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A2_L05`  
+
 ### 2) Cum funcționează
 1. Trimiți un impuls scurt pe **TRIG**.  
 2. Senzorul emite un sunet pe care nu-l auzi.  
@@ -56,6 +59,10 @@ Sunetul parcurge aproximativ **0,034 cm pe microsecundă**, iar drumul e dus-în
 | **LED verde** | pin **10** → 220 Ω → anod · catod → GND |
 | **LED galben** | pin **9** → 220 Ω → anod · catod → GND |
 | **LED roșu** | pin **12** → 220 Ω → anod · catod → GND |
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 4) Minim — distanța
 
@@ -88,6 +95,10 @@ void loop() {
 
 - `pulseIn(ECHO, HIGH)` măsoară **cât timp** (în microsecunde) pinul ține `HIGH`.  
 - În Tinkercad, mută obiectul din fața senzorului ca să vezi distanța schimbându-se.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 5) O funcție pentru distanță
 Ca să nu repetăm codul, îl punem într-o funcție:
@@ -186,6 +197,10 @@ void loop() {
 | sub 15 cm | roșu | sunet continuu |
 
 `cm == 0` înseamnă că nu s-a primit ecou (nimic în fața senzorului).
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ---
 

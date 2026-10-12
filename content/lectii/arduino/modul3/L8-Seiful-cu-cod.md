@@ -36,6 +36,9 @@ Parolele, PIN-urile și lacătele electronice funcționează așa: **compari ce 
 ### 1) Circuit nou
 `Prenume_Nume_A3_L08`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A3_L08`  
+
 ### 2) Conexiuni
 Sunt multe, deci mergi pe rând.
 
@@ -65,6 +68,10 @@ Sunt multe, deci mergi pe rând.
 | **Piezo** | pin **13** și **GND** |
 
 Pinii analogici A0–A5 pot fi folosiți și ca pini **digitali** obișnuiți.
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Tastatura
 Tastatura e o grilă. Biblioteca `Keypad` află ce tastă e apăsată verificând rândurile și coloanele:
@@ -158,6 +165,10 @@ void loop() {
 - Un `String` păstrează ce a tastat utilizatorul; `introdus += tasta` **adaugă** o literă.  
 - `introdus.length()` spune câte caractere sunt.  
 - Comparăm cu `==`. După 4 cifre golim `introdus` (`= ""`).
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 5) Complet — seiful cu LCD, servo și încercări
 
@@ -277,6 +288,10 @@ void loop() {
 - `"Mai ai: " + String(...)` lipește un text cu un număr.  
 - Ecranul arată **stelute**, nu cifrele, ca să nu fie văzut codul.  
 - După 3 greșeli, seiful se **blochează** 10 secunde.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ---
 

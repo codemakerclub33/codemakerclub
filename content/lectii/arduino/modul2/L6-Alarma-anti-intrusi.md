@@ -36,6 +36,9 @@ Alarmele din case, magazine și lifturi folosesc senzori PIR. Aici înveți și 
 ### 1) Circuit nou
 `Prenume_Nume_A2_L06`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A2_L06`  
+
 ### 2) Cum merge PIR
 PIR („Passive InfraRed”) simte **căldura** corpurilor care se mișcă. Are 3 pini; în Tinkercad le citești trecând cursorul peste ei.
 
@@ -51,6 +54,10 @@ PIR („Passive InfraRed”) simte **căldura** corpurilor care se mișcă. Are 
 | **LED verde** (dezarmat) | pin **5** → 220 Ω → anod · catod → GND |
 | **LED roșu** (armat) | pin **6** → 220 Ω → anod · catod → GND |
 | **Piezo** | pin **8** și **GND** |
+
+**Gata când:**  
+- [ ] Am încercat fiecare situație din listă  
+- [ ] Am notat ce nu a mers și am corectat  
 
 ### 3) Minim — mișcare = LED
 
@@ -69,6 +76,10 @@ void loop() {
 ```
 
 În Tinkercad, dai click pe PIR și apare un obiect pe care îl muți. Când se mișcă, `PIR` devine `HIGH`.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 4) Complet — alarmă armabilă
 Folosim o **variabilă de stare** `armat`. Butonul o schimbă (`!armat` inversează valoarea).
@@ -126,6 +137,10 @@ void loop() {
 - Sirena e o funcție, care urcă și coboară frecvența.  
 - `armat && digitalRead(PIR) == HIGH` — sună **doar** dacă ambele sunt adevărate.
 
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
+
 ### 5) Test
 
 | Pas | Ce faci | Ce ar trebui să vezi |
@@ -135,6 +150,10 @@ void loop() {
 | 3 | Apeși butonul | LED roșu |
 | 4 | Muți obiectul | Sirena sună |
 | 5 | Apeși butonul | Din nou verde, liniște |
+
+**Gata când:**  
+- [ ] Am încercat fiecare situație din listă  
+- [ ] Am notat ce nu a mers și am corectat  
 
 ---
 

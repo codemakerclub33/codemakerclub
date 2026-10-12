@@ -36,6 +36,9 @@ La finalul orei ai un cronometru precis, controlat cu două butoane.
 ### 1) Circuit nou
 `Prenume_Nume_A4_L05`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A4_L05`  
+
 ### 2) Conexiuni
 
 | Piesă | Se conectează |
@@ -44,6 +47,10 @@ La finalul orei ai un cronometru precis, controlat cu două butoane.
 | **Buton A (Start/Stop)** | pin **7** și **GND** |
 | **Buton B (Tur/Reset)** | pin **8** și **GND** |
 | **Piezo** | pin **13** și **GND** |
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Ideea
 Un cronometru nu „numără”, ci **își amintește** momentul de start și calculează diferența:
@@ -144,6 +151,10 @@ void loop() {
 - La **stop**: adăugăm la `acumulat` cât a rulat.  
 - La **start**: notăm `start = millis()`.  
 - Timpul afișat = `acumulat` (+ cât rulează acum, dacă e pornit).
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 6) Complet — tur, reset, numărătoare inversă
 
@@ -271,6 +282,10 @@ void loop() {
 | B (scurt, oprit) | **reset** |
 | B (lung, 1,5 s) | schimbă modul |
 | Numărătoare inversă | sună la 00:00.0 |
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ---
 

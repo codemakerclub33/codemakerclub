@@ -36,6 +36,9 @@ Aproape orice aparat cu ecran are **meniuri sau pagini**. Azi înveți să ții 
 ### 1) Circuit nou
 `Prenume_Nume_A3_L02`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A3_L02`  
+
 ### 2) Conexiuni
 LCD-ul rămâne conectat **exact ca în L1** (RS 12, E 11, D4 5, D5 4, D6 3, D7 2). Adaugi:
 
@@ -44,6 +47,10 @@ LCD-ul rămâne conectat **exact ca în L1** (RS 12, E 11, D4 5, D5 4, D6 3, D7 
 | **TMP36** | 5V · semnal **A1** · GND |
 | **Fotorezistor** | 5V → fotorezistor → **A0** → 10 kΩ → GND |
 | **Buton** | pin **7** și **GND** (diagonal) |
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Minim — temperatura pe LCD
 
@@ -69,6 +76,10 @@ void loop() {
 ```
 
 `lcd.print(grade, 1)` afișează cu o zecimală, ca la `Serial.print`.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 4) Pagini cu buton
 Ținem minte pagina curentă într-o variabilă. Butonul o crește (`0 → 1 → 2 → 0 ...`) cu operatorul **modulo** `%`.
@@ -200,6 +211,10 @@ void loop() {
 - `titlu()` se apelează **doar la schimbarea paginii**.  
 - `valoare()` se apelează la **fiecare 500 ms**.  
 - Spațiile de la sfârșit șterg resturile.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ---
 

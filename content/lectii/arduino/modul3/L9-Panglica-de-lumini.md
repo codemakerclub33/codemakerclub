@@ -36,6 +36,9 @@ Luminile de Crăciun inteligente, pantofii care se aprind și ecranele LED mari 
 ### 1) Circuit nou
 `Prenume_Nume_A3_L09`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A3_L09`  
+
 ### 2) Conexiuni
 
 | Piesă | Se conectează |
@@ -47,6 +50,10 @@ Luminile de Crăciun inteligente, pantofii care se aprind și ecranele LED mari 
 | **Buton** | pin **2** și **GND** |
 
 > Pe un inel/panglică reală, pune și un **rezistor de ~300–500 Ω** pe firul de semnal și un condensator mare pe alimentare. Pentru câteva LED-uri în simulator nu e nevoie.
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Primele culori
 
@@ -104,6 +111,10 @@ void loop() {
 ```
 
 `banda.clear()` stinge toți pixelii, apoi aprindem doar unul, tot mai departe. Rezultatul e o „rază” care se învârte.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 5) Curcubeul
 Culorile din curcubeu se obțin cu o funcție „roata culorilor”: primește un număr 0–255 și returnează o culoare, parcurgând spectrul.
@@ -228,6 +239,10 @@ void loop() {
 - `pas % NR` ține pixelul în interval 0–11.  
 - `abs(...)` face valoarea să **urce și să coboare** (formă de „triunghi”).  
 - Potențiometrul reglează luminozitatea în timp real.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ---
 

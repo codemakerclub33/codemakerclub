@@ -36,6 +36,9 @@ Semafoarele sunt un exemplu perfect de **stări**: ceva se află într-o stare (
 ### 1) Circuit nou
 `Prenume_Nume_A1_L04`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A1_L04`  
+
 ### 2) Conexiuni
 
 | Piesă | Pin | Observații |
@@ -47,6 +50,10 @@ Semafoarele sunt un exemplu perfect de **stări**: ceva se află într-o stare (
 | **Buton** | **2** | celălalt picior (diagonal) la GND |
 
 Alegi culori **corecte** pentru LED-uri: în Tinkercad dai click pe LED și schimbi **Color**.
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Semafor automat (Minim)
 
@@ -77,6 +84,10 @@ void loop() {
 ```
 
 Observă că **o singură culoare** e aprinsă la un moment dat.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 4) Cod mai curat: o funcție pentru fiecare stare
 Ca să nu repetăm aceleași rânduri, scriem o funcție care **setează toate luminile** dintr-o dată:
@@ -159,6 +170,10 @@ void loop() {
 ```
 
 Programul **verifică butonul tot timpul** în `loop()`. Când îl găsește apăsat, cheamă funcția `traversare()`, care rulează tot scenariul.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ---
 

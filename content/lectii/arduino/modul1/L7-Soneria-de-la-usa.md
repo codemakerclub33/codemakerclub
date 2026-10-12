@@ -36,6 +36,9 @@ Sunetul e cel mai bun mod prin care un aparat **atrage atenția**: alarme, jocur
 ### 1) Circuit nou
 `Prenume_Nume_A1_L07`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A1_L07`  
+
 ### 2) Conexiuni
 
 | Piesă | Se conectează |
@@ -45,6 +48,10 @@ Sunetul e cel mai bun mod prin care un aparat **atrage atenția**: alarme, jocur
 | **LED** (Complet) | rezistor 220 Ω → pin **7** · catod → **GND** |
 
 În Tinkercad piesa se numește **Piezo**; funcționează ca un mic difuzor.
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Ce face `tone`
 `tone(pin, frecventa, durata)` trimite un sunet:
@@ -78,6 +85,10 @@ void loop() {
 ```
 
 Cât ții apăsat, sună nota **La**. Când dai drumul, `noTone` oprește sunetul.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 5) Ding-dong
 O sonerie adevărată sună două note una după alta:

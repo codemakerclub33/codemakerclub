@@ -36,6 +36,9 @@ Datele valoroase sunt cele **adunate în timp**. Un datalogger înregistrează v
 ### 1) Circuit nou
 `Prenume_Nume_A4_L07`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A4_L07`  
+
 ### 2) Conexiuni
 
 | Piesă | Se conectează |
@@ -46,6 +49,10 @@ Datele valoroase sunt cele **adunate în timp**. Un datalogger înregistrează v
 | **Senzor sol** | semnal **A2** · 5V · GND |
 | **Buton pagină** | pin **8** și **GND** |
 | **LED alertă** | pin **7** → 220 Ω → anod · catod → GND |
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Minim — 3 pagini
 
@@ -113,6 +120,10 @@ void loop() {
 ```
 
 Calibrarea umidității (`700`) se ia din măsurătorile tale (Modulul 2 L7).
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 4) Istoric — tablou circular
 Vrem să ținem **ultimele 10** temperaturi. Când s-au umplut, următoarea o înlocuiește pe cea mai veche (**buffer circular**):
@@ -338,6 +349,10 @@ void loop() {
 Măsurătorile intră în istoric **la 2 secunde**, iar ecranul se actualizează **la 0,5 secunde**. LED-ul de alertă se aprinde peste 30 °C.
 
 > Pentru test rapid în simulator, reduce intervalul de la `2000` la `500` și mută glisorul TMP36 între măsurători: graficul se schimbă.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ---
 

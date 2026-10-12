@@ -36,6 +36,9 @@ Telefoanele, camerele foto și dronele știu cum sunt orientate. Un senzor de î
 ### 1) Circuit nou
 `Prenume_Nume_A2_L08`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A2_L08`  
+
 ### 2) Cum merge
 Senzorul de înclinare are o bilă metalică mică. Când îl înclini într-o direcție, bila **închide contactul** dintre doi pini, ca un buton. Îl tratăm exact ca pe un **buton** cu `INPUT_PULLUP`:
 
@@ -51,6 +54,10 @@ Senzorul de înclinare are o bilă metalică mică. Când îl înclini într-o d
 În Tinkercad poți **roti** senzorul: dai click pe el și folosești butonul de rotire din bara de sus.
 
 > Montezi cei doi senzori **în oglindă**: unul se închide când înclini spre stânga, celălalt spre dreapta.
+
+**Gata când:**  
+- [ ] Am încercat fiecare situație din listă  
+- [ ] Am notat ce nu a mers și am corectat  
 
 ### 3) Minim — un senzor, un LED
 
@@ -70,6 +77,10 @@ void loop() {
 ```
 
 `digitalRead(TILT) == LOW` înseamnă „contact închis” (ca la butonul apăsat).
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 4) Complet — nivela
 
@@ -114,6 +125,10 @@ void loop() {
 | deschis | închis | LED dreapta |
 | deschis | deschis | **drept** (centru + bip) |
 | închis | închis | scuturat sau răsturnat (ambele LED-uri laterale) |
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ### 5) Nivela cu număr de înclinări
 Bonus util: numără de câte ori ai scuturat senzorul (ca un **pedometru** simplu):

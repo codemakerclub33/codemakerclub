@@ -36,6 +36,9 @@ Brațele de roboți, flapsurile avioanelor și direcția mașinilor RC folosesc 
 ### 1) Circuit nou
 `Prenume_Nume_A3_L04`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A3_L04`  
+
 ### 2) Conexiuni
 Servo-ul are 3 fire:
 
@@ -49,6 +52,10 @@ Servo-ul are 3 fire:
 |-------|---------------|
 | **Potențiometru** | laterale la 5V și GND, mijloc la **A0** |
 | **Buton** | pin **2** și **GND** |
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Minim — unghiuri fixe
 
@@ -75,6 +82,10 @@ void loop() {
 - `Servo brat;` creează un obiect care reprezintă servo-ul.  
 - `brat.attach(9)` îi spune pe ce pin e legat semnalul.  
 - `brat.write(unghi)` îl duce la **0–180°**.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 4) Mișcare fluidă
 Dacă schimbi unghiul brusc, servo-ul sare. Dacă îl crești **grad cu grad**, se mișcă lin:
@@ -162,6 +173,10 @@ void loop() {
 - Când butonul e apăsat, rulează funcția `salut()`.  
 - Altfel, potențiometrul controlează brațul.  
 - Poți crea **gesturi** diferite: aplauze, „nu”, „da”.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ---
 

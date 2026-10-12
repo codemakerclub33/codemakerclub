@@ -36,6 +36,9 @@ Alarmele din frigidere, sere și cuptoare funcționează la fel: **trepte de tem
 ### 1) Circuit nou
 `Prenume_Nume_A2_L04`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A2_L04`  
+
 ### 2) Conexiuni
 
 | Piesă | Se conectează |
@@ -45,6 +48,10 @@ Alarmele din frigidere, sere și cuptoare funcționează la fel: **trepte de tem
 | **LED galben** | pin **5** → 220 Ω → anod · catod → GND |
 | **LED roșu** | pin **6** → 220 Ω → anod · catod → GND |
 | **Piezo** | un picior la pin **8**, celălalt la **GND** |
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Minim — trei trepte
 
@@ -85,6 +92,10 @@ void loop() {
 - La început **stingem toate** LED-urile, apoi aprindem **doar unul**. E o tehnică simplă și sigură.  
 - Ordinea `if / else if / else` contează: se oprește la prima condiție adevărată.  
 - Pragurile `30` și `45` sunt ale tale, le poți schimba.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 4) Complet — buzzer intermitent
 La roșu, buzzerul face „bip bip”. Folosim `tone` și `noTone`:
@@ -136,6 +147,10 @@ void loop() {
 
 În Tinkercad, mută glisorul TMP36 peste 45 °C: LED-ul roșu se aprinde și buzzerul sună în „bip-uri”.
 
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
+
 ### 5) Test pe trepte
 
 | Temperatură | Ce vezi |
@@ -143,6 +158,10 @@ void loop() {
 | sub 30 °C | verde |
 | 30–44 °C | galben |
 | 45 °C sau mai mult | roșu + bip |
+
+**Gata când:**  
+- [ ] Am încercat fiecare situație din listă  
+- [ ] Am notat ce nu a mers și am corectat  
 
 ---
 

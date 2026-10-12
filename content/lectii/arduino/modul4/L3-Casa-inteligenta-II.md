@@ -36,6 +36,9 @@ Aici înveți să **extinzi un proiect existent** fără să-l strici: copiezi c
 ### 1) Circuit nou, din copia lecției II
 Deschide `Prenume_Nume_A4_L02`, apoi **Duplică** și redenumește `Prenume_Nume_A4_L03`. Astfel păstrezi partea I intactă.
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A4_L02`  
+
 ### 2) Piese noi
 
 | Piesă | Se conectează |
@@ -222,6 +225,10 @@ void loop() {
 | Dezarmezi | liniște, LED alarmă stins |
 | Buton pagină | LCD arată altă informație pe rândul 1 |
 | Buton ușă | servo la 90°, după 3 s revine |
+
+**Gata când:**  
+- [ ] Am încercat fiecare situație din listă  
+- [ ] Am notat ce nu a mers și am corectat  
 
 ---
 

@@ -36,6 +36,9 @@ Sistemele de irigații inteligente economisesc apă și salvează plante. Ele po
 ### 1) Circuit nou
 `Prenume_Nume_A2_L07`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A2_L07`  
+
 ### 2) Conexiuni
 
 | Piesă | Se conectează |
@@ -49,6 +52,10 @@ Sistemele de irigații inteligente economisesc apă și salvează plante. Ele po
 | **Piezo** | pin **8** și **GND** |
 
 În Tinkercad, dai click pe senzor și muți glisorul de umiditate.
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Calibrare
 Fiecare senzor dă alte valori, așa că începem cu **măsurarea**:
@@ -97,6 +104,10 @@ void loop() {
 ```
 
 Pune la `PRAG_USCAT` o valoare luată din calibrare.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 5) Complet — procente și 3 LED-uri
 
@@ -149,6 +160,10 @@ void loop() {
 | 70 % sau mai mult | albastru | Prea multă apă |
 
 `VAL_UD = 700` e doar un exemplu: pune valoarea măsurată de tine la calibrare.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ### 6) De ce `map` + `constrain`
 - `map` transformă valorile senzorului într-o scală **0–100**.  

@@ -36,12 +36,19 @@ Un senzor nu face nimic singur: trimite **un număr**. Dacă știi să citești 
 ### 1) Circuit nou
 `Prenume_Nume_A2_L01`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A2_L01`  
+
 ### 2) Conexiuni
 
 | Piesă | Se conectează |
 |-------|---------------|
 | **Potențiometru** | laterale la **5V** și **GND**, mijloc la **A0** |
 | **Buton** | un picior la pin **2**, piciorul diagonal la **GND** |
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Primul mesaj
 
@@ -87,6 +94,10 @@ void loop() {
 
 Rotește potențiometrul și apasă butonul: numerele se schimbă. Butonul apare ca **1** când e apăsat (`!` răstoarnă `LOW` în 1).
 
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
+
 ### 5) Volți și mesaje (Complet)
 `analogRead` dă 0–1023, dar tensiunea e între **0 și 5 volți**. Ca să obții volții, înmulțești cu `5.0 / 1023.0`. Folosim `float` — număr **cu zecimale**:
 
@@ -120,6 +131,10 @@ void loop() {
 ```
 
 `Serial.print(volti, 2)` afișează cu **2 zecimale**. `1023 / 3 ≈ 341`, iar `2 × 1023 / 3 ≈ 682` — am împărțit scala în **trei zone egale**.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ### 6) Tipuri de date
 

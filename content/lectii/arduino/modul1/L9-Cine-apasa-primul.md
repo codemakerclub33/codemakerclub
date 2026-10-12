@@ -36,6 +36,9 @@ Jocurile au **reguli**, iar regulile se scriu cu `if`, `else if` și **bucle**. 
 ### 1) Circuit nou
 `Prenume_Nume_A1_L09`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A1_L09`  
+
 ### 2) Conexiuni
 
 | Piesă | Pin | Observații |
@@ -45,6 +48,10 @@ Jocurile au **reguli**, iar regulile se scriu cu `if`, `else if` și **bucle**. 
 | LED **Jucător 1** | **8** | rezistor 220 Ω, catod la GND |
 | LED **Jucător 2** | **9** | idem |
 | LED **START** (verde) | **10** | idem |
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Numere aleatorii
 `random(min, max)` dă un număr întâmplător între `min` (inclus) și `max` (exclus). Ca să nu fie mereu aceeași secvență, pornești generatorul din „zgomotul” unui pin liber:
@@ -101,6 +108,10 @@ void loop() {
 - `while (true)` = repetă **fără sfârșit**, până apare un `break`.  
 - `break` = „ieși din buclă acum”.  
 - Primul buton găsit apăsat câștigă, pentru că bucla se oprește imediat.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 5) Complet — start greșit
 Cine apasă **înainte** de semnal pierde, deci câștigă celălalt. Facem o funcție care așteaptă o perioadă și verifică dacă cineva „fură startul”:
@@ -177,6 +188,10 @@ void loop() {
 ```
 
 `millis()` = câte milisecunde au trecut de la pornirea plăcii. Cu el **măsori timpul fără să oprești programul** (cum ar face `delay`), deci poți urmări butoanele în timpul așteptării.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ---
 

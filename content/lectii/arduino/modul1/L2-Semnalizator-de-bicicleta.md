@@ -37,6 +37,9 @@ Până acum ai comandat **un** pin. Acum comanzi **mai mulți** și înveți să
 1. **Create new Circuit**, nume: `Prenume_Nume_A1_L02`  
 2. Pe breadboard pui **două LED-uri**, la distanță între ele
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A1_L02`  
+
 ### 2) Conexiuni
 
 | LED | Pin Arduino | Rezistor | GND |
@@ -45,6 +48,10 @@ Până acum ai comandat **un** pin. Acum comanzi **mai mulți** și înveți să
 | **Dreapta** | **9** | 220 Ω între pin și anod (+) | catod (−) la GND |
 
 Fiecare LED are **propriul** rezistor.
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Alternare (Minim)
 
@@ -69,6 +76,10 @@ void loop() {
 ```
 
 **Ce e nou:** `const int STANGA = 8;` = o **valoare cu nume** care **nu se schimbă**. Dacă muți firul pe alt pin, schimbi **un singur rând**.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 4) Doar un LED clipește (virare dreapta)
 Când virezi la dreapta, clipește **doar** LED-ul din dreapta. Folosim `for` ca să repetăm de 3 ori:
@@ -138,6 +149,10 @@ void loop() {
 ```
 
 `void clipeste(int pin, int ori)` primește **două informații**: ce pin și de câte ori. Așa folosești aceeași funcție pentru ambele LED-uri.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ---
 

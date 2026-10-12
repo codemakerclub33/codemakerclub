@@ -93,6 +93,10 @@ Răspunde în caiet sau în aplicație. Fiecare întrebare are **un singur răsp
 
 **Răspunsuri** (verifică după ce termini): 1-b · 2-b · 3-a · 4-b · 5-b · 6-a · 7-b · 8-b · 9-b · 10-a
 
+**Gata când:**  
+- [ ] Am încercat fiecare situație din listă  
+- [ ] Am notat ce nu a mers și am corectat  
+
 ### 4) Autoevaluare — ce știu să fac acum
 
 | Pot să… | Încă nu | Cu ajutor | Singur |

@@ -36,6 +36,9 @@ Stațiile meteo adună mai multe date și le **interpretează**. Azi faci acest 
 ### 1) Circuit nou
 `Prenume_Nume_A2_L09`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A2_L09`  
+
 ### 2) Conexiuni
 
 | Piesă | Se conectează |
@@ -43,6 +46,10 @@ Stațiile meteo adună mai multe date și le **interpretează**. Azi faci acest 
 | **TMP36** | 5V · semnal la **A1** · GND |
 | **Fotorezistor** | 5V → fotorezistor → **A0** → rezistor 10 kΩ → GND |
 | **LED** | pin **13** → 220 Ω → anod · catod → GND |
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Minim — două funcții, un raport
 
@@ -74,6 +81,10 @@ void loop() {
 ```
 
 Fiecare senzor are **propria funcție**. `loop()` devine scurt și ușor de citit.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 4) Complet — min / max și mesaje
 
@@ -145,6 +156,10 @@ void loop() {
 - `if (t < tMin) tMin = t;` — fără acolade, merge pentru **o singură** instrucțiune.  
 - `tMin` pornește de la 100 și `tMax` de la −100, ca prima citire să le înlocuiască sigur.  
 - Variabilele **globale** (în afara funcțiilor) își păstrează valoarea între buclele `loop()`.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ### 5) Interpretarea datelor
 

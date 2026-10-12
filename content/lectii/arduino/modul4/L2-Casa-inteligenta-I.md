@@ -36,6 +36,9 @@ Un proiect mare se construiește **în etape**. Azi faci baza (lumini + climat);
 ### 1) Circuit nou
 `Prenume_Nume_A4_L02` — îl vei **dubla** (copia) în lecția următoare.
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A4_L02`  
+
 ### 2) Tabelul de pini al casei (pentru lecțiile 2 și 3)
 
 | Piesă | Pin | Lecția |
@@ -63,6 +66,10 @@ Un proiect mare se construiește **în etape**. Azi faci baza (lumini + climat);
 | **LED lampă** | pin **7** → 220 Ω → anod · catod → GND |
 | **Motor** | un fir la 5V, celălalt la **colectorul** tranzistorului; **emitor** la GND; **bază** la pin **6** prin 1 kΩ; dioda în paralel cu motorul (banda spre 5V) |
 | **Buton** | pin **8** și **GND** |
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 4) Cum împărțim programul
 Fiecare parte e o funcție, iar `loop()` doar le cheamă. Așa lecția II doar **adaugă** funcții:
@@ -205,6 +212,10 @@ void loop() {
 | Rece | TMP36 la 20 °C | motor oprit |
 | Buton, apăsare scurtă | apasă | pagina se schimbă |
 | Buton, apăsare lungă | ține 1 s | ventilator manual ON / OFF |
+
+**Gata când:**  
+- [ ] Am încercat fiecare situație din listă  
+- [ ] Am notat ce nu a mers și am corectat  
 
 ---
 

@@ -36,6 +36,9 @@ Radarele, sonarele și LIDAR-ul mașinilor autonome fac același lucru: **rotesc
 ### 1) Circuit nou
 `Prenume_Nume_A3_L06`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A3_L06`  
+
 ### 2) Conexiuni
 
 | Piesă | Se conectează |
@@ -46,6 +49,10 @@ Radarele, sonarele și LIDAR-ul mașinilor autonome fac același lucru: **rotesc
 | **Piezo** | pin **8** și **GND** |
 
 În Tinkercad, **lipește** HC-SR04 pe brațul servo (trage-l peste el), ca să se rotească împreună.
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Minim — scanare
 
@@ -95,6 +102,10 @@ void loop() {
 - `unghi += 10` face pași de **10 grade**: 0, 10, 20 … 180.  
 - `delay(300)` lasă servo-ul să ajungă înainte de măsurare.  
 - Format „unghi,distanță” (cu virgulă): la fel ca în aplicațiile reale de radar.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 4) Un singur sens, cu o funcție
 Ca să nu duplicăm codul, facem o funcție care scanează între două unghiuri:
@@ -190,6 +201,10 @@ void loop() {
 - **Variabile globale** `celMaiApropiat` și `unghiApropiat` rețin rezultatul scanării.  
 - La început de scanare, `celMaiApropiat = 999` — o valoare uriașă, pe care orice măsurătoare o bate.  
 - Condiția `unghi != panaLa + pas` oprește ciclul **după** ultimul unghi, în ambele sensuri.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ### 6) Cum citești rezultatul
 Dacă în Serial Monitor vezi `70,18`, înseamnă: **la 70°** e ceva la **18 cm**. Pune un obiect în fața radarului și învârte-l pentru a vedea cum se schimbă unghiul.

@@ -36,6 +36,9 @@ Robotul autonom pune cap la cap tot ce știi: senzori, decizii, motoare, funcți
 ### 1) Circuit nou
 `Prenume_Nume_A4_L08`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A4_L08`  
+
 ### 2) Cum merge un robot cu 2 roți
 Fiecare roată are propriul motor. Fără mers înapoi, **virezi** oprind **o singură roată**:
 
@@ -45,6 +48,10 @@ Fiecare roată are propriul motor. Fără mers înapoi, **virezi** oprind **o si
 | oprit | pornit | virează **la stânga** (se învârte în jurul roții stângi) |
 | pornit | oprit | virează **la dreapta** |
 | oprit | oprit | stă |
+
+**Gata când:**  
+- [ ] Am încercat fiecare situație din listă  
+- [ ] Am notat ce nu a mers și am corectat  
 
 ### 3) Conexiuni
 
@@ -58,6 +65,10 @@ Fiecare roată are propriul motor. Fără mers înapoi, **virezi** oprind **o si
 | **LED stare** | pin **13** → 220 Ω → anod · catod → GND |
 
 În Tinkercad, lipește **senzorul pe servo**, dar dacă ai încurcătură, începe cu senzorul fix și adaugă servo-ul la pasul 6.
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 4) Funcții de bază
 
@@ -137,6 +148,10 @@ void loop() {
 ```
 
 `if (timp == 0) return 400;` — dacă nu vine ecou, considerăm calea **liberă** (400 cm), nu un obstacol. Fără această regulă, robotul ar crede că e un obstacol chiar și pe drum liber (ai văzut asta la parcarea din Modulul 2).
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 6) Complet — se uită și alege
 
@@ -257,6 +272,10 @@ void loop() {
 
 În funcții ca `ocoleste()`, `delay` e acceptabil: robotul **stă oricum**.
 
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
+
 ### 7) Teste
 
 | Scenariu | Ce faci | Rezultat |
@@ -265,6 +284,10 @@ void loop() {
 | Obstacol în față | obiect la 10 cm | motoarele se opresc, servo se uită |
 | Mai mult loc în stânga | obiect doar în dreapta | virează spre stânga |
 | Buton | apasă | pornit / oprit, LED arată starea |
+
+**Gata când:**  
+- [ ] Am încercat fiecare situație din listă  
+- [ ] Am notat ce nu a mers și am corectat  
 
 ---
 

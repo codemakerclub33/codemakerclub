@@ -36,6 +36,9 @@ Zarurile electronice sunt jocuri de **probabilitate**. Înveți și o tehnică f
 ### 1) Circuit nou
 `Prenume_Nume_A4_L06`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A4_L06`  
+
 ### 2) Dispunerea LED-urilor
 Pune cele 7 LED-uri ca pe un zar real:
 
@@ -118,6 +121,10 @@ void loop() {
 - `FETE[7][7]` — rândul `0` e „toate stinse”; rândurile 1–6 sunt fețele. Astfel `FETE[zar]` merge **direct**, fără `zar - 1`.  
 - `random(1, 7)` dă un număr de la 1 la 6 (7 nu e inclus).  
 - Aceeași idee ca la 7 segmente, dar cu o grilă de 7 LED-uri.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 5) Complet — animație, sunet și oracol
 
@@ -202,6 +209,10 @@ void loop() {
 - `ruleaza()` — animația: schimbă fața de 12 ori, tot mai **lent** (`pauza += 12`), cu sunet tot mai ascuțit. Așa pare că zarul „se oprește”.  
 - `const char* RASPUNSURI[6]` — un tablou cu **texte**. `RASPUNSURI[zar - 1]` alege răspunsul (index 0–5).  
 - Rezultatul final e ales **separat**, ca animația să nu influențeze zarul.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ### 6) Fețe corecte? (un test)
 La final adaugă în `setup()` un test: pentru fiecare față de la 1 la 6, o arăți 500 ms. Dacă nu seamănă cu un zar, ai o greșeală în tabel sau în fire.

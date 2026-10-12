@@ -36,6 +36,9 @@ Ecranele sunt peste tot: cuptoare, aparate de cafea, mașini. Un LCD îți permi
 ### 1) Circuit nou
 `Prenume_Nume_A3_L01`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A3_L01`  
+
 ### 2) Conexiuni
 LCD-ul are 16 pini. Conectezi **doar** cei din tabel. Pe Tinkercad, cursorul peste pin îi arată numele.
 
@@ -57,6 +60,10 @@ LCD-ul are 16 pini. Conectezi **doar** cei din tabel. Pe Tinkercad, cursorul pes
 D0–D3 rămân **neconectați**: folosim modul cu **4 fire de date** (D4–D7), ca să economisim pini.
 
 > Sfat: fă conexiunile pe rând și bifează-le. Sunt multe și o greșeală e greu de găsit.
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Minim — primul text
 
@@ -83,6 +90,10 @@ void loop() {
 - Textul apare o dată, deci `loop()` rămâne gol.
 
 Pune numele tău în loc de „Ana”. Maximum **16 caractere** pe rând.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 4) Contor în timp real
 
@@ -151,6 +162,10 @@ void loop() {
 - `lcd.write(byte(0))` îl afișează.
 
 Desenează pe o grilă din caiet și schimbă `inima` într-un **zâmbet**, o **stea** sau un **robot**.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ### 6) Comenzi utile
 

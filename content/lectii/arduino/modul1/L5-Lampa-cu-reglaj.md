@@ -36,6 +36,9 @@ Până acum totul era **aprins / stins**. Lumea reală e plină de **valori înt
 ### 1) Circuit nou
 `Prenume_Nume_A1_L05`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A1_L05`  
+
 ### 2) Conexiuni
 
 | Piesă | Se conectează |
@@ -44,6 +47,10 @@ Până acum totul era **aprins / stins**. Lumea reală e plină de **valori înt
 | **Potențiometru** | un picior lateral → **5V** · celălalt picior lateral → **GND** · piciorul **din mijloc** → **A0** |
 
 **Atenție:** nu orice pin merge pentru PWM. Pe Arduino Uno au semnul **`~`**: 3, 5, 6, 9, 10, 11. De aceea folosim pinul 9.
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Citim potențiometrul
 
@@ -131,6 +138,10 @@ void loop() {
 ```
 
 Primul `for` **crește** lumina, al doilea o **scade**. Schimbă `delay(5)` ca să respire mai repede sau mai încet.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ---
 

@@ -36,6 +36,9 @@ Până acum Arduino doar **trimitea** semnale. Acum **ascultă** și **hotără�
 ### 1) Circuit nou
 **Create new Circuit** → `Prenume_Nume_A1_L03`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A1_L03`  
+
 ### 2) Conexiuni
 
 | Piesă | Se conectează |
@@ -44,6 +47,10 @@ Până acum Arduino doar **trimitea** semnale. Acum **ascultă** și **hotără�
 | **Buton** | un picior → pin **2** · piciorul **diagonal** opus → **GND** |
 
 Butonul din Tinkercad are **4 picioare**. Cele din aceeași parte sunt legate între ele; de aceea alegem picioare **în diagonală**, ca să fim siguri că apăsarea face legătura.
+
+**Gata când:**  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Ce înseamnă `INPUT_PULLUP`
 Un pin de intrare **lăsat liber** poate „citi” valori aleatorii. Cu `INPUT_PULLUP`, Arduino îl ține pe **HIGH** (liniște) și butonul îl trage la **GND**:
@@ -76,6 +83,10 @@ void loop() {
 ```
 
 **Cum citești `if`:** „dacă butonul e apăsat (`LOW`), aprinde LED-ul, **altfel** stinge-l”. Atenție: `==` înseamnă **„e egal cu?”**, `=` înseamnă „pune valoarea”.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
 
 ### 5) Varianta scurtă
 Aceeași treabă, mai pe scurt:
@@ -148,6 +159,10 @@ void loop() {
 - `bool` = variabilă cu două valori: `true` (adevărat) sau `false` (fals).  
 - `aprins = !aprins;` o **răstoarnă** la fiecare apăsare.  
 - `delay(250)` oprește Arduino puțin, ca o apăsare lungă să nu fie citită de zeci de ori.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ---
 

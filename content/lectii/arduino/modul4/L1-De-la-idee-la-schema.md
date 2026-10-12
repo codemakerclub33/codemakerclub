@@ -156,6 +156,10 @@ void loop() {
 
 Fiecare piesă are **propria funcție de test**. Adaugi altele (servo, LCD, motor) pe măsură ce le conectezi. Când un test nu merge, știi **exact** unde e problema.
 
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
+
 ---
 
 ## Greșeli frecvente

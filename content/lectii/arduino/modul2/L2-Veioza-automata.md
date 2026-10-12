@@ -36,6 +36,9 @@ Lămpile de stradă, luminile din telefon și farurile automate folosesc acelaș
 ### 1) Circuit nou
 `Prenume_Nume_A2_L02`
 
+**Gata când:**  
+- [ ] Proiectul nou are numele `Prenume_Nume_A2_L02`  
+
 ### 2) Divizorul de tensiune
 Un fotorezistor își schimbă **rezistența** după lumină, dar Arduino citește **tensiune**. De aceea îl punem în serie cu un rezistor fix:
 
@@ -97,6 +100,10 @@ void loop() {
 
 Schimbă `PRAG` după valorile tale din tabel.
 
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Simularea pornește și montajul face ce scrie în „Minim”  
+
 ### 5) Complet — lumină proporțională
 Cu cât e mai întuneric, cu atât LED-ul e mai puternic. Inversăm intervalul în `map`:
 
@@ -123,6 +130,10 @@ void loop() {
 ```
 
 `constrain(x, 0, 255)` taie valorile care ies din interval.
+
+**Gata când:**  
+- [ ] Codul complet se compilează fără erori  
+- [ ] Simularea face tot ce scrie în „Complet”  
 
 ### 6) Histerezis — fără clipiri la limită
 Dacă lumina e **exact** la prag, valoarea sare puțin în sus și în jos și LED-ul **clipește**. Soluția: **două praguri**, unul pentru aprindere, altul pentru stingere.
