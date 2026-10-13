@@ -14,7 +14,7 @@ Al patrulea pas. Prima pagină completă. În fișierul gol scrii semnul exclam�
 
 Al cincilea pas. Titlu, rânduri și comentarii. Titlul mare se face cu h unu. Enter nu face rând nou în H-T-M-L. Pentru rând nou folosești br sau un paragraf nou. Un comentariu se scrie între semnul mai mic, semnul exclamării, două liniuțe și două liniuțe, semnul mai mare. Browserul îl ignoră.
 
-Al șaselea pas. Uită-te la o pagină reală. Cu Control U, pe Mac Command Option U, vezi codul unei pagini. Vei găsi aceleași taguri pe care le-ai scris azi.
+Al șaselea pas. Privește o pagină reală. Cu Control U, pe Mac Command Option U, vezi codul unei pagini. Vei găsi aceleași taguri pe care le-ai scris azi.
 
 Greșeli frecvente. Textul scris în head, nu în body. Fișierul salvat ca index punct html punct t-x-t. Nu ai salvat. Ai pus spații în numele fișierului. Ai deschis doar un fișier, nu folderul. Ai uitat tagul de închidere sau ai scris bara greșit.
 

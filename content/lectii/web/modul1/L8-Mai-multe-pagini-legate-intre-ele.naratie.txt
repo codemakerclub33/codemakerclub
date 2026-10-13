@@ -1,0 +1,25 @@
+Lecția opt din Modulul unu. Mai multe pagini legate între ele.
+
+Până acum ai făcut pagini singure. Un site adevărat are mai multe pagini, legate printr-un meniu. Azi construiești primul tău mini-site, cu trei pagini.
+
+Obiectivul. Minim: un site cu două pagini, index punct html și despre punct html, legate prin linkuri în ambele sensuri. Complet: în plus o a treia pagină, un meniu identic în toate paginile și un link către o secțiune dintr-o altă pagină.
+
+Primul pas. Folderul site-ului. Toate paginile stau în același folder. Prima pagină se numește index punct html. Este ușa de intrare a site-ului. Celelalte au nume scurte, cu litere mici, fără spații și fără diacritice, de exemplu despre punct html și hobby punct html. Între paginile din același folder, linkul conține doar numele fișierului, fără https.
+
+Al doilea pas. Două pagini legate. În index pui un link către despre punct html, iar în despre pui un link înapoi către index punct html. Fiecare pagină are propriul schelet complet.
+
+Al treilea pas. Meniul. Este o linie de linkuri către toate paginile, separate de o bară verticală. Îl copiezi cu Control C și Control V la începutul fiecărei pagini, ca vizitatorul să ajungă oriunde de oriunde. Dacă schimbi numele unui fișier, schimbi linkul în toate paginile.
+
+Al patrulea pas. Subfolderele. Dacă paginile sunt într-un folder numit pagini, din index scrii pagini, bară, despre punct html. Din pagina din subfolder te întorci cu două puncte și bară, adică un folder mai sus, apoi index punct html. Regula: linkul se scrie privind din folderul paginii în care te afli. La fel merge și la imagini.
+
+Al cincilea pas. Când un link nu merge. Dacă vezi patru zero patru sau o pagină goală, browserul nu a găsit fișierul. Verifică numele exact, extensia punct html, folderul, dacă ai salvat și dacă ai folosit bara dreaptă, nu cea inversă.
+
+Al șaselea pas. Link către o secțiune. Pui un id pe un titlu, iar în link scrii numele paginii, semnul diez și id-ul. Browserul deschide pagina și derulează direct acolo.
+
+Înainte să scrii cod, desenează pe foaie harta site-ului: o căsuță pentru fiecare pagină și săgeți pentru linkuri.
+
+Greșeli frecvente. Litere mari sau mici diferite între link și fișier. Ai scris punct htm în loc de punct html. Nume cu spații. Ai uitat meniul într-o pagină. Ai copiat o pagină și ai uitat să schimbi titlul.
+
+Tema. Un site cu patru pagini despre animalul tău preferat, cu același meniu în toate.
+
+Recapitulare. Un site înseamnă mai multe pagini legate prin linkuri. Succes!

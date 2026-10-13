@@ -1,0 +1,21 @@
+Lecția nouă din Modulul unu. Ordine și greșeli: indentare, comentarii și DevTools.
+
+Programatorii buni nu sunt cei care nu greșesc niciodată. Sunt cei care scriu codul ordonat și știu să găsească repede greșelile. Azi înveți exact asta.
+
+Obiectivul. Minim: o pagină cu cod indentat corect, trei comentarii și o greșeală găsită cu DevTools. Complet: în plus o pagină stricată, reparată complet, și cod ordonat cu formatarea automată.
+
+Primul pas. Indentarea. Înseamnă că tot ce este în interiorul unui tag se mută cu două spații spre dreapta. Browserul nu are nevoie de ea, dar oamenii au. Cu Tab muți liniile spre dreapta, cu Shift Tab înapoi. Formatarea automată se face cu Shift Alt F, iar pe Mac cu Shift Option F. Dacă un tag nu are închidere, rândurile de după el apar mutate greșit, deci formatarea te ajută să vezi greșeala.
+
+Al doilea pas. Comentariile. Se scriu între semnul mai mic, semnul exclamării, două liniuțe, textul, două liniuțe și semnul mai mare. Browserul le ignoră. Le folosești ca notițe și ca etichete pentru secțiuni. Un comentariu poate și să ascundă o bucată de cod, fără să o ștergi. Scurtătura este Control și bară dreaptă, iar pe Mac Command și bară dreaptă. Nu scrie date personale în comentarii, pentru că oricine le poate vedea.
+
+Al treilea pas. Cum cauți o greșeală. Salvezi fișierul. Citești ce vezi. Cauți mai sus, pentru că de obicei greșeala este înaintea locului unde apare efectul. Verifici lista: tag neînchis, ghilimele lipsă, nume de fișier greșit, două puncte și punct și virgulă în style, litere mari în loc de litere mici. Schimbi un singur lucru odată și testezi din nou. Poți comenta jumătate din cod ca să afli unde este problema.
+
+Al patrulea pas. DevTools. Se deschid cu F douăsprezece, iar pe Mac cu Command Option I. În fila Elements vezi structura paginii. Poți schimba textul doar pentru test, iar fișierul tău nu se schimbă. La reîncărcare, totul revine. În fila Console vezi erorile. Mesajul patru zero patru, Not Found, înseamnă că browserul nu a găsit un fișier. Compară numele din mesaj cu numele din folder.
+
+Proiectul. Primești o pagină cu șase greșeli. O repari, o formatezi și adaugi comentarii.
+
+Greșeli frecvente. Spații diferite la indentare. Ai uitat să închizi comentariul. Ai schimbat mai multe lucruri deodată. Ai reparat în DevTools, dar nu în VS Code. Ai uitat să salvezi.
+
+Tema. Alege cea mai lungă pagină din acest modul, formatează pagina, adaugă comentarii și verifică în Console că nu mai sunt erori.
+
+Recapitulare. Indentarea arată ce este în interiorul a ce. Comentariile sunt notițe. DevTools te ajută să găsești greșelile. Succes!

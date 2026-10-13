@@ -1,0 +1,25 @@
+Lecția zece din Modulul unu. Proiect: Pagina mea despre mine.
+
+Ai ajuns la finalul primului modul! Azi construiești un mini-site despre tine, cu tot ce ai învățat: schelet, titluri, text, liste, linkuri, imagini, culori și mai multe pagini legate între ele.
+
+Obiectivul. Minim: trei pagini, index, despre și preferate, cu același meniu, titluri, text, o listă, culori și cel puțin o imagine. Complet: în plus o pagină cu galerie, un link către un site ales cu profesorul, un link către o secțiune cu id, comentarii pe secțiuni, cod indentat și o prezentare de un minut.
+
+Siguranța, înainte de toate. Nu scrie în site numele complet, adresa, numele școlii, numărul de telefon sau adresa reală de e-mail. Nu pune poze cu fața ta sau a altor persoane. Folosește un desen, un avatar făcut de tine sau o imagine aleasă cu profesorul. Scrie doar prenumele sau o poreclă.
+
+Primul pas. Planul. Desenează pe foaie harta site-ului, cu trei sau patru pagini. Sub fiecare căsuță scrie ce pui în pagină și numele fișierului. Alege trei sau patru culori care se potrivesc.
+
+Al doilea pas. Folderul, scheletul și meniul. Scrii scheletul și meniul o singură dată, în index punct html, apoi le copiezi în celelalte pagini și schimbi titlul fiecărei pagini.
+
+Al treilea pas. Construiești paginile. În index pui titlul, un text de bun venit și o imagine cu alt. În despre pui titluri, paragrafe și o listă. În preferate pui o listă numerotată pentru un clasament și o listă cu buline. Linkul spre un site extern, ales cu profesorul, se deschide într-o filă nouă. În galerie pui imagini cu alt și legendă.
+
+Al patrulea pas. Aceleași culori pe toate paginile, ca site-ul să arate ca un singur site. Textul trebuie să se citească bine.
+
+Al cincilea pas. Lista de verificare. Fiecare pagină are scheletul complet și titlu diferit. Codul este indentat, cu comentarii. Tagurile sunt închise. Este un singur h unu pe pagină. Toate imaginile au alt. Toate linkurile merg. Nu există date personale.
+
+Al șaselea pas. Testul cu un coleg. Fiecare parcurge paginile celuilalt, caută un link sau o imagine care nu merge și spune un lucru reușit și unul de îmbunătățit.
+
+Al șaptelea pas. Prezentarea de un minut: cum se numește site-ul, câte pagini are, partea preferată, cel mai greu lucru și ce vrei să înveți mai departe. Poți spune și despre o greșeală pe care nu ai reușit să o repari. Nimeni nu are un cod perfect.
+
+Tema. Alege un lucru de îmbunătățit din feedbackul colegului și repară acel lucru.
+
+Recapitulare. Ai terminat primul modul. Felicitări! Urmează Modulul doi, cu tabele, formulare, audio și video.

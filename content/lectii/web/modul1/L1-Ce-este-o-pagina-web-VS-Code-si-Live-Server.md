@@ -39,7 +39,7 @@ Când scrii o adresă, de exemplu `codemakerclub.ro`, se întâmplă asta:
 2. Un alt calculator, numit **server**, o **trimite**.
 3. Browserul o **citește** și o **afișează**.
 
-Fiecare pagină este făcută din **trei limbaje**, care lucrează împreună. Gândește-te la un om:
+Fiecare pagină este făcută din **trei limbaje**, care lucrează împreună. Imaginează un om:
 
 | Limbaj | Ce face | Cum e la un om |
 |--------|---------|----------------|
@@ -50,7 +50,7 @@ Fiecare pagină este făcută din **trei limbaje**, care lucrează împreună. G
 În acest modul învățăm **HTML**, scheletul. Hainele (CSS) vin în Modulul 3, iar mișcarea (JavaScript) în Modulul 5.
 
 **Încearcă tu (2 min)**  
-- [ ] Deschide o pagină web (de exemplu Wikipedia) și arată-i unui coleg unde e un titlu, unde e un text și unde e o poză  
+- [ ] Deschide o pagină web (de exemplu Wikipedia) și arată unui coleg unde e un titlu, unde e un text și unde e o poză  
 
 ---
 
@@ -107,7 +107,7 @@ Fiecare proiect stă într-un **folder** al lui. Așa nu pierzi fișierele.
 Deschide `index.html` (încă gol). VS Code te poate ajuta să scrii scheletul unei pagini:
 1. Scrie în fișier semnul exclamării: `!`  
 2. Apasă tasta **Tab**.  
-3. Apare tot scheletul. Dacă nu apare, copiază-l de mai jos.  
+3. Apare tot scheletul. Dacă nu apare, copiază scheletul de mai jos.  
 
 Pune textul tău în interiorul `<body>` și schimbă titlul, așa:
 
@@ -250,7 +250,7 @@ Orice pagină din lume își arată codul HTML. Încearcă:
 2. Apasă **Ctrl + U** (pe Mac **Cmd + Option + U**).  
 3. Se deschide o filă cu **codul paginii**. Caută `<h1>` și `<p>`: sunt aceleași tag-uri pe care le-ai scris azi!  
 
-Poți deschide și **DevTools** cu **F12** (pe Mac **Cmd + Option + I**). Mai târziu o să-l folosești des.
+Poți deschide și **DevTools** cu **F12** (pe Mac **Cmd + Option + I**). Mai târziu o să folosești DevTools des.
 
 > Poți **doar să te uiți** la codul altor pagini. Nu schimbi nimic pe internet.
 
@@ -289,7 +289,7 @@ Reparația: schimbă al doilea `<h1>` în `</h1>`, salvează și pagina revine l
 
 Pagina ta trebuie să arate ca un mic „cap de pagină” despre tine: un titlu mare cu numele tău și trei propoziții.
 
-> Dacă ai terminat, ia-ți un coleg și arată-i pagina: ce observă primul?
+> Dacă ai terminat, alege un coleg și arată colegului pagina: ce observă primul?
 
 ---
 
@@ -317,7 +317,7 @@ Fără să rulezi, spune ce apare în browser:
 Scrie o poezie de patru versuri într-un singur `<p>`, cu fiecare vers pe rând nou (folosește `<br>`).
 
 ### Exercițiul D — Găsește greșelile
-Găsește **3 greșeli** în codul de mai jos și repară-le:
+Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 
 ```html
 <h1>Pisica mea<h1>
@@ -346,7 +346,7 @@ Pe foaie, în două propoziții: ce face HTML, ce face CSS și ce face JavaScrip
 ---
 
 ## Greșeli frecvente
-1. **Fișierul e salvat ca `index.html.txt`** — pe Windows apare ascuns `.txt`. Activează afișarea extensiilor și redenumește-l.  
+1. **Fișierul e salvat ca `index.html.txt`** — pe Windows apare ascuns `.txt`. Activează afișarea extensiilor și redenumește fișierul.  
 2. **Nu ai salvat** — apasă **Ctrl + S**; fără salvare, browserul rămâne neschimbat.  
 3. **Ai pus spații sau diacritice în numele fișierului** — `pagina mea.html` poate da probleme. Folosește `pagina-mea.html`.  
 4. **Live Server nu pornește** — verifică dacă ai deschis **folderul** (File → Open Folder), nu doar un fișier.  
@@ -375,7 +375,7 @@ Pe foaie, în două propoziții: ce face HTML, ce face CSS și ce face JavaScrip
 - Cum faci un rând nou într-un paragraf?
 
 ## Temă
-Fă o pagină `index.html` despre **animalul tău preferat** (sau despre un loc unde ai fost): un `<h1>`, patru paragrafe și un comentariu. Salveaz-o în folderul `Prenume_Nume_W1_L1` și adu-o la ora următoare.
+Fă o pagină `index.html` despre **animalul tău preferat** (sau despre un loc unde ai fost): un `<h1>`, patru paragrafe și un comentariu. Salvează pagina în folderul `Prenume_Nume_W1_L1` și adu pagina la ora următoare.
 
 ## Ce urmează — Lecția 2
-Cunoaștem **scheletul pe care l-ai folosit azi**, bucată cu bucată: `html`, `head`, `body`, `title` și `meta`. Înveți de ce există fiecare și cum îl scrii și fără ajutorul `!` + Tab.
+Cunoaștem **scheletul folosit azi**, bucată cu bucată: `html`, `head`, `body`, `title` și `meta`. Înveți de ce există fiecare și cum scrii scheletul și fără ajutorul `!` + Tab.

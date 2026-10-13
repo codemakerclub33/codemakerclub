@@ -1,0 +1,25 @@
+Lecția cinci din Modulul unu. Linkuri.
+
+Linkurile sunt podurile internetului: un cuvânt pe care apeși și ajungi pe altă pagină. Azi înveți să le faci singur, spre alte site-uri, spre paginile tale și spre un loc anume din aceeași pagină.
+
+Obiectivul. Minim: o pagină cu trei linkuri, două spre site-uri din internet și unul spre o a doua pagină făcută de tine. Complet: în plus un link care se deschide în filă nouă, un link Sus și un link pentru e-mail.
+
+Un sfat de siguranță. Facem linkuri doar spre site-uri alese împreună cu profesorul sau cu un părinte. Nu scrie niciodată într-o pagină adresa casei, numărul de telefon sau adresa ta reală de e-mail.
+
+Primul pas. Un link se scrie cu tagul a. Are atributul href, care spune unde duce linkul, și textul dintre taguri, pe care îl vede și îl apasă cititorul. Pentru un site din internet, adresa începe cu h-t-t-p-s, două puncte și două bare. Fără ea, browserul crede că vrei un fișier din folderul tău și linkul nu merge.
+
+Al doilea pas. Filă nouă. Cu target egal blank, cu liniuță jos înainte de blank, linkul se deschide într-o filă nouă. Alături scrii mereu și rel egal noopener noreferrer, ca măsură de siguranță.
+
+Al treilea pas. Un link bun. Textul linkului trebuie să spună unde duce. Site-ul NASA este mai bun decât apasă aici.
+
+Al patrulea pas. Linkuri spre paginile tale. Faci un al doilea fișier, de exemplu despre punct html, în același folder. În href scrii doar numele fișierului. Nu uita să faci un link și înapoi. Dacă pui pagina într-un folder numit pagini, scrii pagini bară despre punct html, iar pentru a urca un folder scrii două puncte, două puncte și bară.
+
+Al cincilea pas. Linkuri în aceeași pagină. Dai unui titlu un id, de exemplu hobby. Apoi faci un link cu href egal diez hobby. Când apeși, pagina derulează acolo.
+
+Al șaselea pas. Linkul mailto deschide programul de e-mail. Folosește doar adrese de probă.
+
+Greșeli frecvente. Adresă fără h-t-t-p-s. Lipsesc ghilimelele. Ai uitat închiderea tagului a. Ai greșit numele fișierului. Ai scris blank fără liniuță jos. Ai uitat semnul diez la linkul din pagină.
+
+Tema. Un mic site cu două pagini despre un subiect pe care îl iubești, cu trei linkuri spre site-uri alese cu un adult.
+
+Recapitulare. Link înseamnă a href. Spre alte site-uri scrii adresa completă. Spre paginile tale scrii numele fișierului. Succes!

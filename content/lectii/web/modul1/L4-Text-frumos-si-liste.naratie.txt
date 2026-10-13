@@ -1,0 +1,21 @@
+Lecția patru din Modulul unu. Text frumos și liste.
+
+Azi înveți să faci textul îngroșat, înclinat sau evidențiat și să scrii liste cu buline și cu numere, ca într-o rețetă sau într-un top cinci.
+
+Obiectivul. Minim: o pagină cu text îngroșat și înclinat, o listă cu buline și o listă cu numere. Complet: în plus o listă în altă listă, un text cu exponent sau indice, un cuvânt evidențiat și o listă cu numărătoare inversă.
+
+Primul pas. Text îngroșat și înclinat. Strong face textul îngroșat și spune că este important. Em face textul înclinat, atunci când apeși cu vocea pe un cuvânt sau scrii titlul unui film. Mai există b și i, dar noi folosim strong și em, pentru că au înțeles. Tag-urile pot sta unul în altul. Ultimul deschis se închide primul.
+
+Al doilea pas. Alte feluri de text. Mark pune un fundal galben, ca un textmarker. Small face textul mai mic. Sup ridică textul sus, ca la metri pătrați. Sub îl coboară jos, ca la apă, scrisă cu cifra doi mică.
+
+Al treilea pas. Listele. Ul face o listă cu buline, când ordinea nu contează. Ol face o listă cu numere, când ordinea contează, de exemplu la pașii unei rețete. Fiecare rând al listei este un li, scris mereu în interiorul listei. Cu atributul reversed, lista se numără înapoi. Cu start alegi numărul de la care începe.
+
+Al patrulea pas. Liste în liste. O listă mică se pune în interiorul unui li, între deschiderea și închiderea lui. Indentează atent, ca să vezi ce stă în ce.
+
+Al cincilea pas. Rețeta mea. Faci o pagină cu titlu, o listă cu ingrediente, o listă numerotată cu pașii și cuvinte îngroșate la cantități. La orice rețetă cu foc sau cuțit cere ajutorul unui adult.
+
+Greșeli frecvente. Li scris în afara unei liste. Ul închis cu bară ol. Ai uitat închiderea li. Tag-uri încrucișate. Ai scris singur numerele, deși ol numerotează automat.
+
+Tema. Regulile clasei tale într-o listă numerotată și lucrurile din ghiozdan într-o listă cu buline.
+
+Recapitulare. Strong este îngroșat, em este înclinat. Ul are buline, ol are numere, li este un rând din listă. Succes!

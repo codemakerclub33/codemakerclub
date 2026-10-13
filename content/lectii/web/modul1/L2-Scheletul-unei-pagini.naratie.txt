@@ -1,0 +1,21 @@
+Lecția doi din Modulul unu. Scheletul unei pagini.
+
+Data trecută, VS Code a scris scheletul paginii pentru tine. Azi afli ce înseamnă fiecare bucată din el și îl scrii singur, fără ajutor.
+
+Obiectivul. Minim: scheletul complet, scris de tine, cu un titlu în title și un paragraf în body. Complet: în plus un titlu mare, trei paragrafe despre tine, un comentariu și codul aranjat frumos.
+
+Primul pas. Imaginează pagina ta ca pe o casă. Html este casa întreagă. Head este biroul din spatele casei, cu informații care nu se văd din stradă. Body este casa pe care o vede lumea.
+
+Al doilea pas. Scrii scheletul singur, linie cu linie. Prima linie este doctype html. Ea îi spune browserului că pagina este H-T-M-L modernă și nu are tag de închidere. Apoi html cu atributul lang egal ro, care înseamnă că pagina este în limba română. Html se deschide primul și se închide ultimul.
+
+Al treilea pas. În head pui informații despre pagină. Title este numele paginii și apare în fila browserului. Meta charset U-T-F opt face ca literele ă, â, î, ș și ț să se vadă corect. Linia viewport o scrii exact așa, ca pe o formulă. O vom înțelege când învățăm C-S-S.
+
+Al patrulea pas. În body pui tot ce se vede în pagină: titluri, text, poze. Tag-urile pot sta unul în altul, ca păpușile rusești. Regula: ultimul tag deschis se închide primul. Dacă scrii închiderea paragrafului înaintea închiderii lui strong, tag-urile se încrucișează și browserul se încurcă.
+
+Al cincilea pas. Indentarea. Tragi codul spre dreapta cu două spații pentru fiecare tag aflat în alt tag. Browserul nu o citește, dar tu vezi imediat ce stă în ce. În VS Code poți aranja codul cu Shift Alt F, iar pe Mac cu Shift Option F.
+
+Greșeli frecvente. Ai scris textul în head și nu apare în pagină. Ai uitat închiderea title. Ai pus două body. Html nu este ultimul tag. Tag-uri încrucișate. Nu ai salvat.
+
+Tema. O carte de vizită pentru un prieten sau pentru un animal, cu schelet scris de tine, un titlu mare, trei paragrafe și un title potrivit.
+
+Recapitulare. Head are informații, body are ce se vede. Ultimul tag deschis se închide primul. Succes!

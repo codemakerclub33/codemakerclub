@@ -1,0 +1,23 @@
+Lecția șase din Modulul unu. Imagini și foldere.
+
+Până acum paginile tale au avut doar text. Azi le dai culoare: înveți să pui imagini în pagină, să le ții în foldere ordonate și să le scrii descrieri, ca să le înțeleagă toată lumea.
+
+Obiectivul. Minim: o pagină cu trei imagini din folderul imagini, fiecare cu text alt. Complet: în plus o legendă sub fiecare imagine, o imagine care este și link și imaginile cu lățime aleasă.
+
+Un sfat de siguranță. Folosește poze și desene făcute de tine sau imagini alese împreună cu profesorul. Nu pune poze cu oameni într-o pagină pe care o vede altcineva, dacă părinții nu sunt de acord.
+
+Primul pas. Tagul img. El are două atribute. Src spune unde se află fișierul imaginii. Alt spune ce se vede în imagine, în cuvinte. Img este un tag singur, fără închidere. Nu scrii bară img.
+
+Al doilea pas. De ce scriem alt. Dacă imaginea nu se încarcă, apare textul. Cei care nu pot vedea imaginea ascultă textul citit cu voce tare. Scrie ce vezi: o pisică gri care doarme, nu doar poza.
+
+Al treilea pas. Folderul imagini. Pui pozele într-un folder numit imagini, iar în src scrii folderul, bară, apoi numele fișierului. Dacă pagina este în alt folder, urci cu două puncte, două puncte și bară. Pentru dimensiune folosești width, în pixeli. Înălțimea se potrivește singură.
+
+Al patrulea pas. Fișierele. Pozele se salvează de obicei ca jpg, desenele cu fundal transparent ca png. Pozele foarte mari încetinesc pagina, așa că le micșorăm. Numele lor se scrie cu litere mici, fără spații și fără diacritice. Numele din src trebuie să fie exact ca numele fișierului.
+
+Al cincilea pas. Legendă și link. Figure înfășoară imaginea, iar figcaption este textul care se vede sub ea. O imagine pusă între deschiderea și închiderea tagului a devine link.
+
+Greșeli frecvente. Imaginea nu se vede din cauza unei litere greșite în src. Ai scris bară inversă în loc de bară. Ai scris bară img. Lipsește alt. Ai pus și width, și height și imaginea s-a deformat.
+
+Tema. O galerie de patru imagini despre ceva ce iubești, cu alt, legendă și o poveste scurtă.
+
+Recapitulare. Imaginea se pune cu img, src și alt. Folosim jpg pentru poze și png pentru desene. Succes!
