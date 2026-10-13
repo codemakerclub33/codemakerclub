@@ -161,7 +161,7 @@ export function speechJsonResponse(result: ScratchM1SpeechResult): Response {
   const headers: HeadersInit = {}
   if (result.cached) {
     // Browser can reuse the JSON (and thus the Blob URL) within a session.
-    headers['Cache-Control'] = 'public, max-age=86400, stale-while-revalidate=604800'
+    headers['Cache-Control'] = 'private, max-age=86400'
   } else {
     headers['Cache-Control'] = 'no-store'
   }

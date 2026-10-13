@@ -12,6 +12,9 @@ const PREFIXE_PROTEJATE = [
   '/parinte',
 ]
 
+/** API-uri cu conținut al cursurilor: fără sesiune → 401 (nu redirect). */
+const PREFIXE_API_PROTEJATE = ['/api/tts', '/api/lectii']
+
 export async function proxy(request: NextRequest) {
   let supabaseResponse = NextResponse.next({ request })
 
@@ -49,6 +52,12 @@ export async function proxy(request: NextRequest) {
   const esteProtejat = PREFIXE_PROTEJATE.some(
     p => pathname === p || pathname.startsWith(`${p}/`)
   )
+  const esteApiProtejat = PREFIXE_API_PROTEJATE.some(
+    p => pathname === p || pathname.startsWith(`${p}/`)
+  )
+  if (esteApiProtejat && !user) {
+    return NextResponse.json({ error: 'Neautentificat.' }, { status: 401, headers: { 'Cache-Control': 'no-store' } })
+  }
   if (esteProtejat && !user) {
     const login = request.nextUrl.clone()
     login.pathname = '/login'
