@@ -2,6 +2,7 @@
 
 import { createAdminClient } from '@/lib/supabase/admin'
 import { isSupabaseAdminConfigured } from '@/lib/supabase/env'
+import { esteBlocat, inregistreaza, ipClient } from '@/lib/rateLimit'
 import { trimiteEmail } from '@/lib/emailResend'
 import { TERMENI_VERSIUNE } from '@/lib/termeni'
 
@@ -26,6 +27,13 @@ export async function trimiteCerereContactAction(
 ): Promise<CerereContactRezultat> {
   // Bot: răspundem „ok" fără să salvăm.
   if (input.website?.trim()) return { ok: true }
+
+  const cheieIp = `contact-ip:${await ipClient()}`
+  const ORA = 60 * 60 * 1000
+  if (esteBlocat(cheieIp, 5, ORA)) {
+    return { ok: false, error: `Ai trimis prea multe mesaje. Scrie-ne direct la ${EMAIL_NOTIFICARE}.` }
+  }
+  inregistreaza(cheieIp, ORA)
 
   const nume = input.nume?.trim() ?? ''
   const email = input.email?.trim() ?? ''

@@ -1,5 +1,6 @@
 'use server'
 
+import { esteBlocat, inregistreaza, ipClient, reseteaza } from '@/lib/rateLimit'
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import {
@@ -138,12 +139,22 @@ async function buildSession(userId: string): Promise<AuthActionResult> {
   return { ok: false, error: 'Rol necunoscut.' }
 }
 
+const FEREASTRA_LOGIN = 15 * 60 * 1000
+const EROARE_PREA_MULTE = 'Prea multe încercări. Așteaptă 15 minute și încearcă din nou.'
+
 export async function loginEmailAction(
   email: string,
   parola: string,
 ): Promise<AuthActionResult> {
   if (!isSupabaseConfigured()) {
     return { ok: false, error: 'Supabase nu e configurat.' }
+  }
+
+  const ip = await ipClient()
+  const cheieIp = `login-ip:${ip}`
+  const cheieCont = `login-email:${email.trim().toLowerCase()}`
+  if (esteBlocat(cheieIp, 20, FEREASTRA_LOGIN) || esteBlocat(cheieCont, 8, FEREASTRA_LOGIN)) {
+    return { ok: false, error: EROARE_PREA_MULTE }
   }
 
   const supabase = await createClient()
@@ -153,8 +164,11 @@ export async function loginEmailAction(
   })
 
   if (error || !data.user) {
+    inregistreaza(cheieIp, FEREASTRA_LOGIN)
+    inregistreaza(cheieCont, FEREASTRA_LOGIN)
     return { ok: false, error: 'Email sau parolă greșită.' }
   }
+  reseteaza(cheieCont)
 
   return buildSession(data.user.id)
 }
@@ -172,6 +186,14 @@ export async function loginElevAction(
     return { ok: false, error: 'Username sau PIN greșit.' }
   }
 
+  const ip = await ipClient()
+  const cheieIp = `login-ip:${ip}`
+  const cheieCont = `login-elev:${u}`
+  // Un PIN are doar 10.000 de combinații: limită strânsă pe cont (5 greșeli / 15 min).
+  if (esteBlocat(cheieIp, 20, FEREASTRA_LOGIN) || esteBlocat(cheieCont, 5, FEREASTRA_LOGIN)) {
+    return { ok: false, error: EROARE_PREA_MULTE }
+  }
+
   const supabase = await createClient()
   const { data, error } = await supabase.auth.signInWithPassword({
     email: elevAuthEmail(u),
@@ -179,8 +201,11 @@ export async function loginElevAction(
   })
 
   if (error || !data.user) {
+    inregistreaza(cheieIp, FEREASTRA_LOGIN)
+    inregistreaza(cheieCont, FEREASTRA_LOGIN)
     return { ok: false, error: 'Username sau PIN greșit.' }
   }
+  reseteaza(cheieCont)
 
   return buildSession(data.user.id)
 }
