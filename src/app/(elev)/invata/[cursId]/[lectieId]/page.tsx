@@ -89,13 +89,28 @@ export default function InvataLectiePage() {
 
         <AscultaLectie modulId={modul.id} ordine={lectie.ordine} accentColor={curs.culoare} />
         {markdown ? (
-          <LectieMarkdown markdown={markdown} accentColor={curs.culoare} />
+          <LectieMarkdown
+            markdown={markdown}
+            accentColor={curs.culoare}
+            cont={data?.cursant ? `${data.cursant.prenume} ${data.cursant.nume}` : null}
+          />
         ) : (
           <div className="prose prose-slate max-w-none text-slate-600 space-y-4">
             <p>Conținutul lecției se încarcă… Sau îl vezi cu profesorul în clasă.</p>
             <code className="text-sm bg-slate-100 px-1.5 py-0.5 rounded">lectii/</code>
           </div>
         )}
+        <footer className="mt-8 pt-4 border-t border-slate-100 text-xs text-slate-400 leading-relaxed">
+          © {new Date().getFullYear()} Code Maker Club. Conținut protejat de drepturi de autor, pus la dispoziție
+          pentru uz personal în cadrul cursului.
+          {data?.cursant ? (
+            <>
+              {' '}
+              Cont: <strong className="font-medium">{data.cursant.prenume} {data.cursant.nume}</strong>.
+            </>
+          ) : null}{' '}
+          Copierea, publicarea sau redistribuirea lecțiilor fără acordul Code Maker Club este interzisă.
+        </footer>
       </article>
 
       <nav className="flex items-center justify-between mt-6 gap-4">
