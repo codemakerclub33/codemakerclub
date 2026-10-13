@@ -7,6 +7,7 @@ const PREFIXE_PROTEJATE = [
   '/cursanti',
   '/cursuri',
   '/abonamente',
+  '/autodidact',
   '/invata',
   '/parinte',
 ]

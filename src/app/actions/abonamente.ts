@@ -4,7 +4,7 @@ import { createAdminClient } from '@/lib/supabase/admin'
 import { createClient } from '@/lib/supabase/server'
 import { isSupabaseAdminConfigured, isSupabaseConfigured } from '@/lib/supabase/env'
 import { module as moduleCurriculum } from '@/lib/mockData'
-import { dataSfarsitAcces, esteActiv, pretAutodidact } from '@/lib/autodidact'
+import { adaugaZile, dataSfarsitAcces, esteActiv, pretAutodidact, ZILE_ACCES } from '@/lib/autodidact'
 
 /**
  * Admin: acces la toți cursanții.
@@ -244,6 +244,9 @@ export type AutodidactAcces = {
   pret: number
   data_start: string
   data_sfarsit: string
+  /** Acces gratuit (invitație): fără plată, nu intră în lanțul de reduceri. */
+  gratuit: boolean
+  motiv: string | null
 }
 
 const DATA_ISO = /^\d{4}-\d{2}-\d{2}$/
@@ -254,11 +257,25 @@ async function accesuriAutodidact(
 ): Promise<AutodidactAcces[]> {
   const { data, error } = await admin
     .from('acces_autodidact')
+    .select('id, modul_id, curs_id, pret, data_start, data_sfarsit, gratuit, motiv')
+    .eq('cursant_id', cursantId)
+    .order('data_sfarsit', { ascending: false })
+  if (!error) {
+    return (data ?? []).map(r => ({ ...r, pret: Number(r.pret), gratuit: Boolean(r.gratuit) }))
+  }
+  // Migrarea „acces gratuit” nu e rulată încă: citim doar coloanele vechi.
+  const vechi = await admin
+    .from('acces_autodidact')
     .select('id, modul_id, curs_id, pret, data_start, data_sfarsit')
     .eq('cursant_id', cursantId)
     .order('data_sfarsit', { ascending: false })
-  if (error) return [] // tabel inexistent (migrare nerulată) → fără accesuri
-  return (data ?? []).map(r => ({ ...r, pret: Number(r.pret) }))
+  if (vechi.error) return [] // tabel inexistent (migrare nerulată) → fără accesuri
+  return (vechi.data ?? []).map(r => ({ ...r, pret: Number(r.pret), gratuit: false, motiv: null }))
+}
+
+/** Accesurile gratuite nu intră în lanțul de reduceri (prima cumpărare rămâne la prețul întreg). */
+function accesuriPlatite(accesuri: AutodidactAcces[]): AutodidactAcces[] {
+  return accesuri.filter(a => !a.gratuit)
 }
 
 export type AutodidactCursant = {
@@ -278,7 +295,7 @@ export async function listAutodidactCursantAction(
 
   const accesuri = await accesuriAutodidact(acces.admin, cursantId)
   const azi = new Date().toISOString().slice(0, 10)
-  const { pret, motiv } = pretAutodidact(accesuri, azi)
+  const { pret, motiv } = pretAutodidact(accesuriPlatite(accesuri), azi)
   return { ok: true, data: { accesuri, pretUrmator: { pret, motiv } } }
 }
 
@@ -295,7 +312,7 @@ export async function pretAutodidactAction(
   if (!poateCursant(acces, cursantId)) return { ok: false, error: 'Nu ai acces la acest cursant.' }
 
   const accesuri = await accesuriAutodidact(acces.admin, cursantId)
-  const { pret, motiv } = pretAutodidact(accesuri, dataPlata)
+  const { pret, motiv } = pretAutodidact(accesuriPlatite(accesuri), dataPlata)
   return { ok: true, pret, motiv }
 }
 
@@ -335,7 +352,7 @@ export async function inregistreazaAutodidactAction(
     return { ok: false, error: 'Cursantul are deja acces activ la acest modul.' }
   }
 
-  const calculat = pretAutodidact(accesuri, dataStart).pret
+  const calculat = pretAutodidact(accesuriPlatite(accesuri), dataStart).pret
   const suma = input.suma ?? calculat
   if (!(suma > 0)) return { ok: false, error: 'Sumă invalidă.' }
 
@@ -378,4 +395,160 @@ export async function inregistreazaAutodidactAction(
   }
 
   return { ok: true, pret: suma, data_sfarsit: dataSfarsit }
+}
+
+export type AcordaAccesGratuitInput = {
+  cursant_id: string
+  modul_id: string
+  /** Ex.: „Liceul Unirea (CNU)”. */
+  motiv?: string | null
+}
+
+/**
+ * Deschide TOATE lecțiile modulului pentru 30 de zile, fără plată (invitații).
+ * Nu scrie în `plati`, nu modifică soldul de ședințe și nu intră în lanțul de reduceri.
+ */
+export async function acordaAccesGratuitAction(
+  input: AcordaAccesGratuitInput,
+): Promise<{ ok: true; data_sfarsit: string } | { ok: false; error: string }> {
+  const acces = await verificaAcces()
+  if (!acces.ok) return acces
+  const { admin } = acces
+
+  if (!/^[0-9a-f-]{36}$/i.test(input.cursant_id)) return { ok: false, error: 'Cursant invalid.' }
+  if (!poateCursant(acces, input.cursant_id)) return { ok: false, error: 'Nu ai acces la acest cursant.' }
+
+  const modul = moduleCurriculum.find(m => m.id === input.modul_id)
+  if (!modul) return { ok: false, error: 'Modul necunoscut.' }
+
+  const azi = new Date().toISOString().slice(0, 10)
+  const accesuri = await accesuriAutodidact(admin, input.cursant_id)
+  if (accesuri.some(a => a.modul_id === modul.id && esteActiv(a, azi))) {
+    return { ok: false, error: 'Cursantul are deja acces activ la acest modul.' }
+  }
+
+  const dataSfarsit = dataSfarsitAcces(azi)
+  const { error } = await admin.from('acces_autodidact').insert({
+    cursant_id: input.cursant_id,
+    modul_id: modul.id,
+    curs_id: modul.curs_id,
+    pret: 0,
+    data_start: azi,
+    data_sfarsit: dataSfarsit,
+    plata_id: null,
+    gratuit: true,
+    motiv: input.motiv?.trim().slice(0, 200) || null,
+    creat_de: acces.userId,
+  })
+  if (error) {
+    return {
+      ok: false,
+      error: /gratuit|motiv|pret_check/.test(error.message)
+        ? 'Rulează migrarea SQL „acces_gratuit” în Supabase.'
+        : error.message,
+    }
+  }
+  return { ok: true, data_sfarsit: dataSfarsit }
+}
+
+/**
+ * Prelungește un acces gratuit cu încă 30 de zile (multipli de 30).
+ * Dacă mai e activ, se adaugă 30 de zile după data de sfârșit; dacă a expirat, 30 de zile de azi.
+ */
+export async function prelungesteAccesGratuitAction(
+  accesId: string,
+): Promise<{ ok: true; data_sfarsit: string } | { ok: false; error: string }> {
+  const acces = await verificaAcces()
+  if (!acces.ok) return acces
+  if (!/^[0-9a-f-]{36}$/i.test(accesId)) return { ok: false, error: 'Acces invalid.' }
+
+  const { data: rand, error: citireErr } = await acces.admin
+    .from('acces_autodidact')
+    .select('id, cursant_id, data_sfarsit, gratuit')
+    .eq('id', accesId)
+    .maybeSingle()
+  if (citireErr || !rand) return { ok: false, error: 'Accesul nu a fost găsit.' }
+  if (!poateCursant(acces, rand.cursant_id as string)) return { ok: false, error: 'Nu ai acces la acest cursant.' }
+  if (!rand.gratuit) return { ok: false, error: 'Se pot prelungi doar accesurile gratuite.' }
+
+  const azi = new Date().toISOString().slice(0, 10)
+  const ieri = adaugaZile(azi, -1)
+  const baza = (rand.data_sfarsit as string) > ieri ? (rand.data_sfarsit as string) : ieri
+  const dataSfarsit = adaugaZile(baza, ZILE_ACCES)
+
+  const { error } = await acces.admin
+    .from('acces_autodidact')
+    .update({ data_sfarsit: dataSfarsit })
+    .eq('id', accesId)
+  if (error) return { ok: false, error: error.message }
+  return { ok: true, data_sfarsit: dataSfarsit }
+}
+
+export type AutodidactRand = AutodidactAcces & {
+  cursant_id: string
+  nume: string
+  prenume: string
+  email_parinte: string
+}
+
+/**
+ * Evidența tuturor accesurilor Autodidact.
+ * Admin: toate; profesor: doar ale cursanților asignați lui.
+ */
+export async function listAutodidactToateAction(): Promise<
+  { ok: true; data: AutodidactRand[] } | { ok: false; error: string }
+> {
+  if (!isSupabaseConfigured()) return { ok: false, error: 'Supabase nu e configurat.' }
+  const acces = await verificaAcces()
+  if (!acces.ok) return acces
+  const { admin, cursantIds } = acces
+  if (cursantIds !== null && cursantIds.length === 0) return { ok: true, data: [] }
+
+  const coloane = 'id, cursant_id, modul_id, curs_id, pret, data_start, data_sfarsit'
+  const filtru = <T extends { in: (col: string, vals: string[]) => T }>(q: T): T =>
+    cursantIds === null ? q : q.in('cursant_id', cursantIds)
+
+  let randuri: Array<Record<string, unknown>> = []
+  const nou = await filtru(admin.from('acces_autodidact').select(`${coloane}, gratuit, motiv`)).order(
+    'data_sfarsit',
+    { ascending: true },
+  )
+  if (!nou.error) {
+    randuri = (nou.data ?? []) as Array<Record<string, unknown>>
+  } else {
+    const vechi = await filtru(admin.from('acces_autodidact').select(coloane)).order('data_sfarsit', {
+      ascending: true,
+    })
+    if (vechi.error) return { ok: true, data: [] } // tabel inexistent
+    randuri = (vechi.data ?? []) as Array<Record<string, unknown>>
+  }
+  if (randuri.length === 0) return { ok: true, data: [] }
+
+  const ids = [...new Set(randuri.map(r => r.cursant_id as string))]
+  const { data: cursanti } = await admin
+    .from('cursanti')
+    .select('id, nume, prenume, email_parinte')
+    .in('id', ids)
+  const dupaId = new Map((cursanti ?? []).map(c => [c.id as string, c]))
+
+  return {
+    ok: true,
+    data: randuri.map(r => {
+      const c = dupaId.get(r.cursant_id as string)
+      return {
+        id: r.id as string,
+        cursant_id: r.cursant_id as string,
+        modul_id: r.modul_id as string,
+        curs_id: r.curs_id as string,
+        pret: Number(r.pret),
+        data_start: r.data_start as string,
+        data_sfarsit: r.data_sfarsit as string,
+        gratuit: Boolean(r.gratuit),
+        motiv: (r.motiv as string | null) ?? null,
+        nume: c?.nume ?? '',
+        prenume: c?.prenume ?? '(șters)',
+        email_parinte: c?.email_parinte ?? '',
+      }
+    }),
+  }
 }

@@ -235,6 +235,8 @@ export type Database = {
           plata_id: string | null
           creat_de: string | null
           created_at: string
+          gratuit: boolean
+          motiv: string | null
         }
         Insert: {
           id?: string
@@ -247,6 +249,8 @@ export type Database = {
           plata_id?: string | null
           creat_de?: string | null
           created_at?: string
+          gratuit?: boolean
+          motiv?: string | null
         }
         Update: Partial<Database['public']['Tables']['acces_autodidact']['Insert']>
         Relationships: []
