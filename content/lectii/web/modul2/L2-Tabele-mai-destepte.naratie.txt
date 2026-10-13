@@ -1,0 +1,21 @@
+Lecția doi din Modulul doi. Tabele mai deștepte.
+
+În lecția trecută toate rândurile aveau același număr de celule. Azi înveți să unești celule și să împarți tabelul în partea de sus, mijloc și final. Așa faci orare și tabele de scoruri ca ale profesioniștilor.
+
+Obiectivul. Minim: un tabel cu o celulă unită pe orizontală și una unită pe verticală. Complet: în plus un tabel cu thead, tbody și tfoot, un orar săptămânal complet, antet colorat și rândurile verificate.
+
+Primul pas. Colspan unește celule pe orizontală. De exemplu pauza mare se întinde pe toate coloanele. Celula cu colspan egal doi se numără ca două coloane. Regula de aur: în fiecare rând, suma coloanelor ocupate de celule trebuie să fie egală cu numărul de coloane al tabelului.
+
+Al doilea pas. Rowspan unește celule pe verticală. O oră de două ore se întinde pe două rânduri. În rândul de sub ea nu mai scrii o celulă pentru acea coloană, pentru că locul este deja ocupat. Rândul de sub celula unită are cu o celulă mai puțin.
+
+Al treilea pas. Împărțirea tabelului. Thead conține rândurile de antet, tbody conține rândurile cu date, iar tfoot conține rândul de final, de exemplu totalul. Calculatorul nu face adunarea singur, o faci tu, deci verifică de două ori. Atributul scope spune ce acoperă un antet: scope egal col este antetul unei coloane, iar scope egal row este antetul unui rând. Ajută cititoarele de ecran.
+
+Al patrulea pas. Aspectul. Poți colora antetele cu o regulă pentru th în style, din head. Cifrele se aliniază la dreapta cu text-align right, ca să fie una sub alta.
+
+Cum verifici un tabel. Pentru fiecare rând, numeri câte coloane ocupă celulele lui. Cu rowspan, adaugi și celulele ocupate de rândul de deasupra. Dacă toate rândurile dau același număr, tabelul este corect. Poți folosi și DevTools, fila Elements.
+
+Greșeli frecvente. Ai numărat greșit coloanele. Ai uitat să scoți celula ocupată de rowspan. Ai scris colspan fără ghilimele. Ai lăsat rânduri în afara lui thead, tbody sau tfoot. Ai adunat greșit totalul.
+
+Tema. Un orar de weekend, cu o activitate de două ore și o pauză.
+
+Recapitulare. Colspan unește pe orizontală, rowspan pe verticală. Succes!

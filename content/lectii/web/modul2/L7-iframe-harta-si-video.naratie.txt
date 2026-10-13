@@ -1,0 +1,23 @@
+Lecția șapte din Modulul doi. Iframe: hartă și video.
+
+Cum pui într-o pagină o hartă sau un film care stă pe alt site? Cu un geam prin care se vede o altă pagină. Se numește iframe.
+
+Siguranță. Un iframe este o pagină întreagă din alt loc. Punem în iframe doar site-uri alese împreună cu profesorul. Nu punem hărți cu adresa casei sau a școlii noastre, ci locuri publice, de exemplu un parc, un muzeu sau o grădină zoologică. Nu copiem coduri de încorporare de pe site-uri necunoscute.
+
+Obiectivul. Minim: o pagină cu un iframe către o altă pagină a ta și unul către o hartă. Complet: în plus un film încorporat, ales cu profesorul, loading lazy, titlu pentru fiecare iframe și reguli de siguranță scrise de tine.
+
+Primul pas. Tagul iframe. Src este adresa paginii, width și height sunt lățimea și înălțimea geamului, iar title spune în cuvinte ce se vede în geam, la fel cum alt spune ce se vede într-o imagine. Cititorul de ecran citește title, deci scrie mereu un title care descrie conținutul. Iframe are tag de închidere. Rama o schimbi cu style și border.
+
+Al doilea pas. O hartă. Site-ul OpenStreetMap permite încorporarea hărților. După semnul întrebării din adresă sunt setările: bbox arată ce zonă se vede, cu patru numere, stânga, jos, dreapta și sus. Pentru un loc public alegi locul împreună cu profesorul, apeși butonul de partajare, cauți opțiunea de încorporare H-T-M-L și copiezi codul.
+
+Al treilea pas. Un film. Site-urile cu filme dau un cod de încorporare. În adresă apare un id al filmului, un șir de litere și cifre. Filmul îl alege profesorul. Atributul allowfullscreen permite ecranul mare.
+
+Al patrulea pas. Loading lazy face browserul să încarce iframe-ul doar când ajungi lângă el, deci pagina se deschide mai repede.
+
+Când geamul rămâne gol. Unele site-uri nu permit să fie arătate în alte pagini. Alte cauze sunt o adresă greșită sau lipsa internetului. Nu este vina ta când un site refuză. Alege alt site.
+
+Greșeli frecvente. Nu ai scris title. Ai uitat să închizi iframe. Ai pus harta casei sau a școlii. Ai greșit adresa din src. Ai pus prea multe iframe-uri.
+
+Tema. O pagină despre un loc public preferat, cu hartă, listă și descriere.
+
+Recapitulare. Iframe arată o altă pagină în pagina ta, iar title îl descrie. Succes!

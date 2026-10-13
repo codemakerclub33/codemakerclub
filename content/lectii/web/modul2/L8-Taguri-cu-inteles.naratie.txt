@@ -1,0 +1,23 @@
+Lecția opt din Modulul doi. Taguri cu înțeles.
+
+Într-o casă, fiecare cameră are un nume: bucătărie, dormitor, baie. Într-o pagină web, fiecare parte poate avea și ea un nume: antet, meniu, conținut, final. Azi înveți tagurile cu înțeles care dau nume părților paginii.
+
+Obiectivul. Minim: o pagină cu header, nav, main și footer. Complet: în plus cel puțin două section, un article, un aside, ordinea corectă a titlurilor și explicația diferenței dintre head și header.
+
+De ce contează. Aceste taguri arată la fel ca niște paragrafe obișnuite, dar au un înțeles. Cititoarele de ecran sar direct la meniu sau la conținut, motoarele de căutare înțeleg mai bine pagina, iar tu și colegii tăi vă orientați mai ușor în cod.
+
+Primul pas. Header este partea de sus a paginii, cu titlul h unu și o propoziție. Atenție, head este din schelet și conține informații invizibile, iar header este în body și se vede. Nav învelește meniul principal, de obicei o listă de linkuri. Nu pui nav la orice grup de linkuri.
+
+Al doilea pas. Main conține ce este important în pagină. Într-o pagină există un singur main. Meniul și subsolul rămân în afara lui. Section este o parte a conținutului, cu un titlu h doi, ca un capitol dintr-o carte. Article este ceva care ar avea sens și dacă ai scoate acel element din pagină, de exemplu o postare sau un card cu un animal.
+
+Al treilea pas. Aside este o notă laterală, un sfat sau o curiozitate, care ar putea lipsi fără ca pagina să își piardă sensul. Footer este finalul paginii: cine a făcut pagina și anul. Nu pui în footer adresa, telefonul sau numele complet.
+
+Titlurile. H unu în antet, h doi pentru secțiuni, h trei pentru articole. Nu sări peste niveluri, de la h doi direct la h patru.
+
+Ce vezi în browser. Aproape nimic nou, pentru că diferența este de înțeles, nu de aspect. Aspectul îl vei da cu CSS, în Modulul trei.
+
+Greșeli frecvente. Ai confundat head cu header. Ai pus două main. Ai pus meniul în main. Ai folosit section fără titlu. Ai sărit peste niveluri de titluri.
+
+Tema. Transformă o pagină din Modulul unu într-una cu taguri cu înțeles.
+
+Recapitulare. Header sus, nav meniu, main conținut, footer final. Succes!

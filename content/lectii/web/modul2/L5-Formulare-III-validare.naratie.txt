@@ -1,0 +1,21 @@
+Lecția cinci din Modulul doi. Formulare, partea a treia: validare.
+
+Ce se întâmplă dacă vizitatorul lasă o casetă goală sau scrie un cuvânt într-o casetă pentru numere? Azi înveți să ceri răspunsuri corecte. Se numește validare.
+
+Obiectivul. Minim: un formular cu un câmp obligatoriu, unul cu lungime limitată și unul numeric cu limite. Complet: în plus email, pattern cu explicația în title, o alegere radio obligatorie, o bifă obligatorie și explicația limitelor validării.
+
+Primul pas. Atributul required cere ca un câmp să fie completat. Dacă apeși trimite cu caseta goală, browserul nu trimite formularul și arată un mesaj. Mesajul îl scrie browserul, deci poate arăta diferit. Minlength și maxlength limitează lungimea textului, cel puțin și cel mult. Parola rămâne mereu una de probă.
+
+Al doilea pas. Pentru numere folosești min și max, care dau limitele, și step, care este pasul numerelor permise. Cu type egal email, browserul verifică forma: trebuie să existe semnul arond cu text înainte și după. Verifică doar forma, nu dacă adresa există. Pentru exerciții folosim adrese de probă cu example punct com. Cu type egal url, adresa trebuie să înceapă cu https.
+
+Al treilea pas. Pattern cere o formă anume. De exemplu, un cod format din trei litere mari și două cifre. Se scrie paranteză pătrată A minus Z, acolade trei, paranteză pătrată zero minus nouă, acolade doi. Atributul title explică vizitatorului ce formă se cere, altfel mesajul este neclar.
+
+Al patrulea pas. Alegeri obligatorii. La radio, required pus pe o singură variantă din grup cere ca una să fie bifată. La checkbox, vizitatorul trebuie să bifeze căsuța. La select, prima opțiune trebuie să aibă value gol, ca browserul să nu o accepte drept răspuns.
+
+Limitele validării. Validarea din browser este ca un portar politicos. Oprește greșelile obișnuite, dar nu verifică dacă o adresă există, poate fi ocolită de cineva care schimbă codul și nu înlocuiește verificarea făcută de server. Pe un site adevărat verifică și browserul, și serverul.
+
+Greșeli frecvente. Ai uitat required. Minlength mai mare decât maxlength. Min mai mare decât max. Ai uitat title la pattern. Prima opțiune de la select nu are value gol.
+
+Tema. Un formular de rezervare la un spectacol imaginar, cu verificări.
+
+Recapitulare. Required, lungimi, limite și pattern. Succes!

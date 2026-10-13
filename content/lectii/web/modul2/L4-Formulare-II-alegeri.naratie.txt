@@ -1,0 +1,21 @@
+Lecția patru din Modulul doi. Formulare, partea a doua: alegeri.
+
+Nu toate răspunsurile se scriu cu litere. Uneori alegi una dintre mai multe variante, alteori bifezi mai multe, iar alteori alegi dintr-o listă. Azi înveți toate aceste feluri de alegeri.
+
+Obiectivul. Minim: un formular cu o întrebare radio, una checkbox și una select. Complet: în plus grupuri cu fieldset și legend, un câmp number și unul color, valori implicite și explicația diferenței dintre radio și checkbox.
+
+Primul pas. Radio înseamnă alege una singură. Toate variantele unei întrebări au același name, așa browserul știe că sunt o singură întrebare. Fiecare variantă are propriul id, propria value și o etichetă legată prin for. Value este răspunsul păstrat, iar textul etichetei este ce vede vizitatorul. Atributul checked pune o variantă bifată de la început, la o singură variantă din grup.
+
+Al doilea pas. Checkbox înseamnă poți bifa mai multe. Bifezi oricâte vrei, iar la trimitere fiecare variantă bifată apare în adresă.
+
+Al treilea pas. Select și option. Select este lista, iar fiecare option este o variantă. Prima opțiune, cu value gol, este un îndemn, de exemplu alege o lună. Dacă vrei o variantă aleasă de la început, pui selected. Select este bun când ai multe variante.
+
+Al patrulea pas. Fieldset desenează un chenar în jurul unui grup de întrebări, iar legend este titlul chenarului. Legend se pune imediat după deschiderea lui fieldset. Câmpurile speciale: number pentru numere, cu min și max, color pentru o paletă de culori și range pentru un cursor între min și max. Nu cerem vârsta sau data nașterii vizitatorului. Întrebăm despre lucruri nepersonale, de exemplu despre animalul lui.
+
+Cum alegi. Una din puține variante: radio. Oricâte din câteva: checkbox. Una din multe: select.
+
+Greșeli frecvente. Radio cu name diferit, atunci butoanele devin întrebări separate. Același id la mai multe casete. Lipsește value. Checked pe mai multe radio din același grup. Legend nu este primul în fieldset.
+
+Tema. Un formular numit Alege aventura ta, cu radio, checkbox și select.
+
+Recapitulare. Radio una, checkbox mai multe, select o listă. Succes!

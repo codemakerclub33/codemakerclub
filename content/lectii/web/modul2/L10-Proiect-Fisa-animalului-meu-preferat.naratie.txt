@@ -1,0 +1,23 @@
+Lecția zece din Modulul doi. Proiect: Fișa animalului meu preferat.
+
+Ai învățat tabele, formulare, sunete, filme, hărți și taguri cu înțeles. Azi le pui pe toate într-o singură pagină: fișa animalului tău preferat, ca într-o mică enciclopedie.
+
+Siguranță. Alegi un animal, nu o persoană. Nu scrii date personale. Imaginile, sunetele și filmele sunt din pachetul media, făcute de tine sau alese cu profesorul. Formularul este de exercițiu și nu cere parole sau date reale. Harta, dacă o pui, este a unui loc public.
+
+Obiectivul. Minim: o pagină cu header, nav, main cu trei secțiuni, despre animal, fișă în tabel și sondaj cu formular, și footer. Complet: în plus un sunet sau un film, o hartă a unui loc public, clase pentru aspect, comentarii, cod indentat și o prezentare de un minut.
+
+Primul pas. Planul. Alege animalul și desenează pe foaie harta paginii: header, nav, main cu secțiunile, aside și footer. Scrie sub fiecare parte ce pui în ea și alege trei sau patru culori care se potrivesc.
+
+Al doilea pas. Scheletul. Pui în head un style cu culorile paginii, chenarul cărților, adică clasa carte, și liniile tabelului. În header pui titlul, iar în nav un meniu cu linkuri către secțiuni. Fiecare link duce la un id pus pe o secțiune.
+
+Al treilea pas. Secțiunile. Despre animal: text cu cuvintele tale și o imagine cu alt. Fișa în cifre: un tabel cu caption, thead și tbody. Pune date verificate, iar dacă nu știi o cifră exactă, scrie aproximativ. Cum sună: un audio cu controls și o descriere, fără autoplay. Sondajul: un formular cu fieldset, legend, etichete legate și butoane, cu required și maxlength. Apoi aside cu o curiozitate și footer cu prenumele tău și anul.
+
+Al patrulea pas. Verificarea. Un singur h unu și un singur main. Toate imaginile au alt. Fiecare id este unic. Codul este indentat și are comentarii. În Console nu apare niciun mesaj patru zero patru. Nu există date personale.
+
+Al cincilea pas. Testul cu un coleg. Fiecare parcurge pagina celuilalt cu meniul și spune un lucru reușit și unul de îmbunătățit.
+
+Al șaselea pas. Prezentarea de un minut: despre ce este fișa, ce taguri cu înțeles ai folosit, partea preferată, cel mai greu lucru și ce vrei să înveți mai departe. Poți spune și despre o greșeală. Nimeni nu are un cod perfect.
+
+Tema. Alege un lucru de îmbunătățit din feedback și repară acel lucru.
+
+Recapitulare. Ai terminat al doilea modul. Felicitări! Urmează Modulul trei, CSS.

@@ -1,0 +1,23 @@
+Lecția trei din Modulul doi. Formulare, partea întâi: text, parolă, buton.
+
+Când te înscrii la un joc sau scrii un mesaj pe un site, completezi un formular. Azi înveți să faci primul tău formular: casete de text, o casetă pentru parolă, un loc pentru mesaje lungi și butoane.
+
+Siguranță. Formularele noastre sunt de exercițiu și nu trimit nimic pe internet. Nu scriem parole reale, doar cuvinte de probă. Nu scriem adresa, telefonul sau numele complet. Folosim o poreclă sau un prenume inventat.
+
+Obiectivul. Minim: un formular cu două casete de text, fiecare cu etichetă, și un buton. Complet: în plus o casetă pentru parolă, o casetă de mesaj, butonul de ștergere și o explicație despre ce vezi în adresa paginii după trimitere.
+
+Primul pas. Tagul form învelește formularul. Label este eticheta, adică textul care spune ce se scrie. Input este caseta în care scrie vizitatorul. Cu type egal text, caseta primește text. Input nu are tag de închidere.
+
+Al doilea pas. Legătura dintre etichetă și casetă. Valoarea din for, de la etichetă, trebuie să fie aceeași cu id de la casetă. Atunci, dacă apeși pe etichetă, cursorul intră în casetă. Fiecare id este unic în pagină. Placeholder arată un exemplu gri în casetă, dar nu înlocuiește eticheta.
+
+Al treilea pas. Atributul name. Când formularul se trimite, fiecare casetă trimite perechea nume și valoare. Fără name, valoarea nu apare. Cu type egal password, literele sunt înlocuite cu puncte. Pentru mesaje lungi folosești textarea, cu rows și cols, și ea are tag de închidere.
+
+Al patrulea pas. Butoanele. Submit trimite formularul, reset șterge ce ai scris, iar button este un buton simplu, care nu face nimic singur. Pentru aranjare, învelești fiecare pereche etichetă și casetă într-un paragraf.
+
+Al cincilea pas. Ce se întâmplă la trimitere. Formularul nu are încă un loc unde să trimită datele, așa că pagina se reîncarcă, iar datele apar în adresă, după semnul întrebării. Chiar și parola se vede acolo, de aceea scriem doar parole de probă. Formularele reale trimit parolele ascuns.
+
+Greșeli frecvente. For diferit de id. Același id pe două casete. Ai uitat name. Ai uitat să închizi textarea. Ai scris o parolă reală.
+
+Tema. Un formular pentru un prieten imaginar, cu poreclă, hobby și mesaj.
+
+Recapitulare. Form învelește formularul, label se leagă de input prin for și id. Succes!

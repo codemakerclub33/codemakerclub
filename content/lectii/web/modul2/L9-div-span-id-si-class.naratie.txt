@@ -1,0 +1,23 @@
+Lecția nouă din Modulul doi. Div, span, id și class.
+
+Uneori ai nevoie de o cutie în care să pui câteva lucruri, sau de o etichetă care să marcheze un cuvânt, iar niciun tag cu înțeles nu se potrivește. Pentru asta există div și span. Iar ca să le dai nume, folosești id și class.
+
+Obiectivul. Minim: o pagină cu trei div-uri cu aceeași clasă, stilate printr-o singură regulă. Complet: în plus un span cu clasă, un id folosit și ca țintă de link, o regulă cu punct și una cu diez, două clase pe același element și explicația diferenței dintre id și class.
+
+Primul pas. Div este o cutie fără niciun înțeles. Nu schimbă aspectul, doar grupează lucruri, de exemplu un titlu și un paragraf. Dacă există un tag cu înțeles, îl alegi pe acela. Span marchează o parte din text, în interiorul rândului, în timp ce div stă pe rând nou.
+
+Al doilea pas. Id este numele unic al unui singur element din pagină, ca numărul de pe tricoul unui jucător. Poate fi ținta unui link cu semnul diez. În stil, o regulă pentru un id începe cu diez.
+
+Al treilea pas. Class este un nume pentru un grup de elemente. În stil, regula începe cu punct. Dacă scrii o regulă pentru punct carte, ea se aplică tuturor elementelor cu clasa carte. Scrii regula o singură dată, iar toate cărțile arată la fel. Clasa merge pe orice tag. Un element poate avea mai multe clase, separate prin spațiu.
+
+Al patrulea pas. Id sau class? Dacă este un singur element special, id. Dacă este un grup de elemente care arată la fel, class. Numele se scriu cu litere mici, fără spații și fără diacritice, iar pentru mai multe cuvinte folosești liniuță. Numele spune ce este, nu cum arată.
+
+Reguli noi folosite. Border desenează un chenar, padding lasă spațiu în interiorul chenarului, margin lasă spațiu în afară. Le înveți pe larg în Modulul trei.
+
+DevTools. Apasă pe un element, în Elements, și vezi clasa lui și regulile care i se aplică.
+
+Greșeli frecvente. Ai scris numele clasei fără punct în regulă. Ai folosit diez pentru clasă. Ai folosit același id de două ori. Ai pus style în body.
+
+Tema. Cinci carduri de jucători, cu clasă pentru fiecare, și una cu două clase.
+
+Recapitulare. Div grupează, span marchează, id este unic, class este pentru grup. Succes!

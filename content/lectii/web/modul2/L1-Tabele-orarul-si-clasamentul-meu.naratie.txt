@@ -1,0 +1,21 @@
+Lecția unu din Modulul doi. Tabele: orarul și clasamentul meu.
+
+Orarul școlii, clasamentul unui joc, lista de prețuri: toate sunt tabele. Azi înveți să le faci în H-T-M-L, rând cu rând și coloană cu coloană.
+
+Obiectivul. Minim: un tabel de orar cu trei coloane și patru rânduri, cu linii vizibile. Complet: în plus un al doilea tabel, un clasament, cu titlu și o celulă cu imagine sau link.
+
+Primul pas. Un tabel este făcut din rânduri, iar fiecare rând din celule. Tagul table învelește tot tabelul. Tagul tr, de la table row, este un rând. Tagul td, de la table data, este o celulă obișnuită. Numărul de coloane este dat de numărul de celule dintr-un rând, iar toate rândurile trebuie să aibă același număr de celule. Td stă mereu în tr, iar tr stă în table.
+
+Al doilea pas. Antetul. Prima linie spune ce conține fiecare coloană. Pentru ea folosești th, de la table header. Textul din th apare îngroșat și centrat. Folosești th pentru titlurile coloanelor și td pentru date.
+
+Al treilea pas. Titlul tabelului. Tagul caption se scrie imediat după deschiderea tabelului, înaintea primului rând. Browserul îl afișează deasupra tabelului.
+
+Al patrulea pas. Liniile. Un tabel fără stil nu are linii, pentru că H-T-M-L aranjează datele, iar liniile se adaugă cu stil. Copiezi în head o bucată style, cu regula pentru table, th și td: border de un px solid black, border-collapse collapse și padding de șase px. Nu trebuie să o înțelegi acum, o înveți în Modulul trei. Important: o pui în head, nu în body.
+
+Al cincilea pas. Ce punem în celule. O celulă poate avea text îngroșat, un link sau o imagine. Linkurile le alegi împreună cu profesorul, iar imaginile sunt desene sau poze aprobate, fără persoane.
+
+Greșeli frecvente. Ai pus td direct în table. Rândurile au număr diferit de celule. Ai uitat să închizi un tag. Ai pus caption la sfârșit. Ai pus style în body. Ai folosit un tabel doar ca să aranjezi pagina, deși tabelele sunt pentru date.
+
+Tema. Un tabel cu cărțile tale preferate, cu titlu, autor și nota ta, minimum cinci rânduri.
+
+Recapitulare. Table conține tr, tr conține td și th, caption este titlul. Succes!

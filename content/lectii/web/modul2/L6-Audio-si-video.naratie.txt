@@ -1,0 +1,23 @@
+Lecția șase din Modulul doi. Audio și video.
+
+Până acum paginile tale se citeau și se priveau. Azi vorbesc și se mișcă: pui în ele sunete și filme scurte, cu butoane de pornire și oprire.
+
+Fișierele. Sunetele și filmele pentru exerciții le primești de la profesor, într-un pachet media, sau le faci tu, de exemplu înregistrezi cu telefonul sunetul unui animal. Nu punem sunete sau filme cu alți copii sau adulți fără acordul lor și al părinților. Nu folosim melodii luate din internet, pentru că au drepturi de autor.
+
+Obiectivul. Minim: o pagină cu un audio și un video, ambele cu butoane. Complet: în plus un tabel cu trei animale și câte un sunet pentru fiecare, imaginea de început pentru film, un text de descriere și fișiere alese cu grijă ca mărime.
+
+Primul pas. Tagul audio. Atributul src arată unde este fișierul, iar controls face să apară butoanele: pornire, oprire, volum. Fără controls nu apare nimic. Poți pune mai multe tag-uri source, cu type, iar browserul alege primul pe care îl poate reda. Loop repetă sunetul. Preload cu valoarea none nu încarcă fișierul până nu apeși pornire. Autoplay pornește sunetul singur, dar browserele îl blochează și sunetul deranjează, deci nu îl folosim cu sunet.
+
+Al doilea pas. Tagul video. La fel: src și controls, plus width pentru lățime. Poster este imaginea care se vede înainte să pornească filmul. Un film fără sunet poate avea autoplay, muted și loop, dar folosește asta rar și pune controls ca vizitatorul să poată opri filmul.
+
+Al treilea pas. Formatele. Pentru sunet, mp3 merge peste tot și este mic. Pentru film, mp4. Wav este foarte mare. Folosește filme și sunete scurte, ca pagina să se încarce repede. Fișierele stau în folderul media, cu nume cu litere mici, fără spații și fără diacritice.
+
+Al patrulea pas. Text pentru toți. Nu toți vizitatorii pot auzi sau vedea. Scrie sub sunet și film o descriere scurtă. La filmele cu voce, ajută și un text cu ce se spune.
+
+Dacă nu merge. Verifică numele din src, folderul, controls și volumul. Deschide DevTools, fila Console, iar un mesaj patru zero patru arată că fișierul nu a fost găsit.
+
+Greșeli frecvente. Nume cu spații sau diacritice. Lipsește controls. Ai folosit autoplay cu sunet. Fișiere foarte mari. Ai luat melodii din internet.
+
+Tema. O pagină cu trei instrumente muzicale preferate, cu câte un sunet.
+
+Recapitulare. Audio și video cu controls, poster pentru film, descriere pentru toți. Succes!
