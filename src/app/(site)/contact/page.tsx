@@ -242,6 +242,8 @@ export default function ContactPage() {
         </nav>
         <span className="text-center sm:text-right">
           Code Maker Club Focșani · © {new Date().getFullYear()}
+          <br />
+          <span className="text-white/70 text-xs">Powered by ContavoApp SRL</span>
         </span>
       </footer>
     </div>
