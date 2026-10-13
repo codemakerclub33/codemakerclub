@@ -195,7 +195,12 @@ export type LoginResult =
   | { ok: true; session: Session }
   | { ok: false; error: string }
 
+/** Mod demo (conturi locale cu parole de test) — niciodată în producție. */
+export const DEMO_INTERZIS = process.env.NODE_ENV === 'production'
+const EROARE_DEMO = 'Autentificarea nu este disponibilă momentan. Încearcă mai târziu.'
+
 export function loginEmail(email: string, parola: string): LoginResult {
+  if (DEMO_INTERZIS) return { ok: false, error: EROARE_DEMO }
   const creds = getCreds()
   const cont = creds.email.find(
     e => e.email.toLowerCase() === email.trim().toLowerCase() && e.parola === parola
@@ -225,6 +230,7 @@ export function loginEmail(email: string, parola: string): LoginResult {
 }
 
 export function loginElev(username: string, pin: string): LoginResult {
+  if (DEMO_INTERZIS) return { ok: false, error: EROARE_DEMO }
   const creds = getCreds()
   const cont = creds.elev.find(
     e => e.username.toLowerCase() === username.trim().toLowerCase() && e.pin === pin

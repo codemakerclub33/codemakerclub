@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { getSession, setSession, type Rol, type Session } from '@/lib/auth'
+import { DEMO_INTERZIS, getSession, setSession, type Rol, type Session } from '@/lib/auth'
 import { getAuthSessionAction } from '@/app/actions/auth'
 import { termeniParinteStatusAction, accepteazaTermeniParinteAction } from '@/app/actions/termeniParinte'
 import Link from 'next/link'
@@ -78,7 +78,7 @@ export default function RequireAuth({ roles, children, fallback = '/login' }: Pr
         return
       }
 
-      const s = getSession()
+      const s = DEMO_INTERZIS ? null : getSession()
       setSessionState(s)
       if (!s || !roles.includes(s.rol)) {
         router.replace(fallback)
