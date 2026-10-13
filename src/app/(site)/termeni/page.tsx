@@ -144,7 +144,12 @@ export default function TermeniPage() {
                   <strong>1 modul · 10 lecții · 20 de ore de programare disponibile 30 de zile:</strong> 200 lei{' '}
                   <span className="text-[var(--ckp-muted)]">(echivalent 10 lei / ora de programare)</span>. Toate lecțiile modulului se
                   deschid din prima zi, iar accesul se închide automat după 30 de zile. Accesul este personal, iar lecțiile nu pot fi
-                  copiate sau distribuite (vezi secțiunea 11). Recomandăm alegerea modulului potrivit vârstei cursantului (secțiunea 4). La final, cursantul își prezintă proiectul la club.
+                  copiate sau distribuite (vezi secțiunea 11). Recomandăm alegerea modulului potrivit vârstei cursantului (secțiunea 4). La final, cursantul își poate prezenta proiectul la club (la cerere, în ședințele din program) sau îl poate trimite online
+                  (captură de ecran, link ori video scurt) la{' '}
+                  <a href="mailto:codemakerclub@gmail.com" className="text-[var(--ckp-blue)] hover:underline">
+                    codemakerclub@gmail.com
+                  </a>
+                  , de preferință de pe adresa de email a reprezentantului legal. Fără imagini cu fața sau date personale.
                 </p>
                 <p className="text-xs text-[var(--ckp-ink-soft)]">
                   Modulul următor costă 150 lei, iar al treilea și următoarele 100 lei, dacă sunt achiziționate în cel mult 5 zile de la
