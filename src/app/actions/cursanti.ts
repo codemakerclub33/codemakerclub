@@ -1,5 +1,6 @@
 'use server'
 
+import { incarcaPermisiuni } from '@/lib/permisiuniServer'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { createClient } from '@/lib/supabase/server'
 import {
@@ -79,6 +80,10 @@ export async function adaugaCursantAction(
   const rolStaff = rolRow?.rol
   if (rolStaff !== 'admin' && rolStaff !== 'profesor') {
     return { ok: false, error: 'Acces interzis.' }
+  }
+  if (rolStaff === 'profesor') {
+    const perm = await incarcaPermisiuni(createAdminClient(), authUser.user.id)
+    if (!perm.adauga_elevi) return { ok: false, error: 'Nu ai permisiunea să adaugi elevi.' }
   }
 
   if (input.termeni_acceptati !== true) {

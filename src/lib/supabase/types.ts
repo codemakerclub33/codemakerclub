@@ -25,6 +25,7 @@ export type ProfileRow = {
   created_at: string
   termeni_acceptati_la?: string | null
   termeni_versiune?: string | null
+  permisiuni?: Record<string, boolean> | null
 }
 
 export type InscriereRow = {
@@ -71,6 +72,7 @@ export type Database = {
           created_at?: string
           termeni_acceptati_la?: string | null
           termeni_versiune?: string | null
+          permisiuni?: Record<string, boolean> | null
         }
         Update: Partial<Omit<Database['public']['Tables']['profile']['Insert'], 'id'>>
         Relationships: []

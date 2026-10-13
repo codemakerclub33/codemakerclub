@@ -2,6 +2,8 @@
 
 import { createAdminClient } from '@/lib/supabase/admin'
 import { createClient } from '@/lib/supabase/server'
+import { incarcaPermisiuni } from '@/lib/permisiuniServer'
+import { normalizeazaPermisiuni, PERMISIUNI_TOATE, type PermisiuniProfesor } from '@/lib/permisiuni'
 import { isSupabaseAdminConfigured, isSupabaseConfigured } from '@/lib/supabase/env'
 
 async function requireStaff(): Promise<
@@ -45,6 +47,8 @@ export type StaffMember = {
   email: string
   nume: string
   rol: 'admin' | 'profesor'
+  /** Doar pentru profesori; vizibile doar adminului. */
+  permisiuni?: PermisiuniProfesor
 }
 
 export async function listStaffAction(): Promise<
@@ -54,11 +58,24 @@ export async function listStaffAction(): Promise<
   if (!gate.ok) return { ok: false, error: gate.error, data: [] }
 
   const admin = createAdminClient()
-  const { data: profiles, error } = await admin
+  let { data: profiles, error } = (await admin
     .from('profile')
-    .select('id, rol, nume_afisat')
+    .select('id, rol, nume_afisat, permisiuni')
     .in('rol', ['admin', 'profesor'])
-    .order('created_at', { ascending: true })
+    .order('created_at', { ascending: true })) as unknown as {
+    data: Array<{ id: string; rol: string; nume_afisat: string | null; permisiuni?: unknown }> | null
+    error: { message: string } | null
+  }
+  if (error) {
+    // Migrarea „permisiuni” nu e rulată încă: citim fără coloană.
+    const vechi = await admin
+      .from('profile')
+      .select('id, rol, nume_afisat')
+      .in('rol', ['admin', 'profesor'])
+      .order('created_at', { ascending: true })
+    profiles = vechi.data
+    error = vechi.error
+  }
 
   if (error) return { ok: false, error: error.message, data: [] }
 
@@ -76,6 +93,7 @@ export async function listStaffAction(): Promise<
         email: isAdmin ? '' : (u?.email ?? '—'),
         nume: p.nume_afisat || (isAdmin ? 'Admin' : u?.email) || '—',
         rol: p.rol as 'admin' | 'profesor',
+        ...(gate.rol === 'admin' && !isAdmin ? { permisiuni: normalizeazaPermisiuni(p.permisiuni) } : {}),
       }
     })
 
@@ -130,4 +148,40 @@ export async function adaugaProfesorAction(input: {
   }
 
   return { ok: true, email }
+}
+
+/** Permisiunile utilizatorului curent (pentru ascunderea butoanelor în interfață). */
+export async function permisiuniMeleAction(): Promise<
+  { ok: true; rol: 'admin' | 'profesor'; permisiuni: PermisiuniProfesor } | { ok: false; error: string }
+> {
+  const gate = await requireStaff()
+  if (!gate.ok) return gate
+  if (gate.rol === 'admin') return { ok: true, rol: 'admin', permisiuni: PERMISIUNI_TOATE }
+  const permisiuni = await incarcaPermisiuni(createAdminClient(), gate.userId)
+  return { ok: true, rol: 'profesor', permisiuni }
+}
+
+export async function seteazaPermisiuniAction(
+  profesorId: string,
+  permisiuni: PermisiuniProfesor,
+): Promise<{ ok: true } | { ok: false; error: string }> {
+  const gate = await requireAdmin()
+  if (!gate.ok) return gate
+  if (!/^[0-9a-f-]{36}$/i.test(profesorId)) return { ok: false, error: 'Profesor invalid.' }
+  const admin = createAdminClient()
+  const { data: p } = await admin.from('profile').select('rol').eq('id', profesorId).maybeSingle()
+  if (p?.rol !== 'profesor') return { ok: false, error: 'Profesorul nu a fost găsit.' }
+  const { error } = await admin
+    .from('profile')
+    .update({ permisiuni: normalizeazaPermisiuni(permisiuni) })
+    .eq('id', profesorId)
+  if (error) {
+    return {
+      ok: false,
+      error: /permisiuni/.test(error.message)
+        ? 'Rulează migrarea SQL „permisiuni_profesor” în Supabase.'
+        : error.message,
+    }
+  }
+  return { ok: true }
 }

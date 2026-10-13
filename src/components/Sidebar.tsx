@@ -16,17 +16,20 @@ import {
 import { getSession, logoutClient } from '@/lib/auth'
 import { useEffect, useState } from 'react'
 import BrandLogo from '@/components/BrandLogo'
+import { usePermisiuni } from '@/hooks/usePermisiuni'
 
 const navItems: {
   href: string
   label: string
   icon: typeof LayoutDashboard
   roles?: Array<'admin' | 'profesor'>
+  /** Vizibil doar dacă profesorul are permisiunea (adminul o are mereu). */
+  permisiune?: 'vede_autodidact'
 }[] = [
   { href: '/admin', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/cursanti', label: 'Cursanți', icon: Users },
   { href: '/cursuri', label: 'Lecții', icon: BookOpen },
-  { href: '/autodidact', label: 'Autodidact', icon: Rocket },
+  { href: '/autodidact', label: 'Autodidact', icon: Rocket, permisiune: 'vede_autodidact' },
   { href: '/abonamente', label: 'Abonamente & Plăți', icon: CreditCard },
   { href: '/cereri', label: 'Cereri', icon: Inbox, roles: ['admin'] },
   { href: '/profesori', label: 'Profesori', icon: GraduationCap, roles: ['admin'] },
@@ -48,8 +51,11 @@ export default function Sidebar() {
     }
   }, [])
 
+  const perm = usePermisiuni()
   const visibleNav = navItems.filter(
-    item => !item.roles || (rol != null && item.roles.includes(rol)),
+    item =>
+      (!item.roles || (rol != null && item.roles.includes(rol))) &&
+      (!item.permisiune || perm?.[item.permisiune] === true),
   )
 
   return (

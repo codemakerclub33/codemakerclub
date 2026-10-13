@@ -1,5 +1,6 @@
 'use client'
 
+import { usePermisiuni } from '@/hooks/usePermisiuni'
 import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { Plus, Search, X, UserCheck, UserX, Layers, CalendarPlus } from 'lucide-react'
@@ -21,6 +22,7 @@ export default function CursantiLista() {
   const [inscrisiLuna, setInscrisiLuna] = useState(false)
   const [tick, setTick] = useState(0)
   const [isProfesor, setIsProfesor] = useState(false)
+  const perm = usePermisiuni()
   const [remoteCursanti, setRemoteCursanti] = useState<Cursant[] | null>(null)
   const [remoteInscrieri, setRemoteInscrieri] = useState<
     Array<{
@@ -193,6 +195,7 @@ export default function CursantiLista() {
               : 'Evidența elevilor și înscrierilor'}
           </p>
         </div>
+        {perm?.adauga_elevi && (
         <Link
           href="/cursanti/adauga"
           className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl font-medium shadow-lg shadow-blue-600/30 transition-colors"
@@ -200,6 +203,7 @@ export default function CursantiLista() {
           <Plus size={18} />
           Adaugă cursant
         </Link>
+        )}
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">

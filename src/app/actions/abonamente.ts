@@ -4,6 +4,8 @@ import { createAdminClient } from '@/lib/supabase/admin'
 import { createClient } from '@/lib/supabase/server'
 import { isSupabaseAdminConfigured, isSupabaseConfigured } from '@/lib/supabase/env'
 import { module as moduleCurriculum } from '@/lib/mockData'
+import { incarcaPermisiuni } from '@/lib/permisiuniServer'
+import { PERMISIUNI_TOATE, type PermisiuniProfesor } from '@/lib/permisiuni'
 import { adaugaZile, dataSfarsitAcces, esteActiv, pretAutodidact, ZILE_ACCES } from '@/lib/autodidact'
 
 /**
@@ -19,7 +21,7 @@ async function verificaAcces() {
   const admin = createAdminClient()
   const { data: profile } = await admin.from('profile').select('rol').eq('id', auth.user.id).maybeSingle()
   if (profile?.rol === 'admin') {
-    return { ok: true as const, admin, userId: auth.user.id, rol: 'admin' as const, cursantIds: null as string[] | null }
+    return { ok: true as const, admin, userId: auth.user.id, rol: 'admin' as const, cursantIds: null as string[] | null, permisiuni: PERMISIUNI_TOATE as PermisiuniProfesor }
   }
   if (profile?.rol === 'profesor') {
     const { data: links } = await admin
@@ -27,7 +29,8 @@ async function verificaAcces() {
       .select('cursant_id')
       .eq('profesor_id', auth.user.id)
     const cursantIds = (links ?? []).map(l => l.cursant_id as string)
-    return { ok: true as const, admin, userId: auth.user.id, rol: 'profesor' as const, cursantIds }
+    const permisiuni = await incarcaPermisiuni(admin, auth.user.id)
+    return { ok: true as const, admin, userId: auth.user.id, rol: 'profesor' as const, cursantIds, permisiuni }
   }
   return { ok: false as const, error: 'Acces interzis.' }
 }
@@ -196,6 +199,7 @@ export async function inregistreazaPlataAction(
   const acces = await verificaAcces()
   if (!acces.ok) return acces
   const { admin } = acces
+  if (!acces.permisiuni.plati) return { ok: false, error: 'Nu ai permisiunea să înregistrezi plăți.' }
 
   if (!/^[0-9a-f-]{36}$/i.test(input.cursant_id)) return { ok: false, error: 'Cursant invalid.' }
   if (!poateCursant(acces, input.cursant_id)) {
@@ -292,6 +296,7 @@ export async function listAutodidactCursantAction(
   const acces = await verificaAcces()
   if (!acces.ok) return acces
   if (!poateCursant(acces, cursantId)) return { ok: false, error: 'Nu ai acces la acest cursant.' }
+  if (!acces.permisiuni.vede_autodidact) return { ok: false, error: 'Nu ai permisiunea Autodidact.' }
 
   const accesuri = await accesuriAutodidact(acces.admin, cursantId)
   const azi = new Date().toISOString().slice(0, 10)
@@ -310,6 +315,7 @@ export async function pretAutodidactAction(
   const acces = await verificaAcces()
   if (!acces.ok) return acces
   if (!poateCursant(acces, cursantId)) return { ok: false, error: 'Nu ai acces la acest cursant.' }
+  if (!acces.permisiuni.autodidact_platit) return { ok: false, error: 'Nu ai permisiunea Autodidact plătit.' }
 
   const accesuri = await accesuriAutodidact(acces.admin, cursantId)
   const { pret, motiv } = pretAutodidact(accesuriPlatite(accesuri), dataPlata)
@@ -336,6 +342,7 @@ export async function inregistreazaAutodidactAction(
   const acces = await verificaAcces()
   if (!acces.ok) return acces
   const { admin } = acces
+  if (!acces.permisiuni.autodidact_platit) return { ok: false, error: 'Nu ai permisiunea Autodidact plătit.' }
 
   if (!/^[0-9a-f-]{36}$/i.test(input.cursant_id)) return { ok: false, error: 'Cursant invalid.' }
   if (!poateCursant(acces, input.cursant_id)) return { ok: false, error: 'Nu ai acces la acest cursant.' }
@@ -414,6 +421,7 @@ export async function acordaAccesGratuitAction(
   const acces = await verificaAcces()
   if (!acces.ok) return acces
   const { admin } = acces
+  if (acces.rol !== 'admin') return { ok: false, error: 'Doar adminul poate acorda acces gratuit.' }
 
   if (!/^[0-9a-f-]{36}$/i.test(input.cursant_id)) return { ok: false, error: 'Cursant invalid.' }
   if (!poateCursant(acces, input.cursant_id)) return { ok: false, error: 'Nu ai acces la acest cursant.' }
@@ -460,6 +468,7 @@ export async function prelungesteAccesGratuitAction(
 ): Promise<{ ok: true; data_sfarsit: string } | { ok: false; error: string }> {
   const acces = await verificaAcces()
   if (!acces.ok) return acces
+  if (acces.rol !== 'admin') return { ok: false, error: 'Doar adminul poate prelungi accesul gratuit.' }
   if (!/^[0-9a-f-]{36}$/i.test(accesId)) return { ok: false, error: 'Acces invalid.' }
 
   const { data: rand, error: citireErr } = await acces.admin
@@ -502,6 +511,7 @@ export async function listAutodidactToateAction(): Promise<
   const acces = await verificaAcces()
   if (!acces.ok) return acces
   const { admin, cursantIds } = acces
+  if (!acces.permisiuni.vede_autodidact) return { ok: false, error: 'Nu ai permisiunea Autodidact.' }
   if (cursantIds !== null && cursantIds.length === 0) return { ok: true, data: [] }
 
   const coloane = 'id, cursant_id, modul_id, curs_id, pret, data_start, data_sfarsit'

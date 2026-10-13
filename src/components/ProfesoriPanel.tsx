@@ -6,11 +6,62 @@ import { GraduationCap, Save, Shield } from 'lucide-react'
 import {
   adaugaProfesorAction,
   listStaffAction,
+  seteazaPermisiuniAction,
   type StaffMember,
 } from '@/app/actions/profesori'
+import { ETICHETE_PERMISIUNI, type PermisiuniProfesor } from '@/lib/permisiuni'
 import { getSession } from '@/lib/auth'
 import { genereazaParola } from '@/lib/authHelpers'
 import { isSupabaseConfiguredClient } from '@/lib/supabase/publicFlag'
+
+function PermisiuniEditor({ membru, onSaved }: { membru: StaffMember; onSaved: () => void }) {
+  const [p, setP] = useState<PermisiuniProfesor | null>(membru.permisiuni ?? null)
+  const [saving, setSaving] = useState(false)
+  const [msg, setMsg] = useState<{ ok: boolean; text: string } | null>(null)
+  if (!p) return null
+
+  async function salveaza() {
+    if (!p) return
+    setSaving(true)
+    setMsg(null)
+    const r = await seteazaPermisiuniAction(membru.id, p)
+    setSaving(false)
+    if (r.ok) {
+      setMsg({ ok: true, text: 'Salvat.' })
+      onSaved()
+    } else {
+      setMsg({ ok: false, text: r.error })
+    }
+  }
+
+  return (
+    <div className="mt-3 pt-3 border-t border-slate-200 space-y-2">
+      <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Permisiuni</p>
+      {ETICHETE_PERMISIUNI.map(({ cheie, eticheta }) => (
+        <label key={cheie} className="flex items-center gap-2 text-sm text-slate-700">
+          <input
+            type="checkbox"
+            checked={p[cheie]}
+            onChange={e => setP({ ...p, [cheie]: e.target.checked })}
+          />
+          {eticheta}
+        </label>
+      ))}
+      <p className="text-xs text-slate-400">Acordarea de acces gratuit rămâne doar la admin.</p>
+      <div className="flex items-center gap-3">
+        <button
+          type="button"
+          disabled={saving}
+          onClick={() => void salveaza()}
+          className="text-xs font-semibold bg-blue-600 hover:bg-blue-700 disabled:opacity-50 text-white rounded-lg px-3 py-1.5"
+        >
+          {saving ? 'Salvez…' : 'Salvează permisiunile'}
+        </button>
+        {msg && <span className={`text-xs ${msg.ok ? 'text-emerald-700' : 'text-red-600'}`}>{msg.text}</span>}
+      </div>
+    </div>
+  )
+}
 
 export default function ProfesoriPanel() {
   const [isAdmin, setIsAdmin] = useState(false)
@@ -77,8 +128,9 @@ export default function ProfesoriPanel() {
               {staff.map(m => (
                 <li
                   key={m.id}
-                  className="flex items-center justify-between gap-3 p-4 rounded-xl bg-slate-50"
+                  className="p-4 rounded-xl bg-slate-50"
                 >
+                  <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3 min-w-0">
                     <div
                       className={`w-10 h-10 rounded-xl flex items-center justify-center ${
@@ -111,6 +163,10 @@ export default function ProfesoriPanel() {
                   >
                     {m.rol === 'admin' ? 'Admin' : 'Profesor'}
                   </span>
+                  </div>
+                  {m.rol === 'profesor' && isAdmin && m.permisiuni ? (
+                    <PermisiuniEditor membru={m} onSaved={() => void refresh()} />
+                  ) : null}
                 </li>
               ))}
             </ul>

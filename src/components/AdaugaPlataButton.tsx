@@ -1,5 +1,6 @@
 'use client'
 
+import { usePermisiuni } from '@/hooks/usePermisiuni'
 import { useState } from 'react'
 import { Plus, X } from 'lucide-react'
 import {
@@ -18,6 +19,7 @@ interface Props {
 }
 
 export default function AdaugaPlataButton({ cursantId, numarCursant, onSaved }: Props) {
+  const perm = usePermisiuni()
   const [open, setOpen] = useState(false)
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -115,12 +117,17 @@ export default function AdaugaPlataButton({ cursantId, numarCursant, onSaved }: 
 
   return (
     <>
+      {perm && (perm.plati || perm.autodidact_platit) && (
       <button
-        onClick={() => setOpen(true)}
+        onClick={() => {
+          setOpen(true)
+          if (!perm.plati) alegeMod('autodidact')
+        }}
         className="flex items-center gap-1.5 text-xs bg-emerald-600 text-white px-3 py-1.5 rounded-lg hover:bg-emerald-700 transition-colors font-medium"
       >
         <Plus size={13} /> Înregistrează plată
       </button>
+      )}
 
       {open && (
         <div className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50">
@@ -136,7 +143,9 @@ export default function AdaugaPlataButton({ cursantId, numarCursant, onSaved }: 
               {([
                 ['sedinte', 'Ședințe'],
                 ['autodidact', 'Autodidact'],
-              ] as const).map(([k, label]) => (
+              ] as const)
+                .filter(([k]) => (k === 'sedinte' ? perm?.plati : perm?.autodidact_platit))
+                .map(([k, label]) => (
                 <button
                   key={k}
                   type="button"

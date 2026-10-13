@@ -9,6 +9,7 @@ import {
   type AutodidactCursant,
 } from '@/app/actions/abonamente'
 import { cursuri, module as moduleCurriculum } from '@/lib/mockData'
+import { getSession } from '@/lib/auth'
 import { ZILE_ACCES, esteActiv, zileRamase } from '@/lib/autodidact'
 
 function dataRo(iso: string): string {
@@ -17,6 +18,7 @@ function dataRo(iso: string): string {
 
 /** Staff: accesurile „Autodidact” ale cursantului + prețul propus pentru următorul modul. */
 export default function AutodidactPanel({ cursantId }: { cursantId: string }) {
+  const esteAdmin = getSession()?.rol === 'admin'
   const [data, setData] = useState<AutodidactCursant | null>(null)
   const [modulId, setModulId] = useState('')
   const [motiv, setMotiv] = useState('')
@@ -111,7 +113,7 @@ export default function AutodidactPanel({ cursantId }: { cursantId: string }) {
                   >
                     {activ ? `activ · ${zileRamase(a, azi)} zile` : 'expirat'}
                   </span>
-                  {a.gratuit && (
+                  {a.gratuit && esteAdmin && (
                     <button
                       type="button"
                       disabled={busy}
@@ -133,6 +135,7 @@ export default function AutodidactPanel({ cursantId }: { cursantId: string }) {
         {data.pretUrmator.motiv}. Accesurile gratuite nu intră în lanțul de reduceri.
       </p>
 
+      {esteAdmin && (
       <div className="mt-4 pt-4 border-t border-slate-100">
         <p className="text-sm font-medium text-slate-700 mb-2">Acces gratuit ({ZILE_ACCES} de zile)</p>
         <div className="flex flex-col sm:flex-row gap-2">
@@ -177,6 +180,7 @@ export default function AutodidactPanel({ cursantId }: { cursantId: string }) {
           <p className={`text-xs mt-2 ${mesaj.ok ? 'text-emerald-700' : 'text-amber-700'}`}>{mesaj.text}</p>
         )}
       </div>
+      )}
     </div>
   )
 }
