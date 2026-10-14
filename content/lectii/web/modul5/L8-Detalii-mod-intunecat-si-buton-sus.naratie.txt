@@ -1,0 +1,25 @@
+Lecția a opta din Modulul cinci. Detalii care fac diferența: mod întunecat și buton sus.
+
+Site-urile bune au mici detalii care le fac plăcute: un mod întunecat, care se ține minte data viitoare, un buton înapoi sus care apare doar când derulezi, anul din subsol care se schimbă singur și o derulare lină care se oprește pentru cine nu vrea mișcare.
+
+Obiectivul. Minim: un buton pentru modul întunecat, care schimbă culorile paginii. Complet: în plus variabile pentru tema întunecată, aria pressed pe buton, salvarea alegerii cu localStorage într-un try catch, butonul sus, derulare lină cu respectarea mișcării reduse și anul automat.
+
+Siguranța. LocalStorage păstrează date doar în browserul de pe acel calculator. Salvăm doar tema, luminos sau întunecat, nimic personal. Unele browsere pot bloca salvarea, de aceea folosim try catch. Derularea lină nu se aplică celui care a cerut mișcare redusă. Butoanele sunt elemente button și se pot folosi cu tastatura.
+
+Primul pas: tema întunecată în HTML și CSS. Adaugi în antet un buton cu aria pressed false. În CSS scrii o a doua paletă pentru body cu clasa intunecat, care înlocuiește variabilele din root. Pentru că toate culorile sunt scrise cu var, schimbăm tema cu o singură clasă.
+
+Al doilea pas: JavaScript. O funcție setează tema: classList toggle cu al doilea argument pune sau scoate clasa, iar operatorul cu semnul întrebării și două puncte alege textul butonului. LocalStorage get item citește tema salvată, iar set item o salvează. Totul este într-un try catch. La încărcare aplici tema salvată, iar la clic inversezi tema și o salvezi.
+
+Al treilea pas: butonul sus. Este un button ascuns, cu position fixed. Nu uităm regula pentru hidden, pentru că display ar anula atributul. La evenimentul scroll, dacă window scroll Y este sub trei sute, butonul se ascunde. La clic, scroll to duce pagina sus. Dacă omul a cerut mișcare redusă, folosim comportamentul auto, nu smooth.
+
+Al patrulea pas: anul din subsol. New Date punct get full year dă anul de acum. Îl punem într-un span.
+
+Al cincilea pas: mișcarea redusă. Scroll behavior smooth pe html face derulare lină. Într-un media query pentru prefers reduced motion oprim derularea lină și tranzițiile.
+
+Greșeli frecvente: punct în toggle, set item fără valoare, scroll Y comparat invers, culori scrise direct și lipsa regulii pentru hidden.
+
+Întrebări de verificare. Ce face body punct intunecat? Ce face try catch? Ce arată window scroll Y? Cum aflăm dacă omul vrea mișcare redusă?
+
+Temă. Cere unui membru al familiei să încerce site-ul seara, în modul întunecat, și repară ce nu se vede bine.
+
+Urmează Lecția nouă: versiunea pe telefon și teste.

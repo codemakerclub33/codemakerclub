@@ -1,0 +1,25 @@
+Lecția a doua din Modulul cinci. Scheletul site-ului.
+
+Azi construim scheletul: cele trei pagini HTML, cu același antet, același subsol și un meniu care duce de la o pagină la alta. Adăugăm și fișierul stil punct css, cu paleta ta în variabile. Pagina încă nu arată frumos, dar are oasele la locul lor.
+
+Obiectivul. Minim: două pagini legate prin meniu, fiecare cu header, main și footer. Complet: în plus a treia pagină, stil punct css cu variabile, un titlu diferit în fiecare pagină, atributul aria current la linkul paginii curente și o verificare a tuturor linkurilor.
+
+Siguranța. Folosești textele tale, fără date personale. Linkurile merg doar către paginile tale. Salvezi des și, la final, faci o copie a folderului.
+
+Primul pas: scheletul paginii index. Are limba română, meta viewport, o descriere scurtă, titlul din filă și legătura către stil punct css. În corp are header, main și footer. O pagină are un singur main. Clasa container ține conținutul într-o coloană centrată.
+
+Al doilea pas: meniul. Un meniu este o listă de linkuri într-un element nav. Atributul aria label îi dă un nume. Atributul aria current cu valoarea page se pune doar pe linkul paginii în care ești. Căile sunt relative: galerie punct html înseamnă fișierul din același folder.
+
+Al treilea pas: celelalte pagini. Copiezi tot index în galerie și în contact și schimbi doar ce este diferit: titlul din filă, descrierea, linkul care are aria current și titlul mare. Atenție: dacă schimbi meniul, îl schimbi în toate cele trei fișiere.
+
+Al patrulea pas: stil punct css. Începe cu variabilele din root: culoarea principală, accentul, fundalul, textul, culoarea cardurilor și culoarea liniilor. Apoi box sizing border box, regulile pentru corp și imagini, clasa container cu lățime maximă de o mie de pixeli și reguli simple pentru antet și subsol.
+
+Al cincilea pas: verificarea. Cele trei fișiere se deschid. Fiecare pagină are titlu diferit. Meniul este la fel pe toate paginile. Din orice pagină ajungi în orice altă pagină.
+
+Greșeli frecvente: litere mari în numele fișierelor, meniu diferit pe pagini, aria current pe toate linkurile, uitat linkul către stil punct css și două elemente main într-o pagină.
+
+Întrebări de verificare. Ce face meta viewport? Câte elemente main are o pagină? Unde se pune aria current? Unde sunt scrise culorile paginii?
+
+Temă. Verifică site-ul pe un alt calculator sau pe telefon, dacă ai voie, și salvează o copie.
+
+Urmează Lecția trei: antetul și meniul, cu un buton pentru telefon.

@@ -1,0 +1,23 @@
+Lecția a patra din Modulul cinci. Secțiunea de intrare, numită hero.
+
+Prima parte pe care o vede vizitatorul, fără să derulezi, se numește hero, adică secțiunea de intrare. Are un titlu mare, o frază care spune despre ce este site-ul și un buton care duce undeva. Azi o construim cu un fundal degradat, text care se mărește odată cu ecranul și un buton frumos.
+
+Obiectivul. Minim: o secțiune cu fundal colorat, titlu, o frază și un link-buton către galerie. Complet: în plus fundal degradat, titlu cu mărime adaptivă, text centrat și îngust, buton cu efect la hover și la focus și text care se citește bine și pe telefon.
+
+Siguranța. Textul de pe fundal colorat trebuie să se citească ușor: litere albe pe fundal închis. Butonul care duce în altă pagină este un link, nu un element button. Nu folosim mișcări rapide și nici licăriri.
+
+Primul pas: HTML. În main, înaintea secțiunii existente, adaugi o secțiune cu clasa hero. În ea, în container, pui titlul h1, un paragraf și un link cu clasa buton cta. Titlul din secțiunea de mai jos devine h2, pentru că o pagină are un singur h1.
+
+Al doilea pas: fundalul și textul. Folosești linear gradient cu un unghi și două culori, text centrat și padding mare sus și jos. Titlul are font size cu clamp: primul număr este minimul, al doilea valoarea preferată, în funcție de ecran, al treilea maximul. Paragraful are lățime maximă de șase sute de pixeli și este centrat.
+
+Al treilea pas: butonul. Linkul are display inline block, padding, culoare de accent, colțuri rotunjite și fără subliniere. La hover și la focus se ridică cu trei pixeli, cu translate Y. Se vede atât cu mouse-ul, cât și cu tasta Tab. CTA vine de la call to action, adică te îndemn să faci ceva.
+
+Al patrulea pas: verificarea pe trei lățimi, o mie două sute, șapte sute șaizeci și opt și trei sute șaptezeci și cinci de pixeli. Titlul nu iese din ecran, butonul este destul de mare, nu apare derulare pe orizontală și textul se vede bine.
+
+Greșeli frecvente: două h1 pe pagină, clamp cu valorile în ordine greșită, lipsa virgulei din gradient, text deschis pe fundal deschis și buton făcut din element button când de fapt duce în altă pagină.
+
+Întrebări de verificare. Care este ordinea valorilor în clamp? Câte h1 are o pagină? Când folosim link și când buton? Ce înseamnă CTA?
+
+Temă. Arată pagina unui adult și întreabă ce crede că poate face pe site doar din prima privire. Dacă nu a înțeles, schimbă titlul sau butonul.
+
+Urmează Lecția cinci: cardurile.

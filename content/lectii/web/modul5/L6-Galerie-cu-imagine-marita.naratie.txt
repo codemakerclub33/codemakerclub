@@ -1,0 +1,23 @@
+Lecția a șasea din Modulul cinci. Galerie cu imagine mărită.
+
+Azi construim pagina galerie: șase poze mici într-o grilă, iar când apeși una, ea apare mare, peste pagină, pe un fundal întunecat. Se închide cu un buton, cu clic pe fundal sau cu tasta Escape. Folosim HTML, CSS cu position fixed și object fit, și JavaScript cu evenimente, atributul hidden și focus.
+
+Obiectivul. Minim: șase imagini mici în grilă, cu text alternativ, iar la clic apare imaginea mărită, care se închide cu un buton. Complet: în plus imaginile sunt în butoane, fereastra se închide și cu Escape și cu clic pe fundal, focusul se mută pe butonul de închidere și revine pe poza apăsată, loading lazy și object fit cover.
+
+Siguranța. Imaginile sunt din pachetul media sau făcute de tine, fără persoane. Fiecare are text alternativ care spune ce se vede. Fișierele sunt mici. Fiecare poză este într-un button, ca să poată fi apăsată și cu tastatura.
+
+Primul pas: HTML. Fiecare imagine este în interiorul unui button cu clasa mini. Imaginea are src, alt și loading lazy, adică se încarcă doar când ajungi aproape de ea.
+
+Al doilea pas: CSS-ul galeriei. Grilă cu repeat auto fit și minmax de două sute de pixeli. Imaginile au înălțime de o sută șaizeci de pixeli și object fit cover, care taie puțin imaginea fără să o deformeze. Overflow hidden taie ce iese când imaginea se mărește la hover.
+
+Al treilea pas: fereastra pentru imaginea mărită. Un div cu clasa lightbox, cu atributul hidden la început, un buton de închidere cu aria label și o imagine goală. În CSS are position fixed și inset zero, deci acoperă tot ecranul, și z index mai mare decât antetul. Atenție: display flex anulează hidden, de aceea scriem o regulă separată, lightbox cu hidden, display none.
+
+Al patrulea pas: JavaScript. Funcția deschide imaginea copiază src și alt din poza apăsată, arată fereastra și mută focusul pe butonul de închidere. Funcția închide imaginea ascunde fereastra și întoarce focusul pe poza apăsată înainte. Miniaturile primesc evenimentul click într-o buclă for of. Clicul pe fundal închide doar dacă ținta este chiar fundalul. Tasta Escape închide fereastra, dacă este deschisă. Tot codul este într-un if, pentru că scriptul rulează și pe celelalte pagini.
+
+Greșeli frecvente: querySelector în loc de querySelectorAll, funcția apelată imediat în loc să fie pusă într-o funcție, lipsa regulii pentru hidden, max height fără unitate și imagini fără text alternativ bun.
+
+Întrebări de verificare. Ce face object fit cover? De ce este nevoie de regula pentru hidden? Ce face compararea ținta egal lightbox? De ce întoarcem focusul?
+
+Temă. Cere unui coleg să folosească galeria doar cu tastatura și repară ce nu a mers.
+
+Urmează Lecția șapte: pagina de contact cu verificare.

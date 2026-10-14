@@ -1,0 +1,25 @@
+Lecția a cincea din Modulul cinci. Carduri.
+
+Un card este o căsuță cu o poză sau o pictogramă, un titlu și puțin text. Azi faci șase carduri și le așezi într-o grilă care se adaptează singură: trei pe rând pe calculator, două pe tabletă, unul pe telefon, fără nicio regulă media query.
+
+Obiectivul. Minim: șase carduri cu titlu și text, cu chenar și colțuri rotunjite, într-o grilă. Complet: în plus grilă cu repeat auto fit și minmax, umbră și efect la hover cu tranziție, elementul article, pictograme ascunse pentru cititoarele de ecran și texte scrise corect.
+
+Siguranța. Textele din carduri sunt scrise de tine sau adaptate cu profesorul. Informațiile trebuie să fie adevărate, așa că verifici într-o carte sau cu profesorul. Fără date personale și fără imagini cu oameni. Efectul de hover este mic, de cinci pixeli.
+
+Primul pas: HTML-ul unui card. Un element article, cu un div pentru pictogramă, un titlu h3 și un paragraf. Elementul article este o bucată de conținut cu sens propriu. Pictograma are aria hidden true, ca cititorul de ecran să citească doar titlul și textul. Titlul este h3, pentru că secțiunea are h2, iar pagina are h1 în hero.
+
+Al doilea pas: cele șase carduri. Le pui toate într-un div cu clasa carduri, care va fi grila. Fiecare card are pictogramă, un titlu scurt și una sau două propoziții adevărate.
+
+Al treilea pas: grila adaptivă. Display grid, grid template columns cu repeat auto fit și minmax de două sute patruzeci de pixeli la o fracțiune, și gap de douăzeci de pixeli. Fiecare coloană are cel puțin două sute patruzeci de pixeli și, dacă mai este loc, se întinde. Auto fit pune câte coloane încap pe rând.
+
+Al patrulea pas: aspectul cardului. Fundal din variabila card, chenar, colțuri rotunjite, padding și o umbră mică. La hover cardul se ridică cu cinci pixeli, iar umbra crește. Tranziția enumeră două proprietăți separate prin virgulă. Pictograma este centrată cu Flexbox.
+
+Al cincilea pas: testele. Sunt șase carduri, fiecare cu h3. Pe calculator sunt cel puțin trei pe rând, pe telefon unul. Pictogramele au aria hidden. Nu apare derulare pe orizontală.
+
+Greșeli frecvente: display flex în loc de display grid, minmax cu ordinea greșită, gap fără unitate, titluri h1 în carduri și texte care nu sunt adevărate.
+
+Întrebări de verificare. Ce face auto fit? Ce înseamnă minmax de două sute patruzeci la o fracțiune? Când folosim article? Ce face aria hidden true?
+
+Temă. Cere unui prieten să citească cardurile și să spună un lucru nou aflat din ele.
+
+Urmează Lecția șase: galeria cu imagine mărită.

@@ -1,0 +1,25 @@
+Lecția a treia din Modulul cinci. Antet și meniu, inclusiv pe telefon.
+
+Azi antetul devine antet de site adevărat: rămâne sus când derulezi, are meniul pe orizontală, arată pe ce pagină ești și, pe telefon, meniul se strânge într-un buton care îl deschide și îl închide. Folosim Flexbox, media query și JavaScript.
+
+Obiectivul. Minim: antet cu logo în stânga și meniu pe orizontală în dreapta, cu efect la hover, pe toate cele trei pagini. Complet: în plus antet care rămâne sus, linkul paginii curente marcat, buton Meniu pentru telefon cu JavaScript, aria expanded actualizat și test cu tasta Tab.
+
+Siguranța. Butonul de meniu este un element button, nu un div, ca să poată fi apăsat și cu tastatura. Zona de apăsat are cel puțin patruzeci și patru de pixeli înălțime. Efectele sunt blânde.
+
+Primul pas: HTML. În toate paginile, antetul are un rând cu logo, un buton cu id butonMeniu și meniul nav cu id meniu. Butonul are aria expanded false și aria controls meniu. La sfârșitul corpului legi fișierul script punct js.
+
+Al doilea pas: CSS pentru calculator. Antetul are position sticky cu top zero, ca să rămână sus. Rândul din antet este Flexbox, cu space between. Lista de linkuri este Flexbox, fără buline. Linkul paginii curente se alege cu a, paranteze pătrate, aria current egal page, și primește un chenar alb. Butonul de meniu are display none, deci pe calculator nu se vede.
+
+Al treilea pas: CSS pentru telefon. Într-un media query pentru ecrane de maximum șapte sute de pixeli, butonul se arată, meniul este ascuns, iar clasa meniu punct deschis, fără spațiu între ele, îl arată. Lista devine coloană. Regula media se scrie la sfârșitul fișierului.
+
+Al patrulea pas: JavaScript. Găsești butonul și meniul după id. Verifici că nu sunt null, pentru că același script rulează pe toate paginile. La clic, classList toggle deschis pune sau scoate clasa și îți spune ce a făcut, true sau false. Cu valoarea aceea actualizezi aria expanded.
+
+Al cincilea pas: testele. Pe calculator meniul este pe un rând. Pe telefon vezi butonul, nu lista. Butonul deschide și închide meniul. Poți folosi meniul doar cu tastatura. În consolă nu sunt erori.
+
+Greșeli frecvente: spațiu în meniu punct deschis, regula media pusă la început, punct în toggle, lipsa diezului în querySelector și scriptul uitat sau pus în head.
+
+Întrebări de verificare. Ce face position sticky? Ce înseamnă meniu punct deschis? Ce valoare întoarce toggle? De ce folosim button?
+
+Temă. Cere unui coleg să folosească meniul și notează un lucru greu de folosit. Repară acea problemă.
+
+Urmează Lecția patru: secțiunea de intrare, numită hero.

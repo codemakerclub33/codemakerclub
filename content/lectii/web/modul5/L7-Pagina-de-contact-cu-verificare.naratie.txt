@@ -1,0 +1,25 @@
+Lecția a șaptea din Modulul cinci. Pagina de contact cu verificare.
+
+Azi facem pagina de contact: un formular în care vizitatorul scrie o poreclă, alege un animal și lasă un mesaj. JavaScript verifică ce a scris și arată mesaje clare dacă ceva nu este bine. Formularul oprește și datele personale, adică adresa de email și numărul de telefon. Important: formularul nu trimite nimic nicăieri, este un exercițiu.
+
+Obiectivul. Minim: un formular cu trei câmpuri, cu label pentru fiecare, și o verificare care arată un mesaj dacă porecla sau mesajul sunt prea scurte. Complet: în plus select verificat, erori sub fiecare câmp, clasa invalid, numărător de caractere, oprirea emailului și a telefonului, preventDefault, reset și mesaj de mulțumire cu textContent.
+
+Siguranța. Formularul nu are action și JavaScript oprește trimiterea. Cerem doar o poreclă, nu numele real, un animal și un mesaj. Nu cerem nume, adresă, telefon, școală sau email. Programul respinge mesajele cu semnul at sau cu șase cifre la rând. Textul vizitatorului se afișează cu textContent, niciodată cu innerHTML.
+
+Primul pas: HTML. Fiecare câmp are un label legat prin for de id-ul câmpului. Formularul are novalidate, ca să facem noi verificarea. Prima opțiune din listă are valoarea goală, ca să vedem dacă omul nu a ales nimic. Paragrafele pentru erori au aria live polite, ca să fie anunțate de cititorul de ecran.
+
+Al doilea pas: CSS. Câmpurile sunt late, cu chenar rotunjit. Clasa invalid dă câmpului greșit chenar de culoarea accentului. Locul pentru eroare are înălțime minimă, ca formularul să nu sară. Eroarea are și text, nu doar culoare.
+
+Al treilea pas: numărătorul. O funcție arată eroare scrie mesajul sub câmp și pune sau scoate clasa invalid. Evenimentul input se declanșează la fiecare literă și actualizează numărul de caractere.
+
+Al patrulea pas: verificarea. La evenimentul submit, preventDefault oprește trimiterea. Metoda trim taie spațiile de la capete. Un contor de erori pornește de la zero și crește la fiecare problemă. Includes caută semnul at, iar expresia cu d și acolade caută șase cifre una după alta. Dacă la final contorul este zero, afișăm mulțumirea, golim formularul cu reset și punem numărătorul pe zero.
+
+Al cincilea pas: testele. Câmpuri goale dau trei erori. Un email sau un telefon dau mesajul de siguranță. Un mesaj corect dă mulțumire și golește formularul.
+
+Greșeli frecvente: uitat preventDefault, trim fără paranteze, click în loc de submit, innerHTML cu text de la vizitator și câmp fără label.
+
+Întrebări de verificare. Ce face trim? Ce face preventDefault? De ce nu cerem date personale? De ce prima opțiune are valoarea goală?
+
+Temă. Cere unui adult să încerce să strice formularul și notează ce a încercat.
+
+Urmează Lecția opt: mod întunecat și buton sus.

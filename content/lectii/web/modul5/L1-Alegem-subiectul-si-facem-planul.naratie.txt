@@ -1,0 +1,27 @@
+Lecția întâi din Modulul cinci. Alegem subiectul și facem planul.
+
+Până acum ai făcut pagini mici și jocuri mici. În acest modul construiești un site adevărat, din mai multe pagini, cu meniu, galerie de poze și un formular care verifică ce scrie omul. Îl construim în zece lecții, o bucată pe lecție. Azi nu scriem mult cod. Facem planul, ca un arhitect înainte să construiască o casă.
+
+Obiectivul. Minim: un subiect ales, o hartă cu trei pagini, Acasă, Galerie și Contact, și folderul proiectului. Complet: în plus schița fiecărei pagini, o paletă de patru culori, cel puțin șase imagini pregătite corect, textele scrise și un fișier de test care se deschide în browser.
+
+Siguranța. Alege un subiect potrivit pentru copii: animale, sport, jocuri, spațiu, dinozauri sau un hobby. Nu faci un site despre tine sau despre o persoană. Pe site nu pui date personale: nume complet, adresă, școală, telefon sau poze cu oameni. Imaginile sunt din pachetul media, desenate de tine sau făcute de tine. Formularul nu trimite nimic nicăieri.
+
+Primul pas: proiectul final. Va avea trei pagini: index punct html, galerie punct html și contact punct html. Toate au același antet cu meniu. Pe telefon meniul se strânge într-un buton. Mai are mod întunecat și un buton care te duce înapoi sus. HTML face structura, CSS face aspectul, JavaScript face ce se întâmplă când apeși.
+
+Al doilea pas: subiectul. Scrii titlul, despre ce este site-ul, pentru cine este și ce vrei să vadă lumea. Titlul trebuie să fie scurt și clar.
+
+Al treilea pas: harta site-ului și schițele. Desenezi pe foaie paginile și drumurile dintre ele. Apoi desenezi fiecare pagină cu dreptunghiuri: antet, titlu mare, carduri, subsol. Schița nu trebuie să fie frumoasă, trebuie să arate unde stă fiecare lucru.
+
+Al patrulea pas: culorile. Alegi patru culori: principală, accent, fundal și text. Textul închis pe fundal deschis se citește ușor. Butonul trebuie să aibă altă culoare decât fundalul. Folosești cel mult două familii de litere din sistem.
+
+Al cincilea pas: imaginile. Ai nevoie de cel puțin șase. Au extensia jpg sau png, nume cu litere mici, fără spații și fără diacritice, de exemplu g unu punct jpg, și cel mult trei sute de kilobiți. Pentru fiecare scrii o propoziție care spune ce se vede, numită text alternativ.
+
+Al șaselea pas: folderul. Creezi folderul cu numele tău, cu cele trei pagini, stil punct css, script punct js și folderul imagini. Pui un test în index și verifici dacă se vede o imagine.
+
+Greșeli frecvente: subiect prea mare, nume de fișiere cu spații, imagini prea mari, imagini fără text alternativ și culori care nu se văd una pe alta.
+
+Întrebări de verificare. Ce este o schiță a paginii? De ce numim fișierele g unu punct jpg? Ce este textul alternativ? Ce date nu punem pe site?
+
+Temă. Termină planul pe foaie și arată planul unui adult din familie. Fă o copie de siguranță a folderului.
+
+Urmează Lecția doi: scriem scheletul site-ului.

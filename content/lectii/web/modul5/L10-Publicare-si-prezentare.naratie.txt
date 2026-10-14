@@ -1,0 +1,25 @@
+Lecția a zecea din Modulul cinci. Publicare și prezentare.
+
+Site-ul tău este făcut și testat. Azi facem ultimii pași: pregătim fișierele, aflăm ce înseamnă să pui un site pe internet și când este bine să o faci, exersăm o prezentare și facem bilanțul modulului. Publicarea se face numai cu un adult, după regulile de mai jos.
+
+Obiectivul. Minim: folderul final verificat cu lista dinainte de publicare și o prezentare scurtă a site-ului în fața unui coleg. Complet: în plus structura corectă a folderului, o discuție despre ce înseamnă public, o decizie luată împreună cu un adult, o prezentare de trei minute cu demonstrație, feedback de la colegi și autoevaluare.
+
+Siguranța. Publicarea pe internet se face doar cu acordul scris al părintelui sau tutorelui și cu ajutorul unui adult. Profesorul poate hotărî să nu publice niciun site, iar site-ul se prezintă pe calculator. Conturile pe serviciile de găzduire le face un adult, pentru că unele cer o vârstă minimă. Site-ul nu are date personale. Odată publicat, un site poate fi găsit de motoare de căutare și cineva poate salva o copie, deci publicăm doar ce nu ar deranja pe nimeni să vadă.
+
+Primul pas: folderul final. Pagina index este chiar în rădăcina folderului. Nu rămân fișiere în plus, copii vechi sau fișiere de test. Toate numele sunt cu litere mici, fără spații și diacritice. Pe un server, dacă fișierul se numește cu literă mare, iar linkul cu literă mică, pagina nu se mai găsește.
+
+Al doilea pas: lista dinainte de publicare, cu trei părți: siguranță, cod și utilizare. Nu există date personale, imaginile sunt ale tale, fiecare pagină are un singur h1, fiecare imagine are text alternativ, nu sunt erori, iar site-ul merge pe telefon și cu tastatura.
+
+Al treilea pas: ce înseamnă pe internet. Un site este același folder de fișiere, pus pe un server, adică un calculator mereu pornit. Un serviciu de găzduire îți dă loc pe el și o adresă web. Site-ul nostru este static, adică are doar fișiere, fără bază de date. Un adult își face contul, încarcă folderul, primește adresa, iar apoi refaceți testele pe telefon. Dacă oricare regulă de siguranță lipsește, nu publicăm.
+
+Al patrulea pas: prezentarea de trei minute. Spui despre ce este site-ul, arăți meniul, cardurile, galeria și formularul, povestești ce a fost greu și ce ai învățat despre siguranță.
+
+Al cincilea pas: feedback și autoevaluare. Colegii spun un lucru care a plăcut, un lucru de îmbunătățit și o întrebare. Tu bifezi lista de criterii și scrii un pas concret pentru fiecare punct care nu este încă făcut.
+
+Greșeli frecvente: date personale rămase în subsol sau în alt, index într-un subfolder, majuscule în nume, fișiere de test rămase și publicare fără acord.
+
+Întrebări de verificare. Ce este un server? De ce index trebuie să fie în rădăcină? Ce reguli de siguranță trebuie respectate? Ce faci dacă nu poți publica?
+
+Temă. Arată familiei site-ul și păstrează folderul final în două locuri.
+
+Urmează Modulul șase: jocuri web.

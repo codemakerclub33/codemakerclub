@@ -1,0 +1,27 @@
+Lecția a noua din Modulul cinci. Versiunea pe telefon și teste.
+
+Site-ul tău este gata, dar nu este terminat până nu este testat. Azi ești testerul: verifici site-ul pe ecrane de mărimi diferite, doar cu tastatura, cu unelte din browser și cu un coleg. Notezi ce găsești, repari și verifici din nou. Așa lucrează programatorii adevărați.
+
+Obiectivul. Minim: testul pe telefon, în DevTools, pe toate cele trei pagini, și un raport cu cel puțin trei probleme reparate. Complet: în plus test pe patru lățimi, test doar cu tastatura, verificarea HTML, raportul de accesibilitate, test cu un coleg, raport scris și o a doua rundă de teste după reparații.
+
+Siguranța. Testăm doar paginile noastre, pe calculatorul nostru. Verificatorul de HTML se folosește cu fișiere fără date personale. Un coleg care testează formularul scrie nume inventate. Testul pe un telefon real se face doar cu acordul unui adult.
+
+Primul pas: patru lățimi, o mie două sute, șapte sute șaizeci și opt, trei sute șaptezeci și cinci și trei sute douăzeci de pixeli, în modul dispozitiv din DevTools. Verifici: nu apare derulare pe orizontală, textul se citește, meniul se deschide, cardurile sunt unul pe rând, imaginea mărită încape, formularul încape, iar butonul sus nu acoperă nimic important.
+
+Al doilea pas: doar cu tastatura. Tab, Shift Tab, Enter, Space și Escape. Vezi mereu unde este focusul, ordinea este logică, poți folosi meniul, galeria și formularul, și nu rămâi blocat. Dacă lipsește focusul vizibil, adaugi un outline.
+
+Al treilea pas: consola și verificatorul HTML. Nu trebuie să apară erori roșii în consolă. Verificatorul oficial listează erori, cum ar fi un id folosit de două ori sau o imagine fără alt. Apeși pe fiecare link și pe fiecare imagine, ca să vezi dacă se deschid.
+
+Al patrulea pas: Lighthouse. Alegi accesibilitatea și modul pentru telefon. Citești nota și problemele, repari cel puțin două și rulezi din nou. Nota este un ajutor, nu un scop.
+
+Al cincilea pas: raportul. Fiecare problemă are un rând: pagina, ce nu merge, cum ai reparat și dacă este reparat. După reparație testezi din nou.
+
+Al șaselea pas: testul cu un coleg. Fiecare face câteva sarcini pe site-ul celuilalt, fără ajutor, și spune cu voce tare ce gândește. Apoi spuneți un lucru reușit și un lucru de îmbunătățit.
+
+Greșeli frecvente: testezi doar pe calculator, repari fără să notezi, nu testezi din nou, ignori erorile roșii și schimbi numele unui fișier fără să schimbi codul HTML.
+
+Întrebări de verificare. Cum activezi modul dispozitiv? Ce înseamnă eroarea patru sute patru? De ce testăm doar cu tastatura? De ce testăm din nou după reparație?
+
+Temă. Cere unui adult din familie să facă sarcinile pe site-ul tău și repară unde a ezitat.
+
+Urmează Lecția zece: publicare și prezentare.
