@@ -1,0 +1,21 @@
+Lecția a treia din Modulul patru. Numere, text și calcule.
+
+Calculatorul este foarte bun la calcule și la text. Azi înveți restul împărțirii, rotunjirile, numerele aleatoare, ca să arunci un zar, lucrul cu litere mari și mici și cum ceri o valoare de la utilizator cu prompt.
+
+Obiectivul. Minim: un program care cere două numere și afișează suma și produsul. Complet: în plus restul împărțirii, un zar de la unu la șase, transformări de text și diferența dintre cinci între ghilimele plus trei, și cinci plus trei.
+
+Primul pas. Operatorii sunt plus, minus, steluță, bară, procent și două steluțe. Procentul dă restul împărțirii. Dacă numărul procent doi este zero, numărul este par. Înmulțirea și împărțirea se fac înaintea adunării, iar parantezele schimbă ordinea.
+
+Al doilea pas. Math punct round rotunjește la cel mai apropiat întreg, floor în jos, ceil în sus. Math punct random dă un număr între zero și unu. Pentru un zar scrii Math punct floor, paranteză, Math punct random ori șase, paranteză, plus unu. Construiești pas cu pas: random, ori șase, floor, plus unu.
+
+Al treilea pas. Pentru text, length arată câte caractere are, fără paranteze. To upper case face literele mari, to lower case mici. Prima literă este la poziția zero, pentru că în programare numărătoarea începe de la zero. Includes spune dacă textul conține o bucată, slice taie o bucată, replace înlocuiește. Metodele nu schimbă textul original, ci dau unul nou.
+
+Al patrulea pas. Dacă un termen este text, plus lipește: cinci între ghilimele plus trei dă cincizeci și trei. Funcția Number transformă textul în număr. Dacă nu se poate, rezultă NaN, adică nu este număr.
+
+Al cincilea pas. Prompt deschide o fereastră cu o cutie de scris. Ce scrie utilizatorul este întotdeauna text, chiar dacă a scris zece. Dacă vrei să calculezi, folosești Number în jurul lui prompt. Nu scrie date personale în prompt.
+
+Greșeli frecvente. Ai uitat Number. Ai scris length cu L mare. Zarul iese de la zero la cinci, pentru că ai uitat plus unu. Ai crezut că prima literă are numărul unu.
+
+Tema. Un joc de ghicit norocul cu zarul.
+
+Recapitulare. Operatori și rest. Math pentru rotunjiri și zar. Metode pentru text. Number și prompt. Succes!

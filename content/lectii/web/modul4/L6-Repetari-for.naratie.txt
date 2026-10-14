@@ -1,0 +1,21 @@
+Lecția a șasea din Modulul patru. Repetări, for.
+
+Cum ai scrie cu mâna numerele de la unu la o mie? Greu și plictisitor. Calculatorul nu se plictisește niciodată: îi spui o dată ce să facă și de câte ori, iar el repetă. Azi înveți bucla for.
+
+Obiectivul. Minim: o buclă for care afișează numerele de la unu la zece. Complet: în plus tabla înmulțirii, suma numerelor de la unu la o sută, numărătoare inversă, un triunghi din steluțe, parcurgerea literelor unui cuvânt și explicația celor trei părți.
+
+Primul pas. For are trei părți între paranteze, despărțite prin punct și virgulă. Începutul: let i egal unu. Condiția: i mai mic sau egal cu cinci, adică repetă cât timp este adevărată. Pasul: i plus plus, adică după fiecare rundă mărește i cu unu. Ce este în acolade se repetă. Când condiția devine falsă, bucla se oprește.
+
+Al doilea pas. Poți număra din doi în doi cu i plus egal doi. Pentru numărătoare inversă pornești de sus, folosești i minus minus și condiția i mai mare sau egal cu unu. Atenție la bucla fără sfârșit: dacă condiția rămâne mereu adevărată, pagina îngheață. Atunci închizi fila și repari codul.
+
+Al treilea pas. Variabila i se poate folosi în calcule, de exemplu tabla înmulțirii. Pentru un total creezi înainte de buclă o variabilă suma egal zero, iar în buclă adaugi la ea. Dacă ai uitat valoarea inițială, rezultatul este NaN. Dacă o scrii în interiorul buclei, totalul se golește la fiecare rundă.
+
+Al patrulea pas. Poți construi un text pe rând, adăugând o steluță la fiecare rundă, ca să faci un triunghi. Poți parcurge literele unui cuvânt cu poziția i, pornind de la zero și mergând cât i este mai mic decât length.
+
+Proiectul. Tabla înmulțirii pentru un număr ales, suma rezultatelor, un triunghi de steluțe și o numărătoare inversă.
+
+Greșeli frecvente. Ai separat părțile cu virgulă în loc de punct și virgulă. Bucla nu se oprește niciodată. Ai uitat valoarea inițială a totalului. Ai numerotat literele de la unu.
+
+Tema. Ceasul de numărat, cu suma și media.
+
+Recapitulare. For cu început, condiție și pas. Totalul se creează înainte de buclă. Succes!

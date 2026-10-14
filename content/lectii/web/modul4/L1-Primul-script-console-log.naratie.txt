@@ -1,0 +1,23 @@
+Lecția întâi din Modulul patru. Primul script, console log.
+
+Până acum ai învățat HTML, adică ce este în pagină, și CSS, adică cum arată pagina. Acum învățăm JavaScript, adică ce face pagina. Gândește-te la o mașinuță: HTML este caroseria, CSS este vopseaua, iar JavaScript este motorul.
+
+Obiectivul. Minim: un fișier script punct js legat de pagină, care afișează trei rânduri în consolă. Complet: în plus text și numere, un calcul, comentarii, un alert, o eroare provocată și reparată și diferența dintre HTML, CSS și JavaScript.
+
+Primul pas. Creezi un fișier script punct js în același folder cu index punct html. În pagină, chiar înainte de body de închidere, scrii script src egal script punct js. Așa browserul citește comenzile tale după ce pagina s-a încărcat.
+
+Al doilea pas. În script scrii console punct log, paranteză, textul între ghilimele, paranteză, punct și virgulă. Deschizi pagina cu Live Server, apeși F12 și alegi fila Console. Acolo apare textul. Consola este caietul tău de probă: utilizatorii paginii nu o văd.
+
+Al treilea pas. Textul se scrie între ghilimele, la fel la început și la sfârșit. Numerele se scriu fără ghilimele. Poți aduna, scădea, înmulți cu steluță și împărți cu bară. Doi plus trei fără ghilimele dă cinci. Același lucru între ghilimele este doar text și se afișează așa cum l-ai scris.
+
+Al patrulea pas. Comentariile încep cu două bare și sunt ignorate de calculator. Într-un console log poți pune mai multe valori, separate prin virgulă, iar consola le scrie pe același rând.
+
+Al cincilea pas. Erorile. Greșelile sunt normale. Consola scrie mesajul cu roșu și îți spune felul erorii și rândul. De exemplu, dacă scrii console punct lg, apare că nu este o funcție. JavaScript face diferența între litere mari și mici, deci Console cu C mare nu merge. Citește mesajul cu calm și repară.
+
+Alert deschide o fereastră mică cu un mesaj. Folosește alert rar.
+
+Greșeli frecvente. Ai uitat să legi scriptul. Ai uitat ghilimeaua sau paranteza. Te uiți la pagină, nu la consolă. Nu ai salvat fișierul.
+
+Tema. Un carnet de note pentru jocurile tale preferate, cu un calcul al sumei notelor.
+
+Recapitulare. HTML structura, CSS aspectul, JavaScript comportamentul. Console log scrie în consolă. Succes!

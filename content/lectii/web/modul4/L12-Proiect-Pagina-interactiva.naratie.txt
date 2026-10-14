@@ -1,0 +1,21 @@
+Lecția a douăsprezecea din Modulul patru. Proiect: Pagina interactivă.
+
+Ai învățat variabile, decizii, bucle, funcții, liste, obiecte, DOM și evenimente. Azi le pui pe toate într-un singur proiect: un test cu întrebări și scor, făcut de tine, pe un subiect la alegere. Pagina pune o întrebare, tu alegi un răspuns, ea îți spune dacă ai nimerit, ține scorul și la final îți dă un mesaj.
+
+Obiectivul. Minim: un test cu cel puțin patru întrebări, în care apeși un răspuns, vezi corect sau greșit și la final vezi scorul. Complet: în plus stil cu CSS, progres, blocarea răspunsului după prima alegere, mesaj final cu else if, buton de reluare și o prezentare de un minut.
+
+Siguranța. Alege un subiect potrivit pentru copii: animale, sport, jocuri, spațiu. Nu cere și nu afișa date personale. Verifică întrebările, ca să aibă un singur răspuns corect clar. Pagina nu trimite nimic nicăieri.
+
+Primul pas. Planul: subiectul, cinci întrebări cu trei răspunsuri fiecare și răspunsul corect. Al doilea pas: scheletul paginii cu secțiunea joc și secțiunea final, ascunsă cu atributul hidden. Clasele corect și greșit se scriu în CSS, iar JavaScript doar le pornește.
+
+Al treilea pas. Întrebările sunt o listă de obiecte. Fiecare obiect are text, o listă de opțiuni și poziția răspunsului corect, numărând de la zero. Al patrulea pas: o funcție arată întrebarea curentă, creează câte un buton pentru fiecare răspuns și îl adaugă în pagină. Variabilele indice, scor și am răspuns țin starea jocului.
+
+Al cincilea pas. Când apeși un răspuns, compari poziția lui cu cea corectă. Dacă ai nimerit, scorul crește și butonul devine verde. Dacă nu, butonul devine roșu și răspunsul corect se colorează în verde. Variabila am răspuns împiedică să răspunzi de două ori. Butonul următoarea mărește indicele sau duce la ecranul final, unde un else if alege mesajul. Butonul de reluare resetează totul.
+
+Verificarea. Bifezi lista: întrebări corecte, butoane create din JavaScript, scor corect, progres, mesaj final, reluare, fără erori în consolă, cod indentat și comentat, pagina arată bine pe telefon. Apoi prezinți un minut și lași un coleg să joace.
+
+Greșeli frecvente. Poziția corectă nu există. Ai uitat virgula între obiecte. Ai uitat să golești butoanele vechi. Ai uitat să resetezi scorul la joacă din nou.
+
+Tema. Arată testul unui membru al familiei.
+
+Recapitulare. Date în listă de obiecte, stare în variabile, butoane create din cod, mesaje cu decizii. Felicitări, ai terminat Modulul patru!

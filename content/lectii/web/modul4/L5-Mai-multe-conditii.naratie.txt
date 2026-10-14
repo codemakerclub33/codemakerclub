@@ -1,0 +1,21 @@
+Lecția a cincea din Modulul patru. Mai multe condiții.
+
+La lecția trecută programul alegea între două drumuri. Uneori ai nevoie de mai multe: nota zece înseamnă excelent, nota opt foarte bine, nota cinci bine, iar sub cinci mai încearcă. Azi înveți else if, operatorii logici și switch.
+
+Obiectivul. Minim: un program care transformă o notă în calificativ, cu cel puțin trei variante. Complet: în plus operatorii și, sau, nu, un meniu cu switch, verificarea numărului scris de utilizator și un joc de ghicit cu indicii.
+
+Primul pas. Else if face o scară de decizii. Se citește de sus în jos și se execută doar primul bloc a cărui condiție este adevărată. Ordinea contează: începe cu cea mai strictă condiție, de exemplu nota mai mare sau egală cu nouă, apoi mergi spre cele mai largi.
+
+Al doilea pas. Dublul semn și comercial înseamnă și: ambele condiții trebuie să fie adevărate. Un interval se scrie numar mai mare sau egal cu unu, și, numar mai mic sau egal cu douăzeci. Cele două bare verticale înseamnă sau: cel puțin o condiție trebuie să fie adevărată. Fiecare parte trebuie să fie o comparație completă. Semnul exclamării înseamnă nu și întoarce răspunsul.
+
+Al treilea pas. Switch compară aceeași valoare cu mai multe variante. Fiecare case este o variantă. Break oprește switch-ul, iar fără break se execută și varianta următoare. Default prinde tot ce nu s-a potrivit. Prompt dă text, deci cazurile au ghilimele.
+
+Al patrulea pas. Un program bun verifică ce a scris utilizatorul. Number punct isNaN spune dacă nu s-a găsit un număr. Nu poți scrie egal cu NaN, pentru că NaN nu este egal nici cu el însuși. Cu sau verifici trei probleme deodată: nu este număr, prea mic sau prea mare.
+
+Proiectul. Ghicește numărul cu indicii: prea mic, prea mare, foarte aproape sau bravo. Math punct abs dă distanța fără semn.
+
+Greșeli frecvente. Ai pus condiția largă prima. Ai scris interval cu două comparații lipite. Ai folosit sau în loc de și. Ai uitat break.
+
+Tema. Meniul cafenelei, cu switch.
+
+Recapitulare. Else if, și, sau, nu, switch cu break și verificarea datelor. Succes!

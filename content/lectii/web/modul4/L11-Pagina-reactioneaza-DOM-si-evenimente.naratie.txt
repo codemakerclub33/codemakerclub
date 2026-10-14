@@ -1,0 +1,23 @@
+Lecția a unsprezecea din Modulul patru. Pagina reacționează: DOM și evenimente.
+
+Până acum rezultatele programelor tale apăreau doar în consolă. Azi pagina însăși prinde viață: apeși un buton și se schimbă un text, scrii un cuvânt și apare într-o listă. Pentru asta înveți două lucruri: cum găsește JavaScript elementele paginii și cum ascultă ce face utilizatorul.
+
+Obiectivul. Minim: un buton care, la apăsare, schimbă un text din pagină. Complet: în plus un contor cu butoane, un buton care schimbă aspectul paginii, o listă la care adaugi elemente dintr-un câmp de text și diferența dintre a scrie o funcție și a o lăsa să ruleze la un eveniment.
+
+Primul pas. DOM este structura paginii, ca un arbore de elemente. Ca să lucrezi cu un element, îl găsești cu document punct query selector, urmat de un selector CSS: diez pentru id, punct pentru clasă. Rezultatul îl pui într-o variabilă const. Dacă selectorul este greșit, rezultatul este null. Scriptul se pune chiar înainte de body de închidere, ca elementele să existe deja.
+
+Al doilea pas. Cu text content schimbi textul unui element. Pentru text scris de utilizator folosim doar text content, niciodată inner HTML, pentru că cineva ar putea strecura cod rău intenționat. Query selector all găsește toate elementele, iar tu le parcurgi cu for of.
+
+Al treilea pas. Un eveniment este ceva ce se întâmplă în pagină, de exemplu un click. Scrii add event listener, apoi evenimentul între ghilimele și o funcție. Funcția rulează doar când apare evenimentul, nu imediat. Atenție: nu pune paranteze după numele funcției, altfel rulează pe loc. Pentru un contor, variabila se creează în afara funcțiilor, ca să țină minte valoarea, iar după ce o schimbi trebuie să actualizezi și textul din pagină.
+
+Al patrulea pas. Cu class list punct toggle adaugi sau scoți o clasă CSS, ca un întrerupător. Stilul rămâne în CSS, iar JavaScript doar pornește și oprește clasa.
+
+Al cincilea pas. Valoarea unui câmp de text este camp punct value și este întotdeauna text. Cu trim scoți spațiile, apoi verifici dacă este gol. Pentru o listă creezi un element cu create element, îi pui textul și îl lipești cu append child. Apoi golești câmpul.
+
+Proiectul. Pagina mea care reacționează: mod noapte, contor de goluri și o listă de jocuri preferate. Nu cere nume reale.
+
+Greșeli frecvente. Scriptul este înainte de elemente. Ai uitat diezul în selector. Ai pus paranteze la funcția din add event listener. Ai scris text content cu litere mici. Ai uitat punct value.
+
+Tema. Colecția mea, cu listă, contor și buton de golire.
+
+Recapitulare. Găsești elementul, îl asculți și îi schimbi textul sau clasa. Succes!

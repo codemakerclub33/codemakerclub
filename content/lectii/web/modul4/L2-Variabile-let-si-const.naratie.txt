@@ -1,0 +1,21 @@
+Lecția a doua din Modulul patru. Variabile, let și const.
+
+Un program trebuie să țină minte lucruri: scorul unui joc, numele jucătorului, câte vieți mai are. Pentru asta folosim variabile: cutii cu nume, în care păstrăm o valoare.
+
+Obiectivul. Minim: un program cu patru variabile afișate în consolă. Complet: în plus o constantă, mesaje cu variabile, plus egal și plus plus, o eroare la const și nume corecte.
+
+Primul pas. Scrii let, apoi numele cutiei, semnul egal și valoarea. De exemplu let nume egal Rex între ghilimele. Semnul egal înseamnă pune în, nu egal ca la matematică. Console log cu numele fără ghilimele afișează ce este în cutie. Cu ghilimele afișează chiar cuvântul. Zecimalele se scriu cu punct, nu cu virgulă.
+
+Al doilea pas. Pentru a schimba valoarea, scrii doar numele, fără let. Scor egal scor plus cinci înseamnă: ia ce este în scor, adaugă cinci și pune rezultatul înapoi. Scurtăturile sunt plus egal, minus egal, steluță egal, plus plus și minus minus.
+
+Al treilea pas. Const face o variabilă a cărei valoare nu se mai schimbă. Dacă încerci să schimbi valoarea, apare eroarea Assignment to constant variable. Este o protecție. Folosești const pentru ce nu se schimbă, de exemplu numele jocului, și let pentru ce se schimbă, de exemplu scorul.
+
+Al patrulea pas. Numele conțin litere, cifre și liniuță jos, fără spații, și nu încep cu o cifră. JavaScript face diferența între litere mari și mici. Stilul obișnuit se numește camel case: primul cuvânt cu literă mică, următoarele cu literă mare, de exemplu scor maxim. Numele trebuie să spună ce conține variabila.
+
+Al cincilea pas. Mesajele se construiesc cu plus, lipind text și variabile, sau cu semnul backtick, unde variabila se pune între dolar și acolade. Tipurile sunt string, pentru text, number, pentru numere, și boolean, pentru true sau false. Cu typeof afli tipul unei valori.
+
+Greșeli frecvente. Ai scris let de două ori. Ai schimbat un const. Ai pus ghilimele în jurul numelui. Ai uitat spațiile la lipirea textului.
+
+Tema. Magazinul meu de jocuri, cu preț, cantitate și total.
+
+Recapitulare. Variabila este o cutie cu nume. Let pentru ce se schimbă, const pentru ce nu se schimbă. Succes!

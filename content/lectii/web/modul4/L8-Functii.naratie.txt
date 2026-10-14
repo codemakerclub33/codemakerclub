@@ -1,0 +1,21 @@
+Lecția a opta din Modulul patru. Funcții.
+
+Ai observat că unele lucruri le scrii de mai multe ori: aruncarea unui zar, un mesaj de salut, un calcul. O funcție este o bucată de cod căreia îi dai un nume. O scrii o singură dată, apoi o chemi de câte ori vrei, ca pe o rețetă.
+
+Obiectivul. Minim: o funcție salut cu parametrul nume, chemată de două ori. Complet: în plus o funcție care calculează și returnează un rezultat, o funcție zar, o funcție cu if, o funcție care cheamă alta și diferența dintre console log și return.
+
+Primul pas. Scrii cuvântul function, numele funcției, paranteze și acolade cu corpul. Dacă rulezi doar atât, nu se întâmplă nimic: rețeta este scrisă, dar nu a fost gătită. O chemi scriind numele urmat de paranteze. Fără paranteze, funcția nu pornește.
+
+Al doilea pas. Parametrii sunt cutii care primesc valori la fiecare apelare. Valoarea pe care o dai se numește argument. Ordinea contează. Un parametru poate avea o valoare de rezervă, folosită dacă nu dai nimic.
+
+Al treilea pas. Return trimite o valoare înapoi acolo unde ai chemat funcția și încheie funcția pe loc. Console log doar arată ceva în consolă și nu poți folosi rezultatul mai departe. Dacă funcția calculează ceva, returnează. Afișarea o faci la apel.
+
+Al patrulea pas. O funcție poate decide și returna true sau false, de exemplu este par. Numele acestor funcții încep de obicei cu este sau are. O funcție poate chema altă funcție: aruncă două zaruri folosește funcția zar de două ori. Variabilele create în interiorul unei funcții sunt locale și nu se văd în afară.
+
+Proiectul. Trusa mea de unelte, cu cel puțin cinci funcții: salut, zar, medie, este par și un titlu cu chenar. Adaugi cel puțin două funcții ale tale.
+
+Greșeli frecvente. Ai uitat parantezele la apelare. Ai scris console log în loc de return. Ai uitat un argument. Ai pus cod după return.
+
+Tema. Mini magazin de jocuri cu reducere, total și factură.
+
+Recapitulare. Function scrie, numele cu paranteze cheamă. Parametri, return, funcții mici care se combină. Succes!

@@ -1,0 +1,23 @@
+Lecția a noua din Modulul patru. Liste, array.
+
+O variabilă ține o singură valoare. Dar dacă vrei să ții mai multe: numele jocurilor tale preferate, notele de la un test, culorile unui curcubeu? Ai nevoie de o listă: un raft cu mai multe cutii numerotate.
+
+Obiectivul. Minim: o listă cu cinci elemente afișate cu o buclă. Complet: în plus adăugare și scoatere, căutare, media unei liste de numere, cel mai mare element și explicația de ce primul element are numărul zero.
+
+Primul pas. O listă se scrie între paranteze drepte, cu elementele separate prin virgulă. Fiecare element are o poziție, iar numărătoarea începe de la zero. Citești un element cu numele listei și poziția între paranteze drepte. Length arată câte elemente are lista, iar ultimul element este la poziția length minus unu. Dacă ceri o poziție care nu există, primești undefined.
+
+Al doilea pas. Poți schimba un element scriind în poziția lui. Lista este const, dar poți schimba lucrurile din ea. Const interzice doar înlocuirea listei întregi.
+
+Al treilea pas. Push adaugă la sfârșit, pop scoate ultimul, unshift adaugă la început, shift scoate primul. Includes spune da sau nu dacă un element este în listă. Index of dă poziția sau minus unu dacă nu există. Join lipește elementele într-un singur text.
+
+Al patrulea pas. Parcurgi lista cu for, pornind de la zero și mergând cât i este mai mic decât length, sau cu for of, care se citește pentru fiecare element din listă. Atenție: nu pune mai mic sau egal, pentru că la ultima rundă ceri un element care nu există.
+
+Al cincilea pas. Suma o calculezi cu un total creat înainte de buclă. Media este suma împărțită la length. Pentru maxim pornești cu primul element și îl înlocuiești când găsești unul mai mare.
+
+Proiectul. Lista mea de jocuri, cu două liste legate, adăugare, media și cel mai bun joc. Nu pune nume de colegi sau date personale.
+
+Greșeli frecvente. Ai numărat de la unu. Ai cerut lista length. Ai scris push cu egal în loc de paranteze. Ai folosit paranteze rotunde la citire.
+
+Tema. Clasamentul meu de filme.
+
+Recapitulare. Poziții de la zero, push și pop, includes, for și for of. Succes!

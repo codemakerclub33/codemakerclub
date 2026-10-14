@@ -1,0 +1,21 @@
+Lecția a șaptea din Modulul patru. Repetări, while.
+
+Bucla for este bună când știi de câte ori repeți. Dar uneori nu știi: repetă cât timp nu ai ghicit numărul, repetă cât timp mai ai vieți. Pentru asta există bucla while, adică cât timp.
+
+Obiectivul. Minim: o buclă while care numără de la unu la cinci. Complet: în plus un joc de ghicit cu mai multe încercări, un do while, break și continue și diferența dintre for și while.
+
+Primul pas. While are condiția între paranteze. Valoarea de început o scrii înainte de buclă, iar pasul îl scrii în corpul buclei. Foarte important: în corp trebuie să se schimbe ceva care va face, într-o zi, condiția falsă. Dacă uiți pasul, bucla nu se oprește niciodată, iar pagina îngheață.
+
+Al doilea pas. Folosești while când nu știi câte runde vor fi. De exemplu, cât timp mai ai bani, cumperi o înghețată. Regula de alegere: for când știi de câte ori, while când repeți până se întâmplă ceva.
+
+Al treilea pas. La do while, corpul rulează cel puțin o dată, iar condiția se verifică după. Este potrivit pentru întreabă până răspunde corect, pentru că ai nevoie de răspuns înainte să verifici răspunsul. La do while se scrie punct și virgulă la sfârșit.
+
+Al patrulea pas. Break iese din buclă pe loc. Continue sare peste restul rundei și trece la următoarea. While true repetă la nesfârșit, dar numai dacă ai un break sigur care o oprește, de exemplu când utilizatorul scrie stop sau apasă Cancel. La Cancel, prompt dă null.
+
+Proiectul. Ghicește numărul cu cel mult cinci încercări. După fiecare încercare primești prea mic sau prea mare. O încercare nevalidă nu se numără, iar Cancel oprește jocul. La final, un mesaj diferit pentru câștig, renunțare sau înfrângere.
+
+Greșeli frecvente. Ai uitat pasul. Ai scris un singur egal în condiție. Ai scris break în afara unei bucle. Ai folosit while true fără break.
+
+Tema. Contul de bani.
+
+Recapitulare. While cât timp, do while, break și continue. Succes!

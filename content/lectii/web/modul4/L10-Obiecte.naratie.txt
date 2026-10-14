@@ -1,0 +1,21 @@
+Lecția a zecea din Modulul patru. Obiecte.
+
+O listă ține multe lucruri de același fel. Dar un personaj de joc are mai multe informații de feluri diferite: nume, viață, forță, nivel. Pentru asta folosim un obiect: o fișă cu etichete și valori.
+
+Obiectivul. Minim: un obiect personaj cu patru proprietăți, afișate în consolă. Complet: în plus modificarea proprietăților, o listă de obiecte, o funcție care primește un obiect și o luptă pe ture între două personaje.
+
+Primul pas. Un obiect se scrie între acolade. Fiecare proprietate are o etichetă, două puncte și o valoare, iar proprietățile se despart prin virgulă, nu prin punct și virgulă. Citești o proprietate cu punct, de exemplu personaj punct nume, sau cu paranteze drepte și eticheta între ghilimele. Atenție la litere: Nume cu N mare nu există și dă undefined.
+
+Al doilea pas. Schimbi o proprietate scriind obiect punct eticheta egal valoarea. Dacă eticheta nu există, o creezi. Cu delete o ștergi. Și aici obiectul este const, dar îi poți schimba proprietățile. Cu cuvântul in verifici dacă o proprietate există.
+
+Al treilea pas. Cea mai folositoare combinație este o listă de obiecte. Citești prima fișă cu poziția zero, apoi eticheta. Cu for of obții la fiecare rundă o fișă întreagă. Pentru maxim păstrezi fișa câștigătoare, nu doar scorul.
+
+Al patrulea pas. O funcție poate primi un obiect. Atenție: primește obiectul însuși, nu o copie. Dacă îl schimbă înăuntru, se schimbă și în afară. O funcție care începe cu creează poate returna obiecte noi, ca să nu te repeți.
+
+Proiectul. Lupta personajelor: două personaje inventate, o funcție ataca care schimbă viața țintei, o buclă while pe ture și un mesaj final cu câștigătorul. Folosește personaje inventate, nu nume de colegi.
+
+Greșeli frecvente. Ai pus punct și virgulă între proprietăți. Ai scris eticheta cu altă literă. Ai citit o proprietate care nu există. Ai crezut că funcția primește o copie.
+
+Tema. Clasamentul jocurilor.
+
+Recapitulare. Acolade, etichete, listă de obiecte și funcții care schimbă obiecte. Succes!
