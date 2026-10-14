@@ -1,0 +1,27 @@
+Lecția a treia din Modulul șase. Simon spune: culori, secvențe și memorie.
+
+Simon spune este un joc de memorie. Jocul aprinde pe rând niște culori, iar tu apeși aceleași culori în aceeași ordine. După fiecare rundă secvența se lungește cu o culoare.
+
+Obiectivul. Minim: patru butoane colorate care se aprind. Complet: în plus o secvență care crește, ordinea arătată pe rând, verificarea apăsărilor, mesaje clare, record salvat și butoane care au și nume, nu doar culoare.
+
+Siguranța. Culorile se aprind rar, mai puțin de trei ori pe secundă, deci fără licăriri rapide. Fiecare buton are numele scris, ca să joace și cine nu deosebește culorile. Faci pauze la douăzeci până la treizeci de minute.
+
+Primul pas: pagina cu patru butoane mari, un mesaj și butonul de început.
+
+Al doilea pas: starea. Lista secvenței, poziția în ea și un semn care spune dacă jocul acceptă apăsări, ca să nu apeși când jocul arată ordinea.
+
+Al treilea pas: pauza. Folosim async, await și o promisiune cu setTimeout, ca funcția să poată aștepta puțin înainte de pasul următor, fără intervale încurcate.
+
+Al patrulea pas: aprinderea unei culori. Adăugăm o clasă, așteptăm, o scoatem.
+
+Al cincilea pas: arătăm ordinea. Parcurgem secvența și aprindem fiecare culoare pe rând, cu pauze între ele.
+
+Al șaselea pas: apăsările jucătorului. La fiecare apăsare comparăm cu locul corespunzător din secvență. Dacă este greșită, jocul se termină. Dacă ai terminat secvența, adăugăm o culoare nouă.
+
+Al șaptelea pas: începutul și sfârșitul, plus recordul salvat în localStorage.
+
+Greșeli frecvente: uitat await, apăsări în timp ce jocul arată ordinea și un record comparat greșit.
+
+Întrebări de verificare. Ce înseamnă await? De ce avem o stare? De ce butoanele au și nume?
+
+Urmează Lecția a patra: Cuvântul zilei, tabla de joc.

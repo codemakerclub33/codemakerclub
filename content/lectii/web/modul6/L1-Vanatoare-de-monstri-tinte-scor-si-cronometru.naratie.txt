@@ -1,0 +1,27 @@
+Lecția întâi din Modulul șase. Vânătoare de monștri: ținte, scor și cronometru.
+
+Începem Modulul șase cu primul joc adevărat. Nouă vizuini, un monstru prietenos care iese dintr-una după puțin timp, tu apeși pe el ca să îl prinzi, iar un cronometru numără treizeci de secunde. La final afli scorul și vezi dacă ai doborât recordul.
+
+Obiectivul. Minim: un monstru care apare într-o vizuină și un scor care crește când apeși pe el. Complet: în plus nouă vizuini, un monstru care se mută la întâmplare, cronometru de treizeci de secunde, record salvat în browser, butonul de început și mesaj de final.
+
+Siguranța. Monștrii sunt prietenoși, nu sperie pe nimeni. Nu avem licăriri rapide. Faci pauze la douăzeci până la treizeci de minute. Recordul este doar un număr salvat în browserul tău, fără date personale.
+
+Primul pas: pagina. Un titlu, un panou cu scorul, timpul și recordul, o grilă de nouă butoane și butonul de start. Fiecare vizuină este un buton, ca să poată juca și cine folosește tastatura.
+
+Al doilea pas: starea jocului. Variabile pentru scor, timp rămas și vizuina în care se află monstrul. Constantele sunt scrise sus, ca să le schimbi ușor.
+
+Al treilea pas: monstrul. Cu Math random alegem o vizuină la întâmplare, iar funcția de mutare șterge monstrul din vechea vizuină și îl pune în cea nouă.
+
+Al patrulea pas: timpul. Funcția setInterval repetă o acțiune la fiecare interval. Unul de opt sute de milisecunde mută monstrul, altul de o secundă scade timpul. Când timpul ajunge la zero, oprim ambele cu clearInterval.
+
+Al cincilea pas: apăsarea. Dacă ai apăsat pe vizuina cu monstru, scorul crește, iar monstrul se mută imediat.
+
+Al șaselea pas: recordul. Îl citim din localStorage și îl salvăm doar dacă scorul este mai mare. Totul stă într-un try și catch, ca jocul să meargă chiar dacă browserul nu permite salvarea.
+
+Greșeli frecvente: uitat clearInterval, monstrul care nu se mută, grilă cu mai mult sau mai puțin de nouă vizuini și un record salvat mereu, chiar dacă este mai mic.
+
+Întrebări de verificare. Ce face setInterval? De ce oprim intervalele la final? Ce face Math random? De ce folosim try și catch?
+
+Temă. Arată jocul cuiva din familie și notează ce scor a făcut. Schimbă o valoare, de exemplu durata, și vezi cum se simte jocul.
+
+Urmează Lecția a doua: Clicker.

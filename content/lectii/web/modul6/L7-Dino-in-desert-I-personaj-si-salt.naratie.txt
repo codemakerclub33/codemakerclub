@@ -1,0 +1,25 @@
+Lecția a șaptea din Modulul șase. Dino în deșert, partea întâi: personaj și salt.
+
+Azi începem un joc cunoscut. Un dinozaur verde aleargă, iar tu îl faci să sară cu Spațiu, cu săgeata în sus, cu un clic pe pânză sau cu un buton. Desenăm dinozaurul din dreptunghiuri, îi dăm o săritură cu gravitație și facem solul să alerge pe sub el.
+
+Obiectivul. Minim: un dinozaur desenat pe sol. Complet: în plus săritură cu gravitație, sărit doar de pe sol, sol care se mișcă, picioare care aleargă pe rând și comenzi de la tastatură, mouse și buton.
+
+Siguranța. Mișcarea este lină. Jocul nu pornește singur. Există mai multe feluri de a juca. Faci pauze la douăzeci până la treizeci de minute.
+
+Primul pas: pagina și stilul. Un titlu, o pânză, un mesaj și butonul Sari.
+
+Al doilea pas: constantele și starea. Solul este la o sută optzeci de pixeli. Starea poate fi așteptare sau joc.
+
+Al treilea pas: desenarea. Solul cu liniuțe care se mută, dinozaurul din corp, cap și coadă, și picioarele care se schimbă pe rând.
+
+Al patrulea pas: săritura. Prima apăsare pornește jocul. Apoi, doar dacă dinozaurul stă pe sol, îi dăm o viteză negativă, adică în sus.
+
+Al cincilea pas: mișcarea. Gravitația schimbă viteza, viteza schimbă poziția, iar când dinozaurul atinge solul îl punem exact pe sol.
+
+Al șaselea pas: bucla și controlul. Actualizăm lumea doar când jocul este pornit. Ascultăm Spațiu și săgeata în sus, iar preventDefault oprește derularea paginii. Dacă apăsarea vine de la un buton, o lăsăm în pace, ca să nu o numărăm de două ori.
+
+Greșeli frecvente: egal în loc de mai mare sau egal, uitat minusul la săritură și poziția pusă greșit la aterizare.
+
+Întrebări de verificare. De ce viteza este negativă când urcă? De ce verificăm dacă este pe sol? Ce face preventDefault?
+
+Urmează Lecția a opta: obstacole, scor și game over.

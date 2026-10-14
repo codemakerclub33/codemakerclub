@@ -1,0 +1,23 @@
+Lecția a cincea din Modulul șase. Cuvântul zilei, partea a doua: verificarea literelor.
+
+Azi terminăm Cuvântul zilei. Jocul alege un cuvânt secret pentru fiecare zi, iar după fiecare încercare colorează literele: verde la locul potrivit, galben dacă litera este în cuvânt, dar în alt loc, gri dacă nu este în cuvânt.
+
+Obiectivul. Minim: litere colorate verde, galben sau gri. Complet: în plus cuvânt diferit în fiecare zi, verificare corectă și pentru literele care se repetă, taste colorate, mesaj de câștig sau de pierdere și semne în căsuțe, ca să nu ne bazăm doar pe culoare.
+
+Siguranța. Lista are doar cuvinte potrivite pentru copii. Culorile nu sunt singura informație, pentru că fiecare căsuță are și un semn și o descriere. Faci pauze la douăzeci până la treizeci de minute.
+
+Primul pas: lista de cuvinte, cu cinci litere, fără diacritice.
+
+Al doilea pas: cuvântul zilei. Calculăm din data de azi un număr și, cu restul împărțirii la lungimea listei, alegem un cuvânt. Toată ziua este același cuvânt.
+
+Al treilea pas: algoritmul. Capcana sunt literele care se repetă. Facem două treceri. În prima marcăm literele verzi și le scoatem din cuvântul secret. În a doua, pentru fiecare literă rămasă, căutăm în ce a rămas din secret. Dacă o găsim, este galbenă și o consumăm, altfel este gri. Așa o literă nu este numărată de două ori.
+
+Al patrulea pas: colorarea căsuțelor și a tastelor, apoi mesajul de câștig sau de pierdere.
+
+Testăm algoritmul pe cazuri grele: lapte cu lelea, lapte cu lapte, carte cu terac și robot cu bobby.
+
+Greșeli frecvente: o singură trecere, litere care nu se consumă și condiții întoarse.
+
+Întrebări de verificare. De ce facem două treceri? Ce înseamnă să consumi o literă? Cum alegem cuvântul zilei?
+
+Urmează Lecția a șasea: canvas.

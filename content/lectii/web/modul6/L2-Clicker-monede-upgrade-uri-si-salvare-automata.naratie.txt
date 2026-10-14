@@ -1,0 +1,27 @@
+Lecția a doua din Modulul șase. Clicker: monede, upgrade-uri și salvare automată.
+
+Un clicker este un joc în care apeși ca să strângi monede, iar cu monedele cumperi îmbunătățiri care te ajută să strângi mai repede. Azi faci unul și înveți cum se salvează un joc în browser.
+
+Obiectivul. Minim: un buton care adaugă monede. Complet: în plus trei îmbunătățiri cu prețuri care cresc, monede automate în fiecare secundă, salvare automată, citire sigură a salvării și o discuție despre trucurile care fac jocurile greu de lăsat din mână.
+
+Siguranța. Monedele sunt doar în joc, nu se cumpără cu bani adevărați, iar jocul nu cere niciodată bani. Salvăm doar numere în browserul tău. Faci pauze la douăzeci până la treizeci de minute.
+
+Primul pas: îmbunătățirile. O listă de obiecte, fiecare cu nume, preț de început, câștig și câte ai cumpărat. Prețul fiecărei îmbunătățiri crește cu fiecare cumpărare, de exemplu de la zece la cincisprezece, apoi la douăzeci și trei.
+
+Al doilea pas: calculele. Câștigul pe clic și câștigul pe secundă nu se țin în variabile, ci se calculează din lista de îmbunătățiri. Așa nu pot apărea greșeli de socoteală.
+
+Al treilea pas: afișarea. O singură funcție scrie monedele și actualizează butoanele. Un buton este oprit când nu ai destule monede.
+
+Al patrulea pas: butoanele. Fiecare cumpărare verifică mai întâi dacă ai destule monede, apoi scade prețul și mărește numărul cumpărat.
+
+Al cincilea pas: salvarea. Transformăm obiectul în text cu JSON stringify și îl punem în localStorage. La început îl citim cu JSON parse, într-un try și catch, și verificăm fiecare număr, pentru că nu avem încredere în ce citim din browser.
+
+Al șaselea pas: timpul. Un interval de o secundă adaugă monedele automate și salvează jocul.
+
+Discuție. Unele jocuri folosesc trucuri ca să te țină mult timp. Vorbim despre ele și alegem să jucăm cu pauze.
+
+Greșeli frecvente: JSON parse în afara lui try, prețul care nu crește și butoane care rămân active fără bani.
+
+Întrebări de verificare. De ce calculăm câștigul? De ce verificăm ce citim din localStorage? Ce face JSON stringify?
+
+Urmează Lecția a treia: Simon spune.

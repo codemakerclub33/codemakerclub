@@ -1,0 +1,25 @@
+Lecția a zecea din Modulul șase. Proiect: Colecția mea de jocuri.
+
+Ai făcut șapte jocuri. Azi le punem într-o singură colecție: o pagină principală cu un cartonaș pentru fiecare joc, un buton Joacă și recordul tău citit din browser. Fiecare joc primește și un link de întoarcere. La final prezinți colecția.
+
+Obiectivul. Minim: pagina cu cartonașe către cel puțin trei jocuri care merg. Complet: în plus toate cele șapte jocuri, recorduri citite în siguranță, un rezumat, link de întoarcere în fiecare joc și o prezentare de două minute.
+
+Siguranța. Pagina arată doar numere citite din browser. La Făcut de scrii numele tău sau o poreclă, fără alte date personale. Publicarea pe internet se face doar cu un adult și cu acord scris al părintelui. Textele se scriu cu textContent, nu cu innerHTML.
+
+Primul pas: adunăm jocurile într-un folder, în subfoldere cu nume scurte. Verifici că fiecare joc merge din noul loc.
+
+Al doilea pas: pagina și stilul. Grila adaptivă pune cartonașele în coloane.
+
+Al treilea pas: lista de jocuri. Fiecare joc este un obiect cu nume, descriere, folder și cheia recordului. Cheile trebuie să fie exact cele din jocuri.
+
+Al patrulea pas: citirea recordurilor. O citim din localStorage, verificăm că este un număr normal și pozitiv, totul într-un try și catch. Clicker-ul are o salvare în format JSON, din care citim doar monedele.
+
+Al cincilea pas: cartonașele. Creăm elemente din JavaScript, cu createElement, append și textContent. Evenimentul pageshow actualizează recordurile când te întorci în pagină.
+
+Al șaselea pas: linkul înapoi, cu adresa care urcă un folder.
+
+Greșeli frecvente: foldere cu alt nume, chei diferite, adresa fără bară și JSON parse în afara lui try.
+
+Întrebări de verificare. De ce folosim o listă de obiecte? Ce face textContent cu șirul gol? Ce înseamnă punct punct bară?
+
+Felicitări! Ai terminat ultimul modul al cursului Web.

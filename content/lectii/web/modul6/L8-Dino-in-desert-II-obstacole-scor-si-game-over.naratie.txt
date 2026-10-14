@@ -1,0 +1,25 @@
+Lecția a opta din Modulul șase. Dino în deșert, partea a doua: obstacole, scor și game over.
+
+Dinozaurul nostru știe să sară, dar nu are peste ce. Azi adăugăm cactuși, un scor care crește, o viteză care crește încet și un Game over când dinozaurul se lovește. Recordul se salvează în browser.
+
+Obiectivul. Minim: cactuși care vin și o ciocnire care oprește jocul. Complet: în plus scor, record, viteză care crește până la un maxim, distanțe diferite între cactuși, ciocnire corectă cu o mică iertare și o pauză după Game over.
+
+Siguranța. Jocul trebuie să fie corect. Cactușii vin la distanțe care permit săritura, iar ciocnirea iartă câțiva pixeli. După Game over jocul așteaptă o clipă. Mesajele sunt prietenoase. Faci pauze la douăzeci până la treizeci de minute.
+
+Primul pas: pagina cu panoul de scor și record.
+
+Al doilea pas: starea. Acum are trei valori: așteptare, joc și terminat. Lista de cactuși ține toți cactușii de pe ecran.
+
+Al treilea pas: cactușii. Sunt înalți sau scunzi, la întâmplare, și apar la marginea din dreapta. Distanța până la următorul crește odată cu viteza.
+
+Al patrulea pas: ciocnirea. Două dreptunghiuri se ating dacă se suprapun și pe orizontală, și pe verticală. Sunt patru condiții legate cu și. Dacă măcar una este falsă, nu se ating.
+
+Al cincilea pas: mișcarea. Mutăm cactușii, ștergem pe cei ieșiți din ecran, mărim scorul și verificăm ciocnirea.
+
+Al șaselea pas: începutul și sfârșitul. Pornirea resetează totul. La final salvăm recordul dacă este nou, iar după șase sute de milisecunde permitem reîncepere.
+
+Greșeli frecvente: sau în loc de și la ciocnire, listă care nu se curăță și record comparat greșit.
+
+Întrebări de verificare. Când se ating două dreptunghiuri? De ce curățăm lista? De ce așteptăm după Game over?
+
+Urmează Lecția a noua: Păsărica zburătoare.

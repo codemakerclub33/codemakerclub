@@ -1,0 +1,27 @@
+Lecția a șasea din Modulul șase. Canvas: desenăm și mișcăm o minge.
+
+Canvas este o pânză pe care desenezi cu JavaScript și pe care poți mișca desenele de șaizeci de ori pe secundă. Azi desenăm o scenă și facem o minge care cade, sare și se lovește de pereți.
+
+Obiectivul. Minim: o pânză cu cer, iarbă, soare și o minge. Complet: în plus gravitație, sărituri care pierd din viteză, ciocnire cu pereții, mișcare care nu depinde de calculator, butoane de pauză, de săritură și de culoare, mutarea mingii cu un clic și respectarea preferinței pentru mișcare redusă.
+
+Siguranța. Mingea se mișcă lin, fără licăriri. Dacă cineva a cerut mișcare redusă, animația pornește oprită. Pânza are descriere, iar butoanele permit controlul fără mouse.
+
+Primul pas: coordonatele. Punctul zero zero este în colțul de sus din stânga, iar y crește în jos. Desenăm cu contextul: dreptunghiuri, cercuri, culori.
+
+Al doilea pas: pagina și stilul. Mărimea desenului este în HTML, iar afișarea se adaptează în CSS.
+
+Al treilea pas: fizica. Gravitația mărește viteza în jos. Poziția nouă este poziția veche plus viteza înmulțită cu timpul dt.
+
+Al patrulea pas: desenarea. Ștergem pânza, desenăm fundalul, apoi mingea. Ce desenezi mai târziu apare deasupra.
+
+Al cincilea pas: mișcarea. Lovim pereții și inversăm viteza pe orizontală. La iarbă inversăm viteza pe verticală și o micșorăm cu douăzeci la sută.
+
+Al șaselea pas: bucla. Funcția requestAnimationFrame ne dă un cadru nou, iar noi calculăm dt. Limităm dt la cinci sutimi de secundă. Scriem requestAnimationFrame cu numele funcției, fără paranteze.
+
+Al șaptelea pas: butoanele și clicul. Convertim poziția clicului din pixeli de ecran în pixeli de desen.
+
+Greșeli frecvente: paranteze la requestAnimationFrame, uitat dt și semn greșit la săritură.
+
+Întrebări de verificare. Unde este zero zero? De ce folosim dt? Ce face clearRect?
+
+Urmează Lecția a șaptea: Dino în deșert.

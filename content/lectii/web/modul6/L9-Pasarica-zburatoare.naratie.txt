@@ -1,0 +1,27 @@
+Lecția a noua din Modulul șase. Păsărica zburătoare.
+
+Azi facem un joc nou, folosind tot ce am învățat. O păsărică galbenă cade din cauza gravitației, iar tu o ajuți să bată din aripi. Trebuie să treacă prin spațiile dintre țevi. Fiecare țeavă depășită înseamnă un punct.
+
+Obiectivul. Minim: o păsărică care cade și urcă la apăsare, plus țevi. Complet: în plus țevi cu spații la înălțimi diferite, dar mereu posibil de trecut, scor, record, ciocnire corectă între cerc și dreptunghi și pauză după final.
+
+Siguranța. Spațiile sunt la fel de mari și nu sunt prea departe unul de altul, deci jocul se poate câștiga. Aripa se mișcă încet și este un detaliu mic. Faci pauze la douăzeci până la treizeci de minute.
+
+Primul pas: pagina și stilul, cu pânza înaltă, ca pe telefon.
+
+Al doilea pas: setările și starea, cu gravitația, viteza de bătaie, spațiul și distanța dintre țevi.
+
+Al treilea pas: desenarea. Țeava are o parte de sus și una de jos, iar între ele este spațiul. Păsărica este un cerc, cu aripă, ochi și cioc.
+
+Al patrulea pas: bătaia de aripi și țevile. Prima apăsare pornește jocul și face prima bătaie. Spațiul fiecărei țevi se mută puțin față de cel de dinainte, ca să se poată trece.
+
+Al cincilea pas: ciocnirea cerc cu dreptunghi. Căutăm punctul din dreptunghi cel mai apropiat de centrul cercului, limitând coordonatele între margini. Dacă distanța până la el este mai mică decât raza, se ating. Comparăm pătratele, ca să nu folosim radicalul.
+
+Al șaselea pas: mișcarea. Fiecare țeavă dă un singur punct, cu ajutorul unui semn care arată dacă a fost numărată.
+
+Al șaptelea pas: începutul, sfârșitul, bucla și controlul, ca la Dino.
+
+Greșeli frecvente: uitat minusul la bătaia de aripi, min și max în ordine greșită și uitat semnul pentru țeava numărată.
+
+Întrebări de verificare. Cum găsim cel mai apropiat punct? De ce comparăm pătratele? De ce are fiecare țeavă un semn?
+
+Urmează Lecția a zecea: proiectul final.

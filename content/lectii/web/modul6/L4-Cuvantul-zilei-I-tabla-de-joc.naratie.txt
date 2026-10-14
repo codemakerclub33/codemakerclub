@@ -1,0 +1,27 @@
+Lecția a patra din Modulul șase. Cuvântul zilei, partea întâi: tabla de joc.
+
+Cuvântul zilei este un joc în care ghicești un cuvânt secret de cinci litere în cel mult șase încercări. Azi construim tabla și tastatura și învățăm să scriem și să ștergem litere.
+
+Obiectivul. Minim: o tablă cu șase rânduri de cinci căsuțe. Complet: în plus o tastatură pe ecran, scriere de la tastatura calculatorului, ștergere, trecere la rândul următor și descrieri pentru cititorul de ecran.
+
+Siguranța. Jocul nu cere date personale. Se poate juca și fără mouse, și doar cu mouse. Faci pauze la douăzeci până la treizeci de minute.
+
+Primul pas: pagina. Un titlu, tabla, un mesaj și tastatura.
+
+Al doilea pas: setările și starea. Constante pentru lungimea cuvântului și numărul de încercări, rândul curent și litera curentă.
+
+Al treilea pas: tabla. Construim din JavaScript o listă bidimensională, adică o listă de rânduri, iar fiecare rând este o listă de căsuțe. Fiecare căsuță are o descriere pentru cititorul de ecran.
+
+Al patrulea pas: tastatura. O creăm dintr-un șir de litere și o așezăm pe rânduri.
+
+Al cincilea pas: scrierea. O literă apăsată apare în prima căsuță liberă. Ștergerea scoate ultima literă.
+
+Al șaselea pas: tastele. Ascultăm tastatura calculatorului. Verificăm cu o expresie regulată că tasta este o literă, iar Enter trece la verificare.
+
+Verificarea literelor este deocamdată doar un început, o vom face în lecția următoare.
+
+Greșeli frecvente: rânduri care nu se opresc la cinci litere, ștergere care nu merge pe primul rând și taste care derulează pagina.
+
+Întrebări de verificare. Ce este o listă bidimensională? Ce face expresia regulată? De ce ascultăm și tastatura calculatorului?
+
+Urmează Lecția a cincea: verificarea literelor.
