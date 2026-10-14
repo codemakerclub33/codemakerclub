@@ -1,0 +1,21 @@
+Lecția a cincea din Modulul trei. Flexbox, elemente pe rând.
+
+Până acum cutiile tale stăteau una sub alta. Cu Flexbox le pui una lângă alta, le distanțezi, le centrezi și le lași să treacă pe rândul următor când nu mai încap. Din Flexbox se fac meniurile și rândurile de carduri de pe aproape orice site.
+
+Obiectivul. Minim: un meniu orizontal făcut dintr-o listă și trei cutii pe un rând. Complet: în plus un element centrat pe ambele axe, cutii care trec pe rândul următor, un antet cu logo în stânga și meniu în dreapta și explicația celor două axe.
+
+Primul pas. Scrii display flex pe părinte, nu pe copii. Cutiile din el se așază una lângă alta. Părintele se numește container flex, iar copiii se numesc elemente flex.
+
+Al doilea pas. Flex direction alege direcția. Row pune elementele pe rând, column una sub alta. Direcția dă două axe: axa principală, pe care stau elementele, și axa secundară, perpendiculară pe ea.
+
+Al treilea pas. Justify content așază elementele pe axa principală. Poate fi flex start, center, flex end, space between, space around sau space evenly. Align items le așază pe axa secundară. Pentru centrare perfectă folosești amândouă cu valoarea center și dai containerului o înălțime.
+
+Al patrulea pas. Gap pune spațiu între elemente. Flex wrap cu valoarea wrap lasă elementele să treacă pe rândul următor, când nu mai au loc. Fără el, elementele se înghesuie pe un singur rând.
+
+Al cincilea pas. Flex unu pe elemente împarte spațiul egal. Flex doi ia de două ori mai mult. Un meniu orizontal este o listă cu list style none și display flex pe ul. Pentru carduri folosești flex unu unu două sute cincizeci de pixeli: pot crește, pot să se micșoreze și vor cam două sute cincizeci de pixeli.
+
+Greșeli frecvente. Ai pus display flex pe copii. Ai scris flexbox în loc de flex. Ai scris middle în loc de center. Ai confundat justify content cu align items. Containerul nu are înălțime și align items nu se vede.
+
+Tema. Echipa mea de fotbal, cu antet, cinci carduri și subsol.
+
+Recapitulare. Display flex pe părinte. Justify content pe axa principală, align items pe cea secundară. Gap, wrap și flex unu. Succes!

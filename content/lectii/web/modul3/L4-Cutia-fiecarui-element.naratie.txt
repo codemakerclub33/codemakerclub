@@ -1,0 +1,21 @@
+Lecția a patra din Modulul trei. Cutia fiecărui element.
+
+Secretul care face css-ul să pară ușor: fiecare element dintr-o pagină este o cutie. Un titlu este o cutie, un paragraf este o cutie, o imagine este o cutie. Când înțelegi cutia, știi să așezi orice lucru exact unde vrei.
+
+Obiectivul. Minim: o cutie cu lățime, spațiu în interior, chenar și spațiu în afară, centrată pe pagină. Complet: în plus colțuri rotunjite și umbră, box sizing border box, un buton făcut dintr-un link, imagini care nu ies din cutie și explicația celor patru straturi cu ajutorul DevTools.
+
+Primul pas. O cutie are patru straturi, de la interior spre exterior: conținutul, padding, border și margin. Padding este spațiul din interiorul chenarului, iar margin este spațiul din afara lui. Deschide DevTools, apasă pe un element și privește desenul colorat al cutiei.
+
+Al doilea pas. Padding și margin pot avea una, două sau patru valori. La patru valori ordinea este sus, dreapta, jos, stânga. Border are trei lucruri: grosimea, stilul și culoarea. Margin zero auto pe o cutie cu lățime o centrează pe orizontală.
+
+Al treilea pas. O cutie cu lățime de două sute de pixeli, padding douăzeci și border cinci ocupă de fapt două sute cincizeci de pixeli, pentru că se adună. Rezolvarea este o regulă pentru toate elementele: box sizing border box. Scrie regula prima în fiecare fișier de stil.
+
+Al patrulea pas. Display block ia un rând întreg. Inline stă în rând și nu primește lățime. Inline block stă în rând, dar primește lățime, înălțime și spațiu. Un link cu inline block, padding, fundal și colțuri rotunjite arată ca un buton.
+
+Al cincilea pas. Border radius rotunjește colțurile. Cu cincizeci la sută pe o cutie cu lățimea egală cu înălțimea faci un cerc. Box shadow face umbră. Imaginile primesc max width o sută la sută și height auto, ca să nu iasă din cutie.
+
+Greșeli frecvente. Ai uitat box sizing. Ai scris lățimea fără pixeli. Ai scris cinci valori la padding. Ai folosit lățime pe un span fără inline block. Margin zero auto nu centrează dacă cutia nu are lățime.
+
+Tema. Cinci carduri de jucători, fiecare cu un buton.
+
+Recapitulare. Conținut, padding, border și margin. Box sizing border box face lățimea să fie cât ai scris. Succes!

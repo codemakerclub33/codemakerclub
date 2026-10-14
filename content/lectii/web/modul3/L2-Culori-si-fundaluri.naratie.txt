@@ -1,0 +1,21 @@
+Lecția a doua din Modulul trei. Culori și fundaluri.
+
+Culorile sunt cea mai rapidă schimbare care face o pagină să arate nouă. Azi înveți felurile de a scrie o culoare, cum faci o culoare transparentă, cum pui o imagine sau un degrade pe fundal și cum îți alegi o paletă.
+
+Obiectivul. Minim: o pagină cu fundal colorat, o cutie cu fundal transparent și un degrade. Complet: în plus o imagine de fundal, o cutie citibilă peste imagine, o paletă făcută cu variabile și un test de citibilitate.
+
+Primul pas. O culoare se poate scrie cu nume, cu cod care începe cu diez, sau cu rgb. În rgb scrii trei numere, de la zero la două sute cincizeci și cinci: cât roșu, cât verde și cât albastru. Zero peste tot înseamnă negru, iar două sute cincizeci și cinci peste tot înseamnă alb.
+
+Al doilea pas. Rgba are un al patrulea număr, transparența, de la zero la unu. Zecimalele se scriu cu punct. Opacity face transparent tot elementul, inclusiv textul, în timp ce rgba face transparent doar fundalul. Pentru cutii cu text alege rgba.
+
+Al treilea pas. Imaginea de fundal se pune cu background image și url. Cu no repeat nu se repetă, cu cover acoperă tot elementul, iar cu position center este centrată. Imaginile alese nu au persoane. Textul peste o imagine se citește greu, așa că pui între ele o cutie semitransparentă. Min height o sută vh înseamnă cel puțin cât înălțimea ferestrei.
+
+Al patrulea pas. Linear gradient face un degrade. Scrii direcția, de exemplu to right, și apoi culorile, separate prin virgulă. Poți pune mai multe culori sau un unghi. Pentru degrade se folosește proprietatea background, nu background color.
+
+Al cincilea pas. Variabilele. În root scrii numele cu două liniuțe și culoarea, apoi o folosești cu var și numele. Dacă schimbi un singur rând, se schimbă toată pagina. O paletă bună are o culoare principală, una de accent, un fundal deschis și un text închis, foarte diferite una de alta.
+
+Greșeli frecvente. Ai uitat diezul. Ai scris rgb cu două numere. Ai pus virgulă la zecimale. Ai uitat virgulele din degrade. Ai uitat min height la degradeul de pe body.
+
+Tema. O pagină cu o paletă de patru culori, un degrade și o cutie transparentă, apoi o a doua variantă de culori.
+
+Recapitulare. Rgb amestecă lumina, rgba adaugă transparență, degradeul trece lin între culori, iar variabilele țin paleta într-un singur loc. Succes!

@@ -1,0 +1,19 @@
+Lecția a noua din Modulul trei. Adaptare la telefon.
+
+Pagina ta arată bine pe calculator. Dar mulți oameni o vor deschide pe telefon, unde ecranul este mult mai îngust. O pagină bună se adaptează singură la orice ecran.
+
+Obiectivul. Minim: o pagină cu viewport, o imagine care nu iese din ecran și o regulă media care schimbă ceva pe telefon. Complet: în plus un antet care trece în coloană, carduri care se așază singure, un titlu cu mărime adaptivă și testarea în DevTools.
+
+Primul pas. Linia viewport din head spune telefonului să folosească lățimea reală a ecranului. Fără ea, telefonul micșorează toată pagina și textul nu se mai citește. Apoi folosești unități care se adaptează: procente, rem și vw. Pe coloana de conținut pui max width și margin zero auto, nu o lățime fixă, care ar scoate pagina din ecran. Imaginile primesc max width o sută la sută și height auto.
+
+Al doilea pas. At media max width șase sute de pixeli înseamnă: dacă fereastra are cel mult șase sute de pixeli, aplică și regulile dinăuntru. Scrii regula după celelalte, ca să le poată înlocui. Pe telefon antetul trece din rând în coloană, cu flex direction column.
+
+Al treilea pas. Repeat auto fit minmax două sute douăzeci de pixeli, unu fr, face atâtea coloane câte încap, fără nicio regulă media. Clamp alege o mărime de text între un minim și un maxim, ca titlul să nu fie nici prea mare pe telefon, nici prea mic pe calculator.
+
+Al patrulea pas. Testezi cu DevTools: apeși F12, apoi pictograma cu telefon și tabletă, și alegi un dispozitiv. Dacă apare derulare pe orizontală, ceva este prea lat. Pentru degete, butoanele au minimum patruzeci și patru de pixeli înălțime, cu spațiu între ele, iar textul principal nu coboară sub un rem. Nimic important nu stă doar la hover.
+
+Greșeli frecvente. Ai uitat viewport. Ai pus lățimi fixe mari. Ai scris max width șase sute fără px. Ai pus regula media înaintea celorlalte. Ai testat doar pe calculator.
+
+Tema. Echipa mea de fotbal, adaptată pentru telefon.
+
+Recapitulare. Viewport, unități relative, imagini cu max width, regulă media, grilă auto fit și testare în DevTools. Succes!

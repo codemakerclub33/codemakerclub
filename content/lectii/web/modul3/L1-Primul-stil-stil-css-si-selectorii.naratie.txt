@@ -1,0 +1,21 @@
+Lecția nouă din Modulul trei. Primul stil: fișierul stil punct css și selectorii.
+
+Până acum ai pus stilul în atributul style sau într-un bloc style. Azi mutăm tot într-un fișier separat, pe care îl poate folosi orice pagină. Așa schimbi aspectul unui întreg site dintr-un singur loc.
+
+Obiectivul. Minim: o pagină legată la fișierul de stil, cu trei reguli, una pentru un tag, una pentru o clasă și una pentru un id. Complet: în plus o regulă cu mai mulți selectori separați prin virgulă, o regulă pentru elementele din interiorul unei clase, comentarii și explicația pentru cine câștigă între tag, clasă și id.
+
+Primul pas. Imaginează-ți un site cu douăzeci de pagini. Dacă stilul stă în fiecare pagină, schimbi douăzeci de fișiere. Dacă stă într-un singur fișier, schimbi un rând. Creezi un fișier numit stil punct css, în același folder cu pagina. În head adaugi un link, cu rel egal stylesheet și href egal stil punct css. În fișierul css nu scrii style și nu scrii taguri html, doar reguli. Dacă stilul nu apare, verifică numele fișierului, folderul și dacă ai salvat ambele fișiere.
+
+Al doilea pas. O regulă are un selector, care spune cine primește stilul, apoi acolade și rânduri cu proprietate, două puncte, valoare și punct și virgulă. Un selector scris doar cu numele tagului stilează toate tagurile de acel fel.
+
+Al treilea pas. Clasa se scrie în html fără punct, iar în css cu punct. Id-ul se scrie în css cu diez și se aplică unui singur element.
+
+Al patrulea pas. Mai mulți selectori se separă cu virgulă. Dacă scrii selectorul unei cutii, un spațiu și un alt selector, stilul se aplică doar în interiorul cutiei. Atenție la spațiu. Două clase lipite, fără spațiu, înseamnă un element care le are pe amândouă.
+
+Al cincilea pas. Cine câștigă? Tagul este cel mai slab, apoi clasa, apoi id-ul, apoi atributul style. La putere egală, câștigă regula scrisă mai jos. Comentariile se scriu între slash steluță și steluță slash.
+
+Greșeli frecvente. Ai scris style în fișierul css. Ai uitat link-ul din head. Ai uitat punctul înaintea clasei. Ai uitat o acoladă sau un punct și virgulă. Ai uitat să salvezi.
+
+Tema. Un site cu două pagini care folosesc același fișier de stil.
+
+Recapitulare. Stilul stă într-un fișier. Selectorii sunt tag, clasă și id. Id-ul bate clasa, iar clasa bate tagul. Succes!

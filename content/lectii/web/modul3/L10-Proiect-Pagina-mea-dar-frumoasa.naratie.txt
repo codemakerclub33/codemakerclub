@@ -1,0 +1,23 @@
+Lecția a zecea din Modulul trei. Proiect: Pagina mea, dar frumoasă.
+
+Ai învățat selectori, culori, text, cutii, Flexbox, Grid, efecte, animații și adaptare la telefon. Azi le folosești pe toate. Iei pagina făcută de tine în modulul trecut, Fișa animalului meu preferat, și o transformi dintr-o pagină simplă într-una frumoasă, cu un fișier de stil separat.
+
+Obiectivul. Minim: stil punct css legat corect, culori și fonturi alese, carduri cu chenar și colțuri rotunjite, un meniu orizontal cu Flexbox și o regulă media pentru telefon. Complet: în plus variabile pentru culori, grilă adaptivă, efecte la hover cu tranziție, o animație blândă, comentarii și o prezentare de un minut.
+
+Siguranța. Nu scrii date personale. Imaginile sunt din pachetul media sau făcute de tine. Animațiile sunt blânde, fără licăriri rapide, iar pagina respectă mișcarea redusă. Fonturile sunt cele din sistem.
+
+Primul pas. Planul. Alege patru culori care se potrivesc și două fonturi. Gândește cum arată antetul, cardurile și ce se întâmplă pe telefon. Verifică ca textul să se citească pe fundal.
+
+Al doilea pas. Mută stilul în stil punct css. Șterge blocul style din pagină și adaugă link rel stylesheet în head. Începe cu paleta în variabile, în root, apoi box sizing border box și imagini cu max width o sută la sută. Setează textul: font din sistem cu listă de rezervă, rem și line height unu virgulă șase.
+
+Al treilea pas. Antetul și meniul: meniul este o listă cu display flex și gap, iar nav primește position sticky cu top zero. Cardurile stau în main, într-o grilă cu repeat auto fit minmax trei sute de pixeli, cu chenar, colțuri rotunjite și umbră. Tabelul are antet colorat și rânduri alternative cu nth child even.
+
+Al patrulea pas. Hover cu transition pe meniu și pe carduri. O singură animație blândă, aparitia cardurilor, și regula prefers reduced motion la sfârșit. Apoi regula media pentru telefon: meniul poate trece pe mai multe rânduri, iar cardurile stau pe o coloană.
+
+Al cincilea pas. Verifici cu lista: stil legat, paletă în variabile, text citibil, meniu cu Flexbox, grilă, efecte, animație blândă, mișcare redusă, regulă media, fără derulare pe orizontală, comentarii. Apoi prezinți un minut: despre ce este pagina, de ce ai ales culorile, de ce ești mândru și ce a fost greu.
+
+Greșeli frecvente. Ai uitat link sau ai lăsat și style. Ai scris var fără două liniuțe. Ai scris timpul fără s. Textul nu se vede pe fundal.
+
+Tema. Arată pagina unui membru al familiei, pe calculator și pe telefon.
+
+Recapitulare. Stil separat, variabile, text citibil, Flexbox, Grid, hover, animații blânde și adaptare la telefon. Felicitări, ai terminat Modulul trei!

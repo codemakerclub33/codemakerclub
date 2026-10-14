@@ -1,0 +1,19 @@
+Lecția a șasea din Modulul trei. Grid și position.
+
+Flexbox așază elementele pe un singur rând. Când vrei rânduri și coloane în același timp, ca într-o galerie, folosești Grid. Apoi învățăm position, cu care așezi un element peste altul: o insignă în colț sau un buton care rămâne pe ecran.
+
+Obiectivul. Minim: o grilă cu trei coloane egale și șase cutii, plus o insignă într-un colț. Complet: în plus un element întins pe două coloane, un antet care rămâne sus la derulare, un buton fix și diferența dintre Flexbox și Grid.
+
+Primul pas. Scrii display grid pe părinte și grid template columns cu trei valori de un fr. Unitatea fr este o parte din spațiul liber. Repeat trei, unu fr, face același lucru, mai scurt. Gap pune spațiu între rânduri și coloane. Rândurile apar singure, cât este nevoie.
+
+Al doilea pas. Poți amesteci unitățile: două sute de pixeli și unu fr înseamnă o coloană fixă și una care ia restul. Grid auto rows dă înălțimea rândurilor. Cu grid column span doi, un element se întinde pe două coloane. Cu unu, bară, minus unu, se întinde pe toată lățimea.
+
+Al treilea pas. Position are mai multe valori. Relative lasă elementul la locul lui și îl poți împinge. Absolute îl scoate din rând și îl așază față de cel mai apropiat părinte care are position. De aceea părintele primește position relative, iar insigna primește position absolute, cu top și right.
+
+Al patrulea pas. Fixed așază elementul față de fereastră și rămâne acolo la derulare, bun pentru un buton Sus. Sticky stă normal, apoi se lipește sus când derulezi, dar are nevoie de top zero. Z index ordonează straturile: numărul mai mare stă deasupra, dar numai pe elemente care au position.
+
+Greșeli frecvente. Ai uitat display grid. Ai scris gap fără pixeli. Insigna fuge în colțul paginii pentru că părintele nu are position relative. Antetul sticky nu are top. Z index are unitate, deși este un număr simplu.
+
+Tema. Colecția mea, cu opt cutii, insigne și un buton Sus.
+
+Recapitulare. Grid pentru rânduri și coloane. Relative pe părinte, absolute pe copil. Fixed rămâne pe ecran, sticky se lipește sus. Succes!

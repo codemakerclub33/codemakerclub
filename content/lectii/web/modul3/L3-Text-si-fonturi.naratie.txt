@@ -1,0 +1,21 @@
+Lecția a treia din Modulul trei. Text și fonturi.
+
+Pe un site se citește mult. Un text bine aranjat se citește cu plăcere, iar unul înghesuit sau prea mic îți dă dureri de cap. Azi alegi literele, mărimea, grosimea și spațiile care fac textul plăcut.
+
+Obiectivul. Minim: o pagină cu un font ales, titluri de mărimi diferite și paragrafe cu spațiu între rânduri. Complet: în plus text cu umbră, titlu cu majuscule și spațiu între litere, link fără subliniere, o coloană de text îngustă și centrată și explicația pentru lista de rezervă a fonturilor.
+
+Primul pas. Font family alege felul literelor. Scrii mai multe nume, separate prin virgulă, pentru că fiecare calculator are alte fonturi. Browserul încearcă primul font, apoi al doilea. Ultimul nume este un grup general care există mereu: sans serif, serif sau monospace. Un nume cu spațiu se scrie între ghilimele. Azi folosim doar fonturile deja instalate.
+
+Al doilea pas. Mărimea se scrie în pixeli sau în rem. Un rem înseamnă mărimea de bază a paginii, de obicei șaisprezece pixeli. Rem se adaptează, dacă omul își mărește literele din setări. Între număr și unitate nu se pune spațiu. Font weight îngroașă, iar font style italic înclină.
+
+Al treilea pas. Text align poate fi stânga, mijloc, dreapta sau justify. Line height este înălțimea unui rând. Scrisă ca număr fără unitate, de exemplu unu virgulă șase, face textul plăcut de citit. Letter spacing este spațiul dintre litere.
+
+Al patrulea pas. Text decoration none scoate sublinierea de la un link, dar atunci fă linkul altfel colorat, ca să se vadă că poate fi apăsat. Text transform uppercase scrie cu majuscule fără să schimbi textul din html. Text shadow face umbră, cu patru valori: spre dreapta, în jos, încețoșarea și culoarea. Folosește umbra cu măsură.
+
+Al cincilea pas. Rândurile foarte lungi obosesc ochii. Fă o coloană îngustă, cu max width, și centrată, cu margin zero auto. Alege cel mult două fonturi pe pagină, unul pentru titluri și unul pentru text.
+
+Greșeli frecvente. Ai uitat grupul general la sfârșitul listei. Ai uitat ghilimelele la un font cu spațiu. Ai scris mărimea cu spațiu. Ai scris text align middle în loc de center. Ai pus prea multe fonturi.
+
+Tema. Fișa unui personaj de poveste, cu două fonturi, un titlu cu majuscule și un citat stilat.
+
+Recapitulare. Fontul se alege cu o listă de rezervă, mărimea cu rem, iar aerul dintre rânduri face textul plăcut. Succes!

@@ -1,0 +1,21 @@
+Lecția a opta din Modulul trei. Animații cu keyframes.
+
+Tranziția are nevoie de o atingere ca să pornească. O animație pornește singură și poate avea mai mulți pași: un buton care pulsează, o minge care sare, un titlu care apare încet, un cerc care se învârte.
+
+Obiectivul. Minim: un buton care pulsează la infinit. Complet: în plus un titlu care apare lin, o minge care sare, un cerc care se învârte și o regulă care oprește animațiile la cererea utilizatorului.
+
+Primul pas. O animație are două părți. Prima este rețeta: at keyframes, urmat de un nume ales de tine, și înăuntru from și to, sau procente. A doua este pornirea: pe element scrii animation name și animation duration. Numele trebuie să fie identic în ambele locuri, iar durata se scrie cu s, de exemplu două secunde.
+
+Al doilea pas. Pentru mai mulți pași folosești procente: zero la sută, cincizeci la sută și o sută la sută. Pentru controlul rulării ai animation delay, pentru așteptare, animation iteration count, cu valoarea infinite pentru repetare la nesfârșit, animation direction cu alternate, pentru înainte și înapoi, și animation fill mode both. Scurtătura animation le scrie pe toate într-o singură linie: nume, durată, fel, întârziere, repetări.
+
+Al treilea pas. Pulsarea mărește blând butonul de la unu la unu virgulă unu. Mingea sare cu translate Y. Rândurile apar unul după altul, cu delay diferit, iar both le ține invizibile cât așteaptă. Cercul care se învârte are o latură colorată și rotate de trei sute șaizeci de grade, cu viteză linear.
+
+Al patrulea pas. Animation play state paused oprește animația cât ții mouse-ul deasupra. Animează mai ales transform și opacity, pentru că se calculează ușor.
+
+Siguranța. Niciun element nu trebuie să licărească de mai mult de trei ori pe secundă, pentru că poate provoca disconfort sau crize unor oameni. Folosește puține animații și nu pune infinit pe text care se citește. Respectă dorința utilizatorului cu at media prefers reduced motion reduce, unde pui animation none. Scrie regula la sfârșitul fișierului.
+
+Greșeli frecvente. Ai scris keyframe fără s. Numele nu este identic. Ai scris durata fără s. Ai uitat durata. Ai pus infinit pe tot.
+
+Tema. Povestea mea animată.
+
+Recapitulare. Rețeta cu keyframes, pornirea cu animation. Animează transform și opacity. Fără licăriri rapide și cu mișcare redusă la cerere. Succes!
