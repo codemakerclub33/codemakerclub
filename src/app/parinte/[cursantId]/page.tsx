@@ -210,6 +210,9 @@ function ParinteCopilDetail() {
                               {m.bifate}/{m.total}
                             </span>
                           </div>
+                          {m.descriere ? (
+                            <p className="text-xs text-slate-500 leading-relaxed mb-2">{m.descriere}</p>
+                          ) : null}
                           <ul className="space-y-1 pl-1">
                             {m.lectii.map(l => (
                               <li

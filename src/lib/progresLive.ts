@@ -1,4 +1,5 @@
 import { cursuri, module, lectii } from '@/lib/mockData'
+import { descriereModulParinte } from '@/lib/moduleParinte'
 import type { ProgresCursantData } from '@/app/actions/progres'
 
 export type RezumatCopilLive = {
@@ -82,6 +83,7 @@ export function progresPeModuleLive(
       return {
         id: m.id,
         nume: m.nume,
+        descriere: descriereModulParinte[m.id] ?? null,
         ordine: m.ordine,
         bifate,
         total: lectiiM.length,
