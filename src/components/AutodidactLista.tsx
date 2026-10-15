@@ -11,7 +11,6 @@ import {
 } from '@/app/actions/abonamente'
 import { cursuri, module as moduleCurriculum } from '@/lib/mockData'
 import { diferentaZile, esteActiv } from '@/lib/autodidact'
-import { getSession } from '@/lib/auth'
 import { isSupabaseConfiguredClient } from '@/lib/supabase/publicFlag'
 
 type Stare = 'activ' | 'curand' | 'expirat'
@@ -42,7 +41,6 @@ export default function AutodidactLista() {
   const [filtruTip, setFiltruTip] = useState<'toate' | 'gratuit' | 'platit'>('toate')
   const [filtruCurs, setFiltruCurs] = useState('')
   const [busyId, setBusyId] = useState<string | null>(null)
-  const esteAdmin = getSession()?.rol === 'admin'
 
   async function incarca() {
     const r = await listAutodidactToateAction()
@@ -247,7 +245,7 @@ export default function AutodidactLista() {
                 </td>
                 <td className="px-4 py-3 text-right">
                   <div className="flex justify-end gap-2">
-                    {r.gratuit && esteAdmin && (
+                    {r.gratuit && r.poate_anula && (
                       <button
                         disabled={busyId === r.id}
                         onClick={() => prelungeste(r.id)}
@@ -256,7 +254,7 @@ export default function AutodidactLista() {
                         {busyId === r.id ? '…' : 'Prelungește +30 zile'}
                       </button>
                     )}
-                    {esteAdmin && (
+                    {r.poate_anula && (
                       <button
                         disabled={busyId === r.id}
                         onClick={() => anuleaza(r)}

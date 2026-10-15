@@ -590,6 +590,8 @@ export type AutodidactRand = AutodidactAcces & {
   nume: string
   prenume: string
   email_parinte: string
+  /** Adevărat doar pentru admin (decis pe server). */
+  poate_anula: boolean
 }
 
 /**
@@ -650,6 +652,7 @@ export async function listAutodidactToateAction(): Promise<
         nume: c?.nume ?? '',
         prenume: c?.prenume ?? '(șters)',
         email_parinte: c?.email_parinte ?? '',
+        poate_anula: acces.rol === 'admin',
       }
     }),
   }
