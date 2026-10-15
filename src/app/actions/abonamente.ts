@@ -35,6 +35,8 @@ async function verificaAcces() {
   return { ok: false as const, error: 'Acces interzis.' }
 }
 
+const DATA_ISO = /^\d{4}-\d{2}-\d{2}$/
+
 /** Profesorul poate lucra doar cu cursanții asignați lui. */
 function poateCursant(acces: { cursantIds: string[] | null }, cursantId: string): boolean {
   return acces.cursantIds === null || acces.cursantIds.includes(cursantId)
@@ -135,6 +137,7 @@ export type DetaliiCursantAbonament = {
     nota: string | null
   }>
   plati: AbonamenteDate['plati']
+  esteAdmin: boolean
 }
 
 export async function getDetaliiCursantAbonamentAction(
@@ -173,8 +176,70 @@ export async function getDetaliiCursantAbonamentAction(
       abonamente: abonamente ?? [],
       sedinte: sedinte ?? [],
       plati: plati ?? [],
+      esteAdmin: acces.rol === 'admin',
     },
   }
+}
+
+export type ModificaPlataInput = {
+  id: string
+  suma: number
+  data_plata: string
+  metoda: 'cash' | 'transfer' | 'card'
+  nota?: string | null
+  /** Doar pentru plățile de ședințe (au abonament legat). */
+  sedinte_incluse?: number
+}
+
+/** Admin: corectează o plată introdusă greșit (și abonamentul/accesul legat de ea). */
+export async function modificaPlataAction(
+  input: ModificaPlataInput,
+): Promise<{ ok: true } | { ok: false; error: string }> {
+  const acces = await verificaAcces()
+  if (!acces.ok) return acces
+  if (acces.rol !== 'admin') return { ok: false, error: 'Doar adminul poate modifica plăți.' }
+  const { admin } = acces
+
+  if (!/^[0-9a-f-]{36}$/i.test(input.id)) return { ok: false, error: 'Plată invalidă.' }
+  if (!(input.suma > 0)) return { ok: false, error: 'Sumă invalidă.' }
+  if (!DATA_ISO.test(input.data_plata)) return { ok: false, error: 'Dată invalidă.' }
+  if (!['cash', 'transfer', 'card'].includes(input.metoda)) return { ok: false, error: 'Metodă invalidă.' }
+  if (input.sedinte_incluse !== undefined && !(input.sedinte_incluse > 0)) {
+    return { ok: false, error: 'Număr ședințe invalid.' }
+  }
+
+  const { data: plata } = await admin
+    .from('plati')
+    .select('id, abonament_id')
+    .eq('id', input.id)
+    .maybeSingle()
+  if (!plata) return { ok: false, error: 'Plata nu a fost găsită.' }
+
+  const { error } = await admin
+    .from('plati')
+    .update({
+      suma: input.suma,
+      data_plata: input.data_plata,
+      metoda: input.metoda,
+      nota: input.nota?.trim() || null,
+    })
+    .eq('id', input.id)
+  if (error) return { ok: false, error: error.message }
+
+  if (plata.abonament_id) {
+    const upd: { pret: number; data_start: string; sedinte_incluse?: number } = {
+      pret: input.suma,
+      data_start: input.data_plata,
+    }
+    if (input.sedinte_incluse !== undefined) upd.sedinte_incluse = input.sedinte_incluse
+    const { error: aboErr } = await admin.from('abonamente').update(upd).eq('id', plata.abonament_id)
+    if (aboErr) return { ok: false, error: aboErr.message }
+  } else {
+    // Autodidact: păstrăm prețul accesului în pas cu suma (datele de acces rămân neschimbate)
+    await admin.from('acces_autodidact').update({ pret: input.suma }).eq('plata_id', input.id)
+  }
+
+  return { ok: true }
 }
 
 export type InregistreazaPlataInput = {
@@ -252,8 +317,6 @@ export type AutodidactAcces = {
   gratuit: boolean
   motiv: string | null
 }
-
-const DATA_ISO = /^\d{4}-\d{2}-\d{2}$/
 
 async function accesuriAutodidact(
   admin: ReturnType<typeof createAdminClient>,

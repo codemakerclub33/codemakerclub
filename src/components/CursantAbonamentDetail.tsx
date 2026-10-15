@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { ArrowLeft, CreditCard } from 'lucide-react'
 import AdaugaPlataButton from '@/components/AdaugaPlataButton'
+import EditeazaPlataButton from '@/components/EditeazaPlataButton'
 import {
   getDetaliiCursantAbonamentAction,
   type DetaliiCursantAbonament,
@@ -145,7 +146,19 @@ export default function CursantAbonamentDetail({ cursantId }: { cursantId: strin
                     {p.nota && <span className="text-xs text-slate-400">{p.nota}</span>}
                   </div>
                 </div>
-                <span className="text-emerald-600 font-bold text-lg">{p.suma} lei</span>
+                <div className="flex items-center gap-2">
+                  <span className="text-emerald-600 font-bold text-lg">{p.suma} lei</span>
+                  {data.esteAdmin && (
+                    <EditeazaPlataButton
+                      key={`${p.id}-${p.suma}-${p.data_plata}-${p.metoda}-${p.nota ?? ''}`}
+                      plata={p}
+                      sedinteIncluse={
+                        abonamente.find(a => a.id === p.abonament_id)?.sedinte_incluse ?? null
+                      }
+                      onSaved={refresh}
+                    />
+                  )}
+                </div>
               </div>
             ))
           )}
