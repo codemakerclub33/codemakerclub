@@ -142,7 +142,15 @@ export default function CursantiLista() {
   const filtrati = useMemo(() => {
     const query = q.trim().toLowerCase()
 
-    return totiCursanti.filter(c => {
+    const sortati = [...totiCursanti].sort((a, b) => {
+      if (a.activ !== b.activ) return a.activ ? -1 : 1
+      return (
+        a.prenume.localeCompare(b.prenume, 'ro', { sensitivity: 'base' }) ||
+        a.nume.localeCompare(b.nume, 'ro', { sensitivity: 'base' })
+      )
+    })
+
+    return sortati.filter(c => {
       if (status === 'activ' && !c.activ) return false
       if (status === 'inactiv' && c.activ) return false
 
