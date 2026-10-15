@@ -35,7 +35,7 @@ async function verificaAcces(cursantId: string) {
 }
 
 export type ConturiCursantResult =
-  | { ok: true; username: string; email_parinte: string; telefon_parinte: string | null }
+  | { ok: true; username: string; email_parinte: string; telefon_parinte: string | null; pin: string | null }
   | { ok: false; error: string }
 
 export async function getConturiCursantAction(cursantId: string): Promise<ConturiCursantResult> {
@@ -48,8 +48,14 @@ export async function getConturiCursantAction(cursantId: string): Promise<Contur
     .eq('id', cursantId)
     .maybeSingle()
   if (error || !data) return { ok: false, error: error?.message ?? 'Cursant inexistent.' }
+  const { data: pinRow } = await acces.admin
+    .from('cursanti_pin')
+    .select('pin')
+    .eq('cursant_id', cursantId)
+    .maybeSingle()
   return {
     ok: true,
+    pin: pinRow?.pin ?? null,
     username: data.username,
     email_parinte: data.email_parinte,
     telefon_parinte: data.telefon_parinte,
@@ -81,6 +87,9 @@ export async function resetPinElevAction(cursantId: string): Promise<ResetPinRes
     password: elevAuthPassword(pin),
   })
   if (updErr) return { ok: false, error: updErr.message }
+  await admin
+    .from('cursanti_pin')
+    .upsert({ cursant_id: cursantId, pin, actualizat_la: new Date().toISOString() })
 
   const mesaj = mesajWhatsAppLogin({
     prenume: cursant.prenume,

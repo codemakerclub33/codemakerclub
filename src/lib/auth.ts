@@ -18,6 +18,7 @@ export {
   genereazaPin,
   genereazaUsername,
   mesajWhatsAppLogin,
+  numarWhatsApp,
 } from './authHelpers'
 
 export type Rol = 'admin' | 'parinte' | 'elev' | 'profesor'

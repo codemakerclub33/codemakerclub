@@ -205,6 +205,9 @@ export async function adaugaCursantAction(
     return { ok: false, error: elevProfileErr.message }
   }
 
+  // PIN vizibil pentru staff (tabel separat, fără acces pentru elev/părinte)
+  await admin.from('cursanti_pin').upsert({ cursant_id: cursant.id, pin })
+
   // Cont părinte: reutilizează dacă există deja
   let parolaParinte = input.parola_parinte?.trim() || ''
   let parolaNoua = false

@@ -117,6 +117,20 @@ export type Database = {
         Update: Partial<Database['public']['Tables']['parinte_cursanti']['Insert']>
         Relationships: []
       }
+      cursanti_pin: {
+        Row: {
+          cursant_id: string
+          pin: string
+          actualizat_la: string
+        }
+        Insert: {
+          cursant_id: string
+          pin: string
+          actualizat_la?: string
+        }
+        Update: Partial<Database['public']['Tables']['cursanti_pin']['Insert']>
+        Relationships: []
+      }
       profesor_cursanti: {
         Row: {
           profesor_id: string

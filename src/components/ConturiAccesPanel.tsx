@@ -5,6 +5,7 @@ import {
   resetPinElev,
   resetParolaParinte,
   mesajWhatsAppLogin,
+  numarWhatsApp,
   asiguraConturiCursant,
 } from '@/lib/auth'
 import {
@@ -36,6 +37,7 @@ export default function ConturiAccesPanel({ cursant }: Props) {
   const [pin, setPin] = useState('')
   const [parolaParinte, setParolaParinte] = useState('')
   const [pinCunoscut, setPinCunoscut] = useState(true)
+  const [pinSalvat, setPinSalvat] = useState(false)
   const [copied, setCopied] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
@@ -44,7 +46,8 @@ export default function ConturiAccesPanel({ cursant }: Props) {
       const r = await getConturiCursantAction(cursant.id)
       if (r.ok) {
         setUsername(r.username)
-        setPin('••••')
+        setPin(r.pin ?? '••••')
+        setPinSalvat(r.pin !== null)
         setPinCunoscut(false)
         setParolaParinte('••••••••')
       } else {
@@ -74,7 +77,7 @@ export default function ConturiAccesPanel({ cursant }: Props) {
   const mesaj = mesajWhatsAppLogin({
     prenume: cursant.prenume,
     username,
-    pin: pinCunoscut ? pin : '(vezi mai jos, după reset)',
+    pin: pinCunoscut || pinSalvat ? pin : '(vezi mai jos, după reset)',
     email_parinte: cursant.email_parinte,
     parola_parinte: pinCunoscut ? parolaParinte : '(vezi mai jos, după reset)',
   })
@@ -86,7 +89,7 @@ export default function ConturiAccesPanel({ cursant }: Props) {
   }
 
   const waUrl = cursant.telefon_parinte
-    ? `https://wa.me/4${cursant.telefon_parinte.replace(/\D/g, '').replace(/^0/, '')}?text=${encodeURIComponent(mesaj)}`
+    ? `https://wa.me/${numarWhatsApp(cursant.telefon_parinte)}?text=${encodeURIComponent(mesaj)}`
     : null
 
   const onResetPin = async () => {
@@ -98,6 +101,7 @@ export default function ConturiAccesPanel({ cursant }: Props) {
         return
       }
       setPin(r.pin)
+      setPinSalvat(true)
       setPinCunoscut(true)
       return
     }

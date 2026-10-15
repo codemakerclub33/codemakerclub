@@ -8,6 +8,7 @@ import {
   sedinteRamaseCursant,
   type BifareResult,
 } from '@/lib/mockStore'
+import { numarWhatsApp } from '@/lib/authHelpers'
 import { mesajSedinteEpuizate } from '@/lib/notificari'
 import { isSupabaseConfiguredClient } from '@/lib/supabase/publicFlag'
 
@@ -81,10 +82,10 @@ export default function AbonamentNotificariPanel({
   }
 
   const openWhatsApp = () => {
-    const phone = (telefonParinte ?? '').replace(/\D/g, '')
+    const phone = numarWhatsApp(telefonParinte)
     const text = encodeURIComponent(mesaj)
     const url = phone
-      ? `https://wa.me/40${phone.replace(/^0/, '')}?text=${text}`
+      ? `https://wa.me/${phone}?text=${text}`
       : `https://wa.me/?text=${text}`
     window.open(url, '_blank')
   }

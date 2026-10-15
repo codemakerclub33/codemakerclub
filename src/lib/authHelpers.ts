@@ -39,6 +39,15 @@ export function genereazaParola(len = 8): string {
   return s
 }
 
+/** Număr românesc pentru wa.me: doar cifre, cu prefix 40 (07xx, +407xx, 00407xx, 7xx). */
+export function numarWhatsApp(telefon: string | null | undefined): string {
+  let cifre = (telefon ?? '').replace(/\D/g, '')
+  if (cifre.startsWith('00')) cifre = cifre.slice(2)
+  if (cifre.startsWith('40')) return cifre
+  if (cifre.startsWith('0')) return `4${cifre}`
+  return cifre ? `40${cifre}` : ''
+}
+
 const SITE_LOGIN_URL = 'https://codemakerclub.ro/login'
 const SITE_TERMENI_URL = 'https://codemakerclub.ro/termeni'
 
