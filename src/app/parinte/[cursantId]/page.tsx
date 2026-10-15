@@ -211,7 +211,15 @@ function ParinteCopilDetail() {
                             </span>
                           </div>
                           {m.descriere ? (
-                            <p className="text-xs text-slate-500 leading-relaxed mb-2">{m.descriere}</p>
+                            <p
+                              className="text-sm text-slate-700 leading-relaxed mb-2 rounded-r-lg px-3 py-2"
+                              style={{
+                                borderLeft: `4px solid ${curs.culoare}`,
+                                backgroundColor: `${curs.culoare}14`,
+                              }}
+                            >
+                              {m.descriere}
+                            </p>
                           ) : null}
                           <ul className="space-y-1 pl-1">
                             {m.lectii.map(l => (
