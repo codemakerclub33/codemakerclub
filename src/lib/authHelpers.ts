@@ -50,21 +50,21 @@ export function mesajWhatsAppLogin(opts: {
   parola_parinte: string
 }): string {
   return [
-    `Bună ziua! 👋`,
+    `Bună ziua!`,
     `Iată conturile Code Maker Club pentru ${opts.prenume}:`,
     ``,
-    `👨‍👩‍👧 *Cont părinte*`,
+    `*Cont părinte*`,
     `Email: ${opts.email_parinte}`,
     `Parolă: ${opts.parola_parinte}`,
     ``,
-    `🎮 *Cont elev*`,
+    `*Cont elev*`,
     `Username: ${opts.username}`,
     `PIN: ${opts.pin}`,
     ``,
-    `🔗 Intrați aici: ${SITE_LOGIN_URL}`,
-    `📄 Termeni și condiții: ${SITE_TERMENI_URL}`,
+    `Intrați aici: ${SITE_LOGIN_URL}`,
+    `Termeni și condiții: ${SITE_TERMENI_URL}`,
     ``,
-    `Mulțumim și mult succes! 🚀`,
+    `Mulțumim și mult succes!`,
     `Echipa Code Maker Club`,
   ].join('\n')
 }
