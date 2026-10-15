@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { createPortal } from 'react-dom'
 import { MessageSquareHeart, X } from 'lucide-react'
 import { trimiteFeedbackAction } from '@/app/actions/feedback'
 
@@ -42,9 +43,10 @@ export default function FeedbackButton({ text = 'Trimite feedback' }: { text?: s
         <MessageSquareHeart size={16} /> <span className="hidden sm:inline">{text}</span>
       </button>
 
-      {deschis && (
+      {deschis &&
+        createPortal(
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4"
+          className="fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto bg-black/40 p-4"
           role="dialog"
           aria-modal="true"
           aria-label="Trimite feedback"
@@ -113,7 +115,8 @@ export default function FeedbackButton({ text = 'Trimite feedback' }: { text?: s
               </>
             )}
           </div>
-        </div>
+        </div>,
+        document.body,
       )}
     </>
   )
