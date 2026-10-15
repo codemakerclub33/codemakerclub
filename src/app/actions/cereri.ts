@@ -15,6 +15,7 @@ export type CerereContact = {
   mesaj: string
   termeni_versiune: string
   status: StatusCerere
+  citita: boolean
   created_at: string
 }
 
@@ -39,11 +40,26 @@ export async function listCereriAction(): Promise<
 > {
   const gate = await requireAdmin()
   if (!gate.ok) return gate
-  const { data, error } = await createAdminClient()
+  const admin = createAdminClient()
+  const { data, error } = await admin
     .from('cereri_contact')
-    .select('id, nume, email, telefon, mesaj, termeni_versiune, status, created_at')
+    .select('id, nume, email, telefon, mesaj, termeni_versiune, status, citita, created_at')
     .order('created_at', { ascending: false })
     .limit(500)
+  if (error && /citita/i.test(error.message)) {
+    // Migrarea pentru „citită” nu e rulată încă: arătăm cererile, cu „nouă” = necitită
+    const vechi = await admin
+      .from('cereri_contact')
+      .select('id, nume, email, telefon, mesaj, termeni_versiune, status, created_at')
+      .order('created_at', { ascending: false })
+      .limit(500)
+    if (!vechi.error) {
+      return {
+        ok: true,
+        data: (vechi.data ?? []).map(c => ({ ...c, citita: c.status !== 'noua' })) as CerereContact[],
+      }
+    }
+  }
   if (error) {
     const lipsa = /status|cereri_contact/i.test(error.message)
     return {
@@ -54,6 +70,16 @@ export async function listCereriAction(): Promise<
     }
   }
   return { ok: true, data: (data ?? []) as CerereContact[] }
+}
+
+export async function setCititaCerereAction(
+  id: string,
+): Promise<{ ok: true } | { ok: false; error: string }> {
+  const gate = await requireAdmin()
+  if (!gate.ok) return gate
+  if (!/^[0-9a-f-]{36}$/i.test(id)) return { ok: false, error: 'ID invalid.' }
+  const { error } = await createAdminClient().from('cereri_contact').update({ citita: true }).eq('id', id)
+  return error ? { ok: false, error: error.message } : { ok: true }
 }
 
 export async function setStatusCerereAction(

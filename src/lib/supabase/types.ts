@@ -87,6 +87,7 @@ export type Database = {
           termeni_acceptati: boolean
           termeni_versiune: string
           status: 'noua' | 'contactata' | 'inscris' | 'refuzata'
+          citita: boolean
           created_at: string
         }
         Insert: {
@@ -98,6 +99,7 @@ export type Database = {
           termeni_acceptati: boolean
           termeni_versiune: string
           status?: 'noua' | 'contactata' | 'inscris' | 'refuzata'
+          citita?: boolean
           created_at?: string
         }
         Update: Partial<Database['public']['Tables']['cereri_contact']['Insert']>

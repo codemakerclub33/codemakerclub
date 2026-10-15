@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { Check, ChevronRight, Mail, Phone, Trash2 } from 'lucide-react'
 import {
   listCereriAction,
+  setCititaCerereAction,
   setStatusCerereAction,
   stergeCerereAction,
   type CerereContact,
@@ -62,14 +63,23 @@ export default function CereriPanel() {
     else setError(r.error)
   }
 
-  const noi = cereri.filter(c => c.status === 'noua').length
+  async function deschide(c: CerereContact) {
+    const nou = deschisId === c.id ? null : c.id
+    setDeschisId(nou)
+    if (nou && !c.citita) {
+      setCereri(prev => prev.map(x => (x.id === c.id ? { ...x, citita: true } : x)))
+      await setCititaCerereAction(c.id)
+    }
+  }
+
+  const noi = cereri.filter(c => !c.citita).length
   const vizibile = filtru === 'toate' ? cereri : cereri.filter(c => c.status === filtru)
 
   return (
     <div className="max-w-4xl">
       <h1 className="text-2xl font-bold text-slate-900">Cereri de contact</h1>
       <p className="text-slate-500 mt-1 mb-6">
-        Mesajele trimise din formularul de pe site. {noi > 0 ? `${noi} noi.` : 'Nicio cerere nouă.'}
+        Mesajele trimise din formularul de pe site. {noi > 0 ? `${noi} necitite.` : 'Nicio cerere necitită.'}
       </p>
 
       <div className="flex flex-wrap gap-2 mb-5">
@@ -98,10 +108,13 @@ export default function CereriPanel() {
           const st = STATUSURI.find(s => s.id === c.status)
           const deschis = deschisId === c.id
           return (
-            <article key={c.id} className={c.status === 'noua' ? 'bg-amber-50/40' : ''}>
+            <article
+              key={c.id}
+              className={c.citita ? '' : 'bg-orange-100 border-l-4 border-orange-500'}
+            >
               <button
                 type="button"
-                onClick={() => setDeschisId(deschis ? null : c.id)}
+                onClick={() => void deschide(c)}
                 aria-expanded={deschis}
                 className="w-full text-left px-4 py-2.5 flex items-center gap-3 hover:bg-slate-50"
               >
