@@ -239,7 +239,7 @@ export default function AutodidactLista() {
                   {dataRo(r.data_start)} – {dataRo(r.data_sfarsit)}
                 </td>
                 <td className="px-4 py-3">
-                  <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${STARE_STIL[s.tip]}`}>
+                  <span className={`rounded-full px-2 py-0.5 text-xs font-medium whitespace-nowrap ${STARE_STIL[s.tip]}`}>
                     {s.tip === 'expirat' ? 'expirat' : s.tip === 'curand' ? `expiră în ${s.zile} zile` : `activ · ${s.zile} zile`}
                   </span>
                 </td>
@@ -249,7 +249,7 @@ export default function AutodidactLista() {
                       <button
                         disabled={busyId === r.id}
                         onClick={() => prelungeste(r.id)}
-                        className="rounded-lg border border-slate-200 px-3 py-1.5 text-xs font-medium hover:bg-slate-50 disabled:opacity-50"
+                        className="rounded-lg border border-slate-200 px-3 py-1.5 text-xs font-medium whitespace-nowrap hover:bg-slate-50 disabled:opacity-50"
                       >
                         {busyId === r.id ? '…' : 'Prelungește +30 zile'}
                       </button>
@@ -258,7 +258,7 @@ export default function AutodidactLista() {
                       <button
                         disabled={busyId === r.id}
                         onClick={() => anuleaza(r)}
-                        className="rounded-lg border border-red-200 text-red-600 px-3 py-1.5 text-xs font-medium hover:bg-red-50 disabled:opacity-50"
+                        className="rounded-lg border border-red-200 text-red-600 px-3 py-1.5 text-xs font-medium whitespace-nowrap hover:bg-red-50 disabled:opacity-50"
                       >
                         Anulează
                       </button>
