@@ -40,3 +40,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# backup-uri locale ale bazei de date (date personale, NU se urcă pe git)
+/backups
