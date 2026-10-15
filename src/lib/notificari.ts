@@ -52,6 +52,36 @@ export function subiectEmailPoliticaPrezenta(): string {
   return `Code Maker Club Focșani — prezența la curs`
 }
 
+export function subiectAutodidactExpira(prenumeCopil: string): string {
+  return `Code Maker Club Focșani — accesul Autodidact al lui ${prenumeCopil} expiră curând`
+}
+
+/** Email către părinte cu puțin timp înainte ca accesul Autodidact să expire. */
+export function mesajAutodidactExpira(opts: {
+  prenume: string
+  modul: string
+  dataSfarsit: string
+  zileRamase: number
+  pret: number
+  limitaReducere: string
+}): string {
+  const zile = opts.zileRamase === 1 ? 'a mai rămas 1 zi' : `au mai rămas ${opts.zileRamase} zile`
+  const reducere =
+    opts.pret < 200
+      ? `\nPrețul este redus (${opts.pret} lei în loc de 200 lei) pentru că ${opts.prenume} continuă fără pauză. Reducerea se păstrează dacă reînnoirea se face cel târziu pe ${opts.limitaReducere}.`
+      : ''
+  return `Bună ziua!
+
+Accesul Autodidact al lui ${opts.prenume} la modulul „${opts.modul}” expiră pe ${opts.dataSfarsit} (${zile}).
+
+Dacă doriți ca ${opts.prenume} să continue cu următorul modul, prețul este ${opts.pret} lei pentru 30 de zile.${reducere}
+
+Pentru reînnoire ne puteți răspunde la acest email sau ne scrieți la contact@codemakerclub.ro.
+
+Mulțumim!
+Code Maker Club Focșani`
+}
+
 /** Stub: în producție → Resend / Supabase Edge Function */
 export async function trimiteEmailSedinteEpuizate(opts: {
   emailParinte: string

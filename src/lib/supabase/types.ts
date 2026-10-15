@@ -329,18 +329,20 @@ export type Database = {
         Row: {
           id: string
           cursant_id: string
-          tip: 'sedinte_epuizate'
+          tip: 'sedinte_epuizate' | 'autodidact_expira'
           email_catre: string
           sedinte_ramase: number
+          acces_id: string | null
           trimis_la: string
           created_at: string
         }
         Insert: {
           id?: string
           cursant_id: string
-          tip: 'sedinte_epuizate'
+          tip: 'sedinte_epuizate' | 'autodidact_expira'
           email_catre: string
           sedinte_ramase: number
+          acces_id?: string | null
           trimis_la?: string
           created_at?: string
         }

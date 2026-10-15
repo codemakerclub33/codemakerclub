@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/autodidact-expira",
+      "schedule": "0 7 * * *"
+    }
+  ]
+}
