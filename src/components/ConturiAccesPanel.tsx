@@ -79,7 +79,9 @@ export default function ConturiAccesPanel({ cursant }: Props) {
     username,
     pin: pinCunoscut || pinSalvat ? pin : '(vezi mai jos, după reset)',
     email_parinte: cursant.email_parinte,
-    parola_parinte: pinCunoscut ? parolaParinte : '(vezi mai jos, după reset)',
+    parola_parinte: parolaParinte.startsWith('•')
+      ? 'cea primită la înscriere (dacă ai uitat-o, spune-ne și ți-o resetăm)'
+      : parolaParinte,
   })
 
   const copy = async () => {
