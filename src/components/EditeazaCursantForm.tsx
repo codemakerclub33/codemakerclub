@@ -260,9 +260,8 @@ export default function EditeazaCursantForm({ cursantId }: { cursantId: string }
         <div className="mt-8 max-w-xl rounded-2xl border border-red-200 bg-red-50/60 p-6">
           <h2 className="font-bold text-red-700 mb-1">Zonă periculoasă</h2>
           <p className="text-sm text-slate-600 mb-4">
-            Șterge definitiv cursantul, progresul și contul lui de elev. Contul părintelui se
-            șterge doar dacă nu mai are alți copii. Nu se poate șterge un cursant cu plăți
-            înregistrate – dezactivează-l în schimb.
+            Șterge definitiv cursantul, progresul, plățile și contul lui de elev. Contul
+            părintelui se șterge doar dacă nu mai are alți copii. Acțiunea nu se poate anula.
           </p>
           <p className="text-sm text-slate-700 mb-2">
             Scrie <strong>{form.prenume} {form.nume}</strong> pentru confirmare:

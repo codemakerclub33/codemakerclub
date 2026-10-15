@@ -626,16 +626,9 @@ export async function stergeCursantAction(
   const { data: me } = await admin.from('profile').select('rol').eq('id', auth.user.id).maybeSingle()
   if (me?.rol !== 'admin') return { ok: false, error: 'Doar adminul poate șterge cursanți.' }
 
-  const { count: nrPlati } = await admin
-    .from('plati')
-    .select('id', { count: 'exact', head: true })
-    .eq('cursant_id', cursantId)
-  if ((nrPlati ?? 0) > 0) {
-    return {
-      ok: false,
-      error: `Cursantul are ${nrPlati} plăți înregistrate și nu poate fi șters. Dezactivează-l (debifează „Cursant activ”).`,
-    }
-  }
+  // Adminul poate șterge definitiv cursantul, inclusiv plățile lui
+  const { error: platiErr } = await admin.from('plati').delete().eq('cursant_id', cursantId)
+  if (platiErr) return { ok: false, error: platiErr.message }
 
   const { data: cursant } = await admin
     .from('cursanti')
@@ -655,11 +648,16 @@ export async function stergeCursantAction(
     .select('parinte_id')
     .eq('cursant_id', cursantId)
 
+  // Profilul elevului trebuie șters ÎNAINTE de cursant (FK SET NULL ar încălca profile_elev_are_cursant)
+  for (const e of elevi ?? []) {
+    const { error: pErr } = await admin.from('profile').delete().eq('id', e.id)
+    if (pErr) return { ok: false, error: pErr.message }
+  }
+
   const { error: delErr } = await admin.from('cursanti').delete().eq('id', cursantId)
   if (delErr) return { ok: false, error: delErr.message }
 
   for (const e of elevi ?? []) {
-    await admin.from('profile').delete().eq('id', e.id)
     await admin.auth.admin.deleteUser(e.id)
   }
 
