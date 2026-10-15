@@ -103,6 +103,30 @@ export type Database = {
         Update: Partial<Database['public']['Tables']['cereri_contact']['Insert']>
         Relationships: []
       }
+      feedback: {
+        Row: {
+          id: string
+          user_id: string
+          rol: 'parinte' | 'elev'
+          autor_nume: string
+          cursant_id: string | null
+          mesaj: string
+          citit: boolean
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          user_id: string
+          rol: 'parinte' | 'elev'
+          autor_nume?: string
+          cursant_id?: string | null
+          mesaj: string
+          citit?: boolean
+          created_at?: string
+        }
+        Update: Partial<Database['public']['Tables']['feedback']['Insert']>
+        Relationships: []
+      }
       parinte_cursanti: {
         Row: {
           parinte_id: string

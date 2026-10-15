@@ -11,6 +11,7 @@ import {
   LogOut,
   GraduationCap,
   Inbox,
+  MessageSquareHeart,
   Rocket,
 } from 'lucide-react'
 import { getSession, logoutClient } from '@/lib/auth'
@@ -32,6 +33,7 @@ const navItems: {
   { href: '/autodidact', label: 'Autodidact', icon: Rocket, permisiune: 'vede_autodidact' },
   { href: '/abonamente', label: 'Abonamente & Plăți', icon: CreditCard },
   { href: '/cereri', label: 'Cereri', icon: Inbox, roles: ['admin'] },
+  { href: '/feedback', label: 'Feedback', icon: MessageSquareHeart, roles: ['admin'] },
   { href: '/profesori', label: 'Profesori', icon: GraduationCap, roles: ['admin'] },
 ]
 

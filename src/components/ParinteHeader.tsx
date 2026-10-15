@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation'
 import { LogOut } from 'lucide-react'
 import { logoutClient } from '@/lib/auth'
 import BrandLogo from '@/components/BrandLogo'
+import FeedbackButton from '@/components/FeedbackButton'
 
 export default function ParinteHeader({ email }: { email: string }) {
   const router = useRouter()
@@ -18,15 +19,18 @@ export default function ParinteHeader({ email }: { email: string }) {
             <p className="text-xs text-slate-500">Cont părinte · {email}</p>
           </div>
         </div>
-        <button
-          type="button"
-          onClick={() => {
-            void logoutClient().then(() => router.replace('/login'))
-          }}
-          className="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-slate-800"
-        >
-          <LogOut size={16} /> Ieșire
-        </button>
+        <div className="flex items-center gap-5">
+          <FeedbackButton />
+          <button
+            type="button"
+            onClick={() => {
+              void logoutClient().then(() => router.replace('/login'))
+            }}
+            className="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-slate-800"
+          >
+            <LogOut size={16} /> Ieșire
+          </button>
+        </div>
       </div>
     </header>
   )
