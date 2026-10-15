@@ -71,7 +71,10 @@ export default function FeedbackPanel() {
         {items.map(f => {
           const deschis = deschisId === f.id
           return (
-            <article key={f.id} className={f.citit ? '' : 'bg-amber-50/40'}>
+            <article
+              key={f.id}
+              className={f.citit ? '' : 'bg-orange-100 border-l-4 border-orange-500'}
+            >
               <button
                 type="button"
                 onClick={() => void deschide(f)}
