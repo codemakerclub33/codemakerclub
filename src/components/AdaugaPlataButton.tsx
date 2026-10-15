@@ -29,6 +29,7 @@ export default function AdaugaPlataButton({ cursantId, numarCursant, onSaved }: 
   const [form, setForm] = useState({
     suma: '',
     data_plata: new Date().toISOString().split('T')[0],
+    data_start: new Date().toISOString().split('T')[0],
     metoda: 'cash' as 'cash' | 'transfer' | 'card',
     tip_abonament: 'lunar' as 'lunar' | 'pachet',
     sedinte_incluse: '4',
@@ -36,8 +37,8 @@ export default function AdaugaPlataButton({ cursantId, numarCursant, onSaved }: 
   })
 
   /** Propune prețul autodidact (200 / 150 / 100) în funcție de istoricul cursantului. */
-  const propunePret = async (dataPlata: string) => {
-    const r = await pretAutodidactAction(cursantId, dataPlata)
+  const propunePret = async (dataStart: string) => {
+    const r = await pretAutodidactAction(cursantId, dataStart)
     if (r.ok) {
       setForm(f => ({ ...f, suma: String(r.pret) }))
       setPretMotiv(r.motiv)
@@ -47,7 +48,7 @@ export default function AdaugaPlataButton({ cursantId, numarCursant, onSaved }: 
   const alegeMod = (m: 'sedinte' | 'autodidact') => {
     setMod(m)
     setError(null)
-    if (m === 'autodidact') void propunePret(form.data_plata)
+    if (m === 'autodidact') void propunePret(form.data_start)
     else {
       setPretMotiv(null)
       setForm(f => ({ ...f, suma: '' }))
@@ -71,6 +72,7 @@ export default function AdaugaPlataButton({ cursantId, numarCursant, onSaved }: 
         modul_id: modulId,
         suma: Number(form.suma),
         data_plata: form.data_plata,
+        data_start: form.data_start || form.data_plata,
         metoda: form.metoda,
         nota: form.nota,
       })
@@ -287,12 +289,39 @@ export default function AdaugaPlataButton({ cursantId, numarCursant, onSaved }: 
                   type="date"
                   value={form.data_plata}
                   onChange={e => {
-                    setForm({ ...form, data_plata: e.target.value })
-                    if (mod === 'autodidact' && e.target.value) void propunePret(e.target.value)
+                    // Începutul accesului urmează data plății, cât timp nu a fost schimbat separat
+                    const urmeaza = form.data_start === form.data_plata
+                    setForm({
+                      ...form,
+                      data_plata: e.target.value,
+                      data_start: urmeaza ? e.target.value : form.data_start,
+                    })
+                    if (mod === 'autodidact' && urmeaza && e.target.value) void propunePret(e.target.value)
                   }}
                   className="w-full border border-slate-200 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-emerald-500"
                 />
               </div>
+
+              {mod === 'autodidact' && (
+                <div>
+                  <label className="block text-sm font-medium text-slate-700 mb-1.5">
+                    Începutul accesului
+                  </label>
+                  <input
+                    type="date"
+                    value={form.data_start}
+                    onChange={e => {
+                      setForm({ ...form, data_start: e.target.value })
+                      if (e.target.value) void propunePret(e.target.value)
+                    }}
+                    className="w-full border border-slate-200 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  />
+                  <p className="text-xs text-slate-400 mt-1">
+                    {ZILE_ACCES} de zile de la această dată. Pune o dată ulterioară dacă accesul
+                    nou trebuie să înceapă după expirarea celui vechi.
+                  </p>
+                </div>
+              )}
 
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-1.5">Notă (opțional)</label>

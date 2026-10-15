@@ -391,6 +391,8 @@ export type InregistreazaAutodidactInput = {
   /** Suma încasată; implicit prețul calculat (200 / 150 / 100). */
   suma?: number
   data_plata: string
+  /** Prima zi de acces; implicit data plății. Poate fi ulterioară (ex. după expirarea modulului vechi). */
+  data_start?: string
   metoda: 'cash' | 'transfer' | 'card'
   nota?: string | null
 }
@@ -410,13 +412,16 @@ export async function inregistreazaAutodidactAction(
   if (!/^[0-9a-f-]{36}$/i.test(input.cursant_id)) return { ok: false, error: 'Cursant invalid.' }
   if (!poateCursant(acces, input.cursant_id)) return { ok: false, error: 'Nu ai acces la acest cursant.' }
   if (!DATA_ISO.test(input.data_plata)) return { ok: false, error: 'Dată invalidă.' }
+  if (input.data_start !== undefined && !DATA_ISO.test(input.data_start)) {
+    return { ok: false, error: 'Data de început invalidă.' }
+  }
   if (!['cash', 'transfer', 'card'].includes(input.metoda)) return { ok: false, error: 'Metodă invalidă.' }
 
   const modul = moduleCurriculum.find(m => m.id === input.modul_id)
   if (!modul) return { ok: false, error: 'Modul necunoscut.' }
 
   const accesuri = await accesuriAutodidact(admin, input.cursant_id)
-  const dataStart = input.data_plata
+  const dataStart = input.data_start ?? input.data_plata
 
   if (accesuri.some(a => a.modul_id === modul.id && esteActiv(a, dataStart))) {
     return { ok: false, error: 'Cursantul are deja acces activ la acest modul.' }
@@ -435,7 +440,7 @@ export async function inregistreazaAutodidactAction(
       cursant_id: input.cursant_id,
       abonament_id: null,
       suma,
-      data_plata: dataStart,
+      data_plata: input.data_plata,
       metoda: input.metoda,
       nota,
       creat_de: acces.userId,
