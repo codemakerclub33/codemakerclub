@@ -556,6 +556,35 @@ export async function prelungesteAccesGratuitAction(
   return { ok: true, data_sfarsit: dataSfarsit }
 }
 
+/**
+ * Admin: anulează un acces Autodidact. Lecțiile se închid imediat.
+ * Dacă accesul era plătit, se șterge și plata legată (dispare din încasări).
+ */
+export async function anuleazaAccesAutodidactAction(
+  accesId: string,
+): Promise<{ ok: true } | { ok: false; error: string }> {
+  const acces = await verificaAcces()
+  if (!acces.ok) return acces
+  if (acces.rol !== 'admin') return { ok: false, error: 'Doar adminul poate anula accesul.' }
+  if (!/^[0-9a-f-]{36}$/i.test(accesId)) return { ok: false, error: 'Acces invalid.' }
+
+  const { data: rand } = await acces.admin
+    .from('acces_autodidact')
+    .select('id, plata_id')
+    .eq('id', accesId)
+    .maybeSingle()
+  if (!rand) return { ok: false, error: 'Accesul nu a fost găsit.' }
+
+  const { error } = await acces.admin.from('acces_autodidact').delete().eq('id', accesId)
+  if (error) return { ok: false, error: error.message }
+
+  if (rand.plata_id) {
+    const { error: plataErr } = await acces.admin.from('plati').delete().eq('id', rand.plata_id as string)
+    if (plataErr) return { ok: false, error: plataErr.message }
+  }
+  return { ok: true }
+}
+
 export type AutodidactRand = AutodidactAcces & {
   cursant_id: string
   nume: string

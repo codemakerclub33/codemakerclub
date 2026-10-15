@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { Rocket, Search, X } from 'lucide-react'
 import {
+  anuleazaAccesAutodidactAction,
   listAutodidactToateAction,
   prelungesteAccesGratuitAction,
   type AutodidactRand,
@@ -103,6 +104,18 @@ export default function AutodidactLista() {
     const r = await prelungesteAccesGratuitAction(id)
     setBusyId(null)
     if (!r.ok) setEroare(r.error)
+    else await incarca()
+  }
+
+  async function anuleaza(r: AutodidactRand) {
+    const mesaj = r.gratuit
+      ? `Anulezi accesul gratuit al lui ${r.prenume} ${r.nume} la „${numeModul(r.modul_id)}”?`
+      : `Anulezi accesul lui ${r.prenume} ${r.nume} la „${numeModul(r.modul_id)}”? Se șterge și plata de ${r.pret} lei.`
+    if (!window.confirm(mesaj)) return
+    setBusyId(r.id)
+    const res = await anuleazaAccesAutodidactAction(r.id)
+    setBusyId(null)
+    if (!res.ok) setEroare(res.error)
     else await incarca()
   }
 
@@ -233,15 +246,26 @@ export default function AutodidactLista() {
                   </span>
                 </td>
                 <td className="px-4 py-3 text-right">
-                  {r.gratuit && esteAdmin && (
-                    <button
-                      disabled={busyId === r.id}
-                      onClick={() => prelungeste(r.id)}
-                      className="rounded-lg border border-slate-200 px-3 py-1.5 text-xs font-medium hover:bg-slate-50 disabled:opacity-50"
-                    >
-                      {busyId === r.id ? '…' : 'Prelungește +30 zile'}
-                    </button>
-                  )}
+                  <div className="flex justify-end gap-2">
+                    {r.gratuit && esteAdmin && (
+                      <button
+                        disabled={busyId === r.id}
+                        onClick={() => prelungeste(r.id)}
+                        className="rounded-lg border border-slate-200 px-3 py-1.5 text-xs font-medium hover:bg-slate-50 disabled:opacity-50"
+                      >
+                        {busyId === r.id ? '…' : 'Prelungește +30 zile'}
+                      </button>
+                    )}
+                    {esteAdmin && (
+                      <button
+                        disabled={busyId === r.id}
+                        onClick={() => anuleaza(r)}
+                        className="rounded-lg border border-red-200 text-red-600 px-3 py-1.5 text-xs font-medium hover:bg-red-50 disabled:opacity-50"
+                      >
+                        Anulează
+                      </button>
+                    )}
+                  </div>
                 </td>
               </tr>
             ))}
