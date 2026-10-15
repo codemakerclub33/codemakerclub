@@ -59,8 +59,8 @@ export function mesajWhatsAppLogin(opts: {
   parola_parinte: string
 }): string {
   return [
-    `Bună ziua!`,
-    `Iată conturile Code Maker Club pentru ${opts.prenume}:`,
+    `Bună ziua și bine ați venit la Code Maker Club!`,
+    `Iată conturile pentru ${opts.prenume}:`,
     ``,
     `*Cont părinte*`,
     `Email: ${opts.email_parinte}`,
