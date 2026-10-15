@@ -4,6 +4,7 @@ import { createAdminClient } from '@/lib/supabase/admin'
 import { createClient } from '@/lib/supabase/server'
 import { elevAuthEmail, elevAuthPassword, isSupabaseAdminConfigured, isSupabaseConfigured } from '@/lib/supabase/env'
 import { genereazaParola, genereazaPin, mesajWhatsAppLogin } from '@/lib/authHelpers'
+import { sincronizeazaContParinte } from '@/lib/contParinte'
 
 function isUuid(id: string): boolean {
   return /^[0-9a-f-]{36}$/i.test(id)
@@ -111,23 +112,33 @@ export async function resetParolaParinteAction(cursantId: string): Promise<Reset
 
   const { data: cursant, error } = await admin
     .from('cursanti')
-    .select('email_parinte')
+    .select('email_parinte, nume')
     .eq('id', cursantId)
     .maybeSingle()
   if (error || !cursant) return { ok: false, error: error?.message ?? 'Cursant inexistent.' }
 
   const { data: listed } = await admin.auth.admin.listUsers({ perPage: 1000 })
-  const parinteUser = listed?.users?.find(
-    u => u.email?.toLowerCase() === cursant.email_parinte.toLowerCase(),
-  )
-  if (!parinteUser) return { ok: false, error: 'Contul părintelui nu a fost găsit în Auth.' }
-  const { data: rolP } = await admin.from('profile').select('rol').eq('id', parinteUser.id).maybeSingle()
+  let parinteId =
+    listed?.users?.find(u => u.email?.toLowerCase() === cursant.email_parinte.toLowerCase())?.id ?? null
+
+  if (!parinteId) {
+    // Emailul din fișă nu are încă cont (de exemplu a fost schimbat): îl legăm/creăm acum.
+    const sync = await sincronizeazaContParinte(admin, cursantId, cursant.email_parinte, {
+      creeaza: true,
+      numeCursant: cursant.nume,
+    })
+    if (!sync.ok) return { ok: false, error: sync.error }
+    if (sync.actiune === 'creat' && sync.parola) return { ok: true, parola: sync.parola }
+    parinteId = sync.userId
+  }
+
+  const { data: rolP } = await admin.from('profile').select('rol').eq('id', parinteId).maybeSingle()
   if (rolP && rolP.rol !== 'parinte') {
     return { ok: false, error: 'Emailul acesta aparține unui cont de personal – nu poate fi resetat de aici.' }
   }
 
   const parola = genereazaParola(8)
-  const { error: updErr } = await admin.auth.admin.updateUserById(parinteUser.id, { password: parola })
+  const { error: updErr } = await admin.auth.admin.updateUserById(parinteId, { password: parola })
   if (updErr) return { ok: false, error: updErr.message }
 
   return { ok: true, parola }

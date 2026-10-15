@@ -16,6 +16,7 @@ import {
   genereazaUsername,
 } from '@/lib/authHelpers'
 import { TERMENI_VERSIUNE } from '@/lib/termeni'
+import { sincronizeazaContParinte } from '@/lib/contParinte'
 
 export type AdaugaCursantInput = {
   prenume: string
@@ -576,6 +577,18 @@ export async function updateCursantAction(
       .eq('cursant_id', cursantId)
       .maybeSingle()
     if (!link) return { ok: false, error: 'Nu ai acces la acest cursant.' }
+  }
+
+  const { data: vechi } = await admin.from('cursanti').select('email_parinte').eq('id', cursantId).maybeSingle()
+  const emailSchimbat = !!vechi && vechi.email_parinte.trim().toLowerCase() !== email
+
+  if (emailSchimbat) {
+    // Contul de părinte trebuie să urmeze emailul din fișă (altfel apare „Contul părintelui nu a fost găsit”).
+    const sync = await sincronizeazaContParinte(admin, cursantId, email, {
+      creeaza: false,
+      numeCursant: nume,
+    })
+    if (!sync.ok) return { ok: false, error: sync.error }
   }
 
   const { error } = await admin
