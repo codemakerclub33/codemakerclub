@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { cursuri, grupeVarsta, cursBlurbLanding, cursIconLanding } from '@/lib/mockData'
+import { cursuri, grupeVarsta, cursBlurbLanding, cursBlurbLandingPeGrupa, cursIconLanding } from '@/lib/mockData'
 import BrandLogo from '@/components/BrandLogo'
 import OchiPlay from '@/components/OchiPlay'
 
@@ -137,7 +137,7 @@ export default function LandingPage() {
                                 {c.nume}
                               </p>
                               <p className="text-[var(--ckp-ink-soft)] text-base leading-relaxed">
-                                {cursBlurbLanding[c.id] ?? c.descriere}
+                                {cursBlurbLandingPeGrupa[grup.id]?.[c.id] ?? cursBlurbLanding[c.id] ?? c.descriere}
                               </p>
                             </div>
                           </div>

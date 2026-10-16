@@ -55,7 +55,7 @@ export const cursBlurbLanding: Record<string, string> = {
   c1: 'Logică, algoritmi și primul limbaj serios, de la „Hello World” la proiecte pe consolă.',
   c2: 'LED-uri, senzori și circuite: electronica prinde viață sub mâinile lor.',
   c3: 'Modele 3D, materiale și animații simple într-un studio creativ.',
-  c4: 'Limbajul din inteligența artificială: desenăm cu Turtle, creăm jocuri cu Pygame și învățăm să gândim ca un programator.',
+  c4: 'Primele programe în Python: desenăm cu Turtle, creăm jocuri cu Pygame și învățăm să gândim ca un programator.',
   c5: 'De la pagină goală la site interactiv: HTML, CSS și JavaScript.',
   c6: 'Construim roboți interactivi cu motoare și senzori, apoi le dăm viață prin programare vizuală.',
   c7: 'Blocuri colorate, personaje animate și primele jocuri create de la zero.',
@@ -64,6 +64,13 @@ export const cursBlurbLanding: Record<string, string> = {
   c10: 'Scriem Python direct pe micro:bit: LED, senzori și proiecte pe placa fizică.',
   c11: 'Jocuri și lumi 3D: învățăm crearea scenelor, fizica obiectelor și logica de joc în Unity (C#).',
   c12: 'Pentru 12+: Obby pas cu pas — construiești în Studio, apoi Luau, scor pe ecran și publici jocul.',
+}
+
+/** Texte diferite pentru același curs, pe categorie de vârstă (au prioritate față de cursBlurbLanding). */
+export const cursBlurbLandingPeGrupa: Record<string, Record<string, string>> = {
+  '14plus': {
+    c4: 'Python, limbajul din inteligența artificială: logică, algoritmi și jocuri proprii pe care le poți arăta prietenilor.',
+  },
 }
 
 export const module = [
