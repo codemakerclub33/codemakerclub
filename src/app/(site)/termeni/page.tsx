@@ -35,8 +35,8 @@ export default function TermeniPage() {
             <p className="mt-2">
               <strong>Locație atelier:</strong> Str. Republicii 16 bis, etaj 1, Clădirea RIX, Focșani, județul Vrancea.<br />
               <strong>Email:</strong>{' '}
-              <a href="mailto:codemakerclub@gmail.com" className="text-[var(--ckp-blue)] hover:underline">
-                codemakerclub@gmail.com
+              <a href="mailto:contact@codemakerclub.ro" className="text-[var(--ckp-blue)] hover:underline">
+                contact@codemakerclub.ro
               </a>
               <br />
               <strong>Telefon / WhatsApp:</strong>{' '}
@@ -141,25 +141,65 @@ export default function TermeniPage() {
               <div className="pt-2 border-t border-[var(--ckp-ink)]/10 space-y-1.5">
                 <p className="font-semibold text-[var(--ckp-ink)]">Abonament Autodidact (învățare pe platformă, fără ședințe):</p>
                 <p>
-                  <strong>1 modul · 10 lecții · 20 de ore de programare disponibile 30 de zile:</strong> 200 lei{' '}
-                  <span className="text-[var(--ckp-muted)]">(echivalent 10 lei / ora de programare)</span>. Toate lecțiile modulului se
-                  deschid din prima zi, iar accesul se închide automat după 30 de zile. Accesul este personal, iar lecțiile nu pot fi
-                  copiate sau distribuite (vezi secțiunea 11). Recomandăm alegerea modulului potrivit vârstei cursantului (secțiunea 4). La final, cursantul își poate prezenta proiectul la club (la cerere, în ședințele din program) sau îl poate trimite online
-                  (captură de ecran, link ori video scurt) la{' '}
-                  <a href="mailto:codemakerclub@gmail.com" className="text-[var(--ckp-blue)] hover:underline">
-                    codemakerclub@gmail.com
-                  </a>
-                  , de preferință de pe adresa de email a reprezentantului legal. Fără imagini cu fața sau date personale.
+                  <strong>1 modul · 10 lecții · 20 de ore de programare:</strong> 200 lei{' '}
+                  <span className="text-[var(--ckp-muted)]">(echivalent 10 lei / ora de programare)</span>
                 </p>
-                <p className="text-xs text-[var(--ckp-ink-soft)]">
-                  Modulul următor costă 150 lei, iar al treilea și următoarele 100 lei, dacă sunt achiziționate în cel mult 5 zile de la
-                  expirarea modulului precedent.
-                </p>
+                <ul className="space-y-1 list-disc pl-5">
+                  <li>
+                    <strong>Acces:</strong> toate lecțiile se deschid din prima zi și rămân disponibile 30 de zile; apoi accesul se
+                    închide automat.
+                  </li>
+                  <li>
+                    <strong>Cont personal:</strong> lecțiile nu pot fi copiate sau distribuite (vezi secțiunea 11).
+                  </li>
+                  <li>
+                    <strong>Proiect final:</strong> cursantul îl poate prezenta la club (la cerere, în ședințele din program) sau îl
+                    poate trimite online (captură de ecran, link ori video scurt), fără imagini cu fața sau date personale.
+                  </li>
+                  <li>
+                    <strong>Suport ocazional:</strong> dacă cursantul nu înțelege o lecție sau rămâne blocat într-un proiect, ne puteți
+                    scrie pe WhatsApp la{' '}
+                    <a
+                      href="https://wa.me/40736830830"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[var(--ckp-blue)] hover:underline"
+                    >
+                      0736 830 830
+                    </a>{' '}
+                    sau pe email la{' '}
+                    <a href="mailto:contact@codemakerclub.ro" className="text-[var(--ckp-blue)] hover:underline">
+                      contact@codemakerclub.ro
+                    </a>
+                    , de preferință din contul părintelui / reprezentantului legal, cu numele cursantului și lecția. Îl ajutăm cu o
+                    explicație scurtă. Suportul este ocazional, în limita disponibilității, și nu înlocuiește ședințele din program.
+                  </li>
+                </ul>
+                <div className="rounded-lg bg-white/60 border border-[var(--ckp-ink)]/10 p-3 space-y-1">
+                  <p className="font-semibold text-[var(--ckp-ink)]">🏆 Bursa de continuitate: cu cât continui mai mult, cu atât plătești mai puțin</p>
+                  <ul className="space-y-0.5 list-disc pl-5">
+                    <li>
+                      <strong>Modulul 1:</strong> 200 lei <span className="text-[var(--ckp-muted)]">(pasul de start)</span>
+                    </li>
+                    <li>
+                      <strong>Modulul 2:</strong> 150 lei <span className="text-[var(--ckp-muted)]">(bursă de 50 lei pentru că a continuat fără pauză)</span>
+                    </li>
+                    <li>
+                      <strong>Modulul 3 și următoarele:</strong> 100 lei <span className="text-[var(--ckp-muted)]">(bursă de 100 lei pentru micii dezvoltatori dedicați)</span>
+                    </li>
+                  </ul>
+                  <p className="text-xs text-[var(--ckp-ink-soft)]">
+                    Bursa se acordă dacă următorul modul este achiziționat în cel mult 5 zile de la expirarea celui precedent; după o pauză
+                    mai lungă, prețul revine la 200 lei.
+                  </p>
+                </div>
               </div>
               <div className="pt-2 border-t border-[var(--ckp-ink)]/10 text-xs text-[var(--ckp-ink-soft)] space-y-1">
                 <p>🎁 <strong>Bonus Recomandare:</strong> +1 ședință gratuită (2 ore) pentru fiecare prieten recomandat care se înscrie la cursuri.</p>
-                <p>🎁 <strong>Bonus ziua de naștere:</strong> +1 ședință cadou.</p>
-                <p>🎁 <strong>Cadou surpriză</strong> la terminarea anumitor module.</p>
+                <p>
+                  🎁 <strong>Cadou surpriză</strong> la terminarea anumitor module, pentru cursanții înscriși la atelierele cu ședințe din
+                  program.
+                </p>
               </div>
             </div>
             <p className="mt-3">
@@ -342,8 +382,8 @@ export default function TermeniPage() {
             <p>
               Echipa noastră depune toate eforturile pentru ca experiența fiecărui copil și a părinților să fie una excelentă.
               Dacă aveți orice nelămurire sau sesizare, vă rugăm să ne contactați direct pe email la{' '}
-              <a href="mailto:codemakerclub@gmail.com" className="text-[var(--ckp-blue)] hover:underline">
-                codemakerclub@gmail.com
+              <a href="mailto:contact@codemakerclub.ro" className="text-[var(--ckp-blue)] hover:underline">
+                contact@codemakerclub.ro
               </a>{' '}
               sau telefonic la{' '}
               <a href="tel:+40736830830" className="text-[var(--ckp-blue)] hover:underline">

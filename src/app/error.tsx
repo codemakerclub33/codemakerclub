@@ -9,8 +9,8 @@ export default function Error({ reset }: { error: Error & { digest?: string }; r
         <h1 className="text-3xl font-bold text-slate-900 mb-3">Ceva nu a mers bine</h1>
         <p className="text-slate-600 mb-6">
           A apărut o eroare neașteptată. Încearcă din nou. Dacă se repetă, scrie-ne la{' '}
-          <a href="mailto:codemakerclub@gmail.com" className="text-blue-600 underline">
-            codemakerclub@gmail.com
+          <a href="mailto:contact@codemakerclub.ro" className="text-blue-600 underline">
+            contact@codemakerclub.ro
           </a>
           .
         </p>

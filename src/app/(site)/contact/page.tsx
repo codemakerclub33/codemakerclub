@@ -95,10 +95,10 @@ export default function ContactPage() {
                   <div>
                     <span className="block text-sm text-[var(--ckp-muted)] mb-0.5">Email</span>
                     <a
-                      href="mailto:codemakerclub@gmail.com"
+                      href="mailto:contact@codemakerclub.ro"
                       className="text-[var(--ckp-blue)] hover:underline font-medium"
                     >
-                      codemakerclub@gmail.com
+                      contact@codemakerclub.ro
                     </a>
                   </div>
                 </li>

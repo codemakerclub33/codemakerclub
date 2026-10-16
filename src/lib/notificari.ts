@@ -11,22 +11,17 @@ export function mesajSedinteEpuizate(prenumeCopil: string): string {
 
 Pentru ${prenumeCopil} a fost ultima ședință. Vă așteptăm în continuare cu următoarea ofertă:
 
-Detalii abonamente Code Maker Club Focșani:
-✅ 4 ședințe - 8 ore - 300 de lei / 37,5 lei ora de programare
+Abonamente Code Maker Club Focșani (o ședință = 2 ore):
+✅ 4 ședințe (8 ore) - 300 lei / 37,5 lei pe oră
+✅ 9 ședințe (18 ore) - 600 lei / 33,3 lei pe oră
+✅ 14 ședințe (28 ore) - 900 lei / 32,1 lei pe oră
+✅ 19 ședințe (38 ore) - 1200 lei / 31,5 lei pe oră
 
-✅ 9 ședințe - 18 ore - 600 de lei / 33,3 lei ora de programare
+🚀 Autodidact (acasă, pe platformă): 1 modul, 10 lecții, 20 de ore, acces 30 de zile - 200 lei / 10 lei pe oră
+🏆 Bursa de continuitate: dacă reînnoiți în maxim 5 zile de la expirare, modulul 2 costă 150 lei, iar modulul 3 și următoarele 100 lei.
 
-✅ 14 ședințe - 28 de ore - 900 de lei / 32,1 lei ora de programare
-
-✅ 19 ședințe - 38 de ore - 1200 de lei / 31,5 lei ora de programare
-
-🚀 Autodidact (acasă, pe platformă) - 1 modul - 10 lecții - 20 de ore de programare disponibile 30 de zile - 200 de lei / 10 lei ora de programare
-
-🎁 Bonus: +1 ședință gratuită la recomandare, când copilul recomandat se înscrie la curs.
-🎁 Bonus: +1 ședință cadou de ziua de naștere.
-🎁 Bonus: un cadou surpriză la terminarea anumitor module.
-
-⏱️ Ședința durează 2 ore.
+🎁 Bonus: +1 ședință gratuită (2 ore) pentru fiecare prieten recomandat care se înscrie la curs.
+🎁 Bonus: un cadou surpriză la terminarea anumitor module, pentru cursanții de la atelier.
 
 ${textPrezentaObligatorie()}
 
@@ -53,7 +48,7 @@ export function subiectEmailPoliticaPrezenta(): string {
 }
 
 export function subiectAutodidactExpira(prenumeCopil: string): string {
-  return `Code Maker Club Focșani — accesul Autodidact al lui ${prenumeCopil} expiră curând`
+  return `Code Maker Club Focșani — accesul lui ${prenumeCopil} expiră curând (bursă de continuitate)`
 }
 
 /** Email către părinte cu puțin timp înainte ca accesul Autodidact să expire. */
@@ -66,17 +61,20 @@ export function mesajAutodidactExpira(opts: {
   limitaReducere: string
 }): string {
   const zile = opts.zileRamase === 1 ? 'a mai rămas 1 zi' : `au mai rămas ${opts.zileRamase} zile`
-  const reducere =
-    opts.pret < 200
-      ? `\nPrețul este redus (${opts.pret} lei în loc de 200 lei) pentru că ${opts.prenume} continuă fără pauză. Reducerea se păstrează dacă reînnoirea se face cel târziu pe ${opts.limitaReducere}.`
-      : ''
+  const bursa = 200 - opts.pret
+  const oferta =
+    bursa > 0
+      ? `🏆 Bursa de continuitate
+Dacă ${opts.prenume} continuă fără pauză, următorul modul costă ${opts.pret} lei în loc de 200 lei (bursă de ${bursa} lei), cu acces 30 de zile.
+Bursa se păstrează dacă reînnoiți până pe ${opts.limitaReducere}; după această dată, prețul revine la 200 lei.`
+      : `Următorul modul costă ${opts.pret} lei, cu acces 30 de zile.`
   return `Bună ziua!
 
 Accesul Autodidact al lui ${opts.prenume} la modulul „${opts.modul}” expiră pe ${opts.dataSfarsit} (${zile}).
 
-Dacă doriți ca ${opts.prenume} să continue cu următorul modul, prețul este ${opts.pret} lei pentru 30 de zile.${reducere}
+${oferta}
 
-Pentru reînnoire ne puteți răspunde la acest email sau ne scrieți la contact@codemakerclub.ro.
+Pentru reînnoire, răspundeți la acest email sau scrieți-ne la contact@codemakerclub.ro.
 
 Mulțumim!
 Code Maker Club Focșani`

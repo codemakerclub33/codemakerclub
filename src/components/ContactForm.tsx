@@ -33,7 +33,7 @@ export default function ContactForm() {
         setEroare(r.error)
       }
     } catch {
-      setEroare('Nu am putut trimite mesajul. Scrie-ne direct la codemakerclub@gmail.com.')
+      setEroare('Nu am putut trimite mesajul. Scrie-ne direct la contact@codemakerclub.ro.')
     } finally {
       setTrimitere(false)
     }
