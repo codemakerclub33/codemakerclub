@@ -46,8 +46,8 @@ export const grupeVarsta = [
   {
     id: '14plus',
     label: 'Micii Programatori (12+ ani)',
-    blurb: 'Proiecte și autonomie: C++, Arduino, Unity și Roblox Studio.',
-    curs_ids: ['c1', 'c2', 'c11', 'c12'],
+    blurb: 'Proiecte și autonomie: C++, Python, site-uri web, Arduino, Unity și Roblox Studio.',
+    curs_ids: ['c1', 'c4', 'c5', 'c2', 'c11', 'c12'],
   },
 ] as const
 
@@ -55,7 +55,7 @@ export const cursBlurbLanding: Record<string, string> = {
   c1: 'Logică, algoritmi și primul limbaj serios, de la „Hello World” la proiecte pe consolă.',
   c2: 'LED-uri, senzori și circuite: electronica prinde viață sub mâinile lor.',
   c3: 'Modele 3D, materiale și animații simple într-un studio creativ.',
-  c4: 'Sintaxă clară, jocuri și automatizări — perfect ca al doilea limbaj.',
+  c4: 'Limbajul din inteligența artificială: desenăm cu Turtle, creăm jocuri cu Pygame și învățăm să gândim ca un programator.',
   c5: 'De la pagină goală la site interactiv: HTML, CSS și JavaScript.',
   c6: 'Construim roboți interactivi cu motoare și senzori, apoi le dăm viață prin programare vizuală.',
   c7: 'Blocuri colorate, personaje animate și primele jocuri create de la zero.',
