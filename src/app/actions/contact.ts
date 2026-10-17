@@ -5,6 +5,7 @@ import { isSupabaseAdminConfigured } from '@/lib/supabase/env'
 import { esteBlocat, inregistreaza, ipClient } from '@/lib/rateLimit'
 import { trimiteEmail } from '@/lib/emailResend'
 import { TERMENI_VERSIUNE } from '@/lib/termeni'
+import { verificaTurnstile } from '@/lib/turnstile'
 
 const EMAIL_NOTIFICARE = 'codemakerclub@gmail.com'
 
@@ -16,6 +17,8 @@ export type CerereContactInput = {
   acord: boolean
   /** Honeypot: trebuie să rămână gol. */
   website?: string
+  /** Token Cloudflare Turnstile (anti-spam). */
+  turnstileToken?: string
 }
 
 export type CerereContactRezultat = { ok: true } | { ok: false; error: string }
@@ -34,6 +37,13 @@ export async function trimiteCerereContactAction(
     return { ok: false, error: `Ai trimis prea multe mesaje. Scrie-ne direct la ${EMAIL_NOTIFICARE}.` }
   }
   inregistreaza(cheieIp, ORA)
+
+  if (!(await verificaTurnstile(input.turnstileToken, await ipClient()))) {
+    return {
+      ok: false,
+      error: 'Verificarea anti-spam a eșuat. Reîncarcă pagina și încearcă din nou.',
+    }
+  }
 
   const nume = input.nume?.trim() ?? ''
   const email = input.email?.trim() ?? ''

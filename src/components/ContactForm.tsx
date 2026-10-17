@@ -1,10 +1,36 @@
 'use client'
 
-import { useState, FormEvent } from 'react'
+import { useEffect, useRef, useState, FormEvent } from 'react'
 import Link from 'next/link'
 import { trimiteCerereContactAction } from '@/app/actions/contact'
 
+const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY?.trim() ?? ''
+
+type TurnstileApi = {
+  render: (
+    el: HTMLElement,
+    opts: {
+      sitekey: string
+      callback: (token: string) => void
+      'expired-callback': () => void
+      'error-callback': () => void
+      language?: string
+    },
+  ) => string
+  reset: (id?: string) => void
+}
+
+declare global {
+  interface Window {
+    turnstile?: TurnstileApi
+  }
+}
+
 export default function ContactForm() {
+  const widgetRef = useRef<HTMLDivElement>(null)
+  const widgetId = useRef<string | null>(null)
+  const [turnstileToken, setTurnstileToken] = useState('')
+
   const [nume, setNume] = useState('')
   const [email, setEmail] = useState('')
   const [telefon, setTelefon] = useState('')
@@ -15,13 +41,44 @@ export default function ContactForm() {
   const [website, setWebsite] = useState('')
   const [acord, setAcord] = useState(false)
 
+  useEffect(() => {
+    if (!TURNSTILE_SITE_KEY) return
+    let anulat = false
+    const randeaza = () => {
+      if (anulat || !widgetRef.current || !window.turnstile || widgetId.current) return
+      widgetId.current = window.turnstile.render(widgetRef.current, {
+        sitekey: TURNSTILE_SITE_KEY,
+        language: 'ro',
+        callback: token => setTurnstileToken(token),
+        'expired-callback': () => setTurnstileToken(''),
+        'error-callback': () => setTurnstileToken(''),
+      })
+    }
+    if (window.turnstile) {
+      randeaza()
+    } else {
+      const existent = document.getElementById('cf-turnstile-script')
+      const script = existent ?? document.createElement('script')
+      if (!existent) {
+        script.id = 'cf-turnstile-script'
+        ;(script as HTMLScriptElement).src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit'
+        ;(script as HTMLScriptElement).async = true
+        document.head.appendChild(script)
+      }
+      script.addEventListener('load', randeaza)
+    }
+    return () => {
+      anulat = true
+    }
+  }, [])
+
   async function onSubmit(e: FormEvent) {
     e.preventDefault()
-    if (!acord || trimitere) return
+    if (!acord || trimitere || (TURNSTILE_SITE_KEY && !turnstileToken)) return
     setTrimitere(true)
     setEroare(null)
     try {
-      const r = await trimiteCerereContactAction({ nume, email, telefon, mesaj, acord, website })
+      const r = await trimiteCerereContactAction({ nume, email, telefon, mesaj, acord, website, turnstileToken })
       if (r.ok) {
         setTrimis(true)
         setNume('')
@@ -31,6 +88,11 @@ export default function ContactForm() {
         setAcord(false)
       } else {
         setEroare(r.error)
+      }
+      // Tokenul e de unică folosință: cerem unul nou
+      if (TURNSTILE_SITE_KEY) {
+        setTurnstileToken('')
+        if (widgetId.current) window.turnstile?.reset(widgetId.current)
       }
     } catch {
       setEroare('Nu am putut trimite mesajul. Scrie-ne direct la contact@codemakerclub.ro.')
@@ -127,9 +189,10 @@ export default function ContactForm() {
           .
         </span>
       </label>
+      {TURNSTILE_SITE_KEY ? <div ref={widgetRef} className="min-h-[65px]" /> : null}
       <button
         type="submit"
-        disabled={!acord || trimitere}
+        disabled={!acord || trimitere || Boolean(TURNSTILE_SITE_KEY && !turnstileToken)}
         className="inline-flex items-center justify-center bg-[var(--ckp-red)] hover:bg-[var(--ckp-red-deep)] text-white font-semibold px-6 py-3 rounded-xl transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {trimitere ? 'Se trimite…' : 'Trimite mesaj'}
