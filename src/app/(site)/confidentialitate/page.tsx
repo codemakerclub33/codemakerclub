@@ -155,6 +155,7 @@ export default function ConfidentialitatePage() {
               <li>Furnizori de servicii contabile și de evidență financiară autorizați;</li>
               <li>Furnizori de procesare plăți securizate cu cardul (ex. procesatori bancari agreați), fără stocarea datelor cardului la nivelul atelierului;</li>
               <li>Furnizori de infrastructură cloud, găzduire sigură pentru platforma online și trimitere de emailuri (notificări, răspunsuri la mesaje);</li>
+              <li>Furnizor de protecție anti-spam pentru formularul de contact (Cloudflare Turnstile), care primește adresa IP a vizitatorului doar pentru a verifica dacă e om, nu robot;</li>
               <li>Autorități publice sau instanțe judecătorești, numai în cazurile strict prevăzute de lege.</li>
             </ul>
           </section>
