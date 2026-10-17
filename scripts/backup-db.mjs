@@ -8,17 +8,17 @@ import { mkdirSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { createClient } from '@supabase/supabase-js'
 
+// Local: citește .env.local. În GitHub Actions variabilele vin direct din secrete.
 try {
   process.loadEnvFile('.env.local')
 } catch {
-  console.error('Nu găsesc .env.local. Rulează comanda din folderul app.')
-  process.exit(1)
+  // fără .env.local: se folosesc variabilele de mediu existente
 }
 
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL
 const key = process.env.SUPABASE_SERVICE_ROLE_KEY
 if (!url || !key) {
-  console.error('Lipsesc NEXT_PUBLIC_SUPABASE_URL sau SUPABASE_SERVICE_ROLE_KEY din .env.local')
+  console.error('Lipsesc NEXT_PUBLIC_SUPABASE_URL sau SUPABASE_SERVICE_ROLE_KEY (din .env.local sau din mediu)')
   process.exit(1)
 }
 

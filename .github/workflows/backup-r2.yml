@@ -1,0 +1,44 @@
+name: Backup zilnic în Cloudflare R2
+
+# Exportă tabelele Supabase ca JSON, le arhivează, le criptează și le urcă în R2 (UE).
+# Retenția de 30 de zile se setează în Cloudflare (lifecycle rule pe bucket).
+# Secrete necesare: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, BACKUP_PASSPHRASE,
+#                   R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY, R2_ENDPOINT, R2_BUCKET
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - run: npm ci
+
+      - name: Export Supabase
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: node scripts/backup-db.mjs
+
+      - name: Arhivează și criptează
+        env:
+          BACKUP_PASSPHRASE: ${{ secrets.BACKUP_PASSPHRASE }}
+        run: |
+          NUME="codemakerclub_$(date -u +%Y-%m-%d_%H-%M).tar.gz.enc"
+          tar -czf - backups | openssl enc -aes-256-cbc -pbkdf2 -salt -pass env:BACKUP_PASSPHRASE -out "$NUME"
+          echo "NUME=$NUME" >> "$GITHUB_ENV"
+
+      - name: Urcă în R2
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+        run: aws s3 cp "$NUME" "s3://${{ secrets.R2_BUCKET }}/$NUME" --endpoint-url "${{ secrets.R2_ENDPOINT }}"
