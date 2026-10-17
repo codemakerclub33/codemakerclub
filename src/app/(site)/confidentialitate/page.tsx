@@ -19,7 +19,7 @@ export default function ConfidentialitatePage() {
           Notă de informare privind protecția datelor (GDPR)
         </h1>
         <p className="text-[var(--ckp-muted)] text-sm mb-10">
-          Code Maker Club Focșani · Conform Regulamentului (UE) 2016/679 · Ultima actualizare: septembrie 2026
+          Code Maker Club Focșani · Conform Regulamentului (UE) 2016/679 · Ultima actualizare: octombrie 2026
         </p>
 
         <div className="space-y-8 text-[var(--ckp-ink-soft)] text-base leading-relaxed">
@@ -34,6 +34,8 @@ export default function ConfidentialitatePage() {
               și a legislației naționale aplicabile.
             </p>
             <p className="mt-2">
+              <strong>Operator de date:</strong> PAN GLOBAL TOUR SRL, CUI 22460166, Nr. Reg. Com. J2007000834390, care operează
+              marca Code Maker Club.<br />
               <strong>Sediul atelierului:</strong> Str. Republicii 16 bis, etaj 1, Clădirea RIX, Focșani, jud. Vrancea.<br />
               <strong>Email de contact:</strong>{' '}
               <a href="mailto:contact@codemakerclub.ro" className="text-[var(--ckp-blue)] hover:underline">
@@ -71,7 +73,7 @@ export default function ConfidentialitatePage() {
                   ii. Accesul pe platforma online și evidența progresului
                 </h3>
                 <p className="text-sm mt-1">
-                  <strong>Date prelucrate:</strong> Cont de elev (username, cod PIN securizat), module deblocate, prezență,
+                  <strong>Date prelucrate:</strong> Cont de elev (username și cod PIN, vizibil doar personalului autorizat al atelierului), module deblocate, prezență,
                   proiecte create și stadiul exercițiilor practice.
                 </p>
                 <p className="text-sm mt-1">
@@ -152,7 +154,7 @@ export default function ConfidentialitatePage() {
             <ul className="list-disc pl-5 mt-2 space-y-1">
               <li>Furnizori de servicii contabile și de evidență financiară autorizați;</li>
               <li>Furnizori de procesare plăți securizate cu cardul (ex. procesatori bancari agreați), fără stocarea datelor cardului la nivelul atelierului;</li>
-              <li>Furnizori de infrastructură cloud și găzduire sigură pentru platforma online;</li>
+              <li>Furnizori de infrastructură cloud, găzduire sigură pentru platforma online și trimitere de emailuri (notificări, răspunsuri la mesaje);</li>
               <li>Autorități publice sau instanțe judecătorești, numai în cazurile strict prevăzute de lege.</li>
             </ul>
           </section>
@@ -162,9 +164,11 @@ export default function ConfidentialitatePage() {
               5. Transferuri internaționale
             </h2>
             <p>
-              Datele personale sunt prelucrate și stocate în cadrul Uniunii Europene. Nu transferăm date cu caracter
-              personal către țări terțe din afara Spațiului Economic European sau către organizații internaționale care nu
-              asigură un nivel adecvat de protecție recunoscut prin decizii ale Comisiei Europene.
+              Datele personale sunt stocate și prelucrate în Uniunea Europeană (baza de date și serverele aplicației sunt
+              în regiuni din UE). Unii dintre furnizorii noștri tehnici (găzduire, bază de date, trimitere de emailuri) sunt
+              companii cu sediul în SUA; dacă o parte din date ajunge la ei în afara UE, transferul se face pe baza clauzelor
+              contractuale standard ale Comisiei Europene și/sau a cadrului UE–SUA privind confidențialitatea datelor. Nu
+              transferăm date către alte țări terțe sau organizații internaționale care nu asigură un nivel adecvat de protecție.
             </p>
           </section>
 

@@ -33,6 +33,8 @@ export default function TermeniPage() {
               precum și regulile de utilizare a platformei digitale dedicate elevilor și părinților.
             </p>
             <p className="mt-2">
+              <strong>Prestator:</strong> PAN GLOBAL TOUR SRL, CUI 22460166, Nr. Reg. Com. J2007000834390, care operează marca
+              Code Maker Club.<br />
               <strong>Locație atelier:</strong> Str. Republicii 16 bis, etaj 1, Clădirea RIX, Focșani, județul Vrancea.<br />
               <strong>Email:</strong>{' '}
               <a href="mailto:contact@codemakerclub.ro" className="text-[var(--ckp-blue)] hover:underline">
@@ -93,7 +95,7 @@ export default function TermeniPage() {
             <ul className="list-disc pl-5 mt-2 space-y-1">
               <li><strong>Micii Exploratori (8–10 ani):</strong> robotică LEGO WeDo 2.0, Scratch, micro:bit, Tinkercad 3D.</li>
               <li><strong>Micii Creatori Digitali (10–12 ani):</strong> HTML/CSS/JS, Python, micro:bit Python, modelare Blender.</li>
-              <li><strong>Micii Programatori (12+ ani):</strong> C++, Arduino, Unity (C#), Roblox Studio (Lua).</li>
+              <li><strong>Micii Programatori (12+ ani):</strong> C++, Python, HTML/CSS/JS, Arduino, Unity (C#), Roblox Studio (Lua).</li>
             </ul>
             <p className="mt-2">
               <strong>Vârsta recomandată:</strong> fiecare curs și modul este conceput pentru o anumită categorie de vârstă
@@ -173,6 +175,10 @@ export default function TermeniPage() {
                     </a>
                     , de preferință din contul părintelui / reprezentantului legal, cu numele cursantului și lecția. Îl ajutăm cu o
                     explicație scurtă. Suportul este ocazional, în limita disponibilității, și nu înlocuiește ședințele din program.
+                  </li>
+                  <li>
+                    <strong>Acces imediat și retragere:</strong> accesul la conținutul digital începe imediat după plată (vezi
+                    secțiunea 8, „Abonamentul Autodidact”).
                   </li>
                 </ul>
                 <div className="rounded-lg bg-white/60 border border-[var(--ckp-ink)]/10 p-3 space-y-1">
@@ -264,7 +270,7 @@ export default function TermeniPage() {
             </h2>
             <p>
               <strong>Înainte de începerea cursului:</strong> În cazul în care reprezentantul legal solicită renunțarea la curs
-              înainte de participarea la prima ședință (în termen de maximum 14–30 de zile de la efectuarea plății în avans),
+              înainte de participarea la prima ședință (în termen de maximum 7–14 zile de la efectuarea plății în avans),
               contravaloarea achitată va fi rambursată integral în contul bancar indicat în cererea scrisă.
             </p>
             <p className="mt-2">
@@ -279,6 +285,15 @@ export default function TermeniPage() {
               <strong>Retragere voluntară pe parcursul modulului:</strong> Dacă reprezentantul legal decide retragerea cursantului
               în cursul unui modul achitat, se poate restitui contravaloarea ședințelor viitoare neefectuate, după reținerea unei taxe
               administrative de procesare și rezervare a locului în valoare de 100 lei.
+            </p>
+            <p className="mt-2">
+              <strong>Abonamentul Autodidact (conținut digital):</strong> Accesul la lecții se deschide imediat după plată, pentru
+              toate lecțiile modulului. Prin achitarea abonamentului, reprezentantul legal își exprimă acordul expres ca accesul
+              la conținutul digital să înceapă imediat și recunoaște că, odată ce accesul a fost deschis, pierde dreptul de
+              retragere de 14 zile prevăzut de O.U.G. nr. 34/2014 privind drepturile consumatorilor în cadrul contractelor
+              la distanță. În consecință, contravaloarea unui abonament Autodidact al cărui acces a fost deschis nu se
+              rambursează. Dacă accesul nu poate fi folosit din motive tehnice imputabile nouă, prelungim accesul sau restituim
+              suma, la alegerea reprezentantului legal.
             </p>
           </section>
 
