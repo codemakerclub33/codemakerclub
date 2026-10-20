@@ -17,7 +17,7 @@ function naratiePath(modul: number, lesson: number): string | null {
 
 export type WebSpeechResult = ScratchM1SpeechResult
 
-/** Resolve or generate TTS for web modul 1–6, lecția 1–12. */
+/** Resolve or generate TTS for web modul 1–6, lecția 1–10. */
 export async function getWebSpeech(modul: number, lesson: number): Promise<WebSpeechResult> {
   if (!Number.isInteger(modul) || modul < 1 || modul > WEB_MODUL_COUNT) {
     return { ok: false, status: 400, error: 'Parametru m invalid. Folosește ?m=1 … ?m=6.' }

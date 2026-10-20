@@ -1,4 +1,4 @@
-Lecția a douăsprezecea din Modulul patru. Proiect: Pagina interactivă.
+Lecția a zecea din Modulul patru. Proiect: Pagina interactivă.
 
 Ai învățat variabile, decizii, bucle, funcții, liste, obiecte, DOM și evenimente. Azi le pui pe toate într-un singur proiect: un test cu întrebări și scor, făcut de tine, pe un subiect la alegere. Pagina pune o întrebare, tu alegi un răspuns, ea îți spune dacă ai nimerit, ține scorul și la final îți dă un mesaj.
 

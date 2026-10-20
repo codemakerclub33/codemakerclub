@@ -1,4 +1,4 @@
-Lecția a șaptea din Modulul patru. Repetări, while.
+Lecția a șasea din Modulul patru. Repetări, while.
 
 Bucla for este bună când știi de câte ori repeți. Dar uneori nu știi: repetă cât timp nu ai ghicit numărul, repetă cât timp mai ai vieți. Pentru asta există bucla while, adică cât timp.
 

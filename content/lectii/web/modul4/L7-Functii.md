@@ -1,9 +1,9 @@
-# LECȚIA 8 — Funcții
+# LECȚIA 7 — Funcții
 **Modulul 4 · JavaScript pentru începători · 2 ore**  
 **Code Maker Club · JavaScript Starter**
 
 > Ai observat că unele lucruri le scrii de mai multe ori: aruncarea unui zar, un mesaj de salut, un calcul. O **funcție** este o bucată de cod căreia îi dai un **nume**. O scrii o singură dată, apoi o **chemi** de câte ori vrei, ca pe o rețetă pe care o folosești iar și iar. Azi înveți să scrii și să folosești funcții.  
-> Proiect: **„Trusa mea de unelte”** · folder: `Prenume_Nume_W4_L8` (ex. `Ana_Pop_W4_L8`)
+> Proiect: **„Trusa mea de unelte”** · folder: `Prenume_Nume_W4_L7` (ex. `Ana_Pop_W4_L7`)
 
 ---
 
@@ -40,7 +40,7 @@ Din lecția trecută ții minte că:
 - `Math.floor(Math.random() * 6) + 1` este un zar.
 
 **Încearcă tu (4 min)**  
-- [ ] Creează folderul `Prenume_Nume_W4_L8` cu `index.html` (scheletul complet, cu `<script src="script.js"></script>` înainte de `</body>`) și `script.js`  
+- [ ] Creează folderul `Prenume_Nume_W4_L7` cu `index.html` (scheletul complet, cu `<script src="script.js"></script>` înainte de `</body>`) și `script.js`  
 - [ ] Pune în `<body>` un `<h1>` cu textul „Funcții”  
 - [ ] În `script.js` aruncă un zar de două ori, scriind de două ori formula și observă cât de mult te repeți  
 
@@ -333,7 +333,7 @@ Adaugă **cel puțin două funcții ale tale**, de exemplu `esteMajor(varsta)` s
 ## Proiect / exerciții de finalizat AZI
 
 ### Exercițiul A — „Trusa mea de unelte” (obligatoriu)
-În folderul `Prenume_Nume_W4_L8` ai `index.html` și `script.js`, cu:
+În folderul `Prenume_Nume_W4_L7` ai `index.html` și `script.js`, cu:
 - **minimum 5 funcții**, cu nume bune (verbe în camelCase);
 - cel puțin una cu **mai mulți parametri** și una cu **valoare de rezervă**;
 - cel puțin două funcții care **returnează** un rezultat și o funcție care **decide** (returnează `true`/`false`);
@@ -372,7 +372,7 @@ console.log(patrat());
 Pe foaie: ce este o funcție și de ce o folosim? Care este diferența dintre parametru și argument? Ce diferență este între `console.log` și `return`?
 
 **Gata când:**  
-- [ ] Folderul `Prenume_Nume_W4_L8` are `index.html` și `script.js`  
+- [ ] Folderul `Prenume_Nume_W4_L7` are `index.html` și `script.js`  
 - [ ] Programul rulează fără erori  
 - [ ] Ai răspuns la exercițiile B–E  
 
@@ -380,7 +380,7 @@ Pe foaie: ce este o funcție și de ce o folosim? Care este diferența dintre pa
 
 ## Bonus / Provocare (dacă ai terminat)
 - [ ] Scrie o funcție `maximDintreTrei(a, b, c)` care returnează cel mai mare număr (fără `Math.max`)  
-- [ ] Rescrie jocul „Ghicește numărul” din lecția 7 cu funcții: `alegeNumar()`, `citesteIncercare()`, `dauIndiciu(incercare, secret)`  
+- [ ] Rescrie jocul „Ghicește numărul” din lecția 6 cu funcții: `alegeNumar()`, `citesteIncercare()`, `dauIndiciu(incercare, secret)`  
 - [ ] Scrie o funcție `factorial(n)` cu o buclă `for` (ex. `factorial(5)` este 120)  
 - [ ] Încearcă și scrierea scurtă: `const dublu = (x) => x * 2;` și compară varianta cu cea făcută cu `function`  
 
@@ -416,10 +416,10 @@ Pe foaie: ce este o funcție și de ce o folosim? Care este diferența dintre pa
 - De ce nu putem folosi o variabilă creată într-o funcție în afara ei?
 
 ## Temă
-Scrie funcțiile pentru un mini-magazin de jocuri: `pretCuReducere(pret, procent)`, `totalCos(pret, cantitate)` și `arataFactura(nume, total)`; folosește funcțiile într-un program. Salvează în `Prenume_Nume_W4_L8`.
+Scrie funcțiile pentru un mini-magazin de jocuri: `pretCuReducere(pret, procent)`, `totalCos(pret, cantitate)` și `arataFactura(nume, total)`; folosește funcțiile într-un program. Salvează în `Prenume_Nume_W4_L7`.
 
-## Ce urmează — Lecția 9
-Învățăm **listele (array)**: o variabilă care ține **mai multe valori**, ca un raft cu cutii numerotate.
+## Ce urmează — Lecția 8
+Învățăm **listele și obiectele**: liste ca să ții **mai multe valori** într-o variabilă, ca un raft cu cutii numerotate, și obiecte ca să ții informațiile despre un lucru într-o fișă cu etichete.
 
 ---
 

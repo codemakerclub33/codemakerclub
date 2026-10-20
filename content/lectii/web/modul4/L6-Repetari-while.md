@@ -1,9 +1,9 @@
-# LECȚIA 7 — Repetări: while
+# LECȚIA 6 — Repetări: while
 **Modulul 4 · JavaScript pentru începători · 2 ore**  
 **Code Maker Club · JavaScript Starter**
 
 > Bucla `for` este bună când știi **de câte ori** repeți. Dar uneori nu știi: „repetă **cât timp** nu ai ghicit numărul”, „repetă **cât timp** mai ai vieți”. Pentru asta există bucla `while` („cât timp”). Azi o învățăm, împreună cu `do…while`, `break` și `continue`.  
-> Proiect: **„Ghicește numărul, cu mai multe încercări”** · folder: `Prenume_Nume_W4_L7` (ex. `Ana_Pop_W4_L7`)
+> Proiect: **„Ghicește numărul, cu mai multe încercări”** · folder: `Prenume_Nume_W4_L6` (ex. `Ana_Pop_W4_L6`)
 
 ---
 
@@ -40,7 +40,7 @@ Din lecția trecută ții minte că:
 - cu `cuvant[i]` parcurgi literele unui text.
 
 **Încearcă tu (4 min)**  
-- [ ] Creează folderul `Prenume_Nume_W4_L7` cu `index.html` (scheletul complet, cu `<script src="script.js"></script>` înainte de `</body>`) și `script.js`  
+- [ ] Creează folderul `Prenume_Nume_W4_L6` cu `index.html` (scheletul complet, cu `<script src="script.js"></script>` înainte de `</body>`) și `script.js`  
 - [ ] Pune în `<body>` un `<h1>` cu textul „while”  
 - [ ] În `script.js` scrie o buclă `for` care afișează numerele de la 1 la 5  
 
@@ -237,7 +237,7 @@ console.log("Ai ieșit din buclă.");
 
 ### Exemplul 6 — Regulile jocului
 
-Ghicim același tip de număr ca la lecția 5, dar acum avem **mai multe încercări**:
+Ghicim același tip de număr ca la lecția 4, dar acum avem **mai multe încercări**:
 - calculatorul alege un număr de la 1 la 20;  
 - jucătorul are **cel mult 5 încercări**;  
 - după fiecare încercare primește indiciul „prea mic” sau „prea mare”;  
@@ -329,7 +329,7 @@ Adaptează jocul: alt interval, alt număr de încercări, alte mesaje, alt subi
 ## Proiect / exerciții de finalizat AZI
 
 ### Exercițiul A — „Ghicește numărul, cu mai multe încercări” (obligatoriu)
-În folderul `Prenume_Nume_W4_L7` ai `index.html` și `script.js`, cu:
+În folderul `Prenume_Nume_W4_L6` ai `index.html` și `script.js`, cu:
 - un **număr secret aleator** într-un interval ales de tine;
 - o buclă **`while`** cu un **număr maxim de încercări** (o constantă `const`);
 - indicii „prea mic” / „prea mare”, cu `if` / `else if`;
@@ -369,7 +369,7 @@ if (x > 3) {
 Pe foaie: când alegi `for` și când alegi `while`? Care este diferența dintre `while` și `do…while`? Ce fac `break` și `continue`?
 
 **Gata când:**  
-- [ ] Folderul `Prenume_Nume_W4_L7` are `index.html` și `script.js`  
+- [ ] Folderul `Prenume_Nume_W4_L6` are `index.html` și `script.js`  
 - [ ] Jocul rulează fără erori și fără să înghețe  
 - [ ] Ai răspuns la exercițiile B–E  
 
@@ -413,9 +413,9 @@ Pe foaie: când alegi `for` și când alegi `while`? Care este diferența dintre
 - Ce dă `prompt` când apeși Cancel?
 
 ## Temă
-Fă un joc „Contul de bani”: începi cu 100 de lei, iar la fiecare rundă utilizatorul scrie cât cheltuiește; jocul se oprește când nu mai ai bani sau când scrie `stop`. Salvează în `Prenume_Nume_W4_L7`.
+Fă un joc „Contul de bani”: începi cu 100 de lei, iar la fiecare rundă utilizatorul scrie cât cheltuiește; jocul se oprește când nu mai ai bani sau când scrie `stop`. Salvează în `Prenume_Nume_W4_L6`.
 
-## Ce urmează — Lecția 8
+## Ce urmează — Lecția 7
 Învățăm **funcțiile**: bucăți de cod cu nume, pe care le scrii o dată și le folosești de câte ori vrei.
 
 ---

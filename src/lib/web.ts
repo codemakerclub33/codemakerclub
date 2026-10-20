@@ -1,5 +1,5 @@
-/** Identificatori pentru cursul HTML + CSS + JavaScript (6 module; M5 are 12 lecții, restul 10). */
-export const WEB_LESSON_COUNT = 12
+/** Identificatori pentru cursul HTML + CSS + JavaScript (6 module, câte 10 lecții). */
+export const WEB_LESSON_COUNT = 10
 export const WEB_MODUL_COUNT = 6
 
 /** Modul web (1–6) → id modul din mockData. */

@@ -1,9 +1,9 @@
-# LECȚIA 11 — Pagina reacționează: DOM și evenimente
+# LECȚIA 9 — Pagina reacționează: DOM și evenimente
 **Modulul 4 · JavaScript pentru începători · 2 ore**  
 **Code Maker Club · JavaScript Starter**
 
 > Până acum rezultatele programelor tale apăreau doar în consolă. Azi **pagina însăși prinde viață**: apeși un buton și se schimbă un text, scrii un cuvânt și apare într-o listă, apeși alt buton și pagina trece în „modul noapte”. Pentru asta înveți două lucruri: cum **găsește** JavaScript elementele paginii (DOM) și cum **ascultă** ce face utilizatorul (evenimente).  
-> Proiect: **„Pagina mea care reacționează”** · folder: `Prenume_Nume_W4_L11` (ex. `Ana_Pop_W4_L11`)
+> Proiect: **„Pagina mea care reacționează”** · folder: `Prenume_Nume_W4_L9` (ex. `Ana_Pop_W4_L9`)
 
 ---
 
@@ -40,7 +40,7 @@ Din lecția trecută ții minte că:
 - `const` ține un obiect sau o listă, dar permite schimbarea conținutului.
 
 **Încearcă tu (4 min)**  
-- [ ] Creează folderul `Prenume_Nume_W4_L11` cu `index.html` (scheletul complet) și `script.js`  
+- [ ] Creează folderul `Prenume_Nume_W4_L9` cu `index.html` (scheletul complet) și `script.js`  
 - [ ] Pune în `index.html` un `<h1 id="titlu">Pagina mea</h1>`, un `<p id="mesaj">Salut!</p>` și un `<button id="buton">Apasă aici</button>`  
 - [ ] Leagă `script.js` cu `<script src="script.js"></script>` **chiar înainte de `</body>`** (este important: elementele trebuie să existe înainte să le cauți)  
 
@@ -492,7 +492,7 @@ butonAdauga.addEventListener("click", function () {
 });
 ```
 
-Observă cum **lucrează toate împreună**: CSS-ul scris în Modulul 3 (cu clasa `.noapte`), funcțiile din lecția 8, `if` din lecțiile 4–5 și evenimentele de azi. Contorul nu coboară sub 0, câmpul gol primește un mesaj, iar lista are o limită.
+Observă cum **lucrează toate împreună**: CSS-ul scris în Modulul 3 (cu clasa `.noapte`), funcțiile din lecția 7, `if` din lecția 4 și evenimentele de azi. Contorul nu coboară sub 0, câmpul gol primește un mesaj, iar lista are o limită.
 
 Personalizează proiectul: alt subiect (animale, filme), alt contor (puncte, vieți), alte culori. Nu cere nume reale și nu pune date personale.
 
@@ -507,7 +507,7 @@ Personalizează proiectul: alt subiect (animale, filme), alt contor (puncte, vie
 ## Proiect / exerciții de finalizat AZI
 
 ### Exercițiul A — „Pagina mea care reacționează” (obligatoriu)
-În folderul `Prenume_Nume_W4_L11` ai `index.html`, `stil.css` și `script.js`, cu:
+În folderul `Prenume_Nume_W4_L9` ai `index.html`, `stil.css` și `script.js`, cu:
 - scriptul legat **chiar înainte de `</body>`**;
 - un **contor** cu cel puțin două butoane și o variabilă care ține minte valoarea;
 - un buton care schimbă aspectul paginii cu `classList.toggle` (clasa scrisă în CSS);
@@ -539,7 +539,7 @@ buton.addEventListener("click", spuneSalut());
 Pe foaie: ce este DOM-ul? Ce face `addEventListener`? De ce folosim `textContent` și nu `innerHTML` pentru text scris de utilizator?
 
 **Gata când:**  
-- [ ] Folderul `Prenume_Nume_W4_L11` are `index.html`, `stil.css` și `script.js`  
+- [ ] Folderul `Prenume_Nume_W4_L9` are `index.html`, `stil.css` și `script.js`  
 - [ ] Pagina funcționează fără erori în consolă  
 - [ ] Ai răspuns la exercițiile B–E  
 
@@ -583,9 +583,9 @@ Pe foaie: ce este DOM-ul? Ce face `addEventListener`? De ce folosim `textContent
 - Ce tip de valoare dă `camp.value`?
 
 ## Temă
-Fă o pagină „Colecția mea”: un câmp și un buton care adaugă elemente într-o listă, un contor cu câte elemente ai adăugat și un buton „Golește lista”. Salvează în `Prenume_Nume_W4_L11`.
+Fă o pagină „Colecția mea”: un câmp și un buton care adaugă elemente într-o listă, un contor cu câte elemente ai adăugat și un buton „Golește lista”. Salvează în `Prenume_Nume_W4_L9`.
 
-## Ce urmează — Lecția 12
+## Ce urmează — Lecția 10
 Proiectul final al modulului: **„Pagina interactivă”**, un mic joc sau un test făcut de tine, cu butoane, scor și mesaje, folosind tot ce ai învățat.
 
 ---

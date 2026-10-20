@@ -1,4 +1,4 @@
-Lecția a unsprezecea din Modulul patru. Pagina reacționează: DOM și evenimente.
+Lecția a noua din Modulul patru. Pagina reacționează: DOM și evenimente.
 
 Până acum rezultatele programelor tale apăreau doar în consolă. Azi pagina însăși prinde viață: apeși un buton și se schimbă un text, scrii un cuvânt și apare într-o listă. Pentru asta înveți două lucruri: cum găsește JavaScript elementele paginii și cum ascultă ce face utilizatorul.
 

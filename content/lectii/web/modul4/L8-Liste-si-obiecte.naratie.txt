@@ -1,0 +1,23 @@
+Lecția a opta din Modulul patru. Liste și obiecte.
+
+O variabilă ține o singură valoare. Dar dacă vrei să ții mai multe, jocurile tale preferate, notele de la un test, culorile unui curcubeu? Ai nevoie de o listă, un raft cu mai multe cutii numerotate. Iar când un lucru are mai multe informații de feluri diferite, nume, notă, an, folosești un obiect, o fișă cu etichete. Azi le înveți pe amândouă și le pui împreună într-o listă de fișe.
+
+Obiectivul. Minim: o listă cu cinci elemente afișate cu o buclă și un obiect cu trei proprietăți. Complet: în plus adăugare și căutare, media unei liste, o listă de obiecte parcursă cu for of și o funcție care primește un obiect.
+
+Primul pas. O listă se scrie între paranteze drepte, cu elementele separate prin virgulă. Fiecare element are o poziție, iar numărătoarea începe de la zero. Lungimea listei este length, iar ultimul element este la poziția length minus unu. Un element se schimbă scriind în poziția lui. O listă const poate fi schimbată înăuntru, dar nu poate fi înlocuită cu totul.
+
+Al doilea pas. Push adaugă la sfârșit, pop scoate ultimul element. Includes răspunde true sau false, iar index of dă poziția sau minus unu dacă elementul nu există.
+
+Al treilea pas. Parcurgi lista cu for și poziția, sau cu for of, care ia direct fiecare element. Atenție la limită: i mai mic decât length, nu mai mic sau egal. Suma începe de la zero înainte de buclă. Media este suma împărțită la lungime. Pentru maxim pornești cu primul element și îl înlocuiești când găsești unul mai mare.
+
+Al patrulea pas. Un obiect se scrie între acolade, cu proprietăți formate din etichetă, două puncte și valoare, separate prin virgulă, nu prin punct și virgulă. Citești cu punct, de exemplu joc punct nume. Schimbi cu egal, adaugi o proprietate nouă tot cu egal și ștergi cu delete.
+
+Al cincilea pas. Cea mai folositoare combinație este o listă de obiecte. Parcurgi lista cu for of și citești proprietățile fiecărei fișe cu punct. Când trimiți un obiect unei funcții, ea primește obiectul însuși, nu o copie, deci îl poate schimba.
+
+Proiectul. Clasamentul jocurilor mele. O listă de obiecte cu nume și notă, funcții care afișează lista, verifică dacă un joc există, calculează media și găsesc cel mai bun joc.
+
+Greșeli frecvente. Ai numărat de la unu. Ai cerut lista de length. Ai pus punct și virgulă între proprietăți. Ai scris eticheta cu literă mare în loc de literă mică. Ai pus în liste nume de colegi.
+
+Tema. Clasamentul meu de filme.
+
+Recapitulare. Liste, push, pop, includes, for of, obiecte, liste de obiecte. Succes!

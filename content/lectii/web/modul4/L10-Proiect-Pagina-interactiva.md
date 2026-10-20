@@ -1,9 +1,9 @@
-# LECȚIA 12 — Proiect: Pagina interactivă
+# LECȚIA 10 — Proiect: Pagina interactivă
 **Modulul 4 · JavaScript pentru începători · 2 ore**  
 **Code Maker Club · JavaScript Starter**
 
 > Ai învățat variabile, decizii, bucle, funcții, liste, obiecte, DOM și evenimente. Azi le pui pe toate într-un singur proiect: un **test cu întrebări și scor**, făcut de tine, pe un subiect la alegere. Pagina pune o întrebare, tu alegi un răspuns, ea îți spune dacă ai nimerit, ține scorul și la final îți dă un mesaj.  
-> Proiect: **„Testul meu cu scor”** · folder: `Prenume_Nume_W4_L12` (ex. `Ana_Pop_W4_L12`)
+> Proiect: **„Testul meu cu scor”** · folder: `Prenume_Nume_W4_L10` (ex. `Ana_Pop_W4_L10`)
 
 ---
 
@@ -60,7 +60,7 @@ Scrie cele **5 întrebări** (cu răspunsurile lor). Verifică întrebările: ex
 - [ ] Alege subiectul și titlul testului  
 - [ ] Scrie 5 întrebări, fiecare cu 3 răspunsuri și răspunsul corect marcat  
 - [ ] Desenează pe foaie cum arată pagina  
-- [ ] Creează folderul `Prenume_Nume_W4_L12` cu `index.html`, `stil.css` și `script.js`  
+- [ ] Creează folderul `Prenume_Nume_W4_L10` cu `index.html`, `stil.css` și `script.js`  
 
 ---
 
@@ -397,7 +397,7 @@ butonReia.addEventListener("click", function () {
 arataIntrebarea();
 ```
 
-`indice++` trece la următoarea întrebare; dacă mai sunt întrebări, le arătăm, altfel ajungem la final. Mesajul final se alege cu `else if` (lecția 5), iar `+=` lipește bucăți de text (lecția 2). La „Joacă din nou” resetăm starea și pornim din nou. **Ultima linie** (`arataIntrebarea();`) pornește jocul când se încarcă pagina.
+`indice++` trece la următoarea întrebare; dacă mai sunt întrebări, le arătăm, altfel ajungem la final. Mesajul final se alege cu `else if` (lecția 4), iar `+=` lipește bucăți de text (lecția 2). La „Joacă din nou” resetăm starea și pornim din nou. **Ultima linie** (`arataIntrebarea();`) pornește jocul când se încarcă pagina.
 
 Ordinea fișierului `script.js`: **datele** (lista de întrebări), **elementele și starea**, funcția `arataIntrebarea`, funcția `alegeRaspuns`, ascultătorul pentru „Următoarea”, `arataFinalul`, ascultătorul pentru „Joacă din nou”, apoi pornirea.
 
@@ -455,7 +455,7 @@ Lasă un coleg să joace testul. Colegul îți spune **un lucru reușit** și **
 ## Proiect / exerciții de finalizat AZI
 
 ### Exercițiul A — „Testul meu cu scor” (obligatoriu)
-Folderul `Prenume_Nume_W4_L12` are `index.html`, `stil.css` și `script.js`, cu tot ce este în **lista de verificare** din Exemplul 7.
+Folderul `Prenume_Nume_W4_L10` are `index.html`, `stil.css` și `script.js`, cu tot ce este în **lista de verificare** din Exemplul 7.
 
 ### Exercițiul B — Autoevaluare
 Pe foaie, notează de la 1 la 5 cât de bine ai înțeles fiecare lecție din modul (console.log, variabile, numere și text, decizii, mai multe condiții, `for`, `while`, funcții, liste, obiecte, DOM și evenimente). Scrie două lecții pe care vrei să le mai repeți.
@@ -483,7 +483,7 @@ for (let i = 0; i <= intrebari[0].optiuni.length; i++) {
 Pe foaie: de ce întrebările sunt obiecte într-o listă? De ce folosim variabila `amRaspuns`? De ce folosim `textContent`, nu `innerHTML`?
 
 **Gata când:**  
-- [ ] Folderul `Prenume_Nume_W4_L12` are `index.html`, `stil.css` și `script.js`  
+- [ ] Folderul `Prenume_Nume_W4_L10` are `index.html`, `stil.css` și `script.js`  
 - [ ] Toate punctele din lista de verificare sunt bifate  
 - [ ] Ai răspuns la exercițiile B–D  
 
@@ -527,7 +527,7 @@ Pe foaie: de ce întrebările sunt obiecte într-o listă? De ce folosim variabi
 - Ce face `butonUrmatoarea.hidden = true;`?
 
 ## Temă
-Arată testul unui membru al familiei și lasă persoana să joace. Notează care întrebare a fost cea mai grea și, dacă vrei, adaugă o întrebare nouă. Salvează varianta finală în `Prenume_Nume_W4_L12`.
+Arată testul unui membru al familiei și lasă persoana să joace. Notează care întrebare a fost cea mai grea și, dacă vrei, adaugă o întrebare nouă. Salvează varianta finală în `Prenume_Nume_W4_L10`.
 
 ## Ce urmează — Modulul 5
 Construim un **site complet** din mai multe pagini, cu meniu, galerie și formular care funcționează, folosind HTML, CSS și JavaScript împreună.

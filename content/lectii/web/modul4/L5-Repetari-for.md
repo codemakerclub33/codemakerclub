@@ -1,9 +1,9 @@
-# LECȚIA 6 — Repetări: for
+# LECȚIA 5 — Repetări: for
 **Modulul 4 · JavaScript pentru începători · 2 ore**  
 **Code Maker Club · JavaScript Starter**
 
 > Cum ai scrie cu mâna numerele de la 1 la 1000? Greu și plictisitor. Calculatorul însă **nu se plictisește niciodată**: îi spui o dată ce să facă și de câte ori, iar el repetă. Azi înveți bucla `for`, cu care faci un program să repete ceva de zeci, de sute sau de mii de ori, dintr-o singură bucată de cod.  
-> Proiect: **„Tabla înmulțirii și steluțele”** · folder: `Prenume_Nume_W4_L6` (ex. `Ana_Pop_W4_L6`)
+> Proiect: **„Tabla înmulțirii și steluțele”** · folder: `Prenume_Nume_W4_L5` (ex. `Ana_Pop_W4_L5`)
 
 ---
 
@@ -40,7 +40,7 @@ Din lecția trecută ții minte că:
 - un program bun verifică ce a scris utilizatorul.
 
 **Încearcă tu (4 min)**  
-- [ ] Creează folderul `Prenume_Nume_W4_L6` cu `index.html` (scheletul complet, cu `<script src="script.js"></script>` înainte de `</body>`) și `script.js`  
+- [ ] Creează folderul `Prenume_Nume_W4_L5` cu `index.html` (scheletul complet, cu `<script src="script.js"></script>` înainte de `</body>`) și `script.js`  
 - [ ] Pune în `<body>` un `<h1>` cu textul „Repetări”  
 - [ ] În `script.js` scrie cinci `console.log` cu numerele de la 1 la 5, unul sub altul, și observă cât de mult scrii  
 
@@ -342,7 +342,7 @@ Rulează programul cu mai multe numere. Poți adapta proiectul: alt desen (cu `#
 ## Proiect / exerciții de finalizat AZI
 
 ### Exercițiul A — „Tabla înmulțirii și steluțele” (obligatoriu)
-În folderul `Prenume_Nume_W4_L6` ai `index.html` și `script.js`, cu:
+În folderul `Prenume_Nume_W4_L5` ai `index.html` și `script.js`, cu:
 - o **tablă a înmulțirii** cu un număr cerut cu `prompt` (verificat să fie valid);
 - un **total** calculat într-o buclă (`suma += …`), cu valoarea inițială scrisă înainte de buclă;
 - un **desen din steluțe** (triunghi sau altă formă) făcut cu buclă;
@@ -379,7 +379,7 @@ console.log(suma);
 Pe foaie: care sunt cele trei părți ale lui `for`? Când se oprește bucla? De ce pagina îngheață la o buclă fără sfârșit și ce faci atunci?
 
 **Gata când:**  
-- [ ] Folderul `Prenume_Nume_W4_L6` are `index.html` și `script.js`  
+- [ ] Folderul `Prenume_Nume_W4_L5` are `index.html` și `script.js`  
 - [ ] Programul rulează fără erori și fără să înghețe  
 - [ ] Ai răspuns la exercițiile B–E  
 
@@ -423,9 +423,9 @@ Pe foaie: care sunt cele trei părți ale lui `for`? Când se oprește bucla? De
 - Ce este o buclă fără sfârșit?
 
 ## Temă
-Fă un program „Ceasul de numărat”: cere un număr `n` și afișează numerele de la 1 la `n`, apoi suma lor și media (suma împărțită la `n`). Salvează în `Prenume_Nume_W4_L6`.
+Fă un program „Ceasul de numărat”: cere un număr `n` și afișează numerele de la 1 la `n`, apoi suma lor și media (suma împărțită la `n`). Salvează în `Prenume_Nume_W4_L5`.
 
-## Ce urmează — Lecția 7
+## Ce urmează — Lecția 6
 Învățăm **bucla `while`**, care repetă „cât timp” se întâmplă ceva (de exemplu „cât timp nu ai ghicit numărul”), plus `break` și `continue`.
 
 ---

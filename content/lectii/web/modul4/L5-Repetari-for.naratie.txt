@@ -1,4 +1,4 @@
-Lecția a șasea din Modulul patru. Repetări, for.
+Lecția a cincea din Modulul patru. Repetări, for.
 
 Cum ai scrie cu mâna numerele de la unu la o mie? Greu și plictisitor. Calculatorul nu se plictisește niciodată: îi spui o dată ce să facă și de câte ori, iar el repetă. Azi înveți bucla for.
 

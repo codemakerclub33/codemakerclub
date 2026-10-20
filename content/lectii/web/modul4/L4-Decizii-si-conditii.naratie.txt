@@ -1,0 +1,23 @@
+Lecția a patra din Modulul patru. Decizii, if, else și mai multe condiții.
+
+Până acum programele tale făceau mereu aceleași lucruri, de sus în jos. Un program adevărat alege: dacă ai ghicit numărul, te felicită, altfel îți spune dacă ai greșit în sus sau în jos. Azi înveți if și else, adică dacă și altfel, apoi else if pentru mai multe variante, cuvintele și, sau, nu din programare și switch, un meniu de alegeri.
+
+Obiectivul. Minim: un program care cere vârsta și afișează un mesaj diferit pentru sub doisprezece ani și pentru doisprezece ani sau mai mult. Complet: în plus o scară de decizii cu cel puțin trei variante, și, sau, un meniu cu switch, verificarea numărului scris de utilizator și un joc de ghicit cu indicii.
+
+Primul pas. O comparație este o întrebare cu răspuns true sau false. Semnele sunt mai mare, mai mic, mai mare sau egal, mai mic sau egal, triplu egal pentru egal și semnul exclamării cu două egal pentru diferit. Un singur egal pune o valoare într-o variabilă. Trei egal întreabă dacă două valori sunt egale. La întrebări folosești mereu trei egal.
+
+Al doilea pas. If se scrie cu condiția între paranteze rotunde și cu acolade. Ce este în acolade se execută doar dacă condiția este adevărată. Comenzile din acolade se trag la dreapta cu două spații, ca să se vadă ce ține de decizie. Else prinde tot ce n-a prins if. Se execută exact unul dintre cele două blocuri. Else nu are condiție. Textul se compară tot cu trei egal, dar literele mari și mici contează. Ca să nu conteze, folosești to lower case. O parolă adevărată nu se păstrează niciodată în codul paginii, pentru că oricine îl poate citi.
+
+Al treilea pas. Când ai mai mult de două variante, folosești else if. Programul citește de sus în jos și execută doar primul bloc adevărat. De aceea începi cu condiția cea mai strictă, apoi mergi spre cele largi.
+
+Al patrulea pas. Dublu și înseamnă și: amândouă condițiile trebuie să fie adevărate. Două bare verticale înseamnă sau: cel puțin una trebuie să fie adevărată. Semnul exclamării înseamnă nu și întoarce răspunsul. Un interval se scrie numărul mai mare sau egal cu unu și numărul mai mic sau egal cu douăzeci. Cu number is nan verifici dacă utilizatorul a scris un număr valid.
+
+Al cincilea pas. Switch compară aceeași valoare cu mai multe variante. Fiecare case este o variantă, break oprește switch-ul, iar default prinde restul. Fără break, programul continuă cu varianta următoare.
+
+Proiectul. Calculatorul alege un număr aleator de la unu la douăzeci. Programul verifică dacă numărul scris este valid, apoi spune bravo, foarte aproape, prea mic sau prea mare.
+
+Greșeli frecvente. Ai scris un singur egal în condiție. Ai pus condiția largă prima. Ai scris unu mai mic sau egal cu n mai mic sau egal cu douăzeci, care nu merge. Ai uitat break în switch.
+
+Tema. Meniul cafenelei.
+
+Recapitulare. Comparații cu true sau false, if și else, else if, și, sau, nu, switch. Succes!

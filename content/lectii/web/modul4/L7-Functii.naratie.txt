@@ -1,4 +1,4 @@
-Lecția a opta din Modulul patru. Funcții.
+Lecția a șaptea din Modulul patru. Funcții.
 
 Ai observat că unele lucruri le scrii de mai multe ori: aruncarea unui zar, un mesaj de salut, un calcul. O funcție este o bucată de cod căreia îi dai un nume. O scrii o singură dată, apoi o chemi de câte ori vrei, ca pe o rețetă.
 
