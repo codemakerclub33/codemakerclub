@@ -621,6 +621,15 @@ Declară `const int MINUTE_ORA = 60;`. Calculează câte minute are o zi școlar
 
 ---
 
+## Quiz scurt
+- Ce este o variabilă?  
+- Cum declari o variabilă `int` cu valoarea 0?  
+- Care e diferența dintre `cout << scor;` și `cout << "scor";`?  
+- Ce fac `x += 5;` și `x++;`?  
+- La ce folosește `const`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–15** pe calculatorul tău.  
 2. Scrie un program „Fișa mea”, care afișează 5 variabile `int` (vârstă, nr. frați, an de naștere, clasă, nr. de jocuri preferate).  

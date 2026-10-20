@@ -1354,6 +1354,15 @@ Pune un al doilea monstru într-o altă cameră (de exemplu, un schelet în turn
 
 ---
 
+## Quiz scurt
+- Ce numere poate da `rand() % n`?  
+- De ce apelăm `srand` o singură dată?  
+- Ce date ține `struct Monstru`?  
+- Cât timp se repetă o luptă?  
+- Ce adaugă sabia la atacul eroului?  
+
+---
+
 ## Temă
 1. Termină Exercițiul A și joacă-l până reușești să câștigi și să pierzi măcar o dată.  
 2. Notează într-un tabel cât de grea a fost lupta (ușoară, potrivită, grea) și ajustează valorile ca să fie potrivită.  

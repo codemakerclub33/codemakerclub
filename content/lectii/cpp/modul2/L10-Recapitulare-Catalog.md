@@ -940,6 +940,15 @@ Completează o listă de teste: catalog gol (opțiunile 2, 3, 4, 5, 6), catalog 
 
 ---
 
+## Quiz scurt
+- Când folosești `for`, când `while` și când `do-while`?  
+- Ce șabloane de bază ai învățat în acest modul?  
+- De câte ori rulează corpul interior la bucle imbricate?  
+- Care e primul și care e ultimul indice dintr-un vector cu `N` elemente?  
+- Ce algoritmi de sortare cunoști acum?  
+
+---
+
 ## Temă
 1. Termină și testează **Catalogul de note**, apoi încarcă fișierul.  
 2. Refă din memorie, fără să te uiți, trei programe mici: suma unui vector, maximul cu poziția lui și sortarea crescătoare.  

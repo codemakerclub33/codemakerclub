@@ -1037,6 +1037,15 @@ Folosește ciurul lui Eratostene pentru a afișa toate numerele prime până la 
 
 ---
 
+## Quiz scurt
+- Când este `a` divizibil cu `b`?  
+- De ce ajunge să verifici divizorii până la `d * d <= n`?  
+- Sunt `0` și `1` numere prime? Care e singurul număr prim par?  
+- Cum calculezi cel mai mare divizor comun cu algoritmul lui Euclid?  
+- Cum marchezi multiplii în Ciurul lui Eratostene?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Scrie un program care citește un număr și afișează: dacă este prim, câți divizori are, suma divizorilor și descompunerea în factori primi.  

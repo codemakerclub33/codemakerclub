@@ -865,6 +865,15 @@ Dat fiind un vector deja în ordine crescătoare, inserează o valoare nouă pe 
 
 ---
 
+## Quiz scurt
+- Cum faci o căutare liniară?  
+- Cum afli dacă un element există, și cum afli poziția lui?  
+- Cum verifici dacă toate elementele respectă o regulă?  
+- Cum ștergi un element de pe poziția `p`?  
+- Cum inserezi un element pe poziția `p`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Citește 10 numere și un număr `x`. Spune dacă `x` apare, pe ce poziții și de câte ori.  

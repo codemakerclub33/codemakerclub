@@ -1057,6 +1057,15 @@ Verifică programul după regulile din lecția 9: nume clare, indentare corectă
 
 ---
 
+## Quiz scurt
+- Ce înseamnă `void` și ce înseamnă `&` la un parametru?  
+- Cum numești o funcție `bool`, ca să se citească ca o propoziție?  
+- Cum obții ultima cifră a unui număr?  
+- Cum alegi un număr aleator într-un interval?  
+- Cum funcționează cifrul lui Cezar?  
+
+---
+
 ## Temă
 1. Termină și testează **Seiful secret**, apoi încarcă fișierul.  
 2. Alege și implementează **o** extindere din Exercițiul B.  

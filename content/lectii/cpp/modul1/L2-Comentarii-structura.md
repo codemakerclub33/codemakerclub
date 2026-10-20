@@ -481,6 +481,15 @@ Pe o foaie, desenează scheletul unui program și scrie lângă fiecare linie ce
 
 ---
 
+## Quiz scurt
+- În ce ordine execută programul instrucțiunile?  
+- Cum scrii un comentariu pe o linie și unul pe mai multe linii?  
+- Ce face compilatorul cu comentariile?  
+- De ce indentăm codul cu 4 spații în interiorul `{ }`?  
+- Ce face `return 0;`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–14** pe calculatorul tău (scrise de mână, nu copiate).  
 2. Comentează toate programele tale din L1 (antet + secțiuni).  

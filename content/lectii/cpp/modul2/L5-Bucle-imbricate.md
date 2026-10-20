@@ -747,6 +747,15 @@ Un număr este **perfect** dacă este egal cu suma divizorilor lui mai mici dec�
 
 ---
 
+## Quiz scurt
+- Ce este o buclă imbricată?  
+- De câte ori rulează corpul interior, în total?  
+- Într-un desen, ce reprezintă bucla exterioară și ce cea interioară?  
+- Cum desenezi un triunghi: până unde merge bucla interioară?  
+- Ce oprește un `break` dintr-o buclă interioară?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Desenează un **brad de Crăciun**: o piramidă de 5 rânduri, urmată de un trunchi format din 2 rânduri cu câte un `|` la mijloc.  

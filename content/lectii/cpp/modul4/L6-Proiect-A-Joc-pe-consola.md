@@ -1643,6 +1643,15 @@ Doi jucători aruncă fiecare câte două zaruri, de 5 ori. Se adună punctele; 
 
 ---
 
+## Quiz scurt
+- Care sunt cele patru întrebări cu care planifici un joc?  
+- De ce folosim la început un număr fix în loc de `rand()`?  
+- Cum reprezinți tabla de X și 0 și care sunt combinațiile câștigătoare?  
+- De ce verifici câștigătorul înainte de remiză?  
+- Ce face un adversar simplu, în ordine?  
+
+---
+
 ## Temă
 1. Termină jocul ales (A) și jucându-l, găsește cel puțin o greșeală; corecteaz-o și notează într-un comentariu ce ai descoperit.  
 2. Scrie și celălalt joc din lecție, dacă nu l-ai terminat azi.  

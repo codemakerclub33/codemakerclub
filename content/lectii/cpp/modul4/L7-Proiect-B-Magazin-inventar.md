@@ -1876,6 +1876,15 @@ Adaugă produselor o categorie (de exemplu „papetărie”, „ghiozdane”). A
 
 ---
 
+## Quiz scurt
+- De ce are fiecare obiect un `id` unic?  
+- Cum păstrezi numele cu spații într-un fișier?  
+- Ce verifici înainte de o vânzare?  
+- Cum faci o căutare parțială, fără să conteze literele mari și mici?  
+- Cum aliniezi tabelele la afișare?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–15** pe calculatorul tău.  
 2. Termină exercițiile A, B și unul dintre C–E.  

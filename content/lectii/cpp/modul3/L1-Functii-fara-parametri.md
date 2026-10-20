@@ -818,6 +818,15 @@ Ia Exemplul 10 și încearcă să afișezi în `main` valoarea lui `x` din `unu(
 
 ---
 
+## Quiz scurt
+- Ce este o funcție și cum o definești dacă nu returnează nimic?  
+- Cum apelezi o funcție?  
+- Ce înseamnă `void`?  
+- De ce trebuie funcția cunoscută înainte de apel și ce este un prototip?  
+- Ce înseamnă că o variabilă este locală?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Scrie un program „Salutul zilei” cu trei funcții: `dimineata()`, `pranz()` și `seara()`, fiecare cu un mesaj diferit. În `main` apelează-le pe rând.  

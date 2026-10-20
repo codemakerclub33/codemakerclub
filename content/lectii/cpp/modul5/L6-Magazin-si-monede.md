@@ -1523,6 +1523,15 @@ Fiecare produs are un stoc (de exemplu, 2 poțiuni). Când stocul ajunge la `0`,
 
 ---
 
+## Quiz scurt
+- Cum păstrezi produsele și prețurile lor?  
+- Ce verifici înainte să cumperi un produs?  
+- La ce preț vinzi un obiect și ce obiect nu se poate vinde?  
+- Cum verifici dacă ai un obiect în rucsac?  
+- Cum se calculează daunele primite, cu cel puțin `1`?  
+
+---
+
 ## Temă
 1. Termină Exercițiul A și joacă până când reușești să cumperi și să folosești fiecare produs.  
 2. Fă un tabel cu produsele jocului tău: preț de cumpărare, preț de vânzare, efect.  

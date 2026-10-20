@@ -997,6 +997,15 @@ Scrie la sfârșitul fișierului, într-un comentariu, trei îmbunătățiri pe 
 
 ---
 
+## Quiz scurt
+- Ce funcții și moduri folosești pentru fișiere?  
+- Ce fac `push_back`, `erase`, `insert` și `sort` la un `vector`?  
+- Ce poate conține o `struct`?  
+- Cum faci un meniu cu `enum` și `switch`?  
+- Ce trebuie să conțină o prezentare a proiectului?  
+
+---
+
 ## Temă
 1. Păstrează proiectul final și continuă să-l îmbunătățești în timpul liber: fiecare funcționalitate nouă te face mai bun.  
 2. Rezolvă din nou, fără să te uiți, întrebările din test la care ai greșit.  

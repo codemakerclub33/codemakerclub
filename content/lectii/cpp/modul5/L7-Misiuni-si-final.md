@@ -1362,6 +1362,15 @@ Folosește Exemplul 11 și afișează un final diferit în funcție de scor.
 
 ---
 
+## Quiz scurt
+- Ce este un steag?  
+- Ce fac `&&`, `||` și `!`?  
+- Cum alegi un text cu `cond ? "a" : "b"`?  
+- Când câștigi și când pierzi jocul?  
+- Cum se calculează scorul final?  
+
+---
+
 ## Temă
 1. Termină Exercițiul A și joacă toate cele trei finaluri.  
 2. Joacă jocul cu un coleg sau un părinte, **fără să-i explici nimic**, și notează unde se încurcă sau ce nu înțelege.  

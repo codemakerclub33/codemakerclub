@@ -808,6 +808,15 @@ Scrie o funcție `chenar(string mesaj, int latime)` care afișează mesajul înc
 
 ---
 
+## Quiz scurt
+- Care e diferența dintre parametru și argument?  
+- Cum scrii o funcție cu doi parametri de tipuri diferite?  
+- Poate o funcție obișnuită să schimbe variabila originală trimisă ca argument?  
+- Cum trimiți un vector unei funcții?  
+- Ce face `&` într-un parametru, de exemplu `int &a`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Scrie o funcție `triunghi(int n)` și una `piramida(int n)`; apeleaz-o pentru `n` de la 1 la 4.  

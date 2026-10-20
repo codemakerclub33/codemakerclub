@@ -1128,6 +1128,15 @@ Scrie funcția `void rotesteStanga(vector<int> &v)` care mută primul element la
 
 ---
 
+## Quiz scurt
+- Ce incluzi și cum declari un `vector` de `int`?  
+- Ce fac `push_back`, `pop_back` și `size()`?  
+- Cum ștergi elementul de pe poziția `i`?  
+- Cum modifici elementele unui vector într-un `for` cu `for (int &x : v)`?  
+- Când trimiți un vector ca `const vector<int> &v` și când ca `vector<int> &v`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Scrie un program care citește `n` numere într-un vector și afișează: suma, media, minimul, maximul și câte numere sunt mai mari decât media.  

@@ -735,6 +735,15 @@ Citește un cod secret (`int`) și o vârstă. Permite intrarea doar dacă ambel
 
 ---
 
+## Quiz scurt
+- Când este adevărat `A && B`?  
+- Când este adevărat `A || B`?  
+- Ce face `!`?  
+- Cum scrii că `x` este între 1 și 10, și cum că e în afara intervalului?  
+- Ce faci când amesteci `&&` și `||`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău și testează fiecare pe mai multe valori.  
 2. Scrie un program care citește un an și afișează dacă este bisect, rezolvând cu ajutorul unei variabile `bool`.  

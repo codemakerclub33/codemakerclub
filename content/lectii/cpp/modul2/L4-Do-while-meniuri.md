@@ -915,6 +915,15 @@ Pentru fiecare dintre problemele de mai jos, scrie pe foaie ce buclă ai folosi 
 
 ---
 
+## Quiz scurt
+- Ce deosebește `do-while` de `while`?  
+- Ce trebuie scris la finalul unui `do-while`?  
+- Pentru ce situații este potrivit `do-while`?  
+- Unde se declară variabilele folosite în condiția buclei?  
+- Când alegi `for`, `while` și `do-while`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Scrie un meniu pentru o librărie (1. Cărți, 2. Caiete, 3. Pixuri, 0. Ieșire) care afișează prețul produsului ales și se repetă până alegi `0`.  

@@ -781,6 +781,15 @@ Citește un număr și afișează „Da” dacă este palindrom (de exemplu `122
 
 ---
 
+## Quiz scurt
+- Cât timp se repetă `while (condiție)`?  
+- Cine are grijă ca bucla `while` să se oprească?  
+- Cum scrii tiparul „citește până la o valoare de oprire”?  
+- Cum obții cifrele unui număr cu `% 10` și `/= 10`?  
+- Ce fac `break;` și `continue;`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Scrie un program care citește numere până la `0` și afișează media lor (atenție la cazul în care nu s-a citit niciun număr).  

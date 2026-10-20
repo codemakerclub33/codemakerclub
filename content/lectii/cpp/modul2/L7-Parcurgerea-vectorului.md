@@ -751,6 +751,15 @@ Un vector conține notele, altul ponderile (de exemplu, lucrări 40%, test 30%�
 
 ---
 
+## Quiz scurt
+- Cum calculezi suma elementelor unui vector?  
+- Cu ce element pornești la căutarea maximului?  
+- Cum afli poziția maximului?  
+- Cum calculezi suma doar a elementelor care respectă o condiție?  
+- Ce sunt vectorii paraleli și ce îi leagă?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Citește 10 numere întregi și afișează: suma, media, minimul, maximul și cât de mult depășește maximul media.  

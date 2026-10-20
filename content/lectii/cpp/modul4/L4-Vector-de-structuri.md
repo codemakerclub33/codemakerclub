@@ -1417,6 +1417,15 @@ Definește `struct Articol { string nume; double pret; int cantitate; };`. Cite�
 
 ---
 
+## Quiz scurt
+- Cum declari un vector de structuri și cum adaugi un element?  
+- Cum cauți un element și ce returnezi când nu îl găsești?  
+- Cum ștergi un element de pe poziția `poz`?  
+- Ce este un comparator și ce trebuie să returneze?  
+- Ce înseamnă CRUD?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Termină exercițiile A–C.  

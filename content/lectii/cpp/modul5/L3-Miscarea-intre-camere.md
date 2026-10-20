@@ -1243,6 +1243,15 @@ Numără câte mutări a făcut eroul și afișează numărul în `afiseazaStare
 
 ---
 
+## Quiz scurt
+- Cum sunt păstrate numele și descrierile camerelor?  
+- Ce înseamnă `-1` în tabloul `IESIRI`?  
+- Cum arată bucla principală a jocului?  
+- Ce face funcția `muta`?  
+- Ce răspuns primește o comandă necunoscută?  
+
+---
+
 ## Temă
 1. Termină Exercițiul A și plimbă-te prin castel de cel puțin două ori, încercând și drumurile imposibile.  
 2. Desenează pe hârtie harta jocului tău cu 6 camere. Pentru fiecare cameră, scrie rândul din `IESIRI` (nord, sud, est, vest, cu `-1` unde nu există drum).  

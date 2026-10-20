@@ -1423,6 +1423,15 @@ Adaugă un test care simulează lupta cu goblinul de 200 de ori (Exemplul 11) ș
 
 ---
 
+## Quiz scurt
+- Ce înseamnă cod curat?  
+- Care sunt pașii de depanare?  
+- Ce dă `15 / 30` la numere întregi?  
+- Ce face funcția `verifica` din teste?  
+- Când rulezi testele?  
+
+---
+
 ## Temă
 1. Termină Exercițiul A și rulează testele interne.  
 2. Parcurge lista de la Exercițiul B și curăță cel puțin trei locuri din codul tău.  

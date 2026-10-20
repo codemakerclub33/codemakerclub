@@ -747,6 +747,15 @@ Citește `n` numere și afișează: primul, ultimul, al doilea, penultimul. Dac�
 
 ---
 
+## Quiz scurt
+- Cum declari un vector de `N` elemente?  
+- Care e primul și care e ultimul indice valid?  
+- Cum parcurgi un vector cu `for`?  
+- Cum dai valori vectorului la declarare?  
+- De ce verificăm mereu indicii?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–17** pe calculatorul tău.  
 2. Citește 10 numere într-un vector și afișează-le: o dată pe un singur rând, o dată câte unul pe rând, numerotate.  

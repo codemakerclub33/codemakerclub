@@ -1538,6 +1538,15 @@ Schimbă subiectul (de exemplu „Animale”, „Geografie”, „Matematică”
 
 ---
 
+## Quiz scurt
+- Ce conține o întrebare din quiz?  
+- Cum legi litera răspunsului de indicele variantei?  
+- De ce amestecăm un vector de indici și nu datele?  
+- Cum găsești din nou răspunsul corect după amestecarea variantelor?  
+- De ce stau întrebările separat de cod?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–15** pe calculatorul tău.  
 2. Termină exercițiile A și E. Un coleg trebuie să poată juca quiz-ul tău fără să-l ghidezi.  

@@ -651,6 +651,15 @@ Citești suma de bani pe care o ai și prețul unui covrig. Afișează câți co
 
 ---
 
+## Quiz scurt
+- Ce face `cin >> x;`?  
+- De ce afișezi un mesaj înainte de `cin`?  
+- Ce dau `/` și `%` la numere `int`?  
+- Cum afli ultima cifră a unui număr `n`?  
+- De ce nu împărțim niciodată la zero?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău și testează fiecare cu cel puțin două seturi de date.  
 2. Scrie un program care citește un număr de secunde și îl afișează în forma `minute:secunde` (de exemplu, `135` secunde devine `2 min 15 s`).  

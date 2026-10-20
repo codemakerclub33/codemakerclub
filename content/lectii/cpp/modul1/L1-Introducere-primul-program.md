@@ -526,6 +526,15 @@ Afișează cuvântul **CODEKIDS** cu câte o literă pe fiecare rând, în două
 
 ---
 
+## Quiz scurt
+- Ce trei lucruri are cel puțin un program C++?  
+- Ce face `cout << "text";` și cu ce semn se termină instrucțiunea?  
+- Care e diferența dintre `\n` și `endl`?  
+- Cum afișezi ghilimele în interiorul unui text?  
+- De ce contează spațiile din interiorul ghilimelelor la un desen?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău (scrise de mână, nu copiate).  
 2. Scrie un program **„Despre mine”** cu minimum 6 rânduri, care folosește un tab și ghilimele.  

@@ -849,6 +849,15 @@ Aruncă două zaruri de 10000 de ori și numără de câte ori iese fiecare sum�
 
 ---
 
+## Quiz scurt
+- Ce face `rand()` și din ce fișier de antet vine?  
+- De ce apelăm `srand(time(0));` o singură dată?  
+- Cum obții un număr între `a` și `b`?  
+- Cum obții aruncarea unui zar?  
+- De ce verificăm regulile și nu valorile exacte când folosim `rand()`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău și rulează fiecare program de mai multe ori.  
 2. Scrie un program „Zar de joc de rol” care citește ce zar vrea utilizatorul (d4, d6, d8, d10, d12, d20) și îl aruncă de câte ori cere.  

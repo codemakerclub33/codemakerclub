@@ -797,6 +797,15 @@ Citește `n` (între 1 și 20) și afișează `n!` folosind `long long`. Dacă `
 
 ---
 
+## Quiz scurt
+- Cu ce valoare pornește un acumulator de sumă și cu ce valoare unul de produs?  
+- Cum numeri câte numere respectă o condiție?  
+- Cum găsești maximul dintre numerele citite?  
+- Cum calculezi media corect, cu zecimale?  
+- Când folosești `long long` în loc de `int`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Scrie un program care citește `n` și afișează suma numerelor de la 1 la `n` care sunt impare **și** divizibile cu 3.  

@@ -842,6 +842,15 @@ Citește `n` numere, sortează vectorul și afișează mediana (cu atenție la c
 
 ---
 
+## Quiz scurt
+- Cum interschimbi două variabile cu `aux`?  
+- Cum funcționează Bubble Sort?  
+- Cum funcționează Selection Sort?  
+- Ce schimbi ca sortarea să fie descrescătoare?  
+- Ce face `sort(v, v + n);`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Citește 8 numere. Sortează-le crescător cu metoda bulelor și afișează: vectorul sortat, al doilea cel mai mic și al doilea cel mai mare.  

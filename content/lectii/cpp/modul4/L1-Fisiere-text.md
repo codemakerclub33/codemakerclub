@@ -856,6 +856,15 @@ Citește un fișier text oarecare (de exemplu `salut.txt`) și afișează câte 
 
 ---
 
+## Quiz scurt
+- Ce bibliotecă incluzi pentru fișiere?  
+- Care e diferența dintre `ofstream fout("nume.txt");` și `ofstream fout("nume.txt", ios::app);`?  
+- Cum verifici dacă fișierul s-a deschis?  
+- De ce nu scriem `while (!fin.eof())`? Ce scriem în loc?  
+- Cum citești de două ori același fișier?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Creează în Notepad un fișier `numere.txt` cu 10 numere și scrie un program care afișează suma, media și cel mai mare număr.  

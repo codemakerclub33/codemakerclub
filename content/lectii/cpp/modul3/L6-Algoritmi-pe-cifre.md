@@ -869,6 +869,15 @@ Citește un număr și o cifră. Afișează numărul după ce îi elimini toate 
 
 ---
 
+## Quiz scurt
+- Cum obții ultima cifră și cum o elimini dintr-un număr?  
+- Cum parcurgi toate cifrele unui număr?  
+- Cum construiești oglinditul unui număr?  
+- De ce numărăm cifrele cu `do-while`?  
+- Cum transformi un număr în binar?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Scrie funcțiile `sumaCifrelorPare(n)` și `numarCifreImpare(n)` și testează-le pe 5 numere citite.  

@@ -891,6 +891,15 @@ Ia un program al tău și scoate intenționat un `break`. Rulează-l și explic�
 
 ---
 
+## Quiz scurt
+- Cu ce compară `switch` expresia?  
+- De ce are fiecare `case` nevoie de `break`?  
+- Ce prinde `default`?  
+- Cu ce tipuri merge `switch` și cu ce nu?  
+- Când folosești `if ... else if` în loc de `switch`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău și testează fiecare opțiune, inclusiv una invalidă.  
 2. Scrie un program „Meniu de pizza” cu 4 tipuri de pizza și prețuri; citește tipul și numărul de porții și afișează totalul.  

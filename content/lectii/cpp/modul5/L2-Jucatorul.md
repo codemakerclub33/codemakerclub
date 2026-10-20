@@ -914,6 +914,15 @@ Pornind de la Exemplul 11, lasă jucătorul să aleagă o clasă când își cre
 
 ---
 
+## Quiz scurt
+- Cum accesezi un câmp al eroului din `struct Jucator`?  
+- Ce diferență este între `const Jucator &j` și `Jucator &j`?  
+- Între ce valori păstrează `raneste` și `vindeca` viața eroului?  
+- Cum calculezi câte căsuțe sunt pline în bara de viață?  
+- Poate o funcție să întoarcă o structură întreagă?  
+
+---
+
 ## Temă
 1. Termină Exercițiul A și testează jocul cu nume lungi, cu spații și cu nume gol.  
 2. Rulează de mai multe ori `raneste` și `vindeca` cu valori mari și verifică limitele.  

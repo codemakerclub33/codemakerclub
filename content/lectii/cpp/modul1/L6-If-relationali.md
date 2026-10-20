@@ -668,6 +668,15 @@ Citește un cuvânt. Dacă este exact „codekids”, afișează „Bine ai veni
 
 ---
 
+## Quiz scurt
+- Ce rezultat dă o comparație?  
+- Când se execută blocul din `if`?  
+- Care e diferența dintre `=` și `==`?  
+- De ce nu scriem `;` după `if (...)`?  
+- De ce testăm cu valori pentru care condiția e adevărată și cu valori pentru care e falsă?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–14** pe calculatorul tău și testează fiecare în ambele cazuri.  
 2. Scrie un program care citește temperatura corpului (`double`) și afișează „Ai febră” dacă este peste 37.5.  

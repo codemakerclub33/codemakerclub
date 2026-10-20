@@ -702,6 +702,15 @@ Alege un număr secret (în cod) și permite o singură încercare, cu mesajele 
 
 ---
 
+## Quiz scurt
+- Câte drumuri alege `if ... else`?  
+- Ce face `else if`?  
+- Ce prinde `else` de la final?  
+- De ce contează ordinea cazurilor?  
+- De ce testăm valorile de la graniță?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–15** pe calculatorul tău și testează fiecare ramură.  
 2. Scrie un program care citește un număr de la 1 la 12 și afișează luna (ianuarie, februarie, …).  

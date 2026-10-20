@@ -1422,6 +1422,15 @@ Folosește Exemplul 10: cere un număr de slot (1–3) la `salveaza` și la „C
 
 ---
 
+## Quiz scurt
+- Ce include și ce clase folosești pentru fișiere?  
+- De ce verifici `is_open()` înainte de citire?  
+- Ce scrii întâi când salvezi un `vector`?  
+- De ce citești în aceeași ordine în care ai scris?  
+- De ce citești întâi într-o copie și suprascrii datele reale abia la final?  
+
+---
+
 ## Temă
 1. Termină Exercițiul A și testează salvarea de cel puțin trei ori, în momente diferite din joc.  
 2. Deschide `salvare.txt` și încearcă să schimbi un număr (de exemplu monedele). Încarcă jocul. Ce observi? Ce s-ar întâmpla dacă cineva ar scrie litere în loc de numere?  

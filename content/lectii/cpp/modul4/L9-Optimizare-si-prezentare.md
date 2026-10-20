@@ -1434,6 +1434,15 @@ Scrie pe hârtie (sau într-un comentariu la sfârșitul fișierului) scriptul d
 
 ---
 
+## Quiz scurt
+- Ce este refactorizarea?  
+- Ce înseamnă DRY?  
+- Care e ordinea: corect, clar sau rapid?  
+- De unde vine câștigul mare de viteză?  
+- Ce conține o prezentare bună a proiectului?  
+
+---
+
 ## Temă
 1. Termină exercițiile A–C pentru proiectul tău preferat din Modulul 4.  
 2. Pregătește demonstrația de 3 minute și repetă-o cu cronometrul. Notează cât a durat.  

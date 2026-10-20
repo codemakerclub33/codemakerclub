@@ -903,6 +903,15 @@ Felicitări! Dacă ai bifat toată lista de verificare, ai primit insigna **Juni
 
 ---
 
+## Quiz scurt
+- Ce poate face acum un program scris de tine, după Modulul 1?  
+- Care e diferența dintre `/` și `%`?  
+- Când alegi `if` și când `switch`?  
+- Ce tipuri de date ai folosit în programul tău?  
+- Cum arăți programul altora, de la idee la demo?  
+
+---
+
 ## Temă
 1. Îmbunătățește proiectul cu **o singură** idee mică: un mesaj în plus, o opțiune nouă sau o verificare suplimentară.  
 2. Pe foaie, scrie 3 lucruri pe care le-ai învățat în Modulul 1 și 1 lucru pe care vrei să-l înțelegi mai bine.  

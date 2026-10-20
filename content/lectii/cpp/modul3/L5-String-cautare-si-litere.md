@@ -902,6 +902,15 @@ Citește un cuvânt și afișează-l alternând literele mari și mici: `program
 
 ---
 
+## Quiz scurt
+- Ce sunt codurile ASCII și ce cod are `'A'`?  
+- La ce folosesc `isalpha`, `isdigit`, `toupper` și `tolower`?  
+- Ce returnează `find` când nu găsește textul căutat?  
+- Cum numeri aparițiile fiecărei litere cu un vector de frecvență?  
+- Cum recunoști două anagrame?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Scrie o funcție `int numaraVocale(string s)` și una `int numaraConsoane(string s)`, apoi un program care le folosește pentru 3 propoziții citite.  

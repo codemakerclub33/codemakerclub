@@ -672,6 +672,15 @@ Citește un prenume și un an de naștere. Afișează: „Salut, NUME! Vei împl
 
 ---
 
+## Quiz scurt
+- Ce tip folosești pentru zecimale, pentru un caracter și pentru text?  
+- Ce dă `5 / 2` când ambele numere sunt `int`?  
+- Ce face `(double)a`?  
+- Ce este codul ASCII al lui `'A'`?  
+- Ce fac `fixed` și `setprecision(2)`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Scrie un program care citește prețul unui produs (`double`), cantitatea (`int`) și afișează totalul cu 2 zecimale.  

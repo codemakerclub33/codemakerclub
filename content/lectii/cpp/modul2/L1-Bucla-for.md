@@ -666,6 +666,15 @@ Citește un număr `n` și afișează un tabel cu numerele de la 1 la `n`, pătr
 
 ---
 
+## Quiz scurt
+- Care sunt cele trei părți din paranteza lui `for` și când se execută fiecare?  
+- Cum scrii o numărare descrescătoare de la `n` la 1?  
+- Ce se întâmplă dacă pui `;` după paranteza lui `for`?  
+- Dacă condiția e falsă de la început, se execută corpul buclei?  
+- Cum numeri din 2 în 2?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Scrie un program care citește un număr `n` și afișează primele `n` numere pare.  

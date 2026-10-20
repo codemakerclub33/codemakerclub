@@ -1211,6 +1211,15 @@ Adaugă comanda `arunca`: scoate un obiect din rucsac și îl lasă în camera c
 
 ---
 
+## Quiz scurt
+- Ce tip are rucsacul și cum adaugi sau ștergi un obiect?  
+- Ce înseamnă textul gol `""` într-o cameră?  
+- Ce întoarce `pozitie(lista, nume)` când obiectul nu există?  
+- Ce face comanda `ia`?  
+- Care e diferența dintre poțiune și sabie?  
+
+---
+
 ## Temă
 1. Termină Exercițiul A și joacă-l de câteva ori, încercând toate comenzile, și cele greșite.  
 2. Scrie pe hârtie **monstrul** jocului tău: nume, viață, cât de tare lovește și ce recompensă dă.  

@@ -976,6 +976,15 @@ Definește `struct Personaj { string nume; int viata = 100; int atac = 10; Punct
 
 ---
 
+## Quiz scurt
+- Cum definești o `struct` și ce nu uiți la final?  
+- Cum accesezi un câmp al unei variabile de tip structură?  
+- Se pot compara două structuri cu `==`?  
+- Ce înseamnă `j.poz.x`?  
+- Cum salvezi structurile într-un fișier?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Definește `struct Telefon { string marca; double pret; int memorie; };`, citește 3 telefoane și afișează-l pe cel mai ieftin și pe cel cu memoria cea mai mare.  

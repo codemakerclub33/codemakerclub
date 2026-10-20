@@ -733,6 +733,15 @@ Citește un cuvânt și afișează o piramidă formată din prefixele lui: pentr
 
 ---
 
+## Quiz scurt
+- Ce trebuie inclus ca să folosești `string`?  
+- Ce dă `s.length()` și de unde încep pozițiile?  
+- Care e diferența dintre `cin >> s` și `getline(cin, s)`?  
+- De ce punem `cin.ignore();` după `cin >>`?  
+- Când este un text palindrom?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Scrie un program care citește o propoziție și afișează: lungimea, numărul de cuvinte, prima și ultima literă și propoziția scrisă invers.  

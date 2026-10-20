@@ -916,6 +916,15 @@ Scrie funcția `string calificativ(double medie)` cu cinci categorii (Excelent, 
 
 ---
 
+## Quiz scurt
+- Ce arată tipul din fața numelui funcției?  
+- Ce face `return valoare;`?  
+- Ce trebuie să se întâmple la finalul oricărui drum într-o funcție care nu e `void`?  
+- Cum folosești un apel de funcție într-un `if`?  
+- Ce returnezi de obicei când nu găsești un element în vector?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Scrie funcțiile `maximVector`, `minimVector`, `media` și un program care citește 7 temperaturi și afișează un raport (maxim, minim, medie, diferența maxim − minim).  

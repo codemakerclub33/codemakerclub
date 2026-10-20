@@ -822,6 +822,15 @@ Desenează pe hârtie harta jocului tău: 6 camere și drumurile dintre ele. Pe 
 
 ---
 
+## Quiz scurt
+- Ce are un RPG: care sunt părțile lui?  
+- De ce păstrăm textele jocului în constante și tablouri?  
+- Ce face `string(n, c)` și ce face `to_string(x)`?  
+- Cum marchezi camera curentă pe hartă?  
+- De ce are fiecare parte a programului câte o funcție cu un singur rol?  
+
+---
+
 ## Temă
 1. Termină Exercițiul A și rulează jocul de cel puțin trei ori, cu date corecte și greșite.  
 2. Desenează pe hârtie harta jocului tău, cu 6 camere, și notează numele lor.  

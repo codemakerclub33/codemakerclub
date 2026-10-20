@@ -796,6 +796,15 @@ Fă o listă cu cel puțin 8 greșeli pe care le-ai făcut în ultimele luni, fi
 
 ---
 
+## Quiz scurt
+- Care sunt cele trei tipuri de erori?  
+- Cu ce eroare începi când citești mesajele compilatorului și ce altceva verifici?  
+- Dă două greșeli clasice de logică.  
+- Care sunt câteva metode de depanare?  
+- Ce înseamnă un stil bun de cod?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** și repară toate programele cu greșeli.  
 2. Scrie un „mini test” cu `assert` pentru cinci funcții din lecțiile anterioare.  

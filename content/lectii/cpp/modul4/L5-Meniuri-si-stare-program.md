@@ -1780,6 +1780,15 @@ Adaugă la orice program al tău o structură `Setari` salvată în fișier, cu 
 
 ---
 
+## Quiz scurt
+- Când este adevărat `cin.fail()` și cum repari citirea?  
+- De ce folosim funcții de citire sigură?  
+- Cum arată un meniu cu o buclă și `switch`?  
+- La ce folosește o structură `Stare` trimisă prin `&`?  
+- Când încărcăm și când salvăm datele?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Termină exercițiile A–C.  
