@@ -732,6 +732,15 @@ Răspunde pe foaie (apoi verifică cu profesorul):
 
 ---
 
+## Quiz scurt
+- Ce este o operă în galeria ta?  
+- De ce începe fiecare operă cu `curata()`?  
+- Ce avantaj au funcțiile cu parametri?  
+- Cum legi tastele de funcții cu un dicționar?  
+- De ce păstrăm meniul cu o țestoasă separată?  
+
+---
+
 ## Temă
 1. Termină galeria cu cele 8 opere și testează fiecare tastă.  
 2. Fă o fotografie sau o captură de ecran a operei tale preferate.  

@@ -748,6 +748,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Care e diferența dintre `KEYDOWN` și `get_pressed()`?  
+- Cum faci o mișcare lină spre stânga?  
+- Ce face `rect.clamp_ip(zona)`?  
+- Cum faci un personaj să sară?  
+- Cum limitezi viteza cu care se trage?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny.  
 2. Fă un joc în care **un pătrat roșu** (inamic) coboară de sus, iar tu **tragi în el**, fără să-l lovești încă (coliziunile vin la lecția următoare).  

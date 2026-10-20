@@ -888,6 +888,15 @@ Răspunde pe foaie (apoi verifică cu profesorul):
 
 ---
 
+## Quiz scurt
+- Ce trebuie să aibă un joc finisat?  
+- De ce folosim constante cu nume?  
+- La ce te ajută capturile de ecran și fișa jocului?  
+- Ce afli când arăți jocul altora?  
+- Care e partea ta preferată din jocul făcut de tine?  
+
+---
+
 ## Temă
 1. Mai joacă-ți jocul cu **3 persoane** și notează ce îmbunătățiri propun.  
 2. Pune în joc **cel puțin două** îmbunătățiri propuse de colegi sau de familie.  

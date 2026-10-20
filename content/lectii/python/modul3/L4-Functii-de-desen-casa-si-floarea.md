@@ -667,6 +667,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Ce parametri primește de obicei o funcție de desen?  
+- Cu ce comenzi începe fiecare funcție de desen?  
+- Din ce forme simple se compune o casă?  
+- Ce desenează `circle(raza, grade)`?  
+- La ce folosește funcția `peisaj()`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny.  
 2. Adaugă în sat o **biserică** sau o **școală** (o funcție nouă).  

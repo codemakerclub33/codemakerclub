@@ -398,6 +398,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Cum creezi o țestoasă în Python?  
+- Care sunt cele patru comenzi de mișcare și rotire?  
+- Câte laturi și ce rotire are un pătrat?  
+- Cum muți țestoasa fără să deseneze?  
+- La ce folosește `turtle.done()`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny.  
 2. Desenează o **scară care coboară** în loc să urce.  

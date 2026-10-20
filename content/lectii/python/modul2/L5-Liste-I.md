@@ -449,6 +449,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Cu ce număr începe indexul într-o listă?  
+- Cum adaugi un element la sfârșitul listei?  
+- Care e diferența dintre `remove(x)` și `pop(i)`?  
+- Cum verifici dacă un element se află în listă?  
+- Ce dă `lista[::-1]`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
 2. Fă o **listă cu hobby-urile tale** și un program care o afișează numerotat.  

@@ -583,6 +583,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Ce face `screen.onscreenclick(functia)`?  
+- Câți parametri trebuie să aibă funcția legată de click?  
+- Care e diferența dintre `onscreenclick` și `t.onclick`?  
+- Cum verifici dacă un click e într-o zonă?  
+- De ce folosim două țestoase când ștergem desenul?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny.  
 2. Fă un program care desenează **un cerc la fiecare click**, cu raza aleasă la întâmplare.  

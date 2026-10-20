@@ -751,6 +751,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Ce verifică `a.colliderect(b)`?  
+- Ce verifică `rect.collidepoint(x, y)`?  
+- Cum verifici coliziunea a două cercuri?  
+- De ce mutăm pe `x`, verificăm, apoi mutăm pe `y`?  
+- La ce folosește imunitatea după o lovitură?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny.  
 2. Fă un **labirint** cu intrare, ieșire și chei, în care trebuie să ajungi la ieșire.  

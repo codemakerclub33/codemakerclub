@@ -426,6 +426,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Cum poate `i` dintr-un `for` să schimbe desenul?  
+- Ce are o spirală: pași egali sau tot mai lungi? Dar rotirea?  
+- Ce face `i % n` când parcurgi o listă de culori?  
+- Cum desenezi o rozetă din aceeași formă?  
+- La ce folosesc `home()` și `setheading(grade)`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny.  
 2. Desenează o **tablă de șah 8 × 8** din puncte mari sau din pătrate.  

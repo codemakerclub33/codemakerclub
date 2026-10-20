@@ -338,6 +338,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Care sunt tipurile de bază învățate în acest modul?  
+- Ce operator dă restul împărțirii?  
+- Care e diferența dintre `and` și `or`?  
+- Ce face `random.choice(lista)`?  
+- Cum construiești un text cu valori din variabile?  
+
+---
+
 ## Temă
 1. Mai joacă-te cu generatorul: adaugă încă 3 începuturi, 3 întâmplări și 3 finaluri.  
 2. Arată povestea unui prieten și întreabă-l ce ar adăuga.  

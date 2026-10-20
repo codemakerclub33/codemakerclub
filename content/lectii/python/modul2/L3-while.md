@@ -425,6 +425,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Cât timp se repetă un `while`?  
+- Ce trebuie să se schimbe în buclă ca ea să se termine?  
+- Ce este o buclă infinită și cum o oprești?  
+- Când alegi `for` și când alegi `while`?  
+- La ce folosește `while True` împreună cu `break`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
 2. Scrie un program care cere **numere** până când suma lor depășește 100 și apoi afișează câte numere au fost.  

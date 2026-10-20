@@ -404,6 +404,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Care sunt cele patru tipuri de bază din lecție?  
+- Ce afișează `type(2.5)`?  
+- Care e diferența dintre `=` și `==`?  
+- Ce face `"ha" * 3`?  
+- De ce nu poți scrie `"Am " + 10` fără conversie?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
 2. Scrie un program care afișează **fișa unui animal** cu tipuri: nume (`str`), vârstă (`int`), greutate (`float`), vaccinat (`bool`).  

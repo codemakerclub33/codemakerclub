@@ -893,6 +893,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Care e diferența dintre o clasă și un obiect?  
+- Când rulează `__init__` și ce este `self`?  
+- Care e diferența dintre o metodă și un atribut?  
+- La ce folosește `__str__`?  
+- Ce înseamnă că o clasă copil moștenește de la părinte?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny.  
 2. Adaugă în „Arena monedelor” un tip nou de inamic (de exemplu **vânătorul**, care urmărește jucătorul).  

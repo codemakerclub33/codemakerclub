@@ -1095,6 +1095,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Din ce piese mici se construiește un joc mare?  
+- Cum organizezi ecranele jocului?  
+- De ce parcurgem o copie a listei când scoatem elemente din ea?  
+- Cum controlezi ritmul de tragere?  
+- Cum salvezi și citești recordul în siguranță?  
+
+---
+
 ## Temă
 1. Termină **jocul tău** acasă: bifează toate punctele din „Gata când”.  
 2. Joacă-l cu **trei persoane** și notează ce li s-a părut greu sau neclar. Îmbunătățește jocul după părerile lor.  

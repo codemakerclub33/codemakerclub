@@ -429,6 +429,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Ce dă `7 // 2` și ce dă `7 % 2`?  
+- Cum verifici dacă un număr `n` este par?  
+- Ce rezultat are `2 + 3 * 4` și de ce?  
+- Ce face `**`?  
+- Ce se întâmplă dacă împarți la `0`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
 2. Scrie un program care citește **prețul unui produs** și **banii** pe care îi ai și afișează câte bucăți poți cumpăra și câți bani îți rămân (`//` și `%`).  

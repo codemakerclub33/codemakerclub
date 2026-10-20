@@ -716,6 +716,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Care sunt cei trei pași ai buclei jocului?  
+- Cum mișcăm un obiect la fiecare cadru?  
+- Cum faci un ricoșeu la margine?  
+- Cum adaugi gravitația?  
+- Cum păstrezi mai multe obiecte și cum le parcurgi?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny.  
 2. Fă **un joc de „ping”**: o minge care ricoșează între doi pereți și o bară jos care o ține (fără tastatură deocamdată: bara urmărește mouse-ul).  

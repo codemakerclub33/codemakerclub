@@ -529,6 +529,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Cu ce rotire se desenează steaua cu 5 colțuri?  
+- Care e formula unghiului pentru `n` colțuri impare?  
+- Când se închide un desen?  
+- Cum desenezi forme dispuse în cerc?  
+- Cum descrie o listă de grupuri o mandală întreagă?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny.  
 2. Desenează un **cer înstelat** cu o lună și 50 de stele.  

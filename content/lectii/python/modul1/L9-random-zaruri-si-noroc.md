@@ -401,6 +401,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Ce face `import random`?  
+- Ce numere poate da `random.randint(1, 6)`?  
+- Cum alegi un element dintr-o listă la întâmplare?  
+- Cum se scrie o listă în Python?  
+- De ce nu numim un fișier `random.py`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
 2. Scrie un joc „Zarul de aur”: aruncă 3 zaruri și dă puncte după sumă (mare, medie, mică).  

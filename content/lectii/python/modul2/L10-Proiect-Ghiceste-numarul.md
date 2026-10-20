@@ -552,6 +552,15 @@ Răspunde pe foaie (apoi verifică cu profesorul):
 
 ---
 
+## Quiz scurt
+- Care sunt cele patru părți ale jocului „Ghicește numărul”?  
+- De ce alegem numărul secret o singură dată pe rundă?  
+- Cum limitezi numărul de încercări?  
+- De ce validăm răspunsul cu `isdigit()`?  
+- În câte încercări găsești un număr între 1 și 100 cu strategia mijlocului?  
+
+---
+
 ## Temă
 1. Termină jocul și testează-l cu cel puțin 5 runde.  
 2. Fă cel puțin **una** dintre provocările bonus.  

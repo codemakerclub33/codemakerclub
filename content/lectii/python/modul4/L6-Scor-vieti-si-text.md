@@ -792,6 +792,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- La ce folosește o funcție `scrie(...)`?  
+- Cum arăți viețile cu inimioare roșii și gri?  
+- Ce decide starea jocului (`meniu`, `joc`, `pauza`, `final`)?  
+- Cum calculezi nivelul din scor?  
+- Cum faci pauza în joc?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny.  
 2. Adaugă „Ploii de stele” un **ecran de reguli** și un buton de ieșire.  

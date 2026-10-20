@@ -587,6 +587,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Cum creezi mai multe țestoase și unde le păstrezi?  
+- Până când merge cursa și ce buclă o conduce?  
+- De ce scriem `START` și `FINAL` cu litere mari?  
+- Cum găsești țestoasa câștigătoare?  
+- La ce folosesc `tracer(0)` și `update()`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny.  
 2. Fă o cursă între **mașini** (alt shape: `"square"`, alt aspect) în loc de țestoase.  

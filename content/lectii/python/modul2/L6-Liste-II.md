@@ -445,6 +445,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Care e diferența dintre `sort()` și `sorted(lista)`?  
+- Cum sortezi descrescător?  
+- Ce face `text.split()`?  
+- De ce `b = a` nu copiază o listă și ce folosești pentru o copie?  
+- Cum citești un element dintr-o listă de liste?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
 2. Citește **5 nume** și afișează-le în ordine alfabetică, apoi în ordine inversă.  

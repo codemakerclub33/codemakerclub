@@ -431,6 +431,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Ce valori dă o comparație?  
+- Când se execută blocul de după `else`?  
+- Dacă mai multe condiții `elif` sunt adevărate, pe care o alege Python?  
+- La ce folosește indentarea?  
+- De ce folosim `.lower()` când comparăm texte?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
 2. Scrie un program care citește două numere și afișează care e mai mare, sau „sunt egale”.  

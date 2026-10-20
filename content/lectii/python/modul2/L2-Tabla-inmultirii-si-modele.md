@@ -399,6 +399,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Ce este o buclă imbricată?  
+- La un tabel, ce reprezintă bucla de afară și ce bucla din interior?  
+- De ce punem un `print()` gol după bucla interioară?  
+- Ce face `{x:3}` într-un f-string?  
+- Ce afișează `"*" * 4`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
 2. Afișează **tablele de înmulțire de la 2 la 5**, fiecare cu titlu.  

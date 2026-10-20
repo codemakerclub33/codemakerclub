@@ -645,6 +645,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Ce înseamnă programarea cu evenimente?  
+- Ce trei pași urmezi ca să legi o tastă de o funcție?  
+- De ce numele funcției se scrie fără paranteze?  
+- Care e diferența dintre `onkeypress` și `onkey`?  
+- La ce folosește `screen.ontimer(functia, ms)`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny.  
 2. Fă un **labirint simplu**: desenează 4 pereți și conduci țestoasa cu săgețile.  

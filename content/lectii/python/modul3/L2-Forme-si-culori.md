@@ -438,6 +438,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Cum setezi culoarea conturului și a umplerii?  
+- Între ce comenzi desenezi o formă umplută?  
+- Cu câte grade rotești ca să desenezi un poligon cu `n` laturi?  
+- Care e diferența dintre `circle(raza)` și `dot(mărime, culoare)`?  
+- Cum schimbi culoarea fundalului?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny.  
 2. Desenează un **steag** (trei dungi colorate).  

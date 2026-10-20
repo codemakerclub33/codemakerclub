@@ -536,6 +536,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Care sunt pașii unui joc Pygame, de la `init` la `quit`?  
+- Ce apare când închizi fereastra jocului?  
+- Cum arată o culoare în Pygame?  
+- Unde este `(0, 0)` și încotro crește `y`?  
+- Cum afișezi un text pe ecran?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny.  
 2. Fă un **ecran de start** pentru jocul pe care îți dorești să-l faci în acest modul.  

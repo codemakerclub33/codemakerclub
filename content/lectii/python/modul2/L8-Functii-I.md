@@ -434,6 +434,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Cum definești și cum apelezi o funcție?  
+- Poți apela o funcție înainte să o definești?  
+- Care e diferența dintre `print` și `return`?  
+- Ce este o valoare implicită la un parametru?  
+- Ce înseamnă că o variabilă este locală?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
 2. Scrie o funcție `cumpara(pret, bucati=1)` care returnează totalul și apeleaz-o în 3 feluri.  

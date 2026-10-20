@@ -444,6 +444,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Ce ține un dicționar și între ce semne se scrie?  
+- Cum citești valoarea de la o cheie?  
+- Ce avantaj are `.get("cheie", implicit)` față de `d["cheie"]`?  
+- Cum verifici dacă o cheie există?  
+- Cum parcurgi cheile și valorile cu un `for`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
 2. Fă un dicționar cu **notele tale** (materie → notă) și afișează media.  

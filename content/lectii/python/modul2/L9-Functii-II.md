@@ -505,6 +505,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Poate o funcție să primească o listă ca parametru?  
+- Cum întorci două valori dintr-o funcție și cum le primești?  
+- Ce este un docstring?  
+- De ce e bine ca fiecare funcție să facă un singur lucru?  
+- La ce folosește `main()`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
 2. Scrie funcția `numara_vocale(text)` care returnează câte vocale are un text.  

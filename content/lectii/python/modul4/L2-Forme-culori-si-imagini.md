@@ -581,6 +581,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Cum desenezi un dreptunghi și un cerc?  
+- Care e diferența dintre o formă plină și una doar cu contur?  
+- Ce se vede peste ce în desen: ce a fost desenat mai târziu sau mai devreme?  
+- La ce folosește un `Rect`?  
+- Ce este o `Surface` și cum o lipești pe ecran?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny.  
 2. Desenează **o hartă a unui joc** (iarbă, apă, drum) cu `for` în `for`.  

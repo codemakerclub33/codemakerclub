@@ -719,6 +719,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Care sunt părțile unui joc?  
+- Unde păstrăm starea jocului?  
+- Ce este bucla jocului și cum se repetă ea?  
+- Cum verifici o coliziune între două obiecte?  
+- Ce face `register_shape`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny.  
 2. Schimbă tema jocului: **pește care mănâncă pește mic**, **rachetă care strânge stele** sau altă idee.  

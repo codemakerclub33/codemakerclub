@@ -387,6 +387,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Ce face `for i in range(5)`: de la ce număr până la ce număr merge `i`?  
+- Cum numeri invers, de la 10 la 1?  
+- Cum calculezi o sumă într-o buclă? Ce valoare are `total` la început?  
+- Ce face `print(x, end=" ")`?  
+- Câte ori se execută o linie neindentată de după buclă?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
 2. Scrie un program care afișează **numerele de la 1 la 50** care sunt multipli de 3.  

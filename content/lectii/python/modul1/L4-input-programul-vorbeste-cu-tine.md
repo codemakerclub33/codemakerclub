@@ -335,6 +335,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Ce face `input("...")`?  
+- Ce tip are răspunsul dat de `input`, dacă nu îl transformi?  
+- Cum ceri un număr întreg de la utilizator?  
+- Ce eroare apare dacă scrii litere unde se cere un număr?  
+- Unde scrii răspunsul în Thonny?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
 2. Scrie un program **„Magazin”**: citește prețul unui produs și numărul de bucăți și afișează totalul.  

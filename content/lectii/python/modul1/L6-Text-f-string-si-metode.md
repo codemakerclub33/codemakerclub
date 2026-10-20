@@ -399,6 +399,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Ce face un f-string și cum arată?  
+- Cum afișezi un număr cu 2 zecimale?  
+- Cu ce număr începe indexul într-un text?  
+- Ce dă `"Python"[::-1]`?  
+- Schimbă `.upper()` textul original sau dă unul nou?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
 2. Scrie un program care citește **prenumele și numele** și afișează: inițialele, numele complet cu litere mari și numărul total de litere (fără spațiu).  

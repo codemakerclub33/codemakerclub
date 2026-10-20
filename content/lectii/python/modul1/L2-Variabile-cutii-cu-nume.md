@@ -415,6 +415,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Ce este o variabilă?  
+- Ce face `scor = scor + 1`?  
+- Dacă `a = 5` și `b = a`, apoi `a = 9`, cât este `b`?  
+- Dă un exemplu de nume bun și unul greșit pentru o variabilă.  
+- Sunt `scor` și `Scor` aceeași variabilă?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
 2. Creează o **fișă pentru animalul tău preferat** (nume, vârstă, greutate, culoare) și afișeaz-o.  

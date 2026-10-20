@@ -612,6 +612,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- De ce păstrăm datele în fișiere, nu doar în variabile?  
+- Ce fac modurile `"w"`, `"a"` și `"r"` la `open`?  
+- Ce tip au datele citite dintr-un fișier și cum le transformi în număr?  
+- Ce face `try / except`?  
+- Ce rol au `else` și `finally`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny.  
 2. Fă un joc la alegere (de exemplu „Strânge monedele” din Lecția 5) care **salvează recordul** într-un fișier.  

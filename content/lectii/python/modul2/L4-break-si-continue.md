@@ -431,6 +431,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Ce face `break`?  
+- Ce face `continue`?  
+- Când se execută un `else` după un `for`?  
+- La ce folosește un steag, de exemplu `prim = True`?  
+- Când este un număr prim?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
 2. Scrie un program care cere note (între 1 și 10) până scrii `0` și apoi afișează **media**. Sări peste notele invalide (mai mari de 10) cu `continue`.  

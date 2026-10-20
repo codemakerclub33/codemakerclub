@@ -404,6 +404,15 @@ Răspunde pe foaie:
 
 ---
 
+## Quiz scurt
+- Când este adevărat `A and B`?  
+- Când este adevărat `A or B`?  
+- Ce face `not`?  
+- Cum scrii scurt că `x` este între 1 și 10?  
+- Ce verifică `.isdigit()`?  
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
 2. Scrie un program care citește un număr și afișează „Număr de două cifre” dacă este între 10 și 99.  

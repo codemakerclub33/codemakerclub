@@ -390,6 +390,15 @@ Pe o foaie, răspunde fără să te uiți în lecție:
 
 ---
 
+## Quiz scurt
+- Ce face `print`?  
+- Care e diferența dintre `print("5 + 5")` și `print(5 + 5)`?  
+- Cu ce semn începe un comentariu și ce face Python cu el?  
+- Ce face `\n` într-un text?  
+- Unde vezi rezultatul programului în Thonny și ce apeși ca să-l rulezi?
+
+---
+
 ## Temă
 1. Refă **Exemplele 1–10** în Thonny, scrise de mână (nu copiate).  
 2. Scrie un program care afișează **orarul tău de azi**, minimum 6 rânduri, într-un chenar.  
