@@ -45,7 +45,7 @@ for (...) {
 }
 ```
 
-Ca la o pușculiță: începi goală și bagi bani, iar la sfârșit numeri tot ce s-a strâns.
+Ca la o pușculiță: începi goală și bagi bani, iar la sfârșit numeri tot ce ai strâns.
 
 ### Exemplul 1 — Suma numerelor de la 1 la n **[Esențial]**
 
@@ -83,7 +83,7 @@ Pașii pentru `n = 4` (urmărește-i pe foaie):
 | 3 | 3 | 6 |
 | 4 | 6 | 10 |
 
-**Foarte important:** `int suma = 0;` se scrie **înaintea** buclei. Dacă l-ai pune în interior, variabila s-ar reseta la `0` la fiecare iterație și ai pierde totalul.
+**Foarte important:** `int suma = 0;` se scrie **înaintea** buclei. Dacă ai pune linia în interior, variabila ar reveni la `0` la fiecare iterație și ai pierde totalul.
 
 ### Exemplul 2 — Suma doar a numerelor pare **[Esențial]**
 
@@ -187,7 +187,7 @@ n = 5
 
 Merge bine pentru numere mici, dar factorialul crește foarte repede: `10! = 3628800`, `12! = 479001600`.
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
 ### Exemplul 5 — Când `int` nu mai ajunge *(Provocare, opțional)*
 
@@ -537,7 +537,7 @@ Cate numere? 6
 Cel mai mare numar este 17, pe pozitia 4
 ```
 
-Când găsești un maxim nou, notezi și **unde** l-ai găsit: aici contorul `i` este util și în afara numărării.
+Când găsești un maxim nou, notezi și **unde** se află: aici contorul `i` este util și în afara numărării.
 
 **Încearcă tu (10 min)**  
 - [ ] Citești `n` numere și afli câte sunt mai mari decât 100  
@@ -775,8 +775,8 @@ Citește `n` (între 1 și 20) și afișează `n!` folosind `long long`. Dacă `
 |---------|-------|--------|
 | Suma finală e foarte mare sau ciudată | Acumulatorul nu are valoare de pornire | `int suma = 0;` |
 | Produsul rezultă `0` | Acumulatorul de produs a pornit de la `0` | `int produs = 1;` |
-| Suma este doar ultimul număr | `int suma = 0;` este în interiorul buclei | Mută-l înainte de `for` |
-| Maximul este greșit pentru numere negative | Ai pornit `maxim` de la `0` | Pornește-l de la primul număr citit |
+| Suma este doar ultimul număr | `int suma = 0;` este în interiorul buclei | Mută linia înainte de `for` |
+| Maximul este greșit pentru numere negative | Ai pornit `maxim` de la `0` | Pornește de la primul număr citit |
 | Media are doar partea întreagă | Împărțire între `int` | `(double)suma / n` |
 | Rezultat negativ sau ciudat la factorial | Depășire de `int` | Folosește `long long` |
 | Se citește un număr în plus sau în minus | Bucla are `i <= n` dar începe de la 0 | Verifică intervalul pe un exemplu mic |

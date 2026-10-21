@@ -135,7 +135,7 @@ nota[3] = 8
 nota[4] = 6
 ```
 
-Bucla `for` merge de la `0` până la `i < 5`, deci `i` ia valorile 0, 1, 2, 3, 4, exact indicii vectorului. Aceasta este bucla standard pentru parcurgerea unui vector. Reține-o!
+Bucla `for` merge de la `0` până la `i < 5`, deci `i` ia valorile 0, 1, 2, 3, 4, exact indicii vectorului. Aceasta este bucla standard pentru parcurgerea unui vector. Reține această buclă!
 
 ### Exemplul 4 — Dimensiunea dintr-o constantă
 
@@ -503,7 +503,7 @@ Vectorul are 100 de locuri, dar folosim doar primele `n`. Verificăm `n` înaint
 
 Cu un vector de 5 elemente, indicii valizi sunt `0–4`. Dacă folosești `v[5]` sau `v[-1]`, ajungi în memorie care **nu îți aparține**. C++ nu te oprește: programul poate afișa valori ciudate, se poate bloca sau poate părea că merge (ceea ce e și mai periculos).
 
-Soluția: verifici indicele înainte să-l folosești.
+Soluția: verifici indicele înainte să folosești indicele.
 
 ```cpp
 #include <iostream>
@@ -579,7 +579,7 @@ Ziua 4 este Joi.
 
 Utilizatorul numără de la 1, vectorul de la 0, deci folosim `zile[nr - 1]`. Un vector este foarte potrivit ca „tabel de căutare”: numărul ales îți dă direct răspunsul, fără `switch` cu șapte cazuri.
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
 ### Exemplul 16 — Inversăm vectorul pe loc *(Provocare, opțional)*
 
@@ -612,7 +612,7 @@ int main() {
 6 5 4 3 2 1 
 ```
 
-Bucla merge doar până la jumătate (`N / 2`); dacă ar merge până la capăt, ar „inversa” vectorul de două ori și l-ar readuce la forma inițială. Variabila `aux` păstrează temporar o valoare, ca să nu o pierzi când o suprascrii.
+Bucla merge doar până la jumătate (`N / 2`); dacă ar merge până la capăt, ar „inversa” vectorul de două ori și ar ajunge din nou la forma inițială. Variabila `aux` păstrează temporar o valoare, ca să nu o pierzi când o suprascrii.
 
 ### Exemplul 17 — „Notele mele” (mini-proiect) **[Esențial]**
 
@@ -679,7 +679,7 @@ Noua nota la Engleza: 9
 Engleza are acum nota 9.
 ```
 
-Observă cum se combină tot ce ai învățat: doi vectori paraleli (`materie` și `nota`, cu aceleași indici), un `for` cu un `do-while` în interior pentru validare, afișare numerotată cu `i + 1` și verificarea indicelui înainte de modificare. La notele introduse, `12` a fost respins și s-a cerut din nou.
+Observă cum se combină tot ce ai învățat: doi vectori paraleli (`materie` și `nota`, cu aceleași indici), un `for` cu un `do-while` în interior pentru validare, afișare numerotată cu `i + 1` și verificarea indicelui înainte de modificare. La notele introduse, `12` a fost respins și valoarea a fost cerută din nou.
 
 ---
 
@@ -692,10 +692,10 @@ Scrie programul din Exemplul 17, dar cu materiile tale. Adaugă o a șasea mater
 Citește 7 temperaturi (una pe zi) într-un vector de `double` și afișează-le numerotate, cu numele zilei din vectorul `zile` (ca la Exemplul 15).
 
 ### Exercițiul C — Vector cu formulă
-Umple un vector cu primii 10 multipli ai lui 3 (`3, 6, 9, …, 30`) și afișează-l.
+Umple un vector cu primii 10 multipli ai lui 3 (`3, 6, 9, …, 30`) și afișează vectorul.
 
 ### Exercițiul D — Inversare
-Citește `n` numere (maxim 50) și afișează-le în ordine inversă, apoi inversează vectorul pe loc (ca la Exemplul 16) și afișează-l din nou, în ordine normală.
+Citește `n` numere (maxim 50) și afișează-le în ordine inversă, apoi inversează vectorul pe loc (ca la Exemplul 16) și afișează vectorul din nou, în ordine normală.
 
 ### Exercițiul E — Prima și ultima
 Citește `n` numere și afișează: primul, ultimul, al doilea, penultimul. Dacă `n < 4`, afișează un mesaj de eroare.
@@ -712,7 +712,7 @@ Citește `n` numere și afișează: primul, ultimul, al doilea, penultimul. Dac�
 
 ## Bonus / Provocare (dacă ai terminat)
 - [ ] Citește 10 numere și afișează separat cele de pe poziții pare și cele de pe poziții impare  
-- [ ] Umple un vector cu cifrele numărului `4721` (folosind `% 10` și `/ 10`) și afișează-l în ordine corectă  
+- [ ] Umple un vector cu cifrele numărului `4721` (folosind `% 10` și `/ 10`) și afișează vectorul în ordine corectă  
 - [ ] Rotește vectorul cu o poziție la stânga: `{1,2,3,4,5}` devine `{2,3,4,5,1}`  
 - [ ] Interschimbă primul cu ultimul element, fără să parcurgi tot vectorul  
 - [ ] Citește un cuvânt (`string`) și afișează literele lui câte una pe rând, numerotate, folosind `cuvant[i]` și `cuvant.length()`  
@@ -723,7 +723,7 @@ Citește `n` numere și afișează: primul, ultimul, al doilea, penultimul. Dac�
 
 | Ce vezi | Cauza | Corect |
 |---------|-------|--------|
-| Valori ciudate (de ex. `-1245367`) | Ai afișat elemente la care nu ai atribuit nimic | Inițializează vectorul sau citește-l înainte |
+| Valori ciudate (de ex. `-1245367`) | Ai afișat elemente la care nu ai atribuit nimic | Inițializează vectorul sau citește valorile înainte |
 | Ultimul element nu se afișează | `i < N - 1` în loc de `i < N` | `for (i = 0; i < N; i++)` |
 | Programul se blochează sau afișează gunoi | Ai folosit `v[N]` (un indice în afara vectorului) | Ultimul indice este `N - 1` |
 | Prima notă „lipsește” | Ai început de la `1` în loc de `0` | `for (int i = 0; …)` |

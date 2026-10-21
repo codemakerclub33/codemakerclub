@@ -4,7 +4,7 @@ Astăzi înveți să păstrezi mai multe valori de același tip într-o singură
 
 Obiectivul. Minim: un vector de cinci numere, citit și afișat. Complet: minim, plus modificarea elementelor și afișarea lor în ordine inversă, cu indicii verificați.
 
-Primul pas. De ce vectori. Dacă ai douăzeci de note, nu vrei douăzeci de variabile cu nume diferite. Un vector are un singur nume și mai multe poziții. Îl declari scriind tipul, numele și, între paranteze pătrate, câte locuri are. Poți să-i dai valori chiar de la început, între acolade. Mărimea o poți ține într-o constantă.
+Primul pas. De ce vectori. Dacă ai douăzeci de note, nu vrei douăzeci de variabile cu nume diferite. Un vector are un singur nume și mai multe poziții. Îl declari scriind tipul, numele și, între paranteze pătrate, câte locuri are. Poți da valori chiar de la început, între acolade. Mărimea o poți ține într-o constantă.
 
 Al doilea pas. Indicii. Fiecare loc are un număr, numit indice. Atenție: indicii încep de la zero. Primul element este la poziția zero, iar ultimul este la poziția n minus unu. Parcurgerea standard este un for de la zero, cât timp i este mai mic decât n.
 

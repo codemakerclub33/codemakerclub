@@ -300,7 +300,7 @@ int main() {
 
 ## 2. Vânătoarea de greșeli (depanare)
 
-Programele de mai jos **compilează**, dar rezultatul este greșit. Pentru fiecare: (1) citește codul, (2) ghicește ce afișează, (3) rulează-l și compară, (4) găsește greșeala, (5) repară-l.
+Programele de mai jos **compilează**, dar rezultatul este greșit. Pentru fiecare: (1) citește codul, (2) ghicește ce afișează, (3) rulează programul și compară, (4) găsește greșeala, (5) repară programul.
 
 ### Exemplul 10 — Maximul „care nu e maxim”
 
@@ -357,7 +357,7 @@ Media: 8
 
 **Greșeala:** `suma / 4` este o împărțire între numere întregi (`35 / 4 = 8`), iar abia apoi rezultatul ajunge în `double`. **Reparație:** `double medie = (double)suma / 4;`.
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
 ### Exemplul 12 — Bucla „care nu face nimic” *(Provocare, opțional)*
 
@@ -428,7 +428,7 @@ for (int i = 1; i <= 3; i++)
 4. `do-while` verifică condiția **după** corp, deci rulează cel puțin o dată; `while` o verifică înainte și poate să nu ruleze deloc.
 5. `0`.
 6. Pornești cu `pozMax = 0`, parcurgi de la `i = 1` și, dacă `v[i] > v[pozMax]`, faci `pozMax = i`.
-7. După `a = b;` valoarea veche a lui `a` s-a pierdut, deci `b = a;` pune în `b` aceeași valoare. Ai nevoie de o variabilă ajutătoare.
+7. După `a = b;` valoarea veche a lui `a` este pierdută, deci `b = a;` pune în `b` aceeași valoare. Ai nevoie de o variabilă ajutătoare.
 8. Ambii vectori: și notele, și numele, în același timp.
 
 </details>
@@ -876,9 +876,9 @@ Programul are ~150 de linii și este organizat în cazuri clare. Este o aplicaț
 ## Proiect / exerciții de finalizat AZI
 
 ### Exercițiul A — „Catalogul de note” (obligatoriu)
-Scrie varianta completă (Exemplul 14) cu elevii tăi preferați. **Nu copia**: scrie fiecare opțiune pe rând și testeaz-o înainte de a trece la următoarea.
+Scrie varianta completă (Exemplul 14) cu elevii tăi preferați. **Nu copia**: scrie fiecare opțiune pe rând și testează-o înainte de a trece la următoarea.
 
-**Pe niveluri (alege-l pe al tău):**
+**Pe niveluri (alege nivelul tău):**
 - **De bază:** varianta de bază din Exemplul 13 (adaugă, afișează, statistici).
 - **Complet:** varianta completă din Exemplul 14.
 - **Provocare:** + una dintre extinderile din Exercițiul B.
@@ -891,7 +891,7 @@ Un catalog mic, care merge fără greșeli, este un succes.
 - Împiedică adăugarea a doi elevi cu același nume.  
 - Afișează la statistici câți elevi au 10, câți au între 5 și 9 și câți sunt corigenți.
 
-### Exercițiul C — Testează-ți programul
+### Exercițiul C — Testează programul
 Completează o listă de teste: catalog gol (opțiunile 2, 3, 4, 5, 6), catalog cu un singur elev, catalog plin (30 de elevi), notă invalidă (0, 11), nume inexistent, opțiune de meniu inexistentă.
 
 **Gata când:**

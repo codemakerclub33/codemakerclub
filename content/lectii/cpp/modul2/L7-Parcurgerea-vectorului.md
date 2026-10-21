@@ -472,7 +472,7 @@ Cel mai mare: 90
 Amplitudinea (max - min): 82
 ```
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
 ### Exemplul 13 — Concurs: media fără cea mai mică și cea mai mare notă *(Provocare, opțional)*
 

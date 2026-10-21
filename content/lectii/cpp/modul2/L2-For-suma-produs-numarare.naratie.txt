@@ -16,7 +16,7 @@ Al cincilea pas. Minim și maxim. Pornești de la primul număr citit și, când
 
 Al șaselea pas. Proiecte mici. Puterea unui număr fără formulă, o pușculiță care se dublează și mini-proiectul Statistici de clasă.
 
-Greșeli frecvente. Suma iese ciudată, pentru că acumulatorul nu are valoare de pornire. Produsul iese zero, pentru că a pornit de la zero. Suma este doar ultimul număr, pentru că ai pus variabila în interiorul buclei. Maximul este greșit la numere negative, pentru că l-ai pornit de la zero. Media are doar partea întreagă. Contorul nu crește, pentru că este în afara if-ului.
+Greșeli frecvente. Suma iese ciudată, pentru că acumulatorul nu are valoare de pornire. Produsul iese zero, pentru că a pornit de la zero. Suma este doar ultimul număr, pentru că ai pus variabila în interiorul buclei. Maximul este greșit la numere negative, pentru că ai pornit maximul de la zero. Media are doar partea întreagă. Contorul nu crește, pentru că este în afara if-ului.
 
 Tema. Citești n și aduni numerele impare divizibile cu trei. Citești n temperaturi și numeri câte sunt sub zero, câte între zero și douăzeci și câte peste douăzeci. Salvezi ca Tema, linie jos, M doi, L doi.
 

@@ -410,7 +410,7 @@ Prima buclă (singură) desenează antetul. A doua, imbricată, desenează rând
 
 ## 4. Tabla de șah, `break` și numere prime
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
 ### Exemplul 12 — Tabla de șah *(Provocare, opțional)*
 
@@ -716,7 +716,7 @@ Un număr este **perfect** dacă este egal cu suma divizorilor lui mai mici dec�
 - [ ] Desenează un romb (piramidă + piramidă întoarsă)  
 - [ ] Desenează un dreptunghi plin cu un contur diferit (de exemplu `#` pe contur și `.` în interior)  
 - [ ] Desenează un „X” de `n × n` caractere: un `*` apare doar pe cele două diagonale  
-- [ ] Citește caracterul cu care se desenează figura (`char`) și folosește-l în loc de `*`  
+- [ ] Citește caracterul cu care se desenează figura (`char`) și folosește caracterul în loc de `*`  
 - [ ] Afișează toate perechile `(a, b)` cu `1 ≤ a ≤ b ≤ 9` care au suma 10  
 
 ---
@@ -726,7 +726,7 @@ Un număr este **perfect** dacă este egal cu suma divizorilor lui mai mici dec�
 | Ce vezi | Cauza | Corect |
 |---------|-------|--------|
 | Toate steluțele pe un singur rând | Ai uitat `endl` după bucla interioară | `cout << endl;` în bucla exterioară |
-| Fiecare steluță pe alt rând | `endl` este în interiorul buclei interioare | Mută-l după `}` a buclei interioare |
+| Fiecare steluță pe alt rând | `endl` este în interiorul buclei interioare | Mută linia după `}` a buclei interioare |
 | Triunghiul are același număr de steluțe pe fiecare rând | Bucla interioară merge până la `n`, nu până la `i` | `j <= i` |
 | Piramida nu e centrată | Spațiile sunt prea puține sau prea multe | `n - i` spații pe rândul `i` |
 | Aceeași variabilă `i` în ambele bucle | Contorul exterior este modificat de bucla interioară | Folosește nume diferite: `i` și `j` |

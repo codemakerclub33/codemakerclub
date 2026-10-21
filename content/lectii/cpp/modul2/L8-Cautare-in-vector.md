@@ -409,7 +409,7 @@ int main() {
 Exista cel putin un numar nepozitiv.
 ```
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
 ### Exemplul 11 — Există duplicate? *(Provocare, opțional)*
 
@@ -500,11 +500,11 @@ v[3] = v[4]  →  10  20  40  50  50
 n devine 4   →  10  20  40  50
 ```
 
-Ultimul element rămâne în memorie, dar nu mai este în „zona folosită” (`n` s-a micșorat), așa că nu mai apare.
+Ultimul element rămâne în memorie, dar nu mai este în „zona folosită” (`n` este mai mic acum), așa că nu mai apare.
 
 ### Exemplul 13 — Inserăm un element
 
-Inserăm valoarea `x` pe poziția `p`: mutăm elementele de la `p` încolo cu **o poziție la dreapta**, **începând de la coadă** (altfel s-ar suprascrie), apoi punem `x`.
+Inserăm valoarea `x` pe poziția `p`: mutăm elementele de la `p` încolo cu **o poziție la dreapta**, **începând de la coadă** (altfel valorile ar fi suprascrise), apoi punem `x`.
 
 ```cpp
 #include <iostream>
@@ -841,7 +841,7 @@ Dat fiind un vector deja în ordine crescătoare, inserează o valoare nouă pe 
 
 | Ce vezi | Cauza | Corect |
 |---------|-------|--------|
-| „Negăsit” deși valoarea există | Ai pus `else gasit = false;` în buclă | Pune-o pe `false` doar înainte de buclă |
+| „Negăsit” deși valoarea există | Ai pus `else gasit = false;` în buclă | Pune `false` doar înainte de buclă |
 | Poziția afișată este mereu `-1` | Compari cu altceva (`=` în loc de `==`) sau cauți în vectorul greșit | `if (v[i] == x)` |
 | Ai găsit valoarea, dar bucla continuă | Lipsește `break` | Adaugă `break;` după ce ai găsit |
 | Citești dincolo de vector | `while (v[i] != x && i < n)` (ordinea condițiilor) | `while (i < n && v[i] != x)` |

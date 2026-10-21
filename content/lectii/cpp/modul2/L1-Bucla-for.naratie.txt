@@ -1,6 +1,6 @@
 Lecția unu din Modulul doi. Bucla for.
 
-Astăzi înveți să-i spui calculatorului „repetă de câte ori vreau eu”, fără să scrii aceeași linie de o sută de ori. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L unu.
+Astăzi înveți să spui calculatorului „repetă de câte ori vreau eu”, fără să scrii aceeași linie de o sută de ori. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L unu.
 
 Obiectivul. Minim: un program care afișează numerele de la unu la n, cu n citit de la tastatură. Complet: minim, plus o numărătoare inversă, un pas diferit de unu și tabla înmulțirii pentru un număr citit.
 

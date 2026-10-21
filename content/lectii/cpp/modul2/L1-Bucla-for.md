@@ -2,7 +2,7 @@
 **Modulul 2 · Bucle și vectori · 2 ore**  
 **Code Maker Club · Loop Master**
 
-> Azi înveți să-i spui calculatorului „repetă de câte ori vreau eu”, fără să scrii aceeași linie de 100 de ori.  
+> Azi înveți să spui calculatorului „repetă de câte ori vreau eu”, fără să scrii aceeași linie de 100 de ori.  
 > Proiect: **„Tabla înmulțirii”** · fișier: `Prenume_Nume_M2L1.cpp` (ex. `Ana_Pop_M2L1.cpp`)
 
 ---
@@ -125,7 +125,7 @@ int main() {
     for (int i = 1; i <= 4; i++) {
         cout << "Iteratia " << i << ": i = " << i << ", dublul lui i = " << i * 2 << endl;
     }
-    cout << "Bucla s-a terminat." << endl;
+    cout << "Bucla este gata." << endl;
     return 0;
 }
 ```
@@ -136,7 +136,7 @@ Iteratia 1: i = 1, dublul lui i = 2
 Iteratia 2: i = 2, dublul lui i = 4
 Iteratia 3: i = 3, dublul lui i = 6
 Iteratia 4: i = 4, dublul lui i = 8
-Bucla s-a terminat.
+Bucla este gata.
 ```
 
 Când `i` devine 5, condiția `i <= 4` este falsă și bucla se oprește. Ultima valoare afișată este 4. Mesajul de după buclă apare o singură dată.
@@ -200,7 +200,7 @@ Ambele bucle se repetă de **5 ori**, dar scrise diferit:
 - `i = 1; i <= 5` numără de la 1 până la 5 inclusiv;
 - `i = 0; i < 5` numără de la 0 până la 4.
 
-A doua formă (`i = 0; i < n`) este foarte răspândită în C++, pentru că vectorii pe care îi învățăm mai târziu încep de la poziția 0. Reține-o: **de la 0 și cu `<`**, sau **de la 1 și cu `<=`**.
+A doua formă (`i = 0; i < n`) este foarte răspândită în C++, pentru că vectorii pe care îi învățăm mai târziu încep de la poziția 0. Reține regula: **de la 0 și cu `<`**, sau **de la 1 și cu `<=`**.
 
 **Încearcă tu (10 min)**  
 - [ ] Afișezi de 8 ori un mesaj la alegere  
@@ -630,7 +630,7 @@ Citește un număr `n` și afișează un tabel cu numerele de la 1 la `n`, pătr
 ---
 
 ## Bonus / Provocare (dacă ai terminat)
-- [ ] Afișează tabla înmulțirii pentru **toate** numerele de la 1 la 3, una după alta (pentru asta ai nevoie de un `for` în alt `for`, lecția 5 din acest modul, dar poți încerca să-l scrii singur)  
+- [ ] Afișează tabla înmulțirii pentru **toate** numerele de la 1 la 3, una după alta (pentru asta ai nevoie de un `for` în alt `for`, lecția 5 din acest modul, dar poți încerca să scrii bucla singur)  
 - [ ] Afișează numerele de la 1 la 100 care sunt divizibile cu 7  
 - [ ] Scrie un program care afișează „Salut, <nume>!” de câte ori vrei tu  
 - [ ] Afișează numerele de la 1 la 50, câte 10 pe fiecare rând (ajutor: `if (i % 10 == 0) cout << endl;`)  

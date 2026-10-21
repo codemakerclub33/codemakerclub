@@ -16,7 +16,7 @@ Al cincilea pas. Ce buclă alegi. For, când știi de câte ori repeți. While, 
 
 Al șaselea pas. Proiecte mici. Ghicește numărul cu do while, tabla înmulțirii repetată la cerere, un bancomat și jocul în care scapi din camera încuiată.
 
-Greșeli frecvente. Ai uitat punct și virgulă după while la do while. Ai pus punct și virgulă după while la bucla while obișnuită: doar do while îl are. Meniul nu se oprește, pentru că în condiție nu apare opțiunea de ieșire. Ai declarat o variabilă în interiorul buclei, iar condiția nu o mai vede: declar-o înainte de do. Soldul revine mereu la o mie, pentru că l-ai creat în interiorul buclei. Ai declarat o variabilă într-un case, fără acolade.
+Greșeli frecvente. Ai uitat punct și virgulă după while la do while. Ai pus punct și virgulă după while la bucla while obișnuită: doar do while îl are. Meniul nu se oprește, pentru că în condiție nu apare opțiunea de ieșire. Ai declarat o variabilă în interiorul buclei, iar condiția nu o mai vede: declară variabila înainte de do. Soldul revine mereu la o mie, pentru că ai creat variabila în interiorul buclei. Ai declarat o variabilă într-un case, fără acolade.
 
 Tema. Faci un meniu pentru o librărie, cu cărți, caiete, pixuri și ieșire. Afișezi cifrele unui număr, câte una pe linie, de la ultima la prima. Faci jocul Ghicește litera. Salvezi ca Tema, linie jos, M doi, L patru.
 

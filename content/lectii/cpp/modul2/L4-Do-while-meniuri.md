@@ -230,7 +230,7 @@ PIN gresit. Incercari ramase: 0
 Cardul a fost blocat.
 ```
 
-Bucla se repetă cât timp PIN-ul este greșit **și** nu s-au consumat cele 3 încercări. Pe urmă, un `if` după buclă decide ce s-a întâmplat: a ieșit pentru că a nimerit PIN-ul sau pentru că a rămas fără încercări.
+Bucla se repetă cât timp PIN-ul este greșit **și** nu au fost consumate cele 3 încercări. Pe urmă, un `if` după buclă decide ce s-a petrecut: a ieșit pentru că a nimerit PIN-ul sau pentru că a rămas fără încercări.
 
 **Încearcă tu (10 min)**  
 - [ ] Ceri o parolă numerică și repeți până este corectă  
@@ -421,7 +421,7 @@ int main() {
         copie /= 10;
     } while (copie > 0);
 
-    cout << n << " are " << cifre << " cifre." << endl;
+    cout << "Cifre in " << n << ": " << cifre << endl;
     return 0;
 }
 ```
@@ -429,13 +429,13 @@ int main() {
 **Rulare 1** (tastezi `0`):
 ```
 Numarul: 0
-0 are 1 cifre.
+Cifre in 0: 1
 ```
 
 **Rulare 2** (tastezi `5063`):
 ```
 Numarul: 5063
-5063 are 4 cifre.
+Cifre in 5063: 4
 ```
 
 ### Exemplul 10 — Suma cifrelor și cifra maximă
@@ -475,7 +475,7 @@ Suma cifrelor: 24
 Cifra maxima: 8
 ```
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
 ### Exemplul 11 — Un număr în baza 2, inclusiv pentru 0 *(Provocare, opțional)*
 
@@ -896,8 +896,8 @@ Pentru fiecare dintre problemele de mai jos, scrie pe foaie ce buclă ai folosi 
 | Eroare de compilare de tip `expected ';'` la linia de după buclă | Ai uitat `;` după `while (…)` la `do-while` | `} while (conditie);` |
 | `;` pus și după `while` la bucla `while` obișnuită | Confuzie între cele două | Doar `do-while` are `;` |
 | Meniul nu se oprește niciodată | Condiția nu include opțiunea de ieșire | `while (optiune != 0);` |
-| Variabila din condiție „nu există” | Ai declarat-o în interiorul buclei (`int optiune;` în corp) | Declar-o **înainte** de `do` |
-| Soldul revine mereu la 1000 | `int sold = 1000;` este în interiorul buclei | Declară-l înainte de `do` |
+| Variabila din condiție „nu există” | Ai declarat variabila în interiorul buclei (`int optiune;` în corp) | Declară variabila **înainte** de `do` |
+| Soldul revine mereu la 1000 | `int sold = 1000;` este în interiorul buclei | Declară variabila înainte de `do` |
 | `jump to case label` | Variabilă declarată într-un `case` fără acolade | `case 2: { int suma; … break; }` |
 | Mesajul de eroare apare chiar și la o valoare bună | `if` și `while` au condiții diferite | Folosește aceeași condiție în ambele |
 | Rămâi blocat în validare | Ai introdus o literă în loc de număr | Deocamdată introduci doar numere |

@@ -16,6 +16,6 @@ Al cincilea pas. Probleme și proiecte. Provocări opționale: cel mai mare divi
 
 Greșeli frecvente. Programul îngheață, pentru că nimic din corp nu schimbă condiția. Ai scris un singur egal în condiție, în loc de două. Ai pus punct și virgulă după paranteză. Ultimul număr, zero, intră în sumă, pentru că ai adunat înainte de verificare. Ai împărțit chiar numărul original, nu o copie.
 
-Tema. Citești numere până la zero și afișezi media, cu grijă la cazul în care nu s-a citit niciun număr. Numeri câte cifre de zero are un număr. Afișezi puterile lui doi mai mici decât un număr citit. Salvezi ca Tema, linie jos, M doi, L trei.
+Tema. Citești numere până la zero și afișezi media, cu grijă la cazul în care nu a fost citit niciun număr. Numeri câte cifre de zero are un număr. Afișezi puterile lui doi mai mici decât un număr citit. Salvezi ca Tema, linie jos, M doi, L trei.
 
 Recapitulare. While repetă cât timp condiția este adevărată. Citești, verifici, prelucrezi, citești din nou. Succes!

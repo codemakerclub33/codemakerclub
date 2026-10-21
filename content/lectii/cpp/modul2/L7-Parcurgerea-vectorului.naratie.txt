@@ -14,7 +14,7 @@ Al patrulea pas. Două parcurgeri. Uneori ai nevoie de două parcurgeri: prima c
 
 Al cincilea pas. Proiecte. Histograma notelor, elevul cu cea mai mare notă, cu doi vectori paraleli, unul pentru nume și unul pentru note, legați prin același indice. Mini-proiectul este Statistica clasei.
 
-Greșeli frecvente. Suma are o valoare uriașă, pentru că nu ai pornit-o de la zero. Media apare întreagă, pentru că ai împărțit două numere întregi. Maximul este greșit la numere negative, pentru că ai pornit de la zero. Ai pus semnul mai mic în loc de mai mare. Ai împărțit media la un număr scris de mână, în loc de n. Ai afișat poziția în loc de valoare.
+Greșeli frecvente. Suma are o valoare uriașă, pentru că suma nu a pornit de la zero. Media apare întreagă, pentru că ai împărțit două numere întregi. Maximul este greșit la numere negative, pentru că ai pornit de la zero. Ai pus semnul mai mic în loc de mai mare. Ai împărțit media la un număr scris de mână, în loc de n. Ai afișat poziția în loc de valoare.
 
 Tema. Citești zece numere și afișezi suma, media, minimul, maximul și cât depășește maximul media. Citești opt prețuri și numeri câte sunt sub douăzeci de lei, câte între douăzeci și cincizeci și câte peste cincizeci. Salvezi ca Tema, linie jos, M doi, L șapte.
 

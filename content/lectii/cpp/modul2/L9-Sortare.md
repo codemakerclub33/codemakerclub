@@ -98,7 +98,7 @@ int main() {
 50 20 30 40 10 
 ```
 
-Același principiu, dar cu elemente de vector. În C++ există și o comandă gata făcută, `swap(v[0], v[4]);`, din biblioteca `<algorithm>`. Pentru început scrii tu interschimbarea de mână, ca s-o înțelegi.
+Același principiu, dar cu elemente de vector. În C++ există și o comandă gata făcută, `swap(v[0], v[4]);`, din biblioteca `<algorithm>`. Pentru început scrii tu interschimbarea de mână, ca să înțelegi cum merge.
 
 ### Exemplul 3 — Este vectorul sortat?
 
@@ -504,9 +504,9 @@ int main() {
 5. Elena - 6
 ```
 
-Decizia se ia pe `nota`, dar **ambele** vectori sunt interschimbate. Dacă uiți unul, numele și notele se „desincronizează”.
+Decizia se ia pe `nota`, dar **ambii** vectori sunt interschimbate. Dacă uiți unul, numele și notele se „desincronizează”.
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
 ### Exemplul 12 — Mediana *(Provocare, opțional)*
 
@@ -807,7 +807,7 @@ Citește `n` numere, sortează vectorul și afișează mediana (cu atenție la c
 ---
 
 ## Bonus / Provocare (dacă ai terminat)
-- [ ] Optimizează sortarea bulelor: oprește bucla dacă într-o trecere nu s-a făcut nicio interschimbare  
+- [ ] Optimizează sortarea bulelor: oprește bucla dacă într-o trecere nu se face nicio interschimbare  
 - [ ] Numără câte interschimbări face fiecare metodă (bule vs. selecție) pe același vector  
 - [ ] Sortează un vector de `double` (temperaturi)  
 - [ ] Sortează cuvintele după lungime, nu alfabetic (`nume[i].length()`)  
@@ -836,7 +836,7 @@ Citește `n` numere, sortează vectorul și afișează mediana (cu atenție la c
 - **Bubble Sort:** compară vecinii și îi schimbă dacă sunt în ordine greșită. După fiecare trecere, cel mai mare ajunge la capăt. Două bucle: `pas < n - 1` și `i < n - 1 - pas`.
 - **Selection Sort:** la fiecare pas găsești poziția minimului din partea nesortată și îl muți în față.
 - Crescător: `>` (la bule) / minim. Descrescător: `<` (la bule) / maxim.
-- La vectori paraleli interschimbi **ambele** vectori, în același timp.
+- La vectori paraleli interschimbi **ambii** vectori, în același timp.
 - După sortare: minimul este `v[0]`, maximul este `v[n - 1]`, duplicatele sunt vecine, mediana este la mijloc.
 - `sort(v, v + n);` din `<algorithm>` face același lucru, mult mai rapid.
 
@@ -854,7 +854,7 @@ Citește `n` numere, sortează vectorul și afișează mediana (cu atenție la c
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Citește 8 numere. Sortează-le crescător cu metoda bulelor și afișează: vectorul sortat, al doilea cel mai mic și al doilea cel mai mare.  
-3. Citește numele și vârsta a 5 copii. Afișează-i de la cel mai mic la cel mai mare.  
+3. Citește numele și vârsta a 5 copii. Afișează lista de la cel mai mic la cel mai mare.  
 4. Scrie un program care citește 10 numere, le sortează descrescător (selecție) și afișează doar primele 3 și ultimul.  
 5. **Bonus:** implementează sortarea bulelor optimizată (cu `bool` care oprește bucla când vectorul e deja sortat) și afișează câte treceri au fost necesare.  
 6. Salvează tot ca `Tema_M2L9_Prenume_Nume.cpp`.

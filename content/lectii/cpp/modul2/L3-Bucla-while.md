@@ -302,7 +302,7 @@ int main() {
         copie /= 10;
     }
 
-    cout << n << " are " << cifre << " cifre." << endl;
+    cout << "Cifre in " << n << ": " << cifre << endl;
     return 0;
 }
 ```
@@ -310,10 +310,10 @@ int main() {
 **Rulare** (tastezi `90210`):
 ```
 Numarul: 90210
-90210 are 5 cifre.
+Cifre in 90210: 5
 ```
 
-Lucrăm pe o **copie**, pentru că bucla „distruge” numărul. Dacă mai ai nevoie de `n` după buclă, nu-l modifica direct. Atenție: pentru `n = 0` programul afișează `0 cifre`, deși `0` se scrie cu o cifră. Este un caz special, pe care îl tratezi cu un `if`, dacă problema îl cere.
+Lucrăm pe o **copie**, pentru că bucla „distruge” numărul. Dacă mai ai nevoie de `n` după buclă, nu modifica `n` direct. Atenție: pentru `n = 0` programul afișează `Cifre in 0: 0`, deși `0` se scrie cu o cifră. Este un caz special, pe care îl tratezi cu un `if`, dacă problema îl cere.
 
 ### Exemplul 8 — Oglinditul unui număr
 
@@ -466,7 +466,7 @@ Nu știi câte numere trebuie verificate, deci `while` este alegerea potrivită;
 
 ## 5. Probleme și proiecte
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
 ### Exemplul 12 — Cel mai mare divizor comun (algoritmul lui Euclid) *(Provocare, opțional)*
 
@@ -583,7 +583,7 @@ int main() {
     int incercare;
     int incercari = 0;
 
-    cout << "Am ales un numar intre 1 si 100. Ghiceste-l!" << endl;
+    cout << "Am ales un numar intre 1 si 100. Ghiceste numarul!" << endl;
 
     cout << "Incercarea ta: ";
     cin >> incercare;
@@ -607,7 +607,7 @@ int main() {
 
 **Rulare** (tastezi `50`, `25`, `37`):
 ```
-Am ales un numar intre 1 si 100. Ghiceste-l!
+Am ales un numar intre 1 si 100. Ghiceste numarul!
 Incercarea ta: 50
 Prea mare!
 Incercarea ta: 25
@@ -792,7 +792,7 @@ Citește un număr și afișează „Da” dacă este palindrom (de exemplu `122
 
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
-2. Scrie un program care citește numere până la `0` și afișează media lor (atenție la cazul în care nu s-a citit niciun număr).  
+2. Scrie un program care citește numere până la `0` și afișează media lor (atenție la cazul în care nu a fost citit niciun număr).  
 3. Scrie un program care citește un număr natural și afișează numărul de cifre `0` din el.  
 4. Scrie un program care afișează toate puterile lui 2 mai mici decât un număr citit, folosind `while`.  
 5. **Bonus:** program „Banca”: sold inițial 500 de lei; utilizatorul retrage sume cât timp soldul permite; dacă suma cerută e mai mare decât soldul, afișează „Fonduri insuficiente”, iar la introducerea lui `0` programul se oprește și afișează soldul rămas.  
