@@ -82,7 +82,7 @@ Ce a făcut diferența: **nume cu sens** (`monede`, nu `a`), **o instrucțiune p
 
 ### Exemplul 2 — Numerele magice devin constante **[Esențial]**
 
-Un număr scris direct în cod (`160`, `120`) se numește **număr magic**: cine citește nu știe ce înseamnă și, dacă vrei să-l schimbi, trebuie să-l cauți peste tot. Dăm numelui o constantă:
+Un număr scris direct în cod (`160`, `120`) se numește **număr magic**: cine citește nu știe ce înseamnă și, dacă vrei să îl schimbi, trebuie să îl cauți peste tot. Dăm numelui o constantă:
 
 ```cpp
 #include <iostream>
@@ -352,7 +352,7 @@ Dacă toate trec, nu apare niciun `PICAT`, iar rezumatul spune `picate: 0`.
 
 ### Exemplul 8 — Un test care prinde o greșeală **[Esențial]**
 
-Funcția `pozitie` caută un obiect în rucsac și întoarce poziția lui (de la `0`) sau `-1` dacă nu-l găsește. Cineva a greșit-o: întoarce `i + 1`. Testele o prind imediat:
+Funcția `pozitie` caută un obiect în rucsac și întoarce poziția lui (de la `0`) sau `-1` dacă nu îl găsește. Cineva a scris greșit funcția: întoarce `i + 1`. Testele o prind imediat:
 
 ```cpp
 #include <iostream>
@@ -410,7 +410,7 @@ Două teste pică și arată exact unde e problema. Înlocuiește `i + 1` cu `i`
 
 ### Exemplul 9 — `assert`, verificarea care oprește programul *(Provocare, opțional)*
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
 `assert(condiție)` din `<cassert>` **oprește programul** cu un mesaj dacă condiția este falsă. E util pentru lucruri care nu au voie niciodată să se întâmple:
 
@@ -535,7 +535,7 @@ Victorii: 200 din 200
 
 Pornim de la **Joc_L48.cpp**. Adăugăm secțiunea „teste” (variabilele `teste` și `picate`, funcția `verifica` și funcția `ruleazaTeste`) și opțiunea **9. Teste interne** în meniu. Funcția `ruleazaTeste` verifică 15 lucruri din joc: căutarea în rucsac, viața, bara, prețurile, mișcările și simetria hărții.
 
-Iată ce s-a **schimbat** față de lecția trecută (`+` = linii de adăugat, `-` = linii de șters, `...` = restul codului rămâne la fel):
+Iată ce este **nou** față de lecția trecută (`+` = linii de adăugat, `-` = linii de șters, `...` = restul codului rămâne la fel):
 
 ```diff
 ...
@@ -817,7 +817,7 @@ void afiseazaTitlu() {
 
 void afiseazaPoveste() {
     cout << "\nDemult, un rege intelept a ascuns o comoara in Turnul castelului.\n";
-    cout << "Cheia comorii a fost luata de un goblin, care s-a ascuns in pivnita.\n";
+    cout << "Cheia comorii a fost luata de un goblin, care a fugit in pivnita.\n";
     cout << "Tu esti eroul care trebuie sa gaseasca cheia si sa deschida cufarul.\n";
 }
 
@@ -1368,7 +1368,7 @@ Scrie programul din Exemplul 12, pornind de la `Joc_L48.cpp`. Rulează testele i
 ### Exercițiul B — Curățenie în propriul cod
 Parcurge codul jocului tău și verifică această listă:
 - [ ] Toate funcțiile au nume care spun ce fac  
-- [ ] Nu mai ai numere magice (le-ai înlocuit cu constante)  
+- [ ] Nu mai ai numere magice (ai pus constante în loc)  
 - [ ] Codul are indentare uniformă  
 - [ ] Există comentarii acolo unde regula nu se vede din cod  
 - [ ] Nu ai cod rămas „pentru probă” (afișări `[DEBUG]` uitate)  
@@ -1386,7 +1386,7 @@ Adaugă un test care simulează lupta cu goblinul de 200 de ori (Exemplul 11) ș
 - [ ] Programul compilează fără erori sau avertismente  
 - [ ] Opțiunea 9 afișează `Teste: 15, picate: 0` (sau mai multe teste, dacă ai adăugat)  
 - [ ] Ai strâns toate numerele magice în constante  
-- [ ] Ai citit tot codul și l-ai îngrijit conform listei  
+- [ ] Ai citit tot codul și ai respectat lista  
 - [ ] Ai salvat fișierul ca `Joc_L49.cpp`  
 
 ---
@@ -1394,8 +1394,8 @@ Adaugă un test care simulează lupta cu goblinul de 200 de ori (Exemplul 11) ș
 ## Bonus / Provocare (dacă ai terminat)
 - [ ] Mută testele în funcții separate (`testeJucator`, `testeHarta`, `testeMagazin`)  
 - [ ] Rugă un coleg să citească codul tău și să spună ce nu înțelege. Apoi îmbunătățește acele locuri  
-- [ ] Adaugă un test care verifică salvarea: salvează un erou, încarcă-l și compară câmpurile  
-- [ ] Caută în codul tău orice funcție mai lungă de 30 de linii și împart-o  
+- [ ] Adaugă un test care verifică salvarea: salvează un erou, încarcă eroul și compară câmpurile  
+- [ ] Caută în codul tău orice funcție mai lungă de 30 de linii și împarte funcția în două  
 
 ---
 
@@ -1407,9 +1407,9 @@ Adaugă un test care simulează lupta cu goblinul de 200 de ori (Exemplul 11) ș
 | Bara de viață apare goală | Împărțire între întregi | Înmulțește întâi: `valoare * 10 / maxim` |
 | Pozițiile din rucsac sunt mutate cu 1 | Numărătoarea începe de la `0` | Întoarce `i`, nu `i + 1` |
 | Testele trec, dar jocul tot greșește | Testul nu verifică și cazul problemă | Adaugă un test pentru cazul care a greșit |
-| Mesajele `[DEBUG]` apar și în jocul final | Le-ai uitat în cod | Șterge-le după ce ai găsit greșeala |
+| Mesajele `[DEBUG]` apar și în jocul final | Au rămas în cod | Șterge mesajele după ce ai găsit greșeala |
 | Nu mai știi ce face o variabilă | Nume ca `a`, `b`, `x2` | Redenumește: `monede`, `viata`, `camera` |
-| Am schimbat un număr și jocul s-a stricat | Același număr era scris în mai multe locuri | Folosește constante |
+| Am schimbat un număr și jocul nu mai merge | Același număr era scris în mai multe locuri | Folosește constante |
 
 ---
 
@@ -1435,7 +1435,7 @@ Adaugă un test care simulează lupta cu goblinul de 200 de ori (Exemplul 11) ș
 ## Temă
 1. Termină Exercițiul A și rulează testele interne.  
 2. Parcurge lista de la Exercițiul B și curăță cel puțin trei locuri din codul tău.  
-3. Pregătește-ți **prezentarea de mâine**: scrie, în 3–4 propoziții, ce face jocul tău și ce ți-a plăcut cel mai mult să construiești.  
+3. Pregătește-ți **prezentarea de mâine**: scrie, în 3–4 propoziții, ce face jocul tău și ce îți place cel mai mult la el.  
 4. Salvează tot ca `Joc_L49.cpp`.
 
 ---

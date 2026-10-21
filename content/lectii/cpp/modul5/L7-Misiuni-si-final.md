@@ -2,7 +2,7 @@
 **Modulul 5 · Proiect RPG în consolă · 2 ore**  
 **Code Maker Club · RPG Creator**
 
-> Până acum eroul tău se plimbă, ia obiecte, se luptă și cumpără, dar jocul nu se termină niciodată. Azi îi dăm **un scop**: să învingă goblinul, să găsească cheia și să deschidă cufărul din turn. Adăugăm o listă de **misiuni** cu bife, **condițiile de câștig și de pierdere** și un ecran final cu scorul. Pentru asta folosim variabile `bool`, care țin minte ce s-a întâmplat în joc.  
+> Până acum eroul tău se plimbă, ia obiecte, se luptă și cumpără, dar jocul nu se termină niciodată. Azi îi dăm **un scop**: să învingă goblinul, să găsească cheia și să deschidă cufărul din turn. Adăugăm o listă de **misiuni** cu bife, **condițiile de câștig și de pierdere** și un ecran final cu scorul. Pentru asta folosim variabile `bool`, care țin minte ce a avut loc în joc.  
 > Proiect: **„Joc_L47.cpp”** · poți câștiga sau pierde jocul.
 
 ---
@@ -391,7 +391,7 @@ Ai terminat toate misiunile!
 
 ### Exemplul 9 — Misiune secundară: colecționarul *(Provocare, opțional)*
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
 O misiune secundară: „Adună cel puțin 3 obiecte”. Starea ei nu este un steag, ci se **calculează** din rucsac:
 
@@ -502,7 +502,7 @@ Total 90: Final de bronz: ai reusit, dar poti mai mult.
 
 Pornim de la **Joc_L46.cpp**. Adăugăm în `Joc` cele două steaguri noi, `cheiaGasita` și `cufarDeschis`; funcțiile `afiseazaMisiuni`, `deschideCufar` și `afiseazaFinal`; comenzile `deschide` și `misiuni` și apelul `afiseazaFinal(g)` la sfârșitul lui `joaca`. În `iaObiect`, când eroul ia cheia, `cheiaGasita` devine `true`. Constanta `CAMERA_TURN` apare acum.
 
-Iată ce s-a **schimbat** față de lecția trecută (`+` = linii de adăugat, `-` = linii de șters, `...` = restul codului rămâne la fel):
+Iată ce este **nou** față de lecția trecută (`+` = linii de adăugat, `-` = linii de șters, `...` = restul codului rămâne la fel):
 
 ```diff
 ...
@@ -584,7 +584,7 @@ Iată ce s-a **schimbat** față de lecția trecută (`+` = linii de adăugat, `
 ...
          }
          if (!esteViu(g.j)) {
--            cout << "\nAi pierdut. Jocul s-a terminat.\n";
+-            cout << "\nAi pierdut. Jocul este gata.\n";
              g.gata = true;
          }
      }
@@ -795,7 +795,7 @@ void afiseazaTitlu() {
 
 void afiseazaPoveste() {
     cout << "\nDemult, un rege intelept a ascuns o comoara in Turnul castelului.\n";
-    cout << "Cheia comorii a fost luata de un goblin, care s-a ascuns in pivnita.\n";
+    cout << "Cheia comorii a fost luata de un goblin, care a fugit in pivnita.\n";
     cout << "Tu esti eroul care trebuie sa gaseasca cheia si sa deschida cufarul.\n";
 }
 
@@ -1305,7 +1305,7 @@ La revedere!
 ## Proiect / exerciții de finalizat AZI
 
 ### Exercițiul A — Joc_L47.cpp (obligatoriu)
-Scrie programul din Exemplul 12, pornind de la `Joc_L46.cpp`. Joacă-l până la capăt: câștigă o dată, pierde o dată (lasă goblinul să te învingă) și ieși o dată cu `iesire`. Verifică cele trei ecrane.
+Scrie programul din Exemplul 12, pornind de la `Joc_L46.cpp`. Joacă jocul până la capăt: câștigă o dată, pierde o dată (lasă goblinul să te învingă) și ieși o dată cu `iesire`. Verifică cele trei ecrane.
 
 ### Exercițiul B — Misiunile tale
 Schimbă misiunile după povestea ta (de exemplu: „Găsește harta”, „Salvează prințesa”). Actualizează lista din `afiseazaMisiuni` și condiția de câștig din `deschideCufar`.
@@ -1314,7 +1314,7 @@ Schimbă misiunile după povestea ta (de exemplu: „Găsește harta”, „Salv
 Adaugă comanda `indiciu`, care spune jucătorului următorul pas (Exemplul 8), în funcție de steaguri.
 
 ### Exercițiul D — Misiune secundară *(Provocare, opțional)*
-Adaugă misiunea „Cumpără un obiect de la negustor” (un steag `aCumparat`, setat în `cumpara`) și afișeaz-o în lista de misiuni.
+Adaugă misiunea „Cumpără un obiect de la negustor” (un steag `aCumparat`, setat în `cumpara`) și afișează misiunea în lista de misiuni.
 
 ### Exercițiul E — Finaluri diferite *(Provocare, opțional)*
 Folosește Exemplul 11 și afișează un final diferit în funcție de scor.
@@ -1373,7 +1373,7 @@ Folosește Exemplul 11 și afișează un final diferit în funcție de scor.
 
 ## Temă
 1. Termină Exercițiul A și joacă toate cele trei finaluri.  
-2. Joacă jocul cu un coleg sau un părinte, **fără să-i explici nimic**, și notează unde se încurcă sau ce nu înțelege.  
+2. Joacă jocul cu un coleg sau un părinte, **fără să explici nimic**, și notează unde se încurcă sau ce nu înțelege.  
 3. Gândește-te: ce ar trebui să rămână dacă jucătorul închide jocul la jumătate? Scrie pe hârtie ce date trebuie salvate.  
 4. Salvează tot ca `Joc_L47.cpp`.
 

@@ -10,7 +10,7 @@ Al doilea pas. Monstrul. Faci o structură Monstru, cu nume, viață și atac, a
 
 Al treilea pas. Lupta pe ture. Mai întâi scrii o lovitură: arunci zarul și scazi din viața celuilalt. Apoi o rundă: lovește eroul, apoi monstrul. Apoi lupta întreagă, într-o buclă, până când unul rămâne fără viață. Apoi meniul de luptă, în care alegi să ataci, să bei o poțiune sau să fugi. La final, dacă ai câștigat, primești o recompensă, de exemplu monede.
 
-Al patrulea pas. Alte idei. Monstrul apare o singură dată, cu un steag. Poți verifica dacă lupta este echilibrată, simulând-o de multe ori. Poți alege un monstru la întâmplare. Sunt provocări opționale.
+Al patrulea pas. Alte idei. Monstrul apare o singură dată, cu un steag. Poți verifica dacă lupta este echilibrată, simulând lupta de multe ori. Poți alege un monstru la întâmplare. Sunt provocări opționale.
 
 Al cincilea pas. Jocul lecției. Lupta cu goblinul din pivniță.
 

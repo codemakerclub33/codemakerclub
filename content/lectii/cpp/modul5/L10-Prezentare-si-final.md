@@ -2,7 +2,7 @@
 **Modulul 5 · Proiect RPG în consolă · 2 ore**  
 **Code Maker Club · RPG Creator**
 
-> Ai ajuns la ultima oră! Ai construit, lecție cu lecție, un joc adevărat: cu hartă, erou, rucsac, monștri, magazin, misiuni și salvare. Azi punem ultimele retușuri (rang pe ecranul final, ecranul „Despre joc”), ți-l faci **al tău** (altă temă, altă cameră, alt monstru), rezolvi un mic test și îl **prezinți** colegilor.  
+> Ai ajuns la ultima oră! Ai construit, lecție cu lecție, un joc adevărat: cu hartă, erou, rucsac, monștri, magazin, misiuni și salvare. Azi punem ultimele retușuri (rang pe ecranul final, ecranul „Despre joc”), îl faci **al tău** (altă temă, altă cameră, alt monstru), rezolvi un mic test și îl **prezinți** colegilor.  
 > Proiect: **„Joc_L50.cpp”** · jocul tău final.
 
 ---
@@ -261,7 +261,7 @@ Schelet: viata 20, atac 4, recompensa 20 monede
 Dragon de gheata: viata 35, atac 6, recompensa 50 monede
 ```
 
-**Echilibrul jocului:** un monstru foarte puternic poate face jocul imposibil. Înainte de a-l adăuga, joacă și întreabă-te: „Pot să-l înving cu obiectele pe care le am până atunci?”.
+**Echilibrul jocului:** un monstru foarte puternic poate face jocul imposibil. Înainte de a adăuga monstrul, joacă jocul și întreabă-te: „Pot să înving monstrul cu obiectele pe care le am până atunci?”.
 
 **Încearcă tu (10 min)**  
 - [ ] Schimbi tema jocului  
@@ -403,7 +403,7 @@ int main() {
 
 ### Exemplul 9 — Statistici de joc: numărăm mutările *(Provocare, opțional)*
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
 Adăugăm în joc un contor de statistici, afișat pe ecranul final:
 
@@ -512,7 +512,7 @@ Se zice ca in turn se ascunde o comoara.
 
 Pornim de la **Joc_L49.cpp**. Adăugăm cele două constante de rang (`PRAG_AVENTURIER`, `PRAG_EROU`), funcția `rang`, ecranul `afiseazaDespre` și opțiunea **5. Despre joc** în meniu. Pe ecranul final apare acum și rangul.
 
-Iată ce s-a **schimbat** față de lecția trecută (`+` = linii de adăugat, `-` = linii de șters, `...` = restul codului rămâne la fel):
+Iată ce este **nou** față de lecția trecută (`+` = linii de adăugat, `-` = linii de șters, `...` = restul codului rămâne la fel):
 
 ```diff
 ...
@@ -777,7 +777,7 @@ void afiseazaTitlu() {
 
 void afiseazaPoveste() {
     cout << "\nDemult, un rege intelept a ascuns o comoara in Turnul castelului.\n";
-    cout << "Cheia comorii a fost luata de un goblin, care s-a ascuns in pivnita.\n";
+    cout << "Cheia comorii a fost luata de un goblin, care a fugit in pivnita.\n";
     cout << "Tu esti eroul care trebuie sa gaseasca cheia si sa deschida cufarul.\n";
 }
 
@@ -1448,7 +1448,7 @@ La revedere!
 Răspunde pe hârtie, apoi verifică răspunsurile.
 
 1. Ce tip de variabilă ține minte că „monstrul a fost învins”?  
-2. Cu ce cuvânt trimiți o variabilă într-o funcție **prin referință**, ca funcția s-o poată modifica?  
+2. Cu ce cuvânt trimiți o variabilă într-o funcție **prin referință**, ca funcția să o poată modifica?  
 3. Ce afișează `string(3, '#')`?  
 4. Ce valoare are `15 / 30` între întregi?  
 5. Ce variabilă `bool` oprește bucla principală a jocului când devine `true`?  
@@ -1496,9 +1496,9 @@ Folosește ghidul din Exemplul 7:
 ## Proiect / exerciții de finalizat AZI
 
 ### Exercițiul A — Joc_L50.cpp (obligatoriu)
-Scrie programul din Exemplul 12, pornind de la `Joc_L49.cpp`. Pune-ți numele la „Despre joc”. Joacă-l de la început până la câștig.
+Scrie programul din Exemplul 12, pornind de la `Joc_L49.cpp`. Pune-ți numele la „Despre joc”. Joacă jocul de la început până la câștig.
 
-### Exercițiul B — Fă-l al tău (obligatoriu, cel puțin un lucru)
+### Exercițiul B — Fă jocul al tău (obligatoriu, cel puțin un lucru)
 Alege **cel puțin una** dintre variante:
 - schimbă numele jocului și numele camerelor/descrierile (Exemplul 3);
 - adaugă o cameră nouă (Exemplul 4);

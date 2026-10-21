@@ -524,7 +524,7 @@ Nu inteleg comanda. Scrie ajutor.
 
 ### Exemplul 10 — Camere vizitate *(Provocare, opțional)*
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
 Un tablou de `bool` ne spune ce camere a vizitat eroul. Așa putem afișa „Ai explorat 3 din 6 camere”:
 
@@ -607,9 +607,9 @@ Dacă adaugi o cameră nouă și greșești un număr, programul îți spune ime
 
 ### Exemplul 12 — **Joc_L43.cpp**: te plimbi prin castel **[Esențial]**
 
-Pornim de la **Joc_L42.cpp**. Adăugăm constantele și tablourile camerelor, structura `Joc` (starea jocului: eroul și dacă jocul s-a terminat), funcțiile `directieDin`, `descrieCamera`, `muta`, `afiseazaAjutor`, `dupaMutare` și `joaca` (bucla principală). Opțiunea `1` din meniu creează eroul și pornește `joaca`. Harta primește acum camera curentă și marchează eroul cu `*`.
+Pornim de la **Joc_L42.cpp**. Adăugăm constantele și tablourile camerelor, structura `Joc` (starea jocului: eroul și dacă jocul este gata), funcțiile `directieDin`, `descrieCamera`, `muta`, `afiseazaAjutor`, `dupaMutare` și `joaca` (bucla principală). Opțiunea `1` din meniu creează eroul și pornește `joaca`. Harta primește acum camera curentă și marchează eroul cu `*`.
 
-Iată ce s-a **schimbat** față de lecția trecută (`+` = linii de adăugat, `-` = linii de șters, `...` = restul codului rămâne la fel):
+Iată ce este **nou** față de lecția trecută (`+` = linii de adăugat, `-` = linii de șters, `...` = restul codului rămâne la fel):
 
 ```diff
 ...
@@ -926,7 +926,7 @@ void afiseazaTitlu() {
 
 void afiseazaPoveste() {
     cout << "\nDemult, un rege intelept a ascuns o comoara in Turnul castelului.\n";
-    cout << "Cheia comorii a fost luata de un goblin, care s-a ascuns in pivnita.\n";
+    cout << "Cheia comorii a fost luata de un goblin, care a fugit in pivnita.\n";
     cout << "Tu esti eroul care trebuie sa gaseasca cheia si sa deschida cufarul.\n";
 }
 
@@ -1190,7 +1190,7 @@ La revedere!
 Scrie programul din Exemplul 12, pornind de la `Joc_L42.cpp`. Compilează după fiecare funcție nouă. Apoi plimbă-te prin toate cele 6 camere și verifică că nu poți trece prin pereți.
 
 ### Exercițiul B — Descrieri noi
-Schimbă descrierile camerelor, ca să se potrivească temei tale. Adaugă pentru fiecare cameră un detaliu care te-ar face curios (un zgomot, un miros, o lumină).
+Schimbă descrierile camerelor, ca să se potrivească temei tale. Adaugă pentru fiecare cameră un detaliu care să te facă curios (un zgomot, un miros, o lumină).
 
 ### Exercițiul C — Scurtături
 Adaugă comenzile `nord`, `sud` etc. cu majuscule (de exemplu `Nord`). *Indiciu:* transformă comanda în litere mici înainte de comparare, cu `tolower`.
@@ -1238,7 +1238,7 @@ Numără câte mutări a făcut eroul și afișează numărul în `afiseazaStare
 - `IESIRI[camera][directie]` spune în ce cameră ajungi sau `-1` dacă nu se poate.
 - Bucla principală: citește comanda, execută, afișează, repetă până la `iesire`.
 - `directieDin` transformă un cuvânt într-o direcție; `muta` verifică tabloul și schimbă camera.
-- `struct Joc` ține starea jocului (eroul și dacă s-a terminat); o trimitem prin `&` funcțiilor care o modifică.
+- `struct Joc` ține starea jocului (eroul și dacă este gata); o trimitem prin `&` funcțiilor care o modifică.
 - O comandă necunoscută primește un răspuns prietenos, nu tăcere.
 
 ---

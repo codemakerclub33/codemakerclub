@@ -13,7 +13,7 @@ La finalul orei jocul are obiecte așezate în camere, comanda `ia` mută un obi
 **Ținta orei (Complet):** obiectele din camere, comenzile `ia`, `inventar`, `foloseste` și funcția `pozitie`.
 
 ## De ce contează
-Inventarul este în aproape orice joc: de la Minecraft la jocurile de cărți. Tehnic este o **listă care crește și scade**: adaugi cu `push_back`, cauți cu o buclă, ștergi cu `erase`. Sunt exact operațiile pe care le-ai exersat în Modulul 4, aplicate acum la ceva care îți place.
+Inventarul este în aproape orice joc: de la Minecraft la jocurile de cărți. Tehnic este o **listă care crește și scade**: adaugi cu `push_back`, cauți cu o buclă, ștergi cu `erase`. Sunt exact operațiile exersate în Modulul 4, aplicate acum la ceva care îți place.
 
 ---
 
@@ -125,7 +125,7 @@ Tabloul `obiect` pornește cu toate textele goale. Camera 2 (Armuraria) are o sa
 
 ### Exemplul 3 — `pozitie`: unde se află un obiect? **[Esențial]**
 
-Ca să folosim sau să ștergem un obiect, trebuie să știm pe ce poziție se află. Funcția `pozitie` parcurge vectorul și întoarce poziția sau `-1` dacă nu l-a găsit (ca la căutarea din Modulul 2):
+Ca să folosim sau să ștergem un obiect, trebuie să știm pe ce poziție se află. Funcția `pozitie` parcurge vectorul și întoarce poziția sau `-1` dacă nu a găsit obiectul (ca la căutarea din Modulul 2):
 
 ```cpp
 #include <iostream>
@@ -428,7 +428,7 @@ Cu sabia, atacul este 8
 
 ### Exemplul 9 — Rucsac cu loc limitat *(Provocare, opțional)*
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
 Rucsacul poate avea o limită:
 
@@ -549,7 +549,7 @@ Scuturi: 0
 
 Pornim de la **Joc_L43.cpp**. Adăugăm: `#include <vector>`, câmpul `inventar` în `Jucator`, tabloul `obiect` în `Joc`, funcțiile `pozitie`, `initObiecte`, `iaObiect`, `afiseazaInventar` și `foloseste`, descrierea obiectelor în `descrieCamera` și cele trei comenzi noi în `joaca`. Constantele pentru camere (`CAMERA_ARMURARIA`, `CAMERA_BUCATARIA`, `CAMERA_PIVNITA`) apar acum, ca să nu scriem numere „magice” în `initObiecte`.
 
-Iată ce s-a **schimbat** față de lecția trecută (`+` = linii de adăugat, `...` = restul codului rămâne la fel):
+Iată ce este **nou** față de lecția trecută (`+` = linii de adăugat, `...` = restul codului rămâne la fel):
 
 ```diff
 ...
@@ -841,7 +841,7 @@ void afiseazaTitlu() {
 
 void afiseazaPoveste() {
     cout << "\nDemult, un rege intelept a ascuns o comoara in Turnul castelului.\n";
-    cout << "Cheia comorii a fost luata de un goblin, care s-a ascuns in pivnita.\n";
+    cout << "Cheia comorii a fost luata de un goblin, care a fugit in pivnita.\n";
     cout << "Tu esti eroul care trebuie sa gaseasca cheia si sa deschida cufarul.\n";
 }
 
@@ -1157,7 +1157,7 @@ La revedere!
 ## Proiect / exerciții de finalizat AZI
 
 ### Exercițiul A — Joc_L44.cpp (obligatoriu)
-Scrie programul din Exemplul 12, pornind de la `Joc_L43.cpp`. Joacă-l: ia sabia, ia poțiunea, vezi rucsacul, folosește poțiunea. Încearcă și `ia` într-o cameră goală și `foloseste` cu un obiect pe care nu îl ai.
+Scrie programul din Exemplul 12, pornind de la `Joc_L43.cpp`. Joacă jocul: ia sabia, ia poțiunea, vezi rucsacul, folosește poțiunea. Încearcă și `ia` într-o cameră goală și `foloseste` cu un obiect pe care nu îl ai.
 
 ### Exercițiul B — Obiectele tale
 Schimbă obiectele din joc și camerele în care se află, după tema ta (de exemplu: „Harta” în Sala Mare, „Lanterna” la Poartă). Păstrează `Cheie`, `Sabie` și `Potiune`, pentru că le vom folosi în lecțiile următoare.
@@ -1192,11 +1192,11 @@ Adaugă comanda `arunca`: scoate un obiect din rucsac și îl lasă în camera c
 
 | Ce vezi | Cauza | Corect |
 |---------|-------|--------|
-| Obiectul rămâne pe jos după ce l-ai luat | Nu ai golit locul din cameră | `obiect = "";` după `push_back` |
+| Obiectul rămâne pe jos după ce ai luat obiectul | Nu ai golit locul din cameră | `obiect = "";` după `push_back` |
 | Programul se oprește la `erase` | Poziția este `-1` (obiect negăsit) | Verifică `p >= 0` înainte de `erase` |
 | Obiectul șters nu este cel dorit | Ai confundat numărul afișat (de la 1) cu poziția (de la 0) | Pozițiile din vector încep de la `0`; la afișare scrii `i + 1` |
 | `error: no match for 'operator+'` la `erase` | Ai scris `inventar.erase(p)` | `inventar.erase(inventar.begin() + p)` |
-| Poți folosi o poțiune de câte ori vrei | Nu ai scos-o din rucsac | `erase` după folosire |
+| Poți folosi o poțiune de câte ori vrei | Nu ai scos poțiunea din rucsac | `erase` după folosire |
 | `foloseste` nu găsește „potiune” | Majuscula contează | `Potiune` ≠ `potiune`; scrie la fel ca în joc |
 
 ---
@@ -1221,7 +1221,7 @@ Adaugă comanda `arunca`: scoate un obiect din rucsac și îl lasă în camera c
 ---
 
 ## Temă
-1. Termină Exercițiul A și joacă-l de câteva ori, încercând toate comenzile, și cele greșite.  
+1. Termină Exercițiul A și joacă jocul de câteva ori, încercând toate comenzile, și cele greșite.  
 2. Scrie pe hârtie **monstrul** jocului tău: nume, viață, cât de tare lovește și ce recompensă dă.  
 3. Adaugă încă un tip de obiect la alegere (un mesaj la `ia`, un efect la `foloseste`).  
 4. Salvează tot ca `Joc_L44.cpp`.

@@ -14,7 +14,7 @@ Al patrulea pas. Alte idei. Un marcator, de exemplu liniuță, pentru camerele f
 
 Al cincilea pas. Jocul lecției. Salvare și continuare.
 
-Greșeli frecvente. Numele eroului apare gol după încărcare, din cauza capcanei cu getline. Datele apar amestecate, pentru că ai citit într-o altă ordine decât ai scris. Fișierul de salvare nu apare, pentru că ai uitat close sau îl cauți în alt folder. Programul se blochează dacă nu există salvare. Obiectele din camere se pierd, pentru că nu le-ai salvat.
+Greșeli frecvente. Numele eroului apare gol după încărcare, din cauza capcanei cu getline. Datele apar amestecate, pentru că ai citit într-o altă ordine decât ai scris. Fișierul de salvare nu apare, pentru că ai uitat close sau îl cauți în alt folder. Programul se blochează dacă nu există salvare. Obiectele din camere se pierd, pentru că nu ai salvat obiectele.
 
 Tema. Termini exercițiul A și testezi salvarea de cel puțin trei ori, în momente diferite. Deschizi fișierul și schimbi un număr, de exemplu monedele, încarci jocul și observi ce se întâmplă. Te gândești ce ar fi dacă cineva ar scrie litere în loc de număr. Salvezi ca Joc, linie jos, L patruzeci și opt.
 

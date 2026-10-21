@@ -10,7 +10,7 @@ Al doilea pas. Jocul devine al tău. Alegi cel puțin una dintre variante: schim
 
 Al treilea pas. Fișa, ghidul și diploma. Completezi fișa jocului: cum se numește, cine este eroul, ce misiuni are. Citești ghidul prezentării. Diploma ta, centrată în consolă, apare cu numele tău.
 
-Al patrulea pas. Prezentarea. Pregătești trei, cinci minute: spui povestea, arăți jocul, explici o bucată de cod și spui ce ți-a plăcut cel mai mult. Mai poți adăuga statistici de joc, clasamentul celor mai bune trei scoruri sau un mesaj de întâmpinare aleator. Sunt provocări opționale.
+Al patrulea pas. Prezentarea. Pregătești trei, cinci minute: spui povestea, arăți jocul, explici o bucată de cod și spui ce îți place cel mai mult. Mai poți adăuga statistici de joc, clasamentul celor mai bune trei scoruri sau un mesaj de întâmpinare aleator. Sunt provocări opționale.
 
 Al cincilea pas. Jocul final. Rulezi tot jocul de la început până la câștig, ca un jucător nou.
 

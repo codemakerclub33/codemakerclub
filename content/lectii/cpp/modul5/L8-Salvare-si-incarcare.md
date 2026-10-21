@@ -66,7 +66,7 @@ int main() {
 Fisierul date.txt a fost scris.
 ```
 
-Programul nu afișează conținutul fișierului. Deschide `date.txt` cu un editor de text ca să vezi ce s-a scris: pe prima linie `Ana`, pe a doua `30 12`.
+Programul nu afișează conținutul fișierului. Deschide `date.txt` cu un editor de text ca să vezi ce a fost scris: pe prima linie `Ana`, pe a doua `30 12`.
 
 ### Exemplul 2 — Scriem și citim înapoi **[Esențial]**
 
@@ -139,7 +139,7 @@ Nu am gasit nicio salvare.
 
 ### Exemplul 4 — `salveaza` pentru un erou mic **[Esențial]**
 
-Punem salvarea într-o funcție care primește eroul și **întoarce `bool`**: `true` dacă a reușit, `false` dacă fișierul nu s-a putut crea:
+Punem salvarea într-o funcție care primește eroul și **întoarce `bool`**: `true` dacă a reușit, `false` dacă fișierul nu a putut fi creat:
 
 ```cpp
 #include <iostream>
@@ -185,7 +185,7 @@ Joc salvat.
 
 ### Exemplul 5 — `incarca`: citim eroul înapoi **[Esențial]**
 
-Funcția `incarca` face invers: deschide fișierul, citește **în aceeași ordine** și completează eroul primit prin referință. Programul de mai jos salvează, apoi încarcă într-un alt erou, ca să vedem că datele s-au păstrat:
+Funcția `incarca` face invers: deschide fișierul, citește **în aceeași ordine** și completează eroul primit prin referință. Programul de mai jos salvează, apoi încarcă într-un alt erou, ca să vedem că datele au rămas la fel:
 
 ```cpp
 #include <iostream>
@@ -407,9 +407,9 @@ La `stricat.txt` încărcarea eșuează, iar eroul `Original` rămâne neatins. 
 
 ### Exemplul 9 — Camere fără obiect: markerul „-” *(Provocare, opțional)*
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
-Un `string` gol (camera fără obiect) s-ar scrie ca o linie goală, ceea ce încurcă citirea. Soluția din joc: scriem `-` pentru „nimic” și îl transformăm înapoi în string gol la citire:
+Un `string` gol (camera fără obiect) ar fi scris ca o linie goală, ceea ce încurcă citirea. Soluția din joc: scriem `-` pentru „nimic” și îl transformăm înapoi în string gol la citire:
 
 ```cpp
 #include <iostream>
@@ -529,7 +529,7 @@ int main() {
 
 Pornim de la **Joc_L47.cpp**. Adăugăm `#include <fstream>`, constanta `FISIER_SALVARE`, funcțiile `salveaza` și `incarca` (cele din Exemplele 4–8, dar pentru tot jocul), comanda `salveaza`, funcția `continuaJoc` și opțiunea 4 în meniu.
 
-Iată ce s-a **schimbat** față de lecția trecută (`+` = linii de adăugat, `-` = linii de șters, `...` = restul codului rămâne la fel):
+Iată ce este **nou** față de lecția trecută (`+` = linii de adăugat, `-` = linii de șters, `...` = restul codului rămâne la fel):
 
 ```diff
 ...
@@ -853,7 +853,7 @@ void afiseazaTitlu() {
 
 void afiseazaPoveste() {
     cout << "\nDemult, un rege intelept a ascuns o comoara in Turnul castelului.\n";
-    cout << "Cheia comorii a fost luata de un goblin, care s-a ascuns in pivnita.\n";
+    cout << "Cheia comorii a fost luata de un goblin, care a fugit in pivnita.\n";
     cout << "Tu esti eroul care trebuie sa gaseasca cheia si sa deschida cufarul.\n";
 }
 
@@ -1433,10 +1433,10 @@ Folosește Exemplul 10: cere un număr de slot (1–3) la `salveaza` și la „C
 
 ## Temă
 1. Termină Exercițiul A și testează salvarea de cel puțin trei ori, în momente diferite din joc.  
-2. Deschide `salvare.txt` și încearcă să schimbi un număr (de exemplu monedele). Încarcă jocul. Ce observi? Ce s-ar întâmpla dacă cineva ar scrie litere în loc de numere?  
+2. Deschide `salvare.txt` și încearcă să schimbi un număr (de exemplu monedele). Încarcă jocul. Ce observi? Ce ar urma dacă cineva ar scrie litere în loc de numere?  
 3. Salvează tot ca `Joc_L48.cpp`.
 
 ---
 
 ## Ce urmează — Lecția 9
-**Curățare cod și depanare.** Jocul tău are acum sute de linii. Învățăm să-l facem **ușor de citit** (nume bune, comentarii, funcții mici), să găsim și să reparăm greșeli (*debugging*) și să adăugăm un meniu de teste interne.
+**Curățare cod și depanare.** Jocul tău are acum sute de linii. Învățăm să facem codul **ușor de citit** (nume bune, comentarii, funcții mici), să găsim și să reparăm greșeli (*debugging*) și să adăugăm un meniu de teste interne.

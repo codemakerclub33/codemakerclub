@@ -12,10 +12,10 @@ Al treilea pas. Teste automate. Scrii funcția verifică, care compară ce ai pr
 
 Al patrulea pas. Jocul lecției. Adaugi o opțiune, teste interne, în meniu.
 
-Un lucru important: testele care trec nu înseamnă că jocul nu mai are bug-uri. Dacă testezi doar ce te-ai gândit, ai nevoie și de joc real, jucat de oameni.
+Un lucru important: testele care trec nu înseamnă că jocul nu mai are bug-uri. Dacă testezi doar ce ai prevăzut, ai nevoie și de joc real, jucat de oameni.
 
 Greșeli frecvente. Viața depășește maximul. Bara de viață apare goală. Pozițiile din rucsac sunt mutate cu unu. Testele trec, dar jocul tot greșește. Mesajele de debug apar și în jocul final.
 
-Tema. Termini exercițiul A și rulezi testele interne. Parcurgi lista de la exercițiul B și cureți cel puțin trei locuri din codul tău. Pregătești prezentarea de mâine: scrii, în trei sau patru propoziții, ce face jocul tău și ce ți-a plăcut cel mai mult. Salvezi ca Joc, linie jos, L patruzeci și nouă.
+Tema. Termini exercițiul A și rulezi testele interne. Parcurgi lista de la exercițiul B și cureți cel puțin trei locuri din codul tău. Pregătești prezentarea de mâine: scrii, în trei sau patru propoziții, ce face jocul tău și ce îți place cel mai mult. Salvezi ca Joc, linie jos, L patruzeci și nouă.
 
 Recapitulare. Cod curat, depanare cu afișări și teste. Succes!

@@ -114,7 +114,7 @@ using namespace std;
 
 int main() {
     cout << "Demult, un rege intelept a ascuns o comoara in Turnul castelului.\n";
-    cout << "Cheia comorii a fost luata de un goblin, care s-a ascuns in pivnita.\n";
+    cout << "Cheia comorii a fost luata de un goblin, care a fugit in pivnita.\n";
     cout << "Tu esti eroul care trebuie sa gaseasca cheia si sa deschida cufarul.\n";
     return 0;
 }
@@ -123,7 +123,7 @@ int main() {
 **Ieșire:**
 ```
 Demult, un rege intelept a ascuns o comoara in Turnul castelului.
-Cheia comorii a fost luata de un goblin, care s-a ascuns in pivnita.
+Cheia comorii a fost luata de un goblin, care a fugit in pivnita.
 Tu esti eroul care trebuie sa gaseasca cheia si sa deschida cufarul.
 ```
 
@@ -630,7 +630,7 @@ void afiseazaTitlu() {
 
 void afiseazaPoveste() {
     cout << "\nDemult, un rege intelept a ascuns o comoara in Turnul castelului.\n";
-    cout << "Cheia comorii a fost luata de un goblin, care s-a ascuns in pivnita.\n";
+    cout << "Cheia comorii a fost luata de un goblin, care a fugit in pivnita.\n";
     cout << "Tu esti eroul care trebuie sa gaseasca cheia si sa deschida cufarul.\n";
 }
 
@@ -735,7 +735,7 @@ Alege: 2
 Alege: 3
 
 Demult, un rege intelept a ascuns o comoara in Turnul castelului.
-Cheia comorii a fost luata de un goblin, care s-a ascuns in pivnita.
+Cheia comorii a fost luata de un goblin, care a fugit in pivnita.
 Tu esti eroul care trebuie sa gaseasca cheia si sa deschida cufarul.
 
 =============================
@@ -770,13 +770,13 @@ Observă cum arată `main`: este doar un meniu, iar fiecare opțiune apelează o
 ## Proiect / exerciții de finalizat AZI
 
 ### Exercițiul A — Joc_L41.cpp (obligatoriu)
-Scrie programul din Exemplul 12. Apoi **personalizează-l**: schimbă numele jocului și povestea, apoi numele camerelor (de exemplu, o navă spațială cu camere precum „Puntea”, „Motoarele” sau „Laboratorul”). Dacă schimbi lungimea numelor, ajustează harta ca să rămână aliniată.
+Scrie programul din Exemplul 12. Apoi **personalizează jocul**: schimbă numele jocului și povestea, apoi numele camerelor (de exemplu, o navă spațială cu camere precum „Puntea”, „Motoarele” sau „Laboratorul”). Dacă schimbi lungimea numelor, ajustează harta ca să rămână aliniată.
 
 ### Exercițiul B — Povestea ta
 Adaugă o opțiune în meniu: „Povestea”. Ea afișează povestea jocului într-o funcție separată, `afiseazaPoveste`.
 
 ### Exercițiul C — O cameră în plus *(Provocare, opțional)*
-Desenează pe hârtie o a șaptea cameră (de exemplu, o grădină), apoi adaugă-o pe hartă în cod.
+Desenează pe hârtie o a șaptea cameră (de exemplu, o grădină), apoi adaugă camera pe hartă în cod.
 
 ### Exercițiul D — Harta ta *(Provocare, opțional)*
 Desenează pe hârtie harta jocului tău: 6 camere și drumurile dintre ele. Pe ea vei lucra în lecția următoare.

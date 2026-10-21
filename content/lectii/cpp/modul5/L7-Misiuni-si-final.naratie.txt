@@ -4,7 +4,7 @@ Azi jocul tău primește un scop. Eroul are misiuni, poate câștiga sau poate p
 
 Obiectivul. Minim: variabile bool pentru misiuni și un mesaj la câștig. Complet: comanda misiuni, câștig și pierdere, scorul final și ieșirea corectă din bucla principală.
 
-Primul pas. Steaguri și misiuni. Un steag este o variabilă bool care spune dacă ceva s-a întâmplat: ai luat cheia, ai învins goblinul, ai deschis cufărul. Cu ele faci lista de misiuni, în care fiecare misiune are o bifă când este îndeplinită. Comanda misiuni o afișează.
+Primul pas. Steaguri și misiuni. Un steag este o variabilă bool care spune dacă ceva a avut loc: ai luat cheia, ai învins goblinul, ai deschis cufărul. Cu ele faci lista de misiuni, în care fiecare misiune are o bifă când este îndeplinită. Comanda misiuni o afișează.
 
 Al doilea pas. Câștig și pierdere. Cufărul se deschide doar dacă ai cheia și ești în turn. Pentru asta folosești și între condiții. Pierderea apare când viața ajunge la zero. Ecranul final are trei situații: ai câștigat, ai pierdut sau ai ieșit singur cu comanda ieșire. La ieșire singur nu trebuie să apară mesajul că ai pierdut.
 
@@ -18,6 +18,6 @@ Un sfat bun: joacă toate cele trei finaluri, ca să fii sigur că funcționeaz�
 
 Greșeli frecvente. Cufărul se deschide fără cheie, pentru că lipsește condiția. Jocul nu se termină după ce deschizi cufărul, pentru că bucla nu verifică steagul. Apare „Ai pierdut” când ieși cu ieșire. Lista de misiuni nu se schimbă, pentru că nu actualizezi steagurile. Ai scris un singur egal în loc de două într-o condiție.
 
-Tema. Termini exercițiul A și joci toate cele trei finaluri. Joci cu un coleg sau cu un părinte, fără să-i explici nimic, și notezi unde se încurcă. Te gândești ce ar trebui să rămână dacă jucătorul închide jocul la jumătate. Salvezi ca Joc, linie jos, L patruzeci și șapte.
+Tema. Termini exercițiul A și joci toate cele trei finaluri. Joci cu un coleg sau cu un părinte, fără să explici nimic, și notezi unde se încurcă. Te gândești ce ar trebui să rămână dacă jucătorul închide jocul la jumătate. Salvezi ca Joc, linie jos, L patruzeci și șapte.
 
-Recapitulare. Steagurile ții minte ce s-a întâmplat. Condițiile decid câștigul și pierderea. Succes!
+Recapitulare. Steagurile ții minte ce a avut loc. Condițiile decid câștigul și pierderea. Succes!

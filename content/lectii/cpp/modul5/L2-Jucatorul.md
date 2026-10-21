@@ -138,7 +138,7 @@ Ana: viata 30, atac 5, monede 10
 Dan: viata 30, atac 5, monede 50
 ```
 
-Ambii eroi au pornit cu aceleași valori, dar `b` și-a schimbat monedele. Fiecare variabilă de tip `Jucator` are propriile câmpuri.
+Ambii eroi au pornit cu aceleași valori, dar `b` are acum alte monede. Fiecare variabilă de tip `Jucator` are propriile câmpuri.
 
 **Încearcă tu (8 min)**  
 - [ ] Definești `struct Jucator` cu nume, viață și monede  
@@ -442,9 +442,9 @@ Lovitura de 15 -> viata 0 (a cazut!)
 
 ### Exemplul 10 — Doi eroi, un câștigător *(Provocare, opțional)*
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
-Putem pune mai mulți eroi într-un tablou și să-i comparăm:
+Putem pune mai mulți eroi într-un tablou și să comparăm eroii:
 
 ```cpp
 #include <iostream>
@@ -533,7 +533,7 @@ Hot: viata 30, atac 7
 
 Pornim de la **Joc_L41.cpp** și adăugăm, în ordine: structura `Jucator`, funcția `citesteText`, `bara`, `creeazaJucator`, `raneste`, `vindeca`, `esteViu` și `afiseazaStare`. La final, opțiunea `1` din meniu creează eroul și îi arată starea. Ca să vezi cum merg funcțiile, `jocNou` îl și rănește, apoi îl vindecă.
 
-Iată ce s-a **schimbat** față de lecția trecută (liniile cu `+` se adaugă, cele cu `-` se șterg, iar `...` înseamnă „restul codului rămâne la fel”):
+Iată ce este **nou** față de lecția trecută (liniile cu `+` se adaugă, cele cu `-` se șterg, iar `...` înseamnă „restul codului rămâne la fel”):
 
 ```diff
 ...
@@ -727,7 +727,7 @@ void afiseazaTitlu() {
 
 void afiseazaPoveste() {
     cout << "\nDemult, un rege intelept a ascuns o comoara in Turnul castelului.\n";
-    cout << "Cheia comorii a fost luata de un goblin, care s-a ascuns in pivnita.\n";
+    cout << "Cheia comorii a fost luata de un goblin, care a fugit in pivnita.\n";
     cout << "Tu esti eroul care trebuie sa gaseasca cheia si sa deschida cufarul.\n";
 }
 
@@ -865,7 +865,7 @@ La revedere!
 Scrie programul din Exemplul 12, pornind de la `Joc_L41.cpp`. Apoi schimbă valorile de pornire ale eroului (viață, monede, atac) după gustul tău și verifică dacă bara de viață arată bine.
 
 ### Exercițiul B — Mai multe câmpuri
-Adaugă în `Jucator` un câmp `nivel` (pornește de la `1`) și afișează-l în `afiseazaStare`.
+Adaugă în `Jucator` un câmp `nivel` (pornește de la `1`) și afișează nivelul în `afiseazaStare`.
 
 ### Exercițiul C — Bara pentru monede *(Provocare, opțional)*
 Scrie o funcție care desenează cu `*` câte o stea pentru fiecare 10 monede ale eroului (de exemplu, 35 de monede înseamnă `***`).
@@ -886,7 +886,7 @@ Pornind de la Exemplul 11, lasă jucătorul să aleagă o clasă când își cre
 - [ ] Colorează bara de viață: caută pe internet „ANSI escape codes C++” (funcționează în unele console)  
 - [ ] Adaugă un câmp `experienta` și o funcție `castigaExperienta` care crește nivelul la fiecare 100 de puncte  
 - [ ] Scrie funcția `afiseazaCompact` care afișează starea pe o singură linie  
-- [ ] Adaugă un câmp `numeArma` și afișează-l în stare  
+- [ ] Adaugă un câmp `numeArma` și afișează numele armei în stare  
 
 ---
 

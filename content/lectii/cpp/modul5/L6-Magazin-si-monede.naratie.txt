@@ -1,6 +1,6 @@
 Lecția șase din Modulul cinci. Magazin și monede.
 
-Azi eroul tău primește bani și un loc unde să-i cheltuiască. Faci un magazin cu patru produse. Eroul poate cumpăra, dacă are destule monede, și poate vinde obiecte din rucsac. Fișierul tău este Joc, linie jos, L patruzeci și șase, punct c p p.
+Azi eroul tău primește bani și un loc unde să cheltuiască banii. Faci un magazin cu patru produse. Eroul poate cumpăra, dacă are destule monede, și poate vinde obiecte din rucsac. Fișierul tău este Joc, linie jos, L patruzeci și șase, punct c p p.
 
 Obiectivul. Minim: o listă de produse cu prețuri și o funcție cumpără care verifică monedele. Complet: meniul magazinului, vinde, produsele care dau bonusuri și integrarea în joc.
 
@@ -16,7 +16,7 @@ Al cincilea pas. Provocări opționale. Oferta zilei, istoricul cumpărăturilor
 
 Al șaselea pas. Jocul lecției. Magazinul negustorului Pip.
 
-Greșeli frecvente. Poți cumpăra și când n-ai monede, pentru că ai uitat verificarea. Se cumpără produsul greșit, pentru că ai încurcat poziția din listă. Monedele devin negative. Cheia se vinde și jocul nu mai poate fi terminat. Se șterge alt obiect decât cel vândut.
+Greșeli frecvente. Poți cumpăra și când nu ai monede, pentru că ai uitat verificarea. Se cumpără produsul greșit, pentru că ai încurcat poziția din listă. Monedele devin negative. Cheia se vinde și jocul nu mai poate fi terminat. Se șterge alt obiect decât cel vândut.
 
 Tema. Termini exercițiul A și joci până reușești să cumperi și să folosești fiecare produs. Faci un tabel cu produsele jocului tău: preț de cumpărare, preț de vânzare și efect. Te gândești la finalul jocului: ce trebuie să facă eroul ca să câștige? Salvezi ca Joc, linie jos, L patruzeci și șase.
 

@@ -16,7 +16,7 @@ Al cincilea pas. Provocări opționale. Un rucsac cu loc limitat, inventarul în
 
 Al șaselea pas. Jocul lecției. Găsești și folosești obiecte.
 
-Greșeli frecvente. Obiectul rămâne pe jos după ce l-ai luat. Programul se oprește la erase, pentru că poziția nu există. Se șterge alt obiect decât cel dorit. Erase primește începutul vectorului plus poziția elementului. Poți folosi o poțiune de câte ori vrei, pentru că nu o ștergi din rucsac.
+Greșeli frecvente. Obiectul rămâne pe jos după ce ai luat obiectul. Programul se oprește la erase, pentru că poziția nu există. Se șterge alt obiect decât cel dorit. Erase primește începutul vectorului plus poziția elementului. Poți folosi o poțiune de câte ori vrei, pentru că nu o ștergi din rucsac.
 
 Tema. Termini exercițiul A și joci de câteva ori, încercând toate comenzile, inclusiv cele greșite. Scrii pe hârtie monstrul jocului tău: nume, viață, cât de tare lovește și ce recompensă dă. Adaugi încă un tip de obiect. Salvezi ca Joc, linie jos, L patruzeci și patru.
 

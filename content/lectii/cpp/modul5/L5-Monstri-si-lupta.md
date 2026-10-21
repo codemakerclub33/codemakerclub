@@ -307,7 +307,7 @@ Dacă monstrul rămâne fără viață, el **nu mai lovește** (de aceea `if (vi
 
 ### Exemplul 7 — Meniul de luptă: ataci, bei, fugi **[Esențial]**
 
-Jucătorul alege ce face la fiecare tură. `continue` sare peste restul rundei: dacă n-ai poțiune, nu ți se consumă tura. Viața monstrului și a eroului se afișează cu o bară, ca în lecția 2:
+Jucătorul alege ce face la fiecare tură. `continue` sare peste restul rundei: dacă nu ai poțiune, nu ți se consumă tura. Viața monstrului și a eroului se afișează cu o bară, ca în lecția 2:
 
 ```cpp
 #include <iostream>
@@ -476,7 +476,7 @@ Monede: 25, scor: 20
 
 ### Exemplul 9 — Monstrul apare o singură dată *(Provocare, opțional)*
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
 Dacă eroul intră din nou în pivniță după ce a învins goblinul, lupta nu trebuie să înceapă iar. Ținem minte asta într-o variabilă `bool`:
 
@@ -612,7 +612,7 @@ Un Schelet iti iese in cale!
 
 Pornim de la **Joc_L44.cpp**. Adăugăm: `#include <cstdlib>` și `<ctime>`, structura `Monstru`, funcțiile `zar`, `atacTotal` (atacul de bază plus bonusul sabiei) și `lupta`, câmpul `monstruInvins` în `Joc`, `srand` în `main` și apelul luptei în `dupaMutare`: când intri în pivniță și goblinul nu a fost învins, lupta începe. Dacă fugi, ajungi înapoi în bucătărie.
 
-Iată ce s-a **schimbat** față de lecția trecută (`+` = linii de adăugat, `-` = linii de șters, `...` = restul codului rămâne la fel):
+Iată ce este **nou** față de lecția trecută (`+` = linii de adăugat, `-` = linii de șters, `...` = restul codului rămâne la fel):
 
 ```diff
 ...
@@ -719,7 +719,7 @@ Iată ce s-a **schimbat** față de lecția trecută (`+` = linii de adăugat, `
              cout << "Nu inteleg comanda. Scrie ajutor.\n";
          }
 +        if (!esteViu(g.j)) {
-+            cout << "\nAi pierdut. Jocul s-a terminat.\n";
++            cout << "\nAi pierdut. Jocul este gata.\n";
 +            g.gata = true;
 +        }
      }
@@ -918,7 +918,7 @@ void afiseazaTitlu() {
 
 void afiseazaPoveste() {
     cout << "\nDemult, un rege intelept a ascuns o comoara in Turnul castelului.\n";
-    cout << "Cheia comorii a fost luata de un goblin, care s-a ascuns in pivnita.\n";
+    cout << "Cheia comorii a fost luata de un goblin, care a fugit in pivnita.\n";
     cout << "Tu esti eroul care trebuie sa gaseasca cheia si sa deschida cufarul.\n";
 }
 
@@ -1140,7 +1140,7 @@ void joaca(Joc &g) {
             cout << "Nu inteleg comanda. Scrie ajutor.\n";
         }
         if (!esteViu(g.j)) {
-            cout << "\nAi pierdut. Jocul s-a terminat.\n";
+            cout << "\nAi pierdut. Jocul este gata.\n";
             g.gata = true;
         }
     }
@@ -1297,10 +1297,10 @@ La revedere!
 ## Proiect / exerciții de finalizat AZI
 
 ### Exercițiul A — Joc_L45.cpp (obligatoriu)
-Scrie programul din Exemplul 12, pornind de la `Joc_L44.cpp`. Joacă-l de mai multe ori: o dată cu sabia, o dată fără, o dată încercând să fugi. Observă cum se schimbă lupta.
+Scrie programul din Exemplul 12, pornind de la `Joc_L44.cpp`. Joacă jocul de mai multe ori: o dată cu sabia, o dată fără, o dată încercând să fugi. Observă cum se schimbă lupta.
 
 ### Exercițiul B — Monstrul tău
-Schimbă monstrul: dă-i alt nume, altă viață, alt atac și o recompensă (de exemplu „Pirat fantomă”, viață 20, atac 5). Echilibrează lupta, ca să poată fi câștigată, dar să nu fie prea ușoară.
+Schimbă monstrul: dă monstrului alt nume, altă viață, alt atac și o recompensă (de exemplu „Pirat fantomă”, viață 20, atac 5). Echilibrează lupta, ca să poată fi câștigată, dar să nu fie prea ușoară.
 
 ### Exercițiul C — Mesaje de luptă
 Adaugă mai multe mesaje pentru lovituri, alese după valoarea loviturii (de exemplu „Lovitură slabă”, „Lovitură puternică!” pentru valori mari).
@@ -1349,7 +1349,7 @@ Pune un al doilea monstru într-o altă cameră (de exemplu, un schelet în turn
 - `srand((unsigned)time(0));` se apelează o singură dată, la începutul programului.
 - `struct Monstru` ține numele, viața, atacul și recompensa monstrului.
 - O luptă este o buclă care rulează cât timp ambii luptători sunt în viață.
-- Meniul de luptă: `1` ataci, `2` bei o poțiune, `3` fugi; `continue` păstrează tura când n-ai poțiune.
+- Meniul de luptă: `1` ataci, `2` bei o poțiune, `3` fugi; `continue` păstrează tura când nu ai poțiune.
 - Sabia din rucsac adaugă `3` la atacul eroului (`atacTotal`).
 
 ---
@@ -1364,7 +1364,7 @@ Pune un al doilea monstru într-o altă cameră (de exemplu, un schelet în turn
 ---
 
 ## Temă
-1. Termină Exercițiul A și joacă-l până reușești să câștigi și să pierzi măcar o dată.  
+1. Termină Exercițiul A și joacă jocul până reușești să câștigi și să pierzi măcar o dată.  
 2. Notează într-un tabel cât de grea a fost lupta (ușoară, potrivită, grea) și ajustează valorile ca să fie potrivită.  
 3. Desenează pe hârtie **magazinul**: ce produse vinde (cel puțin 4), cât costă fiecare și ce face.  
 4. Salvează tot ca `Joc_L45.cpp`.

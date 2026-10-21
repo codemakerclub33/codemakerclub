@@ -13,7 +13,7 @@ La finalul orei jocul are un magazin cu patru produse. Eroul poate cumpăra (dac
 **Ținta orei (Complet):** meniul magazinului, `vinde`, produsele care îți dau bonusuri și integrarea în joc.
 
 ## De ce contează
-Orice aplicație cu cumpărare funcționează la fel: o listă de produse, o verificare („ai destui bani?”) și o modificare a stării (bani mai puțini, obiect în plus). Tabloul de produse, cu două tablouri „paralele” (nume și preț), este o tehnică simplă pe care ai folosit-o și în Modulul 2. Fii atent la **validări**: un magazin care te lasă să cumperi fără bani sau să vinzi ce nu ai este un magazin stricat.
+Orice aplicație cu cumpărare funcționează la fel: o listă de produse, o verificare („ai destui bani?”) și o modificare a stării (bani mai puțini, obiect în plus). Tabloul de produse, cu două tablouri „paralele” (nume și preț), este o tehnică simplă, folosită și în Modulul 2. Fii atent la **validări**: un magazin care te lasă să cumperi fără bani sau să vinzi ce nu ai este un magazin stricat.
 
 ---
 
@@ -85,7 +85,7 @@ int main() {
     cout << "Ai " << monede << " monede. Vrei sa cumperi: " << produs << " (" << pret << ")\n";
     if (monede >= pret) {
         monede -= pret;
-        cout << "Cumparat! Ti-au ramas " << monede << " monede.\n";
+        cout << "Cumparat! Mai ai " << monede << " monede.\n";
     } else {
         cout << "Nu ai destule monede.\n";
     }
@@ -95,7 +95,7 @@ int main() {
     cout << "Vrei sa cumperi: " << produs << " (" << pret << ")\n";
     if (monede >= pret) {
         monede -= pret;
-        cout << "Cumparat! Ti-au ramas " << monede << " monede.\n";
+        cout << "Cumparat! Mai ai " << monede << " monede.\n";
     } else {
         cout << "Nu ai destule monede (iti trebuie " << pret << ", ai " << monede << ").\n";
     }
@@ -106,7 +106,7 @@ int main() {
 **Ieșire:**
 ```
 Ai 20 monede. Vrei sa cumperi: Scut (12)
-Cumparat! Ti-au ramas 8 monede.
+Cumparat! Mai ai 8 monede.
 Vrei sa cumperi: Amuleta (20)
 Nu ai destule monede (iti trebuie 20, ai 8).
 ```
@@ -573,7 +573,7 @@ Nu ai Elixir.
 
 ### Exemplul 9 — Oferta zilei *(Provocare, opțional)*
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
 Un negustor poate avea o ofertă: un produs ales la întâmplare costă cu jumătate mai puțin. Aici prețul este calculat dintr-un zar:
 
@@ -693,7 +693,7 @@ Amuleta - 20 monede
 
 Pornim de la **Joc_L45.cpp**. Adăugăm: constantele `NR_PRODUSE`, `PRODUS`, `PRET` și `CAMERA_SALA`, funcțiile `aparare`, `pretVanzare`, `cumpara`, `vinde` și `magazin`, o ramură pentru `Elixir` în `foloseste`, bonusul amuletei în `atacTotal` și comanda `magazin` în `joaca`. În `lupta`, loviturile monstrului țin acum cont de apărare.
 
-Iată ce s-a **schimbat** față de lecția trecută (`+` = linii de adăugat, `-` = linii de șters, `...` = restul codului rămâne la fel):
+Iată ce este **nou** față de lecția trecută (`+` = linii de adăugat, `-` = linii de șters, `...` = restul codului rămâne la fel):
 
 ```diff
 ...
@@ -1025,7 +1025,7 @@ void afiseazaTitlu() {
 
 void afiseazaPoveste() {
     cout << "\nDemult, un rege intelept a ascuns o comoara in Turnul castelului.\n";
-    cout << "Cheia comorii a fost luata de un goblin, care s-a ascuns in pivnita.\n";
+    cout << "Cheia comorii a fost luata de un goblin, care a fugit in pivnita.\n";
     cout << "Tu esti eroul care trebuie sa gaseasca cheia si sa deschida cufarul.\n";
 }
 
@@ -1317,7 +1317,7 @@ void joaca(Joc &g) {
             cout << "Nu inteleg comanda. Scrie ajutor.\n";
         }
         if (!esteViu(g.j)) {
-            cout << "\nAi pierdut. Jocul s-a terminat.\n";
+            cout << "\nAi pierdut. Jocul este gata.\n";
             g.gata = true;
         }
     }
@@ -1502,7 +1502,7 @@ Fiecare produs are un stoc (de exemplu, 2 poțiuni). Când stocul ajunge la `0`,
 
 | Ce vezi | Cauza | Corect |
 |---------|-------|--------|
-| Poți cumpăra și când n-ai monede | Lipsește verificarea | `if (j.monede < PRET[i]) { … return; }` |
+| Poți cumpăra și când nu ai monede | Lipsește verificarea | `if (j.monede < PRET[i]) { … return; }` |
 | Produsul greșit este cumpărat | Ai confundat numărul din meniu (de la 1) cu poziția (de la 0) | `cumpara(j, optiune - 1)` |
 | Monedele devin negative | Ai scăzut înainte să verifici | Verifici întâi, scazi apoi |
 | Cheia se vinde și jocul nu mai poate fi terminat | Lipsește regula pentru cheie | `if (nume == "Cheie") { … return; }` |
