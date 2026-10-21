@@ -292,6 +292,8 @@ Cere unui adult din familie să facă sarcinile din Exemplul 6 pe site-ul tău. 
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) cu `F12`, apoi iconița cu telefon și tabletă sau `Ctrl + Shift + M` (pe Mac `Cmd + Shift + M`); (2) „nu s-a găsit”: fișierul sau imaginea lipsește; (3) pentru că nu toți oamenii folosesc mouse-ul, iar așa vedem dacă totul merge și dacă se vede focusul; (4) pentru că reparația poate strica altceva sau problema poate rămâne.  
+- **Dacă ritmul clasei este lent:** Lighthouse este opțional pentru grupele mici.  
 - **Exercițiul A:** pentru evaluare: raport cu cel puțin 5 probleme, fiecare cu pagină, descriere, reparație și retestare; site-ul funcționează pe 375 px și cu tastatura.  
 - **Exercițiul B:** nu are răspuns corect; este pentru elev.  
 - **Exercițiul C:** (1) problema este prea vagă („Nu merge”) și nu spune pe ce pagină; (2) reparația (ștergerea regulii `@media`) strică în loc să repare, iar retestarea arată că problema a rămas, deci nu poate fi marcată ca rezolvată; (3) fișierul a fost redenumit în `G3.JPG` fără să se schimbe `src` și, pe un server, majusculele contează; trebuie păstrat numele din HTML (`g3.jpg`) sau schimbate ambele.  

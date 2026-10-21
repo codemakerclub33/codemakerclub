@@ -341,7 +341,7 @@ Pe foaie, în două propoziții: ce face HTML, ce face CSS și ce face JavaScrip
 ## Bonus / Provocare (dacă ai terminat)
 - [ ] Scrie despre **mâncarea ta preferată** în trei paragrafe  
 - [ ] Deschide DevTools cu **F12** și caută paragraful tău în fila **Elements**  
-- [ ] Deschide „Vezi sursa” pe pagina unui coleg (cu Live Server pornit) și găsește numele lui  
+- [ ] Deschide „Vezi sursa” (Ctrl + U) pe o pagină de pe internet și găsește tagul `<title>`  
 
 ---
 
@@ -351,9 +351,9 @@ Pe foaie, în două propoziții: ce face HTML, ce face CSS și ce face JavaScrip
 3. **Ai pus spații sau diacritice în numele fișierului** — `pagina mea.html` poate da probleme. Folosește `pagina-mea.html`.  
 4. **Live Server nu pornește** — verifică dacă ai deschis **folderul** (File → Open Folder), nu doar un fișier.  
 5. **Ai scris textul în afara `<body>`** — în `<head>` nu apare nimic în pagină.
-5. **Ai uitat tagul de închidere** — `<p>` fără `</p>`.  
-6. **Ai scris `<\p>` în loc de `</p>`** — liniuța înclinată este `/`, ca în „și/sau”.  
-7. **Ai crezut că Enter face rând nou** — folosește `<br>` sau un nou `<p>`.  
+6. **Ai uitat tagul de închidere** — `<p>` fără `</p>`.  
+7. **Ai scris `<\p>` în loc de `</p>`** — liniuța înclinată este `/`, ca în „și/sau”.  
+8. **Ai crezut că Enter face rând nou** — folosește `<br>` sau un nou `<p>`.  
 
 ---
 
@@ -379,3 +379,13 @@ Fă o pagină `index.html` despre **animalul tău preferat** (sau despre un loc 
 
 ## Ce urmează — Lecția 2
 Cunoaștem **scheletul folosit azi**, bucată cu bucată: `html`, `head`, `body`, `title` și `meta`. Înveți de ce există fiecare și cum scrii scheletul și fără ajutorul `!` + Tab.
+
+---
+
+## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) VS Code (Visual Studio Code); (2) HTML; (3) în `<body>`; (4) este tagul de închidere: spune că paragraful se termină aici; (5) pentru că nu ai salvat fișierul (**Ctrl + S**); (6) cu `<br>` sau cu un `<p>` nou, pentru că Enter nu face rând nou în HTML.  
+- **Dacă ritmul clasei este lent:** puteți sări peste Exemplul 8 („Vezi sursa”) și peste partea cu F12; se pot face la lecția următoare sau ca bonus.  
+- **Exercițiul B:** `<h1>Salut</h1>` apare ca titlu mare cu textul „Salut”; comentariul nu apare deloc în pagină; `<p>Lume</p>` apare dedesubt ca paragraf cu textul „Lume”.  
+- **Exercițiul C:** un singur `<p>` cu patru versuri, fiecare urmat de `<br>` (în afară de ultimul), de exemplu `<p>Plouă mărunt peste sat,<br>Eu scriu cod și sunt încântat,<br>Pagina mea e gata azi,<br>Hai să o vedem, copii!</p>`; orice poezie de patru versuri, fiecare pe rând nou, este acceptată.  
+- **Exercițiul D:** (1) `<h1>Pisica mea<h1>` trebuie să se închidă cu `</h1>`; (2) lipsește `</p>` după „Se numește Mițu.”; (3) `<\p>` trebuie scris `</p>` (liniuța înclinată este `/`).  
+- **Exercițiul E:** HTML face structura paginii (scheletul: titluri, text, poze); CSS face aspectul (culori, fonturi, aranjare); JavaScript face comportamentul (ce se întâmplă la click).  

@@ -204,13 +204,13 @@ const PODEA = INALTIME - INALTIME_IARBA;
 ```javascript
 // ===== Fizica =====
 const GRAVITATIE = 900;      // cât de repede ia viteză în jos (pixeli pe secundă, pe secundă)
-const PIERDERE_LA_SALT = 0.8; // la fiecare sărit, mingea păstrează 80% din viteză
+const PIERDERE_LA_SALT = 0.8; // la fiecare săritură, mingea păstrează 80% din viteză
 ```
 
 - `getContext("2d")` ne dă creionul pentru desen 2D.  
 - Iarba are 40 de pixeli la bază, deci **podeaua** (`PODEA`) este la `INALTIME - 40`, adică 320.  
 - `GRAVITATIE`: cât de repede ia viteză mingea în jos. 900 înseamnă că în fiecare secundă viteza în jos crește cu 900 de pixeli pe secundă.  
-- `PIERDERE_LA_SALT`: la fiecare sărit, mingea păstrează 80% din viteză, deci sare tot mai puțin.
+- `PIERDERE_LA_SALT`: la fiecare săritură, mingea păstrează 80% din viteză, deci sare tot mai puțin.
 
 **Încearcă tu (5 min)**  
 - [ ] Scrie cele două secțiuni  
@@ -390,7 +390,7 @@ function cadru(timp) {
 - `dt > 0.05`: dacă fila a stat ascunsă o vreme, următorul `dt` ar fi uriaș și mingea ar „zbura”. Limităm pasul la 0,05 secunde.  
 - La prima rulare `timpAnterior` este `null`, așa că îl punem egal cu `timp` și primul `dt` este 0.
 
-Atenție: scrii `requestAnimationFrame(cadru)` **fără paranteze** (dai funcția, nu o apelezi). Cu paranteze, `cadru()` s-ar apela imediat, iar apoi s-ar apela din nou și din nou, fără sfârșit, și pagina ar îngheța.
+Atenție: scrii `requestAnimationFrame(cadru)` **fără paranteze** (dai funcția, nu o apelezi). Cu paranteze, `cadru()` s-ar apela imediat, iar apoi s-ar apela din nou și din nou, fără sfârșit, până când browserul oprește totul cu o eroare.
 
 ---
 
@@ -473,7 +473,7 @@ requestAnimationFrame(cadru);
 
 ```text
 □ Se văd cerul, iarba, soarele și mingea
-□ Mingea cade și sare tot mai puțin, apoi stă pe iarbă (nu tremură)
+□ Mingea cade și sare tot mai puțin, apoi rulează pe iarbă (nu tremură)
 □ Mingea se lovește de pereții din stânga și din dreapta și se întoarce
 □ „Pauză” oprește mingea, „Continuă” o pornește
 □ „Dă mingea sus” o aruncă în sus
@@ -539,9 +539,9 @@ Pe foaie: unde este punctul (0, 0) pe pânză și încotro crește y? De ce înm
 ---
 
 ## Greșeli frecvente
-1. **`requestAnimationFrame(cadru())`** cu paranteze: bucla se rupe sau pagina îngheață.  
+1. **`requestAnimationFrame(cadru())`** cu paranteze: bucla nu merge, iar în consolă apare o eroare (`Maximum call stack size exceeded`).  
 2. **Uitat `* dt`**: mingea se mișcă mult prea repede sau diferit pe calculatoare diferite.  
-3. **Semn greșit la sărit**: `vy * PIERDERE` fără minus nu inversează direcția.  
+3. **Semn greșit la săritură**: `vy * PIERDERE` fără minus nu inversează direcția.  
 4. **Uitat `clearRect`**: mingea lasă o dâră pe tot ecranul (dacă fundalul nu acoperă tot).  
 5. **y în jos**: crezi că -650 este în jos; de fapt este în sus.  
 6. **Mărimea pânzei schimbată din CSS** și clicul nepotrivit: de aceea convertim coordonatele.
@@ -569,8 +569,9 @@ Facem **Dino în deșert**, partea I: un dinozaur desenat de noi, care aleargă 
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) un cerc cu centrul în punctul (100, 50), cu raza 20, desenat de la unghiul 0 până la cercul întreg; (2) `dt` este timpul în secunde de la cadrul anterior; înmulțim vitezele cu el ca mingea să se miște la fel pe orice calculator; (3) pentru că dăm funcția, nu o apelăm; cu paranteze ar rula imediat, iar bucla nu ar merge; (4) ca să nu intre în iarbă și să aibă o poziție corectă pentru săritura următoare.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 9. Minimul de acceptare: scena desenată și mingea care cade și sare; pauza, butonul și clicul sunt ținta.  
 - **Exercițiul B:** nu are răspuns unic; verificați că elevul poate explica ce a schimbat.  
-- **Exercițiul C:** (1) gravitația fără `* dt`: `minge.vy + GRAVITATIE * dt`; (2) la sărit lipsește minusul: `-minge.vy * PIERDERE_LA_SALT`; (3) `requestAnimationFrame(cadru())` trebuie `requestAnimationFrame(cadru)`. Observație: `actualizeaza(0.016)` ignoră timpul real (nu este o greșeală de sintaxă, dar mișcarea ar depinde de calculator).  
+- **Exercițiul C:** (1) gravitația fără `* dt`: `minge.vy + GRAVITATIE * dt`; (2) la săritură lipsește minusul: `-minge.vy * PIERDERE_LA_SALT`; (3) `requestAnimationFrame(cadru())` trebuie `requestAnimationFrame(cadru)`. Observație: `actualizeaza(0.016)` ignoră timpul real (nu este o greșeală de sintaxă, dar mișcarea ar depinde de calculator).  
 - **Exercițiul D:** (0, 0) este colțul de sus-stânga, iar y crește în jos; `dt` face mișcarea la fel pe calculatoare rapide și lente; `clearRect` șterge cadrul vechi, altfel s-ar suprapune desenele.  
 - **Notă pentru profesor:** dacă mingea „tremură” pe iarbă, căutați pragul `Math.abs(minge.vy) < 40`. Dacă pânza este neclară pe telefon, discutați despre diferența dintre mărimea desenului (`width`/`height` din HTML) și mărimea afișată (CSS). Pentru elevii care întreabă „de ce înmulțim cu dt?”, folosiți exemplul două calculatoare, unul cu 30 de cadre pe secundă și altul cu 144: la același număr de pixeli pe cadru, unul ar fi de 5 ori mai rapid.

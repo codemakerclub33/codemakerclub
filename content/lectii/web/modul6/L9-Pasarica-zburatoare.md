@@ -559,7 +559,7 @@ panza.addEventListener("pointerdown", bateAripile);
 
 document.addEventListener("keydown", function (eveniment) {
   // Pe un buton, Spațiu și Enter funcționează deja ca un clic
-  if (eveniment.target.tagName === "BUTTON") {
+  if (eveniment.target.tagName === "BUTTON" && eveniment.code !== "ArrowUp") {
     return;
   }
 
@@ -574,7 +574,7 @@ requestAnimationFrame(cadru);
 
 La fel ca la Dino: butonul și pânza cheamă `bateAripile`, tastatura ascultă `Space` și `ArrowUp`, iar `preventDefault()` oprește derularea paginii.
 
-**Încearcă tu (25 min, pentru Exemplele 6–7)**  
+**Încearcă tu (17 min, pentru Exemplele 6–7)**  
 - [ ] Scrie secțiunile rămase  
 - [ ] Prima apăsare pornește jocul și păsărica urcă?  
 - [ ] Țevile vin spre păsărică cu spații la înălțimi diferite?  
@@ -682,6 +682,8 @@ Proiectul final al modulului: **Colecția mea de jocuri**. O pagină principală
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) limităm `cx` între marginile stângă și dreaptă ale dreptunghiului și `cy` între marginile de sus și de jos: `Math.max(rx, Math.min(cx, rx + rl))` și `Math.max(ry, Math.min(cy, ry + ri))`; (2) ca să nu folosim radicalul: comparăm pătratele, ceea ce este mai simplu; (3) scorul ar crește de zeci de ori pentru aceeași țeavă; (4) la Păsărică ciocnirea este cerc cu dreptunghi (la Dino, dreptunghi cu dreptunghi), păsărica poate bate din aripi oricând (Dino sare doar de pe sol), iar jocul se termină și când atinge iarba.  
+- **Dacă ritmul clasei este lent:** dați elevilor HTML-ul și CSS-ul gata; formula cu Pitagora pentru ciocnire se dă ca fragment, iar copiii o testează cu tabelul.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 8. Minimul: păsărica care cade și urcă, plus țevile; ținta: restul listei.  
 - **Exercițiul B:** nu are răspuns unic; verificați că elevul poate explica ce a schimbat și cum a afectat jocul.  
 - **Exercițiul C:** (1) ordinea trebuie să fie `Math.max(rx, Math.min(cx, rx + rl))` și `Math.max(ry, Math.min(cy, ry + ri))`; (2) trebuie `< raza * raza` (comparăm pătratele); (3) lipsește minusul: `pasare.vy = -VITEZA_BATAIE`.  

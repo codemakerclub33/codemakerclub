@@ -403,7 +403,7 @@ Pe foaie: ce este o variabilă? Care este diferența dintre `let` și `const`? D
 ---
 
 ## Bonus / Provocare (dacă ai terminat)
-- [ ] Fă un „cos de cumpărături”: preț, cantitate și total (`pret * cantitate`)  
+- [ ] Fă un „coș de cumpărături”: preț, cantitate și total (`pret * cantitate`)  
 - [ ] Schimbă între ele valorile a două variabile, folosind o a treia variabilă ajutătoare  
 - [ ] Calculează aria unui dreptunghi (`lungime * latime`) și perimetrul lui  
 - [ ] Afișează `typeof` pentru o variabilă fără valoare (`let x;`) și spune ce observi  
@@ -448,6 +448,7 @@ Scrie un program „Magazinul meu de jocuri”: o constantă cu numele magazinul
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) creează o variabilă numită `scor` și pune în ea valoarea `0`; (2) când valoarea nu se schimbă (de exemplu numele jocului); (3) afișează textul `scor`, nu valoarea variabilei; (4) mărește valoarea lui `scor` cu 1; (5) `boolean` (adevărat/fals).  
 - **Exercițiul B:** (1) `7`; (2) `14` (10 − 3 = 7, apoi 7 × 2); (3) `2` (1, 2, 3, apoi 2); (4) `16`.  
 - **Exercițiul C:** (1) `let vieti = 3; vieti--;` (sau `vieti -= 1;`); (2) `const nume = "Luna"; console.log("Salut, " + nume + "!");` sau `` console.log(`Salut, ${nume}!`); ``; (3) `let pret = 20; pret *= 2; console.log(pret);`.  
 - **Exercițiul D:** (1) `2jucatori` începe cu o cifră (de exemplu `jucatori2`); (2) `pi` este `const` și nu poate fi schimbat (se șterge linia `pi = 3.15;`); (3) `console.log("nume")` afișează cuvântul `nume`; trebuie `console.log(nume)`.  

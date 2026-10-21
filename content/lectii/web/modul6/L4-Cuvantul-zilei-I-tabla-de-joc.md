@@ -399,7 +399,7 @@ for (const tastePeRand of randuriTaste) {
 - `randuriTaste` este o listă de **3 rânduri**, fiecare cu o listă de taste. Primul rând are literele de sus ale tastaturii (QWERTYUIOP), al doilea de la mijloc, iar al treilea are și tastele speciale `ENTER` și `BACKSPACE` (ștergere).  
 - `creazaTasta(valoare)` face un buton. Tastele speciale au text „Enter” și „⌫”, clasa `mare` și, pentru ștergere, un `aria-label` („Șterge litera”) ca să o înțeleagă și cititorul de ecran.  
 - Fiecare literă este salvată și în `taste`, ca să o găsim mai târziu și să o colorăm.  
-- La apăsarea unui buton se apelează `apasaTasta(valoare)`. O scriem în exemplul 7; până atunci o apăsare dă eroare în consolă (este normal).
+- La apăsarea unui buton se apelează `apasaTasta(valoare)`. O scriem în exemplul 8; până atunci o apăsare dă eroare în consolă (este normal).
 
 **Încearcă tu (15 min)**  
 - [ ] Scrie secțiunea  
@@ -631,6 +631,7 @@ Terminăm **Cuvântul zilei**: jocul alege un cuvânt secret în fiecare zi, ver
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) căsuța din primul rând, a cincea coloană (ultima din rând), pentru că numărăm de la 0; (2) face litera mare; (3) pentru că `coloana` arată următoarea căsuță goală, deci trebuie să ne întoarcem la ultima literă scrisă, abia apoi o golim; (4) ține minte dacă jocul s-a terminat; dacă este `true`, tastele nu mai fac nimic.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 9. Minimul de acceptare: tabla și scrierea literelor în căsuțe; tastatura de pe ecran și Enter sunt ținta.  
 - **Exercițiul B:** nu are răspuns unic; verificați că elevul își dă seama că schimbarea lungimii cere și o schimbare în CSS.  
 - **Exercițiul C:** (1) `r <= INCERCARI` trebuie `r < INCERCARI`; (2) `coloana <= LUNGIME` trebuie `coloana < LUNGIME`; (3) la ștergere, `coloana` trebuie scăzută **înainte** de a goli căsuța.  

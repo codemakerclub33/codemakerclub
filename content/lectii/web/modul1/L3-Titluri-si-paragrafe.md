@@ -61,7 +61,7 @@ HTML are **șase titluri**, de la cel mai mare la cel mai mic: `h1`, `h2`, `h3`,
 <h6>Titlu 6</h6>
 ```
 
-În browser, `h1` este cel mai mare și cel mai îngroșat, iar `h6` cel mai mic. Pe măsură ce numărul crește, titlul devine mai mic.
+În browser, `h1` este cel mai mare, iar `h6` cel mai mic. Pe măsură ce numărul crește, titlul devine mai mic.
 
 > Titlurile se scriu **întotdeauna cu tag de deschidere și de închidere**: `<h2>` … `</h2>`. Numărul din tagul de deschidere trebuie să fie **același** cu cel din închidere.
 
@@ -173,7 +173,7 @@ Oricâte spații sau Enter-uri pui între cuvinte, browserul le arată ca **un s
 <p>Am urcat pe munte și am văzut norii de aproape.</p>
 ```
 
-Observă: după fiecare titlu urmează cel puțin un paragraf. Un titlu fără text sub el rămâne gol și nu ajută pe nimeni.
+Observă: după fiecare titlu urmează text (un paragraf) sau un titlu mai mic. Un titlu fără nimic sub el rămâne gol și nu ajută pe nimeni.
 
 ### Exemplul 9 — Semne speciale: `<` și `>`
 
@@ -239,7 +239,7 @@ Povestea ta trebuie să fie despre **tine**: schimbă toate textele cu ale tale.
 
 **Gata când:**  
 - [ ] Pagina are un singur `<h1>`, mai multe `<h2>` și cel puțin un `<h3>`  
-- [ ] Sub fiecare titlu există un paragraf  
+- [ ] Sub fiecare titlu urmează text sau un titlu mai mic  
 
 ---
 
@@ -281,7 +281,7 @@ Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 ```
 
 ### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: de ce nu folosim `h1` pentru orice text pe care vrem să facem textul mare?
+Pe foaie: de ce nu folosim `h1` pentru orice text care trebuie să arate mare?
 
 **Gata când:**  
 - [ ] Folderul și fișierul se numesc corect: `Prenume_Nume_W1_L3` și `index.html`  
@@ -320,7 +320,7 @@ Pe foaie: de ce nu folosim `h1` pentru orice text pe care vrem să facem textul 
 
 ## Quiz scurt
 - Care titlu este cel mai mare?  
-- Câte `h1` pune de obicei într-o pagină?  
+- Câte `h1` pui de obicei într-o pagină?  
 - Ce face `<br>`?  
 - Cum scrii în pagină semnul `<`?  
 - Unde pui mai multe idei diferite: în același paragraf sau în paragrafe noi?
@@ -334,7 +334,9 @@ Fă o pagină `index.html` despre **un loc unde ai fost în vacanță** (sau pe 
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) `h1`; (2) de obicei unul singur; (3) rupe rândul, dar rămâi în același paragraf (nu are tag de închidere); (4) `&lt;`; (5) în paragrafe noi, câte un `<p>` pentru fiecare idee.  
+- **Dacă ritmul clasei este lent:** Exemplul 9 (semnele speciale `<` și `>`) este opțional; îl puteți face doar cu grupele rapide.  
 - **Exercițiul B:** `Sporturile mele (h1)`, `Sporturi de echipă (h2)`, `Fotbal în echipă (h3)`, `Antrenamentul de luni (h4)`.  
 - **Exercițiul C:** (1) `<br>`; (2) `<p>` nou; (3) `<br>`.  
 - **Exercițiul D:** (1) `h4` ar trebui să fie `h2` (nu se sare peste niveluri); (2) lipsește `</p>` după „doarme mult.”; (3) al doilea `<h1>` — pagina are un singur `h1` (se poate înlocui cu `<h2>`).  
-- **Exercițiul E:** titlul se alege după importanță, nu după mărime; cititoarele de ecran și cititorii se orientează după ele; mărimea se schimbă cu CSS.
+- **Exercițiul E:** titlul se alege după importanță, nu după mărime; programele care citesc pagina cu voce tare și cei care o parcurg repede se orientează după titluri; mărimea se schimbă cu CSS.

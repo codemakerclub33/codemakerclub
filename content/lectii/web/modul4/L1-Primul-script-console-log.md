@@ -10,7 +10,7 @@
 ## Obiectiv
 La finalul orei știi ce este JavaScript, cum legi un fișier `script.js` de o pagină, cum deschizi consola, cum afișezi text și numere cu `console.log`, cum scrii comentarii și cum citești un mesaj de eroare.  
 **Minim:** un `script.js` legat de `index.html` care afișează în consolă 3 rânduri.  
-**Ținta orei (Complet):** + text și numere, un calcul, comentarii, o fereastră cu `alert`, o eroare provocată și reparată, plus explicarea diferenței dintre HTML, CSS și JavaScript.
+**Ținta orei (Complet):** + text și numere, calcule, comentarii, o fereastră cu `alert`, o eroare provocată și reparată, plus explicarea diferenței dintre HTML, CSS și JavaScript.
 
 ## De ce contează
 JavaScript este limbajul care pune pagina în mișcare. Aproape orice joc sau aplicație de pe un site funcționează cu el. Primul pas este să înveți să dai comenzi calculatorului și să vezi ce răspunde.
@@ -275,7 +275,7 @@ Scrie propria prezentare, cu alte lucruri. Nu pune **date personale** (nume comp
 
 **Gata când:**  
 - [ ] Programul scrie cel puțin 6 rânduri în consolă  
-- [ ] Are text, numere, un calcul și două comentarii  
+- [ ] Are text, numere, două calcule și două comentarii  
 - [ ] Nu apar mesaje roșii de eroare  
 - [ ] Nu ai pus date personale  
 
@@ -363,6 +363,7 @@ Scrie un program care afișează un „carnet de note” al jocurilor tale prefe
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) JavaScript dă comportament paginii: calculează, ia decizii și răspunde la click; (2) `console.log(3 + 4);` afișează `7`, iar `console.log("3 + 4");` afișează textul `3 + 4`; (3) apăsând F12 (sau clic dreapta, „Inspect”) și alegând fila Console; (4) o notiță pentru oameni, scrisă cu `//` sau `/* … */`, pe care calculatorul o ignoră; (5) eroarea este în fișierul `script.js`, la rândul 5.  
 - **Exercițiul B:** (1) `10`; (2) `8 + 2` (text); (3) `Am 12 mere`; (4) `5`.  
 - **Exercițiul C:** (1) `console.log("Bună ziua!");`; (2) `console.log(9 * 9);` (rezultă 81); (3) `console.log("Am", 7, "prieteni");`.  
 - **Exercițiul D:** (1) `consol` trebuie `console`; (2) lipsește ghilimeaua de închidere după `Ana`; (3) `Console` trebuie `console` (litera mică).  

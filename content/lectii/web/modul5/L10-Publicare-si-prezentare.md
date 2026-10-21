@@ -165,7 +165,7 @@ Pregătește o prezentare în care **arăți** site-ul, nu doar vorbești despre
 Sfaturi:
 - Exersează o dată cu un coleg, cu ceasul în mână.  
 - Pregătește **pagina deschisă** înainte. Nu pierde timp căutând fișiere.  
-- Dacă ceva nu merge în timpul prezentării, spune calm ce credeți că s-a întâmplat. Și programatorii adevărați au astfel de momente.  
+- Dacă ceva nu merge în timpul prezentării, spune calm ce crezi că s-a întâmplat. Și programatorii adevărați au astfel de momente.  
 - Vorbește către public, nu către ecran.
 
 **Încearcă tu (25 min)**  
@@ -202,7 +202,7 @@ Apoi completează autoevaluarea, cu **DA / PARȚIAL / NU**:
 □ Pot explica cu cuvintele mele cum merge fiecare parte
 ```
 
-Pentru fiecare „PARȚIAL” sau „NU” scrie un pas concret pentru a-l face „DA”.
+Pentru fiecare „PARȚIAL” sau „NU” scrie un pas concret ca să devină „DA”.
 
 **Gata când:**  
 - [ ] Folderul final este curat și verificat  
@@ -270,6 +270,7 @@ Arată familiei site-ul tău, pe calculator sau pe telefon, și povestește fami
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) un calculator mereu pornit și conectat la internet, care arată site-ul lumii; (2) pentru că serviciile de găzduire caută pagina principală cu acest nume, în rădăcină; (3) acord scris de la părinte sau tutore, contul făcut de un adult, adresa fără numele complet al copilului, lista „înainte de publicare” trecută, profesorul a spus „da” și se știe cine îl poate șterge, și cum; (4) prezentăm site-ul local și păstrăm folderul, pentru că am învățat aceleași lucruri.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 2 și lista din Exemplul 5. Minimul de acceptare: folder curat, 3 pagini funcționale, fără date personale, și o prezentare scurtă cu demonstrație.  
 - **Exercițiul B:** nu are răspuns corect; este pentru elev. Notați lecțiile pe care elevul vrea să le repete.  
 - **Exercițiul C:** (1) numele școlii în subsol este dată personală; (2) imaginile de pe internet pot avea drepturi de autor și nu sunt ale elevului; (3) `galerie.html` în link și `Galerie.HTML` pe disc: pe server pagina nu se va găsi; (4) elevul vrea să publice singur, cu contul lui: publicarea se face cu un adult, cu acord scris și cu aprobarea profesorului. Elevul trebuie să șteargă numele școlii, să folosească imagini proprii sau din pachetul media, să redenumească fișierul `galerie.html` și să ceară ajutorul unui adult.  

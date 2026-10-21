@@ -239,16 +239,16 @@ if (zi === "sâmbătă" || zi === "duminică") {
 ### Exemplul 8 — `!` înseamnă „nu”
 
 ```javascript
-let plouă = false;
+let ploua = false;
 
-if (!plouă) {
+if (!ploua) {
   console.log("Mergem la fotbal în curte!");
 } else {
   console.log("Rămânem în casă și jucăm un joc de masă.");
 }
 ```
 
-`!` **întoarce** răspunsul: `!true` este `false`, iar `!false` este `true`. Cât timp `plouă` este `false`, `!plouă` este `true`, deci „Mergem la fotbal”.
+`!` **întoarce** răspunsul: `!true` este `false`, iar `!false` este `true`. Cât timp `ploua` este `false`, `!ploua` este `true`, deci „Mergem la fotbal”.
 
 Poți combina operatorii, cu **paranteze** ca să fie clar:
 
@@ -390,7 +390,7 @@ if (numarSecret % 2 === 0) {
 
 `Math.abs(…)` dă **valoarea absolută**: distanța fără semn (de exemplu `Math.abs(5 - 8)` și `Math.abs(8 - 5)` dau amândouă `3`). Aici îl folosim ca să aflăm cât de departe ai fost, indiferent dacă ai greșit în sus sau în jos.
 
-Reîncarcă pagina și joacă de mai multe ori: de fiecare dată calculatorul alege alt număr. Poți adapta jocul: alt interval, alte mesaje, alt subiect (de exemplu „la ce animal mă gândesc: 1 pisică, 2 câine, 3 pește”).
+Reîncarcă pagina și joacă de mai multe ori: de fiecare dată calculatorul alege alt număr. Acum ai o singură încercare la fiecare rulare; în lecția 6, cu `while`, vei avea mai multe încercări. Poți adapta jocul: alt interval, alte mesaje, alt subiect (de exemplu „la ce animal mă gândesc: 1 pisică, 2 câine, 3 pește”).
 
 **Gata când:**  
 - [ ] Calculatorul alege un număr aleator cu `Math.random`  
@@ -498,6 +498,8 @@ Fă un „Meniu al cafenelei”: cu `switch`, utilizatorul alege 1 (limonadă), 
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) `=` pune o valoare în variabilă, iar `===` compară două valori („este egal cu?”); (2) se sare, deoarece se execută exact unul dintre cele două blocuri; (3) se execută primul bloc adevărat, deci condiția cea mai strictă trebuie scrisă prima; (4) `&&` înseamnă „și” (ambele condiții adevărate), iar `||` înseamnă „sau” (cel puțin una adevărată); (5) `break` oprește `switch`-ul, ca să nu continue cu cazul următor; (6) `numar >= 1 && numar <= 20`.  
+- **Dacă ritmul clasei este lent:** `switch` și explicația despre `NaN` sunt opționale; în proiect puteți renunța la `Math.abs` și la mesajul „Foarte aproape”.  
 - **Exercițiul B:** (1) `false`; (2) `false` (litera mare contează); (3) `A`; (4) `A` (a doua parte este adevărată); (5) `C` (a doua condiție nu se mai verifică).  
 - **Exercițiul C:** (1) `if (nota >= 5) { console.log("Ai trecut"); } else { console.log("Mai încearcă"); }`; (2) `if (varsta < 13) { … } else if (varsta <= 17) { … } else { … }`; (3) `let n = Number(prompt("Număr:")); if (n % 2 === 0 && n % 3 === 0) { … }`.  
 - **Exercițiul D:** (1) `varsta = 10` trebuie `varsta === 10`; (2) ordinea condițiilor: `nota >= 9` trebuie înaintea lui `nota >= 5`, altfel „Foarte bine” nu apare niciodată; (3) `||` trebuie `&&` (cu `||` condiția este mereu adevărată).  

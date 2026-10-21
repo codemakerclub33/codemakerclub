@@ -127,7 +127,7 @@ Culori bune pentru fundal, care nu obosesc ochii: `lightyellow`, `lightblue`, `l
 
 Scrii regulile **una după alta**, fiecare terminată cu `;`. Aici titlul are text alb și fundal albastru închis.
 
-> Regulă: **un `;` după fiecare regulă**. Dacă îl uiți, a doua regulă nu mai funcționează.
+> Regulă: **între reguli pui `;`**. Dacă îl uiți, a doua regulă nu mai funcționează. Pune `;` și după ultima regulă, ca obicei.
 
 **Încearcă tu (4 min)**  
 - [ ] Pune un fundal deschis pe `<body>`  
@@ -209,7 +209,7 @@ Textul și fundalul trebuie să fie **foarte diferite** ca strălucire: una **î
 </body>
 ```
 
-O culoare pusă pe `<body>` se aplică și **tuturor tag-urilor din interior**, ca o moștenire. Un tag poate avea însă **propria culoare**, care o înlocuiește pe cea primită: al doilea paragraf rămâne roșu.
+O culoare pusă pe `<body>` se aplică și **textului din interior**, ca o moștenire (linkurile își păstrează culoarea lor). Un tag poate avea însă **propria culoare**, care o înlocuiește pe cea primită: al doilea paragraf rămâne roșu.
 
 **Încearcă tu (4 min)**  
 - [ ] Alege o culoare cu cod `#` (cu paleta din VS Code sau din internet) și folosește culoarea la un titlu  
@@ -236,12 +236,12 @@ O culoare pusă pe `<body>` se aplică și **tuturor tag-urilor din interior**, 
   <h2 style="color: green;">Ce cresc în grădină</h2>
   <ul>
     <li style="color: crimson;">Roșii</li>
-    <li style="color: orange;">Morcovi</li>
+    <li style="color: darkorange;">Morcovi</li>
     <li style="color: purple;">Vinete</li>
   </ul>
 
   <h2 style="color: navy;">Cum arată</h2>
-  <p>Cerul este <span style="color: skyblue;">albastru</span>, soarele este <span style="color: gold;">auriu</span> și frunzele sunt <span style="color: limegreen;">verzi</span>.</p>
+  <p>Cerul este <span style="color: steelblue;">albastru</span>, soarele este <span style="color: darkgoldenrod;">auriu</span> și frunzele sunt <span style="color: forestgreen;">verzi</span>.</p>
 
   <hr>
   <p style="font-size: 14px; color: gray;">Pagină făcută de Ana.</p>
@@ -347,6 +347,8 @@ Legăm **mai multe pagini** într-un mic site, cu un meniu de linkuri pe care î
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) `style="color: blue;"`; (2) colorează fundalul elementului (pe `<body>`, toată pagina); (3) `<span>`; (4) cu `#` și 6 caractere, de exemplu `#ff6347`; (5) pentru că cele două culori sunt prea apropiate ca strălucire și textul nu se mai citește.  
+- **Dacă ritmul clasei este lent:** Exemplul 7 (culori cu cod `#`) și Exemplul 9 (moștenirea culorii) sunt opționale; rămâneți la culorile cu nume și la contrast.  
 - **Exercițiul B:** (1) text albastru închis pe fundal galben deschis; (2) text alb pe fundal negru.  
 - **Exercițiul C:** (1) `style="color: blue;"`; (2) `style="color: black; background-color: yellow;"`; (3) `style="text-align: center; font-size: 30px;"`.  
 - **Exercițiul D:** (1) `color = blue` trebuie `color: blue`; (2) lipsește `;` între `yellow` și `color`; (3) `<h1>` se închide cu `</h1>`, nu cu `</p>`.  

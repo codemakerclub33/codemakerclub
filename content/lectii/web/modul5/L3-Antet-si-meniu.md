@@ -145,7 +145,7 @@ Mai adaugă, **la sfârșitul `<body>`, în fiecare pagină**, linia care încar
 }
 ```
 
-Și, sub ele, scrie din nou regulile pentru subsol, care au fost șterse mai sus:
+Subsolul și-a pierdut culoarea de fundal. Înlocuiește regulile `.subsol` și `.subsol p` care existau deja cu acestea:
 
 ```css
 .subsol {
@@ -163,7 +163,7 @@ Mai adaugă, **la sfârșitul `<body>`, în fiecare pagină**, linia care încar
 Ce face fiecare:
 - `position: sticky; top: 0;` lipește antetul de marginea de sus când derulezi. `z-index` îl ține deasupra restului.  
 - `.antet-rand` este rândul Flexbox: logo în stânga, meniu în dreapta (`space-between`).  
-- `list-style: none` scoate buline de pe lista de linkuri, iar `display: flex` le pune pe un rând.  
+- `list-style: none` scoate bulinele de pe lista de linkuri, iar `display: flex` le pune pe un rând.  
 - `a[aria-current="page"]` alege linkul care are acest atribut și îi pune un chenar alb: vezi unde ești.  
 - `.buton-meniu { display: none; }`: pe calculator butonul **nu se vede**.
 
@@ -348,6 +348,8 @@ Facem **secțiunea de intrare** (hero): titlul mare, o frază și un buton, cu t
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) lipește antetul de marginea de sus când derulezi pagina; (2) elementul care are și clasa `meniu`, și clasa `deschis` (fără spațiu între ele); (3) `true` dacă a pus clasa, `false` dacă a scos clasa; (4) pentru că un buton adevărat se poate apăsa și cu tastatura și este înțeles de cititoarele de ecran.  
+- **Dacă ritmul clasei este lent:** verificarea `if (... !== null)` și valoarea returnată de `toggle` se prezintă ca rețetă, fără explicații.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 5.  
 - **Exercițiul B:** nu are răspuns unic; verificați că modificările se văd și nu strică meniul.  
 - **Exercițiul C:** (1) lipsește `:` în `(max-width 700px)` (corect: `(max-width: 700px)`); (2) `querySelector("butonMeniu")` trebuie `"#butonMeniu"`; (3) `toggle(".deschis")` trebuie `toggle("deschis")`. Mai sunt probleme secundare: `meniu` nu este definit în codul dat și un `display: none` fără `;` final este permis, dar neîngrijit.  

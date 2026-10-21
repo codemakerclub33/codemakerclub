@@ -64,7 +64,7 @@ body.intunecat {
 }
 ```
 
-Dacă `<body>` are clasa `intunecat`, aceste variabile le **înlocuiesc** pe cele din `:root`. Pentru că **toate** culorile paginii sunt scrise cu `var(--...)`, schimbăm tema cu o singură clasă. De aceea am pus culorile în variabile încă din lecția 2!
+Dacă `<body>` are clasa `intunecat`, aceste variabile le **înlocuiesc** pe cele din `:root`. Pentru că **aproape toate** culorile paginii sunt scrise cu `var(--...)`, schimbăm tema cu o singură clasă. De aceea am pus culorile în variabile încă din lecția 2!
 
 Și stilul butonului, lângă butonul de meniu:
 
@@ -373,6 +373,8 @@ Testăm site-ul pe **telefon** și facem o verificare completă: linkuri, imagin
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) când `<body>` are clasa `intunecat`, variabilele ei le înlocuiesc pe cele din `:root`, deci pagina trece la paleta întunecată; (2) încearcă codul din `try`, iar dacă apare o eroare, execută `catch`, fără să oprească tot scriptul; (3) câți pixeli a derulat pagina de sus; (4) cu `window.matchMedia("(prefers-reduced-motion: reduce)").matches`, care este `true` dacă omul a cerut mișcare redusă.  
+- **Dacă ritmul clasei este lent:** `try…catch` și `matchMedia` sunt bonus pentru grupele mici.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 6.  
 - **Exercițiul B:** nu are răspuns unic; verificați că textul rămâne citibil în ambele teme.  
 - **Exercițiul C:** (1) `toggle(".intunecat")` trebuie `toggle("intunecat")`; (2) `localStorage.setItem("tema")` are nevoie și de valoare (`setItem("tema", "intunecat")`); (3) `scrollY > 300` trebuie `scrollY < 300` pentru `hidden`.  

@@ -57,7 +57,7 @@ Prenume_Nume_W1_L8/
   hobby.html
 ```
 
-- Prima pagină a unui site se numește **`index.html`**. Este „ușa de intrare”, iar browserele o caută prima.  
+- Prima pagină a unui site se numește **`index.html`**. Este „ușa de intrare”, iar serverul o deschide prima.  
 - Celelalte pagini au nume scurte, cu litere mici, fără spații și fără diacritice: `despre.html`, `hobby.html`.  
 - Toate paginile din același folder se leagă între ele **doar cu numele fișierului**.
 
@@ -180,7 +180,7 @@ Din `pagini/despre.html` ieși cu `../` („un folder mai sus”):
 
 ### Exemplul 6 — Când linkul nu merge
 
-Dacă apasă pe link și vezi „**404**”, „Cannot GET” sau o pagină goală, browserul **nu a găsit fișierul**. Verifică, pe rând:
+Dacă apeși pe link și vezi „**404**”, „Cannot GET” sau o pagină goală, browserul **nu a găsit fișierul**. Verifică, pe rând:
 
 1. Numele din `href` este **exact** ca numele fișierului (litere mici, cu `.html`)?  
 2. Ai scris `despre.html`, nu `despre.htm` sau `despre`?  
@@ -361,6 +361,7 @@ Fă un site cu **patru pagini** despre **animalul tău preferat** (sau un alt su
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) `index.html`; (2) `<a href="despre.html">Despre mine</a>`; (3) „un folder mai sus”; (4) browserul nu a găsit fișierul: verifici numele din `href`, extensia `.html`, folderul, salvarea și bara `/`; (5) ca vizitatorul să poată ajunge oriunde din orice pagină.  
 - **Exercițiul B:** (1) deschide `pagini/despre.html` (același folder); (2) deschide `index.html`, din folderul de deasupra; (3) deschide imaginea `pisica.jpg` din folderul `imagini`, aflat lângă `index.html`.  
 - **Exercițiul C:** din `index.html`: `<a href="pagini/galerie.html">Galerie</a>`; din `pagini/galerie.html`: `<a href="../index.html">Acasă</a>`.  
 - **Exercițiul D:** (1) nume cu spațiu și cu litere mari: `Despre Mine.html` (fișier corect: `despre_mine.html`); (2) `.htm` în loc de `.html`; (3) lipsesc ghilimelele la `href`.  

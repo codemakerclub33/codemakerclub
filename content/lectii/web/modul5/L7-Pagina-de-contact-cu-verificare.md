@@ -208,7 +208,7 @@ if (formular !== null) {
 }
 ```
 
-- `arataEroare(camp, elementEroare, mesaj)` este o funcție care **scrie mesajul** sub câmp și **adaugă sau scoate** clasa `invalid`. Dacă `mesaj` este un text gol (`""`), eroarea dispare (`mesaj !== ""` este `false`, deci clasa se scoate). O scriem **o singură dată** și o folosim de 6 ori.  
+- `arataEroare(camp, elementEroare, mesaj)` este o funcție care **scrie mesajul** sub câmp și **adaugă sau scoate** clasa `invalid`. Dacă `mesaj` este un text gol (`""`), eroarea dispare (`mesaj !== ""` este `false`, deci clasa se scoate). O scriem **o singură dată** și o folosim de mai multe ori.  
 - Evenimentul `input` se declanșează la **fiecare literă** scrisă.  
 - `` `${mesaj.value.length} / 300` ``: un text cu o valoare în mijloc (între caractere backtick, ca în lecțiile despre text).  
 - Tot codul este în `if (formular !== null)`: pe celelalte pagini nu există formular.
@@ -240,7 +240,7 @@ if (formular !== null) {
 
     // Porecla
     if (textPorecla.length < 3) {
-      arataEroare(porecla, eroarePorecla, "Porecla trebuie să aibă cel puțin 3 litere.");
+      arataEroare(porecla, eroarePorecla, "Porecla trebuie să aibă cel puțin 3 caractere.");
       erori = erori + 1;
     } else if (arePosibileDatePersonale(textPorecla)) {
       arataEroare(porecla, eroarePorecla, "Nu scrie email sau număr de telefon.");
@@ -386,6 +386,8 @@ Adăugăm detalii care fac diferența: **modul întunecat** care se ține minte 
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) taie spațiile de la începutul și de la sfârșitul textului; (2) un șir de cel puțin 6 cifre una după alta (ca într-un număr de telefon); (3) oprește trimiterea formularului și reîncărcarea paginii; (4) ca să putem vedea dacă omul nu a ales nimic.  
+- **Dacă ritmul clasei este lent:** numărătorul de caractere este bonus; regexul se dă gata, fără explicații.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 5.  
 - **Exercițiul B:** nu are răspuns unic; verificați că formularul rămâne corect.  
 - **Exercițiul C:** (1) `addEventListener("click", ...)` pe formular; trebuie `"submit"` și `eveniment.preventDefault()`; (2) `trim` fără paranteze (trebuie `trim()`); (3) `innerHTML` cu text de la vizitator (trebuie `textContent`). Observație: lipsește și `preventDefault()`.  

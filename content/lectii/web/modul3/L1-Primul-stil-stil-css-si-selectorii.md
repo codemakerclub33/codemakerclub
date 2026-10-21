@@ -13,7 +13,7 @@ La finalul orei știi să legi o pagină la un fișier `stil.css`, să scrii o r
 **Ținta orei (Complet):** + o regulă cu mai mulți selectori separați prin virgulă, o regulă pentru elementele din interiorul unei clase, comentarii în CSS și o explicație pentru cine câștigă între tag, clasă și id.
 
 ## De ce contează
-Imaginează-ți un site cu 20 de pagini. Dacă vrei să schimbi culoarea titlurilor și stilul stă în fiecare pagină, trebuie să deschizi 20 de fișiere. Dacă stilul stă într-un singur `stil.css`, schimbi un rând și **toate paginile se schimbă deodată**. Așa lucrează toți oamenii care fac site-uri.
+Un site poate avea 20 de pagini. Dacă vrei să schimbi culoarea titlurilor și stilul stă în fiecare pagină, trebuie să deschizi 20 de fișiere. Dacă stilul stă într-un singur `stil.css`, schimbi un rând și **toate paginile se schimbă deodată**. Așa lucrează toți oamenii care fac site-uri.
 
 ---
 
@@ -331,7 +331,7 @@ Aici paragrafele sunt portocalii, pentru că ultima regulă câștigă.
 
 ### Exemplul 10 — Comentarii și „Pagina mea cu fișier de stil”
 
-În CSS, un comentariu se scrie între `/*` și `*/`. Calculatorul îl ignoră, iar tu îl folosești ca să-ți notezi lucruri:
+În CSS, un comentariu se scrie între `/*` și `*/`. Browserul îl ignoră, iar tu îl folosești ca să notezi lucruri:
 
 ```css
 /* Culorile paginii */
@@ -485,7 +485,7 @@ Pe foaie: de ce este mai bine să ai stilul într-un fișier `stil.css` decât �
 - [ ] Fă încă o pagină `despre.html` care folosește **același** `stil.css` și vezi cum arată la fel  
 - [ ] Schimbă o culoare în `stil.css` și verifică în ambele pagini că s-a schimbat  
 - [ ] Adaugă o clasă `.rara` cu alt fundal și pune clasa împreună cu `carte` la o cutie (`class="carte rara"`)  
-- [ ] Deschide DevTools (**F12**), fila **Elements**, apasă pe un paragraf și uită-te în panoul **Styles**: vezi în ce fișier este scrisă fiecare regulă  
+- [ ] Deschide DevTools (**F12**), fila **Elements**, apasă pe un paragraf și privește panoul **Styles**: vezi în ce fișier este scrisă fiecare regulă  
 
 ---
 
@@ -527,6 +527,7 @@ Fă un site mic cu **două pagini** (`index.html` și `despre.html`) despre **an
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) cu `<link rel="stylesheet" href="stil.css">` în `<head>`; (2) pentru clasă punct (`.important`), pentru id diez (`#titlu`); (3) aplică aceeași regulă și titlurilor `<h1>`, și titlurilor `<h2>`; (4) roșu, pentru că id bate clasa, iar clasa bate tagul; (5) între `/*` și `*/`, de exemplu `/* Culorile paginii */`.  
 - **Exercițiul B:** primul paragraf albastru; al doilea verde; al treilea roșu (id bate clasa, iar clasa bate tagul).  
 - **Exercițiul C:** (1) `h2 { color: purple; }`; (2) `.nota { color: gray; font-size: 14px; }`; (3) `#titlu { text-align: center; }`.  
 - **Exercițiul D:** (1) lipsește `{` după `p`; (2) `carte` fără punct trebuie `.carte`; (3) lipsește `;` după `blue`.  

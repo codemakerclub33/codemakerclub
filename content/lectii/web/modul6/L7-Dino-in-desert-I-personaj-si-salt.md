@@ -370,7 +370,7 @@ panza.addEventListener("pointerdown", sari);
 
 document.addEventListener("keydown", function (eveniment) {
   // Pe un buton, Spațiu și Enter funcționează deja ca un clic
-  if (eveniment.target.tagName === "BUTTON") {
+  if (eveniment.target.tagName === "BUTTON" && eveniment.code !== "ArrowUp") {
     return;
   }
 
@@ -384,7 +384,7 @@ requestAnimationFrame(cadru);
 ```
 
 - Butonul și pânza (la atingere sau clic: `pointerdown`) cheamă `sari`.  
-- La tastatură ascultăm pe tot documentul. Dacă apăsarea vine de la un **buton** (`eveniment.target.tagName === "BUTTON"`), nu facem nimic în plus: Spațiu și Enter apasă deja butonul, iar dacă nu am ieși din funcție, aceeași apăsare ar fi numărată de două ori: o dată de buton și o dată de tastatură.  
+- La tastatură ascultăm pe tot documentul. Dacă apăsarea vine de la un **buton** (`eveniment.target.tagName === "BUTTON"`) și nu este săgeata în sus, nu facem nimic în plus: Spațiu și Enter apasă deja butonul, iar dacă nu am ieși din funcție, aceeași apăsare ar fi numărată de două ori: o dată de buton și o dată de tastatură.  
 - `eveniment.code` ne dă tasta fizică: `"Space"` sau `"ArrowUp"`.  
 - `eveniment.preventDefault()` oprește comportamentul obișnuit al tastei. Fără el, Spațiu ar **derula pagina** în jos.  
 - Ultima linie pornește bucla.
@@ -501,6 +501,7 @@ Terminăm jocul: apar **cactuși** pe care trebuie să îi sari, jocul numără 
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) pe sol, pentru că `SOL` este 180 și picioarele ating solul; (2) pentru că în sus înseamnă `y` mai mic, deci viteza trebuie să fie negativă; (3) dinozaurul ar putea sări și din aer, deci ar putea zbura prin apăsări repetate; (4) pentru că Spațiu și Enter apasă deja butonul, iar altfel aceeași apăsare ar fi numărată de două ori.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 7. Minimul: dinozaurul desenat pe sol; ținta: săritura corectă și comenzile.  
 - **Exercițiul B:** nu are răspuns unic; verificați că elevul poate explica ce a schimbat.  
 - **Exercițiul C:** (1) `=` trebuie `>=`: `dino.y + dino.inaltime >= SOL`; (2) săritura are nevoie de minus: `dino.vy = -VITEZA_SALT`; (3) `dino.y = SOL - dino.inaltime`, nu `SOL`, pentru că `y` este partea de sus.  

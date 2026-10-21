@@ -20,7 +20,7 @@ Un proiect adevărat te obligă să folosești lucrurile învățate **împreun�
 ## Siguranță înainte de toate
 - Alege un subiect **sigur și potrivit pentru copii**: animale, sport, jocuri, spațiu, geografie, matematică.  
 - Nu cere și nu afișa **date personale** (nume complet, adresă, școală, telefon).  
-- Întrebările trebuie să aibă un **răspuns corect clar**; cere unui adult să verifice întrebările sau cu o sursă bună.  
+- Întrebările trebuie să aibă un **răspuns corect clar**; cere unui adult să verifice întrebările sau caută răspunsurile într-o sursă bună.  
 - Nu copia întrebări sau imagini din surse de pe internet fără să le rescrii cu cuvintele tale.  
 - Tot ce se întâmplă rămâne în browserul tău: pagina **nu trimite** nimic nicăieri.
 
@@ -303,7 +303,7 @@ Ce se întâmplă:
 
 **Încearcă tu (6 min)**  
 - [ ] Scrie funcția `arataIntrebarea` și cheamă funcția la sfârșit cu `arataIntrebarea();`  
-- [ ] Verifică dacă apar întrebarea și cele 3 butoane (apăsarea lor nu face încă nimic și este normal)  
+- [ ] Verifică dacă apar întrebarea și cele 3 butoane (dacă apeși pe ele, în consolă apare eroarea `alegeRaspuns is not defined`; este normal, pentru că funcția urmează)  
 - [ ] Dacă apar erori roșii în consolă, citește mesajele (probabil o greșeală de `id` sau de scriere)  
 
 ---
@@ -440,7 +440,7 @@ Spune colegilor, în ordine:
 1. „Testul meu este despre …”  
 2. „Am făcut … întrebări; cea mai grea este …”  
 3. „Cel mai mândru sunt de …” (o parte a paginii)  
-4. „Cel mai greu mi s-a părut …, și l-am rezolvat așa: …”  
+4. „Cel mai greu mi s-a părut …, iar soluția a fost: …”  
 5. „Dacă aș mai avea timp, aș adăuga …”  
 
 Lasă un coleg să joace testul. Colegul îți spune **un lucru reușit** și **un lucru care se poate îmbunătăți** (cu politețe).
@@ -458,7 +458,7 @@ Lasă un coleg să joace testul. Colegul îți spune **un lucru reușit** și **
 Folderul `Prenume_Nume_W4_L10` are `index.html`, `stil.css` și `script.js`, cu tot ce este în **lista de verificare** din Exemplul 7.
 
 ### Exercițiul B — Autoevaluare
-Pe foaie, notează de la 1 la 5 cât de bine ai înțeles fiecare lecție din modul (console.log, variabile, numere și text, decizii, mai multe condiții, `for`, `while`, funcții, liste, obiecte, DOM și evenimente). Scrie două lecții pe care vrei să le mai repeți.
+Pe foaie, notează de la 1 la 5 cât de bine ai înțeles fiecare lecție din modul (console.log, variabile, numere și text, decizii, `for`, `while`, funcții, liste și obiecte, DOM și evenimente). Scrie două lecții pe care vrei să le mai repeți.
 
 ### Exercițiul C — Găsește greșelile
 Găsește **3 greșeli** în codul de mai jos și repară greșelile.
@@ -535,6 +535,8 @@ Construim un **site complet** din mai multe pagini, cu meniu, galerie și formul
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) un obiect cu `text` (întrebarea), `optiuni` (lista de răspunsuri) și `corect` (poziția răspunsului corect, numărând de la 0); (2) la ce întrebare suntem, adică poziția în lista de întrebări; (3) după primul răspuns `amRaspuns` devine `true`, iar `alegeRaspuns` iese din funcție cu `return`; (4) cu `if` / `else if` după scor: scor egal cu total înseamnă „Excelent”, cel puțin jumătate înseamnă „Foarte bine”, altfel „Mai încearcă”; (5) ascunde butonul „Următoarea”.  
+- **Dacă ritmul clasei este lent:** dați elevilor CSS-ul gata (fișier de copiat); ei scriu doar `script.js`.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 7. Minimul de acceptare: cel puțin 4 întrebări într-o listă de obiecte, butoane create din JavaScript, scor corect și mesaj final. Dacă elevul nu termină, acceptați un test cu 3 întrebări care funcționează complet.  
 - **Exercițiul B:** nu are răspuns corect; este pentru elev. Notați lecțiile pe care le cere repetate și reveniți la ele.  
 - **Exercițiul C:** (1) `corect: 2` nu există la două opțiuni (trebuie `1`); (2) `pozitie = …` trebuie `pozitie === …`; (3) `i <= …length` trebuie `i < …length`.  

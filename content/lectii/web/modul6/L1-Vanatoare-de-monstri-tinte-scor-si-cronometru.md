@@ -535,6 +535,7 @@ Facem un **clicker**: apeși pe o monedă ca să câștigi monede, cumperi îmbu
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) un număr întreg de la 0 la 8 (exact pozițiile celor 9 vizuini); (2) pentru că vrem să dăm funcția ceasului, nu să o apelăm acum; cu paranteze ar rula o singură dată, imediat; (3) oprește ceasul pornit cu `setInterval`, ca funcția să nu se mai repete; (4) ca să nu pornească mai multe ceasuri deodată dacă apeși de mai multe ori.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 7. Minimul de acceptare: grilă de vizuini, monstru care apare în locuri diferite, scor corect și buton de start; dacă elevul nu termină, acceptați și un joc fără cronometru care merge complet.  
 - **Exercițiul B:** nu are răspuns unic; verificați că jocul merge după schimbări.  
 - **Exercițiul C:** (1) `joculMerge = true` este atribuire; trebuie `joculMerge && numar === pozitieMonstru`; (2) lipsește `Math.floor`: `Math.floor(Math.random() * NR_VIZUINI)`; (3) `setInterval(arataMonstru(), 800)` apelează funcția imediat; corect: `setInterval(arataMonstru, 800)`.  

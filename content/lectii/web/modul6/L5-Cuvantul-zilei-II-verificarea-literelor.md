@@ -33,7 +33,7 @@ Verificarea literelor pare simplă, dar are o capcană (literele repetate). A o 
 | 0–10 | Recapitulare: ce avem din lecția 4 |
 | 10–25 | Lista de cuvinte și cuvântul zilei (**Exemplele 1–2**) |
 | 25–55 | Algoritmul de verificare (**Exemplul 3**) |
-| 55–80 | Colorăm căsuțele și tastele, câștig sau pierdere (**Exemplul 4**) |
+| 55–80 | Colorăm căsuțele și tastele, câștig sau pierdere (**Exemplele 3–4**) |
 | 80–95 | Testăm algoritmul pe cazuri grele (**Exemplul 5**) |
 | 95–110 | Verificarea jocului (**Exemplul 6**) |
 | 110–120 | Recap și temă |
@@ -91,8 +91,8 @@ const secret = CUVINTE[numarZi % CUVINTE.length].toUpperCase();
 
 Cum merge:
 1. `new Date()` este data de azi. `.getFullYear()`, `.getMonth()` și `.getDate()` dau anul, luna (de la 0 la 11) și ziua din lună.  
-2. Din ele facem **un singur număr** care este **diferit în fiecare zi**: `an × 372 + lună × 31 + zi`. (Numerele 372 și 31 sunt alese ca să nu se suprapună zilele.) Mâine, numărul este mai mare cu 1.  
-3. `numarZi % CUVINTE.length` este **restul împărțirii** la numărul de cuvinte. Dacă lista are 42 de cuvinte, restul este un număr între 0 și 41, deci o poziție bună în listă. Cum numărul zilei crește cu 1 în fiecare zi, cuvântul se schimbă în fiecare zi, iar după ce trec toate, se reia.  
+2. Din ele facem **un singur număr** care este **diferit în fiecare zi**: `an × 372 + lună × 31 + zi`. (Numerele 372 și 31 sunt alese ca să nu se suprapună zilele.) Mâine, numărul este de obicei mai mare cu 1.  
+3. `numarZi % CUVINTE.length` este **restul împărțirii** la numărul de cuvinte. Dacă lista are 42 de cuvinte, restul este un număr între 0 și 41, deci o poziție bună în listă. Cum numărul zilei este diferit de la o zi la alta, cuvântul se schimbă în fiecare zi, iar după ce trec toate, se reia.  
 4. `toUpperCase()` face cuvântul cu litere mari, ca să se potrivească cu literele de pe tablă.
 
 Toți cei care joacă în aceeași zi pe același site au **același cuvânt**, fără ca să fie nevoie de un server.
@@ -268,7 +268,7 @@ Un algoritm bun se verifică pe cazuri **grele**. Pentru test, schimbă temporar
 const secret = "LAPTE";
 ```
 
-Apoi scrie, pe rând, aceste încercări și compară cu tabelul (v = verde, g = galben, x = gri):
+Pentru rândurile cu secretul `CARTE` sau `ROBOT`, schimbă `secret` cu acel cuvânt și reîncarcă pagina. Apoi scrie, pe rând, aceste încercări și compară cu tabelul (v = verde, g = galben, x = gri):
 
 | Secret | Încercare | Rezultat așteptat |
 |--------|-----------|-------------------|
@@ -279,7 +279,7 @@ Apoi scrie, pe rând, aceste încercări și compară cu tabelul (v = verde, g =
 
 Explicații scurte:
 - **LAPTE / LELEA:** L este verde. Un singur E în cuvânt: primul E din încercare este galben, al doilea este gri. A este galben.  
-- **CARTE / TERAC:** niciuna nu este la locul ei, dar a treia literă, R, este verde (la locul ei în ambele cuvinte). Celelalte sunt în cuvânt, în alt loc.  
+- **CARTE / TERAC:** doar a treia literă, R, este verde (la locul ei în ambele cuvinte). Celelalte sunt în cuvânt, dar în alt loc.  
 - **ROBOT / BOBBY:** a doua literă (O) și a treia (B) sunt la locul lor. B-ul din cuvânt a fost „folosit”, deci primul și al patrulea B sunt gri.
 
 După test, **pune la loc** linia originală (cu `CUVINTE[...]`).
@@ -399,6 +399,7 @@ Trecem la **Canvas**: o pânză pe care desenăm cu JavaScript și pe care mișc
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) dă `-1`; (2) `x v v x x` (primul `B` gri, `O` verde, `B` verde, al patrulea `B` gri, `Y` gri); (3) dă restul împărțirii la 42, adică un număr de la 0 la 41, o poziție bună în lista de cuvinte; (4) ca să nu se vadă cuvântul secret în consolă: linia a fost doar pentru teste.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 6. Minimul de acceptare: cuvânt secret din listă, litere colorate verde, galben sau gri, mesaj de câștig; tratarea corectă a literelor repetate și cuvântul zilei sunt ținta.  
 - **Exercițiul B:** nu are răspuns unic; verificați că toate cuvintele au 5 litere, fără diacritice, și sunt potrivite pentru copii.  
 - **Exercițiul C:** (1) `incercare[i] = secret[i]` este atribuire; trebuie `===`; (2) lipsește „consumarea” literelor: `ramase[i] = null` în trecerea 1 și `ramase[pozitie] = null` în trecerea 2, ceea ce dă rezultate greșite pentru literele repetate; (3) condiția `pozitie === -1` este inversă: trebuie `pozitie !== -1` pentru `"prezent"`.  

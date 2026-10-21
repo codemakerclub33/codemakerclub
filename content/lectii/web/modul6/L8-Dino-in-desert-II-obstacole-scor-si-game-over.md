@@ -18,7 +18,7 @@ Aproape orice joc are **obstacole**, **ciocniri** și **sfârșit**. Ciocnirea d
 ---
 
 ## Siguranță înainte de toate
-- **Corect pentru jucător:** cactușii vin la distanțe care **permit săritura** (distanța crește odată cu viteza), iar ciocnirea iertae câțiva pixeli la margini.  
+- **Corect pentru jucător:** cactușii vin la distanțe care **permit săritura** (distanța crește odată cu viteza), iar ciocnirea iartă câțiva pixeli la margini.  
 - După Game over, jocul **așteaptă o clipă** ca să nu reîncepi din greșeală dacă apeși repede.  
 - Niciun mesaj nu face rău: „Game over! Scorul tău: 120.” și „Mai încerc”, fără jigniri.  
 - Recordul se salvează doar ca **număr** în browser, fără date personale.  
@@ -551,6 +551,8 @@ Facem **Păsărica zburătoare**: o pasăre care bate din aripi, țevi prin care
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) se suprapun și pe orizontală, și pe verticală; (2) toate cele patru condiții trebuie să fie adevărate în același timp; cu `||` rezultatul ar fi mereu `true` și jocul s-ar termina imediat; (3) lista ar crește la nesfârșit și jocul ar încetini; (4) ca jocul nou să nu înceapă cu cactușii vechi.  
+- **Dacă ritmul clasei este lent:** dați elevilor `script.js` complet, ca să nu piardă timp cu înlocuirea secțiunilor din Lecția 7.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 7. Minimul: cactuși care vin și o ciocnire care oprește jocul; ținta: restul listei.  
 - **Exercițiul B:** nu are răspuns unic; verificați că elevul poate explica ce a schimbat și cum a afectat jocul.  
 - **Exercițiul C:** (1) la ciocnire trebuie `&&` între toate cele patru condiții: `... && josDino > susCactus && susDino < SOL`; cu `||` rezultatul este mereu `true` (pentru că `susDino < SOL` este mereu adevărat), deci jocul se termină imediat; (2) condiția de curățare trebuie `> 0`: `cactus.x + cactus.latime > 0` (păstrăm ce este încă pe ecran); (3) recordul se actualizează când scorul este **mai mare**: `scorFinal > record`.  

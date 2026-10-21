@@ -360,7 +360,7 @@ Pe foaie: de ce `"5" + 3` dă `53`? Ce face `%` și la ce folosește? Ce tip de 
 2. **Ai scris `.Length`** cu L mare — rezultatul este `undefined`; corect este `.length`.  
 3. **Ai scris `.toUppercase()`** — corect este `.toUpperCase()`, cu U mare în mijloc.  
 4. **Ai uitat parantezele** la `toUpperCase` — fără ele nu se execută.  
-5. **Zarul iese 0 sau 6.5** — ai uitat `Math.floor` sau `+ 1`.  
+5. **Zarul iese cu zecimale** (de exemplu 3.72) — ai uitat `Math.floor`.  
 6. **Ai scris `Math.floor(Math.random() * 6)`** fără `+ 1` — iese de la 0 la 5.  
 7. **Numerele cu zecimale** — scrie `3.5`, nu `3,5`.  
 8. **`NaN` în rezultat** — ai transformat în număr un text care nu este număr.  
@@ -388,11 +388,13 @@ Pe foaie: de ce `"5" + 3` dă `53`? Ce face `%` și la ce folosește? Ce tip de 
 Scrie un program „Joc de ghicit norocul”: aruncă un zar, cere utilizatorului un număr de la 1 la 6 cu `prompt`, apoi afișează ambele numere (comparația o înveți în lecția următoare). Salvează în `Prenume_Nume_W4_L3`.
 
 ## Ce urmează — Lecția 4
-Învățăm **decizii**: `if` și `else`, ca programul să aleagă ce face în funcție de situație.
+Învățăm **decizii**: `if`, `else`, `else if`, „și / sau / nu” (`&&`, `||`, `!`) și `switch`, ca programul să aleagă ce face în funcție de situație.
 
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) `1` (restul împărțirii lui 10 la 3); (2) `Math.floor(Math.random() * 6) + 1`; (3) `3`; (4) pentru că `"2"` și `"3"` sunt texte, iar `+` lipește textele; (5) cu `Number(…)`, de exemplu `Number("5")`.  
+- **Dacă ritmul clasei este lent:** `**`, `Math.max` / `Math.min`, `toFixed`, `replace` și `repeat` sunt opționale; rămâneți la operatori, `Math.random`, `Math.floor` și metodele de text de bază.  
 - **Exercițiul B:** (1) `2`; (2) `72` (text lipit); (3) `8`; (4) `6`; (5) `PISICA`; (6) `8`.  
 - **Exercițiul C:** (1) `console.log(4729 % 10);` (rezultă 9); (2) `Math.floor(Math.random() * 10) + 1`; (3) `console.log("programare".slice(0, 4));` (rezultă `prog`).  
 - **Exercițiul D:** (1) lipsește `Number(…)` la `prompt`, deci `a + b` lipește textele; (2) `Math.random() * 6` dă un zecimal între 0 și 6; trebuie `Math.floor(Math.random() * 6) + 1`; (3) `.Length` trebuie `.length`.  

@@ -141,7 +141,7 @@ Scrie scheletul și meniul **o singură dată**, în `index.html`. Copiază sche
   <li>joc fotbal cu prietenii</li>
 </ul>
 
-<h2 style="color: navy;">Un lucru despre care sunt mândră</h2>
+<h2 style="color: navy;">Un lucru la care țin mult</h2>
 <p>Am învățat să scriu o pagină web <strong>de la zero</strong>!</p>
 ```
 
@@ -255,7 +255,7 @@ Pregătește o prezentare de **un minut**. Poți folosi acest plan:
 4. „Cel mai greu lucru a fost … și am rezolvat așa: …”  
 5. „Ce vreau să învăț mai departe: …”
 
-> Dacă ai ceva care nu merge, spune și asta: „Am o greșeală pe pe care nu am reușit să o repar”. Nimeni nu are un cod perfect, iar a vorbi despre greșeli este o parte din meserie.
+> Dacă ai ceva care nu merge, spune și asta: „Am o greșeală pe care nu am reușit să o repar”. Nimeni nu are un cod perfect, iar a vorbi despre greșeli este o parte din meserie.
 
 **Gata când:**  
 - [ ] Ai pregătit prezentarea de un minut  
@@ -273,7 +273,7 @@ Mini-site cu minimum 3 pagini (`index.html`, `despre.html`, `preferate.html`), m
 Pe foaie, pune câte o notă de la 1 la 5 pentru fiecare: ordinea codului, aspectul paginilor, linkurile, imaginile, textul scris de tine. Scrie ce vei face mai bine data viitoare.
 
 ### Exercițiul C — Fișa greșelilor
-Scrie pe foaie trei greșeli făcute în acest modul și cum ai găsit sau ai reparat fiecare greșeală.
+Scrie pe foaie trei greșeli făcute în acest modul și cum ai găsit și cum ai reparat fiecare greșeală.
 
 ### Exercițiul D — Întrebări pentru profesor
 Scrie două întrebări despre HTML la care nu ai primit încă răspuns. Vor fi folosite în Modulul 2.
@@ -319,7 +319,7 @@ Ai învățat să creezi o pagină cu schelet, titluri și paragrafe, text îngr
 - Cum cauți o greșeală pas cu pas?
 
 ## Temă
-Alege **un lucru de îmbunătățit** din feedbackul colegului sau din lista de verificare și repară-l. Notează pe foaie ce ai schimbat. Adu la ora următoare, în folderul `Prenume_Nume_W1_L10`, versiunea finală.
+Alege **un lucru de îmbunătățit** din feedbackul colegului sau din lista de verificare și corectează acel lucru. Notează pe foaie ce ai schimbat. Adu la ora următoare, în folderul `Prenume_Nume_W1_L10`, versiunea finală.
 
 ## Ce urmează — Modulul 2: HTML II
 Învățăm lucruri noi: **tabele**, **formulare**, **audio și video**, **taguri cu înțeles** și **clase** pentru organizarea paginii. Sunt pașii spre un site cu adevărat complet.
@@ -327,6 +327,7 @@ Alege **un lucru de îmbunătățit** din feedbackul colegului sau din lista de 
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz final de modul:** (1) HTML = structura (scheletul), CSS = aspectul (culori, fonturi), JavaScript = comportamentul (ce se întâmplă la click); (2) `</html>` (ultimul tag deschis se închide primul); (3) `<a href="despre.html">Despre mine</a>`; (4) `<img src="imagini/poza.jpg" alt="descriere">`; `alt` spune în cuvinte ce se vede, apare dacă imaginea nu se încarcă și este citit pentru cei care nu văd; (5) cu `style="background-color: lightyellow;"` pe `<body>`; (6) „un folder mai sus”; (7) salvezi, citești ce vezi, cauți mai sus de locul efectului, verifici lista de suspecți (tag neînchis, ghilimele, nume de fișier, `:` și `;`), schimbi un singur lucru odată sau comentezi bucăți de cod.  
 - **Evaluare sugerată (20 puncte):** schelet corect în fiecare pagină (3); meniu identic și funcțional (3); titluri și paragrafe (2); cele două tipuri de liste (2); imagini cu `alt` care se văd (3); culori consecvente și citibile (2); cod indentat și comentarii (2); fără date personale (1); prezentare (2).  
 - **Siguranță:** verificați înainte de orice prezentare publică să nu existe date personale și poze cu fețe. Folosiți desene sau avatare.  
 - **Greșeli frecvente la verificare:** un singur `<h1>` pe pagină, `alt` la fiecare imagine, nume de fișiere cu litere mici, fără spații.  

@@ -174,7 +174,7 @@ Combinația `justify-content: center;` plus `align-items: center;` pune un eleme
 }
 ```
 
-`gap` pune spațiu **între** elemente, fără să-ți umple marginile din exterior și fără să calculezi `margin` pentru fiecare. Poți scrie `gap: 10px 20px;` (întâi între rânduri, apoi între coloane).
+`gap` pune spațiu **între** elemente, fără să umple marginile din exterior și fără să calculezi `margin` pentru fiecare. Poți scrie `gap: 10px 20px;` (întâi între rânduri, apoi între coloane).
 
 ### Exemplul 6 — `flex-wrap`: treci pe rândul următor
 
@@ -300,7 +300,7 @@ Un meniu așa este ceva ce vei pune în fiecare site.
 | Valoare | Ce spune |
 |---------|----------|
 | `1` (primul) | poate **crește** ca să umple spațiul liber |
-| `1` (al doilea) | poate **se micșora** dacă nu are loc |
+| `1` (al doilea) | **se poate micșora** dacă nu are loc |
 | `250px` | **mărimea de pornire**: își dorește cam 250px |
 
 Rezultat: pe un ecran lat sunt 3–4 carduri pe rând, pe unul mai îngust 2, iar pe telefon unul singur pe rând, fără nicio altă regulă. Este tehnica cea mai folosită pentru carduri.
@@ -547,6 +547,7 @@ Fă pagina „Echipa mea de fotbal” cu un antet cu logo și meniu, cinci cardu
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) pe părinte, adică pe container; (2) primul element la început, ultimul la sfârșit, iar restul distanțate egal; (3) pe container: `display: flex; justify-content: center; align-items: center;`, cu o înălțime pusă containerului; (4) elementele trec pe rândul următor când nu mai încap; (5) pe `ul` pui `display: flex;` și `list-style: none;`, plus `margin: 0; padding: 0;`.  
 - **Exercițiul B:** (1) prima cutie la început, ultima la sfârșit, cea din mijloc distanțată egal; (2) cutiile stau una sub alta; (3) cutiile sunt la mijlocul containerului, pe orizontală și pe verticală; (4) două cutii pe primul rând (300 + 300 = 600 încape) și a treia pe rândul de jos.  
 - **Exercițiul C:** (1) `.rand { display: flex; justify-content: center; gap: 20px; }`; (2) `.meniu { display: flex; gap: 15px; list-style: none; margin: 0; padding: 0; }`; (3) `.container { display: flex; }` și `.cutie { flex: 1; }`.  
 - **Exercițiul D:** (1) `flexbox` trebuie `flex`; (2) `middle` trebuie `center`; (3) `vertical` trebuie `column`.  

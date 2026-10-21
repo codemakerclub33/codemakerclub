@@ -307,7 +307,7 @@ Pe foaie: de ce e mai bine să scrii „site-ul NASA” decât „apasă aici”
 
 ## Bonus / Provocare (dacă ai terminat)
 - [ ] Fă un mini-cuprins în partea de sus a unei pagini lungi, cu linkuri `#` spre fiecare titlu  
-- [ ] Adaugă o a treia pagină (`hobby.html`) și pune în meniu un link către ea, în meniul paginilor tale  
+- [ ] Adaugă o a treia pagină (`hobby.html`) și adaugă în meniu un link către ea  
 - [ ] Pune un link `mailto:` cu o adresă de probă și testează linkul  
 - [ ] Deschide „Vezi sursa” (Ctrl + U) pe o pagină din internet și numără câte linkuri `<a href=...>` găsești  
 
@@ -351,6 +351,7 @@ Fă un mic site cu **două pagini** despre **un subiect pe care îl iubești** (
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) `href`; (2) deschide linkul într-o filă nouă; (3) `<a href="despre.html">Despre mine</a>`; (4) „un folder mai sus” (ieși din folderul curent); (5) dai titlului un `id` (de exemplu `id="hobby"`) și scrii linkul `<a href="#hobby">...</a>`.  
 - **Exercițiul B:** (1) alt site; (2) pagină din folderul tău; (3) pagină din folderul tău, într-un subfolder; (4) alt site.  
 - **Exercițiul C:** (1) `<a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer">NASA</a>`; (2) `<a href="galerie.html">Galerie</a>`; (3) `<a href="../index.html">Prima pagină</a>`.  
 - **Exercițiul D:** (1) adresa nu are `https://` și nici ghilimele; (2) lipsește `</a>`; (3) `target="blank"` trebuie `target="_blank"`.  

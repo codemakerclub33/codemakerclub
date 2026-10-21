@@ -20,7 +20,7 @@ Dacă toate paginile au aceeași structură, vizitatorul se simte acasă oriunde
 ## Siguranță înainte de toate
 - Folosești textele tale, fără date personale.  
 - Linkurile merg **doar către paginile tale**. Nu pui încă linkuri către alte site-uri.  
-- Salvezi des (`Ctrl + S`) și, la final, faci o copie a folderului.
+- Salvezi des (`Ctrl + S`, pe Mac `Cmd + S`) și, la final, faci o copie a folderului.
 
 ---
 
@@ -326,6 +326,7 @@ Facem **antetul și meniul frumoase**: meniu pe orizontală cu Flexbox și un bu
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) face pagina să se potrivească pe ecranul telefonului; (2) unul singur; (3) doar pe linkul paginii în care ești; (4) în variabilele din `:root`, în fișierul `stil.css`.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 5.  
 - **Exercițiul B:** `header` = partea de sus; `nav` = meniul; `main` = conținutul principal; `footer` = partea de jos; `lang` = limba textului; `viewport` = adaptarea la ecranul telefonului.  
 - **Exercițiul C:** (1) linkurile `li` trebuie puse într-un `<ul>`; (2) `Galerie.HTML` trebuie scris exact ca fișierul (`galerie.html`), iar `contact` are nevoie de extensia `.html`; (3) o pagină are un singur `<main>`. `aria-current` este corect doar dacă pagina este chiar Galeria.  

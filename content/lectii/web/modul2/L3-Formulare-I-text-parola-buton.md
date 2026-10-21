@@ -211,7 +211,7 @@ Observă:
 - fiecare casetă apare cu `name` și valoarea ei;  
 - **parola se vede în adresă**!  
 
-Formularele reale ale site-urilor trimit parolele ascuns și criptat, printr-o altă metodă. Pentru exercițiile noastre, **scriem doar parole de probă**. Mai târziu, în Modulul 5, vei învăța ca formularul să verifice datele cu JavaScript.
+Site-urile reale trimit parolele altfel: nu le pun în adresă (folosesc metoda `post`) și le protejează pe un site cu `https`, adică cu lacăt în adresă. Pentru exercițiile noastre, **scriem doar parole de probă**. Mai târziu, în Modulul 5, vei învăța ca formularul să verifice datele cu JavaScript.
 
 ### Exemplul 10 — Greșeli frecvente
 
@@ -319,6 +319,7 @@ Formulare II: **alegeri**. Butoane rotunde, căsuțe bifate, liste de unde alegi
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) valoarea `for` din `<label>` este la fel cu `id` din `<input>`; (2) înlocuiește literele cu puncte, ca să nu le vadă cineva peste umăr; (3) `submit` trimite formularul, `reset` șterge ce ai scris în toate casetele; (4) `name` este numele sub care se trimite valoarea casetei (perechea nume = valoare); fără el valoarea nu apare; (5) parola apare în adresa paginii și poate fi văzută, deci scriem doar parole de probă.  
 - **Exercițiul C:** (1) `text`; (2) `password`; (3) `textarea`; (4) `text`.  
 - **Exercițiul D:** (1) `for="animale"` nu se potrivește cu `id="animal"`; (2) caseta `animal` nu are `name`; (3) `<textarea>` nu este închis cu `</textarea>`.  
 - **Exemplul 10:** `for="nume"` nu se potrivește cu `id="prenume"`.  

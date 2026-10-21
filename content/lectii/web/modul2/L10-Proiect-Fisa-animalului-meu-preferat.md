@@ -48,12 +48,13 @@ Alege animalul (de exemplu pisica) și desenează pe foaie harta paginii:
 
 ```text
 header: titlul fișei
-nav: Despre | Fișa | Sunet | Sondaj
+nav: Despre | Fișa | Sunet | Sondaj | Harta
 main:
   section "Despre animal"    (text + imagine + curiozități)
   section "Fișa în cifre"    (tabel)
   section "Cum sună"         (audio / video)
   section "Sondaj"           (formular)
+  section "Harta"            (iframe cu un loc public)
   aside "Știai că…"
 footer
 ```
@@ -64,7 +65,7 @@ Scrie sub fiecare parte ce vei pune în ea. Alege 3–4 culori care se potrivesc
 - [ ] Alege animalul și scrie numele animalului pe foaie  
 - [ ] Desenează pe foaie harta paginii, cu tagurile potrivite  
 - [ ] Notează pe foaie 4 lucruri despre animal (ce mănâncă, unde trăiește, cât trăiește, un lucru ciudat)  
-- [ ] Pregătește în folderul proiectului `imagini` și `media` cu fișierele de care ai nevoie  
+- [ ] Creează în folderul proiectului folderele `imagini` și `media` și pune în ele fișierele de care ai nevoie  
 
 ---
 
@@ -127,6 +128,7 @@ Aici ai deja tot stilul de care ai nevoie: culorile paginii, chenarul cărților
     <li><a href="#fisa">Fișa</a></li>
     <li><a href="#sunet">Sunet</a></li>
     <li><a href="#sondaj">Sondaj</a></li>
+    <li><a href="#harta">Harta</a></li>
   </ul>
 </nav>
 ```

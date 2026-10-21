@@ -81,7 +81,7 @@ Alege „Pisică” și apasă un buton de trimitere. În adresă vei vedea `?an
 <input type="radio" id="pisica" name="animal" value="pisica" checked>
 ```
 
-Atributul `checked` pune varianta aleasă de la început. Pune-l **la o singură variantă** dintr-un grup.
+Atributul `checked` pune varianta aleasă de la început. Pune `checked` **la o singură variantă** dintr-un grup.
 
 **Gata când:**  
 - [ ] Ai făcut o întrebare cu cel puțin trei variante `radio`, toate cu același `name`  
@@ -295,10 +295,10 @@ Fă un sondaj despre **un subiect ales de tine** (animale, jocuri, mâncare, spo
 Completează sondajul și apasă „Trimite”. Copiază pe foaie ce apare după `?` și marchează fiecare nume și valoare.
 
 ### Exercițiul C — Ce folosim?
-Alege `radio`, `checkbox` sau `select`: (1) clasa în care ești (5 variante); (2) ce fructe mănânci (mai multe); (3) ești de acord sau nu (2 variante); (4) luna nașterii animalului tău (12 variante).
+Alege `radio`, `checkbox` sau `select`: (1) materia ta preferată de la școală (5 variante); (2) ce fructe mănânci (mai multe); (3) ești de acord sau nu (2 variante); (4) luna nașterii animalului tău (12 variante).
 
 ### Exercițiul D — Găsește greșelile
-Găsește **3 greșeli** și repară greșelile:
+Găsește **3 greșeli** și scrie varianta corectă. Browserul repară unele singur, dar rămân greșeli de scriere:
 
 ```text
 <fieldset>
@@ -371,7 +371,8 @@ Formulare III: **validare**. Cum cerem să fie completate câmpurile și cum ver
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) formează o singură întrebare: poți alege doar una, iar alegerea nouă o debifează pe cea veche; (2) când vizitatorul poate alege mai multe variante, oricâte; (3) o variantă din lista `<select>`; (4) imediat după `<fieldset>`, ca titlu al grupului; (5) pune varianta bifată de la început.  
 - **Exercițiul C:** (1) `select` sau `radio`; (2) `checkbox`; (3) `radio`; (4) `select`.  
-- **Exercițiul D:** (1) `legend` trebuie să fie imediat după `<fieldset>`; (2) `name="raspuns"` și `name="raspunsuri"` diferă: trebuie același; (3) `<option>Iunie` nu este închis cu `</option>`.  
+- **Exercițiul D:** (1) `legend` trebuie să fie imediat după `<fieldset>`; (2) `name="raspuns"` și `name="raspunsuri"` diferă: trebuie același; (3) `<option>Iunie` nu este închis cu `</option>` (browserul îl închide singur, dar regula este să punem noi `</option>`).  
 - **Exemplul 10:** `animal1` și `animal2` formează două întrebări; trebuie același `name`.  
 - **Siguranță:** nu cerem vârstă, clasă sau adresă în sondaje.

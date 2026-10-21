@@ -6,7 +6,7 @@ Obiectivul. Minim: un buton pentru modul întunecat, care schimbă culorile pagi
 
 Siguranța. LocalStorage păstrează date doar în browserul de pe acel calculator. Salvăm doar tema, luminos sau întunecat, nimic personal. Unele browsere pot bloca salvarea, de aceea folosim try catch. Derularea lină nu se aplică celui care a cerut mișcare redusă. Butoanele sunt elemente button și se pot folosi cu tastatura.
 
-Primul pas: tema întunecată în HTML și CSS. Adaugi în antet un buton cu aria pressed false. În CSS scrii o a doua paletă pentru body cu clasa intunecat, care înlocuiește variabilele din root. Pentru că toate culorile sunt scrise cu var, schimbăm tema cu o singură clasă.
+Primul pas: tema întunecată în HTML și CSS. Adaugi în antet un buton cu aria pressed false. În CSS scrii o a doua paletă pentru body cu clasa intunecat, care înlocuiește variabilele din root. Pentru că aproape toate culorile sunt scrise cu var, schimbăm tema cu o singură clasă.
 
 Al doilea pas: JavaScript. O funcție setează tema: classList toggle cu al doilea argument pune sau scoate clasa, iar operatorul cu semnul întrebării și două puncte alege textul butonului. LocalStorage get item citește tema salvată, iar set item o salvează. Totul este într-un try catch. La încărcare aplici tema salvată, iar la clic inversezi tema și o salvezi.
 

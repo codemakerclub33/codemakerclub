@@ -493,7 +493,7 @@ Un detaliu: `arataSecventa()` și `apasa()` sunt `async`, dar funcțiile care le
 □ Cu butoanele apăsate în ordinea corectă, runda crește și ordinea primește o culoare
 □ O apăsare greșită termină jocul, cu mesajul și numărul de runde
 □ În timp ce se arată ordinea, apăsările nu fac nimic
-□ După „Game over”, apăsările nu fac nimic până la un nou „Start”
+□ După mesajul „Greșit!”, apăsările nu fac nimic până la un nou „Start”
 □ Recordul se salvează și rămâne după reîncărcare
 □ Fiecare culoare este aprinsă 0,6 secunde, fără licăriri rapide
 □ Merge cu tastatura (Tab, Enter) și pe telefon
@@ -556,7 +556,7 @@ Pe foaie: ce reține variabila `pozitie`? De ce ignorăm apăsările când `acce
 ---
 
 ## Greșeli frecvente
-1. **Uitat `await`** în fața lui `pauza(...)`: culorile se aprind toate odată.  
+1. **Uitat `await`** în fața lui `pauza(...)`: culorile se aprind și se sting instantaneu, deci nu se mai văd.  
 2. **`await` într-o funcție fără `async`**: eroare de scriere.  
 3. **`Math.random() * 3`** când ai 4 culori: culoarea 3 nu apare niciodată.  
 4. **Comparație inversă**: `===` în loc de `!==` termină jocul când nimerești.  
@@ -581,11 +581,13 @@ Pe foaie: ce reține variabila `pozitie`? De ce ignorăm apăsările când `acce
 Joacă Simon cu un coleg, pe rând, și notează cine ajunge cel mai departe. Încercați împreună o idee nouă (6 butoane, alte culori, ordine mai rapidă). Salvează varianta în `Prenume_Nume_W6_L3`.
 
 ## Ce urmează — Lecția 4
-Începem **Cuvântul zilei**: un joc de cuvinte cu o tablă de litere și o tastatură pe ecran. Azi avem doar tabla; litera cu litera, verificarea o facem în lecția 5.
+Începem **Cuvântul zilei**: un joc de cuvinte cu o tablă de litere și o tastatură pe ecran. În lecția 4 facem tabla, tastatura și scrierea literelor; verificarea literelor o facem în lecția 5.
 
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) adaugă culoarea `2` (albastru) la sfârșitul listei, deci ordinea mai primește o culoare; (2) doar într-o funcție care începe cu `async`; (3) nu se întâmplă nimic: apăsarea este ignorată, pentru că funcția iese imediat; (4) ca jocul să se poată juca și de cine nu distinge bine culorile.  
+- **Dacă ritmul clasei este lent:** funcția `pauza` și `async` / `await` se dau gata, ca rețetă.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 8. Minimul de acceptare: 4 butoane, ordine care se aprinde, verificarea apăsărilor și sfârșitul jocului la greșeală; creșterea ordinii cu o culoare este ținta.  
 - **Exercițiul B:** nu are răspuns unic; verificați că durata aprinderii nu scade sub 0,3 secunde (siguranță pentru licăriri).  
 - **Exercițiul C:** (1) lipsește `await` în fața lui `pauza(600)` (culorile se aprind și se sting aproape deodată); (2) `Math.random() * 3` trebuie `* 4`; (3) comparația este inversă: trebuie `numar !== secventa[pozitie]`. Mai lipsește `await pauza(...)` după `stinge(numar)`, dar nu este o greșeală de sintaxă.  

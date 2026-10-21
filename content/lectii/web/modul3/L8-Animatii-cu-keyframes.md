@@ -231,16 +231,16 @@ Mingea urcă și coboară la nesfârșit. Terenul are o înălțime ca mingea s�
   animation: urca-lin 0.8s ease both;
 }
 
-.intrare:nth-child(2) {
+.intrare:nth-of-type(2) {
   animation-delay: 0.3s;
 }
 
-.intrare:nth-child(3) {
+.intrare:nth-of-type(3) {
   animation-delay: 0.6s;
 }
 ```
 
-Fiecare rând apare cu o mică întârziere față de cel dinainte, ca într-un spectacol. `both` ține rândul **invizibil cât așteaptă** (starea de la `from`) și îl lasă vizibil la final. Fără `both`, rândurile ar sta vizibile în timpul așteptării și ar „sări” când pornește animația.
+Fiecare rând apare cu o mică întârziere față de cel dinainte, ca într-un spectacol. `:nth-of-type(2)` alege al doilea paragraf `p`, chiar dacă în pagină mai sunt și alte taguri (un titlu, un buton). `both` ține rândul **invizibil cât așteaptă** (starea de la `from`) și îl lasă vizibil la final. Fără `both`, rândurile ar sta vizibile în timpul așteptării și ar „sări” când pornește animația.
 
 ### Exemplul 7 — Rotire (cerc de încărcare)
 
@@ -594,6 +594,8 @@ Fă o pagină „Povestea mea animată”: titlul apare lin, trei rânduri de te
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) rețeta (`@keyframes`, ce se schimbă) și pornirea (`animation`, pe ce element rulează); (2) animația se repetă la nesfârșit; (3) animația merge înainte, apoi înapoi, alternativ; (4) `transform` și `opacity`; (5) cel mult 3 pe secundă.  
+- **Dacă ritmul clasei este lent:** la proiect cereți minimum 2 animații.  
 - **Exercițiul B:** (1) animația `pulsare` rulează 3 secunde și se repetă la infinit; (2) animația rulează de 3 ori și se oprește; (3) elementul merge de la stânga la dreapta, apoi înapoi de la dreapta la stânga, alternativ; (4) în cele 2 secunde de așteptare elementul este vizibil (starea normală), apoi dispare brusc și apare lin (de aceea trebuie `both`).  
 - **Exercițiul C:** (1) `@keyframes clatina { 0%, 100% { transform: rotate(-5deg); } 50% { transform: rotate(5deg); } }` și `.element { animation: clatina 1s ease-in-out infinite; }`; (2) `@keyframes culori { 0% { background-color: red; } 50% { background-color: yellow; } 100% { background-color: green; } }` cu `animation: culori 6s infinite;`; (3) `.element:hover { animation-play-state: paused; }`.  
 - **Exercițiul D:** (1) `@keyframe` trebuie `@keyframes`; (2) numele `pulseaza` nu coincide cu `pulsare`; (3) `2` trebuie `2s`.  

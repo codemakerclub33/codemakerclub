@@ -8,7 +8,7 @@
 ---
 
 ## Obiectiv
-La finalul orei știi să scrii culori cu nume, cu cod `#`, cu `rgb()` și cu `rgba()`, să faci o culoare transparentă, să pui o imagine pe fundal, să faci un degrade cu `linear-gradient` și să-ți definești o paletă de culori într-un singur loc.  
+La finalul orei știi să scrii culori cu nume, cu cod `#`, cu `rgb()` și cu `rgba()`, să faci o culoare transparentă, să pui o imagine pe fundal, să faci un degrade cu `linear-gradient` și să definești o paletă de culori într-un singur loc.  
 **Minim:** o pagină cu fundal colorat, o cutie cu fundal transparent și un degrade pe un element.  
 **Ținta orei (Complet):** + o imagine de fundal care acoperă pagina, o cutie citibilă peste imagine, o paletă definită cu variabile și un test de citibilitate.
 
@@ -505,6 +505,8 @@ Fă o pagină „Cartea de vizită a unui animal” cu o **paletă de 4 culori**
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) cât roșu, cât verde și cât albastru, de la 0 la 255 (aici roșu complet, deci culoarea roșie); (2) `background-color: rgba(255, 255, 255, 0.5);`; (3) `background: linear-gradient(to right, red, yellow);`; (4) imaginea de fundal acoperă tot elementul, fără goluri; (5) se scrie în `:root`, de exemplu `--text: #264653;`, și se folosește cu `var(--text)`.  
+- **Dacă ritmul clasei este lent:** Exemplul 9 (variabile CSS) și Exemplul 8 (degrade cu mai multe culori) sunt opționale; paleta se poate scrie direct, fără variabile.  
 - **Exercițiul B:** (1) roșu; (2) albastru; (3) alb; (4) negru; (5) gri (negru jumătate transparent peste alb).  
 - **Exercițiul C:** (1) `background: linear-gradient(to right, blue, green);`; (2) `background-color: rgba(0, 0, 0, 0.6);`; (3) `:root { --rosu-meu: #cc0000; }` și `.alerta { background-color: var(--rosu-meu); }`.  
 - **Exercițiul D:** (1) lipsește `#` — `#ff6600`; (2) `rgb` cere trei numere — `rgb(255, 255, 255)`; (3) lipsește virgula — `linear-gradient(red, blue)`.  

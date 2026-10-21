@@ -68,7 +68,7 @@ Fiecare element are, de la **interior spre exterior**, patru straturi:
 | `border` | chenarul | cutia cadoului |
 | `margin` | spațiu **în afara** chenarului | spațiul dintre cutii pe raft |
 
-Cel mai bun mod să le vezi: deschide DevTools (**F12**), fila **Elements**, apasă pe un element și uită-te în panoul **Styles**, jos, la desenul colorat al cutiei. Albastrul este conținutul, verdele este `padding`, galbenul este `border`, iar portocaliul este `margin`. Dacă treci cu mouse-ul peste element în DevTools, vezi aceleași culori pe pagină.
+Cel mai bun mod să le vezi: deschide DevTools (**F12**), fila **Elements**, apasă pe un element și privește panoul **Styles**, jos, la desenul colorat al cutiei. Albastrul este conținutul, verdele este `padding`, galbenul este `border`, iar portocaliul este `margin`. Dacă treci cu mouse-ul peste element în DevTools, vezi aceleași culori pe pagină.
 
 ### Exemplul 2 — Lățime și înălțime
 
@@ -510,6 +510,8 @@ Fă o pagină „Carduri de jucători” cu **5 carduri** ale unor jucători inv
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) de la interior spre exterior: conținut, `padding`, `border`, `margin`; (2) centrează pe orizontală o cutie care are `width` sau `max-width`; (3) 250px (200 + 20 + 20 + 5 + 5); (4) `display: inline-block;`; (5) îi pui `display: inline-block;`, `padding`, fundal, `border-radius` și `text-decoration: none;`.  
+- **Dacă ritmul clasei este lent:** în proiect cereți minimum 3 cărți și lăsați `box-shadow` și imaginile pentru bonus.  
 - **Exercițiul B:** (1) 300 + 10 + 10 + 2 + 2 = 324px; (2) 300px; (3) sus 5px, dreapta 10px, jos 15px, stânga 20px.  
 - **Exercițiul C:** (1) `.cutie { width: 250px; padding: 15px; border: 2px solid gray; border-radius: 10px; margin: 0 auto; }`; (2) `.eticheta { display: inline-block; background-color: lightgreen; padding: 5px 10px; border-radius: 6px; }`; (3) `img { max-width: 100%; height: auto; }`.  
 - **Exercițiul D:** (1) `width: 200` trebuie `200px`; (2) `padding` nu poate avea cinci valori; (3) `margin = 10px` trebuie `margin: 10px`.  

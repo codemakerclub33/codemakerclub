@@ -62,7 +62,7 @@ Prenume_Nume_W6_L10/
 └── pasare/             (lecția 9: Păsărica zburătoare)
 ```
 
-**Copiază** (nu muta) folderele jocurilor tale în noul folder și schimbă numele folderelor ca în schemă. Dacă un joc nu merge sau nu este terminat, nu-l copia încă: vei adăuga cartonașul lui mai târziu.
+**Copiază** (nu muta) folderele jocurilor tale în noul folder și schimbă numele folderelor ca în schemă. Dacă un joc nu merge sau nu este terminat, nu copia încă acel joc: vei adăuga cartonașul lui mai târziu.
 
 **Important:** deschide fiecare joc din noul loc și verifică dacă merge la fel. Dacă nu merge, probabil lipsește un fișier sau are alt nume.
 
@@ -90,7 +90,7 @@ Prenume_Nume_W6_L10/
 <body>
   <header class="antet">
     <h1>Colecția mea de jocuri</h1>
-    <p>Alege un joc și încearcă să-ți bați recordul!</p>
+    <p>Alege un joc și încearcă să bați recordul tău!</p>
     <p class="rezumat" id="rezumat" role="status"></p>
   </header>
 
@@ -280,7 +280,7 @@ const jocuri = [
 Avem o **listă de obiecte**. Fiecare obiect are:
 - `nume` și `descriere`: ce vezi în cartonaș;  
 - `folder`: numele subfolderului;  
-- `cheieRecord`: numele sub care jocul și-a salvat recordul în `localStorage`, sau `null` dacă jocul nu are record.
+- `cheieRecord`: numele sub care jocul a salvat recordul în `localStorage`, sau `null` dacă jocul nu are record.
 
 **Cheile trebuie să fie exact cele folosite în jocuri**: `recordMonstri`, `recordSimon`, `recordDino`, `recordPasare`. Dacă ai scris altfel în jocul tău, schimbă aici cheia ca să se potrivească (sau în joc, dar atunci recordurile vechi se pierd).
 
@@ -332,7 +332,7 @@ function citesteMonede() {
 - `Math.floor` rotunjește în jos la un număr întreg.  
 - Tot codul este în `try/catch`: dacă browserul nu permite citirea, funcția întoarce 0 și pagina merge mai departe.
 
-Clicker-ul este diferit: și-a salvat datele ca **text JSON** (monedele și îmbunătățirile). Funcția `citesteMonede`, din aceeași secțiune, citește doar monedele. Ea face `JSON.parse` **în interiorul** lui `try`: dacă salvarea este stricată, `catch` prinde eroarea și întoarcem 0.
+Clicker-ul este diferit: salvează datele ca **text JSON** (monedele și îmbunătățirile). Funcția `citesteMonede`, din aceeași secțiune, citește doar monedele. Ea face `JSON.parse` **în interiorul** lui `try`: dacă salvarea este stricată, `catch` prinde eroarea și întoarcem 0.
 
 Mai avem funcția care alege **textul de sub fiecare joc**:
 
@@ -465,6 +465,7 @@ Iar în `stil.css` al fiecărui joc, la final:
   display: inline-block;
   margin-bottom: 0.5rem;
   font-weight: bold;
+  color: inherit;
 }
 ```
 
@@ -577,6 +578,7 @@ Felicitări! Ai terminat ultimul modul al cursului Web. Poți continua singur: u
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) ca să adaugi un joc nou doar printr-un obiect în listă, fără să schimbi altceva, iar cartonașele se creează singure din listă; (2) șterge lista de cartonașe, ca să nu apară de două ori; (3) ca să folosim doar un număr normal; dacă cineva schimbă valoarea (de exemplu „abc”), o ignorăm; (4) ieși din folderul jocului și deschizi `index.html` din folderul de deasupra.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 7. Minimul: cartonașe către cel puțin 3 jocuri care merg; ținta: restul listei.  
 - **Exercițiul B:** nu are răspuns unic; urmăriți ca elevul să numească o idee de programare reală pentru fiecare joc.  
 - **Exercițiul C:** (1) lipsește `/`: `joc.folder + "/index.html"`; (2) `JSON.parse` trebuie să fie în `try { ... } catch`, ca o salvare stricată să nu blocheze pagina; (3) lipsește `lista.textContent = ""` la început, deci după `pageshow` cartonașele se dublează.  

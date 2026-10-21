@@ -300,7 +300,7 @@ function scrieNumar(numar) {
 ```
 
 Pe rând:
-1. `pretUpgrade`: prețul de acum este `pretStart * crestere` înmulțit cu el însuși de atâtea ori câte ai cumpărat. `Math.pow(1.5, 3)` înseamnă 1,5 la puterea a treia (1,5 × 1,5 × 1,5). `Math.ceil` rotunjește **în sus**, ca prețul să fie număr întreg.  
+1. `pretUpgrade`: prețul de acum este `pretStart` înmulțit cu `crestere` de atâtea ori câte ai cumpărat. `Math.pow(1.5, 3)` înseamnă 1,5 la puterea a treia (1,5 × 1,5 × 1,5). `Math.ceil` rotunjește **în sus**, ca prețul să fie număr întreg.  
 2. `calculeazaPerClic`: începe de la 1 și adună, pentru fiecare îmbunătățire de tip `"clic"`, `valoare × cumparate`.  
 3. `calculeazaPerSecunda`: la fel, pentru tipul `"secunda"`.  
 4. `scrieNumar`: `toLocaleString("ro-RO")` scrie numerele în stil românesc, cu separator pentru mii (de exemplu `12.345`), ca să se citească ușor.
@@ -606,6 +606,8 @@ Facem **Simon spune**: un joc de memorie cu culori care se aprind într-o ordine
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) rotunjește în sus la un număr întreg, deci dă `23`; (2) transformă un obiect în text, ca să poată fi salvat în `localStorage`; (3) rescrie tot ce se vede într-un singur loc, deci nu uiți să schimbi vreun număr pe ecran; (4) `try … catch` prinde eroarea, salvarea este ignorată și jocul începe de la zero.  
+- **Dacă ritmul clasei este lent:** Exemplul 8 (`JSON` și `localStorage`) se dă ca fragment gata; elevii nu trebuie să rețină `JSON`.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 9. Minimul de acceptare: monedă care dă monede, cel puțin o îmbunătățire cumpărabilă cu preț care crește, butoane blocate corect și actualizare corectă a ecranului. Salvarea este ținta, nu minimul.  
 - **Exercițiul B:** nu are răspuns unic; verificați că jocul merge după schimbări.  
 - **Exercițiul C:** (1) `Math.pow(upgrade.cumparate, upgrade.crestere)` trebuie `Math.pow(upgrade.crestere, upgrade.cumparate)`; (2) `monede > pret` trebuie `monede >= pret`; (3) obiectul trebuie transformat în text: `JSON.stringify({ monede: monede })`.  

@@ -208,6 +208,10 @@ Scrie pe foaie cu cuvintele tale 5 reguli pentru folosirea iframe-urilor. Câtev
   <li>o plimbare lungă</li>
 </ul>
 
+<h2>Pagina mea despre mine</h2>
+<iframe src="despre.html" width="500" height="200"
+        title="Pagina mea despre mine" style="border: 3px solid teal;"></iframe>
+
 <h2>Un film despre loc</h2>
 <iframe src="https://www.youtube-nocookie.com/embed/ID_VIDEO"
         width="560" height="315" title="Film despre locul vizitat"
@@ -304,6 +308,7 @@ Fă o pagină despre **un loc public preferat** (un parc, un muzeu, o plajă) cu
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) o altă pagină întreagă, ca printr-un „geam” în pagina ta; (2) ca să descrie ce se vede în geam pentru cititorul de ecran, la fel ca `alt` la imagine; (3) încarcă iframe-ul doar când ajungi cu pagina lângă el, ca pagina să se deschidă mai repede; (4) site-ul nu permite să fie arătat în alte pagini, adresa din `src` este greșită, nu există internet sau numele fișierului propriu este greșit; (5) pentru că harta arată oricui exact unde este locul, deci punem doar locuri publice.  
 - **Exercițiul B:** (1) adresa paginii; (2) descrie conținutul pentru cititorul de ecran; (3) încarcă iframe-ul doar când vizitatorul ajunge lângă el; (4) permite ecranul mare.  
 - **Exercițiul C:** (1) nu; (2) da; (3) nu; (4) da.  
 - **Exercițiul D:** (1) lipsește `title` la primul iframe; (2) al doilea iframe nu este închis cu `>` și `</iframe>`; (3) `title="iframe"` nu descrie conținutul (corect: de exemplu „Film despre animale”). Acceptați orice formulare apropiată.  

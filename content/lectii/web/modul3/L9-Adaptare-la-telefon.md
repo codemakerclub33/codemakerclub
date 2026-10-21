@@ -225,7 +225,7 @@ h1 {
 
 ### Exemplul 8 — Testezi cu DevTools
 
-Nu ai nevoie de un telefon ca să-ți testezi pagina:
+Nu ai nevoie de un telefon ca să testezi pagina:
 1. Deschide pagina în Chrome și apasă **F12** (DevTools).  
 2. Apasă pe pictograma cu **telefon și tabletă** (bara de dispozitive) din colțul stânga sus al panoului.  
 3. Alege un dispozitiv din listă (de exemplu un telefon) sau trage de margini ca să schimbi lățimea.  
@@ -291,6 +291,7 @@ Fișierul `index.html`:
     <section class="galerie" id="animale">
       <div class="card">
         <h2>Pisica</h2>
+        <img src="imagini/pisica.jpg" alt="O pisică">
         <p>Doarme toată ziua și vânează seara.</p>
       </div>
       <div class="card">
@@ -325,7 +326,7 @@ Fișierul `index.html`:
 </html>
 ```
 
-Fișierul `stil.css`:
+Pune o imagine a ta în folderul `imagini` (cu numele `pisica.jpg`) sau schimbă numele din `src`. Fișierul `stil.css`:
 
 ```css
 * {
@@ -481,6 +482,7 @@ Fă o pagină cu `index.html` și `stil.css`, cu:
 - linia `viewport` în `<head>` și `* { box-sizing: border-box; }` prima în `stil.css`;
 - un conținut într-o coloană cu `max-width` și `margin: 0 auto;`;
 - o galerie cu **minimum 6 carduri**, cu `repeat(auto-fit, minmax(…px, 1fr))`;
+- cel puțin **o imagine** cu `max-width: 100%` (în folderul `imagini`);
 - un titlu cu `clamp(…)`;
 - cel puțin **o regulă `@media (max-width: …px)`** care schimbă ceva important pe telefon;
 - butoane de cel puțin 44px înălțime;
@@ -566,6 +568,8 @@ Proiectul final al modulului: **„Pagina mea, dar frumoasă”**. Folosim tot c
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) spune telefonului să folosească lățimea reală a ecranului, nu să micșoreze pagina; (2) regulile dinăuntru se aplică doar dacă fereastra are cel mult 600px lățime; (3) `max-width` lasă conținutul să se micșoreze pe ecrane mici, iar un `width` fix îl face să iasă din ecran; (4) alege o mărime care crește cu ecranul (`5vw`), dar nu coboară sub `1.5rem` și nu trece de `3rem`; (5) cu DevTools (**F12**), în modul telefon.  
+- **Dacă ritmul clasei este lent:** `auto-fit`, `minmax` și `clamp` pot fi tratate ca provocare; instrumentul principal este `@media`.  
 - **Exercițiul B:** (1) pe ecrane de maximum 600px meniul dispare (atenție: utilizatorul nu mai are navigare); (2) imaginea nu depășește lățimea părintelui, dar poate rămâne mai îngustă decât el; (3) pe 650px încap trei coloane de minimum 200px (3 × 200 = 600), iar restul de 50px se împarte egal între ele, deci sunt trei coloane; (4) mărimea ideală `4vw` este 8px, dar `clamp` o ridică la minimum `1rem`, adică 16px.  
 - **Exercițiul C:** (1) `@media (max-width: 700px) { .rand { flex-direction: column; } }`; (2) `img { max-width: 100%; height: auto; }`; (3) `h1 { font-size: clamp(1.4rem, 4vw, 2.5rem); }`.  
 - **Exercițiul D:** (1) `600` trebuie `600px`; (2) `vertical` trebuie `column`; (3) `width: 900px;` trebuie `max-width: 900px;`.  

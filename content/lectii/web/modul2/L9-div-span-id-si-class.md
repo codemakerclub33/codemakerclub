@@ -307,7 +307,7 @@ Fă pagina din Exemplul 10 cu **animalele tale**: minimum 4 cărți, cu:
 Pentru fiecare, alege `id` sau `class`: (1) titlul principal al paginii; (2) toate cardurile cu animale; (3) cuvintele importante din text; (4) secțiunea „Contact”, către care duce un link.
 
 ### Exercițiul C — Citește regula
-Ce elemente stilează: (1) `.carte { … }`; (2) `#titlu-pagina { … }`; (3) `.carte.rara { … }`? (la 3 se aplică doar elementelor care au **ambele** clase.)
+Ce elemente stilează: (1) `.carte { … }`; (2) `#titlu-pagina { … }`; (3) `.carte.rara { … }`? (fără spațiu între clase înseamnă „și `carte`, și `rara`”: se aplică doar elementelor care au **ambele** clase.)
 
 ### Exercițiul D — Găsește greșelile
 Găsește **3 greșeli** și repară greșelile:
@@ -382,6 +382,7 @@ Fă o pagină „Echipa mea de fotbal” (sau altă echipă imaginară) cu 5 car
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) este o cutie fără înțeles, care grupează lucruri (de exemplu un titlu și un paragraf); (2) `.carte { … }`, cu punct în față; (3) unul singur, pentru că `id` este unic în pagină; (4) separate prin spațiu: `class="carte rara"`; (5) `<div>` grupează lucruri și se așază pe rând nou, iar `<span>` marchează o parte din text, în interiorul rândului.  
 - **Exercițiul B:** (1) `id`; (2) `class`; (3) `class`; (4) `id`.  
 - **Exercițiul C:** (1) toate elementele cu clasa `carte`; (2) elementul cu `id="titlu-pagina"`; (3) doar elementele care au și clasa `carte`, și clasa `rara`.  
 - **Exercițiul D:** (1) `carte` fără punct trebuie `.carte`; (2) `#Titlu Mare` are spațiu și litere mari: nume de `id` valid este `titlu-mare`, iar elementul trebuie să aibă același `id`; (3) `id="titlu"` apare de două ori: trebuie unic.  

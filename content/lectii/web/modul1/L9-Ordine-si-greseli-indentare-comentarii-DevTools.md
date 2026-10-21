@@ -56,9 +56,12 @@ Fără indentare, codul arată ca o mulțime de rânduri la fel:
 <ul>
 <li>Pisici</li>
 <li>Cai</li>
+<li>
+Mamifere marine:
 <ul>
 <li>Delfini</li>
 </ul>
+</li>
 </ul>
 ```
 
@@ -140,7 +143,7 @@ Dacă pui un comentariu în jurul unei bucăți de cod, pagina nu o mai afișeaz
 
 Este util când vrei să **testezi** pagina fără o bucată de cod, fără să o ștergi. Scurtătura din VS Code: selectează liniile și apasă **Ctrl + /** (pe Mac: **Cmd + /**). Apeși din nou și comentariul dispare.
 
-> Nu scrie în comentarii informații personale (adresa, telefonul). Oricine poate vedea comentariile, cu Control U sau cu DevTools.
+> Nu scrie în comentarii informații personale (adresa, telefonul). Oricine poate vedea comentariile, cu Ctrl + U sau cu DevTools.
 
 **Încearcă tu (5 min)**  
 - [ ] Pune în pagina ta trei comentarii care marchează secțiunile  
@@ -195,7 +198,7 @@ Dacă pagina are 40 de linii și nu știi unde este greșeala: pune în comentar
 Fila **Elements** arată **structura paginii**: tagurile, una în interiorul alteia, ca în codul tău.
 
 1. Deschide DevTools.  
-2. Apasă pe săgeata mică din colțul panoului (sau apasă **Ctrl + Shift + C**), apoi treci cu mouse-ul peste pagină. Fiecare element se colorează, iar în Elements vezi tagul lui.  
+2. Apasă pe săgeata mică din colțul panoului (sau apasă **Ctrl + Shift + C**, pe Mac **Cmd + Shift + C**), apoi treci cu mouse-ul peste pagină. Fiecare element se colorează, iar în Elements vezi tagul lui.  
 3. Apasă pe un titlu și vei vedea `<h1>…</h1>` evidențiat.
 
 ### Exemplul 8 — Schimbăm pagina doar pentru test
@@ -212,13 +215,13 @@ Fila **Console** arată mesajele browserului. Dacă ai o imagine cu numele scris
 Failed to load resource: the server responded with a status of 404 (Not Found)
 ```
 
-Acesta înseamnă: „Nu am găsit un fișier”. Mesajul arată și numele fișierului căutat, deci vezi exact ce nume a scris browserul. Compară acest nume cu numele din folder.
+Acesta înseamnă: „Nu am găsit un fișier”. Mesajul arată și numele fișierului căutat, deci vezi exact ce nume a căutat browserul. Compară acest nume cu numele din folder.
 
 **Încearcă tu (8 min)**  
 - [ ] Deschide DevTools pe pagina ta și găsește în Elements titlul `<h1>`  
 - [ ] Schimbă temporar textul titlului din Elements și reîncarcă pagina ca să vezi că revine  
 - [ ] Scrie greșit numele unei imagini, salvează și găsește mesajul „404” în Console  
-- [ ] Repară numele imaginii și verifică în Console că mesajul a dispărut  
+- [ ] Repară numele imaginii, reîncarcă pagina și verifică în Console că mesajul a dispărut  
 
 ---
 
@@ -244,7 +247,7 @@ Lucrează cu metoda din secțiunea 4. Fiecare greșeală găsită merită o bif�
 - [ ] Ai găsit și ai reparat toate cele 6 greșeli  
 - [ ] Ai formatat codul cu **Shift + Alt + F** (Mac: Shift + Option + F)  
 - [ ] Ai adăugat comentarii care marchează secțiunile paginii  
-- [ ] Ai verificat în DevTools, fila Console, că nu mai există erori  
+- [ ] Ai verificat în DevTools, fila Console (dacă imaginea nu este în folder, mesajul „404” pentru ea este normal)  
 
 ---
 
@@ -271,7 +274,7 @@ Copiază codul de mai jos într-un fișier nou, `curat.html`, între tagurile `<
 În `curat.html`, adaugă trei comentarii care spun ce face fiecare secțiune. Ascunde apoi desertul cu un comentariu și verifică în browser. Apoi afișează din nou desertul.
 
 ### Exercițiul C — Repară pagina stricată (Exemplul 10)
-Repară toate cele 6 greșeli. Pe foaie, scrie fiecare greșeală și ai reparat fiecare greșeală.
+Repară toate cele 6 greșeli. Pe foaie, scrie fiecare greșeală și ce ai schimbat ca să o repari.
 
 ### Exercițiul D — Misiune DevTools
 Deschide site-ul tău din Lecția 8. Cu DevTools:
@@ -307,7 +310,7 @@ Pe foaie: de ce ne ajută indentarea? Dă un exemplu de situație în care un co
 5. **Ai reparat în DevTools, dar nu în VS Code** — schimbarea se pierde la reîncărcare.  
 6. **Ai uitat să salvezi** înainte să te uiți în browser.  
 7. **Ai căutat greșeala doar în locul unde se vede efectul** — privește și mai sus.  
-8. **Ai șters comentariul în loc să îl folosești** — un comentariu ascunde codul fără să piardă codul.  
+8. **Ai șters codul în loc să îl comentezi** — un comentariu ascunde codul fără să îl piardă.  
 
 ---
 
@@ -336,6 +339,8 @@ Ultimul proiect din modul: **„Pagina mea despre mine”**. Folosești tot ce a
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) cu 2 spații; (2) între `<!--` și `-->`, de exemplu `<!-- notiță -->`; (3) structura paginii: tagurile, unul în interiorul altuia; (4) browserul nu a găsit fișierul cerut (de exemplu o imagine cu numele scris greșit); (5) ca să știi exact ce schimbare a reparat pagina (sau a stricat altceva).  
+- **Dacă ritmul clasei este lent:** puteți sări peste Exemplul 6 („jumătate-jumătate”) și peste Exemplul 8; rămâneți la indentare, comentarii și fila Console.  
 - **Exemplul 5:** `<h1>` nu a fost închis; trebuie `</h1>`.  
 - **Exemplul 10 (cele 6 greșeli):** (1) `<h1>…<h1>` trebuie `<h1>…</h1>`; (2) tagurile sunt încrucișate: `<strong>neagră.</strong></p>`; (3) `pisica.jpgg` trebuie `pisica.jpg`; (4) primul `<li>` nu este închis: `<li>Hrană</li>`; (5) `despre.htm` trebuie `despre.html`; (6) `color = red` trebuie `color: red`.  
 - **Exercițiul A:** `ol` cu `li` pe nivelul 1, iar lista `ul` cu `li` imbricată în al doilea `li`, cu încă un nivel de spații.  

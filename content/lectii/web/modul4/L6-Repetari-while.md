@@ -104,7 +104,7 @@ let inghetate = 0;
 while (bani >= 3) {
   bani -= 3;
   inghetate++;
-  console.log(`Am cumpărat ${inghetate} înghețate. Au rămas ${bani} lei.`);
+  console.log(`Înghețate cumpărate: ${inghetate}. Au rămas ${bani} lei.`);
 }
 
 console.log("Nu mai pot cumpăra nimic.");
@@ -113,9 +113,9 @@ console.log("Nu mai pot cumpăra nimic.");
 Rezultat:
 
 ```text
-Am cumpărat 1 înghețate. Au rămas 7 lei.
-Am cumpărat 2 înghețate. Au rămas 4 lei.
-Am cumpărat 3 înghețate. Au rămas 1 lei.
+Înghețate cumpărate: 1. Au rămas 7 lei.
+Înghețate cumpărate: 2. Au rămas 4 lei.
+Înghețate cumpărate: 3. Au rămas 1 lei.
 Nu mai pot cumpăra nimic.
 ```
 
@@ -421,6 +421,7 @@ Fă un joc „Contul de bani”: începi cu 100 de lei, iar la fiecare rundă ut
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) bucla `while` repetă corpul cât timp condiția rămâne adevărată; (2) condiția rămâne mereu adevărată, bucla nu se mai oprește și pagina îngheață; (3) când corpul trebuie să ruleze cel puțin o dată, de exemplu „întreabă până răspunde corect”; (4) sare peste restul rundei curente și trece la runda următoare; (5) `null`.  
 - **Exercițiul B:** (1) `3`, `2`, `1`; (2) `10`; (3) `1`, `2`, `4`, `5`; (4) `1`, `2`.  
 - **Exercițiul C:** (1) `let i = 10; while (i >= 1) { console.log(i); i--; }`; (2) `let n = 5; while (n < 200) { console.log(n); n *= 2; }`; (3) `let cuvant; do { cuvant = prompt("Un cuvânt de cel puțin 3 litere:"); } while (cuvant === null || cuvant.length < 3);` (atenție: la Cancel `prompt` dă `null`, iar `null.length` dă eroare; de aceea verificăm întâi `cuvant === null`, iar `||` oprește evaluarea).  
 - **Exercițiul D:** (1) lipsește `n++;` în corp (bucla nu se oprește); (2) `i = 5` trebuie o comparație, de exemplu `i > 5` sau `i !== 5` (depinde de ce vrea elevul); cu `=` condiția este mereu adevărată; (3) `break` în afara unei bucle.  

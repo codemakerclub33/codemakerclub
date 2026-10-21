@@ -385,6 +385,7 @@ Transformă una dintre paginile tale din Modulul 1 (de exemplu „Pagina mea des
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) meniul principal, adică linkurile spre părțile mari ale site-ului (de obicei într-o listă); (2) unul singur; (3) `section` este un capitol cu titlu, `article` este ceva de sine stătător, ca o postare sau un card; (4) în afara lui `main`; (5) `<head>` este din schelet și conține informații invizibile (`title`, `meta`), iar `<header>` este antetul vizibil din `<body>`.  
 - **Exercițiul B:** (1) `<nav>`; (2) `<footer>`; (3) `<main>`; (4) `<aside>`; (5) `<header>`.  
 - **Exercițiul D:** (1) `<h1>` este în `<head>`, unde nu se vede: trebuie `<header>` în `<body>`; (2) titlul `<h4>` sare de la `h1` direct la `h4`: trebuie `<h2>`; (3) există două `<main>`: trebuie unul singur. Verificați să fie 3 greșeli distincte.  
 - **Exercițiul E:** taguri cu înțeles ajută cititoarele de ecran, motoarele de căutare și programatorii; `head` conține informații invizibile, `header` este antetul vizibil.  

@@ -21,7 +21,7 @@ Galeriile se află pe aproape orice site. Dacă ai grijă ca ele să funcționez
 - Imaginile sunt **din pachetul media sau făcute de tine**, fără persoane și fără date personale.  
 - Fiecare imagine are `alt` care spune ce se vede.  
 - Imaginile sunt mici ca mărime de fișier (cel mult 300 KB), ca site-ul să nu se încarce greu.  
-- Fiecare poză este într-un `<button>`: se poate apăsa și cu Tab și Enter.
+- Fiecare poză este într-un `<button>`: se poate alege cu Tab și apăsa cu Enter.
 
 ---
 
@@ -128,7 +128,7 @@ Scrie `alt`-ul **tău**, care descrie imaginea ta. Ce este nou:
 ```html
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagine mărită" hidden>
   <button class="inchide" id="inchide" type="button" aria-label="Închide imaginea">×</button>
-  <img id="lightboxImg" src="" alt="">
+  <img id="lightboxImg" alt="">
 </div>
 ```
 
@@ -217,7 +217,7 @@ function deschideImagine(buton) {
 
 function inchideImagine() {
   lightbox.hidden = true;
-  lightboxImg.src = "";
+  lightboxImg.removeAttribute("src");
 
   if (butonDeschis !== null) {
     butonDeschis.focus();
@@ -354,6 +354,8 @@ Facem **pagina de contact**: un formular cu verificarea textului, mesaje de eroa
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) umple tot dreptunghiul tăind puțin imaginea, fără să o deformeze; (2) pentru că `display: flex` anulează atributul `hidden`, iar regula cu `display: none` îl face să meargă din nou; (3) verifică dacă s-a apăsat chiar pe fundal, nu pe poză, ca să se închidă doar atunci; (4) ca cine folosește tastatura să revină la poza apăsată și să nu se piardă în pagină.  
+- **Dacă ritmul clasei este lent:** deschiderea și închiderea cu buton și cu `Escape` sunt suficiente; verificarea `eveniment.target === lightbox` și întoarcerea focusului sunt bonus.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 5.  
 - **Exercițiul B:** nu are răspuns unic; verificați că galeria rămâne funcțională.  
 - **Exercițiul C:** (1) `max-height: 85` trebuie `85vh` (lipsește unitatea); (2) `querySelector` întoarce un singur element; pentru toate trebuie `querySelectorAll`; (3) `addEventListener("click", deschideImagine(mini))` apelează funcția imediat; corect: `function () { deschideImagine(mini); }`. Observație: lipsesc `inset` și `background-color` la `.lightbox`, dar acestea nu sunt greșeli de sintaxă.  

@@ -579,7 +579,7 @@ Pe foaie: de ce nu ascundem informații importante în spatele lui `:hover`? De 
 5. **Ai scos conturul cu `outline: none;`** fără să pui altceva — cine folosește tastatura nu mai vede unde este.  
 6. **Ai pus informații importante doar la `:hover`** — pe telefon nu există mouse, deci nu apar niciodată.  
 7. **Efect prea lung** (de exemplu 3 secunde) — pagina pare înceată. Alege între 0,2s și 0,4s.  
-8. **`:nth-child` nu alege ce vrei** — numără toți frații, inclusiv titlurile (`th`) sau alte elemente de același nivel.  
+8. **`:nth-child` nu alege ce vrei** — numără toți frații, inclusiv titlul sau alte elemente de același nivel; pentru un anumit tip de tag folosește `:nth-of-type`.  
 9. **Zoom-ul imaginii iese din cutie** — lipsește `overflow: hidden;` pe cutie.  
 10. **Cursorul rămâne săgeată pe buton** — ai uitat `cursor: pointer;`.  
 
@@ -609,7 +609,9 @@ Fă pagina „Lista mea de jocuri”: un meniu, patru cărți care se ridică, d
 ---
 
 ## Răspunsuri pentru profesor
-- **Exercițiul B:** (1) elementul se micșorează la 90% când mouse-ul este deasupra; (2) al treilea element `li` (între frații lui) devine roșu; (3) cutia se rotește lin 90 de grade într-o secundă, cu viteză egală, la `:hover`, și revine lin când mouse-ul pleacă, pentru că `transition` este pus pe starea de bază; (4) primul `p` dintre frații lui devine îngroșat.  
+- **Quiz scurt:** (1) schimbă stilul elementului numai cât timp mouse-ul este deasupra lui; (2) pe elementul de bază, nu pe `:hover`; (3) mărește elementul de 1,1 ori, fără să împingă celelalte elemente; (4) rândurile pare ale tabelului (al doilea, al patrulea și tot așa); (5) pentru că cine folosește tastatura nu ar mai vedea unde este selecția, deci trebuie pus un alt contur în loc.  
+- **Dacă ritmul clasei este lent:** Exemplul 7 (`:nth-child`) și tabelul din proiect sunt opționale; rămâneți la `:hover` și `transition`.  
+- **Exercițiul B:** (1) elementul se micșorează la 90% când mouse-ul este deasupra; (2) al treilea element `li` (între frații lui) devine roșu; (3) cutia se rotește lin 90 de grade într-o secundă, cu viteză egală, la `:hover`, și revine lin când mouse-ul pleacă, pentru că `transition` este pus pe starea de bază; (4) orice `p` care este **primul copil** al părintelui său devine îngroșat; dacă înaintea lui este alt element (de exemplu un `h1`), regula nu are niciun efect. Pentru primul `p`, oriunde ar sta, se folosește `p:first-of-type`.  
 - **Exercițiul C:** (1) `a:hover { color: red; text-decoration: none; }`; (2) `.c { transition: transform 0.4s ease; } .c:hover { transform: rotate(5deg); }`; (3) `li:nth-child(odd) { background-color: yellow; }`.  
 - **Exercițiul D:** (1) `transition` trebuie scris pe `.buton`, nu pe `:hover`; (2) `0.3` trebuie `0.3s`; (3) două `transform` în aceeași regulă — trebuie unite: `transform: scale(1.2) rotate(10deg);`.  
 - **Exercițiul E:** pe telefon nu există mouse, iar informația ar dispărea; cine folosește tastatura are nevoie să vadă unde este selecția; `transition` se scrie pe stilul de bază.  

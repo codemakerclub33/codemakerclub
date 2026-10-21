@@ -87,7 +87,7 @@ Compară:
 
 Al doilea text este mult mai bun: spune **ce vezi**, nu doar „poza”.
 
-> Încearcă și o greșeală: scrie `src="pisica.jpgg"` (cu un `g` în plus). Imaginea dispare și apare textul `alt`. Repară și imaginea revine.
+> Încearcă și o greșeală: scrie `src="pisica1.jpgg"` (cu un `g` în plus). Imaginea dispare și apare textul `alt`. Repară și imaginea revine.
 
 **Gata când:**  
 - [ ] O imagine se vede în pagină  
@@ -344,7 +344,7 @@ Pe foaie: la ce folosește textul `alt` și de ce nu scriem doar „poza” în 
 - De ce scriem `alt`?  
 - Cum scrii `src` pentru o imagine din folderul `imagini`?  
 - Are `<img>` tag de închidere?  
-- Ce formă de imagine folosești pentru un desen cu fundal transparent?
+- Ce format de imagine folosești pentru un desen cu fundal transparent?
 
 ## Temă
 Fă o pagină `index.html` cu **o galerie de 4 imagini** despre ceva ce iubești (un joc, un loc, un sport): fiecare cu `alt`, legendă și o poveste scurtă în paragraf. Pune imaginile într-un folder `imagini` în folderul `Prenume_Nume_W1_L6`.
@@ -355,6 +355,7 @@ Facem paginile **colorate**: învățăm să schimbăm culoarea textului și a f
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) `src`; (2) textul `alt` spune în cuvinte ce se vede: apare dacă imaginea nu se încarcă și este citit cu voce tare pentru cei care nu văd imaginea; (3) `src="imagini/pisica1.jpg"` (folderul, apoi `/`, apoi numele fișierului); (4) nu, `<img>` este tag singur (nu scrii `</img>`); (5) `.png`.  
 - **Exercițiul B:** (1) `imagini/pisica.jpg`; (2) `../imagini/pisica.jpg`.  
 - **Exercițiul C:** exemple: (1) „Un câine alb aleargă prin zăpadă”; (2) „Desen cu un soare zâmbăreț deasupra unei case”; (3) „Tort de ziua mea, cu zece lumânări”.  
 - **Exercițiul D:** (1) lipsește `alt`; (2) `\` în loc de `/`; (3) `</img>` nu există, `img` e tag singur.  

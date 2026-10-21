@@ -114,7 +114,7 @@ Un `<div class="carduri">` ține toate cardurile: el va fi **grila**. Scrie tu c
 Cum se citește linia cu `grid-template-columns`:
 - `minmax(240px, 1fr)`: fiecare coloană are **cel puțin** 240 px și, dacă mai este loc, se întinde egal cu celelalte.  
 - `repeat(auto-fit, ...)`: pune **câte coloane încap** pe rând.  
-- Rezultatul: lățime mare → 3–4 carduri pe rând; lățime mică → 1 card pe rând. Fără `@media`.
+- Rezultatul: lățime mare → 3 carduri pe rând; lățime mică → 1 card pe rând. Fără `@media`.
 
 **Încearcă tu (15 min)**  
 - [ ] Adaugă regula  
@@ -164,7 +164,7 @@ Cum se citește linia cu `grid-template-columns`:
 ```
 
 - `box-shadow: 0 2px 6px ...` face o umbră mică în jurul cardului; la `:hover` umbra devine mai mare și cardul se ridică, deci pare că „se ridică de pe pagină”.  
-- `transition` lista două proprietăți separate prin virgulă.  
+- `transition` enumeră două proprietăți, separate prin virgulă.  
 - `.card-poza` folosește Flexbox ca să pună pictograma exact la mijloc.  
 - `font-size: 4rem` mărește emoticoana.
 
@@ -263,6 +263,7 @@ Facem **galeria**: pozele mici într-o grilă, iar la clic apare imaginea mare, 
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) pune pe un rând câte coloane încap; (2) fiecare coloană are cel puțin 240 px și, dacă mai este loc, se întinde egal cu celelalte; (3) pentru o bucată de conținut care are sens de sine stătător, de exemplu un card sau o știre; (4) ascunde elementul de cititoarele de ecran.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 5.  
 - **Exercițiul B:** nu are răspuns unic; verificați că grila rămâne adaptivă.  
 - **Exercițiul C:** (1) `display: flex` trebuie `display: grid`; (2) `minmax(1fr, 240px)` trebuie `minmax(240px, 1fr)`; (3) `gap: 20` trebuie `gap: 20px`. Observație: `translateY(5px)` coboară cardul; pentru ridicare trebuie `-5px`.  

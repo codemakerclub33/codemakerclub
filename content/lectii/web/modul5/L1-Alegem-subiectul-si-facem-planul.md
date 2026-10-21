@@ -292,6 +292,7 @@ Scriem **scheletul**: cele 3 pagini HTML cu același antet și același subsol, 
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) un desen simplu al paginii, care arată unde stă fiecare lucru (în engleză *wireframe*); (2) pentru că numele fără spații și fără diacritice merg peste tot pe internet, iar `Pisică mică.jpg` se strică ușor în adresă; (3) propoziția care descrie imaginea (`alt`), folosită de cei care nu văd poza și de cititoarele de ecran; (4) date personale: nume complet, adresă, școală, telefon, email, poze cu oameni.  
 - **Exercițiul A:** pentru evaluare: subiect potrivit, 3 pagini, 3 schițe, paletă de 4 culori, cel puțin 6 imagini cu nume corecte și testul `index.html` funcțional.  
 - **Exercițiul B:** nu are răspuns corect; notați lecțiile de repetat.  
 - **Exercițiul C:** (1) titlul conține nume și oraș (date personale); (2) numele paginilor nu sunt clare și consecvente (de exemplu `index.html`, `galerie.html`, `contact.html`); (3) numele imaginilor au majuscule, spații, diacritice sau paranteze; (4) formularul cere date personale (nume, adresă, telefon). Se acceptă oricare 3 dintre cele 4 probleme.  

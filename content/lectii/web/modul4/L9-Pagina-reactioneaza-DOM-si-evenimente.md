@@ -42,6 +42,7 @@ Din lecția trecută ții minte că:
 **Încearcă tu (4 min)**  
 - [ ] Creează folderul `Prenume_Nume_W4_L9` cu `index.html` (scheletul complet) și `script.js`  
 - [ ] Pune în `index.html` un `<h1 id="titlu">Pagina mea</h1>`, un `<p id="mesaj">Salut!</p>` și un `<button id="buton">Apasă aici</button>`  
+- [ ] Creează și `stil.css` (poate fi gol acum), legat în `<head>` cu `<link rel="stylesheet" href="stil.css">`; îl vom folosi în exemplele de mai jos  
 - [ ] Leagă `script.js` cu `<script src="script.js"></script>` **chiar înainte de `</body>`** (este important: elementele trebuie să existe înainte să le cauți)  
 
 > De aici înainte, exemplele arată ce scrii în `index.html` și, separat, în `script.js`.
@@ -556,7 +557,7 @@ Pe foaie: ce este DOM-ul? Ce face `addEventListener`? De ce folosim `textContent
 ## Greșeli frecvente
 1. **Scriptul este înainte de elemente** (în `<head>` sau la început) — elementele nu există încă; pune scriptul înainte de `</body>`.  
 2. **Selector greșit** — `querySelector("buton")` caută un tag `<buton>`; pentru `id` scrii `"#buton"`.  
-3. **Ai scris `getElementById("#buton")` cu `#`** — la `getElementById` nu se pune `#`; la `querySelector` se pune.  
+3. **Ai uitat ghilimelele** în jurul selectorului — scrie `querySelector("#buton")`, nu `querySelector(#buton)`.  
 4. **Ai scris `addEventListener("click", functie())`** — cu paranteze, funcția rulează imediat. Scrie numele ei fără paranteze (`functie`) sau o funcție scrisă direct acolo.  
 5. **Ai scris `textcontent`** sau `Textcontent` — corect este `textContent` (cu C mare).  
 6. **Ai uitat `.value`** la un câmp de text — `camp` este elementul, `camp.value` este textul scris.  
@@ -591,6 +592,8 @@ Proiectul final al modulului: **„Pagina interactivă”**, un mic joc sau un t
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) pentru că elementele trebuie să existe în pagină înainte ca scriptul să le caute; (2) `document.querySelector("#titlu")`; (3) numai când apare evenimentul (de exemplu la click), nu imediat; (4) adaugă clasa dacă lipsește și o scoate dacă există (un comutator); (5) text (`string`), chiar dacă utilizatorul a scris un număr.  
+- **Dacă ritmul clasei este lent:** `querySelectorAll`, `style.backgroundColor` și `focus()` sunt opționale; puteți da elevilor CSS-ul gata, ca timpul să meargă pe JavaScript.  
 - **Exercițiul B:** (1) schimbă textul elementului cu `id="titlu"` în „Salut”; (2) la fiecare click pe `buton`, scrie „Click!” în consolă; (3) adaugă clasa `noapte` pe `<body>`; (4) afișează `null`, pentru că elementul nu există.  
 - **Exercițiul C:** (1) `document.querySelector("#info").textContent = "Gata!";`; (2) `document.querySelector("#ascunde").addEventListener("click", function () { document.querySelector("#cutie").classList.toggle("ascuns"); });` plus `.ascuns { display: none; }` în CSS; (3) `document.querySelector("#rezultat").textContent = document.querySelector("#cuvant").value.toUpperCase();` (într-un `click`).  
 - **Exercițiul D:** (1) `"buton"` trebuie `"#buton"`; (2) `textcontent` trebuie `textContent`; (3) `spuneSalut()` cu paranteze rulează imediat; trebuie `spuneSalut`.  

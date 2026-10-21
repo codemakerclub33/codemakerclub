@@ -67,7 +67,7 @@ Scrie textele pentru **subiectul tău**. Apoi, în secțiunea de mai jos, care a
 
 ### Exemplul 2 — Degradé și mărime adaptivă
 
-În `stil.css`, după antet, adaugă:
+În `stil.css`, **înainte de blocul `@media`** de la sfârșitul fișierului, adaugă:
 
 ```css
 /* ===== Hero ===== */
@@ -268,6 +268,7 @@ Facem **carduri**: 6 căsuțe cu poză și text, așezate într-o grilă care se
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) minim, preferat, maxim; (2) unul singur; (3) `<a>` când duce în altă pagină, `<button>` când face o acțiune în pagina curentă; (4) *call to action*, adică „te îndemn să faci ceva”.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 5.  
 - **Exercițiul B:** nu are răspuns unic; verificați că textul rămâne citibil.  
 - **Exercițiul C:** (1) lipsește virgula după `135deg` (corect: `linear-gradient(135deg, #1d3557, #457b9d)`); (2) `clamp` are ordinea greșită (minimul 3rem este mai mare decât maximul 1.8rem; corect: `clamp(1.8rem, 6vw, 3rem)`); (3) text alb pe buton galben deschis: contrast prea slab (corect: text închis, de exemplu `#1d2d3a`).  

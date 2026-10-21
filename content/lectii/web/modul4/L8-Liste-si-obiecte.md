@@ -8,7 +8,7 @@
 ---
 
 ## Obiectiv
-La finalul orei știi să creezi o listă și să citești un element după poziție, să adaugi și să scoți elemente (`push`, `pop`), să cauți cu `includes`, să parcurgi lista cu `for` și cu `for…of`, să calculezi o sumă, o medie și un maxim, să creezi un obiect cu proprietăți, să-l citești și să-l schimbi, să faci o listă de obiecte și să dai un obiect unei funcții.  
+La finalul orei știi să creezi o listă și să citești un element după poziție, să adaugi și să scoți elemente (`push`, `pop`), să cauți cu `includes`, să parcurgi lista cu `for` și cu `for…of`, să calculezi o sumă, o medie și un maxim, să creezi un obiect cu proprietăți, să citești și să schimbi obiectul, să faci o listă de obiecte și să dai un obiect unei funcții.  
 **Minim:** o listă cu 5 elemente afișate cu o buclă și un obiect cu 3 proprietăți afișate în consolă.  
 **Ținta orei (Complet):** + adăugare și căutare, media unei liste de numere, o listă de obiecte parcursă cu `for…of`, o funcție care primește un obiect și explicarea de ce primul element are numărul 0.
 
@@ -140,7 +140,7 @@ console.log(jocuri.join(", "));          // fotbal, șah
 
 **Încearcă tu (6 min)**  
 - [ ] Fă o listă cu 3 jocuri și adaugă unul cu `push`  
-- [ ] Scoate ultimul element cu `pop()` și afișează-l  
+- [ ] Scoate ultimul element cu `pop()` și afișează elementul scos  
 - [ ] Verifică dacă un joc este în listă cu `includes`  
 
 ---
@@ -195,7 +195,7 @@ console.log("Media:", medie.toFixed(1));       // 8.0
 console.log("Nota cea mai mare:", maxim);      // 10
 ```
 
-Șabloanele sunt cele din lecția cu `for`, doar că acum parcurgi o listă:
+Șabloanele sunt cele din Lecția 5 (`for`), doar că acum parcurgi o listă:
 - **Suma**: `let suma = 0;` **înainte**, apoi `suma += element;` în buclă.  
 - **Media**: suma împărțită la `lista.length`.  
 - **Maximul**: pornești cu **primul** element ca „cel mai mare de până acum”; dacă găsești unul mai mare, îl înlocuiești.
@@ -526,6 +526,8 @@ Fă un program „Clasamentul meu de filme”: o listă de 5 obiecte (`nume`, `n
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) poziția `0`; (2) `push` adaugă un element la sfârșitul listei, iar `pop` scoate ultimul element și îl dă înapoi; (3) `-1`; (4) între acolade, cu proprietăți de forma etichetă și valoare, de exemplu `{ nume: "Puzzle", nota: 9 }`, iar proprietatea se citește cu punct: `joc.nota`; (5) `jucatori[1].nume`.  
+- **Dacă ritmul clasei este lent:** `join`, `indexOf`, `unshift` / `shift`, `delete` și Exemplul 9 (obiectul dat unei funcții) sunt opționale; proiectul poate rămâne la lista de obiecte, `mediaNotelor` și `celMaiBunJoc`, fără `prompt`.  
 - **Exercițiul B:** (1) `y`; (2) `w`; (3) `-1`; (4) `15`; (5) `2`.  
 - **Exercițiul C:** (1) `const n = [3, 8, 5, 12, 7]; for (const x of n) { if (x % 2 === 0) { console.log(x); } }`; (2) `const film = { nume: "Aventura", nota: 9, esteGratuit: true };`; (3) `function maresteNota(joc) { joc.nota += 1; }`.  
 - **Exercițiul D:** (1) `culori[3]` nu există (ultimul este `culori[2]`); (2) `culori.push = "galben"` trebuie `culori.push("galben");`; (3) proprietățile din `pisica` se despart cu virgulă, nu cu `;` (iar `pisica.Nume` trebuie `pisica.nume`).  

@@ -283,7 +283,7 @@ nav a:focus {
 }
 
 .carte {
-  animation: aparitie 0.7s ease both;
+  animation: aparitie 0.7s ease backwards;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -351,7 +351,7 @@ Spune colegilor, în ordine:
 1. „Pagina mea este despre …”  
 2. „Am ales culorile … pentru că …”  
 3. „Cel mai mândru sunt de …” (o parte a paginii)  
-4. „Cel mai greu mi s-a părut …, și l-am rezolvat așa: …”  
+4. „Cel mai greu mi s-a părut …, iar soluția a fost: …”  
 5. „Pe telefon pagina arată așa: …” (arată ecranul în DevTools)
 
 Colegul care ascultă îți spune **un lucru reușit** și **un lucru care se poate îmbunătăți** (cu politețe).
@@ -442,6 +442,7 @@ Arată pagina unui membru al familiei, pe calculator și pe telefon, și întrea
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) cu `<link rel="stylesheet" href="stil.css">` în `<head>`; (2) rădăcina paginii, unde scriem variabilele paletei, de exemplu `--principala: navy;`, ca să le folosim peste tot cu `var(--principala)`; (3) pe `ul` pui `display: flex;` și `list-style: none;`; (4) cu o grilă: `display: grid;` și `grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));`; (5) pui regula `@media (prefers-reduced-motion: reduce)` care oprește animațiile cu `animation: none;`.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 8. Minimul de acceptare: `stil.css` legat corect, culori și fonturi alese, carduri cu chenar și colțuri rotunjite, meniu orizontal cu Flexbox și o regulă `@media`. Nu cereți animații dacă elevul nu le-a înțeles; contează să nu fie rău făcute.  
 - **Exercițiul B:** nu are răspuns corect; este pentru elev. Notați lecțiile pe care le cere repetate și reveniți la ele.  
 - **Exercițiul C:** (1) `var(culoare)` trebuie `var(--culoare)`; (2) `transition: transform 0.3;` trebuie `0.3s`; (3) `padding: 10` trebuie `padding: 10px`.  

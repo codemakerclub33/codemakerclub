@@ -334,7 +334,7 @@ Adaugă **cel puțin două funcții ale tale**, de exemplu `esteMajor(varsta)` s
 
 ### Exercițiul A — „Trusa mea de unelte” (obligatoriu)
 În folderul `Prenume_Nume_W4_L7` ai `index.html` și `script.js`, cu:
-- **minimum 5 funcții**, cu nume bune (verbe în camelCase);
+- **minimum 5 funcții**, cu nume care spun clar ce face funcția (în camelCase);
 - cel puțin una cu **mai mulți parametri** și una cu **valoare de rezervă**;
 - cel puțin două funcții care **returnează** un rezultat și o funcție care **decide** (returnează `true`/`false`);
 - o funcție care **cheamă altă funcție**;
@@ -424,8 +424,9 @@ Scrie funcțiile pentru un mini-magazin de jocuri: `pretCuReducere(pret, procent
 ---
 
 ## Răspunsuri pentru profesor
+- **Quiz scurt:** (1) `function` spune „fac o funcție nouă”, adică o bucată de cod cu nume; (2) scrii numele ei urmat de paranteze, de exemplu `spuneSalut();`; (3) o „cutie” din definiția funcției, care primește o valoare nouă la fiecare apelare; (4) trimite o valoare înapoi acolo unde a fost chemată funcția și încheie funcția; (5) pentru că este variabilă locală: există numai înăuntrul funcției, de aceea funcția își returnează rezultatul.  
 - **Exercițiul B:** (1) `12`; (2) `6`; (3) afișează `A`, apoi `5` (funcția se oprește la `return`, deci `B` nu apare); (4) `4 25`.  
 - **Exercițiul C:** (1) `function patrat(x) { return x * x; }`; (2) `function esteMajor(varsta) { return varsta >= 18; }`; (3) `function repetaText(text, ori) { return text.repeat(ori); }`.  
 - **Exercițiul D:** (1) funcția `aduna` afișează în loc să returneze (trebuie `return a + b;`); (2) `salut;` nu cheamă funcția (trebuie `salut("Ana");`); (3) `patrat()` fără argument dă `NaN` (trebuie `patrat(4)`).  
 - **Exercițiul E:** funcția este o bucată de cod cu nume, scrisă o dată și folosită de mai multe ori; parametrul este „cutia” din definiție, argumentul este valoarea pe care o dai la apel; `console.log` afișează, `return` dă valoarea înapoi.  
-- **Notă pentru profesor:** pentru parametri și argumente, o analogie bună este „cutia de suc”: parametrul este locul gol, argumentul este sucul care intră. Pentru `return`, folosiți un automat de bomboane: bagi banii (argumentele) și primești bomboana (valoarea returnată). Pentru Exemplul 8, cereți elevilor să-și aleagă mai întâi pe foaie cele două funcții noi, apoi să le scrie.
+- **Notă pentru profesor:** pentru parametri și argumente, o analogie bună este „cutia de suc”: parametrul este locul gol, argumentul este sucul care intră. Pentru `return`, folosiți un automat de bomboane: bagi banii (argumentele) și primești bomboana (valoarea returnată). Pentru Exemplul 8, cereți elevilor să aleagă mai întâi pe foaie cele două funcții noi, apoi să le scrie.
