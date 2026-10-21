@@ -1,0 +1,34 @@
+---
+description: GRANT-uri obligatorii la fiecare tabel nou din Supabase (schimbare Data API, 30 oct. 2026)
+globs: supabase/migrations/**/*.sql
+alwaysApply: false
+---
+
+# Tabele noi în `public` → GRANT explicit
+
+Din 30 octombrie 2026 Supabase nu mai acordă automat acces Data API tabelelor noi din `public`.
+Fără GRANT, supabase-js / PostgREST returnează `permission denied`.
+
+La **fiecare** `CREATE TABLE public.…` adaugă în **aceeași migrare**:
+
+1. `ALTER TABLE public.<tabel> ENABLE ROW LEVEL SECURITY;` (obligatoriu).
+2. Grant-urile potrivite:
+
+**Tabel folosit din client, cu policy-uri RLS pentru utilizatori logați:**
+```sql
+GRANT SELECT, INSERT, UPDATE, DELETE ON public.<tabel> TO authenticated;
+GRANT SELECT, INSERT, UPDATE, DELETE ON public.<tabel> TO service_role;
+```
+
+**Tabel „doar server” (server actions cu `createAdminClient`), fără policy-uri:**
+```sql
+REVOKE ALL ON public.<tabel> FROM anon, authenticated;
+GRANT SELECT, INSERT, UPDATE, DELETE ON public.<tabel> TO service_role;
+```
+
+## Reguli
+- `anon` nu primește grant decât dacă tabelul trebuie citit public (rar; justifică în comentariu).
+- Dacă tabelul are `SERIAL` / secvențe: `GRANT USAGE, SELECT ON SEQUENCE … TO authenticated, service_role;`.
+- `service_role` primește implicit acces la tabelele noi (default privileges din `20261021112500_grants_data_api.sql`), dar rămâne bine să-l scrii explicit în migrare.
+- Creează migrările cu `supabase migration new <nume>` (sau același format `YYYYMMDDHHMMSS_nume.sql`).
+- Nu rula `supabase db reset` pe un proiect live.
