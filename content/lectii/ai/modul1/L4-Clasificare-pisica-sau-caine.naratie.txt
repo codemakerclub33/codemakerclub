@@ -1,0 +1,25 @@
+Lecția a patra din Modulul unu, AI pentru copii. Clasificare: pisică sau câine.
+
+Azi afli cum alege un model între două sau mai multe categorii. Vezi ce sunt trăsăturile, cum se dă un scor și ce se întâmplă când modelul nu este sigur. Facem un clasificator de hârtie.
+
+Obiectivul. Minim: un clasificator de hârtie cu trei trăsături care alege între două categorii. Complet: în plus un scor pentru fiecare categorie, un caz în care modelul este nesigur și un tabel cu rezultatele testării.
+
+Ce este clasificarea. Clasificarea înseamnă să pui un lucru într-o categorie: pisică sau câine, spam sau mesaj normal. Modelul se uită la trăsături, adică la lucruri pe care le poate observa, ca mărimea, culoarea sau forma urechilor.
+
+Exemplele unu și doi. Joci cele douăzeci de întrebări: un coleg se gândește la o pisică sau la un câine, iar tu pui întrebări cu da sau nu. Apoi alegi trăsăturile care ajută mult. Patru picioare au amândouă, deci nu ajută.
+
+Exemplul trei. Fiecare trăsătură votează pentru o categorie și aduni punctele. Dacă ies trei puncte pentru pisică și două pentru câine, modelul spune pisică, dar nu este foarte sigur.
+
+Exemplul patru. Dacă scorurile sunt egale sau foarte apropiate, un model bun poate spune nu sunt sigur și poate cere unui om să verifice.
+
+Exemplul cinci. Clasifici zece cartonașe, verifici etichetele și numeri câte sunt corecte. Acest număr se numește acuratețe. Opt din zece înseamnă optzeci la sută. Notezi și ce fel de greșeli face modelul.
+
+Exemplul șase. Îți faci clasificatorul tău: alegi două categorii, trei trăsături, un tabel de scor și șase exemple noi pe care le testezi cu un coleg. Opțional, un adult poate arăta un instrument gratuit în browser, cu obiecte, fără fețe și fără cont pentru copii.
+
+Greșeli frecvente. Să crezi că o trăsătură ajunge, că modelul este mereu sigur sau că acuratețea sută la sută înseamnă că modelul este perfect.
+
+Întrebări de verificare. Ce este clasificarea? Ce este o trăsătură? De ce folosim mai multe trăsături? Cum calculezi acuratețea? Ce poate face un model când nu este sigur?
+
+Temă. Termină clasificatorul, testează clasificatorul pe cinci desene noi și scrie două lucruri pe care le încurcă.
+
+Urmează Lecția a cincea: predicții și probabilități.

@@ -1,0 +1,25 @@
+Lecția a șasea din Modulul unu, AI pentru copii. Greșeli și prejudecăți.
+
+Azi afli de ce un model poate trata inegal oameni sau situații, chiar dacă nimeni nu a vrut asta. Căutăm cine lipsește din date și învățăm cum se repară problema. Nu ai nevoie de calculator.
+
+Obiectivul. Minim: un exemplu în care un model greșește pentru că datele nu cuprind pe toată lumea. Complet: în plus jocul Cine lipsește din date, o listă cu trei soluții și un set de date reparat.
+
+Ce este prejudecata într-un model. Un model poate funcționa bine pentru unii și mai prost pentru alții, pentru că datele din care a învățat nu au fost echilibrate. Nu este vorba că modelul este rău, ci că datele au fost incomplete.
+
+Exemplele unu și doi. Un program a văzut poze doar cu adidași și spune despre un papuc de casă că nu este pantof. Nimeni nu a păcălit programul, pur și simplu nu a văzut papuci. La fel, un program de voce învățat doar de la adulți poate avea probleme cu vocile copiilor.
+
+Exemplul trei. Cine lipsește. Într-o poză cu o școală apar doar copii cu ghiozdan albastru. Un model învață să recunoască un elev după ghiozdanul albastru. Ce se întâmplă cu un elev cu ghiozdan roșu? Desenezi trei elevi noi, diferiți, ca setul să fie mai echilibrat.
+
+Exemplul patru. Un model care învață din texte poate prelua stereotipuri, adică idei simplificate despre cum sunt toți oamenii dintr-un grup. Oricine poate fi inginer, profesor sau orice altceva. Un model oglindește datele, deci noi trebuie să observăm și să corectăm.
+
+Exemplul cinci. Trei soluții: mai multe date variate, testare pe grupuri diferite și verificare de către un om când răspunsul contează.
+
+Exemplul șase. Faci un tabel pentru un model imaginar: ce a văzut, cine sau ce lipsește și ce adaugi. Apoi desenezi trei exemple noi.
+
+Greșeli frecvente. Să crezi că modelul este rău, că este mereu corect sau că nu putem face nimic.
+
+Întrebări de verificare. Ce înseamnă că un model oglindește datele? De ce a greșit programul cu adidași? Ce este un stereotip? Care sunt două soluții pentru date incomplete? De ce verifică un om răspunsurile importante?
+
+Temă. Termină tabelul, întreabă pe cineva din familie ce stereotip a auzit și cum se corectează, și desenează un set variat de șase exemple.
+
+Urmează Lecția a șaptea: AI în viața de zi cu zi.

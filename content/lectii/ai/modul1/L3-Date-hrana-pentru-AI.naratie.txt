@@ -1,0 +1,25 @@
+Lecția a treia din Modulul unu, AI pentru copii. Date: hrana pentru AI.
+
+Azi afli ce sunt datele, de ce AI are nevoie de ele și cum arată un set de date bun. Strângi date printr-un sondaj și le pui într-un tabel și într-o diagramă. Nu ai nevoie de calculator.
+
+Obiectivul. Minim: un tabel cu cel puțin opt răspunsuri. Complet: în plus o diagramă cu bare, trei motive pentru care un set poate fi slab și un set de douăsprezece exemple pentru o categorie.
+
+Ce sunt datele. Date sunt informații strânse despre ceva: numere, cuvinte, imagini sau sunete. Un program cu AI învață din date. Dacă datele sunt multe, variate și corecte, modelul învață bine. Dacă sunt puține, la fel sau greșite, modelul învață prost.
+
+Exemplele unu și doi. Cauți în jurul tău lucruri din care poți face date și potrivești întrebări cu tipul de date: vreme, sunet, imagini sau text.
+
+Exemplul trei. Sondajul clasei. Alegi o întrebare simplă cu trei sau patru variante, întrebi cel puțin opt persoane și notezi răspunsurile cu liniuțe. Nu întrebi pe nimeni lucruri personale, cum ar fi adresa sau parolele.
+
+Exemplul patru. Transformi tabelul într-o diagramă cu bare, cu titlu, numele variantelor jos și numărul de răspunsuri în stânga.
+
+Exemplele cinci și șase. Un set bun de date este suficient de mare, variat, corect și potrivit. Programatorii spun gunoi intră, gunoi iese: dacă datele sunt proaste, și rezultatele sunt proaste.
+
+Exemplul șapte. Alegi o categorie și faci douăsprezece exemple variate, cu etichete. Apoi îți verifici setul: mărime, varietate, corectitudine, potrivire.
+
+Greșeli frecvente. Să crezi că datele sunt doar numere, că mai multe date sunt mereu mai bune sau că poți întreba orice despre oameni.
+
+Întrebări de verificare. Ce sunt datele? Care sunt trei tipuri de date? Ce înseamnă un set variat? Ce înseamnă gunoi intră, gunoi iese? De ce nu strângem date personale?
+
+Temă. Termină setul, fă un sondaj simplu acasă și scrie trei lucruri din casă care produc date.
+
+Urmează Lecția a patra: clasificare, pisică sau câine.

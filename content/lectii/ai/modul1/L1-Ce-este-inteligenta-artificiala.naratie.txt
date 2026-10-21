@@ -8,13 +8,13 @@ Ce este AI. Inteligența artificială înseamnă programe care pot face lucruri 
 
 Exemplul unu. Om sau mașină. Cineva din familie sau profesorul citește opt sarcini, iar tu ridici cartonașul Om sau Mașină. La unele răspunsuri nu suntem de acord, și asta este bine.
 
-Exemplele doi și trei. Un program obișnuit face exact ce i-a scris omul. Un program cu AI primește foarte multe exemple și găsește singur ce au în comun. În joc, încerci întâi să explici unei persoane cum recunoaște o pisică doar cu reguli. Regulile se strică repede. Apoi primești douăzeci de poze cu etichete și înveți din exemple, exact cum învață AI.
+Exemplele doi și trei. Un program obișnuit face exact ce a scris omul. Un program cu AI primește foarte multe exemple și găsește singur ce au în comun. În joc, încerci întâi să explici unei persoane cum recunoaște o pisică doar cu reguli. Regulile se strică repede. Apoi primești douăzeci de poze cu etichete și înveți din exemple, exact cum învață AI.
 
 Exemplul patru. Sortăm cartonașe în două grupe: folosește AI și nu folosește AI. Ceasul deșteptător și becul care se aprinde la o oră fixă urmează o regulă simplă, deci nu sunt AI. Traducerea, recomandările de videoclipuri, filtrele foto și comenzile vocale folosesc AI.
 
 Exemplul cinci. Un calculator nu vede poze ca noi. Vede numere. O imagine este o grilă de pixeli, iar fiecare pixel are un număr. Desenezi litera T pe o grilă de cinci pe cinci, cu unu pe pătrățelele colorate și zero pe cele goale.
 
-Exemplele șase și șapte. AI poate greși, pentru că se bazează pe exemplele pe care le-a văzut. Dacă sunt puține sau nu seamănă cu realitatea, greșește. AI nu este magie: nu știe ce simți, nu înțelege lumea ca noi, nu este mereu corectă și nu decide pentru tine.
+Exemplele șase și șapte. AI poate greși, pentru că se bazează pe exemplele văzute. Dacă sunt puține sau nu seamănă cu realitatea, greșește. AI nu este magie: nu știe ce simți, nu înțelege lumea ca noi, nu este mereu corectă și nu decide pentru tine.
 
 Exemplul opt. Completezi fișa AI în jurul meu: cinci locuri cu AI, o explicație în trei propoziții pentru unul dintre ele și un desen.
 

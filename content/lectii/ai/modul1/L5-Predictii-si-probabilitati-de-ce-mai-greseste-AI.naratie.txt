@@ -1,0 +1,25 @@
+Lecția a cincea din Modulul unu, AI pentru copii. Predicții și probabilități: de ce mai greșește AI.
+
+Azi afli că AI nu spune sigur, ci cât de sigur. Jucăm jocuri cu zaruri, prognoze și cuvinte care urmează într-o propoziție. Nu ai nevoie de calculator.
+
+Obiectivul. Minim: un tabel cu douăzeci de aruncări de zar și o predicție făcută înainte. Complet: în plus jocul Cuvântul următor, un tabel cu probabilități și o concluzie despre de ce AI mai greșește.
+
+Ce sunt predicțiile. O predicție este o presupunere despre ce urmează. Probabilitatea arată cât de posibil este ceva, de la zero la sută la sută. Când prognoza spune șaptezeci la sută șanse de ploaie, înseamnă că ploaia este probabilă, nu sigură.
+
+Exemplele unu și doi. Discutăm dacă prognoza a greșit când spune șaptezeci la sută și nu plouă. Nu neapărat. Apoi alegi pentru fiecare situație: imposibil, puțin probabil, probabil sau sigur.
+
+Exemplul trei. Alegi un număr pe care îl crezi cel mai frecvent, arunci zarul de douăzeci de ori și notezi cu liniuțe. Rezultatele se apropie de o împărțire egală, dar nu sunt identice. O predicție bună doar spune ce este mai probabil.
+
+Exemplul patru. Cuvântul următor. Un adult citește începutul unei propoziții, de exemplu azi dimineață am băut un pahar cu. Fiecare scrie cuvântul pe care îl crede cel mai probabil. Cel ales de cei mai mulți este cel mai probabil. Un program face la fel, dar a numărat în milioane de texte.
+
+Exemplul cinci. Răspunzi la șase întrebări și scrii cât de sigur ești. Un model bun nu este sigur sută la sută fără motive.
+
+Exemplul șase. Completezi Jurnalul predicțiilor cu cinci predicții despre zilele următoare și cât de sigur ești.
+
+Greșeli frecvente. Să crezi că șaptezeci la sută înseamnă sigur, că o predicție bună nu greșește sau că un model sigur pe el are mereu dreptate.
+
+Întrebări de verificare. Ce este o predicție? Ce înseamnă șaptezeci la sută șanse de ploaie? Poate greși un model care alege cel mai probabil răspuns? Cum ghicește un program următorul cuvânt? De ce verificăm ce ne spune AI?
+
+Temă. Continuă jurnalul, joacă Cuvântul următor cu familia și aruncă zarul încă o dată de douăzeci de ori.
+
+Urmează Lecția a șasea: greșeli și prejudecăți.

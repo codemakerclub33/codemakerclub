@@ -55,7 +55,7 @@ Discutăm: la unele răspunsuri nu suntem toți de acord. Asta e bine! Ce poate 
 ---
 
 ## 2. Program cu reguli sau program care învață?
-Un **program obișnuit** face exact ce i-a scris omul, pas cu pas. Dacă regula lipsește, nu știe ce să facă.
+Un **program obișnuit** face exact ce a scris omul, pas cu pas. Dacă regula lipsește, nu știe ce să facă.
 
 Un program cu **AI** nu primește toate regulile. Primește **foarte multe exemple** și găsește singur ce au în comun.
 
@@ -69,7 +69,7 @@ Lucrați în perechi. Trebuie să explici cuiva, doar cu **reguli scrise**, cum 
 Vei vedea că regulile se strică repede. Pentru fiecare excepție ai nevoie de o regulă nouă, și tot nu ajung.
 
 ### Exemplul 3 — Același joc, cu exemple
-Acum schimbăm metoda. Colegul ți-a dat 20 de poze, fiecare cu eticheta „pisică” sau „nu este pisică”. Te uiți la ele, apoi primești o poză nouă și spui ce crezi.
+Acum schimbăm metoda. Colegul îți dă 20 de poze, fiecare cu eticheta „pisică” sau „nu este pisică”. Te uiți la ele, apoi primești o poză nouă și spui ce crezi.
 
 Nu ai mai primit reguli, ci **exemple**. Ai observat singur ce au în comun. Exact așa învață un program cu AI.
 
@@ -129,7 +129,7 @@ Citim împreună trei situații și discutăm de ce a greșit AI:
 2. Un traducător traduce cuvânt cu cuvânt o glumă și nu mai este amuzantă.  
 3. O aplicație îți recomandă mereu același tip de videoclip, pentru că ai văzut unul singur de acest fel.
 
-Ideea comună: AI se bazează pe **exemplele pe care le-a văzut**. Dacă exemplele sunt puține sau nu seamănă cu realitatea, greșește.
+Ideea comună: AI se bazează pe **exemplele văzute**. Dacă exemplele sunt puține sau nu seamănă cu realitatea, greșește.
 
 ### Exemplul 7 — AI nu este magie
 Completăm împreună pe tablă:
@@ -170,7 +170,7 @@ Pentru fiecare, spune dacă se rezolvă mai bine cu **reguli** sau cu **exemple*
 4. Să recunoști un cântec după melodie.
 
 ### Exercițiul C — Găsește greșelile
-Cineva a scris patru afirmații. Spune care sunt **greșite** și corectează-le:
+Cineva a scris patru afirmații. Spune care sunt **greșite** și corectează afirmațiile greșite:
 1. „AI gândește exact ca un om.”  
 2. „AI învață din exemple.”  
 3. „AI nu poate greși niciodată.”  
@@ -234,7 +234,7 @@ Pe foaie, răspunde fără să te uiți în lecție:
 ---
 
 ## Temă
-1. Completează acasă fișa „AI în jurul meu”, dacă nu ai terminat-o.  
+1. Completează acasă fișa „AI în jurul meu”, dacă nu ai terminat fișa.  
 2. Întreabă pe cineva din familie unde crede că folosește AI și notează răspunsul.  
 3. Alege un lucru din casă și scrie dacă folosește AI sau reguli simple, cu o explicație.  
 4. **Bonus:** desenează litera ta preferată pe grila 5 × 5 și scrie numerele.  

@@ -1,0 +1,25 @@
+Lecția a doua din Modulul unu, AI pentru copii. Cum învață un calculator: din exemple, nu din reguli.
+
+Azi antrenezi un model de hârtie. Primești exemple cu etichete, descoperi regula ascunsă și o testezi pe exemple noi. Nu ai nevoie de calculator.
+
+Obiectivul. Minim: jocul Mașina de sortat făcut o dată, cu regula ghicită și testată. Complet: în plus compari rezultatul după două exemple și după opt, vezi ce se întâmplă cu o etichetă greșită și completezi raportul.
+
+Ideea de bază. Un program cu AI trece prin două etape. Antrenarea: primește exemple cu etichete, adică răspunsul corect, și caută ce au în comun. Testarea: primește exemple noi, fără etichetă, și încearcă să ghicească. Ce a învățat programul se numește model.
+
+Exemplele unu și doi. Jucați în două echipe, Antrenorii și Modelul. Antrenorii desenează forme pe cartonașe și aleg în secret o regulă simplă, de exemplu toate formele roșii sunt A. Modelul vede opt exemple cu etichetă și ghicește regula. Apoi primește patru cartonașe noi și spune A sau B. Notezi scorul.
+
+Exemplul trei. Joci o dată cu doar două exemple și o dată cu opt. De obicei cu mai multe exemple ghicești mai bine. Contează și cât de variate sunt.
+
+Exemplul patru. Antrenorii schimbă pe ascuns o etichetă. Modelul se încurcă. Exemplele greșite strică antrenarea.
+
+Exemplul cinci. Cald sau rece. Un coleg ascunde un obiect, iar tu îl cauți. El spune doar cald sau rece. După câteva jocuri găsești mai repede. Așa învață și unele programe, prin încercări și semnale de tip bine sau greșit.
+
+Exemplul șase. Completezi Raportul antrenorului: un tabel cu scorurile și trei propoziții despre ce ajută și ce încurcă un model.
+
+Greșeli frecvente. Să crezi că două exemple ajung, că antrenarea și testarea sunt la fel sau că o etichetă greșită nu contează.
+
+Întrebări de verificare. Ce este antrenarea? Ce este testarea? Ce este o etichetă? De ce ajută mai multe exemple? Ce se întâmplă dacă o etichetă este greșită?
+
+Temă. Termină raportul, joacă Mașina de sortat cu cineva din familie și inventează o regulă pe care altcineva să o ghicească.
+
+Urmează Lecția a treia: date, hrana pentru AI.
