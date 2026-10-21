@@ -94,6 +94,7 @@ function defaultModulPentruCurs(cursId: string): string | null {
     cursId === 'c10' ? 'm23' :
     cursId === 'c9' ? 'm29' :
     cursId === 'c12' ? 'm24' :
+    cursId === 'c13' ? 'm45' :
     null
 }
 

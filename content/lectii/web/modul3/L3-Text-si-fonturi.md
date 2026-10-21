@@ -462,7 +462,7 @@ Fă o pagină „Fișa unui personaj de poveste” (un erou inventat), cu **un f
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) fiecare calculator are alte fonturi, deci browserul încearcă primul font și, dacă nu îl găsește, trece la următorul, până la grupul general; (2) `px` este o mărime fixă, iar `rem` este un multiplu al mărimii de bază a paginii (`1rem` = 16px) și se adaptează; (3) între `1.4` și `1.8`, de exemplu `1.6`; (4) cu `text-decoration: none;`; (5) cu `text-transform: uppercase;`.  
 - **Exercițiul B:** (1) mărimea literelor este de două ori mărimea de bază (32px); (2) 4px între litere; (3) tot textul se afișează cu majuscule; (4) fiecare rând are înălțimea de 1,8 ori mărimea literei; (5) linkul nu mai este subliniat.  
 - **Exercițiul C:** (1) `p { font-family: Verdana, sans-serif; font-size: 1.2rem; }`; (2) `.pret-vechi { text-decoration: line-through; color: gray; }`; (3) `h2 { text-align: center; text-shadow: 1px 1px 2px gray; }`.  

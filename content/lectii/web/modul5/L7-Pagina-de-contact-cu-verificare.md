@@ -385,7 +385,7 @@ Adăugăm detalii care fac diferența: **modul întunecat** care se ține minte 
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) taie spațiile de la începutul și de la sfârșitul textului; (2) un șir de cel puțin 6 cifre una după alta (ca într-un număr de telefon); (3) oprește trimiterea formularului și reîncărcarea paginii; (4) ca să putem vedea dacă omul nu a ales nimic.  
 - **Dacă ritmul clasei este lent:** numărătorul de caractere este bonus; regexul se dă gata, fără explicații.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 5.  

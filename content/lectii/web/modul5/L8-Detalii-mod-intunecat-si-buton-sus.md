@@ -372,7 +372,7 @@ Testăm site-ul pe **telefon** și facem o verificare completă: linkuri, imagin
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) când `<body>` are clasa `intunecat`, variabilele ei le înlocuiesc pe cele din `:root`, deci pagina trece la paleta întunecată; (2) încearcă codul din `try`, iar dacă apare o eroare, execută `catch`, fără să oprească tot scriptul; (3) câți pixeli a derulat pagina de sus; (4) cu `window.matchMedia("(prefers-reduced-motion: reduce)").matches`, care este `true` dacă omul a cerut mișcare redusă.  
 - **Dacă ritmul clasei este lent:** `try…catch` și `matchMedia` sunt bonus pentru grupele mici.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 6.  

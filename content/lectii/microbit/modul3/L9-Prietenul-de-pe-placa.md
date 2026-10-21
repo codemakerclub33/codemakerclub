@@ -465,7 +465,7 @@ Desenează pe foaie **fețele** lui Pixi (cel puțin 4) și scrie lângă fiecar
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 
 **Exercițiul B:** după primul **B**: `fericire = 4`, `foame = 4`. La al doilea **B**, `foame >= 4`, deci Pixi **refuză** (se afișează `NO`) și valorile rămân `4` și `4`.
 

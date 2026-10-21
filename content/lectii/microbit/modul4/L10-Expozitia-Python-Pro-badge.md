@@ -128,7 +128,7 @@ Răspunde pe foaie, fără să te uiți în lecții. Răspunsurile sunt la final
 | salvez și citesc din fișier | ☐ | ☐ | ☐ |
 | îmi prezint proiectul | ☐ | ☐ | ☐ |
 
-**Răspunsuri pentru profesor:**
+**Răspunsuri:**
 1. `2`. Ține indexul meniului în cerc (`(mod + 1) % NR`). 2. `2, 5, 8`. 3. `3`; ultimul index este `2` (sau `-1`). 4. Nota **do**, octava 4, durata 4. 5. Ca să „învețe” câmpul magnetic din locul în care ești și să arate corect. 6. `harta[1][2]` (rândul 1, coloana 2; se numără de la 0). 7. Taie textul la `:` și dă lista `["E", "3"]`. 8. Prinde o eroare (de exemplu `OSError` sau `ValueError`) ca programul să continue. 9. `with open("nume.txt", "w") as f:` și `f.write(str(7))`. 10. Iese imediat din buclă.
 
 ---

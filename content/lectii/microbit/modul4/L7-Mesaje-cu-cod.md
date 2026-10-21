@@ -439,7 +439,7 @@ Inventează **un protocol** cu 3 tipuri de mesaje pentru o altă idee (de exempl
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 
 **Exercițiul B:** `"L:140".split(":")` dă `["L", "140"]`, iar `len(...)` este `2`. `parseaza("E:3")` dă `("E", 3)`. `parseaza("E:3:4")` dă `(None, None)` (3 părți). `parseaza("salut")` dă `(None, None)` (o singură parte).
 

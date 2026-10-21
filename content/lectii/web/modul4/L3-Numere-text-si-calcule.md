@@ -392,7 +392,7 @@ Scrie un program „Joc de ghicit norocul”: aruncă un zar, cere utilizatorulu
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) `1` (restul împărțirii lui 10 la 3); (2) `Math.floor(Math.random() * 6) + 1`; (3) `3`; (4) pentru că `"2"` și `"3"` sunt texte, iar `+` lipește textele; (5) cu `Number(…)`, de exemplu `Number("5")`.  
 - **Dacă ritmul clasei este lent:** `**`, `Math.max` / `Math.min`, `toFixed`, `replace` și `repeat` sunt opționale; rămâneți la operatori, `Math.random`, `Math.floor` și metodele de text de bază.  
 - **Exercițiul B:** (1) `2`; (2) `72` (text lipit); (3) `8`; (4) `6`; (5) `PISICA`; (6) `8`.  

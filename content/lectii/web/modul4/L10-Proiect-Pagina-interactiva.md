@@ -534,7 +534,7 @@ Construim un **site complet** din mai multe pagini, cu meniu, galerie și formul
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) un obiect cu `text` (întrebarea), `optiuni` (lista de răspunsuri) și `corect` (poziția răspunsului corect, numărând de la 0); (2) la ce întrebare suntem, adică poziția în lista de întrebări; (3) după primul răspuns `amRaspuns` devine `true`, iar `alegeRaspuns` iese din funcție cu `return`; (4) cu `if` / `else if` după scor: scor egal cu total înseamnă „Excelent”, cel puțin jumătate înseamnă „Foarte bine”, altfel „Mai încearcă”; (5) ascunde butonul „Următoarea”.  
 - **Dacă ritmul clasei este lent:** dați elevilor CSS-ul gata (fișier de copiat); ei scriu doar `script.js`.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 7. Minimul de acceptare: cel puțin 4 întrebări într-o listă de obiecte, butoane create din JavaScript, scor corect și mesaj final. Dacă elevul nu termină, acceptați un test cu 3 întrebări care funcționează complet.  

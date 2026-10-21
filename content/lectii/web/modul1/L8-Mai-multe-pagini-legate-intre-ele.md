@@ -360,7 +360,7 @@ Fă un site cu **patru pagini** despre **animalul tău preferat** (sau un alt su
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) `index.html`; (2) `<a href="despre.html">Despre mine</a>`; (3) „un folder mai sus”; (4) browserul nu a găsit fișierul: verifici numele din `href`, extensia `.html`, folderul, salvarea și bara `/`; (5) ca vizitatorul să poată ajunge oriunde din orice pagină.  
 - **Exercițiul B:** (1) deschide `pagini/despre.html` (același folder); (2) deschide `index.html`, din folderul de deasupra; (3) deschide imaginea `pisica.jpg` din folderul `imagini`, aflat lângă `index.html`.  
 - **Exercițiul C:** din `index.html`: `<a href="pagini/galerie.html">Galerie</a>`; din `pagini/galerie.html`: `<a href="../index.html">Acasă</a>`.  

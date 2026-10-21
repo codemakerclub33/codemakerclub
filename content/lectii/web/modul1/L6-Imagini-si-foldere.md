@@ -354,7 +354,7 @@ Facem paginile **colorate**: învățăm să schimbăm culoarea textului și a f
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) `src`; (2) textul `alt` spune în cuvinte ce se vede: apare dacă imaginea nu se încarcă și este citit cu voce tare pentru cei care nu văd imaginea; (3) `src="imagini/pisica1.jpg"` (folderul, apoi `/`, apoi numele fișierului); (4) nu, `<img>` este tag singur (nu scrii `</img>`); (5) `.png`.  
 - **Exercițiul B:** (1) `imagini/pisica.jpg`; (2) `../imagini/pisica.jpg`.  
 - **Exercițiul C:** exemple: (1) „Un câine alb aleargă prin zăpadă”; (2) „Desen cu un soare zâmbăreț deasupra unei case”; (3) „Tort de ziua mea, cu zece lumânări”.  

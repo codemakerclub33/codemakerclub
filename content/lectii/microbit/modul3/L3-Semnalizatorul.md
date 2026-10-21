@@ -372,7 +372,7 @@ Gândește-te la **un alt aparat cu 3 butoane** (ascensor, telecomandă). Scrie 
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 
 **Exercițiul B:** apare fața veselă o jumătate de secundă, apoi ecranul se curăță. `was_pressed()` a prins apăsarea scurtă. Dacă apeși A **de mai multe ori**, `was_pressed()` spune doar `True`, adică „a fost apăsat”, nu câte ori.
 

@@ -654,7 +654,7 @@ Desenează pe foaie **ecranul Cutiei tale** și scrie ce literă ai pus pentru f
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 
 **Exercițiul B:** Dacă alarma nu pornește: grup diferit, `radio.on()` lipsă, sau unealta **S** nu e pornită pe placa receptor (ambele plăci trebuie să fie în modul `S`).
 

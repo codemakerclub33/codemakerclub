@@ -333,7 +333,7 @@ Fă o pagină `index.html` despre **un loc unde ai fost în vacanță** (sau pe 
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) `h1`; (2) de obicei unul singur; (3) rupe rândul, dar rămâi în același paragraf (nu are tag de închidere); (4) `&lt;`; (5) în paragrafe noi, câte un `<p>` pentru fiecare idee.  
 - **Dacă ritmul clasei este lent:** Exemplul 9 (semnele speciale `<` și `>`) este opțional; îl puteți face doar cu grupele rapide.  
 - **Exercițiul B:** `Sporturile mele (h1)`, `Sporturi de echipă (h2)`, `Fotbal în echipă (h3)`, `Antrenamentul de luni (h4)`.  

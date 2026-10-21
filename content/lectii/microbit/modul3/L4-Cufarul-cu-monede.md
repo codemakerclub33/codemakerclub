@@ -356,7 +356,7 @@ Scrie pe foaie un program în Python pentru **un joc cu puncte și vieți** (ai 
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 
 **Exercițiul B:** `a` devine `10`, `b` devine `2`, `c = 20`, iar `a - b = 8`. Se derulează `20/8`.
 

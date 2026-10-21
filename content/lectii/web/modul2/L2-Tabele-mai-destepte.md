@@ -455,7 +455,7 @@ Fă un **orar de weekend** (sâmbătă și duminică, ora, activitatea) cu o act
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) întinde celula pe 3 coloane; (2) cu `rowspan="2"`; (3) rândul de final al tabelului, de exemplu totalul; (4) pentru că celula unită ocupă deja locul în acel rând, deci nu mai scrii o celulă pentru acea coloană; (5) că `<th>` este antetul rândului din dreapta lui.  
 - **Exemplul 9:** al doilea rând ocupă 4 coloane la un tabel de 3. Se repară scoțând o celulă (de exemplu `Z`) sau adăugând o coloană în antet.  
 - **Exercițiul C:** 2 celule. Celula cu `colspan="2"` ocupă 2 coloane, iar celelalte 2 coloane se acoperă cu 2 celule obișnuite: 2 + 1 + 1 = 4.  

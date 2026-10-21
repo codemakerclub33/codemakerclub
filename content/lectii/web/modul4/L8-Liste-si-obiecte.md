@@ -525,7 +525,7 @@ Fă un program „Clasamentul meu de filme”: o listă de 5 obiecte (`nume`, `n
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) poziția `0`; (2) `push` adaugă un element la sfârșitul listei, iar `pop` scoate ultimul element și îl dă înapoi; (3) `-1`; (4) între acolade, cu proprietăți de forma etichetă și valoare, de exemplu `{ nume: "Puzzle", nota: 9 }`, iar proprietatea se citește cu punct: `joc.nota`; (5) `jucatori[1].nume`.  
 - **Dacă ritmul clasei este lent:** `join`, `indexOf`, `unshift` / `shift`, `delete` și Exemplul 9 (obiectul dat unei funcții) sunt opționale; proiectul poate rămâne la lista de obiecte, `mediaNotelor` și `celMaiBunJoc`, fără `prompt`.  
 - **Exercițiul B:** (1) `y`; (2) `w`; (3) `-1`; (4) `15`; (5) `2`.  

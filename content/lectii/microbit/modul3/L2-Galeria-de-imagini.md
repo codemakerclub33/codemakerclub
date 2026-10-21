@@ -333,7 +333,7 @@ Desenează pe foaie **o animație cu 4 cadre** (de exemplu un fluture) și scrie
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 
 **Exercițiul B:** litera **X**.
 ```text

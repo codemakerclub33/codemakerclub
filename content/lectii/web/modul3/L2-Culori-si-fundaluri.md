@@ -504,7 +504,7 @@ Fă o pagină „Cartea de vizită a unui animal” cu o **paletă de 4 culori**
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) cât roșu, cât verde și cât albastru, de la 0 la 255 (aici roșu complet, deci culoarea roșie); (2) `background-color: rgba(255, 255, 255, 0.5);`; (3) `background: linear-gradient(to right, red, yellow);`; (4) imaginea de fundal acoperă tot elementul, fără goluri; (5) se scrie în `:root`, de exemplu `--text: #264653;`, și se folosește cu `var(--text)`.  
 - **Dacă ritmul clasei este lent:** Exemplul 9 (variabile CSS) și Exemplul 8 (degrade cu mai multe culori) sunt opționale; paleta se poate scrie direct, fără variabile.  
 - **Exercițiul B:** (1) roșu; (2) albastru; (3) alb; (4) negru; (5) gri (negru jumătate transparent peste alb).  

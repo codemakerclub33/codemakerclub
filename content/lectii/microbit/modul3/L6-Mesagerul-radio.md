@@ -374,7 +374,7 @@ Inventează **un cod** cu patru semne pentru o poveste (de exemplu `"1"` = „vi
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 
 **Exercițiul B:** primește mai întâi `"ploaie"`, apoi `"soare"`.
 

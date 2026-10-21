@@ -336,7 +336,7 @@ Fă o pagină `index.html` cu **regulile clasei tale** (o listă numerotată cu 
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) `<strong>` îngroașă textul (important), `<em>` îl înclină; (2) când ordinea contează (pași, reguli, clasamente); (3) în interiorul unei liste, `<ul>` sau `<ol>` (fiecare `<li>` este un rând din listă); (4) `H<sub>2</sub>O`; (5) în interiorul unui `<li>`, între `<li>` și `</li>`.  
 - **Dacă ritmul clasei este lent:** `small`, `sup`, `sub` și `&times;` sunt opționale; rămâneți la `strong`, `em`, listele cu buline și listele numerotate.  
 - **Exercițiul B:** (1) `<ol>`; (2) `<ul>`; (3) `<ol>`; (4) `<ul>`.  

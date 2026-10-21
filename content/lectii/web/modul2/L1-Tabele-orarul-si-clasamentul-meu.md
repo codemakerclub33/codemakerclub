@@ -408,7 +408,7 @@ Tabele **mai deștepte**: celule care se unesc pe mai multe coloane sau rânduri
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) face un rând de tabel, care conține celulele; (2) `<th>` este celulă de antet (îngroșat și centrat) pentru titlurile de coloană, `<td>` este celulă de date; (3) imediat după `<table>`, înaintea primului rând; (4) HTML doar aranjează datele, iar liniile se adaugă cu o regulă de stil (`border`) în `<style>`; (5) 4 coloane.  
 - **Exercițiul C:** 3 rânduri, 3 coloane, 9 celule.  
 - **Exercițiul D:** (1) lipsește `</th>` după „Culoare”; (2) `<caption>` trebuie scris imediat după `<table>`, înaintea primului rând; (3) celulele `Măr` și `roșu` nu sunt într-un rând: trebuie `<tr>` înainte de ele și `</tr>` după ele.  

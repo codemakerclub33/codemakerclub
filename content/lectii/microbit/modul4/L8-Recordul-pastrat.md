@@ -431,7 +431,7 @@ Gândește-te la **alte 3 lucruri** pe care un joc ar trebui să le **țină min
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 
 **Exercițiul B:** În ambele cazuri `citeste_record()` întoarce `0`. Dacă fișierul conține `abc`, `int("abc")` dă `ValueError` (prins); dacă fișierul lipsește, `open` dă `OSError` (prins).
 

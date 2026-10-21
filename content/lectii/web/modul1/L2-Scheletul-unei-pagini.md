@@ -370,7 +370,7 @@ Fă încă o pagină `index.html` în folderul `Prenume_Nume_W1_L2`: o carte de 
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) `head`; (2) în fila browserului (și în lista de file deschise sau la favorite); (3) `</html>`; (4) spune că pagina este scrisă în limba română; (5) tag-uri închise în ordine greșită, de exemplu `<p>Eu sunt <strong>Ana</p></strong>`; corect este ca ultimul tag deschis să se închidă primul.  
 - **Exercițiul B:** în filă: „Clubul meu”. În pagină: „Bine ai venit!” (titlu mare) și „Suntem prieteni.”  
 - **Exercițiul C:** `html`, `ro`, `head`, `title`, `title`, `body`, `html`.  

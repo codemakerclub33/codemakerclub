@@ -362,7 +362,7 @@ Scrie un program care afișează un „carnet de note” al jocurilor tale prefe
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) JavaScript dă comportament paginii: calculează, ia decizii și răspunde la click; (2) `console.log(3 + 4);` afișează `7`, iar `console.log("3 + 4");` afișează textul `3 + 4`; (3) apăsând F12 (sau clic dreapta, „Inspect”) și alegând fila Console; (4) o notiță pentru oameni, scrisă cu `//` sau `/* … */`, pe care calculatorul o ignoră; (5) eroarea este în fișierul `script.js`, la rândul 5.  
 - **Exercițiul B:** (1) `10`; (2) `8 + 2` (text); (3) `Am 12 mere`; (4) `5`.  
 - **Exercițiul C:** (1) `console.log("Bună ziua!");`; (2) `console.log(9 * 9);` (rezultă 81); (3) `console.log("Am", 7, "prieteni");`.  

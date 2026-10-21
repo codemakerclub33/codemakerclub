@@ -346,7 +346,7 @@ Fă o pagină „Instrumentele mele preferate” cu un tabel cu 3 instrumente, c
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) face să apară butoanele (pornire, oprire, volum); (2) `src` este atributul care arată un singur fișier, iar `<source>` este un tag pus în `<audio>` sau `<video>` pentru mai multe fișiere sau formate, din care browserul alege primul pe care îl poate reda; (3) imaginea care se vede înainte să pornească filmul; (4) browserele îl blochează de obicei, iar sunetul care pornește singur deranjează; (5) deschizi DevTools (**F12**), fila **Console**: un mesaj „404” arată că fișierul nu a fost găsit.  
 - **Exercițiul B:** (1) arată butoanele; (2) repetă; (3) nu încarcă fișierul până la pornire; (4) imaginea de început a filmului; (5) fără sunet.  
 - **Exercițiul C:** (1) `.mp3`; (2) `.mp4`; (3) `.wav`, dar se recomandă micșorarea lui sau alegerea unui `.mp3`.  

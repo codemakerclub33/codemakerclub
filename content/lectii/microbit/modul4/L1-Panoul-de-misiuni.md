@@ -422,7 +422,7 @@ Gândește-te la **alte 3 misiuni** pentru panou și scrie pe foaie ce ar face f
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 
 **Exercițiul B:** `10 % 4 = 2`, `9 % 3 = 0`, `5 % 7 = 5`, `abs(-3) = 3`, `17 // 5 = 3`.
 

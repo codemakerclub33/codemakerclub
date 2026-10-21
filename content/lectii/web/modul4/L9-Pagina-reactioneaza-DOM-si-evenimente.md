@@ -591,7 +591,7 @@ Proiectul final al modulului: **„Pagina interactivă”**, un mic joc sau un t
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) pentru că elementele trebuie să existe în pagină înainte ca scriptul să le caute; (2) `document.querySelector("#titlu")`; (3) numai când apare evenimentul (de exemplu la click), nu imediat; (4) adaugă clasa dacă lipsește și o scoate dacă există (un comutator); (5) text (`string`), chiar dacă utilizatorul a scris un număr.  
 - **Dacă ritmul clasei este lent:** `querySelectorAll`, `style.backgroundColor` și `focus()` sunt opționale; puteți da elevilor CSS-ul gata, ca timpul să meargă pe JavaScript.  
 - **Exercițiul B:** (1) schimbă textul elementului cu `id="titlu"` în „Salut”; (2) la fiecare click pe `buton`, scrie „Click!” în consolă; (3) adaugă clasa `noapte` pe `<body>`; (4) afișează `null`, pentru că elementul nu există.  

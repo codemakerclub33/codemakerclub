@@ -350,7 +350,7 @@ Desenează pe foaie un ecran de 5×5 și scrie numerele `0 … 4` pe margini. Al
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 
 **Exercițiul B:** `range(1, 10, 4)` dă `1, 5, 9`. Două bucle `range(3)` și `range(4)` repetă de `3 × 4 = 12` ori.
 

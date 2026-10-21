@@ -346,7 +346,7 @@ Legăm **mai multe pagini** într-un mic site, cu un meniu de linkuri pe care î
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) `style="color: blue;"`; (2) colorează fundalul elementului (pe `<body>`, toată pagina); (3) `<span>`; (4) cu `#` și 6 caractere, de exemplu `#ff6347`; (5) pentru că cele două culori sunt prea apropiate ca strălucire și textul nu se mai citește.  
 - **Dacă ritmul clasei este lent:** Exemplul 7 (culori cu cod `#`) și Exemplul 9 (moștenirea culorii) sunt opționale; rămâneți la culorile cu nume și la contrast.  
 - **Exercițiul B:** (1) text albastru închis pe fundal galben deschis; (2) text alb pe fundal negru.  

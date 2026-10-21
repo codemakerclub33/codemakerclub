@@ -378,7 +378,7 @@ Scrie pe foaie **trei funcții** pe care le-ai vrea într-un joc (de exemplu `ar
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 
 **Exercițiul B:** `aduna(2, 3)` dă `5`; `dublu(5)` dă `10`. Se derulează `10`, apoi `aduna(7)` dă `7 + 1 = 8`. Se derulează `8`.
 

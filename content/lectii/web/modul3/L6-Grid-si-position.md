@@ -539,7 +539,7 @@ Fă o pagină „Colecția mea” cu o grilă de 8 cutii (cărți, jucării sau 
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) trei coloane egale, fiecare o parte din spațiul liber (se poate scrie și `repeat(3, 1fr)`); (2) cu `grid-column: span 2;`; (3) față de cel mai apropiat părinte care are `position` (de obicei `relative`); (4) `fixed` rămâne la același loc pe ecran, iar `sticky` stă normal în pagină și se lipește sus abia când derulezi până la el; (5) pentru că `z-index` funcționează doar pe elementele care au `position` (altă valoare decât `static`).  
 - **Dacă ritmul clasei este lent:** rămâneți la Grid de bază, `relative`, `absolute` și `fixed`; Exemplul 8 (`sticky`), Exemplul 9 (`z-index`) și `minmax(...)` sunt opționale.  
 - **Exercițiul B:** (1) două coloane: prima fixă de 200px, a doua ia restul; (2) patru coloane egale; (3) elementul se întinde de la prima până la ultima linie a grilei, adică pe toată lățimea; (4) elementul se așază față de pagină (față de cel mai apropiat strămoș cu `position`, iar aici nu există), deci ajunge în colțul din dreapta sus al paginii.  

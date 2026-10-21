@@ -441,7 +441,7 @@ Arată pagina unui membru al familiei, pe calculator și pe telefon, și întrea
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) cu `<link rel="stylesheet" href="stil.css">` în `<head>`; (2) rădăcina paginii, unde scriem variabilele paletei, de exemplu `--principala: navy;`, ca să le folosim peste tot cu `var(--principala)`; (3) pe `ul` pui `display: flex;` și `list-style: none;`; (4) cu o grilă: `display: grid;` și `grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));`; (5) pui regula `@media (prefers-reduced-motion: reduce)` care oprește animațiile cu `animation: none;`.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 8. Minimul de acceptare: `stil.css` legat corect, culori și fonturi alese, carduri cu chenar și colțuri rotunjite, meniu orizontal cu Flexbox și o regulă `@media`. Nu cereți animații dacă elevul nu le-a înțeles; contează să nu fie rău făcute.  
 - **Exercițiul B:** nu are răspuns corect; este pentru elev. Notați lecțiile pe care le cere repetate și reveniți la ele.  

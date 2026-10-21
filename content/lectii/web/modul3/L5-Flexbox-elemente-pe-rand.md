@@ -546,7 +546,7 @@ Fă pagina „Echipa mea de fotbal” cu un antet cu logo și meniu, cinci cardu
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) pe părinte, adică pe container; (2) primul element la început, ultimul la sfârșit, iar restul distanțate egal; (3) pe container: `display: flex; justify-content: center; align-items: center;`, cu o înălțime pusă containerului; (4) elementele trec pe rândul următor când nu mai încap; (5) pe `ul` pui `display: flex;` și `list-style: none;`, plus `margin: 0; padding: 0;`.  
 - **Exercițiul B:** (1) prima cutie la început, ultima la sfârșit, cea din mijloc distanțată egal; (2) cutiile stau una sub alta; (3) cutiile sunt la mijlocul containerului, pe orizontală și pe verticală; (4) două cutii pe primul rând (300 + 300 = 600 încape) și a treia pe rândul de jos.  
 - **Exercițiul C:** (1) `.rand { display: flex; justify-content: center; gap: 20px; }`; (2) `.meniu { display: flex; gap: 15px; list-style: none; margin: 0; padding: 0; }`; (3) `.container { display: flex; }` și `.cutie { flex: 1; }`.  

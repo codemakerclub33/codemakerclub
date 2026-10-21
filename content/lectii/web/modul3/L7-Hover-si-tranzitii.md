@@ -608,7 +608,7 @@ Fă pagina „Lista mea de jocuri”: un meniu, patru cărți care se ridică, d
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) schimbă stilul elementului numai cât timp mouse-ul este deasupra lui; (2) pe elementul de bază, nu pe `:hover`; (3) mărește elementul de 1,1 ori, fără să împingă celelalte elemente; (4) rândurile pare ale tabelului (al doilea, al patrulea și tot așa); (5) pentru că cine folosește tastatura nu ar mai vedea unde este selecția, deci trebuie pus un alt contur în loc.  
 - **Dacă ritmul clasei este lent:** Exemplul 7 (`:nth-child`) și tabelul din proiect sunt opționale; rămâneți la `:hover` și `transition`.  
 - **Exercițiul B:** (1) elementul se micșorează la 90% când mouse-ul este deasupra; (2) al treilea element `li` (între frații lui) devine roșu; (3) cutia se rotește lin 90 de grade într-o secundă, cu viteză egală, la `:hover`, și revine lin când mouse-ul pleacă, pentru că `transition` este pus pe starea de bază; (4) orice `p` care este **primul copil** al părintelui său devine îngroșat; dacă înaintea lui este alt element (de exemplu un `h1`), regula nu are niciun efect. Pentru primul `p`, oriunde ar sta, se folosește `p:first-of-type`.  

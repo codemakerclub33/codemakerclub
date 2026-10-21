@@ -381,7 +381,7 @@ Fă o pagină „Echipa mea de fotbal” (sau altă echipă imaginară) cu 5 car
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) este o cutie fără înțeles, care grupează lucruri (de exemplu un titlu și un paragraf); (2) `.carte { … }`, cu punct în față; (3) unul singur, pentru că `id` este unic în pagină; (4) separate prin spațiu: `class="carte rara"`; (5) `<div>` grupează lucruri și se așază pe rând nou, iar `<span>` marchează o parte din text, în interiorul rândului.  
 - **Exercițiul B:** (1) `id`; (2) `class`; (3) `class`; (4) `id`.  
 - **Exercițiul C:** (1) toate elementele cu clasa `carte`; (2) elementul cu `id="titlu-pagina"`; (3) doar elementele care au și clasa `carte`, și clasa `rara`.  

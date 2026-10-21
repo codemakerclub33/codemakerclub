@@ -681,7 +681,7 @@ Proiectul final al modulului: **Colecția mea de jocuri**. O pagină principală
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) limităm `cx` între marginile stângă și dreaptă ale dreptunghiului și `cy` între marginile de sus și de jos: `Math.max(rx, Math.min(cx, rx + rl))` și `Math.max(ry, Math.min(cy, ry + ri))`; (2) ca să nu folosim radicalul: comparăm pătratele, ceea ce este mai simplu; (3) scorul ar crește de zeci de ori pentru aceeași țeavă; (4) la Păsărică ciocnirea este cerc cu dreptunghi (la Dino, dreptunghi cu dreptunghi), păsărica poate bate din aripi oricând (Dino sare doar de pe sol), iar jocul se termină și când atinge iarba.  
 - **Dacă ritmul clasei este lent:** dați elevilor HTML-ul și CSS-ul gata; formula cu Pitagora pentru ciocnire se dă ca fragment, iar copiii o testează cu tabelul.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 8. Minimul: păsărica care cade și urcă, plus țevile; ținta: restul listei.  

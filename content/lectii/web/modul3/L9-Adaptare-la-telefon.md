@@ -567,7 +567,7 @@ Proiectul final al modulului: **„Pagina mea, dar frumoasă”**. Folosim tot c
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) spune telefonului să folosească lățimea reală a ecranului, nu să micșoreze pagina; (2) regulile dinăuntru se aplică doar dacă fereastra are cel mult 600px lățime; (3) `max-width` lasă conținutul să se micșoreze pe ecrane mici, iar un `width` fix îl face să iasă din ecran; (4) alege o mărime care crește cu ecranul (`5vw`), dar nu coboară sub `1.5rem` și nu trece de `3rem`; (5) cu DevTools (**F12**), în modul telefon.  
 - **Dacă ritmul clasei este lent:** `auto-fit`, `minmax` și `clamp` pot fi tratate ca provocare; instrumentul principal este `@media`.  
 - **Exercițiul B:** (1) pe ecrane de maximum 600px meniul dispare (atenție: utilizatorul nu mai are navigare); (2) imaginea nu depășește lățimea părintelui, dar poate rămâne mai îngustă decât el; (3) pe 650px încap trei coloane de minimum 200px (3 × 200 = 600), iar restul de 50px se împarte egal între ele, deci sunt trei coloane; (4) mărimea ideală `4vw` este 8px, dar `clamp` o ridică la minimum `1rem`, adică 16px.  

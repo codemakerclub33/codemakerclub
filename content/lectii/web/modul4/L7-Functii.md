@@ -423,7 +423,7 @@ Scrie funcțiile pentru un mini-magazin de jocuri: `pretCuReducere(pret, procent
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) `function` spune „fac o funcție nouă”, adică o bucată de cod cu nume; (2) scrii numele ei urmat de paranteze, de exemplu `spuneSalut();`; (3) o „cutie” din definiția funcției, care primește o valoare nouă la fiecare apelare; (4) trimite o valoare înapoi acolo unde a fost chemată funcția și încheie funcția; (5) pentru că este variabilă locală: există numai înăuntrul funcției, de aceea funcția își returnează rezultatul.  
 - **Exercițiul B:** (1) `12`; (2) `6`; (3) afișează `A`, apoi `5` (funcția se oprește la `return`, deci `B` nu apare); (4) `4 25`.  
 - **Exercițiul C:** (1) `function patrat(x) { return x * x; }`; (2) `function esteMajor(varsta) { return varsta >= 18; }`; (3) `function repetaText(text, ori) { return text.repeat(ori); }`.  

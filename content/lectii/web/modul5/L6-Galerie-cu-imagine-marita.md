@@ -353,7 +353,7 @@ Facem **pagina de contact**: un formular cu verificarea textului, mesaje de eroa
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) umple tot dreptunghiul tăind puțin imaginea, fără să o deformeze; (2) pentru că `display: flex` anulează atributul `hidden`, iar regula cu `display: none` îl face să meargă din nou; (3) verifică dacă s-a apăsat chiar pe fundal, nu pe poză, ca să se închidă doar atunci; (4) ca cine folosește tastatura să revină la poza apăsată și să nu se piardă în pagină.  
 - **Dacă ritmul clasei este lent:** deschiderea și închiderea cu buton și cu `Escape` sunt suficiente; verificarea `eveniment.target === lightbox` și întoarcerea focusului sunt bonus.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 5.  

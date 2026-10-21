@@ -360,7 +360,7 @@ Fă un formular „Rezervare la un spectacol imaginar”: poreclă (obligatorie)
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) cere ca un câmp să fie completat: browserul nu trimite formularul dacă este gol; (2) cu `maxlength="10"`; (3) exact 4 cifre; (4) forma adresei: trebuie să existe un `@` și text înainte și după el (nu verifică dacă adresa există); (5) poate fi ocolită de cineva care schimbă codul paginii, iar serverul trebuie să verifice și el datele.  
 - **Exercițiul C:** (1) `required`; (2) `maxlength="20"`; (3) `type="number"` cu `min="1"` și `max="5"`; (4) `type="email"`.  
 - **Exercițiul D:** (1) `minlength="10"` este mai mare decât `maxlength="5"`: nimeni nu poate completa câmpul; (2) `min="10"` este mai mare decât `max="1"`; (3) prima opțiune a lui `select` trebuie să fie `<option value="">-- alege o grupă --</option>`, altfel `required` nu are efect.  

@@ -267,7 +267,7 @@ Facem **carduri**: 6 căsuțe cu poză și text, așezate într-o grilă care se
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) minim, preferat, maxim; (2) unul singur; (3) `<a>` când duce în altă pagină, `<button>` când face o acțiune în pagina curentă; (4) *call to action*, adică „te îndemn să faci ceva”.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 5.  
 - **Exercițiul B:** nu are răspuns unic; verificați că textul rămâne citibil.  

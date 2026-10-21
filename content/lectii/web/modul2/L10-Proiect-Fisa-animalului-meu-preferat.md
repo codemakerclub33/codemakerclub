@@ -391,7 +391,7 @@ Alege un lucru de îmbunătățit din feedbackul colegului sau din lista de veri
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Evaluare sugerată (25 puncte):** schelet și taguri cu înțeles corecte (4); secțiunea „Despre” cu imagine și `alt` (3); tabel complet și corect (4); sunet sau film cu `controls` și descriere (3); formular cu etichete și validare (4); clasă și `id` folosite corect (3); cod indentat, comentarii și fără erori în Console (2); fără date personale (1); prezentare (1).  
 - **Verificați:** cifrele din tabel (să fie aproximativ corecte), ca la științe; locurile din hartă să fie publice; să nu existe date personale.  
 - **Greșeli frecvente la verificare:** un singur `h1` și `main`, `alt` la imagini, `id` unic, nume de fișiere cu litere mici, fără spații.  

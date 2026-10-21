@@ -11,6 +11,7 @@ export const cursuri = [
   { id: 'c10', nume: 'micro:bit Python', descriere: 'Python pe micro:bit — senzori, LED și proiecte pe placă', culoare: '#8B5CF6' },
   { id: 'c11', nume: 'Unity', descriere: 'Jocuri 3D cu Unity — scene, scripturi și proiecte interactive', culoare: '#64748B' },
   { id: 'c12', nume: 'Roblox Studio', descriere: 'Jocuri pe Roblox cu Luau — pentru 12+: Studio, scripturi, scor și publicare', culoare: '#E11D48' },
+  { id: 'c13', nume: 'AI pentru copii', descriere: 'Ce este inteligența artificială, cum învață și cum o folosim în siguranță — jocuri, discuții și mici experimente', culoare: '#0D9488' },
 ]
 
 /** Iconuri pe cardurile de landing (opțional) */
@@ -27,6 +28,7 @@ export const cursIconLanding: Record<string, string> = {
   c10: '/icons/microbit-python.png',
   c11: '/icons/unity.png',
   c12: '/icons/roblox.png',
+  c13: '/icons/ai.png',
 }
 
 /** Grupe vârstă pe landing — un curs poate apărea în mai multe benzi */
@@ -41,13 +43,13 @@ export const grupeVarsta = [
     id: '10-14',
     label: 'Micii Creatori Digitali (10–12 ani)',
     blurb: 'De la joacă la proiecte reale: site-uri web, programe în Python, gadgeturi inteligente și modele\u00A03D.',
-    curs_ids: ['c5', 'c4', 'c10', 'c3'],
+    curs_ids: ['c5', 'c4', 'c10', 'c3', 'c13'],
   },
   {
     id: '14plus',
     label: 'Micii Programatori (12+ ani)',
     blurb: 'Proiecte și autonomie: C++, Python, site-uri web, Arduino, Unity și Roblox Studio.',
-    curs_ids: ['c1', 'c4', 'c5', 'c2', 'c11', 'c12'],
+    curs_ids: ['c1', 'c4', 'c5', 'c2', 'c11', 'c12', 'c13'],
   },
 ] as const
 
@@ -63,6 +65,7 @@ export const cursBlurbLanding: Record<string, string> = {
   c9: 'Dezvoltăm gândirea spațială: învățăm să construim, să combinăm forme 3D și să proiectăm propriile modele pe calculator.',
   c10: 'Scriem Python direct pe micro:bit: LED, senzori și proiecte pe placa fizică.',
   c11: 'Jocuri și lumi 3D: învățăm crearea scenelor, fizica obiectelor și logica de joc în Unity (C#).',
+  c13: 'Ce este inteligența artificială, cum învață din exemple și cum o folosim în siguranță: jocuri, discuții și mici experimente.',
   c12: 'Pentru 12+: Obby pas cu pas — construiești în Studio, apoi Luau, scor pe ecran și publici jocul.',
 }
 
@@ -103,6 +106,7 @@ export const module = [
   { id: 'm11', curs_id: 'c5', nume: 'Modul 4 — JavaScript pentru începători', ordine: 4, badge: 'JavaScript Starter', descriere: '10 lecții cu dificultate crescătoare, de la console.log la o pagină interactivă.' },
   { id: 'm43', curs_id: 'c5', nume: 'Modul 5 — Site complet: HTML + CSS + JavaScript', ordine: 5, badge: 'Web Designer', descriere: 'Un site de 3–4 pagini cu meniu, galerie și formular care funcționează, de la plan la publicare gratuită.' },
   { id: 'm44', curs_id: 'c5', nume: 'Modul 6 — Jocuri web', ordine: 6, badge: 'Web Game Maker', descriere: 'Jocuri moderne cu HTML, CSS și JavaScript: clicker, cuvântul zilei, dino și păsărica zburătoare.' },
+  { id: 'm45', curs_id: 'c13', nume: 'Modul 1 — AI pentru copii', ordine: 1, badge: 'AI Explorer', descriere: 'Ce este inteligența artificială, cum învață din exemple, unde greșește și cum o folosim în siguranță.' },
   // Robotică WeDo 2.0
   { id: 'm12', curs_id: 'c6', nume: 'Modul 1 — Construcție și senzori (WeDo 2.0)', ordine: 1, badge: 'Robot Starter' },
   { id: 'm13', curs_id: 'c6', nume: 'Modul 2 — Proiecte avansate (WeDo 2.0)', ordine: 2, badge: 'Robot Inventor' },
@@ -507,6 +511,18 @@ export const lectii = [
     'Dino în deșert II: obstacole, scor și game over',
     'Păsărica zburătoare',
     'Proiect: Colecția mea de jocuri',
+  ]),
+  ...genLectii('m45', [
+    'Ce este inteligența artificială',
+    'Cum învață un calculator: din exemple, nu din reguli',
+    'Date: hrana pentru AI',
+    'Clasificare: pisică sau câine?',
+    'Predicții și probabilități: de ce mai greșește AI',
+    'Greșeli și prejudecăți',
+    'AI în viața de zi cu zi',
+    'Cum vorbim cu un asistent AI',
+    'Siguranță și date personale',
+    'Proiect: Ghidul meu despre AI',
   ]),
   ...genLectii('m12', [
     'Ce este WeDo 2.0? Hub + primul motor',

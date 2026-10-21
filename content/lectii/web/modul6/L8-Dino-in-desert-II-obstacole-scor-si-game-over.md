@@ -550,7 +550,7 @@ Facem **Păsărica zburătoare**: o pasăre care bate din aripi, țevi prin care
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) se suprapun și pe orizontală, și pe verticală; (2) toate cele patru condiții trebuie să fie adevărate în același timp; cu `||` rezultatul ar fi mereu `true` și jocul s-ar termina imediat; (3) lista ar crește la nesfârșit și jocul ar încetini; (4) ca jocul nou să nu înceapă cu cactușii vechi.  
 - **Dacă ritmul clasei este lent:** dați elevilor `script.js` complet, ca să nu piardă timp cu înlocuirea secțiunilor din Lecția 7.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 7. Minimul: cactuși care vin și o ciocnire care oprește jocul; ținta: restul listei.  

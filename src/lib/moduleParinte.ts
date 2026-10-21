@@ -35,6 +35,7 @@ export const descriereModulParinte: Record<string, string> = {
   m11: 'Copilul învață primele noțiuni de JavaScript: să facă calcule, să ia decizii, să repete acțiuni și să lucreze cu liste și obiecte. Apoi face pagina să reacționeze la clicuri și la ce scrie utilizatorul.',
   m43: 'Copilul construiește de la zero un site complet cu mai multe pagini: meniu, galerie cu poze mărite, pagină de contact cu verificare și mod întunecat. La final îl testează pe telefon și îl prezintă.',
   m44: 'Copilul construiește șapte jocuri care merg în browser: un joc cu monștri, un clicker, Simon spune, Cuvântul zilei, un dinozaur care sare și o păsărică zburătoare. La final le adună într-o colecție proprie, cu recorduri.',
+  m45: 'Copilul află ce este inteligența artificială, cum învață din exemple, de ce mai greșește și cum o folosește în siguranță. Lucrează cu jocuri, discuții și foi de lucru. La final face propriul „Ghid despre AI”.',
 
   // Robotică LEGO WeDo 2.0
   m12: 'Copilul descoperă robotica cu LEGO WeDo 2.0: construiește modele și le dă viață cu motoare și senzori, folosind programare cu blocuri. Face un vehicul, un ventilator și o creatură care reacționează la ce vede și simte.',

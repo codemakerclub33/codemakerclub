@@ -568,7 +568,7 @@ Facem **Dino în deșert**, partea I: un dinozaur desenat de noi, care aleargă 
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) un cerc cu centrul în punctul (100, 50), cu raza 20, desenat de la unghiul 0 până la cercul întreg; (2) `dt` este timpul în secunde de la cadrul anterior; înmulțim vitezele cu el ca mingea să se miște la fel pe orice calculator; (3) pentru că dăm funcția, nu o apelăm; cu paranteze ar rula imediat, iar bucla nu ar merge; (4) ca să nu intre în iarbă și să aibă o poziție corectă pentru săritura următoare.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 9. Minimul de acceptare: scena desenată și mingea care cade și sare; pauza, butonul și clicul sunt ținta.  
 - **Exercițiul B:** nu are răspuns unic; verificați că elevul poate explica ce a schimbat.  

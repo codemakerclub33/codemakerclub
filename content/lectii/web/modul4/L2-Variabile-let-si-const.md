@@ -447,7 +447,7 @@ Scrie un program „Magazinul meu de jocuri”: o constantă cu numele magazinul
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) creează o variabilă numită `scor` și pune în ea valoarea `0`; (2) când valoarea nu se schimbă (de exemplu numele jocului); (3) afișează textul `scor`, nu valoarea variabilei; (4) mărește valoarea lui `scor` cu 1; (5) `boolean` (adevărat/fals).  
 - **Exercițiul B:** (1) `7`; (2) `14` (10 − 3 = 7, apoi 7 × 2); (3) `2` (1, 2, 3, apoi 2); (4) `16`.  
 - **Exercițiul C:** (1) `let vieti = 3; vieti--;` (sau `vieti -= 1;`); (2) `const nume = "Luna"; console.log("Salut, " + nume + "!");` sau `` console.log(`Salut, ${nume}!`); ``; (3) `let pret = 20; pret *= 2; console.log(pret);`.  

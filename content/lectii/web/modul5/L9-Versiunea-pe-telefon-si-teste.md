@@ -291,7 +291,7 @@ Cere unui adult din familie să facă sarcinile din Exemplul 6 pe site-ul tău. 
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) cu `F12`, apoi iconița cu telefon și tabletă sau `Ctrl + Shift + M` (pe Mac `Cmd + Shift + M`); (2) „nu s-a găsit”: fișierul sau imaginea lipsește; (3) pentru că nu toți oamenii folosesc mouse-ul, iar așa vedem dacă totul merge și dacă se vede focusul; (4) pentru că reparația poate strica altceva sau problema poate rămâne.  
 - **Dacă ritmul clasei este lent:** Lighthouse este opțional pentru grupele mici.  
 - **Exercițiul A:** pentru evaluare: raport cu cel puțin 5 probleme, fiecare cu pagină, descriere, reparație și retestare; site-ul funcționează pe 375 px și cu tastatura.  

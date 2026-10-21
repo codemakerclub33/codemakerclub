@@ -370,7 +370,7 @@ Formulare III: **validare**. Cum cerem să fie completate câmpurile și cum ver
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) formează o singură întrebare: poți alege doar una, iar alegerea nouă o debifează pe cea veche; (2) când vizitatorul poate alege mai multe variante, oricâte; (3) o variantă din lista `<select>`; (4) imediat după `<fieldset>`, ca titlu al grupului; (5) pune varianta bifată de la început.  
 - **Exercițiul C:** (1) `select` sau `radio`; (2) `checkbox`; (3) `radio`; (4) `select`.  
 - **Exercițiul D:** (1) `legend` trebuie să fie imediat după `<fieldset>`; (2) `name="raspuns"` și `name="raspunsuri"` diferă: trebuie același; (3) `<option>Iunie` nu este închis cu `</option>` (browserul îl închide singur, dar regula este să punem noi `</option>`).  

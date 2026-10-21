@@ -347,7 +347,7 @@ Facem **secțiunea de intrare** (hero): titlul mare, o frază și un buton, cu t
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) lipește antetul de marginea de sus când derulezi pagina; (2) elementul care are și clasa `meniu`, și clasa `deschis` (fără spațiu între ele); (3) `true` dacă a pus clasa, `false` dacă a scos clasa; (4) pentru că un buton adevărat se poate apăsa și cu tastatura și este înțeles de cititoarele de ecran.  
 - **Dacă ritmul clasei este lent:** verificarea `if (... !== null)` și valoarea returnată de `toggle` se prezintă ca rețetă, fără explicații.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 5.  

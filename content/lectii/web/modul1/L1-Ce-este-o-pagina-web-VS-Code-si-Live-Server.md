@@ -382,7 +382,7 @@ Cunoaștem **scheletul folosit azi**, bucată cu bucată: `html`, `head`, `body`
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) VS Code (Visual Studio Code); (2) HTML; (3) în `<body>`; (4) este tagul de închidere: spune că paragraful se termină aici; (5) pentru că nu ai salvat fișierul (**Ctrl + S**); (6) cu `<br>` sau cu un `<p>` nou, pentru că Enter nu face rând nou în HTML.  
 - **Dacă ritmul clasei este lent:** puteți sări peste Exemplul 8 („Vezi sursa”) și peste partea cu F12; se pot face la lecția următoare sau ca bonus.  
 - **Exercițiul B:** `<h1>Salut</h1>` apare ca titlu mare cu textul „Salut”; comentariul nu apare deloc în pagină; `<p>Lume</p>` apare dedesubt ca paragraf cu textul „Lume”.  

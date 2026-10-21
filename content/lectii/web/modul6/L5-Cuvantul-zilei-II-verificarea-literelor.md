@@ -398,7 +398,7 @@ Trecem la **Canvas**: o pânză pe care desenăm cu JavaScript și pe care mișc
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) dă `-1`; (2) `x v v x x` (primul `B` gri, `O` verde, `B` verde, al patrulea `B` gri, `Y` gri); (3) dă restul împărțirii la 42, adică un număr de la 0 la 41, o poziție bună în lista de cuvinte; (4) ca să nu se vadă cuvântul secret în consolă: linia a fost doar pentru teste.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 6. Minimul de acceptare: cuvânt secret din listă, litere colorate verde, galben sau gri, mesaj de câștig; tratarea corectă a literelor repetate și cuvântul zilei sunt ținta.  
 - **Exercițiul B:** nu are răspuns unic; verificați că toate cuvintele au 5 litere, fără diacritice, și sunt potrivite pentru copii.  

@@ -342,7 +342,7 @@ Desenează un cerc cu 8 direcții și scrie lângă fiecare **intervalul de grad
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 
 **Exercițiul B:** `h = 80` → `(125 // 90) % 4 = 1` → **E**. `h = 200` → `(245 // 90) % 4 = 2` → **S**. `h = 300` → `(345 // 90) % 4 = 3` → **V**. `h = 359` → `(404 // 90) % 4 = 4 % 4 = 0` → **N**.
 

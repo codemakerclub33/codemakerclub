@@ -262,7 +262,7 @@ Facem **galeria**: pozele mici într-o grilă, iar la clic apare imaginea mare, 
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) pune pe un rând câte coloane încap; (2) fiecare coloană are cel puțin 240 px și, dacă mai este loc, se întinde egal cu celelalte; (3) pentru o bucată de conținut care are sens de sine stătător, de exemplu un card sau o știre; (4) ascunde elementul de cititoarele de ecran.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 5.  
 - **Exercițiul B:** nu are răspuns unic; verificați că grila rămâne adaptivă.  

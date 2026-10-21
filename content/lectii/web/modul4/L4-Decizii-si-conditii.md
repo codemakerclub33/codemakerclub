@@ -497,7 +497,7 @@ Fă un „Meniu al cafenelei”: cu `switch`, utilizatorul alege 1 (limonadă), 
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) `=` pune o valoare în variabilă, iar `===` compară două valori („este egal cu?”); (2) se sare, deoarece se execută exact unul dintre cele două blocuri; (3) se execută primul bloc adevărat, deci condiția cea mai strictă trebuie scrisă prima; (4) `&&` înseamnă „și” (ambele condiții adevărate), iar `||` înseamnă „sau” (cel puțin una adevărată); (5) `break` oprește `switch`-ul, ca să nu continue cu cazul următor; (6) `numar >= 1 && numar <= 20`.  
 - **Dacă ritmul clasei este lent:** `switch` și explicația despre `NaN` sunt opționale; în proiect puteți renunța la `Math.abs` și la mesajul „Foarte aproape”.  
 - **Exercițiul B:** (1) `false`; (2) `false` (litera mare contează); (3) `A`; (4) `A` (a doua parte este adevărată); (5) `C` (a doua condiție nu se mai verifică).  

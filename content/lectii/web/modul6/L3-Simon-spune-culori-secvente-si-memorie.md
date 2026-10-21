@@ -585,7 +585,7 @@ Joacă Simon cu un coleg, pe rând, și notează cine ajunge cel mai departe. Î
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) adaugă culoarea `2` (albastru) la sfârșitul listei, deci ordinea mai primește o culoare; (2) doar într-o funcție care începe cu `async`; (3) nu se întâmplă nimic: apăsarea este ignorată, pentru că funcția iese imediat; (4) ca jocul să se poată juca și de cine nu distinge bine culorile.  
 - **Dacă ritmul clasei este lent:** funcția `pauza` și `async` / `await` se dau gata, ca rețetă.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 8. Minimul de acceptare: 4 butoane, ordine care se aprinde, verificarea apăsărilor și sfârșitul jocului la greșeală; creșterea ordinii cu o culoare este ținta.  

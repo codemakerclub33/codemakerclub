@@ -269,7 +269,7 @@ Arată familiei site-ul tău, pe calculator sau pe telefon, și povestește fami
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) un calculator mereu pornit și conectat la internet, care arată site-ul lumii; (2) pentru că serviciile de găzduire caută pagina principală cu acest nume, în rădăcină; (3) acord scris de la părinte sau tutore, contul făcut de un adult, adresa fără numele complet al copilului, lista „înainte de publicare” trecută, profesorul a spus „da” și se știe cine îl poate șterge, și cum; (4) prezentăm site-ul local și păstrăm folderul, pentru că am învățat aceleași lucruri.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 2 și lista din Exemplul 5. Minimul de acceptare: folder curat, 3 pagini funcționale, fără date personale, și o prezentare scurtă cu demonstrație.  
 - **Exercițiul B:** nu are răspuns corect; este pentru elev. Notați lecțiile pe care elevul vrea să le repete.  

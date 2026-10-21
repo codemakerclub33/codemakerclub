@@ -302,7 +302,7 @@ Scrie acasă, pe foaie, un program Python care arată pe placă **pe rând, la u
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 
 **Exercițiul B:** apare fața veselă o jumătate de secundă, apoi derulează `OK`, apoi rămâne fața tristă.
 

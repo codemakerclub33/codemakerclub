@@ -105,7 +105,7 @@ Răspunde pe foaie, fără să te uiți în lecții. Răspunsurile sunt la final
 | caut și repar greșeli în programe | ☐ | ☐ | ☐ |
 | îmi prezint proiectul | ☐ | ☐ | ☐ |
 
-**Răspunsuri pentru profesor:**
+**Răspunsuri:**
 1. Același **grup**. 2. Trimite numărul `5` către plăcile din grup. 3. Semnalul oscilează; un interval e mai sigur decât o valoare exactă. 4. Piciorul **lung (+)** spre pin; rezistența protejează LED-ul de curent prea mare. 5. `repeat` merge de un număr fix de ori; `while` merge cât timp condiția e adevărată. 6. Stinge toate LED-urile; evită repetarea acelorași trei blocuri. 7. Cu `max of maxim and temperature`, la fiecare măsurătoare. 8. O înșiruire de valori într-o variabilă, de exemplu temperaturile salvate. 9. Ca receptorul să știe ce reprezintă valoarea (temperatură sau lumină). 10. Ce trebuie / ce face / unde se rupe / o schimbare / raport.
 
 ---

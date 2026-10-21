@@ -605,7 +605,7 @@ Facem **Simon spune**: un joc de memorie cu culori care se aprind într-o ordine
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) rotunjește în sus la un număr întreg, deci dă `23`; (2) transformă un obiect în text, ca să poată fi salvat în `localStorage`; (3) rescrie tot ce se vede într-un singur loc, deci nu uiți să schimbi vreun număr pe ecran; (4) `try … catch` prinde eroarea, salvarea este ignorată și jocul începe de la zero.  
 - **Dacă ritmul clasei este lent:** Exemplul 8 (`JSON` și `localStorage`) se dă ca fragment gata; elevii nu trebuie să rețină `JSON`.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 9. Minimul de acceptare: monedă care dă monede, cel puțin o îmbunătățire cumpărabilă cu preț care crește, butoane blocate corect și actualizare corectă a ecranului. Salvarea este ținta, nu minimul.  

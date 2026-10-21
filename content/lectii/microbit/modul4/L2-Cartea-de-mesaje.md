@@ -336,7 +336,7 @@ Fă pe foaie o listă cu **6 lucruri** din rucsacul tău. Scrie indexul fiecăru
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 
 **Exercițiul B:** `l[1] = "b"`, `l[-1] = "d"`, `len(l) = 4`, `l[0] + l[3] = "ad"`, `"c" in l` este `True`. `l[4]` dă `IndexError` (indexurile sunt 0–3).
 

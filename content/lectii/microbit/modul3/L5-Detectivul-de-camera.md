@@ -322,7 +322,7 @@ Alege **un loc din casă** (dormitor, bucătărie, balcon) și, cu placa, măsoa
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 
 **Exercițiul B:** apare `SAD`, pentru că `t >= 26` este prima condiție adevărată; celelalte nu mai sunt verificate.
 

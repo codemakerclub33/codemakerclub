@@ -420,7 +420,7 @@ Fă un joc „Contul de bani”: începi cu 100 de lei, iar la fiecare rundă ut
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) bucla `while` repetă corpul cât timp condiția rămâne adevărată; (2) condiția rămâne mereu adevărată, bucla nu se mai oprește și pagina îngheață; (3) când corpul trebuie să ruleze cel puțin o dată, de exemplu „întreabă până răspunde corect”; (4) sare peste restul rundei curente și trece la runda următoare; (5) `null`.  
 - **Exercițiul B:** (1) `3`, `2`, `1`; (2) `10`; (3) `1`, `2`, `4`, `5`; (4) `1`, `2`.  
 - **Exercițiul C:** (1) `let i = 10; while (i >= 1) { console.log(i); i--; }`; (2) `let n = 5; while (n < 200) { console.log(n); n *= 2; }`; (3) `let cuvant; do { cuvant = prompt("Un cuvânt de cel puțin 3 litere:"); } while (cuvant === null || cuvant.length < 3);` (atenție: la Cancel `prompt` dă `null`, iar `null.length` dă eroare; de aceea verificăm întâi `cuvant === null`, iar `||` oprește evaluarea).  

@@ -577,7 +577,7 @@ Felicitări! Ai terminat ultimul modul al cursului Web. Poți continua singur: u
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) ca să adaugi un joc nou doar printr-un obiect în listă, fără să schimbi altceva, iar cartonașele se creează singure din listă; (2) șterge lista de cartonașe, ca să nu apară de două ori; (3) ca să folosim doar un număr normal; dacă cineva schimbă valoarea (de exemplu „abc”), o ignorăm; (4) ieși din folderul jocului și deschizi `index.html` din folderul de deasupra.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 7. Minimul: cartonașe către cel puțin 3 jocuri care merg; ținta: restul listei.  
 - **Exercițiul B:** nu are răspuns unic; urmăriți ca elevul să numească o idee de programare reală pentru fiecare joc.  

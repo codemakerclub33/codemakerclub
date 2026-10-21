@@ -630,7 +630,7 @@ Terminăm **Cuvântul zilei**: jocul alege un cuvânt secret în fiecare zi, ver
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) căsuța din primul rând, a cincea coloană (ultima din rând), pentru că numărăm de la 0; (2) face litera mare; (3) pentru că `coloana` arată următoarea căsuță goală, deci trebuie să ne întoarcem la ultima literă scrisă, abia apoi o golim; (4) ține minte dacă jocul s-a terminat; dacă este `true`, tastele nu mai fac nimic.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 9. Minimul de acceptare: tabla și scrierea literelor în căsuțe; tastatura de pe ecran și Enter sunt ținta.  
 - **Exercițiul B:** nu are răspuns unic; verificați că elevul își dă seama că schimbarea lungimii cere și o schimbare în CSS.  

@@ -526,7 +526,7 @@ Fă un site mic cu **două pagini** (`index.html` și `despre.html`) despre **an
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) cu `<link rel="stylesheet" href="stil.css">` în `<head>`; (2) pentru clasă punct (`.important`), pentru id diez (`#titlu`); (3) aplică aceeași regulă și titlurilor `<h1>`, și titlurilor `<h2>`; (4) roșu, pentru că id bate clasa, iar clasa bate tagul; (5) între `/*` și `*/`, de exemplu `/* Culorile paginii */`.  
 - **Exercițiul B:** primul paragraf albastru; al doilea verde; al treilea roșu (id bate clasa, iar clasa bate tagul).  
 - **Exercițiul C:** (1) `h2 { color: purple; }`; (2) `.nota { color: gray; font-size: 14px; }`; (3) `#titlu { text-align: center; }`.  

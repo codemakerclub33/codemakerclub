@@ -333,7 +333,7 @@ Scrie pe foaie o melodie de **8 note** (de exemplu o cântare simplă) ca listă
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 
 **Exercițiul B:** Se aude o notă `g4`, apoi o **pauză**, apoi încă o notă `g4`. Lista are **3** note, iar `len(...)` dă `3`.
 

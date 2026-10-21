@@ -318,7 +318,7 @@ Formulare II: **alegeri**. Butoane rotunde, căsuțe bifate, liste de unde alegi
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) valoarea `for` din `<label>` este la fel cu `id` din `<input>`; (2) înlocuiește literele cu puncte, ca să nu le vadă cineva peste umăr; (3) `submit` trimite formularul, `reset` șterge ce ai scris în toate casetele; (4) `name` este numele sub care se trimite valoarea casetei (perechea nume = valoare); fără el valoarea nu apare; (5) parola apare în adresa paginii și poate fi văzută, deci scriem doar parole de probă.  
 - **Exercițiul C:** (1) `text`; (2) `password`; (3) `textarea`; (4) `text`.  
 - **Exercițiul D:** (1) `for="animale"` nu se potrivește cu `id="animal"`; (2) caseta `animal` nu are `name`; (3) `<textarea>` nu este închis cu `</textarea>`.  

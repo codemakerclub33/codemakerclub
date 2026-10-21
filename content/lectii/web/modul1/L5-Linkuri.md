@@ -350,7 +350,7 @@ Fă un mic site cu **două pagini** despre **un subiect pe care îl iubești** (
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) `href`; (2) deschide linkul într-o filă nouă; (3) `<a href="despre.html">Despre mine</a>`; (4) „un folder mai sus” (ieși din folderul curent); (5) dai titlului un `id` (de exemplu `id="hobby"`) și scrii linkul `<a href="#hobby">...</a>`.  
 - **Exercițiul B:** (1) alt site; (2) pagină din folderul tău; (3) pagină din folderul tău, într-un subfolder; (4) alt site.  
 - **Exercițiul C:** (1) `<a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer">NASA</a>`; (2) `<a href="galerie.html">Galerie</a>`; (3) `<a href="../index.html">Prima pagină</a>`.  

@@ -500,7 +500,7 @@ Terminăm jocul: apar **cactuși** pe care trebuie să îi sari, jocul numără 
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) pe sol, pentru că `SOL` este 180 și picioarele ating solul; (2) pentru că în sus înseamnă `y` mai mic, deci viteza trebuie să fie negativă; (3) dinozaurul ar putea sări și din aer, deci ar putea zbura prin apăsări repetate; (4) pentru că Spațiu și Enter apasă deja butonul, iar altfel aceeași apăsare ar fi numărată de două ori.  
 - **Exercițiul A:** pentru evaluare folosiți lista din Exemplul 7. Minimul: dinozaurul desenat pe sol; ținta: săritura corectă și comenzile.  
 - **Exercițiul B:** nu are răspuns unic; verificați că elevul poate explica ce a schimbat.  

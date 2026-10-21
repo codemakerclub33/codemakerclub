@@ -430,7 +430,7 @@ Fă un program „Ceasul de numărat”: cere un număr `n` și afișează numer
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) început, condiție și pas, despărțite prin `;`; (2) cu `0` (prima literă are poziția 0); (3) cu `i--` și condiția `i >= 1`, de exemplu `for (let i = 5; i >= 1; i--)`; (4) pentru că, scris înăuntru, totalul s-ar goli la fiecare rundă; (5) o buclă a cărei condiție rămâne mereu adevărată, deci nu se oprește niciodată.  
 - **Exercițiul B:** (1) `10`, `20`, `30`; (2) `5`, `4`, `3`; (3) `0`, `2`, `4`; (4) `10` (1 + 2 + 3 + 4).  
 - **Exercițiul C:** (1) `for (let i = 10; i <= 20; i++) { console.log(i); }`; (2) `for (let i = 5; i <= 50; i += 5) { console.log(i); }`; (3) `let produs = 1; for (let i = 1; i <= 5; i++) { produs *= i; } console.log(produs);` (rezultă 120; cu valoarea de pornire 0 ar fi mereu 0).  

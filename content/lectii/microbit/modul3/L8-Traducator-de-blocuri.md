@@ -466,7 +466,7 @@ Alege **un program** făcut la cursul cu blocuri (sau inventează unul) și scri
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 
 **Exercițiul B:** `A` → `pas` 1. A doua `A`: `pas` e 1, nu 0 și nu 2, deci `else` → greșeală (`greseli = 1`, `pas = 0`). `B`: `pas` e 0, nu 1 → greșeală (`greseli = 2`, `pas = 0`). `A`: `pas` 0 → `pas = 1`. **Final: `pas = 1`, `greseli = 2`.**
 

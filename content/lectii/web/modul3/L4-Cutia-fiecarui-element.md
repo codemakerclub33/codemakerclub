@@ -509,7 +509,7 @@ Fă o pagină „Carduri de jucători” cu **5 carduri** ale unor jucători inv
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) de la interior spre exterior: conținut, `padding`, `border`, `margin`; (2) centrează pe orizontală o cutie care are `width` sau `max-width`; (3) 250px (200 + 20 + 20 + 5 + 5); (4) `display: inline-block;`; (5) îi pui `display: inline-block;`, `padding`, fundal, `border-radius` și `text-decoration: none;`.  
 - **Dacă ritmul clasei este lent:** în proiect cereți minimum 3 cărți și lăsați `box-shadow` și imaginile pentru bonus.  
 - **Exercițiul B:** (1) 300 + 10 + 10 + 2 + 2 = 324px; (2) 300px; (3) sus 5px, dreapta 10px, jos 15px, stânga 20px.  

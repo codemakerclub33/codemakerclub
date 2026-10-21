@@ -570,7 +570,7 @@ Desenează **2 hărți noi** pe hârtie, 5×5. La una, ascunde un drum lung. Sch
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 
 **Exercițiul B:** `harta[2][4] = "."`, `harta[3][0] = "."`, `harta[4][0] = "E"`.
 

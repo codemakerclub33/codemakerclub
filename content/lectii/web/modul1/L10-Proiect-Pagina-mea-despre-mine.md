@@ -326,7 +326,7 @@ Alege **un lucru de îmbunătățit** din feedbackul colegului sau din lista de 
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz final de modul:** (1) HTML = structura (scheletul), CSS = aspectul (culori, fonturi), JavaScript = comportamentul (ce se întâmplă la click); (2) `</html>` (ultimul tag deschis se închide primul); (3) `<a href="despre.html">Despre mine</a>`; (4) `<img src="imagini/poza.jpg" alt="descriere">`; `alt` spune în cuvinte ce se vede, apare dacă imaginea nu se încarcă și este citit pentru cei care nu văd; (5) cu `style="background-color: lightyellow;"` pe `<body>`; (6) „un folder mai sus”; (7) salvezi, citești ce vezi, cauți mai sus de locul efectului, verifici lista de suspecți (tag neînchis, ghilimele, nume de fișier, `:` și `;`), schimbi un singur lucru odată sau comentezi bucăți de cod.  
 - **Evaluare sugerată (20 puncte):** schelet corect în fiecare pagină (3); meniu identic și funcțional (3); titluri și paragrafe (2); cele două tipuri de liste (2); imagini cu `alt` care se văd (3); culori consecvente și citibile (2); cod indentat și comentarii (2); fără date personale (1); prezentare (2).  
 - **Siguranță:** verificați înainte de orice prezentare publică să nu existe date personale și poze cu fețe. Folosiți desene sau avatare.  

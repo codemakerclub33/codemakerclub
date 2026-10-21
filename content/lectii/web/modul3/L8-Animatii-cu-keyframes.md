@@ -593,7 +593,7 @@ Fă o pagină „Povestea mea animată”: titlul apare lin, trei rânduri de te
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) rețeta (`@keyframes`, ce se schimbă) și pornirea (`animation`, pe ce element rulează); (2) animația se repetă la nesfârșit; (3) animația merge înainte, apoi înapoi, alternativ; (4) `transform` și `opacity`; (5) cel mult 3 pe secundă.  
 - **Dacă ritmul clasei este lent:** la proiect cereți minimum 2 animații.  
 - **Exercițiul B:** (1) animația `pulsare` rulează 3 secunde și se repetă la infinit; (2) animația rulează de 3 ori și se oprește; (3) elementul merge de la stânga la dreapta, apoi înapoi de la dreapta la stânga, alternativ; (4) în cele 2 secunde de așteptare elementul este vizibil (starea normală), apoi dispare brusc și apare lin (de aceea trebuie `both`).  

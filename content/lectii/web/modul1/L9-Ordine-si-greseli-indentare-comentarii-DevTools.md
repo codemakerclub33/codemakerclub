@@ -338,7 +338,7 @@ Ultimul proiect din modul: **„Pagina mea despre mine”**. Folosești tot ce a
 
 ---
 
-## Răspunsuri pentru profesor
+## Răspunsuri
 - **Quiz scurt:** (1) cu 2 spații; (2) între `<!--` și `-->`, de exemplu `<!-- notiță -->`; (3) structura paginii: tagurile, unul în interiorul altuia; (4) browserul nu a găsit fișierul cerut (de exemplu o imagine cu numele scris greșit); (5) ca să știi exact ce schimbare a reparat pagina (sau a stricat altceva).  
 - **Dacă ritmul clasei este lent:** puteți sări peste Exemplul 6 („jumătate-jumătate”) și peste Exemplul 8; rămâneți la indentare, comentarii și fila Console.  
 - **Exemplul 5:** `<h1>` nu a fost închis; trebuie `</h1>`.  
