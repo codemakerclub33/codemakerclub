@@ -51,7 +51,7 @@ Desenează un plan scurt: **ce obiecte**, **unde stau**.
 O diorama arată bine pe o **bază** care „ține” scena:
 
 1. **Shift + A → Mesh → Cylinder** (Vertices 64, Radius 6, Depth 0.5), sau un **Cube** aplatizat.  
-2. Așază piesa la **Z = 0** ca vârful să fie sus.  
+2. Așază piesa la **Z = −0.25**, ca fața de sus să fie exact la nivelul 0.  
 3. Pe baza aceasta pui totul.
 
 **Gata când:**  

@@ -48,7 +48,7 @@ Cubul de start e mare de **2×2×2**. Îl transformi într-o căsuță mai lată
 ### 2) Acoperișul — un con cu 4 laturi
 1. **Shift + A → Mesh → Cone.**  
 2. În panoul din stânga-jos: **Vertices = 4**, **Radius = 2.2**, **Depth = 1.6**.  
-3. Un con cu 4 laturi e o **piramidă**, dar e rotită cu 45°. Rotește conul: **R Z 45 Enter**, apoi îngustează conul în adâncime: **S Y 0.8 Enter**.  
+3. Un con cu 4 laturi e o **piramidă**, dar e rotită cu 45°. Rotește conul: **R Z 45 Enter**, apoi **Ctrl + A → Rotation** (ca rotirea să fie „aplicată”), apoi îngustează conul în adâncime: **S Y 0.8 Enter**.  
 4. Așază acoperișul deasupra casei: **Location Z = 2 + 0.8 = 2.8**.  
 5. Dacă acoperișul e prea mic sau mare, scalează acoperișul cu **S**.
 
@@ -60,7 +60,7 @@ Cubul de start e mare de **2×2×2**. Îl transformi într-o căsuță mai lată
 
 ### 3) Ușa
 1. **Shift + A → Mesh → Cube**. În **N → Item → Dimensions** scrie: X 0.8, Y 0.1, Z 1.6.  
-2. Așază fereastra pe fața din față a casei: **Location X = 0, Y = −1.25, Z = 0.8** (peretele din față e la Y = −1.2).  
+2. Așază ușa pe fața din față a casei: **Location X = 0, Y = −1.25, Z = 0.8** (peretele din față e la Y = −1.2).  
 3. Vezi din față (**1**): ușa e centrată pe casă?
 
 **Gata când:**  

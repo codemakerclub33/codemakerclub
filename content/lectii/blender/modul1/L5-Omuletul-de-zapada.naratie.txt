@@ -18,9 +18,9 @@ Al cincilea pas. Shade Smooth, pentru suprafață netedă. Sferele arată cu fa�
 
 Al șaselea pas. Pălăria. Un cilindru cu raza zero virgulă cinci și adâncimea zero virgulă șapte, la înălțimea cinci virgulă treizeci și cinci, pentru corpul pălăriei. Un al doilea cilindru, plat, cu raza zero virgulă opt și adâncimea zero virgulă zero opt, ca boruri, la înălțimea cinci.
 
-Al șaptelea pas. Brațele, ca niște crengi. Un cilindru subțire, cu raza zero virgulă zero cinci și adâncimea unu virgulă cinci, rotit cu R, Y, șaizeci, și pus pe lateral. Îl duplici pentru celălalt braț.
+Al șaptelea pas. Brațele, ca niște crengi. Un cilindru subțire, cu raza zero virgulă zero cinci și adâncimea unu virgulă cinci, rotit cu R, Y, șaizeci, la X egal unu virgulă patru și Z egal trei virgulă patru. Faci o copie, cu Shift plus D, pentru celălalt braț: X egal minus unu virgulă patru și Rotation Y egal minus șaizeci de grade.
 
-Al optulea pas, pentru varianta completă. Legăm totul, cu părinte și copii. Vrei să muți omulețul întreg dintr-o mișcare. Selectezi toate piesele mici, adică ochi, nas, pălărie și celelalte, cu Shift plus click. La final, Shift plus click pe sfera de jos, care devine obiectul activ, deci părintele. Apeși Control plus P, apoi Object. Acum, când muți sfera de jos cu G, toate piesele merg după ea. În Outliner vezi piesele sub părinte, ca într-o ierarhie.
+Al optulea pas, pentru varianta completă. Legăm totul, cu părinte și copii. Vrei să muți omulețul întreg dintr-o mișcare. Selectezi toate piesele, în afară de sfera de jos, adică sferele de mijloc și cap, ochi, nas, nasturi, pălărie și brațe, cu Shift plus click. La final, Shift plus click pe sfera de jos, care devine obiectul activ, deci părintele. Apeși Control plus P, apoi Object. Acum, când muți sfera de jos cu G, toate piesele merg după ea. În Outliner vezi piesele sub părinte, ca într-o ierarhie.
 
 Greșeli frecvente. Omulețul se desface când îl muți: nu ai apăsat Control plus P. Părintele nu este ultimul selectat: selectează părintele la sfârșit. Sferele sunt colțuroase: lipsește Shade Smooth. Nasul arată în sus sau înăuntru: verifică rotația pe X, de nouăzeci de grade, și privește din dreapta, cu trei. Ochii nu sunt simetrici: folosește valori X egale, cu semn opus.
 

@@ -78,7 +78,7 @@ Camera din scena de start e la dreapta și sus. O poți muta cu **G** și roti c
 
 1. Plasează-te în viewport în **unghiul în care vrei fotografia**.  
 2. Apasă **Ctrl + Alt + Numpad 0** (sau **View → Align View → Align Active Camera to View**): camera „sare” la vederea ta.  
-3. Verifică prin camera: **Numpad 0**.  
+3. Verifică prin cameră: **Numpad 0**.  
 4. Dacă ai nevoie să ajustezi **fără să te încurci**, în **N → View → Camera to View** bifează opțiunea și poți naviga, iar camera te urmează (**debifează după!**).
 
 **Gata când:**  
@@ -86,7 +86,7 @@ Camera din scena de start e la dreapta și sus. O poți muta cu **G** și roti c
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 5) Regula treimilor
-Imaginează ecranul împărțit în 3×3 pătrate. Pune subiectul **pe linii sau la intersecții**, nu mereu în mijloc. În **Properties → Camera → Viewport Display** bifează **Composition Guides → Thirds** (liniile apar în vederea camerei).
+Împarte cu gândul ecranul în 3×3 pătrate. Pune subiectul **pe linii sau la intersecții**, nu mereu în mijloc. În **Properties → Camera → Viewport Display** bifează **Composition Guides → Thirds** (liniile apar în vederea camerei).
 
 ### 6) Lentila camerei
 **Properties → tab Camera → Focal Length:**

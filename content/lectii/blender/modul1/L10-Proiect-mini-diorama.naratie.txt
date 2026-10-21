@@ -10,7 +10,7 @@ Ce ai nevoie. Piesele din lecțiile patru până la șapte: casa, omulețul și 
 
 Primul pas. Alege o temă. Iarna: casă, omuleț, brazi, zăpadă. Parcul: bancă, copaci, felinar, fântână. Spațiul: rachetă, planete, stele, antenă. Ferma: hambar, gard, copac și o vacă simplificată. Desenează un plan scurt: ce obiecte ai și unde stau.
 
-Al doilea pas. Baza. O diorama arată bine pe o bază care ține scena. Adaugi un cilindru, cu Shift plus A, Mesh, Cylinder, cu Vertices șaizeci și patru, Radius șase și Depth zero virgulă cinci, sau un cub aplatizat. O pui la înălțimea zero, ca partea de sus să fie deasupra. Pe această bază pui totul.
+Al doilea pas. Baza. O diorama arată bine pe o bază care ține scena. Adaugi un cilindru, cu Shift plus A, Mesh, Cylinder, cu Vertices șaizeci și patru, Radius șase și Depth zero virgulă cinci, sau un cub aplatizat. O pui la înălțimea minus zero virgulă douăzeci și cinci, ca fața de sus să fie exact la nivelul zero. Pe această bază pui totul.
 
 Al treilea pas. Obiecte din lecțiile trecute. Poți copia obiecte din alte fișiere. Mergi la File, Append. Alegi fișierul cu extensia blend, apoi folderul Object, apoi obiectul dorit. Dai click pe Append. Sau le refaci simplu, direct în scenă.
 

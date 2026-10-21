@@ -113,6 +113,8 @@ Apasă **N** și, în tab-ul **Item**, vezi **Location, Rotation, Scale**. Poți
 6. La final, adaugă un **plan** (Shift + A → Mesh → Plane), mărit cu **S 8 Enter**, ca podea.
 
 > **Sfat:** în loc să faci 6 cuburi de la zero, duplică ultimul cub. Mai repede și mai exact.
+>  
+> Treptele din acest exercițiu „plutesc”, cu spațiu gol dedesubt. Așa e scara din joc, e normal.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Complet — „Scara spre cer””  
@@ -128,7 +130,7 @@ Reguli:
 1. Folosești **numere exacte** (**G**, **R** sau **S** + axă + număr + Enter). Nu muți „din ochi”.  
 2. Treptele sunt la **distanțe egale**.  
 3. Cel puțin o dată folosești **panoul N** ca să verifici poziția unui obiect.  
-4. Pe o foaie notezi **numerele** pe care ai folosit (de exemplu „înălțime treaptă: 0.4”).
+4. Pe o foaie notezi **numerele** folosite (de exemplu „înălțime treaptă: 0.4”).
 
 **Gata când:**  
 - [ ] Construcția are cel puțin 8 piese, la distanțe egale  

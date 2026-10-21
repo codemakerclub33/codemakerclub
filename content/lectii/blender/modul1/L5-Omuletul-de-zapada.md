@@ -91,12 +91,12 @@ Sferele arată „cu fațete”. Le netezești:
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 7) Brațele (crengi)
-**Cylinder** subțire (Radius 0.05, Depth 1.5), rotit **R Y 60** și pus pe lateral. Fă o copie pentru celălalt braț.
+**Cylinder** subțire (Radius 0.05, Depth 1.5), rotit **R Y 60**, la **X = 1.4, Z = 3.4**. Fă o copie (**Shift + D**) pentru celălalt braț: **X = −1.4**, **Rotation Y = −60°**.
 
 ### 8) Complet — legăm totul (parent)
 Vrei să muți omulețul întreg dintr-o mișcare. Soluția: **părinte și copii**.
 
-1. Selectează **toate piesele mici** (ochi, nas, pălărie…) cu **Shift + click**.  
+1. Selectează **toate piesele**, în afară de sfera de jos (sferele de mijloc și cap, ochi, nas, nasturi, pălărie, brațe), cu **Shift + click**.  
 2. La final, **Shift + click** pe **sfera de jos** (ea devine „activă”, deci părintele).  
 3. Apasă **Ctrl + P → Object**.  
 4. Acum, când muți sfera de jos cu **G**, toate piesele merg după ea!  

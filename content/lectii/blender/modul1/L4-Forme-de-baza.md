@@ -96,14 +96,14 @@ Construiește pe rând (șterge mai întâi cubul de start, cu **X**):
 |-------|-------|---------|
 | **Corp** | Cylinder | Radius 0.5 · Depth 3 · Vertices 32 |
 | **Vârf** | Cone | Radius 0.5 · Depth 1 · așezat deasupra corpului |
-| **Aripi** (3) | Cube | scalate subțire: **S Y 0.1**, **S X 0.6**, apoi puse jos, în jurul corpului |
-| **Geam** | UV Sphere | scalat mic, lipit pe corp, la mijloc |
-| **Flacără** | Cone | cu vârful în jos (**R X 180**), sub corp, la **Z = −0.5** |
+| **Aripi** (3) | Cube | scalate subțire: **S Y 0.1**, **S X 0.6**, **S Z 0.5**, apoi puse jos, în jurul corpului |
+| **Geam** | UV Sphere | scalat mic (**S 0.15**), lipit pe corp, la mijloc |
+| **Flacără** | Cone | **Radius 0.3, Depth 1**, cu vârful în jos (**R X 180**), sub corp, la **Z = −0.5** |
 
 **Pași recomandați**
 1. Adaugă corpul. Mută corpul în sus: **G Z 1.5 Enter** (ca baza să stea pe podea).  
 2. Adaugă conul: vezi că apare la centru. Mută conul la **Z = 3.5**.  
-3. Adaugă o aripă. Ridică aripa la **Z = 0.4** și mută aripa la **X = 0.7**. Pentru celelalte aripi, folosește **Shift + D** și rotește copiile **în jurul corpului**: cel mai simplu e să muți mai întâi cursorul 3D în centru (**Shift + C**), să alegi **Pivot: 3D Cursor** (butonul din bara de sus a viewport-ului) și apoi să apeși **R Z 120** și **R Z 240**.  
+3. Adaugă o aripă. Ridică aripa la **Z = 0.5** și mută aripa la **X = 0.7**. Pentru celelalte aripi, folosește **Shift + D** și rotește copiile **în jurul corpului**: cel mai simplu e să muți mai întâi cursorul 3D în centru (**Shift + C**), să alegi **Pivot: 3D Cursor** (butonul din bara de sus a viewport-ului) și apoi să apeși **R Z 120** și **R Z 240**. La final pune **Pivot** înapoi pe **Median Point**.  
 4. Geamul: o sferă mică la **Y = −0.45**, **Z = 2.3**.  
 5. Fiecare piesă primește un nume (**F2**): `Corp`, `Varf`, `Aripa1`…
 
