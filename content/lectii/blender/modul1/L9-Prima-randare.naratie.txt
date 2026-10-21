@@ -20,6 +20,8 @@ Al cincilea pas. Experiment cu Cycles. Alegi Cycles ca motor. Pui Max Samples la
 
 Al șaselea pas, pentru varianta completă. Fundal transparent. Vrei omulețul fără cer, ca să-l lipești pe altă imagine. În Properties, la Render, Film, bifezi Transparent. La Output, în File Format alegi P N G, iar la Color alegi R G B A. Apeși F doisprezece și salvezi. În editorul de imagini vezi pătrățele gri și albe în loc de fundal.
 
+Pasul de creație. Trei poze, trei povești. Faci trei poze ale aceleiași scene și schimbi de fiecare dată un singur lucru: culoarea cerului, unghiul camerei și lumina. Randezi cu EEVEE, la o mie două sute optzeci pe șapte sute douăzeci, și salvezi imaginile cu litere în nume. Pe o foaie notezi ce ai schimbat și care poză îți place cel mai mult.
+
 Greșeli frecvente. Imaginea este neagră: camera nu vede nimic sau lumina lipsește. Randarea durează o veșnicie: ai Cycles cu multe Samples, treci pe EEVEE sau scade Samples. Fișierul nu a fost salvat: randarea nu se salvează automat, folosește Image, Save As. Imaginea este mică: rezoluția este prea mică sau procentul este cincizeci. Fundalul nu este transparent: lipsește Film, Transparent sau formatul P N G cu R G B A.
 
 Succes la prima poză.

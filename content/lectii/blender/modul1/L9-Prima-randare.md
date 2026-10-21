@@ -10,7 +10,7 @@
 ## Obiectiv
 La finalul orei ai o imagine salvată (PNG) cu scena ta.  
 **Minim:** randezi cu **F12** și salvezi imaginea.  
-**Complet:** Minim + reglezi **rezoluția**, compari motoarele **EEVEE** și **Cycles** și obții o imagine cu fundal transparent.
+**Complet:** Minim + reglezi **rezoluția**, compari motoarele **EEVEE** și **Cycles** obții o imagine cu fundal transparent și faci **trei poze ale aceleiași scene**, fiecare cu altă schimbare.
 
 ## De ce contează
 Până acum ai lucrat în viewport. Randarea face **imaginea finală**: calculează lumina, umbrele și reflexiile cu mare atenție. E „fotografia” scenei tale.
@@ -24,8 +24,10 @@ Până acum ai lucrat în viewport. Randarea face **imaginea finală**: calculea
 | 0–10 | Recap L8 |
 | 10–35 | Prima randare cu EEVEE |
 | 35–60 | Rezoluție și calitate |
-| 60–95 | Cycles vs EEVEE |
-| 95–120 | Fundal transparent, recap, galerie |
+| 60–85 | Cycles vs EEVEE |
+| 85–100 | Fundal transparent |
+| 100–115 | Creezi tu: trei poze, trei povești |
+| 115–120 | Recap, galerie |
 
 **Ce ai nevoie:** Blender 4.2 · scena din L8 (cu cameră și lumină)
 
@@ -108,6 +110,19 @@ Vrei omulețul fără cer, ca să-l lipești pe altă imagine:
 - [ ] Am făcut toți pașii din „Complet — fundal transparent”  
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
+### 7) Creează tu — „Trei poze, trei povești”
+Faci trei poze ale **aceleiași scene**. Schimbi de fiecare dată un singur lucru, ca să vezi ce diferență face.
+1. **Poza A:** schimbă **culoarea cerului** (Properties → World → Color).  
+2. **Poza B:** schimbă **unghiul camerei** (alt colț sau mai de sus).  
+3. **Poza C:** schimbă **lumina** (culoare sau direcție).  
+4. Randează cu **EEVEE** (rapid), la 1280 × 720. Salvează imaginile ca `Prenume_Nume_B1_L09_A.png`, `_B.png`, `_C.png`.  
+5. Pe o foaie notează ce ai schimbat la fiecare și **care poză îți place cel mai mult** și de ce.
+
+**Gata când:**  
+- [ ] Am 3 imagini salvate, cu litere în nume  
+- [ ] Am notat ce am schimbat la fiecare  
+- [ ] Am spus care îmi place cel mai mult și de ce  
+
 ### Dacă ai terminat devreme
 - [ ] Schimbă culoarea **cerului** în **Properties → World → Color**  
 - [ ] Sau Bonusul de mai jos  
@@ -130,7 +145,7 @@ Vrei omulețul fără cer, ca să-l lipești pe altă imagine:
 | | Ce trebuie |
 |--|------------|
 | **Minim** | Randare cu F12 + imagine PNG salvată |
-| **Complet** | Minim + rezoluție + comparație EEVEE/Cycles + fundal transparent |
+| **Complet** | Minim + rezoluție + comparație EEVEE/Cycles + fundal transparent + „Trei poze, trei povești” |
 
 ### Pasul 1 — Minim
 - [ ] F12 funcționează  
@@ -142,12 +157,13 @@ Vrei omulețul fără cer, ca să-l lipești pe altă imagine:
 - [ ] 1920 × 1080  
 - [ ] Am comparat EEVEE și Cycles  
 - [ ] Am o variantă cu fundal transparent  
+- [ ] Am făcut „Trei poze, trei povești”: 3 imagini și notițele pe foaie  
 - [ ] Numele `B1_L09` e corect
 
 ---
 
 ## Bonus
-- [ ] Fă trei randări cu lumini diferite și compară
+- [ ] Lipește omulețul cu fundal transparent peste o altă imagine, într-un editor simplu, dacă ai unul
 
 ## Recapitulare rapidă
 1. **F12** randează · **Image → Save As** salvează  
@@ -157,7 +173,7 @@ Vrei omulețul fără cer, ca să-l lipești pe altă imagine:
 
 ## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
 
-`Prima randare` → `Setările de randare` → `Cele două motoare` → `Rezoluția` → `Experiment: Cycles` → `Complet — fundal transparent`
+`Prima randare` → `Setările de randare` → `Cele două motoare` → `Rezoluția` → `Experiment: Cycles` → `Complet — fundal transparent` → `Creează tu`
 
 ## Mai departe *(opțional)*
 Trimite poza unui prieten sau a părinților și întreabă-i ce le-a plăcut. Ce ai îmbunătăți?

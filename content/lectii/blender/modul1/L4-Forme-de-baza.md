@@ -10,7 +10,7 @@
 ## Obiectiv
 La finalul orei adaugi și reglezi forme de bază și construiești o **rachetă** din ele.  
 **Minim:** adaugi 4 forme diferite și le schimbi dimensiunea.  
-**Complet:** Minim + reglezi forma din panoul **Add** (număr de laturi, rază) + racheta are corp, vârf, aripi și geam.
+**Complet:** Minim + reglezi forma din panoul **Add** (număr de laturi, rază) + racheta are corp, vârf, aripi și geam + construiești tu un **al doilea vehicul**, din forme alese de tine.
 
 ## De ce contează
 Modelatorii profesioniști încep adesea cu forme simple, pe care le combină și le modifică. Un copac e un cilindru și o sferă; o casă e un cub și un con.
@@ -24,8 +24,9 @@ Modelatorii profesioniști încep adesea cu forme simple, pe care le combină ș
 | 0–10 | Recap L3 |
 | 10–40 | Meniul **Add** și formele de bază |
 | 40–65 | Panoul de reglaj după adăugare |
-| 65–110 | Construim racheta |
-| 110–120 | Recap, quiz, galerie |
+| 65–95 | Construim racheta |
+| 95–115 | Creezi tu: alt vehicul |
+| 115–120 | Recap, quiz, galerie |
 
 **Ce ai nevoie:** Blender 4.2 · scena de start
 
@@ -113,6 +114,20 @@ Construiește pe rând (șterge mai întâi cubul de start, cu **X**):
 ### 6) Verifică din toate părțile
 Folosește vederile din L2: **1** (față), **3** (dreapta), **7** (sus). Sunt aripile la distanțe egale?
 
+### 7) Creează tu — „Vehiculul meu”
+Racheta ai construit după tabel. Acum alegi tu ce construiești.
+1. Alege un vehicul: **camion**, **submarin**, **avion**, **barcă** sau orice altceva vrei.  
+2. Folosește **cel puțin 5 piese**, din **cel puțin 3 forme diferite** (cub, sferă, cilindru, con, torus).  
+3. La **cel puțin o piesă** schimbă ceva în panoul **Adjust Last Operation** (laturi, rază sau adâncime).  
+4. Dă fiecărei piese un nume clar cu **F2** (`Roata1`, `Cabina` etc.).  
+5. Pe o foaie fă un tabel: **Piesa · Forma · Ce am reglat**.
+
+**Gata când:**  
+- [ ] Vehiculul are cel puțin 5 piese din 3 forme  
+- [ ] O piesă are reglaje din panoul Adjust Last Operation  
+- [ ] Toate piesele au nume  
+- [ ] Un coleg ghicește ce vehicul ai făcut  
+
 ### Dacă ai terminat devreme
 - [ ] Fă **două rachete** de mărimi diferite  
 - [ ] Sau Bonusul de mai jos  
@@ -135,7 +150,7 @@ Folosește vederile din L2: **1** (față), **3** (dreapta), **7** (sus). Sunt a
 | | Ce trebuie |
 |--|------------|
 | **Minim** | 4 forme diferite, cu dimensiuni schimbate |
-| **Complet** | Minim + rachetă completă, cu piese denumite |
+| **Complet** | Minim + rachetă completă, cu piese denumite + „Vehiculul meu” (5 piese, tabel pe foaie) |
 
 ### Pasul 1 — Minim
 - [ ] Am adăugat cub, sferă, cilindru, con  
@@ -147,6 +162,7 @@ Folosește vederile din L2: **1** (față), **3** (dreapta), **7** (sus). Sunt a
 - [ ] Corp, vârf, 3 aripi, geam, flacără  
 - [ ] Vertices 32 la corp  
 - [ ] Obiecte denumite  
+- [ ] Am construit „Vehiculul meu”, cu 5 piese și tabel pe foaie  
 - [ ] Numele `B1_L04` e corect
 
 ---
@@ -162,7 +178,7 @@ Folosește vederile din L2: **1** (față), **3** (dreapta), **7** (sus). Sunt a
 
 ## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
 
-`Meniul Add` → `Locul unde apar formele` → `Panoul „Adjust Last Operation”` → `Origine și nume` → `Complet — „Racheta mea”` → `Verifică din toate părțile`
+`Meniul Add` → `Locul unde apar formele` → `Panoul „Adjust Last Operation”` → `Origine și nume` → `Complet — „Racheta mea”` → `Verifică din toate părțile` → `Creează tu`
 
 ## Mai departe *(opțional)*
 Alege o jucărie și încearcă să o descompui în forme de bază: câte cuburi, sfere, cilindri ai nevoie?

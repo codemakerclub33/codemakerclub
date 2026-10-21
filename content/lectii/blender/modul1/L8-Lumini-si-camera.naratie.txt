@@ -20,6 +20,8 @@ Al șaselea pas. Lentila camerei. În Properties, fila Camera, setarea Focal Len
 
 Al șaptelea pas, pentru varianta completă. Compoziția finală. Un Sun cald, portocaliu deschis, cu Strength trei. Un Area mic, albastru, cu Power două sute, ca lumină de umplere din partea opusă. Camera la treizeci și cinci de milimetri, așezată dintr-un colț, ca să vezi două fețe ale casei.
 
+Pasul de creație. Dispoziția mea. Alegi ce simte cine se uită la poza casei: dimineață liniștită, seară caldă, noapte cu lună sau petrecere. Folosești cel puțin două lumini cu culori diferite și le dai nume. Pui camera într-un alt colț și respecți regula treimilor. Notezi tipul și puterea luminilor și o propoziție despre ce simte privitorul.
+
 Greșeli frecvente. Totul este întunecat: Power este prea mic sau lumina este în spatele obiectelor. Lumina Sun nu schimbă nimic când o muți: pentru Sun contează doar rotația. Camera nu vede casa: apasă Control plus Alt plus zero, apoi verifică cu zero. Nu ai umbre: treci în Rendered sau în Material Preview. Camera se mișcă singură: ai uitat Camera to View bifat, debifează-l.
 
 Succes la fotografie.

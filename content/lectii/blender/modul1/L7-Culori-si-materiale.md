@@ -10,7 +10,7 @@
 ## Obiectiv
 La finalul orei casa ta e colorată și ai încercat 3 aspecte diferite: mat, lucios, metalic.  
 **Minim:** colorezi 4 piese cu materiale diferite.  
-**Complet:** Minim + reglezi **Roughness** și **Metallic** + **copiezi** un material pe alte obiecte.
+**Complet:** Minim + reglezi **Roughness** și **Metallic** + **copiezi** un material pe alte obiecte + colorezi o scenă după o **temă** aleasă de tine.
 
 ## De ce contează
 O scenă fără culoare arată ca un model de plastilină gri. **Materialele** spun cum arată suprafața: culoare, lucire, transparență.
@@ -24,8 +24,9 @@ O scenă fără culoare arată ca un model de plastilină gri. **Materialele** s
 | 0–10 | Recap L6 · deschidem casa |
 | 10–40 | Primul material, Base Color |
 | 40–70 | Roughness și Metallic |
-| 70–95 | Copierea materialelor |
-| 95–120 | Casa colorată, recap, quiz |
+| 70–90 | Copierea materialelor, casa colorată |
+| 90–110 | Creezi tu: scena cu temă |
+| 110–120 | Recap, quiz, galerie |
 
 **Ce ai nevoie:** Blender 4.2 · fișierul din L6 (sau al omulețului din L5)
 
@@ -123,6 +124,20 @@ Deschide fișierul cu omulețul (L5) și dă-i culori:
 - [ ] Am făcut toți pașii din „Complet — omulețul colorat”  
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
+### 7) Creează tu — „Scena cu temă”
+Acum alegi tu culorile, nu le iei dintr-un tabel.
+1. Alege o **temă**: vară, noapte, cetate, ocean sau o temă a ta.  
+2. Recolorează casa și omulețul (sau o scenă nouă, cu cel puțin 5 piese) după tema aleasă.  
+3. Folosește **cel puțin 4 culori** care se potrivesc între ele. O piesă să fie **lucioasă** sau **metalică**, dacă are sens (de exemplu o armură sau o lanternă).  
+4. Păstrează o copie a variantei vechi, salvată înainte cu numele `Prenume_Nume_B1_L07_v1.blend`. Varianta nouă o salvezi ca `Prenume_Nume_B1_L07.blend`.  
+5. Scrie pe o foaie o propoziție: de ce ai ales aceste culori pentru tema ta.
+
+**Gata când:**  
+- [ ] Scena are o temă clară și cel puțin 4 culori potrivite  
+- [ ] Cel puțin o piesă are Roughness sau Metallic ales cu rost  
+- [ ] Am scris propoziția despre culori  
+- [ ] Un coleg ghicește tema fără să îi spui  
+
 ### Dacă ai terminat devreme
 - [ ] O sferă cu aspect de **aur** (galben, Metallic 1, Roughness 0.25)  
 - [ ] Sau Bonusul de mai jos  
@@ -145,7 +160,7 @@ Deschide fișierul cu omulețul (L5) și dă-i culori:
 | | Ce trebuie |
 |--|------------|
 | **Minim** | 4 piese cu culori diferite |
-| **Complet** | Minim + Roughness / Metallic + Link Materials + omuleț colorat |
+| **Complet** | Minim + Roughness / Metallic + Link Materials + omuleț colorat + „Scena cu temă” (4 culori potrivite, o propoziție) |
 
 ### Pasul 1 — Minim
 - [ ] Material Preview pornit  
@@ -157,6 +172,7 @@ Deschide fișierul cu omulețul (L5) și dă-i culori:
 - [ ] Am ales Roughness diferit  
 - [ ] Am folosit Ctrl + L  
 - [ ] Am colorat și omulețul  
+- [ ] Am făcut „Scena cu temă”, cu 4 culori potrivite și o propoziție  
 - [ ] Numele `B1_L07` e corect
 
 ---
@@ -172,7 +188,7 @@ Deschide fișierul cu omulețul (L5) și dă-i culori:
 
 ## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
 
-`Vezi culorile în viewport` → `Primul material` → `Cele trei butoane magice` → `Culori pentru casă` → `Copiem materiale` → `Complet — omulețul colorat`
+`Vezi culorile în viewport` → `Primul material` → `Cele trei butoane magice` → `Culori pentru casă` → `Copiem materiale` → `Complet — omulețul colorat` → `Creează tu`
 
 ## Mai departe *(opțional)*
 Priveste în jur: ce e lucios, ce e mat? Cum ai descrie un măr, o monedă și un pulover cu Roughness și Metallic?

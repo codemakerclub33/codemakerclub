@@ -10,7 +10,7 @@
 ## Obiectiv
 La finalul orei scena ta e bine luminată și camera privește frumos către casă.  
 **Minim:** adaugi o lumină și pui camera să vadă casa.  
-**Complet:** Minim + încerci **4 tipuri de lumină** + alegi culoarea și puterea + obții **umbre frumoase**.
+**Complet:** Minim + încerci **4 tipuri de lumină** + alegi culoarea și puterea + obții **umbre frumoase** + creezi o **dispoziție a ta** cu lumini și cameră.
 
 ## De ce contează
 Aceeași casă arată **foarte diferit** la prânz și la apus. Lumina face jumătate din frumusețea unui model, iar camera hotărăște ce vede privitorul.
@@ -24,8 +24,9 @@ Aceeași casă arată **foarte diferit** la prânz și la apus. Lumina face jum�
 | 0–10 | Recap L7 |
 | 10–50 | Cele 4 tipuri de lumină |
 | 50–80 | Culoare și putere |
-| 80–110 | Camera: poziție și vedere |
-| 110–120 | Recap, quiz, galerie |
+| 80–100 | Camera: poziție și vedere |
+| 100–115 | Creezi tu: dispoziția mea |
+| 115–120 | Recap, quiz |
 
 **Ce ai nevoie:** Blender 4.2 · casa din L7
 
@@ -111,6 +112,19 @@ Pentru scena noastră, **35–50 mm** merge bine.
 - [ ] Am făcut toți pașii din „Complet — compoziția finală”  
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
+### 8) Creează tu — „Dispoziția mea”
+Alegi tu ce simte cine se uită la poza casei.
+1. Alege o dispoziție: **dimineață liniștită**, **seară caldă**, **noapte cu lună** sau **casa în care e petrecere**.  
+2. Folosește **cel puțin 2 lumini** cu **culori diferite** (de exemplu galben cald și albastru rece). Dă fiecărei lumini un nume cu **F2** (`Soarele`, `Umplere`).  
+3. Pune camera într-un **alt colț** decât la „Complet” și respectă regula treimilor.  
+4. Scrie pe o foaie: tipul și puterea fiecărei lumini și o propoziție despre ce simte cine privește poza.
+
+**Gata când:**  
+- [ ] Cel puțin 2 lumini cu culori diferite și nume  
+- [ ] Camera vede casa dintr-un alt colț, cu compoziție în treimi  
+- [ ] Am notat valorile și propoziția  
+- [ ] Un coleg ghicește ce dispoziție ai ales  
+
 ### Dacă ai terminat devreme
 - [ ] Fă „apusul” și „răsăritul” ca două fișiere diferite  
 - [ ] Sau Bonusul de mai jos  
@@ -133,7 +147,7 @@ Pentru scena noastră, **35–50 mm** merge bine.
 | | Ce trebuie |
 |--|------------|
 | **Minim** | Lumină + cameră care vede casa |
-| **Complet** | Minim + 4 tipuri de lumină încercate + 2 lumini finale + regula treimilor |
+| **Complet** | Minim + 4 tipuri de lumină încercate + 2 lumini finale + regula treimilor + „Dispoziția mea” (2 lumini colorate, valori notate) |
 
 ### Pasul 1 — Minim
 - [ ] O lumină potrivită  
@@ -145,6 +159,7 @@ Pentru scena noastră, **35–50 mm** merge bine.
 - [ ] Am testat Point, Sun, Spot, Area  
 - [ ] Culoare și putere reglate  
 - [ ] Compoziție cu treimi  
+- [ ] Am făcut „Dispoziția mea”, cu 2 lumini colorate și valorile notate  
 - [ ] Numele `B1_L08` e corect
 
 ---
@@ -160,7 +175,7 @@ Pentru scena noastră, **35–50 mm** merge bine.
 
 ## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
 
-`Tipuri de lumină` → `Setări (Properties → tab Light, becul verde)` → `Experimentul zilei` → `Camera` → `Regula treimilor` → `Lentila camerei` → `Complet — compoziția finală`
+`Tipuri de lumină` → `Setări (Properties → tab Light, becul verde)` → `Experimentul zilei` → `Camera` → `Regula treimilor` → `Lentila camerei` → `Complet — compoziția finală` → `Creează tu`
 
 ## Mai departe *(opțional)*
 Fă poze ale aceluiași obiect la ore diferite și observă cum se schimbă umbrele. Încearcă să le reproduci în Blender.
