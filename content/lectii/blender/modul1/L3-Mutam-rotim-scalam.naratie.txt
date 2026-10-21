@@ -18,6 +18,8 @@ Al cincilea pas. Resetări utile. Alt plus G pune obiectul înapoi în centru. A
 
 Al șaselea pas, pentru varianta completă. Scara spre cer. Selectezi cubul, apeși S, zero virgulă cinci, Enter. Acum are latura de o unitate. Îl pui pe podea cu G, Z, zero virgulă cinci, Enter. Îl duplici cu Shift plus D, apoi click dreapta, ca să rămână copia pe loc. Muți copia o treaptă mai departe cu G, X, unu, Enter, apoi mai sus cu G, Z, zero virgulă cinci, Enter. Repeți duplicarea și mutarea până ai șase trepte, fiecare cu o unitate mai la dreapta și cu jumătate de unitate mai sus decât cea dinainte. La final adaugi un plan, cu Shift plus A, Mesh, Plane, mărit cu S, opt, Enter, ca podea. Sfat: în loc să faci șase cuburi de la zero, duplică-l pe ultimul. Este mai repede și mai exact.
 
+Pasul de creație. Scara mea. Acum o construiești pe a ta, fără pași scriși. Alegi o variantă: o scară mai lungă, cu opt trepte, un pod care urcă patru trepte, are o platformă la mijloc și coboară patru trepte, sau o scară cu cotitură, care schimbă direcția pe axa Y. Folosești numere exacte, treptele sunt la distanțe egale, verifici cel puțin o dată în panoul N și notezi pe o foaie numerele folosite.
+
 Greșeli frecvente. Obiectul sare departe: ai mișcat mouse-ul mult înainte de a confirma, apasă Escape și reia. Rotația merge pe axa greșită: apasă R, apoi Z, sau X, sau Y. Scalezi un obiect strâmb: ai blocat o singură axă, iar fără axă scalează uniform. Numerele nu se aplică: ai uitat Enter. Duplicatul rămâne peste original: după Shift plus D, mută-l imediat.
 
 Succes la scară.

@@ -10,7 +10,7 @@
 ## Obiectiv
 La finalul orei te miști în 3D fără să te pierzi și găsești oricând obiectul.  
 **Minim:** rotești, aproprii și deplasezi vederea cu mouse-ul.  
-**Complet:** Minim + vezi scena din **față, dreapta, sus**, treci între **perspectivă** și **ortografic** și găsești orice obiect cu **Home** și **Numpad .**.
+**Complet:** Minim + vezi scena din **față, dreapta, sus**, treci între **perspectivă** și **ortografic**, găsești orice obiect cu **Home** și **Numpad .** și faci un **tur ghidat** al unei scene aranjate de tine.
 
 ## De ce contează
 Un obiect 3D are **lățime, înălțime și adâncime**. Ca să-l modelezi bine, îl privești din mai multe părți, ca atunci când te uiți la o jucărie.
@@ -24,8 +24,9 @@ Un obiect 3D are **lățime, înălțime și adâncime**. Ca să-l modelezi bine
 | 0–10 | Recap L1 |
 | 10–45 | Rotire, deplasare, zoom |
 | 45–75 | Vederi standard (față, dreapta, sus) |
-| 75–105 | Perspectivă / ortografic, joc „găsește obiectul” |
-| 105–120 | Recap, quiz, galerie |
+| 75–90 | Perspectivă / ortografic, joc „găsește obiectul” |
+| 90–110 | Creezi tu: turul ghidat |
+| 110–120 | Recap, quiz, galerie |
 
 **Ce ai nevoie:** Blender 4.2 · fișierul din L1 sau unul nou · mouse cu rotiță (sau emulare)
 
@@ -108,6 +109,21 @@ Cu **Numpad** (sau emulat, cu tastele de sus):
 - [ ] Am făcut toți pașii din „Complet — jocul „Găsește obiectul””  
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
+### 7) Creează tu — „Turul ghidat”
+Acum aranjezi tu scena și o arăți altcuiva.
+1. Construiește o scenă cu **5 obiecte diferite** (Shift + A → Mesh), la distanțe diferite față de centru. Dă fiecărui obiect un nume clar cu **F2**.  
+2. Așază obiectele ca să existe cel puțin un obiect **mai sus** decât celelalte și două obiecte **aproape unul de altul**.  
+3. Scrie pe o foaie sau în caiet 3 propoziții:  
+   - Din ce vedere se vede cel mai bine **înălțimea** obiectelor?  
+   - Din ce vedere vezi dacă două obiecte sunt **aliniate**?  
+   - Din ce vedere vezi cât de **departe** sunt două obiecte între ele?  
+4. **Jocul:** un coleg sau un adult spune numele unui obiect, iar tu îl găsești în **mai puțin de 10 secunde** cu **Outliner** și **Numpad .**. Repetați de 3 ori.
+
+**Gata când:**  
+- [ ] Scena are 5 obiecte cu nume  
+- [ ] Am scris cele 3 propoziții  
+- [ ] Am găsit un obiect cerut în sub 10 secunde  
+
 ### Dacă ai terminat devreme
 - [ ] Fă un **screenshot** din fiecare vedere și lipește-le într-un document  
 - [ ] Sau Bonusul de mai jos  
@@ -130,7 +146,7 @@ Cu **Numpad** (sau emulat, cu tastele de sus):
 | | Ce trebuie |
 |--|------------|
 | **Minim** | Rotire, deplasare, zoom |
-| **Complet** | Minim + 4 vederi + ortografic + Home și Numpad . |
+| **Complet** | Minim + 4 vederi + ortografic + Home și Numpad . + turul ghidat (5 obiecte, 3 propoziții) |
 
 ### Pasul 1 — Minim
 - [ ] Rotesc vederea  
@@ -142,6 +158,7 @@ Cu **Numpad** (sau emulat, cu tastele de sus):
 - [ ] Văd scena din față, dreapta, sus  
 - [ ] Trec între perspectivă și ortografic  
 - [ ] Găsesc fiecare obiect cu Numpad .  
+- [ ] Am făcut turul ghidat: scenă cu 5 obiecte și 3 propoziții  
 - [ ] Numele `B1_L02` e corect
 
 ---
@@ -157,7 +174,7 @@ Cu **Numpad** (sau emulat, cu tastele de sus):
 
 ## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
 
-`Deschide scena` → `Cele 3 mișcări de bază (mouse peste viewport)` → `„Giroscopul” din colțul dreapta sus` → `Vederi standard` → `Nu te pierde!` → `Complet — jocul „Găsește obiectul”`
+`Deschide scena` → `Cele 3 mișcări de bază (mouse peste viewport)` → `„Giroscopul” din colțul dreapta sus` → `Vederi standard` → `Nu te pierde!` → `Complet — jocul „Găsește obiectul”` → `Creează tu`
 
 ## Mai departe *(opțional)*
 Joacă un joc de aventură 3D și observă cum se mișcă camera. Acolo, camera e „ochiul” tău, ca la navigarea din Blender.

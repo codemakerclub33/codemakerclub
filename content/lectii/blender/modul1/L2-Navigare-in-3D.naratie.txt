@@ -18,6 +18,8 @@ Al cincilea pas. Nu te pierde. Tasta Home arată toată scena. Tasta punct de pe
 
 Al șaselea pas, pentru varianta completă. Jocul Găsește obiectul. Adaugi trei obiecte cu Shift plus A, apoi Mesh: un con, un tor și o maimuță, și le muți departe de centru cu tasta G. Apeși Home și le vezi pe toate. Dai click pe fiecare în Outliner, apoi apeși tasta punct de pe tastatura numerică, iar vederea sare la el. Faci un scurt tur: din față cu unu, din dreapta cu trei, de sus cu șapte și prin cameră cu zero.
 
+Pasul de creație. Turul ghidat. Construiești o scenă cu cinci obiecte diferite, la distanțe diferite de centru, fiecare cu un nume clar. Pui un obiect mai sus decât celelalte și două obiecte aproape unul de altul. Apoi scrii trei propoziții: din ce vedere se vede cel mai bine înălțimea, din ce vedere vezi dacă două obiecte sunt aliniate și din ce vedere vezi cât de departe sunt între ele. La final joci jocul: cineva spune numele unui obiect, iar tu îl găsești în mai puțin de zece secunde cu Outliner și tasta punct de pe tastatura numerică.
+
 Greșeli frecvente. Totul pare strâmb: ești în perspectivă, apasă cinci pentru ortografic. Nu vezi nimic: ești prea aproape sau prea departe, apasă Home. Tastatura numerică nu merge: activează Emulate Numpad în Preferences. Vederea se învârte în loc: ai ținut Alt apăsat. Confuzie între vedere și obiect: la navigare nu muți obiectul, ci doar camera ta.
 
 Succes la tur.

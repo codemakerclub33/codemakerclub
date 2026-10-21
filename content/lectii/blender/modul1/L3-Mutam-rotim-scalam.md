@@ -10,7 +10,7 @@
 ## Obiectiv
 La finalul orei transformi obiecte precis, cu mouse-ul și cu **numere**.  
 **Minim:** muți, rotești și scalezi un cub.  
-**Complet:** Minim + blochezi pe axe (**X, Y, Z**) + construiești o **scară** din 6 cuburi folosind numere exacte.
+**Complet:** Minim + blochezi pe axe (**X, Y, Z**) + construiești o **scară** din 6 cuburi folosind numere exacte și apoi o **construcție proprie** (scara ta).
 
 ## De ce contează
 Tot ce faci în 3D începe cu aceste trei mișcări. Dacă le știi bine, poți construi aproape orice din forme simple.
@@ -25,7 +25,8 @@ Tot ce faci în 3D începe cu aceste trei mișcări. Dacă le știi bine, poți 
 | 10–40 | **G**, **R**, **S** cu mouse |
 | 40–65 | Blocare pe axe |
 | 65–90 | Numere exacte |
-| 90–120 | Scara spre cer, recap, quiz |
+| 90–105 | Scara spre cer |
+| 105–120 | Scara mea, recap, quiz |
 
 **Ce ai nevoie:** Blender 4.2 · scena de start
 
@@ -117,6 +118,23 @@ Apasă **N** și, în tab-ul **Item**, vezi **Location, Rotation, Scale**. Poți
 - [ ] Am făcut toți pașii din „Complet — „Scara spre cer””  
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
+### 7) Creează tu — „Scara mea”
+Acum o construiești pe a ta, fără pași scriși. Alege **una** dintre variante:
+- **Scară mai lungă:** 8 trepte, cu altă înălțime și altă lățime decât la prima.  
+- **Pod:** urcă 4 trepte, o platformă la mijloc, apoi coboară 4 trepte.  
+- **Scară cu cotitură:** urcă 4 trepte pe axa X, o platformă, apoi încă 4 trepte pe axa **Y**.  
+
+Reguli:
+1. Folosești **numere exacte** (**G**, **R** sau **S** + axă + număr + Enter). Nu muți „din ochi”.  
+2. Treptele sunt la **distanțe egale**.  
+3. Cel puțin o dată folosești **panoul N** ca să verifici poziția unui obiect.  
+4. Pe o foaie notezi **numerele** pe care le-ai folosit (de exemplu „înălțime treaptă: 0.4”).
+
+**Gata când:**  
+- [ ] Construcția are cel puțin 8 piese, la distanțe egale  
+- [ ] Am notat numerele folosite  
+- [ ] Un coleg poate „urca” scara cu ochii, fără să vadă goluri sau piese suprapuse  
+
 ### Dacă ai terminat devreme
 - [ ] Fă o **scară în spirală** (rotește și mută fiecare treaptă)  
 - [ ] Sau Bonusul de mai jos  
@@ -139,7 +157,7 @@ Apasă **N** și, în tab-ul **Item**, vezi **Location, Rotation, Scale**. Poți
 | | Ce trebuie |
 |--|------------|
 | **Minim** | Mut, rotesc, scalez un cub |
-| **Complet** | Minim + axe + numere + scară cu 6 trepte |
+| **Complet** | Minim + axe + numere + scară cu 6 trepte + „Scara mea” (varianta ta, cu numerele notate) |
 
 ### Pasul 1 — Minim
 - [ ] Folosesc **G**, **R**, **S**  
@@ -151,6 +169,7 @@ Apasă **N** și, în tab-ul **Item**, vezi **Location, Rotation, Scale**. Poți
 - [ ] Blochez pe axe cu **X / Y / Z**  
 - [ ] Folosesc numere exacte  
 - [ ] Scara are 6 trepte, la distanțe egale  
+- [ ] Am făcut „Scara mea”: construcție proprie cu cel puțin 8 piese, cu numerele notate  
 - [ ] Numele `B1_L03` e corect
 
 ---
@@ -166,7 +185,7 @@ Apasă **N** și, în tab-ul **Item**, vezi **Location, Rotation, Scale**. Poți
 
 ## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
 
-`Cele trei transformări` → `Blocare pe o axă` → `Numere exacte` → `Panoul de transformare (tasta N)` → `Resetări utile` → `Complet — „Scara spre cer”`
+`Cele trei transformări` → `Blocare pe o axă` → `Numere exacte` → `Panoul de transformare (tasta N)` → `Resetări utile` → `Complet — „Scara spre cer”` → `Creează tu`
 
 ## Mai departe *(opțional)*
 Uită-te la o scară reală și măsoară: ce înălțime are o treaptă? Încearcă să o refaci în Blender cu aceeași proporție.

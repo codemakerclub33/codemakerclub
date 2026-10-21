@@ -10,7 +10,7 @@
 ## Obiectiv
 La finalul orei știi să recunoști părțile ecranului Blender și ai salvat primul tău fișier.  
 **Minim:** deschizi Blender, muți cubul, îl salvezi.  
-**Complet:** Minim + ștergi cubul, adaugi o **maimuță** (Suzanne), o redenumești și salvezi cu numele corect.
+**Complet:** Minim + ștergi cubul, adaugi o **maimuță** (Suzanne), o redenumești, îi faci tu o **scenă** din cel puțin 3 obiecte cu nume și salvezi cu numele corect.
 
 ## De ce contează
 Blender are multe butoane, dar le folosești doar pe câteva. Dacă știi **unde ești** pe ecran, nu te mai pierzi. Aceeași aplicație e folosită de studiouri adevărate, iar tu o ai **gratis**.
@@ -24,8 +24,9 @@ Blender are multe butoane, dar le folosești doar pe câteva. Dacă știi **unde
 | 0–15 | Ce e 3D · instalare și pornire |
 | 15–40 | Cele 4 zone mari ale ecranului |
 | 40–70 | Primele acțiuni: selectăm, mutăm, anulăm |
-| 70–100 | Maimuța Suzanne, nume, salvare |
-| 100–120 | Recap, quiz, galerie |
+| 70–85 | Maimuța Suzanne și numele ei |
+| 85–105 | Creezi tu: o scenă pentru maimuță |
+| 105–120 | Salvare, recap, quiz, galerie |
 
 **Ce ai nevoie:** un calculator cu **Blender 4.2 LTS** (blender.org → Download, gratuit) · de preferat un **mouse cu rotiță** · puțin spațiu pe disc
 
@@ -99,7 +100,19 @@ Mouse-ul peste **3D Viewport**:
 - [ ] Am făcut toți pașii din „Complet — maimuța Suzanne”  
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
-### 6) Salvarea
+### 6) Creează tu — „Maimuța are nevoie de o scenă”
+De aici nu mai urmezi pași scriși: alegi tu ce construiești.
+1. Adaugă **cel puțin 3 obiecte** noi cu **Shift + A → Mesh**, în jurul maimuței. De exemplu: un cub mare ca **masă**, o sferă ca **minge**, un con ca **pălărie**.  
+2. Mută obiectele cu **G**, ca să formeze o scenă care are sens (maimuța lângă masă, mingea pe jos etc.).  
+3. Dă fiecărui obiect un **nume clar** cu **F2** (`Masa`, `Mingea`, `Palaria`). Nu lăsa nume ca `Cube.001`.  
+4. Apasă **Home** și verifică: se văd toate obiectele împreună și nu se acoperă între ele?
+
+**Gata când:**  
+- [ ] Scena are maimuța și cel puțin 3 obiecte  
+- [ ] Fiecare obiect are nume în **Outliner**  
+- [ ] Un coleg ghicește ce scenă ai făcut  
+
+### 7) Salvarea
 - **File → Save As** (sau **Ctrl + Shift + S**).  
 - Numește fișierul `Prenume_Nume_B1_L01.blend`.  
 - De acum, **Ctrl + S** salvează rapid. Fă-o des!
@@ -130,7 +143,7 @@ Mouse-ul peste **3D Viewport**:
 | | Ce trebuie |
 |--|------------|
 | **Minim** | Mută cubul + salvează fișierul |
-| **Complet** | Minim + maimuța, redenumită, salvată cu numele corect |
+| **Complet** | Minim + maimuța, redenumită, scena ta cu 3 obiecte cu nume, salvată cu numele corect |
 
 ### Pasul 1 — Minim
 - [ ] Știu numele celor 4 zone  
@@ -143,6 +156,7 @@ Mouse-ul peste **3D Viewport**:
 - [ ] Am șters cubul cu **X**  
 - [ ] Am adăugat Suzanne  
 - [ ] I-am dat un nume cu **F2**  
+- [ ] Am făcut o scenă cu cel puțin 3 obiecte, fiecare cu nume  
 - [ ] Numele fișierului `B1_L01` e corect
 
 ---
@@ -158,7 +172,7 @@ Mouse-ul peste **3D Viewport**:
 
 ## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
 
-`Pornim Blender` → `Pregătirea mouse-ului (doar dacă n-ai rotiță)` → `Cele 4 zone ale ecranului` → `Primele acțiuni` → `Complet — maimuța Suzanne` → `Salvarea`
+`Pornim Blender` → `Pregătirea mouse-ului (doar dacă n-ai rotiță)` → `Cele 4 zone ale ecranului` → `Primele acțiuni` → `Complet — maimuța Suzanne` → `Creează tu` → `Salvarea`
 
 ## Mai departe *(opțional)*
 Pe blender.org găsești filme scurte făcute în Blender (de ex. „Big Buck Bunny”). Uită-te la unul și caută ce obiecte ai putea face tu.
@@ -166,7 +180,8 @@ Pe blender.org găsești filme scurte făcute în Blender (de ex. „Big Buck Bu
 ## Quiz scurt
 - Cum se numește lista obiectelor din dreapta sus?  
 - Ce face **Shift + A**?  
-- Cum anulezi ultima acțiune?
+- Cum anulezi ultima acțiune?  
+- De ce dăm nume clare obiectelor (nu `Cube.001`)?
 
 ## Temă
 Fotografiază sau fă un screenshot al ecranului Blender și scrie numele celor 4 zone pe el.

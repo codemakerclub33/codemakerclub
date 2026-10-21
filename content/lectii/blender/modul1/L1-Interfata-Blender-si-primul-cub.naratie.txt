@@ -22,6 +22,8 @@ Al cincilea pas, pentru varianta completă. Maimuța Suzanne. Selectezi cubul ș
 
 Al șaselea pas. Salvarea. Mergi la File, apoi Save As, sau apeși Control plus Shift plus S. Numești fișierul cu numele din proiect. De acum, Control plus S salvează rapid. Fă asta des.
 
+Pasul de creație. Maimuța are nevoie de o scenă. De aici alegi tu ce construiești. Adaugi cel puțin trei obiecte în jurul maimuței, de exemplu un cub mare ca masă, o sferă ca minge și un con ca pălărie. Le muți cu G, ca să formeze o scenă care are sens. Dai fiecărui obiect un nume clar cu F doi, nu lași nume ca Cube punct zero zero unu. Apeși Home și verifici că se văd toate împreună.
+
 Greșeli frecvente. Scurtătura nu merge: mouse-ul nu este deasupra viewport-ului. Nu găsești obiectul: l-ai mutat departe, apasă tasta Home, care arată toată scena. Ai apăsat altă tastă și s-a schimbat ceva: apasă Control plus Z. Ai pierdut fișierul: nu l-ai salvat, folosește des Control plus S. Click dreapta nu face ce crezi: în Blender patru, click stânga selectează, iar click dreapta deschide un meniu.
 
 Recapitulare. Scena de start are cub, lumină și cameră. Zonele sunt Viewport, Outliner, Properties și Timeline. G mută, Escape anulează, Control plus Z dă înapoi. Shift plus A adaugă obiecte, iar F doi redenumește.
