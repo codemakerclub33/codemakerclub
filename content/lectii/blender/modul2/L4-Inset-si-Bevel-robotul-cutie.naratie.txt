@@ -16,15 +16,15 @@ Al patrulea pas. Robotul, pe rând. Începi cu scena de start, ștergi cubul și
 
 Corpul: un cub, cu S, X, unu virgulă doi, apoi S, Z, unu virgulă cinci, apoi G, Z, unu virgulă cinci, ca să stea pe podea.
 
-Capul: un al doilea cub, cu S, zero virgulă opt, apoi G, Z, patru. Ochii: adaugi un cub mic, cu S, zero virgulă cincisprezece, pe fața din față a capului, în stânga. În Edit Mode selectezi fața lui din față, apoi I, zero virgulă trei, și E, minus zero virgulă unu, ca să obții un ecran adâncit. Duplici ochiul cu Shift plus D și îl muți simetric, de partea cealaltă.
+Capul: un al doilea cub, cu S, zero virgulă opt, apoi G, Z, trei virgulă opt. Ochii: adaugi un cub mic, cu S, zero virgulă cincisprezece, pe fața din față a capului, în stânga. În Edit Mode selectezi fața lui din față, apoi I, zero virgulă zero cinci, și E, minus zero virgulă unu, ca să obții un ecran adâncit. Duplici ochiul cu Shift plus D și îl muți simetric, de partea cealaltă.
 
-Gura și antena: gura este un cub subțire și lat, cu S, X, zero virgulă cinci și S, Z, zero virgulă zero opt, lipit pe față, sub ochi. Antena: pe fața de sus a capului, I, zero virgulă trei, apoi E, Z, zero virgulă opt, apoi E, Z, zero virgulă doi și S, trei, ca să obții un bec mai lat în vârf.
+Gura și antena: gura este un cub subțire și lat, cu S, X, zero virgulă cinci și S, Z, zero virgulă zero opt, lipit pe față, sub ochi. Antena: pe fața de sus a capului, I, zero virgulă șase, apoi E, Z, zero virgulă opt, apoi E, Z, zero virgulă doi și S, trei, ca să obții un bec mai lat în vârf.
 
-Brațele: selectezi fața din lateral a corpului, apoi E, X, unu, Enter, apoi S, zero virgulă șase, Enter, apoi E, X, unu, Enter. Faci la fel și de partea cealaltă.
+Brațele: selectezi fața din dreapta a corpului, apoi E, X, unu, Enter, apoi S, zero virgulă șase, Enter, apoi E, X, unu, Enter. Pe fața din stânga faci la fel, dar cu E, X, minus unu, la ambele extrudări, ca brațul să iasă în afară.
 
-Butoanele: pe piept, selectezi o față, după un Loop Cut, despre care afli în lecția următoare, sau folosești trei cuburi mici. Pe fiecare faci I, zero virgulă doi, apoi E, zero virgulă unu.
+Butoanele: pe piept adaugi trei cuburi mici, cu S, zero virgulă cincisprezece, lipite de corp. Pe fața din față a fiecăruia faci I, zero virgulă zero cinci, apoi E, zero virgulă zero cinci.
 
-Al cincilea pas, pentru varianta completă. Finisaje. Apeși A, pentru a selecta tot, apoi Control plus B. Cu rotița alegi trei segmente și o mărime mică, în jur de zero virgulă zero cinci. Apoi Object, Shade Smooth. Dai un material corpului, gri-albastru, unul ochilor, galben, și unul butoanelor, roșu.
+Al cincilea pas, pentru varianta completă. Finisaje. În Object Mode selectezi toate piesele cu A, apoi apeși Tab, ca să intri în Edit Mode pe toate odată. Apeși A, apoi Control plus B. Cu rotița alegi trei segmente și o mărime mică, în jur de zero virgulă zero cinci. Apoi Object, Shade Smooth. Dai un material corpului, gri-albastru, unul ochilor, galben, și unul butoanelor, roșu.
 
 Greșeli frecvente. Bevel-ul face o formă ciudată: ai selectat și piese din interior, verifică selecția. Inset-ul iese din față: mouse-ul a mers în direcția greșită, scrie numărul. Brațele se intersectează cu corpul: nu ai extrudat suficient. Prea mulți vertici: folosește doi sau trei segmente de bevel, nu zece. Părțile nu se potrivesc: verifică din față și din lateral.
 

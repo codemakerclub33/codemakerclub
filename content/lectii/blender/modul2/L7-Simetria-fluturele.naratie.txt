@@ -6,7 +6,7 @@ Obiectivul. La final ai un fluture simetric, cu o aripă modelată o singură da
 
 De ce contează. Modelezi de două ori mai repede și ambele jumătăți sunt perfect identice. Modelatorii folosesc mereu această tehnică pentru personaje, avioane și animale.
 
-Primul pas. Ce este un modificator. Un modificator este o regulă pusă pe un obiect, care îi schimbă forma fără să-l strice, pentru că poți opri sau șterge regula oricând. Îl găsești în Properties, la fila cu cheia franceză, Modifiers.
+Primul pas. Ce este un modificator. Un modificator este o regulă pusă pe un obiect, care îi schimbă forma fără să strice obiectul, pentru că poți opri sau șterge regula oricând. Îl găsești în Properties, la fila cu cheia franceză, Modifiers.
 
 Al doilea pas. Pregătim jumătatea de aripă. Ștergi cubul cu X. Adaugi un plan, cu Shift plus A, Mesh, Plane. Apeși cifra șapte de pe tastatura numerică, pentru vederea de sus. Apeși Tab, pentru Edit Mode, și A, ca să selectezi tot. Apeși G, X, unu, Enter: planul se mută spre dreapta, iar marginea lui din stânga ajunge exact pe X egal zero. Centrul obiectului, punctul portocaliu, rămâne la mijloc. Cu planul selectat, dai click dreapta, apoi Subdivide, iar în panoul Adjust Last Operation pui Number of Cuts egal trei. Ai o grilă de patru pe patru pătrate.
 

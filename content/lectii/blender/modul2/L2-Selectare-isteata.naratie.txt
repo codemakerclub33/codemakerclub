@@ -16,7 +16,7 @@ Al patrulea pas. Dacă nu merge selecția. Bara de unelte din stânga, pe care o
 
 Al cincilea pas. Peisajul din grilă. Treci în modul Vertex, cu unu, și apeși Alt plus A, ca să nu ai nimic selectat. Selectezi cu Box un grup de vârfuri din mijloc și apeși G, Z, doi, Enter: un deal. Selectezi altă zonă, mai mică, și apeși G, Z, patru, Enter: un munte. Selectezi o zonă din colț și apeși G, Z, minus unu, Enter: o vale. Alegi o muchie interioară și dai Alt plus click: selectezi tot rândul. Apeși G, Z, unu, Enter: un zid prin peisaj. Control plus I inversează selecția, iar G, Z, minus zero virgulă trei, Enter, coboară tot restul puțin. Ieși cu Tab și aplici Shade Smooth, din click dreapta. Dealurile au colțuri ascuțite pentru că mutăm puține vârfuri. În lecția șase vei învăța o metodă care le face rotunde.
 
-Al șaselea pas, pentru varianta completă. Mai mult peisaj. Faci trei dealuri de înălțimi diferite. Faci o vale care trece de-a lungul grilei, selectând un rând cu Alt plus click și coborându-l. Adaugi un lac: un plan albastru, la înălțimea zero virgulă doi, în vale.
+Al șaselea pas, pentru varianta completă. Mai mult peisaj. Faci trei dealuri de înălțimi diferite. Faci o vale care trece de-a lungul grilei, selectând un rând cu Alt plus click și coborând acel rând. Adaugi un lac: un plan albastru, la înălțimea zero virgulă doi, în vale.
 
 Greșeli frecvente. Nu merge Box select: instrumentul nu este activ, apasă T sau B. Selecția a prins doar piese din față: pornește Alt plus Z. Alt plus click nu face bucla: dai click pe muchie, nu pe vârf, în modul Edge sau Vertex. Selectezi prea mult: Alt plus A și iei de la capăt. Peisajul este plat: mutarea este mică, scrie numere mai mari.
 

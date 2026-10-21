@@ -35,7 +35,7 @@ Modelezi **de două ori mai repede** și ambele jumătăți sunt perfect identic
 ## Pas cu pas
 
 ### 1) Ce e un modificator?
-Un **modificator** e o „regulă” pusă pe un obiect, care îi schimbă forma **fără să-l strice** (poți opri sau șterge regula oricând). Îl găsești în **Properties → tab-ul cheii franceze** (Modifiers).
+Un **modificator** e o „regulă” pusă pe un obiect, care îi schimbă forma **fără să strice obiectul** (poți opri sau șterge regula oricând). Îl găsești în **Properties → tab-ul cheii franceze** (Modifiers).
 
 ### 2) Pregătim jumătatea de aripă
 1. Șterge cubul (**X**). **Shift + A → Mesh → Plane**.  
@@ -60,7 +60,7 @@ Acum modelezi doar în dreapta, iar în stânga apare **oglindirea**.
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Forma aripii
-Revino în Edit Mode (**Tab**), modul **Vertex** (**1**), vedere de sus (**7**), **Alt + Z** pornit:
+Revino în Edit Mode (**Tab**), modul **Vertex** (**1**), vedere de sus (**Numpad 7**), **Alt + Z** pornit:
 
 1. **Aripa de sus (mare):** selectează vârful din colțul de sus-dreapta și **G X 0.8 Y 0.6**.  
 2. **Aripa de jos (mică):** colțul de jos-dreapta: **G X −0.2 Y −0.3** (spre interior).  
@@ -68,7 +68,7 @@ Revino în Edit Mode (**Tab**), modul **Vertex** (**1**), vedere de sus (**7**),
 4. Mai rotunjește colțurile cu **O** (Proportional Editing, rotița pentru rază) și **G** pe vârfurile de margine, ca să arate ca o aripă și nu ca un pătrat.  
 5. Aripile pot fi puțin ridicate, ca în zbor: selectează vârfurile cele mai din exterior și **G Z 0.3**.
 
-Privește și din față (**1**): aripile fac un „V” ușor.
+Privește și din față (**Numpad 1**): aripile fac un „V” ușor.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Forma aripii”  

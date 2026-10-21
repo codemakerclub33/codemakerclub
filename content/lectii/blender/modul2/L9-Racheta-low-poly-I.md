@@ -10,7 +10,7 @@
 ## Obiectiv
 La finalul orei ai o rachetă cu proporții bune, gata de colorat.  
 **Minim:** corp cilindric cu vârf conic.  
-**Complet:** Minim + **4 aripioare**, **duză de motor** și un **hublou** adâncit în corp.
+**Complet:** Minim + **4 aripioare**, **duză de motor** și o **fereastră** (hublou) adâncită în corp.
 
 ## De ce contează
 Racheta pare complicată, dar e făcută din **forme simple**: un cilindru, un con și câteva fețe trase în afară. Aici folosești împreună Loop Cut, Extrude, Inset și Scale.
@@ -60,7 +60,7 @@ Racheta are **corp lung** și **vârf ascuțit**:
 
 ### 3) Tăieturile pentru detalii
 1. **Tab**, **Alt + Z**.  
-2. **Ctrl + R** (cu mouse-ul pe o față laterală) și pune **2 inele orizontale** cu rotița, apoi **Enter** și **click dreapta** ca să rămână la locul lor. Pune-le aproximativ la **Z 0.8** și **Z 2.2**.  
+2. **Ctrl + R** (cu mouse-ul pe o față laterală) și pune **2 inele orizontale** cu rotița, apoi **Enter** și **click dreapta** ca să rămână la locul lor. Cu **click dreapta** inelele rămân la o treime și la două treimi din înălțime (**Z 1** și **Z 2**).  
 3. Ai acum 3 benzi: **jos** (aripioare), **mijloc** (hublou), **sus** (vârf).
 
 **Gata când:**  
@@ -103,7 +103,7 @@ Cilindrul are 12 fețe laterale. Alegem **4** dintre ele, la distanță egală.
 
 ### 7) Hublou (Complet)
 1. În banda din **mijloc**, selectează o față laterală, în partea din față (spre −Y).  
-2. **I 0.12 Enter**, apoi **E −0.05 Enter**: hublou adâncit.  
+2. **I 0.12 Enter**, apoi **E −0.05 Enter**: o fereastră adâncită, înaltă și îngustă.  
 3. Încă o inset mai mică (**I 0.1**) pentru un cerc în cerc, dacă vrei.
 
 **Gata când:**  
@@ -111,7 +111,7 @@ Cilindrul are 12 fețe laterale. Alegem **4** dintre ele, la distanță egală.
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 8) Verificarea formei
-Ieși din Edit Mode (**Tab**). Privește racheta din **față (1)**, **dreapta (3)** și **sus (7)**.
+Ieși din Edit Mode (**Tab**). Privește racheta din **față (Numpad 1)**, **dreapta (Numpad 3)** și **sus (Numpad 7)**.
 
 | Verifică | Da / Nu |
 |----------|---------|
@@ -130,7 +130,7 @@ Ieși din Edit Mode (**Tab**). Privește racheta din **față (1)**, **dreapta (
 1. **Aripioarele sunt strâmbe** — ai ales fețe care nu sunt la distanță egală.  
 2. **Aripioarele ies foarte groase** — au fost extrudate ca grup, nu individual (folosește **Alt + E**).  
 3. **Vârful rămâne turtit** — nu ai făcut **M → At Center**.  
-4. **Racheta intră în pământ** — origin-ul e la centru; ridică-o (Z).  
+4. **Racheta intră în pământ** — origin-ul e la centru; ridică racheta (Z).  
 5. **Hublou prea mare** — scade inset-ul.
 
 ---

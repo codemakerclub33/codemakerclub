@@ -81,25 +81,25 @@ Pentru vârfuri: **Ctrl + Shift + B**.
 1. Cub: **S X 1.2**, **S Z 1.5**, apoi **G Z 1.5** ca să stea pe podea.
 
 **Capul**  
-2. Un al doilea cub: **S 0.8**, **G Z 4**.  
-3. Ochii: adaugă un **cub mic** (**S 0.15**) pe fața din față a capului, la stânga. În Edit Mode, selectează fața lui din față, apoi **I 0.3** și **E −0.1** (un ecran adâncit). Duplică ochiul cu **Shift + D** și mută-l simetric, de partea cealaltă.
+2. Un al doilea cub: **S 0.8**, **G Z 3.8**.  
+3. Ochii: adaugă un **cub mic** (**S 0.15**) pe fața din față a capului, la stânga. În Edit Mode, selectează fața lui din față, apoi **I 0.05** și **E −0.1** (un ecran adâncit). Duplică ochiul cu **Shift + D** și mută copia simetric, de partea cealaltă.
 
 **Gura și antena**  
 4. Gura: un cub subțire, lat (**S X 0.5**, **S Z 0.08**), lipit pe față, sub ochi.  
-5. Antena: pe fața de sus a capului, **I 0.3**, **E Z 0.8**, apoi **E Z 0.2** și **S 3** (un „bec” mai lat în vârf).
+5. Antena: pe fața de sus a capului, **I 0.6**, **E Z 0.8**, apoi **E Z 0.2** și **S 3** (un „bec” mai lat în vârf).
 
 **Brațele**  
-6. Selectează fața din lateral a corpului, **E X 1 Enter**, apoi **S 0.6 Enter**, **E X 1 Enter**. Fă la fel și de partea cealaltă.
+6. Selectează fața din **dreapta** a corpului (spre +X), **E X 1 Enter**, apoi **S 0.6 Enter**, **E X 1 Enter**. Pe fața din **stânga** fă la fel, dar cu **E X −1 Enter** (la ambele extrudări), ca brațul să iasă în afară.
 
 **Butoanele**  
-7. Pe piept: selectează o față (după un Loop Cut, vezi lecția următoare) sau folosește 3 cuburi mici. Pe fiecare: **I 0.2**, **E 0.1**.
+7. Pe piept: adaugă 3 cuburi mici (**S 0.15**), lipite de corp. Pe fața din față a fiecăruia: **I 0.05**, **E 0.05**.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Robotul, pe rând”  
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 5) Complet — finisaje
-- **A** (selectează toate), **Ctrl + B**, scroll la **3 segmente**, mărime mică (~0.05).  
+- În Object Mode selectează toate piesele cu **A**, apoi **Tab**: Blender intră în Edit Mode pe toate odată. Apasă **A**, **Ctrl + B**, scroll la **3 segmente**, mărime mică (~0.05).  
 - **Object → Shade Smooth**.  
 - Un material pentru corp (gri-albastru), unul pentru ochi (galben), unul pentru butoane (roșu).
 

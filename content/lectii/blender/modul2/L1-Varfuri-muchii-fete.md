@@ -8,9 +8,9 @@
 ---
 
 ## Obiectiv
-La finalul orei transformi un cub în **piramidă**, **rampă** și **diamant** doar mișcând părți din el.  
+La finalul orei transformi un cub în **piramidă**, **rampă** și **trunchi** doar mișcând părți din el.  
 **Minim:** treci în Edit Mode, selectezi vârfuri, muchii și fețe și le muți.  
-**Complet:** Minim + faci **piramida** (cu **Merge**), **rampa** și **diamantul**, fiecare pe un cub separat.
+**Complet:** Minim + faci **piramida** (cu **Merge**), **rampa** și **trunchiul**, fiecare pe un cub separat.
 
 ## De ce contează
 Orice model 3D e o „plasă” (**mesh**) făcută din puncte, linii și suprafețe. Dacă înțelegi cele trei piese, poți modela orice formă.
@@ -24,7 +24,7 @@ Orice model 3D e o „plasă” (**mesh**) făcută din puncte, linii și supraf
 | 0–10 | Recap Modul 1 |
 | 10–35 | Object Mode vs Edit Mode |
 | 35–65 | Cele 3 moduri de selectare |
-| 65–105 | Piramidă, rampă, diamant |
+| 65–105 | Piramidă, rampă, trunchi |
 | 105–120 | Recap, quiz, galerie |
 
 **Ce ai nevoie:** Blender 4.2 · scena de start
@@ -56,7 +56,7 @@ Selectează cubul și apasă **Tab**: apare o rețea portocalie. Apasă **Tab** 
 
 (Cifrele de sus ale tastaturii, în Edit Mode, nu cele de la numpad.)
 
-Cubul are **8 vârfuri**, **12 muchii** și **6 fețe**. Numără-le!
+Cubul are **8 vârfuri**, **12 muchii** și **6 fețe**. Numără aceste piese!
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Cele 3 piese ale unei plase”  
@@ -94,14 +94,14 @@ Cubul are **8 vârfuri**, **12 muchii** și **6 fețe**. Numără-le!
 - [ ] Am făcut toți pașii din „Rampa”  
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
-### 6) Diamantul
-1. Cub nou, **Tab**, modul **Face**.  
-2. Selectează fața de sus → **S 0.4 Enter**.  
-3. Selectează fața de jos → **S 0.4 Enter**.  
-4. Selectează vârfurile / fețele laterale și trage-le **în afară** cu **G** + axă. Încearcă și **Shade Smooth** (L5 din Modulul 1).
+### 6) Trunchiul de piramidă
+1. Cub nou, **Tab**, modul **Face** (**3**).  
+2. Selectează fața de sus → **S 0.4 Enter**: partea de sus se micșorează, iar laturile se înclină.  
+3. Cu fața de sus încă selectată, apasă **G Z 1 Enter**: trunchiul devine mai înalt.  
+4. Compară cu piramida: piramida se termină într-un punct, trunchiul are vârful tăiat, ca un pahar cu gura mai îngustă.
 
 **Gata când:**  
-- [ ] Am făcut toți pașii din „Diamantul”  
+- [ ] Am făcut toți pașii din „Trunchiul de piramidă”  
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
@@ -126,7 +126,7 @@ Cubul are **8 vârfuri**, **12 muchii** și **6 fețe**. Numără-le!
 | | Ce trebuie |
 |--|------------|
 | **Minim** | Edit Mode, selectez vârfuri, muchii, fețe, le mut |
-| **Complet** | Minim + piramidă (cu Merge) + rampă + diamant |
+| **Complet** | Minim + piramidă (cu Merge) + rampă + trunchi |
 
 ### Pasul 1 — Minim
 - [ ] Știu să intru și să ies din Edit Mode  
@@ -137,7 +137,7 @@ Cubul are **8 vârfuri**, **12 muchii** și **6 fețe**. Numără-le!
 ### Pasul 2 — Complet
 - [ ] Piramidă cu **M → At Center**  
 - [ ] Rampă  
-- [ ] Diamant  
+- [ ] Trunchi de piramidă  
 - [ ] Numele `B2_L01` e corect
 
 ---
@@ -153,10 +153,10 @@ Cubul are **8 vârfuri**, **12 muchii** și **6 fețe**. Numără-le!
 
 ## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
 
-`Două moduri de lucru` → `Cele 3 piese ale unei plase` → `Selectăm și mutăm` → `Piramida` → `Rampa` → `Diamantul`
+`Două moduri de lucru` → `Cele 3 piese ale unei plase` → `Selectăm și mutăm` → `Piramida` → `Rampa` → `Trunchiul de piramidă`
 
 ## Mai departe *(opțional)*
-Ia un cub de jucărie și imaginează-ți ce ar fi dacă ai trage de un colț: ce formă ar apărea?
+Ia un cub de jucărie și gândește-te ce ar fi dacă ai trage de un colț: ce formă ar apărea?
 
 ## Quiz scurt
 - Câte vârfuri, muchii și fețe are un cub?  
@@ -164,4 +164,4 @@ Ia un cub de jucărie și imaginează-ți ce ar fi dacă ai trage de un colț: c
 - Ce face **M → At Center**?
 
 ## Temă
-Desenează 3 forme noi care s-ar putea face dintr-un cub și scrie ce piese ai muta.
+Desenează 3 forme noi care ar putea fi făcute dintr-un cub și scrie ce piese ai muta.

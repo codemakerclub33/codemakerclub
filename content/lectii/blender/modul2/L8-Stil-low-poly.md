@@ -47,7 +47,7 @@ Low-poly e **rapid de făcut** și arată bine chiar și fără detalii. Fiecare
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 2) Bradul low-poly
-1. **Cone**: **Vertices = 6**, **Radius = 1.2**, **Depth = 1.5**, **Z = 2**.  
+1. **Cone**: **Vertices = 6**, **Radius = 1.2**, **Depth = 1.5**, **Z = 1.75**.  
 2. **Shift + D**, mută copia în sus: **G Z 0.8**, apoi **S 0.8**.  
 3. Încă o copie: **G Z 0.8**, **S 0.7**. Ai 3 niveluri.  
 4. **Trunchi**: **Cylinder** (Vertices 6, Radius 0.2, Depth 1), la **Z = 0.5**.  
@@ -64,7 +64,7 @@ Low-poly e **rapid de făcut** și arată bine chiar și fără detalii. Fiecare
 1. **Shift + A → Mesh → Ico Sphere**: **Subdivisions = 1**, **Radius = 1**.  
 2. **Tab**, modul **Vertex**. **A** (selectează tot).  
 3. **S X 1.3**, **S Z 0.7** (mai lată decât înaltă).  
-4. **Alt + A**, apoi alege vârfurile aleatoriu, pe rând, și mută-le puțin: **G** + mișcă mouse-ul într-o direcție nouă. Câteva „colțuri” fac stânca realistă.  
+4. **Alt + A**, apoi alege vârfurile aleatoriu, pe rând, și mută fiecare vârf puțin: **G** + mișcă mouse-ul într-o direcție nouă. Câteva „colțuri” fac stânca realistă.  
 5. Cu **O** (Proportional Editing) pornit și raza mică, tragi câte o „umflătură”.  
 6. **Shade Flat**, material gri-albăstrui, **Roughness 1**.
 
@@ -75,14 +75,14 @@ Low-poly e **rapid de făcut** și arată bine chiar și fără detalii. Fiecare
 ### 4) Pădurea
 1. Un **plan** mare ca pământ, verde închis, **Z = 0**.  
 2. **Shift + D** pe brazi, în locuri diferite; **R Z** cu valori diferite; **S** de la 0.6 la 1.3.  
-3. 2 stânci mari, alta mai mică, lângă brazi.  
+3. 2 stânci, una mare și una mai mică, lângă brazi.  
 4. **Sun** cu **Strength 3**, culoare caldă, într-un unghi care dă umbre.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Pădurea”  
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
-### 5) Complet — „decimare” (opțional)
+### 5) Decimare (opțional)
 Pentru a simplifica un model cu prea multe fețe:
 
 1. Modificator **Decimate** (Generate → Decimate).  
@@ -90,7 +90,7 @@ Pentru a simplifica un model cu prea multe fețe:
 3. **Apply** (Ctrl + A pe modificator) când ești mulțumit.
 
 **Gata când:**  
-- [ ] Am făcut toți pașii din „Complet — „decimare” (opțional)”  
+- [ ] Am făcut toți pașii din „Decimare (opțional)”  
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
@@ -142,7 +142,7 @@ Pentru a simplifica un model cu prea multe fețe:
 
 ## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
 
-`Flat și Smooth` → `Bradul low-poly` → `Stânca low-poly` → `Pădurea` → `Complet — „decimare” (opțional)`
+`Flat și Smooth` → `Bradul low-poly` → `Stânca low-poly` → `Pădurea` → `Decimare (opțional)`
 
 ## Mai departe *(opțional)*
 Caută „low poly art” pe internet și observă cum arată scenele din jocuri.
@@ -153,4 +153,4 @@ Caută „low poly art” pe internet și observă cum arată scenele din jocuri
 - Cum faci o stâncă din Ico Sphere?
 
 ## Temă
-Alege un animal și gândește-te cum l-ai face din 20 de fețe.
+Alege un animal și gândește-te cum ai face animalul din 20 de fețe.

@@ -34,7 +34,7 @@ Un model are sute de piese. Dacă le selectezi pe rând, pierzi mult timp. Metod
 ## Pas cu pas
 
 ### 1) Grila de lucru
-**Shift + A → Mesh → Grid.** În panoul din stânga-jos pune **X Subdivisions = 10**, **Y Subdivisions = 10**, **Size = 10**. Apasă **Tab** (Edit Mode), apoi **7** (vedere de sus).
+**Shift + A → Mesh → Grid.** În panoul din stânga-jos pune **X Subdivisions = 10**, **Y Subdivisions = 10**, **Size = 10**. Apasă **Tab** (Edit Mode), apoi **Numpad 7** (vedere de sus).
 
 ### 2) Metodele de selectare
 
@@ -75,7 +75,7 @@ Ieși cu **Tab** și apasă **Shade Smooth** (click dreapta).
 
 ### 6) Complet — mai mult peisaj
 - Fă **trei dealuri** de înălțimi diferite.  
-- Fă o **vale** care trece de-a lungul grilei (selectează un rând cu Alt + click și coboară-l).  
+- Fă o **vale** care trece de-a lungul grilei (selectează un rând cu Alt + click și coboară rândul).  
 - Adaugă un **lac**: Plane albastră (Z = 0.2) în vale.
 
 **Gata când:**  

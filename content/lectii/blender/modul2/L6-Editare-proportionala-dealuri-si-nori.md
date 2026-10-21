@@ -34,7 +34,7 @@ Natura nu are colțuri: dealurile, norii, fețele sunt moi. Editarea proporțion
 ## Pas cu pas
 
 ### 1) Pregătirea
-**Shift + A → Mesh → Grid**: **X și Y Subdivisions = 30**, **Size = 12**. **Tab**, modul **Vertex** (**1**), **7** (de sus).
+**Shift + A → Mesh → Grid**: **X și Y Subdivisions = 30**, **Size = 12**. **Tab**, modul **Vertex** (**1**), **Numpad 7** (de sus).
 
 > Grila trebuie să aibă **multe** vârfuri ca dealurile să iasă netede.
 
@@ -82,7 +82,7 @@ Ieși cu **Tab**, **Shade Smooth**.
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 5) Norii
-1. **Shift + A → Mesh → UV Sphere** (Segments 32, Rings 16). Mută-l sus: **Z = 6**.  
+1. **Shift + A → Mesh → UV Sphere** (Segments 32, Rings 16). Mută sfera sus: **Z = 6**.  
 2. **S X 1.6**, **S Y 1.0**, **S Z 0.7** (un nor lat).  
 3. **Tab**. **O** pornit. Alege câte un vârf și **G** + rotița: faci „bule” pe suprafață.  
 4. Fă 3–4 bule mari pe partea de sus și 2 pe lateral.  
@@ -157,7 +157,7 @@ Mărește cu **Shift + D** și așază 3 nori în locuri diferite, cu mărimi di
 `Pregătirea` → `Pornim Proportional Editing` → `Tipuri de atenuare (Falloff)` → `Dealurile` → `Norii` → `Complet — scenă completă`
 
 ## Mai departe *(opțional)*
-Privește norii pe cer: nu sunt niciodată la fel. Alege unul și încearcă să-i imiți forma.
+Privește norii pe cer: nu sunt niciodată la fel. Alege unul și încearcă să imiți forma lui.
 
 ## Quiz scurt
 - Ce tastă pornește Proportional Editing?  

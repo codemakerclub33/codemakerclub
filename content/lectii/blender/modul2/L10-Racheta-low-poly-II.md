@@ -50,13 +50,13 @@ Alege **3–4 culori** care se potrivesc:
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 2) Materiale multiple pe un obiect
-1. Selectează racheta. **Properties → Material → New**. Numește-l `Corp`, culoare **albă**.  
-2. Apasă **+** ca să adaugi un slot nou. **New**, numește-l `Rosu` (roșu).  
+1. Selectează racheta. **Properties → Material → New**. Numește materialul `Corp`, culoare **albă**.  
+2. Apasă **+** ca să adaugi un slot nou. **New**, numește materialul `Rosu` (roșu).  
 3. Repetă pentru `Geam` (albastru deschis, **Roughness 0.05**), `Duza` (gri închis, **Metallic 1**, Roughness 0.4) și `Dunga` (albastru închis).  
 4. **Tab** (Edit Mode), modul **Face** (**3**).  
 5. Selectează fețele vârfului (Shift + click) → slotul `Rosu` → **Assign**.  
 6. La fel: aripioarele → `Rosu`; hublou → `Geam`; fețele din interiorul duzei și din jur → `Duza`.  
-7. **Dungă:** selectează o bandă de fețe în jurul corpului (**Alt + click** pe o muchie orizontală, apoi trece pe fețe) și atribuie `Dunga`.
+7. **Dungă:** selectează o bandă de fețe în jurul corpului (în modul **Face**, **Alt + click** pe o muchie orizontală dintre două fețe: se selectează toată banda) și atribuie `Dunga`.
 
 > Ai atribuit greșit? Selectează fețele din nou și dă **Assign** pe slotul corect.
 
@@ -67,7 +67,7 @@ Alege **3–4 culori** care se potrivesc:
 ### 3) Flacăra
 1. **Tab** (ieși din Edit Mode).  
 2. **Shift + A → Mesh → Cone**: **Vertices 8, Radius 0.4, Depth 1.5**.  
-3. **R X 180**, ca vârful să arate **în jos**. Pune-l sub duză, la **Z ≈ −0.2**.  
+3. **R X 180**, ca vârful să arate **în jos**. Pune conul sub duză, la **Z ≈ −1.2**.  
 4. Material `Flacara`: **Emission** portocaliu, **Strength 5**.  
 5. Un al doilea con mai mic, galben, **Radius 0.2, Depth 1.0**, în interiorul primului: flacăra are un **miez** mai fierbinte.  
 6. **Ctrl + J** pe cele două conuri (să fie un singur obiect), apoi **F2** → „Flacara”.
@@ -79,7 +79,7 @@ Alege **3–4 culori** care se potrivesc:
 ### 4) Fumul
 1. **Shift + A → Mesh → Ico Sphere** (Subdivisions 1), **Radius 0.3**, **Shade Smooth**, material alb sau gri deschis.  
 2. Pune **5–6 sfere** sub flacără, în linie, cu **mărimi diferite** (**S**): cele mai apropiate de rachetă sunt mici, cele mai îndepărtate — mari.  
-3. Mută-le puțin stânga-dreapta ca să nu fie în linie dreaptă.
+3. Mută sferele puțin stânga-dreapta ca să nu fie în linie dreaptă.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Fumul”  
@@ -87,9 +87,9 @@ Alege **3–4 culori** care se potrivesc:
 
 ### 5) Poziția de zbor
 1. Selectează **racheta**, **flacăra** și **fumul**.  
-2. Fă-le un **grup**: la final selectează racheta (activă) și **Ctrl + P → Object**.  
+2. Leagă piesele într-un **grup**: la final selectează racheta (activă) și **Ctrl + P → Object**.  
 3. Selectează doar racheta și **R Y 20**: se înclină ca în zbor.  
-4. Ridic-o puțin de la „sol” (**G Z 2**).
+4. Ridică racheta puțin de la „sol” (**G Z 2**).
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Poziția de zbor”  
@@ -97,7 +97,7 @@ Alege **3–4 culori** care se potrivesc:
 
 ### 6) Cerul cu stele
 1. **Properties → World → Color**: albastru foarte închis (aproape negru).  
-2. **Stele:** 20–30 de sfere foarte mici (**Radius 0.03**), cu material alb **Emission Strength 3**. Duplică-le (**Shift + D**) și împrăștie-le în spatele rachetei.  
+2. **Stele:** 20–30 de sfere foarte mici (**Radius 0.03**), cu material alb **Emission Strength 3**. Duplică stelele (**Shift + D**) și împrăștie copiile în spatele rachetei.  
 3. Mai multe mici, câteva mai mari.
 
 **Gata când:**  
@@ -124,7 +124,7 @@ Alege **3–4 culori** care se potrivesc:
 | dau mai multe materiale pe un obiect | ☐ | ☐ | ☐ |
 
 ### Dacă ai terminat devreme
-- [ ] **Racheta se mișcă!** Mutarea rachetei se poate înregistra cu **keyframes**. Pune racheta jos, la **cadrul 1**, și apasă **I** → *Location*. Mută linia de timp la **cadrul 120** (în partea de jos, în Timeline), mută racheta sus (**G Z 15**) și apasă **I** din nou. Apasă **Space**: racheta zboară singură! Flacăra și fumul o urmează, fiindcă le-ai legat cu **Ctrl + P**.  
+- [ ] **Racheta se mișcă!** Mutarea rachetei se poate înregistra cu **keyframes**. Pune racheta jos, la **cadrul 1**, și apasă **I** → *Location*. Mută linia de timp la **cadrul 120** (în partea de jos, în Timeline), mută racheta sus (**G Z 15**) și apasă **I** din nou. Apasă **Space**: racheta zboară singură! Flacăra și fumul o urmează, fiindcă ai legat piesele cu **Ctrl + P**.  
 - [ ] Sau Bonusul de mai jos  
 
 ---

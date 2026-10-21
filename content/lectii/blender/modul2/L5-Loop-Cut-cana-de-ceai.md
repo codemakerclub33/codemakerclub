@@ -10,7 +10,7 @@
 ## Obiectiv
 La finalul orei ai o cană cu interior gol, buza rotunjită și toartă.  
 **Minim:** cilindru golit cu Inset + Extrude în jos.  
-**Complet:** Minim + **Loop Cut** pentru a-i da forma, **Bevel** la buză și **toartă** dintr-un Torus.
+**Complet:** Minim + **Loop Cut** pentru a da cănii forma, **Bevel** la buză și **toartă** dintr-un Torus.
 
 ## De ce contează
 Un cilindru simplu are doar fețe sus și jos. Cu **Loop Cut** adaugi inele la mijloc și poți face cana mai lată la mijloc, vaza mai îngustă la gât, sticla…
@@ -59,7 +59,7 @@ Un cilindru simplu are doar fețe sus și jos. Cu **Loop Cut** adaugi inele la m
 ### 3) Forma
 Cana e puțin mai lată la mijloc:
 
-1. Modul **Edge** (**2**). **Alt + click** pe inelul din mijloc (selectează tot inelul).  
+1. Modul **Edge** (**2**). **Alt + click** pe unul dintre cele două inele (selectează tot inelul), apoi **Shift + Alt + click** pe celălalt.  
 2. **S 1.15 Enter** (mărești inelul).
 
 **Gata când:**  
@@ -78,7 +78,7 @@ Ar trebui să vezi un interior gol, ca la o cană adevărată.
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 5) Buza rotunjită
-1. Selectează muchiile de la **marginea de sus** (interior + exterior), cu **Alt + click**.  
+1. Selectează muchiile de la **marginea de sus**: **Alt + click** pe muchia din exterior, apoi **Shift + Alt + click** pe cea din interior.  
 2. **Ctrl + B**, ~0.04, rotița pe 3 segmente.
 
 **Gata când:**  
@@ -88,8 +88,8 @@ Ar trebui să vezi un interior gol, ca la o cană adevărată.
 ### 6) Toarta din Torus
 1. **Shift + A → Mesh → Torus.** În panoul din stânga-jos: **Major Radius 0.5**, **Minor Radius 0.09**.  
 2. **R X 90** (în picioare), apoi **S X 0.7**.  
-3. Mută-l lângă cană: **Location X = 1.15**, **Z = 1.2**.  
-4. Verifică din față (**1**): jumătate din Torus intră în cană, iar cealaltă jumătate iese.
+3. Mută torusul lângă cană: **Location X = 1.15**, **Z = 1.2**.  
+4. Verifică din față (**Numpad 1**): jumătate din Torus intră în cană, iar cealaltă jumătate iese.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Toarta din Torus”  
@@ -114,7 +114,7 @@ Ar trebui să vezi un interior gol, ca la o cană adevărată.
 1. **Loop Cut nu apare** — ești în Object Mode; **Tab**.  
 2. **Tăietura e pe direcția greșită** — mută mouse-ul spre altă muchie înainte să dai click.  
 3. **Fundul cănii e tăiat** — extrude mai puțin (E Z −1.5).  
-4. **Toarta nu se prinde** — mut-o puțin mai aproape (X = 1.0).  
+4. **Toarta nu se prinde** — mută toarta puțin mai aproape (X = 1.0).  
 5. **Cana e „colțuroasă”** — lipsește Shade Smooth sau Bevel.
 
 ---

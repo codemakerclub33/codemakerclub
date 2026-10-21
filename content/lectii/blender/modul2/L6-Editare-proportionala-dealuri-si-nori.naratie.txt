@@ -18,6 +18,6 @@ Al cincilea pas. Norii. Adaugi o UV Sphere, cu treizeci și două de segmente ș
 
 Al șaselea pas, pentru varianta completă. Scena completă. Peisajul primește un material verde, pentru iarbă. Un deal este în plan apropiat și două în fundal. Norii sunt trei, în locuri diferite. Pui o lumină Sun caldă și o cameră de unde se văd dealurile, ca în lecția opt a modulului unu. Randezi o imagine P N G.
 
-Greșeli frecvente. Dealul este ascuțit: nu ai pornit O. Dealul este ciudat de mic: raza este mică, mărește-o cu rotița în timp ce muți. Rotița schimbă zoom-ul: nu ai început încă mutarea cu G. Grila are prea puține vârfuri: folosește treizeci pe treizeci. Ai uitat să oprești O: dacă apoi muți vârfuri izolate, pornește sau oprește tasta O după nevoie.
+Greșeli frecvente. Dealul este ascuțit: nu ai pornit O. Dealul este ciudat de mic: raza este mică, mărește raza cu rotița în timp ce muți. Rotița schimbă zoom-ul: nu ai început încă mutarea cu G. Grila are prea puține vârfuri: folosește treizeci pe treizeci. Ai uitat să oprești O: dacă apoi muți vârfuri izolate, pornește sau oprește tasta O după nevoie.
 
 Succes cu dealurile.

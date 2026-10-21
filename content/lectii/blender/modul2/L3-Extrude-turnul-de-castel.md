@@ -49,9 +49,9 @@ După **E**, mișcă mouse-ul sau scrie o distanță (**E Z 2 Enter**) și **Ent
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 2) Turnul în 3 pași
-1. Adaugă un **Cylinder** cu **Vertices = 8**, **Radius = 1.5**, **Depth = 2**. Pune-l pe podea (**G Z 1**).  
+1. Adaugă un **Cylinder** cu **Vertices = 8**, **Radius = 1.5**, **Depth = 2**. Pune cilindrul pe podea (**G Z 1**).  
 2. **Tab** → modul **Face** (**3**) → click pe **fața de sus** a cilindrului.  
-3. **E Z 3 Enter** → turnul crește. Faci încă un nivel mai sus.
+3. **E Z 3 Enter** → turnul crește. Repetă **E Z 2 Enter** de încă **două ori**: turnul are acum 3 niveluri.
 
 Observă: dacă nu scrii numărul, ai nevoie să **confirmi cu click**.
 
@@ -116,9 +116,9 @@ Ar trebui să ai, de jos în sus:
 ## Greșeli frecvente
 1. **Extrude, dar nu se mișcă** — ai apăsat Esc după E; piesa e dublată; **Ctrl + Z** și reia.  
 2. **Turnul are „coaste” duble** — ai dat E de două ori fără să muți.  
-3. **Fața de sus lipsește** — ai șters-o cu **X** în loc să o extrudezi.  
+3. **Fața de sus lipsește** — ai șters fața cu **X** în loc să o extrudezi.  
 4. **Crenelurile sunt prea mici** — mărește distanța (E Z 0.7).  
-5. **Piesele nu sunt egale** — verifică din față (**1**) și de sus (**7**).
+5. **Piesele nu sunt egale** — verifică din față (**Numpad 1**) și de sus (**Numpad 7**).
 
 ---
 

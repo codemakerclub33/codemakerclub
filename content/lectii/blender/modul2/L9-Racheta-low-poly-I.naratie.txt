@@ -22,6 +22,6 @@ Al șaptelea pas, pentru varianta completă. Hubloul. În banda de la mijloc, se
 
 Al optulea pas. Verificarea formei. Ieși din Edit Mode, cu Tab. Privești racheta din față, cu unu, din dreapta, cu trei, și de sus, cu șapte. Verifici: vârful este ascuțit și centrat? Aripioarele sunt la nouăzeci de grade una de alta? Duza se vede dedesubt? Ai hublou pe corp?
 
-Greșeli frecvente. Aripioarele sunt strâmbe: ai ales fețe care nu sunt la distanță egală. Aripioarele ies foarte groase: au fost extrudate ca grup, nu individual, folosește Alt plus E. Vârful rămâne turtit: nu ai făcut M, At Center. Racheta intră în pământ: originea este la centru, ridic-o pe axa Z. Hubloul este prea mare: scade valoarea de Inset.
+Greșeli frecvente. Aripioarele sunt strâmbe: ai ales fețe care nu sunt la distanță egală. Aripioarele ies foarte groase: au fost extrudate ca grup, nu individual, folosește Alt plus E. Vârful rămâne turtit: nu ai făcut M, At Center. Racheta intră în pământ: originea este la centru, ridică racheta pe axa Z. Hubloul este prea mare: scade valoarea de Inset.
 
 Succes la rachetă.
