@@ -4,7 +4,7 @@ Astăzi înveți să te plimbi prin lumea trei D: să te rotești în jurul unui
 
 Obiectivul. La final te miști în trei D fără să te pierzi și găsești oricând obiectul. Minim: rotești, apropii și deplasezi vederea cu mouse-ul. Complet: minim, plus vezi scena din față, din dreapta și de sus, treci între perspectivă și ortografic și găsești orice obiect cu tasta Home și cu tasta punct de pe tastatura numerică.
 
-De ce contează. Un obiect trei D are lățime, înălțime și adâncime. Ca să-l modelezi bine, îl privești din mai multe părți, ca atunci când te uiți la o jucărie.
+De ce contează. Un obiect trei D are lățime, înălțime și adâncime. Ca să modelezi bine obiectul, îl privești din mai multe părți, ca atunci când te uiți la o jucărie.
 
 Primul pas. Deschizi o scenă nouă: File, New, General. Ai din nou cubul, lumina și camera.
 

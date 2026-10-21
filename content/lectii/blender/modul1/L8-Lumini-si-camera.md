@@ -86,7 +86,7 @@ Camera din scena de start e la dreapta și sus. O poți muta cu **G** și roti c
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 5) Regula treimilor
-Imaginează-ți ecranul împărțit în 3×3 pătrate. Pune subiectul **pe linii sau la intersecții**, nu mereu în mijloc. În **Properties → Camera → Viewport Display** bifează **Composition Guides → Thirds** (liniile apar în vederea camerei).
+Imaginează ecranul împărțit în 3×3 pătrate. Pune subiectul **pe linii sau la intersecții**, nu mereu în mijloc. În **Properties → Camera → Viewport Display** bifează **Composition Guides → Thirds** (liniile apar în vederea camerei).
 
 ### 6) Lentila camerei
 **Properties → tab Camera → Focal Length:**

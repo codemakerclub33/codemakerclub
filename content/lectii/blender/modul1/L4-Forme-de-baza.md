@@ -101,9 +101,9 @@ Construiește pe rând (șterge mai întâi cubul de start, cu **X**):
 | **Flacără** | Cone | cu vârful în jos (**R X 180**), sub corp, la **Z = −0.5** |
 
 **Pași recomandați**
-1. Adaugă corpul. Mută-l în sus: **G Z 1.5 Enter** (ca baza să stea pe podea).  
-2. Adaugă conul: vezi că apare la centru. Mută-l la **Z = 3.5**.  
-3. Adaugă o aripă. Ridică-o la **Z = 0.4** și mută-o la **X = 0.7**. Pentru celelalte aripi, folosește **Shift + D** și rotește copiile **în jurul corpului**: cel mai simplu e să muți mai întâi cursorul 3D în centru (**Shift + C**), să alegi **Pivot: 3D Cursor** (butonul din bara de sus a viewport-ului) și apoi să apeși **R Z 120** și **R Z 240**.  
+1. Adaugă corpul. Mută corpul în sus: **G Z 1.5 Enter** (ca baza să stea pe podea).  
+2. Adaugă conul: vezi că apare la centru. Mută conul la **Z = 3.5**.  
+3. Adaugă o aripă. Ridică aripa la **Z = 0.4** și mută aripa la **X = 0.7**. Pentru celelalte aripi, folosește **Shift + D** și rotește copiile **în jurul corpului**: cel mai simplu e să muți mai întâi cursorul 3D în centru (**Shift + C**), să alegi **Pivot: 3D Cursor** (butonul din bara de sus a viewport-ului) și apoi să apeși **R Z 120** și **R Z 240**.  
 4. Geamul: o sferă mică la **Y = −0.45**, **Z = 2.3**.  
 5. Fiecare piesă primește un nume (**F2**): `Corp`, `Varf`, `Aripa1`…
 
@@ -136,9 +136,9 @@ Racheta ai construit după tabel. Acum alegi tu ce construiești.
 
 ## Greșeli frecvente
 1. **Forma apare în altă parte** — cursorul 3D nu e în centru; **Shift + C**.  
-2. **N-ai putut regla forma** — panoul din stânga-jos a dispărut; șterge forma și adaug-o din nou.  
+2. **N-ai putut regla forma** — panoul din stânga-jos a dispărut; șterge forma și adaugă o formă nouă.  
 3. **Forma e „colțuroasă”** — Vertices e prea mic.  
-4. **Obiectele se confundă** — nu le-ai redenumit.  
+4. **Obiectele se confundă** — nu ai redenumit piesele.  
 5. **Piesele intră unele în altele** — verifică vederea din față (**1**).
 
 ---
@@ -154,7 +154,7 @@ Racheta ai construit după tabel. Acum alegi tu ce construiești.
 
 ### Pasul 1 — Minim
 - [ ] Am adăugat cub, sferă, cilindru, con  
-- [ ] Le-am scalat  
+- [ ] Am scalat piesele  
 
 **→ Minim când:** un coleg recunoaște ce ai făcut, fără explicații.  
 

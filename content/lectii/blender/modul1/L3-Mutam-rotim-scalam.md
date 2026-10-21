@@ -106,13 +106,13 @@ Apasă **N** și, în tab-ul **Item**, vezi **Location, Rotation, Scale**. Poți
 
 ### 6) Complet — „Scara spre cer”
 1. Selectează cubul → **S** → **0.5 Enter**. Acum are latura de 1 unitate.  
-2. Mută-l pe podea: **G Z 0.5 Enter**.  
-3. Duplică-l: **Shift + D**, apoi **click dreapta** (copia rămâne pe loc, peste original).  
+2. Mută cubul pe podea: **G Z 0.5 Enter**.  
+3. Duplică cubul: **Shift + D**, apoi **click dreapta** (copia rămâne pe loc, peste original).  
 4. Mută copia o treaptă mai departe: **G X 1 Enter**, apoi mai sus: **G Z 0.5 Enter**.  
 5. Repetă pașii 3–4 până ai **6 trepte**: fiecare e cu **1 unitate mai la dreapta** și **0.5 mai sus** decât cea dinainte.  
 6. La final, adaugă un **plan** (Shift + A → Mesh → Plane), mărit cu **S 8 Enter**, ca podea.
 
-> **Sfat:** în loc să faci 6 cuburi de la zero, duplică-l pe ultimul. Mai repede și mai exact.
+> **Sfat:** în loc să faci 6 cuburi de la zero, duplică ultimul cub. Mai repede și mai exact.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Complet — „Scara spre cer””  
@@ -128,7 +128,7 @@ Reguli:
 1. Folosești **numere exacte** (**G**, **R** sau **S** + axă + număr + Enter). Nu muți „din ochi”.  
 2. Treptele sunt la **distanțe egale**.  
 3. Cel puțin o dată folosești **panoul N** ca să verifici poziția unui obiect.  
-4. Pe o foaie notezi **numerele** pe care le-ai folosit (de exemplu „înălțime treaptă: 0.4”).
+4. Pe o foaie notezi **numerele** pe care ai folosit (de exemplu „înălțime treaptă: 0.4”).
 
 **Gata când:**  
 - [ ] Construcția are cel puțin 8 piese, la distanțe egale  
@@ -146,7 +146,7 @@ Reguli:
 2. **Rotația merge pe axa greșită** — apasă **R** apoi **Z** (sau X / Y).  
 3. **Scalezi un obiect „strâmb”** — ai blocat o singură axă; fără axă scalează uniform.  
 4. **Numerele nu se aplică** — ai uitat **Enter**.  
-5. **Duplicatul rămâne peste original** — după **Shift + D**, mută-l imediat.
+5. **Duplicatul rămâne peste original** — după **Shift + D**, mută copia imediat.
 
 ---
 

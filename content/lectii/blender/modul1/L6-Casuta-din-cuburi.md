@@ -48,11 +48,11 @@ Cubul de start e mare de **2×2×2**. Îl transformi într-o căsuță mai lată
 ### 2) Acoperișul — un con cu 4 laturi
 1. **Shift + A → Mesh → Cone.**  
 2. În panoul din stânga-jos: **Vertices = 4**, **Radius = 2.2**, **Depth = 1.6**.  
-3. Un con cu 4 laturi e o **piramidă**, dar e rotită cu 45°. Rotește-o: **R Z 45 Enter**, apoi îngustează-o în adâncime: **S Y 0.8 Enter**.  
-4. Pune-o deasupra casei: **Location Z = 2 + 0.8 = 2.8**.  
-5. Dacă acoperișul e prea mic sau mare, scalează-l din **S**.
+3. Un con cu 4 laturi e o **piramidă**, dar e rotită cu 45°. Rotește conul: **R Z 45 Enter**, apoi îngustează conul în adâncime: **S Y 0.8 Enter**.  
+4. Așază acoperișul deasupra casei: **Location Z = 2 + 0.8 = 2.8**.  
+5. Dacă acoperișul e prea mic sau mare, scalează acoperișul cu **S**.
 
-> **Truc:** vezi dimensiunea acoperișului în **N → Dimensions** și fă-o puțin **mai mare** decât corpul, ca streașina să iasă în afară.
+> **Truc:** vezi dimensiunea acoperișului în **N → Dimensions** și fă acoperișul puțin **mai mare** decât corpul, ca streașina să iasă în afară.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Acoperișul — un con cu 4 laturi”  
@@ -60,7 +60,7 @@ Cubul de start e mare de **2×2×2**. Îl transformi într-o căsuță mai lată
 
 ### 3) Ușa
 1. **Shift + A → Mesh → Cube**. În **N → Item → Dimensions** scrie: X 0.8, Y 0.1, Z 1.6.  
-2. Pune-o pe fața din față a casei: **Location X = 0, Y = −1.25, Z = 0.8** (peretele din față e la Y = −1.2).  
+2. Așază fereastra pe fața din față a casei: **Location X = 0, Y = −1.25, Z = 0.8** (peretele din față e la Y = −1.2).  
 3. Vezi din față (**1**): ușa e centrată pe casă?
 
 **Gata când:**  
@@ -85,7 +85,7 @@ Snap = „magnet” care te ajută să muți exact pe grilă sau pe alte obiecte
 | Snap pe **grilă** | alege „Increment” în meniul magnetului |
 | Snap pe **muchii / vârfuri** | alege „Vertex” și mută obiectul spre un vârf |
 
-Încearcă: pornește snap-ul, apasă **G** pe fereastră și apropie-o de colțul unui perete.
+Încearcă: pornește snap-ul, apasă **G** pe fereastră și apropie fereastra de colțul unui perete.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Snap — lipire exactă”  
@@ -111,7 +111,7 @@ Snap = „magnet” care te ajută să muți exact pe grilă sau pe alte obiecte
 2. **Acoperișul e „în romb”** — lipsește rotația de 45°.  
 3. **Ușa intră în perete** — Y trebuie să iasă puțin în afara peretelui.  
 4. **Ferestrele nu sunt simetrice** — verifică valorile X (+0.9 și −0.9).  
-5. **Snap-ul sare unde nu vrei** — oprește-l cu **Shift + Tab**.
+5. **Snap-ul sare unde nu vrei** — oprește snap-ul cu **Shift + Tab**.
 
 ---
 

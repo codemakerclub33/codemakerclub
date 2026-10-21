@@ -51,7 +51,7 @@ Desenează un plan scurt: **ce obiecte**, **unde stau**.
 O diorama arată bine pe o **bază** care „ține” scena:
 
 1. **Shift + A → Mesh → Cylinder** (Vertices 64, Radius 6, Depth 0.5), sau un **Cube** aplatizat.  
-2. Pune-o la **Z = 0** ca vârful să fie sus.  
+2. Așază piesa la **Z = 0** ca vârful să fie sus.  
 3. Pe baza aceasta pui totul.
 
 **Gata când:**  
@@ -64,7 +64,7 @@ Poți **copia** obiecte din alte fișiere:
 1. **File → Append**.  
 2. Alege fișierul `.blend` → folderul **Object** → obiectul dorit.  
 3. Click **Append**.  
-Sau refă-le simplu, direct în scenă.
+Sau refă piesele simplu, direct în scenă.
 
 **Pomul (din forme simple)**
 

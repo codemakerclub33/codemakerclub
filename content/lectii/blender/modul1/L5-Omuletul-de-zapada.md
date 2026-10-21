@@ -10,7 +10,7 @@
 ## Obiectiv
 La finalul orei ai un omuleț complet, cu **corp, cap, nas, ochi, pălărie și nasturi**.  
 **Minim:** 3 sfere suprapuse + nas + 2 ochi.  
-**Complet:** Minim + **Shade Smooth** + pălărie + nasturi + **legat într-un grup** (parent), ca să-l muți ca pe un întreg.
+**Complet:** Minim + **Shade Smooth** + pălărie + nasturi + **legat într-un grup** (parent), ca să muți personajul ca pe un întreg.
 
 ## De ce contează
 Personajele se construiesc din piese simple, așezate cu grijă. Aici înveți și 2 trucuri importante: **netezirea** suprafeței și **legarea** pieselor.
@@ -37,7 +37,7 @@ Personajele se construiesc din piese simple, așezate cu grijă. Aici înveți �
 **File → New → General**, apoi **X → Delete** pe cub.
 
 ### 2) Corpul din 3 sfere
-Adaugă **Shift + A → Mesh → UV Sphere** de 3 ori și așază-le (valorile sunt sugestii):
+Adaugă **Shift + A → Mesh → UV Sphere** de 3 ori și așază sferele (valorile sunt sugestii):
 
 | Piesă | Scale | Location Z |
 |-------|-------|-----------|
@@ -56,7 +56,7 @@ Cum le scalezi: **S** → numărul → **Enter**. Locul: **N** → Location Z.
 ### 3) Nasul — morcovul
 1. **Shift + A → Mesh → Cone.**  
 2. În panoul din stânga-jos setează: **Radius 0.15**, **Depth 0.8**, **Rotation X = 90°**. Vârful conului arată acum spre față (spre −Y).  
-3. Mută-l la **Location**: X = 0, **Y = −0.9**, **Z = 4.4**. Baza intră puțin în cap, iar vârful iese în față.  
+3. Mută piesa la **Location**: X = 0, **Y = −0.9**, **Z = 4.4**. Baza intră puțin în cap, iar vârful iese în față.  
 4. Verifică din dreapta (**3**): nasul iese din „față”?
 
 **Gata când:**  
@@ -64,7 +64,7 @@ Cum le scalezi: **S** → numărul → **Enter**. Locul: **N** → Location Z.
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Ochii și nasturii
-- **UV Sphere** mică: **S 0.08**. Locație ochi: **X = ±0.2**, **Y = −0.52**, **Z = 4.6**. Fă unul, duplică-l (**Shift + D**) și schimbă semnul lui X.  
+- **UV Sphere** mică: **S 0.08**. Locație ochi: **X = ±0.2**, **Y = −0.52**, **Z = 4.6**. Fă unul, duplică ochiul (**Shift + D**) și schimbă semnul lui X.  
 - Nasturii: 3 sfere mici (**S 0.1**) pe mijloc: **X = 0**, **Y = −0.88**, **Z = 3.3, 3.0 și 2.7**.
 
 **Gata când:**  
@@ -91,7 +91,7 @@ Sferele arată „cu fațete”. Le netezești:
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 7) Brațele (crengi)
-**Cylinder** subțire (Radius 0.05, Depth 1.5), rotit **R Y 60** și pus pe lateral. Duplic-o pentru celălalt braț.
+**Cylinder** subțire (Radius 0.05, Depth 1.5), rotit **R Y 60** și pus pe lateral. Fă o copie pentru celălalt braț.
 
 ### 8) Complet — legăm totul (parent)
 Vrei să muți omulețul întreg dintr-o mișcare. Soluția: **părinte și copii**.
@@ -166,4 +166,4 @@ Caută poze cu oameni de zăpadă și observă proporțiile: care e cea mai mare
 - Cum faci un ochi simetric?
 
 ## Temă
-Fă un desen cu un alt personaj (om de ciocolată, robot) și scrie din ce forme de bază l-ai construi.
+Fă un desen cu un alt personaj (om de ciocolată, robot) și scrie din ce forme de bază ai construi personajul.

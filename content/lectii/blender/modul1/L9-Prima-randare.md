@@ -100,7 +100,7 @@ Pentru calculatoare mai slabe, rămâi pe **EEVEE**.
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 6) Complet — fundal transparent
-Vrei omulețul fără cer, ca să-l lipești pe altă imagine:
+Vrei omulețul fără cer, ca să lipești omulețul pe altă imagine:
 
 1. **Properties → Render → Film → Transparent** (bifează).  
 2. **Output → Output → File Format: PNG**, **Color: RGBA**.  
@@ -132,7 +132,7 @@ Faci trei poze ale **aceleiași scene**. Schimbi de fiecare dată un singur lucr
 ## Greșeli frecvente
 1. **Imaginea e neagră** — camera nu vede nimic sau lumina lipsește.  
 2. **Randarea durează o veșnicie** — Cycles + Samples mari; treci pe EEVEE sau scade samples.  
-3. **Fișierul n-a fost salvat** — randarea nu se salvează automat; **Image → Save As**.  
+3. **Fișierul nu a fost salvat** — randarea nu se salvează automat; **Image → Save As**.  
 4. **Imaginea e mică** — rezoluția e prea mică sau 50%.  
 5. **Fundalul nu e transparent** — lipsește Film → Transparent sau formatul PNG RGBA.
 
@@ -176,7 +176,7 @@ Faci trei poze ale **aceleiași scene**. Schimbi de fiecare dată un singur lucr
 `Prima randare` → `Setările de randare` → `Cele două motoare` → `Rezoluția` → `Experiment: Cycles` → `Complet — fundal transparent` → `Creează tu`
 
 ## Mai departe *(opțional)*
-Trimite poza unui prieten sau a părinților și întreabă-i ce le-a plăcut. Ce ai îmbunătăți?
+Trimite poza unui prieten sau a părinților și întreabă ce le place. Ce ai îmbunătăți?
 
 ## Quiz scurt
 - Care motor e mai rapid?  
@@ -184,4 +184,4 @@ Trimite poza unui prieten sau a părinților și întreabă-i ce le-a plăcut. C
 - Ce face „Transparent”?
 
 ## Temă
-Alege cea mai frumoasă randare a ta și scrie 2 propoziții despre ea: ce arată, ce ți-a plăcut.
+Alege cea mai frumoasă randare a ta și scrie 2 propoziții despre ea: ce arată, ce ai îndrăgit.

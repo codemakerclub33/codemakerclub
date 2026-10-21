@@ -13,7 +13,7 @@ La finalul orei te miști în 3D fără să te pierzi și găsești oricând obi
 **Complet:** Minim + vezi scena din **față, dreapta, sus**, treci între **perspectivă** și **ortografic**, găsești orice obiect cu **Home** și **Numpad .** și faci un **tur ghidat** al unei scene aranjate de tine.
 
 ## De ce contează
-Un obiect 3D are **lățime, înălțime și adâncime**. Ca să-l modelezi bine, îl privești din mai multe părți, ca atunci când te uiți la o jucărie.
+Un obiect 3D are **lățime, înălțime și adâncime**. Ca să modelezi bine obiectul, îl privești din mai multe părți, ca atunci când te uiți la o jucărie.
 
 ---
 
@@ -100,7 +100,7 @@ Cu **Numpad** (sau emulat, cu tastele de sus):
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 6) Complet — jocul „Găsește obiectul”
-1. Adaugă 3 obiecte (**Shift + A → Mesh**: Cone, Torus, Monkey) și mută-le departe de centru cu **G**.  
+1. Adaugă 3 obiecte (**Shift + A → Mesh**: Cone, Torus, Monkey) și mută obiectele departe de centru cu **G**.  
 2. Apasă **Home**: le vezi pe toate.  
 3. Click pe fiecare în **Outliner**, apoi **Numpad .**: vederea sare la el.  
 4. Fă un scurt „tur”: față (1), dreapta (3), sus (7) și cameră (0).
@@ -125,7 +125,7 @@ Acum aranjezi tu scena și o arăți altcuiva.
 - [ ] Am găsit un obiect cerut în sub 10 secunde  
 
 ### Dacă ai terminat devreme
-- [ ] Fă un **screenshot** din fiecare vedere și lipește-le într-un document  
+- [ ] Fă un **screenshot** din fiecare vedere și lipește imaginile într-un document  
 - [ ] Sau Bonusul de mai jos  
 
 ---

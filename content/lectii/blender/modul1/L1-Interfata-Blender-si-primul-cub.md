@@ -61,7 +61,7 @@ Blender folosește des **butonul din mijloc** al mouse-ului. Pe laptop fără mo
 | **3D Viewport** | mijloc, mare | aici vezi și faci modelul |
 | **Outliner** | dreapta sus | lista obiectelor din scenă |
 | **Properties** | dreapta jos | setările obiectului selectat |
-| **Timeline** | jos | pentru animații (nu-l folosim încă) |
+| **Timeline** | jos | pentru animații (nu îl folosim încă) |
 
 În partea de sus ai meniurile **File, Edit, Render, Window, Help**, iar sub ele, **Layout, Modeling, Sculpting…** (spațiile de lucru).
 
@@ -79,12 +79,12 @@ Mouse-ul peste **3D Viewport**:
 | Selectezi un obiect | **click stânga** pe el (apare conturul portocaliu) |
 | Muți obiectul | apeși **G**, miști mouse-ul, **click** ca să confirmi |
 | Anulezi o mutare | **Esc** sau **click dreapta** |
-| Anulezi ce-ai făcut | **Ctrl + Z** |
+| Anulezi ce ai făcut | **Ctrl + Z** |
 | Refaci | **Ctrl + Shift + Z** |
 | Ascunzi / arăți bara de unelte | **T** |
 | Ascunzi / arăți panoul din dreapta | **N** |
 
-Încearcă: selectează cubul, apasă **G**, mută-l, confirmă; apoi **Ctrl + Z** și vezi cum se întoarce.
+Încearcă: selectează cubul, apasă **G**, mută cubul, confirmă; apoi **Ctrl + Z** și vezi cum se întoarce.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Primele acțiuni”  
@@ -115,23 +115,23 @@ De aici nu mai urmezi pași scriși: alegi tu ce construiești.
 ### 7) Salvarea
 - **File → Save As** (sau **Ctrl + Shift + S**).  
 - Numește fișierul `Prenume_Nume_B1_L01.blend`.  
-- De acum, **Ctrl + S** salvează rapid. Fă-o des!
+- De acum, **Ctrl + S** salvează rapid. Fă asta des!
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Salvarea”  
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### Dacă ai terminat devreme
-- [ ] Adaugă **5 maimuțe** și mută-le în cerc  
+- [ ] Adaugă **5 maimuțe** și mută maimuțele în cerc  
 - [ ] Sau Bonusul de mai jos  
 
 ---
 
 ## Greșeli frecvente
 1. **Scurtătura nu merge** — mouse-ul nu e deasupra viewport-ului.  
-2. **Nu găsești obiectul** — l-ai mutat departe; apasă **Home** (arată tot).  
-3. **Ai apăsat altă tastă și s-a schimbat ceva** — **Ctrl + Z**.  
-4. **Ai pierdut fișierul** — nu l-ai salvat; folosește **Ctrl + S** des.  
+2. **Nu găsești obiectul** — ai mutat obiectul departe; apasă **Home** (arată tot).  
+3. **Ai apăsat altă tastă și a apărut o schimbare** — **Ctrl + Z**.  
+4. **Ai pierdut fișierul** — nu ai salvat fișierul; folosește **Ctrl + S** des.  
 5. **Click dreapta nu face ce crezi** — în Blender 4, click **stânga** selectează; click dreapta deschide un meniu.
 
 ---
@@ -155,7 +155,7 @@ De aici nu mai urmezi pași scriși: alegi tu ce construiești.
 ### Pasul 2 — Complet
 - [ ] Am șters cubul cu **X**  
 - [ ] Am adăugat Suzanne  
-- [ ] I-am dat un nume cu **F2**  
+- [ ] Am dat un nume cu **F2**  
 - [ ] Am făcut o scenă cu cel puțin 3 obiecte, fiecare cu nume  
 - [ ] Numele fișierului `B1_L01` e corect
 

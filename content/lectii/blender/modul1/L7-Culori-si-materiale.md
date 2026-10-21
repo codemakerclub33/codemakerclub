@@ -111,7 +111,7 @@ Toate primesc materialul. Dacă modifici culoarea unui material, se schimbă **p
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 6) Complet — omulețul colorat
-Deschide fișierul cu omulețul (L5) și dă-i culori:
+Deschide fișierul cu omulețul (L5) și dă omulețului culori:
 
 | Piesă | Culoare |
 |-------|---------|
@@ -147,7 +147,7 @@ Acum alegi tu culorile, nu le iei dintr-un tabel.
 ## Greșeli frecvente
 1. **Nu vezi culoarea** — ești în modul **Solid**; treci pe **Material Preview**.  
 2. **Toate obiectele au aceeași culoare** — folosesc **același material**.  
-3. **Culoarea se schimbă pe alt obiect** — idem; apasă butonul cu cifra de lângă numele materialului ca să-l **faci unic**.  
+3. **Culoarea se schimbă pe alt obiect** — idem; apasă butonul cu cifra de lângă numele materialului ca materialul să fie **unic**.  
 4. **Metalul arată negru** — metalul „reflectă” mediul; într-o scenă goală pare închis. E normal; vezi L8–L9.  
 5. **Materialul nu apare** — ai selectat altă piesă.
 

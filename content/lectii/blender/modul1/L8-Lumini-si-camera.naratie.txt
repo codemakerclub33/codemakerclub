@@ -14,7 +14,7 @@ Al treilea pas. Experimentul zilei. La prânz: Sun cu Strength trei, aproape ver
 
 Al patrulea pas. Camera. Camera din scena de start este sus, în dreapta. O poți muta cu G și roti cu R, dar există un mod mult mai ușor. Te plasezi în viewport în unghiul în care vrei fotografia. Apeși Control plus Alt plus cifra zero de pe tastatura numerică, sau mergi la View, Align View, Align Active Camera to View, iar camera sare la vederea ta. Verifici prin cameră cu cifra zero. Dacă vrei să ajustezi fără să te încurci, în panoul N, la View, bifezi Camera to View, și poți naviga, iar camera te urmează. Atenție: debifează după aceea.
 
-Al cincilea pas. Regula treimilor. Imaginează-ți ecranul împărțit în trei pe trei pătrate. Pune subiectul pe linii sau la intersecții, nu mereu în mijloc. În Properties, la Camera, Viewport Display, bifezi Composition Guides, Thirds, iar liniile apar în vederea camerei.
+Al cincilea pas. Regula treimilor. Imaginează ecranul împărțit în trei pe trei pătrate. Pune subiectul pe linii sau la intersecții, nu mereu în mijloc. În Properties, la Camera, Viewport Display, bifezi Composition Guides, Thirds, iar liniile apar în vederea camerei.
 
 Al șaselea pas. Lentila camerei. În Properties, fila Camera, setarea Focal Length. Douăzeci și patru de milimetri cuprinde mult și deformează puțin. Cincizeci de milimetri este ca ochiul omului. Optzeci și cinci de milimetri apropie și se folosește pentru portrete. Pentru scena noastră merg bine valorile între treizeci și cinci și cincizeci de milimetri.
 
@@ -22,6 +22,6 @@ Al șaptelea pas, pentru varianta completă. Compoziția finală. Un Sun cald, p
 
 Pasul de creație. Dispoziția mea. Alegi ce simte cine se uită la poza casei: dimineață liniștită, seară caldă, noapte cu lună sau petrecere. Folosești cel puțin două lumini cu culori diferite și le dai nume. Pui camera într-un alt colț și respecți regula treimilor. Notezi tipul și puterea luminilor și o propoziție despre ce simte privitorul.
 
-Greșeli frecvente. Totul este întunecat: Power este prea mic sau lumina este în spatele obiectelor. Lumina Sun nu schimbă nimic când o muți: pentru Sun contează doar rotația. Camera nu vede casa: apasă Control plus Alt plus zero, apoi verifică cu zero. Nu ai umbre: treci în Rendered sau în Material Preview. Camera se mișcă singură: ai uitat Camera to View bifat, debifează-l.
+Greșeli frecvente. Totul este întunecat: Power este prea mic sau lumina este în spatele obiectelor. Lumina Sun nu schimbă nimic când o muți: pentru Sun contează doar rotația. Camera nu vede casa: apasă Control plus Alt plus zero, apoi verifică cu zero. Nu ai umbre: treci în Rendered sau în Material Preview. Camera se mișcă singură: ai uitat Camera to View bifat, debifează opțiunea.
 
 Succes la fotografie.

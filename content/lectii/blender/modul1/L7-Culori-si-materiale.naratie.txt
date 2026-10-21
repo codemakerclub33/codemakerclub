@@ -22,6 +22,6 @@ Al șaselea pas, pentru varianta completă. Omulețul colorat. Deschizi fișieru
 
 Pasul de creație. Scena cu temă. Alegi o temă, de exemplu vară, noapte, cetate sau ocean, și colorezi casa și omulețul, sau o scenă nouă, după ea. Folosești cel puțin patru culori care se potrivesc. O piesă poate fi lucioasă sau metalică, dacă are sens. Păstrezi o copie a variantei vechi, salvată cu v unu în nume. La final scrii o propoziție despre de ce ai ales acele culori.
 
-Greșeli frecvente. Nu vezi culoarea: ești în modul Solid, treci pe Material Preview. Toate obiectele au aceeași culoare: folosesc același material. Culoarea se schimbă pe alt obiect: din același motiv, apasă butonul cu cifra de lângă numele materialului, ca să-l faci unic. Metalul arată negru: metalul reflectă mediul, iar într-o scenă goală pare închis, ceea ce este normal, iar în lecțiile opt și nouă vezi cum se rezolvă. Materialul nu apare: ai selectat altă piesă.
+Greșeli frecvente. Nu vezi culoarea: ești în modul Solid, treci pe Material Preview. Toate obiectele au aceeași culoare: folosesc același material. Culoarea se schimbă pe alt obiect: din același motiv, apasă butonul cu cifra de lângă numele materialului, ca materialul să fie unic. Metalul arată negru: metalul reflectă mediul, iar într-o scenă goală pare închis, ceea ce este normal, iar în lecțiile opt și nouă vezi cum se rezolvă. Materialul nu apare: ai selectat altă piesă.
 
 Succes cu culorile.

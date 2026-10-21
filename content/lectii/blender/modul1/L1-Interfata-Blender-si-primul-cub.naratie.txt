@@ -16,15 +16,15 @@ Al treilea pas. Cele patru zone ale ecranului. În mijloc, mare, este Viewport: 
 
 Regula de aur: scurtăturile de la tastatură merg doar când mouse-ul se află deasupra zonei în care vrei să lucrezi.
 
-Al patrulea pas. Primele acțiuni, cu mouse-ul peste Viewport. Selectezi un obiect cu click stânga pe el, și apare un contur portocaliu. Îl muți apăsând tasta G, miști mouse-ul și dai click ca să confirmi. Anulezi mutarea cu Escape sau cu click dreapta. Anulezi ce ai făcut cu Control plus Z, iar refaci cu Control plus Shift plus Z. Tasta T ascunde sau arată bara de unelte, iar tasta N ascunde sau arată panoul din dreapta. Încearcă: selectează cubul, apasă G, mută-l, confirmă, apoi Control plus Z și vezi cum se întoarce.
+Al patrulea pas. Primele acțiuni, cu mouse-ul peste Viewport. Selectezi un obiect cu click stânga pe el, și apare un contur portocaliu. Îl muți apăsând tasta G, miști mouse-ul și dai click ca să confirmi. Anulezi mutarea cu Escape sau cu click dreapta. Anulezi ce ai făcut cu Control plus Z, iar refaci cu Control plus Shift plus Z. Tasta T ascunde sau arată bara de unelte, iar tasta N ascunde sau arată panoul din dreapta. Încearcă: selectează cubul, apasă G, mută cubul, confirmă, apoi Control plus Z și vezi cum se întoarce.
 
-Al cincilea pas, pentru varianta completă. Maimuța Suzanne. Selectezi cubul și apeși X, apoi Delete, ca să-l ștergi. Apeși Shift plus A, ceea ce deschide meniul Add, alegi Mesh, apoi Monkey. Apare Suzanne, mascota Blender. Cu mouse-ul peste viewport apeși F doi și scrii numele: Maimutica. Apeși Enter. Verifici în Outliner că numele a apărut acolo.
+Al cincilea pas, pentru varianta completă. Maimuța Suzanne. Selectezi cubul și apeși X, apoi Delete, ca să ștergi cubul. Apeși Shift plus A, ceea ce deschide meniul Add, alegi Mesh, apoi Monkey. Apare Suzanne, mascota Blender. Cu mouse-ul peste viewport apeși F doi și scrii numele: Maimutica. Apeși Enter. Verifici în Outliner că numele a apărut acolo.
 
 Al șaselea pas. Salvarea. Mergi la File, apoi Save As, sau apeși Control plus Shift plus S. Numești fișierul cu numele din proiect. De acum, Control plus S salvează rapid. Fă asta des.
 
 Pasul de creație. Maimuța are nevoie de o scenă. De aici alegi tu ce construiești. Adaugi cel puțin trei obiecte în jurul maimuței, de exemplu un cub mare ca masă, o sferă ca minge și un con ca pălărie. Le muți cu G, ca să formeze o scenă care are sens. Dai fiecărui obiect un nume clar cu F doi, nu lași nume ca Cube punct zero zero unu. Apeși Home și verifici că se văd toate împreună.
 
-Greșeli frecvente. Scurtătura nu merge: mouse-ul nu este deasupra viewport-ului. Nu găsești obiectul: l-ai mutat departe, apasă tasta Home, care arată toată scena. Ai apăsat altă tastă și s-a schimbat ceva: apasă Control plus Z. Ai pierdut fișierul: nu l-ai salvat, folosește des Control plus S. Click dreapta nu face ce crezi: în Blender patru, click stânga selectează, iar click dreapta deschide un meniu.
+Greșeli frecvente. Scurtătura nu merge: mouse-ul nu este deasupra viewport-ului. Nu găsești obiectul: ai mutat obiectul departe, apasă tasta Home, care arată toată scena. Ai apăsat altă tastă și a apărut o schimbare: apasă Control plus Z. Ai pierdut fișierul: nu ai salvat fișierul, folosește des Control plus S. Click dreapta nu face ce crezi: în Blender patru, click stânga selectează, iar click dreapta deschide un meniu.
 
 Recapitulare. Scena de start are cub, lumină și cameră. Zonele sunt Viewport, Outliner, Properties și Timeline. G mută, Escape anulează, Control plus Z dă înapoi. Shift plus A adaugă obiecte, iar F doi redenumește.
 
