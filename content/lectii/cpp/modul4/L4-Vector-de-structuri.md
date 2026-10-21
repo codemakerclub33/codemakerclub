@@ -91,7 +91,7 @@ Aceleași reguli ca la `vector<int>`: `push_back` adaugă la sfârșit, `size()`
 
 ### Exemplul 2 — Parcurgere „pe elemente”
 
-Cu `for (… : clasa)` nu mai numeri pozițiile. Dacă vrei **doar să citești**, scrie `const Elev &e`: `&` ca să nu copiezi fiecare elev, `const` ca să nu-l modifici din greșeală. Dacă vrei **să modifici**, scrie `Elev &e`.
+Cu `for (… : clasa)` nu mai numeri pozițiile. Dacă vrei **doar să citești**, scrie `const Elev &e`: `&` ca să nu copiezi fiecare elev, `const` ca să nu modifici elevul din greșeală. Dacă vrei **să modifici**, scrie `Elev &e`.
 
 ```cpp
 #include <iostream>
@@ -269,7 +269,7 @@ Din fisierul inexistent: 0 elevi
 
 ### Exemplul 5 — Căutare după nume **[Esențial]**
 
-Funcția `cauta` întoarce **poziția** elevului în vector sau `-1` dacă nu l-a găsit. Valoarea `-1` este o convenție: nicio poziție reală nu poate fi negativă.
+Funcția `cauta` întoarce **poziția** elevului în vector sau `-1` dacă nu a găsit elevul. Valoarea `-1` este o convenție: nicio poziție reală nu poate fi negativă.
 
 ```cpp
 #include <iostream>
@@ -1347,7 +1347,7 @@ Alege: 0
 Catalogul a fost salvat. La revedere!
 ```
 
-În demonstrație, a doua adăugare a numelui „Ana” este respinsă (nume duplicat). Fiecare opțiune din meniu este o **funcție separată**, iar `main` doar alege între ele. Programul are aproximativ 200 de linii, dar rămâne ușor de urmărit, pentru că fiecare funcție are un singur rol și un nume clar. Rulează-l de două ori: la a doua rulare, catalogul se încarcă singur din `catalog.txt`.
+În demonstrație, a doua adăugare a numelui „Ana” este respinsă (nume duplicat). Fiecare opțiune din meniu este o **funcție separată**, iar `main` doar alege între ele. Programul are aproximativ 200 de linii, dar rămâne ușor de urmărit, pentru că fiecare funcție are un singur rol și un nume clar. Rulează programul de două ori: la a doua rulare, catalogul se încarcă singur din `catalog.txt`.
 
 ---
 
@@ -1363,7 +1363,7 @@ Definește `struct Contact { string nume; string telefon; };` și construiește 
 Definește `struct Carte { string titlu; string autor; int an; };` cu un `vector<Carte>`. Adaugă opțiuni: caută după autor (afișează toate cărțile lui), sortează după an, afișează cea mai veche carte.
 
 ### Exercițiul D — Clasamentul
-Citește de la tastatură 6 jucători (nume și scor), sortează-i descrescător după scor și afișează clasamentul cu locurile 1, 2, 3… Dacă doi jucători au același scor, ordonează-i alfabetic.
+Citește de la tastatură 6 jucători (nume și scor), sortează jucătorii descrescător după scor și afișează clasamentul cu locurile 1, 2, 3… Dacă doi jucători au același scor, ordonează alfabetic jucătorii respectivi.
 
 ### Exercițiul E — Cumpărături
 Definește `struct Articol { string nume; double pret; int cantitate; };`. Citește o listă de articole până când se scrie numele `gata`, apoi afișează lista și totalul de plată.
@@ -1429,7 +1429,7 @@ Definește `struct Articol { string nume; double pret; int cantitate; };`. Cite�
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Termină exercițiile A–C.  
-3. Scrie un program cu `struct Produs { string nume; double pret; int stoc; };`: citește produse dintr-un fișier, afișează-le sortate după preț (crescător) și apoi pe cele cu stocul 0.  
+3. Scrie un program cu `struct Produs { string nume; double pret; int stoc; };`: citește produse dintr-un fișier, afișează produsele sortate după preț (crescător) și apoi pe cele cu stocul 0.  
 4. Scrie funcția `vector<Elev> topK(const vector<Elev> &lista, int k)` care întoarce primii `k` elevi după notă (atenție la cazul `k` mai mare decât numărul de elevi).  
 5. **Bonus:** adaugă la „Catalogul clasei” o opțiune „Importă din alt fișier”, care adaugă elevii dintr-un fișier dat de utilizator, fără să creeze nume duplicate.  
 6. Salvează tot ca `Tema_M4L4_Prenume_Nume.cpp`.

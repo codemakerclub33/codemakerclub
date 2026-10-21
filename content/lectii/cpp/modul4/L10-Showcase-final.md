@@ -81,7 +81,7 @@ Numără răspunsurile corecte. **9–10:** excelent. **7–8:** bine, mai cite�
 
 ## 2. Fișe de recapitulare
 
-Fiecare exemplu de mai jos este mic și rulează singur. Compilează-l, rulează-l și, mai ales, **schimbă-l**: modifică o valoare, adaugă o linie, strică-l intenționat și citește eroarea.
+Fiecare exemplu de mai jos este mic și rulează singur. Compilează și rulează exemplul și, mai ales, **schimbă codul**: modifică o valoare, adaugă o linie, strică programul intenționat și citește eroarea.
 
 ### Exemplul 1 — Fișiere: scriem și citim (Lecția 1) **[Esențial]**
 
@@ -417,7 +417,7 @@ Când ștergi dintr-un vector în timp ce îl parcurgi, **nu** mărești indicel
 
 ### Exemplul 8 — Amestecare (Fisher–Yates), cu verificare (Lecția 8)
 
-Rezultatul amestecării diferă de la un calculator la altul, deci nu afișăm ordinea, ci **verificăm proprietățile**: nu s-a pierdut și nu s-a dublat nimic.
+Rezultatul amestecării diferă de la un calculator la altul, deci nu afișăm ordinea, ci **verificăm proprietățile**: nu a dispărut și nu a fost dublat nimic.
 
 ```cpp
 #include <iostream>
@@ -623,7 +623,7 @@ Cel mai bun: Ana
 
 ## 3. Un proiect mic, complet: „Jurnal de note”
 
-Mai jos este un program întreg, de dimensiune mică, care folosește aproape tot ce ai învățat în modul: `struct`, `vector`, `enum`, meniu, citire sigură, fișier și funcții scurte. Citește-l cu atenție: așa ar trebui să arate și proiectul tău, dar la o scară mai mare.
+Mai jos este un program întreg, de dimensiune mică, care folosește aproape tot ce ai învățat în modul: `struct`, `vector`, `enum`, meniu, citire sigură, fișier și funcții scurte. Citește programul cu atenție: așa ar trebui să arate și proiectul tău, dar la o scară mai mare.
 
 ### Exemplul 12 — Jurnalul, cu salvare în fișier **[Esențial]**
 
@@ -784,7 +784,7 @@ Observă cum este organizat programul: fiecare funcție are un singur rol, `main
 
 ### Exemplul 13 — Ce a rămas în fișier? **[Esențial]**
 
-După rularea Exemplului 12, fișierul `jurnal.txt` există. Putem să-l citim cu un program separat:
+După rularea Exemplului 12, fișierul `jurnal.txt` există. Putem să citim fișierul cu un program separat:
 
 ```cpp
 #include <iostream>
@@ -912,7 +912,7 @@ Idei dacă vrei ceva nou (fiecare se poate face cu ce ai învățat):
 
 ### Lista de verificare înainte de prezentare
 - [ ] Am compilat de la zero și nu am avertismente  
-- [ ] Am rulat programul cu date greșite (litere în loc de numere, valori negative, linie goală) și nu s-a stricat  
+- [ ] Am rulat programul cu date greșite (litere în loc de numere, valori negative, linie goală) și nu a fost stricat  
 - [ ] Am șters fișierele de date și programul pornește corect (prima rulare)  
 - [ ] Opțiunea demo încarcă cel puțin 5 elemente  
 - [ ] Am repetat prezentarea cu cronometrul: sub 3 minute  
@@ -925,13 +925,13 @@ Idei dacă vrei ceva nou (fiecare se poate face cu ce ai învățat):
 ### Cum decurge
 1. Fiecare elev prezintă **3 minute**, apoi răspunde la o întrebare.
 2. Folosește cele 5 părți din Lecția 9: **problema**, **demonstrația**, **o idee din cod**, **ce a fost greu**, **ce urmează**.
-3. Colegii completează o fișă de feedback: o parte care le-a plăcut, o întrebare și o sugestie.
+3. Colegii completează o fișă de feedback: ce a plăcut, o întrebare și o sugestie.
 
 ### Fișă de feedback (pentru colegi)
 
 | Proiect: ______________ | Autor: ______________ |
 |-------------------------|------------------------|
-| Mi-a plăcut: | |
+| Am apreciat: | |
 | O întrebare: | |
 | O sugestie: | |
 
@@ -945,13 +945,13 @@ Idei dacă vrei ceva nou (fiecare se poate face cu ce ai învățat):
 ## Proiect / exerciții de finalizat AZI
 
 ### Exercițiul A — Proiectul final (obligatoriu)
-Finalizează proiectul după cerințele și grila din secțiunea 4. Salvează-l ca `Prenume_Nume_M4L10.cpp`.
+Finalizează proiectul după cerințele și grila din secțiunea 4. Salvează fișierul ca `Prenume_Nume_M4L10.cpp`.
 
 ### Exercițiul B — Autoevaluare
 Completează grila de mai sus cu punctajul pe care crezi că îl meriți, la fiecare criteriu, și scrie o propoziție care justifică fiecare punctaj. Compară apoi cu nota dată de profesor.
 
 ### Exercițiul C — Planul „ce urmează”
-Scrie la sfârșitul fișierului, într-un comentariu, trei îmbunătățiri pe care le-ai face dacă ai mai avea o săptămână.
+Scrie la sfârșitul fișierului, într-un comentariu, trei îmbunătățiri pe care ai putea să le faci dacă ai mai avea o săptămână.
 
 **Gata când:**
 - [ ] Proiectul respectă cele 7 cerințe obligatorii  
@@ -1007,16 +1007,16 @@ Scrie la sfârșitul fișierului, într-un comentariu, trei îmbunătățiri pe 
 ---
 
 ## Temă
-1. Păstrează proiectul final și continuă să-l îmbunătățești în timpul liber: fiecare funcționalitate nouă te face mai bun.  
+1. Păstrează proiectul final și continuă să îmbunătățești proiectul în timpul liber: fiecare funcționalitate nouă te face mai bun.  
 2. Rezolvă din nou, fără să te uiți, întrebările din test la care ai greșit.  
-3. Alege-ți un nume și un decor pentru jocul din Modulul 5 și scrie o jumătate de pagină despre el: cine este eroul, ce monștri întâlnește, ce obiecte poate găsi.  
+3. Alege un nume și un decor pentru jocul din Modulul 5 și scrie o jumătate de pagină despre el: cine este eroul, ce monștri întâlnește, ce obiecte poate găsi.  
 4. Salvează tot ca `Tema_M4L10_Prenume_Nume.cpp`.
 
 ---
 
 ## 🎓 Diploma CodeKids Graduate
 
-Felicitări! Ai terminat **Modulul 4 — Proiecte și autonomie**. În douăzeci de ore ai învățat să lucrezi cu fișiere, vectori și structuri, să construiești meniuri, să scrii trei proiecte complete, să-ți curățești și să-ți testezi codul și să-ți prezinți munca. Ai primit titlul de **CodeKids Graduate**.
+Felicitări! Ai terminat **Modulul 4 — Proiecte și autonomie**. În douăzeci de ore ai învățat să lucrezi cu fișiere, vectori și structuri, să construiești meniuri, să scrii trei proiecte complete, să îți curățești și să îți testezi codul și să îți prezinți munca. Ai primit titlul de **CodeKids Graduate**.
 
 Ești pregătit pentru ultima aventură.
 

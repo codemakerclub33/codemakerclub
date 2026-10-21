@@ -14,8 +14,8 @@ Al patrulea pas. Proiectul final. Îl pui în ordine, cu meniu, fișier, date de
 
 Al cincilea pas. Showcase. Prezinți în trei minute: ce problemă rezolvă proiectul, o demonstrație cu date demo, o bucată de cod de care ești mândru și ce ai învățat. Apoi te evaluezi singur, după grilă, și scrii un plan pentru ce ai adăuga în continuare.
 
-Greșeli frecvente la proiecte. Ultima valoare din fișier apare de două ori. Programul se blochează la introducerea unei litere. Getline sare peste o linie după c-in. Datele dispar la următoarea rulare, pentru că nu le-ai salvat. Elemente sărite la ștergerea din vector. Fișierul de date lipsește și programul se oprește, în loc să explice.
+Greșeli frecvente la proiecte. Ultima valoare din fișier apare de două ori. Programul se blochează la introducerea unei litere. Getline sare peste o linie după c-in. Datele dispar la următoarea rulare, pentru că nu ai salvat datele. Elemente sărite la ștergerea din vector. Fișierul de date lipsește și programul se oprește, în loc să explice.
 
-Tema. Păstrezi proiectul final și continui să-l îmbunătățești. Rezolvi din nou întrebările din test la care ai greșit. Alegi un nume și un decor pentru jocul din Modulul cinci și scrii o jumătate de pagină despre el: cine este eroul, unde se petrece povestea și ce vrea să facă.
+Tema. Păstrezi proiectul final și continui să îmbunătățești proiectul. Rezolvi din nou întrebările din test la care ai greșit. Alegi un nume și un decor pentru jocul din Modulul cinci și scrii o jumătate de pagină despre el: cine este eroul, unde se petrece povestea și ce vrea să facă.
 
 Bravo, ai terminat Modulul patru!

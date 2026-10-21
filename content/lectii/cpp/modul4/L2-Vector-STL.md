@@ -83,9 +83,9 @@ v[1] = 20
 v[2] = 30
 ```
 
-Elementele se numerotează de la `0`, exact ca la vectorii obișnuiți, și le accesezi cu `v[i]`. Diferența mare: **nu ai spus nicăieri câte elemente va avea**. Vectorul s-a mărit singur la fiecare `push_back`.
+Elementele se numerotează de la `0`, exact ca la vectorii obișnuiți, și le accesezi cu `v[i]`. Diferența mare: **nu ai spus nicăieri câte elemente va avea**. Vectorul se mărește singur la fiecare `push_back`.
 
-> **Observă:** am scris `int n = v.size();` și am folosit `n` în buclă. `size()` întoarce un număr fără semn (tip special, `size_t`), iar dacă l-ai compara direct cu un `int i`, compilatorul ar da un avertisment. Cu `int n = v.size();` evităm problema.
+> **Observă:** am scris `int n = v.size();` și am folosit `n` în buclă. `size()` întoarce un număr fără semn (tip special, `size_t`), iar dacă ai compara direct `size()` cu un `int i`, compilatorul ar da un avertisment. Cu `int n = v.size();` evităm problema.
 
 ### Exemplul 2 — Valori inițiale
 
@@ -558,7 +558,7 @@ De cate ori apare 8: 1
 - `min_element` și `max_element` întorc o **poziție**; steluța `*` din față îți dă valoarea de acolo;
 - `count(…, x)` numără de câte ori apare `x`.
 
-La teme, când ți se cere să arăți că ai înțeles algoritmul, scrie-l singur cu bucle. În proiecte, folosește aceste instrumente: sunt corecte și rapide.
+La teme, când ți se cere să arăți că ai înțeles algoritmul, scrie algoritmul singur cu bucle. În proiecte, folosește aceste instrumente: sunt corecte și rapide.
 
 **Încearcă tu (8 min)**  
 - [ ] Creezi un `vector<string>` cu 4 nume  
@@ -570,15 +570,15 @@ La teme, când ți se cere să arăți că ai înțeles algoritmul, scrie-l sing
 
 La vectorii obișnuiți, funcția primea `int v[]` și lungimea separat. Cu `vector`, lungimea vine odată cu el (`v.size()`), deci un singur parametru este de ajuns.
 
-Pentru că un `vector` poate fi foarte mare, nu vrem ca funcția să-l **copieze**. Folosim o **referință** (`&`):
+Pentru că un `vector` poate fi foarte mare, nu vrem ca funcția să **copieze** vectorul. Folosim o **referință** (`&`):
 
 | Parametru | Ce înseamnă |
 |-----------|-------------|
 | `vector<int> v` | primești o **copie** (lent, iar modificările nu se văd afară) |
 | `vector<int> &v` | primești **chiar vectorul** (funcția îl poate modifica) |
-| `const vector<int> &v` | primești chiar vectorul, dar **nu ai voie să-l modifici** (pentru funcții care doar citesc) |
+| `const vector<int> &v` | primești chiar vectorul, dar **nu ai voie să modifici vectorul** (pentru funcții care doar citesc) |
 
-Regula practică: dacă funcția doar citește vectorul, scrie `const vector<int> &v`. Dacă trebuie să-l modifice, scrie `vector<int> &v`.
+Regula practică: dacă funcția doar citește vectorul, scrie `const vector<int> &v`. Dacă trebuie să modifice vectorul, scrie `vector<int> &v`.
 
 ### Exemplul 12 — Funcții cu `vector` **[Esențial]**
 
@@ -633,7 +633,7 @@ Dupa bonus: 55 65 75 85
 Media: 70
 ```
 
-`afiseaza` și `media` doar citesc, deci primesc `const vector<int> &`. `adaugaBonus` modifică elementele, deci primește `vector<int> &`. Dacă ai încerca să modifici vectorul într-o funcție `const`, compilatorul ți-ar da eroare, ceea ce te ajută să nu strici datele din greșeală.
+`afiseaza` și `media` doar citesc, deci primesc `const vector<int> &`. `adaugaBonus` modifică elementele, deci primește `vector<int> &`. Dacă ai încerca să modifici vectorul într-o funcție `const`, compilatorul ar da eroare, ceea ce te ajută să nu strici datele din greșeală.
 
 ### Exemplul 13 — O funcție care întoarce un vector
 
@@ -1068,16 +1068,16 @@ Observă cum este organizat programul: **fiecare funcție face un singur lucru**
 Scrie programul din Exemplul 16. Adaugă încă două opțiuni: „Șterge o notă de pe o poziție dată” (cu `erase`; verifică dacă poziția există) și „Câte note sunt peste medie”.
 
 ### Exercițiul B — Numere pare și impare
-Citește numere până la `0` într-un vector. Construiește doi vectori noi, unul cu numerele pare și unul cu cele impare, și afișează-i pe amândoi.
+Citește numere până la `0` într-un vector. Construiește doi vectori noi, unul cu numerele pare și unul cu cele impare, și afișează ambii vectori.
 
 ### Exercițiul C — Fără duplicate
-Citește 10 numere. Construiește un vector care conține fiecare valoare o singură dată (verifică înainte de `push_back` dacă numărul se află deja în vector) și afișează-l.
+Citește 10 numere. Construiește un vector care conține fiecare valoare o singură dată (verifică înainte de `push_back` dacă numărul se află deja în vector) și afișează vectorul.
 
 ### Exercițiul D — Lista de cumpărături
 Folosește `vector<string>` pentru o listă de cumpărături, cu meniu: adaugă un produs, șterge un produs după nume, afișează lista, salvează în fișier (câte un produs pe linie, citit cu `getline`).
 
 ### Exercițiul E — Rotire
-Scrie funcția `void rotesteStanga(vector<int> &v)` care mută primul element la sfârșit (`{1,2,3,4}` devine `{2,3,4,1}`). Apeleaz-o de mai multe ori.
+Scrie funcția `void rotesteStanga(vector<int> &v)` care mută primul element la sfârșit (`{1,2,3,4}` devine `{2,3,4,1}`). Apelează funcția de mai multe ori.
 
 **Gata când:**
 - [ ] Programul compilează fără erori sau avertismente  
@@ -1106,7 +1106,7 @@ Scrie funcția `void rotesteStanga(vector<int> &v)` care mută primul element la
 | `error: missing template arguments` | Ai scris `vector v;` | Spune tipul: `vector<int> v;` |
 | Avertisment `comparison of integer expressions of different signedness` | `i < v.size()` cu `int i` | `int n = v.size();` și `i < n` |
 | Valori ciudate sau program blocat | Acces în afara vectorului (`v[10]` la 3 elemente) | Pozițiile valide sunt `0 … size() - 1` |
-| `v[0]` pe un vector gol | N-ai adăugat nimic sau ai uitat `push_back` | Verifică `empty()` |
+| `v[0]` pe un vector gol | Nu ai adăugat nimic sau ai uitat `push_back` | Verifică `empty()` |
 | `erase` sare peste elemente | `for` cu `i++` după ștergere | Folosește `while` și avansează doar când nu ștergi |
 | Funcția modifică vectorul, dar în `main` nu se vede | Parametru fără `&` (primește copie) | `vector<int> &v` |
 | Eroare la modificarea unui `const vector<int> &` | Parametrul este doar pentru citire | Scoate `const` dacă funcția chiar trebuie să modifice |
@@ -1124,7 +1124,7 @@ Scrie funcția `void rotesteStanga(vector<int> &v)` care mută primul element la
 - Parcurgere: `for (int i = 0; i < n; i++)` sau `for (int x : v)`; cu `for (int &x : v)` poți modifica elementele.
 - Funcții: `const vector<int> &v` pentru citire, `vector<int> &v` pentru modificare; o funcție poate și să întoarcă un `vector`.
 - `<algorithm>`: `sort(v.begin(), v.end())`, `reverse`, `min_element`, `max_element`, `count`.
-- Tiparul „încarcă la pornire, salvează la ieșire” face un program să-și amintească datele.
+- Tiparul „încarcă la pornire, salvează la ieșire” face un program să își amintească datele.
 
 ---
 
@@ -1140,8 +1140,8 @@ Scrie funcția `void rotesteStanga(vector<int> &v)` care mută primul element la
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Scrie un program care citește `n` numere într-un vector și afișează: suma, media, minimul, maximul și câte numere sunt mai mari decât media.  
-3. Citește numere până la `0`, apoi afișează-le în ordine inversă și apoi sortate crescător.  
-4. Scrie funcția `bool existaIn(const vector<int> &v, int x)` și folosește-o într-un program care citește numere și afișează doar valorile care apar o singură dată în lista citită.  
+3. Citește numere până la `0`, apoi afișează numerele în ordine inversă și apoi sortate crescător.  
+4. Scrie funcția `bool existaIn(const vector<int> &v, int x)` și folosește funcția într-un program care citește numere și afișează doar valorile care apar o singură dată în lista citită.  
 5. **Bonus:** extinde „Lista de note” astfel încât fiecare notă să aibă și o materie (două vectori paraleli: `vector<int> note` și `vector<string> materii`). Ce probleme apar când ștergi o notă? Gândește-te: în lecția următoare vei vedea o soluție mai bună.  
 6. Salvează tot ca `Tema_M4L2_Prenume_Nume.cpp`.
 

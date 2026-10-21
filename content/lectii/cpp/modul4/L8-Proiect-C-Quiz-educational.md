@@ -386,7 +386,7 @@ Cat face 1 + 1? -> INVALIDA: variantele A si C sunt identice
 Cat face 5 + 5? -> INVALIDA: raspunsul corect nu este intre 1 si 4
 ```
 
-`string(1, (char)('A' + i))` creează un text de un singur caracter (litera variantei) ca să-l putem lipi cu `+` de alt text. Perechile `(i, j)` cu `j > i` compară fiecare variantă cu toate cele de după ea, exact o dată.
+`string(1, (char)('A' + i))` creează un text de un singur caracter (litera variantei) ca să putem lipi textul cu `+` de alt text. Perechile `(i, j)` cu `j > i` compară fiecare variantă cu toate cele de după ea, exact o dată.
 
 **Încearcă tu (8 min)**  
 - [ ] Încarci întrebările dintr-un fișier  
@@ -514,7 +514,7 @@ int main() {
     if (ok) {
         cout << "Dupa 400 de amestecari, raspunsul corect a fost mereu \"0\"." << endl;
     } else {
-        cout << "EROARE: raspunsul corect s-a pierdut!" << endl;
+        cout << "EROARE: raspunsul corect a fost pierdut!" << endl;
     }
 
     bool peToatePozitiile = true;
@@ -596,7 +596,7 @@ Am ales 10 intrebari din 50: 40 8 32 46 30 39 31 3 34 15
 Verificare: toate intrebarile alese sunt diferite.
 ```
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
 ### Exemplul 9 — Scor cu serie (bonus pentru răspunsuri la rând) *(Provocare, opțional)*
 
@@ -972,7 +972,7 @@ Am adaugat intrebarea. Continutul fisierului:
   | Suma lui 2 cu 2 este 4.
 ```
 
-Aici se vede avantajul formatului de fișier: codul `adaugaInFisier` este scurt, iar `incarca` din Exemplul 4 poate citi imediat ce s-a scris. Observă că `q.corect + 1` se scrie în fișier (numărarea de la 1), exact invers față de încărcare.
+Aici se vede avantajul formatului de fișier: codul `adaugaInFisier` este scurt, iar `incarca` din Exemplul 4 poate citi imediat ce a fost scris. Observă că `q.corect + 1` se scrie în fișier (numărarea de la 1), exact invers față de încărcare.
 
 > Nu pune explicația goală: `incarca` citește fiecare întrebare pe 7 linii, iar o linie lipsă ar dezordona toate întrebările următoare. În proiect, dacă utilizatorul nu scrie nimic, folosim `-`.
 
@@ -1091,7 +1091,7 @@ vector<Intrebare> implicite() {
          "fstream vine de la file stream."},
         {"Cu ce cuvant cheie definesti o structura?", {"class", "struct", "enum", "void"}, 1,
          "struct grupeaza mai multe campuri intr-un tip nou."},
-        {"Ce valoare intoarce main() daca programul s-a terminat corect?", {"1", "0", "-1", "nimic"}, 1,
+        {"Ce valoare intoarce main() daca programul se termina corect?", {"1", "0", "-1", "nimic"}, 1,
          "Prin conventie, return 0; inseamna ca totul a mers bine."}
     };
 }
@@ -1470,9 +1470,9 @@ Dacă la „Amesteci întrebările?” răspunzi `da`, întrebările și variant
 ## Proiect / exerciții de finalizat AZI
 
 ### Exercițiul A — „Quiz C++” (obligatoriu)
-Scrie aplicația din Exemplul 15. Apoi adaugă **cel puțin 10 întrebări noi** despre ce ai învățat în cursul de C++ (din meniu sau direct în fișier) și joacă-l cu un coleg.
+Scrie aplicația din Exemplul 15. Apoi adaugă **cel puțin 10 întrebări noi** despre ce ai învățat în cursul de C++ (din meniu sau direct în fișier) și joacă quiz-ul cu un coleg.
 
-**Pe niveluri (alege-l pe al tău):**
+**Pe niveluri (alege nivelul tău):**
 - **De bază:** un quiz cu întrebări într-un `vector`, scor și mesaj final (Exemplele 1–3).
 - **Complet:** întrebările din fișier, rezultate salvate și explicații (Exemplele 4–5, 10–12), cu aplicația din Exemplul 15.
 - **Provocare:** scor cu serie, întrebări pe teme, ștergerea unei întrebări.
@@ -1514,13 +1514,13 @@ Schimbă subiectul (de exemplu „Animale”, „Geografie”, „Matematică”
 |---------|-------|--------|
 | Toate întrebările se încarcă „deplasate” | Format diferit în fișier față de cel așteptat (o linie lipsă) | Fiecare întrebare are exact 7 linii |
 | Răspunsul corect este mereu cu o poziție în plus | În fișier numeri de la 1, în program de la 0 | Scazi 1 la încărcare, adaugi 1 la salvare |
-| După amestecarea variantelor, răspunsul corect e greșit | Ai păstrat vechiul indice | Ține minte textul corect și caută-l după amestecare |
+| După amestecarea variantelor, răspunsul corect e greșit | Ai păstrat vechiul indice | Ține minte textul corect și caută textul după amestecare |
 | Aceeași întrebare apare de două ori | Ai ales indici cu `rand()` direct, fără amestecare | Amestecă vectorul de indici și ia primii `k` |
 | Răspunsul `ab` este acceptat sau strică întrebarea următoare | Ai citit un `char` în loc de un `string` | Citește un `string` și verifică lungimea |
 | Primul răspuns este sărit după ce ai citit numărul de întrebări | A rămas un Enter în buffer | `citesteInt` curăță linia; folosește `getline(cin >> ws, …)` |
 | Procentul iese `0` deși ai răspunsuri corecte | Împărțire între întregi: `scor / total * 100` | `scor * 100 / total` |
 | Clasamentul se sortează după scor brut | Comparator pe `scor` în loc de procent | Compară procentele |
-| Quiz-ul se oprește dacă fișierul e gol | Nu ai tratat lista goală | Dacă nu s-au încărcat întrebări, creează fișierul implicit |
+| Quiz-ul se oprește dacă fișierul e gol | Nu ai tratat lista goală | Dacă nu au fost încărcate întrebări, creează fișierul implicit |
 
 ---
 
@@ -1549,7 +1549,7 @@ Schimbă subiectul (de exemplu „Animale”, „Geografie”, „Matematică”
 
 ## Temă
 1. Refă **Exemplele 1–15** pe calculatorul tău.  
-2. Termină exercițiile A și E. Un coleg trebuie să poată juca quiz-ul tău fără să-l ghidezi.  
+2. Termină exercițiile A și E. Un coleg trebuie să poată juca quiz-ul tău fără ghidajul tău.  
 3. Alege un subiect care îți place (jocuri, animale, fotbal, spațiu) și scrie 15 întrebări cu explicații.  
 4. Scrie un program separat care **verifică** un fișier de întrebări: afișează câte întrebări sunt valide și, pentru cele invalide, motivul (folosește `valideaza` din Exemplul 5).  
 5. **Bonus:** adaugă un clasament separat pentru fiecare jucător (cel mai bun rezultat al fiecărui nume).  

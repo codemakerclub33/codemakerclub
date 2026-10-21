@@ -6,9 +6,9 @@ Obiectivul. Minim: adaugi elevi într-un vector de elevi, îi afișezi și cauț
 
 Primul pas. Adăugare și afișare. Declari un vector, între semnele mai mic și mai mare punând numele structurii. Cu push back adaugi elevi. Parcurgi catalogul cu un for obișnuit sau cu for pe elemente. Poți citi elevii de la tastatură, într-o buclă.
 
-Al doilea pas. Citire din fișier și căutare. Încarci catalogul dintr-un fișier, citind elev după elev. Cauți un elev după nume și afișezi nota lui. Dacă nu l-ai găsit, nu folosești poziția, pentru că ar fi o poziție în afara vectorului. Afli și cel mai bun elev sau toți elevii care îndeplinesc o condiție.
+Al doilea pas. Citire din fișier și căutare. Încarci catalogul dintr-un fișier, citind elev după elev. Cauți un elev după nume și afișezi nota lui. Dacă nu ai găsit elevul, nu folosești poziția, pentru că ar fi o poziție în afara vectorului. Afli și cel mai bun elev sau toți elevii care îndeplinesc o condiție.
 
-Al treilea pas. Modificare, ștergere și filtrare. Modifici nota unui elev găsit. Ștergi un elev cu erase. Adaugi un elev doar dacă nu există deja. Filtrezi într-un vector nou elevii care respectă o regulă. Dacă vrei ca o funcție să schimbe catalogul, trebuie să-l primești cu ampersand.
+Al treilea pas. Modificare, ștergere și filtrare. Modifici nota unui elev găsit. Ștergi un elev cu erase. Adaugi un elev doar dacă nu există deja. Filtrezi într-un vector nou elevii care respectă o regulă. Dacă vrei ca o funcție să schimbe catalogul, trebuie să primești catalogul cu ampersand.
 
 Al patrulea pas. Sortare. Sortezi cu sort din biblioteca algorithm, dar pentru structuri îi dai o funcție de comparare, care spune după ce câmp se ordonează. Poți sorta descrescător după notă, alfabetic după nume sau după vârstă. Pentru Top trei iei primele trei elemente după sortare.
 

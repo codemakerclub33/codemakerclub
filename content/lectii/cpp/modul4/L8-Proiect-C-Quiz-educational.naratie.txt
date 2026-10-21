@@ -16,6 +16,6 @@ Al cincilea pas. Întrebări noi. Programul îți permite să scrii întrebări 
 
 Greșeli frecvente. Toate întrebările se încarcă deplasate, pentru că ai citit greșit formatul. Răspunsul corect e cu o poziție în plus, pentru că pozițiile încep de la zero. După amestecarea variantelor, răspunsul corect e greșit. Aceeași întrebare apare de două ori. Răspunsul cu două litere este acceptat sau strică întrebarea următoare. Primul răspuns este sărit după ce ai citit numărul de întrebări.
 
-Tema. Termini exercițiile A și E: un coleg trebuie să poată juca quiz-ul fără să-l ghidezi. Alegi un subiect care îți place și scrii cincisprezece întrebări cu explicații. Faci un program care verifică fișierul de întrebări. Salvezi ca Tema, linie jos, M patru, L opt.
+Tema. Termini exercițiile A și E: un coleg trebuie să poată juca quiz-ul fără ghidajul tău. Alegi un subiect care îți place și scrii cincisprezece întrebări cu explicații. Faci un program care verifică fișierul de întrebări. Salvezi ca Tema, linie jos, M patru, L opt.
 
 Recapitulare. Datele stau în fișier, programul le citește și le validează. Succes!

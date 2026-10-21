@@ -18,6 +18,6 @@ Al șaselea pas. Prezentarea. Pregătești o demonstrație de trei minute: ce fa
 
 Greșeli frecvente. Programul curățat se comportă altfel. Ai o funcție de optzeci de linii, imposibil de testat. Comentariile spun ce se vede deja. Optimizezi înainte să măsori. Testele trec, dar programul are un bug. Ai lăsat cod comentat peste tot.
 
-Tema. Termini exercițiile A, B și C pentru proiectul tău preferat. Repeți demonstrația cu cronometrul. Rogi un coleg sau un părinte să-ți folosească programul fără explicații și remediezi cel puțin două lucruri. Salvezi ca Tema, linie jos, M patru, L nouă.
+Tema. Termini exercițiile A, B și C pentru proiectul tău preferat. Repeți demonstrația cu cronometrul. Rogi un coleg sau un părinte să îți folosească programul fără explicații și remediezi cel puțin două lucruri. Salvezi ca Tema, linie jos, M patru, L nouă.
 
 Recapitulare. Clar, testat, măsurat. Succes!

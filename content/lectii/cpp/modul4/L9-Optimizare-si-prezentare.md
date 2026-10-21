@@ -115,7 +115,7 @@ De zece: 2
 Corigenti: 2
 ```
 
-Ce nu e bine? `a`, `s`, `m`, `mx`, `mn`, `c`, `d` nu spun nimic; `8` apare peste tot (dacă schimbi numărul de note, trebuie să-l corectezi în 7 locuri); fiecare calcul e un bloc separat în `main`. Vom rezolva pe rând. Ieșirea de mai sus este **referința**: după curățare, programul trebuie să afișeze exact aceleași lucruri.
+Ce nu e bine? `a`, `s`, `m`, `mx`, `mn`, `c`, `d` nu spun nimic; `8` apare peste tot (dacă schimbi numărul de note, trebuie să corectezi în 8 locuri); fiecare calcul e un bloc separat în `main`. Vom rezolva pe rând. Ieșirea de mai sus este **referința**: după curățare, programul trebuie să afișeze exact aceleași lucruri.
 
 ### Exemplul 2 — Nume care spun ceva **[Esențial]**
 
@@ -131,7 +131,7 @@ Un nume bun se citește ca o propoziție. Compară:
 | `bool f` | `bool esteGasit` | o variabilă `bool` se citește ca o întrebare |
 | `void fct1()` | `void afiseazaMeniu()` | o funcție are nume-verb |
 
-Alege **un singur stil** și respectă-l. În acest curs folosim `camelCase` (`numarElevi`) pentru variabile și funcții și `MAJUSCULE_CU_LINIE` pentru constante.
+Alege **un singur stil** și rămâi la el. În acest curs folosim `camelCase` (`numarElevi`) pentru variabile și funcții și `MAJUSCULE_CU_LINIE` pentru constante.
 
 ```cpp
 #include <iostream>
@@ -167,7 +167,7 @@ Media: 7.5, minim: 4, maxim: 10
 
 ### Exemplul 3 — Constante în loc de numere magice **[Esențial]**
 
-Un număr scris direct în cod, fără explicație, se numește **număr magic**. Dă-i un nume cu `const`:
+Un număr scris direct în cod, fără explicație, se numește **număr magic**. Dă numărului un nume, cu `const`:
 
 ```cpp
 #include <iostream>
@@ -648,7 +648,7 @@ Caut 999999: pozitie -1 (liniar, 500000 comparatii) / pozitie -1 (binar, 19 comp
 
 Cu 500000 de elemente, căutarea liniară face până la **500000** de comparații, iar cea binară cel mult **19** (pentru că 2 înmulțit cu el însuși de 19 ori, adică 524288, este puțin peste 500000). Un număr inexistent (`999999`, care e impar) este cel mai defavorabil caz pentru amândouă. Condiția: vectorul trebuie să fie **sortat**.
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
 ### Exemplul 10 — Nu repeta calcule costisitoare *(Provocare, opțional)*
 
@@ -723,7 +723,7 @@ Ciurul lui Eratostene:
   operatii: 193078
 ```
 
-Aceleași 9592 de numere prime, găsite cu de aproximativ 14 ori mai puține operații. Ideea generală: dacă vei avea nevoie de un rezultat de mai multe ori, **calculează-l o singură dată** și păstrează-l (într-un vector, într-o variabilă).
+Aceleași 9592 de numere prime, găsite cu de aproximativ 14 ori mai puține operații. Ideea generală: dacă vei avea nevoie de un rezultat de mai multe ori, **calculează rezultatul o singură dată** și păstrează rezultatul (într-un vector, într-o variabilă).
 
 ### Exemplul 11 — Frecvențe: două bucle imbricate contra unui vector de numărare *(Provocare, opțional)*
 
@@ -1023,7 +1023,7 @@ estePrim(91) = 0
 cmmdc(84, 36) = 12
 ```
 
-Un alt tip util de comentariu este `// TODO:` (de făcut) sau `// ATENTIE:` (ceva de care trebuie să ții cont). Dar nu lăsa cod comentat „pentru mai târziu”: șterge-l; dacă ai nevoie de el, îl vei regăsi în istoricul versiunilor (Git).
+Un alt tip util de comentariu este `// TODO:` (de făcut) sau `// ATENTIE:` (ceva de care trebuie să ții cont). Dar nu lăsa cod comentat „pentru mai târziu”: șterge codul; dacă ai nevoie de el, îl vei regăsi în istoricul versiunilor (Git).
 
 ### Exemplul 15 — Mod demo: date de exemplu la cerere
 
@@ -1132,7 +1132,7 @@ Alege: 1
 Alege: 0
 ```
 
-Opțiunea 3 ar putea fi ascunsă (de exemplu, accesibilă doar cu un număr special), dar în proiectele tale e în regulă să fie vizibilă. Pregătește-o **înainte** de prezentare.
+Opțiunea 3 ar putea fi ascunsă (de exemplu, accesibilă doar cu un număr special), dar în proiectele tale e în regulă să fie vizibilă. Pregătește opțiunea **înainte** de prezentare.
 
 ---
 
@@ -1353,7 +1353,7 @@ Compară cele două ieșiri: sunt **identice, caracter cu caracter**. Din blocur
 | 1. **Problema** | 20 s | „Am făcut un … pentru că …” (o propoziție) |
 | 2. **Demonstrația** | 90 s | Rulezi programul și arăți 3–4 funcții importante, cu date pregătite |
 | 3. **Din cod** | 40 s | Arăți **o** funcție sau o idee de care ești mândru și o explici |
-| 4. **Ce a fost greu** | 30 s | O greșeală pe care ai descoperit-o și cum ai rezolvat-o |
+| 4. **Ce a fost greu** | 30 s | O greșeală descoperită și felul în care ai rezolvat problema |
 | 5. **Ce urmează** | 20 s | Ce ai adăuga dacă ai mai avea o săptămână |
 
 **Lista de verificare înainte de prezentare:**
@@ -1374,7 +1374,7 @@ Sfaturi: vorbește despre ce **face** programul pentru utilizator, nu doar despr
 Alege unul dintre proiectele tale (Catalog, Magazin, Quiz, joc) și parcurge **lista de curățenie**: nume clare, fără numere magice, fără cod repetat, funcții scurte (sub ~25 de linii), `const &` unde e cazul, antet și comentarii „de ce”. Compilează după fiecare schimbare și verifică că programul se comportă la fel.
 
 ### Exercițiul B — Teste
-Scrie cu `verifica` (Exemplul 12) cel puțin **10 teste** pentru funcțiile proiectului tău (inclusiv cazuri limită). Dacă ai o funcție de citire, testează-o cu `istringstream`.
+Scrie cu `verifica` (Exemplul 12) cel puțin **10 teste** pentru funcțiile proiectului tău (inclusiv cazuri limită). Dacă ai o funcție de citire, testează funcția cu `istringstream`.
 
 ### Exercițiul C — Mod demo
 Adaugă proiectului o opțiune care încarcă date de demonstrație (Exemplul 15), cu cel puțin 5 elemente.
@@ -1383,7 +1383,7 @@ Adaugă proiectului o opțiune care încarcă date de demonstrație (Exemplul 15
 Alege o operație din proiectul tău (sortare, căutare), generează 100000 de elemente și măsoară timpul cu `<chrono>`. Compară cu o variantă mai bună (de exemplu `sort` din bibliotecă față de sortarea ta).
 
 ### Exercițiul E — Scriptul prezentării
-Scrie pe hârtie (sau într-un comentariu la sfârșitul fișierului) scriptul de 3 minute, în cele 5 părți. Repetă-o cu un coleg.
+Scrie pe hârtie (sau într-un comentariu la sfârșitul fișierului) scriptul de 3 minute, în cele 5 părți. Repetă scriptul cu un coleg.
 
 **Gata când:**
 - [ ] Programul se comportă exact ca înainte de curățare  
@@ -1409,12 +1409,12 @@ Scrie pe hârtie (sau într-un comentariu la sfârșitul fișierului) scriptul d
 | Ce vezi | Cauza | Corect |
 |---------|-------|--------|
 | Programul „curățat” se comportă altfel | Ai schimbat mai multe lucruri deodată | Un pas mic, compilezi, compari ieșirea; abia apoi următorul |
-| Funcție de 80 de linii, imposibil de testat | Face prea multe lucruri | Împarte-o: fiecare funcție, un singur rol |
+| Funcție de 80 de linii, imposibil de testat | Face prea multe lucruri | Împarte funcția: fiecare funcție, un singur rol |
 | Comentariile spun ce se vede deja în cod | `i++; // il maresc pe i` | Comentează **de ce**, nu **ce** |
 | Optimizezi înainte să măsori | Presupui că știi ce e lent | Măsoară întâi, optimizează apoi, măsoară din nou |
 | Testele trec, dar programul are bug | Testele verifică doar cazuri ușoare | Adaugă cazuri limită: gol, un element, zero, negativ |
-| Cod comentat rămas peste tot | „Poate îmi trebuie” | Șterge-l; îl găsești în istoricul versiunilor |
-| Variabile globale modificate din mai multe locuri | Orice funcție le poate schimba | Pune datele într-o structură și trimite-o prin `&` |
+| Cod comentat rămas peste tot | „Poate îmi trebuie” | Șterge codul; îl găsești în istoricul versiunilor |
+| Variabile globale modificate din mai multe locuri | Orice funcție le poate schimba | Pune datele într-o structură și trimite structura prin `&` |
 | Timpul măsurat variază mult | Calculatorul face și alte lucruri | Rulează de mai multe ori, compară ordinul de mărime |
 | La prezentare nu merge nimic | Nu ai testat pe calculatorul de prezentare | Testează în avans, cu plan B |
 
@@ -1445,10 +1445,10 @@ Scrie pe hârtie (sau într-un comentariu la sfârșitul fișierului) scriptul d
 
 ## Temă
 1. Termină exercițiile A–C pentru proiectul tău preferat din Modulul 4.  
-2. Pregătește demonstrația de 3 minute și repetă-o cu cronometrul. Notează cât a durat.  
-3. Cere unui coleg (sau unui părinte) să-ți folosească programul **fără explicații** și notează ce a încurcat-o/încurcat. Remediază cel puțin două lucruri.  
+2. Pregătește demonstrația de 3 minute și repetă prezentarea cu cronometrul. Notează cât a durat.  
+3. Cere unui coleg (sau unui părinte) să îți folosească programul **fără explicații** și notează ce a fost greu de înțeles. Remediază cel puțin două lucruri.  
 4. Pregătește un fișier `README.txt` pentru proiect: ce face, cum se compilează și se rulează, ce meniu are.  
-5. **Bonus:** adaugă la `README.txt` trei idei de îmbunătățire pe care le-ai face în viitor.  
+5. **Bonus:** adaugă la `README.txt` trei idei de îmbunătățire pe care ai vrea să le faci în viitor.  
 6. Salvează tot ca `Tema_M4L9_Prenume_Nume.cpp`.
 
 ---

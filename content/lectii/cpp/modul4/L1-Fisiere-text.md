@@ -8,7 +8,7 @@
 ---
 
 ## Obiectiv
-La finalul orei scrii date într-un fișier text cu `ofstream`, citești date dintr-un fișier cu `ifstream` (cuvinte, numere și linii întregi), verifici dacă fișierul s-a deschis, adaugi text la sfârșitul unui fișier și construiești un program care citește notele dintr-un fișier și scrie un raport în alt fișier.  
+La finalul orei scrii date într-un fișier text cu `ofstream`, citești date dintr-un fișier cu `ifstream` (cuvinte, numere și linii întregi), verifici dacă fișierul a fost deschis, adaugi text la sfârșitul unui fișier și construiești un program care citește notele dintr-un fișier și scrie un raport în alt fișier.  
 **Minim:** scrii un fișier cu `ofstream` și îl citești cu `ifstream`, cu verificarea deschiderii.  
 **Ținta orei (Complet):** + proiectul „Raportul de note”, cu două fișiere (unul de intrare, unul de ieșire).
 
@@ -46,7 +46,7 @@ Ai folosit deja două fluxuri: `cout` (scrie pe ecran) și `cin` (citește de la
 
 Numele `fout` și `fin` le alegi tu (le poți numi `scriere`, `citire` sau cum vrei). Noi le vom folosi pe acestea, ca să ne amintim imediat ce face fiecare.
 
-**Unde apare fișierul?** Dacă scrii doar un nume (`"salut.txt"`), fișierul se creează în **folderul de lucru al programului**. De obicei acesta este folderul din care rulezi programul (uneori e lângă fișierul `.cpp`, alteori lângă executabil). Dacă nu găsești fișierul creat, caută-l după nume în folderul proiectului.
+**Unde apare fișierul?** Dacă scrii doar un nume (`"salut.txt"`), fișierul se creează în **folderul de lucru al programului**. De obicei acesta este folderul din care rulezi programul (uneori e lângă fișierul `.cpp`, alteori lângă executabil). Dacă nu găsești fișierul creat, caută fișierul după nume în folderul proiectului.
 
 ### Exemplul 1 — Primul fișier scris de program **[Esențial]**
 
@@ -78,10 +78,10 @@ Salut, fisier!
 Anul 2026
 ```
 
-Ce s-a întâmplat, pe rând:
+Ce face programul, pe rând:
 - `ofstream fout("salut.txt");` **creează** fișierul `salut.txt` (iar dacă exista deja, **îl golește**) și îl deschide pentru scris;
 - `fout << …` scrie în fișier, exact ca `cout`, dar nu apare nimic pe ecran;
-- `fout.close();` închide fișierul. Este bine să-l închizi, ca să fii sigur că tot ce ai scris a ajuns pe disc.
+- `fout.close();` închide fișierul. Este bine să închizi fișierul, ca să fii sigur că tot ce ai scris a ajuns pe disc.
 
 > **Atenție:** `ofstream fout("salut.txt");` șterge conținutul vechi al fișierului. Dacă ai notat acolo ceva important, a dispărut. Mai jos vedem cum adaugi text fără să ștergi.
 
@@ -131,7 +131,7 @@ Fișierul are un fel de „cursor” care avansează pe măsură ce citești: pr
 
 ### Exemplul 3 — Ce facem dacă fișierul nu există? **[Esențial]**
 
-Dacă încerci să deschizi un fișier care nu există (sau ai greșit numele), programul **nu se oprește singur**: pur și simplu nu citește nimic. De aceea verificăm întotdeauna dacă fișierul s-a deschis:
+Dacă încerci să deschizi un fișier care nu există (sau ai greșit numele), programul **nu se oprește singur**: pur și simplu nu citește nimic. De aceea verificăm întotdeauna dacă fișierul a fost deschis:
 
 ```cpp
 #include <iostream>
@@ -146,7 +146,7 @@ int main() {
         return 1;
     }
 
-    cout << "Fisierul s-a deschis cu succes." << endl;
+    cout << "Fisierul a fost deschis cu succes." << endl;
     fin.close();
     return 0;
 }
@@ -157,7 +157,7 @@ int main() {
 Nu pot deschide fisierul nu_exista.txt
 ```
 
-- `fin.is_open()` este `true` dacă fișierul s-a deschis și `false` dacă nu.
+- `fin.is_open()` este `true` dacă fișierul a fost deschis și `false` dacă nu.
 - `!fin.is_open()` înseamnă „fișierul **nu** este deschis”.
 - `return 1;` din `main` încheie programul și anunță sistemul că a apărut o problemă (`0` înseamnă că totul a mers bine).
 
@@ -237,7 +237,7 @@ Total linii: 10
 
 `getline(fin, linie)` are o proprietate utilă: dacă a reușit să citească o linie, e considerat „adevărat”, iar când ajunge la sfârșitul fișierului e considerat „fals”. De aceea `while (getline(fin, linie))` citește tot fișierul, pe rând, și apoi se oprește.
 
-> **Nu scrie** `while (!fin.eof())`. Pare logic („cât timp nu s-a terminat fișierul”), dar `eof` devine adevărat abia **după** ce o citire a eșuat, deci ultima iterație lucrează cu date vechi sau goale. Forma corectă este `while (getline(fin, linie))` sau `while (fin >> x)`.
+> **Nu scrie** `while (!fin.eof())`. Pare logic („cât timp nu am ajuns la sfârșitul fișierului”), dar `eof` devine adevărat abia **după** ce o citire a eșuat, deci ultima iterație lucrează cu date vechi sau goale. Forma corectă este `while (getline(fin, linie))` sau `while (fin >> x)`.
 
 **Încearcă tu (8 min)**  
 - [ ] Citești primele două linii dintr-un fișier și le afișezi  
@@ -461,7 +461,7 @@ Linia B
 Linia C
 ```
 
-„Linia A” a dispărut când am redeschis fișierul fără `ios::app`, dar „Linia B” a rămas, pentru că „Linia C” a fost **adăugată** după ea. Ține minte regula: **fără `ios::app` se șterge, cu `ios::app` se adaugă**.
+„Linia A” a dispărut când am redeschis fișierul fără `ios::app`, dar „Linia B” a rămas, iar „Linia C” a fost **adăugată** după ea. Ține minte regula: **fără `ios::app` se șterge, cu `ios::app` se adaugă**.
 
 **Încearcă tu (5 min)**  
 - [ ] Adaugi o linie la un fișier cu `ios::app`  
@@ -594,7 +594,7 @@ int main() {
 Am citit 5 numere, suma lor este 72
 ```
 
-Ai deschis întâi fișierul pentru scris, l-ai închis (`fout.close()`), apoi l-ai deschis pentru citit. Ordinea contează: dacă nu închizi fișierul înainte să-l citești, e posibil ca datele să nu fi ajuns încă pe disc.
+Ai deschis întâi fișierul pentru scris, ai închis fișierul (`fout.close()`), apoi ai deschis fișierul pentru citit. Ordinea contează: dacă nu închizi fișierul înainte să citești din el, e posibil ca datele să nu fi ajuns încă pe disc.
 
 ### Exemplul 14 — Citim de la tastatură și salvăm în fișier
 
@@ -689,7 +689,7 @@ ANUL 2026
 
 ### Exemplul 16 — „Raportul de note” **[Esențial]**
 
-Programul citește catalogul din `elevi.txt` (creat în Exemplul 11), calculează media clasei și scrie un **raport** în fișierul `raport.txt`. La final, afișează raportul pe ecran, citindu-l înapoi din fișier.
+Programul citește catalogul din `elevi.txt` (creat în Exemplul 11), calculează media clasei și scrie un **raport** în fișierul `raport.txt`. La final, afișează raportul pe ecran, citind raportul înapoi din fișier.
 
 Pentru a număra elevii cu nota peste medie ai nevoie să parcurgi fișierul **de două ori**: întâi ca să afli media, apoi ca să compari fiecare notă cu ea. De aceea îl deschizi, îl închizi și îl deschizi din nou.
 
@@ -836,7 +836,7 @@ Citește un fișier text oarecare (de exemplu `salut.txt`) și afișează câte 
 | `error: 'ifstream' was not declared` (sau mesaj asemănător) | Lipsește biblioteca | `#include <fstream>` |
 | Conținutul vechi dispare | `ofstream` golește fișierul | Pentru adăugare: `ofstream fout("f.txt", ios::app);` |
 | Ultima valoare se citește de două ori | Ai folosit `while (!fin.eof())` | `while (fin >> x)` sau `while (getline(fin, linie))` |
-| Datele scrise nu apar în fișier | Ai uitat `close()` sau ai citit fișierul înainte să-l închizi | Închide fișierul de scriere înainte să-l deschizi pentru citit |
+| Datele scrise nu apar în fișier | Ai uitat `close()` sau ai citit fișierul înainte să închizi fișierul | Închide fișierul de scriere înainte să deschizi fișierul pentru citit |
 | Numele cu spații se citesc greșit | `fin >> nume` se oprește la primul spațiu | Folosește `getline` sau un format cu o dată pe linie |
 | `fin >> n` nu citește nimic | Fișierul conține text, nu numere | Verifică conținutul fișierului |
 | Același `ifstream` citit a doua oară nu mai dă nimic | Cursorul a ajuns la sfârșitul fișierului | Închide și redeschide fișierul (sau folosește alt `ifstream`) |
@@ -859,7 +859,7 @@ Citește un fișier text oarecare (de exemplu `salut.txt`) și afișează câte 
 ## Quiz scurt
 - Ce bibliotecă incluzi pentru fișiere?  
 - Care e diferența dintre `ofstream fout("nume.txt");` și `ofstream fout("nume.txt", ios::app);`?  
-- Cum verifici dacă fișierul s-a deschis?  
+- Cum verifici dacă fișierul a fost deschis?  
 - De ce nu scriem `while (!fin.eof())`? Ce scriem în loc?  
 - Cum citești de două ori același fișier?  
 
@@ -876,4 +876,4 @@ Citește un fișier text oarecare (de exemplu `salut.txt`) și afișează câte 
 ---
 
 ## Ce urmează — Lecția 2
-În lecția 1 am citit notele pe rând, fără să le păstrăm. Data viitoare învățăm `std::vector`, o listă care **crește singură**, fără să-i stabilim dinainte dimensiunea. Cu ea poți păstra toate notele din fișier și le poți sorta, căuta și afișa de câte ori vrei.
+În lecția 1 am citit notele pe rând, fără să le păstrăm. Data viitoare învățăm `std::vector`, o listă care **crește singură**, fără să stabilim dinainte dimensiunea. Cu ea poți păstra toate notele din fișier și le poți sorta, căuta și afișa de câte ori vrei.

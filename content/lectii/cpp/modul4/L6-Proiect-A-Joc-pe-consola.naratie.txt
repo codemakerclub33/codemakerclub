@@ -12,8 +12,8 @@ Al treilea pas. X și zero. Reprezinți tabla într-un vector, cu nouă poziții
 
 Un sfat bun: joacă jocul tău, cu atenție. Așa găsești greșelile.
 
-Greșeli frecvente. Numărul secret este mereu același, pentru că lipsește srand sau l-ai pus în buclă. Numărul iese din interval, de exemplu zero sau o sută unu, pentru că formula e greșită. Mutarea nouă este tratată ca poziția nouă din vector, dar vectorul începe de la zero. Tabla arată mutări fantomă. Se declară remiză, deși cineva a câștigat, pentru că ai verificat remiza înaintea câștigătorului. Calculatorul nu blochează niciodată.
+Greșeli frecvente. Numărul secret este mereu același, pentru că lipsește srand sau ai pus srand în buclă. Numărul iese din interval, de exemplu zero sau o sută unu, pentru că formula e greșită. Mutarea nouă este tratată ca poziția nouă din vector, dar vectorul începe de la zero. Tabla arată mutări fantomă. Se declară remiză, deși cineva a câștigat, pentru că ai verificat remiza înaintea câștigătorului. Calculatorul nu blochează niciodată.
 
-Tema. Termini jocul ales și, jucându-l, găsești cel puțin o greșeală, o corectezi și notezi ce ai descoperit. Scrii și celălalt joc, dacă nu l-ai terminat. Alegi unul dintre exercițiile B-E. Te gândești la proiectul de la lecția următoare. Salvezi ca Tema, linie jos, M patru, L șase.
+Tema. Termini jocul ales și, jucând jocul, găsești cel puțin o greșeală, o corectezi și notezi ce ai descoperit. Scrii și celălalt joc, dacă nu ai terminat. Alegi unul dintre exercițiile B-E. Te gândești la proiectul de la lecția următoare. Salvezi ca Tema, linie jos, M patru, L șase.
 
 Recapitulare. Planifici, construiești pe bucăți, testezi. Succes!

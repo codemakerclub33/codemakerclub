@@ -234,7 +234,7 @@ Incercari | Scor
     9     | 0
 ```
 
-Ghicești din prima, primești `80` de puncte; la ultima încercare, `10`; mai mult nu se poate. Funcția întoarce `0` dacă numărul de încercări depășește limita, adică un caz la care te-ai gândit dinainte.
+Ghicești din prima, primești `80` de puncte; la ultima încercare, `10`; mai mult nu se poate. Funcția întoarce `0` dacă numărul de încercări depășește limita, adică un caz la care te gândești dinainte.
 
 ### Exemplul 5 — Niveluri de dificultate **[Esențial]**
 
@@ -389,7 +389,7 @@ După fiecare adăugare, clasamentul are cel mult 5 rezultate: `resize(TOP)` tai
 
 ### Exemplul 7 — „Ghici numărul” complet **[Esențial]**
 
-Acum legăm piesele: meniu, niveluri, număr aleator, limită de încercări, scor și clasament salvat. Programul de mai jos conține exact funcțiile pe care le-ai testat mai sus.
+Acum legăm piesele: meniu, niveluri, număr aleator, limită de încercări, scor și clasament salvat. Programul de mai jos conține exact funcțiile testate mai sus.
 
 ```cpp
 /*
@@ -1107,9 +1107,9 @@ Mutarea lui X (1-9): 3
 A castigat X!
 ```
 
-Urmărește partida din transcriere: `X` pune în 1, `O` în 4, `X` în 2, `O` în 5, apoi `X` încearcă din nou căsuța 5 (ocupată, programul refuză și întreabă iar) și alege 3, completând rândul de sus. Funcția întoarce `'X'`, `'O'` sau `'E'`, iar cel care a chemat-o poate folosi rezultatul pentru un scor.
+Urmărește partida din transcriere: `X` pune în 1, `O` în 4, `X` în 2, `O` în 5, apoi `X` încearcă din nou căsuța 5 (ocupată, programul refuză și întreabă iar) și alege 3, completând rândul de sus. Funcția întoarce `'X'`, `'O'` sau `'E'`, iar cel care a apelat funcția poate folosi rezultatul pentru un scor.
 
-> **Notă:** exemplul de mai jos este mai greu. Îți trebuie doar dacă alegi „X și 0” **împotriva calculatorului**; „Ghici numărul” și „X și 0” în doi jucători se fac fără el. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face.
+> **Notă:** exemplul de mai jos este mai greu. Îți trebuie doar dacă alegi „X și 0” **împotriva calculatorului**; „Ghici numărul” și „X și 0” în doi jucători se fac fără el. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face.
 
 ### Exemplul 13 — Calculatorul ca adversar *(Provocare, opțional)*
 
@@ -1573,14 +1573,14 @@ Prima partidă (doi jucători) este câștigată de `X` pe rândul de sus. În a
 ## Proiect / exerciții de finalizat AZI
 
 ### Exercițiul A — Alege și termină un joc (obligatoriu)
-Scrie complet „Ghici numărul” (Exemplul 7) **sau** „X și 0” (Exemplul 14). Nu copia: scrie-l pe bucăți, testând fiecare funcție înainte de următoarea. Apoi adaugă cel puțin o funcție nouă, ideea ta.
+Scrie complet „Ghici numărul” (Exemplul 7) **sau** „X și 0” (Exemplul 14). Nu copia: scrie programul pe bucăți, testând fiecare funcție înainte de următoarea. Apoi adaugă cel puțin o funcție nouă, ideea ta.
 
-**Pe niveluri (alege-l pe al tău):**
+**Pe niveluri (alege nivelul tău):**
 - **De bază:** „Ghici numărul” din Exemplele 1–5 (limită de încercări, scor, niveluri), fără clasament în fișier.
 - **Complet:** Exemplul 7 sau Exemplul 14, întreg.
 - **Provocare:** ambele jocuri, cu meniu și scor general.
 
-Oricare dintre niveluri, dacă programul merge fără greșeli și l-ai scris tu, este un succes.
+Oricare dintre niveluri, dacă programul merge fără greșeli și ai scris tu programul, este un succes.
 
 ### Exercițiul B — Ghici cuvântul (Spânzurătoarea) *(Provocare, opțional)*
 Programul alege un cuvânt dintr-un `vector<string>` (sau dintr-un fișier). Jucătorul ghicește litere; cele corecte apar în cuvânt (`_ a _ _ a`), iar cele greșite se numără. Pierde la 6 greșeli.
@@ -1608,7 +1608,7 @@ Doi jucători aruncă fiecare câte două zaruri, de 5 ori. Se adună punctele; 
 - [ ] La „X și 0”, lasă utilizatorul să aleagă dacă vrea X sau O  
 - [ ] Salvează scorul general din „X și 0” într-un fișier, ca să se păstreze între rulări  
 - [ ] La „Ghici numărul”, adaugă un indiciu după a treia încercare (par / impar, sau „ești la mai puțin de 10 distanță”)  
-- [ ] Scrie un calculator care joacă perfect „X și 0” (nu pierde niciodată) și verifică-l jucând împotriva lui  
+- [ ] Scrie un calculator care joacă perfect „X și 0” (nu pierde niciodată) și verifică programul jucând împotriva lui  
 - [ ] Fă „Joc 4 în linie” cu o tablă de 6×7  
 
 ---
@@ -1625,7 +1625,7 @@ Doi jucători aruncă fiecare câte două zaruri, de 5 ori. Se adună punctele; 
 | Calculatorul nu blochează niciodată | Ordinea regulilor sau parametrii `eu`/`adversar` inversați | Câștig → blocare → centru → colț |
 | Programul se blochează după o literă tastată | Citire fără protecție | `citesteInt`, ca în lecția 5 |
 | Clasamentul se pierde la fiecare rulare | `salveaza` nu este apelată sau `incarca` lipsește la pornire | `incarca` la început, `salveaza` după fiecare modificare |
-| Scorul general se resetează după fiecare partidă | `Scor` e declarat în `joc` | Declară-l în `main` și trimite-l prin `&` |
+| Scorul general se resetează după fiecare partidă | `Scor` e declarat în `joc` | Declară `Scor` în `main` și trimite structura prin `&` |
 
 ---
 
@@ -1653,9 +1653,9 @@ Doi jucători aruncă fiecare câte două zaruri, de 5 ori. Se adună punctele; 
 ---
 
 ## Temă
-1. Termină jocul ales (A) și jucându-l, găsește cel puțin o greșeală; corecteaz-o și notează într-un comentariu ce ai descoperit.  
-2. Scrie și celălalt joc din lecție, dacă nu l-ai terminat azi.  
-3. Alege unul dintre exercițiile B–E și realizează-l.  
+1. Termină jocul ales (A) și jucând jocul, găsește cel puțin o greșeală; corectează greșeala și notează într-un comentariu ce ai descoperit.  
+2. Scrie și celălalt joc din lecție, dacă nu ai terminat azi.  
+3. Alege unul dintre exercițiile B–E și realizează exercițiul ales.  
 4. Gândește-te la proiectul de la lecția următoare, **Magazin / inventar**: ce produse va avea, ce informații despre fiecare, ce acțiuni vrei în meniu. Scrie o listă de 5–8 acțiuni.  
 5. **Bonus:** adaugă un sistem de „realizări” (de exemplu „ai câștigat 3 partide la rând”) salvat în fișier.  
 6. Salvează tot ca `Tema_M4L6_Prenume_Nume.cpp`.

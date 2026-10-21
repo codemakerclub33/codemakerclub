@@ -8,7 +8,7 @@
 ---
 
 ## Obiectiv
-La finalul orei detectezi și repari o citire eșuată (`cin.fail`, `cin.clear`, `cin.ignore`), scrii funcții de citire sigură pentru numere și texte, construiești un meniu cu `switch` și cu `enum`, ții starea aplicației într-o structură, întrebi utilizatorul „Ești sigur?” înainte de acțiuni periculoase și salvezi datele la ieșire doar dacă s-au schimbat.  
+La finalul orei detectezi și repari o citire eșuată (`cin.fail`, `cin.clear`, `cin.ignore`), scrii funcții de citire sigură pentru numere și texte, construiești un meniu cu `switch` și cu `enum`, ții starea aplicației într-o structură, întrebi utilizatorul „Ești sigur?” înainte de acțiuni periculoase și salvezi datele la ieșire doar dacă au fost schimbate.  
 **Minim:** o funcție `citesteInt` care nu se strică la litere și un meniu care o folosește.  
 **Ținta orei (Complet):** + structura de stare, `enum` pentru opțiuni, confirmarea la ieșire și proiectul „Lista de sarcini”.
 
@@ -302,7 +302,7 @@ Alege: 0
 La revedere!
 ```
 
-Acum `citesteInt` limitează opțiunea la `0..4`, deci `default` nu se mai ajunge niciodată (am încercat `9`, iar funcția a refuzat-o înainte). Îl păstrăm totuși: este o plasă de siguranță dacă mai târziu adaugi opțiuni în meniu și uiți un `case`. Observă și `break;` din `if (optiune == 0)`: el iese imediat din bucla `do-while`, fără să mai ceară numerele.
+Acum `citesteInt` limitează opțiunea la `0..4`, deci `default` nu se mai ajunge niciodată (am încercat `9`, iar funcția a refuzat valoarea înainte). Îl păstrăm totuși: este o plasă de siguranță dacă mai târziu adaugi opțiuni în meniu și uiți un `case`. Observă și `break;` din `if (optiune == 0)`: el iese imediat din bucla `do-while`, fără să mai ceară numerele.
 
 ### Exemplul 5 — Meniul într-o funcție, starea în `main` **[Esențial]**
 
@@ -615,7 +615,7 @@ Acum `case ADAUGA:` se citește singur. Dacă într-un `switch` pe un `enum` ui�
 
 ## 3. Comenzi text și submeniuri
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
 ### Exemplul 8 — Comenzi text în loc de numere *(Provocare, opțional)*
 
@@ -954,7 +954,7 @@ int main() {
     scrieLog("Aplicatia a pornit");
     scrieLog("Utilizatorul a adaugat un produs");
     scrieLog("Utilizatorul a sters un produs");
-    scrieLog("Aplicatia s-a oprit");
+    scrieLog("Aplicatia a fost oprita");
 
     cout << "Continutul jurnalului:" << endl;
     ifstream fin(LOG);
@@ -974,10 +974,10 @@ Continutul jurnalului:
 1. Aplicatia a pornit
 2. Utilizatorul a adaugat un produs
 3. Utilizatorul a sters un produs
-4. Aplicatia s-a oprit
+4. Aplicatia a fost oprita
 ```
 
-`remove` (din `<cstdio>`) șterge un fișier; l-am folosit doar ca exemplul să pornească mereu de la zero. Observă că `scrieLog` deschide și închide fișierul la fiecare apel (închiderea se face singură la sfârșitul funcției). Pentru un jurnal e cel mai sigur: nimic nu se pierde dacă programul se oprește brusc.
+`remove` (din `<cstdio>`) șterge un fișier; am folosit funcția doar ca exemplul să pornească mereu de la zero. Observă că `scrieLog` deschide și închide fișierul la fiecare apel (închiderea se face singură la sfârșitul funcției). Pentru un jurnal e cel mai sigur: nimic nu se pierde dacă programul se oprește brusc.
 
 ### Exemplul 12 — Setări salvate și încărcate *(Provocare, opțional)*
 
@@ -1054,7 +1054,7 @@ Un `bool` se scrie în fișier ca `1` (adevărat) sau `0` (fals) și se citește
 
 ### Exemplul 13 — Steagul „modificat”: salvăm doar dacă e nevoie
 
-Dacă utilizatorul n-a schimbat nimic, nu are sens să-l întrebi dacă vrea să salveze. Păstrăm în stare un steag `modificat`, care devine `true` la orice schimbare și `false` după salvare:
+Dacă utilizatorul nu a schimbat nimic, nu are sens să întrebi dacă vrea să salveze. Păstrăm în stare un steag `modificat`, care devine `true` la orice schimbare și `false` după salvare:
 
 ```cpp
 #include <iostream>
@@ -1184,7 +1184,7 @@ Gata.
 
 **Încearcă tu (8 min)**  
 - [ ] Ții starea programului într-un `struct`  
-- [ ] Salvezi în fișier doar dacă s-a modificat ceva (steagul „modificat”)  
+- [ ] Salvezi în fișier doar dacă a fost modificat ceva (steagul „modificat”)  
 
 ---
 
@@ -1711,7 +1711,7 @@ Salvat.
 La revedere!
 ```
 
-Programul are aproximativ 220 de linii, dar este împărțit în secțiuni clare: structuri, citire sigură, fișiere, acțiuni, meniu și `main`. Dacă dai o comandă greșită sau scrii litere în loc de numere, nu se întâmplă nimic rău. Rulează-l de două ori: la a doua rulare, sarcinile salvate sunt încărcate automat.
+Programul are aproximativ 220 de linii, dar este împărțit în secțiuni clare: structuri, citire sigură, fișiere, acțiuni, meniu și `main`. Dacă dai o comandă greșită sau scrii litere în loc de numere, nu se întâmplă nimic rău. Rulează programul de două ori: la a doua rulare, sarcinile salvate sunt încărcate automat.
 
 ---
 
@@ -1721,7 +1721,7 @@ Programul are aproximativ 220 de linii, dar este împărțit în secțiuni clare
 Scrie programul din Exemplul 16. Apoi adaugă o opțiune „Arată doar sarcinile nefăcute” și una „Redenumește o sarcină” (citește noul text cu `citesteText`).
 
 ### Exercițiul B — Scheletul tău
-Copiază scheletul din Exemplul 15 într-un fișier nou, `schelet.cpp`. Compilează-l și rulează-l. Salvează-l: îl vei folosi în lecțiile 6–8.
+Copiază scheletul din Exemplul 15 într-un fișier nou, `schelet.cpp`. Compilează și rulează programul. Salvează fișierul: îl vei folosi în lecțiile 6–8.
 
 ### Exercițiul C — Agenda de telefon cu citire sigură
 Ia agenda din lecția 4 (exercițiul B) și înlocuiește toate citirile cu `citesteInt`, `citesteText` și `confirma`. Adaugă confirmarea la ștergere.
@@ -1793,8 +1793,8 @@ Adaugă la orice program al tău o structură `Setari` salvată în fișier, cu 
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Termină exercițiile A–C.  
 3. Scrie funcția `string citesteNumeValid(const string &mesaj)` care repetă întrebarea până când utilizatorul scrie un nume cu cel puțin 3 litere, formate doar din litere (folosește `isalpha`).  
-4. Alege proiectul pe care vrei să-l faci în lecțiile următoare (joc, magazin sau quiz) și scrie, pe hârtie sau într-un comentariu, ce **date** va avea (starea) și ce **acțiuni** va avea (meniul).  
-5. **Bonus:** adaugă la „Lista de sarcini” sarcini cu dată-limită (`struct Data` din lecția 3) și afișează-le sortate după aceasta.  
+4. Alege proiectul pe care vrei să faci în lecțiile următoare (joc, magazin sau quiz) și scrie, pe hârtie sau într-un comentariu, ce **date** va avea (starea) și ce **acțiuni** va avea (meniul).  
+5. **Bonus:** adaugă la „Lista de sarcini” sarcini cu dată-limită (`struct Data` din lecția 3) și afișează sarcinile sortate după aceasta.  
 6. Salvează tot ca `Tema_M4L5_Prenume_Nume.cpp`.
 
 ---

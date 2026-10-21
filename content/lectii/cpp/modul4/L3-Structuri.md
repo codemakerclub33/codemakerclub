@@ -445,7 +445,7 @@ Erou (viata 100) este la (2, 3)
 Erou (viata 100) este la (3, 1)
 ```
 
-Ca să ajungi la coordonata `x` a poziției jucătorului scrii `j.poz.x`: „`x` din poziția lui `j`”. Pentru a-l inițializa ai folosit acolade în acolade: `{"Erou", 100, {2, 3}}`.
+Ca să ajungi la coordonata `x` a poziției jucătorului scrii `j.poz.x`: „`x` din poziția lui `j`”. Pentru a inițializa jucătorul ai folosit acolade în acolade: `{"Erou", 100, {2, 3}}`.
 
 ### Exemplul 9 — Un tablou de structuri **[Esențial]**
 
@@ -745,7 +745,7 @@ Citit: Ana, 12 ani, nota 9.5
 Citit: Bogdan, 13 ani, nota 7.25
 ```
 
-Observă că un fișier (`ofstream &fout`) poate fi trimis și el într-o funcție, tot prin referință. Funcția `scrie` poate scrie deopotrivă într-un fișier sau, dacă i-ai trimite `cout`, pe ecran, pentru că ambele sunt fluxuri.
+Observă că un fișier (`ofstream &fout`) poate fi trimis și el într-o funcție, tot prin referință. Funcția `scrie` poate scrie deopotrivă într-un fișier sau, dacă ai trimite `cout`, pe ecran, pentru că ambele sunt fluxuri.
 
 **Încearcă tu (10 min)**  
 - [ ] Scrii un elev într-un fișier și îl citești înapoi  
@@ -918,13 +918,13 @@ Clasa a fost salvata.
 Scrie programele din Exemplele 15 și 16. Apoi adaugă o funcție `numarPromovati` (note ≥ 5) și afișează rezultatul.
 
 ### Exercițiul B — Cartea
-Definește `struct Carte { string titlu; string autor; int an; int pagini; };`. Citește 3 cărți de la tastatură (titlul și autorul scrise fără spații) și afișează-le pe cea mai veche și pe cea cu cele mai multe pagini.
+Definește `struct Carte { string titlu; string autor; int an; int pagini; };`. Citește 3 cărți de la tastatură (titlul și autorul scrise fără spații) și afișează cea mai veche carte și cartea cu cele mai multe pagini.
 
 ### Exercițiul C — Fracția
 Definește `struct Fractie { int numarator; int numitor; };`. Scrie funcțiile `afiseaza`, `simplifica` (folosește `cmmdc`) și `aduna` (care întoarce o `Fractie`).
 
 ### Exercițiul D — Dreptunghiul
-Definește `struct Dreptunghi { double latime; double inaltime; };` cu funcții membre `arie()` și `perimetru()`. Citește 3 dreptunghiuri și afișează-l pe cel cu aria cea mai mare.
+Definește `struct Dreptunghi { double latime; double inaltime; };` cu funcții membre `arie()` și `perimetru()`. Citește 3 dreptunghiuri și afișează dreptunghiul cu aria cea mai mare.
 
 ### Exercițiul E — Personajul
 Definește `struct Personaj { string nume; int viata = 100; int atac = 10; Punct poz; };` (definește înainte și `Punct`, ca în Exemplul 8). Scrie funcțiile `ranit(Personaj &p, int cat)` (viața nu scade sub 0) și `esteViu(const Personaj &p)`. Simulează trei lovituri.
@@ -987,9 +987,9 @@ Definește `struct Personaj { string nume; int viata = 100; int atac = 10; Punct
 
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
-2. Definește `struct Telefon { string marca; double pret; int memorie; };`, citește 3 telefoane și afișează-l pe cel mai ieftin și pe cel cu memoria cea mai mare.  
-3. Scrie `struct Complex { double re; double im; };` cu funcțiile `aduna` și `inmulteste`, și testează-le.  
-4. Creează un fișier cu cel puțin 5 produse (nume, preț, stoc), citește-le într-un tablou de structuri și afișează valoarea totală a stocului.  
+2. Definește `struct Telefon { string marca; double pret; int memorie; };`, citește 3 telefoane și afișează telefonul cel mai ieftin și telefonul cu memoria cea mai mare.  
+3. Scrie `struct Complex { double re; double im; };` cu funcțiile `aduna` și `inmulteste`, și testează funcțiile.  
+4. Creează un fișier cu cel puțin 5 produse (nume, preț, stoc), citește produsele într-un tablou de structuri și afișează valoarea totală a stocului.  
 5. **Bonus:** adaugă la „Fișa elevului” un meniu (afișare, bonus, salvare) folosind ce știi din lecția 2.  
 6. Salvează tot ca `Tema_M4L3_Prenume_Nume.cpp`.
 

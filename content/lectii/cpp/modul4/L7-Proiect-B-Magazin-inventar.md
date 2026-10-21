@@ -412,7 +412,7 @@ int main() {
 "PIX ALBASTRU": Exista deja un produs cu acest nume.
 ```
 
-Funcția de validare este separată de cea care citește datele. Poți s-o testezi cu orice valori, fără să tastezi nimic, exact ca la testele din lecția anterioară.
+Funcția de validare este separată de cea care citește datele. Poți testa funcția cu orice valori, fără să tastezi nimic, exact ca la testele din lecția anterioară.
 
 ### Exemplul 6 — Modificarea prețului și a stocului **[Esențial]**
 
@@ -907,7 +907,7 @@ Dupa pret (crescator): Radiera(1.5/40) Pix(2/50) Caiet(4.5/20) Rucsac(120/5)
 Dupa stoc (descrescator): Pix(2/50) Radiera(1.5/40) Caiet(4.5/20) Rucsac(120/5)
 ```
 
-Fiecare produs păstrează același `id` oricum l-ai sorta. Dacă ai fi folosit poziția din vector în loc de `id`, sortarea ar fi încurcat totul.
+Fiecare produs păstrează același `id` oricum ai sorta. Dacă ai fi folosit poziția din vector în loc de `id`, sortarea ar fi încurcat totul.
 
 ### Exemplul 12 — Ștergere cu confirmare
 
@@ -992,7 +992,7 @@ Produsul 8 nu exista.
 Au ramas 2 produse.
 ```
 
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește-l doar ca să vezi ce se poate face, apoi treci mai departe.
+> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
 
 ### Exemplul 13 — Istoricul vânzărilor *(Provocare, opțional)*
 
@@ -1117,7 +1117,7 @@ Nu pot copia un fisier inexistent.
 
 ### Exemplul 15 — „Magazinul meu” **[Esențial]**
 
-Toate piesele într-o singură aplicație, cu meniu. Numele produselor pot avea spații, iar datele se încarcă la pornire și se salvează la ieșire, dacă s-a schimbat ceva.
+Toate piesele într-o singură aplicație, cu meniu. Numele produselor pot avea spații, iar datele se încarcă la pornire și se salvează la ieșire, dacă a fost schimbat ceva.
 
 ```cpp
 /*
@@ -1388,7 +1388,7 @@ void vinde(Stare &s) {
     }
 
     if (cos.empty()) {
-        cout << "Nu s-a vandut nimic." << endl;
+        cout << "Nimic nu a fost vandut." << endl;
         return;
     }
 
@@ -1795,7 +1795,7 @@ La revedere!
 
 Ce urmărești în transcriere:
 - a patra adăugare (`pix ALBASTRU`) este refuzată, pentru că există deja „Pix albastru”, deși literele mari și mici diferă;
-- căutarea după `pix` găsește produsul chiar dacă l-ai scris cu litere mici;
+- căutarea după `pix` găsește produsul chiar dacă ai scris numele cu litere mici;
 - la modificare, produsul `3` primește 10 bucăți în plus;
 - la vânzare, cererea de 60 de pixuri este refuzată (stocul e 50), apoi se vând 4; `ID 9` nu există, iar `0` încheie vânzarea și tipărește bonul;
 - ștergerea produsului `2` cere confirmare, iar la ieșire aplicația observă că sunt modificări nesalvate și te întreabă dacă le salvezi.
@@ -1809,7 +1809,7 @@ Programul are aproximativ 450 de linii. Nu te speria de lungime: fiecare funcți
 ### Exercițiul A — „Magazinul meu” (obligatoriu)
 Scrie aplicația din Exemplul 15, pe bucăți: întâi structurile și fișierele, apoi afișarea, apoi adăugarea, apoi restul. După fiecare bucată compilează și testează. Apoi adaugă o opțiune „Șterge toate produsele epuizate” (cu confirmare).
 
-**Pe niveluri (alege-l pe al tău):**
+**Pe niveluri (alege nivelul tău):**
 - **De bază:** produs, afișare ca tabel, adăugare, căutare și salvare în fișier (Exemplele 1–4), plus o vânzare simplă (Exemplul 7).
 - **Complet:** aplicația din Exemplul 15, cu meniu.
 - **Provocare:** Exercițiile B–E (istoric, reducere, alt inventar, categorii).
@@ -1841,7 +1841,7 @@ Adaugă produselor o categorie (de exemplu „papetărie”, „ghiozdane”). A
 ## Bonus / Provocare (dacă ai terminat)
 - [ ] Adaugă un cod de bare (un număr de 6 cifre) și caută produsele și după el  
 - [ ] Adaugă o opțiune de „Comandă furnizor”: pentru toate produsele sub pragul de stoc, calculează câte bucăți trebuie comandate ca să ajungi la 20  
-- [ ] Salvează inventarul și într-un fișier de tip tabel, `inventar.csv` (câmpurile separate prin `;`), ca să-l poți deschide în Excel  
+- [ ] Salvează inventarul și într-un fișier de tip tabel, `inventar.csv` (câmpurile separate prin `;`), ca să poți deschide fișierul în Excel  
 - [ ] Adaugă clienți (nume, puncte de fidelitate) și un bon cu reducere în funcție de puncte  
 - [ ] Creează un meniu pentru „Angajat” și „Administrator”: doar administratorul poate șterge produse  
 
