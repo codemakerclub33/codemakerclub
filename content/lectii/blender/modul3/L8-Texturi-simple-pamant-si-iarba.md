@@ -158,7 +158,7 @@ Treci pe **Material Preview** sau **Rendered**. În **Solid** nu se văd.
 `Editorul de noduri` → `Iarba: Noise + Color Ramp` → `Pământul` → `Relieful (Bump)` → `Podeaua cu pătrățele` → `Complet — scena finală` → `Dacă nu vezi texturile`
 
 ## Mai departe *(opțional)*
-Privește iarba sau pământul de aproape. Câte culori vezi? Cum le-ai pune în Color Ramp?
+Privește iarba sau pământul de aproape. Câte culori vezi? Cum ai pune culorile în Color Ramp?
 
 ## Quiz scurt
 - Ce face Color Ramp?  

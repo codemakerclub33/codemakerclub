@@ -16,7 +16,7 @@ Al patrulea pas. Mai multe găuri dintr-o dată. Ar fi obositor să pui zece mod
 
 Al cincilea pas, pentru varianta completă. Materialul brânzei. Brânza este galben pal, cu Roughness zero virgulă cinci. Poți face un șoricel din sfere și conuri, lângă ea.
 
-Al șaselea pas. Casa cu ușă și fereastră. Un cub mare pentru perete, cu dimensiunile X patru, Y zero virgulă trei și Z trei. Un cub pentru ușă, cu dimensiunile zero virgulă nouă, zero virgulă șase și doi, așezat în perete, la înălțimea unu. Un cub pentru fereastră, cu dimensiunile unu, zero virgulă șase și unu, la X egal unu virgulă doi și înălțimea unu virgulă șase. Le pui într-o colecție numită Taieturi, cu M și New Collection. Pe perete, Boolean, Difference, colecția Taieturi. Ascunzi tăietorii, cu Display As Wire sau cu H. Peretele are acum ușă și fereastră.
+Al șaselea pas. Casa cu ușă și fereastră. Un cub mare pentru perete, cu dimensiunile X patru, Y zero virgulă trei și Z trei, la înălțimea unu virgulă cinci, ca să stea pe podea. Un cub pentru ușă, cu dimensiunile zero virgulă nouă, zero virgulă șase și doi, așezat în perete, la înălțimea zero virgulă nouă, puțin sub podea, ca tăietura să iasă curată. Un cub pentru fereastră, cu dimensiunile unu, zero virgulă șase și unu, la X egal unu virgulă doi și înălțimea unu virgulă șase. Le pui într-o colecție numită Taieturi, cu M și New Collection. Pe perete, Boolean, Difference, colecția Taieturi. Ascunzi tăietorii, cu Display As Wire sau cu H. Peretele are acum ușă și fereastră.
 
 Al șaptelea pas. Aplicăm modificatorul. Când ești mulțumit, apeși Apply, adică Control plus A pe modificator, ca peretele să devină un obiect normal. Atenție: nu mai poți muta găurile după aceea.
 

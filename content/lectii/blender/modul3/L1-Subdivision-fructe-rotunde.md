@@ -79,13 +79,13 @@ Apasă **Ctrl + 2** pe cubul de start. Apoi **Tab** și mută un colț: forma se
 ### 4) Pară și prună
 **Para:**  
 1. Cub + **Ctrl + 2**.  
-2. În Edit Mode, selectează **fețele de sus** și **S 0.5** (partea de sus mai îngustă).  
-3. **Proportional Editing (O)** + **G Z 0.6**: gâtul se lungește.  
-4. Galben-verzuie.
+2. **Tab**. **Ctrl + R** pe o muchie verticală, un click, apoi click dreapta (inelul rămâne la mijloc).  
+3. Modul **Face** (**3**), selectează fața de **sus**. **S 0.5 Enter**, apoi **G Z 0.5 Enter**: se formează gâtul.  
+4. **Tab**. Galben-verzuie.
 
 **Pruna:**  
 1. Cub + **Ctrl + 2**, **S Y 0.9**.  
-2. O linie care o împarte în două: o **adâncitură pe lung** (Alt + click pe un inel lateral, **S 0.9**).  
+2. **Tab**, **Ctrl + R** pe o muchie orizontală, click, click dreapta (apare un inel pe lungime). **Alt + click** pe acel inel, **S 0.9**: se formează adâncitura pe lung.  
 3. Mov închis, **Roughness 0.3**.
 
 **Gata când:**  
@@ -118,7 +118,7 @@ Uneori vrei ca o margine să rămână ascuțită, ca la o cutie cu colțuri.
 
 ## Greșeli frecvente
 1. **Fructul e prea mic / dispare** — subdivision micșorează forma; scalează înapoi.  
-2. **Forma are cute urâte** — ai prea multe vârfuri apropiate; șterge-le.  
+2. **Forma are cute urâte** — ai prea multe vârfuri apropiate; șterge vârfurile în plus.  
 3. **Nu vezi diferența** — modificatorul e oprit (ochiul din listă).  
 4. **Randarea e lentă** — nivelul Render e prea mare (4–5).  
 5. **Colțuri nedorite** — adaugă un loop cut aproape de margine, ca să o ții „întărită”.

@@ -8,7 +8,7 @@ De ce contează. Aceeași cană poate arăta banală sau spectaculoasă, în fun
 
 Ce ai nevoie. Un obiect din lecțiile anterioare: cană, cufăr sau rachetă.
 
-Primul pas. Fundalul curbat, numit ciclorama. Este un fundal fără colțuri, ca să nu vezi unde se termină podeaua și începe peretele. Un plan, cu S, zece. Apeși Tab, treci în vederea din dreapta, cu trei, în modul Edge, cu doi. Selectezi muchia din spate. Apeși E, Z, opt, Enter, ca să extrudezi peretele. Selectezi muchia colțului, dintre podea și perete, și apeși Control plus B. Cu rotița pui opt segmente, iar din mouse alegi o rază mare, în jur de trei. Colțul devine o curbă lină. Apeși Tab și Shade Smooth.
+Primul pas. Fundalul curbat, numit ciclorama. Este un fundal fără colțuri, ca să nu vezi unde se termină podeaua și începe peretele. Un plan, cu S, zece. Apeși Tab, treci în vederea din dreapta, cu Numpad trei, în modul Edge, cu doi. Selectezi muchia din spate. Apeși E, Z, opt, Enter, ca să extrudezi peretele. Selectezi muchia colțului, dintre podea și perete, și apeși Control plus B. Cu rotița pui opt segmente, iar din mouse alegi o rază mare, în jur de trei. Colțul devine o curbă lină. Apeși Tab și Shade Smooth.
 
 Al doilea pas. Obiectul de fotografiat. Pui cana, cufărul sau racheta în centrul curbei, deasupra podelei.
 

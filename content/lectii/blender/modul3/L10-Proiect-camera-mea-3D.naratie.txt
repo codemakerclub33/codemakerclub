@@ -8,7 +8,7 @@ De ce contează. Modelele de interior se folosesc în arhitectură, în jocuri �
 
 Primul pas. Planul. Desenezi pe hârtie camera văzută de sus: unde sunt patul, biroul, fereastra, ușa și raftul. Dimensiuni sugerate. Camera: cinci pe patru pe doi virgulă șapte. Patul: unu pe doi pe zero virgulă cinci. Biroul: unu virgulă doi pe zero virgulă șase pe zero virgulă șaptezeci și cinci. Raftul: unu pe zero virgulă douăzeci și cinci pe unu virgulă cinci.
 
-Al doilea pas. Pereții și podeaua. Un plan pentru podea, cu dimensiunile X cinci și Y patru. Doi sau trei cuburi subțiri, cu grosimea Y zero virgulă unu, pentru pereți, la înălțimea unu virgulă treizeci și cinci. Fereastra: un cub tăietor și Boolean, Difference, ca în lecția cinci.
+Al doilea pas. Pereții și podeaua. Un plan pentru podea, cu dimensiunile X cinci și Y patru. Peretele din spate: un cub cu dimensiunile X cinci, Y zero virgulă unu și Z doi virgulă șapte, la Y egal doi și înălțimea unu virgulă treizeci și cinci. Peretele din stânga: un cub cu dimensiunile X zero virgulă unu, Y patru și Z doi virgulă șapte, la X egal minus doi virgulă cinci și înălțimea unu virgulă treizeci și cinci. Fereastra: un cub tăietor și Boolean, Difference, ca în lecția cinci.
 
 Al treilea pas. Patul, cu modificatori. Cadrul este un cub cu Bevel. Salteaua este un cub mai mic, cu Bevel și Subdivision, nivelul doi. Perna este un cub cu Control plus doi, pentru Subdivision, puțin turtit, cu Shade Smooth. Pătura este un plan cu Subdivision, ușor ondulat cu Proportional Editing.
 
@@ -24,6 +24,6 @@ Al optulea pas. Camera și randarea. Camera într-un colț, cu o lentilă între
 
 Al nouălea pas. Verificarea finală a modulului trei. Folosești Subdivision, Solidify, Array și Bevel? Tai cu Boolean? Faci țevi și cabluri din curbe? Creezi materiale cu Principled BSDF? Faci o textură simplă cu noduri? Luminezi o scenă cu trei lumini? Bifează pentru fiecare dacă încă nu poți, dacă poți cu ajutor sau dacă poți singur.
 
-Greșeli frecvente. Mobila plutește: verifică din lateral, cu trei, și coboar-o la înălțimea zero. Dimensiuni nerealiste: compară cu planul de sus, patul are doi metri, nu cinci. Camera este prea întunecată: adaugă lumină prin fereastră. Prea multe detalii și prea puțin timp: termină întâi piesele mari. Modificatoare uitate: verifică ochiul din listă, la Render.
+Greșeli frecvente. Mobila plutește: verifică din lateral, cu Numpad trei, și coboară mobila la înălțimea zero. Dimensiuni nerealiste: compară cu planul de sus, patul are doi metri, nu cinci. Camera este prea întunecată: adaugă lumină prin fereastră. Prea multe detalii și prea puțin timp: termină întâi piesele mari. Modificatoare uitate: verifică ochiul din listă, la Render.
 
 Felicitări pentru finalul modulului trei.

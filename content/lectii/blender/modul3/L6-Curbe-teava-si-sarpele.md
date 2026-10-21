@@ -72,7 +72,7 @@ Pune **Depth = 0.15**, **Resolution = 6**, bifează **Fill Caps**. Țeava e gata
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Țeava cu coturi
-1. Curba Bezier: ține-o în **Edit Mode** și adaugă 4–5 puncte cu **E**.  
+1. Curba Bezier: rămâi în **Edit Mode** și adaugă 4–5 puncte cu **E**.  
 2. Pentru **coturi bruște**, selectează un punct și apasă **V → Vector**: mânerele devin „drepte” și curba face un colț.  
 3. Material **metalic** (Metallic 1, Roughness 0.4).  
 4. Adaugă la capete **inele** (Torus aplatizate) ca flanșe.
@@ -84,7 +84,7 @@ Pune **Depth = 0.15**, **Resolution = 6**, bifează **Fill Caps**. Țeava e gata
 ### 4) Șarpele
 1. O nouă curbă Bezier, cu **6–8 puncte** care formează un „S” (poate și pe podea).  
 2. **Geometry → Bevel → Depth 0.25**, **Resolution 8**, **Fill Caps**.  
-3. **Taper** (subțiere): adaugă o a doua curbă, de formă „triunghi” (un Bezier plat, cu un capăt la 0 și altul la 1) și, în **Geometry → Taper Object**, alege-o. Corpul șarpelui se subțiază spre coadă.  
+3. **Taper** (subțiere): adaugă o a doua curbă (**Add → Curve → Bezier**) și trage punctele acelei curbe astfel încât să fie lată la un capăt și ascuțită la celălalt. În **Geometry → Taper Object**, alege curba nouă. Corpul șarpelui se subțiază spre coadă.  
    *(Dacă ți se pare greu, sari peste Taper și scalează mai târziu puncte din curbă cu **Alt + S**, care schimbă grosimea locală.)*
 4. **Capul:** **UV Sphere**, scalată **S X 1.2**, **S Y 1.6**, **S Z 0.9**, la un capăt.  
 5. **Ochii:** două sfere mici, albe cu pupile negre.  

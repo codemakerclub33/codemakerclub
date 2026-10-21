@@ -82,7 +82,7 @@ Materialul standard din Blender se numește **Principled BSDF**. Setările lui p
 4. Reglezi valorile din tabel.  
 5. Verifici în **Rendered**.
 
-> **Sfat:** denumirile bune te ajută să-ți găsești materialele mai târziu: **Browse Material** (lângă nume) îți arată lista lor.
+> **Sfat:** denumirile bune te ajută să găsești materialele mai târziu: **Browse Material** (lângă nume) îți arată lista lor.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Cum creezi fiecare”  
@@ -90,7 +90,7 @@ Materialul standard din Blender se numește **Principled BSDF**. Setările lui p
 
 ### 5) Complet — galeria
 - Fiecare sferă are un **mic suport** (cilindru) sub ea.  
-- **Camera** priveste de la nivelul podelei, ușor în sus.  
+- **Camera** privește de la nivelul podelei, ușor în sus.  
 - **Randare** 1920 × 1080: salvează `Prenume_Nume_B3_L07.png`.
 
 **Gata când:**  
@@ -110,7 +110,7 @@ Materialele sunt salvate în fișier. În alt proiect: **File → Append → fi�
 1. **Sticla arată ca plastic** — lipsește Raytracing sau Transmission.  
 2. **Metalul e negru** — lipsește ceva de reflectat; adaugă podea și lumini.  
 3. **Neonul nu luminează** — Strength prea mic, sau randare în Solid.  
-4. **Materialele se schimbă pe alte obiecte** — folosesc același material; fă-l unic (butonul cu cifra).  
+4. **Materialele se schimbă pe alte obiecte** — folosesc același material; fă materialul unic (butonul cu cifra).  
 5. **Culori șterse** — Roughness prea mare.
 
 ---

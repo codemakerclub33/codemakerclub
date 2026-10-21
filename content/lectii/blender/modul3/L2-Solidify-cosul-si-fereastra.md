@@ -37,7 +37,7 @@ Multe obiecte sunt „cochilii”: cănile, cutiile, ferestrele, hainele. Solidi
 1. Șterge cubul. **Shift + A → Mesh → Plane.**  
 2. **Modifiers → Add Modifier → Generate → Solidify.**  
 3. **Thickness = 0.2**: planul devine o placă.  
-4. Schimbă **Offset** (−1, 0, 1): grosimea crește în sus, în ambele sensuri sau în jos.
+4. Schimbă **Offset** (−1, 0, 1): **−1** = grosimea crește în jos (spre interior), **0** = la mijloc, **1** = în sus (spre exterior).
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Solidify pe un plan”  
@@ -63,7 +63,7 @@ Pe o **copie** a coșului (**Shift + D**, click dreapta):
 1. Șterge **Solidify** de pe copie.  
 2. **Add Modifier → Generate → Wireframe**.  
 3. **Thickness 0.03**: apare o plasă din bare.  
-4. Pune copia în același loc cu originalul și fă-o puțin mai mare (**S 1.01**). Ascunde-o pe cea veche pentru comparație.
+4. Pune copia în același loc cu originalul și mărește copia puțin (**S 1.01**). Ascunde coșul vechi pentru comparație.
 
 Mai poți combina: **un coș cu Solidify** pentru corp și **unul cu Wireframe** pentru decor.
 
@@ -72,11 +72,11 @@ Mai poți combina: **un coș cu Solidify** pentru corp și **unul cu Wireframe**
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Fereastra
-1. **Plane**, rotit **R X 90** (în picioare), **Dimensions X 2, Z 3**.  
+1. **Plane**: mai întâi **Dimensions X 2, Y 3**, apoi rotește planul cu **R X 90 Enter** (în picioare). Acum are 2 lățime și 3 înălțime.  
 2. **Tab**. **I 0.2 Enter** (rama). Apoi **X → Faces** pe fața din mijloc (rămâne doar rama).  
 3. **Tab**. **Solidify**: **Thickness 0.15**.  
-4. Geamul: alt **Plane**, la același loc, **Dimensions 1.6 × 2.6**, un material **transparent** (L7 din acest modul).  
-5. **Bară de mijloc**: **Cube** subțire (X 0.06, Y 0.1, Z 2.6). Duplică-l pe orizontală.
+4. Geamul: alt **Plane**, la același loc, **Dimensions X 1.6, Y 2.6** (înainte de **R X 90**), un material **transparent** (L7 din acest modul).  
+5. **Bară de mijloc**: **Cube** subțire (X 0.06, Y 0.1, Z 2.6). Duplică cubul cu **Shift + D, Enter**, rotește copia cu **R Y 90 Enter** și scurtează copia: **Dimensions Z 1.6** (bară orizontală).
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Fereastra”  

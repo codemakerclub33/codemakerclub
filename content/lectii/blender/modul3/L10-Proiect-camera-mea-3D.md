@@ -49,7 +49,8 @@ Desenează pe hârtie camera văzută de sus: unde sunt patul, biroul, fereastra
 
 ### 2) Pereții și podeaua
 - **Plane** pentru podea (Dimensions X 5, Y 4).  
-- 2 sau 3 **Cube**-uri subțiri (Y 0.1) pentru pereți, **Z = 1.35**.  
+- Perete din spate: **Cube**, **Dimensions X 5, Y 0.1, Z 2.7**, la **Y = 2**, **Z = 1.35**.  
+- Perete din stânga: **Cube**, **Dimensions X 0.1, Y 4, Z 2.7**, la **X = −2.5**, **Z = 1.35**.  
 - **Fereastra:** un cub tăietor + **Boolean → Difference** (L5).
 
 **Gata când:**  
@@ -134,7 +135,7 @@ Desenează pe hârtie camera văzută de sus: unde sunt patul, biroul, fereastra
 ---
 
 ## Greșeli frecvente
-1. **Mobila plutește** — verifică din lateral (**3**) și coboară-o la **Z = 0**.  
+1. **Mobila plutește** — verifică din lateral (**Numpad 3**) și coboară mobila la **Z = 0**.  
 2. **Dimensiuni nerealiste** — compară cu planul de sus (patul de 2 m, nu 5).  
 3. **Camera e prea întunecată** — adaugă lumină prin fereastră.  
 4. **Prea multe detalii, prea puțin timp** — termină întâi piesele mari.  
@@ -180,7 +181,7 @@ Desenează pe hârtie camera văzută de sus: unde sunt patul, biroul, fereastra
 `Planul` → `Pereții și podeaua` → `Patul (modificatori)` → `Biroul și scaunul` → `Raftul (Array)` → `Materiale` → `Lumini` → `Camera și randarea` → `Verificare finală Modul 3`
 
 ## Mai departe *(opțional)*
-Compară camera ta 3D cu cea reală. Ce ai schimba în camera reală după ce ai văzut-o în 3D?
+Compară camera ta 3D cu cea reală. Ce ai schimba în camera reală după ce ai văzut modelul în 3D?
 
 ## Quiz scurt
 - Ce modificator folosești pentru fereastră?  
@@ -188,4 +189,4 @@ Compară camera ta 3D cu cea reală. Ce ai schimba în camera reală după ce ai
 - Ce lumină pui prin fereastră?
 
 ## Temă
-Desenează o altă cameră (bucătărie, atelier) și listează 5 obiecte și modificatorii pe care i-ai folosi.
+Desenează o altă cameră (bucătărie, atelier) și listează 5 obiecte și modificatorii pe care ai folosi.

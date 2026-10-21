@@ -42,14 +42,14 @@ Muchiile rotunjite fac obiectele să pară **reale** și prind lumina frumos. Be
 | **Segments** | cât de neted (1 = teșit, 3 = rotund) |
 | **Limit Method: Angle** | rotunjește doar muchiile „ascuțite” (cele peste 30°) |
 
-Pentru majoritatea obiectelor: **Width 0.03**, **Segments 3**, **Limit Method: Angle**. Apoi **Shade Smooth**.
+Pentru obiecte mari (corp, capac): **Width 0.03**, **Segments 3**, **Limit Method: Angle**. Pentru obiecte foarte mici (monede): **Width 0.005**. Apoi **Shade Smooth**.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Modificatorul Bevel”  
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 2) Corpul cufărului
-1. Cubul: **Dimensions X 2, Y 1.2, Z 1**, **Z = 0.5**.  
+1. Cubul: **Dimensions X 2, Y 1.2, Z 1**, **Z = 0.5**. Apoi **Ctrl + A → Scale** (ca Bevel-ul să iasă egal).  
 2. **Bevel** cu setările de mai sus. **Shade Smooth**.
 
 **Gata când:**  
@@ -59,7 +59,7 @@ Pentru majoritatea obiectelor: **Width 0.03**, **Segments 3**, **Limit Method: A
 ### 3) Capacul rotunjit
 1. **Cylinder**: **Vertices = 32**, **Radius = 0.6**, **Depth = 2**.  
 2. **R Y 90** (axa pe lungime). **Tab**, **Alt + Z**, selectează **jumătatea de jos** (vârfurile sub centru), **X → Vertices**. Rămâne o **jumătate de cilindru**.  
-3. Pune-o deasupra corpului: **Z = 1** (și verifică din lateral).  
+3. Așază capacul deasupra corpului: **Z = 1** (și verifică din lateral).  
 4. Adaugă **Solidify** (lecția 2), **Thickness 0.04**, ca să aibă grosime. Apoi **Bevel**. Capetele rămân deschise, dar Solidify le dă grosime.
 
 **Gata când:**  
@@ -67,7 +67,7 @@ Pentru majoritatea obiectelor: **Width 0.03**, **Segments 3**, **Limit Method: A
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Benzile metalice
-- **Cube** subțire: **Dimensions X 0.12, Y 1.3, Z 1.02**, la **X = −0.6**. Duplică la **X = 0.6**.  
+- **Cube** subțire: **Dimensions X 0.12, Y 1.3, Z 1.02**, la **X = −0.6** și **Z = 0.5**. Aplică **Ctrl + A → Scale**. Duplică la **X = 0.6**.  
 - Pe capac: două benzi curbe — jumătăți de **Torus** cu raza capacului (sau cilindri subțiri turtiți).  
 - **Bevel** pe benzi.
 
@@ -85,8 +85,8 @@ Pentru majoritatea obiectelor: **Width 0.03**, **Segments 3**, **Limit Method: A
 
 ### 6) Monedele de aur
 1. **Cylinder**: **Vertices = 24**, **Radius = 0.15**, **Depth = 0.03**.  
-2. **Bevel**, material **aur**: galben, **Metallic 1**, **Roughness 0.25**.  
-3. **Array**: **Count = 8**, **Constant Offset Z = 0.035** (stivă de monede).  
+2. **Bevel** cu **Width 0.005**, material **aur**: galben, **Metallic 1**, **Roughness 0.25**.  
+3. **Array**: **Count = 8**, debifează **Relative Offset**, bifează **Constant Offset** și pune **Z = 0.035** (stivă de monede).  
 4. Fă 3 stive cu **Shift + D**, în locuri diferite, cu rotații diferite.  
 5. Câteva monede **aruncate** pe lângă cufăr (rotite la unghiuri diferite).
 
@@ -115,7 +115,7 @@ Pentru majoritatea obiectelor: **Width 0.03**, **Segments 3**, **Limit Method: A
 1. **Bevel-ul face „felii” ciudate** — scara nu e aplicată; **Ctrl + A → Scale**.  
 2. **Rotunjiri inegale** — obiectele au scări diferite.  
 3. **Nu se văd muchiile** — Width prea mic.  
-4. **Capacul nu se potrivește** — verifică din lateral (**3**).  
+4. **Capacul nu se potrivește** — verifică din lateral (**Numpad 3**).  
 5. **Randarea e lentă** — prea multe monede cu segmente; folosește 16 laturi.
 
 ---

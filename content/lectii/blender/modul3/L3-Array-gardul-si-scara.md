@@ -38,7 +38,7 @@ Repetiția e peste tot: ferestre, trepte, dinți de fierăstrău, spițe. Array 
 2. **Add Modifier → Generate → Array.**  
 3. **Count = 10**.  
 4. **Relative Offset X = 1.5** (distanța între scânduri, în „lățimi de scândură”; 1 = lipite, 1.5 = cu spațiu).  
-5. Adaugă **2 șipci orizontale**: un **Cube** lung (X 4, Y 0.05, Z 0.1) la **Z 0.4** și **Z 1.1**.
+5. Adaugă **2 șipci orizontale**: un **Cube** lung (**X 3**, Y 0.05, Z 0.1) la **X = 1.4** și la **Z 0.4**, respectiv **Z 1.1**.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Gardul”  
@@ -52,7 +52,7 @@ Repetiția e peste tot: ferestre, trepte, dinți de fierăstrău, spițe. Array 
 | **Constant Offset** | în **unități** fixe | trepte, distanțe exacte |
 | **Object Offset** | în funcție de **alt obiect** | cercuri, spirale |
 
-Poți combina mai multe, bifând-le.
+Poți combina mai multe tipuri, bifând mai multe căsuțe.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Offset relativ vs. constant”  
@@ -72,11 +72,11 @@ Poți combina mai multe, bifând-le.
 ### 4) Roata cu 12 spițe
 Aici folosim un **Empty**, un obiect invizibil care servește drept „centru de rotație”.
 
-1. **Cylinder**: Radius 0.05, Depth 1 — o **spiță**. Pune-o pe jos începând din centru: **Tab**, **A**, **G Z 0.5 Enter**, **Tab**. Punctul ei de origine rămâne în **(0, 0, 0)**.  
-2. **Shift + A → Empty → Plain Axes.** Pune-l în **(0, 0, 0)**.  
+1. **Cylinder**: Radius 0.05, Depth 1 — o **spiță**. Spița trebuie culcată și să plece din centru: **Tab**, **A**, **R Y 90 Enter** (spița se culcă pe axa X), **G X 0.5 Enter**, **Tab**. Punctul ei de origine rămâne în **(0, 0, 0)**.  
+2. **Shift + A → Empty → Plain Axes.** Așază Empty-ul în **(0, 0, 0)**.  
 3. Rotește Empty-ul: **R Z 30 Enter** (360 / 12 = 30°).  
 4. Pe spiță: **Array → Count = 12**. Debifează **Relative Offset**, bifează **Object Offset** și alege **Empty-ul** din listă.  
-5. Spițele se rotesc în cerc, ca la o roată! (Roata e „culcată”, ca un ceas văzut de sus; vezi-o din vederea **7**.)  
+5. Spițele se rotesc în cerc, ca la o roată! (Roata e „culcată”, ca un ceas văzut de sus; privește roata din vederea **Numpad 7**.)  
 6. Adaugă un **Torus** mare pentru janta roții (Major Radius 1, Minor 0.08).
 
 **Gata când:**  
@@ -97,7 +97,7 @@ Când ești mulțumit și vrei să editezi fiecare piesă separat: în lista de 
 2. **Scara e rampă** — Constant Offset greșit; verifică Y și Z.  
 3. **Spițele nu formează cerc** — Empty-ul nu e în centrul spiței.  
 4. **Origin-ul obiectului e greșit** — **Object → Set Origin → Origin to 3D Cursor**.  
-5. **Modificatorul nu se mai poate edita** — l-ai aplicat; **Ctrl + Z**.
+5. **Modificatorul nu se mai poate edita** — ai aplicat modificatorul; **Ctrl + Z**.
 
 ---
 
@@ -137,7 +137,7 @@ Când ești mulțumit și vrei să editezi fiecare piesă separat: în lista de 
 `Gardul` → `Offset relativ vs. constant` → `Scara` → `Roata cu 12 spițe` → `Aplicăm modificatorul`
 
 ## Mai departe *(opțional)*
-Caută 3 lucruri din oraș care se repetă (stâlpi, geamuri, trepte) și gândește-te cum le-ai face cu Array.
+Caută 3 lucruri din oraș care se repetă (stâlpi, geamuri, trepte) și gândește-te cum ai face asta cu Array.
 
 ## Quiz scurt
 - Ce face Array?  

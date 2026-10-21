@@ -37,7 +37,7 @@ Aceeași cană poate arăta banală sau spectaculoasă în funcție de lumini. S
 Un fundal fără colțuri, ca să nu vezi unde se termină podeaua și începe peretele.
 
 1. **Plane**, **S 10**.  
-2. **Tab**, vedere din dreapta (**3**), modul **Edge** (**2**). Selectează **muchia din spate**.  
+2. **Tab**, vedere din dreapta (**Numpad 3**), modul **Edge** (**2**). Selectează **muchia din spate**.  
 3. **E Z 8 Enter** (extrudezi „peretele”).  
 4. Selectează **muchia colțului**, dintre podea și perete, și apasă **Ctrl + B**; cu **rotița** pune **8 segmente**, iar din mouse alege o rază mare (~3). Colțul devine o curbă lină.  
 5. **Tab**, **Shade Smooth**.
