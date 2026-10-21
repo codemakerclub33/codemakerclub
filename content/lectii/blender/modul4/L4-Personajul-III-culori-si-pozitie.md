@@ -2,7 +2,7 @@
 **Modulul 4 · Proiecte 3D complete**  
 **Code Maker Club · Blender Creator**
 
-> Blobi are formă, dar e încă gri! Azi îi dai **culori și materiale**, îl **legi** ca să-l poți muta ca pe un întreg și îl pui într-o **poziție** simpatică (pose) pentru poză.  
+> Blobi are formă, dar e încă gri! Azi îi dai **culori și materiale**, îl **legi** ca să poți muta personajul ca pe un întreg și îl pui într-o **poziție** simpatică (pose) pentru poză.  
 > Proiect: **„Blobi”** (final) · `Prenume_Nume_B4_L04.blend` + `.png`
 
 ---
@@ -76,7 +76,7 @@ Pe materialul corpului, în **Shader Editor** (lecția 8, Modulul 3):
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Legarea pieselor (parent)
-Blobi are corp, ochi, coarne, gură. Ca să-l muți odată:
+Blobi are corp, ochi, coarne, gură. Ca să muți totul odată:
 
 1. Selectează **toate piesele** în afară de corp.  
 2. **La final**, selectează **corpul** (activ).  
@@ -94,11 +94,11 @@ Fără schelet (asta e pentru animație), poți pune personajul într-o poziție
 
 1. **Brațul:** intră în Edit Mode pe corp, cu **Alt + Z** pornit. Selectează inelul de la **umăr** (unde începe brațul) și apasă **Shift + S → Cursor to Selected**.  
 2. Selectează cu **Box** (**B**) toate vârfurile brațului, fără cele ale corpului. În antetul viewport-ului schimbă **Pivot** pe **3D Cursor**.  
-   Acum **R Y −60** rotește brațul în jurul umărului. Pentru Blobi: mâna sus, ca la salut. La final, pune **Pivot** înapoi pe **Median Point**.  
-3. **Capul** ușor înclinat: **R Y 8**.  
-4. Un picior ușor ridicat: **G Z 0.15** + **R X −10**.
+   Acum **R Y −60** rotește brațul în jurul umărului. Pentru Blobi: brațele sus, ca la „Hura!” (Mirror le ridică pe amândouă). **Mâna și degetele** sunt obiecte separate: **Tab** înapoi în Object Mode, selectează mâna și degetele și, cu **Pivot** tot pe **3D Cursor**, apasă **R Y −60 Enter**. La final, pune **Pivot** înapoi pe **Median Point**.  
+3. Răsucește ușor tot personajul: selectează **corpul** (în Object Mode) și **R Z 15 Enter**; piesele legate merg după el.  
+4. Ridică personajul puțin, ca la săritură: **G Z 0.15**.
 
-> Încearcă 2–3 poziții diferite și păstrează-o pe cea mai simpatică.
+> Încearcă 2–3 poziții diferite și păstrează poziția cea mai simpatică.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Poziția (pose)”  

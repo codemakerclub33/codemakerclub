@@ -24,6 +24,6 @@ Al șaselea pas. Salvează versiuni. Folosești File, Save As, cu nume ca Proiec
 
 Cum depanezi singur. Nu merge un modificator: verifică ordinea și Apply Scale. Nu găsești ceva în scenă: apasă Home, adică View All, sau caută în Outliner. Ceva arată ciudat: apasă Alt plus Z, apoi Control plus Z, și încearcă din nou. Nu știi cum se face ceva: recitește lecția relevantă sau cere ajutor.
 
-Greșeli frecvente. Proiect prea mare: dacă nu poți termina, simplifică. Detalii prea devreme: întâi forma, apoi detaliile. Nu salvezi: Control plus S, des. Pierderea fișierului: folosește versiuni diferite. Ignori cerințele: bifează-le pe rând.
+Greșeli frecvente. Proiect prea mare: dacă nu poți termina, simplifică. Detalii prea devreme: întâi forma, apoi detaliile. Nu salvezi: Control plus S, des. Pierderea fișierului: folosește versiuni diferite. Ignori cerințele: bifează cerințele pe rând.
 
 Succes la construcție.

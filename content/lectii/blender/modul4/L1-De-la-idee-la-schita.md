@@ -8,7 +8,7 @@
 ---
 
 ## Obiectiv
-La finalul orei ai ales proiectul tău și l-ai pregătit pe hârtie și în Blender.  
+La finalul orei ai ales proiectul tău și ai pregătit proiectul pe hârtie și în Blender.  
 **Minim:** idee clară + schiță desenată din 2 vederi (față, lateral).  
 **Complet:** Minim + **imagini de referință** în Blender + un **blocaj** din forme simple, la proporțiile corecte.
 
@@ -75,8 +75,8 @@ Desenează personajul **din față** și **din lateral**, la **aceeași înălț
 ### 4) Imagini de referință în Blender
 1. Pe calculator, pune pozele cu schițele într-un folder.  
 2. În Blender: **Shift + A → Image → Reference**, alege poza din față.  
-3. Vezi imaginea în scenă. În vederea din față (**1**), mută-o și scalează-o cu **G** și **S** ca să aibă înălțimea de **3 unități**.  
-4. Repetă pentru poza de lateral în vederea din dreapta (**3**), rotește cu **R Z 90**.  
+3. Vezi imaginea în scenă. În vederea din față (**Numpad 1**), mută și scalează imaginea cu **G** și **S** ca să aibă înălțimea de **3 unități**.  
+4. Repetă pentru poza de lateral în vederea din dreapta (**Numpad 3**), rotește cu **R Z 90**.  
 5. Fă imaginile **semi-transparente**: **Properties → Object Data (imaginea) → Opacity 0.5**.
 
 **Gata când:**  
@@ -112,7 +112,7 @@ Folosește **Alt + Z** (X-ray) ca să vezi imaginile de referință prin modele.
 | Se vede personalitatea? | |
 
 ### 7) Gândește-te la proiectul final
-Alege **acum** ideea pentru proiectul final (L9): un personaj, un vehicul, o clădire, o scenă. Scrie-o într-o propoziție și desenează o schiță rapidă.
+Alege **acum** ideea pentru proiectul final (L9): un personaj, un vehicul, o clădire, o scenă. Scrie ideea într-o propoziție și desenează o schiță rapidă.
 
 ### Dacă ai terminat devreme
 - [ ] Fă un **al doilea personaj** (prietenul lui Blobi)  
@@ -124,7 +124,7 @@ Alege **acum** ideea pentru proiectul final (L9): un personaj, un vehicul, o cl�
 1. **Pornești fără schiță** — vei schimba totul la jumătate.  
 2. **Proporții diferite în cele două vederi** — marchează înălțimile.  
 3. **Detalii prea devreme** — întâi blocajul, apoi detaliile.  
-4. **Imaginile blochează selectarea** — selectează-le doar când ai nevoie; poți bloca selecția în Outliner (săgeata).  
+4. **Imaginile blochează selectarea** — selectează imaginile doar când ai nevoie; poți bloca selecția în Outliner (săgeata).  
 5. **Idee prea mare** — alege ceva ce poți termina în 4–5 ore.
 
 ---
@@ -153,7 +153,7 @@ Alege **acum** ideea pentru proiectul final (L9): un personaj, un vehicul, o cl�
 ---
 
 ## Bonus
-- [ ] Caută 3 imagini de inspirație și pune-le într-un colaj
+- [ ] Caută 3 imagini de inspirație și pune imaginile într-un colaj
 
 ## Recapitulare rapidă
 1. Ideea → schiță → referințe → blockout  

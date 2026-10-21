@@ -18,7 +18,7 @@ Al patrulea pas. Verificarea cerințelor. Ai opt sau mai multe obiecte? Trei sau
 
 Al cincilea pas. Quiz-ul final. Zece întrebări despre ce ai învățat, de la tastele de bază, ca Shift plus A, Tab, E și Control plus R, până la Mirror, Subdivision Surface, randare, materiale, Apply Scale și formatul G L B. Răspunde singur, apoi verifică în lecție. Cu nouă sau zece răspunsuri corecte ești Maestru Blender. Cu șapte sau opt, ești foarte bine și mai repeți câteva lucruri. Sub șapte, recitești lecțiile marcate din modulele unu, doi și trei.
 
-Al șaselea pas. Autoevaluarea. Dai o notă de la unu la cinci, unde unu înseamnă greu și cinci înseamnă ușor, pentru fiecare lucru: să te miști în trei D, să modelezi în Edit Mode, să folosești modificatori, să faci materiale, să pui lumini și să randezi, să-ți organizezi scena.
+Al șaselea pas. Autoevaluarea. Dai o notă de la unu la cinci, unde unu înseamnă greu și cinci înseamnă ușor, pentru fiecare lucru: să te miști în trei D, să modelezi în Edit Mode, să folosești modificatori, să faci materiale, să pui lumini și să randezi, să organizezi scena.
 
 Al șaptelea pas. Ce urmează. Ai acum o bază solidă. Direcții posibile: sculptarea, adică modelare ca din lut, în Sculpt Mode. Animația, adică mișcarea obiectelor și a personajelor. Geometry Nodes, unde generezi forme cu noduri. Imprimarea trei D, cu modele pentru imprimantă. Jocurile, cu modele pentru Unity sau Godot.
 

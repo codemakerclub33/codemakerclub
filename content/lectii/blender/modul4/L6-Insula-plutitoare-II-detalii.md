@@ -35,7 +35,7 @@ Detaliile fac o scenă credibilă. Trucul: câteva **forme simple**, repetate cu
 ## Pas cu pas
 
 ### 1) Copacul low-poly
-1. **Cylinder** pentru trunchi: **Vertices 6, Radius 0.15, Depth 1**, material maro. Pune-l la **Z = 0.5** deasupra terenului (Z-ul reliefului).  
+1. **Cylinder** pentru trunchi: **Vertices 6, Radius 0.15, Depth 1**, material maro. Așază trunchiul la **Z = 0.5** deasupra terenului (Z-ul reliefului).  
 2. **Cone** pentru coroană: **Vertices 6, Radius 0.7, Depth 1.2**, la **Z = 1.6**, material verde.  
 3. Un al doilea con mai mic, **Radius 0.5**, la **Z = 2.1**. Brad din 2–3 etaje.  
 4. Selectează toate piesele copacului și **Ctrl + J** (Join), apoi **F2** → „Copac”.  
@@ -49,9 +49,9 @@ Detaliile fac o scenă credibilă. Trucul: câteva **forme simple**, repetate cu
 1. **Shift + D**, **Enter**, mută copacul pe insulă; fă **5–8** copaci.  
 2. Pentru fiecare: **S** diferit (0.7 – 1.3) și **R Z** diferit (rotire aleatorie).  
 3. **Variație de culoare:** un al doilea material verde (mai închis) la 2 copaci.  
-4. **Alt + D** (linked duplicate) = copiile **împart aceeași formă**: dacă schimbi unul, se schimbă toate. Bun pentru economie, dar evită-l când vrei modificări diferite.
+4. **Alt + D** (linked duplicate) = copiile **împart aceeași formă**: dacă schimbi unul, se schimbă toate. Bun pentru economie, dar evită copiile legate când vrei modificări diferite.
 
-> Nu pune copacii în **linie**. Grupează-i în 2–3 **păduri mici** și lasă spații libere.
+> Nu pune copacii în **linie**. Grupează copacii în 2–3 **păduri mici** și lasă spații libere.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Duplicare cu variații”  
@@ -60,8 +60,8 @@ Detaliile fac o scenă credibilă. Trucul: câteva **forme simple**, repetate cu
 ### 3) Casa
 Refolosește casa din Modulul 1 (L6) sau construiește una mică:
 
-1. **Cube** pentru pereți (Dimensions 1.6 × 1.4 × 1).  
-2. **Cone** cu 4 laturi pentru acoperiș, rotit **R Z 45**.  
+1. **Cube** pentru pereți (Dimensions 1.6 × 1.4 × 1), la **Z = 0.5**.  
+2. **Cone** pentru acoperiș: **Vertices 4, Radius 1.2, Depth 0.8**, la **Z = 1.4**, rotit **R Z 45**.  
 3. Ușă și fereastră: cuburi mici, culori diferite.  
 4. **Ctrl + J**, **F2** → „Casa”, așezat pe un deal sau lângă lac.
 
@@ -93,7 +93,7 @@ Poți **importa** casa din alt fișier: **File → Append → fișier.blend → 
 ### 6) Norii
 1. **Ico Sphere** (Subdivisions 2) sau **UV Sphere**, **Shade Smooth**, material alb.  
 2. Fă un nor din **3–4 sfere** de mărimi diferite, lipite. **Ctrl + J**.  
-3. **Material alb** cu **Roughness 1**; Emission mic (0.3) ca să arate luminos.  
+3. **Material alb** cu **Roughness 1**; **Emission Strength 0.3** (culoarea rămâne albă) ca să arate luminos.  
 4. 3 nori la înălțimi și mărimi diferite, **în jurul** insulei, nu deasupra ei.
 
 **Gata când:**  
@@ -149,7 +149,7 @@ Poți **importa** casa din alt fișier: **File → Append → fișier.blend → 
 1. Forme simple, repetate cu variații  
 2. **Shift + D** copie, **Alt + D** copie legată  
 3. Origin la baza obiectelor  
-4. Grupează copacii, nu-i alinia
+4. Grupează copacii, nu îi alinia
 
 ## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
 

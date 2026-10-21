@@ -2,7 +2,7 @@
 **Modulul 4 · Proiecte 3D complete**  
 **Code Maker Club · Blender Creator**
 
-> Un fișier Blender ordonat se deschide ușor și se poate **partaja**. Azi înveți să-ți organizezi scena (nume, colecții), să-ți **cureți** fișierul și să-ți **exporți** modelele.  
+> Un fișier Blender ordonat se deschide ușor și se poate **partaja**. Azi înveți să organizezi scena (nume, colecții), să **cureți** fișierul și să **exporți** modelele.  
 > Proiect: **„Scena curată”** · `Prenume_Nume_B4_L08.blend` + `.glb` + `.png`
 
 ---
@@ -42,7 +42,7 @@ Deschide **Outliner**, **dublu-click** (sau **F2** în viewport) și redenumeșt
 | Cone.012 | Copac_01 |
 | Sphere.003 | Nor_02 |
 
-> Folosește **fără spații sau diacritice** (Casa_Pereti, nu „Casa pereți”): evită probleme la export.
+> Folosește nume **fără spații sau diacritice** (Casa_Pereti, nu „Casa pereți”): evită probleme la export.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Nume clare”  
@@ -73,7 +73,9 @@ Dacă ai scalat obiecte cu **S**, ele rețin „scara” (3D scale ≠ 1). Asta 
 
 1. Selectează toate obiectele (**A**).  
 2. **Ctrl + A → Scale** (Apply).  
-3. Verifică în **N → Item → Scale = 1.000**.
+3. Verifică în **N → Item → Scale = 1.000**.  
+
+> Obiectele cu **copii legate** (**Alt + D**) dau eroare: fă copiile unice mai întâi. Aplică scala **înainte** de **Ctrl + P**, altfel piesele legate se deformează.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Apply Scale”  
@@ -95,7 +97,7 @@ Format **glTF** (.glb): „JPEG-ul 3D”, citit de browsere, jocuri, aplicații.
 2. **File → Export → glTF 2.0 (.glb/.gltf)**.  
 3. **Format: glTF Binary (.glb)**, bifează **Include → Selected Objects**.  
 4. Alege nume și **Export**.  
-5. Vizualizează-l online cu un **glTF viewer** din browser, sau cu aplicația „3D Viewer” din Windows.
+5. Vizualizează fișierul online cu un **glTF viewer** din browser, sau cu aplicația „3D Viewer” din Windows.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Export pentru alte programe”  
@@ -180,4 +182,4 @@ Caută „Sketchfab”: o platformă unde artiștii își arată modelele 3D (cu
 - Ce e un fișier .glb?
 
 ## Temă
-Alege 3 obiecte din casă și dă-le nume bune, scrise pe hârtie.
+Alege 3 obiecte din casă și dă nume bune, scrise pe hârtie.

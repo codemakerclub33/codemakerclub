@@ -36,10 +36,10 @@ Filmele aleg ora zilei pentru fiecare scenă. Lumina de apus (galbenă, joasă) 
 ### 1) Cerul realist
 1. **Properties → World**.  
 2. La **Surface → Color**, click pe cerc și alege **Sky Texture**.  
-3. Setează **Sky Type: Nishita**.  
+3. Alege **Sky Type: Multiple Scattering** (în versiunile mai vechi se numește **Nishita**).  
 4. **Sun Elevation** (înălțimea soarelui): **3°**. Soarele e jos, ca la apus.  
 5. **Sun Rotation**: rotește până lumina vine din partea dorită.  
-6. Treci viewport-ul în **Material Preview** (sau **Rendered**) ca să vezi cerul.
+6. Treci viewport-ul în **Rendered** ca să vezi cerul (Material Preview nu arată cerul scenei).
 
 > Elevation **60°** = amiază; **3–10°** = răsărit/apus; **negativ** = noapte.
 
@@ -52,7 +52,7 @@ Cerul dă lumină ambientală, dar pentru **umbre clare** adaugă un **Sun**:
 
 1. **Shift + A → Light → Sun**. **Strength 3**.  
 2. **Color** portocaliu pal.  
-3. Rotește-l cu **R** până umbrele cad frumos pe insulă. Cât de lungi sunt umbrele?  
+3. Rotește soarele cu **R** până umbrele cad frumos pe insulă. Cât de lungi sunt umbrele?  
 4. Pune soarele în **aceeași direcție** cu cel din cer.
 
 **Gata când:**  
@@ -120,7 +120,7 @@ Fă o copie a fișierului, **Sun Elevation 50°**, culoare albă. Randează `zi.
 ## Greșeli frecvente
 1. **Randarea e zgomotoasă** — Denoise oprit sau Samples prea mic.  
 2. **Cerul nu se vede în randare** — **Film → Transparent** e bifat.  
-3. **Umbrele sunt în altă direcție decât soarele din cer** — aliniază-le.  
+3. **Umbrele sunt în altă direcție decât soarele din cer** — aliniază direcțiile.  
 4. **Randare foarte lentă** — scade Samples sau rezoluția.  
 5. **Imaginea e întunecată** — mărește Strength-ul soarelui.
 

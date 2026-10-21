@@ -122,7 +122,7 @@ Fă un pas înapoi: privește scena de **departe** (zoom out).
 2. **Detalii prea devreme** — întâi forma, apoi detaliile.  
 3. **Nu salvezi** — Ctrl + S des.  
 4. **Pierderea fișierului** — versiuni diferite.  
-5. **Ignori cerințele** — bifează-le pe rând.
+5. **Ignori cerințele** — bifează cerințele pe rând.
 
 ---
 

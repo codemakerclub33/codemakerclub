@@ -34,16 +34,16 @@ Un personaj bun are o **siluetă clară**. Dacă îl recunoști doar după umbra
 ## Pas cu pas
 
 ### 1) Pornim de la un cub
-1. Șterge blocajul vechi sau ascunde-l (**H**).  
+1. Șterge blocajul vechi sau ascunde blocajul (**H**).  
 2. **Cube**, **Dimensions X 1.6, Y 1.2, Z 1.8**, **Z = 1.5** (stă cu picioarele sub el).  
-3. **Alt + Z**, vederea din față (**1**) cu imaginea de referință vizibilă.
+3. **Alt + Z**, vederea din față (**Numpad 1**) cu imaginea de referință vizibilă.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Pornim de la un cub”  
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 2) Jumătate de corp + Mirror
-1. **Tab**, **Ctrl + R** vertical, la mijloc (click dreapta ca să rămână centrat).  
+1. **Tab**. **Ctrl + R** pe o muchie orizontală, pe lățime (axa X), un click, apoi click dreapta (inelul rămâne la mijloc).  
 2. Selectează vârfurile din **stânga** și **X → Vertices**.  
 3. **Tab**. **Add Modifier → Generate → Mirror**, **Clipping** bifat.  
 4. Apoi **Subdivision Surface** (**Ctrl + 2**). Ordinea: **Mirror primul, Subdivision al doilea**.
@@ -56,7 +56,7 @@ Acum modelezi doar partea dreaptă și forma e rotundă.
 
 ### 3) Picioarele
 1. **Tab**, modul **Face** (**3**), selectează fața de **jos**.  
-2. **I 0.35** (inset), apoi **E Z −0.8** (primul segment), **S 0.7**, **E Z −0.3** (labă).  
+2. **I 0.35** (inset), apoi **E Z −0.4** (primul segment), **S 0.7**, **E Z −0.2** (labă).  
 3. Cu **Subdivision**, picioarele se rotunjesc singure.  
 4. **Labele** ies puțin înainte: selectează fața de jos a piciorului și **G Y −0.3**.
 
@@ -71,7 +71,7 @@ Acum modelezi doar partea dreaptă și forma e rotundă.
 2. Selectează vârfurile din față, de la mijloc, și **G Y −0.3** cu raza mare (rotița): ai o **burtă** bombată.  
 3. Sus, selectează vârfurile din partea de sus și **G Z 0.2**: o creștere pentru **cap**.  
 4. Încet, **S 0.9** pe zona gâtului, ca să se vadă capul față de corp.  
-5. Verifică din lateral (**3**) cu imaginea de referință.
+5. Verifică din lateral (**Numpad 3**) cu imaginea de referință.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Silueta: burta și capul”  

@@ -109,7 +109,7 @@ Colorează 1–5 (1 = greu, 5 = ușor):
 | Să folosesc modificatori | |
 | Să fac materiale | |
 | Să pun lumini și să randez | |
-| Să-mi organizez scena | |
+| Să organizez scena | |
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Autoevaluare”  
@@ -170,4 +170,4 @@ Alege direcția care te atrage cel mai mult și caută un tutorial.
 - Ce vrei să înveți în continuare?
 
 ## Temă
-Scrie 3 propoziții: ce ai învățat, ce ți-a plăcut cel mai mult, ce vrei să faci mai departe.
+Scrie 3 propoziții: ce ai învățat, ce ai îndrăgit cel mai mult, ce vrei să faci mai departe.

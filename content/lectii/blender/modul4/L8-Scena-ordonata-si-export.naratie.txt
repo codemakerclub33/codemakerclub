@@ -1,6 +1,6 @@
 Lecția opt. Scenă ordonată și export.
 
-Un fișier Blender ordonat se deschide ușor și se poate partaja. Astăzi înveți să-ți organizezi scena, cu nume și colecții, să-ți cureți fișierul și să-ți exporți modelele. Proiectul se numește Scena curată. Obții trei fișiere: Prenume, linie jos, Nume, linie jos, B patru, linie jos, L opt, cu extensiile blend, G L B și P N G.
+Un fișier Blender ordonat se deschide ușor și se poate partaja. Astăzi înveți să organizezi scena, cu nume și colecții, să cureți fișierul și să exporți modelele. Proiectul se numește Scena curată. Obții trei fișiere: Prenume, linie jos, Nume, linie jos, B patru, linie jos, L opt, cu extensiile blend, G L B și P N G.
 
 Obiectivul. La final scena ta este ordonată și exportată în două formate. Minim: toate obiectele au nume clare și sunt în colecții. Complet: minim, plus Apply Scale, Purge, export în format G L B și randare în format P N G.
 
@@ -14,7 +14,7 @@ Al doilea pas. Colecții. Colecțiile sunt dosare în Outliner. Selectezi copaci
 
 Al treilea pas. Legare și grupare. Piesele unui obiect complex, de exemplu casa, sunt fie unite cu Control plus J, fie legate cu Control plus P. Fiecare obiect principal are originea la baza lui.
 
-Al patrulea pas. Apply Scale. Dacă ai scalat obiecte cu S, ele rețin scala, iar scala trei D nu mai este unu. Asta poate strica modificatorii și exportul. Selectezi toate obiectele, cu A. Apeși Control plus A, apoi Scale, ca să aplici scala. Verifici în panoul N, la Item, că Scale este unu virgulă zero zero zero.
+Al patrulea pas. Apply Scale. Dacă ai scalat obiecte cu S, ele rețin scala, iar scala trei D nu mai este unu. Asta poate strica modificatorii și exportul. Selectezi toate obiectele, cu A. Apeși Control plus A, apoi Scale, ca să aplici scala. Verifici în panoul N, la Item, că Scale este unu virgulă zero zero zero. Obiectele cu copii legate, făcute cu Alt plus D, dau eroare: le faci mai întâi unice. Aplici scala înainte de Control plus P, altfel piesele legate se deformează.
 
 Al cincilea pas. Curățenia fișierului. Mergi la File, Clean Up, Purge Unused Data, cu opțiunea Recursive. Ștergi materialele neutilizate din Material Properties. Verifici în Outliner, la Blender File, dacă mai ai obiecte inutile.
 

@@ -35,7 +35,7 @@ Insulele plutitoare apar în jocuri și filme fantastice. Se modelează simplu: 
 
 ### 1) Forma de bază
 1. **Cylinder**: **Vertices = 24**, **Radius = 5**, **Depth = 1.2**, **Z = 0.6**.  
-2. **Tab**. Selectează fața de **sus**: **Ctrl + R** cu 2 inele (pentru dealuri mai târziu).  
+2. **Tab**. Selectează fața de **sus**: **I 1.5 Enter**, apoi încă o dată **I 1.5 Enter** (două inele pentru dealuri mai târziu).  
 3. Selectează fața de **jos**: **S 0.2 Enter** (se strânge).  
 4. **E Z −3 Enter**: stânca coboară.  
 5. **S 0.2** din nou: vârful devine ascuțit.
@@ -45,7 +45,7 @@ Insulele plutitoare apar în jocuri și filme fantastice. Se modelează simplu: 
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 2) Stânca de jos
-1. Adaugă încă **2 inele** cu **Ctrl + R** pe porțiunea de jos.  
+1. Adaugă **2 inele** cu **Ctrl + R** pe muchiile verticale ale stâncii.  
 2. Selectează **inelele**, **S 0.8**, **S 1.2** alternativ, ca să apară **denivelări**.  
 3. **O** (Proportional Editing, raza mare) și **G** pe vârfuri aleatorii: stânca devine **neregulată**.  
 4. Pentru stil **low-poly**: **Shade Flat**.
@@ -66,7 +66,7 @@ Un disc perfect rotund arată artificial.
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Dealurile
-1. Selectează **vârfurile din partea de sus** în 2–3 zone.  
+1. Selectează **vârfurile inelelor de sus** în 2–3 zone.  
 2. **O**, **G Z 0.6**, cu **raza mare**. Un deal.  
 3. Un deal mai mic, în altă parte: **G Z 0.3**. O vale: **G Z −0.2**.  
 4. **Marginea** să fie mai joasă decât mijlocul (ca o insulă ușor bombată).
@@ -154,4 +154,4 @@ Caută „floating island concept art” pentru inspirație și desenează varia
 - Ce face Shade Flat?
 
 ## Temă
-Desenează insula ta cu 3 detalii (casă, copac, lac) și notează unde le-ai pune.
+Desenează insula ta cu 3 detalii (casă, copac, lac) și notează unde ai pune fiecare.

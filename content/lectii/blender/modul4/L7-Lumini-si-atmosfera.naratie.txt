@@ -8,7 +8,7 @@ De ce contează. Filmele aleg ora zilei pentru fiecare scenă. Lumina de apus, g
 
 Ce ai nevoie. Fișierul din lecția șase.
 
-Primul pas. Cerul realist. În Properties, la World, la Surface și Color, dai click pe cerc și alegi Sky Texture. Setezi Sky Type pe Nishita. Sun Elevation, adică înălțimea soarelui, pe trei grade: soarele este jos, ca la apus. Sun Rotation îl rotești până când lumina vine din partea dorită. Treci viewport-ul în Material Preview, sau în Rendered, ca să vezi cerul. Cu elevație de șaizeci de grade este amiază. Între trei și zece grade este răsărit sau apus. O valoare negativă înseamnă noapte.
+Primul pas. Cerul realist. În Properties, la World, la Surface și Color, dai click pe cerc și alegi Sky Texture. Alegi Sky Type Multiple Scattering, care în versiunile mai vechi se numește Nishita. Sun Elevation, adică înălțimea soarelui, pe trei grade: soarele este jos, ca la apus. Sun Rotation îl rotești până când lumina vine din partea dorită. Treci viewport-ul în Rendered, ca să vezi cerul. Cu elevație de șaizeci de grade este amiază. Între trei și zece grade este răsărit sau apus. O valoare negativă înseamnă noapte.
 
 Al doilea pas. Soarele din scenă. Cerul dă lumină ambientală, dar pentru umbre clare adaugi un Sun. Shift plus A, Light, Sun, cu Strength trei. Culoarea este portocaliu pal. Îl rotești cu R până când umbrele cad frumos pe insulă. Cât de lungi sunt umbrele? Pui soarele în aceeași direcție cu cel din cer.
 
@@ -22,6 +22,6 @@ Al șaselea pas. Cycles pentru calitatea finală. În Properties, la Render, Ren
 
 Al șaptelea pas. Salvezi o variantă de zi. Faci o copie a fișierului, cu Sun Elevation cincizeci de grade și culoare albă. Randezi o imagine de zi și una de apus. Care ți se pare mai frumoasă?
 
-Greșeli frecvente. Randarea este zgomotoasă: Denoise este oprit sau Samples este prea mic. Cerul nu se vede în randare: Film, Transparent este bifat. Umbrele sunt în altă direcție decât soarele din cer: aliniază-le. Randare foarte lentă: scade Samples sau rezoluția. Imaginea este întunecată: mărește Strength-ul soarelui.
+Greșeli frecvente. Randarea este zgomotoasă: Denoise este oprit sau Samples este prea mic. Cerul nu se vede în randare: Film, Transparent este bifat. Umbrele sunt în altă direcție decât soarele din cer: aliniază direcțiile. Randare foarte lentă: scade Samples sau rezoluția. Imaginea este întunecată: mărește Strength-ul soarelui.
 
 Succes la apus.

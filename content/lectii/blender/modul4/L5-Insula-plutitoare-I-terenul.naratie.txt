@@ -6,13 +6,13 @@ Obiectivul. La final ai o insulă cu dealuri deasupra și stâncă ascuțită de
 
 De ce contează. Insulele plutitoare apar în jocuri și în filme fantastice. Se modelează simplu: un disc de teren și un con întors dedesubt, apoi se deformează ca să pară natural.
 
-Primul pas. Forma de bază. Un cilindru cu Vertices douăzeci și patru, Radius cinci și Depth unu virgulă doi, la înălțimea zero virgulă șase. Apeși Tab. Selectezi fața de sus și apeși Control plus R cu două inele, pentru dealuri mai târziu. Selectezi fața de jos și apeși S, zero virgulă doi, Enter: se strânge. Apeși E, Z, minus trei, Enter: stânca coboară. Apoi S, zero virgulă doi, din nou: vârful devine ascuțit.
+Primul pas. Forma de bază. Un cilindru cu Vertices douăzeci și patru, Radius cinci și Depth unu virgulă doi, la înălțimea zero virgulă șase. Apeși Tab. Selectezi fața de sus și apeși I, unu virgulă cinci, Enter, apoi încă o dată I, unu virgulă cinci, Enter: două inele pentru dealuri mai târziu. Selectezi fața de jos și apeși S, zero virgulă doi, Enter: se strânge. Apeși E, Z, minus trei, Enter: stânca coboară. Apoi S, zero virgulă doi, din nou: vârful devine ascuțit.
 
-Al doilea pas. Stânca de jos. Adaugi încă două inele cu Control plus R pe porțiunea de jos. Selectezi inelele și apeși S, zero virgulă opt, apoi S, unu virgulă doi, alternativ, ca să apară denivelări. Cu O, Proportional Editing, cu raza mare, apeși G pe vârfuri aleatorii: stânca devine neregulată. Pentru stil low-poly, aplici Shade Flat.
+Al doilea pas. Stânca de jos. Adaugi două inele cu Control plus R pe muchiile verticale ale stâncii. Selectezi inelele și apeși S, zero virgulă opt, apoi S, unu virgulă doi, alternativ, ca să apară denivelări. Cu O, Proportional Editing, cu raza mare, apeși G pe vârfuri aleatorii: stânca devine neregulată. Pentru stil low-poly, aplici Shade Flat.
 
 Al treilea pas. Marginea neregulată. Un disc perfect rotund arată artificial. Selectezi inelul de la margine, cu Alt plus click. Cu O pornit, selectezi câte un vârf din inel și apeși G, în afară sau în interior, cu raza mică. Faci marginea să aibă patru-cinci golfuri și peninsule.
 
-Al patrulea pas. Dealurile. Selectezi vârfurile din partea de sus, în două sau trei zone. Cu O, apeși G, Z, zero virgulă șase, cu raza mare: un deal. Un deal mai mic, în altă parte, cu G, Z, zero virgulă trei. O vale, cu G, Z, minus zero virgulă doi. Marginea trebuie să fie mai joasă decât mijlocul, ca o insulă ușor bombată.
+Al patrulea pas. Dealurile. Selectezi vârfurile inelelor de sus, în două sau trei zone. Cu O, apeși G, Z, zero virgulă șase, cu raza mare: un deal. Un deal mai mic, în altă parte, cu G, Z, zero virgulă trei. O vale, cu G, Z, minus zero virgulă doi. Marginea trebuie să fie mai joasă decât mijlocul, ca o insulă ușor bombată.
 
 Al cincilea pas. Straturile terenului. Un teren adevărat are două straturi: iarbă deasupra și pământ dedesubt. În Properties, la Material, faci două sloturi: Iarba, verde, și Piatra, gri. În Edit Mode, fețele de sus, selectate cu Box și Alt plus Z, primesc Iarba, iar cele de jos primesc Piatra, prin Assign. Faci ca iarba să acopere puțin marginea, printr-un strat subțire verde.
 

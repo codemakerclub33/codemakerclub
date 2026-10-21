@@ -54,8 +54,9 @@ Fă ochi **mari**, ca la personajele din desene animate:
 1. **Add → Mesh → Circle** (Vertices 32), **Fill Type: Nothing**.  
 2. **R X 90**, **S 0.35**, la **Y −0.7, Z 1.9**.  
 3. **Tab**, șterge vârfurile de sus (rămâne un „U” = zâmbet).  
-4. **Add Modifier → Generate → Solidify**, **Thickness 0.05**; **Bevel** mic.  
-5. Material roșu închis.
+4. **A** (selectează tot), **E Y −0.1 Enter**: muchiile devin o fâșie.  
+5. **Tab**. **Add Modifier → Generate → Solidify**, **Thickness 0.05**; **Bevel** mic.  
+6. Material roșu închis.
 
 **Metoda 2 (Boolean):** o sferă mare, scoasă din corp cu un modificator **Boolean** (Operation: Difference), pentru o gură deschisă; **dinții** sunt conuri mici, albe.
 
@@ -66,7 +67,7 @@ Fă ochi **mari**, ca la personajele din desene animate:
 ### 3) Brațele
 1. **Tab** pe corp, modul **Face**, selectează o față laterală, în dreapta.  
 2. **I 0.2**, **E X 0.5**, **S 0.7**, **E X 0.5**, **S 0.8**.  
-3. Brațul e gros la umăr, subțire la mână. Încurbează-l cu **G Z −0.2** pe fața de capăt.  
+3. Brațul e gros la umăr, subțire la mână. Încurbează brațul cu **G Z −0.2** pe fața de capăt.  
 4. **Mâna:** o sferă mică lipită la capăt, cu **3 degete** (3 cilindri mici, scurți, înclinați).
 
 > **Mirror** pe corp copiază brațul automat și pe stânga.
@@ -76,7 +77,7 @@ Fă ochi **mari**, ca la personajele din desene animate:
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 4) Coarnele
-1. **Cone**: **Radius 0.2, Depth 0.7**, la **X 0.4, Z 3.1**, ușor înclinat (**R Y 15**).  
+1. **Cone**: **Radius 0.2, Depth 0.7**, la **X 0.4, Z 2.7**, ușor înclinat (**R Y 15**).  
 2. **Subdivision** + **Shade Smooth**.  
 3. Material galben-pal (ca osul).  
 4. Dublează pe stânga cu Mirror sau cu **Shift + D**.
@@ -102,11 +103,11 @@ Fă ochi **mari**, ca la personajele din desene animate:
 ---
 
 ## Greșeli frecvente
-1. **Ochii intră în corp** — Y prea aproape; mută-i spre −Y.  
+1. **Ochii intră în corp** — Y prea aproape; mută ochii spre −Y.  
 2. **Brațele se încrucișează cu corpul** — fața de pornire e prea jos.  
 3. **Simetrie greșită** — verifică semnul lui X (+0.3 și −0.3).  
 4. **Gura arată ca o linie** — Solidify prea mic.  
-5. **Coarnele „plutesc”** — mută-le puțin în interior.
+5. **Coarnele „plutesc”** — mută coarnele puțin în interior.
 
 ---
 
