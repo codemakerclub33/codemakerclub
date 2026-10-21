@@ -110,7 +110,7 @@ Suma cifrelor lui 999999 = 54
 Suma cifrelor lui 0 = 0
 ```
 
-Parametrul `n` este o **copie** (lecția 2), așa că bucla poate să-l strice liniștit: numărul din `main` rămâne neschimbat. De aceea nu mai avem nevoie de variabila `copie`.
+Parametrul `n` este o **copie** (lecția 2), așa că bucla îl poate strica liniștit: numărul din `main` rămâne neschimbat. De aceea nu mai avem nevoie de variabila `copie`.
 
 ### Exemplul 3 — Câte cifre are un număr **[Esențial]**
 
@@ -670,7 +670,7 @@ int main() {
 7: cifre crescatoare
 ```
 
-Pornim de la ultima cifră. Pe măsură ce mergem spre stânga, cifrele nu au voie să **crească** (altfel numărul, citit normal, n-ar mai fi crescător). Pentru `1213`, de la coadă vedem 3, 1, 2: după `1` apare `2`, care este mai mare, deci verificarea eșuează.
+Pornim de la ultima cifră. Pe măsură ce mergem spre stânga, cifrele nu au voie să **crească** (altfel numărul, citit normal, nu ar mai fi crescător). Pentru `1213`, de la coadă vedem 3, 1, 2: după `1` apare `2`, care este mai mare, deci verificarea eșuează.
 
 ### Exemplul 16 — „Laboratorul de cifre” (mini-proiect) **[Esențial]**
 
@@ -845,7 +845,7 @@ Citește un număr și o cifră. Afișează numărul după ce îi elimini toate 
 | Ce vezi | Cauza | Corect |
 |---------|-------|--------|
 | Bucla nu rulează pentru `0` | `while (n > 0)` nu intră pentru 0 | `do-while`, sau tratezi `0` separat |
-| Ai nevoie de `n` la final, dar e `0` | Bucla l-a modificat | Lucrează pe o `copie` (sau pe parametrul-copie al funcției) |
+| Ai nevoie de `n` la final, dar e `0` | Bucla a modificat `n` | Lucrează pe o `copie` (sau pe parametrul-copie al funcției) |
 | Rezultat greșit la numere mari | `int` a depășit limita (~2 miliarde) | Folosește `long long` |
 | `oglindit` pierde zerourile | Numerele nu păstrează zerouri la început | Normal: `120` oglindit este `21` |
 | Produsul cifrelor este mereu `0` | Ai pornit cu `produs = 0` | `produs = 1` |

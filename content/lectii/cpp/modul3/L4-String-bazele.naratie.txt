@@ -10,7 +10,7 @@ Al doilea pas. Lipirea. Lipești două texte cu plus, sau adaugi la un text cu p
 
 Al treilea pas. Citirea. C-in citește doar un cuvânt, până la spațiu. Pentru o propoziție întreagă folosești getline. Dacă ai citit înainte ceva cu c-in, scrii cin punct ignore înainte de getline, ca să dispară Enter-ul rămas. Compari texte cu egal egal, iar literele mari și mici sunt diferite: Ana nu este ana.
 
-Al patrulea pas. Substr, inversare și palindrom. Cu substr scoți o bucată din text, dând poziția și lungimea. Inversezi un text parcurgându-l de la coadă la cap. Un palindrom este un text care este egal cu inversul lui.
+Al patrulea pas. Substr, inversare și palindrom. Cu substr scoți o bucată din text, dând poziția și lungimea. Inversezi un text parcurgând textul de la coadă la cap. Un palindrom este un text care este egal cu inversul lui.
 
 Al cincilea pas. Proiecte. Construiești texte cu string de n ori un caracter, scoți inițialele numelui și faci mini-proiectul Analizorul de nume.
 

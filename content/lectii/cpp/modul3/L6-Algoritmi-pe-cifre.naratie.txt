@@ -14,7 +14,7 @@ Al patrulea pas. Binar și numere noi. Pentru binar împarți repetat la doi, ia
 
 Al cincilea pas. Provocări opționale: numerele Armstrong, rădăcina digitală și numere cu cifrele în ordine crescătoare. Proiectul este Laboratorul de cifre.
 
-Greșeli frecvente. Bucla nu rulează pentru zero, pentru că while cu mai mare ca zero nu intră. Ai nevoie de n la final, dar bucla l-a modificat: lucrezi pe o copie. Rezultat greșit la numere mari, pentru că int a depășit limita: folosește long long. Produsul cifrelor e mereu zero, pentru că ai pornit de la zero. Ai încurcat restul cu câtul. Binarul apare în ordine inversă, pentru că ai lipit cifra la sfârșit.
+Greșeli frecvente. Bucla nu rulează pentru zero, pentru că while cu mai mare ca zero nu intră. Ai nevoie de n la final, dar bucla a modificat n: lucrezi pe o copie. Rezultat greșit la numere mari, pentru că int a depășit limita: folosește long long. Produsul cifrelor e mereu zero, pentru că ai pornit de la zero. Ai încurcat restul cu câtul. Binarul apare în ordine inversă, pentru că ai lipit cifra la sfârșit.
 
 Tema. Scrii funcții pentru suma cifrelor pare și pentru numărul de cifre impare. Afișezi palindroamele de trei cifre cu suma cifrelor peste zece. Numeri cifrele zero din scrierea binară a unui număr. Salvezi ca Tema, linie jos, M trei, L șase.
 

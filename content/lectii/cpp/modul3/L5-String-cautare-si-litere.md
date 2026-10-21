@@ -13,7 +13,7 @@ La finalul orei știi că fiecare caracter are un cod numeric, verifici tipul un
 **Ținta orei (Complet):** + transformarea în litere mari, căutarea unui cuvânt cu `find` și un raport de statistici.
 
 ## De ce contează
-Aproape orice program care citește text trebuie să-l „înțeleagă”: o parolă trebuie să conțină cifre, un chat filtrează cuvinte urâte, un traducător caută cuvinte, un joc de tip „spânzurătoarea” verifică litere. Toate pornesc de la tehnicile din această lecție.
+Aproape orice program care citește text trebuie să „înțeleagă” textul: o parolă trebuie să conțină cifre, un chat filtrează cuvinte urâte, un traducător caută cuvinte, un joc de tip „spânzurătoarea” verifică litere. Toate pornesc de la tehnicile din această lecție.
 
 ---
 
@@ -434,7 +434,7 @@ int main() {
 Prima litera 'n' este pe pozitia 4
 ```
 
-`string::npos` înseamnă „nu s-a găsit”. Este rolul lui `-1` de la vectori, dar sub forma unei constante speciale: o compari direct, `text.find("Java") == string::npos`. Poziția o păstrăm într-o variabilă de tip `size_t` (tipul pe care îl returnează `find`). Poți căuta și un singur caracter (`find('n')`).
+`string::npos` înseamnă „nu a fost găsit”. Este rolul lui `-1` de la vectori, dar sub forma unei constante speciale: o compari direct, `text.find("Java") == string::npos`. Poziția o păstrăm într-o variabilă de tip `size_t` (tipul pe care îl returnează `find`). Poți căuta și un singur caracter (`find('n')`).
 
 ### Exemplul 10 — Toate aparițiile unei bucăți de text
 
@@ -847,13 +847,13 @@ Scrie programul din Exemplul 16. Adaugă: numărul de litere mari din text și a
 Citește o parolă și spune dacă este „puternică”: are minimum 8 caractere, cel puțin o literă mare, o literă mică și o cifră. Afișează ce lipsește.
 
 ### Exercițiul C — Fără vocale
-Citește o propoziție și afișează-o fără vocale (construiești un text nou).
+Citește o propoziție și afișează propoziția fără vocale (construiești un text nou).
 
 ### Exercițiul D — Căutare de cuvânt
 Citește un text și un cuvânt. Spune dacă cuvântul apare și pe ce poziție, apoi de câte ori apare.
 
 ### Exercițiul E — Litere mari și mici alternate
-Citește un cuvânt și afișează-l alternând literele mari și mici: `programare` → `PrOgRaMaReA` (poziția 0 mare, 1 mică etc.).
+Citește un cuvânt și afișează cuvântul alternând literele mari și mici: `programare` → `PrOgRaMaReA` (poziția 0 mare, 1 mică etc.).
 
 **Gata când:**
 - [ ] Programul compilează fără erori sau avertismente  

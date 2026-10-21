@@ -271,7 +271,7 @@ i = 1
 STOP: bucla pare infinita!
 ```
 
-**Greșeala:** în buclă nu se modifică niciodată `i`, deci condiția `i <= 5` rămâne adevărată la nesfârșit. **Reparație:** adaugă `i++;` în buclă. Variabila `siguranta` este o plasă de protecție folosită doar la depanare: oprește programul dacă bucla trece de un număr rezonabil de repetări. Dacă ai o buclă infinită în programul tău, oprește-l cu **Ctrl + C** în terminal.
+**Greșeala:** în buclă nu se modifică niciodată `i`, deci condiția `i <= 5` rămâne adevărată la nesfârșit. **Reparație:** adaugă `i++;` în buclă. Variabila `siguranta` este o plasă de protecție folosită doar la depanare: oprește programul dacă bucla trece de un număr rezonabil de repetări. Dacă ai o buclă infinită în programul tău, oprește programul cu **Ctrl + C** în terminal.
 
 ### Exemplul 9 — Variabila „umbrită”
 
@@ -365,6 +365,7 @@ Programul care construiește automat același tabel:
 
 ```cpp
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main() {
@@ -372,13 +373,13 @@ int main() {
     int suma = 0;
     int pas = 0;
 
-    cout << "pas | n   | cifra | suma" << endl;
+    cout << "pas |   n | cifra | suma" << endl;
     while (n > 0) {
         int cifra = n % 10;
         suma += cifra;
         n /= 10;
         pas++;
-        cout << "  " << pas << " | " << n << "   | " << cifra << "     | " << suma << endl;
+        cout << setw(3) << pas << " | " << setw(3) << n << " | " << setw(5) << cifra << " | " << suma << endl;
     }
     return 0;
 }
@@ -386,17 +387,17 @@ int main() {
 
 **Ieșire:**
 ```
-pas | n   | cifra | suma
-  1 | 47   | 2     | 2
-  2 | 4   | 7     | 9
-  3 | 0   | 4     | 13
+pas |   n | cifra | suma
+  1 |  47 |     2 | 2
+  2 |   4 |     7 | 9
+  3 |   0 |     4 | 13
 ```
 
 Dacă tabelul de pe hârtie diferă de cel din program, locul unde apare diferența este locul greșelii. Metoda funcționează și pe un examen, fără calculator.
 
 ### Exemplul 12 — `assert`: testele care verifică singure
 
-`assert(condiție)` (din `<cassert>`) oprește programul cu un mesaj dacă `condiția` este falsă. Este un mod de a-i spune calculatorului: „sunt sigur că aici lucrurile stau așa”.
+`assert(condiție)` (din `<cassert>`) oprește programul cu un mesaj dacă `condiția` este falsă. Este un mod de a spune calculatorului: „sunt sigur că aici lucrurile stau așa”.
 
 ```cpp
 #include <iostream>
@@ -433,7 +434,7 @@ int main() {
 Toate testele au trecut!
 ```
 
-Dacă ai schimba de exemplu `maxim` astfel încât să returneze mereu `a`, programul s-ar opri la prima verificare picată, cu un mesaj de forma `Assertion failed: maxim(7, 3) == 7`. Verificările tale devin o plasă de siguranță: după fiecare modificare rulezi din nou programul și afli imediat dacă ai stricat ceva. Testează întotdeauna **cazurile limită**: zero, un singur element, valori egale, numere negative.
+Dacă ai schimba de exemplu `maxim` astfel încât să returneze mereu `a`, programul se va opri la prima verificare picată, cu un mesaj de forma `Assertion failed: maxim(7, 3) == 7`. Verificările tale devin o plasă de siguranță: după fiecare modificare rulezi din nou programul și afli imediat dacă ai stricat ceva. Testează întotdeauna **cazurile limită**: zero, un singur element, valori egale, numere negative.
 
 ---
 
@@ -528,7 +529,7 @@ Numerele care apar „de nicăieri” într-un cod (`5`, `6`, `0.19`) se numesc 
 
 ### Exemplul 15 — Un `main` lung împărțit în funcții
 
-Un `main` de 80 de linii este greu de citit. Împarte-l în funcții cu nume clare. Compară:
+Un `main` de 80 de linii este greu de citit. Împarte codul în funcții cu nume clare. Compară:
 
 ```cpp
 #include <iostream>
@@ -594,7 +595,7 @@ Citind doar `main`, înțelegi programul în 10 secunde: citește notele, calcul
 
 ### Exemplul 16 — „Clinica de programe” **[Esențial]**
 
-Fiecare dintre următoarele 5 programe compilează, dar are o greșeală de logică. Pentru fiecare: **(1)** rulează-l, **(2)** compară cu rezultatul așteptat, **(3)** caută cauza, **(4)** repară-l, **(5)** scrie în comentariu ce era greșit.
+Fiecare dintre următoarele 5 programe compilează, dar are o greșeală de logică. Pentru fiecare: **(1)** rulează programul, **(2)** compară cu rezultatul așteptat, **(3)** caută cauza, **(4)** repară programul, **(5)** scrie în comentariu ce era greșit.
 
 **Programul 1 — Media a trei numere.** Așteptat: `Media: 9`.
 
@@ -741,13 +742,13 @@ ana nu este palindrom
 Reparează cele cinci programe din Exemplul 16. Pentru fiecare, scrie în comentariu: **ce era greșit** și **cum ai descoperit**.
 
 ### Exercițiul B — Un program „urât” devine curat
-Ia un program din Modulul 2 sau 3 (de exemplu Catalogul de note) și rescrie-l: nume clare, indentare corectă, constante în loc de numere magice și funcții mici.
+Ia un program din Modulul 2 sau 3 (de exemplu Catalogul de note) și rescrie programul: nume clare, indentare corectă, constante în loc de numere magice și funcții mici.
 
 ### Exercițiul C — Testele tale
 Pentru trei funcții scrise de tine (de exemplu `estePrim`, `cmmdc`, `oglindit`), scrie 5 verificări `assert` fiecare, inclusiv pentru cazuri limită.
 
 ### Exercițiul D — Vânătoare de erori
-Scrie un program cu **trei greșeli** puse intenționat (una de sintaxă, una de logică, una de execuție). Dă-l unui coleg și vezi în cât timp le găsește.
+Scrie un program cu **trei greșeli** puse intenționat (una de sintaxă, una de logică, una de execuție). Dă programul unui coleg și vezi în cât timp le găsește.
 
 ### Exercițiul E — Jurnalul de greșeli
 Fă o listă cu cel puțin 8 greșeli pe care le-ai făcut în ultimele luni, fiecare cu: mesajul sau comportamentul, cauza și cum o eviți.
@@ -764,7 +765,7 @@ Fă o listă cu cel puțin 8 greșeli pe care le-ai făcut în ultimele luni, fi
 
 ## Bonus / Provocare (dacă ai terminat)
 - [ ] Caută și repară greșelile din programul unui coleg (cu acordul lui), fără să te uiți întâi la soluție  
-- [ ] Scrie un program care testează automat funcția `estePrim` pentru toate numerele de la 0 la 100 comparând-o cu varianta lentă (numărarea divizorilor)  
+- [ ] Scrie un program care testează automat funcția `estePrim` pentru toate numerele de la 0 la 100, comparând funcția cu varianta lentă (numărarea divizorilor)  
 - [ ] Citește despre `gdb` sau despre depanatorul din Code::Blocks / Visual Studio Code: breakpoint, step over, watch  
 - [ ] Adaugă la un program mic un mod `DEBUG` care afișează informații suplimentare când o constantă este `true`  
 - [ ] Scrie un „ghid de stil” de o pagină pentru tine (reguli de nume, indentare, comentarii)  
@@ -808,7 +809,7 @@ Fă o listă cu cel puțin 8 greșeli pe care le-ai făcut în ultimele luni, fi
 ## Temă
 1. Refă **Exemplele 1–16** și repară toate programele cu greșeli.  
 2. Scrie un „mini test” cu `assert` pentru cinci funcții din lecțiile anterioare.  
-3. Ia un program de 40–60 de linii scris de tine în Modulul 2 și rescrie-l după regulile de stil din lecție; compară numărul de linii din `main` înainte și după.  
+3. Ia un program de 40–60 de linii scris de tine în Modulul 2 și rescrie programul după regulile de stil din lecție; compară numărul de linii din `main` înainte și după.  
 4. Pregătește pentru colegi un program cu două greșeli ascunse, pe care să le găsească.  
 5. **Bonus:** descoperă ce face avertismentul `-Wall` la compilare (în terminal: `g++ -Wall -Wextra program.cpp`) și rezolvă toate avertismentele programului tău cel mai lung.  
 6. Salvează tot ca `Tema_M3L9_Prenume_Nume.cpp`.

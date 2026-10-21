@@ -2,7 +2,7 @@
 **Modulul 3 · Funcții, string, algoritmi · 2 ore**  
 **Code Maker Club · Problem Solver**
 
-> Azi înveți să-ți împarți programul în **bucăți mici, cu nume**, numite funcții. În loc să scrii același cod de zece ori, îl scrii o singură dată și îl **chemi** de câte ori ai nevoie.  
+> Azi înveți să împarți programul în **bucăți mici, cu nume**, numite funcții. În loc să scrii același cod de zece ori, îl scrii o singură dată și îl **chemi** de câte ori ai nevoie.  
 > Proiect: **„Cartea de vizită”** · fișier: `Prenume_Nume_M3L1.cpp` (ex. `Ana_Pop_M3L1.cpp`)
 
 ---
@@ -769,7 +769,7 @@ Scrie un program cu un meniu (cu `do-while`) în care fiecare opțiune apelează
 Rescrie programul de la exercițiul B astfel încât toate funcțiile să fie scrise **după** `main`, cu prototipuri sus.
 
 ### Exercițiul E — Căutarea greșelii
-Ia Exemplul 10 și încearcă să afișezi în `main` valoarea lui `x` din `unu()`. Citește mesajul de eroare și explică-l în două propoziții.
+Ia Exemplul 10 și încearcă să afișezi în `main` valoarea lui `x` din `unu()`. Citește mesajul de eroare și explică în două propoziții ce înseamnă.
 
 **Gata când:**
 - [ ] Programul compilează fără erori  
@@ -794,10 +794,10 @@ Ia Exemplul 10 și încearcă să afișezi în `main` valoarea lui `x` din `unu(
 
 | Ce vezi | Cauza | Corect |
 |---------|-------|--------|
-| `'saluta' was not declared in this scope` | Funcția este scrisă după `main`, fără prototip | Mut-o înainte de `main` sau adaugă `void saluta();` sus |
-| Nu se întâmplă nimic când rulezi | Ai scris funcția, dar nu ai apelat-o | Adaugă `saluta();` în `main` |
+| `'saluta' was not declared in this scope` | Funcția este scrisă după `main`, fără prototip | Mută funcția înainte de `main` sau adaugă `void saluta();` sus |
+| Nu se întâmplă nimic când rulezi | Ai scris funcția, dar nu ai apelat funcția | Adaugă `saluta();` în `main` |
 | Eroare la `{` după numele funcției (de ex. `expected unqualified-id`) | Ai pus `;` după `void f()` la definiție | La definiție nu pui `;` înainte de `{`; la prototip da |
-| `'x' was not declared in this scope` | Folosești o variabilă locală din altă funcție | Declar-o în funcția unde o folosești |
+| `'x' was not declared in this scope` | Folosești o variabilă locală din altă funcție | Declară variabila în funcția unde o folosești |
 | Funcția se apelează, dar nu face nimic | Ai scris `saluta;` fără paranteze | `saluta();` |
 | Eroare la `void` | Ai scris `void saluta() { … }` în interiorul lui `main` | Funcțiile se scriu **în afara** altor funcții |
 | `redefinition of 'saluta'` | Ai două funcții cu același nume și aceeași formă | Fiecare funcție are un nume unic |

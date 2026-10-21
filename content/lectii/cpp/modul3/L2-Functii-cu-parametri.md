@@ -2,7 +2,7 @@
 **Modulul 3 · Funcții, string, algoritmi · 2 ore**  
 **Code Maker Club · Problem Solver**
 
-> Azi înveți să **trimiți informații** unei funcții. O funcție `linie()` desenează mereu aceeași linie; o funcție `linie(n)` desenează o linie de **orice lungime** i-o ceri. Parametrii fac funcțiile flexibile.  
+> Azi înveți să **trimiți informații** unei funcții. O funcție `linie()` desenează mereu aceeași linie; o funcție `linie(n)` desenează o linie de **orice lungime** pe care o ceri. Parametrii fac funcțiile flexibile.  
 > Proiect: **„Desenatorul parametric”** · fișier: `Prenume_Nume_M3L2.cpp` (ex. `Ana_Pop_M3L2.cpp`)
 
 ---
@@ -77,7 +77,7 @@ int main() {
 
 Funcția `linie` este scrisă o singură dată, dar trei apeluri produc trei linii diferite. La primul apel, `lungime` este `5`; la al doilea, `12`; la al treilea, `3`.
 
-### Exemplul 2 — Două parametri: caracter și lungime **[Esențial]**
+### Exemplul 2 — Doi parametri: caracter și lungime **[Esențial]**
 
 ```cpp
 #include <iostream>
@@ -323,7 +323,7 @@ Raza 2.5 -> aria 19.6349
 Raza 10 -> aria 314.159
 ```
 
-Chiar dacă al doilea apel primește `10` (un număr întreg), parametrul este `double`, deci `10` se transformă automat în `10.0`. Invers (de la zecimal la întreg) s-ar pierde zecimalele, de aceea fii atent la tipuri.
+Chiar dacă al doilea apel primește `10` (un număr întreg), parametrul este `double`, deci `10` se transformă automat în `10.0`. Invers (de la zecimal la întreg) ar fi pierdute zecimalele, de aceea fii atent la tipuri.
 
 ### Exemplul 10 — `string` și `int`: repetarea unui text
 
@@ -434,7 +434,7 @@ Inainte: 50 60 70 80
 Dupa:    60 70 80 90 
 ```
 
-După apel, vectorul din `main` s-a schimbat. Aceasta este o diferență importantă: valorile simple se copiază, vectorii se transmit „pe original”. Folosește asta cu grijă: o funcție care primește un vector îl poate strica.
+După apel, vectorul din `main` a fost schimbat. Aceasta este o diferență importantă: valorile simple se copiază, vectorii se transmit „pe original”. Folosește asta cu grijă: o funcție care primește un vector îl poate strica.
 
 ### Exemplul 13 — Referința, cel mai simplu caz **[Esențial]**
 
@@ -758,7 +758,7 @@ Scrie funcțiile: `afiseazaMedia(double a, double b)`, `afiseazaMaxim(int a, int
 Scrie trei funcții: `citesteVector(int v[], int n)`, `afiseazaVector(int v[], int n)` și `inverseaza(int v[], int n)` (inversează vectorul pe loc). În `main` citește 6 numere, inversează-le și afișează-le.
 
 ### Exercițiul D — Referințe *(Provocare, opțional)*
-Scrie o funcție `minMax(int a, int b, int &mic, int &mare)` care pune în `mic` valoarea cea mai mică dintre `a` și `b`, iar în `mare` pe cea mai mare. Testeaz-o în `main`.
+Scrie o funcție `minMax(int a, int b, int &mic, int &mare)` care pune în `mic` valoarea cea mai mică dintre `a` și `b`, iar în `mare` pe cea mai mare. Testează funcția în `main`.
 
 ### Exercițiul E — Chenar cu mesaj
 Scrie o funcție `chenar(string mesaj, int latime)` care afișează mesajul încadrat între două linii de `*`, de lățimea dată.
@@ -774,7 +774,7 @@ Scrie o funcție `chenar(string mesaj, int latime)` care afișează mesajul înc
 
 ## Bonus / Provocare (dacă ai terminat)
 - [ ] Scrie o funcție `ceas(int ore, int minute)` care afișează ora în forma `07:05` (cu zero în față când e nevoie)  
-- [ ] Scrie o funcție `tabla(int n)` care afișează tabla înmulțirii cu `n`, și apeleaz-o pentru toate numerele de la 1 la 9  
+- [ ] Scrie o funcție `tabla(int n)` care afișează tabla înmulțirii cu `n`, și apelează funcția pentru toate numerele de la 1 la 9  
 - [ ] Scrie o funcție `sortare(int v[], int n)` care sortează un vector (Modulul 2, lecția 9), folosind `schimba(int &a, int &b)`  
 - [ ] Încearcă o **valoare implicită**: `void linie(int lungime = 10)`; apelează `linie();` și `linie(4);`  
 - [ ] Scrie o funcție `chenar(string text)` care calculează singură lățimea chenarului după lungimea textului (`text.length()`)  
@@ -819,9 +819,9 @@ Scrie o funcție `chenar(string mesaj, int latime)` care afișează mesajul înc
 
 ## Temă
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
-2. Scrie o funcție `triunghi(int n)` și una `piramida(int n)`; apeleaz-o pentru `n` de la 1 la 4.  
+2. Scrie o funcție `triunghi(int n)` și una `piramida(int n)`; apelează funcția pentru `n` de la 1 la 4.  
 3. Scrie un program care citește 5 note într-un vector, apoi apelează funcții separate pentru: afișare, medie, maxim și numărul notelor peste medie (fiecare afișează rezultatul).  
-4. Scrie o funcție `schimba(int &a, int &b)` și folosește-o pentru a inversa un vector de 6 elemente.  
+4. Scrie o funcție `schimba(int &a, int &b)` și folosește funcția pentru a inversa un vector de 6 elemente.  
 5. **Bonus:** scrie o funcție `mesaj(string text, int ori, char separator)` care afișează textul de `ori` ori, despărțit prin caracterul dat.  
 6. Salvează tot ca `Tema_M3L2_Prenume_Nume.cpp`.
 

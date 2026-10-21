@@ -35,7 +35,7 @@ Aproape tot ce vezi într-o aplicație este text: nume, parole, mesaje, adrese, 
 
 ## 1. Lungime și acces la litere
 
-Un `string` este un șir de caractere. Pentru a-l folosi ai nevoie de `#include <string>`. Fiecare literă are o **poziție**, numerotată ca la vectori: **de la 0**.
+Un `string` este un șir de caractere. Ca să folosești `string`, ai nevoie de `#include <string>`. Fiecare literă are o **poziție**, numerotată ca la vectori: **de la 0**.
 
 ```
 text:      C   o   d   e
@@ -675,7 +675,7 @@ Ai pus cap la cap: `getline`, funcții cu `return`, `string`, bucle și o verifi
 Scrie programul din Exemplul 16. Adaugă: afișarea inițialelor (ca la Exemplul 15) și a numelui scris cu câte o literă pe rând.
 
 ### Exercițiul B — Cuvânt invers
-Citește un cuvânt și afișează-l invers. Apoi spune dacă este palindrom, folosind funcții.
+Citește un cuvânt și afișează cuvântul invers. Apoi spune dacă este palindrom, folosind funcții.
 
 ### Exercițiul C — Lipire
 Citește prenumele și numele pe rânduri diferite (cu `cin >>`) și afișează `Nume, Prenume` (de exemplu `Popescu, Ana`).
@@ -700,7 +700,7 @@ Citește un cuvânt și afișează o piramidă formată din prefixele lui: pentr
 - [ ] Afișează un text cu fiecare literă dublată: `casa` → `ccaassaa`  
 - [ ] Afișează textul pe verticală, ca un „zid de litere”  
 - [ ] Verifică dacă o propoziție este palindrom ignorând spațiile (de exemplu `"ele fac cafele"`)  
-- [ ] Citește mai multe cuvinte și afișează-l pe cel mai lung  
+- [ ] Citește mai multe cuvinte și afișează cel mai lung cuvânt  
 - [ ] Afișează un text cu literele în ordine inversă, dar cu cuvintele în ordinea inițială  
 
 ---

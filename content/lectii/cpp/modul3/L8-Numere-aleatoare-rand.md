@@ -97,7 +97,7 @@ int main() {
 1404358582
 ```
 
-Linia `srand(time(0));` se pune **o singură dată**, la începutul lui `main`. Dacă ai pune-o într-o buclă sau într-o funcție apelată des, în aceeași secundă ai primi mereu aceleași numere (pentru că `time(0)` nu s-a schimbat).
+Linia `srand(time(0));` se pune **o singură dată**, la începutul lui `main`. Dacă ai pune linia într-o buclă sau într-o funcție apelată des, în aceeași secundă ai primi mereu aceleași numere (pentru că `time(0)` rămâne la fel).
 
 **Încearcă tu (6 min)**  
 - [ ] Rulezi Exemplul 1 de trei ori și compari rezultatele  
@@ -148,7 +148,7 @@ Ai aruncat zarul: 1
 
 ### Exemplul 4 — Funcție `intre(a, b)` **[Esențial]**
 
-Folosim formula de mai des, deci o punem într-o funcție:
+Formula de mai sus se folosește des, deci o punem într-o funcție:
 
 ```cpp
 #include <iostream>
@@ -453,7 +453,7 @@ int main() {
     int incercare;
     int incercari = 0;
 
-    cout << "M-am gandit la un numar intre 1 si 100. Ghiceste-l!" << endl;
+    cout << "Ma gandesc la un numar intre 1 si 100. Ghiceste numarul!" << endl;
 
     do {
         cout << "Incercarea ta: ";
@@ -474,7 +474,7 @@ int main() {
 
 **Exemplu de rulare** (strategia „mijlocul intervalului”; numărul secret diferă la fiecare joc):
 ```
-M-am gandit la un numar intre 1 si 100. Ghiceste-l!
+Ma gandesc la un numar intre 1 si 100. Ghiceste numarul!
 Incercarea ta: 50
 Prea mare!
 Incercarea ta: 25
@@ -863,7 +863,7 @@ Aruncă două zaruri de 10000 de ori și numără de câte ori iese fiecare sum�
 2. Scrie un program „Zar de joc de rol” care citește ce zar vrea utilizatorul (d4, d6, d8, d10, d12, d20) și îl aruncă de câte ori cere.  
 3. Scrie un program care generează 10 note aleatoare între 1 și 10 într-un vector, apoi afișează: notele, media, minimul, maximul și numărul notelor de 10.  
 4. Scrie un joc „Aruncă cât mai aproape de 21”: pe rând, jucătorul poate arunca un zar de câte ori vrea; suma nu trebuie să depășească 21. Dacă o depășește, pierde.  
-5. **Bonus:** scrie un program care generează un „cod secret” de 4 cifre diferite, iar jucătorul încearcă să-l ghicească; după fiecare încercare afișezi câte cifre sunt la locul lor (jocul „Mastermind” simplificat).  
+5. **Bonus:** scrie un program care generează un „cod secret” de 4 cifre diferite, iar jucătorul încearcă să ghicească codul; după fiecare încercare afișezi câte cifre sunt la locul lor (jocul „Mastermind” simplificat).  
 6. Salvează tot ca `Tema_M3L8_Prenume_Nume.cpp`.
 
 ---

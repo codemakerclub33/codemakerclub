@@ -73,9 +73,9 @@ int main() {
 
 **Ieșire:**
 ```
-******************
+*******************
 * Code Maker Club *
-******************
+*******************
 ###########
 # Modul 3 #
 ###########
@@ -349,7 +349,7 @@ C
 !
 ```
 
-Literele mari rămân mari, literele mici rămân mici, iar celelalte caractere (spațiu, cifre, semne) rămân neschimbate. Observă că `'z'` cu cheia 3 devine `'c'`: alfabetul s-a rotit.
+Literele mari rămân mari, literele mici rămân mici, iar celelalte caractere (spațiu, cifre, semne) rămân neschimbate. Observă că `'z'` cu cheia 3 devine `'c'`: alfabetul se rotește în cerc.
 
 ### Exemplul 9 — Criptăm un text întreg **[Esențial]**
 
@@ -456,7 +456,7 @@ Un cifru Cezar poate fi spart ușor: există doar 25 de chei posibile, deci le �
 
 **Încearcă tu (8 min)**  
 - [ ] Criptezi numele tău cu cheia 5 și îl decriptezi înapoi  
-- [ ] Trimiți un mesaj criptat unui coleg și îl rogi să-l spargă  
+- [ ] Trimiți un mesaj criptat unui coleg și îl rogi să îl spargă  
 - [ ] Verifici că `decripteaza(cripteaza(x, k), k)` îți dă mesajul inițial  
 
 ---
@@ -666,7 +666,7 @@ int main() { int a = 5; f(a); cout << a; }
 5. Divizorii vin în perechi, iar unul din ei este mereu mai mic sau egal cu `√n`.
 6. În `B` (`Y → Z → A → B`).
 7. `4`, `'c'`, `'a'`.
-8. Dacă l-ai apela mereu, într-o secundă ai primi aceeași secvență de numere; sămânța se stabilește o singură dată, la pornirea programului.
+8. Dacă ai apela funcția mereu, într-o secundă ai primi aceeași secvență de numere; sămânța se stabilește o singură dată, la pornirea programului.
 
 </details>
 
@@ -849,7 +849,7 @@ void joculSeifului() {
         incercari++;
 
         if (incercare == cod) {
-            cout << "Seiful s-a deschis din " << incercari << " incercari!" << endl;
+            cout << "Seiful a fost deschis din " << incercari << " incercari!" << endl;
             return;
         }
         if (incercare < cod) {
@@ -923,7 +923,7 @@ int main() {
         }
     } while (optiune != 0);
 
-    cout << "Seiful s-a inchis. La revedere!" << endl;
+    cout << "Seiful este inchis. La revedere!" << endl;
     return 0;
 }
 ```
@@ -985,7 +985,7 @@ Decriptat: Salut Ana
 5. Deschide seiful (joc)
 0. Iesire
 Alege: 0
-Seiful s-a inchis. La revedere!
+Seiful este inchis. La revedere!
 ```
 
 În acest proiect ai folosit tot ce înveți în modul: funcții cu parametri, cu `return` și cu referințe; `string` și `<cctype>`; `rand` pentru parole și pentru joc; meniu cu `do-while`; validări; `cin.ignore()` înainte de `getline`; comentarii care împart codul în secțiuni.
@@ -1037,7 +1037,7 @@ Verifică programul după regulile din lecția 9: nume clare, indentare corectă
 | După `Z` apar caractere ciudate | Ai uitat `% 26` | `'A' + (c - 'A' + cheie) % 26` |
 | Decriptarea nu dă mesajul inițial | Ai folosit aceeași cheie, nu `26 - cheie` | `cripteaza(text, 26 - cheie % 26)` |
 | `getline` „sare” peste mesaj | Ai citit înainte un număr cu `cin >>` | `cin.ignore();` înainte de `getline` |
-| Parolele sunt aceleași la fiecare rulare | Lipsește `srand(time(0))` | Apelează-l o dată în `main` |
+| Parolele sunt aceleași la fiecare rulare | Lipsește `srand(time(0))` | Apelează funcția o dată în `main` |
 | Parola generată nu are cifră | Caracterele sunt alese complet la întâmplare | Adaugă obligatoriu câte unul din fiecare categorie |
 | Programul se blochează la litere în loc de numere | `cin >> optiune` primește text | Deocamdată introduci doar numere |
 | `main` are 100 de linii | Toată logica este în `main` | Mută fiecare opțiune într-o funcție |

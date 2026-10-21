@@ -1,6 +1,6 @@
 Lecția unu din Modulul trei. Funcții fără parametri.
 
-Astăzi înveți să-ți împarți programul în bucăți mici, cu nume, numite funcții. În loc să scrii același cod de zece ori, îl scrii o singură dată și îl chemi de câte ori ai nevoie. Fișierul tău este Prenume, linie jos, Nume, linie jos, M trei, L unu.
+Astăzi înveți să împarți programul în bucăți mici, cu nume, numite funcții. În loc să scrii același cod de zece ori, îl scrii o singură dată și îl chemi de câte ori ai nevoie. Fișierul tău este Prenume, linie jos, Nume, linie jos, M trei, L unu.
 
 Obiectivul. Minim: două funcții proprii, chemate din main. Complet: minim, plus o funcție care cheamă altă funcție și un program organizat pe funcții, de exemplu cu meniu, titlu și conținut.
 
@@ -16,7 +16,7 @@ Al cincilea pas. Variabile locale. O variabilă creată într-o funcție există
 
 Al șaselea pas. Proiecte. Un meniu cu funcții, un robot desenat din bucăți și mini-proiectul Cartea de vizită.
 
-Greșeli frecvente. Funcția este scrisă după main, fără prototip. Ai scris funcția, dar ai uitat s-o chemi. Ai pus punct și virgulă după numele funcției, la definiție. Ai scris numele funcției fără paranteze. Ai scris o funcție în interiorul lui main: funcțiile se scriu în afara altor funcții. Ai folosit în altă funcție o variabilă locală.
+Greșeli frecvente. Funcția este scrisă după main, fără prototip. Ai scris funcția, dar ai uitat să chemi funcția. Ai pus punct și virgulă după numele funcției, la definiție. Ai scris numele funcției fără paranteze. Ai scris o funcție în interiorul lui main: funcțiile se scriu în afara altor funcții. Ai folosit în altă funcție o variabilă locală.
 
 Tema. Faci programul Salutul zilei, cu trei funcții: dimineața, prânz și seara. Faci o funcție care desenează un dreptunghi gol din steluțe și una care îl desenează plin. Salvezi ca Tema, linie jos, M trei, L unu.
 

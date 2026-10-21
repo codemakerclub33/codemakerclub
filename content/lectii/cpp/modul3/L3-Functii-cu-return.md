@@ -2,7 +2,7 @@
 **Modulul 3 · Funcții, string, algoritmi · 2 ore**  
 **Code Maker Club · Problem Solver**
 
-> Până acum funcțiile tale **afișau** ceva. Azi înveți funcții care **calculează un răspuns și îl trimit înapoi**, cu `return`, ca să-l poți folosi mai departe: într-o variabilă, într-o condiție sau în alt calcul.  
+> Până acum funcțiile tale **afișau** ceva. Azi înveți funcții care **calculează un răspuns și îl trimit înapoi**, cu `return`, ca să poți folosi răspunsul mai departe: într-o variabilă, într-o condiție sau în alt calcul.  
 > Proiect: **„Calculatorul cu funcții”** · fișier: `Prenume_Nume_M3L3.cpp` (ex. `Ana_Pop_M3L3.cpp`)
 
 ---
@@ -929,7 +929,7 @@ Scrie funcția `string calificativ(double medie)` cu cinci categorii (Excelent, 
 1. Refă **Exemplele 1–16** pe calculatorul tău.  
 2. Scrie funcțiile `maximVector`, `minimVector`, `media` și un program care citește 7 temperaturi și afișează un raport (maxim, minim, medie, diferența maxim − minim).  
 3. Scrie o funcție `bool estePalindrom(int n)` care verifică dacă un număr se citește la fel din ambele sensuri (de exemplu `12321`) și afișează toate palindroamele între 100 și 300.  
-4. Scrie funcția `long long sumaPana(int n)` care returnează `1 + 2 + … + n`, apoi verifică-o cu formula `n * (n + 1) / 2` pentru `n = 1…10`.  
+4. Scrie funcția `long long sumaPana(int n)` care returnează `1 + 2 + … + n`, apoi verifică funcția cu formula `n * (n + 1) / 2` pentru `n = 1…10`.  
 5. **Bonus:** scrie funcții de test (ca în Exemplul 14) pentru toate funcțiile tale de la tema 2–4.  
 6. Salvează tot ca `Tema_M3L3_Prenume_Nume.cpp`.
 

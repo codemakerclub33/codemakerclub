@@ -694,7 +694,7 @@ Vectorul `prim` are valoarea `true` pentru numerele despre care credem că sunt 
 
 ### Exemplul 15 — Conjectura lui Goldbach *(Provocare, opțional)*
 
-Se crede (dar nu s-a demonstrat!) că **orice număr par mai mare ca 2 este suma a două numere prime**. Verificăm pentru câteva numere.
+Se crede (dar nu a fost demonstrat!) că **orice număr par mai mare ca 2 este suma a două numere prime**. Verificăm pentru câteva numere.
 
 ```cpp
 #include <iostream>
@@ -983,7 +983,7 @@ Scrie programul din Exemplul 16 și adaugă o opțiune: „Următorul număr pri
 Afișează numerele prime de 3 cifre care sunt și palindroame (de exemplu `101`, `131`). Poți folosi funcția `oglindit` din lecția anterioară.
 
 ### Exercițiul C — Fracții
-Citește o fracție (numărător și numitor), simplifică-o și afișează rezultatul. Dacă numitorul este `0`, afișează un mesaj de eroare.
+Citește o fracție (numărător și numitor), simplifică fracția și afișează rezultatul. Dacă numitorul este `0`, afișează un mesaj de eroare.
 
 ### Exercițiul D — Prime între ele
 Citește două numere și spune dacă sunt prime între ele (cmmdc = 1). Afișează apoi toate numerele de la 1 la 50 care sunt prime cu 12.
