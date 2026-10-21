@@ -12,7 +12,7 @@ Al treilea pas. Probleme cu împărțire și rest. Restul la zece este ultima ci
 
 Al patrulea pas. Proiecte mici. Construiești un calculator complet și un program care schimbă între ele două valori citite.
 
-Greșeli frecvente. Programul stă și așteaptă: probabil are nevoie de un număr, tastează-l și apasă Enter. Ai întors săgețile, de exemplu c-in cu semne mai mic. Ai uitat să citești variabila. Ai scris numele variabilei între ghilimele. Ai împărțit la zero: asta oprește programul. Ai folosit procentul cu numere cu zecimale, dar el merge doar cu numere întregi.
+Greșeli frecvente. Programul stă și așteaptă: probabil are nevoie de un număr, tastează numărul și apasă Enter. Ai întors săgețile, de exemplu c-in cu semne mai mic. Ai uitat să citești variabila. Ai scris numele variabilei între ghilimele. Ai împărțit la zero: asta oprește programul. Ai folosit procentul cu numere cu zecimale, dar el merge doar cu numere întregi.
 
 Tema. Citești secundele și le afișezi ca minute și secunde. Citești prețul unui bilet și numărul de persoane și afli totalul și restul dintr-o bancnotă de două sute de lei. Citești un număr de trei cifre și afli suma și produsul cifrelor. Salvezi ca Tema, linie jos, L patru.
 

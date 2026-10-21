@@ -616,7 +616,7 @@ Citești suma de bani pe care o ai și prețul unui covrig. Afișează câți co
 ## Bonus / Provocare (dacă ai terminat)
 - [ ] Media a 3 note (pe `int`) și observă ce se pierde după virgulă  
 - [ ] Calculează ultima cifră a **produsului** a două numere citite, fără să înmulțești tot numărul (ajută: `(a % 10) * (b % 10) % 10`)  
-- [ ] Citește un număr de 4 cifre și afișează-l cu cifrele **în ordine inversă** (de exemplu `1234` devine `4321`)  
+- [ ] Citește un număr de 4 cifre și afișează numărul cu cifrele **în ordine inversă** (de exemplu `1234` devine `4321`)  
 - [ ] Citește vârsta în ani și afișează câte luni, câte zile și câte ore are (aproximativ, cu un an de 365 de zile)  
 - [ ] Calculează ce zi a săptămânii va fi peste `n` zile, dacă azi este ziua cu numărul `z` (între 1 și 7)  
 

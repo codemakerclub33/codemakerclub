@@ -42,7 +42,7 @@ switch (expresie) {
         // se executa daca expresie == valoare2
         break;
     default:
-        // se executa daca nu s-a potrivit niciun case
+        // se executa daca nu se potrivește niciun case
 }
 ```
 
@@ -664,7 +664,7 @@ Observă două idei noi:
 - `switch` poate **seta o variabilă** (`pret`), iar restul programului o folosește;
 - pe ramura `default` folosim `return 0;`, care **încheie programul** pe loc. Nu mai are sens să cerem cantitatea pentru un produs care nu există.
 
-### Exemplul 14 — Aventura ta (alege-ți drumul)
+### Exemplul 14 — Aventura ta (alege drumul)
 
 ```cpp
 #include <iostream>
@@ -688,7 +688,7 @@ int main() {
             cout << "Ajungi la un lac. Un pescar te invita la masa." << endl;
             break;
         case 3:
-            cout << "Acasa e bine, dar aventura s-a terminat." << endl;
+            cout << "Acasa e bine, dar aventura se termina aici." << endl;
             break;
         default:
             cout << "Stai si te gandesti... si se face seara." << endl;
@@ -842,7 +842,7 @@ Afișează un meniu: 1 = adunare, 2 = scădere, 3 = înmulțire, 4 = împărțir
 Citește numărul unei luni și afișează anotimpul, grupând lunile cu mai multe `case`-uri puse unul sub altul.
 
 ### Exercițiul E — Greșeala cu `break`
-Ia un program al tău și scoate intenționat un `break`. Rulează-l și explică pe foaie ce se afișează în plus și de ce.
+Ia un program al tău și scoate intenționat un `break`. Rulează programul și explică pe foaie ce se afișează în plus și de ce.
 
 **Gata când:**
 - [ ] Programul compilează fără erori  
@@ -858,7 +858,7 @@ Ia un program al tău și scoate intenționat un `break`. Rulează-l și explic�
 - [ ] Zilele săptămânii cu grupare: zile de lucru și weekend  
 - [ ] Meniu calculator cu operatorul citit ca `char` (`+`, `-`, `*`, `/`)  
 - [ ] Un meniu cu două niveluri, ca în Exemplul 15  
-- [ ] Adaugă o opțiune în plus la meniul de acasă (opțiunea 5) și testeaz-o  
+- [ ] Adaugă o opțiune în plus la meniul de acasă (opțiunea 5) și testează opțiunea  
 - [ ] Pe foaie, demonstrează fall-through cu un exemplu și desenează săgeți  
 
 ---
@@ -875,7 +875,7 @@ Ia un program al tău și scoate intenționat un `break`. Rulează-l și explic�
 | `case 1` și `case 1` | Aceeași valoare apare de două ori | Fiecare valoare doar o dată |
 | Pentru un `char`, `case a:` | Lipsesc apostrofurile | `case 'a':` |
 | Meniul nu răspunde la opțiuni greșite | Lipsește `default` | Adaugă `default:` |
-| Codul de după `switch` rulează, deși opțiunea e greșită | Programul nu s-a oprit pe `default` | Folosește `return 0;` în `default` dacă vrei să se oprească |
+| Codul de după `switch` rulează, deși opțiunea e greșită | Programul nu se oprește pe `default` | Folosește `return 0;` în `default` dacă vrei să se oprească |
 
 ---
 

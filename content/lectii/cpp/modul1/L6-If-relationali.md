@@ -260,7 +260,7 @@ int main() {
 scor = 10
 ```
 
-Condiția `scor == 5` **compară**: este falsă, deci mesajul nu apare. Ce s-ar întâmpla dacă ai scrie din greșeală `scor = 5`? Instrucțiunea ar **pune** valoarea `5` în `scor`, ar considera rezultatul adevărat (orice valoare diferită de 0 este adevărată) și ar afișa mesajul, iar scorul ar fi stricat. Compilatorul te poate avertiza, dar nu întotdeauna. Verifică mereu că ai scris **două** semne la comparație.
+Condiția `scor == 5` **compară**: este falsă, deci mesajul nu apare. Ce ar fi dacă ai scrie din greșeală `scor = 5`? Instrucțiunea ar **pune** valoarea `5` în `scor`, ar considera rezultatul adevărat (orice valoare diferită de 0 este adevărată) și ar afișa mesajul, iar scorul ar fi stricat. Compilatorul te poate avertiza, dar nu întotdeauna. Verifică mereu că ai scris **două** semne la comparație.
 
 | Scrii | Face |
 |-------|------|
@@ -636,7 +636,7 @@ Citește un cuvânt. Dacă este exact „codekids”, afișează „Bine ai veni
 - [ ] Un program cu **două** instrucțiuni `if` separate, care afișează mesaje independente  
 - [ ] Citește două numere și afișează „diferența lor este mai mare ca 10” când e cazul  
 - [ ] Citește un an și afișează dacă este divizibil cu 4 (primul pas spre anul bisect)  
-- [ ] Scrie intenționat `=` în loc de `==` într-un `if`, rulează programul și explică pe foaie ce s-a întâmplat  
+- [ ] Scrie intenționat `=` în loc de `==` într-un `if`, rulează programul și explică pe foaie ce se întâmplă  
 - [ ] Citește o literă și afișează „vocală” dacă este `a` sau `e` (cu un `if` pentru fiecare)  
 
 ---
@@ -652,8 +652,8 @@ Citește un cuvânt. Dacă este exact „codekids”, afișează „Bine ai veni
 | `if (5 < x < 10)` nu merge cum vrei | În C++ nu se înlănțuie comparațiile | Se rezolvă cu `&&` (lecția 8) |
 | `if (parola = "abc")` | `=` pune în loc să compare | `if (parola == "abc")` |
 | `if (x == 'abc')` | Apostrofurile sunt doar pentru un caracter | `if (text == "abc")` pentru `string` |
-| Un mesaj nu apare niciodată | Condiția nu poate fi adevărată (de exemplu `x < 0 && x > 5`) | Verifică logica cu valori concrete |
-| Nu știi care ramură s-a executat | Lipsesc mesajele de test | Adaugă un `cout` în fiecare `if` |
+| Un mesaj nu apare niciodată | Condiția nu poate fi adevărată (de exemplu `x < 0 && x > 5`, cu `&&` din lecția 8) | Verifică logica cu valori concrete |
+| Nu știi care ramură se execută | Lipsesc mesajele de test | Adaugă un `cout` în fiecare `if` |
 
 ---
 

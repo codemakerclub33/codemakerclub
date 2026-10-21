@@ -32,7 +32,7 @@ Un modul se încheie cu un proiect pentru că programarea se învață **constru
 
 ## 1. Recapitulare: cele 9 lecții în 9 programe
 
-Fiecare program mic de mai jos rezumă o lecție. Citește-l, spune cu voce tare ce face și ce lecție ilustrează.
+Fiecare program mic de mai jos rezumă o lecție. Citește programul, spune cu voce tare ce face și ce lecție ilustrează.
 
 ### Exemplul 1 — L1: afișare și caractere speciale
 
@@ -282,7 +282,7 @@ Joc in pauza.
 **Încearcă tu (10 min)**  
 - [ ] Alegi 3 dintre cele 9 programe și le rescrii **fără să te uiți**  
 - [ ] Spui cu voce tare, pentru fiecare, ce lecție ilustrează  
-- [ ] Notezi pe foaie ce ți s-a părut mai greu din tot Modulul 1  
+- [ ] Notezi pe foaie ce ți se pare mai greu din tot Modulul 1  
 
 ---
 
@@ -292,7 +292,7 @@ Un programator petrece mult timp **căutând greșeli**. Este o aptitudine care 
 
 ### Exemplul 10 — Programul cu 6 greșeli
 
-Programul ar trebui să citească două numere și să spună care este mai mare. Are **6 greșeli** (de scriere și de logică). Găsește-le înainte de a citi soluția.
+Programul ar trebui să citească două numere și să spună care este mai mare. Are **6 greșeli** (de scriere și de logică). Găsește greșelile înainte de a citi soluția.
 
 ```cpp
 #include <iostream>
@@ -313,7 +313,7 @@ int main() {
 }
 ```
 
-**Cum lucrezi:** compilează programul, citește prima eroare, repară-o, compilează iar. Una câte una.
+**Cum lucrezi:** compilează programul, citește prima eroare, repară eroarea, compilează iar. Una câte una.
 
 ### Exemplul 11 — Soluția
 
@@ -369,7 +369,7 @@ Alegi **unul** dintre cele două proiecte. Ambele folosesc ce ai învățat în 
 
 ## 4. Modele pentru proiecte
 
-Cele cinci exemple de mai jos sunt modele. Nu le copia. Folosește-le ca idee și construiește programul **tău**, cu întrebări sau operații alese de tine.
+Cele cinci exemple de mai jos sunt modele. Nu copia modelele. Folosește exemplele ca idee și construiește programul **tău**, cu întrebări sau operații alese de tine.
 
 ### Proiectul A — Quiz
 
@@ -842,7 +842,7 @@ Fără să rulezi nimic, scrie pe foaie ce afișează fiecare secvență. Apoi v
 ## Proiect / exerciții de finalizat AZI
 
 ### Proiectul tău (obligatoriu)
-Construiește **Quiz-ul** sau **Calculatorul cu meniu**, urmând lista de verificare din secțiunea 3. Salvează-l ca `Prenume_Nume_M1_Proiect.cpp`.
+Construiește **Quiz-ul** sau **Calculatorul cu meniu**, urmând lista de verificare din secțiunea 3. Salvează proiectul ca `Prenume_Nume_M1_Proiect.cpp`.
 
 ### Dacă termini repede
 Treci pe lista de bonusuri de mai jos.
@@ -852,8 +852,8 @@ Treci pe lista de bonusuri de mai jos.
 - [ ] Are antet, comentarii, indentare corectă și mesaje clare  
 - [ ] Folosește `cin`, `cout` și `if` / `else if` / `switch`  
 - [ ] Reacționează corect la date greșite (`else` / `default`)  
-- [ ] L-ai testat cu minimum 2 seturi de date  
-- [ ] L-ai prezentat și l-ai explicat în 30 de secunde  
+- [ ] Ai testat programul cu minimum 2 seturi de date  
+- [ ] Ai prezentat programul și ai explicat ce face în 30 de secunde  
 - [ ] Ai primit insigna **Junior Coder**  
 
 ---
@@ -914,8 +914,8 @@ Felicitări! Dacă ai bifat toată lista de verificare, ai primit insigna **Juni
 
 ## Temă
 1. Îmbunătățește proiectul cu **o singură** idee mică: un mesaj în plus, o opțiune nouă sau o verificare suplimentară.  
-2. Pe foaie, scrie 3 lucruri pe care le-ai învățat în Modulul 1 și 1 lucru pe care vrei să-l înțelegi mai bine.  
-3. Repetă cele 9 programe de recapitulare (Exemplele 1–9) și rescrie-le din memorie.  
+2. Pe foaie, scrie 3 lucruri învățate în Modulul 1 și 1 lucru pe care vrei să îl înțelegi mai bine.  
+3. Repetă cele 9 programe de recapitulare (Exemplele 1–9) și rescrie programele din memorie.  
 4. **Bonus:** rezolvă 3 probleme simple de pe [pbinfo.ro](https://www.pbinfo.ro) legate de `cin`, `cout` și `if` (pe baza indicațiilor profesorului).  
 5. Salvează tot ca `Tema_L10_Prenume_Nume.cpp`.
 

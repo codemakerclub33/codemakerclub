@@ -10,7 +10,7 @@ Al doilea pas. Semnul egal înseamnă „pune în cutie”. Calculatorul rezolv�
 
 Al treilea pas. Calcule. Poți aduna, scădea și înmulți variabile. Ca la matematică, înmulțirea se face înaintea adunării, iar parantezele schimbă ordinea. Cu aceste calcule poți afla perimetrul și aria unui pătrat sau a unui dreptunghi.
 
-Al patrulea pas. Const. Dacă o valoare nu trebuie să se schimbe niciodată, o scrii cu cuvântul const în față. Dacă încerci s-o modifici, compilatorul te oprește. Mai înveți scurtături: plus egal adaugă la o variabilă, minus egal scade, iar plus plus mărește cu unu. Înveți și schimbul între două variabile, cu ajutorul unei a treia, ca la două pahare cu sucuri diferite.
+Al patrulea pas. Const. Dacă o valoare nu trebuie să se schimbe niciodată, o scrii cu cuvântul const în față. Dacă încerci să modifici constanta, compilatorul te oprește. Mai înveți scurtături: plus egal adaugă la o variabilă, minus egal scade, iar plus plus mărește cu unu. Înveți și schimbul între două variabile, cu ajutorul unei a treia, ca la două pahare cu sucuri diferite.
 
 Al cincilea pas. Proiecte mici. Faci o fișă a jucătorului și un bon de casă, cu variabile.
 

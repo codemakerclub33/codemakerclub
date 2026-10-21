@@ -6,15 +6,15 @@ Obiectivul. Minim: un program cu un antet și cel puțin trei comentarii utile. 
 
 Primul pas. Structura unui program. Include aduce biblioteca pentru afișare. Using namespace std ne lasă să scriem c-out simplu. Int main este punctul de start, iar tot ce rulează stă între acolade. Programul se execută de sus în jos, o instrucțiune după alta.
 
-Al doilea pas. Comentariile. Două bare oblice transformă o linie în comentariu. Compilatorul o ignoră, dar o citesc oamenii. Poți scrie comentariul pe o linie separată sau la capătul unei linii de cod. Pentru mai multe rânduri folosești bară oblică și steluță la început, apoi steluță și bară oblică la final. Un antet bun spune cine ești, ce face programul și când l-ai făcut.
+Al doilea pas. Comentariile. Două bare oblice transformă o linie în comentariu. Compilatorul o ignoră, dar o citesc oamenii. Poți scrie comentariul pe o linie separată sau la capătul unei linii de cod. Pentru mai multe rânduri folosești bară oblică și steluță la început, apoi steluță și bară oblică la final. Un antet bun spune cine ești, ce face programul și când ai făcut programul.
 
 Al treilea pas. Ce merită comentat. Un comentariu bun explică ideea, nu repetă codul. De exemplu, nu scrii „afișez salut” lângă o linie care afișează salut. Scrii mai degrabă pe ce secțiune a programului ești.
 
-Al patrulea pas. Indentarea. În interiorul acoladelor lași patru spații. Rândurile goale despart ideile. Același program poate arăta urât sau frumos, dar tu îl scrii frumos, ca să-l poți citi și peste o lună.
+Al patrulea pas. Indentarea. În interiorul acoladelor lași patru spații. Rândurile goale despart ideile. Același program poate arăta urât sau frumos, dar tu îl scrii frumos, ca să poți citi codul și peste o lună.
 
 Al cincilea pas. Comentariile ca instrument de test. Dacă vrei să vezi ce se întâmplă fără o linie, pui două bare oblice în fața ei. Pentru un bloc întreg folosești bară cu steluță. Atenție: return zero încheie programul, deci tot ce scrii după el nu se mai execută.
 
-Greșeli frecvente. Ai deschis un comentariu lung și ai uitat să-l închizi, iar tot programul dispare. Ai pus un comentariu lung în interiorul altui comentariu lung. Ai lăsat din greșeală două bare oblice în fața unei linii și codul nu mai face nimic. Ai uitat punct și virgulă. Ai uitat să închizi acolada de la main. Ai pus punct și virgulă după include sau după int main.
+Greșeli frecvente. Ai deschis un comentariu lung și ai uitat să închizi comentariul, iar tot programul dispare. Ai pus un comentariu lung în interiorul altui comentariu lung. Ai lăsat din greșeală două bare oblice în fața unei linii și codul nu mai face nimic. Ai uitat punct și virgulă. Ai uitat să închizi acolada de la main. Ai pus punct și virgulă după include sau după int main.
 
 Tema. Comentezi toate programele din lecția unu. Scrii o fișă de jucător într-un chenar, cu antet și comentarii pe secțiuni. Salvezi ca Tema, linie jos, L doi.
 

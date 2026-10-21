@@ -477,9 +477,9 @@ Nota (1-10): 6
 Promovat.
 ```
 
-În L6 am avut nevoie de `&&` pentru asta. Acum o rezolvi cu un lanț care **mai întâi elimină valorile invalide**, apoi decide pe cele valide. Programele reale fac exact așa.
+Cu `&&` (lecția 8) ai putea face asta și într-o singură condiție. Acum o rezolvi cu un lanț care **mai întâi elimină valorile invalide**, apoi decide pe cele valide. Programele reale fac exact așa.
 
-> **Regulă:** un `else` aparține mereu celui mai apropiat `if` din care nu a fost deja folosit. Dacă ai mai multe `if`-uri imbricate, **acoladele și indentarea** te ajută să vezi clar cine cu cine merge.
+> **Regulă:** un `else` aparține mereu celui mai apropiat `if` care nu are încă un `else`. Dacă ai mai multe `if`-uri imbricate, **acoladele și indentarea** te ajută să vezi clar cine cu cine merge.
 
 ---
 
@@ -495,7 +495,7 @@ int main() {
     const int SECRET = 37;
     int incercare;
 
-    cout << "Am ales un numar intre 1 si 100. Ghiceste-l: ";
+    cout << "Am ales un numar intre 1 si 100. Ghiceste numarul: ";
     cin >> incercare;
 
     if (incercare == SECRET) {
@@ -511,7 +511,7 @@ int main() {
 
 **Rulare** (tastezi `50`):
 ```
-Am ales un numar intre 1 si 100. Ghiceste-l: 50
+Am ales un numar intre 1 si 100. Ghiceste numarul: 50
 Prea mare. Incearca un numar mai mic.
 ```
 
@@ -647,7 +647,7 @@ Verificare: pentru 6 km plătești 10 + (6 − 2) · 3.5 = 10 + 14 = 24 lei.
 Citește o notă și afișează calificativul (Foarte bine / Bine / Suficient / Insuficient), cu un lanț `else if` și un `else` final. Alege tu pragurile.
 
 ### Exercițiul B — Maximul dintre trei numere
-Citește 3 numere și afișează-l pe cel mai mare. Rezolvă-l cu tehnica din Exemplul 13. Apoi află și minimul.
+Citește 3 numere și afișează numărul cel mai mare. Rezolvă problema cu tehnica din Exemplul 13. Apoi află și minimul.
 
 ### Exercițiul C — Anotimpul
 Citește numărul unei luni (1–12). Afișează anotimpul. Pentru un număr în afara intervalului, afișează un mesaj de eroare.
@@ -669,7 +669,7 @@ Alege un număr secret (în cod) și permite o singură încercare, cu mesajele 
 
 ## Bonus / Provocare (dacă ai terminat)
 - [ ] Maximul dintre 4 numere, cu tehnica din Exemplul 13  
-- [ ] Citește trei numere și afișează-le în ordine crescătoare (indiciu: afișează mai întâi minimul, apoi maximul, apoi cel rămas, calculat cu suma minus cele două)  
+- [ ] Citește trei numere și afișează numerele în ordine crescătoare (indiciu: afișează mai întâi minimul, apoi maximul, apoi cel rămas, calculat cu suma minus cele două)  
 - [ ] Calificativ cu note de 1 la 10, cu cazul separat „Nota invalidă” pentru valori în afara intervalului  
 - [ ] Tarif de parcare: prima oră 5 lei, următoarele ore câte 3 lei, iar peste 8 ore tarif fix de 25 de lei  
 - [ ] Diagramă pe foaie cu săgeți și romburi pentru Exemplul 5  
@@ -683,7 +683,7 @@ Alege un număr secret (în cod) și permite o singură încercare, cu mesajele 
 | `'else' without a previous 'if'` | `;` pus înainte de `else` sau acolade nepotrivite | `if (...) { ... } else { ... }` |
 | `else` cu condiție: `else (x > 0)` | `else` nu are condiție | Folosește `else if (x > 0)` |
 | Lanțul dă mereu primul răspuns | Cazurile sunt în ordine greșită | Pune cazul restrictiv primul |
-| Se afișează două mesaje | Ai folosit `if` separate, nu `else if` | Leagă-le cu `else if` |
+| Se afișează două mesaje | Ai folosit `if` separate, nu `else if` | Leagă condițiile cu `else if` |
 | Nu se afișează niciun mesaj | Lanțul nu are `else` și nicio condiție nu e adevărată | Adaugă `else` pentru restul cazurilor |
 | Un `else` pare să nu aparțină nimănui | Acolade lipsă sau puse greșit | Verifică perechile `{` și `}` |
 | `;` după `else` | Blocul `else` devine gol | Fără `;` după `else` |

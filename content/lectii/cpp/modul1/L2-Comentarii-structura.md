@@ -95,7 +95,7 @@ Pasul 3: termin
 Programul merge **de sus în jos**, exact în ordinea în care ai scris instrucțiunile. Dacă schimbi ordinea liniilor, se schimbă și ce vezi pe ecran.
 
 **Încearcă tu (5 min)**  
-- [ ] Rulezi Exemplul 2 și apoi inversezi două linii. Ce s-a schimbat?  
+- [ ] Rulezi Exemplul 2 și apoi inversezi două linii. Ce se schimbă?  
 - [ ] Explici pe foaie, cu cuvintele tale, rolul lui `main`  
 - [ ] Știi să spui pe de rost cele 4 părți ale scheletului  
 
@@ -136,11 +136,11 @@ using namespace std;
 int main() {
     cout << "Nivel: 1" << endl;   // afisez nivelul curent
     cout << "Scor: 0" << endl;    // la inceput scorul este zero
-    return 0;                     // programul s-a terminat bine
+    return 0;                     // programul se termina bine
 }
 ```
 
-Comentariul poate sta și **după** cod, pe aceeași linie. Pentru claritate, aliniază-le frumos unele sub altele.
+Comentariul poate sta și **după** cod, pe aceeași linie. Pentru claritate, aliniază comentariile frumos unele sub altele.
 
 ### Exemplul 5 — Comentariu pe mai multe linii
 
@@ -161,7 +161,7 @@ Tot ce se află între `/*` și `*/` este ignorat, indiferent câte rânduri ocu
 
 ### Exemplul 6 — Antetul unui program
 
-Pe primele rânduri ale unui program serios se scrie un **antet**: cine l-a făcut, când și ce face.
+Pe primele rânduri ale unui program serios se scrie un **antet**: cine a făcut programul, când și ce face.
 
 ```cpp
 /*
@@ -401,13 +401,13 @@ Observă ce ai combinat: antet, secțiuni, un comentariu la finalul unei linii, 
 ## Proiect / exerciții de finalizat AZI
 
 ### Exercițiul A — „Programul meu comentat” (obligatoriu)
-Ia un program din L1 și îmbunătățește-l:
+Ia un program din L1 și îmbunătățește programul:
 1. adaugă un antet cu numele tău, data și scopul programului;
 2. adaugă minimum 3 comentarii utile, pe secțiuni;
 3. verifică indentarea și rândurile goale.
 
 ### Exercițiul B — Fără comentarii inutile
-Citește codul de mai jos și rescrie-l cu comentarii **bune** (care explică ideea, nu repetă codul):
+Citește codul de mai jos și rescrie codul cu comentarii **bune** (care explică ideea, nu repetă codul):
 
 ```cpp
 #include <iostream>

@@ -18,4 +18,4 @@ Al cincilea pas. Mini-testul. Fără să rulezi nimic, scrii pe foaie ce afișea
 
 Greșeli frecvente. Scorul rămâne zero, pentru că punerea lui în plus este în afara if-ului sau compari cu un singur egal. Răspunsul din mai multe cuvinte nu este recunoscut, pentru că c-in citește un singur cuvânt. Rezultat greșit la împărțire, pentru că ai folosit int în loc de double. Programul se oprește la împărțirea cu zero, deci verifică împărțitorul. Litera mare nu este acceptată, deși răspunsul e corect.
 
-Tema. Îmbunătățești proiectul cu o singură idee mică. Scrii pe foaie trei lucruri învățate în modulul unu și unul pe care vrei să-l înțelegi mai bine. Bravo, ai terminat Modulul unu!
+Tema. Îmbunătățești proiectul cu o singură idee mică. Scrii pe foaie trei lucruri învățate în modulul unu și unul pe care vrei să îl înțelegi mai bine. Bravo, ai terminat Modulul unu!

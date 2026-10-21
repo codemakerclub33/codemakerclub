@@ -102,7 +102,7 @@ Scor dupa primul nivel: 50
 Scor dupa al doilea nivel: 120
 ```
 
-Observă: `int` se scrie **o singură dată**, la declarare. Când schimbi valoarea, scrii doar `scor = 50;`. Variabila păstrează **ultima** valoare pe care i-ai dat-o.
+Observă: `int` se scrie **o singură dată**, la declarare. Când schimbi valoarea, scrii doar `scor = 50;`. Variabila păstrează **ultima** valoare pe care ai dat variabilei.
 
 ### Exemplul 3 — Text și valoare pe același rând
 
@@ -424,7 +424,7 @@ scor--           ->  17
 | `x++;` | `x = x + 1;` |
 | `x--;` | `x = x - 1;` |
 
-Instrucțiunea `scor = scor + 5;` te poate încurca la început. Citește-o așa: „calculează `scor + 5`, apoi pune rezultatul înapoi în `scor`”. Este cum crește scorul într-un joc.
+Instrucțiunea `scor = scor + 5;` te poate încurca la început. Citește instrucțiunea așa: „calculează `scor + 5`, apoi pune rezultatul înapoi în `scor`”. Este cum crește scorul într-un joc.
 
 ### Exemplul 13 — Schimb între două variabile
 
@@ -559,16 +559,16 @@ int main() {
 ## Proiect / exerciții de finalizat AZI
 
 ### Exercițiul A — „Fișa jucătorului” (obligatoriu)
-Scrie un program cu minimum **3 variabile `int`** (de exemplu viață, scor, nivel). Afișează-le, modifică-le cel puțin o dată și afișează din nou valorile.
+Scrie un program cu minimum **3 variabile `int`** (de exemplu viață, scor, nivel). Afișează valorile, modifică variabilele cel puțin o dată și afișează din nou valorile.
 
 ### Exercițiul B — Aria și perimetrul pătratului
-Declară latura unui pătrat într-o variabilă. Calculează perimetrul și aria, apoi afișează-le cu text explicativ.
+Declară latura unui pătrat într-o variabilă. Calculează perimetrul și aria, apoi afișează rezultatele cu text explicativ.
 
 ### Exercițiul C — Bani de buzunar
 Ai `50` de lei. Cumperi 3 caiete de câte `6` lei și 2 pixuri de câte `4` lei. Calculează în program câți lei îți rămân. Folosește variabile, nu numere scrise direct în calcul.
 
 ### Exercițiul D — Interschimbare
-Declară `int a = 7, b = 15;` și interschimbă-le cu o a treia variabilă. Afișează valorile înainte și după.
+Declară `int a = 7, b = 15;` și interschimbă valorile cu o a treia variabilă. Afișează valorile înainte și după.
 
 ### Exercițiul E — O constantă și un calcul
 Declară `const int MINUTE_ORA = 60;`. Calculează câte minute are o zi școlară de 6 ore și afișează rezultatul.
@@ -588,7 +588,7 @@ Declară `const int MINUTE_ORA = 60;`. Calculează câte minute are o zi școlar
 - [ ] Interschimbă **trei** variabile, în cerc: `a` ia valoarea lui `b`, `b` pe a lui `c`, `c` pe a lui `a`  
 - [ ] Afișează o frază de forma „Am 12 ani, iar anul viitor voi avea 13 ani”, calculând al doilea număr  
 - [ ] Calculează câte secunde are o zi (24 · 60 · 60) cu constante pentru fiecare număr  
-- [ ] Declară o variabilă și afișează-o **înainte** să îi dai valoare. Observă ce apare și explică pe foaie de ce nu este bine  
+- [ ] Declară o variabilă și afișează variabila **înainte** să îi dai valoare. Observă ce apare și explică pe foaie de ce nu este bine  
 
 ---
 

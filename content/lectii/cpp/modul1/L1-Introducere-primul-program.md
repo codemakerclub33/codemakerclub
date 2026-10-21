@@ -62,7 +62,7 @@ Programul în care scrii, compilezi și rulezi codul se numește **IDE**. La ate
 **Încearcă tu (3 min)**  
 - [ ] Ai un fișier gol, salvat cu extensia `.cpp`  
 - [ ] Știi unde este butonul **Build and Run**  
-- [ ] Ți-ai scris numele în numele fișierului  
+- [ ] Ai scris numele tău în numele fișierului  
 
 ---
 
@@ -91,7 +91,7 @@ Salut, lume!
 | 2 | `using namespace std;` | Ne permite să scriem `cout` în loc de `std::cout` |
 | 4 | `int main() {` | **Punctul de start.** Programul rulează ce se află între `{` și `}` |
 | 5 | `cout << "Salut, lume!";` | Afișează textul dintre ghilimele |
-| 6 | `return 0;` | Spune că programul s-a terminat fără probleme |
+| 6 | `return 0;` | Spune că programul a terminat fără probleme |
 | 7 | `}` | Închide `main` |
 
 Trei reguli pe care să le ții minte de acum:
@@ -264,7 +264,7 @@ int main() {
 Profesorul a spus: "Bravo!"
 ```
 
-Fără bara `\` în fața ghilimelelor, compilatorul ar crede că textul s-a terminat și ar da eroare.
+Fără bara `\` în fața ghilimelelor, compilatorul ar crede că textul a luat sfârșit și ar da eroare.
 
 ### Exemplul 9 — Bara oblică într-o cale de fișier
 
@@ -503,12 +503,12 @@ Afișează cuvântul **CODEKIDS** cu câte o literă pe fiecare rând, în două
 |---------|-------|--------|
 | `expected ';'` | Ai uitat `;` la finalul instrucțiunii | `cout << "Salut";` |
 | `'Cout' was not declared` | Litere mari greșite | `cout` (litere mici) |
-| `'cout' was not declared` | Ai uitat `#include <iostream>` sau `using namespace std;` | Adaugă-le la început |
+| `'cout' was not declared` | Ai uitat `#include <iostream>` sau `using namespace std;` | Adaugă ambele linii la început |
 | Eroare la ghilimele | Ai folosit ghilimele curbe `“ ”` din Word sau din chat | Folosește `"` de la tastatură |
 | Ghilimelele din text dispar sau dau eroare | Ai uitat `\` în fața lor | `\"` |
-| Programul pornește și se închide imediat | Fereastra se închide după rulare | Rulează din **Build and Run** în Code::Blocks sau lasă fereastra să stea deschisă |
+| Programul pornește și se închide imediat | Ai rulat fișierul direct, din afara Code::Blocks | Rulează programul cu **Build and Run** din Code::Blocks, care ține fereastra deschisă |
 | Desenul e strâmb | Spații lipsă sau în plus la început de rând | Numără spațiile și compară rând cu rând |
-| `\n` apare ca text pe ecran | L-ai scris în afara ghilimelelor | `cout << "Text\n";` |
+| `\n` apare ca text pe ecran | Ai scris `\n` în afara ghilimelelor | `cout << "Text\n";` |
 
 **Cum citești o eroare:** compilatorul îți spune **linia** (de exemplu `main.cpp:6`) și o descriere. Începe întotdeauna cu **prima** eroare din listă; adesea celelalte dispar după ce o repari pe aceea.
 

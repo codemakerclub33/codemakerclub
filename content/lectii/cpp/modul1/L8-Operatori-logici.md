@@ -38,7 +38,7 @@ Regulile din viața reală rareori au o singură condiție. „Poți urca în ro
 | `A \|\| B` | A **sau** B | **cel puțin una** este adevărată |
 | `!A` | **nu** A | A este falsă (inversează) |
 
-`||` se scrie cu două bare verticale. Locul barei verticale pe tastatură diferă de la un calculator la altul, așa că **găsește-o înainte să începi** și cere ajutor dacă nu o vezi.
+`||` se scrie cu două bare verticale. Locul barei verticale pe tastatură diferă de la un calculator la altul, așa că **găsește tasta înainte să începi** și cere ajutor dacă nu o vezi.
 
 ### Tabelele de adevăr
 
