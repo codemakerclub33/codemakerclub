@@ -70,6 +70,7 @@ export const cursBlurbLanding: Record<string, string> = {
 export const cursBlurbLandingPeGrupa: Record<string, Record<string, string>> = {
   '14plus': {
     c4: 'Python, limbajul din inteligența artificială: logică, algoritmi și jocuri proprii pe care le poți arăta prietenilor.',
+    c5: 'Pentru cei care știu deja bazele: un site complet cu meniu, galerie și formular, apoi jocuri web: clicker, cuvântul zilei, dino și păsărica zburătoare.',
   },
 }
 
