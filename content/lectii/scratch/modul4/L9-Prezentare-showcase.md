@@ -10,7 +10,7 @@
 
 ## Obiectiv
 La finalul orei ai prezentat, ai notat o părere, și ai primit insigna (dacă ai parcurs M4 / recuperat cu profesorul).  
-**Minim:** **1** feature nouă din listă (care **nu** exista) · prezentare 2–3 min pe foaie · 1 reacție notat · proiect salvat · insignă.  
+**Minim:** **1** feature nouă din listă (care **nu** exista) · prezentare 2–3 min pe foaie · 1 reacție notată · proiect salvat · insignă.  
 **Ținta orei (Complet):** Minim + **2** feature-uri **sau** arăți o greșeală reparată în prezentare **sau** aplici reacție-ul 5 min pe loc.
 
 ## De ce contează
@@ -64,7 +64,7 @@ Reguli sală: aplauze · 1 compliment + 1 idee · fără ironii.
 
 ### 3) Prezinți + reacție
 1. Prezinți 2–3 min  
-2. Notezi **1** reacție primit  
+2. Notezi **1** reacție primită  
 3. Salvezi proiectul  
 
 **Încearcă tu — prezentare**  
@@ -79,7 +79,7 @@ Reguli sală: aplauze · 1 compliment + 1 idee · fără ironii.
 ### 5) Complet
 Alege **cel puțin una**:  
 - [ ] Provocare: **2** feature-uri (nu una)  
-- [ ] În prezentare: arăți o greșeală pe care ai reparat-o  
+- [ ] În prezentare: arăți o greșeală pe care ai reparat  
 - [ ] Părere → îl aplici **5 minute** pe loc  
 
 ---
@@ -88,7 +88,7 @@ Alege **cel puțin una**:
 1. **Feature care exista deja** — Minim = ceva **nou**.  
 2. **Prezentare fără demo** — arată pe scenă, nu doar pe foaie.  
 3. **Strici jocul ca să adaugi feature** — testează restart după provocare.  
-4. **Zero reacție notat** — scrie măcar o idee de la colegi.  
+4. **Nicio reacție notată** — scrie măcar o idee de la colegi.  
 5. **Confunzi L9 cu L10** — insigna e **azi**; colecția de proiecte e lecția următoare.
 
 ---
@@ -101,7 +101,7 @@ Salvat: `Prenume_Nume_M4_L9` (sau același L7 actualizat)
 | | Ce trebuie |
 |--|------------|
 | **Minim** | 1 feature nouă · prezentare · 1 reacție · salvat · insignă |
-| **Complet** | Minim + 2 feature-uri **sau** greșeală arătat **sau** reacție aplicat 5 min |
+| **Complet** | Minim + 2 feature-uri **sau** greșeală arătată **sau** reacție aplicată 5 min |
 
 ### Pasul 1 — Provocare
 - [ ] Feature nouă vizibilă  
@@ -115,7 +115,7 @@ Salvat: `Prenume_Nume_M4_L9` (sau același L7 actualizat)
 ---
 
 ## Bonus (dacă ai terminat Complet)
-- [ ] 2 reacție-uri notate + unul aplicat  
+- [ ] 2 reacții notate + una aplicată  
 - [ ] Link proiect în studio-ul clasei  
 - [ ] 20 s vorbite înregistrate (opțional acasă)
 

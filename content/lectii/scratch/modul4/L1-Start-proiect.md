@@ -9,7 +9,7 @@
 ---
 
 ## Obiectiv
-La finalul orei ai o bază **jucabilă**: restart curat, interacțiune reală, condiție `dacă`, și **începutul** direcției ideea specială (nivele **sau** joc cu 2 jucători (pe același calculator)) **vizibil pe scenă**.  
+La finalul orei ai o bază **jucabilă**: restart curat, interacțiune reală, condiție `dacă`, și **începutul** ideii speciale (nivele **sau** joc cu 2 jucători (pe același calculator)) **vizibil pe scenă**.  
 **Minim:** reset la steag · 2 sprite-uri care interacționează · ≥1 `dacă` · ideea specială A sau B pe scenă.  
 **Ținta orei (Complet):** Minim + **una** din: meniu Start (ca M3 L8) **sau** trecere reală Nivel 1→2 **sau** scoruri separate J1/J2.
 

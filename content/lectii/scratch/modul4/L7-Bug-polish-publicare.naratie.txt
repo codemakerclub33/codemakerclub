@@ -2,17 +2,17 @@ Lecția șapte. Depanare, finisări și publicare.
 
 Astăzi înveți repararea: repeți greșeala, cauți unde e, schimbi o chestie, verifici. Apoi finisări Creator și publicare. Nu începi un joc nou. Închizi ce ai. Proiectul se numește Proiectul meu, public. Fișierul: Prenume, linie jos, Nume, linie jos, M patru, linie jos, L șapte. Același fir L unu, L șase.
 
-Obiectivul. Colegul trece singur de la start la final, înțelegând controalele din proiect, nu din gura ta. Minim: metoda pe foaie, cel puțin trei greșeli reparate și notate, cel puțin patru bifă finisări, partajat sau gata de prezentare, test coleg cinci minute fără ajutor. Complet: minim, plus patru sau mai multe greșeli, sau trailer ori titlu de cinci secunde, sau o greșeală grea găsit de coleg, reparat pe loc.
+Obiectivul. Colegul trece singur de la start la final, înțelegând controalele din proiect, nu din gura ta. Minim: metoda pe foaie, cel puțin trei greșeli reparate și notate, cel puțin patru bife de finisare, partajat sau gata de prezentare, test coleg cinci minute fără ajutor. Complet: minim, plus patru sau mai multe greșeli, sau trailer ori titlu de cinci secunde, sau o greșeală grea găsită de coleg, reparată pe loc.
 
 De ce contează. Nivel Creator înseamnă că proiectul rezistă când îl joacă altcineva. Depanarea e meserie: nu mai apasă o dată, ci găsești cauza.
 
 Primul pas pe ecran. Metoda pe foaie, pentru fiecare greșeală. Unu: repeți greșeala, ce apeși ca să apară. Doi: cauți unde e, care personaj, care script. Trei: schimbi o singură chestie, testezi. Patru: bifezi, reparat, și ce ai reparat. Spui metoda cu voce tare.
 
-Al doilea pas pe ecran. Vânătorii de greșeli. În clasă schimbați locurile. La calculatorul colegului schimbi exact două blocuri: un număr, o tastă, un setează, un mesaj. Interzis: ștergere proiect, ștergere personaje, salvare peste cu alt nume. Te întorci. Colegul găsește ce s-a schimbat și repară. Pe foaie: am schimbat, am găsit. Acasă, solo: schimbi tu două blocuri, apoi le găsești. Cauți și greșeli reale: scor sau nivel care nu se resetează, rămâi pe Level doi după steag, mesaje aprinse, doi jucători pe aceleași taste, clone care nu dispar.
+Al doilea pas pe ecran. Vânătorii de greșeli. În clasă schimbați locurile. La calculatorul colegului schimbi exact două blocuri: un număr, o tastă, un setează, un mesaj. Interzis: ștergere proiect, ștergere personaje, salvare peste cu alt nume. Te întorci. Colegul găsește ce este diferit și repară. Pe foaie: am schimbat, am găsit. Acasă, solo: schimbi tu două blocuri, apoi le găsești. Cauți și greșeli reale: scor sau nivel care nu se resetează, rămâi pe Level doi după steag, mesaje aprinse, doi jucători pe aceleași taste, clone care nu dispar.
 
 Al treilea pas pe ecran. Repară cel puțin trei de pe listă. Pentru fiecare: metoda. Steag de două ori după fiecare reparație. Pe foaie: trei linii, reparat.
 
-Al patrulea pas pe ecran. Finisări Creator, cel puțin patru bifă. Nume proiect clar. Instrucțiuni pe proiect: cum începi, scop, controale. Dacă ai nivele, se vede Level unu, Level doi pe ecran. Start și final evidente. Sunete utile, se opresc la final. Nimic mort pe scenă. Scor, vieți sau timer lizibile. Controalele se citesc fără să explici.
+Al patrulea pas pe ecran. Finisări Creator, cel puțin patru bife. Nume proiect clar. Instrucțiuni pe proiect: cum începi, scop, controale. Dacă ai nivele, se vede Level unu, Level doi pe ecran. Start și final evidente. Sunete utile, se opresc la final. Nimic mort pe scenă. Scor, vieți sau timer lizibile. Controalele se citesc fără să explici.
 
 Al cincilea pas pe ecran. Publicare. Partajează, studio clasă, link sau stick. În descriere: două nivele, sau doi jucători cu tastele. Coleg: cinci minute, zero ajutor, start până la final.
 

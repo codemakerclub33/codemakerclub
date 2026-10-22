@@ -9,7 +9,7 @@
 ---
 
 ## Obiectiv
-La finalul orei cineva poate juca **o cale întreagă** până la un final, fără să-i explici.  
+La finalul orei cineva poate juca **o cale întreagă** până la un final, fără să explici nimic.  
 **Minim:** ≥3 fundaluri · ≥2 personaje · ≥6 replici · **2 alegeri** · **2 finaluri** · restart la steag · ≥1 sunet · replici cu **timp de** (nu text zburător).  
 **Ținta orei (Complet):** Minim + **a 3-a alegere** **sau** final secret **sau** inventar (o alegere deblochează o replică mai târziu).
 

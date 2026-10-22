@@ -112,7 +112,7 @@ Durata totală țintă: **30–60 s**.
 ## Greșeli frecvente
 1. **`spune … timp de` în `forever` de mișcare** — totul îngheață; folosește `așteaptă` pe lanț sau `trimite` / `când primesc`.  
 2. **Extensii înaintea nucleului** — întâi Sunet clasic; abia apoi Muzică/Stilou.  
-3. **Acțiune decorativ** — apeși spațiu și nu se schimbă nimic.  
+3. **Acțiune decorativă** — apeși spațiu și nu se schimbă nimic.  
 4. **Acte = același fundal** — Act 2 trebuie **vizibil** diferit.  
 5. **Stilou fără „șterge tot”** — al 2-lea steag e plin de linii vechi.  
 6. **Clip de 5 secunde** — Minim cere 30–60 s.  

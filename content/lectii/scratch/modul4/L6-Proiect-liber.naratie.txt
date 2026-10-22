@@ -4,13 +4,13 @@ Astăzi baza jocului de la lecția unu devine produs: început, mijloc greu, fin
 
 Obiectivul. Un coleg termină fluxul fără ajutor, iar tu explici regulile în treizeci de secunde. Minim: start clar, final clar, restart complet, cel puțin două sisteme, scor, vieți, timer, mesaje, clone sau meniu, plus nivele, cel puțin două, sau joc cu doi jucători, pe același calculator, plus test coleg reușit. Complet: minim, plus trei sisteme, sau nivele și schiță cu doi jucători, sau final alternativ ori secret.
 
-De ce contează. Lecția unu e baza jocului. Lecția șase termini. Lecția șapte repari și îmbunătățești. Fără final, restart și ideea specială A sau B închis, nu ești gata de prezentare.
+De ce contează. Lecția unu e baza jocului. Lecția șase termini. Lecția șapte repari și îmbunătățești. Fără final, restart și ideea specială A sau B închisă, nu ești gata de prezentare.
 
 Primul pas pe ecran. Deschizi Prenume, Nume, M patru, L unu, sau copia L șase. Pe foaie: ce merge, ce lipsește față de Minim. Confirmi ideea specială: A nivele, sau B doi jucători. Dacă baza jocului L unu e incomplet, primele minute ajungi la interacțiune plus ideea specială început, apoi checklist-ul de azi.
 
 Al doilea pas pe ecran. Nucleul produsului. Start: steag și, ideal, buton Start. Mijloc: jocul, povestea sau quiz-ul e greu pe bune, nu ecran gol. Final: victorie, Sfârșitul jocului, scenă finală sau scor final, clar pe scenă. Restart: resetează scor, vieți, timp, nivel, poziții, mesaje, clone, sunete. Steag de două ori, totul curat.
 
-Al treilea pas pe ecran. Două sisteme din listă, plus ideea specială obligatoriu închis. Ideea specială A: Level unu și doi jucabile și diferite, trecere la obiectiv, restart egal Level unu. Ideea specială B: jucător unu săgeți, jucător doi W, A, S, D, ambii influențează jocul, câștigător sau scor pe jucător. Scratch e pe aceeași tastatură, nu online.
+Al treilea pas pe ecran. Două sisteme din listă, plus ideea specială obligatorie, închisă. Ideea specială A: Level unu și doi jucabile și diferite, trecere la obiectiv, restart egal Level unu. Ideea specială B: jucător unu săgeți, jucător doi W, A, S, D, ambii influențează jocul, câștigător sau scor pe jucător. Scratch e pe aceeași tastatură, nu online.
 
 Al patrulea pas pe ecran. Minim pe tip. Joc sau labirint: câștigi, pierzi, reacție, scor sau vieți, nivele sau doi jucători. Quiz: șase întrebări, scor final, două runde sau doi jucători pe rând. Poveste: trei scene, două alegeri, două finaluri. Animație-joc: treizeci până la șaizeci de secunde, acțiune, final, două acte sau două roluri.
 

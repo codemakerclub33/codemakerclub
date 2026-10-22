@@ -15,7 +15,7 @@ La finalul orei un coleg termină fluxul **fără** ajutor, iar tu explici regul
 
 ## De ce contează
 L1 = bază. L6 = **termini**. L7 = repari și îmbunătățești.  
-Fără final + restart + ideea specială A/B închis, nu ești gata de prezentare.
+Fără final + restart + ideea specială A/B închisă, nu ești gata de prezentare.
 
 ---
 
@@ -71,7 +71,7 @@ Bifează ≥**2** din: scor · vieți · timer · mesaje (`trimite`) · clone ·
 
 > Scratch = pe **aceeași** tastatură / același PC — nu online.
 
-**Încearcă tu — ideea specială închis (25–30 min)**  
+**Încearcă tu — ideea specială închisă (25–30 min)**  
 - [ ] Ideea specială A sau B e **terminat**, nu schiță  
 - [ ] Colegul înțelege fără gura ta  
 
@@ -107,7 +107,7 @@ Alege **cel puțin una**:
 ## Greșeli frecvente
 1. **„Aproape gata” fără final** — Minim cere final pe scenă.  
 2. **Restart parțial** — nivelul / clonele / scorul rămân; resetezi **tot**.  
-3. **Ideea specială încă pe foaie** — la L6 ideea specială A/B trebuie **închis**.  
+3. **Ideea specială încă pe foaie** — la L6 ideea specială A/B trebuie **închisă**.  
 4. **Proiect nou azi** — continui L1, nu începi altceva.  
 5. **Test doar pe tine** — Minim cere test coleg fără ajutor.  
 6. **2 jucători cu aceleași taste** — controalele trebuie diferite.

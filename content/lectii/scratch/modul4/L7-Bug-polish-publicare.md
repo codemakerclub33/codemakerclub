@@ -10,8 +10,8 @@
 
 ## Obiectiv
 La finalul orei colegul trece **singur** de la start la final, înțelegând controalele din proiect (nu din gura ta).  
-**Minim:** metodă pe foaie · ≥**3** greșeli reparate (notate) · ≥**4** bifă finisări · partajat / gata de prezentare · test coleg **5 min** fără ajutor = reușit.  
-**Ținta orei (Complet):** Minim + ≥4 greșeli **sau** trailer/titlu 5 s **sau** greșeală grea găsit de coleg, reparat pe loc.
+**Minim:** metodă pe foaie · ≥**3** greșeli reparate (notate) · ≥**4** bife de finisare · partajat / gata de prezentare · test coleg **5 min** fără ajutor = reușit.  
+**Ținta orei (Complet):** Minim + ≥4 greșeli **sau** trailer/titlu 5 s **sau** greșeală grea găsită de coleg, reparată pe loc.
 
 ## De ce contează
 Nivel Creator = proiectul **rezistă** când îl joacă altcineva.  
@@ -24,7 +24,7 @@ Depanarea e meserie: nu „mai apasă o dată”, ci **găsești cauza**.
 | Minute | Ce facem |
 |--------|----------|
 | 0–15 | Ce e o greșeală? Metoda de reparare (4 pași) |
-| 15–35 | **Vânătorii de greșeli:** schimbă locul · 2 blocuri pe jocul colegului · găsești ce s-a schimbat |
+| 15–35 | **Vânătorii de greșeli:** schimbă locul · 2 blocuri pe jocul colegului · găsești ce este diferit |
 | 35–80 | Repară minim **3** + finisări din checklist |
 | 80–100 | Publicare + instrucțiuni pe proiect |
 | 100–115 | Test final (coleg / părinte / autotest) 5 min |
@@ -36,7 +36,7 @@ Depanarea e meserie: nu „mai apasă o dată”, ci **găsești cauza**.
 
 ## Pas cu pas
 
-### 1) Metoda de reparare *(învață-o azi)*
+### 1) Metoda de reparare *(o înveți azi)*
 Pe foaie, pentru **fiecare** greșeală:
 1. **Reproduci** — ce apeși ca să apară?  
 2. **Îngustezi** — care personaj / care script?  
@@ -52,7 +52,7 @@ Pe foaie, pentru **fiecare** greșeală:
 1. Te așezi la PC-ul colegului (el la al tău).  
 2. **Nu** strici jocul de tot. Schimbi **exact 2 blocuri** (ex. un număr, o tastă, un `setează` / `schimbă`, un mesaj).  
 3. **Interzis:** ștergere proiect · ștergere personaje · salvare peste cu alt nume.  
-4. Te întorci la locul tău. Colegul joacă / citește scripturile și încearcă să **ghicească ce s-a schimbat** și să **repare**.  
+4. Te întorci la locul tău. Colegul joacă / citește scripturile și încearcă să **ghicească ce este diferit** și să **repare**.  
 5. Pe foaie: „Am schimbat: …” (pentru cel care a modificat) · „Am găsit: …” (pentru proprietar).
 
 **Acasă (fără coleg):**  
@@ -81,7 +81,7 @@ Căutați și greșeli reale (pe lângă cele 2 blocuri):
 - [ ] 3 linii pe foaie: „reparat: …”  
 - [ ] Greșelile reparate **nu** mai apar la test  
 
-### 4) Finisări Creator *(≥4 bifă — Minim)*
+### 4) Finisări Creator *(≥4 bife — Minim)*
 - [ ] Nume proiect clar (`Prenume_Nume_M4_L7` / titlu pe Scratch)  
 - [ ] Instrucțiuni pe proiect: Cum începi / Scop / **Controale** (2 jucători: cine ce taste)  
 - [ ] Dacă ai nivele: se vede **Level 1 / Level 2** pe ecran  
@@ -91,7 +91,7 @@ Căutați și greșeli reale (pe lângă cele 2 blocuri):
 - [ ] UI: scor / vieți / timer lizibile  
 
 **Încearcă tu — finisări (15 min)**  
-- [ ] ≥4 bifă din listă  
+- [ ] ≥4 bife din listă  
 - [ ] Controalele se citesc **fără** să explici  
 
 ### 5) Publicare + test final
@@ -107,7 +107,7 @@ Căutați și greșeli reale (pe lângă cele 2 blocuri):
 Alege **cel puțin una**:  
 - [ ] **4+** greșeli reparate pe foaie  
 - [ ] Trailer / ecran titlu ~5 s înainte de Start  
-- [ ] O greșeală grea găsit de coleg — rezolvat pe loc  
+- [ ] O greșeală grea găsită de coleg — rezolvată pe loc  
 
 ---
 
@@ -145,7 +145,7 @@ Salvat: `Prenume_Nume_M4_L7`
 ## Bonus (dacă ai terminat Complet)
 - [ ] Descriere Scratch în 2 fraze (ce e jocul + ideea specială)  
 - [ ] Înregistrezi 20 s vorbite pentru L9  
-- [ ] Părere de la 2 colegi, notat  
+- [ ] Păreri de la 2 colegi, notate  
 
 ## Recapitulare rapidă
 1. Vânătorii de greșeli = **2 blocuri**, nu distrugere  

@@ -8,7 +8,7 @@
 ---
 
 ## Obiectiv
-La finalul orei ai un **colecție de proiecte** pe foaie + o copie Scratch a proiectului favorit, testată.  
+La finalul orei ai o **colecție de proiecte** pe foaie + o copie Scratch a proiectului favorit, testată.  
 **Minim:** pe foaie ≥**3** proiecte M4 · copie `M4_L10` a favoritului · **1** finisare mică pe copie · **1** reacție la un coleg · 3 lucruri pe care le știi din M4.  
 **Ținta orei (Complet):** Minim + proiectul e în **studio-ul clasei** (sau link pe foaie) **sau** remix scurt pe un proiect de coleg **sau** pe foaie: 1 idee pentru M5 („cum ar sări / cădea eroul meu”).
 
@@ -44,7 +44,7 @@ Pentru fiecare (minim 3): **titlu** · tip (bază / poveste / quiz / clip / labi
 ### 2) Copia favorită + finisări *(Minim)*
 1. Deschizi favoritul (ideal L7 / L9)  
 2. `Salvează ca` → `Prenume_Nume_M4_L10`  
-3. **Un** finisare mică (nu refaci jocul): sunet · mesaj clar · restart · costum · o greșeală mică  
+3. **O** finisare mică (nu refaci jocul): sunet · mesaj clar · restart · costum · o greșeală mică  
 4. Steagul verde → testezi **start → joacă → final / restart**
 
 **Încearcă tu — Scratch (25–30 min)**  
@@ -68,7 +68,7 @@ Alege **cel puțin una**:
 - [ ] Pe foaie, idee M5: „Eroul meu ar **sări / cădea** așa: …” (o frază + un desen mic)
 
 ### 5) Ce urmează (cu profesorul)
-Scurt: Modulul 5 = **reguli de joc de joc** (gravitație, inamici, liste…) — tot în Scratch.  
+Scurt: Modulul 5 = **reguli de joc** (gravitație, inamici, liste…) — tot în Scratch.  
 Nu e oră de Python azi.
 
 ---
@@ -105,7 +105,7 @@ Salvat: `Prenume_Nume_M4_L10`
 ---
 
 ## Bonus (dacă ai terminat Complet)
-- [ ] 2 reacție-uri date + 1 primit notat  
+- [ ] 2 reacții date + 1 primită, notată  
 - [ ] Pe foaie: „Dacă aș avea încă o oră, aș adăuga…”  
 - [ ] Arăți părinților / unui adult linkul sau demo 30 s  
 
