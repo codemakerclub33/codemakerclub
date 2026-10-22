@@ -64,7 +64,7 @@ Blocul `du-te la start` e acum folosit în **două** locuri *(direct în lovitur
 **A — Valoare primită (parametru):**  
 1. Faci un bloc nou `lovitură` și bifezi **Adaugă o intrare (număr)**, numită `cât`  
 2. Sub definiție: `schimbă viață cu (0 - cât)` și `du-te la start`  
-3. În joc: inamicul mic apelează `lovitură 1`, cel mare *(al doilea inamic, mai gros)* apelează `lovitură 2`
+3. În joc: duplici inamicul, ca să ai unul mic și unul mare *(mai gros)*. La **Erou**, în loc de `schimbă viață cu -1` și `du-te la start`: `dacă <atinge Inamic mic?>` → `lovitură 1`; `dacă <atinge Inamic mare?>` → `lovitură 2`
 
 **B — „Fără reîmprospătarea ecranului”:** *(pe jocul din L1, copie)*  
 1. Faci blocul `ieși din podea` cu `repetă până când <nu <atinge Teren?>>` → `schimbă y cu 1` înăuntru  
@@ -78,7 +78,7 @@ Blocul `du-te la start` e acum folosit în **două** locuri *(direct în lovitur
 
 ## Greșeli frecvente
 1. **Blocul e făcut, dar nu e folosit** — Minim cere cel puțin 2 apeluri.  
-2. **Jocul s-a stricat după mutare** — ai uitat să ștergi blocurile vechi de unde ai pus blocul nou.  
+2. **Jocul nu mai merge după mutare** — ai uitat să ștergi blocurile vechi de unde ai pus blocul nou.  
 3. **Viața revine la 3 la fiecare lovitură** — ai pus `reset erou` în lovitură, în loc de `du-te la start`.  
 4. **Tot jocul într-un singur bloc** — extrage doar o bucată mică.  
 5. **Valoarea primită nu are valoare la apel** — la `lovitură` pui un număr.  
@@ -110,10 +110,10 @@ Salvat: `Prenume_Nume_M5_L5`
 ## Schema pe scurt
 
 **Definește**  
-`definește reset erou` → du-te la start · viteza_y=0 · …  
+`definește reset erou` → du-te la start · viață = 3  
 
 **Apelează**  
-la steag → `reset erou` · la moarte → `reset erou`  
+la steag → `reset erou` · la lovitură → `du-te la start`  
 
 **Quiz scurt:**  
 - De ce My Blocks?  

@@ -63,21 +63,21 @@ Mai întâi pentru **Copac**:
 3. Apoi `repetă la nesfârșit`:  
    - `setează poz la (lume_x - camera_x)` *(variabila `poz`, tot numai pentru acest sprite)*  
    - `dacă <(abs din poz) < 250>` **atunci** `du-te la x: poz y: -100` și `arată`  
-   - `altfel` `ascunde` *(în afara ecranului, Scratch nu-l lasă să plece de tot, îl lipește de margine)*
+   - `altfel` `ascunde` *(în afara ecranului, Scratch nu lasă sprite-ul să plece de tot și îl lipește de margine)*
 
 - [ ] **Verifici:** apeși dreapta — copacul vine din dreapta spre tine și iese pe stânga. Apeși stânga — se întoarce.
 
 **Copiezi scriptul** în `Piatră` și `Țel`: tragi scriptul peste sprite-ul din lista de sprite-uri. Apoi schimbi doar `lume_x`: **Piatră = 800**, **Țel = 1200**.
 
 ### 5) Obiectivul *(Minim, partea 3 · 5 minute)*
-La **Țel**, în același `repetă la nesfârșit`: `dacă <atinge Erou?>` **atunci** `spune Ai ajuns!` *și* `oprește tot`.
+La **Țel**, în același `repetă la nesfârșit`: `dacă <atinge Erou?>` **atunci** `spune Ai ajuns!` timp de `2` secunde *și* `oprește tot`.
 
 - [ ] **Verifici:** mergi, treci de copac și piatră, ajungi la Țel și jocul se oprește. Pe steag, totul revine la început *(camera_x = 0)*.
 
 ### 6) Complet *(alege cel puțin una)*
 - [ ] **Limite:** la Erou, după mers: `dacă camera_x < 0` → `setează camera_x la 0`; `dacă camera_x > 1200` → `setează camera_x la 1200`  
-- [ ] **Două zone:** la Fundal: `dacă camera_x > 600` **atunci** `treci la fundalul 2`, `altfel` `treci la fundalul 1`  
-- [ ] **Obstacol:** sprite `Groapă` cu `lume_x` = 600; `dacă atinge Erou` → `setează camera_x la 0`
+- [ ] **Două zone:** la Scenă, cu două fundaluri: `dacă camera_x > 600` **atunci** `treci la fundalul 2`, `altfel` `treci la fundalul 1`  
+- [ ] **Obstacol:** sprite `Groapă` (copiezi scriptul de la `Copac`) cu `lume_x` = 600; `dacă atinge Erou` → `setează camera_x la 0`
 
 
 ---
@@ -117,7 +117,7 @@ Salvat: `Prenume_Nume_M5_L2`
 ## Schema pe scurt
 
 **Idee**  
-dreapta apăsat → `camera_x` se schimbă → platformele `x = start_x - camera_x`  
+dreapta apăsat → `camera_x` se schimbă → obiectele `x = lume_x - camera_x`  
 
 **Quiz scurt:**  
 - De ce opus, nu la fel?  

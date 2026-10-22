@@ -61,9 +61,9 @@ La **Erou**, în același `repetă la nesfârșit`:
   1. `schimbă viață cu -1`  
   2. `du-te la x: -200 y: -100`  
   3. `spune Au!` timp de `1` secundă *(asta e și „pauză între lovituri”: eroul stă o secundă și nu mai e lovit imediat)*  
-  4. `dacă viață = 0` → `spune Game over` și `oprește tot`
+  4. `dacă viață = 0` → `spune Game over` timp de `2` secunde și `oprește tot`
 
-- [ ] **Verifici:** te lovești o dată — pierzi **o** viață, nu trei deodată. Poți trece sărind peste inamic: apeși spațiu când e aproape și aterizezi de cealaltă parte.
+- [ ] **Verifici:** te lovești o dată — pierzi **o** viață, nu trei deodată. Poți trece sărind peste inamic: apeși spațiu când inamicul trece pe sub tine.
 
 ### 5) Complet *(alege cel puțin una)*
 - [ ] **Al doilea inamic:** duplici sprite-ul `Inamic` *(click dreapta)*, schimbi limitele și poziția de start  
@@ -76,7 +76,7 @@ La **Erou**, în același `repetă la nesfârșit`:
 ## Greșeli frecvente
 1. **Inamicul iese din scenă** — lipsesc ambele `dacă` de întoarcere, sau limitele sunt prea mari.  
 2. **Moare din trei lovituri deodată** — lipsește `spune … 1 secundă` sau `du-te la start`.  
-3. **Se blochează în limită** — a trecut de limită și `dir` se schimbă la fiecare pas. Folosește `>` / `<`, nu `=`.  
+3. **Nu se întoarce niciodată** — cu `=` inamicul poate sări peste limită. Folosește `>` / `<`, nu `=`.  
 4. **`dir` e comună tuturor** — dacă ai doi inamici, fiecare trebuie să aibă `dir` **numai pentru acest sprite**.  
 5. **Nu poți trece** — inamicul patrulează prea sus sau eroul sare prea puțin.  
 6. **Săritura nu revine** — `repetă 10` cu `6` în sus și `repetă 10` cu `-6` în jos trebuie să fie egale.
@@ -107,10 +107,10 @@ Salvat: `Prenume_Nume_M5_L3`
 ## Schema pe scurt
 
 **Inamic**  
-`forever` → `schimbă x cu dir*…` → `dacă x>X2 sau x<X1` → `dir = −dir`  
+`forever` → `schimbă x cu dir*…` → `dacă x>X2` → `dir = -1` · `dacă x<X1` → `dir = 1`  
 
 **Lovitură**  
-atinge Erou → HP−1 → `așteaptă 1`  
+atinge Erou → HP−1 → `spune … 1 secundă`  
 
 **Quiz scurt:**  
 - Ce e X1/X2?  

@@ -14,9 +14,9 @@ Al doilea pas, scheletul, până la minutul cincizeci. Deschizi fișierul din le
 
 Al treilea pas, după minutul cincizeci, pentru Complet. Alegi una. Monede: sprite-ul Monedă, pe steag la locul ei. Așteaptă până când atinge Erou, schimbă monede cu unu, ascunde. Variabila monede e zero la steag. Sau început de derulare, cu variabila camera x din lecția doi, un exemplu mai mare care cere timp. Sau un buton Start, care la click se ascunde. Meniul complet vine în lecția nouă.
 
-Al patrulea pas, cinci minute. Pe foaie scrii trei lucruri pe care le adaugi la lecția opt, de exemplu un inamic, monede din clone sau o a doua platformă mobilă.
+Al patrulea pas, cinci minute. Pe foaie scrii trei lucruri pe care le adaugi la lecția opt, de exemplu un inamic, monede din clone sau un inamic mai rapid.
 
-Greșeli frecvente. Decor înainte de fizică: încalci regula minutului cincizeci. Proiect nou la fiecare oră: lecțiile de la șapte la zece sunt în același fișier. Fără foaie: la lecția opt nu știi ce adaugi. Toate regulile din lecțiile de la unu la șase: alege două sau trei, bine făcute. Fără condiție de câștig: lecția nouă nu are ce închide. Platformele sunt prea sus: săritura urcă cam șaptezeci și opt de pași, deci pune-le la cel mult șaizeci de pași una deasupra celeilalte.
+Greșeli frecvente. Decor înainte de fizică: încalci regula minutului cincizeci. Proiect nou la fiecare oră: lecțiile de la șapte la zece sunt în același fișier. Fără foaie: la lecția opt nu știi ce adaugi. Toate regulile din lecțiile de la unu la șase: alege două sau trei, bine făcute. Fără condiție de câștig: lecția nouă nu are ce închide. Platformele sunt prea sus: săritura urcă cam șaizeci și șase de pași, deci pune platformele la cel mult șaizeci de pași una deasupra celeilalte.
 
 Proiectul de azi. Proiectul mare.
 

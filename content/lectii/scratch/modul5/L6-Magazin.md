@@ -37,7 +37,7 @@ Un magazin are trei pași, mereu în aceeași ordine:
 2. **Scazi** prețul  
 3. **Dai** recompensa
 
-Dacă n-ai destul, nu scazi nimic și spui „Nu ai destule monede!”.
+Dacă nu ai destul, nu scazi nimic și spui „Nu ai destule monede!”.
 
 **Încearcă tu — pe foaie (5 min):** upgrade-ul „Viteză +2” costă 10. Ai 7 monede — ce se întâmplă? *(mesaj de eroare, rămâi cu 7)* Ai 15 — câte rămân? *(5)*
 
@@ -68,16 +68,16 @@ Sprite `Cumpără viteza` *(un buton, cu prețul scris pe el: 10)*, undeva în c
 - [ ] Cu 10 sau mai multe: apeși → monedele scad cu 10, iar eroul merge **mai repede**. *(Acesta e „efectul”: îl simți.)*
 
 ### 4) Complet *(alege cel puțin una)*
-- [ ] **Al doilea upgrade:** un buton `Cumpără viață` cu alt preț, 20: același tipar, efectul `schimbă viață cu 1` *(adaugi variabila `viață`)*  
+- [ ] **Al doilea upgrade:** un buton `Cumpără viață` cu alt preț, 20: același tipar, cu `monede > 19` și efectul `schimbă viață cu 1` *(adaugi variabila `viață`, pusă pe 3 la steag)*  
 - [ ] **În inventar:** după cumpărare, `adaugă [Viteză] la inventar` *(lista din L4)*  
-- [ ] **Deschide/închide magazinul:** un sprite-buton `Magazin` care trimite `deschide_shop`; butoanele de cumpărat apar doar după ce primesc mesajul *(`când primesc deschide_shop` → `arată`)*
+- [ ] **Deschide/închide magazinul:** un sprite-buton `Magazin` care trimite `deschide_shop`; butoanele de cumpărat sunt `ascunde` pe steag și apar doar după ce primesc mesajul *(`când primesc deschide_shop` → `arată`)*
 
 
 ---
 
 ## Greșeli frecvente
 1. **Monedele scad fără verificare** — lipsește `dacă monede > 9`; apar monede negative.  
-2. **Cumperi, dar nu se simte nimic** — butonul scade monede dar nu schimbă `viteza`; sau mersul eroului folosește `4`, nu variabila.  
+2. **Cumperi, dar nu se simte nimic** — butonul scade monede dar nu schimbă `viteza`; sau mersul eroului folosește `3`, nu variabila.  
 3. **`≥ 10` scris greșit** — în Scratch folosești `monede > 9` *(monedele sunt numere întregi)*.  
 4. **Prețul 0** — nu e magazin.  
 5. **Butonul nu răspunde** — script de tip `la click pe acest sprite`, nu `la apăsarea tastei`.  

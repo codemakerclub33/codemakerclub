@@ -37,13 +37,13 @@ Maestru de jocuri = reguli de joc grele **și** joc prezentabil — pod spre Cub
 
 **Avansat:**
 - [ ] **D — Date lizibile:** bifezi variabilele `viață`, `scor`, `monede` în paleta Variabile; pe scenă le tragi în colț, ordonate  
-- [ ] **E — Record:** variabila `record`. La `win`: `dacă <scor > record>` **atunci** `setează record la scor`; o arăți pe meniu  
+- [ ] **E — Record:** variabila `record`. La `win`: `dacă <scor > record>` **atunci** `setează record la scor`; o arăți pe meniu *(nu o pui pe 0 la steag, altfel se pierde recordul)*  
 - [ ] **F — Finaluri curate:** după `win` și `lose`, nimic nu rămâne „mort” pe scenă; steagul și Start pornesc curat de fiecare dată
 
 **Stop cod la minutul 55.** După aceea repari doar greșeli mici, nu mai adaugi.
 
 ### 2) Căutarea greșelilor *(10 minute)*
-Joci și încerci să-l strici, bifând fiecare test:
+Joci și încerci să strici jocul, bifând fiecare test:
 - [ ] Apeși spațiu în aer: nu sari a doua oară  
 - [ ] Apeși steagul de 2 ori la rând: nu apar monede în plus  
 - [ ] Pierzi o dată și câștigi o dată: ambele funcționează  
@@ -56,7 +56,7 @@ Joci și încerci să-l strici, bifând fiecare test:
 Cinci propoziții, scrise pe foaie înainte:
 1. „Jocul meu se numește …”  
 2. „În el tu …” *(sari, eviți, cumperi…)*  
-3. „Partea grea a fost … și am rezolvat-o cu …” *(`viteza_y`, listă, shop…)*  
+3. „Partea grea a fost … și am rezolvat cu …” *(`viteza_y`, listă, shop…)*  
 4. „Sunt mândru de …”  
 5. **Demo 30–40 de secunde:** Start → joci → final
 

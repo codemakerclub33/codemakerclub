@@ -52,11 +52,11 @@ Săritura e deci o **frână care devine cădere**, nu o teleportare.
 - [ ] **Verifici:** dacă muți manual eroul pe ecran, el nu intră în Teren la start.
 
 ### 3) Gravitația *(Minim, partea 1 · 10 minute)*
-Sub `la apăsarea steagului` ai deja pasul 2.4. Adaugi un `repetă la nesfârșit` și, înăuntru, **în ordinea asta**:
+Sub `la apăsarea steagului` ai deja pasul 2.5. Adaugi un `repetă la nesfârșit` și, înăuntru, **în ordinea asta**:
 1. <span style="color:#FF8C1A;font-weight:700">schimbă viteza_y cu</span> `-1`  
 2. <span style="color:#4C97FF;font-weight:700">schimbă y cu</span> `viteza_y` *(pui variabila `viteza_y` în loc de număr)*  
 
-- [ ] **Verifici:** apeși steagul — eroul **cade** și trece prin podea, ieșind din ecran. Așa trebuie! Podeaua nu l-a oprit încă.
+- [ ] **Verifici:** apeși steagul — eroul **cade** și trece prin podea, ieșind din ecran. Așa trebuie! Podeaua nu are încă niciun efect.
 
 ### 4) Podeaua *(Minim, partea 2 · 15 minute)*
 Sub cele două blocuri, în același `repetă la nesfârșit`, pui `dacă … atunci … altfel`:
@@ -66,7 +66,7 @@ Sub cele două blocuri, în același `repetă la nesfârșit`, pui `dacă … at
   3. `setează viteza_y la 0`  
 - **altfel**: `setează pe_sol la 0` *(ești în aer)*
 
-- [ ] **Verifici:** apeși steagul — eroul cade, aterizează pe podea și rămâne pe ea, **fără să tremure**. În timp ce stă, `pe_sol` rămâne 1 *(bifează căsuța variabilei, ca s-o vezi pe scenă)*.
+- [ ] **Verifici:** apeși steagul — eroul cade, aterizează pe podea și rămâne pe ea, **fără să tremure**. În timp ce stă, `pe_sol` rămâne 1 *(bifează căsuța variabilei, ca să o vezi pe scenă)*.
 
 ### 5) Săritura *(Minim, partea 3 · 10 minute)*
 Sub `dacă … altfel`, tot în `repetă la nesfârșit`:
@@ -86,8 +86,8 @@ Tot în `repetă la nesfârșit`:
 
 ### 7) Complet *(alege cel puțin una)*
 - [ ] **3 platforme** pe un traseu scurt  
-- [ ] **Perete** pe x: o bară verticală în Teren. La mers, **înainte** să te miști: `dacă <atinge Teren?>` după mutare → mergi înapoi cu același pas *(`schimbă x cu -4`)*  
-- [ ] O **monedă** sus, pe ultima platformă, care apare doar când o atingi *(`ascunde`)*
+- [ ] **Perete** pe x: o bară verticală în Teren. La mers, **imediat după** ce te miști: `dacă <atinge Teren?>` → mergi înapoi cu același pas *(`schimbă x cu -4`)*  
+- [ ] O **monedă** sus, pe ultima platformă, care dispare când o atingi *(`ascunde`)*
 
 > **Atenție:** dacă sari de jos într-o platformă, eroul o traversează și ajunge deasupra ei, fiindcă „îl ridicăm” din platformă. E o platformă „one-way”, ca în multe jocuri. Dacă nu-ți place, pune platformele mai sus decât poate urca eroul.
 
@@ -98,7 +98,7 @@ Tot în `repetă la nesfârșit`:
 2. **Eroul tremură pe podea** → ai pus `schimbă y` **înainte** de `schimbă viteza_y`. Ordinea corectă: gravitația, apoi y.  
 3. **Săritură infinită** → spațiul setează `viteza_y` fără `pe_sol = 1`.  
 4. **Nu sare deloc** → `pe_sol` nu devine 1: verifici `dacă viteza_y < 0`.  
-5. **Zboară prea sus** → `viteza_y` 12 e prea mare pentru platformele tale: pune 10.  
+5. **Zboară prea sus** → `viteza_y` 12 e prea mare pentru platformele tale: pune 10 și apropie platformele (cu 10, săritura urcă ~45 de pași).  
 6. **Cade prea violent** → gravitația −1 e deja bună; −5 e prea mult.  
 7. **Blocurile sunt în afara `repetă la nesfârșit`** → se execută o singură dată.
 
@@ -128,7 +128,7 @@ Salvat: `Prenume_Nume_M5_L1`
 ## Schema pe scurt *(pe foaie)*
 
 **Forever Erou**  
-`schimbă y cu viteza_y` → `schimbă viteza_y cu -1`  
+`schimbă viteza_y cu -1` → `schimbă y cu viteza_y`  
 `dacă` atinge podea → `viteza_y = 0` + corectează y  
 `dacă` spațiu și pe sol → `viteza_y = 12`  
 `dacă` săgeți → `schimbă x`  

@@ -12,11 +12,11 @@ Al doilea pas pe ecran, eroul. Faci proiect nou. Creezi variabila viață, pentr
 
 Al treilea pas, inamicul. Sprite-ul Inamic are variabila dir, numai pentru acest sprite. Pe steag: du-te la x o sută, y minus o sută, și setează dir la unu. Apoi repetă la nesfârșit: schimbă x cu dir ori doi. Dacă x poziția este mai mare decât o sută, setează dir la minus unu. Dacă x poziția este mai mică decât minus o sută, setează dir la unu.
 
-Al patrulea pas, lovitura. La Erou, în același repetă la nesfârșit: dacă atinge Inamic, schimbă viață cu minus unu. Du-te la x minus două sute, y minus o sută. Spune Au timp de o secundă. Dacă viață este egal cu zero, spune Game over și oprește tot. Pierzi o viață, nu trei deodată. Poți trece sărind peste inamic.
+Al patrulea pas, lovitura. La Erou, în același repetă la nesfârșit: dacă atinge Inamic, schimbă viață cu minus unu. Du-te la x minus două sute, y minus o sută. Spune Au timp de o secundă. Dacă viață este egal cu zero, spune Game over timp de două secunde și oprește tot. Pierzi o viață, nu trei deodată. Poți evita inamicul sărind când trece pe sub tine.
 
 Complet, alegi cel puțin una. Al doilea inamic: duplici sprite-ul și schimbi limitele și startul. Rază: dacă valoarea absolută din diferența dintre x al inamicului și x al lui Erou este mai mică decât optzeci, schimbă x cu dir ori trei. Platformă: un sprite la y minus patruzeci, cu inamicul pe el.
 
-Greșeli frecvente. Inamicul iese din scenă: lipsesc cele două dacă de întoarcere. Pierzi trei vieți deodată: lipsește spune timp de o secundă, sau du-te la start. Inamicul se blochează în limită: folosește mai mare și mai mic, nu egal. Doi inamici au aceeași dir: variabila trebuie să fie numai pentru acest sprite. Săritura nu revine: cele două repetă zece trebuie să fie egale.
+Greșeli frecvente. Inamicul iese din scenă: lipsesc cele două dacă de întoarcere. Pierzi trei vieți deodată: lipsește spune timp de o secundă, sau du-te la start. Inamicul nu se mai întoarce: cu egal poate sări peste limită, deci folosește mai mare și mai mic. Doi inamici au aceeași dir: variabila trebuie să fie numai pentru acest sprite. Săritura nu revine: cele două repetă zece trebuie să fie egale.
 
 Proiectul de azi. Evită patrula.
 

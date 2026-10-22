@@ -6,15 +6,15 @@ Obiectivul. Câștigi monede în joc. Ai un buton de magazin. Ai cel puțin un u
 
 De ce contează. Magazinul înseamnă condiție, consum și recompensă. Aceeași logică o folosești la crafting în modulul șase.
 
-Primul pas, pe foaie, cinci minute. Un magazin are trei pași, mereu în aceeași ordine. Întâi verifici dacă ai destul. Apoi scazi prețul. La urmă dai recompensa. Dacă n-ai destul, nu scazi nimic și spui Nu ai destule monede. Încearcă pe foaie: upgrade-ul Viteză plus doi costă zece. Ai șapte monede. Ce se întâmplă? Mesaj de eroare, rămâi cu șapte. Ai cincisprezece? Rămân cinci.
+Primul pas, pe foaie, cinci minute. Un magazin are trei pași, mereu în aceeași ordine. Întâi verifici dacă ai destul. Apoi scazi prețul. La urmă dai recompensa. Dacă nu ai destul, nu scazi nimic și spui Nu ai destule monede. Încearcă pe foaie: upgrade-ul Viteză plus doi costă zece. Ai șapte monede. Ce se întâmplă? Mesaj de eroare, rămâi cu șapte. Ai cincisprezece? Rămân cinci.
 
 Al doilea pas pe ecran, jocul scurt. Faci proiect nou. Creezi variabilele monede și viteza, pentru toate sprite-urile. Pe steag, la Erou: du-te la x zero, y zero, și setează viteza la trei. În repetă la nesfârșit, săgețile schimbă x și y cu viteza, și cu minus viteza. Sprite-ul Monedă: pe steag arată. Apoi repetă la nesfârșit: așteaptă până când atinge Erou. Schimbă monede cu cinci. Ascunde, așteaptă două secunde. Du-te la x număr aleatoriu între minus două sute și două sute, y număr aleatoriu între minus o sută și o sută. Arată. Pe steag, la Scenă sau la Monedă, setează monede la zero. Adună monede: la fiecare atingere cresc cu cinci, iar moneda reapare în alt loc.
 
 Al treilea pas, magazinul. Sprite-ul Cumpără viteza e un buton, cu prețul zece scris pe el. Scriptul începe cu la click pe acest sprite. Dacă monede este mai mare decât nouă, adică zece sau mai mult: schimbă monede cu minus zece, schimbă viteza cu unu, spune Cumpărat timp de o secundă. Altfel, spune Nu ai destule monede timp de două secunde. Testezi de fiecare dată. Cu cinci monede, vezi mesajul și rămân cinci. Cu zece sau mai multe, monedele scad cu zece, iar eroul merge mai repede. Efectul se simte.
 
-Complet, alegi cel puțin una. Al doilea upgrade: un buton Cumpără viață, cu prețul douăzeci, același tipar, cu schimbă viață cu unu. Inventar: după cumpărare, adaugă Viteză la inventar, lista din lecția patru. Deschide și închide magazinul: un buton Magazin trimite mesajul deschide shop. Butoanele de cumpărat apar doar când primesc mesajul.
+Complet, alegi cel puțin una. Al doilea upgrade: un buton Cumpără viață, cu prețul douăzeci, același tipar, cu monede mai mare decât nouăsprezece și schimbă viață cu unu. Variabila viață o pui pe trei la steag. Inventar: după cumpărare, adaugă Viteză la inventar, lista din lecția patru. Deschide și închide magazinul: un buton Magazin trimite mesajul deschide shop. Butoanele de cumpărat sunt ascunse la steag și apar doar când primesc mesajul.
 
-Greșeli frecvente. Monedele scad fără verificare, și apar monede negative. Cumperi, dar nu se simte nimic: eroul merge cu patru, nu cu variabila viteza. În Scratch scrii monede mai mare decât nouă, pentru zece sau mai mult. Prețul zero nu e magazin. Butonul nu răspunde: ai nevoie de la click pe acest sprite. Uiți resetul: steagul pune monede zero și viteza trei.
+Greșeli frecvente. Monedele scad fără verificare, și apar monede negative. Cumperi, dar nu se simte nimic: eroul merge cu trei, nu cu variabila viteza. În Scratch scrii monede mai mare decât nouă, pentru zece sau mai mult. Prețul zero nu e magazin. Butonul nu răspunde: ai nevoie de la click pe acest sprite. Uiți resetul: steagul pune monede zero și viteza trei.
 
 Proiectul de azi. Magazinul jocului.
 

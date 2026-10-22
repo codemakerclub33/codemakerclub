@@ -39,7 +39,7 @@ Din cele 3 note de la L7 alegi pentru Minim: **un pericol** *(inamic care patrul
 ### 2) Inamicul pe traseu *(Minim, partea 1 · 20 minute)*
 1. Variabila `viață` *(pentru toate sprite-urile)*; pe steag, la Erou: `setează viață la 3`  
 2. Sprite `Inamic`, cu `dir` **numai pentru acest sprite**. Aceeași patrulare ca în L3, dar pe o platformă: `du-te la x: 0 y: (înălțimea platformei)`, apoi `repetă la nesfârșit` → `schimbă x cu (dir * 2)` și întoarcere la limitele platformei  
-3. La **Erou**, în `repetă la nesfârșit`: `dacă <atinge Inamic?>` **atunci** → `schimbă viață cu -1` → `du-te la start` → `spune Au!` timp de `1` secundă
+3. La **Erou**, în `repetă la nesfârșit`: `dacă <atinge Inamic?>` **atunci** → `schimbă viață cu -1` → `du-te la x: -200 y: -100` *(locul de start)* → `spune Au!` timp de `1` secundă
 
 - [ ] **Verifici:** inamicul patrulează doar pe platforma lui. Te atinge și pierzi **o** viață, nu toate deodată.
 
@@ -61,14 +61,14 @@ Pe steag, apasă din nou — monedele reapar și `viață` și `scor` sunt iar l
 
 ### 5) Complet *(alege cel puțin una)*
 - [ ] **Generator:** în `Monedă`, după primele 5: `repetă la nesfârșit` → `așteaptă 3 secunde` → `creează o clonă a mea` *(la poziție aleatorie pe x)*  
-- [ ] **Viață pe Scenă:** `viață` afișată mare; la `viață = 0` → `spune Sfârșit` și `oprește tot`  
+- [ ] **Viață pe Scenă:** `viață` afișată mare pe scenă; la **Erou**: `dacă viață = 0` → `spune Sfârșit` timp de `2` secunde și `oprește tot`  
 - [ ] **Al doilea tip:** un inamic diferit *(viteză mai mare)* sau o monedă care valorează 5
 
 
 ---
 
 ## Greșeli frecvente
-1. **Moare imediat** — lipsește `spune … 1 secundă` sau `du-te la start` după lovitură.  
+1. **Moare imediat** — lipsește `spune … 1 secundă` sau mutarea la locul de start după lovitură.  
 2. **Monedele apar peste tot, sau nu apar** — verifică `x: (-200 + (k * 80))` și `k` setat pe 0 la steag.  
 3. **Clonele rămân la restart** — `oprește tot` șterge clonele; steagul le recreează curat.  
 4. **O monedă adaugă scor de mai multe ori** — lipsește `șterge această clonă`.  

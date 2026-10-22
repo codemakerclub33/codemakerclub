@@ -14,9 +14,9 @@ Al treilea pas, mersul. La Erou, în repetă la nesfârșit: dacă tasta săgeat
 
 Al patrulea pas, lumea care alunecă. Începi cu Copac. Creezi variabila lume x, numai pentru acest sprite. Pe steag: setează lume x la patru sute și ascunde. Apoi repetă la nesfârșit: setează variabila poz la lume x minus camera x. Dacă valoarea absolută din poz este mai mică decât două sute cincizeci, du-te la x poz, y minus o sută, și arată. Altfel, ascunde. Copiezi scriptul în Piatră și în Țel și schimbi doar lume x. Piatră are opt sute. Țel are o mie două sute.
 
-Al cincilea pas, obiectivul. La Țel: dacă atinge Erou, spune Ai ajuns și oprește tot.
+Al cincilea pas, obiectivul. La Țel: dacă atinge Erou, spune Ai ajuns timp de două secunde și oprește tot.
 
-Complet, alegi cel puțin una. Limite: dacă camera x este mai mică decât zero, setează zero. Dacă este mai mare decât o mie două sute, setează o mie două sute. Două zone: dacă camera x este mai mare decât șase sute, treci la fundalul doi, altfel la fundalul unu. Obstacol: sprite-ul Groapă, cu lume x șase sute. Dacă atinge Erou, setează camera x la zero.
+Complet, alegi cel puțin una. Limite: dacă camera x este mai mică decât zero, setează zero. Dacă este mai mare decât o mie două sute, setează o mie două sute. Două zone, la Scenă, cu două fundaluri: dacă camera x este mai mare decât șase sute, treci la fundalul doi, altfel la fundalul unu. Obstacol: sprite-ul Groapă, cu lume x șase sute. Dacă atinge Erou, setează camera x la zero.
 
 Greșeli frecvente. Copacul merge în același sens cu tine: ai scris plus în loc de minus. Variabila lume x e pentru toate sprite-urile, nu numai pentru unul. Eroul schimbă x, dar trebuie să schimbe doar camera x. Resetul uită camera x.
 

@@ -60,7 +60,7 @@ Completezi pe o foaie, cu creionul:
 - [ ] **Buton Start:** un sprite `Start` care, la click, ascunde butonul *(meniul complet vine la L9)*
 
 ### 4) Note pentru L8 *(5 minute)*
-Pe foaie, 3 lucruri pe care le adaugi: de exemplu **un inamic**, **monede din clone**, **o a doua platformă mobilă**.
+Pe foaie, 3 lucruri pe care le adaugi: de exemplu **un inamic**, **monede din clone**, **un inamic mai rapid**.
 
 - [ ] **Verifici:** ai scris pe foaie 3 lucruri pe care le adaugi la L8.
 
@@ -72,7 +72,7 @@ Pe foaie, 3 lucruri pe care le adaugi: de exemplu **un inamic**, **monede din cl
 3. **Fără foaie** — la L8 nu știi ce adaugi.  
 4. **Toate regulile din L1–L6** — alege 2 sau 3, bine făcute.  
 5. **Fără condiție de câștig** — L9 nu are ce închide.  
-6. **Platformele sunt prea sus** — săritura urcă cam 66 de pași; pune-le la maximum 60 de pași una deasupra celeilalte.
+6. **Platformele sunt prea sus** — săritura urcă cam 66 de pași; pune platformele la maximum 60 de pași una deasupra celeilalte.
 
 ---
 

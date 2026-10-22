@@ -35,7 +35,7 @@ Lucrezi în `Prenume_Nume_M5_Proiect`. Ideea: jocul **nu mai pornește la steag*
 ### 1) Mesajele *(5 minute, pe foaie)*
 Trei mesaje, trimise cu `trimite … către toți`:  
 - `start_joc` — pornește jocul  
-- `win` / `lose` — jocul s-a terminat  
+- `win` / `lose` — jocul este terminat  
 - `revino_meniu` — înapoi la început
 
 **Încearcă tu — pe foaie (5 min):** desenează fluxul: *steag → meniu → apeși Start → joci → win sau lose → meniu*.
@@ -45,12 +45,12 @@ Trei mesaje, trimise cu `trimite … către toți`:
 2. Pe steag: `arată` · `du-te la x: 0 y: 0` · `treci în față` *(ca să acopere restul)*  
 3. `la click pe acest sprite`: `trimite start_joc` și `ascunde`  
 4. La **toate celelalte** sprite-uri: pe steag doar `ascunde`; scripturile de joc *(gravitație, patrulă, monede)* le muți sub `când primesc start_joc`, cu `arată` la început  
-5. La **fiecare** sprite, primul bloc de sub `când primesc start_joc` e `oprește [celelalte scripturi din acest sprite]` *(ca să nu pornească jocul de două ori)*
+5. Fiecare sprite are **un singur** script de joc sub `când primesc start_joc` *(dacă ai mai multe, le unești într-unul)*
 
 - [ ] **Verifici:** apeși steagul — vezi doar meniul. Apeși Start — jocul apare și merge ca înainte.
 
 ### 3) Resetul total *(Minim, partea 2 · 10 minute)*
-Sub `când primesc start_joc` la **Erou**, înainte de joc: `setează viață la 3` · `setează scor la 0` · `setează monede la 0` · `setează viteza_y la 0` · `șterge tot din inventar` *(dacă ai listă)* · `du-te la start`.
+Sub `când primesc start_joc` la **Erou**, înainte de joc: `setează viață la 3` · `setează scor la 0` · `setează monede la 0` · `setează viteza_y la 0` · `șterge tot din inventar` *(dacă ai listă)* · `du-te la x: -200 y: -100` *(locul de start)*.
 
 - [ ] **Verifici:** apeși Start, joci puțin, ajungi la meniu și apeși Start din nou: totul începe curat.
 
@@ -61,14 +61,15 @@ Sub `când primesc start_joc` la **Erou**, înainte de joc: `setează viață la
    - `când primesc win`: `treci la costumul Ai câștigat!` · `arată` · `așteaptă 3 secunde` · `ascunde` · `trimite revino_meniu`  
    - `când primesc lose`: la fel, cu al doilea costum  
 4. Meniul: `când primesc revino_meniu` → `arată`  
-5. Toate celelalte sprite-uri: `când primesc revino_meniu` → `oprește celelalte scripturi din acest sprite` și `ascunde`; clonele: `șterge această clonă`
+5. La **Erou**, **Inamic** și **Monedă**: `când primesc win` și `când primesc lose` → `oprește celelalte scripturi din acest sprite` *(jocul îngheață cât timp se vede mesajul)*  
+6. Toate celelalte sprite-uri: `când primesc revino_meniu` → `oprește celelalte scripturi din acest sprite` și `ascunde`; clonele: `șterge această clonă`
 
 - [ ] **Verifici:** poți câștiga *(ajungi la Țel)* și poți pierde *(te lasă fără viață)*. După fiecare, vezi mesajul 3 secunde și revii la meniu.
 
 ### 5) Test cu un coleg *(10 minute)*
 Colegul joacă **fără ajutor**. Dacă se blochează, notezi unde: asta repari.
 
-- [ ] **Verifici:** colegul a jucat fără ajutor și ai notat pe foaie cel puțin un loc unde s-a blocat (sau ai scris „nicăieri”).
+- [ ] **Verifici:** colegul a jucat fără ajutor și ai notat pe foaie cel puțin un loc unde a rămas blocat (sau ai scris „nicăieri”).
 
 ### 6) Complet *(alege cel puțin una)*
 - [ ] Ambele finaluri complete, cu mesaje clare  
@@ -79,9 +80,9 @@ Colegul joacă **fără ajutor**. Dacă se blochează, notezi unde: asta repari.
 ---
 
 ## Greșeli frecvente
-1. **Câștigi imediat** — `Țel` e deja atins la start. Mută-l mai departe sau așteaptă `start_joc`.  
+1. **Câștigi imediat** — `Țel` e deja atins la start. Mută Țel mai departe sau așteaptă `start_joc`.  
 2. **Meniul rămâne peste joc** — lipsește `ascunde` după click, sau `treci în față` la alt sprite.  
-3. **Restartul pornește jocul de două ori** — lipsește `oprește celelalte scripturi din acest sprite`.  
+3. **Restartul pornește jocul de două ori** — lipsește `oprește celelalte scripturi din acest sprite` din `când primesc revino_meniu`.  
 4. **Rămân clone sau viață veche** — resetul nu acoperă tot.  
 5. **Nu poți câștiga niciodată** — verifică unde a ajuns `Țel` când se ascunde.  
 6. **Controalele nu sunt scrise** — colegul nu știe ce să apese.  

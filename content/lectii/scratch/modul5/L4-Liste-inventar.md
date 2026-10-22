@@ -47,7 +47,7 @@ O listă e un **rând de cutii cu nume**: `Cheie`, `Monedă`… Tu faci trei luc
 
 ### 2) Lista *(10 minute)*
 1. Proiect nou → `Prenume_Nume_M5_L4`  
-2. În paleta **Variabile** → **Creează o listă** → `inventar` *(pentru toate sprite-urile)* · căsuța bifată, ca s-o vezi pe scenă  
+2. În paleta **Variabile** → **Creează o listă** → `inventar` *(pentru toate sprite-urile)* · căsuța bifată, ca să o vezi pe scenă  
 3. Eroul `Erou`, la `x: -200 y: 0`; pe steag: `șterge tot din inventar` și `du-te la x: -200 y: 0`  
 4. Mersul în toate direcțiile, în `repetă la nesfârșit`: `schimbă x cu 4` / `-4` și `schimbă y cu 4` / `-4`, cu săgețile
 
@@ -63,7 +63,7 @@ Trei sprite-uri-obiecte: `Cheie`, `Monedă`, `Floare`. Pentru fiecare, același 
 - [ ] **Verifici:** atingi pe rând obiectele — fiecare apare **o singură dată** în listă și dispare de pe scenă. *(Un sprite ascuns nu mai poate fi atins, deci nu se adaugă de 100 de ori.)*
 
 ### 4) Ușa, `conține?` și consumul *(Minim, partea 2 · 20 minute)*
-Sprite `Ușă`, în `repetă la nesfârșit`:
+Sprite `Ușă`: pe steag `arată`; apoi, în `repetă la nesfârșit`:
 - `dacă <atinge Erou?>` **atunci**:  
   - `dacă <inventar conține [Cheie]?>` **atunci**:  
     1. `șterge (poziția lui [Cheie] în inventar) din inventar` *(consumi cheia)*  
@@ -75,7 +75,7 @@ Sprite `Ușă`, în `repetă la nesfârșit`:
 - [ ] Iei cheia, ajungi la ușă → se deschide, iar în listă **nu mai e** Cheia *(Monedă și Floare rămân)*.
 
 ### 5) Complet *(alege cel puțin una)*
-- [ ] **Doi, cu reacții diferite:** `Monedă` + `Cheie` — Moneda dă `schimbă puncte cu 1`, Cheia deschide ușa  
+- [ ] **Doi, cu reacții diferite:** `Monedă` + `Cheie` — Moneda dă `schimbă puncte cu 1` *(variabila `puncte`)*, Cheia deschide ușa  
 - [ ] **Fără duplicat:** în scriptul obiectului, înainte de `adaugă`: `dacă <nu <inventar conține [Floare]?>>`  
 - [ ] **Iconuri:** sprite mic pentru fiecare obiect, în colț: `dacă <inventar conține [Cheie]?>` → `arată`, `altfel` `ascunde`
 
@@ -86,7 +86,7 @@ Sprite `Ușă`, în `repetă la nesfârșit`:
 1. **Doar variabile `are_cheie = 1`** — Minim cere **listă**, cu `adaugă` și `conține?`.  
 2. **Lista nu se vede** — căsuța din paleta Variabile trebuie bifată.  
 3. **Adaugă „Cheie” de sute de ori** — lipsește `ascunde` după `adaugă`, sau scriptul e într-un `repetă la nesfârșit`.  
-4. **Ușa se deschide fără cheie** — `dacă … conține` verifică alt nume *(Cheie ≠ cheie, diferență de majuscule)*.  
+4. **Ușa se deschide fără cheie** — `dacă … conține` verifică alt nume *(Cheie ≠ cheie, majusculele nu contează, dar litera lipsă da; de ex. „Chei”)*.  
 5. **Cheia nu dispare din listă** — lipsește `șterge (poziția lui … ) din inventar`.  
 6. **Confuzie cu M6** — azi iteme pe **nume**; în M6, cantități pe tip.
 
