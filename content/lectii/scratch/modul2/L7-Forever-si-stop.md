@@ -137,6 +137,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] La victorie: `stop this script` pe control, **nu** `stop all` — ca alte scripturi să poată rula **muzica / animația de fanfară** după câștig  
 - [ ] Timer: variabilă `timp` care crește în bucla `forever` până la stop  
 - [ ] Pauză: variabilă `pauza` — dacă e 1, nu te miști  
+- [ ] ★★★ **Provocare:** **Două feluri de oprire:** o tastă oprește doar mișcarea (`stop this script`), iar victoria oprește tot (`stop all`).
 
 ## Recapitulare rapidă
 1. `forever` = aprins · `stop` = stins  

@@ -158,6 +158,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] **WASD + săgeți** pe același erou (ambele seturi)  
 - [ ] Urmărește mouse-ul **doar** când click e apăsat  
 - [ ] Tasta **Shift** (sau spațiu): viteză mai mare cât e apăsată  
+- [ ] ★★★ **Provocare:** Eroul se mișcă cu săgețile, iar **mouse-ul mută o țintă**. Prinde ținta cu eroul!
 
 ## Recapitulare rapidă
 1. Control fluid = `forever` + `tasta e apăsată?`  

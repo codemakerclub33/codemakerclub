@@ -150,6 +150,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] La tasta **săgeată dreapta**: eroul <span style="color:#4C97FF;font-weight:700">mergi</span> `10`  
 - [ ] Butonul își schimbă **costumul** când e apăsat (`următorul costum` pe click)  
 - [ ] La spațiu: `spune` un mesaj secret + `așteaptă` `1`  
+- [ ] ★★★ **Provocare:** **Trei reguli diferite** în același proiect: una la steag, una la click pe personaj și una la o tastă. Fiecare face altceva, iar la steag totul revine la început.
 
 *(Nu folosim azi **mesaje** / *broadcast* — `trimite` / `când primesc`. Vin în **Modulul 2**. Azi rămânem la steag, click și tastă.)*
 

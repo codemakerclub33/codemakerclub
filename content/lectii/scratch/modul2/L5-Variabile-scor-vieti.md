@@ -154,6 +154,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Variabilă `vieti` (3) — obstacol scade viața; `vieti = 0` → Game Over  
 - [ ] La scor 5: sunet de victorie + fundal nou  
 - [ ] „Nivel”: la 5 → `setează scor la 0` + `spune` `Nivel trecut!` *(simulare)*  
+- [ ] ★★★ **Provocare:** Două variabile pe scenă, `scor` și `vieti`, plus **stele de aur** care dau +3 în loc de +1.
 
 ## Recapitulare rapidă
 1. Variabilă = cutie cu nume + număr  

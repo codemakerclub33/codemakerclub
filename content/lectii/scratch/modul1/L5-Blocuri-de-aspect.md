@@ -156,6 +156,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] **Pulsează** (al 2-lea script pe steag):  
   <span style="color:#FFAB19;font-weight:700">forever</span> → `modifică mărimea cu` `10` → `așteaptă` `0.3` → `modifică cu` `-10` → `așteaptă` `0.3`  
   *(Pe steag tot `setează mărimea la 100` — altfel crește la nesfârșit.)*  
+- [ ] ★★★ **Provocare:** O **transformare** în ordine: mărime, culoare și costum se schimbă pe rând, iar la steag personajul revine la normal.
 
 ## Recapitulare rapidă
 1. Aspect = `spune`, `gândește`, mărime, culoare, costum  

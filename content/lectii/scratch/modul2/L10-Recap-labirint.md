@@ -159,6 +159,7 @@ La min **55** încep prezentările **oricum**.
 - [ ] A 3-a îmbunătățire  
 - [ ] Schimb cu un coleg: joacă 3 min, notează 1 greșeală  
 - [ ] Pe foaie: **1 idee** pentru Modulul 3 (joc cu scor / nivele / clone)
+- [ ] ★★★ **Provocare:** Alege o regulă din joc (viteză, vieți sau scor) și schimbă-o ca să fie jocul **de două ori mai greu**. Ce ai schimbat?
 
 ## Recapitulare rapidă
 1. L10 = **completezi** L9, apoi **prezinți**  

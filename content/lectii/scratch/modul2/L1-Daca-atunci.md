@@ -163,6 +163,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] La spațiu: `dacă` tasta spațiu → <span style="color:#9966FF;font-weight:700">spune</span> `Stop!` *(a 3-a condiție `dacă` în bucla `forever`)*  
 - [ ] La margine: <span style="color:#9966FF;font-weight:700">efect culoare</span> o clipă, apoi <span style="color:#9966FF;font-weight:700">anulează efectele grafice</span>  
 - [ ] Al 2-lea personaj: dacă **tu** atingi **acel** personaj → `spune` `Au!` *(exemplu pentru L3)*  
+- [ ] ★★★ **Provocare:** **4 condiții** `dacă` în același `forever`, fiecare cu un `spune` diferit (o tastă sau o atingere).
 
 ## Recapitulare rapidă
 1. <span style="color:#FFAB19;font-weight:700">dacă</span> = întrebare da/nu + acțiune  

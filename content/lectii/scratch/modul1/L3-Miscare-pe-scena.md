@@ -148,6 +148,7 @@ Cei rapizi: Complet, apoi Bonus.
   tragi scriptul (stiva de blocuri) **peste iconița** celuilalt personaj, în lista de jos din dreapta — Scratch îl **copiază**.  
   *(Nu rescrii tot de mână.)*  
 - [ ] La click pe personaj (`când se face clic pe acest personaj` — tot **Evenimente**, ca steagul): un salt mic (`mergi` înainte / înapoi) și revine  
+- [ ] ★★★ **Provocare:** Desenează pe foaie un traseu în formă de literă (L, Z sau U) și fă personajul să-l parcurgă exact, cu `mergi` și `întoarce`.
 
 ## Recapitulare rapidă
 1. `mergi` = pași · `întoarce` = direcție · `glisează` = alunecă în timp  

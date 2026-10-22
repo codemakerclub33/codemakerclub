@@ -138,6 +138,7 @@ Cei rapizi: Complet, apoi Bonus.
   `forever` → `următorul costum` → `așteaptă` `0.2`  
   *(Oprești cu stop. Nu pune `Gata!` în bucla `forever`.)*  
 - [ ] Explorare în clasă: schimbă o dată numărul din `repetă` (ex. 4 → 8) — ce observi pe scenă?  
+- [ ] ★★★ **Provocare:** Un **dans** în 3 mișcări: fiecare mișcare are propria buclă `repetă` și propriul ritm (`așteaptă` diferit), iar la final personajul revine la start.
 
 ## Recapitulare rapidă
 1. `repetă N` = înăuntru de N ori, apoi gata  

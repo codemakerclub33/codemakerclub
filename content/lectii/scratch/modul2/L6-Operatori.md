@@ -150,6 +150,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Dacă `x > 100` → bonus +2 la scor  
 - [ ] Mesaj cu <span style="color:#59C059;font-weight:700">alătură</span> `Ai ` + `scor` (dacă n-ai făcut la pasul 4)  
 - [ ] Afișezi `scor` „dublat” cu `scor × 2` (blocul `×` din Operatori)  
+- [ ] ★★★ **Provocare:** Victorie la `scor > 9`, dar doar dacă `vieti > 0`. Stelele de aur dau +3, cele normale +1.
 
 ## Recapitulare rapidă
 1. Comparațiile = hexagoane pentru `dacă`  

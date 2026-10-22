@@ -150,6 +150,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Al 3-lea personaj **sau** schimbi **fundalul** în timpul clipului  
 - [ ] La final: personajele se apropie + un mesaj împreună  
 - [ ] Pornește și la **click pe personaj** (nu doar pe steag)
+- [ ] ★★★ **Provocare:** Clipul are **3 replici** pe fiecare personaj și durează cel puțin 15 secunde. Arată-l unui coleg fără să-i spui nimic: înțelege povestea?
 
 ## Recapitulare rapidă
 1. <span style="color:#3F8F2A;font-weight:700">Steagul</span> = start  

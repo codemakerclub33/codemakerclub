@@ -147,6 +147,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Pe fiecare drum: **costum** diferit pe personaj (nu doar fundal)  
 - [ ] Al 2-lea personaj: pe steag, alt `dacă/altfel` cu **altă** tastă (ex. `n` = forțează noapte pe un mesaj)  
 - [ ] La început (înaintea buclei `forever`): `spune` scurt cu regula, apoi bucla  
+- [ ] ★★★ **Provocare:** Două `dacă/altfel` separate, pe **două taste diferite**, fiecare cu alt costum pe personaj.
 
 ## Recapitulare rapidă
 1. **Atunci** = da · **Altfel** = nu  

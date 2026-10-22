@@ -163,6 +163,7 @@ La min **55** încep prezentările **oricum**.
 - [ ] **`forever` de decor** (costum care clipește) — ca la Bonus L8 — pe un script separat  
 - [ ] **Ricoșeu pe margine** — ca la Bonus L9 (`dacă atinge marginea, sari înapoi`)  
 - [ ] Pe foaie: **1 idee** pentru Modulul 2 (labirint / dacă apeși… / dacă atingi…)
+- [ ] ★★★ **Provocare:** Prezintă proiectul în **1 minut**: ce face, ce bloc nou ai învățat și un lucru pe care l-ai schimba.
 
 ## Recapitulare rapidă
 1. L10 = **completezi** L9, apoi **prezinți**  

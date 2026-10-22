@@ -173,6 +173,7 @@ Cei rapizi: Complet, apoi Bonus.
   *(Blocul e în <span style="color:#4C97FF;font-weight:700">Mișcare</span> — „mingea” ricoșează de pe marginea scenei.  
   Nu e nevoie azi de categoria <span style="color:#5CB1D6;font-weight:700">Detectare</span>; o aprofundăm în Modulul 2.)*  
   La steag, pe scriptul principal: tot resetezi locul de start, ca ricoșeul să înceapă din același punct.
+- [ ] ★★★ **Provocare:** **Test cu un coleg:** el privește clipul și îți spune ce n-a înțeles. Schimbi un lucru ca să fie mai clar.
 
 ## Recapitulare rapidă
 1. Ordine: **reset → intro → acțiune → final**  

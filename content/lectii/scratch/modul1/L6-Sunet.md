@@ -147,6 +147,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] După ~2 secunde: `oprește toate sunetele`  
 - [ ] Al 2-lea personaj cu propriul sunet la click  
 - [ ] Opțional: `setează volumul la` `50`  
+- [ ] ★★★ **Provocare:** **Ritm:** la fiecare dintre cele 3 sunete, personajul face o mișcare în același timp (două scripturi pe steag).
 
 ## Recapitulare rapidă
 1. Tab **Sunete** = adaugi · capitolul **Sunet** = pornești  

@@ -141,6 +141,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Vizitează **4 colțuri** pe rând (x/y clare pe fiecare)  
 - [ ] La click pe erou: <span style="color:#4C97FF;font-weight:700">du-te la indicatorul mouse-ului</span> (tot în Mișcare)  
 - [ ] O a treia oprire pe traseu (start → A → B → comoară)  
+- [ ] ★★★ **Provocare:** Scrie pe foaie coordonatele a **5 locuri** înainte să le încerci. Apoi fă eroul să le viziteze pe rând: cât de aproape ai fost?
 
 ## Recapitulare rapidă
 1. **X** stânga/dreapta · **Y** jos/sus · mijloc ≈ `(0, 0)`  

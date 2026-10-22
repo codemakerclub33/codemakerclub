@@ -149,6 +149,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Timer sau vieți pe scenă  
 - [ ] Nivel 2: alt fundal după prima ieșire (mesaj `nivel2`)  
 - [ ] Obstacol care se mișcă stânga–dreapta (bucla `forever` + `glisează`)  
+- [ ] ★★★ **Provocare:** Variabila `cheie`: atingi culoarea cheii și `cheie` devine 1. Ieșirea se deschide **doar** dacă `cheie` = 1.
 
 ## Recapitulare rapidă
 1. Control + detectare + `stop all` / restart  

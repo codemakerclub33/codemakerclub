@@ -162,6 +162,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Mesaj `scena2` → schimbă fundalul  
 - [ ] Buton „Start joc” trimite mesaj; steagul **doar** resetează  
 - [ ] Variantă: după `trimite alarma`, pe Senzor `stop this script` — repornești cu steagul (mai rigid decât `alarma_activa`)  
+- [ ] ★★★ **Provocare:** O mini-poveste cu **3 personaje** care vorbesc pe rând, doar prin mesaje (A → B → C → A).
 
 ## Recapitulare rapidă
 1. Trimite / când primesc = același nume  
