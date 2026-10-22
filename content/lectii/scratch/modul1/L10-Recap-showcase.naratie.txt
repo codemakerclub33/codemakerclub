@@ -2,7 +2,7 @@ Lecția zece. Completare și prezentare.
 
 Astăzi termini Personajul meu, îl arăți clasei, și primești insigna Scratch Starter. Nu refaci de la zero. Deschizi proiectul de la lecția nouă și adaugi. Fișierul rămâne Prenume, linie jos, Nume, linie jos, L nouă. Sau o copie L zece, ca să nu strici versiunea veche.
 
-Obiectivul. Ai îmbunătățit Personajul meu, l-ai prezentat, și ai insigna. Minim: o completare din lista A până la F, plus reset curat, plus prezentare. Asta e suficient pentru insignă. Complet: două completări, plus prezentare, plus salvare.
+Obiectivul. Ai îmbunătățit Personajul meu, ai prezentat, și ai insigna. Minim: o completare din lista A până la F, plus reset curat, plus prezentare. Asta e suficient pentru insignă. Complet: două completări, plus prezentare, plus salvare.
 
 De ce contează. Proiectele bune se refac o dată: dai detalii, apoi arăți. Insigna Scratch Starter înseamnă: Modulul unu e încheiat. Modulul doi începe cu alegeri, dacă.
 
@@ -16,7 +16,7 @@ Al treilea pas pe ecran. Reguli de prezentare. În unu sau două minute: cine e,
 
 Al patrulea pas pe ecran. Recap pe scurt cu profesorul. Steag. Fundal și costum. Mergi, glisează, du-te la, X și Y. Spune, mărime, culoare, sunet. Repetă și așteaptă. Apoi: în Modulul doi apar alegerile.
 
-Greșeli frecvente. Dacă refaci tot de la zero, greșești. Deschizi L nouă și adaugi. Dacă al doilea personaj n-are reset, resetezi pe amândouă. Dacă la prezentare e haos, verifici steagul de două ori înainte. Dacă încerci două completări netestate, la prezentare e stricat. Fă una, testează, apoi a doua.
+Greșeli frecvente. Dacă refaci tot de la zero, greșești. Deschizi L nouă și adaugi. Dacă al doilea personaj nu are reset, resetezi pe amândouă. Dacă la prezentare e haos, verifici steagul de două ori înainte. Dacă încerci două completări netestate, la prezentare e stricat. Fă una, testează, apoi a doua.
 
 Proiectul de azi. Completare pe Personajul meu.
 

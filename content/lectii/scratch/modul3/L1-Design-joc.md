@@ -75,7 +75,7 @@ Orice joc — de la Mario la jocurile de telefon — are aceleași 3 lucruri: **
 
 1. Selectezi **Erou**
 2. Din <span style="color:#E6A800;font-weight:700">Evenimente</span>:  
-   <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span>
+   <span style="color:#3F8F2A;font-weight:700">când se dă clic pe steagul verde</span>
 3. Din <span style="color:#FFAB19;font-weight:700">Control</span>: <span style="color:#FFAB19;font-weight:700">forever</span> *(îl știi din M2)*
 4. **În interiorul** buclei `forever`, **patru** <span style="color:#FFAB19;font-weight:700">dacă … atunci</span> (câte unul pe tastă), cu hexagon din <span style="color:#5CB1D6;font-weight:700">Detectare</span>:  
    - `săgeată dreapta` → <span style="color:#4C97FF;font-weight:700">schimbă x cu</span> `10`  

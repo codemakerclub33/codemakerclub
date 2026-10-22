@@ -34,7 +34,7 @@ La finalul orei folosești blocuri din <span style="color:#9966FF;font-weight:70
 ### 1) Spune și gândește
 1. Selectezi **personajul** (intervievatul)
 2. Din <span style="color:#E6A800;font-weight:700">Evenimente</span>:  
-   <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span>
+   <span style="color:#3F8F2A;font-weight:700">când se dă clic pe steagul verde</span>
 3. Din <span style="color:#9966FF;font-weight:700">Aspect</span>:  
    <span style="color:#9966FF;font-weight:700">spune</span> `Salut!` pentru `2` secunde →  
    <span style="color:#9966FF;font-weight:700">gândește</span> `Hmm… ce să zic?` pentru `2` secunde →  
@@ -60,7 +60,7 @@ La finalul orei folosești blocuri din <span style="color:#9966FF;font-weight:70
 | <span style="color:#9966FF;font-weight:700">modifică mărimea cu</span> `20` | **adaugă** / scade față de acum (se adună) |
 | <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `100` | pune **exact** 100%, indiferent cât era înainte |
 
-*De-asta la **reset** (steag) folosim **`setează`**, nu `modifică`: nu contează cât a crescut în interviu — mereu ajunge înapoi la 100.*
+*De aceea la **reset** (steag) folosim **`setează`**, nu `modifică`: nu contează cât a crescut în interviu — mereu ajunge înapoi la 100.*
 
 **Încearcă tu — mărime (2 min)**  
 - [ ] Ai folosit `modifică` (+20 / −20) în timpul clipului  

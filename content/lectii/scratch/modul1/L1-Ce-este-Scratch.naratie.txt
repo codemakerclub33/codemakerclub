@@ -12,7 +12,7 @@ Capitolele de azi. Din Evenimente iei steagul verde. Din Aspect iei spune, costu
 
 Primul pas pe ecran. Arăți scena, personajul, steagul și stop. Găsești cele cinci capitole colorate din stânga.
 
-Al doilea pas pe ecran. Selectezi personajul, nu scena. Din Evenimente pui: când se face clic pe steagul verde. Din Aspect pui spune: Salut, pentru două secunde. Din Control pui așteaptă o secundă. Apoi încă un spune: Eu sunt, și spui numele tău, pentru două secunde. Apeși steagul verde. Replicile vin pe rând. Butonul roșu oprește. Fără steag deasupra, celelalte blocuri nu rulează.
+Al doilea pas pe ecran. Selectezi personajul, nu scena. Din Evenimente pui: când se dă clic pe steagul verde. Din Aspect pui spune: Salut, pentru două secunde. Din Control pui așteaptă o secundă. Apoi încă un spune: Eu sunt, și spui numele tău, pentru două secunde. Apeși steagul verde. Replicile vin pe rând. Butonul roșu oprește. Fără steag deasupra, celelalte blocuri nu rulează.
 
 Al treilea pas pe ecran. Salvezi. Numele fișierului este Prenume, linie jos, Nume, linie jos, L unu. Nu doar Ana, linie jos, L unu — ca să nu se calce fișierele în clasă.
 

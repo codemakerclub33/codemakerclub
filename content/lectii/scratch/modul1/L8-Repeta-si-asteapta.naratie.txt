@@ -14,7 +14,7 @@ Al treilea pas pe ecran. A doua buclă, una după alta, nu una în alta. Sub buc
 
 Al patrulea pas pe ecran. Chiar sub steag, înainte de bucle: du-te la start, orientează-te nouăzeci, comută la costumul din start. După ultima buclă, în afara ei: spune Gata. Nucleul e repetă cu număr, ca să se oprească.
 
-Greșeli frecvente. Dacă nu se repetă, blocurile sunt sub repetă, nu în el. Dacă e prea rapid, lipsește așteaptă în buclă. Dacă Gata apare de opt ori, spune e în repetă. Mută-l sub buclă. Dacă ai C în C, scoate bucla dinăuntru. Două C-uri una sub alta.
+Greșeli frecvente. Dacă nu se repetă, blocurile sunt sub repetă, nu în el. Dacă e prea rapid, lipsește așteaptă în buclă. Dacă Gata apare de opt ori, spune e în repetă. Mută spune sub buclă. Dacă ai C în C, scoate bucla dinăuntru. Două C-uri una sub alta.
 
 Proiectul de azi. Dansul meu.
 

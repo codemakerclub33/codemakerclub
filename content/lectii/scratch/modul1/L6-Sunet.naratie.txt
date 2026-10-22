@@ -6,7 +6,7 @@ Obiectivul. Adaugi sunete din bibliotecă și le pornești cu blocuri din Sunet.
 
 De ce contează. În jocuri, sunetul spune start, bravo sau ai pierdut, fără text. În Scratch, asta e capitolul Sunet. În clasă: căști dacă se poate, altfel volumul jos. Testați pe rând.
 
-Primul pas pe ecran. Selectezi personajul. Tab Sunete, adaugi din bibliotecă, de exemplu Meow sau Pop. Fără sunet în tab, blocurile n-au ce reda.
+Primul pas pe ecran. Selectezi personajul. Tab Sunete, adaugi din bibliotecă, de exemplu Meow sau Pop. Fără sunet în tab, blocurile nu au ce reda.
 
 Al doilea pas pe ecran. La steagul verde: pornește sunetul. Pornește înseamnă: sunetul începe, și programul merge mai departe imediat.
 

@@ -9,7 +9,7 @@
 ---
 
 ## Obiectiv
-La finalul orei ai îmbunătățit „Personajul meu”, l-ai prezentat clasei, și ai insigna **Scratch Starter**.  
+La finalul orei ai îmbunătățit „Personajul meu”, ai prezentat clasei, și ai insigna **Scratch Starter**.  
 **Minim:** **1** completare din A–F + reset curat + prezentare → **e suficient pentru insignă**.  
 **Ținta orei (Complet):** **2** completări din A–F + prezentare + salvare.
 
@@ -137,7 +137,7 @@ La min **55** încep prezentările **oricum**.
 - [ ] **Minim:** **1** din A–F lipită și testată pe steag (notezi litera: ex. D)  
 - [ ] **Complet:** încă **1** din A–F (ex. B + C) — **după** ce prima e gata  
 - [ ] La steag: reset curat pe **toate** personajele folosite  
-- [ ] Clipul durează ≥ **30 sec** (țintă după Complet: **≥45 sec** dacă poți)  
+- [ ] Complet: clipul durează ≥ **30 sec** (țintă: **≥45 sec** dacă poți)  
 - [ ] Salvat: `Prenume_Nume_L9` (sau `Prenume_Nume_L10`)  
 
 **→ Minim când:** 1 completare rulează curat + ești gata de prezentare.
@@ -163,7 +163,7 @@ La min **55** încep prezentările **oricum**.
 - [ ] **`forever` de decor** (costum care clipește) — ca la Bonus L8 — pe un script separat  
 - [ ] **Ricoșeu pe margine** — ca la Bonus L9 (`dacă atinge marginea, sari înapoi`)  
 - [ ] Pe foaie: **1 idee** pentru Modulul 2 (labirint / dacă apeși… / dacă atingi…)
-- [ ] ★★★ **Provocare:** Prezintă proiectul în **1 minut**: ce face, ce bloc nou ai învățat și un lucru pe care l-ai schimba.
+- [ ] ★★★ **Provocare:** Alege un coleg și adaugă în clipul tău un lucru inspirat de clipul lui. Spune colegului ce ai luat și de unde.
 
 ## Recapitulare rapidă
 1. L10 = **completezi** L9, apoi **prezinți**  

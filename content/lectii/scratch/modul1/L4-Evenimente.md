@@ -34,7 +34,7 @@ La finalul orei pornești acțiuni pe **evenimente diferite** din <span style="c
 ### 1) Steagul verde = start și reset
 1. Selectezi **personajul** (eroul)
 2. Din <span style="color:#E6A800;font-weight:700">Evenimente</span>:  
-   <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span>
+   <span style="color:#3F8F2A;font-weight:700">când se dă clic pe steagul verde</span>
 3. Sub el:  
    <span style="color:#4C97FF;font-weight:700">du-te la x:</span> `0` <span style="color:#4C97FF;font-weight:700">y:</span> `0` →  
    <span style="color:#9966FF;font-weight:700">anulează efectele grafice</span> →  
@@ -54,7 +54,7 @@ La finalul orei pornești acțiuni pe **evenimente diferite** din <span style="c
    <span style="color:#E6A800;font-weight:700">când se dă clic pe acest personaj</span>  
    *(tot **Evenimente** — altă opțiune față de steag)*
 2. Sub el:  
-   <span style="color:#9966FF;font-weight:700">spune</span> `M-ai apăsat!` pentru `1` secundă →  
+   <span style="color:#9966FF;font-weight:700">spune</span> `Ai apăsat!` pentru `1` secundă →  
    <span style="color:#4C97FF;font-weight:700">mergi</span> `30` pași
 3. **Nu** apeși steagul — dai **click pe personaj** pe scenă
 4. Vezi: același personaj, **două porniri** (steag ≠ click)
@@ -100,7 +100,7 @@ La finalul orei pornești acțiuni pe **evenimente diferite** din <span style="c
 ## Greșeli frecvente
 1. **„Nu merge click-ul”** — apeși steagul, dar scriptul e pe click. Click **pe personaj**, pe scenă.  
 2. **Script pe personajul greșit** — verifică cine e selectat în listă.  
-3. **Click-ul lovește alt personaj** — butonul e peste erou; mută-le despărțit.  
+3. **Click-ul lovește alt personaj** — butonul e peste erou; așază personajele separat.  
 4. **La steag rămâne haos** — lipsește `du-te la` pe erou.  
 5. **Tasta „nu face nimic”** — click întâi pe scenă, apoi spațiu; verifică că e chiar `spațiu`.  
 6. **Culoarea nu mai „revine”** — fiecare spațiu adaugă +25; pe steag trebuie <span style="color:#9966FF;font-weight:700">anulează efectele grafice</span>.  

@@ -28,7 +28,7 @@ Azi e **filmul tău scurt**: aceleași blocuri, dar o poveste cap-coadă.
 | 50–100 | Proiect: **Complet** (cele 8 + 30–60 sec, arăți unui coleg) |
 | 100–120 | Recap, bonus, arăți clasei / salvare |
 
-*(Repere pentru profesor: la ~50 min, cine n-are încă intro→acțiune→final pe steag = de ajutat întâi pe schelet, nu pe detalii.)*
+*(Repere pentru profesor: la ~50 min, cine nu are încă intro→acțiune→final pe steag = de ajutat întâi pe schelet, nu pe detalii.)*
 
 ---
 
@@ -85,7 +85,7 @@ Pe personajul tău (și scenă, dacă schimbi fundalul):
 **Încearcă tu — scheletul rulează curat (3–5 min)**  
 *(Verificare Minim — „am scris cod” ≠ „am verificat că merge”.)*
 
-- [ ] La steag: reset loc + costum (+ mărime / efecte dacă le-ai folosit)  
+- [ ] La steag: reset loc + costum (+ mărime / efecte dacă ai folosit asemenea blocuri)  
 - [ ] Ai intro (`spune`) + acțiune (buclă **sau** traseu) + final (`spune` + sunet)  
 - [ ] Blocurile de final sunt **sub** bucle, nu înăuntru  
 - [ ] Steag de **două** ori → reîncepe curat (fără haos)  
@@ -109,7 +109,7 @@ Pe personajul tău (și scenă, dacă schimbi fundalul):
 ## Greșeli frecvente
 1. **La steag e haos** — lipsește resetul (loc / costum / sunete / mărime). Copiază lista din pasul 2.1.  
 2. **Prea scurt / prea rapid** — adaugă <span style="color:#FFAB19;font-weight:700">așteaptă</span> sau prelungește bucla; nu doar „mergi 200” odată.  
-3. **„Gata!” de 10 ori** — `spune` / sunetul final e **în** `repetă`; mută-le **sub** buclă.  
+3. **„Gata!” de 10 ori** — `spune` / sunetul final e **în** `repetă`; mută finalul **sub** buclă.  
 4. **C în C** — ai băgat o buclă în alta; azi: bucle **una după alta** (L8).  
 5. **Nu se aude** — sunet lipsă în tab Sunete, sau volum; la steag: `oprește toate sunetele` apoi pornește.  
 6. **„Am scris, deci e gata”** — rulează steagul de două ori și bifează checklist-ul; Minim = schelet **care merge**.  
@@ -166,14 +166,14 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] La final: <span style="color:#9966FF;font-weight:700">comută fundalul la</span> … + mesaj + sunet  
 - [ ] **Ricoșeu pe margine** (opțional — fără lecție nouă de Detectare):  
   pe un **script separat** (tot pe steag):  
-  <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span> →  
+  <span style="color:#3F8F2A;font-weight:700">când se dă clic pe steagul verde</span> →  
   <span style="color:#FFAB19;font-weight:700">forever</span> → înăuntru:  
   <span style="color:#4C97FF;font-weight:700">mergi</span> `10` pași →  
   <span style="color:#4C97FF;font-weight:700">dacă atinge marginea, sari înapoi</span>  
   *(Blocul e în <span style="color:#4C97FF;font-weight:700">Mișcare</span> — „mingea” ricoșează de pe marginea scenei.  
   Nu e nevoie azi de categoria <span style="color:#5CB1D6;font-weight:700">Detectare</span>; o aprofundăm în Modulul 2.)*  
   La steag, pe scriptul principal: tot resetezi locul de start, ca ricoșeul să înceapă din același punct.
-- [ ] ★★★ **Provocare:** **Test cu un coleg:** el privește clipul și îți spune ce n-a înțeles. Schimbi un lucru ca să fie mai clar.
+- [ ] ★★★ **Provocare:** **Test cu un coleg:** el privește clipul și îți spune ce nu a înțeles. Schimbi un lucru ca să fie mai clar.
 
 ## Recapitulare rapidă
 1. Ordine: **reset → intro → acțiune → final**  

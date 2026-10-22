@@ -50,7 +50,7 @@ La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">dacă �
 *(Exercițiu scurt — înțelegi hexagonul. În proiectul final, tasta e **opțională** = Complet.)*
 
 1. Din <span style="color:#E6A800;font-weight:700">Evenimente</span>:  
-   <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span>  
+   <span style="color:#3F8F2A;font-weight:700">când se dă clic pe steagul verde</span>  
    *(același start ca în M1)*
 2. Din <span style="color:#FFAB19;font-weight:700">Control</span>: <span style="color:#FFAB19;font-weight:700">forever</span>  
    *(îl știi din Bonus M1 — azi ține jocul „aprins”; aprofundare la L7)*

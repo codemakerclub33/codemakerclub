@@ -53,7 +53,7 @@ La steag vezi `20` o secundă, apoi `19`, `18`… Dacă pui **`schimbă` înaint
 
 ### 2) Countdown pe Scenă *(nucleul Minim)*
 1. Pe **Scenă**, din <span style="color:#E6A800;font-weight:700">Evenimente</span>:  
-   <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span>
+   <span style="color:#3F8F2A;font-weight:700">când se dă clic pe steagul verde</span>
 2. <span style="color:#FF8C1A;font-weight:700">setează</span> `timp` <span style="color:#FF8C1A;font-weight:700">la</span> `20`
 3. Din <span style="color:#FFAB19;font-weight:700">Control</span>: <span style="color:#FFAB19;font-weight:700">forever</span>
 4. **În interiorul** buclei, **în ordine**:  

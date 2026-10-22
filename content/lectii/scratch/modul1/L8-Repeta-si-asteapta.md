@@ -87,7 +87,7 @@ La finalul orei folosești <span style="color:#FFAB19;font-weight:700">repetă</
 1. **Nu se repetă** — blocurile sunt **sub** `repetă`, nu **în** el.  
 2. **Prea rapid** — lipsește `așteaptă` în buclă.  
 3. **La steag e haos** — fără reset loc / costum / direcție.  
-4. **„Gata!” de 8 ori** — `spune` e **în** `repetă`; mută-l **sub** buclă.  
+4. **„Gata!” de 8 ori** — `spune` e **în** `repetă`; mută `spune` **sub** buclă.  
 5. **C în C** — ai băgat o buclă în alta. Verifică: două C-uri **una sub alta**.  
 6. **Nume fișier** — `Prenume_Nume_L8`, nu doar `Ana_L8`.
 
@@ -163,6 +163,6 @@ apoi *(sub bucle)*: `spune Gata!`
 ## Temă
 Opțional — **pentru acasă**, indiferent dacă ai făcut Bonusul:  
 schimbă numărul din `repetă` la **5**, rulează; apoi la **15**, rulează.  
-Notează **o propoziție**: ce s-a schimbat?  
+Notează **o propoziție**: ce este diferit?  
 *(Dacă ai explorat deja 4→8 în Bonus, acasă încearcă **alt** număr, ex. 3 și 12.)*  
 Același fișier `Prenume_Nume_L8`.

@@ -33,7 +33,7 @@ Ca într-un joc sau o poveste pe telefon: schimbi **locul** (oraș → pădure) 
 1. Jos, lângă scenă, apeși pe **Fundaluri** (iconița de peisaj)
 2. Alegi **Fundal** din bibliotecă — primul loc
 3. Adaugi încă un fundal (al doilea loc)
-4. Redenumești-le clar, ex. `Casa` și `Parc` (click pe nume)
+4. Dai nume clare fundalurilor, ex. `Casa` și `Parc` (click pe nume)
 
 
 **Încearcă tu — fundaluri (1–2 min)**  
@@ -43,7 +43,7 @@ Ca într-un joc sau o poveste pe telefon: schimbi **locul** (oraș → pădure) 
 ### 2) Schimbi scena cu un bloc (pe **Scenă**)
 1. Selectezi **Scena** (nu personajul)
 2. Din <span style="color:#E6A800;font-weight:700">Evenimente</span>:  
-   <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span>
+   <span style="color:#3F8F2A;font-weight:700">când se dă clic pe steagul verde</span>
 3. Din <span style="color:#9966FF;font-weight:700">Aspect</span>:  
    <span style="color:#9966FF;font-weight:700">comută fundalul la</span> `Casa` *(mereu start pe scena 1)*
 4. Apeși steagul — trebuie să începi pe scena 1
@@ -57,7 +57,7 @@ Ca într-un joc sau o poveste pe telefon: schimbi **locul** (oraș → pădure) 
 1. Selectezi **personajul**
 2. Tab **Costume** → adaugi din bibliotecă până ai **cel puțin 3**
 3. Script pe personaj:  
-   <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span> →  
+   <span style="color:#3F8F2A;font-weight:700">când se dă clic pe steagul verde</span> →  
    <span style="color:#FFAB19;font-weight:700">repetă</span> `10` →  
    înăuntru: <span style="color:#9966FF;font-weight:700">următorul costum</span> →  
    <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.2`  
@@ -94,7 +94,7 @@ Nu există un „cablu” între cele două scripturi — **tu** potrivești num
 
 **Încearcă tu — sincron (2–3 min)**  
 - [ ] Scena așteaptă `5`, iar personajul are în total aceeași durată înainte de replica din parc  
-- [ ] Replica `Am ajuns în parc!` apare **după** ce fundalul s-a schimbat  
+- [ ] Replica `Am ajuns în parc!` apare **după** ce se schimbă fundalul  
 
 ---
 
@@ -154,7 +154,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] **3 scene** (al 3-lea fundal + încă un `așteaptă` + `comută`)  
 - [ ] Personaj-buton „Continuă”:  
   din <span style="color:#E6A800;font-weight:700">Evenimente</span> →  
-  <span style="color:#E6A800;font-weight:700">când se face clic pe acest personaj</span> →  
+  <span style="color:#E6A800;font-weight:700">când se dă clic pe acest personaj</span> →  
   <span style="color:#9966FF;font-weight:700">comută fundalul la</span> scena 2  
   *(Același capitol **Evenimente** ca steagul — doar **altă** opțiune: click pe personaj, nu pe steag. Nu e lecție nouă; e pentru cine a terminat Complet.)*  
 - [ ] Al 2-lea personaj pe scenă de la început, cu un `spune` doar pe scena 2 (același truc cu `așteaptă` — **fără** `ascunde`/`arată` azi; le învățăm mai târziu)
@@ -180,7 +180,7 @@ la steag → `treci la costumul` A → `așteaptă` *(aceleași secunde)* → `t
 - De ce trebuie potrivite secundele pe Scenă și pe personaj?
 
 ## Exemplu pe Scratch — dacă vrei să verifici / să te prinzi
-*(Parcurge **întâi** toată lecția și proiectul. Exemplul e la final: rulează-l pe steag, apoi See inside — ca să compari cu lumea ta, nu ca să copiezi tot.)*
+*(Parcurge **întâi** toată lecția și proiectul. Exemplul e la final: rulează exemplul pe steag, apoi See inside — ca să compari cu lumea ta, nu ca să copiezi tot.)*
 
 <div style="max-width:485px;margin:1rem 0;">
 <iframe src="https://scratch.mit.edu/projects/1385304951/embed" width="485" height="402" scrolling="no" allowfullscreen style="max-width:100%;border:0;border-radius:8px;"></iframe>

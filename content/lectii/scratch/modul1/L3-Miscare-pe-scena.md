@@ -34,7 +34,7 @@ La finalul orei muți personajul cu blocuri din <span style="color:#4C97FF;font-
 ### 1) Mergi + întoarce + așteaptă (obligatoriu)
 1. Selectezi **personajul** (nu Scena)
 2. Din <span style="color:#E6A800;font-weight:700">Evenimente</span>:  
-   <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span>
+   <span style="color:#3F8F2A;font-weight:700">când se dă clic pe steagul verde</span>
 3. Din <span style="color:#4C97FF;font-weight:700">Mișcare</span>, chiar sub steag:  
    <span style="color:#4C97FF;font-weight:700">orientează-te în direcția</span> `90` *(spre dreapta)*
 4. Apoi, pe rând:  
@@ -147,8 +147,8 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Al 2-lea personaj cu **același** traseu:  
   tragi scriptul (stiva de blocuri) **peste iconița** celuilalt personaj, în lista de jos din dreapta — Scratch îl **copiază**.  
   *(Nu rescrii tot de mână.)*  
-- [ ] La click pe personaj (`când se face clic pe acest personaj` — tot **Evenimente**, ca steagul): un salt mic (`mergi` înainte / înapoi) și revine  
-- [ ] ★★★ **Provocare:** Desenează pe foaie un traseu în formă de literă (L, Z sau U) și fă personajul să-l parcurgă exact, cu `mergi` și `întoarce`.
+- [ ] La click pe personaj (`când se dă clic pe acest personaj` — tot **Evenimente**, ca steagul): un salt mic (`mergi` înainte / înapoi) și revine  
+- [ ] ★★★ **Provocare:** Desenează pe foaie un traseu în formă de literă (L, Z sau U) și fă personajul să parcurgă exact traseul, cu `mergi` și `întoarce`.
 
 ## Recapitulare rapidă
 1. `mergi` = pași · `întoarce` = direcție · `glisează` = alunecă în timp  

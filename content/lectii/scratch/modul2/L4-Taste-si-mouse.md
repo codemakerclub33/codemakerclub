@@ -32,7 +32,7 @@ Labirinturile și jocurile se joacă cu **tastele**. Tiparul din Scratch e mereu
 
 ### 1) Tiparul de aur (copiază mental)
 ```
-când se face clic pe steagul verde
+când se dă clic pe steagul verde
   du-te la start
   anulează efectele grafice
   oprește toate sunetele

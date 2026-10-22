@@ -57,7 +57,7 @@ Fără steag și fără salvare, restul orelor nu pot începe.
 ### 2) Steagul + spune + așteaptă (împreună)
 1. Selectezi **personajul** (nu Scena)
 2. Din <span style="color:#E6A800;font-weight:700">Evenimente</span>:  
-   <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span>
+   <span style="color:#3F8F2A;font-weight:700">când se dă clic pe steagul verde</span>
 3. Din <span style="color:#9966FF;font-weight:700">Aspect</span>:  
    <span style="color:#9966FF;font-weight:700">spune</span> `Salut!` pentru `2` secunde
 4. Din <span style="color:#FFAB19;font-weight:700">Control</span>:  
@@ -150,7 +150,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Al 3-lea personaj **sau** schimbi **fundalul** în timpul clipului  
 - [ ] La final: personajele se apropie + un mesaj împreună  
 - [ ] Pornește și la **click pe personaj** (nu doar pe steag)
-- [ ] ★★★ **Provocare:** Clipul are **3 replici** pe fiecare personaj și durează cel puțin 15 secunde. Arată-l unui coleg fără să-i spui nimic: înțelege povestea?
+- [ ] ★★★ **Provocare:** Clipul are **3 replici** pe fiecare personaj și durează cel puțin 15 secunde. Arată clipul unui coleg fără să explici nimic: înțelege povestea?
 
 ## Recapitulare rapidă
 1. <span style="color:#3F8F2A;font-weight:700">Steagul</span> = start  
@@ -173,7 +173,7 @@ la steag → `așteaptă` … → `spune` …
 - Din ce capitol e `așteaptă`?
 
 ## Exemplu pe Scratch — dacă vrei să verifici / să te prinzi
-*(Parcurge **întâi** toată lecția și proiectul. Exemplul e la final: rulează-l pe steag, apoi See inside — ca să compari cu cardul tău, nu ca să copiezi tot.)*
+*(Parcurge **întâi** toată lecția și proiectul. Exemplul e la final: rulează exemplul pe steag, apoi See inside — ca să compari cu cardul tău, nu ca să copiezi tot.)*
 
 <div style="max-width:485px;margin:1rem 0;">
 <iframe src="https://scratch.mit.edu/projects/1385205392/embed" width="485" height="402" scrolling="no" allowfullscreen style="max-width:100%;border:0;border-radius:8px;"></iframe>

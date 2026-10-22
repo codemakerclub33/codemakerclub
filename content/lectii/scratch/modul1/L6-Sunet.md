@@ -37,7 +37,7 @@ La finalul orei adaugi sunete din bibliotecă și le pornești cu blocuri din <s
 1. Selectezi **personajul**
 2. Tab **Sunete** (lângă Cod / Costume) → **Sunet** din bibliotecă (ex. `Meow`, `Pop`)
 3. Redenumești clar dacă vrei — ex. `start`
-4. Fără sunet în tab, blocurile din <span style="color:#CF63CF;font-weight:700">Sunet</span> n-au ce reda
+4. Fără sunet în tab, blocurile din <span style="color:#CF63CF;font-weight:700">Sunet</span> nu au ce reda
 
 **Încearcă tu — tab Sunete (1–2 min)**  
 - [ ] Ai **cel puțin 1** sunet în tab Sunete  
@@ -45,7 +45,7 @@ La finalul orei adaugi sunete din bibliotecă și le pornești cu blocuri din <s
 
 ### 2) Pornește sunetul la steag
 1. Tab **Cod**. Din <span style="color:#E6A800;font-weight:700">Evenimente</span>:  
-   <span style="color:#3F8F2A;font-weight:700">când se face clic pe steagul verde</span>
+   <span style="color:#3F8F2A;font-weight:700">când se dă clic pe steagul verde</span>
 2. Din <span style="color:#CF63CF;font-weight:700">Sunet</span>:  
    <span style="color:#CF63CF;font-weight:700">pornește sunetul</span> `start`
 3. Apeși steagul — dacă nu auzi: volum PC / căști, apoi tab Sunete
