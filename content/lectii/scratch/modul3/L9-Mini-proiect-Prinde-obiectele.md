@@ -82,7 +82,7 @@ După buclă: `șterge această clonă` *(a ajuns jos)*
 *(30–50 = Minim. După 50: alegi finalul. **Viețile** sunt mai ușor de înțeles la jocul de prins obiecte: vezi moneda care scapă pe jos.)*
 
 **Opțiunea A — Vieți** *(recomandat pentru nivel mediu)*  
-Pe clonă, **după** bucla de cădere *(doar dacă n-a fost ștearsă la prindere)*:  
+Pe clonă, **după** bucla de cădere *(doar dacă nu a fost ștearsă la prindere)*:  
 `schimbă vieti cu -1` → `șterge această clonă`  
 
 Schema pe clonă:  
@@ -117,7 +117,7 @@ Ca L5: countdown pe Scenă; la `timp = 0` mesaj pe Erou.
 7. **Viața nu scade la ratare** — `schimbă vieti cu -1` stă **după** buclă, nu înăuntru la fiecare pas.  
 8. **Nume fișier** — `Prenume_Nume_M3_L9`, nu doar `Ana_M3_L9`.
 
-**Ajutor profesor:** la ~50 min, cine n-are scorul la prindere = ajutat pe **schelet**, nu pe meniu/decor.
+**Ajutor profesor:** la ~50 min, cine nu are scorul la prindere = ajutat pe **schelet**, nu pe meniu/decor.
 
 ---
 
@@ -197,5 +197,5 @@ când primesc `revino_meniu` → `ascunde` → `oprește alte scripturi din pers
 - De ce nu facem costume înainte de minutul 50?
 
 ## Temă
-Opțional: varianta pe care n-ai ales-o (vieți ↔ timer) — același `Prenume_Nume_M3_L9`.  
+Opțional: varianta pe care nu ai ales-o (vieți ↔ timer) — același `Prenume_Nume_M3_L9`.  
 La **L10**: finisări + prezentare + insignă.

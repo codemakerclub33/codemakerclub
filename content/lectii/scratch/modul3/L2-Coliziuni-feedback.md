@@ -50,7 +50,7 @@ Fără reacție, un joc pare „mort” — apeși, se mișcă, dar nu simți ni
 *(Un personaj **nu** poate ascunde alt personaj. De aceea **toată** reacția „Yaay!” stă pe **Țintă**, într-un singur script — fără probleme de potrivire a timpilor.)*
 
 1. Selectezi **Țintă**. Tab **Sunete** → adaugi din bibliotecă un sunet scurt (ex. `Pop`)  
-   *(fără sunet în tab, blocul din Sunet n-are ce reda — ca în M1 L6)*
+   *(fără sunet în tab, blocul din Sunet nu are ce reda — ca în M1 L6)*
 2. Tab **Cod**. Din <span style="color:#E6A800;font-weight:700">Evenimente</span>:  
    <span style="color:#3F8F2A;font-weight:700">când se dă clic pe steagul verde</span>
 3. Sub steag, din <span style="color:#9966FF;font-weight:700">Aspect</span>:  
@@ -133,7 +133,7 @@ Dacă rămâi în urmă: **termină întâi Minim, apoi salvează.**
 Cei rapizi: Complet, apoi Bonus.
 
 ### Pasul 1 — Scena din L1
-- [ ] Ai deschis L1 și l-ai salvat ca `Prenume_Nume_M3_L2`  
+- [ ] Ai deschis L1 și ai salvat proiectul ca `Prenume_Nume_M3_L2`  
 - [ ] Eroul se mișcă pe **4 direcții**  
 - [ ] Pe scenă: **Erou**, **Obstacol**, **Țintă** (redenumite în L1)
 

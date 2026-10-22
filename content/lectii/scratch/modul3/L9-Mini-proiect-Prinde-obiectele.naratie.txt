@@ -6,7 +6,7 @@ Obiectivul. Un joc jucabil de la Start la final: meniu, erou, obiecte care cad c
 
 De ce contează. Lecțiile unu până la opt sunt piese. Azi e jocul tău. La lecția zece îl îmbunătățești și îl prezinți.
 
-Primul pas pe ecran. Regula de aur. Erou egal doar mișcarea. Monedă egal doar generatorul și căderea. Nu copia tastele pe obiectul care cade. Cel care prinde e de obicei stânga dreapta. Dacă adaugi sus jos, nu urca eroul aproape de y o sută șaizeci. Acolo apar monedele. Le-ai prinde imediat.
+Primul pas pe ecran. Regula de aur. Erou egal doar mișcarea. Monedă egal doar generatorul și căderea. Nu copia tastele pe obiectul care cade. Cel care prinde e de obicei stânga dreapta. Dacă adaugi sus jos, nu urca eroul aproape de y o sută șaizeci. Acolo apar monedele. Le prinzi imediat.
 
 Al doilea pas pe ecran. Scheletul. Erou: forever cu stânga dreapta. Personaj cădere: la steag ascunde. Forever: așteaptă, creează clonă. Pe clonă: când pornesc ca și clonă, arată, du-te la x aleator y o sută șaizeci, repetă până y mai mic decât minus o sută șaizeci, schimbă y minus patru. Dacă atinge Erou: schimbă scor cu unu, șterge. După buclă: șterge. Până la minutul cincizeci: fără costume noi, fără fundaluri complexe. Doar arhitectura.
 

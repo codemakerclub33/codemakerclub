@@ -14,7 +14,7 @@ La finalul orei poți crea o variabilă <span style="color:#FF8C1A;font-weight:7
 **Ținta orei (Complet):** Minim + verificare `scor = 5` cu <span style="color:#59C059;font-weight:700">Operatori</span> → mesaj de victorie + oprirea jocului.
 
 ## De ce contează
-Scorul e ce face un joc **măsurabil**: fără el, „ai jucat bine” e doar o părere. Cu un număr pe ecran, tu **și** ceilalți vedeți exact cât de bine te-ai descurcat — și poți încerca să te bați pe tine însuți.
+Scorul e ce face un joc **măsurabil**: fără el, „ai jucat bine” e doar o părere. Cu un număr pe ecran, tu **și** ceilalți vedeți exact cât de bine ai jucat — și poți încerca să te bați pe tine însuți.
 
 ---
 
@@ -57,10 +57,10 @@ Azi la steag: **setează la 0**. La prindere: **schimbă cu 1**.
 2. **În interiorul** acelei condiții `dacă`, adaugi blocul:  
    <span style="color:#FF8C1A;font-weight:700">schimbă</span> `scor` <span style="color:#FF8C1A;font-weight:700">cu</span> `1`  
    *(nu `setează la 1` — altfel scorul rămâne mereu 1)*  
-   Pune-l **imediat sub** `pornește sunetul`, **înainte** de `spune Yaay!`. Ordinea: sunet → `schimbă scor` → `spune` → `ascunde`. Așa scorul crește chiar la atingere, nu după o secundă.
-3. Click pe **Scenă** (sau pe **Erou**) — la steag, **înaintea** buclei `forever`:  
+   Pune blocul **imediat sub** `pornește sunetul`, **înainte** de `spune Yaay!`. Ordinea: sunet → `schimbă scor` → `spune` → `ascunde`. Așa scorul crește chiar la atingere, nu după o secundă.
+3. Click pe **Erou** — la steag, **înaintea** buclei `forever`:  
    <span style="color:#FF8C1A;font-weight:700">setează</span> `scor` <span style="color:#FF8C1A;font-weight:700">la</span> `0`  
-   *(resetul e pe Scenă/Erou — „arbitrii” care nu dispar)*
+   *(resetul e pe Erou, în același script, **înainte** de `forever` — Eroul nu dispare)*
 
 **Încearcă tu — scor crește (3–4 min)**  
 - [ ] Atingi Ținta → `scor` crește cu 1 (nu sare la 1 și rămâne acolo)  
@@ -78,8 +78,8 @@ Azi la steag: **setează la 0**. La prindere: **schimbă cu 1**.
 - [ ] Prinzi câteva → scorul crește **cu 1** pe fiecare, nu sare
 
 ### 4) Victorie la scor = 5 *(nucleul Complet)*
-*(Verificările „globale” — victorie, reset scor — stau pe **Scenă** sau pe **Erou**.  
-Explicație pentru copii: *„Eroul și Scena sunt mereu acolo, nu dispar — ei pot fi arbitrii jocului!”*  
+*(Verificările „globale” — victorie, reset scor — stau pe **Erou**.  
+Explicație pentru copii: *„Eroul e mereu acolo, nu dispare — el poate fi arbitrul jocului!”* Resetul de scor stă în **același script** cu bucla `forever`, înaintea ei: așa scorul vechi nu mai declanșează victoria imediat, la a doua rundă.  
 **Nu** pune victoria pe o Țintă: ea se ascunde.)*
 
 1. Click pe **Erou** *(Scena nu are blocul `spune`, deci mesajul „Ai câștigat!” trebuie să fie pe Erou)*
@@ -105,7 +105,7 @@ Explicație pentru copii: *„Eroul și Scena sunt mereu acolo, nu dispar — ei
 3. **Uiți `setează scor la 0` la steag** — scorul continuă de la runda trecută.
 4. **Țintele una peste alta** — după **duplică**, trage fiecare stea în alt loc; altfel scorul sare dintr-o dată.
 5. **`schimbă scor cu 2` (sau alt număr)** — cu victoria `scor = 5`, poți sări peste 5 și jocul **nu se mai oprește**. Pe fiecare țintă: **doar +1**.
-6. **Victoria pe o Țintă** — pune-o pe **Scenă** (sau Erou), nu pe steaua care dispare.
+6. **Victoria pe o Țintă** — pune-o pe **Erou**, nu pe steaua care dispare.
 7. **`oprește toate` lipsă** — jocul continuă și după victorie, confuz.
 8. **Ai pus `=` din alt capitol** — trebuie **exact** din <span style="color:#59C059;font-weight:700">Operatori</span>, forma rotunjită.
 9. **Nume fișier** — `Prenume_Nume_M3_L3`, nu doar `Ana_M3_L3`.
@@ -121,14 +121,14 @@ Salvat: `Prenume_Nume_M3_L3`
 | | Ce trebuie |
 |--|------------|
 | **Minim („am reușit”)** | Variabila `scor` pe scenă, resetată la steag (`setează la 0`), crește +1 la fiecare atingere (măcar 3 ținte **separate**) |
-| **Complet (ținta orei)** | Minim + **5** ținte + pe **Scenă/Erou**: `scor = 5` → „Ai câștigat!” + `oprește toate` |
+| **Complet (ținta orei)** | Minim + **5** ținte + pe **Erou**: `scor = 5` → „Ai câștigat!” + `oprește toate` |
 
 Dacă rămâi în urmă: **termină întâi Minim, apoi salvează.**  
 Cei rapizi: Complet, apoi Bonus.
 
 ### Pasul 1 — Variabila + reset *(bază)*
 - [ ] Variabila `scor`, vizibilă pe scenă  
-- [ ] Pe **Scenă** sau **Erou**: `setează scor la 0` la steag  
+- [ ] Pe **Erou**: `setează scor la 0` la steag  
 
 ### Pasul 2 — Atingere + scor *(Minim)*
 - [ ] Pe **Țintă**: `dacă atinge [Erou]?` → sunet + **`schimbă scor cu 1`** + `ascunde`  
@@ -149,14 +149,14 @@ Cei rapizi: Complet, apoi Bonus.
 
 ## Bonus (dacă ai terminat Complet)
 - [ ] Țintă mai grea: **10** stele + mesaj special de campion *(și `scor = 10` pe Erou)*  
-- [ ] Scorul final apare mare pe ecran la victorie (<span style="color:#9966FF;font-weight:700">spune</span> combinat cu `scor`, folosind blocul `unește` din Operatori)  
+- [ ] Scorul final apare mare pe ecran la victorie (<span style="color:#9966FF;font-weight:700">spune</span> combinat cu `scor`, folosind blocul `alătură` din Operatori)  
 - [ ] Combo: 2 stele prinse la rând, rapid → +1 punct bonus
 
 ## Recapitulare rapidă
 1. <span style="color:#FF8C1A;font-weight:700">Variabilă</span> = o cutiuță cu un număr care se ține minte  
 2. **`schimbă` = adaugă** · **`setează` = fixează**  
 3. `schimbă scor cu 1` merge **în** condiția `dacă`, pe Țintă  
-4. Reset + victorie = pe **Scenă** sau **Erou** (arbitrii)  
+4. Reset + victorie = pe **Erou** (arbitrul), în același script  
 5. `scor = 5` din <span style="color:#59C059;font-weight:700">Operatori</span> compară, nu schimbă  
 6. Nume: **`Prenume_Nume_M3_L3`**
 
@@ -173,7 +173,7 @@ la steag → `arată` → `forever`:
 **Quiz scurt (cu profesorul):**  
 - Diferența dintre `setează` și `schimbă`?  
 - De ce ai nevoie de `setează scor la 0` la steag?  
-- De ce victoria e pe Scenă/Erou, nu pe Țintă?  
+- De ce victoria e pe Erou, nu pe Țintă?  
 - Ce se întâmplă dacă uiți să tragi stelele duplicate în locuri diferite?
 
 ## Temă

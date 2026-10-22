@@ -1,10 +1,10 @@
 Lecția șapte. Ploaie de monede.
 
-Astăzi un singur personaj se multiplică singur. Monedele cad din cer fără să le desenezi pe fiecare. Deschizi proiectul din lecția șase, sau cinci dacă n-ai nivele, și salvezi ca Prenume, linie jos, Nume, linie jos, M trei, linie jos, L șapte. Proiectul se numește Ploaie de monede.
+Astăzi un singur personaj se multiplică singur. Monedele cad din cer fără să le desenezi pe fiecare. Deschizi proiectul din lecția șase, sau cinci dacă nu ai nivele, și salvezi ca Prenume, linie jos, Nume, linie jos, M trei, linie jos, L șapte. Proiectul se numește Ploaie de monede.
 
 Obiectivul. Folosești creează o clonă de mine și când pornesc ca și clonă, din Control. Minim: clonele apar, cad până jos, y mai mic decât minus o sută șaizeci, și se șterg, fără să se adune pe ecran. Complet: minim, plus scor la prindere cu șterge imediat, plus viteză jucabilă.
 
-De ce contează. Un joc bun n-are nevoie de douăzeci de monede desenate manual. Scratch face copii din mers, ca ploaia sau inamicii dintr-un joc adevărat.
+De ce contează. Un joc bun nu are nevoie de douăzeci de monede desenate manual. Scratch face copii din mers, ca ploaia sau inamicii dintr-un joc adevărat.
 
 Primul pas pe ecran. Clona e o copie temporară. Aceleași costume, scriptul când pornesc ca și clonă, poziție proprie. Nu e personajul original. Se creează și se șterg. Originalul rămâne.
 

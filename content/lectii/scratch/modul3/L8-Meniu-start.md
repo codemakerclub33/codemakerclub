@@ -124,7 +124,7 @@ Dacă termini runda, revii la meniu și apeși Start **fără** steag, scorul tr
 2. **Nume de mesaj diferit** — trebuie exact același din listă.  
 3. **Butonul rămâne pe scenă** — uiți `ascunde` după click.  
 4. **Revino la meniu, dar jocul rulează în fundal** — ai folosit doar `oprește acest script`; trebuie **`oprește alte scripturi din personaj`** pe Erou **și** pe Monedă.  
-5. **Monedele cad în meniu** — Moneda n-are `revino_meniu` → `oprește alte scripturi din personaj`.  
+5. **Monedele cad în meniu** — Moneda nu are `revino_meniu` → `oprește alte scripturi din personaj`.  
 6. **Al 2-lea Start păstrează scorul vechi** — resetul e doar la steag; mută `setează scor/vieti/…` în **`când primesc start_joc`**.  
 7. **Nume fișier** — `Prenume_Nume_M3_L8`, nu doar `Ana_M3_L8`.
 

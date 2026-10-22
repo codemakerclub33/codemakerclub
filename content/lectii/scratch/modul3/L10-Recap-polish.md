@@ -9,7 +9,7 @@
 ---
 
 ## Obiectiv
-La finalul orei ai îmbunătățit jocul „Prinde obiectele”, l-ai prezentat clasei și ai închis Modulul 3.  
+La finalul orei ai îmbunătățit jocul „Prinde obiectele”, ai prezentat clasei și ai închis Modulul 3.  
 **Minim:** **1** îmbunătățire din A–F + restart curat + prezentare → **e suficient pentru insignă**.  
 **Ținta orei (Complet):** **2** îmbunătățiri din A–F + prezentare + salvare.
 
@@ -42,7 +42,7 @@ Nu refaci de la zero. Deschizi „Prinde obiectele” și **adaugi**.
 | Literă | Upgrade | Nivel |
 |--------|---------|--------|
 | **C** | Sunet / efect la prindere sau Game Over | **Sigur** (~2–3 min) |
-| **F** | Instrucțiuni pe meniu *(„Folosește săgețile…”) * | **Sigur** |
+| **F** | Instrucțiuni pe meniu *(„Folosește săgețile…”)* | **Sigur** |
 | **B** | Meniu Start cu titlu propriu, dacă lipsește (L8) | Mediu |
 | **A** | Nivel 2: fundal + țintă de scor mai mare (L6) | Mediu |
 | **D** | Clonă „rea” (bombă) care scade viață (L7) | **Avansat** |
@@ -124,7 +124,7 @@ M3 = jocuri. M4 = pasul următor pe modulele Code Maker Club.
 1. **Începi cu D sau E** și rămâi fără Minim — fă întâi **C** sau **F**.  
 2. **Upgrade care strică jocul** — testează pe steag înainte de a doua literă.  
 3. **La min 55 încă scrii cod** — salvezi, ecran mare, prezinți cu ce ai.  
-4. **„N-am 2, deci n-am reușit”** — **1** + prezentare = Minim = **insignă**.  
+4. **„Nu am 2, deci nu am reușit”** — **1** + prezentare = Minim = **insignă**.  
 5. **Prezentare fără steag curat** — resetează înainte.  
 6. **Nume fișier** — `Prenume_Nume_M3_L9` / `M3_L10`, nu doar `Ana_M3_L9`.
 
@@ -197,4 +197,4 @@ La min **55**: Stop Cod → ecran mare → prezentări **oricum**.
 5. De ce testăm **1** îmbunătățire înainte de a doua?
 
 ## Temă
-Opțional: arată familiei jocul (2 min) sau joacă cel al unui coleg și spune-i 1 idee bună.
+Opțional: arată familiei jocul (2 min) sau joacă cel al unui coleg și spune colegului 1 idee bună.

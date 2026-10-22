@@ -2,7 +2,7 @@ Lecția zece. Finisări, prezentare și insignă.
 
 Astăzi termini jocul din lecția nouă, îl îmbunătățești, îl arăți clasei și primești insigna Game Builder. Nu refaci de la zero. Deschizi Prinde obiectele și adaugi. Fișierul rămâne Prenume, linie jos, Nume, linie jos, M trei, linie jos, L nouă. Sau o copie L zece, ca să nu strici versiunea veche.
 
-Obiectivul. Ai îmbunătățit jocul, l-ai prezentat, și ai închis Modulul trei. Minim: o îmbunătățire din lista A până la F, plus restart curat, plus prezentare. Asta e suficient pentru insignă. Complet: două îmbunătățiri, plus prezentare, plus salvare.
+Obiectivul. Ai îmbunătățit jocul, ai prezentat, și ai închis Modulul trei. Minim: o îmbunătățire din lista A până la F, plus restart curat, plus prezentare. Asta e suficient pentru insignă. Complet: două îmbunătățiri, plus prezentare, plus salvare.
 
 De ce contează. Proiectele bune se refac o dată, apoi se arată. Insigna Game Builder înseamnă: știi să pui împreună control, clone, scor, vieți sau timer și meniu, într-un joc care se termină. Urmează Modulul patru.
 
@@ -16,7 +16,7 @@ Al treilea pas pe ecran. Prezentare, unu sau două minute. Salut, jocul meu se n
 
 Al patrulea pas pe ecran. Recap Modulul trei. Control și atingeri. Scor, vieți, timer. Nivele. Clone. Meniu. Jocul Prinde obiectele. Azi finisări și insignă. Apoi: Modulul patru.
 
-Greșeli frecvente. Dacă începi cu D sau E și rămâi fără Minim, fă întâi C sau F. Dacă la minutul cincizeci și cinci încă scrii cod, oprește-te și prezinți. Dacă crezi că fără două n-ai reușit: una plus prezentare egal Minim, egal insignă. Dacă prezentarea e haos, resetează înainte.
+Greșeli frecvente. Dacă începi cu D sau E și rămâi fără Minim, fă întâi C sau F. Dacă la minutul cincizeci și cinci încă scrii cod, oprește-te și prezinți. Dacă crezi că fără două nu ai reușit: una plus prezentare egal Minim, egal insignă. Dacă prezentarea e haos, resetează înainte.
 
 Proiectul de azi. Completare pe Prinde obiectele.
 

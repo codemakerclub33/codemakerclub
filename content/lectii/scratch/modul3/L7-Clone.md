@@ -3,7 +3,7 @@
 **Code Maker Club · Game Builder**
 
 > Azi un singur personaj se **multiplică** singur: monedele cad din cer fără să le desenezi pe fiecare.  
-> **Deschide** proiectul din L6 *(sau L5, dacă n-ai nivele)* → **Fișier → Salvează ca** → `Prenume_Nume_M3_L7` (ex. `Ana_Pop_M3_L7`)  
+> **Deschide** proiectul din L6 *(sau L5, dacă nu ai nivele)* → **Fișier → Salvează ca** → `Prenume_Nume_M3_L7` (ex. `Ana_Pop_M3_L7`)  
 > Proiect: **„Ploaie de monede”**
 
 ---
@@ -14,7 +14,7 @@ La finalul orei folosești <span style="color:#FFAB19;font-weight:700">creează 
 **Ținta orei (Complet):** Minim + scor la prindere (`șterge` imediat) + viteză **jucabilă**.
 
 ## De ce contează
-Un joc bun n-are nevoie de 20 de monede desenate manual pe scenă.  
+Un joc bun nu are nevoie de 20 de monede desenate manual pe scenă.  
 Scratch poate face **copii** ale unui personaj, din mers — exact ca ploaia, gloanțele sau inamicii dintr-un joc adevărat.
 
 ---

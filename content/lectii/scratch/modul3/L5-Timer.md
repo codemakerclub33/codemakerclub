@@ -31,7 +31,7 @@ Timpul limitat schimbă complet cum se joacă un joc: fără el poți lua oricâ
 1. **Scenă = cronometrul** (numără secundele; **nu** pune aici `spune` — Scena **nu are** bulă de text)  
    `steag` → `setează timp la 20` → `forever` → **`așteaptă 1`** → **`schimbă timp cu -1`**  
 2. **Erou = arbitrul mesajului**  
-   `forever` → `dacă timp = 0` → `spune Timpul a expirat!` → `oprește toate`
+   `setează timp la 20` → `forever` → `dacă timp = 0` → `spune Timpul a expirat!` → `oprește toate`
 
 **De ce întâi `așteaptă`, apoi `schimbă`?**  
 La steag vezi `20` o secundă, apoi `19`, `18`… Dacă pui **`schimbă` înaintea** lui `așteaptă`, sare **imediat** de la 20 la 19 — pare greșit.
@@ -69,7 +69,7 @@ La steag vezi `20` o secundă, apoi `19`, `18`… Dacă pui **`schimbă` înaint
 *(Scena **nu** are `spune … timp de …`. Mesajul stă pe **Erou** — ca arbitrii din L3–L4.)*
 
 1. Selectezi **Erou**
-2. O buclă `forever` **separată** (doar pentru expirare), cu condiție `dacă`:  
+2. Script nou: steag → `setează timp la 20` *(ca la a doua rundă `timp` să nu mai fie 0 din runda trecută)* → o buclă `forever` **separată** (doar pentru expirare), cu condiție `dacă`:  
    `timp` <span style="color:#59C059;font-weight:700">=</span> `0`
 3. În interior:  
    <span style="color:#9966FF;font-weight:700">spune</span> `Timpul a expirat!` timp de `2` secunde →  
@@ -104,9 +104,10 @@ La steag vezi `20` o secundă, apoi `19`, `18`… Dacă pui **`schimbă` înaint
 3. **`spune` pe Scenă** — Scena **nu are** bulă; pune „Timpul a expirat!” / „Ai câștigat!” pe **Erou**.
 4. **Uiți `setează timp la 20` la steag** — a doua rundă pornește de unde a rămas.
 5. **Scazi altceva decât −1** (ex. `cu -3`) — poți sări peste 0 și `timp = 0` nu se mai declanșează. Azi countdown-ul e **doar −1**.
-6. **`timp = 0` și `scor = 5` în aceeași buclă** — e mai curat **două** bucle `forever` separate pe Erou.
-7. **`oprește toate` lipsă** la una din condiții — jocul continuă în fundal.
-8. **Nume fișier** — `Prenume_Nume_M3_L5`, nu doar `Ana_M3_L5`.
+6. **Verificarea `timp = 0` fără `setează timp la 20` înainte** — la a doua rundă `timp` mai e 0 din runda trecută și apare imediat „Timpul a expirat!”.
+7. **`timp = 0` și `scor = 5` în aceeași buclă** — e mai curat **două** bucle `forever` separate pe Erou.
+8. **`oprește toate` lipsă** la una din condiții — jocul continuă în fundal.
+9. **Nume fișier** — `Prenume_Nume_M3_L5`, nu doar `Ana_M3_L5`.
 
 ---
 
@@ -163,8 +164,8 @@ Cei rapizi: Complet, apoi Bonus.
 la steag → `setează timp la 20` → `forever`:  
 · `așteaptă 1` → `schimbă timp cu -1`
 
-**Pe Erou** *(mesajele — Scena n-are `spune`)*  
-`forever`: `dacă timp = 0` → `spune Timpul a expirat!` 2 s → `oprește toate`  
+**Pe Erou** *(mesajele — Scena nu are `spune`)*  
+steag → `setează timp la 20` → `forever`: `dacă timp = 0` → `spune Timpul a expirat!` 2 s → `oprește toate`  
 `forever`: `dacă scor = 5` → `spune Ai câștigat!` 2 s → `oprește toate` *(Complet)*
 
 **Quiz scurt (cu profesorul):**  

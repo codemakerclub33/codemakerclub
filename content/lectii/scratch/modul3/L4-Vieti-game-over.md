@@ -41,7 +41,7 @@ Viețile dau o **a doua șansă**: greșești o dată, nu se termină totul imed
 
 ### 1) Creezi variabila `vieti`
 1. Din <span style="color:#FF8C1A;font-weight:700">Variabile</span>: **Creează o variabilă** → `vieti` → **Pentru toate personajele**
-2. Pe **Scenă** (sau **Erou**), la steag, **înaintea** buclei `forever`:  
+2. Pe **Erou**, la steag, **înaintea** buclei `forever`:  
    <span style="color:#FF8C1A;font-weight:700">setează</span> `vieti` <span style="color:#FF8C1A;font-weight:700">la</span> `3`  
    *(ca la L3: resetul stă pe „arbitri” — Scenă / Erou)*
 
@@ -77,7 +77,7 @@ Viețile dau o **a doua șansă**: greșești o dată, nu se termină totul imed
 - [ ] Nu poți pierde 2–3 vieți dintr-o atingere lungă
 
 ### 4) Game Over la `vieti = 0` *(pe Scenă / Erou)*
-*(Ca la victoria din L3: verificările globale stau pe **Scenă** sau **Erou** — „arbitrii”. **Nu** pe Obstacol.)*
+*(Ca la victoria din L3: verificările globale stau pe **Erou** — „arbitrul”. **Nu** pe Obstacol.)*
 
 1. Click pe **Erou** *(Scena nu are blocul `spune`; „Game Over” trebuie spus de Erou)*
 2. Steag → (dacă nu ai deja) `setează vieti la 3` → o buclă `forever` **separată** (doar pentru Game Over), cu condiție `dacă`:  
@@ -99,7 +99,7 @@ Viețile dau o **a doua șansă**: greșești o dată, nu se termină totul imed
 2. **`schimbă vieti cu -1` fără `du-te la` start** — rămâi lipit → pierzi toate viețile într-o secundă.
 3. **Ai folosit `întoarce-te 180` ca imunitate** — nu te mută din obstacol; folosește **`du-te la`** poziția de start.
 4. **Viața scade târziu** — ai pus `redă … până la final` / `spune` **înainte** de `schimbă vieti cu -1`. Ordinea: **întâi** `schimbă`, apoi sunet / spune.
-5. **`vieti = 0` pe Obstacol / Țintă** — pune-l pe **Scenă** sau **Erou**.
+5. **`vieti = 0` pe Obstacol / Țintă** — pune verificarea pe **Erou**.
 6. **Uiți `setează vieti la 3` la steag** — a doua rundă pornește greșit.
 7. **`oprește toate` lipsă la Game Over** — jocul continuă „mort”.
 8. **`schimbă vieti cu -2` (sau alt număr)** — poți sări peste 0 și „Game Over” nu se mai declanșează. Pe fiecare lovitură: **doar `-1`**.
@@ -115,7 +115,7 @@ Salvat: `Prenume_Nume_M3_L4`
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | `vieti = 3` la steag (Scenă/Erou), la atingere: `schimbă cu -1` + sunet + „Au!”, pe Scenă/Erou: `vieti = 0` → „Game Over” + `oprește toate` |
+| **Minim („am reușit”)** | `vieti = 3` la steag (Erou), la atingere: `schimbă cu -1` + sunet + „Au!”, pe Erou: `vieti = 0` → „Game Over” + `oprește toate` |
 | **Complet (ținta orei)** | Minim + după „Au!”: **`du-te la` start** (o viață pe lovitură) + opțional `scor` din L3 pe scenă |
 
 Dacă rămâi în urmă: **termină întâi Minim, apoi salvează.**  
@@ -123,7 +123,7 @@ Cei rapizi: Complet, apoi Bonus.
 
 ### Pasul 1 — Variabila + reset *(bază)*
 - [ ] Variabila `vieti`, vizibilă pe scenă  
-- [ ] Pe **Scenă** sau **Erou**: `setează vieti la 3` la steag  
+- [ ] Pe **Erou**: `setează vieti la 3` la steag  
 
 ### Pasul 2 — Atingere + Game Over *(Minim)*
 - [ ] Pe **Erou**: `dacă atinge [Obstacol]?` → **`schimbă vieti cu -1`** → `pornește Bonk` → „Au!”  
@@ -151,7 +151,7 @@ Cei rapizi: Complet, apoi Bonus.
 ## Recapitulare rapidă
 1. Scădere = <span style="color:#FF8C1A;font-weight:700">schimbă vieti cu -1</span> (minusul contează!)  
 2. Ordine la lovitură: **`schimbă` → `pornește` → `spune` → `du-te la` start**  
-3. Game Over = pe **Scenă** / **Erou**: `vieti = 0` → `oprește toate`  
+3. Game Over = pe **Erou**: `vieti = 0` → `oprește toate`  
 4. Nume: **`Prenume_Nume_M3_L4`**
 
 ## Schema pe scurt *(pe foaie)*
@@ -166,7 +166,7 @@ la steag → `setează vieti la 3` → `forever`:
 **Quiz scurt (cu profesorul):**  
 - Cum scazi o viață în Scratch, dacă nu există „scade”?  
 - De ce `du-te la` start e mai sigur decât `întoarce-te 180`?  
-- De ce `vieti = 0` e pe Scenă/Erou, nu pe Obstacol?  
+- De ce `vieti = 0` e pe Erou, nu pe Obstacol?  
 - Ce se întâmplă dacă pui `schimbă` **după** `spune … timp de`?
 
 ## Temă

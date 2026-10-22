@@ -4,7 +4,7 @@ Astăzi jocul ține minte câte stele ai prins, cu variabila scor pe ecran. Desc
 
 Obiectivul. Creezi variabila scor din Variabile. Crește la fiecare țintă prinsă. La cinci, victorie. Minim: scor pe scenă, plus unu pe atingere, resetată la steag. Complet: minim, plus scor egal cu cinci, mesaj Ai câștigat, oprește toate.
 
-De ce contează. Scorul face jocul măsurabil. Vezi pe ecran cât de bine te-ai descurcat.
+De ce contează. Scorul face jocul măsurabil. Vezi pe ecran cât de bine ai jucat.
 
 Primul pas pe ecran. Din Variabile: creează scor, pentru toate personajele. Bifează ca să apară pe scenă. Ține minte: setează fixează. Schimbă adaugă. La steag: setează scor la zero. La prindere: schimbă scor cu unu. Nu setează la unu pe atingere, altfel rămâne mereu unu.
 
@@ -26,6 +26,6 @@ Minim înseamnă: scor pe scenă, reset la steag, plus unu pe atingere, măcar t
 
 În proiect, al treilea pas, pentru Complet. Cinci ținte. Dacă scor egal cu cinci: Ai câștigat, oprește toate. Salvezi din nou.
 
-Recapitulare. Schimbă adaugă. Setează fixează. Plus unu pe Țintă, în dacă. Reset pe Scenă sau Erou, victoria pe Erou. Scor egal cu cinci din Operatori. Numele fișierului are prenumele, numele, M trei și L trei.
+Recapitulare. Schimbă adaugă. Setează fixează. Plus unu pe Țintă, în dacă. Reset și victoria pe Erou. Scor egal cu cinci din Operatori. Numele fișierului are prenumele, numele, M trei și L trei.
 
 Succes la cele cinci stele ale tale.

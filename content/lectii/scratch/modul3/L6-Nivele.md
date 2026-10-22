@@ -57,7 +57,7 @@ Nivelele dau un sentiment de progres: „am trecut de nivelul 1” e o mică vic
 ### 2) Variabila `nivel` + 2 fundaluri
 1. Din <span style="color:#FF8C1A;font-weight:700">Variabile</span>: creezi `nivel` (**Pentru toate personajele**), o arăți pe scenă  
 2. Pe Scenă: adaugi **al 2-lea fundal** — diferit vizual clar  
-3. Pe **Scenă** sau **Erou**, sub steag:  
+3. Pe **Erou**, sub steag:  
    <span style="color:#FF8C1A;font-weight:700">setează</span> `nivel` <span style="color:#FF8C1A;font-weight:700">la</span> `1` →  
    <span style="color:#FF8C1A;font-weight:700">setează</span> `scor` <span style="color:#FF8C1A;font-weight:700">la</span> `0` →  
    <span style="color:#9966FF;font-weight:700">comută fundalul la</span> `fundal1`  
@@ -128,8 +128,8 @@ Final de joc (pe **Erou**):
 - [ ] La ținta de scor din nivel 2 → mesaj final + stop (o singură dată)  
 
 ### 6) Reset complet la steag
-1. La steag (**Scenă** / **Erou**): `nivel` = 1, `scor` = 0, fundal 1, poziție erou, <span style="color:#9966FF;font-weight:700">anulează efectele grafice</span>, <span style="color:#CF63CF;font-weight:700">oprește toate sunetele</span>  
-2. Pe fiecare Țintă: `arată` (+ poziții de start, dacă le-ai schimbat)  
+1. La steag (pe **Erou**): `nivel` = 1, `scor` = 0, fundal 1, poziție erou, <span style="color:#9966FF;font-weight:700">anulează efectele grafice</span>, <span style="color:#CF63CF;font-weight:700">oprește toate sunetele</span>  
+2. Pe fiecare Țintă: `arată` (+ poziții de start, dacă ai schimbat pozițiile)  
 3. Obstacolul „doar pe nivelul 2”: la steag → `ascunde`
 
 **Încearcă tu — reset (1–2 min)**  
