@@ -16,9 +16,9 @@ Al patrulea pas pe ecran. Blocul apare. La Bloc, un script nou, doar pentru orig
 
 Verifici. Cu lemn zero, apeși E, apare mesajul și nu se pune nimic. Cu lemn cel puțin unu, apare un bloc în celula din fața eroului, aliniat pe grilă, iar lemn scade cu unu. Poți sparge blocul pus și lemnul revine.
 
-Al cincilea pas pe ecran. Adăpostul. Spargi patru până la șase blocuri, apoi pui cel puțin patru blocuri, un zid sau un colț. Verifici: lemn a scăzut cu patru.
+Al cincilea pas pe ecran. Adăpostul. Spargi blocuri până ai cel puțin patru de lemn, cele maro, apoi pui cel puțin patru blocuri, un zid sau un colț. Verifici: lemn a scăzut cu patru.
 
-Pentru Complet, alegi cel puțin una. Nu pui peste alt bloc sau peste erou: după arată, dacă nu atinge Bloc sau atinge Erou, abia atunci creezi clona și scazi lemnul. Un sprite ascuns nu detectează atingerea, de aceea îl arătăm o clipă. Sau limite, sau un indicator pe scenă.
+Pentru Complet, alegi cel puțin una. Nu pui peste alt bloc sau peste erou: după arată, dacă nu atinge Bloc sau atinge Erou, abia atunci creezi clona și scazi lemnul. Scăderea din Minim o muți aici. Un sprite ascuns nu detectează atingerea, de aceea îl arătăm o clipă. Sau limite, sau un indicator pe scenă.
 
 Greșeli frecvente. Se pun zeci de blocuri: lipsește condiția, fiecare clonă răspunde la pune. Blocul e strâmb: t x și t y nu sunt multipli de treizeci și doi. Pune oriunde: nu ai setat direcția. Lemnul scade fără bloc. Blocul apare peste erou.
 

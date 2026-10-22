@@ -98,7 +98,7 @@ Pe steag, la `Bloc`:
 ## Greșeli frecvente
 1. **Pași inegali** *(10 pe x, 32 pe y)* — blocurile nu se mai aliniază la L3. Folosește mereu 32.  
 2. **Eroul trece prin blocuri** — lipsește `dacă <atinge Bloc?>` sau mișcarea inversă.  
-3. **Eroul e prea mare** *(32 × 32)* — atinge blocurile vecine și nu se mai poate mișca. Fă-l 28 × 28.  
+3. **Eroul e prea mare** *(32 × 32)* — atinge blocurile vecine și nu se mai poate mișca. Fă eroul 28 × 28.  
 4. **Blocurile sunt unul peste altul** — `schimbă cy cu -32` e în afara buclei interioare.  
 5. **Clonele nu apar** — lipsește `când încep ca o clonă → arată`.  
 6. **La steag apar blocuri în plus** — la fiecare steag se șterg clonele vechi automat; dacă nu, apasă oprire și steag.
@@ -138,7 +138,7 @@ Salvat: `Prenume_Nume_M6_LumeCuburi`
 ## Schema pe scurt *(pe foaie)*
 
 **Erou**  
-steag → `du-te la` start (multiplu de 32) → `forever` → `dacă` săgeți → `schimbă x/y cu 32`  
+steag → `du-te la` start (multiplu de 32) · săgeată → `dacă` în limite → `schimbă x/y cu 32` → `dacă atinge Bloc?` → înapoi  
 
 **Punte M5**  
 variabile · `dacă` · clone (idee) · restart  

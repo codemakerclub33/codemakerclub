@@ -33,7 +33,7 @@ HP + mob pregătesc misiunea „învinge / supraviețuiește” (L8) și craftul
 ### 1) Viețile *(10 minute)*
 1. Variabila `vieti` *(pentru toate sprite-urile, bifată pe scenă)*  
 2. Pe steag, la Erou: `setează vieti la 3`  
-3. Un script la Erou, `repetă la nesfârșit`: `dacă <vieti = 0>` **atunci** `spune Sfârșitul jocului!` și `oprește tot`  
+3. Verificarea o pui la **finalul** scriptului de lovitură din pasul 2, după `spune Au!`: `dacă <vieti = 0>` **atunci** `spune Sfârșitul jocului!` timp de `2` secunde și `oprește tot`  
    *(Meniul vine la L9; acum doar oprim jocul.)*
 
 - [ ] **Verifici:** pe scenă se vede `vieti = 3`; steagul îl pune la loc.
@@ -46,7 +46,7 @@ Sprite nou `Creatură` *(un pătrat roșu de 28 × 28)*. Variabila `dir`, **numa
    - `dacă <<x poziția > 223> sau <x poziția < -223>>` → `setează dir la (0 - dir)`  
    - `așteaptă 0.4 secunde`
 
-Creatura merge pe **rândul liber de deasupra startului** *(y = -128)*: eroul trebuie s-o evite când urcă.
+Creatura merge pe **rândul liber de deasupra startului** *(y = -128)*: eroul trebuie să evite creatura când urcă.
 
 3. La Erou, în `repetă la nesfârșit`: `dacă <atinge Creatură?>` **atunci**:  
    - `schimbă vieti cu -1`  
@@ -70,9 +70,9 @@ Creatura merge pe **rândul liber de deasupra startului** *(y = -128)*: eroul tr
 ## Greșeli frecvente
 1. **Pierzi trei vieți deodată** — lipsește `spune … 1 secundă` sau `du-te la start` după lovitură.  
 2. **Creatura iese din ecran** — lipsesc limitele de ±223 sau `dir` nu se schimbă.  
-3. **Creatura nu se simte** — nu poți fi lovit pentru că ai pus-o într-un rând plin de blocuri; ține-o pe rândul liber *(y = -128)*.  
-4. **Nu se oprește jocul** — `dacă vieti = 0` nu e într-un `repetă la nesfârșit`.  
-5. **Jucătorul nu poate trece** — creatura umple tot rândul; las-o să patruleze, nu s-o blochezi.  
+3. **Creatura nu se simte** — nu poți fi lovit pentru că ai pus creatura într-un rând plin de blocuri; ține creatura pe rândul liber *(y = -128)*.  
+4. **Nu se oprește jocul** — `dacă vieti = 0` lipsește din scriptul de lovitură, după `spune Au!`.  
+5. **Jucătorul nu poate trece** — creatura umple tot rândul; lasă creatura să patruleze, nu o bloca.  
 6. **`vieti` nu se resetează la steag** — `setează vieti la 3` lipsește.
 
 ---

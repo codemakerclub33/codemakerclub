@@ -6,7 +6,7 @@ Obiectivul. Minim: două zone jucabile, trecere clară între ele, în fiecare z
 
 De ce contează. O singură zonă verde e plictisitoare. Două zone înseamnă explorare și motive să te miști pe hartă. Pregătesc misiunea din lecția opt.
 
-Primul pas pe ecran. Alegi trecerea, pe foaie. Azi lumea se împarte pe x. Stânga, unde x e mai mic decât zero, este Pădurea. Dreapta, unde x e mai mare decât zero, este Deșertul. Pădurea are lemn și pământ, fundal verde. Deșertul are piatră și pământ, fundal galben. Ce resursă ai doar în Pădure? Lemnul. Doar în Deșert? Piatra.
+Primul pas pe ecran. Alegi trecerea, pe foaie. Azi lumea se împarte pe x. Stânga, unde x e mai mic decât zero, este Pădurea. Dreapta, unde x e zero sau mai mare, este Deșertul. Pădurea are lemn și pământ, fundal verde. Deșertul are piatră și pământ, fundal galben. Ce resursă ai doar în Pădure? Lemnul. Doar în Deșert? Piatra.
 
 Al doilea pas pe ecran. Generatorul pe zone. La Bloc, în generator, înlocuiești treci la un costum aleatoriu cu o regulă. Dacă c x mai mic decât zero, adică Pădurea: dacă un număr aleatoriu între unu și doi egal cu unu, treci la costumul unu, lemn, altfel treci la costumul trei, pământ. Altfel, adică Deșertul: la fel, dar costumul doi, piatră, sau trei, pământ. Verifici: stânga are blocuri maro și verzi, dreapta gri și verzi.
 

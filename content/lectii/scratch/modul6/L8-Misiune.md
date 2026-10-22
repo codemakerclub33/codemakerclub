@@ -30,7 +30,7 @@ Misiunea transformă lumea într-un **joc** pe care îl prezinți la L10.
 - Construiește o casă: ≥8 blocuri puse + 1 târnăcop craftat  
 - Învinge creatura cu sabie craftată  
 - Adună 15 lemn **și** vizitează ambele zone  
-- Craftă târnăcop și sparge 5 piatră „grea”
+- Fă un târnăcop și sparge 5 blocuri de piatră
 
 ---
 
@@ -43,7 +43,7 @@ sau, mai greu: **„Fă un târnăcop și construiește 8 blocuri.”**
 
 1. Variabila `misiune` *(text)*, mare, bifată pe scenă; pe steag `setează misiune la Construiește 8 blocuri`  
 2. Variabila `puse` *(câte blocuri ai pus)*; pe steag `setează puse la 0`  
-3. În scriptul de pus *(L3)*, după ce apare blocul: `schimbă puse cu 1`
+3. La `Bloc`, în `când primesc pune` *(L3)*, în interiorul `dacă <este_clona = 0>`, după `creează o clonă a mea`: `schimbă puse cu 1`
 
 - [ ] **Verifici:** misiunea se vede pe ecran, iar `puse` crește cu 1 la fiecare bloc pus.
 
@@ -53,7 +53,7 @@ La Scenă *(sau la Erou)*, `repetă la nesfârșit`:
   1. `trimite win`  
   2. `oprește acest script`
 
-Un sprite `Final`, ascuns la steag, cu costumul **Ai câștigat!**: `când primesc win` → `arată` · `treci în față` · `oprește tot` *(după o secundă)*.
+Un sprite `Final`, ascuns la steag, cu costumul **Ai câștigat!**: `când primesc win` → `arată` · `treci în față` · `oprește tot` *(după o secundă; la L9 `oprește tot` se înlocuiește cu meniul)*.
 
 **Verifici (de fiecare dată):**  
 - [ ] La steag: `puse = 0` și nu apare „Ai câștigat!”.  
@@ -64,13 +64,13 @@ Un sprite `Final`, ascuns la steag, cu costumul **Ai câștigat!**: `când prime
 ### 3) Complet *(alege cel puțin una)*
 Condiția folosește regula altui pas:
 - [ ] **Craft:** `dacă <<puse > 7> și <tarnacop > 0>>`  
-- [ ] **Două zone:** variabila `pus_padure` / `pus_desert`; câștigi cu cel puțin 4 în fiecare  
+- [ ] **Două zone:** variabila `pus_padure` / `pus_desert`; câștigi cu cel puțin 4 în fiecare *(adaugi la `pus_padure` dacă `tx < 0`, altfel la `pus_desert`)*  
 - [ ] **Creatura:** câștigi dacă ai sabie și creatura e eliminată *(variabila `creatura_invinsa`, pentru toate: 0 la steag; la `Creatură`, în `când primesc creatura_lovita`, o setezi pe `1`; condiția: `sabie > 0` și `creatura_invinsa = 1`)*
 
 ### 4) Test cu un coleg *(5 minute)*
 Colegul citește misiunea de pe ecran și o îndeplinește **fără ajutor**.
 
-- [ ] **Verifici:** colegul a înțeles misiunea doar din ce scrie pe ecran și a îndeplinit-o fără ajutor; ai notat ce l-a încurcat.
+- [ ] **Verifici:** colegul a înțeles misiunea doar din ce scrie pe ecran și a reușit fără ajutor; ai notat ce a încurcat.
 
 ---
 

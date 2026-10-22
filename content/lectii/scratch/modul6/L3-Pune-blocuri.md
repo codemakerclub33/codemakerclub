@@ -79,12 +79,12 @@ La **Bloc**, un script nou, **doar pentru originalul** care nu e clonă:
 - [ ] Poți sparge blocul pus și lemnul revine.
 
 ### 5) Adăpostul *(Minim · 15 minute)*
-Spargi 4–6 blocuri, apoi pui cel puțin **4 blocuri** *(un zid sau un colț)* într-un loc curat.
+Spargi blocuri până ai cel puțin 4 de lemn *(cele maro)*, apoi pui cel puțin **4 blocuri** *(un zid sau un colț)* într-un loc curat.
 
 - [ ] **Verifici:** se vede un zid făcut de tine, iar `lemn` a scăzut cu 4.
 
 ### 6) Complet *(alege cel puțin una)*
-- [ ] **Nu pui peste alt bloc sau peste erou:** la `Bloc`, după `arată`, `dacă <nu <<atinge Bloc?> sau <atinge Erou?>>>` → `creează o clonă a mea` și `schimbă lemn cu -1`; apoi `ascunde` *(un sprite ascuns nu detectează atingerea, de aceea îl arătăm o clipă)*  
+- [ ] **Nu pui peste alt bloc sau peste erou:** la `Bloc`, după `arată`, `dacă <nu <<atinge Bloc?> sau <atinge Erou?>>>` → `creează o clonă a mea` și `schimbă lemn cu -1` *(muți aici scăderea din Minim)*; apoi `ascunde` *(un sprite ascuns nu detectează atingerea, de aceea îl arătăm o clipă)*  
 - [ ] **Limite:** nu pui în afara lumii *(`dacă <(abs din tx) < 225>` și `ty` între -160 și 160)*  
 - [ ] **Indicator:** un text `Fața: …` pe scenă
 
@@ -94,7 +94,7 @@ Spargi 4–6 blocuri, apoi pui cel puțin **4 blocuri** *(un zid sau un colț)* 
 ## Greșeli frecvente
 1. **Se pun blocuri de zeci de ori** — lipsește `dacă <este_clona = 0>`; fiecare clonă răspunde la `pune`.  
 2. **Blocul pus e strâmb** — `tx` / `ty` nu sunt multipli de 32; verifică eroul *(x, y multipli de 32 din L1)*.  
-3. **Pune oriunde** — `tx` / `ty` se calculează din direcția `dx` / `dy`; dacă n-ai setat direcția, e mereu aceeași celulă.  
+3. **Pune oriunde** — `tx` / `ty` se calculează din direcția `dx` / `dy`; dacă nu ai setat direcția, e mereu aceeași celulă.  
 4. **Lemnul scade chiar dacă nu apare blocul** — la Complet, scazi doar când `dacă nu atinge` e adevărat.  
 5. **Blocul apare peste erou** — la Complet nu verifici `atinge Erou?`.  
 6. **Nu poți construi un adăpost** — ai prea puțin lemn: sparge mai multe blocuri.

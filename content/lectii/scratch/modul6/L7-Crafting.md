@@ -21,7 +21,7 @@ Leagă inventarul (L4) de misiune (L8).
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–12 | Rețetă pe foaie: 2 lemn → 1 ușă |
+| 0–12 | Rețetă pe foaie: 2 lemn → 1 târnăcop |
 | 12–25 | Pe foaie: 1–2 rețete + ce face itemul |
 | 25–100 | Buton craft + logică + (Complet) folosire |
 | 100–120 | Test coleg: craft fără ajutor |
@@ -40,7 +40,7 @@ Un craft are aceiași trei pași ca magazinul din M5: **verifici** dacă ai dest
 ### 2) Butonul de craft *(Minim · 25 minute)*
 1. Variabila `tarnacop` *(pentru toate sprite-urile, bifată)*; pe steag: `setează tarnacop la 0`  
 2. Sprite `Craft` *(un buton cu text „Craft: 2 lemn → târnăcop”)*, într-un colț liber, de exemplu `x: 200 y: -160`  
-3. Scriptul lui: `când se dă click pe acest personaj`:  
+3. Scriptul lui: `când se dă click pe acest sprite`:  
    - `dacă <lemn > 1>` **atunci** → `schimbă lemn cu -2` → `schimbă tarnacop cu 1` → `spune Ai făcut un târnăcop!` timp de `1` secundă  
    - `altfel` → `spune Îți trebuie 2 lemn!` timp de `2` secunde
 
@@ -62,7 +62,7 @@ Un craft are aceiași trei pași ca magazinul din M5: **verifici** dacă ai dest
 3. **Craftezi la nesfârșit** — click o dată = o rețetă; un buton nu e într-un `repetă`.  
 4. **Itemul nu schimbă nimic** — la „Complet”, `raza` se schimbă; altfel e doar un număr.  
 5. **Raza rămâne mare la steag** — pe steag, `setează raza la 80`.  
-6. **Butonul e acoperit de blocuri** — pune-l într-un colț liber.
+6. **Butonul e acoperit de blocuri** — pune butonul într-un colț liber.
 
 ---
 

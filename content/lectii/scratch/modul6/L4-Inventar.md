@@ -50,10 +50,11 @@ Azi adaugi un al treilea tip, **pământ**, și o variabilă `tip_activ` *(1 = l
 1. Variabila `tip_activ`; pe steag: `setează tip_activ la 1`  
 2. Trei scripturi la Erou: `când se apasă tasta 1` → `setează tip_activ la 1`; la fel pentru **2** și **3**  
 3. Faci scriptul de E *(L3)* să țină cont de tip. În loc de `dacă lemn > 0`:  
-   - `dacă <<tip_activ = 1> și <lemn > 0>>` → `trimite pune` · `schimbă lemn cu -1`  
-   - `dacă <<tip_activ = 2> și <piatra > 0>>` → `trimite pune` · `schimbă piatra cu -1`  
-   - `dacă <<tip_activ = 3> și <pamant > 0>>` → `trimite pune` · `schimbă pamant cu -1`  
-   - altfel `spune Nu ai destule!` timp de `1` secundă  
+   - mai întâi `setează pus la 0` *(variabila `pus`, pentru toate sprite-urile)*  
+   - `dacă <<tip_activ = 1> și <lemn > 0>>` → `setează pus la 1` · `trimite pune` · `schimbă lemn cu -1`  
+   - `dacă <<tip_activ = 2> și <piatra > 0>>` → `setează pus la 1` · `trimite pune` · `schimbă piatra cu -1`  
+   - `dacă <<tip_activ = 3> și <pamant > 0>>` → `setează pus la 1` · `trimite pune` · `schimbă pamant cu -1`  
+   - la final: `dacă <pus = 0>` → `spune Nu ai destule!` timp de `1` secundă  
 4. La `Bloc`, în `când primesc pune`: `treci la costumul tip_activ` *(în loc de `1`)* și ștergi `schimbă lemn cu -1` de acolo *(scăderea e acum la Erou)*
 
 - [ ] **Verifici:** spargi 3 blocuri, pui 2, rămâne 1 pe ecran. Schimbi tipul cu tastele 1/2/3 și pui blocuri de altă culoare. Cu 0 dintr-un tip, nu pui nimic.
@@ -61,13 +62,13 @@ Azi adaugi un al treilea tip, **pământ**, și o variabilă `tip_activ` *(1 = l
 ### 4) Complet *(alege cel puțin una)*
 - [ ] **Indicator:** un sprite mic `Activ` cu 3 costume ale tipurilor: `când primesc …` sau într-un `repetă la nesfârșit`: `treci la costumul tip_activ`  
 - [ ] **Limită:** la spargere, `dacă <lemn < 20>` înainte de `schimbă lemn cu 1`  
-- [ ] **Listă:** o listă `speciale` în care adaugi `Comoară` când spargi un bloc rar *(costum 4)*
+- [ ] **Listă:** o listă `speciale` în care adaugi `Comoară` când spargi un bloc rar *(un al patrulea costum)*
 
 
 ---
 
 ## Greșeli frecvente
-1. **Numerele nu se văd de la distanță** — pune-le mari, în colț, fără să acopere lumea.  
+1. **Numerele nu se văd de la distanță** — fă numerele mari, în colț, fără să acopere lumea.  
 2. **Pui un tip, scade alt tip** — în scriptul E verifici și scazi pentru **același** `tip_activ`.  
 3. **Lemnul scade de două ori** — ai lăsat și vechiul `schimbă lemn cu -1` din L3.  
 4. **Resursa ajunge negativă** — lipsește `> 0` în condiție.  

@@ -42,7 +42,7 @@ Cube Crafter = lumea ta e **jucabilă de altcineva**, nu doar „merge la mine�
 **Stop cod la minutul ~55.** După aceea, repari doar greșeli mici; nu mai adaugi funcții noi.
 
 ### 2) Căutarea greșelilor *(10 minute)*
-Joci și încerci să-l strici, bifând:
+Joci și încerci să strici jocul, bifând:
 - [ ] Spargi de departe: nu merge  
 - [ ] Pui cu 0 resurse: nu merge  
 - [ ] Pierzi toate viețile: apare „Sfârșitul jocului”  
@@ -50,13 +50,13 @@ Joci și încerci să-l strici, bifând:
 - [ ] Steagul de două ori la rând: lumea nu se dublează  
 - [ ] Nu poți câștiga la start
 
-- [ ] **Verifici:** ai găsit și reparat cel puțin **un** greșeală, **sau** un coleg a jucat și a scris „ok”.
+- [ ] **Verifici:** ai găsit și reparat cel puțin **o** greșeală, **sau** un coleg a jucat și a scris „ok”.
 
 ### 3) Prezentarea *(1–2 minute)*
 Patru propoziții pe foaie, înainte:
 1. „Jocul meu se numește …”  
 2. „În el tu …” *(minezi, construiești, faci un târnăcop)*  
-3. „Partea grea a fost … și am rezolvat-o cu …”  
+3. „Partea grea a fost … și am rezolvat cu …”  
 4. „Sunt mândru de …”  
 **Demo 30–40 de secunde:** Start → minezi → pui sau faci craft → misiunea.
 
@@ -102,7 +102,7 @@ Salvat: `Prenume_Nume_M6_LumeCuburi`
 ## Recapitulare rapidă
 1. Lume pe grilă · sparge/pune · inventar · zone · pericol · craft · misiune · meniu  
 2. Finisări + arăți  
-3. Insignă **Cube Crafter** — Scratch 6 module închise pe firul cuburilor
+3. Insignă **Cube Crafter** — ai terminat cele 6 module de Scratch
 
 ## Schema pe scurt
 

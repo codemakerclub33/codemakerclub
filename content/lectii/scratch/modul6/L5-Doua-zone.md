@@ -31,7 +31,7 @@ O singură cutie verde e plictisitoare.
 ## Pas cu pas
 
 ### 1) Alegi trecerea *(5 minute, pe foaie)*
-Azi folosim **varianta A**: lumea se împarte pe **x**. Stânga *(x < 0)* e **Pădurea**, dreapta *(x > 0)* e **Deșertul**. Fiecare zonă are alte resurse și alt fundal. Inventarul rămâne neschimbat.
+Azi folosim **varianta A**: lumea se împarte pe **x**. Stânga *(x < 0)* e **Pădurea**, dreapta *(x ≥ 0)* e **Deșertul**. Fiecare zonă are alte resurse și alt fundal. Inventarul rămâne neschimbat.
 
 | Zonă | Resurse | Fundal |
 |------|---------|--------|
@@ -67,8 +67,8 @@ La `Bloc`, în generator *(L1)*, înlocuiești `treci la costumul (număr aleato
 2. **Inventarul se șterge la trecere** — `setează … la 0` e în scriptul zonei, nu doar pe steag.  
 3. **Fundalul clipește** — la `x = 0` se aplică `altfel`, deci apare Deșertul; nu pune două `dacă` separate.  
 4. **Fundalul nu se schimbă** — `repetă la nesfârșit` lipsește sau citește poziția altui sprite.  
-5. **Mesajul se repetă la fiecare pas** — trimite-l doar când zona se **schimbă**, nu mereu.  
-6. **O zonă n-are nimic de minat** — verifică că fiecare zonă are o resursă diferită.
+5. **Mesajul se repetă la fiecare pas** — trimite mesajul doar când zona se **schimbă**, nu mereu.  
+6. **O zonă nu are nimic de minat** — verifică că fiecare zonă are o resursă diferită.
 
 ---
 
@@ -96,7 +96,7 @@ Salvat: `Prenume_Nume_M6_LumeCuburi`
 ## Schema pe scurt
 
 **Trecere X**  
-`dacă x > 0` → fundal Deșert · altfel Pădure  
+`dacă x < 0` → fundal Pădure · altfel Deșert  
 
 
 **Quiz scurt:**  

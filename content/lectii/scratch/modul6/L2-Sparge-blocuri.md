@@ -36,7 +36,7 @@ Spargerea hrănește inventarul (L4) și construcția (L3).
 Lucrezi în `Prenume_Nume_M6_LumeCuburi`, **aceeași copie** de la L1.
 
 ### 1) Regula *(5 minute, pe foaie)*
-Un click pe un bloc îl sparge **doar dacă** eroul e destul de aproape. Altfel s-ar putea mina de la celălalt capăt al ecranului.  
+Un click pe un bloc îl sparge **doar dacă** eroul e destul de aproape. Altfel ai putea mina de la celălalt capăt al ecranului.  
 Distanța dintre centrele a două celule vecine e 32; două celule mai departe, 64. Alegem **raza = 80**: eroul ajunge la blocurile de la cel mult 2 celule.
 
 **Încearcă tu — pe foaie (3 min):** un bloc e la 3 celule de erou *(96)*. Se sparge? *(Nu: 96 > 80.)*
@@ -49,7 +49,7 @@ Distanța dintre centrele a două celule vecine e 32; două celule mai departe, 
 
 ### 3) Spargerea *(Minim · 25 minute)*
 La `Bloc`, un script nou:
-- `când se dă click pe acest personaj`  
+- `când se dă click pe acest sprite`  
 - `dacă <(distanța până la [Erou]) < raza>` **atunci**:  
   1. `dacă <costum [număr] = 1>` → `schimbă lemn cu 1`  
   2. `dacă <costum [număr] = 2>` → `schimbă piatra cu 1`  
@@ -66,16 +66,16 @@ La `Bloc`, un script nou:
 ### 4) Complet *(alege cel puțin una)*
 - [ ] **Sunet:** `pornește sunetul [Pop]` înainte de `șterge această clonă`  
 - [ ] **Gol curat:** după ce spargi un rând din fața eroului, poți merge pe unde ai spart *(blocul nu mai există, deci `atinge Bloc?` e fals)*  
-- [ ] **Bloc „greu”:** un al treilea costum *(negru)* care are nevoie de **2 click-uri**: la primul, doar `treci la costumul 2`; la al doilea se sparge
+- [ ] **Bloc „greu”:** un al treilea costum *(negru)* care are nevoie de **2 click-uri**: la primul, doar `treci la costumul 2` și `oprește acest script`; la al doilea se sparge
 
 
 ---
 
 ## Greșeli frecvente
 1. **Se sparge de departe** — lipsește `distanța până la Erou < raza`, sau `raza` nu e setată *(arată 0 și nimic nu se sparge, sau o valoare mare)*.  
-2. **Nu se sparge nimic** — `raza` e 0: setează-o pe 80 la steag.  
+2. **Nu se sparge nimic** — `raza` e 0: setează valoarea 80 la steag.  
 3. **Resursa nu crește** — verifică numărul costumului *(1 = lemn, 2 = piatră)* și variabila din `schimbă`.  
-4. **Variabilele sunt pe Erou și nu se văd** — creează-le pentru toate sprite-urile și bifează-le.  
+4. **Variabilele sunt pe Erou și nu se văd** — creează variabilele pentru toate sprite-urile și bifează căsuțele.  
 5. **Clone rămase** — `șterge această clonă` lipsește: blocul „dispare” dar tot se poate apăsa.  
 6. **Click pe Erou, nu pe bloc** — eroul acoperă celula; sparge blocurile din jurul lui.
 

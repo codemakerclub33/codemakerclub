@@ -10,9 +10,9 @@ Primul pas pe ecran. Finisările A până la F, patruzeci de minute. A, numele j
 
 Regula sălii: la aproximativ minutul cincizeci și cinci, stop cod. După aceea repari doar greșeli mici, nu adaugi funcții noi.
 
-Al doilea pas pe ecran. Căutarea greșelilor, zece minute. Joci și încerci să-l strici. Spargi de departe: nu merge. Pui cu zero resurse: nu merge. Pierzi toate viețile: apare Sfârșitul jocului. Câștigi, apeși Start: jocul începe de la zero. Apeși steagul de două ori: lumea nu se dublează. Nu poți câștiga la start. Verifici: ai găsit și reparat cel puțin o greșeală, sau un coleg a jucat și a scris ok.
+Al doilea pas pe ecran. Căutarea greșelilor, zece minute. Joci și încerci să strici jocul. Spargi de departe: nu merge. Pui cu zero resurse: nu merge. Pierzi toate viețile: apare Sfârșitul jocului. Câștigi, apeși Start: jocul începe de la zero. Apeși steagul de două ori: lumea nu se dublează. Nu poți câștiga la start. Verifici: ai găsit și reparat cel puțin o greșeală, sau un coleg a jucat și a scris ok.
 
-Al treilea pas pe ecran. Prezentarea. Patru propoziții pe foaie, înainte. Jocul meu se numește. În el tu minezi, construiești, faci un târnăcop. Partea grea a fost, și am rezolvat-o cu. Sunt mândru de. Apoi un demo de treizeci până la patruzeci de secunde: Start, minezi, pui sau faci craft, misiunea.
+Al treilea pas pe ecran. Prezentarea. Patru propoziții pe foaie, înainte. Jocul meu se numește. În el tu minezi, construiești, faci un târnăcop. Partea grea a fost, și am rezolvat cu. Sunt mândru de. Apoi un demo de treizeci până la patruzeci de secunde: Start, minezi, pui sau faci craft, misiunea.
 
 Al patrulea pas pe ecran. Insigna. Ai parcurs modulul șase, sau ai recuperat lecțiile lipsă. Ai prezentat. Primești Cube Crafter.
 
