@@ -77,7 +77,7 @@ Dacă trimiți `alarma` de 10 ori rapid, Sirena poate avea **mai multe** scriptu
    <span style="color:#FF8C1A;font-weight:700">setează alarma_activa la</span> `0`  
 4. Pe **Buton Liniște**: click →  
    <span style="color:#E6A800;font-weight:700">trimite</span> `liniste`  *(**nu** atingi `alarma_activa` aici)*  
-5. **De ce:** `alarma_activa` rămâne 1 cât timp Senzorul e pe pericol, deci după Liniște **nu** retrimite alarma. Se face 0 abia când **ieși** din zonă; la următoarea intrare sună din nou. Dacă Liniște ar pune variabila pe 0, Senzorul ar retrimite `alarma` imediat și sirena s-ar reaprinde.
+5. **De ce:** `alarma_activa` rămâne 1 cât timp Senzorul e pe pericol, deci după Liniște **nu** retrimite alarma. Se face 0 abia când **ieși** din zonă; la următoarea intrare sună din nou. Dacă Liniște ar pune variabila pe 0, Senzorul ar retrimite `alarma` imediat și sirena se reaprinde.
 
 *Variantă mai scurtă (dacă rămâi în urmă pe variabile):*  
 `forever` → `dacă atinge pericol` → `trimite alarma` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `1`  
@@ -162,7 +162,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Mesaj `scena2` → schimbă fundalul  
 - [ ] Buton „Start joc” trimite mesaj; steagul **doar** resetează  
 - [ ] Variantă: după `trimite alarma`, pe Senzor `stop this script` — repornești cu steagul (mai rigid decât `alarma_activa`)  
-- [ ] ★★★ **Provocare:** O mini-poveste cu **3 personaje** care vorbesc pe rând, doar prin mesaje (A → B → C → A).
+- [ ] ★★★ **Provocare:** Un singur mesaj (de exemplu `stop_joc`) ascultat de **3 personaje**: Erou, Scenă și Sirenă reacționează fiecare diferit.
 
 ## Recapitulare rapidă
 1. Trimite / când primesc = același nume  

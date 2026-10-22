@@ -55,7 +55,7 @@ La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">dacă �
    - **atunci:** <span style="color:#9966FF;font-weight:700">spune</span> `Zi!` *(fără „pentru … secunde” — ca să nu blocheze bucla)*  
    - **altfel:** <span style="color:#9966FF;font-weight:700">spune</span> `Noapte!`
 4. Cum testezi:  
-   - **Ține Z** apăsată **înainte** să apeși steagul, **sau** apasă-o rapid după  
+   - **Ține Z** apăsată **înainte** să apeși steagul, **sau** apasă tasta rapid după  
    - Scriptul verifică mereu: **ții Z** → „Zi!”; **lași** → „Noapte!”
 
 **Încearcă tu — mecanismul cu tasta (2–3 min)**  
@@ -99,7 +99,7 @@ La finalul orei poți folosi <span style="color:#FFAB19;font-weight:700">dacă �
 2. **Mesajele se calcă / se blochează** — ai folosit `spune … pentru … secunde` **în** bucla `forever`; folosește `spune` **fără** durată.  
 3. **Ai folosit două condiții `dacă` separate** — azi vrem un singur `dacă/altfel` ca să se vadă „da vs nu”.  
 4. **Fundalurile lipsesc** — tab Scenă: 2 fundaluri + numele exact în `comută fundalul`.  
-5. **Operator verde în hexagon** — scoate-l; doar Detectare (tastă).  
+5. **Operator verde în hexagon** — scoate operatorul; doar Detectare (tastă).  
 6. **Sunet care se repetă** (la Complet) — pune <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.5` după sunet pe fiecare drum.  
 7. **Nume fișier** — `Prenume_Nume_L2`, nu doar `Ana_L2`.
 
@@ -147,7 +147,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Pe fiecare drum: **costum** diferit pe personaj (nu doar fundal)  
 - [ ] Al 2-lea personaj: pe steag, alt `dacă/altfel` cu **altă** tastă (ex. `n` = forțează noapte pe un mesaj)  
 - [ ] La început (înaintea buclei `forever`): `spune` scurt cu regula, apoi bucla  
-- [ ] ★★★ **Provocare:** Două `dacă/altfel` separate, pe **două taste diferite**, fiecare cu alt costum pe personaj.
+- [ ] ★★★ **Provocare:** Un singur `dacă/altfel` în care `atunci` și `altfel` schimbă fiecare **câte 3 lucruri** (fundal, costum, sunet).
 
 ## Recapitulare rapidă
 1. **Atunci** = da · **Altfel** = nu  

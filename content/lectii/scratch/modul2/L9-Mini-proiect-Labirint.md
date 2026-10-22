@@ -27,7 +27,7 @@ L1–L8 = piese. L9 = **jocul tău**. La L10 îl lustruiești și îl prezinți 
 | 50–100 | Proiect: **Complet** (labirint + extra, arăți unui coleg) |
 | 100–120 | Recap, bonus, salvare / pregătire L10 |
 
-*(Profesor: la ~50 min, cine n-ajunge la ieșire pe steag = ajutat pe schelet, nu pe decor.)*
+*(Profesor: la ~50 min, cine nu ajunge la ieșire pe steag = ajutat pe schelet, nu pe decor.)*
 
 ---
 
@@ -82,7 +82,7 @@ Variabila-semnal (ca `alarma_activa` la L8) = doar dacă la Bonus ai **2 ieșiri
 
 ### 4) De la schelet la Complet
 1. Completezi labirintul (mai mulți pereți / coridoare clare)  
-2. Adaugi **cel puțin 1** extra: sunet la victorie (dacă n-ai) **sau** `vieti` **sau** o monedă (`scor +1`)  
+2. Adaugi **cel puțin 1** extra: sunet la victorie (dacă nu ai deja) **sau** `vieti` **sau** o monedă (`scor +1`)  
 3. Un coleg poate termina labirintul fără explicație  
 
 **Încearcă tu — Complet (3–5 min)**  

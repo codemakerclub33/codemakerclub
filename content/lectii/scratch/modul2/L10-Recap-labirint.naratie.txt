@@ -2,7 +2,7 @@ Lecția zece. Completare și prezentare.
 
 Astăzi termini labirintul, îl arăți clasei, și primești insigna Logic Explorer. Nu refaci de la zero. Deschizi proiectul de la lecția nouă și adaugi. Fișierul rămâne Prenume, linie jos, Nume, linie jos, L nouă. Sau o copie L zece, ca să nu strici versiunea veche.
 
-Obiectivul. Ai îmbunătățit labirintul, l-ai prezentat, și ai închis Modulul doi. Minim: o îmbunătățire din lista A până la F, plus restart curat, plus prezentare. Asta e suficient pentru insignă. Complet: două îmbunătățiri, plus prezentare, plus salvare.
+Obiectivul. Ai îmbunătățit labirintul, ai prezentat, și ai închis Modulul doi. Minim: o îmbunătățire din lista A până la F, plus restart curat, plus prezentare. Asta e suficient pentru insignă. Complet: două îmbunătățiri, plus prezentare, plus salvare.
 
 De ce contează. Proiectele bune se refac o dată, apoi se arată. Insigna Logic Explorer înseamnă: logica e la activ. Dacă, detectare, variabile, mesaje. Urmează Modulul trei: Jocuri.
 
@@ -16,7 +16,7 @@ Al treilea pas pe ecran. Reguli de prezentare. În unu sau două minute: eroul m
 
 Al patrulea pas pe ecran. Recap pe scurt cu profesorul. Dacă și dacă altfel. Detectare: culoare, personaj, margine. Taste și forever. Variabile și operatori. Stop și mesaje. Apoi: în Modulul trei apar jocurile, scor, nivele, clone.
 
-Greșeli frecvente. Dacă upgrade-ul strică controlul, viteză prea mare. Coboară viteza. Dacă la prezentare e haos, resetează înainte. Dacă încerci două upgrade-uri netestate, la prezentare e stricat. Fă una, testează, apoi a doua. Dacă crezi că fără două n-ai reușit: una plus prezentare egal Minim, egal insignă.
+Greșeli frecvente. Dacă upgrade-ul strică controlul, viteză prea mare. Coboară viteza. Dacă la prezentare e haos, resetează înainte. Dacă încerci două upgrade-uri netestate, la prezentare e stricat. Fă una, testează, apoi a doua. Dacă crezi că fără două nu ai reușit: una plus prezentare egal Minim, egal insignă.
 
 Proiectul de azi. Completare pe Labirintul meu.
 

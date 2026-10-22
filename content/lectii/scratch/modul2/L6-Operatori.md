@@ -99,7 +99,7 @@ Comparațiile (`< = >`) sunt **hexagoane** → intră în `dacă`.
 ## Greșeli frecvente
 1. **Ai pus `5 = scor` greșit în afara hexagonului** — tot lanțul verde stă **în** `dacă`.  
 2. **`modifică cu (scor + 1)` dublu** — fie `modifică cu 1`, fie `setează la scor+1`, nu ambele.  
-3. **Mereu „Mai încearcă”** — ai pus condiția `dacă/altfel` în bucla `forever`; mută-l pe **click Verifică**.  
+3. **Mereu „Mai încearcă”** — ai pus condiția `dacă/altfel` în bucla `forever`; mută verificarea pe **click Verifică**.  
 4. **Ținta 8 cu `scor > 8`** — atunci 8 nu câștigă; folosește `scor > 7` sau `scor = 8`.  
 5. **Nume fișier** — `Prenume_Nume_L6`, nu doar `Ana_L6`.
 
@@ -148,7 +148,7 @@ Cei rapizi: Complet, apoi Bonus.
 ## Bonus (dacă ai terminat Complet)
 - [ ] Victorie doar dacă `scor > 7` **și** `vieti > 0` (blocul <span style="color:#59C059;font-weight:700">… și …</span>)  
 - [ ] Dacă `x > 100` → bonus +2 la scor  
-- [ ] Mesaj cu <span style="color:#59C059;font-weight:700">alătură</span> `Ai ` + `scor` (dacă n-ai făcut la pasul 4)  
+- [ ] Mesaj cu <span style="color:#59C059;font-weight:700">alătură</span> `Ai ` + `scor` (dacă nu ai făcut la pasul 4)  
 - [ ] Afișezi `scor` „dublat” cu `scor × 2` (blocul `×` din Operatori)  
 - [ ] ★★★ **Provocare:** Victorie la `scor > 9`, dar doar dacă `vieti > 0`. Stelele de aur dau +3, cele normale +1.
 

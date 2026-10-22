@@ -9,7 +9,7 @@
 ---
 
 ## Obiectiv
-La finalul orei ai îmbunătățit labirintul, l-ai prezentat, și ai închis Modulul 2.  
+La finalul orei ai îmbunătățit labirintul, ai prezentat, și ai închis Modulul 2.  
 **Minim:** **1** îmbunătățire din A–F + restart curat + prezentare → **e suficient pentru insignă**.  
 **Ținta orei (Complet):** **2** îmbunătățiri din A–F + prezentare + salvare.
 
@@ -111,7 +111,7 @@ M3 = **jocuri** (scor, nivele, clone…).
 1. **Upgrade care strică controlul** — viteză prea mare după obstacol mobil; coboară viteza.  
 2. **Prezentare fără steag curat** — resetează înainte (loc / scor / sunete).  
 3. **Două upgrade-uri netestate** — la min 55 e stricat; fă **1 → testează → apoi 2**.  
-4. **„N-am 2, deci n-am reușit”** — **1** + prezentare = Minim = **insignă**.  
+4. **„Nu am 2, deci nu am reușit”** — **1** + prezentare = Minim = **insignă**.  
 5. **Quiz sărit** — măcar 3 întrebări dacă e puțin timp.  
 6. **Nume fișier** — `Prenume_Nume_L9` / `Prenume_Nume_L10`, nu doar `Ana_L9`.
 
@@ -159,7 +159,7 @@ La min **55** încep prezentările **oricum**.
 - [ ] A 3-a îmbunătățire  
 - [ ] Schimb cu un coleg: joacă 3 min, notează 1 greșeală  
 - [ ] Pe foaie: **1 idee** pentru Modulul 3 (joc cu scor / nivele / clone)
-- [ ] ★★★ **Provocare:** Alege o regulă din joc (viteză, vieți sau scor) și schimbă-o ca să fie jocul **de două ori mai greu**. Ce ai schimbat?
+- [ ] ★★★ **Provocare:** Alege o regulă din joc (viteză, vieți sau scor) și schimbă regula ca să fie jocul **de două ori mai greu**. Ce ai schimbat?
 
 ## Recapitulare rapidă
 1. L10 = **completezi** L9, apoi **prezinți**  

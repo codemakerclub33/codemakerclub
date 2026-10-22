@@ -163,7 +163,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Zonă **bonus** (altă culoare): dacă o atingi → `Ok!` + sunet plăcut  
 - [ ] După lavă: <span style="color:#FFAB19;font-weight:700">așteaptă</span> `1` („imunitate” scurtă)  
 - [ ] 2 monede (aceeași logică pe fiecare)  
-- [ ] ★★★ **Provocare:** Traseu cu **3 culori** (lavă, apă, iarbă): fiecare reacționează diferit (start, încetinire, sunet).
+- [ ] ★★★ **Provocare:** Traseu cu **3 culori** (lavă, apă, iarbă): fiecare reacționează diferit (start, mesaj, sunet).
 
 ## Recapitulare rapidă
 1. <span style="color:#5CB1D6;font-weight:700">Detectare</span> = hexagoane da/nu pentru `dacă`  

@@ -80,7 +80,7 @@ Fără scor, jocul nu „ține minte” câte stele ai prins.
 - [ ] Salvat: `Prenume_Nume_L5`  
 
 ### 4) Victorie — exemplu `=` din Operatori
-*(**Excepție / exemplu:** azi folosim **doar** semnul <span style="color:#59C059;font-weight:700">=</span> din <span style="color:#59C059;font-weight:700">Operatori</span>, ca să știm când s-a terminat jocul. Restul (`<`, `>`, `+`, `−`) rămân pentru **L6** — ca `forever` în Bonus M1 înainte de L7.)*
+*(**Excepție / exemplu:** azi folosim **doar** semnul <span style="color:#59C059;font-weight:700">=</span> din <span style="color:#59C059;font-weight:700">Operatori</span>, ca să știm când se termină jocul. Restul (`<`, `>`, `+`, `−`) rămân pentru **L6** — ca `forever` în Bonus M1 înainte de L7.)*
 
 1. Hexagon: <span style="color:#59C059;font-weight:700">(scor) = (5)</span>  
 2. Pe **erou**, în bucla `forever` (după taste):  
@@ -154,7 +154,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Variabilă `vieti` (3) — obstacol scade viața; `vieti = 0` → Game Over  
 - [ ] La scor 5: sunet de victorie + fundal nou  
 - [ ] „Nivel”: la 5 → `setează scor la 0` + `spune` `Nivel trecut!` *(simulare)*  
-- [ ] ★★★ **Provocare:** Două variabile pe scenă, `scor` și `vieti`, plus **stele de aur** care dau +3 în loc de +1.
+- [ ] ★★★ **Provocare:** Două variabile pe scenă, `scor` și `vieti`, plus o **stea rea** (alt personaj): când o atingi, `vieti` scade cu 1 și steaua dispare.
 
 ## Recapitulare rapidă
 1. Variabilă = cutie cu nume + număr  
@@ -181,4 +181,4 @@ la steag → `setează scor la 0` → reset loc
 
 ## Temă
 Opțional: la scor 3 → `spune` `Mai ai puțin!` — `Prenume_Nume_L5`.  
-*(Tot cu exemplu `=` sau, dacă n-ai ajuns la victorie, doar un `dacă scor = 3` pe erou.)*
+*(Tot cu exemplu `=` sau, dacă nu ai ajuns la victorie, doar un `dacă scor = 3` pe erou.)*

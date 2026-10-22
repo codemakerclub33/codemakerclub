@@ -16,7 +16,7 @@ Al patrulea pas pe ecran. Ca să ajungă la margine, alege o singură metodă. M
 
 Al cincilea pas pe ecran. Chiar sub steag, înainte de forever: du-te la mijloc, orientează-te nouăzeci, oprește toate sunetele. Fără reset, la al doilea steag e haos.
 
-Greșeli frecvente. Dacă nu reacționează, dacă e lângă forever, nu în el, sau lipsește forever. Dacă hexagonul e afară, pune-l în spațiul hexagonal. Dacă se întoarce de o sută de ori, lipsește așteaptă. Dacă ai tastă și mergi constant, ai amestecat metoda A și B.
+Greșeli frecvente. Dacă nu reacționează, dacă e lângă forever, nu în el, sau lipsește forever. Dacă hexagonul e afară, pune condiția în spațiul hexagonal. Dacă se întoarce de o sută de ori, lipsește așteaptă. Dacă ai tastă și mergi constant, ai amestecat metoda A și B.
 
 Proiectul de azi. Atenție la margine.
 

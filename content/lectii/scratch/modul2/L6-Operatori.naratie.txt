@@ -14,7 +14,7 @@ Al treilea pas pe ecran. Comparația doar pe butonul Verifică. Nu în forever. 
 
 Al patrulea pas pe ecran. Calcule. Pe un Bonus sau o stea specială: setează scor la scor plus doi. Sau modifică cu doi. Poți spune scorul cu alătură: Ai, plus ovalul scor. Opțional, Penalty: scor minus unu.
 
-Greșeli frecvente. Dacă lanțul verde e în afara hexagonului, mută totul în dacă. Dacă modifică cu scor plus unu, e dublu. Fie modifică cu unu, fie setează la scor plus unu. Dacă mereu Mai încearcă, ai pus dacă altfel în forever. Mută-l pe click Verifică. Dacă ținta e opt și ai scor mai mare decât opt, optul nu câștigă. Folosește mai mare decât șapte, sau egal cu opt.
+Greșeli frecvente. Dacă lanțul verde e în afara hexagonului, mută totul în dacă. Dacă modifică cu scor plus unu, e dublu. Fie modifică cu unu, fie setează la scor plus unu. Dacă mereu Mai încearcă, ai pus dacă altfel în forever. Mută verificarea pe click Verifică. Dacă ținta e opt și ai scor mai mare decât opt, optul nu câștigă. Folosește mai mare decât șapte, sau egal cu opt.
 
 Proiectul de azi. Ținta de scor.
 

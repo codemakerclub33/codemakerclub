@@ -61,7 +61,7 @@ Astfel personajul se mișcă, **apoi** Scratch verifică dacă a intrat în pere
    - jos → <span style="color:#4C97FF;font-weight:700">schimbă y cu</span> `-5`  
 4. Hexagon: <span style="color:#5CB1D6;font-weight:700">tasta</span> `…` <span style="color:#5CB1D6;font-weight:700">e apăsată?</span>
 
-*Viteză:* 3 = lent, 5 = normal, 8 = rapid. Alege una și ține-o.
+*Viteză:* 3 = lent, 5 = normal, 8 = rapid. Alege o viteză și păstrează aceeași viteză.
 
 *Bine de știut:* dacă ții **două** săgeți deodată (ex. dreapta + sus), personajul merge **pieziș** — e **normal**, nu o greșeală. Cele 4 condiții `dacă` pot fi adevărate în același timp.
 
@@ -107,9 +107,9 @@ Astfel personajul se mișcă, **apoi** Scratch verifică dacă a intrat în pere
 1. **Se mișcă o singură dată** — lipsește bucla `forever`; sau `dacă` e pe „când se apasă tasta” (eveniment) amestecat greșit cu „tasta e apăsată” (detectare). Azi vrem **Detectare** în bucla `forever`.  
 2. **Se mișcă singur** — ai lăsat un `mergi` în bucla `forever` **în afara** condiției `dacă`.  
 3. **X/Y invers** — stânga/dreapta = **x**; sus/jos = **y**.  
-4. **Ciocnire ciudată** — personajul e mare; micșorează-l sau îngroașă pereții.  
+4. **Ciocnire ciudată** — personajul e mare; fă personajul mai mic sau îngroașă pereții.  
 5. **„De ce merge pieziș?”** — două taste odată = diagonală; e intenționat.  
-6. **Peretele nu „simte”** — verificarea e **înainte** de mișcare, sau lipsește din forever; pune-o **după** taste.  
+6. **Peretele nu „simte”** — verificarea e **înainte** de mișcare, sau lipsește din forever; pune verificarea **după** taste.  
 7. **Nume fișier** — `Prenume_Nume_L4`, nu doar `Ana_L4`.
 
 ---

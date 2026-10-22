@@ -8,7 +8,7 @@ De ce contează. Labirinturile se joacă cu tastele. Tiparul e mereu același: s
 
 Primul pas pe ecran. Tiparul de aur. La steag: du-te la start, anulează efectele, oprește sunetele. Forever. Patru dacă separate, nu dacă altfel. Dreapta: schimbă x cu cinci. Stânga: schimbă x cu minus cinci. Sus: schimbă y cu cinci. Jos: schimbă y cu minus cinci. Hexagonul: tasta e apăsată, din Detectare. Ordinea în forever: întâi mișcarea, apoi verificările pe perete sau ieșire.
 
-Al doilea pas pe ecran. Viteza: trei e lent, cinci e normal, opt e rapid. Alege una și ține-o. Dacă ții două săgeți odată, merge pieziș. E normal, nu greșeală.
+Al doilea pas pe ecran. Viteza: trei e lent, cinci e normal, opt e rapid. Alege o viteză și păstrează aceeași viteză. Dacă ții două săgeți odată, merge pieziș. E normal, nu greșeală.
 
 Al treilea pas pe ecran. Mouse, doar demo, Complet opțional. Hexagon: mouse-ul e apăsat. Poți du-te la indicatorul mouse-ului. Labirintul final se joacă cu tastele. Mouse-ul e bine să știi că există.
 
