@@ -76,7 +76,7 @@ Bifezi pe foaie:
 
 ### 5) Prezentarea *(1 minut)*
 Pe foaie, 4 propoziții:
-1. „Problema pe care am vrut s-o rezolv este …”  
+1. „Problema pe care am vrut să o rezolv este …”  
 2. „Produsul meu are … piese: …”  
 3. „Cea mai importantă mărime este … pentru că …”  
 4. „Am folosit din modulul 5: …”
@@ -135,7 +135,7 @@ Pe foaie, 4 propoziții:
 ## Bonus (extra — după Complet)
 - [ ] O a doua variantă a produsului, cu altă mărime  
 - [ ] Textul numelui tău pe produs *(Hole înalt 2 mm, cu 1 mm în piesă: adâncime 1 mm)*  
-- [ ] Pe foaie: ce ai îmbunătăți dacă l-ai printa 3D?
+- [ ] Pe foaie: ce ai îmbunătăți dacă ai printa 3D obiectul?
 
 ## Recapitulare rapidă
 1. Produs bun = **problemă + schiță + cote + joc**  

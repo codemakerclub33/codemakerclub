@@ -115,7 +115,7 @@ Raportul de transmisie arată cât de repede se rotește fiecare roată: **roata
 
 ## Greșeli frecvente
 1. **Dinții nu se potrivesc** — cele două roți au dinți de mărimi diferite. Folosește aceeași mărime.  
-2. **Roțile se suprapun** — le-ai pus prea aproape. Depărtează 0,5 mm.  
+2. **Roțile se suprapun** — ai pus roțile prea aproape. Depărtează 0,5 mm.  
 3. **Roțile sunt prea departe** — se învârt fără să se prindă.  
 4. **Roțile sunt grupate cu placa** — nu se pot mișca. Rămân separate.  
 5. **Ax prea gros** — gaura Ø5,8 e pentru ax Ø5 *(joc 0,4 pe parte)*.  

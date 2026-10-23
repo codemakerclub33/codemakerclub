@@ -33,7 +33,7 @@ Obiectele din jur nu sunt doar formă: o lanternă are și **circuit**. Un desig
 | 0–15 | Cum merge un LED? Anod (+) și catod (−) · de ce rezistor? |
 | 15–50 | Circuits: baterie + rezistor + LED · Start Simulation |
 | 50–90 | Complet: Arduino și blink · SAU carcasa 3D |
-| 90–120 | Carcasa 3D (dacă nu s-a făcut), recap, salvare |
+| 90–120 | Carcasa 3D (dacă nu a fost făcută), recap, salvare |
 
 **Unelte azi:** **Tinkercad Circuits** *(baterie, rezistor, LED, Arduino Uno)* · **Start Simulation** · **Box** · **Cylinder** · **Hole** · **Align** (**L**) · mutare cu **săgețile** · **Ctrl+D** · **Ctrl+G** · **Ctrl+Shift+G**
 

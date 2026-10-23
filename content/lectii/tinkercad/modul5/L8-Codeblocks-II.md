@@ -85,7 +85,7 @@ La 8 etaje: ultimul are lățimea 20 − 14 = **6** și începe la **42**.
 3. Compari: care e mai înalt? Cu cât? *(3 etaje × 6 mm = 18 mm)*
 
 **Gata când:**  
-- [ ] Ai varianta cu **8** etaje și le-ai salvat: `Turn_5` și `Turn_8`  
+- [ ] Ai varianta cu **8** etaje și ai salvat ambele variante: `Turn_5` și `Turn_8`  
 - [ ] Ai comparat înălțimile  
 
 ### 5) Complet — al doilea parametru
@@ -172,4 +172,4 @@ La 8 etaje: ultimul are lățimea 20 − 14 = **6** și începe la **42**.
 - De ce un parametru e mai bun decât să refaci turnul?
 
 ## Temă
-Opțional: alege un obiect de acasă (un pahar, o scară) și scrie ce parametri ar avea dacă l-ai face din cod.
+Opțional: alege un obiect de acasă (un pahar, o scară) și scrie ce parametri ar avea dacă ai face obiectul din cod.

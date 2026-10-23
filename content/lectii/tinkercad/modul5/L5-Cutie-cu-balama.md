@@ -9,7 +9,7 @@
 ---
 
 ## Obiectiv
-La finalul orei ai o **cutie** și un **capac** legate de o **balama cu joc**: știftul trece prin capac fără să-l atingă.  
+La finalul orei ai o **cutie** și un **capac** legate de o **balama cu joc**: știftul trece prin capac fără să îl atingă.  
 **Minim:** cutie **50·40·20** cu pereți **2,4 mm** · capac **50·39,5·3** · balama pe latura din spate: 2 articulații fixe **Ø8·13** pe cutie, o articulație **Ø8·23** pe capac cu gaură **Ø5**, știft **Ø4·50** · între ele **0,5 mm** joc *(pe lături, în spate și deasupra cutiei)* · cele două părți (cutie și capac) rămân **grupuri separate**.  
 **Complet:** Minim + o **adâncitură pentru deget** în capac (Hole **Ø12**) + nume pe capac.
 
@@ -146,7 +146,7 @@ Desenezi cutia **din lateral**: în spate, la înălțimea capacului, un cerc ma
 ---
 
 ## Greșeli frecvente
-1. **Capacul și cutia s-au lipit** — le-ai grupat între ele. Desface și regrupează separat.  
+1. **Capacul și cutia sunt lipite** — ai dat Group între ele. Desface și regrupează separat.  
 2. **Știftul e lipit de capac** — gaura din capac nu e Hole sau nu e Ø5.  
 3. **Articulațiile nu sunt culcate** — din Top se vede un cerc. Rotește 90°.  
 4. **Articulațiile se ating** — golul între ele trebuie să fie 0,5 mm (13,5 față de 13).  

@@ -105,7 +105,7 @@ Dacă schimbi un număr, schimbi tot obiectul: așa gândesc inginerii care fac 
 1. **Cuburile sunt unul peste altul** — lipsește blocul de mutare din buclă.  
 2. **Un singur cub** — blocurile sunt în afara buclei, nu înăuntru.  
 3. **Prea multe cuburi** — ai pus 50 în loc de 5. Resetează.  
-4. **Nu se întâmplă nimic** — n-ai apăsat **Run**.  
+4. **Nu se întâmplă nimic** — nu ai apăsat **Run**.  
 5. **Cuburile se ating** — pasul e 10 sau mai mic. Pune 15.  
 6. **Variabila n nu schimbă nimic** — bucla folosește tot numărul 5, nu variabila.  
 7. **Scara nu crește** — lipsește blocul „h devine h + 5”.
