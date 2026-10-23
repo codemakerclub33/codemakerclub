@@ -1,31 +1,37 @@
 Lecția trei. Plimbarea mea.
 
-Astăzi faci personajul să meargă, să se întoarcă, și la Complet să gliseze pe scenă. Fișierul se numește Prenume, linie jos, Nume, linie jos, L trei.
+Astăzi muți personajele pe scenă: le pui la start, le rotești, le faci să glisească și să se întoarcă unul spre altul. Fișierul se numește Prenume, linie jos, Nume, linie jos, L trei.
 
-Obiectivul. Muți personajul cu blocuri din Mișcare pe un traseu clar, cu reset la steag. Minim: mergi, întoarce și așteaptă, traseu vizibil. Complet: plus glisează, plus un spune la final, cel puțin cinci secunde.
+Obiectivul. La finalul orei muți personaje cu blocuri din Mișcare, cu start clar la steag. Minim: personajul unu, Racheta, cu cel puțin zece blocuri diferite. Complet: personajul doi, Extraterestrul, cu cel puțin opt blocuri diferite, care se uită spre Rachetă.
 
-De ce contează. În jocuri, personajul nu stă pe loc. Merge, se întoarce, alunecă. În Scratch, asta e capitolul Mișcare.
+De ce contează. În jocuri, personajul nu stă pe loc: merge, se rotește, alunecă spre o țintă sau se întoarce spre alt personaj. În Scratch, asta e capitolul Mișcare.
 
-Primul pas pe ecran. Selectezi personajul, nu Scena. La steag orientează-te în direcția nouăzeci, spre dreapta. Apoi: mergi cincizeci de pași, așteaptă zero virgulă cinci, întoarce la dreapta cu nouăzeci de grade, așteaptă, mergi, așteaptă, întoarce, așteaptă, mergi. Obții un traseu cu două cotituri, ca un C întors, pe care îl vezi. Fără așteaptă, totul trece prea repede.
+Capitolele de azi sunt aceleași cinci: Evenimente, Aspect, Mișcare, Control și Sunet. Blocuri noi, toate din Mișcare: mergi la x și y, mergi la poziție aleatoare, orientează-te în direcția, orientează-te spre, rotește-te spre dreapta, rotește-te spre stânga, glisează la x și y, și glisează la poziție aleatoare. Restul blocurilor le ai din lecțiile trecute.
 
-Al doilea pas pe ecran. Adaugi glisează, într-o secundă, spre un punct pe scenă. Mergi înseamnă pași rapizi. Glisează înseamnă alunecare lină, cu timp.
+Primul pas pe ecran. Poziția. Selectezi personajul, nu Scena. Pui steagul, apoi mergi la x minus o sută cincizeci, y minus o sută douăzeci. X înseamnă stânga și dreapta, iar y înseamnă sus și jos. Apoi orientează-te în direcția zero. Zero înseamnă sus, nouăzeci dreapta, o sută optzeci jos, minus nouăzeci stânga. Tragi personajul în alt loc și apeși steagul: se întoarce la start.
 
-Al treilea pas pe ecran. Chiar sub steag, înainte de traseu: du-te la un loc de start, de exemplu x minus o sută cincizeci, y zero. Fără reset, la al doilea steag pleacă de unde a rămas și poate ieși din scenă.
+Al doilea pas pe ecran. Rotește-te. Rotește-te spre dreapta nouăzeci de grade îl întoarce în sensul acelor de ceasornic. Rotește-te spre stânga nouăzeci de grade îl întoarce invers. Exemplu: mergi cincizeci de pași, rotește-te spre dreapta nouăzeci de grade, mergi cincizeci de pași: o cotitură. Între mișcări pui așteaptă zero virgulă cinci, ca să vezi traseul.
 
-Al patrulea pas pe ecran. La capăt: spune Am ajuns, pentru două secunde. Opțional, un sunet scurt.
+Al treilea pas pe ecran. Glisează. Glisează în două secunde la x o sută cincizeci, y o sută douăzeci. Personajul alunecă spre punct, nu sare brusc. Mergi la x și y sare imediat, iar glisează alunecă în timpul ales.
 
-Greșeli frecvente. Dacă nu se mișcă, blocurile sunt pe Scenă. Scena nu merge. Selectează personajul. Dacă dispare, ai prea mulți pași fără du-te la la steag. Dacă traseul trece prea repede, ai uitat așteaptă între mișcări.
+Al patrulea pas pe ecran. Aleatoriu și țintă. Mergi la poziție aleatoare: personajul apare în alt loc la fiecare steag. Glisează la poziție aleatoare: alunecă spre un loc ales de Scratch. Orientează-te spre alt personaj: alegi personajul din listă și personajul se uită spre el. Ai nevoie de două personaje.
+
+Greșeli frecvente. Dacă nu se mișcă, blocurile sunt pe Scenă, iar Scena nu merge: selectează personajul. Dacă dispare de pe scenă, are prea mulți pași: pune mergi la x și y la start. Dacă pleacă din alt loc la al doilea steag, lipsește mergi la x și y chiar sub steag. Dacă se rotește în partea greșită, rotește spre dreapta merge spre dreapta, iar spre stânga merge spre stânga. Dacă orientează-te spre nu face nimic, nu ai ales personajul din listă sau nu ai al doilea personaj. Sunet după sunet sau costum după costum: pune între ele alt bloc. Dacă decorul următor nu duce la Spațiu, în lista de decoruri Spațiu trebuie să fie după Pământ. Dacă ai greșit numele la salvare, adaugă și numele de familie.
 
 Proiectul de azi. Plimbarea mea.
 
-Minim înseamnă: start cu du-te la, plus traseu cu mergi, întoarce și așteaptă. Complet înseamnă: minim, plus glisează, plus spune la final, cel puțin cinci secunde vizibile. Dacă rămâi în urmă, salvează la Minim.
+Minim înseamnă: două decoruri, start pe Pământ, și Racheta cu cel puțin zece blocuri diferite. Complet înseamnă: minim, plus Extraterestrul, cu cel puțin opt blocuri diferite, care se uită spre Rachetă. Dacă rămâi în urmă, salvează la Minim. Nu e eșec.
 
-În proiect, primul pas. La steag: du-te la start și orientează-te nouăzeci.
+În proiect, primul pas, pentru Minim. Locul. Adaugi două decoruri, Pământ și Spațiu, în această ordine. Redenumești personajele ca să le găsești în listă: Racheta, Extraterestrul și Astronautul. Pe Scenă faci scriptul: steagul și schimbă decorul la Pământ.
 
-În proiect, al doilea pas. Cel puțin trei mergi, cel puțin două întoarce, așteaptă între mișcări. Salvezi.
+În proiect, al doilea pas, pentru Minim. Racheta. Alegi o rachetă din bibliotecă, cu cel puțin două costume. La steag: mergi la x minus o sută cincizeci, y minus o sută douăzeci. Apoi orientează-te în direcția zero. Apoi spune Decolăm, două secunde. Apoi pornește un sunet potrivit. Apoi repetă patru, înăuntru mergi treizeci de pași și așteaptă zero virgulă cinci. Apoi rotește-te spre dreapta nouăzeci de grade. Apoi repetă trei, înăuntru mergi patruzeci de pași și așteaptă zero virgulă cinci. Apoi rotește-te spre stânga patruzeci și cinci de grade. Apoi gândește Spre Lună, două secunde. Apoi repetă șase, înăuntru costumul următor și așteaptă zero virgulă trei. Apoi glisează în două secunde la x o sută cincizeci, y o sută douăzeci. La final, schimbă costumul la un costum ales de tine. Este un model: poți schimba textele, numerele și poziția. Nu ai sunet după sunet, nici costum după costum. Salvezi.
 
-În proiect, al treilea pas, pentru Complet. Cel puțin o glisează de aproximativ o secundă. La capăt: spune Am ajuns. Tot traseul se vede cel puțin cinci secunde. Steag din nou, reîncepe din același loc. Salvezi din nou.
+În proiect, al treilea pas, pentru Complet. Extraterestrul. El pornește după Rachetă și se uită spre ea. La steag: așteaptă trei secunde. Apoi mergi la poziție aleatoare. Apoi orientează-te spre Racheta. Apoi spune Salut, rachetă, două secunde. Apoi repetă patru, costumul următor, așteaptă zero virgulă trei. Apoi redă un sunet potrivit, până la final. Apoi glisează în două secunde la poziție aleatoare. Apoi decorul următor. Apoi gândește Ce vizitatori, două secunde. La final, schimbă costumul la un costum ales de tine. Salvezi din nou.
 
-Recapitulare. Mergi înseamnă pași. Întoarce înseamnă direcție. Glisează înseamnă alunecă în timp. Așteaptă te lasă să vezi traseul. Blocurile pe personaj. La steag: du-te la. Numele fișierului are prenumele și numele de familie.
+Bonus. Al treilea personaj, Astronautul, care apare după ceilalți. La steag: așteaptă zece secunde. Apoi mergi la x zero, y minus o sută. Apoi orientează-te spre Extraterestrul. Apoi pornește un sunet potrivit. Apoi spune Bun venit pe Lună, două secunde. Apoi repetă șase, înăuntru rotește-te spre dreapta treizeci de grade și așteaptă zero virgulă trei. Apoi glisează în două secunde la x minus o sută, y zero. Apoi gândește Ce zi, două secunde. La final, schimbă costumul la un costum ales de tine. Provocarea: Racheta desenează un pătrat în aer, cu repetă patru, înăuntru mergi cincizeci de pași și rotește-te spre dreapta nouăzeci de grade.
+
+Recapitulare. Mergi la x și y sare, iar glisează alunecă. Rotește-te spre dreapta și rotește-te spre stânga schimbă direcția. Orientează-te spre face personajul să se uite spre alt personaj. Blocurile sunt pe personaj, iar la steag pui mergi la x și y. Nu ai sunet după sunet, nici costum după costum. Numele fișierului are prenumele și numele de familie.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă Extraterestrul, în același fișier. Dacă ai Complet, adaugi acasă al treilea personaj, în același fișier. Dacă ai terminat și bonusul, faci o copie și schimbi povestea: alte personaje, alte replici, alte poziții.
 
 Succes la plimbarea ta.

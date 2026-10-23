@@ -2,18 +2,18 @@
 **Modulul 1 · Primii pași**  
 **Code Maker Club · Scratch Starter**
 
-> Azi faci personajul să **meargă**, să **se întoarcă** și (la Complet) să **gliseze** pe scenă.  
+> Azi muți personajele pe scenă: le pui la start, le rotești, le faci să glisească și să se întoarcă unul spre altul.  
 > Proiect: **„Plimbarea mea”** · fișier: `Prenume_Nume_L3` (ex. `Ana_Pop_L3`)
 
 ---
 
 ## Obiectiv
-La finalul orei muți personajul cu blocuri din <span style="color:#4C97FF;font-weight:700">Mișcare</span> pe un traseu clar, cu **reset la steag**.  
-**Minim:** `mergi` + `întoarce` + `așteaptă` (traseu vizibil).  
-**Ținta orei (Complet):** + `glisează` + final `spune` / sunet (≥5 secunde).
+La finalul orei muți personaje cu blocuri din <span style="color:#4C97FF;font-weight:700">Mișcare</span>, cu start clar la steag.  
+**Minim:** personajul 1 (Racheta) cu cel puțin **10 blocuri diferite**.  
+**Ținta orei (Complet):** personajul 2 (Extraterestrul), cu cel puțin **8 blocuri diferite**, care se uită spre Rachetă.
 
 ## De ce contează
-În jocuri, personajul nu stă pe loc: merge, se întoarce, alunecă spre o țintă.  
+În jocuri, personajul nu stă pe loc: merge, se rotește, alunecă spre o țintă sau se întoarce spre alt personaj.  
 În Scratch, asta e capitolul <span style="color:#4C97FF;font-weight:700">Mișcare</span> (EN: *Motion*).
 
 ---
@@ -23,150 +23,192 @@ La finalul orei muți personajul cu blocuri din <span style="color:#4C97FF;font-
 | Minute | Ce facem |
 |--------|----------|
 | 0–5 | Obiectiv + unde e capitolul Mișcare |
-| 5–30 | Pas cu pas: **3** mini-verificări (**Încearcă tu**) |
-| 30–100 | Proiectul „Plimbarea mea” (vezi **Minim vs Complet**) |
-| 100–120 | Recap, bonus, salvare |
+| 5–35 | Pas cu pas: **4** mini-verificări (**Încearcă tu**) |
+| 35–105 | Proiectul „Plimbarea mea” (vezi **Minim vs Complet**) |
+| 105–120 | Recap, bonus, salvare |
+
+**Capitole azi (doar acestea 5):**  
+<span style="color:#E6A800;font-weight:700">Evenimente</span> · <span style="color:#9966FF;font-weight:700">Aspect</span> · <span style="color:#4C97FF;font-weight:700">Mișcare</span> · <span style="color:#FFAB19;font-weight:700">Control</span> · <span style="color:#CF63CF;font-weight:700">Sunet</span>  
+*(Detectare, Operatori, Variabile — mai târziu.)*
 
 ---
 
 ## Pas cu pas
 
-### 1) Mergi + întoarce + așteaptă (obligatoriu)
+| Capitol | Ce iei azi |
+|---------|------------|
+| <span style="color:#E6A800;font-weight:700">Evenimente</span> | `când se dă click pe` steagul verde |
+| <span style="color:#4C97FF;font-weight:700">Mișcare</span> | **`mergi la x: y:`**, **`mergi la [poziție aleatoare]`**, **`orientează-te în direcția`**, **`orientează-te spre`**, **`rotește-te ↻`**, **`rotește-te ↺`**, **`glisează … la x: y:`**, **`glisează … la [poziție aleatoare]`**, `mergi` |
+| <span style="color:#9966FF;font-weight:700">Aspect</span> | `schimbă decorul la`, `decorul următor`, `costumul următor`, `spune`, `gândește`, `schimbă costumul la` |
+| <span style="color:#FFAB19;font-weight:700">Control</span> | `repetă`, `așteaptă` |
+| <span style="color:#CF63CF;font-weight:700">Sunet</span> | `pornește sunetul`, `redă sunetul … până la final` |
+
+### 1) Poziția: unde stă și încotro se uită
 1. Selectezi **personajul** (nu Scena)
-2. Din <span style="color:#E6A800;font-weight:700">Evenimente</span>:  
-   <span style="color:#3F8F2A;font-weight:700">când se dă clic pe steagul verde</span>
-3. Din <span style="color:#4C97FF;font-weight:700">Mișcare</span>, chiar sub steag:  
-   <span style="color:#4C97FF;font-weight:700">orientează-te în direcția</span> `90` *(spre dreapta)*
-4. Apoi, pe rând:  
-   <span style="color:#4C97FF;font-weight:700">mergi</span> `50` pași →  
-   <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.5` *(din <span style="color:#FFAB19;font-weight:700">Control</span> — **obligatoriu**, nu opțional)* →  
-   <span style="color:#4C97FF;font-weight:700">întoarce-te la dreapta cu</span> `90` grade →  
-   <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.5` →  
-   <span style="color:#4C97FF;font-weight:700">mergi</span> `50` pași →  
-   <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.5` →  
-   <span style="color:#4C97FF;font-weight:700">întoarce-te la dreapta cu</span> `90` grade →  
-   <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.5` →  
-   <span style="color:#4C97FF;font-weight:700">mergi</span> `50` pași
-5. Apeși steagul — traseu cu 2 cotituri (ca un **C** întors), pe care îl **vezi** (nu o clipire rapidă)
+2. Din <span style="color:#E6A800;font-weight:700">Evenimente</span>: <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>
+3. Din <span style="color:#4C97FF;font-weight:700">Mișcare</span>: <span style="color:#4C97FF;font-weight:700">mergi la x:</span> `-150` <span style="color:#4C97FF;font-weight:700">y:</span> `-120` *(x = stânga–dreapta, y = sus–jos; le vezi sub scenă când tragi personajul)*
+4. Apoi: <span style="color:#4C97FF;font-weight:700">orientează-te în direcția</span> `0` *(0 = sus, 90 = dreapta, 180 = jos, -90 = stânga)*
+5. Tragi personajul în alt loc și apeși steagul: se întoarce la start
 
-Fără `așteaptă`, cele 3 `mergi` durează sub o secundă — nu poți urmări traseul.
+**Încearcă tu — poziție (2–3 min)**  
+- [ ] Scriptul e pe **personaj**  
+- [ ] La steag personajul pleacă mereu din **același** loc  
+- [ ] Schimbi direcția (`90`, `180`) și vezi încotro se uită  
 
-**Încearcă tu — traseu cu cotituri (3–4 min)**  
-- [ ] Script pe **personaj**  
-- [ ] ≥ **3** `mergi` + ≥ **2** `întoarce`  
-- [ ] `așteaptă` `0.5` **între** mișcări  
-- [ ] Se vede clar forma traseului  
+### 2) Rotește-te
+1. <span style="color:#4C97FF;font-weight:700">rotește-te ↻</span> `90` grade — se întoarce spre **dreapta** (în sensul acelor de ceasornic)
+2. <span style="color:#4C97FF;font-weight:700">rotește-te ↺</span> `90` grade — se întoarce spre **stânga**
+3. Exemplu: <span style="color:#4C97FF;font-weight:700">mergi</span> `50` pași → <span style="color:#4C97FF;font-weight:700">rotește-te ↻</span> `90` grade → <span style="color:#4C97FF;font-weight:700">mergi</span> `50` pași = o cotitură
+4. Între mișcări pui <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,5`, ca să vezi traseul
 
-### 2) Glisează (mișcare lină)
-1. Tot pe personaj, **după** traseu (sub ultimul `mergi`):  
-   <span style="color:#4C97FF;font-weight:700">glisează</span> în `1` secundă la `x:` `100` `y:` `0`
-2. Personajul **alunecă** spre punct — nu sare brusc
-3. Compară: `mergi` = pași rapizi · `glisează` = timp + loc
+**Încearcă tu — rotire (3–4 min)**  
+- [ ] Personajul face o cotitură la dreapta și una la stânga  
+- [ ] Se vede traseul (cu `așteaptă` între mișcări)  
 
-*(Numerele `x` / `y` = unde pe scenă. Azi le schimbi din bloc; la L7 le înveți pe îndelete.)*
+### 3) Glisează
+1. <span style="color:#4C97FF;font-weight:700">glisează în</span> `2` <span style="color:#4C97FF;font-weight:700">secunde la x:</span> `150` <span style="color:#4C97FF;font-weight:700">y:</span> `120`
+2. Personajul **alunecă** spre punct, nu sare brusc
+3. Compară: <span style="color:#4C97FF;font-weight:700">mergi la x: y:</span> = **sare** imediat · <span style="color:#4C97FF;font-weight:700">glisează</span> = **alunecă** în timpul ales
 
 **Încearcă tu — glisează (2 min)**  
-- [ ] Ai cel puțin **1** `glisează` de ~1 secundă  
-- [ ] Vezi diferența față de `mergi`  
+- [ ] Ai un `glisează` de câteva secunde  
+- [ ] Vezi diferența față de `mergi la x: y:`  
 
-### 3) Reset: du-te la start
-1. **Chiar sub** steag, **înainte** de traseu:  
-   <span style="color:#4C97FF;font-weight:700">du-te la x:</span> `-150` <span style="color:#4C97FF;font-weight:700">y:</span> `0`  
-   *(sau tragi personajul în colțul stâng și citești x/y din panoul de jos)*
-2. Apoi: orientare `90` → traseu (`mergi` / `întoarce` / `așteaptă` / `glisează`)
-3. Fără reset, la al doilea steag pleacă de unde a rămas — și iese din scenă
+### 4) Aleatoriu și țintă
+1. <span style="color:#4C97FF;font-weight:700">mergi la [poziție aleatoare]</span> — personajul apare în alt loc la fiecare steag
+2. <span style="color:#4C97FF;font-weight:700">glisează în … secunde la [poziție aleatoare]</span> — alunecă spre un loc ales de Scratch
+3. <span style="color:#4C97FF;font-weight:700">orientează-te spre</span> `[alt personaj]` — alegi personajul din listă; se uită spre el *(ai nevoie de 2 personaje)*
 
-**Încearcă tu — reset (1–2 min)**  
-- [ ] Steag de **două** ori: începe din **același** loc  
-- [ ] Salvat: `Prenume_Nume_L3`  
-
-### 4) Final clar
-1. La capătul traseului:  
-   <span style="color:#9966FF;font-weight:700">spune</span> `Am ajuns!` pentru `2` secunde
-2. Opțional: un <span style="color:#CF63CF;font-weight:700">sunet</span> scurt
-
-
-**Încearcă tu — final (1 min)**  
-- [ ] La capătul traseului apare `Am ajuns!`  
-- [ ] Mesajul se vede cel puțin **2** secunde  
+**Încearcă tu — aleatoriu și țintă (3–4 min)**  
+- [ ] La fiecare steag personajul ajunge în alt loc  
+- [ ] Un personaj se uită spre celălalt  
 
 ---
 
 ## Greșeli frecvente
 1. **Nu se mișcă** — blocurile sunt pe **Scenă**; Scena nu „merge”. Selectează personajul.  
-2. **Dispare de pe scenă** — prea mulți pași fără `du-te la` la steag.  
-3. **Se învârte haotic** — lipsește `orientează-te în direcția` `90` la start.  
-4. **Capul în jos** — stil rotație „toate direcțiile”; în Mișcare, schimbă pe **stânga-dreapta**.  
-5. **Traseul trece prea repede (&lt;5 sec)** — ai uitat `așteaptă` între `mergi` / `întoarce`.  
-6. **Nume fișier** — `Prenume_Nume_L3`, nu doar `Ana_L3`.
+2. **Dispare de pe scenă** — prea mulți pași; pune `mergi la x: y:` la start.  
+3. **Pleacă din alt loc la al doilea steag** — lipsește `mergi la x: y:` chiar sub steag.  
+4. **Se rotește în partea greșită** — `↻` merge spre dreapta, `↺` spre stânga.  
+5. **`orientează-te spre` nu face nimic** — nu ai ales personajul din listă sau nu ai al doilea personaj.  
+6. **Sunet după sunet / costum după costum** — pune între ele alt bloc.  
+7. **`decorul următor` nu duce la `Spațiu`** — în lista de decoruri `Spațiu` trebuie să fie după `Pământ`.  
+8. **Nume fișier** — `Prenume_Nume_L3`, nu doar `Ana_L3`.
 
 ---
 
 ## De făcut azi — „Plimbarea mea”
 Salvat: `Prenume_Nume_L3`
 
-### Minim vs Complet
+### Minim vs Complet *(citește înainte să începi)*
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | **Pasul 1 + Pasul 2** — start cu `du-te la` + traseu cu `mergi` + `întoarce` + `așteaptă` |
-| **Complet (ținta orei)** | Minim + **Pasul 3** — `glisează` + final `spune` (≥5 secunde vizibile) |
+| **Minim („am reușit”)** | **Pasul 1 + Pasul 2** — 2 decoruri, start pe `Pământ` + **Racheta** cu ≥ 10 blocuri diferite |
+| **Complet (ținta orei)** | Minim + **Extraterestrul** cu ≥ 8 blocuri diferite, care se uită spre Rachetă |
 
-Dacă rămâi în urmă: salvează la **Minim**.  
+Dacă rămâi în urmă: salvează la **Minim**. Nu e eșec.  
 Cei rapizi: Complet, apoi Bonus.
 
-### Pasul 1 — Startul
-- [ ] Personaj pe scenă  
-- [ ] La steag: <span style="color:#4C97FF;font-weight:700">du-te la</span> un loc de start clar + `orientează-te` `90`  
+### Pasul 1 — Locul *(Minim)*
+Adaugi 2 decoruri, `Pământ` și `Spațiu` (în această ordine). Redenumești personajele ca să le găsești în listă: `Racheta`, `Extraterestrul`, `Astronautul`. Pe **Scenă** faci scriptul:
 
-### Pasul 2 — Traseu simplu *(parte din Minim)*
-*(Ca la „Încearcă tu — traseu cu cotituri”.)*
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#9966FF;font-weight:700">schimbă decorul la</span> `Pământ`  
 
-- [ ] ≥ **3** <span style="color:#4C97FF;font-weight:700">mergi</span>  
-- [ ] ≥ **2** <span style="color:#4C97FF;font-weight:700">întoarce</span>  
-- [ ] <span style="color:#FFAB19;font-weight:700">așteaptă</span> **între** mișcări (obligatoriu)  
+- [ ] 2 decoruri, `Pământ` primul și `Spațiu` al doilea  
+- [ ] Scriptul e pe **Scenă**  
+
+### Pasul 2 — Racheta *(Minim)*
+Alegi o rachetă din bibliotecă (categoria Spațiu), cu cel puțin 2 costume. Ordinea e un **model**: poți schimba textele, numerele și poziția.
+
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#4C97FF;font-weight:700">mergi la x:</span> `-150` <span style="color:#4C97FF;font-weight:700">y:</span> `-120`  
+<span style="color:#4C97FF;font-weight:700">orientează-te în direcția</span> `0`  
+<span style="color:#9966FF;font-weight:700">spune</span> `Decolăm!` pentru `2` secunde  
+<span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(un sunet potrivit)*  
+<span style="color:#FFAB19;font-weight:700">repetă</span> `4` → <span style="color:#4C97FF;font-weight:700">mergi</span> `30` pași → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,5`  
+<span style="color:#4C97FF;font-weight:700">rotește-te ↻</span> `90` grade  
+<span style="color:#FFAB19;font-weight:700">repetă</span> `3` → <span style="color:#4C97FF;font-weight:700">mergi</span> `40` pași → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,5`  
+<span style="color:#4C97FF;font-weight:700">rotește-te ↺</span> `45` grade  
+<span style="color:#9966FF;font-weight:700">gândește</span> `Spre Lună!` pentru `2` secunde  
+<span style="color:#FFAB19;font-weight:700">repetă</span> `6` → <span style="color:#9966FF;font-weight:700">costumul următor</span> → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
+<span style="color:#4C97FF;font-weight:700">glisează în</span> `2` <span style="color:#4C97FF;font-weight:700">secunde la x:</span> `150` <span style="color:#4C97FF;font-weight:700">y:</span> `120`  
+<span style="color:#9966FF;font-weight:700">schimbă costumul la</span> *(un costum ales de tine)*  
+
+- [ ] `schimbă costumul la` **nu** stă lângă `costumul următor`  
+- [ ] Nu ai sunet după sunet, nici costum după costum  
+- [ ] Steag din nou → pleacă din același loc  
 - [ ] Salvat: `Prenume_Nume_L3`  
 
-**→ Minim când:** un coleg vede un traseu cu întoarceri, nu o clipire rapidă.
+**→ Minim când:** steagul pornește pe `Pământ`, iar Racheta decolează, face cotituri și alunecă spre Lună.
 
-### Pasul 3 — Glisează + final *(Complet)*
-*(Ca la „Încearcă tu — glisează” + final.)*
+### Pasul 3 — Extraterestrul *(Complet)*
+Alegi un extraterestru sau alt personaj. El pornește după Rachetă și se uită spre ea:
 
-- [ ] ≥ **1** <span style="color:#4C97FF;font-weight:700">glisează</span> (~1 secundă)  
-- [ ] La capăt: <span style="color:#9966FF;font-weight:700">spune</span> `Am ajuns!` (sau mesaj scurt)  
-- [ ] Tot traseul se vede ≥ **5 secunde** (cu `așteaptă` + `glisează` + `spune`)  
-- [ ] Steag din nou → **reîncepe** din același loc  
-- [ ] Salvat din nou  
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#FFAB19;font-weight:700">așteaptă</span> `3` secunde  
+<span style="color:#4C97FF;font-weight:700">mergi la [poziție aleatoare]</span>  
+<span style="color:#4C97FF;font-weight:700">orientează-te spre</span> `Racheta`  
+<span style="color:#9966FF;font-weight:700">spune</span> `Salut, rachetă!` pentru `2` secunde  
+<span style="color:#FFAB19;font-weight:700">repetă</span> `4` → <span style="color:#9966FF;font-weight:700">costumul următor</span> → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
+<span style="color:#CF63CF;font-weight:700">redă sunetul</span> *(un sunet potrivit)* până la final  
+<span style="color:#4C97FF;font-weight:700">glisează în</span> `2` <span style="color:#4C97FF;font-weight:700">secunde la [poziție aleatoare]</span>  
+<span style="color:#9966FF;font-weight:700">decorul următor</span>  
+<span style="color:#9966FF;font-weight:700">gândește</span> `Ce vizitatori!` pentru `2` secunde  
+<span style="color:#9966FF;font-weight:700">schimbă costumul la</span> *(un costum ales de tine)*  
 
-**Gata Complet când:** un coleg urmărește de unde a plecat și unde a ajuns, fără explicație.
+- [ ] La fiecare steag apare în alt loc  
+- [ ] Se uită spre Rachetă  
+- [ ] Decorul trece la `Spațiu`  
+- [ ] Salvat din nou: `Prenume_Nume_L3`  
+
+**Gata Complet când:** un coleg vede decolarea, extraterestrul care vine spre rachetă și trecerea la `Spațiu`, fără explicație cu vocea.
 
 ---
 
 ## Bonus (dacă ai terminat Complet)
-- [ ] Un **tur** pe scenă: stânga → sus → dreapta → jos (înapoi la start)  
-- [ ] Al 2-lea personaj cu **același** traseu:  
-  tragi scriptul (stiva de blocuri) **peste iconița** celuilalt personaj, în lista de jos din dreapta — Scratch îl **copiază**.  
-  *(Nu rescrii tot de mână.)*  
-- [ ] La click pe personaj (`când se dă clic pe acest personaj` — tot **Evenimente**, ca steagul): un salt mic (`mergi` înainte / înapoi) și revine  
-- [ ] ★★★ **Provocare:** Desenează pe foaie un traseu în formă de literă (L, Z sau U) și fă personajul să parcurgă exact traseul, cu `mergi` și `întoarce`.
+- [ ] **Al 3-lea personaj** (Astronautul), care apare după ceilalți:
+
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#FFAB19;font-weight:700">așteaptă</span> `10` secunde  
+<span style="color:#4C97FF;font-weight:700">mergi la x:</span> `0` <span style="color:#4C97FF;font-weight:700">y:</span> `-100`  
+<span style="color:#4C97FF;font-weight:700">orientează-te spre</span> `Extraterestrul`  
+<span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(un sunet potrivit)*  
+<span style="color:#9966FF;font-weight:700">spune</span> `Bun venit pe Lună!` pentru `2` secunde  
+<span style="color:#FFAB19;font-weight:700">repetă</span> `6` → <span style="color:#4C97FF;font-weight:700">rotește-te ↻</span> `30` grade → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
+<span style="color:#4C97FF;font-weight:700">glisează în</span> `2` <span style="color:#4C97FF;font-weight:700">secunde la x:</span> `-100` <span style="color:#4C97FF;font-weight:700">y:</span> `0`  
+<span style="color:#9966FF;font-weight:700">gândește</span> `Ce zi!` pentru `2` secunde  
+<span style="color:#9966FF;font-weight:700">schimbă costumul la</span> *(un costum ales de tine)*  
+
+- [ ] ★★★ **Provocare:** Racheta desenează un pătrat în aer, cu <span style="color:#FFAB19;font-weight:700">repetă</span> `4` → <span style="color:#4C97FF;font-weight:700">mergi</span> `50` pași → <span style="color:#4C97FF;font-weight:700">rotește-te ↻</span> `90` grade
 
 ## Recapitulare rapidă
-1. `mergi` = pași · `întoarce` = direcție · `glisează` = alunecă în timp  
-2. `așteaptă` = vezi traseul (fără el = prea repede)  
-3. Blocurile pe **personaj**; la steag: `du-te la`  
-4. Nume: **`Prenume_Nume_L3`**  
+1. `mergi la x: y:` **sare** · `glisează` **alunecă**  
+2. `rotește-te ↻` = dreapta · `rotește-te ↺` = stânga  
+3. `orientează-te spre` = se uită spre alt personaj  
+4. Blocurile sunt pe **personaj**; la steag: `mergi la x: y:`  
+5. Nu ai sunet după sunet, nici costum după costum  
+6. Nume: **`Prenume_Nume_L3`**  
 
 ## Schema pe scurt *(pe foaie)*
 
-**Pe Personaj**  
-la steag → `du-te la` start →  
-`mergi` … → `așteaptă` … → `întoarce-te` … → `mergi` …  
-*(Complet: + `glisează` + `spune Am ajuns!`)*
+**Pe Scenă**  
+la steag → `schimbă decorul la` Pământ
+
+**Pe Rachetă**  
+la steag → `mergi la x: y:` → `orientează-te în direcția` → `spune` → `pornește sunetul` → `repetă` (`mergi` + `așteaptă`) → `rotește-te ↻` → `repetă` (`mergi` + `așteaptă`) → `rotește-te ↺` → `gândește` → `repetă` (`costumul următor` + `așteaptă`) → `glisează` → `schimbă costumul la`
+
+**Pe Extraterestru**  
+la steag → `așteaptă` → `mergi la [aleatoare]` → `orientează-te spre` → `spune` → `repetă` (`costumul următor` + `așteaptă`) → `redă sunetul` → `glisează la [aleatoare]` → `decorul următor` → `gândește` → `schimbă costumul la`
 
 **Quiz scurt (cu profesorul):**  
-- Unde lipești blocurile de mișcare?  
-- De ce `du-te la` la început?  
-- De ce e obligatoriu `așteaptă`?
+- Care e diferența între `mergi la x: y:` și `glisează`?  
+- Ce face `rotește-te ↻`?  
+- Ce face `orientează-te spre`?  
+- De ce punem `mergi la x: y:` chiar sub steag?
 
-## Temă
-Opțional: dacă ai doar Minim, adaugi acasă `glisează` + `Am ajuns!` — același `Prenume_Nume_L3`.
+## Temă (opțional)
+- Dacă ai doar Minim: adaugi acasă Extraterestrul, în același `Prenume_Nume_L3`.  
+- Dacă ai Complet: adaugi acasă al 3-lea personaj, în același `Prenume_Nume_L3`.  
+- Dacă ai terminat și Bonusul: faci o copie și schimbi povestea (alte personaje, alte replici, alte poziții).
