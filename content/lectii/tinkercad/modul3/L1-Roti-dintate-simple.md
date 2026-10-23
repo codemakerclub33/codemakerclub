@@ -137,7 +137,7 @@ Ca să se potrivească, dinții unei roți trebuie să intre în **golurile** ce
 2. **Roțile se calcă una pe alta** — distanța dintre pivoturi e prea mică. Păstrează **50 mm**.  
 3. **Roțile sunt prea departe** — se văd goluri mari între dinți. Mută a doua roată înapoi la 50 mm.  
 4. **Dintele e doar pe o parte** — bara nu e centrată. Selectezi bara și discul, **L**, mijloc pe ambele direcții.  
-5. **Roata e prinsă de placă** — n-ai ridicat-o cu 5 mm sau ai dat Group cu placa. Roțile rămân **separate**.  
+5. **Roata e prinsă de placă** — nu ai ridicat roata cu 5 mm sau ai dat Group cu placa. Roțile rămân **separate**.  
 6. **Gaura nu trece** — Hole-ul nu a fost grupat. **Ctrl+A** pe roată, apoi **Ctrl+G**.  
 7. **Am grupat tot** — **Ctrl+Shift+G** și refaci doar ce trebuie: roțile separate, pivoturile cu placa.
 

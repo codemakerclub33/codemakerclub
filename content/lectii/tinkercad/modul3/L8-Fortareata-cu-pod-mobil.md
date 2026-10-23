@@ -134,7 +134,7 @@ Axul e prins în zid; podul e separat și se poate roti pe el.
 3. **Axul nu trece prin butuc** — gaura e prea mică (nu 5 mm) sau butucul nu e aliniat cu axul (la pasul 5.4 selectezi toate trei).  
 4. **Axul plutește în poartă** — e mai scurt decât 24 mm și nu atinge pereții laterali. Păstrează 24.  
 5. **Podul intră în podea** — ai uitat să ridici grupul temporar cu 4 mm (axul trebuie să fie la 9 mm de plan).  
-6. **Crenelurile taie turnurile** — le-ai pus prea aproape de capete. Păstrează mijlocul zidului.  
+6. **Crenelurile taie turnurile** — ai pus crenelurile prea aproape de capete. Păstrează mijlocul zidului.  
 7. **Poarta nu taie zidul** — lipsește **Ctrl+G** sau poarta nu e Hole.
 
 ---

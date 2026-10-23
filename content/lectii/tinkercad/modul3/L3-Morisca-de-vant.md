@@ -119,11 +119,11 @@ Capacul de sus împiedică rotorul să iasă. Același principiu ca la roțile m
 ## Greșeli frecvente
 1. **Rotorul e lipit de stâlp** — ai dat Group cu el. Rotorul rămâne **separat**.  
 2. **Paletele nu sunt în cruce** — a doua bară nu e rotită cu 90°.  
-3. **Rotorul nu stă centrat** — n-ai aliniat pe ambele direcții de pe plan.  
+3. **Rotorul nu stă centrat** — nu ai aliniat pe ambele direcții de pe plan.  
 4. **Rotorul atinge baza** — ridică-l la 40 mm.  
 5. **Rotorul nu mai e pe stâlp** — gaura e prea mică (nu 9 mm) sau ai aliniat pe înălțime.  
 6. **Capacul e prea mic** — 14 mm e mai larg decât stâlpul; dacă faci 8 mm, rotorul poate ieși.  
-7. **Cele 8 palete nu sunt egale** — le-ai rotit „cu ochiul”. Șterge copiile și rotește de fiecare dată **exact 45°** (2 pași de 22,5°).
+7. **Cele 8 palete nu sunt egale** — ai rotit fiecare copie „cu ochiul”. Șterge copiile și rotește de fiecare dată **exact 45°** (2 pași de 22,5°).
 
 ---
 

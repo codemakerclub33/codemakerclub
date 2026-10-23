@@ -89,7 +89,7 @@ Planul pe hârtie te scutește să muți pereții de zece ori.
 1. **Sphere** **10 · 10 · 10**  
 2. **L** cu marcajul de start (mijloc pe cele două direcții de pe plan)  
 3. O ridici cu conul negru la **5 mm** — stă pe marcajul de start  
-4. **Ctrl+A** pe tot ce e labirint, **fără bilă** (Shift+click pe bilă ca s-o scoți) → **Ctrl+G**
+4. **Ctrl+A** pe tot ce e labirint, **fără bilă** (Shift+click pe bilă ca să o scoți) → **Ctrl+G**
 
 **Gata când:**  
 - [ ] Bila (**10 mm**) stă pe marcajul de start  

@@ -96,7 +96,7 @@ Copiezi baza o dată, apoi construiești fiecare piesă pe ea.
 
 ## Greșeli frecvente
 1. **Piesele nu au aceeași bază** — ai făcut baze de mărimi diferite. Copiază **aceeași** bază, nu face una nouă.  
-2. **Capul plutește** — n-ai ridicat sfera la 14 mm; din **Front** trebuie să atingă gâtul.  
+2. **Capul plutește** — nu ai ridicat sfera la 14 mm; din **Front** trebuie să atingă gâtul.  
 3. **Crenelurile nu taie** — Hole-urile n-au fost grupate cu turnul.  
 4. **Crenelurile taie prea adânc** — Hole-ul e prea jos; ridică-l cu conul negru.  
 5. **Am grupat toate piesele** — Ungroup: fiecare piesă se grupează **singură**, cu baza ei.  

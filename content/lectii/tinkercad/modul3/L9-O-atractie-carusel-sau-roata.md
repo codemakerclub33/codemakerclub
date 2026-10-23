@@ -129,7 +129,7 @@ Repetarea stâlpilor în cerc o faci cu **Ctrl+D + rotire**, ca la morișcă și
 
 ## Greșeli frecvente
 1. **Stâlpii nu sunt în cerc** — bara nu e centrată pe platformă. Aliniază stâlpul cu platforma înainte de a-l muta.  
-2. **Rotorul s-a lipit de stâlp** — Group cu baza. Rotorul rămâne separat.  
+2. **Rotorul e lipit de stâlp** — Group cu baza. Rotorul rămâne separat.  
 3. **Scaunele sunt la înălțimi diferite** — fiecare scaun a fost ridicat separat. Ridică-l **o dată** (10 mm), înainte de Ctrl+D.  
 4. **Acoperișul nu atinge stâlpii** — ridică-l la 35 mm.  
 5. **Gaura nu trece prin acoperiș** — nu e destul de înaltă (70 mm) sau ai ridicat-o de la plan.  

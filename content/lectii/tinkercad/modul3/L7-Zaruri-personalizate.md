@@ -122,9 +122,9 @@ Ca să pui punctele exact, faci câte o **pereche de fețe** odată, într-un si
 ---
 
 ## Greșeli frecvente
-1. **Punctele nu se văd** — Hole-ul nu iese în afară sau n-ai dat Group.  
+1. **Punctele nu se văd** — Hole-ul nu iese în afară sau nu ai dat Group.  
 2. **Punctele sunt prea adânci** — Hole-ul e prea jos; 2 mm adâncime e bine.  
-3. **Perechea nu a ajuns pe fețele laterale** — n-ai rotit grupul sau nu ai centrat toate piesele cu **L**.  
+3. **Perechea nu a ajuns pe fețele laterale** — nu ai rotit grupul sau nu ai centrat toate piesele cu **L**.  
 4. **Două fețe cu același număr** — ai rotit aceeași pereche de două ori. Verifică toate cele 6 fețe.  
 5. **Punctele ies din față** — mai mult de 10 mm de centru. Păstrează 10 mm.  
 6. **Am grupat punctele cu cubul prea devreme** — grupează întâi cele 7 puncte între ele, apoi cu cubul.  

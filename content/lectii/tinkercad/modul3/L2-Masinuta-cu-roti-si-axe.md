@@ -125,7 +125,7 @@ Azi avem joc de **1 mm pe parte**: gaura 7, axul 5.
 3. **Axul nu trece prin caroserie** — găurile nu sunt Hole sau lipsește **Ctrl+G** la caroserie; sau ai aliniat și pe înălțime și axul a coborât.  
 4. **Roțile intră în caroserie** — axul e prea scurt. Păstrează **52** (36 + 2×8: capetele ies afară, cu roțile).  
 5. **Roțile nu ating planul** — ai uitat **D** pe prima roată.  
-6. **Caroseria atinge planul** — n-ai ridicat-o cu 6 mm.  
+6. **Caroseria atinge planul** — nu ai ridicat caroseria cu 6 mm.  
 7. **Am aliniat setul pe înălțime** — Ctrl+Z; la pasul 6 aliniezi **doar** stânga–dreapta și față–spate.  
 8. **Roțile s-au mutat de pe ax** — nu ai selectat axul și **ambele** roți la același **L**. Refă pasul 4.
 

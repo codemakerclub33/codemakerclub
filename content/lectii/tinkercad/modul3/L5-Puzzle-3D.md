@@ -101,8 +101,8 @@ Un dop **asimetric** (al doilea, mai mic) arată cum pui piesa: nu se poate înt
 ---
 
 ## Greșeli frecvente
-1. **Piesa B s-a lipit de A** — ai selectat și A la Group. Locașul se grupează **doar** cu B.  
-2. **Locașul nu taie** — nu e Hole, sau n-ai dat Group.  
+1. **Piesa B e lipită de A** — ai selectat și A la Group. Locașul se grupează **doar** cu B.  
+2. **Locașul nu taie** — nu e Hole, sau nu ai dat Group.  
 3. **Dopul nu intră** — locașul e prea mic. Folosește **16,4**, nu 16.  
 4. **Joc prea mare** — dacă faci 20, piesele se mișcă prea tare. 16,4 e potrivit.  
 5. **Dopul e lipit de piesa B** — A și B trebuie să fie separate; B se mută singură.  
