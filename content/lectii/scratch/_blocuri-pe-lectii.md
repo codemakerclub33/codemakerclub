@@ -61,3 +61,34 @@ Total: 51 de blocuri vizibile în capturi, plus 2 condiții din Detectare. Fieca
 
 ## Ordinea de lucru
 L1 → L2 (gata, de aliniat la plan) → L3 → L4 → L5 → L6 → L7 → L8 → L9 → L10. O lecție pe rând, cu aprobare.
+
+## Structura universală a lecțiilor Scratch (document INTERN, valabil L1–L10)
+
+1. **Antet:** titlu, modul, „Code Maker Club · Scratch Starter”, citat scurt cu ce faci azi și numele fișierului (`Prenume_Nume_L#`).
+2. **Obiectiv:** ce ai la final. Minim = personajul 1 (cu numărul de blocuri). Complet = personajul 2 (cu numărul de blocuri).
+3. **De ce contează** (2–3 rânduri).
+4. **Planul orei** (120 minute, tabel).
+5. **Capitole azi:** capitolele folosite și ce rămâne pentru mai târziu.
+6. **Pas cu pas** (doar blocurile noi, fiecare pas cu „Încearcă tu”):
+   - tabelul „Capitol / Ce iei azi” (blocurile noi îngroșate)
+   - câte un pas pentru fiecare grup de blocuri noi
+   - regulile de combinare, când sunt necesare (ex. „Nu ai sunet după sunet, nici costum după costum”)
+7. **Greșeli frecvente** (4–7 puncte).
+8. **De făcut azi** (titlul proiectului):
+   - Minim vs Complet (tabel)
+   - Pasul 1: scena sau personajul 1, cu script-model (Minim)
+   - Pasul 2: personajul 2, cu script-model (Complet)
+   - „Gata Complet când: …”
+9. **Bonus:** personajul 3 cu script-model + ★★★ Provocare.
+10. **Recapitulare rapidă** (4–6 puncte).
+11. **Schema pe scurt** (pe foaie, pe personaje) + **Quiz scurt**.
+12. **Exemplu pe Scratch** (iframe, la final, dacă există).
+13. **Temă (opțional):** 3 rânduri (doar Minim / Complet / Bonus terminat).
+
+### Reguli care se aplică peste tot
+- Numărul de blocuri apare doar în **Obiectiv** și în tabelul **Minim vs Complet**.
+- Scripturile-model sunt doar în „De făcut azi” și în Bonus. „Pas cu pas” doar învață blocurile.
+- Nu apar numărul lecției și regula cu lecțiile anterioare.
+- Personajul 1 învață blocurile noi, personajul 2 recapitulează.
+- Nu folosim „Exemplu de timp” (tabel cu secunde); sincronul se vede din `așteaptă` în scripturi.
+- Narațiunea urmează aceeași ordine, cu numerele scrise cu litere și fără simboluri.
