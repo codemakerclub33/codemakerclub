@@ -6,7 +6,7 @@ Obiectivul. Un coleg termină fluxul fără ajutor, iar tu explici regulile în 
 
 De ce contează. Lecția unu e baza jocului. Lecția șase termini. Lecția șapte repari și îmbunătățești. Fără final, restart și ideea specială A sau B închisă, nu ești gata de prezentare.
 
-Primul pas pe ecran. Deschizi Prenume, Nume, M patru, L unu, sau copia L șase. Pe foaie: ce merge, ce lipsește față de Minim. Confirmi ideea specială: A nivele, sau B doi jucători. Dacă baza jocului L unu e incomplet, primele minute ajungi la interacțiune plus ideea specială început, apoi checklist-ul de azi.
+Primul pas pe ecran. Deschizi Prenume, Nume, M patru, L unu, sau copia L șase. Pe foaie: ce merge, ce lipsește față de Minim. Confirmi ideea specială: A nivele, sau B doi jucători. Dacă baza jocului L unu e incompletă, primele minute ajungi la interacțiune plus începutul ideii speciale, apoi checklist-ul de azi.
 
 Al doilea pas pe ecran. Nucleul produsului. Start: steag și, ideal, buton Start. Mijloc: jocul, povestea sau quiz-ul e greu pe bune, nu ecran gol. Final: victorie, Sfârșitul jocului, scenă finală sau scor final, clar pe scenă. Restart: resetează scor, vieți, timp, nivel, poziții, mesaje, clone, sunete. Steag de două ori, totul curat.
 

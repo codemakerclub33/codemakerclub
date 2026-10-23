@@ -4,7 +4,7 @@ Astăzi construiești un quiz pe runde: scor pe scenă, reacție, trecere Runda 
 
 Obiectivul. Cineva termină ambele runde fără ajutor și vede scorul final. Minim: cel puțin șase întrebări, două runde vizibile, scor pe scenă, reacție la corect și la greșit, nu poți sări întrebarea, mesaj final X din N, steag egal restart Runda unu. Complet: minim, plus Runda trei, sau vieți cu trei greșeli egal Sfârșitul jocului, sau timer pe o întrebare.
 
-De ce contează. Quiz-ul e nivele de întrebări. Aceleași idei ca trecerea de nivel și scorul pe scenă din Modulul trei. Dacă tipul tău la bază e quiz, azi e antrenamentul pentru lecția șase.
+De ce contează. Quiz-ul înseamnă nivele de întrebări. Aceleași idei ca trecerea de nivel și scorul pe scenă din Modulul trei. Dacă tipul tău la bază e quiz, azi e antrenamentul pentru lecția șase.
 
 Primul pas pe ecran. Pe foaie, cinci minute: șase linii cu răspunsul corect, Runda unu ușor, Runda doi greu. Textul lung al întrebării îl pui în Scratch.
 
@@ -26,6 +26,6 @@ Minim înseamnă: șase întrebări, două runde, scor, reacție la corect și l
 
 În proiect, al treilea pas, pentru Complet. Extinzi presiunea. Salvezi din nou.
 
-Recapitulare. Rundă egal nivel de întrebări. Scor pe Scenă. Părere la corect și greșit. Fișier M patru L trei. Numele fișierului are prenumele, numele, M patru și L trei.
+Recapitulare. Rundă egal nivel de întrebări. Scor pe Scenă. Reacție la corect și greșit. Fișier M patru L trei. Numele fișierului are prenumele, numele, M patru și L trei.
 
 Succes la quiz-ul tău pe runde.

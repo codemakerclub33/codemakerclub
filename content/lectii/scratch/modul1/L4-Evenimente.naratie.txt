@@ -14,7 +14,7 @@ Al treilea pas pe ecran. Încă un script: când tasta spațiu este apăsată. S
 
 Al patrulea pas pe ecran, pentru Complet. Adaugi un al doilea personaj, butonul. Pe buton, la click: spune Go. Pe erou păstrezi steag, click și spațiu. Așezi butonul lângă erou, nu peste el. Testezi: steag resetează, click pe buton spune Go, click pe erou sau spațiu reacționează eroul.
 
-Greșeli frecvente. Dacă click-ul nu merge, apeși steagul, dar scriptul e pe click. Click pe personaj, pe scenă. Dacă culoarea nu mai revine, pe steag trebuie să ai `anulează efectele grafice`. Dacă tasta nu face nimic, click întâi pe scenă, apoi spațiu.
+Greșeli frecvente. Dacă clicul nu merge, apeși steagul, dar scriptul e pe click. Click pe personaj, pe scenă. Dacă culoarea nu mai revine, pe steag trebuie să ai anulează efectele grafice. Dacă tasta nu face nimic, click întâi pe scenă, apoi spațiu.
 
 Proiectul de azi. Butonul magic.
 

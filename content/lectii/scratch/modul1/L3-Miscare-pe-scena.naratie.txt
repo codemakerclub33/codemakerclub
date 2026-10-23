@@ -8,7 +8,7 @@ De ce contează. În jocuri, personajul nu stă pe loc. Merge, se întoarce, alu
 
 Primul pas pe ecran. Selectezi personajul, nu Scena. La steag orientează-te în direcția nouăzeci, spre dreapta. Apoi: mergi cincizeci de pași, așteaptă zero virgulă cinci, întoarce la dreapta cu nouăzeci de grade, așteaptă, mergi, așteaptă, întoarce, așteaptă, mergi. Obții un traseu cu două cotituri, ca un C întors, pe care îl vezi. Fără așteaptă, totul trece prea repede.
 
-Al doilea pas pe ecran. Adaugi glisează, în o secundă, spre un punct pe scenă. Mergi înseamnă pași rapizi. Glisează înseamnă alunecare lină, cu timp.
+Al doilea pas pe ecran. Adaugi glisează, într-o secundă, spre un punct pe scenă. Mergi înseamnă pași rapizi. Glisează înseamnă alunecare lină, cu timp.
 
 Al treilea pas pe ecran. Chiar sub steag, înainte de traseu: du-te la un loc de start, de exemplu x minus o sută cincizeci, y zero. Fără reset, la al doilea steag pleacă de unde a rămas și poate ieși din scenă.
 

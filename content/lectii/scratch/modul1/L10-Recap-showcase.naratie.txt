@@ -6,7 +6,7 @@ Obiectivul. Ai îmbunătățit Personajul meu, ai prezentat, și ai insigna. Min
 
 De ce contează. Proiectele bune se refac o dată: dai detalii, apoi arăți. Insigna Scratch Starter înseamnă: Modulul unu e încheiat. Modulul doi începe cu alegeri, dacă.
 
-Lista de completări. A: clip de cel puțin patruzeci și cinci de secunde. B: al doilea personaj și dialog pe rând. C: la final schimbă fundalul, mesaj și sunet. D: încă un punct x y pe traseu. E: al doilea sunet, pe click sau spațiu. F: un efect de mărime sau culoare pe acțiune, anulat la steag. Minim înseamnă o literă testată. Complet înseamnă două litere. Nu începe a doua până prima nu rulează pe steag.
+Lista de completări. A: clip de cel puțin patruzeci și cinci de secunde. B: al doilea personaj și dialog pe rând. C: la final schimbă fundalul, mesaj și sunet. D: încă un punct x y pe traseu. E: al doilea sunet, pe click sau spațiu. F: un efect de mărime sau culoare pe acțiune, anulat la steag. Minim înseamnă o literă testată. Complet înseamnă două litere. Nu începe a doua până când prima rulează pe steag.
 
 Primul pas pe ecran. Alegi o literă pentru Minim. Alegi și o a doua țintă pentru Complet, pe care o faci după ce prima e gata. La minutul cincizeci și cinci prezinți oricum. Cu una e suficient pentru insignă.
 
@@ -28,6 +28,6 @@ Minim înseamnă: o completare lipită și testată, reset curat, prezentat, sal
 
 În proiect, al treilea pas, pentru Complet. A doua completare, testată. Salvezi din nou. Insigna Scratch Starter.
 
-Recapitulare. Adaugi, nu refaci. O completare pentru Minim. Două pentru Complet. Prezinți scurt. Steagul trebuie să meargă. Ai terminat Modulul unu. Brava.
+Recapitulare. Adaugi, nu refaci. O completare pentru Minim. Două pentru Complet. Prezinți scurt. Steagul trebuie să meargă. Ai terminat Modulul unu. Bravo!
 
 Succes la prezentarea ta.

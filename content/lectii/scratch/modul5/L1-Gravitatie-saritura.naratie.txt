@@ -10,7 +10,7 @@ Primul pas, pe foaie, cinci minute. Eroul are un număr secret, viteza y. Spune 
 
 Al doilea pas pe ecran. Faci proiect nou. Creezi sprite-ul Teren, dintr-un singur costum: o podea jos și două sau trei platforme deasupra. Platformele sunt la cel mult șaizeci de pași una deasupra celeilalte, fiindcă săritura urcă cam șaizeci și șase. Pui eroul sus. Creezi variabilele viteza y și pe sol, pentru toate sprite-urile. Pe steag, la Erou: du-te la x minus două sute, y minus o sută. Setează viteza y la zero. Setează pe sol la zero.
 
-Al treilea pas, gravitația. Sub la apăsarea steagului pui repetă la nesfârșit. Înăuntru, în ordinea asta: schimbă viteza y cu minus unu, apoi schimbă y cu viteza y. Eroul cade și trece prin podea. Așa trebuie, încă.
+Al treilea pas, gravitația. Sub la apăsarea steagului pui repetă la nesfârșit. Înăuntru, în ordinea asta: schimbă viteza y cu minus unu, apoi schimbă y cu viteza y. Eroul cade și trece prin podea. Așa trebuie, deocamdată.
 
 Al patrulea pas, podeaua. În același repetă la nesfârșit pui dacă, atunci, altfel. Dacă atinge Teren: dacă viteza y este mai mică decât zero, setează pe sol la unu. Apoi repetă până când nu atinge Teren, schimbă y cu unu. Apoi setează viteza y la zero. Altfel, setează pe sol la zero.
 

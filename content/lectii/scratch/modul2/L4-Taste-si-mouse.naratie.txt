@@ -10,7 +10,7 @@ Primul pas pe ecran. Tiparul de aur. La steag: du-te la start, anulează efectel
 
 Al doilea pas pe ecran. Viteza: trei e lent, cinci e normal, opt e rapid. Alege o viteză și păstrează aceeași viteză. Dacă ții două săgeți odată, merge pieziș. E normal, nu greșeală.
 
-Al treilea pas pe ecran. Mouse, doar demo, Complet opțional. Hexagon: mouse-ul e apăsat. Poți du-te la indicatorul mouse-ului. Labirintul final se joacă cu tastele. Mouse-ul e bine să știi că există.
+Al treilea pas pe ecran. Mouse, doar demo, Complet opțional. Hexagon: mouse-ul e apăsat. Poți folosi blocul du-te la indicatorul mouse-ului. Labirintul final se joacă cu tastele. Mouse-ul e bine să știi că există.
 
 Al patrulea pas pe ecran. Pereții pot fi culori pe fundal sau personaje. Ieșirea e un personaj sau o culoare verde clară. După cele patru taste, în forever: dacă atinge peretele, du-te la start. Dacă atinge ieșirea, spune Ai ajuns, plus sunet, plus așteaptă zero virgulă cinci. Fără scor azi. Scorul vine la lecțiile cinci și șase.
 

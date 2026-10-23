@@ -12,11 +12,11 @@ Al doilea pas pe ecran. Deschizi favoritul, ideal L șapte sau L nouă. Salveaz�
 
 Al treilea pas pe ecran. Joacă un proiect de coleg, cinci minute. Pe foaie: un compliment plus o idee, clară, fără ironii. Spui ce merge și ce ai schimba, nu doar e drăguț.
 
-Al patrulea pas pe ecran, pentru Complet. Favoritul sau L zece în studio-ul clasei, sau link pe foaie. Sau remix scurt: schimbi unu două lucruri pe un proiect de coleg, cu acord, și salvezi remix-ul. Sau pe foaie idee Modulul cinci: eroul meu ar sări sau cădea așa, o frază plus un desen mic.
+Al patrulea pas pe ecran, pentru Complet. Favoritul sau L zece în studio-ul clasei, sau link pe foaie. Sau remix scurt: schimbi unu sau două lucruri pe un proiect de coleg, cu acord, și salvezi remix-ul. Sau pe foaie idee Modulul cinci: eroul meu ar sări sau cădea așa, o frază plus un desen mic.
 
 Al cincilea pas pe ecran. Cu profesorul, pe scurt: Modulul cinci egal reguli de joc, gravitație, inamici, liste, tot în Scratch. Nu e oră de Python azi.
 
-Greșeli frecvente. Proiect nou de la zero. Finisare care strică jocul. Zero pe foaie. Părere vag. Cauți Python sau editor text. Ștergi proiectul vechi în loc să lucrezi pe copia L zece.
+Greșeli frecvente. Proiect nou de la zero. Finisare care strică jocul. Zero pe foaie. Părere vagă. Cauți Python sau editor text. Ștergi proiectul vechi în loc să lucrezi pe copia L zece.
 
 Proiectul de azi. Colecție de proiecte Creator.
 
@@ -28,6 +28,6 @@ Minim înseamnă: trei proiecte pe foaie, copie L zece, o finisare, o reacție, 
 
 În proiect, al treilea pas. Părere coleg. Complet dacă ai timp.
 
-Recapitulare. Colecție de proiecte, nu joc nou. Copie L zece plus finisări. Părere scris. Rămâi în Scratch. Numele fișierului are prenumele, numele, M patru și L zece.
+Recapitulare. Colecție de proiecte, nu joc nou. Copie L zece plus finisări. Părere scrisă. Rămâi în Scratch. Numele fișierului are prenumele, numele, M patru și L zece.
 
-Succes. Modulul patru Creator e închis cu demnitate.
+Succes. Modulul patru Creator e încheiat.

@@ -12,7 +12,7 @@ Al doilea pas pe ecran. Metoda: trage, citește, scrie. Tragi unde vrei un punct
 
 Al treilea pas pe ecran. La steag: du-te la zero zero. Personajul sare în mijloc. Du-te la înseamnă teleport: imediat, fără să se rotească singur.
 
-Al patrulea pas pe ecran. Glisează în o secundă la un punct citit de pe scenă. Du-te la înseamnă salt. Glisează înseamnă mișcare lină.
+Al patrulea pas pe ecran. Glisează într-o secundă la un punct citit de pe scenă. Du-te la înseamnă salt. Glisează înseamnă mișcare lină.
 
 Al cincilea pas pe ecran. Chiar sub steag: du-te la start. Apoi glisează la un punct pe drum, așteaptă, glisează la comoară, spune Am găsit-o. Fără reset, la a doua rulare pleacă de unde a rămas.
 

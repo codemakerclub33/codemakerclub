@@ -16,7 +16,7 @@ Al patrulea pas pe ecran. Al doilea sunet pe click pe personaj. Steag: sunetul A
 
 Al cincilea pas pe ecran. Chiar sub steag, înainte de noul sunet: oprește toate sunetele. Altfel, steag de mai multe ori înseamnă sunete suprapuse.
 
-Greșeli frecvente. Dacă nu se aude, lipsește sunetul în tab Sunete, sau scriptul e pe alt personaj. Dacă se calcă, lipsește oprește toate sunetele. Dacă așteaptă muzica nu merge, ai folosit pornește în loc de până la final. Dacă click-ul nu sună, apeși steagul, dar scriptul e pe click.
+Greșeli frecvente. Dacă nu se aude, lipsește sunetul în tab Sunete, sau scriptul e pe alt personaj. Dacă se calcă, lipsește oprește toate sunetele. Dacă așteaptă muzica nu merge, ai folosit pornește în loc de până la final. Dacă clicul nu sună, apeși steagul, dar scriptul e pe click.
 
 Proiectul de azi. Soundtrack-ul meu.
 

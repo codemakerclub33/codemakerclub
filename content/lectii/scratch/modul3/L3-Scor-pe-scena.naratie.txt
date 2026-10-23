@@ -8,7 +8,7 @@ De ce contează. Scorul face jocul măsurabil. Vezi pe ecran cât de bine ai juc
 
 Primul pas pe ecran. Din Variabile: creează scor, pentru toate personajele. Bifează ca să apară pe scenă. Ține minte: setează fixează. Schimbă adaugă. La steag: setează scor la zero. La prindere: schimbă scor cu unu. Nu setează la unu pe atingere, altfel rămâne mereu unu.
 
-Al doilea pas pe ecran. Pe Țintă, în dacă atinge Erou: adaugi schimbă scor cu unu, lângă sunet și ascunde. Resetul setează scor la zero pe Scenă sau pe Erou, înainte de forever. Ei sunt arbitrii. Nu dispar.
+Al doilea pas pe ecran. Pe Țintă, în dacă atinge Erou: adaugi schimbă scor cu unu, lângă sunet și ascunde. Resetul setează scor la zero pe Erou, înainte de forever. Eroul nu se ascunde, deci rămâne mereu pe scenă.
 
 Al treilea pas pe ecran. Duplică Ținta de patru ori, total cinci. După fiecare duplicare, trage steaua în alt colț. Dacă rămân una peste alta, scorul sare cu doi sau trei dintr-o dată. Fiecare copie are propriul script. La steag, fiecare face arată.
 

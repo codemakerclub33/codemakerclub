@@ -6,7 +6,7 @@ Obiectivul. Ai îmbunătățit labirintul, ai prezentat, și ai închis Modulul 
 
 De ce contează. Proiectele bune se refac o dată, apoi se arată. Insigna Logic Explorer înseamnă: logica e la activ. Dacă, detectare, variabile, mesaje. Urmează Modulul trei: Jocuri.
 
-Lista de completări. A: monedă sau stea, scor plus unu. B: capcană, vieți minus unu. C: mesaj victorie, schimbă fundalul, broadcast. D: buton Joacă din nou. E: al doilea nivel, alt fundal. F: obstacol mobil, stânga dreapta. Minim înseamnă o literă testată. Complet înseamnă două litere. Nu începe a doua până prima nu rulează pe steag.
+Lista de completări. A: monedă sau stea, scor plus unu. B: capcană, vieți minus unu. C: mesaj victorie, schimbă fundalul, broadcast. D: buton Joacă din nou. E: al doilea nivel, alt fundal. F: obstacol mobil, stânga dreapta. Minim înseamnă o literă testată. Complet înseamnă două litere. Nu începe a doua până când prima rulează pe steag.
 
 Primul pas pe ecran. Alegi o literă pentru Minim. Alegi și o a doua țintă pentru Complet, pe care o faci după ce prima e gata. La minutul cincizeci și cinci prezinți oricum. Cu una e suficient pentru insignă.
 

@@ -6,7 +6,7 @@ Obiectivul. Ai îmbunătățit jocul, ai prezentat, și ai închis Modulul trei.
 
 De ce contează. Proiectele bune se refac o dată, apoi se arată. Insigna Game Builder înseamnă: știi să pui împreună control, clone, scor, vieți sau timer și meniu, într-un joc care se termină. Urmează Modulul patru.
 
-Lista de completări. C: sunet sau efect la prindere, sigur și rapid. F: instrucțiuni pe meniu, tot sigur. B: meniu Start cu titlu, dacă lipsește. A: nivel doi. D: clonă rea, bombă. E: high score. Minim înseamnă o literă testată. Complet înseamnă două. Vrei Minim garantat: alege C sau F întâi. Nu începe a doua până prima nu rulează pe steag.
+Lista de completări. C: sunet sau efect la prindere, sigur și rapid. F: instrucțiuni pe meniu, tot sigur. B: meniu Start cu titlu, dacă lipsește. A: nivel doi. D: clonă rea, bombă. E: high score. Minim înseamnă o literă testată. Complet înseamnă două. Vrei Minim garantat: alege C sau F întâi. Nu începe a doua până când prima rulează pe steag.
 
 Primul pas pe ecran. Alegi o literă pentru Minim. Opțional o a doua pentru Complet. La minutul cincizeci și cinci: Stop Cod. Salvezi. Ecran mare. Prezinți oricum, chiar cu o singură îmbunătățire.
 

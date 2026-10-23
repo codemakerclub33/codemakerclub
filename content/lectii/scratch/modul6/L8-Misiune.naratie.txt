@@ -12,11 +12,9 @@ Al doilea pas pe ecran. Variabila misiune, cu text, mare, bifată pe scenă. Pe 
 
 Al treilea pas pe ecran. Condiția de victorie. La Scenă, sau la Erou, repetă la nesfârșit: dacă puse mai mare decât șapte, atunci trimite win și oprește acest script. Un sprite Final, ascuns la steag, cu costumul Ai câștigat. Când primesc win: arată, treci în față, iar după o secundă oprește tot. La lecția nouă, oprește tot se înlocuiește cu meniul.
 
-Pentru Complet alegi cel puțin una. Craft: dacă puse mai mare decât șapte și târnăcop mai mare decât zero. Două zone: câștigi cu cel puțin patru blocuri puse în fiecare zonă. Creatura: faci o variabilă creatura învinsă, pentru toate, pusă pe zero la steag. Pe Creatură, când primesc creatura lovită, o setezi pe unu. Câștigi dacă sabie mai mare decât zero și creatura învinsă egal cu unu.
-
 Verifici de fiecare dată. La steag, puse egal cu zero și nu apare Ai câștigat. Pui șapte blocuri, încă nimic. Pui al optulea bloc și apare Ai câștigat, iar jocul se oprește. Poți pierde în continuare, prin viețile din lecția șase.
 
-Al patrulea pas pe ecran, pentru Complet. Alegi cel puțin una. Craft: dacă puse mai mare decât șapte și tarnacop mai mare decât zero. Două zone: două variabile, una pentru Pădure și una pentru Deșert, și câștigi cu cel puțin patru în fiecare. Adaugi la pus pădure dacă t x e mai mic decât zero, altfel la pus deșert. Sau creatura: câștigi dacă ai sabie și creatura e eliminată.
+Al patrulea pas pe ecran, pentru Complet. Alegi cel puțin una. Craft: dacă puse mai mare decât șapte și târnăcop mai mare decât zero. Două zone: câștigi cu cel puțin patru blocuri puse în fiecare zonă. Adaugi la pus pădure dacă t x e mai mic decât zero, altfel la pus deșert. Creatura: faci o variabilă creatura învinsă, pentru toate, pusă pe zero la steag. Pe Creatură, când primesc creatura lovită, o setezi pe unu. Câștigi dacă sabie mai mare decât zero și creatura învinsă egal cu unu.
 
 Al cincilea pas pe ecran. Test cu un coleg, cinci minute. Colegul citește misiunea de pe ecran și o îndeplinește fără ajutor.
 
