@@ -1,7 +1,6 @@
 # Lecția 9 — Detalii urbane
 **Modulul 4 · Orașul nostru**  
 **Code Maker Club · City Builder**  
-**Vârstă:** ~8–10 ani
 
 > Azi aduci orașul la viață cu **felinare**, **semafoare** și **indicatoare** — piese mici, multe, făcute cu **Ctrl+D**.  
 > Proiect: pe placa ta · `Prenume_Nume_T4_L09`

@@ -1,7 +1,6 @@
 # Lecția 8 — Fortăreața cu pod mobil
 **Modulul 3 · Creativ și mecanic**  
 **Code Maker Club · Motion Maker**  
-**Vârstă:** ~8–10 ani
 
 > Azi construiești o fortăreață și un **pod** care stă pe o **balama**: o piesă mică ce se poate roti pe un ax.  
 > Proiect: **„Fortăreața mea”** · `Prenume_Nume_T3_L08`

@@ -1,7 +1,6 @@
 # Lecția 6 — Set de piese de șah
 **Modulul 3 · Creativ și mecanic**  
 **Code Maker Club · Motion Maker**  
-**Vârstă:** ~8–10 ani
 
 > Azi faci un **set**: piese diferite, dar care par să fie din aceeași familie — au aceeași bază.  
 > Proiect: **„Șahul meu”** · `Prenume_Nume_T3_L06`  

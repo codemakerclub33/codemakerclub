@@ -1,7 +1,6 @@
 # Lecția 8 — Ghiveci cu farfurie
 **Modulul 2 · Obiecte utile**  
 **Code Maker Club · Object Maker**  
-**Vârstă:** ~8–10 ani
 
 > Azi faci **două piese care lucrează împreună**: ghiveciul și farfuria care prinde apa.  
 > Proiect: **„Ghiveciul meu”** · `Prenume_Nume_T2_L08`

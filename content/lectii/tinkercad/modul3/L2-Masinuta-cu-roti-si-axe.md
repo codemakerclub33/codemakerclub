@@ -1,7 +1,6 @@
 # Lecția 2 — Mașinuță cu roți și axe
 **Modulul 3 · Creativ și mecanic**  
 **Code Maker Club · Motion Maker**  
-**Vârstă:** ~8–10 ani
 
 > Azi faci o mașinuță ale cărei **roți stau pe axe separate**, cu joc, ca să se poată învârti.  
 > Proiect: **„Mașinuța mea”** · `Prenume_Nume_T3_L02`

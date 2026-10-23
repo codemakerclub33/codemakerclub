@@ -2,7 +2,7 @@ Lecția opt. Castelul meu.
 
 Astăzi înveți duplicarea cu repetare. Faci o piesă, o muți o dată, apeși din nou Control și D, iar Tinkercad repetă aceeași mutare. Proiectul se numește Castelul meu. Numele fișierului este: Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero opt. Imprimanta trei D nu o folosim la oră. Azi doar proiectezi.
 
-Obiectivul. La final ai un castel cu zid, creneluri la distanțe egale și un turn. Minim: un zid cu creneluri repetate cu Control și D, plus un turn. Complet: minim, plus patru ziduri sau două turnuri, o poartă făcută cu Hole și Group, un steag și culori.
+Obiectivul. La final ai un castel cu zid, creneluri la distanțe egale și un turn. Minim: un zid cu creneluri repetate cu Control și D, plus un turn. Complet: minim, plus al doilea turn sau încă un zid, o poartă făcută cu Hole și Group, un steag și culori.
 
 De ce contează. În loc să tragi douăzeci de piese, faci una, o muți o dată, apoi apeși Control și D, iar Tinkercad repetă aceeași mutare. La modulul patru vei repeta ferestre la fel, într-un oraș. Minim este suficient pentru toată grupa. Complet cere mai mult timp.
 
@@ -20,7 +20,7 @@ Greșeli frecvente. Crenelurile sunt la distanțe diferite: ai mutat și a doua 
 
 Proiectul de azi. Castelul meu.
 
-Minim înseamnă: zid pe plan, creneluri egale făcute cu Control și D repetat, și un turn. Complet înseamnă: minim, plus două turnuri sau patru ziduri, poartă cu Hole și Group, steag și culori. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când crenelurile par făcute cu rigla.
+Minim înseamnă: zid pe plan, creneluri egale făcute cu Control și D repetat, și un turn. Complet înseamnă: minim, plus al doilea turn sau încă un zid, poartă cu Hole și Group, steag și culori. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când crenelurile par făcute cu rigla.
 
 Recapitulare. Control și D, muți copia o dată, apoi Control și D din nou: piese la aceeași distanță. Hole prin zid și Group fac poarta. Dacă greșești, Control și Z și refaci prima mutare.
 

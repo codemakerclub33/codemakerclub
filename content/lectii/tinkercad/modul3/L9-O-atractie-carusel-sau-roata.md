@@ -1,7 +1,6 @@
 # Lecția 9 — O atracție: carusel (sau roată)
 **Modulul 3 · Creativ și mecanic**  
 **Code Maker Club · Motion Maker**  
-**Vârstă:** ~8–10 ani
 
 > Azi construiești **un singur** mecanism de atracție: un **carusel** care se poate roti pe stâlpul lui.  
 > Proiect: **„Caruselul meu”** · `Prenume_Nume_T3_L09`  

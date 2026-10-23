@@ -1,7 +1,6 @@
 # Lecția 10 — Asamblare și prezentare
 **Modulul 4 · Orașul nostru**  
 **Code Maker Club · City Builder**  
-**Vârstă:** ~8–10 ani
 
 > Azi termini placa, o verifici cu o listă și **prezinți cartierul** în 45 de secunde. Plăcile tuturor se așază una lângă alta și formează orașul.  
 > Proiect: **„Cartierul meu”** · `Prenume_Nume_T4_L10`

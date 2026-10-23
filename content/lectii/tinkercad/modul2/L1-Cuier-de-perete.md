@@ -1,7 +1,6 @@
 # Lecția 1 — Cuier de perete
 **Modulul 2 · Obiecte utile**  
 **Code Maker Club · Object Maker**  
-**Vârstă:** ~8–10 ani
 
 > Azi treci de la „forme frumoase” la un obiect **util**: un cuier cu **dimensiuni alese de tine**.  
 > Proiect: **„Cuierul meu”** · `Prenume_Nume_T2_L01`

@@ -50,12 +50,12 @@ Fără cameră, plan, Undo și nume de proiect, restul orelor se blochează.
 1. Din panoul din dreapta (**Basic Shapes**), tragi pe plan **5 forme diferite** (ex. Box, Pyramid, Cylinder, Sphere, Cone)  
 2. Le așezi una lângă alta, pe plan (nu plutind)  
 3. **Ștergere:** selectezi una → **Delete**  
-4. **Undo:** **Ctrl+Z** (Mac: **Cmd+Z**) — revine ce-ai șters  
+4. **Undo:** **Ctrl+Z** (Mac: **Cmd+Z**) — revine ce ai șters  
 5. Eliberezi planul: **Ctrl+A** → **Delete**
 
 **Gata când:**  
 - [ ] 5 forme diferite stau pe plan, nu plutesc  
-- [ ] Ai șters o formă și ai adus-o înapoi cu **Ctrl+Z**  
+- [ ] Ai șters o formă și ai adus forma înapoi cu **Ctrl+Z**  
 
 ### 3) Cum te uiți în spațiu
 1. **Click dreapta + tragere** — **rotește** vederea *(pe touchpad: de obicei două degete + click / gestul de click dreapta)*  
@@ -109,7 +109,7 @@ Fără cameră, plan, Undo și nume de proiect, restul orelor se blochează.
 ---
 
 ## Greșeli frecvente
-1. **Piramida lângă cub, nu pe el** — ridic-o cu **conul negru de deasupra piesei**.  
+1. **Piramida lângă cub, nu pe el** — o ridici cu **conul negru de deasupra piesei**.  
 2. **Obiectul plutește** — selectezi → tasta **D** (cade pe **plan**). Atenție: **nu** folosești **D** pe acoperiș sau pe fereastră — le coboară în cub; ele se reglează cu conul negru.  
 3. **Ușa lângă perete, nu pe el** — trebuie să **atingă** fațada sau să **intre puțin** în casă.  
 4. **Nu găsești culorile** — selectezi piesa → pătrățelul **Color**.  

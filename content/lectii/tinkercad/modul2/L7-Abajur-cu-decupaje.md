@@ -1,7 +1,6 @@
 # Lecția 7 — Abajur cu decupaje
 **Modulul 2 · Obiecte utile**  
 **Code Maker Club · Object Maker**  
-**Vârstă:** ~8–10 ani
 
 > Azi faci un abajur cu **ferestre** prin care iese lumina, aranjate în jurul lui ca un model.  
 > Proiect: **„Abajurul meu”** · `Prenume_Nume_T2_L07`

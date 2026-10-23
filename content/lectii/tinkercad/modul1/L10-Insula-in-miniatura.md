@@ -1,7 +1,6 @@
 # Lecția 10 — Insula în miniatură (mini-proiect)
 **Modulul 1 · Bazele Tinkercad**  
 **Code Maker Club · Shape Starter**  
-**Vârstă:** ~8–10 ani
 
 > Azi combini tot ce ai învățat în Modulul 1 într-o scenă a ta.  
 > Proiect: **„Insula mea”** · `Prenume_Nume_T1_L10`
@@ -58,7 +57,7 @@ Un proiect propriu arată ce ai reținut. Îți pregătește și **portofoliul**
 2. Selectezi **toate piesele** obiectului (**Ctrl+A** dacă în proiect e doar obiectul acela; altfel Shift+click) → **Ctrl+C** (Mac: **Cmd+C**)  
 3. Revii în proiectul nou → **Ctrl+V**  
 4. Piesele apar pe plan, deja selectate — le **scalezi cu Shift** (pe un colț) să încapă (ex. casa ~**30** lățime), le muți pe insulă și le **ridici cu conul negru la 5** (terenul are 6 mm; intră 1 mm în el)  
-5. Dacă n-ai proiectul vechi, refaci rapid o versiune simplă (Minim din lecția aceea)  
+5. Dacă nu ai proiectul vechi, refaci rapid o versiune simplă (Minim din lecția aceea)  
 6. Dacă piesele includ și o bază sau apă (ex. apa de la barcă), le ștergi — nu le vrei pe insulă
 
 **Gata când:**  

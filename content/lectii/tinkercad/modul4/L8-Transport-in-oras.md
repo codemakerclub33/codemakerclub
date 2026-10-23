@@ -1,7 +1,6 @@
 # Lecția 8 — Transport în oraș
 **Modulul 4 · Orașul nostru**  
 **Code Maker Club · City Builder**  
-**Vârstă:** ~8–10 ani
 
 > Azi faci o **mașină**, un **autobuz** și o **stație**, la aceeași scară ca restul orașului.  
 > Proiect: pe placa ta · `Prenume_Nume_T4_L08`

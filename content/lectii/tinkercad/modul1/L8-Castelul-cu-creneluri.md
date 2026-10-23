@@ -1,7 +1,6 @@
 # Lecția 8 — Castelul cu creneluri
 **Modulul 1 · Bazele Tinkercad**  
 **Code Maker Club · Shape Starter**  
-**Vârstă:** ~8–10 ani
 
 > Azi înveți **duplicarea cu repetare**: faci o piesă, o muți o dată, apeși **Ctrl+D** din nou — și Tinkercad repetă aceeași mutare.  
 > Proiect: **„Castelul meu”** · `Prenume_Nume_T1_L08`
@@ -11,7 +10,7 @@
 ## Obiectiv
 La finalul orei ai un castel cu **zid**, **creneluri la distanțe egale** și **un turn**.  
 **Minim:** un zid cu creneluri repetate (Ctrl+D) + un turn.  
-**Complet:** Minim + 4 ziduri **sau** 2 turnuri + **poartă** (Hole + Group) + steag + culori.
+**Complet:** Minim + al doilea turn **sau** încă un zid + **poartă** (Hole + Group) + steag + culori.
 
 ## De ce contează
 În loc să tragi 20 de piese, faci **una**, o muți **o dată**, apoi **Ctrl+D** — Tinkercad repetă aceeași mutare.  
@@ -108,7 +107,7 @@ La oraș (M4) vei repeta ferestre la fel.
 | | Ce trebuie |
 |--|------------|
 | **Minim** | Zid + **creneluri la distanțe egale** (Ctrl+D repetat) + **un turn** |
-| **Complet** | Minim + 2 turnuri sau 4 ziduri + poartă (Hole + Group) + steag + culori |
+| **Complet** | Minim + al doilea turn sau încă un zid + poartă (Hole + Group) + steag + culori |
 
 ### Pasul 1 — Minim
 - [ ] Zid pe plan  

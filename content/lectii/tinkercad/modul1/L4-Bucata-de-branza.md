@@ -1,7 +1,6 @@
 # Lecția 4 — Bucata de brânză
 **Modulul 1 · Bazele Tinkercad**  
 **Code Maker Club · Shape Starter**  
-**Vârstă:** ~8–10 ani
 
 > Azi folosești **Hole** și **Group** ca să decupezi găuri reale.  
 > Proiect: **„Brânza cu găuri”** · `Prenume_Nume_T1_L04`
@@ -93,7 +92,7 @@ La finalul orei ai o felie de brânză cu **găuri** care trec prin ea (nu cercu
 ### 7) Complet — culoare și găuri
 1. Selectezi **grupul** (brânza cu găuri)  
 2. În panoul **Shape**, lângă Solid/Hole, apeși **Color** → gălbui / portocaliu *(dacă panoul arată altfel la tine, caută pătrățelul de culoare)*  
-3. Găuri de **mărimi diferite**: dacă n-ai deja — **Ctrl+Shift+G** (Ungroup), scalezi un cilindru cu **Shift** pe colț (înălțimea să rămână peste 30), **Ctrl+G** din nou (culoarea poți s-o pui după)
+3. Găuri de **mărimi diferite**: dacă nu ai deja — **Ctrl+Shift+G** (Ungroup), scalezi un cilindru cu **Shift** pe colț (înălțimea să rămână peste 30), **Ctrl+G** din nou (culoarea o poți pune după)
 
 **Gata când:**  
 - [ ] Brânza are culoare  
@@ -109,7 +108,7 @@ La finalul orei ai o felie de brânză cu **găuri** care trec prin ea (nu cercu
 ## Greșeli frecvente
 1. **Gaura nu trece** — din lateral, cilindrul nu iese deasupra feliei (sau stă prea sus și nu atinge planul); îl înalți cu pătrățelul alb de sus.  
 2. **Cilindrul pe margine** — îl muți **înăuntrul** conturului feliei.  
-3. **Group, dar nimic nu s-a schimbat** — cilindrii sunt încă Solid; pui **Hole**, apoi Group.  
+3. **Group, dar felia arată la fel** — cilindrii sunt încă Solid; pui **Hole**, apoi Group.  
 4. **Brânza a dispărut** — și ea e pe Hole. **Ungroup** și îi pui înapoi **Solid**.  
 5. **Am grupat doar găurile** sau **am grupat și șoricelul** — selectezi doar felia + cilindrii (Shift+click).  
 6. **Vreau să modific după Group** — **Ctrl+Shift+G**, modifici, regrupezi.  

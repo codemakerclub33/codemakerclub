@@ -1,7 +1,6 @@
 # Lecția 7 — Zaruri personalizate
 **Modulul 3 · Creativ și mecanic**  
 **Code Maker Club · Motion Maker**  
-**Vârstă:** ~8–10 ani
 
 > Azi faci un **zar** pe care punctele sunt la locul lor și **fețele opuse dau mereu 7**.  
 > Proiect: **„Zarul meu”** · `Prenume_Nume_T3_L07`

@@ -1,7 +1,6 @@
 # Lecția 1 — Roți dințate simple
 **Modulul 3 · Creativ și mecanic**  
 **Code Maker Club · Motion Maker**  
-**Vârstă:** ~8–10 ani
 
 > Azi faci **două roți cu dinți** care se „mușcă” una în alta, pe axe, la distanța potrivită.  
 > Proiect: **„Angrenajul meu”** · `Prenume_Nume_T3_L01`  

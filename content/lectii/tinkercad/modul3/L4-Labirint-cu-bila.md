@@ -1,7 +1,6 @@
 # Lecția 4 — Labirint cu bilă
 **Modulul 3 · Creativ și mecanic**  
 **Code Maker Club · Motion Maker**  
-**Vârstă:** ~8–10 ani
 
 > Azi planifici un traseu pe o placă și te asiguri că **bila încape peste tot**.  
 > Proiect: **„Labirintul meu”** · `Prenume_Nume_T3_L04`

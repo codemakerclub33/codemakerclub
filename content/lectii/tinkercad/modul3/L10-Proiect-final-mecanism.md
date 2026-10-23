@@ -1,7 +1,6 @@
 # Lecția 10 — Proiect final de modul (mecanism la alegere)
 **Modulul 3 · Creativ și mecanic**  
 **Code Maker Club · Motion Maker**  
-**Vârstă:** ~8–10 ani
 
 > Azi alegi **tu** un mecanism și îl construiești cu tot ce ai învățat în Modulul 3: ax, joc, piese separate, copii egale.  
 > Proiect: **„Mecanismul meu”** · `Prenume_Nume_T3_L10`

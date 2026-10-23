@@ -54,7 +54,7 @@ Multe obiecte sunt simetrice. Faci **o jumătate** și o **oglindești** — nu 
 ### 3) O aripă (trebuie să fie asimetrică)
 1. Tragi un **Wedge** din Basic Shapes și îl **culci pe o latură** (rotire 90° cu săgeata curbă) până când din **Top** vezi un **triunghi**. Apoi îl subțiezi (pătrățelul de sus) la **3 mm** înălțime și îl faci ~**30 × 22** văzut din Top. Pe plan → **D**  
    *(Varianta: un Box 30 × 15 × 3 înclinat ~22° cu săgeata curbă)*  
-2. Dacă aripa e perfect simetrică (ex. sferă turtită), după **M** arată **la fel** — parcă nu s-a întâmplat nimic  
+2. Dacă aripa e perfect simetrică (ex. sferă turtită), după **M** arată **la fel** — parcă nu ai făcut nimic  
 3. Aripa = **o singură piesă**  
 4. O așezi lângă corp, pe o parte (intră 1–2 mm în corp)
 
@@ -72,7 +72,7 @@ Multe obiecte sunt simetrice. Faci **o jumătate** și o **oglindești** — nu 
 ### 5) Oglindire (**M**)
 1. Selectezi **copia** → apeși **M**  
 2. Apar **săgeți pe laturile** piesei  
-3. Apeși săgeata care o întoarce **stânga–dreapta** (cea de pe latura din stânga/dreapta). Dacă aripa s-a răsturnat **sus–jos** (pe ecran) sau cu fața în jos: **Ctrl+Z** și încerci altă săgeată  
+3. Apeși săgeata care o întoarce **stânga–dreapta** (cea de pe latura din stânga/dreapta). Dacă aripa a ieșit răsturnată **sus–jos** (pe ecran) sau cu fața în jos: **Ctrl+Z** și încerci altă săgeată  
 4. Aripa oglindită trebuie să fie **înclinată invers** — așa știi că M a mers. Copia rămâne în același loc (peste original)  
 5. Muți copia **în linie dreaptă, orizontal**, pe **cealaltă** parte a corpului — aceeași distanță față de corp ca prima. Poți apăsa și săgețile tastaturii (mută piesa selectată) ca să corectezi puțin
 
@@ -105,7 +105,7 @@ Multe obiecte sunt simetrice. Faci **o jumătate** și o **oglindești** — nu 
 
 ## Greșeli frecvente
 1. **„M nu face nimic”** — aripa e prea simetrică; folosești Wedge sau o înclini.  
-2. **„Ctrl+D n-a făcut nimic”** — copia e peste original; o muți.  
+2. **„Ctrl+D nu a făcut nimic”** — copia e peste original; o muți.  
 3. **După L, aripile sunt peste corp** — Ctrl+Z, altă aliniere sau muți manual din Top.  
 4. **Aripa e doar mutată, nu oglindită** — după M, înclinarea e **inversă**.  
 5. **Antene fără cap** — pui întâi sfera.  
@@ -156,7 +156,7 @@ Multe obiecte sunt simetrice. Faci **o jumătate** și o **oglindești** — nu 
 
 **Quiz scurt:**  
 - Ce face tasta **M**?  
-- Cum îți dai seama că ai **oglindit** aripa, nu doar ai mutat-o?  
+- Cum îți dai seama că ai **oglindit** aripa, nu doar ai mutat aripa?  
 - Din ce vedere verifici **simetria**?
 
 ## Temă

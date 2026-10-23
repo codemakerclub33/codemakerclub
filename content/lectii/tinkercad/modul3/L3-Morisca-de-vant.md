@@ -1,7 +1,6 @@
 # Lecția 3 — Morișca de vânt
 **Modulul 3 · Creativ și mecanic**  
 **Code Maker Club · Motion Maker**  
-**Vârstă:** ~8–10 ani
 
 > Azi faci un **rotor** care stă pe un stâlp și se poate învârti în jurul lui, fără să cadă.  
 > Proiect: **„Morișca mea”** · `Prenume_Nume_T3_L03`

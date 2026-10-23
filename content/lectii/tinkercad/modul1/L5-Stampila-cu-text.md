@@ -1,7 +1,6 @@
 # Lecția 5 — Ștampila cu text
 **Modulul 1 · Bazele Tinkercad**  
 **Code Maker Club · Shape Starter**  
-**Vârstă:** ~8–10 ani
 
 > Azi folosești piesa **Text** și o **oglindești** ca pe o ștampilă.  
 > Proiect: **„Ștampila mea”** · `Prenume_Nume_T1_L05`
@@ -74,12 +73,12 @@ Ca amprenta să iasă **corectă**, textul de pe ștampilă trebuie să fie **og
 1. Selectezi **textul**  
 2. Apeși **M** — apar săgeți pe laturi  
 3. Apeși săgeata care **inversează stânga–dreapta**, ca într-o oglindă  
-4. Dacă literele s-au răsturnat **sus–jos**: **Ctrl+Z** și altă săgeată  
+4. Dacă literele ies răsturnate **sus–jos**: **Ctrl+Z** și altă săgeată  
 5. *Pe ștampila reală, textul oglindit apasă pe hârtie și iese corect.*
 
 **Gata când:**  
 - [ ] Textul e **oglindit** (literele se citesc invers)  
-- [ ] Nu s-a răsturnat sus–jos  
+- [ ] Nu e răsturnat sus–jos  
 
 ### 6) Așezare pe bază
 1. Textul stă **pe baza** ta, pe fața de sus: îl muți peste bază (din **Top**)  

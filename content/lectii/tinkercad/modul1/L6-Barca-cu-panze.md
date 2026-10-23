@@ -1,7 +1,6 @@
 # Lecția 6 — Barca cu pânze
 **Modulul 1 · Bazele Tinkercad**  
 **Code Maker Club · Shape Starter**  
-**Vârstă:** ~8–10 ani
 
 > Azi împarți un obiect real în **forme simple**: semisferă, pană, cilindru → o barcă.  
 > Proiect: **„Barca mea”** · `Prenume_Nume_T1_L06`
@@ -14,7 +13,7 @@ La finalul orei ai o barcă recunoscută din lateral: **corp** + **catarg** + **
 **Complet:** Minim + a doua pânză + steag + culori + **apă** în care barca stă puțin înfundată.
 
 ## De ce contează
-Învățăm să privim un obiect real și să-l **împărțim în forme simple** — ca racheta și castelul de mai târziu.
+Învățăm să privim un obiect real și să îl **împărțim în forme simple** — ca racheta și castelul de mai târziu.
 
 **Notă:** imprimanta 3D **nu** e folosită la oră — doar design.
 

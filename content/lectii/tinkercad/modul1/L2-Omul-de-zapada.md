@@ -94,7 +94,7 @@ Azi le exersezi pe piese rotunde. Fără **Shift** la scalare, sfera se „strâ
 ---
 
 ## Greșeli frecvente
-1. **„Ctrl+D n-a făcut nimic”** — copia e **exact peste** original; o muți lateral.  
+1. **„Ctrl+D nu a făcut nimic”** — copia e **exact peste** original; o muți lateral.  
 2. **Sferele plutesc cu gol între ele** — conul negru până intră puțin una în alta (32 și 54).  
 3. **Sferă „ou” strâmbă** — scalată **fără Shift** → **Ctrl+Z**, refaci cu Shift.  
 4. **Mijlocul / capul nu sunt pe centru** — View Cube → **Top**, muți cu mouse-ul pe centru.  

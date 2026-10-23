@@ -1,7 +1,6 @@
 # Lecția 2 — Casa modulară
 **Modulul 4 · Orașul nostru**  
 **Code Maker Club · City Builder**  
-**Vârstă:** ~8–10 ani
 
 > Azi faci o **casă după șablon** — corp cu ușă și ferestre — și îi pui **3 acoperișuri diferite**.  
 > Proiect: pe placa din L1 · `Prenume_Nume_T4_L02`

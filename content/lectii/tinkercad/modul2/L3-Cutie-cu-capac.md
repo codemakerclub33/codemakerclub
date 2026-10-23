@@ -1,7 +1,6 @@
 # Lecția 3 — Cutie cu capac
 **Modulul 2 · Obiecte utile**  
 **Code Maker Club · Object Maker**  
-**Vârstă:** ~8–10 ani
 
 > Azi faci **două piese** care trebuie să se potrivească: o cutie și capacul ei.  
 > Proiect: **„Cutia mea”** · `Prenume_Nume_T2_L03`

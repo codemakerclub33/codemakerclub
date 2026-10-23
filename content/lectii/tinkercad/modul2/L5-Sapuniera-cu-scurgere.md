@@ -1,7 +1,6 @@
 # Lecția 5 — Săpunieră cu scurgere
 **Modulul 2 · Obiecte utile**  
 **Code Maker Club · Object Maker**  
-**Vârstă:** ~8–10 ani
 
 > Azi faci o tavă cu **găuri care chiar au rost**: apa să iasă, săpunul să rămână.  
 > Proiect: **„Săpuniera mea”** · `Prenume_Nume_T2_L05`

@@ -1,7 +1,6 @@
 # Lecția 6 — Suport pentru periuțe
 **Modulul 2 · Obiecte utile**  
 **Code Maker Club · Object Maker**  
-**Vârstă:** ~8–10 ani
 
 > Azi faci un șablon de **găuri la distanțe egale**, în două direcții, ca într-un tabel.  
 > Proiect: **„Suportul de periuțe”** · `Prenume_Nume_T2_L06`

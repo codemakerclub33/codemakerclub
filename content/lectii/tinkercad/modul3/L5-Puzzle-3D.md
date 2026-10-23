@@ -1,7 +1,6 @@
 # Lecția 5 — Puzzle 3D
 **Modulul 3 · Creativ și mecanic**  
 **Code Maker Club · Motion Maker**  
-**Vârstă:** ~8–10 ani
 
 > Azi faci un cub tăiat în **două piese care se potrivesc**: una are un „dop”, cealaltă are un „locaș” pe măsură.  
 > Proiect: **„Puzzle-ul meu”** · `Prenume_Nume_T3_L05`

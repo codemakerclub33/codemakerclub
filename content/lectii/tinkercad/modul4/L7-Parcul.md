@@ -1,7 +1,6 @@
 # Lecția 7 — Parcul
 **Modulul 4 · Orașul nostru**  
 **Code Maker Club · City Builder**  
-**Vârstă:** ~8–10 ani
 
 > Azi umpli zona verde cu **copaci**, **bănci**, o **alee** și (la Complet) o **fântână**.  
 > Proiect: pe placa ta · `Prenume_Nume_T4_L07`

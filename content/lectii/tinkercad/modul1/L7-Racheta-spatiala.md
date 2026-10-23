@@ -1,7 +1,6 @@
 # Lecția 7 — Racheta spațială
 **Modulul 1 · Bazele Tinkercad**  
 **Code Maker Club · Shape Starter**  
-**Vârstă:** ~8–10 ani
 
 > Azi combini forme **cu simetrie în jurul unei axe**: cilindru, con, aripioare, hublou.  
 > Proiect: **„Racheta mea”** · `Prenume_Nume_T1_L07`
@@ -72,7 +71,7 @@ Exersezi ce ai învățat: **rotire**, **aliniere**, **Hole**, **Group**.
 
 **Gata când:**  
 - [ ] Hublou-ul (**Hole**) străpunge corpul pe ambele părți  
-- [ ] L-ai grupat doar cu **corpul**, nu cu vârful sau aripioarele  
+- [ ] Hublou-ul e grupat doar cu **corpul**, nu cu vârful sau aripioarele  
 
 ### 5) Flăcări (Complet)
 Racheta stă pe plan, deci flăcările nu pot fi *sub* ea. O ridicăm și o „sprijinim” pe flăcări.  
