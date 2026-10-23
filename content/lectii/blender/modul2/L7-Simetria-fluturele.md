@@ -62,8 +62,8 @@ Acum modelezi doar în dreapta, iar în stânga apare **oglindirea**.
 ### 4) Forma aripii
 Revino în Edit Mode (**Tab**), modul **Vertex** (**1**), vedere de sus (**Numpad 7**), **Alt + Z** pornit:
 
-1. **Aripa de sus (mare):** selectează vârful din colțul de sus-dreapta și **G X 0.8 Y 0.6**.  
-2. **Aripa de jos (mică):** colțul de jos-dreapta: **G X −0.2 Y −0.3** (spre interior).  
+1. **Aripa de sus (mare):** selectează vârful din colțul de sus-dreapta și **G**, apoi `0.8`, **Tab**, `0.6`, **Enter** (X, apoi Y).  
+2. **Aripa de jos (mică):** colțul de jos-dreapta: **G**, apoi `-0.2`, **Tab**, `-0.3`, **Enter** (spre interior).  
 3. **Crestătura dintre aripi:** vârful din mijlocul marginii din dreapta: **G X −0.6**.  
 4. Mai rotunjește colțurile cu **O** (Proportional Editing, rotița pentru rază) și **G** pe vârfurile de margine, ca să arate ca o aripă și nu ca un pătrat.  
 5. Aripile pot fi puțin ridicate, ca în zbor: selectează vârfurile cele mai din exterior și **G Z 0.3**.

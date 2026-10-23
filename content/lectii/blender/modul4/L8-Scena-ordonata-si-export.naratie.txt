@@ -8,13 +8,13 @@ De ce contează. După câteva ore de lucru, scena are obiecte numite Cube punct
 
 Ce ai nevoie. Insula din lecția șapte sau personajul din lecția patru.
 
-Primul pas. Nume clare. Deschizi Outliner, dai dublu click, sau apeși F doi în viewport, și redenumești. În loc de Cube punct zero trei patru, scrii Casa, linie jos, Pereti. În loc de Cone punct zero unu doi, scrii Copac, linie jos, zero unu. În loc de Sphere punct zero zero trei, scrii Nor, linie jos, zero doi. Folosește nume fără spații și fără diacritice, de exemplu Casa, linie jos, Pereti, nu Casa pereți. Așa eviți probleme la export.
+Primul pas. Nume clare. Deschizi Outliner, dai dublu click, sau apeși F doi în viewport, și redenumești. În loc de Cube punct zero trei patru, scrii Casa, linie jos, Pereti. În loc de Cone punct zero unu doi, scrii Copac, linie jos, zero unu. În loc de Sphere punct zero zero trei, scrii Nor, linie jos, zero doi. Folosești nume fără spații și fără diacritice, de exemplu Casa, linie jos, Pereti, nu Casa pereți. Așa eviți probleme la export.
 
 Al doilea pas. Colecții. Colecțiile sunt dosare în Outliner. Selectezi copacii în viewport. Apeși M, apoi New Collection, și o numești Copaci. La fel faci pentru Casa, Teren, Nori, Lumini și Camera. În Outliner, ochiul ascunde sau arată o colecție, iar iconița cu cameră, Disable in Renders, o scoate din randare.
 
 Al treilea pas. Legare și grupare. Piesele unui obiect complex, de exemplu casa, sunt fie unite cu Control plus J, fie legate cu Control plus P. Fiecare obiect principal are originea la baza lui.
 
-Al patrulea pas. Apply Scale. Dacă ai scalat obiecte cu S, ele rețin scala, iar scala trei D nu mai este unu. Asta poate strica modificatorii și exportul. Selectezi toate obiectele, cu A. Apeși Control plus A, apoi Scale, ca să aplici scala. Verifici în panoul N, la Item, că Scale este unu virgulă zero zero zero. Obiectele cu copii legate, făcute cu Alt plus D, dau eroare: le faci mai întâi unice. Aplici scala înainte de Control plus P, altfel piesele legate se deformează.
+Al patrulea pas. Apply Scale. Dacă ai scalat obiecte cu S, ele rețin scala, iar scala nu mai este unu. Asta poate strica modificatorii și exportul. Selectezi toate obiectele, cu A. Apeși Control plus A, apoi Scale, ca să aplici scala. Verifici în panoul N, la Item, că Scale este unu virgulă zero zero zero. Obiectele cu copii legate, făcute cu Alt plus D, dau eroare: le faci mai întâi unice. Aplici scala înainte de Control plus P, altfel piesele legate se deformează.
 
 Al cincilea pas. Curățenia fișierului. Mergi la File, Clean Up, Purge Unused Data, cu opțiunea Recursive. Ștergi materialele neutilizate din Material Properties. Verifici în Outliner, la Blender File, dacă mai ai obiecte inutile.
 

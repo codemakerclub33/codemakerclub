@@ -20,7 +20,7 @@ Al patrulea pas. Materialele, în douăzeci de minute. Definești o paletă de t
 
 Al cincilea pas. Autocritica. Faci un pas înapoi și privești scena de departe, cu zoom out. Întreabă-te: silueta principală se recunoaște? Culorile se potrivesc? Este ceva neterminat? Există un punct de interes clar?
 
-Al șaselea pas. Salvează versiuni. Folosești File, Save As, cu nume ca Proiect, linie jos, v unu, apoi v doi și așa mai departe. Dacă strici ceva, revii la versiunea bună.
+Al șaselea pas. Salvezi versiuni. Folosești File, Save As, cu nume ca Proiect, linie jos, v unu, apoi v doi și așa mai departe. Dacă strici ceva, revii la versiunea bună.
 
 Cum depanezi singur. Nu merge un modificator: verifică ordinea și Apply Scale. Nu găsești ceva în scenă: apasă Home, adică View All, sau caută în Outliner. Ceva arată ciudat: apasă Alt plus Z, apoi Control plus Z, și încearcă din nou. Nu știi cum se face ceva: recitește lecția relevantă sau cere ajutor.
 

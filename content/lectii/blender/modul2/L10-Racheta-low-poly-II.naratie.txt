@@ -22,7 +22,7 @@ Al șaselea pas. Cerul cu stele. În Properties, la World, Color, alegi albastru
 
 Al șaptelea pas. Lumini și cameră. Un Sun cu Strength trei, venind din lateral și de sus, și un Area albastru, mic, ca lumină de umplere. Camera este puțin de jos în sus, cu Focal Length între treizeci și cinci și cincizeci de milimetri, cu racheta în treimea din stânga și drumul ei spre colțul din dreapta sus. Randezi cu EEVEE, o mie nouă sute douăzeci pe o mie optzeci, cu F doisprezece, apoi Save As, în format P N G.
 
-Al optulea pas. Verificarea finală a modulului doi. Poți să intri în Edit Mode și să selectezi vârfuri, muchii și fețe? Folosești E, I, Control plus B și Control plus R? Folosești Proportional Editing? Folosești modificatorul Mirror? Dai mai multe materiale pe un obiect? Bifează pentru fiecare dacă încă nu poți, dacă poți cu ajutor sau dacă poți singur.
+Al optulea pas. Verificarea finală a modulului doi. Poți să intri în Edit Mode și să selectezi vârfuri, muchii și fețe? Folosești E, I, Control plus B și Control plus R? Folosești Proportional Editing? Folosești modificatorul Mirror? Dai mai multe materiale pe un obiect? Pentru fiecare întrebare bifezi una dintre coloanele: încă nu, cu ajutor sau singur.
 
 Dacă ai terminat devreme. Racheta se poate mișca. Mutarea rachetei se poate înregistra cu keyframe-uri. Pui racheta jos, la cadrul unu, și apeși I, apoi Location. Muți linia de timp la cadrul o sută douăzeci, în Timeline, jos, muți racheta sus, cu G, Z, cincisprezece, și apeși din nou I. Apeși Space, iar racheta zboară singură. Flacăra și fumul o urmează, fiindcă ai legat piesele cu Control plus P.
 

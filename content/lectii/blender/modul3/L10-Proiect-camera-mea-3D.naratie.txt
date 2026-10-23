@@ -22,7 +22,7 @@ Al șaptelea pas. Luminile. Un Sun prin fereastră, pentru lumina de zi, de culo
 
 Al optulea pas. Camera și randarea. Camera într-un colț, cu o lentilă între douăzeci și patru și douăzeci și opt de milimetri, pentru că în camerele interioare cadrul este larg. Verifici regula treimilor. Randezi cu EEVEE, o mie nouă sute douăzeci pe o mie optzeci, cu F doisprezece, și salvezi imaginea cu numele din proiect.
 
-Al nouălea pas. Verificarea finală a modulului trei. Folosești Subdivision, Solidify, Array și Bevel? Tai cu Boolean? Faci țevi și cabluri din curbe? Creezi materiale cu Principled BSDF? Faci o textură simplă cu noduri? Luminezi o scenă cu trei lumini? Bifează pentru fiecare dacă încă nu poți, dacă poți cu ajutor sau dacă poți singur.
+Al nouălea pas. Verificarea finală a modulului trei. Folosești Subdivision, Solidify, Array și Bevel? Tai cu Boolean? Faci țevi și cabluri din curbe? Creezi materiale cu Principled BSDF? Faci o textură simplă cu noduri? Luminezi o scenă cu trei lumini? Pentru fiecare întrebare bifezi una dintre coloanele: încă nu, cu ajutor sau singur.
 
 Greșeli frecvente. Mobila plutește: verifică din lateral, cu Numpad trei, și coboară mobila la înălțimea zero. Dimensiuni nerealiste: compară cu planul de sus, patul are doi metri, nu cinci. Camera este prea întunecată: adaugă lumină prin fereastră. Prea multe detalii și prea puțin timp: termină întâi piesele mari. Modificatoare uitate: verifică ochiul din listă, la Render.
 

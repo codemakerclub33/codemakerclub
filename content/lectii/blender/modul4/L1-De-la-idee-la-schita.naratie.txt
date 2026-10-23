@@ -12,7 +12,7 @@ Primul pas. Proiectele din acest modul. În lecțiile următoare faci două proi
 
 Al doilea pas. Ideea personajului. Răspunde pe hârtie la patru întrebări. Ce fel de creatură este: prietenoasă, hazlie sau fioroasă? Ce trăsături are: câți ochi, coarne, brațe, picioare? Cum se simte: fericit, supărat sau timid? Ce culori are: două sau trei culori principale? Exemplu: Blobi, un monstruleț rotund, verde, cu doi ochi mari, două coarne mici și picioare scurte, mereu zâmbitor.
 
-Al treilea pas. Schița din două vederi. Desenezi personajul din față și din lateral, la aceeași înălțime și cu aceleași proporții. Marchezi cu linii orizontale unde sunt ochii, brațele și genunchii. Fotografiază desenele cu telefonul, drept și fără umbre.
+Al treilea pas. Schița din două vederi. Desenezi personajul din față și din lateral, la aceeași înălțime și cu aceleași proporții. Marchezi cu linii orizontale unde sunt ochii, brațele și genunchii. Fotografiezi desenele cu telefonul, drept și fără umbre.
 
 Al patrulea pas. Imagini de referință în Blender. Pe calculator, pui pozele cu schițele într-un folder. În Blender, apeși Shift plus A, apoi Image, apoi Reference, și alegi poza din față. Vezi imaginea în scenă. În vederea din față, cu Numpad unu, o muți și o scalezi cu G și S, ca să aibă înălțimea de trei unități. Repeți pentru poza de lateral, în vederea din dreapta, cu Numpad trei, rotind cu R, Z, nouăzeci. Faci imaginile semitransparente: în Properties, la Object Data, pentru imagine, pui Opacity zero virgulă cinci.
 

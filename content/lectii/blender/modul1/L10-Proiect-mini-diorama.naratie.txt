@@ -22,7 +22,7 @@ Al cincilea pas. Culori, lumini și cameră. Materiale: minim cinci culori difer
 
 Al șaselea pas. Lista de verificare. Fiecare obiect este pe bază și nimic nu plutește. Obiectele au nume. Ai cel puțin cinci culori. Se văd umbre. Subiectul principal este vizibil din cameră. Imaginea P N G este salvată.
 
-Al șaptelea pas. Verificarea finală a modulului unu. Poți să te deplasezi în trei D? Folosești G, R și S și axele? Adaugi și reglezi forme de bază? Dai culori și materiale? Așezi lumini și cameră? Randezi și salvezi o imagine? Bifează pentru fiecare dacă încă nu poți, dacă poți cu ajutor sau dacă poți singur.
+Al șaptelea pas. Verificarea finală a modulului unu. Poți să te deplasezi în trei D? Folosești G, R și S și axele? Adaugi și reglezi forme de bază? Dai culori și materiale? Așezi lumini și cameră? Randezi și salvezi o imagine? Pentru fiecare întrebare bifezi una dintre coloanele: încă nu, cu ajutor sau singur.
 
 Greșeli frecvente. Prea multe obiecte și prea puțin timp: fă mai puține, dar bine finisate. Obiecte care se ating și se intersectează: verifică din față și de sus. Toate obiectele au aceeași culoare: creează materiale separate. Lumina este prea slabă: mărește Strength sau Power. Ai uitat să salvezi: Control plus S, des.
 

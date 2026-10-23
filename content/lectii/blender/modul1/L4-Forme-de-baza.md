@@ -115,7 +115,7 @@ Construiește pe rând (șterge mai întâi cubul de start, cu **X**):
 Folosește vederile din L2: **1** (față), **3** (dreapta), **7** (sus). Sunt aripile la distanțe egale?
 
 ### 7) Creează tu — „Vehiculul meu”
-Racheta ai construit după tabel. Acum alegi tu ce construiești.
+Racheta a fost construită după tabel. Acum alegi tu ce construiești.
 1. Alege un vehicul: **camion**, **submarin**, **avion**, **barcă** sau orice altceva vrei.  
 2. Folosește **cel puțin 5 piese**, din **cel puțin 3 forme diferite** (cub, sferă, cilindru, con, torus).  
 3. La **cel puțin o piesă** schimbă ceva în panoul **Adjust Last Operation** (laturi, rază sau adâncime).  

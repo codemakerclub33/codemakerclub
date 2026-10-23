@@ -20,7 +20,7 @@ Pașii recomandați. Adaugi corpul și îl muți în sus cu G, Z, unu virgulă c
 
 Al șaselea pas. Verifici din toate părțile cu vederile din lecția doi: unu pentru față, trei pentru dreapta, șapte pentru sus. Sunt aripile la distanțe egale?
 
-Pasul de creație. Vehiculul meu. Racheta ai construit după tabel, acum alegi tu ce construiești: un camion, un submarin, un avion, o barcă sau altceva. Folosești cel puțin cinci piese din cel puțin trei forme diferite. La cel puțin o piesă schimbi ceva în panoul Adjust Last Operation. Dai fiecărei piese un nume clar și notezi pe o foaie un tabel cu piesa, forma și ce ai reglat.
+Pasul de creație. Vehiculul meu. Racheta a fost construită după tabel, acum alegi tu ce construiești: un camion, un submarin, un avion, o barcă sau altceva. Folosești cel puțin cinci piese din cel puțin trei forme diferite. La cel puțin o piesă schimbi ceva în panoul Adjust Last Operation. Dai fiecărei piese un nume clar și notezi pe o foaie un tabel cu piesa, forma și ce ai reglat.
 
 Greșeli frecvente. Forma apare în altă parte: cursorul trei D nu este în centru, apasă Shift plus C. Nu ai putut regla forma: panoul din stânga jos a dispărut, șterge forma și adaugă o formă nouă. Forma este colțuroasă: numărul de laturi este prea mic. Obiectele se confundă: nu ai redenumit piesele. Piesele intră unele în altele: verifică vederea din față, cu unu.
 

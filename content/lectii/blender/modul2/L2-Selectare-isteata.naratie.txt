@@ -1,6 +1,6 @@
 Lecția doi. Selectare isteață.
 
-Cine selectează repede, modelează repede. Astăzi înveți cinci metode de selectare care îți economisesc zeci de click-uri. Proiectul se numește Peisajul din grilă. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B doi, linie jos, L doi, punct blend.
+Cine selectează repede, modelează repede. Astăzi înveți cinci metode de selectare care îți economisesc zeci de clicuri. Proiectul se numește Peisajul din grilă. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B doi, linie jos, L doi, punct blend.
 
 Obiectivul. La final selectezi rapid grupuri de piese și faci un peisaj dintr-o grilă. Minim: folosești selecția cu Box, Shift plus click și Alt plus A. Complet: minim, plus Alt plus click pentru o buclă de muchii, tasta L pentru piese legate, Control plus I pentru inversare și un peisaj cu dealuri și o vale.
 
