@@ -43,7 +43,7 @@ Deschizi proiectul `Prenume_Nume_T4_L09`, faci o copie (**Duplicate**) și o red
 - [ ] Străzile sunt **centrate** pe placă și ajung la margini  
 - [ ] Casele, blocul și clădirea publică stau pe **zone** (nu plutesc, nu sunt în aer)  
 - [ ] Nimic nu **iese** peste marginea plăcii  
-- [ ] Râul trece prin zona de parc și podul stă pe ambele maluri *(dacă l-ai făcut)*  
+- [ ] Râul trece prin zona de parc și podul stă pe ambele maluri *(dacă ai făcut podul)*  
 - [ ] Numele fișierului: `T4_L10`
 
 ### 2) Finisaj *(20 minute)*
@@ -51,7 +51,7 @@ Deschizi proiectul `Prenume_Nume_T4_L09`, faci o copie (**Duplicate**) și o red
 2. Repari ce nu e bine: piesă în aer, piesă care se suprapune, culoare neclară  
 3. **Color**: asfalt gri închis, trotuare gri deschis, apă albastră, copaci verzi, acoperișuri roșii sau maro  
 4. **Numele cartierului:** **Text** (de exemplu `Cartierul Nord`), pe **zona de centru**, lângă marginea plăcii, ridicat la **4 mm** *(nu în gol: acolo e asfalt)*  
-5. Un **N** de la Nord pe zona de locuințe, lângă marginea din spate, la 4 mm, dacă n-ai pus unul în L1
+5. Un **N** de la Nord pe zona de locuințe, lângă marginea din spate, la 4 mm, dacă nu ai pus unul în L1
 
 ### 3) Prezentarea *(pe foaie, 10 minute)*
 Scrii 4 rânduri scurte:
@@ -62,7 +62,7 @@ Scrii 4 rânduri scurte:
 
 ### 4) Turul orașului
 - Fiecare prezintă **45 de secunde** *(profesorul cronometrează)*.  
-- Plăcile se așază împreună: **fizic**, pe masă (dacă s-au printat), **sau pe ecran**, ca imagini puse în grilă 2 × 2.  
+- Plăcile se așază împreună: **fizic**, pe masă (dacă au fost printate), **sau pe ecran**, ca imagini puse în grilă 2 × 2.  
 - Străzile de la marginea unei plăci trebuie să se **continue** pe placa vecină.
 
 ---

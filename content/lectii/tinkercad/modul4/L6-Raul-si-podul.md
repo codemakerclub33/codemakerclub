@@ -39,7 +39,7 @@ Un oraș are adesea un râu. Podul leagă cele două maluri. Aici folosești **H
 2. Snap Grid: **1.0 mm**
 
 **Gata când:**  
-- [ ] Proiectul e creat și redenumit `Prenume_Nume_T4_L05`  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T4_L06`  
 
 ### 2) Tăiem râul
 1. **Box** → **67 · 12 · 2** → **Hole** *(2 mm, ca să taie sigur toată zona de 1 mm)*  

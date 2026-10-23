@@ -41,7 +41,7 @@ Trecerile de pietoni se fac din **dungi egale** — iar Ctrl+D le repetă perfec
 3. **View Cube → Top**: vezi golul în formă de cruce dintre cele 4 zone
 
 **Gata când:**  
-- [ ] Proiectul e creat și redenumit `Prenume_Nume_T4_L04`  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T4_L05`  
 
 ### 2) Asfaltul
 1. **Box** → **150 · 12 · 1** *(strada orizontală)*  

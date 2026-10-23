@@ -41,7 +41,7 @@ Mașina de **10 mm** înseamnă **5 m** în realitate — exact cât o mașină 
 2. Snap Grid: **0.5 mm** *(avem piese mici)*
 
 **Gata când:**  
-- [ ] Proiectul e creat și redenumit `Prenume_Nume_T4_L07`  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T4_L08`  
 
 ### 2) Mașina
 Toate înălțimile sunt socotite **de la suprafața asfaltului (4 mm)**.

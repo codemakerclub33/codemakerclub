@@ -40,7 +40,7 @@ Detaliile mici dau viață unui oraș. Dar nu le faci pe rând, una câte una: f
 3. Toate piesele stau pe zone, **la 1 mm de marginea dinspre stradă**, la **4 mm** *(nu pe trotuar, nu pe asfalt)*
 
 **Gata când:**  
-- [ ] Proiectul e creat și redenumit `Prenume_Nume_T4_L08`  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T4_L09`  
 
 ### 2) Felinarul
 1. **Box** **0,8 · 0,8 · 8** *(stâlpul)* → gri, ridicat la **4 mm**  

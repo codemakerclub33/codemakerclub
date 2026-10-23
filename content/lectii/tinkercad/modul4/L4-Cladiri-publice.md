@@ -40,7 +40,7 @@ Fără semn, un cub gri poate fi orice.
 2. Snap Grid: **1.0 mm**
 
 **Gata când:**  
-- [ ] Proiectul e creat și redenumit `Prenume_Nume_T4_L03`  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T4_L04`  
 
 ### 2) Corpul, ușa, ferestrele
 1. **Box** → **40 · 20 · 16** *(în afara plăcii, deocamdată)*  
@@ -100,7 +100,7 @@ Fără semn, un cub gri poate fi orice.
 
 ## Greșeli frecvente
 1. **Ușa nu se vede** — ai dat Ctrl+G după ce ai adăugat treptele, iar Hole-ul a tăiat și treptele.  
-2. **Treptele sunt în perete** — nu le-ai mutat spre față cu 6 mm / 3 mm.  
+2. **Treptele sunt în perete** — nu ai mutat treptele spre față cu 6 mm / 3 mm.  
 3. **Steagul stă în aer** — stâlpul nu e ridicat la 16 mm.  
 4. **Coloanele nu sunt simetrice** — mută prima coloană, apoi doar Ctrl+D.  
 5. **Prea mare pentru zonă** — școala de 40 mm lățime și spitalul se așază unul în spatele celuilalt (nu unul lângă altul: 40 + 30 > 67).  

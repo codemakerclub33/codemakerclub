@@ -14,7 +14,7 @@ La finalul orei ai **cel puțin o casă** pe zona de locuințe, la scară (1 m =
 
 ## De ce contează
 Un **șablon** e un corp făcut o dată, apoi copiat. Orașele reale sunt pline de case din același model, cu mici diferențe.  
-Ușile și ferestrele de pe model sunt **de 2 ori mai mari decât în realitate** (la scara 1:500 ar fi minuscule) — altfel nu s-ar vedea.
+Ușile și ferestrele de pe model sunt **de 2 ori mai mari decât în realitate** (la scara 1:500 ar fi minuscule) — altfel nu ar fi vizibile.
 
 **Notă:** imprimanta 3D **nu** e folosită la oră — doar design.
 
@@ -41,7 +41,7 @@ Ușile și ferestrele de pe model sunt **de 2 ori mai mari decât în realitate*
 2. Snap Grid: **1.0 mm**
 
 **Gata când:**  
-- [ ] Proiectul e creat și redenumit `Prenume_Nume_T4_L01`  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T4_L02`  
 
 ### 2) Corpul casei
 1. **Box** → **24 · 20 · 12** *(în afara plăcii, deocamdată, pe plan)*  

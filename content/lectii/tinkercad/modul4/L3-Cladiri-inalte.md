@@ -40,7 +40,7 @@ O clădire înaltă are zeci de ferestre identice. Nu le faci una câte una: fac
 2. Snap Grid: **1.0 mm**
 
 **Gata când:**  
-- [ ] Proiectul e creat și redenumit `Prenume_Nume_T4_L02`  
+- [ ] Proiectul e creat și redenumit `Prenume_Nume_T4_L03`  
 
 ### 2) Blocul și ușa
 1. **Box** → **30 · 20 · 54** *(în afara plăcii, deocamdată)*  
@@ -89,7 +89,7 @@ O clădire înaltă are zeci de ferestre identice. Nu le faci una câte una: fac
 - [ ] Blocul are culoare, iar ferestrele rămân găuri  
 
 ### 7) Complet — 8 rânduri, terasă, antenă
-1. Desfaci Group-ul (**Ctrl+Shift+G**), selectezi ultimul rând și continui să-l copiezi în sus cu **Ctrl+D** și aceeași mutare de 6 mm, până ai **8 rânduri** (ultimul rând e la 50 mm de baza blocului); apoi selectezi blocul, ușa și toate rândurile → **Ctrl+G**  
+1. Desfaci Group-ul (**Ctrl+Shift+G**), selectezi ultimul rând și continui să copiezi rândul în sus cu **Ctrl+D** și aceeași mutare de 6 mm, până ai **8 rânduri** (ultimul rând e la 50 mm de baza blocului); apoi selectezi blocul, ușa și toate rândurile → **Ctrl+G**  
 2. **Terasa:** **Box** **30·20·2** și **Hole** **26·16·3** → **L**: mijloc pe ambele axe între ele și cu blocul → ambele ridicate la **58 mm** *(54 mm cât e blocul + 4 mm de la placă)* → selectezi **doar** Box-ul și Hole-ul → **Ctrl+G** *(un parapet de 2 mm)*  
 3. **Antena:** **Cylinder** **1,5·1,5·12** pe mijlocul terasei, ridicat la **58 mm**  
 4. **Al doilea bloc:** **Box** **30·20·30** (5 etaje) + ușă + 4 rânduri de ferestre, făcut după același tipar; îl pui lângă primul, tot pe zona centru
@@ -107,7 +107,7 @@ O clădire înaltă are zeci de ferestre identice. Nu le faci una câte una: fac
 3. **Ferestrele din rând nu sunt egale** — ai mutat fiecare separat. Prima mutare de 8 mm, apoi doar **Ctrl+D**.  
 4. **Fereastra e doar la suprafață** — nu a fost mutată 2 mm spre față; nu taie nimic.  
 5. **Prea multe rânduri** — ultimul rând trebuie să rămână sub 54 mm de la baza blocului.  
-6. **Parapetul acoperă toată terasa** — Hole-ul interior (26·16) lipsește sau n-a fost grupat doar cu Box-ul terasei.  
+6. **Parapetul acoperă toată terasa** — Hole-ul interior (26·16) lipsește sau nu a fost grupat doar cu Box-ul terasei.  
 7. **Scara greșită** — un bloc de 27 m = 54 mm, nu 27.
 
 ---
