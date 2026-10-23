@@ -102,7 +102,7 @@ Fanta e mai îngustă decât săpunul și **nu atinge pereții**: dacă taie per
 ## Greșeli frecvente
 1. **Fanta nu taie fundul** — nu e Hole, sau nu ai dat **Ctrl+G**.  
 2. **Fanta a tăiat un perete** — e prea lungă. Păstrează **70 mm**, nu 94.  
-3. **Fantele nu sunt egale** — le-ai pus „cu ochiul”. Șterge-le și repetă **Ctrl+D** cu aceeași mutare.  
+3. **Fantele nu sunt egale** — ai pus fantele „cu ochiul”. Șterge-le și repetă **Ctrl+D** cu aceeași mutare.  
 4. **Fundul a rămas plin dedesubt** — fanta nu iese sub fund; din **Front** coboară-o 1 mm cu conul negru.  
 5. **Piciorușele plutesc** — ridică tava cu **4 mm** (sau coboară piciorușele 1 mm).  
 6. **Tava nu are fund** — ai pus Hole-ul prea jos (fără ridicare 3 mm) și a tăiat și fundul; verifică din **Front**.

@@ -95,7 +95,7 @@ Buzunarul din spate e o piesă făcută din **două straturi** — așa se const
 ---
 
 ## Greșeli frecvente
-1. **Marginile nu sunt egale** — n-ai aliniat pe mijloc. Selectezi placa și Hole-ul și apeși **L**, mijloc pe ambele direcții.  
+1. **Marginile nu sunt egale** — nu ai aliniat pe mijloc. Selectezi placa și Hole-ul și apeși **L**, mijloc pe ambele direcții.  
 2. **Fereastra nu taie** — lipsește **Ctrl+G**, sau Box-ul e încă Solid.  
 3. **Rămâne o foiță subțire în fereastră** — Hole-ul e la fel de gros ca placa. Fă-l **mai gros** (7 mm) și centrează-l și pe înălțime.  
 4. **Straturile nu se prind** — al doilea strat nu e ridicat exact 3 mm; din **Front** nu trebuie să fie gol între ele.  

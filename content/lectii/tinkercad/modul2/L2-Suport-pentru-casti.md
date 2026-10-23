@@ -105,7 +105,7 @@ Un obiect înalt se **răstoarnă** dacă are baza prea mică. Azi înveți regu
 2. **Bara plutește** — nu ai aliniat „sus”. Selectezi bara și grupul, **L**, punctul de sus.  
 3. **Suportul se răstoarnă** — capetele barei ies în afara bazei. Lărgești baza sau scurtezi bara.  
 4. **Baza prea subțire** — sub 6 mm se rupe ușor; lasă-o la **8 mm**.  
-5. **Am aliniat prea mult și piesele s-au mutat** — **Ctrl+Z** și aliniezi pe rând.  
+5. **Am aliniat prea mult și piesele au ajuns în locuri greșite** — **Ctrl+Z** și aliniezi pe rând.  
 6. **Nu văd punctele negre** — selectezi **mai multe** piese înainte de **L**.  
 7. **Sfera se aliniază la tot suportul, nu la bară** — bara e încă în Group; **Ctrl+Shift+G** întâi.
 

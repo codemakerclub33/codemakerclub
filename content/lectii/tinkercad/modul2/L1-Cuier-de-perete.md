@@ -78,7 +78,7 @@ Azi înveți să **scrii mărimile cu numere**, nu doar să măsori cu ochiul. A
 1. Trage un **Cylinder** → scrie **6 · 6 · 15**  
 2. În panoul **Shape**, alege **Hole** (cu dungi)  
 3. Selectezi gaura și placa → **L** → punctul din **stânga** și **mijloc** pe față–spate. Apoi **săgeata dreapta** o dată (5 mm): gaura e la **5 mm** de capăt, **departe de cârlige**  
-4. Coboar-o puțin sub plan cu **conul negru** (trage-o în jos ~2 mm, sub linia plasei), ca să treacă **prin toată placa**  
+4. Coboară gaura puțin sub plan cu **conul negru** (trage în jos ~2 mm, sub linia plasei), ca să treacă **prin toată placa**  
 5. **Ctrl+D** → copia + placa → **L** → punctul din **dreapta** (placa nu se mișcă), apoi **săgeata stânga** o dată: a doua gaură e tot la 5 mm de margine
 
 **Gata când:**  

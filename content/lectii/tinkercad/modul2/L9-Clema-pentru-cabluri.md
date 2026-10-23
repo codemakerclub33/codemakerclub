@@ -133,7 +133,7 @@ gaura = cablu **+ 1 mm** · fanta = cablu **− 1 mm** · exteriorul = gaura **+
 - [ ] Cablul tău măsurat · gaura, fanta și exteriorul calculate pe foaie  
 - [ ] Tub **12 · 12 · 12** cu Hole **6 · 6 · 16**, rotit 90°  
 - [ ] Plăcuță **30 · 12 · 3**, tubul prins 1 mm în ea  
-- [ ] Fantă **4 · 12 · 8** pe sus  
+- [ ] Fantă **4 · 12 · 10** pe sus  
 - [ ] 2 găuri **Ø3** la capete · **Ctrl+A** → **Ctrl+G**  
 
 ### Pasul 2 — Complet
@@ -146,7 +146,7 @@ gaura = cablu **+ 1 mm** · fanta = cablu **− 1 mm** · exteriorul = gaura **+
 ## Bonus (extra — după Complet)
 - [ ] Clemă dublă: **două** inele pe aceeași plăcuță, pentru două cabluri  
 - [ ] Rotunjești colțurile plăcuței cu sfere sau cilindri  
-- [ ] Un cablu real măsurat cu „Ruler” pe ecran și comparat cu rigla
+- [ ] Text cu mărimea cablului pe plăcuță (Text, 1 mm înălțime)
 
 ## Recapitulare rapidă
 1. Piesa pentru un obiect real începe cu **măsurarea**  

@@ -13,7 +13,7 @@ La finalul orei ai un **ghiveci** cu gaură de scurgere și o **farfurie** în c
 **Complet:** Minim + **guler** (inel decorativ) la marginea ghiveciului + **Ruler** (spațiu între ghiveci și farfurie) + culori diferite.
 
 ## De ce contează
-Un obiect real are **părți care depind una de alta**: farfuria trebuie să fie **mai largă** decât ghiveciul, ca să-l primească și să prindă apa.  
+Un obiect real are **părți care depind una de alta**: farfuria trebuie să fie **mai largă** decât ghiveciul, ca să încapă în ea și să prindă apa.  
 Gaura de scurgere lasă apa să iasă din ghiveci în farfurie.
 
 **Notă:** imprimanta 3D **nu** e folosită la oră — doar design.

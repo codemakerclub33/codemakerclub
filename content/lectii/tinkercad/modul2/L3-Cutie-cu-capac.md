@@ -97,7 +97,7 @@ Dacă marginea capacului e **exact** cât gaura, la printare nu intră. Azi laș
 3. **Capacul nu intră** — marginea e prea mare. Verifică **53 · 33**, nu 54 · 34.  
 4. **Capacul e prea lejer în gol** — dacă pui 50 · 30, joacă prea mult. 53 · 33 e potrivit.  
 5. **Am grupat și cutia, și capacul** — Ungroup (**Ctrl+Shift+G**). Trebuie să fie **2** piese.  
-6. **Marginea capacului plutește** — n-ai ridicat-o cu 4 mm; verifică din **Front**.
+6. **Marginea capacului plutește** — nu ai ridicat marginea cu 4 mm; verifică din **Front**.
 
 ---
 

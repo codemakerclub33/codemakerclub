@@ -14,7 +14,7 @@ La finalul orei ai un **abajur** (tub gol) cu **decupaje** repetate în jurul lu
 
 ## De ce contează
 Un model se face dintr-o formă **repetată și rotită**. Faci o bară Hole o dată, o copiezi și o rotești — iese un model simetric.  
-Lumina trece **doar** prin golurile pe care le-ai tăiat tu.
+Lumina trece **doar** prin golurile tăiate de tine.
 
 **Siguranță:** abajurul se folosește doar cu **lumină LED** (lanternă / bec cu LED), **niciodată** cu lumânare sau bec fierbinte.
 
