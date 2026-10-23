@@ -14,7 +14,7 @@ Al treilea pas pe ecran, construcția, cu numere. Design nou, Snap Grid zero vir
 
 Al patrulea pas pe ecran, verificarea. Bifezi pe foaie lista gata de print. Toate piesele au o față plată în jos. Niciun perete nu e mai subțire de unu virgulă doi milimetri. Între piesele care se potrivesc este joc, măsurat cu Ruler. Nu există piese în aer, pe care le verifici din Front și Right. Nu mai sunt Hole-uri negrupate. Mărimile din Tinkercad sunt cele din schiță. Numele fișierului este corect.
 
-Al cincilea pas pe ecran, prezentarea de un minut. Pe foaie scrii patru propoziții. Problema pe care am vrut s-o rezolv este. Produsul meu are cât de multe piese, și care. Cea mai importantă mărime este, pentru că. Am folosit din modulul cinci.
+Al cincilea pas pe ecran, prezentarea de un minut. Pe foaie scrii patru propoziții. Problema pe care am vrut să o rezolv este. Produsul meu are cât de multe piese, și care. Cea mai importantă mărime este, pentru că. Am folosit din modulul cinci.
 
 Greșeli frecvente. Începi fără schiță, și piesele nu se potrivesc. Fără joc, deci gaura și știftul au aceeași mărime. Totul într-un singur Group, deci piesele mobile se lipesc. Prea ambițios. Mai bine un produs curat, cu două piese, decât cinci neterminate. Pereți subțiri. Piese în aer. Prezentare lungă. Ai uitat problema.
 

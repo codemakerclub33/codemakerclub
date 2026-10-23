@@ -24,7 +24,7 @@ Al optulea pas pe ecran. Selectezi roțile cu Shift și click și le ridici cu c
 
 Al nouălea pas pe ecran, pentru Complet. Copiezi prima roată, nu pe cea rotită, la o sută de milimetri de ea. Adaugi un pivot nou, aliniat pe centrul ei. Placa devine de o sută șaptezeci. Centrezi totul pe direcția lungă, cu grup temporar. La Color, câte o culoare pe roată.
 
-Greșeli frecvente. Dinții se ating cap la cap: a doua roată nu e rotită. Roțile se calcă: păstrează cincizeci de milimetri. Roata e prinsă de placă: n-ai ridicat-o. Gaura nu trece: Hole-ul nu e grupat. Ai grupat tot: Control, Shift și G.
+Greșeli frecvente. Dinții se ating cap la cap: a doua roată nu e rotită. Roțile se calcă: păstrează cincizeci de milimetri. Roata e prinsă de placă: nu ai ridicat roata. Gaura nu trece: Hole-ul nu e grupat. Ai grupat tot: Control, Shift și G.
 
 Proiectul de azi. Angrenajul meu.
 

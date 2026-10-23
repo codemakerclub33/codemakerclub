@@ -4,7 +4,7 @@ Astăzi faci două piese care lucrează împreună: ghiveciul și farfuria care 
 
 Obiectivul. La final ai un ghiveci cu gaură de scurgere și o farfurie în care ghiveciul încape. Sunt două piese separate. Minim: ghiveci cu diametru șaizeci și înălțime cincizeci, gol, cu pereți de trei milimetri și fund de trei milimetri, cu o gaură de scurgere cu diametru opt în fund, plus o farfurie cu diametru șaptezeci și opt și înălțime doisprezece, goală, tot cu pereți și fund de trei milimetri. Ghiveciul stă în farfurie. Complet: minim, plus un guler, adică un inel decorativ, la marginea ghiveciului, plus Ruler pentru spațiul dintre ghiveci și farfurie și culori diferite.
 
-De ce contează. Farfuria trebuie să fie mai largă decât ghiveciul, ca să-l primească și să prindă apa.
+De ce contează. Farfuria trebuie să fie mai largă decât ghiveciul, ca să încapă în ea și să prindă apa.
 
 Primul pas pe ecran. Apasă Create new design și scrie numele. Jos, în dreapta, la Snap Grid, alege un milimetru.
 

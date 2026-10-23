@@ -24,7 +24,7 @@ Al optulea pas pe ecran. Din Right, axul se vede ca un cerc mic în gaura butucu
 
 Al nouălea pas pe ecran, pentru Complet. Un Box de șase pe doisprezece pe opt, Hole, aliniat cu fortăreața pe cele două direcții. Cu Snap Grid pe cinci, îl ridici la douăzeci și cinci. Control și D, copia zece milimetri spre dreapta. Crenelul din centru, Control și D, copia zece spre stânga. Cele trei creneluri și fortăreața, Control și G. Cu Ruler măsori gaura butucului și axul. La Color, zid, turnuri și pod în culori diferite.
 
-Greșeli frecvente. Podul e lipit de fortăreață: lasă-l separat. Axul nu se vede ca un cerc: mai rotește nouăzeci de grade. Axul nu trece prin butuc: gaura e prea mică sau n-ai selectat toate trei piesele. Podul intră în podea: n-ai ridicat grupul cu patru milimetri. Poarta nu taie zidul: lipsește Group sau nu e Hole.
+Greșeli frecvente. Podul e lipit de fortăreață: lasă-l separat. Axul nu se vede ca un cerc: mai rotește nouăzeci de grade. Axul nu trece prin butuc: gaura e prea mică sau nu ai selectat toate trei piesele. Podul intră în podea: nu ai ridicat grupul cu patru milimetri. Poarta nu taie zidul: lipsește Group sau nu e Hole.
 
 Proiectul de azi. Fortăreața mea.
 

@@ -24,7 +24,7 @@ Al optulea pas pe ecran. Rotorul și baza cu stâlp, L, mijloc pe cele două dir
 
 Al nouălea pas pe ecran, pentru Complet. Un Cylinder de doi pe doi pe cincisprezece, steagul, aliniat cu baza cu stâlp și ridicat la cincizeci și opt. Un Box de zece pe unu virgulă cinci pe șase, panoul, aliniat cu steagul: mijloc pe adâncime, punctul de sus și marginea din stânga. Steagul, panoul și baza cu stâlp, Control și G. Rotorul rămâne separat. Cu Ruler măsori gaura și stâlpul. La Color, acoperiș, scaune și platformă în culori diferite.
 
-Greșeli frecvente. Stâlpii nu sunt în cerc: bara nu e centrată pe platformă. Rotorul s-a lipit de stâlp. Scaunele sunt la înălțimi diferite: ridică-l o dată, înainte de Control și D. Gaura nu trece prin acoperiș: nu e destul de înaltă. Ai dat Control și A: selectează cu Shift și click.
+Greșeli frecvente. Stâlpii nu sunt în cerc: bara nu e centrată pe platformă. Rotorul e lipit de stâlp. Scaunele sunt la înălțimi diferite: ridică-l o dată, înainte de Control și D. Gaura nu trece prin acoperiș: nu e destul de înaltă. Ai dat Control și A: selectează cu Shift și click.
 
 Proiectul de azi. Caruselul meu.
 

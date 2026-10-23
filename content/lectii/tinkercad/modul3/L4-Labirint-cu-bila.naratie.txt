@@ -16,7 +16,7 @@ Al patrulea pas pe ecran. Primul perete, Control și D, copia încă douăzeci �
 
 Al cincilea pas pe ecran. Snap Grid pe unu. Un Box de doisprezece pe doisprezece pe unu, marcajul de start. Cu placa, L, punctul din stânga și punctul din față. Îl muți cinci milimetri spre dreapta și cinci spre spate, apoi îl ridici la patru. Control și D: marcajul de final, la fel, în colțul din stânga spate, cinci spre dreapta și cinci spre față. La Color, start verde, final roșu.
 
-Al șaselea pas pe ecran. O Sphere de zece pe zece pe zece. Cu marcajul de start, L, mijloc pe cele două direcții. O ridici la cinci milimetri. Selectezi tot labirintul, fără bilă: Control și A, apoi Shift și click pe bilă, ca s-o scoți. Control și G.
+Al șaselea pas pe ecran. O Sphere de zece pe zece pe zece. Cu marcajul de start, L, mijloc pe cele două direcții. O ridici la cinci milimetri. Selectezi tot labirintul, fără bilă: Control și A, apoi Shift și click pe bilă, ca să o scoți. Control și G.
 
 Al șaptelea pas pe ecran, pentru Complet. Doi pereți scurți de trei pe opt pe zece, ridicați patru milimetri, lipiți de un perete lung și ieșiți în culoar. Între pinten și peretele din față rămân paisprezece milimetri, deci bila trece. Trasezi cu degetul pe ecran drumul de la start la final. Cu Ruler măsori culoarul și bila. Pentru culori, desfaci labirintul cu Control, Shift și G, colorezi, apoi regrupezi fără bilă.
 

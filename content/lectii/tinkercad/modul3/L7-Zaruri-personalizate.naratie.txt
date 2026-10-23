@@ -22,7 +22,7 @@ Al șaselea pas pe ecran. Selectezi cubul și cele trei perechi, patru obiecte, 
 
 Al șaptelea pas pe ecran, pentru Complet. Zarul, Control și D, copia șaizeci de milimetri lateral. La Color, un zar într-o culoare, celălalt în alta. Spui pe rând: unu plus șase, doi plus cinci, trei plus patru. Toate dau șapte.
 
-Greșeli frecvente. Punctele nu se văd: Hole-ul nu iese în afară sau n-ai dat Group. Punctele sunt prea adânci: doi milimetri e bine. Perechea nu a ajuns pe fețele laterale: n-ai rotit grupul sau n-ai centrat totul cu tasta L. Două fețe au același număr: ai rotit aceeași pereche de două ori. Ai grupat punctele cu cubul prea devreme: grupează întâi cele șapte puncte între ele.
+Greșeli frecvente. Punctele nu se văd: Hole-ul nu iese în afară sau nu ai dat Group. Punctele sunt prea adânci: doi milimetri e bine. Perechea nu a ajuns pe fețele laterale: nu ai rotit grupul sau nu ai centrat totul cu tasta L. Două fețe au același număr: ai rotit aceeași pereche de două ori. Ai grupat punctele cu cubul prea devreme: grupează întâi cele șapte puncte între ele.
 
 Proiectul de azi. Zarul meu.
 

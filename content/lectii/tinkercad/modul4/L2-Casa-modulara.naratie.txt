@@ -4,7 +4,7 @@ Astăzi faci o casă după șablon, cu corp, ușă și ferestre, și îi pui tre
 
 Obiectivul. La final ai cel puțin o casă pe zona de locuințe, la scară, cu ușă și ferestre tăiate cu Hole. Minim: o casă de doisprezece metri pe zece pe șase, cu ușă, două ferestre și acoperiș, ridicată la patru milimetri. Complet: minim, plus trei case din același corp, cu trei acoperișuri diferite: într-o apă, piramidal și plat. Plus patru ferestre pe casă, două sus și două jos.
 
-De ce contează. Un șablon este un corp făcut o dată și apoi copiat. Orașele sunt pline de case din același model, cu mici diferențe. Ușile și ferestrele de pe model sunt de două ori mai mari decât în realitate. La scara unu la cinci sute ar fi minuscule și nu s-ar vedea.
+De ce contează. Un șablon este un corp făcut o dată și apoi copiat. Orașele sunt pline de case din același model, cu mici diferențe. Ușile și ferestrele de pe model sunt de două ori mai mari decât în realitate. La scara unu la cinci sute ar fi minuscule și nu ar fi vizibile.
 
 Primul pas pe ecran. Dacă nu ai placa, o refaci rapid, ca la lecția unu: placa și cele patru zone. La Snap Grid, jos în dreapta, pui unu milimetru. Tragi un Box de douăzeci și patru pe douăzeci pe doisprezece, deocamdată în afara plăcii. Ține minte: douăzeci și patru de milimetri sunt doisprezece metri, douăzeci sunt zece metri, doisprezece sunt șase metri, adică două etaje.
 

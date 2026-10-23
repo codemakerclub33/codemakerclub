@@ -6,7 +6,7 @@ Obiectivul. La final placa ta e gata de tur: arată bine, e la scară și o poț
 
 De ce contează. Plăcile tuturor au aceeași mărime, o sută cincizeci de milimetri, și aceeași scară, un metru egal doi milimetri. Străzile pornesc din mijlocul fiecărei laturi. De aceea, dacă pui patru plăci una lângă alta, străzile se continuă de la o placă la alta, ca într-un oraș adevărat. Lipirea și printarea plăcilor se fac după ore, opțional.
 
-Primul pas pe ecran. Lista de verificare, cu creionul, în cincisprezece minute. Placa are o sută cincizeci pe o sută cincizeci pe trei milimetri. Verifici cu Ruler, sau dai click pe ea și citești mărimile de la pătratele albe. Cele patru zone sunt la locul lor, cu șaisprezece milimetri între ele. Străzile sunt centrate pe placă și ajung la margini. Casele, blocul și clădirea publică stau pe zone: nu plutesc și nu sunt în aer. Nimic nu iese peste marginea plăcii. Râul trece prin zona de parc și podul stă pe ambele maluri, dacă l-ai făcut. Numele fișierului are T patru, linie jos, L zece.
+Primul pas pe ecran. Lista de verificare, cu creionul, în cincisprezece minute. Placa are o sută cincizeci pe o sută cincizeci pe trei milimetri. Verifici cu Ruler, sau dai click pe ea și citești mărimile de la pătratele albe. Cele patru zone sunt la locul lor, cu șaisprezece milimetri între ele. Străzile sunt centrate pe placă și ajung la margini. Casele, blocul și clădirea publică stau pe zone: nu plutesc și nu sunt în aer. Nimic nu iese peste marginea plăcii. Râul trece prin zona de parc și podul stă pe ambele maluri, dacă ai făcut podul. Numele fișierului are T patru, linie jos, L zece.
 
 Al doilea pas pe ecran. Finisajul, în douăzeci de minute. Din View Cube, sus în stânga, privești placa din toate părțile: Top, Front și Right. Repari ce nu e bine: piesă în aer, piesă care se suprapune, culoare neclară. Cu Color: asfalt gri închis, trotuare gri deschis, apă albastră, copaci verzi, acoperișuri roșii sau maro.
 
@@ -14,7 +14,7 @@ Al treilea pas pe ecran. Numele cartierului. Cu Text, de exemplu Cartierul Nord,
 
 Al patrulea pas pe ecran. Prezentarea, pe foaie, în zece minute. Scrii patru rânduri scurte. Primul: Cartierul meu se numește, și numele. Al doilea: Aici sunt, și trei lucruri, de exemplu școala, podul, parcul. Al treilea: Scara este un metru egal doi milimetri, deci o mașină de cinci metri are zece milimetri. Al patrulea: Cel mai greu a fost, sau Sunt mândru de, și ce simți.
 
-Al cincilea pas pe ecran. Turul orașului. Fiecare prezintă patruzeci și cinci de secunde, iar profesorul cronometrează. Plăcile se așază împreună. Fizic, pe masă, dacă s-au printat, sau pe ecran, ca imagini puse în grilă, două pe două. Străzile de la marginea unei plăci trebuie să se continue pe placa vecină.
+Al cincilea pas pe ecran. Turul orașului. Fiecare prezintă patruzeci și cinci de secunde, iar profesorul cronometrează. Plăcile se așază împreună. Fizic, pe masă, dacă au fost printate, sau pe ecran, ca imagini puse în grilă, două pe două. Străzile de la marginea unei plăci trebuie să se continue pe placa vecină.
 
 Greșeli frecvente. Refaci tot orașul: azi doar finisezi și prezinți. Prezentare prea lungă: patruzeci și cinci de secunde înseamnă patru rânduri scurte. Placa nu are o sută cincizeci de milimetri: nu se mai potrivește cu a colegilor, deci verifici cu Ruler. Străzile nu ajung la margine: vecinul nu are cu ce să le lege. Piese în aer: verifici din Front. Text pe stradă: numele cartierului stă pe zona de centru, la patru milimetri, nu pe asfalt și nu în gol.
 

@@ -4,7 +4,7 @@ Astăzi faci un abajur cu ferestre prin care iese lumina, aranjate în jurul lui
 
 Obiectivul. La final ai un abajur, adică un tub gol, cu decupaje repetate în jurul lui. Minim: tub cu diametru șaptezeci și înălțime șaptezeci, cu pereți de trei milimetri, deschis sus și jos, plus patru bare Hole rotite din patruzeci și cinci în patruzeci și cinci de grade. Rezultă opt ferestre în jurul lui. Apoi Group. Complet: minim, plus un al doilea rând de ferestre, decalat cu douăzeci și doi virgulă cinci grade, și culoare.
 
-De ce contează. Un model se face dintr-o formă repetată și rotită. Iese un model simetric. Lumina trece doar prin golurile pe care le-ai tăiat tu.
+De ce contează. Un model se face dintr-o formă repetată și rotită. Iese un model simetric. Lumina trece doar prin golurile tăiate de tine.
 
 Primul pas pe ecran. Apasă Create new design și scrie numele. Jos, în dreapta, la Snap Grid, alege cinci milimetri.
 

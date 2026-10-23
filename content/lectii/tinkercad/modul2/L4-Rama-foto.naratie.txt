@@ -18,7 +18,7 @@ Al cincilea pas pe ecran, pentru Complet. Trage un Box de nouăzeci pe șaptezec
 
 Al șaselea pas pe ecran. Rama stă pe plan cu fața în jos, iar stratul cu buzunar e deasupra, pe spate. Poza, de șaptezeci pe cincizeci, intră în buzunarul din stratul de sus. Fereastra din față, de șaizeci pe patruzeci, lasă poza să se vadă, dar nu o lasă să cadă. La final alege o culoare care se potrivește cu poza ta.
 
-Greșeli frecvente. Marginile nu sunt egale: n-ai aliniat pe mijloc. Fereastra nu taie: lipsește Group sau Box-ul e încă Solid. Rămâne o foiță în fereastră: Hole-ul e la fel de gros ca placa, deci fă-l mai gros, de șapte milimetri, și centrează-l și pe înălțime. Buzunarul e mai mic decât fereastra: șaptezeci pe cincizeci trebuie să fie mai mare decât șaizeci pe patruzeci. Ai grupat prea devreme: desfă cu Control, Shift și G, modifici, apoi regrupezi.
+Greșeli frecvente. Marginile nu sunt egale: nu ai aliniat pe mijloc. Fereastra nu taie: lipsește Group sau Box-ul e încă Solid. Rămâne o foiță în fereastră: Hole-ul e la fel de gros ca placa, deci fă-l mai gros, de șapte milimetri, și centrează-l și pe înălțime. Buzunarul e mai mic decât fereastra: șaptezeci pe cincizeci trebuie să fie mai mare decât șaizeci pe patruzeci. Ai grupat prea devreme: desfă cu Control, Shift și G, modifici, apoi regrupezi.
 
 Proiectul de azi. Rama mea.
 

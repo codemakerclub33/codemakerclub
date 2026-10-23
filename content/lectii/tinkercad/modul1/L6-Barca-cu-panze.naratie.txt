@@ -4,7 +4,7 @@ Astăzi împarți un obiect real în forme simple: semisferă, pană și cilindr
 
 Obiectivul. La final ai o barcă pe care o recunoști din lateral: corp, catarg și cel puțin o pânză, pe plan. Minim: corpul din Half Sphere, cu partea plată sus, un catarg și o pânză din Wedge. Nimic nu plutește, verificat din Front sau Right. Complet: minim, plus a doua pânză, steag, culori și apă, în care barca stă puțin înfundată.
 
-De ce contează. Înveți să privești un obiect real și să-l împarți în forme simple. Așa vei face mai târziu racheta și castelul.
+De ce contează. Înveți să privești un obiect real și să îl împarți în forme simple. Așa vei face mai târziu racheta și castelul.
 
 Primul pas pe ecran. Create new design. Sus scrii numele Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero șase. Salvarea este automată. Verifici numele.
 

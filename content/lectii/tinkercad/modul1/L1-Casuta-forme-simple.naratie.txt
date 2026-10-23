@@ -18,7 +18,7 @@ Al cincilea pas pe ecran. Piramida este acoperișul. Tragi un Pyramid pe plan. D
 
 Al șaselea pas pe ecran, pentru Complet. Selectezi corpul și, în fereastra care apare, apeși pătrățelul Color și alegi o culoare. Selectezi acoperișul, apeși Color și alegi altă culoare. Pentru ușă, pui un Box de aproximativ zece pe patru pe șaisprezece, pe plan, în mijlocul fațadei, intrat doi milimetri în perete. Pentru fereastră, un Box de aproximativ opt pe patru pe opt, ridicat cu conul negru la aproximativ zece, tot intrat doi milimetri în perete.
 
-Greșeli frecvente. Piramida stă lângă cub, nu pe el: ridic-o cu conul negru. Obiectul plutește: selectezi și apeși D. Dar nu folosi D pe acoperiș sau pe fereastră, pentru că le coboară în cub. Ușa stă lângă perete: trebuie să atingă fațada sau să intre puțin. Nu găsești formele: sunt în panoul din dreapta, la Basic Shapes. Ai deschis Circuits: creează un Design trei D. Dacă ștergi greșit, apeși Control și Z.
+Greșeli frecvente. Piramida stă lângă cub, nu pe el: o ridici cu conul negru. Obiectul plutește: selectezi și apeși D. Dar nu folosi D pe acoperiș sau pe fereastră, pentru că le coboară în cub. Ușa stă lângă perete: trebuie să atingă fațada sau să intre puțin. Nu găsești formele: sunt în panoul din dreapta, la Basic Shapes. Ai deschis Circuits: creează un Design trei D. Dacă ștergi greșit, apeși Control și Z.
 
 Proiectul de azi. Căsuța mea.
 

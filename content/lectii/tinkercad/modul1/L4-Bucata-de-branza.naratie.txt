@@ -22,7 +22,7 @@ Al șaptelea pas pe ecran, pentru Complet. Selectezi grupul, adică brânza cu g
 
 Pentru Complet plus, opțional, faci șoricelul: o Sphere pentru corp, sfere mici pentru cap și urechi, și un cilindru subțire pentru coadă. Îl pui lângă brânză, pe plan.
 
-Greșeli frecvente. Gaura nu trece: din lateral, cilindrul nu iese deasupra feliei, sau stă prea sus și nu atinge planul. Îl înalți din pătrățelul alb de sus. Cilindrul stă pe margine: îl muți înăuntrul conturului. Ai dat Group și nimic nu s-a schimbat: cilindrii sunt încă Solid, pui Hole, apoi Group. Brânza a dispărut: și ea este Hole, desfaci grupul și îi pui înapoi Solid. Ai grupat doar găurile, sau ai grupat și șoricelul: selectezi doar felia și cilindrii, cu Shift și click. Vrei să modifici după Group: Control, Shift și G, modifici, regrupezi. Nu vezi panoul Shape: dai click din nou pe piesă.
+Greșeli frecvente. Gaura nu trece: din lateral, cilindrul nu iese deasupra feliei, sau stă prea sus și nu atinge planul. Îl înalți din pătrățelul alb de sus. Cilindrul stă pe margine: îl muți înăuntrul conturului. Ai dat Group și nimic nu se schimbă: cilindrii sunt încă Solid, pui Hole, apoi Group. Brânza a dispărut: și ea este Hole, desfaci grupul și îi pui înapoi Solid. Ai grupat doar găurile, sau ai grupat și șoricelul: selectezi doar felia și cilindrii, cu Shift și click. Vrei să modifici după Group: Control, Shift și G, modifici, regrupezi. Nu vezi panoul Shape: dai click din nou pe piesă.
 
 Proiectul de azi. Brânza cu găuri.
 

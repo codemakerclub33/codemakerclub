@@ -18,7 +18,7 @@ Al cincilea pas pe ecran, tot pentru Complet. Creezi variabila h și o pui pe ze
 
 Varianta fără Codeblocks. Tragi un Box de zece pe zece pe zece. Pui Snap Grid pe unu virgulă zero milimetri. Apeși Control și D și muți copia cincisprezece milimetri spre dreapta, adică cincisprezece apăsări de săgeată. Apoi apeși Control și D de încă trei ori. Fiecare repetă aceeași mutare. Ai cinci cuburi. Din Top sunt egale, la cinci milimetri distanță. Pe foaie scrii două propoziții. Dacă aș avea o buclă, aș scrie. Cu o variabilă n aș putea. Pentru Complet fără cod, al doilea cub are cincisprezece milimetri înălțime, al treilea douăzeci, și tot așa. Apoi apeși L și le aliniezi jos, pe plan.
 
-Greșeli frecvente. Cuburile sunt unul peste altul, pentru că lipsește blocul de mutare din buclă. Ai un singur cub, pentru că blocurile sunt în afara buclei. Ai prea multe cuburi, pentru că ai pus cincizeci în loc de cinci. Nu se întâmplă nimic, pentru că n-ai apăsat Run. Cuburile se ating, pentru că pasul este zece sau mai mic. Variabila n nu schimbă nimic, pentru că bucla folosește numărul cinci. Scara nu crește, pentru că lipsește blocul h devine h plus cinci.
+Greșeli frecvente. Cuburile sunt unul peste altul, pentru că lipsește blocul de mutare din buclă. Ai un singur cub, pentru că blocurile sunt în afara buclei. Ai prea multe cuburi, pentru că ai pus cincizeci în loc de cinci. Nu se întâmplă nimic, pentru că nu ai apăsat Run. Cuburile se ating, pentru că pasul este zece sau mai mic. Variabila n nu schimbă nimic, pentru că bucla folosește numărul cinci. Scara nu crește, pentru că lipsește blocul h devine h plus cinci.
 
 Proiectul de azi. Șirul de cuburi.
 
