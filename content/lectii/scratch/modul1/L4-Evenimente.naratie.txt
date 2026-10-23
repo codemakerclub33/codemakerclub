@@ -1,31 +1,37 @@
 Lecția patru. Butonul magic.
 
-Astăzi înveți că blocurile pornesc când se întâmplă ceva: steag, click sau tastă. Proiectul se numește Butonul magic. Fișierul: Prenume, linie jos, Nume, linie jos, L patru.
+Astăzi înveți că blocurile pornesc când se întâmplă ceva: o tastă, un click, o schimbare de decor sau un mesaj trimis de alt personaj. Fișierul se numește Prenume, linie jos, Nume, linie jos, L patru.
 
-Obiectivul. Pornești acțiuni pe evenimente diferite. Minim: steag ca reset, plus un eveniment nou, click pe personaj. Complet: plus tasta spațiu, plus un buton separat pe scenă.
+Obiectivul. La finalul orei personajele tale reacționează la evenimente, nu doar la steag. Minim: personajul unu, Magicianul, cu cel puțin douăsprezece blocuri diferite. Complet: personajul doi, Iepurele, cu cel puțin opt blocuri diferite, care răspunde la mesajele Magicianului.
 
-De ce contează. În jocuri nu totul pornește odată. Uneori apeși Start, alteori un buton sau o tastă. În Scratch, asta e capitolul Evenimente.
+De ce contează. În jocuri, lucrurile se întâmplă la apăsarea unei taste, la click sau când alt personaj dă un semn. În Scratch, asta e capitolul Evenimente.
 
-Primul pas pe ecran. Pe erou, la steagul verde: du-te la zero zero, anulează efectele grafice, spune Gata de start, pentru o secundă. Steagul nu e doar play. Azi îl folosești ca să resetezi.
+Capitolele de azi sunt aceleași cinci: Evenimente, Aspect, Mișcare, Control și Sunet. Blocuri noi, toate din Evenimente: când tasta este apăsată, când se dă click pe acest personaj, când decorul se schimbă la, difuzează, difuzează și așteaptă, și când primesc. Restul blocurilor le ai din lecțiile trecute.
 
-Al doilea pas pe ecran. Tot pe erou, un script nou: când se dă clic pe acest personaj. Sub el: spune Ai apăsat, apoi mergi treizeci de pași. Nu apeși steagul. Dai click pe personaj pe scenă. Același personaj, două porniri diferite.
+Primul pas pe ecran. Tastă și click. Selectezi personajul, nu Scena. Pui: când tasta spațiu este apăsată, iar sub el spune Bis, două secunde. Apoi încă un script: când se dă click pe acest personaj, și sub el spune Salut, două secunde. Dai o dată click pe scenă, apoi apeși spațiu și dai click pe personaj. Fiecare bloc de tip când este un început de script de sine stătător și nu are nevoie de steag.
 
-Al treilea pas pe ecran. Încă un script: când tasta spațiu este apăsată. Sub el: schimbă efectul culoare cu douăzeci și cinci. Fiecare spațiu adaugă încă culoare. De aceea pe steag ai anulează efectele grafice.
+Al doilea pas pe ecran. Când se schimbă decorul. Ai două decoruri, Culise și Spectacol. Pe Scenă: steagul, schimbă decorul la Culise, așteaptă cinci secunde, decorul următor. Pe personaj: când decorul se schimbă la Spectacol, iar sub el spune Începe spectacolul, două secunde. Apeși steagul: după cinci secunde decorul se schimbă și personajul vorbește.
 
-Al patrulea pas pe ecran, pentru Complet. Adaugi un al doilea personaj, butonul. Pe buton, la click: spune Go. Pe erou păstrezi steag, click și spațiu. Așezi butonul lângă erou, nu peste el. Testezi: steag resetează, click pe buton spune Go, click pe erou sau spațiu reacționează eroul.
+Al treilea pas pe ecran. Mesaje. Difuzează magie trimite un semnal, adică un mesaj, tuturor personajelor. Când primesc magie, pe alt personaj, pornește când aude mesajul. Mesajul nou îl creezi din lista blocului, la Mesaj nou, și îl scrii la fel în ambele locuri. Exemplu: Magicianul difuzează magie, iar Iepurele, când primește magie, spune Hop, două secunde.
 
-Greșeli frecvente. Dacă clicul nu merge, apeși steagul, dar scriptul e pe click. Click pe personaj, pe scenă. Dacă culoarea nu mai revine, pe steag trebuie să ai anulează efectele grafice. Dacă tasta nu face nimic, click întâi pe scenă, apoi spațiu.
+Al patrulea pas pe ecran. Difuzează și așteaptă. Difuzează trimite mesajul și personajul merge mai departe imediat. Difuzează și așteaptă trimite mesajul și așteaptă să termine scriptul celui care îl primește. Exemplu: Magicianul spune Abracadabra, apoi difuzează și așteaptă magie. Abia după ce Iepurele termină, Magicianul spune Ta dam. Dacă nimeni nu primește mesajul, difuzează și așteaptă nu blochează nimic: scriptul merge mai departe.
+
+Greșeli frecvente. Dacă nu pornește la tastă, dai o dată click pe scenă, apoi apeși tasta. Dacă mesajul nu ajunge, numele din difuzează și din când primesc nu e același mesaj: magie și magia sunt mesaje diferite. Dacă replicile se calcă, ai apăsat spațiu în timpul spectacolului: apasă după ce se termină. Dacă când primesc e pe personajul greșit, selectează personajul care trebuie să audă mesajul. Dacă când decorul se schimbă la nu pornește, în bloc e alt decor sau decorul nu se schimbă. Sunet după sunet sau costum după costum: pune între ele alt bloc. Dacă decorul următor nu duce la Spectacol, în lista de decoruri Spectacol trebuie să fie după Culise. Dacă ai greșit numele la salvare, adaugă și numele de familie.
 
 Proiectul de azi. Butonul magic.
 
-Minim înseamnă: erou cu steag de tip reset, plus click pe erou. Complet înseamnă: minim, plus spațiu, plus personaj buton, plus test clar. Dacă rămâi în urmă, salvează la Minim.
+Minim înseamnă: două decoruri și Magicianul cu cel puțin douăsprezece blocuri diferite. Complet înseamnă: minim, plus Iepurele, cu cel puțin opt blocuri diferite, care răspunde la mesajele Magicianului. Dacă rămâi în urmă, salvează la Minim. Nu e eșec.
 
-În proiect, primul pas. Erou pe scenă. La steag: du-te la start, anulează efectele, mesaj scurt.
+În proiect, primul pas, pentru Minim. Locul. Adaugi două decoruri, Culise și Spectacol, în această ordine, și redenumești personajele: Magicianul, Iepurele și Porumbelul. Pe Scenă faci scriptul: steagul, schimbă decorul la Culise, așteaptă cinci secunde, decorul următor.
 
-În proiect, al doilea pas. Click pe erou face ceva vizibil. Steag și click sunt diferite. Salvezi.
+În proiect, al doilea pas, pentru Minim. Magicianul. Alegi un magician din bibliotecă, cu cel puțin două costume. Are trei scripturi. Primul, la steag: mergi la x minus o sută douăzeci, y minus șaizeci. Apoi orientează-te în direcția nouăzeci. Apoi spune Doamnelor și domnilor, trei secunde. Al doilea, când decorul se schimbă la Spectacol: pornește un sunet potrivit. Apoi spune Abracadabra, două secunde. Apoi difuzează și așteaptă magie. Apoi repetă patru, înăuntru costumul următor și așteaptă zero virgulă trei. Apoi gândește Ta dam, două secunde. La final, schimbă costumul la un costum ales de tine. Al treilea, când tasta spațiu este apăsată: spune Bis, două secunde, apoi difuzează bis. Este un model: poți schimba textele, numerele și mesajele. Fără Iepure, Magicianul își termină scriptul singur. Spațiu îl apeși după ce se termină spectacolul. Nu ai sunet după sunet, nici costum după costum. Salvezi.
 
-În proiect, al treilea pas, pentru Complet. Spațiu schimbă aspectul. Al doilea personaj e butonul, click pe buton spune Go. Un coleg știe ce face steagul și ce face butonul, fără explicație. Salvezi din nou.
+În proiect, al treilea pas, pentru Complet. Iepurele, sau alt personaj, cu cel puțin două costume. Are trei scripturi. Primul, la steag: mergi la x optzeci, y minus optzeci. Apoi orientează-te spre Magicianul. Al doilea, când primesc magie: repetă șase, înăuntru costumul următor și așteaptă zero virgulă trei. Apoi glisează în două secunde la poziție aleatoare. Apoi spune Hop, două secunde. La final, schimbă costumul la un costum ales de tine. Al treilea, când se dă click pe acest personaj: pornește un sunet potrivit. Apoi spune Nu mă gâdila, două secunde. Apoi mergi la poziție aleatoare. Salvezi din nou.
 
-Recapitulare. Evenimentul este ce pornește scriptul: steag, click sau tastă. Un personaj poate avea mai multe scripturi. Steagul înseamnă start și reset. Numele fișierului are prenumele și numele de familie.
+Bonus. Al treilea personaj, Porumbelul, care răspunde la bis. Primul script, la steag: mergi la x zero, y o sută. Al doilea, când primesc bis: repetă șase, înăuntru rotește-te spre dreapta treizeci de grade și așteaptă zero virgulă trei. Apoi pornește un sunet potrivit. Apoi spune Cu cu, două secunde. Apoi glisează în două secunde la x zero, y o sută. Al treilea, când se dă click pe acest personaj: gândește Cu cu, ai apăsat pe mine, două secunde, apoi schimbă costumul la un costum ales de tine. Provocarea: o a doua tastă, de exemplu săgeată sus, difuzează un mesaj nou, iar Iepurele face la el altceva.
+
+Recapitulare. Fiecare bloc de tip când este un început de script și nu are nevoie de steag. Difuzează trimite un mesaj, iar când primesc îl aude. Difuzează și așteaptă așteaptă să termine cel care primește. Numele mesajului trebuie să fie identic în ambele blocuri. Nu ai sunet după sunet, nici costum după costum. Numele fișierului are prenumele și numele de familie.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă Iepurele, în același fișier. Dacă ai Complet, adaugi acasă al treilea personaj, în același fișier. Dacă ai terminat și bonusul, faci o copie și schimbi povestea: alte personaje, alte replici, alte mesaje.
 
 Succes la butonul tău magic.

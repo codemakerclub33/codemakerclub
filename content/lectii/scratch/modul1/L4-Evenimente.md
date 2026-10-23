@@ -2,18 +2,18 @@
 **Modulul 1 · Primii pași**  
 **Code Maker Club · Scratch Starter**
 
-> Azi înveți că blocurile pornesc când se întâmplă ceva — steag, click sau tastă.  
+> Azi înveți că blocurile pornesc când se întâmplă ceva: o tastă, un click, o schimbare de decor sau un mesaj trimis de alt personaj.  
 > Proiect: **„Butonul magic”** · fișier: `Prenume_Nume_L4` (ex. `Ana_Pop_L4`)
 
 ---
 
 ## Obiectiv
-La finalul orei pornești acțiuni pe **evenimente diferite** din <span style="color:#E6A800;font-weight:700">Evenimente</span>.  
-**Minim:** steag (= reset) + **un** eveniment nou (click pe personaj).  
-**Ținta orei (Complet):** + tastă (spațiu) + **buton** separat pe scenă.
+La finalul orei personajele tale reacționează la evenimente, nu doar la steag.  
+**Minim:** personajul 1 (Magicianul) cu cel puțin **12 blocuri diferite**.  
+**Ținta orei (Complet):** personajul 2 (Iepurele), cu cel puțin **8 blocuri diferite**, care răspunde la mesajele Magicianului.
 
 ## De ce contează
-În jocuri, nu totul pornește odată: uneori apeși Start, alteori un buton sau o tastă.  
+În jocuri, lucrurile se întâmplă la apăsarea unei taste, la click sau când alt personaj dă un semn.  
 În Scratch, asta e capitolul <span style="color:#E6A800;font-weight:700">Evenimente</span> (EN: *Events*).
 
 ---
@@ -22,159 +22,215 @@ La finalul orei pornești acțiuni pe **evenimente diferite** din <span style="c
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–5 | Obiectiv + ce e un eveniment |
-| 5–30 | Pas cu pas: **3** mini-verificări (**Încearcă tu**) |
-| 30–100 | Proiectul „Butonul magic” (vezi **Minim vs Complet**) |
-| 100–120 | Recap, bonus, salvare |
+| 0–5 | Obiectiv + capitolul Evenimente |
+| 5–35 | Pas cu pas: **4** mini-verificări (**Încearcă tu**) |
+| 35–105 | Proiectul „Butonul magic” (vezi **Minim vs Complet**) |
+| 105–120 | Recap, bonus, salvare |
+
+**Capitole azi (doar acestea 5):**  
+<span style="color:#E6A800;font-weight:700">Evenimente</span> · <span style="color:#9966FF;font-weight:700">Aspect</span> · <span style="color:#4C97FF;font-weight:700">Mișcare</span> · <span style="color:#FFAB19;font-weight:700">Control</span> · <span style="color:#CF63CF;font-weight:700">Sunet</span>  
+*(Detectare, Operatori, Variabile — mai târziu.)*
 
 ---
 
 ## Pas cu pas
 
-### 1) Steagul verde = start și reset
-1. Selectezi **personajul** (eroul)
-2. Din <span style="color:#E6A800;font-weight:700">Evenimente</span>:  
-   <span style="color:#3F8F2A;font-weight:700">când se dă clic pe steagul verde</span>
-3. Sub el:  
-   <span style="color:#4C97FF;font-weight:700">du-te la x:</span> `0` <span style="color:#4C97FF;font-weight:700">y:</span> `0` →  
-   <span style="color:#9966FF;font-weight:700">anulează efectele grafice</span> →  
-   <span style="color:#9966FF;font-weight:700">spune</span> `Gata de start!` pentru `1` secundă  
-   *(„Anulează efectele” = șterge culoarea / fantoma etc. — ca steagul să **curețe** totul)*
-4. Apeși steagul — eroul se așază și salută
+| Capitol | Ce iei azi |
+|---------|------------|
+| <span style="color:#E6A800;font-weight:700">Evenimente</span> | **`când tasta [ ] este apăsată`**, **`când se dă click pe acest personaj`**, **`când decorul se schimbă la`**, **`difuzează`**, **`difuzează … și așteaptă`**, **`când primesc`**, `când se dă click pe` steagul verde |
+| <span style="color:#4C97FF;font-weight:700">Mișcare</span> | `mergi la x: y:`, `mergi la [poziție aleatoare]`, `orientează-te în direcția`, `orientează-te spre`, `rotește-te ↻`, `glisează … la x: y:`, `glisează … la [poziție aleatoare]`, `mergi` |
+| <span style="color:#9966FF;font-weight:700">Aspect</span> | `schimbă decorul la`, `decorul următor`, `costumul următor`, `spune`, `gândește`, `schimbă costumul la` |
+| <span style="color:#FFAB19;font-weight:700">Control</span> | `repetă`, `așteaptă` |
+| <span style="color:#CF63CF;font-weight:700">Sunet</span> | `pornește sunetul`, `redă sunetul … până la final` |
 
-*(Steagul nu e doar „play”: azi îl folosești ca să **resetezi**.)*
+### 1) Tastă și click
+1. Selectezi **personajul** (nu Scena)
+2. Din <span style="color:#E6A800;font-weight:700">Evenimente</span>: <span style="color:#E6A800;font-weight:700">când tasta</span> `spațiu` <span style="color:#E6A800;font-weight:700">este apăsată</span>  
+   Sub el: <span style="color:#9966FF;font-weight:700">spune</span> `Bis!` pentru `2` secunde
+3. Încă un script, tot din <span style="color:#E6A800;font-weight:700">Evenimente</span>: <span style="color:#E6A800;font-weight:700">când se dă click pe acest personaj</span>  
+   Sub el: <span style="color:#9966FF;font-weight:700">spune</span> `Salut!` pentru `2` secunde
+4. Dai o dată click pe **scenă**, apoi apeși **spațiu** și dai click pe **personaj**
 
-**Încearcă tu — steag / reset (2 min)**  
-- [ ] Script pe steag cu `du-te la` + `spune`  
-- [ ] Ai și `anulează efectele grafice` pe steag  
-- [ ] Steag de două ori → același loc de start  
+Fiecare „când …” e un **început de script** de sine stătător. Nu are nevoie de steag.
 
-### 2) Click pe personaj
-1. Tot pe **același personaj**, un **script nou** (nu sub steag):  
-   <span style="color:#E6A800;font-weight:700">când se dă clic pe acest personaj</span>  
-   *(tot **Evenimente** — altă opțiune față de steag)*
-2. Sub el:  
-   <span style="color:#9966FF;font-weight:700">spune</span> `Ai apăsat!` pentru `1` secundă →  
-   <span style="color:#4C97FF;font-weight:700">mergi</span> `30` pași
-3. **Nu** apeși steagul — dai **click pe personaj** pe scenă
-4. Vezi: același personaj, **două porniri** (steag ≠ click)
+**Încearcă tu — tastă și click (3–4 min)**  
+- [ ] La **spațiu** personajul spune `Bis!`  
+- [ ] La **click pe personaj** spune `Salut!`  
+- [ ] Schimbi tasta (de exemplu săgeată sus) și merge la fel  
 
-**Încearcă tu — click (2 min)**  
-- [ ] Script separat pe click  
-- [ ] Click pe personaj → mesaj + mișcare  
-- [ ] Steag → reset (înapoi la start)  
+### 2) Când se schimbă decorul
+1. Ai 2 decoruri, `Culise` și `Spectacol`
+2. Pe **Scenă**: <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span> → <span style="color:#9966FF;font-weight:700">schimbă decorul la</span> `Culise` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `5` → <span style="color:#9966FF;font-weight:700">decorul următor</span>
+3. Pe **personaj**: <span style="color:#E6A800;font-weight:700">când decorul se schimbă la</span> `Spectacol`  
+   Sub el: <span style="color:#9966FF;font-weight:700">spune</span> `Începe spectacolul!` pentru `2` secunde
+4. Apeși steagul: după 5 secunde decorul se schimbă și personajul vorbește
 
-### 3) Tasta spațiu
-1. Tot pe personaj, încă un script:  
-   <span style="color:#E6A800;font-weight:700">când tasta</span> `spațiu` <span style="color:#E6A800;font-weight:700">este apăsată</span>
-2. Sub el:  
-   <span style="color:#9966FF;font-weight:700">schimbă efectul culoare cu</span> `25`  
-   *(în <span style="color:#9966FF;font-weight:700">Aspect</span> — sau `următorul costum`, din L2)*
-3. Apeși **spațiu** — alt eveniment, altă reacție
+**Încearcă tu — decorul se schimbă (2–3 min)**  
+- [ ] Personajul vorbește **exact** când decorul trece la `Spectacol`  
+- [ ] Nu ai folosit steagul pe personajul care vorbește  
 
-*Atenție:* fiecare spațiu adaugă **încă** +25 la culoare (se **adună**). De aceea pe **steag** ai `anulează efectele grafice` — altfel, după multe apăsări, personajul arată „straniu” și nu mai știi de ce.
+### 3) Mesaje: difuzează și când primesc
+1. <span style="color:#E6A800;font-weight:700">difuzează</span> `magie` — **trimite** un semnal (mesaj) tuturor personajelor
+2. <span style="color:#E6A800;font-weight:700">când primesc</span> `magie` — pe alt personaj, **pornește** când aude mesajul
+3. Mesajul nou îl creezi din lista blocului (**Mesaj nou**) și îl scrii **la fel** în ambele locuri
+4. Exemplu: Magicianul <span style="color:#E6A800;font-weight:700">difuzează</span> `magie`, iar Iepurele <span style="color:#E6A800;font-weight:700">când primesc</span> `magie` → <span style="color:#9966FF;font-weight:700">spune</span> `Hop!` pentru `2` secunde
 
-**Încearcă tu — tastă (2 min)**  
-- [ ] Script pe spațiu  
-- [ ] Spațiu de 2–3 ori → culoarea se schimbă tot mai mult  
-- [ ] Steag → efectele dispar (reset)  
-- [ ] Salvat: `Prenume_Nume_L4`  
+**Încearcă tu — mesaje (3–4 min)**  
+- [ ] Un personaj difuzează `magie`  
+- [ ] Alt personaj aude și spune `Hop!`  
+- [ ] Mesajul are **același** nume în ambele blocuri  
 
-### 4) Buton + erou (două personaje) — pentru Complet
-1. Adaugi un **al doilea personaj** = butonul  
-2. Pe **buton**:  
-   <span style="color:#E6A800;font-weight:700">când se dă clic pe acest personaj</span> →  
-   <span style="color:#9966FF;font-weight:700">spune</span> `Go!` pentru `1` secundă  
-   *(opțional: <span style="color:#CF63CF;font-weight:700">sunet</span>)*
-3. Pe **erou** păstrezi: steag = reset · click și/sau spațiu = reacție  
-4. Așază butonul **lângă** erou, nu peste el  
-5. Test: steag → reset; click pe **buton** → „Go!”; click pe **erou** / spațiu → eroul reacționează  
+### 4) `difuzează … și așteaptă`
+1. <span style="color:#E6A800;font-weight:700">difuzează</span> trimite mesajul și personajul **merge mai departe imediat**
+2. <span style="color:#E6A800;font-weight:700">difuzează … și așteaptă</span> trimite mesajul și **așteaptă** să termine scriptul celui care îl primește
+3. Exemplu: Magicianul spune `Abracadabra!`, apoi <span style="color:#E6A800;font-weight:700">difuzează … și așteaptă</span> `magie`; abia după ce Iepurele termină, Magicianul spune `Ta-dam!`
+4. Dacă nimeni nu primește mesajul, `difuzează … și așteaptă` nu blochează nimic: scriptul merge mai departe
 
-**Încearcă tu — buton + erou (2–3 min)**  
-- [ ] Ai **2** personaje: butonul și eroul  
-- [ ] Click pe **buton** → spune `Go!`  
-- [ ] Click pe **erou** sau spațiu → eroul reacționează  
+**Încearcă tu — așteaptă răspunsul (3 min)**  
+- [ ] Magicianul continuă **după** ce Iepurele termină  
+- [ ] Fără Iepure, Magicianul își termină scriptul singur  
 
 ---
 
 ## Greșeli frecvente
-1. **„Nu merge click-ul”** — apeși steagul, dar scriptul e pe click. Click **pe personaj**, pe scenă.  
-2. **Script pe personajul greșit** — verifică cine e selectat în listă.  
-3. **Click-ul lovește alt personaj** — butonul e peste erou; așază personajele separat.  
-4. **La steag rămâne haos** — lipsește `du-te la` pe erou.  
-5. **Tasta „nu face nimic”** — click întâi pe scenă, apoi spațiu; verifică că e chiar `spațiu`.  
-6. **Culoarea nu mai „revine”** — fiecare spațiu adaugă +25; pe steag trebuie <span style="color:#9966FF;font-weight:700">anulează efectele grafice</span>.  
-7. **Nume fișier** — `Prenume_Nume_L4`, nu doar `Ana_L4`.
+1. **Nu pornește la tastă** — dai o dată click pe **scenă**, apoi apeși tasta.  
+2. **Mesajul nu ajunge** — numele din `difuzează` și din `când primesc` nu e același mesaj (`magie` și `magia` sunt mesaje diferite).  
+3. **Replicile se calcă** — apeși **spațiu** în timpul spectacolului. Apasă după ce se termină.  
+4. **`când primesc` pe personajul greșit** — selectează personajul care trebuie să **audă** mesajul.  
+5. **`când decorul se schimbă la` nu pornește** — în bloc e alt decor sau decorul nu se schimbă.  
+6. **Sunet după sunet / costum după costum** — pune între ele alt bloc.  
+7. **`decorul următor` nu duce la `Spectacol`** — în lista de decoruri `Spectacol` trebuie să fie după `Culise`.  
+8. **Nume fișier** — `Prenume_Nume_L4`, nu doar `Ana_L4`.  
 
 ---
 
 ## De făcut azi — „Butonul magic”
 Salvat: `Prenume_Nume_L4`
 
-### Minim vs Complet
+### Minim vs Complet *(citește înainte să începi)*
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | **Pasul 1 + Pasul 2** — erou cu steag (reset) + **un** eveniment nou (click pe erou) |
-| **Complet (ținta orei)** | Minim + **Pasul 3** — tasta spațiu + personaj **buton** + test clar steag / buton / erou |
+| **Minim („am reușit”)** | **Pasul 1 + Pasul 2** — 2 decoruri + **Magicianul** cu ≥ 12 blocuri diferite |
+| **Complet (ținta orei)** | Minim + **Iepurele** cu ≥ 8 blocuri diferite, care răspunde la mesajele Magicianului |
 
-Dacă rămâi în urmă: salvează la **Minim**.  
+Dacă rămâi în urmă: salvează la **Minim**. Nu e eșec.  
 Cei rapizi: Complet, apoi Bonus.
 
-### Pasul 1 — Personajul (eroul)
-- [ ] Un **erou** pe scenă  
-- [ ] La steag: `du-te la` start + `anulează efectele grafice` + mesaj scurt  
+### Pasul 1 — Locul *(Minim)*
+Adaugi 2 decoruri, `Culise` și `Spectacol` (în această ordine), și redenumești personajele: `Magicianul`, `Iepurele`, `Porumbelul`. Pe **Scenă** faci scriptul:
 
-### Pasul 2 — Un eveniment nou *(parte din Minim)*
-*(Ca la „Încearcă tu — click”.)*
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#9966FF;font-weight:700">schimbă decorul la</span> `Culise`  
+<span style="color:#FFAB19;font-weight:700">așteaptă</span> `5` secunde  
+<span style="color:#9966FF;font-weight:700">decorul următor</span>  
 
-- [ ] Click pe **erou** → ceva vizibil (`spune` + `mergi` sau similar)  
-- [ ] Steag ≠ click (testezi separat)  
+- [ ] `Culise` primul în listă, `Spectacol` al doilea  
+- [ ] Scriptul e pe **Scenă**  
+
+### Pasul 2 — Magicianul *(Minim)*
+Alegi un magician din bibliotecă, cu cel puțin 2 costume. Are **3 scripturi**, fiecare cu alt început. Ordinea e un **model**: poți schimba textele, numerele și mesajele.
+
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#4C97FF;font-weight:700">mergi la x:</span> `-120` <span style="color:#4C97FF;font-weight:700">y:</span> `-60`  
+<span style="color:#4C97FF;font-weight:700">orientează-te în direcția</span> `90`  
+<span style="color:#9966FF;font-weight:700">spune</span> `Doamnelor și domnilor!` pentru `3` secunde  
+
+<span style="color:#E6A800;font-weight:700">când decorul se schimbă la</span> `Spectacol`  
+<span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(un sunet potrivit)*  
+<span style="color:#9966FF;font-weight:700">spune</span> `Abracadabra!` pentru `2` secunde  
+<span style="color:#E6A800;font-weight:700">difuzează … și așteaptă</span> `magie`  
+<span style="color:#FFAB19;font-weight:700">repetă</span> `4` → <span style="color:#9966FF;font-weight:700">costumul următor</span> → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
+<span style="color:#9966FF;font-weight:700">gândește</span> `Ta-dam!` pentru `2` secunde  
+<span style="color:#9966FF;font-weight:700">schimbă costumul la</span> *(un costum ales de tine)*  
+
+<span style="color:#E6A800;font-weight:700">când tasta</span> `spațiu` <span style="color:#E6A800;font-weight:700">este apăsată</span>  
+<span style="color:#9966FF;font-weight:700">spune</span> `Bis!` pentru `2` secunde  
+<span style="color:#E6A800;font-weight:700">difuzează</span> `bis`  
+
+- [ ] `schimbă costumul la` **nu** stă lângă `costumul următor`  
+- [ ] Nu ai sunet după sunet, nici costum după costum  
+- [ ] Fără Iepure, Magicianul își termină scriptul singur  
+- [ ] **Spațiu** îl apeși după ce se termină spectacolul  
 - [ ] Salvat: `Prenume_Nume_L4`  
 
-**→ Minim când:** steagul resetează; click pe erou face altceva.
+**→ Minim când:** decorul trece la `Spectacol`, Magicianul face magia, iar la **spațiu** spune `Bis!`.
 
-### Pasul 3 — Tastă + buton *(Complet)*
-*(Ca la „Încearcă tu — tastă” + pasul 4.)*
+### Pasul 3 — Iepurele *(Complet)*
+Alegi un iepure sau alt personaj, cu cel puțin 2 costume. Are **3 scripturi**:
 
-- [ ] Tasta **spațiu** → schimbă aspect (culoare sau costum)  
-- [ ] Al 2-lea personaj = **buton**; click pe buton → „Go!” (sau sunet)  
-- [ ] Un coleg știe **ce face steagul** și **ce face butonul**, fără explicație  
-- [ ] Salvat din nou  
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#4C97FF;font-weight:700">mergi la x:</span> `80` <span style="color:#4C97FF;font-weight:700">y:</span> `-80`  
+<span style="color:#4C97FF;font-weight:700">orientează-te spre</span> `Magicianul`  
 
-**Gata Complet când:** steag = reset; buton = „magie”; eroul are încă un eveniment (click sau spațiu).
+<span style="color:#E6A800;font-weight:700">când primesc</span> `magie`  
+<span style="color:#FFAB19;font-weight:700">repetă</span> `6` → <span style="color:#9966FF;font-weight:700">costumul următor</span> → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
+<span style="color:#4C97FF;font-weight:700">glisează în</span> `2` <span style="color:#4C97FF;font-weight:700">secunde la [poziție aleatoare]</span>  
+<span style="color:#9966FF;font-weight:700">spune</span> `Hop!` pentru `2` secunde  
+<span style="color:#9966FF;font-weight:700">schimbă costumul la</span> *(un costum ales de tine)*  
+
+<span style="color:#E6A800;font-weight:700">când se dă click pe acest personaj</span>  
+<span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(un sunet potrivit)*  
+<span style="color:#9966FF;font-weight:700">spune</span> `Nu mă gâdila!` pentru `2` secunde  
+<span style="color:#4C97FF;font-weight:700">mergi la [poziție aleatoare]</span>  
+
+- [ ] Se uită spre Magician la steag  
+- [ ] La mesajul `magie` face animația, glisează și spune `Hop!`  
+- [ ] La click pe el spune `Nu mă gâdila!` și sare în alt loc  
+- [ ] Salvat din nou: `Prenume_Nume_L4`  
+
+**Gata Complet când:** Magicianul spune `Abracadabra!`, Iepurele răspunde, apoi Magicianul spune `Ta-dam!`, fără explicație cu vocea.
 
 ---
 
 ## Bonus (dacă ai terminat Complet)
-- [ ] La tasta **săgeată dreapta**: eroul <span style="color:#4C97FF;font-weight:700">mergi</span> `10`  
-- [ ] Butonul își schimbă **costumul** când e apăsat (`următorul costum` pe click)  
-- [ ] La spațiu: `spune` un mesaj secret + `așteaptă` `1`  
-- [ ] ★★★ **Provocare:** **Trei reguli diferite** în același proiect: una la steag, una la click pe personaj și una la o tastă. Fiecare face altceva, iar la steag totul revine la început.
+- [ ] **Al 3-lea personaj** (Porumbelul), care răspunde la `bis`:
 
-*(Nu folosim azi **mesaje** / *broadcast* — `trimite` / `când primesc`. Vin în **Modulul 2**. Azi rămânem la steag, click și tastă.)*
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#4C97FF;font-weight:700">mergi la x:</span> `0` <span style="color:#4C97FF;font-weight:700">y:</span> `100`  
+
+<span style="color:#E6A800;font-weight:700">când primesc</span> `bis`  
+<span style="color:#FFAB19;font-weight:700">repetă</span> `6` → <span style="color:#4C97FF;font-weight:700">rotește-te ↻</span> `30` grade → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
+<span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(un sunet potrivit)*  
+<span style="color:#9966FF;font-weight:700">spune</span> `Cu-cu!` pentru `2` secunde  
+<span style="color:#4C97FF;font-weight:700">glisează în</span> `2` <span style="color:#4C97FF;font-weight:700">secunde la x:</span> `0` <span style="color:#4C97FF;font-weight:700">y:</span> `100`  
+
+<span style="color:#E6A800;font-weight:700">când se dă click pe acest personaj</span>  
+<span style="color:#9966FF;font-weight:700">gândește</span> `Cu-cu! Ai apăsat pe mine!` pentru `2` secunde  
+<span style="color:#9966FF;font-weight:700">schimbă costumul la</span> *(un costum ales de tine)*  
+
+- [ ] ★★★ **Provocare:** o a doua tastă (de exemplu săgeată sus) difuzează un mesaj nou, iar Iepurele face la el altceva
 
 ## Recapitulare rapidă
-1. **Eveniment** = ce pornește scriptul (steag, click, tastă)  
-2. Un personaj poate avea **mai multe** scripturi  
-3. Steagul = start + **reset** (loc + efecte)  
-4. Nume: **`Prenume_Nume_L4`**  
+1. Fiecare „când …” e un **început de script**, nu are nevoie de steag  
+2. `difuzează` trimite un mesaj · `când primesc` îl aude  
+3. `difuzează … și așteaptă` așteaptă să termine cel care primește  
+4. Numele mesajului trebuie să fie **identic** în ambele blocuri  
+5. Nu ai sunet după sunet, nici costum după costum  
+6. Nume: **`Prenume_Nume_L4`**  
 
 ## Schema pe scurt *(pe foaie)*
 
-**Script 1 — steag**  
-la steag → `du-te la` start → `anulează efectele grafice` → …
+**Pe Scenă**  
+la steag → `schimbă decorul la` Culise → `așteaptă` … → `decorul următor`
 
-**Script 2 — click pe personaj**  
-când se dă clic pe acest personaj → `modifică efectul culoare` …
+**Pe Magician**  
+la steag → `mergi la x: y:` → `orientează-te în direcția` → `spune`  
+când decorul se schimbă la Spectacol → `pornește sunetul` → `spune` → `difuzează … și așteaptă` → `repetă` (`costumul următor` + `așteaptă`) → `gândește` → `schimbă costumul la`  
+când tasta spațiu → `spune` → `difuzează`
 
-**Script 3 — tastă** *(Complet)*  
-când se apasă tasta spațiu → …
+**Pe Iepure**  
+la steag → `mergi la x: y:` → `orientează-te spre`  
+când primesc magie → `repetă` (`costumul următor` + `așteaptă`) → `glisează la [aleatoare]` → `spune` → `schimbă costumul la`  
+când click pe personaj → `pornește sunetul` → `spune` → `mergi la [aleatoare]`
 
 **Quiz scurt (cu profesorul):**  
-- Steagul și click-ul fac același lucru?  
-- De ce anulăm efectele la steag?  
-- Unde găsești blocurile de evenimente?
+- Ce diferență e între `difuzează` și `difuzează … și așteaptă`?  
+- Ce face `când primesc`?  
+- De ce trebuie să fie același nume la mesaj?  
+- Ce se întâmplă dacă nimeni nu primește mesajul?
 
-## Temă
-Opțional: dacă ai doar Minim, adaugi acasă butonul sau spațiul — același `Prenume_Nume_L4`.
+## Temă (opțional)
+- Dacă ai doar Minim: adaugi acasă Iepurele, în același `Prenume_Nume_L4`.  
+- Dacă ai Complet: adaugi acasă al 3-lea personaj, în același `Prenume_Nume_L4`.  
+- Dacă ai terminat și Bonusul: faci o copie și schimbi povestea (alte personaje, alte replici, alte mesaje).

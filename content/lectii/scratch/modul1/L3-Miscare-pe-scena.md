@@ -89,7 +89,7 @@ La finalul orei muți personaje cu blocuri din <span style="color:#4C97FF;font-w
 1. **Nu se mișcă** — blocurile sunt pe **Scenă**; Scena nu „merge”. Selectează personajul.  
 2. **Dispare de pe scenă** — prea mulți pași; pune `mergi la x: y:` la start.  
 3. **Pleacă din alt loc la al doilea steag** — lipsește `mergi la x: y:` chiar sub steag.  
-4. **Se rotește în partea greșită** — `↻` merge spre dreapta, `↺` spre stânga.  
+4. **Se rotește în partea greșită** — `↻` întoarce personajul spre dreapta, `↺` îl întoarce spre stânga.  
 5. **`orientează-te spre` nu face nimic** — nu ai ales personajul din listă sau nu ai al doilea personaj.  
 6. **Sunet după sunet / costum după costum** — pune între ele alt bloc.  
 7. **`decorul următor` nu duce la `Spațiu`** — în lista de decoruri `Spațiu` trebuie să fie după `Pământ`.  
