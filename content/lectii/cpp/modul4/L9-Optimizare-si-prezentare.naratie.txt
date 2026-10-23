@@ -8,7 +8,7 @@ Primul pas. Ce înseamnă cod bun. Un cod bun face ce trebuie, se citește ușor
 
 Al doilea pas. Refactorizare. Refactorizarea înseamnă că păstrezi exact aceeași funcționalitate, dar scrii codul mai clar. Pornești de la un program încâlcit. Alegi nume care spun ceva. Înlocuiești numerele scrise direct în cod cu constante. Împarți codul în funcții mici, fiecare cu un singur scop. Elimini repetițiile. Reduci nivelurile de if, ieșind mai devreme din funcție. Simplifici expresiile logice. Atenție: după curățare, programul trebuie să facă exact același lucru.
 
-Al treilea pas. Optimizare. Înainte să grăbești ceva, măsori. Cu biblioteca chrono măsori cât durează o operație. Compari căutarea liniară cu cea binară și vezi diferența. Nu repeta calcule costisitoare. Provocare opțională: frecvențe cu un vector de numărare, în loc de două bucle imbricate. Regula: nu optimiza înainte să măsori.
+Al treilea pas. Optimizare. Înainte să accelerezi ceva, măsori. Cu biblioteca chrono măsori cât durează o operație. Compari căutarea liniară cu cea binară și vezi diferența. Nu repeți calcule costisitoare. Provocare opțională: frecvențe cu un vector de numărare, în loc de două bucle imbricate. Regula: nu optimiza înainte să măsori.
 
 Al patrulea pas. Teste automate. Scrii un mic cadru de teste: pentru fiecare funcție verifici câteva cazuri, inclusiv cazurile limită. Poți testa citirea și fără tastatură, cu istringstream. Testele nu înlocuiesc gândirea, dar te protejează când schimbi codul.
 

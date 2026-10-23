@@ -14,7 +14,7 @@ Al treilea pas. Testul scurt. Zece minute, fără calculator. Spui ce afișează
 
 Al patrulea pas. Proiectul. Catalogul de note are un meniu într-un do while. Opțiunile sunt: adaugi un elev, afișezi catalogul, afli statisticile, cauți un elev, vezi clasamentul și ștergi un elev. În varianta de bază faci adăugarea, afișarea și statisticile. În varianta completă adaugi căutarea, clasamentul și ștergerea.
 
-Atenție la situațiile limită. Dacă ai trei elevi și ceri statistici, merge. Dar dacă e gol, nu împărți la zero. Dacă e plin, nu mai adăuga. Dacă numele nu există, spune asta.
+Atenție la situațiile limită. Dacă ai trei elevi și ceri statistici, merge. Dar dacă e gol, nu împarți la zero. Dacă e plin, nu mai adaugi. Dacă numele nu există, spui asta.
 
 Greșeli frecvente. Catalogul uită elevii, pentru că ai declarat variabilele în interiorul buclei. După sortare, numele nu se potrivesc cu notele, pentru că ai sortat un singur vector. Media este greșită, pentru că împarți la numărul maxim de locuri, nu la n. La ștergere rămâne un gol, pentru că ai uitat să micșorezi n. Se pot adăuga mai mult de treizeci de elevi, pentru că lipsește verificarea.
 

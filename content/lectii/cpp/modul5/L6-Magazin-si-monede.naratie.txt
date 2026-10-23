@@ -8,7 +8,7 @@ Primul pas. Produsele. Faci o listă cu numele și prețurile, de exemplu într-
 
 Al doilea pas. Funcția cumpără. Verifică monedele, scade prețul, pune produsul în rucsac și afișează un mesaj. Apoi faci meniul magazinului, în care alegi produsul sau ieși. Magazinul poate fi accesat doar într-o anumită cameră, de exemplu la negustorul Pip, în Sala Mare.
 
-Al treilea pas. Vânzarea. Eroul vinde un obiect din rucsac la jumătate din preț. Atenție: nu lăsa să se vândă obiectele de care ai nevoie ca să termini jocul, de exemplu cheia.
+Al treilea pas. Vânzarea. Eroul vinde un obiect din rucsac la jumătate din preț. Atenție: nu lași să se vândă obiectele de care ai nevoie ca să termini jocul, de exemplu cheia.
 
 Al patrulea pas. Obiecte care te ajută. Un scut reduce loviturile primite, iar o amuletă crește atacul. Bonusurile se calculează din rucsac, în funcție de ce are eroul. Elixirul vindecă mai mult decât poțiunea.
 

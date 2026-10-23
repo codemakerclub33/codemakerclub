@@ -6,7 +6,7 @@ Obiectivul. Minim: variabile bool pentru misiuni și un mesaj la câștig. Compl
 
 Primul pas. Steaguri și misiuni. Un steag este o variabilă bool care spune dacă ceva a avut loc: ai luat cheia, ai învins goblinul, ai deschis cufărul. Cu ele faci lista de misiuni, în care fiecare misiune are o bifă când este îndeplinită. Comanda misiuni o afișează.
 
-Al doilea pas. Câștig și pierdere. Cufărul se deschide doar dacă ai cheia și ești în turn. Pentru asta folosești și între condiții. Pierderea apare când viața ajunge la zero. Ecranul final are trei situații: ai câștigat, ai pierdut sau ai ieșit singur cu comanda ieșire. La ieșire singur nu trebuie să apară mesajul că ai pierdut.
+Al doilea pas. Câștig și pierdere. Cufărul se deschide doar dacă ai cheia și ești în turn. Pentru asta folosești operatorul și între condiții. Pierderea apare când viața ajunge la zero. Ecranul final are trei situații: ai câștigat, ai pierdut sau ai ieșit singur cu comanda ieșire. La ieșire singur nu trebuie să apară mesajul că ai pierdut.
 
 Al treilea pas. Cufărul și scorul. Comanda deschide dă mesaje diferite pentru fiecare caz: nu ești în turn, nu ai cheia sau ai reușit. Scorul final se calculează din monede, viață rămasă și misiuni. Mai poți adăuga un indiciu pentru jucător, care îi spune următorul pas, în funcție de steaguri.
 
@@ -20,4 +20,4 @@ Greșeli frecvente. Cufărul se deschide fără cheie, pentru că lipsește cond
 
 Tema. Termini exercițiul A și joci toate cele trei finaluri. Joci cu un coleg sau cu un părinte, fără să explici nimic, și notezi unde se încurcă. Te gândești ce ar trebui să rămână dacă jucătorul închide jocul la jumătate. Salvezi ca Joc, linie jos, L patruzeci și șapte.
 
-Recapitulare. Steagurile ții minte ce a avut loc. Condițiile decid câștigul și pierderea. Succes!
+Recapitulare. Steagurile țin minte ce a avut loc. Condițiile decid câștigul și pierderea. Succes!

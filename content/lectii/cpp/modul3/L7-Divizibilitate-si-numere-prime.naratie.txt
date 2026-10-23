@@ -10,11 +10,11 @@ Al doilea pas. Optimizare. Divizorii vin în perechi, așa că ajunge să verifi
 
 Al treilea pas. Numere prime. Un număr prim are exact doi divizori. Zero și unu nu sunt prime, iar doi este singurul prim par. Funcția este prim întoarce fals dacă n este mai mic ca doi, apoi încearcă pe rând d de la doi, cât timp d ori d este mai mic sau egal cu n, și întoarce fals dacă găsește un divizor. Dacă nu, întoarce adevărat. Cu ea afișezi numerele prime dintr-un interval sau găsești următorul număr prim.
 
-Al patrulea pas. Factori primi, cmmdc și cmmmc. Pentru descompunere, la fiecare d împarți cât timp se poate, cu while. Dacă la final a rămas ceva mai mare ca unu, acela este ultimul factor. Cel mai mare divizor comun îl afli cu algoritmul lui Euclid: cât timp b nu este zero, schimbi a cu b și b cu restul. Cel mai mic multiplu comun este a împărțit la cmmdc, înmulțit cu b. Cu ele simplifici o fracție.
+Al patrulea pas. Factori primi, cel mai mare divizor comun și cel mai mic multiplu comun. Pentru descompunere, la fiecare d împarți cât timp se poate, cu while. Dacă la final a rămas ceva mai mare ca unu, acela este ultimul factor. Cel mai mare divizor comun îl afli cu algoritmul lui Euclid: cât timp b nu este zero, schimbi a cu b și b cu restul. Cel mai mic multiplu comun este a împărțit la cel mai mare divizor comun, înmulțit cu b. Cu ele simplifici o fracție.
 
 Al cincilea pas. Numere speciale. Numere perfecte, numere prime gemene, ciurul lui Eratostene și conjectura lui Goldbach, provocări opționale. Proiectul este Laboratorul de numere.
 
-Greșeli frecvente. Unu apare ca prim, pentru că lipsește verificarea n mai mic ca doi. Patru apare ca prim, pentru că bucla pornește greșit. Programul rulează lent, pentru că verifici până la n. Cmmmc este greșit la numere mari, pentru că înmulțirea depășește int. Factorii se afișează de două ori, pentru că ai folosit if în loc de while. Lipsește ultimul factor prim.
+Greșeli frecvente. Unu apare ca prim, pentru că lipsește verificarea n mai mic ca doi. Patru apare ca prim, pentru că bucla pornește greșit. Programul rulează lent, pentru că verifici până la n. Cel mai mic multiplu comun este greșit la numere mari, pentru că înmulțirea depășește int. Factorii se afișează de două ori, pentru că ai folosit if în loc de while. Lipsește ultimul factor prim.
 
 Tema. Citești un număr și afli dacă este prim, câți divizori are, suma lor și factorii primi. Afișezi perechile de numere prime gemene dintre o sută și trei sute. Salvezi ca Tema, linie jos, M trei, L șapte.
 

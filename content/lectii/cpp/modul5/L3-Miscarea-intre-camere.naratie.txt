@@ -14,7 +14,7 @@ Al patrulea pas. Alte comenzi. Ajutor, care listează comenzile, stare, care ara
 
 Al cincilea pas. Jocul lecției. Te plimbi prin castel.
 
-Greșeli frecvente. Programul se oprește când mergi spre un perete, pentru că nu ai verificat minus unu. Apar valori ciudate sau eroare de memorie, pentru că ai ieșit din tablou. Eroul nu se mută, deși mutarea a reușit, pentru că ai uitat să schimbi camera curentă. Jocul se blochează când nu mai vine nimic de la tastatură. Comanda Nord cu N mare nu este recunoscută: transformă literele în mici.
+Greșeli frecvente. Programul se oprește când mergi spre un perete, pentru că nu ai verificat minus unu. Apar valori ciudate sau eroare de memorie, pentru că ai ieșit din tablou. Eroul nu se mută, deși mutarea a reușit, pentru că ai uitat să schimbi camera curentă. Jocul se blochează când intrarea se termină și nu mai vine nimic de la tastatură: ieși din buclă când citirea eșuează. Comanda Nord cu N mare nu este recunoscută: transformă literele în mici.
 
 Tema. Termini exercițiul A și te plimbi prin castel de cel puțin două ori, încercând și drumurile imposibile. Desenezi pe hârtie harta ta, cu șase camere, și completezi pentru fiecare rândul cu ieșiri. Salvezi ca Joc, linie jos, L patruzeci și trei.
 

@@ -6,7 +6,7 @@ Obiectivul. Minim: un program care spune dacă un număr există într-un vector
 
 Primul pas. Există valoarea? Folosești o variabilă bool, numită de exemplu gasit, care pornește pe fals. Parcurgi vectorul și, când găsești valoarea, o pui pe adevărat. Atenție: nu o pui înapoi pe fals în interiorul buclei, pentru că ai pierde rezultatul.
 
-Al doilea pas. Pe ce poziție? Folosești o variabilă poziție, care pornește de la minus unu, adică negăsit. Când găsești valoarea, pui în ea indicele și oprești bucla cu break. Poți căuta și cu while, care se oprește singur. În while, scrie întâi condiția pe indice: i mai mic ca n, și abia apoi comparația cu valoarea.
+Al doilea pas. Pe ce poziție? Folosești o variabilă poziție, care pornește de la minus unu, adică negăsit. Când găsești valoarea, pui în ea indicele și oprești bucla cu break. Poți căuta și cu while, care se oprește singur. În while, scrii întâi condiția pe indice: i mai mic ca n, și abia apoi comparația cu valoarea.
 
 Al treilea pas. De câte ori apare, toate pozițiile și ultima apariție. Pentru numărare folosești un contor. Pentru ultima apariție parcurgi tot vectorul și reții ultima poziție găsită. Mai poți afla dacă toate numerele sunt pozitive, căutând un contraexemplu, sau dacă există duplicate.
 

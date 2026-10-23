@@ -4,7 +4,7 @@ Lecția doi din Modulul patru. Vector din S-T-L: lista care crește singură.
 
 Obiectivul. Minim: push back, size și parcurgerea unui vector cu for. Complet: minim, plus funcții care primesc vectorul prin referință și proiectul Lista de note, cu meniu și salvare în fișier.
 
-Primul pas. Primul vector. Scrii include vector, apoi vector, între semnele mai mic și mai mare tipul, apoi numele. Fără tip primești o eroare. Cu push back adaugi la sfârșit, iar cu size afli câte elemente are. Poți da valori de la început sau să parcurgi vectorul cu un for obișnuit sau cu for pe elemente.
+Primul pas. Primul vector. Scrii include vector, apoi vector, între semnele mai mic și mai mare tipul, apoi numele. Fără tip primești o eroare. Cu push back adaugi la sfârșit, iar cu size afli câte elemente are. Poți da valori de la început și poți parcurge vectorul cu un for obișnuit sau cu for pe elemente.
 
 Al doilea pas. Un număr necunoscut de valori. Citești note până la zero și le pui în vector, fără să știi dinainte câte sunt. Citești la fel un fișier întreg într-un vector. Atenție: pozițiile valide sunt de la zero până la size minus unu. În afara lor, programul dă valori ciudate.
 

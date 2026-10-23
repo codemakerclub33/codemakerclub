@@ -4,7 +4,7 @@ Astăzi programul tău învață să asculte: citește numere de la tastatură, 
 
 Obiectivul. Minim: un program care citește două numere și afișează suma și produsul. Complet: minim, plus câtul și restul împărțirii, mesaje clare pentru utilizator și test cu cel puțin două seturi de numere.
 
-Primul pas. C-in. Scrii c-in, apoi două semne mai mare, apoi numele variabilei. Programul se oprește și așteaptă să tastezi un număr și să apeși Enter. Ține minte săgețile: la c-out merg spre afară, adică semne mai mic, iar la c-in merg spre variabilă, adică semne mai mare. Poți citi mai multe numere deodată, puse unul după altul. Înainte de fiecare c-in, afișează un mesaj, ca cel care folosește programul să știe ce să introducă.
+Primul pas. C-in. Scrii c-in, apoi două semne mai mare, apoi numele variabilei. Programul se oprește și așteaptă să tastezi un număr și să apeși Enter. Ține minte săgețile: la c-out merg spre afară, adică semne mai mic, iar la c-in merg spre variabilă, adică semne mai mare. Poți citi mai multe numere deodată, puse unul după altul. Înainte de fiecare c-in, afișezi un mesaj, ca cel care folosește programul să știe ce să introducă.
 
 Al doilea pas. Împărțirea și restul. Cu numere întregi, semnul slash dă câtul, fără zecimale. Semnul procent dă restul. De exemplu, șapte împărțit la doi dă trei, iar restul este unu. Capcana: șapte împărțit la doi nu dă trei virgulă cinci, pentru că tipul int nu are zecimale. Zecimalele le vei învăța în lecția următoare. Mai ține minte ordinea operațiilor: mai întâi parantezele, apoi înmulțirea, împărțirea și restul, apoi adunarea și scăderea.
 

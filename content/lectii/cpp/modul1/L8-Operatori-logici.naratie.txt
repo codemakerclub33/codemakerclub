@@ -8,13 +8,13 @@ Primul pas. Cei trei operatori. Două semne ampersand înseamnă „și”: cond
 
 Al doilea pas. Intervale. Dacă vrei ca un număr să fie între unu și o sută, scrii x mai mare sau egal cu unu, și, x mai mic sau egal cu o sută. În afara intervalului scrii x mai mic ca unu, sau, x mai mare ca o sută. Cu aceeași idee afli ce fel de caracter este o literă și dacă este vocală.
 
-Al treilea pas. Parantezele. Ordinea este: mai întâi „nu”, apoi „și”, apoi „sau”. Când le amesteci, pune paranteze, ca să nu ai surprize.
+Al treilea pas. Parantezele. Ordinea este: mai întâi „nu”, apoi „și”, apoi „sau”. Când le amesteci, pui paranteze, ca să nu ai surprize.
 
 Al patrulea pas. Probleme și proiecte. Anul bisect, un login cu două condiții, triunghiul, piatră foarfecă hârtie, parcul de distracții și poarta jocului.
 
 Un sfat bun: spune regula în română, cu voce tare, înainte să o scrii în cod. Fiecare parte a lui „și” sau „sau” trebuie să fie o condiție completă.
 
-Greșeli frecvente. Ai scris x egal unu sau doi, fără să repeți x. Ai încercat să lanțuiești comparațiile, de exemplu unu mai mic sau egal cu x mai mic sau egal cu zece. Ai scris un singur ampersand sau o singură bară verticală. Ai folosit semnul exclamării fără paranteze, așa că se aplică doar primului număr. Ai confundat „și” cu „sau”. Ai pus prea multe condiții într-un singur if: împarte condițiile în variabile bool cu nume clare.
+Greșeli frecvente. Ai scris x egal unu sau doi, fără să repeți x. Ai încercat să înlănțui comparațiile, de exemplu unu mai mic sau egal cu x mai mic sau egal cu zece. Ai scris un singur ampersand sau o singură bară verticală. Ai folosit semnul exclamării fără paranteze, așa că se aplică doar primului număr. Ai confundat „și” cu „sau”. Ai pus prea multe condiții într-un singur if: împarte condițiile în variabile bool cu nume clare.
 
 Tema. Citești un an și afli dacă este bisect, cu o variabilă bool. Citești trei numere și vezi dacă sunt toate pozitive. Faci programul Alegerea echipei, după vârstă și nivel. Salvezi ca Tema, linie jos, L opt.
 

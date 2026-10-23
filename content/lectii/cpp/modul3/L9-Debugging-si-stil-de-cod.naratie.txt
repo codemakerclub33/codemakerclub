@@ -6,7 +6,7 @@ Obiectivul. Minim: repari trei dintre cele cinci programe din proiect. Complet: 
 
 Primul pas. Tipuri de erori. Eroarea de sintaxă apare la compilare, de exemplu un punct și virgulă lipsă. Eroarea de logică înseamnă că programul rulează, dar dă un rezultat greșit. Eroarea de execuție înseamnă că programul se oprește sau se blochează în timp ce rulează.
 
-Al doilea pas. Mesajele compilatorului. Uneori apar zeci de erori deodată, dar de multe ori ele vin dintr-una singură. Repară prima eroare și recompilează. Dacă eroarea apare pe o linie care pare corectă, uită-te la linia de dinainte.
+Al doilea pas. Mesajele compilatorului. Uneori apar zeci de erori deodată, dar de multe ori ele vin dintr-una singură. Repari prima eroare și recompilezi. Dacă eroarea apare pe o linie care pare corectă, te uiți la linia de dinainte.
 
 Al treilea pas. Greșeli clasice de logică. Cu unu mai puțin sau mai mult, de exemplu mai mic în loc de mai mic sau egal. Un singur egal în loc de două. Împărțire între numere întregi. Variabilă care nu a fost pusă la zero. Punct și virgulă după for sau if. Ordinea operațiilor. Buclă care nu se termină. Și o variabilă umbrită, adică una cu același nume declarată în interior.
 

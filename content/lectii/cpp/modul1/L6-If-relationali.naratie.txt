@@ -8,7 +8,7 @@ Primul pas. Operatorii de comparare. Mai mic, mai mare, mai mic sau egal, mai ma
 
 Al doilea pas. If. Scrii if, apoi condiția între paranteze, apoi blocul între acolade. Blocul se execută doar când condiția este adevărată. Poți pune mai multe if-uri la rând. Cu restul împărțirii la doi afli dacă un număr este par.
 
-Al treilea pas. Cea mai mare capcană: un singur egal pune o valoare, iar două egaluri compară. Dacă scrii un singur egal în condiție, programul nu compară nimic. Alte două capcane: nu pune punct și virgulă imediat după if și nu uita acoladele.
+Al treilea pas. Cea mai mare capcană: un singur egal pune o valoare, iar două egaluri compară. Dacă scrii un singur egal în condiție, programul nu compară nimic. Alte două capcane: nu pui punct și virgulă imediat după if și nu uiți acoladele.
 
 Al patrulea pas. Poți compara și alte tipuri: caractere, între apostrofuri, și texte, între ghilimele. Poți folosi direct și o variabilă bool.
 

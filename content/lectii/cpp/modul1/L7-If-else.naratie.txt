@@ -8,7 +8,7 @@ Primul pas. If și else. If alege un drum, iar else este drumul de rezervă, pe 
 
 Al doilea pas. Else if. Când ai mai mult de două drumuri, pui else if între if și else. Programul execută primul bloc a cărui condiție este adevărată și sare peste restul. Cu el faci calificativul unei note, semnul unui număr, prețul unui bilet în funcție de vârstă și un semafor cu litere. Else de la final prinde tot ce nu a fost acoperit și este locul pentru valorile neașteptate. Else nu are condiție, doar else if are.
 
-Al treilea pas. Ordinea contează. Dacă pui un caz larg înaintea unui caz restrictiv, cel restrictiv nu mai ajunge niciodată la rând. Așa că pune întâi cazul cel mai restrictiv. Testează și valorile de la graniță, de exemplu cinci, nouă și optsprezece.
+Al treilea pas. Ordinea contează. Dacă pui un caz larg înaintea unui caz restrictiv, cel restrictiv nu mai ajunge niciodată la rând. Așa că pui întâi cazul cel mai restrictiv. Testezi și valorile de la graniță, de exemplu cinci, nouă și optsprezece.
 
 Al patrulea pas. If în if. Când a doua întrebare depinde de prima, pui un if în interiorul altuia. Un exemplu este un login în doi pași: verifici întâi numele, apoi parola.
 
