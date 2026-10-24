@@ -109,9 +109,8 @@ Fiecare „când …” e un **început de script** de sine stătător. Nu are n
 3. **Replicile se calcă** — apeși **spațiu** în timpul spectacolului. Apasă după ce se termină.  
 4. **`când primesc` pe personajul greșit** — selectează personajul care trebuie să **audă** mesajul.  
 5. **`când decorul se schimbă la` nu pornește** — în bloc e alt decor sau decorul nu se schimbă.  
-6. **Sunet după sunet / costum după costum** — pune între ele alt bloc.  
-7. **`decorul următor` nu duce la `Spectacol`** — în lista de decoruri `Spectacol` trebuie să fie după `Culise`.  
-8. **Nume fișier** — `Prenume_Nume_L4`, nu doar `Ana_L4`.  
+6. **`decorul următor` nu duce la `Spectacol`** — în lista de decoruri `Spectacol` trebuie să fie după `Culise`.  
+7. **Nume fișier** — `Prenume_Nume_L4`, nu doar `Ana_L4`.  
 
 ---
 
@@ -160,7 +159,6 @@ Alegi un magician din bibliotecă, cu cel puțin 2 costume. Are **3 scripturi**,
 <span style="color:#E6A800;font-weight:700">difuzează</span> `bis`  
 
 - [ ] `schimbă costumul la` **nu** stă lângă `costumul următor`  
-- [ ] Nu ai sunet după sunet, nici costum după costum  
 - [ ] Fără Iepure, Magicianul își termină scriptul singur  
 - [ ] **Spațiu** îl apeși după ce se termină spectacolul  
 - [ ] Salvat: `Prenume_Nume_L4`  
@@ -217,8 +215,7 @@ Alegi un iepure sau alt personaj, cu cel puțin 2 costume. Are **3 scripturi**:
 2. `difuzează` trimite un mesaj · `când primesc` îl aude  
 3. `difuzează … și așteaptă` așteaptă să termine cel care primește  
 4. Numele mesajului trebuie să fie **identic** în ambele blocuri  
-5. Nu ai sunet după sunet, nici costum după costum  
-6. Nume: **`Prenume_Nume_L4`**  
+5. Nume: **`Prenume_Nume_L4`**  
 
 ## Schema pe scurt *(pe foaie)*
 

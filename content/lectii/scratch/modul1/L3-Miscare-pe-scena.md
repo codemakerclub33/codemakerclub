@@ -104,9 +104,8 @@ La finalul orei muți personaje cu blocuri din <span style="color:#4C97FF;font-w
 3. **Pleacă din alt loc la al doilea steag** — lipsește `mergi la x: y:` chiar sub steag.  
 4. **Se rotește în partea greșită** — `↻` întoarce personajul spre dreapta, `↺` îl întoarce spre stânga.  
 5. **`orientează-te spre` nu face nimic** — nu ai ales personajul din listă sau nu ai al doilea personaj.  
-6. **Sunet după sunet / costum după costum** — pune între ele alt bloc.  
-7. **`decorul următor` nu duce la `Spațiu`** — în lista de decoruri `Spațiu` trebuie să fie după `Pământ`.  
-8. **Nume fișier** — `Prenume_Nume_L3`, nu doar `Ana_L3`.
+6. **`decorul următor` nu duce la `Spațiu`** — în lista de decoruri `Spațiu` trebuie să fie după `Pământ`.  
+7. **Nume fișier** — `Prenume_Nume_L3`, nu doar `Ana_L3`.
 
 ---
 
@@ -150,7 +149,6 @@ Alegi o rachetă din bibliotecă (categoria Spațiu), cu cel puțin 2 costume. O
 <span style="color:#9966FF;font-weight:700">schimbă costumul la</span> *(un costum ales de tine)*  
 
 - [ ] `schimbă costumul la` **nu** stă lângă `costumul următor`  
-- [ ] Nu ai sunet după sunet, nici costum după costum  
 - [ ] Steag din nou → pleacă din același loc  
 - [ ] Salvat: `Prenume_Nume_L3`  
 
@@ -201,8 +199,7 @@ Alegi un extraterestru sau alt personaj. El pornește după Rachetă și se uit�
 2. `rotește-te ↻` = dreapta · `rotește-te ↺` = stânga  
 3. `orientează-te spre` = se uită spre alt personaj  
 4. Blocurile sunt pe **personaj**; la steag: `mergi la x: y:`  
-5. Nu ai sunet după sunet, nici costum după costum  
-6. Nume: **`Prenume_Nume_L3`**  
+5. Nume: **`Prenume_Nume_L3`**  
 
 ## Schema pe scurt *(pe foaie)*
 

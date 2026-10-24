@@ -91,5 +91,6 @@ L1 → L2 (gata, de aliniat la plan) → L3 → L4 → L5 → L6 → L7 → L8 �
 - Scripturile-model sunt doar în „De făcut azi” și în Bonus. „Pas cu pas” doar învață blocurile.
 - Nu apar numărul lecției și regula cu lecțiile anterioare.
 - Personajul 1 învață blocurile noi, personajul 2 recapitulează.
+- Regula „Nu ai sunet după sunet, nici costum după costum” se scrie **doar în L1 și L2** (Greșeli, bife, Recapitulare, narațiune). De la L3 în sus nu se mai repetă în text, dar scripturile o respectă în continuare.
 - Nu folosim „Exemplu de timp” (tabel cu secunde); sincronul se vede din `așteaptă` în scripturi.
 - Narațiunea urmează aceeași ordine, cu numerele scrise cu litere și fără simboluri.
