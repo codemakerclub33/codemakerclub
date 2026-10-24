@@ -1,33 +1,37 @@
 Lecția șapte. Comoara.
 
-Astăzi scena e o hartă. Înveți unde e personajul cu X și Y, apoi îl duci la comoară. Fișierul se numește Prenume, linie jos, Nume, linie jos, L șapte.
+Astăzi scena e o hartă: citești x și y, apoi îți duci personajul pe ele, ca să găsești comoara. Fișierul se numește Prenume, linie jos, Nume, linie jos, L șapte.
 
-Obiectivul. Citești x și y pe scenă și duci personajul într-un loc anume cu du-te la sau glisează. Minim: start, plus traseu cu cel puțin două opriri, plus spune la capăt. Complet: plus comoară vizibilă, al doilea personaj pe x și y, plus sunet, plus reset curat.
+Obiectivul. La finalul orei personajele tale se mută exact unde vrei, pe orizontală și pe verticală, cu blocuri din Mișcare. Minim: personajul unu, Piratul, cu cel puțin opt blocuri diferite. Complet: personajul doi, Papagalul, cu cel puțin opt blocuri diferite, care îl îndrumă pe Pirat.
 
-De ce contează. Ca pe o hartă sau în jocuri: știi unde e eroul, stânga sau dreapta, sus sau jos, ca să ajungă la țintă. În Scratch, poziția înseamnă coordonate.
+De ce contează. Ca pe o hartă sau în jocuri: știi unde e eroul, stânga sau dreapta, sus sau jos, ca să ajungă la țintă. În Scratch, poziția se numește coordonate.
 
-Primul pas pe ecran. Tragi personajul pe scenă. Vezi numerele x și y. X înseamnă stânga minus, sau dreapta plus. Y înseamnă jos minus, sau sus plus. Mijlocul e aproximativ zero zero.
+Capitolele de azi sunt aceleași cinci: Mișcare, Evenimente, Control, Aspect și Sunet. Toate blocurile noi sunt din Mișcare.
 
-Al doilea pas pe ecran. Metoda: trage, citește, scrie. Tragi unde vrei un punct. Citești x și y. Scrii aceleași numere în bloc. Nu ghici.
+Ce face fiecare bloc nou. Setează x la mută personajul exact pe poziția x aleasă: zero înseamnă mijlocul, numerele pozitive duc spre dreapta, iar cele negative spre stânga. Setează y la face la fel, pe verticală: numerele pozitive duc în sus, iar cele negative în jos. Modifică x cu mută personajul spre dreapta, dacă numărul e pozitiv, sau spre stânga, dacă numărul e negativ, pornind de unde e acum. Modifică y cu îl mută în sus, dacă numărul e pozitiv, sau în jos, dacă numărul e negativ.
 
-Al treilea pas pe ecran. La steag: du-te la zero zero. Personajul sare în mijloc. Du-te la înseamnă teleport: imediat, fără să se rotească singur.
+Primul pas pe ecran. Citești x și y. Scena e o hartă: mijlocul are x zero și y zero. X merge pe orizontală: spre dreapta numerele sunt pozitive, spre stânga sunt negative. Y merge pe verticală: în sus numerele sunt pozitive, în jos sunt negative. Selectezi personajul și îl tragi cu mouse-ul pe scenă. Sub scenă, în panoul personajului, vezi cum se schimbă x și y. Limitele hărții: x între minus două sute patruzeci și două sute patruzeci, y între minus o sută optzeci și o sută optzeci.
 
-Al patrulea pas pe ecran. Glisează într-o secundă la un punct citit de pe scenă. Du-te la înseamnă salt. Glisează înseamnă mișcare lină.
+Al doilea pas pe ecran. Setează x și y. Din Evenimente iei steagul. Din Mișcare pui setează x la minus două sute, apoi setează y la minus o sută. Apeși steagul: personajul sare exact în colțul din stânga jos, de oriunde ar fi fost. Așa îl pui la start, mereu în același loc.
 
-Al cincilea pas pe ecran. Chiar sub steag: du-te la start. Apoi glisează la un punct pe drum, așteaptă, glisează la comoară, spune Am găsit-o. Fără reset, la a doua rulare pleacă de unde a rămas.
+Al treilea pas pe ecran. Modifică x și y. Modifică x cu patruzeci mută personajul cu patruzeci spre dreapta, de unde e acum. Cu minus patruzeci se mută spre stânga. Modifică y cu treizeci îl mută cu treizeci în sus. Cu minus treizeci se mută în jos. Ca să se vadă drumul, le pui în repetă cinci, cu așteaptă zero virgulă trei. Diferența: modifică adaugă la poziția de acum, iar setează pune poziția exactă.
 
-Greșeli frecvente. Dacă ajunge în altă parte, ai confundat X cu Y, sau plus cu minus. Mută, citește din nou, corectează. Dacă dispare, x sau y sunt prea mari. Rămâi cam între minus două sute patruzeci și plus două sute patruzeci pe X, și între minus o sută optzeci și plus o sută optzeci pe Y. Dacă la steag nu reîncepe, lipsește du-te la start.
+Greșeli frecvente. Dacă personajul pornește din alt loc, nu ai pus la start setează x la și setează y la: fără ele continuă de unde a rămas. Dacă încurci modifică cu setează, modifică adaugă la poziția de acum, iar setează pune poziția exactă. Dacă merge în direcția greșită, pe verticală sus e pozitiv și jos e negativ, iar pe orizontală dreapta e pozitiv și stânga e negativ. Dacă personajul iese din scenă, x rămâne între minus două sute patruzeci și două sute patruzeci, iar y între minus o sută optzeci și o sută optzeci. Dacă se mută deodată, fără așteaptă între mutări nu se vede drumul: pune așteaptă zero virgulă trei în repetă. Dacă mesajul nu ajunge, numele din difuzează și din când primesc nu e același mesaj. Dacă ai greșit numele la salvare, adaugă și numele de familie.
 
 Proiectul de azi. Comoara.
 
-Minim înseamnă: start cu du-te la, cel puțin două opriri pe traseu, spune la capăt. Complet înseamnă: minim, plus comoară vizibilă ca al doilea personaj, plus sunet, plus reset clar. Dacă rămâi în urmă, salvează la Minim. La Minim, succesul e mesajul Am găsit-o la capăt.
+Minim înseamnă: harta cu sunete și Piratul cu cel puțin opt blocuri diferite. Complet înseamnă: minim, plus Papagalul, cu cel puțin opt blocuri diferite, care îl îndrumă pe Pirat. Dacă rămâi în urmă, salvează la Minim. Nu e eșec.
 
-În proiect, primul pas. Loc de start cu x și y citite. Știi pe scurt: X, Y, mijloc zero zero.
+În proiect, primul pas, pentru Minim. Harta. Alegi un decor de insulă. Redenumești personajele: Piratul, Papagalul și Comoara. Papagalul și Comoara primesc în tab-ul Sunete câte un sunet potrivit, de exemplu un strigăt pentru papagal și un clinchet pentru comoară.
 
-În proiect, al doilea pas. Cel puțin două glisează sau du-te la pe drum. Spune la capăt. Steag de două ori, același start. Salvezi.
+În proiect, al doilea pas, pentru Minim. Piratul. Alegi un personaj din bibliotecă care seamănă cu un pirat sau cu un explorator. La steag: setează x la minus două sute. Apoi setează y la minus o sută. Apoi spune Unde e comoara, două secunde. Apoi difuzează și așteaptă ajutor. Apoi repetă cinci, înăuntru modifică x cu patruzeci și așteaptă zero virgulă trei. Apoi repetă patru, înăuntru modifică y cu treizeci și așteaptă zero virgulă trei. Apoi gândește Aici trebuie să fie, două secunde. La final, difuzează găsit. Este un model: poți schimba textele, numerele și mesajele. Fără Papagal, Piratul își termină scriptul singur. Salvezi.
 
-În proiect, al treilea pas, pentru Complet. Al doilea personaj e comoara, așezat pe x și y citite. Un sunet la final. Reset curat pe steag. Salvezi din nou.
+În proiect, al treilea pas, pentru Complet. Papagalul. Alegi un papagal sau altă pasăre. Are două scripturi, iar al doilea răspunde când Piratul cere ajutor. Primul, la steag: setează x la o sută optzeci. Apoi setează y la o sută. Apoi setează mărimea la optzeci la sută. Apoi setează volumul la șaizeci la sută. Al doilea, când primesc ajutor: orientează-te spre Piratul. Apoi spune Mergi la dreapta, apoi în sus, trei secunde. Apoi pornește un strigăt de papagal. Apoi repetă trei, înăuntru modifică y cu minus zece și așteaptă zero virgulă trei. La final, modifică efectul culoare cu douăzeci și cinci. Salvezi din nou.
 
-Recapitulare. X stânga dreapta. Y jos sus. Metoda: trage, citește, scrie. Du-te la sare. Glisează alunecă. La steag: du-te la start. Numele fișierului are prenumele și numele de familie.
+Bonus. Al treilea personaj, Comoara, care se deschide când e găsită. Primul script, la steag: setează x la zero. Apoi setează y la douăzeci. Apoi setează mărimea la șaizeci la sută. Al doilea, când primesc găsit: repetă patru, înăuntru costumul următor și așteaptă zero virgulă trei. Apoi pornește un clinchet. Apoi modifică y cu douăzeci. La final, spune Comoara e a ta. Provocarea: Piratul pornește din celălalt colț, cu setează x la două sute și setează y la o sută, și ajunge tot la comoară, folosind numere negative în modifică.
 
-Succes la comoara ta.
+Recapitulare. X merge pe orizontală, y pe verticală, iar mijlocul e zero și zero. Setează pune poziția exactă, iar modifică adaugă la poziția de acum. Numerele negative duc personajul spre stânga sau în jos. La start pui setează x la și setează y la, ca să pornești mereu din același loc. Numele fișierului are prenumele și numele de familie.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă Papagalul, în același fișier. Dacă ai Complet, adaugi acasă al treilea personaj, în același fișier. Dacă ai terminat și bonusul, faci o copie și schimbi povestea: alte personaje, alt traseu, altă comoară.
+
+Succes la vânătoarea de comoară.

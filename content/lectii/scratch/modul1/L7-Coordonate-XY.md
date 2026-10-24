@@ -2,19 +2,19 @@
 **Modulul 1 · Primii pași**  
 **Code Maker Club · Scratch Starter**
 
-> Azi scena e o **hartă**: înveți unde e personajul cu **X** și **Y**, apoi îl duci la comoară.  
+> Azi scena e o **hartă**: citești **x** și **y**, apoi îți duci personajul pe ele, ca să găsești comoara.  
 > Proiect: **„Comoara”** · fișier: `Prenume_Nume_L7` (ex. `Ana_Pop_L7`)
 
 ---
 
 ## Obiectiv
-La finalul orei citești **x** și **y** pe scenă și duci personajul într-un loc anume cu <span style="color:#4C97FF;font-weight:700">du-te la</span> / <span style="color:#4C97FF;font-weight:700">glisează</span>.  
-**Minim:** start + traseu cu ≥2 opriri (numere în blocuri) + `spune` la capăt.  
-**Ținta orei (Complet):** + **comoară vizibilă** (al 2-lea personaj pe x/y) + sunet + reset curat.
+La finalul orei personajele tale se mută exact unde vrei, pe orizontală și pe verticală, cu blocuri din <span style="color:#4C97FF;font-weight:700">Mișcare</span>.  
+**Minim:** personajul 1 (Piratul) cu cel puțin **8 blocuri diferite**.  
+**Ținta orei (Complet):** personajul 2 (Papagalul), cu cel puțin **8 blocuri diferite**, care îl îndrumă pe Pirat.
 
 ## De ce contează
-Ca pe o hartă sau în jocuri: știi unde e eroul (stânga/dreapta, sus/jos) ca să ajungă la țintă.  
-În Scratch, poziția = **coordonate** (EN: *x position* / *y position*).
+Ca pe o hartă sau în jocuri: știi unde e eroul (stânga sau dreapta, sus sau jos), ca să ajungă la țintă.  
+În Scratch, poziția se numește **coordonate** (EN: *x position* și *y position*).
 
 ---
 
@@ -22,147 +22,184 @@ Ca pe o hartă sau în jocuri: știi unde e eroul (stânga/dreapta, sus/jos) ca 
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–5 | Obiectiv + harta scenei (X / Y / mijloc) |
-| 5–30 | Pas cu pas: mini-verificări (**Încearcă tu**) |
-| 30–100 | Proiectul „Comoara” (vezi **Minim vs Complet**) |
-| 100–120 | Recap, bonus, salvare |
+| 0–5 | Obiectiv + harta scenei (x, y, mijlocul) |
+| 5–35 | Pas cu pas: **3** mini-verificări (**Încearcă tu**) |
+| 35–105 | Proiectul „Comoara” (vezi **Minim vs Complet**) |
+| 105–120 | Recap, bonus, salvare |
+
+**Capitole azi (doar acestea 5):**  
+<span style="color:#4C97FF;font-weight:700">Mișcare</span> · <span style="color:#E6A800;font-weight:700">Evenimente</span> · <span style="color:#FFAB19;font-weight:700">Control</span> · <span style="color:#9966FF;font-weight:700">Aspect</span> · <span style="color:#CF63CF;font-weight:700">Sunet</span>  
+*(Detectare, Operatori, Variabile — mai târziu.)*
+
+**Blocuri noi azi:**
+
+| Bloc | Ce face |
+|------|---------|
+| `setează x la` | mută personajul exact pe poziția x aleasă (0 = mijlocul; pozitiv spre dreapta, negativ spre stânga) |
+| `setează y la` | la fel, pe verticală (pozitiv în sus, negativ în jos) |
+| `modifică x cu` | mută personajul spre dreapta (număr pozitiv) sau spre stânga (număr negativ), pornind de unde e acum |
+| `modifică y cu` | la fel, în sus (număr pozitiv) sau în jos (număr negativ) |
 
 ---
 
 ## Pas cu pas
 
-### 1) Citești coordonatele (fără blocuri încă)
-1. Selectezi **personajul** și îl **tragi** pe scenă cu mouse-ul
-2. În panoul personajului (sub scenă) vezi numerele **x** și **y** schimbându-se
-3. Ține minte:
-   - **X** = stânga (−) sau dreapta (+)
-   - **Y** = jos (−) sau sus (+)
-   - **Mijlocul** ≈ **x: 0 , y: 0** (cruce imaginată pe scenă)
-4. Du personajul în **mijloc**, apoi într-un **colț** — spune cu vocea ce x/y vezi
+| Capitol | Ce iei azi |
+|---------|------------|
+| <span style="color:#4C97FF;font-weight:700">Mișcare</span> | **`setează x la`**, **`setează y la`**, **`modifică x cu`**, **`modifică y cu`**, `orientează-te spre` |
+| <span style="color:#E6A800;font-weight:700">Evenimente</span> | `când se dă click pe` steagul verde, `când primesc`, `difuzează … și așteaptă`, `difuzează` |
+| <span style="color:#FFAB19;font-weight:700">Control</span> | `repetă`, `așteaptă` |
+| <span style="color:#9966FF;font-weight:700">Aspect</span> | `spune … pentru … secunde`, `gândește … pentru … secunde`, `setează mărimea la`, `modifică efectul [culoare] cu`, `costumul următor` |
+| <span style="color:#CF63CF;font-weight:700">Sunet</span> | `pornește sunetul`, `setează volumul la` |
 
-**Încearcă tu — citire (2–3 min)**  
-- [ ] Spui corect: X = stânga/dreapta, Y = jos/sus  
-- [ ] Ai pus personajul la ~`(0, 0)` și ai citit numerele  
-- [ ] Ai pus personajul într-un colț și ai citit x/y  
+### 1) Citești x și y
+1. Scena e o hartă: mijlocul are **x** `0` și **y** `0`
+2. **x** merge pe orizontală: spre dreapta numerele sunt pozitive, spre stânga sunt negative
+3. **y** merge pe verticală: în sus numerele sunt pozitive, în jos sunt negative
+4. Selectezi personajul și îl tragi cu mouse-ul pe scenă. Sub scenă, în panoul personajului, vezi cum se schimbă **x** și **y**
+5. Limitele hărții: **x** între `-240` și `240`, **y** între `-180` și `180`
 
-### 2) Metoda: trage → citește → scrie
-1. Tragi personajul **unde vrei un punct** (start sau comoară)
-2. **Citești** x și y
-3. **Scrii** aceleași numere în bloc (`du-te la` / `glisează`)
-4. Nu ghici — tot proiectul merge pe metoda asta
+**Încearcă tu — harta (2–3 min)**  
+- [ ] Ai tras personajul în colțul din stânga jos și ai citit `x` și `y` negative  
+- [ ] Ai tras personajul în colțul din dreapta sus și ai citit `x` și `y` pozitive  
 
-**Încearcă tu — metodă (1 min)**  
-- [ ] Ai notat pe foaie (sau în cap) **o** pereche (x, y) citită de pe scenă  
+### 2) Setează x și y
+1. Din <span style="color:#E6A800;font-weight:700">Evenimente</span>: <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>
+2. Din <span style="color:#4C97FF;font-weight:700">Mișcare</span>: <span style="color:#4C97FF;font-weight:700">setează x la</span> `-200`, apoi <span style="color:#4C97FF;font-weight:700">setează y la</span> `-100`
+3. Apeși steagul: personajul sare **exact** în colțul din stânga jos, de oriunde ar fi fost
+4. Așa îl pui la **start**, mereu în același loc
 
-### 3) Du-te la un punct
-1. Steag verde → din <span style="color:#4C97FF;font-weight:700">Mișcare</span>:  
-   <span style="color:#4C97FF;font-weight:700">du-te la x:</span> `0` <span style="color:#4C97FF;font-weight:700">y:</span> `0`
-2. Apeși steagul — personajul **sare** în mijloc
-3. Schimbă numerele cu metoda de mai sus — rulează din nou
+**Încearcă tu — setează (2–3 min)**  
+- [ ] Personajul sare în același loc la fiecare steag  
+- [ ] Schimbi numerele și el sare în alt loc  
 
-*(`du-te la` = teleport: imediat, **fără** să se rotească singur.)*
+### 3) Modifică x și y
+1. <span style="color:#4C97FF;font-weight:700">modifică x cu</span> `40` — personajul se mută cu `40` spre dreapta, de unde e acum. Cu `-40` se mută spre stânga
+2. <span style="color:#4C97FF;font-weight:700">modifică y cu</span> `30` — se mută cu `30` în sus. Cu `-30` se mută în jos
+3. Ca să se vadă drumul, le pui în <span style="color:#FFAB19;font-weight:700">repetă</span> `5` cu <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`
+4. Diferența: `modifică` **adaugă** la poziția de acum, `setează` **pune** poziția exactă
 
-**Încearcă tu — du-te la (2 min)**  
-- [ ] Steag → sare la punctul din bloc  
-- [ ] Ai schimbat o dată x/y și ai verificat  
-
-### 4) Glisează la un punct
-1. Sub steag (după un reset):  
-   <span style="color:#4C97FF;font-weight:700">glisează</span> în `1` secundă la `x:` `150` `y:` `100`
-2. Personajul **alunecă** — vezi drumul
-3. Compară: `du-te la` = salt · `glisează` = mișcare lină
-
-**Încearcă tu — glisează (2 min)**  
-- [ ] Ai o `glisează` cu x/y citite de pe scenă  
-- [ ] Vezi diferența față de `du-te la`  
-
-### 5) Reset + traseu (2–3 puncte)
-1. Chiar sub steag: `du-te la` **start** (x/y citite)
-2. Apoi: `glisează` la un punct pe drum → `așteaptă` `0.5` → `glisează` la **comoară** →  
-   `spune` `Am găsit-o!` pentru `2` secunde
-3. Fără reset la steag, la a doua rulare pleacă de unde a rămas
-
-**Încearcă tu — traseu scurt (2 min)**  
-- [ ] Steag de două ori → începe din același start  
-- [ ] Salvat: `Prenume_Nume_L7`  
+**Încearcă tu — modifică (2–3 min)**  
+- [ ] Personajul merge spre dreapta, în pași mici, cu `repetă`  
+- [ ] Apoi urcă cu `modifică y cu`  
+- [ ] Cu numere negative merge înapoi  
 
 ---
 
 ## Greșeli frecvente
-1. **A ajuns „în altă parte”** — X confundat cu Y (sau +/−). Mută → citește din nou → corectează.  
-2. **A dispărut** — x/y prea mari; rămâi cam **−240…240** pe X, **−180…180** pe Y.  
-3. **La steag nu reîncepe** — lipsește `du-te la` start la început.  
-4. **„Nu știu ce numere”** — trage → citește → scrie (nu ghici).  
-5. **Colegul „nu vede comoara”** — la Complet, comoara e un **personaj vizibil**; la Minim, succesul e mesajul `Am găsit-o!` la capăt.  
-6. **Nume fișier** — `Prenume_Nume_L7`, nu doar `Ana_L7`.
+1. **Personajul pornește din alt loc** — nu ai pus la start `setează x la` și `setează y la`. Fără ele continuă de unde a rămas.  
+2. **`modifică` și `setează` se încurcă** — `modifică` adaugă la poziția de acum, `setează` pune poziția exactă.  
+3. **Merge în direcția greșită** — pe verticală, sus e pozitiv și jos e negativ. Pe orizontală, dreapta e pozitiv și stânga e negativ.  
+4. **Personajul iese din scenă** — x rămâne între `-240` și `240`, iar y între `-180` și `180`.  
+5. **Se mută deodată** — fără `așteaptă` între mutări nu se vede drumul. Pune `așteaptă` `0,3` în `repetă`.  
+6. **Mesajul nu ajunge** — numele din `difuzează` și din `când primesc` nu e același mesaj (`ajutor` și `ajutoare` sunt mesaje diferite).  
+7. **Nume fișier** — `Prenume_Nume_L7`, nu doar `Ana_L7`.  
 
 ---
 
 ## De făcut azi — „Comoara”
 Salvat: `Prenume_Nume_L7`
 
-### Minim vs Complet
+### Minim vs Complet *(citește înainte să începi)*
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | **Pasul 1 + Pasul 2** — start cu `du-te la` + ≥2 opriri pe traseu + `spune` la capăt |
-| **Complet (ținta orei)** | Minim + **Pasul 3** — **comoară vizibilă** (al 2-lea personaj pe x/y) + sunet + reset clar |
+| **Minim („am reușit”)** | **Pasul 1 + Pasul 2** — harta cu sunete + **Piratul** cu ≥ 8 blocuri diferite |
+| **Complet (ținta orei)** | Minim + **Papagalul** cu ≥ 8 blocuri diferite, care îl îndrumă pe Pirat |
 
-Dacă rămâi în urmă: salvează la **Minim**.  
+Dacă rămâi în urmă: salvează la **Minim**. Nu e eșec.  
 Cei rapizi: Complet, apoi Bonus.
 
-### Pasul 1 — Harta ta
-- [ ] Loc de **start** cu x/y citite (la steag: `du-te la`)  
-- [ ] Știi pe scurt X / Y / mijloc `(0, 0)`  
+### Pasul 1 — Harta *(Minim)*
+Alegi un decor de insulă. Redenumești personajele: `Piratul`, `Papagalul`, `Comoara`. Papagalul și Comoara primesc în tab-ul **Sunete** câte un sunet potrivit (de exemplu un strigăt pentru papagal și un clinchet pentru comoară).
 
-### Pasul 2 — Drumul *(parte din Minim)*
-*(Ca la „Încearcă tu — traseu scurt”.)*
+- [ ] Decor de insulă ales  
+- [ ] Personajele sunt redenumite  
+- [ ] Papagalul și Comoara au sunetul lor în tab-ul **Sunete**  
 
-- [ ] ≥ **2** opriri cu `glisează` și/sau `du-te la` (x/y **în blocuri**, citite de pe scenă)  
-- [ ] Între opriri: `așteaptă` dacă e prea rapid  
-- [ ] La capăt: <span style="color:#9966FF;font-weight:700">spune</span> `Am găsit-o!`  
-- [ ] Steag din nou → reîncepe de la start  
+### Pasul 2 — Piratul *(Minim)*
+Alegi un personaj din bibliotecă care seamănă cu un pirat sau cu un explorator. Ordinea e un **model**: poți schimba textele, numerele și mesajele.
+
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#4C97FF;font-weight:700">setează x la</span> `-200`  
+<span style="color:#4C97FF;font-weight:700">setează y la</span> `-100`  
+<span style="color:#9966FF;font-weight:700">spune</span> `Unde e comoara?` pentru `2` secunde  
+<span style="color:#E6A800;font-weight:700">difuzează … și așteaptă</span> `ajutor`  
+<span style="color:#FFAB19;font-weight:700">repetă</span> `5` → <span style="color:#4C97FF;font-weight:700">modifică x cu</span> `40` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
+<span style="color:#FFAB19;font-weight:700">repetă</span> `4` → <span style="color:#4C97FF;font-weight:700">modifică y cu</span> `30` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
+<span style="color:#9966FF;font-weight:700">gândește</span> `Aici trebuie să fie!` pentru `2` secunde  
+<span style="color:#E6A800;font-weight:700">difuzează</span> `găsit`  
+
+- [ ] Fără Papagal, Piratul își termină scriptul singur  
+- [ ] Steag din nou → pleacă din același loc  
 - [ ] Salvat: `Prenume_Nume_L7`  
 
-**→ Minim când:** un coleg vede drumul și mesajul de la capăt (nu trebuie să „ghicească” comoara pe scenă).
+**→ Minim când:** Piratul întreabă unde e comoara, merge întâi spre dreapta, apoi în sus, se oprește la `x` `0` și `y` `20` și gândește că a ajuns.
 
-### Pasul 3 — Comoara pe scenă *(Complet)*
-- [ ] Al **2-lea personaj** = comoara (stea, cufăr…), așezat pe x/y-ul țintei (metoda: trage → citește)  
-- [ ] Eroul ajunge **lângă** comoară (ultimele x/y din traseu ≈ poziția comorii)  
-- [ ] Un <span style="color:#CF63CF;font-weight:700">sunet</span> când „găsește”  
-- [ ] Un coleg **vede** comoara pe scenă și urmărește drumul până la ea  
-- [ ] Salvat din nou  
+### Pasul 3 — Papagalul *(Complet)*
+Alegi un papagal sau altă pasăre. Are **2 scripturi**, iar al doilea răspunde când Piratul cere ajutor:
 
-**Gata Complet când:** comoara e vizibilă; drumul până la ea e clar fără să spui numerele.
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#4C97FF;font-weight:700">setează x la</span> `180`  
+<span style="color:#4C97FF;font-weight:700">setează y la</span> `100`  
+<span style="color:#9966FF;font-weight:700">setează mărimea la</span> `80` %  
+<span style="color:#CF63CF;font-weight:700">setează volumul la</span> `60` %  
+
+<span style="color:#E6A800;font-weight:700">când primesc</span> `ajutor`  
+<span style="color:#4C97FF;font-weight:700">orientează-te spre</span> `Piratul`  
+<span style="color:#9966FF;font-weight:700">spune</span> `Mergi la dreapta, apoi în sus!` pentru `3` secunde  
+<span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(un strigăt de papagal)*  
+<span style="color:#FFAB19;font-weight:700">repetă</span> `3` → <span style="color:#4C97FF;font-weight:700">modifică y cu</span> `-10` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
+<span style="color:#9966FF;font-weight:700">modifică efectul [culoare] cu</span> `25`  
+
+- [ ] Papagalul stă sus în dreapta până cere ajutor Piratul  
+- [ ] Răspunde în timp ce Piratul stă pe loc  
+- [ ] După răspuns, Piratul pornește spre comoară  
+- [ ] Salvat din nou: `Prenume_Nume_L7`  
+
+**Gata Complet când:** Piratul întreabă, Papagalul îl îndrumă, apoi Piratul merge spre dreapta și în sus, fără explicație cu vocea.
 
 ---
 
 ## Bonus (dacă ai terminat Complet)
-- [ ] Vizitează **4 colțuri** pe rând (x/y clare pe fiecare)  
-- [ ] La click pe erou: <span style="color:#4C97FF;font-weight:700">du-te la indicatorul mouse-ului</span> (tot în Mișcare)  
-- [ ] O a treia oprire pe traseu (start → A → B → comoară)  
-- [ ] ★★★ **Provocare:** Desenează pe foaie o hartă cu **5 locuri** și citește x/y pentru fiecare (trage → citește → scrie). Apoi fă eroul să le viziteze pe rând.
+- [ ] **Al 3-lea personaj** (Comoara), care se deschide când e găsită:
+
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#4C97FF;font-weight:700">setează x la</span> `0`  
+<span style="color:#4C97FF;font-weight:700">setează y la</span> `20`  
+<span style="color:#9966FF;font-weight:700">setează mărimea la</span> `60` %  
+
+<span style="color:#E6A800;font-weight:700">când primesc</span> `găsit`  
+<span style="color:#FFAB19;font-weight:700">repetă</span> `4` → <span style="color:#9966FF;font-weight:700">costumul următor</span> → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
+<span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(un clinchet)*  
+<span style="color:#4C97FF;font-weight:700">modifică y cu</span> `20`  
+<span style="color:#9966FF;font-weight:700">spune</span> `Comoara e a ta!`  
+
+- [ ] ★★★ **Provocare:** Piratul pornește din celălalt colț (`setează x la` `200`, `setează y la` `100`) și ajunge tot la comoară, folosind numere **negative** în `modifică`
 
 ## Recapitulare rapidă
-1. **X** stânga/dreapta · **Y** jos/sus · mijloc ≈ `(0, 0)`  
-2. Metoda: trage → citește → scrie  
-3. `du-te la` = salt · `glisează` = alunecă  
-4. Minim = traseu + mesaj · Complet = + comoară **vizibilă**  
+1. **x** merge pe orizontală, **y** pe verticală, iar mijlocul e `0` și `0`  
+2. `setează` **pune** poziția exactă, `modifică` **adaugă** la poziția de acum  
+3. Numerele negative duc personajul spre stânga sau în jos  
+4. La start pui `setează x la` și `setează y la`, ca să pornești mereu din același loc  
 5. Nume: **`Prenume_Nume_L7`**  
 
 ## Schema pe scurt *(pe foaie)*
 
-**Pe Erou**  
-la steag → `du-te la x: … y: …` (start) →  
-`glisează` / `du-te la` puncte pe traseu → `spune` mesaj  
+**Pe Pirat**  
+la steag → `setează x la` → `setează y la` → `spune` → `difuzează … și așteaptă ajutor` → `repetă` (`modifică x` + `așteaptă`) → `repetă` (`modifică y` + `așteaptă`) → `gândește` → `difuzează găsit`
 
-**Pe Comoară** *(Complet)*  
-stă pe x/y citite de pe scenă (trage → citește → scrie)
+**Pe Papagal**  
+la steag → `setează x la` → `setează y la` → `setează mărimea` → `setează volumul`  
+când primesc ajutor → `orientează-te spre` → `spune` → `pornește sunetul` → `repetă` (`modifică y` + `așteaptă`) → `modifică efectul`
 
 **Quiz scurt (cu profesorul):**  
-- Ce înseamnă x negativ?  
-- De ce `du-te la` la începutul scriptului?  
-- Cum „vezi” comoara la Complet?
+- Ce diferență e între `setează x la` și `modifică x cu`?  
+- Încotro merge personajul la `modifică y cu` `-20`?  
+- Cât sunt x și y în mijlocul scenei?  
+- De ce pui `setează x la` și `setează y la` la start?
 
-## Temă
-Opțional: dacă ai doar Minim, adaugi acasă personajul-comoară — același `Prenume_Nume_L7`.
+## Temă (opțional)
+- Dacă ai doar Minim: adaugi acasă Papagalul, în același `Prenume_Nume_L7`.  
+- Dacă ai Complet: adaugi acasă al 3-lea personaj, în același `Prenume_Nume_L7`.  
+- Dacă ai terminat și Bonusul: faci o copie și schimbi povestea (alte personaje, alt traseu, altă comoară).
