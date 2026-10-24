@@ -13,7 +13,7 @@ La finalul orei concursul tău de dans pornește la o tastă, se repetă până 
 **Ținta orei (Complet):** personajul 2 (DJ-ul), cu cel puțin **8 blocuri diferite**, care pornește muzica la semnalul Dansatorului.
 
 ## De ce contează
-În jocuri, personajele nu fac mereu același lucru: așteaptă o tastă, repetă o mișcare, se opresc când le atingi. Asta se face cu blocurile de <span style="color:#FFAB19;font-weight:700">Control</span> (EN: *Control*), împreună cu două condiții simple din <span style="color:#5CB1D6;font-weight:700">Detectare</span> (EN: *Sensing*).
+În jocuri, personajele nu fac mereu același lucru: așteaptă o tastă, repetă o mișcare, se opresc când le atingi. Asta se face cu blocurile de <span style="color:#FFAB19;font-weight:700">Control</span> (EN: *Control*), împreună cu două condiții simple din <span style="color:#5CB1D1;font-weight:700">Detectare</span> (EN: *Sensing*).
 
 **În clasă:** la proiect ții mouse-ul **departe** de Dansator până apeși tasta de start.
 
@@ -29,7 +29,7 @@ La finalul orei concursul tău de dans pornește la o tastă, se repetă până 
 | 105–120 | Recap, bonus, salvare |
 
 **Capitole azi (doar acestea 6):**  
-<span style="color:#FFAB19;font-weight:700">Control</span> · <span style="color:#5CB1D6;font-weight:700">Detectare</span> *(doar 2 blocuri)* · <span style="color:#E6A800;font-weight:700">Evenimente</span> · <span style="color:#4C97FF;font-weight:700">Mișcare</span> · <span style="color:#9966FF;font-weight:700">Aspect</span> · <span style="color:#CF63CF;font-weight:700">Sunet</span>  
+<span style="color:#FFAB19;font-weight:700">Control</span> · <span style="color:#5CB1D1;font-weight:700">Detectare</span> *(doar 2 blocuri)* · <span style="color:#E6A800;font-weight:700">Evenimente</span> · <span style="color:#4C97FF;font-weight:700">Mișcare</span> · <span style="color:#9966FF;font-weight:700">Aspect</span> · <span style="color:#CF63CF;font-weight:700">Sunet</span>  
 *(Restul din Detectare, Operatori, Variabile — mai târziu.)*
 
 **Blocuri noi azi:**
@@ -52,7 +52,7 @@ La finalul orei concursul tău de dans pornește la o tastă, se repetă până 
 | Capitol | Ce iei azi |
 |---------|------------|
 | <span style="color:#FFAB19;font-weight:700">Control</span> | **`la infinit`**, **`stop [totul]`**, **`dacă … atunci`**, **`dacă … atunci … altfel`**, **`așteaptă până când`**, **`repetă până când`**, `repetă`, `așteaptă` |
-| <span style="color:#5CB1D6;font-weight:700">Detectare</span> | **`tasta [spațiu] apăsată?`**, **`atinge [cursorul mouse-ului]?`** |
+| <span style="color:#5CB1D1;font-weight:700">Detectare</span> | **`tasta [spațiu] apăsată?`**, **`atinge [cursorul mouse-ului]?`** |
 | <span style="color:#E6A800;font-weight:700">Evenimente</span> | `când se dă click pe` steagul verde, `când primesc`, `difuzează` |
 | <span style="color:#4C97FF;font-weight:700">Mișcare</span> | `setează x la`, `setează y la`, `modifică x cu`, `rotește-te ↻`, `orientează-te spre` |
 | <span style="color:#9966FF;font-weight:700">Aspect</span> | `schimbă decorul la`, `decorul următor`, `spune [ ]`, `gândește … pentru … secunde`, `costumul următor`, `setează mărimea la`, `modifică mărimea cu`, `modifică efectul [culoare] cu` |
@@ -70,8 +70,8 @@ La finalul orei concursul tău de dans pornește la o tastă, se repetă până 
 - [ ] Ai oprit proiectul cu butonul roșu  
 
 ### 2) Două condiții din Detectare
-1. Din <span style="color:#5CB1D6;font-weight:700">Detectare</span> iei <span style="color:#5CB1D6;font-weight:700">tasta [spațiu] apăsată?</span>: e adevărată cât ții tasta apăsată
-2. Tot de acolo, <span style="color:#5CB1D6;font-weight:700">atinge [cursorul mouse-ului]?</span>: e adevărată când mouse-ul e pe personaj
+1. Din <span style="color:#5CB1D1;font-weight:700">Detectare</span> iei <span style="color:#5CB1D1;font-weight:700">tasta [spațiu] apăsată?</span>: e adevărată cât ții tasta apăsată
+2. Tot de acolo, <span style="color:#5CB1D1;font-weight:700">atinge [cursorul mouse-ului]?</span>: e adevărată când mouse-ul e pe personaj
 3. Sunt blocuri cu **colțuri**: nu se pun singure, ci în locul gol al unui bloc de Control (`dacă`, `așteaptă până când`, `repetă până când`)
 
 **Încearcă tu — condiții (1–2 min)**  
@@ -148,11 +148,11 @@ Alegi un personaj din bibliotecă care seamănă cu un dansator, cu cel puțin 2
 <span style="color:#4C97FF;font-weight:700">setează x la</span> `-150`  
 <span style="color:#4C97FF;font-weight:700">setează y la</span> `-60`  
 <span style="color:#9966FF;font-weight:700">spune</span> `Apasă spațiu!`  
-<span style="color:#FFAB19;font-weight:700">așteaptă până când</span> <span style="color:#5CB1D6;font-weight:700">tasta [spațiu] apăsată?</span>  
+<span style="color:#FFAB19;font-weight:700">așteaptă până când</span> <span style="color:#5CB1D1;font-weight:700">tasta [spațiu] apăsată?</span>  
 <span style="color:#9966FF;font-weight:700">spune</span> `Hai la dans!`  
 <span style="color:#E6A800;font-weight:700">difuzează</span> `start`  
 <span style="color:#FFAB19;font-weight:700">repetă</span> `4` → <span style="color:#4C97FF;font-weight:700">modifică x cu</span> `30` → <span style="color:#9966FF;font-weight:700">costumul următor</span> → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
-<span style="color:#FFAB19;font-weight:700">repetă până când</span> <span style="color:#5CB1D6;font-weight:700">atinge [cursorul mouse-ului]?</span> → <span style="color:#4C97FF;font-weight:700">rotește-te ↻</span> `15` grade → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,2`  
+<span style="color:#FFAB19;font-weight:700">repetă până când</span> <span style="color:#5CB1D1;font-weight:700">atinge [cursorul mouse-ului]?</span> → <span style="color:#4C97FF;font-weight:700">rotește-te ↻</span> `15` grade → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,2`  
 <span style="color:#E6A800;font-weight:700">difuzează</span> `final`  
 <span style="color:#FFAB19;font-weight:700">așteaptă</span> `5` secunde  
 <span style="color:#FFAB19;font-weight:700">stop [totul]</span>  
@@ -176,8 +176,8 @@ Alegi un personaj care seamănă cu un DJ. Are **2 scripturi**, iar al doilea po
 <span style="color:#CF63CF;font-weight:700">setează volumul la</span> `70` %  
 <span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(muzica)*  
 <span style="color:#FFAB19;font-weight:700">la infinit</span>  
-↳ <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D6;font-weight:700">atinge [cursorul mouse-ului]?</span> <span style="color:#FFAB19;font-weight:700">atunci</span> → <span style="color:#9966FF;font-weight:700">modifică efectul [culoare] cu</span> `25`  
-↳ <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D6;font-weight:700">tasta [săgeată sus] apăsată?</span> <span style="color:#FFAB19;font-weight:700">atunci</span> → <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `130` % **altfel** → <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `100` %  
+↳ <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D1;font-weight:700">atinge [cursorul mouse-ului]?</span> <span style="color:#FFAB19;font-weight:700">atunci</span> → <span style="color:#9966FF;font-weight:700">modifică efectul [culoare] cu</span> `25`  
+↳ <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D1;font-weight:700">tasta [săgeată sus] apăsată?</span> <span style="color:#FFAB19;font-weight:700">atunci</span> → <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `130` % **altfel** → <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `100` %  
 ↳ <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,2` secunde  
 
 - [ ] DJ-ul stă pe loc până vine `start`  

@@ -27,7 +27,7 @@ Până acum ai învățat blocurile pe rând. Azi folosești aceleași blocuri �
 | 105–120 | Recap, bonus, salvare |
 
 **Capitole azi (toate 6):**  
-<span style="color:#4C97FF;font-weight:700">Mișcare</span> · <span style="color:#E6A800;font-weight:700">Evenimente</span> · <span style="color:#9966FF;font-weight:700">Aspect</span> · <span style="color:#CF63CF;font-weight:700">Sunet</span> · <span style="color:#FFAB19;font-weight:700">Control</span> · <span style="color:#5CB1D6;font-weight:700">Detectare</span> *(doar `tasta [ ] apăsată?`)*
+<span style="color:#4C97FF;font-weight:700">Mișcare</span> · <span style="color:#E6A800;font-weight:700">Evenimente</span> · <span style="color:#9966FF;font-weight:700">Aspect</span> · <span style="color:#CF63CF;font-weight:700">Sunet</span> · <span style="color:#FFAB19;font-weight:700">Control</span> · <span style="color:#5CB1D1;font-weight:700">Detectare</span> *(doar `tasta [ ] apăsată?`)*
 
 **Blocuri noi azi:** niciunul. Reluăm ce știi:
 
@@ -38,7 +38,7 @@ Până acum ai învățat blocurile pe rând. Azi folosești aceleași blocuri �
 | <span style="color:#9966FF;font-weight:700">Aspect</span> | `schimbă decorul la`, `spune … pentru … secunde`, `costumul următor`, `setează mărimea la`, `modifică efectul [culoare] cu` |
 | <span style="color:#CF63CF;font-weight:700">Sunet</span> | `pornește sunetul`, `setează volumul la` |
 | <span style="color:#FFAB19;font-weight:700">Control</span> | `repetă`, `așteaptă`, `la infinit`, `dacă … atunci`, `stop [totul]` |
-| <span style="color:#5CB1D6;font-weight:700">Detectare</span> | `tasta [ ] apăsată?` |
+| <span style="color:#5CB1D1;font-weight:700">Detectare</span> | `tasta [ ] apăsată?` |
 
 ---
 
@@ -130,8 +130,8 @@ Alegi personajul tău, cu cel puțin 2 costume. Are **3 scripturi**. Ordinea e u
 <span style="color:#FFAB19;font-weight:700">repetă</span> `6` → <span style="color:#4C97FF;font-weight:700">modifică x cu</span> `30` → <span style="color:#9966FF;font-weight:700">costumul următor</span> → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
 <span style="color:#4C97FF;font-weight:700">glisează în</span> `2` <span style="color:#4C97FF;font-weight:700">secunde la x:</span> `40` <span style="color:#4C97FF;font-weight:700">y:</span> `-60`  
 <span style="color:#FFAB19;font-weight:700">la infinit</span>  
-↳ <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D6;font-weight:700">tasta [săgeată dreapta] apăsată?</span> <span style="color:#FFAB19;font-weight:700">atunci</span> → <span style="color:#4C97FF;font-weight:700">modifică x cu</span> `10`  
-↳ <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D6;font-weight:700">tasta [săgeată stânga] apăsată?</span> <span style="color:#FFAB19;font-weight:700">atunci</span> → <span style="color:#4C97FF;font-weight:700">modifică x cu</span> `-10`  
+↳ <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D1;font-weight:700">tasta [săgeată dreapta] apăsată?</span> <span style="color:#FFAB19;font-weight:700">atunci</span> → <span style="color:#4C97FF;font-weight:700">modifică x cu</span> `10`  
+↳ <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D1;font-weight:700">tasta [săgeată stânga] apăsată?</span> <span style="color:#FFAB19;font-weight:700">atunci</span> → <span style="color:#4C97FF;font-weight:700">modifică x cu</span> `-10`  
 
 <span style="color:#E6A800;font-weight:700">când primesc</span> `acasă`  
 <span style="color:#4C97FF;font-weight:700">setează x la</span> `-150`  

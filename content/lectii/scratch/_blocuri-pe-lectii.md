@@ -56,16 +56,32 @@ Total: 51 de blocuri vizibile în capturi, plus 2 condiții din Detectare. Fieca
 ### De completat
 - Blocurile care nu se văd în capturi (partea de jos din Mișcare, Aspect, Control, Detectare, Operatori): `dacă atinge marginea, ricoșează`, `stil de rotire`, `arată` / `ascunde`, straturile, clonele etc. Se plasează în plan după ce le vedem.
 
-## Probleme de rezolvat în lecțiile actuale
-1. **Denumiri diferite față de Scratch** în L3–L9: „du-te la”, „întoarce-te la dreapta cu”, „forever”, „comută la costumul”, „comută fundalul la”, „clic”, „schimbă efectul culoare cu”. În Scratch: `mergi la`, `rotește-te ↻`, `la infinit`, `schimbă costumul la`, `schimbă decorul la`, `click`, `modifică efectul [culoare] cu`.
-2. **L1** nu cere încă 8 blocuri pe personaj. Are 2 personaje cu dialog, mișcare și sunet.
-3. **L6** trebuie regândită (era prea mică): păstrăm o parte, adăugăm editorul de sunete, evenimente de sunet și 2 proiecte mici (sunet la tastă și coloana sonoră a poveștii).
-4. **L7** nu folosește acum `modifică x/y` și `setează x/y`.
-5. **L8** trece de la „Repetă și așteaptă” la lecție de Control.
-6. Fiecare lecție primește poveste nouă, cu personajele 1 și 2 conform regulilor de mai sus.
+## Stare la 24 oct 2026
+Toate cele 10 lecții din Modulul 1 sunt refăcute pe structura universală (L1–L10), cu poveste, sincron și text pentru butonul „Ascultă lecția”.
 
-## Ordinea de lucru
-L1 → L2 (gata, de aliniat la plan) → L3 → L4 → L5 → L6 → L7 → L8 → L9 → L10. O lecție pe rând, cu aprobare.
+| Lecția | Proiect | Personaje (1 / 2 / 3) | Blocuri noi |
+|--------|---------|----------------------|-------------|
+| L1 | Cardul meu animat | pisica + 2 la alegere | 8 |
+| L2 | Lumea mea | Copil / Câine / Pasăre | 4 |
+| L3 | Plimbarea mea | Rachetă / Extraterestru / Astronaut | 8 |
+| L4 | Butonul magic | Magician / Iepure / Porumbel | 6 |
+| L5 | Interviul | Reporter / Dragon / Public | 7 |
+| L6 | Concertul | Chitarist / Toboșar / Public | 8 (7 Sunet + `când [intensitatea sunetului] >`) |
+| L7 | Comoara | Pirat / Papagal / Comoara | 4 |
+| L8 | Dansul meu | Dansator / DJ / Juriu (decoruri Sala și Confetti desenat) | 8 (6 Control + 2 Detectare) |
+| L9 | Personajul meu | Animal / Stăpân / Minge (fără blocuri noi) | — |
+| L10 | Completare + prezentare | Gala personajelor: Gazdă + 2 artiști din meniul de numere (fără blocuri noi) | — |
+
+Total blocuri noi: 53 (Mișcare 13, Evenimente 8, Aspect 13, Sunet 9, Control 8, Detectare 2).
+
+### Reguli suplimentare hotărâte
+- Personajul 1: minim 8, maxim 14 (de la L8 se acceptă până la 15 ca povestea să iasă frumoasă). Personajul 2: minim 8 cu blocuri din ultimele lecții. Personajul 3: minim 10.
+- Sincronul se face cu `așteaptă` și cu mesaje (`difuzează … și așteaptă`); personajele nu vorbesc deodată.
+- Un număr din L10 nu are voie să conțină `la infinit` (ar bloca Gazda).
+- **De verificat (nemodificat, decizie amânată):** L1 (personajul 3 are 8) și L2 (Pasărea are 9) sunt sub minimul de 10 pentru personajul 3.
+
+### Impact asupra Modulului 2
+M2 are acum lecții care se suprapun cu M1: `Dacă… atunci` (L1), `Dacă… altfel` (L2), `Forever și stop` (L7), `Mesaje / broadcast` (L8). M2 trebuie regândit după încheierea M1.
 
 ## Structura universală a lecțiilor Scratch (document INTERN, valabil L1–L10)
 

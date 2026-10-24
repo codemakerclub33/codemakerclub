@@ -31,7 +31,7 @@ Insigna **Scratch Starter** (*badge*) înseamnă că Modulul 1 e încheiat.
 *(Repere profesor: la ~45 min fiecare copil are Gazda cu cel puțin 1 număr care rulează pe steag; la ~75 min — gata de steag curat pentru prezentare, indiferent dacă e Minim sau Complet.)*
 
 **Capitole azi (toate 6):**  
-<span style="color:#4C97FF;font-weight:700">Mișcare</span> · <span style="color:#E6A800;font-weight:700">Evenimente</span> · <span style="color:#9966FF;font-weight:700">Aspect</span> · <span style="color:#CF63CF;font-weight:700">Sunet</span> · <span style="color:#FFAB19;font-weight:700">Control</span> · <span style="color:#5CB1D6;font-weight:700">Detectare</span> *(doar 2 blocuri)*
+<span style="color:#4C97FF;font-weight:700">Mișcare</span> · <span style="color:#E6A800;font-weight:700">Evenimente</span> · <span style="color:#9966FF;font-weight:700">Aspect</span> · <span style="color:#CF63CF;font-weight:700">Sunet</span> · <span style="color:#FFAB19;font-weight:700">Control</span> · <span style="color:#5CB1D1;font-weight:700">Detectare</span> *(doar 2 blocuri)*
 
 **Blocuri noi azi:** niciunul. Reluăm tot ce ai învățat în Modulul 1, în numere scurte (vezi **De făcut azi**).
 
@@ -43,7 +43,7 @@ Insigna **Scratch Starter** (*badge*) înseamnă că Modulul 1 e încheiat.
 1. Alegi **3 personaje** din lecțiile trecute, cele mai dragi ție (din L1–L9). Poți lua și personaje noi din bibliotecă
 2. Primul personaj ales e **Gazda**: ea anunță numerele și leagă gala
 3. Celelalte două sunt **artiștii**: fiecare își face numerele când Gazda îl cheamă
-4. Cum aduci un personaj din proiectul vechi: în proiectul vechi, clic dreapta pe personaj → **exportă**. În proiectul nou, la **Alege un personaj** → **Încarcă personaj** și alegi fișierul. Dacă nu mai ai proiectul, alegi unul asemănător din bibliotecă
+4. Cum aduci un personaj din proiectul vechi: în proiectul vechi, click dreapta pe personaj → **exportă**. În proiectul nou, la **Alege un personaj** → **Încarcă personaj** și alegi fișierul. Dacă nu mai ai proiectul, alegi unul asemănător din bibliotecă
 
 **Încearcă tu — personajele (2–3 min)**  
 - [ ] Ai ales **3 personaje** și știi care e Gazda  
@@ -79,7 +79,7 @@ Ai învățat **53 de blocuri**, în 6 capitole:
 | <span style="color:#9966FF;font-weight:700">Aspect</span> | 13 | `spune`, `gândește` (cu și fără durată), costumul și decorul (`schimbă`, `următorul`), mărimea (`modifică`, `setează`), efectele (`modifică`, `setează`, `anulează`) |
 | <span style="color:#CF63CF;font-weight:700">Sunet</span> | 9 | `pornește`, `redă … până la final`, `oprește toate`, volumul (`modifică`, `setează`, valoarea `volum`), efectele audio (`modifică`, `setează`, `șterge`) |
 | <span style="color:#FFAB19;font-weight:700">Control</span> | 8 | `așteaptă`, `repetă`, `la infinit`, `dacă`, `dacă … altfel`, `așteaptă până când`, `repetă până când`, `stop` |
-| <span style="color:#5CB1D6;font-weight:700">Detectare</span> | 2 | `tasta apăsată?`, `atinge cursorul mouse-ului?` |
+| <span style="color:#5CB1D1;font-weight:700">Detectare</span> | 2 | `tasta apăsată?`, `atinge cursorul mouse-ului?` |
 
 ---
 
@@ -150,7 +150,7 @@ Gazda e primul personaj ales. Are scheletul de mai jos, cu **2 numere** puse la 
 | L5 | **Transformare** | <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `150` % → <span style="color:#9966FF;font-weight:700">modifică efectul [culoare] cu</span> `30` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `1` secundă → <span style="color:#9966FF;font-weight:700">anulează efectele grafice</span> → <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `100` % |
 | L6 | **Muzică** | <span style="color:#CF63CF;font-weight:700">setează volumul la</span> `60` % → <span style="color:#CF63CF;font-weight:700">pornește sunetul</span> → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `2` secunde → <span style="color:#CF63CF;font-weight:700">modifică volumul cu</span> `30` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `2` secunde → <span style="color:#CF63CF;font-weight:700">oprește toate sunetele</span> |
 | L7 | **Plimbare** | <span style="color:#4C97FF;font-weight:700">setează x la</span> `-100` → <span style="color:#4C97FF;font-weight:700">setează y la</span> `0` → <span style="color:#FFAB19;font-weight:700">repetă</span> `4` → <span style="color:#4C97FF;font-weight:700">modifică x cu</span> `40` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3` · apoi <span style="color:#4C97FF;font-weight:700">modifică y cu</span> `40` |
-| L8 | **Reacție** | <span style="color:#FFAB19;font-weight:700">repetă</span> `10` → <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D6;font-weight:700">atinge [cursorul mouse-ului]?</span> <span style="color:#FFAB19;font-weight:700">atunci</span> <span style="color:#9966FF;font-weight:700">modifică efectul [culoare] cu</span> `25` **altfel** <span style="color:#9966FF;font-weight:700">setează efectul [culoare] la</span> `0` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3` *(ții mouse-ul pe personaj)* |
+| L8 | **Reacție** | <span style="color:#FFAB19;font-weight:700">repetă</span> `10` → <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D1;font-weight:700">atinge [cursorul mouse-ului]?</span> <span style="color:#FFAB19;font-weight:700">atunci</span> <span style="color:#9966FF;font-weight:700">modifică efectul [culoare] cu</span> `25` **altfel** <span style="color:#9966FF;font-weight:700">setează efectul [culoare] la</span> `0` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3` *(ții mouse-ul pe personaj)* |
 
 - [ ] Gazda are **2 numere din lecții diferite**  
 - [ ] Fără artiști, Gazda își termină scriptul singură  
