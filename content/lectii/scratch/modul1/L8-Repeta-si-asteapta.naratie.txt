@@ -1,31 +1,39 @@
 Lecția opt. Dansul meu.
 
-Astăzi faci același lucru de mai multe ori, fără să copiezi blocurile iar și iar, cu ritm. Fișierul se numește Prenume, linie jos, Nume, linie jos, L opt.
+Astăzi personajele așteaptă, repetă și aleg singure ce fac, în funcție de tastă sau de mouse. Fișierul se numește Prenume, linie jos, Nume, linie jos, L opt.
 
-Obiectivul. Folosești repetă și așteaptă din Control. Minim: o buclă clară, mișcare sau costume, plus așteaptă, plus reset la steag. Complet: două bucle una după alta, de exemplu pătrat, apoi dans de costume, plus spune Gata o singură dată.
+Obiectivul. La finalul orei concursul tău de dans pornește la o tastă, se repetă până îl oprești și răspunde la tastatură și la mouse, cu blocuri din Control. Minim: personajul unu, Dansatorul, cu cel puțin opt blocuri diferite. Complet: personajul doi, DJ-ul, cu cel puțin opt blocuri diferite, care pornește muzica la semnalul Dansatorului.
 
-De ce contează. În desene animate și jocuri, aceleași mișcări se tot repetă: pași, dans, clipire. În Scratch, asta e o buclă scurtă.
+De ce contează. În jocuri, personajele nu fac mereu același lucru: așteaptă o tastă, repetă o mișcare, se opresc când le atingi. Asta se face cu blocurile din Control, împreună cu două condiții simple din Detectare. La proiect ții mouse-ul departe de Dansator până apeși tasta de start.
 
-Primul pas pe ecran. La steag: repetă patru. Înăuntru: mergi patruzeci de pași, întoarce la dreapta cu nouăzeci. Un pătrat, fără patru copii ale acelorași blocuri. Blocurile trebuie în C, nu sub el.
+Capitolele de azi sunt șase: Control, Detectare, doar două blocuri, apoi Evenimente, Mișcare, Aspect și Sunet.
 
-Al doilea pas pe ecran. Înăuntrul lui repetă, după mergi sau întoarce: așteaptă zero virgulă trei. Vezi fiecare latură, nu o clipire rapidă. Numărul din așteaptă este ritmul.
+Ce face fiecare bloc nou. La infinit repetă pentru totdeauna ce e înăuntru, până oprești proiectul. Stop totul oprește tot proiectul, inclusiv sunetele. Dacă atunci face ce e înăuntru doar când condiția e adevărată. Dacă atunci altfel face ce e la atunci, dacă e adevărat, iar dacă nu e adevărat face ce e la altfel. Așteaptă până când oprește scriptul până când condiția devine adevărată. Repetă până când repetă ce e înăuntru până când condiția devine adevărată. Tasta spațiu apăsată este o condiție din Detectare, adevărată cât timp ții tasta apăsată. Atinge cursorul mouse-ului este o condiție din Detectare, adevărată când mouse-ul e pe personaj.
 
-Al treilea pas pe ecran. A doua buclă, una după alta, nu una în alta. Sub bucla de pătrat, încă un repetă opt: următorul costum, așteaptă zero virgulă unu cinci. Întâi se termină pătratul, apoi dansul. Regula de azi: două C-uri una sub alta. Nu C în C.
+Primul pas pe ecran. La infinit și stop. Din Control tragi la infinit sub steagul verde. Înăuntru pui costumul următor și așteaptă zero virgulă trei: personajul dansează fără sfârșit. Sub la infinit nu mai ajunge niciun bloc, pentru că bucla nu se termină niciodată. Proiectul se oprește cu butonul roșu sau cu stop totul, care oprește și sunetele.
 
-Al patrulea pas pe ecran. Chiar sub steag, înainte de bucle: du-te la start, orientează-te nouăzeci, comută la costumul din start. După ultima buclă, în afara ei: spune Gata. Nucleul e repetă cu număr, ca să se oprească.
+Al doilea pas pe ecran. Două condiții din Detectare. Tasta spațiu apăsată este adevărată cât ții tasta apăsată. Atinge cursorul mouse-ului este adevărată când mouse-ul e pe personaj. Sunt blocuri cu colțuri: nu se pun singure, ci în locul gol al unui bloc de Control, adică dacă, așteaptă până când sau repetă până când.
 
-Greșeli frecvente. Dacă nu se repetă, blocurile sunt sub repetă, nu în el. Dacă e prea rapid, lipsește așteaptă în buclă. Dacă Gata apare de opt ori, spune e în repetă. Mută spune sub buclă. Dacă ai C în C, scoate bucla dinăuntru. Două C-uri una sub alta.
+Al treilea pas pe ecran. Dacă și altfel. Dacă atunci face ce e înăuntru doar când condiția e adevărată. Pui dacă în interiorul lui la infinit: așa verifică din nou și din nou. Fără la infinit verifică o singură dată, la început. Exemplu: la infinit, dacă atinge cursorul mouse-ului, atunci modifică efectul culoare cu douăzeci și cinci. Dacă atunci altfel are două părți: ce face dacă e adevărat și ce face dacă nu e adevărat.
+
+Al patrulea pas pe ecran. Așteaptă până când și repetă până când. Așteaptă până când tasta spațiu apăsată: scriptul stă pe loc până apeși spațiu, apoi merge mai departe. Repetă până când atinge cursorul mouse-ului: repetă blocurile dinăuntru până când mouse-ul atinge personajul. Diferența față de repetă: acolo spui de câte ori, aici spui până când.
+
+Greșeli frecvente. Dacă nu se întâmplă nimic după la infinit, bucla nu se termină niciodată: ce vrei să se întâmple pui înăuntru sau în alt script. Dacă personajul se agită sau ecranul pâlpâie, în buclă lipsește așteaptă: pune așteaptă zero virgulă doi. Dacă dacă răspunde doar o dată, nu e în la infinit: pune dacă înăuntru. Dacă condiția nu intră în bloc, blocurile cu colțuri se pun doar în locul gol al unui bloc de Control. Dacă dansul se termină imediat, mouse-ul era deja pe Dansator: ține mouse-ul departe până apeși tasta. Stop totul taie și muzica, deci îl pui doar la final, după ce au terminat toți. Dacă mesajul nu ajunge, numele din difuzează și din când primesc nu e același mesaj. Dacă ai greșit numele la salvare, adaugă și numele de familie.
 
 Proiectul de azi. Dansul meu.
 
-Minim înseamnă: reset, plus o buclă cu repetă, mișcare sau costume, plus așteaptă. Complet înseamnă: minim, plus a doua buclă pe rând, plus spune Gata o dată. Dacă rămâi în urmă, salvează la Minim.
+Minim înseamnă: scena cu sunete și Dansatorul cu cel puțin opt blocuri diferite. Complet înseamnă: minim, plus DJ-ul, cu cel puțin opt blocuri diferite, care pornește muzica la semnalul Dansatorului. Dacă rămâi în urmă, salvează la Minim. Nu e eșec.
 
-În proiect, primul pas. La steag: loc de start, costum de start, direcție dacă te învârți.
+În proiect, primul pas, pentru Minim. Sala de dans. Alegi un decor de petrecere sau de sală de dans. Redenumești personajele: Dansatorul, DJ și Juriul. DJ-ul primește în tab-ul Sunete o muzică potrivită, iar Juriul aplauze.
 
-În proiect, al doilea pas. Un repetă cu număr. Înăuntru: mișcare sau următorul costum, plus așteaptă. Salvezi.
+În proiect, al doilea pas, pentru Minim. Dansatorul. Alegi un personaj din bibliotecă care seamănă cu un dansator, cu cel puțin două costume. La steag: setează x la minus o sută cincizeci. Apoi setează y la minus șaizeci. Apoi spune Apasă spațiu. Apoi așteaptă până când tasta spațiu apăsată. Apoi spune Hai la dans. Apoi difuzează start. Apoi repetă patru, înăuntru modifică x cu treizeci, costumul următor și așteaptă zero virgulă trei. Apoi repetă până când atinge cursorul mouse-ului, înăuntru rotește-te spre dreapta cincisprezece grade și așteaptă zero virgulă doi. Apoi difuzează final. Apoi așteaptă cinci secunde. La final, stop totul. Este un model: poți schimba textele, numerele și mesajele. Fără DJ și Juriu, Dansatorul își termină scriptul singur. Salvezi.
 
-În proiect, al treilea pas, pentru Complet. A doua buclă sub prima. Gata o singură dată, sub bucle. Steag de două ori, reset curat. Salvezi din nou.
+În proiect, al treilea pas, pentru Complet. DJ-ul. Alegi un personaj care seamănă cu un DJ. Are două scripturi, iar al doilea pornește când Dansatorul difuzează start. Primul, la steag: setează x la o sută cincizeci. Apoi setează y la minus șaizeci. Apoi orientează-te spre Dansatorul. Al doilea, când primesc start: setează volumul la șaptezeci la sută. Apoi pornește muzica. Apoi la infinit, înăuntru trei lucruri. Întâi: dacă atinge cursorul mouse-ului, atunci modifică efectul culoare cu douăzeci și cinci. Apoi: dacă tasta săgeată sus apăsată, atunci setează mărimea la o sută treizeci la sută, altfel setează mărimea la o sută la sută. La final, așteaptă zero virgulă doi secunde. Salvezi din nou.
 
-Recapitulare. Repetă înseamnă fă de N ori. Așteaptă e ritmul. Blocurile în C. Două bucle una după alta. Spune Gata în afara buclei. Numele fișierului are prenumele și numele de familie.
+Bonus. Al treilea personaj, Juriul, care aplaudă la final. Primul script, la steag: setează x la zero. Apoi setează y la o sută douăzeci. Apoi setează mărimea la cincizeci la sută. Apoi setează volumul la o sută la sută. Al doilea, când primesc start: așteaptă o secundă. Apoi gândește Ce ritm, două secunde. Al treilea, când primesc final: redă sunetul aplauzelor până la final. Apoi repetă trei, înăuntru costumul următor și așteaptă zero virgulă trei. Apoi modifică mărimea cu treizeci. La final, spune Zece, bravo, două secunde. Provocarea: în repetă până când, dacă tasta săgeată stânga e apăsată, Dansatorul se rotește în sens invers, cu rotește-te spre stânga, altfel se rotește ca până acum.
 
-Succes la dansul tău.
+Recapitulare. La infinit nu se termină, iar ce e sub el nu mai ajunge niciodată. Dacă verifică o dată: ca să verifice mereu, îl pui în la infinit. Dacă altfel alege între două lucruri. Așteaptă până când oprește scriptul până când condiția e adevărată. Repetă până când repetă până când condiția devine adevărată. Numele fișierului are prenumele și numele de familie.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă DJ-ul, în același fișier. Dacă ai Complet, adaugi acasă al treilea personaj, în același fișier. Dacă ai terminat și bonusul, faci o copie și schimbi povestea: alt dans, altă muzică, alte reguli de oprire.
+
+Succes la concursul tău de dans.

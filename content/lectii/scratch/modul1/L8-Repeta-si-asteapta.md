@@ -2,19 +2,20 @@
 **Modulul 1 · Primii pași**  
 **Code Maker Club · Scratch Starter**
 
-> Azi faci același lucru de mai multe ori **fără** să copiezi blocurile iar și iar — cu ritm.  
+> Azi personajele **așteaptă**, **repetă** și **aleg singure** ce fac, în funcție de tastă sau de mouse.  
 > Proiect: **„Dansul meu”** · fișier: `Prenume_Nume_L8` (ex. `Ana_Pop_L8`)
 
 ---
 
 ## Obiectiv
-La finalul orei folosești <span style="color:#FFAB19;font-weight:700">repetă</span> + <span style="color:#FFAB19;font-weight:700">așteaptă</span> (capitolul <span style="color:#FFAB19;font-weight:700">Control</span>).  
-**Minim:** o buclă clară (mișcare **sau** costume) + `așteaptă` + reset la steag.  
-**Ținta orei (Complet):** **2** bucle **una după alta** (ex. pătrat, apoi dans costume) + `spune` `Gata!` o singură dată.
+La finalul orei concursul tău de dans pornește la o tastă, se repetă până îl oprești și răspunde la tastatură și la mouse, cu blocuri din <span style="color:#FFAB19;font-weight:700">Control</span>.  
+**Minim:** personajul 1 (Dansatorul) cu cel puțin **8 blocuri diferite**.  
+**Ținta orei (Complet):** personajul 2 (DJ-ul), cu cel puțin **8 blocuri diferite**, care pornește muzica la semnalul Dansatorului.
 
 ## De ce contează
-În desene animate și jocuri, aceleași mișcări se tot repetă: pași, dans, clipire.  
-În Scratch, asta e o **buclă** scurtă (EN: *loop* / *repeat*).
+În jocuri, personajele nu fac mereu același lucru: așteaptă o tastă, repetă o mișcare, se opresc când le atingi. Asta se face cu blocurile de <span style="color:#FFAB19;font-weight:700">Control</span> (EN: *Control*), împreună cu două condiții simple din <span style="color:#5CB1D6;font-weight:700">Detectare</span> (EN: *Sensing*).
+
+**În clasă:** la proiect ții mouse-ul **departe** de Dansator până apeși tasta de start.
 
 ---
 
@@ -22,147 +23,207 @@ La finalul orei folosești <span style="color:#FFAB19;font-weight:700">repetă</
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–5 | Obiectiv + unde e Control (`repetă`, `așteaptă`) |
-| 5–30 | Pas cu pas: mini-verificări (**Încearcă tu**) |
-| 30–100 | Proiectul „Dansul meu” (vezi **Minim vs Complet**) |
-| 100–120 | Recap, bonus, salvare |
+| 0–5 | Obiectiv + capitolul Control |
+| 5–35 | Pas cu pas: **4** mini-verificări (**Încearcă tu**) |
+| 35–105 | Proiectul „Dansul meu” (vezi **Minim vs Complet**) |
+| 105–120 | Recap, bonus, salvare |
+
+**Capitole azi (doar acestea 6):**  
+<span style="color:#FFAB19;font-weight:700">Control</span> · <span style="color:#5CB1D6;font-weight:700">Detectare</span> *(doar 2 blocuri)* · <span style="color:#E6A800;font-weight:700">Evenimente</span> · <span style="color:#4C97FF;font-weight:700">Mișcare</span> · <span style="color:#9966FF;font-weight:700">Aspect</span> · <span style="color:#CF63CF;font-weight:700">Sunet</span>  
+*(Restul din Detectare, Operatori, Variabile — mai târziu.)*
+
+**Blocuri noi azi:**
+
+| Bloc | Ce face |
+|------|---------|
+| `la infinit` | repetă pentru totdeauna ce e înăuntru, până oprești proiectul |
+| `stop [totul]` | oprește tot proiectul, inclusiv sunetele |
+| `dacă … atunci` | face ce e înăuntru doar când condiția e adevărată |
+| `dacă … atunci … altfel` | face ce e la „atunci” dacă e adevărat, iar dacă nu e adevărat face ce e la „altfel” |
+| `așteaptă până când` | oprește scriptul până când condiția devine adevărată |
+| `repetă până când` | repetă ce e înăuntru până când condiția devine adevărată |
+| `tasta [spațiu] apăsată?` | condiție din Detectare: adevărată cât timp ții tasta apăsată |
+| `atinge [cursorul mouse-ului]?` | condiție din Detectare: adevărată când mouse-ul e pe personaj |
 
 ---
 
 ## Pas cu pas
 
-### 1) Repetă = „fă de N ori”
-1. Selectezi **personajul**
-2. Steag verde → din <span style="color:#FFAB19;font-weight:700">Control</span>:  
-   <span style="color:#FFAB19;font-weight:700">repetă</span> `4`  
-   *(„C” — **înăuntru** pui ce se repetă)*
-3. Înăuntru, din <span style="color:#4C97FF;font-weight:700">Mișcare</span>:  
-   <span style="color:#4C97FF;font-weight:700">mergi</span> `40` pași →  
-   <span style="color:#4C97FF;font-weight:700">întoarce-te la dreapta cu</span> `90` grade
-4. Apeși steagul — un **pătrat** (4 laturi), fără 4 copii ale acelorași blocuri
+| Capitol | Ce iei azi |
+|---------|------------|
+| <span style="color:#FFAB19;font-weight:700">Control</span> | **`la infinit`**, **`stop [totul]`**, **`dacă … atunci`**, **`dacă … atunci … altfel`**, **`așteaptă până când`**, **`repetă până când`**, `repetă`, `așteaptă` |
+| <span style="color:#5CB1D6;font-weight:700">Detectare</span> | **`tasta [spațiu] apăsată?`**, **`atinge [cursorul mouse-ului]?`** |
+| <span style="color:#E6A800;font-weight:700">Evenimente</span> | `când se dă click pe` steagul verde, `când primesc`, `difuzează` |
+| <span style="color:#4C97FF;font-weight:700">Mișcare</span> | `setează x la`, `setează y la`, `modifică x cu`, `rotește-te ↻`, `orientează-te spre` |
+| <span style="color:#9966FF;font-weight:700">Aspect</span> | `spune [ ]`, `gândește … pentru … secunde`, `costumul următor`, `setează mărimea la`, `modifică mărimea cu`, `modifică efectul [culoare] cu` |
+| <span style="color:#CF63CF;font-weight:700">Sunet</span> | `pornește sunetul`, `redă sunetul … până la final`, `setează volumul la` |
 
-**Încearcă tu — repetă (2 min)**  
-- [ ] Ai `repetă` cu blocuri **în** C (nu sub el)  
-- [ ] Steag → se vede un pătrat / traseu repetat  
+### 1) La infinit și stop
+1. Din <span style="color:#FFAB19;font-weight:700">Control</span> tragi <span style="color:#FFAB19;font-weight:700">la infinit</span> sub <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>
+2. Înăuntru pui <span style="color:#9966FF;font-weight:700">costumul următor</span> și <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`: personajul dansează fără sfârșit
+3. Sub `la infinit` nu mai ajunge niciun bloc, pentru că bucla nu se termină niciodată
+4. Proiectul se oprește cu butonul roșu sau cu <span style="color:#FFAB19;font-weight:700">stop [totul]</span>, care oprește și sunetele
 
-### 2) Așteaptă = ritmul
-1. **Înăuntrul** lui `repetă`, după `mergi` sau `întoarce`:  
-   <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.3` secunde
-2. Rulează — vezi fiecare latură, nu o clipire rapidă
-3. Încearcă `0.1` (rapid) și `0.8` (lent): **numărul din așteaptă = ritmul**
+**Încearcă tu — la infinit (2–3 min)**  
+- [ ] Personajul dansează fără să se oprească  
+- [ ] Un `așteaptă` înăuntru face dansul vizibil  
+- [ ] Ai oprit proiectul cu butonul roșu  
 
-**Încearcă tu — ritm (2 min)**  
-- [ ] `așteaptă` e **în** buclă  
-- [ ] Se vede clar ritmul (nu e prea repede)  
+### 2) Două condiții din Detectare
+1. Din <span style="color:#5CB1D6;font-weight:700">Detectare</span> iei <span style="color:#5CB1D6;font-weight:700">tasta [spațiu] apăsată?</span>: e adevărată cât ții tasta apăsată
+2. Tot de acolo, <span style="color:#5CB1D6;font-weight:700">atinge [cursorul mouse-ului]?</span>: e adevărată când mouse-ul e pe personaj
+3. Sunt blocuri cu **colțuri**: nu se pun singure, ci în locul gol al unui bloc de Control (`dacă`, `așteaptă până când`, `repetă până când`)
 
-### 3) A doua buclă — **una după alta**, nu una în alta
-1. Personajul are ≥ **2 costume** (tab Costume — ca la L2)
-2. **Sub** bucla de pătrat (nu înăuntru), încă un `repetă` `8`:  
-   înăuntru: <span style="color:#9966FF;font-weight:700">următorul costum</span> →  
-   <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.15`
-3. Ordinea: întâi se termină pătratul, **apoi** dansul de costume
-4. **Regula de azi:** două „C”-uri **una sub alta** — **nu** C în C
+**Încearcă tu — condiții (1–2 min)**  
+- [ ] Ai găsit cele două blocuri în Detectare  
+- [ ] Faci clic pe `tasta [spațiu] apăsată?` ținând spațiu apăsat și vezi **adevărat**  
 
-**Încearcă tu — două bucle (2–3 min)**  
-- [ ] Ai **2** `repetă` pe același script, **una după alta**  
-- [ ] Niciun `repetă` nu e **în** celălalt  
-- [ ] Rulează: mișcare, apoi costume (sau invers)  
+### 3) Dacă și altfel
+1. <span style="color:#FFAB19;font-weight:700">dacă … atunci</span> face ce e înăuntru doar când condiția e adevărată
+2. Pui <span style="color:#FFAB19;font-weight:700">dacă</span> **în interiorul** lui `la infinit`: așa verifică din nou și din nou. Fără `la infinit` verifică o singură dată, la început
+3. Exemplu: la infinit → `dacă` `atinge [cursorul mouse-ului]?` `atunci` <span style="color:#9966FF;font-weight:700">modifică efectul [culoare] cu</span> `25`
+4. <span style="color:#FFAB19;font-weight:700">dacă … atunci … altfel</span> are două părți: ce face dacă e adevărat și ce face dacă nu e adevărat
 
-### 4) Reset + final
-1. **Chiar sub** steag, înainte de bucle:  
-   `du-te la` start → `orientează-te` `90` → `comută la costumul` (primul)  
-2. După **ultima** buclă (**în afara** ei):  
-   <span style="color:#9966FF;font-weight:700">spune</span> `Gata!` pentru `2` secunde
+**Încearcă tu — dacă (2–3 min)**  
+- [ ] Culoarea se schimbă doar când mouse-ul e pe personaj  
+- [ ] Cu `altfel` revine la normal când iei mouse-ul  
 
-*(Nucleul: `repetă` cu număr, ca să se **oprească**. `forever` = doar la Bonus.)*
+### 4) Așteaptă până când și repetă până când
+1. <span style="color:#FFAB19;font-weight:700">așteaptă până când</span> `tasta [spațiu] apăsată?` — scriptul stă pe loc până apeși spațiu, apoi merge mai departe
+2. <span style="color:#FFAB19;font-weight:700">repetă până când</span> `atinge [cursorul mouse-ului]?` — repetă blocurile dinăuntru până când mouse-ul atinge personajul
+3. Diferența față de `repetă`: acolo spui **de câte ori**, aici spui **până când**
 
-**Încearcă tu — final (1–2 min)**  
-- [ ] `Gata!` apare **o singură dată** (nu de 8 ori)  
-- [ ] Steag de două ori → reset curat  
-- [ ] Salvat: `Prenume_Nume_L8`  
+**Încearcă tu — până când (2–3 min)**  
+- [ ] Personajul așteaptă până apeși spațiu  
+- [ ] Se rotește până pui mouse-ul pe el  
 
 ---
 
 ## Greșeli frecvente
-1. **Nu se repetă** — blocurile sunt **sub** `repetă`, nu **în** el.  
-2. **Prea rapid** — lipsește `așteaptă` în buclă.  
-3. **La steag e haos** — fără reset loc / costum / direcție.  
-4. **„Gata!” de 8 ori** — `spune` e **în** `repetă`; mută `spune` **sub** buclă.  
-5. **C în C** — ai băgat o buclă în alta. Verifică: două C-uri **una sub alta**.  
-6. **Nume fișier** — `Prenume_Nume_L8`, nu doar `Ana_L8`.
+1. **Nu se întâmplă nimic după `la infinit`** — bucla nu se termină niciodată. Ce vrei să se întâmple pui înăuntru sau în alt script.  
+2. **Personajul se agită sau ecranul pâlpâie** — în buclă lipsește `așteaptă`. Pune `așteaptă` `0,2`.  
+3. **`dacă` nu răspunde decât o dată** — nu e în `la infinit`. Pune `dacă` înăuntru.  
+4. **Condiția nu intră în bloc** — blocurile cu colțuri se pun doar în locul gol al unui bloc de Control.  
+5. **Dansul se termină imediat** — mouse-ul era deja pe Dansator. Ține mouse-ul departe până apeși tasta.  
+6. **`stop [totul]` taie și muzica** — îl pui doar la final, după ce au terminat toți.  
+7. **Mesajul nu ajunge** — numele din `difuzează` și din `când primesc` nu e același mesaj (`start` și `pornire` sunt mesaje diferite).  
+8. **Nume fișier** — `Prenume_Nume_L8`, nu doar `Ana_L8`.  
 
 ---
 
 ## De făcut azi — „Dansul meu”
 Salvat: `Prenume_Nume_L8`
 
-### Minim vs Complet
+### Minim vs Complet *(citește înainte să începi)*
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | **Pasul 1 + Pasul 2** — reset + **o** buclă (`repetă` + mișcare **sau** costume + `așteaptă`) |
-| **Complet (ținta orei)** | Minim + **Pasul 3** — a **doua** buclă pe rând + `spune` `Gata!` o dată |
+| **Minim („am reușit”)** | **Pasul 1 + Pasul 2** — scena cu sunete + **Dansatorul** cu ≥ 8 blocuri diferite |
+| **Complet (ținta orei)** | Minim + **DJ-ul** cu ≥ 8 blocuri diferite, care pornește muzica la semnalul Dansatorului |
 
-Dacă rămâi în urmă: salvează la **Minim**.  
+Dacă rămâi în urmă: salvează la **Minim**. Nu e eșec.  
 Cei rapizi: Complet, apoi Bonus.
 
-### Pasul 1 — Start curat
-- [ ] La steag: loc de start + costum de start (+ direcție, dacă te învârți)  
+### Pasul 1 — Sala de dans *(Minim)*
+Alegi un decor de petrecere sau de sală de dans. Redenumești personajele: `Dansatorul`, `DJ`, `Juriul`. DJ-ul primește în tab-ul **Sunete** o muzică potrivită, iar Juriul aplauze.
 
-### Pasul 2 — O buclă *(parte din Minim)*
-*(Ca la „Încearcă tu — repetă” + „Încearcă tu — ritm”.)*
+- [ ] Decor ales  
+- [ ] Personajele sunt redenumite  
+- [ ] DJ-ul are muzica, iar Juriul aplauzele în tab-ul **Sunete**  
 
-- [ ] **1** <span style="color:#FFAB19;font-weight:700">repetă</span> cu număr (ex. 4–10)  
-- [ ] Înăuntru: mișcare **sau** `următorul costum`  
-- [ ] Înăuntru: `așteaptă` (ritm vizibil)  
+### Pasul 2 — Dansatorul *(Minim)*
+Alegi un personaj din bibliotecă care seamănă cu un dansator, cu cel puțin 2 costume. Ordinea e un **model**: poți schimba textele, numerele și mesajele.
+
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#4C97FF;font-weight:700">setează x la</span> `-150`  
+<span style="color:#4C97FF;font-weight:700">setează y la</span> `-60`  
+<span style="color:#9966FF;font-weight:700">spune</span> `Apasă spațiu!`  
+<span style="color:#FFAB19;font-weight:700">așteaptă până când</span> <span style="color:#5CB1D6;font-weight:700">tasta [spațiu] apăsată?</span>  
+<span style="color:#9966FF;font-weight:700">spune</span> `Hai la dans!`  
+<span style="color:#E6A800;font-weight:700">difuzează</span> `start`  
+<span style="color:#FFAB19;font-weight:700">repetă</span> `4` → <span style="color:#4C97FF;font-weight:700">modifică x cu</span> `30` → <span style="color:#9966FF;font-weight:700">costumul următor</span> → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
+<span style="color:#FFAB19;font-weight:700">repetă până când</span> <span style="color:#5CB1D6;font-weight:700">atinge [cursorul mouse-ului]?</span> → <span style="color:#4C97FF;font-weight:700">rotește-te ↻</span> `15` grade → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,2`  
+<span style="color:#E6A800;font-weight:700">difuzează</span> `final`  
+<span style="color:#FFAB19;font-weight:700">așteaptă</span> `5` secunde  
+<span style="color:#FFAB19;font-weight:700">stop [totul]</span>  
+
+- [ ] Fără DJ și Juriu, Dansatorul își termină scriptul singur  
+- [ ] Dansul se oprește când pui mouse-ul pe Dansator  
+- [ ] Steag din nou → așteaptă iar tasta de start  
 - [ ] Salvat: `Prenume_Nume_L8`  
 
-**→ Minim când:** un coleg vede un dans / o plimbare cu ritm (chiar cu o singură buclă).
+**→ Minim când:** Dansatorul așteaptă spațiu, dansează patru pași, se rotește până îl atingi cu mouse-ul, apoi proiectul se oprește.
 
-### Pasul 3 — Două bucle + final *(Complet)*
-*(Ca la „Încearcă tu — două bucle” + final.)*
+### Pasul 3 — DJ-ul *(Complet)*
+Alegi un personaj care seamănă cu un DJ. Are **2 scripturi**, iar al doilea pornește când Dansatorul difuzează `start`:
 
-- [ ] **2** bucle **una după alta** (ex. pătrat, apoi costume) — **nu** C în C  
-- [ ] După bucle: `spune` `Gata!` **o singură dată**  
-- [ ] Opțional: un sunet la final  
-- [ ] Steag din nou → reîncepe curat  
-- [ ] Salvat din nou  
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#4C97FF;font-weight:700">setează x la</span> `150`  
+<span style="color:#4C97FF;font-weight:700">setează y la</span> `-60`  
+<span style="color:#4C97FF;font-weight:700">orientează-te spre</span> `Dansatorul`  
 
-**Gata Complet când:** se văd clar cele două părți + un final, fără explicație.
+<span style="color:#E6A800;font-weight:700">când primesc</span> `start`  
+<span style="color:#CF63CF;font-weight:700">setează volumul la</span> `70` %  
+<span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(muzica)*  
+<span style="color:#FFAB19;font-weight:700">la infinit</span>  
+↳ <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D6;font-weight:700">atinge [cursorul mouse-ului]?</span> <span style="color:#FFAB19;font-weight:700">atunci</span> → <span style="color:#9966FF;font-weight:700">modifică efectul [culoare] cu</span> `25`  
+↳ <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D6;font-weight:700">tasta [săgeată sus] apăsată?</span> <span style="color:#FFAB19;font-weight:700">atunci</span> → <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `130` % **altfel** → <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `100` %  
+↳ <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,2` secunde  
+
+- [ ] DJ-ul stă pe loc până vine `start`  
+- [ ] Muzica pornește odată cu dansul  
+- [ ] Cu mouse-ul pe DJ își schimbă culoarea, iar cu săgeata sus se mărește  
+- [ ] Salvat din nou: `Prenume_Nume_L8`  
+
+**Gata Complet când:** apeși spațiu, Dansatorul dansează, DJ-ul pornește muzica și lumina, apoi atingi Dansatorul cu mouse-ul și totul se oprește, fără explicație cu vocea.
 
 ---
 
 ## Bonus (dacă ai terminat Complet)
-- [ ] O buclă **rapidă** și una **lentă** (`așteaptă` diferit)  
-- [ ] **`forever` de decor** (al 2-lea script pe steag, după ce `repetă` e gata):  
-  `forever` → `următorul costum` → `așteaptă` `0.2`  
-  *(Oprești cu stop. Nu pune `Gata!` în bucla `forever`.)*  
-- [ ] Explorare în clasă: schimbă o dată numărul din `repetă` (ex. 4 → 8) — ce observi pe scenă?  
-- [ ] ★★★ **Provocare:** Un **dans** în 3 mișcări: fiecare mișcare are propria buclă `repetă` și propriul ritm (`așteaptă` diferit), iar la final personajul revine la start.
+- [ ] **Al 3-lea personaj** (Juriul), care aplaudă la final:
+
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#4C97FF;font-weight:700">setează x la</span> `0`  
+<span style="color:#4C97FF;font-weight:700">setează y la</span> `120`  
+<span style="color:#9966FF;font-weight:700">setează mărimea la</span> `50` %  
+<span style="color:#CF63CF;font-weight:700">setează volumul la</span> `100` %  
+
+<span style="color:#E6A800;font-weight:700">când primesc</span> `start`  
+<span style="color:#FFAB19;font-weight:700">așteaptă</span> `1` secundă  
+<span style="color:#9966FF;font-weight:700">gândește</span> `Ce ritm!` pentru `2` secunde  
+
+<span style="color:#E6A800;font-weight:700">când primesc</span> `final`  
+<span style="color:#CF63CF;font-weight:700">redă sunetul</span> *(aplauze)* <span style="color:#CF63CF;font-weight:700">până la final</span>  
+<span style="color:#FFAB19;font-weight:700">repetă</span> `3` → <span style="color:#9966FF;font-weight:700">costumul următor</span> → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
+<span style="color:#9966FF;font-weight:700">modifică mărimea cu</span> `30`  
+<span style="color:#9966FF;font-weight:700">spune</span> `Zece! Bravo!` pentru `2` secunde  
+
+- [ ] ★★★ **Provocare:** în `repetă până când`, dacă tasta **săgeată stânga** e apăsată, Dansatorul se rotește în sens invers (`rotește-te ↺`), altfel se rotește ca până acum (`dacă … altfel`)
 
 ## Recapitulare rapidă
-1. `repetă N` = înăuntru de N ori, apoi gata  
-2. `așteaptă` = ritmul  
-3. Două bucle = **una sub alta**, nu una în alta  
-4. `spune` final = **sub** bucle  
-5. Nume: **`Prenume_Nume_L8`**  
+1. `la infinit` nu se termină; ce e sub el nu mai ajunge niciodată  
+2. `dacă` verifică o dată; ca să verifice mereu îl pui în `la infinit`  
+3. `dacă … altfel` alege între două lucruri  
+4. `așteaptă până când` oprește scriptul până când condiția e adevărată  
+5. `repetă până când` repetă până când condiția devine adevărată  
+6. Nume: **`Prenume_Nume_L8`**  
 
 ## Schema pe scurt *(pe foaie)*
 
-**Pe Personaj**  
-la steag → `du-te la` start →  
-`repetă` N: `mergi` / schimbă costum → `așteaptă` …  
-*(Complet: a 2-a buclă **sub** prima)*  
-apoi *(sub bucle)*: `spune Gata!`
+**Pe Dansator**  
+la steag → `setează x la` → `setează y la` → `spune` → `așteaptă până când` `tasta spațiu` → `spune` → `difuzează start` → `repetă` (`modifică x` + `costumul următor` + `așteaptă`) → `repetă până când` `atinge mouse-ul` (`rotește-te` + `așteaptă`) → `difuzează final` → `așteaptă` → `stop`
+
+**Pe DJ**  
+la steag → `setează x la` → `setează y la` → `orientează-te spre`  
+când primesc start → `setează volumul` → `pornește sunetul` → `la infinit` (`dacă` `atinge mouse-ul` `atunci` `modifică efectul`; `dacă` `tasta` `atunci` `setează mărimea` `altfel` `setează mărimea`; `așteaptă`)
 
 **Quiz scurt (cu profesorul):**  
-- Unde trebuie să fie blocurile ca să se repete?  
-- De ce nu băgăm C în C azi?  
-- Diferența `repetă 8` / `forever`?
+- De ce nu ajunge niciun bloc sub `la infinit`?  
+- Ce diferență e între `repetă` `4` și `repetă până când`?  
+- Ce face `altfel` în `dacă … altfel`?  
+- De ce pui `dacă` în interiorul lui `la infinit`?
 
-## Temă
-Opțional — **pentru acasă**, indiferent dacă ai făcut Bonusul:  
-schimbă numărul din `repetă` la **5**, rulează; apoi la **15**, rulează.  
-Notează **o propoziție**: ce este diferit?  
-*(Dacă ai explorat deja 4→8 în Bonus, acasă încearcă **alt** număr, ex. 3 și 12.)*  
-Același fișier `Prenume_Nume_L8`.
+## Temă (opțional)
+- Dacă ai doar Minim: adaugi acasă DJ-ul, în același `Prenume_Nume_L8`.  
+- Dacă ai Complet: adaugi acasă al 3-lea personaj, în același `Prenume_Nume_L8`.  
+- Dacă ai terminat și Bonusul: faci o copie și schimbi povestea (alt dans, altă muzică, alte reguli de oprire).
