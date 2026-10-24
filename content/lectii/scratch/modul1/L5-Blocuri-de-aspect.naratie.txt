@@ -1,33 +1,37 @@
 Lecția cinci. Interviul.
 
-Astăzi controlezi cum arată și ce transmite personajul: spune, gândește, mărime, culoare. Proiectul se numește Interviul. Fișierul: Prenume, linie jos, Nume, linie jos, L cinci.
+Astăzi controlezi cum arată și ce transmite personajul: balonul de vorbă, mărimea și culoarea. Fișierul se numește Prenume, linie jos, Nume, linie jos, L cinci.
 
-Obiectivul. Folosești blocuri din Aspect. Minim: dialog pe două personaje, cu spune, gândește și așteaptă. Complet: plus mărime, culoare, și reset curat la steag, cu setează mărimea la o sută și anulează efectele.
+Obiectivul. La finalul orei personajele tale vorbesc, cresc, se micșorează și își schimbă culoarea, cu blocuri din Aspect. Minim: personajul unu, Reporterul, cu cel puțin opt blocuri diferite. Complet: personajul doi, Dragonul, cu cel puțin opt blocuri diferite, care răspunde la întrebarea Reporterului.
 
-De ce contează. În povești, personajul nu doar merge. Vorbește, se sperie, se mărește, se înroșește, are un gând. În Scratch, asta e capitolul Aspect.
+De ce contează. În jocuri și animații, personajele se fac mari sau mici, își schimbă culoarea și vorbesc cât timp vrei tu. În Scratch, asta e capitolul Aspect.
 
-Primul pas pe ecran. Pe intervievat, la steag: spune Salut, gândește ceva, apoi spune Sunt gata. Spune este ce aude lumea. Gândește este gândul personajului.
+Capitolele de azi sunt aceleași cinci: Evenimente, Aspect, Mișcare, Control și Sunet. Toate blocurile noi sunt din Aspect.
 
-Al doilea pas pe ecran. Modifică mărimea cu douăzeci, așteaptă, apoi modifică cu minus douăzeci. Modifică adaugă sau scade față de acum. Setează mărimea la o sută pune exact o sută la sută. La reset pe steag folosim setează, nu modifică.
+Ce face fiecare bloc nou. Spune face personajul să vorbească, iar balonul rămâne până îl schimbă alt bloc. Cu text gol îl ștergi. Gândește face la fel, dar cu balon de gând. Modifică mărimea cu mărește personajul, dacă numărul e pozitiv, sau îl micșorează, dacă numărul e negativ. Setează mărimea la pune mărimea exact la procentul ales: o sută la sută înseamnă mărimea normală. Modifică efectul culoare cu schimbă culoarea personajului cu cât ai ales, și de fiecare dată se adună. Setează efectul la pune efectul exact la valoarea aleasă, iar zero înseamnă fără efect. Anulează efectele grafice șterge toate efectele de pe personaj, iar culoarea revine la normal.
 
-Al treilea pas pe ecran. Schimbă efectul culoare de cel puțin două ori, cu așteaptă între ele.
+Primul pas pe ecran. Spune și gândește, fără durată. Selectezi personajul, nu Scena. Pui steagul, apoi spune Salut, fără pentru secunde. Sub el pui așteaptă două secunde, apoi gândește Hmm. Balonul rămâne pe ecran până îl schimbă alt bloc. Ca să îl ștergi, pui spune cu textul gol.
 
-Al patrulea pas pe ecran. Chiar sub steag, înainte de dialog: setează mărimea la o sută, anulează efectele grafice. Fără asta, la al doilea steag rămâne uriaș sau colorat straniu.
+Al doilea pas pe ecran. Mărimea. Modifică mărimea cu zece face personajul să crească cu zece. Cu minus zece se micșorează. Setează mărimea la o sută la sută îl readuce exact la mărimea normală. Diferența: modifică adaugă la ce e acum, iar setează pune valoarea exactă.
 
-Al cincilea pas pe ecran. Două personaje, pe rând. Scripturile pornesc deodată la steag. Reporterul spune: Cum te cheamă, pentru două secunde. Intervievatul începe cu așteaptă două, apoi spune: Mă cheamă, pentru două secunde. Intervievatul așteaptă cât vorbește reporterul, altfel vorbesc amândoi odată.
+Al treilea pas pe ecran. Efecte de culoare. Modifică efectul culoare cu douăzeci și cinci schimbă culoarea, și de fiecare dată se adună. Setează efectul culoare la zero readuce culoarea normală. Anulează efectele grafice le șterge pe toate deodată. Efectele rămân și la steagul următor, de aceea la start pui setează efectul la zero sau anulează efectele grafice.
 
-Greșeli frecvente. Dacă vorbesc amândoi odată, lipsește așteaptă. Dacă rămâne uriaș, lipsește pe steag setează mărimea la o sută. Dacă ai pus pe steag modifică cu minus douăzeci ca să resetezi, nu ajunge mereu la o sută. Folosește setează.
+Greșeli frecvente. Dacă balonul rămâne pe ecran, spune fără durată nu dispare singur: pune spune cu textul gol. Dacă personajul e uriaș sau dispare, la start pune setează mărimea la o sută la sută. Dacă culoarea e altfel la al doilea steag, efectele se adună: pune la start setează efectul la zero sau anulează efectele grafice. Dacă încurci modifică cu setează, modifică adaugă, iar setează pune valoarea exactă. Dacă mesajul nu ajunge, numele din difuzează și din când primesc nu e același mesaj. Dacă decorul următor nu duce la Afară, în lista de decoruri Afară trebuie să fie după Studio. Dacă ai greșit numele la salvare, adaugă și numele de familie.
 
 Proiectul de azi. Interviul.
 
-Minim înseamnă: două roluri, reporter și intervievat, plus dialog cu spune, gândește și așteaptă. Complet înseamnă: minim, plus mărime, cel puțin două culori, reset complet pe steag. Dacă rămâi în urmă, salvează la Minim.
+Minim înseamnă: două decoruri și Reporterul cu cel puțin opt blocuri diferite. Complet înseamnă: minim, plus Dragonul, cu cel puțin opt blocuri diferite, care răspunde Reporterului. Dacă rămâi în urmă, salvează la Minim. Nu e eșec.
 
-În proiect, primul pas. Reporter și intervievat, așezați lângă unul pe altul.
+În proiect, primul pas, pentru Minim. Locul. Adaugi două decoruri, Studio și Afară, în această ordine, și redenumești personajele: Reporterul, Dragonul și Publicul. Pe Scenă faci două scripturi. La steag: schimbă decorul la Studio. Și când primesc afară: decorul următor.
 
-În proiect, al doilea pas. Cel puțin patru spune în total, împărțite pe cele două personaje. Cel puțin un gândește. Între replici: așteaptă, pe rând. Salvezi.
+În proiect, al doilea pas, pentru Minim. Reporterul. Alegi un personaj din bibliotecă care seamănă cu un reporter. La steag: mergi la x minus o sută douăzeci, y minus șaizeci. Apoi setează mărimea la o sută la sută. Apoi spune Bun venit la Interviul. Apoi așteaptă trei secunde. Apoi spune Cum te simți, dragonule. Apoi difuzează și așteaptă răspuns. Apoi gândește Uau, ce mare. Apoi modifică efectul culoare cu treizeci. Apoi pornește un sunet potrivit. Apoi așteaptă două secunde. Apoi spune Hai afară. Apoi difuzează afară. Apoi anulează efectele grafice. La final, schimbă costumul la un costum ales de tine. Este un model: poți schimba textele, numerele și mesajele. Fără Dragon, Reporterul își termină scriptul singur. Salvezi.
 
-În proiect, al treilea pas, pentru Complet. O schimbare de mărime în timpul interviului. Cel puțin două schimbări de culoare. La steag, pe amândoi: setează mărimea la o sută și anulează efectele. Steag din nou, totul curat. Salvezi din nou.
+În proiect, al treilea pas, pentru Complet. Dragonul, sau alt personaj. Are trei scripturi. Primul, la steag: orientează-te spre Reporterul. Apoi setează efectul culoare la zero. Al doilea, când primesc răspuns: gândește Hmm. Apoi spune Sunt foarte emoționat. Apoi repetă cinci, înăuntru modifică mărimea cu zece, modifică efectul culoare cu douăzeci și așteaptă zero virgulă trei. Al treilea, când primesc afară: setează mărimea la o sută la sută. Apoi glisează în două secunde la poziție aleatoare. Apoi spune Ce aer curat. Salvezi din nou.
 
-Recapitulare. Aspect înseamnă spune, gândește, mărime, culoare, costum. În clip: modifică. La steag: setează la o sută și anulează efectele. Dialogul vine pe rând, cu așteaptă. Numele fișierului are prenumele și numele de familie.
+Bonus. Al treilea personaj, Publicul, care reacționează afară. Primul script, la steag: mergi la x zero, y o sută douăzeci. Apoi setează mărimea la cincizeci la sută. Al doilea, când primesc afară: așteaptă trei secunde. Apoi modifică mărimea cu treizeci. Apoi repetă trei, înăuntru costumul următor și așteaptă zero virgulă trei. Apoi spune Bravo, dragonule. La final, schimbă costumul la un costum ales de tine. Provocarea: Dragonul își schimbă culoarea la fiecare click pe el, iar tasta spațiu o readuce cu anulează efectele grafice.
+
+Recapitulare. Spune și gândește fără durată rămân pe ecran, iar cu text gol dispar. Modifică adaugă, iar setează pune valoarea exactă. Setează mărimea la o sută la sută înseamnă mărimea normală. Efectele rămân între steaguri: la start pui setează efectul la zero sau anulează efectele grafice. Numele fișierului are prenumele și numele de familie.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă Dragonul, în același fișier. Dacă ai Complet, adaugi acasă al treilea personaj, în același fișier. Dacă ai terminat și bonusul, faci o copie și schimbi povestea: alte personaje, alte replici, alte culori.
 
 Succes la interviul tău.

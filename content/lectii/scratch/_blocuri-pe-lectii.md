@@ -18,13 +18,18 @@ Modulul 1 acoperă **toate blocurile din Mișcare, Aspect, Sunet, Evenimente și
 - **Sunetul și costumul nu se pun niciodată unul după altul** (sunet după sunet, costum după costum): le întrețesem cu alte blocuri (replici, `așteaptă`, mișcare etc.).
 - **Excepție: `mergi 10 pași` poate fi pus de mai multe ori la rând** (de exemplu 3 ×), ca exemplu de repetare, în lecțiile dinaintea lui `repetă` (L1). `repetă` îl înlocuiește de la L2.
 
-## Scara (minim blocuri diferite pe personaj)
-| L1 | L2 | L3 | L4 | L5 | L6 | L7 | L8 | L9 | L10 |
-|----|----|----|----|----|----|----|----|----|-----|
-| 8 | 8 | 10 | 12 | 14 | 16 | 16 | 18 | 20 | liber |
-- Personajul 1 urmează scara. Personajul 2 rămâne la 8 *(de confirmat)*.
+## Regula blocurilor pe personaj (Modulul 1, hotărâtă 24 oct 2026)
+Blocuri **diferite** pe personaj (un bloc folosit de mai multe ori se numără o dată):
+
+| Personaj | Minim | Maxim | Rol |
+|----------|-------|-------|-----|
+| Personajul 1 (Minim) | 8 | 14 | învață blocurile noi + blocuri din lecțiile trecute |
+| Personajul 2 (Complet) | 8 | — | reia blocuri din ultimele 3 lecții |
+| Personajul 3 (Bonus) | 10 | — | provocare, tot cu blocuri din lecțiile trecute, pentru o poveste frumoasă |
+
+- Pragul din Obiectiv e „minim 8” (personajele 1 și 2). Scripturile-model pot avea mai mult, în limitele de mai sus.
 - Minim = 1 personaj. Complet = 2 personaje. Bonus = al 3-lea personaj.
-- **Scara e provizorie** și se reverifică după ce citim fiecare lecție (volumul de muncă).
+- **De verificat la lecțiile deja scrise (nemodificate):** L1 (personajul 3 are 8) și L2 (Pasărea are 9) sunt sub 10; L3 și L4 respectă regula (personajul 1 are 14).
 
 ## Planul blocurilor pe lecții (actualizat: 23 oct 2026)
 

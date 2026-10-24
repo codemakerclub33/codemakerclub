@@ -2,18 +2,18 @@
 **Modulul 1 · Primii pași**  
 **Code Maker Club · Scratch Starter**
 
-> Azi controlezi **cum arată** și **ce transmite** personajul: spune, gândește, mărime, culoare.  
+> Azi controlezi **cum arată** și **ce transmite** personajul: balonul de vorbă, mărimea și culoarea.  
 > Proiect: **„Interviul”** · fișier: `Prenume_Nume_L5` (ex. `Ana_Pop_L5`)
 
 ---
 
 ## Obiectiv
-La finalul orei folosești blocuri din <span style="color:#9966FF;font-weight:700">Aspect</span>.  
-**Minim:** dialog pe 2 personaje cu `spune` / `gândește` + `așteaptă`.  
-**Ținta orei (Complet):** + mărime, culoare și **reset curat** la steag (`setează mărimea la 100` + anulează efectele).
+La finalul orei personajele tale vorbesc, cresc, se micșorează și își schimbă culoarea, cu blocuri din <span style="color:#9966FF;font-weight:700">Aspect</span>.  
+**Minim:** personajul 1 (Reporterul) cu cel puțin **8 blocuri diferite**.  
+**Ținta orei (Complet):** personajul 2 (Dragonul), cu cel puțin **8 blocuri diferite**, care răspunde la întrebarea Reporterului.
 
 ## De ce contează
-În jocuri și povești, personajul nu doar merge: vorbește, se sperie (se mărește), se „înroșește”, are un gând.  
+În jocuri și animații, personajele se fac mari sau mici, își schimbă culoarea și vorbesc cât timp vrei tu.  
 În Scratch, asta e capitolul <span style="color:#9966FF;font-weight:700">Aspect</span> (EN: *Looks*).
 
 ---
@@ -22,158 +22,203 @@ La finalul orei folosești blocuri din <span style="color:#9966FF;font-weight:70
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–5 | Obiectiv + unde e Aspect |
-| 5–30 | Pas cu pas: **3–4** mini-verificări (**Încearcă tu**) |
-| 30–100 | Proiectul „Interviul” (vezi **Minim vs Complet**) |
-| 100–120 | Recap, bonus, salvare |
+| 0–5 | Obiectiv + capitolul Aspect |
+| 5–35 | Pas cu pas: **3** mini-verificări (**Încearcă tu**) |
+| 35–105 | Proiectul „Interviul” (vezi **Minim vs Complet**) |
+| 105–120 | Recap, bonus, salvare |
+
+**Capitole azi (doar acestea 5):**  
+<span style="color:#E6A800;font-weight:700">Evenimente</span> · <span style="color:#9966FF;font-weight:700">Aspect</span> · <span style="color:#4C97FF;font-weight:700">Mișcare</span> · <span style="color:#FFAB19;font-weight:700">Control</span> · <span style="color:#CF63CF;font-weight:700">Sunet</span>  
+*(Detectare, Operatori, Variabile — mai târziu.)*
+
+**Blocuri noi azi:**
+
+| Bloc | Ce face |
+|------|---------|
+| `spune [ ]` | personajul vorbește; balonul rămâne până îl schimbă alt bloc (cu text gol îl ștergi) |
+| `gândește [ ]` | la fel, dar cu balon de gând |
+| `modifică mărimea cu` | mărește personajul (număr pozitiv) sau îl micșorează (număr negativ) |
+| `setează mărimea la` | pune mărimea exact la procentul ales (100 % = mărimea normală) |
+| `modifică efectul [culoare] cu` | schimbă culoarea personajului cu cât ai ales; de fiecare dată se adună |
+| `setează efectul … la` | pune efectul exact la valoarea aleasă (0 = fără efect) |
+| `anulează efectele grafice` | șterge toate efectele de pe personaj, iar culoarea revine la normal |
 
 ---
 
 ## Pas cu pas
 
-### 1) Spune și gândește
-1. Selectezi **personajul** (intervievatul)
-2. Din <span style="color:#E6A800;font-weight:700">Evenimente</span>:  
-   <span style="color:#3F8F2A;font-weight:700">când se dă clic pe steagul verde</span>
-3. Din <span style="color:#9966FF;font-weight:700">Aspect</span>:  
-   <span style="color:#9966FF;font-weight:700">spune</span> `Salut!` pentru `2` secunde →  
-   <span style="color:#9966FF;font-weight:700">gândește</span> `Hmm… ce să zic?` pentru `2` secunde →  
-   <span style="color:#9966FF;font-weight:700">spune</span> `Sunt gata!` pentru `2` secunde
-4. Apeși steagul — bulă de vorbă, apoi de gând
+| Capitol | Ce iei azi |
+|---------|------------|
+| <span style="color:#E6A800;font-weight:700">Evenimente</span> | `când se dă click pe` steagul verde, `când primesc` |
+| <span style="color:#9966FF;font-weight:700">Aspect</span> | **`spune [ ]`**, **`gândește [ ]`**, **`modifică mărimea cu`**, **`setează mărimea la`**, **`modifică efectul [culoare] cu`**, **`setează efectul … la`**, **`anulează efectele grafice`**, `schimbă decorul la`, `decorul următor`, `costumul următor`, `schimbă costumul la` |
+| <span style="color:#FFAB19;font-weight:700">Control</span> | `repetă`, `așteaptă` |
+| <span style="color:#4C97FF;font-weight:700">Mișcare</span> | `mergi la x: y:`, `orientează-te spre`, `glisează … la [poziție aleatoare]` |
+| <span style="color:#CF63CF;font-weight:700">Sunet</span> | `pornește sunetul` |
 
-*(`spune` = ce aude lumea · `gândește` = gândul lui — ambele în Aspect.)*
+### 1) Spune și gândește, fără durată
+1. Selectezi **personajul** (nu Scena)
+2. Din <span style="color:#E6A800;font-weight:700">Evenimente</span>: <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>
+3. Din <span style="color:#9966FF;font-weight:700">Aspect</span>: <span style="color:#9966FF;font-weight:700">spune</span> `Salut!` *(fără „pentru … secunde”)*
+4. Sub el: <span style="color:#FFAB19;font-weight:700">așteaptă</span> `2` secunde, apoi <span style="color:#9966FF;font-weight:700">gândește</span> `Hmm…`
+5. Balonul **rămâne** pe ecran până îl schimbă alt bloc. Ca să îl ștergi, pui <span style="color:#9966FF;font-weight:700">spune</span> cu textul **gol**
 
-**Încearcă tu — dialog (2–3 min)**  
-- [ ] Ai `spune` + `gândește` + încă un `spune`  
-- [ ] Replicile vin pe rând (timpii din bloc sau `așteaptă` între ele)  
+**Încearcă tu — balon (2–3 min)**  
+- [ ] Balonul `Salut!` rămâne pe ecran  
+- [ ] După 2 secunde apare balonul de gând  
+- [ ] Cu `spune` gol balonul dispare  
 
-### 2) Mărime: modifică vs setează
-1. Tot pe personaj, după dialog:  
-   <span style="color:#FFAB19;font-weight:700">așteaptă</span> `1` →  
-   <span style="color:#9966FF;font-weight:700">modifică mărimea cu</span> `20` →  
-   <span style="color:#FFAB19;font-weight:700">așteaptă</span> `1` →  
-   <span style="color:#9966FF;font-weight:700">modifică mărimea cu</span> `-20`
-2. Personajul crește, apoi revine
+### 2) Mărimea
+1. <span style="color:#9966FF;font-weight:700">modifică mărimea cu</span> `10` — personajul crește cu 10. Cu `-10` se micșorează
+2. <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `100` % — personajul revine **exact** la mărimea normală
+3. Diferența: `modifică` **adaugă** la ce e acum, `setează` **pune** valoarea exactă
 
-| Bloc | Ce face |
-|------|---------|
-| <span style="color:#9966FF;font-weight:700">modifică mărimea cu</span> `20` | **adaugă** / scade față de acum (se adună) |
-| <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `100` | pune **exact** 100%, indiferent cât era înainte |
+**Încearcă tu — mărime (2–3 min)**  
+- [ ] Personajul crește cu `modifică mărimea cu`  
+- [ ] Revine la normal cu `setează mărimea la` `100`  
 
-*De aceea la **reset** (steag) folosim **`setează`**, nu `modifică`: nu contează cât a crescut în interviu — mereu ajunge înapoi la 100.*
+### 3) Efecte de culoare
+1. <span style="color:#9966FF;font-weight:700">modifică efectul [culoare] cu</span> `25` — personajul își schimbă culoarea; de fiecare dată se adună
+2. <span style="color:#9966FF;font-weight:700">setează efectul [culoare] la</span> `0` — culoarea normală
+3. <span style="color:#9966FF;font-weight:700">anulează efectele grafice</span> — șterge toate efectele deodată
+4. Efectele rămân și la steagul următor, de aceea la start pui `setează efectul … la` `0` sau `anulează efectele grafice`
 
-**Încearcă tu — mărime (2 min)**  
-- [ ] Ai folosit `modifică` (+20 / −20) în timpul clipului  
-- [ ] Știi unde e `setează mărimea la` `100` (îl pui la steag la pasul 4)  
-
-### 3) Efect de culoare
-1. Tot în Aspect:  
-   <span style="color:#9966FF;font-weight:700">schimbă efectul culoare cu</span> `25` →  
-   <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.5` →  
-   încă de 1–2 ori `+25`
-2. Nuanța se schimbă pe rând (ca o clipire de culori)
-
-**Încearcă tu — culoare (1–2 min)**  
-- [ ] ≥ **2** schimbări de efect culoare  
-- [ ] Vezi culorile schimbându-se pe steag  
-
-### 4) Reset curat la steag
-1. **Chiar sub** steag, **înainte** de dialog:  
-   <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `100` →  
-   <span style="color:#9966FF;font-weight:700">anulează efectele grafice</span>
-2. Fără asta, la al doilea steag rămâne **uriaș** sau **colorat straniu**
-3. (Opțional azi) `ascunde` / `arată` — tot în Aspect; nu e obligatoriu
-
-**Încearcă tu — reset (1–2 min)**  
-- [ ] Steag de două ori: mărime și culoare revin la normal  
-- [ ] Salvat: `Prenume_Nume_L5`  
-
-### 5) Două personaje, pe rând
-1. Scripturile celor 2 personaje pornesc **deodată** la steag
-2. Reporter: steag → <span style="color:#9966FF;font-weight:700">spune</span> `Cum te cheamă?` pentru `2` secunde
-3. Intervievat: steag → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `2` → <span style="color:#9966FF;font-weight:700">spune</span> `Mă cheamă …` pentru `2` secunde
-4. Intervievatul așteaptă cât vorbește reporterul — altfel vorbesc amândoi odată
-
-**Încearcă tu — doi pe rând (2 min)**  
-- [ ] Reporterul vorbește primul, apoi răspunde intervievatul  
+**Încearcă tu — culoare (2–3 min)**  
+- [ ] Culoarea se schimbă cu `modifică efectul`  
+- [ ] La steag începi mereu cu culoarea normală  
 
 ---
 
 ## Greșeli frecvente
-1. **Vorbesc amândoi odată** — lipsește `așteaptă` între replici.  
-2. **Rămâne uriaș / violet** — lipsește pe steag: `setează mărimea la 100` + `anulează efectele grafice`.  
-3. **Ai pus `modifică cu -20` la steag „ca să resetezi”** — dacă ai crescut de 3 ori (+60), −20 nu ajunge la 100. Folosește **`setează … la 100`**.  
-4. **Script pe personajul greșit** — verifică lista (reporter vs intervievat).  
-5. **Nu se vede gândul** — ai folosit `spune` în loc de `gândește`.  
-6. **Nume fișier** — `Prenume_Nume_L5`, nu doar `Ana_L5`.
+1. **Balonul rămâne pe ecran** — `spune` fără durată nu dispare singur. Pune `spune` cu textul gol.  
+2. **Personajul e uriaș sau dispare** — la start pune `setează mărimea la` `100`.  
+3. **Culoarea e altfel la al doilea steag** — efectele se adună. Pune la start `setează efectul … la` `0` sau `anulează efectele grafice`.  
+4. **`modifică` și `setează` se încurcă** — `modifică` adaugă, `setează` pune valoarea exactă.  
+5. **Mesajul nu ajunge** — numele din `difuzează` și din `când primesc` nu e același mesaj (`răspuns` și `raspuns` sunt mesaje diferite).  
+6. **`decorul următor` nu duce la `Afară`** — în lista de decoruri `Afară` trebuie să fie după `Studio`.  
+7. **Nume fișier** — `Prenume_Nume_L5`, nu doar `Ana_L5`.  
 
 ---
 
 ## De făcut azi — „Interviul”
 Salvat: `Prenume_Nume_L5`
 
-### Minim vs Complet
+### Minim vs Complet *(citește înainte să începi)*
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | **Pasul 1 + Pasul 2** — 2 roluri + dialog (`spune` / `gândește` + `așteaptă`) |
-| **Complet (ținta orei)** | Minim + **Pasul 3** — mărime, ≥2 culori, reset complet pe steag |
+| **Minim („am reușit”)** | **Pasul 1 + Pasul 2** — 2 decoruri + **Reporterul** cu ≥ 8 blocuri diferite |
+| **Complet (ținta orei)** | Minim + **Dragonul** cu ≥ 8 blocuri diferite, care răspunde Reporterului |
 
-Dacă rămâi în urmă: salvează la **Minim**.  
+Dacă rămâi în urmă: salvează la **Minim**. Nu e eșec.  
 Cei rapizi: Complet, apoi Bonus.
 
-### Pasul 1 — Cele două roluri
-- [ ] **Reporter** + **intervievat**, așezați **lângă** unul pe altul  
-- [ ] Pe amândoi, la steag: măcar pregătit locul pentru reset (la Complet: mărime 100 + efecte anulate)
+### Pasul 1 — Locul *(Minim)*
+Adaugi 2 decoruri, `Studio` și `Afară` (în această ordine), și redenumești personajele: `Reporterul`, `Dragonul`, `Publicul`. Pe **Scenă** faci scripturile:
 
-### Pasul 2 — Dialogul *(parte din Minim)*
-*(Ca la „Încearcă tu — dialog”, pe **ambele** personaje.)*
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#9966FF;font-weight:700">schimbă decorul la</span> `Studio`  
 
-- [ ] ≥ **4** <span style="color:#9966FF;font-weight:700">spune</span> în total, **împărțite** pe cele 2 personaje (nu toate pe unul)  
-- [ ] ≥ **1** <span style="color:#9966FF;font-weight:700">gândește</span>  
-- [ ] Între replici: <span style="color:#FFAB19;font-weight:700">așteaptă</span> — pe rând  
+<span style="color:#E6A800;font-weight:700">când primesc</span> `afară`  
+<span style="color:#9966FF;font-weight:700">decorul următor</span>  
+
+- [ ] `Studio` primul în listă, `Afară` al doilea  
+- [ ] Scripturile sunt pe **Scenă**  
+
+### Pasul 2 — Reporterul *(Minim)*
+Alegi un personaj din bibliotecă care seamănă cu un reporter. Ordinea e un **model**: poți schimba textele, numerele și mesajele.
+
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#4C97FF;font-weight:700">mergi la x:</span> `-120` <span style="color:#4C97FF;font-weight:700">y:</span> `-60`  
+<span style="color:#9966FF;font-weight:700">setează mărimea la</span> `100` %  
+<span style="color:#9966FF;font-weight:700">spune</span> `Bun venit la Interviul!`  
+<span style="color:#FFAB19;font-weight:700">așteaptă</span> `3` secunde  
+<span style="color:#9966FF;font-weight:700">spune</span> `Cum te simți, dragonule?`  
+<span style="color:#E6A800;font-weight:700">difuzează … și așteaptă</span> `răspuns`  
+<span style="color:#9966FF;font-weight:700">gândește</span> `Uau, ce mare!`  
+<span style="color:#9966FF;font-weight:700">modifică efectul [culoare] cu</span> `30`  
+<span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(un sunet potrivit)*  
+<span style="color:#FFAB19;font-weight:700">așteaptă</span> `2` secunde  
+<span style="color:#9966FF;font-weight:700">spune</span> `Hai afară!`  
+<span style="color:#E6A800;font-weight:700">difuzează</span> `afară`  
+<span style="color:#9966FF;font-weight:700">anulează efectele grafice</span>  
+<span style="color:#9966FF;font-weight:700">schimbă costumul la</span> *(un costum ales de tine)*  
+
+- [ ] Fără Dragon, Reporterul își termină scriptul singur  
+- [ ] Steag din nou → începe de la capăt, cu mărime și culoare normale  
 - [ ] Salvat: `Prenume_Nume_L5`  
 
-**→ Minim când:** un coleg înțelege că e un interviu (întrebare → răspuns).
+**→ Minim când:** Reporterul întâmpină publicul, pune întrebarea, se face verde, spune „Hai afară!” și decorul trece la `Afară`.
 
-### Pasul 3 — Mărime, culoare, reset *(Complet)*
-*(Ca la „Încearcă tu — mărime / culoare / reset”.)*
+### Pasul 3 — Dragonul *(Complet)*
+Alegi un dragon sau alt personaj. Are **3 scripturi**:
 
-- [ ] ≥ o schimbare de **mărime** în timpul interviului (`modifică`)  
-- [ ] ≥ **2** schimbări de **efect culoare**  
-- [ ] La steag, pe **amândoi**: `setează mărimea la 100` + `anulează efectele grafice`  
-- [ ] Steag din nou → totul **curat**  
-- [ ] Salvat din nou  
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#4C97FF;font-weight:700">orientează-te spre</span> `Reporterul`  
+<span style="color:#9966FF;font-weight:700">setează efectul [culoare] la</span> `0`  
 
-**Gata Complet când:** interviul se vede clar și reîncepe curat la fiecare steag.
+<span style="color:#E6A800;font-weight:700">când primesc</span> `răspuns`  
+<span style="color:#9966FF;font-weight:700">gândește</span> `Hmm…`  
+<span style="color:#9966FF;font-weight:700">spune</span> `Sunt foarte emoționat!`  
+<span style="color:#FFAB19;font-weight:700">repetă</span> `5` → <span style="color:#9966FF;font-weight:700">modifică mărimea cu</span> `10` → <span style="color:#9966FF;font-weight:700">modifică efectul [culoare] cu</span> `20` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
+
+<span style="color:#E6A800;font-weight:700">când primesc</span> `afară`  
+<span style="color:#9966FF;font-weight:700">setează mărimea la</span> `100` %  
+<span style="color:#4C97FF;font-weight:700">glisează în</span> `2` <span style="color:#4C97FF;font-weight:700">secunde la [poziție aleatoare]</span>  
+<span style="color:#9966FF;font-weight:700">spune</span> `Ce aer curat!`  
+
+- [ ] Se uită spre Reporter la steag  
+- [ ] La `răspuns` crește și își schimbă culoarea  
+- [ ] La `afară` revine la mărimea normală și glisează  
+- [ ] Salvat din nou: `Prenume_Nume_L5`  
+
+**Gata Complet când:** Reporterul întreabă, Dragonul răspunde crescând și schimbându-și culoarea, apoi trec amândoi afară, fără explicație cu vocea.
 
 ---
 
 ## Bonus (dacă ai terminat Complet)
-- [ ] O a treia replică + schimb de <span style="color:#9966FF;font-weight:700">costum</span> la final  
-- [ ] Efect **fantomă** sau **vârtej** o dată, apoi `anulează efectele grafice`  
-- [ ] Reporterul: `ascunde` la steag, apoi `arată` înainte să vorbească  
-- [ ] **Pulsează** (al 2-lea script pe steag):  
-  <span style="color:#FFAB19;font-weight:700">forever</span> → `modifică mărimea cu` `10` → `așteaptă` `0.3` → `modifică cu` `-10` → `așteaptă` `0.3`  
-  *(Pe steag tot `setează mărimea la 100` — altfel crește la nesfârșit.)*  
-- [ ] ★★★ **Provocare:** O **transformare** în ordine: mărime, culoare și costum se schimbă pe rând, iar la steag personajul revine la normal.
+- [ ] **Al 3-lea personaj** (Publicul), care reacționează afară:
+
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#4C97FF;font-weight:700">mergi la x:</span> `0` <span style="color:#4C97FF;font-weight:700">y:</span> `120`  
+<span style="color:#9966FF;font-weight:700">setează mărimea la</span> `50` %  
+
+<span style="color:#E6A800;font-weight:700">când primesc</span> `afară`  
+<span style="color:#FFAB19;font-weight:700">așteaptă</span> `3` secunde  
+<span style="color:#9966FF;font-weight:700">modifică mărimea cu</span> `30`  
+<span style="color:#FFAB19;font-weight:700">repetă</span> `3` → <span style="color:#9966FF;font-weight:700">costumul următor</span> → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
+<span style="color:#9966FF;font-weight:700">spune</span> `Bravo, dragonule!`  
+<span style="color:#9966FF;font-weight:700">schimbă costumul la</span> *(un costum ales de tine)*  
+
+- [ ] ★★★ **Provocare:** Dragonul își schimbă culoarea la fiecare click pe el, iar tasta **spațiu** o readuce cu `anulează efectele grafice`
 
 ## Recapitulare rapidă
-1. Aspect = `spune`, `gândește`, mărime, culoare, costum  
-2. În clip: `modifică` · la steag: **`setează` la 100** + anulează efectele  
-3. Dialog = pe rând + `așteaptă`  
-4. Nume: **`Prenume_Nume_L5`**  
+1. `spune` și `gândește` fără durată **rămân** pe ecran; cu text gol dispar  
+2. `modifică` **adaugă**, `setează` **pune** valoarea exactă  
+3. `setează mărimea la` `100` % = mărimea normală  
+4. Efectele rămân între steaguri: la start pui `setează efectul … la` `0` sau `anulează efectele grafice`  
+5. Nume: **`Prenume_Nume_L5`**  
 
 ## Schema pe scurt *(pe foaie)*
 
-**Pe Personaj**  
-la steag → `setează mărimea la 100` → `anulează efectele grafice` →  
-`spune` / `gândește` pe rând + `așteaptă`  
-*(în clip: `modifică mărimea` / efect culoare — la steag resetezi cu `setează`)*
+**Pe Scenă**  
+la steag → `schimbă decorul la` Studio  
+când primesc afară → `decorul următor`
+
+**Pe Reporter**  
+la steag → `mergi la x: y:` → `setează mărimea la` → `spune` → `așteaptă` → `spune` → `difuzează … și așteaptă` → `gândește` → `modifică efectul` → `pornește sunetul` → `așteaptă` → `spune` → `difuzează` → `anulează efectele grafice` → `schimbă costumul la`
+
+**Pe Dragon**  
+la steag → `orientează-te spre` → `setează efectul … la`  
+când primesc răspuns → `gândește` → `spune` → `repetă` (`modifică mărimea` + `modifică efectul` + `așteaptă`)  
+când primesc afară → `setează mărimea la` → `glisează la [aleatoare]` → `spune`
 
 **Quiz scurt (cu profesorul):**  
-- Diferența `spune` / `gândește`?  
-- De ce la reset folosim `setează mărimea la 100`, nu `modifică`?
+- Ce diferență e între `modifică mărimea cu` și `setează mărimea la`?  
+- Cum ștergi un balon de vorbă rămas pe ecran?  
+- De ce pui `anulează efectele grafice` la start?  
+- Ce face `spune` fără „pentru … secunde”?
 
-## Temă
-Opțional: dacă ai doar Minim, adaugi acasă mărime + culoare + reset — același `Prenume_Nume_L5`.
+## Temă (opțional)
+- Dacă ai doar Minim: adaugi acasă Dragonul, în același `Prenume_Nume_L5`.  
+- Dacă ai Complet: adaugi acasă al 3-lea personaj, în același `Prenume_Nume_L5`.  
+- Dacă ai terminat și Bonusul: faci o copie și schimbi povestea (alte personaje, alte replici, alte culori).
