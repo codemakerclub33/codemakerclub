@@ -8,6 +8,8 @@ De ce contează. În jocuri, lucrurile se întâmplă la apăsarea unei taste, l
 
 Capitolele de azi sunt aceleași cinci: Evenimente, Aspect, Mișcare, Control și Sunet. Blocuri noi, toate din Evenimente: când tasta este apăsată, când se dă click pe acest personaj, când decorul se schimbă la, difuzează, difuzează și așteaptă, și când primesc. Restul blocurilor le ai din lecțiile trecute.
 
+Ce face fiecare bloc nou. Când tasta este apăsată pornește scriptul când apeși tasta aleasă. Când se dă click pe acest personaj îl pornește când dai click pe personaj. Când decorul se schimbă la îl pornește când scena trece la decorul ales. Difuzează trimite un mesaj către toate personajele, iar scriptul merge mai departe. Difuzează și așteaptă trimite mesajul și așteaptă să termine cei care îl primesc. Când primesc pornește scriptul când personajul aude mesajul ales.
+
 Primul pas pe ecran. Tastă și click. Selectezi personajul, nu Scena. Pui: când tasta spațiu este apăsată, iar sub el spune Bis, două secunde. Apoi încă un script: când se dă click pe acest personaj, și sub el spune Salut, două secunde. Dai o dată click pe scenă, apoi apeși spațiu și dai click pe personaj. Fiecare bloc de tip când este un început de script de sine stătător și nu are nevoie de steag.
 
 Al doilea pas pe ecran. Când se schimbă decorul. Ai două decoruri, Culise și Spectacol. Pe Scenă: steagul, schimbă decorul la Culise, așteaptă cinci secunde, decorul următor. Pe personaj: când decorul se schimbă la Spectacol, iar sub el spune Începe spectacolul, două secunde. Apeși steagul: după cinci secunde decorul se schimbă și personajul vorbește.

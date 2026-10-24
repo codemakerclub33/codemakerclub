@@ -8,6 +8,8 @@ De ce contează. Ca într-un joc sau o poveste pe telefon: se schimbă locul, de
 
 Capitolele de azi sunt aceleași cinci: Evenimente, Aspect, Mișcare, Control și Sunet. Blocuri noi: din Aspect, schimbă decorul la, decorul următor și costumul următor. Din Control, repetă. Restul le ai din lecția trecută: steagul verde, spune, gândește, schimbă costumul la, așteaptă, mergi, pornește sunetul și redă sunetul până la final.
 
+Ce face fiecare bloc nou. Schimbă decorul la schimbă locul de pe scenă la decorul ales, și se pune pe Scenă. Decorul următor trece la decorul următor din listă. Costumul următor face personajul să treacă la următorul costum din listă, pentru animație. Repetă repetă de câte ori alegi blocurile din interior.
+
 Primul pas pe ecran. Jos, lângă scenă, apeși pe Decoruri. Adaugi două decoruri din bibliotecă și le redenumești clar, de exemplu Casa și Parc. Casa trebuie să fie prima în listă, iar Parc a doua.
 
 Al doilea pas pe ecran. Selectezi Scena, nu personajul. Pui: când se dă click pe steag, apoi schimbă decorul la Casa. Așa începi mereu pe scena unu. Apoi așteaptă zece secunde și pune decorul următor, care trece la Parc. Poți alege alt număr de secunde.

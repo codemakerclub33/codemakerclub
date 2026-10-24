@@ -31,6 +31,15 @@ Ca într-un joc sau o poveste pe telefon: se schimbă **locul** (casă → parc)
 <span style="color:#E6A800;font-weight:700">Evenimente</span> · <span style="color:#9966FF;font-weight:700">Aspect</span> · <span style="color:#4C97FF;font-weight:700">Mișcare</span> · <span style="color:#FFAB19;font-weight:700">Control</span> · <span style="color:#CF63CF;font-weight:700">Sunet</span>  
 *(Detectare, Operatori, Variabile — mai târziu.)*
 
+**Blocuri noi azi:**
+
+| Bloc | Ce face |
+|------|---------|
+| `schimbă decorul la` | schimbă locul de pe scenă la decorul ales (se pune pe Scenă) |
+| `decorul următor` | trece la decorul următor din listă |
+| `costumul următor` | personajul trece la următorul costum din listă (animație) |
+| `repetă` | repetă de câte ori alegi blocurile din interior |
+
 ---
 
 ## Pas cu pas

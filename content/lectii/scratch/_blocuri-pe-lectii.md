@@ -69,21 +69,22 @@ L1 → L2 (gata, de aliniat la plan) → L3 → L4 → L5 → L6 → L7 → L8 �
 3. **De ce contează** (2–3 rânduri).
 4. **Planul orei** (120 minute, tabel).
 5. **Capitole azi:** capitolele folosite și ce rămâne pentru mai târziu.
-6. **Pas cu pas** (doar blocurile noi, fiecare pas cu „Încearcă tu”):
+6. **Blocuri noi azi:** tabelul **Bloc / Ce face**, imediat după „Capitole azi” (și înainte de „Pas cu pas”). Câte o frază scurtă pentru fiecare bloc nou al lecției, cu diferența față de blocul asemănător când există. Narațiunea are paragraful „Ce face fiecare bloc nou”, cu aceleași fraze.
+7. **Pas cu pas** (doar blocurile noi, fiecare pas cu „Încearcă tu”):
    - tabelul „Capitol / Ce iei azi” (blocurile noi îngroșate)
    - câte un pas pentru fiecare grup de blocuri noi
    - regulile de combinare, când sunt necesare (ex. „Nu ai sunet după sunet, nici costum după costum”)
-7. **Greșeli frecvente** (4–7 puncte).
-8. **De făcut azi** (titlul proiectului):
+8. **Greșeli frecvente** (4–7 puncte).
+9. **De făcut azi** (titlul proiectului):
    - Minim vs Complet (tabel)
    - Pasul 1: scena sau personajul 1, cu script-model (Minim)
    - Pasul 2: personajul 2, cu script-model (Complet)
    - „Gata Complet când: …”
-9. **Bonus:** personajul 3 cu script-model + ★★★ Provocare.
-10. **Recapitulare rapidă** (4–6 puncte).
-11. **Schema pe scurt** (pe foaie, pe personaje) + **Quiz scurt**.
-12. **Exemplu pe Scratch** (iframe, la final, dacă există).
-13. **Temă (opțional):** 3 rânduri (doar Minim / Complet / Bonus terminat).
+10. **Bonus:** personajul 3 cu script-model + ★★★ Provocare.
+11. **Recapitulare rapidă** (4–6 puncte).
+12. **Schema pe scurt** (pe foaie, pe personaje) + **Quiz scurt**.
+13. **Exemplu pe Scratch** (iframe, la final, dacă există).
+14. **Temă (opțional):** 3 rânduri (doar Minim / Complet / Bonus terminat).
 
 ### Reguli care se aplică peste tot
 - Numărul de blocuri apare doar în **Obiectiv** și în tabelul **Minim vs Complet**.

@@ -32,6 +32,19 @@ Fără steag și fără salvare, restul orelor nu pot începe.
 <span style="color:#E6A800;font-weight:700">Evenimente</span> · <span style="color:#9966FF;font-weight:700">Aspect</span> · <span style="color:#4C97FF;font-weight:700">Mișcare</span> · <span style="color:#FFAB19;font-weight:700">Control</span> · <span style="color:#CF63CF;font-weight:700">Sunet</span>  
 *(Detectare, Operatori, Variabile — mai târziu.)*
 
+**Blocurile de azi:**
+
+| Bloc | Ce face |
+|------|---------|
+| `când se dă click pe steagul verde` | pornește scriptul când apeși steagul |
+| `mergi … pași` | mută personajul înainte cu atâția pași cât ai ales |
+| `spune … pentru … secunde` | personajul vorbește, cu un balon, cât timp ai ales |
+| `gândește … pentru … secunde` | la fel, dar cu balon de gând |
+| `așteaptă … secunde` | scriptul stă pe loc cât timp ai ales |
+| `schimbă costumul la` | personajul trece la costumul ales |
+| `pornește sunetul` | pornește sunetul, iar scriptul merge mai departe |
+| `redă sunetul … până la final` | pornește sunetul și așteaptă să se termine |
+
 ---
 
 ## Pas cu pas

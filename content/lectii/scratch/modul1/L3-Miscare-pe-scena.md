@@ -31,6 +31,19 @@ La finalul orei muți personaje cu blocuri din <span style="color:#4C97FF;font-w
 <span style="color:#E6A800;font-weight:700">Evenimente</span> · <span style="color:#9966FF;font-weight:700">Aspect</span> · <span style="color:#4C97FF;font-weight:700">Mișcare</span> · <span style="color:#FFAB19;font-weight:700">Control</span> · <span style="color:#CF63CF;font-weight:700">Sunet</span>  
 *(Detectare, Operatori, Variabile — mai târziu.)*
 
+**Blocuri noi azi:**
+
+| Bloc | Ce face |
+|------|---------|
+| `mergi la x: y:` | mută personajul imediat într-un loc exact de pe scenă |
+| `mergi la [poziție aleatoare]` | mută personajul într-un loc ales de Scratch, altul de fiecare dată |
+| `orientează-te în direcția` | întoarce personajul spre direcția aleasă (0 sus, 90 dreapta, 180 jos, -90 stânga) |
+| `orientează-te spre` | personajul se uită spre alt personaj |
+| `rotește-te ↻` | învârte personajul spre dreapta cu atâtea grade cât ai ales |
+| `rotește-te ↺` | învârte personajul spre stânga cu atâtea grade cât ai ales |
+| `glisează … la x: y:` | mută personajul lin, în timpul ales, într-un loc exact |
+| `glisează … la [poziție aleatoare]` | mută personajul lin, în timpul ales, spre un loc ales de Scratch |
+
 ---
 
 ## Pas cu pas

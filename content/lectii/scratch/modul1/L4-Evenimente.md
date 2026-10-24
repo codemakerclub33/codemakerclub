@@ -31,6 +31,17 @@ La finalul orei personajele tale reacționează la evenimente, nu doar la steag.
 <span style="color:#E6A800;font-weight:700">Evenimente</span> · <span style="color:#9966FF;font-weight:700">Aspect</span> · <span style="color:#4C97FF;font-weight:700">Mișcare</span> · <span style="color:#FFAB19;font-weight:700">Control</span> · <span style="color:#CF63CF;font-weight:700">Sunet</span>  
 *(Detectare, Operatori, Variabile — mai târziu.)*
 
+**Blocuri noi azi:**
+
+| Bloc | Ce face |
+|------|---------|
+| `când tasta [ ] este apăsată` | pornește scriptul când apeși tasta aleasă |
+| `când se dă click pe acest personaj` | pornește scriptul când dai click pe personaj |
+| `când decorul se schimbă la` | pornește scriptul când scena trece la decorul ales |
+| `difuzează` | trimite un mesaj către toate personajele, iar scriptul merge mai departe |
+| `difuzează … și așteaptă` | trimite mesajul și așteaptă să termine cei care îl primesc |
+| `când primesc` | pornește scriptul când personajul aude mesajul ales |
+
 ---
 
 ## Pas cu pas
