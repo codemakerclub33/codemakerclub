@@ -1,33 +1,37 @@
 Lecția nouă. Personajul meu.
 
-Astăzi pui împreună ce ai învățat: o animație scurtă despre personajul tău, gata de arătat. Fișierul se numește Prenume, linie jos, Nume, linie jos, L nouă.
+Astăzi pui împreună tot ce ai învățat: o poveste scurtă despre personajul tău, cu scenă, sunet și un mic joc. Fișierul se numește Prenume, linie jos, Nume, linie jos, L nouă.
 
-Obiectivul. Un clip care pornește curat la steagul verde, cu mișcare sau animație, replică și sunet, fără să îi explici colegului cu vocea. Minim: scheletul rulează, reset, un spune, o buclă sau un traseu, un sunet, final, chiar dacă e sub treizeci de secunde. Complet: toate cele opt elemente din checklist, plus durata treizeci până la șaizeci de secunde.
+Obiectivul. La finalul orei ai un clip de aproximativ treizeci de secunde, care pornește curat la steagul verde și în care personajele se mișcă, vorbesc, cântă și răspund la tastă sau la click, fără să explici nimic cu vocea. Minim: personajul unu, Animalul tău, cu cel puțin opt blocuri diferite. Complet: personajul doi, Stăpânul, cu cel puțin opt blocuri diferite, care îl trezește pe Animal și îl cheamă acasă.
 
-De ce contează. Până acum ai învățat bucăți: scenă, mișcare, evenimente, aspect, sunet, X și Y, repetă. Azi e filmul tău scurt. Aceleași blocuri, o poveste cap-coadă.
+De ce contează. Până acum ai învățat blocurile pe rând. Azi folosești aceleași blocuri într-o poveste întreagă, de la început până la sfârșit. Așa se fac jocurile și animațiile adevărate.
 
-Cele opt elemente. Unu: fundal clar. Doi: cel puțin două costume. Trei: steag egal start curat, loc, direcție, costum, mărime. Patru: poziții cu x și y pe traseu, nu doar la reset. Cinci: mișcare sau animație cu repetă și așteaptă. Șase: cel puțin un spune sau gândește. Șapte: cel puțin un sunet. Opt: durează cam treizeci până la șaizeci de secunde.
+Capitolele de azi sunt toate șase: Mișcare, Evenimente, Aspect, Sunet, Control și Detectare, doar condiția tasta apăsată.
 
-Primul pas pe ecran. Ordinea pe steag: reset, introducere, acțiune, final. Un singur script pe steag, pe rând.
+Blocuri noi azi: niciunul. Reluăm ce știi. Din Mișcare: setează x la, setează y la, modifică x cu, modifică y cu, glisează la x și y, orientează-te spre. Din Evenimente: steagul verde, când primesc, difuzează, când tasta este apăsată și când se dă click pe acest personaj. Din Aspect: schimbă decorul la, spune pentru secunde, costumul următor, setează mărimea la și modifică efectul culoare cu. Din Sunet: pornește sunetul și setează volumul la. Din Control: repetă, așteaptă, la infinit, dacă și stop totul. Din Detectare: tasta apăsată.
 
-Al doilea pas pe ecran. Reset, chiar sub steag: du-te la start, orientează-te nouăzeci, comută la costumul din start, setează mărimea la o sută, anulează efectele grafice, oprește toate sunetele.
+Primul pas pe ecran. Planul pe hârtie. Alegi povestea: cine pornește, ce se întâmplă, cum se termină. Azi povestea e Ziua animalului meu: Stăpânul îl trezește, ies la plimbare, se joacă în grădină, apoi se întorc acasă. Desenezi pe o foaie cele trei momente: Cameră, Grădină și Acasă. Pentru fiecare personaj notezi cu ce bloc pornește: steag, când primesc, tastă sau click. Animalul poate fi orice personaj îți place, nu doar un animal. E personajul tău.
 
-Al treilea pas pe ecran. Introducere: cine e, cu spune sau gândește. Acțiune: plimbare pe puncte x y, sau dans cu repetă. Dacă ai două bucle, una după alta, nu C în C. Final: sunet plus spune Gata, în afara buclelor.
+Al doilea pas pe ecran. Ordinea pe scenă. Fiecare personaj are scriptul lui pe steag: se așază, cu setează x la și setează y la, și apoi așteaptă ce are de făcut. Ce vine după un mesaj pui sub când primesc, nu în același script cu steagul. Personajele nu vorbesc deodată: folosești așteaptă sau mesaje, ca la lecțiile trecute. Finalul, adică stop totul, vine după ce au terminat toți, nu înăuntrul unei bucle.
 
-Al patrulea pas pe ecran. Scheletul minim: reset, un spune cu numele, un repetă șase sau un traseu scurt, un sunet, spune la final. Rulează o dată. Verifică că merge curat. Nu cronometra încă.
+Al treilea pas pe ecran. Cum testezi. Apeși steagul și vezi tot clipul, fără să ții mouse-ul pe personaje. Apeși steagul a doua oară: trebuie să înceapă curat, din același loc. Pe urmă încerci tastele și click-ul, ca să vezi că răspund.
 
-Greșeli frecvente. Dacă la steag e haos, lipsește resetul. Dacă e prea scurt, adaugă așteaptă. Dacă Gata apare de zece ori, finalul e în repetă. Mută spune sub buclă. Dacă ai C în C, scoate. Dacă nu se aude, verifică tab Sunete și oprește toate sunetele pe steag. „Am scris, deci e gata” e greșit. Rulează steagul de două ori.
+Greșeli frecvente. Dacă la al doilea steag e haos, personajele nu pornesc din același loc: pune la start setează x la și setează y la pentru fiecare. Dacă vorbesc deodată, lipsește așteaptă sau un mesaj între replici. Dacă clipul se oprește prea devreme, stop totul e prea sus: îl pui după ce termină toți. Dacă nu se aude nimic, personajul nu are sunet în tab-ul Sunete, sau volumul calculatorului e jos. Dacă decorul nu se schimbă, mesajele plimbare și acasă nu sunt scrise la fel în difuzează și în când primesc. Dacă Animalul nu merge cu săgețile, dacă nu e în la infinit. Dacă ai greșit numele la salvare, adaugă și numele de familie.
 
 Proiectul de azi. Personajul meu.
 
-Minim înseamnă: scheletul care merge, intro, acțiune, final, reset, salvat. Complet înseamnă: toate cele opt, treizeci până la șaizeci de secunde, un coleg înțelege fără explicație. Dacă rămâi în urmă, salvează la Minim.
+Minim înseamnă: scena cu două decoruri și Animalul cu cel puțin opt blocuri diferite. Complet înseamnă: minim, plus Stăpânul, cu cel puțin opt blocuri diferite, care îl trezește pe Animal și îl cheamă acasă. Dacă rămâi în urmă, salvează la Minim. Nu e eșec.
 
-În proiect, primul pas. Reset pe steag. Scheletul rulează de două ori curat.
+În proiect, primul pas, pentru Minim. Lumea. Alegi două decoruri și le redenumești Cameră și Grădină, în această ordine. Redenumești personajele: Animalul, Stăpânul și Mingea. Animalul, Stăpânul și Mingea primesc în tab-ul Sunete câte un sunet: un lătrat, un fluier și un sunet de sărit. Pe Scenă faci trei scripturi. La steag: schimbă decorul la Cameră. Când primesc plimbare: schimbă decorul la Grădină. Și când primesc acasă: schimbă decorul la Cameră.
 
-În proiect, al doilea pas. Intro, acțiune, final. Salvezi.
+În proiect, al doilea pas, pentru Minim. Animalul. Alegi personajul tău, cu cel puțin două costume. Are trei scripturi. Primul, la steag: setează x la minus o sută cincizeci. Apoi setează y la minus optzeci. Apoi spune Bună dimineața, două secunde. Apoi așteaptă două secunde. La final, difuzează plimbare. Al doilea, când primesc plimbare: pornește un lătrat. Apoi repetă șase, înăuntru modifică x cu treizeci, costumul următor și așteaptă zero virgulă trei. Apoi glisează în două secunde la x patruzeci, y minus șaizeci. Apoi la infinit, înăuntru două lucruri. Întâi: dacă tasta săgeată dreapta apăsată, atunci modifică x cu zece. Apoi: dacă tasta săgeată stânga apăsată, atunci modifică x cu minus zece. Al treilea, când primesc acasă: setează x la minus o sută cincizeci. Apoi setează y la minus optzeci. La final, spune Zzz, trei secunde. Este un model: poți schimba textele, numerele și mesajele. Fără Stăpân, Animalul pleacă singur la plimbare și îl poți mișca cu săgețile. Salvezi.
 
-În proiect, al treilea pas, pentru Complet. Bifezi cele opt. Cronometrezi. Adaugi ce lipsește. Salvezi din nou.
+În proiect, al treilea pas, pentru Complet. Stăpânul. Alegi un personaj care seamănă cu un stăpân. Are trei scripturi. Primul, la steag: setează x la o sută cincizeci. Apoi setează y la minus șaizeci. Apoi orientează-te spre Animalul. Apoi setează volumul la optzeci la sută. Apoi pornește un fluier. Apoi așteaptă două secunde. La final, spune Hai la plimbare, două secunde. Al doilea, când primesc plimbare: repetă de două ori, înăuntru modifică y cu zece, așteaptă zero virgulă trei, modifică y cu minus zece și așteaptă zero virgulă trei. Apoi așteaptă douăzeci de secunde. Apoi spune Gata, acasă, două secunde. La final, difuzează acasă. Al treilea, când primesc acasă: așteaptă patru secunde. La final, stop totul. Salvezi din nou.
 
-Recapitulare. Reset, intro, acțiune, final. Opt elemente. Minim e scheletul care merge. Complet e cele opt plus durata. Numele fișierului are prenumele și numele de familie.
+Bonus. Al treilea personaj, Mingea, cu care te joci în grădină. Primul script, la steag: setează x la o sută. Apoi setează y la minus șaizeci. Apoi setează mărimea la patruzeci la sută. Al doilea, când se dă click pe acest personaj: pornește un sunet de sărit. Apoi repetă patru, înăuntru modifică y cu douăzeci, așteaptă zero virgulă unu, modifică y cu minus douăzeci și așteaptă zero virgulă unu. La final, modifică efectul culoare cu douăzeci și cinci. Al treilea, când tasta spațiu este apăsată: glisează într-o secundă la poziție aleatoare. Provocarea: o tastă, de exemplu litera m, face Animalul mai mare sau mai mic, cu dacă altfel, iar la acasă revine la normal cu setează mărimea la o sută la sută.
 
-Succes la personajul tău.
+Recapitulare. Fiecare personaj are scriptul lui pe steag, ca să pornească mereu din același loc. Mesajele, adică difuzează și când primesc, leagă personajele într-o poveste. Așteaptă și mesajele le fac să vorbească pe rând. La infinit cu dacă face personajul să răspundă la tastă. Stop totul vine ultimul, după ce au terminat toți. Numele fișierului are prenumele și numele de familie.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă Stăpânul, în același fișier. Dacă ai Complet, adaugi acasă al treilea personaj, în același fișier. Dacă ai terminat și bonusul, faci o copie și schimbi povestea: alt personaj, alt loc, alt final.
+
+Succes cu povestea ta.

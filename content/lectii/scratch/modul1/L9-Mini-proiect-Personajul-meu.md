@@ -2,19 +2,18 @@
 **Modulul 1 · Primii pași**  
 **Code Maker Club · Scratch Starter**
 
-> Azi pui împreună ce ai învățat: o animație scurtă **despre personajul tău**, gata de arătat.  
+> Azi pui împreună tot ce ai învățat: o poveste scurtă despre **personajul tău**, cu scenă, sunet și un mic joc.  
 > Proiect: **„Personajul meu”** · fișier: `Prenume_Nume_L9` (ex. `Ana_Pop_L9`)
 
 ---
 
 ## Obiectiv
-La finalul orei ai un clip care pornește curat la <span style="color:#3F8F2A;font-weight:700">steag verde</span>, cu mișcare/animație, replică și sunet — fără să îi explici colegului cu vocea.  
-**Minim:** scheletul rulează (reset + 1 `spune` + 1 buclă/traseu + 1 sunet + final), chiar dacă e sub 30 sec.  
-**Ținta orei (Complet):** **toate cele 8 elemente** din checklist + durata **30–60 sec**.
+La finalul orei ai un clip de aproximativ 30 de secunde, care pornește curat la <span style="color:#3F8F2A;font-weight:700">steagul verde</span> și în care personajele se mișcă, vorbesc, cântă și răspund la tastă sau la click, fără să explici nimic cu vocea.  
+**Minim:** personajul 1 (Animalul tău) cu cel puțin **8 blocuri diferite**.  
+**Ținta orei (Complet):** personajul 2 (Stăpânul), cu cel puțin **8 blocuri diferite**, care îl trezește pe Animal și îl cheamă acasă.
 
 ## De ce contează
-Până acum ai învățat bucăți (scenă, mișcare, evenimente, aspect, sunet, X/Y, `repetă`).  
-Azi e **filmul tău scurt**: aceleași blocuri, dar o poveste cap-coadă.
+Până acum ai învățat blocurile pe rând. Azi folosești aceleași blocuri într-o poveste întreagă, de la început până la sfârșit. Așa se fac jocurile și animațiile adevărate.
 
 ---
 
@@ -22,179 +21,211 @@ Azi e **filmul tău scurt**: aceleași blocuri, dar o poveste cap-coadă.
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Obiectiv + checklist (cele 8) + **Minim vs Complet** |
-| 10–30 | Pas cu pas + mini-verificări (**Încearcă tu**) |
-| 30–50 | Proiect: **Minim** (scheletul rulează curat) |
-| 50–100 | Proiect: **Complet** (cele 8 + 30–60 sec, arăți unui coleg) |
-| 100–120 | Recap, bonus, arăți clasei / salvare |
+| 0–5 | Obiectiv + ce reluăm azi |
+| 5–30 | Pas cu pas: **3** mini-verificări (**Încearcă tu**) |
+| 30–105 | Proiectul „Personajul meu” (vezi **Minim vs Complet**) |
+| 105–120 | Recap, bonus, salvare |
 
-*(Repere pentru profesor: la ~50 min, cine nu are încă intro→acțiune→final pe steag = de ajutat întâi pe schelet, nu pe detalii.)*
+**Capitole azi (toate 6):**  
+<span style="color:#4C97FF;font-weight:700">Mișcare</span> · <span style="color:#E6A800;font-weight:700">Evenimente</span> · <span style="color:#9966FF;font-weight:700">Aspect</span> · <span style="color:#CF63CF;font-weight:700">Sunet</span> · <span style="color:#FFAB19;font-weight:700">Control</span> · <span style="color:#5CB1D6;font-weight:700">Detectare</span> *(doar `tasta [ ] apăsată?`)*
+
+**Blocuri noi azi:** niciunul. Reluăm ce știi:
+
+| Capitol | Ce reluăm |
+|---------|-----------|
+| <span style="color:#4C97FF;font-weight:700">Mișcare</span> | `setează x la`, `setează y la`, `modifică x cu`, `modifică y cu`, `glisează … la x: y:`, `orientează-te spre` |
+| <span style="color:#E6A800;font-weight:700">Evenimente</span> | `când se dă click pe` steagul verde, `când primesc`, `difuzează`, `când tasta [ ] este apăsată`, `când se dă click pe acest personaj` |
+| <span style="color:#9966FF;font-weight:700">Aspect</span> | `schimbă decorul la`, `spune … pentru … secunde`, `costumul următor`, `setează mărimea la`, `modifică efectul [culoare] cu` |
+| <span style="color:#CF63CF;font-weight:700">Sunet</span> | `pornește sunetul`, `setează volumul la` |
+| <span style="color:#FFAB19;font-weight:700">Control</span> | `repetă`, `așteaptă`, `la infinit`, `dacă … atunci`, `stop [totul]` |
+| <span style="color:#5CB1D6;font-weight:700">Detectare</span> | `tasta [ ] apăsată?` |
 
 ---
 
 ## Pas cu pas
 
-### 1) Ce trebuie să aibă clipul
-Pe personajul tău (și scenă, dacă schimbi fundalul):
+### 1) Planul pe hârtie
+1. Alegi povestea: cine pornește, ce se întâmplă, cum se termină. Azi povestea e „Ziua animalului meu”: Stăpânul îl trezește, ies la plimbare, se joacă în grădină, apoi se întorc acasă
+2. Desenezi pe o foaie cele **trei momente**: Cameră, Grădină, Acasă
+3. Pentru fiecare personaj notezi cu ce bloc **pornește** (steag, `când primesc`, tastă sau click)
+4. **Animalul** poate fi orice personaj îți place, nu doar un animal. E personajul tău
 
-| # | Element | De unde (lecții) |
-|---|---------|------------------|
-| 1 | Fundal clar | L2 |
-| 2 | ≥ **2 costume** | L2, L8 |
-| 3 | Steag = **start curat** (loc, direcție, costum, mărime) | L3–L8 |
-| 4 | Poziții cu **x/y** (`du-te la` / `glisează` la puncte — nu doar la reset) | L7 |
-| 5 | Mișcare **sau** animație cu <span style="color:#FFAB19;font-weight:700">repetă</span> + <span style="color:#FFAB19;font-weight:700">așteaptă</span> | L3, L8 |
-| 6 | Cel puțin un <span style="color:#9966FF;font-weight:700">spune</span> / <span style="color:#9966FF;font-weight:700">gândește</span> | L5 |
-| 7 | Cel puțin un <span style="color:#CF63CF;font-weight:700">sunet</span> | L6 |
-| 8 | Durează cam **30–60 sec** | ritm cu `așteaptă` |
+**Încearcă tu — planul (2–3 min)**  
+- [ ] Ai cele **trei momente** pe foaie  
+- [ ] Știi ce personaj pornește primul  
 
-*(Rândul 4: folosește x/y **activ** pe traseu — ex. 2 opriri pe scenă — nu doar `du-te la` la steag.)*
+### 2) Ordinea pe scenă
+1. Fiecare personaj are scriptul lui pe **steag**: se așază (`setează x la`, `setează y la`) și apoi așteaptă ce are de făcut
+2. Ce vine **după** un mesaj pui sub `când primesc`, nu în același script cu steagul
+3. Personajele **nu vorbesc deodată**: folosești `așteaptă` sau mesaje, ca la lecțiile trecute
+4. Finalul (`stop [totul]`) vine **după** ce au terminat toți, nu înăuntrul unei bucle
 
-**Încearcă tu — știu ce trebuie (1–2 min)**  
-- [ ] Poți spune cu vocea **3** lucruri pe care le va avea clipul tău  
-- [ ] Știi că **Minim** ≠ „toate cele 8” — mai întâi scheletul  
+**Încearcă tu — ordinea (2–3 min)**  
+- [ ] Pe foaie ai pus ordinea: steag, apoi mesaj, apoi final  
+- [ ] Doi colegi nu vorbesc în același timp pe scenă  
 
-### 2) Ordinea bună de lucru (recomandat)
-**Un singur script pe steag**, pe rând — nu totul amestecat:
+### 3) Cum testezi
+1. Apeși steagul și vezi tot clipul, **fără să ții mouse-ul pe personaje**
+2. Apeși steagul a doua oară: trebuie să înceapă curat, din același loc
+3. Pe urmă încerci tastele și click-ul, ca să vezi că răspund
 
-1. **Reset** (chiar sub steag):  
-   <span style="color:#4C97FF;font-weight:700">du-te la</span> start →  
-   <span style="color:#4C97FF;font-weight:700">orientează-te în direcția</span> `90` →  
-   <span style="color:#9966FF;font-weight:700">comută la costumul</span> … →  
-   <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `100` →  
-   <span style="color:#9966FF;font-weight:700">anulează efectele grafice</span> →  
-   <span style="color:#CF63CF;font-weight:700">oprește toate sunetele</span>
-2. **Introducere** — cine e: <span style="color:#9966FF;font-weight:700">spune</span> / <span style="color:#9966FF;font-weight:700">gândește</span> (+ opțional sunet de start)
-3. **Acțiune** — plimbare pe **puncte x/y** (`glisează` / `du-te la`, ca la L7) **și/sau** dans (`repetă` + `următorul costum` + `așteaptă`)  
-   *(dacă ai **2** bucle: **una după alta**, ca la L8 — nu C în C)*
-4. **Final** — <span style="color:#CF63CF;font-weight:700">sunet</span> + <span style="color:#9966FF;font-weight:700">spune</span> `Gata!` / mesaj scurt (**în afara** buclelor)
-
-**Încearcă tu — ordine pe steag (2 min)**  
-- [ ] Ai scris (sau știi) ordinea: **reset → intro → acțiune → final**  
-- [ ] Finalul e **sub** bucle, nu înăuntru  
-
-### 3) Schelet minim (ca să nu blochezi)
-1. Steag + reset (pasul 2.1)
-2. Un `spune` cu numele personajului
-3. Un <span style="color:#FFAB19;font-weight:700">repetă</span> `6` cu `următorul costum` + `așteaptă` `0.2` **sau** un traseu scurt cu `glisează`
-4. Un sunet + `spune` la final
-5. Rulează o dată — **nu** cronometra încă; verifică doar că merge curat
-
-*(Profesorul te întreabă „Ce vrei să se întâmple primul?” — tu alegi; el nu face proiectul în locul tău.)*
-
-**Încearcă tu — scheletul rulează curat (3–5 min)**  
-*(Verificare Minim — „am scris cod” ≠ „am verificat că merge”.)*
-
-- [ ] La steag: reset loc + costum (+ mărime / efecte dacă ai folosit asemenea blocuri)  
-- [ ] Ai intro (`spune`) + acțiune (buclă **sau** traseu) + final (`spune` + sunet)  
-- [ ] Blocurile de final sunt **sub** bucle, nu înăuntru  
-- [ ] Steag de **două** ori → reîncepe curat (fără haos)  
-- [ ] Salvat: `Prenume_Nume_L9`  
-
-### 4) De la schelet la Complet
-1. Bifează pe checklist (pasul 1) ce **mai lipsește** față de cele 8  
-2. Adaugi pe rând: fundal, costume, x/y pe traseu, ritm (`așteaptă`), lungime  
-3. Cronometrează: cam **30–60 sec**. Dacă e scurt: mai mult `așteaptă` sau încă o buclă **sub** prima  
-
-**Încearcă tu — cele 8 + durată (3–5 min)**  
-*(Verificare Complet — verifică pe listă, nu „doar am scris”.)*
-
-- [ ] Toate cele **8** din tabelul de la pasul 1 sunt prezente  
-- [ ] Clipul durează cam **30–60 sec**  
-- [ ] Un coleg înțelege despre cine e, **fără** explicație cu vocea  
-- [ ] Salvat din nou: `Prenume_Nume_L9`  
+**Încearcă tu — testul (2–3 min)**  
+- [ ] Steag de **două** ori → clipul începe curat  
+- [ ] Săgețile mută Animalul, iar click-ul pe minge o face să sară  
 
 ---
 
 ## Greșeli frecvente
-1. **La steag e haos** — lipsește resetul (loc / costum / sunete / mărime). Copiază lista din pasul 2.1.  
-2. **Prea scurt / prea rapid** — adaugă <span style="color:#FFAB19;font-weight:700">așteaptă</span> sau prelungește bucla; nu doar „mergi 200” odată.  
-3. **„Gata!” de 10 ori** — `spune` / sunetul final e **în** `repetă`; mută finalul **sub** buclă.  
-4. **C în C** — ai băgat o buclă în alta; azi: bucle **una după alta** (L8).  
-5. **Nu se aude** — sunet lipsă în tab Sunete, sau volum; la steag: `oprește toate sunetele` apoi pornește.  
-6. **„Am scris, deci e gata”** — rulează steagul de două ori și bifează checklist-ul; Minim = schelet **care merge**.  
-7. **Nume fișier** — `Prenume_Nume_L9`, nu doar `Ana_L9`.
+1. **La al doilea steag e haos** — personajele nu pornesc din același loc. Pune la start `setează x la` și `setează y la` pentru fiecare.  
+2. **Vorbesc deodată** — lipsește `așteaptă` sau un mesaj între replici.  
+3. **Clipul se oprește prea devreme** — `stop [totul]` e prea sus. Îl pui după ce termină toți.  
+4. **Nu se aude nimic** — personajul nu are sunet în tab-ul Sunete, sau volumul PC e jos.  
+5. **Decorul nu se schimbă** — mesajele `plimbare` și `acasă` nu sunt scrise la fel în `difuzează` și în `când primesc`.  
+6. **Animalul nu merge cu săgețile** — `dacă` nu e în `la infinit`.  
+7. **Nume fișier** — `Prenume_Nume_L9`, nu doar `Ana_L9`.  
 
 ---
 
 ## De făcut azi — „Personajul meu”
 Salvat: `Prenume_Nume_L9`
 
-### Minim vs Complet
+### Minim vs Complet *(citește înainte să începi)*
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | Steag + reset + **1** `spune` + **1** buclă/traseu scurt + **1** sunet + final — **chiar dacă** e sub 30 sec |
-| **Complet (ținta orei)** | Minim + **toate cele 8** din checklist + durata **30–60 sec** |
+| **Minim („am reușit”)** | **Pasul 1 + Pasul 2** — scena cu 2 decoruri + **Animalul** cu ≥ 8 blocuri diferite |
+| **Complet (ținta orei)** | Minim + **Stăpânul** cu ≥ 8 blocuri diferite, care îl trezește pe Animal și îl cheamă acasă |
 
-Dacă rămâi în urmă: salvează la **Minim**.  
+Dacă rămâi în urmă: salvează la **Minim**. Nu e eșec.  
 Cei rapizi: Complet, apoi Bonus.
 
-### Pasul 1 — Lumea și personajul
-- [ ] Un **fundal** clar  
-- [ ] Personaj cu ≥ **2 costume**  
-- [ ] La <span style="color:#3F8F2A;font-weight:700">steag verde</span>: start **curat** (loc, costum, mărime/efecte, sunete oprite)
+### Pasul 1 — Lumea *(Minim)*
+Alegi două decoruri și le redenumești `Cameră` și `Grădină` (în această ordine). Redenumești personajele: `Animalul`, `Stăpânul`, `Mingea`. Animalul, Stăpânul și Mingea primesc în tab-ul **Sunete** câte un sunet (un lătrat, un fluier, un sunet de sărit). Pe **Scenă** faci scripturile:
 
-### Pasul 2 — Scheletul *(Minim)*
-*(Ca la „Încearcă tu — scheletul rulează curat”.)*
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#9966FF;font-weight:700">schimbă decorul la</span> `Cameră`  
 
-- [ ] **Intro:** cine e (`spune` / `gândește`)  
-- [ ] **Acțiune:** **1** `repetă` + costum **sau** un traseu scurt cu `glisează` / `du-te la`  
-- [ ] **Final:** sunet + mesaj — o singură dată, **sub** acțiune  
-- [ ] Steag de două ori → reîncepe curat  
+<span style="color:#E6A800;font-weight:700">când primesc</span> `plimbare`  
+<span style="color:#9966FF;font-weight:700">schimbă decorul la</span> `Grădină`  
+
+<span style="color:#E6A800;font-weight:700">când primesc</span> `acasă`  
+<span style="color:#9966FF;font-weight:700">schimbă decorul la</span> `Cameră`  
+
+- [ ] `Cameră` și `Grădină` sunt decorurile din listă  
+- [ ] Scripturile sunt pe **Scenă**  
+- [ ] Personajele au sunetele lor  
+
+### Pasul 2 — Animalul *(Minim)*
+Alegi personajul tău, cu cel puțin 2 costume. Are **3 scripturi**. Ordinea e un **model**: poți schimba textele, numerele și mesajele.
+
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#4C97FF;font-weight:700">setează x la</span> `-150`  
+<span style="color:#4C97FF;font-weight:700">setează y la</span> `-80`  
+<span style="color:#9966FF;font-weight:700">spune</span> `Bună dimineața!` pentru `2` secunde  
+<span style="color:#FFAB19;font-weight:700">așteaptă</span> `2` secunde  
+<span style="color:#E6A800;font-weight:700">difuzează</span> `plimbare`  
+
+<span style="color:#E6A800;font-weight:700">când primesc</span> `plimbare`  
+<span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(un lătrat)*  
+<span style="color:#FFAB19;font-weight:700">repetă</span> `6` → <span style="color:#4C97FF;font-weight:700">modifică x cu</span> `30` → <span style="color:#9966FF;font-weight:700">costumul următor</span> → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
+<span style="color:#4C97FF;font-weight:700">glisează în</span> `2` <span style="color:#4C97FF;font-weight:700">secunde la x:</span> `40` <span style="color:#4C97FF;font-weight:700">y:</span> `-60`  
+<span style="color:#FFAB19;font-weight:700">la infinit</span>  
+↳ <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D6;font-weight:700">tasta [săgeată dreapta] apăsată?</span> <span style="color:#FFAB19;font-weight:700">atunci</span> → <span style="color:#4C97FF;font-weight:700">modifică x cu</span> `10`  
+↳ <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D6;font-weight:700">tasta [săgeată stânga] apăsată?</span> <span style="color:#FFAB19;font-weight:700">atunci</span> → <span style="color:#4C97FF;font-weight:700">modifică x cu</span> `-10`  
+
+<span style="color:#E6A800;font-weight:700">când primesc</span> `acasă`  
+<span style="color:#4C97FF;font-weight:700">setează x la</span> `-150`  
+<span style="color:#4C97FF;font-weight:700">setează y la</span> `-80`  
+<span style="color:#9966FF;font-weight:700">spune</span> `Zzz…` pentru `3` secunde  
+
+- [ ] Fără Stăpân, Animalul pleacă singur la plimbare și îl poți mișca cu săgețile  
+- [ ] Steag din nou → începe curat, în cameră  
 - [ ] Salvat: `Prenume_Nume_L9`  
 
-**→ Minim când:** rulează singur intro → acțiune → final (chiar dacă e scurt).
+**→ Minim când:** Animalul salută, pleacă la plimbare cu decorul schimbat, aleargă, se oprește în grădină și îl poți mișca cu săgețile.
 
-### Pasul 3 — Cele 8 + lungime *(Complet)*
-*(Ca la „Încearcă tu — cele 8 + durată”.)*
+### Pasul 3 — Stăpânul *(Complet)*
+Alegi un personaj care seamănă cu un stăpân. Are **3 scripturi**:
 
-- [ ] Pe traseu: poziții **x/y** active (nu doar la reset)  
-- [ ] Ritmul e vizibil (`așteaptă` / bucle cu ritm)  
-- [ ] Clipul durează cam **30–60 secunde**  
-- [ ] Checklist-ul celor **8** e bifat  
-- [ ] Un coleg înțelege despre cine e, **fără** explicație cu vocea  
-- [ ] Salvat din nou  
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#4C97FF;font-weight:700">setează x la</span> `150`  
+<span style="color:#4C97FF;font-weight:700">setează y la</span> `-60`  
+<span style="color:#4C97FF;font-weight:700">orientează-te spre</span> `Animalul`  
+<span style="color:#CF63CF;font-weight:700">setează volumul la</span> `80` %  
+<span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(un fluier)*  
+<span style="color:#FFAB19;font-weight:700">așteaptă</span> `2` secunde  
+<span style="color:#9966FF;font-weight:700">spune</span> `Hai la plimbare!` pentru `2` secunde  
 
-**Gata Complet când:** apeși steagul și rulează singur intro → acțiune → final, ~30–60 sec, cu toate cele 8.
+<span style="color:#E6A800;font-weight:700">când primesc</span> `plimbare`  
+<span style="color:#FFAB19;font-weight:700">repetă</span> `2` → <span style="color:#4C97FF;font-weight:700">modifică y cu</span> `10` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3` → <span style="color:#4C97FF;font-weight:700">modifică y cu</span> `-10` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
+<span style="color:#FFAB19;font-weight:700">așteaptă</span> `20` secunde  
+<span style="color:#9966FF;font-weight:700">spune</span> `Gata, acasă!` pentru `2` secunde  
+<span style="color:#E6A800;font-weight:700">difuzează</span> `acasă`  
+
+<span style="color:#E6A800;font-weight:700">când primesc</span> `acasă`  
+<span style="color:#FFAB19;font-weight:700">așteaptă</span> `4` secunde  
+<span style="color:#FFAB19;font-weight:700">stop [totul]</span>  
+
+- [ ] Stăpânul fluieră primul, apoi spune „Hai la plimbare!” când Animalul așteaptă  
+- [ ] În grădină se joacă 20 de secunde, apoi cheamă acasă  
+- [ ] Decorul revine la `Cameră`, iar Animalul spune `Zzz…`  
+- [ ] La final proiectul se oprește singur  
+- [ ] Salvat din nou: `Prenume_Nume_L9`  
+
+**Gata Complet când:** un coleg vede tot clipul de aproximativ 30 de secunde, de la fluier până la `Zzz…`, fără explicație cu vocea.
 
 ---
 
 ## Bonus (dacă ai terminat Complet)
-- [ ] Clipul durează **≥45 secunde**  
-- [ ] **2 personaje** (dialog pe rând cu `așteaptă`, ca la L5) — la steag: **reset pe amândouă** (loc/costum; cine e selectat în listă contează)  
-- [ ] La final: <span style="color:#9966FF;font-weight:700">comută fundalul la</span> … + mesaj + sunet  
-- [ ] **Ricoșeu pe margine** (opțional — fără lecție nouă de Detectare):  
-  pe un **script separat** (tot pe steag):  
-  <span style="color:#3F8F2A;font-weight:700">când se dă clic pe steagul verde</span> →  
-  <span style="color:#FFAB19;font-weight:700">forever</span> → înăuntru:  
-  <span style="color:#4C97FF;font-weight:700">mergi</span> `10` pași →  
-  <span style="color:#4C97FF;font-weight:700">dacă atinge marginea, sari înapoi</span>  
-  *(Blocul e în <span style="color:#4C97FF;font-weight:700">Mișcare</span> — „mingea” ricoșează de pe marginea scenei.  
-  Nu e nevoie azi de categoria <span style="color:#5CB1D6;font-weight:700">Detectare</span>; o aprofundăm în Modulul 2.)*  
-  La steag, pe scriptul principal: tot resetezi locul de start, ca ricoșeul să înceapă din același punct.
-- [ ] ★★★ **Provocare:** **Test cu un coleg:** el privește clipul și îți spune ce nu a înțeles. Schimbi un lucru ca să fie mai clar.
+- [ ] **Al 3-lea personaj** (Mingea), cu care te joci în grădină:
+
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#4C97FF;font-weight:700">setează x la</span> `100`  
+<span style="color:#4C97FF;font-weight:700">setează y la</span> `-60`  
+<span style="color:#9966FF;font-weight:700">setează mărimea la</span> `40` %  
+
+<span style="color:#E6A800;font-weight:700">când se dă click pe acest personaj</span>  
+<span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(un sunet de sărit)*  
+<span style="color:#FFAB19;font-weight:700">repetă</span> `4` → <span style="color:#4C97FF;font-weight:700">modifică y cu</span> `20` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,1` → <span style="color:#4C97FF;font-weight:700">modifică y cu</span> `-20` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,1`  
+<span style="color:#9966FF;font-weight:700">modifică efectul [culoare] cu</span> `25`  
+
+<span style="color:#E6A800;font-weight:700">când tasta</span> `spațiu` <span style="color:#E6A800;font-weight:700">este apăsată</span>  
+<span style="color:#4C97FF;font-weight:700">glisează în</span> `1` <span style="color:#4C97FF;font-weight:700">secundă la [poziție aleatoare]</span>  
+
+- [ ] ★★★ **Provocare:** o tastă (de exemplu `m`) face Animalul mai mare sau mai mic, cu `dacă … altfel`, iar la `acasă` revine la normal cu `setează mărimea la` `100` %
 
 ## Recapitulare rapidă
-1. Ordine: **reset → intro → acțiune → final**  
-2. Buclele au ritm (`așteaptă`); finalul e **sub** ele  
-3. Steagul reîncepe mereu **curat**  
-4. **Minim** = schelet care **rulează**; **Complet** = cele 8 + 30–60 sec  
-5. Nume: **`Prenume_Nume_L9`**  
+1. Fiecare personaj are scriptul lui pe steag, ca să pornească mereu din același loc  
+2. Mesajele (`difuzează` și `când primesc`) leagă personajele într-o poveste  
+3. `așteaptă` și mesajele le fac să vorbească pe rând  
+4. `la infinit` cu `dacă` face personajul să răspundă la tastă  
+5. `stop [totul]` vine ultimul, după ce au terminat toți  
+6. Nume: **`Prenume_Nume_L9`**  
 
 ## Schema pe scurt *(pe foaie)*
 
-**Pe Personaj** *(ordine pe steag)*  
-1. **Reset:** `du-te la` · `anulează efectele` · `oprește toate sunetele`  
-2. **Intro:** `spune` / sunet scurt  
-3. **Acțiune:** `repetă` … + `așteaptă` (mișcare / costume)  
-4. **Final:** `spune Gata!` / sunet — **sub** bucle, o singură dată
+**Pe Scenă**  
+la steag → `schimbă decorul la` Cameră  
+când primesc plimbare → `schimbă decorul la` Grădină  
+când primesc acasă → `schimbă decorul la` Cameră
+
+**Pe Animal**  
+la steag → `setează x` → `setează y` → `spune` → `așteaptă` → `difuzează plimbare`  
+când primesc plimbare → `pornește sunetul` → `repetă` (`modifică x` + `costumul următor` + `așteaptă`) → `glisează` → `la infinit` (`dacă` `tasta` `atunci` `modifică x`)  
+când primesc acasă → `setează x` → `setează y` → `spune`
+
+**Pe Stăpân**  
+la steag → `setează x` → `setează y` → `orientează-te spre` → `setează volumul` → `pornește sunetul` → `așteaptă` → `spune`  
+când primesc plimbare → `repetă` (`modifică y` + `așteaptă`) → `așteaptă` → `spune` → `difuzează acasă`  
+când primesc acasă → `așteaptă` → `stop`
 
 **Quiz scurt (cu profesorul):**  
-- Ce pui primul sub steag?  
-- Unde stă mesajul „Gata!” față de `repetă`?  
-- Ce e Minim vs Complet azi?
+- Cum pornește Animalul după ce Stăpânul îl cheamă?  
+- Cum faci ca două personaje să nu vorbească deodată?  
+- De ce stă `stop [totul]` la final?  
+- Ce trebuie să fie în `la infinit`, ca Animalul să răspundă la săgeți?
 
-## Temă
-Opțional: lustruiește 1 detaliu (sunet, o replică, un loc x/y) — același fișier `Prenume_Nume_L9`.  
-La **L10** continui același proiect: **completare** (îmbunătățiri) + prezentare + insignă.
+## Temă (opțional)
+- Dacă ai doar Minim: adaugi acasă Stăpânul, în același `Prenume_Nume_L9`.  
+- Dacă ai Complet: adaugi acasă al 3-lea personaj, în același `Prenume_Nume_L9`.  
+- Dacă ai terminat și Bonusul: faci o copie și schimbi povestea (alt personaj, alt loc, alt final).
