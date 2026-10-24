@@ -1,33 +1,41 @@
-Lecția șase. Soundtrack-ul meu.
+Lecția șase. Concertul.
 
-Astăzi adaugi sunete și le pornești la steag sau la click, fără să se calce toate odată. Fișierul se numește Prenume, linie jos, Nume, linie jos, L șase.
+Astăzi controlezi cât de tare, cum sună și când se oprește sunetul. Fișierul se numește Prenume, linie jos, Nume, linie jos, L șase.
 
-Obiectivul. Adaugi sunete din bibliotecă și le pornești cu blocuri din Sunet. Minim: două sunete pe două evenimente, steag și click. Complet: știi diferența dintre pornește și până la final, și folosești oprește toate sunetele pe steag.
+Obiectivul. La finalul orei concertul tău are sunet: personajele cântă mai încet sau mai tare, schimbă înălțimea sunetului și îl opresc la momentul potrivit, cu blocuri din Sunet. Minim: personajul unu, Chitaristul, cu cel puțin opt blocuri diferite. Complet: personajul doi, Toboșarul, cu cel puțin opt blocuri diferite, care intră la semnalul Chitaristului.
 
-De ce contează. În jocuri, sunetul spune start, bravo sau ai pierdut, fără text. În Scratch, asta e capitolul Sunet. În clasă: căști dacă se poate, altfel volumul jos. Testați pe rând.
+De ce contează. În jocuri și filme, sunetul spune start, bravo sau ai pierdut, fără text. Un sunet mai încet sau mai ascuțit schimbă tot felul în care simți scena. În Scratch, asta e capitolul Sunet.
 
-Primul pas pe ecran. Selectezi personajul. Tab Sunete, adaugi din bibliotecă, de exemplu Meow sau Pop. Fără sunet în tab, blocurile nu au ce reda.
+În clasă, înainte să pornim: căști dacă se poate, altfel volumul calculatorului jos. Testăm pe rând, nu toată sala pe steag odată.
 
-Al doilea pas pe ecran. La steagul verde: pornește sunetul. Pornește înseamnă: sunetul începe, și programul merge mai departe imediat.
+Capitolele de azi sunt aceleași cinci: Evenimente, Sunet, Aspect, Control și Mișcare. Blocurile noi sunt aproape toate din Sunet, plus unul din Evenimente.
 
-Al treilea pas pe ecran. Încearcă și: redă sunetul până la final. Asta așteaptă să se termine sunetul, apoi trece la blocul de sub el. De exemplu, la steag: redă sunetul start până la final, apoi spune Gata, pentru o secundă. Replica apare după sunet. La start deseori pornește. Când următorul bloc trebuie să aștepte muzica, folosești până la final.
+Ce face fiecare bloc nou. Modifică volumul cu face sunetul mai tare, dacă numărul e pozitiv, sau mai încet, dacă numărul e negativ, și de fiecare dată se adună. Setează volumul la pune volumul exact la procentul ales: o sută la sută înseamnă volumul normal. Volum este o valoare: arată volumul de acum, iar tu o pui în spune ca să o vezi. Modifică efectul înălțimea sunetului cu face sunetul mai ascuțit, dacă numărul e pozitiv, sau mai grav, dacă numărul e negativ, și se adună. Setează efectul la pune efectul exact la valoarea aleasă, iar zero înseamnă sunet normal. Șterge efectele audio scoate toate efectele de pe sunet, iar sunetul revine la normal. Oprește toate sunetele oprește imediat orice sunet care cântă, de la toate personajele. Când intensitatea sunetului este mai mare decât pornește scriptul când microfonul aude un sunet mai tare decât valoarea ta.
 
-Al patrulea pas pe ecran. Al doilea sunet pe click pe personaj. Steag: sunetul A. Click: sunetul B.
+Primul pas pe ecran. Volumul. Selectezi personajul. În tab-ul Sunete trebuie să aibă cel puțin un sunet, fără el blocurile din Sunet nu au ce reda. Pui setează volumul la patruzeci la sută, apoi pornește sunetul. Sub el pui așteaptă două secunde, apoi modifică volumul cu douăzeci și pornești din nou sunetul. Se aude mai tare. Blocul volum arată cât e volumul acum. Îl tragi în spune pentru două secunde și vezi numărul. Diferența: modifică adaugă la volumul de acum, iar setează pune valoarea exactă.
 
-Al cincilea pas pe ecran. Chiar sub steag, înainte de noul sunet: oprește toate sunetele. Altfel, steag de mai multe ori înseamnă sunete suprapuse.
+Al doilea pas pe ecran. Efecte audio. Modifică efectul înălțimea sunetului cu minus douăzeci face sunetul mai grav. Cu număr pozitiv devine mai ascuțit. Setează efectul la zero readuce sunetul normal. Șterge efectele audio le scoate pe toate deodată. Efectul rămâne și la steagul următor, de aceea la start pui șterge efectele audio sau setează efectul la zero.
 
-Greșeli frecvente. Dacă nu se aude, lipsește sunetul în tab Sunete, sau scriptul e pe alt personaj. Dacă se calcă, lipsește oprește toate sunetele. Dacă așteaptă muzica nu merge, ai folosit pornește în loc de până la final. Dacă clicul nu sună, apeși steagul, dar scriptul e pe click.
+Al treilea pas pe ecran. Oprește sunetele. Pornești un sunet lung cu pornește sunetul. După așteaptă o secundă pui oprește toate sunetele. Sunetul se oprește pe loc, indiferent cât mai avea de cântat. Oprește și sunetele celorlalte personaje.
 
-Proiectul de azi. Soundtrack-ul meu.
+Al patrulea pas pe ecran. Microfonul. Din Evenimente iei când intensitatea sunetului este mai mare decât treizeci. Scriptul pornește când microfonul aude un sunet mai tare de treizeci. Browserul cere permisiunea pentru microfon, iar tu apeși Permite. Sub bloc pui modifică mărimea cu douăzeci și bați din palme lângă microfon. Dacă laptopul nu are microfon, sari peste acest pas. Nu e nevoie de el pentru Minim sau Complet.
 
-Minim înseamnă: două sunete, steag plus click. Complet înseamnă: minim, plus până la final folosit conștient, plus oprește toate sunetele pe steag. Dacă rămâi în urmă, salvează la Minim.
+Greșeli frecvente. Dacă nu auzi nimic, personajul nu are sunet în tab-ul Sunete, sau volumul calculatorului e jos: verifică ambele. Dacă volumul rămâne încet sau tare, se păstrează de la proba trecută: la start pune setează volumul la. Dacă sunetul e altfel la al doilea steag, efectul audio a rămas: la start pune șterge efectele audio. Dacă încurci modifică cu setează, modifică adaugă, iar setează pune valoarea exactă. Oprește toate sunetele taie și sunetele celorlalte personaje: pune doar când vrei liniște peste tot. Dacă două personaje cântă peste ele, le sincronizezi cu așteaptă sau cu un mesaj, adică difuzează și când primesc. Dacă microfonul nu merge, nu ai apăsat Permite, sau laptopul nu are microfon, și nu e obligatoriu. Dacă ai greșit numele la salvare, adaugă și numele de familie.
 
-În proiect, primul pas. Cel puțin două sunete pe personaj.
+Proiectul de azi. Concertul.
 
-În proiect, al doilea pas. Steag pornește un sunet. Click pe personaj pornește altul. Salvezi.
+Minim înseamnă: scena cu sunete și Chitaristul cu cel puțin opt blocuri diferite. Complet înseamnă: minim, plus Toboșarul, cu cel puțin opt blocuri diferite, care intră la semnalul Chitaristului. Dacă rămâi în urmă, salvează la Minim. Nu e eșec.
 
-În proiect, al treilea pas, pentru Complet. Ai testat până la final o dată, de exemplu un spune vine după sunet. Pe steag: oprește toate sunetele, apoi pornește. Steag de trei ori rapid, fără zgomot dublu. Salvezi din nou.
+În proiect, primul pas, pentru Minim. Scena și sunetele. Alegi un decor de concert. Redenumești personajele: Chitaristul, Toboșarul și Publicul. Fiecare primește în tab-ul Sunete sunetul lui: o chitară, o tobă, aplauze sau urale, sau alt sunet potrivit din bibliotecă.
 
-Recapitulare. Pornește înseamnă merge mai departe. Până la final înseamnă așteaptă. Oprește toate sunetele pe steag. Două evenimente: steag și click. Numele fișierului are prenumele și numele de familie.
+În proiect, al doilea pas, pentru Minim. Chitaristul. Alegi un personaj din bibliotecă care seamănă cu un chitarist. Are două scripturi. Primul, la steag: șterge efectele audio. Apoi setează volumul la patruzeci la sută. Apoi pornește sunetul chitarei. Apoi așteaptă două secunde. Apoi modifică volumul cu douăzeci. Apoi așteaptă două secunde. Apoi modifică volumul cu douăzeci. Apoi spune volum, pentru două secunde. La final, difuzează start. Al doilea, când tasta spațiu este apăsată: setează efectul înălțimea sunetului la o sută. Apoi redă sunetul chitarei până la final. Apoi modifică efectul înălțimea sunetului cu minus douăzeci. Apoi așteaptă o secundă. Apoi pornește sunetul chitarei. Apoi așteaptă o secundă. La final, oprește toate sunetele. Este un model: poți schimba textele, numerele și mesajele. Salvezi.
 
-Succes la soundtrack-ul tău.
+În proiect, al treilea pas, pentru Complet. Toboșarul. Alegi un personaj care seamănă cu un toboșar. Are două scripturi, iar al doilea pornește când Chitaristul difuzează start. Primul, la steag: mergi la x o sută, y minus șaizeci. Apoi setează mărimea la o sută la sută. Al doilea, când primesc start: setează volumul la o sută la sută. Apoi orientează-te în direcția șaptezeci și cinci. Apoi setează mărimea la o sută douăzeci la sută. Apoi pornește sunetul tobei. Apoi repetă patru, înăuntru modifică mărimea cu zece și așteaptă zero virgulă cinci. Apoi oprește toate sunetele. Apoi gândește Ritm perfect. La final, difuzează final. Salvezi din nou.
+
+Bonus. Al treilea personaj, Publicul, care aplaudă la final. Primul script, la steag: mergi la x zero, y o sută douăzeci. Apoi setează mărimea la cincizeci la sută. Al doilea, când primesc final: redă sunetul aplauzelor până la final. Apoi repetă trei, înăuntru costumul următor și așteaptă zero virgulă trei. Apoi spune Bis. Al treilea, când intensitatea sunetului este mai mare decât treizeci: modifică mărimea cu douăzeci. Provocarea: un mixer pe Chitarist. Săgeata sus crește volumul cu zece, săgeata jos îl scade cu zece, iar Chitaristul spune volumul de acum.
+
+Recapitulare. Modifică volumul adaugă, iar setează volumul pune valoarea exactă. Volum este o valoare, pe care o pui în spune ca să o vezi. Efectul audio rămâne între steaguri: la start pui șterge efectele audio. Oprește toate sunetele oprește sunetele de la toate personajele. Numele fișierului are prenumele și numele de familie.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă Toboșarul, în același fișier. Dacă ai Complet, adaugi acasă al treilea personaj, în același fișier. Dacă ai terminat și bonusul, faci o copie și schimbi povestea: alte instrumente, alte sunete, alt decor.
+
+Succes la concertul tău.
