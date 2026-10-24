@@ -123,8 +123,10 @@ Alegi un personaj din bibliotecă care seamănă cu un pirat sau cu un explorato
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
 <span style="color:#4C97FF;font-weight:700">setează x la</span> `-200`  
 <span style="color:#4C97FF;font-weight:700">setează y la</span> `-100`  
+<span style="color:#9966FF;font-weight:700">setează mărimea la</span> `100` %  
 <span style="color:#9966FF;font-weight:700">spune</span> `Unde e comoara?` pentru `2` secunde  
 <span style="color:#E6A800;font-weight:700">difuzează … și așteaptă</span> `ajutor`  
+<span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(pași pe nisip)*  
 <span style="color:#FFAB19;font-weight:700">repetă</span> `5` → <span style="color:#4C97FF;font-weight:700">modifică x cu</span> `40` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
 <span style="color:#FFAB19;font-weight:700">repetă</span> `4` → <span style="color:#4C97FF;font-weight:700">modifică y cu</span> `30` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
 <span style="color:#9966FF;font-weight:700">gândește</span> `Aici trebuie să fie!` pentru `2` secunde  
@@ -168,10 +170,12 @@ Alegi un papagal sau altă pasăre. Are **2 scripturi**, iar al doilea răspunde
 <span style="color:#4C97FF;font-weight:700">setează x la</span> `0`  
 <span style="color:#4C97FF;font-weight:700">setează y la</span> `20`  
 <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `60` %  
+<span style="color:#9966FF;font-weight:700">setează efectul [culoare] la</span> `0`  
 
 <span style="color:#E6A800;font-weight:700">când primesc</span> `găsit`  
 <span style="color:#FFAB19;font-weight:700">repetă</span> `4` → <span style="color:#9966FF;font-weight:700">costumul următor</span> → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
 <span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(un clinchet)*  
+<span style="color:#9966FF;font-weight:700">modifică efectul [culoare] cu</span> `30`  
 <span style="color:#4C97FF;font-weight:700">modifică y cu</span> `20`  
 <span style="color:#9966FF;font-weight:700">spune</span> `Comoara e a ta!`  
 
@@ -187,7 +191,7 @@ Alegi un papagal sau altă pasăre. Are **2 scripturi**, iar al doilea răspunde
 ## Schema pe scurt *(pe foaie)*
 
 **Pe Pirat**  
-la steag → `setează x la` → `setează y la` → `spune` → `difuzează … și așteaptă ajutor` → `repetă` (`modifică x` + `așteaptă`) → `repetă` (`modifică y` + `așteaptă`) → `gândește` → `difuzează găsit`
+la steag → `setează x la` → `setează y la` → `setează mărimea` → `spune` → `difuzează … și așteaptă ajutor` → `pornește sunetul` → `repetă` (`modifică x` + `așteaptă`) → `repetă` (`modifică y` + `așteaptă`) → `gândește` → `difuzează găsit`
 
 **Pe Papagal**  
 la steag → `setează x la` → `setează y la` → `setează mărimea` → `setează volumul`  
