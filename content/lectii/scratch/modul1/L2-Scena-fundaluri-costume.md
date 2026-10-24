@@ -167,7 +167,7 @@ Alegi un animal sau alt personaj. El face **lucruri diferite** față de Copil �
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
 <span style="color:#FFAB19;font-weight:700">așteaptă</span> `2` secunde  
 <span style="color:#CF63CF;font-weight:700">redă sunetul</span> *(un sunet potrivit)* până la final  
-<span style="color:#FFAB19;font-weight:700">așteaptă</span> `2` secunde  
+<span style="color:#FFAB19;font-weight:700">așteaptă</span> `8` secunde  
 <span style="color:#FFAB19;font-weight:700">repetă</span> `5` → <span style="color:#4C97FF;font-weight:700">mergi</span> `15` pași → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `1`  
 <span style="color:#9966FF;font-weight:700">spune</span> `Ham! Ham!` pentru `3` secunde  
 <span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(un sunet potrivit)*  
@@ -175,6 +175,7 @@ Alegi un animal sau alt personaj. El face **lucruri diferite** față de Copil �
 <span style="color:#9966FF;font-weight:700">schimbă costumul la</span> *(un costum ales de tine)*  
 
 - [ ] Personaj nou, care face lucruri diferite față de Copil (alt sunet, alte replici, altă mișcare)  
+- [ ] Vorbește **după** Copil (`așteaptă` `8` secunde înainte să alerge)  
 - [ ] Cel puțin **3 tipuri** de acțiuni (Aspect, Mișcare, Sunet)  
 - [ ] Nu ai sunet după sunet, nici costum după costum  
 - [ ] Salvat din nou: `Prenume_Nume_L2`  
@@ -187,7 +188,7 @@ Alegi un animal sau alt personaj. El face **lucruri diferite** față de Copil �
 - [ ] **Al 3-lea personaj** (Pasărea), care apare în parc, după ceilalți:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
-<span style="color:#FFAB19;font-weight:700">așteaptă</span> `10` secunde  
+<span style="color:#FFAB19;font-weight:700">așteaptă</span> `21` secunde  
 <span style="color:#FFAB19;font-weight:700">repetă</span> `6` → <span style="color:#9966FF;font-weight:700">costumul următor</span> → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
 <span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(un sunet potrivit)*  
 <span style="color:#9966FF;font-weight:700">spune</span> `Cip-cip! Bine ați venit!` pentru `3` secunde  

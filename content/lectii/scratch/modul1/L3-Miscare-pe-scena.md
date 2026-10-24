@@ -182,7 +182,7 @@ Alegi un extraterestru sau alt personaj. El pornește după Rachetă și se uit�
 - [ ] **Al 3-lea personaj** (Astronautul), care apare după ceilalți:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
-<span style="color:#FFAB19;font-weight:700">așteaptă</span> `10` secunde  
+<span style="color:#FFAB19;font-weight:700">așteaptă</span> `12` secunde  
 <span style="color:#4C97FF;font-weight:700">mergi la x:</span> `0` <span style="color:#4C97FF;font-weight:700">y:</span> `-100`  
 <span style="color:#4C97FF;font-weight:700">orientează-te spre</span> `Extraterestrul`  
 <span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(un sunet potrivit)*  

@@ -158,6 +158,7 @@ Alegi un dragon sau alt personaj. Are **3 scripturi**:
 
 <span style="color:#E6A800;font-weight:700">când primesc</span> `răspuns`  
 <span style="color:#9966FF;font-weight:700">gândește</span> `Hmm…`  
+<span style="color:#FFAB19;font-weight:700">așteaptă</span> `1` secundă  
 <span style="color:#9966FF;font-weight:700">spune</span> `Sunt foarte emoționat!`  
 <span style="color:#FFAB19;font-weight:700">repetă</span> `5` → <span style="color:#9966FF;font-weight:700">modifică mărimea cu</span> `10` → <span style="color:#9966FF;font-weight:700">modifică efectul [culoare] cu</span> `20` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3`  
 
@@ -209,7 +210,7 @@ la steag → `mergi la x: y:` → `setează mărimea la` → `spune` → `aștea
 
 **Pe Dragon**  
 la steag → `orientează-te spre` → `setează efectul … la`  
-când primesc răspuns → `gândește` → `spune` → `repetă` (`modifică mărimea` + `modifică efectul` + `așteaptă`)  
+când primesc răspuns → `gândește` → `așteaptă` → `spune` → `repetă` (`modifică mărimea` + `modifică efectul` + `așteaptă`)  
 când primesc afară → `setează mărimea la` → `glisează la [aleatoare]` → `spune`
 
 **Quiz scurt (cu profesorul):**  

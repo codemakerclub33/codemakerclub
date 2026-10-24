@@ -197,10 +197,10 @@ Model pentru personajul 2 *(alt ritm, alte blocuri în alt loc)*:
 
 ## Bonus (dacă ai terminat Complet)
 - [ ] **Al 3-lea personaj** la alegere, care intră ultimul  
-- [ ] Modelul de mai jos (începe cu `așteaptă` `12` secunde, ca să apară după personajul 2):
+- [ ] Modelul de mai jos (începe cu `așteaptă` `14` secunde, ca să apară după personajul 2):
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
-<span style="color:#FFAB19;font-weight:700">așteaptă</span> `12` secunde  
+<span style="color:#FFAB19;font-weight:700">așteaptă</span> `14` secunde  
 <span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(un sunet potrivit)*  
 <span style="color:#4C97FF;font-weight:700">mergi</span> `15` pași  
 <span style="color:#9966FF;font-weight:700">spune</span> `Salut, prieteni! Eu sunt …` pentru `3` secunde  
