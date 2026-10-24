@@ -9,8 +9,8 @@ import { SCRATCH_M2_LESSON_COUNT } from '@/lib/scratchM2'
 import { speechJsonResponse, type ScratchM1SpeechResult } from '@/lib/scratchM1Tts'
 
 const NARATIE_FILES: Record<number, string> = {
-  1: 'L1-Daca-atunci.naratie.txt',
-  2: 'L2-Daca-altfel.naratie.txt',
+  1: 'L1-Pista-de-culori.naratie.txt',
+  2: 'L2-Vanatoarea-de-fantome.naratie.txt',
   3: 'L3-Detectare-atingere.naratie.txt',
   4: 'L4-Taste-si-mouse.naratie.txt',
   5: 'L5-Variabile-scor-vieti.naratie.txt',

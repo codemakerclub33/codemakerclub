@@ -563,8 +563,8 @@ export const lectii = [
   ]),
   // Scratch Modul 2
   ...genLectii('m17', [
-    'Dacă… atunci',
-    'Dacă… altfel',
+    'Pista de culori',
+    'Vânătoarea de fantome',
     'Detectare: atingere',
     'Taste și mouse',
     'Variabile: scor și vieți',

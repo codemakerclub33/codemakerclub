@@ -8,8 +8,8 @@
 
 | # | Fișier | Titlu |
 |---|--------|--------|
-| 1 | [L1-Daca-atunci.md](./L1-Daca-atunci.md) | Dacă… atunci |
-| 2 | [L2-Daca-altfel.md](./L2-Daca-altfel.md) | Dacă… altfel |
+| 1 | [L1-Pista-de-culori.md](./L1-Pista-de-culori.md) | Pista de culori |
+| 2 | [L2-Vanatoarea-de-fantome.md](./L2-Vanatoarea-de-fantome.md) | Vânătoarea de fantome |
 | 3 | [L3-Detectare-atingere.md](./L3-Detectare-atingere.md) | Detectare: atingere |
 | 4 | [L4-Taste-si-mouse.md](./L4-Taste-si-mouse.md) | Taste și mouse |
 | 5 | [L5-Variabile-scor-vieti.md](./L5-Variabile-scor-vieti.md) | Variabile: scor și vieți |
