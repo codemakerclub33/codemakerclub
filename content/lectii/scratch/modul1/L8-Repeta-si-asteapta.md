@@ -55,7 +55,7 @@ La finalul orei concursul tău de dans pornește la o tastă, se repetă până 
 | <span style="color:#5CB1D6;font-weight:700">Detectare</span> | **`tasta [spațiu] apăsată?`**, **`atinge [cursorul mouse-ului]?`** |
 | <span style="color:#E6A800;font-weight:700">Evenimente</span> | `când se dă click pe` steagul verde, `când primesc`, `difuzează` |
 | <span style="color:#4C97FF;font-weight:700">Mișcare</span> | `setează x la`, `setează y la`, `modifică x cu`, `rotește-te ↻`, `orientează-te spre` |
-| <span style="color:#9966FF;font-weight:700">Aspect</span> | `spune [ ]`, `gândește … pentru … secunde`, `costumul următor`, `setează mărimea la`, `modifică mărimea cu`, `modifică efectul [culoare] cu` |
+| <span style="color:#9966FF;font-weight:700">Aspect</span> | `schimbă decorul la`, `decorul următor`, `spune [ ]`, `gândește … pentru … secunde`, `costumul următor`, `setează mărimea la`, `modifică mărimea cu`, `modifică efectul [culoare] cu` |
 | <span style="color:#CF63CF;font-weight:700">Sunet</span> | `pornește sunetul`, `redă sunetul … până la final`, `setează volumul la` |
 
 ### 1) La infinit și stop
@@ -106,8 +106,9 @@ La finalul orei concursul tău de dans pornește la o tastă, se repetă până 
 4. **Condiția nu intră în bloc** — blocurile cu colțuri se pun doar în locul gol al unui bloc de Control.  
 5. **Dansul se termină imediat** — mouse-ul era deja pe Dansator. Ține mouse-ul departe până apeși tasta.  
 6. **`stop [totul]` taie și muzica** — îl pui doar la final, după ce au terminat toți.  
-7. **Mesajul nu ajunge** — numele din `difuzează` și din `când primesc` nu e același mesaj (`start` și `pornire` sunt mesaje diferite).  
-8. **Nume fișier** — `Prenume_Nume_L8`, nu doar `Ana_L8`.  
+7. **Decorul nu se schimbă la final** — `Confetti` trebuie să fie după `Sala` în listă, iar mesajul din `când primesc` trebuie să fie `final`.  
+8. **Mesajul nu ajunge** — numele din `difuzează` și din `când primesc` nu e același mesaj (`start` și `pornire` sunt mesaje diferite).  
+9. **Nume fișier** — `Prenume_Nume_L8`, nu doar `Ana_L8`.  
 
 ---
 
@@ -118,18 +119,27 @@ Salvat: `Prenume_Nume_L8`
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | **Pasul 1 + Pasul 2** — scena cu sunete + **Dansatorul** cu ≥ 8 blocuri diferite |
+| **Minim („am reușit”)** | **Pasul 1 + Pasul 2** — scena cu 2 decoruri și sunete + **Dansatorul** cu ≥ 8 blocuri diferite |
 | **Complet (ținta orei)** | Minim + **DJ-ul** cu ≥ 8 blocuri diferite, care pornește muzica la semnalul Dansatorului |
 
 Dacă rămâi în urmă: salvează la **Minim**. Nu e eșec.  
 Cei rapizi: Complet, apoi Bonus.
 
 ### Pasul 1 — Sala de dans *(Minim)*
-Alegi un decor de petrecere sau de sală de dans. Redenumești personajele: `Dansatorul`, `DJ`, `Juriul`. DJ-ul primește în tab-ul **Sunete** o muzică potrivită, iar Juriul aplauze.
+Alegi un decor de petrecere sau de sală de dans și îl redenumești `Sala`. Apoi **desenezi al doilea decor**, `Confetti`, în editorul de decoruri: un fundal închis, plin de buline colorate și cercuri (uneltele **Cerc** și **Pensulă**). Îți ia 5–8 minute. Dacă nu vrei să desenezi, alegi din bibliotecă un decor colorat.  
+Redenumești personajele: `Dansatorul`, `DJ`, `Juriul`. DJ-ul primește în tab-ul **Sunete** o muzică potrivită, iar Juriul aplauze. Pe **Scenă** faci scripturile:
 
-- [ ] Decor ales  
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#9966FF;font-weight:700">schimbă decorul la</span> `Sala`  
+
+<span style="color:#E6A800;font-weight:700">când primesc</span> `final`  
+<span style="color:#9966FF;font-weight:700">decorul următor</span>  
+
+- [ ] `Sala` primul în listă, `Confetti` al doilea  
+- [ ] Scripturile sunt pe **Scenă**  
 - [ ] Personajele sunt redenumite  
 - [ ] DJ-ul are muzica, iar Juriul aplauzele în tab-ul **Sunete**  
+- [ ] Dacă nu ai apucat să desenezi, poți lăsa un singur decor și sări peste cele două scripturi: nu pierzi Minimul  
 
 ### Pasul 2 — Dansatorul *(Minim)*
 Alegi un personaj din bibliotecă care seamănă cu un dansator, cu cel puțin 2 costume. Ordinea e un **model**: poți schimba textele, numerele și mesajele.
@@ -209,6 +219,10 @@ Alegi un personaj care seamănă cu un DJ. Are **2 scripturi**, iar al doilea po
 6. Nume: **`Prenume_Nume_L8`**  
 
 ## Schema pe scurt *(pe foaie)*
+
+**Pe Scenă**  
+la steag → `schimbă decorul la` Sala  
+când primesc final → `decorul următor`
 
 **Pe Dansator**  
 la steag → `setează x la` → `setează y la` → `spune` → `așteaptă până când` `tasta spațiu` → `spune` → `difuzează start` → `repetă` (`modifică x` + `costumul următor` + `așteaptă`) → `repetă până când` `atinge mouse-ul` (`rotește-te` + `așteaptă`) → `difuzează final` → `așteaptă` → `stop`
