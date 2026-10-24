@@ -1,33 +1,47 @@
-Lecția zece. Completare și prezentare.
+Lecția zece. Completare și prezentare, recapitulare Modul unu.
 
-Astăzi termini Personajul meu, îl arăți clasei, și primești insigna Scratch Starter. Nu refaci de la zero. Deschizi proiectul de la lecția nouă și adaugi. Fișierul rămâne Prenume, linie jos, Nume, linie jos, L nouă. Sau o copie L zece, ca să nu strici versiunea veche.
+Astăzi îți inviți trei personaje preferate din lecțiile trecute la o gală, apoi arăți clipul clasei și primești insigna. Proiectul se numește Gala personajelor. Fișierul se numește Prenume, linie jos, Nume, linie jos, L zece.
 
-Obiectivul. Ai îmbunătățit Personajul meu, ai prezentat, și ai insigna. Minim: o completare din lista A până la F, plus reset curat, plus prezentare. Asta e suficient pentru insignă. Complet: două completări, plus prezentare, plus salvare.
+Obiectivul. La finalul orei ai o gală în care personajele tale preferate își fac pe rând numerele, ai prezentat gala clasei și ai insigna Scratch Starter. Minim: personajul unu, Gazda, cu cel puțin opt blocuri diferite, din două numere din lecții diferite. Asta e suficient pentru insignă. Complet: personajul doi, primul artist, cu cel puțin opt blocuri diferite, din două numere din lecții diferite.
 
-De ce contează. Proiectele bune se refac o dată: dai detalii, apoi arăți. Insigna Scratch Starter înseamnă: Modulul unu e încheiat. Modulul doi începe cu alegeri, dacă.
+De ce contează. Proiectele bune se adună: azi folosești blocurile din toate lecțiile, pe personajele tale preferate. Insigna Scratch Starter înseamnă că Modulul unu e încheiat.
 
-Lista de completări. A: clip de cel puțin patruzeci și cinci de secunde. B: al doilea personaj și dialog pe rând. C: la final schimbă fundalul, mesaj și sunet. D: încă un punct x y pe traseu. E: al doilea sunet, pe click sau spațiu. F: un efect de mărime sau culoare pe acțiune, anulat la steag. Minim înseamnă o literă testată. Complet înseamnă două litere. Nu începe a doua până când prima rulează pe steag.
+Capitolele de azi sunt toate șase: Mișcare, Evenimente, Aspect, Sunet, Control și Detectare, doar două blocuri. Blocuri noi azi: niciunul. Reluăm tot ce ai învățat în Modulul unu, în numere scurte.
 
-Primul pas pe ecran. Alegi o literă pentru Minim. Alegi și o a doua țintă pentru Complet, pe care o faci după ce prima e gata. La minutul cincizeci și cinci prezinți oricum. Cu una e suficient pentru insignă.
+Primul pas pe ecran. Alegi cele trei personaje. Alegi trei personaje din lecțiile trecute, cele mai dragi ție. Poți lua și personaje noi din bibliotecă. Primul personaj ales e Gazda: ea anunță numerele și leagă gala. Celelalte două sunt artiștii: fiecare își face numerele când Gazda îl cheamă. Cum aduci un personaj din proiectul vechi: în proiectul vechi, clic dreapta pe personaj și alegi exportă. În proiectul nou, la Alege un personaj, alegi Încarcă personaj și alegi fișierul. Dacă nu mai ai proiectul, alegi unul asemănător din bibliotecă.
 
-Al doilea pas pe ecran. Ordinea pe steag rămâne: reset, intro, acțiune, final. Finalul sub bucle, o singură dată. Reset pe fiecare personaj folosit. Salvezi.
+Al doilea pas pe ecran. Numerele. Fiecare personaj face cel puțin două numere din lecții diferite. Un număr e o mică secvență de blocuri dintr-o singură lecție, de exemplu un zbor din lecția trei sau o transformare din lecția cinci. Numerele se așază unul după altul în același script, sub un mesaj. Un număr trebuie să se termine: cu la infinit, Gazda ar aștepta pentru totdeauna. De aceea la Reacție folosim repetă, nu la infinit.
 
-Al treilea pas pe ecran. Reguli de prezentare. În unu sau două minute: cine e, ce face, ce ai adăugat azi. Apeși steagul. Lasă clipul să ruleze. Clasa: aplauze și un compliment concret. Tu: Mulțumesc.
+Al treilea pas pe ecran. Gazda și mesajele. Gazda stă pe scenă și anunță fiecare număr cu spune. Apoi trimite mesajul cu difuzează și așteaptă: artistul își face numărul, iar Gazda așteaptă până termină. Așa nu vorbește și nu se mișcă nimeni deodată. La final, Gazda difuzează final, așteaptă și apoi oprește tot cu stop totul.
 
-Al patrulea pas pe ecran. Recap pe scurt cu profesorul. Steag. Fundal și costum. Mergi, glisează, du-te la, X și Y. Spune, mărime, culoare, sunet. Repetă și așteaptă. Apoi: în Modulul doi apar alegerile.
+Al patrulea pas pe ecran. Recapitularea Modulului unu. Ai învățat cincizeci și trei de blocuri, în șase capitole. Din Mișcare, treisprezece blocuri: mergi, rotește-te spre dreapta și spre stânga, mergi la, glisează, orientează-te și modifică și setează x și y. Din Evenimente, opt: steagul verde, când tasta, când se dă click pe acest personaj, când decorul se schimbă, difuzează, difuzează și așteaptă, când primesc și când intensitatea sunetului. Din Aspect, treisprezece: spune, gândește, costumul și decorul, mărimea și efectele. Din Sunet, nouă: pornește sunetul, redă până la final, oprește toate sunetele, volumul și efectele audio. Din Control, opt: așteaptă, repetă, la infinit, dacă, dacă altfel, așteaptă până când, repetă până când și stop. Din Detectare, două: tasta apăsată și atinge cursorul mouse-ului.
 
-Greșeli frecvente. Dacă refaci tot de la zero, greșești. Deschizi L nouă și adaugi. Dacă al doilea personaj nu are reset, resetezi pe amândouă. Dacă la prezentare e haos, verifici steagul de două ori înainte. Dacă încerci două completări netestate, la prezentare e stricat. Fă una, testează, apoi a doua.
+Greșeli frecvente. Dacă Gazda rămâne blocată, un număr conține la infinit, care nu se termină niciodată: folosește repetă. Dacă artiștii nu pornesc, mesajul din difuzează și cel din când primesc nu e același. Dacă personajele vorbesc deodată, lipsește difuzează și așteaptă, deci Gazda nu așteaptă. Dacă un personaj nu se vede, lipsesc setează x la și setează y la sau e în afara scenei. Dacă la al doilea steag e haos, resetul lipsește: la steag, fiecare personaj își setează locul și mărimea. Dacă Reacția nu face nimic, trebuie să ții mouse-ul pe personaj cât rulează. Dacă decorul nu se schimbă la final, Aplauze trebuie să fie după Gala în listă, iar mesajul din când primesc e final. Dacă ai greșit numele la salvare, adaugă și numele de familie.
 
-Proiectul de azi. Completare pe Personajul meu.
+Proiectul de azi. Gala personajelor.
 
-Minim înseamnă: o completare lipită și testată, reset curat, prezentat, salvat. Complet înseamnă: două completări, prezentare, salvare. Dacă ai doar Minim, tot primești insigna.
+Minim înseamnă: scena cu două decoruri și Gazda cu cel puțin opt blocuri diferite, din două numere din lecții diferite, plus prezentarea și salvarea. Complet înseamnă: minim, plus primul artist, cu cel puțin opt blocuri diferite, din două numere din lecții diferite. Dacă rămâi în urmă, prezinți cu Gazda: e suficient pentru insignă. La minutul șaptezeci și cinci încep prezentările oricum.
 
-În proiect, primul pas. O completare din A până la F. Steag de două ori. Salvezi.
+În proiect, primul pas, pentru Minim. Scena. Alegi un decor de scenă și îl redenumești Gala. Apoi desenezi al doilea decor, Aplauze, în editor: un fundal plin de confetti, buline și lumini, cu uneltele Cerc și Pensulă. Pe Scenă faci două scripturi. La steag: schimbă decorul la Gala. Și când primesc final: decorul următor.
 
-În proiect, al doilea pas. Prezinți: cine, ce, ce ai adăugat. Steag. Mulțumesc.
+În proiect, al doilea pas, pentru Minim. Gazda. Gazda e primul personaj ales. Are un schelet, cu două numere puse la loc. Exemplul: Pisica, cu Salut din lecția unu și Transformare din lecția cinci. La steag: setează x la minus o sută cincizeci. Apoi setează y la minus optzeci. Apoi spune Bun venit la Gală, trei secunde. Apoi spune Primul număr, Racheta, trei secunde. Apoi difuzează și așteaptă număr unu. Apoi spune Al doilea număr, Chitaristul, trei secunde. Apoi difuzează și așteaptă număr doi. Apoi spune Și acum numărul meu, trei secunde. Apoi cele două numere ale Gazdei. La final, difuzează final, așteaptă patru secunde și stop totul.
 
-În proiect, al treilea pas, pentru Complet. A doua completare, testată. Salvezi din nou. Insigna Scratch Starter.
+Meniul de numere. Fiecare personaj alege cel puțin două, din lecții diferite. Din lecția unu, Salut: mergi treizeci de pași, pornește sunetul și gândește Ce echipă, două secunde. Din lecția doi, Costume: repetă opt, înăuntru costumul următor și așteaptă zero virgulă doi, apoi schimbă costumul la un costum ales de tine. Din lecția trei, Zbor: orientează-te în direcția zero, glisează în două secunde la x zero, y o sută, apoi rotește-te spre dreapta nouăzeci de grade. Din lecția cinci, Transformare: setează mărimea la o sută cincizeci la sută, modifică efectul culoare cu treizeci, așteaptă o secundă, anulează efectele grafice, apoi setează mărimea la o sută la sută. Din lecția șase, Muzică: setează volumul la șaizeci la sută, pornește sunetul, așteaptă două secunde, modifică volumul cu treizeci, așteaptă două secunde, apoi oprește toate sunetele. Din lecția șapte, Plimbare: setează x la minus o sută, setează y la zero, repetă patru, înăuntru modifică x cu patruzeci și așteaptă zero virgulă trei, apoi modifică y cu patruzeci. Din lecția opt, Reacție: repetă zece, înăuntru dacă atinge cursorul mouse-ului, atunci modifică efectul culoare cu douăzeci și cinci, altfel setează efectul culoare la zero, apoi așteaptă zero virgulă trei. La Reacție ții mouse-ul pe personaj.
 
-Recapitulare. Adaugi, nu refaci. O completare pentru Minim. Două pentru Complet. Prezinți scurt. Steagul trebuie să meargă. Ai terminat Modulul unu. Bravo!
+Fără artiști, Gazda își termină scriptul singură. Salvezi.
 
-Succes la prezentarea ta.
+În proiect, al treilea pas, pentru Complet. Primul artist. Al doilea personaj ales. Are un schelet, cu două numere din rețete, din lecții diferite. Exemplul: Racheta, cu Zbor din lecția trei și Plimbare din lecția șapte. La steag: setează x la zero. Apoi setează y la minus o sută. Apoi setează mărimea la optzeci la sută. Apoi, când primesc număr unu, cele două numere, unul după altul. Stă pe loc până Gazda spune Primul număr, își face cele două numere, apoi Gazda continuă. Salvezi din nou.
+
+În proiect, al patrulea pas, pentru Minim. Prezentarea. Spui în unu sau două minute cine e Gazda, ce personaje ai invitat și ce numere ai ales. Apeși steagul verde și lași gala să ruleze, fără explicații cu vocea în timpul ei. Clasa îți dă aplauze și un compliment concret. Tu spui Mulțumesc și dai și tu un compliment unui coleg.
+
+Bonus. Al treilea personaj, al doilea artist, cu două numere din lecții diferite și cel puțin zece blocuri diferite. Exemplul: Chitaristul, cu Muzică din lecția șase și Reacție din lecția opt. La steag: setează x la o sută cincizeci. Apoi setează y la minus optzeci. Apoi setează mărimea la o sută la sută. Apoi, când primesc număr doi, cele două numere. Apoi Bis, pe oricare personaj: când tasta spațiu este apăsată, spune Bis, două secunde, apoi pornește sunetul. Provocarea: alege un coleg și ia din gala lui un număr, pe care îl pui în gala ta. Spune colegului ce ai luat și de unde.
+
+Recapitulare. Gazda anunță cu spune și cheamă artiștii cu difuzează și așteaptă. Un număr trebuie să se termine: nu pui la infinit înăuntru. Mesajele se scriu la fel în difuzează și în când primesc. La final: difuzează final, așteaptă și stop totul. Numele fișierului are prenumele și numele de familie.
+
+Quiz scurt, cu profesorul. Ce face steagul verde? Ce diferență e între modifică și setează? Cum faci să nu vorbească două personaje deodată? De ce nu pui la infinit într-un număr? Cum salvezi proiectul?
+
+Insigna. Dacă ai Minim, adică Gazda cu două numere, gala se termină curat, ai prezentat și proiectul e salvat, primești insigna Scratch Starter. Complet e ținta orei, nu pragul pentru insignă.
+
+Tema, opțional. Arată familiei gala ta, două minute. Gândește-te ce ai vrea să faci în Modulul doi.
+
+Felicitări, ai încheiat Modulul unu.
