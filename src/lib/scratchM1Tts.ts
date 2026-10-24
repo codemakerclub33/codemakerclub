@@ -106,6 +106,67 @@ async function synthesize(text: string) {
   })
 }
 
+const MAX_CHARS = 3500
+
+/** Împarte textul pe paragrafe/propoziții în bucăți sub limita API (4096). */
+function splitText(text: string): string[] {
+  const parts: string[] = []
+  let current = ''
+  const push = (piece: string) => {
+    if (current && current.length + piece.length + 2 > MAX_CHARS) {
+      parts.push(current)
+      current = ''
+    }
+    current = current ? `${current}\n\n${piece}` : piece
+  }
+  for (const para of text.split(/\n\s*\n/)) {
+    if (para.length <= MAX_CHARS) {
+      push(para)
+      continue
+    }
+    for (const sentence of para.split(/(?<=[.!?])\s+/)) push(sentence)
+  }
+  if (current) parts.push(current)
+  return parts
+}
+
+function mergeWav(chunks: Uint8Array[]): Uint8Array {
+  const HEADER = 44
+  const data = chunks.map((c, i) => (i === 0 ? c.subarray(HEADER) : c.subarray(HEADER)))
+  const total = data.reduce((n, c) => n + c.length, 0)
+  const out = new Uint8Array(HEADER + total)
+  out.set(chunks[0].subarray(0, HEADER), 0)
+  const view = new DataView(out.buffer)
+  view.setUint32(4, 36 + total, true)
+  view.setUint32(40, total, true)
+  let off = HEADER
+  for (const c of data) {
+    out.set(c, off)
+    off += c.length
+  }
+  return out
+}
+
+async function synthesizeLong(text: string): Promise<{ bytes: Uint8Array; mediaType: string }> {
+  const chunks: Uint8Array[] = []
+  let mediaType = 'audio/mpeg'
+  for (const part of splitText(text)) {
+    const result = await synthesize(part)
+    chunks.push(result.audio.uint8Array)
+    mediaType = result.audio.mediaType || mediaType
+  }
+  if (chunks.length === 1) return { bytes: chunks[0], mediaType }
+  if (mediaType.includes('wav')) return { bytes: mergeWav(chunks), mediaType }
+  const total = chunks.reduce((n, c) => n + c.length, 0)
+  const bytes = new Uint8Array(total)
+  let off = 0
+  for (const c of chunks) {
+    bytes.set(c, off)
+    off += c.length
+  }
+  return { bytes, mediaType }
+}
+
 export type ScratchM1SpeechResult =
   | { ok: true; url: string; cached: boolean; lesson: number }
   | { ok: false; status: number; error: string; detail?: string }
@@ -133,9 +194,7 @@ export async function getScratchM1Speech(lesson: number): Promise<ScratchM1Speec
   if (cached) return { ok: true, url: cached, cached: true, lesson }
 
   try {
-    const result = await synthesize(text)
-    const bytes = result.audio.uint8Array
-    const mediaType = result.audio.mediaType || 'audio/mpeg'
+    const { bytes, mediaType } = await synthesizeLong(text)
     const url = await saveAudio(blobDir, hash, bytes, mediaType)
     return { ok: true, url, cached: false, lesson }
   } catch (err) {
