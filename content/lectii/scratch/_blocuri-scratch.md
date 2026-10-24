@@ -29,7 +29,11 @@ Legendă: `[ ]` = listă de alegere, `( )` = număr/text de scris.
 - `setează x la (0)`
 - `modifică y cu (10)`
 - `setează y la (0)`
-- *(sub acestea mai urmează blocuri care nu se văd în capturi: de completat)*
+- `dacă atinge marginea, ricoșează`
+- `setează stilul de rotație [stânga-dreapta]`
+- `poziția x` *(valoare)*
+- `poziția y` *(valoare)*
+- `direcția` *(valoare)*
 
 ## Aspect (violet)
 - `spune (Salut!) pentru (2) secunde`
@@ -45,7 +49,13 @@ Legendă: `[ ]` = listă de alegere, `( )` = număr/text de scris.
 - `modifică efectul [culoare] cu (25)`
 - `setează efectul [culoare] la (0)`
 - `anulează efectele grafice`
-- *(sub acestea mai urmează blocuri care nu se văd în capturi: de completat)*
+- `arată`
+- `ascunde`
+- `mergi la stratul [în față]`
+- `mergi [înainte] (1) straturi`
+- `costumul [număr]` *(valoare)*
+- `decor [număr]` *(valoare)*
+- `mărime` *(valoare)*
 
 ## Sunet (magenta)
 - `redă sunetul [Meow] până la final`
@@ -77,7 +87,10 @@ Legendă: `[ ]` = listă de alegere, `( )` = număr/text de scris.
 - `așteaptă până când <>`
 - `repetă până când <>`
 - `stop [totul]`
-- *(sub acestea mai urmează blocuri care nu se văd în capturi: de completat)*
+- `când încep ca și clonă`
+- `creează o clonă a [mea]`
+- `șterge această clonă`
+- *(`stop` are în listă și: celelalte scripturi din personaj, acest script)*
 
 ## Detectare (cyan)
 - `atinge [cursorul mouse-ului]?`
@@ -94,8 +107,11 @@ Legendă: `[ ]` = listă de alegere, `( )` = număr/text de scris.
 - `intensitatea sunetului` *(valoare)*
 - `cronometru` *(valoare)*
 - `resetează cronometru`
-- `[ ] din [Scenă]`
-- *(sub acestea mai urmează blocuri care nu se văd în capturi: de completat)*
+- `[nr. decor] din [Scenă]`
+- `[anul] curent(ă)` *(valoare)*
+- `zile din 2000` *(valoare)*
+- `online?`
+- `nume utilizator` *(valoare)*
 
 ## Operatori (verde)
 - `( ) + ( )`
@@ -115,7 +131,7 @@ Legendă: `[ ]` = listă de alegere, `( )` = număr/text de scris.
 - `<(măr) conține (m)?>`
 - `( ) mod ( )`
 - `rotunjește ( )`
-- *(sub acestea mai urmează blocuri care nu se văd în capturi: de completat)*
+- `[modul] din ( )`
 
 ## Variabile (portocaliu închis)
 - buton `Creează o variabilă`
@@ -125,7 +141,18 @@ Legendă: `[ ]` = listă de alegere, `( )` = număr/text de scris.
 - `arată variabila [my variable]`
 - `ascunde variabila [my variable]`
 - buton `Creează o listă`
-- *(după ce creezi o listă apar și blocurile pentru liste, nevăzute în captură)*
+- `[numele listei]` *(valoare, cu bifă)*
+- `adaugă (element) la [listă]`
+- `șterge (1) din [listă]`
+- `șterge tot din [listă]`
+- `inserează (element) la (1) din [listă]`
+- `înlocuiește item (1) din [listă] cu (element)`
+- `element (1) din [listă]` *(valoare)*
+- `nr. elementului (element) în [listă]`
+- `lungimea lui [listă]`
+- `<[listă] conține (element)?>`
+- `arată lista [listă]`
+- `ascunde lista [listă]`
 
 ## Blocurile mele (roz)
 - buton `Creează un bloc`
@@ -158,6 +185,4 @@ Văzute în capturi: **Muzică**, **Stilou**, **Detectare video**, **Face Sensin
 - Panoul Scenă (dreapta jos) arată `Decoruri` și numărul lor.
 
 ## Ce lipsește de adăugat
-1. Partea de jos din Mișcare, Aspect, Control, Detectare, Operatori.
-2. Blocurile pentru liste (apar după ce creezi o listă).
-3. Restul extensiilor, dacă le folosim în lecții.
+Nimic din capturile din 24 oct 2026. Rămân doar extensiile nefolosite.

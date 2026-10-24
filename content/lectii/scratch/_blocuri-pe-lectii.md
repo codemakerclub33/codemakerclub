@@ -83,6 +83,30 @@ Total blocuri noi: 53 (Mișcare 13, Evenimente 8, Aspect 13, Sunet 9, Control 8,
 ### Impact asupra Modulului 2
 M2 are acum lecții care se suprapun cu M1: `Dacă… atunci` (L1), `Dacă… altfel` (L2), `Forever și stop` (L7), `Mesaje / broadcast` (L8). M2 trebuie regândit după încheierea M1.
 
+## Plan Modulul 2 (hotărât 24 oct 2026)
+M2 are 10 lecții și 51 de blocuri noi (logică, date, desen). Restul blocurilor din capturi merg la M3 (jocuri).
+
+| Lecția | Tema | Blocuri noi | Nr. |
+|--------|------|-------------|-----|
+| L1 | Culori și margini | `atinge culoarea`, `culoarea atinge`, `dacă atinge marginea, ricoșează`, `setează stilul de rotație`, `poziția x`, `poziția y`, `direcția` | 7 |
+| L2 | Mouse și ascuns | `mouse x`, `mouse y`, `butonul mouse-ului e apăsat?`, `distanța până la`, `setează mod tragere`, `arată`, `ascunde` | 7 |
+| L3 | Întreabă și text | `întreabă … și așteaptă`, `răspuns`, `alătură`, `litera … din`, `lungimea lui`, `conține?` | 6 |
+| L4 | Variabile | `Creează o variabilă`, valoarea variabilei, `setează … la`, `modifică … cu`, `arată variabila`, `ascunde variabila` | 6 |
+| L5 | Operatori matematici | `+`, `-`, `*`, `/`, `alege aleator între`, `rotunjește`, `mod` | 7 |
+| L6 | Comparații, logică și timp | `>`, `<`, `=`, `și`, `sau`, `nu`, `cronometru`, `resetează cronometru` | 8 |
+| L7 | Stilou (extensie) | `șterge tot`, `ștampila`, `stilou jos`, `stilou sus`, `setează culoarea stiloului la`, `schimbă [culoarea] stiloului cu`, `setează [culoarea] stiloului la`, `schimbă grosimea stiloului cu`, `setează grosimea stiloului la` | 9 |
+| L8 | Blocurile mele | `Creează un bloc` (cu parametri, desen cu Stilou: pătrat, stea) | 1 |
+| L9 | Mini-proiect | combinăm tot, fără blocuri noi | — |
+| L10 | Completare + prezentare | insigna Logic Explorer, fără blocuri noi | — |
+
+### Mutate la M3 (jocuri), 28 de blocuri
+- Clone: `când încep ca și clonă`, `creează o clonă a`, `șterge această clonă`.
+- Liste (13): `Creează o listă`, valoarea listei, `adaugă`, `șterge`, `șterge tot`, `inserează`, `înlocuiește`, `element … din`, `nr. elementului`, `lungimea lui [listă]`, `[listă] conține?`, `arată lista`, `ascunde lista`.
+- Aspect: `mergi la stratul`, `mergi înainte straturi`, `costumul [număr]`, `decor [număr]`, `mărime`.
+- Detectare: `intensitatea sunetului`, `[nr. decor] din [Scenă]`, `anul curent`, `zile din 2000`, `online?`, `nume utilizator`.
+- Operatori: `[modul] din`.
+- M3 trebuie adaptat după M2 (scor, vieți, timp se suprapun cu L4 și L6 din M2).
+
 ## Structura universală a lecțiilor Scratch (document INTERN, valabil L1–L10)
 
 1. **Antet:** titlu, modul, „Code Maker Club · Scratch Starter”, citat scurt cu ce faci azi și numele fișierului (`Prenume_Nume_L#`).
