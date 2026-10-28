@@ -126,7 +126,7 @@ Dacă rămâi în urmă: salvează la **Minim**. Nu e eșec.
 Cei rapizi: Complet, apoi Bonus.
 
 ### Pasul 1 — Laboratorul și personajele *(Minim)*
-Alegi din bibliotecă un decor de laborator sau de atelier, fără să desenezi. Adaugi trei personaje și le redenumești exact: `Robotul` (un robot din bibliotecă), `Papagalul` (un papagal din bibliotecă) și `Copilul` (un personaj de copil). Pe Papagal adaugi în tab-ul **Sunete** un sunet.  
+Alegi din bibliotecă un decor de laborator sau de atelier, fără să desenezi. Adaugi trei personaje și le redenumești exact: `Robotul` (un robot din bibliotecă), `Papagalul` (personajul `Parrot`) și `Copilul` (un personaj de copil). Pe Papagal adaugi în tab-ul **Sunete** un sunet.  
 Papagalul și Copilul stau pe loc până le programezi la Pasul 3 și la Bonus.
 
 - [ ] Decor de laborator sau de atelier  

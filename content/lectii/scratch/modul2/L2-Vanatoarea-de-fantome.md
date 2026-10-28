@@ -123,7 +123,7 @@ Dacă rămâi în urmă: salvează la **Minim**. Nu e eșec.
 Cei rapizi: Complet, apoi Bonus.
 
 ### Pasul 1 — Castelul și personajele *(Minim)*
-Alegi din bibliotecă un decor de castel sau de noapte, fără să desenezi. Adaugi trei personaje și le redenumești exact: `Vânătorul` (un personaj care ține o lanternă sau un vrăjitor), `Fantoma` (o fantomă din bibliotecă) și `Comoara` (o ladă sau un diamant). Pe Fantomă și pe Comoară adaugi în tab-ul **Sunete** câte un sunet.  
+Alegi din bibliotecă un decor de castel sau de noapte, fără să desenezi. Adaugi trei personaje și le redenumești exact: `Vânătorul` (un personaj care ține o lanternă sau un vrăjitor), `Fantoma` (personajul `Ghost`) și `Comoara` (o ladă sau un diamant). Pe Fantomă și pe Comoară adaugi în tab-ul **Sunete** câte un sunet.  
 Fantoma stă pe loc până o programezi la Pasul 3.
 
 - [ ] Decor de castel sau de noapte  
