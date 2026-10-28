@@ -1,0 +1,39 @@
+Lecția șapte. Atelierul de desen.
+
+Astăzi personajele desenează: trasează linii colorate, ștampilează stele și pictează după mouse. Fișierul se numește Prenume, linie jos, Nume, linie jos, L șapte.
+
+Obiectivul. La finalul orei Pictorul desenează o floare din pătrate rotite, cu culori care se schimbă, direct pe scenă. Minim: personajul unu, Pictorul, cu cel puțin opt blocuri diferite. Complet: personajul doi, Steaua, cu cel puțin opt blocuri diferite, care apare după floare și ștampilează stele prin atelier.
+
+De ce contează. Cu stiloul un personaj lasă urme pe scenă: linii, forme, desene. Se folosește în jocuri care desenează drumul, în aplicații de pictat și în animații cu forme. Blocurile stau într-o extensie numită Stilou, pe care o adaugi tu. La proiect aștepți să se termine desenul înainte să apeși pe steag din nou.
+
+Capitolele de azi sunt șase: Stilou, Mișcare, Control, Evenimente, Aspect și Detectare.
+
+Ce face fiecare bloc nou. Stilou jos: de acum personajul lasă urmă pe unde merge. Stilou sus: personajul nu mai lasă urmă. Șterge tot șterge de pe scenă toate desenele făcute cu stiloul. Ștampila lasă pe scenă o copie a personajului, în locul unde se află. Setează culoarea stiloului la: alegi culoarea stiloului cu pipeta. Schimbă culoarea stiloului cu trece stiloul spre altă culoare, puțin câte puțin, sau schimbă strălucirea, saturația ori transparența. Setează culoarea stiloului la, cu listă, pune exact valoarea scrisă pentru culoare, saturație, strălucire sau transparență. Schimbă grosimea stiloului cu face linia mai groasă, cu număr pozitiv, sau mai subțire. Setează grosimea stiloului la pune exact grosimea scrisă pentru linie.
+
+Primul pas pe ecran. Adaugi extensia și pornești stiloul. În stânga jos apeși butonul Adaugă o extensie și alegi Stilou. În lista de blocuri apare un capitol nou, verde turcoaz. Stilou jos pornește desenul: de acum personajul lasă urmă pe unde merge. Stilou sus îl oprește: personajul se mișcă fără să lase urmă. Șterge tot curăță scena. Îl pui la începutul scriptului, ca desenul să pornească pe o scenă goală.
+
+Al doilea pas pe ecran. Culoarea și grosimea. La setează culoarea stiloului faci click pe cercul colorat, apoi pe pipetă și alegi culoarea dorită de pe ecran. Schimbă culoarea stiloului cu mută culoarea puțin câte puțin: într-o buclă ies culori ca în curcubeu. Setează culoarea stiloului la, cu listă, pune exact valoarea scrisă. Din listă poți alege și saturația, strălucirea sau transparența. Setează grosimea stiloului la pune grosimea liniei, iar schimbă grosimea stiloului cu o face puțin mai groasă la fiecare dată.
+
+Al treilea pas pe ecran. Ștampila. Ștampila lasă pe scenă o copie a personajului, în locul unde se află, cu mărimea și costumul de atunci. Merge și cu stilou sus. Dacă personajul e ascuns, nu se ștampilează nimic: ai grijă să fi arătat personajul. Cu ștampila în buclă și mișcări ies șiruri de personaje.
+
+Al patrulea pas pe ecran. Forme cu repetă. Un pătrat: repetă patru, cu mergi optzeci de pași și rotește spre dreapta nouăzeci de grade. O floare: pui pătratul într-un alt repetă treizeci și șase și rotești puțin după fiecare pătrat, zece grade. Cu schimbă culoarea stiloului cu cinci în bucla mare, fiecare pătrat are altă culoare.
+
+Greșeli frecvente. Dacă nu apar blocurile cu stiloul, nu ai adăugat extensia Stilou. Dacă liniile apar unde nu vrei, ai uitat stilou sus: personajul lasă urmă în timp ce se mută. Dacă nu se vede nicio linie, lipsește stilou jos, sau linia e prea subțire sau de aceeași culoare cu decorul. Dacă desenul dispare imediat, ai pus șterge tot după desen: îl pui la început. Dacă ștampila nu apare, personajul e ascuns: pune arată înainte de ștampila. Dacă floarea e încâlcită, la pătrat unghiul trebuie să fie nouăzeci, apoi rotești puțin, zece, nu invers. Dacă Steaua apare înainte de floare, Pictorul trebuie să difuzeze steaua cu și așteaptă, după ce termină floarea. Dacă Pensula desenează tot timpul, la butonul liber trebuie stilou sus: pune altfel. Dacă mesajul nu ajunge, numele din difuzează și din când primesc nu e același mesaj: steaua și stea sunt mesaje diferite. Dacă ai greșit numele la salvare, adaugă și numele de familie.
+
+Proiectul de azi. Atelierul de desen.
+
+Minim înseamnă: decorul, personajele, extensia și Pictorul cu cel puțin opt blocuri diferite. Complet înseamnă: minim, plus Steaua, cu cel puțin opt blocuri diferite, care apare după floare și ștampilează stele prin atelier. Dacă rămâi în urmă, salvează la Minim. Nu e eșec.
+
+În proiect, primul pas, pentru Minim. Atelierul, personajele și extensia. Alegi din bibliotecă un decor alb sau deschis, ca să se vadă liniile, de exemplu unul gol. Adaugi trei personaje și le redenumești exact: Pictorul, un personaj de om sau un creion, Steaua, o stea din bibliotecă, și Pensula, o pensulă sau un creion din bibliotecă. Pe Stea adaugi în tab-ul Sunete un sunet. Adaugi extensia Stilou, din butonul din stânga jos.
+
+În proiect, al doilea pas, pentru Minim. Pictorul. Este un model: poți schimba textele, numerele și mesajele. La steag: șterge tot. Apoi mergi la x zero, y zero. Apoi setează grosimea stiloului la doi. Apoi setează culoarea stiloului la roșu. Apoi stilou jos. Apoi repetă treizeci și șase, înăuntru: repetă patru, cu mergi optzeci de pași și rotește spre dreapta nouăzeci de grade; apoi rotește spre dreapta zece grade; apoi schimbă culoarea stiloului cu cinci. După repetare: stilou sus. Apoi spune Floarea mea, două secunde. Apoi difuzează steaua și așteaptă. La final, difuzează final. Fără Stea și Pensulă, Pictorul își termină povestea singur. Salvezi. Minim este gata când apeși pe steag și Pictorul desenează o floare colorată din pătrate rotite, apoi spune Floarea mea.
+
+În proiect, al treilea pas, pentru Complet. Steaua. Are două scripturi, iar al doilea pornește când Pictorul difuzează steaua. Primul, la steag: ascunde. Al doilea, când primesc steaua: arată. Apoi mergi la poziție aleatoare. Apoi setează mărimea la patruzeci la sută. Apoi setează transparența stiloului la treizeci. Apoi stilou jos. Apoi repetă zece, înăuntru patru lucruri: glisează în zero virgulă cinci secunde la poziție aleatoare, ștampila, schimbă grosimea stiloului cu unu și schimbă culoarea stiloului cu zece. După repetare: stilou sus. La final, ascunde. Salvezi din nou. Complet este gata când apeși pe steag, Pictorul desenează floarea, apoi Steaua traversează atelierul și lasă stele și linii colorate, fără explicație cu vocea.
+
+Bonus. Al treilea personaj, Pensula, care pictează după mouse-ul tău. Primul script, la steag: ascunde. Al doilea, când primesc final: arată. Apoi setează grosimea stiloului la patru. Apoi la infinit, înăuntru trei lucruri. Întâi: mergi la x mouse x, y mouse y. Apoi: dacă butonul mouse-ului e apăsat, atunci stilou jos, altfel stilou sus. Apoi: schimbă culoarea stiloului cu unu. Al treilea script, când tasta c este apăsată: șterge tot. Provocarea: adaugi pe Pictor, după floare, un hexagon: repetă șase, cu mergi șaizeci de pași și rotește spre dreapta șaizeci de grade, într-o culoare nouă.
+
+Recapitulare. Extensia Stilou se adaugă din butonul din stânga jos. Stilou jos lasă urmă, stilou sus o oprește, iar șterge tot curăță scena: îl pui la început. Culoarea și grosimea stiloului se setează sau se schimbă cu blocurile dedicate, iar ștampila lasă o copie a personajului. Un personaj ascuns nu ștampilează. Un pătrat: repetă patru, cu mergi și rotește nouăzeci; o floare: pătratul într-un alt repetă. Numele fișierului are prenumele și numele de familie.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă Steaua, în același fișier. Dacă ai Complet, adaugi acasă Pensula, în același fișier. Dacă ai terminat și bonusul, faci o copie și schimbi desenul: alte forme, alte culori, alt personaj care ștampilează.
+
+Succes în atelierul tău de desen.

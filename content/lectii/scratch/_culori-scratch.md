@@ -13,6 +13,7 @@ Vrem **text colorat** (culoarea fontului), nu buline.
 | Detectare | `#5CB1D1` cyan | atingere |
 | Operatori | `#59C059` verde | + = < |
 | Variabile | `#FF8C1A` portocaliu | scor |
+| Stilou (extensie) | `#0FBD8C` verde-turcoaz | stilou jos, ștampila |
 
 ### Cum vezi culorile în Cursor
 1. Deschide lecția  

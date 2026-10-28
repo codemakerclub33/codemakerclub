@@ -13,8 +13,8 @@
 | 3 | [L3-Robotul-prieten.md](./L3-Robotul-prieten.md) | Robotul prieten |
 | 4 | [L4-Magazinul-de-dulciuri.md](./L4-Magazinul-de-dulciuri.md) | Magazinul de dulciuri |
 | 5 | [L5-Zaruri-si-calcule.md](./L5-Zaruri-si-calcule.md) | Zaruri și calcule |
-| 6 | [L6-Operatori.md](./L6-Operatori.md) | Operatori |
-| 7 | [L7-Forever-si-stop.md](./L7-Forever-si-stop.md) | Forever și stop |
+| 6 | [L6-Poarta-secreta.md](./L6-Poarta-secreta.md) | Poarta secretă |
+| 7 | [L7-Atelierul-de-desen.md](./L7-Atelierul-de-desen.md) | Atelierul de desen |
 | 8 | [L8-Mesaje-broadcast.md](./L8-Mesaje-broadcast.md) | Mesaje între personaje |
 | 9 | [L9-Mini-proiect-Labirint.md](./L9-Mini-proiect-Labirint.md) | Mini-proiect: Labirint |
 | 10 | [L10-Recap-labirint.md](./L10-Recap-labirint.md) | Completare + recap labirint |
