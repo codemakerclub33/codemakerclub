@@ -91,7 +91,7 @@ Aproape orice joc are aceleași piese: **scor**, **vieți**, **obstacole** și *
 1. **Mâncăciosul trece prin pereți** — pereții au nuanțe diferite de albastru, sau sunt prea subțiri. Pereții trebuie să aibă o singură culoare și să fie mai groși, cât degetul tău.  
 2. **Mâncăciosul stă blocat de la început** — ai pornit personajul într-un perete. Pune `mergi la x: y:` într-un loc liber.  
 3. **Se oprește în aer** — un alt personaj are culoarea albastră. Schimbă culoarea personajului sau a peretelui.  
-4. **Viețile nu scad** — capcana nu e roșie, sau ai uitat `dacă atinge culoarea [roșu]?`.  
+4. **Viețile nu scad** — capcana nu e roșie, sau ai uitat `dacă atinge culoarea [roșu]?`. Dacă doar unele capcane merg, au fost desenate separat și au altă nuanță de roșu: copiază capcana care merge.  
 5. **Bila nu vede scorul** — ai făcut variabila **numai pentru acest personaj**. Trebuie **pentru toate personajele**.  
 6. **Scorul crește foarte repede** — după ce Mâncăciosul atinge bila, bila trebuie mutată imediat.  
 7. **Bila apare în perete** — `mergi la [poziție aleatoare]` trebuie pus și **înainte** de `repetă până când`.  
@@ -119,13 +119,13 @@ Cei rapizi: Complet, apoi Bonus.
 1. Umple fundalul cu o culoare deschisă, fără albastru și fără roșu
 2. Cu unealta **Dreptunghi** desenezi pereții, **toți în același albastru**. Pereții să fie groși, cât degetul tău
 3. Lasă drumuri largi între pereți, de două ori cât Mâncăciosul, și fără camere închise
-4. Desenezi trei sau patru pătrate **roșii**, pe drumuri: sunt capcanele
+4. Desenezi **o** capcană: un pătrat **roșu**, pe un drum. Apoi o selectezi, o copiezi și o lipești de încă **4 ori** (Ctrl+C, Ctrl+V), în locuri diferite pe drumuri. Ai **5 capcane**, toate de același roșu
 
 **Personajele:** adaugi trei personaje și le redenumești exact: `Mâncăciosul` (un cerc galben, făcut de tine cu unealta **Cerc**, sau o minge din bibliotecă), `Bila` (un cerc mic, portocaliu sau galben) și `Fantoma` (personajul `Ghost`). Pe Mâncăcios faci două costume: copiezi costumul, apoi cu **Radiera** tai o felie, ca să apară gura. Pe Bilă adaugi în tab-ul **Sunete** un sunet. La fiecare personaj pui **Mărimea** la o valoare mică (de exemplu `40`), din câmpul Mărime.
 
 **Variabilele:** creezi `scor` și `vieți`, ambele **pentru toate personajele**.
 
-- [ ] Arena are pereți albaștri, groși, și capcane roșii  
+- [ ] Arena are pereți albaștri, groși, și cinci capcane roșii, copiate din prima  
 - [ ] Personajele se numesc `Mâncăciosul`, `Bila` și `Fantoma`  
 - [ ] Mâncăciosul are două costume (gura deschisă și închisă)  
 - [ ] Variabilele `scor` și `vieți` sunt pentru toate personajele  
