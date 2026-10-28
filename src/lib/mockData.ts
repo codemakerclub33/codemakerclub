@@ -570,7 +570,7 @@ export const lectii = [
     'Zaruri și calcule',
     'Poarta secretă',
     'Atelierul de desen',
-    'Mesaje între personaje',
+    'Blocurile mele',
     'Mini-proiect: Labirint',
     'Recapitulare Modul 2 — completare + prezentare',
   ]),

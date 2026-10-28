@@ -14,6 +14,7 @@ Vrem **text colorat** (culoarea fontului), nu buline.
 | Operatori | `#59C059` verde | + = < |
 | Variabile | `#FF8C1A` portocaliu | scor |
 | Stilou (extensie) | `#0FBD8C` verde-turcoaz | stilou jos, ștampila |
+| Blocurile mele | `#FF6680` roz | creează un bloc, definește |
 
 ### Cum vezi culorile în Cursor
 1. Deschide lecția  
