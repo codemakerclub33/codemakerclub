@@ -1,7 +1,7 @@
 # Scratch Modul 2 — Lista lecțiilor
 
 **Code Maker Club** · Logică · Badge: **Logic Explorer**  
-**Proiecte:** 9 proiecte noi + L10 finisări pe labirint.  
+**Proiecte:** 9 proiecte noi + L10 galeria finală.  
 **Limbaj:** clar, **8–10 ani** · ritm dens (warm-up → proiect)  
 **Cei rapizi:** **Bonus / Provocare** pe fiecare lecție.  
 **Culori blocuri:** [`_culori-scratch.md`](../_culori-scratch.md)
@@ -17,7 +17,7 @@
 | 7 | [L7-Atelierul-de-desen.md](./L7-Atelierul-de-desen.md) | Atelierul de desen |
 | 8 | [L8-Blocurile-mele.md](./L8-Blocurile-mele.md) | Blocurile mele |
 | 9 | [L9-Vanatoarea-de-bile.md](./L9-Vanatoarea-de-bile.md) | Vânătoarea de bile |
-| 10 | [L10-Recap-labirint.md](./L10-Recap-labirint.md) | Completare + recap labirint |
+| 10 | [L10-Galeria-Logic-Explorer.md](./L10-Galeria-Logic-Explorer.md) | Completare + prezentare (Galeria Logic Explorer) |
 
 ---
 
@@ -33,7 +33,7 @@
 | **Operatori:** `+ −` și `< = >` (în `dacă`) | L6 |
 | **Control:** `forever` + `stop` (joc „aprins”) | L7 *(exemplu scurt deja în L1/L4)* |
 | **Evenimente:** mesaje (*broadcast*) | L8 |
-| Proiect final | L9 Vânătoarea de bile + L10 completare |
+| Proiect final | L9 Vânătoarea de bile + L10 Galeria Logic Explorer |
 
 **Regula dependențelor:** L1–L4 folosesc condiții tip **atinge / tastă** — **fără** operatori pe scor. La **L5**: variabile + exemplu doar `scor = 5` (victorie). `<` `>` `+` `−` pe îndelete la **L6**.
 

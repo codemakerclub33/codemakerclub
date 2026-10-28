@@ -572,7 +572,7 @@ export const lectii = [
     'Atelierul de desen',
     'Blocurile mele',
     'Vânătoarea de bile',
-    'Recapitulare Modul 2 — completare + prezentare',
+    'Completare + prezentare: Galeria Logic Explorer',
   ]),
   // Scratch Modul 3
   ...genLectii('m18', [
