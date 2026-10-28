@@ -571,7 +571,7 @@ export const lectii = [
     'Poarta secretă',
     'Atelierul de desen',
     'Blocurile mele',
-    'Mini-proiect: Labirint',
+    'Vânătoarea de bile',
     'Recapitulare Modul 2 — completare + prezentare',
   ]),
   // Scratch Modul 3

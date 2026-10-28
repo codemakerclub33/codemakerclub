@@ -17,7 +17,7 @@ const NARATIE_FILES: Record<number, string> = {
   6: 'L6-Poarta-secreta.naratie.txt',
   7: 'L7-Atelierul-de-desen.naratie.txt',
   8: 'L8-Blocurile-mele.naratie.txt',
-  9: 'L9-Mini-proiect-Labirint.naratie.txt',
+  9: 'L9-Vanatoarea-de-bile.naratie.txt',
   10: 'L10-Recap-labirint.naratie.txt',
 }
 
