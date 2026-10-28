@@ -147,7 +147,7 @@ function mergeWav(chunks: Uint8Array[]): Uint8Array {
   return out
 }
 
-async function synthesizeLong(text: string): Promise<{ bytes: Uint8Array; mediaType: string }> {
+export async function synthesizeLong(text: string): Promise<{ bytes: Uint8Array; mediaType: string }> {
   // Bucățile se generează în paralel (ordinea rămâne cea a textului).
   const results = await Promise.all(splitText(text).map((part) => synthesize(part)))
   const chunks: Uint8Array[] = results.map((r) => r.audio.uint8Array)

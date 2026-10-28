@@ -25,19 +25,19 @@
 
 | Zonă Scratch | Unde |
 |--------------|------|
-| **Control:** `dacă … atunci` | L1 |
-| **Control:** `dacă … atunci … altfel` | L2 |
-| **Detectare:** culoare / personaj / margine | L3 |
-| **Detectare:** tastă / mouse + control fluid | L4 |
-| **Variabile:** scor, vieți | L5 |
-| **Operatori:** `+ −` și `< = >` (în `dacă`) | L6 |
-| **Control:** `forever` + `stop` (joc „aprins”) | L7 *(exemplu scurt deja în L1/L4)* |
-| **Evenimente:** mesaje (*broadcast*) | L8 |
-| Proiect final | L9 Vânătoarea de bile + L10 Galeria Logic Explorer |
+| **Detectare:** culoare, margine, poziție, direcție | L1 |
+| **Detectare:** mouse, distanță; **Aspect:** arată și ascunde | L2 |
+| **Detectare:** întreabă și răspuns; **Operatori:** text | L3 |
+| **Variabile:** creare, setare, modificare, afișare | L4 |
+| **Operatori:** matematică, număr aleator | L5 |
+| **Operatori:** comparații, logică; **Detectare:** cronometru | L6 |
+| **Extensia Stilou:** desen cu stiloul | L7 |
+| **Blocurile mele:** `Creează un bloc`, cu parametri | L8 |
+| Mini-proiect (scor, vieți, capcane, timp) | L9 |
+| Completare + prezentare, insigna Logic Explorer | L10 |
 
-**Regula dependențelor:** L1–L4 folosesc condiții tip **atinge / tastă** — **fără** operatori pe scor. La **L5**: variabile + exemplu doar `scor = 5` (victorie). `<` `>` `+` `−` pe îndelete la **L6**.
+**Regula dependențelor:** fiecare lecție folosește doar blocuri din lecțiile dinainte (M1 și L1–L8 din M2). L9 și L10 nu au blocuri noi.
 
-**Extensii:** nu în M2 (Muzică + Stilou = completare la animație în **M4 / L4**).
-
+**Blocuri mutate în M3 (jocuri):** clonele, listele și restul din `_blocuri-pe-lectii.md`.
 
 Modul 1: `../modul1/` · Modul 3: `../modul3/`

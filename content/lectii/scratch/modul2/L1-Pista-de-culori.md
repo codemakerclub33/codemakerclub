@@ -13,7 +13,7 @@ La finalul orei Mașinuța ta pleacă din garaj, ricoșează la marginea scenei 
 **Ținta orei (Complet):** personajul 2 (Mingea), cu cel puțin **8 blocuri diferite**, care pornește la semnalul Mașinuței și sare când atinge peretele roșu.
 
 ## De ce contează
-Într-un joc, personajele trebuie să **vadă** ce e în jurul lor: o culoare de pe pistă, marginea scenei, locul unde se află. Cu blocurile din <span style="color:#5CB1D1;font-weight:700">Detectare</span> (EN: *Sensing*) și din <span style="color:#4C97FF;font-weight:700">Mișcare</span> (EN: *Motion*) personajul decide singur ce face, fără să-i spui tu pas cu pas.
+Într-un joc, personajele trebuie să **vadă** ce e în jurul lor: o culoare de pe pistă, marginea scenei, locul unde se află. Cu blocurile din <span style="color:#5CB1D1;font-weight:700">Detectare</span> (EN: *Sensing*) și din <span style="color:#4C97FF;font-weight:700">Mișcare</span> (EN: *Motion*) personajul decide singur ce face, fără să îi spui tu pas cu pas.
 
 **În clasă:** la proiect ții mouse-ul departe de scenă cât rulează pista.
 
@@ -85,7 +85,7 @@ La finalul orei Mașinuța ta pleacă din garaj, ricoșează la marginea scenei 
 
 **Încearcă tu — unde sunt (2–3 min)**  
 - [ ] Ai bifat `poziția x` și vezi numărul pe scenă  
-- [ ] `spune (poziția x)` arată x-ul personajului  
+- [ ] `spune (poziția x)` arată poziția x a personajului  
 - [ ] Numărul se schimbă după ce personajul se mută  
 
 ### 4) Le punem împreună
@@ -102,7 +102,7 @@ La finalul orei Mașinuța ta pleacă din garaj, ricoșează la marginea scenei 
 2. **`culoarea ( ) atinge ( )?` nu merge** — prima culoare trebuie luată de pe **personaj**, nu de pe scenă.  
 3. **Mașinuța spune „Am ajuns acasă!” imediat** — pornește deja pe garajul verde. Mută Mașinuța mai departe de garaj, la `x` `-100`.  
 4. **Mașinuța merge cu roțile în sus** — lipsește `setează stilul de rotație` `[stânga-dreapta]`.  
-5. **Mingea nu mai simte roșul** — i-ai schimbat culoarea cu un efect. Pentru Minge nu folosești `modifică efectul [culoare]`.  
+5. **Mingea nu mai simte roșul** — ai schimbat culoarea personajului cu un efect. Pentru Minge nu folosești `modifică efectul [culoare]`.  
 6. **Mingea sau Fluturele nu pornesc** — mesajul din `când primesc` nu e același cu cel din `difuzează` (`start` și `pornire` sunt mesaje diferite).  
 7. **Fluturele vorbește deodată cu Mașinuța** — `difuzează final și așteaptă` trebuie pus **după** replica Mașinuței.  
 8. **Blocul cu colțuri nu intră** — blocurile din Detectare se pun doar în locul gol al lui `dacă`.  

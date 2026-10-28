@@ -4,7 +4,7 @@ Astăzi personajele văd culorile, se întorc la margine și își spun singure 
 
 Obiectivul. La finalul orei Mașinuța ta pleacă din garaj, ricoșează la marginea scenei și se întoarce acasă, recunoscând garajul după culoare. Minim: personajul unu, Mașinuța, cu cel puțin opt blocuri diferite. Complet: personajul doi, Mingea, cu cel puțin opt blocuri diferite, care pornește la semnalul Mașinuței și sare când atinge peretele roșu.
 
-De ce contează. Într-un joc, personajele trebuie să vadă ce e în jurul lor: o culoare de pe pistă, marginea scenei, locul unde se află. Cu blocurile din Detectare și din Mișcare personajul decide singur ce face, fără să-i spui tu pas cu pas. La proiect ții mouse-ul departe de scenă cât rulează pista.
+De ce contează. Într-un joc, personajele trebuie să vadă ce e în jurul lor: o culoare de pe pistă, marginea scenei, locul unde se află. Cu blocurile din Detectare și din Mișcare personajul decide singur ce face, fără să îi spui tu pas cu pas. La proiect ții mouse-ul departe de scenă cât rulează pista.
 
 Capitolele de azi sunt șase: Detectare, Mișcare, Control, Evenimente, Aspect și Sunet.
 
@@ -18,7 +18,7 @@ Al treilea pas pe ecran. Unde sunt, poziția și direcția. Poziția x, poziția
 
 Al patrulea pas pe ecran. Le punem împreună. În la infinit pui mergi, apoi dacă atinge marginea, ricoșează, apoi dacă atinge culoarea atunci. Când personajul atinge culoarea, face ce e înăuntrul lui dacă, iar stop totul poate închide povestea.
 
-Greșeli frecvente. Dacă atinge culoarea nu se întâmplă niciodată, culoarea din bloc nu e exact aceeași cu cea de pe scenă: alege din nou cu pipeta, direct de pe scenă. Dacă culoarea atinge culoarea nu merge, prima culoare trebuie luată de pe personaj, nu de pe scenă. Dacă Mașinuța spune Am ajuns acasă imediat, pornește deja pe garajul verde: mută Mașinuța mai departe de garaj, la x minus o sută. Dacă Mașinuța merge cu roțile în sus, lipsește setează stilul de rotație stânga dreapta. Dacă Mingea nu mai simte roșul, i-ai schimbat culoarea cu un efect: pentru Minge nu folosești modifică efectul culoare. Dacă Mingea sau Fluturele nu pornesc, mesajul din când primesc nu e același cu cel din difuzează: start și pornire sunt mesaje diferite. Dacă Fluturele vorbește deodată cu Mașinuța, difuzează final și așteaptă trebuie pus după replica Mașinuței. Dacă blocul cu colțuri nu intră, blocurile din Detectare se pun doar în locul gol al lui dacă. Dacă ai greșit numele la salvare, adaugă și numele de familie.
+Greșeli frecvente. Dacă atinge culoarea nu se întâmplă niciodată, culoarea din bloc nu e exact aceeași cu cea de pe scenă: alege din nou cu pipeta, direct de pe scenă. Dacă culoarea atinge culoarea nu merge, prima culoare trebuie luată de pe personaj, nu de pe scenă. Dacă Mașinuța spune Am ajuns acasă imediat, pornește deja pe garajul verde: mută Mașinuța mai departe de garaj, la x minus o sută. Dacă Mașinuța merge cu roțile în sus, lipsește setează stilul de rotație stânga dreapta. Dacă Mingea nu mai simte roșul, ai schimbat culoarea personajului cu un efect: pentru Minge nu folosești modifică efectul culoare. Dacă Mingea sau Fluturele nu pornesc, mesajul din când primesc nu e același cu cel din difuzează: start și pornire sunt mesaje diferite. Dacă Fluturele vorbește deodată cu Mașinuța, difuzează final și așteaptă trebuie pus după replica Mașinuței. Dacă blocul cu colțuri nu intră, blocurile din Detectare se pun doar în locul gol al lui dacă. Dacă ai greșit numele la salvare, adaugă și numele de familie.
 
 Proiectul de azi. Pista de culori.
 

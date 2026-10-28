@@ -81,7 +81,7 @@ Total blocuri noi: 53 (Mișcare 13, Evenimente 8, Aspect 13, Sunet 9, Control 8,
 - **De verificat (nemodificat, decizie amânată):** L1 (personajul 3 are 8) și L2 (Pasărea are 9) sunt sub minimul de 10 pentru personajul 3.
 
 ### Impact asupra Modulului 2
-M2 are acum lecții care se suprapun cu M1: `Dacă… atunci` (L1), `Dacă… altfel` (L2), `Forever și stop` (L7), `Mesaje / broadcast` (L8). M2 trebuie regândit după încheierea M1.
+Rezolvat: M2 a fost refăcut complet (vezi „Plan Modulul 2” mai jos). Nu se mai suprapune cu M1.
 
 ## Plan Modulul 2 (hotărât 24 oct 2026)
 M2 are 10 lecții și 51 de blocuri noi (logică, date, desen). Restul blocurilor din capturi merg la M3 (jocuri).

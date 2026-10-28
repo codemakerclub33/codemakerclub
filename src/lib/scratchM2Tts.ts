@@ -1,12 +1,13 @@
-import { experimental_generateSpeech as generateSpeech } from 'ai'
-import { gateway } from '@ai-sdk/gateway'
-import { google } from '@ai-sdk/google'
 import { readFileSync, existsSync } from 'fs'
 import path from 'path'
 import { createHash } from 'crypto'
 import { put, head } from '@vercel/blob'
 import { SCRATCH_M2_LESSON_COUNT } from '@/lib/scratchM2'
-import { speechJsonResponse, type ScratchM1SpeechResult } from '@/lib/scratchM1Tts'
+import {
+  speechJsonResponse,
+  synthesizeLong,
+  type ScratchM1SpeechResult,
+} from '@/lib/scratchM1Tts'
 
 const NARATIE_FILES: Record<number, string> = {
   1: 'L1-Pista-de-culori.naratie.txt',
@@ -78,27 +79,6 @@ async function saveAudio(
   return `data:${contentType};base64,${b64}`
 }
 
-async function synthesize(text: string) {
-  const useGoogle = Boolean(process.env.GOOGLE_GENERATIVE_AI_API_KEY)
-  if (useGoogle) {
-    return generateSpeech({
-      model: google.speech('gemini-2.5-pro-preview-tts'),
-      text,
-      voice: 'Aoede',
-      instructions:
-        'Citește în română, cald și natural, ca o învățătoare prietenoasă pentru copii de 8–10 ani. Pauze scurte între propoziții. Fără ton robotic.',
-    })
-  }
-  return generateSpeech({
-    model: gateway.speechModel('openai/tts-1-hd'),
-    text,
-    voice: 'nova',
-    outputFormat: 'mp3',
-    speed: 0.85,
-    language: 'ro',
-  })
-}
-
 export type ScratchM2SpeechResult = ScratchM1SpeechResult
 
 /** Resolve or generate TTS for Scratch Modul 2 lesson 1–10. */
@@ -124,9 +104,7 @@ export async function getScratchM2Speech(lesson: number): Promise<ScratchM2Speec
   if (cached) return { ok: true, url: cached, cached: true, lesson }
 
   try {
-    const result = await synthesize(text)
-    const bytes = result.audio.uint8Array
-    const mediaType = result.audio.mediaType || 'audio/mpeg'
+    const { bytes, mediaType } = await synthesizeLong(text)
     const url = await saveAudio(dir, hash, bytes, mediaType)
     return { ok: true, url, cached: false, lesson }
   } catch (err) {

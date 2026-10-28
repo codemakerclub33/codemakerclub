@@ -60,7 +60,7 @@ Un joc decide mereu: ai destule puncte? A trecut timpul? Ai apăsat și tasta, �
 | <span style="color:#CF63CF;font-weight:700">Sunet</span> | `pornește sunetul` |
 
 ### 1) Mai mare, mai mic, egal
-1. Din <span style="color:#59C059;font-weight:700">Operatori</span> iei <span style="color:#59C059;font-weight:700">( ) > ( )</span>, <span style="color:#59C059;font-weight:700">( ) < ( )</span> și <span style="color:#59C059;font-weight:700">( ) = ( )</span>: sunt **condiții** (blocuri cu colțuri). Se pun în `dacă`, în `repetă până când` sau în `așteaptă până când`
+1. Din <span style="color:#59C059;font-weight:700">Operatori</span> iei <span style="color:#59C059;font-weight:700">( ) &gt; ( )</span>, <span style="color:#59C059;font-weight:700">( ) &lt; ( )</span> și <span style="color:#59C059;font-weight:700">( ) = ( )</span>: sunt **condiții** (blocuri cu colțuri). Se pun în `dacă`, în `repetă până când` sau în `așteaptă până când`
 2. Într-un loc scrii un număr, iar în celălalt pui o valoare, de exemplu `cronometru`, `bani` sau `răspuns`
 3. <span style="color:#59C059;font-weight:700">( ) = ( )</span> merge și cu **text**: `răspuns = scratch`. Nu ține cont de litere mari sau mici, dar spațiul în plus **contează**
 4. Faci click pe condiție: apare **adevărat** sau **fals**

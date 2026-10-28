@@ -25,16 +25,16 @@
 
 | # | Titlu | Focus (~2h) |
 |---|--------|-------------|
-| 1 | Dacă… atunci | Decizii simple |
-| 2 | Dacă… altfel | Două căi |
-| 3 | Detectare: atingere | Culoare, sprite, margine |
-| 4 | Taste și mouse | Control jucător |
-| 5 | Variabile | Scor, vieți — creare și schimbare |
-| 6 | Operatori | Comparații și calcule vizuale |
-| 7 | Forever + stop | Bucle continue, oprire controlată |
-| 8 | Broadcast (mesaje) | Sprite-uri care „vorbesc” |
-| 9 | Mini-proiect: Labirint | Trecere de la start la finish |
-| 10 | Recap Modul 2 | Labirint + obstacol / bonus |
+| 1 | Pista de culori | Detectare după culoare și margine, stil de rotație |
+| 2 | Vânătoarea de fantome | Mouse, distanță, arată și ascunde |
+| 3 | Robotul prieten | Întreabă și răspuns, text (alătură, literă, lungime) |
+| 4 | Magazinul de dulciuri | Variabile: bani și dulciuri |
+| 5 | Zaruri și calcule | Operatori matematici, numere aleatoare |
+| 6 | Poarta secretă | Comparații, logică (și, sau, nu) și cronometru |
+| 7 | Atelierul de desen | Extensia Stilou: linii, culori, ștampilă |
+| 8 | Blocurile mele | Blocuri proprii cu parametri |
+| 9 | Vânătoarea de bile | Mini-proiect: scor, vieți, capcane și timp |
+| 10 | Galeria Logic Explorer | Completare + prezentare, insigna Logic Explorer |
 
 ## Modul 3 — Jocuri · badge: Game Builder
 
