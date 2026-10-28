@@ -1,0 +1,39 @@
+Lecția trei. Robotul prieten.
+
+Astăzi personajele întreabă, țin minte ce scrii tu și lucrează cu litere și cuvinte. Fișierul se numește Prenume, linie jos, Nume, linie jos, L trei.
+
+Obiectivul. La finalul orei Robotul tău te întreabă cum te cheamă, apoi îți spune numele, câte litere are, cu ce literă începe și dacă are litera a. Minim: personajul unu, Robotul, cu cel puțin opt blocuri diferite. Complet: personajul doi, Papagalul, cu cel puțin opt blocuri diferite, care apare la semnalul Robotului și repetă numele tău, literă cu literă.
+
+De ce contează. Jocurile și aplicațiile vorbesc cu cine le folosește: întreabă un nume, o vârstă, un cuvânt, apoi răspund. Pentru asta citești ce scrie copilul cu blocurile din Detectare și lucrezi cu text cu blocurile din Operatori. La proiect scrii răspunsul în căsuța de jos a scenei și apeși Enter.
+
+Capitolele de azi sunt șapte: Detectare, Operatori, Aspect, Control, Evenimente, Mișcare și Sunet.
+
+Ce face fiecare bloc nou. Întreabă și așteaptă: personajul pune o întrebare, iar scriptul așteaptă până scrii răspunsul și apeși Enter. Răspuns este o valoare: ultimul lucru scris de tine la o întrebare. Alătură lipește două texte sau numere într-un singur text. Litera din este o valoare: litera de pe locul dorit al cuvântului, iar unu este prima. Lungimea lui este o valoare: câte litere are un cuvânt. Conține este o condiție din Operatori, adevărată când textul din stânga conține ce scrii în dreapta.
+
+Primul pas pe ecran. Întreabă și răspuns. Din Detectare iei întreabă și așteaptă. În locul gol scrii întrebarea. Personajul pune întrebarea, iar jos pe scenă apare o căsuță. Scrii răspunsul și apeși Enter: abia atunci scriptul merge mai departe. Răspuns este o valoare, adică un bloc rotunjit: ultimul lucru scris de tine. Faci click pe el și vezi ce ai răspuns. La o nouă întrebare, răspunsul se înlocuiește: vechiul răspuns se pierde.
+
+Al doilea pas pe ecran. Alătură. Din Operatori iei alătură: lipește două texte într-un singur text. Îl pui în spune, iar în alătură pui un text și răspuns, de exemplu Salut, urmat de un spațiu, și răspuns. Textul nu primește spațiu singur: trebuie să scrii spațiul în el, adică Salut, virgulă, spațiu. Poți pune un alătură în altul, ca să lipești trei bucăți. Ghilimelele din lecție arată doar unde sunt spațiile: în Scratch nu le scrii.
+
+Al treilea pas pe ecran. Litera și lungimea. Litera din dă litera de pe locul dorit: unu este prima, doi a doua. În al doilea loc pui răspuns. Lungimea lui dă câte litere are cuvântul: de exemplu Ana are trei. Sunt valori: le pui în spune, direct sau într-un alătură.
+
+Al patrulea pas pe ecran. Conține și dacă altfel. Conține este o condiție cu colțuri: în stânga pui răspuns, în dreapta scrii o literă, de exemplu a. Nu ține cont dacă litera e mare sau mică: A mare și a mic sunt la fel. O pui în dacă atunci altfel: la atunci scrii ce spune dacă litera există, la altfel ce spune dacă nu există.
+
+Greșeli frecvente. Dacă personajul nu mai așteaptă, ai pus spune în loc de întreabă și așteaptă: doar întreabă așteaptă răspunsul. Dacă cuvintele sunt lipite, în textul din alătură lipsește spațiul: scrie Salut, virgulă, spațiu. Dacă spune un nume vechi, răspuns ține doar ultimul răspuns, iar a doua întrebare îl înlocuiește pe primul. Dacă conține nu merge, în stânga trebuie să fie răspuns, iar în dreapta litera scrisă în caseta mică. Dacă Papagalul tace la a treia literă, numele are mai puțin de trei litere: e în regulă. Dacă Papagalul nu apare, ascunde e la steag, dar lipsește arată după când primesc papagal. Dacă Copilul întreabă deodată cu Robotul, Robotul trebuie să difuzeze final abia după difuzează papagal și așteaptă. Dacă mesajul nu ajunge, numele din difuzează și din când primesc nu e același mesaj: papagal și papagalul sunt mesaje diferite. Dacă ai greșit numele la salvare, adaugă și numele de familie.
+
+Proiectul de azi. Robotul prieten.
+
+Minim înseamnă: decorul, cele trei personaje redenumite și Robotul cu cel puțin opt blocuri diferite. Complet înseamnă: minim, plus Papagalul, cu cel puțin opt blocuri diferite, care apare la semnalul Robotului și repetă numele, literă cu literă. Dacă rămâi în urmă, salvează la Minim. Nu e eșec.
+
+În proiect, primul pas, pentru Minim. Laboratorul și personajele. Alegi din bibliotecă un decor de laborator sau de atelier, fără să desenezi. Adaugi trei personaje și le redenumești exact: Robotul, un robot din bibliotecă, Papagalul, un papagal din bibliotecă, și Copilul, un personaj de copil. Pe Papagal adaugi în tab-ul Sunete un sunet. Papagalul și Copilul stau pe loc până le programezi la pasul trei și la bonus.
+
+În proiect, al doilea pas, pentru Minim. Robotul. Este un model: poți schimba textele, numerele și mesajele. La steag: mergi la x minus o sută douăzeci, y minus patruzeci. Apoi spune Bună, eu sunt Robi, două secunde. Apoi întreabă Cum te cheamă și așteaptă. Apoi gândește Hmm, să văd, două secunde. Apoi spune alătură Salut, spațiu, și răspuns, două secunde. Apoi spune alătură, alătură Numele tău are, spațiu, lungimea lui răspuns, și spațiu litere, trei secunde. Apoi spune alătură Începe cu litera, spațiu, și litera unu din răspuns, trei secunde. Apoi dacă răspuns conține a, atunci spune Ai litera a în nume, două secunde, altfel spune Nu ai litera a, două secunde. Apoi costumul următor. Apoi difuzează papagal și așteaptă. Apoi spune Bravo, Papagal, două secunde. La final, difuzează final. Fără Papagal și Copil, Robotul își termină povestea singur. Salvezi. Minim este gata când Robotul întreabă numele, apoi îți spune salutul, lungimea, prima literă și dacă ai litera a.
+
+În proiect, al treilea pas, pentru Complet. Papagalul. Are două scripturi, iar al doilea pornește când Robotul difuzează papagal. Primul, la steag: ascunde. Apoi setează stilul de rotație stânga dreapta. Apoi mergi la x o sută douăzeci, y minus patruzeci. Al doilea, când primesc papagal: arată. Apoi pornește sunetul. Apoi spune Cra, o secundă. Apoi spune alătură Salut, spațiu, și răspuns, două secunde. Apoi spune litera unu din răspuns, o secundă. Apoi costumul următor. Apoi spune litera doi din răspuns, o secundă. Apoi costumul următor. La final, spune litera trei din răspuns, o secundă. Salvezi din nou. Complet este gata când scrii numele, Robotul îți spune ce știe despre el, apoi Papagalul apare, te salută și îți spune literele, fără explicație cu vocea.
+
+Bonus. Al treilea personaj, Copilul detectiv, care, după Robot și Papagal, întreabă numele unui prieten și îl analizează. Primul script, la steag: ascunde. Al doilea, când primesc final: mergi la x zero, y minus patruzeci. Apoi arată. Apoi întreabă Cum se numește prietenul tău și așteaptă. Apoi spune alătură răspuns și spațiu este un nume frumos, două secunde. Apoi spune alătură Are, spațiu, alătură lungimea lui răspuns și spațiu litere, trei secunde. Apoi dacă răspuns conține a, atunci spune Are litera a, două secunde, altfel spune Nu are litera a, două secunde. La final, la infinit, înăuntru mergi la x mouse x, y mouse y și setează efectul culoare la distanța până la Robotul. Provocarea: pe Robot, înlocuiești litera a din conține cu o literă la alegere, de exemplu prima literă a numelui tău, și verifici că merge și pentru alte nume.
+
+Recapitulare. Întreabă și așteaptă pune întrebarea și așteaptă Enter, iar răspuns ține ultimul răspuns. Alătură lipește texte, iar spațiul trebuie scris în text. Litera din dă litera de pe locul dorit, iar lungimea lui dă câte litere are cuvântul. Conține este o condiție: o pui în dacă altfel. O a doua întrebare înlocuiește primul răspuns. Numele fișierului are prenumele și numele de familie.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă Papagalul, în același fișier. Dacă ai Complet, adaugi acasă Copilul detectiv, în același fișier. Dacă ai terminat și bonusul, faci o copie și schimbi povestea: alte întrebări, altă literă, alt personaj care răspunde.
+
+Succes cu robotul tău prieten.

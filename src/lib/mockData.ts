@@ -565,9 +565,9 @@ export const lectii = [
   ...genLectii('m17', [
     'Pista de culori',
     'Vânătoarea de fantome',
-    'Detectare: atingere',
-    'Taste și mouse',
-    'Variabile: scor și vieți',
+    'Robotul prieten',
+    'Magazinul de dulciuri',
+    'Zaruri și calcule',
     'Operatori',
     'Forever și stop',
     'Mesaje între personaje',

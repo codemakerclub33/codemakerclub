@@ -1,0 +1,39 @@
+Lecția patru. Magazinul de dulciuri.
+
+Astăzi personajele țin minte numere: banii pe care îi ai și dulciurile pe care le cumperi. Fișierul se numește Prenume, linie jos, Nume, linie jos, L patru.
+
+Obiectivul. La finalul orei Vânzătorul te întreabă câți lei ai, tu cumperi dulciuri apăsând pe ele, iar banii scad și dulciurile cresc, pe ecran. Minim: personajul unu, Vânzătorul, cu cel puțin opt blocuri diferite. Complet: personajul doi, Dulciurile, cu cel puțin opt blocuri diferite, care apar la semnalul Vânzătorului și schimbă banii și dulciurile la fiecare click.
+
+De ce contează. Scorul, viețile și banii unui joc sunt variabile: o cutie cu nume în care ții un număr și îl schimbi cât rulează proiectul. Cu blocurile din Variabile faci jocuri care numără, rețin și arată rezultatul. La proiect creezi variabilele înainte de a scrie scripturile.
+
+Capitolele de azi sunt opt: Variabile, Detectare, Operatori, Evenimente, Aspect, Control, Mișcare și Sunet.
+
+Ce face fiecare bloc nou. Creează o variabilă este un buton: faci o variabilă nouă, cu numele tău, de exemplu bani. Variabila ta este o valoare: numărul din variabilă acum, iar bifa de lângă ea îl arată pe scenă. Setează la pune în variabilă exact numărul scris, oricât avea înainte. Modifică cu adaugă la variabilă numărul scris, iar cu minus scade. Arată variabila o afișează pe scenă. Ascunde variabila o scoate de pe scenă.
+
+Primul pas pe ecran. Creează o variabilă. În Variabile apeși butonul Creează o variabilă. Scrii numele, de exemplu bani, alegi pentru toate personajele și apeși OK. Apare blocul rotund cu numele tău. Bifa de lângă el îl arată pe scenă. Variabila nu e pusă într-un script: o prinzi și o pui în locul unei valori, de exemplu în spune.
+
+Al doilea pas pe ecran. Setează și modifică. Setează la pune în variabilă exact numărul scris, oricât avea înainte. Îl folosești la început, ca să pornești de la același număr. Modifică cu adaugă numărul scris la ce era deja: cu unu crește cu unu, cu minus trei scade cu trei. Alegi variabila din lista blocului, iar numărul îl scrii în căsuță.
+
+Al treilea pas pe ecran. Arată și ascunde variabila. Arată variabila afișează variabila pe scenă, într-o căsuță. Ascunde variabila o scoate de pe scenă, dar numărul rămâne în variabilă: nu se pierde. Le pui în script: la început arăți variabila, la final o ascunzi.
+
+Al patrulea pas pe ecran. Variabile împreună cu ce știi. Pui răspuns în setează bani la: banii sunt ce scrii tu la întrebare. Pui variabila într-un alătură, ca să o spui în propoziție: spune alătură Mai ai, spațiu, și bani. Pui variabila în setează efectul culoare la: culoarea personajului se schimbă odată cu numărul.
+
+Greșeli frecvente. Dacă ceilalți nu văd variabila, ai creat variabila doar pentru un personaj: șterge variabila și creează una nouă, pentru toate personajele. Dacă numărul crește peste cel de la rularea trecută, lipsește setează dulciuri la zero la steag: fără el pornești de unde ai rămas. Dacă banii cresc în loc să scadă, la modifică bani cu ai scris trei, nu minus trei. Dacă variabila nu se vede pe scenă, bifa nu e pusă și nu ai arată variabila. Banii pot ajunge sub zero, pentru că nu verificăm încă dacă ai destui: e în regulă, la o lecție următoare învățăm cum. Dacă numele din bloc nu e cel creat, alege din lista blocului variabila care există, nu una veche. Dacă dulciurile nu apar, ascunde e la steag, dar lipsește arată după când primesc magazin. Dacă Vânzătorul se oprește prea devreme, nu apeși spațiu până nu ai terminat de cumpărat. Dacă mesajul nu ajunge, numele din difuzează și din când primesc nu e același mesaj: magazin și magazine sunt mesaje diferite. Dacă ai greșit numele la salvare, adaugă și numele de familie.
+
+Proiectul de azi. Magazinul de dulciuri.
+
+Minim înseamnă: decorul, personajele, variabilele și Vânzătorul cu cel puțin opt blocuri diferite. Complet înseamnă: minim, plus Dulciurile, cu cel puțin opt blocuri diferite, care apar la semnalul Vânzătorului și schimbă banii și dulciurile la fiecare click. Dacă rămâi în urmă, salvează la Minim. Nu e eșec.
+
+În proiect, primul pas, pentru Minim. Magazinul, personajele și variabilele. Alegi din bibliotecă un decor de magazin sau de cofetărie, fără să desenezi. Adaugi trei personaje și le redenumești exact: Vânzătorul, un personaj de om, Dulciurile, o prăjitură, o înghețată sau o bomboană, cu două costume, și Casa, o monedă sau un portofel. Pe Dulciuri și pe Casă adaugi în tab-ul Sunete câte un sunet. Creezi variabilele bani și dulciuri, pentru toate personajele.
+
+În proiect, al doilea pas, pentru Minim. Vânzătorul. Este un model: poți schimba textele, numerele și mesajele. Primul script, la steag: mergi la x minus o sută douăzeci, y minus patruzeci. Apoi spune Bun venit la dulciuri, două secunde. Apoi întreabă Câți lei ai și așteaptă. Apoi setează bani la răspuns. Apoi setează dulciuri la zero. Apoi arată variabila bani. Apoi arată variabila dulciuri. Apoi spune Un dulce costă trei lei, apasă pe el, trei secunde. La final, difuzează magazin. Al doilea script, când tasta spațiu este apăsată: spune alătură, alătură Ai cumpărat, spațiu, dulciuri, și spațiu dulciuri, punct, trei secunde. Apoi spune alătură, alătură Mai ai, spațiu, bani, și spațiu lei, punct, trei secunde. Apoi ascunde variabila bani. Apoi difuzează final și așteaptă. La final, stop totul. Fără Dulciuri și Casă, Vânzătorul își termină povestea singur. Salvezi. Minim este gata când Vânzătorul întreabă câți lei ai, arată variabilele pe scenă, iar la spațiu spune ce ai cumpărat și câți lei îți mai rămân.
+
+În proiect, al treilea pas, pentru Complet. Dulciurile. Au patru scripturi, iar al doilea pornește când Vânzătorul difuzează magazin. Primul, la steag: ascunde. Apoi mergi la x o sută douăzeci, y minus patruzeci. Al doilea, când primesc magazin: arată. Al treilea, când se dă click pe acest personaj: modifică bani cu minus trei. Apoi modifică dulciuri cu unu. Apoi pornește sunetul. Apoi spune Mmm, o secundă. La final, costumul următor. Al patrulea, când primesc final: ascunde. Salvezi din nou. Complet este gata când introduci banii, Vânzătorul îți arată prețul, apeși pe dulciuri de câteva ori și vezi cum scad banii și cresc dulciurile, apoi spațiul încheie povestea, fără explicație cu vocea.
+
+Bonus. Al treilea personaj, Casa de bani, care îți dă lei înapoi când apeși pe ea. Primul script, la steag: ascunde. Apoi mergi la x zero, y o sută zece. Al doilea, când primesc magazin: arată. Apoi spune Apasă pe mine pentru lei, două secunde. Apoi la infinit, înăuntru setează efectul culoare la bani. Al treilea, când se dă click pe acest personaj: modifică bani cu cinci. Apoi pornește sunetul. Apoi modifică mărimea cu zece. Apoi așteaptă zero virgulă doi secunde. La final, setează mărimea la o sută la sută. Al patrulea, când primesc final: ascunde. Provocarea: creezi a treia variabilă, cheltuit, o arăți la steag și o modifici cu trei la fiecare dulce cumpărat, în scriptul Dulciurilor, apoi o spui și la final.
+
+Recapitulare. O variabilă e o cutie cu nume în care ții un număr; o creezi cu Creează o variabilă, pentru toate personajele. Setează la pune exact numărul, iar modifică cu adaugă la el: cu minus scade. La început de proiect folosești setează, ca să pornești de la același număr. Arată variabila și ascunde variabila afișează sau scot variabila de pe scenă, iar numărul rămâne. Variabila se poate pune în spune, în alătură și în setează efectul. Numele fișierului are prenumele și numele de familie.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă Dulciurile, în același fișier. Dacă ai Complet, adaugi acasă Casa de bani, în același fișier. Dacă ai terminat și bonusul, faci o copie și schimbi povestea: alt magazin, alte prețuri, altă variabilă.
+
+Succes cu magazinul tău de dulciuri.

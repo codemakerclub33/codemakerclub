@@ -125,7 +125,7 @@ Cei rapizi: Complet, apoi Bonus.
 
 ### Pasul 1 — Pista și garajul *(Minim)*
 Pe scenă, în tab-ul **Decoruri**, desenezi decorul `Pista`: un fundal gri (unealta **Dreptunghi**, umplut) și, pe marginea din **stânga**, o bandă **verde** îngustă, cât un deget de lată: este **garajul**. Garajul trebuie să fie doar verde, fără alte desene peste.  
-Redenumești personajele: `Mașinuța`, `Mingea` și `Fluturele`. Mașinuța: alegi un personaj de tip mașină. Mingea: o minge de **o singură culoare** (de exemplu mingea albastră). Fluturele: personajul `Butterfly`, cu 2 costume. Pe Minge și pe Fluture le adaugi în tab-ul **Sunete** câte un sunet.
+Redenumești personajele: `Mașinuța`, `Mingea` și `Fluturele`. Mașinuța: alegi un personaj de tip mașină. Mingea: o minge de **o singură culoare** (de exemplu mingea albastră). Fluturele: un fluture din bibliotecă, cu cel puțin 2 costume. Pe Minge și pe Fluture le adaugi în tab-ul **Sunete** câte un sunet.
 
 - [ ] Decorul se numește `Pista`  
 - [ ] Banda verde e în stânga, îngustă  

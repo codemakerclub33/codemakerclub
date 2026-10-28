@@ -10,9 +10,9 @@
 |---|--------|--------|
 | 1 | [L1-Pista-de-culori.md](./L1-Pista-de-culori.md) | Pista de culori |
 | 2 | [L2-Vanatoarea-de-fantome.md](./L2-Vanatoarea-de-fantome.md) | Vânătoarea de fantome |
-| 3 | [L3-Detectare-atingere.md](./L3-Detectare-atingere.md) | Detectare: atingere |
-| 4 | [L4-Taste-si-mouse.md](./L4-Taste-si-mouse.md) | Taste și mouse |
-| 5 | [L5-Variabile-scor-vieti.md](./L5-Variabile-scor-vieti.md) | Variabile: scor și vieți |
+| 3 | [L3-Robotul-prieten.md](./L3-Robotul-prieten.md) | Robotul prieten |
+| 4 | [L4-Magazinul-de-dulciuri.md](./L4-Magazinul-de-dulciuri.md) | Magazinul de dulciuri |
+| 5 | [L5-Zaruri-si-calcule.md](./L5-Zaruri-si-calcule.md) | Zaruri și calcule |
 | 6 | [L6-Operatori.md](./L6-Operatori.md) | Operatori |
 | 7 | [L7-Forever-si-stop.md](./L7-Forever-si-stop.md) | Forever și stop |
 | 8 | [L8-Mesaje-broadcast.md](./L8-Mesaje-broadcast.md) | Mesaje între personaje |
