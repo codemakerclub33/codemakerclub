@@ -9,8 +9,8 @@
 
 ## Obiectiv
 La finalul orei ai un joc: Astronautul te întreabă pe ce planetă pariezi, patru planete aleargă prin spațiu, iar lista `clasament` arată ordinea sosirii. Dacă planeta ta ajunge prima, scorul crește. Planetele din joc sunt primele patru de la Soare: **Mercur, Venus, Terra și Marte**.  
-**Minim:** personajul 1 (Mercur) cu cel puțin **8 blocuri diferite**.  
-**Ținta orei (Complet):** personajul 2 (Astronautul), cu cel puțin **8 blocuri diferite**, care pune pariul și pornește cursa, plus încă trei planete (Venus, Terra, Marte) care dau scorul.
+**Minim:** personajul 1 (Mercur), cu scriptul întreg, și personajul 2 (Astronautul), cu **2 scripturi**.  
+**Ținta orei (Complet):** încă trei planete (Venus, Terra, Marte), fiecare cu scriptul ei întreg, care aleargă, se scriu în listă și dau scorul.
 
 ## De ce contează
 Un joc ține minte lucruri: cine a ajuns primul, cine a câștigat, ce ai strâns. O **variabilă** ține minte **o singură** valoare, de exemplu `scor`. O **listă** ține minte **mai multe**, una după alta, ca un clasament sau un caiet. Cu blocurile din <span style="color:#FF8C1A;font-weight:700">Variabile</span> (EN: *Variables*) creezi o listă, adaugi în ea, o arăți, o ascunzi și o golești.
@@ -124,10 +124,13 @@ Salvat: `Prenume_Nume_L2`
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | **Pasul 1 + Pasul 2** — spațiul, variabilele, lista + **Mercur** cu ≥ 8 blocuri diferite: aleargă și se scrie singur în `clasament` |
-| **Complet (ținta orei)** | Minim + **Astronautul** cu ≥ 8 blocuri diferite, care pune pariul și pornește cursa, plus **Venus, Terra, Marte**, care aleargă, se scriu în listă și dau scorul |
+| **Minim („am reușit”)** | **Pasul 1 + Pasul 2 + Pasul 3**: spațiul, variabilele, lista, **Mercur** cu scriptul întreg și **Astronautul** cu cele **2 scripturi**: pariezi, pornești cursa, Mercur aleargă, se scrie în listă și dă scorul |
+| **Complet (ținta orei)** | Minim + **Pasul 4**: **Venus, Terra și Marte**, fiecare cu scriptul lui întreg. Cursa are patru planete |
+| **Bonus** | **Pasul 5**: **Soarele**, cu **3 scripturi**. Scripturile celorlalte personaje nu se mai schimbă |
 
-Dacă rămâi în urmă: salvează la **Minim**. Nu e eșec.  
+Fiecare personaj are scripturile lui **întregi**, de la început. Nu se completează nimic după aceea.
+
+Dacă rămâi în urmă: salvează ce ai. Nu e eșec.  
 Cei rapizi: Complet, apoi Bonus.
 
 ### Pasul 1 — Spațiul, variabilele și lista *(Minim)*
@@ -137,47 +140,10 @@ Cei rapizi: Complet, apoi Bonus.
 
 - [ ] Decorul `Stars`  
 - [ ] Personajul se numește `Mercur` și e un cerc gri, mic  
-- [ ] Variabilele `loc` și `scor` și lista `clasament` sunt **pentru toate personajele**  
+- [ ] Variabilele `loc` și `scor` și lista `clasament` sunt **pentru toate personajele**
 
-### Pasul 2 — Mercur *(Minim)*
-Ordinea e un **model**: poți schimba numerele și locul de start. Mercur are **un script**:
-
-<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
-<span style="color:#FF8C1A;font-weight:700">șterge tot din</span> `[clasament]`  
-<span style="color:#FF8C1A;font-weight:700">setează loc la</span> `0`  
-<span style="color:#4C97FF;font-weight:700">mergi la x:</span> `-200` <span style="color:#4C97FF;font-weight:700">y:</span> `120`  
-<span style="color:#FFAB19;font-weight:700">așteaptă</span> `1` secundă  
-<span style="color:#FFAB19;font-weight:700">repetă până când</span> <span style="color:#59C059;font-weight:700">&lt;</span><span style="color:#4C97FF;font-weight:700">(poziția x)</span> <span style="color:#59C059;font-weight:700">&gt;</span> `200` <span style="color:#59C059;font-weight:700">&gt;</span>  
-↳ <span style="color:#4C97FF;font-weight:700">modifică x cu</span> <span style="color:#59C059;font-weight:700">(alege aleator între</span> `1` <span style="color:#59C059;font-weight:700">și</span> `4`<span style="color:#59C059;font-weight:700">)</span>  
-<span style="color:#FF8C1A;font-weight:700">modifică loc cu</span> `1`  
-<span style="color:#FF8C1A;font-weight:700">adaugă</span> <span style="color:#59C059;font-weight:700">(alătură</span> <span style="color:#FF8C1A;font-weight:700">(loc)</span> `. Mercur` <span style="color:#59C059;font-weight:700">)</span> <span style="color:#FF8C1A;font-weight:700">la</span> `[clasament]`  
-<span style="color:#9966FF;font-weight:700">spune</span> `Am ajuns!` <span style="color:#9966FF;font-weight:700">pentru</span> `2` secunde  
-
-- [ ] Lista e goală când începe cursa  
-- [ ] Mercur pleacă din stânga și aleargă spre dreapta, cu viteză diferită la fiecare cursă  
-- [ ] La sosire apare în listă: `1. Mercur`  
-- [ ] Spune „Am ajuns!”  
-- [ ] Salvat: `Prenume_Nume_L2`  
-
-**→ Minim când:** apeși pe steag, Mercur aleargă până în dreapta și apare scris în listă cu locul `1`.
-
-### Pasul 3 — Astronautul și celelalte planete *(Complet)*
-**Astronautul:** adaugi din bibliotecă un personaj de om sau o rachetă (`Rocketship`) și îl redenumești `Astronautul`. Are **2 scripturi**:
-
-<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
-<span style="color:#4C97FF;font-weight:700">mergi la x:</span> `-180` <span style="color:#4C97FF;font-weight:700">y:</span> `-140`  
-<span style="color:#FF8C1A;font-weight:700">setează scor la</span> `0`  
-<span style="color:#FF8C1A;font-weight:700">arată lista</span> `[clasament]`  
-<span style="color:#5CB1D1;font-weight:700">întreabă</span> `Pe ce planetă pariezi? Mercur, Venus, Terra sau Marte` <span style="color:#5CB1D1;font-weight:700">și așteaptă</span>  
-<span style="color:#E6A800;font-weight:700">difuzează</span> `start`  
-<span style="color:#9966FF;font-weight:700">spune</span> `Start!` <span style="color:#9966FF;font-weight:700">pentru</span> `1` secundă  
-
-<span style="color:#E6A800;font-weight:700">când tasta</span> `[spațiu]` <span style="color:#E6A800;font-weight:700">este apăsată</span>  
-<span style="color:#5CB1D1;font-weight:700">întreabă</span> `Runda nouă! Pe ce planetă pariezi?` <span style="color:#5CB1D1;font-weight:700">și așteaptă</span>  
-<span style="color:#E6A800;font-weight:700">difuzează</span> `start`  
-<span style="color:#9966FF;font-weight:700">spune</span> `Start!` <span style="color:#9966FF;font-weight:700">pentru</span> `1` secundă  
-
-**Mercur se schimbă puțin.** Nu mai pornește de la steag, ci când Astronautul difuzează `start`, și primește scorul. Schimbi blocul de pornire și adaugi un `dacă` înainte de `spune`:
+### Pasul 2 — Mercur, scriptul întreg *(Minim)*
+Ordinea e un **model**: poți schimba numerele și locul de start. Mercur are **un singur script**. Pornește când Astronautul difuzează `start`, deci merge după ce faci și Pasul 3:
 
 <span style="color:#E6A800;font-weight:700">când primesc</span> `start`  
 <span style="color:#FF8C1A;font-weight:700">șterge tot din</span> `[clasament]`  
@@ -190,16 +156,88 @@ Ordinea e un **model**: poți schimba numerele și locul de start. Mercur are **
 <span style="color:#FF8C1A;font-weight:700">adaugă</span> <span style="color:#59C059;font-weight:700">(alătură</span> <span style="color:#FF8C1A;font-weight:700">(loc)</span> `. Mercur` <span style="color:#59C059;font-weight:700">)</span> <span style="color:#FF8C1A;font-weight:700">la</span> `[clasament]`  
 <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#59C059;font-weight:700">&lt;&lt;</span><span style="color:#FF8C1A;font-weight:700">(loc)</span> <span style="color:#59C059;font-weight:700">=</span> `1` <span style="color:#59C059;font-weight:700">&gt; și &lt;</span><span style="color:#5CB1D1;font-weight:700">(răspuns)</span> <span style="color:#59C059;font-weight:700">=</span> `Mercur` <span style="color:#59C059;font-weight:700">&gt;&gt;</span> <span style="color:#FFAB19;font-weight:700">atunci</span>  
 &nbsp;&nbsp;&nbsp;&nbsp;→ <span style="color:#FF8C1A;font-weight:700">modifică scor cu</span> `1`  
-<span style="color:#9966FF;font-weight:700">spune</span> `Am ajuns!` <span style="color:#9966FF;font-weight:700">pentru</span> `2` secunde  
+<span style="color:#9966FF;font-weight:700">spune</span> `Am ajuns!` <span style="color:#9966FF;font-weight:700">pentru</span> `2` secunde
 
-**Venus, Terra, Marte** sunt trei copii ale lui Mercur: în lista de personaje faci click dreapta pe `Mercur`, alegi **Duplică**, de trei ori. La fiecare copie schimbi doar patru lucruri:
-1. numele personajului
-2. culoarea, cu **Umple** (Venus portocaliu, Terra albastru-verde, Marte roșu)
-3. `y` din `mergi la x: y:` (de exemplu `60`, `0` și `-60`), ca planetele să nu stea una peste alta
-4. numele din `(alătură (loc) (. Mercur))` și din `(răspuns) = Mercur`, care devin numele planetei
+- [ ] Lista e goală când începe cursa  
+- [ ] Mercur pleacă din stânga și aleargă spre dreapta, cu viteză diferită la fiecare cursă  
+- [ ] La sosire apare în listă: `1. Mercur`  
+- [ ] Dacă ai pariat pe Mercur și a ajuns primul, scorul crește cu unu  
+- [ ] Spune „Am ajuns!”  
+- [ ] Salvat: `Prenume_Nume_L2`  
+
+### Pasul 3 — Astronautul *(Minim)*
+**Astronautul:** adaugi din bibliotecă un personaj de om sau o rachetă (`Rocketship`) și îl redenumești `Astronautul`. Are **2 scripturi** complete:
+
+<span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#4C97FF;font-weight:700">mergi la x:</span> `-180` <span style="color:#4C97FF;font-weight:700">y:</span> `-140`  
+<span style="color:#FF8C1A;font-weight:700">setează scor la</span> `0`  
+<span style="color:#FF8C1A;font-weight:700">arată lista</span> `[clasament]`  
+<span style="color:#5CB1D1;font-weight:700">întreabă</span> `Pe ce planetă pariezi? Mercur, Venus, Terra sau Marte` <span style="color:#5CB1D1;font-weight:700">și așteaptă</span>  
+<span style="color:#E6A800;font-weight:700">difuzează</span> `start`  
+<span style="color:#9966FF;font-weight:700">spune</span> `Start!` <span style="color:#9966FF;font-weight:700">pentru</span> `1` secundă  
+
+<span style="color:#E6A800;font-weight:700">când tasta</span> `[spațiu]` <span style="color:#E6A800;font-weight:700">este apăsată</span>  
+<span style="color:#5CB1D1;font-weight:700">întreabă</span> `Runda nouă! Pe ce planetă pariezi?` <span style="color:#5CB1D1;font-weight:700">și așteaptă</span>  
+<span style="color:#E6A800;font-weight:700">difuzează</span> `start`  
+<span style="color:#9966FF;font-weight:700">spune</span> `Start!` <span style="color:#9966FF;font-weight:700">pentru</span> `1` secundă
 
 - [ ] Astronautul întreabă pe ce planetă pariezi și pornește cursa  
+- [ ] Mercur aleargă și apare în listă, la locul `1`  
+- [ ] La spațiu începe o rundă nouă, iar scorul rămâne  
+- [ ] Salvat din nou: `Prenume_Nume_L2`  
+
+**→ Minim când:** apeși pe steag, pariezi pe Mercur, Mercur aleargă până în dreapta, apare scris în listă cu locul `1`, iar scorul crește dacă ai pariat pe el.
+
+### Pasul 4 — Venus, Terra și Marte *(Complet)*
+Fiecare planetă e un personaj nou: **Desenează** un cerc mic, colorat cu **Umple** (Venus portocaliu, Terra albastru-verde, Marte roșu), apoi îl redenumești. Ca să scrii mai repede, poți trage scriptul lui Mercur peste personajul planetei, dar scriptul final trebuie să arate **exact** ca cel de mai jos, cu numele și `y`-ul planetei. Fiecare planetă are **un singur script**, complet:
+
+**Venus**
+
+<span style="color:#E6A800;font-weight:700">când primesc</span> `start`  
+<span style="color:#FF8C1A;font-weight:700">șterge tot din</span> `[clasament]`  
+<span style="color:#FF8C1A;font-weight:700">setează loc la</span> `0`  
+<span style="color:#4C97FF;font-weight:700">mergi la x:</span> `-200` <span style="color:#4C97FF;font-weight:700">y:</span> `60`  
+<span style="color:#FFAB19;font-weight:700">așteaptă</span> `1` secundă  
+<span style="color:#FFAB19;font-weight:700">repetă până când</span> <span style="color:#59C059;font-weight:700">&lt;</span><span style="color:#4C97FF;font-weight:700">(poziția x)</span> <span style="color:#59C059;font-weight:700">&gt;</span> `200` <span style="color:#59C059;font-weight:700">&gt;</span>  
+↳ <span style="color:#4C97FF;font-weight:700">modifică x cu</span> <span style="color:#59C059;font-weight:700">(alege aleator între</span> `1` <span style="color:#59C059;font-weight:700">și</span> `4`<span style="color:#59C059;font-weight:700">)</span>  
+<span style="color:#FF8C1A;font-weight:700">modifică loc cu</span> `1`  
+<span style="color:#FF8C1A;font-weight:700">adaugă</span> <span style="color:#59C059;font-weight:700">(alătură</span> <span style="color:#FF8C1A;font-weight:700">(loc)</span> `. Venus` <span style="color:#59C059;font-weight:700">)</span> <span style="color:#FF8C1A;font-weight:700">la</span> `[clasament]`  
+<span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#59C059;font-weight:700">&lt;&lt;</span><span style="color:#FF8C1A;font-weight:700">(loc)</span> <span style="color:#59C059;font-weight:700">=</span> `1` <span style="color:#59C059;font-weight:700">&gt; și &lt;</span><span style="color:#5CB1D1;font-weight:700">(răspuns)</span> <span style="color:#59C059;font-weight:700">=</span> `Venus` <span style="color:#59C059;font-weight:700">&gt;&gt;</span> <span style="color:#FFAB19;font-weight:700">atunci</span>  
+&nbsp;&nbsp;&nbsp;&nbsp;→ <span style="color:#FF8C1A;font-weight:700">modifică scor cu</span> `1`  
+<span style="color:#9966FF;font-weight:700">spune</span> `Am ajuns!` <span style="color:#9966FF;font-weight:700">pentru</span> `2` secunde
+
+**Terra**
+
+<span style="color:#E6A800;font-weight:700">când primesc</span> `start`  
+<span style="color:#FF8C1A;font-weight:700">șterge tot din</span> `[clasament]`  
+<span style="color:#FF8C1A;font-weight:700">setează loc la</span> `0`  
+<span style="color:#4C97FF;font-weight:700">mergi la x:</span> `-200` <span style="color:#4C97FF;font-weight:700">y:</span> `0`  
+<span style="color:#FFAB19;font-weight:700">așteaptă</span> `1` secundă  
+<span style="color:#FFAB19;font-weight:700">repetă până când</span> <span style="color:#59C059;font-weight:700">&lt;</span><span style="color:#4C97FF;font-weight:700">(poziția x)</span> <span style="color:#59C059;font-weight:700">&gt;</span> `200` <span style="color:#59C059;font-weight:700">&gt;</span>  
+↳ <span style="color:#4C97FF;font-weight:700">modifică x cu</span> <span style="color:#59C059;font-weight:700">(alege aleator între</span> `1` <span style="color:#59C059;font-weight:700">și</span> `4`<span style="color:#59C059;font-weight:700">)</span>  
+<span style="color:#FF8C1A;font-weight:700">modifică loc cu</span> `1`  
+<span style="color:#FF8C1A;font-weight:700">adaugă</span> <span style="color:#59C059;font-weight:700">(alătură</span> <span style="color:#FF8C1A;font-weight:700">(loc)</span> `. Terra` <span style="color:#59C059;font-weight:700">)</span> <span style="color:#FF8C1A;font-weight:700">la</span> `[clasament]`  
+<span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#59C059;font-weight:700">&lt;&lt;</span><span style="color:#FF8C1A;font-weight:700">(loc)</span> <span style="color:#59C059;font-weight:700">=</span> `1` <span style="color:#59C059;font-weight:700">&gt; și &lt;</span><span style="color:#5CB1D1;font-weight:700">(răspuns)</span> <span style="color:#59C059;font-weight:700">=</span> `Terra` <span style="color:#59C059;font-weight:700">&gt;&gt;</span> <span style="color:#FFAB19;font-weight:700">atunci</span>  
+&nbsp;&nbsp;&nbsp;&nbsp;→ <span style="color:#FF8C1A;font-weight:700">modifică scor cu</span> `1`  
+<span style="color:#9966FF;font-weight:700">spune</span> `Am ajuns!` <span style="color:#9966FF;font-weight:700">pentru</span> `2` secunde
+
+**Marte**
+
+<span style="color:#E6A800;font-weight:700">când primesc</span> `start`  
+<span style="color:#FF8C1A;font-weight:700">șterge tot din</span> `[clasament]`  
+<span style="color:#FF8C1A;font-weight:700">setează loc la</span> `0`  
+<span style="color:#4C97FF;font-weight:700">mergi la x:</span> `-200` <span style="color:#4C97FF;font-weight:700">y:</span> `-60`  
+<span style="color:#FFAB19;font-weight:700">așteaptă</span> `1` secundă  
+<span style="color:#FFAB19;font-weight:700">repetă până când</span> <span style="color:#59C059;font-weight:700">&lt;</span><span style="color:#4C97FF;font-weight:700">(poziția x)</span> <span style="color:#59C059;font-weight:700">&gt;</span> `200` <span style="color:#59C059;font-weight:700">&gt;</span>  
+↳ <span style="color:#4C97FF;font-weight:700">modifică x cu</span> <span style="color:#59C059;font-weight:700">(alege aleator între</span> `1` <span style="color:#59C059;font-weight:700">și</span> `4`<span style="color:#59C059;font-weight:700">)</span>  
+<span style="color:#FF8C1A;font-weight:700">modifică loc cu</span> `1`  
+<span style="color:#FF8C1A;font-weight:700">adaugă</span> <span style="color:#59C059;font-weight:700">(alătură</span> <span style="color:#FF8C1A;font-weight:700">(loc)</span> `. Marte` <span style="color:#59C059;font-weight:700">)</span> <span style="color:#FF8C1A;font-weight:700">la</span> `[clasament]`  
+<span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#59C059;font-weight:700">&lt;&lt;</span><span style="color:#FF8C1A;font-weight:700">(loc)</span> <span style="color:#59C059;font-weight:700">=</span> `1` <span style="color:#59C059;font-weight:700">&gt; și &lt;</span><span style="color:#5CB1D1;font-weight:700">(răspuns)</span> <span style="color:#59C059;font-weight:700">=</span> `Marte` <span style="color:#59C059;font-weight:700">&gt;&gt;</span> <span style="color:#FFAB19;font-weight:700">atunci</span>  
+&nbsp;&nbsp;&nbsp;&nbsp;→ <span style="color:#FF8C1A;font-weight:700">modifică scor cu</span> `1`  
+<span style="color:#9966FF;font-weight:700">spune</span> `Am ajuns!` <span style="color:#9966FF;font-weight:700">pentru</span> `2` secunde
+
 - [ ] Cele patru planete pleacă toate odată, cu viteze diferite  
+- [ ] Planetele nu stau una peste alta (`y`: Mercur `120`, Venus `60`, Terra `0`, Marte `-60`)  
 - [ ] Planetele se scriu în listă în ordinea sosirii: `1. …`, `2. …`, `3. …`, `4. …`  
 - [ ] Dacă ai pariat pe câștigătoare, scorul crește cu unu  
 - [ ] La spațiu începe o rundă nouă, iar scorul rămâne  
@@ -210,7 +248,8 @@ Ordinea e un **model**: poți schimba numerele și locul de start. Mercur are **
 ---
 
 ## Bonus (dacă ai terminat Complet)
-- [ ] **Al 3-lea personaj** (Soarele), care se rotește și arată sau ascunde lista cu două taste. Adaugi din bibliotecă un personaj rotund, galben (sau desenezi un cerc), îl redenumești `Soarele` și îi pui **3 scripturi**:
+### Pasul 5 — Soarele *(★★★)*
+Al 3-lea personaj se rotește și arată sau ascunde lista cu două taste. Adaugi din bibliotecă un personaj rotund, galben (sau desenezi un cerc), îl redenumești `Soarele` și îi pui **3 scripturi** complete:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
 <span style="color:#4C97FF;font-weight:700">mergi la x:</span> `0` <span style="color:#4C97FF;font-weight:700">y:</span> `-100`  
@@ -224,7 +263,7 @@ Ordinea e un **model**: poți schimba numerele și locul de start. Mercur are **
 <span style="color:#FF8C1A;font-weight:700">arată lista</span> `[clasament]`  
 
 <span style="color:#E6A800;font-weight:700">când tasta</span> `[c]` <span style="color:#E6A800;font-weight:700">este apăsată</span>  
-<span style="color:#FF8C1A;font-weight:700">ascunde lista</span> `[clasament]`  
+<span style="color:#FF8C1A;font-weight:700">ascunde lista</span> `[clasament]`
 
 - [ ] ★★★ **Provocare:** adaugi o a cincea planetă, Jupiter. Faci o copie a lui Mercur, schimbi numele, culoarea, `y` și numele din `alătură` și din `răspuns = …`. Nu schimbi nimic la Astronaut, dar pariul îl poți scrie pe orice planetă din cursă
 
@@ -258,6 +297,6 @@ când tasta [c] → `ascunde lista [clasament]`
 - De ce `șterge tot din [clasament]` e la începutul fiecărei curse?
 
 ## Temă (opțional)
-- Dacă ai doar Minim: adaugi acasă Astronautul, Venus, Terra și Marte, în același `Prenume_Nume_L2`.  
-- Dacă ai Complet: adaugi acasă Soarele, în același `Prenume_Nume_L2`.  
+- Dacă ai doar Minim: adaugi acasă Venus, Terra și Marte (Pasul 4), în același `Prenume_Nume_L2`.  
+- Dacă ai Complet: adaugi acasă Soarele (Pasul 5), în același `Prenume_Nume_L2`.  
 - Dacă ai terminat și Bonusul: schimbi cursa într-o cursă de animale sau de mașini, cu altă listă și alt decor.

@@ -124,7 +124,7 @@ Salvat: `Prenume_Nume_L3`
 | | Ce trebuie |
 |--|------------|
 | **Minim („am reușit”)** | **Pasul 1 + Pasul 2** — decorul, personajele, variabilele + **Gândacul** cu ≥ 8 blocuri diferite: creează clone, coboară spre prăjitură și dă puncte la click |
-| **Complet (ținta orei)** | Minim + **Prăjitura** cu ≥ 8 blocuri diferite, care ține viețile și spune dacă ai salvat picnicul sau ai pierdut |
+| **Complet (ținta orei)** | Minim + **Prăjitura** cu ≥ 8 blocuri diferite, care ține viețile și spune dacă ai salvat picnicul sau ai pierdut. Scriptul Gândacului nu se mai schimbă |
 
 Dacă rămâi în urmă: salvează la **Minim**. Nu e eșec.  
 Cei rapizi: Complet, apoi Bonus.
@@ -140,7 +140,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Variabilele `scor` și `vieți` sunt **pentru toate personajele**  
 
 ### Pasul 2 — Gândacul *(Minim)*
-Ordinea e un **model**: poți schimba numerele și timpii. Gândacul are **3 scripturi**:
+Ordinea e un **model**: poți schimba numerele și timpii. Gândacul are **4 scripturi**, toate complete. Al patrulea ajunge la toate clonele când primesc mesajul `ploaie`: îl folosește Norul din Bonus, iar fără Nor nu face nimic. Scriptul clonei scade o viață când gândacul ajunge jos: viețile le ține Prăjitura, la Pasul 3:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
 <span style="color:#9966FF;font-weight:700">ascunde</span>  
@@ -153,43 +153,38 @@ Ordinea e un **model**: poți schimba numerele și timpii. Gândacul are **3 scr
 <span style="color:#4C97FF;font-weight:700">mergi la x:</span> <span style="color:#59C059;font-weight:700">(alege aleator între</span> `-200` <span style="color:#59C059;font-weight:700">și</span> `200`<span style="color:#59C059;font-weight:700">)</span> <span style="color:#4C97FF;font-weight:700">y:</span> `170`  
 <span style="color:#9966FF;font-weight:700">arată</span>  
 <span style="color:#4C97FF;font-weight:700">glisează în</span> `5` <span style="color:#4C97FF;font-weight:700">secunde la x:</span> `0` <span style="color:#4C97FF;font-weight:700">y:</span> `-110`  
+<span style="color:#FF8C1A;font-weight:700">modifică vieți cu</span> `-1`  
 <span style="color:#FFAB19;font-weight:700">șterge această clonă</span>  
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe acest personaj</span>  
 <span style="color:#FF8C1A;font-weight:700">modifică scor cu</span> `1`  
 <span style="color:#FFAB19;font-weight:700">șterge această clonă</span>  
 
+<span style="color:#E6A800;font-weight:700">când primesc</span> `ploaie`  
+<span style="color:#FFAB19;font-weight:700">șterge această clonă</span>  
+
 - [ ] La steag, mama dispare și scorul e `0`  
 - [ ] La una sau două secunde apare un gândac nou, sus, într-un loc diferit  
 - [ ] Gândacul coboară încet spre prăjitură  
 - [ ] Un click pe gândac îl șterge și scorul crește cu unu  
-- [ ] Un gândac care ajunge jos dispare  
+- [ ] Un gândac care ajunge jos dispare și scade variabila `vieți`  
 - [ ] Salvat: `Prenume_Nume_L3`  
 
 **→ Minim când:** apeși pe steag, gândacii cad din locuri diferite, tu îi strivești cu click, scorul crește, iar cei care ajung jos dispar.
 
 ### Pasul 3 — Prăjitura *(Complet)*
-Prăjitura are **un script**, care rulează tot timpul:
+Prăjitura are **un script**, complet, care rulează tot timpul. Scriptul Gândacului nu se mai schimbă:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
 <span style="color:#4C97FF;font-weight:700">mergi la x:</span> `0` <span style="color:#4C97FF;font-weight:700">y:</span> `-130`  
 <span style="color:#FF8C1A;font-weight:700">setează vieți la</span> `3`  
 <span style="color:#FFAB19;font-weight:700">la infinit</span>  
 ↳ <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#59C059;font-weight:700">&lt;</span><span style="color:#FF8C1A;font-weight:700">(vieți)</span> <span style="color:#59C059;font-weight:700">&lt;</span> `1` <span style="color:#59C059;font-weight:700">&gt;</span> <span style="color:#FFAB19;font-weight:700">atunci</span>  
-&nbsp;&nbsp;&nbsp;&nbsp;→ <span style="color:#9966FF;font-weight:700">spune</span> `Gândacii au mâncat prăjitura!`  
+&nbsp;&nbsp;&nbsp;&nbsp;→ <span style="color:#9966FF;font-weight:700">spune</span> `Gândacii au mâncat prăjitura!` <span style="color:#9966FF;font-weight:700">pentru</span> `2` secunde  
 &nbsp;&nbsp;&nbsp;&nbsp;→ <span style="color:#FFAB19;font-weight:700">stop</span> `[totul]`  
 ↳ <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#59C059;font-weight:700">&lt;</span><span style="color:#FF8C1A;font-weight:700">(scor)</span> <span style="color:#59C059;font-weight:700">=</span> `10` <span style="color:#59C059;font-weight:700">&gt;</span> <span style="color:#FFAB19;font-weight:700">atunci</span>  
-&nbsp;&nbsp;&nbsp;&nbsp;→ <span style="color:#9966FF;font-weight:700">spune</span> `Picnic salvat!`  
+&nbsp;&nbsp;&nbsp;&nbsp;→ <span style="color:#9966FF;font-weight:700">spune</span> `Picnic salvat!` <span style="color:#9966FF;font-weight:700">pentru</span> `2` secunde  
 &nbsp;&nbsp;&nbsp;&nbsp;→ <span style="color:#FFAB19;font-weight:700">stop</span> `[totul]`  
-
-**Gândacul se schimbă puțin:** în scriptul clonei, după `glisează`, adaugi `modifică vieți cu -1`, înainte de `șterge această clonă`. Așa un gândac care ajunge jos ia o viață:
-
-<span style="color:#FFAB19;font-weight:700">când încep ca și clonă</span>  
-<span style="color:#4C97FF;font-weight:700">mergi la x:</span> <span style="color:#59C059;font-weight:700">(alege aleator între</span> `-200` <span style="color:#59C059;font-weight:700">și</span> `200`<span style="color:#59C059;font-weight:700">)</span> <span style="color:#4C97FF;font-weight:700">y:</span> `170`  
-<span style="color:#9966FF;font-weight:700">arată</span>  
-<span style="color:#4C97FF;font-weight:700">glisează în</span> `5` <span style="color:#4C97FF;font-weight:700">secunde la x:</span> `0` <span style="color:#4C97FF;font-weight:700">y:</span> `-110`  
-<span style="color:#FF8C1A;font-weight:700">modifică vieți cu</span> `-1`  
-<span style="color:#FFAB19;font-weight:700">șterge această clonă</span>  
 
 - [ ] Prăjitura stă jos, în mijloc, iar jocul începe cu trei vieți  
 - [ ] Un gândac care ajunge jos ia o viață  
@@ -217,10 +212,7 @@ Prăjitura are **un script**, care rulează tot timpul:
 &nbsp;&nbsp;&nbsp;&nbsp;→ <span style="color:#CF63CF;font-weight:700">pornește sunetul</span>  
 &nbsp;&nbsp;&nbsp;&nbsp;→ <span style="color:#5CB1D1;font-weight:700">resetează cronometru</span>  
 
-Pe **Gândac** adaugi un al patrulea script, care ajunge la toate clonele:
-
-<span style="color:#E6A800;font-weight:700">când primesc</span> `ploaie`  
-<span style="color:#FFAB19;font-weight:700">șterge această clonă</span>  
+Scriptul Gândacului **nu se mai schimbă**: are deja `când primesc ploaie`, iar clonele se șterg singure.
 
 Gândacii șterși de ploaie **nu dau puncte**: ploaia doar te scapă de ei, ca să nu pierzi vieți.
 
@@ -243,7 +235,7 @@ Gândacii șterși de ploaie **nu dau puncte**: ploaia doar te scapă de ei, ca 
 la steag → `ascunde` → `setează scor la 0` → `la infinit` (`așteaptă (alege aleator între 1 și 2)` + `creează o clonă a [mea]`)  
 când încep ca și clonă → `mergi la x: (alege aleator între -200 și 200) y: 170` → `arată` → `glisează în 5 secunde la x: 0 y: -110` → `modifică vieți cu -1` → `șterge această clonă`  
 când se dă click pe acest personaj → `modifică scor cu 1` → `șterge această clonă`  
-*(Bonus)* când primesc ploaie → `șterge această clonă`
+când primesc ploaie → `șterge această clonă`
 
 **Pe Prăjitură**  
 la steag → `mergi la x: y:` → `setează vieți la 3` → `la infinit` (`dacă (vieți) < 1` `atunci` `spune` + `stop [totul]` · `dacă (scor) = 10` `atunci` `spune` + `stop [totul]`)
