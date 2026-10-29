@@ -12,7 +12,7 @@ import {
 const NARATIE_FILES: Record<number, string> = {
   1: 'L1-Padurea-fermecata.naratie.txt',
   2: 'L2-Clasamentul-planetelor.naratie.txt',
-  3: 'L3-Scor-pe-scena.naratie.txt',
+  3: 'L3-Invazia-clonelor.naratie.txt',
   4: 'L4-Vieti-game-over.naratie.txt',
   5: 'L5-Timer.naratie.txt',
   6: 'L6-Nivele.naratie.txt',
