@@ -127,7 +127,7 @@ export const module = [
     ordine: 2,
     badge: 'Logic Explorer',
     nivel: 'Explorer',
-    descriere: '9 proiecte noi + polish pe labirint. Dacă, variabile, bucle și mesaje.',
+    descriere: '10 lecții cu jocuri și proiecte: dacă, variabile, operatori, blocuri proprii și mesaje.',
   },
   {
     id: 'm18',
@@ -136,7 +136,7 @@ export const module = [
     ordine: 3,
     badge: 'Game Builder',
     nivel: 'Builder',
-    descriere: '9 proiecte de joc + polish. Capstone: „Prinde obiectele”.',
+    descriere: '10 lecții cu jocuri și teme educative: straturi, clone, liste, sunet, timp. Capstone: „Prinde obiectele”.',
   },
   {
     id: 'm19',
@@ -576,16 +576,16 @@ export const lectii = [
   ]),
   // Scratch Modul 3
   ...genLectii('m18', [
-    'Ideea de joc',
-    'Coliziuni + feedback',
-    'Scor pe scenă',
-    'Vieți și Sfârșitul jocului',
-    'Timer',
-    'Nivele',
-    'Clone',
-    'Meniu de start',
+    'Pădurea fermecată',
+    'Clasamentul planetelor',
+    'Invazia clonelor',
+    'Trusa de prim ajutor',
+    'Formula 1',
+    'Mașina timpului',
+    'Cald și rece',
+    'Salvează planeta',
     'Mini-proiect: Prinde obiectele',
-    'Depanare și finisare',
+    'Completare + prezentare: Galeria Game Builder',
   ]),
   // Scratch Modul 4 — proiecte concrete (fără „greu” în fiecare titlu)
   ...genLectii('m19', [

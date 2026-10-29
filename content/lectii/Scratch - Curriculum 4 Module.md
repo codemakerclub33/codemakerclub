@@ -34,7 +34,7 @@
 | 7 | Atelierul de desen | Extensia Stilou: linii, culori, ștampilă |
 | 8 | Blocurile mele | Blocuri proprii cu parametri |
 | 9 | Vânătoarea de bile | Mini-proiect: scor, vieți, capcane și timp |
-| 10 | Galeria Logic Explorer | Completare + prezentare, insigna Logic Explorer |
+| 10 | Completare + prezentare: Galeria Logic Explorer | Recap Modul 2, insigna Logic Explorer |
 
 ## Modul 3 — Jocuri · badge: Game Builder
 

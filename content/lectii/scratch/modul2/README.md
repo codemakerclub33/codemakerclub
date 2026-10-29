@@ -17,7 +17,7 @@
 | 7 | [L7-Atelierul-de-desen.md](./L7-Atelierul-de-desen.md) | Atelierul de desen |
 | 8 | [L8-Blocurile-mele.md](./L8-Blocurile-mele.md) | Blocurile mele |
 | 9 | [L9-Vanatoarea-de-bile.md](./L9-Vanatoarea-de-bile.md) | Vânătoarea de bile |
-| 10 | [L10-Galeria-Logic-Explorer.md](./L10-Galeria-Logic-Explorer.md) | Completare + prezentare (Galeria Logic Explorer) |
+| 10 | [L10-Galeria-Logic-Explorer.md](./L10-Galeria-Logic-Explorer.md) | Completare + prezentare: Galeria Logic Explorer |
 
 ---
 

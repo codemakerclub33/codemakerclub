@@ -1,4 +1,4 @@
-# Lecția 10 — Completare + prezentare (recap Modul 2)
+# Lecția 10 — Completare + prezentare: Galeria Logic Explorer
 **Modulul 2 · Logică**  
 **Code Maker Club · Logic Explorer**
 
