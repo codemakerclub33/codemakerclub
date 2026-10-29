@@ -14,7 +14,7 @@ const NARATIE_FILES: Record<number, string> = {
   2: 'L2-Clasamentul-planetelor.naratie.txt',
   3: 'L3-Invazia-clonelor.naratie.txt',
   4: 'L4-Trusa-de-prim-ajutor.naratie.txt',
-  5: 'L5-Timer.naratie.txt',
+  5: 'L5-Formula-1.naratie.txt',
   6: 'L6-Nivele.naratie.txt',
   7: 'L7-Clone.naratie.txt',
   8: 'L8-Meniu-start.naratie.txt',
