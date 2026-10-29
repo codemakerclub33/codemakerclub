@@ -124,11 +124,12 @@ Dacă rămâi în urmă: salvează la **Minim**. Nu e eșec.
 Cei rapizi: Complet, apoi Bonus.
 
 ### Pasul 1 — Pista și garajul *(Minim)*
-Pe scenă, în tab-ul **Decoruri**, desenezi decorul `Pista`: un fundal gri (unealta **Dreptunghi**, umplut) și, pe marginea din **stânga**, o bandă **verde** îngustă, cât un deget de lată: este **garajul**. Garajul trebuie să fie doar verde, fără alte desene peste.  
+Pe scenă, în tab-ul **Decoruri**, desenezi decorul `Pista`: un fundal gri (unealta **Dreptunghi**, umplut) și, pe marginea din **stânga**, o bandă **verde** îngustă, cât un deget de lată: este **garajul**. Garajul trebuie să fie doar verde, fără alte desene peste. Tot pe decorul `Pista` adaugi o bucată **roșie**, sus în **dreapta** (peretele): să nu fie pe drumul Mașinuței, care merge jos.  
 Redenumești personajele: `Mașinuța`, `Mingea` și `Fluturele`. Mașinuța: alegi un personaj de tip mașină. Mingea: o minge de **o singură culoare** (de exemplu mingea albastră). Fluturele: personajul `Butterfly`, cu 2 costume. Pe Minge și pe Fluture le adaugi în tab-ul **Sunete** câte un sunet.
 
 - [ ] Decorul se numește `Pista`  
 - [ ] Banda verde e în stânga, îngustă  
+- [ ] Peretele roșu e sus, în dreapta  
 - [ ] Personajele sunt redenumite  
 
 ### Pasul 2 — Mașinuța *(Minim)*
@@ -156,8 +157,8 @@ Ordinea e un **model**: poți schimba textele, numerele și mesajele.
 
 **→ Minim când:** Mașinuța pleacă din garaj, ricoșează la margine, se întoarce, spune că a ajuns acasă și proiectul se oprește.
 
-### Pasul 3 — Peretele roșu și Mingea *(Complet)*
-Întâi adaugi pe decorul `Pista` o bucată **roșie**, sus în **dreapta** (peretele): să nu fie pe drumul Mașinuței, care merge jos. Apoi Mingea are **2 scripturi**; al doilea pornește când Mașinuța difuzează `start`:
+### Pasul 3 — Mingea *(Complet)*
+Mingea are **2 scripturi**; al doilea pornește când Mașinuța difuzează `start`:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
 <span style="color:#4C97FF;font-weight:700">mergi la x:</span> `0` <span style="color:#4C97FF;font-weight:700">y:</span> `60`  
@@ -234,6 +235,6 @@ când primesc final → `mergi la` → `spune` → `repetă` (`glisează` + `ori
 - Ce numere arată `poziția x` și `poziția y` când personajul e în mijlocul scenei?
 
 ## Temă (opțional)
-- Dacă ai doar Minim: adaugi acasă Mingea și peretele roșu, în același `Prenume_Nume_L1`.  
+- Dacă ai doar Minim: adaugi acasă Mingea, în același `Prenume_Nume_L1`.  
 - Dacă ai Complet: adaugi acasă Fluturele, în același `Prenume_Nume_L1`.  
 - Dacă ai terminat și Bonusul: faci o copie și schimbi povestea (altă pistă, alt garaj, alt obstacol).
