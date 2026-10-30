@@ -40,7 +40,7 @@ Insigna **Logic Explorer** (*badge*) înseamnă că Modulul 2 e încheiat.
 ## Pas cu pas
 
 ### 1) Alegi cele 3 personaje
-1. Alegi **3 personaje** din lecțiile trecute, cele mai dragi ție (din L1–L9). Poți lua și personaje noi din bibliotecă
+1. Alegi **3 personaje** din lecțiile trecute, cele mai dragi ție (din L1–L9). Fiecare lecție are personajul ei, iar în **Meniul de numere** de mai jos vezi, lângă fiecare lecție, personajul ei și numărul ei. Poți lua și personaje noi din bibliotecă
 2. Primul personaj ales e **Gazda**: ea anunță numerele și leagă galeria
 3. Celelalte două sunt **artiștii**: fiecare își face numerele când Gazda îl cheamă
 4. Cum aduci un personaj din proiectul vechi: în proiectul vechi, click dreapta pe personaj → **exportă**. În proiectul nou, la **Alege un personaj** → **Încarcă personaj** și alegi fișierul. Dacă nu mai ai proiectul, alegi unul asemănător din bibliotecă
@@ -129,17 +129,17 @@ Creezi și variabilele pentru numerele alese, **pentru toate personajele** (de e
 - [ ] Personajele sunt redenumite (`Gazda` plus numele celorlalte două)  
 
 ### Pasul 2 — Gazda *(Minim)*
-Gazda e primul personaj ales. Are scheletul de mai jos, cu **2 numere** puse la loc (alegi din rețetele de mai jos, din lecții diferite). Exemplul: Pisica, cu „Ricoșeu” (L1) și „Dulciuri” (L4).
+Gazda e primul personaj ales. Are scheletul de mai jos, cu **2 numere** puse la loc (alegi din rețetele de mai jos, din lecții diferite). Exemplul: Robotul (din L3), cu „Salut” (L3) și „Dulciuri” (L4).
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
 <span style="color:#4C97FF;font-weight:700">mergi la x:</span> `-150` <span style="color:#4C97FF;font-weight:700">y:</span> `-80`  
 <span style="color:#9966FF;font-weight:700">spune</span> `Bun venit în galerie!` pentru `3` secunde  
-<span style="color:#9966FF;font-weight:700">spune</span> `Primul număr: Desenatorul!` pentru `3` secunde  
+<span style="color:#9966FF;font-weight:700">spune</span> `Primul număr: Pictorul!` pentru `3` secunde  
 <span style="color:#E6A800;font-weight:700">difuzează … și așteaptă</span> `număr1`  
-<span style="color:#9966FF;font-weight:700">spune</span> `Al doilea număr: Magicianul!` pentru `3` secunde  
+<span style="color:#9966FF;font-weight:700">spune</span> `Al doilea număr: Paznicul!` pentru `3` secunde  
 <span style="color:#E6A800;font-weight:700">difuzează … și așteaptă</span> `număr2`  
 <span style="color:#9966FF;font-weight:700">spune</span> `Și acum numărul meu!` pentru `3` secunde  
-**număr din lecția 1 („Ricoșeu”)**  
+**număr din lecția 3 („Salut”)**  
 **număr din lecția 4 („Dulciuri”)**  
 <span style="color:#E6A800;font-weight:700">difuzează</span> `final`  
 <span style="color:#FFAB19;font-weight:700">așteaptă</span> `4` secunde  
@@ -147,16 +147,17 @@ Gazda e primul personaj ales. Are scheletul de mai jos, cu **2 numere** puse la 
 
 **Meniul de numere** *(fiecare personaj alege cel puțin 2, din lecții diferite)*:
 
-| Lecția | Numărul | Rețeta |
-|--------|---------|--------|
-| L1 | **Ricoșeu** | <span style="color:#FFAB19;font-weight:700">repetă</span> `20` → <span style="color:#4C97FF;font-weight:700">mergi</span> `15` pași → <span style="color:#4C97FF;font-weight:700">dacă atinge marginea, ricoșează</span> → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,05` |
-| L2 | **Distanță** | <span style="color:#9966FF;font-weight:700">spune</span> <span style="color:#5CB1D1;font-weight:700">(distanța până la [alt personaj sau cursorul mouse-ului])</span> pentru `2` secunde |
-| L3 | **Salut** | <span style="color:#5CB1D1;font-weight:700">întreabă</span> `Cum te numești?` <span style="color:#5CB1D1;font-weight:700">și așteaptă</span> → <span style="color:#9966FF;font-weight:700">spune</span> <span style="color:#5CB1D1;font-weight:700">(alătură</span> `Salut, ` <span style="color:#5CB1D1;font-weight:700">(răspuns))</span> pentru `2` secunde |
-| L4 | **Dulciuri** | <span style="color:#FF8C1A;font-weight:700">setează dulciuri la</span> `5` → <span style="color:#FF8C1A;font-weight:700">modifică dulciuri cu</span> `-2` → <span style="color:#9966FF;font-weight:700">spune</span> <span style="color:#FF8C1A;font-weight:700">(dulciuri)</span> pentru `2` secunde |
-| L5 | **Suma** | <span style="color:#FF8C1A;font-weight:700">setează suma la</span> <span style="color:#59C059;font-weight:700">((alege aleator între</span> `1` <span style="color:#59C059;font-weight:700">și</span> `6` <span style="color:#59C059;font-weight:700">) + (alege aleator între</span> `1` <span style="color:#59C059;font-weight:700">și</span> `6` <span style="color:#59C059;font-weight:700">))</span> → <span style="color:#9966FF;font-weight:700">spune</span> <span style="color:#FF8C1A;font-weight:700">(suma)</span> pentru `2` secunde |
-| L6 | **Parolă** | <span style="color:#5CB1D1;font-weight:700">întreabă</span> `Care e parola?` <span style="color:#5CB1D1;font-weight:700">și așteaptă</span> → <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#59C059;font-weight:700">(răspuns) = scratch</span> <span style="color:#FFAB19;font-weight:700">atunci</span> <span style="color:#9966FF;font-weight:700">spune</span> `Poți intra!` pentru `2` secunde **altfel** <span style="color:#9966FF;font-weight:700">spune</span> `Parolă greșită!` pentru `2` secunde |
-| L7 | **Desen** | <span style="color:#0FBD8C;font-weight:700">stilou jos</span> → <span style="color:#FFAB19;font-weight:700">repetă</span> `4` (<span style="color:#4C97FF;font-weight:700">mergi</span> `60` pași + <span style="color:#4C97FF;font-weight:700">rotește-te ↻</span> `90` grade) → <span style="color:#0FBD8C;font-weight:700">stilou sus</span> |
-| L8 | **Blocul meu** | <span style="color:#FF6680;font-weight:700">definește pătrat (mărime)</span> *(în personajul respectiv, ca în L8)*, apoi <span style="color:#0FBD8C;font-weight:700">stilou jos</span> → <span style="color:#FF6680;font-weight:700">pătrat</span> `(60)` → <span style="color:#0FBD8C;font-weight:700">stilou sus</span> |
+| Lecția | Personajul din lecție | Numărul | Rețeta |
+|--------|-----------------------|---------|--------|
+| L1 | Mașinuța | **Ricoșeu** | <span style="color:#FFAB19;font-weight:700">repetă</span> `20` → <span style="color:#4C97FF;font-weight:700">mergi</span> `15` pași → <span style="color:#4C97FF;font-weight:700">dacă atinge marginea, ricoșează</span> → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,05` |
+| L2 | Ghidul | **Distanță** | <span style="color:#9966FF;font-weight:700">spune</span> <span style="color:#5CB1D1;font-weight:700">(distanța până la [alt personaj sau cursorul mouse-ului])</span> pentru `2` secunde |
+| L3 | Robotul | **Salut** | <span style="color:#5CB1D1;font-weight:700">întreabă</span> `Cum te numești?` <span style="color:#5CB1D1;font-weight:700">și așteaptă</span> → <span style="color:#9966FF;font-weight:700">spune</span> <span style="color:#5CB1D1;font-weight:700">(alătură</span> `Salut, ` <span style="color:#5CB1D1;font-weight:700">(răspuns))</span> pentru `2` secunde |
+| L4 | Vânzătorul | **Dulciuri** | <span style="color:#FF8C1A;font-weight:700">setează dulciuri la</span> `5` → <span style="color:#FF8C1A;font-weight:700">modifică dulciuri cu</span> `-2` → <span style="color:#9966FF;font-weight:700">spune</span> <span style="color:#FF8C1A;font-weight:700">(dulciuri)</span> pentru `2` secunde |
+| L5 | Zarul | **Suma** | <span style="color:#FF8C1A;font-weight:700">setează suma la</span> <span style="color:#59C059;font-weight:700">((alege aleator între</span> `1` <span style="color:#59C059;font-weight:700">și</span> `6` <span style="color:#59C059;font-weight:700">) + (alege aleator între</span> `1` <span style="color:#59C059;font-weight:700">și</span> `6` <span style="color:#59C059;font-weight:700">))</span> → <span style="color:#9966FF;font-weight:700">spune</span> <span style="color:#FF8C1A;font-weight:700">(suma)</span> pentru `2` secunde |
+| L6 | Paznicul | **Parolă** | <span style="color:#5CB1D1;font-weight:700">întreabă</span> `Care e parola?` <span style="color:#5CB1D1;font-weight:700">și așteaptă</span> → <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#59C059;font-weight:700">(răspuns) = scratch</span> <span style="color:#FFAB19;font-weight:700">atunci</span> <span style="color:#9966FF;font-weight:700">spune</span> `Poți intra!` pentru `2` secunde **altfel** <span style="color:#9966FF;font-weight:700">spune</span> `Parolă greșită!` pentru `2` secunde |
+| L7 | Pictorul | **Desen** | <span style="color:#0FBD8C;font-weight:700">stilou jos</span> → <span style="color:#FFAB19;font-weight:700">repetă</span> `4` (<span style="color:#4C97FF;font-weight:700">mergi</span> `60` pași + <span style="color:#4C97FF;font-weight:700">rotește-te ↻</span> `90` grade) → <span style="color:#0FBD8C;font-weight:700">stilou sus</span> |
+| L8 | Pictorul | **Blocul meu** | <span style="color:#FF6680;font-weight:700">definește pătrat (mărime)</span> *(în personajul respectiv, ca în L8)*, apoi <span style="color:#0FBD8C;font-weight:700">stilou jos</span> → <span style="color:#FF6680;font-weight:700">pătrat</span> `(60)` → <span style="color:#0FBD8C;font-weight:700">stilou sus</span> |
+| L9 | personajul principal din L9 | **Scor** | <span style="color:#FF8C1A;font-weight:700">setează scor la</span> `0` → <span style="color:#FF8C1A;font-weight:700">setează vieți la</span> `3` → <span style="color:#FF8C1A;font-weight:700">modifică scor cu</span> `1` → <span style="color:#FF8C1A;font-weight:700">modifică vieți cu</span> `-1` → <span style="color:#9966FF;font-weight:700">spune</span> <span style="color:#59C059;font-weight:700">(alătură</span> `Scor: ` <span style="color:#FF8C1A;font-weight:700">(scor)</span><span style="color:#59C059;font-weight:700">)</span> <span style="color:#9966FF;font-weight:700">pentru</span> `2` secunde *(`scor` și `vieți` sunt variabile pentru toate personajele)* |
 
 - [ ] Gazda are **2 numere din lecții diferite**  
 - [ ] Fără artiști, Gazda își termină scriptul singură  
@@ -166,7 +167,7 @@ Gazda e primul personaj ales. Are scheletul de mai jos, cu **2 numere** puse la 
 **→ Minim când:** Gazda salută, anunță, își face cele 2 numere, difuzează `final`, decorul trece la `Aplauze`, iar proiectul se oprește singur.
 
 ### Pasul 3 — Primul artist *(Complet)*
-Al doilea personaj ales. Are scheletul de mai jos, cu **2 numere** din rețete, din lecții **diferite** (și diferite de ale Gazdei, dacă poți). Exemplul: Desenatorul, cu „Desen” (L7) și „Suma” (L5).
+Al doilea personaj ales. Are scheletul de mai jos, cu **2 numere** din rețete, din lecții **diferite** (și diferite de ale Gazdei, dacă poți). Exemplul: Pictorul (din L7), cu „Desen” (L7) și „Suma” (L5).
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
 <span style="color:#4C97FF;font-weight:700">mergi la x:</span> `0` <span style="color:#4C97FF;font-weight:700">y:</span> `-100`  
@@ -191,7 +192,7 @@ Al doilea personaj ales. Are scheletul de mai jos, cu **2 numere** din rețete, 
 ---
 
 ## Bonus (dacă ai terminat Complet)
-- [ ] **Al 3-lea personaj** (al doilea artist), cu **2 numere** din lecții diferite și cel puțin **10 blocuri diferite**. Exemplul: Magicianul, cu „Parolă” (L6) și „Distanță” (L2). Răspunde la `număr2`:
+- [ ] **Al 3-lea personaj** (al doilea artist), cu **2 numere** din lecții diferite și cel puțin **10 blocuri diferite**. Exemplul: Paznicul (din L6), cu „Parolă” (L6) și „Distanță” (L2). Răspunde la `număr2`:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
 <span style="color:#4C97FF;font-weight:700">mergi la x:</span> `150` <span style="color:#4C97FF;font-weight:700">y:</span> `-80`  

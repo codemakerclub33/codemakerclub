@@ -564,7 +564,7 @@ export const lectii = [
   // Scratch Modul 2
   ...genLectii('m17', [
     'Pista de culori',
-    'Vânătoarea de fantome',
+    'Muzeul exponatelor',
     'Robotul prieten',
     'Magazinul de dulciuri',
     'Zaruri și calcule',
