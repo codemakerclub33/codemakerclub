@@ -132,7 +132,7 @@ Cei rapizi: Complet, apoi Bonus.
 ### Pasul 1 — Pregătirea: variabile și personaje *(Minim)*
 **Variabilele:** `scor`, `încercări`, `cx`, `cy`, `dx` și `dy`, toate **pentru toate personajele**. Bifezi doar `scor` și `încercări`, ca să se vadă pe scenă. Pe celelalte le lași nebifate.  
 **Detectorul:** alegi din bibliotecă un personaj care ți se pare potrivit pentru un explorator (de la **Oameni** sau **Animale**) și îl redenumești `Detectorul`.  
-**Comoara:** alegi din bibliotecă un obiect din **Lucruri** care poate fi o comoară și îl redenumești `Comoara`. Adaugi în tab-ul **Sunete** un sunet.  
+**Comoara:** alegi din bibliotecă, la **Tot**, un obiect care poate fi o comoară (de exemplu `Crystal`, `Key` sau `Gift`) și îl redenumești `Comoara`. Adaugi în tab-ul **Sunete** un sunet.  
 **Decorul:** alegi unul din bibliotecă, de exemplu o plajă sau o pădure.  
 **Mărimea** o setăm din scripturi. Dacă un personaj e prea mare sau prea mic, schimbi numărul din blocul `setează mărimea la`.
 

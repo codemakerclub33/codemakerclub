@@ -16,7 +16,7 @@
 | 5 | [L5-Formula-1.md](./L5-Formula-1.md) | Formula 1 — cursă cu viteză, ture și piste |
 | 6 | [L6-Masina-timpului.md](./L6-Masina-timpului.md) | Mașina timpului — anul curent, nume utilizator, zile din 2000 |
 | 7 | [L7-Cald-si-rece.md](./L7-Cald-si-rece.md) | Cald și rece — distanță cu modul, vânătoare de comori |
-| 8 | [L8-Meniu-start.md](./L8-Meniu-start.md) | Meniu — „Apasă Start” |
+| 8 | [L8-Salveaza-planeta.md](./L8-Salveaza-planeta.md) | „Salvează planeta” — coșuri, costume, tragere |
 | 9 | [L9-Mini-proiect-Prinde-obiectele.md](./L9-Mini-proiect-Prinde-obiectele.md) | Mini-proiect — „Prinde obiectele” |
 | 10 | [L10-Recap-polish.md](./L10-Recap-polish.md) | Finisări + prezentare + insignă |
 
@@ -35,7 +35,7 @@ Module: `../modul1/` · `../modul2/` · `../modul4/`
 | Timer (countdown) | L5 |
 | Nivele (variabilă + fundal) | L6 |
 | Clone (*clone*) | L3 |
-| Meniu Start (mesaje / broadcast) | L8 |
+| Reciclare: costume, tragere, cădere cu viteză | L8 |
 | Proiect final: prinde obiecte | L9 |
 | Finisări + badge **Game Builder** | L10 |
 
