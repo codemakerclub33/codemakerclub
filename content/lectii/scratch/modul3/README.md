@@ -9,13 +9,13 @@
 
 | # | Fișier | Titlu / proiect |
 |---|--------|-----------------|
-| 1 | [L1-Design-joc.md](./L1-Design-joc.md) | Design + scenă — „Jocul meu pe hârtie și pe scenă” |
-| 2 | [L2-Coliziuni-feedback.md](./L2-Coliziuni-feedback.md) | Reacție — „Țintă sau pericol” |
-| 3 | [L3-Scor-pe-scena.md](./L3-Scor-pe-scena.md) | Scor — „Prinde 5 stele” |
-| 4 | [L4-Vieti-game-over.md](./L4-Vieti-game-over.md) | Vieți — „3 vieți” |
+| 1 | [L1-Padurea-fermecata.md](./L1-Padurea-fermecata.md) | Pădurea fermecată |
+| 2 | [L2-Sistemul-solar-in-cursa.md](./L2-Sistemul-solar-in-cursa.md) | Sistemul solar în cursă — liste, loc, pariu |
+| 3 | [L3-Invazia-clonelor.md](./L3-Invazia-clonelor.md) | Invazia clonelor |
+| 4 | [L4-Trusa-de-prim-ajutor.md](./L4-Trusa-de-prim-ajutor.md) | Trusa de prim ajutor |
 | 5 | [L5-Formula-1.md](./L5-Formula-1.md) | Formula 1 — cursă cu viteză, ture și piste |
-| 6 | [L6-Masina-timpului.md](./L6-Masina-timpului.md) | Mașina timpului — anul curent, nume utilizator, zile din 2000 |
-| 7 | [L7-Cald-si-rece.md](./L7-Cald-si-rece.md) | Cald și rece — distanță cu modul, vânătoare de comori |
+| 6 | [L6-Masina-timpului.md](./L6-Masina-timpului.md) | Mașina timpului (sprite: Capsula) — anul curent, nume utilizator, zile din 2000 |
+| 7 | [L7-Cald-si-rece.md](./L7-Cald-si-rece.md) | Cald și rece — distanță cu modul, Libelula ascunsă |
 | 8 | [L8-Salveaza-planeta.md](./L8-Salveaza-planeta.md) | „Salvează planeta” — coșuri, costume, tragere |
 | 9 | [L9-Mini-proiect-Prinde-obiectele.md](./L9-Mini-proiect-Prinde-obiectele.md) | Mini-proiect — „Prinde obiectele” |
 | 10 | [L10-Recap-polish.md](./L10-Recap-polish.md) | Finisări + prezentare + insignă |

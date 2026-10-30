@@ -8,8 +8,8 @@
 ---
 
 ## Obiectiv
-La finalul orei joci propriul joc: Pilotul te salută pe nume, Mașina timpului pornește, iar Pilotul îți spune un eveniment din istorie. Tu scrii **câți ani au trecut** de atunci. Dacă ai calculat bine, primești un punct. Dacă nu, pierzi o viață și afli răspunsul corect. La final, Mașina te aduce înapoi, în anul de azi.  
-**Minim:** personajul 1 (Pilotul), cu **scriptul întreg**, și personajul 2 (Mașina timpului), cu **3 scripturi**.  
+La finalul orei joci propriul joc: Pilotul te salută pe nume, Mașina timpului pornește, iar Pilotul îți spune un eveniment din istorie. Tu scrii **câți ani au trecut** de atunci. Dacă ai calculat bine, primești un punct. Dacă nu, pierzi o viață și afli răspunsul corect. La final, Capsula te aduce înapoi, în anul de azi.  
+**Minim:** personajul 1 (Pilotul), cu **scriptul întreg**, și personajul 2 (Capsula), cu **3 scripturi**.  
 **Ținta orei (Complet):** jocul, testat în toate cazurile: răspuns corect, răspuns greșit, nume gol și pierderea tuturor vieților.
 
 ## De ce contează
@@ -90,15 +90,15 @@ Calculatorul știe **ce an e azi**, chiar și atunci când tu nu știi. Cu blocu
 - [ ] Cu răspunsul corect, `scor` crește  
 - [ ] Cu un răspuns greșit, `vieți` scade și Pilotul spune câți ani au trecut  
 
-### 4) Mașina pornește
-1. <span style="color:#E6A800;font-weight:700">difuzează (plecăm) și așteaptă</span> trimite mesajul și **așteaptă** până când scriptul care îl primește se termină. Pilotul nu începe întrebările până când Mașina nu a terminat de pornit
-2. Mașina primește `plecăm`, schimbă costumul în `pornită`, pornește sunetul și se rotește: `repetă 10` cu `rotește-te ↻ 36 grade` și `așteaptă 0,1`
-3. La final, Pilotul trimite `sfârșit`, iar Mașina se oprește și spune anul de azi
+### 4) Capsula pornește
+1. <span style="color:#E6A800;font-weight:700">difuzează (plecăm) și așteaptă</span> trimite mesajul și **așteaptă** până când scriptul care îl primește se termină. Pilotul nu începe întrebările până când Capsula nu a terminat de pornit
+2. Capsula primește `plecăm`, schimbă costumul în `pornită`, pornește sunetul și se rotește: `repetă 10` cu `rotește-te ↻ 36 grade` și `așteaptă 0,1`
+3. La final, Pilotul trimite `sfârșit`, iar Capsula se oprește și spune anul de azi
 
-**Încearcă tu — mașina (3 min)**  
+**Încearcă tu — capsula (3 min)**  
 - [ ] Un personaj trimite `plecăm`, iar altul se rotește o dată, complet  
 - [ ] `difuzează … și așteaptă` face personajul care trimite să aștepte  
-- [ ] Mașina spune la final anul de azi, cu `alătură`  
+- [ ] Capsula spune la final anul de azi, cu `alătură`  
 
 ---
 
@@ -110,9 +110,9 @@ Calculatorul știe **ce an e azi**, chiar și atunci când tu nu știi. Cu blocu
 5. **Nu spune niciodată `Pilot Explorator`** — ești conectat la contul Scratch, deci numele nu e gol. Ca să testezi numele gol, ieși din cont.  
 6. **Jocul se termină imediat** — `repetă până când` are condiția greșită: `nr > lungimea lui [evenimente]` trebuie să fie fals la început, când `nr` e `1`.  
 7. **Se repetă mereu același eveniment** — lipsește `modifică nr cu 1` de la finalul buclei.  
-8. **Pilotul începe întrebările în timp ce Mașina se rotește** — ai pus `difuzează plecăm` fără `și așteaptă`.  
-9. **Mașina nu se oprește la final** — mesajul din `când primesc` nu e `sfârșit`, sau lipsește `difuzează sfârșit` din scriptul Pilotului.  
-10. **Mașina se învârte fără să se oprească** — ai pus `la infinit` în loc de `repetă 10`.  
+8. **Pilotul începe întrebările în timp ce Capsula se rotește** — ai pus `difuzează plecăm` fără `și așteaptă`.  
+9. **Capsula nu se oprește la final** — mesajul din `când primesc` nu e `sfârșit`, sau lipsește `difuzează sfârșit` din scriptul Pilotului.  
+10. **Capsula se învârte fără să se oprească** — ai pus `la infinit` în loc de `repetă 10`.  
 11. **Calendarul nu spune nimic** *(Bonus)* — mesajul din `când primesc` nu e `sfârșit`.  
 12. **Nume fișier** — `Prenume_Nume_L6`, nu doar `Ana_L6`.  
 
@@ -125,7 +125,7 @@ Salvat: `Prenume_Nume_L6`
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | **Pasul 1 + Pasul 2 + Pasul 3**: pregătirea, Pilotul, cu scriptul întreg, și Mașina timpului, cu **3 scripturi**. Jocul merge doar cu amândouă |
+| **Minim („am reușit”)** | **Pasul 1 + Pasul 2 + Pasul 3**: pregătirea, Pilotul, cu scriptul întreg, și Capsula, cu **3 scripturi**. Jocul merge doar cu amândouă |
 | **Complet (ținta orei)** | Minim, testat în toate cazurile: răspuns corect, răspuns greșit, nume gol și pierderea tuturor vieților |
 | **Bonus** | **Pasul 4**: al treilea personaj, **Calendarul**, cu **2 scripturi**. Scripturile din Pașii 2 și 3 nu se mai schimbă |
 
@@ -145,13 +145,13 @@ Cei rapizi: Complet, apoi Bonus.
 
 **Variabilele:** `scor`, `vieți` și `nr`, toate **pentru toate personajele**. Bifezi `scor` și `vieți`, ca să se vadă pe scenă.  
 **Pilotul:** adaugi din bibliotecă un personaj de om (de exemplu `Ben` sau `Abby`) și îl redenumești `Pilotul`.  
-**Mașina timpului:** în **Costume** alegi **Desenează** și faci o capsulă din dreptunghiuri și un cerc. Faci **două costume**: `oprită` și `pornită`. La `pornită` schimbi culoarea, ca să se vadă diferența. O redenumești `Mașina`. Adaugi în tab-ul **Sunete** un sunet.  
+**Capsula:** în **Costume** alegi **Desenează** și faci o capsulă din dreptunghiuri și un cerc. Faci **două costume**: `oprită` și `pornită`. La `pornită` schimbi culoarea, ca să se vadă diferența. O redenumești `Capsula`. Adaugi în tab-ul **Sunete** un sunet.  
 **Decorul:** alegi unul din bibliotecă, de laborator sau de spațiu.
 
 - [ ] Listele `evenimente` și `ani` au câte trei rânduri, în aceeași ordine  
 - [ ] Variabilele `scor`, `vieți` și `nr` sunt **pentru toate personajele**  
 - [ ] Pilotul e redenumit `Pilotul`  
-- [ ] Mașina are costumele `oprită` și `pornită` și un sunet  
+- [ ] Capsula are costumele `oprită` și `pornită` și un sunet  
 
 ### Pasul 2 — Pilotul, scriptul întreg *(Minim)*
 Ordinea e un **model**: poți schimba textele și numerele. Pilotul are **un singur script**:
@@ -195,10 +195,10 @@ Ordinea e un **model**: poți schimba textele și numerele. Pilotul are **un sin
 4. **Bucla:** `repetă până când <<(nr) > (lungimea lui [evenimente])> sau <(vieți) < 1>>`. Înăuntru: evenimentul, întrebarea, `dacă … altfel` cu răspunsul, apoi `modifică nr cu 1`
 5. **După buclă:** `dacă <(vieți) < 1>`, cu `altfel`, apoi `difuzează sfârșit`, la același nivel cu `repetă până când`
 
-**Scriptul Pilotului merge doar după ce faci și Pasul 3**, pentru că Mașina îi răspunde la `plecăm`.
+**Scriptul Pilotului merge doar după ce faci și Pasul 3**, pentru că Capsula îi răspunde la `plecăm`.
 
-### Pasul 3 — Mașina timpului, cele 3 scripturi *(Minim)*
-Mașina are **3 scripturi** complete. Primul o așază pe scenă, al doilea o pornește când primește `plecăm`, al treilea o oprește la `sfârșit`:
+### Pasul 3 — Capsula, cele 3 scripturi *(Minim)*
+Capsula are **3 scripturi** complete. Primul o așază pe scenă, al doilea o pornește când primește `plecăm`, al treilea o oprește la `sfârșit`:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
 <span style="color:#9966FF;font-weight:700">schimbă costumul la</span> `[oprită]`  
@@ -217,14 +217,14 @@ Mașina are **3 scripturi** complete. Primul o așază pe scenă, al doilea o po
 <span style="color:#9966FF;font-weight:700">spune</span> <span style="color:#59C059;font-weight:700">(alătură</span> `Anul de azi: ` <span style="color:#5CB1D1;font-weight:700">(anul curent)</span><span style="color:#59C059;font-weight:700">)</span> <span style="color:#9966FF;font-weight:700">pentru</span> `3` secunde  
 
 - [ ] Apeși pe steag: Pilotul te salută, cu numele tău sau cu `Pilot Explorator`  
-- [ ] Mașina se rotește o dată, cu sunet, apoi încep întrebările  
+- [ ] Capsula se rotește o dată, cu sunet, apoi încep întrebările  
 - [ ] Pilotul spune pe rând cele trei evenimente  
 - [ ] Cu răspunsul corect, `scor` crește; cu unul greșit, `vieți` scade și afli răspunsul bun  
 - [ ] Jocul se oprește după trei evenimente sau când nu mai ai vieți  
-- [ ] La final, Pilotul spune `Bravo, ai ajuns la ziua de azi!` (sau `Mașina timpului se oprește!`), iar Mașina spune anul de azi  
+- [ ] La final, Pilotul spune `Bravo, ai ajuns la ziua de azi!` (sau `Mașina timpului se oprește!`), iar Capsula spune anul de azi  
 - [ ] Salvat: `Prenume_Nume_L6`  
 
-**→ Minim când:** apeși pe steag, Pilotul te salută, Mașina pornește, calculezi câți ani au trecut pentru cele trei evenimente, scorul și viețile se schimbă corect, iar la final Mașina spune anul de azi.  
+**→ Minim când:** apeși pe steag, Pilotul te salută, Capsula pornește, calculezi câți ani au trecut pentru cele trei evenimente, scorul și viețile se schimbă corect, iar la final Capsula spune anul de azi.  
 **→ Complet când:** ai testat jocul în toate cazurile: răspuns corect, răspuns greșit, nume gol și pierderea tuturor vieților.
 
 ---
@@ -266,7 +266,7 @@ Calendarul are **2 scripturi** complete:
 **Pe Pilot** *(un singur script)*  
 la steag → `setează scor la 0` → `setează vieți la 3` → `setează nr la 1` → `mergi la x: y:` → `setează mărimea` → `dacă <(lungimea lui (nume utilizator)) = 0>` `atunci` `spune Salut, Pilot Explorator!` `altfel` `spune (alătură Salut, (nume utilizator))` → `difuzează plecăm și așteaptă` → `repetă până când <<(nr) > (lungimea lui [evenimente])> sau <(vieți) < 1>>` (`spune (element (nr) din [evenimente])` + `întreabă Câți ani au trecut de atunci?` + `dacă <(răspuns) = ((anul curent) - (element (nr) din [ani]))>` `atunci` (`modifică scor cu 1` + `spune Corect!`) `altfel` (`modifică vieți cu -1` + `spune (alătură Nu. Au trecut …)`) + `modifică nr cu 1`) → `dacă <(vieți) < 1>` `atunci` `spune Mașina timpului se oprește!` `altfel` `spune Bravo, ai ajuns la ziua de azi!` → `difuzează sfârșit`
 
-**Pe Mașină** *(3 scripturi)*  
+**Pe Capsulă** *(3 scripturi)*  
 la steag → `schimbă costumul la [oprită]` → `mergi la x: y:` → `setează mărimea`  
 când primesc plecăm → `schimbă costumul la [pornită]` → `pornește sunetul` → `repetă 10` (`rotește-te ↻ 36` + `așteaptă 0,1`)  
 când primesc sfârșit → `schimbă costumul la [oprită]` → `spune (alătură Anul de azi: (anul curent))`

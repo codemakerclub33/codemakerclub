@@ -577,7 +577,7 @@ export const lectii = [
   // Scratch Modul 3
   ...genLectii('m18', [
     'Pădurea fermecată',
-    'Clasamentul planetelor',
+    'Sistemul solar în cursă',
     'Invazia clonelor',
     'Trusa de prim ajutor',
     'Formula 1',

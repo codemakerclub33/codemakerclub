@@ -1,4 +1,4 @@
-Lecția doi. Clasamentul planetelor.
+Lecția doi. Sistemul solar în cursă.
 
 Astăzi faci o cursă a planetelor: pariezi pe una, iar fiecare planetă care ajunge la sosire se scrie singură într-o listă, ca într-un clasament. Dacă ai ghicit câștigătoarea, primești un punct. Fișierul se numește Prenume, linie jos, Nume, linie jos, L doi.
 
@@ -20,7 +20,7 @@ Al patrulea pas pe ecran. Le punem împreună. Cursa: fiecare planetă pleacă d
 
 Greșeli frecvente. Dacă nu se vede lista, bifa de lângă clasament nu e pusă, sau lipsește arată lista de la Astronaut. Dacă în listă rămân rândurile din cursa trecută, lipsește șterge tot din clasament la începutul cursei. Dacă două planete au același loc, loc e făcută numai pentru un personaj: trebuie să fie pentru toate personajele, iar modifică loc cu unu vine înainte de adaugă. Dacă locul începe de la zero, lipsește setează loc la zero la începutul cursei, sau ai uitat modifică loc cu unu. Dacă scorul nu crește, numele din răspuns egal nu e același cu cel scris de tine la pariu: spațiul în plus contează. Dacă scorul crește la toate planetele, ai copiat scriptul, dar nu ai schimbat numele din răspuns egal pe fiecare planetă. Dacă planetele nu pornesc după pariu, au rămas cu când se dă click pe steagul verde în loc de când primesc start, sau mesajul nu are același nume la Astronaut și la planete. Dacă planetele sunt una peste alta, nu ai schimbat y din mergi la x y la fiecare copie. Dacă apeși spațiu în timpul cursei, cursa se strică: așteaptă să sosească toate planetele, apoi apeși spațiu pentru runda următoare. Dacă mesajul nu ajunge, start și startul sunt mesaje diferite: alegi același nume din listă. Dacă ai folosit șterge tot din Stilou, acela șterge desenul: pentru listă folosești șterge tot din clasament, din Variabile. Dacă ai greșit numele la salvare, adaugă și numele de familie.
 
-Proiectul de azi. Clasamentul planetelor.
+Proiectul de azi. Sistemul solar în cursă.
 
 Minim înseamnă Pasul unu, Pasul doi și Pasul trei: spațiul, variabilele, lista, Mercur cu scriptul întreg și Astronautul cu cele două scripturi. Pariezi, pornești cursa, Mercur aleargă, se scrie în listă și dă scorul. Complet înseamnă: minim, plus Pasul patru, celelalte șapte planete, fiecare cu scriptul lui întreg. Cursa are opt planete. Bonus înseamnă Pasul cinci: Soarele, cu trei scripturi. Scripturile celorlalte personaje nu se mai schimbă. Fiecare personaj are scripturile lui întregi, de la început. Nu se completează nimic după aceea. Dacă rămâi în urmă, salvează ce ai. Nu e eșec.
 

@@ -1,9 +1,9 @@
-# Lecția 2 — Clasamentul planetelor
+# Lecția 2 — Sistemul solar în cursă
 **Modulul 3 · Jocuri**  
 **Code Maker Club · Game Builder**
 
 > Azi faci o cursă a planetelor: pariezi pe una, iar fiecare planetă care ajunge la sosire se scrie singură într-o **listă**, ca într-un clasament. Dacă ai ghicit câștigătoarea, primești un punct.  
-> Proiect: **„Clasamentul planetelor”** · fișier: `Prenume_Nume_L2` (ex. `Ana_Pop_L2`)
+> Proiect: **„Sistemul solar în cursă”** · fișier: `Prenume_Nume_L2` (ex. `Ana_Pop_L2`)
 
 ---
 
@@ -25,7 +25,7 @@ Un joc ține minte lucruri: cine a ajuns primul, cine a câștigat, ce ai strân
 |--------|----------|
 | 0–5 | Obiectiv + blocurile noi din Variabile |
 | 5–35 | Pas cu pas: **4** mini-verificări (**Încearcă tu**) |
-| 35–105 | Proiectul „Clasamentul planetelor” (vezi **Minim vs Complet**) |
+| 35–105 | Proiectul „Sistemul solar în cursă” (vezi **Minim vs Complet**) |
 | 105–120 | Recap, bonus, salvare |
 
 **Capitole azi (doar acestea 7):**  
@@ -117,7 +117,7 @@ Un joc ține minte lucruri: cine a ajuns primul, cine a câștigat, ce ai strân
 
 ---
 
-## De făcut azi — „Clasamentul planetelor”
+## De făcut azi — „Sistemul solar în cursă”
 Salvat: `Prenume_Nume_L2`
 
 ### Minim vs Complet *(citește înainte să începi)*

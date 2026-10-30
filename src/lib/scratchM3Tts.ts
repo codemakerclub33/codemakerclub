@@ -11,7 +11,7 @@ import {
 
 const NARATIE_FILES: Record<number, string> = {
   1: 'L1-Padurea-fermecata.naratie.txt',
-  2: 'L2-Clasamentul-planetelor.naratie.txt',
+  2: 'L2-Sistemul-solar-in-cursa.naratie.txt',
   3: 'L3-Invazia-clonelor.naratie.txt',
   4: 'L4-Trusa-de-prim-ajutor.naratie.txt',
   5: 'L5-Formula-1.naratie.txt',
