@@ -1,4 +1,5 @@
 # Lecția 7 — Culori și materiale
+### Materiale
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
 
@@ -46,9 +47,9 @@ Colțul din dreapta sus al viewport-ului are 4 butoane („sfere”) pentru **mo
 
 Treci pe **Material Preview**, ca să vezi culorile.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Vezi culorile în viewport”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — modurile de afișare (2 min)**  
+- [ ] În **Solid** totul e gri  
+- [ ] În **Material Preview** se văd culorile  
 
 ### 2) Primul material
 1. Selectează corpul casei.  
@@ -57,9 +58,9 @@ Treci pe **Material Preview**, ca să vezi culorile.
 4. Vezi lista „Surface”. Click pe **Base Color** și alege o culoare (ex. galben).  
 5. Dă un nume materialului (dublu click pe nume): `Perete`.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Primul material”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — primul material (3 min)**  
+- [ ] Corpul casei are material nou, cu numele `Perete`  
+- [ ] Culoarea se vede în **Material Preview**  
 
 ### 3) Cele trei butoane magice
 
@@ -78,9 +79,9 @@ Treci pe **Material Preview**, ca să vezi culorile.
 | Metal lucios | 0.2 | 1 |
 | Metal mat | 0.6 | 1 |
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Cele trei butoane magice”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — Roughness și Metallic (3 min)**  
+- [ ] Pe sferă ai făcut plastic mat și plastic lucios  
+- [ ] Pe sferă ai făcut și metal lucios  
 
 ### 4) Culori pentru casă
 Dă materiale diferite, câte unul pe piesă:
@@ -94,9 +95,9 @@ Dă materiale diferite, câte unul pe piesă:
 | Horn | Caramida | roșu închis |
 | Pământ | Iarba | verde, Roughness 1 |
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Culori pentru casă”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — culorile casei (4 min)**  
+- [ ] Fiecare piesă a casei are material propriu  
+- [ ] Geamul e lucios, iar iarba e mată  
 
 ### 5) Copiem materiale
 Dacă ai 3 ferestre și vrei **același** material pe toate:
@@ -106,9 +107,9 @@ Dacă ai 3 ferestre și vrei **același** material pe toate:
 3. **Ctrl + L → Link Materials.**  
 Toate primesc materialul. Dacă modifici culoarea unui material, se schimbă **pe toate** obiectele care îl folosesc.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Copiem materiale”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — copierea materialelor (2–3 min)**  
+- [ ] A doua fereastră are același material ca prima, prin **Ctrl + L → Link Materials**  
+- [ ] Dacă schimbi culoarea, se schimbă pe ambele ferestre  
 
 ### 6) Complet — omulețul colorat
 Deschide fișierul cu omulețul (L5) și dă omulețului culori:
@@ -120,9 +121,9 @@ Deschide fișierul cu omulețul (L5) și dă omulețului culori:
 | Ochi, nasturi | negru |
 | Pălărie | negru sau albastru închis |
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Complet — omulețul colorat”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — omulețul (3 min)**  
+- [ ] Sferele sunt albe, nasul portocaliu, ochii și nasturii negri  
+- [ ] Pălăria are culoare închisă  
 
 ### 7) Creează tu — „Scena cu temă”
 Acum alegi tu culorile, nu le iei dintr-un tabel.

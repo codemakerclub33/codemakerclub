@@ -1,4 +1,5 @@
 # Lecția 4 — Forme de bază
+### Forme de bază
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
 
@@ -49,9 +50,9 @@ Modelatorii profesioniști încep adesea cu forme simple, pe care le combină ș
 | **Torus** | inele, covrigi, roți groase |
 | **Monkey** | Suzanne |
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Meniul Add”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — meniul Add (2 min)**  
+- [ ] Cu **Shift + A → Mesh** găsești Cube, UV Sphere, Cylinder, Cone, Torus  
+- [ ] Ai adăugat cel puțin 4 forme diferite  
 
 ### 2) Locul unde apar formele
 Obiectele noi apar la **cursorul 3D** (cercul alb-roșu din mijloc, la început).
@@ -61,9 +62,9 @@ Obiectele noi apar la **cursorul 3D** (cercul alb-roșu din mijloc, la început)
 | Muți cursorul | **Shift + click dreapta** unde vrei |
 | Îl readuci în centru | **Shift + C** |
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Locul unde apar formele”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — cursorul 3D (2 min)**  
+- [ ] Cu **Shift + click dreapta** muți cursorul 3D  
+- [ ] Cu **Shift + C** îl readuci în centru  
 
 ### 3) Panoul „Adjust Last Operation”
 Imediat după ce adaugi o formă, în **colțul stânga-jos** al viewport-ului apare un panou mic, pe care îl deschizi cu click:
@@ -77,17 +78,17 @@ Imediat după ce adaugi o formă, în **colțul stânga-jos** al viewport-ului a
 
 > Atenție: panoul dispare când faci altă acțiune. Reglează **imediat** după ce adaugi forma.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Panoul „Adjust Last Operation””  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — panoul din stânga-jos (2–3 min)**  
+- [ ] Ai schimbat **Vertices** la un cilindru și forma a devenit mai colțuroasă sau mai rotundă  
+- [ ] Ai schimbat **Radius** sau **Depth**  
 
 ### 4) Origine și nume
 - Orice obiect are un **punct de origine** (punctul portocaliu mic). Rotația și scalarea se fac **în jurul lui**.  
 - Redenumește fiecare obiect cu **F2**, ca să nu te încurci.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Origine și nume”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — numele (2 min)**  
+- [ ] Vezi punctul portocaliu mic al unui obiect (originea)  
+- [ ] Obiectul are nume în **Outliner**, dat cu **F2**  
 
 ### 5) Complet — „Racheta mea”
 Construiește pe rând (șterge mai întâi cubul de start, cu **X**):
@@ -107,9 +108,9 @@ Construiește pe rând (șterge mai întâi cubul de start, cu **X**):
 4. Geamul: o sferă mică la **Y = −0.45**, **Z = 2.3**.  
 5. Fiecare piesă primește un nume (**F2**): `Corp`, `Varf`, `Aripa1`…
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Complet — „Racheta mea””  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — racheta (4 min)**  
+- [ ] Corpul stă pe podea, iar vârful e deasupra lui  
+- [ ] Cele 3 aripi sunt la distanțe egale, văzute de sus cu **7**  
 
 ### 6) Verifică din toate părțile
 Folosește vederile din L2: **1** (față), **3** (dreapta), **7** (sus). Sunt aripile la distanțe egale?

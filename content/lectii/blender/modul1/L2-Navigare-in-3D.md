@@ -1,4 +1,5 @@
 # Lecția 2 — Navigare în 3D
+### Navigare în 3D
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
 
@@ -47,9 +48,10 @@ Un obiect 3D are **lățime, înălțime și adâncime**. Ca să modelezi bine o
 
 Încearcă fiecare 1 minut. La început pare ciudat, dar în 10 minute e firesc!
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Cele 3 mișcări de bază (mouse peste viewport)”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — mișcările (3 min)**  
+- [ ] Poți roti vederea în jurul cubului  
+- [ ] Poți deplasa vederea și poți mări sau micșora  
+- [ ] Fără rotiță: știi combinațiile cu **Alt**  
 
 ### 3) „Giroscopul” din colțul dreapta sus
 În colțul viewport-ului e o **sferă cu axe colorate**:
@@ -64,9 +66,9 @@ Un obiect 3D are **lățime, înălțime și adâncime**. Ca să modelezi bine o
 - **Trage** cu mouse-ul pe sferă → rotești vederea.  
 - Mici butoane lângă ea: **mâna** (deplasare) și **lupa** (zoom). Le tragi cu mouse-ul.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „„Giroscopul” din colțul dreapta sus”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — giroscopul (2 min)**  
+- [ ] Un click pe axa roșie, verde sau albastră schimbă vederea  
+- [ ] Tragând pe sferă, vederea se rotește  
 
 ### 4) Vederi standard
 Cu **Numpad** (sau emulat, cu tastele de sus):
@@ -83,9 +85,9 @@ Cu **Numpad** (sau emulat, cu tastele de sus):
 - **Perspectivă:** ca ochiul tău, lucrurile îndepărtate par mici.  
 - **Ortografic:** toate liniile paralele rămân paralele, perfect pentru a modela precis.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Vederi standard”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — vederile (3 min)**  
+- [ ] Tastele **1**, **3** și **7** dau față, dreapta și sus  
+- [ ] Tasta **0** arată prin cameră, iar **5** schimbă perspectiva cu ortografic  
 
 ### 5) Nu te pierde!
 
@@ -95,9 +97,9 @@ Cu **Numpad** (sau emulat, cu tastele de sus):
 | **Numpad .** (punct) | **apropie** obiectul selectat |
 | **Shift + C** | resetează vederea și cursorul 3D |
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Nu te pierde!”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — „nu te pierde” (2 min)**  
+- [ ] **Home** aduce toată scena în vedere  
+- [ ] După un click pe un obiect în **Outliner**, **Numpad .** sare la el  
 
 ### 6) Complet — jocul „Găsește obiectul”
 1. Adaugă 3 obiecte (**Shift + A → Mesh**: Cone, Torus, Monkey) și mută obiectele departe de centru cu **G**.  
@@ -105,9 +107,9 @@ Cu **Numpad** (sau emulat, cu tastele de sus):
 3. Click pe fiecare în **Outliner**, apoi **Numpad .**: vederea sare la el.  
 4. Fă un scurt „tur”: față (1), dreapta (3), sus (7) și cameră (0).
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Complet — jocul „Găsește obiectul””  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — jocul (3–4 min)**  
+- [ ] Ai 3 obiecte mutate departe de centru, iar **Home** le arată pe toate  
+- [ ] Faci turul: față, dreapta, sus, cameră  
 
 ### 7) Creează tu — „Turul ghidat”
 Acum aranjezi tu scena și o arăți altcuiva.

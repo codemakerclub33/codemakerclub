@@ -1,4 +1,5 @@
 # Lecția 1 — Interfața Blender și primul cub
+### Interfață și primul cub
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
 
@@ -39,9 +40,9 @@ Blender are multe butoane, dar le folosești doar pe câteva. Dacă știi **unde
 2. La pornire apare o fereastră de bun venit: alege **General**.  
 3. Vezi o scenă cu **un cub**, **o lumină** și **o cameră**. Asta e „scena de start”.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Pornim Blender”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — pornirea (2–3 min)**  
+- [ ] Vezi pe ecran un cub, o lumină și o cameră  
+- [ ] Ai ales **General** în fereastra de bun venit  
 
 ### 2) Pregătirea mouse-ului (doar dacă nu ai rotiță)
 Blender folosește des **butonul din mijloc** al mouse-ului. Pe laptop fără mouse:
@@ -50,9 +51,9 @@ Blender folosește des **butonul din mijloc** al mouse-ului. Pe laptop fără mo
 2. Bifează **Emulate 3 Button Mouse** (acum **Alt + click stânga** = buton din mijloc).  
 3. Bifează și **Emulate Numpad** (tastele de sus 1, 2, 3… fac ce fac cele de la numpad).
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Pregătirea mouse-ului (doar dacă nu ai rotiță)”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — mouse-ul (2 min)**  
+- [ ] În **Preferences → Input** sunt bifate **Emulate 3 Button Mouse** și **Emulate Numpad**  
+- [ ] Cu **Alt + click stânga** și mișcare, vederea se rotește  
 
 ### 3) Cele 4 zone ale ecranului
 
@@ -67,9 +68,9 @@ Blender folosește des **butonul din mijloc** al mouse-ului. Pe laptop fără mo
 
 > **Regulă de aur:** scurtăturile de la tastatură merg doar când **mouse-ul e deasupra zonei** în care vrei să lucrezi.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Cele 4 zone ale ecranului”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — zonele (2 min)**  
+- [ ] Poți arăta cu degetul: **3D Viewport**, **Outliner**, **Properties**, **Timeline**  
+- [ ] Mouse-ul stă deasupra zonei în care vrei să lucrezi  
 
 ### 4) Primele acțiuni
 Mouse-ul peste **3D Viewport**:
@@ -86,9 +87,9 @@ Mouse-ul peste **3D Viewport**:
 
 Încearcă: selectează cubul, apasă **G**, mută cubul, confirmă; apoi **Ctrl + Z** și vezi cum se întoarce.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Primele acțiuni”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — prima mutare (3 min)**  
+- [ ] Cubul se selectează (contur portocaliu) și se mută cu **G**  
+- [ ] După **Ctrl + Z**, cubul revine la locul lui  
 
 ### 5) Complet — maimuța Suzanne
 1. Selectează cubul și apasă **X** → **Delete** (șterge).  
@@ -96,9 +97,9 @@ Mouse-ul peste **3D Viewport**:
 3. Cu mouse-ul peste viewport apasă **F2** și scrie numele: `Maimutica`. Enter.  
 4. Verifică în **Outliner**: numele a apărut acolo.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Complet — maimuța Suzanne”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — maimuța (3 min)**  
+- [ ] Cubul e șters și în scenă apare maimuța  
+- [ ] În **Outliner** apare numele pe care i l-ai dat cu **F2**  
 
 ### 6) Creează tu — „Maimuța are nevoie de o scenă”
 De aici nu mai urmezi pași scriși: alegi tu ce construiești.
@@ -117,9 +118,9 @@ De aici nu mai urmezi pași scriși: alegi tu ce construiești.
 - Numește fișierul `Prenume_Nume_B1_L01.blend`.  
 - De acum, **Ctrl + S** salvează rapid. Fă asta des!
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Salvarea”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — salvarea (2 min)**  
+- [ ] Fișierul e salvat cu numele `Prenume_Nume_B1_L01.blend`  
+- [ ] Știi că **Ctrl + S** salvează rapid  
 
 ### Dacă ai terminat devreme
 - [ ] Adaugă **5 maimuțe** și mută maimuțele în cerc  

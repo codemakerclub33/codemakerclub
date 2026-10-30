@@ -1,4 +1,5 @@
 # Lecția 8 — Lumini și cameră
+### Lumini și cameră
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
 
@@ -44,9 +45,9 @@ Aceeași casă arată **foarte diferit** la prânz și la apus. Lumina face jum�
 | **Spot** | con de lumină | far, lanternă |
 | **Area** | panou luminos | studio foto, ferestre |
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Tipuri de lumină”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — tipurile de lumină (2 min)**  
+- [ ] Ai adăugat cu **Shift + A → Light** o lumină Sun și una Point  
+- [ ] Știi la ce e bună fiecare  
 
 ### 2) Setări (Properties → tab Light, becul verde)
 - **Color** — culoarea luminii (galben cald, albastru rece).  
@@ -55,9 +56,9 @@ Aceeași casă arată **foarte diferit** la prânz și la apus. Lumina face jum�
 
 > Lumina **Sun** se rotește cu **R** ca să se schimbe unghiul umbrei; poziția ei nu contează, doar **direcția**.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Setări (Properties → tab Light, becul verde)”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — setările luminii (3 min)**  
+- [ ] Ai schimbat **Color** și **Strength** sau **Power**  
+- [ ] Scena se luminează sau se întunecă după setări  
 
 ### 3) Experimentul zilei
 
@@ -69,9 +70,9 @@ Aceeași casă arată **foarte diferit** la prânz și la apus. Lumina face jum�
 
 Treci în modul **Rendered** (sfera din dreapta sus) ca să vezi umbrele.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Experimentul zilei”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — experimentul zilei (3–4 min)**  
+- [ ] Cu Sun aproape vertical umbrele sunt scurte (prânz)  
+- [ ] Cu Sun aproape orizontal umbrele sunt lungi (apus)  
 
 ### 4) Camera
 Camera din scena de start e la dreapta și sus. O poți muta cu **G** și roti cu **R**, dar există un mod mult mai ușor:
@@ -81,9 +82,9 @@ Camera din scena de start e la dreapta și sus. O poți muta cu **G** și roti c
 3. Verifică prin cameră: **Numpad 0**.  
 4. Dacă ai nevoie să ajustezi **fără să te încurci**, în **N → View → Camera to View** bifează opțiunea și poți naviga, iar camera te urmează (**debifează după!**).
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Camera”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — camera (3 min)**  
+- [ ] Cu **Ctrl + Alt + Numpad 0** camera sare la vederea ta  
+- [ ] Cu **Numpad 0** vezi poza prin cameră  
 
 ### 5) Regula treimilor
 Împarte cu gândul ecranul în 3×3 pătrate. Pune subiectul **pe linii sau la intersecții**, nu mereu în mijloc. În **Properties → Camera → Viewport Display** bifează **Composition Guides → Thirds** (liniile apar în vederea camerei).
@@ -99,18 +100,18 @@ Camera din scena de start e la dreapta și sus. O poți muta cu **G** și roti c
 
 Pentru scena noastră, **35–50 mm** merge bine.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Lentila camerei”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — lentila (2 min)**  
+- [ ] Ai încercat 24 mm, 50 mm și 85 mm  
+- [ ] Pentru scena ta ai ales o valoare între 35 și 50 mm  
 
 ### 7) Complet — compoziția finală
 - Un **Sun** cald (portocaliu deschis, Strength 3).  
 - Un **Area** mic, albastru, **Power 200**, ca lumină de umplere din partea opusă.  
 - Camera la 35 mm, așezată din colț, ca să vezi **două fețe** ale casei.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Complet — compoziția finală”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — compoziția (4 min)**  
+- [ ] Ai un Sun cald și un Area albastru din partea opusă  
+- [ ] Camera vede două fețe ale casei  
 
 ### 8) Creează tu — „Dispoziția mea”
 Alegi tu ce simte cine se uită la poza casei.

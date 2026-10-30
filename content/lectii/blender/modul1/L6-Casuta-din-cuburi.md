@@ -1,4 +1,5 @@
 # Lecția 6 — Căsuța din cuburi
+### Dimensiuni și snap
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
 
@@ -41,9 +42,9 @@ Cubul de start e mare de **2×2×2**. Îl transformi într-o căsuță mai lată
 3. **G Z 1 Enter** — acum **sta pe podea** (Z = 1, jumătate din înălțime).  
 4. În **N → Item → Dimensions** vezi dimensiunile (X = 3, Y = 2.4, Z = 2).
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Corpul casei”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — corpul casei (2 min)**  
+- [ ] **Dimensions** arată X = 3, Y = 2.4, Z = 2  
+- [ ] Casa stă pe podea, nu plutește  
 
 ### 2) Acoperișul — un con cu 4 laturi
 1. **Shift + A → Mesh → Cone.**  
@@ -54,27 +55,27 @@ Cubul de start e mare de **2×2×2**. Îl transformi într-o căsuță mai lată
 
 > **Truc:** vezi dimensiunea acoperișului în **N → Dimensions** și fă acoperișul puțin **mai mare** decât corpul, ca streașina să iasă în afară.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Acoperișul — un con cu 4 laturi”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — acoperișul (3 min)**  
+- [ ] Acoperișul e o piramidă cu laturile paralele cu ale casei  
+- [ ] Streașina iese puțin în afara pereților  
 
 ### 3) Ușa
 1. **Shift + A → Mesh → Cube**. În **N → Item → Dimensions** scrie: X 0.8, Y 0.1, Z 1.6.  
 2. Așază ușa pe fața din față a casei: **Location X = 0, Y = −1.25, Z = 0.8** (peretele din față e la Y = −1.2).  
 3. Vezi din față (**1**): ușa e centrată pe casă?
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Ușa”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — ușa (2 min)**  
+- [ ] Ușa e centrată pe peretele din față, văzută cu **1**  
+- [ ] Iese puțin în afara peretelui  
 
 ### 4) Ferestrele
 - Un cub mic: Dimensions X 0.6, Y 0.1, Z 0.6, la **X = 0.9**, **Y = −1.25**, **Z = 1.3**.  
 - **Shift + D → click dreapta** și apoi **G X −1.8 Enter**: a doua fereastră, simetrică.  
 - Ținem ferestrele **puțin ieșite** din perete, ca să se vadă.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Ferestrele”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — ferestrele (2 min)**  
+- [ ] A doua fereastră e simetrică cu prima  
+- [ ] Ferestrele ies puțin din perete  
 
 ### 5) Snap — lipire exactă
 Snap = „magnet” care te ajută să muți exact pe grilă sau pe alte obiecte.
@@ -87,18 +88,18 @@ Snap = „magnet” care te ajută să muți exact pe grilă sau pe alte obiecte
 
 Încearcă: pornește snap-ul, apasă **G** pe fereastră și apropie fereastra de colțul unui perete.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Snap — lipire exactă”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — snap-ul (2–3 min)**  
+- [ ] Pornești și oprești snap-ul cu **Shift + Tab**  
+- [ ] Cu snap, fereastra se lipește exact de colțul peretelui  
 
 ### 6) Complet — horn și pământ
 - **Horn:** un cub (Dimensions X 0.4, Y 0.4, Z 1.0) pe acoperiș, **X = 0.8**, **Z = 3**.  
 - **Pământ:** **Shift + A → Mesh → Plane**, **S 8 Enter**. Se așază la **Z = 0**.  
 - Verifică casa din toate vederile (**1, 3, 7**).
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Complet — horn și pământ”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — hornul și pământul (2 min)**  
+- [ ] Hornul e pe acoperiș și nu intră în el prea adânc  
+- [ ] Casa se vede completă din **1**, **3** și **7**  
 
 ### Dacă ai terminat devreme
 - [ ] Un **gard** din cuburi subțiri  

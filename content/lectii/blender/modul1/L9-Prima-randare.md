@@ -1,4 +1,5 @@
 # Lecția 9 — Prima randare
+### Randare
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
 
@@ -44,9 +45,9 @@ Până acum ai lucrat în viewport. Randarea face **imaginea finală**: calculea
 
 > Dacă ai pierdut fereastra, **F11** o aduce înapoi.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Prima randare”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — prima randare (3 min)**  
+- [ ] **F12** a deschis fereastra cu imaginea  
+- [ ] Imaginea e salvată ca PNG, cu numele corect  
 
 ### 2) Setările de randare
 **Properties → tab Render** (aparatul foto):
@@ -56,9 +57,9 @@ Până acum ai lucrat în viewport. Randarea face **imaginea finală**: calculea
 | **Render Engine** | „motorul” care calculează imaginea |
 | **Samples** | câte „încercări” face per pixel (mai multe = mai curat, dar mai lent) |
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Setările de randare”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — setările (2 min)**  
+- [ ] Găsești **Render Engine** și **Samples** în **Properties → Render**  
+- [ ] Știi că mai multe Samples înseamnă imagine mai curată, dar mai lentă  
 
 ### 3) Cele două motoare
 
@@ -69,9 +70,9 @@ Până acum ai lucrat în viewport. Randarea face **imaginea finală**: calculea
 
 Pentru calculatoare mai slabe, rămâi pe **EEVEE**.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Cele două motoare”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — motoarele (2 min)**  
+- [ ] Știi diferența dintre **EEVEE** (rapid) și **Cycles** (lent, realist)  
+- [ ] Ai ales EEVEE pentru lucrul de zi cu zi  
 
 ### 4) Rezoluția
 **Properties → tab Output** (imprimanta):
@@ -84,9 +85,9 @@ Pentru calculatoare mai slabe, rămâi pe **EEVEE**.
 
 > **Truc:** testează cu **50%**, ca să mergi rapid, iar pentru poza finală treci la **100%**.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Rezoluția”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — rezoluția (2 min)**  
+- [ ] Rezoluția e 1920 × 1080  
+- [ ] Pentru teste ai pus 50%, iar pentru poza finală 100%  
 
 ### 5) Experiment: Cycles
 1. Render → **Cycles**.  
@@ -95,9 +96,9 @@ Pentru calculatoare mai slabe, rămâi pe **EEVEE**.
 4. F12. Compară cu EEVEE: umbrele și reflexiile sunt mai fine?  
 5. Notează cât a durat. Dacă e prea lent, scade **Resolution %**.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Experiment: Cycles”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — Cycles (3–4 min)**  
+- [ ] Ai randat cu Cycles, 64 Samples și **Denoise**  
+- [ ] Ai notat cât a durat și ai comparat cu EEVEE  
 
 ### 6) Complet — fundal transparent
 Vrei omulețul fără cer, ca să lipești omulețul pe altă imagine:
@@ -106,9 +107,9 @@ Vrei omulețul fără cer, ca să lipești omulețul pe altă imagine:
 2. **Output → Output → File Format: PNG**, **Color: RGBA**.  
 3. F12 și salvează. În editorul de imagini vezi pătrățele gri-albe în loc de fundal.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Complet — fundal transparent”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — fundalul transparent (3 min)**  
+- [ ] Ai bifat **Film → Transparent**  
+- [ ] Ai salvat PNG cu **RGBA** și vezi pătrățele în loc de fundal  
 
 ### 7) Creează tu — „Trei poze, trei povești”
 Faci trei poze ale **aceleiași scene**. Schimbi de fiecare dată un singur lucru, ca să vezi ce diferență face.

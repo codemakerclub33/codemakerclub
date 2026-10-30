@@ -1,4 +1,5 @@
 # Lecția 3 — Mutăm, rotim, scalăm
+### Transformări
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
 
@@ -45,9 +46,9 @@ Selectează cubul, mouse peste viewport:
 
 Mișcă mouse-ul după ce ai apăsat tasta: obiectul te urmează.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Cele trei transformări”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — G, R, S (3 min)**  
+- [ ] **G** mută, **R** rotește și **S** scalează cubul  
+- [ ] Cu **Esc** anulezi fiecare mișcare  
 
 ### 2) Blocare pe o axă
 După ce apeși **G**, **R** sau **S**, apasă **X**, **Y** sau **Z** și obiectul se mișcă **doar pe acea axă**.
@@ -59,9 +60,9 @@ După ce apeși **G**, **R** sau **S**, apasă **X**, **Y** sau **Z** și obiect
 | **S**, **Z** | întinde doar pe înălțime |
 | **G**, **Shift + Z** | mută **fără** axa Z (doar pe podea) |
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Blocare pe o axă”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — axele (3 min)**  
+- [ ] **G**, **Z** mută doar în sus și în jos  
+- [ ] **R**, **Z** învârte cubul ca un titirez  
 
 ### 3) Numere exacte
 După **G + axă**, scrie un **număr** și apasă **Enter**:
@@ -75,9 +76,9 @@ După **G + axă**, scrie un **număr** și apasă **Enter**:
 
 Poți scrie și cu minus: **G X -2 Enter** mută spre stânga.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Numere exacte”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — numerele (3 min)**  
+- [ ] **G Z 3 Enter** mută cubul exact cu 3 unități în sus  
+- [ ] **S 2 Enter** îl mărește de 2 ori  
 
 ### 4) Panoul de transformare (tasta N)
 Apasă **N** și, în tab-ul **Item**, vezi **Location, Rotation, Scale**. Poți scrie acolo direct valorile:
@@ -88,9 +89,9 @@ Apasă **N** și, în tab-ul **Item**, vezi **Location, Rotation, Scale**. Poți
 | **Rotation** X, Y, Z | cât e rotit (grade) |
 | **Scale** X, Y, Z | cât e de mare (1 = normal) |
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Panoul de transformare (tasta N)”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — panoul N (2 min)**  
+- [ ] În tab-ul **Item** vezi **Location**, **Rotation** și **Scale**  
+- [ ] Dacă scrii o valoare acolo, cubul se mută  
 
 ### 5) Resetări utile
 
@@ -100,9 +101,9 @@ Apasă **N** și, în tab-ul **Item**, vezi **Location, Rotation, Scale**. Poți
 | **Alt + R** | scoate rotația |
 | **Alt + S** | readuce mărimea la 1 |
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Resetări utile”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — resetările (2 min)**  
+- [ ] **Alt + G** pune cubul înapoi în centru  
+- [ ] **Alt + R** și **Alt + S** scot rotația și readuc mărimea la 1  
 
 ### 6) Complet — „Scara spre cer”
 1. Selectează cubul → **S** → **0.5 Enter**. Acum are latura de 1 unitate.  
@@ -116,9 +117,9 @@ Apasă **N** și, în tab-ul **Item**, vezi **Location, Rotation, Scale**. Poți
 >  
 > Treptele din acest exercițiu „plutesc”, cu spațiu gol dedesubt. Așa e scara din joc, e normal.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Complet — „Scara spre cer””  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — scara (4 min)**  
+- [ ] Primele trepte sunt duplicate cu **Shift + D**  
+- [ ] Fiecare treaptă e cu 1 unitate mai la dreapta și 0.5 mai sus  
 
 ### 7) Creează tu — „Scara mea”
 Acum o construiești pe a ta, fără pași scriși. Alege **una** dintre variante:

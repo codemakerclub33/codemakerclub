@@ -1,4 +1,5 @@
 # Lecția 10 — Proiect: mini-diorama
+### Proiect final
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
 
@@ -43,9 +44,9 @@ Un proiect complet leagă toate pașii: modelare, culoare, lumină, cameră, ran
 
 Desenează un plan scurt: **ce obiecte**, **unde stau**.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Alege o temă”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — tema (2 min)**  
+- [ ] Ai ales o temă și ai un plan: ce obiecte și unde stau  
+- [ ] Planul e desenat pe foaie  
 
 ### 2) Baza
 O diorama arată bine pe o **bază** care „ține” scena:
@@ -54,9 +55,9 @@ O diorama arată bine pe o **bază** care „ține” scena:
 2. Așază piesa la **Z = −0.25**, ca fața de sus să fie exact la nivelul 0.  
 3. Pe baza aceasta pui totul.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Baza”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — baza (2 min)**  
+- [ ] Baza are fața de sus exact la nivelul 0  
+- [ ] Poți așeza un obiect pe ea fără să plutească  
 
 ### 3) Obiecte din lecțiile trecute
 Poți **copia** obiecte din alte fișiere:
@@ -74,18 +75,18 @@ Sau refă piesele simplu, direct în scenă.
 | Coroană | Cone sau Ico Sphere | verde |
 | Brad | 3 conuri suprapuse | verde închis |
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Obiecte din lecțiile trecute”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — obiectele (4 min)**  
+- [ ] Ai cel puțin 3 obiecte pe bază, făcute simplu sau aduse cu **File → Append**  
+- [ ] Fiecare obiect stă pe bază  
 
 ### 4) Organizare
 - **Redenumește** fiecare obiect (**F2**): `Casa`, `Pom1`, `Omulet`…  
 - **Grupează** (Ctrl + P) piesele care merg împreună.  
 - Păstrează **câte puțin spațiu între obiecte**, ca să nu fie aglomerat.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Organizare”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — organizarea (3 min)**  
+- [ ] Fiecare obiect are nume clar, nu `Cube.001`  
+- [ ] Piesele care merg împreună sunt legate cu **Ctrl + P**  
 
 ### 5) Culori, lumini, cameră
 1. **Materiale:** minim 5 culori diferite (L7).  
@@ -93,9 +94,9 @@ Sau refă piesele simplu, direct în scenă.
 3. **Camera** din colț, 35–50 mm, regula treimilor.  
 4. **Randare:** EEVEE, 1920 × 1080, 100%, **PNG** (L9).
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Culori, lumini, cameră”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — culori, lumini, cameră (4 min)**  
+- [ ] Ai cel puțin 5 culori diferite și o scenă cu umbre  
+- [ ] Camera vede subiectul principal, iar poza e randată în PNG  
 
 ### 6) Lista de verificare
 
@@ -108,9 +109,9 @@ Sau refă piesele simplu, direct în scenă.
 | ☐ | Subiectul principal e vizibil din cameră |
 | ☐ | Imaginea PNG e salvată |
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Lista de verificare”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — lista de verificare (2 min)**  
+- [ ] Ai bifat toate punctele din tabel  
+- [ ] Fișierul `.blend` și PNG-ul sunt salvate  
 
 ### 7) Verificare finală Modul 1
 
