@@ -215,7 +215,7 @@ Ordinea e un **model**: poți schimba numerele și textele. Gunoiul are **un sin
 
 **Cum îl construiești, pe bucăți:**
 1. **Începutul:** steagul, `setează mărimea`, `setează mod tragere [activat]` și cele trei `setează`: `scor` la `0`, `vieți` la `3` și `nr` la `0`
-2. **Bucla mare:** `repetă până când <<(nr) = 10> sau <(vieți) < 1>>`: jocul merge cât timp nu s-au terminat cele 10 deșeuri și mai ai vieți
+2. **Bucla mare:** `repetă până când <<(nr) = 10> sau <(vieți) < 1>>`: jocul merge cât timp nu au fost terminate cele 10 deșeuri și mai ai vieți
 3. **Un deșeu nou:** costum la întâmplare, `viteză` la întâmplare, `mergi la x: … y: 150`, apoi `arată`
 4. **Căderea:** al doilea `repetă până când`, în care deșeul coboară cu `modifică y cu ((viteză) * -1)`. Se oprește când îl prinzi sau când ajunge jos
 5. **Scăpat sau prins:** `dacă <(poziția y) < -150>` pierzi o viață. `altfel` înseamnă că l-ai prins, așa că aștepți să dai drumul la buton

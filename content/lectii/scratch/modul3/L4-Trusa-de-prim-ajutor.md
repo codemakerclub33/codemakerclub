@@ -208,7 +208,7 @@ Ordinea e un **model**: poți schimba textele și numerele. Copilul are **un sin
 <span style="color:#E6A800;font-weight:700">difuzează</span> `sfârșit`  
 
 **Cum îl construiești, pe bucăți:**
-1. **Începutul:** steagul, cele trei variabile și `așteaptă 1 secunde`. Pauza lasă Trusa să-și umple lista, înainte să înceapă bucla
+1. **Începutul:** steagul, cele trei variabile și `așteaptă 1 secunde`. Pauza lasă Trusa să umple lista, înainte să înceapă bucla
 2. **Bucla:** `repetă până când <<(lungimea lui [trusa]) = 0> sau <(vieți) < 1>>`: jocul continuă până se golește trusa sau ți se termină viețile. Înăuntru: problema, cronometrul și întrebarea
 3. **Verificarea:** `dacă` cu trusa și timpul, în care pui al doilea `dacă` cu remediul, apoi cele două `altfel`
 4. **După buclă:** `dacă (vieți) < 1`, cu `altfel`, apoi mesajul cu 112
@@ -247,7 +247,7 @@ Trusa are **2 scripturi** complete. Primul golește lista, o umple cu trei obiec
 
 ## Bonus (dacă ai terminat Complet)
 ### Pasul 4 — Scripturile Trofeului *(★★★)*
-Al 3-lea personaj ține minte cel mai bun scor. Creezi lista `record`, **pentru toate personajele**, și scrii în ea un singur rând: `0`. Alegi din bibliotecă sprite-ul `Star` (steaua va fi trofeul). Dacă vrei, o colorezi aurie în editorul de costume. Îl redenumești `Trofeul`. Scriptul Copilului **nu se mai schimbă**: are deja `difuzează sfârșit` la final, iar Trofeul îl primește.
+Al 3-lea personaj ține minte cel mai bun scor. Creezi lista `record`, **pentru toate personajele**, și scrii în ea un singur rând: `0`. Alegi din bibliotecă personajul `Star` (steaua va fi trofeul). Dacă vrei, o colorezi aurie în editorul de costume. Îl redenumești `Trofeul`. Scriptul Copilului **nu se mai schimbă**: are deja `difuzează sfârșit` la final, iar Trofeul îl primește.
 
 Trofeul are **2 scripturi** complete:
 

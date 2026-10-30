@@ -88,7 +88,7 @@ La finalul orei joci propria cursă: Semaforul trece prin roșu, galben și verd
 
 ### 4) Al doilea jucător, pe alte taste
 1. Adversarul are aceleași scripturi ca Bolidul, dar le citește **alte taste**: `w` accelerează, `a` întoarce spre stânga, `d` întoarce spre dreapta. Alegi tastele din meniul blocului `tasta [ ] apăsată?`
-2. Fiecare mașină are **viteza ei**: Bolidul folosește `viteză`, iar Adversarul `viteză adversar`. Dacă ar folosi aceeași variabilă, și-ar da viteza una alteia
+2. Fiecare mașină are **viteza ei**: Bolidul folosește `viteză`, iar Adversarul `viteză adversar`. Dacă ar folosi aceeași variabilă, ar amesteca viteza una cu alta
 3. La fel și turele: Bolidul numără în `ture`, iar Adversarul în `ture adversar`
 4. **Truc:** ca să nu refaci totul, tragi un script de la Bolid peste Adversar, în lista de personaje de jos. Se copiază acolo. Apoi schimbi **tastele**, **variabilele** (`viteză adversar`, `ture adversar`) și **locul de start**
 

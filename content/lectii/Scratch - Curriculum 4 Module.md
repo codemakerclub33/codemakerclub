@@ -40,16 +40,16 @@
 
 | # | Titlu | Focus (~2h) |
 |---|--------|-------------|
-| 1 | Ideea de joc | Erou, obstacole, obiectiv pe hârtie + Scratch |
-| 2 | Coliziuni + feedback | Sunet, costum, „doare / ia bonus” |
-| 3 | Scor pe scenă | Variabilă vizibilă |
-| 4 | Vieți și Game Over | Flux de final |
-| 5 | Timer | Presiune de timp |
-| 6 | Nivele | Schimbare fundal / dificultate |
-| 7 | Clone | Monede, inamici (intro) |
-| 8 | Meniu Start | Buton + reset scor |
+| 1 | Pădurea fermecată | Straturi, costume, variabile, tastă și distanță |
+| 2 | Sistemul solar în cursă | Liste, loc, pariu |
+| 3 | Invazia clonelor | Clone, scor și vieți |
+| 4 | Trusa de prim ajutor | Liste: căutare, inserare, înlocuire |
+| 5 | Formula 1 | Viteză, ture și piste |
+| 6 | Capsula timpului | Anul curent, nume utilizator, liste |
+| 7 | Cald și rece | Distanță cu modul, mouse |
+| 8 | Salvează planeta | Costume cu număr, atingeri, tragere |
 | 9 | Zidul magic | Brick Breaker: clone, modele de cărămizi, meniu, pauză |
-| 10 | Recap Modul 3 | Polish: viteză, sunet, UI |
+| 10 | Completare + prezentare: Galeria Game Builder | Recap Modul 3, insigna Game Builder |
 
 ## Modul 4 — Proiecte · badge: Scratch Creator
 
