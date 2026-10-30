@@ -10,7 +10,7 @@ Ce ai nevoie. Un calculator cu Blender patru punct doi, versiunea LTS, de pe ble
 
 Primul pas. Pornim Blender. Cu ajutorul unui adult, instalezi Blender de pe site-ul oficial. La pornire apare o fereastră de bun venit: alegi General. Vezi o scenă cu un cub, o lumină și o cameră. Aceasta este scena de start.
 
-Al doilea pas. Pregătirea mouse-ului, doar dacă n-ai rotiță. Blender folosește des butonul din mijloc al mouse-ului. Pe un laptop fără mouse, mergi la Edit, apoi Preferences, apoi Input. Bifezi Emulate Three Button Mouse, adică de acum Alt plus click stânga înseamnă butonul din mijloc. Bifezi și Emulate Numpad, ca tastele cu cifre de sus să facă ce fac cele de pe tastatura numerică.
+Al doilea pas. Pregătirea mouse-ului, doar dacă nu ai rotiță. Blender folosește des butonul din mijloc al mouse-ului. Pe un laptop fără mouse, mergi la Edit, apoi Preferences, apoi Input. Bifezi Emulate Three Button Mouse, adică de acum Alt plus click stânga înseamnă butonul din mijloc. Bifezi și Emulate Numpad, ca tastele cu cifre de sus să facă ce fac cele de pe tastatura numerică.
 
 Al treilea pas. Cele patru zone ale ecranului. În mijloc, mare, este Viewport: aici vezi și construiești modelul. Sus în dreapta este Outliner, lista obiectelor din scenă. Jos în dreapta este Properties, setările obiectului selectat. Jos este Timeline, folosit pentru animații, pe care nu îl folosim încă. În partea de sus ai meniurile File, Edit, Render, Window și Help, iar sub ele spațiile de lucru: Layout, Modeling, Sculpting și altele.
 

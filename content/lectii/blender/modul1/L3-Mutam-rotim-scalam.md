@@ -73,7 +73,7 @@ După **G + axă**, scrie un **număr** și apasă **Enter**:
 | **S 2 Enter** | mărește de **2 ori** |
 | **S Z 0.5 Enter** | înjumătățește înălțimea |
 
-Poți scrie și cu minus: **G X −2 Enter** mută spre stânga.
+Poți scrie și cu minus: **G X -2 Enter** mută spre stânga.
 
 **Gata când:**  
 - [ ] Am făcut toți pașii din „Numere exacte”  

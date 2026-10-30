@@ -135,7 +135,7 @@ Alegi tu ce simte cine se uită la poza casei.
 1. **Totul e întunecat** — Power prea mic sau lumina e în spatele obiectelor.  
 2. **Lumina Sun „nu schimbă nimic” când o muți** — pentru Sun contează doar **rotația**.  
 3. **Camera nu vede casa** — Ctrl + Alt + Numpad 0, apoi verifică cu Numpad 0.  
-4. **N-ai umbre** — treci în **Rendered** sau Material Preview cu umbre.  
+4. **N-ai umbre** — treci în **Rendered**.  
 5. **Camera se mișcă singură** — ai uitat **Camera to View** bifat; debifează.
 
 ---

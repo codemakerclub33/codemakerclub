@@ -43,7 +43,7 @@ Blender are multe butoane, dar le folosești doar pe câteva. Dacă știi **unde
 - [ ] Am făcut toți pașii din „Pornim Blender”  
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
-### 2) Pregătirea mouse-ului (doar dacă n-ai rotiță)
+### 2) Pregătirea mouse-ului (doar dacă nu ai rotiță)
 Blender folosește des **butonul din mijloc** al mouse-ului. Pe laptop fără mouse:
 
 1. **Edit → Preferences → Input**.  
@@ -51,7 +51,7 @@ Blender folosește des **butonul din mijloc** al mouse-ului. Pe laptop fără mo
 3. Bifează și **Emulate Numpad** (tastele de sus 1, 2, 3… fac ce fac cele de la numpad).
 
 **Gata când:**  
-- [ ] Am făcut toți pașii din „Pregătirea mouse-ului (doar dacă n-ai rotiță)”  
+- [ ] Am făcut toți pașii din „Pregătirea mouse-ului (doar dacă nu ai rotiță)”  
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 3) Cele 4 zone ale ecranului
@@ -172,7 +172,7 @@ De aici nu mai urmezi pași scriși: alegi tu ce construiești.
 
 ## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
 
-`Pornim Blender` → `Pregătirea mouse-ului (doar dacă n-ai rotiță)` → `Cele 4 zone ale ecranului` → `Primele acțiuni` → `Complet — maimuța Suzanne` → `Creează tu` → `Salvarea`
+`Pornim Blender` → `Pregătirea mouse-ului (doar dacă nu ai rotiță)` → `Cele 4 zone ale ecranului` → `Primele acțiuni` → `Complet — maimuța Suzanne` → `Creează tu` → `Salvarea`
 
 ## Mai departe *(opțional)*
 Pe blender.org găsești filme scurte făcute în Blender (de ex. „Big Buck Bunny”). Uită-te la unul și caută ce obiecte ai putea face tu.

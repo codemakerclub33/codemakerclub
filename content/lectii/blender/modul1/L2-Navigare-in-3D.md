@@ -60,7 +60,7 @@ Un obiect 3D are **lățime, înălțime și adâncime**. Ca să modelezi bine o
 | **Verde** | Y (față ↔ spate) |
 | **Albastru** | Z (sus ↔ jos) |
 
-- **Click** pe o axă → te uiți **de-a lungul** ei.  
+- **Click** pe o axă → te uiți **pe direcția** ei.  
 - **Trage** cu mouse-ul pe sferă → rotești vederea.  
 - Mici butoane lângă ea: **mâna** (deplasare) și **lupa** (zoom). Le tragi cu mouse-ul.
 
