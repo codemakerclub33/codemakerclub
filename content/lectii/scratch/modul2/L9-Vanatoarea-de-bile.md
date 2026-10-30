@@ -132,7 +132,7 @@ Cei rapizi: Complet, apoi Bonus.
 - [ ] Variabilele `scor` și `vieți` sunt pentru toate personajele  
 
 ### Pasul 2 — Mâncăciosul *(Minim)*
-Ordinea e un **model**: poți schimba textele, numerele și poziția de start. Mâncăciosul are **2 scripturi**:
+Ordinea e un **model**: poți schimba textele, numerele și poziția de start. Mâncăciosul are **un script**:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
 <span style="color:#FF8C1A;font-weight:700">setează vieți la</span> `3`  
