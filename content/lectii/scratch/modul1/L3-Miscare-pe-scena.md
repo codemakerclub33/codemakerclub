@@ -1,4 +1,5 @@
-# Lecția 3 — Plimbarea mea (mișcare pe scenă)
+# Lecția 3 — Plimbarea mea
+### Mișcare pe scenă
 **Modulul 1 · Primii pași**  
 **Code Maker Club · Scratch Starter**
 

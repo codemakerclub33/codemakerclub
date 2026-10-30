@@ -1,4 +1,5 @@
-# Lecția 7 — Comoara (coordonate X și Y)
+# Lecția 7 — Comoara
+### Coordonate X și Y
 **Modulul 1 · Primii pași**  
 **Code Maker Club · Scratch Starter**
 

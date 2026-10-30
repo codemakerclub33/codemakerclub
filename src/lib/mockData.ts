@@ -551,14 +551,14 @@ export const lectii = [
   // Scratch Modul 1
   ...genLectii('m16', [
     'Cardul meu animat',
-    'Lumea mea (2 scene și costume)',
-    'Plimbarea mea (mișcare pe scenă)',
-    'Butonul magic (evenimente)',
-    'Interviul (blocuri de aspect)',
-    'Concertul (sunet)',
-    'Comoara (coordonate X și Y)',
-    'Dansul meu (repetă și așteaptă)',
-    'Personajul meu (mini-proiect)',
+    'Lumea mea',
+    'Plimbarea mea',
+    'Butonul magic',
+    'Interviul',
+    'Concertul',
+    'Comoara',
+    'Dansul meu',
+    'Personajul meu',
     'Completare + prezentare: Galeria Scratch Starter',
   ]),
   // Scratch Modul 2

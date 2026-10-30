@@ -1,4 +1,5 @@
-# Lecția 9 — Personajul meu (mini-proiect)
+# Lecția 9 — Personajul meu
+### Mini-proiect
 **Modulul 1 · Primii pași**  
 **Code Maker Club · Scratch Starter**
 

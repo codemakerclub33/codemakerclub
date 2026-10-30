@@ -1,4 +1,5 @@
-# Lecția 5 — Interviul (blocuri de aspect)
+# Lecția 5 — Interviul
+### Blocuri de aspect
 **Modulul 1 · Primii pași**  
 **Code Maker Club · Scratch Starter**
 

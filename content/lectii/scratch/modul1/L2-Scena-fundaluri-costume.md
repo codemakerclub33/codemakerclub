@@ -1,4 +1,5 @@
-# Lecția 2 — Lumea mea (2 scene și costume)
+# Lecția 2 — Lumea mea
+### Decoruri și costume
 **Modulul 1 · Primii pași**  
 **Code Maker Club · Scratch Starter**
 

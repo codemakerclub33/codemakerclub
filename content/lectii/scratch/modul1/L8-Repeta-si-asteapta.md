@@ -1,4 +1,5 @@
-# Lecția 8 — Dansul meu (repetă și așteaptă)
+# Lecția 8 — Dansul meu
+### Repetă și așteaptă
 **Modulul 1 · Primii pași**  
 **Code Maker Club · Scratch Starter**
 

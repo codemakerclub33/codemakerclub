@@ -1,4 +1,5 @@
 # Lecția 1 — Cardul meu animat
+### Primii pași în Scratch
 **Modulul 1 · Primii pași**  
 **Code Maker Club · Scratch Starter**
 

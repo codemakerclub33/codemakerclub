@@ -1,4 +1,5 @@
-# Lecția 6 — Concertul (sunet)
+# Lecția 6 — Concertul
+### Sunet
 **Modulul 1 · Primii pași**  
 **Code Maker Club · Scratch Starter**
 

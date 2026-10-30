@@ -1,4 +1,5 @@
-# Lecția 4 — Butonul magic (evenimente)
+# Lecția 4 — Butonul magic
+### Evenimente
 **Modulul 1 · Primii pași**  
 **Code Maker Club · Scratch Starter**
 
