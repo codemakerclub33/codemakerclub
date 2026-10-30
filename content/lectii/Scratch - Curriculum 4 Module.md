@@ -10,16 +10,16 @@
 
 | # | Titlu | Focus (~2h) |
 |---|--------|-------------|
-| 1 | Ce este Scratch? Cont și interfață | Explorare UI, primul sprite, salvare proiect |
-| 2 | Scena, fundaluri, costume | Schimbare aspect, personaje multiple |
-| 3 | Mișcare pe scenă | Merge, întoarce, glisează, salturi simple |
-| 4 | Evenimente | Steag verde, click, când primesc mesaj (intro) |
-| 5 | Blocuri de aspect | Spune, gândește, mărime, efecte culoare |
-| 6 | Sunet | Note, melodii, start/stop sunet |
-| 7 | Coordonate X și Y | Poziționare, „du-te la”, centrul scenei |
-| 8 | Repetă și așteaptă | Bucle scurte, ritm animație |
-| 9 | Mini-proiect: Personajul meu | Animație 30–60s cu sunet |
-| 10 | Recap Modul 1 + showcase | Prezentare scurtă, checklist, temă |
+| 1 | Cardul meu animat | Primii pași: cont, interfață, primul sprite, salvare |
+| 2 | Lumea mea (2 scene și costume) | Decoruri, costume, schimbare aspect |
+| 3 | Plimbarea mea (mișcare pe scenă) | Merge, întoarce, glisează, salturi simple |
+| 4 | Butonul magic (evenimente) | Steag verde, click, când primesc mesaj (intro) |
+| 5 | Interviul (blocuri de aspect) | Spune, gândește, mărime, efecte culoare |
+| 6 | Concertul (sunet) | Note, melodii, start/stop sunet |
+| 7 | Comoara (coordonate X și Y) | Poziționare, „du-te la”, centrul scenei |
+| 8 | Dansul meu (repetă și așteaptă) | Bucle scurte, ritm animație |
+| 9 | Personajul meu (mini-proiect) | Animație 30–60s cu sunet |
+| 10 | Completare + prezentare: Galeria Scratch Starter | Recap Modul 1, prezentare scurtă, insigna Scratch Starter |
 
 ## Modul 2 — Logică · badge: Logic Explorer
 

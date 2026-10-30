@@ -132,7 +132,7 @@ Adaugi 2 decoruri, `Pământ` și `Spațiu` (în această ordine). Redenumești 
 - [ ] Scriptul e pe **Scenă**  
 
 ### Pasul 2 — Racheta *(Minim)*
-Alegi o rachetă din bibliotecă (categoria Spațiu), cu cel puțin 2 costume. Ordinea e un **model**: poți schimba textele, numerele și poziția.
+Alegi o rachetă din bibliotecă (în căutare scrii `Rocketship`), cu cel puțin 2 costume. Ordinea e un **model**: poți schimba textele, numerele și poziția.
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
 <span style="color:#4C97FF;font-weight:700">mergi la x:</span> `-150` <span style="color:#4C97FF;font-weight:700">y:</span> `-120`  
