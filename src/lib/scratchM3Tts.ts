@@ -19,7 +19,7 @@ const NARATIE_FILES: Record<number, string> = {
   7: 'L7-Cald-si-rece.naratie.txt',
   8: 'L8-Salveaza-planeta.naratie.txt',
   9: 'L9-Zidul-magic.naratie.txt',
-  10: 'L10-Recap-polish.naratie.txt',
+  10: 'L10-Galeria-Game-Builder.naratie.txt',
 }
 
 const PROFILE = 'scratch-m3-naratie-v1'

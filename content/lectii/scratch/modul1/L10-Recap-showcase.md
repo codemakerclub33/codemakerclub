@@ -1,4 +1,4 @@
-# Lecția 10 — Completare + prezentare (recap Modul 1)
+# Lecția 10 — Completare + prezentare: Galeria Scratch Starter
 **Modulul 1 · Primii pași**  
 **Code Maker Club · Scratch Starter**
 

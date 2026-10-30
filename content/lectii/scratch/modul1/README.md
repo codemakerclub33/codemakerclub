@@ -17,7 +17,7 @@
 | 7 | [L7-Coordonate-XY.md](./L7-Coordonate-XY.md) | Unde e pe scenă | Comoara |
 | 8 | [L8-Repeta-si-asteapta.md](./L8-Repeta-si-asteapta.md) | Repetă și așteaptă | Dansul meu |
 | 9 | [L9-Mini-proiect-Personajul-meu.md](./L9-Mini-proiect-Personajul-meu.md) | Personajul meu | Personajul meu |
-| 10 | [L10-Recap-showcase.md](./L10-Recap-showcase.md) | Completare + prezentare | Gala personajelor |
+| 10 | [L10-Recap-showcase.md](./L10-Recap-showcase.md) | Completare + prezentare: Galeria Scratch Starter | Gala personajelor |
 
 ---
 
