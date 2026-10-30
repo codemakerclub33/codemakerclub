@@ -2,20 +2,20 @@
 **Modulul 3 · Jocuri**  
 **Code Maker Club · Game Builder**
 
-> Azi înveți să afli **cât de departe** e mouse-ul de un loc ascuns. O comoară e ascunsă undeva pe scenă, iar Detectorul te urmărește și îți spune „Rece”, „Cald” sau „Fierbinte!”.  
+> Azi înveți să afli **cât de departe** e mouse-ul de un loc ascuns. O libelulă e ascunsă undeva pe scenă, iar Detectorul te urmărește și îți spune „Rece”, „Cald” sau „Fierbinte!”.  
 > Proiect: **„Cald și rece”** · fișier: `Prenume_Nume_L7` (ex. `Ana_Pop_L7`)
 
 ---
 
 ## Obiectiv
-La finalul orei joci propriul joc: o comoară e ascunsă într-un loc la întâmplare. Tu miști mouse-ul, iar Detectorul de comori îți spune cât de aproape ești. Apeși butonul mouse-ului ca să sapi. Ai **5 încercări**. Dacă ai nimerit, găsești comoara și primești un punct, iar comoara se ascunde în alt loc.  
-**Minim:** personajul 1 (Comoara), cu **2 scripturi**, și personajul 2 (Detectorul), cu **scriptul întreg**.  
-**Ținta orei (Complet):** jocul, testat în toate cazurile: rece, cald, fierbinte, comoară găsită, săpătură greșită și terminarea încercărilor.
+La finalul orei joci propriul joc: o libelulă e ascunsă într-un loc la întâmplare. Tu miști mouse-ul, iar Detectorul de libelule îți spune cât de aproape ești. Apeși butonul mouse-ului ca să prinzi. Ai **5 încercări**. Dacă ai nimerit, găsești libelula și primești un punct, iar libelula se ascunde în alt loc.  
+**Minim:** personajul 1 (Libelula), cu **2 scripturi**, și personajul 2 (Detectorul), cu **scriptul întreg**.  
+**Ținta orei (Complet):** jocul, testat în toate cazurile: rece, cald, fierbinte, libelulă găsită, încercare greșită și terminarea încercărilor.
 
 ## De ce contează
 Multe jocuri se joacă după **distanță**: cât de aproape ești de țintă. Distanța dintre două locuri e mereu un număr **pozitiv**, dar diferența dintre ele poate ieși negativă, dacă ești în stânga țintei. Blocul <span style="color:#59C059;font-weight:700">[modul] din ( )</span> (EN: *abs*, din *absolute value*) rezolvă asta: scoate **minusul**. `[modul] din (-5)` dă `5`, iar `[modul] din (5)` dă tot `5`.
 
-**Personajele le alegi tu.** Alegi din bibliotecă un personaj pentru Detector și un obiect pentru Comoară. Mărimea o setăm în script, pentru că unele personaje din bibliotecă sunt foarte mari.
+**Personajele le alegi tu.** Alegi din bibliotecă un personaj pentru Detector și un personaj pentru Libelulă. Mărimea o setăm în script, pentru că unele personaje din bibliotecă sunt foarte mari.
 
 ---
 
@@ -67,8 +67,8 @@ Multe jocuri se joacă după **distanță**: cât de aproape ești de țintă. D
 
 ### 2) Detectorul urmărește mouse-ul
 1. <span style="color:#4C97FF;font-weight:700">mergi la [cursorul mouse-ului]</span> pune personajul chiar sub cursor. Îl pui într-o buclă și te urmărește
-2. <span style="color:#5CB1D1;font-weight:700">butonul mouse-ului e apăsat?</span> este o **condiție**: e adevărată cât timp ții butonul apăsat. O pui în `dacă`, ca să știi când sapi
-3. După fiecare săpătură pui `așteaptă 2 secunde`, ca să nu sapi de mai multe ori dintr-un singur click
+2. <span style="color:#5CB1D1;font-weight:700">butonul mouse-ului e apăsat?</span> este o **condiție**: e adevărată cât timp ții butonul apăsat. O pui în `dacă`, ca să știi când prinzi
+3. După fiecare încercare pui `așteaptă 2 secunde`, ca să nu prinzi de mai multe ori dintr-un singur click
 
 **Încearcă tu — mouse-ul (3 min)**  
 - [ ] Personajul tău merge după cursor, într-o buclă  
@@ -76,7 +76,7 @@ Multe jocuri se joacă după **distanță**: cât de aproape ești de țintă. D
 - [ ] După spus, așteaptă două secunde  
 
 ### 3) Cald și rece
-1. Pui locul comorii în două variabile: `cx` și `cy`. Distanța pe `x` e `dx`, iar pe `y` e `dy`
+1. Pui locul libelulei în două variabile: `cx` și `cy`. Distanța pe `x` e `dx`, iar pe `y` e `dy`
 2. `setează dx la ([modul] din ((mouse x) - (cx)))` și la fel pentru `dy`. Le calculezi la fiecare pas, în buclă
 3. Ești **fierbinte** dacă ești aproape și pe `x`, și pe `y`: `<<(dx) < 30> și <(dy) < 30>>`
 4. Dacă nu ești fierbinte, întrebi dacă ești **cald**: `<<(dx) < 80> și <(dy) < 80>>`. Altfel ești **rece**. Cele trei răspunsuri sunt un `dacă … altfel` în care pui alt `dacă … altfel`
@@ -86,13 +86,13 @@ Multe jocuri se joacă după **distanță**: cât de aproape ești de țintă. D
 - [ ] Aproape de locul ales spune `Fierbinte!`  
 - [ ] La mijloc spune `Cald.`, iar departe spune `Rece.`  
 
-### 4) Comoara ascunsă
-1. Comoara își alege locul la întâmplare: `setează cx la (alege aleator între -200 și 200)` și `setează cy la (alege aleator între -140 și 140)`. Apoi se ascunde și merge acolo: `mergi la x: (cx) y: (cy)`
+### 4) Libelula ascunsă
+1. Libelula își alege locul la întâmplare: `setează cx la (alege aleator între -200 și 200)` și `setează cy la (alege aleator între -140 și 140)`. Apoi se ascunde și merge acolo: `mergi la x: (cx) y: (cy)`
 2. Dacă ai nimerit, Detectorul trimite `găsit`; dacă nu, trimite `greșit`
-3. La `găsit` Comoara apare, se aude sunetul, apoi se ascunde și își alege alt loc
+3. La `găsit` Libelula apare, se aude sunetul, apoi se ascunde și își alege alt loc
 
 **Încearcă tu — ascunzătoarea (3 min)**  
-- [ ] La steag, Comoara se ascunde și `cx` și `cy` au numere noi, de fiecare dată  
+- [ ] La steag, Libelula se ascunde și `cx` și `cy` au numere noi, de fiecare dată  
 - [ ] La un mesaj `găsit` ea apare și se aude sunetul  
 - [ ] După o secundă se ascunde în alt loc  
 
@@ -100,13 +100,13 @@ Multe jocuri se joacă după **distanță**: cât de aproape ești de țintă. D
 
 ## Greșeli frecvente
 1. **Detectorul nu urmărește mouse-ul** — blocul `mergi la [cursorul mouse-ului]` e în afara buclei, sau lipsește bucla `repetă până când`.  
-2. **Spune mereu `Rece.`** — `cx` și `cy` nu au numere (Comoara nu a pornit), sau distanțele din `dacă` sunt prea mici.  
+2. **Spune mereu `Rece.`** — `cx` și `cy` nu au numere (Libelula nu a pornit), sau distanțele din `dacă` sunt prea mici.  
 3. **Spune mereu `Fierbinte!`** — comparația e greșită: `dx` și `dy` trebuie să fie **mai mici** decât `30`. Verifici semnul `<`.  
-4. **Distanța iese negativă** — lipsește `[modul] din`. Fără el, în stânga comorii rezultatul e minus.  
-5. **Încercările scad foarte repede** — lipsește `așteaptă 2 secunde` după săpătură.  
-6. **Comoara nu se vede deloc** — la `găsit` lipsește `arată`, sau Comoara e prea mică sau prea mare. Schimbi numărul din `setează mărimea la`.  
-7. **Detectorul sau Comoara sunt uriașe** — personajele din bibliotecă au mărimi diferite. Schimbi `40` din `setează mărimea la`.  
-8. **Comoara nu se mută după ce o găsești** — scriptul `când primesc găsit` nu are `setează cx` și `setează cy` noi.  
+4. **Distanța iese negativă** — lipsește `[modul] din`. Fără el, în stânga libelulei rezultatul e minus.  
+5. **Încercările scad foarte repede** — lipsește `așteaptă 2 secunde` după încercare.  
+6. **Libelula nu se vede deloc** — la `găsit` lipsește `arată`, sau Libelula e prea mică sau prea mare. Schimbi numărul din `setează mărimea la`.  
+7. **Detectorul sau Libelula sunt uriașe** — personajele din bibliotecă au mărimi diferite. Schimbi `40` din `setează mărimea la`.  
+8. **Libelula nu se mută după ce o găsești** — scriptul `când primesc găsit` nu are `setează cx` și `setează cy` noi.  
 9. **Jocul nu se oprește la zero încercări** — `repetă până când` nu are `<(încercări) < 1>`.  
 10. **Ghidul nu spune nimic** *(Bonus)* — mesajul din `când primesc` nu e `greșit`.  
 11. **Nume fișier** — `Prenume_Nume_L7`, nu doar `Ana_L7`.  
@@ -120,8 +120,8 @@ Salvat: `Prenume_Nume_L7`
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | **Pasul 1 + Pasul 2 + Pasul 3**: pregătirea, Comoara, cu **2 scripturi**, și Detectorul, cu **scriptul întreg**. Jocul merge doar cu amândouă |
-| **Complet (ținta orei)** | Minim, testat în toate cazurile: rece, cald, fierbinte, comoară găsită, săpătură greșită și terminarea încercărilor |
+| **Minim („am reușit”)** | **Pasul 1 + Pasul 2 + Pasul 3**: pregătirea, Libelula, cu **2 scripturi**, și Detectorul, cu **scriptul întreg**. Jocul merge doar cu amândouă |
+| **Complet (ținta orei)** | Minim, testat în toate cazurile: rece, cald, fierbinte, libelulă găsită, încercare greșită și terminarea încercărilor |
 | **Bonus** | **Pasul 4**: al treilea personaj, **Ghidul**, cu **2 scripturi**. Scripturile din Pașii 2 și 3 nu se mai schimbă |
 
 Fiecare personaj are scripturile lui **întregi**, de la început. Nu se completează nimic după aceea. Scriptul Detectorului e **lung**: îl construiești **bucată cu bucată**, de sus în jos, dar e **un singur script**.
@@ -132,16 +132,16 @@ Cei rapizi: Complet, apoi Bonus.
 ### Pasul 1 — Pregătirea: variabile și personaje *(Minim)*
 **Variabilele:** `scor`, `încercări`, `cx`, `cy`, `dx` și `dy`, toate **pentru toate personajele**. Bifezi doar `scor` și `încercări`, ca să se vadă pe scenă. Pe celelalte le lași nebifate.  
 **Detectorul:** alegi din bibliotecă un personaj care ți se pare potrivit pentru un explorator (de la **Oameni** sau **Animale**) și îl redenumești `Detectorul`.  
-**Comoara:** alegi din bibliotecă, la **Tot**, un obiect care poate fi o comoară (de exemplu `Crystal`, `Key` sau `Gift`) și îl redenumești `Comoara`. Adaugi în tab-ul **Sunete** un sunet.  
+**Libelula:** alegi din bibliotecă, la **Animale**, libelula `Dragonfly` și o redenumești `Libelula`. Adaugi în tab-ul **Sunete** un sunet.  
 **Decorul:** alegi unul din bibliotecă, de exemplu o plajă sau o pădure.  
 **Mărimea** o setăm din scripturi. Dacă un personaj e prea mare sau prea mic, schimbi numărul din blocul `setează mărimea la`.
 
 - [ ] Variabilele `scor`, `încercări`, `cx`, `cy`, `dx` și `dy` sunt **pentru toate personajele**; se văd doar `scor` și `încercări`  
-- [ ] Detectorul și Comoara sunt alese și redenumite  
-- [ ] Comoara are un sunet  
+- [ ] Detectorul și Libelula sunt alese și redenumite  
+- [ ] Libelula are un sunet  
 
-### Pasul 2 — Comoara, cele 2 scripturi *(Minim)*
-Comoara are **2 scripturi** complete. Primul o ascunde și îi alege locul. Al doilea e scriptul de după ce a fost găsită:
+### Pasul 2 — Libelula, cele 2 scripturi *(Minim)*
+Libelula are **2 scripturi** complete. Primul o ascunde și îi alege locul. Al doilea e scriptul de după ce a fost găsită:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
 <span style="color:#9966FF;font-weight:700">ascunde</span>  
@@ -159,7 +159,7 @@ Comoara are **2 scripturi** complete. Primul o ascunde și îi alege locul. Al d
 <span style="color:#FF8C1A;font-weight:700">setează cy la</span> <span style="color:#59C059;font-weight:700">(alege aleator între</span> `-140` <span style="color:#59C059;font-weight:700">și</span> `140` <span style="color:#59C059;font-weight:700">)</span>  
 <span style="color:#4C97FF;font-weight:700">mergi la x:</span> <span style="color:#FF8C1A;font-weight:700">(cx)</span> <span style="color:#4C97FF;font-weight:700">y:</span> <span style="color:#FF8C1A;font-weight:700">(cy)</span>  
 
-- [ ] La steag, Comoara se ascunde și se mută într-un loc ales la întâmplare  
+- [ ] La steag, Libelula se ascunde și se mută într-un loc ales la întâmplare  
 - [ ] Variabilele `cx` și `cy` au numere noi la fiecare pornire  
 - [ ] La `găsit` apare, se aude sunetul, se ascunde și își alege alt loc  
 
@@ -193,34 +193,34 @@ Ordinea e un **model**: poți schimba numerele și textele. Detectorul are **un 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ <span style="color:#E6A800;font-weight:700">difuzează</span> `greșit`  
 &nbsp;&nbsp;&nbsp;&nbsp;→ <span style="color:#FFAB19;font-weight:700">așteaptă</span> `2` secunde  
 
-<span style="color:#9966FF;font-weight:700">spune</span> <span style="color:#59C059;font-weight:700">(alătură</span> `Joc terminat! Comori: ` <span style="color:#FF8C1A;font-weight:700">(scor)</span><span style="color:#59C059;font-weight:700">)</span> <span style="color:#9966FF;font-weight:700">pentru</span> `3` secunde  
+<span style="color:#9966FF;font-weight:700">spune</span> <span style="color:#59C059;font-weight:700">(alătură</span> `Joc terminat! Libelule: ` <span style="color:#FF8C1A;font-weight:700">(scor)</span><span style="color:#59C059;font-weight:700">)</span> <span style="color:#9966FF;font-weight:700">pentru</span> `3` secunde  
 
 **Cum îl construiești, pe bucăți:**
-1. **Începutul:** steagul, `scor`, `încercări`, poziția, mărimea și `așteaptă 1 secunde`. Pauza lasă Comoara să aleagă locul
+1. **Începutul:** steagul, `scor`, `încercări`, poziția, mărimea și `așteaptă 1 secunde`. Pauza lasă Libelula să aleagă locul
 2. **Bucla:** `repetă până când <(încercări) < 1>`: jocul merge cât mai ai încercări
 3. **Urmărirea:** `mergi la [cursorul mouse-ului]`, apoi cele două `setează`, cu `[modul] din`
 4. **Temperatura:** `dacă` fierbinte, `altfel`, în care pui `dacă` cald, `altfel` rece
-5. **Săpătura:** `dacă <butonul mouse-ului e apăsat?>`: `modifică încercări cu -1`, apoi un `dacă … altfel` cu `găsit` sau `greșit`, apoi `așteaptă 2 secunde`
+5. **Încercarea:** `dacă <butonul mouse-ului e apăsat?>`: `modifică încercări cu -1`, apoi un `dacă … altfel` cu `găsit` sau `greșit`, apoi `așteaptă 2 secunde`
 6. **După buclă:** mesajul de final cu `alătură`
 
-**Scriptul Detectorului merge doar după ce faci și Pasul 2**, pentru că de la Comoară vin `cx` și `cy`.
+**Scriptul Detectorului merge doar după ce faci și Pasul 2**, pentru că de la Libelulă vin `cx` și `cy`.
 
 - [ ] Apeși pe steag: Detectorul te urmărește peste tot, cu cursorul  
-- [ ] Departe de comoară spune `Rece.`, la mijloc `Cald.`, aproape `Fierbinte!`  
+- [ ] Departe de libelulă spune `Rece.`, la mijloc `Cald.`, aproape `Fierbinte!`  
 - [ ] Apeși butonul mouse-ului: `încercări` scade cu `1`  
-- [ ] Dacă ai nimerit, comoara apare, se aude sunetul, `scor` crește, iar comoara se mută  
+- [ ] Dacă ai nimerit, libelula apare, se aude sunetul, `scor` crește, iar libelula se mută  
 - [ ] Dacă ai greșit, nu se întâmplă nimic în afară de scăderea încercărilor  
-- [ ] La zero încercări jocul se oprește și spune câte comori ai găsit  
+- [ ] La zero încercări jocul se oprește și spune câte libelule ai găsit  
 - [ ] Salvat: `Prenume_Nume_L7`  
 
-**→ Minim când:** apeși pe steag, Detectorul te urmărește, spune rece, cald sau fierbinte, la un click sapi, găsești comoara sau pierzi o încercare, iar jocul se oprește când nu mai ai încercări.  
-**→ Complet când:** ai testat jocul în toate cazurile: rece, cald, fierbinte, comoară găsită, săpătură greșită și terminarea încercărilor.
+**→ Minim când:** apeși pe steag, Detectorul te urmărește, spune rece, cald sau fierbinte, la un click prinzi, găsești libelula sau pierzi o încercare, iar jocul se oprește când nu mai ai încercări.  
+**→ Complet când:** ai testat jocul în toate cazurile: rece, cald, fierbinte, libelulă găsită, încercare greșită și terminarea încercărilor.
 
 ---
 
 ## Bonus (dacă ai terminat Complet)
 ### Pasul 4 — Ghidul, cele 2 scripturi *(★★★)*
-Al 3-lea personaj îți dă un **indiciu** când ai săpat degeaba. Alegi din bibliotecă un personaj care nu seamănă cu Detectorul (de exemplu un animal, dacă Detectorul e om) și îl redenumești `Ghidul`. Scripturile din Pașii 2 și 3 **nu se mai schimbă**: Detectorul trimite deja `greșit`, iar Ghidul îl primește.
+Al 3-lea personaj îți dă un **indiciu** când ai greșit. Alegi din bibliotecă un personaj care nu seamănă cu Detectorul (de exemplu un animal, dacă Detectorul e om) și îl redenumești `Ghidul`. Scripturile din Pașii 2 și 3 **nu se mai schimbă**: Detectorul trimite deja `greșit`, iar Ghidul îl primește.
 
 Ghidul are **2 scripturi** complete:
 
@@ -239,9 +239,9 @@ Ghidul are **2 scripturi** complete:
 ↳ <span style="color:#9966FF;font-weight:700">spune</span> `Și mai jos!` <span style="color:#9966FF;font-weight:700">pentru</span> `2` secunde  
 
 - [ ] Ghidul stă jos, în stânga  
-- [ ] După o săpătură greșită spune `Caută mai la dreapta!` sau `Caută mai la stânga!`, după unde e comoara  
+- [ ] După o încercare greșită spune `Caută mai la dreapta!` sau `Caută mai la stânga!`, după unde e libelula  
 - [ ] Apoi spune `Și mai sus!` sau `Și mai jos!`  
-- [ ] La o săpătură bună nu spune nimic  
+- [ ] La o încercare bună nu spune nimic  
 - [ ] ★★★ **Provocare:** schimbi în scriptul Detectorului numărul `5` din `setează încercări la` cu `3` și vezi cât de greu devine jocul  
 
 ## Recapitulare rapidă
@@ -249,17 +249,17 @@ Ghidul are **2 scripturi** complete:
 2. `mouse x` și `mouse y` îți spun unde e cursorul; `mergi la [cursorul mouse-ului]` te pune sub el  
 3. Distanța pe două axe: `dx` și `dy`; ești aproape când **amândouă** sunt mici  
 4. Un `dacă … altfel` în alt `dacă … altfel` alege între trei răspunsuri  
-5. `așteaptă 2 secunde` după săpătură oprește săpăturile multiple dintr-un click  
+5. `așteaptă 2 secunde` după încercare oprește prinderile multiple dintr-un click  
 6. Nume: **`Prenume_Nume_L7`**  
 
 ## Schema pe scurt *(pe foaie)*
 
-**Pe Comoară** *(2 scripturi)*  
+**Pe Libelulă** *(2 scripturi)*  
 la steag → `ascunde` → `setează mărimea` → `setează cx la (alege aleator între -200 și 200)` → `setează cy la (alege aleator între -140 și 140)` → `mergi la x: (cx) y: (cy)`  
 când primesc găsit → `arată` → `pornește sunetul` → `așteaptă 1` → `ascunde` → `setează cx` → `setează cy` → `mergi la x: (cx) y: (cy)`
 
 **Pe Detector** *(un singur script)*  
-la steag → `setează scor la 0` → `setează încercări la 5` → `mergi la x: y:` → `setează mărimea` → `așteaptă 1` → `repetă până când <(încercări) < 1>` (`mergi la [cursorul mouse-ului]` + `setează dx la ([modul] din ((mouse x) - (cx)))` + `setează dy la ([modul] din ((mouse y) - (cy)))` + `dacă <<(dx) < 30> și <(dy) < 30>>` `atunci` `spune Fierbinte!` `altfel` (`dacă <<(dx) < 80> și <(dy) < 80>>` `atunci` `spune Cald.` `altfel` `spune Rece.`) + `dacă <butonul mouse-ului e apăsat?>` `atunci` (`modifică încercări cu -1` + `dacă <<(dx) < 30> și <(dy) < 30>>` `atunci` (`modifică scor cu 1` + `difuzează găsit`) `altfel` `difuzează greșit` + `așteaptă 2`)) → `spune (alătură Joc terminat! Comori: (scor))`
+la steag → `setează scor la 0` → `setează încercări la 5` → `mergi la x: y:` → `setează mărimea` → `așteaptă 1` → `repetă până când <(încercări) < 1>` (`mergi la [cursorul mouse-ului]` + `setează dx la ([modul] din ((mouse x) - (cx)))` + `setează dy la ([modul] din ((mouse y) - (cy)))` + `dacă <<(dx) < 30> și <(dy) < 30>>` `atunci` `spune Fierbinte!` `altfel` (`dacă <<(dx) < 80> și <(dy) < 80>>` `atunci` `spune Cald.` `altfel` `spune Rece.`) + `dacă <butonul mouse-ului e apăsat?>` `atunci` (`modifică încercări cu -1` + `dacă <<(dx) < 30> și <(dy) < 30>>` `atunci` (`modifică scor cu 1` + `difuzează găsit`) `altfel` `difuzează greșit` + `așteaptă 2`)) → `spune (alătură Joc terminat! Libelule: (scor))`
 
 **Pe Ghid** *(Bonus, 2 scripturi)*  
 la steag → `mergi la x: y:` → `setează mărimea`  
@@ -269,7 +269,7 @@ când primesc greșit → `dacă <(cx) > (mouse x)>` `atunci` `spune Caută mai 
 - Ce dă `[modul] din (-5)`?  
 - De ce trebuie `[modul] din` când calculezi distanța?  
 - De ce verificăm și `dx`, și `dy`, nu doar unul?  
-- De ce `așteaptă 2 secunde` după săpătură?
+- De ce `așteaptă 2 secunde` după încercare?
 
 ## Temă (opțional)
 - Dacă ai doar Minim: testezi acasă jocul în toate cazurile, apoi adaugi Ghidul (Pasul 4), în același `Prenume_Nume_L7`.  

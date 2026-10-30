@@ -67,7 +67,7 @@ Toate cele 10 lecții din Modulul 1 sunt refăcute pe structura universală (L1�
 | L4 | Butonul magic | Magician / Iepure / Porumbel | 6 |
 | L5 | Interviul | Reporter / Dragon / Public | 7 |
 | L6 | Concertul | Chitarist / Toboșar / Public | 8 (7 Sunet + `când [intensitatea sunetului] >`) |
-| L7 | Comoara | Pirat / Papagal / Comoara | 4 |
+| L7 | Libelula | Pirat / Papagal / Libelula | 4 |
 | L8 | Dansul meu | Dansator / DJ / Juriu (decoruri Sala și Confetti desenat) | 8 (6 Control + 2 Detectare) |
 | L9 | Personajul meu | Animal / Stăpân / Minge (fără blocuri noi) | — |
 | L10 | Completare + prezentare | Gala personajelor: Gazdă + 2 artiști din meniul de numere (fără blocuri noi) | — |
