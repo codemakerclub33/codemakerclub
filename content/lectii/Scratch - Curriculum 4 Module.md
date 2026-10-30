@@ -26,7 +26,7 @@
 | # | Titlu | Focus (~2h) |
 |---|--------|-------------|
 | 1 | Pista de culori | Detectare după culoare și margine, stil de rotație |
-| 2 | Muzeul exponatelor | Mouse, distanță, arată și ascunde |
+| 2 | Acvariul | Mouse, distanță, arată și ascunde |
 | 3 | Robotul prieten | Întreabă și răspuns, text (alătură, literă, lungime) |
 | 4 | Magazinul de dulciuri | Variabile: bani și dulciuri |
 | 5 | Zaruri și calcule | Operatori matematici, numere aleatoare |

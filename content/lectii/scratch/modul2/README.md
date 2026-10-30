@@ -9,7 +9,7 @@
 | # | Fișier | Titlu |
 |---|--------|--------|
 | 1 | [L1-Pista-de-culori.md](./L1-Pista-de-culori.md) | Pista de culori |
-| 2 | [L2-Muzeul-exponatelor.md](./L2-Muzeul-exponatelor.md) | Muzeul exponatelor |
+| 2 | [L2-Acvariul.md](./L2-Acvariul.md) | Acvariul |
 | 3 | [L3-Robotul-prieten.md](./L3-Robotul-prieten.md) | Robotul prieten |
 | 4 | [L4-Magazinul-de-dulciuri.md](./L4-Magazinul-de-dulciuri.md) | Magazinul de dulciuri |
 | 5 | [L5-Zaruri-si-calcule.md](./L5-Zaruri-si-calcule.md) | Zaruri și calcule |
