@@ -7,16 +7,16 @@
 **Stil:** același schelet ca Modul 1–2 (Obiectiv, Minim/Complet, Pas cu pas, culori blocuri).  
 **Culori blocuri:** [`_culori-scratch.md`](../_culori-scratch.md)
 
-| # | Fișier | Titlu / proiect |
+| # | Fișier | Titlu |
 |---|--------|-----------------|
 | 1 | [L1-Padurea-fermecata.md](./L1-Padurea-fermecata.md) | Pădurea fermecată |
-| 2 | [L2-Sistemul-solar-in-cursa.md](./L2-Sistemul-solar-in-cursa.md) | Sistemul solar în cursă — liste, loc, pariu |
+| 2 | [L2-Sistemul-solar-in-cursa.md](./L2-Sistemul-solar-in-cursa.md) | Sistemul solar în cursă |
 | 3 | [L3-Invazia-clonelor.md](./L3-Invazia-clonelor.md) | Invazia clonelor |
 | 4 | [L4-Trusa-de-prim-ajutor.md](./L4-Trusa-de-prim-ajutor.md) | Trusa de prim ajutor |
-| 5 | [L5-Formula-1.md](./L5-Formula-1.md) | Formula 1 — cursă cu viteză, ture și piste |
-| 6 | [L6-Capsula-timpului.md](./L6-Capsula-timpului.md) | Capsula timpului — anul curent, nume utilizator, zile din 2000 |
-| 7 | [L7-Cald-si-rece.md](./L7-Cald-si-rece.md) | Cald și rece — distanță cu modul, Libelula ascunsă |
-| 8 | [L8-Salveaza-planeta.md](./L8-Salveaza-planeta.md) | „Salvează planeta” — coșuri, costume, tragere |
+| 5 | [L5-Formula-1.md](./L5-Formula-1.md) | Formula 1 |
+| 6 | [L6-Capsula-timpului.md](./L6-Capsula-timpului.md) | Capsula timpului |
+| 7 | [L7-Cald-si-rece.md](./L7-Cald-si-rece.md) | Cald și rece |
+| 8 | [L8-Salveaza-planeta.md](./L8-Salveaza-planeta.md) | Salvează planeta |
 | 9 | [L9-Zidul-magic.md](./L9-Zidul-magic.md) | Zidul magic |
 | 10 | [L10-Galeria-Game-Builder.md](./L10-Galeria-Game-Builder.md) | Completare + prezentare: Galeria Game Builder |
 

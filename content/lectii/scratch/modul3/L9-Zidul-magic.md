@@ -1,5 +1,5 @@
 # Lecția 9 — Zidul magic
-### Recapitulare
+### Mini-proiect
 **Modulul 3 · Jocuri**  
 **Code Maker Club · Game Builder**
 
