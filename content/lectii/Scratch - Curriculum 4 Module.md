@@ -48,7 +48,7 @@
 | 6 | Nivele | Schimbare fundal / dificultate |
 | 7 | Clone | Monede, inamici (intro) |
 | 8 | Meniu Start | Buton + reset scor |
-| 9 | Mini-proiect: Prinde obiectele | Joc vertical / catcher |
+| 9 | Zidul magic | Brick Breaker: clone, modele de cărămizi, meniu, pauză |
 | 10 | Recap Modul 3 | Polish: viteză, sunet, UI |
 
 ## Modul 4 — Proiecte · badge: Scratch Creator

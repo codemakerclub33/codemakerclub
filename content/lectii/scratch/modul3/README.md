@@ -1,7 +1,7 @@
 # Scratch Modul 3 — Lista lecțiilor
 
 **Code Maker Club** · Jocuri · Badge: **Game Builder**  
-**Proiecte:** 9 proiecte noi + L10 finisări · proiect final L9: „Prinde obiectele”.  
+**Proiecte:** 9 proiecte noi + L10 finisări · proiect final L9: „Zidul magic”.  
 **Limbaj:** clar, **8–10 ani** · ritm dens (warm-up → proiect gata în oră)  
 **Cei rapizi:** **Bonus / Provocare** pe fiecare lecție.  
 **Stil:** același schelet ca Modul 1–2 (Obiectiv, Minim/Complet, Pas cu pas, culori blocuri).  
@@ -17,7 +17,7 @@
 | 6 | [L6-Capsula-timpului.md](./L6-Capsula-timpului.md) | Capsula timpului — anul curent, nume utilizator, zile din 2000 |
 | 7 | [L7-Cald-si-rece.md](./L7-Cald-si-rece.md) | Cald și rece — distanță cu modul, Libelula ascunsă |
 | 8 | [L8-Salveaza-planeta.md](./L8-Salveaza-planeta.md) | „Salvează planeta” — coșuri, costume, tragere |
-| 9 | [L9-Mini-proiect-Prinde-obiectele.md](./L9-Mini-proiect-Prinde-obiectele.md) | Mini-proiect — „Prinde obiectele” |
+| 9 | [L9-Zidul-magic.md](./L9-Zidul-magic.md) | Zidul magic |
 | 10 | [L10-Recap-polish.md](./L10-Recap-polish.md) | Finisări + prezentare + insignă |
 
 Module: `../modul1/` · `../modul2/` · `../modul4/`

@@ -136,7 +136,7 @@ export const module = [
     ordine: 3,
     badge: 'Game Builder',
     nivel: 'Builder',
-    descriere: '10 lecții cu jocuri și teme educative: straturi, clone, liste, sunet, timp. Capstone: „Prinde obiectele”.',
+    descriere: '10 lecții cu jocuri și teme educative: straturi, clone, liste, sunet, timp. Capstone: „Zidul magic”.',
   },
   {
     id: 'm19',
@@ -584,7 +584,7 @@ export const lectii = [
     'Capsula timpului',
     'Cald și rece',
     'Salvează planeta',
-    'Mini-proiect: Prinde obiectele',
+    'Zidul magic',
     'Completare + prezentare: Galeria Game Builder',
   ]),
   // Scratch Modul 4 — proiecte concrete (fără „greu” în fiecare titlu)
