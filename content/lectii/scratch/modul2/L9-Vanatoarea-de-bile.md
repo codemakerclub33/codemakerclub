@@ -1,4 +1,5 @@
 # Lecția 9 — Vânătoarea de bile
+### Recapitulare
 **Modulul 2 · Logică**  
 **Code Maker Club · Logic Explorer**
 

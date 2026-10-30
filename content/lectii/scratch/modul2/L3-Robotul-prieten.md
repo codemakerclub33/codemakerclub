@@ -1,4 +1,5 @@
 # Lecția 3 — Robotul prieten
+### Detectare și Operatori
 **Modulul 2 · Logică**  
 **Code Maker Club · Logic Explorer**
 

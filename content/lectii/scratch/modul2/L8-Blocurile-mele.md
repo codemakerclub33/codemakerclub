@@ -1,4 +1,5 @@
 # Lecția 8 — Blocurile mele
+### Blocurile mele
 **Modulul 2 · Logică**  
 **Code Maker Club · Logic Explorer**
 

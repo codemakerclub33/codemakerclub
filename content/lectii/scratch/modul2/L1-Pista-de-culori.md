@@ -1,4 +1,5 @@
 # Lecția 1 — Pista de culori
+### Detectare și Mișcare
 **Modulul 2 · Logică**  
 **Code Maker Club · Logic Explorer**
 

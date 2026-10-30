@@ -1,4 +1,5 @@
 # Lecția 5 — Zaruri și calcule
+### Operatori
 **Modulul 2 · Logică**  
 **Code Maker Club · Logic Explorer**
 

@@ -1,4 +1,5 @@
 # Lecția 4 — Magazinul de dulciuri
+### Variabile
 **Modulul 2 · Logică**  
 **Code Maker Club · Logic Explorer**
 

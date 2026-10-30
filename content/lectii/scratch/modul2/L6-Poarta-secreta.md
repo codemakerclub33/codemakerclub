@@ -1,4 +1,5 @@
 # Lecția 6 — Poarta secretă
+### Operatori și Control
 **Modulul 2 · Logică**  
 **Code Maker Club · Logic Explorer**
 

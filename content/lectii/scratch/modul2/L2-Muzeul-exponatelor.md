@@ -1,4 +1,5 @@
 # Lecția 2 — Muzeul exponatelor
+### Detectare și Aspect
 **Modulul 2 · Logică**  
 **Code Maker Club · Logic Explorer**
 

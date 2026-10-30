@@ -1,4 +1,5 @@
 # Lecția 7 — Atelierul de desen
+### Stilou
 **Modulul 2 · Logică**  
 **Code Maker Club · Logic Explorer**
 
