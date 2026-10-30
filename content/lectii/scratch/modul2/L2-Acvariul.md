@@ -1,5 +1,5 @@
 # Lecția 2 — Acvariul
-### Detectare și Aspect
+### Mouse și distanță
 **Modulul 2 · Logică**  
 **Code Maker Club · Logic Explorer**
 

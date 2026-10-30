@@ -1,4 +1,5 @@
 # Lecția 4 — Trusa de prim ajutor
+### Elementele unei liste
 **Modulul 3 · Jocuri**  
 **Code Maker Club · Game Builder**
 

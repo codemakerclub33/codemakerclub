@@ -1,4 +1,5 @@
 # Lecția 7 — Cald și rece
+### Distanță și modul
 **Modulul 3 · Jocuri**  
 **Code Maker Club · Game Builder**
 

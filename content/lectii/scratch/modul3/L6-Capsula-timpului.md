@@ -1,14 +1,15 @@
-# Lecția 6 — Mașina timpului
+# Lecția 6 — Capsula timpului
+### Data și textul
 **Modulul 3 · Jocuri**  
 **Code Maker Club · Game Builder**
 
-> Azi înveți să folosești **data de azi** în joc. Un Pilot pornește Mașina timpului și călătorește la trei evenimente din istorie, iar tu calculezi **câți ani au trecut** de atunci.  
-> Proiect: **„Mașina timpului”** · fișier: `Prenume_Nume_L6` (ex. `Ana_Pop_L6`)
+> Azi înveți să folosești **data de azi** în joc. Un Pilot pornește Capsula timpului și călătorește la trei evenimente din istorie, iar tu calculezi **câți ani au trecut** de atunci.  
+> Proiect: **„Capsula timpului”** · fișier: `Prenume_Nume_L6` (ex. `Ana_Pop_L6`)
 
 ---
 
 ## Obiectiv
-La finalul orei joci propriul joc: Pilotul te salută pe nume, Mașina timpului pornește, iar Pilotul îți spune un eveniment din istorie. Tu scrii **câți ani au trecut** de atunci. Dacă ai calculat bine, primești un punct. Dacă nu, pierzi o viață și afli răspunsul corect. La final, Capsula te aduce înapoi, în anul de azi.  
+La finalul orei joci propriul joc: Pilotul te salută pe nume, Capsula timpului pornește, iar Pilotul îți spune un eveniment din istorie. Tu scrii **câți ani au trecut** de atunci. Dacă ai calculat bine, primești un punct. Dacă nu, pierzi o viață și afli răspunsul corect. La final, Capsula te aduce înapoi, în anul de azi.  
 **Minim:** personajul 1 (Pilotul), cu **scriptul întreg**, și personajul 2 (Capsula), cu **3 scripturi**.  
 **Ținta orei (Complet):** jocul, testat în toate cazurile: răspuns corect, răspuns greșit, nume gol și pierderea tuturor vieților.
 
@@ -25,7 +26,7 @@ Calculatorul știe **ce an e azi**, chiar și atunci când tu nu știi. Cu blocu
 |--------|----------|
 | 0–5 | Obiectiv + blocurile noi |
 | 5–35 | Pas cu pas: **4** mini-verificări (**Încearcă tu**) |
-| 35–105 | Proiectul „Mașina timpului” (vezi **Minim vs Complet**) |
+| 35–105 | Proiectul „Capsula timpului” (vezi **Minim vs Complet**) |
 | 105–120 | Recap, bonus, salvare |
 
 **Capitole azi (doar acestea 8):**  
@@ -118,7 +119,7 @@ Calculatorul știe **ce an e azi**, chiar și atunci când tu nu știi. Cu blocu
 
 ---
 
-## De făcut azi — „Mașina timpului”
+## De făcut azi — „Capsula timpului”
 Salvat: `Prenume_Nume_L6`
 
 ### Minim vs Complet *(citește înainte să începi)*
@@ -182,7 +183,7 @@ Ordinea e un **model**: poți schimba textele și numerele. Pilotul are **un sin
 ↳ <span style="color:#FF8C1A;font-weight:700">modifică nr cu</span> `1`  
 
 <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#59C059;font-weight:700">&lt;</span><span style="color:#FF8C1A;font-weight:700">(vieți)</span> <span style="color:#59C059;font-weight:700">&lt;</span> `1` <span style="color:#59C059;font-weight:700">&gt;</span> <span style="color:#FFAB19;font-weight:700">atunci</span>  
-↳ <span style="color:#9966FF;font-weight:700">spune</span> `Mașina timpului se oprește!` <span style="color:#9966FF;font-weight:700">pentru</span> `3` secunde  
+↳ <span style="color:#9966FF;font-weight:700">spune</span> `Capsula timpului se oprește!` <span style="color:#9966FF;font-weight:700">pentru</span> `3` secunde  
 <span style="color:#FFAB19;font-weight:700">altfel</span>  
 ↳ <span style="color:#9966FF;font-weight:700">spune</span> `Bravo, ai ajuns la ziua de azi!` <span style="color:#9966FF;font-weight:700">pentru</span> `3` secunde  
 
@@ -221,7 +222,7 @@ Capsula are **3 scripturi** complete. Primul o așază pe scenă, al doilea o po
 - [ ] Pilotul spune pe rând cele trei evenimente  
 - [ ] Cu răspunsul corect, `scor` crește; cu unul greșit, `vieți` scade și afli răspunsul bun  
 - [ ] Jocul se oprește după trei evenimente sau când nu mai ai vieți  
-- [ ] La final, Pilotul spune `Bravo, ai ajuns la ziua de azi!` (sau `Mașina timpului se oprește!`), iar Capsula spune anul de azi  
+- [ ] La final, Pilotul spune `Bravo, ai ajuns la ziua de azi!` (sau `Capsula timpului se oprește!`), iar Capsula spune anul de azi  
 - [ ] Salvat: `Prenume_Nume_L6`  
 
 **→ Minim când:** apeși pe steag, Pilotul te salută, Capsula pornește, calculezi câți ani au trecut pentru cele trei evenimente, scorul și viețile se schimbă corect, iar la final Capsula spune anul de azi.  
@@ -264,7 +265,7 @@ Calendarul are **2 scripturi** complete:
 ## Schema pe scurt *(pe foaie)*
 
 **Pe Pilot** *(un singur script)*  
-la steag → `setează scor la 0` → `setează vieți la 3` → `setează nr la 1` → `mergi la x: y:` → `setează mărimea` → `dacă <(lungimea lui (nume utilizator)) = 0>` `atunci` `spune Salut, Pilot Explorator!` `altfel` `spune (alătură Salut, (nume utilizator))` → `difuzează plecăm și așteaptă` → `repetă până când <<(nr) > (lungimea lui [evenimente])> sau <(vieți) < 1>>` (`spune (element (nr) din [evenimente])` + `întreabă Câți ani au trecut de atunci?` + `dacă <(răspuns) = ((anul curent) - (element (nr) din [ani]))>` `atunci` (`modifică scor cu 1` + `spune Corect!`) `altfel` (`modifică vieți cu -1` + `spune (alătură Nu. Au trecut …)`) + `modifică nr cu 1`) → `dacă <(vieți) < 1>` `atunci` `spune Mașina timpului se oprește!` `altfel` `spune Bravo, ai ajuns la ziua de azi!` → `difuzează sfârșit`
+la steag → `setează scor la 0` → `setează vieți la 3` → `setează nr la 1` → `mergi la x: y:` → `setează mărimea` → `dacă <(lungimea lui (nume utilizator)) = 0>` `atunci` `spune Salut, Pilot Explorator!` `altfel` `spune (alătură Salut, (nume utilizator))` → `difuzează plecăm și așteaptă` → `repetă până când <<(nr) > (lungimea lui [evenimente])> sau <(vieți) < 1>>` (`spune (element (nr) din [evenimente])` + `întreabă Câți ani au trecut de atunci?` + `dacă <(răspuns) = ((anul curent) - (element (nr) din [ani]))>` `atunci` (`modifică scor cu 1` + `spune Corect!`) `altfel` (`modifică vieți cu -1` + `spune (alătură Nu. Au trecut …)`) + `modifică nr cu 1`) → `dacă <(vieți) < 1>` `atunci` `spune Capsula timpului se oprește!` `altfel` `spune Bravo, ai ajuns la ziua de azi!` → `difuzează sfârșit`
 
 **Pe Capsulă** *(3 scripturi)*  
 la steag → `schimbă costumul la [oprită]` → `mergi la x: y:` → `setează mărimea`  

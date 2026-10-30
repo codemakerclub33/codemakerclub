@@ -1,5 +1,5 @@
 # Lecția 7 — Atelierul de desen
-### Stilou
+### Stilou și forme
 **Modulul 2 · Logică**  
 **Code Maker Club · Logic Explorer**
 

@@ -14,7 +14,7 @@
 | 3 | [L3-Invazia-clonelor.md](./L3-Invazia-clonelor.md) | Invazia clonelor |
 | 4 | [L4-Trusa-de-prim-ajutor.md](./L4-Trusa-de-prim-ajutor.md) | Trusa de prim ajutor |
 | 5 | [L5-Formula-1.md](./L5-Formula-1.md) | Formula 1 — cursă cu viteză, ture și piste |
-| 6 | [L6-Masina-timpului.md](./L6-Masina-timpului.md) | Mașina timpului (sprite: Capsula) — anul curent, nume utilizator, zile din 2000 |
+| 6 | [L6-Capsula-timpului.md](./L6-Capsula-timpului.md) | Capsula timpului — anul curent, nume utilizator, zile din 2000 |
 | 7 | [L7-Cald-si-rece.md](./L7-Cald-si-rece.md) | Cald și rece — distanță cu modul, Libelula ascunsă |
 | 8 | [L8-Salveaza-planeta.md](./L8-Salveaza-planeta.md) | „Salvează planeta” — coșuri, costume, tragere |
 | 9 | [L9-Mini-proiect-Prinde-obiectele.md](./L9-Mini-proiect-Prinde-obiectele.md) | Mini-proiect — „Prinde obiectele” |

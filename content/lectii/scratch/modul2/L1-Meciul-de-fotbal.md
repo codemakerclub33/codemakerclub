@@ -1,5 +1,5 @@
 # Lecția 1 — Meciul de fotbal
-### Detectare și Mișcare
+### Culori și margini
 **Modulul 2 · Logică**  
 **Code Maker Club · Logic Explorer**
 

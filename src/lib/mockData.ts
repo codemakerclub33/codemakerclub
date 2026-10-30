@@ -581,7 +581,7 @@ export const lectii = [
     'Invazia clonelor',
     'Trusa de prim ajutor',
     'Formula 1',
-    'Mașina timpului',
+    'Capsula timpului',
     'Cald și rece',
     'Salvează planeta',
     'Mini-proiect: Prinde obiectele',

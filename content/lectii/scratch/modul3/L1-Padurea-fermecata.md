@@ -1,4 +1,5 @@
 # Lecția 1 — Pădurea fermecată
+### Straturi și decoruri
 **Modulul 3 · Jocuri**  
 **Code Maker Club · Game Builder**
 

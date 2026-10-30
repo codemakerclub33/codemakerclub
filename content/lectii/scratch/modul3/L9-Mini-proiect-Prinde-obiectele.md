@@ -1,4 +1,5 @@
 # Lecția 9 — Mini-proiect: Prinde obiectele
+### Recapitulare
 **Modulul 3 · Jocuri**  
 **Code Maker Club · Game Builder**
 

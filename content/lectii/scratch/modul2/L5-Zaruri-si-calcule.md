@@ -1,5 +1,5 @@
 # Lecția 5 — Zaruri și calcule
-### Operatori
+### Numere aleatoare
 **Modulul 2 · Logică**  
 **Code Maker Club · Logic Explorer**
 

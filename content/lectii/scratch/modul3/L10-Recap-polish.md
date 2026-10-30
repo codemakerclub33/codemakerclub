@@ -1,4 +1,5 @@
 # Lecția 10 — Finisări, prezentare și insignă
+### Recapitulare
 **Modulul 3 · Jocuri**  
 **Code Maker Club · Game Builder**
 
