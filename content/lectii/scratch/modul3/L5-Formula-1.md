@@ -370,4 +370,4 @@ când primesc sfârșit → `dacă <([nr. decor] din [Scenă]) = 1>` `atunci` (`
 ## Temă (opțional)
 - Dacă ai doar Minim: testezi acasă jocul, apoi adaugi Adversarul (Pasul 4), în același `Prenume_Nume_L5`.  
 - Dacă ai Complet: adaugi acasă a doua pistă și Arbitrul (Pasul 5), în același `Prenume_Nume_L5`.  
-- Dacă ai terminat și Bonusul: desenezi o pistă nouă, cu altă formă, de exemplu un drum în formă de L, și o pui ca al treilea decor.  
+- Dacă ai terminat și Bonusul: desenezi o pistă nouă, cu altă formă, de exemplu un cerc lat sau un 8 din două cercuri late puse unul lângă altul, și o pui ca al treilea decor. Pe pista nouă pui linia violet și muți mașinile la start pe drum.  

@@ -42,4 +42,4 @@ Schema pe scurt, pe foaie. Pe Semafor, un singur script: la steag, setează scor
 
 Quiz scurt, cu profesorul. Care e diferența dintre când tasta este apăsată și tasta apăsată? De ce ținem viteza într-o variabilă? De ce Adversarul are viteză adversar și nu aceeași viteză ca Bolidul? De ce numărăm turele într-un script separat? Ce dă numărul decorului din Scenă pe prima pistă?
 
-Tema, opțional. Dacă ai doar Minim, testezi acasă jocul, apoi adaugi Adversarul, în același fișier. Dacă ai Complet, adaugi acasă a doua pistă și Arbitrul, în același fișier. Dacă ai terminat și Bonusul, desenezi o pistă nouă, cu altă formă, de exemplu un drum în formă de L, și o pui ca al treilea decor.
+Tema, opțional. Dacă ai doar Minim, testezi acasă jocul, apoi adaugi Adversarul, în același fișier. Dacă ai Complet, adaugi acasă a doua pistă și Arbitrul, în același fișier. Dacă ai terminat și Bonusul, desenezi o pistă nouă, cu altă formă, de exemplu un cerc lat sau un opt din două cercuri late puse unul lângă altul, și o pui ca al treilea decor. Pe pista nouă pui linia violet și muți mașinile la start pe drum.
