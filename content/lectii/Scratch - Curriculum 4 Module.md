@@ -25,7 +25,7 @@
 
 | # | Titlu | Focus (~2h) |
 |---|--------|-------------|
-| 1 | Pista de culori | Detectare după culoare și margine, stil de rotație |
+| 1 | Meciul de fotbal | Detectare după culoare și margine, stil de rotație |
 | 2 | Acvariul | Mouse, distanță, arată și ascunde |
 | 3 | Robotul prieten | Întreabă și răspuns, text (alătură, literă, lungime) |
 | 4 | Magazinul de dulciuri | Variabile: bani și dulciuri |

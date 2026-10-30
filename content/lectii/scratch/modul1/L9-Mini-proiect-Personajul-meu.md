@@ -71,7 +71,7 @@ Până acum ai învățat blocurile pe rând. Azi folosești aceleași blocuri �
 
 **Încearcă tu — testul (2–3 min)**  
 - [ ] Steag de **două** ori → clipul începe curat  
-- [ ] Săgețile mută Animalul, iar click-ul pe minge o face să sară  
+- [ ] Săgețile mută Animalul, iar click-ul pe balon o face să sară  
 
 ---
 
@@ -100,7 +100,7 @@ Dacă rămâi în urmă: salvează la **Minim**. Nu e eșec.
 Cei rapizi: Complet, apoi Bonus.
 
 ### Pasul 1 — Lumea *(Minim)*
-Alegi două decoruri și le redenumești `Cameră` și `Grădină` (în această ordine). Redenumești personajele: `Animalul`, `Stăpânul`, `Mingea`. Animalul, Stăpânul și Mingea primesc în tab-ul **Sunete** câte un sunet (un lătrat, un fluier, un sunet de sărit). Pe **Scenă** faci scripturile:
+Alegi două decoruri și le redenumești `Cameră` și `Grădină` (în această ordine). Redenumești personajele: `Animalul`, `Stăpânul`, `Balonul`. Animalul, Stăpânul și Balonul primesc în tab-ul **Sunete** câte un sunet (un lătrat, un fluier, un sunet de sărit). Pe **Scenă** faci scripturile:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
 <span style="color:#9966FF;font-weight:700">schimbă decorul la</span> `Cameră`  
@@ -177,7 +177,7 @@ Alegi un personaj care seamănă cu un stăpân. Are **3 scripturi**:
 ---
 
 ## Bonus (dacă ai terminat Complet)
-- [ ] **Al 3-lea personaj** (Mingea), cu care te joci în grădină:
+- [ ] **Al 3-lea personaj** (Balonul), cu care te joci în grădină:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
 <span style="color:#4C97FF;font-weight:700">setează x la</span> `100`  
