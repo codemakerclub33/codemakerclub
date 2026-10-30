@@ -6,18 +6,18 @@
 **Cei rapizi:** **Bonus / Provocare** pe fiecare lecție.  
 **Culori blocuri:** pastile colorate ca în Scratch — vezi [`_culori-scratch.md`](../_culori-scratch.md) (deschide Preview).
 
-| # | Fișier | Titlu | Proiect |
-|---|--------|--------|---------|
-| 1 | [L1-Ce-este-Scratch.md](./L1-Ce-este-Scratch.md) | Cardul meu animat | Cardul meu animat |
-| 2 | [L2-Scena-fundaluri-costume.md](./L2-Scena-fundaluri-costume.md) | Lumea mea | Lumea mea |
-| 3 | [L3-Miscare-pe-scena.md](./L3-Miscare-pe-scena.md) | Plimbarea mea | Plimbarea mea |
-| 4 | [L4-Evenimente.md](./L4-Evenimente.md) | Butonul magic | Butonul magic |
-| 5 | [L5-Blocuri-de-aspect.md](./L5-Blocuri-de-aspect.md) | Interviul | Interviul |
-| 6 | [L6-Sunet.md](./L6-Sunet.md) | Concertul | Concertul |
-| 7 | [L7-Coordonate-XY.md](./L7-Coordonate-XY.md) | Comoara | Comoara |
-| 8 | [L8-Repeta-si-asteapta.md](./L8-Repeta-si-asteapta.md) | Dansul meu | Dansul meu |
-| 9 | [L9-Mini-proiect-Personajul-meu.md](./L9-Mini-proiect-Personajul-meu.md) | Personajul meu | Personajul meu |
-| 10 | [L10-Recap-showcase.md](./L10-Recap-showcase.md) | Completare + prezentare: Galeria Scratch Starter | Gala personajelor |
+| # | Fișier | Titlu |
+|---|--------|--------|
+| 1 | [L1-Ce-este-Scratch.md](./L1-Ce-este-Scratch.md) | Cardul meu animat |
+| 2 | [L2-Scena-fundaluri-costume.md](./L2-Scena-fundaluri-costume.md) | Lumea mea |
+| 3 | [L3-Miscare-pe-scena.md](./L3-Miscare-pe-scena.md) | Plimbarea mea |
+| 4 | [L4-Evenimente.md](./L4-Evenimente.md) | Butonul magic |
+| 5 | [L5-Blocuri-de-aspect.md](./L5-Blocuri-de-aspect.md) | Interviul |
+| 6 | [L6-Sunet.md](./L6-Sunet.md) | Concertul |
+| 7 | [L7-Coordonate-XY.md](./L7-Coordonate-XY.md) | Comoara |
+| 8 | [L8-Repeta-si-asteapta.md](./L8-Repeta-si-asteapta.md) | Dansul meu |
+| 9 | [L9-Mini-proiect-Personajul-meu.md](./L9-Mini-proiect-Personajul-meu.md) | Personajul meu |
+| 10 | [L10-Recap-showcase.md](./L10-Recap-showcase.md) | Completare + prezentare: Galeria Scratch Starter |
 
 ---
 
