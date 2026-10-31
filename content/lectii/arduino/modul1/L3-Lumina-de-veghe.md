@@ -1,4 +1,4 @@
-# Lecția 3 — Lumina de veghe
+# LECȚIA 3 — Lumina mea de veghe
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 
@@ -7,13 +7,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai un LED care răspunde la **apăsarea unui buton**.  
-**Minim:** buton pe pin 2 · LED pe pin 8 · LED-ul e aprins **cât ții apăsat**.  
-**Complet:** Minim + LED care **rămâne aprins** după o apăsare și se stinge la următoarea (comutator) · mesaj în **Serial Monitor**.
-
-## De ce contează
-Până acum Arduino doar **trimitea** semnale. Acum **ascultă** și **hotărăște**. Orice aparat cu buton — lanternă, sonerie, joc — folosește ce înveți azi.
+## Ce facem azi
+La finalul orei ai un LED care răspunde la **apăsarea unui buton**. Până acum Arduino doar **trimitea** semnale. Acum **ascultă** și **hotărăște**. Orice aparat cu buton — lanternă, sonerie, joc — folosește ce înveți azi.
 
 ---
 
@@ -28,6 +23,18 @@ Până acum Arduino doar **trimitea** semnale. Acum **ascultă** și **hotără�
 | 95–120 | Recap, quiz, galerie |
 
 **Componente azi:** Arduino Uno · Breadboard · LED · Resistor 220 Ω · **Pushbutton** · fire
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `pinMode(pin, INPUT_PULLUP)` | Pin de intrare, ținut pe HIGH | buton la GND: apăsat = LOW |
+| `digitalRead(pin)` | Citește starea pinului | `digitalRead(BUTON)` |
+| `if (…) { … } else { … }` | Alege între două drumuri | dacă e apăsat, aprinde, altfel stinge |
+| `bool`, `!` | Adevărat / fals și opusul lui | `aprins = !aprins;` |
+| `Serial.println("text")` | Scrie în Serial Monitor | `Serial.println("Apasat");` |
 
 ---
 
@@ -190,16 +197,20 @@ void loop() {
 
 ### Pasul 2 — Complet
 - [ ] Comutator cu variabila `aprins`  
-- [ ] Serial Monitor afișează „Aprins” / „Stins” la fiecare apăsare  
+- [ ] Serial Monitor afișează „Apasat” / „Liber” (programul de la pasul 6)  
 - [ ] Numele `A1_L03` e corect
 
 ---
 
-## Bonus
-- [ ] Un al doilea LED care e aprins **doar când primul e stins**  
-- [ ] Un al doilea buton (pin 3) care **stinge** LED-ul
+## Bonus ★★★ — Provocare: Două butoane, două lumini
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
+Două butoane și două LED-uri care se completează.
+
+- [ ] Un al doilea LED, aprins **doar când primul e stins**
+- [ ] Un al doilea buton, pe pin 3, care **stinge** LED-ul
+
+## Recapitulare pe scurt
 1. `INPUT_PULLUP` + buton la GND → **apăsat = LOW**  
 2. `digitalRead(pin)` citește butonul  
 3. `if / else` alege între două drumuri  
@@ -215,3 +226,8 @@ Butonul fizic merge exact la fel: un picior la pin, celălalt la GND, `INPUT_PUL
 
 ## Temă
 Gândește un alt aparat cu un singur buton (lanternă, sonerie…) și scrie în 3 rânduri cum ar funcționa.
+
+---
+
+## Ce urmează — Lecția 4
+În **lecția 4** construiești un semafor cu buton de traversare pentru pietoni.

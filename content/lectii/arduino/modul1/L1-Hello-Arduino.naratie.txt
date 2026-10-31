@@ -2,9 +2,9 @@ Lecția unu. Hello, Arduino!
 
 Astăzi pornești simulatorul Tinkercad Circuits, cunoști placa Arduino Uno și faci primul LED să clipească. Proiectul se numește LED-ul care clipește. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero unu.
 
-Obiectivul. La final ai un circuit cu un LED și un rezistor, legat la Arduino, și un program care îl face să clipească. Minim: LED-ul de pe placă, de la pinul treisprezece, clipește, iar circuitul rulează în simulator. Complet: minim, plus un LED extern pe pinul opt, cu rezistor de două sute douăzeci de ohmi, viteza schimbată și semnalul S O S.
+Ce facem azi. La final ai un circuit cu un LED și un rezistor, legat la Arduino, și un program care îl face să clipească. Arduino este un mic calculator care primește comenzi de la tine și le transformă în lumină, sunet și mișcare. Orice proiect din curs pornește de la ce înveți azi: un pin, un LED și două comenzi. Lucrăm în simulator, deci nu strici nimic dacă greșești.
 
-De ce contează. Arduino este un mic calculator care primește comenzi de la tine și le transformă în lumină, sunet și mișcare. Orice proiect din curs pornește de la ce înveți azi: un pin, un LED și două comenzi. Lucrăm în simulator, deci nu strici nimic dacă greșești.
+Instrucțiuni noi azi. Setup rulează o dată, la pornire, iar loop rulează la nesfârșit. Pin Mode spune ce face pinul. Digital Write aprinde sau stinge pinul. Delay așteaptă un număr de milisecunde. Const int dă un nume unui număr.
 
 Primul pas. Intri pe Tinkercad, te conectezi și alegi Circuits, apoi Create new Circuit. Pe plan apare deja placa Arduino Uno. Privește-o: are pini, o mufă USB și un mic LED notat cu litera L.
 
@@ -22,6 +22,10 @@ Greșeli frecvente. LED-ul nu se aprinde: l-ai pus invers, piciorul lung este pl
 
 Proiectul de azi. LED-ul care clipește. Minim înseamnă LED-ul de pe placă clipind. Complet înseamnă minim, plus LED extern și S O S. Dacă rămâi în urmă, salvează la Minim.
 
+Provocare, trei stele. Ochii robotului. Pui un al doilea LED, pe pinul nouă, care clipește invers față de primul. Apoi faci un LED care clipește de cinci ori și se oprește, cu for, folosind rândurile din lecție.
+
 Recapitulare. Setup rulează o dată, loop la nesfârșit. Pin Mode spune ce face pinul, digital Write îl aprinde sau îl stinge. Delay de o mie înseamnă o secundă. LED-ul are mereu rezistor.
+
+Ce urmează. În lecția doi folosești două LED-uri și bucla for ca să faci un semnalizator de bicicletă.
 
 Succes la primul tău circuit.

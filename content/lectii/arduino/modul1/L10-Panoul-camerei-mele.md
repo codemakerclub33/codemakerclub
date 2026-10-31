@@ -1,4 +1,4 @@
-# Lecția 10 — Panoul camerei mele
+# LECȚIA 10 — Panoul meu
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 
@@ -7,13 +7,8 @@
 
 ---
 
-## Obiectiv
-La finalul modulului ai un proiect care **combină tot ce ai învățat**: LED RGB, buton, potențiometru, buzzer.  
-**Minim:** buton care schimbă între **3 moduri** (stins · alb reglabil · culoare reglabilă).  
-**Complet:** Minim + modul „**petrecere**” (culori aleatorii) + **bip** la fiecare schimbare de mod + prezentare de 2 minute.
-
-## De ce contează
-Un proiect adevărat nu e o singură piesă, ci **mai multe care lucrează împreună**. Azi pui la un loc tot Modulul 1 și îl prezinți.
+## Ce facem azi
+La finalul modulului ai un proiect care **combină tot ce ai învățat**: LED RGB, buton, potențiometru, buzzer. Un proiect adevărat nu e o singură piesă, ci **mai multe care lucrează împreună**. Azi pui la un loc tot Modulul 1 și îl prezinți.
 
 ---
 
@@ -28,6 +23,17 @@ Un proiect adevărat nu e o singură piesă, ci **mai multe care lucrează împr
 | 100–120 | Prezentare + quiz final al modulului |
 
 **Componente azi:** Arduino Uno · Breadboard · **RGB LED** · 3 × Resistor 220 Ω · **Potentiometer** · **Pushbutton** · **Piezo** · fire
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `switch (mod) { case 0: … break; }` | Alege un bloc în funcție de valoare | câte un `case` pentru fiecare mod |
+| `%` (rest) | Păstrează un număr în interval | `mod = (mod + 1) % 4;` |
+| `random(256)` | Număr aleatoriu de la 0 la 255 | culori aleatorii la petrecere |
+| Funcții proprii | Păstrează codul ușor de citit | `culoare(r, g, b)`, `bip(ori)` |
 
 ---
 
@@ -239,8 +245,12 @@ Spune colegilor:
 
 ---
 
-## Bonus
-- [ ] Un al cincilea mod: **respirație** (alb care crește și scade)  
+## Bonus ★★★ — Provocare: Moduri noi
+*Doar dacă ai terminat Complet.*
+
+Panoul tău primește două moduri în plus.
+
+- [ ] Un al cincilea mod: **respirație** (alb care crește și scade)
 - [ ] Un al șaselea mod: **semafor** (roșu, galben, verde, pe rând)
 
 ## Verificare finală — Modulul 1
@@ -250,7 +260,7 @@ Spune colegilor:
 4. Ce face `map(x, 0, 1023, 0, 255)`?  
 5. Ce e un tablou (`array`)?
 
-## Recapitulare rapidă
+## Recapitulare pe scurt
 1. Un proiect = mai multe piese care lucrează împreună  
 2. `switch` alege între moduri  
 3. `%` păstrează un număr în interval  
@@ -264,3 +274,8 @@ Alege **un** circuit din Modulul 1 pe care l-ai făcut cu plăcere și explică-
 
 ## Temă
 Desenează panoul tău ideal pentru camera ta: ce moduri ar avea și ce piese ar folosi.
+
+---
+
+## Ce urmează — Modulul 2: Senzori
+În **Modulul 2 — Senzori** citești lumina, temperatura și distanța.

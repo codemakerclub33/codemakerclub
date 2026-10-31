@@ -1,4 +1,4 @@
-# Lecția 7 — Soneria de la ușă
+# LECȚIA 7 — Soneria mea
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 
@@ -7,13 +7,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai o sonerie care scoate un sunet când apeși un buton.  
-**Minim:** buzzer pe pin 8 · buton pe pin 2 · `tone` când apeși, `noTone` când nu.  
-**Complet:** Minim + sunet în **două note** („ding-dong”) · un LED care se aprinde cât sună.
-
-## De ce contează
-Sunetul e cel mai bun mod prin care un aparat **atrage atenția**: alarme, jocuri, aparate de bucătărie. Cu `tone` poți face note muzicale.
+## Ce facem azi
+La finalul orei ai o sonerie care scoate un sunet când apeși un buton. Sunetul e cel mai bun mod prin care un aparat **atrage atenția**: alarme, jocuri, aparate de bucătărie. Cu `tone` poți face note muzicale.
 
 ---
 
@@ -28,6 +23,16 @@ Sunetul e cel mai bun mod prin care un aparat **atrage atenția**: alarme, jocur
 | 100–120 | Recap, quiz, galerie |
 
 **Componente azi:** Arduino Uno · Breadboard · **Piezo** (buzzer) · Pushbutton · (Complet) LED + Resistor 220 Ω · fire
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `tone(pin, frecventa)` | Pornește un sunet | `tone(8, 440);` = nota La |
+| `tone(pin, frecventa, durata)` | Sună o durată, în ms | `tone(8, 659, 400);` |
+| `noTone(pin)` | Oprește sunetul | `noTone(8);` |
 
 ---
 
@@ -177,11 +182,15 @@ void loop() {
 
 ---
 
-## Bonus
-- [ ] Alege **alte două note** și fă soneria ta personală  
-- [ ] Sirenă la apăsarea butonului în loc de ding-dong
+## Bonus ★★★ — Provocare: Soneria personală
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
+Soneria familiei tale, cu sunetul tău.
+
+- [ ] Alegi **alte două note** și faci soneria ta
+- [ ] O **sirenă** la apăsarea butonului, în loc de ding-dong
+
+## Recapitulare pe scurt
 1. `tone(pin, frecventa)` pornește sunetul · `noTone(pin)` îl oprește  
 2. Frecvență mai mare = sunet mai ascuțit  
 3. Mai multe `tone` una după alta fac o melodie
@@ -196,3 +205,8 @@ Buzzerul **pasiv** (fără generator propriu) se comportă ca în simulator. Cel
 
 ## Temă
 Compune soneria familiei tale: alege 3 note și scrie-le (frecvențele) într-un caiet.
+
+---
+
+## Ce urmează — Lecția 8
+În **lecția 8** construiești un pian cu patru clape.

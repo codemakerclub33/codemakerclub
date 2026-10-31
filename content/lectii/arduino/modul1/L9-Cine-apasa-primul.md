@@ -1,4 +1,4 @@
-# Lecția 9 — Cine apasă primul?
+# LECȚIA 9 — Duelul de reflexe
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 
@@ -7,13 +7,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai un joc cu 2 butoane și 3 LED-uri care decide câștigătorul.  
-**Minim:** semnal de start după o pauză aleatorie · cine apasă primul aprinde LED-ul lui.  
-**Complet:** Minim + **start greșit** (cine apasă înainte de semnal pierde) · scor în **Serial Monitor**.
-
-## De ce contează
-Jocurile au **reguli**, iar regulile se scriu cu `if`, `else if` și **bucle**. Aici folosești și **numere aleatorii** (`random`), ca jocul să nu fie la fel de fiecare dată.
+## Ce facem azi
+La finalul orei ai un joc cu 2 butoane și 3 LED-uri care decide câștigătorul. Jocurile au **reguli**, iar regulile se scriu cu `if`, `else if` și **bucle**. Aici folosești și **numere aleatorii** (`random`), ca jocul să nu fie la fel de fiecare dată.
 
 ---
 
@@ -28,6 +23,17 @@ Jocurile au **reguli**, iar regulile se scriu cu `if`, `else if` și **bucle**. 
 | 100–120 | Recap, quiz, turneu în clasă |
 
 **Componente azi:** Arduino Uno · Breadboard · 3 × LED (2 pentru jucători, 1 verde pentru start) · 3 × Resistor 220 Ω · 2 × Pushbutton · fire
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `random(a, b)` | Număr aleatoriu de la a la b minus 1 | `random(2000, 6000)` |
+| `randomSeed(analogRead(A0))` | Pornește „zarul”, din zgomotul unui pin liber | în `setup()` |
+| `while (true)` și `break` | Repetă fără sfârșit, până la `break` | iese când cineva apasă |
+| `millis()` | Milisecundele de la pornire | măsori timpul fără `delay` |
 
 ---
 
@@ -225,11 +231,15 @@ void loop() {
 
 ---
 
-## Bonus
-- [ ] Măsoară **timpul de reacție** în milisecunde și afișează-l  
-- [ ] Un buzzer care sună la semnal
+## Bonus ★★★ — Provocare: Cronometrul reflexelor
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
+Jocul măsoară cât de repede ești.
+
+- [ ] Măsori **timpul de reacție** în milisecunde și îl afișezi
+- [ ] Un buzzer sună în momentul semnalului
+
+## Recapitulare pe scurt
 1. `random(a, b)` = număr aleatoriu între a și b-1  
 2. `randomSeed(analogRead(A0))` pornește „zarul”  
 3. `while` repetă cât timp o condiție e adevărată · `break` iese din buclă  
@@ -245,3 +255,8 @@ Fizic, cei doi jucători apasă butoanele în același timp; folosește cât mai
 
 ## Temă
 Scrie regulile unui joc cu 3 jucători (ce LED-uri și butoane ai nevoie) și desenează schema pe foaie.
+
+---
+
+## Ce urmează — Lecția 10
+În **lecția 10** îți faci panoul de control pentru cameră, cu tot ce ai învățat.

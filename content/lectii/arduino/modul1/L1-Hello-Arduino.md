@@ -1,4 +1,4 @@
-# Lecția 1 — Hello, Arduino!
+# LECȚIA 1 — LED-ul care clipește
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 
@@ -7,13 +7,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai un circuit cu **LED + rezistor** conectat la Arduino și un program care îl face să clipească.  
-**Minim:** LED-ul de pe placă (pin 13) clipește · circuitul rulează în simulator · proiectul are numele corect.  
-**Complet:** Minim + LED extern pe pin 8 cu rezistor de 220 Ω · viteză schimbată · semnalul **SOS**.
-
-## De ce contează
-Arduino e un **mini-calculator** care primește comenzi de la tine și le transformă în **lumină, sunet, mișcare**. Orice proiect din curs pornește de la ce înveți azi: un pin, un LED și două comenzi.
+## Ce facem azi
+La finalul orei ai un circuit cu **LED + rezistor** conectat la Arduino și un program care îl face să clipească. Arduino e un **mini-calculator** care primește comenzi de la tine și le transformă în **lumină, sunet, mișcare**. Orice proiect din curs pornește de la ce înveți azi: un pin, un LED și două comenzi.
 
 **Notă:** lucrăm în **simulator** — nu strici nimic dacă greșești. Cine are placă reală găsește la final secțiunea **„Pe placa reală”**.
 
@@ -30,6 +25,18 @@ Arduino e un **mini-calculator** care primește comenzi de la tine și le transf
 | 95–120 | Recap, quiz, verifici numele, arăți circuitul |
 
 **Componente azi:** Arduino Uno R3 · Breadboard Small · LED · Resistor (220 Ω) · 2 fire
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `void setup()` / `void loop()` | O dată la pornire / la nesfârșit | `void loop() { … }` |
+| `pinMode(pin, OUTPUT)` | Pinul trimite semnal | `pinMode(8, OUTPUT);` |
+| `digitalWrite(pin, HIGH / LOW)` | Aprinde / stinge pinul | `digitalWrite(8, HIGH);` |
+| `delay(ms)` | Așteaptă un număr de milisecunde | `delay(1000);` = 1 secundă |
+| `const int NUME = pin;` | Dă un nume unui număr | `const int LED = 8;` |
 
 ---
 
@@ -192,9 +199,13 @@ void loop() {
 
 ---
 
-## Bonus (după Complet)
-- [ ] Al doilea LED pe pin 9, care clipește **invers** față de primul  
-- [ ] LED care clipește de 5 ori și apoi se oprește (ai nevoie de `for`, îl vedem mai târziu — încearcă doar copiind rândul de mai jos):
+## Bonus ★★★ — Provocare: Ochii robotului
+*Doar dacă ai terminat Complet.*
+
+Doi ochi care clipesc pe rând.
+
+- [ ] Al doilea LED pe pin 9, cu rezistorul lui, care clipește **invers** față de primul
+- [ ] Un LED care clipește de 5 ori și apoi se oprește (cu `for`, copiază rândurile de mai jos)
 
 ```cpp
 for (int i = 0; i < 5; i++) {
@@ -203,7 +214,7 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
-## Recapitulare rapidă
+## Recapitulare pe scurt
 1. `setup()` o dată · `loop()` la nesfârșit  
 2. `pinMode` = ce face pinul · `digitalWrite` = aprins / stins  
 3. `delay(1000)` = 1 secundă  
@@ -219,3 +230,8 @@ Pe placa fizică, același cod funcționează fără nicio schimbare. Conectezi 
 
 ## Temă
 Fă LED-ul să clipească **ritmul numelui tău** (o clipire lungă pentru fiecare silabă). Salvează ca `Prenume_Nume_A1_L01b`.
+
+---
+
+## Ce urmează — Lecția 2
+În **lecția 2** folosești două LED-uri și bucla `for` ca să faci un semnalizator de bicicletă.

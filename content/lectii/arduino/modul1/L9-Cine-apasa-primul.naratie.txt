@@ -2,9 +2,9 @@ Lecția nouă. Cine apasă primul?
 
 Astăzi faci un joc de reflexe pentru doi jucători: un semnal verde apare după o pauză aleatorie, iar cine apasă primul câștigă. Proiectul se numește Duelul de reflexe. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero nouă.
 
-Obiectivul. La final ai un joc cu două butoane și trei LED-uri, care decide câștigătorul. Minim: semnal de start după o pauză aleatorie, iar cine apasă primul aprinde LED-ul lui. Complet: minim, plus start greșit, adică cine apasă înainte de semnal pierde, și scorul în Serial Monitor.
+Ce facem azi. La final ai un joc cu două butoane și trei LED-uri, care decide câștigătorul. Jocurile au reguli, iar regulile se scriu cu if, else if și bucle. Aici folosești și numere aleatorii, ca jocul să nu fie la fel de fiecare dată.
 
-De ce contează. Jocurile au reguli, iar regulile se scriu cu if, else if și bucle. Aici folosești și numere aleatorii, ca jocul să nu fie la fel de fiecare dată.
+Instrucțiuni noi azi. Random cu două numere dă un număr aleatoriu. Random Seed pornește zarul, din zgomotul unui pin liber. While true repetă fără sfârșit, până când apare un break, care iese din buclă. Millis dă numărul de milisecunde de la pornire, ca să măsori timpul fără să blochezi programul.
 
 Primul pas. Conexiuni. Butonul jucătorului unu merge la pinul doi, al jucătorului doi la pinul trei, fiecare cu un picior la GND. LED-ul primului jucător este la pinul opt, al doilea la pinul nouă, iar LED-ul verde de start la pinul zece, toate cu rezistor.
 
@@ -18,6 +18,10 @@ Greșeli frecvente. Același aleatoriu de fiecare dată: ai uitat random Seed. J
 
 Proiectul de azi. Duelul de reflexe. Minim înseamnă semnal aleatoriu și câștigător. Complet înseamnă minim, plus start greșit și scor.
 
+Provocare, trei stele. Cronometrul reflexelor. Măsori timpul de reacție, în milisecunde, și îl afișezi. Apoi adaugi un buzzer care sună în momentul semnalului.
+
 Recapitulare. Random cu două numere dă un număr aleatoriu. Random Seed pornește zarul. While repetă cât timp condiția este adevărată, iar break iese din buclă. Millis măsoară timpul fără să blocheze programul.
+
+Ce urmează. În lecția zece îți faci panoul de control pentru cameră, cu tot ce ai învățat.
 
 Succes la duel.

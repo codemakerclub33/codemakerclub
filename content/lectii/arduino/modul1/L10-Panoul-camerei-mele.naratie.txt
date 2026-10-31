@@ -2,11 +2,11 @@ Lecția zece. Panoul camerei mele.
 
 Astăzi îți faci un panou de control pentru camera ta: o lampă R G B cu moduri, reglaj cu potențiometru și sunet la schimbarea modului. Proiectul se numește Panoul meu. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zece.
 
-Obiectivul. La final de modul ai un proiect care combină tot ce ai învățat: LED R G B, buton, potențiometru și buzzer. Minim: un buton care schimbă între trei moduri: stins, alb reglabil și culoare reglabilă. Complet: minim, plus modul petrecere, cu culori aleatorii, un bip la fiecare schimbare de mod și o prezentare de două minute.
+Ce facem azi. La final de modul ai un proiect care combină tot ce ai învățat: LED R G B, buton, potențiometru și buzzer. Un proiect adevărat nu este o singură piesă, ci mai multe care lucrează împreună. Azi pui la un loc tot Modulul unu și îl prezinți.
 
-De ce contează. Un proiect adevărat nu este o singură piesă, ci mai multe care lucrează împreună. Azi pui la un loc tot Modulul unu și îl prezinți.
+Instrucțiuni noi azi. Switch alege un bloc de cod în funcție de valoare, iar fiecare caz se termină cu break. Procentul dă restul împărțirii și păstrează un număr într-un interval. Random de două sute cincizeci și șase dă o valoare de la zero la două sute cincizeci și cinci. Funcțiile culoare și bip fac codul ușor de citit.
 
-Primul pas. Conexiuni. LED-ul R G B merge pe pinii nouă, zece și unsprezece, cu rezistoare. Butonul, potențiometrul și buzzerul au pinii lor, așa cum ai făcut în lecțiile anterioare.
+Primul pas. Conexiuni. LED-ul R G B merge pe pinii nouă, zece și șase, cu rezistoare, iar piezo pe pinul opt. Butonul, potențiometrul și buzzerul au pinii lor, așa cum ai făcut în lecțiile anterioare.
 
 Al doilea pas. Schema modurilor. Modul zero: lampa stinsă. Modul unu: alb, cu luminozitatea dată de potențiometru. Modul doi: culoare reglabilă. Modul trei, la Complet: petrecere.
 
@@ -20,6 +20,10 @@ Greșeli frecvente. Modul sare prea repede: lipsește delay după apăsarea buto
 
 Proiectul de azi. Panoul meu. Minim înseamnă trei moduri. Complet înseamnă minim, plus petrecere, bip și prezentare.
 
+Provocare, trei stele. Moduri noi. Adaugi un al cincilea mod, respirație, în care albul crește și scade. Apoi un al șaselea mod, semafor, cu roșu, galben și verde, pe rând.
+
 Recapitulare. Un proiect înseamnă mai multe piese care lucrează împreună. Switch alege între moduri. Procentul păstrează un număr într-un interval. Funcțiile fac codul ușor de citit.
+
+Ce urmează. În Modulul doi, Senzori, citești lumina, temperatura și distanța.
 
 Felicitări, ai terminat Modulul unu. Succes la prezentare.

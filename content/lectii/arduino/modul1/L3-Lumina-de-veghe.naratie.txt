@@ -2,9 +2,9 @@ Lecția trei. Lumina de veghe.
 
 Astăzi citești un buton cu Arduino și iei decizii cu if și else. Proiectul se numește Lumina mea de veghe. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero trei.
 
-Obiectivul. La final ai un LED care răspunde la apăsarea unui buton. Minim: buton pe pinul doi, LED pe pinul opt, LED-ul aprins cât ții butonul apăsat. Complet: minim, plus un LED care rămâne aprins după o apăsare și se stinge la următoarea, ca un comutator, și mesaje în Serial Monitor.
+Ce facem azi. La final ai un LED care răspunde la apăsarea unui buton. Până acum Arduino doar trimitea semnale. Acum ascultă și hotărăște. Orice aparat cu buton, o lanternă, o sonerie sau un joc, folosește ce înveți azi.
 
-De ce contează. Până acum Arduino doar trimitea semnale. Acum ascultă și hotărăște. Orice aparat cu buton, o lanternă, o sonerie sau un joc, folosește ce înveți azi.
+Instrucțiuni noi azi. Pin Mode cu input pull up face un pin de intrare, ținut pe High. Digital Read citește starea pinului. If și else aleg între două drumuri. Bool ține minte adevărat sau fals, iar semnul exclamării îl răstoarnă. Serial println scrie un mesaj în Serial Monitor.
 
 Primul pas. Circuit nou. LED-ul merge ca până acum: rezistor, pinul opt, GND. Butonul are patru picioare, iar cele două diagonale merg unul la pinul doi și celălalt la GND.
 
@@ -20,6 +20,10 @@ Greșeli frecvente. LED-ul este aprins fără apăsare: ai uitat input pull up. 
 
 Proiectul de azi. Lumina mea de veghe. Minim înseamnă LED aprins cât ții apăsat. Complet înseamnă comutator și mesaje în Serial Monitor.
 
+Provocare, trei stele. Două butoane, două lumini. Un al doilea LED este aprins doar când primul este stins. Un al doilea buton, pe pinul trei, stinge LED-ul.
+
 Recapitulare. Input pull up înseamnă că apăsat dă Low. Digital Read citește butonul. If și else aleg între două drumuri. Bool ține minte adevărat sau fals.
+
+Ce urmează. În lecția patru construiești un semafor cu buton de traversare pentru pietoni.
 
 Succes cu lumina de veghe.

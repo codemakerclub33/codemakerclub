@@ -38,3 +38,8 @@ Aceeași ordine pentru toate cursurile. Detaliile C++ sunt în `cpp/_structura-l
 1. C++ Modul 1 (gata, L1–L10).
 2. Blender Modul 1: adăugăm „Instrucțiuni noi azi”, unim Obiectiv cu De ce contează și „Schema pe scurt” cu Recapitularea.
 3. Restul modulelor, câte un modul pe rând.
+
+## Stare
+- C++ Modul 1: gata.
+- Blender Modul 1: gata.
+- Arduino Modul 1: gata (cu „Gata când” în loc de „Încearcă tu”; păstrează „Pe placa reală”).

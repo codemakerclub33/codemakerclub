@@ -2,9 +2,9 @@ Lecția cinci. Lampa cu reglaj.
 
 Astăzi citești un potențiometru, un buton rotativ, și reglezi luminozitatea unui LED cu P W M. Proiectul se numește Lampa mea. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero cinci.
 
-Obiectivul. La final ai o lampă a cărei lumină crește sau scade când rotești potențiometrul. Minim: potențiometru pe A zero, LED pe pinul nouă, luminozitatea urmează potențiometrul, cu analog Read și analog Write. Complet: minim, plus valorile afișate în Serial Monitor și un LED care respiră singur, crescând și scăzând lin.
+Ce facem azi. La final ai o lampă a cărei lumină crește sau scade când rotești potențiometrul. Până acum totul era aprins sau stins. Lumea reală e plină de valori între: volum, lumină, viteză. Azi înveți cum citește Arduino o valoare între zero și o mie douăzeci și trei și cum o trimite înapoi.
 
-De ce contează. Până acum totul era aprins sau stins. Lumea reală e plină de valori între: volum, lumină, viteză. Azi înveți cum citește Arduino o valoare între zero și o mie douăzeci și trei și cum o trimite înapoi.
+Instrucțiuni noi azi. Analog Read citește potențiometrul și dă valori de la zero la o mie douăzeci și trei. Map convertește un interval în altul. Analog Write reglează luminozitatea, cu valori de la zero la două sute cincizeci și cinci, doar pe pinii cu tilde. Serial print afișează valorile.
 
 Primul pas. Conexiuni. LED-ul merge, prin rezistor, la pinul nouă, care are semnul tilde, și la GND. Potențiometrul are trei picioare: unul la cinci volți, unul la GND, iar cel din mijloc la A zero.
 
@@ -20,6 +20,10 @@ Greșeli frecvente. LED-ul este fie stins, fie aprins complet: ai folosit un pin
 
 Proiectul de azi. Lampa mea. Minim înseamnă lumina urmând potențiometrul. Complet înseamnă minim, plus Serial Monitor și respirația.
 
+Provocare, trei stele. Lampa inversă. Un al doilea LED, pe pinul zece, este mai luminos când primul este mai slab. Lampa nu se stinge complet: luminozitatea minimă este douăzeci.
+
 Recapitulare. Analog Read dă valori de la zero la o mie douăzeci și trei. Map convertește intervalul. Analog Write merge doar pe pinii cu tilde. Serial Monitor te ajută să vezi valorile.
+
+Ce urmează. În lecția șase amesteci culori cu un LED R G B.
 
 Succes cu lampa.

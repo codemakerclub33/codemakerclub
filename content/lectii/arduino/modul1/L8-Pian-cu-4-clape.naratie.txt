@@ -2,9 +2,9 @@ Lecția opt. Pian cu patru clape.
 
 Astăzi faci un pian mic: patru butoane, fiecare cu altă notă, și înveți tablouri, numite array, ca să cânți melodii. Proiectul se numește Pianul meu. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero opt.
 
-Obiectivul. La final ai un pian cu patru clape care cântă Do, Re, Mi și Fa. Minim: patru butoane și un buzzer, fiecare buton cântă nota lui cât îl ții apăsat. Complet: minim, plus un al cincilea buton care cântă singur o melodie dintr-un tablou de note.
+Ce facem azi. La final ai un pian cu patru clape care cântă Do, Re, Mi și Fa. Un tablou este o listă cu nume. În loc de patru variabile separate ai una singură, cu patru valori. Ajută la tot: note, culori, pini, scoruri.
 
-De ce contează. Un tablou este o listă cu nume. În loc de patru variabile separate ai una singură, cu patru valori. Ajută la tot: note, culori, pini, scoruri.
+Instrucțiuni noi azi. Un tablou este o listă cu nume, de exemplu patru note. Elementul de pe poziția i se scrie cu paranteze pătrate, iar numărătoarea începe de la zero. Un for parcurge tabloul. Tone cu durată cântă o notă cât îi spui.
 
 Primul pas. Conexiuni. Piezo merge la pinul opt și la GND. Butoanele Do, Re, Mi și Fa merg la pinii doi, trei, patru și cinci, fiecare cu un picior diagonal la GND. Butonul pentru melodie, la Complet, merge la pinul șase.
 
@@ -20,6 +20,10 @@ Greșeli frecvente. O notă nu sună: butonul nu este la pinul din listă sau nu
 
 Proiectul de azi. Pianul meu. Minim înseamnă patru clape. Complet înseamnă minim, plus melodia automată.
 
+Provocare, trei stele. A cincea clapă și melodia ta. Adaugi a cincea clapă, Sol, cu trei sute nouăzeci și doi de herți, pe pinul șapte. Apoi schimbi melodia automată cu una care îți place.
+
 Recapitulare. Un tablou ține mai multe valori sub un singur nume. Indicii încep de la zero. For și tablou dau cod scurt pentru multe butoane. Tone cu durată cântă o notă de o anumită lungime.
+
+Ce urmează. În lecția nouă faci un joc de reflexe pentru doi jucători.
 
 Succes cu pianul.

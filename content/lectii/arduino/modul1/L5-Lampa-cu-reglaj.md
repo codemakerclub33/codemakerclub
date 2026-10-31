@@ -1,4 +1,4 @@
-# Lecția 5 — Lampa cu reglaj
+# LECȚIA 5 — Lampa mea
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 
@@ -7,13 +7,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai o lampă a cărei lumină crește sau scade când rotești potențiometrul.  
-**Minim:** potențiometru pe **A0** · LED pe **pin 9** · luminozitatea urmează potențiometrul (`analogRead` → `analogWrite`).  
-**Complet:** Minim + valori afișate în **Serial Monitor** · LED care „**respiră**” singur (crește și scade lin).
-
-## De ce contează
-Până acum totul era **aprins / stins**. Lumea reală e plină de **valori între**: volum, lumină, viteză. Azi înveți cum citește Arduino o valoare între 0 și 1023 și cum o trimite înapoi ca „aproape aprins”.
+## Ce facem azi
+La finalul orei ai o lampă a cărei lumină crește sau scade când rotești potențiometrul. Până acum totul era **aprins / stins**. Lumea reală e plină de **valori între**: volum, lumină, viteză. Azi înveți cum citește Arduino o valoare între 0 și 1023 și cum o trimite înapoi ca „aproape aprins”.
 
 ---
 
@@ -28,6 +23,17 @@ Până acum totul era **aprins / stins**. Lumea reală e plină de **valori înt
 | 90–120 | LED care respiră · recap, quiz |
 
 **Componente azi:** Arduino Uno · Breadboard · LED · Resistor 220 Ω · **Potentiometer** · fire
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `analogRead(A0)` | Citește potențiometrul, valori de la 0 la 1023 | `int citit = analogRead(A0);` |
+| `map(x, 0, 1023, 0, 255)` | Convertește un interval în altul | `map(citit, 0, 1023, 0, 255)` |
+| `analogWrite(pin, 0–255)` | Luminozitate (PWM), doar pe pini cu `~` | `analogWrite(9, 128);` |
+| `Serial.print` / `Serial.println` | Afișează valorile | `Serial.println(citit);` |
 
 ---
 
@@ -174,11 +180,15 @@ Primul `for` **crește** lumina, al doilea o **scade**. Schimbă `delay(5)` ca s
 
 ---
 
-## Bonus
-- [ ] Un al doilea LED pe pin 10, care e **mai luminos când primul e mai slab** (invers)  
+## Bonus ★★★ — Provocare: Lampa inversă
+*Doar dacă ai terminat Complet.*
+
+O lampă cu două LED-uri care se completează.
+
+- [ ] Un al doilea LED, pe pin 10, **mai luminos când primul e mai slab**
 - [ ] Lampa **nu se stinge complet**: luminozitate minimă 20 (`map(citit, 0, 1023, 20, 255)`)
 
-## Recapitulare rapidă
+## Recapitulare pe scurt
 1. `analogRead(A0)` → 0–1023  
 2. `map(x, 0, 1023, 0, 255)` convertește intervalul  
 3. `analogWrite(pin, 0–255)` merge doar pe pini cu `~`  
@@ -194,3 +204,8 @@ Potențiometrul fizic are 3 picioare, ca în simulator. Mijlocul merge la A0, la
 
 ## Temă
 Gândește-te la un aparat din casă care are un buton rotativ (radio, aragaz, lampă) și scrie ce valoare reglează.
+
+---
+
+## Ce urmează — Lecția 6
+În **lecția 6** amesteci culori cu un LED RGB.

@@ -1,4 +1,4 @@
-# Lecția 8 — Pian cu 4 clape
+# LECȚIA 8 — Pianul meu
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 
@@ -7,13 +7,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai un pian cu 4 clape care cântă **Do, Re, Mi, Fa**.  
-**Minim:** 4 butoane + 1 buzzer · fiecare buton cântă nota lui cât îl ții apăsat.  
-**Complet:** Minim + un al cincilea buton care **cântă singur** o melodie dintr-un tablou de note.
-
-## De ce contează
-Un tablou (`array`) e o **listă cu nume**: în loc de 4 variabile separate ai una singură cu 4 valori. Ajută la tot: note, culori, pini, scoruri.
+## Ce facem azi
+La finalul orei ai un pian cu 4 clape care cântă **Do, Re, Mi, Fa**. Un tablou (`array`) e o **listă cu nume**: în loc de 4 variabile separate ai una singură cu 4 valori. Ajută la tot: note, culori, pini, scoruri.
 
 ---
 
@@ -28,6 +23,17 @@ Un tablou (`array`) e o **listă cu nume**: în loc de 4 variabile separate ai u
 | 100–120 | Recap, quiz, concert |
 
 **Componente azi:** Arduino Uno · Breadboard · **Piezo** · **5 × Pushbutton** · fire
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `int note[4] = {262, 294, 330, 349};` | Tablou: o listă cu nume | patru note într-o listă |
+| `note[i]` | Elementul de pe poziția `i`, de la 0 | `note[0]` = 262 |
+| `for (int i = 0; i < NR; i++)` | Parcurge tabloul | verifică toate butoanele |
+| `tone(pin, frecventa, durata)` | Cântă o notă, o durată | `tone(8, melodie[i], durate[i]);` |
 
 ---
 
@@ -220,11 +226,15 @@ void loop() {
 
 ---
 
-## Bonus
-- [ ] Adaugă **a cincea clapă** (Sol, 392 Hz) pe pinul 7  
-- [ ] Schimbă melodia: scrie în `melodie[]` „Mary had a little lamb” sau o melodie care îți place
+## Bonus ★★★ — Provocare: A cincea clapă și melodia ta
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
+Pianul tău crește.
+
+- [ ] A cincea clapă (Sol, 392 Hz) pe pinul 7
+- [ ] Schimbi melodia: scrii în `melodie[]` „Mary had a little lamb” sau o melodie care îți place
+
+## Recapitulare pe scurt
 1. Un tablou ține mai multe valori sub un nume  
 2. Indicii încep de la **0**  
 3. `for` + tablou = codul scurt pentru multe butoane  
@@ -240,3 +250,8 @@ Pe breadboard, cele 4 butoane merg pe pinii 2–5 și au un picior comun la GND.
 
 ## Temă
 Alege o melodie scurtă (8 note) și scrie-o în tablou. Salvează versiunea ta ca `A1_L08b`.
+
+---
+
+## Ce urmează — Lecția 9
+În **lecția 9** faci un joc de reflexe pentru doi jucători.

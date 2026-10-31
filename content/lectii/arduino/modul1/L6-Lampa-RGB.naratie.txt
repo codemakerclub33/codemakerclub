@@ -2,11 +2,11 @@ Lecția șase. Lampa R G B a camerei.
 
 Astăzi amesteci lumină roșie, verde și albastră, ca să obții orice culoare cu un LED R G B. Proiectul se numește Lampa mea colorată. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero șase.
 
-Obiectivul. La final ai un LED R G B care poate afișa culori diferite, comandate din cod. Minim: LED R G B conectat pe trei pini P W M, funcția culoare cu trei valori și șase culori afișate pe rând. Complet: minim, plus un mixer de culori cu trei potențiometre, câte unul pentru fiecare culoare de bază.
+Ce facem azi. La final ai un LED R G B care poate afișa culori diferite, comandate din cod. Ecranul telefonului, televizorul și luminile de petrecere folosesc același truc: trei lumini mici, roșu, verde și albastru, care amestecate dau orice culoare. Azi îl faci tu.
 
-De ce contează. Ecranul telefonului, televizorul și luminile de petrecere folosesc același truc: trei lumini mici, roșu, verde și albastru, care amestecate dau orice culoare. Azi îl faci tu.
+Instrucțiuni noi azi. Analog Write pe trei pini dă câte o valoare pentru fiecare culoare, de la zero la două sute cincizeci și cinci. Funcția culoare primește trei numere și pune culoarea. Cu map, un potențiometru poate comanda o culoare.
 
-Primul pas. LED-ul R G B. Are patru picioare: unul pentru roșu, unul pentru verde, unul pentru albastru și unul comun. Folosim varianta cu catod comun, deci piciorul comun merge la GND. Fiecare culoare merge printr-un rezistor la un pin cu tilde: roșu la nouă, verde la zece, albastru la unsprezece. În Tinkercad treci cu cursorul peste picioare ca să vezi numele lor.
+Primul pas. LED-ul R G B. Are patru picioare: unul pentru roșu, unul pentru verde, unul pentru albastru și unul comun. Folosim varianta cu catod comun, deci piciorul comun merge la GND. Fiecare culoare merge printr-un rezistor la un pin cu tilde: roșu la nouă, verde la zece, albastru la șase. Evităm pinii trei și unsprezece, pentru că tone, din lecția șapte, îi încurcă. În Tinkercad treci cu cursorul peste picioare ca să vezi numele lor.
 
 Al doilea pas. Funcția culoare. Pui toată logica într-un singur loc. Funcția primește trei numere, de la zero la două sute cincizeci și cinci, și le trimite cu analog Write la cele trei culori.
 
@@ -20,6 +20,10 @@ Greșeli frecvente. O culoare lipsește: un picior nu este conectat la pin sau n
 
 Proiectul de azi. Lampa mea colorată. Minim înseamnă șase culori pe rând. Complet înseamnă minim, plus mixerul cu trei potențiometre.
 
+Provocare, trei stele. Curcubeul. Lampa trece prin roșu, portocaliu, galben, verde, albastru și mov, câte o jumătate de secundă fiecare. La final îți alegi culoarea preferată și scrii valorile ei într-un comentariu.
+
 Recapitulare. R G B înseamnă roșu, verde, albastru. Fiecare culoare se comandă cu analog Write. Funcția culoare păstrează codul curat. Valorile intermediare dau culori noi.
+
+Ce urmează. În lecția șapte faci Arduino să sune, cu un buzzer.
 
 Succes cu lampa colorată.

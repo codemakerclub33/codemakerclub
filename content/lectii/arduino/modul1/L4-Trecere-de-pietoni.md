@@ -1,4 +1,4 @@
-# Lecția 4 — Trecere de pietoni
+# LECȚIA 4 — Trecerea mea
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 
@@ -7,13 +7,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai un semafor cu 3 LED-uri pentru mașini, un LED verde pentru pietoni și un buton care **cere traversarea**.  
-**Minim:** semafor cu 3 LED-uri care merge singur (verde → galben → roșu → verde).  
-**Complet:** Minim + buton: când e apăsat, mașinile se opresc și **pietonul primește verde** câteva secunde, apoi totul revine.
-
-## De ce contează
-Semafoarele sunt un exemplu perfect de **stări**: ceva se află într-o stare (verde, galben, roșu) și trece în alta când se întâmplă ceva. Aceeași idee e în jocuri, în ascensoare, în orice aparat.
+## Ce facem azi
+La finalul orei ai un semafor cu 3 LED-uri pentru mașini, un LED verde pentru pietoni și un buton care **cere traversarea**. Semafoarele sunt un exemplu perfect de **stări**: ceva se află într-o stare (verde, galben, roșu) și trece în alta când se întâmplă ceva. Aceeași idee e în jocuri, în ascensoare, în orice aparat.
 
 ---
 
@@ -28,6 +23,17 @@ Semafoarele sunt un exemplu perfect de **stări**: ceva se află într-o stare (
 | 95–120 | Recap, quiz, galerie |
 
 **Componente azi:** Arduino Uno · Breadboard · LED roșu, galben, verde (mașini) · LED verde sau alb (pietoni) · 4 × Resistor 220 Ω · Pushbutton · fire
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `void lumini(bool r, bool g, bool v, bool p)` | O funcție care setează toate luminile | `lumini(true, false, false, true);` |
+| `true` / `false` | Aprins / stins | `digitalWrite(ROSU, true);` |
+| `if (digitalRead(BUTON) == LOW) { traversare(); }` | Când e apăsat butonul, rulează scenariul | `traversare()` = galben, roșu, pieton verde |
+| `for` cu pauze | Face pietonul să clipească | 4 clipiri de câte 250 ms |
 
 ---
 
@@ -207,11 +213,16 @@ Programul **verifică butonul tot timpul** în `loop()`. Când îl găsește ap�
 
 ---
 
-## Bonus
-- [ ] Adaugă un **buzzer** care sună cât pietonul are verde (îl vedem în lecția 7; dacă l-ai pus deja, folosește `tone`)  
-- [ ] Fă o stare de **noapte**: galben care clipește când apeși un al doilea buton
+## Bonus ★★★ — Provocare: Semaforul de noapte
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
+Semaforul își schimbă comportamentul noaptea.
+
+- [ ] Un al doilea buton, care pune semaforul în starea de **noapte**
+- [ ] În starea de noapte, galbenul **clipește**
+- [ ] Încă o apăsare readuce semaforul normal
+
+## Recapitulare pe scurt
 1. Un semafor = **stări** care se succed  
 2. Funcția `lumini(...)` pune ordine în cod  
 3. Butonul se verifică în `loop()`; când e apăsat, rulează o funcție
@@ -226,3 +237,8 @@ Cu LED-uri și buton pe breadboard, codul rămâne la fel. Verifică din nou rez
 
 ## Temă
 Desenează un semafor cu 5 stări (verde, galben, roșu, pieton verde, pieton roșu) și scrie ce LED-uri sunt aprinse în fiecare stare.
+
+---
+
+## Ce urmează — Lecția 5
+În **lecția 5** citești un potențiometru și reglezi luminozitatea unui LED.

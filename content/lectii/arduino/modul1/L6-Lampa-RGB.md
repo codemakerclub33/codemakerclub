@@ -1,4 +1,4 @@
-# Lecția 6 — Lampa RGB a camerei
+# LECȚIA 6 — Lampa mea colorată
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 
@@ -7,13 +7,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai un LED RGB care poate afișa **culori diferite**, comandate din cod.  
-**Minim:** LED RGB conectat pe 3 pini PWM · funcția `culoare(r, g, b)` · 6 culori afișate pe rând.  
-**Complet:** Minim + **mixer de culori** cu 3 potențiometre (câte unul pentru fiecare culoare de bază).
-
-## De ce contează
-Ecranul telefonului, televizorul și luminile de petrecere folosesc **același truc**: trei lumini mici (roșu, verde, albastru) care, amestecate, dau **orice culoare**. Azi îl faci tu.
+## Ce facem azi
+La finalul orei ai un LED RGB care poate afișa **culori diferite**, comandate din cod. Ecranul telefonului, televizorul și luminile de petrecere folosesc **același truc**: trei lumini mici (roșu, verde, albastru) care, amestecate, dau **orice culoare**. Azi îl faci tu.
 
 ---
 
@@ -28,6 +23,16 @@ Ecranul telefonului, televizorul și luminile de petrecere folosesc **același t
 | 100–120 | Recap, quiz, galerie |
 
 **Componente azi:** Arduino Uno · Breadboard · **RGB LED** · 3 × Resistor 220 Ω · (Complet) 3 × Potentiometer · fire
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `analogWrite` pe 3 pini | O valoare pentru fiecare culoare, 0–255 | `analogWrite(R, 255);` |
+| `void culoare(int r, int g, int b)` | O funcție care pune o culoare | `culoare(255, 128, 0);` = portocaliu |
+| `map(analogRead(A0), 0, 1023, 0, 255)` | Potențiometrul comandă o culoare | un potențiometru pe culoare |
 
 ---
 
@@ -182,11 +187,15 @@ Rotește pe rând: vezi cum apar **portocaliul**, **roz-ul**, **turcoazul**.
 
 ---
 
-## Bonus
-- [ ] Găsește culoarea ta preferată și scrie valorile `(r, g, b)` într-un comentariu  
-- [ ] **Curcubeu**: trece prin roșu, portocaliu, galben, verde, albastru, mov, fiecare 500 ms
+## Bonus ★★★ — Provocare: Curcubeul
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
+Lampa trece prin culorile curcubeului.
+
+- [ ] Trece prin roșu, portocaliu, galben, verde, albastru și mov, câte 500 ms
+- [ ] Îți găsești culoarea preferată și scrii valorile `(r, g, b)` într-un comentariu
+
+## Recapitulare pe scurt
 1. RGB = Roșu + Verde + Albastru  
 2. Fiecare culoare se comandă cu `analogWrite` (0–255)  
 3. Funcția `culoare(r, g, b)` păstrează codul curat  
@@ -202,3 +211,8 @@ Verifică dacă LED-ul tău RGB e cu **catod comun** sau **anod comun**; la anod
 
 ## Temă
 Scrie în caiet 5 culori noi, cu valorile `(r, g, b)` pe care le-ai încercat și numele lor.
+
+---
+
+## Ce urmează — Lecția 7
+În **lecția 7** faci Arduino să sune, cu un buzzer.

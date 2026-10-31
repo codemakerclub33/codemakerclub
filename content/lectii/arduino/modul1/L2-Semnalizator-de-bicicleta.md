@@ -1,4 +1,4 @@
-# Lecția 2 — Semnalizator de bicicletă
+# LECȚIA 2 — Bicicleta mea
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 
@@ -7,13 +7,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai **două LED-uri** care clipesc pe rând (stânga / dreapta) și un program scris cu **nume clare**.  
-**Minim:** 2 LED-uri pe pinii 8 și 9, fiecare cu rezistor · clipesc alternativ · valorile sunt în `const int`.  
-**Complet:** Minim + semnal „**virez dreapta**” de 3 clipiri cu `for` și o pauză, apoi „**avarii**” (ambele LED-uri împreună).
-
-## De ce contează
-Până acum ai comandat **un** pin. Acum comanzi **mai mulți** și înveți să dai **nume** lucrurilor (`const int`) și să **repeți** fără să copiezi (`for`).
+## Ce facem azi
+La finalul orei ai **două LED-uri** care clipesc pe rând (stânga / dreapta) și un program scris cu **nume clare**. Până acum ai comandat **un** pin. Acum comanzi **mai mulți** și înveți să dai **nume** lucrurilor (`const int`) și să **repeți** fără să copiezi (`for`).
 
 ---
 
@@ -28,6 +23,17 @@ Până acum ai comandat **un** pin. Acum comanzi **mai mulți** și înveți să
 | 95–120 | Recap, quiz, galerie |
 
 **Componente azi:** Arduino Uno · Breadboard Small · 2 × LED (ex. galben + galben) · 2 × Resistor 220 Ω · fire
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `const int NUME = 8;` | Valoare cu nume, care nu se schimbă | `const int STANGA = 8;` |
+| `for (int i = 0; i < 3; i++)` | Repetă de 3 ori | clipește de 3 ori |
+| `void clipeste(int pin, int ori)` | Funcție cu parametri | aceeași funcție pentru ambele LED-uri |
+| `clipeste(STANGA, 3);` | Cheamă funcția | clipește stânga de 3 ori |
 
 ---
 
@@ -186,11 +192,15 @@ void loop() {
 
 ---
 
-## Bonus
-- [ ] Un al treilea LED (pin 10) ca **lumină de frână** care se aprinde 1 secundă după fiecare semnal  
-- [ ] Schimbă viteza clipirii: `300` → `150`
+## Bonus ★★★ — Provocare: Frâna bicicletei
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
+Bicicleta capătă lumină de frână.
+
+- [ ] Un al treilea LED, pe pin 10, aprins **1 secundă** după fiecare semnal
+- [ ] Clipirea mai rapidă: `300` devine `150`
+
+## Recapitulare pe scurt
 1. `const int NUME = pin;` = nume pentru un număr care nu se schimbă  
 2. `for (int i = 0; i < N; i++)` = repetă de N ori  
 3. O funcție cu parametri (`clipeste(pin, ori)`) se folosește de mai multe ori
@@ -205,3 +215,8 @@ Același cod. Pune LED-urile pe breadboard cu rezistoare de 220 Ω; atenție la 
 
 ## Temă
 Desenează pe foaie bicicleta cu cele 2 LED-uri și scrie ce fac în fiecare semnal. Salvează circuitul final ca `A1_L02`.
+
+---
+
+## Ce urmează — Lecția 3
+În **lecția 3** citești un buton și iei decizii cu `if` și `else`.

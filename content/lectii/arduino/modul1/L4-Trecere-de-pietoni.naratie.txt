@@ -2,9 +2,9 @@ Lecția patru. Trecere de pietoni.
 
 Astăzi construiești un semafor pentru mașini, cu buton de traversare pentru pietoni. Proiectul se numește Trecerea mea. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero patru.
 
-Obiectivul. La final ai un semafor cu trei LED-uri pentru mașini, un LED verde pentru pietoni și un buton care cere traversarea. Minim: semaforul merge singur, verde, galben, roșu și iar verde. Complet: minim, plus butonul. Când este apăsat, mașinile se opresc, pietonul primește verde câteva secunde, apoi totul revine.
+Ce facem azi. La final ai un semafor cu trei LED-uri pentru mașini, un LED verde pentru pietoni și un buton care cere traversarea. Semafoarele sunt un exemplu perfect de stări. Ceva se află într-o stare, verde, galben sau roșu, și trece în alta când se întâmplă ceva. Aceeași idee apare în jocuri și în ascensoare.
 
-De ce contează. Semafoarele sunt un exemplu perfect de stări. Ceva se află într-o stare, verde, galben sau roșu, și trece în alta când se întâmplă ceva. Aceeași idee apare în jocuri și în ascensoare.
+Instrucțiuni noi azi. Funcția lumini setează toate luminile dintr-o dată, cu patru valori: adevărat sau fals. Dacă butonul este apăsat, rulează funcția traversare, care ține tot scenariul. Un for cu pauze face pietonul să clipească.
 
 Primul pas. Conexiunile. LED-ul roșu merge la pinul unsprezece, galbenul la pinul zece, verdele la pinul nouă, LED-ul pentru pietoni la pinul șase. Fiecare are rezistor de două sute douăzeci de ohmi și catodul la GND. Butonul merge la pinul doi și la GND. În Tinkercad poți schimba culoarea fiecărui LED, ca să știi care este care.
 
@@ -18,6 +18,10 @@ Greșeli frecvente. Două culori aprinse odată: ai uitat să stingi culoarea an
 
 Proiectul de azi. Trecerea mea. Minim înseamnă semafor automat. Complet înseamnă minim, plus butonul pietonului.
 
+Provocare, trei stele. Semaforul de noapte. Un al doilea buton pune semaforul în starea de noapte, în care galbenul clipește. O nouă apăsare readuce semaforul normal.
+
 Recapitulare. Un semafor înseamnă stări care se succed. Funcția lumini pune ordine în cod. Butonul se verifică în loop și, când este apăsat, rulează o funcție.
+
+Ce urmează. În lecția cinci citești un potențiometru și reglezi luminozitatea unui LED.
 
 Succes la semafor.
