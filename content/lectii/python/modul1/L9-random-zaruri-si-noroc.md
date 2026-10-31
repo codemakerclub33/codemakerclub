@@ -428,4 +428,4 @@ if zar = 6:
 ---
 
 ## Ce urmează — Lecția 10
-**Proiect de modul**: „Salonul meu de proiecte”, un meniu în care reiei proiectele din lecțiile trecute, cu mici modificări.
+**Proiect de modul**: „Meniul meu de proiecte”, un meniu în care reiei proiectele din lecțiile trecute, cu mici modificări.

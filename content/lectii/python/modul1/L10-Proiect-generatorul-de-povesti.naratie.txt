@@ -1,6 +1,6 @@
-Lecția zece. Salonul meu de proiecte.
+Lecția zece. Meniul meu de proiecte.
 
-Aceasta este lecția de final a modulului. Aduni într-un singur program proiectele din lecțiile trecute, cu mici modificări, și le alegi dintr-un meniu. Proiectul se numește Salonul meu de proiecte. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P unu, linie jos, L zece, punct P Y.
+Aceasta este lecția de final a modulului. Aduni într-un singur program proiectele din lecțiile trecute, cu mici modificări, și le alegi dintr-un meniu. Proiectul se numește Meniul meu de proiecte. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P unu, linie jos, L zece, punct P Y.
 
 Ce facem azi. La final ai un program cu un meniu: alegi un număr și rulează unul dintre proiectele tale din modul. Fișa de jucător, Calculatorul, Oracolul, Interviul, Laboratorul de cuvinte sau Chestionarul. Nu scrii totul de la zero: reiei codul din lecțiile trecute și îl modifici puțin. Așa lucrează și programatorii adevărați: refolosesc ce au făcut deja. Apoi îți verifici cunoștințele din tot modulul.
 
@@ -18,7 +18,7 @@ Al cincilea pas. Verificarea modulului. Rezolvi pe foaie, fără să te uiți î
 
 Greșeli frecvente. Meniul nu face nimic: ai comparat cu număr, nu cu text. Indentation Error: codul din mod nu este indentat la fel. Name Error la random: ai uitat import random. Se rulează mai multe moduri: ai scris if în loc de elif. Name Error la nume: ai folosit numele înainte să îl citești.
 
-Proiectul de azi. Salonul meu de proiecte. Minim înseamnă un meniu cu trei moduri. Complet înseamnă și celelalte trei moduri, plus o modificare a ta la fiecare.
+Proiectul de azi. Meniul meu de proiecte. Minim înseamnă un meniu cu trei moduri. Complet înseamnă și celelalte trei moduri, plus o modificare a ta la fiecare.
 
 Provocare, trei stele. Modul tău secret. Adaugi un al șaptelea mod, Poarta parcului din lecția opt. La oracol afișezi un mesaj special dacă numărul norocos este șase. Și afișezi la sfârșit, în orice mod, un mesaj de rămas bun cu numele tău.
 

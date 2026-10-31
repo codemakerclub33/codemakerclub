@@ -9,4 +9,4 @@
 - Lecția 7 — `if`: programul decide
 - Lecția 8 — `and`, `or`, `not`
 - Lecția 9 — `random`: zaruri și noroc
-- Lecția 10 — Salonul meu de proiecte
+- Lecția 10 — Meniul meu de proiecte

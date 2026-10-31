@@ -22,6 +22,6 @@ Provocare, trei stele. Jocuri cu noroc. Faci un joc cu două zaruri, tu contra c
 
 Recapitulare. Un modul este o colecție de comenzi, adus cu import. Randint dă un întreg, cu capetele incluse. O listă se scrie între paranteze pătrate. Choice alege un element. Norocul se combină cu if pentru jocuri.
 
-Ce urmează. În lecția zece faci proiectul modulului, Salonul meu de proiecte, un meniu în care reiei proiectele din lecțiile trecute, cu mici modificări.
+Ce urmează. În lecția zece faci proiectul modulului, Meniul meu de proiecte, un meniu în care reiei proiectele din lecțiile trecute, cu mici modificări.
 
 Succes cu oracolul.

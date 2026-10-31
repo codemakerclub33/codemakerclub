@@ -95,10 +95,10 @@ export const module = [
   { id: 'm38', curs_id: 'c3', nume: 'Modul 3 — Modificatori și materiale', ordine: 3, badge: 'Modifier Maker', descriere: '10 lecții în care folosești modificatori și materiale: Subdivision, Solidify, Array, Bevel și Boolean. Faci fructe, un gard, un cufăr și brânza cu găuri, apoi texturi și lumini. La final: camera ta 3D.' },
   { id: 'm39', curs_id: 'c3', nume: 'Modul 4 — Proiecte 3D complete', ordine: 4, badge: 'Blender Creator', descriere: '10 lecții pentru proiecte 3D complete: pornești de la idee și schiță, modelezi un personaj și o insulă plutitoare, adaugi lumini și atmosferă și exporți scena. La final: o expoziție cu lucrările tale.' },
   // Python
-  { id: 'm6', curs_id: 'c4', nume: 'Modul 1 — Primii pași în Python', ordine: 1, badge: 'Python Starter', descriere: '10 lecții cu un mic proiect în fiecare: afișezi text, folosești variabile, citești date de la tastatură și faci programul să ia decizii cu if, and, or și not. Adaugi și puțin noroc cu random. La final: un salon de proiecte, adică un meniu care adună proiectele din lecțiile trecute.' },
-  { id: 'm7', curs_id: 'c4', nume: 'Modul 2 — Repetăm, colecționăm, organizăm', ordine: 2, badge: 'Python Builder' },
-  { id: 'm8', curs_id: 'c4', nume: 'Modul 3 — Desenăm cu Turtle', ordine: 3, badge: 'Turtle Artist' },
-  { id: 'm40', curs_id: 'c4', nume: 'Modul 4 — Jocuri cu Pygame', ordine: 4, badge: 'Game Creator' },
+  { id: 'm6', curs_id: 'c4', nume: 'Modul 1 — Primii pași în Python', ordine: 1, badge: 'Python Starter', descriere: '10 lecții cu un mic proiect în fiecare: afișezi text, folosești variabile, citești date de la tastatură și faci programul să ia decizii cu if, and, or și not. Adaugi și puțin noroc cu random. La final: un meniu care adună proiectele din lecțiile trecute.' },
+  { id: 'm7', curs_id: 'c4', nume: 'Modul 2 — Repetăm, colecționăm, organizăm', ordine: 2, badge: 'Python Builder', descriere: '10 lecții despre repetare, liste și funcții: bucle for și while, liste, dicționare și funcții proprii. Faci o numărătoare a rachetei, o pușculiță, o agendă și un calculator cu funcții. La final: jocul „Ghicește numărul”.' },
+  { id: 'm8', curs_id: 'c4', nume: 'Modul 3 — Desenăm cu Turtle', ordine: 3, badge: 'Turtle Artist', descriere: '10 lecții în care desenezi cu broasca țestoasă din Turtle: forme, culori, spirale, stele și mandale. O comanzi apoi de la tastatură și cu mouse-ul, faci un om de zăpadă, un sat și o cursă a țestoaselor. La final: o galerie cu desenele tale.' },
+  { id: 'm40', curs_id: 'c4', nume: 'Modul 4 — Jocuri cu Pygame', ordine: 4, badge: 'Game Creator', descriere: '10 lecții în care faci jocuri cu Pygame: fereastră, forme, mișcare, tastatură, coliziuni, scor și vieți, apoi clase și salvarea recordului. Faci un joc cu monede, unul cu ploaie de stele și o arenă. La final: jocul tău, prezentat la expoziție.' },
   // HTML CSS JavaScript — 6 module, câte 10 lecții fiecare (10+ ani, lucru în VS Code)
   { id: 'm9', curs_id: 'c5', nume: 'Modul 1 — HTML I: Prima mea pagină', ordine: 1, badge: 'HTML Starter', descriere: 'Pagini cu titluri, text, linkuri și imagini. Proiect: „Pagina mea despre mine”.' },
   { id: 'm42', curs_id: 'c5', nume: 'Modul 2 — HTML II: Pagini mai bogate', ordine: 2, badge: 'HTML Builder', descriere: 'Tabele, formulare, audio, video și taguri cu înțeles. Proiect: fișa animalului preferat.' },
@@ -401,7 +401,7 @@ export const lectii = [
     'Chestionarul',
     'Poarta parcului de distracții',
     'Oracolul',
-    'Salonul meu de proiecte',
+    'Meniul meu de proiecte',
   ]),
   ...genLectii('m7', [
     'for și range',

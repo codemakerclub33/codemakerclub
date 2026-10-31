@@ -1,9 +1,9 @@
-# LECȚIA 10 — Salonul meu de proiecte
+# LECȚIA 10 — Meniul meu de proiecte
 **Modulul 1 · Primii pași în Python · 2 ore**  
 **Code Maker Club · Python Starter**
 
 > Aceasta este lecția de final a modulului. Aduni într-un singur program proiectele din lecțiile trecute, cu mici modificări, și le alegi dintr-un **meniu**.  
-> Proiect: **„Salonul meu de proiecte”** · fișier: `Prenume_Nume_P1_L10.py`
+> Proiect: **„Meniul meu de proiecte”** · fișier: `Prenume_Nume_P1_L10.py`
 
 ---
 
@@ -65,7 +65,7 @@ Modurile 1–3 sunt **Minim**, iar modurile 4–6 se adaugă la **Complet**.
 ```python
 nume = input("Cum te cheama? ")
 print("=" * 28)
-print(f"Salonul de proiecte al lui {nume}")
+print(f"Meniul de proiecte al lui {nume}")
 print("=" * 28)
 print("1. Fisa de jucator")
 print("2. Calculatorul")
@@ -197,7 +197,7 @@ import random
 
 nume = input("Cum te cheama? ")
 print("=" * 28)
-print(f"Salonul de proiecte al lui {nume}")
+print(f"Meniul de proiecte al lui {nume}")
 print("=" * 28)
 print("1. Fisa de jucator")
 print("2. Calculatorul")
@@ -303,7 +303,7 @@ Bifează ce poți face **singur**:
 
 ---
 
-## De făcut azi — „Salonul meu de proiecte”
+## De făcut azi — „Meniul meu de proiecte”
 
 ### Minim vs Complet
 
