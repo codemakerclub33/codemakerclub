@@ -24,4 +24,6 @@ Pasul de creație. Scena cu temă. Alegi o temă, de exemplu vară, noapte, ceta
 
 Greșeli frecvente. Nu vezi culoarea: ești în modul Solid, treci pe Material Preview. Toate obiectele au aceeași culoare: folosesc același material. Culoarea se schimbă pe alt obiect: din același motiv, apasă butonul cu cifra de lângă numele materialului, ca materialul să fie unic. Metalul arată negru: metalul reflectă mediul, iar într-o scenă goală pare închis, ceea ce este normal, iar în lecțiile opt și nouă vezi cum se rezolvă. Materialul nu apare: ai selectat altă piesă.
 
+Provocare, trei stele. Paleta de materiale. Faci o grilă de douăsprezece sfere, patru coloane și trei rânduri, la distanțe egale. Coloanele au Roughness zero, zero virgulă trei, zero virgulă șase și unu. Rândurile au Metallic zero, zero virgulă cinci și unu. Fiecare sferă are un nume și o culoare la alegere.
+
 Succes cu culorile.

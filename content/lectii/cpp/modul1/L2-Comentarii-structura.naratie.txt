@@ -1,21 +1,25 @@
-Lecția doi din Modulul unu. Comentarii și structura programului.
+Lecția doi din Modulul unu. Programul meu comentat. Comentarii și structura programului.
 
 Astăzi înveți să scrii un program ordonat: cu structură clară, cu indentare corectă și cu comentarii care explică ce face codul. Fișierul tău este Prenume, linie jos, Nume, linie jos, L doi.
 
-Obiectivul. Minim: un program cu un antet și cel puțin trei comentarii utile. Complet: minim, plus comentarii pe secțiuni, o linie dezactivată pentru test și explicația pe foaie a fiecărei părți din structură.
+Instrucțiuni noi azi. Două bare oblice și un text fac un comentariu pe o linie, pe care compilatorul îl ignoră. Bară oblică și steluță la început, apoi steluță și bară oblică la final fac un comentariu pe mai multe rânduri. Indentarea înseamnă patru spații în interiorul acoladelor, ca să se citească ușor codul. Două bare oblice în fața unei linii de cod o opresc temporar, fără să o ștergi.
 
-Primul pas. Structura unui program. Include aduce biblioteca pentru afișare. Using namespace std ne lasă să scriem c-out simplu. Int main este punctul de start, iar tot ce rulează stă între acolade. Programul se execută de sus în jos, o instrucțiune după alta.
+Exemplul unu. Structura unui program. Include aduce biblioteca pentru afișare. Using namespace std ne lasă să scriem c-out simplu. Int main este punctul de start, iar tot ce rulează stă între acolade. Programul se execută de sus în jos, o instrucțiune după alta. Încearcă tu: adaugă încă două c-out și inversează două linii, apoi vezi ce se schimbă.
 
-Al doilea pas. Comentariile. Două bare oblice transformă o linie în comentariu. Compilatorul o ignoră, dar o citesc oamenii. Poți scrie comentariul pe o linie separată sau la capătul unei linii de cod. Pentru mai multe rânduri folosești bară oblică și steluță la început, apoi steluță și bară oblică la final. Un antet bun spune cine ești, ce face programul și când ai făcut programul.
+Exemplele doi și trei. Comentariile. Pentru o linie folosești două bare oblice. Pentru mai multe rânduri folosești bară cu steluță la început și steluță cu bară la final. Atenție, nu poți pune un comentariu lung în interiorul altui comentariu lung.
 
-Al treilea pas. Ce merită comentat. Un comentariu bun explică ideea, nu repetă codul. De exemplu, nu scrii „afișez salut” lângă o linie care afișează salut. Scrii mai degrabă pe ce secțiune a programului ești.
+Exemplele patru și cinci. Antetul și secțiunile. Un antet bun spune cine ești, ce face programul și când l-ai făcut. Un comentariu bun explică ideea, nu repetă codul. De exemplu, nu scrii afișez salut lângă o linie care afișează salut. Scrii mai degrabă titlul secțiunii în care te afli. Încearcă tu: pune un antet peste un program din lecția unu și cel puțin trei comentarii pe secțiuni.
 
-Al patrulea pas. Indentarea. În interiorul acoladelor lași patru spații. Rândurile goale despart ideile. Același program poate arăta urât sau frumos, dar tu îl scrii frumos, ca să poți citi codul și peste o lună.
+Exemplul șase. Indentarea. În interiorul acoladelor lași patru spații, iar rândurile goale despart ideile. Același program poate arăta urât sau frumos, dar tu îl scrii frumos, ca să poți citi codul și peste o lună. Încearcă tu: scrie un program urât, pe un singur rând, apoi rescrie-l frumos.
 
-Al cincilea pas. Comentariile ca instrument de test. Dacă vrei să vezi ce se întâmplă fără o linie, pui două bare oblice în fața ei. Pentru un bloc întreg folosești bară cu steluță. Atenție: return zero încheie programul, deci tot ce scrii după el nu se mai execută.
+Exemplul șapte. Comentariile ca instrument de test. Dacă vrei să vezi ce se întâmplă fără o linie, pui două bare oblice în fața ei. Încearcă tu: scrie cinci linii de c-out, comentează pe rând câte una și vezi ce dispare de pe ecran. Atenție, return zero încheie programul, deci tot ce scrii după el nu se mai execută.
 
-Greșeli frecvente. Ai deschis un comentariu lung și ai uitat să închizi comentariul, iar tot programul dispare. Ai pus un comentariu lung în interiorul altui comentariu lung. Ai lăsat din greșeală două bare oblice în fața unei linii și codul nu mai face nimic. Ai uitat punct și virgulă. Ai uitat să închizi acolada de la main. Ai pus punct și virgulă după include sau după int main.
+De făcut azi. Programul meu comentat. Minim: un program din lecția unu, cu antet cu numele tău, data și scopul programului, plus cel puțin trei comentarii utile. Complet: minim, plus comentarii pe secțiuni, indentare corectă, o linie dezactivată pentru test, un comentariu pe mai multe rânduri și o foaie în care scrii ce rol are fiecare parte a scheletului.
 
-Tema. Comentezi toate programele din lecția unu. Scrii o fișă de jucător într-un chenar, cu antet și comentarii pe secțiuni. Salvezi ca Tema, linie jos, L doi.
+Bonus, trei stele. Robotul explicat. Doar dacă ai terminat varianta completă. Desenezi un robot din cel puțin cinci rânduri de caractere, iar fiecare rând are un comentariu care spune ce reprezintă: antenă, ochi, gură. Pui un antet și o linie dezactivată, care ar adăuga un buton pe robot. Într-un comentariu pe mai multe rânduri scrii trei idei pentru lecția trei. La final, un coleg citește doar comentariile și ghicește ce desen este.
+
+Greșeli frecvente. Ai deschis un comentariu lung și ai uitat să îl închizi, iar tot programul dispare. Ai pus un comentariu lung în interiorul altui comentariu lung. Ai lăsat din greșeală două bare oblice în fața unei linii și codul nu mai face nimic. Ai uitat punct și virgulă. Ai uitat să închizi acolada de la main. Ai pus punct și virgulă după include sau după int main.
+
+Tema. Refaci exemplele din lecție, de mână. Comentezi toate programele din lecția unu. Scrii o fișă de jucător într-un chenar, cu antet și comentarii pe secțiuni. Salvezi ca Tema, linie jos, L doi. Găsești în lecție și exemple pentru acasă.
 
 Recapitulare. Programul se execută de sus în jos. Două bare oblice comentează o linie. Indentarea și rândurile goale fac codul ușor de citit. Succes!

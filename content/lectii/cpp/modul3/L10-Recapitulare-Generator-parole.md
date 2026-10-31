@@ -1080,4 +1080,4 @@ Verifică programul după regulile din lecția 9: nume clare, indentare corectă
 Ai terminat Modulul 3: știi să împarți un program în funcții, să lucrezi cu text și cu numere și să depanezi programe.
 
 ## Ce urmează — Modulul 4
-**Proiecte și autonomie (CodeKids Graduate):** salvezi date în fișiere, folosești `vector` și `struct` și construiești aplicații complete, de la idee la prezentare.
+**Proiecte și autonomie (CodeMaker Graduate):** salvezi date în fișiere, folosești `vector` și `struct` și construiești aplicații complete, de la idee la prezentare.

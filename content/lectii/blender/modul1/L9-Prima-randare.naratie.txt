@@ -24,4 +24,6 @@ Pasul de creație. Trei poze, trei povești. Faci trei poze ale aceleiași scene
 
 Greșeli frecvente. Imaginea este neagră: camera nu vede nimic sau lumina lipsește. Randarea durează o veșnicie: ai Cycles cu multe Samples, treci pe EEVEE sau scade Samples. Fișierul nu a fost salvat: randarea nu se salvează automat, folosește Image, Save As. Imaginea este mică: rezoluția este prea mică sau procentul este cincizeci. Fundalul nu este transparent: lipsește Film, Transparent sau formatul P N G cu R G B A.
 
+Provocare, trei stele. Laboratorul de randare. Randezi aceeași scenă de patru ori: cu EEVEE, apoi cu Cycles la șaisprezece, șaizeci și patru și două sute cincizeci și șase de eșantioane. Pe o foaie faci un tabel cu motorul, eșantioanele, timpul și ce observi. La final scrii o propoziție: ce primești în plus când aștepți mai mult?
+
 Succes la prima poză.

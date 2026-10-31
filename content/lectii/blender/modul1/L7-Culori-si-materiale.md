@@ -139,10 +139,6 @@ Acum alegi tu culorile, nu le iei dintr-un tabel.
 - [ ] Am scris propoziția despre culori  
 - [ ] Un coleg ghicește tema fără să îi spui  
 
-### Dacă ai terminat devreme
-- [ ] O sferă cu aspect de **aur** (galben, Metallic 1, Roughness 0.25)  
-- [ ] Sau Bonusul de mai jos  
-
 ---
 
 ## Greșeli frecvente
@@ -178,8 +174,15 @@ Acum alegi tu culorile, nu le iei dintr-un tabel.
 
 ---
 
-## Bonus
-- [ ] O culoare „secretă”: află ce face **Emission** (strălucire)
+## Bonus ★★★ — Provocare: Paleta de materiale
+*Doar dacă ai terminat Complet.*
+
+Fă o grilă de 12 sfere care arată cum se schimbă materialul.
+
+- [ ] 12 sfere în grilă de 4 coloane și 3 rânduri, la distanțe egale
+- [ ] Coloanele au `Roughness` `0`, `0.3`, `0.6`, `1`
+- [ ] Rândurile au `Metallic` `0`, `0.5`, `1`
+- [ ] Fiecare sferă are numele ei și o culoare la alegere
 
 ## Recapitulare rapidă
 1. **Material** = cum arată suprafața  

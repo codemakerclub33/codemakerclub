@@ -17,5 +17,5 @@
 | 10 | [L10-Recap-mini-proiect.md](./L10-Recap-mini-proiect.md) | Mini-proiect + badge |
 
 **Bonus / Provocare** pe fiecare lecție.  
-Outline general: `../CodeKids C++ - Curriculum 4 Module.md`  
+Outline general: `../CodeMaker C++ - Curriculum 4 Module.md`  
 Lecția veche (detaliată): `../modul1/L1-Introducere-C++.md` (arhivă / referință)

@@ -126,10 +126,6 @@ Acum aranjezi tu scena și o arăți altcuiva.
 - [ ] Am scris cele 3 propoziții  
 - [ ] Am găsit un obiect cerut în sub 10 secunde  
 
-### Dacă ai terminat devreme
-- [ ] Fă un **screenshot** din fiecare vedere și lipește imaginile într-un document  
-- [ ] Sau Bonusul de mai jos  
-
 ---
 
 ## Greșeli frecvente
@@ -165,8 +161,15 @@ Acum aranjezi tu scena și o arăți altcuiva.
 
 ---
 
-## Bonus
-- [ ] Încearcă **Shift + F** (mod „zbor”, ieși cu click) pentru a te plimba prin scenă
+## Bonus ★★★ — Provocare: Comoara ascunsă
+*Doar dacă ai terminat Complet.*
+
+Ascunde trei obiecte în scenă, iar un coleg le găsește doar cu navigarea.
+
+- [ ] Un cub, o sferă și un con, puse departe unul de altul și de centru
+- [ ] Din vederea de start nu se văd toate trei deodată
+- [ ] Colegul le găsește pe toate trei în mai puțin de un minut, doar cu rotire, deplasare și zoom, fără Outliner
+- [ ] Notezi pe foaie ce vedere (`1`, `3` sau `7`) l-a ajutat cel mai mult
 
 ## Recapitulare rapidă
 1. Rotire · deplasare · zoom  

@@ -197,7 +197,7 @@ string laMici(string s) {
 }
 
 int main() {
-    string text = "Salut Code Kids 2026";
+    string text = "Salut Code Maker 2026";
 
     cout << "Original: " << text << endl;
     cout << "MARI:     " << laMari(text) << endl;
@@ -208,9 +208,9 @@ int main() {
 
 **Ieșire:**
 ```
-Original: Salut Code Kids 2026
-MARI:     SALUT CODE KIDS 2026
-mici:     salut code kids 2026
+Original: Salut Code Maker 2026
+MARI:     SALUT CODE MAKER 2026
+mici:     salut code maker 2026
 ```
 
 Funcțiile primesc textul și returnează o **copie** transformată. Textul original rămâne neschimbat.

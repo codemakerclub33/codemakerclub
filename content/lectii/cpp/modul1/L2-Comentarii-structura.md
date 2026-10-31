@@ -1,18 +1,16 @@
-# LECȚIA 2 — Comentarii și structura programului
+# LECȚIA 2 — Programul meu comentat
+### Comentarii și structura programului
 **Modulul 1 · Bazele C++ · 2 ore**  
 **Code Maker Club · Junior Coder**
 
 > Azi înveți să scrii un program **ordonat**: cu structură clară, indentare corectă și comentarii care explică ce face codul.  
-> Proiect: **„Programul meu comentat”** · fișier: `Prenume_Nume_L2.cpp` (ex. `Ana_Pop_L2.cpp`)
+> Fișier: `Prenume_Nume_L2.cpp`
 
 ---
 
-## Obiectiv
-La finalul orei știi ce rol are fiecare parte a unui program C++, scrii comentarii cu `//` și `/* */`, folosești comentariile ca să oprești temporar o linie de cod și îți formatezi programele astfel încât să poată fi citite ușor.  
-**Minim:** un program cu antet și minimum 3 comentarii utile.  
-**Ținta orei (Complet):** + comentarii pe secțiuni, o linie dezactivată pentru test și explicarea pe foaie a fiecărei părți din structură.
+## Ce facem azi
+La final știi ce rol are fiecare parte a unui program C++, scrii comentarii cu `//` și `/* */`, oprești temporar o linie de cod cu un comentariu și îți formatezi programele ca să poată fi citite ușor.
 
-## De ce contează
 Un program nu este citit doar de calculator. Îl citești tu peste două săptămâni, când ai uitat ce ai vrut să faci, îl citește colegul de echipă și îl citește profesorul la olimpiadă. Comentariile și ordinea din cod fac diferența dintre un program pe care îl poți continua și unul pe care îl rescrii de la zero.
 
 ---
@@ -21,32 +19,32 @@ Un program nu este citit doar de calculator. Îl citești tu peste două săptă
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare L1 și ce înseamnă „program complet” |
-| 15–40 | Structura programului: `#include`, `using namespace std;`, `main`, `return 0` (**Exemplele 1–2**) |
-| 40–70 | Comentarii `//` și `/* */` (**Exemplele 3–7**) |
-| 70–95 | Indentare, spații și cod ordonat (**Exemplele 8–10**) |
-| 95–115 | `return 0`, dezactivarea codului și mini-proiect (**Exemplele 11–14**) |
-| 115–120 | Recap și temă |
+| 0–15 | Recapitulare L1: afișezi numele tău pe două rânduri, din memorie |
+| 15–35 | Structura programului (**Exemplul 1**) |
+| 35–70 | Comentarii `//` și `/* */`, antet și secțiuni (**Exemplele 2–5**) |
+| 70–85 | Indentare și cod ordonat (**Exemplul 6**) |
+| 85–95 | Dezactivarea unei linii cu `//` (**Exemplul 7**) |
+| 95–118 | Proiectul: Programul meu comentat + Provocarea |
+| 118–120 | Recap și temă |
 
 ---
 
-## 1. Recapitulare rapidă din L1
+## Instrucțiuni noi azi
 
-Din lecția trecută știi deja:
-- cum arată un program minim și cum îl rulezi;
-- `cout << "text";` afișează text;
-- `\n` și `endl` trec pe rândul următor;
-- `\t`, `\"` și `\\` sunt caractere speciale.
-
-**Încearcă tu (3 min)**  
-- [ ] Scrii de memorie un program care afișează numele tău pe două rânduri  
-- [ ] Îl rulezi fără să te uiți în lecția anterioară  
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `// text` | Comentariu pe o linie, ignorat de compilator | `// afisez titlul` |
+| `/* text */` | Comentariu pe mai multe linii | `/* Autor: Ana */` |
+| indentare (4 spații) | Împinge codul din `{ }` spre dreapta, ca să se citească ușor | `    cout << "Salut";` |
+| `//` în fața unei linii de cod | Oprește temporar linia, fără să o ștergi | `// cout << "Test";` |
 
 ---
 
-## 2. Structura unui program C++
+## Pas cu pas
 
-Orice program pe care îl scriem în acest modul are aceeași formă:
+### Structura unui program C++
+
+Orice program pe care îl scrii în acest modul are aceeași formă, ca în exemplul de mai jos.
 
 ### Exemplul 1 — Scheletul unui program
 
@@ -71,37 +69,12 @@ int main() {
 
 Regula care se aplică peste tot: **fiecare instrucțiune se termină cu `;`**. Liniile `#include` și `int main()` nu au `;` la final.
 
-### Exemplul 2 — Mai multe instrucțiuni, executate pe rând
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    cout << "Pasul 1: pornesc" << endl;
-    cout << "Pasul 2: lucrez" << endl;
-    cout << "Pasul 3: termin" << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Pasul 1: pornesc
-Pasul 2: lucrez
-Pasul 3: termin
-```
-
-Programul merge **de sus în jos**, exact în ordinea în care ai scris instrucțiunile. Dacă schimbi ordinea liniilor, se schimbă și ce vezi pe ecran.
-
 **Încearcă tu (5 min)**  
-- [ ] Rulezi Exemplul 2 și apoi inversezi două linii. Ce se schimbă?  
+- [ ] Adaugi încă două `cout` în Exemplul 1 și apoi inversezi două linii. Ce se schimbă?  
 - [ ] Explici pe foaie, cu cuvintele tale, rolul lui `main`  
 - [ ] Știi să spui pe de rost cele 4 părți ale scheletului  
 
----
-
-## 3. Comentariile
+### Comentariile
 
 Un **comentariu** este text scris în program, pe care compilatorul îl **ignoră complet**. Este făcut pentru oamenii care citesc codul.
 
@@ -112,7 +85,7 @@ C++ are două feluri de comentarii:
 | pe o linie | `// text` | Explicații scurte; tot ce urmează după `//` pe linia respectivă este ignorat |
 | pe mai multe linii | `/* text */` | Explicații mai lungi; tot ce este între `/*` și `*/` este ignorat |
 
-### Exemplul 3 — Comentariu pe o linie
+### Exemplul 2 — Comentariu pe o linie
 
 ```cpp
 #include <iostream>
@@ -127,22 +100,7 @@ int main() {
 
 Comentariul nu apare pe ecran. Ieșirea este doar: `Salut, programatorule!`
 
-### Exemplul 4 — Comentariu la capătul unei linii
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    cout << "Nivel: 1" << endl;   // afisez nivelul curent
-    cout << "Scor: 0" << endl;    // la inceput scorul este zero
-    return 0;                     // programul se termina bine
-}
-```
-
-Comentariul poate sta și **după** cod, pe aceeași linie. Pentru claritate, aliniază comentariile frumos unele sub altele.
-
-### Exemplul 5 — Comentariu pe mai multe linii
+### Exemplul 3 — Comentariu pe mai multe linii
 
 ```cpp
 #include <iostream>
@@ -159,7 +117,7 @@ int main() {
 
 Tot ce se află între `/*` și `*/` este ignorat, indiferent câte rânduri ocupă. Atenție: **nu poți pune un `/* */` în interiorul altui `/* */`**. Primul `*/` închide comentariul, iar restul textului devine cod și dă eroare.
 
-### Exemplul 6 — Antetul unui program
+### Exemplul 4 — Antetul unui program
 
 Pe primele rânduri ale unui program serios se scrie un **antet**: cine a făcut programul, când și ce face.
 
@@ -180,7 +138,7 @@ int main() {
 }
 ```
 
-### Exemplul 7 — Comentarii pe secțiuni
+### Exemplul 5 — Comentarii pe secțiuni
 
 Când programul are mai multe părți, pune câte un comentariu înaintea fiecărei părți. Așa găsești rapid ce cauți.
 
@@ -217,9 +175,7 @@ Comentariile bune explică **de ce** sau **ce urmează să facă** o parte de co
 - [ ] Pui minimum 3 comentarii pe secțiuni, nu pe fiecare linie  
 - [ ] Scrii un comentariu pe mai multe linii care explică ce face programul  
 
----
-
-## 4. Indentarea și ordinea în cod
+### Indentarea și ordinea în cod
 
 Compilatorul nu ține cont de spații, de rânduri goale și de modul în care ai aliniat codul. Dar **omul** ține cont. De aceea respectăm trei reguli:
 
@@ -227,7 +183,7 @@ Compilatorul nu ține cont de spații, de rânduri goale și de modul în care a
 2. Fiecare instrucțiune stă pe **rândul ei**.
 3. Între părțile programului lăsăm câte o **linie goală**.
 
-### Exemplul 8 — Același program, scris urât și frumos
+### Exemplul 6 — Același program, scris urât și frumos
 
 Varianta urâtă (dar corectă, compilatorul o acceptă):
 
@@ -253,64 +209,14 @@ int main() {
 
 Ambele afișează `Salut lume`. A doua se citește fără efort, iar o greșeală (un `;` uitat, o acoladă lipsă) se găsește mult mai ușor.
 
-### Exemplul 9 — Rândurile goale despart ideile
+**Încearcă tu (5 min)**  
+- [ ] Scrii urât un program cu 3 `cout`, pe un singur rând  
+- [ ] Îl rescrii frumos: câte o instrucțiune pe rând, indentat cu 4 spații  
+- [ ] Pui o linie goală între părțile programului  
 
-```cpp
-#include <iostream>
-using namespace std;
+### Oprim o linie cu un comentariu
 
-int main() {
-    cout << "Nume: Ana" << endl;
-    cout << "Clasa: 7A" << endl;
-
-    cout << "Hobby: desen" << endl;
-    cout << "Joc preferat: Minecraft" << endl;
-
-    return 0;
-}
-```
-
-Rândurile goale nu schimbă nimic la rulare. Ele separă „datele personale” de „preferințe” doar pentru ochiul celui care citește.
-
-### Exemplul 10 — Fără `using namespace std;`
-
-```cpp
-#include <iostream>
-
-int main() {
-    std::cout << "Scriu std:: de fiecare data" << std::endl;
-    std::cout << "Dar merge la fel de bine" << std::endl;
-    return 0;
-}
-```
-
-Aici, `std::` apare în fața fiecărui `cout` și `endl`. Este mai mult de scris, dar vei întâlni această formă în multe programe de pe internet. Tu poți folosi oricare variantă, atâta timp cât ești consecvent într-un program.
-
----
-
-## 5. `return 0;` și comentarii ca instrument de test
-
-### Exemplul 11 — Ce se întâmplă după `return 0;`
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    cout << "Aceasta linie se vede." << endl;
-    return 0;
-    cout << "Aceasta linie nu se vede niciodata." << endl;
-}
-```
-
-**Ieșire:**
-```
-Aceasta linie se vede.
-```
-
-`return 0;` încheie `main` pe loc. Instrucțiunile scrise după el nu mai sunt executate.
-
-### Exemplul 12 — Dezactivez o linie cu `//`
+### Exemplul 7 — Dezactivez o linie cu `//`
 
 Programatorii folosesc comentariile și pentru a **opri temporar** o linie de cod, fără să o șteargă. Se numește „a comenta o linie”.
 
@@ -334,8 +240,171 @@ Linia 3
 
 Linia 2 nu a dispărut din cod, dar nu mai este executată. Ca să o repornești, ștergi `//`. În Code::Blocks poți comenta rapid o linie selectată cu **Ctrl + Shift + C**.
 
-### Exemplul 13 — Dezactivez un bloc cu `/* */`
+**Încearcă tu (5 min)**  
+- [ ] Scrii un program cu 5 linii de `cout`  
+- [ ] Comentezi pe rând câte o linie și rulezi de fiecare dată  
+- [ ] Observi ce dispare de pe ecran  
 
+---
+
+## De făcut azi — „Programul meu comentat”
+
+| | Ce trebuie să ai |
+|---|---|
+| **Minim** | Un program din L1, îmbunătățit: antet cu numele tău, data și scopul programului, plus minimum 3 comentarii utile |
+| **Complet** | Minim + comentarii pe secțiuni, indentare corectă, o linie dezactivată cu `//` pentru test, un comentariu cu `/* */` și o foaie în care scrii ce rol are fiecare parte a scheletului (`#include`, `using namespace std;`, `main`, `return 0`) |
+
+**Gata când:**
+- [ ] Programul compilează și rulează  
+- [ ] Are antet și minimum 3 comentarii utile  
+- [ ] Indentarea este corectă  
+- [ ] (Complet) Ai folosit și `//`, și `/* */`  
+- [ ] (Complet) Ai explicat pe foaie ce face fiecare parte a scheletului  
+- [ ] Fișierul se numește `Prenume_Nume_L2.cpp`
+
+---
+
+## Bonus ★★★ — Provocare: Robotul explicat
+*Doar dacă ai terminat Complet.*
+
+Scrie un program care desenează un **robot** din caractere (minimum 5 rânduri), cu fiecare rând explicat printr-un comentariu.
+
+- [ ] Fiecare rând al desenului are un comentariu care spune ce reprezintă (antenă, ochi, gură…)  
+- [ ] Programul are antet și o linie dezactivată cu `//`, care ar adăuga un buton pe robot  
+- [ ] Un comentariu `/* */` pe mai multe linii conține o listă cu 3 idei pentru L3  
+- [ ] Un coleg citește doar comentariile și ghicește ce desen e
+
+---
+
+## Greșeli frecvente
+| Ce vezi | Cauza | Corect |
+|---------|-------|--------|
+| Tot programul dispare după un comentariu | Ai deschis `/*` și ai uitat `*/` | Închide comentariul cu `*/` |
+| Eroare în codul de după comentariu | Ai pus `/* */` în interiorul altui `/* */` | Folosește `//` în interior sau comentează pe rând |
+| Cod care „nu face nimic” | Linia a rămas comentată cu `//` din greșeală | Șterge `//` din fața ei |
+| `expected ';'` | Ai uitat `;` la finalul unei instrucțiuni | `cout << "Salut";` |
+| `expected '}'` | Ai uitat să închizi `main` | Verifică dacă fiecare `{` are un `}` |
+| Cod după `return 0;` care nu se execută | `return 0;` încheie programul | Pune `return 0;` ultimul în `main` |
+| `;` după `#include` sau după `int main()` | Aceste linii nu au `;` | Șterge `;` |
+
+---
+
+## Recapitulare pe scurt
+- Un program are: `#include`, `using namespace std;`, `int main()` și blocul de cod între `{ }`.
+- Programul se execută **de sus în jos**, instrucțiune cu instrucțiune.
+- `//` comentează o linie, iar `/* … */` comentează mai multe linii. Compilatorul le ignoră.
+- Comentariile bune explică ideea, nu repetă codul.
+- Indentarea (4 spații în interiorul `{ }`) și rândurile goale fac codul ușor de citit.
+- Comentariile pot opri temporar o linie sau un bloc de cod, util la testare.
+- `return 0;` încheie programul.
+
+---
+
+## Quiz scurt
+- În ce ordine execută programul instrucțiunile?  
+- Cum scrii un comentariu pe o linie și unul pe mai multe linii?  
+- Ce face compilatorul cu comentariile?  
+- De ce indentăm codul cu 4 spații în interiorul `{ }`?  
+- Ce face `return 0;`?  
+
+---
+
+## Temă
+1. Refă **Exemplele 1–7** pe calculatorul tău (scrise de mână, nu copiate).  
+2. Comentează toate programele tale din L1 (antet + secțiuni).  
+3. Scrie un program nou, de 15–20 de rânduri, care afișează o „fișă de jucător” într-un chenar, cu antet și comentarii pe secțiuni.  
+4. Salvează tot ca `Tema_L2_Prenume_Nume.cpp`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le de mână, rulează-le și schimbă-le după preferințe.
+
+**Acasă 1 — Mai multe instrucțiuni, executate pe rând**
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Pasul 1: pornesc" << endl;
+    cout << "Pasul 2: lucrez" << endl;
+    cout << "Pasul 3: termin" << endl;
+    return 0;
+}
+```
+
+**Ieșire:**
+```
+Pasul 1: pornesc
+Pasul 2: lucrez
+Pasul 3: termin
+```
+
+Programul merge **de sus în jos**, exact în ordinea în care ai scris instrucțiunile. Dacă schimbi ordinea liniilor, se schimbă și ce vezi pe ecran.
+
+**Acasă 2 — Comentariu la capătul unei linii**
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Nivel: 1" << endl;   // afisez nivelul curent
+    cout << "Scor: 0" << endl;    // la inceput scorul este zero
+    return 0;                     // programul se termina bine
+}
+```
+
+Comentariul poate sta și **după** cod, pe aceeași linie. Pentru claritate, aliniază comentariile frumos unele sub altele.
+
+**Acasă 3 — Rândurile goale despart ideile**
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Nume: Ana" << endl;
+    cout << "Clasa: 7A" << endl;
+
+    cout << "Hobby: desen" << endl;
+    cout << "Joc preferat: Minecraft" << endl;
+
+    return 0;
+}
+```
+
+Rândurile goale nu schimbă nimic la rulare. Ele separă „datele personale” de „preferințe” doar pentru ochiul celui care citește.
+
+**Acasă 4 — Fără `using namespace std;`**
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Scriu std:: de fiecare data" << std::endl;
+    std::cout << "Dar merge la fel de bine" << std::endl;
+    return 0;
+}
+```
+
+Aici, `std::` apare în fața fiecărui `cout` și `endl`. Este mai mult de scris, dar vei întâlni această formă în multe programe de pe internet. Tu poți folosi oricare variantă, atâta timp cât ești consecvent într-un program.
+
+**Acasă 5 — Ce se întâmplă după `return 0;`**
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Aceasta linie se vede." << endl;
+    return 0;
+    cout << "Aceasta linie nu se vede niciodata." << endl;
+}
+```
+
+**Ieșire:**
+```
+Aceasta linie se vede.
+```
+
+`return 0;` încheie `main` pe loc. Instrucțiunile scrise după el nu mai sunt executate.
+
+**Acasă 6 — Dezactivez un bloc cu `/* */`**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -361,8 +430,7 @@ Mod usor: activ
 
 Cele două linii dintre `/*` și `*/` sunt ignorate. Este util când vrei să testezi o parte din program fără alta.
 
-### Exemplul 14 — Mini-proiect: ecran de start, complet comentat
-
+**Acasă 7 — Mini-proiect: ecran de start, complet comentat**
 ```cpp
 /*
    Program: Ecran de start
@@ -395,107 +463,6 @@ int main() {
 ```
 
 Observă ce ai combinat: antet, secțiuni, un comentariu la finalul unei linii, desen cu chenar, ghilimele cu `\"` și indentare corectă. Este un program mic, dar scris ca la carte.
-
----
-
-## Proiect / exerciții de finalizat AZI
-
-### Exercițiul A — „Programul meu comentat” (obligatoriu)
-Ia un program din L1 și îmbunătățește programul:
-1. adaugă un antet cu numele tău, data și scopul programului;
-2. adaugă minimum 3 comentarii utile, pe secțiuni;
-3. verifică indentarea și rândurile goale.
-
-### Exercițiul B — Fără comentarii inutile
-Citește codul de mai jos și rescrie codul cu comentarii **bune** (care explică ideea, nu repetă codul):
-
-```cpp
-#include <iostream>
-using namespace std;
-int main() {
-cout << "Nume: Alex" << endl;
-cout << "Nivel: 3" << endl;
-return 0;
-}
-```
-
-### Exercițiul C — Depanare cu comentarii
-Scrie un program cu 5 linii de `cout`. Comentează pe rând câte o linie și rulează de fiecare dată, ca să vezi ce dispare de pe ecran.
-
-### Exercițiul D — Găsește greșelile
-Corectează programul (are 4 greșeli) și apoi explică pe foaie fiecare corecție:
-
-```cpp
-#include <iostream
-using namespace std
-
-int main()
-    cout << "Salut" << endl
-    return 0;
-}
-```
-
-### Exercițiul E — Explică structura
-Pe o foaie, desenează scheletul unui program și scrie lângă fiecare linie ce rol are. Fără să te uiți în lecție.
-
-**Gata când:**
-- [ ] Programul compilează și rulează  
-- [ ] Are antet și minimum 3 comentarii utile  
-- [ ] Indentarea este corectă  
-- [ ] Ai folosit și `//`, și `/* */`  
-- [ ] Ai explicat pe foaie ce face fiecare parte a scheletului  
-- [ ] Fișierul se numește `Prenume_Nume_L2.cpp`  
-
----
-
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Scrie un program care afișează un desen ASCII și comentează fiecare rând al desenului după ce reprezintă (ochi, nas, gură…)  
-- [ ] Pune un comentariu pe mai multe linii care conține o „listă de idei” pentru programul de la L3  
-- [ ] Fă un program cu 6 secțiuni, fiecare precedată de un comentariu cu titlu între liniuțe  
-- [ ] Rescrie un program din L1 fără `using namespace std;`, folosind `std::`  
-
----
-
-## Greșeli frecvente
-
-| Ce vezi | Cauza | Corect |
-|---------|-------|--------|
-| Tot programul dispare după un comentariu | Ai deschis `/*` și ai uitat `*/` | Închide comentariul cu `*/` |
-| Eroare în codul de după comentariu | Ai pus `/* */` în interiorul altui `/* */` | Folosește `//` în interior sau comentează pe rând |
-| Cod care „nu face nimic” | Linia a rămas comentată cu `//` din greșeală | Șterge `//` din fața ei |
-| `expected ';'` | Ai uitat `;` la finalul unei instrucțiuni | `cout << "Salut";` |
-| `expected '}'` | Ai uitat să închizi `main` | Verifică dacă fiecare `{` are un `}` |
-| Cod după `return 0;` care nu se execută | `return 0;` încheie programul | Pune `return 0;` ultimul în `main` |
-| `;` după `#include` sau după `int main()` | Aceste linii nu au `;` | Șterge `;` |
----
-
-## Recapitulare pe scurt
-
-- Un program are: `#include`, `using namespace std;`, `int main()` și blocul de cod între `{ }`.
-- Programul se execută **de sus în jos**, instrucțiune cu instrucțiune.
-- `//` comentează o linie, iar `/* … */` comentează mai multe linii. Compilatorul le ignoră.
-- Comentariile bune explică ideea, nu repetă codul.
-- Indentarea (4 spații în interiorul `{ }`) și rândurile goale fac codul ușor de citit.
-- Comentariile pot opri temporar o linie sau un bloc de cod, util la testare.
-- `return 0;` încheie programul.
-
----
-
-## Quiz scurt
-- În ce ordine execută programul instrucțiunile?  
-- Cum scrii un comentariu pe o linie și unul pe mai multe linii?  
-- Ce face compilatorul cu comentariile?  
-- De ce indentăm codul cu 4 spații în interiorul `{ }`?  
-- Ce face `return 0;`?  
-
----
-
-## Temă
-1. Refă **Exemplele 1–14** pe calculatorul tău (scrise de mână, nu copiate).  
-2. Comentează toate programele tale din L1 (antet + secțiuni).  
-3. Scrie un program nou, de 15–20 de rânduri, care afișează o „fișă de jucător” într-un chenar, cu antet și comentarii pe secțiuni.  
-4. **Bonus:** fă un program cu un singur `cout` lung (pe mai multe rânduri de cod, cu `<<`), pe care îl comentezi pe bucăți.  
-5. Salvează tot ca `Tema_L2_Prenume_Nume.cpp`.
 
 ---
 

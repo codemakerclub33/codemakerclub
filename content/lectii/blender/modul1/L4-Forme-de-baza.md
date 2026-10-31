@@ -129,10 +129,6 @@ Racheta a fost construită după tabel. Acum alegi tu ce construiești.
 - [ ] Toate piesele au nume  
 - [ ] Un coleg ghicește ce vehicul ai făcut  
 
-### Dacă ai terminat devreme
-- [ ] Fă **două rachete** de mărimi diferite  
-- [ ] Sau Bonusul de mai jos  
-
 ---
 
 ## Greșeli frecvente
@@ -168,8 +164,15 @@ Racheta a fost construită după tabel. Acum alegi tu ce construiești.
 
 ---
 
-## Bonus
-- [ ] Adaugă un **inel** (Torus) în jurul corpului
+## Bonus ★★★ — Provocare: Caruselul
+*Doar dacă ai terminat Complet.*
+
+Construiește un carusel de parc, cu stâlpi la distanțe egale.
+
+- [ ] Baza: un cilindru lat și subțire
+- [ ] 6 stâlpi subțiri în cerc, la distanțe egale (Pivot pe 3D Cursor, `Shift + D`, `R` `Z` `60`)
+- [ ] Acoperiș: un con, care acoperă toți stâlpii
+- [ ] Fiecare piesă are nume (`Baza`, `Stalp_1`…, `Acoperis`)
 
 ## Recapitulare rapidă
 1. **Shift + A → Mesh** adaugă forme  

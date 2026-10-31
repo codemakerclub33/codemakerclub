@@ -124,10 +124,6 @@ Sau refă piesele simplu, direct în scenă.
 | așez lumini și cameră | ☐ | ☐ | ☐ |
 | randez și salvez o imagine | ☐ | ☐ | ☐ |
 
-### Dacă ai terminat devreme
-- [ ] Adaugă **fundal** (o curbă / un plan în spate)  
-- [ ] Sau Bonusul de mai jos  
-
 ---
 
 ## Greșeli frecvente
@@ -162,8 +158,15 @@ Sau refă piesele simplu, direct în scenă.
 
 ---
 
-## Bonus
-- [ ] Fă **două randări** din unghiuri diferite
+## Bonus ★★★ — Provocare: Povestea dioramei
+*Doar dacă ai terminat Complet.*
+
+Dă viață dioramei cu o poveste.
+
+- [ ] Cel puțin 12 obiecte în diorama ta
+- [ ] 2 randări din unghiuri diferite (ex. din față și de sus)
+- [ ] Scrii 3 propoziții: cine e în diorama ta și ce se întâmplă
+- [ ] O prezentare de 1 minut în fața grupei
 
 ## Recapitulare rapidă — tot Modulul 1
 1. Interfață, navigare, **G R S**  

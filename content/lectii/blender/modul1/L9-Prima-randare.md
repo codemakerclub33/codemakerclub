@@ -124,10 +124,6 @@ Faci trei poze ale **aceleiași scene**. Schimbi de fiecare dată un singur lucr
 - [ ] Am notat ce am schimbat la fiecare  
 - [ ] Am spus care îmi place cel mai mult și de ce  
 
-### Dacă ai terminat devreme
-- [ ] Schimbă culoarea **cerului** în **Properties → World → Color**  
-- [ ] Sau Bonusul de mai jos  
-
 ---
 
 ## Greșeli frecvente
@@ -163,8 +159,14 @@ Faci trei poze ale **aceleiași scene**. Schimbi de fiecare dată un singur lucr
 
 ---
 
-## Bonus
-- [ ] Lipește omulețul cu fundal transparent peste o altă imagine, într-un editor simplu, dacă ai unul
+## Bonus ★★★ — Provocare: Laboratorul de randare
+*Doar dacă ai terminat Complet.*
+
+Compară motoarele și numărul de eșantioane pe aceeași scenă.
+
+- [ ] 4 randări ale aceleiași scene: `EEVEE`, `Cycles` `16`, `Cycles` `64`, `Cycles` `256` samples
+- [ ] Pe foaie un tabel: motor, samples, timp, ce observi
+- [ ] Scrii o propoziție: ce primești în plus când aștepți mai mult?
 
 ## Recapitulare rapidă
 1. **F12** randează · **Image → Save As** salvează  

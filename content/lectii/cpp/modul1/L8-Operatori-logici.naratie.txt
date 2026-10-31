@@ -1,21 +1,27 @@
-Lecția opt din Modulul unu. Operatori logici: și, sau, nu.
+Lecția opt din Modulul unu. Poarta jocului. Operatori logici.
 
-Astăzi înveți să combini mai multe condiții într-una singură. Așa verifici intervale, reguli de acces și parole. Fișierul tău este Prenume, linie jos, Nume, linie jos, L opt.
+Astăzi înveți să combini mai multe condiții într-una singură: și, sau, nu. Așa verifici intervale, reguli de acces și parole. Fișierul tău este Prenume, linie jos, Nume, linie jos, L opt.
 
-Obiectivul. Minim: un program cu o condiție cu „și” și una cu „sau” sau cu „nu”, testat pe trei cazuri. Complet: minim, plus o condiție compusă cu paranteze și tabelul de adevăr al unui operator desenat pe foaie.
+Instrucțiuni noi azi. Două semne și comercial înseamnă și: condiția este adevărată doar dacă amândouă părțile sunt adevărate. Două bare verticale înseamnă sau: este adevărată dacă măcar una e adevărată. Semnul exclamării înseamnă nu și inversează condiția. Parantezele stabilesc ordinea în care se verifică condițiile.
 
-Primul pas. Cei trei operatori. Două semne ampersand înseamnă „și”: condiția este adevărată doar când ambele părți sunt adevărate. Două bare verticale înseamnă „sau”: este adevărată când cel puțin o parte este adevărată. Semnul exclamării înseamnă „nu” și răstoarnă valoarea: din adevărat face fals și invers. Poți lăsa programul să afișeze chiar tabelul de adevăr.
+Cei trei operatori. Un tabel de adevăr arată rezultatul pentru toate combinațiile. La și, rezultatul este adevărat doar dacă ambele sunt adevărate. La sau, rezultatul este fals doar dacă ambele sunt false. Nu răstoarnă valoarea. Bara verticală se află pe locuri diferite pe tastaturi, așa că găsește-o înainte să începi.
 
-Al doilea pas. Intervale. Dacă vrei ca un număr să fie între unu și o sută, scrii x mai mare sau egal cu unu, și, x mai mic sau egal cu o sută. În afara intervalului scrii x mai mic ca unu, sau, x mai mare ca o sută. Cu aceeași idee afli ce fel de caracter este o literă și dacă este vocală.
+Exemplele unu, doi și trei. Și, sau și nu în acțiune. Citește condiția în română înainte să o scrii în cod. Atenție: nu se scrie un singur semn și comercial sau o singură bară. Încearcă tu: desenează pe foaie tabelul de adevăr pentru și, respectiv sau, fără să te uiți în lecție, apoi verifică dacă un număr este între douăzeci și cincizeci.
 
-Al treilea pas. Parantezele. Ordinea este: mai întâi „nu”, apoi „și”, apoi „sau”. Când le amesteci, pui paranteze, ca să nu ai surprize.
+Exemplele patru și cinci. Intervale. În C plus plus nu poți scrie unu mai mic sau egal cu x mai mic sau egal cu zece. Scrii două comparații legate cu și. Pentru valori în afara intervalului folosești sau. Încearcă tu: verifică un număr în afara intervalului unu, zece și testează valorile de la capete.
 
-Al patrulea pas. Probleme și proiecte. Anul bisect, un login cu două condiții, triunghiul, piatră foarfecă hârtie, parcul de distracții și poarta jocului.
+Exemplul șase. Paranteze. Și are prioritate față de sau, dar când le amesteci pune întotdeauna paranteze, chiar dacă nu sunt obligatorii. Cine citește codul, inclusiv tu peste o lună, nu trebuie să ghicească ordinea. Încearcă tu: scrie o regulă cu și și cu sau, în două moduri cu paranteze, și găsește valori la care rezultatele diferă.
 
-Un sfat bun: spune regula în română, cu voce tare, înainte să o scrii în cod. Fiecare parte a lui „și” sau „sau” trebuie să fie o condiție completă.
+Exemplul șapte. Anul bisect. Un an este bisect dacă se împarte la patru, dar nu la o sută, sau dacă se împarte la patru sute. Anul o mie nouă sute nu este bisect, iar anul două mii este. Încearcă tu: testează anii două mii douăzeci și patru, două mii o sută, o mie nouă sute și două mii.
 
-Greșeli frecvente. Ai scris x egal unu sau doi, fără să repeți x. Ai încercat să înlănțui comparațiile, de exemplu unu mai mic sau egal cu x mai mic sau egal cu zece. Ai scris un singur ampersand sau o singură bară verticală. Ai folosit semnul exclamării fără paranteze, așa că se aplică doar primului număr. Ai confundat „și” cu „sau”. Ai pus prea multe condiții într-un singur if: împarte condițiile în variabile bool cu nume clare.
+Exemplul opt. Poarta jocului. Este un proiect model: intri dacă ai codul corect și vârsta potrivită, sau dacă ești membru V-I-P. Încearcă tu: schimbă codurile și vârsta minimă și rulează cu un cod bun și vârstă mică, cu un cod V-I-P și cu un cod greșit.
 
-Tema. Citești un an și afli dacă este bisect, cu o variabilă bool. Citești trei numere și vezi dacă sunt toate pozitive. Faci programul Alegerea echipei, după vârstă și nivel. Salvezi ca Tema, linie jos, L opt.
+De făcut azi. Poarta jocului. Minim: un program cu o condiție cu și și una cu sau sau cu nu, testat pe trei cazuri. Complet: minim, plus o condiție compusă cu paranteze, regula scrisă în cuvinte și tabelul de adevăr al unui operator desenat pe foaie. Inventezi propria poartă: un club, un cinema, un joc sau o tabără.
 
-Recapitulare. Și cere ambele, sau cere măcar una, nu răstoarnă. Pune paranteze când amesteci. Succes!
+Bonus, trei stele. Zarurile norocoase. Doar dacă ai terminat varianta completă. Citești valorile a două zaruri, fiecare între unu și șase. Dacă un zar nu este între unu și șase, afișezi Zar invalid. Suma șapte sau unsprezece înseamnă Ai câștigat. Suma doi sau doisprezece înseamnă Ai pierdut. Orice altă sumă înseamnă Mai încearcă. Testezi cu trei și patru, șase și cinci, unu și unu, șase și șase, doi și trei, zero și patru, și scrii rezultatele pe foaie.
+
+Greșeli frecvente. Ai scris x egal unu sau doi, în loc de x egal unu sau x egal doi. Ai încercat să înlănțui comparațiile. Ai scris un singur semn și comercial sau o singură bară. Ai amestecat și cu sau fără paranteze. Ai exclus capătul intervalului, pentru că ai scris mai mic în loc de mai mic sau egal. Ai confundat și cu sau, așa că citește condiția în română, cu voce tare.
+
+Tema. Refaci exemplele din lecție și le testezi pe mai multe valori. Citești un caracter și spui dacă este literă mare, literă mică, cifră sau alt simbol. Citești trei numere și afli dacă sunt toate pozitive, dacă măcar unul este negativ sau dacă niciunul nu este zero. Faci programul Alegerea echipei, cu vârsta și nivelul. Salvezi ca Tema, linie jos, L opt. Găsești în lecție și exemple pentru acasă.
+
+Recapitulare. Și cere ambele condiții adevărate. Sau cere măcar una. Nu inversează. Pentru intervale folosești două comparații legate cu și, iar când amesteci și cu sau pui paranteze. Succes!

@@ -28,4 +28,6 @@ Greșeli frecvente. Scurtătura nu merge: mouse-ul nu este deasupra viewport-ulu
 
 Recapitulare. Scena de start are cub, lumină și cameră. Zonele sunt Viewport, Outliner, Properties și Timeline. G mută, Escape anulează, Control plus Z dă înapoi. Shift plus A adaugă obiecte, iar F doi redenumește.
 
+Provocare, trei stele. Echipa de maimuțe. Fă o poză de grup, ca la un meci. Adaugi șase maimuțe, în două rânduri de câte trei. Fiecare primește în Outliner un nume de jucător, de exemplu Capitanul sau Portarul. Din vederea din față, cu tasta unu, se văd toate șase și nu se ating. Apoi un coleg ghicește care este Capitanul, cea din mijloc, în față.
+
 Succes la primul fișier trei D.

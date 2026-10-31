@@ -862,7 +862,7 @@ La revedere!
 ## Proiect / exerciții de finalizat AZI
 
 ### Exercițiul A — Joc_L42.cpp (obligatoriu)
-Scrie programul din Exemplul 12, pornind de la `Joc_L41.cpp`. Apoi schimbă valorile de pornire ale eroului (viață, monede, atac) după gustul tău și verifică dacă bara de viață arată bine.
+Scrie programul din Exemplul 12, pornind de la `Joc_L41.cpp`. Apoi schimbă valorile de pornire ale eroului (viață, monede, atac) după preferința ta și verifică dacă bara de viață arată bine.
 
 ### Exercițiul B — Mai multe câmpuri
 Adaugă în `Jucator` un câmp `nivel` (pornește de la `1`) și afișează nivelul în `afiseazaStare`.

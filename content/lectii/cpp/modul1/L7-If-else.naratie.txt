@@ -1,21 +1,25 @@
-Lecția șapte din Modulul unu. If else și else if.
+Lecția șapte din Modulul unu. Calificativul tău. If-else și else if.
 
-Astăzi înveți să alegi exact un drum dintre două sau mai multe: dacă ceva este adevărat faci un lucru, altfel faci altul. Fișierul tău este Prenume, linie jos, Nume, linie jos, L șapte.
+Astăzi înveți să alegi exact un drum din două sau mai multe: dacă ceva este adevărat faci un lucru, altfel faci altul. Fișierul tău este Prenume, linie jos, Nume, linie jos, L șapte.
 
-Obiectivul. Minim: un program cu if și else, testat pe ambele ramuri. Complet: minim, plus un lanț else if cu cel puțin trei cazuri și un caz final else.
+Instrucțiuni noi azi. Else execută blocul când condiția din if este falsă, și nu are condiție proprie. Else if adaugă încă un caz, verificat doar dacă cele de sus au fost false. Poți pune un if în interiorul altui if, atunci când a doua întrebare are sens doar după primul răspuns.
 
-Primul pas. If și else. If alege un drum, iar else este drumul de rezervă, pe care îl urmezi când condiția nu este adevărată. Din cele două drumuri se execută exact unul. Cu el faci programe pentru admis sau respins, par sau impar, maximul dintre două numere și o parolă cu mesaj pentru ambele cazuri.
+Exemplele unu și doi. If-else. Exact una dintre cele două ramuri se execută, niciodată amândouă și niciodată niciuna. Else înseamnă în caz contrar. Încearcă tu: citește un număr și afișează pozitiv sau nu este pozitiv, apoi citește vârsta și afișează major sau minor.
 
-Al doilea pas. Else if. Când ai mai mult de două drumuri, pui else if între if și else. Programul execută primul bloc a cărui condiție este adevărată și sare peste restul. Cu el faci calificativul unei note, semnul unui număr, prețul unui bilet în funcție de vârstă și un semafor cu litere. Else de la final prinde tot ce nu a fost acoperit și este locul pentru valorile neașteptate. Else nu are condiție, doar else if are.
+Exemplele trei și patru. Else if. Când ai mai mult de două cazuri, le înlănțuiești cu else if. Programul verifică condițiile de sus în jos și execută blocul primei condiții adevărate, apoi sare peste restul. Blocul else de la final acoperă orice altceva. Încearcă tu: rescrie calificativele cu alte praguri și urmărește pe foaie, pas cu pas, ce se întâmplă pentru nota patru.
 
-Al treilea pas. Ordinea contează. Dacă pui un caz larg înaintea unui caz restrictiv, cel restrictiv nu mai ajunge niciodată la rând. Așa că pui întâi cazul cel mai restrictiv. Testezi și valorile de la graniță, de exemplu cinci, nouă și optsprezece.
+Exemplul cinci. Ordinea contează. Dacă pui cazul cel mai larg primul, programul nu mai ajunge la celelalte. Regula este să pui primele cazurile cele mai restrictive, adică cele mai greu de îndeplinit. Încearcă tu: scrie un lanț cu pragurile în ordine greșită și găsește o valoare care dă un rezultat greșit.
 
-Al patrulea pas. If în if. Când a doua întrebare depinde de prima, pui un if în interiorul altuia. Un exemplu este un login în doi pași: verifici întâi numele, apoi parola.
+Exemplul șase. If în if. Se numește imbricare. Codul secret este cerut doar dacă utilizatorul a fost găsit. Indentarea arată imediat ce aparține cui: tot ce este mai spre dreapta este în interiorul unui if. Încearcă tu: cere un nume de utilizator și, doar dacă este corect, cere un cod.
 
-Al cincilea pas. Proiecte mici. Ghici numărul, maximul dintre trei numere, reducerea de la magazin și prețul unui taxi în funcție de distanță.
+Exemplul șapte. Ghici numărul. Este un proiect model, cu un lanț de trei cazuri: ai ghicit, prea mic și prea mare. Încearcă tu: schimbă numărul secret și rulează cu trei valori, una prea mică, una prea mare și numărul exact.
 
-Greșeli frecvente. Ai pus punct și virgulă înaintea lui else, așa că apare o eroare. Ai scris o condiție după else, în loc de else if. Ai folosit mai multe if-uri separate și au apărut două mesaje. Lanțul tău nu are else și niciun mesaj nu se mai afișează. Ai greșit mai mare cu mai mare sau egal, iar rezultatul e greșit exact la limită.
+De făcut azi. Calificativul tău. Minim: un program cu if și else, testat pe ambele ramuri, de exemplu Admis și Respins, cu pragul tău. Complet: minim, plus un lanț if, else if, else, cu cel puțin trei cazuri și un else final, testat cu o valoare din fiecare caz și una la limită. Pornești de la exemplul trei, dar alegi altă situație: punctele unui jucător, temperatura de afară sau numărul de pași de azi.
 
-Tema. Citești un număr de la unu la doisprezece și afișezi luna. Citești lungimile a trei bețe și vezi dacă pot forma un triunghi. Calculezi prețul unei excursii în funcție de vârstă. Salvezi ca Tema, linie jos, L șapte.
+Bonus, trei stele. Calculatorul cu operator. Doar dacă ai terminat varianta completă. Citești două numere și un operator, adică plus, minus, steluță sau slash, apoi afișezi rezultatul operației alese. Folosești un lanț else if pe caracterul citit. La împărțire verifici, cu un if în if, dacă al doilea număr este zero și afișezi că nu se poate împărți la zero. Pui un else final pentru un operator necunoscut. Testezi cele patru operații, împărțirea la zero și un operator greșit, de exemplu x.
 
-Recapitulare. If else alege unul din două drumuri. Else if adaugă cazuri. Ordinea contează. Succes!
+Greșeli frecvente. Ai pus punct și virgulă înainte de else. Ai scris o condiție după else, deși else nu are condiție. Ai pus cazurile în ordine greșită și lanțul dă mereu primul răspuns. Ai folosit if-uri separate, iar apar două mesaje. Ai uitat else-ul și nu apare niciun mesaj. Rezultatul este greșit exact la limită, pentru că ai scris mai mare în loc de mai mare sau egal.
+
+Tema. Refaci exemplele din lecție și testezi fiecare ramură. Citești un număr de la unu la doisprezece și afișezi luna. Citești lungimea a trei bețe și afli dacă pot forma un triunghi. Calculezi prețul unei excursii în funcție de vârstă. Salvezi ca Tema, linie jos, L șapte. Găsești în lecție și exemple pentru acasă.
+
+Recapitulare. Else alege exact un drum. Else if înlănțuie cazurile, iar ordinea contează. If în if se numește imbricare. Succes!

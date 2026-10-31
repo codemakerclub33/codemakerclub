@@ -1,23 +1,25 @@
-Lecția trei din Modulul unu. Variabile de tip int.
+Lecția trei din Modulul unu. Fișa jucătorului. Variabile de tip int.
 
 Astăzi înveți să păstrezi numere în memoria calculatorului, să le dai un nume, să le schimbi și să calculezi cu ele. Fișierul tău este Prenume, linie jos, Nume, linie jos, L trei.
 
-Obiectivul. Minim: un program cu cel puțin trei variabile int și o sumă afișată. Complet: minim, plus un produs, o valoare schimbată pe parcurs și cel puțin un const.
+Instrucțiuni noi azi. Int, apoi un nume, egal și o valoare creează o variabilă cu un număr întreg. Plus, minus și steluță adună, scad și înmulțesc. Const înaintea unei variabile blochează valoarea, ca să nu se mai schimbe. Plus egal, minus egal, plus plus și minus minus sunt scurtături pentru schimbarea unei valori.
 
-Primul pas. O variabilă este o cutie cu nume, tip și valoare. Tipul int înseamnă număr întreg. O creezi scriind int, apoi numele, apoi egal și valoarea, de exemplu int scor egal zero, cu punct și virgulă.
+Exemplul unu. O variabilă este o cutie cu nume, tip și valoare. Tipul int înseamnă număr întreg. O creezi scriind int, apoi numele, apoi egal și valoarea, de exemplu int scor egal o sută, cu punct și virgulă. Atenție la afișare: dacă scrii c-out scor, apare numărul, dar dacă scrii scor între ghilimele, apare chiar cuvântul scor.
 
-Al doilea pas. Semnul egal înseamnă „pune în cutie”. Calculatorul rezolvă mai întâi partea din dreapta și apoi pune rezultatul în variabila din stânga. Valoarea se poate schimba oricând. Atenție la afișare: dacă scrii c-out scor, apare numărul, dar dacă scrii scor între ghilimele, apare chiar cuvântul scor. Mai ține minte că literele mari și mici contează: scor și Scor sunt două variabile diferite.
+Exemplele doi și trei. Semnul egal înseamnă pune în cutie. Calculatorul rezolvă mai întâi partea din dreapta și apoi pune rezultatul în variabila din stânga. Valoarea se poate schimba oricând, iar variabila păstrează ultima valoare. Dacă o variabilă primește valoarea alteia, se face o copie, iar cele două cutii rămân independente. Nume bune pentru variabile: fără spații, fără diacritice și fără cifră la început. Literele mari și mici contează: scor și Scor sunt două variabile diferite. Încearcă tu: declară trei variabile pentru vârstă, anul nașterii și numărul de frați, afișează-le și schimbă una la mijlocul programului.
 
-Al treilea pas. Calcule. Poți aduna, scădea și înmulți variabile. Ca la matematică, înmulțirea se face înaintea adunării, iar parantezele schimbă ordinea. Cu aceste calcule poți afla perimetrul și aria unui pătrat sau a unui dreptunghi.
+Exemplul patru. Calcule. Poți aduna, scădea și înmulți variabile. Ca la matematică, înmulțirea se face înaintea adunării, iar parantezele schimbă ordinea. Încearcă tu: calculează suma a trei numere, apoi perimetrul și aria unui pătrat cu latura șapte.
 
-Al patrulea pas. Const. Dacă o valoare nu trebuie să se schimbe niciodată, o scrii cu cuvântul const în față. Dacă încerci să modifici constanta, compilatorul te oprește. Mai înveți scurtături: plus egal adaugă la o variabilă, minus egal scade, iar plus plus mărește cu unu. Înveți și schimbul între două variabile, cu ajutorul unei a treia, ca la două pahare cu sucuri diferite.
+Exemplele cinci, șase și șapte. Const, scurtături și schimbul. Dacă o valoare nu trebuie să se schimbe niciodată, o scrii cu cuvântul const în față, iar dacă încerci s-o modifici, compilatorul te oprește. Plus egal adaugă la o variabilă, minus egal scade, iar plus plus mărește cu unu. Pentru a schimba între ele două variabile ai nevoie de o a treia, ajutătoare, ca la două pahare cu sucuri diferite. Încearcă tu: declară o constantă, fă un scor care crește de trei ori cu plus egal și interschimbă două variabile.
 
-Al cincilea pas. Proiecte mici. Faci o fișă a jucătorului și un bon de casă, cu variabile.
+Exemplul opt. Fișa jucătorului. Este un proiect model, cu constantă, variabile, o luptă în care viața scade și scorul crește, și afișare înainte și după. Încearcă tu: schimbă jocul, cu alt personaj și alte trei variabile.
 
-Nume bune pentru variabile: fără spații, fără diacritice și fără cifră la început. De exemplu nivel doi este bun, dar doi nivel nu.
+De făcut azi. Fișa jucătorului. Minim: un program cu cel puțin trei variabile int, cu nume clare, valorile afișate și o sumă afișată. Complet: minim, plus un produs, o valoare schimbată pe parcurs și cel puțin un const. Alegi tu jocul sau personajul.
+
+Bonus, trei stele. Rotația în trei. Doar dacă ai terminat varianta completă. Trei jucători au scorurile a, b și c. La finalul rundei scorurile se rotesc în cerc: a ia valoarea lui b, b ia valoarea lui c, iar c ia valoarea veche a lui a. Afișezi scorurile înainte și după rotație, fără să pierzi niciun scor. Apoi rotești încă o dată și verifici că după trei rotații ajungi la valorile de început. Pe foaie explici de ce nu merge fără variabila ajutătoare.
 
 Greșeli frecvente. Ai folosit o variabilă fără să o declari. Ai scris int de două ori pentru aceeași variabilă. Ai folosit o variabilă fără valoare și a apărut un număr ciudat, așa că pune de la început o valoare, de exemplu zero. Ai încercat să schimbi un const.
 
-Tema. Scrii programul Fișa mea, cu cinci variabile. Calculezi costul unei excursii cu patru bilete de treizeci și cinci de lei și trei mese de douăzeci și doi de lei, folosind variabile și const. Salvezi ca Tema, linie jos, L trei.
+Tema. Refaci exemplele din lecție. Scrii programul Fișa mea, cu cinci variabile. Calculezi costul unei excursii cu patru bilete de treizeci și cinci de lei și trei mese de douăzeci și doi de lei, folosind variabile și const. Salvezi ca Tema, linie jos, L trei. Găsești în lecție și exemple pentru acasă.
 
 Recapitulare. Variabila este o cutie. Int ține numere întregi. Egal pune valoarea în cutie. Const blochează valoarea. Succes!

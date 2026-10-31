@@ -1,8 +1,8 @@
 # LECȚIA 10 — Showcase final
 **Modulul 4 · Proiecte și autonomie · 2 ore**  
-**Code Maker Club · CodeKids Graduate**
+**Code Maker Club · CodeMaker Graduate**
 
-> Ai ajuns la ultima lecție din Modulul 4. Azi facem trei lucruri: **recapitulăm** tot ce ai învățat (un test scurt și 14 exemple-fișă, câte unul pentru fiecare temă), **îți finalizezi proiectul final** și **îl prezinți** colegilor. La final primești diploma **CodeKids Graduate**.  
+> Ai ajuns la ultima lecție din Modulul 4. Azi facem trei lucruri: **recapitulăm** tot ce ai învățat (un test scurt și 14 exemple-fișă, câte unul pentru fiecare temă), **îți finalizezi proiectul final** și **îl prezinți** colegilor. La final primești diploma **CodeMaker Graduate**.  
 > Proiect: **„Proiectul final”** · fișier: `Prenume_Nume_M4L10.cpp` (ex. `Ana_Pop_M4L10.cpp`)
 
 ---
@@ -1014,9 +1014,9 @@ Scrie la sfârșitul fișierului, într-un comentariu, trei îmbunătățiri pe 
 
 ---
 
-## 🎓 Diploma CodeKids Graduate
+## 🎓 Diploma CodeMaker Graduate
 
-Felicitări! Ai terminat **Modulul 4 — Proiecte și autonomie**. În douăzeci de ore ai învățat să lucrezi cu fișiere, vectori și structuri, să construiești meniuri, să scrii trei proiecte complete, să îți curățești și să îți testezi codul și să îți prezinți munca. Ai primit titlul de **CodeKids Graduate**.
+Felicitări! Ai terminat **Modulul 4 — Proiecte și autonomie**. În douăzeci de ore ai învățat să lucrezi cu fișiere, vectori și structuri, să construiești meniuri, să scrii trei proiecte complete, să îți curățești și să îți testezi codul și să îți prezinți munca. Ai primit titlul de **CodeMaker Graduate**.
 
 Ești pregătit pentru ultima aventură.
 

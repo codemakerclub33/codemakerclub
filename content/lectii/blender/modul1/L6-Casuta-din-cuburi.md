@@ -101,10 +101,6 @@ Snap = „magnet” care te ajută să muți exact pe grilă sau pe alte obiecte
 - [ ] Hornul e pe acoperiș și nu intră în el prea adânc  
 - [ ] Casa se vede completă din **1**, **3** și **7**  
 
-### Dacă ai terminat devreme
-- [ ] Un **gard** din cuburi subțiri  
-- [ ] Sau Bonusul de mai jos  
-
 ---
 
 ## Greșeli frecvente
@@ -139,8 +135,15 @@ Snap = „magnet” care te ajută să muți exact pe grilă sau pe alte obiecte
 
 ---
 
-## Bonus
-- [ ] O casă mai complexă: două etaje
+## Bonus ★★★ — Provocare: Casa cu două etaje
+*Doar dacă ai terminat Complet.*
+
+Mărește casa: două etaje și un balcon.
+
+- [ ] Etajul doi stă exact peste parter (verifici în `Dimensions`)
+- [ ] Ușă la parter și cel puțin 4 ferestre
+- [ ] Balcon: o placă și 4 stâlpișori (Snap pornit)
+- [ ] Acoperișul stă pe etajul de sus
 
 ## Recapitulare rapidă
 1. Dimensions (N) arată mărimea reală  

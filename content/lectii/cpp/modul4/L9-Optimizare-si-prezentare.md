@@ -1,6 +1,6 @@
 # LECȚIA 9 — Optimizare, cod curat și pregătirea prezentării
 **Modulul 4 · Proiecte și autonomie · 2 ore**  
-**Code Maker Club · CodeKids Graduate**
+**Code Maker Club · CodeMaker Graduate**
 
 > Ai trei proiecte care merg. Azi le facem **mai bune**, fără să le schimbăm funcționalitatea: curățăm codul (nume clare, funcții scurte, fără repetiții), învățăm ce înseamnă un program „rapid” și cum îl măsori, scriem teste care îți spun când ai stricat ceva și pregătim o **demonstrație de 3 minute** pentru lecția finală. Un program bun nu doar funcționează, ci poate fi citit, testat și arătat altora.  
 > Proiect: **„Curățenie și demo”** · fișier: `Prenume_Nume_M4L9.cpp` (ex. `Ana_Pop_M4L9.cpp`)
@@ -1454,4 +1454,4 @@ Scrie pe hârtie (sau într-un comentariu la sfârșitul fișierului) scriptul d
 ---
 
 ## Ce urmează — Lecția 10
-**Showcase final.** Recapitulăm tot Modulul 4 cu un test scurt și apoi **prezentăm proiectele**. Ai libertatea să alegi proiectul final: unul dintre cele trei din modul (extins) sau o idee a ta. Primești și diploma „CodeKids Graduate”.
+**Showcase final.** Recapitulăm tot Modulul 4 cu un test scurt și apoi **prezentăm proiectele**. Ai libertatea să alegi proiectul final: unul dintre cele trei din modul (extins) sau o idee a ta. Primești și diploma „CodeMaker Graduate”.

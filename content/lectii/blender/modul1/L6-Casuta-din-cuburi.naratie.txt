@@ -20,4 +20,6 @@ Al șaselea pas, pentru varianta completă. Hornul și pământul. Hornul este u
 
 Greșeli frecvente. Casa plutește: corpul nu este la o înălțime egală cu jumătate din înălțimea lui. Acoperișul este în romb: lipsește rotația de patruzeci și cinci de grade. Ușa intră în perete: ea trebuie să iasă puțin în afara peretelui. Ferestrele nu sunt simetrice: verifică valorile X, plus zero virgulă nouă și minus zero virgulă nouă. Snap-ul sare unde nu vrei: oprește snap-ul cu Shift plus Tab.
 
+Provocare, trei stele. Casa cu două etaje. Mărești casa: două etaje și un balcon. Etajul doi stă exact peste parter, iar în Dimensions verifici înălțimile. Ai ușă la parter și cel puțin patru ferestre. Balconul are o placă și patru stâlpișori, cu Snap pornit. Acoperișul stă pe etajul de sus.
+
 Succes la căsuță.

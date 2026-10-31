@@ -24,4 +24,6 @@ Pasul de creație. Dispoziția mea. Alegi ce simte cine se uită la poza casei: 
 
 Greșeli frecvente. Totul este întunecat: Power este prea mic sau lumina este în spatele obiectelor. Lumina Sun nu schimbă nimic când o muți: pentru Sun contează doar rotația. Camera nu vede casa: apasă Control plus Alt plus zero, apoi verifică cu zero. Nu ai umbre: treci în modul Rendered. Camera se mișcă singură: ai uitat Camera to View bifat, debifează opțiunea.
 
+Provocare, trei stele. Aceeași casă, trei momente. Păstrezi aceeași scenă și schimbi doar luminile. Salvezi trei fișiere: dimineață, apus și noapte. Casa și camera rămân la fel. Noaptea pui o lumină Point sau Spot la ușă sau la geam. Un coleg ghicește momentul zilei uitându-se în modul Rendered.
+
 Succes la fotografie.

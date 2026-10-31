@@ -1,4 +1,4 @@
-# CodeKids C++ — Curriculum 4 Module
+# CodeMaker C++ — Curriculum 4 Module
 **Vârsta țintă:** 12+ ani  
 **Format:** 5 module × 10 lecții × ~2 ore  
 **Total:** 50 lecții (~100 ore)
@@ -151,7 +151,7 @@
 - Modul 1 → *Junior Coder*
 - Modul 2 → *Loop Master*
 - Modul 3 → *Problem Solver*
-- Modul 4 → *CodeKids Graduate*
+- Modul 4 → *CodeMaker Graduate*
 - Modul 5 → *RPG Creator*
 
 ---

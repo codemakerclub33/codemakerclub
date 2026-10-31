@@ -1,23 +1,27 @@
-Lecția cinci din Modulul unu. Tipuri de date: double, char, bool și string.
+Lecția cinci din Modulul unu. Cartea mea de identitate. Tipuri de date: double, char, bool și string.
 
-Astăzi afli că nu tot ce păstrezi în memorie este un număr întreg. Există numere cu zecimale, litere, valori de adevăr și texte întregi. Fișierul tău este Prenume, linie jos, Nume, linie jos, L cinci.
+Astăzi afli că nu tot ce păstrezi în memorie este un număr întreg: există numere cu zecimale, litere, valori de adevăr și texte întregi. Fișierul tău este Prenume, linie jos, Nume, linie jos, L cinci.
 
-Obiectivul. Minim: un program care folosește cel puțin patru tipuri diferite. Complet: minim, plus citire de double și string, un calcul cu zecimale și o literă tratată ca număr.
+Instrucțiuni noi azi. Double ține un număr cu zecimale, scris cu punct, nu cu virgulă. Char ține un singur caracter, între apostrofuri. Bool ține adevărat sau fals. String ține un text, între ghilimele, și are nevoie de include string. Pentru a afișa un număr cu exact două zecimale scrii c-out, fixed și set precision de doi, cu biblioteca i-o-manip.
 
-Primul pas. Panorama tipurilor. Int ține un număr întreg. Double ține un număr cu zecimale, scrise cu punct, nu cu virgulă: trei punct paisprezece. Char ține un singur caracter, între apostrofuri. Bool ține adevărat sau fals, adică true sau false, scrise cu litere mici și în engleză. String ține un text, între ghilimele.
+Panorama tipurilor. Până acum toate variabilele au fost int. Dar un preț poate fi șapte virgulă nouăzeci și nouă de lei, o înălțime poate fi un metru cincizeci și doi, un nume este text, iar răspunsul la întrebarea ai terminat tema este doar da sau nu. Alegerea tipului potrivit face programul corect.
 
-Al doilea pas. Double. Cu double faci reduceri, medii și aria cercului. Capcana mare: dacă împarți șapte la doi, ambele numere întregi, rezultatul este trei. Ca să obții trei virgulă cinci, măcar unul dintre numere trebuie să fie cu zecimale, de exemplu doi punct zero. Poți schimba tipul pentru un calcul scriind double în paranteze înaintea numărului.
+Exemplele unu și doi. Double. Declari un double ca pe un int, dar valoarea are zecimale, cu punct. Capcana: dacă împarți două numere întregi, rezultatul este tot întreg, chiar dacă îl pui într-un double. Soluția este ca măcar unul dintre numere să fie double, înainte de împărțire, de exemplu cu double între paranteze rotunde, în fața numărului. Încearcă tu: citește două numere cu zecimale și afișează suma și media, apoi compară zece împărțit la patru cu zece împărțit la patru punct zero.
 
-Al treilea pas. Char. O literă are în spate un cod numeric, numit ASCII. De exemplu, A mare are codul șaizeci și cinci, iar a mic are nouăzeci și șapte. Așa poți face calcule cu litere, de exemplu să treci dintr-o literă mare într-una mică.
+Exemplul trei. Char. Un char ține exact un caracter. Fiecare caracter are un cod, numit cod ASCII: litera A mare are codul șaizeci și cinci, iar litera a mică are codul nouăzeci și șapte. Poți privi un caracter ca număr și un număr ca literă. Cifra șapte, ca și caracter, are alt cod decât numărul șapte, iar diferența dintre ele se obține scăzând caracterul zero. Încearcă tu: afișează codul unui caracter citit de la tastatură și majuscula unei litere mici.
 
-Al patrulea pas. Bool. Spune doar adevărat sau fals, de exemplu dacă un număr este mai mare ca altul.
+Exemplul patru. Bool. Un bool are doar două valori, true și false, scrise cu litere mici, fără ghilimele. Calculatorul le afișează ca unu și zero. O comparație, de exemplu vârsta mai mare sau egală cu optsprezece, are ca rezultat un bool. Încearcă tu: declară un bool pentru plouă sau nu și afișează-l.
 
-Al cincilea pas. String. Poți lipi texte cu plus, afli lungimea cu punct length și iei o literă cu paranteze pătrate. Prima literă are numărul zero. Atenție: c-in citește doar primul cuvânt, până la spațiu.
+Exemplele cinci și șase. String. Cu plus lipești două texte. Punct length dă lungimea, iar între paranteze pătrate cu indicele zero iei prima literă. Atenție: c-in citește un singur cuvânt, până la primul spațiu. Încearcă tu: citește numele și prenumele și afișează-le în ordine inversă.
 
-Al șaselea pas. Afișarea cu două zecimale. Folosești fixed și set-precision de doi, din biblioteca iomanip. Așa faci un bon cu T V A sau un convertor din lei în euro.
+Exemplele șapte și opt. Cardul de prezentare și bonul cu T-V-A. În card, fiecare informație are tipul ei: text pentru nume, int pentru vârstă, double pentru înălțime, char pentru inițială și bool pentru da sau nu. La bon, afișezi prețurile cu exact două zecimale. Încearcă tu: fă cardul tău, cu datele tale reale, și un bon cu alte produse.
+
+De făcut azi. Cartea mea de identitate. Minim: un program care folosește cel puțin patru tipuri diferite și afișează totul într-un card. Complet: minim, plus citirea de la tastatură a unui double și a unui string, un calcul cu zecimale și un char tratat ca număr.
+
+Bonus, trei stele. Litera secretă. Doar dacă ai terminat varianta completă. Citești o literă mică și o codifici: afișezi litera aflată cu trei poziții mai departe în alfabet, deci a devine d. Afișezi și majuscula literei codificate, apoi codurile ASCII ale literei citite și ale celei codificate. Testezi cu b, m și t, nu cu x, y sau z, și scrii rezultatele pe foaie.
 
 Greșeli frecvente. Ai scris trei virgulă paisprezece în loc de trei punct paisprezece. Ai pus ghilimele la un char sau apostrofuri la un string. Ai scris String cu literă mare. Ai ieșit din text, cu un număr prea mare între parantezele pătrate. Ai împărțit două numere întregi și ai pierdut zecimalele.
 
-Tema. Citești prețul și cantitatea unui produs și afișezi totalul cu două zecimale. Afișezi fiecare literă din numele tău pe câte un rând. Convertești kilometri în mile. Salvezi ca Tema, linie jos, L cinci.
+Tema. Refaci exemplele din lecție. Citești prețul unui produs și cantitatea și afișezi totalul cu două zecimale. Afișezi fiecare literă din numele tău, pe câte un rând. Convertești kilometrii în mile. Salvezi ca Tema, linie jos, L cinci. Găsești în lecție și exemple pentru acasă.
 
-Recapitulare. Fiecare informație are tipul ei. Alege tipul potrivit. Succes!
+Recapitulare. Int ține întregi, double ține zecimale, char ține un caracter, bool ține adevărat sau fals, iar string ține text. Împărțirea a două numere întregi dă tot un număr întreg. Succes!

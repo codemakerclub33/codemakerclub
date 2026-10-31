@@ -82,7 +82,7 @@ export const module = [
   { id: 'm1', curs_id: 'c1', nume: 'Modul 1 — Bazele C++', ordine: 1, badge: 'Junior Coder' },
   { id: 'm2', curs_id: 'c1', nume: 'Modul 2 — Bucle și vectori', ordine: 2, badge: 'Loop Master' },
   { id: 'm14', curs_id: 'c1', nume: 'Modul 3 — Funcții, string, algoritmi', ordine: 3, badge: 'Problem Solver' },
-  { id: 'm15', curs_id: 'c1', nume: 'Modul 4 — Proiecte și autonomie', ordine: 4, badge: 'CodeKids Graduate' },
+  { id: 'm15', curs_id: 'c1', nume: 'Modul 4 — Proiecte și autonomie', ordine: 4, badge: 'CodeMaker Graduate' },
   { id: 'm34', curs_id: 'c1', nume: 'Modul 5 — Proiect RPG în consolă', ordine: 5, badge: 'RPG Creator' },
   // Arduino — 4 module × 10 lecții (10+ ani; Tinkercad Circuits)
   { id: 'm3', curs_id: 'c2', nume: 'Modul 1 — Primele circuite', ordine: 1, badge: 'Circuit Starter' },

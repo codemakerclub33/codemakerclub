@@ -1,19 +1,19 @@
-# LECȚIA 1 — Introducere în C++ și primul program
+# LECȚIA 1 — Cartea mea de vizită
+### Primul program și afișarea
 **Modulul 1 · Bazele C++ · 2 ore**  
 **Code Maker Club · Junior Coder**
 
 > Azi scrii primul tău program în C++, îl rulezi și faci calculatorul să **afișeze** ce vrei tu: text, tabele și desene.  
-> Proiect: **„Cartea mea de vizită”** + un desen din caractere · fișier: `Prenume_Nume_L1.cpp` (ex. `Ana_Pop_L1.cpp`)
+> Fișier: `Prenume_Nume_L1.cpp` (ex. `Ana_Pop_L1.cpp`)
 
 ---
 
-## Obiectiv
-La finalul orei știi să deschizi un fișier nou în mediul de programare, să scrii structura de bază a unui program C++, să îl compilezi și să afișezi pe ecran mai multe rânduri de text.  
-**Minim:** un program care afișează cel puțin 4 rânduri, fiecare pe linia ei.  
-**Ținta orei (Complet):** + tabel cu `\t`, ghilimele în text și un desen din caractere.
+## Ce facem azi
+La final știi să deschizi un fișier nou, să scrii structura de bază a unui program C++, să îl rulezi și să afișezi mai multe rânduri de text, un tabel și un desen din caractere.
 
-## De ce contează
-Aproape tot ce face un program începe cu **afișarea** unui rezultat: un scor în joc, un meniu, un mesaj de eroare. Dacă știi să controlezi ce apare pe ecran, ai făcut primul pas spre orice program mai mare. C++ este folosit în jocuri, în sisteme de operare și în aplicații care trebuie să fie rapide, iar învățând de la început structura lui, o să o recunoști în fiecare program viitor.
+Aproape tot ce face un program începe cu **afișarea** unui rezultat: un scor în joc, un meniu, un mesaj de eroare. C++ este folosit în jocuri, în sisteme de operare și la olimpiadele de informatică.
+
+> Dacă ai învățat deja Scratch: acolo trăgeai blocuri, aici le **scrii** cu tastatura. Ideile (instrucțiuni, ordine) sunt aceleași.
 
 ---
 
@@ -21,52 +21,44 @@ Aproape tot ce face un program începe cu **afișarea** unui rezultat: un scor �
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Ce este C++ și cum ajunge un program la calculator |
-| 10–25 | Pregătim mediul de lucru și deschidem un fișier nou |
-| 25–50 | Primul program, linie cu linie (**Exemplele 1–2**) |
-| 50–75 | Linie nouă: `\n` și `endl` (**Exemplele 3–6**) |
-| 75–95 | Tab, ghilimele și bară oblică (**Exemplele 7–10**) |
-| 95–115 | Desene din caractere (**Exemplele 11–16**) |
-| 115–120 | Recap și temă |
-
-*(Exercițiile din clasă le faci în timpul orei, între exemple. Detaliile sunt mai jos.)*
+| 0–15 | Ce este C++ și pregătim fișierul în Code::Blocks |
+| 15–40 | Primul program, linie cu linie (**Exemplul 1**) |
+| 40–65 | Rând nou: `\n` și `endl` (**Exemplele 2–3**) |
+| 65–85 | Tab, ghilimele și bară oblică (**Exemplele 4–5**) |
+| 85–95 | Desen din caractere (**Exemplul 6**) |
+| 95–118 | Proiectul: Cartea mea de vizită + Provocarea |
+| 118–120 | Recap și temă |
 
 ---
 
-## 1. Ce este C++ și cum funcționează
+## Instrucțiuni noi azi
 
-**C++** este un limbaj de programare. Un program este o listă de instrucțiuni scrise într-un limbaj pe care omul îl poate citi, dar calculatorul nu îl înțelege direct.
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `cout << "text";` | Afișează text pe ecran | `cout << "Salut";` |
+| `\n` sau `endl` | Trece pe rândul următor | `cout << "A\n";` |
+| `\t` | Tab (spațiu mare, pentru aliniere) | `"Nume\tNota"` |
+| `\"` și `\\` | Afișează ghilimele și o bară `\` | `"Zice: \"Da\""` |
 
-Drumul unui program arată așa:
+---
 
-1. **Scrii** codul într-un fișier cu extensia `.cpp` (se numește *cod sursă*).
-2. **Compilatorul** traduce codul în limbajul calculatorului. Dacă ai greșit ceva de scris, aici primești mesaje de eroare.
+## Pas cu pas
+
+### Ce este C++ și cum ajunge programul la calculator
+**C++** este un limbaj de programare. Drumul unui program:
+1. **Scrii** codul într-un fișier `.cpp` (*cod sursă*).
+2. **Compilatorul** îl traduce în limbajul calculatorului. Dacă ai greșit ceva, primești mesaje de eroare. Sunt un ajutor, nu o pedeapsă.
 3. **Rulezi** programul și vezi rezultatul.
 
-Limbajul a fost creat de **Bjarne Stroustrup**, pornind de la limbajul **C**. Se folosește la jocuri, sisteme de operare, aplicații pentru telefon și la olimpiadele de informatică din România.
-
-> Dacă ai învățat deja Scratch: acolo trăgeai blocuri, aici le **scrii** cu tastatura. Ideile (instrucțiuni, ordine, repetare) sunt aceleași.
-
----
-
-## 2. Pregătim mediul de lucru
-
-Programul în care scrii, compilezi și rulezi codul se numește **IDE**. La atelier folosim **Code::Blocks**. Acasă poți folosi și un compilator online (de exemplu OnlineGDB), dacă nu ai instalat nimic.
-
-### Pași pentru primul fișier (Code::Blocks)
+### Pregătim fișierul (Code::Blocks)
 1. Deschide **Code::Blocks**.
-2. Mergi la **File → New → Empty File**.
-3. Salvează imediat ca `Prenume_Nume_L1.cpp` (**File → Save file as…**). Extensia `.cpp` este obligatorie.
-4. Scrie codul, apoi apasă **Build and Run** (tasta **F9**).
+2. **File → New → Empty File**.
+3. Salvează imediat ca `Prenume_Nume_L1.cpp`. Extensia `.cpp` este obligatorie.
+4. Pentru a rula, apasă **Build and Run** (tasta **F9**).
 
 **Încearcă tu (3 min)**  
 - [ ] Ai un fișier gol, salvat cu extensia `.cpp`  
 - [ ] Știi unde este butonul **Build and Run**  
-- [ ] Ai scris numele tău în numele fișierului  
-
----
-
-## 3. Primul program, linie cu linie
 
 ### Exemplul 1 — „Salut, lume!”
 
@@ -87,41 +79,24 @@ Salut, lume!
 
 | Linia | Cod | Ce face |
 |-------|-----|---------|
-| 1 | `#include <iostream>` | Aduce în program biblioteca pentru afișare și citire (`cout`, `cin`) |
-| 2 | `using namespace std;` | Ne permite să scriem `cout` în loc de `std::cout` |
-| 4 | `int main() {` | **Punctul de start.** Programul rulează ce se află între `{` și `}` |
+| 1 | `#include <iostream>` | Aduce biblioteca pentru afișare și citire (`cout`, `cin`) |
+| 2 | `using namespace std;` | Ne lasă să scriem `cout` în loc de `std::cout` |
+| 4 | `int main() {` | **Punctul de start.** Programul rulează ce e între `{` și `}` |
 | 5 | `cout << "Salut, lume!";` | Afișează textul dintre ghilimele |
-| 6 | `return 0;` | Spune că programul a terminat fără probleme |
+| 6 | `return 0;` | Spune că programul s-a terminat fără probleme |
 | 7 | `}` | Închide `main` |
 
-Trei reguli pe care să le ții minte de acum:
-- Fiecare instrucțiune se termină cu **`;`** (punct și virgulă).
-- Textul de afișat se pune între **ghilimele drepte** `"…"`.
-- C++ face diferență între litere mari și mici: `cout` este corect, `Cout` nu.
-
-### Exemplul 2 — Același program, fără `using namespace std;`
-
-```cpp
-#include <iostream>
-
-int main() {
-    std::cout << "Salut, lume!";
-    return 0;
-}
-```
-
-Rezultatul este identic. Aici scriem `std::` în fața lui `cout`, pentru că nu am folosit linia `using namespace std;`. Noi vom folosi de obicei varianta scurtă, dar e bine să recunoști și varianta lungă când o vezi în alte coduri.
+Trei reguli de ținut minte:
+- Fiecare instrucțiune se termină cu **`;`**.
+- Textul se pune între **ghilimele drepte** `"…"`.
+- C++ face diferență între litere mari și mici: `cout` e corect, `Cout` nu.
 
 **Încearcă tu (5 min)**  
 - [ ] Scrii Exemplul 1 **de mână**, fără copy-paste  
 - [ ] Apeși **Build and Run** și vezi mesajul  
 - [ ] Schimbi textul cu numele tău și rulezi din nou  
 
----
-
-## 4. Linie nouă: `\n` și `endl`
-
-### Exemplul 3 — Două afișări, dar lipite
+### Exemplul 2 — Rând nou cu `\n`
 
 ```cpp
 #include <iostream>
@@ -139,19 +114,11 @@ int main() {
 Imi place C++.Programarea e distractiva.
 ```
 
-`cout` **nu** trece singur pe rândul următor. Dacă vrei rânduri separate, trebuie să îi spui tu.
-
-### Exemplul 4 — Linie nouă cu `\n`
+`cout` **nu** trece singur pe rândul următor, deci textele ies lipite. Adaugă `\n` **în interiorul** ghilimelelor:
 
 ```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
     cout << "Imi place C++.\n";
     cout << "Programarea e distractiva.\n";
-    return 0;
-}
 ```
 
 **Ieșire:**
@@ -160,25 +127,9 @@ Imi place C++.
 Programarea e distractiva.
 ```
 
-`\n` înseamnă „rând nou” (*new line*). Se scrie **în interiorul** ghilimelelor.
+`\n` înseamnă „rând nou” (*new line*).
 
-### Exemplul 5 — Linie nouă cu `endl`
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    cout << "Prima linie" << endl;
-    cout << "A doua linie" << endl;
-    cout << "A treia linie" << endl;
-    return 0;
-}
-```
-
-`endl` face același lucru ca `\n`, dar se scrie **în afara** ghilimelelor, legat cu `<<`. Poți folosi oricare dintre ele; important este să fii consecvent în același program.
-
-### Exemplul 6 — Linie goală și mai multe lucruri într-un singur `cout`
+### Exemplul 3 — Rând nou cu `endl` și linie goală
 
 ```cpp
 #include <iostream>
@@ -186,9 +137,8 @@ using namespace std;
 
 int main() {
     cout << "Titlu" << endl << endl;
-    cout << "Rand 1" << endl << "Rand 2" << endl;
-    cout << "Gata!\n\n";
-    cout << "Sfarsit";
+    cout << "Rand 1" << endl;
+    cout << "Rand 2" << endl;
     return 0;
 }
 ```
@@ -199,34 +149,16 @@ Titlu
 
 Rand 1
 Rand 2
-Gata!
-
-Sfarsit
 ```
 
-Observă:
-- `<<` poate lega mai multe bucăți într-un singur `cout`.
-- Două `endl` (sau două `\n`) la rând lasă o **linie goală**.
+`endl` face același lucru ca `\n`, dar se scrie **în afara** ghilimelelor, legat cu `<<`. Două la rând lasă o **linie goală**. Poți folosi oricare, dar rămâi la același în tot programul.
 
 **Încearcă tu (8 min)**  
-- [ ] Rulezi Exemplele 3 și 4 și compari ce se afișează  
-- [ ] Scrii 4 rânduri cu numele, clasa, școala și un hobby, fiecare pe linia lui  
+- [ ] Afișezi 4 rânduri: numele, clasa, școala, un hobby  
 - [ ] Lași o linie goală între nume și restul  
+- [ ] Faci o dată cu `\n` și o dată cu `endl`  
 
----
-
-## 5. Caractere speciale (escape)
-
-Unele caractere nu se pot scrie direct între ghilimele, așa că folosim o bară oblică `\` urmată de o literă.
-
-| Secvență | Ce afișează |
-|----------|-------------|
-| `\n` | rând nou |
-| `\t` | tab (un spațiu mare, pentru aliniere) |
-| `\"` | ghilimele `"` |
-| `\\` | o bară oblică `\` |
-
-### Exemplul 7 — Tabel cu `\t`
+### Exemplul 4 — Tabel cu `\t`
 
 ```cpp
 #include <iostream>
@@ -247,7 +179,9 @@ Ana     7A      10
 Ion     7B      9
 ```
 
-### Exemplul 8 — Ghilimele în text
+`\t` pune un **tab**: textul se aliniază în coloane.
+
+### Exemplul 5 — Ghilimele și bară oblică în text
 
 ```cpp
 #include <iostream>
@@ -255,6 +189,7 @@ using namespace std;
 
 int main() {
     cout << "Profesorul a spus: \"Bravo!\"" << endl;
+    cout << "Fisierul meu: C:\\CodeMaker\\L1.cpp" << endl;
     return 0;
 }
 ```
@@ -262,62 +197,18 @@ int main() {
 **Ieșire:**
 ```
 Profesorul a spus: "Bravo!"
+Fisierul meu: C:\CodeMaker\L1.cpp
 ```
 
-Fără bara `\` în fața ghilimelelor, compilatorul ar crede că textul a luat sfârșit și ar da eroare.
-
-### Exemplul 9 — Bara oblică într-o cale de fișier
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    cout << "Fisierul meu: C:\\CodeKids\\L1.cpp" << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Fisierul meu: C:\CodeKids\L1.cpp
-```
-
-Pentru a afișa o bară `\`, o scrii de două ori: `\\`.
-
-### Exemplul 10 — Toate la un loc
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    cout << "Folder:\tC:\\Jocuri\\Minecraft" << endl;
-    cout << "Mesaj:\t\"Salut, CodeKids!\"" << endl;
-    cout << "Status:\tGata" << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Folder: C:\Jocuri\Minecraft
-Mesaj:  "Salut, CodeKids!"
-Status: Gata
-```
+- `\"` afișează ghilimele. Fără `\`, compilatorul crede că textul s-a terminat și dă eroare.
+- `\\` afișează **o singură** bară `\`.
 
 **Încearcă tu (8 min)**  
-- [ ] Faci un tabel cu 3 coloane și 3 rânduri folosind `\t`  
-- [ ] Afișezi o replică cu ghilimele, de exemplu: `Mama a zis: "Fa-ti tema!"`  
+- [ ] Faci un tabel cu 3 coloane și 3 rânduri cu `\t`  
+- [ ] Afișezi o replică cu ghilimele: `Mama a zis: "Fa-ti tema!"`  
 - [ ] Afișezi o cale de forma `D:\Poze\Vacanta`  
 
----
-
-## 6. Desene din caractere
-
-Aici începe partea creativă: desenezi cu litere și simboluri. Fiecare rând al desenului este un `cout` separat. Atenție la **spații**, pentru că ele poziționează desenul.
-
-### Exemplul 11 — Pisică
+### Exemplul 6 — Desen din caractere: pisica
 
 ```cpp
 #include <iostream>
@@ -338,10 +229,93 @@ int main() {
   > ^ <
 ```
 
-Urechile folosesc `\\` ca să apară o singură bară `\` pe ecran.
+Fiecare rând al desenului este un `cout` separat. **Spațiile** din ghilimele poziționează desenul, deci numără-le. Urechile folosesc `\\` ca să apară o singură bară pe ecran.
 
-### Exemplul 12 — Brad
+**Încearcă tu (10 min)**  
+- [ ] Desenezi un obiect nou (inimă, steag, mașină, copac) din minimum 4 rânduri  
+- [ ] Tragi un chenar din `+`, `-` și `|` în jurul unui text  
 
+---
+
+## De făcut azi — „Cartea mea de vizită”
+
+| | Ce trebuie să ai |
+|---|---|
+| **Minim** | Un program care afișează cel puțin 4 rânduri, fiecare pe linia lui: numele, clasa și școala, hobby-ul, jocul sau limbajul preferat |
+| **Complet** | Minim + un mic tabel cu `\t`, un motto între ghilimele și un desen din caractere |
+
+**Gata când:**
+- [ ] Programul compilează fără erori  
+- [ ] Are cel puțin 4 rânduri, fiecare pe linia lui  
+- [ ] (Complet) Ai folosit `\t`, `\"` și un desen  
+- [ ] Fișierul se numește `Prenume_Nume_L1.cpp`  
+
+---
+
+## Bonus ★★★ — Provocare: Biletul de joc
+*Doar dacă ai terminat Complet.*
+
+Afișează un bilet cu **chenar perfect drept**: titlu, jucător, nivel și scor, între două rânduri de `*`.
+
+```
+*************************
+*      BILET JOC        *
+*************************
+* Jucator: Alex         *
+* Nivel:   3            *
+* Scor:    1250         *
+*************************
+```
+
+- [ ] Toate rândurile au exact aceeași lungime  
+- [ ] Nu folosești `\t` (tab-ul strică marginea din dreapta). Folosește **spații**  
+- [ ] Sub bilet afișezi un mesaj între ghilimele: `"Mult succes!"`  
+
+---
+
+## Greșeli frecvente
+
+| Ce vezi | Cauza | Corect |
+|---------|-------|--------|
+| `expected ';'` | Ai uitat `;` | `cout << "Salut";` |
+| `'Cout' was not declared` | Litere mari greșite | `cout` (litere mici) |
+| `'cout' was not declared` | Lipsește `#include <iostream>` sau `using namespace std;` | Adaugă ambele linii |
+| Eroare la ghilimele | Ghilimele curbe `“ ”` copiate din Word sau chat | Folosește `"` de la tastatură |
+| Ghilimelele din text dau eroare | Ai uitat `\` în fața lor | `\"` |
+| Programul se închide imediat | L-ai rulat din afara Code::Blocks | Folosește **Build and Run** |
+| Desenul e strâmb | Spații lipsă sau în plus | Numără spațiile, compară rând cu rând |
+| `\n` apare ca text | Ai scris `\n` în afara ghilimelelor | `cout << "Text\n";` |
+
+**Cum citești o eroare:** compilatorul îți spune **linia** (ex. `main.cpp:6`) și o descriere. Începe cu **prima** eroare din listă; adesea celelalte dispar după ce o repari pe aceea.
+
+---
+
+## Recapitulare pe scurt
+
+- Un program are: `#include <iostream>`, `using namespace std;` și `int main() { … return 0; }`.
+- `cout << "text";` afișează. Instrucțiunea se termină cu `;`.
+- `\n` și `endl` trec pe rândul următor.
+- `\t` = tab, `\"` = ghilimele, `\\` = bară oblică.
+- Spațiile din ghilimele contează la desene.
+
+## Quiz scurt
+- Ce trei lucruri are cel puțin un program C++?  
+- Care e diferența dintre `\n` și `endl`?  
+- Cum afișezi ghilimele în interiorul unui text?  
+- De ce contează spațiile din ghilimele la un desen?  
+
+---
+
+## Temă
+1. Refă **Exemplele 1–6** acasă, de mână.  
+2. Scrie un program **„Despre mine”** cu minimum 6 rânduri, care folosește un tab și ghilimele.  
+3. Desenează o scenă din 8–10 rânduri (de exemplu o casă cu brad și soare).  
+4. Salvează tot ca `Tema_L1_Prenume_Nume.cpp`.
+
+### Exemple pentru acasă
+Aceste desene folosesc exact ce ai învățat azi. Scrie-le de mână și schimbă-le după preferințe.
+
+**Brad**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -357,33 +331,21 @@ int main() {
 }
 ```
 
-### Exemplul 13 — Cutie cu chenar
-
+**Cutie cu chenar** (fiecare rând are aceeași lungime)
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
     cout << "+----------------+" << endl;
-    cout << "|  CODE KIDS     |" << endl;
+    cout << "|  CODE MAKER    |" << endl;
     cout << "|  Clasa: 7A     |" << endl;
     cout << "+----------------+" << endl;
     return 0;
 }
 ```
 
-**Ieșire:**
-```
-+----------------+
-|  CODE KIDS     |
-|  Clasa: 7A     |
-+----------------+
-```
-
-Ca să iasă chenarul drept, fiecare rând trebuie să aibă **aceeași lungime**. Numără caracterele sau folosește un rând de `-` ca etalon.
-
-### Exemplul 14 — Casă
-
+**Casă**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -399,8 +361,7 @@ int main() {
 }
 ```
 
-### Exemplul 15 — Robot cu mesaj
-
+**Robot cu mesaj** (desen, ghilimele cu `\"` și bare `\\` la un loc)
 ```cpp
 #include <iostream>
 using namespace std;
@@ -414,133 +375,6 @@ int main() {
     return 0;
 }
 ```
-
-Aici ai combinat desen, ghilimele cu `\"` și bare `\\` într-un singur program.
-
-### Exemplul 16 — Bilet de joc (proiect mic)
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    cout << "*************************" << endl;
-    cout << "*      BILET JOC        *" << endl;
-    cout << "*************************" << endl;
-    cout << "* Jucator:\tAlex      *" << endl;
-    cout << "* Nivel:\t3         *" << endl;
-    cout << "* Scor:\t\t1250      *" << endl;
-    cout << "*************************" << endl;
-    cout << "  \"Mult succes!\"" << endl;
-    return 0;
-}
-```
-
-Dacă `\t` ți se pare că strică marginea din dreapta, e normal: lățimea unui tab depinde de ecran. Pentru chenare perfecte, folosește **spații** în loc de `\t`. Aceasta este o ocazie bună să încerci amândouă variantele și să vezi diferența.
-
-**Încearcă tu (15 min)**  
-- [ ] Desenezi un obiect nou (inimă, steag, mașină, copac) din minimum 4 rânduri  
-- [ ] Tragi un chenar din `+`, `-` și `|` în jurul unui text  
-- [ ] Combini un desen cu o replică între ghilimele  
-
----
-
-## Proiect / exerciții de finalizat AZI
-
-### Exercițiul A — „Cartea mea de vizită” (obligatoriu)
-Afișează, fiecare pe linia lui:
-1. Numele tău
-2. Clasa și școala
-3. Hobby-ul preferat
-4. Jocul sau limbajul de programare preferat
-5. O propoziție între ghilimele, de exemplu un motto
-
-### Exercițiul B — Meniu cu tab-uri
-Afișează un meniu aliniat:
-
-```
-1.  Start
-2.  Ajutor
-3.  Iesire
-```
-
-### Exercițiul C — Dialog
-Afișează două replici, cu numele vorbitorului înainte:
-
-```
-Ana:  "Ai terminat tema?"
-Ion:  "Inca nu, dar programez!"
-```
-
-### Exercițiul D — Desen propriu
-Desenează o **inimă**, un **steag** sau o **mașină** din caractere, minimum 5 rânduri.
-
-### Exercițiul E — CODEKIDS pe verticală
-Afișează cuvântul **CODEKIDS** cu câte o literă pe fiecare rând, în două moduri:
-- cu 8 instrucțiuni `cout`;
-- cu **un singur** `cout`, folosind `\n` (sau `endl`) între litere.
-
-**Gata când:**
-- [ ] Programul compilează fără erori  
-- [ ] Exercițiul A are minimum 5 rânduri  
-- [ ] Ai cel puțin un desen din caractere  
-- [ ] Ai folosit măcar o dată `\t`, `\"` și `\\`  
-- [ ] Fișierul se numește `Prenume_Nume_L1.cpp`  
-
----
-
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Afișează un **calendar** pentru o lună, aliniat cu `\t`  
-- [ ] Desenează un brad mai mare, de 8 rânduri  
-- [ ] Afișează un **cartuș de joc** cu viață, scor și nivel, într-un chenar drept  
-- [ ] Scrie un program care afișează propria ta **poveste de 6 rânduri**, cu un titlu și un dialog  
-
----
-
-## Greșeli frecvente
-
-| Ce vezi | Cauza | Corect |
-|---------|-------|--------|
-| `expected ';'` | Ai uitat `;` la finalul instrucțiunii | `cout << "Salut";` |
-| `'Cout' was not declared` | Litere mari greșite | `cout` (litere mici) |
-| `'cout' was not declared` | Ai uitat `#include <iostream>` sau `using namespace std;` | Adaugă ambele linii la început |
-| Eroare la ghilimele | Ai folosit ghilimele curbe `“ ”` din Word sau din chat | Folosește `"` de la tastatură |
-| Ghilimelele din text dispar sau dau eroare | Ai uitat `\` în fața lor | `\"` |
-| Programul pornește și se închide imediat | Ai rulat fișierul direct, din afara Code::Blocks | Rulează programul cu **Build and Run** din Code::Blocks, care ține fereastra deschisă |
-| Desenul e strâmb | Spații lipsă sau în plus la început de rând | Numără spațiile și compară rând cu rând |
-| `\n` apare ca text pe ecran | Ai scris `\n` în afara ghilimelelor | `cout << "Text\n";` |
-
-**Cum citești o eroare:** compilatorul îți spune **linia** (de exemplu `main.cpp:6`) și o descriere. Începe întotdeauna cu **prima** eroare din listă; adesea celelalte dispar după ce o repari pe aceea.
-
----
-
-## Recapitulare pe scurt
-
-- Un program C++ are cel puțin: `#include <iostream>`, `using namespace std;` și `int main() { … return 0; }`.
-- `cout << "text";` afișează text. Fiecare instrucțiune se termină cu `;`.
-- `\n` și `endl` trec pe rândul următor.
-- `\t` face tab, `\"` afișează ghilimele, `\\` afișează o bară.
-- Spațiile din interiorul ghilimelelor contează la desene.
-
-Încă nu am învățat: comentarii, variabile, `cin` și tipuri de date. Ele urmează în lecțiile 2–5.
-
----
-
-## Quiz scurt
-- Ce trei lucruri are cel puțin un program C++?  
-- Ce face `cout << "text";` și cu ce semn se termină instrucțiunea?  
-- Care e diferența dintre `\n` și `endl`?  
-- Cum afișezi ghilimele în interiorul unui text?  
-- De ce contează spațiile din interiorul ghilimelelor la un desen?  
-
----
-
-## Temă
-1. Refă **Exemplele 1–16** pe calculatorul tău (scrise de mână, nu copiate).  
-2. Scrie un program **„Despre mine”** cu minimum 6 rânduri, care folosește un tab și ghilimele.  
-3. Desenează o scenă din 8–10 rânduri (de exemplu o casă cu brad și soare).  
-4. **Bonus:** fă un „meniu de joc” cu chenar, titlu și 4 opțiuni.  
-5. Salvează tot ca `Tema_L1_Prenume_Nume.cpp`.
 
 ---
 

@@ -1,18 +1,16 @@
-# LECȚIA 10 — Recapitulare și mini-proiect: Modulul 1
+# LECȚIA 10 — Quiz sau Calculator
+### Recapitulare Modul 1 — mini-proiect
 **Modulul 1 · Bazele C++ · 2 ore**  
 **Code Maker Club · Junior Coder**
 
 > Azi aduni tot ce ai învățat în Modulul 1 într-un singur program: un **quiz** sau un **calculator cu meniu**. La final primești insigna **Junior Coder**.  
-> Proiect: **mini-proiectul tău** · fișier: `Prenume_Nume_M1_Proiect.cpp` (ex. `Ana_Pop_M1_Proiect.cpp`)
+> Fișier: `Prenume_Nume_M1_Proiect.cpp`
 
 ---
 
-## Obiectiv
-La finalul orei ai recapitulat `cout`, `cin`, variabile, tipuri de date, `if`, `else`, operatori logici și `switch`, și ai construit un program complet, curat și comentat, pe care îl poți explica în 30 de secunde.  
-**Minim:** proiectul ales funcționează și folosește `cin`, `cout` și `if` sau `switch`.  
-**Ținta orei (Complet):** + antet și comentarii, mesaje clare, o ramură `default`/`else` pentru date greșite, test cu minimum două seturi de date și prezentare.
+## Ce facem azi
+Azi aduni tot ce ai învățat în Modulul 1 într-un singur program: un **quiz** sau un **calculator cu meniu**. La final primești insigna **Junior Coder**.
 
-## De ce contează
 Un modul se încheie cu un proiect pentru că programarea se învață **construind**. În această oră nu mai înveți o regulă nouă: folosești regulile pe care le știi deja ca să rezolvi o problemă întreagă, de la început până la sfârșit. Așa se lucrează și la olimpiade, și în meseria de programator.
 
 ---
@@ -24,13 +22,28 @@ Un modul se încheie cu un proiect pentru că programarea se învață **constru
 | 0–25 | Recapitulare pe foaie și în cod (**Exemplele 1–9**) |
 | 25–40 | Depanare: găsim greșelile (**Exemplele 10–11**) |
 | 40–50 | Alegem proiectul și parcurgem lista de verificare |
-| 50–100 | Construim proiectul (**Exemplele 12–16** ca model) |
-| 100–115 | Prezentarea proiectelor (demo) |
+| 50–100 | Construim proiectul (**Exemplele 12–13** ca model) |
+| 100–115 | Prezentarea proiectelor și Provocarea |
 | 115–120 | Mini-test, insigna **Junior Coder** și temă |
 
 ---
 
-## 1. Recapitulare: cele 9 lecții în 9 programe
+## Ce folosești azi
+
+Azi nu înveți nicio instrucțiune nouă. Folosești:
+
+| Din lecția | Ce folosești |
+|-----------|--------------|
+| L1–L2 | `cout`, `\n`, comentarii, antet, indentare |
+| L3–L5 | variabile, `const`, `cin`, `/` și `%`, tipurile `int`, `double`, `char`, `string` |
+| L6–L8 | `if`, `else`, `else if`, `&&`, `||`, `!` |
+| L9 | `switch`, `break`, `default` |
+
+---
+
+## Pas cu pas
+
+### Recapitulare: cele 9 lecții în 9 programe
 
 Fiecare program mic de mai jos rezumă o lecție. Citește programul, spune cu voce tare ce face și ce lecție ilustrează.
 
@@ -284,9 +297,7 @@ Joc in pauza.
 - [ ] Spui cu voce tare, pentru fiecare, ce lecție ilustrează  
 - [ ] Notezi pe foaie ce ți se pare mai greu din tot Modulul 1  
 
----
-
-## 2. Depanare: găsește greșelile
+### Depanare: găsește greșelile
 
 Un programator petrece mult timp **căutând greșeli**. Este o aptitudine care se antrenează.
 
@@ -345,9 +356,7 @@ Introdu doua numere: 12 7
 
 Greșelile 1, 2, 4 și 6 le prinde compilatorul. Greșeala 3 (`=` în loc de `==`) compilează, dar programul ar da rezultate greșite. Greșeala 5 (lipsa acoladelor) nu strică programul, dar este un obicei prost. **Testarea cu valori** prinde ce nu prinde compilatorul.
 
----
-
-## 3. Alege proiectul
+### Alege proiectul
 
 Alegi **unul** dintre cele două proiecte. Ambele folosesc ce ai învățat în Modulul 1.
 
@@ -365,11 +374,9 @@ Alegi **unul** dintre cele două proiecte. Ambele folosesc ce ai învățat în 
 - [ ] Indentare corectă și nume clare pentru variabile  
 - [ ] Îl poți explica în **30 de secunde**  
 
----
+### Modele pentru proiecte
 
-## 4. Modele pentru proiecte
-
-Cele cinci exemple de mai jos sunt modele. Nu copia modelele. Folosește exemplele ca idee și construiește programul **tău**, cu întrebări sau operații alese de tine.
+Cele două exemple de mai jos sunt modele. Nu copia modelele. Folosește exemplele ca idee și construiește programul **tău**, cu întrebări sau operații alese de tine.
 
 ### Proiectul A — Quiz
 
@@ -454,8 +461,222 @@ Ideile importante:
 - `raspuns` se reutilizează pentru mai multe întrebări;
 - fiecare întrebare are propriul `if … else`, cu feedback imediat.
 
-### Exemplul 13 — Quiz cu mesaj final în funcție de scor
+### Proiectul B — Calculator cu meniu
 
+### Exemplul 13 — Calculator cu `switch`
+
+```cpp
+/*
+   Program: Calculator cu meniu
+   Scop:    adunare, scadere, inmultire, impartire pe doua numere
+*/
+#include <iostream>
+using namespace std;
+
+int main() {
+    int optiune;
+    double a, b;
+
+    cout << "===== CALCULATOR =====" << endl;
+    cout << "1. Adunare" << endl;
+    cout << "2. Scadere" << endl;
+    cout << "3. Inmultire" << endl;
+    cout << "4. Impartire" << endl;
+    cout << "Alege operatia: ";
+    cin >> optiune;
+
+    cout << "Primul numar: ";
+    cin >> a;
+    cout << "Al doilea numar: ";
+    cin >> b;
+
+    switch (optiune) {
+        case 1:
+            cout << a << " + " << b << " = " << a + b << endl;
+            break;
+        case 2:
+            cout << a << " - " << b << " = " << a - b << endl;
+            break;
+        case 3:
+            cout << a << " * " << b << " = " << a * b << endl;
+            break;
+        case 4:
+            cout << a << " / " << b << " = " << a / b << endl;
+            break;
+        default:
+            cout << "Optiune invalida." << endl;
+    }
+    return 0;
+}
+```
+
+**Rulare** (tastezi `4`, `7` și `2`):
+```
+===== CALCULATOR =====
+1. Adunare
+2. Scadere
+3. Inmultire
+4. Impartire
+Alege operatia: 4
+Primul numar: 7
+Al doilea numar: 2
+7 / 2 = 3.5
+```
+
+Numerele sunt `double`, deci împărțirea păstrează zecimalele. Dar ce se întâmplă dacă împarți la 0? Rezolvăm în exemplul următor.
+
+### Prezentarea proiectului (demo)
+
+Prezinți programul colegilor, în 30–60 de secunde:
+1. **Ce face** programul (o propoziție).
+2. **Rulezi** programul cu un set de date.
+3. **Arăți** o secvență din cod și spui ce lecție ilustrează (de exemplu: „aici folosesc `switch`”).
+4. **Răspunzi** la o întrebare a colegilor sau a profesorului.
+
+### Mini-test de verificare
+
+Fără să rulezi nimic, scrie pe foaie ce afișează fiecare secvență. Apoi verifică răspunsurile de la final.
+
+```
+1)  int a = 7, b = 2;
+    cout << a / b << " " << a % b;
+
+2)  double x = 7 / 2;
+    cout << x;
+
+3)  int n = 5;
+    n += 3;
+    n--;
+    cout << n;
+
+4)  int x = 4;
+    if (x > 3 && x < 10) cout << "A"; else cout << "B";
+
+5)  int k = 1;
+    switch (k) {
+        case 1: cout << "X";
+        case 2: cout << "Y"; break;
+        case 3: cout << "Z";
+    }
+
+6)  char c = 'A';
+    cout << c + 1;
+
+7)  string s = "Cod";
+    cout << s + "Kids" << s.length();
+
+8)  int x = 10;
+    if (x == 5) cout << "A"; else if (x > 5) cout << "B"; else cout << "C";
+
+9)  cout << 2 + 3 * 4 << " " << (2 + 3) * 4;
+
+10) bool b = 5 < 3 || 2 == 2;
+    cout << b;
+```
+
+<details>
+<summary>Răspunsuri</summary>
+
+1. `3 1`
+2. `3` (împărțirea `7 / 2` se face între numere întregi, deci dă `3`, apoi se pune în `double`)
+3. `7`
+4. `A`
+5. `XY` (nu există `break` după `case 1`, deci programul continuă în `case 2`)
+6. `66` (`c + 1` este un număr; codul ASCII al lui `'A'` este 65, plus 1)
+7. `CodKids3`
+8. `B`
+9. `14 20`
+10. `1`
+
+</details>
+
+---
+
+## De făcut azi — „Quiz sau Calculator”
+
+Alegi **unul** dintre proiecte: **Quiz** sau **Calculator cu meniu**. Modelele sunt în secțiunea „Modele pentru proiecte”, dar programul trebuie să fie **al tău**, cu întrebări sau operații alese de tine. Salvează proiectul ca `Prenume_Nume_M1_Proiect.cpp`.
+
+| | Ce trebuie să ai |
+|---|---|
+| **Minim** | Proiectul ales funcționează și folosește `cin`, `cout` și `if` sau `switch` |
+| **Complet** | Minim + antet și comentarii, mesaje clare înainte de fiecare citire, o ramură `else` / `default` pentru date greșite, test cu minimum două seturi de date și prezentare |
+
+**Gata când:**
+- [ ] Proiectul ales funcționează și poate fi rulat fără erori  
+- [ ] Folosește `cin`, `cout` și `if` / `else if` / `switch`  
+- [ ] (Complet) Are antet, comentarii, indentare corectă și mesaje clare  
+- [ ] (Complet) Reacționează corect la date greșite (`else` / `default`)  
+- [ ] (Complet) Ai testat programul cu minimum 2 seturi de date  
+- [ ] Ai prezentat programul și ai explicat ce face în 30 de secunde  
+- [ ] Ai primit insigna **Junior Coder**
+
+---
+
+## Bonus ★★★ — Provocare: Quiz cu vieți
+*Doar dacă ai terminat Complet.*
+
+Fă un quiz în care jucătorul are **3 vieți**.
+
+- [ ] Fiecare răspuns greșit scade o viață și afișezi viețile rămase  
+- [ ] Când viețile ajung la `0`, afișezi „Game over” și programul se oprește  
+- [ ] Răspunsurile `a` și `A` sunt acceptate la fel  
+- [ ] La final afișezi un mesaj după scor: toate răspunsurile corecte, jumătate sau mai puține  
+- [ ] Testezi cu un joc fără nicio greșeală și cu unul pierdut
+
+---
+
+## Greșeli frecvente
+| Ce vezi | Cauza | Corect |
+|---------|-------|--------|
+| Scorul rămâne 0 | `scor++` e în afara `if`, sau compari cu `=` | `if (r == 'a') { scor++; }` |
+| Răspunsul text nu este recunoscut | `cin >> text;` citește doar un cuvânt | Cere răspunsuri dintr-un singur cuvânt sau dintr-o literă |
+| Programul pare că „nu răspunde” | Așteaptă un `cin` fără mesaj | Afișează un mesaj înainte de fiecare citire |
+| Rezultat greșit la împărțire | Variabilele sunt `int` | Folosește `double` |
+| Programul se oprește la împărțirea cu zero | Nu ai verificat împărțitorul | `if (b == 0) …` |
+| Meniul acceptă orice opțiune | Lipsește `default` / `else` | Adaugă o ramură pentru opțiuni invalide |
+| Răspunsul `A` nu e acceptat, deși e corect | `'A'` și `'a'` sunt caractere diferite | Acceptă ambele: `r == 'a' \|\| r == 'A'` |
+| Cod greu de citit | Fără indentare și fără comentarii | Reformatează și adaugă comentarii pe secțiuni |
+
+---
+
+## Recapitularea Modulului 1
+- **L1:** `cout`, `\n`, `endl`, caractere speciale, desene.
+- **L2:** structura programului, comentarii, indentare.
+- **L3:** variabile `int`, `const`, `+ - *`, `+=`, `++`.
+- **L4:** `cin`, `/` și `%`, probleme cu cifre și timp.
+- **L5:** `double`, `char`, `bool`, `string`, ASCII.
+- **L6:** comparații și `if`.
+- **L7:** `else`, `else if`, `if` imbricat.
+- **L8:** `&&`, `||`, `!`, intervale.
+- **L9:** `switch`, `break`, `default`, grupări de cazuri.
+- **L10:** un program complet, de la idee la demo.
+
+---
+
+## Insigna Junior Coder
+Felicitări! Dacă ai bifat toată lista de verificare, ai primit insigna **Junior Coder**. Ai învățat să scrii programe care afișează, citesc, calculează și iau decizii. Asta este fundația pe care construim în Modulul 2.
+
+---
+
+## Quiz scurt
+- Ce poate face acum un program scris de tine, după Modulul 1?  
+- Care e diferența dintre `/` și `%`?  
+- Când alegi `if` și când `switch`?  
+- Ce tipuri de date ai folosit în programul tău?  
+- Cum arăți programul altora, de la idee la demo?  
+
+---
+
+## Temă
+1. Îmbunătățește proiectul cu **o singură** idee mică: un mesaj în plus, o opțiune nouă sau o verificare suplimentară.  
+2. Pe foaie, scrie 3 lucruri învățate în Modulul 1 și 1 lucru pe care vrei să îl înțelegi mai bine.  
+3. Repetă cele 9 programe de recapitulare (Exemplele 1–9) și rescrie programele din memorie.  
+4. Salvează tot ca `Tema_L10_Prenume_Nume.cpp`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le de mână, rulează-le și schimbă-le după preferințe.
+
+**Acasă 1 — Quiz cu mesaj final în funcție de scor**
 ```cpp
 /*
    Program: Quiz Modul 1
@@ -540,72 +761,9 @@ Calificativ: EXCELENT. Esti gata de Modulul 2!
 
 Aici adaugi un nivel în plus: la final, un lanț `else if` transformă scorul într-un mesaj.
 
-### Proiectul B — Calculator cu meniu
+#### Proiectul B — Calculator cu meniu
 
-### Exemplul 14 — Calculator cu `switch`
-
-```cpp
-/*
-   Program: Calculator cu meniu
-   Scop:    adunare, scadere, inmultire, impartire pe doua numere
-*/
-#include <iostream>
-using namespace std;
-
-int main() {
-    int optiune;
-    double a, b;
-
-    cout << "===== CALCULATOR =====" << endl;
-    cout << "1. Adunare" << endl;
-    cout << "2. Scadere" << endl;
-    cout << "3. Inmultire" << endl;
-    cout << "4. Impartire" << endl;
-    cout << "Alege operatia: ";
-    cin >> optiune;
-
-    cout << "Primul numar: ";
-    cin >> a;
-    cout << "Al doilea numar: ";
-    cin >> b;
-
-    switch (optiune) {
-        case 1:
-            cout << a << " + " << b << " = " << a + b << endl;
-            break;
-        case 2:
-            cout << a << " - " << b << " = " << a - b << endl;
-            break;
-        case 3:
-            cout << a << " * " << b << " = " << a * b << endl;
-            break;
-        case 4:
-            cout << a << " / " << b << " = " << a / b << endl;
-            break;
-        default:
-            cout << "Optiune invalida." << endl;
-    }
-    return 0;
-}
-```
-
-**Rulare** (tastezi `4`, `7` și `2`):
-```
-===== CALCULATOR =====
-1. Adunare
-2. Scadere
-3. Inmultire
-4. Impartire
-Alege operatia: 4
-Primul numar: 7
-Al doilea numar: 2
-7 / 2 = 3.5
-```
-
-Numerele sunt `double`, deci împărțirea păstrează zecimalele. Dar ce se întâmplă dacă împarți la 0? Rezolvăm în exemplul următor.
-
-### Exemplul 15 — Calculator protejat la împărțirea cu zero
-
+**Acasă 2 — Calculator protejat la împărțirea cu zero**
 ```cpp
 /*
    Program: Calculator sigur
@@ -700,8 +858,7 @@ Al doilea numar: 6
 
 Acesta este nivelul „Complet”: antet, comentarii pe secțiuni, verificarea opțiunii **înainte** de a citi numerele, protecție la împărțirea cu 0 și formatare cu 2 zecimale.
 
-### Exemplul 16 — Proiect combinat: Quiz cu meniu de categorii
-
+**Acasă 3 — Proiect combinat: Quiz cu meniu de categorii**
 ```cpp
 /*
    Program: Quiz pe categorii
@@ -767,157 +924,6 @@ Alege categoria: 1
 Cat face 6 * 7 ? 42
 Corect! Ai primit 1 punct.
 ```
-
----
-
-## 5. Prezentarea proiectului (demo)
-
-Prezinți programul colegilor, în 30–60 de secunde:
-1. **Ce face** programul (o propoziție).
-2. **Rulezi** programul cu un set de date.
-3. **Arăți** o secvență din cod și spui ce lecție ilustrează (de exemplu: „aici folosesc `switch`”).
-4. **Răspunzi** la o întrebare a colegilor sau a profesorului.
-
----
-
-## 6. Mini-test de verificare
-
-Fără să rulezi nimic, scrie pe foaie ce afișează fiecare secvență. Apoi verifică răspunsurile de la final.
-
-```
-1)  int a = 7, b = 2;
-    cout << a / b << " " << a % b;
-
-2)  double x = 7 / 2;
-    cout << x;
-
-3)  int n = 5;
-    n += 3;
-    n--;
-    cout << n;
-
-4)  int x = 4;
-    if (x > 3 && x < 10) cout << "A"; else cout << "B";
-
-5)  int k = 1;
-    switch (k) {
-        case 1: cout << "X";
-        case 2: cout << "Y"; break;
-        case 3: cout << "Z";
-    }
-
-6)  char c = 'A';
-    cout << c + 1;
-
-7)  string s = "Cod";
-    cout << s + "Kids" << s.length();
-
-8)  int x = 10;
-    if (x == 5) cout << "A"; else if (x > 5) cout << "B"; else cout << "C";
-
-9)  cout << 2 + 3 * 4 << " " << (2 + 3) * 4;
-
-10) bool b = 5 < 3 || 2 == 2;
-    cout << b;
-```
-
-<details>
-<summary>Răspunsuri</summary>
-
-1. `3 1`
-2. `3` (împărțirea `7 / 2` se face între numere întregi, deci dă `3`, apoi se pune în `double`)
-3. `7`
-4. `A`
-5. `XY` (nu există `break` după `case 1`, deci programul continuă în `case 2`)
-6. `66` (`c + 1` este un număr; codul ASCII al lui `'A'` este 65, plus 1)
-7. `CodKids3`
-8. `B`
-9. `14 20`
-10. `1`
-
-</details>
-
----
-
-## Proiect / exerciții de finalizat AZI
-
-### Proiectul tău (obligatoriu)
-Construiește **Quiz-ul** sau **Calculatorul cu meniu**, urmând lista de verificare din secțiunea 3. Salvează proiectul ca `Prenume_Nume_M1_Proiect.cpp`.
-
-### Dacă termini repede
-Treci pe lista de bonusuri de mai jos.
-
-**Gata când:**
-- [ ] Proiectul ales funcționează și poate fi rulat fără erori  
-- [ ] Are antet, comentarii, indentare corectă și mesaje clare  
-- [ ] Folosește `cin`, `cout` și `if` / `else if` / `switch`  
-- [ ] Reacționează corect la date greșite (`else` / `default`)  
-- [ ] Ai testat programul cu minimum 2 seturi de date  
-- [ ] Ai prezentat programul și ai explicat ce face în 30 de secunde  
-- [ ] Ai primit insigna **Junior Coder**  
-
----
-
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Quiz cu 5 întrebări și mesaj final în funcție de scor  
-- [ ] Calculator care protejează împărțirea la 0 (ca în Exemplul 15)  
-- [ ] Adaugă la calculator o opțiune pentru media a două numere sau pentru ridicarea la pătrat (`a * a`)  
-- [ ] Pune în quiz o întrebare cu răspuns numeric și una cu răspuns text (`string`)  
-- [ ] Scrie pe foaie 3 idei pentru proiectul tău din Modulul 2 (bucle și vectori)  
-
----
-
-## Greșeli frecvente în proiecte
-
-| Ce vezi | Cauza | Corect |
-|---------|-------|--------|
-| Scorul rămâne 0 | `scor++` e în afara `if`, sau compari cu `=` | `if (r == 'a') { scor++; }` |
-| Răspunsul text nu este recunoscut | `cin >> text;` citește doar un cuvânt | Cere răspunsuri dintr-un singur cuvânt sau dintr-o literă |
-| Programul pare că „nu răspunde” | Așteaptă un `cin` fără mesaj | Afișează un mesaj înainte de fiecare citire |
-| Rezultat greșit la împărțire | Variabilele sunt `int` | Folosește `double` |
-| Programul se oprește la împărțirea cu zero | Nu ai verificat împărțitorul | `if (b == 0) …` |
-| Meniul acceptă orice opțiune | Lipsește `default` / `else` | Adaugă o ramură pentru opțiuni invalide |
-| Răspunsul `A` nu e acceptat, deși e corect | `'A'` și `'a'` sunt caractere diferite | Acceptă ambele: `r == 'a' \|\| r == 'A'` |
-| Cod greu de citit | Fără indentare și fără comentarii | Reformatează și adaugă comentarii pe secțiuni |
-
----
-
-## Recapitularea Modulului 1
-
-- **L1:** `cout`, `\n`, `endl`, caractere speciale, desene.
-- **L2:** structura programului, comentarii, indentare.
-- **L3:** variabile `int`, `const`, `+ - *`, `+=`, `++`.
-- **L4:** `cin`, `/` și `%`, probleme cu cifre și timp.
-- **L5:** `double`, `char`, `bool`, `string`, ASCII.
-- **L6:** comparații și `if`.
-- **L7:** `else`, `else if`, `if` imbricat.
-- **L8:** `&&`, `||`, `!`, intervale.
-- **L9:** `switch`, `break`, `default`, grupări de cazuri.
-- **L10:** un program complet, de la idee la demo.
-
----
-
-## Insigna Junior Coder
-
-Felicitări! Dacă ai bifat toată lista de verificare, ai primit insigna **Junior Coder**. Ai învățat să scrii programe care afișează, citesc, calculează și iau decizii. Asta este fundația pe care construim în Modulul 2.
-
----
-
-## Quiz scurt
-- Ce poate face acum un program scris de tine, după Modulul 1?  
-- Care e diferența dintre `/` și `%`?  
-- Când alegi `if` și când `switch`?  
-- Ce tipuri de date ai folosit în programul tău?  
-- Cum arăți programul altora, de la idee la demo?  
-
----
-
-## Temă
-1. Îmbunătățește proiectul cu **o singură** idee mică: un mesaj în plus, o opțiune nouă sau o verificare suplimentară.  
-2. Pe foaie, scrie 3 lucruri învățate în Modulul 1 și 1 lucru pe care vrei să îl înțelegi mai bine.  
-3. Repetă cele 9 programe de recapitulare (Exemplele 1–9) și rescrie programele din memorie.  
-4. **Bonus:** rezolvă 3 probleme simple de pe [pbinfo.ro](https://www.pbinfo.ro) legate de `cin`, `cout` și `if` (pe baza indicațiilor profesorului).  
-5. Salvează tot ca `Tema_L10_Prenume_Nume.cpp`.
 
 ---
 

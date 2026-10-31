@@ -22,4 +22,6 @@ Pasul de creație. Turul ghidat. Construiești o scenă cu cinci obiecte diferit
 
 Greșeli frecvente. Totul pare strâmb: ești în perspectivă, apasă cinci pentru ortografic. Nu vezi nimic: ești prea aproape sau prea departe, apasă Home. Tastatura numerică nu merge: activează Emulate Numpad în Preferences. Vederea se învârte în loc: ai ținut Alt apăsat. Confuzie între vedere și obiect: la navigare nu muți obiectul, ci doar camera ta.
 
+Provocare, trei stele. Comoara ascunsă. Ascunzi trei obiecte în scenă: un cub, o sferă și un con, departe unul de altul și de centru. Din vederea de start nu se văd toate trei deodată. Un coleg le caută doar cu rotire, deplasare și zoom, fără Outliner, și trebuie să le găsească în mai puțin de un minut. La final notezi pe o foaie ce vedere l-a ajutat cel mai mult: unu, trei sau șapte.
+
 Succes la tur.

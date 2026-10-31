@@ -122,10 +122,6 @@ De aici nu mai urmezi pași scriși: alegi tu ce construiești.
 - [ ] Fișierul e salvat cu numele `Prenume_Nume_B1_L01.blend`  
 - [ ] Știi că **Ctrl + S** salvează rapid  
 
-### Dacă ai terminat devreme
-- [ ] Adaugă **5 maimuțe** și mută maimuțele în cerc  
-- [ ] Sau Bonusul de mai jos  
-
 ---
 
 ## Greșeli frecvente
@@ -162,8 +158,15 @@ De aici nu mai urmezi pași scriși: alegi tu ce construiești.
 
 ---
 
-## Bonus
-- [ ] Schimbă dimensiunea panoului din dreapta (trage de margine)
+## Bonus ★★★ — Provocare: Echipa de maimuțe
+*Doar dacă ai terminat Complet.*
+
+Fă o poză de grup: o echipă de maimuțe, ca la un meci.
+
+- [ ] 6 maimuțe (Shift + A → Mesh → Monkey), în două rânduri de câte 3
+- [ ] Fiecare are un nume de jucător în Outliner (ex. `Capitanul`, `Portarul`)
+- [ ] Din vederea din față (`1`) se văd toate cele 6, fără să se atingă
+- [ ] Un coleg ghicește care e Capitanul (cea din mijloc, în față)
 
 ## Recapitulare rapidă
 1. Scena de start: **cub + lumină + cameră**  

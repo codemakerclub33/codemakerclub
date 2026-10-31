@@ -138,10 +138,6 @@ Reguli:
 - [ ] Am notat numerele folosite  
 - [ ] Un coleg poate „urca” scara cu ochii, fără să vadă goluri sau piese suprapuse  
 
-### Dacă ai terminat devreme
-- [ ] Fă o **scară în spirală** (rotește și mută fiecare treaptă)  
-- [ ] Sau Bonusul de mai jos  
-
 ---
 
 ## Greșeli frecvente
@@ -177,8 +173,15 @@ Reguli:
 
 ---
 
-## Bonus
-- [ ] Adaugă o „bilă” sus, care să marcheze finalul scării
+## Bonus ★★★ — Provocare: Piramida în trepte
+*Doar dacă ai terminat Complet.*
+
+Construiește o piramidă din plăci, fiecare mai mică decât cea de sub ea.
+
+- [ ] 5 plăci groase, fiecare cu `S` `0.8` față de cea de dedesubt
+- [ ] Fiecare placă stă exact peste cealaltă, fără gol (verifici din vederea din față, `1`)
+- [ ] Notezi pe foaie valorile folosite la fiecare placă
+- [ ] Piramida e centrată: din vederea de sus (`7`) plăcile au același centru
 
 ## Recapitulare rapidă
 1. **G** mută · **R** rotește · **S** scalează  

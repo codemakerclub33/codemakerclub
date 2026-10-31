@@ -1,18 +1,16 @@
-# LECȚIA 4 — `cin` și operații aritmetice
+# LECȚIA 4 — Calculatorul meu
+### cin și operații aritmetice
 **Modulul 1 · Bazele C++ · 2 ore**  
 **Code Maker Club · Junior Coder**
 
 > Azi programul tău **ascultă**: citește numere de la tastatură, calculează cu ele (inclusiv împărțire și rest) și afișează rezultatul.  
-> Proiect: **„Calculatorul meu”** · fișier: `Prenume_Nume_L4.cpp` (ex. `Ana_Pop_L4.cpp`)
+> Fișier: `Prenume_Nume_L4.cpp`
 
 ---
 
-## Obiectiv
-La finalul orei citești valori cu `cin`, folosești toți cei cinci operatori aritmetici (`+ - * / %`), știi ce se întâmplă când împarți două numere întregi și rezolvi probleme mici: cifrele unui număr, conversii de timp, medii și rest.  
-**Minim:** un program care citește două numere și afișează suma și produsul.  
-**Ținta orei (Complet):** + cât și rest, mesaje clare pentru utilizator și test cu cel puțin două seturi de numere.
+## Ce facem azi
+La final citești valori cu `cin`, folosești toți cei cinci operatori aritmetici (`+ - * / %`), știi ce se întâmplă când împarți două numere întregi și rezolvi probleme mici: cifrele unui număr și conversii de timp.
 
-## De ce contează
 Până acum, valorile erau scrise în cod, iar la fiecare schimbare trebuia să recompilezi programul. De azi, programul primește datele **de la utilizator** și poate rezolva aceeași problemă pentru orice numere. Așa funcționează și problemele de pe platformele de olimpiadă: programul citește datele și calculează răspunsul.
 
 ---
@@ -21,16 +19,29 @@ Până acum, valorile erau scrise în cod, iar la fiecare schimbare trebuia să 
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare L3 și ce înseamnă „intrare” de la tastatură |
-| 15–40 | `cin` pentru una, două sau mai multe valori (**Exemplele 1–4**) |
-| 40–65 | Împărțirea între numere întregi și restul (`/` și `%`) (**Exemplele 5–7**) |
-| 65–95 | Probleme: cifre, ore și minute, medii, bani (**Exemplele 8–14**) |
-| 95–115 | Proiect: calculatorul complet (**Exemplele 15–16**) |
-| 115–120 | Recap și temă |
+| 0–15 | Recapitulare L3: variabile `int` și calcule |
+| 15–40 | `cin` pentru una sau mai multe valori (**Exemplele 1–3**) |
+| 40–65 | Împărțirea între numere întregi și restul, `/` și `%` (**Exemplele 4–5**) |
+| 65–90 | Probleme: cifrele unui număr, ore și minute (**Exemplele 6–7**) |
+| 90–118 | Proiectul: Calculatorul meu + Provocarea |
+| 118–120 | Recap și temă |
 
 ---
 
-## 1. `cin`: citim de la tastatură
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `cin >> x;` | Citește un număr de la tastatură în variabila `x` | `cin >> varsta;` |
+| `cin >> a >> b;` | Citește două numere, unul după altul | `cin >> a >> b;` |
+| `/` | Câtul împărțirii a două numere întregi | `47 / 6` este `7` |
+| `%` | Restul împărțirii | `47 % 6` este `5` |
+
+---
+
+## Pas cu pas
+
+### `cin`: citim de la tastatură
 
 În L1 am spus că datele circulă ca un flux. Pentru afișare folosim `cout <<` (spre ecran). Pentru citire folosim **`cin >>`** (de la tastatură spre variabilă).
 
@@ -72,33 +83,7 @@ Ce se întâmplă pas cu pas:
 
 **Regulă bună:** înainte de fiecare `cin`, afișează un mesaj care spune ce trebuie introdus. Altfel, utilizatorul vede un ecran gol și nu știe ce se așteaptă de la el.
 
-### Exemplul 2 — Două numere, citite pe rând
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int a, b;
-
-    cout << "Introdu primul numar: ";
-    cin >> a;
-    cout << "Introdu al doilea numar: ";
-    cin >> b;
-
-    cout << "Suma = " << a + b << endl;
-    return 0;
-}
-```
-
-**Rulare:**
-```
-Introdu primul numar: 5
-Introdu al doilea numar: 3
-Suma = 8
-```
-
-### Exemplul 3 — Mai multe numere cu un singur `cin`
+### Exemplul 2 — Mai multe numere cu un singur `cin`
 
 ```cpp
 #include <iostream>
@@ -127,7 +112,7 @@ Produsul = 216
 
 > **Atenție:** dacă tastezi o literă în loc de număr (de exemplu `abc`), `cin` nu reușește să citească și programul se comportă ciudat. Deocamdată presupunem că utilizatorul introduce doar numere corecte.
 
-### Exemplul 4 — Cele trei operații cunoscute, cu date citite
+### Exemplul 3 — Cele trei operații cunoscute, cu date citite
 
 ```cpp
 #include <iostream>
@@ -164,9 +149,7 @@ Programul rămâne același, iar tu îl poți testa cu orice numere: `-4` și `1
 - [ ] Citești 2 numere și afișezi suma, diferența și produsul  
 - [ ] Rulezi programul cu 3 perechi diferite de numere, inclusiv unul negativ  
 
----
-
-## 2. Împărțirea și restul
+### Împărțirea și restul
 
 La numere întregi (`int`), împărțirea cu **`/`** dă **câtul**: partea întreagă a rezultatului, **fără zecimale**. Operatorul **`%`** (se citește „modulo”) dă **restul** împărțirii.
 
@@ -181,7 +164,7 @@ La numere întregi (`int`), împărțirea cu **`/`** dă **câtul**: partea înt
 
 Legătura dintre ele: **deîmpărțit = împărțitor · cât + rest**.
 
-### Exemplul 5 — Cât și rest
+### Exemplul 4 — Cât și rest
 
 ```cpp
 #include <iostream>
@@ -213,7 +196,7 @@ Restul este 2
 
 > **Împărțirea la zero este interzisă.** Dacă introduci `0` ca împărțitor, programul se oprește cu o eroare. Mai târziu vom învăța cum să verificăm asta înainte de împărțire.
 
-### Exemplul 6 — Capcana: nu apar zecimale
+### Exemplul 5 — Capcana: nu apar zecimale
 
 ```cpp
 #include <iostream>
@@ -238,8 +221,175 @@ int main() {
 
 La matematică, `7 / 2` este `3,5`. În C++, între două numere `int`, rezultatul este doar `3`. Partea zecimală se **pierde**. Despre numerele cu zecimale învățăm în lecția 5.
 
-### Exemplul 7 — Ordinea operațiilor
+**Încearcă tu (10 min)**  
+- [ ] Citești două numere și afișezi cât și rest, în forma `a = b * cat + rest`  
+- [ ] Verifici pe foaie că `29 / 6` și `29 % 6` sunt corecte  
+- [ ] Prevezi ce afișează `5 + 6 * 2 - 8 / 4`, apoi verifici în program  
 
+### Probleme cu `/` și `%`
+
+Cu `/` și `%` se rezolvă multe probleme clasice. Încearcă să ghicești soluția înainte de a citi codul.
+
+### Exemplul 6 — Ultima cifră și numărul fără ultima cifră
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Introdu un numar: ";
+    cin >> n;
+
+    cout << "Ultima cifra: " << n % 10 << endl;
+    cout << "Fara ultima cifra: " << n / 10 << endl;
+    return 0;
+}
+```
+
+**Rulare:**
+```
+Introdu un numar: 4567
+Ultima cifra: 7
+Fara ultima cifra: 456
+```
+
+`n % 10` dă mereu **ultima cifră**, iar `n / 10` „taie” ultima cifră. Această pereche este baza multor probleme de olimpiadă.
+
+### Exemplul 7 — Minute în ore și minute
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int minute;
+    cout << "Cate minute dureaza filmul? ";
+    cin >> minute;
+
+    int ore = minute / 60;
+    int rest = minute % 60;
+
+    cout << minute << " minute = " << ore << " ore si " << rest << " minute" << endl;
+    return 0;
+}
+```
+
+**Rulare:**
+```
+Cate minute dureaza filmul? 135
+135 minute = 2 ore si 15 minute
+```
+
+**Încearcă tu (15 min)**  
+- [ ] Afișezi suma cifrelor unui număr de 3 cifre, citit de la tastatură  
+- [ ] Transformi un număr de zile în săptămâni și zile rămase  
+- [ ] Verifici dacă un număr e par, afișând `n % 2` (`0` înseamnă par, `1` înseamnă impar)  
+
+---
+
+## De făcut azi — „Calculatorul meu”
+
+| | Ce trebuie să ai |
+|---|---|
+| **Minim** | Un program care citește două numere întregi și afișează suma și produsul |
+| **Complet** | Minim + diferența, câtul și restul, un mesaj clar înainte de fiecare `cin` și un test cu cel puțin două seturi de numere |
+
+**Gata când:**
+- [ ] Programul compilează fără erori  
+- [ ] Citește minimum două numere cu `cin`  
+- [ ] Afișează suma și produsul  
+- [ ] (Complet) Afișează câtul și restul  
+- [ ] (Complet) Fiecare `cin` are înainte un mesaj clar, de exemplu „Introdu a: ”  
+- [ ] (Complet) Ai testat cu minimum 2 seturi de numere diferite  
+- [ ] Fișierul se numește `Prenume_Nume_L4.cpp`
+
+---
+
+## Bonus ★★★ — Provocare: Oglinda numerelor
+*Doar dacă ai terminat Complet.*
+
+Citește un număr de **4 cifre** și afișează-l cu cifrele **în ordine inversă**: `1234` devine `4321`. Folosești doar `/` și `%`.
+
+- [ ] Programul afișează cele patru cifre, fiecare pe linia ei  
+- [ ] Afișează apoi numărul inversat: `4321`  
+- [ ] Testezi cu trei numere, de exemplu `1234`, `9080` și `5001`  
+- [ ] Explici pe foaie ce face `n % 10` și ce face `n / 10`
+
+---
+
+## Greșeli frecvente
+| Ce vezi | Cauza | Corect |
+|---------|-------|--------|
+| Programul „stă” și nu face nimic | Așteaptă un număr la `cin` | Tastează numărul și apasă Enter |
+| Nu știi ce să introduci | Lipsește mesajul înainte de `cin` | Afișează un mesaj cu `cout` |
+| `cin << a;` sau `cout >> a;` | Săgețile sunt inversate | `cin >> a;` și `cout << a;` |
+| Valori ciudate la afișare | Ai uitat să citești variabila | Adaugă `cin >> variabila;` |
+| Ai scris `cin >> "a";` | Numele variabilei nu e între ghilimele | `cin >> a;` |
+| Rezultatul `7 / 2` este `3` | Împărțirea între `int` taie zecimalele | Normal pentru `int`. Pentru zecimale, vezi L5 |
+| Programul se oprește cu o eroare la `a / b` | `b` este `0` | Testează cu `b` nenul |
+| `a % b` nu merge pentru zecimale | `%` funcționează doar cu numere întregi | Folosește `int` |
+| Rezultat greșit la `a + b / 2` | Împărțirea se face înainte de adunare | Folosește paranteze: `(a + b) / 2` |
+| Programul se strică după ce tastezi o literă | `cin` așteaptă un număr | Introdu doar numere întregi |
+
+---
+
+## Recapitulare pe scurt
+- `cin >> x;` citește o valoare de la tastatură în variabila `x`.
+- Înaintea fiecărui `cin` afișezi un mesaj, ca utilizatorul să știe ce introduce.
+- `cin >> a >> b >> c;` citește mai multe valori deodată.
+- La `int`: `/` dă câtul (fără zecimale), iar `%` dă restul.
+- `n % 10` este ultima cifră, iar `n / 10` este numărul fără ultima cifră.
+- Ordinea operațiilor: paranteze, apoi `* / %`, apoi `+ -`.
+- Nu se împarte niciodată la zero.
+
+---
+
+## Quiz scurt
+- Ce face `cin >> x;`?  
+- De ce afișezi un mesaj înainte de `cin`?  
+- Ce dau `/` și `%` la numere `int`?  
+- Cum afli ultima cifră a unui număr `n`?  
+- De ce nu împărțim niciodată la zero?  
+
+---
+
+## Temă
+1. Refă **Exemplele 1–7** pe calculatorul tău și testează fiecare cu cel puțin două seturi de date.  
+2. Scrie un program care citește un număr de secunde și îl afișează în forma `minute:secunde` (de exemplu, `135` secunde devine `2 min 15 s`).  
+3. Scrie un program care citește prețul unui bilet și numărul de persoane și afișează totalul și cât rămâne dintr-o bancnotă de 200 de lei.  
+4. Scrie un program care citește un număr de 3 cifre și afișează suma și produsul cifrelor lui.  
+5. Salvează tot ca `Tema_L4_Prenume_Nume.cpp`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le de mână, rulează-le și schimbă-le după preferințe.
+
+**Acasă 1 — Două numere, citite pe rând**
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+
+    cout << "Introdu primul numar: ";
+    cin >> a;
+    cout << "Introdu al doilea numar: ";
+    cin >> b;
+
+    cout << "Suma = " << a + b << endl;
+    return 0;
+}
+```
+
+**Rulare:**
+```
+Introdu primul numar: 5
+Introdu al doilea numar: 3
+Suma = 8
+```
+
+**Acasă 2 — Ordinea operațiilor**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -272,45 +422,7 @@ Reguli de reținut:
 
 Când nu ești sigur, pune paranteze. Ele nu strică niciodată.
 
-**Încearcă tu (10 min)**  
-- [ ] Citești două numere și afișezi cât și rest, în forma `a = b * cat + rest`  
-- [ ] Verifici pe foaie că `29 / 6` și `29 % 6` sunt corecte  
-- [ ] Prevezi ce afișează `5 + 6 * 2 - 8 / 4`, apoi verifici în program  
-
----
-
-## 3. Probleme rezolvate cu `/` și `%`
-
-Cu `/` și `%` se rezolvă multe probleme clasice. Încearcă să ghicești soluția înainte de a citi codul.
-
-### Exemplul 8 — Ultima cifră și numărul fără ultima cifră
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int n;
-    cout << "Introdu un numar: ";
-    cin >> n;
-
-    cout << "Ultima cifra: " << n % 10 << endl;
-    cout << "Fara ultima cifra: " << n / 10 << endl;
-    return 0;
-}
-```
-
-**Rulare:**
-```
-Introdu un numar: 4567
-Ultima cifra: 7
-Fara ultima cifra: 456
-```
-
-`n % 10` dă mereu **ultima cifră**, iar `n / 10` „taie” ultima cifră. Această pereche este baza multor probleme de olimpiadă.
-
-### Exemplul 9 — Cifrele unui număr de 3 cifre
-
+**Acasă 3 — Cifrele unui număr de 3 cifre**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -343,33 +455,7 @@ Suma cifrelor: 14
 
 Cum funcționează `n / 10 % 10`: mai întâi `824 / 10 = 82`, apoi `82 % 10 = 2`. Cifra zecilor este ultima cifră a numărului fără ultima cifră.
 
-### Exemplul 10 — Minute în ore și minute
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int minute;
-    cout << "Cate minute dureaza filmul? ";
-    cin >> minute;
-
-    int ore = minute / 60;
-    int rest = minute % 60;
-
-    cout << minute << " minute = " << ore << " ore si " << rest << " minute" << endl;
-    return 0;
-}
-```
-
-**Rulare:**
-```
-Cate minute dureaza filmul? 135
-135 minute = 2 ore si 15 minute
-```
-
-### Exemplul 11 — Secunde în ore, minute, secunde
-
+**Acasă 4 — Secunde în ore, minute, secunde**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -396,8 +482,7 @@ Numar de secunde: 7384
 
 Verificare: 2 · 3600 + 3 · 60 + 4 = 7200 + 180 + 4 = 7384. Calculul `total % 3600 / 60` se face de la stânga la dreapta: mai întâi restul după ore, apoi împărțit la 60.
 
-### Exemplul 12 — Ora de peste N ore
-
+**Acasă 5 — Ora de peste N ore**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -425,8 +510,7 @@ Peste 9 ore va fi ora 5
 
 Restul la 24 „învârte” ceasul: după ora 23 urmează ora 0. Același truc merge pentru zilele săptămânii (restul la 7) sau pentru culorile care se repetă (restul la numărul de culori).
 
-### Exemplul 13 — Media a 3 note (cu o limitare)
-
+**Acasă 6 — Media a 3 note (cu o limitare)**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -457,8 +541,7 @@ Restul impartirii la 3 = 2
 
 Media reală este 7,66…, dar `int` păstrează doar partea întreagă. Limitarea dispare când învățăm `double`, în lecția 5.
 
-### Exemplul 14 — Casierul: câte bancnote?
-
+**Acasă 7 — Casierul: câte bancnote?**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -496,17 +579,7 @@ Monede de 1: 2
 
 Verificare: 3 · 50 + 3 · 10 + 1 · 5 + 2 = 150 + 30 + 5 + 2 = 187. După fiecare pas, `suma` păstrează restul rămas de plătit, iar în final rămân monedele de câte 1 leu.
 
-**Încearcă tu (15 min)**  
-- [ ] Afișezi suma cifrelor unui număr de 3 cifre, citit de la tastatură  
-- [ ] Transformi un număr de zile în săptămâni și zile rămase  
-- [ ] Verifici dacă un număr e par, afișând `n % 2` (`0` înseamnă par, `1` înseamnă impar)  
-
----
-
-## 4. Proiecte mici
-
-### Exemplul 15 — Calculatorul complet
-
+**Acasă 8 — Calculatorul complet**
 ```cpp
 /*
    Program: Calculator cu doua numere
@@ -549,8 +622,7 @@ Al doilea numar (nenul): 6
 ======================
 ```
 
-### Exemplul 16 — Interschimbare cu date citite
-
+**Acasă 9 — Interschimbare cu date citite**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -582,91 +654,6 @@ Dupa interschimbare:
 a = 15
 b = 8
 ```
-
----
-
-## Proiect / exerciții de finalizat AZI
-
-### Exercițiul A — „Calculatorul meu” (obligatoriu)
-Citește două numere întregi și afișează suma, diferența, produsul, câtul și restul, fiecare cu un mesaj clar.
-
-### Exercițiul B — Perimetrul dreptunghiului
-Citește lungimea și lățimea unui dreptunghi. Afișează perimetrul și aria.
-
-### Exercițiul C — Zile în săptămâni
-Citește un număr de zile și afișează câte săptămâni complete și câte zile rămân. (Exemplu: `23` zile înseamnă `3` săptămâni și `2` zile.)
-
-### Exercițiul D — Ultima și penultima cifră
-Citește un număr natural cu cel puțin 2 cifre și afișează ultima și penultima lui cifră.
-
-### Exercițiul E — Bani de buzunar
-Citești suma de bani pe care o ai și prețul unui covrig. Afișează câți covrigi poți cumpăra și câți lei îți rămân.
-
-**Gata când:**
-- [ ] Programul compilează fără erori  
-- [ ] Citește minimum două numere cu `cin`  
-- [ ] Afișează suma și produsul  
-- [ ] Afișează câtul și restul  
-- [ ] Fiecare `cin` are înainte un mesaj clar („Introdu a: ”)  
-- [ ] Ai testat cu minimum 2 seturi de numere diferite  
-- [ ] Fișierul se numește `Prenume_Nume_L4.cpp`  
-
----
-
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Media a 3 note (pe `int`) și observă ce se pierde după virgulă  
-- [ ] Calculează ultima cifră a **produsului** a două numere citite, fără să înmulțești tot numărul (ajută: `(a % 10) * (b % 10) % 10`)  
-- [ ] Citește un număr de 4 cifre și afișează numărul cu cifrele **în ordine inversă** (de exemplu `1234` devine `4321`)  
-- [ ] Citește vârsta în ani și afișează câte luni, câte zile și câte ore are (aproximativ, cu un an de 365 de zile)  
-- [ ] Calculează ce zi a săptămânii va fi peste `n` zile, dacă azi este ziua cu numărul `z` (între 1 și 7)  
-
----
-
-## Greșeli frecvente
-
-| Ce vezi | Cauza | Corect |
-|---------|-------|--------|
-| Programul „stă” și nu face nimic | Așteaptă un număr la `cin` | Tastează numărul și apasă Enter |
-| Nu știi ce să introduci | Lipsește mesajul înainte de `cin` | Afișează un mesaj cu `cout` |
-| `cin << a;` sau `cout >> a;` | Săgețile sunt inversate | `cin >> a;` și `cout << a;` |
-| Valori ciudate la afișare | Ai uitat să citești variabila | Adaugă `cin >> variabila;` |
-| Ai scris `cin >> "a";` | Numele variabilei nu e între ghilimele | `cin >> a;` |
-| Rezultatul `7 / 2` este `3` | Împărțirea între `int` taie zecimalele | Normal pentru `int`. Pentru zecimale, vezi L5 |
-| Programul se oprește cu o eroare la `a / b` | `b` este `0` | Testează cu `b` nenul |
-| `a % b` nu merge pentru zecimale | `%` funcționează doar cu numere întregi | Folosește `int` |
-| Rezultat greșit la `a + b / 2` | Împărțirea se face înainte de adunare | Folosește paranteze: `(a + b) / 2` |
-| Programul se strică după ce tastezi o literă | `cin` așteaptă un număr | Introdu doar numere întregi |
-
----
-
-## Recapitulare pe scurt
-
-- `cin >> x;` citește o valoare de la tastatură în variabila `x`.
-- Înaintea fiecărui `cin` afișezi un mesaj, ca utilizatorul să știe ce introduce.
-- `cin >> a >> b >> c;` citește mai multe valori deodată.
-- La `int`: `/` dă câtul (fără zecimale), iar `%` dă restul.
-- `n % 10` este ultima cifră, iar `n / 10` este numărul fără ultima cifră.
-- Ordinea operațiilor: paranteze, apoi `* / %`, apoi `+ -`.
-- Nu se împarte niciodată la zero.
-
----
-
-## Quiz scurt
-- Ce face `cin >> x;`?  
-- De ce afișezi un mesaj înainte de `cin`?  
-- Ce dau `/` și `%` la numere `int`?  
-- Cum afli ultima cifră a unui număr `n`?  
-- De ce nu împărțim niciodată la zero?  
-
----
-
-## Temă
-1. Refă **Exemplele 1–16** pe calculatorul tău și testează fiecare cu cel puțin două seturi de date.  
-2. Scrie un program care citește un număr de secunde și îl afișează în forma `minute:secunde` (de exemplu, `135` secunde devine `2 min 15 s`).  
-3. Scrie un program care citește prețul unui bilet și numărul de persoane și afișează totalul și cât rămâne dintr-o bancnotă de 200 de lei.  
-4. Scrie un program care citește un număr de 3 cifre și afișează suma și produsul cifrelor lui.  
-5. **Bonus:** program care citește un număr de 2 cifre și îl afișează cu cifrele inversate (`47` devine `74`).  
-6. Salvează tot ca `Tema_L4_Prenume_Nume.cpp`.
 
 ---
 

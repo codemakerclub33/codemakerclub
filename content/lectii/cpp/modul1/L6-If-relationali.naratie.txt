@@ -1,23 +1,25 @@
-Lecția șase din Modulul unu. Operatori de comparare și instrucțiunea if.
+Lecția șase din Modulul unu. Ești admis? Operatori de comparare și instrucțiunea if.
 
-Astăzi programul tău învață să ia decizii: face anumite lucruri doar dacă o condiție este adevărată, exact ca blocul „dacă” din Scratch. Fișierul tău este Prenume, linie jos, Nume, linie jos, L șase.
+Astăzi programul tău învață să ia decizii: face anumite lucruri doar dacă o condiție este adevărată, exact ca blocul dacă din Scratch. Fișierul tău este Prenume, linie jos, Nume, linie jos, L șase.
 
-Obiectivul. Minim: un program cu un if și o condiție reală, testat cu valori pentru care condiția este adevărată și cu valori pentru care este falsă. Complet: minim, plus cel puțin trei if-uri, date citite cu c-in și condiția spusă în cuvinte pe foaie.
+Instrucțiuni noi azi. Semnele mai mic, mai mare, mai mic sau egal și mai mare sau egal compară două valori. Două semne egal verifică dacă două valori sunt egale, iar semnul exclamării cu egal verifică dacă sunt diferite. If, apoi condiția între paranteze și blocul între acolade, execută blocul doar dacă condiția este adevărată.
 
-Primul pas. Operatorii de comparare. Mai mic, mai mare, mai mic sau egal, mai mare sau egal, egal egal și diferit. Rezultatul este adevărat, adică unu, sau fals, adică zero.
+Exemplul unu. Operatorii de comparare. Rezultatul unei comparații este adevărat, adică unu, sau fals, adică zero. Încearcă tu: prevezi pe foaie rezultatul câtorva comparații și le verifici în program.
 
-Al doilea pas. If. Scrii if, apoi condiția între paranteze, apoi blocul între acolade. Blocul se execută doar când condiția este adevărată. Poți pune mai multe if-uri la rând. Cu restul împărțirii la doi afli dacă un număr este par.
+Exemplele doi și trei. If. Scrii if, apoi condiția între paranteze, apoi blocul între acolade. Blocul se execută doar când condiția este adevărată, iar dacă este falsă, programul îl sare. Cu restul împărțirii la doi afli dacă un număr este par. Încearcă tu: citește o vârstă și afișează Poți intra la film doar dacă vârsta este cel puțin doisprezece, apoi rulează programul cu valori pentru ambele cazuri.
 
-Al treilea pas. Cea mai mare capcană: un singur egal pune o valoare, iar două egaluri compară. Dacă scrii un singur egal în condiție, programul nu compară nimic. Alte două capcane: nu pui punct și virgulă imediat după if și nu uiți acoladele.
+Exemplele patru și cinci. Capcanele. Cea mai mare capcană: un singur egal pune o valoare, iar două egaluri compară. Dacă scrii un singur egal în condiție, programul nu compară nimic. Alte două capcane: nu pui punct și virgulă imediat după if și nu uiți acoladele. Încearcă tu: scrie intenționat un singur egal într-un if și vezi ce se întâmplă.
 
-Al patrulea pas. Poți compara și alte tipuri: caractere, între apostrofuri, și texte, între ghilimele. Poți folosi direct și o variabilă bool.
+Exemplele șase și șapte. Poți compara și caractere, între apostrofuri, și texte, între ghilimele. Poți folosi direct și o variabilă bool, iar semnul exclamării înseamnă nu. Încearcă tu: citește un cuvânt și verifică dacă este salut, apoi folosește un bool pentru plouă și afișează Ia umbrela.
 
-Al cincilea pas. Proiecte mici. Programul pentru temperatură, biletul de la cinema, viețile din joc și „Ești admis?”.
+Exemplul opt. Temperatura. Este un proiect model, cu trei if-uri independente. Pentru o temperatură mare pot fi adevărate două condiții în același timp, iar pentru una mijlocie niciuna. În lecția următoare înveți să alegi exact un singur drum. Încearcă tu: rulează programul cu trei valori diferite.
 
-Un sfat bun: testează fiecare program de două ori, o dată cu valori pentru care condiția este adevărată și o dată cu valori pentru care este falsă.
+De făcut azi. Ești admis. Minim: un program care citește o notă și afișează Admis dacă este cel puțin cinci, testat cu o notă pentru care condiția este adevărată și una pentru care este falsă. Complet: minim, plus cel puțin trei if-uri, de exemplu Felicitări pentru nota zece și Mai încearcă pentru nota sub cinci, cu date citite de la tastatură. Pe foaie scrii fiecare condiție în cuvinte, înainte de cod.
+
+Bonus, trei stele. Fizz și Buzz. Doar dacă ai terminat varianta completă. Citești un număr și afișezi trei mesaje independente, fiecare cu propriul if. Fizz, dacă numărul se împarte la trei. Buzz, dacă se împarte la cinci. Șapte la final, dacă ultima cifră este șapte. Testezi cu cincisprezece, când apar două mesaje, apoi cu șapte, opt și douăzeci și șapte, și scrii rezultatele pe foaie.
 
 Greșeli frecvente. Mesajul apare mereu, pentru că ai scris un singur egal sau ai pus punct și virgulă după if. Ai uitat parantezele condiției. Ai greșit sensul, mai mic în loc de mai mare, așa că citește condiția cu voce tare. Ai uitat acoladele și a doua instrucțiune apare mereu. Ai încercat să înlănțui comparațiile, de exemplu cinci mai mic ca x mai mic ca zece: asta se rezolvă în lecția opt.
 
-Tema. Citești temperatura corpului și afișezi „Ai febră” peste treizeci și șapte virgulă cinci. Citești un număr și afli dacă este par, dacă se împarte la trei și dacă este mai mare decât o sută. Salvezi ca Tema, linie jos, L șase.
+Tema. Refaci exemplele din lecție și le testezi în ambele cazuri. Citești temperatura corpului și afișezi Ai febră peste treizeci și șapte virgulă cinci. Citești un număr și afli dacă este par, dacă se împarte la trei și dacă este mai mare decât o sută. Citești două numere și afișezi dacă unul dintre ele este zero. Salvezi ca Tema, linie jos, L șase. Găsești în lecție și exemple pentru acasă.
 
 Recapitulare. Comparațiile dau adevărat sau fals. If execută blocul doar dacă e adevărat. Un egal pune, două egaluri compară. Succes!

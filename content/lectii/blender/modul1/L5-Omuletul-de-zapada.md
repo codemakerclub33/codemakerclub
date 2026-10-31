@@ -107,10 +107,6 @@ Vrei să muți omulețul întreg dintr-o mișcare. Soluția: **părinte și copi
 - [ ] Când muți sfera de jos cu **G**, toate piesele merg după ea  
 - [ ] În **Outliner** piesele apar sub părinte  
 
-### Dacă ai terminat devreme
-- [ ] Un **fular** din Torus în jurul gâtului  
-- [ ] Sau Bonusul de mai jos  
-
 ---
 
 ## Greșeli frecvente
@@ -145,8 +141,15 @@ Vrei să muți omulețul întreg dintr-o mișcare. Soluția: **părinte și copi
 
 ---
 
-## Bonus
-- [ ] Un al doilea omuleț, mic, ca „fiu”
+## Bonus ★★★ — Provocare: Pinguinul
+*Doar dacă ai terminat Complet.*
+
+Construiește un pinguin doar din sfere și un con.
+
+- [ ] Cel puțin 8 piese: corp, burtă, cap, cioc (con), 2 aripi, 2 picioare
+- [ ] Burta, aripile și picioarele sunt sfere turtite cu `S`
+- [ ] `Shade Smooth` pe toate sferele
+- [ ] Toate piesele legate de corp cu `Ctrl + P`: muți corpul și vine tot pinguinul
 
 ## Recapitulare rapidă
 1. Personajele = **forme simple** puse cap la cap  

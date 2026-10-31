@@ -126,10 +126,6 @@ Alegi tu ce simte cine se uită la poza casei.
 - [ ] Am notat valorile și propoziția  
 - [ ] Un coleg ghicește ce dispoziție ai ales  
 
-### Dacă ai terminat devreme
-- [ ] Fă „apusul” și „răsăritul” ca două fișiere diferite  
-- [ ] Sau Bonusul de mai jos  
-
 ---
 
 ## Greșeli frecvente
@@ -165,8 +161,15 @@ Alegi tu ce simte cine se uită la poza casei.
 
 ---
 
-## Bonus
-- [ ] Pune un **Spot** care luminează doar ușa
+## Bonus ★★★ — Provocare: Aceeași casă, trei momente
+*Doar dacă ai terminat Complet.*
+
+Aceeași scenă, trei momente ale zilei, doar din lumini.
+
+- [ ] Salvezi 3 fișiere: `_dimineata`, `_apus`, `_noapte`
+- [ ] Casa și camera rămân la fel, se schimbă doar luminile
+- [ ] Noaptea: o lumină `Point` sau `Spot` la ușă sau la geam
+- [ ] Un coleg ghicește momentul din ecranul `Rendered`
 
 ## Recapitulare rapidă
 1. **Point · Sun · Spot · Area**  

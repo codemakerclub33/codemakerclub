@@ -1,21 +1,25 @@
-Lecția nouă din Modulul unu. Instrucțiunea switch.
+Lecția nouă din Modulul unu. Meniul cafenelei. Instrucțiunea switch.
 
-Astăzi înveți instrucțiunea potrivită pentru meniuri: alegi o opțiune numerotată, iar programul face exact acțiunea ei. Fișierul tău este Prenume, linie jos, Nume, linie jos, L nouă.
+Astăzi înveți instrucțiunea potrivită pentru meniuri: alegi o opțiune numerotată, iar programul execută exact acțiunea ei. Fișierul tău este Prenume, linie jos, Nume, linie jos, L nouă.
 
-Obiectivul. Minim: un meniu cu cel puțin trei opțiuni și default. Complet: minim, plus un meniu care calculează ceva, de exemplu un preț sau o operație, și testarea unei opțiuni invalide.
+Instrucțiuni noi azi. Switch, cu o variabilă între paranteze, alege o acțiune după valoarea ei. Case, urmat de o valoare și de două puncte, marchează acțiunea pentru valoarea respectivă. Break oprește switch-ul după acțiune. Default este acțiunea pentru orice altă valoare.
 
-Primul pas. Structura. Scrii switch, apoi între paranteze valoarea de verificat. În interior, pentru fiecare opțiune scrii case, valoarea și două puncte, apoi acțiunea. La final de fiecare case pui break. La sfârșit scrii default, care prinde orice altă valoare. Cu el faci meniul unui restaurant sau zilele săptămânii.
+Exemplul unu. Structura switch. Programul calculează valoarea dintre paranteze și sare la case-ul potrivit. Executăm instrucțiunile până la break. Dacă niciun case nu se potrivește, se execută default. Încearcă tu: fă un meniu cu trei opțiuni, testează o opțiune invalidă și adaugă un case nou.
 
-Al doilea pas. Break. Fără break, programul nu se oprește la opțiunea ta, ci cade în următoarea și se afișează mai multe mesaje. Uneori folosești asta intenționat: dacă pui mai multe case-uri unul sub altul, fără nimic între ele, formezi un grup, ca un „sau”. Așa afli câte zile are o lună.
+Exemplele doi și trei. Break și grupări. Dacă uiți break, programul continuă în case-ul următor, ca o cascadă. Se numește fall-through și este cea mai frecventă greșeală la switch. Regula este să pui break la finalul fiecărui case. Mai multe case-uri puse unul sub altul, fără instrucțiuni între ele, duc la aceeași acțiune și se comportă ca un sau. Încearcă tu: scoate intenționat un break și explică pe foaie ce apare în plus, apoi grupează lunile pe anotimpuri.
 
-Al treilea pas. Switch cu litere. Funcționează și cu char, între apostrofuri. Poți accepta litera mare și litera mică împreună. Un calculator poate citi operatorul ca pe o literă.
+Exemplele patru și cinci. Switch cu char. Pentru un caracter, valoarea din case se scrie între apostrofuri. Poți grupa litera mică și litera mare, ca meniul să răspundă la amândouă. Încearcă tu: fă un meniu cu litere, cu s pentru start, p pentru pauză și x pentru ieșire, și verifică dacă o literă citită este vocală.
 
-Al patrulea pas. Limite. Switch merge cu int și char, nu cu string și nu cu double. Compară doar egalitatea, nu intervale. Pentru intervale folosești if și else if. Ai și un truc: împărțirea la zece transformă un interval într-o singură valoare.
+Limitele lui switch. Switch compară doar egalitatea cu valori fixe. Nu merge pentru intervale, pentru condiții combinate și nici pentru texte sau numere cu zecimale. În aceste cazuri folosești if și else if.
 
-Al cincilea pas. Proiecte mici. Cafeneaua cu preț, aventura în care îți alegi drumul, meniul jocului cu două niveluri și un convertor de unități.
+Exemplul șase. Cafeneaua. Este un proiect model: switch-ul setează o variabilă, prețul, iar restul programului o folosește. Pe ramura default folosim return zero, care oprește programul, pentru că nu mai are sens să cerem cantitatea pentru un produs care nu există. Încearcă tu: adaugă un al cincilea produs și testează o opțiune inexistentă.
 
-Greșeli frecvente. Ai uitat break și apar mai multe mesaje. Ai pus punct și virgulă în loc de două puncte după case. Ai pus o condiție după case, dar case primește doar o valoare fixă. Ai încercat switch cu un text. Ai scris aceeași valoare de două ori. Ai uitat apostrofurile la o literă. Ai uitat default. Ai declarat o variabilă într-un case fără acolade: pune acolade în jurul case-ului.
+De făcut azi. Meniul cafenelei. Minim: un meniu cu cel puțin trei opțiuni în switch, cu break la fiecare case și un default. Complet: minim, plus un meniu care calculează ceva, un preț sau o operație, și testarea unei opțiuni invalide. Alegi tu meniul: o cafenea, o pizzerie, o librărie sau un joc.
 
-Tema. Faci un meniu de pizza cu patru tipuri și prețuri. Citești o cifră și o afișezi cu litere. Citești o notă și afișezi calificativul, cu grupare de cazuri. Salvezi ca Tema, linie jos, L nouă.
+Bonus, trei stele. Dispecerul de lift. Doar dacă ai terminat varianta completă. Un lift are etajele de la zero la cinci. Citești etajul curent și o comandă: S pentru sus sau J pentru jos, litere mari sau mici. Un switch pe comandă calculează etajul nou, iar literele mari și mici sunt grupate. Default afișează Comandă necunoscută. Un if verifică dacă etajul nou iese din intervalul zero, cinci și afișează Nu se poate. Un al doilea switch afișează numele etajului: zero este Parter, unu și doi sunt Birouri, trei este Cantină, iar patru și cinci sunt Terasă. Testezi S de la etajul cinci, j de la etajul zero și o comandă greșită.
 
-Recapitulare. Switch alege după o valoare fixă. Fiecare case se termină cu break. Default prinde restul. Succes!
+Greșeli frecvente. Ai uitat break și se afișează mai multe mesaje. Ai pus punct și virgulă în loc de două puncte după case. Ai încercat o condiție în case, care primește doar o valoare fixă. Ai încercat switch cu un text. Ai uitat apostrofurile la un char. Ai uitat default și meniul nu răspunde la opțiuni greșite.
+
+Tema. Refaci exemplele din lecție și testezi fiecare opțiune, inclusiv una invalidă. Faci un meniu de pizza, cu patru tipuri și prețuri, și calculezi totalul pentru un număr de porții. Citești o cifră și o afișezi cu litere. Citești o notă și afișezi calificativul, cu un switch cu grupări. Salvezi ca Tema, linie jos, L nouă. Găsești în lecție și exemple pentru acasă.
+
+Recapitulare. Switch alege după valoarea unei variabile. Fiecare case se termină cu break, iar default prinde restul. Case-urile puse unul sub altul se grupează. Pentru intervale folosești if. Succes!

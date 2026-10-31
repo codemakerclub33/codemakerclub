@@ -24,4 +24,6 @@ Al optulea pas, pentru varianta completă. Legăm totul, cu părinte și copii. 
 
 Greșeli frecvente. Omulețul se desface când îl muți: nu ai apăsat Control plus P. Părintele nu este ultimul selectat: selectează părintele la sfârșit. Sferele sunt colțuroase: lipsește Shade Smooth. Nasul arată în sus sau înăuntru: verifică rotația pe X, de nouăzeci de grade, și privește din dreapta, cu trei. Ochii nu sunt simetrici: folosește valori X egale, cu semn opus.
 
+Provocare, trei stele. Pinguinul. Construiești un pinguin din sfere și un con. Ai nevoie de cel puțin opt piese: corp, burtă, cap, cioc, două aripi și două picioare. Burta, aripile și picioarele sunt sfere turtite cu S. Aplici Shade Smooth pe toate sferele. Apoi legi toate piesele de corp cu Ctrl plus P, ca să se mute tot pinguinul odată.
+
 Succes cu omulețul.

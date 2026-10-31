@@ -26,4 +26,6 @@ Al șaptelea pas. Verificarea finală a modulului unu. Poți să te deplasezi î
 
 Greșeli frecvente. Prea multe obiecte și prea puțin timp: fă mai puține, dar bine finisate. Obiecte care se ating și se intersectează: verifică din față și de sus. Toate obiectele au aceeași culoare: creează materiale separate. Lumina este prea slabă: mărește Strength sau Power. Ai uitat să salvezi: Control plus S, des.
 
+Provocare, trei stele. Povestea dioramei. Diorama ta are cel puțin douăsprezece obiecte. Faci două randări din unghiuri diferite, de exemplu din față și de sus. Scrii trei propoziții: cine apare în diorama ta și ce se întâmplă. La final o prezinți în fața grupei, într-un minut.
+
 Felicitări pentru finalul modulului unu.

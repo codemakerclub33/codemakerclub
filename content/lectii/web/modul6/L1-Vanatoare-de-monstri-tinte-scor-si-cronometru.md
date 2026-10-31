@@ -205,7 +205,7 @@ Două lucruri de remarcat: `grid-template-columns: repeat(3, 1fr)` face **3 colo
 **Încearcă tu (10 min)**  
 - [ ] Scrie `index.html` și `stil.css`  
 - [ ] Deschide pagina: vezi titlul, panoul și butonul (vizuinile apar în exemplul următor)  
-- [ ] Schimbă culorile din `:root` după gustul tău
+- [ ] Schimbă culorile din `:root` după preferința ta
 
 ---
 
