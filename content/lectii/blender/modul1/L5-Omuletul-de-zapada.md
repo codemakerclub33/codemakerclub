@@ -1,4 +1,4 @@
-# Lecția 5 — Omulețul de zăpadă
+# LECȚIA 5 — Omulețul meu
 ### Obiecte din sfere
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
@@ -8,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai un omuleț complet, cu **corp, cap, nas, ochi, pălărie și nasturi**.  
-**Minim:** 3 sfere suprapuse + nas + 2 ochi.  
-**Complet:** Minim + **Shade Smooth** + pălărie + nasturi + **legat într-un grup** (parent), ca să muți personajul ca pe un întreg.
-
-## De ce contează
-Personajele se construiesc din piese simple, așezate cu grijă. Aici înveți și 2 trucuri importante: **netezirea** suprafeței și **legarea** pieselor.
+## Ce facem azi
+La finalul orei ai un omuleț complet, cu **corp, cap, nas, ochi, pălărie și nasturi**. Personajele se construiesc din piese simple, așezate cu grijă. Aici înveți și 2 trucuri importante: **netezirea** suprafeței și **legarea** pieselor.
 
 ---
 
@@ -29,6 +24,17 @@ Personajele se construiesc din piese simple, așezate cu grijă. Aici înveți �
 | 100–120 | Legare, recap, quiz, galerie |
 
 **Ce ai nevoie:** Blender 4.2 · scena de start (cubul de start îl ștergi)
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce folosim | Ce face | Exemplu |
+|------------|---------|---------|
+| **Shade Smooth** | Netezește suprafața unui obiect | clic dreapta pe sferă → Shade Smooth |
+| **Shift + D** | Duplică obiectul selectat | un nasture, apoi încă unul |
+| **Ctrl + P → Object** | Leagă piesele de un părinte | piesele se mișcă împreună cu corpul |
+| **X** | Șterge obiectul selectat | cubul de start |
 
 ---
 
@@ -151,15 +157,11 @@ Construiește un pinguin doar din sfere și un con.
 - [ ] `Shade Smooth` pe toate sferele
 - [ ] Toate piesele legate de corp cu `Ctrl + P`: muți corpul și vine tot pinguinul
 
-## Recapitulare rapidă
+## Recapitulare pe scurt
 1. Personajele = **forme simple** puse cap la cap  
 2. **Shade Smooth** netezește aspectul  
 3. **Ctrl + P** leagă piese (părinte + copii)  
 4. **Shift + D** duplică, apoi mută
-
-## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
-
-`Pornim curat` → `Corpul din 3 sfere` → `Nasul — morcovul` → `Ochii și nasturii` → `Shade Smooth — suprafață netedă` → `Pălăria` → `Brațele (crengi)` → `Complet — legăm totul (parent)`
 
 ## Mai departe *(opțional)*
 Caută poze cu oameni de zăpadă și observă proporțiile: care e cea mai mare sferă? Poți schimba stilul (mai gras, mai înalt).

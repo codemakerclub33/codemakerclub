@@ -1,4 +1,4 @@
-# Lecția 10 — Proiect: mini-diorama
+# LECȚIA 10 — Mini-diorama
 ### Proiect final
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
@@ -8,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai o scenă completă, colorată, luminată și randată.  
-**Minim:** o bază, 3 obiecte colorate, o lumină, o cameră, o randare.  
-**Complet:** Minim + **cel puțin 6 obiecte**, 5 materiale diferite, **2 lumini**, compoziție bună și piese **denumite și ordonate**.
-
-## De ce contează
-Un proiect complet leagă toate pașii: modelare, culoare, lumină, cameră, randare. Dioramele sunt folosite în jocuri, filme și arhitectură pentru a arăta o idee.
+## Ce facem azi
+La finalul orei ai o scenă completă, colorată, luminată și randată. Un proiect complet leagă toate pașii: modelare, culoare, lumină, cameră, randare. Dioramele sunt folosite în jocuri, filme și arhitectură pentru a arăta o idee.
 
 ---
 
@@ -29,6 +24,19 @@ Un proiect complet leagă toate pașii: modelare, culoare, lumină, cameră, ran
 | 105–120 | Randare și galerie |
 
 **Ce ai nevoie:** Blender 4.2 · piesele din L4–L7 (casă, omuleț, rachetă)
+
+---
+
+## Ce folosești azi
+
+Azi nu înveți nimic nou. Folosești tot ce știi din Modulul 1:
+
+| Din lecția | Ce folosești |
+|-----------|--------------|
+| L1–L3 | interfața, navigarea, **G R S**, `Shift + A`, `F2` |
+| L4–L6 | forme de bază, `Shift + D`, `Ctrl + P`, Snap |
+| L7 | materiale: Base Color, Roughness, Metallic |
+| L8–L9 | lumini, cameră, randare cu `F12` |
 
 ---
 
@@ -168,15 +176,11 @@ Dă viață dioramei cu o poveste.
 - [ ] Scrii 3 propoziții: cine e în diorama ta și ce se întâmplă
 - [ ] O prezentare de 1 minut în fața grupei
 
-## Recapitulare rapidă — tot Modulul 1
+## Recapitulare pe scurt — tot Modulul 1
 1. Interfață, navigare, **G R S**  
 2. Forme de bază, personaje, casă  
 3. Materiale, lumini, cameră  
 4. Randare și proiect complet
-
-## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
-
-`Alege o temă` → `Baza` → `Obiecte din lecțiile trecute` → `Organizare` → `Culori, lumini, cameră` → `Lista de verificare` → `Verificare finală Modul 1`
 
 ## Mai departe *(opțional)*
 Arată dioramele colegilor și spune pentru fiecare un lucru care îți place. În Modulul 2 intri în **Edit Mode** și poți modela forme mult mai libere.

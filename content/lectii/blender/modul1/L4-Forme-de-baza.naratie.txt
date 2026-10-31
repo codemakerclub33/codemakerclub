@@ -2,9 +2,9 @@ Lecția patru. Forme de bază.
 
 Astăzi descoperi cărămizile modelării trei D: cubul, sfera, cilindrul, conul, planul și torul. Din ele poți face aproape orice. Proiectul se numește Racheta mea. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L patru, punct blend.
 
-Obiectivul. La final adaugi și reglezi forme de bază și construiești o rachetă din ele. Minim: adaugi patru forme diferite și le schimbi dimensiunea. Complet: minim, plus reglezi forma din panoul de setări, adică numărul de laturi și raza, iar racheta are corp, vârf, aripi și geam.
+Ce facem azi. La final adaugi și reglezi forme de bază și construiești o rachetă din ele. Modelatorii profesioniști încep adesea cu forme simple, pe care le combină și le modifică. Un copac este un cilindru și o sferă, iar o casă este un cub și un con.
 
-De ce contează. Modelatorii profesioniști încep adesea cu forme simple, pe care le combină și le modifică. Un copac este un cilindru și o sferă, iar o casă este un cub și un con.
+Instrucțiuni noi azi. Shift plus A, apoi Mesh, adaugă o formă de bază. Panoul Adjust Last Operation din stânga jos reglează forma abia adăugată. Shift plus C readuce cursorul trei D în centru. F2 redenumește obiectul.
 
 Primul pas. Meniul Add. Cu mouse-ul peste viewport, apeși Shift plus A, apoi Mesh. Plane este bun pentru podea, perete sau foaie. Cube, pentru căsuțe, cutii și trepte. Circle, pentru contur sau bază. UV Sphere, pentru mingi, capete și planete. Ico Sphere este o sferă făcută din triunghiuri, bună pentru stânci. Cylinder, pentru trunchiuri, turnuri și roți. Cone, pentru vârfuri, pomi de brad și pălării. Torus, pentru inele, covrigi și roți groase. Monkey este Suzanne.
 

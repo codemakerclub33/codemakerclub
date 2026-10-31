@@ -2,9 +2,9 @@ Lecția cinci. Omulețul de zăpadă.
 
 Astăzi îți faci primul personaj: un omuleț de zăpadă, din sfere, cilindri și conuri, cu suprafață netedă și piese care se mișcă împreună. Proiectul se numește Omulețul meu. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L cinci, punct blend.
 
-Obiectivul. La final ai un omuleț complet, cu corp, cap, nas, ochi, pălărie și nasturi. Minim: trei sfere suprapuse, plus nas și doi ochi. Complet: minim, plus suprafață netedă cu Shade Smooth, pălărie, nasturi și piesele legate într-un grup, adică părinte și copii, ca să muți omulețul ca pe un întreg.
+Ce facem azi. La final ai un omuleț complet, cu corp, cap, nas, ochi, pălărie și nasturi. Personajele se construiesc din piese simple, așezate cu grijă. Aici înveți și două trucuri importante: netezirea suprafeței și legarea pieselor.
 
-De ce contează. Personajele se construiesc din piese simple, așezate cu grijă. Aici înveți și două trucuri importante: netezirea suprafeței și legarea pieselor.
+Instrucțiuni noi azi. Shade Smooth netezește suprafața unui obiect. Shift plus D duplică obiectul selectat. Control plus P, apoi Object, leagă piesele de un părinte, ca să le muți împreună. Tasta X șterge obiectul selectat.
 
 Primul pas. Pornim curat. File, New, General, apoi X și Delete pe cub.
 

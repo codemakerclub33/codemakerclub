@@ -2,9 +2,9 @@ Lecția trei. Mutăm, rotim, scalăm.
 
 Astăzi înveți cele trei mișcări pe care le faci cel mai des în Blender: G pentru mutare, R pentru rotire și S pentru scalare, plus cum le blochezi pe o axă. Proiectul se numește Scara spre cer. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L trei, punct blend.
 
-Obiectivul. La final transformi obiecte precis, cu mouse-ul și cu numere. Minim: muți, rotești și scalezi un cub. Complet: minim, plus blochezi mișcarea pe axele X, Y și Z și construiești o scară din șase cuburi, folosind numere exacte.
+Ce facem azi. La final transformi obiecte precis, cu mouse-ul și cu numere. Tot ce faci în trei D începe cu aceste trei mișcări. Dacă le știi bine, poți construi aproape orice din forme simple.
 
-De ce contează. Tot ce faci în trei D începe cu aceste trei mișcări. Dacă le știi bine, poți construi aproape orice din forme simple.
+Instrucțiuni noi azi. G mută, R rotește, S scalează. După ele apeși X, Y sau Z ca să blochezi mișcarea pe o axă. Scrii un număr și apeși Enter pentru o valoare exactă. Tasta N deschide panoul cu valorile obiectului. Alt plus G, R sau S resetează poziția, rotirea sau mărimea.
 
 Primul pas. Cele trei transformări. Selectezi cubul, cu mouse-ul peste viewport. Tasta G mută, R rotește, S scalează. Mișcă mouse-ul după ce ai apăsat tasta, iar obiectul te urmează. Confirmi cu click stânga și anulezi cu Escape.
 

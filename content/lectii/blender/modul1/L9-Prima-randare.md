@@ -1,4 +1,4 @@
-# Lecția 9 — Prima randare
+# LECȚIA 9 — Poza finală
 ### Randare
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
@@ -8,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai o imagine salvată (PNG) cu scena ta.  
-**Minim:** randezi cu **F12** și salvezi imaginea.  
-**Complet:** Minim + reglezi **rezoluția**, compari motoarele **EEVEE** și **Cycles** obții o imagine cu fundal transparent și faci **trei poze ale aceleiași scene**, fiecare cu altă schimbare.
-
-## De ce contează
-Până acum ai lucrat în viewport. Randarea face **imaginea finală**: calculează lumina, umbrele și reflexiile cu mare atenție. E „fotografia” scenei tale.
+## Ce facem azi
+La finalul orei ai o imagine salvată (PNG) cu scena ta. Până acum ai lucrat în viewport. Randarea face **imaginea finală**: calculează lumina, umbrele și reflexiile cu mare atenție. E „fotografia” scenei tale.
 
 ---
 
@@ -31,6 +26,18 @@ Până acum ai lucrat în viewport. Randarea face **imaginea finală**: calculea
 | 115–120 | Recap, galerie |
 
 **Ce ai nevoie:** Blender 4.2 · scena din L8 (cu cameră și lumină)
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce folosim | Ce face | Exemplu |
+|------------|---------|---------|
+| **F12** | Randează imaginea | prin cameră |
+| **Image → Save As** | Salvează imaginea randată | `Prenume_Nume_B1_L09.png` |
+| **EEVEE / Cycles** | Cele două motoare de randare | EEVEE rapid, Cycles realist |
+| **Output → Resolution** | Mărimea imaginii | 1920 × 1080 |
+| **Film → Transparent** | Fundal fără culoare | imagine fără cer |
 
 ---
 
@@ -168,15 +175,11 @@ Compară motoarele și numărul de eșantioane pe aceeași scenă.
 - [ ] Pe foaie un tabel: motor, samples, timp, ce observi
 - [ ] Scrii o propoziție: ce primești în plus când aștepți mai mult?
 
-## Recapitulare rapidă
+## Recapitulare pe scurt
 1. **F12** randează · **Image → Save As** salvează  
 2. **EEVEE** rapid · **Cycles** realist și lent  
 3. Rezoluția: 1920 × 1080, 50% pentru teste  
 4. **Film → Transparent** pentru fundal liber
-
-## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
-
-`Prima randare` → `Setările de randare` → `Cele două motoare` → `Rezoluția` → `Experiment: Cycles` → `Complet — fundal transparent` → `Creează tu`
 
 ## Mai departe *(opțional)*
 Trimite poza unui prieten sau a părinților și întreabă ce le place. Ce ai îmbunătăți?

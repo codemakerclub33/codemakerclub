@@ -1,4 +1,4 @@
-# Lecția 6 — Căsuța din cuburi
+# LECȚIA 6 — Căsuța mea
 ### Dimensiuni și snap
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
@@ -8,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai o căsuță cu proporții bune, cu piesele așezate exact.  
-**Minim:** corp (cub), acoperiș (con cu 4 laturi), ușă și o fereastră.  
-**Complet:** Minim + 2–4 ferestre identice (duplicate) + horn + **pământ** + folosești **snap**.
-
-## De ce contează
-Clădirile din jocuri și filme se fac exact așa: **forme simple**, așezate precis. Snap-ul te ajută să nu pierzi timp cu mutări „din ochi”.
+## Ce facem azi
+La finalul orei ai o căsuță cu proporții bune, cu piesele așezate exact. Clădirile din jocuri și filme se fac exact așa: **forme simple**, așezate precis. Snap-ul te ajută să nu pierzi timp cu mutări „din ochi”.
 
 ---
 
@@ -29,6 +24,17 @@ Clădirile din jocuri și filme se fac exact așa: **forme simple**, așezate pr
 | 95–120 | Horn, pământ, recap, galerie |
 
 **Ce ai nevoie:** Blender 4.2 · scena de start
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce folosim | Ce face | Exemplu |
+|------------|---------|---------|
+| Panoul **N → Dimensions** | Arată și schimbă mărimea reală | ușa: X 0.8, Y 0.1, Z 1.6 |
+| **R Z 45** | Rotește cu 45° pe axa Z | con cu 4 laturi = acoperiș |
+| **Shift + D** | Duplică obiectul selectat | încă o fereastră identică |
+| **Snap** (magnetul) | Lipește mutarea pe grilă | piesele se așază exact |
 
 ---
 
@@ -145,15 +151,11 @@ Mărește casa: două etaje și un balcon.
 - [ ] Balcon: o placă și 4 stâlpișori (Snap pornit)
 - [ ] Acoperișul stă pe etajul de sus
 
-## Recapitulare rapidă
+## Recapitulare pe scurt
 1. Dimensions (N) arată mărimea reală  
 2. Con cu 4 vertices + **R Z 45** = acoperiș  
 3. **Shift + D** duplică, **G** mută  
 4. **Snap** ajută la precizie
-
-## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
-
-`Corpul casei` → `Acoperișul — un con cu 4 laturi` → `Ușa` → `Ferestrele` → `Snap — lipire exactă` → `Complet — horn și pământ`
 
 ## Mai departe *(opțional)*
 Fotografiază o casă din cartierul tău și încearcă să o refaci simplu, cu aceleași proporții.

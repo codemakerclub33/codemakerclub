@@ -1,4 +1,4 @@
-# Lecția 1 — Interfața Blender și primul cub
+# LECȚIA 1 — Primul meu fișier 3D
 ### Interfață și primul cub
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
@@ -8,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei știi să recunoști părțile ecranului Blender și ai salvat primul tău fișier.  
-**Minim:** deschizi Blender, muți cubul, îl salvezi.  
-**Complet:** Minim + ștergi cubul, adaugi o **maimuță** (Suzanne), o redenumești, îi faci tu o **scenă** din cel puțin 3 obiecte cu nume și salvezi cu numele corect.
-
-## De ce contează
-Blender are multe butoane, dar le folosești doar pe câteva. Dacă știi **unde ești** pe ecran, nu te mai pierzi. Aceeași aplicație e folosită de studiouri adevărate, iar tu o ai **gratis**.
+## Ce facem azi
+La finalul orei știi să recunoști părțile ecranului Blender și ai salvat primul tău fișier. Blender are multe butoane, dar le folosești doar pe câteva. Dacă știi **unde ești** pe ecran, nu te mai pierzi. Aceeași aplicație e folosită de studiouri adevărate, iar tu o ai **gratis**.
 
 ---
 
@@ -30,6 +25,18 @@ Blender are multe butoane, dar le folosești doar pe câteva. Dacă știi **unde
 | 105–120 | Salvare, recap, quiz, galerie |
 
 **Ce ai nevoie:** un calculator cu **Blender 4.2 LTS** (blender.org → Download, gratuit) · de preferat un **mouse cu rotiță** · puțin spațiu pe disc
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce folosim | Ce face | Exemplu |
+|------------|---------|---------|
+| **Shift + A** | Adaugă un obiect nou în scenă | Shift + A → Mesh → Monkey |
+| **G** | Mută obiectul selectat | G, mișcă mouse-ul, click |
+| **F2** | Redenumește obiectul | F2 → `Maimuta_Alex` |
+| **Ctrl + Z** | Anulează ultima acțiune | după o mutare greșită |
+| **Ctrl + S** | Salvează fișierul | `Prenume_Nume_B1_L01.blend` |
 
 ---
 
@@ -168,15 +175,11 @@ Fă o poză de grup: o echipă de maimuțe, ca la un meci.
 - [ ] Din vederea din față (`1`) se văd toate cele 6, fără să se atingă
 - [ ] Un coleg ghicește care e Capitanul (cea din mijloc, în față)
 
-## Recapitulare rapidă
+## Recapitulare pe scurt
 1. Scena de start: **cub + lumină + cameră**  
 2. Zone: **Viewport, Outliner, Properties, Timeline**  
 3. **G** mută · **Esc** anulează · **Ctrl+Z** dă înapoi  
 4. **Shift+A** adaugă obiecte · **F2** redenumește
-
-## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
-
-`Pornim Blender` → `Pregătirea mouse-ului (doar dacă nu ai rotiță)` → `Cele 4 zone ale ecranului` → `Primele acțiuni` → `Complet — maimuța Suzanne` → `Creează tu` → `Salvarea`
 
 ## Mai departe *(opțional)*
 Pe blender.org găsești filme scurte făcute în Blender (de ex. „Big Buck Bunny”). Uită-te la unul și caută ce obiecte ai putea face tu.

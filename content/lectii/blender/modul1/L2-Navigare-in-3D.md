@@ -1,4 +1,4 @@
-# Lecția 2 — Navigare în 3D
+# LECȚIA 2 — Turul obiectului
 ### Navigare în 3D
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
@@ -8,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei te miști în 3D fără să te pierzi și găsești oricând obiectul.  
-**Minim:** rotești, aproprii și deplasezi vederea cu mouse-ul.  
-**Complet:** Minim + vezi scena din **față, dreapta, sus**, treci între **perspectivă** și **ortografic**, găsești orice obiect cu **Home** și **Numpad .** și faci un **tur ghidat** al unei scene aranjate de tine.
-
-## De ce contează
-Un obiect 3D are **lățime, înălțime și adâncime**. Ca să modelezi bine obiectul, îl privești din mai multe părți, ca atunci când te uiți la o jucărie.
+## Ce facem azi
+La finalul orei te miști în 3D fără să te pierzi și găsești oricând obiectul. Un obiect 3D are **lățime, înălțime și adâncime**. Ca să modelezi bine obiectul, îl privești din mai multe părți, ca atunci când te uiți la o jucărie.
 
 ---
 
@@ -30,6 +25,19 @@ Un obiect 3D are **lățime, înălțime și adâncime**. Ca să modelezi bine o
 | 110–120 | Recap, quiz, galerie |
 
 **Ce ai nevoie:** Blender 4.2 · fișierul din L1 sau unul nou · mouse cu rotiță (sau emulare)
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce folosim | Ce face | Exemplu |
+|------------|---------|---------|
+| Rotița apăsată + mișcarea mouse-ului | Rotește vederea în jurul scenei | ține rotița apăsată și mișcă |
+| **Shift** + rotița apăsată | Deplasează vederea în lateral | Shift + rotiță + mouse |
+| Rotița învârtită | Apropie sau depărtează (zoom) | înainte = mai aproape |
+| **1 / 3 / 7** (Numpad) | Vedere din față / dreapta / sus | 7 = privești de sus |
+| **5** (Numpad) | Perspectivă ↔ ortografic | vezi fără deformare |
+| **Home** | Arată toată scena | când te-ai pierdut |
 
 ---
 
@@ -171,15 +179,11 @@ Ascunde trei obiecte în scenă, iar un coleg le găsește doar cu navigarea.
 - [ ] Colegul le găsește pe toate trei în mai puțin de un minut, doar cu rotire, deplasare și zoom, fără Outliner
 - [ ] Notezi pe foaie ce vedere (`1`, `3` sau `7`) l-a ajutat cel mai mult
 
-## Recapitulare rapidă
+## Recapitulare pe scurt
 1. Rotire · deplasare · zoom  
 2. **1 / 3 / 7** = față / dreapta / sus  
 3. **5** = perspectivă ↔ ortografic  
 4. **Home** te readuce la scenă
-
-## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
-
-`Deschide scena` → `Cele 3 mișcări de bază (mouse peste viewport)` → `„Giroscopul” din colțul dreapta sus` → `Vederi standard` → `Nu te pierde!` → `Complet — jocul „Găsește obiectul”` → `Creează tu`
 
 ## Mai departe *(opțional)*
 Joacă un joc de aventură 3D și observă cum se mișcă camera. Acolo, camera e „ochiul” tău, ca la navigarea din Blender.

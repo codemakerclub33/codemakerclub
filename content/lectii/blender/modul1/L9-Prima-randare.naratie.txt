@@ -2,9 +2,9 @@ Lecția nouă. Prima randare.
 
 Astăzi transformi scena trei D într-o imagine reală, pe care o poți trimite prietenilor. Procesul se numește randare, în engleză render. Proiectul se numește Poza finală. Obții două fișiere: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L nouă, punct blend, și același nume cu punct P N G.
 
-Obiectivul. La final ai o imagine salvată, în format P N G, cu scena ta. Minim: randezi cu tasta F doisprezece și salvezi imaginea. Complet: minim, plus reglezi rezoluția, compari motoarele EEVEE și Cycles și obții o imagine cu fundal transparent.
+Ce facem azi. La final ai o imagine salvată, în format P N G, cu scena ta. Până acum ai lucrat în viewport. Randarea face imaginea finală: calculează lumina, umbrele și reflexiile cu mare atenție. Este fotografia scenei tale.
 
-De ce contează. Până acum ai lucrat în viewport. Randarea face imaginea finală: calculează lumina, umbrele și reflexiile cu mare atenție. Este fotografia scenei tale.
+Instrucțiuni noi azi. F doisprezece randează imaginea. Image, apoi Save As, o salvează. EEVEE și Cycles sunt cele două motoare de randare: EEVEE este rapid, Cycles este realist. La Output alegi rezoluția. La Film, bifa Transparent face fundalul transparent.
 
 Ce ai nevoie. Scena din lecția opt, cu cameră și lumină.
 

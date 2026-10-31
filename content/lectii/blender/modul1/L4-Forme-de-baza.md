@@ -1,4 +1,4 @@
-# Lecția 4 — Forme de bază
+# LECȚIA 4 — Racheta mea
 ### Forme de bază
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
@@ -8,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei adaugi și reglezi forme de bază și construiești o **rachetă** din ele.  
-**Minim:** adaugi 4 forme diferite și le schimbi dimensiunea.  
-**Complet:** Minim + reglezi forma din panoul **Add** (număr de laturi, rază) + racheta are corp, vârf, aripi și geam + construiești tu un **al doilea vehicul**, din forme alese de tine.
-
-## De ce contează
-Modelatorii profesioniști încep adesea cu forme simple, pe care le combină și le modifică. Un copac e un cilindru și o sferă; o casă e un cub și un con.
+## Ce facem azi
+La finalul orei adaugi și reglezi forme de bază și construiești o **rachetă** din ele. Modelatorii profesioniști încep adesea cu forme simple, pe care le combină și le modifică. Un copac e un cilindru și o sferă; o casă e un cub și un con.
 
 ---
 
@@ -30,6 +25,17 @@ Modelatorii profesioniști încep adesea cu forme simple, pe care le combină ș
 | 115–120 | Recap, quiz, galerie |
 
 **Ce ai nevoie:** Blender 4.2 · scena de start
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce folosim | Ce face | Exemplu |
+|------------|---------|---------|
+| **Shift + A → Mesh** | Adaugă o formă de bază | cub, sferă, cilindru, con, plan, tor |
+| Panoul **Adjust Last Operation** | Reglează forma abia adăugată | număr de laturi, rază |
+| **Shift + C** | Readuce cursorul 3D în centru | înainte de a adăuga o formă nouă |
+| **F2** | Redenumește obiectul | `Corp_racheta` |
 
 ---
 
@@ -174,15 +180,11 @@ Construiește un carusel de parc, cu stâlpi la distanțe egale.
 - [ ] Acoperiș: un con, care acoperă toți stâlpii
 - [ ] Fiecare piesă are nume (`Baza`, `Stalp_1`…, `Acoperis`)
 
-## Recapitulare rapidă
+## Recapitulare pe scurt
 1. **Shift + A → Mesh** adaugă forme  
 2. Panoul din stânga-jos reglează forma  
 3. **Shift + C** readuce cursorul 3D  
 4. Denumește obiectele cu **F2**
-
-## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
-
-`Meniul Add` → `Locul unde apar formele` → `Panoul „Adjust Last Operation”` → `Origine și nume` → `Complet — „Racheta mea”` → `Verifică din toate părțile` → `Creează tu`
 
 ## Mai departe *(opțional)*
 Alege o jucărie și încearcă să o descompui în forme de bază: câte cuburi, sfere, cilindri ai nevoie?

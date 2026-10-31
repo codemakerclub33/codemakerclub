@@ -1,4 +1,4 @@
-# Lecția 7 — Culori și materiale
+# LECȚIA 7 — Casa colorată
 ### Materiale
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
@@ -8,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei casa ta e colorată și ai încercat 3 aspecte diferite: mat, lucios, metalic.  
-**Minim:** colorezi 4 piese cu materiale diferite.  
-**Complet:** Minim + reglezi **Roughness** și **Metallic** + **copiezi** un material pe alte obiecte + colorezi o scenă după o **temă** aleasă de tine.
-
-## De ce contează
-O scenă fără culoare arată ca un model de plastilină gri. **Materialele** spun cum arată suprafața: culoare, lucire, transparență.
+## Ce facem azi
+La finalul orei casa ta e colorată și ai încercat 3 aspecte diferite: mat, lucios, metalic. O scenă fără culoare arată ca un model de plastilină gri. **Materialele** spun cum arată suprafața: culoare, lucire, transparență.
 
 ---
 
@@ -30,6 +25,17 @@ O scenă fără culoare arată ca un model de plastilină gri. **Materialele** s
 | 110–120 | Recap, quiz, galerie |
 
 **Ce ai nevoie:** Blender 4.2 · fișierul din L6 (sau al omulețului din L5)
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce folosim | Ce face | Exemplu |
+|------------|---------|---------|
+| **Material Preview** | Arată culorile în viewport | butonul din colțul dreapta sus |
+| **New** în fila Material | Creează un material nou | corpul casei |
+| **Base Color / Roughness / Metallic** | Culoarea, cât de lucios, cât de metalic | Roughness 0 = oglindă |
+| **Ctrl + L → Link Materials** | Copiază materialul pe alte obiecte | ferestre cu același material |
 
 ---
 
@@ -184,15 +190,11 @@ Fă o grilă de 12 sfere care arată cum se schimbă materialul.
 - [ ] Rândurile au `Metallic` `0`, `0.5`, `1`
 - [ ] Fiecare sferă are numele ei și o culoare la alegere
 
-## Recapitulare rapidă
+## Recapitulare pe scurt
 1. **Material** = cum arată suprafața  
 2. **Base Color · Roughness · Metallic**  
 3. **Ctrl + L → Link Materials** copiază materiale  
 4. Material Preview arată culorile
-
-## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
-
-`Vezi culorile în viewport` → `Primul material` → `Cele trei butoane magice` → `Culori pentru casă` → `Copiem materiale` → `Complet — omulețul colorat` → `Creează tu`
 
 ## Mai departe *(opțional)*
 Priveste în jur: ce e lucios, ce e mat? Cum ai descrie un măr, o monedă și un pulover cu Roughness și Metallic?

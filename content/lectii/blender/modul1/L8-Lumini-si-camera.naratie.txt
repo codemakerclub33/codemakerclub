@@ -2,9 +2,9 @@ Lecția opt. Lumini și cameră.
 
 Astăzi înveți cum să luminezi scena și cum să pui camera exact unde vrei, ca un regizor de film. Proiectul se numește Fotografia casei. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L opt, punct blend.
 
-Obiectivul. La final scena ta este bine luminată, iar camera privește frumos către casă. Minim: adaugi o lumină și pui camera să vadă casa. Complet: minim, plus încerci patru tipuri de lumină, alegi culoarea și puterea și obții umbre frumoase.
+Ce facem azi. La final scena ta este bine luminată, iar camera privește frumos către casă. Aceeași casă arată foarte diferit la prânz și la apus. Lumina face jumătate din frumusețea unui model, iar camera hotărăște ce vede privitorul.
 
-De ce contează. Aceeași casă arată foarte diferit la prânz și la apus. Lumina face jumătate din frumusețea unui model, iar camera hotărăște ce vede privitorul.
+Instrucțiuni noi azi. Shift plus A, apoi Light, adaugă o lumină. Alegi între Point, Sun, Spot și Area. Color și Power reglează culoarea și puterea. Control plus Alt plus Numpad zero aduce camera la vederea ta. Focal Length schimbă lentila camerei.
 
 Primul pas. Tipurile de lumină. Apeși Shift plus A, apoi Light. Point este un bec care luminează în toate direcțiile, bun pentru lampă sau lumânare. Sun este lumină de soare, cu raze paralele, bună pentru scene în aer liber. Spot este un con de lumină, bun pentru far sau lanternă. Area este un panou luminos, bun pentru studio foto sau ferestre.
 

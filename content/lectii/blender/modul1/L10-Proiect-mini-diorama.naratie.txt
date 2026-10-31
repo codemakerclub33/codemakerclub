@@ -2,9 +2,9 @@ Lecția zece. Proiect: mini-diorama.
 
 Acesta este proiectul modulului. Construiești o mini-diorama, adică o scenă mică, de sine stătătoare, cu casă, pomi, personaj și lumină. Folosești tot ce ai învățat. Proiectul se numește Mini-diorama. Obții două fișiere: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L zece, punct blend, și imaginea cu același nume, punct P N G.
 
-Obiectivul. La final ai o scenă completă, colorată, luminată și randată. Minim: o bază, trei obiecte colorate, o lumină, o cameră și o randare. Complet: minim, plus cel puțin șase obiecte, cinci materiale diferite, două lumini, o compoziție bună și piese denumite și ordonate.
+Ce facem azi. La final ai o scenă completă, colorată, luminată și randată. Un proiect complet leagă toți pașii: modelare, culoare, lumină, cameră și randare. Dioramele sunt folosite în jocuri, filme și arhitectură ca să arate o idee.
 
-De ce contează. Un proiect complet leagă toți pașii: modelare, culoare, lumină, cameră și randare. Dioramele sunt folosite în jocuri, filme și arhitectură ca să arate o idee.
+Ce folosești azi. Nu înveți nimic nou. Folosești tot ce știi din modulul unu: interfața și navigarea, G R S, formele de bază, duplicarea și legarea pieselor, materialele, luminile, camera și randarea.
 
 Ce ai nevoie. Piesele din lecțiile patru până la șapte: casa, omulețul și racheta.
 

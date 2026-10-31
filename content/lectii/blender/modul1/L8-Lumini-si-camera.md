@@ -1,4 +1,4 @@
-# Lecția 8 — Lumini și cameră
+# LECȚIA 8 — Fotografia casei
 ### Lumini și cameră
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
@@ -8,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei scena ta e bine luminată și camera privește frumos către casă.  
-**Minim:** adaugi o lumină și pui camera să vadă casa.  
-**Complet:** Minim + încerci **4 tipuri de lumină** + alegi culoarea și puterea + obții **umbre frumoase** + creezi o **dispoziție a ta** cu lumini și cameră.
-
-## De ce contează
-Aceeași casă arată **foarte diferit** la prânz și la apus. Lumina face jumătate din frumusețea unui model, iar camera hotărăște ce vede privitorul.
+## Ce facem azi
+La finalul orei scena ta e bine luminată și camera privește frumos către casă. Aceeași casă arată **foarte diferit** la prânz și la apus. Lumina face jumătate din frumusețea unui model, iar camera hotărăște ce vede privitorul.
 
 ---
 
@@ -30,6 +25,17 @@ Aceeași casă arată **foarte diferit** la prânz și la apus. Lumina face jum�
 | 115–120 | Recap, quiz |
 
 **Ce ai nevoie:** Blender 4.2 · casa din L7
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce folosim | Ce face | Exemplu |
+|------------|---------|---------|
+| **Shift + A → Light** | Adaugă o lumină | Point, Sun, Spot sau Area |
+| **Color** și **Power** | Culoarea și puterea luminii | fila Light, becul verde |
+| **Ctrl + Alt + Numpad 0** | Aduce camera la vederea ta | așezi camera ca un fotograf |
+| **Focal Length** | Lentila camerei | 50 mm seamănă cu ochiul |
 
 ---
 
@@ -171,15 +177,11 @@ Aceeași scenă, trei momente ale zilei, doar din lumini.
 - [ ] Noaptea: o lumină `Point` sau `Spot` la ușă sau la geam
 - [ ] Un coleg ghicește momentul din ecranul `Rendered`
 
-## Recapitulare rapidă
+## Recapitulare pe scurt
 1. **Point · Sun · Spot · Area**  
 2. Culoare + putere = atmosferă  
 3. **Ctrl + Alt + Numpad 0** aduce camera la vederea ta  
 4. Regula treimilor pentru compoziție
-
-## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
-
-`Tipuri de lumină` → `Setări (Properties → tab Light, becul verde)` → `Experimentul zilei` → `Camera` → `Regula treimilor` → `Lentila camerei` → `Complet — compoziția finală` → `Creează tu`
 
 ## Mai departe *(opțional)*
 Fă poze ale aceluiași obiect la ore diferite și observă cum se schimbă umbrele. Încearcă să le reproduci în Blender.

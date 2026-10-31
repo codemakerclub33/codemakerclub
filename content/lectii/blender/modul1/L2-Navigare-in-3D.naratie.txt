@@ -2,9 +2,9 @@ Lecția doi. Navigare în trei D.
 
 Astăzi înveți să te plimbi prin lumea trei D: să te rotești în jurul unui obiect, să te apropii și să te îndepărtezi, să vezi scena din față, de sus și din lateral. Proiectul se numește Turul obiectului. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L doi, punct blend.
 
-Obiectivul. La final te miști în trei D fără să te pierzi și găsești oricând obiectul. Minim: rotești, apropii și deplasezi vederea cu mouse-ul. Complet: minim, plus vezi scena din față, din dreapta și de sus, treci între perspectivă și ortografic și găsești orice obiect cu tasta Home și cu tasta punct de pe tastatura numerică.
+Ce facem azi. La final te miști în trei D fără să te pierzi și găsești oricând obiectul. Un obiect trei D are lățime, înălțime și adâncime. Ca să modelezi bine obiectul, îl privești din mai multe părți, ca atunci când te uiți la o jucărie.
 
-De ce contează. Un obiect trei D are lățime, înălțime și adâncime. Ca să modelezi bine obiectul, îl privești din mai multe părți, ca atunci când te uiți la o jucărie.
+Instrucțiuni noi azi. Rotița apăsată rotește vederea. Shift plus rotița apăsată o deplasează. Rotița învârtită apropie sau depărtează. Tastele unu, trei și șapte de pe tastatura numerică arată scena din față, din dreapta și de sus. Tasta cinci schimbă între perspectivă și ortografic. Tasta Home arată toată scena, când te-ai pierdut.
 
 Primul pas. Deschizi o scenă nouă: File, New, General. Ai din nou cubul, lumina și camera.
 

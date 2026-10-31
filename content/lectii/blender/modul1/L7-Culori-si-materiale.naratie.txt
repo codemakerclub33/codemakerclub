@@ -2,9 +2,9 @@ Lecția șapte. Culori și materiale.
 
 Astăzi dai culoare modelelor tale. Înveți ce este un material, cum alegi o culoare și cum faci ca un obiect să arate lucios, mat sau metalic. Proiectul se numește Casa colorată. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L șapte, punct blend.
 
-Obiectivul. La final casa ta este colorată și ai încercat trei aspecte diferite: mat, lucios și metalic. Minim: colorezi patru piese cu materiale diferite. Complet: minim, plus reglezi Roughness și Metallic și copiezi un material pe alte obiecte.
+Ce facem azi. La final casa ta este colorată și ai încercat trei aspecte diferite: mat, lucios și metalic. O scenă fără culoare arată ca un model de plastilină gri. Materialele spun cum arată suprafața: culoarea, lucirea, transparența.
 
-De ce contează. O scenă fără culoare arată ca un model de plastilină gri. Materialele spun cum arată suprafața: culoarea, lucirea, transparența.
+Instrucțiuni noi azi. Material Preview arată culorile în viewport. Butonul New din fila Material creează un material nou. Base Color, Roughness și Metallic reglează culoarea, cât de lucios și cât de metalic este obiectul. Control plus L, apoi Link Materials, copiază materialul pe alte obiecte.
 
 Ce ai nevoie. Fișierul din lecția șase, sau cel cu omulețul din lecția cinci.
 

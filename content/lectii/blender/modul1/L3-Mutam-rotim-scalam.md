@@ -1,4 +1,4 @@
-# Lecția 3 — Mutăm, rotim, scalăm
+# LECȚIA 3 — Scara spre cer
 ### Transformări
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
@@ -8,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei transformi obiecte precis, cu mouse-ul și cu **numere**.  
-**Minim:** muți, rotești și scalezi un cub.  
-**Complet:** Minim + blochezi pe axe (**X, Y, Z**) + construiești o **scară** din 6 cuburi folosind numere exacte și apoi o **construcție proprie** (scara ta).
-
-## De ce contează
-Tot ce faci în 3D începe cu aceste trei mișcări. Dacă le știi bine, poți construi aproape orice din forme simple.
+## Ce facem azi
+La finalul orei transformi obiecte precis, cu mouse-ul și cu **numere**. Tot ce faci în 3D începe cu aceste trei mișcări. Dacă le știi bine, poți construi aproape orice din forme simple.
 
 ---
 
@@ -30,6 +25,18 @@ Tot ce faci în 3D începe cu aceste trei mișcări. Dacă le știi bine, poți 
 | 105–120 | Scara mea, recap, quiz |
 
 **Ce ai nevoie:** Blender 4.2 · scena de start
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce folosim | Ce face | Exemplu |
+|------------|---------|---------|
+| **G / R / S** | Mută, rotește, scalează | G, mouse, click |
+| **X / Y / Z** | Blochează mișcarea pe o axă | G Z = doar în sus |
+| Numere + **Enter** | Valoare exactă | R Z 45 Enter |
+| **N** | Deschide panoul cu valorile obiectului | tabul Item |
+| **Alt + G / R / S** | Resetează poziția, rotirea, mărimea | Alt + G = înapoi în centru |
 
 ---
 
@@ -183,15 +190,11 @@ Construiește o piramidă din plăci, fiecare mai mică decât cea de sub ea.
 - [ ] Notezi pe foaie valorile folosite la fiecare placă
 - [ ] Piramida e centrată: din vederea de sus (`7`) plăcile au același centru
 
-## Recapitulare rapidă
+## Recapitulare pe scurt
 1. **G** mută · **R** rotește · **S** scalează  
 2. **X / Y / Z** blochează pe o axă  
 3. Numerele + **Enter** = precizie  
 4. **Alt + G / R / S** resetează
-
-## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
-
-`Cele trei transformări` → `Blocare pe o axă` → `Numere exacte` → `Panoul de transformare (tasta N)` → `Resetări utile` → `Complet — „Scara spre cer”` → `Creează tu`
 
 ## Mai departe *(opțional)*
 Uită-te la o scară reală și măsoară: ce înălțime are o treaptă? Încearcă să o refaci în Blender cu aceeași proporție.

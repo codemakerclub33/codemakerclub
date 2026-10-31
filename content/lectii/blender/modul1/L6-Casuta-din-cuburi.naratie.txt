@@ -2,9 +2,9 @@ Lecția șase. Căsuța din cuburi.
 
 Astăzi construiești o căsuță cu pereți, acoperiș, ușă și ferestre, folosind forme simple, duplicare și lipire pe grilă, numită snap. Proiectul se numește Căsuța mea. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L șase, punct blend.
 
-Obiectivul. La final ai o căsuță cu proporții bune, cu piesele așezate exact. Minim: corp din cub, acoperiș din con cu patru laturi, ușă și o fereastră. Complet: minim, plus două până la patru ferestre identice, obținute prin duplicare, un horn, pământ și folosirea snap-ului.
+Ce facem azi. La final ai o căsuță cu proporții bune, cu piesele așezate exact. Clădirile din jocuri și din filme se fac exact așa: din forme simple, așezate precis. Snap-ul te ajută să nu pierzi timp cu mutări făcute din ochi.
 
-De ce contează. Clădirile din jocuri și din filme se fac exact așa: din forme simple, așezate precis. Snap-ul te ajută să nu pierzi timp cu mutări făcute din ochi.
+Instrucțiuni noi azi. În panoul N, la Dimensions, vezi și schimbi mărimea reală a obiectului. R, Z și patruzeci și cinci rotește pe axa Z cu patruzeci și cinci de grade. Shift plus D duplică. Snap, magnetul, lipește mutarea pe grilă, ca piesele să se așeze exact.
 
 Primul pas. Corpul casei. Cubul de start are doi pe doi pe doi. Îl transformi într-o căsuță mai lată. Selectezi cubul. Apeși S, X, unu virgulă cinci, Enter, ca să fie mai lat, apoi S, Y, unu virgulă doi, Enter, ca să fie mai adânc. Apoi G, Z, unu, Enter, ca să stea pe podea, pentru că înălțimea centrului este jumătate din înălțimea cubului. În panoul N, la Item și Dimensions, vezi dimensiunile: trei, doi virgulă patru și doi.
 

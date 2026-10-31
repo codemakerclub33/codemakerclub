@@ -79,11 +79,11 @@ export const cursBlurbLandingPeGrupa: Record<string, Record<string, string>> = {
 
 export const module = [
   // C++ — curriculum 5 module × 10 lecții (12+ ani; M5 = proiect RPG)
-  { id: 'm1', curs_id: 'c1', nume: 'Modul 1 — Bazele C++', ordine: 1, badge: 'Junior Coder' },
-  { id: 'm2', curs_id: 'c1', nume: 'Modul 2 — Bucle și vectori', ordine: 2, badge: 'Loop Master' },
-  { id: 'm14', curs_id: 'c1', nume: 'Modul 3 — Funcții, string, algoritmi', ordine: 3, badge: 'Problem Solver' },
-  { id: 'm15', curs_id: 'c1', nume: 'Modul 4 — Proiecte și autonomie', ordine: 4, badge: 'CodeMaker Graduate' },
-  { id: 'm34', curs_id: 'c1', nume: 'Modul 5 — Proiect RPG în consolă', ordine: 5, badge: 'RPG Creator' },
+  { id: 'm1', curs_id: 'c1', nume: 'Modul 1 — Bazele C++', ordine: 1, badge: 'Junior Coder', descriere: '10 lecții cu un mic proiect în fiecare: afișezi text, folosești variabile, citești date de la tastatură și faci programul să ia decizii cu if și switch. La final: un quiz sau un calculator al tău.' },
+  { id: 'm2', curs_id: 'c1', nume: 'Modul 2 — Bucle și vectori', ordine: 2, badge: 'Loop Master', descriere: '10 lecții despre repetare și liste: bucle for, while și do-while, apoi vectori, cu care parcurgi, cauți și sortezi date. La final: un catalog de note.' },
+  { id: 'm14', curs_id: 'c1', nume: 'Modul 3 — Funcții, string, algoritmi', ordine: 3, badge: 'Problem Solver', descriere: '10 lecții în care împarți programul în funcții, lucrezi cu texte (string) și rezolvi probleme cu cifre, numere prime și numere aleatoare. La final: un mini-proiect.' },
+  { id: 'm15', curs_id: 'c1', nume: 'Modul 4 — Proiecte și autonomie', ordine: 4, badge: 'CodeMaker Graduate', descriere: '10 lecții în care construiești programe mai mari: fișiere, vector STL, structuri și meniuri. Faci trei proiecte pe consolă: un joc, un magazin și un quiz, apoi le prezinți.' },
+  { id: 'm34', curs_id: 'c1', nume: 'Modul 5 — Proiect RPG în consolă', ordine: 5, badge: 'RPG Creator', descriere: '10 lecții, un singur proiect mare: un joc RPG în consolă, cu hartă, erou, inventar, monștri, magazin, misiuni și salvare. La final îl prezinți.' },
   // Arduino — 4 module × 10 lecții (10+ ani; Tinkercad Circuits)
   { id: 'm3', curs_id: 'c2', nume: 'Modul 1 — Primele circuite', ordine: 1, badge: 'Circuit Starter' },
   { id: 'm4', curs_id: 'c2', nume: 'Modul 2 — Senzori', ordine: 2, badge: 'Sensor Scout' },
