@@ -43,7 +43,7 @@ export const descriereModulParinte: Record<string, string> = {
 
   // micro:bit (blocuri)
   m21: 'Copilul învață să programeze placa micro:bit cu blocuri colorate: imagini pe LED-uri, butoane, mișcare și senzori de lumină și temperatură. Construiește un seif secret și o insignă inteligentă.',
-  m22: 'Copilul face proiecte în care mai multe plăci micro:bit comunică prin radio: un panou de comandă, o vânătoare de comori „cald–rece” și o stație meteo la distanță. Modulul se încheie cu o expoziție.',
+  m22: 'Copilul face proiecte mai mari pe o singură placă micro:bit: un panou de comandă, o busolă, un pedometru, un ceas deșteptător, o alarmă și un joc cu un șarpe pe 25 de LED-uri. Învață liste, funcții și depanare, iar la final prezintă proiectele într-o expoziție.',
 
   // micro:bit (Python)
   m23: 'Copilul trece de la blocuri la Python pe placa micro:bit: scrie cod pentru imagini, butoane, mișcare și radio. Învață cum se traduce ce știa în cod scris.',

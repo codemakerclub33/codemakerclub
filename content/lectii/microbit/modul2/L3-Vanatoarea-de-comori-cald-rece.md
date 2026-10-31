@@ -1,19 +1,22 @@
-# Lecția 3 — Vânătoarea de comori: cald–rece
-**Modulul 2 · Proiecte Maker (blocuri + radio)**  
+# Lecția 3 — Pedometrul
+### Accelerometrul numără pașii
+**Modulul 2 · Proiecte Maker cu micro:bit (blocuri)**  
 **Code Maker Club · micro:bit Maker**
 
-> Azi faci un joc cu **două plăci**: una e **comoara**, ascunsă undeva în clasă, iar cealaltă e **detectorul** care îți spune dacă ești aproape (**cald**) sau departe (**rece**).  
-> Proiect: **„Cald–rece”** · `Prenume_Nume_MB2_L03`
+> Azi înveți să recunoști o **mișcare** din numere și faci **„Pedometrul”**:  
+> placa numără pașii tăi, iar când ajungi la țintă te felicită.  
+> Fișier: `Prenume_Nume_MB2_L03` (ex. `Ana_Pop_MB2_L03`)
 
 ---
 
 ## Obiectiv
-La finalul orei folosești **puterea semnalului radio** ca să afli cât de departe e o altă placă.  
-**Minim:** comoara trimite semnale; detectorul arată `Heart` (foarte cald), `Happy` (cald) sau `Sad` (rece).  
-**Complet:** Minim + detectorul arată `Asleep` când nu primește niciun semnal și ai **praguri reglate** după măsurători.
+La finalul orei folosești `acceleration (mg) strength` ca să recunoști un pas, alegi un **prag** și eviți să numeri același pas de două ori.  
+**Minim:** placa numără pașii (pragul `1300`), A arată totalul, B îl pune pe `0`, cu **cel puțin 8 blocuri diferite**.  
+**Ținta orei (Complet):** partea a doua: placa te felicită când ajungi la țintă (`20` de pași), iar **A+B** mărește ținta cu `10`, cu cel puțin **6 blocuri diferite**.
 
 ## De ce contează
-Telefonul tău găsește căștile pierdute după **semnal**: cu cât ești mai aproape, cu atât semnalul e mai puternic. Radio nu transportă doar mesaje, ci ne spune și **cât de departe** e emițătorul. Azi folosim asta ca să găsim o comoară.
+Ceasurile de mână și telefoanele numără pașii pe care îi faci într-o zi. Medicii și sportivii le folosesc ca să vadă cât te miști.  
+Azi faci tu un pedometru și vezi cum un **senzor de mișcare** devine un **contor**.
 
 ---
 
@@ -21,216 +24,249 @@ Telefonul tău găsește căștile pierdute după **semnal**: cu cât ești mai 
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recap L2: grup, `radio send`, `on radio received` |
-| 10–25 | Jocul „Cald–rece” fără plăci: un coleg caută un obiect ascuns |
-| 25–50 | Rolurile: comoară sau detector |
-| 50–75 | Detectorul cu 3 niveluri (**Minim**) |
-| 75–95 | Măsurăm semnalul și reglăm pragurile |
-| 95–112 | Fără semnal: `Asleep` (**Complet**) |
-| 112–120 | Recapitulare, quiz, temă |
+| 0–10 | Recap L2: `else if`, `map`, busola |
+| 10–30 | Cum simte placa un pas? `acceleration strength` |
+| 30–50 | Pragul: măsurăm și alegem |
+| 50–65 | Pauza anti-dublare |
+| 65–95 | Pedometrul (**Minim**) |
+| 95–112 | **Complet:** ținta și mesajul |
+| 112–120 | Recap, bonus, arăți ce ai gata |
 
-**Unelte azi:** `radio set group` · `radio send number` · `on radio received` · `received packet [signal strength]` · `running time (ms)` · `if / else if / else` · variabile
+**Unelte azi:** placa micro:bit · cablu micro-USB · browser Chrome sau Edge · [makecode.microbit.org](https://makecode.microbit.org)
+
+**Capitole azi:**  
+<span style="color:#D400D4;font-weight:700">Input</span> · <span style="color:#00A4A6;font-weight:700">Logic</span> · <span style="color:#DC143C;font-weight:700">Variables</span> · <span style="color:#1E90FF;font-weight:700">Basic</span>  
+*(un bloc nou: `acceleration (mg) strength` (Input, la „more”).)*
+
+**Blocurile de azi:**
+
+| Bloc | Ce face |
+|------|---------|
+| <span style="color:#D400D4;font-weight:700">acceleration (mg) strength</span> | cât de puternică e mișcarea, indiferent de direcție; în repaus e aproape `1000` |
+
+*Din lecțiile trecute le știi deja:* <span style="color:#1E90FF;font-weight:700">on start</span>, <span style="color:#1E90FF;font-weight:700">forever</span>, <span style="color:#1E90FF;font-weight:700">show number</span>, <span style="color:#1E90FF;font-weight:700">show string</span>, <span style="color:#1E90FF;font-weight:700">show icon</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>, <span style="color:#1E90FF;font-weight:700">clear screen</span>, <span style="color:#D400D4;font-weight:700">on button pressed</span>, <span style="color:#DC143C;font-weight:700">set</span>, <span style="color:#DC143C;font-weight:700">change</span>, <span style="color:#00A4A6;font-weight:700">if … then</span>, <span style="color:#00A4A6;font-weight:700">0 > 0</span>, <span style="color:#00A4A6;font-weight:700">0 = 0</span>.
 
 ---
 
 ## Pas cu pas
 
-### 1) Jocul „Cald–rece”
-Un coleg iese pe hol. Ascundeți un obiect. Când se întoarce, îl căutați cu ajutorul vostru: „**Rece**” dacă e departe, „**Cald**” dacă se apropie, „**Fierbinte**” dacă e foarte aproape. Detectorul tău va spune la fel, dar cu LED-uri.
+### 1) Cum simte placa un pas?
+Fiecare pas e o mică **zguduitură**. Accelerometrul o simte. <span style="color:#D400D4;font-weight:700">acceleration (mg) strength</span> dă **forța totală** a mișcării, într-un singur număr (în **mg**).
 
-### 2) Ce este puterea semnalului?
-Când placa primește un mesaj, ea știe **cât de tare** l-a auzit. Numărul se numește **puterea semnalului** și e **negativ**:
+În repaus, forța e aproape de `1000` (atâta e atracția Pământului). Când placa se zguduie, numărul **crește**.
 
-| Valoare | Înseamnă |
-|---------|----------|
-| în jur de `-45`…`-55` | **foarte aproape** (semnal puternic) |
-| în jur de `-65`…`-75` | la câțiva metri |
-| `-85` sau mai jos | **departe** (semnal slab) |
+Încearcă în simulator: într-un <span style="color:#1E90FF;font-weight:700">forever</span>, <span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#D400D4;font-weight:700">acceleration (mg) strength</span>. Cu butonul de scuturare numărul sare mult peste `1000`.
 
-Un număr **mai mare** (mai puțin negativ) înseamnă **mai aproape**: `-50` e mai aproape decât `-80`.
+**Încearcă tu — (8–10 min)**  
+- [ ] În repaus vezi un număr aproape de `1000`  
+- [ ] La scuturare numărul crește mult  
 
-Blocul se găsește în **Radio** și se numește **received packet [signal strength]**. Dacă nu îl vezi în prima listă de blocuri, caută-l mai jos în categoria **Radio** (uneori sub „…more”).
+### 2) Pragul: măsurăm și alegem
+Un **prag** e numărul de la care spunem „asta a fost un pas”. Nu îl ghicim, îl **măsurăm**:
 
-### 3) Rolurile
-Același program rulează pe ambele plăci. La pornire apeși un buton ca să alegi rolul:
-- **A** = **comoara** (trimite semnale)  
-- **B** = **detectorul** (le ascultă)
+1. Ții placa în mână și mergi încet prin clasă, cu un <span style="color:#1E90FF;font-weight:700">forever</span> care arată forța  
+2. Notezi cel mai mare număr la fiecare pas  
+3. Alegi un prag **puțin sub** acele numere  
 
-Variabilele: `rol` (`0` = nealeasă, `1` = comoară, `2` = detector) și `semnal`.
+Noi pornim de la `1300`; tu îl poți schimba după mersul tău.
 
-```text
-on start
-    radio set group 7
-    set rol to 0
+**Încearcă tu — (8–10 min)**  
+- [ ] Ai notat forța la 5 pași  
+- [ ] Ai ales pragul tău (de obicei între `1200` și `1600`)  
 
-on button A pressed
-    set rol to 1
-    show icon [Diamond]
+### 3) Pauza anti-dublare
+Un pas durează mai mult decât o clipă, iar forța rămâne mare câteva zeci de milisecunde. Fără **pauză**, placa ar număra **același pas de mai multe ori**.
 
-on button B pressed
-    set rol to 2
-    show icon [Target]
-```
-Fiecare pereche își alege **propriul grup** (în loc de `7`).
+De aceea, după fiecare pas numărat punem <span style="color:#1E90FF;font-weight:700">pause (ms)</span> `400`: placa „așteaptă” până se termină pasul.
 
-### 4) Comoara trimite — Minim
-```text
-forever
-    if rol = 1 then
-        radio send number 1
-    pause (ms) 200
-```
-Comoara spune de 5 ori pe secundă: „Sunt aici!” Numărul `1` nu contează, important e că **trimite ceva**.
+<span style="color:#00A4A6;font-weight:700">if</span> `acceleration strength > 1300` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `pasi` by `1`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `400`
 
-**Gata când:**  
-- [ ] Blocurile sunt puse în ordinea din lecție  
-- [ ] Simulatorul face ce scrie în „Minim”  
+**Încearcă tu — (5–8 min)**  
+- [ ] Fără pauză, numărul crește prea repede  
+- [ ] Cu `400` numără aproape corect  
 
-### 5) Detectorul ascultă — Minim
-```text
-on radio received (receivedNumber)
-    if rol = 2 then
-        set semnal to received packet [signal strength]
-        if semnal > -60 then
-            show icon [Heart]
-        else if semnal > -75 then
-            show icon [Happy]
-        else
-            show icon [Sad]
-```
-- `semnal > -60` → **foarte cald** (`Heart`)  
-- între `-75` și `-60` → **cald** (`Happy`)  
-- mai jos de `-75` → **rece** (`Sad`)
+### 4) Pedometrul: Minim
+1. Proiect nou: `Prenume_Nume_MB2_L03`  
+2. Creezi variabila `pasi`  
+3. În <span style="color:#1E90FF;font-weight:700">on start</span>: <span style="color:#DC143C;font-weight:700">set</span> `pasi` to `0`  
+4. În <span style="color:#1E90FF;font-weight:700">forever</span>: <span style="color:#00A4A6;font-weight:700">if</span> `acceleration strength > 1300` → <span style="color:#DC143C;font-weight:700">change</span> `pasi` by `1` și <span style="color:#1E90FF;font-weight:700">pause (ms)</span> `400`  
+5. La <span style="color:#D400D4;font-weight:700">on button A pressed</span>: <span style="color:#1E90FF;font-weight:700">show number</span> `pasi`, pauză, <span style="color:#1E90FF;font-weight:700">clear screen</span>  
+6. La <span style="color:#D400D4;font-weight:700">on button B pressed</span>: <span style="color:#DC143C;font-weight:700">set</span> `pasi` to `0` și o bifă `Yes`  
 
-**Ce vezi pe ecran pe detector aproape de comoară:**
-```text
-. # . # .
-# # # # #
-# # # # #
-. # # # .
-. . # . .
-```
+Programul tău (Minim):
 
-**Gata când:**  
-- [ ] Blocurile sunt puse în ordinea din lecție  
-- [ ] Simulatorul face ce scrie în „Minim”  
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pasi` to `0`  
 
-### 6) Măsurăm și reglăm pragurile
-Sălile sunt diferite, deci `-60` și `-75` pot să nu fie potrivite. Facem o **măsurătoare**:
-1. Temporar, în loc de `show icon`, scrie `show number semnal` pe detector.  
-2. Pune comoara pe masă. Citește valoarea la **0,5 m**, **2 m** și **5 m**.  
-3. Notează-le într-un tabel:
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `acceleration strength > 1300` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">change</span> `pasi` by `1`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `400`  
 
-| Distanța | Semnal măsurat |
-|----------|----------------|
-| 0,5 m | ______ |
-| 2 m | ______ |
-| 5 m | ______ |
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `pasi`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
 
-4. Alege pragul „foarte cald” puțin sub valoarea de la 0,5 m și pragul „cald” puțin sub valoarea de la 2 m. Scrie-le în program în locul lui `-60` și `-75`.
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pasi` to `0`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Yes`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>
 
-> Semnalul **oscilează**: poți vedea `-58`, apoi `-63` pe aceeași distanță. De aceea folosim **praguri**, nu numere exacte.
+**Încearcă tu — (15–20 min)**  
+- [ ] Mergi 10 pași și placa arată un număr apropiat de 10  
+- [ ] B pune numărătoarea pe `0`  
+- [ ] Programul e pe placa adevărată  
 
-### 7) Complet — fără semnal
-Dacă detectorul e prea departe, nu mai primește nimic și rămâne ultima poză. Vrem `Asleep` atunci.
+### 5) Complet: ținta și mesajul
+Adăugăm o **țintă**: după `20` de pași, placa te felicită.
 
-1. Creezi variabila `ultimul` (momentul ultimului mesaj primit).  
-2. La fiecare mesaj primit, o actualizezi:
+1. Creezi variabila `tinta`; în <span style="color:#1E90FF;font-weight:700">on start</span>: <span style="color:#DC143C;font-weight:700">set</span> `tinta` to `20`  
+2. În <span style="color:#00A4A6;font-weight:700">if</span> de la pas, după <span style="color:#DC143C;font-weight:700">change</span> `pasi` by `1`: un alt <span style="color:#00A4A6;font-weight:700">if</span> `pasi = tinta` → <span style="color:#1E90FF;font-weight:700">show icon</span> `Happy`, <span style="color:#1E90FF;font-weight:700">show string</span> `Bravo`, pauză, <span style="color:#1E90FF;font-weight:700">clear screen</span>  
+3. La <span style="color:#D400D4;font-weight:700">on button A+B pressed</span>: <span style="color:#DC143C;font-weight:700">change</span> `tinta` by `10` și <span style="color:#1E90FF;font-weight:700">show number</span> `tinta`  
 
-```text
-on radio received (receivedNumber)
-    if rol = 2 then
-        set ultimul to running time (ms)
-        set semnal to received packet [signal strength]
-        if semnal > -60 then
-            show icon [Heart]
-        else if semnal > -75 then
-            show icon [Happy]
-        else
-            show icon [Sad]
-```
-3. În `forever` verificăm cât timp a trecut:
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pasi` to `0`  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `tinta` to `20`  
 
-```text
-forever
-    if rol = 1 then
-        radio send number 1
-    else if rol = 2 then
-        if running time (ms) - ultimul > 1500 then
-            show icon [Asleep]
-    pause (ms) 200
-```
-`running time (ms)` e numărul de milisecunde de la pornirea plăcii (în **Input**). Dacă au trecut mai mult de `1500` ms (1,5 secunde) de la ultimul mesaj, detectorul „adoarme”.
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `acceleration strength > 1300` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">change</span> `pasi` by `1`  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `pasi = tinta` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Happy`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `Bravo`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `400`  
 
-**Gata când:**  
-- [ ] Blocurile pentru „Complet” sunt adăugate  
-- [ ] Simulatorul face tot ce scrie în „Complet”  
+<span style="color:#D400D4;font-weight:700">on button A+B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `tinta` by `10`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `tinta`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>
 
-### 8) Regulile jocului
-- Comoara se ascunde **în clasă**, pe o înălțime sigură (pe un raft, într-o cutie), **nu** în buzunarul cuiva și **nu** lângă apă.  
-- Cel care caută **nu se uită** unde se ascunde comoara.  
-- Detectorul se ține în mână, cu LED-urile spre tine.  
-- Nu alergăm. Căutăm **în siguranță**, pe rând.
+**Încearcă tu — (15–20 min)**  
+- [ ] La `20` de pași apare fața veselă și `Bravo`  
+- [ ] A+B mărește ținta (`30`, `40`, …)  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
 
 ---
 
 ## Greșeli frecvente
-1. **„Nu primesc nimic”** — grupuri diferite sau niciuna dintre plăci nu a apăsat A pentru comoară.  
-2. **„Totul e rece, chiar și aproape”** — pragurile sunt prea sus pentru sala ta. Măsoară din nou.  
-3. **„Pe ambele plăci apare Diamond”** — ai apăsat A pe amândouă. Una trebuie să apese B.  
-4. **„Poza nu se schimbă”** — comoara nu trimite (`rol` nu e `1`) sau detectorul nu are `rol = 2`.  
-5. **„Valoarea sare mult”** — e normal. Radio oscilează, așa că folosim intervale.  
-6. **„`Asleep` apare mereu”** — `ultimul` nu e actualizat în `on radio received`.
+1. **Numără prea mulți pași** — pragul e prea mic sau pauza e prea scurtă. Mărește-le.  
+2. **Nu numără nimic** — pragul e prea mare. Testează cu un `forever` care arată forța.  
+3. **Numărul crește când stai** — pragul e sub `1000`. Pune-l peste.  
+4. **`Bravo` nu apare** — <span style="color:#00A4A6;font-weight:700">if</span> `pasi = tinta` e **în afara** lui <span style="color:#00A4A6;font-weight:700">if</span> de la pas.  
+5. **B nu pune pe `0`** — ai pus `change`, nu `set`.  
+6. **A arată un număr și dispare repede** — lipsește `pause (ms)` după `show number`.  
 
 ---
 
-## De făcut azi — „Cald–rece”
+## De făcut azi — „Pedometrul”
+Salvat: `Prenume_Nume_MB2_L03`
 
-### Minim vs Complet
+### Minim vs Complet *(citește înainte să începi)*
 
 | | Ce trebuie |
 |--|------------|
-| **Minim** | Comoara trimite; detectorul arată `Heart` / `Happy` / `Sad` după semnal |
-| **Complet** | Minim + praguri măsurate + `Asleep` fără semnal |
+| **Minim („am reușit”)** | **Pasul 1** — placa numără pașii (prag `1300`), A arată totalul, B îl pune pe `0`, cu **cel puțin 8 blocuri diferite**, pe placă |
+| **Complet (ținta orei)** | Minim + **Pasul 2** — ținta `20` cu mesaj și A+B care mărește ținta, cu cel puțin **6 blocuri diferite** |
 
-### Pasul 1 — Minim
-- [ ] Rolurile alese cu A și B  
-- [ ] Comoara trimite în `forever`  
-- [ ] Detectorul compară `semnal` cu două praguri  
-- [ ] Jocul merge cu o comoară ascunsă  
+Dacă rămâi în urmă: **oprește-te la Minim** și salvează. Nu e eșec, e baza pentru lecția următoare.
 
-**→ Minim când:** un coleg găsește comoara urmând detectorul tău.
+### Pasul 1 — Pedometrul *(Minim)*
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pasi` to `0`  
 
-### Pasul 2 — Complet
-- [ ] Tabelul cu 3 măsurători completat  
-- [ ] Pragurile din program potrivite sălii  
-- [ ] `ultimul` și `running time (ms)` pentru `Asleep`  
-- [ ] Numele fișierului e `MB2_L03`  
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `acceleration strength > 1300` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">change</span> `pasi` by `1`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `400`  
+
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `pasi`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pasi` to `0`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Yes`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>
+
+- [ ] Proiect nou cu numele `Prenume_Nume_MB2_L03`  
+- [ ] Variabila `pasi` creată  
+- [ ] Ai cel puțin **8 blocuri diferite**: <span style="color:#1E90FF;font-weight:700">on start</span>, <span style="color:#DC143C;font-weight:700">set</span>, <span style="color:#1E90FF;font-weight:700">forever</span>, <span style="color:#00A4A6;font-weight:700">if … then</span>, <span style="color:#00A4A6;font-weight:700">0 > 0</span>, <span style="color:#D400D4;font-weight:700">acceleration (mg) strength</span>, <span style="color:#DC143C;font-weight:700">change</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>, <span style="color:#D400D4;font-weight:700">on button pressed</span>, <span style="color:#1E90FF;font-weight:700">show number</span>  
+- [ ] Programul e trimis pe placă  
+
+**→ Ai Minim când:** un coleg face 10 pași și A arată un număr între `8` și `12`.
+
+### Pasul 2 — Ținta și mesajul *(Complet)*
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pasi` to `0`  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `tinta` to `20`  
+
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `acceleration strength > 1300` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">change</span> `pasi` by `1`  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `pasi = tinta` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Happy`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `Bravo`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `400`  
+
+<span style="color:#D400D4;font-weight:700">on button A+B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `tinta` by `10`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `tinta`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>
+
+- [ ] Variabila `tinta` pusă la `20` în `on start`  
+- [ ] La `pasi = tinta` apar <span style="color:#1E90FF;font-weight:700">show icon</span> `Happy` și <span style="color:#1E90FF;font-weight:700">show string</span> `Bravo`  
+- [ ] A+B: <span style="color:#DC143C;font-weight:700">change</span> `tinta` by `10`  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
+- [ ] Salvat din nou: `Prenume_Nume_MB2_L03`  
+
+**Gata Complet când:** la `20` de pași apare `Bravo`, iar A+B mută ținta la `30`.
 
 ---
 
-## Bonus (după Complet)
-- [ ] Adaugă un **al patrulea nivel** (`Surprised` pentru „aproape de tot”)  
-- [ ] Arată semnalul ca **bară**: `plot bar graph of (semnal + 100) up to 60`  
-- [ ] Fă ca doi detectori să caute aceeași comoară  
-- [ ] Desenează pe foaie harta sălii cu locul unde a fost ascunsă comoara
+## Bonus ★★★ — Provocare: Bara de pași
+*Doar dacă ai terminat Complet.*
+
+- [ ] Schimbă pragul și numără pași în clasă, ca să vezi ce potrivire e cea mai bună  
+- [ ] **Provocarea:** la A, în loc de număr, apare o **bară de LED-uri** care se umple după cât te apropii de țintă: <span style="color:#5C2D91;font-weight:700">plot bar graph of 0 up to 0</span> cu `pasi` și `tinta`. Un coleg numără cu voce tare `20` de pași, iar placa trebuie să arate bara **plină** (greșeală cel mult `2` pași).  
 
 ## Recapitulare rapidă
-1. Placa știe **cât de tare** a auzit un mesaj radio.  
-2. Semnalul e un număr **negativ**: mai aproape de `0` = mai puternic.  
-3. Folosim **praguri** pentru că semnalul oscilează.  
-4. `running time (ms)` ne ajută să știm când a fost ultimul mesaj.  
-5. Un proiect cu mai multe plăci are **roluri**.
+1. <span style="color:#D400D4;font-weight:700">acceleration (mg) strength</span> dă forța totală a mișcării; în repaus e aproape `1000`  
+2. Pragul se **măsoară**, nu se ghicește  
+3. Pauza după un pas evită numărarea dublă  
+4. O țintă (`tinta`) face programul să „știe” când ai reușit  
+5. Un senzor devine contor cu `if` + `change`  
+6. Minim = Pasul 1 · Complet = Pasul 1 + 2  
 
 ## Schema pe scurt *(pe foaie)*
+<span style="color:#1E90FF;font-weight:700">forever</span>: <span style="color:#00A4A6;font-weight:700">if</span> forța `> 1300` → `pasi + 1` → pauză `400`
 
-Comoara: `forever` trimite → aer → Detector: `on radio received` → `semnal` → `if` → `Heart` / `Happy` / `Sad`
+A → arată `pasi` · B → `pasi = 0`
 
-**Quiz scurt:**  
-- Care semnal e mai puternic: `-50` sau `-80`?  
-- De ce folosim praguri și nu numere exacte?  
-- Ce face detectorul când nu primește nimic?  
-- De ce ne trebuie roluri?
+`pasi = tinta` → `Happy` + `Bravo` · A+B → `tinta + 10`
 
-## Temă
-Inventează **o variantă** a jocului pentru recreație (de exemplu: comoara se mută, sau există două comori). Scrie regulile pe foaie.
+**Quiz scurt (cu profesorul):**  
+- Ce număr dă forța în repaus?  
+- Cum alegi pragul pentru pași?  
+- De ce punem pauză după un pas?  
+- Ce face `if pasi = tinta`?  
+- Cum ai face placa să arate pașii pe o bară?  
+
+## Temă (opțional)
+- Dacă ai doar Minim: acasă, adaugi ținta și mesajul (Pasul 2), în același `Prenume_Nume_MB2_L03`.  
+- Dacă ai Complet: pui placa la brâu sau în buzunar și numeri pașii până la ușă; notezi cât a numărat placa și cât ai numărat tu.  
+- Dacă ai terminat și Bonusul: faci o copie și schimbi ținta la `50`.  
+
+## Ce urmează
+În **Lecția 4** placa devine **ceas**: cu alarmă care te trezește.

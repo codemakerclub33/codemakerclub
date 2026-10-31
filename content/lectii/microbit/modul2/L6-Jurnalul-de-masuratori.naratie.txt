@@ -1,31 +1,35 @@
 Lecția șase. Jurnalul de măsurători.
 
-Astăzi placa devine un mic om de știință: măsoară temperatura și lumina, ține minte recordurile și își notează măsurătorile într-un jurnal. Proiectul se numește Jurnalul de măsurători. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B doi, linie jos, L zero șase.
+Astăzi înveți să ții mai multe numere într-o singură cutie și faci Jurnalul de măsurători: placa notează temperatura de câte ori apeși A, iar apoi îți citește jurnalul și calculează media și maximul. Fișierul se numește Prenume, linie jos, Nume, linie jos, M B doi, linie jos, L zero șase.
 
-Obiectivul. La final faci un aparat care ține minte cea mai mare și cea mai mică temperatură și, la Complet, o listă de măsurători cu media lor. Minim: A schimbă între trei moduri, temperatura, lumina și recordurile, maxim și minim. A și B șterg recordurile. Complet: minim, plus B salvează măsurători într-o listă, iar al patrulea mod arată media.
+Obiectivul. La finalul orei folosești o listă: adaugi valori, le citești pe rând cu For index și calculezi o medie și un maxim. Minim: A notează temperatura în listă, B o citește pe rând, cu cel puțin opt blocuri diferite. Complet: partea a doua, în care A și B împreună calculează media și maximul măsurătorilor, cu cel puțin șase blocuri diferite.
 
-De ce contează. Oamenii de știință notează ce măsoară: temperatura de afară, cât a crescut o plantă. Notițele se numesc date. Un program care păstrează date îți poate spune cel mai cald a fost la prânz, sau în medie, în clasă sunt douăzeci și două de grade.
+De ce contează. O variabilă obișnuită ține un singur număr. Dar un meteorolog notează temperatura în fiecare oră, nu doar o dată. El are nevoie de un caiet. O listă este caietul programului: ține câte numere vrei și le poți citi pe rând.
 
-Primul pas. Tabelul de pe hârtie. Înainte de calculator, măsori în trei locuri: lângă fereastră, pe bancă și lângă ușă. Notezi temperatura și cât de luminos este: mic, mediu sau mare.
+Ce face fiecare bloc de azi. Empty array este o listă fără nimic în ea, o pui într-o variabilă cu Set. Add value to end of adaugă o valoare la sfârșitul listei. Length of arată câte valori are lista. Get value at citește valoarea de la poziția dată, iar prima poziție este zero. Numele pot diferi puțin în editor, caută blocurile după formă. Din lecțiile trecute știi deja On start, Show number, Show string, Show icon, Pause, Clear screen, On button pressed, Temperature, For index, Set, Change, If then, comparațiile, scăderea și împărțirea.
 
-Al doilea pas. Ideea recordului. Un record este cea mai mare sau cea mai mică valoare văzută până acum. Începi cu temperatura de acum. La fiecare măsurătoare, păstrezi cel mai mare dintre vechiul maxim și valoarea nouă.
+Primul pas. Jocul Caietul, fără calculator. Un copil este caietul. Ceilalți spun un număr, iar caietul îl adaugă la sfârșit. Apoi cineva întreabă: ce este la poziția zero, adică primul, ce este la poziția unu, adică al doilea. Atenție: prima poziție este zero, nu unu, ca la coordonatele de pe ecran.
 
-Al treilea pas, pentru Minim. Proiect nou, cu variabilele mod, maxim și minim. În On start: mod unu, iar maxim și minim primesc temperatura de acum.
+Al doilea pas. Creăm lista și adăugăm valori. Proiect nou. Creezi variabila masuratori. În On start, Set masuratori la o listă goală. Blocul este în Advanced, Arrays. La butonul A, Add value to end of masuratori cu temperatura, apoi o bifă, pauză și Clear screen.
 
-Al patrulea pas, pentru Minim. În A, Change mod by unu, iar dacă mod este mai mare decât trei, îl pui pe unu. În A și B, resetezi maximul și minimul la temperatura de acum.
+Al treilea pas. Citim lista, For index. La butonul B citim toate valorile, una câte una, cu For index. O listă cu trei valori are pozițiile zero, unu și doi, deci bucla merge de la zero la length minus unu. Pe fiecare poziție: Show number Get value at index, pauză, Clear screen. Înainte de buclă punem un If, length mai mare decât zero, ca să nu citim o listă goală.
 
-Al cincilea pas, pentru Minim. Regula din lecția unu rămâne valabilă: desenează doar Forever. În Forever actualizezi maximul cu blocul Max of și minimul cu Min of, apoi, după mod, arăți temperatura, lumina sau recordurile.
+Al patrulea pas. Jurnalul, pentru Minim. Reunești totul. Testezi: apeși A de trei ori, poți ține placa în mână ca să se schimbe temperatura, apoi B: vezi cele trei valori.
 
-Al șaselea pas, pentru Complet. O listă, în MakeCode Array, este o înșiruire de valori, ca un tabel cu o singură coloană. Creezi lista masuratori goală. Cu B adaugi temperatura de acum în listă. Modul patru calculează media: pui suma pe zero, parcurgi fiecare element cu For element in list, aduni, apoi împarți la câte elemente sunt.
+Al cincilea pas. Complet. Media și maximul. La A și B împreună calculăm două lucruri din listă. Media este suma valorilor împărțită la numărul lor: la fiecare poziție, Change suma cu valoarea, apoi suma împărțită la length. Maximul este cea mai mare valoare: pornim cu maxim zero, iar dacă o valoare este mai mare decât maxim, o salvăm în maxim. Creezi variabilele suma și maxim.
 
-Al șaptelea pas. Experimentul Cel mai cald loc. În grup, mergeți cu plăcile în patru locuri din clasă. La fiecare loc apăsați B. După patru locuri mergeți la modul patru și comparați media cu cea a altui grup. Care este mai mare și de ce?
-
-Greșeli frecvente. Recordurile nu se schimbă: lipsesc Max of și Min of din Forever. Ecranul se amestecă: B desenează direct, în loc să ridice un steag. La modul patru apare mereu crucea: nu ai apăsat B niciodată, lista este goală. Media este greșită: ai uitat să pui suma pe zero înainte de buclă. Modul cinci nu există: în A ai lăsat mod mai mare decât trei. Temperatura sare: placa se încălzește și singură, o diferență de un grad sau două este normală.
+Greșeli frecvente. B nu arată nimic: lista este goală sau lipsește Set masuratori la listă goală. Prima valoare lipsește: bucla începe de la unu, prima poziție este zero. Placa se blochează la ultima valoare: bucla merge până la length, nu până la length minus unu. Media este prea mare: suma nu este zero la început. Maximul este zero: If valoare mai mare decât maxim este în afara buclei. Valorile par greșite: placa s-a încălzit în mână, așteaptă puțin între apăsări.
 
 Proiectul de azi. Jurnalul de măsurători.
 
-Minim înseamnă: trei moduri și recorduri, cu ștergere la A și B. Complet înseamnă: minim, plus lista și media. Dacă rămâi în urmă, salvează la Minim.
+Minim înseamnă: A notează temperatura în listă, B o citește pe rând, cu cel puțin opt blocuri diferite, pe placă. Complet înseamnă: minim, plus A și B care arată media și maximul măsurătorilor, cu cel puțin șase blocuri diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg apasă A de trei ori și apoi B, iar placa îi arată cele trei temperaturi, pe rând.
 
-Recapitulare. Datele sunt valori măsurate și păstrate. Recordul este cea mai mare sau mică valoare, găsită cu Max of și Min of. O listă ține mai multe valori într-o variabilă. Media este suma împărțită la câte sunt. Un buton poate doar să ridice un steag, iar Forever face munca.
+Bonus. Schimbi pauza de la afișare și numărul de măsurători. Provocarea, Stația meteo: o stație meteo care măsoară singură. În Forever, o dată la zece secunde, notează temperatura în listă, până la șase măsurători. La A și B împreună placa arată Sus dacă ultima valoare este mai mare decât prima, Jos dacă este mai mică. Un coleg ține placa în mână un minut, iar placa trebuie să arate Sus.
+
+Recapitulare. O listă ține mai multe valori într-o variabilă. Add value adaugă, Get value citește, Length numără. Prima poziție este zero, ultima este length minus unu. For index de la zero la length minus unu citește toată lista. Media este suma împărțită la cât sunt, maximul se găsește comparând pe rând.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă media și maximul. Dacă ai Complet, notezi temperatura camerei la cinci ore diferite, le scrii pe foaie ca jurnal și calculezi media cu mintea, apoi o compari cu placa.
+
+Ce urmează. În lecția șapte faci un instrument muzical fără să-l atingi: un theremin cu lumină.
 
 Succes la jurnalul tău.

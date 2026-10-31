@@ -1,29 +1,37 @@
 Lecția unu. Panoul de comandă.
 
-Bine ai venit în Modulul doi! Astăzi reiei ce știi din Modulul unu și faci un panou de comandă: placa are mai multe moduri, iar tu treci de la unul la altul cu butoanele. Proiectul se numește Panoul de comandă. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B doi, linie jos, L zero unu.
+Bine ai venit în Modulul doi! Astăzi reiei ce știi și faci Panoul de comandă: o singură placă cu mai multe moduri, nume, lumină, temperatură și busolă, alese cu butoanele. Fișierul se numește Prenume, linie jos, Nume, linie jos, M B doi, linie jos, L zero unu.
 
-Obiectivul. La final folosești o variabilă numită mod, ca să faci un program cu mai multe fețe, și știi să scrii fișa unui proiect. Minim: butonul A schimbă între două moduri, lumina, adică o bară de LED-uri, și temperatura, adică un număr. Complet: minim, plus al treilea mod, numele tău, butonul B te duce înapoi, iar A și B împreună revin la primul mod.
+Obiectivul. La finalul orei folosești o variabilă mod ca să faci un program cu mai multe fețe și citești două lucruri noi: busola și timpul. Minim: A trece prin patru moduri, B arată ce măsoară modul ales, adică nume, lumină, temperatură și direcție, cu cel puțin opt blocuri diferite. Complet: partea a doua, în care A și B împreună arată cât timp a trecut de la pornire, în secunde, cu cel puțin șase blocuri diferite.
 
-De ce contează. Telefonul tău are mai multe ecrane: apeși și treci de la ceas la alarmă. Un aparat bun face mai multe lucruri, iar tu alegi pe care. Variabila care alege modul este baza oricărui proiect mai mare. Tot Modulul doi se sprijină pe ea.
+De ce contează. Telecomanda de la televizor are un buton pentru mod, iar ceasul de mână are mai multe moduri: oră, cronometru, alarmă. Totul este un singur aparat cu o variabilă de mod. Azi faci așa ceva, iar apoi vei folosi aceeași idee în toate proiectele modulului.
 
-Primul pas. Mini-test de recapitulare, în perechi, cinci minute. Fără să te uiți în Modulul unu, răspundeți: ce face On start, ce este o variabilă, ce face un If.
+Ce face fiecare bloc de azi. Compass heading dă direcția în grade: zero este Nord, nouăzeci este Est, o sută optzeci este Sud, două sute șaptezeci este Vest. Running time arată câte milisecunde au trecut de la pornirea plăcii. Blocul de împărțire împarte primul număr la al doilea. Din Modulul unu știi deja On start, Show number, Show string, Pause, Clear screen, On button pressed, Light level, Temperature, Set, Change, If then else și comparațiile.
 
-Al doilea pas. Jocul Moduri, fără calculator. Profesorul ridică un cartonaș. Verde înseamnă aplaudă, galben înseamnă bate din picior, roșu înseamnă stai pe loc. Când se schimbă cartonașul, se schimbă și ce faci. Cartonașul este modul.
+Primul pas. Jocul Panoul, fără calculator. Un copil este panoul. Ceilalți spun treci la modul următor, iar el schimbă ce arată: întâi numele, apoi lumina, apoi temperatura, apoi direcția. După ultimul se întoarce la primul. Panoul ține minte în ce mod este. Pentru calculator, asta înseamnă o variabilă.
 
-Al treilea pas. Proiect nou, cu variabila mod. În On start: Set mod to unu.
+Al doilea pas. Variabila mod și butonul A. Proiect nou. Creezi variabila mod. În On start, Set mod la zero și Show number mod. La butonul A, Change mod cu unu. Dacă mod este mai mare decât trei, Set mod la zero. La final, Show number mod.
 
-Al patrulea pas, pentru Minim. Forever desenează pe ecran în funcție de mod. Dacă mod este unu, arăți o bară de lumină. Altfel, arăți temperatura. Butonul A schimbă modul: dacă mod este unu, devine doi, altfel devine unu. La final, în Forever, o pauză de o sută de milisecunde.
+Al treilea pas. Butonul B, ce face fiecare mod. La butonul B placa face un lucru diferit, în funcție de mod. Modul zero arată numele tău. Modul unu arată lumina. Modul doi arată temperatura. Modul trei arată direcția busolei. Legăm patru decizii: un If then else în ramura Altfel a altuia, de trei ori, ca la Bila magică din Modulul unu.
 
-Al cincilea pas, pentru Complet. Faci trei moduri. Al treilea arată numele tău. În A, dacă mod este mai mare decât trei, îl pui înapoi pe unu. În B scazi unu, iar dacă mod este mai mic decât unu, îl pui pe trei. Pentru A și B împreună, Set mod to unu. Înainte de fiecare desen folosești Clear screen.
+Al patrulea pas. Busola, calibrare și direcție. Compass heading dă direcția în grade, între zero și trei sute cincizeci și nouă. Prima dată când folosești busola, placa îți cere să o calibrezi: pe ecran apare un punct, iar tu înclini placa în toate direcțiile ca punctul să deseneze un cerc. Se face o singură dată. În simulator, busola are un slider. Pe placă, o rotești cu mâna și numărul se schimbă.
 
-Al șaselea pas. Fișa proiectului. Un maker adevărat își planifică proiectul. Completezi nume, ce face, materiale, pași și test.
+Al cincilea pas. Panoul de comandă, pentru Minim. Reunești totul. Testezi: A de patru ori trece prin toate modurile. La fiecare mod, B arată altceva.
 
-Greșeli frecvente. Ecranul clipește urât: lipsește pauza din Forever. Modul trei nu apare niciodată: în A ai lăsat mod mai mare decât doi, pentru trei moduri trebuie mai mare decât trei. Numele rămâne mereu pe ecran: mai întâi Clear screen, apoi desenezi. B ajunge la zero sau minus unu: ai uitat condiția mod mai mic decât unu. Desenezi și în buton, și în Forever: ecranul se încurcă, lasă desenul în Forever. Nu se vede nimic la lumină: acoperă placa cu palma, apoi luminează-o cu lanterna.
+Al șaselea pas. Complet. Cât timp a trecut. Running time dă milisecundele de la pornire. Ca să obții secunde, împarți la o mie. La A și B împreună: Show string Timp, apoi Show number Running time împărțit la o mie, apoi Pause o mie și Clear screen.
+
+Greșeli frecvente. Modul nu se întoarce la zero: If mod mai mare decât trei lipsește sau are Set în afara lui If. B arată mereu același lucru: al doilea If then else nu este în ramura Altfel a primului. Busola arată zero sau numere ciudate: nu ai calibrat placa, fă cercul de pe ecran. Timpul pare prea mare: ai uitat împărțirea la o mie și vezi milisecunde. A și B nu face nimic: blocul este pus în alt bloc, nu pe zona de lucru. Numele apare greșit: scrie numele fără diacritice.
 
 Proiectul de azi. Panoul de comandă.
 
-Minim înseamnă: două moduri, schimbate cu A. Complet înseamnă: minim, plus al treilea mod, B înapoi și A și B pentru primul mod. Dacă rămâi în urmă, salvează la Minim.
+Minim înseamnă: A trece prin patru moduri, iar B arată nume, lumină, temperatură și direcție, cu cel puțin opt blocuri diferite, pe placă. Complet înseamnă: minim, plus A și B care arată timpul în secunde, cu cel puțin șase blocuri diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg apasă A de patru ori și, la fiecare mod, B îi arată altceva.
 
-Recapitulare. Mod este starea în care se află aparatul. O variabilă alege ce face Forever. Butoanele schimbă variabila, nu desenează. Clear screen înainte de desen evită LED-urile rămase. Fișa proiectului are nume, ce face, materiale, pași și test.
+Bonus. Schimbi numele din modul zero cu un cuvânt scurt al tău. Provocarea, Panoul cu cinci moduri: panoul are cinci moduri. Modul patru arată fața veselă dacă lumina este peste o sută, altfel fața tristă. Programul trebuie să treacă prin toate cele cinci moduri și să se întoarcă la zero. Un coleg încearcă toate modurile fără să te întrebe ce face, și trebuie să recunoască fiecare mod.
 
-Succes în Modulul doi.
+Recapitulare. O variabilă, mod, ține minte în ce mod este programul. Dacă mod este mai mare decât trei, mod devine zero, și așa se face un ciclu. Compass heading dă direcția în grade. Running time dă timpul de la pornire, iar împărțit la o mie obții secunde. Un If then else în ramura Altfel adaugă încă o variantă.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă A și B cu timpul. Dacă ai Complet, te gândești la un al cincilea mod pentru panou și îl desenezi pe foaie, cu ce arată pe ecran.
+
+Ce urmează. În lecția doi transformi busola într-un instrument adevărat: busola de buzunar.
+
+Succes la panoul tău.

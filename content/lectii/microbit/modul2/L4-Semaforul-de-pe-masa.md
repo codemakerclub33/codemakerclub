@@ -1,19 +1,22 @@
-# Lecția 4 — Semaforul de pe masă
-**Modulul 2 · Proiecte Maker (blocuri + radio)**  
+# Lecția 4 — Ceasul deșteptător
+### Timp, text și alarmă
+**Modulul 2 · Proiecte Maker cu micro:bit (blocuri)**  
 **Code Maker Club · micro:bit Maker**
 
-> Până acum luminile erau pe placă. Azi legi **LED-uri din afara plăcii**, la **pini**, și faci un **semafor** adevărat.  
-> Proiect: **„Semaforul de pe masă”** · `Prenume_Nume_MB2_L04`
+> Azi înveți să **numeri timpul** și faci **„Ceasul deșteptător”**:  
+> placa arată minutele și secundele, iar când ajunge la ora alarmei, te trezește.  
+> Fișier: `Prenume_Nume_MB2_L04` (ex. `Ana_Pop_MB2_L04`)
 
 ---
 
 ## Obiectiv
-La finalul orei știi ce sunt **pinii**, legi un LED extern în siguranță și îl comanzi din program.  
-**Minim:** un LED extern pe **P0**: **A** îl aprinde, **B** îl stinge.  
-**Complet:** Minim + semafor cu **3 LED-uri** (roșu, galben, verde) care se schimbă singur, folosind o **funcție**.
+La finalul orei numeri secundele cu `pause (ms)` `1000`, lipești numere într-un text cu `join` și folosești `remainder of` ca să treci de la minutul `59` la `0`.  
+**Minim:** placa numără secundele și minutele, A le arată ca `minut:secunde`, B setează minutele, cu **cel puțin 8 blocuri diferite**.  
+**Ținta orei (Complet):** partea a doua: la **A+B** pui alarma peste un minut, iar când vine ora, placa pâlpâie, cu cel puțin **6 blocuri diferite**.
 
 ## De ce contează
-Semafoarele, becurile inteligente și jucăriile cu lumini au toate ceva în comun: un calculator mic **aprinde și stinge** LED-uri prin fire. Pinii sunt „mâinile” plăcii: prin ei micro:bit poate comanda lucruri din lumea reală, nu doar ecranul lui.
+Un ceas deșteptător nu face nimic spectaculos: numără secunde și compară timpul cu ora alarmei. Dar fără el nu ne-am trezi la timp.  
+Azi vezi cum **numărătoarea** și **compararea** fac un aparat util.
 
 ---
 
@@ -21,210 +24,256 @@ Semafoarele, becurile inteligente și jucăriile cu lumini au toate ceva în com
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recap L3: roluri, praguri, semnal |
-| 10–30 | Pinii plăcii și regulile de siguranță |
-| 30–55 | Legăm un LED cu rezistență (cu profesorul) |
-| 55–70 | Programul cu A și B (**Minim**) |
-| 70–105 | Semaforul cu 3 LED-uri și funcția `stinge` (**Complet**) |
-| 105–120 | Recapitulare, quiz, temă |
+| 0–10 | Recap L3: contor, `if`, prag |
+| 10–25 | Jocul „Un minut”: 60 de secunde |
+| 25–45 | Secundele și minutele în variabile |
+| 45–60 | Textul: `join` |
+| 60–85 | Ceasul (**Minim**) |
+| 85–110 | **Complet:** alarma cu `remainder of` |
+| 110–120 | Recap, bonus, arăți ce ai gata |
 
-**Unelte azi:** `digital write pin P0 to 1` · `analog write pin` · `forever` · funcții · `pause (ms)` · LED-uri · rezistențe · cabluri cu clești (crocodil)
+**Unelte azi:** placa micro:bit · cablu micro-USB · browser Chrome sau Edge · [makecode.microbit.org](https://makecode.microbit.org)
+
+**Capitole azi:**  
+<span style="color:#DC143C;font-weight:700">Variables</span> · <span style="color:#B8860B;font-weight:700">Text</span> · <span style="color:#9C00C8;font-weight:700">Math</span> · <span style="color:#00A4A6;font-weight:700">Logic</span> · <span style="color:#D400D4;font-weight:700">Input</span> · <span style="color:#1E90FF;font-weight:700">Basic</span>  
+*(blocuri noi: `join` (Advanced → Text) și `remainder of` (Math).)*
+
+**Blocurile de azi:**
+
+| Bloc | Ce face |
+|------|---------|
+| <span style="color:#B8860B;font-weight:700">join</span> | lipește două sau mai multe valori într-un singur text: `minut`, `:` și `secunde` devin `3:07` |
+| <span style="color:#9C00C8;font-weight:700">remainder of</span> | restul împărțirii: `remainder of 61 by 60` dă `1`; folosit ca să „sari” de la `59` la `0` |
+
+*Din lecțiile trecute le știi deja:* <span style="color:#1E90FF;font-weight:700">on start</span>, <span style="color:#1E90FF;font-weight:700">forever</span>, <span style="color:#1E90FF;font-weight:700">show string</span>, <span style="color:#1E90FF;font-weight:700">show icon</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>, <span style="color:#1E90FF;font-weight:700">clear screen</span>, <span style="color:#D400D4;font-weight:700">on button pressed</span>, <span style="color:#00A600;font-weight:700">repeat</span>, <span style="color:#DC143C;font-weight:700">set</span>, <span style="color:#DC143C;font-weight:700">change</span>, <span style="color:#00A4A6;font-weight:700">if … then</span>, <span style="color:#00A4A6;font-weight:700">0 = 0</span>, <span style="color:#00A4A6;font-weight:700">and</span>, <span style="color:#9C00C8;font-weight:700">0 + 0</span>.
 
 ---
 
 ## Pas cu pas
 
-### 1) Pinii plăcii
-Jos, pe placă, vezi **inele mari** de metal: **0, 1, 2, 3V** și **GND**.
-- **P0, P1, P2** sunt pini pe care programul **poate comanda**: îi face „pornit” (`1`) sau „oprit” (`0`).  
-- **GND** (se citește „ground”) = **pământ**, firul de întoarcere.  
-- **3V** dă un curent mic de 3 volți. **Azi nu îl folosim.**
+### 1) Jocul „Un minut” (fără calculator)
+Un copil numără cu voce tare „o mie unu, o mie doi, …” (o secundă fiecare), iar altul ține minte câte minute au trecut. După **60 de secunde** spune „minut nou!”, iar secundele revin la `0`.
 
-### 2) Reguli de siguranță
-1. Schimbi firele **numai cu placa scoasă din USB**.  
-2. **Niciodată** nu legi **3V** direct la **GND**.  
-3. LED-ul **nu se leagă fără rezistență** (330 Ω sau 220 Ω), altfel poate arde.  
-4. Mâinile uscate, masa fără apă.  
-5. Dacă ceva miroase a ars sau se încălzește: **scoți imediat cablul USB** și anunți profesorul.
+Ceasul are **două numere**: secundele (`0`–`59`) și minutele.
 
-### 3) LED-ul și rezistența
-Un LED are **două picioare diferite**:
-- **piciorul lung (+)** se leagă spre pin (spre **P0**);  
-- **piciorul scurt (−)** se leagă spre **GND**.
+**Încearcă tu — (5–8 min)**  
+- [ ] Ai numărat 60 de secunde cu un coleg  
+- [ ] Spui ce se întâmplă cu secundele după `59`  
 
-Rezistența protejează LED-ul. Se pune **în drum**, între pin și LED, într-o parte sau alta (nu contează în ce parte).
+### 2) Secundele: forever și pauza
+1. Proiect nou: `Prenume_Nume_MB2_L04`  
+2. Creezi variabilele `minut` și `secunde`  
+3. În <span style="color:#1E90FF;font-weight:700">on start</span>: <span style="color:#DC143C;font-weight:700">set</span> `minut` to `0` și <span style="color:#DC143C;font-weight:700">set</span> `secunde` to `0`  
+4. În <span style="color:#1E90FF;font-weight:700">forever</span>: <span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000` (o secundă), apoi <span style="color:#DC143C;font-weight:700">change</span> `secunde` by `1`  
 
-**Schema unui singur LED:**
-```text
-P0  ──[ rezistență 330 Ω ]──( + LED − )──  GND
-```
-Cu cabluri cu clești: clește de la **P0** la rezistență, rezistența la piciorul **lung** al LED-ului, iar piciorul **scurt** la **GND**.
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `minut` to `0`  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `secunde` to `0`  
 
-> Ceilalți pini (P1, P2) se leagă la fel, fiecare cu **rezistența lui**. Toate LED-urile au același **GND**.
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `secunde` by `1`
 
-Nu ai kit cu fire? Fă **varianta pe ecran** de la pasul 8. E aceeași logică.
+**Încearcă tu — (8–10 min)**  
+- [ ] Variabila `secunde` crește cu 1 în fiecare secundă (o verifici cu `show number`)  
 
-### 4) Primul program — Minim
-Proiect nou: `Prenume_Nume_MB2_L04`. Categoria **Advanced** → **Pins**.
+### 3) Minutele: secundele fac un minut
+Când `secunde` ajunge la `60`, trebuie să se întâmple două lucruri: `secunde` revine la `0` și `minut` crește cu `1`. Le punem într-un <span style="color:#00A4A6;font-weight:700">if</span> în <span style="color:#1E90FF;font-weight:700">forever</span>:
 
-```text
-on button A pressed
-    digital write pin P0 to 1
+<span style="color:#00A4A6;font-weight:700">if</span> `secunde = 60` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `secunde` to `0`  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `minut` by `1`
 
-on button B pressed
-    digital write pin P0 to 0
-```
-- `1` = pin pornit (LED aprins)  
-- `0` = pin oprit (LED stins)
+**Încearcă tu — (8–10 min)**  
+- [ ] După `59` secunde vezi că `minut` a crescut  
+- [ ] Ai grăbit ceasul: ai pus `10` în loc de `60` și ai văzut minutele sărind  
 
-Descarci pe placă. **A** aprinde LED-ul extern, **B** îl stinge. În simulator nu vezi LED-ul extern, deci testează pe placa adevărată.
+### 4) Afișarea: text cu join
+Vrem să vedem `3:07`, adică minutul, două puncte și secundele. Blocul <span style="color:#B8860B;font-weight:700">join</span> lipește valorile într-un **text**. Îl pui în <span style="color:#1E90FF;font-weight:700">show string</span>.
 
-Pentru confirmare pe ecran:
+La <span style="color:#D400D4;font-weight:700">on button A pressed</span>: <span style="color:#1E90FF;font-weight:700">show string</span> <span style="color:#B8860B;font-weight:700">join</span> `minut` `:` `secunde`. La <span style="color:#D400D4;font-weight:700">on button B pressed</span>: <span style="color:#DC143C;font-weight:700">change</span> `minut` by `1`, ca să **setezi** ora de pornire.
 
-```text
-on button A pressed
-    digital write pin P0 to 1
-    show icon [Yes]
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> <span style="color:#B8860B;font-weight:700">join</span> `minut` `:` `secunde`  
 
-on button B pressed
-    digital write pin P0 to 0
-    clear screen
-```
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `minut` by `1`
 
-**Gata când:**  
-- [ ] Blocurile sunt puse în ordinea din lecție  
-- [ ] Simulatorul face ce scrie în „Minim”  
+**Încearcă tu — (8–10 min)**  
+- [ ] A arată `0:12` sau altceva cu două puncte  
+- [ ] B mărește minutele și vezi schimbarea la A  
 
-### 5) Semaforul — ce culori și ce pini?
-Legăm trei LED-uri:
+### 5) Ceasul: Minim
+Reunești totul.
 
-| Pin | Culoare |
-|-----|---------|
-| `P0` | roșu |
-| `P1` | galben |
-| `P2` | verde |
+Programul tău (Minim):
 
-**Ordinea unui semafor:** roșu → verde → galben → roșu …
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `minut` to `0`  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `secunde` to `0`  
 
-### 6) Funcția `stinge` — Complet
-Înainte de fiecare culoare nouă trebuie să stingem toate LED-urile. În loc să scriem aceleași trei blocuri de multe ori, facem o **funcție**.
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `secunde` by `1`  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `secunde = 60` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `secunde` to `0`  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">change</span> `minut` by `1`  
 
-1. **Advanced** → **Functions** → **Make a Function…** → numele `stinge` → **Done**.  
-2. În ea pui:
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> <span style="color:#B8860B;font-weight:700">join</span> `minut` `:` `secunde`  
 
-```text
-function stinge
-    digital write pin P0 to 0
-    digital write pin P1 to 0
-    digital write pin P2 to 0
-```
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `minut` by `1`  
 
-**Gata când:**  
-- [ ] Blocurile pentru „Complet” sunt adăugate  
-- [ ] Simulatorul face tot ce scrie în „Complet”  
+**Observație:** ceasul nostru poate rămâne în urmă cu câteva secunde pe oră. Ceasurile adevărate folosesc un cristal de cuarț, mult mai exact decât un `pause`.
 
-### 7) Programul semaforului — Complet
+**Încearcă tu — (15–20 min)**  
+- [ ] Ceasul numără minutele și secundele singur  
+- [ ] A arată timpul, B setează minutele  
+- [ ] Programul e pe placa adevărată  
 
-```text
-forever
-    call stinge
-    digital write pin P0 to 1
-    pause (ms) 3000
-    call stinge
-    digital write pin P2 to 1
-    pause (ms) 3000
-    call stinge
-    digital write pin P1 to 1
-    pause (ms) 1000
-```
-- Roșu 3 secunde → verde 3 secunde → galben 1 secundă → roșu din nou …  
-- `call stinge` apelează funcția de fiecare dată.
+### 6) Complet: alarma cu remainder of
+La <span style="color:#D400D4;font-weight:700">on button A+B pressed</span> punem alarma **peste un minut**: `alarma` = `minut + 1`. Dar după minutul `59` vine `0`, nu `60`. Aici ne ajută <span style="color:#9C00C8;font-weight:700">remainder of</span>: `(minut + 1)` rămâne în intervalul `0`–`59`.
 
-**Ce vezi:** LED-urile se aprind pe rând, ca la un semafor. Doar unul e aprins în același timp.
+1. Creezi variabila `alarma`; în <span style="color:#1E90FF;font-weight:700">on start</span>: <span style="color:#DC143C;font-weight:700">set</span> `alarma` to `-1` (nimic setat)  
+2. La <span style="color:#D400D4;font-weight:700">on button A+B pressed</span>: <span style="color:#DC143C;font-weight:700">set</span> `alarma` to <span style="color:#9C00C8;font-weight:700">remainder of</span> (`minut` + `1`) by `60`, apoi o bifă `Yes`  
+3. În <span style="color:#1E90FF;font-weight:700">forever</span>, după numărătoare: <span style="color:#00A4A6;font-weight:700">if</span> `minut = alarma` <span style="color:#00A4A6;font-weight:700">and</span> `secunde = 0` → <span style="color:#00A600;font-weight:700">repeat</span> `3` times (față `Surprised`, pauză, <span style="color:#1E90FF;font-weight:700">clear screen</span>, pauză)  
 
-**Gata când:**  
-- [ ] Blocurile pentru „Complet” sunt adăugate  
-- [ ] Simulatorul face tot ce scrie în „Complet”  
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `alarma` to `-1`  
+&emsp;*(restul, ca în Minim)*  
 
-### 8) Varianta pe ecran (fără fire)
-Rândurile ecranului sunt semaforul: **rândul de sus** = roșu, **mijloc** = galben, **jos** = verde.
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;*(numărătoarea, ca în Minim)*  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `minut = alarma and secunde = 0` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#00A600;font-weight:700">repeat</span> `3` times  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Surprised`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `300`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `300`  
 
-```text
-forever
-    show leds   (doar rândul de sus aprins - roșu)
-    pause (ms) 3000
-    show leds   (doar rândul de jos aprins - verde)
-    pause (ms) 3000
-    show leds   (doar rândul din mijloc aprins - galben)
-    pause (ms) 1000
-```
-**Ce vezi pe ecran la roșu:**
-```text
-# # # # #
-. . . . .
-. . . . .
-. . . . .
-. . . . .
-```
+<span style="color:#D400D4;font-weight:700">on button A+B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `alarma` to <span style="color:#9C00C8;font-weight:700">remainder of</span> (`minut` + `1`) by `60`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Yes`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>
+
+**Încearcă tu — (15–20 min)**  
+- [ ] La A+B apare bifa (alarma e pusă)  
+- [ ] După un minut placa pâlpâie de 3 ori  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
 
 ---
 
 ## Greșeli frecvente
-1. **„LED-ul nu se aprinde”** — e legat invers. Întoarce-l: piciorul lung spre pin.  
-2. **„Nu se aprinde nimic”** — nu ai legat și **GND**. Circuitul trebuie să fie **închis**.  
-3. **„Se aprinde slab”** — rezistență prea mare sau contact slab la cleștele-crocodil.  
-4. **„Două culori sunt aprinse deodată”** — ai uitat `call stinge`.  
-5. **„Funcția nu face nimic”** — ai făcut-o, dar nu ai pus `call stinge` în program.  
-6. **„Placa se încălzește”** — scoate USB-ul și cere ajutorul profesorului.
+1. **Secundele nu se opresc la `59`** — `if secunde = 60` lipsește sau nu are `set secunde to 0`.  
+2. **Minutele nu cresc** — `change minut` e în afara lui `if`.  
+3. **`join` arată un singur număr** — ai uitat să adaugi cu **+** cele trei valori (`minut`, `:`, `secunde`).  
+4. **Alarma nu sună** — `and` nu are ambele condiții (`minut = alarma` și `secunde = 0`).  
+5. **Alarma sună imediat** — `alarma` nu e `-1` la început, ci `0`, iar ceasul pornește de la `0:0`.  
+6. **Ceasul merge prea repede sau prea încet** — `pause (ms)` nu e `1000` (o secundă).  
 
 ---
 
-## De făcut azi — „Semaforul de pe masă”
+## De făcut azi — „Ceasul deșteptător”
+Salvat: `Prenume_Nume_MB2_L04`
 
-### Minim vs Complet
+### Minim vs Complet *(citește înainte să începi)*
 
 | | Ce trebuie |
 |--|------------|
-| **Minim** | LED pe **P0**: A aprinde, B stinge (pe placa adevărată) |
-| **Complet** | Minim + 3 LED-uri · funcția `stinge` · ciclul roșu → verde → galben |
+| **Minim („am reușit”)** | **Pasul 1** — ceasul numără minutele și secundele, A le arată, B setează minutele, cu **cel puțin 8 blocuri diferite**, pe placă |
+| **Complet (ținta orei)** | Minim + **Pasul 2** — A+B pune alarma peste un minut și placa pâlpâie, cu cel puțin **6 blocuri diferite** |
 
-### Pasul 1 — Minim
-- [ ] LED + rezistență legate corect (verificate de profesor)  
-- [ ] `digital write pin P0 to 1` la A și `0` la B  
-- [ ] LED-ul reacționează  
+Dacă rămâi în urmă: **oprește-te la Minim** și salvează. Nu e eșec, e baza pentru lecția următoare.
 
-**→ Minim când:** apeși A și LED-ul extern se aprinde.
+### Pasul 1 — Ceasul *(Minim)*
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `minut` to `0`  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `secunde` to `0`  
 
-### Pasul 2 — Complet
-- [ ] LED-uri pe `P0`, `P1`, `P2`  
-- [ ] Funcția `stinge` creată și apelată  
-- [ ] Ciclul complet merge, cu timpii 3 s, 3 s, 1 s  
-- [ ] Numele fișierului e `MB2_L04`  
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `secunde` by `1`  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `secunde = 60` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `secunde` to `0`  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">change</span> `minut` by `1`  
+
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> <span style="color:#B8860B;font-weight:700">join</span> `minut` `:` `secunde`  
+
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `minut` by `1`
+
+- [ ] Proiect nou cu numele `Prenume_Nume_MB2_L04`  
+- [ ] Variabilele `minut` și `secunde` create  
+- [ ] Ai cel puțin **8 blocuri diferite**: <span style="color:#1E90FF;font-weight:700">on start</span>, <span style="color:#DC143C;font-weight:700">set</span>, <span style="color:#1E90FF;font-weight:700">forever</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>, <span style="color:#DC143C;font-weight:700">change</span>, <span style="color:#00A4A6;font-weight:700">if … then</span>, <span style="color:#00A4A6;font-weight:700">0 = 0</span>, <span style="color:#D400D4;font-weight:700">on button pressed</span>, <span style="color:#1E90FF;font-weight:700">show string</span>, <span style="color:#B8860B;font-weight:700">join</span>  
+- [ ] Programul e trimis pe placă  
+
+**→ Ai Minim când:** un coleg setează minutul cu B, apasă A și vede `minut:secunde` care crește.
+
+### Pasul 2 — Alarma *(Complet)*
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `alarma` to `-1`  
+&emsp;*(restul, ca în Minim)*  
+
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;*(numărătoarea, ca în Minim)*  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `minut = alarma and secunde = 0` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#00A600;font-weight:700">repeat</span> `3` times  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Surprised`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `300`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `300`  
+
+<span style="color:#D400D4;font-weight:700">on button A+B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `alarma` to <span style="color:#9C00C8;font-weight:700">remainder of</span> (`minut` + `1`) by `60`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Yes`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>
+
+- [ ] Variabila `alarma` pusă la `-1` în `on start`  
+- [ ] A+B: <span style="color:#DC143C;font-weight:700">set</span> `alarma` cu <span style="color:#9C00C8;font-weight:700">remainder of</span>  
+- [ ] `if minut = alarma and secunde = 0` → <span style="color:#00A600;font-weight:700">repeat</span> `3` times cu `Surprised`  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
+- [ ] Salvat din nou: `Prenume_Nume_MB2_L04`  
+
+**Gata Complet când:** la A+B apare bifa, iar după un minut placa pâlpâie de 3 ori.
 
 ---
 
-## Bonus (după Complet)
-- [ ] Adaugă pe ecran o față `Happy` când LED-ul verde e aprins și `Sad` când e roșu  
-- [ ] Controlează **luminozitatea** cu `analog write pin P0 to 100` (valori de la `0` la `1023`)  
-- [ ] Fă un **semafor care clipește galben** noaptea (galben aprins 500 ms, stins 500 ms)  
-- [ ] Desenează un semafor pentru **bicicliști** cu 4 faze
+## Bonus ★★★ — Provocare: Amânare
+*Doar dacă ai terminat Complet.*
+
+- [ ] Schimbă fața de la alarmă și numărul de pâlpâiri  
+- [ ] **Provocarea:** adaugi **amânare**: dacă apeși B în timp ce alarma pâlpâie, alarma se mută cu `1` minut mai târziu (<span style="color:#DC143C;font-weight:700">change</span> `alarma` cu <span style="color:#9C00C8;font-weight:700">remainder of</span>). Alarma trebuie să sune **din nou după un minut** (cu o eroare de cel mult `5` secunde, măsurate cu cronometrul clasei).  
 
 ## Recapitulare rapidă
-1. **Pini** = punctele prin care placa comandă lucruri din afară.  
-2. `digital write pin P0 to 1` = pornit, `0` = oprit.  
-3. LED-ul se leagă **cu rezistență**: lung spre pin, scurt spre GND.  
-4. **Funcția** adună blocuri folosite de mai multe ori.  
-5. Reguli de siguranță: fire schimbate fără USB, niciodată 3V la GND.
+1. Un ceas e făcut din **două numere**: secunde și minute  
+2. `pause (ms) 1000` + `change` numără secundele  
+3. `if secunde = 60` face trecerea la minutul următor  
+4. <span style="color:#B8860B;font-weight:700">join</span> lipește numere și litere într-un text; <span style="color:#9C00C8;font-weight:700">remainder of</span> ține un număr între `0` și `59`  
+5. <span style="color:#00A4A6;font-weight:700">and</span> cere ambele condiții, ca alarma să sune o singură dată  
+6. Minim = Pasul 1 · Complet = Pasul 1 + 2  
 
 ## Schema pe scurt *(pe foaie)*
+<span style="color:#1E90FF;font-weight:700">forever</span>: pauză `1000` → `secunde + 1` → `if secunde = 60` → `secunde = 0`, `minut + 1`
 
-P0 / P1 / P2 → rezistență → LED → GND · program: `call stinge` → aprinde o culoare → pauză → repetă
+A → <span style="color:#B8860B;font-weight:700">join</span> `minut` `:` `secunde` · B → `minut + 1`
 
-**Quiz scurt:**  
-- Care picior al LED-ului se leagă spre pin?  
-- De ce avem nevoie de rezistență?  
-- Ce face `digital write pin P2 to 1`?  
-- De ce folosim o funcție pentru `stinge`?
+A+B → `alarma = (minut + 1) rest 60` · `minut = alarma și secunde = 0` → pâlpâie
 
-## Temă
-Desenează schema unui **semafor pentru intrarea în parcare** (roșu / verde) și scrie ce blocuri ai folosi. Nu legăm nimic acasă fără un adult.
+**Quiz scurt (cu profesorul):**  
+- Câte secunde are un minut și ce se întâmplă cu `secunde` la `60`?  
+- De ce folosim `pause (ms) 1000`?  
+- Ce face blocul `join`?  
+- De ce `(59 + 1) rest 60` dă `0`?  
+- De ce alarma cere și `secunde = 0`?  
+
+## Temă (opțional)
+- Dacă ai doar Minim: acasă, adaugi alarma (Pasul 2), în același `Prenume_Nume_MB2_L04`.  
+- Dacă ai Complet: pui alarma peste 2 minute și măsori cu ceasul de la telefon cât de mult s-a abătut ceasul tău.  
+- Dacă ai terminat și Bonusul: faci o copie și schimbi pâlpâirea cu un desen de al tău.  
+
+## Ce urmează
+În **Lecția 5** pui placa **paznic** la rucsac: o alarmă cu stări.

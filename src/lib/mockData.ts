@@ -6,7 +6,7 @@ export const cursuri = [
   { id: 'c5', nume: 'HTML CSS JavaScript', descriere: 'Site-uri de la zero: HTML, CSS și JavaScript', culoare: '#10B981' },
   { id: 'c6', nume: 'Robotică Lego WeDo 2.0', descriere: 'Robotică cu LEGO WeDo 2.0 — construcție + programare vizuală (2 module)', culoare: '#DC2626' },
   { id: 'c7', nume: 'Scratch', descriere: 'Programare vizuală cu Scratch — jocuri și povești', culoare: '#F97316' },
-  { id: 'c8', nume: 'micro:bit', descriere: 'BBC micro:bit — programare cu blocuri MakeCode: LED, butoane, senzori, radio (2 module)', culoare: '#00A86B' },
+  { id: 'c8', nume: 'micro:bit', descriere: 'BBC micro:bit — programare cu blocuri MakeCode: LED, butoane, senzori, busolă, liste și funcții (2 module)', culoare: '#00A86B' },
   { id: 'c9', nume: 'Tinkercad 3D', descriere: 'Design 3D simplu cu Tinkercad — forme, print și creativitate', culoare: '#0EA5E9' },
   { id: 'c10', nume: 'micro:bit Python', descriere: 'Python pe micro:bit — senzori, LED și proiecte pe placă', culoare: '#8B5CF6' },
   { id: 'c11', nume: 'Unity', descriere: 'Jocuri 3D cu Unity — scene, scripturi și proiecte interactive', culoare: '#64748B' },
@@ -61,7 +61,7 @@ export const cursBlurbLanding: Record<string, string> = {
   c5: 'De la pagină goală la site interactiv: HTML, CSS și JavaScript.',
   c6: 'Construim roboți interactivi cu motoare și senzori, apoi le dăm viață prin programare vizuală.',
   c7: 'Blocuri colorate, personaje animate și primele jocuri create de la zero.',
-  c8: 'Matrice LED, senzori și radio: învățăm mai întâi cu blocuri vizuale, apoi trecem la Python pe placa fizică.',
+  c8: 'Matrice LED, senzori și proiecte pe o singură placă: învățăm mai întâi cu blocuri vizuale, apoi trecem la Python pe placa fizică.',
   c9: 'Dezvoltăm gândirea spațială: învățăm să construim, să combinăm forme 3D și să proiectăm propriile modele pe calculator.',
   c10: 'Scriem Python direct pe micro:bit: LED, senzori și proiecte pe placa fizică.',
   c11: 'Jocuri și lumi 3D: învățăm crearea scenelor, fizica obiectelor și logica de joc în Unity (C#).',
@@ -167,7 +167,7 @@ export const module = [
   },
   // micro:bit — c8: 2 module blocuri (8+) · c10: 2 module Python (10+)
   { id: 'm21', curs_id: 'c8', nume: 'Modul 1 — MakeCode (blocuri)', ordine: 1, badge: 'micro:bit Starter', descriere: '10 lecții cu un mic proiect în fiecare: trimiți programe pe placă, desenezi pe LED-uri, folosești butoanele, variabilele, deciziile, buclele și senzorii. La final: o insignă inteligentă care adună proiectele din lecțiile trecute.' },
-  { id: 'm22', curs_id: 'c8', nume: 'Modul 2 — Proiecte (blocuri + radio)', ordine: 2, badge: 'micro:bit Maker', descriere: '10 lecții cu proiecte mai mari: plăcile vorbesc între ele prin radio, comanzi LED-uri externe, faci alarme și stații meteo și înveți să depanezi programe stricate. La final: o expoziție Maker cu cele mai bune proiecte ale tale.' },
+  { id: 'm22', curs_id: 'c8', nume: 'Modul 2 — Proiecte Maker (blocuri)', ordine: 2, badge: 'micro:bit Maker', descriere: '10 lecții cu proiecte mai mari, pe o singură placă: busolă, pedometru, ceas deșteptător, alarmă, jurnal de măsurători, theremin și un șarpe pe 25 de LED-uri. Înveți liste, funcții și depanare. La final: o expoziție Maker cu proiectele tale.' },
   { id: 'm23', curs_id: 'c10', nume: 'Modul 1 — Python pe micro:bit', ordine: 1, badge: 'micro:bit Coder' },
   { id: 'm41', curs_id: 'c10', nume: 'Modul 2 — Proiecte Python', ordine: 2, badge: 'micro:bit Python Pro' },
   // Roblox Studio — 4 module × 10 lecții (12+ ani; Obby pe verticală)
@@ -642,14 +642,14 @@ export const lectii = [
   // micro:bit Modul 2 — proiecte blocuri
   ...genLectii('m22', [
     'Panoul de comandă',
-    'Poșta radio',
-    'Vânătoarea de comori: cald–rece',
-    'Semaforul de pe masă',
+    'Busola de buzunar',
+    'Pedometrul',
+    'Ceasul deșteptător',
     'Paznicul rucsacului',
     'Jurnalul de măsurători',
-    'Stația meteo la distanță',
+    'Theremin cu lumină',
     'Doctorul de cod',
-    'Cheia și seiful radio',
+    'Șarpele de un pixel',
     'Expoziția Maker + badge micro:bit Maker',
   ]),
   // micro:bit Modul 3 — Python

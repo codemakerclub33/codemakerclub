@@ -1,33 +1,37 @@
-Lecția patru. Semaforul de pe masă.
+Lecția patru. Ceasul deșteptător.
 
-Până acum luminile erau pe placă. Astăzi legi LED-uri din afara plăcii, la pini, și faci un semafor adevărat. Proiectul se numește Semaforul de pe masă. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B doi, linie jos, L zero patru.
+Astăzi înveți să numeri timpul și faci Ceasul deșteptător: placa arată minutele și secundele, iar când ajunge la ora alarmei, te trezește. Fișierul se numește Prenume, linie jos, Nume, linie jos, M B doi, linie jos, L zero patru.
 
-Obiectivul. La final știi ce sunt pinii, legi un LED extern în siguranță și îl comanzi din program. Minim: un LED extern pe P zero, A îl aprinde, B îl stinge. Complet: minim, plus un semafor cu trei LED-uri, roșu, galben și verde, care se schimbă singur, folosind o funcție.
+Obiectivul. La finalul orei numeri secundele cu Pause o mie, lipești numere într-un text cu Join și folosești Remainder of ca să treci de la minutul cincizeci și nouă la zero. Minim: placa numără secundele și minutele, A le arată ca minut, două puncte, secunde, B setează minutele, cu cel puțin opt blocuri diferite. Complet: partea a doua, în care la A și B împreună pui alarma peste un minut, iar când vine ora, placa pâlpâie, cu cel puțin șase blocuri diferite.
 
-De ce contează. Semafoarele, becurile inteligente și jucăriile cu lumini au ceva în comun: un calculator mic aprinde și stinge LED-uri prin fire. Pinii sunt mâinile plăcii. Prin ei, micro:bit poate comanda lucruri din lumea reală, nu doar ecranul lui.
+De ce contează. Un ceas deșteptător nu face nimic spectaculos: numără secunde și compară timpul cu ora alarmei. Dar fără el nu ne-am trezi la timp. Azi vezi cum numărătoarea și compararea fac un aparat util.
 
-Primul pas. Pinii plăcii. Jos, pe placă, vezi inele mari de metal: zero, unu, doi, trei volți și GND. P zero, P unu și P doi sunt pini pe care programul îi poate comanda: îi face pornit, adică unu, sau oprit, adică zero.
+Ce face fiecare bloc de azi. Join lipește două sau mai multe valori într-un singur text. Minutul, două puncte și secundele devin, de exemplu, trei, două puncte, zero șapte. Remainder of dă restul unei împărțiri și îl folosim ca să sărim de la cincizeci și nouă la zero. Din lecțiile trecute știi deja On start, Forever, Show string, Show icon, Pause, Clear screen, On button pressed, Repeat, Set, Change, If then, blocul egal, And și blocul de adunare.
 
-Al doilea pas. Reguli de siguranță. Schimbi firele numai cu placa scoasă din USB. Niciodată nu legi trei volți direct la GND. Dacă ceva se încălzește, scoți USB-ul și chemi profesorul.
+Primul pas. Jocul Un minut, fără calculator. Un copil numără cu voce tare, o mie unu, o mie doi, o secundă fiecare, iar altul ține minte câte minute au trecut. După șaizeci de secunde spune minut nou, iar secundele revin la zero. Ceasul are două numere: secundele și minutele.
 
-Al treilea pas. LED-ul și rezistența. Un LED are două picioare diferite. Piciorul lung, plus, se leagă spre pin, spre P zero. Piciorul scurt se leagă spre GND. Între ele pui o rezistență, care protejează LED-ul de prea mult curent. Folosim cleme crocodil.
+Al doilea pas. Secundele, Forever și pauza. Proiect nou. Creezi variabilele minut și secunde. În On start, Set minut la zero și Set secunde la zero. În Forever, Pause o mie, adică o secundă, apoi Change secunde cu unu.
 
-Al patrulea pas, pentru Minim. Proiect nou. Din Advanced, la Pins, folosești Digital write pin P zero to unu în A, și to zero în B.
+Al treilea pas. Minutele, secundele fac un minut. Când secunde ajunge la șaizeci, trebuie să se întâmple două lucruri: secunde revine la zero și minut crește cu unu. Le punem într-un If în Forever.
 
-Al cincilea pas. Semaforul. Legăm trei LED-uri: roșu pe P zero, galben pe P unu, verde pe P doi, toate cu GND comun.
+Al patrulea pas. Afișarea, text cu Join. Vrem să vedem minutul, două puncte și secundele. Blocul Join lipește valorile într-un text. Îl pui în Show string. La butonul A, Show string cu Join minut, două puncte, secunde. La butonul B, Change minut cu unu, ca să setezi ora de pornire.
 
-Al șaselea pas, pentru Complet. Înainte de fiecare culoare nouă trebuie să stingem toate LED-urile. În loc să scriem aceleași trei blocuri de multe ori, facem o funcție. Din Advanced, Functions, Make a Function, cu numele stinge. Înăuntru pui cele trei Digital write pe zero.
+Al cincilea pas. Ceasul, pentru Minim. Reunești totul. Observație: ceasul nostru poate rămâne în urmă cu câteva secunde pe oră. Ceasurile adevărate folosesc un cristal de cuarț, mult mai exact decât o pauză.
 
-Al șaptelea pas. Programul semaforului, în Forever: Call stinge, roșu aprins, pauză. Call stinge, verde aprins, pauză. Call stinge, galben aprins, pauză scurtă. Și de la capăt.
+Al șaselea pas. Complet. Alarma cu Remainder of. La A și B împreună punem alarma peste un minut: alarma este minut plus unu. Dar după minutul cincizeci și nouă vine zero, nu șaizeci. Aici ne ajută Remainder of: minut plus unu rămâne în intervalul de la zero la cincizeci și nouă. Creezi variabila alarma, iar în On start, Set alarma la minus unu. La A și B, Set alarma la Remainder of minut plus unu, la șaizeci, apoi o bifă. În Forever, după numărătoare, un If: minut egal cu alarma și secunde egal cu zero, atunci Repeat de trei ori fața surprinsă, pauză, Clear screen, pauză.
 
-Al optulea pas. Varianta pe ecran, fără fire. Rândurile ecranului sunt semaforul: rândul de sus este roșu, mijlocul galben, jos verde.
+Greșeli frecvente. Secundele nu se opresc la cincizeci și nouă: If secunde egal cu șaizeci lipsește sau nu are Set secunde la zero. Minutele nu cresc: Change minut este în afara lui If. Join arată un singur număr: ai uitat să adaugi cu plus cele trei valori. Alarma nu sună: And nu are ambele condiții. Alarma sună imediat: alarma nu este minus unu la început. Ceasul merge prea repede sau prea încet: Pause nu este o mie.
 
-Greșeli frecvente. LED-ul nu se aprinde: este legat invers, piciorul lung spre pin. Nu se aprinde nimic: nu ai legat GND, circuitul trebuie să fie închis. Se aprinde slab: contact slab la cleștele crocodil. Două culori sunt aprinse deodată: ai uitat Call stinge. Funcția nu face nimic: nu ai pus Call stinge în program. Placa se încălzește: scoate USB-ul și cere ajutor.
+Proiectul de azi. Ceasul deșteptător.
 
-Proiectul de azi. Semaforul de pe masă.
+Minim înseamnă: ceasul numără minutele și secundele, A le arată, B setează minutele, cu cel puțin opt blocuri diferite, pe placă. Complet înseamnă: minim, plus A și B care pune alarma peste un minut și placa pâlpâie, cu cel puțin șase blocuri diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg setează minutul cu B, apasă A și vede minutul și secundele care cresc.
 
-Minim înseamnă: un LED extern, A aprinde, B stinge. Complet înseamnă: minim, plus semaforul cu trei LED-uri și funcția stinge. Dacă rămâi în urmă, salvează la Minim.
+Bonus. Schimbi fața de la alarmă și numărul de pâlpâiri. Provocarea, Amânare: adaugi amânare. Dacă apeși B în timp ce alarma pâlpâie, alarma se mută cu un minut mai târziu. Alarma trebuie să sune din nou după un minut, cu o eroare de cel mult cinci secunde, măsurate cu cronometrul clasei.
 
-Recapitulare. Pinii sunt punctele prin care placa comandă lucruri din afară. Digital write unu înseamnă pornit, zero înseamnă oprit. LED-ul se leagă cu rezistență: lung spre pin, scurt spre GND. Funcția adună blocuri folosite de mai multe ori. Reguli de siguranță: fire schimbate fără USB, niciodată trei volți la GND.
+Recapitulare. Un ceas este făcut din două numere: secunde și minute. Pause o mie și Change numără secundele. If secunde egal cu șaizeci face trecerea la minutul următor. Join lipește numere și litere într-un text. Remainder of ține un număr între zero și cincizeci și nouă. And cere ambele condiții, ca alarma să sune o singură dată.
 
-Succes la semafor.
+Tema, opțional. Dacă ai doar Minim, adaugi acasă alarma. Dacă ai Complet, pui alarma peste două minute și măsori cu ceasul de la telefon cât de mult s-a abătut ceasul tău.
+
+Ce urmează. În lecția cinci pui placa paznic la rucsac, o alarmă cu stări.
+
+Succes la ceasul tău.

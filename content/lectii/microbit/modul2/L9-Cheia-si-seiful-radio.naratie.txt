@@ -1,29 +1,37 @@
-Lecția nouă. Cheia și seiful radio.
+Lecția nouă. Șarpele de un pixel.
 
-Este proiectul final al Modulului doi! Facem un seif care se deschide doar dacă primește prin radio codul corect de la o cheie. Seiful îi și răspunde cheii: deschis, refuzat sau blocat. Numele fișierelor sunt: Prenume, linie jos, Nume, linie jos, M B doi, linie jos, L zero nouă, linie jos, cheie, și același nume, cu seif la sfârșit.
+Astăzi faci primul tău joc complet: Șarpele de un pixel. Un punct aleargă singur pe ecran, îl întorci cu A și B și prinzi mâncarea care apare la întâmplare. Fișierul se numește Prenume, linie jos, Nume, linie jos, M B doi, linie jos, L zero nouă.
 
-Obiectivul. La final ai un sistem complet, cu două plăci care vorbesc în ambele sensuri și care se apără de ghicitul codului. Minim: cheia trimite un cod de două cifre, iar seiful arată bifa dacă este corect și crucea dacă nu. Complet: minim, plus seiful răspunde cheii, iar după trei încercări greșite se blochează pentru câteva secunde.
+Obiectivul. La finalul orei folosești Remainder of ca să înfășori ecranul, adică ieși pe o parte și intri pe cealaltă, o variabilă dir pentru direcție și o funcție ca să nu repeți codul. Minim: punctul se mișcă singur, A și B îl întorc, iar când prinde mâncarea scorul crește și mâncarea apare în alt loc, cu cel puțin opt blocuri diferite. Complet: partea a doua, cu funcția mancare, viteza care crește la fiecare mâncare, și Bravo la cinci puncte, cu cel puțin șase blocuri diferite.
 
-De ce contează. Cheia mașinii tale nu doar deschide: ea trimite un cod, iar mașina verifică și răspunde. Dacă cineva ar încerca toate codurile la nesfârșit, sistemul s-ar bloca. Azi construiești aceeași idee, într-o formă simplă.
+De ce contează. Un joc este făcut din câteva idei simple, puse la un loc: ceva se mișcă, tu controlezi, există un scop și un scor. Șarpele este unul dintre cele mai vechi jocuri, de pe primele telefoane. Azi faci varianta mică: un singur punct, dar cu toate ideile unui joc.
 
-Primul pas. Fișa proiectului. Înainte de blocuri, completezi pe foaie: ce face cheia, ce face seiful, ce mesaje trimit, ce stări are seiful.
+Ce face fiecare bloc de azi. Azi nu avem blocuri noi. Remainder of înfășoară numerele: x plus unu rămâne între zero și patru, după patru urmează zero. Variabila dir ține direcția: zero este dreapta, unu este jos, doi este stânga, trei este sus. Restul blocurilor le știi din lecțiile trecute.
 
-Al doilea pas. Codul de două cifre. Folosim două variabile, zeci și unitati. Codul trimis este zeci înmulțit cu zece, plus unitati. De exemplu, zeci patru și unitati șapte dau codul patruzeci și șapte.
+Primul pas. Jocul Șarpele uman, fără calculator. Un copil este șarpele și merge înainte. Ceilalți spun doar stânga sau dreapta, iar el se întoarce față de direcția lui, nu față de clasă. Cineva aruncă mâncarea: un obiect pe jos pe care șarpele trebuie să-l atingă. Și în joc, A și B sunt tot stânga și dreapta, față de direcția șarpelui.
 
-Al treilea pas, pentru Minim. Programul cheii. Cu A schimbi zecile, cu B schimbi unitățile, iar cu A și B trimiți codul prin Radio send number.
+Al doilea pas. Direcția, variabila dir. Direcția o ținem într-o variabilă dir. Zero este dreapta, unu este jos, doi este stânga, trei este sus. B, dreapta, crește dir cu unu, dar după trei urmează zero. Aici ne ajută Remainder of: dir plus unu rămâne între zero și trei. A, stânga, scade cu unu, adică adaugă trei, cu Remainder of la patru.
 
-Al patrulea pas, pentru Minim. Programul seifului. Variabila secret ține codul corect. În On radio received: dacă numărul primit este egal cu secret, arăți bifa, altfel arăți crucea, apoi revii la seiful închis.
+Al treilea pas. Mișcarea, x, y și înfășurarea. Punctul are poziția x și y, de la zero la patru. La fiecare pas: Unplot, stingi punctul vechi. Schimbi x sau y după dir: dreapta x plus unu, jos y plus unu, stânga x minus unu, sus y minus unu. Apoi Plot, aprinzi punctul nou. Dacă x ajunge la patru și mai face un pas, nu vrem cinci, ci zero: ieși pe o parte, intri pe cealaltă. Cu Remainder of x plus unu la cinci se întâmplă exact asta. Pentru minus unu folosim plus patru, ca la direcții.
 
-Al cincilea pas, pentru Complet. Seiful răspunde cheii și se blochează după trei greșeli. Mesajele de la seif la cheie sunt: unu înseamnă deschis, doi înseamnă refuzat, trei înseamnă blocat. Variabila greseli crește la fiecare cod greșit. La trei, seiful se blochează câteva secunde și trimite trei.
+Al patrulea pas. Mâncarea și scorul. Mâncarea este un LED aprins în alt loc, la poziția fx, fy, alese cu Pick random de la zero la patru. Când punctul ajunge pe mâncare, adică x egal cu fx și y egal cu fy, Change scor cu unu și alegi altă poziție pentru mâncare și o aprinzi.
 
-Al șaselea pas. Spărgătorul de coduri. Doi colegi lucrează împreună: unul are seiful și știe codul, celălalt are doar cheia și încearcă să ghicească. Câte încercări are? Trei. Apoi seiful se blochează. Gândește-te: câte coduri posibile sunt, de la zero zero la nouăzeci și nouă? Cât ar dura să le încerci pe toate fără blocare? De ce este importantă blocarea?
+Al cincilea pas. Șarpele, pentru Minim. Reunești totul. Creezi variabilele x, y, dir, viteza, scor, fx și fy. În Forever, primul bloc este Pause viteza: controlează cât de repede se mișcă punctul. O dată din douăzeci și cinci, mâncarea apare chiar unde este punctul și dispare când punctul pleacă. Este o limită a jocului nostru mic.
 
-Greșeli frecvente. Seiful nu primește nimic: grupuri diferite. Cheia trimite alt cod: formula zeci înmulțit cu zece plus unitati este scrisă greșit, verifică parantezele. Seiful se deschide cu orice cod: comparația este cu numărul primit, nu cu secret. Nu se blochează: greseli nu crește sau nu este comparat cu trei. Ecranul seifului se încurcă: ai desenat în On radio received, desenul trebuie să rămână în Forever. Cheia nu primește răspuns: seiful nu trimite unu, doi sau trei.
+Al șaselea pas. Complet. Funcția, viteza și câștigul. Blocurile pentru mâncare sunt scrise de două ori, la pornire și când o prinzi. Le punem într-o funcție numită mancare, ca în Doctorul de cod. Apoi: la fiecare mâncare, jocul se grăbește, Change viteza cu minus cincizeci, dar nu sub o sută cincizeci. La cinci puncte câștigi: Bravo, scorul revine la zero și viteza la patru sute. La A și B împreună arăți scorul.
 
-Proiectul de azi. Cheia și seiful radio.
+Greșeli frecvente. Punctul nu se mișcă: Forever nu are Pause, sau Unplot și Plot sunt în alt loc. Punctul iese din ecran sau dă eroare: lipsește Remainder of la x sau y. A și B întorc greșit: verifică plus trei pentru A și plus unu pentru B, cu Remainder of la patru. Punctul lasă urme: lipsește Unplot la începutul fiecărui pas. Mâncarea nu se schimbă: Set fx și Set fy lipsesc din If. Jocul este prea rapid: viteza este prea mică, începe cu patru sute.
 
-Minim înseamnă: cheia trimite codul, seiful verifică. Complet înseamnă: minim, plus răspunsul și blocarea. Dacă rămâi în urmă, salvează la Minim.
+Proiectul de azi. Șarpele de un pixel.
 
-Recapitulare. Un sistem are roluri: cheie și seif. Radio poate trimite în ambele sensuri. Seiful ține minte o stare: închis, deschis, blocat. Blocarea după greșeli apără de ghicit. Un proiect mare se planifică mai întâi pe foaie.
+Minim înseamnă: punctul se mișcă singur, A și B îl întorc, iar când prinde mâncarea scorul crește, cu cel puțin opt blocuri diferite, pe placă. Complet înseamnă: minim, plus funcția mancare, viteza care crește și Bravo la cinci puncte, cu cel puțin șase blocuri diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg joacă treizeci de secunde: întoarce punctul cu A și B, iese pe cealaltă parte și prinde mâncarea cel puțin o dată.
 
-Succes la proiectul final.
+Bonus. Schimbi viteza de start și pragul de câștig. Provocarea, Șarpele cu zid: adaugi un zid, un LED fix la trei, trei. Dacă punctul îl atinge, jocul se termină: Game over, scorul final și restart. Un coleg trebuie să ajungă la cinci puncte în cel mult șaizeci de secunde, fără să atingă zidul.
+
+Recapitulare. Un joc: ceva se mișcă, tu controlezi, există scop și scor. Remainder of înfășoară ecranul, după patru vine zero, și direcția, după trei vine zero. Pentru minus unu într-un ciclu folosești plus n minus unu. Mâncarea la întâmplare: Pick random de la zero la patru pentru fx și fy. O funcție, mancare, evită codul repetat.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă funcția mancare și câștigul. Dacă ai Complet, te gândești la un alt joc cu un singur pixel, de exemplu fugi de un punct, și îl desenezi pe foaie, cu ce controlează A și B.
+
+Ce urmează. În lecția zece alegi cel mai bun proiect al tău și îl prezinți: Expoziția Maker.
+
+Succes la șarpele tău.

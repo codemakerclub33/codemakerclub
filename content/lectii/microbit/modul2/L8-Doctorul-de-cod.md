@@ -1,19 +1,22 @@
 # Lecția 8 — Doctorul de cod
-**Modulul 2 · Proiecte Maker (blocuri + radio)**  
+### Depanare și funcții cu parametri
+**Modulul 2 · Proiecte Maker cu micro:bit (blocuri)**  
 **Code Maker Club · micro:bit Maker**
 
-> Orice programator greșește, dar un **programator bun** știe să **caute greșeala** și s-o repare. Azi ești **doctor de cod**: primești programe bolnave, găsești ce nu e în regulă și le vindeci.  
-> Proiect: **„Cabinetul doctorului de cod”** · `Prenume_Nume_MB2_L08`
+> Azi nu scrii programe de la zero, ci **repari** programe stricate și faci **„Doctorul de cod”**:  
+> primești 4 „pacienți” (programe care nu merg), găsești greșeala și o repari; la final faci un cod mai curat cu o funcție.  
+> Fișier: `Prenume_Nume_MB2_L08` (ex. `Ana_Pop_MB2_L08`)
 
 ---
 
 ## Obiectiv
-La finalul orei folosești o **metodă** ca să găsești greșelile din program și știi să faci un cod mai curat și mai scurt.  
-**Minim:** repari **3 din 5** programe bolnave și scrii raportul pentru fiecare.  
-**Complet:** repari **toate 5**, **curăți** un program (bucla `repeat` sau funcție) și faci un raport complet.
+La finalul orei folosești o **metodă de depanare** în 5 pași și faci o **funcție cu parametru** ca să nu repeți aceleași blocuri.  
+**Minim:** repari **2 programe stricate** (Scutul de energie și Farul), fiecare cu cel puțin **8 blocuri diferite**, și lista ta de verificare e completată.  
+**Ținta orei (Complet):** partea a doua: repari **încă 2 programe** (Pedometrul și Ceasul) și faci o **funcție cu parametru** care înlocuiește trei grupuri de blocuri repetate, cu cel puțin **6 blocuri diferite**.
 
 ## De ce contează
-Programatorii își petrec **mai mult timp căutând greșeli** decât scriind cod nou. Se numește **depanare** (în engleză, „debugging”: bug = gândac, pentru că primul „bug” a fost un gândac găsit într-un calculator). Cine știe să depaneze poate repara orice, inclusiv programele altora.
+Programatorii profesioniști petrec **mai mult timp reparând** programe decât scriindu-le. O greșeală mică (un bloc în locul greșit) poate strica tot.  
+Doctorul de cod nu ghicește: **citește, testează, izolează, repară, verifică**. Azi înveți metoda.
 
 ---
 
@@ -21,215 +24,271 @@ Programatorii își petrec **mai mult timp căutând greșeli** decât scriind c
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recap L7: emițător și receptor |
-| 10–25 | Metoda doctorului în 5 pași |
-| 25–90 | Cabinetul: cele 5 programe bolnave |
-| 90–105 | Curățenie: cod mai scurt și mai clar |
-| 105–120 | Rapoartele, recapitulare, quiz, temă |
+| 0–10 | Recap L7: `map`, sunet |
+| 10–25 | Jocul „Doctorul”: metoda în 5 pași |
+| 25–40 | Lista de suspecți: greșeli care se repetă |
+| 40–70 | Pacienții 1 și 2 (**Minim**) |
+| 70–95 | Pacienții 3 și 4 (**Complet**) |
+| 95–112 | Funcția cu parametru: cod mai curat |
+| 112–120 | Recap, bonus, arăți ce ai gata |
 
-**Unelte azi:** tot ce ai învățat · `show number` pentru a „vedea” o variabilă · fișa cu **raportul de bug**
+**Unelte azi:** placa micro:bit · cablu micro-USB · browser Chrome sau Edge · [makecode.microbit.org](https://makecode.microbit.org)
+
+**Capitole azi:**  
+<span style="color:#3455DB;font-weight:700">Functions</span> · <span style="color:#1E90FF;font-weight:700">Basic</span> · <span style="color:#D400D4;font-weight:700">Input</span> · <span style="color:#DC143C;font-weight:700">Variables</span> · <span style="color:#00A4A6;font-weight:700">Logic</span> · <span style="color:#00A600;font-weight:700">Loops</span> · <span style="color:#5C2D91;font-weight:700">LED</span>  
+*(blocul nou: o funcție cu **parametru** (Advanced → Functions).)*
+
+**Blocurile de azi:**
+
+| Bloc | Ce face |
+|------|---------|
+| <span style="color:#3455DB;font-weight:700">Make a Function… (cu parametru)</span> | creezi o funcție care primește o valoare (`valoare`), ca să o folosești de mai multe ori |
+| <span style="color:#3455DB;font-weight:700">call arata (valoare)</span> | apelezi funcția și îi dai valoarea (lumină, temperatură, busolă …) |
+
+*Azi nu scrii programe noi, ci repari programele din Modulul 1 și din Modulul 2: toate blocurile le știi.*
 
 ---
 
 ## Pas cu pas
 
-### 1) Metoda doctorului în 5 pași
-1. **Ce trebuie să facă?** (ce spune fișa)  
-2. **Ce face de fapt?** Rulează și notează.  
-3. **Unde se rupe?** Ce bloc e primul care nu face ce trebuie?  
-4. **Schimbă o singură piesă** și testează iar.  
-5. **Scrie raportul:** ce era greșit și cum ai reparat.
+### 1) Jocul „Doctorul” (fără calculator)
+Un copil e **pacientul**: spune o instrucțiune pe care o execută greșit (de exemplu „fă 3 pași și întoarce-te”, dar el face 5). Celălalt e **doctorul**: întreabă, observă și găsește greșeala.
 
-> **Truc:** dacă nu știi ce valoare are o variabilă, pune **temporar** `show number variabila`. Vezi imediat ce ține minte.
+Metoda doctorului de cod are **5 pași**:
+1. **Citești** programul, bloc cu bloc  
+2. **Rulezi** și vezi ce face de fapt  
+3. **Izolezi**: ștergi sau dezactivezi părți până dispare greșeala  
+4. **Repari** o singură greșeală odată  
+5. **Verifici** din nou, la fel ca la început
 
-Dacă simulatorul are un buton de mers **încet** (slow-mo), îl poți folosi ca să urmărești blocurile pe rând.
+**Încearcă tu — (5–8 min)**  
+- [ ] Ai jucat doctor și pacient cu un coleg  
+- [ ] Spui cei 5 pași ai metodei  
 
-### 2) Programul bolnav 1 — „Contorul care nu crește”
-**Fișa:** A adaugă 1 la scor și arată scorul.
+### 2) Lista de suspecți
+Greșelile se repetă. Iată **suspecții obișnuiți**:
 
-```text
-on start
-    set score to 0
+| Suspect | Cum îl recunoști |
+|---------|------------------|
+| bloc **în afara** locului potrivit | nu se întâmplă nimic, sau se întâmplă o singură dată |
+| `change` înainte sau după `if` | numărul e cu `1` în urmă |
+| lipsește `pause` | animația clipește sau numără prea repede |
+| lipsește `clear screen` | rămân urme pe ecran |
+| `set` în loc de `change` (sau invers) | numărul sare sau nu se schimbă |
+| `forever` fără pauză la început | titlul se amestecă cu desenul |
 
-on button A pressed
-    set score to 1
-    show number score
-```
-**Simptom:** scorul rămâne mereu `1`.  
-**Diagnostic:** `set` pune valoarea `1` de fiecare dată.  
-**Rețetă:** `change score by 1`.
+Alegi 3 suspecți și îi scrii în **lista ta de verificare** pe foaie.
 
-### 3) Programul bolnav 2 — „Inima care stă pe loc”
-**Fișa:** inima bate (mare, mică, mare, mică).
+**Încearcă tu — (8–10 min)**  
+- [ ] Ai scris pe foaie lista ta de 3 suspecți  
+- [ ] Ai spus un exemplu de greșeală pe care ai făcut-o tu  
 
-```text
-forever
-    show icon [Heart]
-    show icon [Small Heart]
-```
-**Simptom:** pe ecran se vede ceva neclar, fără mișcare.  
-**Diagnostic:** pozele se schimbă mai repede decât poate vedea ochiul.  
-**Rețetă:** `pause (ms) 300` după fiecare `show icon`.
+### 3) Pacientul 1: Scutul de energie
+Programul trebuie ca la fiecare B să scadă energia **imediat** (de la `5` la `4`), iar la `0` să arate `GAME OVER`, dar se întâmplă o greșeală. **Nu te uita la răspuns!**
 
-### 4) Programul bolnav 3 — „Seiful care zice mereu Da”
-**Fișa:** B e corect doar dacă `pas = 1`; altfel arată `No`.
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `energie` to `5`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `energie`  
 
-```text
-on button B pressed
-    if pas = 1 then
-        set pas to 2
-    show icon [Yes]
-```
-**Simptom:** apare `Yes` la **orice** apăsare de B.  
-**Diagnostic:** `show icon [Yes]` e **în afara** lui `if`, deci se execută mereu.  
-**Rețetă:** mută `Yes` **în interiorul** lui `if` și adaugă un `else` cu `No`:
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `energie = 0` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `GAME OVER`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Skull`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `energie` to `5`  
+&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `energie`  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `energie` by `-1`  
 
-```text
-on button B pressed
-    if pas = 1 then
-        set pas to 2
-        show icon [Yes]
-    else
-        show icon [No]
-```
+**Sarcina ta:** scrii programul în MakeCode, apeși B de câteva ori și vezi ce nu merge. Găsești **greșeala** și o repari.
 
-### 5) Programul bolnav 4 — „Radioul mut”
-**Fișa:** placa 1 trimite `1` când apeși A, placa 2 arată `Happy`.
+**Încearcă tu — (10–12 min)**  
+- [ ] Ai găsit greșeala fără să te uiți la răspuns  
+- [ ] Ai verificat programul reparat  
 
-Placa 1:
-```text
-on start
-    radio set group 3
+### 4) Pacientul 2: Farul de pe mare
+Farul trebuie să pulseze, apoi să treacă o rază printr-o linie. Dar are **3 greșeli**.
 
-on button A pressed
-    radio send number 1
-```
-Placa 2:
-```text
-on start
-    radio set group 4
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `Far`  
 
-on radio received (receivedNumber)
-    show icon [Happy]
-```
-**Simptom:** pe placa 2 nu apare nimic.  
-**Diagnostic:** grupuri **diferite** (`3` și `4`).  
-**Rețetă:** același grup pe ambele plăci.
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#00A600;font-weight:700">repeat</span> `2` times  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Diamond`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `300`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `SmallDiamond`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `300`  
+&emsp;<span style="color:#00A600;font-weight:700">for index</span> from `0` to `4`  
+&emsp;&emsp;<span style="color:#5C2D91;font-weight:700">plot x y</span> `index` `2`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `150`  
 
-### 6) Programul bolnav 5 — „Alarma de neoprit”
-**Fișa:** alarma pâlpâie cât timp `alarma = 1` și se oprește cu A+B.
+**Sarcina ta:** rulezi, observi ce se întâmplă (titlul? urmele?), repari **una câte una** și verifici de fiecare dată.
 
-```text
-on shake
-    set alarma to 1
-    while alarma = 1
-        show leds   (toate aprinse)
-        pause (ms) 200
-        clear screen
-        pause (ms) 200
+**Încearcă tu — (10–15 min)**  
+- [ ] Ai găsit toate cele 3 greșeli  
+- [ ] Farul merge: lampa pulsează, raza trece, fără urme  
 
-on button A pressed
-    set alarma to 0
-```
-**Simptom:** alarma nu se oprește când apeși A+B.  
-**Diagnostic:** oprirea e pusă pe **A**, nu pe **A+B**.  
-**Rețetă:** `on button A+B pressed` cu `set alarma to 0`.
+### 5) Complet: pacienții 3 și 4
+**Pacientul 3: Pedometrul** (are 2 greșeli: numără prea mult și B nu pune pe `0`)
 
-### 7) Curățenia codului
-Un cod bun e **scurt**, **clar** și are **nume bune**.
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pasi` to `0`  
 
-**Înainte (lung):**
-```text
-forever
-    show icon [Heart]
-    pause (ms) 300
-    show icon [Heart]
-    pause (ms) 300
-    show icon [Heart]
-    pause (ms) 300
-    show icon [Heart]
-    pause (ms) 300
-```
-**După (scurt):**
-```text
-forever
-    repeat 4 times
-        show icon [Heart]
-        pause (ms) 300
-```
-> Dacă aceleași blocuri apar în două sau trei locuri, fă o **funcție** (ca `stinge` din L4).
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `acceleration strength > 1300` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">change</span> `pasi` by `1`  
 
-**Nume bune de variabile:** `score` e mai bun decât `x`, iar `alarma` e mai bun decât `a`.
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `pasi`  
 
-**Comentarii:** în MakeCode poți apăsa **clic dreapta pe un bloc → Add Comment** și scrii o notiță pentru tine („aici verific codul”).
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `pasi` by `0`  
 
-### 8) Raportul de bug
-Pentru fiecare program completezi un tabel:
+**Pacientul 4: Ceasul** (are 2 greșeli: ceasul merge prea repede și minutul crește mereu)
 
-| Program | Simptom | Cauza | Cum am reparat |
-|---------|---------|-------|----------------|
-| 1 | scorul rămâne 1 | `set` în loc de `change` | |
-| … | | | |
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `minut` to `0`  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `secunde` to `0`  
+
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `100`  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `secunde` by `1`  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `secunde = 60` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `secunde` to `0`  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `minut` by `1`  
+
+Repari ambele programe.
+
+**Încearcă tu — (20 min)**  
+- [ ] Pedometrul numără corect 10 pași  
+- [ ] Ceasul numără o secundă reală  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
+
+### 6) Complet: funcția cu parametru
+Uită-te la acest program: **aceleași trei blocuri** se repetă de trei ori.
+
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#D400D4;font-weight:700">light level</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#D400D4;font-weight:700">temperature (°C)</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+
+<span style="color:#D400D4;font-weight:700">on button A+B pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#D400D4;font-weight:700">compass heading</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+
+Le punem într-o **funcție cu parametru**: un parametru e o valoare care vine de afară. Din <span style="color:#3455DB;font-weight:700">Functions</span>: **Make a Function…**, nume `arata`, **+ add a parameter** (număr) `valoare`.
+
+<span style="color:#3455DB;font-weight:700">function</span> `arata` (`valoare`)  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `valoare`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#3455DB;font-weight:700">call</span> `arata` <span style="color:#D400D4;font-weight:700">light level</span>  
+
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#3455DB;font-weight:700">call</span> `arata` <span style="color:#D400D4;font-weight:700">temperature (°C)</span>  
+
+<span style="color:#D400D4;font-weight:700">on button A+B pressed</span>  
+&emsp;<span style="color:#3455DB;font-weight:700">call</span> `arata` <span style="color:#D400D4;font-weight:700">compass heading</span>  
+
+Același rezultat, dar cod **mai scurt și mai curat**. Dacă vrei să schimbi pauza, o schimbi **într-un singur loc**.
+
+**Încearcă tu — (15–20 min)**  
+- [ ] Funcția `arata` are parametrul `valoare`  
+- [ ] A, B și A+B apelează funcția și merg ca înainte  
+- [ ] Ai schimbat pauza o singură dată și s-a schimbat peste tot  
 
 ---
 
-## Greșeli frecvente (ale doctorilor)
-1. **„Am schimbat mai multe lucruri deodată”** — nu mai știi ce a reparat. Schimbă **una pe rând**.  
-2. **„Nu am testat după reparație”** — rulează mereu din nou.  
-3. **„Am dat vina pe placă”** — de obicei greșeala e în program.  
-4. **„Am șters tot și am luat-o de la capăt”** — de multe ori e nevoie de o mică schimbare.  
-5. **„Am uitat să notez”** — scrie raportul imediat, cât ții minte.  
-6. **„Programul reparat nu e salvat”** — salvează cu numele `MB2_L08`.
+## Greșeli frecvente
+1. **Repari mai multe lucruri deodată** — nu mai știi ce a ajutat. Repară **una** și verifică.  
+2. **Nu testezi după reparare** — greșeala poate să fi mutat altundeva.  
+3. **Ștergi blocuri ca să „iasă”** — pierzi ce era bun. Mai întâi izolezi, apoi repari.  
+4. **Funcția nu primește valoarea** — ai pus un număr fix în loc de `valoare`.  
+5. **Funcția nu face nimic** — lipsește `call` pentru ea în A, B sau A+B.  
+6. **Faci o greșeală nouă când repari** — verifică programul de la început, nu doar partea reparată.  
 
 ---
 
-## De făcut azi — „Cabinetul doctorului de cod”
+## De făcut azi — „Doctorul de cod”
+Salvat: `Prenume_Nume_MB2_L08`
 
-### Minim vs Complet
+### Minim vs Complet *(citește înainte să începi)*
 
 | | Ce trebuie |
 |--|------------|
-| **Minim** | **3** programe bolnave reparate · 3 rânduri de raport |
-| **Complet** | Toate **5** reparate · un cod **curățat** (repeat sau funcție) · raport complet |
+| **Minim („am reușit”)** | **Pasul 1** — repari Scutul de energie și Farul de pe mare, fiecare cu cel puțin **8 blocuri diferite**, cu lista ta de verificare completată |
+| **Complet (ținta orei)** | Minim + **Pasul 2** — repari Pedometrul și Ceasul și faci funcția `arata` cu parametru, cu cel puțin **6 blocuri diferite** |
 
-### Pasul 1 — Minim
-- [ ] Ai refăcut programul bolnav în MakeCode  
-- [ ] Ai găsit simptomul în simulator  
-- [ ] Ai reparat și retestat  
-- [ ] Raportul are 3 rânduri completate  
+Dacă rămâi în urmă: **oprește-te la Minim** și salvează. Nu e eșec, e baza pentru lecția următoare.
 
-**→ Minim când:** un coleg testează programele tale și ele merg.
+### Pasul 1 — Doctorul pentru 2 programe *(Minim)*
+*(programele de la Pacienții 1 și 2, reparate)*
 
-### Pasul 2 — Complet
-- [ ] Toate cele 5 programe reparate  
-- [ ] Un program scurtat cu `repeat` sau funcție  
-- [ ] Un comentariu adăugat într-un program  
-- [ ] Numele fișierului e `MB2_L08`  
+- [ ] Pacientul 1 (Scutul de energie) reparat: `GAME OVER` apare la `energie = 0`  
+- [ ] Pacientul 2 (Farul de pe mare) reparat: fără suprapuneri și fără urme  
+- [ ] Fiecare program are cel puțin **8 blocuri diferite**  
+- [ ] Lista ta de verificare are 3 suspecți  
+
+**→ Ai Minim când:** un coleg rulează cele două programe reparate și nu vede nicio greșeală.
+
+### Pasul 2 — Alți doi pacienți și o funcție *(Complet)*
+*(programele Pedometru și Ceas, reparate, și funcția `arata`)*
+
+- [ ] Pedometrul numără corect și B pune pe `0`  
+- [ ] Ceasul merge o secundă pe secundă și minutul crește corect  
+- [ ] Funcția `arata` cu parametru `valoare` e apelată de 3 ori  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
+- [ ] Salvat din nou: `Prenume_Nume_MB2_L08`  
+
+**Gata Complet când:** cele două programe merg, iar funcția `arata` înlocuiește blocurile repetate.
 
 ---
 
-## Bonus (după Complet)
-- [ ] Creează **un program bolnav** cu **o greșeală ascunsă** pentru un coleg, cu fișă și simptom  
-- [ ] Găsește greșeala din programul unui coleg în maximum 5 minute  
-- [ ] Alege un program mai vechi (L5, L6) și scurtează-l  
-- [ ] Scrie 3 reguli de aur pentru un doctor de cod
+## Bonus ★★★ — Provocare: Programul-capcană
+*Doar dacă ai terminat Complet.*
+
+- [ ] Scrie lista ta de 5 suspecți și dă-o unui coleg  
+- [ ] **Provocarea:** alegi unul dintre programele tale și **strici o singură greșeală**, ascunsă. Un coleg trebuie să o găsească **în cel mult 3 minute**, folosind metoda cu 5 pași (nu ghicitul). Apoi schimbați rolurile.  
+
+**Răspunsurile doctorului** *(nu te uita înainte să încerci!)*
+
+1. **Pacientul 1:** `change energie by -1` e **după** `if`. Trebuie pus **înainte**, ca să verifice valoarea nouă.  
+2. **Pacientul 2:** (a) `forever` fără `pause (ms) 3000` la început, titlul se amestecă; (b) lipsește `clear screen` în `for index`, rămân urme; (c) lipsește `clear screen` la final.  
+3. **Pacientul 3:** (a) lipsește `pause (ms) 400` după `change pasi`, numără prea mult; (b) la B e `change pasi by 0`, trebuie `set pasi to 0`.  
+4. **Pacientul 4:** (a) `pause (ms) 100` trebuie `1000`; (b) `change minut by 1` e în afara lui `if`, trebuie să fie înăuntru.
 
 ## Recapitulare rapidă
-1. **Depanare** = a găsi și a repara o greșeală.  
-2. Metoda: ce trebuie / ce face / unde se rupe / o schimbare / raport.  
-3. `show number variabila` îți arată ce ține minte placa.  
-4. Cod bun: **scurt**, **clar**, cu **nume bune**.  
-5. Greșelile sunt normale; important e să știi cum le cauți.
+1. Metoda: **citești, rulezi, izolezi, repari, verifici**  
+2. Repari **o singură** greșeală odată, apoi testezi  
+3. Greșelile se repetă: bloc în locul greșit, `pause`, `clear screen`, `set`/`change`  
+4. O **funcție cu parametru** înlocuiește blocurile repetate  
+5. Cod mai scurt = mai puține greșeli  
+6. Minim = Pasul 1 · Complet = Pasul 1 + 2  
 
 ## Schema pe scurt *(pe foaie)*
+**Citești** → **rulezi** → **izolezi** → **repari** (una) → **verifici**
 
-Simptom → ipoteză → o schimbare → test → raport
+Funcție cu parametru: <span style="color:#3455DB;font-weight:700">function</span> `arata` (`valoare`) → <span style="color:#3455DB;font-weight:700">call</span> `arata` <span style="color:#D400D4;font-weight:700">light level</span>
 
-**Quiz scurt:**  
-- Care e diferența dintre `set` și `change` când scorul nu crește?  
-- Cum afli ce valoare are o variabilă?  
-- De ce schimbăm un singur lucru pe rând?  
-- Cum scurtezi patru blocuri identice?
+**Quiz scurt (cu profesorul):**  
+- Care sunt cei 5 pași ai doctorului de cod?  
+- De ce repari o singură greșeală odată?  
+- Dă 2 „suspecți” obișnuiți din lista ta.  
+- Ce e un parametru?  
+- De ce o funcție face codul mai curat?  
 
-## Temă
-Caută **o greșeală** în orice program făcut de tine în ultimele lecții și scrie un raport de bug pentru ea.
+## Temă (opțional)
+- Dacă ai doar Minim: acasă, repari pacienții 3 și 4 (Pasul 2), în `Prenume_Nume_MB2_L08`.  
+- Dacă ai Complet: cauți un program din Modulul 1 pe care l-ai făcut și îl „cureți” cu o funcție.  
+- Dacă ai terminat și Bonusul: faci o a doua „capcană” mai grea.  
+
+## Ce urmează
+În **Lecția 9** faci un joc: **șarpele de un pixel**.

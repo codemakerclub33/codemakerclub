@@ -28,22 +28,20 @@
 
 Stare: M1 scris în stilul Scratch (blocuri colorate, Minim ≥ 8, Complet ≥ 6, Bonus măsurabil). Nu a rulat încă pe o placă adevărată.
 
-## Modulul 2 (proiecte, radio, pini, sunet) — schiță
+## Modulul 2 (o singură placă, fără radio)
 
-| Lecția | Proiect | Blocuri noi |
-|--------|---------|-------------|
-| L1 | Panoul de comandă | variabila `mod`, `compass heading`, `running time (ms)` |
-| L2 | Poșta radio | `radio set group`, `radio send number`, `radio send string`, `on radio received` |
-| L3 | Vânătoarea de comori | `radio send value`, `on radio received name value`, semnal radio |
-| L4 | Semaforul de pe masă | `digital write pin`, `analog write pin`, `digital read pin` |
-| L5 | Paznicul rucsacului | `play tone`, `ring tone`, `rest for`, `stop all sounds`, `set volume` (V2) |
-| L6 | Jurnalul de măsurători | `Make an Array`, `join`, `datalogger` (V2, extensie) |
-| L7 | Stația meteo la distanță | `radio set transmit power`, emițător și receptor |
-| L8 | Doctorul de cod | funcții cu parametri, depanare |
-| L9 | Cheia și seiful radio | `compare … to …`, liste, cod prin radio |
-| L10 | Expoziția Maker | reia proiectele |
+| Lecția | Proiect | Blocuri noi | Idee Bonus |
+|--------|---------|-------------|------------|
+| L1 | Panoul de comandă | `compass heading`, `running time (ms)`, `0 ÷ 0` | Panoul cu cinci moduri |
+| L2 | Busola de buzunar | `else if`, `map` | Vânătoarea de ținte |
+| L3 | Pedometrul | `acceleration (mg) strength` (+ `plot bar graph` la Bonus) | Bara de pași |
+| L4 | Ceasul deșteptător | `join`, `remainder of` | Amânare |
+| L5 | Paznicul rucsacului | `not`, `0 − 0` | Șoferul adormit (detector de somnolență) |
+| L6 | Jurnalul de măsurători | `empty array`, `add value to end of`, `length of`, `get value at` | Stația meteo |
+| L7 | Theremin cu lumină | `play tone` (V2), `0 × 0` | Gama de cinci note |
+| L8 | Doctorul de cod | funcție cu parametru | Programul-capcană |
+| L9 | Șarpele de un pixel | nimic nou (`remainder of` pentru înfășurare) | Șarpele cu zid |
+| L10 | Expoziția Maker | niciun bloc nou | Panoul cu povestea mea |
 
-Jocurile mai mari (Snake, Labirint, Breakout, Tetris) se potrivesc în M2 sau ca Bonus.
-
-## De evitat (le au deja alții, cursul Codeschool Clubs)
-Piatră-Foarfecă-Hârtie, Hero, Higher-Lower, Duel, Mole, Adevăr sau Provocare, Calculator, Curse cu mașini, Nu scăpa prăjitura, Jump, Cronometru, Simon spune, Zaruri, Ghicește numărul, Prinde mărul. Deci nu folosim: zar, tester de reacție, Snap the Dot, Crashy Bird, Catch the Apples, arcadă de jocuri.
+Idei rămase pentru Bonus sau lecții viitoare: Tetris, Breakout, Labirint (în micro:bit Python M4), Ghitara din carton, Pianul de fructe (pini, cleme crocodil), Alarma pentru sticlă.
+Radio, pini și LED-uri externe: modul separat, cu perechi de plăci.

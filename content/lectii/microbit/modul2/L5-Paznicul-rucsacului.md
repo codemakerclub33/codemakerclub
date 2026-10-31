@@ -1,19 +1,22 @@
 # Lecția 5 — Paznicul rucsacului
-**Modulul 2 · Proiecte Maker (blocuri + radio)**  
+### Stări, alarmă și timp
+**Modulul 2 · Proiecte Maker cu micro:bit (blocuri)**  
 **Code Maker Club · micro:bit Maker**
 
-> Azi placa devine **paznic**: o pui în rucsac, o „armezi”, iar dacă cineva mișcă rucsacul, ea **dă alarma** până o oprești tu.  
-> Proiect: **„Paznicul rucsacului”** · `Prenume_Nume_MB2_L05`
+> Azi înveți să dai programului **mai multe stări** și faci **„Paznicul rucsacului”**:  
+> pui placa în rucsac, o armezi cu A, iar dacă cineva o mișcă, ea sună alarma.  
+> Fișier: `Prenume_Nume_MB2_L05` (ex. `Ana_Pop_MB2_L05`)
 
 ---
 
 ## Obiectiv
-La finalul orei construiești un program cu **stări** (dezarmat, armat, alarmă) și folosești bucla `while`.  
-**Minim:** A armează paznicul după o numărătoare 3–2–1; dacă scuturi placa, pâlpâie alarma de 10 ori.  
-**Complet:** Minim + alarma durează **până o oprești** cu **A+B**, iar A nu mai poate arma în timpul alarmei.
+La finalul orei folosești o variabilă `stare` cu 3–4 valori, `on shake` ca senzor și `running time` ca să măsori cât durează ceva.  
+**Minim:** A armează paznicul (după o numărătoare), mișcarea declanșează alarma, B o oprește, cu **cel puțin 8 blocuri diferite**.  
+**Ținta orei (Complet):** partea a doua: alarma pornește după **3 secunde de avertisment** (în care poți încă să o oprești), iar **A+B** o oprește oricând, cu cel puțin **6 blocuri diferite**.
 
 ## De ce contează
-Alarma de la mașină, de la bancă și de pe bicicletă funcționează la fel: un senzor **observă**, iar programul **hotărăște** când să sune. Paznicul tău are trei stări și trece de la una la alta. Așa gândesc inginerii orice aparat de siguranță.
+Alarmele din mașini și din case au câteva stări: oprită, armată, avertisment, alarmă. Dacă ai intrat în mașină, ai câteva secunde să tastezi codul, apoi sună.  
+Azi faci acest „automat cu stări”, la scară mică.
 
 ---
 
@@ -21,220 +24,315 @@ Alarma de la mașină, de la bancă și de pe bicicletă funcționează la fel: 
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recap L4: pini, funcții |
-| 10–25 | Joc „Statuile”: stări în viața reală |
-| 25–40 | Planul pe foaie: schema stărilor |
-| 40–70 | Paznicul simplu (**Minim**) |
-| 70–100 | `while` și oprirea alarmei (**Complet**) |
-| 100–112 | Testăm: ce se poate strica? |
-| 112–120 | Recapitulare, quiz, temă |
+| 0–10 | Recap L4: variabile, timp, `and` |
+| 10–30 | Jocul „Statuia”: stările unui paznic |
+| 30–50 | Variabila `stare` pe foaie: tabelul stărilor |
+| 50–85 | Paznicul (**Minim**) |
+| 85–110 | **Complet:** avertisment cu `running time` |
+| 110–120 | Recap, bonus, arăți ce ai gata |
 
-**Unelte azi:** variabilele `armat` și `alarma` · `on shake` · `while … do` · `repeat … times` · `if … then` · `show leds` · `plot x y` · `clear screen`
+**Unelte azi:** placa micro:bit · cablu micro-USB · browser Chrome sau Edge · [makecode.microbit.org](https://makecode.microbit.org)
+
+**Capitole azi:**  
+<span style="color:#DC143C;font-weight:700">Variables</span> · <span style="color:#D400D4;font-weight:700">Input</span> · <span style="color:#00A4A6;font-weight:700">Logic</span> · <span style="color:#9C00C8;font-weight:700">Math</span> · <span style="color:#00A600;font-weight:700">Loops</span> · <span style="color:#1E90FF;font-weight:700">Basic</span>  
+*(blocuri noi: `not` (Logic) și `0 − 0` (Math).)*
+
+**Blocurile de azi:**
+
+| Bloc | Ce face |
+|------|---------|
+| <span style="color:#00A4A6;font-weight:700">not</span> | întoarce răspunsul: adevărat devine fals și invers |
+| <span style="color:#9C00C8;font-weight:700">0 − 0</span> | scade al doilea număr din primul |
+
+*Din lecțiile trecute le știi deja:* <span style="color:#1E90FF;font-weight:700">on start</span>, <span style="color:#1E90FF;font-weight:700">forever</span>, <span style="color:#1E90FF;font-weight:700">show icon</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>, <span style="color:#1E90FF;font-weight:700">clear screen</span>, <span style="color:#D400D4;font-weight:700">on button pressed</span>, <span style="color:#D400D4;font-weight:700">on shake</span>, <span style="color:#D400D4;font-weight:700">running time (ms)</span>, <span style="color:#5C2D91;font-weight:700">plot x y</span>, <span style="color:#00A600;font-weight:700">repeat</span>, <span style="color:#DC143C;font-weight:700">set</span>, <span style="color:#00A4A6;font-weight:700">if … then</span>, <span style="color:#00A4A6;font-weight:700">0 = 0</span>, <span style="color:#00A4A6;font-weight:700">0 > 0</span>.
 
 ---
 
 ## Pas cu pas
 
-### 1) Jocul „Statuile”
-Clasa mișcă. La „stop!” toți devin statui. Dacă se mișcă cineva, **e prins**. Au existat trei stări: **mișcare liberă**, **statuie** și **prins**. Paznicul are la fel trei stări.
+### 1) Jocul „Statuia” (fără calculator)
+Un copil e **paznicul**. Cât timp paznicul se uită la tine, stai ca o statuie. Dacă te mișci, ești descoperit și paznicul spune „ALARMĂ!”.
 
-### 2) Schema stărilor
+Paznicul are **stări**: „privește” sau „nu privește”. Pentru fiecare stare, o mișcare înseamnă altceva.
 
-| Stare | Ce se vede | Cum intră în ea |
-|-------|-----------|-----------------|
-| **Dezarmat** | `Asleep` (doarme) | la pornire sau după A+B |
-| **Armat** | un singur LED în mijloc | după A și numărătoarea 3–2–1 |
-| **Alarmă** | ecranul pâlpâie | scuturi placa cât timp e armat |
+**Încearcă tu — (5–8 min)**  
+- [ ] Ai jucat statuia cu un coleg  
+- [ ] Spui în ce stare e paznicul și ce se întâmplă la mișcare  
 
-Variabilele:
-- `armat` = `1` când paznicul e atent, `0` altfel;  
-- `alarma` = `1` când sună alarma, `0` altfel.
+### 2) Stările pe foaie
+Înainte de blocuri, desenezi pe foaie **stările** paznicului, ca la Seiful secret:
 
-### 3) Pornirea
-Proiect nou: `Prenume_Nume_MB2_L05`.
+| `stare` | Ce înseamnă | Ce se întâmplă la scuturare |
+|---------|-------------|-----------------------------|
+| `0` | liber (nu păzește) | nimic |
+| `1` | armat | trece în stare `2` |
+| `2` | alarmă | clipește craniul |
 
-```text
-on start
-    set armat to 0
-    set alarma to 0
-    show icon [Asleep]
-```
+**A** armează (stare `1`), **B** oprește (stare `0`).
 
-### 4) Armarea cu numărătoare — Minim
-Ai nevoie de timp să pui placa în rucsac. Facem numărătoarea 3–2–1.
+**Încearcă tu — (8–10 min)**  
+- [ ] Ai desenat cele trei stări  
+- [ ] Spui ce se întâmplă dacă scuturi placa în fiecare stare  
 
-```text
-on button A pressed
-    show number 3
-    pause (ms) 1000
-    show number 2
-    pause (ms) 1000
-    show number 1
-    pause (ms) 1000
-    clear screen
-    plot x 2 y 2
-    set armat to 1
-```
-**Ce vezi pe ecran la „armat”:**
-```text
-. . . . .
-. . . . .
-. . # . .
-. . . . .
-. . . . .
-```
-Un singur LED în mijloc: ochiul paznicului.
+### 3) Armarea: A cu numărătoare
+Când apeși A, ai nevoie de câteva secunde să pui placa în rucsac. Facem o **întârziere**: <span style="color:#00A600;font-weight:700">repeat</span> `3` times cu o formă mică, apoi `stare = 1` și un punct pe ecran.
 
-**Gata când:**  
-- [ ] Blocurile sunt puse în ordinea din lecție  
-- [ ] Simulatorul face ce scrie în „Minim”  
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#00A600;font-weight:700">repeat</span> `3` times  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `SmallDiamond`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `stare` to `1`  
+&emsp;<span style="color:#5C2D91;font-weight:700">plot x y</span> `2` `2`
 
-### 5) Alarma scurtă — Minim
+**Încearcă tu — (10 min)**  
+- [ ] La A apar trei clipiri, apoi un punct în mijloc  
+- [ ] Spui de ce nu se armează imediat  
 
-```text
-on shake
-    if armat = 1 then
-        set armat to 0
-        repeat 10 times
-            show leds   (toate cele 25 aprinse)
-            pause (ms) 200
-            clear screen
-            pause (ms) 200
-        show icon [Asleep]
-```
-- Primul lucru: `set armat to 0`. Astfel, o a doua scuturare **nu** pornește încă o alarmă peste prima.  
-- `repeat 10 times` = ecranul pâlpâie de 10 ori.  
-- Apoi paznicul „adoarme” din nou.
+### 4) Alarma și oprirea
+1. Proiect nou: `Prenume_Nume_MB2_L05`  
+2. Creezi variabila `stare`; în <span style="color:#1E90FF;font-weight:700">on start</span>: <span style="color:#DC143C;font-weight:700">set</span> `stare` to `0` și `Asleep`  
+3. <span style="color:#D400D4;font-weight:700">on shake</span>: <span style="color:#00A4A6;font-weight:700">if</span> `stare = 1` → <span style="color:#DC143C;font-weight:700">set</span> `stare` to `2`  
+4. În <span style="color:#1E90FF;font-weight:700">forever</span>: <span style="color:#00A4A6;font-weight:700">if</span> `stare = 2` → clipește `Skull`  
+5. La <span style="color:#D400D4;font-weight:700">on button B pressed</span>: <span style="color:#DC143C;font-weight:700">set</span> `stare` to `0`, o bifă și <span style="color:#1E90FF;font-weight:700">clear screen</span>  
 
-**Test:** apasă A, așteaptă 3–2–1, apoi scutură placa. Ea pâlpâie de 10 ori.
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `stare = 1` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `stare` to `2`  
 
-**Gata când:**  
-- [ ] Blocurile sunt puse în ordinea din lecție  
-- [ ] Simulatorul face ce scrie în „Minim”  
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `stare = 2` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Skull`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `200`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `200`  
 
-### 6) Complet — alarma până o oprești
-Vrem ca alarma să sune **până apeși A+B**. Folosim `while`, o buclă care repetă **atâta timp cât** o condiție e adevărată.
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `stare` to `0`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Yes`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>
 
-| Bucla | Repetă… |
-|-------|---------|
-| `forever` | pe veci |
-| `repeat 10 times` | de 10 ori |
-| `while alarma = 1` | cât timp `alarma` e `1` |
+**Încearcă tu — (10 min)**  
+- [ ] Armezi cu A, scuturi, și craniul clipește  
+- [ ] B oprește alarma  
 
-```text
-on start
-    set armat to 0
-    set alarma to 0
-    show icon [Asleep]
+### 5) Paznicul: Minim
+Reunești totul.
 
-on button A pressed
-    if alarma = 0 then
-        show number 3
-        pause (ms) 1000
-        show number 2
-        pause (ms) 1000
-        show number 1
-        pause (ms) 1000
-        clear screen
-        plot x 2 y 2
-        set armat to 1
+Programul tău (Minim):
 
-on shake
-    if armat = 1 then
-        set armat to 0
-        set alarma to 1
-        while alarma = 1
-            show leds   (toate cele 25 aprinse)
-            pause (ms) 200
-            clear screen
-            pause (ms) 200
-        show icon [Asleep]
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `stare` to `0`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Asleep`  
 
-on button A+B pressed
-    set alarma to 0
-    set armat to 0
-    show icon [Asleep]
-```
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#00A600;font-weight:700">repeat</span> `3` times  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `SmallDiamond`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `stare` to `1`  
+&emsp;<span style="color:#5C2D91;font-weight:700">plot x y</span> `2` `2`  
 
-- `while alarma = 1` pâlpâie până când `alarma` devine `0`.  
-- **A+B** pune `alarma` pe `0`: bucla se oprește, iar placa se întoarce la `Asleep`.  
-- `if alarma = 0` din A împiedică armarea în timpul alarmei.  
-- A+B dezarmează și când paznicul e doar **armat** (fără alarmă).
+<span style="color:#D400D4;font-weight:700">on shake</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `stare = 1` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `stare` to `2`  
 
-> Nu apăsa butoanele în timpul numărătorii 3–2–1: placa e ocupată cu ea.
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `stare = 2` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Skull`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `200`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `200`  
 
-**Gata când:**  
-- [ ] Blocurile pentru „Complet” sunt adăugate  
-- [ ] Simulatorul face tot ce scrie în „Complet”  
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `stare` to `0`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Yes`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
 
-### 7) Ce se poate strica? (testăm împreună)
-Încearcă fiecare situație și bifează ce se întâmplă:
-- [ ] Scuturi placa **înainte** să o armezi → nu se întâmplă nimic  
-- [ ] Armezi, nu o miști → rămâne ochiul în mijloc  
-- [ ] Armezi, scuturi → pornește alarma  
-- [ ] În alarmă, apeși A → nu se întâmplă nimic nou  
-- [ ] În alarmă, apeși A+B → oprește  
+**Test:** scuturi fără să armezi: nimic. Armezi, scuturi: alarma. Apeși B: liniște.
+
+**Încearcă tu — (10–15 min)**  
+- [ ] Fără armare, scuturarea nu face nimic  
+- [ ] Armat, scuturarea pornește alarma  
+- [ ] B oprește alarma  
+- [ ] Programul e pe placa adevărată  
+
+### 6) Complet: avertisment cu running time
+Adăugăm o stare nouă, **`3` = avertisment**: după scuturare, placa arată `Surprised` timp de **3 secunde**, iar tu poți apăsa B să o oprești (ești chiar tu, care scoți placa din rucsac). Dacă nu apeși, trece în alarmă (`2`).
+
+În alarmă, B **nu mai oprește**: doar **A+B** o oprește. Ca să spunem „B oprește doar dacă **nu** e alarmă” folosim <span style="color:#00A4A6;font-weight:700">not</span>.
+
+Pentru cele 3 secunde, la scuturare notăm <span style="color:#DC143C;font-weight:700">set</span> `start` to <span style="color:#D400D4;font-weight:700">running time (ms)</span>, iar în <span style="color:#1E90FF;font-weight:700">forever</span> verificăm <span style="color:#00A4A6;font-weight:700">if</span> `running time − start > 3000` cu <span style="color:#9C00C8;font-weight:700">0 − 0</span>.
+
+<span style="color:#D400D4;font-weight:700">on shake</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `stare = 1` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `stare` to `3`  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `start` to <span style="color:#D400D4;font-weight:700">running time (ms)</span>  
+
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `stare = 3` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Surprised`  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `running time (ms) − start > 3000` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `stare` to `2`  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `stare = 2` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Skull`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `200`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `200`  
+
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `not stare = 2` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `stare` to `0`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Yes`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+
+<span style="color:#D400D4;font-weight:700">on button A+B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `stare` to `0`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>
+
+**Încearcă tu — (20 min)**  
+- [ ] După scuturare apare `Surprised`, iar B încă oprește  
+- [ ] După 3 secunde pornește alarma, iar B nu o mai oprește  
+- [ ] A+B oprește alarma oricând  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
 
 ---
 
 ## Greșeli frecvente
-1. **„Alarma nu se oprește niciodată”** — A+B nu pune `alarma` pe `0`.  
-2. **„Scuturarea nu face nimic”** — ai uitat să armezi (`armat = 1`) sau ai apăsat A prea devreme.  
-3. **„Pâlpâie o singură dată”** — blocurile nu sunt toate **în interiorul** lui `while`.  
-4. **„Alarma pornește de două ori”** — lipsește `set armat to 0` la începutul alarmei.  
-5. **„Pe ecran rămâne ochiul după A+B”** — lipsește `show icon [Asleep]`.  
-6. **„Ecranul rămâne aprins”** — după `show leds` trebuie `clear screen`.
+1. **Alarma pornește fără scuturare** — `stare` nu e `0` la început, sau `if stare = 1` are `=` greșit.  
+2. **Armarea nu are întârziere** — <span style="color:#00A600;font-weight:700">repeat</span> e în afara lui <span style="color:#D400D4;font-weight:700">on button A pressed</span>.  
+3. **Craniul nu clipește** — lipsește `pause` în `forever`, sau `if stare = 2` e pus în alt bloc.  
+4. **Avertismentul nu se termină** — `start` nu se salvează la scuturare, sau `3000` e scris greșit.  
+5. **B oprește chiar și în alarmă** — lipsește `not` sau `stare = 2` e scris altfel.  
+6. **Scuturi în stare `0` și sună** — ai uitat <span style="color:#00A4A6;font-weight:700">if</span> `stare = 1` în <span style="color:#D400D4;font-weight:700">on shake</span>.  
 
 ---
 
 ## De făcut azi — „Paznicul rucsacului”
+Salvat: `Prenume_Nume_MB2_L05`
 
-### Minim vs Complet
+### Minim vs Complet *(citește înainte să începi)*
 
 | | Ce trebuie |
 |--|------------|
-| **Minim** | A armează (3–2–1) · scuturare → 10 pâlpâiri · revine la `Asleep` |
-| **Complet** | Minim + `while alarma = 1` · A+B oprește · A nu armează în alarmă |
+| **Minim („am reușit”)** | **Pasul 1** — A armează după o numărătoare, mișcarea declanșează alarma, B o oprește, cu **cel puțin 8 blocuri diferite**, pe placă |
+| **Complet (ținta orei)** | Minim + **Pasul 2** — avertisment de 3 secunde și A+B care oprește alarma, cu cel puțin **6 blocuri diferite** |
 
-### Pasul 1 — Minim
-- [ ] Variabila `armat`  
-- [ ] Numărătoarea 3–2–1 și LED-ul din mijloc  
-- [ ] `on shake` cu `if armat = 1` și `repeat 10 times`  
-- [ ] Testat cu placa în mână  
+Dacă rămâi în urmă: **oprește-te la Minim** și salvează. Nu e eșec, e baza pentru lecția următoare.
 
-**→ Minim când:** un coleg ridică rucsacul tău și alarma pornește.
+### Pasul 1 — Paznicul *(Minim)*
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `stare` to `0`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Asleep`  
 
-### Pasul 2 — Complet
-- [ ] Variabila `alarma`  
-- [ ] `while alarma = 1` în `on shake`  
-- [ ] `on button A+B pressed` oprește  
-- [ ] Toate cele 5 teste din pasul 7 bifate  
-- [ ] Numele fișierului e `MB2_L05`  
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#00A600;font-weight:700">repeat</span> `3` times  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `SmallDiamond`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `stare` to `1`  
+&emsp;<span style="color:#5C2D91;font-weight:700">plot x y</span> `2` `2`  
+
+<span style="color:#D400D4;font-weight:700">on shake</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `stare = 1` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `stare` to `2`  
+
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `stare = 2` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Skull`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `200`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `200`  
+
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `stare` to `0`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Yes`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>
+
+- [ ] Proiect nou cu numele `Prenume_Nume_MB2_L05`  
+- [ ] Variabila `stare` creată  
+- [ ] Ai cel puțin **8 blocuri diferite**: <span style="color:#1E90FF;font-weight:700">on start</span>, <span style="color:#DC143C;font-weight:700">set</span>, <span style="color:#1E90FF;font-weight:700">show icon</span>, <span style="color:#D400D4;font-weight:700">on button pressed</span>, <span style="color:#00A600;font-weight:700">repeat</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>, <span style="color:#5C2D91;font-weight:700">plot x y</span>, <span style="color:#D400D4;font-weight:700">on shake</span>, <span style="color:#00A4A6;font-weight:700">if … then</span>, <span style="color:#00A4A6;font-weight:700">0 = 0</span>, <span style="color:#1E90FF;font-weight:700">forever</span>  
+- [ ] Programul e trimis pe placă  
+
+**→ Ai Minim când:** un coleg armează placa, o scutură și vede craniul clipind, apoi o oprește cu B.
+
+### Pasul 2 — Avertisment *(Complet)*
+<span style="color:#D400D4;font-weight:700">on shake</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `stare = 1` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `stare` to `3`  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `start` to <span style="color:#D400D4;font-weight:700">running time (ms)</span>  
+
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `stare = 3` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Surprised`  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `running time (ms) − start > 3000` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `stare` to `2`  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `stare = 2` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Skull`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `200`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `200`  
+
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `not stare = 2` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `stare` to `0`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Yes`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+
+<span style="color:#D400D4;font-weight:700">on button A+B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `stare` to `0`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>
+
+- [ ] Starea `3` (avertisment) cu `Surprised` și <span style="color:#DC143C;font-weight:700">set</span> `start` to <span style="color:#D400D4;font-weight:700">running time (ms)</span>  
+- [ ] După `3000` ms trece în stare `2` (cu <span style="color:#9C00C8;font-weight:700">0 − 0</span>)  
+- [ ] B oprește doar dacă <span style="color:#00A4A6;font-weight:700">not</span> `stare = 2`  
+- [ ] A+B oprește alarma oricând  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
+- [ ] Salvat din nou: `Prenume_Nume_MB2_L05`  
+
+**Gata Complet când:** scuturi placa armată, ai 3 secunde să o oprești cu B, apoi sună; doar A+B o mai oprește.
 
 ---
 
-## Bonus (după Complet)
-- [ ] La alarmă, **blițul** extern: `digital write pin P0 to 1` cu un LED legat (ca în L4)  
-- [ ] Fă un cod de **dezarmare**: A+B trebuie apăsat de **două ori**  
-- [ ] Arată pe ecran o **față supărată** (`Angry`) în loc de ecran aprins  
-- [ ] Trimite prin radio un mesaj la placa unui coleg când pornește alarma
+## Bonus ★★★ — Provocare: Șoferul adormit
+*Doar dacă ai terminat Complet.*
+
+- [ ] Schimbă forma care clipește la alarmă și numărătoarea de la armare  
+- [ ] **Provocarea:** transformi paznicul în **detector de somnolență**: placa ținută pe frunte sau pe șapcă, dacă `acceleration (mg) y` arată că ai lăsat capul în față **mai mult de `2` secunde** (măsurate cu <span style="color:#D400D4;font-weight:700">running time (ms)</span>), pornește alarma. Un coleg lasă capul `1` secundă: **fără alarmă**; îl lasă `3` secunde: **alarmă**.  
 
 ## Recapitulare rapidă
-1. Un aparat de siguranță are **stări**: dezarmat, armat, alarmă.  
-2. Variabilele `armat` și `alarma` țin minte starea.  
-3. `repeat 10 times` = de 10 ori. `while alarma = 1` = cât timp e adevărat.  
-4. Setăm starea **imediat** ca să nu pornim alarma de două ori.  
-5. Testăm și situațiile ciudate, nu doar pe cea ideală.
+1. O variabilă `stare` face un program cu mai multe **moduri de lucru**  
+2. Fiecare eveniment (scuturare, buton) face altceva în fiecare stare  
+3. <span style="color:#D400D4;font-weight:700">running time (ms)</span> măsoară cât durează ceva; scăzut din „start” dă timpul scurs  
+4. <span style="color:#00A4A6;font-weight:700">not</span> întoarce un răspuns: „orice altceva decât `stare = 2`”  
+5. Un tabel al stărilor pe foaie scutește de erori  
+6. Minim = Pasul 1 · Complet = Pasul 1 + 2  
 
 ## Schema pe scurt *(pe foaie)*
+`stare`: `0` liber · `1` armat · `3` avertisment · `2` alarmă
 
-Dezarmat —A→ (3-2-1) armat —scuturat→ alarmă —A+B→ dezarmat
+A → numărătoare → `1` · scuturare (`1`) → `3` + `start` → după 3 s → `2`
 
-**Quiz scurt:**  
-- Ce stări are paznicul?  
-- Care e diferența dintre `repeat` și `while`?  
-- De ce punem `set armat to 0` la începutul alarmei?  
-- Cum oprești alarma?
+B → `0` (doar dacă nu e `2`) · A+B → `0` oricând
 
-## Temă
-Desenează schema stărilor pentru **un alt aparat** (de exemplu o ușă cu cod sau un cuptor). Scrie ce eveniment mută aparatul dintr-o stare în alta.
+**Quiz scurt (cu profesorul):**  
+- Câte stări are paznicul tău în Minim?  
+- De ce armarea are o numărătoare?  
+- Cum aflăm că au trecut 3 secunde?  
+- Ce face `not stare = 2`?  
+- De ce desenăm stările pe foaie?  
+
+## Temă (opțional)
+- Dacă ai doar Minim: acasă, adaugi avertismentul (Pasul 2), în același `Prenume_Nume_MB2_L05`.  
+- Dacă ai Complet: gândești o a cincea stare (de exemplu „somn”, în care placa nu mai răspunde la scuturare) și o scrii în tabel.  
+- Dacă ai terminat și Bonusul: faci o copie și schimbi durata de la `2` secunde la `3`.  
+
+## Ce urmează
+În **Lecția 6** placa **ține un jurnal** de măsurători: liste.

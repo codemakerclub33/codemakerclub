@@ -1,31 +1,33 @@
-Lecția zece. Expoziția Maker și badge.
+Lecția zece. Expoziția Maker.
 
-Astăzi este ziua expoziției! Îți pregătești standul, îți prezinți proiectul, primești păreri de la colegi și primești insigna micro:bit Maker. Proiectul se numește Standul meu Maker. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B doi, linie jos, L zece.
+Astăzi nu înveți blocuri noi, ci îmbini proiectele din Modulul doi și faci Panoul Maker: un singur program cu mai multe moduri, busolă, pedometru, ceas, termometru, jurnal. Apoi îl prezinți la expoziție. Fișierul se numește Prenume, linie jos, Nume, linie jos, M B doi, linie jos, L zero zece.
 
-Obiectivul. La final îți prezinți proiectul clar și frumos, dai și primești păreri și completezi Verificarea Modulului doi. Minim: proiectul rulează pe plăci reale, iar fișa lui este completă. Complet: minim, plus o prezentare de două minute și o îmbunătățire făcută după părerile colegilor.
+Obiectivul. La finalul orei folosești singur tot ce ai învățat în Modulul doi și primești insigna micro:bit Maker. Minim: un Panou Maker cu trei moduri, busolă, pași, secunde, A schimbă modul, B îl arată, cu cel puțin opt blocuri diferite. Complet: partea a doua, cu încă două moduri, o față după temperatură și un jurnal de măsurători, cu cel puțin șase blocuri diferite, și prezentarea de un minut.
 
-De ce contează. Un proiect devine un lucru real abia când îl arăți altora. Cei mai buni makeri nu doar construiesc: explică ce au făcut, ascultă păreri și îmbunătățesc. Azi exersezi toate trei.
+De ce contează. Un programator nu rescrie totul de la zero: el adună ce a făcut deja. Azi vezi că ai o bibliotecă de proiecte, iar un aparat mare este făcut din piese mici. La expoziție înveți și să povestești ce ai făcut, o abilitate la fel de importantă ca programul.
 
-Primul pas. Alegem proiectul de expus. Alegi unul dintre proiectele Modulului doi: de obicei Cheia și seiful radio, dar poți alege și Vânătoarea cald, rece, Stația meteo, Paznicul sau Semaforul. Verifici că rulează pe plăci reale.
+Ce face fiecare bloc de azi. Azi nu apar blocuri noi. Tabelul de pe pagină arată din ce lecție vine fiecare piesă: panoul cu moduri din lecția unu, busola din lecțiile unu și doi, pașii din lecția trei, secundele din lecțiile unu și patru, Else if din lecția doi, termometrul și jurnalul din lecția șase.
 
-Al doilea pas. Testul final, zece minute. Programele sunt descărcate pe plăcile corecte. Bateriile sau cablurile funcționează. Plăcile sunt în același grup. Ai testat proiectul de trei ori la rând. Ai un plan B.
+Primul pas. Planul pe foaie. Desenezi pe foaie Panoul Maker: ce arată fiecare mod. Modul zero arată direcția, busola. Modul unu, numărul de pași. Modul doi, secundele de la pornire. Modul trei, o față veselă sau tristă după temperatură. Modul patru notează temperatura în jurnal. A schimbă modul, B îl arată.
 
-Al treilea pas. Standul și afișul. Pe o foaie scrii titlul proiectului, ce face, cum se folosește, ce ai folosit și prenumele tău.
+Al doilea pas. Modurile zero, unu și doi, pentru Minim. Proiect nou. Creezi variabilele mod și pasi. În Forever, pasul de la pedometru: dacă forța este mai mare decât o mie trei sute, Change pasi cu unu și pauză patru sute. La butonul A, Change mod cu unu, dacă mod este mai mare decât doi, Set mod la zero, apoi Show number mod. La butonul B, dacă mod este zero, Show number Compass heading. Else if mod este unu, Show number pasi. Altfel, Show number Running time împărțit la o mie.
 
-Al patrulea pas. Prezentarea de două minute. Salut, apoi ce face proiectul, cum funcționează, ce a fost greu, ce ai adăuga, apoi întrebări. Exersezi în perechi: unul prezintă, celălalt cronometrează și spune un lucru bun și o sugestie.
+Al treilea pas. Complet. Modurile trei și patru. Adaugi două moduri: modul trei arată o față după temperatură, fața veselă dacă temperatura este peste douăzeci și cinci, altfel fața tristă. Modul patru notează temperatura într-o listă numită masuratori, pe care o creezi în On start. Schimbi If mod mai mare decât doi în If mod mai mare decât patru, ca A să treacă prin toate cele cinci moduri.
 
-Al cincilea pas. Expoziția. Jumătate din clasă prezintă, jumătate vizitează, apoi schimbați rolurile. Vizitatorii încearcă proiectul și lasă un cartonaș cu un lucru bun, încă un lucru bun și o idee.
+Al patrulea pas. Prezentarea de un minut. Prezinți Panoul Maker unui coleg, într-un minut. Spui ce face, adică cele cinci moduri. Spui ce piesă ți-a plăcut cel mai mult și din ce lecție vine. Spui ce greșeală ai avut și cum ai reparat-o, cu metoda doctorului. Și spui ce ai schimba dacă ai mai avea o oră. Colegul pune o întrebare și spune ce a înțeles.
 
-Al șaselea pas. Îmbunătățirea. Citești cartonașele, alegi o idee și o faci în zece minute. Notezi pe fișă ce ai schimbat.
+Greșeli frecvente. Panoul nu mai pornește: ai blocuri neconectate pe masă, verifică ce este gri. Pași nu crește: If-ul de la pedometru este în afara lui Forever, sau pragul este prea mare. A nu trece prin toate modurile: If mod mai mare decât doi lipsește sau are Set în afara lui If. Busola arată zero sau numere ciudate: nu ai calibrat placa. Jurnalul este gol: lipsește Set masuratori la listă goală în On start. Prezentarea durează prea mult: alege trei lucruri și exersează o dată înainte.
 
-Verificarea Modulului. Pe pagina lecției ai zece întrebări și un tabel de autoevaluare. Răspunzi fără să te uiți în lecții. Apoi primești insigna micro:bit Maker.
+Proiectul de azi. Expoziția Maker.
 
-Greșeli frecvente. Proiectul nu pornește la expoziție: verifică încărcarea plăcilor înainte. Radio nu merge în sală: prea multe perechi în același grup, fiecare pereche își verifică numărul. Prezinți prea repede: respiră și spune câte o idee pe rând. Nu știi ce să răspunzi: nu știu încă, dar aș încerca, este un răspuns bun. Ai uitat să salvezi îmbunătățirea. Ai ascuns greșelile: arată și ce a fost greu.
+Minim înseamnă: un Panou Maker cu trei moduri, A le schimbă și B le arată, cu cel puțin opt blocuri diferite, pe placă. Complet înseamnă: minim, plus încă două moduri, față după temperatură și jurnal, cu cel puțin șase blocuri diferite, și prezentarea. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg apasă A și B și vede busola, pașii și secundele, fără explicații.
 
-Proiectul de azi. Standul meu Maker.
+Bonus. Schimbi pragul de temperatură și numele modurilor. Provocarea, Panoul cu povestea mea: alegi un proiect din Modulul doi, Șarpele, Paznicul, Theremin, îl îmbunătățești cu o idee a ta, un mod nou, o animație, o regulă, și îl prezinți la expoziție. Un coleg încearcă proiectul tău două minute și îți spune ce a înțeles singur, fără explicații din partea ta.
 
-Minim înseamnă: proiect funcțional și fișă completă. Complet înseamnă: minim, plus prezentarea, o îmbunătățire și verificarea.
+Recapitulare. Un proiect mare este făcut din piese mici, adică lecțiile tale. Mod și If, Else if pun mai multe proiecte într-un singur program. Metoda doctorului de cod te scapă de multe greșeli. Prezentarea arată ce ai învățat și ce ai alege diferit. Ai terminat Modulul doi.
 
-Recapitulare. Ai învățat radio, pini, liste, stări și depanare. Un proiect bun are plan, test și prezentare. Părerile colegilor ajută proiectul să crească. Ai muncit ca un adevărat maker.
+Tema, opțional. Faci o poză programului tău și o poză a plăcii în funcțiune și le aduci mâine pentru portofoliul tău. Verificarea Modulului doi. Pe pagina lecției ai zece întrebări și un tabel de autoevaluare. Răspunzi fără să te uiți în lecții. Apoi primești insigna micro:bit Maker.
 
-Felicitări, maker!
+Ce urmează. Felicitări, ai terminat Modulul doi de la micro:bit cu blocuri. Următoarele module te duc spre Python pe aceeași placă.
+
+Felicitări, ai terminat Modulul doi.

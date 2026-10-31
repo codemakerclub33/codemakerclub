@@ -1,19 +1,22 @@
 # Lecția 6 — Jurnalul de măsurători
-**Modulul 2 · Proiecte Maker (blocuri + radio)**  
+### Liste: aduni, citești, calculezi
+**Modulul 2 · Proiecte Maker cu micro:bit (blocuri)**  
 **Code Maker Club · micro:bit Maker**
 
-> Azi placa devine un **mic om de știință**: măsoară temperatura și lumina, ține minte **recordurile** și își notează măsurătorile într-un **jurnal**.  
-> Proiect: **„Jurnalul de măsurători”** · `Prenume_Nume_MB2_L06`
+> Azi înveți să ții **mai multe numere** într-o singură „cutie” și faci **„Jurnalul de măsurători”**:  
+> placa notează temperatura de câte ori apeși A, iar apoi îți citește jurnalul și calculează media și maximul.  
+> Fișier: `Prenume_Nume_MB2_L06` (ex. `Ana_Pop_MB2_L06`)
 
 ---
 
 ## Obiectiv
-La finalul orei faci un aparat care **ține minte** cea mai mare și cea mai mică temperatură și (la Complet) o **listă** de măsurători cu media lor.  
-**Minim:** A schimbă între trei moduri: temperatura, lumina și recordurile (maxim și minim). A+B șterge recordurile.  
-**Complet:** Minim + B salvează măsurători într-o **listă**, iar al patrulea mod arată **media**.
+La finalul orei folosești o **listă** (array): adaugi valori, le citești pe rând cu `for index` și calculezi o **medie** și un **maxim**.  
+**Minim:** A notează temperatura în listă, B o citește pe rând, cu **cel puțin 8 blocuri diferite**.  
+**Ținta orei (Complet):** partea a doua: **A+B** calculează **media** și **maximul** măsurătorilor, cu cel puțin **6 blocuri diferite**.
 
 ## De ce contează
-Oamenii de știință notează ce măsoară: temperatura de afară, cât a crescut o plantă. Notițele se numesc **date**. Un program care păstrează date poate să-ți spună „cel mai cald a fost la prânz” sau „în medie, în clasă sunt 22 de grade”.
+O variabilă obișnuită ține **un singur** număr. Dar un meteorolog notează temperatura în fiecare oră, nu doar o dată. El are nevoie de un **caiet**.  
+O **listă** e caietul programului: ține câte numere vrei și le poți citi pe rând.
 
 ---
 
@@ -21,247 +24,238 @@ Oamenii de știință notează ce măsoară: temperatura de afară, cât a cresc
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recap L5: stări, `while` |
-| 10–30 | Măsurăm pe hârtie: un tabel în 3 locuri din clasă |
-| 30–60 | Modurile T, L și recordul (**Minim**) |
-| 60–100 | Lista cu măsurători și media (**Complet**) |
-| 100–112 | Experiment: unde e cel mai cald loc din clasă? |
-| 112–120 | Recapitulare, quiz, temă |
+| 0–10 | Recap L5: stări, `running time` |
+| 10–25 | Jocul „Caietul”: poziții de la 0 |
+| 25–45 | Lista în blocuri: creare și adăugare |
+| 45–60 | Citim lista cu `for index` |
+| 60–90 | Jurnalul (**Minim**) |
+| 90–112 | **Complet:** media și maximul |
+| 112–120 | Recap, bonus, arăți ce ai gata |
 
-**Unelte azi:** `temperature (°C)` · `light level` · `max of … and …` · `min of … and …` · variabile · **Arrays** (liste) · `for element value of …` · `round` · `if`
+**Unelte azi:** placa micro:bit · cablu micro-USB · browser Chrome sau Edge · [makecode.microbit.org](https://makecode.microbit.org)
+
+**Capitole azi:**  
+<span style="color:#E65722;font-weight:700">Arrays</span> · <span style="color:#00A600;font-weight:700">Loops</span> · <span style="color:#DC143C;font-weight:700">Variables</span> · <span style="color:#9C00C8;font-weight:700">Math</span> · <span style="color:#D400D4;font-weight:700">Input</span> · <span style="color:#00A4A6;font-weight:700">Logic</span> · <span style="color:#1E90FF;font-weight:700">Basic</span>  
+*(blocuri noi din Arrays (Advanced). Numele pot diferi puțin în editor; caută blocurile după formă.)*
+
+**Blocurile de azi:**
+
+| Bloc | Ce face |
+|------|---------|
+| <span style="color:#E65722;font-weight:700">empty array</span> | o listă fără nimic în ea (o pui într-o variabilă cu `set`) |
+| <span style="color:#E65722;font-weight:700">add value to end of</span> | adaugă o valoare la sfârșitul listei |
+| <span style="color:#E65722;font-weight:700">length of</span> | câte valori are lista |
+| <span style="color:#E65722;font-weight:700">get value at</span> | citește valoarea de la poziția dată (prima poziție e `0`) |
+
+*Din lecțiile trecute le știi deja:* <span style="color:#1E90FF;font-weight:700">on start</span>, <span style="color:#1E90FF;font-weight:700">show number</span>, <span style="color:#1E90FF;font-weight:700">show string</span>, <span style="color:#1E90FF;font-weight:700">show icon</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>, <span style="color:#1E90FF;font-weight:700">clear screen</span>, <span style="color:#D400D4;font-weight:700">on button pressed</span>, <span style="color:#D400D4;font-weight:700">temperature (°C)</span>, <span style="color:#00A600;font-weight:700">for index</span>, <span style="color:#DC143C;font-weight:700">set</span>, <span style="color:#DC143C;font-weight:700">change</span>, <span style="color:#00A4A6;font-weight:700">if … then</span>, <span style="color:#00A4A6;font-weight:700">0 > 0</span>, <span style="color:#9C00C8;font-weight:700">0 − 0</span>, <span style="color:#9C00C8;font-weight:700">0 ÷ 0</span>.
 
 ---
 
 ## Pas cu pas
 
-### 1) Tabelul de pe hârtie
-Înainte de calculator, facem un tabel. Măsori (cu termometrul clasei sau cu placa) în **3 locuri**: lângă fereastră, pe bancă, lângă ușă.
+### 1) Jocul „Caietul” (fără calculator)
+Un copil e **caietul**. Ceilalți spun un număr, iar caietul îl **adaugă la sfârșit** („Adaugă `21`!”, „Adaugă `24`!”). Apoi cineva întreabă: „Ce e la poziția `0`?” (primul), „Ce e la poziția `1`?” (al doilea).
 
-| Loc | Temperatura | Cât de luminos e (mic / mediu / mare) |
-|-----|-------------|----------------------------------------|
-| Fereastră | ____ | ____ |
-| Bancă | ____ | ____ |
-| Ușă | ____ | ____ |
+Atenție: **prima poziție e `0`**, nu `1`. Ca și coordonatele de pe ecran.
 
-Programul pe care îl facem azi va face **singur** acest lucru.
+**Încearcă tu — (5–8 min)**  
+- [ ] Ai adăugat 4 numere în „caiet”  
+- [ ] Spui ce e la poziția `0` și la poziția `2`  
 
-### 2) Ideea recordului
-Un **record** e cea mai mare (sau mică) valoare văzută până acum. Funcționează așa:
-- Începi cu temperatura de acum, de exemplu `22`.  
-- La fiecare măsurătoare compari: dacă e mai mare, **o ții minte**.
+### 2) Creăm lista și adăugăm valori
+1. Proiect nou: `Prenume_Nume_MB2_L06`  
+2. Creezi variabila `masuratori` (Variables → **Make a Variable…**)  
+3. În <span style="color:#1E90FF;font-weight:700">on start</span>: <span style="color:#DC143C;font-weight:700">set</span> `masuratori` to <span style="color:#E65722;font-weight:700">empty array</span> (listă goală). Blocul e în **Advanced → Arrays**  
+4. La <span style="color:#D400D4;font-weight:700">on button A pressed</span>: <span style="color:#E65722;font-weight:700">add value to end of</span> `masuratori` cu <span style="color:#D400D4;font-weight:700">temperature (°C)</span>, apoi o bifă `Yes`, pauză și <span style="color:#1E90FF;font-weight:700">clear screen</span>  
 
-Blocul care face asta e din **Math**: **max of 0 and 0** și **min of 0 and 0**. (Un singur bloc cu un dropdown pentru `max` / `min`.)
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `masuratori` to <span style="color:#E65722;font-weight:700">empty array</span>  
 
-```text
-set maxim to max of maxim and temperature
-set minim to min of minim and temperature
-```
-- Prima linie: noul `maxim` e cel mai mare dintre `maxim` vechi și temperatura de acum.  
-- A doua: noul `minim` e cel mai mic dintre cele două.
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#E65722;font-weight:700">add value to end of</span> `masuratori` <span style="color:#D400D4;font-weight:700">temperature (°C)</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Yes`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>
 
-### 3) Pornirea — Minim
-Proiect nou: `Prenume_Nume_MB2_L06`. Variabile: `mod`, `maxim`, `minim`.
+**Încearcă tu — (10 min)**  
+- [ ] La fiecare A vezi bifa (valoarea s-a adăugat)  
+- [ ] Spui de ce lista e goală la pornire  
 
-```text
-on start
-    set mod to 1
-    set maxim to temperature
-    set minim to temperature
-```
+### 3) Citim lista: for index
+La <span style="color:#D400D4;font-weight:700">on button B pressed</span> citim **toate** valorile, una câte una, cu <span style="color:#00A600;font-weight:700">for index</span>. Lista cu `3` valori are pozițiile `0`, `1`, `2`, deci bucla merge de la `0` la **<span style="color:#E65722;font-weight:700">length of</span> `masuratori` − 1**.
 
-**Gata când:**  
-- [ ] Blocurile sunt puse în ordinea din lecție  
-- [ ] Simulatorul face ce scrie în „Minim”  
+Pe fiecare poziție: <span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#E65722;font-weight:700">get value at</span> `index` of `masuratori`, pauză, <span style="color:#1E90FF;font-weight:700">clear screen</span>. Înainte de buclă punem un <span style="color:#00A4A6;font-weight:700">if</span> `length of masuratori > 0`, ca să nu citim o listă goală.
 
-### 4) Butoanele — Minim
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `length of masuratori > 0` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#00A600;font-weight:700">for index</span> from `0` to <span style="color:#E65722;font-weight:700">length of</span> `masuratori` <span style="color:#9C00C8;font-weight:700">−</span> `1`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#E65722;font-weight:700">get value at</span> `index` of `masuratori`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>
 
-```text
-on button A pressed
-    change mod by 1
-    if mod > 3 then
-        set mod to 1
+**Încearcă tu — (10 min)**  
+- [ ] B arată pe rând toate temperaturile notate  
+- [ ] Ai încercat B cu lista goală și nu s-a întâmplat nimic  
 
-on button A+B pressed
-    set maxim to temperature
-    set minim to temperature
-```
-A schimbă modul, iar A+B **șterge recordurile** (le pune pe temperatura de acum).
+### 4) Jurnalul: Minim
+Reunești totul.
 
-**Gata când:**  
-- [ ] Blocurile sunt puse în ordinea din lecție  
-- [ ] Simulatorul face ce scrie în „Minim”  
+Programul tău (Minim):
 
-### 5) `forever` desenează — Minim
-Regula din L1 e încă valabilă: **desenează doar `forever`**.
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `masuratori` to <span style="color:#E65722;font-weight:700">empty array</span>  
 
-```text
-forever
-    set maxim to max of maxim and temperature
-    set minim to min of minim and temperature
-    clear screen
-    if mod = 1 then
-        show string "T"
-        show number temperature
-    else if mod = 2 then
-        show string "L"
-        show number light level
-    else
-        show string "+"
-        show number maxim
-        show string "-"
-        show number minim
-    pause (ms) 200
-```
-- Literele `T` și `L` te anunță ce citești: **T** = temperatura, **L** = lumina.  
-- La modul 3 vezi: `+` urmat de temperatura maximă, apoi `-` urmat de cea minimă.
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#E65722;font-weight:700">add value to end of</span> `masuratori` <span style="color:#D400D4;font-weight:700">temperature (°C)</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Yes`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
 
-**Ce vezi pe ecran la modul 3** (dacă maxim e 25 și minim 21): `+` → `25` → `-` → `21`.
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `length of masuratori > 0` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#00A600;font-weight:700">for index</span> from `0` to <span style="color:#E65722;font-weight:700">length of</span> `masuratori` <span style="color:#9C00C8;font-weight:700">−</span> `1`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#E65722;font-weight:700">get value at</span> `index` of `masuratori`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
 
-**Test:** ține placa în mână ca să se încălzească sau apropie-o de fereastră. Cu A mergi la modul 3 și vezi cum recordurile s-au schimbat.
+**Test:** apeși A de 3 ori (poți ține placa în mână ca să se schimbe temperatura), apoi B: vezi cele 3 valori.
 
-**Gata când:**  
-- [ ] Blocurile sunt puse în ordinea din lecție  
-- [ ] Simulatorul face ce scrie în „Minim”  
+**Încearcă tu — (15–20 min)**  
+- [ ] A de 3 ori notează 3 valori  
+- [ ] B le arată pe rând  
+- [ ] Programul e pe placa adevărată  
 
-### 6) Complet — jurnalul cu listă
-O **listă** (în MakeCode, **Array**) e o înșiruire de valori, ca un tabel cu o singură coloană. Ține mai multe numere într-o singură variabilă.
+### 5) Complet: media și maximul
+La <span style="color:#D400D4;font-weight:700">on button A+B pressed</span> calculăm două lucruri din listă:
 
-**Pregătire:**
-1. Creezi variabilele `jurnal` (lista), `suma` și `salveaza`.  
-2. În `on start`, adaugi: `set jurnal to [array of]` fără elemente (apeși **−** pe bloc până nu mai are niciunul). Blocurile pentru liste sunt în **Advanced → Arrays**. Numele pot arăta puțin diferit în editor, dar ideea e aceeași: *„adaugă la sfârșit”*, *„lungimea listei”*, *„pentru fiecare element”*.
+- **media** = suma valorilor împărțită la numărul lor: <span style="color:#DC143C;font-weight:700">change</span> `suma` by valoarea de la poziția `index`, la fiecare poziție, apoi `suma` <span style="color:#9C00C8;font-weight:700">÷</span> <span style="color:#E65722;font-weight:700">length of</span> `masuratori`  
+- **maximul** = cea mai mare valoare: pornim cu `maxim = 0`, iar dacă o valoare e mai mare decât `maxim`, o salvăm în `maxim`  
 
-```text
-on start
-    set mod to 1
-    set maxim to temperature
-    set minim to temperature
-    set salveaza to 0
-    set jurnal to [array of]   (listă goală)
-```
+Creezi variabilele `suma` și `maxim`.
 
-**B ridică un steag.** Desenează doar `forever`, deci B doar anunță:
+<span style="color:#D400D4;font-weight:700">on button A+B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `suma` to `0`  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `maxim` to `0`  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `length of masuratori > 0` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#00A600;font-weight:700">for index</span> from `0` to <span style="color:#E65722;font-weight:700">length of</span> `masuratori` <span style="color:#9C00C8;font-weight:700">−</span> `1`  
+&emsp;&emsp;&emsp;<span style="color:#DC143C;font-weight:700">change</span> `suma` by <span style="color:#E65722;font-weight:700">get value at</span> `index` of `masuratori`  
+&emsp;&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">if</span> <span style="color:#E65722;font-weight:700">get value at</span> `index` of `masuratori` > `maxim` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `maxim` to <span style="color:#E65722;font-weight:700">get value at</span> `index` of `masuratori`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `M`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `suma` <span style="color:#9C00C8;font-weight:700">÷</span> <span style="color:#E65722;font-weight:700">length of</span> `masuratori`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `Max`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `maxim`
 
-```text
-on button B pressed
-    set salveaza to 1
-```
-
-**Cu patru moduri:** A nu mai trece de `4`:
-
-```text
-on button A pressed
-    change mod by 1
-    if mod > 4 then
-        set mod to 1
-```
-
-**`forever` face totul:**
-
-```text
-forever
-    set maxim to max of maxim and temperature
-    set minim to min of minim and temperature
-    clear screen
-    if salveaza = 1 then
-        add value temperature to end of jurnal
-        set salveaza to 0
-        show icon [Yes]
-        pause (ms) 400
-    else if mod = 1 then
-        show string "T"
-        show number temperature
-    else if mod = 2 then
-        show string "L"
-        show number light level
-    else if mod = 3 then
-        show string "+"
-        show number maxim
-        show string "-"
-        show number minim
-    else
-        if length of jurnal > 0 then
-            set suma to 0
-            for element value of jurnal
-                change suma by value
-            show string "M"
-            show number round (suma / length of jurnal)
-        else
-            show icon [No]
-    pause (ms) 200
-```
-- **B** salvează temperatura de acum în `jurnal` și arată bifa `Yes`.  
-- **Modul 4** calculează **media**: însumează toate valorile (`suma`) și împarte la câte sunt (`length of jurnal`). `round` rotunjește.  
-- Dacă lista e goală, arată `No` (nu împărțim la zero).
-
-**Exemplu:** salvezi `21`, `23`, `22`. Suma e `66`, sunt 3 valori, media e `66 / 3 = 22`.
-
-**Gata când:**  
-- [ ] Blocurile pentru „Complet” sunt adăugate  
-- [ ] Simulatorul face tot ce scrie în „Complet”  
-
-### 7) Experimentul „Cel mai cald loc”
-În grup, mergeți cu plăcile în 4 locuri din clasă. La fiecare loc apăsați B. După patru locuri mergeți la modul 4 și comparați **media** cu cea a altui grup. Care e mai mare? De ce?
+**Încearcă tu — (20 min)**  
+- [ ] A+B arată `M` și media, apoi `Max` și cea mai mare valoare  
+- [ ] Verifici cu mintea: media nu e mai mare decât maximul  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
 
 ---
 
 ## Greșeli frecvente
-1. **„Recordurile nu se schimbă”** — blocurile `max of` / `min of` lipsesc din `forever`.  
-2. **„Ecranul se amestecă”** — B desenează direct (`show icon`) în loc să ridice steagul. Lasă desenul în `forever`.  
-3. **„La modul 4 apare mereu `No`”** — nu ai apăsat B niciodată (lista e goală).  
-4. **„Media e greșită”** — ai uitat `set suma to 0` înainte de `for element`.  
-5. **„Modul 5 nu există”** — în A ai lăsat `if mod > 3`. Pentru 4 moduri trebuie `> 4`.  
-6. **„Temperatura sare”** — placa se încălzește și singură; e normal să vezi 1–2 grade diferență.
+1. **B nu arată nimic** — lista e goală (nu ai apăsat A) sau lipsește `set masuratori to empty array`.  
+2. **Prima valoare lipsește** — bucla începe de la `1`. Prima poziție e `0`.  
+3. **Placa se blochează la ultima valoare** — bucla merge până la `length`, nu până la `length − 1`.  
+4. **Media e prea mare** — `suma` nu e `0` la început.  
+5. **Maximul e `0`** — `if value > maxim` e în afara buclei.  
+6. **Valorile par greșite** — placa s-a încălzit în mână. Așteaptă puțin între A-uri.  
 
 ---
 
 ## De făcut azi — „Jurnalul de măsurători”
+Salvat: `Prenume_Nume_MB2_L06`
 
-### Minim vs Complet
+### Minim vs Complet *(citește înainte să începi)*
 
 | | Ce trebuie |
 |--|------------|
-| **Minim** | Moduri **T**, **L**, **recorduri** · A+B șterge recordurile |
-| **Complet** | Minim + B salvează în listă · modul 4 arată **media** |
+| **Minim („am reușit”)** | **Pasul 1** — A notează temperatura în listă, B o citește pe rând, cu **cel puțin 8 blocuri diferite**, pe placă |
+| **Complet (ținta orei)** | Minim + **Pasul 2** — A+B arată media și maximul măsurătorilor, cu cel puțin **6 blocuri diferite** |
 
-### Pasul 1 — Minim
-- [ ] Variabilele `mod`, `maxim`, `minim`  
-- [ ] `max of` și `min of` în `forever`  
-- [ ] Trei moduri cu A  
-- [ ] A+B resetează recordurile  
+Dacă rămâi în urmă: **oprește-te la Minim** și salvează. Nu e eșec, e baza pentru lecția următoare.
 
-**→ Minim când:** încălzești placa în mână și recordul de maxim crește.
+### Pasul 1 — Jurnalul de măsurători *(Minim)*
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `masuratori` to <span style="color:#E65722;font-weight:700">empty array</span>  
 
-### Pasul 2 — Complet
-- [ ] Lista `jurnal` creată (goală)  
-- [ ] B ridică steagul `salveaza`; `forever` adaugă în listă  
-- [ ] Modul 4 calculează media corect (testată cu 3 valori)  
-- [ ] Lista goală arată `No`  
-- [ ] Numele fișierului e `MB2_L06`  
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#E65722;font-weight:700">add value to end of</span> `masuratori` <span style="color:#D400D4;font-weight:700">temperature (°C)</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Yes`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `length of masuratori > 0` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#00A600;font-weight:700">for index</span> from `0` to <span style="color:#E65722;font-weight:700">length of</span> `masuratori` <span style="color:#9C00C8;font-weight:700">−</span> `1`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#E65722;font-weight:700">get value at</span> `index` of `masuratori`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>
+
+- [ ] Proiect nou cu numele `Prenume_Nume_MB2_L06`  
+- [ ] Variabila `masuratori` creată și pusă pe listă goală  
+- [ ] Ai cel puțin **8 blocuri diferite**: <span style="color:#1E90FF;font-weight:700">on start</span>, <span style="color:#DC143C;font-weight:700">set</span>, <span style="color:#D400D4;font-weight:700">on button pressed</span>, <span style="color:#E65722;font-weight:700">add value to end of</span>, <span style="color:#D400D4;font-weight:700">temperature (°C)</span>, <span style="color:#1E90FF;font-weight:700">show icon</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>, <span style="color:#1E90FF;font-weight:700">clear screen</span>, <span style="color:#00A600;font-weight:700">for index</span>, <span style="color:#1E90FF;font-weight:700">show number</span>, <span style="color:#E65722;font-weight:700">get value at</span>, <span style="color:#E65722;font-weight:700">length of</span>  
+- [ ] Programul e trimis pe placă  
+
+**→ Ai Minim când:** un coleg apasă A de 3 ori și apoi B: placa îi arată cele 3 temperaturi, pe rând.
+
+### Pasul 2 — Media și maximul *(Complet)*
+<span style="color:#D400D4;font-weight:700">on button A+B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `suma` to `0`  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `maxim` to `0`  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `length of masuratori > 0` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#00A600;font-weight:700">for index</span> from `0` to <span style="color:#E65722;font-weight:700">length of</span> `masuratori` <span style="color:#9C00C8;font-weight:700">−</span> `1`  
+&emsp;&emsp;&emsp;<span style="color:#DC143C;font-weight:700">change</span> `suma` by <span style="color:#E65722;font-weight:700">get value at</span> `index` of `masuratori`  
+&emsp;&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">if</span> <span style="color:#E65722;font-weight:700">get value at</span> `index` of `masuratori` > `maxim` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `maxim` to <span style="color:#E65722;font-weight:700">get value at</span> `index` of `masuratori`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `M`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `suma` <span style="color:#9C00C8;font-weight:700">÷</span> <span style="color:#E65722;font-weight:700">length of</span> `masuratori`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `Max`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `maxim`
+
+- [ ] Variabilele `suma` și `maxim` create  
+- [ ] Media = `suma` <span style="color:#9C00C8;font-weight:700">÷</span> <span style="color:#E65722;font-weight:700">length of</span> `masuratori`  
+- [ ] Maximul = cea mai mare valoare din listă  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
+- [ ] Salvat din nou: `Prenume_Nume_MB2_L06`  
+
+**Gata Complet când:** A+B arată `M` cu media și `Max` cu cea mai mare valoare notată.
 
 ---
 
-## Bonus (după Complet)
-- [ ] Adaugă modul 5: **câte măsurători** ai salvat (`show number length of jurnal`)  
-- [ ] Salvează **lumina** într-o a doua listă și calculează media luminii  
-- [ ] Fă un **alarm de căldură**: dacă temperatura trece de `28`, arată `Sad`  
-- [ ] Desenează pe foaie un grafic cu cele 4 valori salvate
+## Bonus ★★★ — Provocare: Stația meteo
+*Doar dacă ai terminat Complet.*
+
+- [ ] Schimbă pauza de la afișare și numărul de măsurători pe care le notezi  
+- [ ] **Provocarea:** o **stație meteo** care măsoară **singură**. În <span style="color:#1E90FF;font-weight:700">forever</span>, o dată la `10` secunde (<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `10000`), notează temperatura în listă, până la **`6` măsurători** (<span style="color:#00A4A6;font-weight:700">if</span> `length of masuratori < 6`). La <span style="color:#D400D4;font-weight:700">on button A+B pressed</span> placa arată `Sus` dacă ultima valoare e mai mare decât prima, `Jos` dacă e mai mică. Un coleg ține placa în mână un minut: trebuie să arate `Sus`.  
 
 ## Recapitulare rapidă
-1. **Date** = valori măsurate și păstrate.  
-2. **Record** = cea mai mare sau mică valoare, găsită cu `max of` / `min of`.  
-3. O **listă** (array) ține mai multe valori într-o variabilă.  
-4. **Media** = suma împărțită la câte sunt.  
-5. Un buton poate doar **ridica un steag**, iar `forever` face munca.
+1. O **listă** ține mai multe valori într-o variabilă  
+2. `add value to end of` adaugă; `get value at` citește; `length of` numără  
+3. Prima poziție e `0`; ultima e `length − 1`  
+4. <span style="color:#00A600;font-weight:700">for index</span> de la `0` la `length − 1` citește toată lista  
+5. Media = suma ÷ cât sunt; maximul = comparat pe rând  
+6. Minim = Pasul 1 · Complet = Pasul 1 + 2  
 
 ## Schema pe scurt *(pe foaie)*
+A → <span style="color:#E65722;font-weight:700">add value to end of</span> `masuratori` temperatura
 
-Măsoară → `max of` / `min of` → recorduri · B → listă `jurnal` → `for element` → `suma` → media
+B → pentru fiecare poziție `0` … `length − 1` → arată valoarea
 
-**Quiz scurt:**  
-- Ce face `max of maxim and temperature`?  
-- Ce este o listă?  
-- Cum calculezi media a 3 numere?  
-- De ce nu împărțim când lista e goală?
+A+B → media (`suma ÷ length`) și maximul (`value > maxim`)
 
-## Temă
-Alege **un lucru** de măsurat acasă (temperatura din camera ta dimineața și seara). Notează valorile într-un tabel și calculează media pe foaie. Mâine o compari cu rezultatul placei.
+**Quiz scurt (cu profesorul):**  
+- Care e prima poziție dintr-o listă?  
+- Cum afli câte valori are lista?  
+- De ce bucla merge până la `length − 1`?  
+- Cum calculezi media?  
+- Cum găsești cea mai mare valoare?  
+
+## Temă (opțional)
+- Dacă ai doar Minim: acasă, adaugi media și maximul (Pasul 2), în același `Prenume_Nume_MB2_L06`.  
+- Dacă ai Complet: notezi temperatura camerei la 5 ore diferite și le scrii pe foaie ca „jurnal”; calculezi media cu mintea și o compari cu placa.  
+- Dacă ai terminat și Bonusul: faci o copie și schimbi intervalul de măsurare.  
+
+## Ce urmează
+În **Lecția 7** faci un instrument muzical fără să-l atingi: un **theremin cu lumină**.

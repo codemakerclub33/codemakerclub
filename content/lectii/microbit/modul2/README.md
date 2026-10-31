@@ -1,25 +1,29 @@
-# Modul 2 — Proiecte Maker (blocuri + radio)
+# Modul 2 — Proiecte Maker (blocuri, o singură placă)
 
 **Badge:** micro:bit Maker  
 **Vârstă:** 8+ ani · **Editor:** [makecode.microbit.org](https://makecode.microbit.org) (blocuri)  
-**Prerequisit:** Modulul 1 (butoane, variabile, `if`, bucle, senzori)  
-**Focus:** radio între plăci, pini și LED-uri externe, proiecte mai mari, depanare
+**Prerequisit:** Modulul 1 (butoane, variabile, `if`, bucle, senzori, funcții)  
+**Focus:** proiecte mai mari pe **o singură placă**: busolă, pedometru, ceas, alarmă cu stări, liste, sunet, depanare, un joc
 
-| # | Lecție | Obiectiv | Pași principali (nucleu) |
-|---|--------|----------|---------------------------|
-| 1 | Panoul de comandă | Recap + meniu cu moduri | Variabila `mod`; `if / else if`; lumină, temperatură, nume; fișa proiectului |
-| 2 | Poșta radio | Primele mesaje între plăci | `radio set group`; `radio send number`; `on radio received`; coduri |
-| 3 | Vânătoarea de comori: cald-rece | Joc cu două plăci | Roluri (ascunzător / căutător); puterea semnalului; praguri |
-| 4 | Semaforul de pe masă | LED extern pe pini | `digital write pin`; rezistență; semafor cu 3 LED-uri |
-| 5 | Paznicul rucsacului | Alarmă cu stări | `while`; `on shake`; armat / dezarmat; alarmă |
-| 6 | Jurnalul de măsurători | Meniu + record | `mod`; temperatură maximă; `if … > …` |
-| 7 | Stația meteo la distanță | Sistem dublu | `radio send value`; emițător + receptor; alertă |
-| 8 | Doctorul de cod | Depanare și curățenie | 4 programe stricate; funcții; nume clare; listă de verificare |
-| 9 | Cheia și seiful radio | Proiect final Maker | Cod prin radio; răspuns înapoi; încercări greșite |
-| 10 | Expoziția Maker + badge | Prezentare + verificare | Demo; Verificarea Modulului 2; badge **micro:bit Maker** |
+Stilul lecțiilor e cel din Modulul 1 (și din Scratch): blocuri colorate cu numele din editor, **Minim** cu cel puțin 8 blocuri diferite, **Complet** cu cel puțin 6, **Bonus ★★★** măsurabil.
+
+| # | Lecție | Obiectiv | Blocuri noi (și idei) |
+|---|--------|----------|------------------------|
+| 1 | Panoul de comandă | Recap + moduri | `compass heading`, `running time (ms)`, `0 ÷ 0`; variabila `mod` |
+| 2 | Busola de buzunar | Puncte cardinale | `else if`, `map`; calibrare |
+| 3 | Pedometrul | Recunoști o mișcare | `acceleration (mg) strength`; prag și pauză |
+| 4 | Ceasul deșteptător | Timp și alarmă | `join`, `remainder of` |
+| 5 | Paznicul rucsacului | Stări | `not`, `0 − 0`; `running time` pentru avertisment |
+| 6 | Jurnalul de măsurători | Liste | `empty array`, `add value to end of`, `length of`, `get value at` |
+| 7 | Theremin cu lumină | Senzor devine sunet | `play tone` (V2), `0 × 0` |
+| 8 | Doctorul de cod | Depanare | funcție cu parametru, `call` |
+| 9 | Șarpele de un pixel | Joc | `remainder of` pentru înfășurare, funcție `mancare` |
+| 10 | Expoziția Maker + badge | Reluare + prezentare | Panoul Maker; Verificarea Modulului 2 |
+
+**Fișiere:** numele fișierelor din acest folder au rămas cele vechi (`Posta-radio`, `Vanatoarea-de-comori`, …), dar **conținutul** e cel nou, cu titlurile din tabel.
 
 **Salvare sugerată:** `Prenume_Nume_MB2_L01` … `MB2_L10`
 
-**Material:** câte o placă micro:bit pe copil (pentru radio: **perechi** de plăci, pe cât posibil 2 plăci pentru fiecare pereche), cabluri USB de date. Pentru L4: LED-uri, rezistențe de 220 Ω, cabluri cu clești (crocodil) și, dacă e cazul, o plăcuță breadboard.
+**Material:** câte o placă micro:bit pe copil și cablu USB de date. **Sunetul** (L7) merge cu difuzorul plăcii V2; pe V1 lecția are varianta fără sunet. Nu e nevoie de radio, de componente externe sau de kituri.
 
-**Regulă de atelier pentru radio:** fiecare pereche folosește **grupul ei** (număr între 0 și 255), ca mesajele să nu se amestece între echipe.
+**Radio, pini și LED-uri externe** nu mai sunt în acest modul; pot deveni un modul separat, cu perechi de plăci.

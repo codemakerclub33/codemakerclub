@@ -1,19 +1,22 @@
-# Lecția 7 — Stația meteo la distanță
-**Modulul 2 · Proiecte Maker (blocuri + radio)**  
+# Lecția 7 — Theremin cu lumină
+### Lumina devine sunet
+**Modulul 2 · Proiecte Maker cu micro:bit (blocuri)**  
 **Code Maker Club · micro:bit Maker**
 
-> Azi construiești un **sistem din două plăci**: **stația** stă afară (sau la fereastră) și măsoară, iar **receptorul** stă lângă tine și îți arată ce a aflat stația.  
-> Proiect: **„Stația meteo la distanță”** · `Prenume_Nume_MB2_L07_statie` și `…_receptor`
+> Azi înveți să transformi un **senzor** într-un **instrument** și faci **„Theremin cu lumină”**:  
+> cânți fără să atingi placa: apropii mâna de ecran și sunetul (sau bara de LED-uri) se schimbă.  
+> Fișier: `Prenume_Nume_MB2_L07` (ex. `Ana_Pop_MB2_L07`)
 
 ---
 
 ## Obiectiv
-La finalul orei trimiți **măsurători cu nume** (de exemplu „temp” și „lum”) prin radio și le primești pe cealaltă placă.  
-**Minim:** stația trimite temperatura și lumina; receptorul arată **T** (A) sau **L** (B).  
-**Complet:** Minim + **alertă** când temperatura trece de un prag și mesajul „fără semnal” dacă stația tace prea mult.
+La finalul orei folosești `map` ca să transformi lumina într-o **notă**, `play tone` ca să o cânți și o variabilă `gama` ca să schimbi tonul.  
+**Minim:** bara de LED-uri arată cât de sus e nota, iar în întuneric apare o fantomă, cu **cel puțin 8 blocuri diferite** (merge pe orice placă).  
+**Ținta orei (Complet):** partea a doua: placa **cântă** nota (placa **V2**), **A** pornește și oprește sunetul, **B** schimbă gama, cu cel puțin **6 blocuri diferite**.
 
 ## De ce contează
-Stațiile meteo adevărate stau pe un deal, iar prognoza ta o primești pe telefon. Între ele sunt **trimiteri de date**. Azi faci exact asta, în clasa ta: o placă măsoară, alta afișează. Se numește un **sistem cu emițător și receptor**.
+Thereminul e primul instrument electronic din istorie: îl cânți **fără să-l atingi**, doar mișcând mâinile. Sunetul lui apare în multe filme SF.  
+Azi faci unul cu un **senzor de lumină** și înveți cum **numerele** devin **muzică**.
 
 ---
 
@@ -21,206 +24,215 @@ Stațiile meteo adevărate stau pe un deal, iar prognoza ta o primești pe telef
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recap L6: măsurători, liste |
-| 10–25 | Scrisoare cu etichetă: de ce trimitem **nume + valoare** |
-| 25–55 | Programul stației (**Minim**, placa 1) |
-| 55–90 | Programul receptorului (**Minim**, placa 2) |
-| 90–112 | Alerta și „fără semnal” (**Complet**) |
-| 112–120 | Recapitulare, quiz, temă |
+| 0–10 | Recap L6: liste, `for index` |
+| 10–30 | Jocul „Dirijorul”: mâna schimbă sunetul |
+| 30–50 | Lumina în numere și `map` spre note |
+| 50–80 | Theremin vizual (**Minim**, orice placă) |
+| 80–110 | **Complet:** sunet, A și B (placa V2) |
+| 110–120 | Recap, bonus, arăți ce ai gata |
 
-**Unelte azi:** `radio send value … = …` · `on radio received (name, value)` · `radio set group` · `running time (ms)` · `if / else if` · variabile · `forever`
+**Unelte azi:** placa micro:bit · cablu micro-USB · browser Chrome sau Edge · [makecode.microbit.org](https://makecode.microbit.org)
+
+**Capitole azi:**  
+<span style="color:#D400D4;font-weight:700">Input</span> · <span style="color:#9C00C8;font-weight:700">Math</span> · <span style="color:#5C2D91;font-weight:700">LED</span> · <span style="color:#E63022;font-weight:700">Music</span> · <span style="color:#DC143C;font-weight:700">Variables</span> · <span style="color:#00A4A6;font-weight:700">Logic</span> · <span style="color:#1E90FF;font-weight:700">Basic</span>  
+*(blocuri noi: `play tone` (Music, difuzor doar pe V2), `0 × 0` (Math).)*
+
+**Blocurile de azi:**
+
+| Bloc | Ce face |
+|------|---------|
+| <span style="color:#E63022;font-weight:700">play tone</span> | cântă o notă (în Hz) pentru un număr de milisecunde; pe **V2** se aude din difuzorul plăcii, pe V1 doar cu căști sau buzzer la pinul P0 |
+| <span style="color:#9C00C8;font-weight:700">0 × 0</span> | înmulțește două numere |
+
+*Din lecțiile trecute le știi deja:* <span style="color:#1E90FF;font-weight:700">on start</span>, <span style="color:#1E90FF;font-weight:700">forever</span>, <span style="color:#1E90FF;font-weight:700">show icon</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>, <span style="color:#D400D4;font-weight:700">on button pressed</span>, <span style="color:#D400D4;font-weight:700">light level</span>, <span style="color:#9C00C8;font-weight:700">map</span>, <span style="color:#5C2D91;font-weight:700">plot bar graph of</span>, <span style="color:#DC143C;font-weight:700">set</span>, <span style="color:#00A4A6;font-weight:700">if … then … else</span>, <span style="color:#00A4A6;font-weight:700">0 < 0</span>, <span style="color:#00A4A6;font-weight:700">and</span>, <span style="color:#00A4A6;font-weight:700">0 = 0</span>, <span style="color:#9C00C8;font-weight:700">0 − 0</span>.
 
 ---
 
 ## Pas cu pas
 
-### 1) Scrisoarea cu etichetă
-Dacă îți dau un singur număr, `23`, nu știi dacă e temperatura, lumina sau câți pași am făcut. Dacă îți dau **„temp = 23”**, înțelegi imediat. Radio poate trimite exact așa: un **nume** și o **valoare**.
+### 1) Jocul „Dirijorul” (fără calculator)
+Un copil e **dirijorul**, ceilalți sunt **orchestra** și cântă „aaa”. Dirijorul coboară mâna: orchestra cântă mai grav. O ridică: mai acut. Un copil ține mâna **aproape de lumina de la fereastră**.
 
-### 2) Lucrăm în perechi, cu **două programe**
-- **Placa 1 = stația** → proiect: `Prenume_Nume_MB2_L07_statie`  
-- **Placa 2 = receptorul** → proiect: `Prenume_Nume_MB2_L07_receptor`
+Thereminul face același lucru: **distanța mâinii** schimbă **sunetul**.
 
-Amândouă folosesc **același grup** (numărul perechii, de exemplu `9`).
+**Încearcă tu — (5–8 min)**  
+- [ ] Ai cântat „grav” și „acut” ca orchestra  
+- [ ] Spui ce schimbă mâna în thereminul nostru: lumina  
 
-### 3) Programul stației — Minim
-Stația măsoară și trimite la fiecare 2 secunde.
+### 2) Lumina în numere, numerele în note
+<span style="color:#D400D4;font-weight:700">light level</span> dă un număr între `0` (întuneric) și `255` (foarte multă lumină). Când apropii mâna de ecran, **umbra** scade numărul.
 
-```text
-on start
-    radio set group 9
+O notă muzicală e o **frecvență** în Hz: aproximativ `200` (grav) până la `1000` (acut). Blocul <span style="color:#9C00C8;font-weight:700">map</span> potrivește intervalele:
 
-forever
-    radio send value "temp" = temperature
-    radio send value "lum" = light level
-    pause (ms) 2000
-```
-- Blocul se numește **radio send value** și are două locuri: **numele** (text, între ghilimele) și **valoarea**.  
-- Numele sunt scurte și fără diacritice: `temp` și `lum`.
+<span style="color:#DC143C;font-weight:700">set</span> `nota` to <span style="color:#9C00C8;font-weight:700">map</span> `light level` from `0` `255` to `200` `1000`  
 
-**Gata când:**  
-- [ ] Blocurile sunt puse în ordinea din lecție  
-- [ ] Simulatorul face ce scrie în „Minim”  
+Creezi variabila `nota`. Lumina `0` devine nota `200`, iar `255` devine `1000`.
 
-### 4) Programul receptorului — Minim
-Receptorul primește mesajele, își notează valorile în variabile și le arată la cerere.
+**Încearcă tu — (8–10 min)**  
+- [ ] Apropii mâna și numărul `nota` scade  
+- [ ] Ridici mâna și `nota` crește  
 
-Variabile: `temp`, `lum`, `ecran`.
+### 3) Theremin vizual: Minim
+Pe orice placă (și V1) putem **vedea** nota, ca o bară de LED-uri.
 
-```text
-on start
-    radio set group 9
-    set temp to 0
-    set lum to 0
-    set ecran to 0
+1. Proiect nou: `Prenume_Nume_MB2_L07`  
+2. Creezi variabila `nota`  
+3. În <span style="color:#1E90FF;font-weight:700">forever</span>: <span style="color:#DC143C;font-weight:700">set</span> `nota` to <span style="color:#9C00C8;font-weight:700">map</span> `light level` from `0` `255` to `200` `1000`  
+4. <span style="color:#00A4A6;font-weight:700">if … then … else</span>: dacă `light level < 30` (mâna acoperă complet), <span style="color:#1E90FF;font-weight:700">show icon</span> `Ghost`  
+5. Altfel: <span style="color:#5C2D91;font-weight:700">plot bar graph of</span> `nota` up to `1000`  
+6. La final <span style="color:#1E90FF;font-weight:700">pause (ms)</span> `100`  
 
-on radio received (name, value)
-    if name = "temp" then
-        set temp to value
-    else if name = "lum" then
-        set lum to value
+Programul tău (Minim):
 
-on button A pressed
-    set ecran to 1
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `nota` to <span style="color:#9C00C8;font-weight:700">map</span> `light level` from `0` `255` to `200` `1000`  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `light level < 30` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Ghost`  
+&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;<span style="color:#5C2D91;font-weight:700">plot bar graph of</span> `nota` up to `1000`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `100`
 
-on button B pressed
-    set ecran to 2
+**Încearcă tu — (15–20 min)**  
+- [ ] Bara crește când ridici mâna și scade când o apropii  
+- [ ] Când acoperi complet ecranul apare o fantomă  
+- [ ] Programul e pe placa adevărată  
 
-forever
-    if ecran = 1 then
-        show string "T"
-        show number temp
-    else if ecran = 2 then
-        show string "L"
-        show number lum
-    pause (ms) 100
-```
+### 4) Complet: sunetul (placa V2)
+Pe **V2** placa are difuzor. Adăugăm <span style="color:#E63022;font-weight:700">play tone</span> `nota` for `100` ms în <span style="color:#1E90FF;font-weight:700">forever</span>, dar **doar când** `sunet = 1` <span style="color:#00A4A6;font-weight:700">and</span> `light level > 30`.
 
-> **Despre blocul de primire:** în **Radio**, `on radio received` are variantă cu **nume și valoare**. Dacă nu o vezi, apasă pe săgeata de lângă `receivedNumber` sau caută în sertar blocul „on radio received name value”. Pentru a compara numele cu un text (`"temp"`), folosește blocul de comparație din **Text**, dacă cel din **Logic** nu primește textul.
+La <span style="color:#D400D4;font-weight:700">on button A pressed</span>: pornește sau oprește sunetul, cu <span style="color:#DC143C;font-weight:700">set</span> `sunet` to <span style="color:#9C00C8;font-weight:700">0 − 0</span> `1` `sunet` (`1` devine `0` și invers).  
+La <span style="color:#D400D4;font-weight:700">on button B pressed</span>: schimbă **gama**: `nota` se înmulțește cu `gama`, iar `gama` trece între `1` și `2` (o octavă mai sus).
 
-**Ce vezi pe ecran la receptor după A:** `T` și apoi temperatura trimisă de stație (de exemplu `22`). După B: `L` și lumina (de exemplu `140`).
+> **Pe V1** nu auzi nimic fără căști sau buzzer. Fă același program, dar în loc de sunet arată <span style="color:#1E90FF;font-weight:700">show number</span> `nota` când `sunet = 1`.
 
-**Test:** pune stația lângă fereastră sau în mână ca să se încălzească. Peste câteva secunde vezi temperatura crescând pe receptor.
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `sunet` to `1`  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `gama` to `1`  
 
-**Gata când:**  
-- [ ] Blocurile sunt puse în ordinea din lecție  
-- [ ] Simulatorul face ce scrie în „Minim”  
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `nota` to <span style="color:#9C00C8;font-weight:700">0 × 0</span> (<span style="color:#9C00C8;font-weight:700">map</span> `light level` from `0` `255` to `200` `1000`) `gama`  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `sunet = 1 and light level > 30` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#E63022;font-weight:700">play tone</span> `nota` for `100` ms  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `100`  
 
-### 5) Complet — alerta de căldură
-Adăugăm trei variabile: `prag` (de exemplu `28`), `alerta` (`0` sau `1`) și `ultimul` (momentul ultimului mesaj primit).
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `sunet` to <span style="color:#9C00C8;font-weight:700">0 − 0</span> `1` `sunet`  
 
-În `on start` adaugi: `set prag to 28`, `set alerta to 0`, `set ultimul to 0`.
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `gama = 1` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `gama` to `2`  
+&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `gama` to `1`
 
-În blocul de primire, la `temp`, verificăm pragul:
-
-```text
-on radio received (name, value)
-    set ultimul to running time (ms)
-    if name = "temp" then
-        set temp to value
-        if temp > prag then
-            set alerta to 1
-        else
-            set alerta to 0
-    else if name = "lum" then
-        set lum to value
-```
-
-În `forever` punem **alerta pe primul loc**:
-
-```text
-forever
-    if alerta = 1 then
-        show icon [Sad]
-        pause (ms) 300
-        clear screen
-        pause (ms) 300
-    else if running time (ms) - ultimul > 6000 then
-        show icon [Asleep]
-    else if ecran = 1 then
-        show string "T"
-        show number temp
-    else if ecran = 2 then
-        show string "L"
-        show number lum
-    pause (ms) 100
-```
-- Dacă `temp` e peste prag, pâlpâie `Sad`.  
-- Dacă nu am primit nimic de **6 secunde** (`6000` ms), receptorul arată `Asleep`: „stația nu mai vorbește”. Pentru asta ai nevoie de variabila `ultimul` (pusă pe `0` în `on start`).  
-- Altfel, arată `T` sau `L`.  
-- Pentru test, setează `prag` mai jos (de exemplu `24`) și încălzește stația în mână.
-
-**Gata când:**  
-- [ ] Blocurile pentru „Complet” sunt adăugate  
-- [ ] Simulatorul face tot ce scrie în „Complet”  
-
-### 6) Cine e vinovat? (depanare logică)
-Receptorul nu arată nimic. Care e **ordinea de verificat**?
-1. Stația e pornită și trimite? (Pune un `show icon` după fiecare `radio send` doar pentru test.)  
-2. **Același grup** pe amândouă?  
-3. Numele sunt **identice** (`temp` și `temp`, nu `Temp`)?  
-4. `ecran` e `1` sau `2`? (Ai apăsat A sau B?)  
-5. Plăcile sunt la o distanță mică?
+**Încearcă tu — (15–20 min)**  
+- [ ] Pe V2: sunetul urmărește mâna  
+- [ ] A pornește și oprește sunetul  
+- [ ] B urcă și coboară gama  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
 
 ---
 
 ## Greșeli frecvente
-1. **„Pe receptor rămâne 0”** — grupuri diferite sau numele nu se potrivesc.  
-2. **„Alerta pâlpâie mereu”** — `prag` e prea mic.  
-3. **„Receptorul arată Asleep chiar de la început”** — e normal: trec 6 secunde fără mesaj; la primul mesaj dispare.  
-4. **„Nu pot compara textul”** — folosește blocul de comparație pentru text (din **Text**).  
-5. **„Ecranul se încurcă”** — butoanele desenează direct. Lasă-le să schimbe doar `ecran`.  
-6. **„Temperatura nu se schimbă”** — stația trimite o dată la 2 secunde; așteaptă.
+1. **Nu se aude nimic** — placa e V1 fără căști sau buzzer, sau `sunet` e `0`, sau volumul de pe PC (pentru simulator) e oprit.  
+2. **Sunetul e continuu și enervant** — lipsește `pause (ms)` în `forever`.  
+3. **Nota nu se schimbă** — ai uitat `map` și ai pus lumina direct în `play tone`.  
+4. **Mereu fantomă** — pragul `30` e prea mare pentru camera ta. Testează cu `show number light level`.  
+5. **A nu oprește sunetul** — `set sunet to 1 − sunet` e scris cu valorile inversate.  
+6. **B nu schimbă gama** — `nota` nu e înmulțită cu `gama`.  
 
 ---
 
-## De făcut azi — „Stația meteo la distanță”
+## De făcut azi — „Theremin cu lumină”
+Salvat: `Prenume_Nume_MB2_L07`
 
-### Minim vs Complet
+### Minim vs Complet *(citește înainte să începi)*
 
 | | Ce trebuie |
 |--|------------|
-| **Minim** | Stația trimite `temp` și `lum` · receptorul arată **T** (A) și **L** (B) |
-| **Complet** | Minim + alertă la `temp > prag` + `Asleep` fără semnal 6 secunde |
+| **Minim („am reușit”)** | **Pasul 1** — bara de LED-uri arată nota după lumină, iar în întuneric apare o fantomă, cu **cel puțin 8 blocuri diferite**, pe placă |
+| **Complet (ținta orei)** | Minim + **Pasul 2** — sunet (V2), A pornește sau oprește, B schimbă gama, cu cel puțin **6 blocuri diferite** |
 
-### Pasul 1 — Minim
-- [ ] Două proiecte, câte unul pentru fiecare placă  
-- [ ] Același grup, aceleași nume (`temp`, `lum`)  
-- [ ] Receptorul păstrează valorile în `temp` și `lum`  
-- [ ] Merge pe cele două plăci reale  
+Dacă rămâi în urmă: **oprește-te la Minim** și salvează. Nu e eșec, e baza pentru lecția următoare.
 
-**→ Minim când:** schimbi temperatura stației și vezi numărul schimbându-se pe receptor.
+### Pasul 1 — Theremin vizual *(Minim)*
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `nota` to <span style="color:#9C00C8;font-weight:700">map</span> `light level` from `0` `255` to `200` `1000`  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `light level < 30` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Ghost`  
+&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;<span style="color:#5C2D91;font-weight:700">plot bar graph of</span> `nota` up to `1000`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `100`
 
-### Pasul 2 — Complet
-- [ ] `prag` și `alerta` funcționează  
-- [ ] `ultimul` + `running time (ms)` pentru `Asleep`  
-- [ ] Alerta are prioritate în `forever`  
-- [ ] Numele fișierelor sunt `MB2_L07_statie` și `MB2_L07_receptor`  
+- [ ] Proiect nou cu numele `Prenume_Nume_MB2_L07`  
+- [ ] Variabila `nota` creată  
+- [ ] Ai cel puțin **8 blocuri diferite**: <span style="color:#1E90FF;font-weight:700">forever</span>, <span style="color:#DC143C;font-weight:700">set</span>, <span style="color:#9C00C8;font-weight:700">map</span>, <span style="color:#D400D4;font-weight:700">light level</span>, <span style="color:#00A4A6;font-weight:700">if … then … else</span>, <span style="color:#00A4A6;font-weight:700">0 < 0</span>, <span style="color:#1E90FF;font-weight:700">show icon</span>, <span style="color:#5C2D91;font-weight:700">plot bar graph of</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>  
+- [ ] Programul e trimis pe placă  
+
+**→ Ai Minim când:** un coleg apropie și ridică mâna, iar bara de LED-uri crește și scade; când acoperă tot, apare fantoma.
+
+### Pasul 2 — Sunet, A și B *(Complet)*
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `sunet` to `1`  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `gama` to `1`  
+
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `nota` to <span style="color:#9C00C8;font-weight:700">0 × 0</span> (<span style="color:#9C00C8;font-weight:700">map</span> `light level` from `0` `255` to `200` `1000`) `gama`  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `sunet = 1 and light level > 30` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#E63022;font-weight:700">play tone</span> `nota` for `100` ms  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `100`  
+
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `sunet` to <span style="color:#9C00C8;font-weight:700">0 − 0</span> `1` `sunet`  
+
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `gama = 1` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `gama` to `2`  
+&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `gama` to `1`
+
+- [ ] Variabilele `sunet` și `gama` create și puse pe `1`  
+- [ ] <span style="color:#E63022;font-weight:700">play tone</span> `nota` for `100` ms doar când `sunet = 1` și `light level > 30`  
+- [ ] A pornește și oprește sunetul  
+- [ ] B schimbă gama (`1` și `2`)  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
+- [ ] Salvat din nou: `Prenume_Nume_MB2_L07`  
+
+**Gata Complet când:** cântă nota după mână, A oprește sunetul, B urcă o octavă (pe V1: arată numărul notei).
 
 ---
 
-## Bonus (după Complet)
-- [ ] Trimite și **a treia valoare**: câte secunde a funcționat stația (`running time (ms) / 1000`)  
-- [ ] Pe stație, A+B oprește trimiterea (o variabilă `trimite`)  
-- [ ] Fă alerta și pentru **lumină** (de exemplu, `lum < 20` = „e întuneric”)  
-- [ ] Desenează cum ar arăta o rețea cu **mai multe stații** și un singur receptor
+## Bonus ★★★ — Provocare: Gama de cinci note
+*Doar dacă ai terminat Complet.*
+
+- [ ] Schimbă intervalul notelor (`200`–`1000`) și vezi cum se schimbă sunetul  
+- [ ] **Provocarea:** nu mai cânți orice frecvență, ci **5 note fixe** (Do `262`, Re `294`, Mi `330`, Fa `349`, Sol `392`). Cu <span style="color:#9C00C8;font-weight:700">map</span> transformi lumina în `0`–`4`, apoi alegi nota cu <span style="color:#00A4A6;font-weight:700">else if</span>. Un coleg **cântă “Do Re Mi”** doar cu mâna, în ordine (pe V1: litera notei cu <span style="color:#1E90FF;font-weight:700">show string</span>).  
 
 ## Recapitulare rapidă
-1. `radio send value "temp" = …` trimite **un nume** și **o valoare**.  
-2. Receptorul verifică **numele** ca să știe ce a primit.  
-3. Valorile primite se păstrează în **variabile**.  
-4. `running time (ms)` ajută să observăm când stația nu mai trimite.  
-5. Un sistem are mai multe plăci cu **roluri**: emițător și receptor.
+1. <span style="color:#D400D4;font-weight:700">light level</span> dă lumina între `0` și `255`  
+2. <span style="color:#9C00C8;font-weight:700">map</span> potrivește un interval cu altul: lumină → notă  
+3. O notă e o **frecvență** în Hz: grav = mic, acut = mare  
+4. <span style="color:#E63022;font-weight:700">play tone</span> cântă o notă (difuzor pe V2)  
+5. Variabilele `sunet` și `gama` fac instrumentul **controlabil**  
+6. Minim = Pasul 1 · Complet = Pasul 1 + 2  
 
 ## Schema pe scurt *(pe foaie)*
+lumina `0–255` → <span style="color:#9C00C8;font-weight:700">map</span> → `nota` `200–1000`
 
-Stația: `forever` → măsoară → `radio send value` → aer → Receptor: `on radio received` → variabile → `forever` arată T / L / alertă
+<span style="color:#1E90FF;font-weight:700">forever</span>: bara de LED-uri · `sunet = 1 și lumină > 30` → <span style="color:#E63022;font-weight:700">play tone</span> `nota`
 
-**Quiz scurt:**  
-- De ce trimitem un nume împreună cu valoarea?  
-- Ce se întâmplă dacă stația și receptorul au grupuri diferite?  
-- Ce arată receptorul când stația nu mai trimite?  
-- Unde păstrează receptorul ultima valoare?
+A → `sunet = 1 − sunet` · B → `gama` `1` sau `2`
 
-## Temă
-Alege **locul perfect** pentru o stație meteo la școală sau acasă (afară, la umbră, ferită de ploaie). Desenează locul și scrie de ce l-ai ales.
+**Quiz scurt (cu profesorul):**  
+- Ce număr dă lumina când acoperi ecranul?  
+- Ce face blocul `map`?  
+- Ce e o frecvență în Hz?  
+- De ce `forever` are nevoie de pauză?  
+- Cum trece `sunet` de la `1` la `0` și invers?  
+
+## Temă (opțional)
+- Dacă ai doar Minim: acasă, adaugi sunetul (V2) sau numărul notei (V1) (Pasul 2), în același `Prenume_Nume_MB2_L07`.  
+- Dacă ai Complet: desenezi pe foaie un instrument care folosește **alt senzor** (temperatura, înclinarea) și scrii ce notă ar da.  
+- Dacă ai terminat și Bonusul: faci o copie și schimbi notele cu o melodie scurtă.  
+
+## Ce urmează
+În **Lecția 8** repari programe stricate: **doctorul de cod**.
