@@ -85,10 +85,10 @@ export const module = [
   { id: 'm15', curs_id: 'c1', nume: 'Modul 4 — Proiecte și autonomie', ordine: 4, badge: 'CodeMaker Graduate', descriere: '10 lecții în care construiești programe mai mari: fișiere, vector STL, structuri și meniuri. Faci trei proiecte pe consolă: un joc, un magazin și un quiz, apoi le prezinți.' },
   { id: 'm34', curs_id: 'c1', nume: 'Modul 5 — Proiect RPG în consolă', ordine: 5, badge: 'RPG Creator', descriere: '10 lecții, un singur proiect mare: un joc RPG în consolă, cu hartă, erou, inventar, monștri, magazin, misiuni și salvare. La final îl prezinți.' },
   // Arduino — 4 module × 10 lecții (10+ ani; Tinkercad Circuits)
-  { id: 'm3', curs_id: 'c2', nume: 'Modul 1 — Primele circuite', ordine: 1, badge: 'Circuit Starter' },
-  { id: 'm4', curs_id: 'c2', nume: 'Modul 2 — Senzori', ordine: 2, badge: 'Sensor Scout' },
-  { id: 'm35', curs_id: 'c2', nume: 'Modul 3 — Afișaj și mișcare', ordine: 3, badge: 'Display Maker' },
-  { id: 'm36', curs_id: 'c2', nume: 'Modul 4 — Proiecte complete', ordine: 4, badge: 'Arduino Creator' },
+  { id: 'm3', curs_id: 'c2', nume: 'Modul 1 — Primele circuite', ordine: 1, badge: 'Circuit Starter', descriere: '10 lecții cu un mic proiect în fiecare: aprinzi LED-uri, citești butoane, reglezi lumina și faci sunet cu un buzzer. Înveți programul de bază al plăcii: pinMode, digitalWrite, if, for și switch. La final: un panou cu mai multe moduri.' },
+  { id: 'm4', curs_id: 'c2', nume: 'Modul 2 — Senzori', ordine: 2, badge: 'Sensor Scout', descriere: '10 lecții în care placa simte lumea din jur: lumină, temperatură, distanță, mișcare și umiditate. Faci o veioză automată, un termometru, o parcare cu senzor și o mini-stație meteo. La final: o casă care ne protejează.' },
+  { id: 'm35', curs_id: 'c2', nume: 'Modul 3 — Afișaj și mișcare', ordine: 3, badge: 'Display Maker', descriere: '10 lecții despre afișaj și mișcare: ecranul LCD, servomotorul, motorul și telecomanda. Faci o numărătoare inversă, o barieră automată, un radar, un ventilator și un seif cu cod. La final: o telecomandă magică.' },
+  { id: 'm36', curs_id: 'c2', nume: 'Modul 4 — Proiecte complete', ordine: 4, badge: 'Arduino Creator', descriere: '10 lecții pentru proiecte complete: pornești de la idee și schemă, apoi construiești o casă inteligentă, un joc de reflexe, un oracol cu zar și un robot care ocolește obstacole. La final: o expoziție cu proiectul tău.' },
   // Blender
   { id: 'm5', curs_id: 'c3', nume: 'Modul 1 — Primii pași în Blender', ordine: 1, badge: 'Blender Starter', descriere: '10 lecții în care înveți să te miști în Blender și să construiești din forme simple: un omuleț de zăpadă, o rachetă, o căsuță. Apoi le dai culoare, lumină și faci prima imagine randată. La final: o mini-diorama, adică o scenă 3D în miniatură, în care aduni figurinele făcute în lecțiile trecute.' },
   { id: 'm37', curs_id: 'c3', nume: 'Modul 2 — Modelare în Edit Mode', ordine: 2, badge: 'Mesh Modeler', descriere: '10 lecții de modelare în Edit Mode: vârfuri, muchii și fețe, extrude, bevel, loop cut și simetrie. Faci un turn de castel, un robot, o cană, un fluture și o rachetă în stil low-poly.' },
@@ -289,16 +289,16 @@ export const lectii = [
   ]),
   // Arduino Modul 1 — Primele circuite
   ...genLectii('m3', [
-    'Hello, Arduino!',
-    'Semnalizator de bicicletă',
-    'Lumina de veghe',
-    'Trecere de pietoni',
-    'Lampa cu reglaj',
-    'Lampa RGB a camerei',
-    'Soneria de la ușă',
-    'Pian cu 4 clape',
-    'Cine apasă primul?',
-    'Panoul camerei mele',
+    'LED-ul care clipește',
+    'Bicicleta mea',
+    'Lumina mea de veghe',
+    'Trecerea mea',
+    'Lampa mea',
+    'Lampa mea colorată',
+    'Soneria mea',
+    'Pianul meu',
+    'Duelul de reflexe',
+    'Panoul meu',
   ]),
   // Arduino Modul 2 — Senzori
   ...genLectii('m4', [
