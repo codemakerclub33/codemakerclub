@@ -183,7 +183,7 @@ Răspunsuri: ultima poză rămâne pe ecran, iar după Reset programul pornește
 
 ---
 
-## Recapitulare rapidă
+## Recapitulare pe scurt
 1. **Eveniment** = ceva ce se întâmplă (apeși un buton).  
 2. `on button A pressed` rulează **doar** când apeși A.  
 3. A e în **stânga**, B e în **dreapta**, **A+B** = ambele **deodată**.  

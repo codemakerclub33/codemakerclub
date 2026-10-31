@@ -208,7 +208,7 @@ Poți copia un bloc `show leds` cu **clic dreapta → Duplicate**, ca să nu des
 
 ---
 
-## Recapitulare rapidă
+## Recapitulare pe scurt
 1. Ecranul are **25 de LED-uri**, în 5 rânduri și 5 coloane.  
 2. `show leds` = desenezi tu LED cu LED.  
 3. Animația = **mai multe cadre** + **pauze**.  

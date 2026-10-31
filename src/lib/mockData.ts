@@ -167,7 +167,7 @@ export const module = [
   },
   // micro:bit — c8: 2 module blocuri (8+) · c10: 2 module Python (10+)
   { id: 'm21', curs_id: 'c8', nume: 'Modul 1 — MakeCode (blocuri)', ordine: 1, badge: 'micro:bit Starter', descriere: '10 lecții cu un mic proiect în fiecare: trimiți programe pe placă, desenezi pe LED-uri, folosești butoanele, variabilele, deciziile, buclele și senzorii. La final: o insignă inteligentă care adună proiectele din lecțiile trecute.' },
-  { id: 'm22', curs_id: 'c8', nume: 'Modul 2 — Proiecte (blocuri + radio)', ordine: 2, badge: 'micro:bit Maker' },
+  { id: 'm22', curs_id: 'c8', nume: 'Modul 2 — Proiecte (blocuri + radio)', ordine: 2, badge: 'micro:bit Maker', descriere: '10 lecții cu proiecte mai mari: plăcile vorbesc între ele prin radio, comanzi LED-uri externe, faci alarme și stații meteo și înveți să depanezi programe stricate. La final: o expoziție Maker cu cele mai bune proiecte ale tale.' },
   { id: 'm23', curs_id: 'c10', nume: 'Modul 1 — Python pe micro:bit', ordine: 1, badge: 'micro:bit Coder' },
   { id: 'm41', curs_id: 'c10', nume: 'Modul 2 — Proiecte Python', ordine: 2, badge: 'micro:bit Python Pro' },
   // Roblox Studio — 4 module × 10 lecții (12+ ani; Obby pe verticală)

@@ -213,7 +213,7 @@ forever
 
 ---
 
-## Recapitulare rapidă
+## Recapitulare pe scurt
 1. `forever` = repetă pe veci.  
 2. `repeat 4 times` = repetă de 4 ori.  
 3. `for index from 0 to 4` = repetă de **5** ori și îți dă numărul `index`.  

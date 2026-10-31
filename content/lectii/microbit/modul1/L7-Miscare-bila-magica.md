@@ -183,7 +183,7 @@ Fă un **experiment** în grup: fiecare scutură de 20 de ori și notează câte
 
 ---
 
-## Recapitulare rapidă
+## Recapitulare pe scurt
 1. **Accelerometrul** simte mișcarea plăcii.  
 2. `on shake` pornește când scuturi.  
 3. `pick random 0 to 2` alege `0`, `1` sau `2` la întâmplare.  

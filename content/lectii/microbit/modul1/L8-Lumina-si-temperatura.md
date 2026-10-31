@@ -198,7 +198,7 @@ Răspuns: semnul e **greșit**. Cu `>` felinarul se aprinde la **lumină** și s
 
 ---
 
-## Recapitulare rapidă
+## Recapitulare pe scurt
 1. `light level` dă un număr între **0** și **255**.  
 2. Lumina e măsurată cu **LED-urile** de pe ecran.  
 3. `temperature (°C)` dă temperatura **aproximativă**.  

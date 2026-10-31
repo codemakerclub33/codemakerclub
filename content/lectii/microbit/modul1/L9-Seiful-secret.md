@@ -240,7 +240,7 @@ on button B pressed
 
 ---
 
-## Recapitulare rapidă
+## Recapitulare pe scurt
 1. O variabilă poate ține minte **pasul** în care te afli (starea).  
 2. `if / else if / else` alege între trei sau mai multe variante.  
 3. O **funcție** adună blocuri pe care le folosești în mai multe locuri.  

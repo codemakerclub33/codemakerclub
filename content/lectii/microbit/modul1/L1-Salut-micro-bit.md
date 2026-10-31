@@ -198,7 +198,7 @@ Placa ta spune mai mult decât „Salut”.
 4. **Download** trimite programul pe placă: direct sau prin fișier **.hex**.  
 5. **Reset** pornește programul de la început.  
 
-**Schema pe scurt (pe foaie):** proiect nou → `on start` → `show icon` / `show string` → simulator → **Download** → placa
+6. **Schema pe scurt (pe foaie):** proiect nou → `on start` → `show icon` / `show string` → simulator → **Download** → placa
 
 ---
 

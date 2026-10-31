@@ -185,7 +185,7 @@ Răspunsuri: **7** · **1** · **1** (`set` înlocuiește complet valoarea veche
 
 ---
 
-## Recapitulare rapidă
+## Recapitulare pe scurt
 1. **Variabilă** = cutie cu **nume** și **valoare**.  
 2. `set score to 0` = pun direct valoarea.  
 3. `change score by 1` = adaug (sau scad, cu `-1`).  

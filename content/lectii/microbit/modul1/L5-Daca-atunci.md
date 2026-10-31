@@ -199,7 +199,7 @@ Răspuns: verificarea e **înaintea** adunării, deci vede `10` abia când apeș
 
 ---
 
-## Recapitulare rapidă
+## Recapitulare pe scurt
 1. **Condiție** = întrebare cu răspuns **adevărat** sau **fals**.  
 2. `if … then` face ceva **doar dacă** e adevărat.  
 3. `else` = „altfel”.  
