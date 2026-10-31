@@ -1,25 +1,29 @@
-Lecția zece. Proiect: generatorul de povești.
+Lecția zece. Salonul meu de proiecte.
 
-Aceasta este lecția de final a modulului. Folosești tot ce ai învățat: print, variabile, input, operatori, f-string, if și random, ca să construiești un generator de povești care scrie o poveste diferită de fiecare dată. Proiectul se numește Povestea mea. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P unu, linie jos, L zece, punct P Y.
+Aceasta este lecția de final a modulului. Aduni într-un singur program proiectele din lecțiile trecute, cu mici modificări, și le alegi dintr-un meniu. Proiectul se numește Salonul meu de proiecte. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P unu, linie jos, L zece, punct P Y.
 
-Obiectivul. La final ai un program complet, de patruzeci până la șaizeci de linii, care citește date de la utilizator, alege la întâmplare părți din poveste, ia decizii cu if și afișează totul frumos. Apoi îți verifici cunoștințele din tot modulul. Minim: un program care citește trei lucruri, nume, animal și loc, și afișează o poveste cu f-string. Complet: minim, plus începuturi și sfârșituri alese cu random punct choice, un zar care schimbă finalul și un chenar frumos.
+Ce facem azi. La final ai un program cu un meniu: alegi un număr și rulează unul dintre proiectele tale din modul. Fișa de jucător, Calculatorul, Oracolul, Interviul, Laboratorul de cuvinte sau Chestionarul. Nu scrii totul de la zero: reiei codul din lecțiile trecute și îl modifici puțin. Așa lucrează și programatorii adevărați: refolosesc ce au făcut deja. Apoi îți verifici cunoștințele din tot modulul.
 
-De ce contează. Proiectele sunt locul în care se vede dacă ai înțeles. Aici îmbini nouă lecții într-un singur program. Programatorii adevărați învață la fel: construind lucruri mici, dar complete.
+Instrucțiuni noi azi. Nu ai instrucțiuni noi. Combini ce știi deja: input și if, elif, else pentru meniu, variabile și print pentru fișă, operatorii pentru calculator, f-string pentru laboratorul de cuvinte, și random pentru oracol.
 
-Primul pas. Planul poveștii. O poveste are trei părți: început, întâmplare, sfârșit. Programul citește datele: numele eroului, un animal și un loc.
+Primul pas. Ce proiecte reluăm. Fișa de jucător din lecția doi, Calculatorul din lecția cinci și Oracolul din lecția nouă formează Minimul. Interviul din lecția patru, Laboratorul de cuvinte din lecția șase și Chestionarul din lecția șapte se adaugă la Complet. La fiecare schimbi ceva mic.
 
-Al doilea pas. Părți alese la întâmplare. Pui mai multe începuturi într-o listă, de exemplu, Într-o dimineață însorită, și alegi unul cu random punct choice. La fel faci cu întâmplările, scrise ca f-string, cu numele eroului. Atenție: lista cu f-string se scrie după ce citești datele.
+Al doilea pas. Meniul. Citești numele, afișezi un titlu într-un chenar și lista de opțiuni. Apoi citești alegerea. Input dă mereu text, de aceea compari cu textul unu, nu cu numărul unu. Cu if și elif alegi proiectul, iar else prinde orice număr greșit.
 
-Al treilea pas. Zarul decide finalul. Arunci un zar. Dacă iese un număr mare, final fericit, altfel final mai puțin fericit.
+Al treilea pas. Minim, primele trei moduri. Pui codul fiecărui proiect în locul mesajului din meniu, indentat cu patru spații. La fișa de jucător, numele nu mai este scris în cod, ci vine de la tastatură. Pentru oracol, scrii import random pe prima linie a fișierului.
 
-Al patrulea pas. Povestea completă. Pui totul într-un generator: titlul într-un chenar, apoi începutul, întâmplarea și finalul, cu print.
+Al patrulea pas, pentru Complet. Adaugi încă trei moduri: interviul, laboratorul de cuvinte, care lucrează pe numele deja citit, și chestionarul cu două întrebări și un scor. Apoi compari programul tău cu cel complet din lecție.
 
 Al cincilea pas. Verificarea modulului. Rezolvi pe foaie, fără să te uiți în lecții. Răspunsurile sunt la final.
 
-Greșeli frecvente. Name Error: ai folosit variabila înainte să o citești. Povestea arată mereu la fel: ai scris textul direct, fără choice. F-string-ul din listă nu se completează corect: lista este scrisă înainte de input. Type Error la vârstă plus unu: input dă text, deci folosești int. Lipsește o virgulă între elementele listei.
+Greșeli frecvente. Meniul nu face nimic: ai comparat cu număr, nu cu text. Indentation Error: codul din mod nu este indentat la fel. Name Error la random: ai uitat import random. Se rulează mai multe moduri: ai scris if în loc de elif. Name Error la nume: ai folosit numele înainte să îl citești.
 
-Proiectul de azi. Povestea mea. Minim înseamnă o poveste cu f-string. Complet înseamnă alegeri random, zar și chenar.
+Proiectul de azi. Salonul meu de proiecte. Minim înseamnă un meniu cu trei moduri. Complet înseamnă și celelalte trei moduri, plus o modificare a ta la fiecare.
 
-Recapitulare. Print, input, variabile și tipuri. Operatori și ordinea lor. F-string și metode de text. If, elif, else. And, or, not. Import random, randint, choice și liste simple.
+Provocare, trei stele. Modul tău secret. Adaugi un al șaptelea mod, Poarta parcului din lecția opt. La oracol afișezi un mesaj special dacă numărul norocos este șase. Și afișezi la sfârșit, în orice mod, un mesaj de rămas bun cu numele tău.
+
+Recapitulare. Print, input, variabile și tipuri. Operatori și ordinea lor. F-string și metode de text. If, elif, else. And, or, not. Import random, randint, choice și liste simple. Un meniu cu input și elif pune proiectele laolaltă.
+
+Ce urmează. În Modulul doi înveți să repeți, cu for și while, să colecționezi, cu liste și dicționare, și să organizezi programele în funcții.
 
 Felicitări, ai terminat Modulul unu de Python.

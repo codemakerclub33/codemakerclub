@@ -1,4 +1,4 @@
-# LECȚIA 5 — Calcule și operatori
+# LECȚIA 5 — Calculatorul de buzunar
 **Modulul 1 · Primii pași în Python · 2 ore**  
 **Code Maker Club · Python Starter**
 
@@ -7,13 +7,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei folosești `+ - * /`, ridicarea la putere `**`, câtul `//` și restul `%`, respecți ordinea operațiilor, folosești parantezele și prescurtările `+=`, `-=`, `*=`.  
-**Minim:** un program care citește două numere și afișează rezultatele a 4 operații.  
-**Ținta orei (Complet):** + câtul, restul și puterea, plus o aplicație practică (de exemplu, conversia secundelor în minute și secunde).
-
-## De ce contează
-Jocurile calculează tot timpul: viteze, distanțe, scoruri, câte vieți au mai rămas. Restul împărțirii (`%`) se folosește peste tot: ca să afli dacă un număr e par, ca să rotești un personaj sau ca să faci un ceas.
+## Ce facem azi
+La finalul orei folosești `+ - * /`, ridicarea la putere `**`, câtul `//` și restul `%`, respecți ordinea operațiilor, folosești parantezele și prescurtările `+=`, `-=`, `*=`. Jocurile calculează tot timpul: viteze, distanțe, scoruri, câte vieți au mai rămas. Restul împărțirii (`%`) se folosește peste tot: ca să afli dacă un număr e par, ca să rotești un personaj sau ca să faci un ceas.
 
 ---
 
@@ -25,10 +20,22 @@ Jocurile calculează tot timpul: viteze, distanțe, scoruri, câte vieți au mai
 | 10–30 | Operatorii de bază și puterea (**Exemplul 1**) |
 | 30–60 | Câtul `//` și restul `%` (**Exemplele 2–3**, **5**) |
 | 60–80 | Ordinea operațiilor (**Exemplul 4**) |
-| 80–95 | Numerele cu virgulă și prescurtările (**Exemplele 6–7**) |
-| 95–112 | Aplicații (**Exemplele 8–9**) |
-| 112–118 | Mini-proiect (**Exemplul 10**) |
+| 80–95 | Prescurtările (**Exemplul 6**) |
+| 95–112 | Aplicații (**Exemplul 7**) |
+| 112–118 | Mini-proiect (**Exemplul 8**) |
 | 118–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `+  -  *  /` | Cele patru operații de bază | `7 / 2` |
+| `**` | Ridicare la putere | `2 ** 3` |
+| `//` și `%` | Câtul și restul împărțirii | `9 // 2` și `9 % 2` |
+| `+=`, `-=`, `*=` | Prescurtări pentru schimbarea unei variabile | `scor += 5` |
+| paranteze `( )` | Schimbă ordinea calculelor | `(2 + 3) * 4` |
 
 ---
 
@@ -198,26 +205,8 @@ Aceasta este problema clasică: **împărțirea cu rest**. `//` spune câte prim
 
 ## 6. Numerele cu virgulă și prescurtările
 
-### Exemplul 6 — Un mic secret al calculatoarelor
 
-```python
-print(0.1 + 0.2)
-print(round(0.1 + 0.2, 2))
-print(10 / 3)
-print(round(10 / 3, 2))
-```
-
-**Ieșire:**
-```text
-0.30000000000000004
-0.3
-3.3333333333333335
-3.33
-```
-
-Calculatoarele păstrează numerele cu virgulă în binar și uneori apar mici **diferențe** la final. Nu e o greșeală a ta! Folosește `round(număr, zecimale)` când vrei un rezultat frumos.
-
-### Exemplul 7 — Prescurtări
+### Exemplul 6 — Prescurtări
 
 ```python
 x = 10
@@ -255,35 +244,15 @@ print(x)
 | `x **= 2` | `x = x ** 2` |
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 6** (Un mic secret al calculatoarelor)  
-- [ ] Am scris și am rulat **Exemplul 7** (Prescurtări)  
+- [ ] Am scris și am rulat **Exemplul 6** (Prescurtări)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 7. Aplicații
 
-### Exemplul 8 — Media a trei note
 
-```python
-a = int(input("Nota 1: "))
-b = int(input("Nota 2: "))
-c = int(input("Nota 3: "))
-media = (a + b + c) / 3
-print("Media este", round(media, 1))
-```
-
-**Ieșire:**
-```text
-Nota 1: 9
-Nota 2: 10
-Nota 3: 8
-Media este 9.0
-```
-
-Parantezele sunt importante: fără ele, `a + b + c / 3` ar împărți doar pe `c` la 3.
-
-### Exemplul 9 — Secunde în minute și secunde
+### Exemplul 7 — Secunde în minute și secunde
 
 ```python
 total = int(input("Cate secunde? "))
@@ -301,15 +270,14 @@ Cate secunde? 135
 Același truc cu `//` și `%` îl folosești pentru ceasuri, cronometre și pentru jocuri cu timp.
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 8** (Media a trei note)  
-- [ ] Am scris și am rulat **Exemplul 9** (Secunde în minute și secunde)  
+- [ ] Am scris și am rulat **Exemplul 7** (Secunde în minute și secunde)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 8. Mini-proiect
 
-### Exemplul 10 — Calculatorul de buzunar
+### Exemplul 8 — Calculatorul de buzunar
 
 ```python
 print("=== Calculator ===")
@@ -341,65 +309,43 @@ Al doilea numar: 5
 ```
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** (Calculatorul de buzunar)  
+- [ ] Am scris și am rulat **Exemplul 8** (Calculatorul de buzunar)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Calculatorul de buzunar”
 
-### Exercițiul A — „Calculatorul de buzunar” (obligatoriu)
+### Minim vs Complet
+
+| | Ce trebuie |
+|--|------------|
+| **Minim** | Un program care citește două numere și afișează rezultatele a 4 operații |
+| **Complet** | Minim + câtul, restul și puterea, plus o aplicație practică (de exemplu, conversia secundelor în minute și secunde) |
+
+### Pasul 1 — Minim
+- [ ] Un program care citește două numere și afișează rezultatele a 4 operații  
+
+### Pasul 2 — Complet
 Scrie un program care:
 1. citește **două numere întregi**;
 2. afișează cele **7 rezultate** (`+ - * / // % **`), fiecare pe un rând, cu mesaj clar;
 3. are un titlu și un chenar.
 
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
-
-```python
-print(2 + 3 * 2)
-print((2 + 3) * 2)
-print(9 // 2 + 9 % 2)
-print(2 ** 2 ** 2)
-print(100 - 10 * 5 + 2)
-```
-
-### Exercițiul C — Ora și minutele
-Citește un număr de **minute** (de exemplu `135`) și afișează câte **ore** și câte **minute** reprezintă (`2 ore și 15 minute`).
-
-### Exercițiul D — Găsește greșelile
-Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
-
-```text
-a = input("Primul numar: ")
-b = input("Al doilea numar: ")
-print("Suma:", a + b)
-media = a + b / 2
-print("Puterea:", a ^ b)
-print("Restul:", a % 0)
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. Ce face `//` și ce face `%`?  
-2. Cum afli dacă un număr este par?  
-3. De ce `2 + 3 * 4` dă `14`, iar `(2 + 3) * 4` dă `20`?
-
-**Gata când:**
+**Gata când:**  
 - [ ] Programul citește două numere  
 - [ ] Afișează toate cele 7 operații  
 - [ ] Rezultatele sunt corecte (verifică pe hârtie două dintre ele)  
-- [ ] Ai explicat pe foaie ce fac `//` și `%`  
 - [ ] Fișierul se numește `Prenume_Nume_P1_L5.py`  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Calcule de zi cu zi
+*Doar dacă ai terminat Complet.*
+
 - [ ] Citește un număr și afișează dacă e par (`restul` la 2) sau impar  
 - [ ] Citește un număr de zile și afișează câte **săptămâni** și câte **zile** sunt  
 - [ ] Calculează **aria** și **perimetrul** unui pătrat, citind latura  
-- [ ] Citește o sumă de bani și împart-o la 4 prieteni: câți lei primește fiecare și câți rămân  
 
 ---
 
@@ -439,11 +385,75 @@ Răspunde pe foaie:
 ---
 
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
+1. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).
 2. Scrie un program care citește **prețul unui produs** și **banii** pe care îi ai și afișează câte bucăți poți cumpăra și câți bani îți rămân (`//` și `%`).  
 3. Scrie un program care citește un **număr de secunde** și afișează câte **ore, minute și secunde** reprezintă.  
-4. **Bonus:** calculează câte **zile și ore** au 100 de ore.  
-5. Salvează totul ca `Tema_P1_L5_Prenume_Nume.py`.
+4. Salvează totul ca `Tema_P1_L5_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Două exemple în plus, de rulat și de înțeles singur.
+
+#### Acasă 1 — Un mic secret al calculatoarelor
+
+```python
+print(0.1 + 0.2)
+print(round(0.1 + 0.2, 2))
+print(10 / 3)
+print(round(10 / 3, 2))
+```
+
+**Ieșire:**
+```text
+0.30000000000000004
+0.3
+3.3333333333333335
+3.33
+```
+
+Calculatoarele păstrează numerele cu virgulă în binar și uneori apar mici **diferențe** la final. Nu e o greșeală a ta! Folosește `round(număr, zecimale)` când vrei un rezultat frumos.
+
+#### Acasă 2 — Media a trei note
+
+```python
+a = int(input("Nota 1: "))
+b = int(input("Nota 2: "))
+c = int(input("Nota 3: "))
+media = (a + b + c) / 3
+print("Media este", round(media, 1))
+```
+
+**Ieșire:**
+```text
+Nota 1: 9
+Nota 2: 10
+Nota 3: 8
+Media este 9.0
+```
+
+Parantezele sunt importante: fără ele, `a + b + c / 3` ar împărți doar pe `c` la 3.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+print(2 + 3 * 2)
+print((2 + 3) * 2)
+print(9 // 2 + 9 % 2)
+print(2 ** 2 ** 2)
+print(100 - 10 * 5 + 2)
+```
+
+**Găsește greșelile.** Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
+
+```text
+a = input("Primul numar: ")
+b = input("Al doilea numar: ")
+print("Suma:", a + b)
+media = a + b / 2
+print("Puterea:", a ^ b)
+print("Restul:", a % 0)
+```
 
 ---
 

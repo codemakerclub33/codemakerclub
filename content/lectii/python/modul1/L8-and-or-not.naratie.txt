@@ -1,16 +1,16 @@
-Lecția opt. And, or, not.
+Lecția opt. Poarta parcului de distracții.
 
 Uneori o singură condiție nu ajunge: ai bilet și ai peste zece ani, e sâmbătă sau duminică, nu plouă. Azi înveți cuvintele cu care legi condițiile între ele. Proiectul se numește Poarta parcului de distracții. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P unu, linie jos, L opt, punct P Y.
 
-Obiectivul. La final folosești and, or și not, înțelegi tabelele de adevăr, scrii condiții pentru intervale și respecți ordinea în care Python le evaluează. Minim: un program cu o condiție cu and și una cu or. Complet: minim, plus not, un interval, de la unu la zece, și un program final cu mai multe reguli.
+Ce facem azi. La final folosești and, or și not, înțelegi tabelele de adevăr, scrii condiții pentru intervale și respecți ordinea în care Python le evaluează. Jocurile și aplicațiile iau decizii cu mai multe condiții deodată: dacă jucătorul are cheia și ușa este aproape, dacă are zero vieți sau timpul a expirat. Fără and și or ai scrie zeci de if-uri unul în altul.
 
-De ce contează. Jocurile și aplicațiile iau decizii cu mai multe condiții deodată: dacă jucătorul are cheia și ușa este aproape, dacă are zero vieți sau timpul a expirat. Fără and și or ai scrie zeci de if-uri unul în altul.
+Instrucțiuni noi azi. And este adevărat doar dacă ambele condiții sunt adevărate. Or este adevărat dacă măcar una este adevărată. Not răstoarnă adevărul. Poți verifica un interval, de exemplu dacă nota este între unu și zece.
 
 Primul pas. And și or. And înseamnă și una, și alta: amândouă condițiile trebuie să fie adevărate. Or înseamnă sau una, sau alta: ajunge una.
 
 Al doilea pas. Not și tabelele de adevăr. Not inversează: din adevărat face fals. Poți ține minte simplu: and este strict, cere ambele, or este blând, îi ajunge una.
 
-Al treilea pas. Situații din viața reală. Nota trebuie să fie între unu și zece. Reducere la bilet după vârstă. Vocală sau consoană, cu or. Un interval se scrie scurt, unu mai mic sau egal cu x, mai mic sau egal cu zece.
+Al treilea pas. Situații din viața reală. Nota trebuie să fie între unu și zece. Un interval se scrie scurt, unu mai mic sau egal cu x, mai mic sau egal cu zece.
 
 Al patrulea pas. Parole și ordinea de evaluare. Poți valida o parolă cu mai multe reguli. Python evaluează întâi not, apoi and, apoi or. Parantezele schimbă ordinea. Când nu ești sigur, pune paranteze.
 
@@ -18,6 +18,10 @@ Greșeli frecvente. If x egal unu or doi se comportă ciudat, pentru că doi sin
 
 Proiectul de azi. Poarta parcului de distracții. Programul întreabă vârsta, înălțimea și dacă are un adult alături. Minim înseamnă o condiție cu and și una cu or. Complet înseamnă și not, un interval și mai multe reguli.
 
+Provocare, trei stele. Semaforul deștept. Verifici dacă un număr se împarte și la trei, și la cinci, faci un semafor deștept care lasă pietonul să treacă doar când lumina este verde și nu vine nicio mașină, și faci o verificare de parolă cu cel puțin patru reguli.
+
 Recapitulare. A and B este adevărat când amândouă sunt adevărate. A or B este adevărat când cel puțin una este adevărată. Not inversează. Ordinea este not, and, or. Intervalele se scriu scurt.
+
+Ce urmează. În lecția nouă aduci norocul în programe: zaruri, monede și numere aleatoare cu modulul random.
 
 Succes la poarta parcului.

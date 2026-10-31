@@ -1,4 +1,4 @@
-# LECȚIA 2 — Variabile: cutii cu nume
+# LECȚIA 2 — Fișa de jucător
 **Modulul 1 · Primii pași în Python · 2 ore**  
 **Code Maker Club · Python Starter**
 
@@ -7,13 +7,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei știi să creezi o variabilă cu `=`, să o afișezi, să îi schimbi valoarea, să calculezi cu ea și să alegi nume bune pentru variabile.  
-**Minim:** un program cu 3 variabile (nume, vârstă, scor) afișate cu `print`.  
-**Ținta orei (Complet):** + scorul se modifică în program, un calcul cu variabile și numele alese după regulile corecte.
-
-## De ce contează
-Într-un joc, scorul se schimbă tot timpul. Programul trebuie să îl țină undeva. Locul acela este o **variabilă**. Fără variabile, nu ai jocuri, aplicații sau calculatoare.
+## Ce facem azi
+La finalul orei știi să creezi o variabilă cu `=`, să o afișezi, să îi schimbi valoarea, să calculezi cu ea și să alegi nume bune pentru variabile. Într-un joc, scorul se schimbă tot timpul. Programul trebuie să îl țină undeva. Locul acela este o **variabilă**. Fără variabile, nu ai jocuri, aplicații sau calculatoare.
 
 ---
 
@@ -23,10 +18,21 @@ La finalul orei știi să creezi o variabilă cu `=`, să o afișezi, să îi sc
 |--------|----------|
 | 0–15 | Recapitulare L1 · ce este o variabilă |
 | 15–40 | Creăm și afișăm variabile (**Exemplele 1–3**) |
-| 40–70 | Calcule cu variabile, `scor = scor + 1` (**Exemplele 4–6**) |
-| 70–90 | Schimbăm valori, copii, nume bune (**Exemplele 7–9**) |
-| 90–112 | Mini-proiect (**Exemplul 10**) |
+| 40–70 | Calcule cu variabile, `scor = scor + 1` (**Exemplele 4–5**) |
+| 70–90 | Schimbăm valori, copii, nume bune (**Exemplele 6–7**) |
+| 90–112 | Mini-proiect (**Exemplul 8**) |
 | 112–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `nume = "Ana"` | Creează o variabilă, adică o cutie cu nume | `scor = 0` |
+| `scor = scor + 1` | Schimbă valoarea, folosind-o și pe cea veche | `puncte += 10` |
+| `print(nume, scor)` | Afișează valoarea variabilei, fără ghilimele | `print("Scor:", scor)` |
+| nume bune | Litere mici, `_` între cuvinte, fără spații și fără cifră la început | `nr_vieti` |
 
 ---
 
@@ -162,33 +168,17 @@ print(scor)
 
 `+=` adaugă, `-=` scade. Sunt prescurtări pentru `scor = scor + 5` și `scor = scor - 2`.
 
-### Exemplul 6 — Copiem valoarea unei variabile
-
-```python
-a = 7
-b = a
-a = 100
-print(a, b)
-```
-
-**Ieșire:**
-```text
-100 7
-```
-
-`b = a` pune în `b` o **copie** a valorii din `a`. După aceea, cele două cutii sunt independente: dacă schimbi `a`, `b` rămâne cu `7`.
 
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 4** (Aria unui dreptunghi)  
 - [ ] Am scris și am rulat **Exemplul 5** (Creștem un scor)  
-- [ ] Am scris și am rulat **Exemplul 6** (Copiem valoarea unei variabile)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 4. Schimbăm între ele, nume bune
 
-### Exemplul 7 — Schimbăm conținutul a două cutii
+### Exemplul 6 — Schimbăm conținutul a două cutii
 
 ```python
 a = 1
@@ -239,7 +229,7 @@ Sfaturile **bune**:
 - Scrie cu litere mici și `_` între cuvinte: `numar_de_vieti`.
 - Evită nume de o literă (`x`, `y`) dacă nu sunt coordonate sau valori matematice.
 
-### Exemplul 8 — Literele mari și mici contează
+### Exemplul 7 — Literele mari și mici contează
 
 ```python
 scor = 5
@@ -253,35 +243,17 @@ print(scor)
 
 Dacă ai scrie `print(Scor)` cu S mare, Python ar da o eroare `NameError`, pentru că `Scor` nu există. Variabila se numește `scor`.
 
-### Exemplul 9 — Mai multe variabile deodată
-
-```python
-x = y = 0
-a, b, c = 1, 2, 3
-print(x, y)
-print(a, b, c)
-```
-
-**Ieșire:**
-```text
-0 0
-1 2 3
-```
-
-- `x = y = 0` pune `0` în ambele cutii.
-- `a, b, c = 1, 2, 3` pune câte o valoare în fiecare cutie, în ordine.
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 7** (Schimbăm conținutul a două cutii)  
-- [ ] Am scris și am rulat **Exemplul 8** (Literele mari și mici contează)  
-- [ ] Am scris și am rulat **Exemplul 9** (Mai multe variabile deodată)  
+- [ ] Am scris și am rulat **Exemplul 6** (Schimbăm conținutul a două cutii)  
+- [ ] Am scris și am rulat **Exemplul 7** (Literele mari și mici contează)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 5. Mini-proiect
 
-### Exemplul 10 — Fișa de jucător
+### Exemplul 8 — Fișa de jucător
 
 ```python
 # Fisa de jucator
@@ -325,68 +297,45 @@ Vieti: 2
 ```
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** (Fișa de jucător)  
+- [ ] Am scris și am rulat **Exemplul 8** (Fișa de jucător)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Fișa de jucător”
 
-### Exercițiul A — „Fișa de jucător” (obligatoriu)
+### Minim vs Complet
+
+| | Ce trebuie |
+|--|------------|
+| **Minim** | Un program cu 3 variabile (nume, vârstă, scor) afișate cu `print` |
+| **Complet** | Minim + scorul se modifică în program, un calcul cu variabile și numele alese după regulile corecte |
+
+### Pasul 1 — Minim
+- [ ] Un program cu 3 variabile (nume, vârstă, scor) afișate cu `print`  
+
+### Pasul 2 — Complet
 Scrie un program care:
 1. creează variabilele `nume`, `nivel`, `puncte`, `vieti` (cu valorile tale);
 2. afișează fișa într-un chenar;
 3. modifică `puncte` și `vieti` ca și cum jucătorul ar fi trecut un nivel;
 4. afișează fișa din nou.
 
-### Exercițiul B — Ce afișează?
-Gândește-te și scrie pe foaie ce afișează programul, apoi rulează-l ca să verifici:
-
-```python
-x = 5
-y = x * 2
-x = 1
-print(x, y)
-z = x + y
-z += 4
-print(z)
-```
-
-### Exercițiul C — Calculatorul de arie
-Creează variabilele `baza` și `inaltimea` pentru un triunghi și calculează **aria** (`baza * inaltimea / 2`). Afișează rezultatul cu un mesaj clar.
-
-### Exercițiul D — Găsește greșelile
-Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
-
-```text
-2nume = "Ana"
-varsta = 10
-print(Varsta)
-mele puncte = 5
-print("Salut" nume)
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. Ce înseamnă `=` în Python?  
-2. Ce face linia `scor = scor + 1`?  
-3. De ce `scor` și `Scor` sunt variabile diferite?
-
-**Gata când:**
+**Gata când:**  
 - [ ] Programul rulează fără erori  
 - [ ] Are cel puțin 4 variabile cu nume corecte  
 - [ ] Valorile se modifică în program  
 - [ ] Fișa se afișează de două ori  
-- [ ] Ai explicat pe foaie ce înseamnă `=`  
 - [ ] Fișierul se numește `Prenume_Nume_P1_L2.py`  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Cutiile magice
+*Doar dacă ai terminat Complet.*
+
 - [ ] Scrie un program cu variabilele `a` și `b` și afișează suma, diferența și produsul lor  
 - [ ] Schimbă valorile a trei variabile în cerc: `a`→`b`→`c`→`a`  
 - [ ] Fă o fișă pentru un monstru de joc (nume, viață, atac, apărare) și afișează-o  
-- [ ] Calculează câți **minute** are o zi, folosind variabile pentru ore și minute  
 
 ---
 
@@ -425,11 +374,71 @@ Răspunde pe foaie:
 ---
 
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
+1. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).
 2. Creează o **fișă pentru animalul tău preferat** (nume, vârstă, greutate, culoare) și afișeaz-o.  
 3. Scrie un program care calculează **câți bani strângi** în 4 săptămâni, dacă primești o sumă fixă pe săptămână (variabile + calcul).  
-4. **Bonus:** schimbă între ele valorile a două variabile în ambele moduri (cu `ajutor` și cu `a, b = b, a`).  
-5. Salvează totul ca `Tema_P1_L2_Prenume_Nume.py`.
+4. Salvează totul ca `Tema_P1_L2_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Două exemple în plus, de rulat și de înțeles singur.
+
+#### Acasă 1 — Copiem valoarea unei variabile
+
+```python
+a = 7
+b = a
+a = 100
+print(a, b)
+```
+
+**Ieșire:**
+```text
+100 7
+```
+
+`b = a` pune în `b` o **copie** a valorii din `a`. După aceea, cele două cutii sunt independente: dacă schimbi `a`, `b` rămâne cu `7`.
+
+#### Acasă 2 — Mai multe variabile deodată
+
+```python
+x = y = 0
+a, b, c = 1, 2, 3
+print(x, y)
+print(a, b, c)
+```
+
+**Ieșire:**
+```text
+0 0
+1 2 3
+```
+
+- `x = y = 0` pune `0` în ambele cutii.
+- `a, b, c = 1, 2, 3` pune câte o valoare în fiecare cutie, în ordine.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te și scrie pe foaie ce afișează programul, apoi rulează-l ca să verifici:
+
+```python
+x = 5
+y = x * 2
+x = 1
+print(x, y)
+z = x + y
+z += 4
+print(z)
+```
+
+**Găsește greșelile.** Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
+
+```text
+2nume = "Ana"
+varsta = 10
+print(Varsta)
+mele puncte = 5
+print("Salut" nume)
+```
 
 ---
 

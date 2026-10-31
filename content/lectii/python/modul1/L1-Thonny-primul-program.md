@@ -1,4 +1,4 @@
-# LECȚIA 1 — Thonny și primul program
+# LECȚIA 1 — Cartea mea de vizită
 **Modulul 1 · Primii pași în Python · 2 ore**  
 **Code Maker Club · Python Starter**
 
@@ -7,13 +7,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei știi ce este Python, cum pornești Thonny, cum scrii și rulezi un program, cum afișezi text și numere cu `print` și cum lași în cod mici notițe, numite comentarii.  
-**Minim:** un program cu cel puțin 3 linii `print` care afișează date despre tine.  
-**Ținta orei (Complet):** + un desen din caractere, un calcul afișat și minimum 2 comentarii.
-
-## De ce contează
-Python este unul dintre cele mai folosite limbaje din lume: îl folosesc programatorii de jocuri, savanții care studiază spațiul, firmele care fac aplicații și roboți. E ușor de citit, aproape ca engleza, de aceea se potrivește pentru primii pași. Totul începe cu un program mic, ca cel de azi.
+## Ce facem azi
+La final ai primul tău program: o **carte de vizită** afișată pe ecran, cu text, numere, un desen din caractere și comentarii. Știi ce este Python, cum pornești Thonny, cum scrii și rulezi un program și cum citești o eroare. Python este unul dintre cele mai folosite limbaje din lume: îl folosesc programatorii de jocuri, savanții care studiază spațiul, firmele care fac aplicații și roboți. E ușor de citit, aproape ca engleza, de aceea se potrivește pentru primii pași.
 
 ---
 
@@ -23,11 +18,24 @@ Python este unul dintre cele mai folosite limbaje din lume: îl folosesc program
 |--------|----------|
 | 0–15 | Ce este un program și ce este Python · pornim Thonny |
 | 15–35 | Cum arată Thonny, salvăm și rulăm (**Exemplul 1**) |
-| 35–60 | `print` cu text și cu numere (**Exemplele 2–5**) |
-| 60–80 | Ghilimele, rânduri noi, comentarii (**Exemplele 6–8**) |
-| 80–105 | Desen din caractere și mini-proiect (**Exemplele 9–10**) |
+| 35–60 | `print` cu text și cu numere (**Exemplele 2–4**) |
+| 60–80 | Ghilimele, rânduri noi, comentarii (**Exemplele 5–6**) |
+| 80–105 | Desen din caractere și mini-proiect (**Exemplele 7–8**) |
 | 105–115 | Erori: cum le citim |
 | 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `print(...)` | Afișează pe ecran | `print("Salut!")` |
+| `"text"` și `2 + 3` | Cu ghilimele = text; fără ghilimele = calcul | `print(2 + 3)` afișează `5` |
+| `sep=` și `end=` | Schimbă separatorul și finalul rândului | `print("a", "b", sep="-")` |
+| `\n` | Trece pe rândul următor | `"Linia 1\nLinia 2"` |
+| `#` | Comentariu, ignorat de Python | `# notiță pentru mine` |
+| `"=" * 22` | Repetă un text | chenar de 22 de `=` |
 
 ---
 
@@ -113,6 +121,7 @@ print(2 + 3)
 print(10 - 4)
 print(6 * 7)
 print(20 / 5)
+print("2 + 3")
 ```
 
 **Ieșire:**
@@ -121,29 +130,16 @@ print(20 / 5)
 6
 42
 4.0
+2 + 3
 ```
 
 Observă:
 - numerele **nu** au ghilimele; Python le calculează înainte să le afișeze;
 - `*` înseamnă **înmulțire** și `/` înseamnă **împărțire**;
-- împărțirea dă mereu un număr cu virgulă (`4.0`). În Python, virgula zecimală se scrie cu **punct**.
+- împărțirea dă mereu un număr cu virgulă (`4.0`). În Python, virgula zecimală se scrie cu **punct**;
+- ultima linie are ghilimele: Python vede **text** și îl afișează cum e, fără calcul. Aceasta este una dintre cele mai importante idei din Python.
 
-### Exemplul 4 — Text sau număr?
-
-```python
-print("2 + 3")
-print(2 + 3)
-```
-
-**Ieșire:**
-```text
-2 + 3
-5
-```
-
-Cu ghilimele, Python vede **text** și îl afișează cum e. Fără ghilimele, vede un **calcul** și îl face. Aceasta este una dintre cele mai importante idei din Python.
-
-### Exemplul 5 — Mai multe lucruri într-un `print`
+### Exemplul 4 — Mai multe lucruri într-un `print`
 
 ```python
 print("Am", 10, "ani")
@@ -168,21 +164,20 @@ Salut! Ce faci?
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 2** (Rânduri una sub alta)  
 - [ ] Am scris și am rulat **Exemplul 3** (Python calculează)  
-- [ ] Am scris și am rulat **Exemplul 4** (Text sau număr?)  
-- [ ] Am rulat și restul exemplelor din secțiune  
+- [ ] Am scris și am rulat **Exemplul 4** (Mai multe lucruri într-un `print`)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 4. Ghilimele, rând nou și comentarii
 
-### Exemplul 6 — Ghilimele simple și duble
+### Exemplul 5 — Ghilimele și rând nou
 
 ```python
 print("Ce faci?")
 print('Ce faci?')
 print('El a spus: "Salut!"')
-print("Ana's cat")
+print("Linia 1\nLinia 2\nLinia 3")
 ```
 
 **Ieșire:**
@@ -190,27 +185,15 @@ print("Ana's cat")
 Ce faci?
 Ce faci?
 El a spus: "Salut!"
-Ana's cat
-```
-
-Poți folosi ghilimele **duble** `" "` sau **simple** `' '`, dar trebuie să închizi cu același fel cu care ai deschis. Dacă în text ai nevoie de ghilimele, folosește pentru încadrare celălalt fel.
-
-### Exemplul 7 — Rând nou cu `\n`
-
-```python
-print("Linia 1\nLinia 2\nLinia 3")
-```
-
-**Ieșire:**
-```text
 Linia 1
 Linia 2
 Linia 3
 ```
 
-`\n` înseamnă „treci pe un rând nou”. Se scrie cu semnul **backslash** `\`, urmat de litera `n`. Dacă nu găsești backslash pe tastatură, cere ajutor profesorului: poziția lui diferă de la tastatură la tastatură.
+- Poți folosi ghilimele **duble** `" "` sau **simple** `' '`, dar trebuie să închizi cu același fel cu care ai deschis. Dacă în text ai nevoie de ghilimele, folosește pentru încadrare celălalt fel.
+- `\n` înseamnă „treci pe un rând nou”. Se scrie cu semnul **backslash** `\`, urmat de litera `n`. Dacă nu găsești backslash pe tastatură, cere ajutor profesorului: poziția lui diferă de la tastatură la tastatură.
 
-### Exemplul 8 — Comentarii
+### Exemplul 6 — Comentarii
 
 ```python
 # Acesta este un comentariu. Python il ignora.
@@ -231,16 +214,15 @@ Un **comentariu** începe cu `#`. Tot ce vine după `#`, până la capătul rân
 - **oprim temporar** o linie, fără să o ștergem.
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 6** (Ghilimele simple și duble)  
-- [ ] Am scris și am rulat **Exemplul 7** (Rând nou cu `\n`)  
-- [ ] Am scris și am rulat **Exemplul 8** (Comentarii)  
+- [ ] Am scris și am rulat **Exemplul 5** (Ghilimele și rând nou)  
+- [ ] Am scris și am rulat **Exemplul 6** (Comentarii)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 5. Desen din caractere
 
-### Exemplul 9 — Bradul
+### Exemplul 7 — Bradul
 
 ```python
 print("    *    ")
@@ -261,7 +243,7 @@ print("    |    ")
 
 Desenul apare exact cum l-ai scris. Spațiile din ghilimele contează, ele aliniază desenul!
 
-### Exemplul 10 — Mini-proiect: carte de vizită
+### Exemplul 8 — Mini-proiect: carte de vizită
 
 ```python
 # Cartea mea de vizita
@@ -284,8 +266,8 @@ print("=" * 22)
 Trucul nou: `"=" * 22` repetă textul `=` de 22 de ori. Așa faci repede un chenar.
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 9** (Bradul)  
-- [ ] Am scris și am rulat **Exemplul 10** (Mini-proiect: carte de vizită)  
+- [ ] Am scris și am rulat **Exemplul 7** (Bradul)  
+- [ ] Am scris și am rulat **Exemplul 8** (Mini-proiect: carte de vizită)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
@@ -308,58 +290,40 @@ Cum procedezi:
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Cartea mea de vizită”
 
-### Exercițiul A — „Cartea mea de vizită” (obligatoriu)
-Scrie un program care afișează, cu `print`, o carte de vizită cu:
-1. un chenar de `=` sus și jos;
-2. numele tău, vârsta ta și un hobby;
-3. cel puțin 5 rânduri în total.
+### Minim vs Complet
 
-### Exercițiul B — Text sau calcul?
-Prezice ce afișează fiecare linie, apoi rulează și verifică:
+| | Ce trebuie |
+|--|------------|
+| **Minim** | Un program cu cel puțin 3 linii `print` cu date despre tine |
+| **Complet** | Minim + chenar din `=`, un calcul afișat, un desen din caractere și minimum 2 comentarii |
 
-```python
-print("3 * 4")
-print(3 * 4)
-print("Am", 3 * 4, "ani")
-print("Salut", "Ana", sep=", ")
-```
+### Pasul 1 — Minim
+Scrie un program care afișează, cu `print`, o carte de vizită cu numele tău, vârsta ta și un hobby, pe cel puțin 3 rânduri.
 
-### Exercițiul C — Desenul meu
-Desenează din caractere (`*`, `#`, `|`, `-`, `/`) o casă, o stea sau un robot, în minimum 5 linii.
-
-### Exercițiul D — Găsește greșelile
-Programul de mai jos are 4 greșeli. Rescrie-l corect și explică pe foaie fiecare corecție:
-
-```text
-Print("Salut!")
-print("Ma numesc Ana)
-print(Am 10 ani)
-print("Gata!"
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Pe o foaie, răspunde fără să te uiți în lecție:
-1. Ce face `print`?  
-2. Care e diferența dintre `print("5 + 5")` și `print(5 + 5)`?  
-3. La ce folosește `#`?
-
-**Gata când:**
 - [ ] Programul rulează fără erori  
-- [ ] Afișează cel puțin 5 rânduri despre tine  
-- [ ] Are un chenar făcut cu `"=" * ...`  
+- [ ] Afișează cel puțin 3 rânduri despre tine  
+
+### Pasul 2 — Complet
+Îmbunătățești cartea de vizită:
+
+- [ ] Are un chenar de `=` sus și jos, făcut cu `"=" * ...`  
+- [ ] Afișează un calcul (de exemplu anul nașterii)  
+- [ ] Are un desen din caractere (`*`, `#`, `|`, `-`, `/`): o casă, o stea sau un robot, minimum 5 linii  
 - [ ] Are minimum 2 comentarii cu `#`  
-- [ ] Ai făcut desenul din caractere  
 - [ ] Fișierul se numește `Prenume_Nume_P1_L1.py`  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Afișează tabla înmulțirii cu 7, de la `7 * 1` până la `7 * 5`, cu `print`  
+## Bonus ★★★ — Provocare: Robotul cu numărătoare
+*Doar dacă ai terminat Complet.*
+
+Robotul tău numără înainte de start.
+
+- [ ] Afișează `1 - 2 - 3 - GO!` pe același rând, cu `sep` și `end`  
 - [ ] Desenează un robot mare (10 rânduri) și pune-i un comentariu la fiecare parte  
 - [ ] Afișează un mesaj pe 3 rânduri folosind **un singur** `print` și `\n`  
-- [ ] Folosește `sep` și `end` ca să afișezi `1 - 2 - 3 - GO!` pe același rând  
 
 ---
 
@@ -400,10 +364,18 @@ Pe o foaie, răspunde fără să te uiți în lecție:
 ---
 
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny, scrise de mână (nu copiate).  
+1. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
 2. Scrie un program care afișează **orarul tău de azi**, minimum 6 rânduri, într-un chenar.  
 3. Desenează din caractere **numele tău** sau **un animal**.  
-4. **Bonus:** afișează o poveste de 4 rânduri folosind un singur `print` și `\n`.  
+4. **Găsește greșelile:** programul de mai jos are 4 greșeli. Rescrie-l corect și explică pe foaie fiecare corecție.
+
+```text
+Print("Salut!")
+print("Ma numesc Ana)
+print(Am 10 ani)
+print("Gata!"
+```
+
 5. Salvează totul ca `Tema_P1_L1_Prenume_Nume.py`.
 
 ---

@@ -43,3 +43,4 @@ Aceeași ordine pentru toate cursurile. Detaliile C++ sunt în `cpp/_structura-l
 - C++ Modul 1: gata.
 - Blender Modul 1: gata.
 - Arduino Modul 1: gata (cu „Gata când” în loc de „Încearcă tu”; păstrează „Pe placa reală”).
+- Python Modul 1: gata, L10 reia proiectele din L2–L9 într-un meniu (lecțiile au 8 exemple la oră; exemplele în plus și exercițiile „Ce afișează?” și „Găsește greșelile” sunt în Temă).

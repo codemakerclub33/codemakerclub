@@ -1,19 +1,14 @@
-# LECȚIA 10 — Proiect: generatorul de povești
+# LECȚIA 10 — Salonul meu de proiecte
 **Modulul 1 · Primii pași în Python · 2 ore**  
 **Code Maker Club · Python Starter**
 
-> Aceasta este lecția de final a modulului. Folosești tot ce ai învățat: `print`, variabile, `input`, operatori, f-string, `if` și `random`, ca să construiești un **generator de povești** care scrie o poveste diferită de fiecare dată.  
-> Proiect: **„Povestea mea”** · fișier: `Prenume_Nume_P1_L10.py`
+> Aceasta este lecția de final a modulului. Aduni într-un singur program proiectele din lecțiile trecute, cu mici modificări, și le alegi dintr-un **meniu**.  
+> Proiect: **„Salonul meu de proiecte”** · fișier: `Prenume_Nume_P1_L10.py`
 
 ---
 
-## Obiectiv
-La finalul orei ai un program complet, de 40–60 de linii, care citește date de la utilizator, alege la întâmplare părți din poveste, ia decizii cu `if` și afișează totul frumos. Apoi îți verifici cunoștințele din tot modulul.  
-**Minim:** un program care citește 3 lucruri (nume, animal, loc) și afișează o poveste cu f-string.  
-**Ținta orei (Complet):** + începuturi și sfârșituri alese cu `random.choice`, un zar care schimbă finalul și un chenar frumos.
-
-## De ce contează
-Proiectele sunt locul în care se vede dacă ai înțeles. Aici îmbini 9 lecții într-un singur program. Programatorii adevărați învață la fel: construind lucruri mici, dar complete.
+## Ce facem azi
+La final ai un program cu un **meniu**: alegi un număr și rulează unul dintre proiectele tale din modul: **Fișa de jucător**, **Calculatorul**, **Oracolul**, **Interviul**, **Laboratorul de cuvinte** sau **Chestionarul**. Nu scrii totul de la zero: reiei codul din lecțiile trecute și îl modifici puțin. Așa lucrează și programatorii adevărați: refolosesc ce au făcut deja. Apoi îți verifici cunoștințele din tot modulul.
 
 ---
 
@@ -21,202 +16,256 @@ Proiectele sunt locul în care se vede dacă ai înțeles. Aici îmbini 9 lecți
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recapitulare modul și planul poveștii |
-| 10–30 | Citim datele: `input` și f-string (**Exemplul 1**) |
-| 30–55 | Alegem părți la întâmplare (**Exemplele 2–3**) |
-| 55–75 | Final diferit cu zarul și `if` (**Exemplul 4**) |
-| 75–95 | Povestea completă (**Exemplul 5**) |
+| 0–10 | Recapitulare modul · alegem proiectele pe care le reluăm |
+| 10–30 | Meniul cu `input` și `if` / `elif` (**Exemplul 1**) |
+| 30–60 | Minim: fișa, calculatorul, oracolul (**Exemplele 2–4**) |
+| 60–95 | Complet: interviul, laboratorul, chestionarul, programul întreg (**Exemplele 5–8**) |
 | 95–115 | Verificarea modulului 1 |
 | 115–120 | Recap și temă |
 
 ---
 
-## 1. Planul poveștii
+## Instrucțiuni noi azi
 
-O poveste are trei părți: **început**, **întâmplare**, **sfârșit**. Programul tău:
-1. întreabă **eroul**, un **animal**, un **loc** și un **obiect**;
-2. alege la întâmplare un **început**, o **întâmplare** și o **încheiere**;
-3. aruncă un **zar** care decide dacă sfârșitul e fericit;
-4. afișează povestea într-un chenar.
+Nu ai instrucțiuni noi. Combini ce știi deja:
 
-### Exemplul 1 — Citim datele
-
-```python
-erou = input("Numele eroului: ")
-animal = input("Un animal: ")
-loc = input("Un loc: ")
-obiect = input("Un obiect: ")
-
-print(f"Eroul: {erou}, animalul: {animal}, locul: {loc}, obiectul: {obiect}")
-```
-
-**Ieșire:**
-```text
-Numele eroului: Ana
-Un animal: dragon
-Un loc: padure
-Un obiect: cheie
-Eroul: Ana, animalul: dragon, locul: padure, obiectul: cheie
-```
-
-**Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 1** (Citim datele)  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+| Ce folosim | Ce face | Din lecția |
+|------------|---------|------------|
+| `input()` + `if` / `elif` / `else` | Meniul: alegi un număr, rulează un proiect | 4 și 7 |
+| variabile, `print`, chenar `"=" * 28` | Fișa de jucător și titlul | 1 și 2 |
+| operatori `+ - * // %` | Calculatorul | 5 |
+| f-string, `.upper()`, `[ ]` | Laboratorul de cuvinte | 6 |
+| `import random`, `randint`, `choice` | Oracolul | 9 |
 
 ---
 
-## 2. Părți alese la întâmplare
+## 1. Ce proiecte reluăm
 
-### Exemplul 2 — Începuturi
+| Mod | Proiectul | Din lecția | Ce modificăm |
+|-----|-----------|------------|--------------|
+| 1 | Fișa de jucător | 2 | numele vine de la tastatură |
+| 2 | Calculatorul | 5 | doar cinci operații |
+| 3 | Oracolul | 9 | o listă scurtă de răspunsuri |
+| 4 | Interviul | 4 | folosește numele deja citit |
+| 5 | Laboratorul de cuvinte | 6 | lucrează pe numele tău |
+| 6 | Chestionarul | 7 | două întrebări și un scor |
+
+Modurile 1–3 sunt **Minim**, iar modurile 4–6 se adaugă la **Complet**.
+
+**Încearcă tu (3 min)**  
+- [ ] Am deschis fișierele din lecțiile 2, 5 și 9  
+- [ ] Am creat fișierul nou `Prenume_Nume_P1_L10.py`  
+
+---
+
+## 2. Meniul
+
+### Exemplul 1 — Meniul cu trei opțiuni
 
 ```python
-import random
+nume = input("Cum te cheama? ")
+print("=" * 28)
+print(f"Salonul de proiecte al lui {nume}")
+print("=" * 28)
+print("1. Fisa de jucator")
+print("2. Calculatorul")
+print("3. Oracolul")
+alegere = input("Alege un numar de la 1 la 3: ")
 
-inceputuri = [
-    "Intr-o dimineata insorita",
-    "Intr-o noapte cu luna plina",
-    "Pe vremea cand copacii vorbeau",
-]
-inceput = random.choice(inceputuri)
-print(inceput)
+if alegere == "1":
+    print("Aici vine fisa")
+elif alegere == "2":
+    print("Aici vine calculatorul")
+elif alegere == "3":
+    print("Aici vine oracolul")
+else:
+    print("Nu exista aceasta optiune.")
 ```
 
-**Ieșire (la tine poate fi altul):**
-```text
-Pe vremea cand copacii vorbeau
-```
-
-### Exemplul 3 — Întâmplări cu f-string
-
-```python
-import random
-
-erou = input("Numele eroului: ")
-animal = input("Un animal: ")
-loc = input("Un loc: ")
-obiect = input("Un obiect: ")
-
-intamplari = [
-    f"{erou} a gasit {obiect} in {loc}.",
-    f"{erou} s-a intalnit cu un {animal} prietenos.",
-    f"Un {animal} a furat {obiect} lui {erou}.",
-]
-print(random.choice(intamplari))
-```
-
-**Ieșire (exemplu):**
-```text
-Numele eroului: Ana
-Un animal: dragon
-Un loc: padure
-Un obiect: cheie
-Un dragon a furat cheie lui Ana.
-```
-
-Poți pune f-string-uri chiar **în interiorul listei**: Python le completează imediat, folosind variabilele de până atunci.
+- `input` dă mereu **text**, de aceea comparăm cu `"1"`, nu cu `1`.  
+- `elif` verifică pe rând celelalte variante, iar `else` prinde orice altceva.  
+- Mesajele „Aici vine...” sunt locurile în care pui codul proiectelor.
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 2** (Începuturi)  
-- [ ] Am scris și am rulat **Exemplul 3** (Întâmplări cu f-string)  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+- [ ] Am scris și am rulat **Exemplul 1** (Meniul cu trei opțiuni)  
+- [ ] Am încercat toate cele trei opțiuni și un număr greșit  
 
 ---
 
-## 3. Zarul decide finalul
+## 3. Minim — primele trei moduri
 
-### Exemplul 4 — Final fericit sau nu?
+Pui codul fiecărui proiect în locul mesajului „Aici vine...”. Codul din interior se **indentează** cu patru spații. Pe prima linie a fișierului scrii `import random`, pentru Oracol. Mai jos vezi fiecare mod împreună cu linia lui din `if` / `elif`.
+
+### Exemplul 2 — Mod 1: Fișa de jucător (lecția 2)
+
+```python
+if alegere == "1":
+    nivel = 1
+    puncte = 0
+    vieti = 3
+    print("Jucator:", nume)
+    print("Nivel:", nivel, " Puncte:", puncte, " Vieti:", vieti)
+    puncte = puncte + 50
+    nivel = nivel + 1
+    vieti -= 1
+    print(nume, "a terminat un nivel!")
+    print("Nivel:", nivel, " Puncte:", puncte, " Vieti:", vieti)
+```
+
+Față de lecția 2, numele nu mai e scris în cod, ci vine din `input`.
+
+### Exemplul 3 — Mod 2: Calculatorul (lecția 5)
+
+```python
+elif alegere == "2":
+    a = int(input("Primul numar: "))
+    b = int(input("Al doilea numar: "))
+    print(a, "+", b, "=", a + b)
+    print(a, "-", b, "=", a - b)
+    print(a, "*", b, "=", a * b)
+    print(a, "//", b, "=", a // b)
+    print(a, "%", b, "=", a % b)
+```
+
+### Exemplul 4 — Mod 3: Oracolul (lecția 9)
+
+```python
+elif alegere == "3":
+    intrebare = input("Pune o intrebare cu raspuns da/nu: ")
+    raspunsuri = ["Da, sigur!", "Cu siguranta nu.", "Poate...", "Stelele spun da."]
+    print("Raspunsul oracolului:", random.choice(raspunsuri))
+    print("Numarul tau norocos:", random.randint(1, 6))
+```
+
+**Încearcă tu (10 min)**  
+- [ ] Am pus modul 1 în meniu și l-am rulat  
+- [ ] Am pus modul 2 în meniu și l-am rulat  
+- [ ] Am pus modul 3 în meniu și l-am rulat  
+- [ ] Am schimbat ceva în fiecare mod, după preferințe  
+
+---
+
+## 4. Complet — alte trei moduri și programul întreg
+
+### Exemplul 5 — Mod 4: Interviul (lecția 4)
+
+```python
+elif alegere == "4":
+    varsta = int(input("Cati ani ai? "))
+    joc = input("Care e jocul tau preferat? ")
+    print("Litere in nume:", len(nume))
+    print("Peste 5 ani vei avea", varsta + 5, "ani")
+    print("Jocul preferat:", joc)
+```
+
+### Exemplul 6 — Mod 5: Laboratorul de cuvinte (lecția 6)
+
+```python
+elif alegere == "5":
+    print(f"Cu litere mari: {nume.upper()}")
+    print(f"Prima litera:   {nume[0]}")
+    print(f"Invers:         {nume[::-1]}")
+    print(f"Lungime:        {len(nume)}")
+```
+
+### Exemplul 7 — Mod 6: Chestionarul (lecția 7)
+
+```python
+elif alegere == "6":
+    scor = 0
+    r1 = input("1. Care e capitala Romaniei? ")
+    if r1.lower() == "bucuresti":
+        scor += 1
+    r2 = int(input("2. Cat face 7 * 8? "))
+    if r2 == 56:
+        scor += 1
+    print(f"Scor: {scor} din 2")
+    if scor == 2:
+        print("Excelent!")
+    elif scor == 1:
+        print("Bravo!")
+    else:
+        print("Mai incearca!")
+```
+
+### Exemplul 8 — Programul complet
+
+Așa arată toate piesele puse laolaltă. Compară-l cu al tău.
 
 ```python
 import random
 
-zar = random.randint(1, 6)
-print("Zarul a aratat:", zar)
+nume = input("Cum te cheama? ")
+print("=" * 28)
+print(f"Salonul de proiecte al lui {nume}")
+print("=" * 28)
+print("1. Fisa de jucator")
+print("2. Calculatorul")
+print("3. Oracolul")
+print("4. Interviul")
+print("5. Laboratorul de cuvinte")
+print("6. Chestionarul")
+alegere = input("Alege un numar de la 1 la 6: ")
+print("-" * 28)
 
-if zar >= 5:
-    final = "Au trait fericiti pana la adanci batranete."
-elif zar >= 3:
-    final = "Totul s-a rezolvat, dar cu putin efort."
+if alegere == "1":
+    nivel = 1
+    puncte = 0
+    vieti = 3
+    print("Jucator:", nume)
+    print("Nivel:", nivel, " Puncte:", puncte, " Vieti:", vieti)
+    puncte = puncte + 50
+    nivel = nivel + 1
+    vieti -= 1
+    print(nume, "a terminat un nivel!")
+    print("Nivel:", nivel, " Puncte:", puncte, " Vieti:", vieti)
+elif alegere == "2":
+    a = int(input("Primul numar: "))
+    b = int(input("Al doilea numar: "))
+    print(a, "+", b, "=", a + b)
+    print(a, "-", b, "=", a - b)
+    print(a, "*", b, "=", a * b)
+    print(a, "//", b, "=", a // b)
+    print(a, "%", b, "=", a % b)
+elif alegere == "3":
+    intrebare = input("Pune o intrebare cu raspuns da/nu: ")
+    raspunsuri = ["Da, sigur!", "Cu siguranta nu.", "Poate...", "Stelele spun da."]
+    print("Raspunsul oracolului:", random.choice(raspunsuri))
+    print("Numarul tau norocos:", random.randint(1, 6))
+elif alegere == "4":
+    varsta = int(input("Cati ani ai? "))
+    joc = input("Care e jocul tau preferat? ")
+    print("Litere in nume:", len(nume))
+    print("Peste 5 ani vei avea", varsta + 5, "ani")
+    print("Jocul preferat:", joc)
+elif alegere == "5":
+    print(f"Cu litere mari: {nume.upper()}")
+    print(f"Prima litera:   {nume[0]}")
+    print(f"Invers:         {nume[::-1]}")
+    print(f"Lungime:        {len(nume)}")
+elif alegere == "6":
+    scor = 0
+    r1 = input("1. Care e capitala Romaniei? ")
+    if r1.lower() == "bucuresti":
+        scor += 1
+    r2 = int(input("2. Cat face 7 * 8? "))
+    if r2 == 56:
+        scor += 1
+    print(f"Scor: {scor} din 2")
+    if scor == 2:
+        print("Excelent!")
+    elif scor == 1:
+        print("Bravo!")
+    else:
+        print("Mai incearca!")
 else:
-    final = "Aventura abia incepe... continuarea urmeaza!"
-print(final)
+    print("Nu exista aceasta optiune.")
 ```
 
-**Ieșire (exemplu):**
-```text
-Zarul a aratat: 4
-Totul s-a rezolvat, dar cu putin efort.
-```
-
-**Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 4** (Final fericit sau nu?)  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
----
-
-## 4. Povestea completă
-
-### Exemplul 5 — Generatorul
-
-```python
-import random
-
-print("=== GENERATOR DE POVESTI ===")
-erou = input("Numele eroului: ")
-animal = input("Un animal: ")
-loc = input("Un loc: ")
-obiect = input("Un obiect: ")
-
-inceputuri = [
-    "Intr-o dimineata insorita",
-    "Intr-o noapte cu luna plina",
-    "Pe vremea cand copacii vorbeau",
-]
-intamplari = [
-    f"{erou} a gasit {obiect} in {loc}.",
-    f"{erou} s-a intalnit cu un {animal} prietenos.",
-    f"Un {animal} a furat {obiect} lui {erou}.",
-]
-
-zar = random.randint(1, 6)
-if zar >= 5:
-    final = "Au trait fericiti pana la adanci batranete."
-elif zar >= 3:
-    final = "Totul s-a rezolvat, dar cu putin efort."
-else:
-    final = "Aventura abia incepe... continuarea urmeaza!"
-
-print()
-print("*" * 40)
-print(f"  POVESTEA LUI {erou.upper()}")
-print("*" * 40)
-print(random.choice(inceputuri) + ", in " + loc + ",")
-print(random.choice(intamplari))
-print(final)
-print("*" * 40)
-```
-
-**Ieșire (exemplu):**
-```text
-=== GENERATOR DE POVESTI ===
-Numele eroului: Ana
-Un animal: dragon
-Un loc: padure
-Un obiect: cheie
-
-****************************************
-  POVESTEA LUI ANA
-****************************************
-Intr-o noapte cu luna plina, in padure,
-Ana s-a intalnit cu un dragon prietenos.
-Totul s-a rezolvat, dar cu putin efort.
-****************************************
-```
-
-Observă `print()` fără nimic în paranteze: afișează un **rând gol**.
-
-**Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 5** (Generatorul)  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+**Încearcă tu (10 min)**  
+- [ ] Am adăugat modurile 4, 5 și 6  
+- [ ] Meniul are șase opțiuni, iar textul „Alege un număr de la 1 la 6” e corect  
+- [ ] Am rulat programul de șase ori, câte o dată pentru fiecare mod  
 
 ---
 
@@ -254,63 +303,39 @@ Bifează ce poți face **singur**:
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Salonul meu de proiecte”
 
-### Exercițiul A — „Povestea mea” (obligatoriu)
-Scrie propriul generator de povești care:
-1. întreabă **cel puțin 4 lucruri** de la utilizator;
-2. folosește **trei liste** cu cel puțin 3 variante fiecare (început, întâmplare, sfârșit);
-3. folosește un **zar** și un `if / elif / else` pentru final;
-4. afișează povestea într-un **chenar**, cu titlul cu litere mari.
+### Minim vs Complet
 
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
+| | Ce trebuie |
+|--|------------|
+| **Minim** | Meniu cu 3 moduri: Fișa de jucător, Calculatorul, Oracolul |
+| **Complet** | Minim + Interviul, Laboratorul de cuvinte, Chestionarul și o modificare a ta la fiecare mod |
 
-```python
-erou = "Mihai"
-print(f"Povestea lui {erou.upper()}")
-print(erou[0] + ".")
-print(len(erou) * "*")
-print(f"{erou} are {len(erou)} litere")
-```
+### Pasul 1 — Minim
+- [ ] Meniul cu `input`, `if`, `elif` și `else`  
+- [ ] Modurile 1, 2 și 3, luate din lecțiile 2, 5 și 9  
 
-### Exercițiul C — O încheiere în plus
-Adaugă la poveste **o a patra parte** („Mesajul poveștii”) aleasă la întâmplare dintr-o listă de 3 mesaje.
+### Pasul 2 — Complet
+- [ ] Modurile 4, 5 și 6, luate din lecțiile 4, 6 și 7  
+- [ ] La fiecare mod ai schimbat ceva: un text, o valoare, o întrebare  
+- [ ] Salutul de la început folosește numele tău  
 
-### Exercițiul D — Găsește greșelile
-Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
-
-```text
-import random
-erou = input("Erou: )
-inceputuri = ["Odata", "Candva" "Mai demult"]
-print(random.choice(inceputuri))
-print(f"Eroul se numeste {erou)
-varsta = input("Varsta: ")
-print(varsta + 1)
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. De ce poveștile sunt diferite la fiecare rulare?  
-2. Care e rolul `if` în program?  
-3. Ce lecție din modul ți s-a părut cea mai grea și de ce?
-
-**Gata când:**
+**Gata când:**  
 - [ ] Programul rulează fără erori  
-- [ ] Citește minimum 4 date  
-- [ ] Folosește `random.choice`, `random.randint`, f-string și `if / elif / else`  
-- [ ] Povestea e diferită la rulări diferite  
+- [ ] Fiecare opțiune din meniu pornește proiectul potrivit  
+- [ ] O opțiune greșită afișează un mesaj, nu o eroare  
 - [ ] Ai completat verificarea modulului  
 - [ ] Fișierul se numește `Prenume_Nume_P1_L10.py`  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Adaugă un **personaj secundar** (prieten sau dușman) citit de la tastatură  
-- [ ] Fă povestea să aibă **două finaluri secrete**, alese la întâmplare  
-- [ ] Afișează la sfârșit un **scor al aventurii** (zarul × 10)  
-- [ ] Citește vârsta cititorului și schimbă tonul poveștii: pentru copii mici, mai blând; pentru mari, mai mult mister  
+## Bonus ★★★ — Provocare: Modul tău secret
+*Doar dacă ai terminat Complet.*
+
+- [ ] Adaugă un al șaptelea mod, luat din lecția 8: **Poarta parcului**, cu `and` și `or`  
+- [ ] La Oracol, afișează și un mesaj special dacă numărul norocos este 6  
+- [ ] Afișează la sfârșit, în orice mod, mesajul „La revedere,” urmat de numele tău  
 
 ---
 
@@ -318,12 +343,12 @@ Răspunde pe foaie:
 
 | Ce vezi | Cauza | Corect |
 |---------|-------|--------|
-| `NameError: name 'erou' is not defined` | Ai folosit variabila înainte să o citești | Citește `erou` mai sus |
-| Povestea arată mereu la fel | Ai scris textul direct, fără `random.choice` | Pune variantele într-o listă |
-| f-string-ul din listă nu se completează cu valorile corecte | Lista e scrisă **înainte** de `input` | Scrie lista **după** ce citești datele |
-| `TypeError` la `varsta + 1` | `input` dă text | `int(varsta) + 1` |
-| Lipsește virgula între elementele listei | Python lipește textele alăturate | Pune `,` după fiecare element |
-| `final` nu e definit | Un caz din `if` nu atribuie `final` | Atribuie `final` în fiecare ramură |
+| Meniul nu face nimic la `1` | Ai comparat cu număr: `alegere == 1` | `alegere == "1"`, cu ghilimele |
+| `IndentationError` | Codul din mod nu e indentat la fel | Patru spații pentru fiecare linie din mod |
+| `NameError: name 'random' is not defined` | Ai uitat `import random` | `import random` pe prima linie |
+| Se rulează mai multe moduri | Ai scris `if` în loc de `elif` | `elif` pentru celelalte opțiuni |
+| `ValueError` la calculator | Ai scris litere unde se cere număr | Scrie numere întregi |
+| `NameError` la `nume` | Ai folosit `nume` înainte să îl citești | Citește `nume` la începutul programului |
 
 ---
 
@@ -335,6 +360,7 @@ Răspunde pe foaie:
 - Decizii: `if`, `elif`, `else`, cu `==`, `!=`, `<`, `>`, `<=`, `>=`.
 - Condiții combinate: `and`, `or`, `not`.
 - Noroc: `import random`, `randint`, `choice`, liste simple.
+- Un meniu cu `input` și `elif` pune proiectele laolaltă.
 
 ---
 
@@ -348,11 +374,10 @@ Răspunde pe foaie:
 ---
 
 ## Temă
-1. Mai joacă-te cu generatorul: adaugă încă 3 începuturi, 3 întâmplări și 3 finaluri.  
-2. Arată povestea unui prieten și întreabă-l ce ar adăuga.  
+1. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
+2. Arată programul unui prieten și întreabă-l ce mod ar mai adăuga.  
 3. Scrie pe o foaie **cinci lucruri** pe care le poți face acum cu Python și nu le puteai face acum 10 lecții.  
-4. **Bonus:** transformă povestea într-un joc cu două „drumuri” (alege `da` sau `nu`).  
-5. Salvează totul ca `Tema_P1_L10_Prenume_Nume.py`.
+4. Salvează totul ca `Tema_P1_L10_Prenume_Nume.py`.
 
 ---
 

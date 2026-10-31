@@ -1,4 +1,4 @@
-# LECȚIA 6 — Text: f-string și metode
+# LECȚIA 6 — Laboratorul de cuvinte
 **Modulul 1 · Primii pași în Python · 2 ore**  
 **Code Maker Club · Python Starter**
 
@@ -7,13 +7,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei folosești f-string pentru mesaje cu variabile, formatezi numere cu zecimale, folosești metodele `upper()`, `lower()`, `title()`, `replace()`, `strip()`, `count()`, `find()`, alegi litere cu `[ ]` și tai bucăți de text cu `[ : ]`.  
-**Minim:** un program care citește un nume și îl afișează cu litere mari, cu prima literă și cu lungimea.  
-**Ținta orei (Complet):** + textul inversat, un cuvânt înlocuit și un mesaj construit cu f-string.
-
-## De ce contează
-Jocurile afișează mesaje („Ai 3 vieți”), aplicațiile curăță textul scris de utilizatori, iar parolele se verifică litera cu litera. Cu f-string și metodele de text faci toate astea simplu.
+## Ce facem azi
+La finalul orei folosești f-string pentru mesaje cu variabile, formatezi numere cu zecimale, folosești metodele `upper()`, `lower()`, `title()`, `replace()`, `strip()`, `count()`, `find()`, alegi litere cu `[ ]` și tai bucăți de text cu `[ : ]`. Jocurile afișează mesaje („Ai 3 vieți”), aplicațiile curăță textul scris de utilizatori, iar parolele se verifică litera cu litera. Cu f-string și metodele de text faci toate astea simplu.
 
 ---
 
@@ -22,12 +17,25 @@ Jocurile afișează mesaje („Ai 3 vieți”), aplicațiile curăță textul sc
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recapitulare L5 |
-| 10–35 | f-string și formatarea numerelor (**Exemplele 1–3**) |
-| 35–60 | Metode: `upper`, `lower`, `title`, `replace`, `strip` (**Exemplele 4–6**) |
-| 60–90 | Litere și bucăți de text: `[ ]` și `[ : ]` (**Exemplele 7–8**) |
-| 90–105 | `in`, `count`, `find` (**Exemplul 9**) |
-| 105–118 | Mini-proiect (**Exemplul 10**) |
+| 10–35 | f-string și formatarea numerelor (**Exemplele 1–2**) |
+| 35–60 | Metode: `upper`, `lower`, `title`, `replace` (**Exemplele 3–4**) |
+| 60–90 | Litere și bucăți de text: `[ ]` și `[ : ]` (**Exemplele 5–6**) |
+| 90–105 | `in`, `count`, `find` (**Exemplul 7**) |
+| 105–118 | Mini-proiect (**Exemplul 8**) |
 | 118–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `f"Salut, {nume}!"` | Construiește un text cu variabile între acolade | `f"Ai {vieti} vieți"` |
+| `{x:.2f}` | Numărul cu două zecimale | `f"{pret:.2f} lei"` |
+| `.upper()` `.lower()` `.title()` | Schimbă literele mari și mici | `nume.upper()` |
+| `.replace("a", "b")` | Înlocuiește un text cu altul | `text.replace("mere", "pere")` |
+| `text[0]`, `text[1:4]` | O literă sau o bucată de text | `"Python"[0]` |
+| `in`, `.count()`, `.find()` | Caută în text | `"ana" in text` |
 
 ---
 
@@ -61,24 +69,8 @@ Ma numesc Ana si am 10 ani.
 
 Python înlocuiește `{nume}` cu valoarea variabilei. Nu mai ai nevoie de `str(...)` pentru numere, iar propoziția arată ca în realitate.
 
-### Exemplul 2 — Calcule în acolade
 
-```python
-a = 6
-b = 7
-print(f"{a} x {b} = {a * b}")
-print(f"Peste 5 ani voi avea {a + 5} ani")
-```
-
-**Ieșire:**
-```text
-6 x 7 = 42
-Peste 5 ani voi avea 11 ani
-```
-
-Între acolade poți pune și un **calcul**, nu doar o variabilă.
-
-### Exemplul 3 — Numere cu zecimale
+### Exemplul 2 — Numere cu zecimale
 
 ```python
 pret = 3.14159
@@ -98,8 +90,7 @@ O treime: 3.3
 
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 1** (Prima f-string)  
-- [ ] Am scris și am rulat **Exemplul 2** (Calcule în acolade)  
-- [ ] Am scris și am rulat **Exemplul 3** (Numere cu zecimale)  
+- [ ] Am scris și am rulat **Exemplul 2** (Numere cu zecimale)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
@@ -108,7 +99,7 @@ O treime: 3.3
 
 O **metodă** este o comandă care „aparține” unui text. O scrii cu **punct**: `text.metoda()`. Metodele **nu schimbă** textul original, ci dau un text nou.
 
-### Exemplul 4 — Litere mari și mici
+### Exemplul 3 — Litere mari și mici
 
 ```python
 text = "salut lume"
@@ -137,7 +128,7 @@ salut lume
 
 Ultima linie arată că `text` a rămas la fel.
 
-### Exemplul 5 — Înlocuim cuvinte
+### Exemplul 4 — Înlocuim cuvinte
 
 ```python
 fraza = "Imi plac mere si mere coapte"
@@ -153,28 +144,10 @@ Imi plac pere si mere coapte
 
 `replace(vechi, nou)` înlocuiește **toate** bucățile găsite. Al treilea număr (`1`) limitează la **câte** înlocuiri.
 
-### Exemplul 6 — Curățăm spațiile
-
-```python
-text = "   salut   "
-print(len(text))
-print(text.strip())
-print(len(text.strip()))
-```
-
-**Ieșire:**
-```text
-11
-salut
-5
-```
-
-`strip()` șterge spațiile de la **începutul** și de la **sfârșitul** textului. Util când utilizatorul scrie din greșeală spații în plus.
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 4** (Litere mari și mici)  
-- [ ] Am scris și am rulat **Exemplul 5** (Înlocuim cuvinte)  
-- [ ] Am scris și am rulat **Exemplul 6** (Curățăm spațiile)  
+- [ ] Am scris și am rulat **Exemplul 3** (Litere mari și mici)  
+- [ ] Am scris și am rulat **Exemplul 4** (Înlocuim cuvinte)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
@@ -189,7 +162,7 @@ Fiecare literă dintr-un text are un **număr de ordine**, numit **index**. Inde
 -6  -5  -4  -3  -2  -1
 ```
 
-### Exemplul 7 — O literă
+### Exemplul 5 — O literă
 
 ```python
 cuvant = "Python"
@@ -211,7 +184,7 @@ o
 - Indexul **negativ** numără de la sfârșit: `[-1]` este **ultima** literă.
 - Dacă ceri un index prea mare (de exemplu `cuvant[10]`), Python dă `IndexError`.
 
-### Exemplul 8 — O bucată de text (slicing)
+### Exemplul 6 — O bucată de text (slicing)
 
 ```python
 cuvant = "Python"
@@ -236,15 +209,15 @@ nohtyP
 - `[::-1]` ia tot textul **invers**.
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 7** (O literă)  
-- [ ] Am scris și am rulat **Exemplul 8** (O bucată de text (slicing))  
+- [ ] Am scris și am rulat **Exemplul 5** (O literă)  
+- [ ] Am scris și am rulat **Exemplul 6** (O bucată de text (slicing))  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 5. Căutăm în text
 
-### Exemplul 9 — `in`, `count`, `find`
+### Exemplul 7 — `in`, `count`, `find`
 
 ```python
 text = "banana"
@@ -271,14 +244,14 @@ False
 | `text.find("n")` | indexul primei apariții (sau `-1` dacă nu există) |
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 9** (`in`, `count`, `find`)  
+- [ ] Am scris și am rulat **Exemplul 7** (`in`, `count`, `find`)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 6. Mini-proiect
 
-### Exemplul 10 — Laboratorul de cuvinte
+### Exemplul 8 — Laboratorul de cuvinte
 
 ```python
 nume = input("Cum te cheama? ")
@@ -309,66 +282,43 @@ Litere 'a':      2
 ```
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** (Laboratorul de cuvinte)  
+- [ ] Am scris și am rulat **Exemplul 8** (Laboratorul de cuvinte)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Laboratorul de cuvinte”
 
-### Exercițiul A — „Laboratorul de cuvinte” (obligatoriu)
+### Minim vs Complet
+
+| | Ce trebuie |
+|--|------------|
+| **Minim** | Un program care citește un nume și îl afișează cu litere mari, cu prima literă și cu lungimea |
+| **Complet** | Minim + ultima literă, textul inversat și câte litere `a` are cuvântul, toate afișate cu f-string |
+
+### Pasul 1 — Minim
+- [ ] Un program care citește un nume și îl afișează cu litere mari, cu prima literă și cu lungimea  
+
+### Pasul 2 — Complet
 Scrie un program care:
 1. citește **un cuvânt** de la tastatură;
 2. afișează cu **f-string**: cuvântul cu litere mari, cu litere mici, prima literă, ultima literă, **inversat** și lungimea lui;
 3. afișează de câte ori apare litera `a` în cuvânt.
 
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
-
-```python
-cuvant = "programare"
-print(cuvant[0])
-print(cuvant[-1])
-print(cuvant[3:6])
-print(cuvant.upper())
-print(cuvant.count("r"))
-print(cuvant.replace("a", "o"))
-```
-
-### Exercițiul C — Mesajul secret
-Citește o propoziție și afișează-o: (1) cu litere mari, (2) cu toate vocalele `a` înlocuite cu `*`, (3) de la coadă la cap.
-
-### Exercițiul D — Găsește greșelile
-Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
-
-```text
-nume = "Ana"
-print("Salut {nume}!")
-print(nume.Upper())
-print(nume[10])
-print(nume[1:3.0])
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. Ce face litera `f` înaintea ghilimelelor?  
-2. De ce primul index este `0`?  
-3. Ce face `text[::-1]`?
-
-**Gata când:**
+**Gata când:**  
 - [ ] Programul citește un cuvânt  
 - [ ] Folosește f-string  
 - [ ] Afișează cuvântul inversat și lungimea  
 - [ ] Folosește cel puțin 3 metode (`upper`, `lower`, `count`…)  
-- [ ] Ai explicat pe foaie ce face `[::-1]`  
 - [ ] Fișierul se numește `Prenume_Nume_P1_L6.py`  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Cuvinte magice
+*Doar dacă ai terminat Complet.*
+
 - [ ] Citește un nume și afișează doar **inițiala** (prima literă mare) urmată de punct  
 - [ ] Verifică dacă un cuvânt este **palindrom** (se citește la fel în ambele sensuri), de exemplu `"ele"`, comparând cuvântul cu inversul lui  
-- [ ] Citește un text și afișează-l cu `.title()` și fără spațiile din margini  
 - [ ] Afișează un preț cu **două zecimale** și simbolul `lei` în f-string  
 
 ---
@@ -409,11 +359,72 @@ Răspunde pe foaie:
 ---
 
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
+1. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).
 2. Scrie un program care citește **prenumele și numele** și afișează: inițialele, numele complet cu litere mari și numărul total de litere (fără spațiu).  
 3. Scrie un program care citește o **propoziție** și afișează de câte ori apare litera `e` în ea.  
-4. **Bonus:** fă un program care ghicește dacă un cuvânt citit e palindrom, comparându-l cu inversul lui.  
-5. Salvează totul ca `Tema_P1_L6_Prenume_Nume.py`.
+4. Salvează totul ca `Tema_P1_L6_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Două exemple în plus, de rulat și de înțeles singur.
+
+#### Acasă 1 — Calcule în acolade
+
+```python
+a = 6
+b = 7
+print(f"{a} x {b} = {a * b}")
+print(f"Peste 5 ani voi avea {a + 5} ani")
+```
+
+**Ieșire:**
+```text
+6 x 7 = 42
+Peste 5 ani voi avea 11 ani
+```
+
+Între acolade poți pune și un **calcul**, nu doar o variabilă.
+
+#### Acasă 2 — Curățăm spațiile
+
+```python
+text = "   salut   "
+print(len(text))
+print(text.strip())
+print(len(text.strip()))
+```
+
+**Ieșire:**
+```text
+11
+salut
+5
+```
+
+`strip()` șterge spațiile de la **începutul** și de la **sfârșitul** textului. Util când utilizatorul scrie din greșeală spații în plus.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+cuvant = "programare"
+print(cuvant[0])
+print(cuvant[-1])
+print(cuvant[3:6])
+print(cuvant.upper())
+print(cuvant.count("r"))
+print(cuvant.replace("a", "o"))
+```
+
+**Găsește greșelile.** Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
+
+```text
+nume = "Ana"
+print("Salut {nume}!")
+print(nume.Upper())
+print(nume[10])
+print(nume[1:3.0])
+```
 
 ---
 

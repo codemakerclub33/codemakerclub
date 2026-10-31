@@ -1,4 +1,4 @@
-# LECȚIA 7 — `if`: programul decide
+# LECȚIA 7 — Chestionarul
 **Modulul 1 · Primii pași în Python · 2 ore**  
 **Code Maker Club · Python Starter**
 
@@ -7,13 +7,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei scrii condiții cu `==`, `!=`, `<`, `>`, `<=`, `>=`, folosești `if`, `else` și `elif`, înțelegi rolul **indentării** și compari texte.  
-**Minim:** un program cu `if` și `else` care răspunde diferit după vârstă sau după un număr.  
-**Ținta orei (Complet):** + un lanț cu `elif` și un chestionar cu scor.
-
-## De ce contează
-Fiecare joc ia decizii: „dacă jucătorul atinge monstrul, pierde o viață”. Fiecare aplicație la fel: „dacă parola e corectă, intri”. Fără `if`, un program nu poate alege.
+## Ce facem azi
+La finalul orei scrii condiții cu `==`, `!=`, `<`, `>`, `<=`, `>=`, folosești `if`, `else` și `elif`, înțelegi rolul **indentării** și compari texte. Fiecare joc ia decizii: „dacă jucătorul atinge monstrul, pierde o viață”. Fiecare aplicație la fel: „dacă parola e corectă, intri”. Fără `if`, un program nu poate alege.
 
 ---
 
@@ -25,10 +20,22 @@ Fiecare joc ia decizii: „dacă jucătorul atinge monstrul, pierde o viață”
 | 10–30 | Comparații și `if` (**Exemplele 1–2**) |
 | 30–50 | `else` (**Exemplul 3**) |
 | 50–75 | `elif` (**Exemplele 4–5**) |
-| 75–95 | Text în condiții, `if` în `if` (**Exemplele 6–8**) |
-| 95–105 | Litere mari și mici la răspunsuri (**Exemplul 9**) |
-| 105–118 | Mini-proiect (**Exemplul 10**) |
+| 75–95 | Text în condiții (**Exemplul 6**) |
+| 95–105 | Litere mari și mici la răspunsuri (**Exemplul 7**) |
+| 105–118 | Mini-proiect (**Exemplul 8**) |
 | 118–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `==  !=  <  >  <=  >=` | Compară două valori; rezultatul e `True` sau `False` | `varsta >= 12` |
+| `if condiție:` | Face ceva doar dacă e adevărat (liniile indentate) | `if scor > 10:` |
+| `else:` | Face altceva, dacă nu e adevărat | `else:` |
+| `elif condiție:` | Alte variante, verificate pe rând | `elif nota >= 7:` |
+| `.lower()` | Acceptă „da”, „DA” și „Da” | `raspuns.lower() == "da"` |
 
 ---
 
@@ -204,60 +211,17 @@ Bine ai venit!
 
 Textele se compară cu `==`. Atenție: `"Python"` și `"python"` sunt **diferite**!
 
-### Exemplul 7 — Temperatura
 
-```python
-temperatura = int(input("Cate grade sunt afara? "))
-if temperatura < 0:
-    print("Ingheat! Pune caciula.")
-elif temperatura < 15:
-    print("Racoare, ia o geaca.")
-elif temperatura < 25:
-    print("Vreme buna.")
-else:
-    print("Cald! Bea apa.")
-```
-
-**Ieșire:**
-```text
-Cate grade sunt afara? 28
-Cald! Bea apa.
-```
-
-### Exemplul 8 — `if` în `if`
-
-```python
-numar = int(input("Scrie un numar: "))
-if numar > 0:
-    print("Numar pozitiv")
-    if numar % 2 == 0:
-        print("... si este par")
-    else:
-        print("... si este impar")
-else:
-    print("Numarul nu este pozitiv")
-```
-
-**Ieșire:**
-```text
-Scrie un numar: 12
-Numar pozitiv
-... si este par
-```
-
-Poți pune un `if` **în interiorul** altui `if`. Fiecare nivel se **indentează încă o dată** (încă 4 spații).
 
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 6** (Parola)  
-- [ ] Am scris și am rulat **Exemplul 7** (Temperatura)  
-- [ ] Am scris și am rulat **Exemplul 8** (`if` în `if`)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 7. Litere mari sau mici?
 
-### Exemplul 9 — Răspuns „da” în orice fel
+### Exemplul 7 — Răspuns „da” în orice fel
 
 ```python
 raspuns = input("Vrei sa continui? (da/nu) ")
@@ -276,14 +240,14 @@ Continuam!
 Utilizatorul poate scrie `da`, `Da`, `DA` sau `dA`. Cu `.lower()` transformăm răspunsul în litere mici înainte de comparație, ca să funcționeze pentru toate.
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 9** (Răspuns „da” în orice fel)  
+- [ ] Am scris și am rulat **Exemplul 7** (Răspuns „da” în orice fel)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 8. Mini-proiect
 
-### Exemplul 10 — Chestionarul
+### Exemplul 8 — Chestionarul
 
 ```python
 print("=== Chestionar ===")
@@ -335,73 +299,44 @@ Excelent!
 ```
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** (Chestionarul)  
+- [ ] Am scris și am rulat **Exemplul 8** (Chestionarul)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Chestionarul”
 
-### Exercițiul A — „Chestionarul” (obligatoriu)
+### Minim vs Complet
+
+| | Ce trebuie |
+|--|------------|
+| **Minim** | Un program cu `if` și `else` care răspunde diferit după vârstă sau după un număr |
+| **Complet** | Minim + un lanț cu `elif` și un chestionar cu scor |
+
+### Pasul 1 — Minim
+- [ ] Un program cu `if` și `else` care răspunde diferit după vârstă sau după un număr  
+
+### Pasul 2 — Complet
 Scrie un chestionar cu **cel puțin 4 întrebări** (cel puțin una cu număr și una cu text), care:
 1. numără scorul;
 2. spune „Corect!” sau „Greșit” după fiecare răspuns;
 3. la final afișează scorul și un mesaj, diferit după scor (cu `if / elif / else`).
 
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
-
-```python
-x = 15
-if x > 10:
-    print("A")
-if x > 20:
-    print("B")
-else:
-    print("C")
-if x % 5 == 0:
-    print("D")
-elif x > 0:
-    print("E")
-```
-
-### Exercițiul C — Biletul la cinema
-Citește vârsta. Dacă are sub 6 ani, afișează „Gratuit”; între 6 și 17 (inclusiv), „Bilet de copil”; peste 17, „Bilet normal”.
-
-### Exercițiul D — Găsește greșelile
-Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
-
-```text
-varsta = int(input("Varsta: "))
-if varsta = 18:
-print("Esti major")
-else
-    print("Esti minor")
-if varsta > 12
-    print("Adolescent")
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. Care e diferența dintre `=` și `==`?  
-2. De ce contează ordinea condițiilor într-un lanț `elif`?  
-3. La ce folosește indentarea?
-
-**Gata când:**
+**Gata când:**  
 - [ ] Chestionarul are minimum 4 întrebări  
 - [ ] Scorul se calculează corect  
 - [ ] Folosește `if`, `elif` și `else`  
 - [ ] Comparația de text folosește `.lower()`  
-- [ ] Ai explicat pe foaie diferența dintre `=` și `==`  
 - [ ] Fișierul se numește `Prenume_Nume_P1_L7.py`  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Decizii mai grele
+*Doar dacă ai terminat Complet.*
+
 - [ ] Citește trei numere și afișează-l pe cel mai mare  
 - [ ] Fă un program care citește o zi a săptămânii (1–7) și afișează numele zilei  
 - [ ] Verifică dacă un an este bisect: divizibil cu 4 (ignoră excepțiile)  
-- [ ] Adaugă la chestionar un nivel de dificultate: întrebări diferite pentru „ușor” și „greu”  
 
 ---
 
@@ -441,11 +376,86 @@ Răspunde pe foaie:
 ---
 
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
+1. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).
 2. Scrie un program care citește două numere și afișează care e mai mare, sau „sunt egale”.  
 3. Scrie un program „Semafor”: citește culoarea (`rosu`, `galben`, `verde`) și afișează ce are de făcut pietonul.  
-4. **Bonus:** program care citește un număr și afișează dacă e pozitiv, negativ sau zero, și dacă e par sau impar.  
-5. Salvează totul ca `Tema_P1_L7_Prenume_Nume.py`.
+4. Salvează totul ca `Tema_P1_L7_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Două exemple în plus, de rulat și de înțeles singur.
+
+#### Acasă 1 — Temperatura
+
+```python
+temperatura = int(input("Cate grade sunt afara? "))
+if temperatura < 0:
+    print("Ingheat! Pune caciula.")
+elif temperatura < 15:
+    print("Racoare, ia o geaca.")
+elif temperatura < 25:
+    print("Vreme buna.")
+else:
+    print("Cald! Bea apa.")
+```
+
+**Ieșire:**
+```text
+Cate grade sunt afara? 28
+Cald! Bea apa.
+```
+
+#### Acasă 2 — `if` în `if`
+
+```python
+numar = int(input("Scrie un numar: "))
+if numar > 0:
+    print("Numar pozitiv")
+    if numar % 2 == 0:
+        print("... si este par")
+    else:
+        print("... si este impar")
+else:
+    print("Numarul nu este pozitiv")
+```
+
+**Ieșire:**
+```text
+Scrie un numar: 12
+Numar pozitiv
+... si este par
+```
+
+Poți pune un `if` **în interiorul** altui `if`. Fiecare nivel se **indentează încă o dată** (încă 4 spații).
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+x = 15
+if x > 10:
+    print("A")
+if x > 20:
+    print("B")
+else:
+    print("C")
+if x % 5 == 0:
+    print("D")
+elif x > 0:
+    print("E")
+```
+
+**Găsește greșelile.** Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
+
+```text
+varsta = int(input("Varsta: "))
+if varsta = 18:
+print("Esti major")
+else
+    print("Esti minor")
+if varsta > 12
+    print("Adolescent")
+```
 
 ---
 

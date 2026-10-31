@@ -1,4 +1,4 @@
-# LECȚIA 8 — `and`, `or`, `not`
+# LECȚIA 8 — Poarta parcului de distracții
 **Modulul 1 · Primii pași în Python · 2 ore**  
 **Code Maker Club · Python Starter**
 
@@ -7,13 +7,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei folosești `and`, `or` și `not`, înțelegi tabelele de adevăr, scrii condiții pentru intervale și respecți ordinea în care Python le evaluează.  
-**Minim:** un program cu o condiție cu `and` și una cu `or`.  
-**Ținta orei (Complet):** + `not`, un interval (`1 <= x <= 10`) și un program final cu mai multe reguli.
-
-## De ce contează
-Jocurile și aplicațiile iau decizii cu mai multe condiții deodată: „dacă jucătorul are cheia **și** ușa e aproape”, „dacă are 0 vieți **sau** timpul a expirat”. Fără `and` și `or`, ar trebui să scrii zeci de `if`-uri imbricate.
+## Ce facem azi
+La finalul orei folosești `and`, `or` și `not`, înțelegi tabelele de adevăr, scrii condiții pentru intervale și respecți ordinea în care Python le evaluează. Jocurile și aplicațiile iau decizii cu mai multe condiții deodată: „dacă jucătorul are cheia **și** ușa e aproape”, „dacă are 0 vieți **sau** timpul a expirat”. Fără `and` și `or`, ar trebui să scrii zeci de `if`-uri imbricate.
 
 ---
 
@@ -24,10 +19,21 @@ Jocurile și aplicațiile iau decizii cu mai multe condiții deodată: „dacă 
 | 0–10 | Recapitulare L7 |
 | 10–35 | `and` și `or` (**Exemplele 1–2**) |
 | 35–50 | `not` și tabelele de adevăr (**Exemplele 3–4**) |
-| 50–75 | Intervale, reduceri, litere (**Exemplele 5–7**) |
-| 75–95 | Validarea unei parole și ordinea de evaluare (**Exemplele 8–9**) |
-| 95–115 | Mini-proiect (**Exemplul 10**) |
+| 50–75 | Intervale (**Exemplul 5**) |
+| 75–95 | Validarea unei parole și ordinea de evaluare (**Exemplele 6–7**) |
+| 95–115 | Mini-proiect (**Exemplul 8**) |
 | 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `and` | Adevărat doar dacă ambele condiții sunt adevărate | `varsta >= 12 and inaltime >= 140` |
+| `or` | Adevărat dacă măcar una e adevărată | `zi == "sambata" or zi == "duminica"` |
+| `not` | Răstoarnă adevărul | `not ploua` |
+| `1 <= x <= 10` | Verifică un interval | `1 <= nota <= 10` |
 
 ---
 
@@ -176,55 +182,17 @@ Si asa merge, mai scurt!
 
 Python permite o scriere scurtă pentru intervale: `1 <= nota <= 10`, exact ca la matematică.
 
-### Exemplul 6 — Reducere la bilet
 
-```python
-varsta = int(input("Varsta: "))
-if varsta < 12 or varsta >= 65:
-    print("Ai reducere!")
-else:
-    print("Pret intreg.")
-```
-
-**Ieșire:**
-```text
-Varsta: 70
-Ai reducere!
-```
-
-Reducerea e pentru cei **mici** (sub 12) **sau** pentru cei **în vârstă** (65 sau mai mult). Pentru oricine altcineva, prețul este întreg.
-
-### Exemplul 7 — Vocală sau consoană?
-
-```python
-litera = input("Scrie o litera: ").lower()
-if litera in "aeiou":
-    print("Este vocala")
-elif litera in "bcdfghjklmnpqrstvwxyz":
-    print("Este consoana")
-else:
-    print("Nu este o litera din alfabet")
-```
-
-**Ieșire:**
-```text
-Scrie o litera: E
-Este vocala
-```
-
-`litera in "aeiou"` verifică dacă litera se află în text (ai văzut `in` în lecția 6). Observă și `.lower()` lipit direct de `input(...)`: transformăm răspunsul în litere mici imediat.
 
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 5** (Interval: nota trebuie să fie între 1 și 10)  
-- [ ] Am scris și am rulat **Exemplul 6** (Reducere la bilet)  
-- [ ] Am scris și am rulat **Exemplul 7** (Vocală sau consoană?)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 5. Parole și ordinea de evaluare
 
-### Exemplul 8 — Validăm o parolă
+### Exemplul 6 — Validăm o parolă
 
 ```python
 parola = input("Alege o parola: ")
@@ -242,7 +210,7 @@ Parola e buna!
 
 Aici am legat **trei condiții** cu `and`. Metoda `parola.isdigit()` este `True` dacă parola conține **doar cifre**; cu `not` cerem să **nu** fie doar cifre.
 
-### Exemplul 9 — Ordinea de evaluare
+### Exemplul 7 — Ordinea de evaluare
 
 ```python
 print(True or False and False)
@@ -267,15 +235,15 @@ Ordinea este:
 Ca la matematică, `and` „se leagă” mai tare decât `or`, ca înmulțirea față de adunare. **Parantezele** schimbă ordinea și fac codul ușor de înțeles: folosește-le oricând nu ești sigur.
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 8** (Validăm o parolă)  
-- [ ] Am scris și am rulat **Exemplul 9** (Ordinea de evaluare)  
+- [ ] Am scris și am rulat **Exemplul 6** (Validăm o parolă)  
+- [ ] Am scris și am rulat **Exemplul 7** (Ordinea de evaluare)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 6. Mini-proiect
 
-### Exemplul 10 — Poarta parcului de distracții
+### Exemplul 8 — Poarta parcului de distracții
 
 ```python
 print("=== Poarta parcului ===")
@@ -313,68 +281,42 @@ Casa groazei: DA
 ```
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** (Poarta parcului de distracții)  
+- [ ] Am scris și am rulat **Exemplul 8** (Poarta parcului de distracții)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Poarta parcului de distracții”
 
-### Exercițiul A — „Poarta parcului de distracții” (obligatoriu)
+### Minim vs Complet
+
+| | Ce trebuie |
+|--|------------|
+| **Minim** | Un program cu o condiție cu `and` și una cu `or` |
+| **Complet** | Minim + `not`, un interval (`1 <= x <= 10`) și un program final cu mai multe reguli |
+
+### Pasul 1 — Minim
+- [ ] Un program cu o condiție cu `and` și una cu `or`  
+
+### Pasul 2 — Complet
 Scrie un program care:
 1. întreabă vârsta, înălțimea și dacă are un adult alături;
 2. pentru **3 atracții** (propune tu regulile), afișează „DA” sau „NU”;
 3. folosește cel puțin o dată `and`, `or` și `not`.
 
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
-
-```python
-a = 5
-b = 10
-print(a > 3 and b > 3)
-print(a > 7 or b > 7)
-print(not (a > 3))
-print(a < 10 and b < 10 or a == 5)
-print(1 < a < 6)
-```
-
-### Exercițiul C — Sâmbătă sau duminică?
-Citește o zi a săptămânii și afișează „weekend” dacă e sâmbătă sau duminică (cu `or`), altfel „zi de școală”. Folosește `.lower()`.
-
-### Exercițiul D — Găsește greșelile
-Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
-
-```text
-varsta = int(input("Varsta: "))
-if varsta >= 10 and <= 18:
-    print("Adolescent")
-zi = input("Zi: ")
-if zi == "sambata" or "duminica":
-    print("Weekend")
-if not varsta > 5 and
-    print("Mic")
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. Când este `A and B` adevărat?  
-2. Când este `A or B` adevărat?  
-3. De ce `zi == "sambata" or "duminica"` este o scriere greșită?
-
-**Gata când:**
+**Gata când:**  
 - [ ] Programul folosește `and`, `or` și `not`  
 - [ ] Are cel puțin 3 atracții cu reguli diferite  
 - [ ] Testat cu cel puțin 3 seturi de date  
-- [ ] Ai explicat pe foaie când e adevărat `and` și când `or`  
 - [ ] Fișierul se numește `Prenume_Nume_P1_L8.py`  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Semaforul deștept
+*Doar dacă ai terminat Complet.*
+
 - [ ] Verifică dacă un număr este divizibil și cu 3, și cu 5 (restul `%` la fiecare este 0)  
 - [ ] Scrie un program „Semafor deștept”: se traversează dacă lumina este verde **și** nu vine nicio mașină  
-- [ ] Verifică dacă o literă e vocală mare sau mică, fără `.lower()`, cu `or`  
 - [ ] Fă o verificare de parolă cu cel puțin 4 reguli (lungime, nu doar cifre, nu e „parola” etc.)  
 
 ---
@@ -414,11 +356,78 @@ Răspunde pe foaie:
 ---
 
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
+1. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).
 2. Scrie un program care citește un număr și afișează „Număr de două cifre” dacă este între 10 și 99.  
 3. Scrie un program **„Controlul accesului”**: parola corectă **și** vârsta peste 12, **sau** parola specială „invitat”.  
-4. **Bonus:** program care verifică dacă un an este bisect (divizibil cu 4 **și** nu cu 100, **sau** divizibil cu 400).  
-5. Salvează totul ca `Tema_P1_L8_Prenume_Nume.py`.
+4. Salvează totul ca `Tema_P1_L8_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Două exemple în plus, de rulat și de înțeles singur.
+
+#### Acasă 1 — Reducere la bilet
+
+```python
+varsta = int(input("Varsta: "))
+if varsta < 12 or varsta >= 65:
+    print("Ai reducere!")
+else:
+    print("Pret intreg.")
+```
+
+**Ieșire:**
+```text
+Varsta: 70
+Ai reducere!
+```
+
+Reducerea e pentru cei **mici** (sub 12) **sau** pentru cei **în vârstă** (65 sau mai mult). Pentru oricine altcineva, prețul este întreg.
+
+#### Acasă 2 — Vocală sau consoană?
+
+```python
+litera = input("Scrie o litera: ").lower()
+if litera in "aeiou":
+    print("Este vocala")
+elif litera in "bcdfghjklmnpqrstvwxyz":
+    print("Este consoana")
+else:
+    print("Nu este o litera din alfabet")
+```
+
+**Ieșire:**
+```text
+Scrie o litera: E
+Este vocala
+```
+
+`litera in "aeiou"` verifică dacă litera se află în text (ai văzut `in` în lecția 6). Observă și `.lower()` lipit direct de `input(...)`: transformăm răspunsul în litere mici imediat.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+a = 5
+b = 10
+print(a > 3 and b > 3)
+print(a > 7 or b > 7)
+print(not (a > 3))
+print(a < 10 and b < 10 or a == 5)
+print(1 < a < 6)
+```
+
+**Găsește greșelile.** Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
+
+```text
+varsta = int(input("Varsta: "))
+if varsta >= 10 and <= 18:
+    print("Adolescent")
+zi = input("Zi: ")
+if zi == "sambata" or "duminica":
+    print("Weekend")
+if not varsta > 5 and
+    print("Mic")
+```
 
 ---
 

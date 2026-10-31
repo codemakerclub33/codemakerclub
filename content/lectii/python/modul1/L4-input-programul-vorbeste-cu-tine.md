@@ -1,4 +1,4 @@
-# LECȚIA 4 — `input`: programul vorbește cu tine
+# LECȚIA 4 — Interviul
 **Modulul 1 · Primii pași în Python · 2 ore**  
 **Code Maker Club · Python Starter**
 
@@ -7,13 +7,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei folosești `input()` ca să citești text de la tastatură, transformi răspunsul în număr cu `int()` și `float()` și construiești programe care vorbesc cu utilizatorul.  
-**Minim:** un program care întreabă numele și vârsta și le folosește într-un mesaj.  
-**Ținta orei (Complet):** + un calcul cu numerele introduse și un mesaj final personalizat.
-
-## De ce contează
-Aproape toate aplicațiile cer ceva de la utilizator: o parolă, un nume, o alegere. Cu `input()` programele tale devin **interactive**, adică se comportă diferit de fiecare dată, în funcție de ce scrie omul.
+## Ce facem azi
+La finalul orei folosești `input()` ca să citești text de la tastatură, transformi răspunsul în număr cu `int()` și `float()` și construiești programe care vorbesc cu utilizatorul. Aproape toate aplicațiile cer ceva de la utilizator: o parolă, un nume, o alegere. Cu `input()` programele tale devin **interactive**, adică se comportă diferit de fiecare dată, în funcție de ce scrie omul.
 
 ---
 
@@ -22,12 +17,22 @@ Aproape toate aplicațiile cer ceva de la utilizator: o parolă, un nume, o aleg
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recapitulare L3 |
-| 10–35 | `input()` pentru text (**Exemplele 1–2**) |
-| 35–65 | Numere de la tastatură: `int()` și `float()` (**Exemplele 3–5**) |
-| 65–90 | Mai multe întrebări, calcule (**Exemplele 6–7**) |
-| 90–105 | Erori la `input` (**Exemplul 8**) și calcule utile (**Exemplul 9**) |
-| 105–118 | Mini-proiect (**Exemplul 10**) |
+| 10–35 | `input` pentru text (**Exemplele 1–2**) |
+| 35–65 | Numere de la tastatură: `int` și `float` (**Exemplele 3–5**) |
+| 65–90 | Mai multe întrebări, calcule (**Exemplul 6**) |
+| 90–105 | Erori la `input` (**Exemplul 7**) |
+| 105–118 | Mini-proiect (**Exemplul 8**) |
 | 118–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `input("Întrebare ")` | Citește text de la tastatură | `nume = input("Cum te chemi? ")` |
+| `int(input(...))` | Citește un număr întreg | `varsta = int(input("Câți ani ai? "))` |
+| `float(input(...))` | Citește un număr cu virgulă | `pret = float(input("Preț: "))` |
 
 ---
 
@@ -166,32 +171,16 @@ Care e culoarea ta preferata? albastru
 Salut, Maria! albastru este o culoare frumoasa.
 ```
 
-### Exemplul 7 — Aria unui cerc
-
-```python
-raza = float(input("Raza cercului: "))
-aria = 3.14 * raza * raza
-print("Aria este", aria)
-```
-
-**Ieșire:**
-```text
-Raza cercului: 2
-Aria este 12.56
-```
-
-Aici am folosit `3.14` pentru π. Chiar dacă utilizatorul a scris `2`, `float` îl transformă în `2.0` și calculul merge.
 
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 6** (Un mic dialog)  
-- [ ] Am scris și am rulat **Exemplul 7** (Aria unui cerc)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 5. Erori și calcule utile
 
-### Exemplul 8 — Ce se întâmplă dacă scrii litere unde cerem număr?
+### Exemplul 7 — Ce se întâmplă dacă scrii litere unde cerem număr?
 
 ```text
 varsta = int(input("Cati ani ai? "))
@@ -199,30 +188,16 @@ varsta = int(input("Cati ani ai? "))
 
 Dacă utilizatorul scrie `zece` în loc de `10`, Python oprește programul cu `ValueError: invalid literal for int()`. Programul **nu** se strică din cauza ta: cere pur și simplu un număr, iar tu ai scris litere. Mai târziu, în modulul 4, vei învăța să prinzi astfel de erori cu `try/except`. Până atunci, **scrie doar numere** când programul cere numere.
 
-### Exemplul 9 — Din ore în minute
-
-```python
-ore = int(input("Cate ore a durat filmul? "))
-minute = ore * 60
-print(ore, "ore =", minute, "minute")
-```
-
-**Ieșire:**
-```text
-Cate ore a durat filmul? 3
-3 ore = 180 minute
-```
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 8** (Ce se întâmplă dacă scrii litere unde cerem număr?)  
-- [ ] Am scris și am rulat **Exemplul 9** (Din ore în minute)  
+- [ ] Am scris și am rulat **Exemplul 7** (Ce se întâmplă dacă scrii litere unde cerem număr?)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 6. Mini-proiect
 
-### Exemplul 10 — Interviul
+### Exemplul 8 — Interviul
 
 ```python
 print("=== Interviu ===")
@@ -257,57 +232,44 @@ Multumesc, Alex!
 ```
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** (Interviul)  
+- [ ] Am scris și am rulat **Exemplul 8** (Interviul)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Interviul”
 
-### Exercițiul A — „Interviul” (obligatoriu)
+### Minim vs Complet
+
+| | Ce trebuie |
+|--|------------|
+| **Minim** | Un program care întreabă numele și vârsta și le folosește într-un mesaj |
+| **Complet** | Minim + un calcul cu numerele introduse și un mesaj final personalizat |
+
+### Pasul 1 — Minim
+- [ ] Un program care întreabă numele și vârsta și le folosește într-un mesaj  
+
+### Pasul 2 — Complet
 Scrie un program care:
 1. întreabă **numele**, **vârsta** și **un lucru preferat** (joc, mâncare, animal);
 2. afișează un raport cu un chenar;
 3. calculează și afișează **câți ani vei avea peste 5 ani** și **câte litere** are numele tău.
 
-### Exercițiul B — Calculatorul de buzunar
-Citește **două numere** de la tastatură și afișează suma, diferența și produsul lor, fiecare pe câte un rând, cu mesaj clar.
-
-### Exercițiul C — Calculatorul de bani
-Întreabă cât costă un joc și câte jocuri vrea să cumpere utilizatorul. Afișează cât are de plătit (folosește `float` pentru preț).
-
-### Exercițiul D — Găsește greșelile
-Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
-
-```text
-nume = input(Cum te cheama? )
-varsta = input("Cati ani ai? ")
-print("Anul viitor ai " + varsta + 1 + " ani")
-pret = float(input("Pret: "))
-print("Dublul este" pret * 2)
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. Ce tip de date dă mereu `input()`?  
-2. De ce scriem `int(input(...))` când vrem un număr?  
-3. De ce punem un spațiu la finalul întrebării din `input`?
-
-**Gata când:**
+**Gata când:**  
 - [ ] Programul rulează și pune cel puțin 3 întrebări  
 - [ ] Folosește `int()` pentru vârstă  
 - [ ] Afișează un raport clar, cu chenar  
 - [ ] Face cel puțin un calcul cu un număr introdus  
-- [ ] Ai explicat pe foaie ce tip dă `input()`  
 - [ ] Fișierul se numește `Prenume_Nume_P1_L4.py`  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Calculatoare rapide
+*Doar dacă ai terminat Complet.*
+
 - [ ] Citește două numere și afișează **media** lor  
 - [ ] Citește o temperatură în Celsius și afișează-o în Fahrenheit (`c * 9 / 5 + 32`)  
 - [ ] Citește un număr și afișează dublul, triplul și pătratul lui  
-- [ ] Citește un nume și afișează-l de 3 ori, pe același rând, cu `-` între ele  
 
 ---
 
@@ -345,11 +307,57 @@ Răspunde pe foaie:
 ---
 
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
+1. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).
 2. Scrie un program **„Magazin”**: citește prețul unui produs și numărul de bucăți și afișează totalul.  
 3. Scrie un program care citește **numele tău și al unui prieten** și afișează un mesaj de felicitare pentru amândoi.  
-4. **Bonus:** convertește din km în metri și din metri în centimetri, citind un număr de la tastatură.  
-5. Salvează totul ca `Tema_P1_L4_Prenume_Nume.py`.
+4. Salvează totul ca `Tema_P1_L4_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Două exemple în plus, de rulat și de înțeles singur.
+
+#### Acasă 1 — Aria unui cerc
+
+```python
+raza = float(input("Raza cercului: "))
+aria = 3.14 * raza * raza
+print("Aria este", aria)
+```
+
+**Ieșire:**
+```text
+Raza cercului: 2
+Aria este 12.56
+```
+
+Aici am folosit `3.14` pentru π. Chiar dacă utilizatorul a scris `2`, `float` îl transformă în `2.0` și calculul merge.
+
+#### Acasă 2 — Din ore în minute
+
+```python
+ore = int(input("Cate ore a durat filmul? "))
+minute = ore * 60
+print(ore, "ore =", minute, "minute")
+```
+
+**Ieșire:**
+```text
+Cate ore a durat filmul? 3
+3 ore = 180 minute
+```
+
+### Încă două exerciții
+
+**Ce afișează?** Citește **două numere** de la tastatură și afișează suma, diferența și produsul lor, fiecare pe câte un rând, cu mesaj clar.
+
+**Găsește greșelile.** Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
+
+```text
+nume = input(Cum te cheama? )
+varsta = input("Cati ani ai? ")
+print("Anul viitor ai " + varsta + 1 + " ani")
+pret = float(input("Pret: "))
+print("Dublul este" pret * 2)
+```
 
 ---
 
