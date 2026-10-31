@@ -1,8 +1,10 @@
-Lecția trei din Modulul unu. Titluri și paragrafe.
+Lecția trei. Povestea mea într-o pagină.
 
 Azi înveți să scrii titluri mari și mici și să împarți textul în paragrafe, ca într-o carte. Paginile tale încep să arate ca niște pagini adevărate.
 
-Obiectivul. Minim: o pagină cu un titlu h unu, două titluri h doi și câte un paragraf sub fiecare. Complet: în plus un titlu h trei, o linie hr, o poezie cu br și un semn special.
+Ce facem azi. La final ai o poveste într-o pagină, cu un titlu mare, capitole cu titluri mai mici, paragrafe, o linie despărțitoare și o poezie. Știi cele șase titluri, de ce o pagină are un singur h unu și cum scrii paragrafe. Titlurile sunt ca etichetele de pe sertarele unui dulap: îți spun repede ce găsești în fiecare.
+
+Instrucțiuni noi azi. H unu până la h șase sunt titlurile, de la cel mai important la cel mai puțin important. P este un paragraf. Br rupe rândul și nu are tag de închidere. Iar hr trasează o linie despărțitoare.
 
 Primul pas. Titlurile. H-T-M-L are șase titluri, de la h unu, cel mai mare, până la h șase, cel mai mic. H vine de la heading, adică titlu. Fiecare are tag de deschidere și de închidere, iar numărul trebuie să fie același în ambele.
 
@@ -10,14 +12,16 @@ Al doilea pas. Un singur h unu. H unu este titlul întregii pagini, ca titlul un
 
 Al treilea pas. Titlurile ca un cuprins. H doi sunt capitolele, h trei sunt părțile din capitole. Mergi pe rând: după h unu vine h doi, după h doi vine h trei. Nu sări de la h doi la h cinci.
 
-Al patrulea pas. Paragrafele. Fiecare paragraf începe pe un rând nou, cu puțin spațiu deasupra. Oricâte spații sau Enter-uri pui între cuvinte, browserul arată un singur spațiu. Pentru un rând nou în același paragraf folosești br, de exemplu la poezii. Br nu are tag de închidere.
+Al patrulea pas. Paragrafele. Fiecare paragraf începe pe un rând nou, cu puțin spațiu deasupra. Pentru un rând nou în același paragraf folosești br, de exemplu la poezii. Br nu are tag de închidere.
 
 Al cincilea pas. Linia hr trasează o linie orizontală între două părți ale paginii. Nici ea nu are tag de închidere.
 
-Al șaselea pas. Semne speciale. Dacă vrei să apară în pagină semnul mai mic, scrii and, l, t, punct și virgulă. Pentru semnul mai mare scrii and, g, t, punct și virgulă. Pentru semnul and scrii and, a, m, p, punct și virgulă.
+De făcut azi. Minim: o pagină cu un titlu h unu, două titluri h doi și câte un paragraf sub fiecare. Complet: adaugi un titlu h trei, o linie hr și o poezie cu br.
+
+Bonus. Regulile jocului meu. Scrii regulile jocului tău preferat, încerci h cinci și h șase într-un cuprins cu patru niveluri și cauți titlurile în DevTools.
 
 Greșeli frecvente. Titlu deschis cu h doi și închis cu h trei. Mai multe h unu pe aceeași pagină. Sărituri de la h doi la h cinci. Ai crezut că Enter face rând nou. Ai uitat închiderea paragrafului.
 
-Tema. O pagină despre un loc unde ai fost în vacanță, cu un titlu h unu, trei titluri h doi, paragrafe și o linie hr.
+Tema. O pagină despre un loc unde ai fost în vacanță. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
 
 Recapitulare. Titlurile merg de la h unu la h șase, ca un cuprins. Paragraful este p, rândul nou este br, linia este hr. Succes!

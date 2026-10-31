@@ -1,4 +1,5 @@
 # LECȚIA 4 — Trecerea mea
+### Semafor cu buton de traversare
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 

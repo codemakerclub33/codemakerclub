@@ -1,4 +1,5 @@
 # LECȚIA 5 — Lampa mea
+### Potențiometru și PWM
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 

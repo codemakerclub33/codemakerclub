@@ -1,4 +1,5 @@
 # LECȚIA 7 — Soneria mea
+### Buzzer: sunet și sonerie
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 

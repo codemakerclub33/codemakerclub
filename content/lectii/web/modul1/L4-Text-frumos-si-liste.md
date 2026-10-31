@@ -1,4 +1,5 @@
-# LECȚIA 4 — Text frumos și liste
+# LECȚIA 4 — Rețeta mea
+### Text îngroșat, înclinat și liste
 **Modulul 1 · HTML I: Prima mea pagină · 2 ore**  
 **Code Maker Club · HTML Starter**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei știi să îngroși textul cu `<strong>`, să înclini textul cu `<em>`, să evidențiezi textul cu `<mark>`, să scrii exponenți și indici (`<sup>`, `<sub>`) și să faci liste cu buline (`<ul>`) și cu numere (`<ol>`), inclusiv liste în alte liste.  
-**Minim:** o pagină cu text îngroșat și înclinat, o listă cu buline și o listă cu numere.  
-**Ținta orei (Complet):** + o listă în altă listă, un text cu `<sup>` sau `<sub>`, un cuvânt evidențiat cu `<mark>` și o listă numerotată cu numărătoare inversă.
-
-## De ce contează
-Un text în care totul arată la fel e greu de citit. Cu **îngroșat** spui „asta e important”, cu **înclinat** spui „aici apasă puțin vocea”, iar listele pun ideile **în ordine**: ingrediente, pași, reguli, topuri. Le vei folosi în aproape fiecare pagină pe care o faci.
+## Ce facem azi
+La final ai o **rețetă** (sau un **top**) cu titlu, ingrediente într-o listă cu buline, pașii într-o listă numerotată, cuvinte importante îngroșate și o listă în altă listă. Știi să faci textul îngroșat, înclinat sau evidențiat și să scrii liste cu buline și cu numere. Un text în care totul arată la fel e greu de citit: cu **îngroșat** spui „asta e important”, iar listele pun ideile în ordine, ca la ingrediente, pași, reguli sau topuri.
 
 ---
 
@@ -23,11 +19,25 @@ Un text în care totul arată la fel e greu de citit. Cu **îngroșat** spui „
 |--------|----------|
 | 0–15 | Recapitulare · pornim proiectul |
 | 15–40 | `strong`, `em` și tag-uri în tag-uri (**Exemplele 1–3**) |
-| 40–55 | `mark`, `small`, `sup`, `sub` (**Exemplele 4–5**) |
-| 55–85 | Liste cu buline și cu numere (**Exemplele 6–8**) |
-| 85–100 | Liste în liste (**Exemplul 9**) |
-| 100–115 | Mini-proiect: rețeta mea (**Exemplul 10**) |
+| 40–55 | `mark` și `small` (**Exemplul 4**) |
+| 55–85 | Liste cu buline și cu numere (**Exemplele 5–6**) |
+| 85–100 | Liste în liste (**Exemplul 7**) |
+| 100–115 | Mini-proiect: rețeta mea (**Exemplul 8**) |
 | 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `<strong>` | Text îngroșat (important) | `<strong>2</strong> ouă` |
+| `<em>` | Text înclinat | `<em>iubesc</em>` |
+| `<mark>` | Text evidențiat, cu fundal galben | `<mark>sâmbătă</mark>` |
+| `<small>` | Text mai mic, pentru note | `<small>Notă mică</small>` |
+| `<ul>` și `<li>` | Listă cu buline; `<li>` este un rând | când ordinea nu contează |
+| `<ol>` | Listă cu numere | când ordinea contează |
+| `<ul>` în `<li>` | Listă în listă | între `<li>` și `</li>` |
 
 ---
 
@@ -95,27 +105,14 @@ Aici `<em>` e în interiorul lui `<strong>`, deci cuvântul e **și îngroșat, 
 - `<mark>` pune un **fundal galben**, ca atunci când treci cu textmarkerul.  
 - `<small>` face textul **mai mic**, pentru note și mențiuni mărunte.
 
-### Exemplul 5 — Exponenți și indici: `<sup>`, `<sub>`
-
-```html
-<p>Aria unui pătrat cu latura 3 este 3 &times; 3 = 9 m<sup>2</sup>.</p>
-<p>Apa se scrie H<sub>2</sub>O.</p>
-```
-
-- `<sup>` (de la „superscript”) ridică textul **sus**: m².  
-- `<sub>` (de la „subscript”) îl coboară **jos**: H₂O.  
-
-`&times;` este semnul înmulțirii (×), scris cu un cod special, ca `&lt;` din lecția trecută.
-
-**Încearcă tu (4 min)**  
+**Încearcă tu (3 min)**  
 - [ ] Scrie un paragraf cu `<mark>` pe data de azi și o notă mică cu `<small>`  
-- [ ] Scrie „apa” și „un pătrat de 5 m²” cu `<sub>` și `<sup>`  
 
 ---
 
 ## 4. Liste
 
-### Exemplul 6 — Listă cu buline: `<ul>`
+### Exemplul 5 — Listă cu buline: `<ul>`
 
 ```html
 <h2>Ce iau la picnic</h2>
@@ -133,7 +130,7 @@ Aici `<em>` e în interiorul lui `<strong>`, deci cuvântul e **și îngroșat, 
 
 Când ordinea nu contează (ce iei la picnic, ce animale îți plac), folosim `<ul>`.
 
-### Exemplul 7 — Listă cu numere: `<ol>`
+### Exemplul 6 — Listă cu numere: `<ol>`
 
 ```html
 <h2>Cum fac o limonadă</h2>
@@ -147,30 +144,15 @@ Când ordinea nu contează (ce iei la picnic, ce animale îți plac), folosim `<
 
 `<ol>` (de la „ordered list”, adică „listă ordonată”) numerotează singură: 1, 2, 3, 4. Când ordinea contează (pași, reguli, clasamente), folosim `<ol>`.
 
-### Exemplul 8 — Topul meu, cu numărătoare inversă
-
-```html
-<h2>Top 5 desene animate</h2>
-<ol reversed>
-  <li>Prietenii din pădure</li>
-  <li>Aventurile lui Leo</li>
-  <li>Pisicile din oraș</li>
-  <li>Echipa de salvare</li>
-  <li>Dragonul Foc</li>
-</ol>
-```
-
-Cu atributul `reversed` lista se numără **înapoi**: 5, 4, 3, 2, 1. Mai poți începe de la alt număr cu `start`, de exemplu `<ol start="3">` începe lista de la 3.
-
 **Încearcă tu (4 min)**  
 - [ ] Scrie o listă cu buline despre ce iei într-o excursie  
-- [ ] Scrie o listă numerotată cu pașii unei rețete simple sau cu un top 5, o dată normal și o dată cu `reversed`  
+- [ ] Scrie o listă numerotată cu pașii unei rețete simple sau cu un top 5  
 
 ---
 
 ## 5. Liste în liste
 
-### Exemplul 9 — Lista din listă
+### Exemplul 7 — Lista din listă
 
 Uneori un element al listei are la rândul lui o listă mică. O punem **în interiorul** lui `<li>`:
 
@@ -205,7 +187,7 @@ Observă: lista mică stă **între** `<li>` și `</li>` al elementului din care
 
 ## 6. Mini-proiect
 
-### Exemplul 10 — „Rețeta mea”
+### Exemplul 8 — „Rețeta mea”
 
 ```html
 <!DOCTYPE html>
@@ -246,57 +228,40 @@ Rețeta ta poate fi despre orice: un desert, o limonadă, un sandviș sau o reț
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Rețeta mea”
 
-### Exercițiul A — „Rețeta mea” sau „Topul meu” (obligatoriu)
-Pe scheletul complet, scrie:
-- un `<h1>` cu numele rețetei (sau al topului),
-- o listă cu buline `<ul>` (ingrediente sau lucruri de care ai nevoie),
-- o listă numerotată `<ol>` (pașii sau clasamentul),
-- cel puțin **trei** cuvinte îngroșate și **unul** înclinat,
-- un cuvânt cu `<mark>`.
+### Minim vs Complet
 
-### Exercițiul B — `ul` sau `ol`?
-Pentru fiecare, alege `<ul>` sau `<ol>`: (1) pașii pentru a lega șireturile; (2) animalele pe care le ai acasă; (3) clasamentul jocurilor tale preferate; (4) lucrurile din ghiozdan.
+| | Ce trebuie |
+|--|------------|
+| **Minim** | O pagină cu text îngroșat și înclinat, o listă cu buline și o listă cu numere |
+| **Complet** | Minim + o listă în altă listă, un cuvânt evidențiat cu `<mark>` și o notă mică cu `<small>` |
 
-### Exercițiul C — Care e rezultatul?
-Ce apare în pagină (îngroșat, înclinat, buline, numere)?
+### Pasul 1 — Minim
+Pe scheletul complet, scrie un `<h1>` cu numele rețetei (sau al topului), o listă cu buline `<ul>` și o listă numerotată `<ol>`.
 
-```text
-<p>Eu <em>iubesc</em> <strong>pizza</strong>.</p>
-<ol start="3">
-  <li>Alb</li>
-  <li>Negru</li>
-</ol>
-```
+- [ ] Folderul `Prenume_Nume_W1_L4` are `index.html` cu scheletul complet  
+- [ ] Lista cu buline are cel puțin trei elemente `<li>`  
+- [ ] Lista numerotată are cel puțin trei elemente `<li>`  
 
-### Exercițiul D — Găsește greșelile
-Găsește **3 greșeli** în codul de mai jos și repară greșelile:
+### Pasul 2 — Complet
+Îmbunătățești rețeta (sau topul):
 
-```text
-<ul>
-  <li>Mere</li>
-  <li>Pere
-</ul>
-<p>Eu sunt <strong><em>Ana</strong></em></p>
-<li>Nuci</li>
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: când folosim `<ul>` și când folosim `<ol>`? Dă câte un exemplu.
-
-**Gata când:**  
-- [ ] Folderul și fișierul se numesc corect: `Prenume_Nume_W1_L4` și `index.html`  
-- [ ] Pagina are o listă cu buline și o listă numerotată  
-- [ ] Are cuvinte îngroșate, un cuvânt înclinat și unul evidențiat cu `<mark>`  
-- [ ] Ai răspuns la exercițiile B–E  
+- [ ] Ai cel puțin **trei** cuvinte îngroșate și **unul** înclinat  
+- [ ] Ai un cuvânt evidențiat cu `<mark>` și o notă mică cu `<small>`  
+- [ ] Ai o listă în altă listă (de exemplu „Pentru decor”)  
+- [ ] Fiecare `<li>` și fiecare listă au și închidere, iar tag-urile sunt închise în ordine  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Topul cu sub-liste
+*Doar dacă ai terminat Complet.*
+
+Faci un top mai bogat, cu liste în liste.
+
 - [ ] Adaugă la rețeta ta o listă în listă (de exemplu: „Pentru decor” cu două sub-elemente)  
-- [ ] Scrie o formulă cu `<sup>`, de exemplu viteza în m/s sau aria într-un cm²  
-- [ ] Fă un top 5 cu `<ol reversed>` și un cuvânt îngroșat în fiecare element  
+- [ ] Scrie o formulă cu `<sup>`, de exemplu viteza în m/s sau aria într-un cm² (vezi Acasă 1)  
+- [ ] Fă un top 5 cu `<ol reversed>` și un cuvânt îngroșat în fiecare element (vezi Acasă 2)  
 - [ ] Caută listele paginii tale în DevTools: **F12**, fila **Elements**  
 
 ---
@@ -315,21 +280,76 @@ Pe foaie: când folosim `<ul>` și când folosim `<ol>`? Dă câte un exemplu.
 
 ## Recapitulare pe scurt
 1. `<strong>` = îngroșat și important; `<em>` = înclinat.  
-2. `<mark>` evidențiază, `<small>` micșorează, `<sup>` ridică, `<sub>` coboară.  
+2. `<mark>` evidențiază, `<small>` micșorează.  
 3. `<ul>` = listă cu buline; `<ol>` = listă cu numere.  
 4. `<li>` este un rând din listă și stă mereu în interiorul unei liste.  
 5. O listă poate sta în interiorul unui `<li>`.  
-6. `reversed` numără invers; `start` alege numărul de la care începe lista.
 
 ## Quiz scurt
 - Ce face `<strong>`? Dar `<em>`?  
 - Când folosești `<ol>` în loc de `<ul>`?  
 - Unde stă tagul `<li>`?  
-- Cum scrii apa cu cifra 2 mică jos?  
+- Ce face `<mark>`?  
 - Unde pui o listă mică, în interiorul altei liste?
 
 ## Temă
-Fă o pagină `index.html` cu **regulile clasei tale** (o listă numerotată cu 5 reguli, cu un cuvânt important îngroșat la fiecare) și cu **lucrurile pe care le ai în ghiozdan** (o listă cu buline). Pune pagina în folderul `Prenume_Nume_W1_L4`.
+1. Fă o pagină `index.html` cu **regulile clasei tale** (o listă numerotată cu 5 reguli, cu un cuvânt important îngroșat la fiecare) și cu **lucrurile pe care le ai în ghiozdan** (o listă cu buline). Pune pagina în folderul `Prenume_Nume_W1_L4`.  
+2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
+3. **Exemple pentru acasă.** Încearcă amândouă:
+
+**Acasă 1 — Exponenți și indici: `<sup>`, `<sub>`.**
+
+```html
+<p>Aria unui pătrat cu latura 3 este 3 &times; 3 = 9 m<sup>2</sup>.</p>
+<p>Apa se scrie H<sub>2</sub>O.</p>
+```
+
+- `<sup>` (de la „superscript”) ridică textul **sus**: m².  
+- `<sub>` (de la „subscript”) îl coboară **jos**: H₂O.  
+
+`&times;` este semnul înmulțirii (×), scris cu un cod special, ca `&lt;` din lecția trecută.
+
+**Acasă 2 — Topul meu, cu numărătoare inversă.**
+
+```html
+<h2>Top 5 desene animate</h2>
+<ol reversed>
+  <li>Prietenii din pădure</li>
+  <li>Aventurile lui Leo</li>
+  <li>Pisicile din oraș</li>
+  <li>Echipa de salvare</li>
+  <li>Dragonul Foc</li>
+</ol>
+```
+
+Cu atributul `reversed` lista se numără **înapoi**: 5, 4, 3, 2, 1. Mai poți începe de la alt număr cu `start`, de exemplu `<ol start="3">` începe lista de la 3.
+
+4. **Încă patru exerciții (B–E):**
+
+**B — `ul` sau `ol`?** Pentru fiecare, alege `<ul>` sau `<ol>`: (1) pașii pentru a lega șireturile; (2) animalele pe care le ai acasă; (3) clasamentul jocurilor tale preferate; (4) lucrurile din ghiozdan.
+
+**C — Care e rezultatul?** Ce apare în pagină (îngroșat, înclinat, buline, numere)?
+
+```text
+<p>Eu <em>iubesc</em> <strong>pizza</strong>.</p>
+<ol start="3">
+  <li>Alb</li>
+  <li>Negru</li>
+</ol>
+```
+
+**D — Găsește greșelile.** Găsește **3 greșeli** în codul de mai jos și repară greșelile:
+
+```text
+<ul>
+  <li>Mere</li>
+  <li>Pere
+</ul>
+<p>Eu sunt <strong><em>Ana</strong></em></p>
+<li>Nuci</li>
+```
+
+**E — Explică cu cuvintele tale.** Pe foaie: când folosim `<ul>` și când folosim `<ol>`? Dă câte un exemplu.
 
 ## Ce urmează — Lecția 5
 Învățăm să facem **linkuri**: cuvinte pe care apeși și te duc pe alte pagini, pe site-uri din internet sau chiar într-un loc anume din aceeași pagină.
@@ -337,9 +357,9 @@ Fă o pagină `index.html` cu **regulile clasei tale** (o listă numerotată cu 
 ---
 
 ## Răspunsuri
-- **Quiz scurt:** (1) `<strong>` îngroașă textul (important), `<em>` îl înclină; (2) când ordinea contează (pași, reguli, clasamente); (3) în interiorul unei liste, `<ul>` sau `<ol>` (fiecare `<li>` este un rând din listă); (4) `H<sub>2</sub>O`; (5) în interiorul unui `<li>`, între `<li>` și `</li>`.  
-- **Dacă ritmul clasei este lent:** `small`, `sup`, `sub` și `&times;` sunt opționale; rămâneți la `strong`, `em`, listele cu buline și listele numerotate.  
-- **Exercițiul B:** (1) `<ol>`; (2) `<ul>`; (3) `<ol>`; (4) `<ul>`.  
-- **Exercițiul C:** „iubesc” înclinat, „pizza” îngroșat; lista numerotată începe de la 3: „3. Alb”, „4. Negru”.  
-- **Exercițiul D:** (1) lipsește `</li>` după „Pere”; (2) tag-uri încrucișate, corect: `</em></strong>`; (3) `<li>` în afara unei liste, trebuie pus într-un `<ul>` sau `<ol>`.  
-- **Exercițiul E:** `<ul>` când ordinea nu contează (lucruri din ghiozdan); `<ol>` când ordinea contează (pași, clasament).
+- **Quiz scurt:** (1) `<strong>` îngroașă textul (important), `<em>` îl înclină; (2) când ordinea contează (pași, reguli, clasamente); (3) în interiorul unei liste, `<ul>` sau `<ol>` (fiecare `<li>` este un rând din listă); (4) evidențiază textul, cu fundal galben; (5) în interiorul unui `<li>`, între `<li>` și `</li>`.  
+- **Dacă ritmul clasei este lent:** Exemplul 4 (`mark` și `small`) este opțional; rămâneți la `strong`, `em`, listele cu buline și listele numerotate.  
+- **Tema, exercițiul B:** (1) `<ol>`; (2) `<ul>`; (3) `<ol>`; (4) `<ul>`.  
+- **Tema, exercițiul C:** „iubesc” înclinat, „pizza” îngroșat; lista numerotată începe de la 3: „3. Alb”, „4. Negru”.  
+- **Tema, exercițiul D:** (1) lipsește `</li>` după „Pere”; (2) tag-uri încrucișate, corect: `</em></strong>`; (3) `<li>` în afara unei liste, trebuie pus într-un `<ul>` sau `<ol>`.  
+- **Tema, exercițiul E:** `<ul>` când ordinea nu contează (lucruri din ghiozdan); `<ol>` când ordinea contează (pași, clasament).

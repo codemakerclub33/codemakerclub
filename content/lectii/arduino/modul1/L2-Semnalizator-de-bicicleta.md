@@ -1,4 +1,5 @@
 # LECȚIA 2 — Bicicleta mea
+### Două LED-uri, variabile și bucla for
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 

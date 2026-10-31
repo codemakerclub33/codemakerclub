@@ -1,4 +1,5 @@
 # LECȚIA 7 — Chestionarul
+### if: programul decide
 **Modulul 1 · Primii pași în Python · 2 ore**  
 **Code Maker Club · Python Starter**
 

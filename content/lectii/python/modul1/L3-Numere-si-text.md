@@ -1,4 +1,5 @@
 # LECȚIA 3 — Fișa mea de tipuri
+### Numere și text
 **Modulul 1 · Primii pași în Python · 2 ore**  
 **Code Maker Club · Python Starter**
 

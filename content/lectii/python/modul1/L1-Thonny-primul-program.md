@@ -1,4 +1,5 @@
 # LECȚIA 1 — Cartea mea de vizită
+### Primul program: print, ghilimele și comentarii
 **Modulul 1 · Primii pași în Python · 2 ore**  
 **Code Maker Club · Python Starter**
 

@@ -1,8 +1,10 @@
-Lecția doi din Modulul unu. Scheletul unei pagini.
+Lecția doi. Cartea mea de vizită.
 
 Data trecută, VS Code a scris scheletul paginii pentru tine. Azi afli ce înseamnă fiecare bucată din el și îl scrii singur, fără ajutor.
 
-Obiectivul. Minim: scheletul complet, scris de tine, cu un titlu în title și un paragraf în body. Complet: în plus un titlu mare, trei paragrafe despre tine, un comentariu și codul aranjat frumos.
+Ce facem azi. La final ai scheletul unei pagini scris de tine, fără ajutorul semnului exclamării și al tastei Tab, și o carte de vizită în browser: un titlu mare cu numele tău, trei paragrafe despre tine, un comentariu și codul aranjat frumos. Știi la ce folosește fiecare parte a scheletului și cum se așază un tag în interiorul altuia.
+
+Instrucțiuni noi azi. Doctype html este prima linie și spune că pagina este H-T-M-L modern. Html cu lang egal ro înfășoară pagina. Head conține informații despre pagină, care nu se văd. Title este numele din fila browserului. Meta charset face diacriticele să se vadă corect. Body conține tot ce se vede. Iar Shift Alt F aranjează codul.
 
 Primul pas. Imaginează pagina ta ca pe o casă. Html este casa întreagă. Head este biroul din spatele casei, cu informații care nu se văd din stradă. Body este casa pe care o vede lumea.
 
@@ -10,12 +12,16 @@ Al doilea pas. Scrii scheletul singur, linie cu linie. Prima linie este doctype 
 
 Al treilea pas. În head pui informații despre pagină. Title este numele paginii și apare în fila browserului. Meta charset U-T-F opt face ca literele ă, â, î, ș și ț să se vadă corect. Linia viewport o scrii exact așa, ca pe o formulă. O vom înțelege când învățăm C-S-S.
 
-Al patrulea pas. În body pui tot ce se vede în pagină: titluri, text, poze. Tag-urile pot sta unul în altul, ca păpușile rusești. Regula: ultimul tag deschis se închide primul. Dacă scrii închiderea paragrafului înaintea închiderii lui strong, tag-urile se încrucișează și browserul se încurcă.
+Al patrulea pas. În body pui tot ce se vede în pagină: titluri, text, poze. Tag-urile pot sta unul în altul, ca păpușile rusești. Regula: ultimul tag deschis se închide primul.
 
 Al cincilea pas. Indentarea. Tragi codul spre dreapta cu două spații pentru fiecare tag aflat în alt tag. Browserul nu o citește, dar tu vezi imediat ce stă în ce. În VS Code poți aranja codul cu Shift Alt F, iar pe Mac cu Shift Option F.
 
+De făcut azi. Minim: scheletul complet, scris de tine, cu un title și un paragraf în body. Complet: adaugi un titlu mare, trei paragrafe despre tine, un comentariu și codul aranjat frumos, cu indentare.
+
+Bonus. Cartea de vizită a unui personaj. Faci o a doua carte de vizită, pentru un pirat, o vrăjitoare sau un robot, încerci trei titluri diferite în title și cauți head și body în DevTools.
+
 Greșeli frecvente. Ai scris textul în head și nu apare în pagină. Ai uitat închiderea title. Ai pus două body. Html nu este ultimul tag. Tag-uri încrucișate. Nu ai salvat.
 
-Tema. O carte de vizită pentru un prieten sau pentru un animal, cu schelet scris de tine, un titlu mare, trei paragrafe și un title potrivit.
+Tema. O carte de vizită pentru un prieten sau pentru un animal. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
 
 Recapitulare. Head are informații, body are ce se vede. Ultimul tag deschis se închide primul. Succes!

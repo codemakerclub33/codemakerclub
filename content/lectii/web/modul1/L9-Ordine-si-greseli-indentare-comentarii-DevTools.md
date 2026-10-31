@@ -1,4 +1,5 @@
-# LECȚIA 9 — Ordine și greșeli: indentare, comentarii, DevTools
+# LECȚIA 9 — Repară pagina stricată
+### Indentare, comentarii și DevTools
 **Modulul 1 · HTML I: Prima mea pagină · 2 ore**  
 **Code Maker Club · HTML Starter**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei știi să scrii codul cu indentare corectă, să folosești comentarii ca notițe și ca să ascunzi temporar o bucată de cod, să cauți o greșeală pas cu pas și să folosești DevTools ca să vezi structura paginii și mesajele de eroare.  
-**Minim:** o pagină cu cod indentat corect, trei comentarii și o greșeală găsită cu ajutorul DevTools.  
-**Ținta orei (Complet):** + o pagină stricată, reparată complet, și un cod ordonat cu formatarea automată din VS Code.
-
-## De ce contează
-Un cod dezordonat este greu de citit, chiar și pentru persoana care a scris codul. O greșeală mică (o literă lipsă) poate strica toată pagina. Cu ordine și cu metoda potrivită, găsești greșelile în câteva minute, nu în jumătate de oră.
+## Ce facem azi
+La final ai reparat o **pagină stricată**, cu șase greșeli ascunse, și ai pus ordine în cod: indentare corectă, comentarii care marchează secțiunile și formatare automată. Știi să cauți o greșeală pas cu pas și să folosești DevTools ca să vezi structura paginii și mesajele de eroare. Programatorii buni nu sunt cei care nu greșesc niciodată, ci cei care scriu codul **ordonat** și găsesc repede greșelile.
 
 ---
 
@@ -24,10 +20,22 @@ Un cod dezordonat este greu de citit, chiar și pentru persoana care a scris cod
 | 0–15 | Recapitulare · pornim proiectul |
 | 15–35 | Indentarea (**Exemplele 1–2**) |
 | 35–55 | Comentariile (**Exemplele 3–4**) |
-| 55–75 | Cum căutăm o greșeală (**Exemplele 5–6**) |
-| 75–95 | DevTools: Elements și Console (**Exemplele 7–9**) |
-| 95–115 | Repară pagina stricată (**Exemplul 10**) |
+| 55–70 | Cum căutăm o greșeală (**Exemplul 5**) |
+| 70–95 | DevTools: Elements și Console (**Exemplele 6–7**) |
+| 95–115 | Repară pagina stricată (**Exemplul 8**) |
 | 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| **Tab** și **Shift + Tab** | Mută liniile spre dreapta sau spre stânga | indentare |
+| **Shift + Alt + F** | Aranjează tot codul | pe Mac **Shift + Option + F** |
+| `<!-- ... -->` | Comentariu: notiță pentru oameni | `<!-- ===== ANTET ===== -->` |
+| **Ctrl + /** | Pune sau scoate comentariul din liniile selectate | pe Mac **Cmd + /** |
+| **F12** | Deschide DevTools | fila **Elements** și fila **Console** |
 
 ---
 
@@ -178,14 +186,9 @@ Când pagina nu arată cum vrei, **nu te panica** și nu schimba la întâmplare
 
 Textul de după titlu apare mare, deși este în `<p>`. Greșeala nu este în paragraf, ci **înainte**: titlul nu a fost închis (`<h1>` în loc de `</h1>`). Greșeala și efectul sunt în locuri diferite.
 
-### Exemplul 6 — Metoda „jumătate-jumătate”
-
-Dacă pagina are 40 de linii și nu știi unde este greșeala: pune în comentariu **jumătatea de jos**. Dacă problema dispare, greșeala era acolo; dacă nu, era în prima jumătate. Împarți din nou în două, până găsești linia exactă.
-
 **Gata când:**  
 - [ ] Poți spune cu cuvintele tale primii patru pași pentru căutarea unei greșeli  
 - [ ] Ai găsit greșeala din Exemplul 5 fără să te uiți la rezolvare  
-- [ ] Ai încercat metoda „jumătate-jumătate” pe o pagină cu greșeli  
 
 ---
 
@@ -193,7 +196,7 @@ Dacă pagina are 40 de linii și nu știi unde este greșeala: pune în comentar
 
 **DevTools** este un panou ascuns în browser, făcut pentru cei care construiesc pagini web. Se deschide cu **F12** sau, pe Mac, cu **Cmd + Option + I**. Poți apăsa și clic dreapta pe pagină, apoi **Inspect** („Inspectează”).
 
-### Exemplul 7 — Fila Elements
+### Exemplul 6 — Fila Elements
 
 Fila **Elements** arată **structura paginii**: tagurile, una în interiorul alteia, ca în codul tău.
 
@@ -201,13 +204,7 @@ Fila **Elements** arată **structura paginii**: tagurile, una în interiorul alt
 2. Apasă pe săgeata mică din colțul panoului (sau apasă **Ctrl + Shift + C**, pe Mac **Cmd + Shift + C**), apoi treci cu mouse-ul peste pagină. Fiecare element se colorează, iar în Elements vezi tagul lui.  
 3. Apasă pe un titlu și vei vedea `<h1>…</h1>` evidențiat.
 
-### Exemplul 8 — Schimbăm pagina doar pentru test
-
-În Elements poți apăsa **de două ori** pe un text și poți scrie altceva. Pagina se schimbă imediat, dar **numai în browser**. Fișierul tău din VS Code **nu se schimbă**. Când reîncarci pagina, totul revine.
-
-> Este un loc bun să încerci idei: „Cum ar arăta titlul în altă culoare?” Dacă îți place schimbarea, scrie schimbarea și în VS Code, altfel se pierde.
-
-### Exemplul 9 — Fila Console
+### Exemplul 7 — Fila Console
 
 Fila **Console** arată mesajele browserului. Dacă ai o imagine cu numele scris greșit, vei vedea un mesaj de eroare, de exemplu:
 
@@ -219,13 +216,13 @@ Acesta înseamnă: „Nu am găsit un fișier”. Mesajul arată și numele fiș
 
 **Încearcă tu (8 min)**  
 - [ ] Deschide DevTools pe pagina ta și găsește în Elements titlul `<h1>`  
-- [ ] Schimbă temporar textul titlului din Elements și reîncarcă pagina ca să vezi că revine  
+- [ ] Apasă pe titlu în Elements și vezi tagul lui evidențiat  
 - [ ] Scrie greșit numele unei imagini, salvează și găsește mesajul „404” în Console  
 - [ ] Repară numele imaginii, reîncarcă pagina și verifică în Console că mesajul a dispărut  
 
 ---
 
-## 6. Exemplul 10 — Repară pagina stricată
+## 6. Mini-proiect: repară pagina stricată
 
 Iată un `<body>` cu **6 greșeli**. Copiază acest cod în `index.html`, în folderul `Prenume_Nume_W1_L9`, între tagurile `<body>` și `</body>`, și repară pagina:
 
@@ -251,50 +248,37 @@ Lucrează cu metoda din secțiunea 4. Fiecare greșeală găsită merită o bif�
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Repară pagina stricată”
 
-### Exercițiul A — Curăță codul (obligatoriu)
-Copiază codul de mai jos într-un fișier nou, `curat.html`, între tagurile `<body>` și `</body>`. Indentează codul corect, apoi verifică cu formatarea automată:
+### Minim vs Complet
 
-```text
-<h1>Meniul zilei</h1>
-<ol>
-<li>Supă</li>
-<li>Felul doi
-<ul>
-<li>Pui</li>
-<li>Orez</li>
-</ul>
-</li>
-<li>Desert</li>
-</ol>
-```
+| | Ce trebuie |
+|--|------------|
+| **Minim** | O pagină cu cod indentat corect, trei comentarii și o greșeală găsită cu ajutorul DevTools |
+| **Complet** | Minim + o pagină stricată, reparată complet, și cod ordonat cu formatarea automată din VS Code |
 
-### Exercițiul B — Comentarii
-În `curat.html`, adaugă trei comentarii care spun ce face fiecare secțiune. Ascunde apoi desertul cu un comentariu și verifică în browser. Apoi afișează din nou desertul.
+### Pasul 1 — Minim
+Copiază codul din Exercițiul A într-un fișier nou, `curat.html`, între `<body>` și `</body>`, și indentează-l corect. Apoi adaugă trei comentarii care marchează secțiunile.
 
-### Exercițiul C — Repară pagina stricată (Exemplul 10)
-Repară toate cele 6 greșeli. Pe foaie, scrie fiecare greșeală și ce ai schimbat ca să o repari.
+- [ ] Codul din `curat.html` este indentat corect, cu **Tab** sau cu **Shift + Alt + F**  
+- [ ] Ai trei comentarii care marchează secțiunile  
+- [ ] Ai găsit o greșeală cu ajutorul DevTools (Elements sau Console)  
 
-### Exercițiul D — Misiune DevTools
-Deschide site-ul tău din Lecția 8. Cu DevTools:
-1. găsește în Elements meniul de linkuri;  
-2. schimbă temporar culoarea unui titlu;  
-3. scrie greșit un link către o imagine, salvează și citește mesajul din Console.  
+### Pasul 2 — Complet
+Repari pagina stricată din Exemplul 8:
 
-Notează pe foaie ce ai găsit.
-
-### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: de ce ne ajută indentarea? Dă un exemplu de situație în care un comentariu este util.
-
-**Gata când:**  
-- [ ] Folderul `Prenume_Nume_W1_L9` conține `index.html` (reparat) și `curat.html`  
-- [ ] Ambele fișiere sunt indentate corect și au comentarii  
-- [ ] Ai notat pe foaie greșelile găsite și ai răspuns la exercițiile D și E  
+- [ ] Ai găsit și ai reparat toate cele 6 greșeli  
+- [ ] Ai formatat codul cu **Shift + Alt + F** (Mac: Shift + Option + F)  
+- [ ] Ai adăugat comentarii care marchează secțiunile paginii  
+- [ ] Ai verificat în DevTools, fila Console (dacă imaginea nu este în folder, mesajul „404” pentru ea este normal)  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Duelul detectivilor
+*Doar dacă ai terminat Complet.*
+
+Căutați greșeli împreună, ca doi detectivi.
+
 - [ ] Creează cu un coleg câte o pagină cu 5 greșeli ascunse și schimbați paginile: fiecare găsește greșelile celuilalt  
 - [ ] În Elements, apasă clic dreapta pe un tag și caută opțiunea de a șterge temporar acel tag; apoi reîncarcă pagina  
 - [ ] Cu profesorul, încearcă un validator HTML (un site care verifică codul) și citește mesajele lui  
@@ -321,7 +305,6 @@ Pe foaie: de ce ne ajută indentarea? Dă un exemplu de situație în care un co
 4. **Ctrl + /** (Mac: Cmd + /) pune sau scoate comentariul pe liniile selectate.  
 5. Căutăm greșeala pas cu pas și schimbăm un singur lucru odată.  
 6. **F12** deschide DevTools; **Elements** arată structura, **Console** arată erorile.  
-7. Schimbările din DevTools sunt temporare.
 
 ## Quiz scurt
 - Cu câte spații indentezi un tag aflat în interiorul altui tag?  
@@ -331,7 +314,34 @@ Pe foaie: de ce ne ajută indentarea? Dă un exemplu de situație în care un co
 - De ce schimbi un singur lucru odată când repari o pagină?
 
 ## Temă
-Alege cea mai lungă pagină făcută de tine în acest modul. Formatează pagina cu **Shift + Alt + F**, adaugă comentarii care marchează secțiunile și verifică în DevTools, fila Console, că nu există erori. Notează pe foaie ce ai reparat.
+1. Alege cea mai lungă pagină făcută de tine în acest modul. Formatează pagina cu **Shift + Alt + F**, adaugă comentarii care marchează secțiunile și verifică în DevTools, fila Console, că nu există erori. Notează pe foaie ce ai reparat.  
+2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
+3. **Exemple pentru acasă.** Încearcă amândouă:
+
+**Acasă 1 — Metoda „jumătate-jumătate”.**
+
+Dacă pagina are 40 de linii și nu știi unde este greșeala: pune în comentariu **jumătatea de jos**. Dacă problema dispare, greșeala era acolo; dacă nu, era în prima jumătate. Împarți din nou în două, până găsești linia exactă.
+
+**Acasă 2 — Schimbăm pagina doar pentru test.**
+
+În Elements poți apăsa **de două ori** pe un text și poți scrie altceva. Pagina se schimbă imediat, dar **numai în browser**. Fișierul tău din VS Code **nu se schimbă**. Când reîncarci pagina, totul revine.
+
+> Este un loc bun să încerci idei: „Cum ar arăta titlul în altă culoare?” Dacă îți place schimbarea, scrie schimbarea și în VS Code, altfel se pierde.
+
+4. **Încă patru exerciții (B–E):**
+
+**B — Comentarii.** În `curat.html`, adaugă trei comentarii care spun ce face fiecare secțiune. Ascunde apoi desertul cu un comentariu și verifică în browser. Apoi afișează din nou desertul.
+
+**C — Greșelile pe foaie.** Pe foaie, scrie fiecare dintre cele 6 greșeli din Exemplul 8 și ce ai schimbat ca să o repari.
+
+**D — Misiune DevTools.** Deschide site-ul tău din Lecția 8. Cu DevTools:
+1. găsește în Elements meniul de linkuri;  
+2. schimbă temporar culoarea unui titlu;  
+3. scrie greșit un link către o imagine, salvează și citește mesajul din Console.  
+
+Notează pe foaie ce ai găsit.
+
+**E — Explică cu cuvintele tale.** Pe foaie: de ce ne ajută indentarea? Dă un exemplu de situație în care un comentariu este util.
 
 ## Ce urmează — Lecția 10
 Ultimul proiect din modul: **„Pagina mea despre mine”**. Folosești tot ce ai învățat: schelet, titluri, liste, linkuri, imagini, culori și multe pagini.
@@ -340,9 +350,9 @@ Ultimul proiect din modul: **„Pagina mea despre mine”**. Folosești tot ce a
 
 ## Răspunsuri
 - **Quiz scurt:** (1) cu 2 spații; (2) între `<!--` și `-->`, de exemplu `<!-- notiță -->`; (3) structura paginii: tagurile, unul în interiorul altuia; (4) browserul nu a găsit fișierul cerut (de exemplu o imagine cu numele scris greșit); (5) ca să știi exact ce schimbare a reparat pagina (sau a stricat altceva).  
-- **Dacă ritmul clasei este lent:** puteți sări peste Exemplul 6 („jumătate-jumătate”) și peste Exemplul 8; rămâneți la indentare, comentarii și fila Console.  
+- **Dacă ritmul clasei este lent:** Exemplul 6 (fila Console) se poate face și ca bonus; rămâneți la indentare, comentarii și repararea paginii.  
 - **Exemplul 5:** `<h1>` nu a fost închis; trebuie `</h1>`.  
-- **Exemplul 10 (cele 6 greșeli):** (1) `<h1>…<h1>` trebuie `<h1>…</h1>`; (2) tagurile sunt încrucișate: `<strong>neagră.</strong></p>`; (3) `pisica.jpgg` trebuie `pisica.jpg`; (4) primul `<li>` nu este închis: `<li>Hrană</li>`; (5) `despre.htm` trebuie `despre.html`; (6) `color = red` trebuie `color: red`.  
+- **Exemplul 8 (cele 6 greșeli):** (1) `<h1>…<h1>` trebuie `<h1>…</h1>`; (2) tagurile sunt încrucișate: `<strong>neagră.</strong></p>`; (3) `pisica.jpgg` trebuie `pisica.jpg`; (4) primul `<li>` nu este închis: `<li>Hrană</li>`; (5) `despre.htm` trebuie `despre.html`; (6) `color = red` trebuie `color: red`.  
 - **Exercițiul A:** `ol` cu `li` pe nivelul 1, iar lista `ul` cu `li` imbricată în al doilea `li`, cu încă un nivel de spații.  
-- **Exercițiul D:** cel mai frecvent, mesajul din Console este „404 (Not Found)” și arată numele greșit al fișierului.  
-- **Exercițiul E:** indentarea arată ce este în interiorul a ce și ajută să găsești tagurile neînchise; comentariile sunt utile ca notițe sau ca să ascunzi temporar o bucată de cod.
+- **Tema, exercițiul D:** cel mai frecvent, mesajul din Console este „404 (Not Found)” și arată numele greșit al fișierului.  
+- **Tema, exercițiul E:** indentarea arată ce este în interiorul a ce și ajută să găsești tagurile neînchise; comentariile sunt utile ca notițe sau ca să ascunzi temporar o bucată de cod.

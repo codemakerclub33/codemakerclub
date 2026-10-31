@@ -1,4 +1,5 @@
 # LECȚIA 8 — Poarta parcului de distracții
+### and, or, not
 **Modulul 1 · Primii pași în Python · 2 ore**  
 **Code Maker Club · Python Starter**
 

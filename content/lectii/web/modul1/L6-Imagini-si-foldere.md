@@ -1,19 +1,15 @@
-# LECȚIA 6 — Imagini și foldere
+# LECȚIA 6 — Colțul meu cu poze
+### Imagini și foldere
 **Modulul 1 · HTML I: Prima mea pagină · 2 ore**  
 **Code Maker Club · HTML Starter**
 
 > Până acum paginile tale au avut doar text. Azi le dai culoare: înveți să pui **imagini** în pagină, să le ții în **foldere** ordonate și să le scrii **descrieri**, ca să le înțeleagă toată lumea!  
-> Proiect: **„Galeria animalului meu preferat”** · folder: `Prenume_Nume_W1_L6` (ex. `Ana_Pop_W1_L6`)
+> Proiect: **„Colțul meu cu poze”** · folder: `Prenume_Nume_W1_L6` (ex. `Ana_Pop_W1_L6`)
 
 ---
 
-## Obiectiv
-La finalul orei știi să pui o imagine cu `<img>`, să scrii textul alternativ `alt`, să ții pozele într-un folder `imagini`, să alegi mărimea imaginii, să faci o imagine cu legendă (`<figure>`) și o imagine pe care se poate apăsa (link).  
-**Minim:** o pagină cu trei imagini din folderul `imagini`, fiecare cu text `alt`.  
-**Ținta orei (Complet):** + o legendă sub fiecare imagine, o imagine care e și link și imaginile micșorate cu `width`.
-
-## De ce contează
-Imaginile fac o pagină vie și te ajută să povestești mai bine. Dar o pagină cu imagini care **nu se văd** (din cauza unei greșeli de adresă) arată urât. Azi înveți cum se găsesc fișierele, o lecție pe care o vei folosi la toate site-urile tale.
+## Ce facem azi
+La final ai **colțul tău cu poze**: o pagină cu trei imagini din folderul `imagini`, fiecare cu legendă și text `alt`, și una dintre ele e și link. Știi să pui o imagine cu `<img>`, să ții pozele în foldere ordonate și să le scrii descrieri, ca să le înțeleagă toată lumea. Imaginile fac o pagină vie, dar o imagine care **nu se vede** din cauza unei greșeli de adresă arată urât, de aceea azi înveți cum se găsesc fișierele.
 
 ---
 
@@ -23,11 +19,23 @@ Imaginile fac o pagină vie și te ajută să povestești mai bine. Dar o pagin�
 |--------|----------|
 | 0–15 | Recapitulare · pregătim pozele și folderele |
 | 15–40 | Prima imagine · textul `alt` (**Exemplele 1–2**) |
-| 40–60 | Folderul `imagini` · mărimea imaginii (**Exemplele 3–4**) |
-| 60–80 | Formate și greutatea pozelor (**Exemplele 5–6**) |
-| 80–100 | Legendă și imagine-link (**Exemplele 7–8**) |
-| 100–115 | Imagini din internet · mini-proiect (**Exemplele 9–10**) |
+| 40–65 | Folderul `imagini` · mărimea imaginii (**Exemplele 3–4**) |
+| 65–80 | Formate de imagini (**Exemplul 5**) |
+| 80–100 | Legendă și imagine-link (**Exemplele 6–7**) |
+| 100–115 | Mini-proiect: colțul meu cu poze (**Exemplul 8**) |
 | 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `<img src="..." alt="...">` | Pune o imagine în pagină | `src` = unde e fișierul, `alt` = ce se vede |
+| `src="imagini/poza.jpg"` | Drumul până la fișier | folderul, `/`, numele |
+| `width="300"` | Lățimea imaginii, în pixeli | înălțimea se potrivește singură |
+| `<figure>` și `<figcaption>` | Imagine cu legendă dedesubt | `<figcaption>Mițu doarme</figcaption>` |
+| `<a>` în jurul unui `<img>` | Imagine pe care se poate apăsa | imaginea e link |
 
 ---
 
@@ -156,23 +164,14 @@ Imaginile se salvează în formate diferite. Le recunoști după terminație:
 
 Pentru paginile noastre vom folosi mai ales `.jpg` și `.png`.
 
-### Exemplul 6 — Mărimea fișierului
-
-O poză făcută cu telefonul poate avea **5 sau 10 MB**. Pe o pagină cu multe astfel de poze, totul se încarcă încet. Pentru pagina ta:
-- alege imagini **sub 500 KB** fiecare (profesorul te ajută să le micșorezi);  
-- dă imaginilor nume **scurte, cu litere mici, fără spații și fără diacritice**: `pisica1.jpg`, nu `Poză Pisică Foarte Frumoasă.JPG`.
-
-> Numele din `src` trebuie să fie **exact** ca numele fișierului, inclusiv terminația. Dacă fișierul e `pisica1.jpg`, `src="pisica1.png"` nu merge.
-
-**Încearcă tu (4 min)**  
-- [ ] Verifică pe calculator cât de mari sunt pozele tale (click dreapta, Properties / Get Info)  
-- [ ] Redenumește o poză cu un nume bun și schimbă în `src` ca imaginea să se vadă din nou  
+**Încearcă tu (3 min)**  
+- [ ] Verifică ce formate au pozele tale (`.jpg` sau `.png`) și cum se numesc fișierele  
 
 ---
 
 ## 5. Legende și imagini-link
 
-### Exemplul 7 — Imagine cu legendă: `<figure>` și `<figcaption>`
+### Exemplul 6 — Imagine cu legendă: `<figure>` și `<figcaption>`
 
 ```html
 <figure>
@@ -186,7 +185,7 @@ O poză făcută cu telefonul poate avea **5 sau 10 MB**. Pe o pagină cu multe 
 
 Legenda se vede de toți; textul `alt` îl vede doar cine nu vede imaginea. Scrie ambele texte.
 
-### Exemplul 8 — Imagine pe care se poate apăsa
+### Exemplul 7 — Imagine pe care se poate apăsa
 
 Poți pune o imagine **în interiorul** unui link:
 
@@ -204,21 +203,9 @@ Acum, dacă apeși pe imagine, mergi la linkul din `href`. La fel cum ai pus tex
 
 ---
 
-## 6. Imagini din internet și mini-proiect
+## 6. Mini-proiect
 
-### Exemplul 9 — Imaginea cu adresă din internet
-
-```html
-<img src="https://exemplu.ro/poze/pisica.jpg" alt="Pisică" width="300">
-```
-
-(Adresa e doar un exemplu: nu duce nicăieri.) Un `src` poate fi și adresa completă a unei imagini de pe un alt site. Nu e recomandat, din două motive:
-1. Imaginea poate **dispărea** oricând, dacă cel care o ține o șterge.  
-2. Poate fi **protejată**: nu ai voie să o folosești fără acordul celui care a făcut imaginea.  
-
-De aceea, imaginile paginilor tale le **ții în folderul tău**, iar pe cele din internet le folosești doar dacă ele sunt libere și le alegi cu profesorul.
-
-### Exemplul 10 — „Galeria animalului meu preferat”
+### Exemplul 8 — „Colțul meu cu poze”
 
 ```html
 <!DOCTYPE html>
@@ -226,10 +213,10 @@ De aceea, imaginile paginilor tale le **ții în folderul tău**, iar pe cele di
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galeria pisicii Mițu</title>
+  <title>Colțul meu cu poze</title>
 </head>
 <body>
-  <h1>Galeria pisicii Mițu</h1>
+  <h1>Colțul meu cu poze</h1>
   <p>Mițu este pisica mea. Iată trei poze cu ea.</p>
 
   <h2>Mițu doarme</h2>
@@ -253,7 +240,7 @@ De aceea, imaginile paginilor tale le **ții în folderul tău**, iar pe cele di
 </html>
 ```
 
-Galeria ta e despre **animalul tău**: schimbă titlurile, legendele și textele `alt`.
+Colțul tău cu poze poate fi despre orice îți place: un animal, un joc, un loc. Schimbă titlurile, legendele și textele `alt`.
 
 **Gata când:**  
 - [ ] Ai trei imagini în folderul `imagini`, fiecare cu `alt` și legendă  
@@ -261,55 +248,37 @@ Galeria ta e despre **animalul tău**: schimbă titlurile, legendele și textele
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Colțul meu cu poze”
 
-### Exercițiul A — „Galeria animalului meu preferat” (obligatoriu)
-Pe scheletul complet, scrie:
-- un `<h1>` cu titlul galeriei și un paragraf de prezentare,
-- **trei** imagini din folderul `imagini`, fiecare cu `alt` bun, `width` și legendă (`<figure>`),
-- un titlu `<h2>` pentru fiecare imagine,
-- **o imagine care e și link**.
+### Minim vs Complet
 
-Verifică totul cu Live Server.
+| | Ce trebuie |
+|--|------------|
+| **Minim** | O pagină cu trei imagini din folderul `imagini`, fiecare cu text `alt` |
+| **Complet** | Minim + o legendă sub fiecare imagine, o imagine care e și link și imaginile micșorate cu `width` |
 
-### Exercițiul B — Găsește drumul
-Folderul tău arată așa:
+### Pasul 1 — Minim
+Pune trei imagini în folderul `imagini` și arată-le în `index.html`, fiecare cu text `alt` care spune ce se vede în ea.
 
-```text
-site/
-├── index.html
-├── imagini/
-│   └── pisica.jpg
-└── pagini/
-    └── galerie.html
-```
-
-Ce scrii în `src` pentru imaginea `pisica.jpg`: (1) în `index.html`? (2) în `galerie.html`?
-
-### Exercițiul C — Scrie textul `alt`
-Scrie un text `alt` bun pentru fiecare imagine: (1) o poză cu un câine care aleargă prin zăpadă; (2) un desen cu un soare zâmbăreț deasupra unei case; (3) o poză cu tortul tău de ziua ta.
-
-### Exercițiul D — Găsește greșelile
-Găsește **3 greșeli** în codul de mai jos și repară greșelile:
-
-```text
-<img src="poza.jpg">
-<img src="imagini\pisica.jpg" alt="Pisica">
-<img src="imagini/caine.jpg" alt="Câinele meu"></img>
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: la ce folosește textul `alt` și de ce nu scriem doar „poza” în el?
-
-**Gata când:**  
 - [ ] Folderul `Prenume_Nume_W1_L6` are `index.html` și folderul `imagini`  
-- [ ] Ai trei imagini cu `alt` bun, legendă și lățime  
-- [ ] Ai o imagine care e și link  
-- [ ] Ai răspuns la exercițiile B–E  
+- [ ] Toate cele trei imagini se văd în pagină  
+- [ ] Fiecare imagine are un `alt` care spune ce se vede în ea  
+
+### Pasul 2 — Complet
+Completezi colțul cu poze:
+
+- [ ] Ai un `<h1>` cu titlul colțului tău și un paragraf de prezentare  
+- [ ] Fiecare imagine are `width` și o legendă (`<figure>`), sub un titlu `<h2>`  
+- [ ] Una dintre imagini este și link  
+- [ ] Folosești poze și desene făcute de tine sau alese cu profesorul  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Colțul meu cu poze, ediția mare
+*Doar dacă ai terminat Complet.*
+
+Faci colțul cu poze mai mare și mai ordonat.
+
 - [ ] Adaugă o a patra imagine, un desen făcut de tine și fotografiat  
 - [ ] Fă o a doua pagină `galerie.html` într-un folder `pagini` și pune imaginile cu `../imagini/...`  
 - [ ] Greșește intenționat numele unei imagini, vezi textul `alt` și apoi repară  
@@ -347,7 +316,56 @@ Pe foaie: la ce folosește textul `alt` și de ce nu scriem doar „poza” în 
 - Ce format de imagine folosești pentru un desen cu fundal transparent?
 
 ## Temă
-Fă o pagină `index.html` cu **o galerie de 4 imagini** despre ceva ce iubești (un joc, un loc, un sport): fiecare cu `alt`, legendă și o poveste scurtă în paragraf. Pune imaginile într-un folder `imagini` în folderul `Prenume_Nume_W1_L6`.
+1. Fă o pagină `index.html` cu **o galerie de 4 imagini** despre ceva ce iubești (un joc, un loc, un sport): fiecare cu `alt`, legendă și o poveste scurtă în paragraf. Pune imaginile într-un folder `imagini` în folderul `Prenume_Nume_W1_L6`.  
+2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
+3. **Exemple pentru acasă.** Încearcă amândouă:
+
+**Acasă 1 — Mărimea fișierului.**
+
+O poză făcută cu telefonul poate avea **5 sau 10 MB**. Pe o pagină cu multe astfel de poze, totul se încarcă încet. Pentru pagina ta:
+- alege imagini **sub 500 KB** fiecare (profesorul te ajută să le micșorezi);  
+- dă imaginilor nume **scurte, cu litere mici, fără spații și fără diacritice**: `pisica1.jpg`, nu `Poză Pisică Foarte Frumoasă.JPG`.
+
+> Numele din `src` trebuie să fie **exact** ca numele fișierului, inclusiv terminația. Dacă fișierul e `pisica1.jpg`, `src="pisica1.png"` nu merge.
+
+**Acasă 2 — Imaginea cu adresă din internet.**
+
+```html
+<img src="https://exemplu.ro/poze/pisica.jpg" alt="Pisică" width="300">
+```
+
+(Adresa e doar un exemplu: nu duce nicăieri.) Un `src` poate fi și adresa completă a unei imagini de pe un alt site. Nu e recomandat, din două motive:
+1. Imaginea poate **dispărea** oricând, dacă cel care o ține o șterge.  
+2. Poate fi **protejată**: nu ai voie să o folosești fără acordul celui care a făcut imaginea.  
+
+De aceea, imaginile paginilor tale le **ții în folderul tău**, iar pe cele din internet le folosești doar dacă ele sunt libere și le alegi cu profesorul.
+
+4. **Încă patru exerciții (B–E):**
+
+**B — Găsește drumul.** Folderul tău arată așa:
+
+```text
+site/
+├── index.html
+├── imagini/
+│   └── pisica.jpg
+└── pagini/
+    └── galerie.html
+```
+
+Ce scrii în `src` pentru imaginea `pisica.jpg`: (1) în `index.html`? (2) în `galerie.html`?
+
+**C — Scrie textul `alt`.** Scrie un text `alt` bun pentru fiecare imagine: (1) o poză cu un câine care aleargă prin zăpadă; (2) un desen cu un soare zâmbăreț deasupra unei case; (3) o poză cu tortul tău de ziua ta.
+
+**D — Găsește greșelile.** Găsește **3 greșeli** în codul de mai jos și repară greșelile:
+
+```text
+<img src="poza.jpg">
+<img src="imagini\pisica.jpg" alt="Pisica">
+<img src="imagini/caine.jpg" alt="Câinele meu"></img>
+```
+
+**E — Explică cu cuvintele tale.** Pe foaie: la ce folosește textul `alt` și de ce nu scriem doar „poza” în el?
 
 ## Ce urmează — Lecția 7
 Facem paginile **colorate**: învățăm să schimbăm culoarea textului și a fundalului, primul pas spre aspectul pe care îl vei controla complet în Modulul 3.
@@ -356,7 +374,7 @@ Facem paginile **colorate**: învățăm să schimbăm culoarea textului și a f
 
 ## Răspunsuri
 - **Quiz scurt:** (1) `src`; (2) textul `alt` spune în cuvinte ce se vede: apare dacă imaginea nu se încarcă și este citit cu voce tare pentru cei care nu văd imaginea; (3) `src="imagini/pisica1.jpg"` (folderul, apoi `/`, apoi numele fișierului); (4) nu, `<img>` este tag singur (nu scrii `</img>`); (5) `.png`.  
-- **Exercițiul B:** (1) `imagini/pisica.jpg`; (2) `../imagini/pisica.jpg`.  
-- **Exercițiul C:** exemple: (1) „Un câine alb aleargă prin zăpadă”; (2) „Desen cu un soare zâmbăreț deasupra unei case”; (3) „Tort de ziua mea, cu zece lumânări”.  
-- **Exercițiul D:** (1) lipsește `alt`; (2) `\` în loc de `/`; (3) `</img>` nu există, `img` e tag singur.  
-- **Exercițiul E:** `alt` apare dacă imaginea nu se încarcă, e citit de cei care nu văd imaginea și ajută căutarea; „poza” nu spune ce se vede.
+- **Tema, exercițiul B:** (1) `imagini/pisica.jpg`; (2) `../imagini/pisica.jpg`.  
+- **Tema, exercițiul C:** exemple: (1) „Un câine alb aleargă prin zăpadă”; (2) „Desen cu un soare zâmbăreț deasupra unei case”; (3) „Tort de ziua mea, cu zece lumânări”.  
+- **Tema, exercițiul D:** (1) lipsește `alt`; (2) `\` în loc de `/`; (3) `</img>` nu există, `img` e tag singur.  
+- **Tema, exercițiul E:** `alt` apare dacă imaginea nu se încarcă, e citit de cei care nu văd imaginea și ajută căutarea; „poza” nu spune ce se vede.

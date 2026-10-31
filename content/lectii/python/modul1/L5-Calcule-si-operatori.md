@@ -1,4 +1,5 @@
 # LECȚIA 5 — Calculatorul de buzunar
+### Calcule și operatori
 **Modulul 1 · Primii pași în Python · 2 ore**  
 **Code Maker Club · Python Starter**
 

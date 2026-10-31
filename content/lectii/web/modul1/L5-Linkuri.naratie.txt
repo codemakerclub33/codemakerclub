@@ -1,8 +1,10 @@
-Lecția cinci din Modulul unu. Linkuri.
+Lecția cinci. Colecția mea de linkuri.
 
 Linkurile sunt podurile internetului: un cuvânt pe care apeși și ajungi pe altă pagină. Azi înveți să le faci singur, spre alte site-uri, spre paginile tale și spre un loc anume din aceeași pagină.
 
-Obiectivul. Minim: o pagină cu trei linkuri, două spre site-uri din internet și unul spre o a doua pagină făcută de tine. Complet: în plus un link care se deschide în filă nouă, un link Sus și un link pentru e-mail.
+Ce facem azi. La final ai un mic site cu două pagini: prima pagină are o colecție de linkuri spre site-uri alese cu profesorul, un link spre a doua pagină și un link Înapoi sus. Știi să scrii un link, să deschizi un link în filă nouă și să legi două pagini din folderul tău.
+
+Instrucțiuni noi azi. Tagul a cu atributul href este un link. Target egal blank cu rel egal noopener noreferrer deschide linkul în filă nouă. Pentru altă pagină din același folder scrii doar numele fișierului. Iar un id pe un titlu și un href cu diez în față fac un link în aceeași pagină.
 
 Un sfat de siguranță. Facem linkuri doar spre site-uri alese împreună cu profesorul sau cu un părinte. Nu scrie niciodată într-o pagină adresa casei, numărul de telefon sau adresa ta reală de e-mail.
 
@@ -12,14 +14,16 @@ Al doilea pas. Filă nouă. Cu target egal blank, cu liniuță jos înainte de b
 
 Al treilea pas. Un link bun. Textul linkului trebuie să spună unde duce. Site-ul NASA este mai bun decât apasă aici.
 
-Al patrulea pas. Linkuri spre paginile tale. Faci un al doilea fișier, de exemplu despre punct html, în același folder. În href scrii doar numele fișierului. Nu uita să faci un link și înapoi. Dacă pui pagina într-un folder numit pagini, scrii pagini bară despre punct html, iar pentru a urca un folder scrii două puncte, două puncte și bară.
+Al patrulea pas. Linkuri spre paginile tale. Faci un al doilea fișier, de exemplu despre punct html, în același folder. În href scrii doar numele fișierului. Nu uita să faci un link și înapoi.
 
-Al cincilea pas. Linkuri în aceeași pagină. Dai unui titlu un id, de exemplu hobby. Apoi faci un link cu href egal diez hobby. Când apeși, pagina derulează acolo.
+Al cincilea pas. Linkuri în aceeași pagină. Dai unui titlu un id, de exemplu hobby. Apoi faci un link cu href egal diez hobby. Când apeși, pagina derulează acolo. La fel faci un link Înapoi sus: pui un id pe primul titlu și un link cu diez în față la finalul paginii.
 
-Al șaselea pas. Linkul mailto deschide programul de e-mail. Folosește doar adrese de probă.
+De făcut azi. Minim: o pagină cu trei linkuri, două spre site-uri din internet și unul spre o a doua pagină făcută de tine. Complet: adaugi un link în filă nouă, un link Înapoi sus și o listă cu buline pentru linkuri.
+
+Bonus. Cuprinsul meu. Faci un mini-cuprins cu linkuri spre fiecare titlu, adaugi o a treia pagină, încerci un link pentru e-mail cu o adresă de probă și numeri linkurile unei pagini reale.
 
 Greșeli frecvente. Adresă fără h-t-t-p-s. Lipsesc ghilimelele. Ai uitat închiderea tagului a. Ai greșit numele fișierului. Ai scris blank fără liniuță jos. Ai uitat semnul diez la linkul din pagină.
 
-Tema. Un mic site cu două pagini despre un subiect pe care îl iubești, cu trei linkuri spre site-uri alese cu un adult.
+Tema. Un mic site cu două pagini despre un subiect pe care îl iubești, cu trei linkuri spre site-uri alese cu un adult. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
 
 Recapitulare. Link înseamnă a href. Spre alte site-uri scrii adresa completă. Spre paginile tale scrii numele fișierului. Succes!

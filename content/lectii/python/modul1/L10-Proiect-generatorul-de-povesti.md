@@ -1,4 +1,5 @@
 # LECȚIA 10 — Meniul meu de proiecte
+### Reluare: proiectele din lecțiile 2–9 într-un meniu
 **Modulul 1 · Primii pași în Python · 2 ore**  
 **Code Maker Club · Python Starter**
 

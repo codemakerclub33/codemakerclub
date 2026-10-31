@@ -1,19 +1,15 @@
-# LECȚIA 10 — Proiect: Pagina mea despre mine
+# LECȚIA 10 — Site-ul meu de proiecte
+### Reluare: proiectele din lecțiile 1–7 într-un site
 **Modulul 1 · HTML I: Prima mea pagină · 2 ore**  
 **Code Maker Club · HTML Starter**
 
-> Ai ajuns la finalul primului modul! Azi construiești un **mini-site despre tine**, cu tot ce ai învățat: schelet, titluri, text, liste, linkuri, imagini, culori și mai multe pagini legate între ele.  
-> Proiect: **„Pagina mea despre mine”** · folder: `Prenume_Nume_W1_L10` (ex. `Ana_Pop_W1_L10`)
+> Ai ajuns la finalul primului modul! Azi aduni proiectele din lecțiile trecute într-un singur **site cu meniu**: o carte de vizită, o rețetă, o colecție de linkuri și un colț cu poze, toate în aceleași culori.  
+> Proiect: **„Site-ul meu de proiecte”** · folder: `Prenume_Nume_W1_L10` (ex. `Ana_Pop_W1_L10`)
 
 ---
 
-## Obiectiv
-La finalul orei ai un site cu pagini legate între ele, scris de tine, curat, colorat și testat.  
-**Minim:** 3 pagini (`index.html`, `despre.html`, `preferate.html`) cu același meniu, titluri, text, o listă, culori și cel puțin o imagine.  
-**Ținta orei (Complet):** + a patra pagină cu galerie (`galerie.html`), un link către un site ales cu profesorul, un link către o secțiune cu `id`, comentarii pe secțiuni, cod indentat și o prezentare de un minut.
-
-## De ce contează
-Un proiect adevărat te obligă să folosești toate lucrurile învățate **împreună**, nu câte una. Așa vezi ce ai înțeles bine și ce mai trebuie exersat. Este și prima ta lucrare pe care o poți arăta familiei.
+## Ce facem azi
+La final ai un **site de proiecte**, scris de tine, curat, colorat și testat: o pagină de început, cartea ta de vizită, rețeta ta, colecția de linkuri și colțul cu poze, legate printr-un meniu. Nu învățăm tag-uri noi: **reiei proiectele din lecțiile 1–9 cu mici modificări** și le legi între ele. Așa vezi ce ai înțeles bine și ce mai trebuie exersat. Este și prima ta lucrare pe care o poți arăta familiei.
 
 ---
 
@@ -21,13 +17,31 @@ Un proiect adevărat te obligă să folosești toate lucrurile învățate **îm
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Plan: harta site-ului și conținutul (**Exemplul 1**) |
-| 15–30 | Folder, schelet și meniu (**Exemplul 2**) |
-| 30–85 | Construim paginile (**Exemplele 3–6**) |
-| 85–95 | Culori potrivite pe toate paginile (**Exemplul 7**) |
-| 95–105 | Lista de verificare și test cu un coleg (**Exemplele 8–9**) |
-| 105–118 | Prezentarea de un minut (**Exemplul 10**) |
+| 0–10 | Planul: harta site-ului și pregătirea fișierelor (**Exemplul 1**) |
+| 10–25 | Folder, schelet, meniu și culori (**Exemplul 2**) |
+| 25–40 | Pagina de început, din Lecția 1 (**Exemplul 3**) |
+| 40–55 | Cartea mea de vizită, din Lecția 2 (**Exemplul 4**) |
+| 55–70 | Rețeta mea, din Lecția 4 (**Exemplul 5**) |
+| 70–85 | Colecția mea de linkuri, din Lecția 5 (**Exemplul 6**) |
+| 85–100 | Colțul meu cu poze, din Lecția 6 (**Exemplul 7**) |
+| 100–118 | Lista de verificare și test cu un coleg (**Exemplul 8**) |
 | 118–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+Azi nu învățăm tag-uri noi. Reiei ce știi deja, din lecțiile trecute:
+
+| Ce reiei | De unde | Unde apare azi |
+|----------|---------|----------------|
+| Scheletul paginii și `<title>` | Lecțiile 1–2 | fiecare pagină |
+| Titluri, paragrafe, liste, text îngroșat | Lecțiile 3–4 | carte de vizită, rețetă |
+| Linkuri, filă nouă, `id` | Lecția 5 | colecția de linkuri |
+| Imagini cu `alt` și legendă | Lecția 6 | colțul cu poze |
+| Culori cu `style` | Lecția 7 | toate paginile |
+| Meniu și mai multe pagini | Lecția 8 | toate paginile |
+| Indentare, comentarii, DevTools | Lecția 9 | verificarea finală |
 
 ---
 
@@ -35,40 +49,43 @@ Un proiect adevărat te obligă să folosești toate lucrurile învățate **îm
 
 ### Siguranță înainte de toate
 Este un site despre tine, dar rămâne **al tău și al profesorului**. Nu scrie în el:
-- numele complet, adresa, numele școlii sau numărul de telefon;
+- numele complet, adresa, orașul, numele școlii sau numărul de telefon;
 - adresa ta reală de e-mail;
 - poze cu fața ta sau a altor persoane. Folosește un **desen**, un avatar făcut de tine sau o imagine aleasă cu profesorul.
 
 Scrie doar **prenumele** (sau o poreclă) și lucruri pe care ai voie să le arăți: animale, jocuri, mâncare, hobby-uri, culori.
 
-### Exemplul 1 — Harta site-ului și lista de conținut
+### Exemplul 1 — Harta site-ului și lista de proiecte
 
 Desenează pe foaie harta, ca în Lecția 8:
 
 ```text
-           [ Acasă ]
-        /      |       \
-[ Despre mine ] [ Preferate ] [ Galerie ]
+                    [ Acasă ]
+        /        /       |        \
+[ Carte de vizită ] [ Rețeta ] [ Linkuri ] [ Poze ]
 ```
 
-Apoi scrie sub fiecare căsuță ce vei pune în pagină:
+Apoi scrie sub fiecare căsuță ce proiect din modul reiei:
 
-| Pagină | Fișier | Ce conține |
-|--------|--------|------------|
-| Acasă | `index.html` | un titlu, un text de bun venit, o imagine sau un desen |
-| Despre mine | `despre.html` | câteva paragrafe și o listă cu lucruri despre tine |
-| Preferate | `preferate.html` | liste: mâncare, jocuri, animale |
-| Galerie | `galerie.html` | 3–4 imagini cu legende |
+| Pagină | Fișier | Ce reiei |
+|--------|--------|----------|
+| Acasă | `index.html` | „Prima mea pagină” (Lecția 1): titlu, bun venit și lista de pagini |
+| Cartea mea de vizită | `carte.html` | „Cartea mea de vizită” (Lecția 2): titlu și trei paragrafe |
+| Rețeta mea | `reteta.html` | „Rețeta mea” (Lecția 4): lista cu buline și lista numerotată |
+| Colecția mea de linkuri | `linkuri.html` | „Colecția mea de linkuri” (Lecția 5): linkuri alese cu profesorul |
+| Colțul meu cu poze | `poze.html` | „Colțul meu cu poze” (Lecția 6): imagini cu `alt` și legendă |
 
-**Încearcă tu (10 min)**  
-- [ ] Desenează pe foaie harta site-ului tău, cu 3 sau 4 pagini  
-- [ ] Scrie pe foaie ce pui în fiecare pagină  
+Dacă ai păstrat folderele din lecțiile trecute, **copiază paginile de acolo** și schimbă ce trebuie. Dacă nu, le scrii din nou, după exemplele de mai jos.
+
+**Încearcă tu (8 min)**  
+- [ ] Desenează pe foaie harta site-ului tău, cu cele cinci pagini  
+- [ ] Scrie pe foaie ce reiei în fiecare pagină  
 - [ ] Alege 3–4 culori care se potrivesc și scrie culorile pe foaie  
 - [ ] Pregătește imaginile (desene, avatar sau poze alese cu profesorul) într-un folder `imagini`  
 
 ---
 
-## 2. Folderul, scheletul și meniul
+## 2. Folderul, scheletul, meniul și culorile
 
 ### Exemplul 2 — Începutul fiecărei pagini
 
@@ -77,22 +94,24 @@ Creează folderul `Prenume_Nume_W1_L10`, cu fișierele de pe hartă și folderul
 ```text
 Prenume_Nume_W1_L10/
   index.html
-  despre.html
-  preferate.html
-  galerie.html
+  carte.html
+  reteta.html
+  linkuri.html
+  poze.html
   imagini/
 ```
 
-Fiecare pagină începe cu **scheletul complet**, iar `<body>` începe cu **același meniu**:
+Fiecare pagină începe cu **scheletul complet**, iar `<body>` începe cu **același meniu** și **același fundal**:
 
 ```html
 <body style="background-color: lightyellow;">
   <!-- ===== MENIU ===== -->
   <p>
     <a href="index.html">Acasă</a> |
-    <a href="despre.html">Despre mine</a> |
-    <a href="preferate.html">Preferate</a> |
-    <a href="galerie.html">Galerie</a>
+    <a href="carte.html">Cartea mea de vizită</a> |
+    <a href="reteta.html">Rețeta mea</a> |
+    <a href="linkuri.html">Linkuri</a> |
+    <a href="poze.html">Poze</a>
   </p>
   <hr>
 
@@ -100,110 +119,9 @@ Fiecare pagină începe cu **scheletul complet**, iar `<body>` începe cu **acel
 </body>
 ```
 
-Scrie scheletul și meniul **o singură dată**, în `index.html`. Copiază scheletul și meniul apoi în celelalte trei pagini și schimbă în fiecare `<title>`.
+Scrie scheletul și meniul **o singură dată**, în `index.html`. Copiază-le apoi în celelalte pagini și schimbă în fiecare `<title>`.
 
-**Gata când:**  
-- [ ] Ai creat folderul și cele 4 fișiere (sau cel puțin 3)  
-- [ ] Fiecare fișier are scheletul complet, cu `<title>` diferit  
-- [ ] Meniul este la fel în toate paginile și toate linkurile merg  
-
----
-
-## 3. Construim paginile
-
-### Exemplul 3 — `index.html`
-
-```html
-<h1 style="text-align: center; color: tomato;">Salut, sunt Ana!</h1>
-<p style="text-align: center;"><em>Bine ai venit pe site-ul meu</em></p>
-
-<p style="text-align: center;">
-  <img src="imagini/avatar.png" alt="Desenul meu: o fetiță cu ochelari" width="200">
-</p>
-
-<p>Pe acest site afli <strong>cine sunt</strong>, ce îmi place și ce am desenat. Folosește meniul de sus ca să te plimbi prin pagini.</p>
-```
-
-Înlocuiește cu un titlu, un text de bun venit și o imagine alese de tine. Alege și un `alt` care descrie imaginea.
-
-### Exemplul 4 — `despre.html`
-
-```html
-<h1 style="color: tomato;">Despre mine</h1>
-
-<h2 style="color: navy;">Cine sunt</h2>
-<p>Mă cheamă Ana și am 10 ani. Îmi place să desenez și să învăț lucruri noi despre calculatoare.</p>
-
-<h2 id="timpliber" style="color: navy;">Ce fac în timpul liber</h2>
-<ul>
-  <li>desenez animale</li>
-  <li>citesc cărți cu aventuri</li>
-  <li>joc fotbal cu prietenii</li>
-</ul>
-
-<h2 style="color: navy;">Un lucru la care țin mult</h2>
-<p>Am învățat să scriu o pagină web <strong>de la zero</strong>!</p>
-```
-
-Scrie propriul text. Folosește `<strong>` pentru ce este important și cel puțin o listă. Nu scrie date personale.
-
-### Exemplul 5 — `preferate.html`
-
-```html
-<h1 style="color: tomato;">Lucrurile mele preferate</h1>
-
-<h2 style="color: navy;">Top 3 mâncăruri</h2>
-<ol>
-  <li>clătite</li>
-  <li>pizza</li>
-  <li>înghețată</li>
-</ol>
-
-<h2 style="color: navy;">Animale</h2>
-<ul>
-  <li>pisici</li>
-  <li>delfini</li>
-</ul>
-
-<p>Mai multe despre animale găsești pe <a href="https://ro.wikipedia.org" target="_blank" rel="noopener noreferrer">Wikipedia</a>.</p>
-<p><a href="despre.html#timpliber">Înapoi la „Ce fac în timpul liber”</a></p>
-```
-
-Folosește o listă numerotată pentru un clasament și una cu buline pentru restul. Linkul extern (spre un site ales cu profesorul) se deschide într-o filă nouă.
-
-### Exemplul 6 — `galerie.html`
-
-```html
-<h1 style="color: tomato;">Galeria mea</h1>
-
-<figure>
-  <img src="imagini/desen1.png" alt="Desen cu o pisică gri pe un fotoliu" width="300">
-  <figcaption>Pisica din desenul meu.</figcaption>
-</figure>
-
-<figure>
-  <img src="imagini/desen2.png" alt="Desen cu un delfin în mare" width="300">
-  <figcaption>Delfinul meu preferat.</figcaption>
-</figure>
-```
-
-Pune 3–4 imagini, fiecare cu `alt` și legendă. Dacă o imagine nu apare, verifică numele fișierului și folderul `imagini`.
-
-**Gata când:**  
-- [ ] `index.html` are titlu, text de bun venit și o imagine cu `alt`  
-- [ ] `despre.html` are cel puțin trei titluri și o listă  
-- [ ] `preferate.html` are o listă numerotată și una cu buline  
-- [ ] Ai un link către un site ales cu profesorul, care se deschide într-o filă nouă  
-- [ ] `galerie.html` are 3 imagini cu `alt` și legendă (sau paginile tale au măcar o imagine)  
-- [ ] Toate imaginile se văd (verifică în DevTools, Console, că nu există mesaje „404”)  
-
----
-
-## 4. Culori, ordine și verificare
-
-### Exemplul 7 — Culori potrivite
-
-Folosește **aceleași culori** pe toate paginile: aceeași culoare de fundal, aceeași culoare pentru `<h1>` și aceeași pentru `<h2>`. Așa site-ul arată ca un singur site.
+Folosește **aceleași culori** pe toate paginile: același fundal, aceeași culoare pentru `<h1>` și aceeași pentru `<h2>`. Așa site-ul arată ca un singur site.
 
 | Element | Culoarea mea |
 |---------|--------------|
@@ -211,9 +129,116 @@ Folosește **aceleași culori** pe toate paginile: aceeași culoare de fundal, a
 | `<h1>` | |
 | `<h2>` | |
 
-Verifică citibilitatea: textul trebuie să se vadă clar pe fundal.
+**Gata când:**  
+- [ ] Ai creat folderul și cele 5 fișiere  
+- [ ] Fiecare fișier are scheletul complet, cu `<title>` diferit  
+- [ ] Meniul este la fel în toate paginile și toate linkurile merg  
 
-### Exemplul 8 — Lista de verificare
+---
+
+## 3. Construim paginile
+
+În exemplele de mai jos scrii doar ce vine **sub meniu**, în fiecare pagină.
+
+### Exemplul 3 — `index.html` (din Lecția 1)
+
+```html
+<!-- Prima mea pagină · Ana -->
+<h1 style="color: tomato;">Salut, sunt Ana!</h1>
+<p><em>Bine ai venit pe site-ul meu de proiecte</em></p>
+<p>Aici am adunat ce am învățat în primul modul de HTML. Alege un proiect:</p>
+<ul>
+  <li><a href="carte.html">Cartea mea de vizită</a></li>
+  <li><a href="reteta.html">Rețeta mea</a></li>
+  <li><a href="linkuri.html">Colecția mea de linkuri</a></li>
+  <li><a href="poze.html">Colțul meu cu poze</a></li>
+</ul>
+```
+
+Ca la Lecția 1, o pagină cu un titlu mare și text despre tine. Modificarea de azi: o **listă cu linkuri** către celelalte pagini.
+
+### Exemplul 4 — `carte.html` (din Lecția 2)
+
+```html
+<!-- Cartea mea de vizită · Ana -->
+<h1 style="color: tomato;">Ana — carte de vizită</h1>
+<p>Am zece ani.</p>
+<p>Hobby-ul meu: desenez și mă joc cu pisica.</p>
+<p>Visul meu: să fac propriul meu joc.</p>
+```
+
+Scrie propriul text. Nu scrie date personale (oraș, școală, adresă). Modificarea de azi: titlul are culoarea comună a site-ului.
+
+### Exemplul 5 — `reteta.html` (din Lecția 4)
+
+```html
+<!-- Rețeta mea · Ana -->
+<h1 style="color: tomato;">Clătite cu dulceață</h1>
+<p><em>O rețetă simplă, făcută împreună cu un adult.</em></p>
+
+<h2 style="color: navy;">Ce ne trebuie</h2>
+<ul>
+  <li><strong>2</strong> ouă</li>
+  <li><strong>250 ml</strong> lapte</li>
+  <li><strong>100 g</strong> făină</li>
+</ul>
+
+<h2 style="color: navy;">Cum le facem</h2>
+<ol>
+  <li>Amestecăm ouăle cu laptele.</li>
+  <li>Adăugăm făina și mixăm până se leagă.</li>
+  <li>Un adult coace clătitele.</li>
+</ol>
+
+<p><mark>Poftă bună!</mark></p>
+```
+
+Folosește rețeta ta (sau topul tău). Modificarea de azi: titlurile `<h2>` au aceeași culoare pe tot site-ul.
+
+### Exemplul 6 — `linkuri.html` (din Lecția 5)
+
+```html
+<!-- Colecția mea de linkuri · Ana -->
+<h1 id="sus" style="color: tomato;">Colecția mea de linkuri</h1>
+<p>Site-uri alese împreună cu profesorul.</p>
+
+<h2 style="color: navy;">Să învăț</h2>
+<ul>
+  <li><a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer">Wikipedia</a>: enciclopedia liberă</li>
+  <li><a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer">NASA</a>: știri din spațiu</li>
+</ul>
+
+<p><a href="#sus">↑ Înapoi sus</a></p>
+```
+
+Alege **tu** site-urile. Modificarea de azi: în loc de un link spre `despre.html`, ai meniul site-ului. Dacă ai copiat pagina din lecția 5, **scoate** linkurile vechi care nu mai merg.
+
+### Exemplul 7 — `poze.html` (din Lecția 6)
+
+```html
+<!-- Colțul meu cu poze · Ana -->
+<h1 style="color: tomato;">Colțul meu cu poze</h1>
+
+<h2 style="color: navy;">Pisica din desenul meu</h2>
+<figure>
+  <img src="imagini/desen1.png" alt="Desen cu o pisică gri pe un fotoliu" width="300">
+  <figcaption>Pisica din desenul meu.</figcaption>
+</figure>
+
+<h2 style="color: navy;">Delfinul meu preferat</h2>
+<figure>
+  <img src="imagini/desen2.png" alt="Desen cu un delfin în mare" width="300">
+  <figcaption>Delfinul meu preferat.</figcaption>
+</figure>
+```
+
+Pune 2–3 imagini, fiecare cu `alt` și legendă. Dacă o imagine nu apare, verifică numele fișierului și folderul `imagini`. Folosește desene sau imagini alese cu profesorul, nu poze cu fețe.
+
+---
+
+## 4. Verificare
+
+### Exemplul 8 — Lista de verificare și testul cu un coleg
 
 Înainte să spui „Am terminat”, parcurge lista. Pune o bifă doar la ce este **adevărat**:
 
@@ -226,10 +251,9 @@ Verifică citibilitatea: textul trebuie să se vadă clar pe fundal.
 - [ ] Toate linkurile din meniu merg din orice pagină  
 - [ ] Culorile sunt aceleași pe toate paginile, iar textul se citește bine  
 - [ ] Nu există date personale (nume complet, adresă, telefon, poze cu fețe)  
+- [ ] În DevTools, fila Console, nu apar mesaje „404”  
 
-### Exemplul 9 — Test cu un coleg
-
-Stai lângă un coleg. Fiecare deschide site-ul celuilalt cu Live Server și:
+Apoi stai lângă un coleg. Fiecare deschide site-ul celuilalt cu Live Server și:
 1. parcurge **toate** paginile prin meniu;  
 2. caută un link sau o imagine care nu merge;  
 3. spune **un lucru reușit** și **un lucru de îmbunătățit**.  
@@ -243,53 +267,42 @@ Notează sugestiile și repară ce ai de reparat.
 
 ---
 
-## 5. Prezentarea
+## De făcut azi — „Site-ul meu de proiecte”
 
-### Exemplul 10 — Un minut despre site-ul tău
+### Minim vs Complet
 
-Pregătește o prezentare de **un minut**. Poți folosi acest plan:
+| | Ce trebuie |
+|--|------------|
+| **Minim** | 3 pagini (`index.html`, `carte.html`, `poze.html`) cu același meniu, aceleași culori și cel puțin o imagine cu `alt` |
+| **Complet** | Minim + `reteta.html` și `linkuri.html`, comentarii pe secțiuni, cod indentat și lista de verificare bifată |
 
-1. „Site-ul meu se numește … și este despre …”  
-2. „Are … pagini: …”  
-3. „Partea mea preferată este … pentru că …”  
-4. „Cel mai greu lucru a fost … și am rezolvat așa: …”  
-5. „Ce vreau să învăț mai departe: …”
+### Pasul 1 — Minim
+Fă folderul `Prenume_Nume_W1_L10` cu paginile `index.html`, `carte.html` și `poze.html`, folderul `imagini`, același meniu și aceleași culori.
 
-> Dacă ai ceva care nu merge, spune și asta: „Am o greșeală pe care nu am reușit să o repar”. Nimeni nu are un cod perfect, iar a vorbi despre greșeli este o parte din meserie.
+- [ ] Folderul are cele 3 pagini și folderul `imagini`  
+- [ ] Fiecare pagină are scheletul complet, cu `<title>` diferit  
+- [ ] Meniul este la fel în toate paginile și toate linkurile merg  
+- [ ] Culorile sunt aceleași pe toate paginile  
+- [ ] Pagina cu poze are cel puțin o imagine cu `alt`  
 
-**Gata când:**  
-- [ ] Ai pregătit prezentarea de un minut  
-- [ ] Ai prezentat site-ul colegilor sau profesorului  
-- [ ] Ai spus un lucru reușit și un lucru pe care îl vei îmbunătăți  
+### Pasul 2 — Complet
+Adaugi restul proiectelor și pui ordine în cod:
 
----
-
-## Proiect / exerciții de finalizat AZI
-
-### Exercițiul A — „Pagina mea despre mine” (obligatoriu)
-Mini-site cu minimum 3 pagini (`index.html`, `despre.html`, `preferate.html`), meniu identic, culori consecvente, cel puțin o imagine cu `alt`, o listă cu buline, o listă numerotată, cod indentat și comentarii.
-
-### Exercițiul B — Autoevaluare
-Pe foaie, pune câte o notă de la 1 la 5 pentru fiecare: ordinea codului, aspectul paginilor, linkurile, imaginile, textul scris de tine. Scrie ce vei face mai bine data viitoare.
-
-### Exercițiul C — Fișa greșelilor
-Scrie pe foaie trei greșeli făcute în acest modul și cum ai găsit și cum ai reparat fiecare greșeală.
-
-### Exercițiul D — Întrebări pentru profesor
-Scrie două întrebări despre HTML la care nu ai primit încă răspuns. Vor fi folosite în Modulul 2.
-
-**Gata când:**  
-- [ ] Folderul `Prenume_Nume_W1_L10` conține paginile și folderul `imagini`  
-- [ ] Ai bifat lista de verificare din Exemplul 8  
-- [ ] Ai făcut autoevaluarea și fișa greșelilor  
-- [ ] Ai prezentat site-ul și ai testat site-ul cu un coleg  
+- [ ] Ai `reteta.html` cu o listă cu buline și una numerotată  
+- [ ] Ai `linkuri.html` cu un link către un site ales cu profesorul, care se deschide într-o filă nouă  
+- [ ] Meniul are cinci linkuri, iar paginile au comentarii pe secțiuni  
+- [ ] Codul este indentat, iar lista de verificare este bifată  
+- [ ] Ai testat site-ul cu un coleg și ai reparat un lucru  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Adaugă o pagină `contact.html` fără date reale (de exemplu „Spune ce părere ai” cu un text, fără adresă și fără telefon)  
+## Bonus ★★★ — Provocare: Pagina poveștii
+*Doar dacă ai terminat Complet.*
+
+Adaugi încă un proiect din modul și faci site-ul mai ușor de folosit.
+
+- [ ] Adaugă `poveste.html` din Lecția 3: o poveste de 5 rânduri despre ziua ta preferată, cu `<h1>`, `<h2>`, o linie `<hr>` și `<br>` între rânduri, și un link către ea în meniu  
 - [ ] Adaugă în fiecare pagină un link „Sus”, către un `id` din partea de sus  
-- [ ] Scrie o poveste de 5 rânduri despre ziua ta preferată, cu `<br>` între rânduri  
 - [ ] Mută paginile în folderul `pagini` și repară toate linkurile și imaginile cu `../`  
 
 ---
@@ -302,12 +315,13 @@ Scrie două întrebări despre HTML la care nu ai primit încă răspuns. Vor fi
 5. **Ai pus date personale** — șterge datele imediat.  
 6. **Ai uitat `alt`** la o imagine.  
 7. **Cod neindentat** — apasă **Shift + Alt + F**.  
-8. **Ai uitat să salvezi** înainte de test.  
+8. **Ai copiat o pagină din lecția veche** și au rămas linkuri către pagini care nu mai există (de exemplu `despre.html`).  
+9. **Ai uitat să salvezi** înainte de test.  
 
 ---
 
 ## Recapitulare pe scurt
-Ai învățat să creezi o pagină cu schelet, titluri și paragrafe, text îngroșat și înclinat, liste, linkuri, imagini, culori, mai multe pagini legate prin meniu, cod ordonat cu indentare și comentarii și să cauți greșeli cu DevTools. Toate acestea sunt baza pentru ce urmează.
+Ai învățat să creezi o pagină cu schelet, titluri și paragrafe, text îngroșat și înclinat, liste, linkuri, imagini, culori, mai multe pagini legate prin meniu, cod ordonat cu indentare și comentarii și să cauți greșeli cu DevTools. Azi le-ai adunat într-un singur site. Toate acestea sunt baza pentru ce urmează.
 
 ## Quiz final de modul
 - Care sunt cele trei limbaje ale unei pagini web și ce face fiecare?  
@@ -319,7 +333,21 @@ Ai învățat să creezi o pagină cu schelet, titluri și paragrafe, text îngr
 - Cum cauți o greșeală pas cu pas?
 
 ## Temă
-Alege **un lucru de îmbunătățit** din feedbackul colegului sau din lista de verificare și corectează acel lucru. Notează pe foaie ce ai schimbat. Adu la ora următoare, în folderul `Prenume_Nume_W1_L10`, versiunea finală.
+1. Alege **un lucru de îmbunătățit** din feedbackul colegului sau din lista de verificare și corectează acel lucru. Notează pe foaie ce ai schimbat. Adu la ora următoare, în folderul `Prenume_Nume_W1_L10`, versiunea finală.  
+2. **Autoevaluare.** Pe foaie, pune câte o notă de la 1 la 5 pentru fiecare: ordinea codului, aspectul paginilor, linkurile, imaginile, textul scris de tine. Scrie ce vei face mai bine data viitoare.  
+3. **Fișa greșelilor.** Scrie pe foaie trei greșeli făcute în acest modul și cum ai găsit și cum ai reparat fiecare greșeală.  
+4. **Întrebări pentru profesor.** Scrie două întrebări despre HTML la care nu ai primit încă răspuns. Vor fi folosite în Modulul 2.  
+5. **Exemplu pentru acasă.**
+
+**Acasă 1 — Un minut despre site-ul tău.** Pregătește o prezentare de **un minut**. Poți folosi acest plan:
+
+1. „Site-ul meu se numește … și este despre …”  
+2. „Are … pagini: …”  
+3. „Partea mea preferată este … pentru că …”  
+4. „Cel mai greu lucru a fost … și am rezolvat așa: …”  
+5. „Ce vreau să învăț mai departe: …”
+
+> Dacă ai ceva care nu merge, spune și asta: „Am o greșeală pe care nu am reușit să o repar”. Nimeni nu are un cod perfect, iar a vorbi despre greșeli este o parte din meserie.
 
 ## Ce urmează — Modulul 2: HTML II
 Învățăm lucruri noi: **tabele**, **formulare**, **audio și video**, **taguri cu înțeles** și **clase** pentru organizarea paginii. Sunt pașii spre un site cu adevărat complet.
@@ -328,7 +356,8 @@ Alege **un lucru de îmbunătățit** din feedbackul colegului sau din lista de 
 
 ## Răspunsuri
 - **Quiz final de modul:** (1) HTML = structura (scheletul), CSS = aspectul (culori, fonturi), JavaScript = comportamentul (ce se întâmplă la click); (2) `</html>` (ultimul tag deschis se închide primul); (3) `<a href="despre.html">Despre mine</a>`; (4) `<img src="imagini/poza.jpg" alt="descriere">`; `alt` spune în cuvinte ce se vede, apare dacă imaginea nu se încarcă și este citit pentru cei care nu văd; (5) cu `style="background-color: lightyellow;"` pe `<body>`; (6) „un folder mai sus”; (7) salvezi, citești ce vezi, cauți mai sus de locul efectului, verifici lista de suspecți (tag neînchis, ghilimele, nume de fișier, `:` și `;`), schimbi un singur lucru odată sau comentezi bucăți de cod.  
-- **Evaluare sugerată (20 puncte):** schelet corect în fiecare pagină (3); meniu identic și funcțional (3); titluri și paragrafe (2); cele două tipuri de liste (2); imagini cu `alt` care se văd (3); culori consecvente și citibile (2); cod indentat și comentarii (2); fără date personale (1); prezentare (2).  
-- **Siguranță:** verificați înainte de orice prezentare publică să nu existe date personale și poze cu fețe. Folosiți desene sau avatare.  
-- **Greșeli frecvente la verificare:** un singur `<h1>` pe pagină, `alt` la fiecare imagine, nume de fișiere cu litere mici, fără spații.  
-- **Exercițiul D:** adunați întrebările și folosiți întrebările la începutul Modulului 2.
+- **Evaluare sugerată (20 puncte):** schelet corect în fiecare pagină (3); meniu identic și funcțional (3); titluri și paragrafe (2); cele două tipuri de liste (2); imagini cu `alt` care se văd (3); culori consecvente și citibile (2); cod indentat și comentarii (2); fără date personale (1); testul cu un coleg (2).  
+- **Siguranță:** verificați înainte de orice prezentare publică să nu existe date personale și poze cu fețe. Folosiți desene sau avatare. Atenție la paginile copiate din lecțiile vechi: unele exemple de acolo conțin un oraș sau alte detalii care nu trebuie să rămână.  
+- **Greșeli frecvente la verificare:** un singur `<h1>` pe pagină, `alt` la fiecare imagine, nume de fișiere cu litere mici, fără spații, linkuri vechi către pagini care nu mai există.  
+- **Dacă ritmul clasei este lent:** facem doar Minim (trei pagini) și lăsăm `reteta.html` și `linkuri.html` pentru acasă.  
+- **Tema, punctul 4:** adunați întrebările și folosiți-le la începutul Modulului 2.

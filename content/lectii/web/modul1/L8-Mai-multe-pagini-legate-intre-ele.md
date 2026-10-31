@@ -1,4 +1,5 @@
-# LECȚIA 8 — Mai multe pagini legate între ele
+# LECȚIA 8 — Mini-site despre mine
+### Mai multe pagini legate între ele
 **Modulul 1 · HTML I: Prima mea pagină · 2 ore**  
 **Code Maker Club · HTML Starter**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei știi să faci un site cu mai multe pagini în același folder, să legi paginile cu linkuri relative, să pui același meniu în fiecare pagină, să folosești un subfolder pentru pagini și să găsești de ce un link „nu merge”.  
-**Minim:** un site cu două pagini, `index.html` și `despre.html`, legate prin linkuri în ambele sensuri.  
-**Ținta orei (Complet):** + o a treia pagină, un meniu identic în toate paginile și un link către o secțiune dintr-o altă pagină.
-
-## De ce contează
-Toate site-urile pe care le vizitezi sunt făcute din mai multe pagini legate între ele. Dacă înțelegi cum se leagă paginile și unde stau fișierele, poți face orice site, mic sau mare.
+## Ce facem azi
+La final ai primul tău **mini-site despre tine**, cu trei pagini legate printr-un meniu, același fundal colorat și un titlu diferit în fila fiecărei pagini. Știi să faci mai multe pagini în același folder, să le legi cu linkuri, să pui același meniu în fiecare pagină și să găsești de ce un link „nu merge”. Toate site-urile pe care le vizitezi sunt făcute din mai multe pagini legate între ele, iar acum vei ști cum se leagă.
 
 ---
 
@@ -24,10 +20,22 @@ Toate site-urile pe care le vizitezi sunt făcute din mai multe pagini legate î
 | 0–15 | Recapitulare · pornim proiectul |
 | 15–40 | Un site = mai multe pagini · două pagini legate (**Exemplele 1–2**) |
 | 40–65 | Meniul · trei pagini (**Exemplele 3–4**) |
-| 65–85 | Subfolder · `../` · link către o secțiune (**Exemplele 5, 7, 8**) |
-| 85–100 | Când un link nu merge (**Exemplul 6**) · harta site-ului (**Exemplul 9**) |
-| 100–115 | Mini-site complet (**Exemplul 10**) |
+| 65–90 | Subfolder · `../` · când linkul nu merge (**Exemplele 5–6**) |
+| 90–105 | Harta site-ului (**Exemplul 7**) |
+| 105–115 | Mini-site complet (**Exemplul 8**) |
 | 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `index.html` | Prima pagină a site-ului | „ușa de intrare” |
+| Meniu de linkuri | Linii de linkuri spre toate paginile, copiate în fiecare pagină | linkuri: Acasă, Despre mine, Hobby |
+| `pagini/despre.html` | Link spre o pagină dintr-un subfolder | din `index.html` |
+| `../index.html` | Link un folder mai sus | din `pagini/despre.html` |
+| Eroarea **404** | Browserul nu a găsit fișierul | verifici numele și folderul |
 
 ---
 
@@ -141,7 +149,7 @@ Pune **același meniu** și în `index.html` și în `despre.html`. Testează c�
 
 ---
 
-## 4. Foldere, linkuri către secțiuni și greșeli
+## 4. Foldere și greșeli
 
 ### Exemplul 5 — Pagini într-un subfolder
 
@@ -188,43 +196,15 @@ Dacă apeși pe link și vezi „**404**”, „Cannot GET” sau o pagină goal
 4. Ai salvat fișierul (**Ctrl+S**) și ai pus fișierul în folderul proiectului?  
 5. Ai folosit bara `/`, nu `\`?
 
-### Exemplul 7 — Link către o secțiune dintr-o altă pagină
-
-Dacă pui un `id` pe un titlu din `despre.html`:
-
-```html
-<h2 id="prieteni">Prietenii mei</h2>
-```
-
-poți face un link direct la el din altă pagină:
-
-```html
-<a href="despre.html#prieteni">Vezi prietenii mei</a>
-```
-
-Scrii numele paginii, apoi `#`, apoi `id`-ul. Browserul deschide pagina și derulează direct la titlu.
-
-### Exemplul 8 — Imagini în pagini din subfolder
-
-Dacă o pagină este în folderul `pagini` și imaginile sunt în folderul `imagini` de lângă `index.html`, urci un folder:
-
-```html
-<img src="../imagini/pisica.jpg" alt="O pisică gri" width="300">
-```
-
-Aceeași regulă ca la linkuri: `../` înseamnă „un folder mai sus”.
-
 **Gata când:**  
-- [ ] Înțelegi de ce `index.html` este numele primei pagini  
-- [ ] Poți explica de ce la `../` urcăm un folder  
 - [ ] Ai încercat un link greșit (de exemplu `despre.htm`) și ai înțeles mesajul „404”, apoi ai reparat linkul  
-- [ ] Ai făcut un link cu `#id` către un titlu din altă pagină  
+- [ ] Poți explica de ce la `../` urcăm un folder  
 
 ---
 
 ## 5. Planul site-ului și mini-proiectul
 
-### Exemplul 9 — Harta site-ului
+### Exemplul 7 — Harta site-ului
 
 Înainte să scrii cod, desenează pe foaie **harta site-ului**: o căsuță pentru fiecare pagină și săgeți pentru linkuri.
 
@@ -236,7 +216,7 @@ Aceeași regulă ca la linkuri: `../` înseamnă „un folder mai sus”.
 
 Din fiecare pagină se poate ajunge în oricare alta, prin meniu. Hartă pe hârtie înseamnă mai puține greșeli în cod.
 
-### Exemplul 10 — Mini-site cu trei pagini
+### Exemplul 8 — Mini-site cu trei pagini
 
 `index.html`:
 
@@ -273,49 +253,37 @@ Din fiecare pagină se poate ajunge în oricare alta, prin meniu. Hartă pe hâr
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Mini-site despre mine”
 
-### Exercițiul A — „Mini-site despre mine” (obligatoriu)
-Fă un site cu **trei pagini** în folderul `Prenume_Nume_W1_L8`:
-- `index.html`: un titlu, un text de bun venit, o imagine (opțional);
-- `despre.html`: câteva paragrafe despre tine și o listă;
-- `hobby.html`: o listă cu pasiunile tale.
+### Minim vs Complet
 
-Fiecare pagină are același **meniu** cu trei linkuri, **același fundal colorat** și un `<title>` diferit. În `despre.html` pune cel puțin un titlu `<h2>` cu `id` și un link către el din `index.html`.
+| | Ce trebuie |
+|--|------------|
+| **Minim** | Un site cu două pagini, `index.html` și `despre.html`, legate prin linkuri în ambele sensuri |
+| **Complet** | Minim + o a treia pagină, un meniu identic în toate paginile și același fundal colorat peste tot |
 
-### Exercițiul B — Unde duce linkul?
-Pentru fiecare link, spune ce fișier deschide, dacă te afli în `pagini/hobby.html`:
+### Pasul 1 — Minim
+Fă `index.html` și `despre.html`, fiecare cu scheletul complet, și leagă-le prin linkuri în ambele sensuri.
 
-```text
-<a href="despre.html">...</a>
-<a href="../index.html">...</a>
-<a href="../imagini/pisica.jpg">...</a>
-```
+- [ ] Folderul `Prenume_Nume_W1_L8` are `index.html` și `despre.html`  
+- [ ] Ai un link din `index.html` spre `despre.html` și unul înapoi  
+- [ ] Ai testat ambele linkuri cu Live Server  
 
-### Exercițiul C — Scrie linkul
-Ești în `index.html`. Scrie linkul către `pagini/galerie.html`. Apoi ești în `pagini/galerie.html`. Scrie linkul înapoi către `index.html`.
+### Pasul 2 — Complet
+Transformi paginile într-un mini-site:
 
-### Exercițiul D — Găsește greșelile
-Găsește **3 greșeli** în codul de mai jos:
-
-```text
-<a href="Despre Mine.html">Despre</a>
-<a href="hobby.htm">Hobby</a>
-<a href=index.html>Acasă</a>
-```
-
-### Exercițiul E — Harta ta
-Desenează pe foaie harta unui site cu patru pagini despre un subiect ales de tine. Scrie sub fiecare căsuță numele fișierului.
-
-**Gata când:**  
-- [ ] Folderul `Prenume_Nume_W1_L8` conține cele trei pagini  
-- [ ] Meniul funcționează din toate paginile  
-- [ ] Ai făcut linkul către un `id` dintr-o altă pagină  
-- [ ] Ai răspuns la exercițiile B–E  
+- [ ] Ai a treia pagină, `hobby.html`, cu o listă cu pasiunile tale  
+- [ ] Toate cele trei pagini au același **meniu** cu trei linkuri  
+- [ ] Au **același fundal colorat** și un `<title>` diferit  
+- [ ] Meniul funcționează din toate paginile, în toate sensurile  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Site cu patru pagini
+*Doar dacă ai terminat Complet.*
+
+Faci site-ul mai mare și mai ordonat.
+
 - [ ] Adaugă o a patra pagină, `galerie.html`, cu imagini și legende  
 - [ ] Pune în fiecare pagină un link „Sus”, către `#sus`  
 - [ ] Mută paginile `despre` și `hobby` în folderul `pagini` și repară toate linkurile  
@@ -342,8 +310,7 @@ Desenează pe foaie harta unui site cu patru pagini despre un subiect ales de ti
 3. Linkurile către propriile pagini se scriu cu numele fișierului, fără `https://`.  
 4. Meniul este o linie de linkuri, pusă în toate paginile.  
 5. `../` înseamnă „un folder mai sus”.  
-6. `pagina.html#id` duce direct la o secțiune.  
-7. Dacă un link nu merge, verifică numele, extensia și folderul.
+6. Dacă un link nu merge, verifică numele, extensia și folderul.
 
 ## Quiz scurt
 - Cum se numește prima pagină a unui site?  
@@ -353,7 +320,57 @@ Desenează pe foaie harta unui site cu patru pagini despre un subiect ales de ti
 - De ce pui același meniu în toate paginile?
 
 ## Temă
-Fă un site cu **patru pagini** despre **animalul tău preferat** (sau un alt subiect ales de tine): `index.html`, `aspect.html`, `hrana.html` și `curiozitati.html`. Pune același meniu în toate paginile și o imagine într-una dintre ele. Salvează totul în `Prenume_Nume_W1_L8`.
+1. Fă un site cu **patru pagini** despre **animalul tău preferat** (sau un alt subiect ales de tine): `index.html`, `aspect.html`, `hrana.html` și `curiozitati.html`. Pune același meniu în toate paginile și o imagine într-una dintre ele. Salvează totul în `Prenume_Nume_W1_L8`.  
+2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
+3. **Exemple pentru acasă.** Încearcă amândouă:
+
+**Acasă 1 — Link către o secțiune dintr-o altă pagină.**
+
+Dacă pui un `id` pe un titlu din `despre.html`:
+
+```html
+<h2 id="prieteni">Prietenii mei</h2>
+```
+
+poți face un link direct la el din altă pagină:
+
+```html
+<a href="despre.html#prieteni">Vezi prietenii mei</a>
+```
+
+Scrii numele paginii, apoi `#`, apoi `id`-ul. Browserul deschide pagina și derulează direct la titlu.
+
+**Acasă 2 — Imagini în pagini din subfolder.**
+
+Dacă o pagină este în folderul `pagini` și imaginile sunt în folderul `imagini` de lângă `index.html`, urci un folder:
+
+```html
+<img src="../imagini/pisica.jpg" alt="O pisică gri" width="300">
+```
+
+Aceeași regulă ca la linkuri: `../` înseamnă „un folder mai sus”.
+
+4. **Încă patru exerciții (B–E):**
+
+**B — Unde duce linkul?** Pentru fiecare link, spune ce fișier deschide, dacă te afli în `pagini/hobby.html`:
+
+```text
+<a href="despre.html">...</a>
+<a href="../index.html">...</a>
+<a href="../imagini/pisica.jpg">...</a>
+```
+
+**C — Scrie linkul.** Ești în `index.html`. Scrie linkul către `pagini/galerie.html`. Apoi ești în `pagini/galerie.html`. Scrie linkul înapoi către `index.html`.
+
+**D — Găsește greșelile.** Găsește **3 greșeli** în codul de mai jos:
+
+```text
+<a href="Despre Mine.html">Despre</a>
+<a href="hobby.htm">Hobby</a>
+<a href=index.html>Acasă</a>
+```
+
+**E — Harta ta.** Desenează pe foaie harta unui site cu patru pagini despre un subiect ales de tine. Scrie sub fiecare căsuță numele fișierului.
 
 ## Ce urmează — Lecția 9
 Învățăm să **ținem codul ordonat**: indentare, comentarii și cum folosești DevTools ca să găsești greșelile.
@@ -362,7 +379,7 @@ Fă un site cu **patru pagini** despre **animalul tău preferat** (sau un alt su
 
 ## Răspunsuri
 - **Quiz scurt:** (1) `index.html`; (2) `<a href="despre.html">Despre mine</a>`; (3) „un folder mai sus”; (4) browserul nu a găsit fișierul: verifici numele din `href`, extensia `.html`, folderul, salvarea și bara `/`; (5) ca vizitatorul să poată ajunge oriunde din orice pagină.  
-- **Exercițiul B:** (1) deschide `pagini/despre.html` (același folder); (2) deschide `index.html`, din folderul de deasupra; (3) deschide imaginea `pisica.jpg` din folderul `imagini`, aflat lângă `index.html`.  
-- **Exercițiul C:** din `index.html`: `<a href="pagini/galerie.html">Galerie</a>`; din `pagini/galerie.html`: `<a href="../index.html">Acasă</a>`.  
-- **Exercițiul D:** (1) nume cu spațiu și cu litere mari: `Despre Mine.html` (fișier corect: `despre_mine.html`); (2) `.htm` în loc de `.html`; (3) lipsesc ghilimelele la `href`.  
-- **Exercițiul E:** răspuns liber; verifică numele fișierelor (litere mici, fără spații) și că fiecare pagină e legată de celelalte.
+- **Tema, exercițiul B:** (1) deschide `pagini/despre.html` (același folder); (2) deschide `index.html`, din folderul de deasupra; (3) deschide imaginea `pisica.jpg` din folderul `imagini`, aflat lângă `index.html`.  
+- **Tema, exercițiul C:** din `index.html`: `<a href="pagini/galerie.html">Galerie</a>`; din `pagini/galerie.html`: `<a href="../index.html">Acasă</a>`.  
+- **Tema, exercițiul D:** (1) nume cu spațiu și cu litere mari: `Despre Mine.html` (fișier corect: `despre_mine.html`); (2) `.htm` în loc de `.html`; (3) lipsesc ghilimelele la `href`.  
+- **Tema, exercițiul E:** răspuns liber; verifică numele fișierelor (litere mici, fără spații) și că fiecare pagină e legată de celelalte.

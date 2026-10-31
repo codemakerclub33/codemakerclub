@@ -1,4 +1,5 @@
 # LECȚIA 6 — Lampa mea colorată
+### LED RGB: amestecul culorilor
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 

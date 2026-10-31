@@ -1,8 +1,10 @@
-Lecția șapte din Modulul unu. Culori și fundal.
+Lecția șapte. Pagina mea colorată.
 
 Paginile tale sunt acum alb cu negru. Azi le dai culoare! E primul pas spre limbajul CSS, pe care îl vei învăța pe larg în Modulul trei.
 
-Obiectivul. Minim: o pagină cu fundal colorat, un titlu colorat și un cuvânt colorat într-un paragraf. Complet: în plus text centrat și mărit, o culoare scrisă cu cod, o listă cu elemente colorate diferit și o verificare că tot textul se citește bine.
+Ce facem azi. La final ai o pagină colorată despre ceva ce îți place, cu fundal, titluri colorate, cuvinte colorate, o listă cu elemente colorate diferit și o culoare scrisă cu cod. Este primul pas spre limbajul C-S-S. Înveți atât cum schimbi culorile, cât și cum le alegi, ca textul să se citească bine.
+
+Instrucțiuni noi azi. Style cu color schimbă culoarea textului. Background-color schimbă culoarea fundalului. Între reguli pui punct și virgulă. Span colorează doar un cuvânt. Iar o culoare se poate scrie și cu cod, care începe cu semnul diez.
 
 Primul pas. Atributul style. Îl scrii în tagul de deschidere, între ghilimele. În el pui o regulă, formată din numele proprietății, două puncte, valoarea și punct și virgulă. De exemplu, color, două puncte, red, punct și virgulă, face textul roșu. Atenție: între nume și valoare se pun două puncte, nu semnul egal.
 
@@ -12,14 +14,18 @@ Al treilea pas. Culoarea fundalului se schimbă cu background-color. Pusă în t
 
 Al patrulea pas. Mai multe reguli în același style. Le scrii una după alta, fiecare cu punct și virgulă la final. Dacă uiți punctul și virgula, a doua regulă nu funcționează.
 
-Al cincilea pas. Tagul span. Nu face nimic singur, dar îl folosești ca un marker ca să colorezi doar un cuvânt din paragraf. Mai înveți text-align center, care așază textul la mijloc, și font-size, care schimbă mărimea. Scrie douăzeci și patru px lipit, fără spațiu.
+Al cincilea pas. Tagul span. Nu face nimic singur, dar îl folosești ca un marker ca să colorezi doar un cuvânt din paragraf.
 
 Al șaselea pas. Culorile cu cod. Încep cu semnul diez și au șase caractere: trei perechi, pentru cât roșu, cât verde și cât albastru se amestecă. Nu trebuie să le știi pe de rost. Dacă VS Code arată un pătrățel colorat lângă cod, apasă pe el și alegi culoarea dintr-o paletă.
 
-Al șaptelea pas. Citibilitatea. Textul și fundalul trebuie să fie foarte diferite: unul închis și unul deschis. Galben pe alb nu se citește. Negru pe galben sau alb pe albastru închis se citesc bine. O culoare pusă pe body se aplică și tagurilor din interior, dar un tag își poate avea propria culoare.
+Al șaptelea pas. Citibilitatea. Textul și fundalul trebuie să fie foarte diferite: unul închis și unul deschis. Galben pe alb nu se citește. Negru pe galben sau alb pe albastru închis se citesc bine.
+
+De făcut azi. Minim: o pagină cu fundalul colorat, un titlu colorat și un paragraf cu un cuvânt colorat. Complet: adaugi o culoare scrisă cu cod, o listă cu elemente colorate diferit și verifici că tot textul se citește bine.
+
+Bonus. Curcubeul meu. Faci o pagină cu șapte titluri în culorile curcubeului, încerci alt tip de litere și cauți regula style în DevTools.
 
 Greșeli frecvente. Ai scris semnul egal în loc de două puncte. Ai uitat punctul și virgulă. Ai scris greșit numele culorii. Ai uitat o ghilimea. Ai ales culori prea apropiate sau prea multe.
 
-Tema. O pagină despre jocul sau sportul tău preferat, în trei culori care se potrivesc.
+Tema. O pagină despre jocul sau sportul tău preferat, în trei culori care se potrivesc. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
 
 Recapitulare. Style schimbă aspectul. Color este culoarea textului, iar background-color este fundalul. Succes!

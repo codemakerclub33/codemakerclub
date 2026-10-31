@@ -1,4 +1,5 @@
 # LECȚIA 3 — Lumina mea de veghe
+### Buton și decizii: if și else
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 

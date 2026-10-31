@@ -1,4 +1,5 @@
 # LECȚIA 10 — Panoul meu
+### Reluare: lampa, lampa colorată și soneria într-un panou
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 

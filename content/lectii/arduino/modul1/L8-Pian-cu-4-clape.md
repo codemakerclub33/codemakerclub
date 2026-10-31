@@ -1,4 +1,5 @@
 # LECȚIA 8 — Pianul meu
+### Butoane, note și tablouri
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 

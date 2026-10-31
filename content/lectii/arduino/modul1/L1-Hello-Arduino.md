@@ -1,4 +1,5 @@
 # LECȚIA 1 — LED-ul care clipește
+### LED-ul care clipește: Tinkercad și Arduino Uno
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 

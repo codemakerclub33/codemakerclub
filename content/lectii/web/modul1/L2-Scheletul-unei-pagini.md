@@ -1,4 +1,5 @@
-# LECȚIA 2 — Scheletul unei pagini
+# LECȚIA 2 — Cartea mea de vizită
+### Scheletul unei pagini
 **Modulul 1 · HTML I: Prima mea pagină · 2 ore**  
 **Code Maker Club · HTML Starter**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei știi la ce folosește fiecare parte a scheletului (`DOCTYPE`, `html`, `head`, `title`, `meta`, `body`), știi să scrii singur scheletul și știi cum se așază un tag în interiorul altui tag.  
-**Minim:** scheletul complet, scris de tine, cu un `<title>` și un paragraf în `<body>`.  
-**Ținta orei (Complet):** + un titlu `<h1>`, trei paragrafe despre tine, un comentariu și codul aranjat frumos, cu indentare.
-
-## De ce contează
-Fiecare pagină de pe internet, de la jocuri la magazine, începe cu același schelet. Dacă îl înțelegi, vei ști mereu **unde** să pui fiecare lucru nou, iar greșelile se găsesc mult mai ușor.
+## Ce facem azi
+La final ai scheletul unei pagini scris de tine, fără ajutorul lui `!` + Tab, și o **carte de vizită** în browser: un titlu mare cu numele tău, trei paragrafe despre tine, un comentariu și codul aranjat frumos. Știi la ce folosește fiecare parte a scheletului (`DOCTYPE`, `html`, `head`, `title`, `meta`, `body`) și cum se așază un tag în interiorul altuia. Fiecare pagină de pe internet, de la jocuri la magazine, începe cu același schelet, așa că, dacă îl înțelegi, vei ști mereu **unde** să pui fiecare lucru nou.
 
 ---
 
@@ -24,10 +20,23 @@ Fiecare pagină de pe internet, de la jocuri la magazine, începe cu același sc
 | 0–15 | Recapitulare din lecția 1 · pornim VS Code și Live Server |
 | 15–40 | Scheletul scris de mână · `DOCTYPE` și `html` (**Exemplele 1–3**) |
 | 40–65 | `head`, `title`, `meta` (**Exemplele 4–5**) |
-| 65–85 | `body` și tag-uri în tag-uri (**Exemplele 6–8**) |
-| 85–100 | Indentare și formatare automată (**Exemplul 9**) |
-| 100–115 | Mini-proiect: cartea de vizită (**Exemplul 10**) |
+| 65–90 | Tag-uri în tag-uri · indentare (**Exemplele 6–7**) |
+| 90–115 | Mini-proiect: cartea de vizită (**Exemplul 8**) |
 | 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `<!DOCTYPE html>` | Prima linie: pagină HTML modernă | fără tag de închidere |
+| `<html lang="ro">` | Înfășoară toată pagina | se închide ultimul |
+| `<head>` | Informații despre pagină, care nu se văd | `<title>`, `<meta>` |
+| `<title>` | Numele paginii, din fila browserului | `<title>Pisica Mițu</title>` |
+| `<meta charset="UTF-8">` | Diacriticele se văd corect | ă, â, î, ș, ț |
+| `<body>` | Tot ce se vede în pagină | `<p>Salut!</p>` |
+| **Shift + Alt + F** | Aranjează codul cu indentare | pe Mac **Shift + Option + F** |
 
 ---
 
@@ -147,18 +156,7 @@ Fără această linie, pe unele calculatoare apar semne ciudate în loc de diacr
 
 ## 4. Ce se vede în `body`
 
-### Exemplul 6 — Tot ce se vede, în `body`
-
-```html
-<body>
-  <h1>Ana Pop</h1>
-  <p>Am zece ani.</p>
-</body>
-```
-
-Tot ce vrei să vadă cineva (titluri, text, poze, butoane) scrii între `<body>` și `</body>`. Ce scrii în afara lui nu se va vedea cum vrei.
-
-### Exemplul 7 — Tag-uri în tag-uri
+### Exemplul 6 — Tag-uri în tag-uri
 
 Tag-urile pot sta **unul în altul**, ca păpușile rusești: cea mică încape în cea mare.
 
@@ -181,27 +179,15 @@ Regula: **ultimul tag deschis se închide primul.**
 </body>
 ```
 
-### Exemplul 8 — Tag-uri încrucișate (greșeală)
-
-```html
-<p>Eu sunt <strong>Ana</p></strong>
-```
-
-Aici `</p>` apare **înainte** de `</strong>`, deși `<strong>` s-a deschis după `<p>`. Tag-urile se „încrucișează”, iar browserul se încurcă. Corect este:
-
-```html
-<p>Eu sunt <strong>Ana</strong></p>
-```
-
 **Încearcă tu (4 min)**  
-- [ ] Scrie Exemplul 7 și vezi că „Ana” apare îngroșat  
-- [ ] Încrucișează intenționat două tag-uri, vezi ce se întâmplă și repară  
+- [ ] Scrie Exemplul 6 și vezi că „Ana” apare îngroșat  
+- [ ] Scrie pe foaie ordinea în care se închid `<body>`, `<p>` și `<strong>`  
 
 ---
 
 ## 5. Cod aranjat frumos
 
-### Exemplul 9 — Indentare
+### Exemplul 7 — Indentare
 
 **Indentarea** înseamnă că scrii codul **tras spre dreapta** cu 2 spații pentru fiecare tag aflat în interiorul altuia. Browserul nu o citește, dar **tu** vezi imediat ce stă în ce.
 
@@ -234,7 +220,7 @@ VS Code poate aranja codul pentru tine: apasă **Shift + Alt + F** (pe Mac **Shi
 
 ## 6. Mini-proiect
 
-### Exemplul 10 — „Cartea mea de vizită”
+### Exemplul 8 — „Cartea mea de vizită”
 
 ```html
 <!DOCTYPE html>
@@ -258,78 +244,40 @@ Cartea ta de vizită este despre **tine**: schimbă numele, orașul, hobby-ul ș
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Cartea mea de vizită”
 
-### Exercițiul A — „Cartea mea de vizită” (obligatoriu)
-În `index.html`, scrie **singur** scheletul complet, apoi, în `<body>`:
-- un `<h1>` cu numele tău,
-- **trei** paragrafe `<p>` despre tine,
-- **un comentariu** cu numele tău.
+### Minim vs Complet
 
-Pune în `<title>` numele tău și cuvintele „carte de vizită”. Indentează frumos codul și verifică pagina cu Live Server.
+| | Ce trebuie |
+|--|------------|
+| **Minim** | Scheletul complet, scris de tine, cu un `<title>` și un paragraf în `<body>` |
+| **Complet** | Minim + un `<h1>`, trei paragrafe despre tine, un comentariu și codul aranjat frumos, cu indentare |
 
-### Exercițiul B — Ce apare în filă și ce în pagină?
-Fără să rulezi codul, spune ce apare **în fila browserului** și ce apare **în pagină**:
+### Pasul 1 — Minim
+Șterge tot din `index.html` și scrie singur scheletul complet, fără `!` + Tab, cu un `<title>` și un paragraf în `<body>`.
 
-```html
-<!DOCTYPE html>
-<html lang="ro">
-<head>
-  <title>Clubul meu</title>
-</head>
-<body>
-  <h1>Bine ai venit!</h1>
-  <p>Suntem prieteni.</p>
-</body>
-</html>
-```
+- [ ] Folderul `Prenume_Nume_W1_L2` este deschis în VS Code și are fișierul `index.html`  
+- [ ] Ai scris scheletul singur, fără `!` + Tab  
+- [ ] Pagina se vede în browser, cu Live Server pornit  
 
-### Exercițiul C — Completează scheletul
-Înlocuiește fiecare `____` cu cuvântul potrivit:
+### Pasul 2 — Complet
+Transformi pagina în „Cartea mea de vizită”:
 
-```text
-<!DOCTYPE ____>
-<html lang="___">
-<____>
-  <meta charset="UTF-8">
-  <____>Pagina mea</____>
-</head>
-<____>
-  <p>Salut!</p>
-</body>
-</____>
-```
-
-### Exercițiul D — Găsește greșelile
-Găsește **3 greșeli** în codul de mai jos și repară greșelile:
-
-```text
-<!DOCTYPE html>
-<html lang="ro">
-<head>
-  <title>Pisica mea
-</head>
-<body>
-  <h1>Salut!</h1>
-  <p>Eu sunt <strong>Ana</p></strong>
-</body>
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Pe foaie, într-o propoziție pentru fiecare: la ce folosesc `head`, `body` și `title`?
-
-**Gata când:**  
-- [ ] Folderul și fișierul se numesc corect: `Prenume_Nume_W1_L2` și `index.html`  
-- [ ] Ai scris scheletul complet singur, cu `<title>` pus de tine  
-- [ ] Pagina are un `<h1>`, trei paragrafe și un comentariu  
-- [ ] Codul e indentat frumos și pagina se vede în browser  
-- [ ] Ai răspuns la exercițiile B–E  
+- [ ] În `<title>` ai numele tău și cuvintele „carte de vizită”  
+- [ ] Pagina are un `<h1>` cu numele tău  
+- [ ] Are **trei** paragrafe `<p>` despre tine  
+- [ ] Are **un comentariu** cu numele tău  
+- [ ] Codul e indentat frumos (cu mâna sau cu **Shift + Alt + F**)  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Cartea de vizită a unui personaj
+*Doar dacă ai terminat Complet.*
+
+Inventezi un personaj și îi faci cartea de vizită.
+
 - [ ] Fă o a doua „carte de vizită”, pentru un personaj inventat (un pirat, o vrăjitoare, un robot)  
-- [ ] Scrie un titlu `<title>` de 3 feluri diferite și alege titlul cel mai bun  
+- [ ] Scrie un `<title>` de 3 feluri diferite și alege titlul cel mai bun  
 - [ ] Deschide DevTools cu **F12**, fila **Elements**, și găsește `head` și `body` ale paginii tale  
 - [ ] Deschide „Vezi sursa” (Ctrl + U) pe o pagină din internet și caută `<title>` și `lang=`  
 
@@ -363,7 +311,80 @@ Pe foaie, într-o propoziție pentru fiecare: la ce folosesc `head`, `body` și 
 - Ce înseamnă „tag-uri încrucișate”?
 
 ## Temă
-Fă încă o pagină `index.html` în folderul `Prenume_Nume_W1_L2`: o carte de vizită pentru **un prieten sau pentru un animal** (cu schelet scris de tine, un `<h1>`, trei paragrafe și un `<title>` potrivit). Adu pagina la ora următoare.
+1. Fă încă o pagină `index.html` în folderul `Prenume_Nume_W1_L2`: o carte de vizită pentru **un prieten sau pentru un animal** (cu schelet scris de tine, un `<h1>`, trei paragrafe și un `<title>` potrivit). Adu pagina la ora următoare.  
+2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
+3. **Exemple pentru acasă.** Încearcă amândouă:
+
+**Acasă 1 — Tot ce se vede, în `body`.**
+
+```html
+<body>
+  <h1>Ana Pop</h1>
+  <p>Am zece ani.</p>
+</body>
+```
+
+Tot ce vrei să vadă cineva (titluri, text, poze, butoane) scrii între `<body>` și `</body>`. Ce scrii în afara lui nu se va vedea cum vrei.
+
+**Acasă 2 — Tag-uri încrucișate (greșeală)**
+
+```html
+<p>Eu sunt <strong>Ana</p></strong>
+```
+
+Aici `</p>` apare **înainte** de `</strong>`, deși `<strong>` s-a deschis după `<p>`. Tag-urile se „încrucișează”, iar browserul se încurcă. Corect este:
+
+```html
+<p>Eu sunt <strong>Ana</strong></p>
+```
+
+4. **Încă patru exerciții (B–E):**
+
+**B — Ce apare în filă și ce în pagină?** Fără să rulezi codul, spune ce apare **în fila browserului** și ce apare **în pagină**:
+
+```html
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <title>Clubul meu</title>
+</head>
+<body>
+  <h1>Bine ai venit!</h1>
+  <p>Suntem prieteni.</p>
+</body>
+</html>
+```
+
+**C — Completează scheletul.** Înlocuiește fiecare `____` cu cuvântul potrivit:
+
+```text
+<!DOCTYPE ____>
+<html lang="___">
+<____>
+  <meta charset="UTF-8">
+  <____>Pagina mea</____>
+</head>
+<____>
+  <p>Salut!</p>
+</body>
+</____>
+```
+
+**D — Găsește greșelile.** Găsește **3 greșeli** în codul de mai jos și repară greșelile:
+
+```text
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <title>Pisica mea
+</head>
+<body>
+  <h1>Salut!</h1>
+  <p>Eu sunt <strong>Ana</p></strong>
+</body>
+```
+
+**E — Explică cu cuvintele tale.** Pe foaie, într-o propoziție pentru fiecare: la ce folosesc `head`, `body` și `title`?
 
 ## Ce urmează — Lecția 3
 Învățăm să scriem **titluri de mărimi diferite** (`h1` … `h6`) și să împărțim textul în **paragrafe**. Paginile tale încep să arate ca niște pagini adevărate.
@@ -372,7 +393,7 @@ Fă încă o pagină `index.html` în folderul `Prenume_Nume_W1_L2`: o carte de 
 
 ## Răspunsuri
 - **Quiz scurt:** (1) `head`; (2) în fila browserului (și în lista de file deschise sau la favorite); (3) `</html>`; (4) spune că pagina este scrisă în limba română; (5) tag-uri închise în ordine greșită, de exemplu `<p>Eu sunt <strong>Ana</p></strong>`; corect este ca ultimul tag deschis să se închidă primul.  
-- **Exercițiul B:** în filă: „Clubul meu”. În pagină: „Bine ai venit!” (titlu mare) și „Suntem prieteni.”  
-- **Exercițiul C:** `html`, `ro`, `head`, `title`, `title`, `body`, `html`.  
-- **Exercițiul D:** (1) lipsește `</title>`; (2) tag-uri încrucișate: `</p></strong>` trebuie `</strong></p>`; (3) lipsește `</html>` la final.  
-- **Exercițiul E:** `head` = informații despre pagină care nu se văd; `body` = tot ce se vede în pagină; `title` = numele paginii din fila browserului.
+- **Tema, exercițiul B:** în filă: „Clubul meu”. În pagină: „Bine ai venit!” (titlu mare) și „Suntem prieteni.”  
+- **Tema, exercițiul C:** `html`, `ro`, `head`, `title`, `title`, `body`, `html`.  
+- **Tema, exercițiul D:** (1) lipsește `</title>`; (2) tag-uri încrucișate: `</p></strong>` trebuie `</strong></p>`; (3) lipsește `</html>` la final.  
+- **Tema, exercițiul E:** `head` = informații despre pagină care nu se văd; `body` = tot ce se vede în pagină; `title` = numele paginii din fila browserului.

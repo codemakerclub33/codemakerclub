@@ -1,8 +1,10 @@
-Lecția unu din Modulul unu. Ce e o pagină web? VS Code și Live Server.
+Lecția unu. Prima mea pagină.
 
-Azi afli cum funcționează o pagină web, pregătești programul în care vei scrie cod și îți faci prima pagină, pe care o vezi chiar în browserul tău.
+Azi afli cum funcționează o pagină web, pregătești programul în care vei scrie cod și îți faci prima pagină, pe care o vezi chiar în browserul tău. Proiectul se numește Prima mea pagină. Folderul se numește: Prenume, linie jos, Nume, linie jos, W unu, linie jos, L unu.
 
-Obiectivul. Minim: o pagină cu scheletul complet și textul „Salut, lume”, care se vede în browser. Complet: un titlu în fila browserului, un titlu mare cu numele tău, trei propoziții despre tine și un comentariu în cod.
+Ce facem azi. La final ai prima ta pagină web, cu un titlu mare cu numele tău, trei propoziții despre tine și un comentariu, deschisă în browser cu Live Server. Știi ce este o pagină web și din ce e făcută, ai VS Code pregătit și un folder de proiect cu un fișier index punct html. Aproape tot ce vezi pe internet, de la jocuri la magazine online, este o pagină web, iar orice pagină începe cu un fișier mic de text, scris de cineva ca tine.
+
+Instrucțiuni noi azi. Semnul exclamării urmat de Tab face ca VS Code să scrie singur scheletul paginii. Tagul p face un paragraf. Tagul h unu face titlul mare. Tagul br rupe rândul și nu are tag de închidere. Un comentariu se scrie între semnul mai mic, semnul exclamării, două liniuțe și două liniuțe, semnul mai mare, iar browserul îl ignoră. Control S salvează, iar Live Server reîncarcă pagina.
 
 Primul pas. Ce este o pagină web. O pagină web este un fișier pe care browserul îl citește și îl desenează pe ecran. Browserul cere pagina, un alt calculator, numit server, o trimite, iar browserul o afișează. Pagina are trei limbaje care lucrează împreună. H-T-M-L este scheletul, adică ce se află pe pagină. C-S-S sunt hainele, adică culorile și aspectul. JavaScript este mișcarea, adică ce se întâmplă când apeși un buton. În acest modul învățăm H-T-M-L.
 
@@ -10,14 +12,20 @@ Al doilea pas. Pregătim VS Code. Este programul gratuit în care scriem codul. 
 
 Al treilea pas. Folderul proiectului. Creezi un folder cu numele tău, deschizi folderul în VS Code și faci un fișier numit index punct html. În nume nu pui spații, diacritice sau majuscule. Pe Windows, activează afișarea extensiilor, ca să nu ai un fișier numit index punct html punct t-x-t.
 
-Al patrulea pas. Prima pagină completă. În fișierul gol scrii semnul exclamării și apeși Tab. VS Code scrie singur scheletul paginii: doctype, html, head, meta, title și body. Textul care se vede în pagină îl scrii doar între body și bară body. În title scrii numele paginii, care apare în fila browserului. Apoi scrii un paragraf, adică semnul mai mic, litera p, semnul mai mare, textul și tagul de închidere cu bară. Salvezi cu Control S, pe Mac Command S. Click dreapta pe fișier și alegi Open with Live Server. Dacă nu salvezi, nu se schimbă nimic în browser.
+Al patrulea pas. Prima pagină completă. Exemplul unu. În fișierul gol scrii semnul exclamării și apeși Tab. VS Code scrie singur scheletul paginii: doctype, html, head, meta, title și body. Textul care se vede în pagină îl scrii doar între body și bară body. În title scrii numele paginii, care apare în fila browserului. Apoi scrii un paragraf cu textul Salut, lume, și salvezi cu Control S, pe Mac Command S. Exemplul doi. Click dreapta pe fișier și alegi Open with Live Server. Exemplul trei. Schimbi textul și salvezi, iar browserul se schimbă singur. Dacă nu salvezi, nu se schimbă nimic.
 
-Al cincilea pas. Titlu, rânduri și comentarii. Titlul mare se face cu h unu. Enter nu face rând nou în H-T-M-L. Pentru rând nou folosești br sau un paragraf nou. Un comentariu se scrie între semnul mai mic, semnul exclamării, două liniuțe și două liniuțe, semnul mai mare. Browserul îl ignoră.
+Al cincilea pas. Paragrafe, titlu, rânduri și comentarii. Exemplul patru. Fiecare paragraf nou are tagul lui p. Exemplul cinci. Titlul mare se face cu h unu. Exemplul șase. Enter nu face rând nou în H-T-M-L. Pentru rând nou folosești br sau un paragraf nou. Exemplul șapte. Un comentariu este o notiță pentru tine, pe care browserul o ignoră.
 
-Al șaselea pas. Privește o pagină reală. Cu Control U, pe Mac Command Option U, vezi codul unei pagini. Vei găsi aceleași taguri pe care le-ai scris azi.
+Al șaselea pas. Mini-proiect. Exemplul opt. Faci un mic cap de pagină despre tine: un titlu mare cu numele tău și trei propoziții.
+
+De făcut azi. Minim: pagină cu scheletul complet și textul Salut, lume, care se vede în browser. Complet: adaugi un titlu în fila browserului, un titlu mare cu numele tău, trei paragrafe despre tine și un comentariu cu numele tău.
+
+Bonus. Detectivul de pagini. Scrii despre mâncarea ta preferată, cauți paragraful în DevTools cu F doisprezece și găsești tagul title într-o pagină reală.
 
 Greșeli frecvente. Textul scris în head, nu în body. Fișierul salvat ca index punct html punct t-x-t. Nu ai salvat. Ai pus spații în numele fișierului. Ai deschis doar un fișier, nu folderul. Ai uitat tagul de închidere sau ai scris bara greșit.
 
-Tema. O pagină despre animalul tău preferat, cu un titlu, patru paragrafe și un comentariu.
+Recapitulare. O pagină web este citită de browser. H-T-M-L este scheletul. Salvezi cu Control S și Live Server o reîncarcă.
 
-Recapitulare. O pagină web este citită de browser. H-T-M-L este scheletul. Salvezi cu Control S și Live Server o reîncarcă. Succes!
+Tema. O pagină despre animalul tău preferat, cu un titlu, patru paragrafe și un comentariu. Mai refaci patru exemple, încerci Vezi sursa pe o pagină reală și rezolvi încă patru exerciții.
+
+Ce urmează. În lecția doi cunoaștem scheletul bucată cu bucată. Succes!

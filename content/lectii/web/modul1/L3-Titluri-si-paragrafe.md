@@ -1,4 +1,5 @@
-# LECȚIA 3 — Titluri și paragrafe
+# LECȚIA 3 — Povestea mea într-o pagină
+### Titluri și paragrafe
 **Modulul 1 · HTML I: Prima mea pagină · 2 ore**  
 **Code Maker Club · HTML Starter**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei știi să folosești cele șase titluri (`h1` … `h6`), știi de ce o pagină are un singur `h1`, scrii paragrafe, rupi un rând cu `<br>`, tragi o linie cu `<hr>` și știi să scrii în pagină semnele `<` și `>`.  
-**Minim:** o pagină cu un `<h1>`, două titluri `<h2>` și câte un paragraf sub fiecare.  
-**Ținta orei (Complet):** + un titlu `<h3>`, o linie `<hr>`, o poezie cu `<br>` și un paragraf în care apare un semn special.
-
-## De ce contează
-Titlurile sunt ca **etichetele de pe sertarele unui dulap**: îți spun repede ce găsești în fiecare. Cititorii, dar și programele care citesc pagina cu voce tare pentru cei care nu văd, se orientează după ele. Un text împărțit în titluri și paragrafe se citește mult mai ușor.
+## Ce facem azi
+La final ai o **poveste într-o pagină**, cu un titlu mare, capitole cu titluri mai mici, paragrafe, o linie despărțitoare și o poezie. Știi cele șase titluri (`h1` … `h6`), de ce o pagină are un singur `h1`, cum scrii paragrafe și cum rupi un rând cu `<br>`. Titlurile sunt ca **etichetele de pe sertarele unui dulap**: îți spun repede ce găsești în fiecare, iar un text împărțit în titluri și paragrafe se citește mult mai ușor.
 
 ---
 
@@ -23,10 +19,21 @@ Titlurile sunt ca **etichetele de pe sertarele unui dulap**: îți spun repede c
 |--------|----------|
 | 0–15 | Recapitulare · scheletul scris singur |
 | 15–45 | Cele șase titluri · un singur `h1` · ordinea titlurilor (**Exemplele 1–3**) |
-| 45–70 | Paragrafe, spații și rânduri noi (**Exemplele 4–6**) |
-| 70–85 | Linia `<hr>` și semnele speciale (**Exemplele 7–9**) |
-| 85–110 | Mini-proiect: povestea mea (**Exemplul 10**) |
+| 45–65 | Paragrafe și rânduri noi (**Exemplele 4–5**) |
+| 65–85 | Linia `<hr>` · titluri și paragrafe împreună (**Exemplele 6–7**) |
+| 85–110 | Mini-proiect: povestea mea (**Exemplul 8**) |
 | 110–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `<h1>` … `<h6>` | Titluri, de la cel mai important la cel mai puțin | `<h2>Capitolul 1</h2>` |
+| `<p>` | Un paragraf de text | `<p>A fost odată...</p>` |
+| `<br>` | Rupe rândul (fără tag de închidere) | versuri într-un singur `<p>` |
+| `<hr>` | Linie despărțitoare între două părți | `<hr>` |
 
 ---
 
@@ -116,17 +123,7 @@ Ordinea corectă merge **pe rând**: după `h1` vine `h2`, după `h2` vine `h3`.
 
 Fiecare `<p>` începe pe un rând nou și are **puțin spațiu** deasupra și dedesubt. Dacă textul este lung, browserul îl rupe singur la marginea ferestrei. Schimbă mărimea ferestrei și vei vedea cum se mută cuvintele.
 
-### Exemplul 5 — Spațiile în plus se ignoră
-
-```html
-<p>Salut,           lume!</p>
-<p>Prima propoziție.
-   A doua propoziție.</p>
-```
-
-Oricâte spații sau Enter-uri pui între cuvinte, browserul le arată ca **un singur spațiu**. Dacă vrei un rând nou, ai nevoie de un tag.
-
-### Exemplul 6 — Rând nou cu `<br>`
+### Exemplul 5 — Rând nou cu `<br>`
 
 ```html
 <p>
@@ -143,13 +140,13 @@ Oricâte spații sau Enter-uri pui între cuvinte, browserul le arată ca **un s
 
 **Încearcă tu (4 min)**  
 - [ ] Scrie 2 paragrafe despre tine și schimbă lățimea ferestrei browserului  
-- [ ] Scrie Exemplul 6 și compară cu o variantă fără `<br>`  
+- [ ] Scrie Exemplul 5 și compară cu o variantă fără `<br>`  
 
 ---
 
-## 4. Linii și semne speciale
+## 4. Linia despărțitoare și titlurile împreună
 
-### Exemplul 7 — O linie despărțitoare: `<hr>`
+### Exemplul 6 — O linie despărțitoare: `<hr>`
 
 ```html
 <h2>Capitolul 1</h2>
@@ -161,7 +158,7 @@ Oricâte spații sau Enter-uri pui între cuvinte, browserul le arată ca **un s
 
 `<hr>` trasează o **linie orizontală** între două părți ale paginii („hr” vine de la „horizontal rule”). Nu are tag de închidere.
 
-### Exemplul 8 — Titluri și paragrafe împreună
+### Exemplul 7 — Titluri și paragrafe împreună
 
 ```html
 <h1>Excursia mea</h1>
@@ -175,34 +172,15 @@ Oricâte spații sau Enter-uri pui între cuvinte, browserul le arată ca **un s
 
 Observă: după fiecare titlu urmează text (un paragraf) sau un titlu mai mic. Un titlu fără nimic sub el rămâne gol și nu ajută pe nimeni.
 
-### Exemplul 9 — Semne speciale: `<` și `>`
-
-Ce se întâmplă dacă vrei să scrii **în pagină** un tag, de exemplu `<p>`? Browserul crede că e un tag adevărat și nu îl afișează. Folosim coduri speciale:
-
-| Vrei să apară | Scrii în cod |
-|---------------|--------------|
-| `<` | `&lt;` |
-| `>` | `&gt;` |
-| `&` | `&amp;` |
-
-```html
-<p>Tagul pentru paragraf este &lt;p&gt;.</p>
-<p>Ana &amp; Mihai sunt prieteni.</p>
-```
-
-În browser apare: **Tagul pentru paragraf este `<p>`.** și **Ana & Mihai sunt prieteni.**
-
-> Codul începe cu `&` și se termină cu `;` (punct și virgulă). „lt” vine de la „less than” (mai mic), iar „gt” de la „greater than” (mai mare).
-
 **Încearcă tu (4 min)**  
-- [ ] Scrie Exemplul 7 și vezi linia dintre capitole  
-- [ ] Scrie o propoziție în care să apară `<h1>` ca text, nu ca titlu  
+- [ ] Pune o linie `<hr>` între două părți ale paginii tale  
+- [ ] Scrie Exemplul 7 și schimbă titlurile și paragrafele cu ale tale  
 
 ---
 
 ## 5. Mini-proiect
 
-### Exemplul 10 — „Povestea mea într-o pagină”
+### Exemplul 8 — „Povestea mea într-o pagină”
 
 ```html
 <!DOCTYPE html>
@@ -243,58 +221,40 @@ Povestea ta trebuie să fie despre **tine**: schimbă toate textele cu ale tale.
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Povestea mea într-o pagină”
 
-### Exercițiul A — „Povestea mea într-o pagină” (obligatoriu)
-Pe scheletul complet, scrie în `<body>`:
-- un `<h1>` cu titlul povestirii,
-- cel puțin **două** titluri `<h2>`, fiecare cu un paragraf,
-- **un** titlu `<h3>`, cu paragraful lui,
-- o linie `<hr>` între două părți,
-- o poezie scurtă, cu `<br>`.
+### Minim vs Complet
 
-Verifică pagina cu Live Server.
+| | Ce trebuie |
+|--|------------|
+| **Minim** | O pagină cu un `<h1>`, două titluri `<h2>` și câte un paragraf sub fiecare |
+| **Complet** | Minim + un titlu `<h3>`, o linie `<hr>` și o poezie cu `<br>` |
 
-### Exercițiul B — Ordinea titlurilor
-Pune titlurile în ordinea corectă, de la cel mai important la cel mai puțin important, pentru o pagină despre sporturi:
+### Pasul 1 — Minim
+Pe scheletul complet, scrie în `<body>` un `<h1>` cu titlul povestirii, două titluri `<h2>` și câte un paragraf sub fiecare.
 
-```text
-Fotbal în echipă (h3)
-Sporturile mele (h1)
-Antrenamentul de luni (h4)
-Sporturi de echipă (h2)
-```
+- [ ] Folderul `Prenume_Nume_W1_L3` are `index.html` cu scheletul complet  
+- [ ] Titlurile merg în ordine: `h1`, apoi `h2`  
+- [ ] Pagina se vede în browser, cu Live Server pornit  
 
-### Exercițiul C — Rând nou sau paragraf nou?
-Pentru fiecare, alege `<br>` sau `<p>`: (1) un vers de poezie; (2) două idei diferite într-un text; (3) o adresă pe două rânduri.
+### Pasul 2 — Complet
+Îmbunătățești povestea:
 
-### Exercițiul D — Găsește greșelile
-Găsește **3 greșeli** în codul de mai jos și repară greșelile:
-
-```text
-<h1>Animalele mele</h1>
-<h4>Pisica</h4>
-<p>Pisica mea doarme mult.
-<h2>Câinele</h2>
-<p>Câinele meu aleargă.</p>
-<h1>Sfârșit</h1>
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: de ce nu folosim `h1` pentru orice text care trebuie să arate mare?
-
-**Gata când:**  
-- [ ] Folderul și fișierul se numesc corect: `Prenume_Nume_W1_L3` și `index.html`  
-- [ ] Pagina are un `<h1>`, titluri `<h2>` și `<h3>` în ordine bună  
-- [ ] Are paragrafe, o linie `<hr>` și o poezie cu `<br>`  
-- [ ] Ai răspuns la exercițiile B–E  
+- [ ] Are un titlu `<h3>`, cu paragraful lui  
+- [ ] Are o linie `<hr>` între două părți  
+- [ ] Are o poezie scurtă, cu fiecare vers pe rând nou (`<br>`)  
+- [ ] Nu sari peste niveluri (de la `h1` la `h2`, apoi la `h3`)  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Regulile jocului meu
+*Doar dacă ai terminat Complet.*
+
+Scrii o pagină care arată ca o carte.
+
 - [ ] Scrie o pagină cu **regulile jocului tău preferat**, cu titluri și paragrafe  
 - [ ] Încearcă și `<h5>` și `<h6>` într-o pagină cu cuprins de 4 niveluri  
-- [ ] Scrie în pagină, ca text, tagurile `<h1>` și `</h1>`, folosind `&lt;` și `&gt;`  
+- [ ] Scrie în pagină, ca text, tagurile `<h1>` și `</h1>`, folosind `&lt;` și `&gt;` (vezi Acasă 2)  
 - [ ] Deschide DevTools cu **F12**, fila **Elements**, și caută titlurile paginii tale  
 
 ---
@@ -314,19 +274,74 @@ Pe foaie: de ce nu folosim `h1` pentru orice text care trebuie să arate mare?
 1. Titlurile merg de la `h1` (cel mai important) la `h6`.  
 2. O pagină are, de obicei, **un singur `h1`**.  
 3. Titlurile se așază ca un **cuprins**, în ordine, fără sărituri.  
-4. `<p>` face paragrafe; spațiile și Enter-urile în plus se ignoră.  
+4. `<p>` face paragrafe.  
 5. `<br>` rupe rândul; `<hr>` trasează o linie.  
-6. Pentru `<`, `>` și `&` în text scrii `&lt;`, `&gt;`, `&amp;`.
 
 ## Quiz scurt
 - Care titlu este cel mai mare?  
 - Câte `h1` pui de obicei într-o pagină?  
 - Ce face `<br>`?  
-- Cum scrii în pagină semnul `<`?  
 - Unde pui mai multe idei diferite: în același paragraf sau în paragrafe noi?
 
 ## Temă
-Fă o pagină `index.html` despre **un loc unde ai fost în vacanță** (sau pe care ai vrea să îl vezi): un `<h1>`, cel puțin trei titluri `<h2>`, paragrafe sub ele și o linie `<hr>`. Pune pagina în folderul `Prenume_Nume_W1_L3`.
+1. Fă o pagină `index.html` despre **un loc unde ai fost în vacanță** (sau pe care ai vrea să îl vezi): un `<h1>`, cel puțin trei titluri `<h2>`, paragrafe sub ele și o linie `<hr>`. Pune pagina în folderul `Prenume_Nume_W1_L3`.  
+2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
+3. **Exemple pentru acasă.** Încearcă amândouă:
+
+**Acasă 1 — Spațiile în plus se ignoră.**
+
+```html
+<p>Salut,           lume!</p>
+<p>Prima propoziție.
+   A doua propoziție.</p>
+```
+
+Oricâte spații sau Enter-uri pui între cuvinte, browserul le arată ca **un singur spațiu**. Dacă vrei un rând nou, ai nevoie de un tag.
+
+**Acasă 2 — Semne speciale: `<` și `>`.**
+
+Ce se întâmplă dacă vrei să scrii **în pagină** un tag, de exemplu `<p>`? Browserul crede că e un tag adevărat și nu îl afișează. Folosim coduri speciale:
+
+| Vrei să apară | Scrii în cod |
+|---------------|--------------|
+| `<` | `&lt;` |
+| `>` | `&gt;` |
+| `&` | `&amp;` |
+
+```html
+<p>Tagul pentru paragraf este &lt;p&gt;.</p>
+<p>Ana &amp; Mihai sunt prieteni.</p>
+```
+
+În browser apare: **Tagul pentru paragraf este `<p>`.** și **Ana & Mihai sunt prieteni.**
+
+> Codul începe cu `&` și se termină cu `;` (punct și virgulă). „lt” vine de la „less than” (mai mic), iar „gt” de la „greater than” (mai mare).
+
+4. **Încă patru exerciții (B–E):**
+
+**B — Ordinea titlurilor.** Pune titlurile în ordinea corectă, de la cel mai important la cel mai puțin important, pentru o pagină despre sporturi:
+
+```text
+Fotbal în echipă (h3)
+Sporturile mele (h1)
+Antrenamentul de luni (h4)
+Sporturi de echipă (h2)
+```
+
+**C — Rând nou sau paragraf nou?** Pentru fiecare, alege `<br>` sau `<p>`: (1) un vers de poezie; (2) două idei diferite într-un text; (3) o adresă pe două rânduri.
+
+**D — Găsește greșelile.** Găsește **3 greșeli** în codul de mai jos și repară greșelile:
+
+```text
+<h1>Animalele mele</h1>
+<h4>Pisica</h4>
+<p>Pisica mea doarme mult.
+<h2>Câinele</h2>
+<p>Câinele meu aleargă.</p>
+<h1>Sfârșit</h1>
+```
+
+**E — Explică cu cuvintele tale.** Pe foaie: de ce nu folosim `h1` pentru orice text care trebuie să arate mare?
 
 ## Ce urmează — Lecția 4
 Învățăm să facem textul **îngroșat** și **înclinat** și să scriem **liste** cu buline și cu numere, ca într-o rețetă sau într-un top 5.
@@ -334,9 +349,9 @@ Fă o pagină `index.html` despre **un loc unde ai fost în vacanță** (sau pe 
 ---
 
 ## Răspunsuri
-- **Quiz scurt:** (1) `h1`; (2) de obicei unul singur; (3) rupe rândul, dar rămâi în același paragraf (nu are tag de închidere); (4) `&lt;`; (5) în paragrafe noi, câte un `<p>` pentru fiecare idee.  
-- **Dacă ritmul clasei este lent:** Exemplul 9 (semnele speciale `<` și `>`) este opțional; îl puteți face doar cu grupele rapide.  
-- **Exercițiul B:** `Sporturile mele (h1)`, `Sporturi de echipă (h2)`, `Fotbal în echipă (h3)`, `Antrenamentul de luni (h4)`.  
-- **Exercițiul C:** (1) `<br>`; (2) `<p>` nou; (3) `<br>`.  
-- **Exercițiul D:** (1) `h4` ar trebui să fie `h2` (nu se sare peste niveluri); (2) lipsește `</p>` după „doarme mult.”; (3) al doilea `<h1>` — pagina are un singur `h1` (se poate înlocui cu `<h2>`).  
-- **Exercițiul E:** titlul se alege după importanță, nu după mărime; programele care citesc pagina cu voce tare și cei care o parcurg repede se orientează după titluri; mărimea se schimbă cu CSS.
+- **Quiz scurt:** (1) `h1`; (2) de obicei unul singur; (3) rupe rândul, dar rămâi în același paragraf (nu are tag de închidere); (4) în paragrafe noi, câte un `<p>` pentru fiecare idee.  
+- **Dacă ritmul clasei este lent:** puteți sări peste Exemplul 6 (titluri și paragrafe împreună), ca să rămână timp pentru mini-proiect.  
+- **Tema, exercițiul B:** `Sporturile mele (h1)`, `Sporturi de echipă (h2)`, `Fotbal în echipă (h3)`, `Antrenamentul de luni (h4)`.  
+- **Tema, exercițiul C:** (1) `<br>`; (2) `<p>` nou; (3) `<br>`.  
+- **Tema, exercițiul D:** (1) `h4` ar trebui să fie `h2` (nu se sare peste niveluri); (2) lipsește `</p>` după „doarme mult.”; (3) al doilea `<h1>` — pagina are un singur `h1` (se poate înlocui cu `<h2>`).  
+- **Tema, exercițiul E:** titlul se alege după importanță, nu după mărime; programele care citesc pagina cu voce tare și cei care o parcurg repede se orientează după titluri; mărimea se schimbă cu CSS.

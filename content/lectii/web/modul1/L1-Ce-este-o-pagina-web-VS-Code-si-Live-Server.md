@@ -1,4 +1,5 @@
-# LECȚIA 1 — Ce e o pagină web? VS Code și Live Server
+# LECȚIA 1 — Prima mea pagină
+### Pagină web, VS Code și Live Server
 **Modulul 1 · HTML I: Prima mea pagină · 2 ore**  
 **Code Maker Club · HTML Starter**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei știi ce este o pagină web și din ce e făcută, ai VS Code pregătit, ai creat un folder de proiect cu un fișier `index.html` și ți-ai văzut pagina în browser cu **Live Server**.  
-**Minim:** o pagină cu scheletul complet și textul „Salut, lume!” care se vede în browser.  
-**Ținta orei (Complet):** + un titlu în fila browserului, un titlu mare cu numele tău, trei propoziții despre tine, un comentariu în cod și pagina deschisă cu Live Server.
-
-## De ce contează
-Aproape tot ce vezi pe internet, de la jocuri la magazine online, este o pagină web. Orice pagină începe cu un fișier mic de text, scris de cineva ca tine. Azi scrii primul tău fișier și îl vezi „prins la viață” într-un browser.
+## Ce facem azi
+La final ai prima ta pagină web, cu un titlu mare cu numele tău, trei propoziții despre tine și un comentariu, deschisă în browser cu **Live Server**. Știi ce este o pagină web și din ce e făcută, ai VS Code pregătit și un folder de proiect cu un fișier `index.html`. Aproape tot ce vezi pe internet, de la jocuri la magazine online, este o pagină web, iar orice pagină începe cu un fișier mic de text, scris de cineva ca tine.
 
 ---
 
@@ -24,9 +20,22 @@ Aproape tot ce vezi pe internet, de la jocuri la magazine online, este o pagină
 | 0–20 | Ce e o pagină web: HTML, CSS, JavaScript · cum ajunge o pagină la tine |
 | 20–45 | Instalăm sau pornim VS Code · Live Server · folderul de proiect |
 | 45–70 | Primul fișier `index.html` cu schelet complet · Live Server (**Exemplele 1–3**) |
-| 70–95 | Tag-uri, rânduri noi, comentarii (**Exemplele 4–7**) |
-| 95–110 | „Vezi sursa” pe o pagină reală · greșeli (**Exemplele 8–9**) |
-| 110–120 | Mini-proiect (**Exemplul 10**), recap și temă |
+| 70–100 | Paragrafe, titlu, rânduri noi, comentarii (**Exemplele 4–7**) |
+| 100–115 | Mini-proiect (**Exemplul 8**) |
+| 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `!` apoi **Tab** | VS Code scrie scheletul paginii | în `index.html` gol |
+| `<p>...</p>` | Un paragraf de text | `<p>Salut, lume!</p>` |
+| `<h1>...</h1>` | Titlul mare al paginii | `<h1>Despre mine</h1>` |
+| `<br>` | Rupe rândul (fără tag de închidere) | `Prima linie<br>A doua` |
+| `<!-- ... -->` | Comentariu, ignorat de browser | `<!-- notiță -->` |
+| **Ctrl + S** | Salvează, iar Live Server reîncarcă pagina | pe Mac **Cmd + S** |
 
 ---
 
@@ -241,43 +250,9 @@ Comentariile **nu apar** în pagină. Te ajută să nu te încurci când codul c
 
 ---
 
-## 6. Cum arată paginile reale?
+## 6. Mini-proiect
 
-### Exemplul 8 — „Vezi sursa” pe o pagină reală
-
-Orice pagină din lume își arată codul HTML. Încearcă:
-1. Deschide o pagină simplă, de exemplu `example.com`.  
-2. Apasă **Ctrl + U** (pe Mac **Cmd + Option + U**).  
-3. Se deschide o filă cu **codul paginii**. Caută `<h1>` și `<p>`: sunt aceleași tag-uri pe care le-ai scris azi!  
-
-Poți deschide și **DevTools** cu **F12** (pe Mac **Cmd + Option + I**). Mai târziu o să folosești DevTools des.
-
-> Poți **doar să te uiți** la codul altor pagini. Nu schimbi nimic pe internet.
-
-### Exemplul 9 — Ce se întâmplă când greșim?
-
-Scrie un tag de închidere **fără liniuța înclinată**:
-
-```html
-<h1>Salut, lume!<h1>
-<p>Eu sunt Ana.</p>
-```
-
-Salvează. Browserul nu spune „ai greșit”; el doar încearcă să se descurce. Aici, **textul de după titlu devine și el mare**, pentru că primul `<h1>` nu s-a închis cum trebuie.
-
-Reparația: schimbă al doilea `<h1>` în `</h1>`, salvează și pagina revine la normal.
-
-> Dacă pagina nu arată cum vrei: **verifică dacă fiecare tag deschis are și tagul lui de închidere** (cu `/`) și dacă ai **salvat**.
-
-**Încearcă tu (4 min)**  
-- [ ] Găsești `<h1>` în „Vezi sursa” pe `example.com`  
-- [ ] Strici un tag intenționat, vezi ce se întâmplă și îl repari  
-
----
-
-## 7. Mini-proiect
-
-### Exemplul 10 — „Prima mea pagină”
+### Exemplul 8 — „Prima mea pagină”
 
 ```html
 <!-- Prima mea pagină · Ana Pop -->
@@ -293,52 +268,38 @@ Pagina ta trebuie să arate ca un mic „cap de pagină” despre tine: un titlu
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Prima mea pagină”
 
-### Exercițiul A — „Prima mea pagină” (obligatoriu)
-Scrie în `index.html`, pe scheletul complet (între `<body>` și `</body>`):
-- un `<title>` cu numele paginii tale,
-- un `<h1>` cu **numele tău**,
-- **trei** paragrafe `<p>` despre tine,
-- **un comentariu** cu numele tău și data de azi.
+### Minim vs Complet
 
-Deschide pagina cu **Live Server** și verifică în browser.
+| | Ce trebuie |
+|--|------------|
+| **Minim** | Pagină cu scheletul complet și textul „Salut, lume!” care se vede în browser |
+| **Complet** | Minim + `<title>`, un `<h1>` cu numele tău, trei paragrafe despre tine și un comentariu |
 
-### Exercițiul B — Ce vede browserul?
-Fără să rulezi, spune ce apare în browser:
+### Pasul 1 — Minim
+Scrie în `index.html` scheletul complet, iar între `<body>` și `</body>` un paragraf cu „Salut, lume!”.
 
-```html
-<h1>Salut</h1>
-<!-- Nu mă vede nimeni -->
-<p>Lume</p>
-```
+- [ ] Folderul `Prenume_Nume_W1_L1` este deschis în VS Code  
+- [ ] Fișierul `index.html` are scheletul complet  
+- [ ] Pagina se vede în browser, cu Live Server pornit  
 
-### Exercițiul C — Rând nou
-Scrie o poezie de patru versuri într-un singur `<p>`, cu fiecare vers pe rând nou (folosește `<br>`).
+### Pasul 2 — Complet
+Transformi pagina într-un „cap de pagină” despre tine:
 
-### Exercițiul D — Găsește greșelile
-Găsește **3 greșeli** în codul de mai jos și repară greșelile:
-
-```html
-<h1>Pisica mea<h1>
-<p>Se numește Mițu.
-<p>Doarme toată ziua.<\p>
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Pe foaie, în două propoziții: ce face HTML, ce face CSS și ce face JavaScript?
-
-**Gata când:**  
-- [ ] Folderul și fișierul se numesc corect: `Prenume_Nume_W1_L1` și `index.html`  
-- [ ] Pagina are scheletul complet și un `<title>`  
-- [ ] Are un `<h1>` cu numele tău și 3 paragrafe  
-- [ ] Are un comentariu în cod  
-- [ ] Se vede în browser, cu Live Server pornit  
-- [ ] Ai răspuns la exercițiile B–E  
+- [ ] Are un `<title>` cu numele paginii tale  
+- [ ] Are un `<h1>` cu **numele tău**  
+- [ ] Are **trei** paragrafe `<p>` despre tine  
+- [ ] Are **un comentariu** cu numele tău și data de azi  
+- [ ] Ai salvat cu **Ctrl + S** și vezi schimbările în browser  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Detectivul de pagini
+*Doar dacă ai terminat Complet.*
+
+Ești detectiv: cauți urme de HTML pe pagini reale.
+
 - [ ] Scrie despre **mâncarea ta preferată** în trei paragrafe  
 - [ ] Deschide DevTools cu **F12** și caută paragraful tău în fila **Elements**  
 - [ ] Deschide „Vezi sursa” (Ctrl + U) pe o pagină de pe internet și găsește tagul `<title>`  
@@ -375,7 +336,48 @@ Pe foaie, în două propoziții: ce face HTML, ce face CSS și ce face JavaScrip
 - Cum faci un rând nou într-un paragraf?
 
 ## Temă
-Fă o pagină `index.html` despre **animalul tău preferat** (sau despre un loc unde ai fost): un `<h1>`, patru paragrafe și un comentariu. Salvează pagina în folderul `Prenume_Nume_W1_L1` și adu pagina la ora următoare.
+1. Fă o pagină `index.html` despre **animalul tău preferat** (sau despre un loc unde ai fost): un `<h1>`, patru paragrafe și un comentariu. Salvează pagina în folderul `Prenume_Nume_W1_L1` și adu pagina la ora următoare.  
+2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
+3. **Exemple pentru acasă.** Încearcă amândouă:
+
+**Acasă 1 — „Vezi sursa” pe o pagină reală.** Orice pagină din lume își arată codul HTML.
+- Deschide o pagină simplă, de exemplu `example.com`.  
+- Apasă **Ctrl + U** (pe Mac **Cmd + Option + U**). Se deschide o filă cu **codul paginii**.  
+- Caută `<h1>` și `<p>`: sunt aceleași tag-uri pe care le-ai scris azi!  
+- Poți deschide și **DevTools** cu **F12** (pe Mac **Cmd + Option + I**).  
+
+> Poți **doar să te uiți** la codul altor pagini. Nu schimbi nimic pe internet.
+
+**Acasă 2 — Ce se întâmplă când greșim?** Scrie un tag de închidere **fără liniuța înclinată**:
+
+```html
+<h1>Salut, lume!<h1>
+<p>Eu sunt Ana.</p>
+```
+
+Salvează. Browserul nu spune „ai greșit”; el doar încearcă să se descurce. Aici, **textul de după titlu devine și el mare**, pentru că primul `<h1>` nu s-a închis. Repară: schimbă al doilea `<h1>` în `</h1>` și salvează.
+
+4. **Încă patru exerciții (B–E):**
+   - **B — Ce vede browserul?** Fără să rulezi, spune ce apare în browser:
+
+```html
+<h1>Salut</h1>
+<!-- Nu mă vede nimeni -->
+<p>Lume</p>
+```
+
+   - **C — Rând nou.** Scrie o poezie de patru versuri într-un singur `<p>`, cu fiecare vers pe rând nou (folosește `<br>`).  
+   - **D — Găsește greșelile.** Găsește **3 greșeli** în codul de mai jos și repară-le:
+
+```html
+<h1>Pisica mea<h1>
+<p>Se numește Mițu.
+<p>Doarme toată ziua.<\p>
+```
+
+   - **E — Explică cu cuvintele tale.** Pe foaie, în două propoziții: ce face HTML, ce face CSS și ce face JavaScript?  
+
+---
 
 ## Ce urmează — Lecția 2
 Cunoaștem **scheletul folosit azi**, bucată cu bucată: `html`, `head`, `body`, `title` și `meta`. Înveți de ce există fiecare și cum scrii scheletul și fără ajutorul `!` + Tab.
@@ -384,8 +386,8 @@ Cunoaștem **scheletul folosit azi**, bucată cu bucată: `html`, `head`, `body`
 
 ## Răspunsuri
 - **Quiz scurt:** (1) VS Code (Visual Studio Code); (2) HTML; (3) în `<body>`; (4) este tagul de închidere: spune că paragraful se termină aici; (5) pentru că nu ai salvat fișierul (**Ctrl + S**); (6) cu `<br>` sau cu un `<p>` nou, pentru că Enter nu face rând nou în HTML.  
-- **Dacă ritmul clasei este lent:** puteți sări peste Exemplul 8 („Vezi sursa”) și peste partea cu F12; se pot face la lecția următoare sau ca bonus.  
-- **Exercițiul B:** `<h1>Salut</h1>` apare ca titlu mare cu textul „Salut”; comentariul nu apare deloc în pagină; `<p>Lume</p>` apare dedesubt ca paragraf cu textul „Lume”.  
-- **Exercițiul C:** un singur `<p>` cu patru versuri, fiecare urmat de `<br>` (în afară de ultimul), de exemplu `<p>Plouă mărunt peste sat,<br>Eu scriu cod și sunt încântat,<br>Pagina mea e gata azi,<br>Hai să o vedem, copii!</p>`; orice poezie de patru versuri, fiecare pe rând nou, este acceptată.  
-- **Exercițiul D:** (1) `<h1>Pisica mea<h1>` trebuie să se închidă cu `</h1>`; (2) lipsește `</p>` după „Se numește Mițu.”; (3) `<\p>` trebuie scris `</p>` (liniuța înclinată este `/`).  
-- **Exercițiul E:** HTML face structura paginii (scheletul: titluri, text, poze); CSS face aspectul (culori, fonturi, aranjare); JavaScript face comportamentul (ce se întâmplă la click).  
+- **Dacă ritmul clasei este lent:** puteți sări peste Exemplul 7 (comentarii) și îl faceți la lecția următoare.  
+- **Tema, exercițiul B:** `<h1>Salut</h1>` apare ca titlu mare cu textul „Salut”; comentariul nu apare deloc în pagină; `<p>Lume</p>` apare dedesubt ca paragraf cu textul „Lume”.  
+- **Tema, exercițiul C:** un singur `<p>` cu patru versuri, fiecare urmat de `<br>` (în afară de ultimul), de exemplu `<p>Plouă mărunt peste sat,<br>Eu scriu cod și sunt încântat,<br>Pagina mea e gata azi,<br>Hai să o vedem, copii!</p>`; orice poezie de patru versuri, fiecare pe rând nou, este acceptată.  
+- **Tema, exercițiul D:** (1) `<h1>Pisica mea<h1>` trebuie să se închidă cu `</h1>`; (2) lipsește `</p>` după „Se numește Mițu.”; (3) `<\p>` trebuie scris `</p>` (liniuța înclinată este `/`).  
+- **Tema, exercițiul E:** HTML face structura paginii (scheletul: titluri, text, poze); CSS face aspectul (culori, fonturi, aranjare); JavaScript face comportamentul (ce se întâmplă la click).  

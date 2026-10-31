@@ -1,4 +1,5 @@
 # LECȚIA 9 — Duelul de reflexe
+### Joc de reflexe: pauză aleatorie
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 

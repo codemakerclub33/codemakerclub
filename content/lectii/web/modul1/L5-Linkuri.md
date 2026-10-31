@@ -1,4 +1,5 @@
-# LECȚIA 5 — Linkuri
+# LECȚIA 5 — Colecția mea de linkuri
+### Linkuri
 **Modulul 1 · HTML I: Prima mea pagină · 2 ore**  
 **Code Maker Club · HTML Starter**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei știi să scrii un link cu `<a href="...">`, să deschizi un link în filă nouă, să legi două pagini din folderul tău, să faci un link care duce într-un loc din aceeași pagină și să scrii un link pentru e-mail.  
-**Minim:** o pagină cu trei linkuri: două spre site-uri din internet și unul spre o a doua pagină făcută de tine.  
-**Ținta orei (Complet):** + un link care se deschide în filă nouă, un link „Sus” care te duce în vârful paginii și un link `mailto:`.
-
-## De ce contează
-Fără linkuri, internetul ar fi o grămadă de pagini fără legătură între ele. Linkurile fac din pagini un **site**: de la prima pagină poți ajunge oriunde. Orice site pe care îl vei face va avea linkuri.
+## Ce facem azi
+La final ai un mic site cu **două pagini**: prima pagină are o colecție de linkuri spre site-uri alese cu profesorul, un link spre a doua pagină și un link „↑ Înapoi sus”. Știi să scrii un link cu `<a href="...">`, să deschizi un link în filă nouă și să legi două pagini din folderul tău. Fără linkuri, internetul ar fi o grămadă de pagini fără legătură între ele: linkurile fac din pagini un **site**.
 
 ---
 
@@ -24,10 +20,21 @@ Fără linkuri, internetul ar fi o grămadă de pagini fără legătură între 
 | 0–15 | Recapitulare · pornim proiectul |
 | 15–40 | Primul link · adresa completă · filă nouă (**Exemplele 1–3**) |
 | 40–55 | Textul unui link bun (**Exemplul 4**) |
-| 55–85 | Link către propriile pagini · foldere (**Exemplele 5–6**) |
-| 85–100 | Link în aceeași pagină · e-mail (**Exemplele 7–9**) |
-| 100–115 | Mini-proiect: colecția mea de linkuri (**Exemplul 10**) |
+| 55–80 | Link spre propria pagină (**Exemplul 5**) |
+| 80–100 | Link în aceeași pagină · link „Sus” (**Exemplele 6–7**) |
+| 100–115 | Mini-proiect: colecția mea de linkuri (**Exemplul 8**) |
 | 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `<a href="...">text</a>` | Link: duce unde spune `href` | `<a href="https://www.nasa.gov">NASA</a>` |
+| `target="_blank"` și `rel="noopener noreferrer"` | Deschide linkul în filă nouă | se scriu mereu împreună |
+| `href="despre.html"` | Link spre altă pagină din același folder | doar numele fișierului |
+| `id="sus"` și `href="#sus"` | Link spre un loc din aceeași pagină | `<a href="#sus">↑ Înapoi sus</a>` |
 
 ---
 
@@ -132,38 +139,15 @@ Aici adresa e doar **numele fișierului**, fără `https://`. Browserul îl caut
 
 > Numele fișierelor: litere mici, fără spații și fără diacritice (`despre.html`, nu `Despre mine.html`). Dacă greșești o literă, linkul nu merge.
 
-### Exemplul 6 — Foldere
-
-Când ai multe pagini, le poți pune în foldere, ca într-un dulap cu sertare.
-
-```text
-Prenume_Nume_W1_L5/
-├── index.html
-└── pagini/
-    └── despre.html
-```
-
-Din `index.html`, linkul spre `despre.html` trece **prin sertarul `pagini`**:
-
-```html
-<a href="pagini/despre.html">Despre mine</a>
-```
-
-Din `despre.html` (care e în `pagini`), ca să te întorci în folderul de deasupra, folosești `../` („un sertar mai sus”):
-
-```html
-<a href="../index.html">Înapoi la prima pagină</a>
-```
-
 **Încearcă tu (5 min)**  
-- [ ] Fă pagina `despre.html` și leagă pagina de `index.html`, în ambele sensuri  
-- [ ] Mută `despre.html` într-un folder `pagini` și schimbă ambele linkuri ca să meargă din nou  
+- [ ] Fă pagina `despre.html` și leag-o de `index.html`, în ambele sensuri  
+- [ ] Verifică numele fișierelor: litere mici, fără spații și fără diacritice  
 
 ---
 
-## 5. Linkuri în aceeași pagină și e-mail
+## 5. Linkuri în aceeași pagină
 
-### Exemplul 7 — Link spre un loc din aceeași pagină
+### Exemplul 6 — Link spre un loc din aceeași pagină
 
 Pe o pagină lungă, poți face un „cuprins” care te duce direct la o parte. Mai întâi dai un **nume** (un `id`) locului în care vrei să ajungi:
 
@@ -181,7 +165,7 @@ Când apeși, pagina **derulează** până la titlul cu `id="hobby"`.
 
 > Numele din `id` nu are spații sau diacritice și trebuie să fie **unic** în pagină.
 
-### Exemplul 8 — Link „Sus”
+### Exemplul 7 — Link „Sus”
 
 ```html
 <h1 id="sus">Pagina mea</h1>
@@ -191,16 +175,6 @@ Când apeși, pagina **derulează** până la titlul cu `id="hobby"`.
 
 Pui `id="sus"` pe primul titlu și un link `#sus` la finalul paginii. E util când pagina e lungă.
 
-### Exemplul 9 — Link pentru e-mail
-
-```html
-<p>Scrie un mesaj la <a href="mailto:ana@example.com">ana@example.com</a>.</p>
-```
-
-Un link care începe cu `mailto:` deschide programul de e-mail al calculatorului, cu adresa deja completată. Adresa `example.com` este una **de probă**, care nu aparține nimănui.
-
-> **Atenție:** într-o pagină publică nu pune adresa ta reală de e-mail. Pentru exercițiile noastre folosește o adresă de probă.
-
 **Încearcă tu (4 min)**  
 - [ ] Fă o pagină cu trei titluri `<h2>`, cu `id` pe fiecare, și un mic cuprins cu trei linkuri `#`  
 - [ ] Adaugă un link „↑ Înapoi sus” la final  
@@ -209,7 +183,7 @@ Un link care începe cu `mailto:` deschide programul de e-mail al calculatorului
 
 ## 6. Mini-proiect
 
-### Exemplul 10 — „Colecția mea de linkuri”
+### Exemplul 8 — „Colecția mea de linkuri”
 
 `index.html`:
 
@@ -268,47 +242,40 @@ Alege **tu** site-urile și scrie ce îți place la fiecare.
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Colecția mea de linkuri”
 
-### Exercițiul A — „Colecția mea de linkuri” (obligatoriu)
-Fă un mic site cu două pagini:
-- `index.html` cu un `<h1>`, **cel puțin trei** linkuri spre site-uri alese cu profesorul (în filă nouă, cu text care spune unde duc);
-- o listă cu buline pentru linkuri;
-- un link spre `despre.html` și un link „↑ Înapoi sus”;
-- `despre.html` cu scheletul complet, un paragraf despre tine și un link înapoi.
+### Minim vs Complet
 
-Verifică totul cu Live Server.
+| | Ce trebuie |
+|--|------------|
+| **Minim** | O pagină cu trei linkuri: două spre site-uri din internet și unul spre o a doua pagină făcută de tine |
+| **Complet** | Minim + un link care se deschide în filă nouă, un link „↑ Înapoi sus” și o listă cu buline pentru linkuri |
 
-### Exercițiul B — Extern sau din folderul meu?
-Pentru fiecare adresă, spune dacă duce la un **alt site** sau la o **pagină din folderul tău**: (1) `https://www.nasa.gov`; (2) `galerie.html`; (3) `pagini/hobby.html`; (4) `https://scratch.mit.edu`.
+### Pasul 1 — Minim
+Fă `index.html` cu un `<h1>` și trei linkuri: două spre site-uri alese cu profesorul și unul spre `despre.html`, o pagină făcută de tine.
 
-### Exercițiul C — Scrie linkurile
-Scrie linkul (cu `<a>` și `href`) pentru: (1) site-ul `https://www.nasa.gov`, în filă nouă; (2) pagina `galerie.html` din același folder; (3) pagina `index.html` aflată cu un folder mai sus.
+- [ ] `despre.html` are scheletul complet, un paragraf și un link înapoi spre `index.html`  
+- [ ] Cele două pagini sunt legate în ambele sensuri  
+- [ ] Ai testat toate linkurile cu Live Server  
 
-### Exercițiul D — Găsește greșelile
-Găsește **3 greșeli** în codul de mai jos și repară greșelile:
+### Pasul 2 — Complet
+Îmbunătățești colecția:
 
-```text
-<a href=www.wikipedia.org>Wikipedia</a>
-<a href="despre.html">Despre mine
-<a href="https://www.nasa.gov" target="blank">NASA</a>
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: de ce e mai bine să scrii „site-ul NASA” decât „apasă aici” ca text al unui link?
-
-**Gata când:**  
+- [ ] Ai cel puțin trei linkuri spre site-uri alese cu profesorul, în filă nouă (`target` și `rel`), cu text care spune unde duc  
+- [ ] Linkurile sunt într-o listă cu buline  
+- [ ] Ai un link „↑ Înapoi sus”, cu `id="sus"` pe primul titlu  
 - [ ] Folderul `Prenume_Nume_W1_L5` are `index.html` și `despre.html`  
-- [ ] Ai cel puțin trei linkuri spre alte site-uri, în filă nouă, cu text clar  
-- [ ] Ai legat cele două pagini între ele și ai un link „↑ Înapoi sus”  
-- [ ] Ai răspuns la exercițiile B–E  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Cuprinsul meu
+*Doar dacă ai terminat Complet.*
+
+Faci o pagină ușor de parcurs, cu linkuri peste tot.
+
 - [ ] Fă un mini-cuprins în partea de sus a unei pagini lungi, cu linkuri `#` spre fiecare titlu  
-- [ ] Adaugă o a treia pagină (`hobby.html`) și adaugă în meniu un link către ea  
-- [ ] Pune un link `mailto:` cu o adresă de probă și testează linkul  
+- [ ] Adaugă o a treia pagină (`hobby.html`) și pune un link către ea  
+- [ ] Pune un link `mailto:` cu o adresă de probă și testează linkul (vezi Acasă 2)  
 - [ ] Deschide „Vezi sursa” (Ctrl + U) pe o pagină din internet și numără câte linkuri `<a href=...>` găsești  
 
 ---
@@ -331,19 +298,69 @@ Pe foaie: de ce e mai bine să scrii „site-ul NASA” decât „apasă aici”
 2. Spre alte site-uri, adresa începe cu `https://`.  
 3. `target="_blank"` + `rel="noopener noreferrer"` deschid linkul în filă nouă.  
 4. Textul linkului trebuie să spună **unde duce**.  
-5. Spre paginile tale: numele fișierului; `pagini/despre.html` merge într-un folder, `../index.html` urcă un folder.  
+5. Spre paginile tale: numele fișierului, de exemplu `despre.html`.  
 6. `id="nume"` + `href="#nume"` fac un link în aceeași pagină.  
-7. `mailto:` deschide programul de e-mail. Pe internet nu scrii adresa ta reală.
 
 ## Quiz scurt
 - Care atribut spune unde duce linkul?  
 - Ce face `target="_blank"`?  
 - Cum faci un link spre `despre.html` din același folder?  
-- Ce înseamnă `../` într-o adresă?  
+- De ce e mai bine „site-ul NASA” decât „apasă aici” ca text al unui link?  
 - Cum faci un link care duce la un titlu din aceeași pagină?
 
 ## Temă
-Fă un mic site cu **două pagini** despre **un subiect pe care îl iubești** (un animal, un sport, un joc): `index.html` cu trei linkuri spre site-uri alese cu un adult și `despre.html`, legate între ele. Pune paginile în folderul `Prenume_Nume_W1_L5`.
+1. Fă un mic site cu **două pagini** despre **un subiect pe care îl iubești** (un animal, un sport, un joc): `index.html` cu trei linkuri spre site-uri alese cu un adult și `despre.html`, legate între ele. Pune paginile în folderul `Prenume_Nume_W1_L5`.  
+2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
+3. **Exemple pentru acasă.** Încearcă amândouă:
+
+**Acasă 1 — Foldere.**
+
+Când ai multe pagini, le poți pune în foldere, ca într-un dulap cu sertare.
+
+```text
+Prenume_Nume_W1_L5/
+├── index.html
+└── pagini/
+    └── despre.html
+```
+
+Din `index.html`, linkul spre `despre.html` trece **prin sertarul `pagini`**:
+
+```html
+<a href="pagini/despre.html">Despre mine</a>
+```
+
+Din `despre.html` (care e în `pagini`), ca să te întorci în folderul de deasupra, folosești `../` („un sertar mai sus”):
+
+```html
+<a href="../index.html">Înapoi la prima pagină</a>
+```
+
+**Acasă 2 — Link pentru e-mail.**
+
+```html
+<p>Scrie un mesaj la <a href="mailto:ana@example.com">ana@example.com</a>.</p>
+```
+
+Un link care începe cu `mailto:` deschide programul de e-mail al calculatorului, cu adresa deja completată. Adresa `example.com` este una **de probă**, care nu aparține nimănui.
+
+> **Atenție:** într-o pagină publică nu pune adresa ta reală de e-mail. Pentru exercițiile noastre folosește o adresă de probă.
+
+4. **Încă patru exerciții (B–E):**
+
+**B — Extern sau din folderul meu?** Pentru fiecare adresă, spune dacă duce la un **alt site** sau la o **pagină din folderul tău**: (1) `https://www.nasa.gov`; (2) `galerie.html`; (3) `pagini/hobby.html`; (4) `https://scratch.mit.edu`.
+
+**C — Scrie linkurile.** Scrie linkul (cu `<a>` și `href`) pentru: (1) site-ul `https://www.nasa.gov`, în filă nouă; (2) pagina `galerie.html` din același folder; (3) pagina `index.html` aflată cu un folder mai sus.
+
+**D — Găsește greșelile.** Găsește **3 greșeli** în codul de mai jos și repară greșelile:
+
+```text
+<a href=www.wikipedia.org>Wikipedia</a>
+<a href="despre.html">Despre mine
+<a href="https://www.nasa.gov" target="blank">NASA</a>
+```
+
+**E — Explică cu cuvintele tale.** Pe foaie: de ce e mai bine să scrii „site-ul NASA” decât „apasă aici” ca text al unui link?
 
 ## Ce urmează — Lecția 6
 Învățăm să punem **imagini** în pagină, să ținem pozele în foldere și să scriem descrieri pentru ele, ca pagina ta să nu mai fie doar text.
@@ -351,8 +368,8 @@ Fă un mic site cu **două pagini** despre **un subiect pe care îl iubești** (
 ---
 
 ## Răspunsuri
-- **Quiz scurt:** (1) `href`; (2) deschide linkul într-o filă nouă; (3) `<a href="despre.html">Despre mine</a>`; (4) „un folder mai sus” (ieși din folderul curent); (5) dai titlului un `id` (de exemplu `id="hobby"`) și scrii linkul `<a href="#hobby">...</a>`.  
-- **Exercițiul B:** (1) alt site; (2) pagină din folderul tău; (3) pagină din folderul tău, într-un subfolder; (4) alt site.  
-- **Exercițiul C:** (1) `<a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer">NASA</a>`; (2) `<a href="galerie.html">Galerie</a>`; (3) `<a href="../index.html">Prima pagină</a>`.  
-- **Exercițiul D:** (1) adresa nu are `https://` și nici ghilimele; (2) lipsește `</a>`; (3) `target="blank"` trebuie `target="_blank"`.  
-- **Exercițiul E:** textul linkului trebuie să spună unde duce; cititoarele de ecran și cititorii care caută rapid se orientează după el.
+- **Quiz scurt:** (1) `href`; (2) deschide linkul într-o filă nouă; (3) `<a href="despre.html">Despre mine</a>`; (4) pentru că textul linkului trebuie să spună unde duce; (5) dai titlului un `id` (de exemplu `id="hobby"`) și scrii linkul `<a href="#hobby">...</a>`.  
+- **Tema, exercițiul B:** (1) alt site; (2) pagină din folderul tău; (3) pagină din folderul tău, într-un subfolder; (4) alt site.  
+- **Tema, exercițiul C:** (1) `<a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer">NASA</a>`; (2) `<a href="galerie.html">Galerie</a>`; (3) `<a href="../index.html">Prima pagină</a>`.  
+- **Tema, exercițiul D:** (1) adresa nu are `https://` și nici ghilimele; (2) lipsește `</a>`; (3) `target="blank"` trebuie `target="_blank"`.  
+- **Tema, exercițiul E:** textul linkului trebuie să spună unde duce; cititoarele de ecran și cititorii care caută rapid se orientează după el.
