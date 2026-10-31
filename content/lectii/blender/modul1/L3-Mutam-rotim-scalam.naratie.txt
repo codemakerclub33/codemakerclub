@@ -22,6 +22,6 @@ Pasul de creație. Scara mea. Acum o construiești pe a ta, fără pași scriși
 
 Greșeli frecvente. Obiectul sare departe: ai mișcat mouse-ul mult înainte de a confirma, apasă Escape și reia. Rotația merge pe axa greșită: apasă R, apoi Z, sau X, sau Y. Scalezi un obiect strâmb: ai blocat o singură axă, iar fără axă scalează uniform. Numerele nu se aplică: ai uitat Enter. Duplicatul rămâne peste original: după Shift plus D, mută copia imediat.
 
-Provocare, trei stele. Piramida în trepte. Construiești o piramidă din cinci plăci groase. Fiecare placă este scalată cu zero virgulă opt față de cea de dedesubt. Plăcile stau exact una peste alta, fără gol, iar din vederea de sus au același centru. Pe o foaie notezi valorile folosite la fiecare placă.
+Provocare, trei stele. Piramida în trepte. Construiești o piramidă din cinci plăci groase. Fiecare placă este micșorată cu S, Shift plus Z, zero virgulă opt, față de cea de dedesubt, ca doar lățimea și lungimea să scadă, iar grosimea să rămână la fel. Plăcile stau exact una peste alta, fără gol, iar din vederea de sus au același centru. Pe o foaie notezi valorile folosite la fiecare placă.
 
 Succes la scară.

@@ -9,7 +9,7 @@
 ---
 
 ## Ce facem azi
-La finalul orei ai o scenă completă, colorată, luminată și randată. Un proiect complet leagă toate pașii: modelare, culoare, lumină, cameră, randare. Dioramele sunt folosite în jocuri, filme și arhitectură pentru a arăta o idee.
+La finalul orei ai o scenă completă, colorată, luminată și randată. Un proiect complet leagă toți pașii: modelare, culoare, lumină, cameră, randare. Dioramele sunt folosite în jocuri, filme și arhitectură pentru a arăta o idee.
 
 ---
 
@@ -108,29 +108,27 @@ Sau refă piesele simplu, direct în scenă.
 
 ### 6) Lista de verificare
 
-| ✔ | Ce verific |
-|---|-----------|
-| ☐ | Fiecare obiect e pe bază, nimic nu „plutește” |
-| ☐ | Obiectele au nume |
-| ☐ | Cel puțin 5 culori |
-| ☐ | Se văd umbre |
-| ☐ | Subiectul principal e vizibil din cameră |
-| ☐ | Imaginea PNG e salvată |
+- [ ] Fiecare obiect e pe bază, nimic nu „plutește”
+- [ ] Obiectele au nume
+- [ ] Cel puțin 5 culori
+- [ ] Se văd umbre
+- [ ] Subiectul principal e vizibil din cameră
+- [ ] Imaginea PNG e salvată
 
 **Încearcă tu — lista de verificare (2 min)**  
-- [ ] Ai bifat toate punctele din tabel  
+- [ ] Ai bifat toate punctele din listă  
 - [ ] Fișierul `.blend` și PNG-ul sunt salvate  
 
 ### 7) Verificare finală Modul 1
 
-| Pot să… | Încă nu | Cu ajutor | Singur |
-|---------|---------|-----------|--------|
-| mă deplasez în 3D | ☐ | ☐ | ☐ |
-| folosesc **G, R, S** și axe | ☐ | ☐ | ☐ |
-| adaug și reglez forme de bază | ☐ | ☐ | ☐ |
-| dau culori și materiale | ☐ | ☐ | ☐ |
-| așez lumini și cameră | ☐ | ☐ | ☐ |
-| randez și salvez o imagine | ☐ | ☐ | ☐ |
+Bifează ce poți face **singur**:
+
+- [ ] mă deplasez în 3D
+- [ ] folosesc **G, R, S** și axe
+- [ ] adaug și reglez forme de bază
+- [ ] dau culori și materiale
+- [ ] așez lumini și cameră
+- [ ] randez și salvez o imagine
 
 ---
 

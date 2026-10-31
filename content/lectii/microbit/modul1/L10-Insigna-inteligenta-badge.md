@@ -143,15 +143,15 @@ Răspunde pe foaie, fără să te uiți în lecții. Răspunsurile sunt la final
 
 **Autoevaluare** (bifează sincer):
 
-| Știu să… | Da | Aproape | Încă nu |
-|----------|----|---------|---------|
-| trimit un program pe placă | ☐ | ☐ | ☐ |
-| desenez și animez pe LED-uri | ☐ | ☐ | ☐ |
-| folosesc butoanele A, B, A+B | ☐ | ☐ | ☐ |
-| creez și schimb o variabilă | ☐ | ☐ | ☐ |
-| folosesc `if` și `else` | ☐ | ☐ | ☐ |
-| folosesc bucle | ☐ | ☐ | ☐ |
-| citesc accelerometrul, lumina, temperatura | ☐ | ☐ | ☐ |
+Bifează ce poți face **singur**:
+
+- [ ] trimit un program pe placă
+- [ ] desenez și animez pe LED-uri
+- [ ] folosesc butoanele A, B, A+B
+- [ ] creez și schimb o variabilă
+- [ ] folosesc `if` și `else`
+- [ ] folosesc bucle
+- [ ] citesc accelerometrul, lumina, temperatura
 
 **Răspunsuri:**
 1. 25, în 5 rânduri și 5 coloane. 2. `on start` rulează o dată, `forever` se repetă. 3. Așteaptă jumătate de secundă. 4. `on button A+B pressed`. 5. O cutie cu nume și valoare, de exemplu `score`. 6. `set` pune valoarea; `change` o adună la valoarea veche. 7. Face un lucru dacă e adevărat, altul dacă nu. 8. De 5 ori. 9. Mișcarea; de exemplu `shake`. 10. Dacă `light level` e sub un prag, aprinzi LED-urile.

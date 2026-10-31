@@ -540,15 +540,15 @@ Răspunde pe foaie (apoi verifică cu profesorul):
 
 ### Autoevaluare (bifează)
 
-| Știu să… | Da | Aproape | Încă nu |
-|----------|----|---------|---------|
-| folosesc `for` cu `range` | ☐ | ☐ | ☐ |
-| folosesc `while`, `break`, `continue` | ☐ | ☐ | ☐ |
-| lucrez cu liste | ☐ | ☐ | ☐ |
-| folosesc dicționare | ☐ | ☐ | ☐ |
-| scriu funcții cu parametri și `return` | ☐ | ☐ | ☐ |
-| organizez un program cu `main()` | ☐ | ☐ | ☐ |
-| construiesc un joc complet | ☐ | ☐ | ☐ |
+Bifează ce poți face **singur**:
+
+- [ ] folosesc `for` cu `range`
+- [ ] folosesc `while`, `break`, `continue`
+- [ ] lucrez cu liste
+- [ ] folosesc dicționare
+- [ ] scriu funcții cu parametri și `return`
+- [ ] organizez un program cu `main()`
+- [ ] construiesc un joc complet
 
 ---
 

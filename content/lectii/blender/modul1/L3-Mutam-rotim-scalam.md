@@ -185,7 +185,7 @@ Reguli:
 
 Construiește o piramidă din plăci, fiecare mai mică decât cea de sub ea.
 
-- [ ] 5 plăci groase, fiecare cu `S` `0.8` față de cea de dedesubt
+- [ ] 5 plăci groase, fiecare micșorată cu `S` `Shift + Z` `0.8` față de cea de dedesubt (așa se micșorează doar lățimea și lungimea, iar grosimea rămâne la fel)
 - [ ] Fiecare placă stă exact peste cealaltă, fără gol (verifici din vederea din față, `1`)
 - [ ] Notezi pe foaie valorile folosite la fiecare placă
 - [ ] Piramida e centrată: din vederea de sus (`7`) plăcile au același centru

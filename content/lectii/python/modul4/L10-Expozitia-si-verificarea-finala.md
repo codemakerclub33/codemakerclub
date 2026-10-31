@@ -835,16 +835,16 @@ Răspunde pe foaie (apoi verifică cu profesorul):
 
 ### Autoevaluare (bifează)
 
-| Știu să… | Da | Aproape | Încă nu |
-|----------|----|---------|---------|
-| creez o fereastră și o buclă de joc | ☐ | ☐ | ☐ |
-| desenez forme, culori și imagini | ☐ | ☐ | ☐ |
-| mișc obiecte și controlez jucătorul | ☐ | ☐ | ☐ |
-| detectez coliziuni | ☐ | ☐ | ☐ |
-| afișez scor, vieți și stări de joc | ☐ | ☐ | ☐ |
-| scriu clase și folosesc obiecte | ☐ | ☐ | ☐ |
-| salvez recordul într-un fișier și tratez erorile | ☐ | ☐ | ☐ |
-| construiesc și prezint un joc complet | ☐ | ☐ | ☐ |
+Bifează ce poți face **singur**:
+
+- [ ] creez o fereastră și o buclă de joc
+- [ ] desenez forme, culori și imagini
+- [ ] mișc obiecte și controlez jucătorul
+- [ ] detectez coliziuni
+- [ ] afișez scor, vieți și stări de joc
+- [ ] scriu clase și folosesc obiecte
+- [ ] salvez recordul într-un fișier și tratez erorile
+- [ ] construiesc și prezint un joc complet
 
 ---
 
@@ -877,14 +877,14 @@ Răspunde pe foaie (apoi verifică cu profesorul):
 
 ### Autoevaluarea cursului (bifează)
 
-| Știu să… | Da | Aproape | Încă nu |
-|----------|----|---------|---------|
-| scriu programe cu variabile, `if`, `while` și `for` | ☐ | ☐ | ☐ |
-| folosesc liste, dicționare și funcții | ☐ | ☐ | ☐ |
-| desenez cu Turtle și fac jocuri simple | ☐ | ☐ | ☐ |
-| fac un joc cu Pygame, cu clase și fișiere | ☐ | ☐ | ☐ |
-| caut și repar erorile din cod | ☐ | ☐ | ☐ |
-| prezint un proiect și dau feedback colegilor | ☐ | ☐ | ☐ |
+Bifează ce poți face **singur**:
+
+- [ ] scriu programe cu variabile, `if`, `while` și `for`
+- [ ] folosesc liste, dicționare și funcții
+- [ ] desenez cu Turtle și fac jocuri simple
+- [ ] fac un joc cu Pygame, cu clase și fișiere
+- [ ] caut și repar erorile din cod
+- [ ] prezint un proiect și dau feedback colegilor
 
 ---
 

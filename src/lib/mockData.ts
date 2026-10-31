@@ -90,10 +90,10 @@ export const module = [
   { id: 'm35', curs_id: 'c2', nume: 'Modul 3 — Afișaj și mișcare', ordine: 3, badge: 'Display Maker' },
   { id: 'm36', curs_id: 'c2', nume: 'Modul 4 — Proiecte complete', ordine: 4, badge: 'Arduino Creator' },
   // Blender
-  { id: 'm5', curs_id: 'c3', nume: 'Modul 1 — Primii pași în Blender', ordine: 1, badge: 'Blender Starter' },
-  { id: 'm37', curs_id: 'c3', nume: 'Modul 2 — Modelare în Edit Mode', ordine: 2, badge: 'Mesh Modeler' },
-  { id: 'm38', curs_id: 'c3', nume: 'Modul 3 — Modificatori și materiale', ordine: 3, badge: 'Modifier Maker' },
-  { id: 'm39', curs_id: 'c3', nume: 'Modul 4 — Proiecte 3D complete', ordine: 4, badge: 'Blender Creator' },
+  { id: 'm5', curs_id: 'c3', nume: 'Modul 1 — Primii pași în Blender', ordine: 1, badge: 'Blender Starter', descriere: '10 lecții în care înveți să te miști în Blender și să construiești din forme simple: un omuleț de zăpadă, o rachetă, o căsuță. Apoi le dai culoare, lumină și faci prima imagine randată. La final: o mini-diorama, adică o scenă 3D în miniatură, în care aduni figurinele făcute în lecțiile trecute.' },
+  { id: 'm37', curs_id: 'c3', nume: 'Modul 2 — Modelare în Edit Mode', ordine: 2, badge: 'Mesh Modeler', descriere: '10 lecții de modelare în Edit Mode: vârfuri, muchii și fețe, extrude, bevel, loop cut și simetrie. Faci un turn de castel, un robot, o cană, un fluture și o rachetă în stil low-poly.' },
+  { id: 'm38', curs_id: 'c3', nume: 'Modul 3 — Modificatori și materiale', ordine: 3, badge: 'Modifier Maker', descriere: '10 lecții în care folosești modificatori și materiale: Subdivision, Solidify, Array, Bevel și Boolean. Faci fructe, un gard, un cufăr și brânza cu găuri, apoi texturi și lumini. La final: camera ta 3D.' },
+  { id: 'm39', curs_id: 'c3', nume: 'Modul 4 — Proiecte 3D complete', ordine: 4, badge: 'Blender Creator', descriere: '10 lecții pentru proiecte 3D complete: pornești de la idee și schiță, modelezi un personaj și o insulă plutitoare, adaugi lumini și atmosferă și exporți scena. La final: o expoziție cu lucrările tale.' },
   // Python
   { id: 'm6', curs_id: 'c4', nume: 'Modul 1 — Primii pași în Python', ordine: 1, badge: 'Python Starter' },
   { id: 'm7', curs_id: 'c4', nume: 'Modul 2 — Repetăm, colecționăm, organizăm', ordine: 2, badge: 'Python Builder' },

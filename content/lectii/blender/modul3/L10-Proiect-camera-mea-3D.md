@@ -119,14 +119,14 @@ Desenează pe hârtie camera văzută de sus: unde sunt patul, biroul, fereastra
 
 ### 9) Verificare finală Modul 3
 
-| Pot să… | Încă nu | Cu ajutor | Singur |
-|---------|---------|-----------|--------|
-| folosesc **Subdivision**, **Solidify**, **Array**, **Bevel** | ☐ | ☐ | ☐ |
-| tai cu **Boolean** | ☐ | ☐ | ☐ |
-| fac țevi și cabluri din curbe | ☐ | ☐ | ☐ |
-| creez materiale cu **Principled BSDF** | ☐ | ☐ | ☐ |
-| fac o textură simplă cu noduri | ☐ | ☐ | ☐ |
-| luminez o scenă cu 3 lumini | ☐ | ☐ | ☐ |
+Bifează ce poți face **singur**:
+
+- [ ] folosesc **Subdivision**, **Solidify**, **Array**, **Bevel**
+- [ ] tai cu **Boolean**
+- [ ] fac țevi și cabluri din curbe
+- [ ] creez materiale cu **Principled BSDF**
+- [ ] fac o textură simplă cu noduri
+- [ ] luminez o scenă cu 3 lumini
 
 ### Dacă ai terminat devreme
 - [ ] Un **covor** rotund, cu o textură  

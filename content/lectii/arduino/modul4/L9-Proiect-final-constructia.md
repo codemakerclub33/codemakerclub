@@ -35,16 +35,14 @@ Proiectul final arată ce știi să faci **singur**. Nu trebuie să fie uriaș, 
 
 ### 1) Cerințele proiectului
 
-| # | Cerință | Bifat |
-|---|---------|-------|
-| 1 | Cel puțin **2 intrări** (senzori sau butoane) | ☐ |
-| 2 | Cel puțin **2 ieșiri** diferite (LED, buzzer, LCD, motor, servo, etc.) | ☐ |
-| 3 | Un **afișaj** sau un mesaj (LCD sau Serial Monitor) | ☐ |
-| 4 | Cel puțin **3 funcții** proprii | ☐ |
-| 5 | Cel puțin o **decizie** cu `if` (cu mai multe ramuri) | ☐ |
-| 6 | **Fără `delay` lung** în bucla principală (folosește `millis()` unde ai nevoie) | ☐ |
-| 7 | Un **tabel de pini** completat | ☐ |
-| 8 | Codul are **comentarii** la părțile importante | ☐ |
+- [ ] Cel puțin **2 intrări** (senzori sau butoane)
+- [ ] Cel puțin **2 ieșiri** diferite (LED, buzzer, LCD, motor, servo, etc.)
+- [ ] Un **afișaj** sau un mesaj (LCD sau Serial Monitor)
+- [ ] Cel puțin **3 funcții** proprii
+- [ ] Cel puțin o **decizie** cu `if` (cu mai multe ramuri)
+- [ ] **Fără `delay` lung** în bucla principală (folosește `millis()` unde ai nevoie)
+- [ ] Un **tabel de pini** completat
+- [ ] Codul are **comentarii** la părțile importante
 
 ### 2) Construim pe etape
 Nu lipi tot dintr-o dată. Folosește metoda **„o piesă, un test”**:

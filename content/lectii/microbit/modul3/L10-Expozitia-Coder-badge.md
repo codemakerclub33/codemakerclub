@@ -113,17 +113,17 @@ Răspunde pe foaie, fără să te uiți în lecții. Răspunsurile sunt la final
 
 **Autoevaluare** (bifează sincer):
 
-| Știu să… | Da | Aproape | Încă nu |
-|----------|----|---------|---------|
-| scriu și trimit un program pe placă | ☐ | ☐ | ☐ |
-| desenez imagini și pixeli | ☐ | ☐ | ☐ |
-| folosesc butoane și `if / elif / else` | ☐ | ☐ | ☐ |
-| folosesc variabile și comparații | ☐ | ☐ | ☐ |
-| citesc senzori (temperatură, lumină, mișcare) | ☐ | ☐ | ☐ |
-| trimit și primesc mesaje prin radio | ☐ | ☐ | ☐ |
-| scriu funcții cu parametri | ☐ | ☐ | ☐ |
-| traduc un program din blocuri în Python | ☐ | ☐ | ☐ |
-| îmi prezint proiectul | ☐ | ☐ | ☐ |
+Bifează ce poți face **singur**:
+
+- [ ] scriu și trimit un program pe placă
+- [ ] desenez imagini și pixeli
+- [ ] folosesc butoane și `if / elif / else`
+- [ ] folosesc variabile și comparații
+- [ ] citesc senzori (temperatură, lumină, mișcare)
+- [ ] trimit și primesc mesaje prin radio
+- [ ] scriu funcții cu parametri
+- [ ] traduc un program din blocuri în Python
+- [ ] îmi prezint proiectul
 
 **Răspunsuri:**
 1. Aduce în program toate funcțiile plăcii (`display`, `button_a`, `sleep` …). 2. `is_pressed()` e adevărat **cât timp** ții apăsat; `was_pressed()` e adevărat dacă butonul **a fost apăsat** de la ultima verificare. 3. `7`. 4. `scroll` vrea **text**, iar `str()` transformă numărul în text. 5. `=` pune o valoare într-o variabilă; `==` **compară** două valori. 6. Același **grup** (`radio.config(group=…)`) și `radio.on()`. 7. Trimite o valoare înapoi celui care a apelat funcția. 8. Când o funcție **schimbă** o variabilă creată în afara ei. 9. Repetă de 3 ori, cu `i` luând valorile `0, 1, 2`. 10. Pentru că `was_pressed()` „uită” apăsarea după ce e citită; dacă o citim de două ori, a doua oară răspunsul poate fi greșit.

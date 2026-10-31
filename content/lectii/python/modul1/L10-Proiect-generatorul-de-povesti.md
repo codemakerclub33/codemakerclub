@@ -241,16 +241,16 @@ Rezolvă pe foaie, fără să te uiți în lecții. Răspunsurile sunt la final.
 
 **Autoevaluare** — bifează cât ești de sigur:
 
-| Pot să… | Încă nu | Cu ajutor | Singur |
-|---------|---------|-----------|--------|
-| afișez text și numere cu `print` | ☐ | ☐ | ☐ |
-| folosesc variabile | ☐ | ☐ | ☐ |
-| citesc date cu `input` și le transform cu `int()` | ☐ | ☐ | ☐ |
-| fac calcule cu `+ - * / // % **` | ☐ | ☐ | ☐ |
-| construiesc mesaje cu f-string | ☐ | ☐ | ☐ |
-| iau decizii cu `if / elif / else` | ☐ | ☐ | ☐ |
-| leg condiții cu `and`, `or`, `not` | ☐ | ☐ | ☐ |
-| folosesc `random` | ☐ | ☐ | ☐ |
+Bifează ce poți face **singur**:
+
+- [ ] afișez text și numere cu `print`
+- [ ] folosesc variabile
+- [ ] citesc date cu `input` și le transform cu `int()`
+- [ ] fac calcule cu `+ - * / // % **`
+- [ ] construiesc mesaje cu f-string
+- [ ] iau decizii cu `if / elif / else`
+- [ ] leg condiții cu `and`, `or`, `not`
+- [ ] folosesc `random`
 
 ---
 

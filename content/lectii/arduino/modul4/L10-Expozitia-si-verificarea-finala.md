@@ -99,18 +99,18 @@ Răspunde în caiet sau în aplicație. Fiecare întrebare are **un singur răsp
 
 ### 4) Autoevaluare — ce știu să fac acum
 
-| Pot să… | Încă nu | Cu ajutor | Singur |
-|---------|---------|-----------|--------|
-| aprind un LED și îl controlez cu un buton | ☐ | ☐ | ☐ |
-| citesc un potențiometru și un senzor analogic | ☐ | ☐ | ☐ |
-| folosesc praguri și `if / else` | ☐ | ☐ | ☐ |
-| afișez date în Serial Monitor | ☐ | ☐ | ☐ |
-| afișez text pe un LCD | ☐ | ☐ | ☐ |
-| comand un servo | ☐ | ☐ | ☐ |
-| comand un motor cu tranzistor | ☐ | ☐ | ☐ |
-| scriu funcții proprii | ☐ | ☐ | ☐ |
-| folosesc `millis()` | ☐ | ☐ | ☐ |
-| planific și construiesc un proiect | ☐ | ☐ | ☐ |
+Bifează ce poți face **singur**:
+
+- [ ] aprind un LED și îl controlez cu un buton
+- [ ] citesc un potențiometru și un senzor analogic
+- [ ] folosesc praguri și `if / else`
+- [ ] afișez date în Serial Monitor
+- [ ] afișez text pe un LCD
+- [ ] comand un servo
+- [ ] comand un motor cu tranzistor
+- [ ] scriu funcții proprii
+- [ ] folosesc `millis()`
+- [ ] planific și construiesc un proiect
 
 Pentru fiecare „Încă nu” sau „Cu ajutor”, alege **un lucru** pe care îl repeți acasă.
 

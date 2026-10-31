@@ -24,6 +24,6 @@ Pasul de creație. Vehiculul meu. Racheta a fost construită după tabel, acum a
 
 Greșeli frecvente. Forma apare în altă parte: cursorul trei D nu este în centru, apasă Shift plus C. Nu ai putut regla forma: panoul din stânga jos a dispărut, șterge forma și adaugă o formă nouă. Forma este colțuroasă: numărul de laturi este prea mic. Obiectele se confundă: nu ai redenumit piesele. Piesele intră unele în altele: verifică vederea din față, cu unu.
 
-Provocare, trei stele. Caruselul. Construiești un carusel de parc. Baza este un cilindru lat și subțire. Pui șase stâlpi subțiri în cerc, la distanțe egale: setezi Pivot pe cursorul trei D, apoi Shift plus D și R, Z, șaizeci, de fiecare dată. Deasupra pui un con ca acoperiș, care acoperă toți stâlpii. Fiecare piesă primește un nume.
+Provocare, trei stele. Caruselul. Construiești un carusel de parc. Baza este un cilindru lat și subțire. Pui șase stâlpi subțiri în cerc, la distanțe egale: setezi Pivot pe cursorul trei D, apoi Shift plus D, click dreapta și R, Z, șaizeci, de fiecare dată. Deasupra pui un con ca acoperiș, care acoperă toți stâlpii. Fiecare piesă primește un nume.
 
 Succes la rachetă.

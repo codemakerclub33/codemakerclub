@@ -31,7 +31,7 @@ La finalul orei ai un omuleț complet, cu **corp, cap, nas, ochi, pălărie și 
 
 | Ce folosim | Ce face | Exemplu |
 |------------|---------|---------|
-| **Shade Smooth** | Netezește suprafața unui obiect | clic dreapta pe sferă → Shade Smooth |
+| **Shade Smooth** | Netezește suprafața unui obiect | click dreapta pe sferă → Shade Smooth |
 | **Shift + D** | Duplică obiectul selectat | un nasture, apoi încă unul |
 | **Ctrl + P → Object** | Leagă piesele de un părinte | piesele se mișcă împreună cu corpul |
 | **X** | Șterge obiectul selectat | cubul de start |

@@ -176,7 +176,7 @@ Racheta a fost construită după tabel. Acum alegi tu ce construiești.
 Construiește un carusel de parc, cu stâlpi la distanțe egale.
 
 - [ ] Baza: un cilindru lat și subțire
-- [ ] 6 stâlpi subțiri în cerc, la distanțe egale (Pivot pe 3D Cursor, `Shift + D`, `R` `Z` `60`)
+- [ ] 6 stâlpi subțiri în cerc, la distanțe egale (Pivot pe 3D Cursor, apoi `Shift + D`, click dreapta, `R` `Z` `60`)
 - [ ] Acoperiș: un con, care acoperă toți stâlpii
 - [ ] Fiecare piesă are nume (`Baza`, `Stalp_1`…, `Acoperis`)
 

@@ -151,7 +151,7 @@ Acum alegi tu culorile, nu le iei dintr-un tabel.
 1. **Nu vezi culoarea** — ești în modul **Solid**; treci pe **Material Preview**.  
 2. **Toate obiectele au aceeași culoare** — folosesc **același material**.  
 3. **Culoarea se schimbă pe alt obiect** — idem; apasă butonul cu cifra de lângă numele materialului ca materialul să fie **unic**.  
-4. **Metalul arată negru** — metalul „reflectă” mediul; într-o scenă goală pare închis. E normal; vezi L8–L9.  
+4. **Metalul arată negru** — metalul „reflectă” mediul; într-o scenă goală pare închis. E normal; în L8 adaugi lumini și metalul prinde viață.  
 5. **Materialul nu apare** — ai selectat altă piesă.
 
 ---

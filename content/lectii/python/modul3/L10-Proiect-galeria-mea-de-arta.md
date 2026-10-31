@@ -720,15 +720,15 @@ Răspunde pe foaie (apoi verifică cu profesorul):
 
 ### Autoevaluare (bifează)
 
-| Știu să… | Da | Aproape | Încă nu |
-|----------|----|---------|---------|
-| desenez forme cu `forward`, `left`, `right` | ☐ | ☐ | ☐ |
-| folosesc culori și umplere | ☐ | ☐ | ☐ |
-| desenez spirale și mandale cu bucle | ☐ | ☐ | ☐ |
-| scriu funcții de desen cu parametri | ☐ | ☐ | ☐ |
-| controlez țestoasa cu tastatura și mouse-ul | ☐ | ☐ | ☐ |
-| fac un joc cu scor, timp și vieți | ☐ | ☐ | ☐ |
-| organizez un proiect din piese mici | ☐ | ☐ | ☐ |
+Bifează ce poți face **singur**:
+
+- [ ] desenez forme cu `forward`, `left`, `right`
+- [ ] folosesc culori și umplere
+- [ ] desenez spirale și mandale cu bucle
+- [ ] scriu funcții de desen cu parametri
+- [ ] controlez țestoasa cu tastatura și mouse-ul
+- [ ] fac un joc cu scor, timp și vieți
+- [ ] organizez un proiect din piese mici
 
 ---
 

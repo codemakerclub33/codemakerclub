@@ -115,13 +115,13 @@ Alege **3–4 culori** care se potrivesc:
 
 ### 8) Verificare finală Modul 2
 
-| Pot să… | Încă nu | Cu ajutor | Singur |
-|---------|---------|-----------|--------|
-| intru în Edit Mode și selectez vârfuri, muchii, fețe | ☐ | ☐ | ☐ |
-| folosesc **E, I, Ctrl + B, Ctrl + R** | ☐ | ☐ | ☐ |
-| folosesc Proportional Editing | ☐ | ☐ | ☐ |
-| folosesc modificatorul Mirror | ☐ | ☐ | ☐ |
-| dau mai multe materiale pe un obiect | ☐ | ☐ | ☐ |
+Bifează ce poți face **singur**:
+
+- [ ] intru în Edit Mode și selectez vârfuri, muchii, fețe
+- [ ] folosesc **E, I, Ctrl + B, Ctrl + R**
+- [ ] folosesc Proportional Editing
+- [ ] folosesc modificatorul Mirror
+- [ ] dau mai multe materiale pe un obiect
 
 ### Dacă ai terminat devreme
 - [ ] **Racheta se mișcă!** Mutarea rachetei se poate înregistra cu **keyframes**. Pune racheta jos, la **cadrul 1**, și apasă **I** → *Location*. Mută linia de timp la **cadrul 120** (în partea de jos, în Timeline), mută racheta sus (**G Z 15**) și apasă **I** din nou. Apasă **Space**: racheta zboară singură! Flacăra și fumul o urmează, fiindcă ai legat piesele cu **Ctrl + P**.  
