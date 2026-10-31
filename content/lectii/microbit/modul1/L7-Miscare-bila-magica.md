@@ -1,4 +1,5 @@
-# Lecția 7 — Mișcare: bila magică
+# LECȚIA 7 — Bila magică Da / Nu
+### Accelerometru și numere aleatorii
 **Modulul 1 · Primii pași cu micro:bit (blocuri)**  
 **Code Maker Club · micro:bit Starter**
 
@@ -7,13 +8,10 @@
 
 ---
 
-## Obiectiv
-La finalul orei folosești **accelerometrul** (senzorul de mișcare) și numere **aleatorii** (alese la întâmplare).  
-**Minim:** scuturi placa și ea răspunde **Da** sau **Nu**, la întâmplare.  
-**Complet:** Minim + al treilea răspuns **„Poate”** și o înclinare spre stânga care pregătește o întrebare nouă.
+## Ce facem azi
+La finalul orei folosești **accelerometrul** (senzorul de mișcare) și numere **aleatorii** (alese la întâmplare). Telefonul tău își dă seama când îl răsucești și își întoarce ecranul. Jocurile de pe consolă simt când scuturi telecomanda. Toate folosesc un **accelerometru**. Iar când un joc „alege” ceva la întâmplare (un zar, o carte), folosește numere **aleatorii**.
 
-## De ce contează
-Telefonul tău își dă seama când îl răsucești și își întoarce ecranul. Jocurile de pe consolă simt când scuturi telecomanda. Toate folosesc un **accelerometru**. Iar când un joc „alege” ceva la întâmplare (un zar, o carte), folosește numere **aleatorii**.
+**Unelte azi:** `on shake` · `on tilt left` · `acceleration (mg) x` · `pick random 0 to 1` · `if … else if … else` · `set … to` · `show icon`
 
 ---
 
@@ -29,7 +27,16 @@ Telefonul tău își dă seama când îl răsucești și își întoarce ecranul
 | 90–112 | Al treilea răspuns + înclinare (**Complet**) |
 | 112–120 | Recapitulare, quiz, temă |
 
-**Unelte azi:** `on shake` · `on tilt left` · `acceleration (mg) x` · `pick random 0 to 1` · `if … else if … else` · `set … to` · `show icon`
+---
+
+## Instrucțiuni noi azi
+
+| Bloc | Ce face | Exemplu |
+|------|---------|---------|
+| `on shake` | Pornește când **scuturi** placa | întrebarea ta |
+| `pick random 0 to 2` | Alege un număr la întâmplare | `raspuns` |
+| `if / else if / else` | Alege între trei sau mai multe variante | Da, Nu, Poate |
+| `show icon` | Arată răspunsul | `show icon [Yes]` |
 
 ---
 
@@ -130,16 +137,6 @@ Fă un **experiment** în grup: fiecare scutură de 20 de ori și notează câte
 
 ---
 
-## Greșeli frecvente
-1. **„Nu răspunde când scutur”** — în simulator apasă **Shake**. Pe placă, scuturarea trebuie să fie energică, nu doar o mică mișcare.  
-2. **„Mereu același răspuns”** — ai pus `pick random 0 to 0` sau ai uitat să schimbi intervalul.  
-3. **„Apare doar Da”** — în `if` compari cu un număr care nu apare (de exemplu `raspuns = 5`).  
-4. **„Poate nu apare niciodată”** — `pick random` e încă `0 to 1`; schimbă în `0 to 2`.  
-5. **„Pe ecran rămâne răspunsul vechi”** — e normal. Înclin-o spre stânga ca să cureți.  
-6. **„`on tilt left` nu merge în simulator”** — folosește controlul de înclinare din simulator sau testează pe placă.
-
----
-
 ## De făcut azi — „Bila magică Da / Nu”
 
 ### Minim vs Complet
@@ -162,15 +159,29 @@ Fă un **experiment** în grup: fiecare scutură de 20 de ori și notează câte
 - [ ] `else if` cu trei răspunsuri (`Yes`, `No`, `Confused`)  
 - [ ] `on start` arată `?`  
 - [ ] `on tilt left` pune placa pe „întrebare nouă”  
-- [ ] Numele fișierului e `MB1_L07`  
+- [ ] Numele fișierului e `MB1_L07`
 
 ---
 
-## Bonus (după Complet)
+## Bonus ★★★ — Provocare: Bila cu patru răspunsuri
+*Doar dacă ai terminat Complet.*
+
 - [ ] Fă un **al patrulea răspuns** (`Happy`) cu `pick random 0 to 3`  
 - [ ] Arată înainte de răspuns o mică animație „gândesc…” (3 puncte, cu pauze)  
 - [ ] Plăci V2: `on logo pressed` poate fi butonul de „întrebare nouă”  
 - [ ] Numără câte răspunsuri `Da` primești: variabila `da` crește cu 1 când `raspuns = 0`
+
+---
+
+## Greșeli frecvente
+1. **„Nu răspunde când scutur”** — în simulator apasă **Shake**. Pe placă, scuturarea trebuie să fie energică, nu doar o mică mișcare.  
+2. **„Mereu același răspuns”** — ai pus `pick random 0 to 0` sau ai uitat să schimbi intervalul.  
+3. **„Apare doar Da”** — în `if` compari cu un număr care nu apare (de exemplu `raspuns = 5`).  
+4. **„Poate nu apare niciodată”** — `pick random` e încă `0 to 1`; schimbă în `0 to 2`.  
+5. **„Pe ecran rămâne răspunsul vechi”** — e normal. Înclin-o spre stânga ca să cureți.  
+6. **„`on tilt left` nu merge în simulator”** — folosește controlul de înclinare din simulator sau testează pe placă.
+
+---
 
 ## Recapitulare rapidă
 1. **Accelerometrul** simte mișcarea plăcii.  
@@ -178,16 +189,22 @@ Fă un **experiment** în grup: fiecare scutură de 20 de ori și notează câte
 3. `pick random 0 to 2` alege `0`, `1` sau `2` la întâmplare.  
 4. `else if` adaugă o a treia (sau a patra) variantă.  
 5. Un program poate răspunde **diferit** la aceeași acțiune.
+6. **Schema pe scurt (pe foaie):** Scuturat → `pick random` → `raspuns` → `if` / `else if` / `else` → `Yes` / `No` / `Confused`
 
-## Schema pe scurt *(pe foaie)*
+---
 
-Scuturat → `pick random` → `raspuns` → `if` / `else if` / `else` → `Yes` / `No` / `Confused`
-
-**Quiz scurt:**  
+## Quiz scurt
 - Ce măsoară un accelerometru?  
 - Ce numere poate da `pick random 0 to 2`?  
 - Ce face blocul `else if`?  
 - De ce bila magică nu dă mereu același răspuns?
 
+---
+
 ## Temă
 Gândește-te la **trei întrebări** pentru bila magică și la un **al patrulea răspuns** haios. Scrie-le pe foaie și mâine testează-le cu un coleg.
+
+---
+
+## Ce urmează — Lecția 8
+Placa măsoară **lumina** și **temperatura**: un felinar inteligent.

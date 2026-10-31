@@ -1,4 +1,5 @@
-# Lecția 4 — Cutia cu număr
+# LECȚIA 4 — Contorul magic
+### Variabile: cutia cu număr
 **Modulul 1 · Primii pași cu micro:bit (blocuri)**  
 **Code Maker Club · micro:bit Starter**
 
@@ -7,13 +8,10 @@
 
 ---
 
-## Obiectiv
-La finalul orei știi să creezi o variabilă, să îi schimbi valoarea și să o arăți pe LED-uri.  
-**Minim:** un contor: **A** adaugă 1, **B** scade 1, **A+B** îl face din nou 0.  
-**Complet:** Minim + o **tabelă de scor** cu două echipe (roșu și verde).
+## Ce facem azi
+La finalul orei știi să creezi o variabilă, să îi schimbi valoarea și să o arăți pe LED-uri. Un joc trebuie să țină minte scorul. Un termometru ține minte temperatura. Un contor ține minte câte persoane au intrat. Programul păstrează aceste numere într-o **variabilă**. Fără variabile, placa ar uita totul imediat.
 
-## De ce contează
-Un joc trebuie să țină minte scorul. Un termometru ține minte temperatura. Un contor ține minte câte persoane au intrat. Programul păstrează aceste numere într-o **variabilă**. Fără variabile, placa ar uita totul imediat.
+**Unelte azi:** categoria **Variables** · `set … to` · `change … by` · `show number`
 
 ---
 
@@ -28,7 +26,16 @@ Un joc trebuie să țină minte scorul. Un termometru ține minte temperatura. U
 | 75–105 | Tabela de scor cu două echipe (**Complet**) |
 | 105–120 | Recapitulare, quiz, temă |
 
-**Unelte azi:** categoria **Variables** · `set … to` · `change … by` · `show number`
+---
+
+## Instrucțiuni noi azi
+
+| Bloc | Ce face | Exemplu |
+|------|---------|---------|
+| **Make a Variable…** | Creează o cutie cu nume | `score` |
+| `set … to` | Pune direct o valoare în cutie | `set score to 0` |
+| `change … by` | Adaugă (sau scade, cu minus) din valoare | `change score by 1` |
+| `show number` | Arată valoarea de pe ecran | `show number score` |
 
 ---
 
@@ -133,16 +140,6 @@ Răspunsuri: **7** · **1** · **1** (`set` înlocuiește complet valoarea veche
 
 ---
 
-## Greșeli frecvente
-1. **„Scorul rămâne mereu la 1”** — ai folosit `set score to 1` în loc de `change score by 1`. `set` pune valoarea, `change` adaugă.  
-2. **„Pe ecran se vede 0 și nu se schimbă”** — ai scris numărul `0` în `show number`, nu ai pus blocul rotund **score**.  
-3. **„Nu pot crea variabila”** — numele are spațiu sau diacritice. Folosește `score` sau `rosu`.  
-4. **„Scorul de la A și B se amestecă”** — ai folosit aceeași variabilă pentru ambele echipe. Fă două: `rosu` și `verde`.  
-5. **„Scorul nu se resetează după Reset”** — ai uitat `set … to 0` în `on start`.  
-6. **„Scorul `-1` arată ciudat”** — e normal: numărul negativ are semnul `-` în față. Mai târziu vom opri scăderea sub 0.
-
----
-
 ## De făcut azi — „Contorul magic”
 
 ### Minim vs Complet
@@ -164,15 +161,29 @@ Răspunsuri: **7** · **1** · **1** (`set` înlocuiește complet valoarea veche
 - [ ] Variabilele `rosu` și `verde`  
 - [ ] A = punct roșu, B = punct verde  
 - [ ] A+B arată `R`, scorul roșu, `V`, scorul verde  
-- [ ] Numele fișierului e `MB1_L04`  
+- [ ] Numele fișierului e `MB1_L04`
 
 ---
 
-## Bonus (după Complet)
+## Bonus ★★★ — Provocare: Numărătoarea inversă
+*Doar dacă ai terminat Complet.*
+
 - [ ] La `on start` pune scorul la `10` și fă din B un **contor de numărătoare inversă**  
 - [ ] Al treilea buton: V2 → `on logo pressed` adaugă **5** la scor  
 - [ ] Fă un contor pentru câte persoane intră în clasă (apeși A la fiecare)  
 - [ ] Scrie pe foaie un joc pentru acasă care ar avea nevoie de **două** variabile
+
+---
+
+## Greșeli frecvente
+1. **„Scorul rămâne mereu la 1”** — ai folosit `set score to 1` în loc de `change score by 1`. `set` pune valoarea, `change` adaugă.  
+2. **„Pe ecran se vede 0 și nu se schimbă”** — ai scris numărul `0` în `show number`, nu ai pus blocul rotund **score**.  
+3. **„Nu pot crea variabila”** — numele are spațiu sau diacritice. Folosește `score` sau `rosu`.  
+4. **„Scorul de la A și B se amestecă”** — ai folosit aceeași variabilă pentru ambele echipe. Fă două: `rosu` și `verde`.  
+5. **„Scorul nu se resetează după Reset”** — ai uitat `set … to 0` în `on start`.  
+6. **„Scorul `-1` arată ciudat”** — e normal: numărul negativ are semnul `-` în față. Mai târziu vom opri scăderea sub 0.
+
+---
 
 ## Recapitulare rapidă
 1. **Variabilă** = cutie cu **nume** și **valoare**.  
@@ -180,16 +191,22 @@ Răspunsuri: **7** · **1** · **1** (`set` înlocuiește complet valoarea veche
 3. `change score by 1` = adaug (sau scad, cu `-1`).  
 4. Blocul rotund `score` = „valoarea din cutie”.  
 5. Nume bune: fără spații și fără diacritice.
+6. **Schema pe scurt (pe foaie):** Make a Variable → `on start` set 0 → A: change +1 → B: change −1 → A+B: set 0 → `show number`
 
-## Schema pe scurt *(pe foaie)*
+---
 
-Make a Variable → `on start` set 0 → A: change +1 → B: change −1 → A+B: set 0 → `show number`
-
-**Quiz scurt:**  
+## Quiz scurt
 - Ce are o variabilă: un nume și ce altceva?  
 - Care e diferența dintre `set` și `change`?  
 - Ce face blocul rotund `score` din `show number`?  
 - De ce `rosu` și `verde` trebuie să fie variabile separate?
 
+---
+
 ## Temă
 Gândește-te la un joc de societate. Scrie pe foaie **ce numere trebuie ținute minte** (scor, vieți, runde) și ce nume i-ai da fiecărei variabile.
+
+---
+
+## Ce urmează — Lecția 5
+Placa **ia decizii** cu `if` și `else`: o cursă până la 10.

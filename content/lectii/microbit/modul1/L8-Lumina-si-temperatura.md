@@ -1,4 +1,5 @@
-# Lecția 8 — Lumină și temperatură
+# LECȚIA 8 — Felinarul inteligent
+### Senzori: lumină și temperatură
 **Modulul 1 · Primii pași cu micro:bit (blocuri)**  
 **Code Maker Club · micro:bit Starter**
 
@@ -7,13 +8,10 @@
 
 ---
 
-## Obiectiv
-La finalul orei citești **senzorul de lumină** și **senzorul de temperatură** și iei decizii pe baza lor.  
-**Minim:** când se face întuneric, placa aprinde toate LED-urile ca un felinar; când e lumină, le stinge.  
-**Complet:** Minim + la apăsarea lui **A**, placa îți spune temperatura, fără să se încurce cu felinarul.
+## Ce facem azi
+La finalul orei citești **senzorul de lumină** și **senzorul de temperatură** și iei decizii pe baza lor. Felinarele din parc se aprind singure seara. Aerul condiționat pornește când e prea cald. Telefonul își face ecranul mai luminos la soare. Toate aceste aparate **măsoară** lumina sau temperatura și **decid** ce să facă. Azi faci și tu un astfel de aparat.
 
-## De ce contează
-Felinarele din parc se aprind singure seara. Aerul condiționat pornește când e prea cald. Telefonul își face ecranul mai luminos la soare. Toate aceste aparate **măsoară** lumina sau temperatura și **decid** ce să facă. Azi faci și tu un astfel de aparat.
+**Unelte azi:** `light level` · `temperature (°C)` · `plot bar graph of … up to …` · `if … else` · `show leds` · `clear screen` · variabile
 
 ---
 
@@ -29,7 +27,16 @@ Felinarele din parc se aprind singure seara. Aerul condiționat pornește când 
 | 105–112 | Depanare în pereche |
 | 112–120 | Recapitulare, quiz, temă |
 
-**Unelte azi:** `light level` · `temperature (°C)` · `plot bar graph of … up to …` · `if … else` · `show leds` · `clear screen` · variabile
+---
+
+## Instrucțiuni noi azi
+
+| Bloc | Ce face | Exemplu |
+|------|---------|---------|
+| `light level` | Dă un număr între 0 și 255 | `light level < 50` |
+| `temperature (°C)` | Dă temperatura aproximativă | `show number temperature` |
+| `if … then … else` | Decide după un prag | întuneric = felinar aprins |
+| variabila `ocupat` | Ține minte că ecranul e folosit | `ocupat = 1` |
 
 ---
 
@@ -142,17 +149,7 @@ Răspuns: semnul e **greșit**. Cu `>` felinarul se aprinde la **lumină** și s
 
 **Gata când:**  
 - [ ] Am găsit greșeala colegului și am explicat de ce apare  
-- [ ] Programul reparat merge  
-
----
-
-## Greșeli frecvente
-1. **„Felinarul e invers”** — semnul `<` și `>` e schimbat. Întuneric = lumină **mică** = `light level < 50`.  
-2. **„Nu se aprinde niciodată”** — pragul e prea mic pentru sala ta. Măsoară și alege altul.  
-3. **„Temperatura arată foarte mult”** — e temperatura plăcii, cu un pic mai mare decât a camerei.  
-4. **„Numărul de la A dispare”** — ai uitat variabila `ocupat`, iar felinarul îl șterge.  
-5. **„Felinarul nu revine după A”** — ai uitat `set ocupat to 0` la sfârșit.  
-6. **„Ecranul clipește”** — lipsește `pause (ms) 100` din `forever`.
+- [ ] Programul reparat merge
 
 ---
 
@@ -177,15 +174,29 @@ Răspuns: semnul e **greșit**. Cu `>` felinarul se aprinde la **lumină** și s
 - [ ] Variabila `ocupat` setată în `on start`  
 - [ ] `if ocupat = 0` în `forever`  
 - [ ] A: `ocupat = 1` → `show number temperature` → `ocupat = 0`  
-- [ ] Numele fișierului e `MB1_L08`  
+- [ ] Numele fișierului e `MB1_L08`
 
 ---
 
-## Bonus (după Complet)
+## Bonus ★★★ — Provocare: Felinarul cu două praguri
+*Doar dacă ai terminat Complet.*
+
 - [ ] Fă **două praguri**: sub `30` felinar complet, între `30` și `100` doar un rând aprins, peste `100` stins  
 - [ ] Arată o față **Happy** dacă temperatura e între `18` și `26` și **Sad** în rest (cu `and`)  
 - [ ] Măsoară temperatura în trei locuri din clasă și notează-le într-un tabel  
 - [ ] Gândește un aparat din casă care ar folosi senzorul de lumină
+
+---
+
+## Greșeli frecvente
+1. **„Felinarul e invers”** — semnul `<` și `>` e schimbat. Întuneric = lumină **mică** = `light level < 50`.  
+2. **„Nu se aprinde niciodată”** — pragul e prea mic pentru sala ta. Măsoară și alege altul.  
+3. **„Temperatura arată foarte mult”** — e temperatura plăcii, cu un pic mai mare decât a camerei.  
+4. **„Numărul de la A dispare”** — ai uitat variabila `ocupat`, iar felinarul îl șterge.  
+5. **„Felinarul nu revine după A”** — ai uitat `set ocupat to 0` la sfârșit.  
+6. **„Ecranul clipește”** — lipsește `pause (ms) 100` din `forever`.
+
+---
 
 ## Recapitulare rapidă
 1. `light level` dă un număr între **0** și **255**.  
@@ -193,16 +204,22 @@ Răspuns: semnul e **greșit**. Cu `>` felinarul se aprinde la **lumină** și s
 3. `temperature (°C)` dă temperatura **aproximativă**.  
 4. Pragul îl alegi tu, după locul în care lucrezi.  
 5. O variabilă-semnal (`ocupat`) previne încurcăturile de pe ecran.
+6. **Schema pe scurt (pe foaie):** `forever` → citește `light level` → mai mic decât prag? → da: LED-uri aprinse · nu: stinge · A → `ocupat = 1` → temperatura → `ocupat = 0`
 
-## Schema pe scurt *(pe foaie)*
+---
 
-`forever` → citește `light level` → mai mic decât prag? → da: LED-uri aprinse · nu: stinge · A → `ocupat = 1` → temperatura → `ocupat = 0`
-
-**Quiz scurt:**  
+## Quiz scurt
 - Ce valori poate avea `light level`?  
 - De ce temperatura plăcii poate fi mai mare decât a camerei?  
 - Ce înseamnă `ocupat = 1` în programul nostru?  
 - Cum ai schimba pragul felinarului?
 
+---
+
 ## Temă
 Observă acasă un aparat care „simte” ceva (felinar, senzor de ușă, frigider). Desenează-l și scrie **ce măsoară** și **ce decide**.
+
+---
+
+## Ce urmează — Lecția 9
+Punem tot la un loc într-un proiect cu **stare**: un seif secret.

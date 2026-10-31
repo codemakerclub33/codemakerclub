@@ -1,10 +1,10 @@
-Lecția doi. Pixeli luminoși.
+Lecția doi. Floarea care se deschide.
 
 Astăzi desenezi cu cele douăzeci și cinci de LED-uri ale plăcii și faci desenele să se miște, ca într-un desen animat. Proiectul se numește Floarea care se deschide. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero doi.
 
-Obiectivul. La final desenezi imagini proprii pe LED-uri și le pui una după alta, ca să faci o animație. Minim: o floare care se deschide în trei cadre și se repetă. Complet: minim, plus floarea se și închide la loc, iar la final apare un titlu scris cu Show string.
+Ce facem azi. La final desenezi imagini proprii pe LED-uri și le pui una după alta, ca să faci o animație. Ecranul plăcii este un tablou cu douăzeci și cinci de pătrățele. Fiecare LED este un pixel. Toate ecranele din lume, de la telefon la televizor, desenează la fel, doar că au milioane de pixeli. Azi înveți să pictezi cu lumină.
 
-De ce contează. Ecranul plăcii este un tablou cu douăzeci și cinci de pătrățele. Fiecare LED este un pixel. Toate ecranele din lume, de la telefon la televizor, desenează la fel, doar că au milioane de pixeli. Azi înveți să pictezi cu lumină.
+Instrucțiuni noi azi. Show leds desenează LED cu LED. Show string arată un text care se derulează. Show number arată un număr. Clear screen stinge toate LED-urile. Pause oprește programul pentru câteva milisecunde.
 
 Primul pas. Proiect nou, cu numele din fișier. Lași blocurile On start și Forever unde sunt.
 
@@ -20,12 +20,16 @@ Al șaselea pas. Text și numere. Show string arată un text care se derulează 
 
 Al șaptelea pas, pentru Complet. După al treilea cadru adaugi încă două: cadrul doi, din nou, floarea se închide pe jumătate, apoi cadrul unu, mugurul. La final scrii titlul cu Show string.
 
+De făcut azi. Proiectul se numește Floarea care se deschide. Minim înseamnă: trei cadre, cu pauze, repetate. Complet înseamnă: minim, plus floarea se închide și apare titlul. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg spune: se deschide o floare.
+
+Bonus. Floarea cu patru petale. Desenezi o floare cu patru petale, faci altă animație, încerci timpi diferiți și pui înainte de titlu numărul de petale.
+
 Greșeli frecvente. Vezi doar ultimul cadru: ai uitat pauza. Floarea clipește prea repede: pauza este prea mică, încearcă cinci sute sau o mie. Desenul nu seamănă cu al tău: verifică rândurile de sus în jos și coloanele de la stânga la dreapta. Desenele se amestecă: și On start, și Forever desenează în același timp, deci pune desenele într-un singur loc. Textul are litere ciudate: ai pus diacritice. Un LED a rămas aprins din cadrul vechi: fiecare Show leds înlocuiește complet desenul, deci verifică grila nouă.
 
-Proiectul de azi. Floarea care se deschide.
-
-Minim înseamnă: trei cadre, cu pauze, repetate. Complet înseamnă: minim, plus floarea se închide și apare titlul. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg spune: se deschide o floare.
+Tema. Desenezi pe foaie o animație cu patru cadre, de exemplu un fluture, apoi o faci în MakeCode.
 
 Recapitulare. Ecranul are douăzeci și cinci de LED-uri, în cinci rânduri și cinci coloane. Show leds înseamnă că desenezi tu, LED cu LED. Animația înseamnă mai multe cadre, plus pauze. Pause o mie înseamnă o secundă. On start rulează o dată, Forever rulează mereu.
+
+Ce urmează. În lecția trei facem placa să răspundă când apeși A, B sau A și B împreună, cu un comutator de emoții.
 
 Succes la floarea ta.

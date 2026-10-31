@@ -1,4 +1,5 @@
-# Lecția 5 — Dacă… atunci
+# LECȚIA 5 — Cursa până la 10
+### Decizii: if, else și comparații
 **Modulul 1 · Primii pași cu micro:bit (blocuri)**  
 **Code Maker Club · micro:bit Starter**
 
@@ -7,13 +8,10 @@
 
 ---
 
-## Obiectiv
-La finalul orei folosești blocurile `if … then` și `if … then … else` și compari numere.  
-**Minim:** apeși **A** și scorul crește; când ajunge la **10**, placa te felicită și scorul pornește de la 0.  
-**Complet:** Minim + **B** scade scorul, dar **niciodată sub 0**.
+## Ce facem azi
+La finalul orei folosești blocurile `if … then` și `if … then … else` și compari numere. Tu iei decizii tot timpul: „Dacă plouă, iau umbrela. Altfel, iau ochelarii de soare.” Un program face la fel. Fără decizii, un joc nu poate spune „ai câștigat”, iar o alarmă nu știe când să sune.
 
-## De ce contează
-Tu iei decizii tot timpul: „Dacă plouă, iau umbrela. Altfel, iau ochelarii de soare.” Un program face la fel. Fără decizii, un joc nu poate spune „ai câștigat”, iar o alarmă nu știe când să sune.
+**Unelte azi:** categoria **Logic** · `if … then` · `if … then … else` · comparația `0 = 0` · `show icon` · `show string`
 
 ---
 
@@ -29,7 +27,16 @@ Tu iei decizii tot timpul: „Dacă plouă, iau umbrela. Altfel, iau ochelarii d
 | 100–112 | Greșeli de gândire: găsește bug-ul |
 | 112–120 | Recapitulare, quiz, temă |
 
-**Unelte azi:** categoria **Logic** · `if … then` · `if … then … else` · comparația `0 = 0` · `show icon` · `show string`
+---
+
+## Instrucțiuni noi azi
+
+| Bloc | Ce face | Exemplu |
+|------|---------|---------|
+| `if … then` | Face ceva **doar dacă** e adevărat | `if score = 10 then` |
+| `if … then … else` | Face un lucru dacă e adevărat, altul dacă nu | `else` = altfel |
+| `=`  `<`  `>` | Compară două numere | `score > 3` |
+| `show icon` / `show string` | Arată răspunsul | `show icon [Yes]` |
 
 ---
 
@@ -147,16 +154,6 @@ Răspuns: verificarea e **înaintea** adunării, deci vede `10` abia când apeș
 
 ---
 
-## Greșeli frecvente
-1. **„Bifa nu apare niciodată”** — ai pus `=` cu un număr greșit sau verificarea înainte de `change`.  
-2. **„Scorul trece de 10”** — ai uitat `set score to 0` în ramura `then`.  
-3. **„Apare mereu Bravo”** — ai pus `show string "Bravo"` **în afara** blocului `if`.  
-4. **„Nu pot scrie `score = 10`”** — comparația e în **Logic**, nu în **Math**.  
-5. **„Un `=` nu merge ca la matematică”** — în MakeCode, `set score to 5` **pune** 5, iar comparația `score = 5` **întreabă** dacă e 5. Sunt blocuri diferite.  
-6. **„Scorul de la B ajunge la -1”** — ai uitat condiția `score > 0`.
-
----
-
 ## De făcut azi — „Cursa până la 10”
 
 ### Minim vs Complet
@@ -178,15 +175,29 @@ Răspuns: verificarea e **înaintea** adunării, deci vede `10` abia când apeș
 - [ ] `on button B pressed` cu `if score > 0`  
 - [ ] La `0`, B nu mai scade  
 - [ ] A+B pune scorul pe 0  
-- [ ] Numele fișierului e `MB1_L05`  
+- [ ] Numele fișierului e `MB1_L05`
 
 ---
 
-## Bonus (după Complet)
+## Bonus ★★★ — Provocare: Ținta mobilă
+*Doar dacă ai terminat Complet.*
+
 - [ ] Schimbă ținta de la `10` la `5` și vezi cum devine mai repede  
 - [ ] Adaugă un mesaj `Aproape!` când `score = 9`  
 - [ ] Folosește `and` din **Logic**: `score > 3 and score < 7` arată `Happy`  
 - [ ] Fă o variabilă `tinta` și compară `score = tinta`, ca să schimbi ținta într-un singur loc
+
+---
+
+## Greșeli frecvente
+1. **„Bifa nu apare niciodată”** — ai pus `=` cu un număr greșit sau verificarea înainte de `change`.  
+2. **„Scorul trece de 10”** — ai uitat `set score to 0` în ramura `then`.  
+3. **„Apare mereu Bravo”** — ai pus `show string "Bravo"` **în afara** blocului `if`.  
+4. **„Nu pot scrie `score = 10`”** — comparația e în **Logic**, nu în **Math**.  
+5. **„Un `=` nu merge ca la matematică”** — în MakeCode, `set score to 5` **pune** 5, iar comparația `score = 5` **întreabă** dacă e 5. Sunt blocuri diferite.  
+6. **„Scorul de la B ajunge la -1”** — ai uitat condiția `score > 0`.
+
+---
 
 ## Recapitulare rapidă
 1. **Condiție** = întrebare cu răspuns **adevărat** sau **fals**.  
@@ -194,16 +205,22 @@ Răspuns: verificarea e **înaintea** adunării, deci vede `10` abia când apeș
 3. `else` = „altfel”.  
 4. `=` în comparație **întreabă**, `set … to` **pune** o valoare.  
 5. Ordinea blocurilor schimbă rezultatul.
+6. **Schema pe scurt (pe foaie):** A apăsat → `change score by 1` → `if score = 10` → da: Yes + Bravo + 0 · nu: arată scorul
 
-## Schema pe scurt *(pe foaie)*
+---
 
-A apăsat → `change score by 1` → `if score = 10` → da: Yes + Bravo + 0 · nu: arată scorul
-
-**Quiz scurt:**  
+## Quiz scurt
 - Cu `score = 7`, ce răspuns are `score > 7`?  
 - Ce face `else`?  
 - De ce `change score by 1` vine **înaintea** lui `if`?  
 - Cum împiedici scorul să ajungă sub `0`?
 
+---
+
 ## Temă
 Scrie pe foaie **trei decizii** din viața ta, în forma „Dacă … atunci …, altfel …”. Alege una și imaginează cum ai face-o cu blocuri.
+
+---
+
+## Ce urmează — Lecția 6
+Repetăm lucruri cu **bucle**: o inimă care bate.

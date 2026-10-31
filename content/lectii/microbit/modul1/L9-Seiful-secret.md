@@ -1,4 +1,5 @@
-# Lecția 9 — Seiful secret
+# LECȚIA 9 — Seiful secret
+### Stare: o variabilă care ține minte pasul
 **Modulul 1 · Primii pași cu micro:bit (blocuri)**  
 **Code Maker Club · micro:bit Starter**
 
@@ -7,13 +8,10 @@
 
 ---
 
-## Obiectiv
-La finalul orei construiești un proiect complet, cu o variabilă care ține minte **în ce pas** al codului ești.  
-**Minim:** codul secret **A – B – A** deschide seiful (apare bifa), iar orice greșeală îl închide din nou.  
-**Complet:** Minim + după **3 greșeli** apare o alarmă, iar blocurile de greșeală sunt adunate într-o **funcție**.
+## Ce facem azi
+La finalul orei construiești un proiect complet, cu o variabilă care ține minte **în ce pas** al codului ești. Cardul de acces, lacătul cu cod și telefonul cu parolă funcționează la fel: aparatul **ține minte** ce ai făcut până acum și verifică dacă urmează pasul corect. Variabila care ține minte pasul se numește adesea **stare**. Așa se fac aproape toate jocurile și aparatele.
 
-## De ce contează
-Cardul de acces, lacătul cu cod și telefonul cu parolă funcționează la fel: aparatul **ține minte** ce ai făcut până acum și verifică dacă urmează pasul corect. Variabila care ține minte pasul se numește adesea **stare**. Așa se fac aproape toate jocurile și aparatele.
+**Unelte azi:** variabila `pas` · `on button A / B pressed` · `if … else if … else` · `show icon` · `pause (ms)` · **Functions** (în **Advanced**)
 
 ---
 
@@ -28,7 +26,16 @@ Cardul de acces, lacătul cu cod și telefonul cu parolă funcționează la fel:
 | 90–112 | Alarma și funcția `greseala` (**Complet**) |
 | 112–120 | Recapitulare, quiz, temă |
 
-**Unelte azi:** variabila `pas` · `on button A / B pressed` · `if … else if … else` · `show icon` · `pause (ms)` · **Functions** (în **Advanced**)
+---
+
+## Instrucțiuni noi azi
+
+| Bloc | Ce face | Exemplu |
+|------|---------|---------|
+| variabila `pas` | Ține minte în ce pas al codului ești | `pas = 0` |
+| `if / else if / else` | Alege între trei sau mai multe variante | `pas = 1` |
+| **Funcție** (`Make a Function…`) | Adună blocuri folosite în mai multe locuri | `greseala` |
+| `set … to` | Pune pasul la loc | `set pas to 0` |
 
 ---
 
@@ -184,17 +191,7 @@ on button B pressed
 
 **Gata când:**  
 - [ ] Blocurile pentru „Complet” sunt adăugate  
-- [ ] Simulatorul face tot ce scrie în „Complet”  
-
----
-
-## Greșeli frecvente
-1. **„Seiful nu se deschide niciodată”** — ai uitat `set pas to 1` sau `set pas to 2`.  
-2. **„Se deschide cu orice”** — ai pus doar `if pas = 2`, fără să verifici că ai ajuns acolo cu B.  
-3. **„Rămân poze vechi pe ecran”** — după `Yes` sau `No` lipsește `show icon [Square]`.  
-4. **„După greșeală, următoarea încercare nu merge”** — ai uitat `set pas to 0`.  
-5. **„Nu găsesc funcția”** — e în **Advanced**, apoi **Functions**.  
-6. **„Alarma sună prea devreme”** — `greseli` nu e pus pe `0` în `on start` sau după o reușită.
+- [ ] Simulatorul face tot ce scrie în „Complet”
 
 ---
 
@@ -219,15 +216,29 @@ on button B pressed
 - [ ] Variabila `greseli`  
 - [ ] Funcția `greseala` creată și chemată din A și din B  
 - [ ] La 3 greșeli apare `ALARMA`  
-- [ ] Numele fișierului e `MB1_L09`  
+- [ ] Numele fișierului e `MB1_L09`
 
 ---
 
-## Bonus (după Complet)
+## Bonus ★★★ — Provocare: Seiful cu cod de patru pași
+*Doar dacă ai terminat Complet.*
+
 - [ ] Schimbă codul în **B – B – A** (ce trebuie schimbat?)  
 - [ ] Fă un cod de **4 pași** (ai nevoie de `pas = 3`)  
 - [ ] Adaugă **A+B** ca să schimbi codul seifului (idee pentru proiect mare)  
 - [ ] Desenează pe foaie un alt aparat cu „stare”, de exemplu un lift sau un bancomat
+
+---
+
+## Greșeli frecvente
+1. **„Seiful nu se deschide niciodată”** — ai uitat `set pas to 1` sau `set pas to 2`.  
+2. **„Se deschide cu orice”** — ai pus doar `if pas = 2`, fără să verifici că ai ajuns acolo cu B.  
+3. **„Rămân poze vechi pe ecran”** — după `Yes` sau `No` lipsește `show icon [Square]`.  
+4. **„După greșeală, următoarea încercare nu merge”** — ai uitat `set pas to 0`.  
+5. **„Nu găsesc funcția”** — e în **Advanced**, apoi **Functions**.  
+6. **„Alarma sună prea devreme”** — `greseli` nu e pus pe `0` în `on start` sau după o reușită.
+
+---
 
 ## Recapitulare rapidă
 1. O variabilă poate ține minte **pasul** în care te afli (starea).  
@@ -235,16 +246,22 @@ on button B pressed
 3. O **funcție** adună blocuri pe care le folosești în mai multe locuri.  
 4. Testează **toate** încercările, nu doar pe cea corectă.  
 5. Reia întotdeauna de la început după o greșeală: `set pas to 0`.
+6. **Schema pe scurt (pe foaie):** `pas 0` —A→ `pas 1` —B→ `pas 2` —A→ **Yes** · orice altceva → `greseala` → `pas 0`
 
-## Schema pe scurt *(pe foaie)*
+---
 
-`pas 0` —A→ `pas 1` —B→ `pas 2` —A→ **Yes** · orice altceva → `greseala` → `pas 0`
-
-**Quiz scurt:**  
+## Quiz scurt
 - Ce ține minte variabila `pas`?  
 - Ce se întâmplă dacă apeși B când `pas = 0`?  
 - De ce folosim funcția `greseala`?  
 - Cum ai schimba codul în B–A–B?
 
+---
+
 ## Temă
 Gândește-te la un **cod** pentru seiful tău (4 pași cu A și B). Scrie-l pe foaie, apoi scrie tabelul stărilor pentru primii trei pași.
+
+---
+
+## Ce urmează — Lecția 10
+Combinăm proiectele din tot modulul într-o **insignă inteligentă**.

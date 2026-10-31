@@ -1,10 +1,10 @@
-Lecția patru. Cutia cu număr.
+Lecția patru. Contorul magic.
 
 Astăzi înveți cum ține minte placa un număr. Folosim o variabilă, adică o cutie cu etichetă. Proiectul se numește Contorul magic. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero patru.
 
-Obiectivul. La final știi să creezi o variabilă, să îi schimbi valoarea și să o arăți pe LED-uri. Minim: un contor în care A adaugă unu, B scade unu, iar A și B împreună îl fac din nou zero. Complet: minim, plus o tabelă de scor cu două echipe, roșu și verde.
+Ce facem azi. La final știi să creezi o variabilă, să îi schimbi valoarea și să o arăți pe LED-uri. Un joc trebuie să țină minte scorul. Un termometru ține minte temperatura. Un contor ține minte câte persoane au intrat. Programul păstrează aceste numere într-o variabilă. Fără variabile, placa ar uita totul imediat.
 
-De ce contează. Un joc trebuie să țină minte scorul. Un termometru ține minte temperatura. Un contor ține minte câte persoane au intrat. Programul păstrează aceste numere într-o variabilă. Fără variabile, placa ar uita totul imediat.
+Instrucțiuni noi azi. Make a Variable creează o cutie cu nume. Set pune direct o valoare în cutie. Change adaugă sau scade din valoare. Show number arată valoarea de pe ecran.
 
 Primul pas. Cutia cu etichetă. Pe masă pui o cutie, cu eticheta scor, iar în ea un bilet cu numărul zero. Când cineva spune scor plus unu, scoți biletul, scrii unu și îl pui la loc. Cutia este variabila, eticheta este numele ei, iar biletul este valoarea.
 
@@ -18,12 +18,16 @@ Al cincilea pas, pentru Complet. Facem o tabelă pentru un joc între două echi
 
 Al șaselea pas. Probe pentru mintea de programator. Fără să rulezi, spui ce număr apare. De exemplu: Set score to cinci, apoi Change score by doi, apoi Show number score. Răspunsul este șapte.
 
+De făcut azi. Proiectul se numește Contorul magic. Minim înseamnă: A adaugă, B scade, A și B resetează. Complet înseamnă: minim, plus tabela cu două echipe. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg apasă butoanele și spune ce face fiecare.
+
+Bonus. Numărătoarea inversă. Pui scorul la zece și faci din B o numărătoare inversă, adaugi un al treilea buton și faci un contor pentru câte persoane intră în clasă.
+
 Greșeli frecvente. Scorul rămâne mereu la unu: ai folosit Set în loc de Change. Set pune valoarea, Change adaugă. Pe ecran se vede zero și nu se schimbă: ai scris numărul zero în Show number, nu ai pus blocul rotund score. Nu poți crea variabila: numele are spațiu sau diacritice. Scorul de la A și B se amestecă: ai folosit aceeași variabilă pentru ambele echipe. Scorul nu se resetează după Reset: ai uitat Set la zero în On start. Scorul minus unu arată ciudat, dar este normal.
 
-Proiectul de azi. Contorul magic.
-
-Minim înseamnă: A adaugă, B scade, A și B resetează. Complet înseamnă: minim, plus tabela cu două echipe. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg apasă butoanele și spune ce face fiecare.
+Tema. Te gândești la un joc de societate și scrii pe foaie ce numere trebuie ținute minte și ce nume dai fiecărei variabile.
 
 Recapitulare. Variabila este o cutie cu nume și valoare. Set pune direct valoarea. Change adaugă, iar cu minus unu scade. Blocul rotund cu numele variabilei înseamnă valoarea din cutie. Nume bune: fără spații și fără diacritice.
+
+Ce urmează. În lecția cinci placa ia decizii cu if și else, într-o cursă până la zece.
 
 Succes la contor.

@@ -1,10 +1,10 @@
-Lecția șase. Repetări, inima care bate.
+Lecția șase. Inima care bate.
 
 Astăzi înveți placa să repete lucruri, fără să scrii aceleași blocuri de zece ori. Folosim bucle. Proiectul se numește Inima care bate. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero șase.
 
-Obiectivul. La final folosești Forever, Repeat times și For index from, și știi să faci un desen care se mișcă în ritm. Minim: o inimă care bate bum, bum, pauză, în buclă. Complet: minim, plus butonul A o face mai rapidă, iar B mai lentă, fără să iasă din limite.
+Ce facem azi. La final folosești Forever, Repeat times și For index from, și știi să faci un desen care se mișcă în ritm. Inima ta bate de mii de ori pe zi, fără să fie nevoie de zece mii de instrucțiuni. Programele repetă lucruri: o animație, o verificare de senzor, o alarmă. Cu o buclă scrii un lucru o singură dată și îl faci să se întâmple de câte ori vrei.
 
-De ce contează. Inima ta bate de mii de ori pe zi, fără să fie nevoie de zece mii de instrucțiuni. Programele repetă lucruri: o animație, o verificare de senzor, o alarmă. Cu o buclă scrii un lucru o singură dată și îl faci să se întâmple de câte ori vrei.
+Instrucțiuni noi azi. Forever repetă fără sfârșit. Repeat times repetă de câte ori alegi tu. For index repetă și îți dă numărul pasului. Plot aprinde un singur LED. Clear screen stinge tot ecranul.
 
 Primul pas. Jocul Repetă. Profesorul spune: bate din palme de trei ori. Tu nu ceri bate din palme de trei ori separat. Spui doar de trei ori. Asta este o buclă.
 
@@ -18,12 +18,16 @@ Al cincilea pas, pentru Complet. Facem o variabilă ritm, care ține cât dureaz
 
 Al șaselea pas. Depanare în pereche. Colegul tău a greșit. Găsește bug-ul și spune ce ai schimba.
 
+De făcut azi. Proiectul se numește Inima care bate. Minim înseamnă: o inimă care bate lub, dub, cu odihnă, în buclă. Complet înseamnă: minim, plus A mai repede, B mai lent, între limite. Dacă rămâi în urmă, salvează la Minim.
+
+Bonus. Semaforul pe LED-uri. Faci valul de lumină și pe rândul de jos, adaugi o a doua variabilă pentru bătăi duble, construiești un semafor pe LED-uri și faci trei bătăi în loc de două.
+
 Greșeli frecvente. Inima nu se vede bătând: lipsesc pauzele dintre poze. Bate de trei ori în loc de două: ai numărat greșit în Repeat, sau For index from zero to doi repetă de trei ori. Odihna nu apare: pauza este în interiorul lui Repeat, trage-o în afară. Valul nu se vede: x are un număr fix, nu blocul index. Ritmul ajunge la zero și inima înnebunește: ai uitat condiția. Două blocuri Forever se bat: pentru azi folosește unul singur.
 
-Proiectul de azi. Inima care bate.
-
-Minim înseamnă: o inimă care bate lub, dub, cu odihnă, în buclă. Complet înseamnă: minim, plus A mai repede, B mai lent, între limite. Dacă rămâi în urmă, salvează la Minim.
+Tema. Desenezi pe foaie un ceas deșteptător care sună în ritm și scrii ce buclă ai folosi și ce pauze ai pune.
 
 Recapitulare. Forever repetă pe veci. Repeat patru ori repetă de patru ori. For index from zero to patru repetă de cinci ori și îți dă numărul index. Plot aprinde un LED, Clear screen le stinge pe toate. O variabilă poate controla viteza.
+
+Ce urmează. În lecția șapte placa simte mișcarea, într-o bilă magică ce răspunde Da sau Nu.
 
 Succes la inima ta.

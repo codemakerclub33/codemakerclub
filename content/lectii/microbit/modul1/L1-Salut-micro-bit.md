@@ -1,4 +1,5 @@
-# Lecția 1 — Salut, micro:bit!
+# LECȚIA 1 — Inima mea
+### Placa micro:bit, MakeCode și primul program
 **Modulul 1 · Primii pași cu micro:bit (blocuri)**  
 **Code Maker Club · micro:bit Starter**
 
@@ -7,13 +8,10 @@
 
 ---
 
-## Obiectiv
-La finalul orei știi ce are placa micro:bit, ai făcut un program cu blocuri și îl vezi rulând pe placa adevărată.  
-**Minim:** o inimă care se vede pe LED-uri, mai întâi în simulator, apoi pe placă.  
-**Complet:** Minim + numele tău care se derulează pe LED-uri înainte de inimă.
+## Ce facem azi
+La final ai o **inimă** care se vede pe LED-urile plăcii, mai întâi în simulator, apoi pe placa adevărată, iar în varianta completă îți scrie și numele. Știi ce are placa micro:bit, ai făcut un program cu blocuri și îl vezi rulând. micro:bit este un calculator mic cât o carte de joc: programele tale nu rămân doar pe ecran, ci aprind lumini, simt mișcarea și răspund la butoane. Azi înveți drumul de bază: **faci un program → îl trimiți pe placă → îl vezi rulând**. Îl vom folosi la fiecare lecție.
 
-## De ce contează
-micro:bit este un calculator mic cât o carte de joc. Programele tale nu rămân doar pe ecran, ci fac **lucruri adevărate**: aprind lumini, simt mișcarea și apasă butoane. Azi înveți drumul de bază: **faci un program → îl trimiți pe placă → îl vezi rulând**. Îl vom folosi la fiecare lecție.
+**Unelte azi:** placa micro:bit · cablu micro-USB (cu date) · browser Chrome sau Edge · [makecode.microbit.org](https://makecode.microbit.org)
 
 ---
 
@@ -28,7 +26,17 @@ micro:bit este un calculator mic cât o carte de joc. Programele tale nu rămân
 | 95–112 | **Complet:** numele tău + inimă |
 | 112–120 | Recapitulare, quiz, temă |
 
-**Unelte azi:** placa micro:bit · cablu micro-USB (cu date) · browser Chrome sau Edge · [makecode.microbit.org](https://makecode.microbit.org)
+---
+
+## Instrucțiuni noi azi
+
+| Bloc sau acțiune | Ce face | Exemplu |
+|------------------|---------|---------|
+| `on start` | Ce e înăuntru rulează **o singură dată**, la pornire | blocul de început al programului |
+| `show icon` | Arată o poză mică pe LED-uri | `show icon [Heart]` |
+| `show string` | Arată un text care se derulează | `show string "Ana"` |
+| **Download** | Trimite programul pe placă | direct sau prin fișier `.hex` |
+| **Reset** | Pornește programul de la început | butonul mic din spatele plăcii |
 
 ---
 
@@ -137,16 +145,6 @@ on start
 
 ---
 
-## Greșeli frecvente
-1. **„Nu se întâmplă nimic în simulator”** — blocul e lăsat singur în zona de lucru, nu e lipit de `on start`. Trage-l până se potrivește.  
-2. **„Textul meu are semne ciudate”** — ai scris diacritice. Folosește litere fără semne: `a` în loc de `ă`.  
-3. **„Nu văd unitatea MICROBIT”** — cablul e doar de încărcat sau placa nu e bine băgată. Încearcă alt cablu.  
-4. **„Am apăsat Download, dar placa nu s-a schimbat”** — ai uitat să tragi fișierul **.hex** pe unitatea MICROBIT, sau galbena nu a terminat de clipit.  
-5. **„Inima apare și dispare repede”** — ai pus blocul în `forever` fără pauză. Azi îl punem în `on start`.  
-6. **„Am șters un bloc din greșeală”** — apasă **Ctrl+Z** (Mac: **Cmd+Z**) sau butonul săgeată înapoi din editor.
-
----
-
 ## De făcut azi — „Inima mea”
 
 ### Minim vs Complet
@@ -171,29 +169,52 @@ on start
 
 ---
 
-## Bonus (după Complet)
+## Bonus ★★★ — Provocare: Inima care vorbește
+*Doar dacă ai terminat Complet.*
+
+Placa ta spune mai mult decât „Salut”.
+
 - [ ] Schimbă inima cu altă poză din listă (**Happy**, **Duck**, **House**)  
 - [ ] Pune două poze una după alta, cu `pause (ms) 1000` între ele  
 - [ ] Scrie un mesaj mai lung, de exemplu `Salut din Focsani`  
-- [ ] Desenează pe foaie placa și colorează LED-urile pentru inima ta
+- [ ] Desenează pe foaie placa și colorează LED-urile pentru inima ta  
 
-## Recapitulare rapidă
+---
+
+## Greșeli frecvente
+1. **„Nu se întâmplă nimic în simulator”** — blocul e lăsat singur în zona de lucru, nu e lipit de `on start`. Trage-l până se potrivește.  
+2. **„Textul meu are semne ciudate”** — ai scris diacritice. Folosește litere fără semne: `a` în loc de `ă`.  
+3. **„Nu văd unitatea MICROBIT”** — cablul e doar de încărcat sau placa nu e bine băgată. Încearcă alt cablu.  
+4. **„Am apăsat Download, dar placa nu s-a schimbat”** — ai uitat să tragi fișierul **.hex** pe unitatea MICROBIT, sau galbena nu a terminat de clipit.  
+5. **„Inima apare și dispare repede”** — ai pus blocul în `forever` fără pauză. Azi îl punem în `on start`.  
+6. **„Am șters un bloc din greșeală”** — apasă **Ctrl+Z** (Mac: **Cmd+Z**) sau butonul săgeată înapoi din editor.
+
+---
+
+## Recapitulare pe scurt
 1. micro:bit are **25 de LED-uri**, **2 butoane (A, B)**, **pini** și **senzori**.  
 2. Programul se face din **blocuri** în MakeCode.  
 3. `on start` rulează **o singură dată**, la pornire.  
 4. **Download** trimite programul pe placă: direct sau prin fișier **.hex**.  
-5. **Reset** pornește programul de la început.
+5. **Reset** pornește programul de la început.  
 
-## Schema pe scurt *(pe foaie)*
+**Schema pe scurt (pe foaie):** proiect nou → `on start` → `show icon` / `show string` → simulator → **Download** → placa
 
-Proiect nou → `on start` → `show icon` / `show string` → simulator → **Download** → placa
+---
 
-**Quiz scurt:**  
+## Quiz scurt
 - Câte LED-uri are ecranul plăcii?  
 - Care buton e în stânga, A sau B?  
 - Ce face blocul `on start`?  
 - Cum ajunge programul din editor pe placă?  
 - De ce scriem numele fără diacritice?
 
+---
+
 ## Temă
 Opțional: acasă, deschide din nou proiectul (apare în **My Projects**) și schimbă poza. Adu mâine placa și cablul.
+
+---
+
+## Ce urmează — Lecția 2
+Desenăm cu cele **25 de LED-uri** și facem desenele să se miște, ca într-un desen animat: o floare care se deschide.

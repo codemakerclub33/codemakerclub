@@ -1,4 +1,5 @@
-# Lecția 6 — Repetări: inima care bate
+# LECȚIA 6 — Inima care bate
+### Bucle: forever, repeat și for index
 **Modulul 1 · Primii pași cu micro:bit (blocuri)**  
 **Code Maker Club · micro:bit Starter**
 
@@ -7,13 +8,10 @@
 
 ---
 
-## Obiectiv
-La finalul orei folosești `forever`, `repeat … times` și `for index from … to …` și știi să faci un desen care **se mișcă în ritm**.  
-**Minim:** o inimă care bate „bum-bum … pauză”, în buclă.  
-**Complet:** Minim + butonul **A** o face mai rapidă, iar **B** mai lentă (fără să iasă din limite).
+## Ce facem azi
+La finalul orei folosești `forever`, `repeat … times` și `for index from … to …` și știi să faci un desen care **se mișcă în ritm**. Inima ta bate de mii de ori pe zi, fără să fie nevoie de zece mii de instrucțiuni. Programele repetă lucruri: o animație, o verificare de senzor, o alarmă. Cu o **buclă** scrii un lucru **o singură dată** și îl faci să se întâmple de câte ori vrei.
 
-## De ce contează
-Inima ta bate de mii de ori pe zi, fără să fie nevoie de zece mii de instrucțiuni. Programele repetă lucruri: o animație, o verificare de senzor, o alarmă. Cu o **buclă** scrii un lucru **o singură dată** și îl faci să se întâmple de câte ori vrei.
+**Unelte azi:** `forever` · `repeat … times` · `for index from 0 to 4` · `plot x y` · `clear screen` · `pause (ms)` · variabile · `if`
 
 ---
 
@@ -29,7 +27,17 @@ Inima ta bate de mii de ori pe zi, fără să fie nevoie de zece mii de instruc�
 | 100–112 | Depanare în pereche |
 | 112–120 | Recapitulare, quiz, temă |
 
-**Unelte azi:** `forever` · `repeat … times` · `for index from 0 to 4` · `plot x y` · `clear screen` · `pause (ms)` · variabile · `if`
+---
+
+## Instrucțiuni noi azi
+
+| Bloc | Ce face | Exemplu |
+|------|---------|---------|
+| `forever` | Repetă fără sfârșit | animația inimii |
+| `repeat … times` | Repetă de câte ori alegi tu | `repeat 2 times` |
+| `for index from … to …` | Repetă și îți dă numărul pasului | `for index from 0 to 4` |
+| `plot x y` | Aprinde **un singur** LED | `plot x 3 y 2` |
+| `clear screen` | Stinge tot ecranul | înainte de un desen nou |
 
 ---
 
@@ -155,17 +163,7 @@ forever
 
 **Gata când:**  
 - [ ] Am găsit greșeala colegului și am explicat de ce apare  
-- [ ] Programul reparat merge  
-
----
-
-## Greșeli frecvente
-1. **„Inima nu se vede bătând”** — lipsesc pauzele dintre poze.  
-2. **„Bate de 3 ori în loc de 2”** — ai numărat greșit în `repeat`, sau ai folosit `for index from 0 to 2` (care repetă de **3** ori).  
-3. **„Odihna nu apare”** — `pause (ms) 700` e **în interiorul** lui `repeat`. Trage-o în afară.  
-4. **„Valul nu se vede”** — `x` are un număr fix, nu blocul `index`.  
-5. **„Ritmul ajunge la 0 și inima înnebunește”** — ai uitat condiția `if ritm > 50`.  
-6. **„Apar două blocuri forever care se bat”** — două animații în două `forever` desenează în același timp. Pentru azi folosește **un singur** `forever` cu desene.
+- [ ] Programul reparat merge
 
 ---
 
@@ -191,15 +189,29 @@ forever
 - [ ] `pause (ms) ritm` în interiorul buclei  
 - [ ] A scade `ritm`, dar nu sub `50`  
 - [ ] B crește `ritm`, dar nu peste `400`  
-- [ ] Numele fișierului e `MB1_L06`  
+- [ ] Numele fișierului e `MB1_L06`
 
 ---
 
-## Bonus (după Complet)
+## Bonus ★★★ — Provocare: Semaforul pe LED-uri
+*Doar dacă ai terminat Complet.*
+
 - [ ] Fă **valul de lumină** din pasul 4 și pe rândul de jos (`y` = `4`)  
 - [ ] Adaugă o a doua variabilă, `bataiDuble`, și arată câte bătăi ai făcut (cu `show number`) — doar la apăsarea lui A+B  
 - [ ] Fă un **semafor pe LED-uri**: un rând verde (rândul 0), unul galben (rândul 2), unul roșu (rândul 4), cu `plot`  
 - [ ] Folosește `repeat 3 times` pentru ca inima să facă trei bătăi, nu două
+
+---
+
+## Greșeli frecvente
+1. **„Inima nu se vede bătând”** — lipsesc pauzele dintre poze.  
+2. **„Bate de 3 ori în loc de 2”** — ai numărat greșit în `repeat`, sau ai folosit `for index from 0 to 2` (care repetă de **3** ori).  
+3. **„Odihna nu apare”** — `pause (ms) 700` e **în interiorul** lui `repeat`. Trage-o în afară.  
+4. **„Valul nu se vede”** — `x` are un număr fix, nu blocul `index`.  
+5. **„Ritmul ajunge la 0 și inima înnebunește”** — ai uitat condiția `if ritm > 50`.  
+6. **„Apar două blocuri forever care se bat”** — două animații în două `forever` desenează în același timp. Pentru azi folosește **un singur** `forever` cu desene.
+
+---
 
 ## Recapitulare rapidă
 1. `forever` = repetă pe veci.  
@@ -207,16 +219,22 @@ forever
 3. `for index from 0 to 4` = repetă de **5** ori și îți dă numărul `index`.  
 4. `plot x y` aprinde un LED, `clear screen` stinge toate LED-urile.  
 5. O variabilă poate controla **viteza**.
+6. **Schema pe scurt (pe foaie):** `forever` → `repeat 2 times` (Heart → pauză → Small Heart → pauză) → odihnă
 
-## Schema pe scurt *(pe foaie)*
+---
 
-`forever` → `repeat 2 times` (Heart → pauză → Small Heart → pauză) → odihnă
-
-**Quiz scurt:**  
+## Quiz scurt
 - De câte ori repetă `for index from 0 to 4`?  
 - Care e diferența dintre `forever` și `repeat 4 times`?  
 - Ce face `plot x 3 y 2`?  
 - De ce nu lăsăm `ritm` să ajungă la `0`?
 
+---
+
 ## Temă
 Desenează pe foaie un **ceas deșteptător** care sună în ritm: sunet scurt, pauză, sunet scurt. Scrie ce buclă ai folosi și ce pauze ai pune.
+
+---
+
+## Ce urmează — Lecția 7
+Placa simte **mișcarea**: o bilă magică ce răspunde Da sau Nu.

@@ -1,4 +1,5 @@
-# Lecția 2 — Pixeli luminoși
+# LECȚIA 2 — Floarea care se deschide
+### Desenăm pe LED-uri și facem animații
 **Modulul 1 · Primii pași cu micro:bit (blocuri)**  
 **Code Maker Club · micro:bit Starter**
 
@@ -7,13 +8,10 @@
 
 ---
 
-## Obiectiv
-La finalul orei desenezi imagini proprii pe LED-uri și le pui una după alta ca să faci o **animație**.  
-**Minim:** o floare care se deschide în **3 cadre** și se repetă.  
-**Complet:** Minim + floarea se și **închide** la loc și apare un titlu scris cu `show string`.
+## Ce facem azi
+La finalul orei desenezi imagini proprii pe LED-uri și le pui una după alta ca să faci o **animație**. Ecranul plăcii e un tablou cu 25 de pătrățele. Fiecare LED e un **pixel**. Toate ecranele din lume, de la telefon la televizor, desenează la fel, doar că au milioane de pixeli. Azi înveți să „pictezi” cu lumină.
 
-## De ce contează
-Ecranul plăcii e un tablou cu 25 de pătrățele. Fiecare LED e un **pixel**. Toate ecranele din lume, de la telefon la televizor, desenează la fel, doar că au milioane de pixeli. Azi înveți să „pictezi” cu lumină.
+**Unelte azi:** `show leds` · `show number` · `show string` · `clear screen` · `pause (ms)` · `forever`
 
 ---
 
@@ -29,7 +27,17 @@ Ecranul plăcii e un tablou cu 25 de pătrățele. Fiecare LED e un **pixel**. T
 | 95–112 | **Complet:** floarea se închide + titlu |
 | 112–120 | Recapitulare, quiz, temă |
 
-**Unelte azi:** `show leds` · `show number` · `show string` · `clear screen` · `pause (ms)` · `forever`
+---
+
+## Instrucțiuni noi azi
+
+| Bloc | Ce face | Exemplu |
+|------|---------|---------|
+| `show leds` | Desenezi LED cu LED pe grila 5 × 5 | un cadru de floare |
+| `show string` | Arată un text care se derulează | `show string "Floarea"` |
+| `show number` | Arată un număr | `show number 5` |
+| `clear screen` | Stinge toate LED-urile | între două desene |
+| `pause (ms)` | Așteaptă (1000 ms = 1 secundă) | `pause (ms) 500` |
 
 ---
 
@@ -151,17 +159,7 @@ Poți copia un bloc `show leds` cu **clic dreapta → Duplicate**, ca să nu des
 
 **Gata când:**  
 - [ ] Blocurile pentru „Complet” sunt adăugate  
-- [ ] Simulatorul face tot ce scrie în „Complet”  
-
----
-
-## Greșeli frecvente
-1. **„Văd doar ultimul cadru”** — ai uitat `pause`. Pune o pauză după fiecare `show leds`.  
-2. **„Floarea clipește prea repede”** — pauză prea mică. Încearcă `500` sau `1000`.  
-3. **„Desenul nu seamănă cu al meu”** — verifică rândurile de sus în jos și coloanele de la stânga la dreapta.  
-4. **„Desenele se amestecă”** — și `on start`, și `forever` desenează în același timp. Pune desenele într-un singur loc.  
-5. **„Textul are litere ciudate”** — ai pus diacritice. Scrie `a`, nu `ă`.  
-6. **„Un LED a rămas aprins din cadrul vechi”** — fiecare `show leds` înlocuiește complet desenul, deci verifică ce ai bifat în grila nouă.
+- [ ] Simulatorul face tot ce scrie în „Complet”
 
 ---
 
@@ -186,15 +184,29 @@ Poți copia un bloc `show leds` cu **clic dreapta → Duplicate**, ca să nu des
 - [ ] Cadrele 2 și 1 repetate la final (floarea se închide)  
 - [ ] `show string "Floare"` la sfârșit  
 - [ ] Nicio încurcătură între cadre (toate în `forever`)  
-- [ ] Numele fișierului e `MB1_L02`  
+- [ ] Numele fișierului e `MB1_L02`
 
 ---
 
-## Bonus (după Complet)
+## Bonus ★★★ — Provocare: Floarea cu patru petale
+*Doar dacă ai terminat Complet.*
+
 - [ ] Desenează o floare cu **4 petale** diferite  
 - [ ] Fă altă animație: o **inimă care crește** sau o **rachetă** care urcă  
 - [ ] Încearcă timpi diferiți (`200`, `800`) și vezi cum se schimbă „viteza”  
 - [ ] Pune un `show number` cu numărul de petale înainte de titlu
+
+---
+
+## Greșeli frecvente
+1. **„Văd doar ultimul cadru”** — ai uitat `pause`. Pune o pauză după fiecare `show leds`.  
+2. **„Floarea clipește prea repede”** — pauză prea mică. Încearcă `500` sau `1000`.  
+3. **„Desenul nu seamănă cu al meu”** — verifică rândurile de sus în jos și coloanele de la stânga la dreapta.  
+4. **„Desenele se amestecă”** — și `on start`, și `forever` desenează în același timp. Pune desenele într-un singur loc.  
+5. **„Textul are litere ciudate”** — ai pus diacritice. Scrie `a`, nu `ă`.  
+6. **„Un LED a rămas aprins din cadrul vechi”** — fiecare `show leds` înlocuiește complet desenul, deci verifică ce ai bifat în grila nouă.
+
+---
 
 ## Recapitulare rapidă
 1. Ecranul are **25 de LED-uri**, în 5 rânduri și 5 coloane.  
@@ -202,16 +214,22 @@ Poți copia un bloc `show leds` cu **clic dreapta → Duplicate**, ca să nu des
 3. Animația = **mai multe cadre** + **pauze**.  
 4. `pause (ms) 1000` = o secundă.  
 5. `on start` = o dată · `forever` = mereu, imediat ce începe programul.
+6. **Schema pe scurt (pe foaie):** `forever` (cadru 1 → pauză → cadru 2 → pauză → cadru 3 → pauză → cadru 2 → pauză → cadru 1 → pauză → titlu)
 
-## Schema pe scurt *(pe foaie)*
+---
 
-`forever` (cadru 1 → pauză → cadru 2 → pauză → cadru 3 → pauză → cadru 2 → pauză → cadru 1 → pauză → titlu)
-
-**Quiz scurt:**  
+## Quiz scurt
 - Câte secunde sunt `2000 ms`?  
 - Ce se întâmplă dacă ai un `forever` și un `on start` care desenează amândouă?  
 - Care e adresa LED-ului din colțul din stânga sus?  
 - De ce avem nevoie de pauze într-o animație?
 
+---
+
 ## Temă
 Desenează pe foaie o animație cu **4 cadre** (de exemplu un fluture sau un ceas care bate), apoi fă-o în MakeCode.
+
+---
+
+## Ce urmează — Lecția 3
+Facem placa să răspundă când apeși **A**, **B** sau **A+B**: un comutator de emoții.

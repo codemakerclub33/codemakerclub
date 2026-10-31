@@ -1,10 +1,10 @@
-Lecția unu. Salut, micro:bit!
+Lecția unu. Inima mea.
 
 Astăzi faci cunoștință cu placa micro:bit, deschizi editorul MakeCode și îți trimiți primul program pe placă. Proiectul se numește Inima mea. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero unu.
 
-Obiectivul. La final știi ce are placa, ai făcut un program cu blocuri și îl vezi rulând pe placa adevărată. Minim: o inimă care se vede pe LED-uri, mai întâi în simulator, apoi pe placă. Complet: minim, plus numele tău, care se derulează pe LED-uri înainte de inimă.
+Ce facem azi. La final ai o inimă care se vede pe LED-urile plăcii, mai întâi în simulator, apoi pe placa adevărată, iar în varianta completă îți scrie și numele. Știi ce are placa, ai făcut un program cu blocuri și îl vezi rulând. Micro:bit este un calculator mic cât o carte de joc. Azi înveți drumul de bază. Faci un program, îl trimiți pe placă și îl vezi rulând. Îl vom folosi la fiecare lecție. Ai nevoie de placa micro:bit, de un cablu micro USB care transmite date, de un browser Chrome sau Edge și de editorul MakeCode.
 
-De ce contează. Micro:bit este un calculator mic cât o carte de joc. Programele tale nu rămân doar pe ecran: aprind lumini, simt mișcarea și răspund la butoane. Azi înveți drumul de bază. Faci un program, îl trimiți pe placă și îl vezi rulând. Îl vom folosi la fiecare lecție.
+Instrucțiuni noi azi. Blocul On start rulează o singură dată, la pornire. Show icon arată o poză mică pe LED-uri. Show string arată un text care se derulează. Download trimite programul pe placă. Iar Reset pornește programul de la început.
 
 Primul pas. Cunoaștem placa. O ții cu LED-urile spre tine. Ecranul are douăzeci și cinci de luminițe roșii, așezate cinci pe cinci. Mai sunt două butoane, A în stânga și B în dreapta, apoi pinii, de jos, și senzorii, care simt lumina, mișcarea și temperatura.
 
@@ -16,12 +16,14 @@ Al patrulea pas. Trimitem programul pe placă. Conectezi placa la calculator cu 
 
 Al cincilea pas, pentru Complet. Din Basic tragi Show string și îl pui deasupra lui Show icon, tot în On start. În bloc ștergi cuvântul Hello și scrii prenumele tău. Fără diacritice, pentru că LED-urile nu știu literele cu semne. Scrii Ana, nu Ană. Pe placă, literele trec una după alta, apoi rămâne inima aprinsă.
 
+De făcut azi. Proiectul se numește Inima mea. Minim înseamnă: o inimă pe LED-uri, în simulator și pe placă. Complet înseamnă: minim, plus numele tău care se derulează înainte de inimă. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg privește placa și spune: e o inimă, fără explicații.
+
+Bonus. Inima care vorbește. Schimbi inima cu altă poză, pui două poze una după alta, cu o pauză între ele, scrii un mesaj mai lung și desenezi pe foaie placa, cu LED-urile colorate.
+
 Greșeli frecvente. Nu se întâmplă nimic în simulator: blocul este lăsat singur, nu este lipit de On start. Textul are semne ciudate: ai scris diacritice. Nu vezi unitatea MICROBIT: cablul poate fi doar de încărcat, încearcă altul. Ai apăsat Download, dar placa nu s-a schimbat: ai uitat să tragi fișierul hex pe unitatea MICROBIT, sau lumina galbenă nu a terminat de clipit. Inima apare și dispare repede: ai pus blocul în Forever, fără pauză. Ai șters un bloc din greșeală: apeși Control și Z, iar pe Mac Command și Z.
 
-Proiectul de azi. Inima mea.
-
-Minim înseamnă: o inimă pe LED-uri, în simulator și pe placă. Complet înseamnă: minim, plus numele tău care se derulează înainte de inimă. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg privește placa și spune: e o inimă, fără explicații.
+Tema. Opțional: acasă, deschizi din nou proiectul din My Projects și schimbi poza. Adu mâine placa și cablul.
 
 Recapitulare. Micro:bit are douăzeci și cinci de LED-uri, două butoane, A și B, pini și senzori. Programul se face din blocuri, în MakeCode. On start rulează o singură dată, la pornire. Download trimite programul pe placă. Reset pornește programul de la început.
 
-Succes la prima ta inimă pe micro:bit.
+Ce urmează. În lecția doi desenăm cu cele douăzeci și cinci de LED-uri și facem desenele să se miște, ca într-un desen animat. Succes la prima ta inimă pe micro:bit.

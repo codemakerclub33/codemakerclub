@@ -1,4 +1,5 @@
-# Lecția 3 — Butoanele A și B
+# LECȚIA 3 — Comutatorul de emoții
+### Evenimente: butoanele A și B
 **Modulul 1 · Primii pași cu micro:bit (blocuri)**  
 **Code Maker Club · micro:bit Starter**
 
@@ -7,13 +8,10 @@
 
 ---
 
-## Obiectiv
-La finalul orei știi ce este un **eveniment** și faci placa să reacționeze când apeși **A**, **B** sau **A și B** împreună.  
-**Minim:** A arată o față veselă, B arată o față tristă.  
-**Complet:** Minim + A și B împreună arată o inimă, iar la pornire placa „doarme”.
+## Ce facem azi
+La finalul orei știi ce este un **eveniment** și faci placa să reacționeze când apeși **A**, **B** sau **A și B** împreună. Telecomanda, tastatura și mouse-ul funcționează la fel: tu **faci ceva**, iar aparatul **răspunde**. În programare, „ceva ce se întâmplă” se numește **eveniment**. Blocurile de eveniment așteaptă liniștite, apoi pornesc exact când ai nevoie de ele.
 
-## De ce contează
-Telecomanda, tastatura și mouse-ul funcționează la fel: tu **faci ceva**, iar aparatul **răspunde**. În programare, „ceva ce se întâmplă” se numește **eveniment**. Blocurile de eveniment așteaptă liniștite, apoi pornesc exact când ai nevoie de ele.
+**Unelte azi:** `on button A pressed` · `on button B pressed` · `on button A+B pressed` · `show icon` · `clear screen` · `pause (ms)`
 
 ---
 
@@ -29,7 +27,17 @@ Telecomanda, tastatura și mouse-ul funcționează la fel: tu **faci ceva**, iar
 | 95–112 | Experimente: ce se întâmplă dacă apeși repede? |
 | 112–120 | Recapitulare, quiz, temă |
 
-**Unelte azi:** `on button A pressed` · `on button B pressed` · `on button A+B pressed` · `show icon` · `clear screen` · `pause (ms)`
+---
+
+## Instrucțiuni noi azi
+
+| Bloc | Ce face | Exemplu |
+|------|---------|---------|
+| `on button A pressed` | Rulează doar când apeși **A** | `show icon [Happy]` |
+| `on button B pressed` | Rulează doar când apeși **B** | `show icon [Sad]` |
+| `on button A+B pressed` | Rulează când apeși **ambele** deodată | `show icon [Heart]` |
+| `show icon` | Arată o poză | `show icon [Asleep]` |
+| `clear screen` | Stinge toate LED-urile | la sfârșitul unui gest |
 
 ---
 
@@ -131,16 +139,6 @@ Răspunsuri: ultima poză rămâne pe ecran, iar după Reset programul pornește
 
 ---
 
-## Greșeli frecvente
-1. **„Nu se întâmplă nimic când apăs”** — blocul `show icon` nu e **în interiorul** blocului de eveniment. Trage-l până se lipește.  
-2. **„A+B nu merge”** — apeși butoanele la momente diferite. Încearcă să le apeși simultan.  
-3. **„Am două blocuri la fel pentru A”** — editorul te poate avertiza sau doar unul va face ce vrei. Pentru fiecare buton păstrează **un singur** bloc.  
-4. **„Pe placă se vede Asleep și nu se mai schimbă”** — verifică dacă ai descărcat programul nou după modificare.  
-5. **„Simulatorul merge, placa nu”** — nu ai trimis ultima versiune. Apasă din nou **Download**.  
-6. **„Apeși butonul și poza dispare repede”** — nu pune `clear screen` după `show icon`, decât dacă vrei asta.
-
----
-
 ## De făcut azi — „Comutatorul de emoții”
 
 ### Minim vs Complet
@@ -161,15 +159,29 @@ Răspunsuri: ultima poză rămâne pe ecran, iar după Reset programul pornește
 - [ ] `on button A+B pressed` cu `show icon [Heart]`  
 - [ ] `on start` cu `show icon [Asleep]`  
 - [ ] Testat cu **Reset**: placa „adoarme” din nou  
-- [ ] Numele fișierului e `MB1_L03`  
+- [ ] Numele fișierului e `MB1_L03`
 
 ---
 
-## Bonus (după Complet)
+## Bonus ★★★ — Provocare: Semaforul dispozițiilor
+*Doar dacă ai terminat Complet.*
+
 - [ ] Fă un **semafor de dispoziție**: A = `Happy`, B = `Meh`, A+B = `Angry` (alege din listă)  
 - [ ] La A arată fața veselă **1 secundă** (`pause (ms) 1000`), apoi `clear screen`  
 - [ ] Plăci V2: adaugă **on logo pressed** cu o poză, pentru că logoul se atinge ca un buton  
 - [ ] Scrie cu un coleg un „joc de emoții”: el spune o emoție, tu apeși butonul potrivit
+
+---
+
+## Greșeli frecvente
+1. **„Nu se întâmplă nimic când apăs”** — blocul `show icon` nu e **în interiorul** blocului de eveniment. Trage-l până se lipește.  
+2. **„A+B nu merge”** — apeși butoanele la momente diferite. Încearcă să le apeși simultan.  
+3. **„Am două blocuri la fel pentru A”** — editorul te poate avertiza sau doar unul va face ce vrei. Pentru fiecare buton păstrează **un singur** bloc.  
+4. **„Pe placă se vede Asleep și nu se mai schimbă”** — verifică dacă ai descărcat programul nou după modificare.  
+5. **„Simulatorul merge, placa nu”** — nu ai trimis ultima versiune. Apasă din nou **Download**.  
+6. **„Apeși butonul și poza dispare repede”** — nu pune `clear screen` după `show icon`, decât dacă vrei asta.
+
+---
 
 ## Recapitulare rapidă
 1. **Eveniment** = ceva ce se întâmplă (apeși un buton).  
@@ -177,16 +189,22 @@ Răspunsuri: ultima poză rămâne pe ecran, iar după Reset programul pornește
 3. A e în **stânga**, B e în **dreapta**, **A+B** = ambele **deodată**.  
 4. Pentru fiecare buton ai nevoie de **un singur** bloc.  
 5. **Reset** reia programul de la început.
+6. **Schema pe scurt (pe foaie):** Eveniment (apăs A / B / A+B) → bloc de eveniment → `show icon` → poza apare
 
-## Schema pe scurt *(pe foaie)*
+---
 
-Eveniment (apăs A / B / A+B) → bloc de eveniment → `show icon` → poza apare
-
-**Quiz scurt:**  
+## Quiz scurt
 - Ce este un eveniment? Dă un exemplu din viața de zi cu zi.  
 - Pe ce parte a plăcii se află butonul B?  
 - Cum faci ca placa să răspundă când apeși A și B deodată?  
 - Ce se întâmplă după Reset cu poza `Asleep`?
 
+---
+
 ## Temă
 Gândește-te la un aparat de acasă care are butoane (telecomandă, cuptor cu microunde). Desenează pe foaie 3 butoane și ce **ar trebui** să facă placa micro:bit la fiecare.
+
+---
+
+## Ce urmează — Lecția 4
+Învățăm **variabilele**, cutiile cu nume care țin minte numere: un contor magic.

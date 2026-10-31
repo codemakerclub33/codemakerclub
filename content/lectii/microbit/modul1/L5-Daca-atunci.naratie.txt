@@ -1,10 +1,10 @@
-Lecția cinci. Dacă, atunci.
+Lecția cinci. Cursa până la zece.
 
 Astăzi înveți placa să ia decizii: dacă se întâmplă ceva, face un lucru, altfel face altceva. Proiectul se numește Cursa până la zece. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero cinci.
 
-Obiectivul. La final folosești blocurile If then și If then else și compari numere. Minim: apeși A și scorul crește. Când ajunge la zece, placa te felicită, iar scorul pornește de la zero. Complet: minim, plus B scade scorul, dar niciodată sub zero.
+Ce facem azi. La final folosești blocurile If then și If then else și compari numere. Tu iei decizii tot timpul. Dacă plouă, iei umbrela, altfel iei ochelarii de soare. Un program face la fel. Fără decizii, un joc nu poate spune ai câștigat, iar o alarmă nu știe când să sune.
 
-De ce contează. Tu iei decizii tot timpul. Dacă plouă, iei umbrela, altfel iei ochelarii de soare. Un program face la fel. Fără decizii, un joc nu poate spune ai câștigat, iar o alarmă nu știe când să sune.
+Instrucțiuni noi azi. If then face ceva doar dacă o condiție este adevărată. Else înseamnă altfel. Semnele de comparație întreabă dacă două numere sunt egale, mai mici sau mai mari. Show icon și Show string arată răspunsul.
 
 Primul pas. Jocul cu cartonașe. Pe un cartonaș scrie: dacă mă ating de cap, tu sari. Un coleg citește. Dacă te-ai atins de cap, el sare, altfel stă pe loc. Fiecare decizie are o condiție, care poate fi adevărată sau falsă, și o acțiune.
 
@@ -18,12 +18,16 @@ Al cincilea pas, pentru Complet. Dacă scorul este zero și apeși B, ar ieși m
 
 Al șaselea pas. Găsește greșeala. Un coleg a scris programul pentru cursa până la zece, dar nu funcționează. Verifică ordinea blocurilor și unde este pus blocul de resetare.
 
+De făcut azi. Proiectul se numește Cursa până la zece. Minim înseamnă: A crește scorul, la zece apare Bravo, iar scorul revine la zero. Complet înseamnă: minim, plus B scade fără să coboare sub zero. Dacă rămâi în urmă, salvează la Minim.
+
+Bonus. Ținta mobilă. Schimbi ținta de la zece la cinci, adaugi un mesaj când scorul este nouă, folosești and și faci o variabilă pentru țintă.
+
 Greșeli frecvente. Bifa nu apare niciodată: ai pus egal cu un număr greșit sau verificarea înainte de Change. Scorul trece de zece: ai uitat Set score to zero în ramura Then. Apare mereu Bravo: blocul Show string este în afara lui If. Nu găsești comparația: este în Logic, nu în Math. Egal în comparație întreabă, iar Set pune o valoare. Scorul de la B ajunge la minus unu: ai uitat condiția score mai mare decât zero.
 
-Proiectul de azi. Cursa până la zece.
-
-Minim înseamnă: A crește scorul, la zece apare Bravo, iar scorul revine la zero. Complet înseamnă: minim, plus B scade fără să coboare sub zero. Dacă rămâi în urmă, salvează la Minim.
+Tema. Scrii pe foaie trei decizii din viața ta, în forma: dacă, atunci, altfel. Alegi una și te gândești cum ai face-o cu blocuri.
 
 Recapitulare. Condiția este o întrebare cu răspuns adevărat sau fals. If then face ceva doar dacă este adevărat. Else înseamnă altfel. Egal în comparație întreabă, iar Set pune o valoare. Ordinea blocurilor schimbă rezultatul.
+
+Ce urmează. În lecția șase repetăm lucruri cu bucle și facem o inimă care bate.
 
 Succes în cursa ta.
