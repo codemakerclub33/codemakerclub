@@ -471,64 +471,7 @@ Maximul este 14
 
 Un `if … else` poate completa o variabilă cu valori diferite. Dacă numerele sunt egale, merge `else` și `maxim` primește `b`, care este tot egal cu `a`, deci rezultatul rămâne corect.
 
-**Acasă 2 — Parola cu mesaj pentru ambele cazuri**
-```cpp
-#include <iostream>
-#include <string>
-using namespace std;
-
-int main() {
-    string parola;
-
-    cout << "Parola: ";
-    cin >> parola;
-
-    if (parola == "codemaker") {
-        cout << "Acces permis. Bine ai venit!" << endl;
-    } else {
-        cout << "Parola gresita. Incearca din nou." << endl;
-    }
-    return 0;
-}
-```
-
-**Rulare** (tastezi `abc`):
-```
-Parola: abc
-Parola gresita. Incearca din nou.
-```
-
-**Acasă 3 — Semnul unui număr**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int n;
-
-    cout << "Introdu un numar: ";
-    cin >> n;
-
-    if (n > 0) {
-        cout << "Pozitiv" << endl;
-    } else if (n < 0) {
-        cout << "Negativ" << endl;
-    } else {
-        cout << "Zero" << endl;
-    }
-    return 0;
-}
-```
-
-**Rulare** (tastezi `0`):
-```
-Introdu un numar: 0
-Zero
-```
-
-Aceasta este o problemă din L6, dar acum este mai scurtă și, mai ales, mai sigură: exact un mesaj, indiferent de număr.
-
-**Acasă 4 — Semafor cu `char`**
+**Acasă 2 — Semafor cu `char`**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -560,50 +503,7 @@ Culoare necunoscuta.
 
 Cazul final `else` este locul ideal pentru **valori neașteptate**, de exemplu o literă pe care programul nu o cunoaște.
 
-**Acasă 5 — Verific datele, apoi decid**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int nota;
-
-    cout << "Nota (1-10): ";
-    cin >> nota;
-
-    if (nota < 1) {
-        cout << "Eroare: nota prea mica." << endl;
-    } else if (nota > 10) {
-        cout << "Eroare: nota prea mare." << endl;
-    } else {
-        // aici stim sigur ca nota este intre 1 si 10
-        if (nota >= 5) {
-            cout << "Promovat." << endl;
-        } else {
-            cout << "Corigent." << endl;
-        }
-    }
-    return 0;
-}
-```
-
-**Rulare 1** (tastezi `11`):
-```
-Nota (1-10): 11
-Eroare: nota prea mare.
-```
-
-**Rulare 2** (tastezi `6`):
-```
-Nota (1-10): 6
-Promovat.
-```
-
-Cu `&&` (lecția 8) ai putea face asta și într-o singură condiție. Acum o rezolvi cu un lanț care **mai întâi elimină valorile invalide**, apoi decide pe cele valide. Programele reale fac exact așa.
-
-> **Regulă:** un `else` aparține mereu celui mai apropiat `if` care nu are încă un `else`. Dacă ai mai multe `if`-uri imbricate, **acoladele și indentarea** te ajută să vezi clar cine cu cine merge.
-
-**Acasă 6 — Maximul dintre trei numere**
+**Acasă 3 — Maximul dintre trei numere**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -635,49 +535,7 @@ Maximul este 21
 
 Tehnica este una de reținut: pornești cu `a` ca „cel mai mare până acum” și îl înlocuiești dacă găsești unul mai mare. Merge la fel și pentru 4, 10 sau 100 de numere. Inversând comparațiile (`<` în loc de `>`) obții minimul.
 
-**Acasă 7 — Reducerea de la magazin**
-```cpp
-#include <iostream>
-#include <iomanip>
-using namespace std;
-
-int main() {
-    double total;
-    double procent;
-
-    cout << "Totalul cosului (lei): ";
-    cin >> total;
-
-    if (total >= 200) {
-        procent = 15;
-    } else if (total >= 100) {
-        procent = 10;
-    } else if (total >= 50) {
-        procent = 5;
-    } else {
-        procent = 0;
-    }
-
-    double reducere = total * procent / 100;
-    double dePlata = total - reducere;
-
-    cout << fixed << setprecision(2);
-    cout << "Reducere: " << procent << "% (" << reducere << " lei)" << endl;
-    cout << "De plata: " << dePlata << " lei" << endl;
-    return 0;
-}
-```
-
-**Rulare** (tastezi `120`):
-```
-Totalul cosului (lei): 120
-Reducere: 10.00% (12.00 lei)
-De plata: 108.00 lei
-```
-
-Condițiile sunt ordonate de la cel mai mare prag la cel mai mic, exact cum am învățat la ordinea condițiilor.
-
-**Acasă 8 — Taxi: preț în funcție de distanță**
+**Acasă 4 — Taxi: preț în funcție de distanță**
 ```cpp
 /*
    Program: Taxi

@@ -462,39 +462,7 @@ Citește un număr și afișează **trei mesaje independente**, fiecare cu propr
 ### Exemple pentru acasă
 Aceste exemple folosesc exact ce ai învățat azi. Scrie-le de mână, rulează-le și schimbă-le după preferințe.
 
-**Acasă 1 — Mai multe `if`-uri la rând**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int n;
-
-    cout << "Introdu un numar: ";
-    cin >> n;
-
-    if (n > 0) {
-        cout << "Numarul este pozitiv." << endl;
-    }
-    if (n < 0) {
-        cout << "Numarul este negativ." << endl;
-    }
-    if (n == 0) {
-        cout << "Numarul este zero." << endl;
-    }
-    return 0;
-}
-```
-
-**Rulare** (tastezi `-4`):
-```
-Introdu un numar: -4
-Numarul este negativ.
-```
-
-Fiecare `if` este verificat separat, de sus în jos. Pentru `-4`, doar a doua condiție este adevărată.
-
-**Acasă 2 — Compar două numere**
+**Acasă 1 — Compar două numere**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -526,7 +494,7 @@ Introdu doua numere: 12 7
 
 Pentru oricare două numere, exact **una** dintre cele trei condiții este adevărată.
 
-**Acasă 3 — Compar caractere**
+**Acasă 2 — Compar caractere**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -555,7 +523,7 @@ Super! Continua sa exersezi.
 
 Observă apostrofurile: `'d'` este un `char`. Programul tratează diferit literele `d` și `D`, deoarece sunt coduri ASCII diferite.
 
-**Acasă 4 — Biletul de cinema**
+**Acasă 3 — Biletul de cinema**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -599,42 +567,7 @@ Pretul biletului: 20 lei
 
 Un `if` poate și **schimba** valoarea unei variabile, nu doar să afișeze un mesaj. Prețul pornește de la 20 și se modifică doar dacă este îndeplinită condiția.
 
-**Acasă 5 — Viețile din joc**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int vieti;
-
-    cout << "Cate vieti mai ai? ";
-    cin >> vieti;
-
-    if (vieti <= 0) {
-        cout << "GAME OVER" << endl;
-    }
-    if (vieti == 1) {
-        cout << "Atentie! Ultima viata!" << endl;
-    }
-    if (vieti >= 3) {
-        cout << "Esti in siguranta." << endl;
-    }
-    if (vieti > 5) {
-        cout << "Bonus: ai mai multe vieti decat o runda normala!" << endl;
-    }
-    return 0;
-}
-```
-
-**Rulare** (tastezi `1`):
-```
-Cate vieti mai ai? 1
-Atentie! Ultima viata!
-```
-
-Un program care reacționează la starea jocului: fiecare `if` are propria condiție și propriul mesaj.
-
-**Acasă 6 — „Ești admis?”**
+**Acasă 4 — „Ești admis?”**
 ```cpp
 /*
    Program: Esti admis?

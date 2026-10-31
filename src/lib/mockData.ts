@@ -224,16 +224,16 @@ const genLectii = (modulId: string, titluri: string[]) =>
 export const lectii = [
   // C++ Modul 1 — Bazele
   ...genLectii('m1', [
-    'Introducere + primul program',
-    'Comentarii + structura programului',
-    'Variabile int',
-    'cin + operații aritmetice',
-    'Tipuri de date',
-    'Operatori relaționali + if',
-    'if-else și else if',
-    'Operatori logici',
-    'switch',
-    'Recapitulare Modul 1 — mini-proiect',
+    'Cartea mea de vizită',
+    'Programul meu comentat',
+    'Fișa jucătorului',
+    'Calculatorul meu',
+    'Cartea mea de identitate',
+    'Ești admis?',
+    'Calificativul tău',
+    'Poarta jocului',
+    'Meniul cafenelei',
+    'Quiz sau Calculator',
   ]),
   // C++ Modul 2 — Bucle și vectori
   ...genLectii('m2', [

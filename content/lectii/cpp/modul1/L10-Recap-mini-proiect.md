@@ -19,10 +19,10 @@ Un modul se încheie cu un proiect pentru că programarea se învață **constru
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–25 | Recapitulare pe foaie și în cod (**Exemplele 1–9**) |
-| 25–40 | Depanare: găsim greșelile (**Exemplele 10–11**) |
+| 0–25 | Recapitulare pe foaie și în cod (**Exemplele 1–5**) |
+| 25–40 | Depanare: găsim greșelile (**Exemplul 6**) |
 | 40–50 | Alegem proiectul și parcurgem lista de verificare |
-| 50–100 | Construim proiectul (**Exemplele 12–13** ca model) |
+| 50–100 | Construim proiectul (**Exemplele 7–8** ca model) |
 | 100–115 | Prezentarea proiectelor și Provocarea |
 | 115–120 | Mini-test, insigna **Junior Coder** și temă |
 
@@ -43,69 +43,11 @@ Azi nu înveți nicio instrucțiune nouă. Folosești:
 
 ## Pas cu pas
 
-### Recapitulare: cele 9 lecții în 9 programe
+### Recapitulare: cinci programe din lecțiile Modulului 1
 
-Fiecare program mic de mai jos rezumă o lecție. Citește programul, spune cu voce tare ce face și ce lecție ilustrează.
+Fiecare program mic de mai jos rezumă una sau mai multe lecții. Citește programul, spune cu voce tare ce face și ce lecție ilustrează.
 
-### Exemplul 1 — L1: afișare și caractere speciale
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    cout << "+--------------+" << endl;
-    cout << "| Salut, Alex! |" << endl;
-    cout << "+--------------+" << endl;
-    cout << "Nivel:\t1" << endl;
-    cout << "Motto:\t\"Cod, joaca, repeta\"" << endl;
-    return 0;
-}
-```
-
-### Exemplul 2 — L2: antet și comentarii
-
-```cpp
-/*
-   Program: Salut cu comentarii
-   Autor:   Ana Pop
-   Scop:    exemplu de program ordonat
-*/
-#include <iostream>
-using namespace std;
-
-int main() {
-    // ----- Mesajul principal -----
-    cout << "Programul meu este ordonat." << endl;
-
-    // cout << "Aceasta linie este oprita temporar." << endl;
-
-    return 0;   // totul a mers bine
-}
-```
-
-### Exemplul 3 — L3: variabile `int` și `const`
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    const int VIATA_MAXIMA = 100;
-    int viata = VIATA_MAXIMA;
-    int scor = 0;
-
-    viata -= 30;
-    scor += 250;
-    scor++;
-
-    cout << "Viata: " << viata << "/" << VIATA_MAXIMA << endl;
-    cout << "Scor: " << scor << endl;
-    return 0;
-}
-```
-
-### Exemplul 4 — L4: `cin`, câtul și restul
+### Exemplul 1 — L4: `cin`, câtul și restul
 
 ```cpp
 #include <iostream>
@@ -129,7 +71,7 @@ Minute: 135
 135 minute = 2 ore si 15 minute
 ```
 
-### Exemplul 5 — L5: tipuri de date
+### Exemplul 2 — L5: tipuri de date
 
 ```cpp
 #include <iostream>
@@ -165,36 +107,7 @@ Inaltime: 1.62 m
 Peste 1.60 m? 1
 ```
 
-### Exemplul 6 — L6: `if`
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int nota;
-
-    cout << "Nota: ";
-    cin >> nota;
-
-    if (nota >= 5) {
-        cout << "Admis!" << endl;
-    }
-    if (nota == 10) {
-        cout << "Nota maxima!" << endl;
-    }
-    return 0;
-}
-```
-
-**Rulare** (tastezi `10`):
-```
-Nota: 10
-Admis!
-Nota maxima!
-```
-
-### Exemplul 7 — L7: `else if`
+### Exemplul 3 — L7: `else if`
 
 ```cpp
 #include <iostream>
@@ -225,7 +138,7 @@ Nota: 6
 Suficient
 ```
 
-### Exemplul 8 — L8: operatori logici
+### Exemplul 4 — L8: operatori logici
 
 ```cpp
 #include <iostream>
@@ -257,7 +170,7 @@ Este in intervalul [1, 100].
 Se imparte la 2 sau la 5.
 ```
 
-### Exemplul 9 — L9: `switch`
+### Exemplul 5 — L9: `switch`
 
 ```cpp
 #include <iostream>
@@ -293,7 +206,7 @@ Joc in pauza.
 ```
 
 **Încearcă tu (10 min)**  
-- [ ] Alegi 3 dintre cele 9 programe și le rescrii **fără să te uiți**  
+- [ ] Alegi 3 dintre cele 5 programe și le rescrii **fără să te uiți**  
 - [ ] Spui cu voce tare, pentru fiecare, ce lecție ilustrează  
 - [ ] Notezi pe foaie ce ți se pare mai greu din tot Modulul 1  
 
@@ -301,7 +214,7 @@ Joc in pauza.
 
 Un programator petrece mult timp **căutând greșeli**. Este o aptitudine care se antrenează.
 
-### Exemplul 10 — Programul cu 6 greșeli
+### Exemplul 6 — Programul cu 6 greșeli
 
 Programul ar trebui să citească două numere și să spună care este mai mare. Are **6 greșeli** (de scriere și de logică). Găsește greșelile înainte de a citi soluția.
 
@@ -326,7 +239,7 @@ int main() {
 
 **Cum lucrezi:** compilează programul, citește prima eroare, repară eroarea, compilează iar. Una câte una.
 
-### Exemplul 11 — Soluția
+#### Soluția
 
 ```cpp
 #include <iostream>
@@ -380,7 +293,7 @@ Cele două exemple de mai jos sunt modele. Nu copia modelele. Folosește exemple
 
 ### Proiectul A — Quiz
 
-### Exemplul 12 — Quiz cu 3 întrebări
+### Exemplul 7 — Quiz cu 3 întrebări
 
 ```cpp
 /*
@@ -463,7 +376,7 @@ Ideile importante:
 
 ### Proiectul B — Calculator cu meniu
 
-### Exemplul 13 — Calculator cu `switch`
+### Exemplul 8 — Calculator cu `switch`
 
 ```cpp
 /*
@@ -670,7 +583,7 @@ Felicitări! Dacă ai bifat toată lista de verificare, ai primit insigna **Juni
 ## Temă
 1. Îmbunătățește proiectul cu **o singură** idee mică: un mesaj în plus, o opțiune nouă sau o verificare suplimentară.  
 2. Pe foaie, scrie 3 lucruri învățate în Modulul 1 și 1 lucru pe care vrei să îl înțelegi mai bine.  
-3. Repetă cele 9 programe de recapitulare (Exemplele 1–9) și rescrie programele din memorie.  
+3. Repetă cele 5 programe de recapitulare (Exemplele 1–5) și rescrie programele din memorie.  
 4. Salvează tot ca `Tema_L10_Prenume_Nume.cpp`.
 
 ### Exemple pentru acasă

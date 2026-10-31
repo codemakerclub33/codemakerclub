@@ -4,7 +4,7 @@ Astăzi aduni tot ce ai învățat în Modulul unu într-un singur program: un q
 
 Ce folosești azi. Nu înveți nicio instrucțiune nouă. Folosești afișarea și comentariile din primele două lecții, variabilele, c-in, împărțirea și tipurile de date din lecțiile trei, patru și cinci, if, else și operatorii logici din lecțiile șase, șapte și opt, și switch din lecția nouă.
 
-Recapitulare. Cele nouă lecții în nouă programe. Fiecare program mic rezumă o lecție: afișarea și caracterele speciale, antetul și comentariile, variabilele int și const, c-in cu câtul și restul, tipurile de date, if, else if, operatorii logici și switch. Citește fiecare program, spune cu voce tare ce face și ce lecție ilustrează. Încearcă tu: alege trei dintre cele nouă programe și rescrie-le fără să te uiți.
+Recapitulare. Cinci programe din lecțiile modulului. Fiecare program mic rezumă una sau mai multe lecții: c-in cu câtul și restul, tipurile de date, else if, operatorii logici și switch. Citește fiecare program, spune cu voce tare ce face și ce lecție ilustrează. Încearcă tu: alege trei dintre cele cinci programe și rescrie-le fără să te uiți.
 
 Depanare. Primești un program care are șase greșeli, de scriere și de logică. Le cauți singur, înainte să te uiți la soluție. Așa înveți să citești mesajele compilatorului.
 
@@ -20,4 +20,4 @@ Bonus, trei stele. Quiz cu vieți. Doar dacă ai terminat varianta completă. Ju
 
 Greșeli frecvente. Scorul rămâne zero, pentru că punerea lui în plus este în afara if-ului sau compari cu un singur egal. Răspunsul din mai multe cuvinte nu este recunoscut, pentru că c-in citește un singur cuvânt. Rezultat greșit la împărțire, pentru că ai folosit int în loc de double. Programul se oprește la împărțirea cu zero, deci verifică împărțitorul. Litera mare nu este acceptată, deși răspunsul e corect.
 
-Tema. Îmbunătățești proiectul cu o singură idee mică. Scrii pe foaie trei lucruri învățate în modulul unu și unul pe care vrei să îl înțelegi mai bine. Repeți cele nouă programe de recapitulare și le rescrii din memorie. Găsești în lecție și exemple pentru acasă. Bravo, ai terminat Modulul unu!
+Tema. Îmbunătățești proiectul cu o singură idee mică. Scrii pe foaie trei lucruri învățate în modulul unu și unul pe care vrei să îl înțelegi mai bine. Repeți cele cinci programe de recapitulare și le rescrii din memorie. Găsești în lecție și exemple pentru acasă. Bravo, ai terminat Modulul unu!

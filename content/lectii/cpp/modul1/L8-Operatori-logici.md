@@ -485,56 +485,7 @@ Citește valorile a **două zaruri** (fiecare între 1 și 6) și decide rezulta
 ### Exemple pentru acasă
 Aceste exemple folosesc exact ce ai învățat azi. Scrie-le de mână, rulează-le și schimbă-le după preferințe.
 
-**Acasă 1 — Tabelele, calculate de program**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    bool t = true;
-    bool f = false;
-
-    cout << "SI (&&)" << endl;
-    cout << "f && f = " << (f && f) << endl;
-    cout << "f && t = " << (f && t) << endl;
-    cout << "t && f = " << (t && f) << endl;
-    cout << "t && t = " << (t && t) << endl;
-
-    cout << endl << "SAU (||)" << endl;
-    cout << "f || f = " << (f || f) << endl;
-    cout << "f || t = " << (f || t) << endl;
-    cout << "t || f = " << (t || f) << endl;
-    cout << "t || t = " << (t || t) << endl;
-
-    cout << endl << "NU (!)" << endl;
-    cout << "!t = " << (!t) << endl;
-    cout << "!f = " << (!f) << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-SI (&&)
-f && f = 0
-f && t = 0
-t && f = 0
-t && t = 1
-
-SAU (||)
-f || f = 0
-f || t = 1
-t || f = 1
-t || t = 1
-
-NU (!)
-!t = 0
-!f = 1
-```
-
-*(Rezultatul `1` înseamnă adevărat, `0` înseamnă fals, ca în lecțiile anterioare.)*
-
-**Acasă 2 — Ce fel de caracter este?**
+**Acasă 1 — Ce fel de caracter este?**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -566,67 +517,7 @@ Este o litera mare.
 
 Literele sunt în ordine alfabetică în tabelul ASCII (L5), așa că poți verifica un interval de litere exact ca pe unul de numere.
 
-**Acasă 3 — Vocală?**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    char c;
-
-    cout << "Introdu o litera mica: ";
-    cin >> c;
-
-    if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
-        cout << c << " este vocala." << endl;
-    } else {
-        cout << c << " este consoana." << endl;
-    }
-    return 0;
-}
-```
-
-**Rulare** (tastezi `o`):
-```
-Introdu o litera mica: o
-o este vocala.
-```
-
-Poți lega oricâte condiții cu `||`. Pentru fiecare vocală scrii o comparație completă: `c == 'a' || c == 'e' || …`.
-
-**Acasă 4 — Login cu două condiții**
-```cpp
-#include <iostream>
-#include <string>
-using namespace std;
-
-int main() {
-    string utilizator, parola;
-
-    cout << "Utilizator: ";
-    cin >> utilizator;
-    cout << "Parola: ";
-    cin >> parola;
-
-    if (utilizator == "admin" && parola == "cpp2026") {
-        cout << "Autentificare reusita." << endl;
-    } else {
-        cout << "Utilizator sau parola gresite." << endl;
-    }
-    return 0;
-}
-```
-
-**Rulare** (tastezi `admin` și `abc`):
-```
-Utilizator: admin
-Parola: abc
-Utilizator sau parola gresite.
-```
-
-Un detaliu bun de securitate: mesajul nu spune **care** dintre cele două este greșit. Astfel, cineva care încearcă să ghicească nu află nimic în plus.
-
-**Acasă 5 — Pot forma un triunghi?**
+**Acasă 2 — Pot forma un triunghi?**
 Trei segmente formează un triunghi doar dacă suma oricăror două este mai mare decât al treilea.
 
 ```cpp
@@ -660,7 +551,7 @@ Lungimile celor 3 segmente: 1 2 5
 Nu formeaza un triunghi.
 ```
 
-**Acasă 6 — Piatră, foarfecă, hârtie**
+**Acasă 3 — Piatră, foarfecă, hârtie**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -695,44 +586,7 @@ Castiga jucatorul 1!
 
 Hârtia învinge piatra, deci jucătorul 1 câștigă. Cele trei cazuri în care câștigă jucătorul 1 sunt grupate cu `||`, fiecare în paranteze. Dacă nu e egalitate și nu câștigă jucătorul 1, atunci câștigă jucătorul 2.
 
-**Acasă 7 — Parcul de distracții (condiție cu paranteze și `bool`)**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int inaltime, varsta, insotit;
-
-    cout << "Inaltime (cm): ";
-    cin >> inaltime;
-    cout << "Varsta: ";
-    cin >> varsta;
-    cout << "Esti insotit de un adult? (1 = da, 0 = nu): ";
-    cin >> insotit;
-
-    bool conditiiIndeplinite = inaltime >= 120 && varsta >= 8;
-    bool areAdult = insotit == 1;
-
-    if (conditiiIndeplinite || (areAdult && inaltime >= 100)) {
-        cout << "Poti intra la atractie." << endl;
-    } else {
-        cout << "Nu poti intra la atractie." << endl;
-    }
-    return 0;
-}
-```
-
-**Rulare** (tastezi `110`, `6` și `1`):
-```
-Inaltime (cm): 110
-Varsta: 6
-Esti insotit de un adult? (1 = da, 0 = nu): 1
-Poti intra la atractie.
-```
-
-Regula, în cuvinte: „intri dacă ai cel puțin 120 cm **și** 8 ani, **sau** dacă ești însoțit de un adult **și** ai cel puțin 100 cm”. Observă că am împărțit condiția în variabile `bool` cu nume clare. Așa, `if`-ul final se citește aproape ca o propoziție.
-
-**Acasă 8 — Verificarea temperaturii corpului (condiții pe intervale)**
+**Acasă 4 — Verificarea temperaturii corpului (condiții pe intervale)**
 ```cpp
 #include <iostream>
 using namespace std;

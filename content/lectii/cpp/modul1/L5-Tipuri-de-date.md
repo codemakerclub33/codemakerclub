@@ -479,33 +479,7 @@ De plata: 64 lei
 
 Poți citi un `double` cu `cin` exact ca pe un `int`. Dacă tastezi `79.99`, programul îl înțelege. Folosește punctul, nu virgula.
 
-**Acasă 2 — Împărțirea cu `int` și cu `double`**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    cout << "7 / 2     = " << 7 / 2 << endl;
-    cout << "7.0 / 2   = " << 7.0 / 2 << endl;
-    cout << "7 / 2.0   = " << 7 / 2.0 << endl;
-    cout << "1.0 / 3   = " << 1.0 / 3 << endl;
-    cout << "10.0 / 4  = " << 10.0 / 4 << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-7 / 2     = 3
-7.0 / 2   = 3.5
-7 / 2.0   = 3.5
-1.0 / 3   = 0.333333
-10.0 / 4  = 2.5
-```
-
-Regula: dacă **măcar unul** dintre numere este `double`, împărțirea păstrează zecimalele. Dacă ambele sunt `int`, rezultatul este întreg. Observă și că `cout` afișează implicit aproximativ **6 cifre** semnificative (`0.333333`).
-
-**Acasă 3 — Media a 3 note, corect**
+**Acasă 2 — Media a 3 note, corect**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -530,7 +504,7 @@ Media = 7.66667
 
 Aceasta este problema din L4 rezolvată corect. Împărțind la `3.0` (nu la `3`), zecimalele se păstrează.
 
-**Acasă 4 — Aria cercului**
+**Acasă 3 — Aria cercului**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -560,109 +534,7 @@ Aria cercului: 78.5397
 
 Aici ai folosit `const` (din L3) pentru o valoare care nu se schimbă. Rezultatele sunt rotunjite la 6 cifre semnificative.
 
-**Acasă 5 — Declarare, afișare și citire**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    char nota = 'A';
-    char semn = '?';
-    char initiala;
-
-    cout << "Nota mea: " << nota << semn << endl;
-
-    cout << "Prima litera din numele tau: ";
-    cin >> initiala;
-
-    cout << "Initiala ta este " << initiala << endl;
-    return 0;
-}
-```
-
-**Rulare** (tastezi `M`):
-```
-Nota mea: A?
-Prima litera din numele tau: M
-Initiala ta este M
-```
-
-`'A'` este un caracter, `"A"` este un text de lungime 1. În C++ sunt lucruri diferite, deci nu le amesteca. `cin >> initiala;` citește un singur caracter (primul pe care îl tastezi).
-
-#### Codul ASCII
-
-Calculatorul nu înțelege litere, ci doar numere. De aceea fiecare caracter are un **cod numeric**, după un tabel numit **ASCII**. Câteva valori de reținut:
-
-| Caractere | Coduri |
-|-----------|--------|
-| `'0'` … `'9'` | `48` … `57` |
-| `'A'` … `'Z'` | `65` … `90` |
-| `'a'` … `'z'` | `97` … `122` |
-| spațiu `' '` | `32` |
-
-Un `char` este de fapt un număr mic, iar `cout` decide să îl afișeze ca literă. Dacă vrei să vezi codul, îl privești ca `int`.
-
-**Acasă 6 — Calcule cu litere**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    char litera = 'C';
-    char urmatoarea = litera + 1;
-    char precedenta = litera - 1;
-
-    cout << "Litera: " << litera << endl;
-    cout << "Urmatoarea: " << urmatoarea << endl;
-    cout << "Precedenta: " << precedenta << endl;
-
-    char mica = 'g';
-    char mare = mica - 32;
-    cout << "Majuscula lui " << mica << " este " << mare << endl;
-
-    cout << "Distanta dintre 'a' si 'A' este " << 'a' - 'A' << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Litera: C
-Urmatoarea: D
-Precedenta: B
-Majuscula lui g este G
-Distanta dintre 'a' si 'A' este 32
-```
-
-Literile sunt în ordine alfabetică în tabel, deci `'C' + 1` este `'D'`. Iar fiecare literă mică are codul cu **32 mai mare** decât majuscula ei, de aceea `mica - 32` o transformă în majusculă.
-
-**Acasă 7 — Convertor Celsius → Fahrenheit**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    double celsius;
-
-    cout << "Temperatura in grade Celsius: ";
-    cin >> celsius;
-
-    double fahrenheit = celsius * 9.0 / 5.0 + 32;
-
-    cout << celsius << " C = " << fahrenheit << " F" << endl;
-    return 0;
-}
-```
-
-**Rulare** (tastezi `36.6`):
-```
-Temperatura in grade Celsius: 36.6
-36.6 C = 97.88 F
-```
-
-Atenție la `9.0 / 5.0`: dacă ai scrie `9 / 5`, ar da `1` (împărțire între `int`) și formula ar fi greșită.
-
-**Acasă 8 — Convertor lei → euro, cu semnătură**
+**Acasă 4 — Convertor lei → euro, cu semnătură**
 ```cpp
 #include <iostream>
 #include <iomanip>

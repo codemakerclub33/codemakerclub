@@ -340,39 +340,7 @@ Pasul 3: termin
 
 Programul merge **de sus în jos**, exact în ordinea în care ai scris instrucțiunile. Dacă schimbi ordinea liniilor, se schimbă și ce vezi pe ecran.
 
-**Acasă 2 — Comentariu la capătul unei linii**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    cout << "Nivel: 1" << endl;   // afisez nivelul curent
-    cout << "Scor: 0" << endl;    // la inceput scorul este zero
-    return 0;                     // programul se termina bine
-}
-```
-
-Comentariul poate sta și **după** cod, pe aceeași linie. Pentru claritate, aliniază comentariile frumos unele sub altele.
-
-**Acasă 3 — Rândurile goale despart ideile**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    cout << "Nume: Ana" << endl;
-    cout << "Clasa: 7A" << endl;
-
-    cout << "Hobby: desen" << endl;
-    cout << "Joc preferat: Minecraft" << endl;
-
-    return 0;
-}
-```
-
-Rândurile goale nu schimbă nimic la rulare. Ele separă „datele personale” de „preferințe” doar pentru ochiul celui care citește.
-
-**Acasă 4 — Fără `using namespace std;`**
+**Acasă 2 — Fără `using namespace std;`**
 ```cpp
 #include <iostream>
 
@@ -385,26 +353,7 @@ int main() {
 
 Aici, `std::` apare în fața fiecărui `cout` și `endl`. Este mai mult de scris, dar vei întâlni această formă în multe programe de pe internet. Tu poți folosi oricare variantă, atâta timp cât ești consecvent într-un program.
 
-**Acasă 5 — Ce se întâmplă după `return 0;`**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    cout << "Aceasta linie se vede." << endl;
-    return 0;
-    cout << "Aceasta linie nu se vede niciodata." << endl;
-}
-```
-
-**Ieșire:**
-```
-Aceasta linie se vede.
-```
-
-`return 0;` încheie `main` pe loc. Instrucțiunile scrise după el nu mai sunt executate.
-
-**Acasă 6 — Dezactivez un bloc cu `/* */`**
+**Acasă 3 — Dezactivez un bloc cu `/* */`**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -430,7 +379,7 @@ Mod usor: activ
 
 Cele două linii dintre `/*` și `*/` sunt ignorate. Este util când vrei să testezi o parte din program fără alta.
 
-**Acasă 7 — Mini-proiect: ecran de start, complet comentat**
+**Acasă 4 — Mini-proiect: ecran de start, complet comentat**
 ```cpp
 /*
    Program: Ecran de start

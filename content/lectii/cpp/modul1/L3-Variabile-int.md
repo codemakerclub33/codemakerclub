@@ -452,30 +452,7 @@ Trei jucători au scorurile `a`, `b` și `c`. La finalul rundei scorurile se rot
 ### Exemple pentru acasă
 Aceste exemple folosesc exact ce ai învățat azi. Scrie-le de mână, rulează-le și schimbă-le după preferințe.
 
-**Acasă 1 — Text și valoare pe același rând**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int an = 2026;
-    int nivel = 7;
-
-    cout << "Suntem in anul " << an << "." << endl;
-    cout << "Am ajuns la nivelul " << nivel << " din 10." << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Suntem in anul 2026.
-Am ajuns la nivelul 7 din 10.
-```
-
-Cu `<<` poți lega pe același rând text, valori și `endl`, în orice ordine.
-
-**Acasă 2 — Mai multe variabile deodată**
+**Acasă 1 — Mai multe variabile deodată**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -502,7 +479,7 @@ Mai multe variabile de același tip se pot declara pe un singur rând, separate 
 
 > **Atenție:** o variabilă declarată **fără valoare** (`int x;`) are la început o valoare necunoscută, ce poate fi orice număr. Nu o afișa și nu calcula cu ea înainte să îi dai o valoare.
 
-**Acasă 3 — Litere mari și mici: două variabile diferite**
+**Acasă 2 — Litere mari și mici: două variabile diferite**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -525,56 +502,7 @@ scor = 99
 
 Funcționează, dar este o idee proastă să ai nume care diferă doar prin literă mare. Obișnuiește-te să scrii numele **mereu la fel**.
 
-**Acasă 4 — Suma a două numere**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int a = 5;
-    int b = 3;
-    int suma = a + b;
-
-    cout << "Suma = " << suma << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Suma = 8
-```
-
-Calculul `a + b` se face întâi, iar rezultatul este pus în `suma`.
-
-**Acasă 5 — Calcul direct în `cout`**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int a = 6;
-    int b = 4;
-
-    cout << "a + b = " << a + b << endl;
-    cout << "a - b = " << a - b << endl;
-    cout << "a * b = " << a * b << endl;
-    cout << "(a + b) * 2 = " << (a + b) * 2 << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-a + b = 10
-a - b = 2
-a * b = 24
-(a + b) * 2 = 20
-```
-
-Poți pune calculul direct în `cout`, fără să îl salvezi într-o variabilă. Ca la matematică, **înmulțirea se face înaintea adunării**, iar parantezele schimbă ordinea.
-
-**Acasă 6 — Perimetru și arie**
+**Acasă 3 — Perimetru și arie**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -600,7 +528,7 @@ Perimetru = 26
 Arie = 40
 ```
 
-**Acasă 7 — Bon de casă**
+**Acasă 4 — Bon de casă**
 ```cpp
 #include <iostream>
 using namespace std;

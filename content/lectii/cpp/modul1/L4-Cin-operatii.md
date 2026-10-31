@@ -364,32 +364,7 @@ Citește un număr de **4 cifre** și afișează-l cu cifrele **în ordine inver
 ### Exemple pentru acasă
 Aceste exemple folosesc exact ce ai învățat azi. Scrie-le de mână, rulează-le și schimbă-le după preferințe.
 
-**Acasă 1 — Două numere, citite pe rând**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int a, b;
-
-    cout << "Introdu primul numar: ";
-    cin >> a;
-    cout << "Introdu al doilea numar: ";
-    cin >> b;
-
-    cout << "Suma = " << a + b << endl;
-    return 0;
-}
-```
-
-**Rulare:**
-```
-Introdu primul numar: 5
-Introdu al doilea numar: 3
-Suma = 8
-```
-
-**Acasă 2 — Ordinea operațiilor**
+**Acasă 1 — Ordinea operațiilor**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -422,7 +397,7 @@ Reguli de reținut:
 
 Când nu ești sigur, pune paranteze. Ele nu strică niciodată.
 
-**Acasă 3 — Cifrele unui număr de 3 cifre**
+**Acasă 2 — Cifrele unui număr de 3 cifre**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -455,93 +430,7 @@ Suma cifrelor: 14
 
 Cum funcționează `n / 10 % 10`: mai întâi `824 / 10 = 82`, apoi `82 % 10 = 2`. Cifra zecilor este ultima cifră a numărului fără ultima cifră.
 
-**Acasă 4 — Secunde în ore, minute, secunde**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int total;
-    cout << "Numar de secunde: ";
-    cin >> total;
-
-    int ore = total / 3600;
-    int minute = total % 3600 / 60;
-    int secunde = total % 60;
-
-    cout << ore << " h  " << minute << " min  " << secunde << " s" << endl;
-    return 0;
-}
-```
-
-**Rulare:**
-```
-Numar de secunde: 7384
-2 h  3 min  4 s
-```
-
-Verificare: 2 · 3600 + 3 · 60 + 4 = 7200 + 180 + 4 = 7384. Calculul `total % 3600 / 60` se face de la stânga la dreapta: mai întâi restul după ore, apoi împărțit la 60.
-
-**Acasă 5 — Ora de peste N ore**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int ora, n;
-    cout << "Ora acum (0-23): ";
-    cin >> ora;
-    cout << "Peste cate ore? ";
-    cin >> n;
-
-    int ora_noua = (ora + n) % 24;
-
-    cout << "Peste " << n << " ore va fi ora " << ora_noua << endl;
-    return 0;
-}
-```
-
-**Rulare:**
-```
-Ora acum (0-23): 20
-Peste cate ore? 9
-Peste 9 ore va fi ora 5
-```
-
-Restul la 24 „învârte” ceasul: după ora 23 urmează ora 0. Același truc merge pentru zilele săptămânii (restul la 7) sau pentru culorile care se repetă (restul la numărul de culori).
-
-**Acasă 6 — Media a 3 note (cu o limitare)**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int n1, n2, n3;
-    cout << "Introdu 3 note: ";
-    cin >> n1 >> n2 >> n3;
-
-    int suma = n1 + n2 + n3;
-    int media = suma / 3;
-    int rest = suma % 3;
-
-    cout << "Suma = " << suma << endl;
-    cout << "Media (intreaga) = " << media << endl;
-    cout << "Restul impartirii la 3 = " << rest << endl;
-    return 0;
-}
-```
-
-**Rulare:**
-```
-Introdu 3 note: 7 8 8
-Suma = 23
-Media (intreaga) = 7
-Restul impartirii la 3 = 2
-```
-
-Media reală este 7,66…, dar `int` păstrează doar partea întreagă. Limitarea dispare când învățăm `double`, în lecția 5.
-
-**Acasă 7 — Casierul: câte bancnote?**
+**Acasă 3 — Casierul: câte bancnote?**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -579,7 +468,7 @@ Monede de 1: 2
 
 Verificare: 3 · 50 + 3 · 10 + 1 · 5 + 2 = 150 + 30 + 5 + 2 = 187. După fiecare pas, `suma` păstrează restul rămas de plătit, iar în final rămân monedele de câte 1 leu.
 
-**Acasă 8 — Calculatorul complet**
+**Acasă 4 — Calculatorul complet**
 ```cpp
 /*
    Program: Calculator cu doua numere
@@ -620,39 +509,6 @@ Al doilea numar (nenul): 6
 47 / 6 = 7 (cat)
 47 % 6 = 5 (rest)
 ======================
-```
-
-**Acasă 9 — Interschimbare cu date citite**
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int a, b;
-
-    cout << "a = ";
-    cin >> a;
-    cout << "b = ";
-    cin >> b;
-
-    int ajutor = a;
-    a = b;
-    b = ajutor;
-
-    cout << "Dupa interschimbare:" << endl;
-    cout << "a = " << a << endl;
-    cout << "b = " << b << endl;
-    return 0;
-}
-```
-
-**Rulare:**
-```
-a = 8
-b = 15
-Dupa interschimbare:
-a = 15
-b = 8
 ```
 
 ---
