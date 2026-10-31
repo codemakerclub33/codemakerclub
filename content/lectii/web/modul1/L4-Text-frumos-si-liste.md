@@ -307,7 +307,7 @@ Faci un top mai bogat, cu liste în liste.
 - `<sup>` (de la „superscript”) ridică textul **sus**: m².  
 - `<sub>` (de la „subscript”) îl coboară **jos**: H₂O.  
 
-`&times;` este semnul înmulțirii (×), scris cu un cod special, ca `&lt;` din lecția trecută.
+`&times;` este semnul înmulțirii (×), scris cu un cod special, ca `&lt;` din exercițiul de acasă la Lecția 3.
 
 **Acasă 2 — Topul meu, cu numărătoare inversă.**
 

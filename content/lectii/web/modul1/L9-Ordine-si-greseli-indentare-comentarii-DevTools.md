@@ -222,7 +222,9 @@ Acesta înseamnă: „Nu am găsit un fișier”. Mesajul arată și numele fiș
 
 ---
 
-## 6. Mini-proiect: repară pagina stricată
+## 6. Mini-proiect
+
+### Exemplul 8 — Repară pagina stricată
 
 Iată un `<body>` cu **6 greșeli**. Copiază acest cod în `index.html`, în folderul `Prenume_Nume_W1_L9`, între tagurile `<body>` și `</body>`, și repară pagina:
 

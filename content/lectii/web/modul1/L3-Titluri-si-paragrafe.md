@@ -266,7 +266,6 @@ Scrii o pagină care arată ca o carte.
 4. **Ai folosit titlul doar ca să arate mare** — alege titlul după importanță, nu după mărime.  
 5. **Ai crezut că Enter face rând nou** — folosește `<br>` sau un `<p>` nou.  
 6. **Ai uitat `</p>`** — paragraful rămâne deschis și poate încurca ce urmează.  
-7. **Ai uitat `;` la `&lt;`** — codurile speciale se termină cu punct și virgulă.  
 
 ---
 
