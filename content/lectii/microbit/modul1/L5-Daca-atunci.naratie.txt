@@ -1,33 +1,37 @@
-Lecția cinci. Cursa până la zece.
+Lecția cinci. Scutul de energie.
 
-Astăzi înveți placa să ia decizii: dacă se întâmplă ceva, face un lucru, altfel face altceva. Proiectul se numește Cursa până la zece. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero cinci.
+Astăzi înveți să faci placa să decidă și faci Scutul de energie: A încarcă scutul, B îl lovește, iar când energia ajunge la zero apare Game over. Fișierul se numește Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero cinci.
 
-Ce facem azi. La final folosești blocurile If then și If then else și compari numere. Tu iei decizii tot timpul. Dacă plouă, iei umbrela, altfel iei ochelarii de soare. Un program face la fel. Fără decizii, un joc nu poate spune ai câștigat, iar o alarmă nu știe când să sune.
+Obiectivul. La finalul orei folosești If then și If then else și compari numere. Minim: A încarcă scutul, B îl lovește, iar când energia ajunge la zero, placa arată Game over și un craniu, apoi pornește iar de la cinci, cu cel puțin opt blocuri diferite. Complet: partea a doua, în care A încarcă scutul, dar niciodată peste nouă, iar A plus B arată starea scutului, cu cel puțin șase blocuri diferite.
 
-Instrucțiuni noi azi. If then face ceva doar dacă o condiție este adevărată. Else înseamnă altfel. Semnele de comparație întreabă dacă două numere sunt egale, mai mici sau mai mari. Show icon și Show string arată răspunsul.
+De ce contează. Tu iei decizii tot timpul: dacă plouă, iau umbrela, altfel iau ochelarii de soare. Un program face la fel. Fără decizii, un joc nu poate spune ai pierdut, iar o alarmă nu știe când să sune.
 
-Primul pas. Jocul cu cartonașe. Pe un cartonaș scrie: dacă mă ating de cap, tu sari. Un coleg citește. Dacă te-ai atins de cap, el sare, altfel stă pe loc. Fiecare decizie are o condiție, care poate fi adevărată sau falsă, și o acțiune.
+Ce face fiecare bloc de azi. Din capitolul Logic folosim If then, care face ceva doar dacă condiția este adevărată. If then else face un lucru dacă este adevărat și altul dacă nu. Blocul egal compară dacă două numere sunt egale. Blocul mai mic compară dacă primul este mai mic. And este adevărat doar dacă amândouă condițiile sunt adevărate. Or este adevărat dacă măcar una este adevărată, îl folosim la Bonus. Din lecțiile trecute știi deja On start, On button pressed, Set, Change, Show number, Show string, Show icon și Pause.
 
-Al doilea pas. Condiția și comparațiile. O condiție pune o întrebare la care răspunsul este da, true, sau nu, false. În MakeCode ai blocuri de comparație: egal, mai mic, mai mare. Dacă scorul este șapte, atunci scor mai mare decât cinci este adevărat, iar scor egal cu zece este fals.
+Primul pas. Jocul Dacă atunci, cu cartonașe. Pe cartonașe scrieți câte o regulă: dacă plouă, atunci iau umbrela, altfel iau ochelarii de soare. Un copil citește o situație, altul alege cartonașul potrivit. Fiecare regulă are o condiție, care poate fi adevărată sau falsă, ce faci dacă este adevărată și ce faci dacă nu.
 
-Al treilea pas. Proiect nou și pornirea. Creezi variabila score, ca în lecția patru, iar în On start pui Set score to zero.
+Al doilea pas. Condiții și comparații. În capitolul Logic găsești blocurile de comparat numere. Răspunsul este mereu adevărat sau fals. Dacă energie este patru, atunci energie egal cu patru este adevărat, energie mai mic decât patru este fals, energie mai mare decât doi este adevărat. Semnul egal din Logic întreabă dacă sunt egale. Set pune o valoare. Nu le amesteca.
 
-Al patrulea pas, pentru Minim. La fiecare apăsare de A creștem scorul. Apoi întrebăm: am ajuns la zece? În On button A pressed: Change score by unu. Apoi un bloc If, cu condiția score egal cu zece. Înăuntru: Show icon, bifa, Show string Bravo, apoi Set score to zero. Altfel, în ramura else, arăți scorul.
+Al treilea pas. Proiect nou și pornirea. Creezi variabila energie, ca în lecția patru. În On start pui Set energie la cinci și Show number energie.
 
-Al cincilea pas, pentru Complet. Dacă scorul este zero și apeși B, ar ieși minus unu. Vrem să nu se întâmple. În On button B pressed pui If score mai mare decât zero, atunci Change score by minus unu.
+Al patrulea pas. Scutul de energie, pentru Minim. A încarcă scutul cu unu. B îl lovește cu unu. Dacă după lovitură energia a ajuns la zero, jocul s-a terminat și pornește iar de la cinci. Altfel arată energia. La butonul A, Change energie cu unu și Show number energie. La butonul B, mai întâi Change energie cu minus unu. Apoi If then else, cu condiția energie egal cu zero. La atunci: Show string Game over, Show icon craniu, Pause o mie, Set energie la cinci, Show number energie. La altfel: Show number energie. Change vine înaintea lui If: întâi lovim scutul, apoi verificăm dacă a ajuns la zero.
 
-Al șaselea pas. Găsește greșeala. Un coleg a scris programul pentru cursa până la zece, dar nu funcționează. Verifică ordinea blocurilor și unde este pus blocul de resetare.
+Al cincilea pas. Complet. A nu trece de nouă. La A, energia crește cu unu, dar doar dacă este mai mică decât nouă. Așa scutul nu se încarcă la nesfârșit.
 
-De făcut azi. Proiectul se numește Cursa până la zece. Minim înseamnă: A crește scorul, la zece apare Bravo, iar scorul revine la zero. Complet înseamnă: minim, plus B scade fără să coboare sub zero. Dacă rămâi în urmă, salvează la Minim.
+Al șaselea pas. Complet. A plus B arată starea scutului. Dacă energia este sub trei, placa spune Pericol. Dacă este peste șase, spune Plin. În rest, spune Mediu. Pentru asta punem un If then else în ramura Altfel a altuia.
 
-Bonus. Ținta mobilă. Schimbi ținta de la zece la cinci, adaugi un mesaj când scorul este nouă, folosești and și faci o variabilă pentru țintă.
+Greșeli frecvente. Scutul nu ajunge niciodată la zero: Change este după If, nu înainte. Nu se întâmplă nimic la zero: ai scris energie în loc de energie egal cu zero, ai uitat comparația. Verifici egal cu Set: egal întreabă, Set pune valoarea. Energia trece de nouă: lipsește If energie mai mic decât nouă la A. A plus B arată mereu Mediu: al doilea If then else nu este în ramura Altfel a primului.
 
-Greșeli frecvente. Bifa nu apare niciodată: ai pus egal cu un număr greșit sau verificarea înainte de Change. Scorul trece de zece: ai uitat Set score to zero în ramura Then. Apare mereu Bravo: blocul Show string este în afara lui If. Nu găsești comparația: este în Logic, nu în Math. Egal în comparație întreabă, iar Set pune o valoare. Scorul de la B ajunge la minus unu: ai uitat condiția score mai mare decât zero.
+Proiectul de azi. Scutul de energie.
 
-Tema. Scrii pe foaie trei decizii din viața ta, în forma: dacă, atunci, altfel. Alegi una și te gândești cum ai face-o cu blocuri.
+Minim înseamnă: A încarcă scutul, B îl lovește și la zero apare Game over, cu cel puțin opt blocuri diferite, pe placă. Complet înseamnă: minim, plus A care nu trece de nouă și A plus B care arată starea scutului, cu cel puțin șase blocuri diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg apasă B de cinci ori și la a cincea placa arată Game over și craniul, apoi energia pornește iar de la cinci.
 
-Recapitulare. Condiția este o întrebare cu răspuns adevărat sau fals. If then face ceva doar dacă este adevărat. Else înseamnă altfel. Egal în comparație întreabă, iar Set pune o valoare. Ordinea blocurilor schimbă rezultatul.
+Bonus. Schimbi energia de start și vezi cât ține jocul. Provocarea, Scutul cu trei vieți: adaugi trei vieți, într-o variabilă numită vieti. La energie zero pierzi o viață, iar energia revine la cinci. Când vieți ajunge la zero, apare Game over final. Cu Or: dacă energia este sub doi sau mai ai o singură viață, la A plus B apare fața surprinsă. Un coleg joacă un minut și ghicește regulile din ce vede.
 
-Ce urmează. În lecția șase repetăm lucruri cu bucle și facem o inimă care bate.
+Recapitulare. Condiție înseamnă întrebare cu răspuns adevărat sau fals. If then face ceva doar dacă este adevărat, Else înseamnă altfel. Egal întreabă, Set pune o valoare. And cere amândouă adevărate, Or cere măcar una, le folosești la Bonus. Ordinea blocurilor contează: întâi Change, apoi If.
 
-Succes în cursa ta.
+Tema, opțional. Dacă ai doar Minim, adaugi acasă limita lui A și A plus B. Dacă ai Complet, scrii pe foaie trei decizii din viața ta, în forma dacă, atunci, altfel, și alegi una pe care o faci cu blocuri.
+
+Ce urmează. În lecția șase placa repetă lucruri cu bucle, într-un far de pe mare.
+
+Succes la scutul tău.

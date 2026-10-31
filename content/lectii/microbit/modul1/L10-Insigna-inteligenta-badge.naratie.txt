@@ -1,39 +1,37 @@
 Lecția zece. Insigna inteligentă.
 
-Astăzi aduni proiectele din Modulul unu într-o singură insignă pe placa ta, o prezinți colegilor și primești insigna micro:bit Starter. Proiectul se numește Insigna inteligentă. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zece.
+Astăzi nu înveți blocuri noi, ci adaugi la un loc proiectele din Modulul unu și faci Insigna inteligentă: o insignă cu inimă, nume, emoții, temperatură, bilă magică, contor și o floare. Fișierul se numește Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero zece.
 
-Ce facem azi. La final ai o insignă care îți spune numele, arată temperatura, alege răspunsuri la întâmplare, numără apăsările și desenează o floare. Nu începi de la zero. Reiei proiectele pe care le-ai făcut deja: Inima mea, Comutatorul de emoții, Felinarul inteligent, Bila magică, Cursa până la zece și Floarea care se deschide. Le pui în același program, cu mici modificări. Un proiect adevărat folosește butoane, variabile, decizii și senzori deodată.
+Obiectivul. La finalul orei folosești singur tot ce ai învățat în Modulul unu și primești insigna micro:bit Starter. Minim: o insignă cu inimă și nume la pornire, emoție la A, temperatură la B și bila magică la scuturare, cu cel puțin opt blocuri diferite. Complet: partea a doua, cu un contor la A, după zece apăsări apare inima, și o floare la A și B împreună, cu cel puțin șase blocuri diferite.
 
-Instrucțiuni noi azi. Azi nu avem blocuri noi. Reiei piese din lecțiile trecute: pornirea cu numele și inima, butonul A cu fața veselă, butonul B cu temperatura, scuturarea cu Da sau Nu, contorul de apăsări și floarea la A și B împreună.
+De ce contează. Un programator nu scrie totul de la zero. Copiază cu grijă ce a mai făcut și leagă bucățile. Azi vezi că ai deja o bibliotecă de proiecte, iar o insignă mare este făcută din piese mici pe care le știi.
 
-Primul pas. Planul pe foaie. Completezi un tabel: ce face insigna ta la fiecare gest, și din ce lecție vine piesa. Pornire, A, B, A și B, scuturare.
+Ce face fiecare bloc de azi. Azi nu apar blocuri noi. Tabelul de pe pagină arată din ce lecție vine fiecare piesă: pornirea din lecția unu, butoanele din lecția trei, temperatura din lecția opt, bila magică din lecția șapte, contorul din lecția cinci și floarea din lecția doi.
 
-Al doilea pas, pentru Minim. Piesa unu, din Inima mea. Proiect nou. În On start, Show string cu numele tău, apoi Show icon cu inima.
+Primul pas. Planul pe foaie. Desenezi pe foaie insigna: ce apare la pornire, ce face fiecare buton și ce face scuturarea. La pornire, inimă și numele. A, emoție. B, temperatura. Scuturare, Da sau Nu. A de zece ori, inima. A și B, floarea.
 
-Al treilea pas, pentru Minim. Piesa doi, din Comutatorul de emoții. La butonul A, arăți fața veselă.
+Al doilea pas. Piesa din lecția unu, pornirea. Proiect nou. În On start: Show icon inimă, pauză, Show string cu numele tău, fără diacritice, și Clear screen.
 
-Al patrulea pas, pentru Minim. Piesa trei, din Felinarul inteligent. La butonul B, derulezi temperatura.
+Al treilea pas. Piesele din lecțiile trei și opt. La butonul A: Show icon fața veselă, pauză, Clear screen. La butonul B: Show number Temperature, pauză, Clear screen.
 
-Al cincilea pas, pentru Minim. Piesa patru, din Bila magică. Creezi variabila raspuns. La scuturare alegi zero sau unu și arăți Da sau Nu.
+Al patrulea pas. Piesa din lecția șapte, bila magică, pentru Minim. La On shake: Set raspuns la Pick random de la zero la unu. If then else: dacă raspuns este zero, Da, altfel Nu. Toate cele patru piese merg împreună.
 
-Al șaselea pas, pentru Complet. Piesa cinci, din Cursa până la zece. Creezi variabila apasari. La pornire o pui pe zero. La A adaugi unu, arăți fața veselă și, dacă apasari este zece, arăți inima și pui apasari pe zero.
+Al cincilea pas. Complet. Piesele din lecțiile cinci și doi. Variabila apasari: la A adaugi unu cu Change. Dacă apasari este zece, arăți inima și revii la zero. La butonul A și B împreună, floarea din lecția doi, într-o variantă scurtă, cu Plot.
 
-Al șaptelea pas, pentru Complet. Piesa șase, din Floarea care se deschide. La A și B împreună pui cele trei cadre de deschidere, cu pauze, și stingi ecranul.
+Al șaselea pas. Testul și prezentarea, un minut. Arăți insigna unui coleg și spui ce piesă ți-a plăcut cel mai mult, din ce lecție vine și ce ai schimba. Apoi eliberezi masa.
 
-Al optulea pas. Testul și prezentarea, un minut. Dai insigna unui coleg, iar el testează toate gesturile. Apoi spui, în ordine: cum se numește proiectul și ce face, cum funcționează, ce a fost greu și ce ai adăuga.
+Greșeli frecvente. Insigna nu mai pornește: ai prea multe blocuri pe masă, neconectate. Numele nu apare: ai scris diacritice sau Show string nu este în On start. B arată zero: Temperature nu este pus în Show number. Bila dă mereu Da: limita lui Pick random este greșită, ar trebui de la zero la unu. Inima nu apare la zece: apasari nu este pus la zero la start sau lipsește Change. Două butoane se amestecă: A și B au fost apăsate prea repede, pune pauze.
 
-Verificarea Modulului. Pe pagina lecției ai zece întrebări și un tabel de autoevaluare. Răspunzi fără să te uiți în lecții. Apoi primești insigna micro:bit Starter.
+Proiectul de azi. Insigna inteligentă.
 
-De făcut azi. Proiectul se numește Insigna inteligentă. Minim înseamnă: nume și inimă, A, B și scuturare funcționale. Complet înseamnă: minim, plus contorul cu inimă la zece apăsări și floarea la A și B. Dacă rămâi în urmă, salvează la Minim.
+Minim înseamnă: insignă cu inimă și nume, emoție la A, temperatură la B și bilă magică, cu cel puțin opt blocuri diferite, pe placă. Complet înseamnă: minim, plus contorul de la A și floarea de la A și B, cu cel puțin șase blocuri diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg apasă A, B și scutură placa și vede emoția, temperatura și Da sau Nu.
 
-Bonus. Insigna cu povestea mea. Doar dacă ai terminat Complet. Pui inima care bate în locul inimii fixe, adaugi lumina la scuturare, faci un al doilea mod sau un cod ca la seiful secret și desenezi pe foaie un ambalaj pentru insignă.
+Bonus. Schimbi emoția de la A și numele din pornire. Provocarea, Insigna cu povestea mea: insigna are o poveste în trei cadre, de exemplu dimineața, prânzul, seara, desenate de tine. Cadrele apar la apăsarea lui A, B și A și B împreună, într-o ordine care are sens. Un coleg ghicește povestea fără explicații.
 
-Greșeli frecvente. Insigna nu mai pornește: ai blocuri neconectate pe masă, verifică ce este gri. A și B nu merge: apeși butoanele simultan. Numele se vede ciudat: ai pus diacritice. Inima nu apare la zece: Change apasari este după If, nu înainte. Programul nu este pe placă: ai uitat Download după ultima modificare.
+Recapitulare. Un proiect mare este făcut din piese mici. Fiecare piesă a fost o lecție: inimă, butoane, contor, bilă, senzori. Salvezi un proiect cu nume clar. Prezentarea arată ce ai învățat. Ai terminat Modulul unu.
 
-Tema. Faci o poză programului și o poză a insignei pe placă. Le aduci mâine pentru portofoliul tău.
+Tema, opțional. Faci o poză programului tău și o poză a insignei pe placă și le aduci mâine pentru portofoliul tău. Verificarea Modulului unu. Pe pagina lecției ai zece întrebări și un tabel de autoevaluare. Răspunzi fără să te uiți în lecții. Apoi primești insigna micro:bit Starter.
 
-Recapitulare. Ai învățat LED-uri, butoane, variabile, decizii, bucle și senzori. Un proiect bun combină mai multe lucruri. Prezentarea spune ce face, cum, ce a fost greu și ce urmează. Testezi mereu pe placa adevărată.
+Ce urmează. În Modulul doi placa vorbește cu alte plăci prin radio, iar tu legi LED-uri externe la pini.
 
-Ce urmează. În Modulul doi placa vorbește cu alte plăci prin radio, ai mai multe plăci în joc și legi LED-uri externe la pini.
-
-Felicitări pentru primul modul micro:bit.
+Felicitări, ai terminat Modulul unu.

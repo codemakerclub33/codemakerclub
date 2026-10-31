@@ -1,31 +1,35 @@
-Lecția opt. Felinarul inteligent.
+Lecția opt. Sera inteligentă.
 
-Astăzi placa devine detectiv: simte cât de multă lumină este în cameră și ce temperatură este. Din asta facem un felinar care se aprinde singur. Proiectul se numește Felinarul inteligent. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero opt.
+Astăzi înveți că placa măsoară lumina și temperatura și faci Sera inteligentă: placa veghează o plantă, iar dacă este prea întuneric sau prea cald, îți arată cu o față. Fișierul se numește Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero opt.
 
-Ce facem azi. La final citești senzorul de lumină și senzorul de temperatură și iei decizii pe baza lor. Felinarele din parc se aprind singure seara. Aerul condiționat pornește când este prea cald. Telefonul își face ecranul mai luminos la soare. Toate aceste aparate măsoară și decid ce să facă. Azi faci și tu un astfel de aparat.
+Obiectivul. La finalul orei citești senzorul de lumină și senzorul de temperatură și iei decizii pe baza lor. Minim: placa arată o față tristă când este întuneric și una veselă când este lumină, la A arată cât de multă lumină este, la B temperatura, cu cel puțin opt blocuri diferite. Complet: partea a doua, cu o față surprinsă când este prea cald, iar A și B arată valorile fără să se încurce cu fața, cu cel puțin șase blocuri diferite.
 
-Instrucțiuni noi azi. Light level dă un număr pentru lumină. Temperature dă temperatura în grade. If then else decide după un prag. Variabila ocupat ține minte că ecranul este folosit. Show number arată valoarea.
+De ce contează. Într-o seră adevărată, plantele au nevoie de destulă lumină și de o temperatură potrivită. Aparatele din seră măsoară și decid: deschid o fereastră sau aprind o lampă. Azi faci și tu un astfel de aparat, la scară mică.
 
-Primul pas. Cum vede lumina placa? Nu are un ochi special. Folosește chiar LED-urile de pe ecran și le face să măsoare lumina. Rezultatul este un număr între zero, întuneric total, și două sute cincizeci și cinci, lumină foarte puternică. Explorare: arăți numărul și acoperi placa cu mâna.
+Ce face fiecare bloc de azi. Light level dă un număr între zero, întuneric, și două sute cincizeci și cinci, foarte multă lumină. Temperature dă temperatura aproximativă, în grade Celsius. Din lecțiile trecute știi deja On start, Forever, Show icon, Show number, Pause, On button pressed, If then else, comparațiile și Set.
 
-Al doilea pas. Temperatura. Un senzor din interior dă blocul Temperature, în grade Celsius. De exemplu, în On button A pressed arăți numărul.
+Primul pas. Cum vede lumina placa. Placa nu are un ochi separat. Folosește LED-urile de pe ecran ca senzor. Rezultatul este un număr între zero și două sute cincizeci și cinci. În simulator, un Forever cu Show number Light level arată valoarea, iar o schimbi cu slider-ul de lumină. Pe placa adevărată, acoperi LED-urile cu mâna și numărul scade.
 
-Al treilea pas, pentru Minim. Proiect nou. În Forever: dacă Light level este mai mic decât cincizeci, Plot all, adică toate LED-urile aprinse, altfel Clear screen. La final o pauză de o sută de milisecunde.
+Al doilea pas. Temperatura. Temperature dă temperatura aproximativă. Placa se încălzește puțin singură, deci poate arăta cu unu până la trei grade mai mult decât camera. La butonul B, Show number Temperature. Ții placa în pumn un minut și apeși B din nou: numărul crește.
 
-Al patrulea pas, pentru Complet. Când apeși A, placa vrea să deruleze temperatura, dar Forever desenează în același timp și strică numărul. Rezolvăm cu o variabilă-semnal numită ocupat. Zero înseamnă că felinarul poate lucra. În A: Set ocupat to unu, arăți temperatura, Set ocupat to zero. În Forever, felinarul lucrează doar dacă ocupat este zero.
+Al treilea pas. Alegem pragurile. Un prag este numărul de la care placa decide. Pentru lumină alegem cincizeci: sub cincizeci este prea întuneric. Pentru căldură alegem douăzeci și opt: peste douăzeci și opt este prea cald. Testezi în simulator cu slider-ul de lumină sus și jos. Pragurile le alegi tu, după locul în care lucrezi.
 
-Al cincilea pas. Depanare în pereche. Citești un program cu o greșeală și spui ce nu este bine.
+Al patrulea pas. Sera, pentru Minim. În Forever, un If then else, cu condiția light level mai mic decât cincizeci. La atunci, Show icon fața tristă, adică prea întuneric. La altfel, Show icon fața veselă. La sfârșit, Pause două sute. Separat, la butonul A, Show number Light level și Pause o mie. Separat, la butonul B, Show number Temperature și Pause o mie. Observi că numerele de la A și B sunt acoperite repede de fața din Forever. O rezolvăm la Complet.
 
-De făcut azi. Proiectul se numește Felinarul inteligent. Minim înseamnă: se face întuneric și placa se aprinde, apare lumina și se stinge. Complet înseamnă: minim, plus temperatura la A. Dacă rămâi în urmă, salvează la Minim.
+Al cincilea pas. Complet. Prea cald și fără încurcături. Adăugăm o a treia față: dacă este prea cald, temperature mai mare decât douăzeci și opt, placa arată fața surprinsă. Pentru asta punem un If then else în ramura Altfel a altuia. Ca să nu se încurce fața cu numerele de la A și B, folosim o variabilă semnal, ocupat: unu înseamnă ecranul este folosit, zero înseamnă sera poate afișa fața. În On start, Set ocupat la zero. Sera lucrează doar dacă ocupat este zero. La A și la B, Set ocupat la unu, arăți valoarea, Pause o mie, apoi Set ocupat la zero.
 
-Bonus. Felinarul cu două praguri. Faci două praguri pentru felinar, arăți o față veselă sau tristă după temperatură, măsori temperatura în trei locuri și te gândești la un aparat din casă care folosește senzorul de lumină.
+Greșeli frecvente. Fața clipește: Forever nu are Pause, pune două sute. Mereu fața tristă: pragul de lumină este prea mare, sau ai scris mai mare în loc de mai mic. Niciodată fața surprinsă: pragul de căldură este prea mare, mută slider-ul de temperatură sus. Numărul dispare imediat: Forever îl acoperă, folosește ocupat. Temperatura pare prea mare: placa se încălzește puțin singură, nu este o greșeală. Light level este mereu zero: ecranul este acoperit sau slider-ul este jos.
 
-Greșeli frecvente. Felinarul este invers: ai schimbat semnele mai mic și mai mare. Întuneric înseamnă lumină mică. Nu se aprinde niciodată: pragul este prea mic pentru sala ta, măsoară și alege altul. Temperatura arată foarte mult: este temperatura plăcii, puțin mai mare decât a camerei. Numărul de la A dispare: ai uitat variabila ocupat. Felinarul nu revine: ai uitat Set ocupat to zero. Ecranul clipește: lipsește pauza din Forever.
+Proiectul de azi. Sera inteligentă.
 
-Tema. Observi acasă un aparat care simte ceva. Îl desenezi și scrii ce măsoară și ce decide.
+Minim înseamnă: fața se schimbă după lumină, iar A și B arată valorile, cu cel puțin opt blocuri diferite, pe placă. Complet înseamnă: minim, plus fața surprinsă la căldură și valori fără încurcături, cu cel puțin șase blocuri diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg acoperă placa cu mâna și apare fața tristă, o descoperă și apare fața veselă, iar la A și B vede valorile.
 
-Recapitulare. Light level dă un număr între zero și două sute cincizeci și cinci. Lumina este măsurată cu LED-urile. Temperature dă temperatura aproximativă. Pragul îl alegi tu. O variabilă-semnal previne încurcăturile de pe ecran.
+Bonus. Schimbi pragurile și testezi în clasă. Provocarea, Recordul serei: sera ține minte cea mai mare temperatură văzută. Folosești o variabilă numită maxim, la start zero. În Forever, dacă temperatura este mai mare decât maxim, Set maxim la temperatură. La A și B împreună placa arată maxim. Un coleg strânge placa în pumn un minut, apoi apasă A și B, iar valoarea trebuie să fie mai mare decât cea de la început.
+
+Recapitulare. Light level dă un număr între zero și două sute cincizeci și cinci. Lumina este măsurată cu LED-urile de pe ecran. Temperature dă temperatura aproximativă. Pragurile le alegi tu, după locul în care lucrezi. O variabilă semnal, ocupat, previne încurcăturile de pe ecran.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă fața surprinsă și variabila ocupat. Dacă ai Complet, observi acasă un loc unde contează lumina sau căldura, desenezi ce ar măsura placa și ce față ar arăta.
 
 Ce urmează. În lecția nouă punem tot la un loc într-un proiect cu stare, un seif secret.
 
-Succes la felinarul tău.
+Succes la sera ta.

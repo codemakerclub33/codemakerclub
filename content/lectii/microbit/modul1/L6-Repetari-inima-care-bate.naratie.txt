@@ -1,33 +1,37 @@
-Lecția șase. Inima care bate.
+Lecția șase. Farul de pe mare.
 
-Astăzi înveți placa să repete lucruri, fără să scrii aceleași blocuri de zece ori. Folosim bucle. Proiectul se numește Inima care bate. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero șase.
+Astăzi înveți să repeți lucruri cu bucle și faci Farul de pe mare: un far care pulsează, o rază de lumină care străbate marea și viteza razei controlată din butoane. Fișierul se numește Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero șase.
 
-Ce facem azi. La final folosești Forever, Repeat times și For index from, și știi să faci un desen care se mișcă în ritm. Inima ta bate de mii de ori pe zi, fără să fie nevoie de zece mii de instrucțiuni. Programele repetă lucruri: o animație, o verificare de senzor, o alarmă. Cu o buclă scrii un lucru o singură dată și îl faci să se întâmple de câte ori vrei.
+Obiectivul. La finalul orei folosești Repeat, For index și While și faci o rază de lumină care se mișcă pe ecran. Minim: un far care pulsează de două ori, urmat de o rază de lumină care trece prin rândul din mijloc, în Forever, cu cel puțin opt blocuri diferite. Complet: partea a doua, în care A face raza mai rapidă, B mai lentă, fără să iasă din limite, cu cel puțin șase blocuri diferite.
 
-Instrucțiuni noi azi. Forever repetă fără sfârșit. Repeat times repetă de câte ori alegi tu. For index repetă și îți dă numărul pasului. Plot aprinde un singur LED. Clear screen stinge tot ecranul.
+De ce contează. Un far de pe coastă învârte lumina noapte de noapte, mereu la fel. Programele repetă lucruri: o animație, o verificare de senzor, o alarmă. Cu o buclă scrii un lucru o singură dată și îl faci să se întâmple de câte ori vrei.
 
-Primul pas. Jocul Repetă. Profesorul spune: bate din palme de trei ori. Tu nu ceri bate din palme de trei ori separat. Spui doar de trei ori. Asta este o buclă.
+Ce face fiecare bloc de azi. For index repetă și îți dă numărul pasului, index: zero, unu, doi, trei, patru. While repetă cât timp condiția este adevărată. Button A is pressed este adevărat cât ții butonul A apăsat, îl folosim la Bonus. Din lecțiile trecute știi deja Forever, Repeat, Show icon, Show string, Pause, Clear screen, Plot, Set, Change, If then și On button pressed.
 
-Al doilea pas. Trei feluri de bucle. Forever repetă pe veci, pentru animații și verificări continue. Repeat repetă de un număr fix de ori. For index from zero to patru repetă de cinci ori și îți dă numărul index.
+Primul pas. Jocul Repetă, fără calculator. Un copil dă o comandă: bate din palme de patru ori. Ceilalți o fac. Apoi: bate din palme cât timp țin mâna sus, și bate din palme pentru totdeauna. Sunt trei feluri de a repeta: de un număr de ori, cât timp se întâmplă ceva și pentru totdeauna.
 
-Al treilea pas, pentru Minim. O inimă adevărată face lub, dub, de două ori repede, apoi se odihnește. Proiect nou. În Forever pui Repeat de două ori: inimă mare, pauză scurtă, inimă mică, pauză scurtă. După buclă, o pauză mai lungă, pentru odihnă.
+Al doilea pas. Trei feluri de bucle. Forever repetă la nesfârșit. Repeat patru ori repetă de patru ori. For index de la zero la patru repetă de cinci ori și îți dă numărul index. Index este un număr care crește singur. Îl poți pune în Plot ca x: LED-ul se mută pe rând, de la stânga la dreapta.
 
-Al patrulea pas. Valul de lumină. Folosim numărul index ca să aprindem LED-urile unul după altul, pe rândul din mijloc. Din LED tragi Plot x, y. Pentru x pui blocul index, iar pentru y pui doi. Apoi o pauză și, la final, Clear screen.
+Al treilea pas. Lampa farului, cu Repeat. Lampa farului pulsează: se face mare, apoi mică, de două ori, apoi raza pornește. Proiect nou. În Forever, un Repeat de două ori, cu Show icon romb, pauză trei sute, Show icon romb mic, pauză trei sute.
 
-Al cincilea pas, pentru Complet. Facem o variabilă ritm, care ține cât durează fiecare pauză din bătaia inimii. Număr mic înseamnă inimă rapidă. La A scazi ritmul, dar doar dacă este mai mare decât cincizeci. La B îl crești, dar nu peste o mie.
+Al patrulea pas. Raza de lumină, cu For index. Adăugăm în Forever, după lampă, raza care străbate rândul din mijloc. For index de la zero la patru, cu Clear screen, apoi Plot x index, y doi, și o pauză de o sută cincizeci. Un singur LED trece pe rândul din mijloc, de la stânga la dreapta, ca raza farului. Clear screen din buclă șterge LED-ul vechi înainte de cel nou.
 
-Al șaselea pas. Depanare în pereche. Colegul tău a greșit. Găsește bug-ul și spune ce ai schimba.
+Al cincilea pas. Programul, pentru Minim. Reunești totul. Forever pornește odată cu On start, deci primul bloc din Forever este Pause trei mii, ca titlul Far să se termine.
 
-De făcut azi. Proiectul se numește Inima care bate. Minim înseamnă: o inimă care bate lub, dub, cu odihnă, în buclă. Complet înseamnă: minim, plus A mai repede, B mai lent, între limite. Dacă rămâi în urmă, salvează la Minim.
+Al șaselea pas. Complet. Viteza razei din butoane. Facem o variabilă viteza, care ține cât durează fiecare pas al razei. Număr mic înseamnă rază rapidă. În On start, Set viteza la o sută cincizeci. În For index, în loc de o sută cincizeci pui blocul rotund viteza la pauză. La A, dacă viteza este mai mare decât cincizeci, Change viteza cu minus cincizeci. La B, dacă viteza este mai mică decât cinci sute, Change viteza cu cincizeci.
 
-Bonus. Semaforul pe LED-uri. Faci valul de lumină și pe rândul de jos, adaugi o a doua variabilă pentru bătăi duble, construiești un semafor pe LED-uri și faci trei bătăi în loc de două.
+Greșeli frecvente. Lampa pulsează doar o dată: Repeat este în afara lui Forever. Raza nu se vede: Plot nu are index la x, ci un număr fix. Titlul și lampa se amestecă: Forever nu începe cu pauza de trei mii. Raza devine prea rapidă: viteza a ajuns prea mică, limitează cu If. Raza lasă urmă pe ecran: lipsește Clear screen din buclă. For index de la zero la patru repetă de cinci ori, nu de patru.
 
-Greșeli frecvente. Inima nu se vede bătând: lipsesc pauzele dintre poze. Bate de trei ori în loc de două: ai numărat greșit în Repeat, sau For index from zero to doi repetă de trei ori. Odihna nu apare: pauza este în interiorul lui Repeat, trage-o în afară. Valul nu se vede: x are un număr fix, nu blocul index. Ritmul ajunge la zero și inima înnebunește: ai uitat condiția. Două blocuri Forever se bat: pentru azi folosește unul singur.
+Proiectul de azi. Farul de pe mare.
 
-Tema. Desenezi pe foaie un ceas deșteptător care sună în ritm și scrii ce buclă ai folosi și ce pauze ai pune.
+Minim înseamnă: farul pulsează de două ori și trece raza de lumină, cu cel puțin opt blocuri diferite, pe placă. Complet înseamnă: minim, plus A și B care schimbă viteza razei în limite, cu cel puțin șase blocuri diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când pe placă lampa pulsează, apoi raza trece prin rândul din mijloc, fără explicații.
 
-Recapitulare. Forever repetă pe veci. Repeat patru ori repetă de patru ori. For index from zero to patru repetă de cinci ori și îți dă numărul index. Plot aprinde un LED, Clear screen le stinge pe toate. O variabilă poate controla viteza.
+Bonus. Faci raza și pe rândul de jos. Provocarea, Farul în ceață: cât timp ții apăsat A, este ceață, iar farul trimite semnal de alarmă, tot ecranul clipește rapid. Folosești While cu Button A is pressed și Repeat. Când lași butonul, raza își reia drumul. Un coleg apasă și lasă butonul de trei ori, iar placa trebuie să revină la rază de fiecare dată.
+
+Recapitulare. Forever repetă la nesfârșit, Repeat de câte ori alegi, While cât timp este adevărat. For index de la zero la patru repetă de cinci ori și îți dă index. Plot cu index la x mută LED-ul pe rând, ca raza farului. O variabilă poate controla viteza. Limitele se pun cu If.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă viteza din butoane. Dacă ai Complet, desenezi pe foaie un semafor care schimbă culorile în buclă și scrii ce buclă ai folosi și ce pauze ai pune.
 
 Ce urmează. În lecția șapte placa simte mișcarea, într-o bilă magică ce răspunde Da sau Nu.
 
-Succes la inima ta.
+Succes la farul tău.

@@ -1,17 +1,22 @@
-# LECȚIA 8 — Felinarul inteligent
+# Lecția 8 — Sera inteligentă
 ### Senzori: lumină și temperatură
 **Modulul 1 · Primii pași cu micro:bit (blocuri)**  
 **Code Maker Club · micro:bit Starter**
 
-> Azi placa devine un **detectiv**: simte cât de multă lumină e în cameră și ce temperatură e. Din asta facem un felinar care se aprinde singur.  
-> Proiect: **„Felinarul inteligent”** · `Prenume_Nume_MB1_L08`
+> Azi înveți că placa **măsoară lumina și temperatura** și faci **„Sera inteligentă”**:  
+> placa veghează o plantă: dacă e prea întuneric sau prea cald, îți arată cu o față.  
+> Fișier: `Prenume_Nume_MB1_L08` (ex. `Ana_Pop_MB1_L08`)
 
 ---
 
-## Ce facem azi
-La finalul orei citești **senzorul de lumină** și **senzorul de temperatură** și iei decizii pe baza lor. Felinarele din parc se aprind singure seara. Aerul condiționat pornește când e prea cald. Telefonul își face ecranul mai luminos la soare. Toate aceste aparate **măsoară** lumina sau temperatura și **decid** ce să facă. Azi faci și tu un astfel de aparat.
+## Obiectiv
+La finalul orei citești **senzorul de lumină** și **senzorul de temperatură** și iei decizii pe baza lor.  
+**Minim:** placa arată o față tristă când e întuneric și una veselă când e lumină; la **A** arată cât de multă lumină e, la **B** temperatura, cu **cel puțin 8 blocuri diferite**.  
+**Ținta orei (Complet):** partea a doua: o față surprinsă când e **prea cald**, iar A și B arată valorile **fără să se încurce** cu fața, cu cel puțin **6 blocuri diferite**.
 
-**Unelte azi:** `light level` · `temperature (°C)` · `plot bar graph of … up to …` · `if … else` · `show leds` · `clear screen` · variabile
+## De ce contează
+Într-o seră adevărată, plantele au nevoie de destulă lumină și de o temperatură potrivită. Aparatele din seră **măsoară** și **decid**: deschid o fereastră sau aprind o lampă.  
+Azi faci și tu un astfel de aparat, la scară mică.
 
 ---
 
@@ -19,207 +24,247 @@ La finalul orei citești **senzorul de lumină** și **senzorul de temperatură*
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recap L7: gesturi, `pick random` |
-| 10–30 | Cum „vede” lumina placa? Măsurăm cu bara de LED-uri |
-| 30–45 | Temperatura: ce arată și cât de exact |
-| 45–80 | Felinarul inteligent (**Minim**) |
-| 80–105 | Temperatura la cerere, fără încurcături (**Complet**) |
-| 105–112 | Depanare în pereche |
-| 112–120 | Recapitulare, quiz, temă |
+| 0–10 | Recap L7: mișcare, `pick random` |
+| 10–30 | Cum „vede” lumina placa? `light level` |
+| 30–45 | Temperatura: `temperature (°C)` |
+| 45–75 | Sera inteligentă (**Minim**) |
+| 75–105 | Prea cald și fără încurcături (**Complet**) |
+| 105–120 | Recap, bonus, arăți ce ai gata |
 
----
+**Unelte azi:** placa micro:bit · cablu micro-USB · browser Chrome sau Edge · [makecode.microbit.org](https://makecode.microbit.org)
 
-## Instrucțiuni noi azi
+**Capitole azi:**  
+<span style="color:#D400D4;font-weight:700">Input</span> · <span style="color:#00A4A6;font-weight:700">Logic</span> · <span style="color:#DC143C;font-weight:700">Variables</span> · <span style="color:#1E90FF;font-weight:700">Basic</span>  
+*(nimic nou la Basic, doar combinăm.)*
 
-| Bloc | Ce face | Exemplu |
-|------|---------|---------|
-| `light level` | Dă un număr între 0 și 255 | `light level < 50` |
-| `temperature (°C)` | Dă temperatura aproximativă | `show number temperature` |
-| `if … then … else` | Decide după un prag | întuneric = felinar aprins |
-| variabila `ocupat` | Ține minte că ecranul e folosit | `ocupat = 1` |
+**Blocurile de azi:**
+
+| Bloc | Ce face |
+|------|---------|
+| <span style="color:#D400D4;font-weight:700">light level</span> | dă un număr între **0** (întuneric) și **255** (foarte multă lumină) |
+| <span style="color:#D400D4;font-weight:700">temperature (°C)</span> | dă temperatura aproximativă, în grade Celsius |
+
+*Din lecțiile trecute le știi deja:* <span style="color:#1E90FF;font-weight:700">on start</span>, <span style="color:#1E90FF;font-weight:700">forever</span>, <span style="color:#1E90FF;font-weight:700">show icon</span>, <span style="color:#1E90FF;font-weight:700">show number</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>, <span style="color:#D400D4;font-weight:700">on button pressed</span>, <span style="color:#00A4A6;font-weight:700">if … then … else</span>, <span style="color:#00A4A6;font-weight:700">0 < 0</span>, <span style="color:#00A4A6;font-weight:700">0 = 0</span>, <span style="color:#DC143C;font-weight:700">set</span>.
 
 ---
 
 ## Pas cu pas
 
 ### 1) Cum „vede” lumina placa?
-Placa **nu are un ochi special**. Ea folosește chiar **LED-urile** de pe ecran și le face să măsoare lumina. Rezultatul e un număr între **0** (întuneric total) și **255** (lumină foarte puternică).
+Placa nu are un ochi separat. Folosește **LED-urile de pe ecran** ca senzor: ele pot și să „simtă” lumina. Rezultatul e un număr între **0** și **255**.
 
-**Explorare — o bară de lumină:**
-```text
-forever
-    plot bar graph of light level up to 255
-    pause (ms) 100
-```
-- `light level` e în **Input**. `plot bar graph of … up to …` e în **LED**.  
-- Acoperă placa cu **palma**: bara scade.  
-- Luminează-o cu **lanterna telefonului**: bara crește.
+În simulator, un <span style="color:#1E90FF;font-weight:700">forever</span> cu <span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#D400D4;font-weight:700">light level</span> arată valoarea, iar o schimbi cu **slider-ul** de lumină. Pe placa adevărată, acoperi LED-urile cu mâna: numărul scade.
 
-**Ce vezi pe ecran:** o bară de LED-uri aprinse. Cu cât e mai multă lumină, cu atât se aprind mai multe LED-uri.
-
-Notează pe foaie trei valori măsurate cu `show number light level`: **în clasă**, **cu palma peste placă** și **cu lanterna**. Valorile diferă de la o sală la alta, deci pragul din program trebuie ales de tine.
+**Încearcă tu — (5–8 min)**  
+- [ ] Vezi `light level` schimbându-se în simulator  
+- [ ] Pe placă, acoperi ecranul cu mâna și numărul scade  
 
 ### 2) Temperatura
-Placa măsoară temperatura cu un senzor din interior, iar blocul `temperature (°C)` îți dă un număr în **grade Celsius**.
+<span style="color:#D400D4;font-weight:700">temperature (°C)</span> dă temperatura **aproximativă**. Placa se încălzește puțin singură, deci poate arăta cu 1–3 grade mai mult decât camera.
 
-```text
-on button A pressed
-    show number temperature
-```
-- Valoarea e **aproximativă**: placa se încălzește puțin singură, deci poate arăta cu un grad sau două mai mult decât termometrul din cameră.  
-- În simulator ai un cursor pentru temperatură, ca să încerci valori diferite.
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#D400D4;font-weight:700">temperature (°C)</span>
 
-### 3) Felinarul — Minim
-Creezi un proiect nou: `Prenume_Nume_MB1_L08`.
+**Încearcă tu — (5 min)**  
+- [ ] Apeși B și apare temperatura (de exemplu `23`)  
+- [ ] Ții placa în pumn un minut și apeși B din nou; numărul crește  
 
-```text
-forever
-    if light level < 50 then
-        show leds   (toate cele 25 de LED-uri aprinse)
-    else
-        clear screen
-    pause (ms) 100
-```
+### 3) Alegem pragurile
+Un **prag** e numărul de la care placa decide. Pentru lumină alegem `50`: sub `50` e „prea întuneric”. Pentru căldură alegem `28`: peste `28` e „prea cald”.
 
-**Cum desenezi „toate aprinse”:** în `show leds` apeși pe fiecare pătrățel până se face roșu peste tot.
+Testează în simulator: cu slider-ul de lumină sus `light level` e mare, cu slider-ul jos e mic. Pragurile le alegi **tu**, după locul în care lucrezi.
 
-**Ce vezi pe ecran la întuneric:**
-```text
-# # # # #
-# # # # #
-# # # # #
-# # # # #
-# # # # #
-```
-La lumină ecranul e **stins**.
+**Încearcă tu — (5–8 min)**  
+- [ ] Ai notat `light level` la lumină, la umbră și cu mâna deasupra  
+- [ ] Ai ales pragurile tale (lumină între 30 și 80, căldură între 26 și 30)  
 
-- **50** e **pragul**. Sub 50 e „întuneric”, de la 50 în sus e „lumină”.  
-- `pause (ms) 100` îl lasă pe senzor să respire și pe ecran să nu clipească.  
-- Testează: acoperă placa cu palma. Se aprinde felinarul? Dacă nu, mărește pragul (de exemplu `80`).
+### 4) Sera: Minim
+1. În <span style="color:#1E90FF;font-weight:700">forever</span>: <span style="color:#00A4A6;font-weight:700">if … then … else</span> cu <span style="color:#00A4A6;font-weight:700">0 < 0</span> → `light level < 50`  
+2. La **atunci**: <span style="color:#1E90FF;font-weight:700">show icon</span> `Sad` (prea întuneric)  
+3. La **altfel**: <span style="color:#1E90FF;font-weight:700">show icon</span> `Happy`  
+4. La sfârșit: <span style="color:#1E90FF;font-weight:700">pause (ms)</span> `200`  
+5. Separat, <span style="color:#D400D4;font-weight:700">on button A pressed</span>: <span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#D400D4;font-weight:700">light level</span> și <span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+6. Separat, <span style="color:#D400D4;font-weight:700">on button B pressed</span>: <span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#D400D4;font-weight:700">temperature (°C)</span> și <span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
 
-**Gata când:**  
-- [ ] Blocurile sunt puse în ordinea din lecție  
-- [ ] Simulatorul face ce scrie în „Minim”  
+Programul tău (Minim):
 
-### 4) Complet — temperatura fără încurcături
-Dacă apeși A, placa vrea să deruleze temperatura, dar `forever` desenează în același timp (aprinde sau stinge LED-urile) și strică numărul. Rezolvăm cu o **variabilă-semnal** numită `ocupat`.
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `light level < 50` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Sad`  
+&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Happy`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `200`  
 
-- `ocupat = 0` înseamnă „felinarul poate lucra”.  
-- `ocupat = 1` înseamnă „pe ecran e altceva, felinarul stă”.
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#D400D4;font-weight:700">light level</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
 
-```text
-on start
-    set ocupat to 0
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#D400D4;font-weight:700">temperature (°C)</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
 
-forever
-    if ocupat = 0 then
-        if light level < 50 then
-            show leds   (toate aprinse)
-        else
-            clear screen
-    pause (ms) 100
+> Observi că numerele de la A și B sunt acoperite repede de fața din <span style="color:#1E90FF;font-weight:700">forever</span>. O rezolvăm la **Complet**.
 
-on button A pressed
-    set ocupat to 1
-    show number temperature
-    pause (ms) 500
-    set ocupat to 0
-```
+**Încearcă tu — (15–20 min)**  
+- [ ] Cu lumină apare fața veselă, în întuneric cea tristă  
+- [ ] La A și la B apar valorile, chiar dacă fața le acoperă repede  
+- [ ] Programul e pe placa adevărată  
 
-- La apăsarea lui A, `ocupat` devine `1`: felinarul **tace**.  
-- `show number temperature` derulează temperatura (de exemplu `23`).  
-- După o jumătate de secundă, `ocupat` revine la `0` și felinarul își reia treaba.
+### 5) Complet: prea cald și fără încurcături
+Adăugăm o a treia față: dacă e **prea cald** (`temperature > 28`), placa arată `Surprised`. Pentru asta punem un <span style="color:#00A4A6;font-weight:700">if … then … else</span> **în ramura altfel** a altuia.
 
-**Ce vezi pe ecran la apăsarea lui A:** numărul derulează o dată, apoi ecranul se întoarce la felinar.
+Ca să nu se încurce fața cu numerele de la A și B, folosim o variabilă-semnal `ocupat`: `1` = „ecranul e folosit”, `0` = „sera poate afișa fața”.
 
-**Gata când:**  
-- [ ] Blocurile pentru „Complet” sunt adăugate  
-- [ ] Simulatorul face tot ce scrie în „Complet”  
+1. În <span style="color:#1E90FF;font-weight:700">on start</span>: <span style="color:#DC143C;font-weight:700">set</span> `ocupat` to `0`  
+2. Sera lucrează **doar dacă** `ocupat = 0` (un <span style="color:#00A4A6;font-weight:700">if</span> în jurul celor vechi)  
+3. La A și la B: <span style="color:#DC143C;font-weight:700">set</span> `ocupat` to `1`, arăți valoarea, <span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`, apoi <span style="color:#DC143C;font-weight:700">set</span> `ocupat` to `0`  
 
-### 5) Depanare în pereche
-Spune ce nu e bine aici:
-```text
-forever
-    if light level > 50 then
-        show leds   (toate aprinse)
-    else
-        clear screen
-```
-Răspuns: semnul e **greșit**. Cu `>` felinarul se aprinde la **lumină** și se stinge la **întuneric**, exact invers.
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `ocupat` to `0`  
 
-**Gata când:**  
-- [ ] Am găsit greșeala colegului și am explicat de ce apare  
-- [ ] Programul reparat merge
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `ocupat = 0` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `temperature (°C) > 28` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Surprised`  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `light level < 50` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Sad`  
+&emsp;&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Happy`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `200`  
 
----
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `ocupat` to `1`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#D400D4;font-weight:700">light level</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `ocupat` to `0`  
 
-## De făcut azi — „Felinarul inteligent”
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `ocupat` to `1`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#D400D4;font-weight:700">temperature (°C)</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `ocupat` to `0`
 
-### Minim vs Complet
-
-| | Ce trebuie |
-|--|------------|
-| **Minim** | Felinar: sub prag toate LED-urile aprinse, altfel stinse |
-| **Complet** | Minim + **A** arată temperatura, cu variabila `ocupat` |
-
-### Pasul 1 — Minim
-- [ ] `forever` cu `if light level < …` și `else`  
-- [ ] `show leds` cu toate cele 25 aprinse  
-- [ ] `clear screen` la lumină  
-- [ ] Pragul testat și potrivit sălii  
-
-**→ Minim când:** acoperi placa cu palma și ea se luminează.
-
-### Pasul 2 — Complet
-- [ ] Variabila `ocupat` setată în `on start`  
-- [ ] `if ocupat = 0` în `forever`  
-- [ ] A: `ocupat = 1` → `show number temperature` → `ocupat = 0`  
-- [ ] Numele fișierului e `MB1_L08`
-
----
-
-## Bonus ★★★ — Provocare: Felinarul cu două praguri
-*Doar dacă ai terminat Complet.*
-
-- [ ] Fă **două praguri**: sub `30` felinar complet, între `30` și `100` doar un rând aprins, peste `100` stins  
-- [ ] Arată o față **Happy** dacă temperatura e între `18` și `26` și **Sad** în rest (cu `and`)  
-- [ ] Măsoară temperatura în trei locuri din clasă și notează-le într-un tabel  
-- [ ] Gândește un aparat din casă care ar folosi senzorul de lumină
+**Încearcă tu — (15–20 min)**  
+- [ ] Dacă strângi placa în pumn, apare fața surprinsă  
+- [ ] A și B arată valorile, iar fața nu le acoperă  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
 
 ---
 
 ## Greșeli frecvente
-1. **„Felinarul e invers”** — semnul `<` și `>` e schimbat. Întuneric = lumină **mică** = `light level < 50`.  
-2. **„Nu se aprinde niciodată”** — pragul e prea mic pentru sala ta. Măsoară și alege altul.  
-3. **„Temperatura arată foarte mult”** — e temperatura plăcii, cu un pic mai mare decât a camerei.  
-4. **„Numărul de la A dispare”** — ai uitat variabila `ocupat`, iar felinarul îl șterge.  
-5. **„Felinarul nu revine după A”** — ai uitat `set ocupat to 0` la sfârșit.  
-6. **„Ecranul clipește”** — lipsește `pause (ms) 100` din `forever`.
+1. **Fața clipește** — <span style="color:#1E90FF;font-weight:700">forever</span> nu are <span style="color:#1E90FF;font-weight:700">pause (ms)</span>. Pune `200`.  
+2. **Mereu fața tristă** — pragul de lumină e prea mare, sau ai scris `>` în loc de `<`. Încearcă `50`.  
+3. **Niciodată fața surprinsă** — pragul de căldură e prea mare. Pe placa din simulator mută slider-ul de temperatură sus.  
+4. **Numărul dispare imediat** — <span style="color:#1E90FF;font-weight:700">forever</span> îl acoperă. Folosește `ocupat`.  
+5. **Temperatura pare prea mare** — placa se încălzește puțin singură. Nu e o greșeală.  
+6. **`light level` e mereu `0`** — ecranul e acoperit sau simulatorul are slider-ul jos.  
 
 ---
 
-## Recapitulare pe scurt
-1. `light level` dă un număr între **0** și **255**.  
-2. Lumina e măsurată cu **LED-urile** de pe ecran.  
-3. `temperature (°C)` dă temperatura **aproximativă**.  
-4. Pragul îl alegi tu, după locul în care lucrezi.  
-5. O variabilă-semnal (`ocupat`) previne încurcăturile de pe ecran.
-6. **Schema pe scurt (pe foaie):** `forever` → citește `light level` → mai mic decât prag? → da: LED-uri aprinse · nu: stinge · A → `ocupat = 1` → temperatura → `ocupat = 0`
+## De făcut azi — „Sera inteligentă”
+Salvat: `Prenume_Nume_MB1_L08`
+
+### Minim vs Complet *(citește înainte să începi)*
+
+| | Ce trebuie |
+|--|------------|
+| **Minim („am reușit”)** | **Pasul 1** — fața se schimbă după lumină, iar A și B arată valorile, cu **cel puțin 8 blocuri diferite**, pe placă |
+| **Complet (ținta orei)** | Minim + **Pasul 2** — fața surprinsă la căldură și valori fără încurcături, cu cel puțin **6 blocuri diferite** |
+
+Dacă rămâi în urmă: **oprește-te la Minim** și salvează. Nu e eșec, e baza pentru lecția următoare.
+
+### Pasul 1 — Sera inteligentă *(Minim)*
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `light level < 50` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Sad`  
+&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Happy`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `200`  
+
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#D400D4;font-weight:700">light level</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#D400D4;font-weight:700">temperature (°C)</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`
+
+- [ ] Proiect nou cu numele `Prenume_Nume_MB1_L08`  
+- [ ] Pragul de lumină `50` merge în simulator (sau l-ai ales tu)  
+- [ ] Ai cel puțin **8 blocuri diferite**: <span style="color:#1E90FF;font-weight:700">forever</span>, <span style="color:#00A4A6;font-weight:700">if … then … else</span>, <span style="color:#00A4A6;font-weight:700">0 < 0</span>, <span style="color:#D400D4;font-weight:700">light level</span>, <span style="color:#1E90FF;font-weight:700">show icon</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>, <span style="color:#D400D4;font-weight:700">on button pressed</span>, <span style="color:#1E90FF;font-weight:700">show number</span>, <span style="color:#D400D4;font-weight:700">temperature (°C)</span>  
+- [ ] Programul e trimis pe placă  
+
+**→ Ai Minim când:** un coleg acoperă placa cu mâna și apare fața tristă, o descoperă și apare fața veselă, iar la A și B vede valorile.
+
+### Pasul 2 — Prea cald și fără încurcături *(Complet)*
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `ocupat` to `0`  
+
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `ocupat = 0` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `temperature (°C) > 28` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Surprised`  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `light level < 50` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Sad`  
+&emsp;&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Happy`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `200`  
+
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `ocupat` to `1`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#D400D4;font-weight:700">light level</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `ocupat` to `0`  
+
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `ocupat` to `1`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#D400D4;font-weight:700">temperature (°C)</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `ocupat` to `0`
+
+- [ ] Variabila `ocupat` pusă la `0` în <span style="color:#1E90FF;font-weight:700">on start</span>  
+- [ ] Sera lucrează doar când `ocupat = 0`  
+- [ ] Peste `28` grade apare `Surprised`  
+- [ ] A și B arată valorile, apoi `ocupat` revine la `0`  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
+- [ ] Salvat din nou: `Prenume_Nume_MB1_L08`  
+
+**Gata Complet când:** fața se schimbă după lumină și căldură, iar A și B arată valorile fără să fie șterse.
 
 ---
 
-## Quiz scurt
+## Bonus ★★★ — Provocare: Recordul serei
+*Doar dacă ai terminat Complet.*
+
+- [ ] Schimbă pragurile și testează în clasă (lumină, umbră, mâna deasupra)  
+- [ ] **Provocarea:** sera ține minte **cea mai mare temperatură** văzută. Folosești o variabilă `maxim` (la start `0`): în <span style="color:#1E90FF;font-weight:700">forever</span>, dacă <span style="color:#D400D4;font-weight:700">temperature (°C)</span> este mai mare decât `maxim`, <span style="color:#DC143C;font-weight:700">set</span> `maxim` to temperatura. La <span style="color:#D400D4;font-weight:700">on button A+B pressed</span> placa arată `maxim`. Un coleg strânge placa în pumn un minut, apoi apasă A+B: valoarea trebuie să fie **mai mare** decât cea de la început.  
+
+## Recapitulare rapidă
+1. `light level` dă un număr între **0** și **255**  
+2. Lumina e măsurată cu **LED-urile** de pe ecran  
+3. `temperature (°C)` dă temperatura **aproximativă**  
+4. Pragurile le alegi tu, după locul în care lucrezi  
+5. O variabilă-semnal (`ocupat`) previne încurcăturile de pe ecran  
+6. Minim = Pasul 1 · Complet = Pasul 1 + 2  
+
+## Schema pe scurt *(pe foaie)*
+<span style="color:#1E90FF;font-weight:700">forever</span> → <span style="color:#00A4A6;font-weight:700">if</span> temperatura `> 28` → `Surprised` · altfel <span style="color:#00A4A6;font-weight:700">if</span> <span style="color:#D400D4;font-weight:700">light level</span> `< 50` → `Sad` · altfel `Happy` → <span style="color:#1E90FF;font-weight:700">pause (ms)</span>
+
+A / B → `ocupat = 1` → <span style="color:#1E90FF;font-weight:700">show number</span> → <span style="color:#1E90FF;font-weight:700">pause (ms)</span> → `ocupat = 0`
+
+**Quiz scurt (cu profesorul):**  
 - Ce valori poate avea `light level`?  
 - De ce temperatura plăcii poate fi mai mare decât a camerei?  
 - Ce înseamnă `ocupat = 1` în programul nostru?  
-- Cum ai schimba pragul felinarului?
+- Cum ai schimba pragul de lumină al serei?  
+- De ce `forever` are nevoie de o pauză?  
 
----
+## Temă (opțional)
+- Dacă ai doar Minim: acasă, adaugi fața surprinsă și `ocupat` (Pasul 2), în același `Prenume_Nume_MB1_L08`.  
+- Dacă ai Complet: observi acasă un loc unde contează lumina sau căldura (frigider, cuptor, o plantă pe geam); desenezi ce ar măsura placa și ce față ar arăta.  
+- Dacă ai terminat și Bonusul: faci o copie și schimbi pragurile.  
 
-## Temă
-Observă acasă un aparat care „simte” ceva (felinar, senzor de ușă, frigider). Desenează-l și scrie **ce măsoară** și **ce decide**.
-
----
-
-## Ce urmează — Lecția 9
-Punem tot la un loc într-un proiect cu **stare**: un seif secret.
+## Ce urmează
+În **Lecția 9** punem tot la un loc într-un proiect cu **stare**: un seif secret.

@@ -1,33 +1,35 @@
 Lecția patru. Contorul magic.
 
-Astăzi înveți cum ține minte placa un număr. Folosim o variabilă, adică o cutie cu etichetă. Proiectul se numește Contorul magic. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero patru.
+Astăzi înveți cum ține minte placa un număr și faci Contorul magic: A adaugă unu, B scade unu, A plus B îl face din nou zero, iar la final ai o tabelă de scor cu două echipe. Fișierul se numește Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero patru.
 
-Ce facem azi. La final știi să creezi o variabilă, să îi schimbi valoarea și să o arăți pe LED-uri. Un joc trebuie să țină minte scorul. Un termometru ține minte temperatura. Un contor ține minte câte persoane au intrat. Programul păstrează aceste numere într-o variabilă. Fără variabile, placa ar uita totul imediat.
+Obiectivul. La finalul orei știi să creezi o variabilă, să îi schimbi valoarea și să o arăți pe LED-uri. Minim: un contor cu score, în care A adaugă unu, B scade unu, iar A plus B îl pune pe zero, cu opt blocuri diferite. Complet: partea a doua, o tabelă de scor cu două echipe, roșu și verde, cu cel puțin șase blocuri diferite.
 
-Instrucțiuni noi azi. Make a Variable creează o cutie cu nume. Set pune direct o valoare în cutie. Change adaugă sau scade din valoare. Show number arată valoarea de pe ecran.
+De ce contează. Un joc trebuie să țină minte scorul. Un termometru ține minte temperatura. Un contor ține minte câte persoane au intrat. Programul păstrează aceste numere într-o variabilă: o cutie cu nume. Fără variabile, placa ar uita totul imediat.
 
-Primul pas. Cutia cu etichetă. Pe masă pui o cutie, cu eticheta scor, iar în ea un bilet cu numărul zero. Când cineva spune scor plus unu, scoți biletul, scrii unu și îl pui la loc. Cutia este variabila, eticheta este numele ei, iar biletul este valoarea.
+Ce face fiecare bloc de azi. Make a Variable creează o variabilă nouă, o cutie cu nume. Set pune direct o valoare în cutie. Change adaugă la valoare, sau scade, dacă pui minus. Blocul rotund cu numele variabilei înseamnă valoarea din cutie. Din capitolul Math, blocul zero plus zero adună două numere. Din lecțiile trecute știi deja On start, On button pressed, Show number, Show string, Show icon, Pause și Clear screen.
 
-Al doilea pas. Creăm variabila. Proiect nou, cu numele din fișier. În categoria Variables apeși Make a Variable și scrii scor, în engleză score. Fără spații și fără diacritice.
+Primul pas. Cutia cu etichetă, fără calculator. Luăm o cutie și o etichetă, score. În cutie punem un bilet cu zero. Cineva spune A: ștergi numărul și scrii cu unu mai mult. Cineva spune B: scrii cu unu mai puțin. Cineva spune A plus B: iei biletul și scrii din nou zero. Cutia ține minte numărul. O variabilă este o cutie cu nume și valoare.
 
-Al treilea pas. Când pornește placa, scorul trebuie să fie zero. În On start pui blocul Set score to zero.
+Al doilea pas. Creăm variabila. Proiect nou. Deschizi capitolul Variables și apeși Make a Variable. Numele este score, fără spații și fără diacritice. Apar blocurile Set, Change și blocul rotund score.
 
-Al patrulea pas, pentru Minim. Pentru A pui On button A pressed și înăuntru Change score by unu, apoi Show number score, adică blocul rotund cu numele variabilei. Pentru B, Change score by minus unu și același Show number. Pentru A și B împreună, Set score to zero.
+Al treilea pas. Pornirea contorului. La pornire punem cutia pe zero și arătăm numărul. În On start pui Set score la zero, apoi Show number. Blocul rotund score se trage din Variables și se pune în locul numărului din Show number.
 
-Al cincilea pas, pentru Complet. Facem o tabelă pentru un joc între două echipe. Creezi două variabile, rosu și verde. A adaugă un punct la roșu, B adaugă un punct la verde, iar A și B împreună arată scorul, roșu, o liniuță, verde.
+Al patrulea pas. A, B și A plus B, pentru Minim. La butonul A: Change score cu unu, apoi Show number score. La butonul B: Change score cu minus unu, apoi Show number score. La A plus B: Set score la zero, Show icon cu bifa, pauză, Clear screen și Show number score. Apeși A de trei ori și apare trei. Apeși B o dată și apare doi. Apeși A plus B și apare bifa, apoi zero.
 
-Al șaselea pas. Probe pentru mintea de programator. Fără să rulezi, spui ce număr apare. De exemplu: Set score to cinci, apoi Change score by doi, apoi Show number score. Răspunsul este șapte.
+Al cincilea pas. Complet. Tabela de scor cu două echipe. Facem două cutii, roșu și verde, cu Make a Variable. A adaugă unu la roșu și arată litera R și scorul. B adaugă unu la verde și arată litera V și scorul. A plus B arată litera T, de la total, și suma celor două scoruri, cu blocul zero plus zero. Variabilele roșu și verde sunt cutii diferite.
 
-De făcut azi. Proiectul se numește Contorul magic. Minim înseamnă: A adaugă, B scade, A și B resetează. Complet înseamnă: minim, plus tabela cu două echipe. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg apasă butoanele și spune ce face fiecare.
+Greșeli frecvente. Scorul nu se schimbă: ai folosit Set în loc de Change. Set pune valoarea, Change o adună. În Show number apare zero, nu scorul: ai scris zero, nu ai tras blocul rotund. Numele variabilei nu merge: are spațiu sau diacritice. Scorul trece sub zero: normal, deocamdată nu avem decizii. Nu se întâmplă nimic: blocul de buton este în On start. La A plus B nu se vede scorul: lipsește Show number după Set.
 
-Bonus. Numărătoarea inversă. Pui scorul la zece și faci din B o numărătoare inversă, adaugi un al treilea buton și faci un contor pentru câte persoane intră în clasă.
+Proiectul de azi. Contorul magic.
 
-Greșeli frecvente. Scorul rămâne mereu la unu: ai folosit Set în loc de Change. Set pune valoarea, Change adaugă. Pe ecran se vede zero și nu se schimbă: ai scris numărul zero în Show number, nu ai pus blocul rotund score. Nu poți crea variabila: numele are spațiu sau diacritice. Scorul de la A și B se amestecă: ai folosit aceeași variabilă pentru ambele echipe. Scorul nu se resetează după Reset: ai uitat Set la zero în On start. Scorul minus unu arată ciudat, dar este normal.
+Minim înseamnă: contor cu A, B și A plus B, cu opt blocuri diferite, pe placă. Complet înseamnă: minim, plus tabela de scor cu două echipe, cu cel puțin șase blocuri diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg apasă A de trei ori, apoi B o dată, iar placa arată doi, apoi A plus B o face zero.
 
-Tema. Te gândești la un joc de societate și scrii pe foaie ce numere trebuie ținute minte și ce nume dai fiecărei variabile.
+Bonus. Schimbi ordinea: B adaugă doi, A plus B adaugă zece. Provocarea, Casa de marcat: transformi placa într-o casă de marcat. A este un măr, plus unu. B este un suc, plus cinci. A plus B este o pizza, plus zece. Fiecare produs arată o poză diferită înainte de total. Un coleg cumpără trei lucruri și spune cât are de plătit, iar placa trebuie să arate același număr.
 
-Recapitulare. Variabila este o cutie cu nume și valoare. Set pune direct valoarea. Change adaugă, iar cu minus unu scade. Blocul rotund cu numele variabilei înseamnă valoarea din cutie. Nume bune: fără spații și fără diacritice.
+Recapitulare. Variabilă înseamnă cutie cu nume și valoare. Set pune direct valoarea, Change adaugă, sau scade, cu minus. Blocul rotund cu numele variabilei înseamnă valoarea din cutie. Zero plus zero adună două numere sau două variabile. Nume bune: fără spații, fără diacritice.
 
-Ce urmează. În lecția cinci placa ia decizii cu if și else, într-o cursă până la zece.
+Tema, opțional. Dacă ai doar Minim, adaugi acasă tabela de scor. Dacă ai Complet, te gândești la un joc de societate și scrii pe foaie ce numere trebuie ținute minte și ce nume dai fiecărei variabile.
 
-Succes la contor.
+Ce urmează. În lecția cinci placa ia decizii cu If și Else, într-o cursă până la zece.
+
+Succes la contorul tău.

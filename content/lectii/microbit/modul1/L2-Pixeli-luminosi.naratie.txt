@@ -1,35 +1,37 @@
 Lecția doi. Floarea care se deschide.
 
-Astăzi desenezi cu cele douăzeci și cinci de LED-uri ale plăcii și faci desenele să se miște, ca într-un desen animat. Proiectul se numește Floarea care se deschide. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero doi.
+Astăzi înveți să pictezi pe ecran punct cu punct și faci Floarea care se deschide: o animație în care floarea se deschide petală cu petală, apoi se închide. Fișierul se numește Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero doi.
 
-Ce facem azi. La final desenezi imagini proprii pe LED-uri și le pui una după alta, ca să faci o animație. Ecranul plăcii este un tablou cu douăzeci și cinci de pătrățele. Fiecare LED este un pixel. Toate ecranele din lume, de la telefon la televizor, desenează la fel, doar că au milioane de pixeli. Azi înveți să pictezi cu lumină.
+Obiectivul. La finalul orei știi să aprinzi un LED anume, după coordonate, și să faci o animație din mai multe cadre. Minim: floarea se deschide, cu miez, patru petale și patru colțuri, miezul clipește, iar titlul apare la început, cu opt blocuri diferite. Complet: partea a doua, în care floarea se închide petală cu petală, apare numărul petalelor și o floare desenată de tine, cu cel puțin șase blocuri diferite.
 
-Instrucțiuni noi azi. Show leds desenează LED cu LED. Show string arată un text care se derulează. Show number arată un număr. Clear screen stinge toate LED-urile. Pause oprește programul pentru câteva milisecunde.
+De ce contează. Ecranul plăcii este un tablou cu douăzeci și cinci de pătrățele. Fiecare LED este un pixel. Toate ecranele din lume desenează la fel, doar că au milioane de pixeli. Azi înveți să pictezi cu lumină, un pixel odată.
 
-Primul pas. Proiect nou, cu numele din fișier. Lași blocurile On start și Forever unde sunt.
+Ce face fiecare bloc de azi. Plot x y aprinde LED-ul de la coordonatele alese. Unplot x y îl stinge. Toggle x y îl schimbă: aprins devine stins, stins devine aprins. Repeat repetă de câte ori alegi tu blocurile de înăuntru. Din lecția unu știi deja On start, Forever, Show icon, Show leds, Pause, Clear screen, Show string și Show number.
 
-Al doilea pas. Harta LED-urilor. Ecranul are cinci rânduri și cinci coloane. Un LED are o adresă, coloana și rândul, iar numărătoarea începe de la zero. Colțul de sus, din stânga, este zero, zero.
+Primul pas. Coordonatele. Fiecare LED are o adresă din două numere: x, coloana, și y, rândul. Numărătoarea începe de la zero. Colțul din stânga sus este zero, zero. Colțul din dreapta jos este patru, patru. Mijlocul este doi, doi.
 
-Al treilea pas. Blocul Show leds. Din Basic îl tragi în Forever. Blocul are o grilă de cinci pe cinci pătrățele. Apeși pe un pătrățel și LED-ul se aprinde. Apeși din nou și se stinge.
+Al doilea pas. Plot, aprindem un LED. Proiect nou. Din capitolul LED tragi Plot x y în On start. Scrii x doi și y doi: se aprinde mijlocul. Adaugi încă patru Plot, pentru cele patru petale: doi unu, unu doi, trei doi și doi trei.
 
-Al patrulea pas. Pauza dă timp ochilor. Fără pauză, desenele se schimbă prea repede și nu le vezi. Folosim blocul Pause, în milisecunde. O mie de milisecunde înseamnă o secundă, iar cinci sute, jumătate de secundă. Regula: după fiecare desen, o pauză.
+Al treilea pas. Unplot și Toggle. Unplot stinge LED-ul de la adresa aleasă. Toggle îl schimbă. Dacă pui Toggle de două ori la rând, fără pauză, nu vezi nimic. De aceea între ele punem Pause.
 
-Al cincilea pas, pentru Minim. Un cadru este un desen. Animația apare când arăți cadrele unul după altul. În Forever pui, în ordine: un mugure mic, în mijloc, apoi pauză. O floare pe jumătate deschisă, apoi pauză. O floare mare, deschisă, apoi pauză. Floarea se deschide, iar apoi animația o ia de la capăt.
+Al patrulea pas. Repeat. În loc să copiezi de patru ori aceleași blocuri, le pui într-un Repeat patru ori. Miezul florii clipește de patru ori. După patru schimbări revine la starea de la început.
 
-Al șaselea pas. Text și numere. Show string arată un text care se derulează de la dreapta la stânga, fără diacritice. Show number arată un număr. Un număr cu o singură cifră apare fix. Un număr mai lung se derulează.
+Al cincilea pas. Floarea, pentru Minim. Punem toată floarea în Forever. În On start pui Show string cu titlul Floare. În Forever, primul bloc este Pause patru mii, ca titlul să se termine înainte să înceapă desenul. Apoi Clear screen. Apoi miezul, pauză, cele patru petale, pauză, cele patru colțuri, pauză. La final, Repeat patru ori, cu Toggle la miez și o pauză scurtă.
 
-Al șaptelea pas, pentru Complet. După al treilea cadru adaugi încă două: cadrul doi, din nou, floarea se închide pe jumătate, apoi cadrul unu, mugurul. La final scrii titlul cu Show string.
+Al șaselea pas. Complet. Floarea se închide. După clipit, adaugi în Forever partea a doua, în ordine inversă. Pauză o secundă. Unplot la cele patru colțuri, pauză. Unplot la cele patru petale, pauză. Unplot la miez, apoi Clear screen. Show number opt, pentru numărul de petale și colțuri. Apoi Show leds cu floarea ta, desenată de tine, și la final Show icon cu inima.
 
-De făcut azi. Proiectul se numește Floarea care se deschide. Minim înseamnă: trei cadre, cu pauze, repetate. Complet înseamnă: minim, plus floarea se închide și apare titlul. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg spune: se deschide o floare.
+Greșeli frecvente. Nu se întâmplă nimic: blocul este lăsat singur. Petalele apar toate deodată: lipsește pauza între grupe. Floarea se schimbă înainte să se termine titlul: Forever nu începe cu pauza de patru mii. Un LED este la locul greșit: ai încurcat x cu y, x este coloana, y este rândul. Miezul rămâne stins după clipit: Repeat are un număr impar, folosește patru. Nu se stinge nimic: ai pus Plot în loc de Unplot.
 
-Bonus. Floarea cu patru petale. Desenezi o floare cu patru petale, faci altă animație, încerci timpi diferiți și pui înainte de titlu numărul de petale.
+Proiectul de azi. Floarea care se deschide.
 
-Greșeli frecvente. Vezi doar ultimul cadru: ai uitat pauza. Floarea clipește prea repede: pauza este prea mică, încearcă cinci sute sau o mie. Desenul nu seamănă cu al tău: verifică rândurile de sus în jos și coloanele de la stânga la dreapta. Desenele se amestecă: și On start, și Forever desenează în același timp, deci pune desenele într-un singur loc. Textul are litere ciudate: ai pus diacritice. Un LED a rămas aprins din cadrul vechi: fiecare Show leds înlocuiește complet desenul, deci verifică grila nouă.
+Minim înseamnă: floarea se deschide și miezul clipește, cu opt blocuri diferite, pe placă. Complet înseamnă: minim, plus floarea se închide, apare opt și floarea ta, cu cel puțin șase blocuri diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când pe placă floarea se deschide în trei timpi și miezul clipește, fără explicații.
 
-Tema. Desenezi pe foaie o animație cu patru cadre, de exemplu un fluture, apoi o faci în MakeCode.
+Bonus. Schimbi timpii. Provocarea, Racheta care urcă: faci o animație nouă din cel puțin cinci cadre cu Plot și Unplot, de exemplu o rachetă care urcă de pe rândul patru pe rândul zero, o minge care sare sau un ceas care bate. Ciclul durează cel puțin zece secunde. Arată placa unui coleg fără să spui nimic: ghicește ce este?
 
-Recapitulare. Ecranul are douăzeci și cinci de LED-uri, în cinci rânduri și cinci coloane. Show leds înseamnă că desenezi tu, LED cu LED. Animația înseamnă mai multe cadre, plus pauze. Pause o mie înseamnă o secundă. On start rulează o dată, Forever rulează mereu.
+Recapitulare. Fiecare LED are o adresă: x, coloana, și y, rândul, de la zero la patru. Plot aprinde, Unplot stinge, Toggle schimbă. Repeat repetă blocurile de înăuntru. O animație înseamnă mai multe cadre, plus pauze între ele. Forever începe cu o pauză, ca să nu se încurce cu On start.
 
-Ce urmează. În lecția trei facem placa să răspundă când apeși A, B sau A și B împreună, cu un comutator de emoții.
+Tema, opțional. Dacă ai doar Minim, adaugi acasă partea a doua. Dacă ai Complet, desenezi pe foaie o animație cu patru cadre, de exemplu un fluture sau un ceas, cu coordonate, și o faci în MakeCode.
+
+Ce urmează. În lecția trei placa reacționează la butoanele A și B, cu un comutator de emoții.
 
 Succes la floarea ta.

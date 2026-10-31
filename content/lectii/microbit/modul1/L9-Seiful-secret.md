@@ -1,17 +1,22 @@
-# LECȚIA 9 — Seiful secret
-### Stare: o variabilă care ține minte pasul
+# Lecția 9 — Seiful secret
+### Stări, variabile și funcții
 **Modulul 1 · Primii pași cu micro:bit (blocuri)**  
 **Code Maker Club · micro:bit Starter**
 
-> Azi pui laolaltă ce ai învățat: **butoane, variabile, decizii** și faci un **seif** care se deschide doar cu codul corect.  
-> Proiect: **„Seiful secret”** · `Prenume_Nume_MB1_L09`
+> Azi înveți să ții minte **în ce stare** e programul și faci **„Seiful secret”**:  
+> deschizi seiful doar cu codul corect, apăsat în ordinea bună: A apoi B apoi A.  
+> Fișier: `Prenume_Nume_MB1_L09` (ex. `Ana_Pop_MB1_L09`)
 
 ---
 
-## Ce facem azi
-La finalul orei construiești un proiect complet, cu o variabilă care ține minte **în ce pas** al codului ești. Cardul de acces, lacătul cu cod și telefonul cu parolă funcționează la fel: aparatul **ține minte** ce ai făcut până acum și verifică dacă urmează pasul corect. Variabila care ține minte pasul se numește adesea **stare**. Așa se fac aproape toate jocurile și aparatele.
+## Obiectiv
+La finalul orei folosești o **variabilă de stare** (`pas`) și o **funcție** care evită repetarea.  
+**Minim:** seiful se deschide doar cu **A, B, A**; orice altă ordine arată `No` și începe de la capăt, cu **cel puțin 8 blocuri diferite**.  
+**Ținta orei (Complet):** partea a doua: o **funcție** pentru greșeală și o **alarmă** după 3 greșeli până la deschidere, cu cel puțin **6 blocuri diferite**.
 
-**Unelte azi:** variabila `pas` · `on button A / B pressed` · `if … else if … else` · `show icon` · `pause (ms)` · **Functions** (în **Advanced**)
+## De ce contează
+Telefonul se deblochează cu un cod apăsat în ordine. Ușa unui seif din filme știe câte cifre ai apăsat deja.  
+Pentru asta programul trebuie să **țină minte** unde a rămas. Cu o variabilă de **stare** o faci simplu.
 
 ---
 
@@ -19,249 +24,298 @@ La finalul orei construiești un proiect complet, cu o variabilă care ține min
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recap L8: senzori, praguri, variabilă-semnal |
-| 10–30 | Planul pe foaie: pașii codului și tabelul stărilor |
-| 30–70 | Programul seifului (**Minim**) |
-| 70–90 | Testăm toate încercările (corecte și greșite) |
-| 90–112 | Alarma și funcția `greseala` (**Complet**) |
-| 112–120 | Recapitulare, quiz, temă |
+| 0–10 | Recap L8: senzori, praguri, `ocupat` |
+| 10–30 | Planul seifului pe foaie: stări |
+| 30–45 | Pornirea și butonul A |
+| 45–75 | Butonul B și testul (**Minim**) |
+| 75–105 | Funcția `greseala` și alarma (**Complet**) |
+| 105–120 | Recap, bonus, arăți ce ai gata |
 
----
+**Unelte azi:** placa micro:bit · cablu micro-USB · browser Chrome sau Edge · [makecode.microbit.org](https://makecode.microbit.org)
 
-## Instrucțiuni noi azi
+**Capitole azi:**  
+<span style="color:#DC143C;font-weight:700">Variables</span> · <span style="color:#3455DB;font-weight:700">Functions</span> · <span style="color:#00A4A6;font-weight:700">Logic</span> · <span style="color:#D400D4;font-weight:700">Input</span> · <span style="color:#1E90FF;font-weight:700">Basic</span>  
+*(nimic nou la Basic, doar combinăm.)*
 
-| Bloc | Ce face | Exemplu |
-|------|---------|---------|
-| variabila `pas` | Ține minte în ce pas al codului ești | `pas = 0` |
-| `if / else if / else` | Alege între trei sau mai multe variante | `pas = 1` |
-| **Funcție** (`Make a Function…`) | Adună blocuri folosite în mai multe locuri | `greseala` |
-| `set … to` | Pune pasul la loc | `set pas to 0` |
+**Blocurile de azi:**
+
+| Bloc | Ce face |
+|------|---------|
+| <span style="color:#3455DB;font-weight:700">Make a Function… (greseala)</span> | creezi **propriul tău bloc**, cu o grămadă de blocuri înăuntru |
+| <span style="color:#3455DB;font-weight:700">call greseala</span> | apelează funcția; **o folosești de câte ori vrei** |
+| <span style="color:#DC143C;font-weight:700">change greseli by 1</span> | mărește valoarea variabilei cu un număr |
+
+*Din lecțiile trecute le știi deja:* <span style="color:#1E90FF;font-weight:700">on start</span>, <span style="color:#1E90FF;font-weight:700">show icon</span>, <span style="color:#1E90FF;font-weight:700">show string</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>, <span style="color:#D400D4;font-weight:700">on button pressed</span>, <span style="color:#DC143C;font-weight:700">set</span>, <span style="color:#00A4A6;font-weight:700">if … then … else</span>, <span style="color:#00A4A6;font-weight:700">0 = 0</span>.
 
 ---
 
 ## Pas cu pas
 
-### 1) Planul pe foaie
-Codul secret e **A, B, A**. Seiful trebuie să țină minte câți pași corecți ai făcut. Folosim variabila `pas`:
+### 1) Planul seifului pe foaie
+Înainte să facem blocuri, desenăm pe foaie **stările** seifului. Variabila `pas` spune unde a ajuns:
 
-| `pas` | Înseamnă |
-|-------|----------|
-| `0` | nimic corect încă (seif închis) |
-| `1` | ai apăsat corect primul **A** |
-| `2` | ai apăsat corect și **B** |
+| `pas` | Ce a apăsat omul | Ce urmează |
+|---|---|---|
+| `0` | nimic | A |
+| `1` | A | B |
+| `2` | A, B | A |
 
-Dacă `pas` e `2` și apeși **A**, seiful se deschide.
+Orice altceva e o **greșeală**: `No` și revii la `0`.
 
-**Tabelul încercărilor (completează pe foaie):**
-
-| Ai apăsat | `pas` înainte | Ce se întâmplă |
-|-----------|---------------|----------------|
-| A | 0 | corect → `pas` devine 1 |
-| B | 1 | corect → `pas` devine 2 |
-| A | 2 | corect → **seif deschis** |
-| B | 0 | greșit → seif închis, `No` |
-| A | 1 | greșit → seif închis, `No` |
-| B | 2 | greșit → seif închis, `No` |
+**Încearcă tu — (8–10 min)**  
+- [ ] Ai desenat pe foaie cele trei stări  
+- [ ] Poți spune ce se întâmplă dacă apeși B de la început  
 
 ### 2) Proiect nou și pornirea
-`Prenume_Nume_MB1_L09` · variabila `pas`.
+1. Proiect nou: `Prenume_Nume_MB1_L09`  
+2. Creezi variabila `pas`  
+3. În <span style="color:#1E90FF;font-weight:700">on start</span>: <span style="color:#DC143C;font-weight:700">set</span> `pas` to `0` și <span style="color:#1E90FF;font-weight:700">show icon</span> `Square` (seiful închis)  
 
-```text
-on start
-    set pas to 0
-    show icon [Square]
-```
-Pătratul `Square` înseamnă „seif închis”.
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `0`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Square`
 
-**Ce vezi pe ecran:**
-```text
-# # # # #
-# . . . #
-# . . . #
-# . . . #
-# # # # #
-```
+**Încearcă tu — (5 min)**  
+- [ ] Pe ecran apare pătratul (seiful închis)  
 
-**Gata când:**  
-- [ ] Proiectul nou e creat cu numele `Prenume_Nume_MB1_L09`  
+### 3) Butonul A
+Butonul A face două lucruri, în funcție de `pas`:
 
-### 3) Butonul A — Minim
+- dacă `pas = 0` → primul A corect: <span style="color:#DC143C;font-weight:700">set</span> `pas` to `1`  
+- altfel, dacă `pas = 2` → al doilea A corect: seiful se **deschide** (<span style="color:#1E90FF;font-weight:700">show icon</span> `Yes`, <span style="color:#1E90FF;font-weight:700">show string</span> `Deschis`, pauză, revii la start)  
+- în orice alt caz → greșeală: `No`, pauză scurtă, revii la start  
 
-```text
-on button A pressed
-    if pas = 0 then
-        set pas to 1
-    else if pas = 2 then
-        show icon [Yes]
-        pause (ms) 2000
-        set pas to 0
-        show icon [Square]
-    else
-        show icon [No]
-        pause (ms) 700
-        set pas to 0
-        show icon [Square]
-```
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `pas = 0` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `1`  
+&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `pas = 2` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Yes`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `Deschis`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `2000`  
+&emsp;&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `0`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Square`  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `No`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `700`  
+&emsp;&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `0`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Square`
 
-- Dacă `pas = 0`, primul A e corect.  
-- Dacă `pas = 2`, ai făcut A–B și acum A deschide seiful: bifa stă **2 secunde**, apoi seiful se închide.  
-- În orice alt caz (de exemplu `pas = 1`: A a doua oară) e greșeală.
+**Încearcă tu — (10 min)**  
+- [ ] Primul A nu arată nimic (pasul 1 e ținut minte)  
+- [ ] A la pasul greșit arată `No` și revine la pătrat  
 
-**Gata când:**  
-- [ ] Blocurile sunt puse în ordinea din lecție  
-- [ ] Simulatorul face ce scrie în „Minim”  
+### 4) Butonul B și testul: Minim
+B e corect **doar** la `pas = 1`. Atunci: <span style="color:#DC143C;font-weight:700">set</span> `pas` to `2`. Altfel e greșeală.
 
-### 4) Butonul B — Minim
+Programul tău (Minim):
 
-```text
-on button B pressed
-    if pas = 1 then
-        set pas to 2
-    else
-        show icon [No]
-        pause (ms) 700
-        set pas to 0
-        show icon [Square]
-```
-B e corect **doar** dacă ai apăsat înainte exact un A.
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `0`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Square`  
 
-**Gata când:**  
-- [ ] Blocurile sunt puse în ordinea din lecție  
-- [ ] Simulatorul face ce scrie în „Minim”  
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `pas = 0` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `1`  
+&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `pas = 2` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Yes`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `Deschis`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `2000`  
+&emsp;&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `0`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Square`  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `No`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `700`  
+&emsp;&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `0`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Square`  
 
-### 5) Testăm
-Fă fiecare încercare din tabel pe simulator și pe placă. Pune o bifă în tabel după ce rezultatul e cel dorit.
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `pas = 1` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `2`  
+&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `No`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `700`  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `0`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Square`  
 
-> **Fără grabă:** nu apăsa butoane cât timp se vede `Yes` sau `No`. Așteaptă să revină pătratul.
+Testezi: **A, B, A** deschide; **B** de la început, **A, A** sau **A, B, B** arată `No`.
 
-**Gata când:**  
-- [ ] Am încercat fiecare situație din listă  
-- [ ] Am notat ce nu a mers și am corectat  
+**Încearcă tu — (15–20 min)**  
+- [ ] A, B, A deschide seiful  
+- [ ] B de la început arată `No`  
+- [ ] Alte ordini arată `No` și revin la start  
+- [ ] Programul e pe placa adevărată  
 
-### 6) Complet — alarma și funcția
-Vrem ca după **3 greșeli la rând** placa să arate `ALARMA`.
+### 5) Complet: funcția greșeală și alarma
+Ai observat că blocurile pentru greșeală se repetă de două ori. Le punem **într-o funcție** (din <span style="color:#3455DB;font-weight:700">Functions</span>) numită `greseala` și o **apelăm**.
 
-**Funcția** e un grup de blocuri cu nume. În loc să copiezi aceleași blocuri în A și în B, le pui o dată într-o funcție și o **chemi**.
+1. Creezi variabila `greseli`  
+2. Din <span style="color:#3455DB;font-weight:700">Functions</span>: **Make a Function…**, nume `greseala`  
+3. În ea: <span style="color:#DC143C;font-weight:700">change</span> `greseli` by `1`, `No`, pauză, <span style="color:#DC143C;font-weight:700">set</span> `pas` to `0`  
+4. Dacă `greseli = 3`: <span style="color:#1E90FF;font-weight:700">show string</span> `ALARMA` și <span style="color:#DC143C;font-weight:700">set</span> `greseli` to `0`  
+5. În A și B înlocuiești greșeala cu **call** `greseala`; la deschidere pui `greseli` la `0`  
 
-1. Deschide **Advanced** → **Functions** → **Make a Function…**.  
-2. Numele: `greseala` → **Done**.  
-3. Variabila nouă: `greseli` (câte greșeli ai făcut).
+<span style="color:#3455DB;font-weight:700">function</span> `greseala`  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `greseli` by `1`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `No`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `700`  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `0`  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `greseli = 3` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `ALARMA`  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `greseli` to `0`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Square`  
 
-```text
-function greseala
-    change greseli by 1
-    show icon [No]
-    pause (ms) 700
-    set pas to 0
-    if greseli = 3 then
-        show string "ALARMA"
-        set greseli to 0
-    show icon [Square]
-```
+*(în A și B, tot ce făcea `No` + `pause` + `set pas` + icon se înlocuiește cu blocul **call** `greseala`)*  
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `pas = 0` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `1`  
+&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `pas = 2` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;&emsp;*(la fel ca în Minim; în plus: `set greseli to 0`)*  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;&emsp;<span style="color:#3455DB;font-weight:700">call</span> `greseala`  
 
-Apoi în A și B, în locul blocurilor de greșeală, pui **call greseala**:
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `pas = 1` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `2`  
+&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;<span style="color:#3455DB;font-weight:700">call</span> `greseala`
 
-```text
-on start
-    set pas to 0
-    set greseli to 0
-    show icon [Square]
-
-on button A pressed
-    if pas = 0 then
-        set pas to 1
-    else if pas = 2 then
-        show icon [Yes]
-        pause (ms) 2000
-        set pas to 0
-        set greseli to 0
-        show icon [Square]
-    else
-        call greseala
-
-on button B pressed
-    if pas = 1 then
-        set pas to 2
-    else
-        call greseala
-```
-
-- O deschidere reușită pune `greseli` înapoi la `0`.  
-- Funcția `greseala` e scrisă **o dată**, iar o schimbi **într-un singur loc**.
-
-**Gata când:**  
-- [ ] Blocurile pentru „Complet” sunt adăugate  
-- [ ] Simulatorul face tot ce scrie în „Complet”
-
----
-
-## De făcut azi — „Seiful secret”
-
-### Minim vs Complet
-
-| | Ce trebuie |
-|--|------------|
-| **Minim** | A–B–A deschide (`Yes`), orice altceva = `No` și reluare |
-| **Complet** | Minim + 3 greșeli = `ALARMA` · funcția `greseala` |
-
-### Pasul 1 — Minim
-- [ ] Variabila `pas` și `on start` cu `Square`  
-- [ ] `on button A pressed` cu `if / else if / else`  
-- [ ] `on button B pressed` cu `if / else`  
-- [ ] Tabelul de încercări testat  
-
-**→ Minim când:** un coleg încearcă codul și seiful se deschide la A–B–A și rămâne închis la orice altceva.
-
-### Pasul 2 — Complet
-- [ ] Variabila `greseli`  
-- [ ] Funcția `greseala` creată și chemată din A și din B  
-- [ ] La 3 greșeli apare `ALARMA`  
-- [ ] Numele fișierului e `MB1_L09`
-
----
-
-## Bonus ★★★ — Provocare: Seiful cu cod de patru pași
-*Doar dacă ai terminat Complet.*
-
-- [ ] Schimbă codul în **B – B – A** (ce trebuie schimbat?)  
-- [ ] Fă un cod de **4 pași** (ai nevoie de `pas = 3`)  
-- [ ] Adaugă **A+B** ca să schimbi codul seifului (idee pentru proiect mare)  
-- [ ] Desenează pe foaie un alt aparat cu „stare”, de exemplu un lift sau un bancomat
+**Încearcă tu — (15–20 min)**  
+- [ ] La o greșeală apare `No`, la trei greșeli până la deschidere apare `ALARMA`  
+- [ ] Funcția `greseala` e folosită în A și în B  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
 
 ---
 
 ## Greșeli frecvente
-1. **„Seiful nu se deschide niciodată”** — ai uitat `set pas to 1` sau `set pas to 2`.  
-2. **„Se deschide cu orice”** — ai pus doar `if pas = 2`, fără să verifici că ai ajuns acolo cu B.  
-3. **„Rămân poze vechi pe ecran”** — după `Yes` sau `No` lipsește `show icon [Square]`.  
-4. **„După greșeală, următoarea încercare nu merge”** — ai uitat `set pas to 0`.  
-5. **„Nu găsesc funcția”** — e în **Advanced**, apoi **Functions**.  
-6. **„Alarma sună prea devreme”** — `greseli` nu e pus pe `0` în `on start` sau după o reușită.
+1. **A, B, A nu deschide** — <span style="color:#DC143C;font-weight:700">set</span> `pas` to `1` lipsește la primul A sau B.  
+2. **Seiful se deschide cu orice** — <span style="color:#00A4A6;font-weight:700">if … then … else</span> nu are ramura **altfel** pentru greșeli.  
+3. **După `No` nu revine la pătrat** — lipsește `set pas to 0` sau `show icon Square`.  
+4. **Funcția nu face nimic** — ai uitat blocul **call** `greseala` în A și B.  
+5. **Alarma nu apare** — `greseli` nu crește (lipsește `change`) sau nu e pus la `0` după deschidere.  
+6. **Variabilele se amestecă** — verifică numele: `pas`, `greseli`.  
 
 ---
 
-## Recapitulare pe scurt
-1. O variabilă poate ține minte **pasul** în care te afli (starea).  
-2. `if / else if / else` alege între trei sau mai multe variante.  
-3. O **funcție** adună blocuri pe care le folosești în mai multe locuri.  
-4. Testează **toate** încercările, nu doar pe cea corectă.  
-5. Reia întotdeauna de la început după o greșeală: `set pas to 0`.
-6. **Schema pe scurt (pe foaie):** `pas 0` —A→ `pas 1` —B→ `pas 2` —A→ **Yes** · orice altceva → `greseala` → `pas 0`
+## De făcut azi — „Seiful secret”
+Salvat: `Prenume_Nume_MB1_L09`
+
+### Minim vs Complet *(citește înainte să începi)*
+
+| | Ce trebuie |
+|--|------------|
+| **Minim („am reușit”)** | **Pasul 1** — seiful se deschide doar cu A, B, A, cu **cel puțin 8 blocuri diferite**, pe placă |
+| **Complet (ținta orei)** | Minim + **Pasul 2** — funcția `greseala` și alarma după 3 greșeli, cu cel puțin **6 blocuri diferite** |
+
+Dacă rămâi în urmă: **oprește-te la Minim** și salvează. Nu e eșec, e baza pentru lecția următoare.
+
+### Pasul 1 — Seiful secret *(Minim)*
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `0`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Square`  
+
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `pas = 0` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `1`  
+&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `pas = 2` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Yes`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `Deschis`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `2000`  
+&emsp;&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `0`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Square`  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `No`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `700`  
+&emsp;&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `0`  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Square`  
+
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `pas = 1` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `2`  
+&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `No`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `700`  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `0`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Square`
+
+- [ ] Proiect nou cu numele `Prenume_Nume_MB1_L09`  
+- [ ] Variabila `pas` creată  
+- [ ] Ai cel puțin **8 blocuri diferite**: <span style="color:#1E90FF;font-weight:700">on start</span>, <span style="color:#DC143C;font-weight:700">set</span>, <span style="color:#1E90FF;font-weight:700">show icon</span>, <span style="color:#D400D4;font-weight:700">on button pressed</span>, <span style="color:#00A4A6;font-weight:700">if … then … else</span>, <span style="color:#00A4A6;font-weight:700">0 = 0</span>, <span style="color:#1E90FF;font-weight:700">show string</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>  
+- [ ] A, B, A deschide; orice altă ordine arată `No`  
+- [ ] Programul e trimis pe placă  
+
+**→ Ai Minim când:** un coleg încearcă codul greșit și vede `No`, apoi află că A, B, A deschide seiful.
+
+### Pasul 2 — Funcția greșeală și alarma *(Complet)*
+<span style="color:#3455DB;font-weight:700">function</span> `greseala`  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `greseli` by `1`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `No`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `700`  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `0`  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `greseli = 3` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `ALARMA`  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `greseli` to `0`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Square`  
+
+*(în A și B, tot ce făcea `No` + `pause` + `set pas` + icon se înlocuiește cu blocul **call** `greseala`)*  
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `pas = 0` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `1`  
+&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `pas = 2` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;&emsp;*(la fel ca în Minim; în plus: `set greseli to 0`)*  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;&emsp;<span style="color:#3455DB;font-weight:700">call</span> `greseala`  
+
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `pas = 1` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `pas` to `2`  
+&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;<span style="color:#3455DB;font-weight:700">call</span> `greseala`
+
+- [ ] Variabila `greseli` creată  
+- [ ] Funcția `greseala` făcută și apelată în A și în B  
+- [ ] La 3 greșeli până la deschidere apare `ALARMA`  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
+- [ ] Salvat din nou: `Prenume_Nume_MB1_L09`  
+
+**Gata Complet când:** trei greșeli până la deschidere dau `ALARMA`, iar funcția `greseala` e folosită în A și în B.
 
 ---
 
-## Quiz scurt
+## Bonus ★★★ — Provocare: Seif cu cod de patru pași
+*Doar dacă ai terminat Complet.*
+
+- [ ] Schimbă pauza de pe `No` și pe `Yes`  
+- [ ] **Provocarea:** codul are **4 pași**, ales de tine (de exemplu A, B, B, A), cu `pas` de la `0` la `4`. Un coleg are **5 încercări** să-l ghicească, după care apare `ALARMA` și seiful rămâne blocat. Nu folosi codul A, B, A.  
+
+## Recapitulare rapidă
+1. O variabilă de **stare** ține minte unde a rămas programul  
+2. `if … else` cu `pas` face programul să aștepte **ordinea corectă**  
+3. Orice altă ordine e o **greșeală** și revine la start  
+4. O **funcție** (`greseala`) pune blocurile repetate într-un singur loc  
+5. `call` apelează funcția de câte ori e nevoie  
+6. Minim = Pasul 1 · Complet = Pasul 1 + 2  
+
+## Schema pe scurt *(pe foaie)*
+`pas = 0` —A→ `1` —B→ `2` —A→ **Deschis**
+
+Orice altceva → `greseala` (`greseli + 1`, `No`, `pas = 0`) → la `greseli = 3` → `ALARMA`
+
+**Quiz scurt (cu profesorul):**  
 - Ce ține minte variabila `pas`?  
-- Ce se întâmplă dacă apeși B când `pas = 0`?  
-- De ce folosim funcția `greseala`?  
-- Cum ai schimba codul în B–A–B?
+- De ce B de la început nu deschide seiful?  
+- Ce arată seiful când ordinea e greșită?  
+- De ce am pus blocurile pentru greșeală într-o funcție?  
+- Ce se întâmplă după trei greșeli până la deschidere?  
 
----
+## Temă (opțional)
+- Dacă ai doar Minim: acasă, faci funcția `greseala` și alarma (Pasul 2), în același `Prenume_Nume_MB1_L09`.  
+- Dacă ai Complet: te gândești la un cod din 4 pași și îl scrii pe foaie ca tabel de stări, ca mai devreme.  
+- Dacă ai terminat și Bonusul: faci o copie și schimbi codul.  
 
-## Temă
-Gândește-te la un **cod** pentru seiful tău (4 pași cu A și B). Scrie-l pe foaie, apoi scrie tabelul stărilor pentru primii trei pași.
-
----
-
-## Ce urmează — Lecția 10
-Combinăm proiectele din tot modulul într-o **insignă inteligentă**.
+## Ce urmează
+În **Lecția 10** adunăm proiectele din modul într-o **insignă inteligentă**.

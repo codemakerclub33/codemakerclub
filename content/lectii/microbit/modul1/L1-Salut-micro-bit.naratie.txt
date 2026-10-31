@@ -1,29 +1,41 @@
 Lecția unu. Inima mea.
 
-Astăzi faci cunoștință cu placa micro:bit, deschizi editorul MakeCode și îți trimiți primul program pe placă. Proiectul se numește Inima mea. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero unu.
+Astăzi faci cunoștință cu placa micro:bit, deschizi editorul MakeCode și faci Inima mea: un program care arată o inimă și două forme desenate de tine, mai întâi în simulator, apoi pe placa adevărată. Fișierul se numește Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero unu.
 
-Ce facem azi. La final ai o inimă care se vede pe LED-urile plăcii, mai întâi în simulator, apoi pe placa adevărată, iar în varianta completă îți scrie și numele. Știi ce are placa, ai făcut un program cu blocuri și îl vezi rulând. Micro:bit este un calculator mic cât o carte de joc. Azi înveți drumul de bază. Faci un program, îl trimiți pe placă și îl vezi rulând. Îl vom folosi la fiecare lecție. Ai nevoie de placa micro:bit, de un cablu micro USB care transmite date, de un browser Chrome sau Edge și de editorul MakeCode.
+Obiectivul. La finalul orei știi ce are placa, ai făcut un program cu blocuri și îl vezi rulând pe placa adevărată. Minim: inima, numele tău, un număr și două forme desenate de tine, în simulator și pe placă, cu opt blocuri diferite. Complet: a doua parte a programului, cu alte forme, alt mesaj și alt număr, cu cel puțin șase blocuri diferite.
 
-Instrucțiuni noi azi. Blocul On start rulează o singură dată, la pornire. Show icon arată o poză mică pe LED-uri. Show string arată un text care se derulează. Download trimite programul pe placă. Iar Reset pornește programul de la început.
+De ce contează. Micro:bit este un calculator mic cât o carte de joc. Programele tale nu rămân pe ecran: aprind lumini, simt mișcarea și răspund la butoane. Azi înveți drumul de bază, pe care îl folosești la fiecare lecție: faci un program, îl trimiți pe placă și îl vezi rulând.
 
-Primul pas. Cunoaștem placa. O ții cu LED-urile spre tine. Ecranul are douăzeci și cinci de luminițe roșii, așezate cinci pe cinci. Mai sunt două butoane, A în stânga și B în dreapta, apoi pinii, de jos, și senzorii, care simt lumina, mișcarea și temperatura.
+Ce face fiecare bloc de azi. Folosim un singur capitol, Basic, cu numele blocurilor în engleză, ca în editor. On start rulează o singură dată, la pornire. Show icon arată o poză gata făcută pe LED-uri. Show leds este un ecran de cinci pe cinci, în care tu alegi ce LED-uri se aprind. Pause oprește programul, o mie de milisecunde înseamnă o secundă. Clear screen stinge toate LED-urile. Show string arată un text care se derulează. Show number arată un număr. Forever repetă la nesfârșit ce are înăuntru. Download trimite programul pe placă. Iar Reset, butonul din spatele plăcii, pornește programul de la început.
 
-Al doilea pas. Deschidem editorul. Intri pe makecode, punct, microbit, punct, org. Apeși New Project, adică Proiect nou. Scrii numele proiectului și apeși Create.
+Primul pas. Cunoaștem placa. O ții cu LED-urile spre tine. Ecranul are douăzeci și cinci de luminițe roșii, așezate cinci pe cinci. Mai sunt două butoane, A în stânga și B în dreapta, apoi pinii, de jos, portul micro USB, sus, și senzorii, care simt lumina, mișcarea și temperatura.
 
-Al treilea pas, pentru Minim. Apeși categoria Basic. Tragi blocul Show icon și îl pui înăuntrul blocului On start. Blocurile se potrivesc ca piesele de Lego. Dacă ai făcut bine, blocul se lipește. Din lista de iconițe alegi inima. Pe ecranul din simulator, inima apare imediat.
+Al doilea pas. Deschidem editorul. Intri pe makecode, punct, microbit, punct, org. Apeși New Project, adică Proiect nou. Scrii numele proiectului și apeși Create. În zona de lucru sunt deja două blocuri: On start și Forever.
+
+Al treilea pas. Prima formă: inima. Apeși capitolul Basic. Tragi blocul Show icon și îl pui înăuntrul blocului On start. Blocurile se potrivesc ca piesele de Lego. Dacă ai făcut bine, blocul se lipește. Din lista de iconițe alegi inima. Pe ecranul din simulator, inima apare imediat. Un bloc care nu este lipit rămâne gri și nu rulează.
 
 Al patrulea pas. Trimitem programul pe placă. Conectezi placa la calculator cu cablul micro USB, un cablu care știe și să transmită date. Placa apare ca o unitate numită MICROBIT. Ai două metode. Prima, conectare directă, în Chrome sau Edge: apeși Download, alegi placa și programul pleacă singur. A doua: apeși Download, se salvează un fișier cu terminația punct hex, iar tu îl tragi peste unitatea MICROBIT. Așteaptă până se oprește luminița galbenă de pe placă. Apoi inima apare pe LED-uri. Dacă vrei s-o vezi din nou, apeși butonul Reset din spate.
 
-Al cincilea pas, pentru Complet. Din Basic tragi Show string și îl pui deasupra lui Show icon, tot în On start. În bloc ștergi cuvântul Hello și scrii prenumele tău. Fără diacritice, pentru că LED-urile nu știu literele cu semne. Scrii Ana, nu Ană. Pe placă, literele trec una după alta, apoi rămâne inima aprinsă.
+Al cincilea pas. Desenăm noi, cu blocul Show leds. Poza din Show icon este gata făcută. Cu Show leds desenezi tu forma. Tragi Show leds sub Show icon. Blocul are o grilă de cinci pe cinci pătrățele. Apeși pe un pătrățel și LED-ul se aprinde, apeși din nou și se stinge. Desenezi prima ta formă: o față zâmbitoare, o casă, o săgeată, o stea, ce vrei tu. Fără pauză, formele se schimbă prea repede și nu le vezi. Între inimă și forma ta pui Pause, cu o mie de milisecunde, adică o secundă. Pui pauză și sub forma ta, apoi încă un Show leds cu a doua formă, și iar o pauză. Regula: după fiecare desen, o pauză.
 
-De făcut azi. Proiectul se numește Inima mea. Minim înseamnă: o inimă pe LED-uri, în simulator și pe placă. Complet înseamnă: minim, plus numele tău care se derulează înainte de inimă. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg privește placa și spune: e o inimă, fără explicații.
+Al șaselea pas. Text, număr și ecran curat. La sfârșitul lui On start adaugi Show string cu prenumele tău, fără diacritice, pentru că LED-urile nu știu literele cu semne. Scrii Ana, nu Ană. După el adaugi Show number, cu un număr la alegere, de exemplu vârsta ta. La final pui Clear screen, ca să se stingă ecranul.
 
-Bonus. Inima care vorbește. Schimbi inima cu altă poză, pui două poze una după alta, cu o pauză între ele, scrii un mesaj mai lung și desenezi pe foaie placa, cu LED-urile colorate.
+Al șaptelea pas. Forever și așteptarea. Vrem ca formele tale să se repete singure, fără să mai apară inima și numele de fiecare dată. Muți cele două forme, cu pauzele lor, din On start în Forever. Primul bloc din Forever este o pauză de cinci mii de milisecunde, iar la sfârșit lași un Clear screen. De ce cinci mii? Forever pornește imediat, în același timp cu On start. Dacă amândouă desenează, se încurcă. Prima pauză din Forever așteaptă să se termine introducerea, adică inima, numele și numărul, ca la Scratch, când personajul doi începe cu așteaptă. Acesta este programul pentru Minim.
 
-Greșeli frecvente. Nu se întâmplă nimic în simulator: blocul este lăsat singur, nu este lipit de On start. Textul are semne ciudate: ai scris diacritice. Nu vezi unitatea MICROBIT: cablul poate fi doar de încărcat, încearcă altul. Ai apăsat Download, dar placa nu s-a schimbat: ai uitat să tragi fișierul hex pe unitatea MICROBIT, sau lumina galbenă nu a terminat de clipit. Inima apare și dispare repede: ai pus blocul în Forever, fără pauză. Ai șters un bloc din greșeală: apeși Control și Z, iar pe Mac Command și Z.
+Al optulea pas, pentru Complet. Partea a doua. Adaugi în Forever, după cele două forme și înainte de Clear screen, o parte nouă, cu aceleași blocuri. Altă poză din Show icon, de exemplu fața veselă, urmată de pauză. O a treia formă desenată de tine, urmată de pauză. Un mesaj nou cu Show string, fără diacritice, și alt număr cu Show number. Fiecare desen are o pauză după el. Nu pui două desene unul după altul, fără pauză.
 
-Tema. Opțional: acasă, deschizi din nou proiectul din My Projects și schimbi poza. Adu mâine placa și cablul.
+Greșeli frecvente. Nu se întâmplă nimic în simulator: blocul este lăsat singur, nu este lipit. Vezi doar ultimul desen: ai uitat pauza între desene. Forma nu seamănă cu a ta: verifică rândurile de sus în jos și coloanele de la stânga la dreapta. Textul are semne ciudate: ai scris diacritice. Inima și formele se amestecă: Forever nu începe cu pauza de cinci mii, deci pornește odată cu On start. Nu vezi unitatea MICROBIT: cablul poate fi doar de încărcat, încearcă altul. Ai apăsat Download, dar placa nu s-a schimbat: ai uitat să tragi fișierul hex pe unitatea MICROBIT, sau lumina galbenă nu a terminat de clipit. Ai șters un bloc din greșeală: apeși Control și Z, iar pe Mac Command și Z.
 
-Recapitulare. Micro:bit are douăzeci și cinci de LED-uri, două butoane, A și B, pini și senzori. Programul se face din blocuri, în MakeCode. On start rulează o singură dată, la pornire. Download trimite programul pe placă. Reset pornește programul de la început.
+Proiectul de azi. Inima mea.
 
-Ce urmează. În lecția doi desenăm cu cele douăzeci și cinci de LED-uri și facem desenele să se miște, ca într-un desen animat. Succes la prima ta inimă pe micro:bit.
+Minim înseamnă: inimă, nume, număr și două forme desenate de tine, cu opt blocuri diferite, pe placă. Complet înseamnă: minim, plus partea a doua, cu cel puțin șase blocuri diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Nu e eșec, e baza pentru lecția doi. Ești la Minim când pe placă se vede inima, apoi numele și numărul tău, apoi formele tale se repetă singure, fără explicații.
+
+Bonus. Schimbi timpii: cinci sute pentru un ritm rapid, două mii pentru unul lent. Provocarea, Inițialele mele pe LED-uri: desenezi cu Show leds primele trei litere din prenumele tău, câte una pe cadru, cu pauză între ele, fără Show string. Arată placa unui coleg fără să spui nimic: poate ghici cum te cheamă?
+
+Recapitulare. Micro:bit are douăzeci și cinci de LED-uri, două butoane, A și B, pini și senzori. Show icon este o poză gata făcută, Show leds desenezi tu. După fiecare desen, o pauză. On start rulează o dată, Forever se repetă la nesfârșit. Forever începe cu o pauză, ca să nu se încurce cu On start. Download trimite programul pe placă, Reset îl pornește de la început.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă partea a doua. Dacă ai Complet, adaugi o a patra formă.
+
+Ce urmează. În lecția doi facem desenele să se miște, ca într-un desen animat: o floare care se deschide, cadru cu cadru.
+
+Succes la prima ta inimă pe micro:bit.

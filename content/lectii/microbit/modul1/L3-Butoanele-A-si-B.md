@@ -1,17 +1,22 @@
-# LECȚIA 3 — Comutatorul de emoții
-### Evenimente: butoanele A și B
+# Lecția 3 — Comutatorul de emoții
+### Evenimente: butoanele A, B și A+B
 **Modulul 1 · Primii pași cu micro:bit (blocuri)**  
 **Code Maker Club · micro:bit Starter**
 
-> Până acum programul tău rula singur. Azi placa **ascultă de tine**: apeși un buton și se întâmplă ceva.  
-> Proiect: **„Comutatorul de emoții”** · `Prenume_Nume_MB1_L03`
+> Azi înveți ce este un **eveniment** și faci **„Comutatorul de emoții”**:  
+> placa arată o emoție diferită când apeși A, B sau A și B împreună.  
+> Fișier: `Prenume_Nume_MB1_L03` (ex. `Ana_Pop_MB1_L03`)
 
 ---
 
-## Ce facem azi
-La finalul orei știi ce este un **eveniment** și faci placa să reacționeze când apeși **A**, **B** sau **A și B** împreună. Telecomanda, tastatura și mouse-ul funcționează la fel: tu **faci ceva**, iar aparatul **răspunde**. În programare, „ceva ce se întâmplă” se numește **eveniment**. Blocurile de eveniment așteaptă liniștite, apoi pornesc exact când ai nevoie de ele.
+## Obiectiv
+La finalul orei știi să faci placa să **răspundă** când apeși un buton.  
+**Minim:** trei butoane (A, B, A+B), fiecare cu emoția lui, și o stare de somn la pornire, cu **8 blocuri diferite**.  
+**Ținta orei (Complet):** partea a doua: la **A+B** apare o mică „explozie” de emoții, cu cel puțin **6 blocuri diferite**.
 
-**Unelte azi:** `on button A pressed` · `on button B pressed` · `on button A+B pressed` · `show icon` · `clear screen` · `pause (ms)`
+## De ce contează
+Telecomanda, tastatura și mouse-ul funcționează la fel: tu **faci ceva**, iar aparatul **răspunde**. În programare, „ceva ce se întâmplă” se numește **eveniment**.  
+Blocurile de eveniment așteaptă liniștite, apoi pornesc exact când apeși.
 
 ---
 
@@ -19,192 +24,262 @@ La finalul orei știi ce este un **eveniment** și faci placa să reacționeze c
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recap L2: cadre, pauze, `forever` |
-| 10–25 | Ce este un eveniment? Joc „Simulează placa” fără calculator |
-| 25–50 | `on button A pressed` și `on button B pressed` (**Minim**) |
-| 50–70 | Trimitem pe placă și testăm |
-| 70–95 | `on button A+B pressed` și starea de pornire (**Complet**) |
-| 95–112 | Experimente: ce se întâmplă dacă apeși repede? |
-| 112–120 | Recapitulare, quiz, temă |
+| 0–10 | Recap L2: `plot`, `repeat`, `pause` |
+| 10–25 | Ce este un eveniment? Jocul „Eu sunt placa”, fără calculator |
+| 25–45 | `on button A pressed` și starea de somn |
+| 45–65 | Butonul B și butonul A+B (**Minim**) |
+| 65–95 | Trimitem pe placă și testăm |
+| 95–112 | **Complet:** explozia de emoții la A+B |
+| 112–120 | Recap, bonus, arăți ce ai gata |
 
----
+**Unelte azi:** placa micro:bit · cablu micro-USB · browser Chrome sau Edge · [makecode.microbit.org](https://makecode.microbit.org)
 
-## Instrucțiuni noi azi
+**Capitole azi:**  
+<span style="color:#D400D4;font-weight:700">Input</span> · <span style="color:#1E90FF;font-weight:700">Basic</span> · <span style="color:#00A600;font-weight:700">Loops</span> · <span style="color:#5C2D91;font-weight:700">LED</span>  
+*(Logic, Variables — mai târziu.)*
 
-| Bloc | Ce face | Exemplu |
-|------|---------|---------|
-| `on button A pressed` | Rulează doar când apeși **A** | `show icon [Happy]` |
-| `on button B pressed` | Rulează doar când apeși **B** | `show icon [Sad]` |
-| `on button A+B pressed` | Rulează când apeși **ambele** deodată | `show icon [Heart]` |
-| `show icon` | Arată o poză | `show icon [Asleep]` |
-| `clear screen` | Stinge toate LED-urile | la sfârșitul unui gest |
+**Blocurile de azi:**
+
+| Bloc | Ce face |
+|------|---------|
+| <span style="color:#D400D4;font-weight:700">on button A pressed</span> | pornește blocurile din el **doar** când apeși butonul ales. Din listă alegi **A**, **B** sau **A+B** |
+
+*Din lecțiile trecute le știi deja:* <span style="color:#1E90FF;font-weight:700">on start</span>, <span style="color:#1E90FF;font-weight:700">show icon</span>, <span style="color:#1E90FF;font-weight:700">show leds</span>, <span style="color:#1E90FF;font-weight:700">show string</span>, <span style="color:#1E90FF;font-weight:700">show number</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>, <span style="color:#1E90FF;font-weight:700">clear screen</span>, <span style="color:#00A600;font-weight:700">repeat</span>, <span style="color:#5C2D91;font-weight:700">plot x y</span>.
 
 ---
 
 ## Pas cu pas
 
-### 1) Jocul „Eu sunt placa”
-Fără calculator. Profesorul spune „A!”, „B!” sau „A și B!”. Tu faci cu mâinile semnul cerut:
-- **A** → ridici mâna **stângă**  
-- **B** → ridici mâna **dreaptă**  
-- **A+B** → ridici **ambele** mâini  
+### 1) Jocul „Eu sunt placa” (fără calculator)
+Lucrați în perechi. Un copil e **placa**, celălalt e **omul**.
 
-Tu ai fost „placa” care așteaptă un eveniment și apoi răspunde. Exact asta vom programa.
+- Omul spune „Apas A!”, iar placa face o față veselă.  
+- Omul spune „Apas B!”, iar placa face o față tristă.  
+- Omul spune „Apas A și B!”, iar placa face o față mirată.  
 
-### 2) Proiect nou
-**New Project** → `Prenume_Nume_MB1_L03` → **Create**.
+Ce s-a întâmplat? Omul a făcut **ceva**, iar placa a **răspuns**. Acel „ceva” se numește **eveniment**.
 
-**Gata când:**  
-- [ ] Proiectul nou e creat cu numele `Prenume_Nume_MB1_L03`  
+**Încearcă tu — (5–8 min)**  
+- [ ] Spui 3 evenimente din viața de zi cu zi (sonerie, telecomandă, lumină)  
+- [ ] Placa a răspuns diferit la fiecare gest  
 
-### 3) Blocul de eveniment
-1. Categoria **Input** (săgeata de la mijloc).  
-2. Tragi **on button A pressed** în zona de lucru. Nu-l pui în `on start` sau `forever`, pentru că e **un bloc de sine stătător**, care începe singur programul lui când apeși A.  
-3. Din **Basic** tragi **show icon** **înăuntrul** lui și alegi **Happy**.
+### 2) Proiect nou și starea de somn
+1. Proiect nou: `Prenume_Nume_MB1_L03`  
+2. În <span style="color:#1E90FF;font-weight:700">on start</span> pui <span style="color:#1E90FF;font-weight:700">show icon</span> `Asleep` (placa doarme)  
 
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Asleep`  
+
+Placa doarme până apeși un buton. Blocul de la pornire rulează o singură dată.
+
+**Încearcă tu — (5 min)**  
+- [ ] Placa „doarme” în simulator  
+- [ ] Ai încercat și alte fețe din listă, apoi ai revenit la `Asleep`  
+
+### 3) Butonul A
+1. Din <span style="color:#D400D4;font-weight:700">Input</span> tragi <span style="color:#D400D4;font-weight:700">on button A pressed</span> pe zona de lucru (e un bloc de sine stătător, **nu** îl pui în <span style="color:#1E90FF;font-weight:700">on start</span>)  
+2. Înăuntru pui: <span style="color:#1E90FF;font-weight:700">show icon</span> `Happy`, <span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`, <span style="color:#1E90FF;font-weight:700">show string</span> `Hei`, <span style="color:#1E90FF;font-weight:700">clear screen</span>  
+
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Happy`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `Hei`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+
+**Ce vezi:** apeși **A** în simulator și apare fața veselă, apoi „Hei”, apoi ecranul se stinge.
+
+**Încearcă tu — (8–10 min)**  
+- [ ] A arată fața veselă, apoi Hei  
+- [ ] Ai apăsat A de mai multe ori la rând  
+
+### 4) Butonul B
+Tragi încă un bloc <span style="color:#D400D4;font-weight:700">on button … pressed</span> și din listă alegi **B**. Înăuntru: <span style="color:#1E90FF;font-weight:700">show icon</span> `Sad`, <span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`, <span style="color:#1E90FF;font-weight:700">show number</span> `5`, <span style="color:#1E90FF;font-weight:700">clear screen</span>.
+
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Sad`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `5`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+
+> Pentru fiecare buton ai nevoie de **un singur** bloc. Dacă pui două blocuri pentru același buton, nu știi care rulează.
+
+**Încearcă tu — (5–8 min)**  
+- [ ] B arată fața tristă și numărul `5` (cât de trist ești, de la 1 la 5)  
+- [ ] Ai schimbat numărul  
+
+### 5) A+B: fața ta
+Al treilea bloc <span style="color:#D400D4;font-weight:700">on button … pressed</span>, cu **A+B** în listă. Aici **desenezi tu** o față, cu <span style="color:#1E90FF;font-weight:700">show leds</span> (o față mirată, o față somnoroasă, ce vrei tu).
+
+Model *(poți desena altceva)*:
 ```text
-on button A pressed
-    show icon [Happy]
+. # . # .
+. # . # .
+. . . . .
+. # # # .
+. # # # .
 ```
 
-În simulator apeși butonul **A** desenat pe placă și apare fața veselă.
+Programul tău (Minim):
 
-### 4) Al doilea buton — Minim
-1. Tragi din **Input** încă un bloc **on button …**.  
-2. Pe el apeși pe litera **A** și schimbi în **B**.  
-3. Înăuntru pui **show icon [Sad]**.
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Asleep`  
 
-```text
-on button A pressed
-    show icon [Happy]
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Happy`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `Hei`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
 
-on button B pressed
-    show icon [Sad]
-```
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Sad`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `5`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
 
-**Ce vezi pe ecran:**
-```text
-Apeși A:                 Apeși B:
-. . . . .                . . . . .
-. # . # .                . # . # .
-. . . . .                . . . . .
-# . . . #                . # # # .
-. # # # .                # . . . #
-```
+<span style="color:#D400D4;font-weight:700">on button A+B pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show leds</span> *(fața ta, desenată de tine)*  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
 
-Trimite pe placă și apasă butoanele adevărate.
+**Ce vezi:** la pornire placa doarme. Apeși A, B sau A+B și fiecare buton are emoția lui.
 
-**Gata când:**  
-- [ ] Blocurile sunt puse în ordinea din lecție  
-- [ ] Simulatorul face ce scrie în „Minim”  
+**Încearcă tu — (10–12 min)**  
+- [ ] Toate cele 3 butoane merg în simulator  
+- [ ] Fața de la A+B e desenată de tine  
+- [ ] Programul e pe placa adevărată (Download)  
 
-### 5) Complet — două butoane deodată
-1. Mai tragi un bloc **on button … pressed** și alegi **A+B** din listă.  
-2. Înăuntru: **show icon [Heart]**.  
-3. Placa începe cu **un desen de „somn”**. Pune în **on start**: **show icon [Asleep]**.
+### 6) Complet: explozia de emoții
+Înlocuiești conținutul blocului **A+B** cu **partea a doua**. Mai întâi ecranul „pâlpâie” de 3 ori, apoi apare fața ta și o scânteie în mijloc.
 
-```text
-on start
-    show icon [Asleep]
+<span style="color:#D400D4;font-weight:700">on button A+B pressed</span>  
+&emsp;<span style="color:#00A600;font-weight:700">repeat</span> `3` times  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Surprised`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `300`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `300`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show leds</span> *(fața ta, desenată de tine)*  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#5C2D91;font-weight:700">plot x y</span> `2` `2`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
 
-on button A pressed
-    show icon [Happy]
+> Dacă apeși alt buton **în timp ce rulează** explozia, celălalt bloc începe și el. Așteaptă să se termine.
 
-on button B pressed
-    show icon [Sad]
+**Încearcă tu — (10–15 min)**  
+- [ ] Ecranul pâlpâie de 3 ori la A+B  
+- [ ] Fața ta apare apoi, urmată de scânteia din mijloc  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
 
-on button A+B pressed
-    show icon [Heart]
-```
+---
 
-> **Cum apeși A+B:** apasă ambele butoane **exact în același timp**. Dacă apeși A puțin mai devreme, placa crede că ai apăsat doar A.
-
-**Gata când:**  
-- [ ] Blocurile pentru „Complet” sunt adăugate  
-- [ ] Simulatorul face tot ce scrie în „Complet”  
-
-### 6) Experimente — ce se întâmplă?
-Încearcă și notează pe foaie:
-1. Apeși A de trei ori repede. Ce vezi?  
-2. Apeși A, apoi imediat B. Care poză rămâne?  
-3. Apeși **Reset** (butonul mic de pe spate). Ce apare?
-
-Răspunsuri: ultima poză rămâne pe ecran, iar după Reset programul pornește de la început, deci apare **Asleep**.
-
-### 7) Eveniment sau forever?
-| | `forever` | `on button A pressed` |
-|--|-----------|----------------------|
-| Când rulează? | mereu, în buclă | doar când apeși A |
-| Se potrivește pentru | animații, verificări continue | acțiuni cerute de tine |
+## Greșeli frecvente
+1. **A+B nu merge** — ai ales **A** în loc de **A+B** din lista blocului, sau ai apăsat butoanele pe rând, nu deodată.  
+2. **Nu se întâmplă nimic** — <span style="color:#D400D4;font-weight:700">on button A pressed</span> e pus în <span style="color:#1E90FF;font-weight:700">on start</span>. Blocurile de eveniment stau singure pe zona de lucru.  
+3. **Fața rămâne pe ecran** — lipsește <span style="color:#1E90FF;font-weight:700">clear screen</span> la sfârșit.  
+4. **Apar două răspunsuri** — ai pus două blocuri pentru același buton.  
+5. **Fața trece prea repede** — lipsește <span style="color:#1E90FF;font-weight:700">pause (ms)</span>.  
+6. **Explozia se încurcă** — ai apăsat alt buton cât timp rula. Așteaptă să se termine.  
 
 ---
 
 ## De făcut azi — „Comutatorul de emoții”
+Salvat: `Prenume_Nume_MB1_L03`
 
-### Minim vs Complet
+### Minim vs Complet *(citește înainte să începi)*
 
 | | Ce trebuie |
 |--|------------|
-| **Minim** | A = **Happy**, B = **Sad**, merge pe placă |
-| **Complet** | Minim + **A+B = Heart** + la pornire apare **Asleep** |
+| **Minim („am reușit”)** | **Pasul 1** — 3 butoane cu emoții și starea de somn, cu **8 blocuri diferite**, pe placă |
+| **Complet (ținta orei)** | Minim + **Pasul 2** — explozia de emoții la A+B, cu cel puțin **6 blocuri diferite** |
 
-### Pasul 1 — Minim
-- [ ] Un bloc `on button A pressed` cu `show icon [Happy]`  
-- [ ] Un bloc `on button B pressed` cu `show icon [Sad]`  
-- [ ] Programul e descărcat pe placă  
+Dacă rămâi în urmă: **oprește-te la Minim** și salvează. Nu e eșec, e baza pentru lecția următoare.
 
-**→ Minim când:** apeși A și B pe placa adevărată și se schimbă fețele.
+### Pasul 1 — Comutatorul de emoții *(Minim)*
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Asleep`  
 
-### Pasul 2 — Complet
-- [ ] `on button A+B pressed` cu `show icon [Heart]`  
-- [ ] `on start` cu `show icon [Asleep]`  
-- [ ] Testat cu **Reset**: placa „adoarme” din nou  
-- [ ] Numele fișierului e `MB1_L03`
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Happy`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `Hei`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Sad`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `5`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+
+<span style="color:#D400D4;font-weight:700">on button A+B pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show leds</span> *(fața ta, desenată de tine)*  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>
+
+- [ ] Proiect nou cu numele `Prenume_Nume_MB1_L03`  
+- [ ] La pornire placa doarme (`Asleep`)  
+- [ ] Fiecare buton (A, B, A+B) are emoția lui și se oprește cu un `clear screen`  
+- [ ] Ai **8 blocuri diferite**: <span style="color:#1E90FF;font-weight:700">on start</span>, <span style="color:#D400D4;font-weight:700">on button pressed</span>, <span style="color:#1E90FF;font-weight:700">show icon</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>, <span style="color:#1E90FF;font-weight:700">show string</span>, <span style="color:#1E90FF;font-weight:700">show number</span>, <span style="color:#1E90FF;font-weight:700">show leds</span>, <span style="color:#1E90FF;font-weight:700">clear screen</span>  
+- [ ] Fața de la A+B e desenată de tine  
+- [ ] Programul e trimis pe placă  
+
+**→ Ai Minim când:** un coleg apasă pe rând A, B și A+B și vede de fiecare dată altă emoție, fără explicații.
+
+### Pasul 2 — Explozia de emoții *(Complet)*
+<span style="color:#D400D4;font-weight:700">on button A+B pressed</span>  
+&emsp;<span style="color:#00A600;font-weight:700">repeat</span> `3` times  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Surprised`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `300`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `300`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show leds</span> *(fața ta, desenată de tine)*  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#5C2D91;font-weight:700">plot x y</span> `2` `2`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>
+
+- [ ] În blocul **A+B**: <span style="color:#00A600;font-weight:700">repeat</span> `3` times cu <span style="color:#1E90FF;font-weight:700">show icon</span> `Surprised`, pauză, <span style="color:#1E90FF;font-weight:700">clear screen</span>, pauză  
+- [ ] Apoi <span style="color:#1E90FF;font-weight:700">show leds</span> cu fața ta și <span style="color:#5C2D91;font-weight:700">plot x y</span> în mijloc  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
+- [ ] Salvat din nou: `Prenume_Nume_MB1_L03`  
+
+**Gata Complet când:** la A+B ecranul pâlpâie de 3 ori, apoi apar fața ta și scânteia, iar A și B merg ca înainte.
 
 ---
 
 ## Bonus ★★★ — Provocare: Semaforul dispozițiilor
 *Doar dacă ai terminat Complet.*
 
-- [ ] Fă un **semafor de dispoziție**: A = `Happy`, B = `Meh`, A+B = `Angry` (alege din listă)  
-- [ ] La A arată fața veselă **1 secundă** (`pause (ms) 1000`), apoi `clear screen`  
-- [ ] Plăci V2: adaugă **on logo pressed** cu o poză, pentru că logoul se atinge ca un buton  
-- [ ] Scrie cu un coleg un „joc de emoții”: el spune o emoție, tu apeși butonul potrivit
+- [ ] Schimbă timpii: `500` pentru o reacție rapidă, `2000` pentru una lentă  
+- [ ] **Provocarea:** toate cele **3 emoții** (A, B și A+B) sunt **fețe desenate de tine**, nu din listă. Fiecare are câte un cuvânt scurt cu <span style="color:#1E90FF;font-weight:700">show string</span> și un număr de la 1 la 5 cu <span style="color:#1E90FF;font-weight:700">show number</span>. Un coleg apasă butoanele și **ghicește emoția** din ce vede.  
 
----
+## Recapitulare rapidă
+1. **Eveniment** = ceva ce se întâmplă (apeși un buton)  
+2. <span style="color:#D400D4;font-weight:700">on button A pressed</span> pornește doar când apeși A; din listă alegi A, B sau A+B  
+3. Pentru fiecare buton ai nevoie de **un singur** bloc, pus singur pe zona de lucru  
+4. <span style="color:#1E90FF;font-weight:700">on start</span> rulează o dată, la pornire; blocurile de buton rulează de fiecare dată când apeși  
+5. După fiecare reacție, un <span style="color:#1E90FF;font-weight:700">clear screen</span>  
+6. Minim = Pasul 1 · Complet = Pasul 1 + 2  
 
-## Greșeli frecvente
-1. **„Nu se întâmplă nimic când apăs”** — blocul `show icon` nu e **în interiorul** blocului de eveniment. Trage-l până se lipește.  
-2. **„A+B nu merge”** — apeși butoanele la momente diferite. Încearcă să le apeși simultan.  
-3. **„Am două blocuri la fel pentru A”** — editorul te poate avertiza sau doar unul va face ce vrei. Pentru fiecare buton păstrează **un singur** bloc.  
-4. **„Pe placă se vede Asleep și nu se mai schimbă”** — verifică dacă ai descărcat programul nou după modificare.  
-5. **„Simulatorul merge, placa nu”** — nu ai trimis ultima versiune. Apasă din nou **Download**.  
-6. **„Apeși butonul și poza dispare repede”** — nu pune `clear screen` după `show icon`, decât dacă vrei asta.
+## Schema pe scurt *(pe foaie)*
+<span style="color:#1E90FF;font-weight:700">on start</span> → <span style="color:#1E90FF;font-weight:700">show icon</span> `Asleep`
 
----
+A → <span style="color:#1E90FF;font-weight:700">show icon</span> → <span style="color:#1E90FF;font-weight:700">pause (ms)</span> → <span style="color:#1E90FF;font-weight:700">show string</span> → <span style="color:#1E90FF;font-weight:700">clear screen</span>
 
-## Recapitulare pe scurt
-1. **Eveniment** = ceva ce se întâmplă (apeși un buton).  
-2. `on button A pressed` rulează **doar** când apeși A.  
-3. A e în **stânga**, B e în **dreapta**, **A+B** = ambele **deodată**.  
-4. Pentru fiecare buton ai nevoie de **un singur** bloc.  
-5. **Reset** reia programul de la început.
-6. **Schema pe scurt (pe foaie):** Eveniment (apăs A / B / A+B) → bloc de eveniment → `show icon` → poza apare
+B → <span style="color:#1E90FF;font-weight:700">show icon</span> → <span style="color:#1E90FF;font-weight:700">pause (ms)</span> → <span style="color:#1E90FF;font-weight:700">show number</span> → <span style="color:#1E90FF;font-weight:700">clear screen</span>
 
----
+A+B → <span style="color:#00A600;font-weight:700">repeat</span> <span style="color:#1E90FF;font-weight:700">show icon</span> → <span style="color:#1E90FF;font-weight:700">show leds</span> → <span style="color:#5C2D91;font-weight:700">plot x y</span>
 
-## Quiz scurt
+**Quiz scurt (cu profesorul):**  
 - Ce este un eveniment? Dă un exemplu din viața de zi cu zi.  
 - Pe ce parte a plăcii se află butonul B?  
 - Cum faci ca placa să răspundă când apeși A și B deodată?  
-- Ce se întâmplă după Reset cu poza `Asleep`?
+- De ce nu punem blocul de buton în `on start`?  
+- Ce se întâmplă dacă apeși alt buton cât rulează explozia?  
 
----
+## Temă (opțional)
+- Dacă ai doar Minim: acasă, adaugi explozia de la A+B (Pasul 2), în același `Prenume_Nume_MB1_L03`.  
+- Dacă ai Complet: alegi un aparat de acasă cu butoane (telecomandă, cuptor) și desenezi pe foaie 3 butoane și ce ar trebui să facă placa la fiecare.  
+- Dacă ai terminat și Bonusul: faci o copie și schimbi emoțiile.  
 
-## Temă
-Gândește-te la un aparat de acasă care are butoane (telecomandă, cuptor cu microunde). Desenează pe foaie 3 butoane și ce **ar trebui** să facă placa micro:bit la fiecare.
-
----
-
-## Ce urmează — Lecția 4
-Învățăm **variabilele**, cutiile cu nume care țin minte numere: un contor magic.
+## Ce urmează
+În **Lecția 4** placa **ține minte numere**, cu variabile: un contor magic.

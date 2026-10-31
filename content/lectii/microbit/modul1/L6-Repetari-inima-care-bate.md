@@ -1,17 +1,22 @@
-# LECȚIA 6 — Inima care bate
-### Bucle: forever, repeat și for index
+# Lecția 6 — Farul de pe mare
+### Bucle: repeat, for index și while
 **Modulul 1 · Primii pași cu micro:bit (blocuri)**  
 **Code Maker Club · micro:bit Starter**
 
-> Azi înveți placa să **repete** lucruri fără să scrii aceleași blocuri de zece ori. Folosim **bucle**.  
-> Proiect: **„Inima care bate”** · `Prenume_Nume_MB1_L06`
+> Azi înveți să **repeți** lucruri cu bucle și faci **„Farul de pe mare”**:  
+> un far care pulsează, o rază de lumină care străbate marea și viteza razei controlată din butoane.  
+> Fișier: `Prenume_Nume_MB1_L06` (ex. `Ana_Pop_MB1_L06`)
 
 ---
 
-## Ce facem azi
-La finalul orei folosești `forever`, `repeat … times` și `for index from … to …` și știi să faci un desen care **se mișcă în ritm**. Inima ta bate de mii de ori pe zi, fără să fie nevoie de zece mii de instrucțiuni. Programele repetă lucruri: o animație, o verificare de senzor, o alarmă. Cu o **buclă** scrii un lucru **o singură dată** și îl faci să se întâmple de câte ori vrei.
+## Obiectiv
+La finalul orei folosești `repeat`, `for index from … to …` și `while` și faci o rază de lumină care **se mișcă pe ecran**.  
+**Minim:** un **far** care pulsează de 2 ori, urmat de o **rază de lumină** care trece prin rândul din mijloc, în `forever`, cu **cel puțin 8 blocuri diferite**.  
+**Ținta orei (Complet):** partea a doua: **A** face raza mai rapidă, **B** mai lentă, fără să iasă din limite, cu cel puțin **6 blocuri diferite**.
 
-**Unelte azi:** `forever` · `repeat … times` · `for index from 0 to 4` · `plot x y` · `clear screen` · `pause (ms)` · variabile · `if`
+## De ce contează
+Un far de pe coastă învârte lumina noapte de noapte, mereu la fel. Programele repetă lucruri: o animație, o verificare de senzor, o alarmă.  
+Cu o **buclă** scrii un lucru **o singură dată** și îl faci să se întâmple de câte ori vrei.
 
 ---
 
@@ -20,221 +25,262 @@ La finalul orei folosești `forever`, `repeat … times` și `for index from …
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap L5: `if`, `else`, comparații |
-| 10–25 | Joc de mișcare: „repetă de 3 ori…” |
-| 25–50 | `forever` și `repeat … times` (**Minim**) |
-| 50–70 | `for index from 0 to 4` și `plot` (valul de lumină) |
-| 70–100 | Viteza inimii: variabila `ritm` (**Complet**) |
-| 100–112 | Depanare în pereche |
-| 112–120 | Recapitulare, quiz, temă |
+| 10–25 | Jocul „Repetă!”: bucle fără calculator |
+| 25–45 | Trei feluri de bucle: `forever`, `repeat`, `for index` |
+| 45–60 | Lampa farului cu `repeat` (**Minim**) |
+| 60–85 | Raza de lumină cu `for index` (**Minim**) |
+| 85–112 | **Complet:** viteza razei din butoane |
+| 112–120 | Recap, bonus, arăți ce ai gata |
 
----
+**Unelte azi:** placa micro:bit · cablu micro-USB · browser Chrome sau Edge · [makecode.microbit.org](https://makecode.microbit.org)
 
-## Instrucțiuni noi azi
+**Capitole azi:**  
+<span style="color:#00A600;font-weight:700">Loops</span> · <span style="color:#5C2D91;font-weight:700">LED</span> · <span style="color:#DC143C;font-weight:700">Variables</span> · <span style="color:#00A4A6;font-weight:700">Logic</span> · <span style="color:#D400D4;font-weight:700">Input</span> · <span style="color:#1E90FF;font-weight:700">Basic</span>  
+*(Math — mai târziu.)*
 
-| Bloc | Ce face | Exemplu |
-|------|---------|---------|
-| `forever` | Repetă fără sfârșit | animația inimii |
-| `repeat … times` | Repetă de câte ori alegi tu | `repeat 2 times` |
-| `for index from … to …` | Repetă și îți dă numărul pasului | `for index from 0 to 4` |
-| `plot x y` | Aprinde **un singur** LED | `plot x 3 y 2` |
-| `clear screen` | Stinge tot ecranul | înainte de un desen nou |
+**Blocurile de azi:**
+
+| Bloc | Ce face |
+|------|---------|
+| <span style="color:#00A600;font-weight:700">for index from 0 to 4</span> | repetă și îți dă numărul pasului (`index`): 0, 1, 2, 3, 4 |
+| <span style="color:#00A600;font-weight:700">while</span> | repetă **cât timp** condiția e adevărată |
+| <span style="color:#D400D4;font-weight:700">button A is pressed</span> | adevărat cât ții butonul A apăsat (îl folosim în Bonus) |
+
+*Din lecțiile trecute le știi deja:* <span style="color:#1E90FF;font-weight:700">forever</span>, <span style="color:#00A600;font-weight:700">repeat</span>, <span style="color:#1E90FF;font-weight:700">show icon</span>, <span style="color:#1E90FF;font-weight:700">show string</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>, <span style="color:#1E90FF;font-weight:700">clear screen</span>, <span style="color:#5C2D91;font-weight:700">plot x y</span>, <span style="color:#DC143C;font-weight:700">set</span>, <span style="color:#DC143C;font-weight:700">change</span>, <span style="color:#00A4A6;font-weight:700">if … then</span>, <span style="color:#D400D4;font-weight:700">on button pressed</span>.
 
 ---
 
 ## Pas cu pas
 
-### 1) Jocul „Repetă!”
-Profesorul spune: „Bate din palme de 3 ori.” Tu nu ceri: „Bate din palme. Bate din palme. Bate din palme.” Spui doar **„de 3 ori”**. Asta e o buclă.
+### 1) Jocul „Repetă!” (fără calculator)
+Un copil dă o comandă: „Bate din palme **de 4 ori**!” Ceilalți o fac. Apoi: „Bate din palme **cât timp** țin mâna sus!” și „Bate din palme **pentru totdeauna**!”
+
+Sunt trei feluri de a repeta:
+- **de un număr de ori** (`repeat`)  
+- **cât timp** se întâmplă ceva (`while`)  
+- **pentru totdeauna** (`forever`)
+
+**Încearcă tu — (5 min)**  
+- [ ] Spui un lucru pe care îl faci de mai multe ori pe zi  
+- [ ] Arăți cu mâinile cele trei feluri de repetare  
 
 ### 2) Trei feluri de bucle
+| Bloc | Cum repetă |
+|------|------------|
+| <span style="color:#1E90FF;font-weight:700">forever</span> | la nesfârșit |
+| <span style="color:#00A600;font-weight:700">repeat</span> `4` times | de 4 ori |
+| <span style="color:#00A600;font-weight:700">for index</span> from `0` to `4` | de **5** ori și îți dă numărul `index` (0, 1, 2, 3, 4) |
 
-| Bloc | Ce face | Când îl folosești |
-|------|---------|-------------------|
-| `forever` | repetă **pe veci** | animații, verificări continue |
-| `repeat 4 times` | repetă **de 4 ori**, apoi trece mai departe | când știi de câte ori |
-| `for index from 0 to 4` | repetă de **5 ori** și te lasă să folosești numărul `index` (0, 1, 2, 3, 4) | când ai nevoie de numărătoare |
+`index` e un număr care crește singur. Îl poți pune în <span style="color:#5C2D91;font-weight:700">plot x y</span> ca **x**: LED-ul se mută pe rând, de la stânga la dreapta.
 
-> `repeat` și `for` sunt în categoria **Loops**. `forever` e în **Basic**. Atenție: `for index from 0 to 4` repetă de **cinci** ori, pentru că numără 0, 1, 2, 3 și 4.
+**Încearcă tu — (5–8 min)**  
+- [ ] Spui de câte ori repetă `for index from 0 to 4` (de 5 ori)  
+- [ ] Spui ce valori ia `index`  
 
-### 3) Inima care bate — Minim
-O inimă adevărată face „lub-dub” de două ori repede, apoi se odihnește puțin. Proiect nou: `Prenume_Nume_MB1_L06`.
+### 3) Lampa farului: repeat
+Lampa farului pulsează: se face mare, apoi mică, de două ori, apoi raza pornește.
 
-```text
-forever
-    repeat 2 times
-        show icon [Heart]
-        pause (ms) 150
-        show icon [Small Heart]
-        pause (ms) 150
-    pause (ms) 700
-```
+1. Proiect nou: `Prenume_Nume_MB1_L06`  
+2. În <span style="color:#1E90FF;font-weight:700">forever</span>, un <span style="color:#00A600;font-weight:700">repeat</span> `2` times cu: <span style="color:#1E90FF;font-weight:700">show icon</span> `Diamond`, <span style="color:#1E90FF;font-weight:700">pause (ms)</span> `300`, <span style="color:#1E90FF;font-weight:700">show icon</span> `SmallDiamond`, <span style="color:#1E90FF;font-weight:700">pause (ms)</span> `300`  
 
-- `repeat 2 times` face „bum-bum” de două ori.  
-- Ultima `pause (ms) 700` e **în afara** lui `repeat`, deci e odihna dintre două bătăi duble.  
-- Fiindcă totul e în `forever`, inima bate mereu.
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#00A600;font-weight:700">repeat</span> `2` times  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Diamond`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `300`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `SmallDiamond`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `300`
 
-**Ce vezi pe ecran (cele două poze care se schimbă):**
-```text
-Heart:                   Small Heart:
-. # . # .                . . . . .
-# # # # #                . # . # .
-# # # # #                . # # # .
-. # # # .                . . # . .
-. . # . .                . . . . .
-```
+**Încearcă tu — (8–10 min)**  
+- [ ] Lampa pulsează mare-mic, de două ori, în buclă  
+- [ ] Ai schimbat `2` în `3` și ai numărat pulsările  
 
-**Gata când:**  
-- [ ] Blocurile sunt puse în ordinea din lecție  
-- [ ] Simulatorul face ce scrie în „Minim”  
+### 4) Raza de lumină: for index
+Adăugăm în <span style="color:#1E90FF;font-weight:700">forever</span>, după lampă, raza care străbate rândul din mijloc.
 
-### 4) Valul de lumină — `for index`
-Aici folosim numărul `index`, ca să aprindem LED-urile unul după altul, pe rândul din mijloc.
+<span style="color:#00A600;font-weight:700">for index</span> from `0` to `4`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;<span style="color:#5C2D91;font-weight:700">plot x y</span> `index` `2`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `150`  
 
-1. Din **LED** tragi **plot x … y …**.  
-2. În locul lui `x` pui blocul rotund **index** (îl iei din bucla `for`, tragi cu mouse-ul de pe cuvântul `index`).  
-3. Lași `y` la `2` (rândul din mijloc).
+**Ce vezi:** un singur LED trece pe rândul din mijloc, de la stânga la dreapta, ca raza farului. <span style="color:#1E90FF;font-weight:700">clear screen</span> din buclă șterge LED-ul vechi înainte de cel nou.
 
-```text
-forever
-    for index from 0 to 4
-        plot x (index) y 2
-        pause (ms) 200
-    clear screen
-```
+**Încearcă tu — (8–10 min)**  
+- [ ] Raza trece de la stânga la dreapta  
+- [ ] În plot, `x` este blocul rotund `index`  
 
-**Ce vezi pe ecran:** un punct care se aprinde pe rând, de la stânga la dreapta, și rămâne aprins. După cele cinci LED-uri, tot rândul se stinge și valul pornește din nou.
+### 5) Programul: Minim
+Reunești totul. <span style="color:#1E90FF;font-weight:700">forever</span> pornește odată cu <span style="color:#1E90FF;font-weight:700">on start</span>, deci primul bloc din <span style="color:#1E90FF;font-weight:700">forever</span> este <span style="color:#1E90FF;font-weight:700">pause (ms)</span> `3000` (aceeași regulă ca în lecțiile trecute), ca titlul `Far` să se termine.
 
-```text
-Pas 1:  # . . . .      Pas 3:  # # # . .      Pas 5:  # # # # #
-        (rândul 2)             (rândul 2)             (rândul 2)
-```
-`plot x y` aprinde LED-ul de la adresa **(x, y)**. Colțul din stânga sus este **(0, 0)**.
+Programul tău (Minim):
 
-### 5) Complet — controlăm viteza
-Facem o variabilă `ritm` care ține **cât durează fiecare pauză** din bătaia inimii. Număr mic = inimă rapidă.
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `Far`  
 
-1. Creezi variabila `ritm`.  
-2. Programul devine:
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `3000`  
+&emsp;<span style="color:#00A600;font-weight:700">repeat</span> `2` times  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Diamond`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `300`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `SmallDiamond`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `300`  
+&emsp;<span style="color:#00A600;font-weight:700">for index</span> from `0` to `4`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;&emsp;<span style="color:#5C2D91;font-weight:700">plot x y</span> `index` `2`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `150`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `600`
 
-```text
-on start
-    set ritm to 150
+**Încearcă tu — (10–15 min)**  
+- [ ] Titlul apare o dată, apoi lampa pulsează și trece raza  
+- [ ] Totul se repetă singur  
+- [ ] Programul e pe placa adevărată  
 
-forever
-    repeat 2 times
-        show icon [Heart]
-        pause (ms) ritm
-        show icon [Small Heart]
-        pause (ms) ritm
-    pause (ms) 700
+### 6) Complet: viteza din butoane
+Facem o variabilă `viteza`: cât durează fiecare pas al razei. Număr mic înseamnă rază **rapidă**.
 
-on button A pressed
-    if ritm > 50 then
-        change ritm by -50
+1. În <span style="color:#1E90FF;font-weight:700">on start</span>: <span style="color:#DC143C;font-weight:700">set</span> `viteza` to `150`  
+2. În <span style="color:#00A600;font-weight:700">for index</span>, în loc de `150` pui blocul rotund `viteza` la pauză  
+3. <span style="color:#D400D4;font-weight:700">on button A pressed</span>: dacă `viteza > 50`, atunci <span style="color:#DC143C;font-weight:700">change</span> `viteza` by `-50` (mai rapid, dar nu sub 50)  
+4. <span style="color:#D400D4;font-weight:700">on button B pressed</span>: dacă `viteza < 500`, atunci <span style="color:#DC143C;font-weight:700">change</span> `viteza` by `50` (mai lent, dar nu peste 500)  
 
-on button B pressed
-    if ritm < 400 then
-        change ritm by 50
-```
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `viteza` to `150`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `Far`  
 
-- **A** scade `ritm`, deci **inima bate mai repede**. Se oprește la `50`, ca să nu devină prea rapidă.  
-- **B** crește `ritm`, deci **inima bate mai încet**. Se oprește la `400`.  
-- Blocul rotund `ritm` îl pui în locul numărului din `pause (ms)`.
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `3000`  
+&emsp;*(lampa care pulsează, ca în Minim)*  
+&emsp;<span style="color:#00A600;font-weight:700">for index</span> from `0` to `4`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;&emsp;<span style="color:#5C2D91;font-weight:700">plot x y</span> `index` `2`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `viteza`  
+&emsp;*(restul rămâne ca în Minim)*  
 
-> **Nu pui desene** în `on start`: `forever` pornește imediat și ar încurca ecranul. În `on start` doar setăm variabila, ceea ce durează o clipă.
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `viteza > 50` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">change</span> `viteza` by `-50`  
 
-**Testează:** apasă A de trei ori. `ritm` trece din 150 în 100, 50, apoi nu mai scade. Inima e acum foarte rapidă. Apasă B de câteva ori și o încetinești.
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `viteza < 500` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">change</span> `viteza` by `50`
 
-**Gata când:**  
-- [ ] Blocurile pentru „Complet” sunt adăugate  
-- [ ] Simulatorul face tot ce scrie în „Complet”  
-
-### 6) Depanare în pereche
-Colegul tău a greșit. Găsește bug-ul:
-
-```text
-forever
-    repeat 2 times
-        show icon [Heart]
-        show icon [Small Heart]
-    pause (ms) 700
-```
-**Ce vezi?** Inima pare fixă, iar pe ecran nu se vede schimbarea. **De ce?** Pozele se schimbă atât de repede încât ochiul nu le vede; lipsesc pauzele dintre ele. Soluție: `pause (ms) 150` după fiecare `show icon`.
-
-**Gata când:**  
-- [ ] Am găsit greșeala colegului și am explicat de ce apare  
-- [ ] Programul reparat merge
-
----
-
-## De făcut azi — „Inima care bate”
-
-### Minim vs Complet
-
-| | Ce trebuie |
-|--|------------|
-| **Minim** | `forever` + `repeat 2 times` cu `Heart` și `Small Heart`, plus odihnă mai lungă |
-| **Complet** | Minim + variabila `ritm` · A mai rapid · B mai lent · cu limite |
-
-### Pasul 1 — Minim
-- [ ] `forever` cu `repeat 2 times` înăuntru  
-- [ ] Pauze între poze  
-- [ ] Odihna e **în afara** lui `repeat`  
-- [ ] Inima bate și pe placa adevărată  
-
-**→ Minim când:** un coleg pune mâna pe piept și spune „bate ca o inimă”.
-
-### Pasul 2 — Complet
-- [ ] Variabila `ritm` setată în `on start`  
-- [ ] `pause (ms) ritm` în interiorul buclei  
-- [ ] A scade `ritm`, dar nu sub `50`  
-- [ ] B crește `ritm`, dar nu peste `400`  
-- [ ] Numele fișierului e `MB1_L06`
-
----
-
-## Bonus ★★★ — Provocare: Semaforul pe LED-uri
-*Doar dacă ai terminat Complet.*
-
-- [ ] Fă **valul de lumină** din pasul 4 și pe rândul de jos (`y` = `4`)  
-- [ ] Adaugă o a doua variabilă, `bataiDuble`, și arată câte bătăi ai făcut (cu `show number`) — doar la apăsarea lui A+B  
-- [ ] Fă un **semafor pe LED-uri**: un rând verde (rândul 0), unul galben (rândul 2), unul roșu (rândul 4), cu `plot`  
-- [ ] Folosește `repeat 3 times` pentru ca inima să facă trei bătăi, nu două
+**Încearcă tu — (15–20 min)**  
+- [ ] A face raza mai rapidă, B mai lentă  
+- [ ] Viteza nu iese din limite (nu mai rapid de 50, nu mai lent de 500)  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
 
 ---
 
 ## Greșeli frecvente
-1. **„Inima nu se vede bătând”** — lipsesc pauzele dintre poze.  
-2. **„Bate de 3 ori în loc de 2”** — ai numărat greșit în `repeat`, sau ai folosit `for index from 0 to 2` (care repetă de **3** ori).  
-3. **„Odihna nu apare”** — `pause (ms) 700` e **în interiorul** lui `repeat`. Trage-o în afară.  
-4. **„Valul nu se vede”** — `x` are un număr fix, nu blocul `index`.  
-5. **„Ritmul ajunge la 0 și inima înnebunește”** — ai uitat condiția `if ritm > 50`.  
-6. **„Apar două blocuri forever care se bat”** — două animații în două `forever` desenează în același timp. Pentru azi folosește **un singur** `forever` cu desene.
+1. **Lampa pulsează doar o dată** — <span style="color:#00A600;font-weight:700">repeat</span> e în afara lui <span style="color:#1E90FF;font-weight:700">forever</span>.  
+2. **Raza nu se vede** — <span style="color:#5C2D91;font-weight:700">plot x y</span> nu are `index` la `x`, ci un număr fix.  
+3. **Titlul și lampa se amestecă** — <span style="color:#1E90FF;font-weight:700">forever</span> nu începe cu <span style="color:#1E90FF;font-weight:700">pause (ms)</span> `3000`.  
+4. **Raza devine prea rapidă** — `viteza` a ajuns prea mică. Limitează cu <span style="color:#00A4A6;font-weight:700">if</span>.  
+5. **Raza lasă urmă pe ecran** — lipsește <span style="color:#1E90FF;font-weight:700">clear screen</span> din buclă.  
+6. **`index` repetă de 4 ori** — `for index from 0 to 4` repetă de **5** ori (0, 1, 2, 3, 4).  
 
 ---
 
-## Recapitulare pe scurt
-1. `forever` = repetă pe veci.  
-2. `repeat 4 times` = repetă de 4 ori.  
-3. `for index from 0 to 4` = repetă de **5** ori și îți dă numărul `index`.  
-4. `plot x y` aprinde un LED, `clear screen` stinge toate LED-urile.  
-5. O variabilă poate controla **viteza**.
-6. **Schema pe scurt (pe foaie):** `forever` → `repeat 2 times` (Heart → pauză → Small Heart → pauză) → odihnă
+## De făcut azi — „Farul de pe mare”
+Salvat: `Prenume_Nume_MB1_L06`
+
+### Minim vs Complet *(citește înainte să începi)*
+
+| | Ce trebuie |
+|--|------------|
+| **Minim („am reușit”)** | **Pasul 1** — farul pulsează de 2 ori și trece raza de lumină, cu **cel puțin 8 blocuri diferite**, pe placă |
+| **Complet (ținta orei)** | Minim + **Pasul 2** — A și B schimbă viteza razei în limite, cu cel puțin **6 blocuri diferite** |
+
+Dacă rămâi în urmă: **oprește-te la Minim** și salvează. Nu e eșec, e baza pentru lecția următoare.
+
+### Pasul 1 — Farul de pe mare *(Minim)*
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `Far`  
+
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `3000`  
+&emsp;<span style="color:#00A600;font-weight:700">repeat</span> `2` times  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Diamond`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `300`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `SmallDiamond`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `300`  
+&emsp;<span style="color:#00A600;font-weight:700">for index</span> from `0` to `4`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;&emsp;<span style="color:#5C2D91;font-weight:700">plot x y</span> `index` `2`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `150`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `600`
+
+- [ ] Proiect nou cu numele `Prenume_Nume_MB1_L06`  
+- [ ] Titlul `Far` apare o dată; lampa pulsează și raza trece apoi singure  
+- [ ] Ai cel puțin **8 blocuri diferite**: <span style="color:#1E90FF;font-weight:700">on start</span>, <span style="color:#1E90FF;font-weight:700">show string</span>, <span style="color:#1E90FF;font-weight:700">forever</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>, <span style="color:#00A600;font-weight:700">repeat</span>, <span style="color:#1E90FF;font-weight:700">show icon</span>, <span style="color:#00A600;font-weight:700">for index</span>, <span style="color:#5C2D91;font-weight:700">plot x y</span>, <span style="color:#1E90FF;font-weight:700">clear screen</span>  
+- [ ] Programul e trimis pe placă  
+
+**→ Ai Minim când:** pe placă lampa pulsează, apoi raza trece prin rândul din mijloc, fără explicații.
+
+### Pasul 2 — Viteza razei *(Complet)*
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `viteza` to `150`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `Far`  
+
+<span style="color:#1E90FF;font-weight:700">forever</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `3000`  
+&emsp;*(lampa care pulsează, ca în Minim)*  
+&emsp;<span style="color:#00A600;font-weight:700">for index</span> from `0` to `4`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;&emsp;<span style="color:#5C2D91;font-weight:700">plot x y</span> `index` `2`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `viteza`  
+&emsp;*(restul rămâne ca în Minim)*  
+
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `viteza > 50` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">change</span> `viteza` by `-50`  
+
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `viteza < 500` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">change</span> `viteza` by `50`
+
+- [ ] Variabila `viteza` pusă la `150` în <span style="color:#1E90FF;font-weight:700">on start</span>  
+- [ ] Pauza din `for index` folosește `viteza`  
+- [ ] A: <span style="color:#00A4A6;font-weight:700">if</span> `viteza > 50` apoi <span style="color:#DC143C;font-weight:700">change</span> −50; B: <span style="color:#00A4A6;font-weight:700">if</span> `viteza < 500` apoi <span style="color:#DC143C;font-weight:700">change</span> +50  
+- [ ] Viteza nu iese din limite  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
+- [ ] Salvat din nou: `Prenume_Nume_MB1_L06`  
+
+**Gata Complet când:** cu A raza trece mai repede, cu B mai încet, fără să se strice.
 
 ---
 
-## Quiz scurt
+## Bonus ★★★ — Provocare: Farul în ceață
+*Doar dacă ai terminat Complet.*
+
+- [ ] Fă **raza** și pe rândul de jos (`y` = `4`)  
+- [ ] **Provocarea:** cât timp ții apăsat A, e **ceață**: farul trimite semnal de alarmă, tot ecranul clipește rapid. Folosești <span style="color:#00A600;font-weight:700">while</span> cu <span style="color:#D400D4;font-weight:700">button A is pressed</span> și <span style="color:#00A600;font-weight:700">repeat</span>; când lași butonul, raza își reia drumul. Un coleg apasă și lasă butonul de 3 ori; placa trebuie să revină la rază de fiecare dată.  
+
+## Recapitulare rapidă
+1. <span style="color:#1E90FF;font-weight:700">forever</span> repetă la nesfârșit; <span style="color:#00A600;font-weight:700">repeat</span> de câte ori alegi; <span style="color:#00A600;font-weight:700">while</span> cât timp e adevărat  
+2. `for index from 0 to 4` repetă de **5** ori și îți dă `index`  
+3. <span style="color:#5C2D91;font-weight:700">plot x y</span> cu `index` la `x` mută LED-ul pe rând, ca raza farului  
+4. O variabilă (`viteza`) poate controla **viteza**  
+5. Limitele se pun cu <span style="color:#00A4A6;font-weight:700">if</span>, ca viteza să nu iasă din control  
+6. Minim = Pasul 1 · Complet = Pasul 1 + 2  
+
+## Schema pe scurt *(pe foaie)*
+<span style="color:#1E90FF;font-weight:700">forever</span>: <span style="color:#1E90FF;font-weight:700">pause (ms)</span> `3000` → <span style="color:#00A600;font-weight:700">repeat</span> `2` (<span style="color:#1E90FF;font-weight:700">show icon</span> `Diamond` → <span style="color:#1E90FF;font-weight:700">pause (ms)</span> `300` → <span style="color:#1E90FF;font-weight:700">show icon</span> `SmallDiamond` → <span style="color:#1E90FF;font-weight:700">pause (ms)</span> `300`) → <span style="color:#00A600;font-weight:700">for index</span> (<span style="color:#1E90FF;font-weight:700">clear screen</span> → <span style="color:#5C2D91;font-weight:700">plot x y</span> `index` `2` → <span style="color:#1E90FF;font-weight:700">pause (ms)</span> `viteza`) → <span style="color:#1E90FF;font-weight:700">clear screen</span> → <span style="color:#1E90FF;font-weight:700">pause (ms)</span> `600`
+
+A / B → <span style="color:#00A4A6;font-weight:700">if</span> → <span style="color:#DC143C;font-weight:700">change</span> `viteza`
+
+**Quiz scurt (cu profesorul):**  
 - De câte ori repetă `for index from 0 to 4`?  
-- Care e diferența dintre `forever` și `repeat 4 times`?  
-- Ce face `plot x 3 y 2`?  
-- De ce nu lăsăm `ritm` să ajungă la `0`?
+- Care e diferența dintre <span style="color:#1E90FF;font-weight:700">forever</span> și <span style="color:#00A600;font-weight:700">repeat</span> `4` times?  
+- Ce face <span style="color:#5C2D91;font-weight:700">plot x y</span> cu `index` la `x`?  
+- De ce nu lăsăm `viteza` să ajungă la `0`?  
+- Când se oprește un <span style="color:#00A600;font-weight:700">while</span>?  
 
----
+## Temă (opțional)
+- Dacă ai doar Minim: acasă, adaugi viteza din butoane (Pasul 2), în același `Prenume_Nume_MB1_L06`.  
+- Dacă ai Complet: desenezi pe foaie un semafor care schimbă culorile în buclă și scrii ce buclă ai folosi și ce pauze ai pune.  
+- Dacă ai terminat și Bonusul: faci o copie și schimbi viteza.  
 
-## Temă
-Desenează pe foaie un **ceas deșteptător** care sună în ritm: sunet scurt, pauză, sunet scurt. Scrie ce buclă ai folosi și ce pauze ai pune.
-
----
-
-## Ce urmează — Lecția 7
-Placa simte **mișcarea**: o bilă magică ce răspunde Da sau Nu.
+## Ce urmează
+În **Lecția 7** placa **simte mișcarea**: o bilă magică ce răspunde Da sau Nu.

@@ -45,4 +45,4 @@ Aceeași ordine pentru toate cursurile. Detaliile C++ sunt în `cpp/_structura-l
 - Arduino Modul 1: gata (cu „Gata când” în loc de „Încearcă tu”; păstrează „Pe placa reală”).
 - Python Modul 1: gata, L10 reia proiectele din L2–L9 într-un meniu (lecțiile au 8 exemple la oră; exemplele în plus și exercițiile „Ce afișează?” și „Găsește greșelile” sunt în Temă).
 - HTML CSS JavaScript Modul 1: gata, L10 „Site-ul meu de proiecte” reia proiectele din L1–L7 într-un site cu meniu (lecțiile au 8 exemple la oră; exemplele în plus și exercițiile B–E sunt în Temă).
-- micro:bit Modul 1: gata, L10 „Insigna inteligentă” reia proiectele din L1–L7 într-un singur program (Pas cu pas folosește „Gata când” / „Încearcă tu”, fără „Exemplul N”).
+- micro:bit Modul 1 (blocuri): gata, în stilul Scratch (blocuri colorate, Minim ≥ 8 blocuri, Complet ≥ 6, Bonus măsurabil). L10 „Insigna inteligentă” reia proiectele din L1–L9. Neverificat pe placă. Modulele 2–4 (și micro:bit Python) urmează.

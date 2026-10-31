@@ -1,35 +1,37 @@
 Lecția trei. Comutatorul de emoții.
 
-Până acum programul tău rula singur. Astăzi placa ascultă de tine: apeși un buton și se întâmplă ceva. Proiectul se numește Comutatorul de emoții. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero trei.
+Astăzi înveți ce este un eveniment și faci Comutatorul de emoții: placa arată o emoție diferită când apeși A, B sau A și B împreună. Fișierul se numește Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero trei.
 
-Ce facem azi. La final știi ce este un eveniment și faci placa să reacționeze când apeși A, B sau A și B împreună. Telecomanda, tastatura și mouse-ul funcționează la fel: tu faci ceva, iar aparatul răspunde. În programare, ceva ce se întâmplă se numește eveniment. Blocurile de eveniment așteaptă liniștite și pornesc exact când ai nevoie de ele.
+Obiectivul. La finalul orei știi să faci placa să răspundă când apeși un buton. Minim: trei butoane, A, B și A plus B, fiecare cu emoția lui, și o stare de somn la pornire, cu opt blocuri diferite. Complet: partea a doua, în care la A plus B apare o mică explozie de emoții, cu cel puțin șase blocuri diferite.
 
-Instrucțiuni noi azi. On button A pressed pornește când apeși A. On button B pressed pornește când apeși B. On button A plus B pressed pornește când le apeși pe amândouă. Show icon arată o poză. Clear screen stinge LED-urile.
+De ce contează. Telecomanda, tastatura și mouse-ul funcționează la fel: tu faci ceva, iar aparatul răspunde. În programare, ceva ce se întâmplă se numește eveniment. Blocurile de eveniment așteaptă liniștite, apoi pornesc exact când apeși.
 
-Primul pas. Jocul Eu sunt placa, fără calculator. Profesorul spune A, B sau A și B. Tu faci cu mâinile semnul cerut: pentru A ridici mâna stângă, pentru B mâna dreaptă, pentru A și B pe amândouă.
+Ce face fiecare bloc de azi. Folosim un bloc nou, din capitolul Input: On button pressed. El pornește blocurile din el doar când apeși butonul ales. Din listă alegi A, B sau A plus B. Din lecțiile trecute știi deja On start, Show icon, Show leds, Show string, Show number, Pause, Clear screen, Repeat și Plot.
 
-Al doilea pas. Proiect nou, cu numele din fișier.
+Primul pas. Jocul Eu sunt placa, fără calculator. Lucrați în perechi. Un copil este placa, celălalt este omul. Omul spune apas A, iar placa face o față veselă. Omul spune apas B, iar placa face o față tristă. Omul spune apas A și B, iar placa face o față mirată. Omul a făcut ceva, iar placa a răspuns. Acel ceva se numește eveniment.
 
-Al treilea pas. Blocul de eveniment. Din categoria Input tragi blocul On button A pressed în zona de lucru. Nu îl pui în On start sau în Forever, pentru că este un bloc de sine stătător, care pornește singur când apeși A. Înăuntru pui Show icon și alegi fața veselă.
+Al doilea pas. Proiect nou și starea de somn. În On start pui Show icon cu iconița Asleep, adică placa doarme. Placa doarme până apeși un buton.
 
-Al patrulea pas, pentru Minim. Tragi încă un bloc de buton și schimbi litera A în B. Înăuntru pui Show icon cu fața tristă. Acum placa are două reacții.
+Al treilea pas. Butonul A. Din Input tragi On button A pressed pe zona de lucru. Este un bloc de sine stătător, nu îl pui în On start. Înăuntru pui: Show icon Happy, Pause o mie, Show string Hei, Clear screen. Apeși A în simulator și apare fața veselă, apoi Hei, apoi ecranul se stinge.
 
-Al cincilea pas, pentru Complet. Tragi încă un bloc de buton și alegi A plus B din listă. Înăuntru pui Show icon cu inima. Apoi, în On start, pui Show icon cu fața adormită, ca placa să doarmă la pornire.
+Al patrulea pas. Butonul B. Tragi încă un bloc On button pressed și din listă alegi B. Înăuntru: Show icon Sad, Pause o mie, Show number cinci, Clear screen. Pentru fiecare buton ai nevoie de un singur bloc.
 
-Al șaselea pas. Experimente. Apeși A de trei ori repede. Apeși A și B pe rând, apoi deodată. Notezi pe foaie ce vezi.
+Al cincilea pas. A plus B, fața ta. Al treilea bloc On button pressed, cu A plus B în listă. Aici desenezi tu o față, cu Show leds. Acesta este programul pentru Minim: la pornire placa doarme, iar fiecare buton are emoția lui.
 
-Al șaptelea pas. Eveniment sau Forever? Forever repetă mereu același lucru, fără să ceară voie. Un bloc de eveniment așteaptă și pornește doar când apeși.
+Al șaselea pas. Complet, explozia de emoții. Înlocuiești conținutul blocului A plus B cu partea a doua. Mai întâi ecranul pâlpâie de trei ori: Show icon Surprised, pauză, Clear screen, pauză, într-un Repeat. Apoi apare fața ta, cu Show leds, și o scânteie în mijloc, cu Plot. Dacă apeși alt buton în timp ce rulează explozia, începe și celălalt bloc, deci așteaptă să se termine.
 
-De făcut azi. Proiectul se numește Comutatorul de emoții. Minim înseamnă: A arată față veselă, B față tristă. Complet înseamnă: minim, plus A și B arată inima, plus somnul la pornire. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg apasă A și B și înțelege fără explicații.
+Greșeli frecvente. A plus B nu merge: ai ales A în loc de A plus B din lista blocului, sau ai apăsat butoanele pe rând, nu deodată. Nu se întâmplă nimic: blocul de buton este pus în On start. Fața rămâne pe ecran: lipsește Clear screen. Apar două răspunsuri: ai pus două blocuri pentru același buton. Fața trece prea repede: lipsește pauza. Explozia se încurcă: ai apăsat alt buton cât timp rula.
 
-Bonus. Semaforul dispozițiilor. Faci un semafor de dispoziție cu A, B și A și B, arăți fața veselă o secundă, apoi stingi ecranul, și inventezi un joc de emoții cu un coleg.
+Proiectul de azi. Comutatorul de emoții.
 
-Greșeli frecvente. Nu se întâmplă nimic când apeși: blocul Show icon nu este înăuntrul blocului de eveniment. A plus B nu merge: apeși butoanele la momente diferite, încearcă simultan. Ai două blocuri la fel pentru A: păstrează unul singur. Pe placă se vede somnul și nu se mai schimbă: nu ai descărcat versiunea nouă. Simulatorul merge, dar placa nu: apasă din nou Download.
+Minim înseamnă: trei butoane cu emoții și starea de somn, cu opt blocuri diferite, pe placă. Complet înseamnă: minim, plus explozia de emoții la A plus B, cu cel puțin șase blocuri diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg apasă pe rând A, B și A plus B și vede de fiecare dată altă emoție, fără explicații.
 
-Tema. Alegi un aparat de acasă cu butoane și desenezi pe foaie trei butoane și ce ar trebui să facă placa la fiecare.
+Bonus. Schimbi timpii. Provocarea, Semaforul dispozițiilor: toate cele trei emoții, A, B și A plus B, sunt fețe desenate de tine, nu din listă. Fiecare are câte un cuvânt scurt și un număr de la unu la cinci. Un coleg apasă butoanele și ghicește emoția din ce vede.
 
-Recapitulare. Eveniment înseamnă ceva ce se întâmplă. On button A pressed rulează doar când apeși A. A este în stânga, B în dreapta, iar A plus B înseamnă ambele deodată. Pentru fiecare buton ai nevoie de un singur bloc.
+Recapitulare. Eveniment înseamnă ceva ce se întâmplă, de exemplu apeși un buton. On button A pressed pornește doar când apeși A. Din listă alegi A, B sau A plus B. Pentru fiecare buton ai nevoie de un singur bloc, pus singur pe zona de lucru. On start rulează o dată, la pornire. După fiecare reacție, un Clear screen.
 
-Ce urmează. În lecția patru învățăm variabilele, cutii cu nume care țin minte numere, și facem un contor magic.
+Tema, opțional. Dacă ai doar Minim, adaugi acasă explozia de la A plus B. Dacă ai Complet, alegi un aparat de acasă cu butoane și desenezi pe foaie trei butoane și ce ar trebui să facă placa la fiecare.
+
+Ce urmează. În lecția patru placa ține minte numere, cu variabile, într-un contor magic.
 
 Succes la comutatorul tău.

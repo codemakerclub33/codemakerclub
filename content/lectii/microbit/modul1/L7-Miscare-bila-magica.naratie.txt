@@ -1,33 +1,37 @@
 Lecția șapte. Bila magică Da sau Nu.
 
-Astăzi descoperi că placa simte cum o miști: o scuturi, o înclini, o ridici. Din ea facem o bilă magică, care răspunde la întrebări. Proiectul se numește Bila magică, Da sau Nu. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero șapte.
+Astăzi înveți că placa simte mișcarea și faci Bila magică Da sau Nu: pui o întrebare, scuturi placa și ea răspunde Da, Nu sau Poate, la întâmplare. Fișierul se numește Prenume, linie jos, Nume, linie jos, M B unu, linie jos, L zero șapte.
 
-Ce facem azi. La final folosești accelerometrul, senzorul de mișcare, și numere aleatorii, alese la întâmplare. Telefonul tău își dă seama când îl răsucești și își întoarce ecranul. Jocurile simt când scuturi telecomanda. Toate folosesc un accelerometru. Iar când un joc alege ceva la întâmplare, un zar sau o carte, folosește numere aleatorii.
+Obiectivul. La finalul orei folosești accelerometrul, senzorul de mișcare, și numere aleatorii, alese la întâmplare. Minim: scuturi placa și ea răspunde Da, Nu sau Poate, la întâmplare, cu cel puțin opt blocuri diferite. Complet: partea a doua, în care placa se gândește înainte de răspuns, iar înclinarea spre stânga pregătește o întrebare nouă, cu cel puțin șase blocuri diferite.
 
-Instrucțiuni noi azi. On shake pornește când scuturi placa. Pick random alege un număr la întâmplare. If, else if și else aleg între mai multe variante. Show icon arată răspunsul.
+De ce contează. Telefonul tău își dă seama când îl răsucești și își întoarce ecranul. Jocurile de pe consolă simt când scuturi telecomanda. Toate folosesc un accelerometru. Iar când un joc alege ceva la întâmplare, folosește numere aleatorii.
 
-Primul pas. Placa simte mișcarea. În micro:bit este un accelerometru, care măsoară mișcarea pe trei direcții: x, stânga și dreapta, y, față și spate, și z, sus și jos. Explorare de cinci minute: afișezi valorile și miști placa în toate felurile.
+Ce face fiecare bloc de azi. On shake pornește blocurile din el când scuturi placa. Pick random alege un număr la întâmplare, între cele două numere date. Acceleration arată cât de mult e înclinată sau mișcată placa pe axa aleasă. Din lecțiile trecute știi deja On start, Forever, Show string, Show icon, Pause, Clear screen, Plot, Unplot, Repeat, Set, If then else și blocul egal.
 
-Al doilea pas. Gesturile. Nu trebuie să citești cifre. MakeCode are blocul On shake, în categoria Input. Pe cuvântul shake apeși și vezi lista: scuturat, înclinat stânga, înclinat dreapta, logo sus, logo jos, ecran sus și altele.
+Primul pas. Placa simte mișcarea. În placă este un accelerometru: măsoară cât de mult o miști sau o înclini. Are trei axe: x, stânga dreapta, y, față spate, și z, sus jos. În simulator, un Forever care arată Show number Acceleration x: dacă înclini placa spre stânga, numărul devine negativ, iar spre dreapta devine pozitiv.
 
-Al treilea pas. Numerele aleatorii. Un număr aleatoriu este ales la întâmplare, ca la zar. În Math găsești blocul Pick random. Cu Pick random zero to unu primești zero sau unu. Cu Pick random zero to doi primești zero, unu sau doi.
+Al doilea pas. On shake pornește când scuturi. Proiect nou. Din Input tragi On shake. Înăuntru pui Show icon cu bifa. În simulator, scuturi cu butonul Shake de pe placa desenată.
 
-Al patrulea pas, pentru Minim. Creezi variabila raspuns. În On shake: Set raspuns to Pick random zero to unu. Apoi If raspuns egal cu zero, arăți Da, bifa, altfel arăți Nu, crucea.
+Al treilea pas. Numerele aleatorii. Pick random de la zero la doi alege la întâmplare zero, unu sau doi. Îl pui într-o variabilă numită raspuns, pe care o creezi ca în lecția patru. Scuturi de câteva ori: numerele se schimbă, fără ordine.
 
-Al cincilea pas, pentru Complet. Schimbi intervalul în zero to doi. Adaugi o a treia ramură, Else if raspuns egal cu unu, arăți un semn de întrebare, pentru Poate. Apoi, în blocul On tilt left, cureți ecranul, ca placa să fie gata de o întrebare nouă.
+Al patrulea pas. Bila magică, pentru Minim. Fiecare număr devine un răspuns: zero este Da, unu este Nu, doi este Poate. În On start pui Show string Intreaba. În On shake, Set raspuns la Pick random de la zero la doi. Apoi If then else: dacă raspuns este zero, arată Da. Altfel, încă un If then else: dacă raspuns este unu, arată Nu, altfel arată Poate. La final, Pause două mii și Clear screen.
 
-Al șaselea pas. Cum verificăm că este cinstită? Experiment în grup: fiecare scutură de douăzeci de ori și notează câte Da și câte Nu au ieșit. Nu va fi exact zece și zece, dar nici douăzeci și zero.
+Al cincilea pas. Complet. Mă gândesc. Înainte de răspuns, placa se gândește: miezul clipește de trei ori, cu Repeat, Plot și Unplot. Pui acest Repeat la începutul blocului On shake, înainte de Set.
 
-De făcut azi. Proiectul se numește Bila magică, Da sau Nu. Minim înseamnă: scuturi și apare Da sau Nu. Complet înseamnă: minim, plus Poate și înclinarea care curăță ecranul. Dacă rămâi în urmă, salvează la Minim.
+Al șaselea pas. Complet. Înclinarea pentru întrebarea nouă. Dacă înclini placa spre stânga, apare din nou Intreaba. Pentru asta citim accelerometrul într-un Forever, cu o pauză de cinci sute, și un If: dacă acceleration x este mai mic decât minus cinci sute, Show string Intreaba.
 
-Bonus. Bila cu patru răspunsuri. Faci un al patrulea răspuns, arăți o animație de gândire înainte de răspuns, folosești logoul ca buton de întrebare nouă și numeri câte răspunsuri Da primești.
+Greșeli frecvente. Nu se întâmplă nimic la scuturare: blocul On shake nu este pe zona de lucru sau este pus în On start. Dă mereu același răspuns: ai uitat să pui Pick random în Set. Apare doar Da sau Nu: al doilea If then else nu este în ramura Altfel a primului. Nu apare Poate: verifică Pick random de la zero la doi. Mă gândesc apare după răspuns: Repeat este după Set. Textul Intreaba se amestecă cu răspunsul: Forever nu are Pause în el.
 
-Greșeli frecvente. Nu răspunde când scuturi: în simulator apeși Shake, iar pe placă scuturarea trebuie să fie energică. Mereu același răspuns: ai pus Pick random zero to zero. Apare doar Da: compari cu un număr care nu apare. Poate nu apare niciodată: intervalul este încă zero to unu. Pe ecran rămâne răspunsul vechi: este normal, înclin-o spre stânga ca să cureți. Tilt left nu merge în simulator: folosește controlul de înclinare sau testează pe placă.
+Proiectul de azi. Bila magică Da sau Nu.
 
-Tema. Te gândești la trei întrebări pentru bila magică și la un al patrulea răspuns haios. Le scrii pe foaie și mâine le testezi cu un coleg.
+Minim înseamnă: bila magică dă Da, Nu sau Poate la scuturare, cu cel puțin opt blocuri diferite, pe placă. Complet înseamnă: minim, plus mă gândesc înainte de răspuns și înclinare spre stânga, cu cel puțin șase blocuri diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg pune o întrebare, scuturi placa și vede Da, Nu sau Poate, fără explicații.
 
-Recapitulare. Accelerometrul simte mișcarea plăcii. On shake pornește când scuturi. Pick random zero to doi alege zero, unu sau doi. Else if adaugă o a treia variantă. Un program poate răspunde diferit la aceeași acțiune.
+Bonus. Schimbi pauza de răspuns. Provocarea, Bila cu patru răspunsuri: bila are patru răspunsuri, unul dintre ele haios, desenat de tine. Înainte de răspuns, placa arată o animație de gândire cu trei pași. Un coleg pune cinci întrebări și nu primește de cinci ori același răspuns.
 
-Ce urmează. În lecția opt placa măsoară lumina și temperatura, într-un felinar inteligent.
+Recapitulare. Accelerometrul simte mișcarea plăcii. On shake pornește când scuturi. Pick random de la zero la doi alege zero, unu sau doi la întâmplare. Un If then else în ramura Altfel adaugă a treia variantă. Un program poate răspunde diferit la aceeași acțiune.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă mă gândesc și înclinarea. Dacă ai Complet, te gândești la trei întrebări pentru bila magică și la un al patrulea răspuns haios, le scrii pe foaie și mâine le testezi cu un coleg.
+
+Ce urmează. În lecția opt placa măsoară lumina și temperatura, într-o seră inteligentă.
 
 Succes la bila ta magică.

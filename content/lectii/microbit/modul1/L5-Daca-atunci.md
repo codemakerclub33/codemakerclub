@@ -1,17 +1,22 @@
-# LECȚIA 5 — Cursa până la 10
+# Lecția 5 — Scutul de energie
 ### Decizii: if, else și comparații
 **Modulul 1 · Primii pași cu micro:bit (blocuri)**  
 **Code Maker Club · micro:bit Starter**
 
-> Azi înveți placa să **ia decizii**: dacă se întâmplă ceva, face un lucru; altfel face altceva.  
-> Proiect: **„Cursa până la 10”** · `Prenume_Nume_MB1_L05`
+> Azi înveți să faci placa să **decidă** și faci **„Scutul de energie”**:  
+> A încarcă scutul, B îl lovește; când energia ajunge la 0, apare `GAME OVER`.  
+> Fișier: `Prenume_Nume_MB1_L05` (ex. `Ana_Pop_MB1_L05`)
 
 ---
 
-## Ce facem azi
-La finalul orei folosești blocurile `if … then` și `if … then … else` și compari numere. Tu iei decizii tot timpul: „Dacă plouă, iau umbrela. Altfel, iau ochelarii de soare.” Un program face la fel. Fără decizii, un joc nu poate spune „ai câștigat”, iar o alarmă nu știe când să sune.
+## Obiectiv
+La finalul orei folosești `if … then` și `if … then … else` și compari numere.  
+**Minim:** A încarcă scutul (+1), B îl lovește (−1); când energia ajunge la **0**, placa arată `GAME OVER` și un craniu, apoi pornește iar de la 5, cu **cel puțin 8 blocuri diferite**.  
+**Ținta orei (Complet):** partea a doua: **A** încarcă scutul, dar **niciodată peste 9**, iar **A+B** arată starea scutului (`PERICOL`, `MEDIU` sau `PLIN`), cu cel puțin **6 blocuri diferite**.
 
-**Unelte azi:** categoria **Logic** · `if … then` · `if … then … else` · comparația `0 = 0` · `show icon` · `show string`
+## De ce contează
+Tu iei decizii tot timpul: „Dacă plouă, iau umbrela. Altfel, iau ochelarii de soare.” Un program face la fel.  
+Fără decizii, un joc nu poate spune „ai pierdut”, iar o alarmă nu știe când să sune.
 
 ---
 
@@ -21,206 +26,253 @@ La finalul orei folosești blocurile `if … then` și `if … then … else` ș
 |--------|----------|
 | 0–10 | Recap L4: variabile, `set`, `change` |
 | 10–30 | Jocul „Dacă… atunci” cu cartonașe, fără calculator |
-| 30–50 | Blocul `if … then` și comparațiile (`=`, `<`, `>`) |
-| 50–75 | Cursa până la 10 (**Minim**) |
-| 75–100 | B scade, dar nu sub 0 (**Complet**) |
-| 100–112 | Greșeli de gândire: găsește bug-ul |
-| 112–120 | Recapitulare, quiz, temă |
+| 30–50 | Condiții și comparații: `=`, `<`, `>` |
+| 50–80 | Scutul de energie (**Minim**) |
+| 80–105 | A nu trece de 9; A+B arată starea scutului (**Complet**) |
+| 105–120 | Recap, bonus, arăți ce ai gata |
 
----
+**Unelte azi:** placa micro:bit · cablu micro-USB · browser Chrome sau Edge · [makecode.microbit.org](https://makecode.microbit.org)
 
-## Instrucțiuni noi azi
+**Capitole azi:**  
+<span style="color:#00A4A6;font-weight:700">Logic</span> · <span style="color:#DC143C;font-weight:700">Variables</span> · <span style="color:#D400D4;font-weight:700">Input</span> · <span style="color:#1E90FF;font-weight:700">Basic</span>  
+*(Loops, Math — mai târziu.)*
 
-| Bloc | Ce face | Exemplu |
-|------|---------|---------|
-| `if … then` | Face ceva **doar dacă** e adevărat | `if score = 10 then` |
-| `if … then … else` | Face un lucru dacă e adevărat, altul dacă nu | `else` = altfel |
-| `=`  `<`  `>` | Compară două numere | `score > 3` |
-| `show icon` / `show string` | Arată răspunsul | `show icon [Yes]` |
+**Blocurile de azi:**
+
+| Bloc | Ce face |
+|------|---------|
+| <span style="color:#00A4A6;font-weight:700">if … then</span> | face ceva **doar dacă** condiția e adevărată |
+| <span style="color:#00A4A6;font-weight:700">if … then … else</span> | face un lucru dacă e adevărat, **altul** dacă nu |
+| <span style="color:#00A4A6;font-weight:700">0 = 0</span> | compară: sunt egale? |
+| <span style="color:#00A4A6;font-weight:700">0 < 0</span> | compară: primul e mai mic? (din listă poți alege și `>`) |
+| <span style="color:#00A4A6;font-weight:700">and</span> | adevărat doar dacă **amândouă** condițiile sunt adevărate (în Bonus) |
+| <span style="color:#00A4A6;font-weight:700">or</span> | adevărat dacă **măcar una** e adevărată (în Bonus) |
+
+*Din lecțiile trecute le știi deja:* <span style="color:#1E90FF;font-weight:700">on start</span>, <span style="color:#D400D4;font-weight:700">on button pressed</span>, <span style="color:#DC143C;font-weight:700">set</span>, <span style="color:#DC143C;font-weight:700">change</span>, <span style="color:#1E90FF;font-weight:700">show number</span>, <span style="color:#1E90FF;font-weight:700">show string</span>, <span style="color:#1E90FF;font-weight:700">show icon</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>.
 
 ---
 
 ## Pas cu pas
 
-### 1) Jocul cu cartonașe
-Pe un cartonaș scrie **„Dacă mă ating de cap, tu sari”**. Un coleg citește. Dacă te-ai atins de cap, el sare. Altfel, stă pe loc. Fiecare decizie are:
-- o **condiție** (ceva care poate fi **adevărat** sau **fals**);  
-- o **acțiune** (ce faci dacă e adevărat);  
-- uneori și o alta (**altfel**).
+### 1) Jocul „Dacă… atunci” (cartonașe)
+Pe cartonașe scrieți câte o regulă: „**Dacă** plouă, **atunci** iau umbrela, **altfel** iau ochelarii de soare.”
 
-### 2) Condiția și comparațiile
-O condiție pune o întrebare la care răspunsul e **da (true)** sau **nu (false)**.
+Un copil citește o situație („Plouă!”), altul alege cartonașul potrivit. Fiecare regulă are:
+- o **condiție** (plouă?) care poate fi **adevărată** sau **falsă**  
+- ce faci dacă e adevărată (**atunci**)  
+- ce faci dacă nu (**altfel**)
 
-| Scris în MakeCode | Se citește | Exemplu cu `score = 7` |
-|-------------------|-----------|-------------------------|
-| `score = 10` | scorul este egal cu 10 | **false** |
-| `score < 10` | scorul este mai mic decât 10 | **true** |
-| `score > 0` | scorul este mai mare decât 0 | **true** |
-| `score ≥ 7` | mai mare **sau egal** cu 7 | **true** |
+**Încearcă tu — (5–8 min)**  
+- [ ] Scrii 3 reguli „dacă … atunci … altfel” din viața ta  
+- [ ] Ai jucat cu un coleg 5 situații  
 
-Blocul de comparație e în **Logic** și arată ca o pastilă cu două găuri și un semn la mijloc. Pe semn apeși și alegi `=`, `<`, `>`, `≤`, `≥` sau `≠`.
+### 2) Condiții și comparații
+În <span style="color:#00A4A6;font-weight:700">Logic</span> găsești blocurile de comparat numere. Răspunsul e mereu **adevărat** sau **fals**.
+
+| Condiția | Dacă `energie` este `4` |
+|----------|----------------------|
+| `energie = 4` | adevărat |
+| `energie < 4` | fals |
+| `energie > 2` | adevărat |
+| `energie > 2 and energie < 4` | fals (a doua nu e adevărată) |
+
+> `=` din <span style="color:#00A4A6;font-weight:700">Logic</span> **întreabă** „sunt egale?”. <span style="color:#DC143C;font-weight:700">set</span> **pune** o valoare. Nu le amesteca.
+
+**Încearcă tu — (5–8 min)**  
+- [ ] Completezi singur tabelul pentru `energie = 2`  
+- [ ] Spui de ce `energie > 2 and energie < 4` e fals pentru `4`  
 
 ### 3) Proiect nou și pornirea
-**New Project** → `Prenume_Nume_MB1_L05`. Creezi variabila `score` (ca în L4).
+1. Proiect nou: `Prenume_Nume_MB1_L05`  
+2. Creezi variabila `energie` (ca în lecția 4)  
+3. În <span style="color:#1E90FF;font-weight:700">on start</span>: <span style="color:#DC143C;font-weight:700">set</span> `energie` to `5` și <span style="color:#1E90FF;font-weight:700">show number</span> `energie`  
 
-```text
-on start
-    set score to 0
-    show number score
-```
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `energie` to `0`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `energie`
 
-**Gata când:**  
-- [ ] Proiectul nou e creat cu numele `Prenume_Nume_MB1_L05`  
+**Încearcă tu — (5 min)**  
+- [ ] La pornire apare `5`  
 
-### 4) Cursa până la 10 — Minim
-La fiecare apăsare de **A** creștem scorul. **Apoi** întrebăm: „Am ajuns la 10?”
+### 4) Scutul de energie: Minim
+**A** încarcă scutul (+1). **B** îl lovește (−1). Dacă după lovitură energia a ajuns la **0**, jocul s-a terminat și pornește iar de la 5. Altfel arată energia.
 
-```text
-on button A pressed
-    change score by 1
-    if score = 10 then
-        show icon [Yes]
-        show string "Bravo"
-        set score to 0
-        show number score
-    else
-        show number score
-```
+1. <span style="color:#D400D4;font-weight:700">on button A pressed</span>: <span style="color:#DC143C;font-weight:700">change</span> `energie` by `1` și <span style="color:#1E90FF;font-weight:700">show number</span> `energie`  
+2. <span style="color:#D400D4;font-weight:700">on button B pressed</span>: mai întâi <span style="color:#DC143C;font-weight:700">change</span> `energie` by `-1`  
+3. Apoi <span style="color:#00A4A6;font-weight:700">if … then … else</span> cu condiția <span style="color:#00A4A6;font-weight:700">0 = 0</span> → `energie = 0`  
+4. În **atunci**: <span style="color:#1E90FF;font-weight:700">show string</span> `GAME OVER`, <span style="color:#1E90FF;font-weight:700">show icon</span> `Skull`, <span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`, <span style="color:#DC143C;font-weight:700">set</span> `energie` to `5`, <span style="color:#1E90FF;font-weight:700">show number</span> `energie`  
+5. În **altfel**: <span style="color:#1E90FF;font-weight:700">show number</span> `energie`  
 
-Cum construiești `if … else`:
-1. Din **Logic** tragi **if … then** în blocul `on button A pressed`, **sub** `change score by 1`.  
-2. Apeși pe semnul **+** de pe bloc ca să adaugi **else**.  
-3. În condiție pui comparația din Logic: în stânga blocul rotund `score`, semnul `=`, în dreapta numărul `10`.  
-4. Pe ramura de sus (`then`) pui ce se întâmplă când ai ajuns la 10; pe ramura de jos (`else`) pui `show number score`.
+Programul tău (Minim):
 
-**Ce se întâmplă:** la fiecare A vezi scorul (`1`, `2`, … `9`). La al zecelea A apare bifa **Yes**, apoi textul `Bravo`, apoi scorul revine la `0`.
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `energie` to `5`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `energie`  
 
-**Ce vezi pe ecran la al 10-lea A:**
-```text
-. . . . .
-. . . . #
-. . . # .
-# . # . .
-. # . . .
-```
-(urmată de textul `Bravo` și apoi cifra `0`)
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `energie` by `1`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `energie`  
 
-> **Ordinea contează.** Mai întâi `change score by 1`, **apoi** `if`. Dacă ai verifica înainte de a adăuga, ai vedea 10 abia la a 11-a apăsare.
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `energie` by `-1`  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `energie = 0` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `GAME OVER`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Skull`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `energie` to `5`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `energie`  
+&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `energie`  
 
-**Gata când:**  
-- [ ] Blocurile sunt puse în ordinea din lecție  
-- [ ] Simulatorul face ce scrie în „Minim”  
+> <span style="color:#DC143C;font-weight:700">change</span> vine **înaintea** lui `if`: întâi lovim scutul, apoi verificăm dacă a ajuns la 0.
 
-### 5) Complet — B scade, dar nu sub 0
-Dacă `score` e `0` și apeși B, ar ieși `-1`. Vrem să **nu** se întâmple.
+**Încearcă tu — (15–20 min)**  
+- [ ] La fiecare A vezi energia crescând  
+- [ ] La fiecare B scade; la `0` apar `GAME OVER` și craniul, apoi energia revine la `5`  
+- [ ] Ai schimbat `5` în `3` din `on start` și ai văzut cum se termină mai repede  
 
-```text
-on button B pressed
-    if score > 0 then
-        change score by -1
-    show number score
-```
+### 5) Complet: A nu trece de 9
+La **A**, energia crește cu 1, dar **doar dacă** e mai mică decât `9`. Așa scutul nu se încarcă la nesfârșit.
 
-- Dacă `score > 0` (e adevărat), scădem 1.  
-- Dacă e `0`, blocul din `if` nu rulează, deci scorul rămâne `0`.  
-- `show number score` e **după** `if`, deci se arată scorul de fiecare dată.
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `energie < 9` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">change</span> `energie` by `1`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `energie`
 
-Poți adăuga și **A+B** pentru resetare:
+**Încearcă tu — (10–15 min)**  
+- [ ] A încarcă scutul până la `9` și se oprește acolo  
+- [ ] Apeși A de 3 ori când energia e `9` și rămâne `9`  
 
-```text
-on button A+B pressed
-    set score to 0
-    show number score
-```
+### 6) Complet: A+B arată starea scutului
+La **A+B**, placa spune în ce stare e scutul: dacă energia e **sub 3**, `PERICOL`; dacă e **peste 6**, `PLIN`; în rest, `MEDIU`. Pentru asta punem un <span style="color:#00A4A6;font-weight:700">if … then … else</span> **în ramura altfel** a altuia.
 
-**Gata când:**  
-- [ ] Blocurile pentru „Complet” sunt adăugate  
-- [ ] Simulatorul face tot ce scrie în „Complet”  
+<span style="color:#D400D4;font-weight:700">on button A+B pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `energie < 3` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `PERICOL`  
+&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `energie > 6` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `PLIN`  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `MEDIU`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `energie`
 
-### 6) Găsește greșeala
-Un coleg a scris programul de mai jos pentru „Cursa până la 10”, dar nu funcționează corect:
-
-```text
-on button A pressed
-    if score = 10 then
-        show icon [Yes]
-    change score by 1
-    show number score
-```
-1. De ce bifa apare abia la a 11-a apăsare, nu la a 10-a?  
-2. De ce scorul trece de 10 fără să se oprească?  
-
-Răspuns: verificarea e **înaintea** adunării, deci vede `10` abia când apeși a 11-a oară. Apoi scorul continuă la 11, 12 … pentru că nimeni nu îl pune la 0.
-
----
-
-## De făcut azi — „Cursa până la 10”
-
-### Minim vs Complet
-
-| | Ce trebuie |
-|--|------------|
-| **Minim** | A crește scorul; la **10** apare **Yes** + `Bravo`, apoi scorul revine la **0** |
-| **Complet** | Minim + B scade, dar **niciodată sub 0** + A+B resetează |
-
-### Pasul 1 — Minim
-- [ ] Variabila `score`  
-- [ ] `change score by 1` **înainte** de `if`  
-- [ ] `if score = 10 then … else …`  
-- [ ] La 10: `Yes`, `Bravo`, `set score to 0`  
-
-**→ Minim când:** un coleg apasă A de 10 ori și vede bifa.
-
-### Pasul 2 — Complet
-- [ ] `on button B pressed` cu `if score > 0`  
-- [ ] La `0`, B nu mai scade  
-- [ ] A+B pune scorul pe 0  
-- [ ] Numele fișierului e `MB1_L05`
-
----
-
-## Bonus ★★★ — Provocare: Ținta mobilă
-*Doar dacă ai terminat Complet.*
-
-- [ ] Schimbă ținta de la `10` la `5` și vezi cum devine mai repede  
-- [ ] Adaugă un mesaj `Aproape!` când `score = 9`  
-- [ ] Folosește `and` din **Logic**: `score > 3 and score < 7` arată `Happy`  
-- [ ] Fă o variabilă `tinta` și compară `score = tinta`, ca să schimbi ținta într-un singur loc
+**Încearcă tu — (10 min)**  
+- [ ] La energie `2`, A+B arată `PERICOL`  
+- [ ] La energie `8`, A+B arată `PLIN`, iar la `5` arată `MEDIU`  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
 
 ---
 
 ## Greșeli frecvente
-1. **„Bifa nu apare niciodată”** — ai pus `=` cu un număr greșit sau verificarea înainte de `change`.  
-2. **„Scorul trece de 10”** — ai uitat `set score to 0` în ramura `then`.  
-3. **„Apare mereu Bravo”** — ai pus `show string "Bravo"` **în afara** blocului `if`.  
-4. **„Nu pot scrie `score = 10`”** — comparația e în **Logic**, nu în **Math**.  
-5. **„Un `=` nu merge ca la matematică”** — în MakeCode, `set score to 5` **pune** 5, iar comparația `score = 5` **întreabă** dacă e 5. Sunt blocuri diferite.  
-6. **„Scorul de la B ajunge la -1”** — ai uitat condiția `score > 0`.
+1. **Scutul nu ajunge niciodată la `0`** — <span style="color:#DC143C;font-weight:700">change</span> e **după** <span style="color:#00A4A6;font-weight:700">if</span>, nu înainte.  
+2. **Nu se întâmplă nimic la `0`** — ai scris `energie` în loc de `energie = 0` (ai uitat comparația).  
+3. **Verifici `=` cu `set`** — `=` întreabă, `set` pune valoarea.  
+4. **Energia trece de `9`** — lipsește <span style="color:#00A4A6;font-weight:700">if</span> `energie < 9` la A.  
+5. **A+B arată mereu `MEDIU`** — al doilea <span style="color:#00A4A6;font-weight:700">if … then … else</span> nu e în ramura **altfel** a primului.  
+6. **La `energie = 0` nu apare GAME OVER** — ai scris `0` între ghilimele sau ai ales altă comparație din listă.  
 
 ---
 
-## Recapitulare pe scurt
-1. **Condiție** = întrebare cu răspuns **adevărat** sau **fals**.  
-2. `if … then` face ceva **doar dacă** e adevărat.  
-3. `else` = „altfel”.  
-4. `=` în comparație **întreabă**, `set … to` **pune** o valoare.  
-5. Ordinea blocurilor schimbă rezultatul.
-6. **Schema pe scurt (pe foaie):** A apăsat → `change score by 1` → `if score = 10` → da: Yes + Bravo + 0 · nu: arată scorul
+## De făcut azi — „Scutul de energie”
+Salvat: `Prenume_Nume_MB1_L05`
+
+### Minim vs Complet *(citește înainte să începi)*
+
+| | Ce trebuie |
+|--|------------|
+| **Minim („am reușit”)** | **Pasul 1** — A încarcă scutul, B îl lovește și la `0` apare `GAME OVER`, cu **cel puțin 8 blocuri diferite**, pe placă |
+| **Complet (ținta orei)** | Minim + **Pasul 2** — A nu trece de `9`, iar A+B arată starea scutului, cu cel puțin **6 blocuri diferite** |
+
+Dacă rămâi în urmă: **oprește-te la Minim** și salvează. Nu e eșec, e baza pentru lecția următoare.
+
+### Pasul 1 — Scutul de energie *(Minim)*
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `energie` to `5`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `energie`  
+
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `energie` by `1`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `energie`  
+
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `energie` by `-1`  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `energie = 0` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `GAME OVER`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Skull`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">set</span> `energie` to `5`  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `energie`  
+&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `energie`
+
+- [ ] Proiect nou cu numele `Prenume_Nume_MB1_L05`  
+- [ ] Variabila `energie` creată  
+- [ ] <span style="color:#DC143C;font-weight:700">change</span> e **înaintea** lui <span style="color:#00A4A6;font-weight:700">if</span>  
+- [ ] Ai cel puțin **8 blocuri diferite**: <span style="color:#1E90FF;font-weight:700">on start</span>, <span style="color:#DC143C;font-weight:700">set</span>, <span style="color:#1E90FF;font-weight:700">show number</span>, <span style="color:#D400D4;font-weight:700">on button pressed</span>, <span style="color:#DC143C;font-weight:700">change</span>, <span style="color:#00A4A6;font-weight:700">if … then … else</span>, <span style="color:#00A4A6;font-weight:700">0 = 0</span>, <span style="color:#1E90FF;font-weight:700">show string</span>, <span style="color:#1E90FF;font-weight:700">show icon</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>  
+- [ ] Programul e trimis pe placă  
+
+**→ Ai Minim când:** un coleg apasă B de 5 ori și la a 5-a placa arată `GAME OVER` și craniul, apoi energia pornește iar de la `5`.
+
+### Pasul 2 — A limitat și starea scutului *(Complet)*
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `energie < 9` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#DC143C;font-weight:700">change</span> `energie` by `1`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `energie`  
+
+<span style="color:#D400D4;font-weight:700">on button A+B pressed</span>  
+&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `energie < 3` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `PERICOL`  
+&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">if</span> `energie > 6` <span style="color:#00A4A6;font-weight:700">then</span>  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `PLIN`  
+&emsp;&emsp;<span style="color:#00A4A6;font-weight:700">else</span>  
+&emsp;&emsp;&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `MEDIU`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `energie`
+
+- [ ] A: <span style="color:#00A4A6;font-weight:700">if</span> `energie < 9` apoi <span style="color:#DC143C;font-weight:700">change</span> `energie` by `1`  
+- [ ] A nu urcă peste `9`  
+- [ ] A+B: <span style="color:#00A4A6;font-weight:700">if … then … else</span> în <span style="color:#00A4A6;font-weight:700">else</span>: `PERICOL` sub 3, `PLIN` peste 6, `MEDIU` în rest  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
+- [ ] Salvat din nou: `Prenume_Nume_MB1_L05`  
+
+**Gata Complet când:** A nu încarcă scutul peste `9`, iar A+B spune corect starea lui.
 
 ---
 
-## Quiz scurt
-- Cu `score = 7`, ce răspuns are `score > 7`?  
-- Ce face `else`?  
-- De ce `change score by 1` vine **înaintea** lui `if`?  
-- Cum împiedici scorul să ajungă sub `0`?
+## Bonus ★★★ — Provocare: Scutul cu trei vieți
+*Doar dacă ai terminat Complet.*
 
----
+- [ ] Schimbă energia de start de la `5` la `7` sau la `3` și vezi cât ține jocul  
+- [ ] **Provocarea:** adaugi **trei vieți** (variabila `vieti`, la start `3`). La `energie = 0` pierzi **o viață**, energia revine la `5`, iar când `vieti = 0` apare `GAME OVER` final. Cu <span style="color:#00A4A6;font-weight:700">or</span>: dacă `energie < 2` **sau** `vieti = 1`, la A+B apare `Surprised`. Un coleg joacă 1 minut și **ghicește regulile** din ce vede.  
 
-## Temă
-Scrie pe foaie **trei decizii** din viața ta, în forma „Dacă … atunci …, altfel …”. Alege una și imaginează cum ai face-o cu blocuri.
+## Recapitulare rapidă
+1. **Condiție** = întrebare cu răspuns adevărat sau fals  
+2. <span style="color:#00A4A6;font-weight:700">if … then</span> face ceva doar dacă e adevărat; <span style="color:#00A4A6;font-weight:700">else</span> = „altfel”  
+3. `=` **întreabă**, <span style="color:#DC143C;font-weight:700">set</span> **pune** o valoare  
+4. <span style="color:#00A4A6;font-weight:700">and</span>: amândouă adevărate; <span style="color:#00A4A6;font-weight:700">or</span>: măcar una adevărată (le folosești la Bonus)  
+5. Ordinea blocurilor contează: întâi <span style="color:#DC143C;font-weight:700">change</span>, apoi <span style="color:#00A4A6;font-weight:700">if</span>  
+6. Minim = Pasul 1 · Complet = Pasul 1 + 2  
 
----
+## Schema pe scurt *(pe foaie)*
+A → <span style="color:#DC143C;font-weight:700">change</span> `energie` +1 → <span style="color:#1E90FF;font-weight:700">show number</span>
 
-## Ce urmează — Lecția 6
-Repetăm lucruri cu **bucle**: o inimă care bate.
+B → <span style="color:#DC143C;font-weight:700">change</span> −1 → <span style="color:#00A4A6;font-weight:700">if</span> `energie = 0` → da: <span style="color:#1E90FF;font-weight:700">show string</span> + <span style="color:#1E90FF;font-weight:700">show icon</span> + <span style="color:#DC143C;font-weight:700">set</span> 5 · nu: <span style="color:#1E90FF;font-weight:700">show number</span>
+
+A+B → <span style="color:#00A4A6;font-weight:700">if</span> `energie < 3` → `PERICOL` · altfel <span style="color:#00A4A6;font-weight:700">if</span> `energie > 6` → `PLIN` · altfel `MEDIU`
+
+**Quiz scurt (cu profesorul):**  
+- Cu `energie = 4`, ce răspuns are `energie > 4`?  
+- Ce face <span style="color:#00A4A6;font-weight:700">else</span>?  
+- De ce <span style="color:#DC143C;font-weight:700">change</span> vine **înaintea** lui <span style="color:#00A4A6;font-weight:700">if</span>?  
+- Cum împiedici scutul să se încarce peste `9`?  
+- Ce se întâmplă la `energie = 0`?  
+
+## Temă (opțional)
+- Dacă ai doar Minim: acasă, adaugi limita lui A și A+B (Pasul 2), în același `Prenume_Nume_MB1_L05`.  
+- Dacă ai Complet: scrii pe foaie trei decizii din viața ta, în forma „Dacă … atunci …, altfel …”, și alegi una pe care o faci cu blocuri.  
+- Dacă ai terminat și Bonusul: faci o copie și schimbi regulile.  
+
+## Ce urmează
+În **Lecția 6** placa **repetă lucruri** cu bucle: un far de pe mare.

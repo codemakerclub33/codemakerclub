@@ -1,17 +1,22 @@
-# LECȚIA 4 — Contorul magic
+# Lecția 4 — Contorul magic
 ### Variabile: cutia cu număr
 **Modulul 1 · Primii pași cu micro:bit (blocuri)**  
 **Code Maker Club · micro:bit Starter**
 
-> Azi înveți cum **ține minte** placa un număr. Folosim o **variabilă**, adică o cutie cu etichetă.  
-> Proiect: **„Contorul magic”** · `Prenume_Nume_MB1_L04`
+> Azi înveți cum **ține minte** placa un număr și faci **„Contorul magic”**:  
+> A adaugă 1, B scade 1, A+B îl face din nou 0, iar la final ai o tabelă de scor cu două echipe.  
+> Fișier: `Prenume_Nume_MB1_L04` (ex. `Ana_Pop_MB1_L04`)
 
 ---
 
-## Ce facem azi
-La finalul orei știi să creezi o variabilă, să îi schimbi valoarea și să o arăți pe LED-uri. Un joc trebuie să țină minte scorul. Un termometru ține minte temperatura. Un contor ține minte câte persoane au intrat. Programul păstrează aceste numere într-o **variabilă**. Fără variabile, placa ar uita totul imediat.
+## Obiectiv
+La finalul orei știi să creezi o **variabilă**, să îi schimbi valoarea și să o arăți pe LED-uri.  
+**Minim:** un contor cu `score`: **A** adaugă 1, **B** scade 1, **A+B** îl pune pe 0, cu **8 blocuri diferite**.  
+**Ținta orei (Complet):** partea a doua: **tabelă de scor** cu două echipe (`rosu` și `verde`), cu cel puțin **6 blocuri diferite**.
 
-**Unelte azi:** categoria **Variables** · `set … to` · `change … by` · `show number`
+## De ce contează
+Un joc trebuie să țină minte scorul. Un termometru ține minte temperatura. Un contor ține minte câte persoane au intrat.  
+Programul păstrează aceste numere într-o **variabilă**: o **cutie cu nume**. Fără variabile, placa ar uita totul imediat.
 
 ---
 
@@ -19,194 +24,251 @@ La finalul orei știi să creezi o variabilă, să îi schimbi valoarea și să 
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recap L3: evenimente, `on button … pressed` |
+| 0–10 | Recap L3: evenimente, `on button pressed` |
 | 10–25 | Jocul cu cutia și hârtia: ce este o variabilă? |
 | 25–45 | Creăm variabila `score` în MakeCode |
 | 45–75 | Contorul magic: A, B, A+B (**Minim**) |
 | 75–105 | Tabela de scor cu două echipe (**Complet**) |
-| 105–120 | Recapitulare, quiz, temă |
+| 105–120 | Recap, bonus, arăți ce ai gata |
 
----
+**Unelte azi:** placa micro:bit · cablu micro-USB · browser Chrome sau Edge · [makecode.microbit.org](https://makecode.microbit.org)
 
-## Instrucțiuni noi azi
+**Capitole azi:**  
+<span style="color:#DC143C;font-weight:700">Variables</span> · <span style="color:#9C00C8;font-weight:700">Math</span> · <span style="color:#D400D4;font-weight:700">Input</span> · <span style="color:#1E90FF;font-weight:700">Basic</span>  
+*(Logic, Loops — mai târziu.)*
 
-| Bloc | Ce face | Exemplu |
-|------|---------|---------|
-| **Make a Variable…** | Creează o cutie cu nume | `score` |
-| `set … to` | Pune direct o valoare în cutie | `set score to 0` |
-| `change … by` | Adaugă (sau scade, cu minus) din valoare | `change score by 1` |
-| `show number` | Arată valoarea de pe ecran | `show number score` |
+**Blocurile de azi:**
+
+| Bloc | Ce face |
+|------|---------|
+| <span style="color:#DC143C;font-weight:700">Make a Variable…</span> | creează o variabilă nouă, o cutie cu nume |
+| <span style="color:#DC143C;font-weight:700">set score to 0</span> | pune direct o valoare în cutie |
+| <span style="color:#DC143C;font-weight:700">change score by 1</span> | adaugă la valoare (sau scade, cu minus) |
+| <span style="color:#DC143C;font-weight:700">score</span> | blocul rotund: valoarea din cutie, o pui în alte blocuri |
+| <span style="color:#9C00C8;font-weight:700">0 + 0</span> | adună două numere (sau două variabile) |
+
+*Din lecțiile trecute le știi deja:* <span style="color:#1E90FF;font-weight:700">on start</span>, <span style="color:#D400D4;font-weight:700">on button pressed</span>, <span style="color:#1E90FF;font-weight:700">show number</span>, <span style="color:#1E90FF;font-weight:700">show string</span>, <span style="color:#1E90FF;font-weight:700">show icon</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>, <span style="color:#1E90FF;font-weight:700">clear screen</span>.
 
 ---
 
 ## Pas cu pas
 
-### 1) Cutia cu etichetă
-Pe masă pui o cutie. Pe ea lipești eticheta **scor**. În cutie ai un bilet cu numărul **0**.
-- Cineva spune „scor plus unu”: scoți biletul, scrii **1** și îl pui la loc.  
-- Cineva întreabă „cât e scorul?”: te uiți în cutie și citești.
+### 1) Cutia cu etichetă (fără calculator)
+Luăm o cutie și o etichetă: **score**. În cutie punem un bilet cu numărul **0**.
 
-O **variabilă** funcționează la fel: are un **nume** (eticheta) și o **valoare** (biletul). Valoarea se poate schimba, de aceea se numește „variabilă”.
+- Cineva spune „A!”: ștergi numărul și scrii cu 1 mai mult.  
+- Cineva spune „B!”: scrii cu 1 mai puțin.  
+- Cineva spune „A+B!”: iei biletul și scrii din nou **0**.  
+
+Cutia **ține minte** numărul. O **variabilă** e o cutie cu **nume** și **valoare**.
+
+**Încearcă tu — (5–8 min)**  
+- [ ] Spui numele cutiei și valoarea ei acum  
+- [ ] Joci jocul cu un coleg, 5 mutări  
 
 ### 2) Creăm variabila
-1. Proiect nou: `Prenume_Nume_MB1_L04`.  
-2. Categoria **Variables** → butonul **Make a Variable…**.  
-3. Scrii numele: `score` → **Ok**.  
-4. Apar blocuri noi: **set score to 0**, **change score by 1** și blocul rotund **score**.
+1. Proiect nou: `Prenume_Nume_MB1_L04`  
+2. Deschizi <span style="color:#DC143C;font-weight:700">Variables</span> → **Make a Variable…**  
+3. Numele: `score` (fără spații, fără diacritice) → **OK**  
+4. Apar blocurile <span style="color:#DC143C;font-weight:700">set</span>, <span style="color:#DC143C;font-weight:700">change</span> și blocul rotund `score`  
 
-**Reguli pentru nume:** fără spații, fără diacritice, cu un înțeles clar (`score`, `echipa`, nu `x1`).
+> Nume bune: `scor`, `score`, `puncte`. Nume rele: `Scor meu` (are spațiu), `scorț` (diacritice).
+
+**Încearcă tu — (5 min)**  
+- [ ] Variabila `score` există și o vezi în lista de blocuri  
+- [ ] Ai scris numele fără spațiu și fără diacritice  
 
 ### 3) Pornirea contorului
-Când pornește placa, scorul trebuie să fie **0**.
+La pornire punem cutia pe **0** și arătăm numărul.
 
-```text
-on start
-    set score to 0
-    show number score
-```
-Blocul rotund **score** îl tragi din **Variables** și îl pui în gaura lui **show number**, în locul lui `0`.
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `score` to `0`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `score`  
 
-### 4) Contorul — Minim
+Blocul rotund `score` se trage din <span style="color:#DC143C;font-weight:700">Variables</span> și se pune **în locul numărului** din <span style="color:#1E90FF;font-weight:700">show number</span>.
 
-```text
-on button A pressed
-    change score by 1
-    show number score
+**Încearcă tu — (5 min)**  
+- [ ] La pornire apare `0` în simulator  
 
-on button B pressed
-    change score by -1
-    show number score
+### 4) A, B, A+B: Minim
+1. <span style="color:#D400D4;font-weight:700">on button A pressed</span>: <span style="color:#DC143C;font-weight:700">change</span> `score` by `1`, apoi <span style="color:#1E90FF;font-weight:700">show number</span> `score`  
+2. <span style="color:#D400D4;font-weight:700">on button B pressed</span>: <span style="color:#DC143C;font-weight:700">change</span> `score` by `-1`, apoi <span style="color:#1E90FF;font-weight:700">show number</span> `score`  
+3. <span style="color:#D400D4;font-weight:700">on button A+B pressed</span>: <span style="color:#DC143C;font-weight:700">set</span> `score` to `0`, <span style="color:#1E90FF;font-weight:700">show icon</span> `Yes`, <span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`, <span style="color:#1E90FF;font-weight:700">clear screen</span>, <span style="color:#1E90FF;font-weight:700">show number</span> `score`  
 
-on button A+B pressed
-    set score to 0
-    show number score
-```
+Programul tău (Minim):
 
-- **change score by 1** înseamnă „scorul nou = scorul vechi + 1”.  
-- **change score by -1** scade 1. Pentru minus, scrii `-1`.  
-- **set score to 0** pune direct `0` în cutie.
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `score` to `0`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `score`  
 
-**Ce vezi pe ecran:** apeși A de trei ori și vezi pe rând `1`, `2`, `3`. Apeși B și vezi `2`. Apeși A+B și vezi `0`.
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `score` by `1`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `score`  
 
-> Numerele cu **o cifră** apar fixe. Numerele cu **două cifre** (de la 10) se derulează. Dacă scorul coboară sub zero, apare semnul `-` înaintea cifrei.
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `score` by `-1`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `score`  
 
-**Gata când:**  
-- [ ] Blocurile sunt puse în ordinea din lecție  
-- [ ] Simulatorul face ce scrie în „Minim”  
+<span style="color:#D400D4;font-weight:700">on button A+B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `score` to `0`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Yes`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `score`  
 
-### 5) Complet — tabela de scor
-Facem o tabelă pentru un joc între două echipe: **roșu** și **verde**.
+**Ce vezi:** apeși A de 3 ori, apare `3`. Apeși B o dată, apare `2`. Apeși A+B, apare bifa, apoi `0`.
 
-1. Creezi două variabile: `rosu` și `verde`.  
-2. Programul se schimbă așa:
+**Încearcă tu — (15–20 min)**  
+- [ ] A adaugă, B scade, A+B pune pe `0`  
+- [ ] Contorul trece sub `0` (apar numere negative) și te-ai uitat ce vezi  
+- [ ] Programul e pe placa adevărată  
 
-```text
-on start
-    set rosu to 0
-    set verde to 0
+### 5) Complet: tabela de scor cu două echipe
+Facem două cutii: `rosu` și `verde`. Creezi încă o variabilă cu **Make a Variable…**, de două ori.
 
-on button A pressed
-    change rosu by 1
-    show number rosu
+- **A** adaugă 1 la `rosu` și arată `R` și scorul  
+- **B** adaugă 1 la `verde` și arată `V` și scorul  
+- **A+B** arată `T` (total) și suma celor două scoruri, cu <span style="color:#9C00C8;font-weight:700">0 + 0</span>  
 
-on button B pressed
-    change verde by 1
-    show number verde
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `rosu` to `0`  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `verde` to `0`  
 
-on button A+B pressed
-    show string "R"
-    show number rosu
-    show string "V"
-    show number verde
-```
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `rosu` by `1`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `R`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `rosu`  
 
-- **A** = punct pentru roșu, **B** = punct pentru verde.  
-- **A+B** arată scorul pe rând: `R`, scorul roșu, `V`, scorul verde.  
-- Dacă apeși **Reset**, ambele scoruri se fac din nou **0** (pentru că `on start` rulează iar).
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `verde` by `1`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `V`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `verde`  
 
-**Ce vezi pe ecran la A+B după 2 puncte roșu și 1 verde:** `R` → `2` → `V` → `1`.
+<span style="color:#D400D4;font-weight:700">on button A+B pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `T`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#9C00C8;font-weight:700">rosu + verde</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
 
-**Gata când:**  
-- [ ] Blocurile pentru „Complet” sunt adăugate  
-- [ ] Simulatorul face tot ce scrie în „Complet”  
+> Variabilele `rosu` și `verde` sunt **cutii diferite**: de aceea trebuie să fie variabile separate.
 
-### 6) Probe pentru mintea de programator
-Fără să rulezi, spune ce număr apare:
-1. `set score to 5` → `change score by 2` → `show number score` → ?  
-2. `set score to 3` → `change score by -1` → `change score by -1` → ?  
-3. `set score to 4` → `set score to 1` → ?
-
-Răspunsuri: **7** · **1** · **1** (`set` înlocuiește complet valoarea veche).
-
----
-
-## De făcut azi — „Contorul magic”
-
-### Minim vs Complet
-
-| | Ce trebuie |
-|--|------------|
-| **Minim** | Variabila `score`: A **+1**, B **−1**, A+B **0** |
-| **Complet** | Minim + tabela de scor cu `rosu` și `verde` |
-
-### Pasul 1 — Minim
-- [ ] Variabila `score` creată  
-- [ ] `on start`: `set score to 0`  
-- [ ] A adaugă 1, B scade 1, A+B pune 0  
-- [ ] Numărul se vede pe LED-uri după fiecare apăsare  
-
-**→ Minim când:** un coleg apasă A de 3 ori și vede `3` pe placa ta.
-
-### Pasul 2 — Complet
-- [ ] Variabilele `rosu` și `verde`  
-- [ ] A = punct roșu, B = punct verde  
-- [ ] A+B arată `R`, scorul roșu, `V`, scorul verde  
-- [ ] Numele fișierului e `MB1_L04`
-
----
-
-## Bonus ★★★ — Provocare: Numărătoarea inversă
-*Doar dacă ai terminat Complet.*
-
-- [ ] La `on start` pune scorul la `10` și fă din B un **contor de numărătoare inversă**  
-- [ ] Al treilea buton: V2 → `on logo pressed` adaugă **5** la scor  
-- [ ] Fă un contor pentru câte persoane intră în clasă (apeși A la fiecare)  
-- [ ] Scrie pe foaie un joc pentru acasă care ar avea nevoie de **două** variabile
+**Încearcă tu — (15–20 min)**  
+- [ ] A mărește scorul roșu, B pe cel verde  
+- [ ] A+B arată totalul (suma celor două scoruri)  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
 
 ---
 
 ## Greșeli frecvente
-1. **„Scorul rămâne mereu la 1”** — ai folosit `set score to 1` în loc de `change score by 1`. `set` pune valoarea, `change` adaugă.  
-2. **„Pe ecran se vede 0 și nu se schimbă”** — ai scris numărul `0` în `show number`, nu ai pus blocul rotund **score**.  
-3. **„Nu pot crea variabila”** — numele are spațiu sau diacritice. Folosește `score` sau `rosu`.  
-4. **„Scorul de la A și B se amestecă”** — ai folosit aceeași variabilă pentru ambele echipe. Fă două: `rosu` și `verde`.  
-5. **„Scorul nu se resetează după Reset”** — ai uitat `set … to 0` în `on start`.  
-6. **„Scorul `-1` arată ciudat”** — e normal: numărul negativ are semnul `-` în față. Mai târziu vom opri scăderea sub 0.
+1. **Scorul nu se schimbă** — ai folosit <span style="color:#DC143C;font-weight:700">set</span> în loc de <span style="color:#DC143C;font-weight:700">change</span>. <span style="color:#DC143C;font-weight:700">set</span> pune valoarea, <span style="color:#DC143C;font-weight:700">change</span> o adună.  
+2. **În <span style="color:#1E90FF;font-weight:700">show number</span> apare `0`, nu scorul** — ai scris `0`, nu ai tras blocul rotund `score`.  
+3. **Numele variabilei nu merge** — are spațiu sau diacritice.  
+4. **Scorul trece sub 0** — normal, deocamdată nu avem decizii. Le învățăm în lecția următoare.  
+5. **Nu se întâmplă nimic** — blocul de buton e în <span style="color:#1E90FF;font-weight:700">on start</span>.  
+6. **La A+B nu se vede scorul** — lipsește <span style="color:#1E90FF;font-weight:700">show number</span> după <span style="color:#DC143C;font-weight:700">set</span>.  
 
 ---
 
-## Recapitulare pe scurt
-1. **Variabilă** = cutie cu **nume** și **valoare**.  
-2. `set score to 0` = pun direct valoarea.  
-3. `change score by 1` = adaug (sau scad, cu `-1`).  
-4. Blocul rotund `score` = „valoarea din cutie”.  
-5. Nume bune: fără spații și fără diacritice.
-6. **Schema pe scurt (pe foaie):** Make a Variable → `on start` set 0 → A: change +1 → B: change −1 → A+B: set 0 → `show number`
+## De făcut azi — „Contorul magic”
+Salvat: `Prenume_Nume_MB1_L04`
+
+### Minim vs Complet *(citește înainte să începi)*
+
+| | Ce trebuie |
+|--|------------|
+| **Minim („am reușit”)** | **Pasul 1** — contor cu A, B și A+B, cu **8 blocuri diferite**, pe placă |
+| **Complet (ținta orei)** | Minim + **Pasul 2** — tabelă de scor cu două echipe, cu cel puțin **6 blocuri diferite** |
+
+Dacă rămâi în urmă: **oprește-te la Minim** și salvează. Nu e eșec, e baza pentru lecția următoare.
+
+### Pasul 1 — Contorul magic *(Minim)*
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `score` to `0`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `score`  
+
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `score` by `1`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `score`  
+
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `score` by `-1`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `score`  
+
+<span style="color:#D400D4;font-weight:700">on button A+B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `score` to `0`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show icon</span> `Yes`  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `500`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `score`
+
+- [ ] Proiect nou cu numele `Prenume_Nume_MB1_L04`  
+- [ ] Variabila `score` creată, fără spațiu, fără diacritice  
+- [ ] La pornire apare `0`  
+- [ ] Ai **8 blocuri diferite**: <span style="color:#1E90FF;font-weight:700">on start</span>, <span style="color:#D400D4;font-weight:700">on button pressed</span>, <span style="color:#DC143C;font-weight:700">set</span>, <span style="color:#DC143C;font-weight:700">change</span>, <span style="color:#1E90FF;font-weight:700">show number</span>, <span style="color:#1E90FF;font-weight:700">show icon</span>, <span style="color:#1E90FF;font-weight:700">pause (ms)</span>, <span style="color:#1E90FF;font-weight:700">clear screen</span>  
+- [ ] Programul e trimis pe placă  
+
+**→ Ai Minim când:** un coleg apasă A de 3 ori, apoi B o dată, și placa arată `2`, apoi A+B o face `0`.
+
+### Pasul 2 — Tabela de scor *(Complet)*
+<span style="color:#1E90FF;font-weight:700">on start</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `rosu` to `0`  
+&emsp;<span style="color:#DC143C;font-weight:700">set</span> `verde` to `0`  
+
+<span style="color:#D400D4;font-weight:700">on button A pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `rosu` by `1`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `R`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `rosu`  
+
+<span style="color:#D400D4;font-weight:700">on button B pressed</span>  
+&emsp;<span style="color:#DC143C;font-weight:700">change</span> `verde` by `1`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `V`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> `verde`  
+
+<span style="color:#D400D4;font-weight:700">on button A+B pressed</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">show string</span> `T`  
+&emsp;<span style="color:#1E90FF;font-weight:700">show number</span> <span style="color:#9C00C8;font-weight:700">rosu + verde</span>  
+&emsp;<span style="color:#1E90FF;font-weight:700">pause (ms)</span> `1000`  
+&emsp;<span style="color:#1E90FF;font-weight:700">clear screen</span>
+
+- [ ] Două variabile: `rosu` și `verde`  
+- [ ] A mărește `rosu` și arată `R` cu scorul  
+- [ ] B mărește `verde` și arată `V` cu scorul  
+- [ ] A+B arată `T` și suma, cu <span style="color:#9C00C8;font-weight:700">0 + 0</span>  
+- [ ] Partea a doua are cel puțin 6 blocuri diferite  
+- [ ] Salvat din nou: `Prenume_Nume_MB1_L04`  
+
+**Gata Complet când:** A și B măresc scorul fiecărei echipe, iar A+B arată totalul.
 
 ---
 
-## Quiz scurt
+## Bonus ★★★ — Provocare: Casa de marcat
+*Doar dacă ai terminat Complet.*
+
+- [ ] Schimbă ordinea: B adaugă `2`, A+B adaugă `10`  
+- [ ] **Provocarea:** transformi placa într-o **casă de marcat**. **A** = un măr (`+1`), **B** = un suc (`+5`), **A+B** = o pizza (`+10`), cu <span style="color:#DC143C;font-weight:700">change</span>. Fiecare produs arată o **poză diferită** (<span style="color:#1E90FF;font-weight:700">show icon</span>) înainte de total. Un coleg „cumpără” 3 lucruri și spune cât are de plătit; placa trebuie să arate același număr.  
+
+## Recapitulare rapidă
+1. **Variabilă** = cutie cu **nume** și **valoare**  
+2. <span style="color:#DC143C;font-weight:700">set</span> pune direct valoarea; <span style="color:#DC143C;font-weight:700">change</span> adaugă (sau scade, cu minus)  
+3. Blocul rotund cu numele variabilei înseamnă „valoarea din cutie”  
+4. <span style="color:#9C00C8;font-weight:700">0 + 0</span> adună două numere sau două variabile  
+5. Nume bune: fără spații, fără diacritice  
+6. Minim = Pasul 1 · Complet = Pasul 1 + 2  
+
+## Schema pe scurt *(pe foaie)*
+Make a Variable → <span style="color:#1E90FF;font-weight:700">on start</span> <span style="color:#DC143C;font-weight:700">set</span> `score` 0 → A: <span style="color:#DC143C;font-weight:700">change</span> +1 → B: <span style="color:#DC143C;font-weight:700">change</span> −1 → A+B: <span style="color:#DC143C;font-weight:700">set</span> 0 → <span style="color:#1E90FF;font-weight:700">show number</span> `score`
+
+**Quiz scurt (cu profesorul):**  
 - Ce are o variabilă: un nume și ce altceva?  
-- Care e diferența dintre `set` și `change`?  
-- Ce face blocul rotund `score` din `show number`?  
-- De ce `rosu` și `verde` trebuie să fie variabile separate?
+- Care e diferența dintre <span style="color:#DC143C;font-weight:700">set</span> și <span style="color:#DC143C;font-weight:700">change</span>?  
+- Ce face blocul rotund `score` din <span style="color:#1E90FF;font-weight:700">show number</span>?  
+- De ce `rosu` și `verde` trebuie să fie variabile separate?  
+- De ce nu folosim spații în numele unei variabile?  
 
----
+## Temă (opțional)
+- Dacă ai doar Minim: acasă, adaugi tabela de scor (Pasul 2), în același `Prenume_Nume_MB1_L04`.  
+- Dacă ai Complet: te gândești la un joc de societate și scrii pe foaie ce numere trebuie ținute minte și ce nume dai fiecărei variabile.  
+- Dacă ai terminat și Bonusul: faci o copie și schimbi prețurile.  
 
-## Temă
-Gândește-te la un joc de societate. Scrie pe foaie **ce numere trebuie ținute minte** (scor, vieți, runde) și ce nume i-ai da fiecărei variabile.
-
----
-
-## Ce urmează — Lecția 5
-Placa **ia decizii** cu `if` și `else`: o cursă până la 10.
+## Ce urmează
+În **Lecția 5** placa **ia decizii** cu `if` și `else`: o cursă până la 10.
