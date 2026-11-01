@@ -2,9 +2,11 @@ Lecția șase. Suportul de periuțe.
 
 Astăzi faci un șablon de găuri la distanțe egale, în două direcții, ca într-un tabel. Creezi un design nou și îl salvezi cu numele: Prenume, linie jos, Nume, linie jos, T doi, linie jos, L șase. Proiectul se numește Suportul de periuțe.
 
-Obiectivul. La final ai un cilindru cu patru găuri pentru periuțe, așezate într-un pătrat, și cu fund închis. Minim: cilindru cu diametru șaptezeci și înălțime patruzeci, plus patru găuri Hole cu diametru șaisprezece, cu centrele la cincisprezece milimetri de mijloc. Fundul are cinci milimetri. Apoi Group. Complet: minim, plus o bază lată, cu diametru optzeci și înălțime patru, pentru stabilitate, plus culoare și Ruler.
+Obiectivul. La finalul orei ai două suporturi cu găuri în șiruri regulate. Minim: suportul pentru periuțe, cu cilindru de șaptezeci diametru pe patruzeci, patru găuri de șaisprezece diametru și fund de cinci, și suportul de vacanță, care se închide, cu cutie de o sută nouăzeci pe patruzeci și cinci pe douăzeci și cinci, două canale și un capac care se pune peste, ambele grupate, cu cel puțin opt unelte diferite. Complet: partea a doua, cu bază lată de optzeci diametru pe patru, culoare și Ruler, cu cel puțin șase unelte diferite.
 
 De ce contează. Găurile așezate în rânduri și coloane se numesc o matrice. O faci o dată, apoi o copiezi. Cu tasta Control și D faci un rând, apoi copiezi tot rândul, fără să măsori de fiecare dată.
+
+Ce face fiecare unealtă de azi. Hole sunt găurile și canalele pentru periuțe. Box este cutia și capacul suportului de vacanță. Control și D face copii egale: o matrice de găuri. Săgețile de la tastatură mută gaura în pași de cinci milimetri. Tasta L centrează prima gaură. Conul negru ridică găurile la cinci milimetri, ca fundul să rămână închis. Control și G, adică Group, face ca găurile să taie corpul. View Cube pe Top te ajută să verifici matricea de sus.
 
 Primul pas pe ecran. Apasă Create new design și scrie numele. Jos, în dreapta, la Snap Grid, alege un milimetru.
 
@@ -16,14 +18,22 @@ Al patrulea pas pe ecran. Schimbă Snap Grid pe cinci milimetri. Uită-te la cor
 
 Al cincilea pas pe ecran. Apasă Control și A, apoi Control și G. În View Cube alege Top. Vezi patru găuri, cu pereți între ele vizibil egali. Între două găuri, pe axă, peretele are paisprezece milimetri, adică treizeci minus șaisprezece.
 
-Al șaselea pas pe ecran, pentru Complet. Trage un Cylinder și scrie: optzeci, optzeci, patru. Pune-l lângă suport. Selectează baza și suportul, apasă L și alege mijlocul pe ambele direcții de pe plan. Baza stă pe plan, sub corp. În Front, baza e mai lată decât corpul, deci suportul nu se răstoarnă. Apoi apasă Ruler. Pune rigla la marginea stângă a unei găuri și dă click pe gaura vecină din rând. Citești treizeci de milimetri, între aceleași margini, adică și între centre. Hole-urile se măsoară doar separat. Dacă sunt în Group, desfă cu Control, Shift și G, măsoară, apoi apasă Control și A, Control și G la loc. La final selectează tot, apasă Control și G, pentru suport și bază, și alege o culoare.
+Al șaselea pas pe ecran. Obiectul doi, suportul de periuțe de vacanță, care se închide. Apasă Create new design și scrie numele cu litera B la final. Snap Grid, cinci milimetri. Trage un Box de o sută nouăzeci pe patruzeci și cinci pe douăzeci și cinci: cutia. Alt Box, o sută optzeci pe cincisprezece pe douăzeci și cinci, pus pe Hole: primul canal, pentru o periuță de până la șaptesprezece centimetri. Îl ridici cu conul negru la cinci: fundul rămâne de cinci milimetri, iar canalul iese deasupra cutiei. Selectezi canalul și cutia, apeși tasta L și alegi mijloc pe stânga și dreapta, și pe față și spate. Apoi apeși săgeata spre spate de două ori: canalul e în rândul din spate, cu capete de cinci milimetri.
 
-Greșeli frecvente. Găurile nu sunt în pătrat: ai mutat o copie mai mult. Verifică din Top. Rândul doi are o singură gaură: ai copiat doar una. Selectează ambele găuri înainte de Control și D. Gaura iese prin fund: ridică-o cu conul negru la cinci milimetri.
+Al șaptelea pas pe ecran. Cu canalul selectat, apeși Control și D și muți copia douăzeci de milimetri spre față, adică patru apăsări: al doilea canal. Rămân pereți de cinci milimetri. Apeși Control și A, apoi Control și G. Din Top vezi două canale paralele, cu pereți egali. Apoi capacul. Tragi un Box de o sută nouăzeci și șapte pe cincizeci și doi pe cincisprezece, pe plan, lângă cutie. Alt Box, o sută nouăzeci și unu pe patruzeci și șase pe șaptesprezece, pus pe Hole. Selectezi golul și capacul, apeși tasta L și alegi mijloc pe stânga și dreapta, și pe față și spate. Cobori golul cu conul negru la minus cinci. Golul este cutia plus o jumătate de milimetru joc pe fiecare parte, și se oprește la trei milimetri de vârful capacului. Selectezi doar capacul și golul, cu Shift și click, nu și cutia, și apeși Control și G. Capacul se pune peste cutie, ca un manșon.
+
+Al optulea pas pe ecran, pentru Complet. Deschizi din nou proiectul din lista Designs. Trage un Cylinder și scrie: optzeci, optzeci, patru. Pune-l lângă suport. Selectează baza și suportul, apasă L și alege mijlocul pe ambele direcții de pe plan. Baza stă pe plan, sub corp. În Front, baza e mai lată decât corpul, deci suportul nu se răstoarnă. Apoi apasă Ruler. Pune rigla la marginea stângă a unei găuri și dă click pe gaura vecină din rând. Citești treizeci de milimetri, între aceleași margini, adică și între centre. Hole-urile se măsoară doar separat. Dacă sunt în Group, desfă cu Control, Shift și G, măsoară, apoi apasă Control și A, Control și G la loc. La final selectează tot, apasă Control și G, pentru suport și bază, și alege o culoare.
+
+Greșeli frecvente. Găurile nu sunt în pătrat: ai mutat o copie mai mult. Verifică din Top. Rândul doi are o singură gaură: ai copiat doar una. Selectează ambele găuri înainte de Control și D. Gaura iese prin fund: ridică-o cu conul negru la cinci milimetri. O gaură iese prin perete: matricea nu este centrată, refaci prima gaură cu tasta L.
 
 Proiectul de azi. Suportul de periuțe.
 
-Minim înseamnă: corp cu diametru șaptezeci și înălțime patruzeci, patru găuri cu diametru șaisprezece în pătrat, la treizeci de milimetri, fund de cinci milimetri și Group. Complet înseamnă: minim, plus bază cu diametru optzeci și înălțime patru, centrată, Ruler la treizeci de milimetri și Color. Dacă rămâi în urmă, salvează la Minim.
+Minim înseamnă: suportul pentru periuțe, cu patru găuri, și suportul de vacanță, cu două canale și un capac cu joc de o jumătate de milimetru, fund de cinci la ambele, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus bază lată, culoare și Ruler, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg poate pune patru periuțe în primul suport și două în al doilea, iar capacul se potrivește peste cutie.
+
+Bonus. Schimbi culorile și adaugi text PERIUȚE pe baza lată. Provocarea, Organizator cu trei mărimi de găuri: un organizator de o sută douăzeci pe cincizeci pe treizeci și cinci, cu cel puțin nouă găuri de trei mărimi diferite, de exemplu opt pentru pixuri, doisprezece pentru markere și douăzeci și doi pentru o foarfecă, toate în șiruri egale și niciuna la mai puțin de trei milimetri de perete, verificat cu Ruler. Fundul rămâne închis, la cinci milimetri.
 
 Recapitulare. Matrice înseamnă găuri în rânduri și coloane. Faci un rând, apoi copiezi rândul. Gaura ridicată cinci milimetri dă fundul închis. Baza lată dă stabilitate.
+
+Ce urmează. În lecția șapte faci un abajur cu decupaje și un lampion, cu rotiri repetate.
 
 Succes la suportul tău de periuțe.

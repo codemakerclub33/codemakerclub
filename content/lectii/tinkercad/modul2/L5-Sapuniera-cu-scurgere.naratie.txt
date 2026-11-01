@@ -2,9 +2,11 @@ Lecția cinci. Săpuniera mea.
 
 Astăzi faci o tavă cu găuri care chiar au rost: apa să iasă, săpunul să rămână. Creezi un design nou și îl salvezi cu numele: Prenume, linie jos, Nume, linie jos, T doi, linie jos, L cinci. Proiectul se numește Săpuniera mea.
 
-Obiectivul. La final ai o tavă cu pereți și fante de scurgere în fund. Minim: tavă de o sută pe șaptezeci pe douăzeci de milimetri, goală, cu pereți de trei milimetri și fund de trei milimetri, plus trei fante de șaptezeci pe șase, care trec prin fund, la distanțe egale. Apoi Group. Complet: minim, plus patru piciorușe, ca apa să curgă pe sub tavă, și culoare.
+Obiectivul. La finalul orei ai două obiecte cu găuri care trebuie să funcționeze. Minim: săpuniera, cu tavă de o sută pe șaptezeci pe douăzeci, goală, și trei fante de șaptezeci pe șase, egale, prin fund, și grătarul de nouăzeci și doi pe șaizeci și doi pe trei, cu cinci fante de șaptezeci și patru pe șase, egale, care intră în tavă, ambele grupate, cu cel puțin opt unelte diferite. Complet: partea a doua, cu patru piciorușe sub tavă și culoare, cu cel puțin șase unelte diferite.
 
 De ce contează. Aici fantele lasă apa să curgă, dar nu lasă săpunul să cadă. Fanta nu atinge pereții. Dacă taie peretele, tava curge pe lateral.
+
+Ce face fiecare unealtă de azi. Hole este golul tăvii și fantele de scurgere. Control și D face copii la distanțe egale: fantele. Tasta L centrează golul și fanta. Săgețile de la tastatură mută fanta cu pași egali de cinci milimetri. Control și G, adică Group, face ca fantele să taie fundul. Ruler verifică dacă grătarul încape în tavă. View Cube pe Top te ajută să verifici fantele egale.
 
 Primul pas pe ecran. Apasă Create new design și scrie numele. Jos, în dreapta, la Snap Grid, alege un milimetru.
 
@@ -16,14 +18,22 @@ Al patrulea pas pe ecran. Schimbă Snap Grid pe cinci milimetri. Uită-te la tav
 
 Al cincilea pas pe ecran. Apasă Control și A, apoi Control și G. În View Cube alege Top: se văd trei fante prin fund? Apoi alege Front: fantele nu ating pereții.
 
-Al șaselea pas pe ecran, pentru Complet. Schimbă Snap Grid înapoi pe un milimetru. Trage un Cylinder și scrie: zece, zece, cinci, lângă tavă. Selectează cilindrul și tava, apasă L și alege punctul din stânga și punctul din față. Nu alege nimic sus și jos. Piciorușul stă în colțul din stânga față. Apasă Control și D, selectează copia și tava, apasă L și alege punctul din dreapta. Tava nu se mișcă. Al doilea picioruș e în colțul din dreapta. Selectează cele două piciorușe, cu Shift și click, apasă Control și D, selectează copiile și tava, apasă L și alege punctul din spate. Ai patru piciorușe în colțuri. Ridică tava, adică grupul, cu patru milimetri, cu conul negru. Stă pe piciorușe și apa curge pe dedesubt. Piciorușele se înfig un milimetru în tavă. Apasă Control și A, apoi Control și G. Alege o culoare.
+Al șaselea pas pe ecran. Obiectul doi, grătarul. Apasă Create new design și scrie numele cu litera B la final. Trage un Box de nouăzeci și doi pe șaizeci și doi pe trei: grătarul. Tava are interiorul de nouăzeci și patru pe șaizeci și patru, deci grătarul încape cu joc. Alt Box, șaptezeci și patru pe șase pe zece, pus pe Hole: prima fantă. Selectezi fanta și grătarul, apeși tasta L și alegi mijloc pe cele trei direcții. Apoi apeși săgeata spre față de patru ori, adică douăzeci de milimetri.
 
-Greșeli frecvente. Fanta nu taie fundul: nu e Hole sau nu ai dat Group. Fanta a tăiat un perete: e prea lungă, păstrează șaptezeci de milimetri, nu nouăzeci și patru. Fantele nu sunt egale: ai pus fantele cu ochiul. Șterge-le și repetă Control și D. Fundul a rămas plin: fanta nu iese sub fund, coboară-o un milimetru. Piciorușele plutesc: ridică tava cu patru milimetri.
+Al șaptelea pas pe ecran. Cu fanta selectată, apeși Control și D și muți copia zece milimetri spre spate, adică două apăsări pe săgeată. Apeși Control și D de încă trei ori, cu aceeași mutare. Ai cinci fante, la zece milimetri una de alta. Apeși Control și A, apoi Control și G. Din Top, cele cinci fante sunt egale, cu patru milimetri de grătar între ele. Verifici cu Ruler: nouăzeci și doi este mai mic decât nouăzeci și patru, iar șaizeci și doi este mai mic decât șaizeci și patru, deci grătarul intră în tavă.
+
+Al optulea pas pe ecran, pentru Complet. Deschizi din nou proiectul din lista Designs. Schimbă Snap Grid înapoi pe un milimetru. Trage un Cylinder și scrie: zece, zece, cinci, lângă tavă. Selectează cilindrul și tava, apasă L și alege punctul din stânga și punctul din față. Nu alege nimic sus și jos. Piciorușul stă în colțul din stânga față. Apasă Control și D, selectează copia și tava, apasă L și alege punctul din dreapta. Tava nu se mișcă. Al doilea picioruș e în colțul din dreapta. Selectează cele două piciorușe, cu Shift și click, apasă Control și D, selectează copiile și tava, apasă L și alege punctul din spate. Ai patru piciorușe în colțuri. Ridică tava, adică grupul, cu patru milimetri, cu conul negru. Stă pe piciorușe și apa curge pe dedesubt. Piciorușele se înfig un milimetru în tavă. Apasă Control și A, apoi Control și G. Alege o culoare.
+
+Greșeli frecvente. Fanta nu taie fundul: nu e Hole sau nu ai dat Group. Fanta a tăiat un perete: e prea lungă, păstrează șaptezeci de milimetri, nu nouăzeci și patru. Fantele nu sunt egale: ai pus fantele cu ochiul. Șterge-le și repetă Control și D. Fundul a rămas plin: fanta nu iese sub fund, coboară-o un milimetru. Piciorușele plutesc: ridică tava cu patru milimetri. Fantele iau tot grătarul: fanta este prea lungă, trebuie să rămână margine.
 
 Proiectul de azi. Săpuniera mea.
 
-Minim înseamnă: tavă goală, trei fante egale, prin fund, fără să atingă pereții, și Group. Complet înseamnă: minim, plus patru piciorușe în colțuri și Color. Dacă rămâi în urmă, salvează la Minim.
+Minim înseamnă: săpuniera, cu tavă și trei fante egale, și grătarul, cu cinci fante egale, care încape în tavă, ambele grupate, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus patru piciorușe și culoare, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg pune grătarul în tavă și vede fantele egale la ambele obiecte.
+
+Bonus. Schimbi culorile și adaugi text SĂPUN pe un perete. Provocarea, Săpunieră dublă: o tavă dublă de două sute pe șaptezeci pe douăzeci, cu un perete de trei milimetri la mijloc, pus după Group, și câte trei fante de șaptezeci pe șase în fiecare compartiment, șase în total, toate egale. Grătarul stă într-un compartiment, iar cu Ruler confirmi jocul. Un coleg numără șase fante în cel mult douăzeci de secunde.
 
 Recapitulare. Gaura utilă are formă, loc și mărime alese. Fanta stă în fund, nu în pereți. Control și D plus aceeași mutare dă fante egale. Piciorușele lasă aer sub tavă.
+
+Ce urmează. În lecția șase faci un suport pentru periuțe și un suport pentru markere, cu matrice de găuri.
 
 Succes la săpuniera ta.

@@ -2,9 +2,11 @@ Lecția trei. Cutia mea.
 
 Astăzi faci două piese care trebuie să se potrivească: o cutie și capacul ei. Creezi un design nou și îl salvezi cu numele: Prenume, linie jos, Nume, linie jos, T doi, linie jos, L trei. Proiectul se numește Cutia mea.
 
-Obiectivul. La final ai o cutie goală, cu fund, și un capac cu margine, care intră în cutie. Sunt două piese separate. Minim: cutie de șaizeci pe patruzeci pe treizeci de milimetri, goală, cu pereți de trei milimetri și fund de trei milimetri, plus un capac de șaizeci pe patruzeci pe patru, cu margine de cincizeci și trei pe treizeci și trei pe trei. Capacul stă lângă cutie. Complet: minim, plus capacul întors și așezat pe cutie, cu marginea înăuntru, culori diferite și Ruler pentru jocul de zero virgulă cinci milimetri.
+Obiectivul. La finalul orei ai patru piese separate: o cutie dreptunghiulară cu capac și o cutie rotundă cu capac. Minim: cutia de șaizeci pe patruzeci pe treizeci, goală, și capacul ei de șaizeci pe patruzeci pe patru, cu margine de cincizeci și trei pe treizeci și trei pe trei, și cutia rotundă de cincizeci diametru pe treizeci, goală, cu capacul ei de cincizeci diametru pe patru și margine de patruzeci și trei diametru pe trei, toate pe plan, cu cel puțin opt unelte diferite. Complet: partea a doua, cu capacul întors pe cutie, culori diferite și joc de o jumătate de milimetru măsurat cu Ruler, cu cel puțin șase unelte diferite.
 
 De ce contează. Piesele care se potrivesc au nevoie de joc. Dacă marginea capacului e exact cât gaura, la printare nu intră. Azi lași zero virgulă cinci milimetri pe fiecare parte.
+
+Ce face fiecare unealtă de azi. Box este cutia dreptunghiulară și capacul ei. Cylinder este cutia rotundă și capacul ei. Hole este golul cutiei, care taie după Group. Tasta L centrează golul și marginea capacului. Control și G, adică Group, face cutia gata, cu gol. Ruler măsoară jocul dintre capac și cutie. Conul negru ridică golul la trei milimetri: acesta este fundul cutiei.
 
 Primul pas pe ecran. Apasă Create new design și scrie numele. Jos, în dreapta, la Snap Grid, alege un milimetru.
 
@@ -16,16 +18,24 @@ Al patrulea pas pe ecran. Trage un Box și scrie: șaizeci, patruzeci, patru. Es
 
 Al cincilea pas pe ecran. Trage un Box și scrie: cincizeci și trei, treizeci și trei, trei. Este marginea care intră. De ce cincizeci și trei? Golul cutiei are cincizeci și patru pe treizeci și patru. Rămâne zero virgulă cinci milimetri joc pe fiecare parte. Ridică marginea cu patru milimetri, cu conul negru, cât placa. Stă pe placă. Selectează marginea și placa, apasă L și alege mijlocul pe ambele direcții. Dă Group doar la aceste două piese. Cutia rămâne separată.
 
-Al șaselea pas pe ecran, pentru Complet. Selectează capacul și rotește-l o sută optzeci de grade, cu o săgeată curbă de pe lateral. Sunt opt pași de douăzeci și doi virgulă cinci grade, sau scrii o sută optzeci. Marginea arată acum în jos. Selectează capacul și cutia, apasă L și alege mijlocul pe cele două direcții de pe plan. Apoi ridică capacul cu conul negru la douăzeci și șapte de milimetri. Placa lui stă pe pereți, la treizeci de milimetri, iar marginea de trei milimetri intră în gol. În View Cube alege Front: capacul stă pe pereți, nu e înfipt în ei.
+Al șaselea pas pe ecran. Obiectul doi, cutia rotundă. Apasă Create new design și scrie numele cu litera B la final. Trage un Cylinder de cincizeci pe cincizeci pe treizeci: exteriorul cutiei. Alt Cylinder, patruzeci și patru pe patruzeci și patru pe treizeci, pus pe Hole. Îl ridici cu conul negru la trei: fundul cutiei are trei milimetri, iar golul iese deasupra. Selectezi golul și cutia, apeși tasta L și alegi mijloc pe stânga și dreapta, și pe față și spate. Pereții au trei milimetri peste tot. Apoi apeși Control și A, apoi Control și G.
+
+Al șaptelea pas pe ecran. Muți cutia grupată șaizeci de milimetri spre stânga, ca să faci loc. Tragi un Cylinder de cincizeci pe cincizeci pe patru: placa capacului. Alt Cylinder, patruzeci și trei pe patruzeci și trei pe trei: marginea care intră în cutie. Jocul este o jumătate de milimetru pe parte. Selectezi marginea și placa, apeși tasta L și alegi mijloc pe stânga și dreapta, și pe față și spate. Ridici marginea cu conul negru la patru, deasupra plăcii. Selectezi doar placa și marginea, cu Shift și click, și apeși Control și G. Capacul stă lângă cutie, pe plan.
+
+Al optulea pas pe ecran, pentru Complet. Deschizi din nou proiectul din lista Designs. Selectează capacul și rotește-l o sută optzeci de grade, cu o săgeată curbă de pe lateral. Sunt opt pași de douăzeci și doi virgulă cinci grade, sau scrii o sută optzeci. Marginea arată acum în jos. Selectează capacul și cutia, apasă L și alege mijlocul pe cele două direcții de pe plan. Apoi ridică capacul cu conul negru la douăzeci și șapte de milimetri. Placa lui stă pe pereți, la treizeci de milimetri, iar marginea de trei milimetri intră în gol. În View Cube alege Front: capacul stă pe pereți, nu e înfipt în ei.
 
 Apoi deschide Ruler. Din Top măsori marginea capacului, cincizeci și trei, și golul cutiei, cincizeci și patru. Golul se măsoară doar dacă Hole-ul e separat. Desfă cutia cu Control, Shift și G, măsoară, apoi selectează Hole-ul și cutia și apasă Control și G la loc. La final alege o culoare pentru cutie și alta pentru capac.
 
-Greșeli frecvente. Cutia e plină: Hole-ul nu a fost grupat sau e și el Solid. Cutia nu are fund: Hole-ul trebuie ridicat trei milimetri. Capacul nu intră: marginea e prea mare, verifică cincizeci și trei pe treizeci și trei. Ai grupat și cutia, și capacul: desfă cu Control, Shift și G. Trebuie să fie două piese.
+Greșeli frecvente. Cutia e plină: Hole-ul nu a fost grupat sau e și el Solid. Cutia nu are fund: Hole-ul trebuie ridicat trei milimetri. Capacul nu intră: marginea e prea mare, verifică cincizeci și trei pe treizeci și trei. Ai grupat și cutia, și capacul: desfă cu Control, Shift și G. Trebuie să fie două piese. Capacul rotund nu intră: marginea este prea mare, trebuie să fie patruzeci și trei, ca să rămână joc.
 
 Proiectul de azi. Cutia mea.
 
-Minim înseamnă: cutie goală cu fund de trei milimetri și capac cu margine, în două piese separate. Complet înseamnă: minim, plus capacul pe cutie, cu marginea înăuntru, Ruler pentru joc și culori diferite. Dacă rămâi în urmă, salvează la Minim.
+Minim înseamnă: cutia dreptunghiulară cu capac și cutia rotundă cu capac, patru piese separate, pe plan, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus capacul întors pe cutie, culori diferite și jocul măsurat cu Ruler, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când cele două capace se văd separate de cutii, iar marginea fiecărui capac pare să încapă în gol.
+
+Bonus. Schimbi culorile și pui pe capac text cu numele tău. Provocarea, Cutie cu două compartimente: cutia de șaizeci pe patruzeci pe treizeci are două compartimente egale, cu un perete de trei pe treizeci și patru pe douăzeci și cinci pus după Group, la mijloc, apoi Group din nou, plus un mâner pe capac, un Cylinder de zece pe zece pe cinci. Cele două compartimente au câte douăzeci și cinci virgulă cinci milimetri lățime, verificat cu Ruler, iar capacul se potrivește în continuare.
 
 Recapitulare. Cutie goală înseamnă un Box Solid, un Box Hole mai mic și Group. Hole-ul ridicat trei milimetri lasă fundul. Marginea capacului este golul minus un milimetru. Cutia și capacul rămân două piese.
+
+Ce urmează. În lecția patru faci o ramă foto dreptunghiulară și una rotundă, cu decupaje exacte.
 
 Succes la cutia ta.

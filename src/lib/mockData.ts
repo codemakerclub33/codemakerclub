@@ -190,7 +190,7 @@ export const module = [
     nume: 'Modul 2 — Obiecte utile',
     ordine: 2,
     badge: 'Object Maker',
-    descriere: '10 obiecte practice pentru birou, baie și acasă, cu mărimi exacte și piese care se potrivesc. La final: un obiect util la alegere.',
+    descriere: '10 lecții, în fiecare câte două obiecte practice pentru birou, baie și acasă, cu mărimi exacte și piese care se potrivesc, plus o provocare cu un obiect mai complicat. La final: un obiect util la alegere, cu piesa lui pereche.',
   },
   {
     id: 'm31',
