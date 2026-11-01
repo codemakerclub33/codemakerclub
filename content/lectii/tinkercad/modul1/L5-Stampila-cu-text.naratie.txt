@@ -12,9 +12,9 @@ Primul pas pe ecran. Create new design. Sus scrii numele Prenume, linie jos, Num
 
 Al doilea pas pe ecran. Baza. Tragi un Box și îl faci șaizeci pe treizeci pe cinci: lungime, lățime, înălțime. Trebuie să stea pe plan. Dacă plutește, apeși tasta D. Cinci milimetri grosime, ca să nu fie ca o foaie.
 
-Al treilea pas pe ecran. Textul. Din Basic Shapes tragi piesa Text pe plan. Îl selectezi. În panoul care apare, în câmpul de text, scrii un cuvânt scurt, de exemplu prenumele tău. Dacă diacriticele nu apar, folosești litere fără diacritice. Scalezi textul ținând Shift pe un pătrățel de colț, ca literele să nu se deformeze. Textul poate avea cel mult cincizeci de milimetri lungime și aproximativ paisprezece lățime. Trebuie să încapă pe baza de șaizeci pe treizeci, cu loc pe margini.
+Al treilea pas pe ecran. Textul. Din Basic Shapes tragi piesa Text pe plan. Îl selectezi. În fereastra piesei, care apare, în câmpul de text, scrii un cuvânt scurt, de exemplu prenumele tău. Dacă diacriticele nu apar, folosești litere fără diacritice. Scalezi textul ținând Shift pe un pătrățel de colț, ca literele să nu se deformeze. Textul poate avea cel mult cincizeci de milimetri lungime și aproximativ paisprezece lățime. Trebuie să încapă pe baza de șaizeci pe treizeci, cu loc pe margini.
 
-Al patrulea pas pe ecran. Ridicarea. Textul trebuie să iasă deasupra bazei, ca niște litere în relief. Textul și baza stau amândouă pe plan. Baza are cinci milimetri înălțime, deci faci textul de șapte milimetri înalt, din pătrățelul alb de sus. Iese doi milimetri deasupra bazei și nu mai trebuie ridicat. Dacă literele sunt prea subțiri și nu se văd bine, încerci alt font din panou, dacă există, sau scrii cu litere mari.
+Al patrulea pas pe ecran. Ridicarea. Textul trebuie să iasă deasupra bazei, ca niște litere în relief. Textul și baza stau amândouă pe plan. Baza are cinci milimetri înălțime, deci faci textul de șapte milimetri înalt, din pătrățelul alb de sus. Iese doi milimetri deasupra bazei și nu mai trebuie ridicat. Dacă literele sunt prea subțiri și nu se văd bine, încerci alt font din fereastra piesei, dacă există, sau scrii cu litere mari.
 
 Al cincilea pas pe ecran. Oglindirea. Selectezi textul. Apeși tasta M. Apar săgeți pe laturi. Apeși săgeata care inversează stânga și dreapta, ca într-o oglindă. Dacă literele s-au răsturnat sus și jos, apeși Control și Z și încerci altă săgeată. Pe ștampila reală, textul oglindit apasă pe hârtie și iese corect.
 
@@ -30,7 +30,7 @@ Minim înseamnă: bază de șaizeci pe treizeci pe cinci, text înalt de șapte,
 
 Bonus. Schimbi cuvântul și culorile. Provocarea, Ștampila cu două rânduri: adaugi un al doilea rând de text și o stea sau o inimă lângă text, toate oglindite și în limitele bazei de șaizeci pe treizeci. Un coleg ține o oglindă lângă ecran și citește corect ambele rânduri.
 
-Recapitulare. Text este o piesă editabilă: schimbi cuvântul în panou. M oglindește textul pentru ștampilă. Text de șapte milimetri pe o bază de cinci milimetri iese doi milimetri. L centrează. Ștampila apasă pe hârtie și textul se citește corect.
+Recapitulare. Text este o piesă editabilă: schimbi cuvântul în fereastra piesei. M oglindește textul pentru ștampilă. Text de șapte milimetri pe o bază de cinci milimetri iese doi milimetri. L centrează. Ștampila apasă pe hârtie și textul se citește corect.
 
 Ce urmează. În lecția șase construiești o barcă din forme simple: semisferă, pană și cilindru.
 

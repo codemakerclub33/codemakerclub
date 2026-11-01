@@ -28,7 +28,7 @@ Proiectul de azi. Brânza cu găuri.
 
 Minim înseamnă: un Wedge de șaizeci pe patruzeci pe treizeci, cu cel puțin trei găuri după Group, vizibile și din spate, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus găuri de mărimi diferite și culoare, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg se uită din spate și vede găurile trecând prin felie.
 
-Bonus. Faci o gaură pe lateral, cu un cilindru orizontal, Hole. Provocarea, Brânza cu șoricel: faci un șoricel din cel puțin cinci piese, corp, cap, două urechi și coadă, pe plan, lângă brânză, plus o gaură pe lateral care se vede din Front. Un coleg ghicește animalul fără explicații, în cel mult douăzeci de secunde.
+Bonus. Faci o gaură pe lateral, cu un cilindru orizontal, Hole. Provocarea, Brânza cu șoricel: faci un șoricel din cel puțin cinci piese, corp, cap, două urechi și coadă, pe plan, lângă brânză, plus o gaură pe lateral, făcută cu un cilindru Hole orizontal, intrat în grup, care se vede din Front. Un coleg ghicește animalul fără explicații, în cel mult douăzeci de secunde.
 
 Recapitulare. Cilindrul străpunge felia: iese deasupra, iar jos pornește de pe plan. Hole pe cilindru, Solid pe brânză. Control și G înseamnă tăiere. Fără Group, Hole nu taie. Ungroup desface grupul, ca să poți modifica.
 

@@ -44,7 +44,7 @@ La finalul orei ai o felie de brânză cu **găuri** care trec prin ea (nu cercu
 | <span style="color:#00A600;font-weight:700">Hole</span> | **gaură**: piesa cu dungi, care **taie** după Group |
 | <span style="color:#00A600;font-weight:700">Solid</span> | piesă **plină** (cea obișnuită) |
 | <span style="color:#DC143C;font-weight:700">Ctrl+G</span> | **Group**: lipește piesele, iar Hole-urile taie |
-| <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span> | **Ungroup**: desface grupul, ca să modifici |
+| <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span> | <span style="color:#DC143C;font-weight:700">Ungroup</span>: desface grupul, ca să modifici |
 | <span style="color:#DC143C;font-weight:700">Ctrl+A</span> | selectează tot de pe plan |
 
 Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-weight:700">Color</span>, <span style="color:#DC143C;font-weight:700">Ctrl+Z</span>) le știi din lecțiile trecute.
@@ -81,7 +81,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 - [ ] Din lateral, cilindrii ies **deasupra** feliei și pornesc de pe plan  
 
 ### 4) Hole
-1. Selectezi un cilindru (click pe el — ca să se deschidă panoul)  
+1. Selectezi un cilindru (click pe el — ca să se deschidă fereastra piesei)  
 2. În fereastra piesei, alegi <span style="color:#00A600;font-weight:700">Hole</span> (varianta cu **dungi**), **nu** Solid  
 3. La fel pentru ceilalți cilindri  
 4. Brânza rămâne <span style="color:#00A600;font-weight:700">Solid</span>
@@ -121,7 +121,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 1. **Gaura nu trece** — din lateral, cilindrul nu iese deasupra feliei (sau stă prea sus și nu atinge planul); îl înalți cu <span style="color:#E65722;font-weight:700">pătrățelul alb</span> de sus.  
 2. **Cilindrul pe margine** — îl muți **înăuntrul** conturului feliei.  
 3. **Group, dar felia arată la fel** — cilindrii sunt încă Solid; pui <span style="color:#00A600;font-weight:700">Hole</span>, apoi Group.  
-4. **Brânza a dispărut** — și ea e pe Hole. **Ungroup** și îi pui înapoi <span style="color:#00A600;font-weight:700">Solid</span>.  
+4. **Brânza a dispărut** — și ea e pe Hole. <span style="color:#DC143C;font-weight:700">Ungroup</span> și îi pui înapoi <span style="color:#00A600;font-weight:700">Solid</span>.  
 5. **Am grupat doar găurile** sau **am grupat și șoricelul** — selectezi doar felia + cilindrii (Shift+click).  
 6. **Vreau să modific după Group** — <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span>, modifici, regrupezi.  
 7. **Nu văd fereastra piesei** — click din nou pe piesă.
@@ -161,13 +161,13 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 *Doar dacă ai terminat Complet.*
 
 - [ ] Fă o gaură **pe lateral**, cu un cilindru orizontal (Hole)  
-- [ ] **Provocarea:** faci un **șoricel** din cel puțin **5 piese** (corp, cap, 2 urechi, coadă), pe plan, lângă brânză, plus **o gaură pe lateral** care se vede din Front. Un coleg ghicește **animalul** fără explicații, în cel mult **20 de secunde**.  
+- [ ] **Provocarea:** faci un **șoricel** din cel puțin **5 piese** (corp, cap, 2 urechi, coadă), pe plan, lângă brânză, plus **o gaură pe lateral** (un cilindru **Hole** orizontal, intrat în grup) care se vede din Front. Un coleg ghicește **animalul** fără explicații, în cel mult **20 de secunde**.  
 
 ## Recapitulare rapidă
 1. Cilindrul **străpunge** felia (iese deasupra, jos pornește de pe plan)  
 2. <span style="color:#00A600;font-weight:700">Hole</span> pe cilindru · <span style="color:#00A600;font-weight:700">Solid</span> pe brânză  
 3. <span style="color:#DC143C;font-weight:700">Ctrl+G</span> = se taie · fără Group, Hole nu taie  
-4. **Ungroup** = desface ca să modifici
+4. <span style="color:#DC143C;font-weight:700">Ungroup</span> = desface ca să modifici
 
 ## Schema pe scurt *(pe foaie — dacă o printezi separat)*
 

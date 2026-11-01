@@ -155,7 +155,7 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 *Doar dacă ai terminat Complet.*
 
 - [ ] Schimbă culorile și mărește flăcările  
-- [ ] **Provocarea:** adaugi **un al doilea hublou**, la **aceeași înălțime** cu primul (verificat din Front), și o **platformă de lansare** (Box `40 × 40 × 5`) pe care stă racheta, fără să plutească. Un coleg numără **4 elemente** (rachetă, hublouri, flăcări, platformă) în cel mult **20 de secunde**.  
+- [ ] **Provocarea:** adaugi **un al doilea hublou**, la **aceeași înălțime** cu primul (verificat din Front), și o **platformă de lansare** (Box `40 × 40 × 5`, pe plan, centrată sub rachetă), în care **intră vârfurile flăcărilor**. Racheta stă pe flăcări și nu plutește. Un coleg numără **4 elemente** (rachetă, hublouri, flăcări, platformă) în cel mult **20 de secunde**.  
 
 ## Recapitulare rapidă
 1. Aripioare egale → <span style="color:#D400D4;font-weight:700">Top</span> + rotire sau poziții manuale  

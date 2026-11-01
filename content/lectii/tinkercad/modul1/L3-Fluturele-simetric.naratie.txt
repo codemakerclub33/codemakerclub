@@ -28,7 +28,7 @@ Proiectul de azi. Fluturele meu.
 
 Minim înseamnă: corpul pe plan, o aripă asimetrică, copia ei oglindită cu M pe cealaltă parte și simetrie din Top, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus cap, antene oglindite, a doua pereche de aripi și culori, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg vede clar din Top un fluture, cu aripile una oglindă a celeilalte.
 
-Bonus. Schimbi culorile aripilor. Provocarea, Fluturele cu modele: pe fiecare aripă pui două cercuri, formă Solid, făcute pe o aripă și oglindite pe cealaltă, plus o floare din sfere sub fluture. Din Top, un coleg nu găsește nicio diferență între cele două jumătăți ale fluturelui.
+Bonus. Schimbi culorile aripilor. Provocarea, Fluturele cu modele: pe fiecare aripă pui două cercuri, din cilindri plați, lipiți pe aripă. Le faci pe o aripă, apoi copiezi aripa cu tot cu cercuri și o oglindești. Adaugi și o floare din sfere sub fluture. Din Top, un coleg nu găsește nicio diferență între cele două jumătăți ale fluturelui.
 
 Recapitulare. O aripă asimetrică face ca M să se vadă. Control și D face o copie, pe care apoi o muți. M oglindește. L aliniază, iar tu verifici mereu din Top. Numele fișierului are T unu și L zero trei.
 

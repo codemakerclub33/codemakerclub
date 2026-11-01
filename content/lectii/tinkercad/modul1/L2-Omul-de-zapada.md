@@ -165,7 +165,7 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 1. <span style="color:#DC143C;font-weight:700">Ctrl+D</span> = copie (apoi o muți — e peste original)  
 2. <span style="color:#E65722;font-weight:700">Shift</span> = scalezi proporțional  
 3. <span style="color:#E65722;font-weight:700">Săgeata curbă</span> (pe marginea piesei) = rotești, pași de 22,5°  
-4. **Conul negru** = ridici / cobori
+4. <span style="color:#E65722;font-weight:700">Conul negru</span> = ridici / cobori
 
 ## Schema pe scurt *(pe foaie — dacă o printezi separat)*
 

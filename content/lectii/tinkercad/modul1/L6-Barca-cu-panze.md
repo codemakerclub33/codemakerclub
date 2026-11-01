@@ -160,7 +160,7 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 *Doar dacă ai terminat Complet.*
 
 - [ ] Schimbă culoarea pânzelor și a steagului  
-- [ ] **Provocarea:** adaugi o **cabină** (Box `12 × 10 × 8`) pe punte, la înălțimea `15`, și **2 vâsle** din cilindri subțiri, rotiți cu cel puțin `45°`. Din Front și din Right, un coleg recunoaște **4 părți** (corp, cabină, catarg, vâsle) în cel mult **30 de secunde**.  
+- [ ] **Provocarea:** adaugi o **cabină** (Box `12 × 10 × 8`) pe punte, **lângă catarg** (nu peste el), la înălțimea `15`, și **2 vâsle** din cilindri subțiri, rotiți cu cel puțin `45°`. Din Front și din Right, un coleg recunoaște **4 părți** (corp, cabină, catarg, vâsle) în cel mult **30 de secunde**.  
 
 ## Recapitulare rapidă
 1. Orice obiect se descompune în **forme simple**  

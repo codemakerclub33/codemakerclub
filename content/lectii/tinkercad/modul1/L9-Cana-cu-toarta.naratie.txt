@@ -16,7 +16,7 @@ Al treilea pas pe ecran. Golul, adică Hole. Tragi al doilea Cylinder, mai îngu
 
 Al patrulea pas pe ecran, pentru Complet. Toarta, înainte de Group. Tragi un Torus, gogoașa din Basic Shapes, și îl scalezi cu Shift la aproximativ douăzeci și cinci de milimetri diametru. Îl rotești nouăzeci de grade cu săgeata curbă, ca să stea vertical și, din Front, să vezi un cerc, un inel. Dacă vezi doar o linie, rotești nouăzeci de grade pe cealaltă axă. Îl lipești pe o parte a corpului, la dreapta, în Front. Marginea lui interioară intră aproximativ trei milimetri în perete. Îl ridici la aproximativ zece, ca să fie pe la mijlocul cănii. Dacă iese prea mare sau strâmb, îl scalezi din pătrățelele albe, cu Shift. Verifici din Top: toarta intră doar în perete. Peretele are patru milimetri, deci toarta nu intră mai mult de trei, ca să nu ajungă în gol.
 
-Al cincilea pas pe ecran. Group. Selectezi corpul, golul Hole și toarta, cu Shift și click. Apeși Control și G. Pe Mac, Command și G. Rotești vederea: cana este goală, are fund, iar toarta este afară. Dacă toarta intră în cavitate, adică Hole o taie, apeși Control, Shift și G ca să desfaci grupul, o muți spre exterior și apeși din nou Control și G.
+Al cincilea pas pe ecran. Group. Selectezi corpul și golul Hole, și toarta, dacă ai făcut-o, cu Shift și click. Apeși Control și G. Pe Mac, Command și G. Rotești vederea: cana este goală, are fund, iar toarta este afară. Dacă toarta intră în cavitate, adică Hole o taie, apeși Control, Shift și G ca să desfaci grupul, o muți spre exterior și apeși din nou Control și G.
 
 Al șaselea pas pe ecran, tot pentru Complet. Color. Selectezi grupul și alegi o singură culoare pentru tot. Dacă vrei culori diferite la cană și la toartă, le colorezi înainte de Group. Apoi modelul: cercuri mici sau dungi subțiri, lipite pe exterior, ca formă Solid, nu Hole. La final verifici numele proiectului.
 
@@ -26,7 +26,7 @@ Proiectul de azi. Cana mea.
 
 Minim înseamnă: Cylinder de patruzeci pe patruzeci pe patruzeci și cinci, Hole de treizeci și doi la cinci milimetri, care iese deasupra cănii, Group și fund de cinci milimetri, verificat din Front, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus toartă, culori și model pe cană, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când cana este goală sus și închisă jos, iar din Front se vede un fund de cinci milimetri.
 
-Bonus. Schimbi mărimea toartei și culorile. Provocarea, Cana cu farfurioară și capac: adaugi o farfurioară, un Cylinder de șaptezeci pe șaptezeci pe trei, pe care stă cana, la înălțimea trei, și un capac separat, un Cylinder de patruzeci pe patruzeci pe patru, care nu este grupat cu cana. Din Front nu este niciun gol între cană și farfurioară.
+Bonus. Schimbi mărimea toartei și culorile. Provocarea, Cana cu farfurioară și capac: adaugi o farfurioară, un Cylinder de șaptezeci pe șaptezeci pe trei, pe care stă cana, ridicată la doi milimetri, deci intră un milimetru în farfurioară, și un capac separat, un Cylinder de patruzeci pe patruzeci pe patru, care nu este grupat cu cana. Din Front nu este niciun gol între cană și farfurioară.
 
 Recapitulare. Cavitatea este un Hole mai îngust, care începe mai sus de plan, pentru fund, și iese deasupra, ca să fie deschis sus. Fundul și peretele nu trebuie să fie prea subțiri. Toarta este un Torus rotit nouăzeci de grade, în perete, nu în gol.
 

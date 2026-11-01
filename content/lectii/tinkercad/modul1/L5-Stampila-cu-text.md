@@ -71,7 +71,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 
 ### 3) Textul
 1. Din **Basic Shapes** tragi piesa <span style="color:#1E90FF;font-weight:700">Text</span> pe plan  
-2. Selectezi textul. În panoul care apare, în câmpul de text scrii un cuvânt **scurt** (ex. prenumele tău)  
+2. Selectezi textul. În fereastra piesei, care apare, în câmpul de text scrii un cuvânt **scurt** (ex. prenumele tău)  
 3. Dacă diacriticele nu apar, folosești litere **fără diacritice**  
 4. Scalezi textul cu <span style="color:#E65722;font-weight:700">Shift</span> pe un pătrățel de colț (ca să nu se deformeze literele) până are cel mult **50 mm** lungime și ~**14 mm** lățime — să **încapă** pe bază (60 × 30) cu loc pe margini
 
@@ -82,7 +82,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 ### 4) Ridicat
 1. Textul trebuie să iasă **deasupra bazei** — ca niște litere în relief  
 2. Textul și baza stau amândouă **pe plan**. Baza are 5 mm înălțime, deci faci textul **7 mm** înalt (<span style="color:#E65722;font-weight:700">pătrățelul alb</span> de sus): iese **2 mm** deasupra bazei și nu mai trebuie ridicat  
-3. Dacă literele sunt prea subțiri și nu se văd bine, încerci alt font din panou (dacă există) sau mărești litera / grosimea liniilor (scrii cu litere mari, ex. MAJUSCULE)
+3. Dacă literele sunt prea subțiri și nu se văd bine, încerci alt font din fereastra piesei (dacă există) sau mărești litera / grosimea liniilor (scrii cu litere mari, ex. MAJUSCULE)
 
 **Încearcă tu — Ridicat (8 min)**  
 - [ ] Textul e **7 mm** înalt și iese **2 mm** deasupra bazei  
@@ -122,7 +122,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 ---
 
 ## Greșeli frecvente
-1. **Textul e subțire și nu se vede** — scrii cu MAJUSCULE, îl faci mai mare sau încerci alt font (dacă panoul are).  
+1. **Textul e subțire și nu se vede** — scrii cu MAJUSCULE, îl faci mai mare sau încerci alt font (dacă fereastra piesei are).  
 2. **Textul nu e oglindit** — <span style="color:#E65722;font-weight:700">M</span> și o săgeată pe stânga–dreapta.  
 3. **Textul depășește baza** — îl micșorezi sau mărești baza.  
 4. **Diacriticele lipsesc** — litere fără diacritice.  
@@ -169,7 +169,7 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 - [ ] **Provocarea:** adaugi **un al doilea rând de text** și **o stea sau o inimă** lângă text, toate **oglindite** și în limitele bazei `60 × 30`. Un coleg ține o **oglindă** lângă ecran și **citește corect** ambele rânduri.  
 
 ## Recapitulare rapidă
-1. <span style="color:#1E90FF;font-weight:700">Text</span> = piesă editabilă (schimbi cuvântul în panou)  
+1. <span style="color:#1E90FF;font-weight:700">Text</span> = piesă editabilă (schimbi cuvântul în fereastra piesei)  
 2. <span style="color:#E65722;font-weight:700">M</span> = oglindești textul pentru ștampilă  
 3. Text 7 mm pe baza de 5 mm = iese 2 mm · <span style="color:#E65722;font-weight:700">L</span> = centrat  
 4. Ștampila apasă pe hârtie și textul se citește **corect**

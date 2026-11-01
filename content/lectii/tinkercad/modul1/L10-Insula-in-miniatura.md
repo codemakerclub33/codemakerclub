@@ -123,18 +123,6 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 
 ---
 
-## Cum se vede reușita *(criterii pentru elev)*
-
-| Criteriu | Ce căutăm |
-|----------|-----------|
-| Teren + elemente | teren clar, 4–6 elemente |
-| Refolosire | cel puțin 2 piese din lecții vechi |
-| Hole + Group | cel puțin o piesă cu decupaj |
-| Text | numele insulei |
-| Finisaj | nimic nu plutește, culori potrivite |
-
----
-
 ## De făcut azi — „Insula mea”
 
 ### Minim vs Complet *(citește înainte să începi)*
@@ -170,7 +158,7 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 *Doar dacă ai terminat Complet.*
 
 - [ ] Adaugă un copac în plus și schimbă culorile  
-- [ ] **Provocarea:** adaugi **un pod sau un mal**, **un animal** din forme simple și **un vapor** lângă insulă, în total **cel puțin 9 elemente**, iar nimic nu plutește (verificat din Front și din Top). Prezinți insula în **1 minut**, iar un coleg spune **ce reprezintă fiecare element**, fără întrebări.  
+- [ ] **Provocarea:** adaugi **un pod sau un mal**, **un animal** din forme simple și **un vapor** pe o bucată de apă (Box albastru plat de `2` mm), lângă insulă, în total **cel puțin 9 elemente**, iar nimic nu plutește (verificat din Front și din Top). Prezinți insula în **1 minut**, iar un coleg spune **ce reprezintă fiecare element**, fără întrebări.  
 
 ## Recapitulare rapidă
 1. M1 = forme, scalare, <span style="color:#E65722;font-weight:700">M</span>, <span style="color:#E65722;font-weight:700">L</span>, <span style="color:#00A600;font-weight:700">Hole</span>, text, <span style="color:#DC143C;font-weight:700">Ctrl+D</span>  
@@ -181,12 +169,6 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 **Minim:** schiță → teren → 4 elemente (2 refolosite) → nimic nu plutește  
 **Complet:** + 6 elemente, Hole+Group, text, culori
-
-## Formular de păreri *(elev)*
-1. Care lecție ți-a plăcut cel mai mult?  
-2. Ce a fost cel mai greu?  
-3. Ce vrei să construiești în Modulul 2?  
-4. Cât de bine știi acum Tinkercad? (1–5)
 
 ## Temă
 Opțional: completezi insula acasă cu un element nou — același `T1_L10`.

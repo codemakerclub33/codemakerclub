@@ -26,7 +26,7 @@ Proiectul de azi. Insula mea.
 
 Minim înseamnă: teren, patru elemente, dintre care două refolosite, la cinci milimetri, nimic nu plutește, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus șase elemente, o piesă cu Hole și Group, text cu numele insulei și culori coerente, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg recunoaște o insulă și nu găsește nicio piesă în aer.
 
-Bonus. Adaugi un copac în plus și schimbi culorile. Provocarea, Insula cu pod și vapor: adaugi un pod sau un mal, un animal din forme simple și un vapor lângă insulă, în total cel puțin nouă elemente, iar nimic nu plutește, verificat din Front și din Top. Prezinți insula într-un minut, iar un coleg spune ce reprezintă fiecare element, fără întrebări.
+Bonus. Adaugi un copac în plus și schimbi culorile. Provocarea, Insula cu pod și vapor: adaugi un pod sau un mal, un animal din forme simple și un vapor pe o bucată de apă, un Box albastru plat de doi milimetri, lângă insulă, în total cel puțin nouă elemente, iar nimic nu plutește, verificat din Front și din Top. Prezinți insula într-un minut, iar un coleg spune ce reprezintă fiecare element, fără întrebări.
 
 Recapitulare. Modulul unu înseamnă forme, scalare, tasta M, tasta L, Hole, text și Control și D. Refolosești piese între proiecte cu Control și C, apoi Control și V. Calitatea contează: cinci elemente curate valorează mai mult decât zece neterminate.
 

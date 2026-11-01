@@ -91,7 +91,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 - [ ] Intră cel mult ~3 mm în perete, la ~**10** înălțime  
 
 ### 5) Group
-1. Selectezi **corpul + golul Hole + toarta** (Shift+click)  
+1. Selectezi **corpul + golul Hole** (și **toarta**, dacă ai făcut-o) cu Shift+click  
 2. <span style="color:#DC143C;font-weight:700">Ctrl+G</span> (Mac: <span style="color:#DC143C;font-weight:700">Cmd+G</span>)  
 3. Rotești vederea: cana e goală, are fund, toarta e afară  
 4. Dacă toarta intră în cavitate (Hole-ul o taie), <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span> (Ungroup), o muți spre exterior, <span style="color:#DC143C;font-weight:700">Ctrl+G</span> din nou
@@ -157,7 +157,7 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 *Doar dacă ai terminat Complet.*
 
 - [ ] Schimbă mărimea toartei și culorile  
-- [ ] **Provocarea:** adaugi o **farfurioară** (Cylinder `70 × 70 × 3`) pe care stă cana, la înălțimea `3`, și un **capac separat** (Cylinder `40 × 40 × 4`) care **nu** e grupat cu cana. Din Front nu e **niciun gol** între cană și farfurioară.  
+- [ ] **Provocarea:** adaugi o **farfurioară** (Cylinder `70 × 70 × 3`) pe care stă cana, ridicată la `2` (intră 1 mm în farfurioară), și un **capac separat** (Cylinder `40 × 40 × 4`) care **nu** e grupat cu cana. Din Front nu e **niciun gol** între cană și farfurioară.  
 
 ## Recapitulare rapidă
 1. Cavitate = **Hole mai îngust**, care începe **mai sus de plan** (fund) și **iese deasupra** (deschis sus)  

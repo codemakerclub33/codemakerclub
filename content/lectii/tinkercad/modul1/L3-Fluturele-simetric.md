@@ -167,7 +167,7 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 *Doar dacă ai terminat Complet.*
 
 - [ ] Schimbă culorile aripilor  
-- [ ] **Provocarea:** pe **fiecare aripă** pui **2 cercuri** (formă <span style="color:#00A600;font-weight:700">Solid</span>), făcute pe o aripă și **oglindite** pe cealaltă, plus **o floare** din sfere sub fluture. Din <span style="color:#D400D4;font-weight:700">Top</span>, un coleg nu găsește **nicio diferență** între cele două jumătăți ale fluturelui.  
+- [ ] **Provocarea:** pe **fiecare aripă** pui **2 cercuri** (cilindri plați, lipiți pe aripă): le faci pe o aripă, apoi copiezi aripa **cu tot cu cercuri** și o **oglindești**. Adaugi și **o floare** din sfere sub fluture. Din **Top**, un coleg nu găsește **nicio diferență** între cele două jumătăți ale fluturelui.  
 
 ## Recapitulare rapidă
 1. Aripa **asimetrică** → <span style="color:#E65722;font-weight:700">M</span> se vede  
