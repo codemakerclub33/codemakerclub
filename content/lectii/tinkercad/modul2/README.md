@@ -5,7 +5,7 @@
 
 | # | Lecție | Obiectiv | Pași principali |
 |---|--------|----------|---------------------------|
-| 1 | Cuier de perete + raft mic | Mărimi cu numere și găuri de montaj | Placă 120·30·5; 3 cârlige egale (Ctrl+D); 2 Hole; bile; Ruler |
+| 1 | Șină de perete + raft cu console | Mărimi cu numere, fante egale, Wedge | Placă 120·40; 3 fante 10·20 la 30 mm; raft la 25; console Wedge |
 | 2 | Suport pentru căști + suport de agățat de birou | Bază, stâlp, Align, stabilitate | Bază Ø70; stâlp; bară sus; Align; verificare din Front |
 | 3 | Cutie cu capac + cutie rotundă | Piese care se potrivesc | Cutie goală 60·40·30; capac cu margine; joc 0,5 mm pe parte |
 | 4 | Tăietor pentru biscuiți + tăietor cu forma ta | Perete subțire, Hole, Scribble | Corp 60·60·15; Hole 56·56·20 centrat pe 3 direcții; perete 2 mm; Scribble |

@@ -16,7 +16,7 @@ La finalul orei ai **două obiecte utile**: **Obiectul tău util** și **Piesa p
 **Ținta orei (Complet):** a doua parte: <span style="color:#E65722;font-weight:700">Ruler</span> pe o mărime importantă, <span style="color:#00A600;font-weight:700">Color</span>, text cu numele tău și prezentare de `30` de secunde, cu cel puțin **6 unelte diferite**.
 
 ## De ce contează
-Ai învățat 9 lecții: cuier, suport, cutie, tăietor pentru biscuiți, tavă, matrice de găuri, model prin goluri, piese care lucrează împreună, carcasă pe măsura unei plăci reale.  
+Ai învățat 9 lecții: șină și raft, suport, cutie, tăietor pentru biscuiți, tavă, matrice de găuri, model prin goluri, piese care lucrează împreună, carcasă pe măsura unei plăci reale.  
 Azi pornești **tu** de la o nevoie și ajungi la un obiect. Așa lucrează un designer.
 
 **Notă:** imprimanta 3D **nu** e folosită la oră — doar design.

@@ -745,7 +745,7 @@ export const lectii = [
   ]),
   // Tinkercad Modul 2 — Object Maker
   ...genLectii('m30', [
-    'Cuier de perete',
+    'Șină și raft de perete',
     'Suport pentru căști',
     'Cutie cu capac',
     'Formă pentru biscuiți (cookie cutter)',
