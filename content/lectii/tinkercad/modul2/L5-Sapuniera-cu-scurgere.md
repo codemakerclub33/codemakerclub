@@ -221,4 +221,4 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 Opțional: o săpunieră pentru **două** săpunuri — tava lungă **180 × 70** cu fante noi (calculezi tu câte fante încap).
 
 ## Ce urmează
-În **Lecția 6** faci un **suport pentru periuțe** și un **suport pentru markere**, cu **matrice de găuri**.
+În **Lecția 6** faci un **suport pentru periuțe** și un **suport pentru periuțe de vacanță, care se închide**, cu **matrice de găuri**.

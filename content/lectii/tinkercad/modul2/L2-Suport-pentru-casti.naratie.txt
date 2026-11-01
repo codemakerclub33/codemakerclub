@@ -32,7 +32,7 @@ Proiectul de azi. Suportul meu.
 
 Minim înseamnă: suportul pentru căști, cu bază, stâlp și bară pe același centru, și suportul de agățat de birou, cu spate, brațe, cârlig și gol de douăzeci și cinci de milimetri, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus bile pe capetele barei, Ruler și culoare, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când pui căștile pe primul suport iar al doilea are golul pentru blat și cârligul pentru căști, iar din Front și din Right stau drept.
 
-Bonus. Schimbi culorile și mărești buza cârligului la treizeci de milimetri înălțime. Provocarea, Suport dublu de birou: bază de o sută pe șaizeci pe opt, stâlp de paisprezece diametru pe o sută cincizeci și două bare, una la o sută cincizeci și alta la o sută de milimetri de bază, a doua rotită nouăzeci de grade față de prima. Cu Ruler confirmi cel puțin patruzeci de milimetri pe verticală între bare. Din Front, căștile stau pe ambele bare fără să se atingă.
+Bonus. Schimbi culorile și mărești buza cârligului la treizeci de milimetri înălțime. Provocarea, Suport dublu de birou: bază de o sută pe șaizeci pe opt, stâlp de paisprezece diametru pe o sută cincizeci, cu două bare, una la o sută cincizeci și alta la o sută de milimetri de bază, a doua rotită nouăzeci de grade față de prima. Cu Ruler confirmi cel puțin patruzeci de milimetri pe verticală între bare. Din Front, căștile stau pe ambele bare fără să se atingă.
 
 Recapitulare. Baza e mai lată decât tot ce e deasupra. Tasta L este Align și pune piesele pe același centru. Din Front verifici dacă partea de sus iese în afara bazei. Group se dă la sfârșit, nu la început.
 

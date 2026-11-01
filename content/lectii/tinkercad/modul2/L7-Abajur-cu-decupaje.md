@@ -90,7 +90,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 
 ### 4) Rotire și copiere
 1. Selectezi bara → <span style="color:#DC143C;font-weight:700">Ctrl+D</span>  
-2. Rotești copia **45°** (2 pași de câte 22,5° pe <span style="color:#E65722;font-weight:700">săgeata curbă</span>)  
+2. Rotești copia **45°** (2 pași de câte 22,5° pe <span style="color:#E65722;font-weight:700">săgeata curbă</span> de pe plan, cea care rotește în jurul axei verticale)  
 3. <span style="color:#DC143C;font-weight:700">Ctrl+D</span> din nou — repetă aceeași rotire → a treia bară  
 4. <span style="color:#DC143C;font-weight:700">Ctrl+D</span> încă o dată → a patra  
 5. Rezultat: 4 bare la 0°, 45°, 90°, 135° → **8 ferestre** în jurul tubului
@@ -123,7 +123,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 
 ### 7) Lampionul: ferestrele și Group
 1. Trage un <span style="color:#1E90FF;font-weight:700">Box</span> **70 · 8 · 30** → <span style="color:#00A600;font-weight:700">Hole</span>: bara. Selectezi bara și tubul → <span style="color:#E65722;font-weight:700">L</span> → **mijloc** pe stânga–dreapta și pe față–spate. Ridici bara cu **<span style="color:#E65722;font-weight:700">conul negru</span>** la **10**  
-2. Dacă tubul e grupat, <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span>. Selectezi **bara** → <span style="color:#DC143C;font-weight:700">Ctrl+D</span> → rotești copia **90°** (`4` pași de `22,5°` pe <span style="color:#E65722;font-weight:700">săgeata curbă</span>)  
+2. Dacă tubul e grupat, <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span>. Selectezi **bara** → <span style="color:#DC143C;font-weight:700">Ctrl+D</span> → rotești copia **90°** (`4` pași de `22,5°` pe <span style="color:#E65722;font-weight:700">săgeata curbă</span> de pe plan, cea care rotește în jurul axei verticale)  
 3. <span style="color:#DC143C;font-weight:700">Ctrl+A</span> → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>. <span style="color:#D400D4;font-weight:700">Top</span>: **4** ferestre în cruce. <span style="color:#D400D4;font-weight:700">Front</span>: ferestrele au aceeași înălțime, între `10` și `40` mm  
 
 **Încearcă tu — Lampionul: ferestrele și Group (12 min)**  

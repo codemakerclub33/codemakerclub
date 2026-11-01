@@ -72,6 +72,9 @@ Alege **unul** din meniu (sau propune tu **altul**, doar cu acordul profesorului
 
 Alegi **după ce îți place**: toate cinci folosesc aceleași unelte și se pot face în `2` ore.
 
+**Încearcă tu — Alegi obiectul (4 min)**  
+- [ ] Am ales obiectul din meniu (sau am aprobarea profesorului pentru altul)
+
 ### 2) Schița pe hârtie
 1. Desenezi obiectul din față și de sus  
 2. Scrii **cel puțin 3 mărimi** (ex. 80 × 50 × 20)  
