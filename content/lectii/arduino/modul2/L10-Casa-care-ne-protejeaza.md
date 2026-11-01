@@ -1,4 +1,5 @@
-# Lecția 10 — Casa care ne protejează
+# LECȚIA 10 — Casa protejată
+### Mini-proiectul modulului
 **Modulul 2 · Senzori**  
 **Code Maker Club · Sensor Scout**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai o casă cu **trei funcții** care lucrează împreună.  
-**Minim:** 2 funcții: lampa automată (lumină) + alarma PIR cu buton de armare.  
-**Complet:** Minim + **alertă de căldură** (LED roșu + bip) + un **raport** în Serial Monitor.
-
-## De ce contează
-Sistemele reale nu fac un singur lucru. Azi înveți să **împarți un proiect în funcții** și să le rulezi pe toate în același `loop()`.
+## Ce facem azi
+La finalul orei ai **două proiecte** în aceeași casă: **Casa protejată** (lampă automată, alarmă armabilă, alertă de căldură și raport) și o **Lampă inteligentă**, care se aprinde doar când e întuneric **și** e mișcare. Mai adaugi o **întârziere de ieșire** pentru alarmă și un LED verde „totul e în regulă”.
 
 ---
 
@@ -21,13 +17,25 @@ Sistemele reale nu fac un singur lucru. Azi înveți să **împarți un proiect 
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recap modul · senzorii învățați |
-| 10–35 | Planul și schema (pe hârtie) |
-| 35–85 | Programăm funcțiile pe rând |
-| 85–110 | Testăm toate scenariile |
-| 110–120 | Prezentare + recap |
+| 0–10 | Recap L1–L9 · ce senzori știm |
+| 10–25 | Planul: 3 sisteme într-o casă |
+| 25–65 | **Proiectul 1** · Casa protejată (lampă, alarmă, termostat, raport) |
+| 65–100 | **Proiectul 2** · întârziere de ieșire, LED verde și lampă inteligentă |
+| 100–110 | Scenarii de test |
+| 110–120 | Verificare finală Modul 2, galerie · **Bonus ★★★** |
 
-**Componente azi:** Arduino Uno · Breadboard · Photoresistor · Resistor 10 kΩ · PIR · TMP36 · Pushbutton · 3 × LED · 3 × Resistor 220 Ω · Piezo · fire
+**Componente azi:** Arduino Uno · Breadboard · Photoresistor · Resistor 10 kΩ · PIR · TMP36 · Pushbutton · 3 × LED · **LED verde** · 4 × Resistor 220 Ω · Piezo · fire
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `unsigned long armatLa` | Momentul armării alarmei | `armatLa = millis();` |
+| `bool activ` | Alarma e armată **și** a trecut întârzierea | `bool activ = armat && (millis() - armatLa > 5000);` |
+| `\|\|` | „SAU”: e adevărat dacă măcar una e adevărată | `bool alerta = (activ && miscare) \|\| cald;` |
+| `&&` | „ȘI”: e adevărat doar dacă ambele sunt adevărate | `if (intuneric && miscare) { ... }` |
 
 ---
 
@@ -178,6 +186,54 @@ Bifează fiecare scenariu în caiet.
 - [ ] Am încercat fiecare situație din listă  
 - [ ] Am notat ce nu a mers și am corectat  
 
+### 7) Proiectul 2 — Întârziere de ieșire
+În `alarma()`, ca la Santinela din lecția 6, alarma devine **activă** abia după 5 secunde de la armare. Adaugă în afara funcțiilor `unsigned long armatLa = 0;` și modifică `alarma()`:
+
+```cpp
+unsigned long armatLa = 0;
+
+void alarma() {
+  if (digitalRead(BUTON) == LOW) {
+    armat = !armat;
+    armatLa = millis();
+    noTone(BUZZER);
+    delay(300);
+  }
+  digitalWrite(LED_ALARMA, armat);
+
+  bool activ = armat && (millis() - armatLa > 5000);
+
+  if (activ && digitalRead(PIR) == HIGH) {
+    tone(BUZZER, 1200, 100);
+  }
+}
+```
+
+**Gata când:**  
+- [ ] După armare, mișcarea nu sună timp de 5 secunde  
+- [ ] După 5 secunde, mișcarea sună ca înainte  
+
+### 8) LED verde „totul e în regulă”
+Un al patrulea LED, **verde**, pe pin **11** (cu rezistor 220 Ω, catod la GND), se aprinde când **nu** e nicio alertă: nici mișcare pe alarmă activă, nici căldură peste prag. În afara funcțiilor adaugă `const int LED_OK = 11;`, în `setup()` adaugă `pinMode(LED_OK, OUTPUT);`, apoi scrie funcția:
+
+```cpp
+void semnalOK() {
+  bool activ = armat && (millis() - armatLa > 5000);
+  bool alerta = (activ && digitalRead(PIR) == HIGH) || temperatura() > PRAG_CALD;
+  digitalWrite(LED_OK, !alerta);
+}
+```
+
+Apeleaz-o în `loop()`, după `termostat();`:
+
+```cpp
+  semnalOK();
+```
+
+**Gata când:**  
+- [ ] LED-ul verde e aprins când totul e liniștit  
+- [ ] Se stinge la mișcare cu alarma activă sau la temperatură peste prag  
+
 ---
 
 ## Greșeli frecvente
@@ -185,7 +241,9 @@ Bifează fiecare scenariu în caiet.
 2. **Alarma sună și când nu e armată** — lipsește `armat &&`.  
 3. **Bipurile se acoperă** — alarmă și căldură folosesc același buzzer; e normal, dar ai grijă la praguri.  
 4. **Lampa clipește** — vezi histerezisul din L2.  
-5. **Nu iese nimic în Serial Monitor** — lipsește `Serial.begin(9600)`.
+5. **Nu iese nimic în Serial Monitor** — lipsește `Serial.begin(9600)`.  
+6. **Alarma sună imediat după armare** — lipsește `armatLa = millis();` la armare.  
+7. **LED-ul verde nu se stinge** — funcția `semnalOK()` nu e apelată în `loop()`.
 
 ---
 
@@ -197,6 +255,7 @@ Bifează fiecare scenariu în caiet.
 |--|------------|
 | **Minim** | Lampa automată + alarma armabilă |
 | **Complet** | Minim + alertă de căldură + raport la 2 secunde |
+| **Proiectul 2** | Întârziere de ieșire de 5 secunde + LED verde „totul e în regulă” + lampă inteligentă |
 
 ### Pasul 1 — Minim
 - [ ] Lampa funcționează  
@@ -207,6 +266,11 @@ Bifează fiecare scenariu în caiet.
 - [ ] Raportul cu `millis()`  
 - [ ] Numele `A2_L10` e corect
 
+### Pasul 3 — Proiectul 2
+- [ ] Alarma devine activă după 5 secunde de la armare  
+- [ ] LED verde pe pin 11, aprins când nu e nicio alertă  
+- [ ] `semnalOK()` apelată în `loop()`
+
 ### Verificare finală Modul 2
 - [ ] Citesc un senzor analogic și afișez valoarea  
 - [ ] Calibrez un senzor cu Serial Monitor  
@@ -215,15 +279,21 @@ Bifează fiecare scenariu în caiet.
 
 ---
 
-## Bonus
-- [ ] Adaugă **întârziere de ieșire** la alarmă (5 secunde)  
-- [ ] Un LED care arată „toate sistemele OK” când nu e nicio alertă
+## Bonus ★★★ — Provocare: Lampa inteligentă
+*Doar dacă ai terminat Proiectul 2.*
 
-## Recapitulare rapidă
+O lampă care se aprinde doar când are motiv.
+
+- [ ] Lampa se aprinde doar când e **întuneric ȘI e mișcare**  
+- [ ] Rămâne aprinsă încă **10 secunde** după ultima mișcare (cu `millis()`), apoi se stinge  
+- [ ] Testezi: cu lumină și mișcare lampa e stinsă; la întuneric fără mișcare e stinsă; la întuneric cu mișcare se aprinde; după **10 secunde** fără mișcare se stinge (între 10 și 11 secunde)
+
+## Recapitulare pe scurt
 1. Împarte proiectul în **funcții**  
 2. `loop()` doar le apelează  
 3. `millis()` înlocuiește `delay` când ai mai multe sarcini  
-4. Testează fiecare scenariu
+4. Testează fiecare scenariu  
+5. `&&` și `||` combină senzorii în decizii mai deștepte
 
 ## Pe placa reală *(opțional)*
 Într-o casă adevărată ai folosi relee și senzori certificați, cu alimentare separată. Aici facem doar modelul.
@@ -231,7 +301,13 @@ Bifează fiecare scenariu în caiet.
 ## Quiz scurt
 - De ce e util să ai o funcție pentru fiecare sistem?  
 - Ce face `millis()`?  
-- Ce se întâmplă dacă pui `delay(5000)` în `lampa()`?
+- Ce se întâmplă dacă pui `delay(5000)` în `lampa()`?  
+- Care e diferența dintre `&&` și `||`?
 
 ## Temă
 Alege o funcție nouă pentru casa ta (ex. detector de scurgeri) și scrie ce senzor și ce reacție ar avea.
+
+---
+
+## Ce urmează
+Ai terminat **Modulul 2**! În Modulul 3 afișezi date pe un ecran LCD și pui lucrurile în mișcare cu servomotoare.

@@ -2,9 +2,9 @@ Lecția patru din Modulul doi. Avertizor de căldură.
 
 Astăzi legi temperatura de lumini și sunet: verde înseamnă în regulă, galben înseamnă cald, roșu înseamnă pericol, și sună și buzzerul. Proiectul se numește Avertizor de căldură. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero patru.
 
-Obiectivul. La final ai un avertizor cu trei trepte, comandat de T M P treizeci și șase. Minim: trei LED-uri, verde, galben și roșu, care se aprind după temperatură. Complet: minim, plus buzzer care sună intermitent la roșu și temperatura afișată în Serial Monitor.
+Ce facem azi. La final ai două proiecte: Avertizorul de căldură, cu verde, galben, roșu și buzzer după temperatură, și un termostat cu histerezis, care pornește și oprește un ventilator fără să clipească la limită. Așa funcționează aerul condiționat, frigiderul și ventilatorul din calculator.
 
-De ce contează. Alarmele din frigidere, sere și cuptoare funcționează la fel: trepte de temperatură și o reacție pentru fiecare.
+Instrucțiuni noi azi. If, else if și else aleg o singură treaptă de temperatură. Tone pornește sunetul pe buzzer, iar no Tone îl oprește. Bool ține minte dacă ventilatorul merge. Două praguri diferite dau histerezis: pornește la un prag și oprește la altul.
 
 Primul pas. Conexiuni. Senzorul merge la cinci volți, GND și A zero. LED-ul verde este la pinul patru, galbenul la pinul cinci, roșul la pinul șase, fiecare cu rezistor de două sute douăzeci de ohmi. Piezo este la pinul opt și la GND.
 
@@ -14,10 +14,18 @@ Al treilea pas, pentru Complet. La roșu, buzzerul face bip, bip. Folosești ton
 
 Al patrulea pas. Testul. Muți glisorul de temperatură al senzorului în Tinkercad și verifici fiecare treaptă: sub treizeci verde, între treizeci și treizeci și cinci galben, peste roșu cu sunet.
 
-Greșeli frecvente. Două LED-uri aprinse: ai uitat să le stingi la începutul buclei. Mereu roșu: pragul este prea mic sau formula pentru grade este greșită. Fără sunet: piezo nu este la pinul opt sau lipsește tone. LED-ul nu se aprinde: lipsește rezistorul sau catodul nu este la GND. Treptele nu merg: condițiile sunt în ordine inversă.
+Al cincilea pas. Proiectul doi, termostat cu histerezis. Un termostat care pornește și oprește la aceeași temperatură ar clipi la limită. De aceea folosește două praguri: pornește la douăzeci și opt de grade și se oprește abia la douăzeci și cinci. LED-ul albastru de la pinul trei este ventilatorul. Variabila ventilator, declarată în afara funcțiilor, ține minte starea. Peste douăzeci și opt o faci adevărată, sub douăzeci și cinci o faci falsă, iar între ele nu schimbi nimic.
 
-Proiectul de azi. Avertizor de căldură. Minim înseamnă trei LED-uri pe trepte. Complet înseamnă minim, plus buzzer și Serial Monitor.
+Al șaselea pas. Testul histerezisului. Muți glisorul în ordine: la douăzeci de grade ventilatorul este oprit, la douăzeci și șapte tot oprit, la douăzeci și nouă pornește, la douăzeci și șase rămâne pornit, iar la douăzeci și patru se oprește. Poți explica de ce la douăzeci și șase ventilatorul este uneori pornit, alteori oprit.
 
-Recapitulare. If, else if și else aleg o singură ramură. Stingem toate, apoi aprindem unul. Funcția alarma face codul mai curat. Tone și no Tone dau sunetul.
+Greșeli frecvente. Două LED-uri aprinse: ai uitat să le stingi la începutul buclei. Mereu roșu: pragul este prea mic sau formula pentru grade este greșită. Fără sunet: piezo nu este la pinul opt sau lipsește tone. LED-ul nu se aprinde: lipsește rezistorul sau catodul nu este la GND. Treptele nu merg: condițiile sunt în ordine inversă. Ventilatorul clipește la limită: folosești un singur prag, îți trebuie două. Ventilatorul nu pornește deloc: variabila este declarată în loop, nu în afara funcțiilor.
+
+Proiectul de azi. Avertizorul de căldură. Minim înseamnă trei trepte cu LED-uri. Complet înseamnă și buzzer intermitent. Proiectul doi înseamnă termostatul cu histerezis.
+
+Provocare, trei stele. Patru trepte. Un avertizor cu patru nivele. Sub cinci grade este îngheț și se aprinde LED-ul albastru. Între cinci și douăzeci și nouă este normal, verde. Între treizeci și patruzeci și patru este atenție, galben care clipește la cinci sute de milisecunde, cu millis, nu cu delay. De la patruzeci și cinci în sus este pericol, roșu și buzzer. Testezi la zero, patru, douăzeci, treizeci și cinci, patruzeci și patru și cincizeci de grade. Un singur LED este aprins la un moment dat.
+
+Recapitulare. If, else if și else aleg o singură ramură. Stingem toate, apoi aprindem unul. Funcția alarma face codul mai curat. Tone și no Tone dau sunetul. Două praguri, adică histerezis, opresc clipirea la limită.
+
+Ce urmează. În lecția cinci măsori distanța cu un senzor cu ultrasunete și faci o parcare inteligentă.
 
 Succes cu avertizorul.

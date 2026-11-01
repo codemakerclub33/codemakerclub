@@ -1,4 +1,5 @@
-# Lecția 7 — Ghiveciul care cere apă
+# LECȚIA 7 — Planta mea
+### Senzor de sol, procente și reamintiri
 **Modulul 2 · Senzori**  
 **Code Maker Club · Sensor Scout**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai un ghiveci care **anunță când e uscat**.  
-**Minim:** senzor de umiditate + LED roșu care se aprinde când solul e uscat.  
-**Complet:** Minim + **procent de umiditate** (0–100 %) în Serial Monitor + 3 LED-uri (uscat / ok / ud) + buzzer care ți-o reamintește.
-
-## De ce contează
-Sistemele de irigații inteligente economisesc apă și salvează plante. Ele pornesc de la ce faci azi: **citesc, compară și anunță**.
+## Ce facem azi
+La finalul orei ai **două proiecte**: **Planta mea** (umiditatea în procente, trei LED-uri și buzzer) și o **Pompă automată**, care pornește când solul e uscat și se oprește când e destul de ud. Sistemele de irigații inteligente funcționează așa.
 
 ---
 
@@ -21,13 +17,25 @@ Sistemele de irigații inteligente economisesc apă și salvează plante. Ele po
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recap L6 · stare |
-| 10–30 | Circuitul cu senzorul de sol |
-| 30–60 | Calibrare: uscat vs ud |
-| 60–100 | Procente cu `map` + 3 LED-uri |
-| 100–120 | Recap, quiz, galerie |
+| 0–10 | Recap L6 · stare și timp |
+| 10–25 | Circuit și calibrarea senzorului de sol |
+| 25–50 | Minim · „mi-e sete” |
+| 50–75 | **Proiectul 1** · procente și 3 LED-uri |
+| 75–110 | **Proiectul 2** · reamintiri și pompă automată |
+| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme |
 
-**Componente azi:** Arduino Uno · Breadboard · **Soil Moisture Sensor** · 3 × LED (roșu, verde, albastru) · 3 × Resistor 220 Ω · Piezo · fire
+**Componente azi:** Arduino Uno · Breadboard · **Soil Moisture Sensor** · 3 × LED (roșu, verde, albastru) · 3 × Resistor 220 Ω · Piezo · **LED albastru pentru pompă** · Resistor 220 Ω · fire
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `millis()` | Milisecundele de la pornire (reamintiri fără `delay`) | `if (millis() - ultima >= 10000) { ... }` |
+| `unsigned long ultima` | Ține minte când ai făcut ceva ultima dată | `ultima = millis();` |
+| `procentAnterior` | Compară valoarea de acum cu cea de dinainte | `if (procent - procentAnterior > 20) { ... }` |
+| praguri cu histerezis | Pornește sub un prag, oprește peste altul | `if (procent < 30) pompa = true;` |
 
 ---
 
@@ -169,6 +177,51 @@ void loop() {
 - `map` transformă valorile senzorului într-o scală **0–100**.  
 - `constrain` o ține în limite, chiar dacă senzorul dă o valoare mai mare.
 
+### 7) Proiectul 2 — Reamintiri
+O plantă uitată rămâne uscată. Adaugă o **reamintire la 10 secunde**: cât timp solul e uscat (sub 30 %), buzzerul sună scurt, dar nu mai des de o dată la 10 s. Circuitul e cel de la proiectul 1.
+
+În afara funcțiilor adaugă:
+
+```cpp
+unsigned long ultima = 0;
+```
+
+Și în `loop()`, în ramura `procent < 30`, înlocuiește `tone(BUZZER, 500, 100);` cu:
+
+```cpp
+    if (millis() - ultima >= 10000) {
+      ultima = millis();
+      tone(BUZZER, 500, 300);
+      Serial.println("Ud-ma, te rog!");
+    }
+```
+
+Așa nu mai „țipă” planta la fiecare secundă, și nu folosim `delay`.
+
+**Gata când:**  
+- [ ] Cât timp solul e uscat, buzzerul sună o dată la 10 secunde  
+- [ ] În Serial Monitor vezi mesajul „Ud-ma, te rog!” la același interval  
+
+### 8) Mulțumesc!
+Planta poate spune și **mulțumesc**. Ții minte procentul de la runda trecută și, dacă a **crescut brusc** (cu mai mult de 20 de puncte), înseamnă că ai udat-o:
+
+```cpp
+int procentAnterior = 0;
+```
+
+Apoi, în `loop()`, după ce ai calculat `procent`:
+
+```cpp
+  if (procent - procentAnterior > 20) {
+    Serial.println("Multumesc!");
+  }
+  procentAnterior = procent;
+```
+
+**Gata când:**  
+- [ ] Când muți glisorul de la uscat spre ud, vezi „Multumesc!”  
+- [ ] Mesajul apare o singură dată, nu la fiecare rundă  
+
 ---
 
 ## Greșeli frecvente
@@ -176,7 +229,9 @@ void loop() {
 2. **Procente negative** — ai uitat `constrain` sau calibrarea e greșită.  
 3. **Prea sensibil** — mărește zona „ok”.  
 4. **Buzzerul sună continuu** — folosește `tone` cu **durată** (al treilea argument).  
-5. **Merge invers** (cu senzorul real) — inversează valorile în `map`.
+5. **Merge invers** (cu senzorul real) — inversează valorile în `map`.  
+6. **Planta cere apă la fiecare secundă** — ai uitat `ultima = millis();` după reamintire.  
+7. **„Multumesc!” nu apare niciodată** — `procentAnterior` e declarat în `loop()`, nu în afara funcțiilor.
 
 ---
 
@@ -188,6 +243,7 @@ void loop() {
 |--|------------|
 | **Minim** | Un LED roșu când solul e uscat |
 | **Complet** | Minim + procente + 3 LED-uri + bip |
+| **Proiectul 2** | Reamintire la 10 secunde + mesajul „Multumesc!” + pompă automată |
 
 ### Pasul 1 — Minim
 - [ ] Calibrare notată în tabel  
@@ -198,17 +254,28 @@ void loop() {
 - [ ] 3 trepte cu LED-uri  
 - [ ] Numele `A2_L07` e corect
 
+### Pasul 3 — Proiectul 2
+- [ ] Reamintire o dată la 10 secunde, cu `millis()`  
+- [ ] „Multumesc!” când procentul crește cu peste 20  
+- [ ] Fără `delay` lung pentru reamintire
+
 ---
 
-## Bonus
-- [ ] Reamintește-ți **o dată la 10 secunde**, nu continuu (idee: folosește `millis()`)  
-- [ ] Afișează „Mulțumesc!” când umiditatea crește rapid
+## Bonus ★★★ — Provocare: Pompa automată
+*Doar dacă ai terminat Proiectul 2.*
 
-## Recapitulare rapidă
+Planta se udă singură, fără să clipească la limită.
+
+- [ ] Un LED albastru pe pin 3 este **pompa**: **pornește** sub 30 % și **se oprește** abia peste 60 % (histerezis)  
+- [ ] Testezi cu glisorul **0 → 100 → 0 %**: pompa pornește o singură dată și se oprește o singură dată  
+- [ ] Între 30 și 60 % pompa își păstrează starea de dinainte
+
+## Recapitulare pe scurt
 1. Senzorul de sol dă o valoare analogică  
 2. Calibrăm înainte de a alege praguri  
 3. `map` + `constrain` = procente sigure  
-4. Mai multe trepte = mai multă informație
+4. Mai multe trepte = mai multă informație  
+5. Reamintirile cu `millis()` nu blochează programul
 
 ## Pe placa reală *(opțional)*
 Senzorii de sol ieftini (rezistivi) se corodează în timp. Alimentează-i doar când citești, nu permanent.
@@ -216,7 +283,13 @@ Senzorii de sol ieftini (rezistivi) se corodează în timp. Alimentează-i doar 
 ## Quiz scurt
 - De ce calibrăm senzorul?  
 - Ce face `constrain(procent, 0, 100)`?  
-- Ce LED se aprinde la 85 % umiditate?
+- Ce LED se aprinde la 85 % umiditate?  
+- De ce pompa pornește la 30 % și se oprește la 60 %, nu la același procent?
 
 ## Temă
 Fă o listă cu 3 plante și de câtă apă are nevoie fiecare (multă / medie / puțină). Ce praguri ai alege?
+
+---
+
+## Ce urmează — Lecția 8
+În **lecția 8** folosești senzori de înclinare și construiești o nivelă digitală cu pedometru.

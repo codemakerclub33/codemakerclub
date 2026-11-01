@@ -2,9 +2,9 @@ Lecția șase din Modulul doi. Alarma anti-intruși.
 
 Astăzi construiești o alarmă cu senzor de mișcare P I R, un buton de armare și o sirenă. Proiectul se numește Santinela. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero șase.
 
-Obiectivul. La final ai o alarmă care sună când detectează mișcare, dar doar dacă este armată. Minim: P I R și LED, iar LED-ul se aprinde când se mișcă ceva. Complet: minim, plus buton de armare și dezarmare, sirenă și LED de stare, armat sau dezarmat.
+Ce facem azi. La final ai două proiecte: Santinela, o alarmă care se armează cu un buton și sună la mișcare, și o santinelă cu întârziere de ieșire, care îți dă cinci secunde să pleci și numără alarmele. Alarmele din case și din magazine funcționează exact așa.
 
-De ce contează. Alarmele din case, magazine și lifturi folosesc senzori P I R. Aici înveți și un concept important: starea unui sistem, armat sau nu.
+Instrucțiuni noi azi. Millis dă milisecundele de la pornire. Unsigned long este un număr mare, fără minus, bun pentru timp. Millis împărțit la două sute cincizeci, rest la doi, alternează între zero și unu și face LED-ul să clipească fără delay. Detectarea frontului numără schimbarea din fără mișcare în mișcare.
 
 Primul pas. Cum merge P I R. P I R înseamnă senzor pasiv cu infraroșu: simte căldura corpurilor care se mișcă. Are trei pini: semnalul merge la pinul doi, alimentarea la cinci volți, iar GND la GND. Butonul merge la pinul trei și la GND. LED-ul verde, pentru dezarmat, este la pinul cinci, iar cel roșu, pentru armat, la pinul șase.
 
@@ -14,10 +14,18 @@ Al treilea pas, pentru Complet. Folosim o variabilă de stare, armat, de tip boo
 
 Al patrulea pas. Testul. Pornești simularea: LED verde, fără sunet. Armezi: se aprinde roșul. Mișți senzorul: sună sirena. Dezarmezi: tace.
 
-Greșeli frecvente. P I R sună imediat la pornire: la un senzor real, la început, se calibrează cam treizeci de secunde, deci așteaptă. Butonul schimbă starea de mai multe ori: lipsește delay după apăsare. Sună și dezarmat: condiția nu conține armat. Sirena nu se oprește: lipsește no Tone. LED-urile sunt inverse: ai pus armat unde trebuia semnul exclamării.
+Al cincilea pas. Proiectul doi, întârziere de ieșire. O alarmă adevărată nu sună imediat ce o armezi: îți dă timp să pleci din cameră. Notezi momentul armării cu millis și consideri alarma activă abia după cinci secunde. Cât timp așteaptă, LED-ul roșu clipește, de două ori pe secundă. Mișcarea sună doar când alarma este activă.
 
-Proiectul de azi. Santinela. Minim înseamnă mișcare și LED. Complet înseamnă armare, sirenă și LED de stare.
+Al șaselea pas. Contorul de alarme. Vrei să știi de câte ori a intrat cineva, nu cât timp a stat în fața senzorului. De aceea numeri doar schimbarea din fără mișcare în mișcare. Păstrezi o variabilă cu mișcarea anterioară, iar la fiecare schimbare crești contorul și scrii în Serial Monitor: alarma, urmată de număr.
 
-Recapitulare. P I R dă High când vede mișcare. Variabila bool armat ține starea sistemului. Semnul exclamării inversează o valoare. Și înseamnă că ambele condiții trebuie să fie adevărate.
+Greșeli frecvente. P I R sună imediat la pornire: la un senzor real, la început, se calibrează cam treizeci de secunde, deci așteaptă. Butonul schimbă starea de mai multe ori: lipsește delay după apăsare. Sună și dezarmat: condiția nu conține armat. Sirena nu se oprește: lipsește no Tone. LED-urile sunt inverse: ai pus armat unde trebuia semnul exclamării. LED-ul roșu nu clipește: folosești delay în loc de millis, sau ai uitat să notezi momentul armării. Alarma se numără de zeci de ori: numeri tot timpul cât este mișcare, nu doar schimbarea.
+
+Proiectul de azi. Santinela. Minim înseamnă că mișcarea aprinde un LED. Complet înseamnă alarmă armabilă cu sirenă. Proiectul doi înseamnă întârziere de ieșire și contor de alarme.
+
+Provocare, trei stele. Jurnalul alarmei. Alarma ține minte când a sunat: fiecare alarmă se scrie în Serial Monitor cu momentul ei, de exemplu alarma doi la patruzeci și una de secunde. Dezarmezi doar dacă ții butonul două secunde, nu la o atingere. Testezi trei intruziuni la momente diferite, la cel puțin două secunde una de alta, și verifici că jurnalul arată timpi crescători.
+
+Recapitulare. P I R dă High când vede mișcare. Variabila bool armat ține starea sistemului. Semnul exclamării inversează o valoare. Și înseamnă că ambele condiții trebuie să fie adevărate. Millis măsoară timpul fără să oprească programul.
+
+Ce urmează. În lecția șapte măsori umiditatea solului și construiești un ghiveci care cere apă.
 
 Succes cu santinela.

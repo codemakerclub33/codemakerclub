@@ -2,9 +2,9 @@ Lecția cinci din Modulul doi. Parcare cu senzor.
 
 Astăzi măsori distanța cu senzorul cu ultrasunete H C minus S R zero patru, exact ca la mașinile moderne: cu cât te apropii, cu atât bipurile sunt mai dese. Proiectul se numește Parcare inteligentă. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero cinci.
 
-Obiectivul. La final ai un senzor de parcare care bipăie tot mai repede pe măsură ce un obiect se apropie. Minim: distanța în centimetri afișată în Serial Monitor. Complet: minim, plus buzzer cu ritm după distanță și trei LED-uri, verde, galben și roșu.
+Ce facem azi. La final ai două proiecte: Parcarea inteligentă, cu distanța în Serial Monitor, trei LED-uri și bipuri, și un bip proporțional, care sună tot mai des pe măsură ce te apropii. Așa funcționează senzorii de parcare de la mașini.
 
-De ce contează. Senzorii cu ultrasunete trimit un sunet, așteaptă ecoul și calculează distanța. Așa văd liliecii, delfinii și mașinile.
+Instrucțiuni noi azi. Pulse In măsoară cât durează ecoul, cu timeout. O funcție float dă înapoi distanța în centimetri. Map transformă distanța într-o pauză între bipuri. Constrain ține valoarea între două limite.
 
 Primul pas. Cum funcționează. Trimiți un impuls scurt pe pinul Trig. Senzorul emite un sunet pe care nu îl auzi. Sunetul se întoarce, pe pinul Echo. Măsori cât timp a durat și calculezi distanța. Sunetul parcurge aproximativ zero virgulă zero trei patru centimetri pe microsecundă, iar drumul este dus-întors, deci distanța este timpul înmulțit cu zero virgulă zero trei patru și împărțit la doi.
 
@@ -16,10 +16,18 @@ Al patrulea pas. O funcție pentru distanță. Pui măsurarea într-o funcție c
 
 Al cincilea pas, pentru Complet. Pe trepte: departe, verde și bip rar. Mai aproape, galben și bip mai des. Foarte aproape, roșu și bip continuu. Nu uita no Tone.
 
-Greșeli frecvente. Mereu zero centimetri: Trig și Echo sunt inversate sau lipsește alimentarea. Valori uriașe: ai uitat împărțirea la doi. Placa îngheață: lipsește timeoutul din pulse In. Buzzer continuu: ai uitat no Tone. LED-uri multiple aprinse: stinge-le la început.
+Al șaselea pas. Proiectul doi, bip proporțional. La senzorii de parcare adevărați, pauza dintre bipuri scade pe măsură ce te apropii. Folosești map ca să transformi distanța în pauză: la cinci centimetri pauza este de cincizeci de milisecunde, la o sută de centimetri de șase sute. Constrain ține pauza între aceste limite. Peste o sută de centimetri, sau fără ecou, buzzerul tace. La cincizeci de centimetri pauza este de aproape trei sute zece milisecunde, iar la douăzeci de centimetri de aproape o sută treizeci și șase.
 
-Proiectul de azi. Parcare inteligentă. Minim înseamnă distanța în Serial Monitor. Complet înseamnă buzzer și LED-uri.
+Al șaptelea pas. O parcare configurabilă. Un program bun se schimbă ușor. Muți valorile din cod în constante la început: distanța maximă, distanța minimă, pauza maximă și pauza minimă. Apoi le folosești în map și în condiție. Astfel poți adapta parcarea, de exemplu pentru o bicicletă, schimbând doar o constantă.
 
-Recapitulare. Trig trimite, Echo primește. Distanța este timpul înmulțit cu zero virgulă zero trei patru, împărțit la doi. Pulse In se folosește cu timeout. Treptele de distanță aduc lumini și sunete.
+Greșeli frecvente. Mereu zero centimetri: Trig și Echo sunt inversate sau lipsește alimentarea. Valori uriașe: ai uitat împărțirea la doi. Placa îngheață: lipsește timeoutul din pulse In. Buzzer continuu: ai uitat no Tone. LED-uri multiple aprinse: stinge-le la început. Bipurile nu devin mai dese: la map ai pus intervalul de ieșire în ordinea greșită. Pauza iese negativă sau uriașă: lipsește constrain.
+
+Proiectul de azi. Parcare inteligentă. Minim înseamnă distanța în Serial Monitor. Complet înseamnă lumini și bipuri. Proiectul doi înseamnă bip proporțional cu distanța.
+
+Provocare, trei stele. Bara de distanță. Afișezi distanța ca o bară în Serial Monitor: la fiecare zece centimetri pui un semn diez, apoi scrii valoarea în centimetri. Testezi la zece, treizeci, șaizeci, nouăzeci și o sută cincizeci de centimetri. Valorile diferă de distanța reală cu cel mult doi centimetri.
+
+Recapitulare. Trig trimite, Echo primește. Distanța este timpul înmulțit cu zero virgulă zero trei patru, împărțit la doi. Pulse In se folosește cu timeout. Treptele de distanță aduc lumini și sunete. Map și constrain fac din distanță un bip proporțional.
+
+Ce urmează. În lecția șase folosești senzorul P I R și construiești o alarmă care se armează cu un buton.
 
 Succes la parcare.

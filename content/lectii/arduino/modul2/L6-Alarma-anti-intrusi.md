@@ -1,4 +1,5 @@
-# Lecția 6 — Alarma anti-intruși
+# LECȚIA 6 — Santinela
+### PIR, stare armat și sirenă
 **Modulul 2 · Senzori**  
 **Code Maker Club · Sensor Scout**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai o alarmă care sună când detectează mișcare, dar **doar dacă e armată**.  
-**Minim:** PIR + LED: LED-ul se aprinde când se mișcă ceva.  
-**Complet:** Minim + **buton de armare/dezarmare** + **sirenă** + LED de stare (armat / dezarmat).
-
-## De ce contează
-Alarmele din case, magazine și lifturi folosesc senzori PIR. Aici înveți și un concept important: **starea** unui sistem (armat sau nu).
+## Ce facem azi
+La finalul orei ai **două proiecte**: **Santinela** (o alarmă care se armează cu un buton și sună la mișcare) și o **Santinelă cu întârziere de ieșire**, care îți dă 5 secunde să pleci și numără alarmele. Alarmele din case și din magazine funcționează exact așa.
 
 ---
 
@@ -21,13 +17,25 @@ Alarmele din case, magazine și lifturi folosesc senzori PIR. Aici înveți și 
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recap L5 · cum simțim ceva |
-| 10–30 | Circuitul cu PIR |
-| 30–60 | Detectarea mișcării |
-| 60–105 | Armare cu buton + sirenă |
-| 105–120 | Recap, quiz, galerie |
+| 0–10 | Recap L5 · senzori și praguri |
+| 10–25 | Cum merge senzorul PIR |
+| 25–50 | Minim · mișcare = LED |
+| 50–75 | **Proiectul 1** · alarmă armabilă cu sirenă |
+| 75–110 | **Proiectul 2** · întârziere de ieșire și contor de alarme |
+| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme |
 
 **Componente azi:** Arduino Uno · Breadboard · **PIR Sensor** · Pushbutton · 2 × LED (verde, roșu) · 2 × Resistor 220 Ω · Piezo · fire
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `millis()` | Milisecundele de la pornire | `unsigned long acum = millis();` |
+| `unsigned long` | Număr mare, fără minus, pentru timp | `unsigned long armatLa = 0;` |
+| `(millis() / 250) % 2` | Dă pe rând 0 și 1, la fiecare 250 ms: clipire fără `delay` | `digitalWrite(ROSU, (millis() / 250) % 2);` |
+| detectarea frontului | Numără **schimbarea** „fără mișcare → mișcare” | `if (miscare && !miscareAnterioara) { ... }` |
 
 ---
 
@@ -155,6 +163,84 @@ void loop() {
 - [ ] Am încercat fiecare situație din listă  
 - [ ] Am notat ce nu a mers și am corectat  
 
+### 6) Proiectul 2 — Întârziere de ieșire
+O alarmă adevărată nu sună imediat ce o armezi: îți dă timp să pleci din cameră. Notăm **momentul armării** și considerăm alarma **activă** abia după 5 secunde. Cât timp așteaptă, LED-ul roșu **clipește**. Circuitul e cel de la proiectul 1 (PIR pe 2, buton pe 3, verde pe 5, roșu pe 6, buzzer pe 8).
+
+```cpp
+const int PIR = 2;
+const int BUTON = 3;
+const int VERDE = 5;
+const int ROSU = 6;
+const int BUZZER = 8;
+
+bool armat = false;
+unsigned long armatLa = 0;
+
+void setup() {
+  pinMode(PIR, INPUT);
+  pinMode(BUTON, INPUT_PULLUP);
+  pinMode(VERDE, OUTPUT);
+  pinMode(ROSU, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  if (digitalRead(BUTON) == LOW) {
+    armat = !armat;
+    armatLa = millis();
+    noTone(BUZZER);
+    delay(300);
+  }
+
+  bool activ = armat && (millis() - armatLa > 5000);
+
+  digitalWrite(VERDE, !armat);
+
+  if (armat && !activ) {
+    digitalWrite(ROSU, (millis() / 250) % 2);
+  } else {
+    digitalWrite(ROSU, armat);
+  }
+
+  if (activ && digitalRead(PIR) == HIGH) {
+    tone(BUZZER, 1000);
+  } else {
+    noTone(BUZZER);
+  }
+}
+```
+
+`millis() - armatLa > 5000` înseamnă „au trecut mai mult de 5 secunde de la armare”. `(millis() / 250) % 2` alternează între 0 și 1, deci LED-ul clipește de 2 ori pe secundă.
+
+**Gata când:**  
+- [ ] După armare, LED-ul roșu clipește timp de 5 secunde, iar mișcarea nu declanșează nimic  
+- [ ] După 5 secunde roșul rămâne aprins, iar mișcarea pornește sunetul  
+
+### 7) Contorul de alarme
+Vrem să știm **de câte ori** a intrat cineva, nu cât timp a stat în fața senzorului. Numărăm doar **schimbarea** „fără mișcare → mișcare” (același truc de detectare a frontului ca la un buton):
+
+```cpp
+int alarme = 0;
+bool miscareAnterioara = false;
+```
+
+Apoi, în `loop()`, după ce ai calculat `activ`:
+
+```cpp
+  bool miscare = (digitalRead(PIR) == HIGH);
+
+  if (activ && miscare && !miscareAnterioara) {
+    alarme++;
+    Serial.print("Alarma #");
+    Serial.println(alarme);
+  }
+  miscareAnterioara = miscare;
+```
+
+**Gata când:**  
+- [ ] O singură trecere prin fața senzorului dă o singură alarmă în Serial Monitor  
+- [ ] Contorul crește la fiecare intrare nouă: „Alarma #1”, „Alarma #2”  
+
 ---
 
 ## Greșeli frecvente
@@ -162,7 +248,9 @@ void loop() {
 2. **Butonul schimbă starea de mai multe ori** — lipsește `delay` după apăsare.  
 3. **Sună și dezarmat** — condiția nu conține `armat &&`.  
 4. **Sirena nu se oprește** — lipsește `noTone`.  
-5. **LED-urile inverse** — ai pus `armat` unde trebuia `!armat`.
+5. **LED-urile inverse** — ai pus `armat` unde trebuia `!armat`.  
+6. **LED-ul roșu nu clipește** — folosești `delay` în loc de `millis()`, sau ai uitat `armatLa = millis();` la armare.  
+7. **Alarma se numără de zeci de ori** — numeri tot timpul cât e mișcare, nu doar schimbarea.
 
 ---
 
@@ -174,6 +262,7 @@ void loop() {
 |--|------------|
 | **Minim** | PIR aprinde un LED |
 | **Complet** | Minim + armare cu buton + sirenă + 2 LED-uri de stare |
+| **Proiectul 2** | Întârziere de ieșire de 5 secunde + contor de alarme |
 
 ### Pasul 1 — Minim
 - [ ] PIR pe pin 2  
@@ -184,17 +273,28 @@ void loop() {
 - [ ] Sirena din funcție  
 - [ ] Numele `A2_L06` e corect
 
+### Pasul 3 — Proiectul 2
+- [ ] LED-ul roșu clipește 5 secunde după armare  
+- [ ] Mișcarea nu sună în timpul întârzierii  
+- [ ] „Alarma #n” apare o singură dată pentru fiecare intrare
+
 ---
 
-## Bonus
-- [ ] **Întârziere de ieșire:** după armare, aștepți 5 secunde înainte să devină activă  
-- [ ] Un contor care afișează în Serial Monitor câte alarme au fost
+## Bonus ★★★ — Provocare: Jurnalul alarmei
+*Doar dacă ai terminat Proiectul 2.*
 
-## Recapitulare rapidă
+Alarma ține minte **când** a sunat.
+
+- [ ] Fiecare alarmă se scrie în Serial Monitor cu momentul ei, de exemplu **„Alarma #2 la 41 s”** (`millis() / 1000`)  
+- [ ] **Apăsare lungă:** dezarmezi doar dacă ții butonul **2 secunde**, nu la o atingere  
+- [ ] Testezi **3 intruziuni** la momente diferite, la cel puțin 2 secunde una de alta, și verifici că jurnalul arată timpi crescători
+
+## Recapitulare pe scurt
 1. PIR dă `HIGH` când vede mișcare  
 2. `bool armat` ține **starea** sistemului  
 3. `!` inversează o valoare  
-4. `&&` înseamnă „și”: ambele condiții trebuie să fie adevărate
+4. `&&` înseamnă „și”: ambele condiții trebuie să fie adevărate  
+5. `millis()` măsoară timpul fără să oprească programul
 
 ## Pe placa reală *(opțional)*
 PIR-ul fizic (HC-SR501) are 2 potențiometre mici: sensibilitate și durată. Alimentează-l la 5V.
@@ -202,7 +302,13 @@ PIR-ul fizic (HC-SR501) are 2 potențiometre mici: sensibilitate și durată. Al
 ## Quiz scurt
 - Ce face `armat = !armat`?  
 - De ce avem `delay(300)` după buton?  
-- Ce ar face alarma dacă am scrie `||` în loc de `&&`?
+- Ce ar face alarma dacă am scrie `||` în loc de `&&`?  
+- De ce numărăm doar schimbarea „fără mișcare → mișcare”, nu tot timpul cât e mișcare?
 
 ## Temă
 Desenează schema unei alarme pentru camera ta. Unde ai pune senzorul PIR și de ce?
+
+---
+
+## Ce urmează — Lecția 7
+În **lecția 7** măsori umiditatea solului și construiești un ghiveci care cere apă.

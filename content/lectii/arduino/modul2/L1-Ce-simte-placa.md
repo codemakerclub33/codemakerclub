@@ -1,4 +1,5 @@
-# Lecția 1 — Ce simte placa?
+# LECȚIA 1 — Jurnalul plăcii
+### Serial Monitor și citirea valorilor
 **Modulul 2 · Senzori**  
 **Code Maker Club · Sensor Scout**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei afișezi în Serial Monitor valorile unui potențiometru și ale unui buton, într-un format ușor de citit.  
-**Minim:** valoarea potențiometrului (0–1023) și starea butonului afișate pe un rând, la fiecare 200 ms.  
-**Complet:** Minim + tensiunea în **volți** (cu zecimale) și un mesaj text („mic / mediu / mare”).
-
-## De ce contează
-Un senzor nu face nimic singur: trimite **un număr**. Dacă știi să citești și să **vezi** numărul, poți face orice cu el. Serial Monitor e „fereastra” ta în mintea plăcii, pe care o vei folosi în tot modulul.
+## Ce facem azi
+La finalul orei ai **două proiecte**: **Jurnalul plăcii** (valorile unui potențiometru și ale unui buton, afișate în Serial Monitor, într-un format ușor de citit) și **Voltmetrul cu bară** (aceeași valoare, desenată ca o bară care crește și scade). Un senzor nu face nimic singur: trimite **un număr**. Dacă știi să citești și să **vezi** numărul, poți face orice cu el. Serial Monitor e „fereastra” ta în mintea plăcii, pe care o vei folosi în tot modulul.
 
 ---
 
@@ -22,12 +18,26 @@ Un senzor nu face nimic singur: trimite **un număr**. Dacă știi să citești 
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap Modul 1 · ce e un senzor |
-| 10–30 | Circuitul cu potențiometru + buton |
-| 30–60 | `Serial.print` / `Serial.println` |
-| 60–95 | Volți cu zecimale (`float`) + mesaje |
-| 95–120 | Recap, quiz, galerie |
+| 10–25 | Circuitul cu potențiometru + buton |
+| 25–50 | `Serial.print` / `Serial.println` |
+| 50–75 | **Proiectul 1** · volți cu zecimale (`float`) + mesaje |
+| 75–110 | **Proiectul 2** · voltmetrul cu bară |
+| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme |
 
 **Componente azi:** Arduino Uno · Breadboard · Potentiometer · Pushbutton · fire
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `Serial.begin(9600)` | Deschide comunicarea cu calculatorul, o dată, în `setup()` | `Serial.begin(9600);` |
+| `Serial.print` / `Serial.println` | Scrie în Serial Monitor, fără / cu rând nou | `Serial.println(valoare);` |
+| `analogRead(A0)` | Citește senzorul, valori de la 0 la 1023 | `int valoare = analogRead(A0);` |
+| `float` | Număr cu zecimale | `float volti = valoare * 5.0 / 1023.0;` |
+| `map(x, 0, 1023, 0, 20)` | Convertește un interval în altul *(din Modulul 1)* | `int bara = map(valoare, 0, 1023, 0, 20);` |
+| `for` | Repetă de un număr de ori *(din Modulul 1)* | `for (int i = 0; i < 20; i++) { ... }` |
 
 ---
 
@@ -146,6 +156,80 @@ void loop() {
 
 Un `int` împărțit la un `int` dă tot întreg; de aceea scriem `5.0` (cu zecimală) ca să obținem rezultat cu zecimale.
 
+### 7) Proiectul 2 — Voltmetrul cu bară
+Aceeași valoare, dar desenată: cu cât rotești mai mult, cu atât bara are mai multe `#`. Folosim `map` ca să trecem de la 0–1023 la 0–20 și un `for` care scrie 20 de caractere: `#` pentru partea plină, `.` pentru rest.
+
+```cpp
+const int POT = A0;
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  int valoare = analogRead(POT);
+  int bara = map(valoare, 0, 1023, 0, 20);
+  int procent = map(valoare, 0, 1023, 0, 100);
+
+  Serial.print("[");
+  for (int i = 0; i < 20; i++) {
+    if (i < bara) {
+      Serial.print("#");
+    } else {
+      Serial.print(".");
+    }
+  }
+  Serial.print("] ");
+  Serial.print(procent);
+  Serial.println(" %");
+  delay(300);
+}
+```
+
+La potențiometru la mijloc vezi aproximativ `[##########..........] 50 %`.
+
+**Gata când:**  
+- [ ] Bara are mereu **20** de caractere între paranteze  
+- [ ] Bara crește când rotești potențiometrul, iar procentul se potrivește  
+
+### 8) Pauza cu butonul
+Cât ții butonul apăsat, bara **îngheață**: nu se mai scrie nimic. Butonul e `INPUT_PULLUP`, deci **neapăsat** înseamnă `HIGH`.
+
+```cpp
+const int POT = A0;
+const int BUTON = 2;
+
+void setup() {
+  pinMode(BUTON, INPUT_PULLUP);
+  Serial.begin(9600);
+}
+
+void loop() {
+  if (digitalRead(BUTON) == HIGH) {
+    int valoare = analogRead(POT);
+    int bara = map(valoare, 0, 1023, 0, 20);
+    int procent = map(valoare, 0, 1023, 0, 100);
+
+    Serial.print("[");
+    for (int i = 0; i < 20; i++) {
+      if (i < bara) {
+        Serial.print("#");
+      } else {
+        Serial.print(".");
+      }
+    }
+    Serial.print("] ");
+    Serial.print(procent);
+    Serial.println(" %");
+  }
+  delay(300);
+}
+```
+
+**Gata când:**  
+- [ ] Cât ții butonul apăsat, nu apar rânduri noi  
+- [ ] Când îl lași, bara pornește din nou  
+
 ---
 
 ## Greșeli frecvente
@@ -153,7 +237,9 @@ Un `int` împărțit la un `int` dă tot întreg; de aceea scriem `5.0` (cu zeci
 2. **Caractere ciudate** — viteza din cod (`9600`) trebuie să fie aceeași ca în monitor.  
 3. **Volți = 0 sau 4** — ai scris `5 / 1023` (împărțire întreagă = 0). Scrie `5.0 / 1023.0`.  
 4. **Se derulează prea repede** — lipsește `delay`.  
-5. **Butonul arată mereu 0** — ai uitat `INPUT_PULLUP`.
+5. **Butonul arată mereu 0** — ai uitat `INPUT_PULLUP`.  
+6. **Bara are altă lungime** — `for` trebuie să meargă de la `0` până la `i < 20`, iar `map` să dea valori între `0` și `20`.  
+7. **Pauza merge invers** — cu `INPUT_PULLUP`, butonul neapăsat e `HIGH`.
 
 ---
 
@@ -165,6 +251,7 @@ Un `int` împărțit la un `int` dă tot întreg; de aceea scriem `5.0` (cu zeci
 |--|------------|
 | **Minim** | Potențiometru + buton în Serial Monitor |
 | **Complet** | Minim + volți cu 2 zecimale + mesaj mic / mediu / mare |
+| **Proiectul 2** | Voltmetrul cu bară de 20 de caractere + procent, cu pauză pe buton |
 
 ### Pasul 1 — Minim
 - [ ] Potențiometru pe A0, buton pe pin 2  
@@ -175,17 +262,28 @@ Un `int` împărțit la un `int` dă tot întreg; de aceea scriem `5.0` (cu zeci
 - [ ] Mesajul se schimbă după zonă  
 - [ ] Numele `A2_L01` e corect
 
+### Pasul 3 — Proiectul 2
+- [ ] Bară de **20** de caractere, cu `map` și `for`  
+- [ ] Procentul afișat lângă bară  
+- [ ] Pauză cât ții butonul apăsat
+
 ---
 
-## Bonus
-- [ ] Afișează și **procentul** (0–100%) cu `map`  
-- [ ] Înlocuiește mesajele cu **5 zone** în loc de 3
+## Bonus ★★★ — Provocare: Cinci zone
+*Doar dacă ai terminat Proiectul 2.*
 
-## Recapitulare rapidă
+Voltmetrul spune și **în cuvinte** cât de sus e potențiometrul.
+
+- [ ] **5 zone** în loc de 3, cu praguri la 205, 410, 614 și 819  
+- [ ] Mesajele: foarte mic, mic, mediu, mare, foarte mare, afișate lângă bară  
+- [ ] Testezi cu potențiometrul la 0 %, 25 %, 50 %, 75 % și 100 % și completezi un tabel: **poziția · bara · zona**. Toate cele 5 rânduri trebuie să se potrivească  
+
+## Recapitulare pe scurt
 1. `Serial.begin(9600)` o dată, în `setup()`  
 2. `Serial.print` / `println` afișează texte și numere  
 3. `float` e pentru zecimale  
-4. Senzorul trimite un **număr**; tu decizi ce înseamnă
+4. Senzorul trimite un **număr**; tu decizi ce înseamnă  
+5. `map` + `for` pot transforma un număr într-o **bară** pe care o vezi
 
 ## Pe placa reală *(opțional)*
 Conectezi placa prin USB, deschizi **Serial Monitor** în Arduino IDE (`Ctrl+Shift+M`) la 9600 baud.
@@ -193,7 +291,13 @@ Conectezi placa prin USB, deschizi **Serial Monitor** în Arduino IDE (`Ctrl+Shi
 ## Quiz scurt
 - Ce face `Serial.println`?  
 - De ce scriem `5.0` și nu `5`?  
-- Ce valoare ar da `analogRead` dacă potențiometrul e la mijloc?
+- Ce valoare ar da `analogRead` dacă potențiometrul e la mijloc?  
+- Câte `#` are bara când potențiometrul e la jumătate?
 
 ## Temă
 Alege o valoare din casă pe care ai vrea s-o citești (temperatură, lumină, zgomot) și scrie ce senzor ți-ar trebui.
+
+---
+
+## Ce urmează — Lecția 2
+În **lecția 2** folosești un fotorezistor ca să aprinzi singur un LED când se face întuneric.

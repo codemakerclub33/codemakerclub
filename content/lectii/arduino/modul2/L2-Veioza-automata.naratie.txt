@@ -2,9 +2,9 @@ Lecția doi din Modulul doi. Veioza automată.
 
 Astăzi folosești un fotorezistor, adică un senzor de lumină, ca să aprinzi singur un LED când se face întuneric. Proiectul se numește Veioza mea. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero doi.
 
-Obiectivul. La final ai o lampă care se aprinde în întuneric și se stinge la lumină. Minim: fotorezistor pe A zero, LED pe pinul nouă, aprins sub un prag ales de tine. Complet: minim, plus luminozitate proporțională, adică cu cât este mai întuneric, cu atât lumina este mai puternică, și histerezis, ca LED-ul să nu clipească la limită.
+Ce facem azi. La final ai două proiecte: Veioza mea, un LED care se aprinde singur când se face întuneric, și Lumina de noapte cu trei stări: zi, amurg și noapte. Lămpile de stradă, luminile din telefon și farurile automate folosesc același lucru: un senzor de lumină și un prag.
 
-De ce contează. Lămpile de stradă, luminile din telefon și farurile automate folosesc același lucru: un senzor de lumină și un prag.
+Instrucțiuni noi azi. Const int dă un nume unei valori pe care o poți schimba ușor. If compară valoarea senzorului cu un prag. Map cu intervalul inversat face lumina mai puternică pe măsură ce se face mai întuneric. Constrain taie valorile care ies din interval. Bool ține minte starea LED-ului și ajută la histerezis.
 
 Primul pas. Divizorul de tensiune. Fotorezistorul își schimbă rezistența după lumină, dar Arduino citește tensiune. De aceea îl punem în serie cu un rezistor fix de zece kiloohmi. Cinci volți merge la fotorezistor. Celălalt picior al lui merge la A zero și la rezistorul de zece kiloohmi, iar rezistorul merge la GND. LED-ul merge la pinul nouă printr-un rezistor de două sute douăzeci de ohmi. La lumină multă, A zero citește valori mari. La întuneric, valori mici.
 
@@ -16,10 +16,18 @@ Al patrulea pas, pentru Complet. Lumină proporțională. Inversezi intervalul �
 
 Al cincilea pas. Histerezis. Dacă lumina este exact la prag, valoarea sare puțin în sus și în jos și LED-ul clipește. Soluția: două praguri, unul pentru aprindere și altul, puțin mai mare, pentru stingere.
 
-Greșeli frecvente. LED-ul nu reacționează: fotorezistorul nu este legat și la A zero, și la rezistorul de zece kiloohmi. Merge invers: compari cu mai mare în loc de mai mic, sau ai inversat cinci volți cu GND. Valori fixe, mereu zero sau o mie douăzeci și trei: lipsește rezistorul. LED-ul clipește la limită: folosește histerezisul. Prag prea mic sau prea mare: recitește valorile din Serial Monitor.
+Al șaselea pas. Proiectul doi, lumina de noapte cu trei stări. Folosești aceeași schemă, cu fotorezistorul la A zero și LED-ul la pinul nouă. Acum alegi între trei stări, cu if și else if. Mai întâi verifici dacă lumina este peste șase sute: este zi și LED-ul este stins. Apoi, dacă este peste trei sute, este amurg și LED-ul luminează slab, cu analog Write de șaizeci. Restul este noapte, iar LED-ul luminează puternic, cu analog Write de două sute cincizeci și cinci. În Serial Monitor scrii starea: zi, amurg sau noapte. Ordinea contează.
 
-Proiectul de azi. Veioza mea. Minim înseamnă aprindere sub prag. Complet înseamnă lumină proporțională și histerezis.
+Al șaptelea pas. Modul somn. Adaugi un buton, cu un picior la pinul doi și piciorul diagonal la GND, cu input pull up. Cât ții butonul apăsat, LED-ul rămâne stins, oricât de întuneric ar fi, iar Serial Monitor scrie mod somn. Butonul neapăsat înseamnă high.
 
-Recapitulare. Fotorezistor plus rezistor fix înseamnă divizor de tensiune. Pragul se verifică cu if. Map și constrain dau reglaj fin. Histerezis înseamnă două praguri, fără clipiri.
+Greșeli frecvente. LED-ul nu reacționează: fotorezistorul nu este legat și la A zero, și la rezistorul de zece kiloohmi. Merge invers: compari cu mai mare în loc de mai mic, sau ai inversat cinci volți cu GND. Valori fixe, mereu zero sau o mie douăzeci și trei: lipsește rezistorul. LED-ul clipește la limită: folosește histerezisul. Prag prea mic sau prea mare: recitește valorile din Serial Monitor. Amurgul nu apare: ordinea din if și else if este greșită, verifici întâi peste șase sute, apoi peste trei sute. Modul somn merge invers: cu input pull up, butonul neapăsat este high, iar apăsat este low.
+
+Proiectul de azi. Veioza mea și lumina de noapte. Minim înseamnă aprindere sub prag. Complet înseamnă lumină proporțională și histerezis. Proiectul doi înseamnă lumina de noapte cu trei stări și modul somn.
+
+Provocare, trei stele. Două LED-uri cu histerezis. Un al doilea LED, la pinul zece: la amurg se aprinde doar primul, iar la noapte se aprind amândouă. Pragurile au histerezis de plus minus treizeci. Testezi cinci niveluri de lumină și completezi un tabel cu starea așteptată. Cu lumina fixă la prag, timp de zece secunde, nu trebuie să apară nicio clipire.
+
+Recapitulare. Fotorezistor plus rezistor fix înseamnă divizor de tensiune. Pragul se verifică cu if. Map și constrain dau reglaj fin. Histerezis înseamnă două praguri, fără clipiri. Mai multe praguri dau mai multe stări: zi, amurg și noapte.
+
+Ce urmează. În lecția trei citești temperatura cu senzorul T M P treizeci și șase și o transformi în grade Celsius.
 
 Succes cu veioza.

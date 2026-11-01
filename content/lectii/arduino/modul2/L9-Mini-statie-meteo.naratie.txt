@@ -2,9 +2,9 @@ Lecția nouă din Modulul doi. Mini stație meteo.
 
 Astăzi combini doi senzori, temperatură și lumină, într-o mică stație meteo, cu raport în Serial Monitor. Proiectul se numește Stația mea meteo. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero nouă.
 
-Obiectivul. La final ai o stație care măsoară temperatura și lumina și scrie un raport la fiecare două secunde. Minim: temperatura în grade Celsius și lumina în procente, afișate în Serial Monitor. Complet: minim, plus minimul și maximul de la pornire, mesaje, zi sau noapte și frig, plăcut sau cald, și un LED care clipește la fiecare raport.
+Ce facem azi. La final ai două proiecte: Stația meteo, cu temperatură, lumină, minime și maxime și mesaje, și o stație cu buton de resetare și medie, care netezește citirile. Stațiile meteo adevărate fac același lucru: măsoară, rețin extremele și calculează medii.
 
-De ce contează. Stațiile meteo adună mai multe date și le interpretează. Azi faci acest pas: de la numere la informații.
+Instrucțiuni noi azi. Un vector ține cinci numere într-o singură variabilă. Cu un index scrii în poziția dorită. Index plus unu, rest la cinci, ține indexul între zero și patru și îl întoarce la început. For adună toate valorile din vector.
 
 Primul pas. Conexiuni. T M P treizeci și șase merge la cinci volți, GND și A unu. Fotorezistorul merge de la cinci volți la A zero și, prin rezistorul de zece kiloohmi, la GND. LED-ul este la pinul treisprezece, cu rezistor.
 
@@ -12,10 +12,18 @@ Al doilea pas. Minim. Scrii câte o funcție pentru fiecare senzor: una returnea
 
 Al treilea pas, pentru Complet. Ții minte cea mai mică și cea mai mare temperatură în variabile globale și le actualizezi cu if. Apoi interpretezi datele: sub cincisprezece grade, frig, între cincisprezece și douăzeci și cinci, plăcut, peste, cald. La lumină, dacă este puțină, spui noapte, altfel zi. LED-ul clipește la fiecare raport.
 
-Greșeli frecvente. Valori amestecate: senzorii sunt pe pinul greșit, A zero sau A unu. Minim și maxim greșite: le-ai declarat în loop, nu global, și se resetează la fiecare rundă. Raport prea des: lipsește delay de două mii. Lumină negativă: folosește constrain. Apar semne ciudate în loc de simbolul gradului: scrie simplu C.
+Al patrulea pas. Proiectul doi, buton de resetare. Adaugi un buton la pinul doi, care șterge minima și maxima. Dar un delay de două secunde ar face butonul să pară mort. De aceea îl înlocuiești cu douăzeci de pauze de o sută de milisecunde, în care verifici butonul. Astfel butonul răspunde oricând.
 
-Proiectul de azi. Stația mea meteo. Minim înseamnă temperatură și lumină. Complet înseamnă minim și maxim, mesaje și LED.
+Al cincilea pas. Media ultimelor cinci temperaturi. O citire singură poate sări, iar media este mai calmă. Un vector ține ultimele cinci valori, iar un index arată unde scrii următoarea valoare și se întoarce la zero după patru. Împarți suma la numărul de citiri, nu la cinci, ca la început media să fie corectă.
 
-Recapitulare. Funcții separate pentru fiecare senzor. Variabilele globale rețin valori între ture. Minimul și maximul se actualizează cu if. Datele devin utile când le interpretezi.
+Greșeli frecvente. Valori amestecate: senzorii sunt pe pinul greșit, A zero sau A unu. Minim și maxim greșite: le-ai declarat în loop, nu global, și se resetează la fiecare rundă. Raport prea des: lipsește delay de două mii. Lumină negativă: folosește constrain. Apar semne ciudate în loc de simbolul gradului: scrie simplu C. Butonul de resetare întârzie: ai lăsat delay de două secunde. Media este greșită la început: împarți la cinci în loc de numărul de citiri.
+
+Proiectul de azi. Stația mea meteo. Minim înseamnă două funcții și un raport. Complet înseamnă minime, maxime și mesaje. Proiectul doi înseamnă buton de resetare și media ultimelor cinci temperaturi.
+
+Provocare, trei stele. Alarma meteo. Un LED roșu la pinul doisprezece și un mesaj de avertizare când temperatura trece de treizeci de grade sau lumina scade sub zece la sută. Raportul se scrie și în formatul temperatură, punct și virgulă, lumină. Testezi patru scenarii: cald și lumină, cald și întuneric, rece și lumină, rece și întuneric, și notezi dacă alarma este corectă.
+
+Recapitulare. Funcții separate pentru fiecare senzor. Variabilele globale rețin valori între ture. Minimul și maximul se actualizează cu if. Datele devin utile când le interpretezi. Un vector și un index circular dau media ultimelor valori.
+
+Ce urmează. În lecția zece pui totul laolaltă într-un mini proiect: o casă care se protejează singură.
 
 Succes cu stația meteo.

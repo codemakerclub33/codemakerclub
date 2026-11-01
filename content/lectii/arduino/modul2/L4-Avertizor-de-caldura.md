@@ -1,4 +1,5 @@
-# Lecția 4 — Avertizor de căldură
+# LECȚIA 4 — Avertizor de căldură
+### Praguri pe trepte, buzzer și histerezis
 **Modulul 2 · Senzori**  
 **Code Maker Club · Sensor Scout**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai un avertizor cu 3 trepte, comandat de TMP36.  
-**Minim:** 3 LED-uri (verde, galben, roșu) care se aprind după temperatură.  
-**Complet:** Minim + **buzzer** care sună intermitent la roșu și **temperatura afișată** în Serial Monitor.
-
-## De ce contează
-Alarmele din frigidere, sere și cuptoare funcționează la fel: **trepte de temperatură** și o reacție pentru fiecare.
+## Ce facem azi
+La finalul orei ai **două proiecte**: **Avertizorul de căldură** (verde, galben, roșu și buzzer după temperatură) și un **Termostat cu histerezis**, care pornește și oprește un ventilator fără să clipească la limită. Așa funcționează aerul condiționat, frigiderul și ventilatorul din calculator.
 
 ---
 
@@ -21,13 +17,26 @@ Alarmele din frigidere, sere și cuptoare funcționează la fel: **trepte de tem
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recap L3 · formula °C |
-| 10–35 | Circuitul cu 3 LED-uri |
-| 35–70 | `if / else if / else` cu 3 trepte |
-| 70–100 | Buzzer intermitent |
-| 100–120 | Recap, quiz, galerie |
+| 0–10 | Recap L3 · TMP36 și formula în °C |
+| 10–25 | Circuit: 3 LED-uri + buzzer |
+| 25–50 | Trepte de temperatură cu `if / else if` |
+| 50–75 | **Proiectul 1** · avertizor cu buzzer intermitent |
+| 75–110 | **Proiectul 2** · termostat cu histerezis |
+| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme |
 
-**Componente azi:** Arduino Uno · Breadboard · TMP36 · 3 × LED (verde, galben, roșu) · 3 × Resistor 220 Ω · **Piezo** · fire
+**Componente azi:** Arduino Uno · Breadboard · TMP36 · 3 × LED (verde, galben, roșu) · **LED albastru** · 4 × Resistor 220 Ω · Piezo · fire
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `if / else if / else` | Alege o singură treaptă de temperatură | `if (c > 30) { ... } else if (c > 25) { ... }` |
+| `tone(pin, frecvență)` | Pornește sunetul pe buzzer | `tone(BUZZER, 1000);` |
+| `noTone(pin)` | Oprește sunetul | `noTone(BUZZER);` |
+| `bool ventilator` | Ține minte dacă ventilatorul merge | `bool ventilator = false;` |
+| două praguri | **Histerezis**: pornește la un prag, oprește la altul | `if (c > 28) ... else if (c < 25) ...` |
 
 ---
 
@@ -163,6 +172,60 @@ void loop() {
 - [ ] Am încercat fiecare situație din listă  
 - [ ] Am notat ce nu a mers și am corectat  
 
+### 6) Proiectul 2 — Termostat cu histerezis
+Un termostat care pornește și oprește la **aceeași** temperatură ar clipi la limită. De aceea folosește **două praguri**: pornește la 28 °C și se oprește abia la 25 °C. LED-ul **albastru** de pe pin **3** este ventilatorul (pin 3 → 220 Ω → anod · catod → GND). TMP36 rămâne la A0.
+
+```cpp
+const int SENZOR = A0;
+const int VENTILATOR = 3;
+
+bool ventilator = false;
+
+void setup() {
+  pinMode(VENTILATOR, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  float volti = analogRead(SENZOR) * 5.0 / 1023.0;
+  float c = (volti - 0.5) * 100.0;
+
+  if (c > 28) {
+    ventilator = true;
+  } else if (c < 25) {
+    ventilator = false;
+  }
+
+  digitalWrite(VENTILATOR, ventilator);
+
+  Serial.print(c, 1);
+  Serial.print(" C  Ventilator: ");
+  Serial.println(ventilator ? "PORNIT" : "oprit");
+  delay(300);
+}
+```
+
+Între 25 și 28 °C **nu se schimbă nimic**: ventilatorul rămâne cum era. Asta e histerezisul.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Ventilatorul pornește la peste 28 °C și se oprește abia sub 25 °C  
+
+### 7) Testul histerezisului
+Mută glisorul TMP36 în ordinea din tabel și completează coloana „Ce vezi”:
+
+| Temperatura | Ventilator înainte | Ventilator după |
+|-------------|--------------------|-----------------|
+| 20 °C | oprit | oprit |
+| 27 °C | oprit | oprit (încă sub 28) |
+| 29 °C | oprit | **pornit** |
+| 26 °C | pornit | pornit (încă peste 25) |
+| 24 °C | pornit | **oprit** |
+
+**Gata când:**  
+- [ ] Toate cele 5 rânduri se potrivesc cu ce vezi  
+- [ ] Poți explica de ce la 26 °C ventilatorul e uneori pornit, alteori oprit  
+
 ---
 
 ## Greșeli frecvente
@@ -170,7 +233,9 @@ void loop() {
 2. **Mereu roșu** — pragul e prea mic sau formula °C e greșită.  
 3. **Fără sunet** — piezo nu e pe pin 8 sau n-ai `tone`.  
 4. **LED nu se aprinde** — lipsește rezistorul sau catodul nu e la GND.  
-5. **Treptele nu merg** — condițiile sunt în ordine inversă (`else if` după `else`).
+5. **Treptele nu merg** — condițiile sunt în ordine inversă (`else if` după `else`).  
+6. **Ventilatorul clipește la limită** — folosești un singur prag; îți trebuie două.  
+7. **Ventilatorul nu pornește deloc** — variabila `ventilator` e declarată în `loop()`, nu în afara funcțiilor.
 
 ---
 
@@ -182,6 +247,7 @@ void loop() {
 |--|------------|
 | **Minim** | 3 LED-uri pe trepte |
 | **Complet** | Minim + buzzer la roșu + afișare în Serial Monitor |
+| **Proiectul 2** | Termostat cu histerezis: pornește la 28 °C, oprește la 25 °C |
 
 ### Pasul 1 — Minim
 - [ ] 3 LED-uri, fiecare cu rezistor  
@@ -192,17 +258,28 @@ void loop() {
 - [ ] Serial Monitor arată temperatura  
 - [ ] Numele `A2_L04` e corect
 
+### Pasul 3 — Proiectul 2
+- [ ] LED albastru pe pin 3 ca ventilator  
+- [ ] Pornește peste 28 °C, se oprește sub 25 °C  
+- [ ] Tabelul de test completat (5 rânduri)
+
 ---
 
-## Bonus
-- [ ] LED-ul galben **clipește** în loc să stea aprins  
-- [ ] Adaugă o a patra treaptă: „îngheț” (sub 5 °C), cu LED albastru
+## Bonus ★★★ — Provocare: Patru trepte
+*Doar dacă ai terminat Proiectul 2.*
 
-## Recapitulare rapidă
+Un avertizor cu **patru nivele**, nu trei.
+
+- [ ] **Îngheț** (sub 5 °C): LED albastru · **normal** (5–29 °C): verde · **atenție** (30–44 °C): galben care **clipește** la 500 ms, cu `millis()`, nu cu `delay` · **pericol** (45 °C sau mai mult): roșu și buzzer  
+- [ ] Testezi la **0, 4, 20, 35, 44 și 50 °C** și notezi LED-ul aprins  
+- [ ] Un singur LED este aprins la un moment dat
+
+## Recapitulare pe scurt
 1. `if / else if / else` alege **o singură** ramură  
 2. Stingem toate, apoi aprindem unul  
 3. Funcția `alarma()` face codul mai curat  
-4. `tone` / `noTone` pentru sunet
+4. `tone` / `noTone` pentru sunet  
+5. Două praguri (histerezis) opresc clipirea la limită
 
 ## Pe placa reală *(opțional)*
 Ca să testezi roșul, ține senzorul TMP36 între degete (se încălzește la ~30 °C) sau schimbă pragurile.
@@ -210,7 +287,13 @@ Ca să testezi roșul, ține senzorul TMP36 între degete (se încălzește la ~
 ## Quiz scurt
 - De ce stingem toate LED-urile la începutul buclei?  
 - Ce se întâmplă dacă pragul roșu e mai mic decât cel galben?  
-- Ce face `noTone`?
+- Ce face `noTone`?  
+- De ce termostatul pornește la 28 °C și se oprește la 25 °C?
 
 ## Temă
 Alege temperaturile potrivite pentru un **frigider** (verde / galben / roșu) și scrie-le într-un tabel.
+
+---
+
+## Ce urmează — Lecția 5
+În **lecția 5** măsori distanța cu un senzor cu ultrasunete și faci o parcare inteligentă.

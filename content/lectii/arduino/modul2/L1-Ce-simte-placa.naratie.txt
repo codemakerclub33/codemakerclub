@@ -1,10 +1,10 @@
-Lecția unu din Modulul doi. Ce simte placa?
+Lecția unu din Modulul doi. Jurnalul plăcii.
 
 Astăzi înveți să asculți ce simte Arduino: citești valori cu analog Read și digital Read și le afișezi în Serial Monitor. Proiectul se numește Jurnalul plăcii. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero unu.
 
-Obiectivul. La final afișezi în Serial Monitor valorile unui potențiometru și ale unui buton, într-un format ușor de citit. Minim: valoarea potențiometrului, de la zero la o mie douăzeci și trei, și starea butonului, pe un rând, la fiecare două sute de milisecunde. Complet: minim, plus tensiunea în volți, cu zecimale, și un mesaj text: mic, mediu sau mare.
+Ce facem azi. La final ai două proiecte: Jurnalul plăcii, cu valorile unui potențiometru și ale unui buton afișate în Serial Monitor, într-un format ușor de citit, și Voltmetrul cu bară, aceeași valoare desenată ca o bară care crește și scade. Un senzor nu face nimic singur: trimite un număr. Dacă știi să citești numărul și să îl vezi, poți face orice cu el. Serial Monitor este fereastra ta în mintea plăcii și îl folosești în tot modulul.
 
-De ce contează. Un senzor nu face nimic singur: trimite un număr. Dacă știi să citești numărul și să îl vezi, poți face orice cu el. Serial Monitor este fereastra ta în mintea plăcii și îl folosești în tot modulul.
+Instrucțiuni noi azi. Serial punct begin de nouă mii șase sute deschide comunicarea cu calculatorul, o singură dată, în setup. Serial punct print și Serial punct println scriu în Serial Monitor, fără rând nou, respectiv cu rând nou. Analog Read de A zero citește senzorul, cu valori de la zero la o mie douăzeci și trei. Float este un număr cu zecimale, de exemplu volții. Map convertește un interval în altul, iar for repeta de un număr de ori. Pe amândouă le știi din Modulul unu.
 
 Primul pas. Conexiuni. Potențiometrul are laturile la cinci volți și la GND, iar mijlocul la A zero. Butonul are un picior la pinul doi și piciorul diagonal la GND.
 
@@ -18,8 +18,16 @@ Al cincilea pas. Tipuri de date. Int ține un număr întreg, float un număr cu
 
 Greșeli frecvente. Serial Monitor este gol: n-ai pus Serial punct begin sau n-ai pornit simularea. Caractere ciudate: viteza din cod trebuie să fie aceeași cu cea din monitor. Volți egal zero sau patru: ai scris cinci împărțit la o mie douăzeci și trei fără zecimale, iar împărțirea întreagă dă zero. Scrie cinci virgulă zero. Se derulează prea repede: lipsește delay. Butonul arată mereu zero: ai uitat input pull up.
 
-Proiectul de azi. Jurnalul plăcii. Minim înseamnă potențiometru și buton pe un rând. Complet înseamnă și volți, și mesaj.
+Al șaselea pas. Proiectul doi, voltmetrul cu bară. Aceeași valoare, dar desenată: cu cât rotești mai mult, cu atât bara are mai multe diezi. Cu map treci de la zero la o mie douăzeci și trei la zero la douăzeci, apoi cu un for scrii douăzeci de caractere: diez pentru partea plină și punct pentru rest. Lângă bară afișezi procentul, tot cu map. La potențiometru la mijloc vezi aproape jumătate din bară plină.
 
-Recapitulare. Serial begin se pune o dată, în setup. Print și println afișează texte și numere. Float este pentru zecimale. Senzorul trimite un număr, iar tu decizi ce înseamnă.
+Al șaptelea pas. Pauza cu butonul. Cât ții butonul apăsat, bara îngheață: nu se mai scrie nimic. Butonul este input pull up, deci neapăsat înseamnă high. Pui tot afișajul într-un if care verifică dacă butonul este high.
+
+Proiectul de azi. Jurnalul plăcii și voltmetrul cu bară. Minim înseamnă potențiometru și buton pe un rând. Complet înseamnă și volți, și mesaj. Proiectul doi înseamnă bara de douăzeci de caractere, cu procent și pauză pe buton.
+
+Provocare, trei stele. Cinci zone. Voltmetrul spune și în cuvinte cât de sus este potențiometrul: cinci zone în loc de trei, cu pragurile la două sute cinci, patru sute zece, șase sute paisprezece și opt sute nouăsprezece, și mesajele foarte mic, mic, mediu, mare și foarte mare, lângă bară. Testezi cu potențiometrul la zero, douăzeci și cinci, cincizeci, șaptezeci și cinci și o sută la sută și completezi un tabel cu poziția, bara și zona. Toate cele cinci rânduri trebuie să se potrivească.
+
+Recapitulare. Serial begin se pune o dată, în setup. Print și println afișează texte și numere. Float este pentru zecimale. Senzorul trimite un număr, iar tu decizi ce înseamnă. Map și for pot transforma un număr într-o bară pe care o vezi.
+
+Ce urmează. În lecția doi folosești un fotorezistor ca să aprinzi singur un LED când se face întuneric.
 
 Succes cu jurnalul.

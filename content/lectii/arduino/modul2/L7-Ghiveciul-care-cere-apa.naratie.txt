@@ -2,9 +2,9 @@ Lecția șapte din Modulul doi. Ghiveciul care cere apă.
 
 Astăzi un senzor de umiditate a solului îți spune când planta are nevoie de apă. Proiectul se numește Planta mea. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero șapte.
 
-Obiectivul. La final ai un ghiveci care anunță când este uscat. Minim: senzor de umiditate și LED roșu care se aprinde când solul este uscat. Complet: minim, plus procentul de umiditate, de la zero la o sută, în Serial Monitor, trei LED-uri, uscat, în regulă și ud, și un buzzer care îți amintește.
+Ce facem azi. La final ai două proiecte: Planta mea, cu umiditatea în procente, trei LED-uri și buzzer, și o pompă automată, care pornește când solul este uscat și se oprește când este destul de ud. Sistemele de irigații inteligente funcționează așa.
 
-De ce contează. Sistemele de irigații inteligente economisesc apă și salvează plante. Ele pornesc de la ce faci azi: citesc, compară și anunță.
+Instrucțiuni noi azi. Millis dă milisecundele de la pornire și face reamintiri fără delay. Unsigned long ține minte când ai făcut ceva ultima dată. Procentul anterior te lasă să compari valoarea de acum cu cea de dinainte. Două praguri diferite dau histerezis: pornește sub un prag și oprește peste altul.
 
 Primul pas. Conexiuni. Senzorul de sol are semnal la A zero, alimentare la cinci volți și GND. LED-ul roșu, pentru uscat, este la pinul patru, cel verde, pentru în regulă, la pinul cinci, iar cel albastru, pentru prea ud, la pinul șase. Piezo este la pinul opt. În Tinkercad dai click pe senzor și muți glisorul de umiditate.
 
@@ -14,10 +14,18 @@ Al treilea pas. Minim, mi-e sete. Dacă valoarea trece sub pragul ales pentru us
 
 Al patrulea pas, pentru Complet. Cu map transformi valorile senzorului într-o scală de la zero la o sută, iar cu constrain o ții în limite, chiar dacă senzorul dă o valoare mai mare. Apoi alegi LED-ul după procent. Buzzerul sună scurt, cu durată în tone, ca să nu sune continuu.
 
-Greșeli frecvente. Mereu zero la sută: senzorul nu este alimentat sau semnalul nu este la A zero. Procente negative: ai uitat constrain sau calibrarea este greșită. Prea sensibil: mărește zona în regulă. Buzzerul sună continuu: folosește tone cu durată, al treilea argument. Merge invers cu senzorul real: inversează valorile în map.
+Al cincilea pas. Proiectul doi, reamintiri. O plantă uitată rămâne uscată. Adaugi o reamintire la zece secunde: cât timp solul este uscat, buzzerul sună scurt, dar nu mai des de o dată la zece secunde. Ții minte momentul ultimei reamintiri într-o variabilă unsigned long și compari cu millis. Nu folosești delay.
 
-Proiectul de azi. Planta mea. Minim înseamnă LED roșu când solul este uscat. Complet înseamnă procente, trei LED-uri și buzzer.
+Al șaselea pas. Mulțumesc. Planta poate spune și mulțumesc. Ții minte procentul de la runda trecută și, dacă a crescut brusc, cu mai mult de douăzeci de puncte, înseamnă că ai udat-o și scrii mesajul în Serial Monitor. La final actualizezi procentul anterior.
 
-Recapitulare. Senzorul de sol dă o valoare analogică. Calibrăm înainte să alegem praguri. Map și constrain dau procente sigure. Mai multe trepte dau mai multă informație.
+Greșeli frecvente. Mereu zero la sută: senzorul nu este alimentat sau semnalul nu este la A zero. Procente negative: ai uitat constrain sau calibrarea este greșită. Prea sensibil: mărește zona în regulă. Buzzerul sună continuu: folosește tone cu durată, al treilea argument. Merge invers cu senzorul real: inversează valorile în map. Planta cere apă la fiecare secundă: ai uitat să notezi momentul reamintirii. Mulțumesc nu apare niciodată: procentul anterior este declarat în loop, nu în afara funcțiilor.
+
+Proiectul de azi. Planta mea. Minim înseamnă LED roșu când solul este uscat. Complet înseamnă procente, trei LED-uri și buzzer. Proiectul doi înseamnă reamintire la zece secunde și mesajul de mulțumire.
+
+Provocare, trei stele. Pompa automată. Un LED albastru la pinul trei este pompa. Pornește sub treizeci la sută și se oprește abia peste șaizeci la sută, adică are histerezis. Testezi cu glisorul de la zero la o sută și înapoi la zero: pompa pornește o singură dată și se oprește o singură dată. Între treizeci și șaizeci la sută pompa își păstrează starea de dinainte.
+
+Recapitulare. Senzorul de sol dă o valoare analogică. Calibrăm înainte să alegem praguri. Map și constrain dau procente sigure. Mai multe trepte dau mai multă informație. Reamintirile cu millis nu blochează programul.
+
+Ce urmează. În lecția opt folosești senzori de înclinare și construiești o nivelă digitală cu pedometru.
 
 Succes cu planta ta.

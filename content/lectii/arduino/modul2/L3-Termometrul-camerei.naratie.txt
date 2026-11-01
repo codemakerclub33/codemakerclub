@@ -2,9 +2,9 @@ Lecția trei din Modulul doi. Termometrul camerei.
 
 Astăzi citești temperatura cu senzorul T M P treizeci și șase și o transformi în grade Celsius. Proiectul se numește Termometrul meu. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero trei.
 
-Obiectivul. La final ai un termometru care afișează temperatura în Serial Monitor. Minim: senzorul pe A zero, conversie în grade Celsius, valoare afișată la fiecare secundă. Complet: minim, plus media a zece citiri, mai stabilă, și temperatura și în grade Fahrenheit.
+Ce facem azi. La final ai două proiecte: Termometrul meu, cu temperatura în Serial Monitor, în grade Celsius și Fahrenheit, și Termostatul de seră, cu trei LED-uri care arată dacă e prea frig, bine sau prea cald. Temperatura este cea mai folosită măsurătoare: termostate, frigidere, sere, vreme. Azi vezi cum o tensiune devine grade, pas cu pas.
 
-De ce contează. Temperatura este cea mai folosită măsurătoare: termostate, frigidere, sere, vreme. Azi vezi cum o tensiune devine grade, pas cu pas.
+Instrucțiuni noi azi. Formula grade egal volți minus zero virgulă cinci, înmulțit cu o sută, transformă tensiunea în grade Celsius. O funcție float poate da înapoi un rezultat, cu return. For repetă de zece ori, ca să aduni zece citiri. If, else if și else aleg o singură ramură, după temperatură.
 
 Primul pas. Conexiuni. T M P treizeci și șase are trei picioare. Ține senzorul cu partea plată spre tine: ordinea este cinci volți, semnal, GND. Semnalul din mijloc merge la A zero. Dacă pui senzorul invers, citirile ies aiurea, deci verifică numele picioarelor.
 
@@ -16,10 +16,18 @@ Al patrulea pas, pentru Complet. Citirile tremură puțin. Citești de zece ori,
 
 Al cincilea pas. Verificarea. Compari rezultatul cu valori cunoscute, de exemplu o cameră obișnuită, în jur de douăzeci de grade, sau senzorul ținut în mână.
 
-Greșeli frecvente. Temperatură ciudată, de exemplu o sută cincizeci de grade: picioarele senzorului sunt inversate. Mereu zero sau mereu cinci volți: firul de semnal nu merge la A zero. Împărțire întreagă: ai scris cinci împărțit la o mie douăzeci și trei fără zecimale. Eroare la return: o funcție float trebuie să returneze un float. Valori care sar mult: folosește media citirilor.
+Al șaselea pas. Proiectul doi, termostatul de seră. Într-o seră, temperatura trebuie să rămână între două limite. Aprinzi un LED după zonă: albastru pentru prea frig, verde pentru bine, roșu pentru prea cald. LED-urile sunt la pinii cinci, șase și șapte, fiecare cu rezistor, iar senzorul rămâne la A zero. Folosești funcția cu media a zece citiri. La începutul buclei stingi toate LED-urile, apoi aprinzi doar unul: sub optsprezece grade albastrul, până la douăzeci și opt verdele, peste, roșul. În Serial Monitor scrii zona și temperatura.
 
-Proiectul de azi. Termometrul meu. Minim înseamnă grade Celsius în Serial Monitor. Complet înseamnă medie și Fahrenheit.
+Al șaptelea pas. Minima și maxima de la pornire. Adaugi două variabile globale, în afara funcțiilor, ca să își păstreze valoarea de la o rundă la alta. Minima pornește de la o sută, iar maxima de la minus o sută, ca prima citire să le înlocuiască sigur. În loop, cu if, actualizezi minima și maxima și le afișezi.
 
-Recapitulare. T M P treizeci și șase dă zece milivolți pe grad, cu decalare de jumătate de volt. Funcția poate returna o valoare. Media citirilor liniștește senzorul.
+Greșeli frecvente. Temperatură ciudată, de exemplu o sută cincizeci de grade: picioarele senzorului sunt inversate. Mereu zero sau mereu cinci volți: firul de semnal nu merge la A zero. Împărțire întreagă: ai scris cinci împărțit la o mie douăzeci și trei fără zecimale. Eroare la return: o funcție float trebuie să returneze un float. Valori care sar mult: folosește media citirilor. LED-urile se amestecă: ai uitat să le stingi la începutul buclei. Minima și maxima se resetează: le-ai declarat în loop, nu în afara funcțiilor.
+
+Proiectul de azi. Termometrul meu și termostatul de seră. Minim înseamnă grade Celsius în Serial Monitor. Complet înseamnă medie și Fahrenheit. Proiectul doi înseamnă termostatul cu trei LED-uri, plus minima și maxima.
+
+Provocare, trei stele. Trendul temperaturii. Termometrul spune și încotro merge temperatura: la fiecare secundă compari cu citirea precedentă și scrii urcă, dacă e cu peste jumătate de grad mai mult, scade, dacă e cu peste jumătate de grad mai puțin, sau stabil. Testezi cu glisorul senzorului la zero, douăzeci și cinci și treizeci și șapte de grade: temperatura afișată diferă de cea reală cu cel mult un grad. Apoi muți glisorul și verifici că trendul se schimbă: urcă, apoi stabil, apoi scade.
+
+Recapitulare. T M P treizeci și șase dă zece milivolți pe grad, cu decalare de jumătate de volt. Funcția poate returna o valoare. Media citirilor liniștește senzorul. Praguri plus LED-uri înseamnă un termostat.
+
+Ce urmează. În lecția patru legi temperatura de lumini și sunet, cu praguri pe trepte.
 
 Succes cu termometrul.
