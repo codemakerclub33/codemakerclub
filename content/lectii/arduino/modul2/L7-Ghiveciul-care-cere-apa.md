@@ -206,8 +206,10 @@ Așa nu mai „țipă” planta la fiecare secundă, și nu folosim `delay`.
 Planta poate spune și **mulțumesc**. Ții minte procentul de la runda trecută și, dacă a **crescut brusc** (cu mai mult de 20 de puncte), înseamnă că ai udat-o:
 
 ```cpp
-int procentAnterior = 0;
+int procentAnterior = 100;
 ```
+
+Îl pornim de la 100, ca la pornire programul să nu creadă că ai udat deja planta.
 
 Apoi, în `loop()`, după ce ai calculat `procent`:
 
