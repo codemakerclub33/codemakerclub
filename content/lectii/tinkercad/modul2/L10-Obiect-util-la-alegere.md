@@ -59,16 +59,18 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 **Obiectul 1 — Obiectul tău util**
 
 ### 1) Alegi obiectul
-Alege **unul** (sau propune tu, cu acordul profesorului):
+Alege **unul** din meniu (sau propune tu **altul**, doar cu acordul profesorului, **înainte** să începi). Fiecare obiect are deja **piesa pereche**, **un Hole** și **o piesă repetată**:
 
-| Idee | Ce poți refolosi |
-|------|------------------|
-| **Creioniera** | tub gol + matrice de găuri (L6) |
-| **Suport pentru telefon** | bază lată + șanț Hole în care intră telefonul (grosime telefon + 1 mm joc; **2–3 șanțuri** egale = piesă repetată) (L2, L4) |
-| **Organizator de birou** | cutie cu 2–3 compartimente (pereți Box adăugați **după** Group) + capac cu joc (L3) |
-| **Agățătoare de chei** | placă + cârlige + găuri de montaj (L1) |
-| **Suport de lumânare LED** | tub cu ferestre rotite (L7) — doar pentru lumânare **LED**, niciodată cu flacără |
-| **Ceva al tău** | propune, cu mărimi gândite |
+| Obiect | Obiectul 1 → piesa pereche | Hole | Piesă repetată | Din lecția |
+|--------|----------------------------|------|----------------|------------|
+| **Organizator de birou** | cutie (ex. `100 × 60 × 30`) cu 2 compartimente → capac cu dop | golul cutiei, găurile pentru pixuri | găurile pentru pixuri | L3, L5, L6 |
+| **Ghiveci decorat** | ghiveci (ex. `Ø60 × 50`) cu ferestre rotite → farfurie | golul, scurgerea, ferestrele | ferestrele | L7, L8 |
+| **Raft modular** | șină cu fante egale → modul cu cepi (joc `0,5` mm) | fantele | fantele | L1, L3 |
+| **Carcasă pentru un obiect de acasă** (telecomandă, încărcător, baterie) | măsori obiectul, golul = obiect `+ 1` mm → capac cu dop | golul, decupajul pentru un port | fantele de aerisire | L9, L3 |
+| **Creioniera cu capac** | tub gol (ex. `Ø60 × 90`) cu găuri în matrice → capac cu dop | golul, găurile | găurile | L3, L6 |
+| **Altceva** | propus de tine, aprobat de profesor | — | — | — |
+
+Alegi **după ce îți place**: toate cinci folosesc aceleași unelte și se pot face în `2` ore.
 
 ### 2) Schița pe hârtie
 1. Desenezi obiectul din față și de sus  
