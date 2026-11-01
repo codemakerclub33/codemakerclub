@@ -760,13 +760,13 @@ export const lectii = [
   ...genLectii('m31', [
     'Roți dințate simple',
     'Mașinuță cu roți și axe',
-    'Morișca de vânt',
+    'Morișcă și ventilator',
     'Labirint cu bilă',
     'Puzzle 3D',
     'Set de piese de șah',
     'Zaruri personalizate',
     'Fortăreață cu pod mobil',
-    'O atracție — carusel sau roată',
+    'Carusel și roată panoramică',
     'Proiect final de modul — mecanism la alegere',
   ]),
   // Tinkercad Modul 4 — City Builder
