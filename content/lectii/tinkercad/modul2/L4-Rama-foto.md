@@ -50,7 +50,7 @@ Buzunarul din spate e o piesă făcută din **două straturi** — așa se const
 - [ ] Placa are **90 · 70 · 3** (Solid)  
 
 ### 3) Fereastra
-1. Alt **Box** → **60 · 40 · 7** → panoul Shape → **Hole**  
+1. Alt **Box** → **60 · 40 · 7** → fereastra piesei → **Hole**  
 2. Selectezi Hole-ul și placa → **L**  
 3. Click pe punctul de **mijloc** pe fiecare din cele **trei** direcții (stânga–dreapta, față–spate, sus–jos)  
 4. Hole-ul e mai gros decât placa și centrat pe înălțime → iese **2 mm sus și 2 mm jos**. *(Align poate ridica placa 2 mm de pe plan — nu-i nimic.)*  

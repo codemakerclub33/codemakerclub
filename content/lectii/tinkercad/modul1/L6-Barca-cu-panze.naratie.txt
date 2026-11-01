@@ -2,9 +2,11 @@ Lecția șase. Barca mea.
 
 Astăzi împarți un obiect real în forme simple: semisferă, pană și cilindru. Din ele faci o barcă. Proiectul se numește Barca mea. Numele fișierului este: Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero șase. Imprimanta trei D nu o folosim la oră. Azi doar proiectezi.
 
-Obiectivul. La final ai o barcă pe care o recunoști din lateral: corp, catarg și cel puțin o pânză, pe plan. Minim: corpul din Half Sphere, cu partea plată sus, un catarg și o pânză din Wedge. Nimic nu plutește, verificat din Front sau Right. Complet: minim, plus a doua pânză, steag, culori și apă, în care barca stă puțin înfundată.
+Obiectivul. La finalul orei ai o barcă recunoscută din lateral: corp, catarg și cel puțin o pânză, pe plan. Minim: Half Sphere de șaizeci pe douăzeci pe cincisprezece, cu partea plată sus, catarg de trei pe trei pe patruzeci, la paisprezece, o pânză din Wedge groasă de doi milimetri, la cincisprezece, nimic nu plutește, verificat din Front, cu cel puțin opt unelte diferite. Complet: partea a doua, cu a doua pânză oglindită, steag, apă albastră și culori, cu cel puțin șase unelte diferite.
 
 De ce contează. Înveți să privești un obiect real și să îl împarți în forme simple. Așa vei face mai târziu racheta și castelul.
+
+Ce face fiecare unealtă de azi. Half Sphere este semisfera, corpul bărcii. Wedge este pana, pentru pânze. Săgeata curbă rotește piesa, aici o sută optzeci de grade pentru barcă. Conul negru ridică catargul și pânza la înălțimea corectă. Tasta M oglindește a doua pânză. View Cube pe Front este vederea din lateral, în care verifici barca.
 
 Primul pas pe ecran. Create new design. Sus scrii numele Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero șase. Salvarea este automată. Verifici numele.
 
@@ -22,8 +24,12 @@ Greșeli frecvente. Barca are fundul plat în jos: o rotești o sută optzeci de
 
 Proiectul de azi. Barca mea.
 
-Minim înseamnă: Half Sphere cu partea plată sus, catarg și o pânză din Wedge, iar nimic nu plutește. Complet înseamnă: minim, plus a doua pânză, steag, apă și culori. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când profesorul spune: arată-mi barca din lateral, și se vede clar o barcă.
+Minim înseamnă: Half Sphere cu partea plată sus, catarg și o pânză Wedge subțire, nimic nu plutește, verificat din Front, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus a doua pânză, steag, apă și culori, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când profesorul cere arată-mi barca din lateral, iar din Front se recunoaște clar o barcă.
+
+Bonus. Schimbi culoarea pânzelor și a steagului. Provocarea, Barca cu cabină și vâsle: adaugi o cabină, un Box de doisprezece pe zece pe opt, pe punte, la înălțimea cincisprezece, și două vâsle din cilindri subțiri, rotiți cu cel puțin patruzeci și cinci de grade. Din Front și din Right, un coleg recunoaște patru părți, corp, cabină, catarg și vâsle, în cel mult treizeci de secunde.
 
 Recapitulare. Orice obiect se împarte în forme simple. O rotire de o sută optzeci de grade, cu săgeata curbă, răstoarnă o piesă. Front și Right sunt vederile din lateral, cu care verifici.
+
+Ce urmează. În lecția șapte construiești o rachetă, cu simetrie în jurul unei axe.
 
 Succes la barca ta.

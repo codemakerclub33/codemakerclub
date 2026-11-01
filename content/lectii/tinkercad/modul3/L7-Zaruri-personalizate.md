@@ -156,7 +156,7 @@ Ca să pui punctele exact, faci câte o **pereche de fețe** odată, într-un si
 ---
 
 ## Bonus (extra — după Complet)
-- [ ] Rotunjește colțurile cubului: click pe cub și caută în panoul **Shape** setarea **Radius** (dacă există)  
+- [ ] Rotunjește colțurile cubului: click pe cub și caută în fereastra piesei, la **Properties**, setarea **Radius**  
 - [ ] Un zar cu **litere** în loc de puncte (Text Hole)  
 - [ ] Un **zar cu 8 fețe** desenat pe foaie: ce perechi dau 9?
 

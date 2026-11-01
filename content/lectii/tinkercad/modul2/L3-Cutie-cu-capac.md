@@ -50,7 +50,7 @@ Dacă marginea capacului e **exact** cât gaura, la printare nu intră. Azi laș
 - [ ] Cutia exterioară are **60 · 40 · 30** (Solid)  
 
 ### 3) Cutia — golul
-1. Alt **Box** → **54 · 34 · 30** → panoul **Shape** → **Hole**  
+1. Alt **Box** → **54 · 34 · 30** → fereastra piesei → **Hole**  
 2. Selectezi Hole-ul și cutia → **L** → **mijloc** pe cele două direcții de pe plan (stânga–dreapta și față–spate)  
 3. Ridici Hole-ul cu **3 mm**, folosind **conul negru** (scrii 3): golul începe la 3 mm de jos (fundul) și iese 3 mm deasupra, deci cutia e **deschisă sus**  
 4. **Ctrl+A** → **Ctrl+G** — cutie goală, cu pereți de 3 mm

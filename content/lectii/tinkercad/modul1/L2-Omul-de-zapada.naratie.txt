@@ -2,9 +2,11 @@ Lecția doi. Omul meu de zăpadă.
 
 Astăzi exersezi mutarea, rotirea și scalarea, și așezi piese una peste alta. Proiectul se numește Omul meu de zăpadă. Numele fișierului este: Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero doi. Imprimanta trei D nu o folosim la oră. Azi doar proiectezi.
 
-Obiectivul. La final ai un om de zăpadă din trei sfere de mărimi diferite, una peste alta, plus un nas din con. Minim: trei sfere, de la cea mare jos la cea mică sus, care se suprapun puțin, baza pe plan, și nasul făcut dintr-un Cone rotit. Complet: minim, plus pălărie, ochi, nasturi și culori.
+Obiectivul. La finalul orei ai un om de zăpadă din trei sfere de mărimi diferite, una peste alta, plus un nas din con. Minim: trei sfere de patruzeci, treizeci și douăzeci, la înălțimile zero, treizeci și doi și cincizeci și patru, una peste alta, și un nas din Cone rotit nouăzeci de grade, cu cel puțin opt unelte diferite. Complet: partea a doua, cu pălărie, ochi și nasturi înfipți, culori, cu cel puțin șase unelte diferite.
 
 De ce contează. Mutarea, rotirea și scalarea sunt baza oricărui obiect. Azi le exersezi pe piese rotunde. Fără Shift la scalare, sfera se strâmbă.
+
+Ce face fiecare unealtă de azi. Sphere este sfera: corpul, mijlocul și capul. Cone este conul, pentru nas. Cylinder este cilindrul, pentru pălărie. Shift, ținut când tragi de un colț, scalează proporțional. Control și D face o copie exact peste original, pe care apoi o muți. Săgeata curbă rotește piesa în pași de douăzeci și doi virgulă cinci grade. Conul negru ridică piesa de pe plan, aici la treizeci și doi și la cincizeci și patru.
 
 Primul pas pe ecran. Apeși Create new design, Design trei D. Sus scrii numele Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero doi. Tinkercad salvează singur. Verifici doar numele.
 
@@ -22,8 +24,12 @@ Greșeli frecvente. Control și D pare că nu a făcut nimic: copia este exact p
 
 Proiectul de azi. Omul meu de zăpadă.
 
-Minim înseamnă: trei sfere care se ating, baza pe plan și nasul din Cone rotit. Complet înseamnă: minim, plus pălărie care intră puțin în cap, ochi, nasturi și culori. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg spune: e un om de zăpadă, cu nas.
+Minim înseamnă: trei sfere de patruzeci, treizeci și douăzeci, baza pe plan, suprapuse puțin, și nasul din Cone rotit nouăzeci de grade, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus pălărie, ochi, nasturi înfipți și culori, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg spune e un om de zăpadă, iar din Front nu se vede gol între sfere.
+
+Bonus. Schimbi culorile și mărești pălăria cu doi milimetri. Provocarea, Omul cu accesorii: adaugi un fular din Torus, două brațe din cilindri rotiți cu cel puțin patruzeci și cinci de grade și un al doilea om, mai mic, doar din sfere. Nimic nu plutește, verificat din Front. Un coleg recunoaște patru accesorii în cel mult treizeci de secunde.
 
 Recapitulare. Control și D face o copie, pe care apoi o muți. Shift scalează proporțional. Săgeata curbă de pe marginea piesei rotește, din douăzeci și doi virgulă cinci grade în douăzeci și doi virgulă cinci grade. Conul negru ridică și coboară piesa.
+
+Ce urmează. În lecția trei faci un fluture: copiezi o aripă, o oglindești cu M și o aliniezi cu L.
 
 Succes la omul tău de zăpadă.

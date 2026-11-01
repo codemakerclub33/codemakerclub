@@ -22,6 +22,13 @@ export const descriereModulParinte: Record<string, string> = {
   m35: 'Copilul învață să afișeze mesaje pe un ecran, să miște un motoraș servo și să comande lucruri cu butoane și cod. Construiește o bariera automată, un radar, un seif cu cod și o telecomandă.',
   m36: 'Copilul pornește de la o idee, o desenează ca schemă și o transformă într-un proiect complet: o casă inteligentă, un joc de reflexe sau un robot care ocolește obstacolele. La final își prezintă lucrarea într-o expoziție.',
 
+  // Tinkercad 3D
+  m29: 'Copilul învață să se miște în spațiul 3D din Tinkercad și să construiască din forme simple: o căsuță, un om de zăpadă, un fluture, o barcă, o rachetă și un castel. Învață să schimbe mărimea pieselor, să facă găuri, să scrie text 3D și să-și numească și să-și salveze proiectele. La final își face o insulă în miniatură.',
+  m30: 'Copilul proiectează obiecte care chiar pot fi folosite: un cuier, un suport pentru căști, o cutie cu capac, o ramă foto, o săpunieră și un abajur. Învață să lucreze cu mărimi exacte, să facă piese care se potrivesc una cu alta și să măsoare înainte să deseneze. Încheie cu un obiect util ales de el.',
+  m31: 'Copilul proiectează piese care se mișcă și se îmbină: roți dințate, o mașinuță cu roți și axe, o morișcă de vânt, un labirint cu bilă, un puzzle 3D și o fortăreață cu pod mobil. Învață de ce o piesă mobilă are nevoie de un mic joc și cum se fac seturi de piese care arată la fel. La final își alege un mecanism al lui.',
+  m32: 'Copilul construiește, împreună cu grupa, un oraș în miniatură. Fiecare are o placă a lui și o zonă din oraș: case, blocuri, clădiri publice, străzi, râu cu pod, parc și mașini. Toți lucrează la aceeași scară, iar plăcile se așază apoi una lângă alta. Învață să planifice și să-și prezinte partea de oraș.',
+  m33: 'Pentru copiii de peste 10 ani. Copilul învață să proiecteze precis, ca într-un atelier: mărimi exacte, piese care se pot printa, îmbinări, o cutie cu balama și un angrenaj care funcționează. Încearcă apoi să facă forme prin cod și un cărucior teleghidat în simulatorul Sim Lab. Proiectul final este un produs complet, de la idee la prezentare. Părțile cu cod și simulator sunt opționale.',
+
   // Blender
   m5: 'Copilul învață să se miște în spațiul 3D din Blender și să creeze forme simple: un om de zăpadă, o căsuță din cuburi, cu culori, lumini și o primă imagine finală. Modulul se termină cu o mică scenă proprie.',
   m37: 'Copilul învață să modeleze obiecte mai complicate, trăgând și modelând forme: un turn de castel, un robot, o cană, dealuri și un fluture. La final construiește o rachetă în stil low-poly.',

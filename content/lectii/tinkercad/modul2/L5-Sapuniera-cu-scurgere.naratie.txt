@@ -8,9 +8,9 @@ De ce contează. Aici fantele lasă apa să curgă, dar nu lasă săpunul să ca
 
 Primul pas pe ecran. Apasă Create new design și scrie numele. Jos, în dreapta, la Snap Grid, alege un milimetru.
 
-Al doilea pas pe ecran. Trage un Box și scrie: o sută, șaptezeci, douăzeci. Apoi alt Box: nouăzeci și patru, șaizeci și patru, douăzeci. În panoul Shape alege Hole. Selectează Hole-ul și tava, apasă tasta L pentru Align și alege mijlocul pe ambele direcții de pe plan. Ridică Hole-ul cu trei milimetri, cu conul negru. Rămâne un fund de trei milimetri. Apasă Control și A, apoi Control și G. Tava e goală.
+Al doilea pas pe ecran. Trage un Box și scrie: o sută, șaptezeci, douăzeci. Apoi alt Box: nouăzeci și patru, șaizeci și patru, douăzeci. În fereastra piesei alege Hole. Selectează Hole-ul și tava, apasă tasta L pentru Align și alege mijlocul pe ambele direcții de pe plan. Ridică Hole-ul cu trei milimetri, cu conul negru. Rămâne un fund de trei milimetri. Apasă Control și A, apoi Control și G. Tava e goală.
 
-Al treilea pas pe ecran. Trage un Box și scrie: șaptezeci, șase, zece. În panoul Shape alege Hole. Selectează fanta și tava, apasă L și alege mijlocul pe ambele direcții de pe plan. Apoi coboară-o cu un milimetru sub plan, cu conul negru, ca să iasă și pe sub fund. Fanta trece prin fund și nu atinge pereții: ea are șaptezeci de milimetri, iar golul tăvii are nouăzeci și patru.
+Al treilea pas pe ecran. Trage un Box și scrie: șaptezeci, șase, zece. În fereastra piesei alege Hole. Selectează fanta și tava, apasă L și alege mijlocul pe ambele direcții de pe plan. Apoi coboară-o cu un milimetru sub plan, cu conul negru, ca să iasă și pe sub fund. Fanta trece prin fund și nu atinge pereții: ea are șaptezeci de milimetri, iar golul tăvii are nouăzeci și patru.
 
 Al patrulea pas pe ecran. Schimbă Snap Grid pe cinci milimetri. Uită-te la tavă din Top. Cu fanta selectată, mută-o cincisprezece milimetri spre față, cu săgeata în jos, de trei ori. Apasă tasta Control și D împreună și mută copia cincisprezece milimetri spre spate, din trei apăsări. Aceasta e fanta din mijloc. Apasă din nou Control și D. Mutarea se repetă singură și apare a treia fantă. Ai trei fante, la cincisprezece milimetri una de alta. Fanta de la margine ajunge la optsprezece milimetri de mijloc, iar peretele e la treizeci și doi.
 

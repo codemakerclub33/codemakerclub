@@ -76,7 +76,7 @@ Azi înveți să **scrii mărimile cu numere**, nu doar să măsori cu ochiul. A
 
 ### 5) Găurile pentru șuruburi
 1. Trage un **Cylinder** → scrie **6 · 6 · 15**  
-2. În panoul **Shape**, alege **Hole** (cu dungi)  
+2. În fereastra piesei, alege **Hole** (cu dungi)  
 3. Selectezi gaura și placa → **L** → punctul din **stânga** și **mijloc** pe față–spate. Apoi **săgeata dreapta** o dată (5 mm): gaura e la **5 mm** de capăt, **departe de cârlige**  
 4. Coboară gaura puțin sub plan cu **conul negru** (trage în jos ~2 mm, sub linia plasei), ca să treacă **prin toată placa**  
 5. **Ctrl+D** → copia + placa → **L** → punctul din **dreapta** (placa nu se mișcă), apoi **săgeata stânga** o dată: a doua gaură e tot la 5 mm de margine
@@ -99,7 +99,7 @@ Azi înveți să **scrii mărimile cu numere**, nu doar să măsori cu ochiul. A
 1. **Sphere** de **12 · 12 · 12** → selectezi sfera și un cârlig → **L** → **mijloc** pe ambele direcții de pe plan (nu și sus–jos). Apoi o ridici cu **conul negru** la **19 mm** — se înfige puțin în vârful cârligului  
 2. **Ctrl+D** de două ori, mutând copiile **30 mm** → câte o bilă pe fiecare cârlig *(dacă ai ales Hole din greșeală, pune Solid)*  
 3. **Ruler** (sus-dreapta) → pui rigla pe plan la marginea stângă a primului cârlig, apoi dai click pe al doilea cârlig: citești **30 mm** *(Ruler măsoară o piesă separată: dacă cârligele sunt în Group, fă întâi **Ctrl+Shift+G**, măsori, apoi **Ctrl+A** → **Ctrl+G** la loc)*  
-4. Selectezi tot → **Color** în panoul **Shape** → culoarea ta
+4. Selectezi tot → cercul colorat de lângă **Solid** (**Color**) → culoarea ta
 
 **Gata când:**  
 - [ ] Bilele (**12 · 12 · 12**) stau pe vârfurile cârligelor  

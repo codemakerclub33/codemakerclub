@@ -8,7 +8,7 @@ De ce contează. Farfuria trebuie să fie mai largă decât ghiveciul, ca să î
 
 Primul pas pe ecran. Apasă Create new design și scrie numele. Jos, în dreapta, la Snap Grid, alege un milimetru.
 
-Al doilea pas pe ecran. Trage un Cylinder și scrie: șaizeci, șaizeci, cincizeci. Trage alt Cylinder: cincizeci și patru, cincizeci și patru, cincizeci. În panoul Shape alege Hole. Selectează Hole-ul și ghiveciul, apasă tasta L pentru Align și alege mijlocul pe ambele direcții de pe plan. Ridică Hole-ul cu trei milimetri, cu conul negru. Apasă Control și A, apoi Control și G.
+Al doilea pas pe ecran. Trage un Cylinder și scrie: șaizeci, șaizeci, cincizeci. Trage alt Cylinder: cincizeci și patru, cincizeci și patru, cincizeci. În fereastra piesei alege Hole. Selectează Hole-ul și ghiveciul, apasă tasta L pentru Align și alege mijlocul pe ambele direcții de pe plan. Ridică Hole-ul cu trei milimetri, cu conul negru. Apasă Control și A, apoi Control și G.
 
 Al treilea pas pe ecran. Trage un Cylinder și scrie: opt, opt, zece. Alege Hole. Selectează gaura și ghiveciul, apasă L și alege mijlocul pe ambele direcții de pe plan. Coboară gaura cu un milimetru sub plan, cu conul negru. Ea taie complet fundul. Apasă Control și A, apoi Control și G.
 

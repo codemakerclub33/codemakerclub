@@ -182,7 +182,7 @@ export const module = [
     nume: 'Modul 1 — Bazele Tinkercad',
     ordine: 1,
     badge: 'Shape Starter',
-    descriere: '10 proiecte: de la căsuță și forme la insula în miniatură.',
+    descriere: '10 proiecte pentru primii pași: cunoști Tinkercad, construiești din forme simple (casă, om de zăpadă, barcă, rachetă, castel), faci găuri și text 3D. La final: o insulă în miniatură.',
   },
   {
     id: 'm30',
@@ -190,7 +190,7 @@ export const module = [
     nume: 'Modul 2 — Obiecte utile',
     ordine: 2,
     badge: 'Object Maker',
-    descriere: '10 obiecte practice pentru birou, baie și acasă + proiect la alegere.',
+    descriere: '10 obiecte practice pentru birou, baie și acasă, cu mărimi exacte și piese care se potrivesc. La final: un obiect util la alegere.',
   },
   {
     id: 'm31',
@@ -198,7 +198,7 @@ export const module = [
     nume: 'Modul 3 — Creativ și mecanic',
     ordine: 3,
     badge: 'Motion Maker',
-    descriere: '10 proiecte cu piese mobile, îmbinări și un mecanism la final.',
+    descriere: '10 proiecte cu piese care se mișcă și se îmbină: roți dințate, mașinuță, morișcă, labirint, puzzle, pod mobil. La final: un mecanism ales de tine.',
   },
   {
     id: 'm32',
@@ -206,7 +206,7 @@ export const module = [
     nume: 'Modul 4 — Orașul nostru',
     ordine: 4,
     badge: 'City Builder',
-    descriere: '10 lecții pe plăci: construiești zona ta din orașul comun.',
+    descriere: '10 lecții pe plăci: fiecare construiește zona lui din orașul comun, la aceeași scară (case, clădiri, străzi, râu, parc, mașini). La final: asamblare și prezentare.',
   },
   {
     id: 'm33',
@@ -214,7 +214,7 @@ export const module = [
     nume: 'Modul 5 — Design Pro · 10+ ani',
     ordine: 5,
     badge: 'Design Pro',
-    descriere: '10 lecții tehnice: toleranțe, Codeblocks, Circuits · recomandat 10+.',
+    descriere: '10 lecții tehnice, recomandate de la 10 ani: precizie, toleranțe pentru print, îmbinări, angrenaj, Codeblocks și Sim Lab (opționale). La final: un produs complet.',
   },
 ]
 
@@ -792,7 +792,7 @@ export const lectii = [
     'Angrenaj funcțional',
     'Codeblocks I — forme prin cod',
     'Codeblocks II — obiect parametric',
-    'Tinkercad Circuits — LED și Arduino simulat',
+    'Căruciorul teleghidat (Sim Lab)',
     'Produs complet — proiect final al cursului',
   ]),
 ]

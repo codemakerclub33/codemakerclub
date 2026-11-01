@@ -10,7 +10,7 @@ Primul pas pe ecran. Apasă Create new design și scrie numele. Jos, în dreapta
 
 Al doilea pas pe ecran. Trage un Box și scrie: șaizeci, patruzeci, treizeci. Rămâne Solid.
 
-Al treilea pas pe ecran. Trage alt Box și scrie: cincizeci și patru, treizeci și patru, treizeci. În panoul Shape alege Hole. Selectează Hole-ul și cutia, apasă tasta L pentru Align și alege mijlocul pe cele două direcții de pe plan: stânga și dreapta, apoi față și spate. Acum ridică Hole-ul cu trei milimetri, folosind conul negru. Scrie trei. Golul începe la trei milimetri de jos, deci rămâne fundul, și iese deasupra, deci cutia e deschisă sus. Apasă Control și A, apoi Control și G. Cutia e goală, cu pereți de trei milimetri.
+Al treilea pas pe ecran. Trage alt Box și scrie: cincizeci și patru, treizeci și patru, treizeci. În fereastra piesei alege Hole. Selectează Hole-ul și cutia, apasă tasta L pentru Align și alege mijlocul pe cele două direcții de pe plan: stânga și dreapta, apoi față și spate. Acum ridică Hole-ul cu trei milimetri, folosind conul negru. Scrie trei. Golul începe la trei milimetri de jos, deci rămâne fundul, și iese deasupra, deci cutia e deschisă sus. Apasă Control și A, apoi Control și G. Cutia e goală, cu pereți de trei milimetri.
 
 Al patrulea pas pe ecran. Trage un Box și scrie: șaizeci, patruzeci, patru. Este placa capacului. Mută-l lângă cutie, pe plan.
 

@@ -10,7 +10,7 @@ Primul pas pe ecran. Apasă Create new design și scrie numele. Jos, în dreapta
 
 Al doilea pas pe ecran. Trage un Cylinder și scrie: șaptezeci, șaptezeci, patruzeci. Rămâne Solid.
 
-Al treilea pas pe ecran. Trage alt Cylinder și scrie: șaisprezece, șaisprezece, patruzeci. În panoul Shape alege Hole. Selectează gaura și corpul, apasă tasta L pentru Align și alege mijlocul pe ambele direcții de pe plan. Apoi ridică gaura cu cinci milimetri, cu conul negru. Scrie cinci. Gaura începe la cinci milimetri de jos. Rezultă un fund închis de cinci milimetri.
+Al treilea pas pe ecran. Trage alt Cylinder și scrie: șaisprezece, șaisprezece, patruzeci. În fereastra piesei alege Hole. Selectează gaura și corpul, apasă tasta L pentru Align și alege mijlocul pe ambele direcții de pe plan. Apoi ridică gaura cu cinci milimetri, cu conul negru. Scrie cinci. Gaura începe la cinci milimetri de jos. Rezultă un fund închis de cinci milimetri.
 
 Al patrulea pas pe ecran. Schimbă Snap Grid pe cinci milimetri. Uită-te la corp din Top. Cu săgețile de la tastatură, o apăsare este cinci milimetri, mută gaura cincisprezece milimetri spre dreapta și cincisprezece milimetri spre față. Sunt trei apăsări pe fiecare direcție. Apasă Control și D. Mută copia treizeci de milimetri spre stânga, adică șase apăsări. Ai două găuri într-un rând. Acum dă click pe prima gaură, apoi Shift și click pe a doua. Apasă Control și D și mută cele două copii treizeci de milimetri spre spate, șase apăsări. Ai al doilea rând. În total, patru găuri într-un pătrat, cu centrele la treizeci de milimetri unele de altele.
 

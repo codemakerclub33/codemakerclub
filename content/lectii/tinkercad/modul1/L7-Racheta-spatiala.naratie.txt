@@ -2,9 +2,11 @@ Lecția șapte. Racheta mea.
 
 Astăzi combini forme cu simetrie în jurul unei axe: cilindru, con, aripioare și hublou. Proiectul se numește Racheta mea. Numele fișierului este: Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero șapte. Imprimanta trei D nu o folosim la oră. Azi doar proiectezi.
 
-Obiectivul. La final ai o rachetă pe verticală, simetrică, care stă pe plan. Minim: corp din Cylinder, vârf din Cone și patru aripioare egale la coadă, în cruce, la nouăzeci de grade una de alta, verificate din Top. Complet: minim, plus un hublou făcut cu Hole și Group, flăcări pe care stă racheta, și culori.
+Obiectivul. La finalul orei ai o rachetă pe verticală, simetrică, care stă pe plan. Minim: Cylinder de douăzeci pe douăzeci pe cincizeci, Cone de douăzeci pe douăzeci pe douăzeci și cinci, la patruzeci și nouă, și patru aripioare, Roof, egale, la nouăzeci de grade una de alta, verificate din Top, cu cel puțin opt unelte diferite. Complet: partea a doua, cu hublou făcut cu Hole și Group, flăcări sub rachetă și culori, cu cel puțin șase unelte diferite.
 
 De ce contează. Exersezi tot ce ai învățat: rotirea, alinierea, Hole și Group.
+
+Ce face fiecare unealtă de azi. Roof este pana acoperiș, din care facem aripioarele. Cone este conul, pentru vârf și flăcări. Hole este gaura, pentru hublou. Control și G, adică Group, lipește piesele, iar Hole-ul taie. Tasta L aliniază aripioarele pe axa rachetei. Control și D face copii pe care le rotești nouăzeci de grade.
 
 Primul pas pe ecran. Create new design. Sus scrii numele Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero șapte. Salvarea este automată. Verifici numele.
 
@@ -22,8 +24,12 @@ Greșeli frecvente. Aripioarele nu sunt egale: placa nu este centrată pe corp. 
 
 Proiectul de azi. Racheta mea.
 
-Minim înseamnă: corp, vârf și patru aripioare egale în cruce, verificate din Top. Complet înseamnă: minim, plus hublou cu Hole și Group, flăcări și culori. Dacă rămâi în urmă, salvează la Minim.
+Minim înseamnă: corp, vârf și patru aripioare egale în cruce, la nouăzeci de grade, verificate din Top, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus hublou cu Hole și Group, flăcări și culori, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg vede din Top cele patru aripioare în cruce, la nouăzeci de grade una de alta.
+
+Bonus. Schimbi culorile și mărești flăcările. Provocarea, Racheta pe platformă: adaugi un al doilea hublou, la aceeași înălțime cu primul, verificat din Front, și o platformă de lansare, un Box de patruzeci pe patruzeci pe cinci, pe care stă racheta, fără să plutească. Un coleg numără patru elemente, rachetă, hubloruri, flăcări și platformă, în cel mult douăzeci de secunde.
 
 Recapitulare. Aripioarele egale se verifică din Top, cu rotire sau cu poziții manuale. Hubloul este Hole și Group. Flăcările sunt conuri cu vârful în jos. A doua placă o rotești la nouăzeci de grade, iar placa trebuie să fie centrată pe corp.
+
+Ce urmează. În lecția opt construiești un castel, cu creneluri făcute cu Control și D repetat.
 
 Succes la racheta ta.

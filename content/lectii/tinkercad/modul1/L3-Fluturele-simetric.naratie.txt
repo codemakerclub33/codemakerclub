@@ -2,9 +2,11 @@ Lecția trei. Fluturele meu.
 
 Astăzi folosești oglindirea, cu tasta M, și alinierea, cu tasta L, ca să obții simetrie. Proiectul se numește Fluturele meu. Numele fișierului este: Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero trei. Imprimanta trei D nu o folosim la oră. Azi doar proiectezi.
 
-Obiectivul. La final ai un fluture simetric: o aripă făcută o singură dată, apoi copiată și oglindită. Minim: corp pe plan, o aripă asimetrică, adică un Wedge culcat sau un Box înclinat, dublată cu tasta M, aripile de o parte și de alta a corpului, totul verificat din Top. Complet: minim, plus cap din sferă, antene, a doua pereche de aripi, mai mici, și culori.
+Obiectivul. La finalul orei ai un fluture simetric: o aripă făcută o dată, apoi copiată și oglindită. Minim: corp de opt pe opt pe patruzeci, culcat pe plan, o aripă asimetrică, un triunghi din Top, groasă de trei milimetri, și copia ei oglindită cu M, de cealaltă parte a corpului, cu simetrie vizibilă din Top, folosind cel puțin opt unelte diferite. Complet: partea a doua, cu cap, antene oglindite, a doua pereche de aripi mai mici și culori, cu cel puțin șase unelte diferite.
 
 De ce contează. Multe obiecte sunt simetrice. Faci o jumătate și o oglindești. Nu construiești de două ori.
+
+Ce face fiecare unealtă de azi. Wedge este pana, o rampă, din care facem aripa. Tasta M oglindește piesa selectată: stânga devine dreapta. Tasta L aliniază piesele pe punctele negre, adică Align. Control și D face o copie exact peste original. Shift și click selectează mai multe piese deodată. View Cube pe Top este vederea de sus, în care verifici simetria.
 
 Primul pas pe ecran. Create new design. Sus scrii numele Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero trei. Salvarea este automată. Verifici numele.
 
@@ -24,8 +26,12 @@ Greșeli frecvente. M nu face nimic: aripa este prea simetrică, folosești Wedg
 
 Proiectul de azi. Fluturele meu.
 
-Minim înseamnă: corp pe plan, aripă înclinată, copie oglindită cu M, și simetrie vizibilă din Top. Complet înseamnă: minim, plus cap, antene, a doua pereche de aripi, mai mică, și culori. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când, din Top, se vede clar un fluture.
+Minim înseamnă: corpul pe plan, o aripă asimetrică, copia ei oglindită cu M pe cealaltă parte și simetrie din Top, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus cap, antene oglindite, a doua pereche de aripi și culori, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg vede clar din Top un fluture, cu aripile una oglindă a celeilalte.
+
+Bonus. Schimbi culorile aripilor. Provocarea, Fluturele cu modele: pe fiecare aripă pui două cercuri, formă Solid, făcute pe o aripă și oglindite pe cealaltă, plus o floare din sfere sub fluture. Din Top, un coleg nu găsește nicio diferență între cele două jumătăți ale fluturelui.
 
 Recapitulare. O aripă asimetrică face ca M să se vadă. Control și D face o copie, pe care apoi o muți. M oglindește. L aliniază, iar tu verifici mereu din Top. Numele fișierului are T unu și L zero trei.
+
+Ce urmează. În lecția patru înveți Hole și Group: faci o bucată de brânză cu găuri adevărate.
 
 Succes la fluturele tău.

@@ -1,9 +1,9 @@
 # Modul 5 — Avansat și proiectare tehnică
 
 **Badge:** Design Pro  
-**Focus:** precizie, îmbinări, gata de printat, Codeblocks, Circuits  
-**Public:** recomandat **10+** · Complet Codeblocks/Circuits; varianta Minim e potrivită și pentru copii mai mici  
-**Notă:** lecțiile Codeblocks / Circuits sunt **opționale** pentru sub 12 ani (Minim fără ele)
+**Focus:** precizie, îmbinări, gata de printat, Codeblocks, Sim Lab  
+**Public:** recomandat **10+** · Complet Codeblocks/Sim Lab; varianta Minim e potrivită și pentru copii mai mici  
+**Notă:** lecțiile Codeblocks / Sim Lab sunt **opționale** pentru sub 12 ani (Minim fără ele)
 
 | # | Lecție | Obiectiv | Pași principali (nucleu) |
 |---|--------|----------|---------------------------|
@@ -15,7 +15,7 @@
 | 6 | Angrenaj funcțional | Generator de forme | Gear generator 12/24 dinți; distanța dintre axe; raport |
 | 7 | Codeblocks I | Forme prin cod | Buclă; variabile; șir de cuburi · opțional (Minim fără cod) |
 | 8 | Codeblocks II | Obiect parametric | Turn cu `etaje`; două variante · opțional (Minim fără cod) |
-| 9 | Tinkercad Circuits | Electronică simulată | LED + rezistor; Arduino blink; carcasă · opțional (Minim carcasă) |
+| 9 | Căruciorul teleghidat (Sim Lab) | Fizică și cod | Caroserie + roți; Axle connector cu motor Stepper; Controller; blocuri W/S; Field Sensor · opțional (Minim fără senzor) |
 | 10 | Produs complet | Ideea → prezentare | Problemă; schiță; model cu joc; lista „gata de print”; prezentare |
 
 **Salvare sugerată:** `Prenume_Nume_T5_L01` … `T5_L10`

@@ -10,7 +10,7 @@ Primul pas pe ecran. Apasă Create new design și scrie numele. Jos, în dreapta
 
 Al doilea pas pe ecran. Trage un Box și scrie: nouăzeci, șaptezeci, trei. Este o placă subțire. Rămâne Solid.
 
-Al treilea pas pe ecran. Trage alt Box și scrie: șaizeci, patruzeci, șapte. În panoul Shape alege Hole. Selectează Hole-ul și placa și apasă tasta L pentru Align. Dă click pe punctul de mijloc pe fiecare dintre cele trei direcții: stânga și dreapta, față și spate, sus și jos. Hole-ul e mai gros decât placa și centrat pe înălțime, deci iese doi milimetri sus și doi milimetri jos. Align poate ridica placa doi milimetri de pe plan. Apasă Control și A, apoi Control și G. Fereastra e tăiată. Apasă tasta D și rama coboară pe plan.
+Al treilea pas pe ecran. Trage alt Box și scrie: șaizeci, patruzeci, șapte. În fereastra piesei alege Hole. Selectează Hole-ul și placa și apasă tasta L pentru Align. Dă click pe punctul de mijloc pe fiecare dintre cele trei direcții: stânga și dreapta, față și spate, sus și jos. Hole-ul e mai gros decât placa și centrat pe înălțime, deci iese doi milimetri sus și doi milimetri jos. Align poate ridica placa doi milimetri de pe plan. Apasă Control și A, apoi Control și G. Fereastra e tăiată. Apasă tasta D și rama coboară pe plan.
 
 Al patrulea pas pe ecran. În View Cube alege Top. Marginile sunt egale? Cincisprezece milimetri pe stânga și dreapta, cincisprezece sus și jos. Apoi deschide Ruler. Pune rigla în colțul plăcii și măsoară până la fereastră, pe marginea lungă și pe cea scurtă. Amândouă dau cincisprezece. Hole-ul se măsoară doar separat. Desfă cu Control, Shift și G, măsoară, apoi apasă Control și A, Control și G, și tasta D. Rotește vederea: golul se vede și din spate.
 

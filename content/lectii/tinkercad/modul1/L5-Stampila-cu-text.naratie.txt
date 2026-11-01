@@ -2,9 +2,11 @@ Lecția cinci. Ștampila mea.
 
 Astăzi folosești piesa Text și o oglindești, ca pe o ștampilă. Proiectul se numește Ștampila mea. Numele fișierului este: Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero cinci. Imprimanta trei D nu o folosim la oră. Azi doar proiectezi.
 
-Obiectivul. La final ai o bază cu text ridicat și oglindit, așezat pe bază. Minim: bază, text ridicat care iese doi milimetri deasupra bazei, oglindit cu tasta M, și centrat pe bază, cu tasta L sau manual. Din Top, literele se văd invers, ca pe o ștampilă. Complet: minim, plus mâner, margine decorativă și text de două cuvinte.
+Obiectivul. La finalul orei ai o bază cu text ridicat și oglindit, așezat pe bază. Minim: bază de șaizeci pe treizeci pe cinci, text de cel mult cincizeci pe paisprezece, înalt de șapte milimetri, deci iese doi milimetri deasupra bazei, oglindit cu M și centrat pe bază, cu cel puțin opt unelte diferite. Complet: partea a doua, cu mâner, margine sau text de două cuvinte oglindite, culori, cu cel puțin șase unelte diferite.
 
 De ce contează. O ștampilă lasă pe hârtie imaginea inversă față de cum o vezi pe ștampilă. Ca amprenta să iasă corectă, textul de pe ștampilă trebuie să fie oglindit.
+
+Ce face fiecare unealtă de azi. Text este textul trei D: scrii cuvântul în fereastra piesei. Box este cutia: baza, mânerul și marginea. Tasta M oglindește textul, ca pe o ștampilă. Tasta L aliniază textul pe centrul bazei. Shift scalează textul fără să deformeze literele. View Cube pe Front te ajută să verifici că textul iese doi milimetri deasupra.
 
 Primul pas pe ecran. Create new design. Sus scrii numele Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zero cinci. Salvarea este automată. Verifici numele.
 
@@ -24,8 +26,12 @@ Greșeli frecvente. Textul este subțire și nu se vede: scrii cu litere mari, �
 
 Proiectul de azi. Ștampila mea.
 
-Minim înseamnă: bază pe plan, text ridicat și vizibil, oglindit cu M și aliniat pe bază. Complet înseamnă: minim, plus mâner, margine decorativă și text de două cuvinte, plus culori. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg vede literele invers față de normal, dar clar pe bază.
+Minim înseamnă: bază de șaizeci pe treizeci pe cinci, text înalt de șapte, oglindit cu M și centrat pe bază, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus mâner, margine sau text de două cuvinte oglindite și culori, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg vede literele invers, dar clar, pe bază.
+
+Bonus. Schimbi cuvântul și culorile. Provocarea, Ștampila cu două rânduri: adaugi un al doilea rând de text și o stea sau o inimă lângă text, toate oglindite și în limitele bazei de șaizeci pe treizeci. Un coleg ține o oglindă lângă ecran și citește corect ambele rânduri.
 
 Recapitulare. Text este o piesă editabilă: schimbi cuvântul în panou. M oglindește textul pentru ștampilă. Text de șapte milimetri pe o bază de cinci milimetri iese doi milimetri. L centrează. Ștampila apasă pe hârtie și textul se citește corect.
+
+Ce urmează. În lecția șase construiești o barcă din forme simple: semisferă, pană și cilindru.
 
 Succes la ștampila ta.

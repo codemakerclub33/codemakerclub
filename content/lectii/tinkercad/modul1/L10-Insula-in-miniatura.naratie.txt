@@ -2,9 +2,11 @@ Lecția zece. Insula mea.
 
 Astăzi este mini-proiectul modulului. Combini tot ce ai învățat în Modulul unu într-o scenă a ta. Proiectul se numește Insula mea. Numele fișierului este: Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zece. Imprimanta trei D nu o folosim la oră. Azi doar proiectezi.
 
-Obiectivul. La final ai o insulă: teren și elemente, în care ai refolosit piese din lecțiile anterioare. Minim: teren și patru elemente, dintre care cel puțin două refolosite din proiectele vechi. Nimic nu plutește. Complet: minim, plus șase elemente, o piesă cu Hole și Group, un text cu numele insulei și culori coerente.
+Obiectivul. La finalul orei ai o insulă: teren și elemente, în care ai refolosit piese din lecțiile anterioare. Minim: teren de o sută douăzeci pe o sută douăzeci pe șase, patru elemente, dintre care cel puțin două refolosite, la cinci milimetri, nimic nu plutește, cu cel puțin opt unelte diferite. Complet: partea a doua, cu șase elemente, o piesă cu Hole și Group, o plăcuță cu text neoglindit și culori coerente, cu cel puțin șase unelte diferite.
 
 De ce contează. Un proiect propriu arată ce ai reținut. Îți pregătește și portofoliul pentru Modulul doi.
+
+Ce face fiecare unealtă de azi. Control și C, apoi Control și V, copiază piese dintr-un proiect vechi și le lipește în cel nou. Hole este gaura, pentru peșteră sau poartă. Control și G, adică Group, face ca Hole-ul să taie piesa. Text este textul trei D, pentru numele insulei. Tasta L aliniază piesele. Conul negru ridică piesele pe teren, la cinci milimetri.
 
 Primul pas pe ecran. Create new design. Sus scrii numele Prenume, linie jos, Nume, linie jos, T unu, linie jos, L zece. Pe o foaie desenezi o insulă și patru până la șase elemente: ce pui și unde. Salvarea este automată. Verifici numele.
 
@@ -22,8 +24,12 @@ Greșeli frecvente. Piesele copiate sunt prea mari: le scalezi cu Shift. Element
 
 Proiectul de azi. Insula mea.
 
-Minim înseamnă: teren, patru elemente, dintre care două refolosite, și nimic nu plutește. Complet înseamnă: șase elemente, o piesă cu Hole, text cu numele insulei și culori coerente. Dacă rămâi în urmă, salvează la Minim. La final urmează prezentări scurte, de aproximativ un minut fiecare, și un formular de păreri.
+Minim înseamnă: teren, patru elemente, dintre care două refolosite, la cinci milimetri, nimic nu plutește, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus șase elemente, o piesă cu Hole și Group, text cu numele insulei și culori coerente, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg recunoaște o insulă și nu găsește nicio piesă în aer.
+
+Bonus. Adaugi un copac în plus și schimbi culorile. Provocarea, Insula cu pod și vapor: adaugi un pod sau un mal, un animal din forme simple și un vapor lângă insulă, în total cel puțin nouă elemente, iar nimic nu plutește, verificat din Front și din Top. Prezinți insula într-un minut, iar un coleg spune ce reprezintă fiecare element, fără întrebări.
 
 Recapitulare. Modulul unu înseamnă forme, scalare, tasta M, tasta L, Hole, text și Control și D. Refolosești piese între proiecte cu Control și C, apoi Control și V. Calitatea contează: cinci elemente curate valorează mai mult decât zece neterminate.
+
+Ce urmează. Ai terminat Modulul unu! În Modulul doi faci obiecte utile, cu mărimi exacte.
 
 Succes la insula ta.
