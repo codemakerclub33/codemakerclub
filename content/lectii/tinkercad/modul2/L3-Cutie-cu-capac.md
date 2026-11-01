@@ -216,4 +216,4 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 Opțional: o cutie pătrată **40 × 40 × 20** cu capac — aplici aceeași regulă (gol − 1 mm).
 
 ## Ce urmează
-În **Lecția 4** faci o **ramă foto** dreptunghiulară și una **rotundă**, cu decupaje exacte.
+În **Lecția 4** faci un **tăietor pentru biscuiți** în formă de stea și unul cu **forma ta**, cu perete subțire de `2` mm.

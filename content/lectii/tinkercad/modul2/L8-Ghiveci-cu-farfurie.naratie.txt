@@ -36,6 +36,6 @@ Bonus. Schimbi culorile și adaugi trei piciorușe de opt diametru pe patru sub 
 
 Recapitulare. Hole-ul ridicat trei milimetri lasă fundul. Scurgerea este un Hole mic în centrul fundului. Golul farfuriei e mai mare decât ghiveciul. Două piese care lucrează împreună nu se grupează.
 
-Ce urmează. În lecția nouă faci o clemă pentru cabluri și un suport pentru creion, cu mărimi măsurate și toleranță.
+Ce urmează. În lecția nouă faci o carcasă pentru Arduino Uno și una pentru micro bit, cu mărimi măsurate, joc și decupaje pentru porturi.
 
 Succes la ghiveciul tău.

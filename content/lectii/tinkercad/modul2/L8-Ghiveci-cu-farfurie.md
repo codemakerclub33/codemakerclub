@@ -217,4 +217,4 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 Opțional: un ghiveci **mai mare** (Ø80) — calculezi tu farfuria (gaura cu cel puțin 6 mm mai mare, pereții de 3 mm).
 
 ## Ce urmează
-În **Lecția 9** faci o **clemă pentru cabluri** și un **suport pentru creion**, cu mărimi **măsurate** și **toleranță**.
+În **Lecția 9** faci o **carcasă pentru Arduino Uno** și una pentru **micro:bit**, cu mărimi **măsurate**, **joc** și decupaje pentru porturi.

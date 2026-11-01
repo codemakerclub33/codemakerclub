@@ -1,27 +1,27 @@
-# Lecția 9 — Clemă pentru cabluri
-### Măsurare și toleranță
+# Lecția 9 — Carcasă cu măsurători precise
+### Măsurare, joc și decupaje
 **Modulul 2 · Obiecte utile**  
 **Code Maker Club · Object Maker**  
 
-> Azi pornești de la un **obiect real**: măsori un cablu și faci o clemă exact pe mărimea lui.  
-> Proiect: **„Clema mea”**  
+> Azi faci **carcase** pentru o placă electronică reală: măsori placa, adaugi joc și decupezi porturile.  
+> Proiect: **„Carcasa mea”**  
 > Fișier: `Prenume_Nume_T2_L09` (obiectul 1) și `Prenume_Nume_T2_L09_B` (obiectul 2)
 
 
 ---
 
 ## Obiectiv
-La finalul orei ai **două obiecte utile**: **Clema pentru cabluri** și **Suportul pentru creion**.  
-**Minim:** **Obiectul 1:** clema pentru un cablu măsurat (de exemplu `5` mm: inel cu gaura `6`, exterior `12`, fantă `4`, plăcuță `30 × 12 × 3` cu **2 găuri** `Ø3`) și **Obiectul 2:** suportul pentru un creion măsurat (de exemplu `7` mm: gaură `8`, exterior `14`, plăcuță `30 × 30 × 3` cu **2 găuri** `Ø3`), ambele grupate, cu **cel puțin 8 unelte diferite**.  
-**Ținta orei (Complet):** a doua parte: a doua clemă pentru un cablu mai gros, <span style="color:#E65722;font-weight:700">Ruler</span> și culoare, cu cel puțin **6 unelte diferite**.
+La finalul orei ai **două obiecte utile**: **Carcasa pentru Arduino Uno** și **Carcasa pentru micro:bit**.  
+**Minim:** **Obiectul 1:** carcasa Arduino (cutie `80 · 65 · 28`, gol `70 · 55`, porturi `15 · 10 · 16` și `22 · 10 · 16`, capac cu dop `69 · 54` și `3` fante) și **Obiectul 2:** carcasa micro:bit (cutie `61 · 51 · 23`, gol `51 · 41`, decupaj USB, capac cu dop `50 · 40` și **3 ferestre**), ambele cu capacul separat, cu **cel puțin 8 unelte diferite**.  
+**Ținta orei (Complet):** a doua parte: text pe capac, <span style="color:#E65722;font-weight:700">Ruler</span> pe joc și culoare, cu cel puțin **6 unelte diferite**.
 
 ## De ce contează
-O piesă făcută pentru un obiect real are nevoie de **măsurare** și de **toleranță**: gaura ceva mai mare decât cablul, ca să intre.  
-Fanta ceva mai îngustă decât cablul îl **ține** înăuntru, dar cablul poate fi apăsat să intre.
+O carcasă bună pornește de la **placa reală**. Măsori, rotunjești în **sus**, adaugi **joc**, apoi faci găuri pentru porturi **mai mari** decât portul.  
 
 **Regula azi:**  
-gaura = cablu **+ 1 mm** · fanta = cablu **− 1 mm** · exteriorul = gaura **+ 6 mm**
+golul = placa **+ 1 mm** (`0,5` mm pe fiecare parte) · dopul capacului = golul **− 1 mm** · peretele = **5 mm**
 
+**Notă:** mărimile plăcilor din lecție sunt **exemple rotunjite** (Arduino Uno `68,6 × 53,4` rotunjit la `69 × 54`, micro:bit `50 × 40`, cu o grosime de `11`–`12` mm cu tot cu componente). Dacă ai placa în față, o măsori tu cu o riglă și corectezi numerele.  
 **Notă:** imprimanta 3D **nu** e folosită la oră — doar design.
 
 ---
@@ -31,9 +31,9 @@ gaura = cablu **+ 1 mm** · fanta = cablu **− 1 mm** · exteriorul = gaura **+
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap lecția trecută · privim obiecte reale: ce părți au? |
-| 10–50 | **Obiectul 1** — Clema pentru cabluri (Minim) |
-| 50–85 | **Obiectul 2** — Suportul pentru creion (Minim) |
-| 85–110 | **Complet** pe primul obiect |
+| 10–55 | **Obiectul 1** — Carcasa Arduino (Minim) |
+| 55–90 | **Obiectul 2** — Carcasa micro:bit (Minim) |
+| 90–110 | **Complet** pe primul obiect |
 | 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme sau ca temă |
 
 **Grupe de unelte azi:**  
@@ -44,13 +44,14 @@ gaura = cablu **+ 1 mm** · fanta = cablu **− 1 mm** · exteriorul = gaura **+
 
 | Unealtă | Ce face |
 |---------|---------|
-| <span style="color:#E65722;font-weight:700">Ruler</span> | măsori cablul și creionul |
-| <span style="color:#E65722;font-weight:700">mărimi cu numere</span> | scrii mărimile calculate |
-| <span style="color:#00A600;font-weight:700">Hole</span> | golul în care intră cablul sau creionul |
-| <span style="color:#E65722;font-weight:700">Align (L)</span> | centrează golul în corp |
-| <span style="color:#E65722;font-weight:700">săgețile de la tastatură</span> | mută găurile de prindere cu pași de `5` mm |
-| <span style="color:#DC143C;font-weight:700">Ctrl+G</span> | Group: golurile taie corpul |
-| <span style="color:#DC143C;font-weight:700">Ctrl+D</span> | a doua gaură de prindere, simetrică |
+| <span style="color:#E65722;font-weight:700">Ruler</span> | măsori placa și verifici jocul |
+| <span style="color:#E65722;font-weight:700">mărimi cu numere</span> | scrii mărimile calculate: placă + 1 mm |
+| <span style="color:#00A600;font-weight:700">Hole</span> | golul plăcii, porturile, fantele și ferestrele |
+| <span style="color:#E65722;font-weight:700">Align (L)</span> | centrează golul și piesele capacului |
+| <span style="color:#E65722;font-weight:700">conul negru</span> | ridică golul sau portul la înălțimea lor |
+| <span style="color:#E65722;font-weight:700">săgețile de la tastatură</span> | mută portul și fantele cu pași de `5` mm |
+| <span style="color:#DC143C;font-weight:700">Ctrl+D</span> | a doua și a treia fantă, egale cu prima |
+| <span style="color:#DC143C;font-weight:700">Ctrl+G</span> | Group: golurile taie cutia sau capacul |
 
 Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-weight:700">Color</span>, <span style="color:#DC143C;font-weight:700">Ctrl+Z</span>) le știi din lecțiile trecute.
 
@@ -58,180 +59,174 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 
 ## Pas cu pas
 
-**Obiectul 1 — Clema pentru cabluri**
+**Obiectul 1 — Carcasa pentru Arduino Uno**
 
 ### 1) Proiect nou și calculul
 1. **Create new design** · nume `Prenume_Nume_T2_L09`  
-2. Pe foaie, cu cablul tău (exemplu **5 mm**):  
-   gaura = 5 + 1 = **6** · fanta = 5 − 1 = **4** · exteriorul = 6 + 6 = **12**  
-3. Snap Grid: **1.0 mm**
+2. Snap Grid: **5.0 mm**  
+3. Pe foaie, cu placa Arduino Uno (`69 × 54`, rotunjită în sus):  
+   gol = 69 + 1 = **70** și 54 + 1 = **55** · exterior = 70 + 10 = **80** și 55 + 10 = **65**  
+   dop pentru capac = **69 × 54** (golul − 1)
 
 **Încearcă tu — Proiect nou și calculul (5 min)**  
-- [ ] Ai calculat pe foaie: gaura, fanta și exteriorul pentru cablul tău
+- [ ] Ai calculat pe foaie: golul, exteriorul și dopul pentru placa ta  
 
-### 2) Inelul
-1. <span style="color:#1E90FF;font-weight:700">Cylinder</span> → **12 · 12 · 12** *(exteriorul și lungimea clemei)*  
-2. Alt <span style="color:#1E90FF;font-weight:700">Cylinder</span> → **6 · 6 · 16** → <span style="color:#00A600;font-weight:700">Hole</span> *(gaura cablului, mai lungă decât inelul)*  
-3. Selectezi Hole-ul și cilindrul → <span style="color:#E65722;font-weight:700">L</span> → mijloc pe cele **trei** direcții  
-4. <span style="color:#DC143C;font-weight:700">Ctrl+A</span> → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>, apoi <span style="color:#E65722;font-weight:700">D</span> — un tub scurt, cu pereți de 3 mm, pe plan
+### 2) Cutia
+1. <span style="color:#1E90FF;font-weight:700">Box</span> → **80 · 65 · 28**: cutia  
+2. Alt <span style="color:#1E90FF;font-weight:700">Box</span> → **70 · 55 · 25** → <span style="color:#00A600;font-weight:700">Hole</span>: golul  
+3. Selectezi golul și cutia → <span style="color:#E65722;font-weight:700">L</span> → **mijloc** pe stânga–dreapta și pe față–spate  
+4. Ridici golul cu **<span style="color:#E65722;font-weight:700">conul negru</span>** la **5** (scrii 5): fundul rămâne de `5` mm, iar golul iese deasupra cutiei (`30 > 28`)  
 
-**Încearcă tu — Inelul (8 min)**  
-- [ ] Tubul (**12 · 12 · 12**) are gaura **6** (Hole, mai lungă decât tubul)  
-- [ ] Pereții sunt de **3 mm** și tubul stă pe plan
+**Încearcă tu — Cutia (10 min)**  
+- [ ] Cutia are **80 · 65 · 28**, golul **70 · 55 · 25**, centrat  
+- [ ] Golul e ridicat la `5` mm: fundul e închis  
 
-### 3) Rotirea
-1. Selectezi tubul → rotești **90°** (4 pași de câte 22,5° pe o săgeată curbă **de pe lateral**, sau scrii **90**)  
-2. Tubul stă acum „culcat”. Verifici din <span style="color:#D400D4;font-weight:700">Top</span>: trebuie să arate ca un **dreptunghi lung față–spate** — gaura lui trece de la **față** la **spate**, cablul va trece **orizontal**, prin el  
-3. Dacă din <span style="color:#D400D4;font-weight:700">Top</span> e un cerc, mai rotești 90° pe altă săgeată curbă; dacă dreptunghiul e stânga–dreapta, rotești 90° pe săgeata plată de pe plan  
-4. Dacă tubul a rămas sub plan sau plutește, apasă <span style="color:#E65722;font-weight:700">D</span>
+### 3) Porturile de alimentare și USB
+*Pe desenul plăcii, conectorii ies cam `4,5` mm în afara plăcii, în peretele din stânga. Alimentarea e lată de cam `9` mm, iar USB-B de cam `18` mm. Găurile le facem mai mari decât ele.*
 
-**Încearcă tu — Rotirea (6 min)**  
-- [ ] Din <span style="color:#D400D4;font-weight:700">Top</span>, tubul e un dreptunghi lung față–spate (gaura trece de la față la spate)
+1. <span style="color:#1E90FF;font-weight:700">Box</span> → **15 · 10 · 16** → <span style="color:#00A600;font-weight:700">Hole</span>: portul de **alimentare**  
+2. Selectezi portul și cutia → <span style="color:#E65722;font-weight:700">L</span> → **stânga** pe stânga–dreapta și **față** pe față–spate. Portul iese pe peretele din stânga  
+3. Ridici portul cu **<span style="color:#E65722;font-weight:700">conul negru</span>** la **5**. Apoi <span style="color:#E65722;font-weight:700">săgeata spre spate</span> de `1` ori (`5` mm): portul e la `5` mm de marginea din față  
+4. <span style="color:#1E90FF;font-weight:700">Box</span> → **22 · 10 · 16** → <span style="color:#00A600;font-weight:700">Hole</span>: portul **USB**. La fel: <span style="color:#E65722;font-weight:700">L</span> cu cutia, **stânga** și **față**, ridicat la **5**, apoi <span style="color:#E65722;font-weight:700">săgeata spre spate</span> de `6` ori (`30` mm): portul e la `30` mm de marginea din față  
 
-### 4) Plăcuța
-1. <span style="color:#1E90FF;font-weight:700">Box</span> → **30 · 12 · 3** *(plăcuța de prindere)*  
-2. Selectezi tubul și plăcuța → <span style="color:#E65722;font-weight:700">L</span> → mijloc pe ambele direcții de pe plan  
-3. Plăcuța și tubul sunt acum amândouă pe plan: selectezi **tubul** și îl ridici cu **<span style="color:#E65722;font-weight:700">conul negru</span>** la **2 mm** (scrii 2): se **înfige 1 mm** în plăcuță (grosime 3) și se prinde
+**Încearcă tu — Porturile de alimentare și USB (10 min)**  
+- [ ] Alimentarea (**15 · 10 · 16**) și USB (**22 · 10 · 16**) sunt Hole pe peretele din stânga, ridicate la `5` mm  
+- [ ] Sunt la `5` mm și `30` mm de marginea din față, deci nu se ating  
 
-**Încearcă tu — Plăcuța (8 min)**  
-- [ ] Plăcuța are **30 · 12 · 3**  
-- [ ] Tubul e ridicat la **2 mm** și se înfige 1 mm în plăcuță
+### 4) Capacul
+1. <span style="color:#1E90FF;font-weight:700">Box</span> → **69 · 54 · 4** pe plan, **lângă** cutie: dopul  
+2. <span style="color:#1E90FF;font-weight:700">Box</span> → **80 · 65 · 4**: plăcuța capacului  
+3. Selectezi dopul și plăcuța → <span style="color:#E65722;font-weight:700">L</span> → **mijloc** pe stânga–dreapta și pe față–spate  
+4. Ridici plăcuța cu **<span style="color:#E65722;font-weight:700">conul negru</span>** la **3**: se așază **peste** dop și se înfige `1` mm în el  
 
-### 5) Fanta
-1. <span style="color:#1E90FF;font-weight:700">Box</span> → **4 · 12 · 10** → <span style="color:#00A600;font-weight:700">Hole</span> *(lățimea 4 mm = cablu − 1)*  
-2. Selectezi fanta și tubul → <span style="color:#E65722;font-weight:700">L</span> → **mijloc** pe cele două direcții de pe plan  
-3. Ridici fanta cu **<span style="color:#E65722;font-weight:700">conul negru</span>** la **8 mm** de plan: ea pornește de la mijlocul tubului și iese 4 mm deasupra lui. Fanta taie peretele de sus și lasă cablul să intre apăsat  
-4. <span style="color:#DC143C;font-weight:700">Ctrl+A</span> → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>
+**Încearcă tu — Capacul (12 min)**  
+- [ ] Dopul are **69 · 54 · 4**, plăcuța **80 · 65 · 4**  
+- [ ] Plăcuța e la `3` mm și stă peste dop, centrată  
 
-**Încearcă tu — Fanta (8 min)**  
-- [ ] Fanta (**4 · 12 · 10**, Hole) e la **8 mm** și taie peretele de sus
+### 5) Fantele, Group și verificare
+1. <span style="color:#1E90FF;font-weight:700">Box</span> → **40 · 4 · 10** → <span style="color:#00A600;font-weight:700">Hole</span>: prima fantă de aerisire  
+2. Selectezi fanta și plăcuța → <span style="color:#E65722;font-weight:700">L</span> → **mijloc** pe stânga–dreapta și pe față–spate. Apoi <span style="color:#E65722;font-weight:700">săgeata spre spate</span> de `2` ori (`10` mm)  
+3. <span style="color:#DC143C;font-weight:700">Ctrl+D</span> → muți copia **10 mm** spre față (`2` apăsări). <span style="color:#DC143C;font-weight:700">Ctrl+D</span> din nou: a treia fantă, tot la `10` mm. Fantele sunt la `−10`, `0` și `+10` mm de centru  
+4. Selectezi **doar** piesele capacului (dop, plăcuță, cele 3 fante; nu și cutia) → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
+5. Selectezi cutia cu golul și cele 2 porturi → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>. <span style="color:#D400D4;font-weight:700">Top</span>: placa încape în gol, capacul stă lângă cutie  
 
-### 6) Găurile de prindere
-1. <span style="color:#1E90FF;font-weight:700">Cylinder</span> → **3 · 3 · 8** → <span style="color:#00A600;font-weight:700">Hole</span>  
-2. Selectezi gaura și plăcuța → <span style="color:#E65722;font-weight:700">L</span> → punctul din **stânga** și **mijloc** față–spate (nu alege sus–jos); apoi **săgeata dreapta** de **4 ori**: marginea găurii e la **4 mm** de capăt, în partea lipsită de tub  
-3. Cobori gaura cu **1 mm** sub plan, folosind **<span style="color:#E65722;font-weight:700">conul negru</span>**, ca să treacă prin toată plăcuța  
-4. <span style="color:#DC143C;font-weight:700">Ctrl+D</span> → copia + plăcuța → <span style="color:#E65722;font-weight:700">L</span> → punctul din **dreapta**, apoi **săgeata stânga** de **4 ori**: la **4 mm** de capătul opus  
-5. <span style="color:#DC143C;font-weight:700">Ctrl+A</span> → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>
+**Încearcă tu — Fantele, Group și verificare (10 min)**  
+- [ ] Cele **3** fante (**40 · 4 · 10**) sunt egale, la `10` mm una de alta  
+- [ ] Cutia și capacul sunt **două** grupuri separate  
 
-**Încearcă tu — Găurile de prindere (8 min)**  
-- [ ] Cele **2** găuri de prindere (**3 mm**) sunt la **4 mm** de capete  
-- [ ] Trec prin toată plăcuța
+**Obiectul 2 — Carcasa pentru micro:bit**
 
-**Obiectul 2 — Suportul pentru creion**
-
-### 7) Creionul: proiect nou, măsurare și corp
+### 6) micro:bit: proiect nou, cutia și decupajul USB
 1. Dai **Create new design** și scrii numele `Prenume_Nume_T2_L09_B`. Snap Grid: **5.0 mm**.  
-2. Măsori un **creion** (de exemplu `7` mm). Regula: **gaura = creion + 1 mm = 8**; **exterior = gaură + 6 mm = 14**  
-3. Trage un <span style="color:#1E90FF;font-weight:700">Cylinder</span> **14 · 14 · 25**: corpul. Alt <span style="color:#1E90FF;font-weight:700">Cylinder</span> **8 · 8 · 24** → <span style="color:#00A600;font-weight:700">Hole</span>, ridicat cu **<span style="color:#E65722;font-weight:700">conul negru</span>** la **3** (fund de `3` mm); iese deasupra (`27 > 25`)  
-4. Selectezi golul și corpul → <span style="color:#E65722;font-weight:700">L</span> → **mijloc** pe stânga–dreapta și pe față–spate. Pereții au `3` mm peste tot  
+2. Măsori placa (exemplu `50 × 40`, grosime cam `12` mm cu tot cu componente) și aplici regula: gol **51 × 41**, exterior `51 + 10 = 61` și `41 + 10 = 51`, dop **50 × 40**. Placa stă pe componentele din spate, deci golul trebuie să fie adânc de cel puțin `16` mm  
+3. <span style="color:#1E90FF;font-weight:700">Box</span> **61 · 51 · 23**: cutia. Alt <span style="color:#1E90FF;font-weight:700">Box</span> **51 · 41 · 25** → <span style="color:#00A600;font-weight:700">Hole</span>, selectezi golul și cutia → <span style="color:#E65722;font-weight:700">L</span> → **mijloc** pe stânga–dreapta și pe față–spate. Ridici golul cu **<span style="color:#E65722;font-weight:700">conul negru</span>** la **5**  
+4. <span style="color:#1E90FF;font-weight:700">Box</span> **14 · 10 · 8** → <span style="color:#00A600;font-weight:700">Hole</span>: decupajul micro-USB. Selectezi decupajul și cutia → <span style="color:#E65722;font-weight:700">L</span> → **mijloc** pe stânga–dreapta și **spate** pe față–spate. Ridici decupajul cu <span style="color:#E65722;font-weight:700">conul negru</span> la **6**  
+5. Selectezi cutia, golul și decupajul → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
 
-**Încearcă tu — Creionul: proiect nou, măsurare și corp (12 min)**  
-- [ ] Corpul are **14 · 14 · 25**, golul **8 · 8 · 24** la **3**  
-- [ ] Mărimile vin din măsurarea creionului: creion `+ 1 = gaură`, gaură `+ 6 = exterior`  
+**Încearcă tu — micro:bit: proiect nou, cutia și decupajul USB (12 min)**  
+- [ ] Cutia are **61 · 51 · 23**, golul **51 · 41 · 25**, la `5` mm de plan  
+- [ ] Decupajul USB (**14 · 10 · 8**) e centrat pe peretele din spate, la `6` mm de plan  
 
-### 8) Creionul: plăcuța, găurile de prindere, Group
-1. Trage un <span style="color:#1E90FF;font-weight:700">Box</span> **30 · 30 · 3**: plăcuța. Selectezi corpul grupat (sau golul și corpul) și plăcuța → <span style="color:#E65722;font-weight:700">L</span> → **mijloc** pe stânga–dreapta și pe față–spate. Corpul stă pe plan, în centrul plăcuței  
-2. Un <span style="color:#1E90FF;font-weight:700">Cylinder</span> **3 · 3 · 10** → <span style="color:#00A600;font-weight:700">Hole</span>: <span style="color:#E65722;font-weight:700">L</span> pe **mijloc** pe stânga–dreapta și pe față–spate, apoi **săgeata stânga** de `2` ori (`10` mm)  
-3. <span style="color:#DC143C;font-weight:700">Ctrl+D</span> → muți copia **20 mm** spre dreapta (`4` apăsări): a doua gaură, simetrică  
-4. <span style="color:#DC143C;font-weight:700">Ctrl+A</span> → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>. <span style="color:#D400D4;font-weight:700">Top</span>: găurile nu ating corpul (cel puțin `1,5` mm) și nici marginea plăcuței  
+### 7) micro:bit: capacul cu trei ferestre
+1. <span style="color:#1E90FF;font-weight:700">Box</span> **50 · 40 · 4** pe plan, lângă cutie: dopul. <span style="color:#1E90FF;font-weight:700">Box</span> **61 · 51 · 4**: plăcuța → <span style="color:#E65722;font-weight:700">L</span> → **mijloc** pe stânga–dreapta și pe față–spate. Ridici plăcuța la **3**  
+2. <span style="color:#1E90FF;font-weight:700">Box</span> **25 · 25 · 10** → <span style="color:#00A600;font-weight:700">Hole</span>: fereastra pentru matricea de LED-uri. <span style="color:#E65722;font-weight:700">L</span> cu plăcuța → **mijloc** pe stânga–dreapta și pe față–spate  
+3. <span style="color:#1E90FF;font-weight:700">Cylinder</span> **10 · 10 · 10** → <span style="color:#00A600;font-weight:700">Hole</span>: butonul A. <span style="color:#E65722;font-weight:700">L</span> cu plăcuța → **mijloc** pe ambele direcții, apoi <span style="color:#E65722;font-weight:700">săgeata stânga</span> de `4` ori (`20` mm)  
+4. <span style="color:#DC143C;font-weight:700">Ctrl+D</span> → muți copia **40 mm** spre dreapta (`8` apăsări): butonul B, la `20` mm de centru  
+5. Selectezi **doar** piesele capacului (dop, plăcuță, cele 3 ferestre) → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
 
-**Încearcă tu — Creionul: plăcuța, găurile de prindere, Group (12 min)**  
-- [ ] Plăcuța are **30 · 30 · 3**, cu **2** găuri **Ø3** simetrice la `10` mm de centru  
-- [ ] După <span style="color:#DC143C;font-weight:700">Group</span>, găurile nu ating corpul și nici marginea  
+**Încearcă tu — micro:bit: capacul cu trei ferestre (14 min)**  
+- [ ] Dopul are **50 · 40 · 4**, plăcuța **61 · 51 · 4**, la `3` mm  
+- [ ] Capacul are **3** ferestre: matricea **25 · 25** și două butoane **Ø10** la `20` mm de centru  
 
 **Complet**
 
-### 9) Complet — a doua clemă
+### 8) Complet — text, Ruler, culoare
 *Deschizi din nou proiectul `Prenume_Nume_T2_L09` din lista **Designs**.*
 
-1. Un cablu gros de **8 mm**: gaura 9 · fanta 7 · exteriorul 15 — calculezi tu pe foaie  
-2. Refaci pașii 2–6 cu numerele noi: tub **15 · 15 · 15**, Hole **9 · 9 · 19**, plăcuță **36 · 15 · 3**, fantă **7 · 15 · 10** (ridicată la **9 mm**), tubul ridicat la 2 mm, găuri Ø3 la 4 mm de capete  
-3. Pune a doua clemă lângă prima, pe plan  
-4. <span style="color:#E65722;font-weight:700">Ruler</span>: măsori gaura (6 mm) și fanta (4 mm) *(Hole-urile se măsoară doar separat: <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span>, măsori, apoi <span style="color:#DC143C;font-weight:700">Ctrl+A</span> → <span style="color:#DC143C;font-weight:700">Ctrl+G</span> la loc; la tub: <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span> pe grupul mare, apoi pe tub)*  
-5. <span style="color:#00A600;font-weight:700">Color</span>
+1. <span style="color:#1E90FF;font-weight:700">Text</span> → scrii **UNO**, înălțimea **2** mm, lățimea cam **30**. Selectezi textul și capacul → <span style="color:#E65722;font-weight:700">L</span> → **mijloc** pe stânga–dreapta și pe față–spate. Ridici textul cu <span style="color:#E65722;font-weight:700">conul negru</span> la **6**: se înfige `1` mm în plăcuță, iar `1` mm iese deasupra  
+2. <span style="color:#E65722;font-weight:700">Ruler</span>: pui rigla pe golul cutiei (**70 · 55**) și pe dop (**69 · 54**): jocul e `0,5` mm pe fiecare parte  
+3. <span style="color:#00A600;font-weight:700">Color</span>: cutia într-o culoare, capacul în alta  
 
-**Încearcă tu — Complet — a doua clemă (12 min)**  
-- [ ] Ai a doua clemă, pentru un cablu de **8 mm**  
-- [ ] Cu <span style="color:#E65722;font-weight:700">Ruler</span>: gaura **6 mm** și fanta **4 mm**  
-- [ ] Clemele sunt colorate
+**Încearcă tu — Complet — text, Ruler, culoare (12 min)**  
+- [ ] Textul **UNO** (`2` mm înălțime, din care `1` mm iese) e centrat pe capac  
+- [ ] Cu <span style="color:#E65722;font-weight:700">Ruler</span>: golul **70 · 55** și dopul **69 · 54**, deci `0,5` mm joc pe parte  
+- [ ] Cutia și capacul au culori diferite  
 
 ---
 
 ## Greșeli frecvente
-1. **Cablul nu intră** — gaura e exact cât cablul. Folosește **cablu + 1 mm**.  
-2. **Cablul iese singur** — fanta e prea largă. Folosește **cablu − 1 mm**.  
-3. **Tubul nu e rotit** — cablul ar trece pe verticală, prin plăcuță. Rotește 90°.  
-4. **Fanta nu taie** — nu e Hole, sau nu ai dat <span style="color:#DC143C;font-weight:700">Ctrl+G</span>.  
-5. **Tubul plutește deasupra plăcuței** — coboară-l la 2 mm de plan, să se înfigă 1 mm.  
-6. **Găurile de prindere taie tubul** — mută-le spre capete, departe de el.  
-7. **Am măsurat cablul „cu ochiul”** — folosește rigla și scrie numărul pe foaie.
-8. **Creionul nu intră** — ai pus gaura exact cât creionul: adaugi `1` mm toleranță.  
+1. **Placa nu încape în gol** — ai uitat jocul: golul trebuie să fie placa **+ 1 mm**.  
+2. **Capacul nu intră** — dopul are aceeași mărime ca golul. Dopul trebuie să fie golul **− 1 mm**.  
+3. **Portul e prea sus sau prea jos** — Hole-ul nu e ridicat la `5` mm.  
+4. **Portul nu taie peretele** — lipsește <span style="color:#DC143C;font-weight:700">Ctrl+G</span>, sau Hole-ul nu ajunge până la perete (l-ai aliniat pe stânga, nu pe mijloc).  
+5. **Am grupat capacul cu cutia** — nu folosi <span style="color:#DC143C;font-weight:700">Ctrl+A</span>: selectezi piesele capacului cu Shift+click.  
+6. **Fantele nu sunt egale** — la <span style="color:#DC143C;font-weight:700">Ctrl+D</span> ai mutat altă distanță a doua oară. Mută de fiecare dată cu `2` apăsări.  
+7. **Placa mea e altfel decât în lecție** — o măsori, rotunjești în sus, apoi aplici aceeași regulă `+ 1 mm`.  
+8. **Dopul iese în afara plăcuței** — dopul trebuie să fie **mai mic** decât plăcuța capacului.  
 
 ---
 
-## De făcut azi — „Clema mea”
+## De făcut azi — „Carcasa mea”
 
 ### Minim vs Complet *(citește înainte să începi)*
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | **Pașii 1 și 2** — clema pentru cablul măsurat **și** suportul pentru creionul măsurat (gaură = creion `+ 1`, exterior = gaură `+ 6`), cu **cel puțin 8 unelte diferite** |
-| **Complet (ținta orei)** | Minim + **Pasul 3** — a doua clemă pentru un cablu mai gros, `Ruler`, culoare, cu cel puțin **6 unelte diferite** |
+| **Minim („am reușit”)** | **Pașii 1 și 2** — carcasa Arduino (cutie `80 · 65 · 28`, gol `70 · 55`, 2 porturi, capac cu 3 fante) **și** carcasa micro:bit (cutie `61 · 51 · 23`, gol `51 · 41`, decupaj USB, capac cu 3 ferestre), cu **cel puțin 8 unelte diferite** |
+| **Complet (ținta orei)** | Minim + **Pasul 3** — text pe capac, `Ruler` pe joc, culori, cu cel puțin **6 unelte diferite** |
 
 Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lecția următoare.
 
-### Pasul 1 — Obiectul 1: Clema pentru cabluri *(Minim)*
-- [ ] Cablul tău măsurat · gaura, fanta și exteriorul calculate pe foaie  
-- [ ] Tub **12 · 12 · 12** cu Hole **6 · 6 · 16**, rotit 90°  
-- [ ] Plăcuță **30 · 12 · 3**, tubul prins 1 mm în ea  
-- [ ] Fantă **4 · 12 · 10** pe sus  
-- [ ] 2 găuri **Ø3** la capete · <span style="color:#DC143C;font-weight:700">Ctrl+A</span> → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>
+### Pasul 1 — Obiectul 1: Carcasa Arduino *(Minim)*
+- [ ] Calcul pe foaie: gol `70 × 55`, exterior `80 × 65`, dop `69 × 54`  
+- [ ] Cutia **80 · 65 · 28** cu golul **70 · 55 · 25**, centrat, la `5` mm de plan  
+- [ ] **2** porturi pe peretele din stânga: **15 · 10 · 16** la `5` mm și **22 · 10 · 16** la `30` mm de față  
+- [ ] Capac: dop **69 · 54 · 4**, plăcuță **80 · 65 · 4** la `3` mm, **3** fante egale la `10` mm  
 
-### Pasul 2 — Obiectul 2: Suportul pentru creion *(Minim)*
-- [ ] Corpul are **14 · 14 · 25**, golul **8 · 8 · 24** la **3**  
-- [ ] Mărimile vin din măsurarea creionului: creion `+ 1 = gaură`, gaură `+ 6 = exterior`  
-- [ ] Plăcuța are **30 · 30 · 3**, cu **2** găuri **Ø3** simetrice la `10` mm de centru  
-- [ ] După <span style="color:#DC143C;font-weight:700">Group</span>, găurile nu ating corpul și nici marginea  
-- [ ] Ai folosit cel puțin **8 unelte diferite** (la ambele obiecte): <span style="color:#E65722;font-weight:700">Ruler</span>, <span style="color:#1E90FF;font-weight:700">Cylinder</span>, <span style="color:#1E90FF;font-weight:700">Box</span>, <span style="color:#00A600;font-weight:700">Hole</span>, <span style="color:#E65722;font-weight:700">Align (L)</span>, <span style="color:#DC143C;font-weight:700">Ctrl+G</span>, <span style="color:#DC143C;font-weight:700">Ctrl+D</span>, <span style="color:#E65722;font-weight:700">mărimi cu numere</span>, <span style="color:#E65722;font-weight:700">conul negru</span>  
+### Pasul 2 — Obiectul 2: Carcasa micro:bit *(Minim)*
+- [ ] Cutia **61 · 51 · 23** cu golul **51 · 41 · 25**, la `5` mm de plan  
+- [ ] Decupaj USB **14 · 10 · 8** pe peretele din spate, la `6` mm  
+- [ ] Capac: dop **50 · 40 · 4**, plăcuță **61 · 51 · 4**, ferestre: matrice **25 · 25** și două butoane **Ø10**  
+- [ ] Ai folosit cel puțin **8 unelte diferite** (la ambele obiecte): <span style="color:#1E90FF;font-weight:700">Box</span>, <span style="color:#1E90FF;font-weight:700">Cylinder</span>, <span style="color:#00A600;font-weight:700">Hole</span>, <span style="color:#E65722;font-weight:700">Align (L)</span>, <span style="color:#E65722;font-weight:700">conul negru</span>, <span style="color:#E65722;font-weight:700">săgețile de la tastatură</span>, <span style="color:#DC143C;font-weight:700">Ctrl+D</span>, <span style="color:#DC143C;font-weight:700">Ctrl+G</span>, <span style="color:#E65722;font-weight:700">mărimi cu numere</span>  
 
-**→ Ai Minim când:** cablul intră în clemă, creionul intră în suport, iar mărimile pornesc de la măsurători, nu de la ochi.
+**→ Ai Minim când:** placa se așază în gol cu un joc mic, porturile sunt în dreptul găurilor, iar capacul se potrivește cu dopul în gol.
 
 ### Pasul 3 — Complet
-- [ ] A doua clemă (cablu 8 mm): gaura 9 · fanta 7 · exterior 15  
-- [ ] <span style="color:#E65722;font-weight:700">Ruler</span> pe gaura și pe fanta primei cleme  
-- [ ] <span style="color:#00A600;font-weight:700">Color</span> · numele `T2_L09` e corect
-- [ ] Partea a doua are cel puțin **6 unelte diferite**: <span style="color:#E65722;font-weight:700">Ruler</span>, <span style="color:#00A600;font-weight:700">Color</span>, <span style="color:#DC143C;font-weight:700">Ctrl+D</span>, <span style="color:#E65722;font-weight:700">mărimi cu numere</span>, <span style="color:#E65722;font-weight:700">Align (L)</span>, <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
+- [ ] Text **UNO** (`2` mm înălțime) pe capac, centrat  
+- [ ] <span style="color:#E65722;font-weight:700">Ruler</span>: gol **70 · 55**, dop **69 · 54**  
+- [ ] <span style="color:#00A600;font-weight:700">Color</span> · numele `T2_L09` e corect  
+- [ ] Partea a doua are cel puțin **6 unelte diferite**: <span style="color:#1E90FF;font-weight:700">Text</span>, <span style="color:#E65722;font-weight:700">Align (L)</span>, <span style="color:#E65722;font-weight:700">conul negru</span>, <span style="color:#E65722;font-weight:700">Ruler</span>, <span style="color:#00A600;font-weight:700">Color</span>, <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
 
-**Gata Complet când:** a doua clemă pentru un cablu mai gros, Ruler, culoare și nimic nu plutește.
+**Gata Complet când:** textul e pe capac, jocul de `0,5` mm e verificat cu Ruler, iar cutia și capacul au culori diferite.
 
 ---
 
-## Bonus ★★★ — Provocare: Clemă dublă cu două cabluri
+## Bonus ★★★ — Provocare: Carcasă Raspberry Pi cu clemă
 *Doar dacă ai terminat Complet.*
 
-- [ ] Schimbă culorile și adaugă pe plăcuță text cu mărimea cablului (`1` mm)  
-- [ ] **Provocarea (obiect mai complicat):** o **plăcuță** `50 × 14 × 3` cu **2 cleme** pentru **2 cabluri diferite** (de exemplu `5` mm și `7` mm), mărimile calculate după regula lecției (gaură `+ 1`, exterior `+ 6`, fantă `− 1`), și **2 găuri** `Ø3` la capete. Cu <span style="color:#E65722;font-weight:700">Ruler</span> verifici cele două găuri și cele două fante; un coleg poate pune în ele cele două cabluri.  
+- [ ] Schimbă culorile și adaugă text cu numele tău pe capac (`1` mm)  
+- [ ] **Provocarea (obiect mai complicat):** într-un proiect nou `Prenume_Nume_T2_L09_C`, o **carcasă pentru Raspberry Pi** (placă `85 × 56`, rotunjită; gol **86 × 57**, perete `5`, cutie **96 · 67 · 30**) cu capac cu dop **85 · 56 · 4** și **6 fante** de aerisire (**50 · 3 · 10**) la `8` mm una de alta, plus **2 cleme snap-fit**: pe fiecare latură lungă a dopului un nub <span style="color:#1E90FF;font-weight:700">Box</span> **10 · 2 · 2**, care intră într-o crestătură Hole **12 · 3 · 4** din peretele cutiei, la `2` mm sub margine. Cu <span style="color:#E65722;font-weight:700">Ruler</span> confirmi cele **6** fante egale și jocul de `0,5` mm.  
 
 ## Recapitulare rapidă
-1. Piesa pentru un obiect real începe cu **măsurarea**  
-2. Gaura = obiect **+ 1 mm** · fanta = obiect **− 1 mm**  
-3. **Toleranța** = spațiul mic care face piesa să se potrivească  
-4. Rotire de 90° pentru ca tubul să stea culcat
-5. Al doilea obiect (Suportul pentru creion) exersează aceeași idee pe alte mărimi
+1. Placa reală se **măsoară**, se rotunjește în sus, apoi primește **+ 1 mm** joc  
+2. Dopul capacului = golul **− 1 mm**  
+3. Porturile se decupează cu Hole **mai mare** decât portul și **ridicat** la înălțimea lui  
+4. Fantele egale = **Ctrl+D** repetat, cu aceeași mutare  
+5. Al doilea obiect (carcasa micro:bit) exersează aceeași regulă pe altă placă  
 
 ## Schema pe scurt *(pe foaie — dacă o printezi separat)*
 
-**Calcul:** cablu 5 → gaură 6 → fantă 4 → exterior 12  
-**Minim:** Cylinder 12·12·12 − Hole 6·6·16 → rotit 90° → plăcuță 30·12·3 → fantă Hole 4·12·10 → 2 găuri Ø3 → Group  
-**Complet:** + clemă pentru 8 mm · Ruler · Color
+**Calcul:** placă 69·54 → gol 70·55 → exterior 80·65 → dop 69·54  
+**Minim:** Box 80·65·28 − Hole 70·55·25 (la 5) − porturi 15·10·16 și 22·10·16 · capac: dop 69·54·4 + plăcuță 80·65·4 (la 3) − 3 fante 40·4·10 · apoi carcasa micro:bit 61·51·23  
+**Complet:** + Text UNO · Ruler · Color
 
 **Quiz scurt:**  
-- Cablul are 5 mm. Cât are gaura? Dar fanta?  
-- De ce nu facem gaura exact cât cablul?  
-- Ce faci dacă ai un cablu de 7 mm?
+- De ce golul e placa `+ 1` mm?  
+- De ce dopul capacului e golul `− 1` mm?  
+- De ce gaura portului e mai mare decât portul?
 
 ## Temă
-Opțional: măsoară un cablu de acasă (încărcător, căști), notează mărimea pe foaie și calculează gaura, fanta și exteriorul. Mâine îl modelezi.
+Opțional: măsori o placă sau un obiect electronic de acasă (de exemplu o telecomandă), calculezi pe foaie golul, peretele și dopul, și scrii mărimile (fără Tinkercad). Îl facem la L10, dacă îl alegi.
 
 ## Ce urmează
-În **Lecția 10** alegi **tu** un obiect util și o **piesă pereche**, cu schiță și prezentare.
+În **Lecția 10** alegi **tu** un obiect util, cu **piesa lui pereche** care se potrivește cu joc.
