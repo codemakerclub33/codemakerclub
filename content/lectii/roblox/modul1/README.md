@@ -22,36 +22,35 @@
 
 ## Ce acoperă Modulul 1
 
+Obby-ul are **9 etape independente** (grilă 3×3, 150 de stud-uri între centre) și o lecție finală care le leagă.
+
 | Zonă Roblox Studio | Unde |
 |--------------------|------|
-| Deschidere Studio, Place, salvare | L1 |
-| Explorer / Properties / Workspace | L2 |
-| Parts (Block, etc.), Move / Scale / Rotate | L3 |
-| Anchored, Material, Color, Transparency | L4 |
-| Cameră, Play / Stop, test din avatar | L5 |
-| SpawnLocation, zonă Finish (marcaj clar) | L6 |
-| Traseu jucabil (platforme, salturi rezonabile) | L7 |
-| Checkpoint **vizual** (culoare / semn; script = M2) | L8 |
-| Capstone: lume explorabilă start→finish | L9–L10 |
+| Studio, Place, salvare, Part, Move / Scale / Rotate, Anchor, Play / Stop | L1 · Etapa 1 Pod |
+| Explorer, Properties (Name, Anchored, Size, Position), Workspace | L2 · Etapa 2 Casă |
+| Forme (Block, Cylinder, Wedge, Sphere), Orientation, grupare | L3 · Etapa 3 Castel |
+| Anchored, Material, Color, Transparency, platforme | L4 · Etapa 4 Parcare |
+| Cameră, Play / Pause / Stop, ciclul găsești → repari → retestezi | L5 · Etapa 5 Pădure |
+| SpawnLocation, Finish, labirint cu un singur drum | L6 · Etapa 6 Labirint |
+| Traseu pe verticală, salturi măsurate | L7 · Etapa 7 Zgârie-nori |
+| Checkpoint **vizual** (culoare / semn; script = M2) | L8 · Etapa 8 Joacă |
+| Etapă proprie, pe temă aleasă | L9 · Etapa 9 |
+| Pasarele între etape, poartă, podium, test cu un coleg, prezentare, insignă | L10 |
 
-**Nu în M1:** Script / LocalScript propriu, Touched, GUI, leaderstats, RemoteEvent, DataStore.
+**Nu în M1:** Script / LocalScript, Touched, GUI, leaderstats, RemoteEvent, DataStore.
 
-**Opțional Complet / Bonus L9:** un script **dat de profesor** (ex. Part care își schimbă culoarea) — copilul **nu** scrie sintaxă; doar lipește / vede efectul.
+## Minim vs Complet
 
-## Minim vs Complet (modul)
+Fiecare lecție are propriul **Minim** (proiectul de bază) și **Complet** (mai multe piese și detalii), plus un **Bonus ★★★**. În L9 Minim înseamnă cel puțin 15 piese și 5 salturi, iar Complet cel puțin 25 de piese, 8 salturi și 2 checkpoint-uri.
 
-| | M1 |
-|--|-----|
-| **Minim** | Place salvat + traseu scurt Start→Finish pe care îl poți parcurge în Play |
-| **Complet** | + temă vizuală clară + ≥1 checkpoint vizual + prezentare scurtă |
+## Note pentru conținut
 
-## Note profesor
-
-1. **Același Place** se redeschide în M2 — nu șterge lumea la final.  
-2. Salturi: platforme aproape; frustrarea omoară motivația.  
-3. Ancorare: Parts care cad = greșeală frecventă (L4).  
-4. Tipar lecție = Scratch: checkpoint-uri, Minim/Complet, L10 = insignă.  
-5. **L1 ritm:** nu explica ribbon-ul întreg (UI, Plugins, Collaborate…). 12+ vor Play rapid. Grupa mare: salvare colectivă (numele pe o listă comună), nu tur individual pe fiecare cont.  
-6. **Plasă M3/M4:** pregătește un Place Obby „curat” (start/finish + câteva platforme) pentru cine a pierdut / stricat fișierul.
+1. **Același Place** se redeschide în M2: lumea nu se șterge la final.  
+2. Salturi: golul maxim 5 stud-uri, urcarea maximă 5 (săritura normală urcă aproximativ 7).  
+3. Ancorare: Parts care cad sunt o greșeală frecventă (L1, L4).  
+4. Lecțiile sunt scrise doar pentru elev; nu conțin indicații pentru profesor.  
+5. **Ritm L1:** nu explicăm bara de sus întreagă; doar cele 5 comenzi.  
+6. **Plasă M3/M4:** păstrează un Place Obby „curat” (start/finish + câteva platforme) pentru cine a pierdut sau a stricat fișierul.  
+7. Narațiile (`.naratie.txt`): fără cifre sau simboluri, paragrafe sub 3500 de caractere, numărul de pași egal cu cel din lecție.
 
 Modul 2: `../modul2/` · Curriculum: `../README.md`
