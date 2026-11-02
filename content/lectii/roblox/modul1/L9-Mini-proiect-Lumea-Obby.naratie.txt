@@ -1,19 +1,29 @@
-Lecția nouă din Modulul unu. Mini-proiect: Lumea Obby.
+Lecția nouă din Modulul unu. Alegerea ta.
 
-Astăzi legi tot ce ai învățat într-un singur Obby. Rămâi pe fișierul tău, Prenume, linie jos, Nume, linie jos, M unu.
+Astăzi construiești Etapa nouă după tema și planul tău. Ai scheletul dat: teren, Start și Finish. Tu proiectezi traseul, decorul și punctele de odihnă. Folosești tot ce ai învățat în lecțiile de la unu la opt. Proiectul se numește Etapa nouă, linie jos, urmat de numele temei tale, de exemplu Plaja. Lucrezi pe același fișier: Prenume, linie jos, Nume, linie jos, M unu.
 
-Obiectivul. Minim: scheletul funcționează, adică ai start, traseu și Finish, totul ancorat, iar un tur în Play reușește. Complet: minim, plus o temă vizuală, cel puțin un checkpoint, un aspect curat și un coleg care îți joacă jocul.
+Ce facem azi. La final ai un obby făcut de tine, pe o temă aleasă de tine. Are Start și Finish la capete opuse, un traseu cu cel puțin opt sărituri sau obstacole, decor pe tema ta, două puncte de odihnă și cel puțin douăzeci și cinci de piese. Lucrezi după un plan făcut înainte, cu schiță și tabel. Azi nu scriem cod. Ești proiectant: nimeni nu îți dă coordonatele traseului, doar scheletul.
 
-Primul pas. Lista de verificare. Lumea trebuie să aibă un start, un traseu, un Finish, Part-uri ancorate și nume clare.
+Instrucțiuni noi azi. Planul este o schiță și un tabel cu piesele, făcute înainte de construit. Regulile obby-ului dau dimensiuni sigure pentru salturi. Control D repetă un element decorativ, iar Control G face grupuri mici, apoi un grup mare. Un punct de odihnă este o placă subțire, albastru deschis.
 
-Al doilea pas. Ordinea bună de lucru. Mai întâi scheletul, apoi decorul. Nu începe cu decorul, pentru că poate să nu se mai termine.
+Primul pas. Tema și planul. Alegi o temă: plajă cu volei, canion, insulă, bază spațială, parcare cu etaje sau alta, dacă o poți construi cu forme simple. Pentru plajă folosești nisip, palmieri din Cylinder și Sphere, apă transparentă și un teren de volei. Pentru canion, stânci mari, stâlpi, un pod îngust și rampe. Pentru insulă, pietre plutitoare, copaci și un pod. Pentru baza spațială, module din Cylinder, platforme din Metal și lumini din Neon. Pentru parcare, platforme la înălțimi diferite, rampe, mașini și bariere. Planul tău are două părți: o schiță de sus, pe hârtie, cu Start în stânga, Finish în dreapta și traseul între ele, și un tabel de piese, cu nume, formă, Size, Position, material și culoare. Mai bine un plan simplu, dar complet.
 
-Al treilea pas. Scheletul pentru Minim. Faci un Play de la start la Finish, fără să cazi.
+Al doilea pas. Scheletul etapei. Etapa nouă stă la o sută cincizeci de stud-uri de etapa unu, spre dreapta, pe axa roșie, la Z egal minus o sută cincizeci. Aceste piese sunt la fel pentru toți: un teren de optzeci pe șaizeci, un Start verde și un Finish din Neon, galben. De ele depinde legătura cu celelalte etape, de la lecția zece. Terenul se întinde de la X egal o sută zece la X egal o sută nouăzeci. Nu muți capetele lui.
 
-Al patrulea pas. Complet. Alegi o temă: pădure, spațiu, oraș, lavă decorativă sau gheață. Folosești culori potrivite și două materiale. Adaugi un checkpoint și rogi un coleg să joace.
+Al treilea pas. Regulile unui obby bun. Un obby trebuie să fie greu, dar corect. Golul dintre două platforme este de cel mult cinci stud-uri. Diferența de înălțime este de cel mult patru stud-uri în sus. Cea mai mică platformă are cel puțin patru pe unu pe patru. Traseul are cel puțin opt sărituri. Nimic nu este imposibil: poți ajunge cu un salt normal. O ordine bună este: ușor la început, mai greu la mijloc, un moment de odihnă, apoi iar greu, apoi Finish.
 
-Greșeli frecvente. Decor înainte de traseu. Finish imposibil de atins. Totul rămâne gri. Crezi că ai nevoie de script: nu ai nevoie pentru acest modul. Fișier cu alt nume decât cel cerut.
+Al patrulea pas. Construiești etapa. Întâi traseul: platformele din plan, cu Position și Size din tabel. După fiecare trei sau patru piese apeși Play și testezi. Apoi decorul, cu piese de pe tema ta. Un decor repetat cu Control D de cel puțin patru ori. Un copac, o mașină sau o stâncă sunt grupuri mici, cu nume clare. Pui Material și Color pe toate piesele, ca să nu rămână nimic gri. Faci două puncte de odihnă, pe traseu, unul după aproximativ trei sărituri și unul după aproximativ șase. Ancorezi totul și verifici cu Anchored parts. La final selectezi tot ce ai făcut azi, fără SpawnLocation, apeși Control G și numești grupul. Salvezi.
 
-Provocare Pro, opțională. Pui ordine în Explorer, cu foldere pentru traseu, decor și checkpoint-uri. Setezi lumina potrivit temei. Pui trei întrebări colegilor care îți joacă jocul și notezi răspunsurile. Faci apoi un scurt tur al lumii din trei unghiuri.
+Al cincilea pas. Test și reparații. Apeși Play și parcurgi etapa de la Start la Finish. Notezi unde ai căzut sau ai rămas blocat. Apeși Stop, repari, apoi Play din nou. Faci cel puțin două cicluri: găsești, repari, testezi din nou. Te uiți la etapă de sus, din lateral și de la nivelul avatarului.
 
-Recapitulare. Mai întâi un schelet care merge, apoi tema. Testezi tot, de la start la finish. Succes cu lumea ta.
+Greșeli frecvente. Construiești fără plan: mai întâi schița și tabelul. Golul dintre platforme este prea mare: cel mult cinci stud-uri. Traseul trece prin decor: decorul stă lângă traseu. Piesele cad la Play: lipsește Anchor. Ai mutat Start sau Finish: la lecția zece nu se mai leagă de celelalte etape, le pui înapoi. Totul este gri: pui Material și Color. Ai lăsat numele Part: fiecare piesă are un nume clar.
+
+Proiectul de azi. Etapa nouă, urmat de numele temei. Minim înseamnă plan, schelet, cel puțin cincisprezece piese, ancorate, cu material și culoare, și un traseu cu cel puțin cinci sărituri de la Start la Finish. Complet înseamnă minim, plus cel puțin douăzeci și cinci de piese, opt sărituri, decor repetat de cel puțin patru ori, grupuri mici cu nume, două puncte de odihnă, grupul etapei și un parcurs fără să cazi.
+
+Provocare, trei stele. Trei secțiuni. Împarți traseul în trei secțiuni: ușoară, verde, medie, galbenă, și grea, roșie. Marchezi începutul fiecăreia cu o placă subțire de culoarea ei. Un coleg parcurge etapa fără ajutor, iar tu nu spui nimic. Notezi unde a căzut și de câte ori. Repari cel puțin două locuri și îl rogi să mai încerce o dată.
+
+Recapitulare. Mai întâi planul, cu schiță și tabel. Scheletul este dat. Golurile sunt de cel mult cinci stud-uri, iar urcările de cel mult patru. Control D repetă, Control G grupează. Găsești, repari, testezi din nou.
+
+Ce urmează. În lecția zece legi cele nouă etape cu pasarele, faci Poarta Parcului și podiumul, colorezi zonele, repari trei probleme după testul unui coleg și îți prezinți lumea.
+
+Succes cu etapa ta.

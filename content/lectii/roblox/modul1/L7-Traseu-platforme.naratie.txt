@@ -1,19 +1,27 @@
-Lecția șapte din Modulul unu. Traseul Obby: platforme.
+Lecția șapte din Modulul unu. Zgârie-norul.
 
-Astăzi construiești drumul dintre start și finish din mai multe platforme. Rămâi pe fișierul tău, Prenume, linie jos, Nume, linie jos, M unu.
+Astăzi construiești Etapa șapte din Obby-ul tău: un zgârie-nori cu zece etaje și un obby care urcă pe balcoanele lui, în spirală, până pe acoperiș. Înveți să repeți o piesă cu Control D și să calculezi pozițiile cu o formulă. Proiectul se numește Etapa șapte, linie jos, Zgarie Nori, scris legat. Lucrezi pe același fișier: Prenume, linie jos, Nume, linie jos, M unu.
 
-Obiectivul. Minim: cel puțin cinci platforme pe drum, ancorate și cu nume, iar în Play poți ajunge la Finish. Complet: minim, plus cel puțin una dintre trei variante: o diferență de înălțime, o cotitură laterală sau un salt peste un gol mic, plus un retest.
+Ce facem azi. La final ai un turn înalt de cincizeci și doi de stud-uri, cu zece benzi, care sunt etajele, și zece balcoane așezate în spirală. Pornești de pe sol și urci de la balcon la balcon: fiecare este cu cinci stud-uri mai sus decât cel dinainte. Ajungi pe acoperiș și atingi Finish. Înveți să faci zece piese identice repede, schimbând doar o cifră. Azi nu scriem cod.
 
-Primul pas. Reguli de traseu. Golul dintre platforme să nu fie mai mare de cinci unități. Nu pune totul jos, pe Baseplate: urcă puțin. Nu face prima parte prea grea.
+Instrucțiuni noi azi. Control D dublează piesa, iar duplicatul rămâne selectat. Formula te ajută să calculezi pozițiile, nu să le ghicești. În Position schimbi doar valoarea care se modifică. În Name pui numere în nume, ca să nu te încurci: Banda unu, Banda doi. Cu Shift și click în Explorer selectezi o serie de piese.
 
-Al doilea pas. Lanțul. Construiești o platformă, o numești, de exemplu Plat unu, lipit, apoi o copiezi și o muți mai departe. Ancorezi fiecare Part.
+Primul pas. Formula și repetarea. Când ai zece piese la fel, faci una, o dublezi cu Control D și schimbi doar ce diferă. Exemplu: cinci cuburi de patru pe patru pe patru, unul peste altul. Primul stă pe Baseplate, cu centrul la Y egal doi, iar formula este Y egal patru ori k, minus doi, unde k este numărul cubului. Rezultă doi, șase, zece, paisprezece și optsprezece. Faci cubul unu, îl ancorezi, apeși Control D, îl numești Cub doi și scrii noul Y. Repeți până la cubul cinci. Apoi le ștergi.
 
-Al treilea pas. Completezi până la Finish. Finish este capătul drumului, nu mijlocul.
+Al doilea pas. Proiectul unu: teren, nucleu și benzi. Etapa șapte stă la o sută cincizeci de stud-uri de etapa unu, spre stânga, și la minus o sută cincizeci pe axa albastră, spre față. Faci un teren, un nucleu înalt de cincizeci și doi de stud-uri și zece benzi, puțin mai late decât nucleul, ca să se vadă etajele. Formula pentru benzi este Y egal cinci ori k, minus doi. Prima este la trei, a doua la opt, și tot așa, până la patruzeci și opt. Muți SpawnLocation în fața turnului și apeși Play: te lovești de turn. Salvezi.
 
-Al patrulea pas. Varietate. Adaugi o platformă mai sus, o cotitură sau un salt peste un gol mic. Complet nu înseamnă imposibil, ci doar un pic mai interesant. Apoi testezi din nou.
+Al treilea pas. Proiectul doi, balcoanele în spirală. Obby-ul turnului: de pe sol sari pe primul balcon, apoi pe al doilea, până la al zecelea, apoi pe acoperiș, la Finish. Fiecare balcon este la Y egal cinci ori k, plus zero virgulă cinci. Spirala merge în sens invers acelor de ceasornic: sud, est, nord, vest. Valorile exacte sunt în tabel. La balcoane schimbi X, Y și Z, nu doar Y, ca la benzi. Finish este pe acoperiș, la doi stud-uri mai sus decât ultimul balcon. Antena este un Cylinder în picioare, într-un colț al acoperișului. Apeși Play și urci în spirală. Dacă cazi, începi din nou. Apoi selectezi tot ce ai făcut azi, fără SpawnLocation, apeși Control G și numești grupul Etapa șapte, linie jos, Zgarie Nori. Salvezi.
 
-Greșeli frecvente. Platforme prea departe. Tot traseul pe Baseplate. Prea greu din prima. Finish pus în mijlocul drumului. Nume lipsă, adică douăzeci de Part-uri numite Part.
+Al patrulea pas. Test cu timp. Apeși Play și te uiți la ceas: cât durează de pe sol până la Finish? Dacă cazi, notezi la ce balcon și repari: apropii balconul sau verifici Y. Repeți: al doilea timp trebuie să fie mai scurt decât primul.
 
-Provocare Pro, opțională. Cauți cel mai mare gol peste care poți sări și construiești golurile traseului la aproximativ șaptezeci la sută din el. Folosești ritmul ușor, ușor, greu, odihnă. Împarți traseul în trei secțiuni: verde, galben și roșu, după dificultate.
+Greșeli frecvente. Benzile sau balcoanele plutesc: verifici X și Z. Nu ajungi pe un balcon: verifici Y cu formula. Ai schimbat poziția piesei greșite: după Control D selecția este pe duplicat. Două piese au același nume: la fiecare Control D schimbi Name. Cazi de pe balcon: sari din mers, nu din loc. Nu urci pe acoperiș: ultimul balcon stă lipit de turn, iar acoperișul este cu doi stud-uri mai sus. Piesele cad la Play: lipsește Anchor.
 
-Recapitulare. Platforme apropiate, ancorate, cu nume. Finish la capăt. Testezi după fiecare schimbare. Succes cu traseul.
+Proiectul de azi. Etapa șapte, linie jos, Zgarie Nori. Minim înseamnă teren, nucleu și zece benzi, ancorate, SpawnLocation în fața turnului și un tur în Play. Complet înseamnă minim, plus zece balcoane, Finish, antena, grupul Etapa șapte și un urcuș de pe sol până pe acoperiș.
+
+Provocare, trei stele. Sub un minut. Urci de pe sol până la Finish în mai puțin de șaizeci de secunde, fără să cazi. Faci trei încercări și notezi timpul fiecăreia: a treia trebuie să fie mai bună decât prima. Marchezi balconul cinci, la jumătatea drumului, cu o culoare diferită, ca punct de odihnă vizual.
+
+Recapitulare. Control D dublează, iar duplicatul rămâne selectat. Schimbi doar ce diferă, adică Name și Position. Pentru benzi, Y este cinci ori k minus doi, iar pentru balcoane, Y este cinci ori k plus zero virgulă cinci. Shift și click în Explorer selectează o serie.
+
+Ce urmează. În lecția opt construiești Etapa opt: un teren de joacă cu tobogan, balansoar, leagăn și două puncte de odihnă vizuale.
+
+Succes cu zgârie-norul tău.

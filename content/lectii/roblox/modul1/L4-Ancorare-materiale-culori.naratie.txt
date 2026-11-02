@@ -1,19 +1,29 @@
-Lecția patru din Modulul unu. Ancorare, materiale și culori.
+Lecția patru din Modulul unu. Parcarea.
 
-Astăzi faci construcția stabilă și o faci să arate bine. Rămâi pe fișierul tău, Prenume, linie jos, Nume, linie jos, M unu.
+Astăzi dai piselor tale material, culoare și transparență și construiești Etapa patru din Obby-ul tău: o parcare cu marcaje și mașini, plus un obby pe rampe și platforme. Proiectul se numește Etapa patru, linie jos, Parcare. Lucrezi pe același fișier: Prenume, linie jos, Nume, linie jos, M unu.
 
-Obiectivul. Minim: toate Part-urile importante sunt ancorate și ai cel puțin două culori diferite. Complet: minim, plus cel puțin două materiale diferite și o regulă vizuală simplă, de exemplu verde pentru loc sigur. Este doar decor, fără cod.
+Ce facem azi. La final ai Etapa patru: o parcare cu asfalt, linii albe și trei mașini. Pe lângă ea ai un obby: urci pe o rampă, sari pe șase platforme și cobori pe a doua rampă până la Finish. Înveți să schimbi Material și Color, să folosești Transparency și să înțelegi ce face CanCollide. Azi nu scriem cod. Culorile sunt doar decor: ele nu fac nimic singure.
 
-Primul pas. Anchor are două locuri cu același efect: butonul Anchor din meniul Home sau bifa Anchored din Properties. Un Part ancorat nu cade și nu este împins. Faci Play ca să verifici. Dacă ceva cade, apeși Stop, ancorezi și încerci din nou.
+Instrucțiuni noi azi. Color, din Home, alege culoarea piesei. Material, tot din Home, alege din ce este făcută piesa. Transparency, din Properties, spune cât se vede piesa: zero este opacă, unu este invizibilă. CanCollide, bifat, înseamnă că piesa te oprește, iar debifat înseamnă că treci prin ea. Control D dublează piesa selectată.
 
-Al doilea pas. Culoarea. O alegi din meniul Home sau din Properties. Alege culori clare, care se văd de departe, nu gri pe gri. Locul de start vine deja verde în Roblox, așa că verdele rămâne culoarea startului.
+Primul pas. Color. Selectezi o piesă, apeși Color din Home și alegi o culoare. În tot obby-ul folosim verde pentru Start, pentru că SpawnLocation vine deja verde, și galben strălucitor pentru Finish. Pui un Block, îl ancorezi, îl faci roșu, apoi albastru.
 
-Al treilea pas. Materialul. Spune din ce este făcut Part-ul: plastic, iarbă, lemn, metal, beton. Schimbă mai ales aspectul. Unele materiale, ca gheața, sunt și alunecoase. Dacă simți asta, nu este o greșeală, este frecarea.
+Al doilea pas. Material. Selectezi piesa, apeși Material din Home și încerci pe rând Plastic, Wood, Concrete, Metal, Asphalt, Sand și Neon. Materialul schimbă aspectul. Neon strălucește, de aceea îl folosim la Finish. Poți combina Material cu Color.
 
-Al patrulea pas. Regula vizuală. Alegi o regulă și o aplici pe trei sau patru Part-uri. De exemplu: verde înseamnă loc sigur, galben înseamnă atenție. Roșul nu omoară pe nimeni, deocamdată. Asta se face mai târziu, cu script.
+Al treilea pas. Transparency și CanCollide. În Properties scrii la Transparency zero virgulă cinci și piesa devine ca sticla. Apeși Play și încerci să treci prin ea: te oprește, pentru că transparența schimbă doar cum arată piesa. Apoi debifezi CanCollide, pornești din nou Play și treci prin piesă. La final bifezi la loc CanCollide și ștergi piesa de test.
 
-Greșeli frecvente. Ai colorat, dar tot cade: culoarea nu înlocuiește Anchor. Ai selectat Baseplate-ul din greșeală: Undo. Culori prea apropiate: alege contrast. Material neon peste tot: doare ochii, ajung unu sau două accente.
+Al patrulea pas. Proiectul unu, asfalt, marcaje și mașini. Etapa patru stă la o sută cincizeci de stud-uri de etapa unu, pe direcția albastră. Parcarea are optzeci pe șaizeci de stud-uri. Faci un asfalt, patru linii albe și trei mașini, fiecare cu material și culoare, după tabelul din lecție. Liniile stau puțin deasupra asfaltului, ca să nu pâlpâie. Prima linie și prima mașină le faci cu mâna, iar restul le dublezi cu Control D și schimbi doar numele și poziția. Apoi muți SpawnLocation în colțul parcării, apeși Play și te plimbi pe asfalt. Mașinile te opresc.
 
-Provocare Pro, opțională. Alegi o paletă de doar trei culori pentru tot Place-ul. Faci o platformă de sticlă, cu Transparency, și una lucioasă. Faci un Part prin care poți trece. Construiești o platformă de gheață și hotărăști unde ar fi corect să o pui.
+Al cincilea pas. Proiectul doi, rampe, platforme și Finish. Obby-ul parcării: pornești de la Start, urci pe prima rampă, mergi pe prima platformă, sari pe celelalte cinci platforme, cobori pe a doua rampă și ajungi la Finish. Partea înaltă a ambelor rampe trebuie să fie spre nord, spre platforme. Un Wedge nou are partea înaltă spre Z mic, de aceea ambele rampe primesc Orientation zero, o sută optzeci, zero. Dacă panta iese totuși invers, scrii zero, zero, zero. Între platforme rămân goluri mici, pe care le sari. Finish este din Neon și galben. Ancorezi totul și apeși Play. Apoi selectezi toate cele șaptesprezece piese, fără SpawnLocation, apeși Control G și numești grupul Etapa patru, linie jos, Parcare. Salvezi.
 
-Recapitulare. Anchored înseamnă că stă pe loc. Culoarea se vede de departe. Materialul schimbă aspectul. Succes cu aspectul Place-ului.
+Greșeli frecvente. Piesele cad la Play: lipsește Anchor. Culoarea nu se schimbă: verifici că piesa este selectată. Liniile pâlpâie sau nu se văd: le pui puțin deasupra asfaltului. Piesa transparentă te oprește: pentru a trece prin ea debifezi CanCollide. Rampa urcă invers: schimbi Orientation între zero, o sută optzeci, zero și zero, zero, zero. Nu poți sări între platforme: golurile sunt prea mari, compară cu tabelul. Cazi la prima platformă: rampa și platforma trebuie să fie la același nivel în vârf.
+
+Proiectul de azi. Etapa patru, linie jos, Parcare. Minim înseamnă asfalt, patru linii și trei mașini, ancorate, cu material și culoare, și SpawnLocation mutat în parcare. Complet înseamnă minim, plus două rampe, șase platforme, Finish, grupul Etapa patru, linie jos, Parcare, și un parcurs de la Start la Finish fără să cazi.
+
+Provocare, trei stele. Terenul de volei. Lângă parcare, spre est, construiești un teren din nisip, cu linii albe pe margini și la mijloc, o plasă cu transparența zero virgulă cinci, care rămâne solidă, și o minge care nu este ancorată, ca să cadă și să se rostogolească. Apoi adaugi cinci platforme bonus, care pornesc de la Finish și coboară spre teren. Parcurgi tot traseul.
+
+Recapitulare. Color și Material schimbă aspectul piesei. Neon strălucește. Transparency schimbă cât se vede piesa, nu și dacă te oprește. CanCollide decide dacă treci prin piesă. Control D dublează, Control G grupează.
+
+Ce urmează. În lecția cinci construiești Etapa cinci: o pădure din copaci, cu trei puncte de privit din Camera, și învățăm să controlăm Play.
+
+Succes cu parcarea ta.

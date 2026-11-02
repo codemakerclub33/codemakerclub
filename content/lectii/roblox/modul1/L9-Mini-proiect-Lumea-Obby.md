@@ -1,21 +1,17 @@
-# Lecția 9 — Mini-proiect: Lumea Obby
+# LECȚIA 9 — Alegerea ta
+### Un obby după planul tău
 **Modulul 1 · Place Builder**  
 **Code Maker Club · Roblox Studio**
 
-> Azi pui împreună tot Modulul 1: un **Obby** al tău, jucabil Start→Finish, gata de arătat.  
-> Place: `Prenume_Nume_M1` (ex. `Ana_Pop_M1`)
+> Azi construiești **Etapa 9** după **tema și planul tău**: ai scheletul dat (teren, Start, Finish), iar tu proiectezi traseul, decorul și punctele de odihnă. Folosești tot ce ai învățat în L1–L8.  
+> Proiect: **„Etapa9_NumeTema”** (de exemplu `Etapa9_Plaja`) · Place: `Prenume_Nume_M1`
 
 ---
 
-## Obiectiv
-La finalul orei ai o lume Obby pe care un coleg o poate **termina în Play** fără să îi explici cu vocea.  
-**Minimum:** scheletul rulează — Spawn · traseu · Finish · totul ancorat · un tur Play reușit.  
-**Ținta orei (Complet):** Minim + **temă vizuală** + **≥1 checkpoint** + look curat (culori/materiale) + arăți unui coleg.
+## Ce facem azi
+La finalul orei ai **Etapa 9**: un obby făcut de tine, pe o temă aleasă de tine. Are **Start** și **Finish** la capete opuse, un traseu cu **cel puțin 8 sărituri sau obstacole**, **decor** pe tema ta, **două puncte de odihnă** și **cel puțin 25 de piese**. Lucrezi după un **plan** făcut înainte, cu schiță și tabel.
 
-## De ce contează
-L1–L8 = piese. L9 = **jocul tău**. La L10 lustruiești și primești insigna **Place Builder**.
-
-**Azi tot fără să scrii cod.** (Bonus opțional: un script **dat de-a gata** — doar lipești.)
+**Notă:** azi tot fără cod. Ești proiectant: nimeni nu îți dă coordonatele traseului, doar scheletul.
 
 ---
 
@@ -23,143 +19,180 @@ L1–L8 = piese. L9 = **jocul tău**. La L10 lustruiești și primești insigna 
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Obiectiv + checklist + **Minim vs Complet** |
-| 10–25 | Pas cu pas: checkpoint-uri (**Încearcă tu**) |
-| 25–55 | Proiect: **Minim** (Obby jucabil cap-coadă) |
-| 55–100 | Proiect: **Complet** (temă + checkpoint + coleg) |
-| 100–120 | Recap, bonus, salvare / pregătire L10 |
+| 0–10 | Recap L8 · deschidem Place-ul `Prenume_Nume_M1` |
+| 10–30 | Alegi tema · schița și planul pe hârtie (**Încearcă tu**) |
+| 30–50 | Scheletul etapei: teren, Start, Finish |
+| 50–100 | Construiești traseul, decorul, punctele de odihnă |
+| 100–120 | Test cu reparații · recap, quiz, salvare · **Bonus ★★★** pentru cine termină devreme |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce folosim | Ce face | Exemplu |
+|------------|---------|---------|
+| **Planul** | Schiță + tabel cu piesele, **înainte** de construit | Nume, formă, Size, Position |
+| **Regulile obby-ului** | Dimensiuni sigure pentru salturi | Gol de cel mult 5 stud-uri |
+| **Ctrl+D** | Repeți un element decorativ | 6 palmieri |
+| **Ctrl+G** | Faci grupuri mici, apoi un grup mare | Un palmier = trunchi + coroană |
+| **Punct de odihnă** | Placă subțire, albastru deschis | `Check1`, `Check2` |
 
 ---
 
 ## Pas cu pas
 
-### 1) Checklist — ce trebuie să aibă lumea
-| # | Element | De unde |
-|---|---------|---------|
-| 1 | Place salvat `Prenume_Nume_M1` | L1 |
-| 2 | Explorer: Parts cu **nume clare** | L2 |
-| 3 | Platforme cu Move / Scale / Rotate | L3 |
-| 4 | **Anchored** + culori / materiale | L4 |
-| 5 | Playtest (repari + retestezi) | L5 |
-| 6 | **Spawn** + Part `Finish` | L6 |
-| 7 | Traseu ≥ **5** platforme | L7 |
-| 8 | ≥ **1** checkpoint vizual | L8 |
+### 1) Tema și planul
+Alegi **o temă**. Lista de mai jos e un punct de plecare; poți inventa alta, dacă o poți construi cu forme simple.
 
-**Minim** = rândurile 1–7 funcționează în Play.  
-**Complet** = toate **8** + temă + coleg. Checkpoint-ul (rândul 8) **contează pentru Complet** — dacă îl ai deja din L8, Complet e mult mai aproape: nu trebuie construit de la zero.
+| Tema | Idei de piese |
+|------|---------------|
+| **Plajă cu volei** | Nisip (**Sand**), teren cu plasă, palmieri (**Cylinder** + **Sphere**), apă (**Glass**, `Transparency` `0.4`), mingi (**Sphere**), pasarelă de lemn |
+| **Canion** | Stânci (**Block** mari, **Rock**, **Slate**, **Granite**), stâlpi de stâncă (**Cylinder**), pod îngust, rampe (**Wedge**) |
+| **Insulă** | Pietre plutitoare, copaci, un pod, o cascadă ca decor (**Block** albastru) |
+| **Bază spațială** | Module din **Cylinder**, platforme din **Metal**, tuburi, antene, lumini din **Neon** |
+| **Parcare cu etaje** | Platforme la înălțimi diferite, rampe (**Wedge**), mașini, bariere |
 
-**Încearcă tu — știu ce am (2 min)**  
-- [ ] Bifai pe foaie ce ai deja din L1–L8  
-- [ ] Știi ce mai lipsește pentru Minim  
+**Planul tău** are două părți:
 
-### 2) Ordinea bună de lucru
-1. Deschizi Place-ul · salvezi o dată „de siguranță”  
-2. Verifici Spawn + Finish (capetele)  
-3. Verifici traseul (mijlocul) — distanțe, Anchor  
-4. Play → notezi 1–2 probleme → Stop → repari → Play  
-5. Abia apoi look (culori, temă, checkpoint)
+1. **Schiță de sus**, pe hârtie: sus nordul, jos sudul, **Start** în stânga, **Finish** în dreapta, traseul, locul punctelor de odihnă  
+2. **Tabel de piese**, cu aceste coloane: `Nume`, `Formă`, `Size`, `Position`, `Material`, `Culoare`. Completezi cât mai mult înainte să construiești. Mai bine un plan simplu, dar complet  
 
-*Nu începe cu decor dacă traseul nu e terminabil.*
+**Încearcă tu — planul (15 min)**  
+- [ ] Ai ales tema  
+- [ ] Ai o schiță cu Start, Finish și traseul între ele  
+- [ ] Ai cel puțin **8 rânduri** în tabelul de piese  
 
-**Încearcă tu — capete + mijloc (3–4 min)**  
-- [ ] Spawn ok · Finish ok  
-- [ ] Cel puțin o dată ai ajuns pe Finish în Play (chiar greu)  
+### 2) Scheletul etapei (dat)
+Etapa 9 stă la **150 de stud-uri** de Etapa 1, spre **dreapta** pe axa roșie, și la **Z = -150**. Centrul ei e `150, 0, -150`. Aceste piese sunt la fel pentru toți: de ele depinde legătura cu celelalte etape de la L10.
 
-### 3) Schelet Minim — „rulează curat”
-Ținta Minim:
+| Nume | Formă | Size | Position | Material | Culoare |
+|------|-------|------|----------|----------|---------|
+| `Teren9` | Block | `80, 1, 60` | `150, 0.5, -150` | la alegere | la alegere |
+| `SpawnLocation` (Start) | — | `8, 1, 8` | `115, 1.5, -150` | — | verde |
+| `Finish` | Block | `8, 1, 8` | `185, 1.5, -150` | Neon | galben |
 
-- [ ] Te naști la Start  
-- [ ] Poți ajunge pe Finish  
-- [ ] Nimic important nu cade  
-- [ ] Numele Place-ului e corect  
+Traseul tău ia **Start**, trece prin toate obstacolele și ajunge la **Finish**. Terenul se întinde de la `X = 110` la `X = 190`; **nu** muți capetele lui.
 
-Dacă traseul e rupt: **repară înainte** de temă / checkpoint.
+**Încearcă tu — scheletul (10 min)**  
+- [ ] `Teren9`, Start și Finish la pozițiile din tabel, ancorate  
+- [ ] **Play**: apari la Start; Finish se vede  
 
-**Încearcă tu — scheletul rulează (5–8 min)**  
-*(„Am Parts” ≠ „se poate termina”.)*
+### 3) Regulile unui obby bun
+Un obby trebuie să fie **greu, dar corect**. Folosești aceste limite:
 
-- [ ] Un tur Play Start→Finish **reușit**  
-- [ ] Stop · salvat  
-- [ ] Poți spune: „Minim e gata” sau „încă repar …”  
+| Regulă | Valoare |
+|--------|---------|
+| **Gol** între două platforme (pe orizontală) | cel mult **5** stud-uri |
+| **Diferența de înălțime** între platforme | cel mult **4** stud-uri în sus |
+| **Platformă** (cea mai mică) | cel puțin `4, 1, 4` |
+| **Câte sărituri** | cel puțin **8** în traseu |
+| **Ceva imposibil** | niciodată: poți ajunge cu un salt normal |
 
-### 4) Complet — temă + checkpoint + coleg
-1. **Temă** (alege una): pădure / spațiu / oraș / lavă decorativă / gheață — culori + 2 materiale  
-2. **Checkpoint** vizual pe traseu (L8) — dacă lipsește, îl adaugi  
-3. Finish și Checkpoint **nu** au aceeași culoare  
-4. Un **coleg** joacă 1 tur: se descurcă fără explicația ta?  
-5. Tu notezi 1 feedback · repari dacă e greu pe nedrept · retest  
+Ordine bună: **ușor** la început, **mai greu** la mijloc, **un moment de odihnă** (punct albastru), apoi iar greu, apoi Finish.
 
-**Încearcă tu — Complet (8–10 min)**  
-- [ ] Tema se citește din Viewport  
-- [ ] ≥1 checkpoint  
-- [ ] Colegul a terminat (sau a fost aproape, cu 1 feedback clar)  
+**Încearcă tu — verifici planul (3 min)**  
+- [ ] Niciun gol din plan nu e mai mare de 5 stud-uri  
+- [ ] Nicio diferență de înălțime nu e mai mare de 4 stud-uri  
+
+### 4) Construiești etapa
+**Pe rând:**
+
+1. **Traseul:** platformele din plan, cu **Position** și **Size** din tabel; după fiecare 3–4 piese apeși **Play** și testezi  
+2. **Decorul:** piese de pe tema ta (copaci, stânci, mașini). Un decor **repetat** (**Ctrl+D**) de cel puțin 4 ori  
+3. **Grupuri mici:** un copac, o mașină, o stâncă sunt grupuri (**Ctrl+G**) cu nume clare  
+4. **Material** și **Color** pe toate piesele; nu lași nimic gri implicit  
+5. **Două puncte de odihnă** `Check1` și `Check2` (plăci subțiri, **Neon**, albastru deschis), pe traseu, unul după aproximativ 3 sărituri și unul după aproximativ 6  
+6. **Ancorezi** totul. Verifici cu **Visualization Modes** → **Anchored parts**  
+7. La final, selectezi tot ce ai făcut azi (fără SpawnLocation) cu **Shift + click** în **Explorer**, **Ctrl+G**, redenumești grupul **`Etapa9_NumeTema`**. Salvezi  
+
+**Încearcă tu — construcția (40–50 min)**  
+- [ ] Traseu cu cel puțin 8 sărituri  
+- [ ] Decor pe tema ta, cu un element repetat de cel puțin 4 ori  
+- [ ] Cel puțin 25 de piese, toate cu **Material** și **Color**  
+- [ ] 2 puncte de odihnă  
+- [ ] Toate ancorate · grup `Etapa9_NumeTema` · salvat  
+
+### 5) Test și reparații
+1. **Play** și parcurgi etapa de la Start la Finish  
+2. Notezi **unde** ai căzut sau ai rămas blocat  
+3. **Stop**, repari (**Position**, **Size**), **Play** din nou  
+4. Faci cel puțin **două** cicluri „găsești, repari, testezi din nou”  
+5. Te uiți la etapă și **de sus**, și **din lateral**, și **de la nivelul avatarului** (ca la L5)  
+
+**Încearcă tu — testul (10 min)**  
+- [ ] Ai parcurs etapa fără să cazi, cel puțin o dată  
+- [ ] Ai reparat cel puțin două probleme  
 - [ ] Salvat  
 
 ---
 
 ## Greșeli frecvente
-1. **Decor înainte de traseu** — frumos, dar neterminabil; invers: Minim întâi.  
-2. **Finish inaccesibil** — Complet eșuează; coboară / apropie platforme.  
-3. **Totul gri încă** — Complet cere temă; Minim poate fi simplu.  
-4. **„Am script, deci e gata”** — nu e nevoie de script pentru Minim/Complet.  
-5. **Place cu alt nume** — salvezi / redenumești `Prenume_Nume_M1`.  
+1. **Construiesc fără plan** — mai întâi schița și tabelul, apoi piesele.  
+2. **Golul dintre platforme e prea mare** — cel mult 5 stud-uri.  
+3. **Traseul trece prin decor** — decorul stă lângă traseu, nu pe el.  
+4. **Piesele cad la Play** — lipsește **Anchor**.  
+5. **Am mutat Start sau Finish** — la L10 nu se mai leagă de celelalte etape; le pui înapoi la pozițiile din tabel.  
+6. **Tot e gri** — pui **Material** și **Color** pe toate.  
+7. **Nume `Part`** — fiecare piesă și grup are un nume clar.  
 
 ---
 
-## De făcut azi — „Lumea Obby”
+## De făcut azi — „Etapa9_NumeTema”
 Salvat: `Prenume_Nume_M1`
 
 ### Minim vs Complet
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | Spawn + traseu + Finish · ancorat · **1** tur Play reușit |
-| **Complet (ținta orei)** | Minim + temă vizuală + ≥1 checkpoint + un coleg joacă |
+| **Minim** | Plan (schiță + tabel), scheletul (`Teren9`, Start, Finish), cel puțin **15 piese**, ancorate, cu **Material** și **Color**, și un traseu cu cel puțin **5 sărituri** care duce de la Start la Finish |
+| **Complet** | Minim + cel puțin **25 de piese**, **8 sărituri**, decor repetat de cel puțin 4 ori, grupuri mici cu nume, **2 puncte de odihnă**, grup `Etapa9_NumeTema`, parcurs fără să cazi |
 
-Dacă rămâi în urmă: salvează la **Minim**.  
-Cei rapizi: Complet, apoi Bonus.
+Dacă rămâi în urmă: salvează la **Minim**.
 
-### Pasul 1 — Audit rapid
-- [ ] Checklist L1–L8 pe foaie  
+### Pasul 1 — Planul
+- [ ] Tema aleasă · schiță · tabel cu cel puțin 8 rânduri  
 
-### Pasul 2 — Schelet *(Minim)*
-- [ ] Play Start→Finish ok  
-- [ ] Salvat  
+### Pasul 2 — Scheletul și traseul *(Minim)*
+- [ ] `Teren9`, Start, Finish  
+- [ ] Cel puțin 15 piese · traseu cu cel puțin 5 sărituri  
+- [ ] Parcurs în Play · salvat  
 
-**→ Minim când:** Obby-ul e terminabil, chiar dacă arată simplu.
+**→ Minim când:** ajungi de la Start la Finish pe traseul tău.
 
-### Pasul 3 — Polish + coleg *(Complet)*
-- [ ] Temă + checkpoint  
-- [ ] Feedback coleg  
-- [ ] Salvat din nou  
+### Pasul 3 — Decor, grupuri, puncte de odihnă *(Complet)*
+- [ ] Decor repetat cu **Ctrl+D**, grupuri mici  
+- [ ] 2 puncte de odihnă · 25 de piese  
+- [ ] Grup `Etapa9_NumeTema` · salvat  
 
-**Gata Complet când:** un coleg înțelege Start, drumul și Finish **fără** ghid vocal.
+**Gata Complet când:** parcurgi etapa fără să cazi și planul ei se potrivește cu ce ai construit.
 
 ---
 
-## Bonus (dacă ai terminat Complet)
-- [ ] Al 2-lea checkpoint  
-- [ ] O rampă sau un salt „wow” (tot testat)  
-- [ ] **Script de-a gata** (doar dacă îl primești): lipești pe un Part — **nu** scrii tu sintaxă; vezi efectul (preview M2)  
+## Bonus ★★★ — Provocare: Trei secțiuni
+*Doar dacă ai terminat Complet.*
 
-## Provocare Pro (opțional, după Complet)
-- [ ] **Explorer curat:** în Workspace ai foldere precum `Traseu`, `Decor` și `Checkpoints`, iar în ele toate obiectele  
-- [ ] **Atmosferă:** setezi Lighting (ClockTime, Atmosphere) potrivit temei  
-- [ ] **Foaie pentru colegi:** pui 3 întrebări (Ce ai înțeles? Unde ai greșit? Ce ți-a plăcut?) și notezi răspunsurile  
-- [ ] **Tur filmat:** faci o captură sau un scurt tur din 3 unghiuri ale lumii tale  
+- [ ] Împarți traseul în **trei secțiuni**: **ușoară** (verde), **medie** (galben), **grea** (roșu). Marchezi începutul fiecăreia cu o placă subțire de culoarea ei  
+- [ ] Un **coleg** parcurge etapa **fără ajutor**; tu **nu spui nimic**  
+- [ ] Notezi **unde a căzut** și de câte ori  
+- [ ] Repari cel puțin **2 locuri** și îl rogi să mai încerce o dată  
 
-## Recapitulare rapidă
-1. Minim = **se poate termina**  
-2. Complet = + temă + checkpoint + ochi de coleg  
-3. Fără cod obligatoriu în M1  
-4. Același Place merge în M2–M4  
-5. L10 = lustruire + prezentare + insignă  
+## Recapitulare pe scurt
+1. Mai întâi **planul**: schiță și tabel  
+2. Scheletul e dat: `Teren9`, Start, Finish  
+3. Goluri de cel mult 5 stud-uri, urcări de cel mult 4  
+4. **Ctrl+D** repetă, **Ctrl+G** grupează  
+5. Găsești, repari, testezi din nou  
+6. Etapa 9 e grupul `Etapa9_NumeTema`  
 
-**Quiz scurt (cu profesorul):**  
-- Ce e Minim azi?  
-- De ce checkpoint-ul e încă „doar vizual”?  
-- Ce faci dacă colegul nu găsește Finish-ul?
+## Quiz scurt
+- De ce facem planul înainte să construim?  
+- Care e cel mai mare gol între platforme pe care îl accepți?  
+- Cum faci repede 6 palmieri identici?  
 
 ## Temă
-Opțional: 1 reparație după feedback-ul colegului.  
-La **L10** — completare + prezentare + insignă **Place Builder**.
+Opțional, acasă (dacă ai Studio): mai adaugă 5 piese de decor în `Etapa9_NumeTema` și testează din nou. Rămâi în același Place.
+
+---
+
+## Ce urmează — Lecția 10
+În **lecția 10** legi cele **9 etape** cu **pasarele**, faci **Poarta Parcului** și **podiumul**, colorezi zonele, repari trei probleme după testul unui coleg și îți prezinți lumea.

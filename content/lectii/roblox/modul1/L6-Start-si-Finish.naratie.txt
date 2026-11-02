@@ -1,19 +1,27 @@
-Lecția șase din Modulul unu. Start și Finish.
+Lecția șase din Modulul unu. Labirintul.
 
-Astăzi stabilești de unde pornește jucătorul și unde trebuie să ajungă. Rămâi pe fișierul tău, Prenume, linie jos, Nume, linie jos, M unu.
+Astăzi construiești Etapa șase din Obby-ul tău: un labirint cu Start și Finish la capete opuse, un singur drum corect și mai multe fundături. Înveți să planifici pe o grilă și să calculezi pozițiile pereților. Proiectul se numește Etapa șase, linie jos, Labirint. Lucrezi pe același fișier: Prenume, linie jos, Nume, linie jos, M unu.
 
-Obiectivul. Minim: locul de start așezat corect, o zonă Finish vizibilă, cu culoare și nume, iar în Play te naști la start. Complet: minim, plus o cale care leagă startul de finish, un finish ridicat sau deosebit vizual și poți ajunge la el în Play.
+Ce facem azi. La final ai un labirint de cinci pe cinci camere, cu Start, adică SpawnLocation verde, în colțul de nord-vest, și Finish din Neon, galben, în colțul de sud-est. Între ele există un singur drum și patru fundături. Înveți ce face SpawnLocation, cum arată un Start și un Finish clare și cum calculezi poziția unui perete pe o grilă. Azi nu scriem cod.
 
-Primul pas. SpawnLocation este locul de naștere. Îl muți la începutul traseului și îl ancorezi. Îi lași numele, pentru că este special pentru Roblox. Poți doar să-l colorezi verde, ca regulă vizuală.
+Instrucțiuni noi azi. SpawnLocation este locul unde apari la Play. Bifa Enabled din Properties trebuie să fie pusă. Grila este un caroiaj desenat pe hartă, cu douăsprezece stud-uri pe cameră. Pentru liniile grilei folosim formula: X este minus o sută optzeci plus douăsprezece ori k, iar Z este minus treizeci plus douăsprezece ori k. Cu Shift și click în Explorer selectezi o serie de piese, de la prima la ultima.
 
-Al doilea pas. Finish. Faci un Part și îl numești Finish. Îl colorezi cu auriu, albastru sau magenta. Verdele rămâne doar pentru start. Azi este doar vizual. Nu apare niciun mesaj de câștig. Acela vine mai târziu, cu cod.
+Primul pas. Start și Finish. Un obby bun se înțelege fără explicații: jucătorul vede unde începe și unde ajunge. În Explorer, în Workspace, găsești SpawnLocation. Nu îl redenumești. În Properties verifici că Enabled este bifat. Start este SpawnLocation, verde, ancorat, cu mărimea opt, unu, opt. Finish este un Block numit Finish, din Neon, galben, ancorat. Start și Finish stau la capete opuse, ca drumul să fie lung. Există un singur SpawnLocation în Place. Un Block verde numit Start nu funcționează: la Play tot pe SpawnLocation apari.
 
-Al treilea pas. Traseul. Pui Finish departe de start și legi cele două cu o cale simplă, în linie dreaptă.
+Al doilea pas. Grila. Labirintul are cinci pe cinci camere, de câte douăsprezece stud-uri, adică șaizeci pe șaizeci. Un perete stă pe o linie a grilei. Are grosimea doi, înălțimea opt și lungimea unui număr întreg de camere, plus doi stud-uri, ca să se lipească de pereții de lângă el. Centrul lui este la mijlocul liniei, la înălțimea cinci. Pe schiță, S este Start, în colțul de nord-vest, iar F este Finish, în colțul de sud-est. Intrarea este golul de sus, deasupra lui S, iar ieșirea este golul de jos, sub F. Cu degetul sau cu creionul mergi pe schiță de la S la F. Drumul corect trece prin nouăsprezece camere și are patru fundături.
 
-Al patrulea pas. Verifici dacă se înțelege fără explicații. Un coleg ar trebui să vadă direcția și țelul.
+Al treilea pas. Proiectul unu: podea, pereți exteriori, Start și Finish. Etapa șase stă la o sută cincizeci de stud-uri de etapa unu, spre stânga, pe axa roșie, la Z egal zero. Faci o podea din Concrete, patru pereți exteriori din Brick și muți SpawnLocation în colțul de nord-vest. Pereții de nord și de sud sunt mai scurți, ca să rămână intrarea și ieșirea, de câte zece stud-uri. Pui Finish în colțul de sud-est. Valorile exacte sunt în tabelul din lecție. Apeși Play, apari în colț și te plimbi prin sala goală.
 
-Greșeli frecvente. Ai colorat un Part drept start, dar nu e SpawnLocation: te naști tot pe cel vechi. Finish verde: se confundă cu startul. Finish lipit de start: nu mai e un Obby. Finish sub podea sau imposibil de atins. Două locuri de start: te naști la întâmplare, lași doar unul.
+Al patrulea pas. Proiectul doi, pereții interiori. Sunt zece pereți, cinci pe direcția Z și cinci pe direcția X. Fiecare are Size, Position, Material Brick și aceeași culoare ca pereții exteriori. Pentru fiecare perete nou apeși Control D, apoi schimbi Name, Size și Position. După fiecare trei sau patru pereți apeși Play și te uiți de sus: se vede forma din schiță? La final, de la Start ajungi la Finish numai pe drumul corect. Apoi, în Explorer, selectezi prima piesă a etapei, ții Shift și dai click pe ultima. SpawnLocation nu intră în grup. Apeși Control G și numești grupul Etapa șase, linie jos, Labirint. Salvezi.
 
-Provocare Pro, opțională. Citești în Properties setările locului de start și spui ce face fiecare. Construiești un Finish pe trei trepte, aur, argint și bronz. Adaugi un arc deasupra, ca să se vadă de departe, și măsori cât timp îi ia unui coleg să găsească Finish-ul fără ajutor.
+Greșeli frecvente. Un perete este la poziția greșită: compari cu tabelul și verifici semnul minus. Ai schimbat Size, dar nu Position: peretele iese din grilă. Între pereți rămân goluri: lungimea trebuie să fie douăsprezece ori numărul de camere, plus doi. Nu apari la Start: SpawnLocation nu este la poziția din tabel sau Enabled nu este bifat. Finish este verde: verde este doar pentru Start. Piesele cad la Play: lipsește Anchor. Ai pus un Block numit Start: la Play tot pe SpawnLocation apari.
 
-Recapitulare. SpawnLocation este locul de naștere. Finish este ținta vizuală. Succes cu traseul.
+Proiectul de azi. Etapa șase, linie jos, Labirint. Minim înseamnă podea, patru pereți exteriori cu intrare și ieșire, Start și Finish, ancorate, și un tur în Play. Complet înseamnă minim, plus cei zece pereți interiori, un singur drum de la Start la Finish, cel puțin două fundături și grupul Etapa șase, linie jos, Labirint.
+
+Provocare, trei stele. Două drumuri. Ștergi Zid patru. Acum găsești pe schiță două drumuri de la Start la Finish: unul lung, de nouăsprezece camere, și unul mai scurt, de cincisprezece. Marchezi camerele drumului scurt cu câte un Block subțire, de altă culoare, puțin deasupra podelei. Parcurgi ambele drumuri în Play, fără să cazi, apoi repari ce nu merge.
+
+Recapitulare. SpawnLocation este Start, cu Enabled bifat, și este verde. Finish este galben, din Neon, la capătul opus. Grila are doisprezece stud-uri pe cameră. Un perete are lungimea douăsprezece ori numărul de camere, plus doi. Shift și click în Explorer selectează o serie.
+
+Ce urmează. În lecția șapte construiești Etapa șapte: un zgârie-nori cu zece etaje, făcut cu Control D și formule pentru Position, și un obby care urcă pe balcoanele lui.
+
+Succes cu labirintul tău.

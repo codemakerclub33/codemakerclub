@@ -1,21 +1,31 @@
-Lecția doi din Modulul unu. Explorer, Properties și Workspace.
+Lecția doi din Modulul unu. Casa cu trei camere.
 
-Astăzi înveți lista obiectelor, numită Explorer, și fișa de setări a fiecărui obiect, numită Properties. Lucrezi pe același fișier: Prenume, linie jos, Nume, linie jos, M unu.
+Astăzi înveți lista obiectelor, numită Explorer, și fișa fiecărui obiect, numită Properties. Apoi construiești Etapa doi din Obby-ul tău: o casă cu trei camere, cu piese numite și mărimi exacte. Proiectul se numește Etapa doi, linie jos, Casa. Lucrezi pe același fișier: Prenume, linie jos, Nume, linie jos, M unu.
 
-Obiectivul. Găsești obiectele în Explorer, le selectezi din listă, le redenumești și schimbi setări simple. Minim: Explorer și Properties deschise, știi unde e Workspace și ai cel puțin două Part-uri cu nume clare. Complet: minim, plus schimbi Size sau Position din Properties și faci un Play de verificare.
+Ce facem azi. La final ai Etapa doi: o casă cu trei camere, făcută din cincisprezece piese cu nume clare, la mărimi și poziții scrise cu cifre, nu trase din ochi. Când ai douăzeci de piese pe scenă, click în lume înseamnă haos. Explorer este lista, ca un dosar. Properties este fișa obiectului selectat. Cu ele construiești precis, iar în Modulul doi vei căuta aceleași nume în cod. Azi nu scriem cod.
 
-De ce contează. Când ai douăzeci de cuburi, să dai click în lume devine haos. Explorer este lista, ca un dosar. Properties este fișa obiectului selectat.
+Instrucțiuni noi azi. Explorer este lista obiectelor din lume. Properties este fișa obiectului selectat și o deschizi din butonul Properties din Home. Name este numele piesei, fără spații și fără diacritice. Size spune cât este de mare piesa: lățime, înălțime și adâncime, în stud-uri. Position spune unde este pe hartă. Group strânge piesele într-un singur obiect. X, Y și Z sunt cele trei culori de la prima lecție: X este stânga și dreapta, săgeata roșie. Y este sus și jos, verde. Z este față și spate, albastră.
 
-Primul pas. Deschizi panourile din meniul View: Explorer și Properties. Le așezi astfel încât să vezi lista, lumea și setările.
+Primul pas. Panourile. Deschizi Place-ul tău. Explorer este deschis. Properties îl deschizi din Home. Dacă ți-au rămas Terrain Editor sau Toolbox în stânga, le poți închide cu X.
 
-Al doilea pas. Workspace este casa lumii. Tot ce vezi în lume stă, de obicei, în Workspace. Îl desfaci și găsești Baseplate, locul de start și Part-urile tale.
+Al doilea pas. Workspace. În Explorer desfaci folderul Workspace. Tot ce se vede în lume stă acolo: Baseplate, SpawnLocation și piesele tale, inclusiv grupul Etapa unu, linie jos, Pod. Un click pe o piesă din listă o selectează și în lume.
 
-Al treilea pas. Redenumirea. Un Part se numește implicit Part. Dacă ai multe, nu mai știi care e care. Dă nume clare, de exemplu Treapta unu. Regula de aur: fără spații și fără diacritice. Scrii Treapta unu lipit, nu cu spațiu. De ce? În Modulul doi vei căuta aceste nume direct în cod, iar spațiile și diacriticele complică lucrurile.
+Al treilea pas. Nume clare. Dai dublu click pe nume, sau apeși F doi, scrii numele nou și apeși Enter. Regula numelor: doar litere și cifre, lipite. Fără spații și fără diacritice. Scrii Treapta unu lipit, nu cu spațiu. În Modulul doi vei găsi piesele din cod după nume, iar spațiile și diacriticele încurcă. Redenumești trei piese din prima etapă.
 
-Al patrulea pas. Properties. Name este numele. Anchored este bifa care oprește căderea. Size spune cât de mare este. Position spune unde se află. Schimbi puțin Size sau Position, te uiți în lume, apoi faci Play și Stop.
+Al patrulea pas. Properties. Selectezi o piesă și vezi Name, Anchored, Size, Position și Orientation. În secțiunea Transform găsești Size, iar Position și Orientation sunt sub CFrame. Anchored bifat înseamnă că piesa nu cade. La Size scrii trei numere despărțite prin virgulă și apeși Enter. La fel la Position. Încerci cu o piesă nouă și o ștergi apoi.
 
-Greșeli frecvente. Nu vezi Explorer: îl deschizi din View. Ai selectat altceva decât Workspace: te întorci la Workspace. Ai redenumit Baseplate sau locul de start: apeși Undo. Locul de start rămâne cu numele lui, pentru că este special pentru Roblox.
+Al cincilea pas. Proiectul unu, scheletul casei. Etapa doi stă la o sută cincizeci de stud-uri de prima etapă, spre dreapta. Casa este făcută dintr-o podea și șase pereți: peretele din spate, peretele din față și patru capete, două la stânga și două la dreapta. Între capetele de la stânga rămâne un gol de patru stud-uri, intrarea, iar la dreapta ieșirea. Valorile exacte sunt în tabelul din lecție. Faci o piesă, o ancorezi, apoi pentru restul o dublezi cu Control D și îi schimbi numele, mărimea și poziția. La final apeși Play, intri pe intrare și ieși pe ieșire.
 
-Provocare Pro, opțională. Grupezi mai multe Part-uri într-un Model, cu Control G, și îl redenumești. Creezi un Folder numit Platforme și muți în el platformele. Cauți un Part în Explorer după nume și schimbi o setare la trei Part-uri deodată. Folderele te ajută mult în Modulul trei.
+Al șaselea pas. Proiectul doi, camerele, mobila și acoperișul. Adaugi patru pereți despărțitori, tot cu goluri de patru stud-uri, ca să treci prin ei. Ușile nu sunt una în fața celeilalte: ușa unu este mai spre față, iar ușa doi mai spre spate, deci traseul face un zigzag. În camera doi pui trei mobile: o canapea, o masă și un dulap, trei obstacole pe care le sari una după alta. Pui acoperișul. Faci toate piesele ancorate. Apeși Play, treci prin ușa unu, sari peste mobile, treci prin ușa doi și ieși. Apoi selectezi toate cele cincisprezece piese, apeși Control G, redenumești grupul Etapa doi, linie jos, Casa și salvezi.
 
-Recapitulare. Explorer selectează, Properties schimbă. Workspace conține lumea. Nume clare, fără spații. Succes cu ordinea pe Place.
+Greșeli frecvente. Nu ai Properties: îl deschizi din Home. Ai selectat Lighting: te întorci în Workspace. Ai redenumit Baseplate: Control Z. Nume cu spațiu sau diacritice: scrie lipit și fără diacritice. Piesa a zburat: ai scris o valoare greșită la Position. Treci prin pereți: piesa nu are Anchored bifat sau mărimea este greșită. Piesele sunt prea sus sau prea jos: ai greșit Y la Position.
+
+Proiectul de azi. Etapa doi, linie jos, Casa. Minim înseamnă podea și șase pereți cu nume și mărimi din tabel, ancorate, și un tur de la intrare la ieșire. Complet înseamnă minim, plus patru pereți despărțitori, trei mobile, acoperiș, grupul Etapa doi, linie jos, Casa, și un tur prin toată casa.
+
+Provocare, trei stele. Casa cu cinci camere. Casa are lungimea de o sută de stud-uri, cu goluri de patru stud-uri între camere. Toate piesele au nume clare: zero piese numite Part. Calculezi singur mărimea și poziția pieselor noi. Parcurgi casa de la intrare la ieșire în sub patruzeci de secunde, fără să cazi.
+
+Recapitulare. Explorer este lista, Properties este fișa piesei. Workspace este tot ce este în lume. Numele sunt litere și cifre lipite. Size spune cât este de mare, Position spune unde este. Control D dublează, Control G grupează.
+
+Ce urmează. În lecția trei lucrezi cu formele Block, Cylinder și Wedge și construiești Etapa trei: un castel cu ziduri, scară, rampă și turn.
+
+Succes cu casa ta.

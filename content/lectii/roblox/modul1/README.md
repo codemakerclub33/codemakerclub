@@ -7,16 +7,16 @@
 
 | # | Fișier | Titlu |
 |---|--------|--------|
-| 1 | [L1-Studio-si-primul-Place.md](./L1-Studio-si-primul-Place.md) | Studio + primul Place |
-| 2 | [L2-Explorer-Properties-Workspace.md](./L2-Explorer-Properties-Workspace.md) | Explorer, Properties, Workspace |
-| 3 | [L3-Parts-forme-mutare.md](./L3-Parts-forme-mutare.md) | Parts: forme, mutare, scalare |
-| 4 | [L4-Ancorare-materiale-culori.md](./L4-Ancorare-materiale-culori.md) | Ancorare, materiale, culori |
-| 5 | [L5-Camera-si-Play.md](./L5-Camera-si-Play.md) | Camera + Playtest |
-| 6 | [L6-Start-si-Finish.md](./L6-Start-si-Finish.md) | Start (Spawn) + Finish |
-| 7 | [L7-Traseu-platforme.md](./L7-Traseu-platforme.md) | Traseu Obby: platforme |
-| 8 | [L8-Checkpoint-vizual.md](./L8-Checkpoint-vizual.md) | Checkpoint vizual (fără script) |
-| 9 | [L9-Mini-proiect-Lumea-Obby.md](./L9-Mini-proiect-Lumea-Obby.md) | Mini-proiect: Lumea Obby |
-| 10 | [L10-Completare-si-prezentare.md](./L10-Completare-si-prezentare.md) | Completare + prezentare + insignă |
+| 1 | [L1-Studio-si-primul-Place.md](./L1-Studio-si-primul-Place.md) | Primul meu Place |
+| 2 | [L2-Explorer-Properties-Workspace.md](./L2-Explorer-Properties-Workspace.md) | Casa cu trei camere (Etapa 2) |
+| 3 | [L3-Parts-forme-mutare.md](./L3-Parts-forme-mutare.md) | Castelul (Etapa 3) |
+| 4 | [L4-Ancorare-materiale-culori.md](./L4-Ancorare-materiale-culori.md) | Parcarea (Etapa 4) |
+| 5 | [L5-Camera-si-Play.md](./L5-Camera-si-Play.md) | Pădurea (Etapa 5) |
+| 6 | [L6-Start-si-Finish.md](./L6-Start-si-Finish.md) | Labirintul (Etapa 6) |
+| 7 | [L7-Traseu-platforme.md](./L7-Traseu-platforme.md) | Zgârie-norul (Etapa 7) |
+| 8 | [L8-Checkpoint-vizual.md](./L8-Checkpoint-vizual.md) | Terenul de joacă (Etapa 8) |
+| 9 | [L9-Mini-proiect-Lumea-Obby.md](./L9-Mini-proiect-Lumea-Obby.md) | Alegerea ta (Etapa 9) |
+| 10 | [L10-Completare-si-prezentare.md](./L10-Completare-si-prezentare.md) | Lumea ta: legare, finisare, prezentare, insignă |
 
 ---
 

@@ -1,19 +1,29 @@
-Lecția cinci din Modulul unu. Camera și Playtest.
+Lecția cinci din Modulul unu. Pădurea.
 
-Astăzi controlezi camera în editare și faci un test serios. Te plimbi pe traseu, cauți probleme, repari și testezi din nou. Rămâi pe fișierul tău, Prenume, linie jos, Nume, linie jos, M unu.
+Astăzi înveți să-ți miști camera, să testezi cu Play și construiești Etapa cinci din Obby-ul tău: o pădure cu copaci, un râu și un traseu pe ciocuri de copac până la o cabană. Proiectul se numește Etapa cinci, linie jos, Padure. Lucrezi pe același fișier: Prenume, linie jos, Nume, linie jos, M unu.
 
-Obiectivul. Minim: vezi construcția din trei unghiuri, sus, lateral și aproape, faci un tur complet cu Play și apeși Stop. Complet: minim, plus notezi și repari cel puțin o problemă, apoi faci al doilea Play curat.
+Ce facem azi. La final ai Etapa cinci: o pădure cu șase copaci, cu trunchi din Cylinder și coroană din Sphere, un râu și un obby. Pornești de la Start, sari pe patru ciocuri din râu, mergi pe o buturugă și ajungi la cabană. Înveți să miști camera în editare și să privești etapa din trei puncte: de sus, din lateral și de la nivelul avatarului. La final faci un ciclu complet: găsești o problemă, o repari și testezi din nou. Azi nu scriem cod.
 
-De ce contează. O construcție poate arăta bine dintr-un unghi și să fie imposibilă din altul. Testul înseamnă că joci ca un elev care nu știe ce ai vrut tu.
+Instrucțiuni noi azi. Cu click dreapta ținut apăsat și mouse-ul te uiți în jur. Cu click dreapta ținut și tastele W, A, S, D zbori cu camera. Scroll-ul face zoom. Tasta F duce camera la piesa selectată. Play pornește testul, iar Stop te întoarce la editare. Control G face un grup, iar Control D îl copiază.
 
-Primul pas. Camera de editare. Nu ești încă avatarul. Ții click dreapta pe lume și miști mouse-ul ca să te uiți în jur. Cu rotița mouse-ului faci zoom. Cu un Part selectat, tasta F îți aduce obiectul în centru. Nu trebuie să memorezi toate tastele. Trebuie doar să vezi construcția din trei părți.
+Primul pas. Camera în editare. Încă nu ești avatarul, camera este liberă. Ții apăsat click dreapta și miști mouse-ul, apoi adaugi tastele W, A, S, D ca să te miști prin scenă. Cu scroll apropii sau depărtezi. Selectezi o piesă și apeși F. Privești etapa din trei puncte. De sus vezi traseul întreg și golurile. Din lateral vezi înălțimile. De la nivelul avatarului vezi cum vede jucătorul. Încearcă pe Etapa patru: o privești de sus, apoi din lateral, apoi selectezi Finish și apeși F.
 
-Al doilea pas. Play. Acum ești jucătorul. Te miști cu W, A, S, D, sari cu bara de spațiu. După ce pornește testul, apare și butonul de pauză, care oprește jocul ca să te uiți liniștit. Stop te întoarce la editare. Urmează propria construcție, de la start la capăt. Dacă cazi, notezi de ce: prea departe, prea sus sau un Part lipsă.
+Al doilea pas. Play. Apeși Play și avatarul apare la SpawnLocation. Te miști cu W, A, S, D, te uiți cu mouse-ul și sari cu Space. Poți apăsa Pause ca să te uiți liniștit. Stop te întoarce la editare. Nu editezi în timpul testului: mai întâi Stop. Faci un tur pe Etapa patru, ajungi la Finish și spui care a fost cel mai greu punct.
 
-Al treilea pas. Găsești, repari, retestezi. Dacă cazi între trepte, le apropii. Dacă nu ajungi cu saltul, lărgești platforma sau o cobori. Dacă un Part cade, îl ancorezi. Scrii o problemă pe hârtie, repari și faci Play din nou. Ai remediat-o?
+Al treilea pas. Proiectul unu, sol, râu și copaci. Etapa cinci stă la o sută cincizeci de stud-uri de Etapa patru, spre stânga, pe axa roșie. Pădurea are optzeci pe șaizeci de stud-uri. Faci un sol din Grass și un râu albastru, transparent, cu CanCollide debifat, ca să poți călca prin el. Un copac are doi pași: un trunchi din Cylinder, pus în picioare cu Orientation zero, zero, nouăzeci, și o coroană din Sphere deasupra. Le selectezi pe amândouă, apeși Control G și numești grupul Copac unu. Apoi îl copiezi cu Control D și îl muți cu Move. Faci șase copaci, la marginea terenului, departe de râu. Muți SpawnLocation la capătul din stânga al râului, apeși Play și te plimbi printre copaci. Copacii te opresc, râul nu.
 
-Greșeli frecvente. Editezi în timpul testului: apasă mai întâi Stop. Camera e înăuntrul unui Part: faci zoom înapoi. Faci un singur test: la al doilea apar alte probleme. Uiți să salvezi după reparație.
+Al patrulea pas. Proiectul doi, ciocuri, buturugă și cabană. Obby-ul pădurii: de la Start sari pe patru ciocuri din râu, mergi pe buturugă și ajungi la cabană. Primul ciot este scund, iar fiecare următor este mai înalt cu doi stud-uri. Le faci din Cylinder, în picioare. Buturuga este un Cylinder culcat, cu Orientation zero, zero, zero, cu vârful la același nivel ca ultimul ciot. Cabana este din Neon și galbenă. Ancorezi totul și apeși Play. Apoi selectezi tot ce ai făcut azi, fără SpawnLocation, apeși Control G și numești grupul Etapa cinci, linie jos, Padure. Salvezi.
 
-Provocare Pro, opțională. Schimbi în Lighting ora din zi și luminozitatea, și compari ziua cu seara. Adaugi Atmosphere și îi schimbi puțin densitatea. Încerci o bucată mică de teren, cu Terrain Editor, și ții un raport de test cu trei coloane: ce am testat, ce s-a întâmplat, ce am schimbat.
+Al cincilea pas. Găsești, repari, testezi din nou. Testezi în Play și notezi o problemă. Apeși Stop și repari în editare. Apeși din nou Play: problema a dispărut? Dacă nu ajungi cu saltul pe un ciot, îl apropii sau îl faci mai scund. Dacă o piesă a căzut, lipsește Anchor. Dacă un copac stă în drum, îl muți. La final privești etapa din cele trei puncte și salvezi.
 
-Recapitulare. Play testează, Stop editează, apoi salvezi. Un unghi poate înșela, folosește trei. Găsești, repari, retestezi. Succes la test.
+Greșeli frecvente. Editezi în timpul testului: mai întâi Stop. Camera este în piesă: dai înapoi cu scroll. Un copac are doar trunchi sau doar coroană: le selectezi pe amândouă înainte de Control G. Piesele cad la Play: lipsește Anchor. Ciocurile sunt culcate: Orientation zero, zero, nouăzeci. Te blochezi în râu: debifezi CanCollide. Un singur Play nu ajunge: a doua rulare arată ce ai reparat.
+
+Proiectul de azi. Etapa cinci, linie jos, Padure. Minim înseamnă solul, râul, șase copaci grupați, SpawnLocation mutat în pădure și un tur în Play. Complet înseamnă minim, plus patru ciocuri, buturuga, cabana, grupul Etapa cinci, linie jos, Padure, un parcurs de la Start la cabană și o problemă găsită, reparată și retestată.
+
+Provocare, trei stele. Insula plutitoare. De la cabană urci pe cinci pietre până la o insulă care plutește deasupra pădurii. Faci cele șase piese noi, ancorate, cu material și culoare la alegere, pui un copac mic pe insulă și privești toată etapa din trei unghiuri. Apoi parcurgi tot: Start, cabană, pietre și insulă, fără să cazi.
+
+Recapitulare. Click dreapta ținut și mouse-ul sau tastele W, A, S, D mișcă camera în editare, iar F o duce la piesa selectată. Play testează, Stop te întoarce la editare, Space sare. Control G face un grup, Control D îl copiază. Găsești, repari, testezi din nou.
+
+Ce urmează. În lecția șase construiești Etapa șase: un labirint cu Start și Finish, un singur drum corect și cel puțin două fundături.
+
+Succes cu pădurea ta.

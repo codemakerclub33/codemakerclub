@@ -1,19 +1,29 @@
-Lecția opt din Modulul unu. Checkpoint vizual, fără script.
+Lecția opt din Modulul unu. Terenul de joacă.
 
-Astăzi marchezi pe traseu locurile de odihnă, numite checkpoint-uri. Rămâi pe fișierul tău, Prenume, linie jos, Nume, linie jos, M unu.
+Astăzi construiești Etapa opt din Obby-ul tău: un teren de joacă cu balansoar, leagăn și nisip, plus un obby cu discuri, tobogan și două puncte de odihnă vizuale. Înveți să rotești piesele cu cifre și să faci grupuri în grupuri. Proiectul se numește Etapa opt, linie jos, Joaca. Lucrezi pe același fișier: Prenume, linie jos, Nume, linie jos, M unu.
 
-Obiectivul. Minim: un Part numit Checkpoint unu, cu o culoare deosebită, ancorat și pe traseu, iar în Play treci pe el. Complet: minim, plus al doilea checkpoint, Checkpoint doi, pe altă secțiune, și o regulă de culoare scrisă, de exemplu portocaliu înseamnă checkpoint.
+Ce facem azi. La final ai un teren de joacă. Pe el stau un balansoar, adică o scândură înclinată, un leagăn, cu stâlpi, bară, scaun și lanțuri, și o groapă cu nisip. Apoi urmează obby-ul: pornești de la Start, sari pe trei discuri, urci pe turn, cobori pe toboganul lung, treci pe trei ciocuri și ajungi la Finish. Pe drum găsești două puncte de odihnă, de culoare albastru deschis, care marchează jumătatea traseului. Azi nu scriem cod. Punctele de odihnă sunt doar marcaje vizuale: nu salvează progresul și nu te mută. Mai târziu, cu cod, pot face asta.
 
-Primul pas. Ce înseamnă vizual. Azi checkpoint-ul este doar un semn pe hartă. Nu te teleportează și nu salvează nimic. Funcționarea reală vine mai târziu, cu cod.
+Instrucțiuni noi azi. Orientation, din Properties, rotește o piesă cu cifre, în grade. Un grup în grup înseamnă că un grup mic, leagănul, intră într-un grup mare, etapa. Un punct de odihnă este o placă subțire și colorată, care marchează un loc important. Wedge, cu o pantă lungă, devine tobogan. Un Cylinder culcat este o bară, iar în picioare este un stâlp.
 
-Al doilea pas. Construiești Checkpoint unu. Faci un Part vizibil, cu o culoare clară, îl ancorezi și îl pui pe traseu, la jumătatea drumului.
+Primul pas. Orientation și grupuri în grupuri. Orientation are trei numere: X, Y și Z, în grade. Al treilea număr, Z, înclină piesa: zero, zero, cincisprezece face o scândură lungă să urce într-o parte. Dacă înclinarea iese în partea greșită, scrii minus cincisprezece. Pentru un grup selectezi două sau mai multe piese, apeși Control G și îi dai un nume. Când grupezi toată etapa, acest grup rămâne înăuntru. În Explorer îl vezi ca un folder în folder. Faci un Block de șaisprezece pe unu pe trei, îl înclini cu zero, zero, cincisprezece și mergi pe el în Play. Apoi îl ștergi.
 
-Al treilea pas. Verifici din lume dacă se vede de la distanță.
+Al doilea pas. Punctul de odihnă. Un punct de odihnă este un loc unde jucătorul poate respira: ai trecut de jumătate din traseu. Îl faci dintr-o placă subțire, de o culoare care nu seamănă cu Start, verde, sau cu Finish, galben: albastru deschis, din Neon. Faci un Block de patru pe zero virgulă doi pe patru, din Neon, numit Check unu, ancorat și lipit de sol.
 
-Al patrulea pas. Al doilea checkpoint, pe altă secțiune, în aceeași familie de culoare.
+Al treilea pas. Proiectul unu: sol, nisip, balansoar și leagăn. Etapa opt stă la o sută cincizeci de stud-uri de etapa unu, la Z egal minus o sută cincizeci, pe axa albastră, spre față. Faci un sol, o groapă cu nisip, un balansoar din două piese, scândura și suportul, și un leagăn din șase piese. Scândura are Orientation zero, zero, cincisprezece. În leagăn, bara este un Cylinder culcat, cu Orientation zero, zero, zero, iar stâlpii și lanțurile sunt în picioare, cu zero, zero, nouăzeci. Selectezi piesele balansoarului și apeși Control G, apoi faci la fel cu piesele leagănului. Muți SpawnLocation pe teren și apeși Play: te plimbi, urci pe scândură și ocolești leagănul.
 
-Greșeli frecvente. Checkpoint de aceeași culoare cu Finish: jucătorul se încurcă. Checkpoint verde: verdele este doar pentru start. Checkpoint în aer. Prea mic: nu se vede. Ai pus un script: azi nu. Checkpoint înainte de start: ordinea este start, checkpoint-uri, finish.
+Al patrulea pas. Proiectul doi: obby-ul terenului. Pornești de la Start, sari pe discurile unu, doi și trei, urci pe turn, cobori pe tobogan, ajungi la punctul de odihnă de jos, treci pe ciocurile patru, cinci și șase și ajungi la Finish. Discurile sunt Cylindere în picioare, cu Size unu, zece, zece: primul număr este înălțimea discului. Toboganul este un Wedge, cu partea înaltă spre turn. Toboganul are Orientation zero, o sută optzeci, zero, ca partea înaltă să fie spre turn. Dacă panta iese totuși invers, scrii zero, zero, zero. Primul punct de odihnă stă pe vârful turnului, iar al doilea pe sol, la capătul toboganului. Ciocurile cresc în înălțime, iar Finish stă pe un soclu, la același nivel cu ultimul ciot. Ancorezi totul și apeși Play. Apoi selectezi tot ce ai făcut azi, fără SpawnLocation, apeși Control G și numești grupul Etapa opt, linie jos, Joaca. Grupurile Balansoar și Leagan intră cu tot cu conținut. Salvezi.
 
-Provocare Pro, opțională. Creezi un Folder numit exact Checkpoints și pui în el toate checkpoint-urile, numerotate, fără spații. Adaugi câte un arc deasupra fiecăruia și le așezi la distanțe cam egale pe traseu. În Modulul trei un script le va căuta în acest folder.
+Al cincilea pas. Test și reparații. Apeși Play și parcurgi traseul. Dacă cazi, notezi unde și repari, de obicei cu Position sau Size. Dacă un disc nu se vede bine, verifici Orientation zero, zero, nouăzeci. Punctele de odihnă nu te mută azi: dacă cazi după primul, apari tot la Start. Este normal, pentru că nu avem cod.
 
-Recapitulare. Un checkpoint este un semn vizual, cu culoare proprie, pe traseu. Succes cu checkpoint-urile.
+Greșeli frecvente. Discurile stau în picioare ca niște roți: Orientation zero, zero, nouăzeci și Size unu, zece, zece. Scândura este înclinată invers: minus cincisprezece. Toboganul urcă în loc să coboare: schimbi Orientation între zero, o sută optzeci, zero și zero, zero, zero. Grupul etapei nu conține leagănul: îl tragi peste grup în Explorer sau regrupezi. Piesele cad la Play: lipsește Anchor. Primul punct de odihnă plutește: trebuie să stea pe vârful turnului. Nu poți sări pe un ciot: verifici Size și Position.
+
+Proiectul de azi. Etapa opt, linie jos, Joaca. Minim înseamnă solul, nisipul, grupurile Balansoar și Leagan, ancorate, SpawnLocation pe teren și un tur în Play. Complet înseamnă minim, plus trei discuri, turn, tobogan, două puncte de odihnă, trei ciocuri, Finish, grupul Etapa opt și un parcurs de la Start la Finish.
+
+Provocare, trei stele. Căsuța de joacă. O căsuță ridicată de la sol, cu patru stâlpi, o podea și un acoperiș din două scânduri înclinate. Cele șapte piese sunt ancorate și grupate ca Casuta, în grupul etapei. Acoperișul trebuie să arate ca un A, nu ca un V. Dacă este invers, schimbi semnele. Urci în căsuță, apoi parcurgi etapa de trei ori, fără să cazi.
+
+Recapitulare. Orientation rotește în grade, iar zero, zero, cincisprezece înclină piesa. Control G face grupuri, iar un grup poate intra în alt grup. Un punct de odihnă este o placă subțire și colorată, doar vizuală. Wedge face tobogan.
+
+Ce urmează. În lecția nouă îți alegi singur tema și construiești Etapa nouă: un obby al tău, după un plan, cu Start, Finish, puncte de odihnă și parcurs complet.
+
+Succes pe terenul de joacă.

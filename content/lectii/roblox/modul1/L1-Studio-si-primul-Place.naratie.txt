@@ -1,21 +1,35 @@
-Lecția unu din Modulul unu, Place Builder. Roblox Studio și primul tău Place.
+Lecția unu din Modulul unu. Primul meu Place.
 
-Astăzi deschizi Roblox Studio, înveți cinci lucruri de pe ecran și construiești ceva ce poți testa cu butonul Play. Fișierul tău, numit Place, se numește: Prenume, linie jos, Nume, linie jos, M unu. De exemplu: Ana, linie jos, Pop, linie jos, M unu. Obby-ul tău crește de-a lungul întregului curs. În Modulul unu rămâi pe același fișier. La începutul fiecărui modul nou faci o copie, ca versiunea veche să rămână întreagă. Dacă îți pierzi fișierul, profesorul are unul de rezervă.
+Astăzi deschizi Roblox Studio, înveți cele cinci comenzi de bază și construiești Etapa unu din Obby-ul tău: un pod pe care îl treci cu butonul Play. Proiectul se numește Etapa unu, linie jos, Pod. Fișierul tău, numit Place, se numește: Prenume, linie jos, Nume, linie jos, M unu. De exemplu: Ana, linie jos, Pop, linie jos, M unu.
 
-Obiectivul. La final ai un Place salvat cu numele corect. Știi unde e lumea tridimensională, cum pui un Part, cum îl ancorezi și cum pornești și oprești testul. Minim: Place salvat, cel puțin două Part-uri ancorate și un tur scurt cu Play. Complet: minim, plus o cale scurtă pe care o poți străbate și o culoare diferită pe un Part.
+Ce facem azi. La final ai un Place salvat și prima etapă a Obby-ului tău: un turn de start, un pod din șase plăci și un turn de ieșire. Vezi cu ochii tăi ce face Anchor: același pod cade când nu este ancorat și ține când este ancorat. Obby-ul tău crește în tot modulul. În fiecare lecție adaugi o etapă nouă, iar în ultima lecție le legi pe toate într-o singură lume. Azi nu scriem cod.
 
-Azi nu scriem cod. Roblox Studio este șantierul jocului. Aici construiești lumea.
+Instrucțiuni noi azi. Part pune o formă în lume: Block, Sphere, Wedge, Corner Wedge sau Cylinder. Move, Scale și Rotate mută, măresc și rotesc Part-ul selectat. Anchor face Part-ul să stea pe loc și să nu cadă la Play. Anchored parts arată ce Part-uri sunt ancorate. Control D dublează Part-ul selectat, iar pe Mac este Command D. Play te lasă să testezi ca jucător, iar Stop te întoarce la editare.
 
-Primul pas. Cele cinci lucruri. Viewport este lumea tridimensională, cu podeaua în pătrățele, numită Baseplate. Play este săgeata albastră: testezi ca jucător. Stop este pătratul roșu: te întorci la editare. Part este o formă, de exemplu un cub, pe care o adaugi din meniul Home. Move, Scale și Rotate mută, mărește și rotesc Part-ul. Anchor face Part-ul să nu cadă atunci când apeși Play.
+Primul pas. Turul celor cinci comenzi. Viewport este lumea tridimensională. Podeaua în pătrățele se numește Baseplate, iar pătratul alb cu stea neagră este SpawnLocation, locul unde apari când joci. Play este săgeata albastră din stânga sus, iar Stop este pătratul roșu. Butonul Run din dreapta jos nu este Play. Part, Move, Scale, Rotate și Anchor sunt în tab-ul Home. În stânga și în dreapta vezi și alte panouri: Terrain Editor, Toolbox și Explorer. Azi nu le folosim. Explorer ne trebuie la lecția doi.
 
-Al doilea pas. Salvarea. Creezi un Place nou de tip Baseplate și îl salvezi cu numele tău, unic în grupă. Nu folosi doar prenumele și nu folosi încă terminațiile pentru modulele următoare.
+Al doilea pas. Place nou și nume. Pornești Roblox Studio, te conectezi, alegi un Place nou de tip Baseplate și îl salvezi cu File și Save. Numele este prenumele tău, linie jos, numele tău, linie jos, M unu. Nu folosi doar prenumele. Rămâne același în tot Modulul unu. La început de modul nou faci o copie.
 
-Al treilea pas. Primul Part. Îl inserezi, îl ancorezi și îl muți lângă locul de start. Dacă nu îl ancorezi, la Play poate cădea prin podea.
+Al treilea pas. Mutăm, mărim, rotim. Adaugi un Block din Home, cu Part și Block, și îl selectezi cu Select. Cât timp este selectat, are unelte în jurul lui. Cu Move vezi săgeți colorate: tragi o săgeată și Part-ul alunecă pe acea direcție. Cu Scale vezi mânere pe fețe: tragi un mâner și Part-ul devine mai mare sau mai mic. Cu Rotate vezi inele colorate: tragi pe un inel și Part-ul se învârte. Culorile sunt aceleași la toate trei: roșu înseamnă stânga și dreapta, verde înseamnă sus și jos, iar albastru înseamnă față și spate. Câmpul din bară, cu un stud, face ca Part-ul să se mute și să crească din unu în unu, nu din ochi. Un stud este pătrățelul din Baseplate. Încearcă: mută Block-ul patru stud-uri în față, fă-l de două ori mai lung și apoi înapoi, rotește-l și anulează cu Control Z, apoi fă un cub de opt pe opt pe opt. Apeși Play o dată, ca să vezi că nu ai stricat nimic, și Stop.
 
-Al patrulea pas. Play. Te miști cu tastele W, A, S, D, te uiți cu mouse-ul și sari cu bara de spațiu. Apoi apeși Stop. Play nu salvează. După ce îți place rezultatul, salvezi din nou.
+Al patrulea pas. Proiectul unu, turnul de start. Adaugi un Block și îl faci de opt pe opt pe opt stud-uri, cu snap-ul din bară lăsat pe un stud. Îl muți lângă SpawnLocation și îl ancorezi. Apoi adaugi un Cylinder pe vârf și un Wedge ca rampă, rotit până urcă spre turn, și le ancorezi pe amândouă. La final bifezi Anchored parts, din roata din colțul ferestrei, ca să vezi că cele trei piese sunt ancorate.
 
-Greșeli frecvente. Totul cade la Play: lipsește Anchor. Nu găsești Place-ul: numele e greșit sau nu l-ai salvat. Rămâi în test: apeși Stop.
+Al cincilea pas. Play. Apeși Play, te miști cu tastele W, A, S, D, te uiți cu mouse-ul și sari cu bara de spațiu. Urci rampa și ajungi pe turn. Apoi apeși Stop. Play nu salvează. După ce îți place rezultatul, salvezi din nou.
 
-Provocare Pro, opțională. Dacă termini repede: dublezi un Part cu Control D și construiești o cale de cinci Part-uri fără meniu, selectezi mai multe Part-uri odată și le muți împreună, apoi cauți setările de snap și așezi platformele la distanțe egale.
+Al șaselea pas. Proiectul doi, podul care cade. Construiești șase plăci, fiecare de patru pe unu pe patru stud-uri, la înălțimea de sus a turnului, cu goluri de două stud-uri între ele. Faci prima placă, o dublezi cu Control D și o muți cu Move cu șase stud-uri mai departe. La capătul podului construiești turnul de ieșire, ca turnul de start, dar în oglindă, și îl ancorezi. Plăcile podului nu trebuie să fie ancorate acum. Dacă Anchored parts le arată ca ancorate, le selectezi și apeși Anchor o dată, ca să se dezancoreze. Apeși Play și vezi că plăcile cad. Apeși Stop și podul revine la locul lui.
 
-Recapitulare. Viewport este lumea. Play testează, Stop te întoarce la editare. Anchor oprește căderea. Succes cu primul tău Place.
+Al șaptelea pas. Podul care ține. Selectezi toate cele șase plăci și apeși Anchor. Anchored parts le arată acum pe toate. Apeși Play, urci rampa, treci podul, cobori pe turnul de ieșire și apeși Stop. Apoi salvezi. Poți spune cu cuvintele tale ce face Anchor.
+
+Al optulea pas. Numele etapei. Selectezi toate piesele etapei, apeși Group, apoi în Explorer dai dublu click pe numele grupului și scrii Etapa unu, linie jos, Pod. Salvezi. Etapa doi o vei construi mai departe, la o sută cincizeci de stud-uri de aici, spre dreapta, nu lipită de aceasta.
+
+Greșeli frecvente. La Play tot ce construiești cade: piesele nu sunt ancorate. Podul nu cade la Play: plăcile sunt deja ancorate, iar cu Anchored parts le dezancorezi. Nu găsești Place-ul: numele este greșit sau nesalvat. Rămâi în Play: apeși Stop, nu Run. Ai șters Baseplate: Control Z sau Command Z. Nu poți sări peste goluri: golurile trebuie să fie de doar două stud-uri.
+
+Proiectul de azi. Etapa unu, linie jos, Pod. Minim înseamnă Place salvat, turnul de start cu Cylinder și rampă, toate ancorate, și un tur în Play. Complet înseamnă minim, plus podul cu șase plăci, care a căzut fără Anchor și ține cu Anchor, turnul de ieșire și etapa grupată.
+
+Provocare, trei stele. Parapetul podului. Pe fiecare margine a podului pui șase stâlpi subțiri din Cylinder, în total doisprezece, la distanțe egale, făcuți cu Control D și Move cu snap la un stud. Toți stâlpii sunt ancorați, iar tu treci podul în Play de trei ori la rând, fără să cazi.
+
+Recapitulare. Viewport este lumea. Play testează, Stop te întoarce la editare. Part pune forme, iar Move, Scale și Rotate le așază. Anchor le ține pe loc, iar Anchored parts îți arată care sunt ancorate. Etapa unu este grupul Etapa unu, linie jos, Pod.
+
+Ce urmează. În lecția doi folosești Explorer și Properties, ca să pui nume pieselor și mărimi exacte, și construiești Etapa doi: o casă cu trei camere.
+
+Succes cu primul tău Place.

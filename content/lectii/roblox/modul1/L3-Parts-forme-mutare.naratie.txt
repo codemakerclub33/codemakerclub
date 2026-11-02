@@ -1,21 +1,27 @@
-Lecția trei din Modulul unu. Part-uri: forme, mutare și scalare.
+Lecția trei din Modulul unu. Castelul.
 
-Astăzi controlezi Part-urile. Alegi forma, le muți, le mărești și le rotești, ca să construiești trepte și platforme. Rămâi pe fișierul tău, Prenume, linie jos, Nume, linie jos, M unu.
+Astăzi folosești toate cele cinci forme de Part, adică Block, Sphere, Wedge, Corner Wedge și Cylinder, și construiești Etapa trei din Obby-ul tău: un castel cu turnuri, ziduri, scară, rampă și steag, pe care îl și parcurgi. Proiectul se numește Etapa trei, linie jos, Castel. Lucrezi pe același fișier: Prenume, linie jos, Nume, linie jos, M unu.
 
-Obiectivul. Folosești cu încredere uneltele Move, Scale și Rotate. Minim: cel puțin trei Part-uri ancorate, așezate cu Move și Scale. Complet: minim, plus un Part rotit, ca o rampă, și o scară scurtă pe care o urci în Play.
+Ce facem azi. La final ai Etapa trei: un castel cu patru turnuri rotunde, ziduri și o poartă. Treci prin poartă, urci pe o scară de cinci trepte, mergi pe zid, cobori pe o rampă și ajungi la steag. Înveți să alegi forma potrivită, Cylinder pentru turn și Wedge pentru rampă, și să o rotești cu cifre, din Orientation. Azi nu scriem cod.
 
-De ce contează. Un Obby înseamnă platforme la înălțimi și distanțe diferite. Azi antrenezi mâna pe unelte. La Lecția șapte faci traseul lung.
+Instrucțiuni noi azi. Săgeata de lângă butonul Part îți arată lista cu forme. Orientation, din Properties, spune cum este rotită piesa, în grade. Rotate rotește piesa cu inelele, din patruzeci și cinci în patruzeci și cinci de grade. La un Cylinder, primul număr din Size este lungimea cilindrului. Wedge este piesa cu pantă, bună pentru rampe. La Orientation zero, zero, zero, partea înaltă este spre Z mic, spre față, iar cu zero, o sută optzeci, zero se întoarce.
 
-Primul pas. Cele trei unelte. Move mută Part-ul pe cele trei direcții, trăgând de săgeți colorate. Scale schimbă mărimea, trăgând de mânere. Rotate îl învârte, trăgând de inele. Dacă Part-ul sare în pași, este normal: te ajută să aliniezi.
+Primul pas. Cele cinci forme. Block este o cutie, bună pentru podele, ziduri și trepte. Cylinder este bun pentru turnuri și stâlpi. Wedge seamănă cu o felie de tort și face rampe. Corner Wedge este un colț de felie, bun pentru acoperișuri. Sphere este o minge, bună pentru ornamente. Pui câte una pe scenă, le ancorezi și le ștergi, în afară de Cylinder.
 
-Al doilea pas. Forme. Part-ul obișnuit este un bloc. Cu click dreapta poți alege Change to și forma Wedge, adică o pană, bună pentru rampe, sau cilindru ori sferă. Azi bazează-te mai ales pe bloc.
+Al doilea pas. Orientation. Un Cylinder nou apare de obicei în picioare, iar în Properties, la Orientation, vezi zero, zero, nouăzeci. Lungimea lui este pe axa X, rotită cu nouăzeci de grade în jurul axei Z. Cu zero, zero, zero cilindrul stă culcat. Încerci pe rând: zero, zero, zero, apoi zero, zero, nouăzeci, și apeși Enter de fiecare dată. Size rămâne cum era, iar primul număr este lungimea, adică înălțimea turnului după rotire.
 
-Al treilea pas. Trepte. Faci prima treaptă mai lată și subțire. O lipești de locul de start. A doua treaptă e puțin mai sus și puțin mai în față. Verifici din lateral cu camera de constructor, ținând click dreapta pe lume și mișcând mouse-ul.
+Al treilea pas. Proiectul unu, curtea, turnurile și zidurile. Etapa trei stă la o sută cincizeci de stud-uri de etapa doi, pe direcția albastră. Castelul are șaizeci pe șaizeci de stud-uri. Faci o curte, patru turnuri din Cylinder, în picioare, și cinci ziduri: nord, vest, est și două bucăți de zid sud. Între cele două bucăți de zid sud rămâne un gol de opt stud-uri: poarta. Zidul de nord este mai gros, ca să poți merge pe el. Valorile exacte sunt în tabelul din lecție. Faci prima piesă din fiecare formă, o ancorezi și o numești, iar pe restul le dublezi cu Control D. Apoi muți SpawnLocation în fața porții și apeși Play: intri pe poartă și te plimbi prin curte.
 
-Al patrulea pas. Rotate pentru pantă. Rotești un Part până seamănă cu o rampă.
+Al patrulea pas. Proiectul doi, scara, rampa și steagul. Obby-ul castelului: intri pe poartă, urci scara de cinci trepte, mergi pe pasarela de pe zidul de nord, cobori pe rampă și ajungi la steag. Fiecare treaptă este mai înaltă cu doi stud-uri decât cea dinainte, iar ultima se lipește de zid, la același nivel cu pasarela. Rampa este un Wedge: partea înaltă se lipește de zidul de nord, iar panta coboară spre poartă. La Orientation scrii zero, o sută optzeci, zero: așa partea înaltă ajunge spre Z mare, lângă zid. Dacă panta iese totuși invers, scrii zero, zero, zero. Steagul este un Cylinder subțire, în picioare, cu o Sphere deasupra. Ancorezi totul, apeși Play și parcurgi traseul. Apoi selectezi toate cele optsprezece piese, apeși Control G și numești grupul Etapa trei, linie jos, Castel. Salvezi.
 
-Greșeli frecvente. Totul cade la Play: lipsește Anchor. Ai scalat pe axa greșită: apeși Undo. Treptele sunt prea departe: golul trebuie să fie de cel mult cinci unități, ca să poți sări. Ai rotit cu nouăzeci de grade din greșeală: rotești înapoi.
+Greșeli frecvente. Cylinder-ul este culcat: Orientation zero, zero, nouăzeci. Turnul este prea lat sau prea scund: la Cylinder, primul număr din Size este lungimea. Piesele cad la Play: lipsește Anchor. Rampa urcă invers: schimbi Orientation între zero, o sută optzeci, zero și zero, zero, zero. Nu poți urca pe pasarelă: ultima treaptă trebuie să fie la același nivel cu zidul. Treci prin ziduri: o piesă nu este ancorată sau mărimea este greșită. Nume Part sau cu spațiu: redenumești ca la lecția doi.
 
-Provocare Pro, opțională. Construiești o scară în spirală, cu cel puțin șase trepte, fiecare ușor rotită. Faci un copac sau un turn din trei forme diferite. Încerci Union, ca să lipești două Part-uri într-unul singur, și setezi dimensiuni exacte din Properties.
+Proiectul de azi. Etapa trei, linie jos, Castel. Minim înseamnă curte, patru turnuri în picioare și cinci ziduri, ancorate, cu nume, și un tur prin poartă. Complet înseamnă minim, plus scara de cinci trepte, rampa, steagul, grupul Etapa trei, linie jos, Castel, și un parcurs de la poartă la steag.
 
-Recapitulare. Move arată unde. Scale arată cât de mare. Rotate arată ce unghi. Succes cu scara ta.
+Provocare, trei stele. Cupolele simetrice. Pui câte o cupolă, din Sphere, pe fiecare dintre cele patru turnuri, ancorată și numită. Cupolele sunt simetrice: centrul castelului este la o sută cincizeci și o sută cincizeci, iar fiecare cupolă este la douăzeci și cinci de stud-uri pe X și pe Z față de centru. Verifici în Position. Pui câte un Corner Wedge pe fiecare capăt al pasarelei, ca ornament. Treci castelul de trei ori la rând, de la poartă la steag, fără să cazi.
+
+Recapitulare. Block, Cylinder, Wedge, Corner Wedge și Sphere sunt cele cinci forme. Orientation rotește cu cifre, iar un Cylinder în picioare are zero, zero, nouăzeci. La Cylinder, primul număr din Size este lungimea. Wedge face rampe. Control D dublează, Control G grupează.
+
+Ce urmează. În lecția patru folosești Material și Color și construiești Etapa patru: o parcare cu rampe, marcaje și platforme.
+
+Succes cu castelul tău.

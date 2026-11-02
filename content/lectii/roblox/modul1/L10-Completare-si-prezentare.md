@@ -1,21 +1,17 @@
-# Lecția 10 — Completare + prezentare (Place Builder)
+# LECȚIA 10 — Lumea ta
+### Legăm etapele, finisăm și prezentăm
 **Modulul 1 · Place Builder**  
 **Code Maker Club · Roblox Studio**
 
-> Azi **termini** „Lumea Obby” (completare pe L9), o **arăți** clasei și primești insigna **Place Builder**.  
-> Place: `Prenume_Nume_M1` *(opțional: copie `Prenume_Nume_M1_L10` ca să nu strici versiunea veche)*  
-> Exemple: `Ana_Pop_M1` · `Ana_Pop_M1_L10`
+> Azi legi cele **9 etape** cu **pasarele**, faci **Poarta Parcului** și **Podiumul**, colorezi zonele, repari trei probleme după testul unui coleg și îți **prezinți lumea**. Pentru toate astea primești insigna **Place Builder**.  
+> Place: `Prenume_Nume_M1` (același, cu toate cele 9 etape)
 
 ---
 
-## Obiectiv
-La finalul orei ai îmbunătățit Obby-ul, l-ai prezentat, și ai închis Modulul 1.  
-**Minimum:** **1** îmbunătățire din A–F + Place salvat + prezentare → **e suficient pentru insignă**.  
-**Ținta orei (Complet):** **2** îmbunătățiri din A–F + prezentare + salvare.
+## Ce facem azi
+La finalul orei ai **un singur Obby**, de la **Start** (Etapa 1) la **Podium** (după Etapa 9): 9 etape legate prin **8 pasarele**, cu o **Poartă a Parcului** și un **Podium**. Fiecare zonă are **culoarea ei**. Un coleg o joacă, tu **repari trei probleme**, apoi o **prezinți** în 60 de secunde.
 
-## De ce contează
-Proiectele bune se **refac** o dată, apoi se arată.  
-Insigna **Place Builder** = știi Studio + construcție; Modulul 2 adaugă **scripturi** pe același Obby.
+**Notă:** azi tot fără cod. **Nu ștergi nimic**: același Place se deschide și în Modulul 2.
 
 ---
 
@@ -23,153 +19,264 @@ Insigna **Place Builder** = știi Studio + construcție; Modulul 2 adaugă **scr
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Obiectiv + **Minim vs Complet** + reguli prezentare |
-| 10–25 | Lista A–F + checkpoint-uri (**Încearcă tu**) |
-| 25–55 | **Completare** pe Obby (lucru individual) |
-| 55–75 | Prezentări (~1–2 min × max. **10** elevi) |
-| 75–120 | Quiz recap + **insignă** + ce urmează în M2 |
+| 0–10 | Recap L9 · deschidem Place-ul `Prenume_Nume_M1` |
+| 10–25 | Harta lumii · cum calculezi o pasarela (**Încearcă tu**) |
+| 25–55 | **Pasarelele** · 8 legături, 12 piese |
+| 55–75 | **Poarta Parcului** și **Podiumul** |
+| 75–90 | Culoarea zonelor · Start înapoi la Etapa 1 |
+| 90–110 | Testul unui coleg · 3 reparații |
+| 110–120 | Prezentarea de 60 de secunde · recap · insigna |
 
-La min **55** încep prezentările **oricum**. Cu **1** îmbunătățire ești ok pentru insignă.
+Dacă ai rămas în urmă, ajungi **oricum** la prezentare în ultimele 10 minute: cu **Minim** poți primi insigna.
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce folosim | Ce face | Exemplu |
+|------------|---------|---------|
+| **Centrul unei piese** | Media capetelor: `(A + B) / 2` | `(45 + 120) / 2 = 82.5` |
+| **Lungimea unei piese** | Diferența dintre capete: `B − A` | `120 − 45 = 75` |
+| **Pasarela** | Un Block lung, de `6` lățime și `1` grosime, la `Y = 0.5` | `75, 1, 6` |
+| **Shift + click** în **Explorer** | Selectezi o serie de piese pentru **Ctrl+G** | Cele 12 piese ale pasarelelor |
+| **Playtest cu coleg** | Altcineva joacă; tu doar privești | Notezi 3 probleme |
 
 ---
 
 ## Pas cu pas
 
-### 1) Idei de upgrade (alege din A–F)
-Nu refaci de la zero. Deschizi Obby-ul din L9 și **adaugi**.
+### 1) Harta lumii și calculul unei pasarele
+Cele 9 etape stau pe o **grilă de 3 × 3**, la **150 de stud-uri** una de alta. Ordinea de joc e **1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9**:
 
-| Literă | Upgrade |
-|--------|---------|
-| A | **+3** platforme pe traseu (tot testate) |
-| B | Al **2-lea** checkpoint vizual |
-| C | **Rampă** sau salt lateral nou |
-| D | Temă vizuală mai puternică (culori + ≥2 materiale) |
-| E | Finish pe **podium** / platformă specială |
-| F | Zone „odihnă” (platformă lată) la mijloc |
+```
+ 5 ←── 4 ←── 3
+ │           ↑
+ ↓           │
+ 6     1 ──→ 2
+ │
+ ↓
+ 7 ──→ 8 ──→ 9
+```
 
-*(**Minim** = **1** literă testată în Play. **Complet** = **2**. Nu începe a doua până prima nu e jucabilă.)*
+| Etapa | Centru (X, Z) | Nume |
+|-------|---------------|------|
+| 1 | `0, 0` | `Etapa1_Pod` |
+| 2 | `150, 0` | `Etapa2_Casa` |
+| 3 | `150, 150` | `Etapa3_Castel` |
+| 4 | `0, 150` | `Etapa4_Parcare` |
+| 5 | `-150, 150` | `Etapa5_Padure` |
+| 6 | `-150, 0` | `Etapa6_Labirint` |
+| 7 | `-150, -150` | `Etapa7_ZgarieNori` |
+| 8 | `0, -150` | `Etapa8_Joaca` |
+| 9 | `150, -150` | `Etapa9_NumeTema` |
 
-**Încearcă tu — alegi ce adaugi (1–2 min)**  
-- [ ] Ai ales **1** literă pentru Minim (ex. A)  
-- [ ] Ai ales o **a 2-a** țintă pentru Complet (ex. B)  
-- [ ] Știi: la min 55 prezinți **oricum** — cu 1 e suficient pentru insignă  
+O **pasarelă** e o placă lungă care leagă ieșirea unei etape de intrarea următoarei. O faci cu **două numere**: **Position** (centrul) și **Size** (lungimea).
 
-### 2) Prima îmbunătățire + Playtest
-1. Salvezi Place-ul (copie opțională `…_L10`)  
-2. Lipesti **1** upgrade  
-3. **Play** de două ori — traseul încă se termină  
-4. Stop · salvezi  
+**Exemplu:** pasarela merge pe `X`, de la `X = 45` la `X = 120`, la `Z = 0`.
+- Lungimea: `120 − 45 = 75`  
+- Centrul: `(45 + 120) / 2 = 82.5`  
+- Deci **Size** `75, 1, 6` și **Position** `82.5, 0.5, 0`  
 
-**Încearcă tu — 1 upgrade gata (~min 40)**  
-*(Nu începe a doua până aici.)*
+**Încearcă tu — calculul (4 min)**  
+- [ ] O pasarelă pe `X`, de la `X = 40` la `X = 110`: **Size** `70, 1, 6`, **Position** `75, 0.5, …`  
+- [ ] O pasarelă pe `Z`, de la `Z = 30` la `Z = 120`: lungime `90`, centru `75`  
+- [ ] Verifici cu colegul de lângă tine, apoi ștergi piesele de probă  
 
-- [ ] **1** din A–F e pe hartă și trece testul Play  
-- [ ] Spawn → Finish încă merge  
-- [ ] Salvat: `Prenume_Nume_M1` (sau copia L10)  
-- [ ] Abia acum, dacă mai e timp: a **2-a** îmbunătățire  
+### 2) Pasarelele
+Pasarelele stau la **`Y = 0.5`** (vârful la `Y = 1`, la fel ca podelele etapelor). Toate sunt **ancorate**. Fiecare pasarelă primește **alt Material și altă culoare**, ca să le recunoști.
 
-### 3) Reguli de prezentare (1–2 min)
-1. „Obby-ul meu se numește / tema e…”  
-2. „Începi aici, termini aici…”  
-3. „Azi am adăugat…” (**un** lucru — sau două, dacă ai Complet)  
-4. **Play** pe proiector / pe PC — colegul sau tu demonstrezi un tur scurt  
-5. Clasa: aplauze + 1 compliment · tu: „Mulțumesc”
+**Pasarela 1 (Etapa 1 → Etapa 2).** Capătul ei din stânga e capătul rampei tale de ieșire din Etapa 1. Îl găsești așa:
+1. În **Explorer**, deschizi grupul `Etapa1_Pod` și selectezi **ultima rampă** (cea de coborâre)  
+2. Citești **Position X**: capătul rampei e la `X1 = Position X + 8` (rampa are 16 lungime)  
+3. Pasarela merge de la `X1` până la `X = 120` (ușa casei), la `Z = 0`: **Size** `(120 − X1), 1, 6`, **Position** `((X1 + 120) / 2), 0.5, 0`  
 
-**Încearcă tu — proba (2 min, cu un coleg)**  
-- [ ] Poți spune cele 3 fraze  
-- [ ] Știi ce buton apeși (Play) fără să cauți  
+**Pasarelele 2–8** sunt date:
 
-### 4) Recap Modul 1 (pe scurt)
+| Pasarela | Legătura | Piesa | Size | Position |
+|----------|----------|-------|------|----------|
+| 1 | 1 → 2 | `Pas1` | calculată | calculată |
+| 2 | 2 → 3 | `Pas2a` | `8, 1, 6` | `184, 0.5, 0` |
+| 2 | 2 → 3 | `Pas2b` | `6, 1, 106` | `185, 0.5, 50` |
+| 2 | 2 → 3 | `Pas2c` | `38, 1, 6` | `169, 0.5, 100` |
+| 2 | 2 → 3 | `Pas2d` | `6, 1, 23` | `150, 0.5, 108.5` |
+| 3 | 3 → 4 | `Pas3a` | `115, 1, 6` | `92.5, 0.5, 100` |
+| 3 | 3 → 4 | `Pas3b` | `6, 1, 23` | `38, 0.5, 108.5` |
+| 4 | 4 → 5 | `Pas4` | `70, 1, 6` | `-75, 0.5, 150` |
+| 5 | 5 → 6 | `Pas5` | `6, 1, 90` | `-174, 0.5, 75` |
+| 6 | 6 → 7 | `Pas6` | `6, 1, 90` | `-126, 0.5, -75` |
+| 7 | 7 → 8 | `Pas7` | `80, 1, 6` | `-80, 0.5, -150` |
+| 8 | 8 → 9 | `Pas8` | `70, 1, 6` | `75, 0.5, -150` |
 
-| Idee | Lecții |
-|------|--------|
-| Studio, Part, Play | L1 |
-| Explorer / Properties | L2 |
-| Move / Scale / Rotate | L3 |
-| Anchor, Color, Material | L4 |
-| Cameră + playtest | L5 |
-| Spawn + Finish | L6 |
-| Traseu platforme | L7 |
-| Checkpoint vizual | L8 |
-| Mini-proiect Obby | L9 |
+**Cum faci:**
+1. Faci `Pas1`, o ancorezi; apoi **Ctrl+D** pentru fiecare dintre celelalte, schimbând **Name**, **Size**, **Position**  
+2. Dai fiecărei pasarele alt **Material** (de exemplu **Wood**, **Concrete**, **Metal**, **Brick**, **Granite**, **Slate**, **Sand**, **Pebble**) și altă **culoare**  
+3. După fiecare 3 pasarele: **Play** și mergi pe ele. Capetele trebuie să se **atingă** de etape  
+4. Selectezi toate cele 12 piese cu **Shift + click** în **Explorer** și **Ctrl+G**, redenumești grupul **`Pasarele`**  
 
-### 5) Ce urmează (Modulul 2) — 2–3 minute
-M1 = **construiești** lumea.  
-M2 = **scripturi** pe aceeași lume (`Srv_` / `Cli_`, Touched, ușă / monedă).
+Pasarela **2** are **patru** piese, pentru că ocolește casa, iar pasarela **3** are **două**, pentru că vine din poarta castelului până la parcare. La capete, o pasarelă se **lipește** de ușă sau de marginea etapei.
 
-### 6) Insigna
-1. **Minim** (1 upgrade + prezentare + salvat) → **insignă Place Builder**  
-2. Complet = 2 upgrade-uri: ținta orei, nu pragul pentru insignă  
+**Încearcă tu — pasarelele (25–30 min)**  
+- [ ] 12 piese, toate **ancorate**, cu nume din tabel  
+- [ ] Fiecare pasarelă are alt material și altă culoare  
+- [ ] Mergi pe pasarela 1 de la Etapa 1 la ușa casei  
+- [ ] Grup `Pasarele` · salvat  
+
+### 3) Poarta Parcului și Podiumul
+**Poarta Parcului** stă pe **pasarela 1**, la `X = 100`, și e **simetrică** față de `Z = 0`. Are **4 forme**: **Cylinder** (coloane), **Block** (grindă), **Sphere** (bile), **Wedge** (aripi).
+
+| Nume | Formă | Size | Position | Orientation |
+|------|-------|------|----------|-------------|
+| `Coloana1` | Cylinder | `14, 3, 3` | `100, 8, -6` | `0, 0, 90` |
+| `Coloana2` | Cylinder | `14, 3, 3` | `100, 8, 6` | `0, 0, 90` |
+| `Grinda` | Block | `3, 2, 20` | `100, 16, 0` | — |
+| `Bila1` | Sphere | `4, 4, 4` | `100, 19, -8` | — |
+| `Bila2` | Sphere | `4, 4, 4` | `100, 19, 8` | — |
+| `Aripa1` | Wedge | `3, 4, 6` | `100, 19, -4` | `0, 180, 0` |
+| `Aripa2` | Wedge | `3, 4, 6` | `100, 19, 4` | `0, 0, 0` |
+
+Cele două **aripi** trebuie să se înalțe spre **mijloc** (spre `Z = 0`). Dacă una se înalță în direcția greșită, schimbi **Orientation** între `0, 0, 0` și `0, 180, 0`.
+
+**Podiumul** stă la capătul etapei 9, la est de ea:
+
+| Nume | Formă | Size | Position | Material | Culoare |
+|------|-------|------|----------|----------|---------|
+| `Podium2` | Block | `8, 4, 8` | `197, 3, -150` | Metal | gri deschis |
+| `Podium1` | Block | `8, 6, 8` | `205, 4, -150` | Neon | galben |
+| `Podium3` | Block | `8, 2, 8` | `213, 2, -150` | Metal | maro |
+| `FinishFinal` | Block | `4, 0.2, 4` | `205, 7.1, -150` | Neon | galben |
+
+**Cum faci:**
+1. Poarta: 7 piese, ancorate, **Ctrl+G**, numele **`PoartaParcului`**  
+2. Podiumul: 4 piese, ancorate, **Ctrl+G**, numele **`Podium`**  
+3. **Play**: treci prin poartă, ajungi la Etapa 2 și la Podium  
+
+**Încearcă tu — poarta și podiumul (15–20 min)**  
+- [ ] `PoartaParcului` e **simetrică** și are 4 forme  
+- [ ] `Podium` are 3 trepte și un `FinishFinal`  
+- [ ] Salvezi  
+
+### 4) Culoarea zonelor și Start
+Fiecare etapă primește o **culoare de zonă**, diferită de ale vecinelor. Colorezi **cel puțin 3 piese mari** din etapă (podea, ziduri, turnuri) cu culoarea ei. Culoarea aleasă înlocuiește doar piesele mari; marcajele de Start, Finish și punctele de odihnă rămân ca până acum.
+
+| Etapa | Culoare de zonă |
+|-------|-----------------|
+| 1 | albastru deschis |
+| 2 | galben pal |
+| 3 | mov |
+| 4 | portocaliu |
+| 5 | verde |
+| 6 | roșu |
+| 7 | gri |
+| 8 | turcoaz |
+| 9 | roz |
+
+Apoi muți **SpawnLocation** (**Size** `8, 1, 8`, verde) lângă **turnul de start al Etapei 1**, pe sol, la câțiva stud-uri în stânga turnului: de acolo începe toată lumea.
+
+**Încearcă tu — culori și Start (10–15 min)**  
+- [ ] Fiecare etapă are 3 piese mari cu culoarea ei  
+- [ ] **SpawnLocation** e la Etapa 1  
+- [ ] **Play**: apari la Etapa 1 și ajungi pe pasarele la Etapa 2  
+
+### 5) Testul unui coleg
+1. Colegul stă la calculatorul tău, **fără să îi spui nimic**  
+2. Apeși **Play**: el joacă cât poate în 8 minute  
+3. Tu **notezi 3 probleme**: unde a căzut, unde nu a știut încotro să meargă, ce nu s-a înțeles  
+4. **Stop**, repari cele 3 probleme (cu **Position**, **Size**, **Anchor**, **Color**)  
+5. **Play** din nou: problemele au dispărut?  
+
+Dacă lucrezi singur, joci tu în 8 minute, fără să te uiți la editor, și notezi 3 probleme.
+
+**Încearcă tu — testul (15–20 min)**  
+- [ ] Ai notat 3 probleme  
+- [ ] Le-ai reparat  
+- [ ] Al doilea test e mai curat  
+- [ ] Salvat  
+
+### 6) Prezentarea de 60 de secunde
+Spui, în ordine:
+1. „Lumea mea are **9 etape** și se numește…”  
+2. „Etapa mea preferată e … pentru că …”  
+3. „O problemă pe care am reparat-o după testul unui coleg e …”  
+4. „Am învățat … (o unealtă din Studio).”  
+
+Apoi apeși **Play** și arăți **un tur scurt**: Start, Poarta Parcului, o pasarelă, o etapă la alegere, Podiumul.
+
+**Încearcă tu — repetiția (3 min)**  
+- [ ] Spui cele 4 fraze în sub 60 de secunde  
+- [ ] Știi cum pornești **Play** și cum te duci la Etapa 9  
 
 ---
 
 ## Greșeli frecvente
-1. **Refaci tot Obby-ul** — nu: **adaugi** pe L9.  
-2. **Upgrade care strică traseul** — Play după fiecare schimbare.  
-3. **Două upgrade-uri netestate** — la min 55 e stricat; **1 → testează → 2**.  
-4. **„N-am 2, deci n-am reușit”** — **1** + prezentare = Minim = **insignă**.  
-5. **Prezentare fără Play** — arată lumea în mișcare, nu doar din editare.  
+1. **Pasarelele nu se ating de etape** — capetele sunt greșite; recalculezi centrul și lungimea.  
+2. **Pasarela 1 nu se leagă de rampă** — verifici `X1 = Position X + 8` și că rampa e pe `Z = 0`, sau aproape.  
+3. **Poarta nu e simetrică** — verifici că valorile `Z` sunt `-6 / 6`, `-8 / 8`, `-4 / 4`.  
+4. **Una dintre aripi se înalță spre exterior** — schimbi **Orientation** între `0, 0, 0` și `0, 180, 0`.  
+5. **Apari la altă etapă** — **SpawnLocation** nu e la Etapa 1.  
+6. **Am șters ceva din etape** — **Ctrl+Z**, sau recitești lecția etapei.  
+7. **Nu am salvat** — **File → Save**, în `Prenume_Nume_M1`.  
 
 ---
 
-## De făcut azi — Completare + prezentare + insignă
-Salvat: `Prenume_Nume_M1` și/sau `Prenume_Nume_M1_L10`
+## De făcut azi — „Lumea ta”
+Salvat: `Prenume_Nume_M1`
 
 ### Minim vs Complet
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit” + insignă)** | **1** din A–F + Play ok + **prezentare** + salvare |
-| **Complet (ținta orei)** | Minim + a **2-a** din A–F |
+| **Minim** | **8 pasarele** (12 piese) ancorate, grupul `Pasarele`, **Poarta Parcului**, **SpawnLocation** la Etapa 1, un parcurs pe pasarele de la Etapa 1 la Etapa 9, un tur în Play, prezentare |
+| **Complet** | Minim + **Podium**, culoarea fiecărei zone, **3 reparații** după testul unui coleg, o prezentare de 60 de secunde |
 
-Dacă rămâi în urmă: **prezinți cu o îmbunătățire — e suficient pentru insignă.**
+Dacă rămâi în urmă: salvează la **Minim**.
 
-### Pasul 1 — Completare
-- [ ] Obby L9 deschis  
-- [ ] Minim: 1 literă testată  
-- [ ] Complet: încă 1 literă  
-- [ ] Salvat  
+### Pasul 1 — Harta și calculul
+- [ ] Ai calculat centrul și lungimea pentru două pasarele de probă  
 
-**→ Minim când:** 1 upgrade + gata de prezentat.
+### Pasul 2 — Pasarelele *(Minim)*
+- [ ] 12 piese, grup `Pasarele`  
+- [ ] Poarta Parcului  
+- [ ] Start la Etapa 1  
+- [ ] Parcurs în Play · salvat  
 
-### Pasul 2 — Prezentare
-- [ ] Ai prezentat (teme + ce ai adăugat + Play)  
-- [ ] Ai dat / primit un compliment  
+**→ Minim când:** ajungi pe pasarele de la Etapa 1 până la Etapa 9.
 
-### Pasul 3 — Închidere modul
-- [ ] Place salvat  
-- [ ] Quiz (ideal 5; minim 3)  
-- [ ] Insigna **Place Builder**  
+### Pasul 3 — Finisarea *(Complet)*
+- [ ] Podium · culorile zonelor  
+- [ ] 3 reparații după testul unui coleg  
+- [ ] Prezentare · salvat  
 
-**Gata Minim când:** 1 upgrade, prezentare, insignă.  
-**Gata Complet când:** 2 upgrade-uri + prezentare + salvare.
+**Gata Complet când:** lumea ta se joacă de la Start până la Podium, fără să te blochezi.
 
 ---
 
-## Bonus (dacă ai terminat Complet / după prezentare)
-- [ ] A 3-a îmbunătățire  
-- [ ] Schimb: un coleg joacă 2 min, notează 1 bug  
-- [ ] Pe foaie: **1 idee** de script pentru M2 (ex. „moneda dispare”)  
+## Bonus ★★★ — Provocare: A treia îmbunătățire
+*Doar dacă ai terminat Complet.*
 
-## Provocare Pro (opțional, după Complet)
-- [ ] **Post-mortem:** scrii 3 lucruri care au mers bine și 3 pe care le-ai face diferit  
-- [ ] **Ordine finală:** Explorer curat (foldere, nume clare, fără obiecte rătăcite)  
-- [ ] **Idei pentru Modulul 2:** scrii o listă cu 5 lucruri pe care ai vrea să le facă Obby-ul **singur** (de ex. „un mesaj când ajung la Finish")  
-- [ ] **Prezentare în 60 de secunde:** o repeți cu un cronometru  
+Alegi **una** dintre variante:
 
-## Recapitulare rapidă
-1. L10 = **completezi** L9, apoi **prezinți**  
-2. **Minim** = 1 upgrade + prezentare → **insignă**  
-3. M1 = Studio + lume Obby · M2 = Luau pe o copie `_M2` a aceluiași Obby  
-4. Nume: **`Prenume_Nume_M1`**  
+- [ ] **Felinare:** 4 felinare **simetrice** (Cylinder + Sphere din **Neon**) pe marginile pasarelei 4, câte 2 pe fiecare parte  
+- [ ] **Parapet:** balustradă (stâlpi + bară) pe o pasarelă, ca la bonusul din L1  
+- [ ] **Drum scurt:** o scurtătură între două etape, cu o pasarelă nouă și un punct de odihnă  
 
-**Quiz scurt (cu profesorul):**  
-1. Ce face **Anchor**?  
-2. Unde vezi lista obiectelor?  
-3. Ce e **SpawnLocation**?  
-4. Checkpoint-ul din M1 salvează progresul?  
-5. Cum se numește Place-ul tău?
+Apoi **parcurgi toată lumea** de la Start la Podium, fără să cazi mai mult de **3 ori**, și o prezinți colegilor într-un **tur de 60 de secunde**.
+
+## Recapitulare pe scurt
+1. **Pasarela**: lungimea = diferența, centrul = media capetelor  
+2. 9 etape, 8 pasarele, o **Poartă** și un **Podium**  
+3. **Ctrl+D**, **Ctrl+G**, **Orientation**, **Material**, **Color**: uneltele din L1–L9  
+4. **Playtest cu coleg**: notezi 3 probleme și le repari  
+5. **Place Builder** = știi Studio și construiești o lume jucabilă  
+
+## Quiz scurt
+- Cum calculezi **Position** și **Size** pentru o pasarelă între `X = 50` și `X = 90`?  
+- Ce faci după ce un coleg îți joacă lumea?  
+- Care sunt cele 3 unelte din Studio care ți-au fost cele mai utile în Modulul 1?  
 
 ## Temă
-Opțional: arată familiei Obby-ul (2 min Play).  
-Explorează pe scurt ideea: „ce-ar fi dacă ating o monedă?” — ușa spre Modulul 2.
+Opțional, acasă (dacă ai Studio): alege **3 locuri** din lumea ta unde ai vrea să se întâmple ceva (un scor, o monedă, o ușă care se deschide) și notează-le. Le folosim în **Modulul 2**.
+
+---
+
+## Ce urmează — Modulul 2
+În **Modulul 2** adaugi **scripturi** pe aceeași lume: Obby-ul tău începe să **răspundă** la ce face jucătorul.

@@ -1,25 +1,17 @@
-# Lecția 1 — Studio + primul Place
+# LECȚIA 1 — Primul meu Place
+### Roblox Studio, Part, Anchor și Play
 **Modulul 1 · Place Builder**  
 **Code Maker Club · Roblox Studio**
 
-> Azi deschizi **Roblox Studio**, înveți **5 comenzi esențiale** pe ecran, și lași ceva pe lume pe care îl poți **testa cu Play**.  
-> Place (fișierul tău): `Prenume_Nume_M1` (ex. `Ana_Pop_M1`)  
-> *Obby-ul tău crește prin tot cursul Roblox (M1→M2→M3→M4). Tot Modulul 1 lucrezi în `…_M1`; când începe un modul nou, salvezi o **copie** (`…_M2`, apoi `…_M3`, `…_M4`), ca versiunea veche să rămână întreagă.*  
-> *Dacă îl pierzi sau îl strici vreodată, profesorul are un **Place de rezervă** pregătit din care poți continua.*
+> Azi deschizi **Roblox Studio**, înveți cele **5 comenzi** de bază și construiești **Etapa 1** din Obby-ul tău: un pod pe care îl treci în **Play**.  
+> Proiect: **„Etapa1_Pod”** · Place: `Prenume_Nume_M1` (ex. `Ana_Pop_M1`)
 
 ---
 
-## Obiectiv
-La finalul orei ai un **Place salvat** cu numele corect, știi unde e **lumea 3D**, cum pui un **Part**, cum îl **ancorezi**, și cum pornești / oprești testul cu **Play** / **Stop**.  
-**Minimum:** Place salvat + **≥2 Parts** ancorate pe Baseplate + un tur scurt în Play.  
-**Ținta orei (Complet):** Minim + o **cale scurtă** (Parts în șir) pe care o poți „trece” pe jos în Play + o culoare diferită pe cel puțin un Part.  
-**Place în acest modul:** lucrezi mereu în `Prenume_Nume_M1`. La începutul Modulului 2 faci o copie `_M2`; dacă îți pierzi Place-ul, continui din cel de rezervă al profesorului.
+## Ce facem azi
+La finalul orei ai un **Place salvat** și **Etapa 1** a Obby-ului tău: un turn de start, un pod din 6 plăci și un turn de ieșire. Vezi cu ochii tăi ce face **Anchor**: același pod **cade** când nu e ancorat și **ține** când e ancorat. Obby-ul tău crește în tot modulul: în fiecare lecție adaugi o **etapă nouă**, iar în ultima lecție le legi pe toate într-o singură lume.
 
-## De ce contează
-Roblox Studio e „șantierul” jocului: aici **construiești** lumea.  
-Fără Place salvat și fără Play, restul orelor (traseu Obby, scripturi mai târziu) nu au unde să trăiască.
-
-**Azi nu scriem cod.** Script, Terrain editor, Toolbox plin de asset-uri = există pe ecran, le lăsăm pentru mai târziu.
+**Notă:** azi nu scriem cod. Lucrezi doar cu ce vezi pe ecran.
 
 ---
 
@@ -27,156 +19,242 @@ Fără Place salvat și fără Play, restul orelor (traseu Obby, scripturi mai t
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Obiectiv + tur **scurt** (doar 5 zone) |
-| 10–35 | Pas cu pas: checkpoint-uri (**Încearcă tu**) |
-| 35–100 | Proiectul „Primul meu Place” (vezi **Minim vs Complet**) |
-| 100–120 | Recap, bonus, arăți ce ai gata |
+| 0–15 | Deschidem Studio · Place nou · salvăm cu numele tău |
+| 15–45 | Turul celor 5 comenzi · mutăm, mărim, rotim (**Încearcă tu**) |
+| 45–75 | **Proiectul 1** · Turnul de start (Part, Move, Scale, Anchor) |
+| 75–105 | **Proiectul 2** · Podul care cade și podul care ține |
+| 105–120 | Recap, quiz, salvare · **Bonus ★★★** pentru cine termină devreme |
 
-**Azi pe ecran folosim doar:** Viewport · Play / Stop · Part · Move / Scale / Rotate · Anchor.  
-*(Terrain, Toolbox, Script, UI, Plugins — nu le deschidem azi.)*
+**Pe ecran folosim azi:** Viewport · Play / Stop · Part · Move / Scale / Rotate · Anchor.
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce folosim | Ce face | Exemplu |
+|------------|---------|---------|
+| **Part** (în Home) | Pune o formă în lume: Block, Sphere, Wedge, Corner Wedge, Cylinder | Home → **Part** → **Block** |
+| **Move** / **Scale** / **Rotate** | Mută, mărește, rotește Part-ul selectat | Selectezi cubul → **Move** → tragi o săgeată |
+| **Anchor** | Part-ul stă pe loc și nu cade când apeși Play | Selectezi Part-ul → **Anchor** |
+| **Anchored parts** | Arată ce Parts sunt ancorate | Roata din colțul Viewport-ului → **Visualization Modes** → bifezi **Anchored parts** |
+| **Ctrl+D** (Mac: **Cmd+D**) | Dublează Part-ul selectat | Selectezi placa → Ctrl+D → o muți cu Move |
+| **Play** / **Stop** | Testezi ca jucător / te întorci la editare | Săgeata albastră sus · pătratul roșu |
 
 ---
 
 ## Pas cu pas
 
-### 1) Tur scurt — doar ce ai nevoie azi
-Pe ecran (ca în Studio deschis pe un Place nou / Baseplate):
+### 1) Turul celor 5 comenzi
+Când deschizi Studio pe un Place nou, vezi:
 
-| # | Ce | Unde / la ce servește |
-|---|-----|------------------------|
-| 1 | **Viewport** | Mijlocul ecranului — **lumea 3D** (podeaua în carouri = Baseplate) |
-| 2 | **Play / Stop** | Sus: săgeata albastră = testezi ca jucător; pătratul roșu = te întorci la editare |
-| 3 | **Part** | Tab **Home** → **Insert** → **Part** — pui un cub / formă în lume |
-| 4 | **Move / Scale / Rotate** | Tab **Home** → **Tools** — muți, mărești, rotești Part-ul selectat |
-| 5 | **Anchor** | Tab **Home** → **Edit** → **Anchor** — Part-ul **nu cade** când apeși Play |
+| # | Ce | Unde |
+|---|-----|------|
+| 1 | **Viewport** | Mijlocul ecranului: **lumea 3D**. Podeaua în carouri e **Baseplate**; pătratul alb cu stea neagră e **SpawnLocation**, locul unde apari când joci |
+| 2 | **Play** / **Stop** | Sus, în stânga: **Play** (săgeata albastră) pornește testul, **Stop** (pătratul roșu) te întoarce la editare. Lângă ele e **Pause** și meniul **Test** |
+| 3 | **Part** | Tab-ul **Home**, butonul **Part**. Săgeata de lângă el arată formele: Block, Sphere, Wedge, Corner Wedge, Cylinder |
+| 4 | **Move** / **Scale** / **Rotate** | Tab-ul **Home**, în stânga: **Move**, **Scale**, **Rotate** |
+| 5 | **Anchor** | Tab-ul **Home**, în dreapta: butonul **Anchor** |
 
-**Astăzi nu deschidem pe îndelete:** Terrain Editor, Toolbox (Creator Store), tab-urile Avatar / UI / Script / Plugins.  
-**Explorer + Properties:** știi că există (liste cu obiecte / setări) — le aprofundăm la **L2**.
+**Atenție:** butonul **Run** din dreapta jos **nu** este Play. E o bară de comenzi, pe care azi nu o folosim.
 
-**Încearcă tu — ecran (2–3 min)**  
-- [ ] Arăți cu degetul / mouse-ul: Viewport · Play · Stop · Part · Anchor  
-- [ ] Spui cu vocea: „Azi **nu** folosim Script / Toolbox”  
+**Panourile din margini:** în stânga vezi **Terrain Editor** și **Toolbox**, în dreapta **Explorer**. Azi nu le folosim. Le poți închide cu **X** ca să ai loc, iar Terrain și Toolbox revin din Home. Explorer ne trebuie la **lecția 2**.
 
-### 2) Place + nume unic
-1. Deschizi **Roblox Studio** (cont Roblox pe calculatorul clasei / al tău)  
-2. Place nou tip **Baseplate** (podea goală + Spawn) — sau Place-ul dat de profesor  
-3. **File → Save to Roblox** / Save (după setup-ul clasei)  
-4. Nume Place: **`Prenume_Nume_M1`**  
-   - Ex. `Ana_Pop_M1`, `Ana_Ionescu_M1`  
-   - **Nu** doar `Ana_M1` sau `Place3` — în clasă se calcă  
-   - **Nu** `…_M2` / `…_M3` încă — în Modulul 1 rămâne **`_M1`**; copiile `_M2`, `_M3`, `_M4` le faci mai târziu, la începutul fiecărui modul
+**Încearcă tu — ecran (3 min)**  
+- [ ] Găsești pe ecran: Viewport · Play · Stop · Part · Anchor  
+- [ ] Spui cu voce tare ce face fiecare  
 
-*(Dacă tipul de salvare diferă pe Mac/Windows, profesorul arată o dată pe proiector.)*  
-*Plasă de siguranță:* dacă îți pierzi Place-ul, profesorul are un **Place de rezervă** din care poți continua (pregătit mai ales pentru M3+).
+### 2) Place nou + nume
+1. Pornești **Roblox Studio** și te conectezi cu contul tău  
+2. Alegi un Place nou de tip **Baseplate**  
+3. **File → Save** (salvezi pe contul tău Roblox sau pe calculator, cum îți propune Studio)  
+4. Numele: **`Prenume_Nume_M1`**, de exemplu `Ana_Pop_M1`  
+   - Pune **prenumele și numele**, nu doar `Ana_M1` și nu `Place1`  
+   - Rămâne **`_M1`** tot Modulul 1; la început de modul nou faci o **copie** (`_M2`, `_M3`)  
 
-**Încearcă tu — salvare (2–3 min)**  
+*Dacă îți strici sau îți pierzi Place-ul, refaci Etapa 1 din această lecție: durează puțin, pentru că acum știi pașii.*
+
+**Încearcă tu — salvare (2 min)**  
 - [ ] Place-ul se numește `Prenume_Nume_M1`  
-- [ ] Profesorul confirmă că numele e **unic** în grupă  
+- [ ] Îl găsești din nou în **File → Open**  
 
-### 3) Primul Part + Anchor + mutare
-1. Tab **Home** → **Part** (apare un cub pe scenă)  
-2. Selectezi cubul (click pe el în Viewport)  
-3. **Anchor** — verifici că e activ (Part ancorat = nu cade la Play)  
-4. **Move** — tragi Part-ul lângă Spawn (discul / pătratul cu simbolul de start)  
-5. Opțional: **Scale** — îl faci un pic mai lung, ca o treaptă  
+### 3) Mutăm, mărim, rotim
+Primul tău Part e un **Block**: **Home → Part → Block**. Apoi îl selectezi cu **Select** (săgeata din stânga barei) și un click pe el în Viewport. Cât timp e selectat, are un contur și **unelte** în jur.
 
-*De ce Anchor azi (chiar dacă L4 e despre materiale):* fără el, la Play multe Parts **cad prin podea** sau zboară — ai crede că „Studio e stricat”.
+| Unealta | Ce vezi pe Part | Ce faci |
+|---------|-----------------|---------|
+| **Move** | **Săgeți colorate** (roșu, verde, albastru), câte una pe fiecare direcție | Tragi o săgeată: Part-ul **alunecă** pe acea direcție |
+| **Scale** | **Mânere** (bulinuțe) pe fețele Part-ului | Tragi un mâner: Part-ul **devine mai mare sau mai mic** pe direcția lui |
+| **Rotate** | **Inele colorate** în jurul Part-ului | Tragi pe un inel: Part-ul se **învârte** în jurul acelei axe |
 
-**Încearcă tu — un Part stabil (3–4 min)**  
-- [ ] Ai **≥1** Part pe Baseplate  
-- [ ] E **Anchor**  
-- [ ] E lângă zona de start (Spawn), vizibil  
+**Culorile sunt aceleași la toate trei:** <span style="color:#D62828;font-weight:700">roșu</span> = stânga și dreapta · <span style="color:#2E9E3E;font-weight:700">verde</span> = sus și jos · <span style="color:#1F6FEB;font-weight:700">albastru</span> = față și spate. Dacă vrei ca Part-ul să urce, tragi de <span style="color:#2E9E3E;font-weight:700">verde</span>.
 
-### 4) Play = „steagul” de test
+**Snap:** în bara Home, lângă **Move**, câmpul **„1 studs”** face ca Part-ul să se mute și să crească din **1 în 1 stud**, nu „din ochi”. Un **stud** e unitatea de măsură din Roblox (pătrățelul din carourile Baseplate-ului). Lasă-l pe 1.
+
+**Încearcă tu — mutare, mărire, rotire (6–8 min)**  
+- [ ] **Move:** muți Block-ul **4 stud-uri** în față (numeri pătrățelele din Baseplate)  
+- [ ] **Scale:** îl faci **de două ori mai lung**, apoi **înapoi** cum era  
+- [ ] **Rotate:** îl rotești cu o jumătate de pas, apoi **Ctrl+Z** (pe Mac: **Cmd+Z**) îl aduce înapoi  
+- [ ] Faci un cub **8 × 8 × 8** din Block-ul de la început, numărând stud-urile  
+- [ ] Apeși **Play** o dată ca să vezi că nu ai stricat nimic, apoi **Stop**  
+
+### 4) Proiectul 1 — Turnul de start
+Schița etapei, văzută din lateral. Azi construiești **turnul de start** (stânga). Podul și turnul de ieșire vin la Proiectul 2.
+
+```
+       TURN START  plăci 1–6    TURN IEȘIRE
+       ┌──────┐   ▭ ▭ ▭ ▭ ▭ ▭   ┌──────┐
+      ╱│  8   │                 │  8   │╲
+     ╱ │înalt │                 │înalt │ ╲
+────╱──┴──────┴─────────────────┴──────┴──╲─────
+  rampă                                 rampă
+```
+
+**Rampă** = Wedge. **Plăcile** sunt 6, cu goluri de 2 stud-uri între ele. Tot desenul stă pe **Baseplate**.
+
+| Piesă | Formă | Mărime aproximativă (stud-uri) | Unde |
+|-------|-------|---------------------------------|------|
+| **Turn** | Block | 8 lățime · 8 înălțime · 8 adâncime | lângă SpawnLocation |
+| **Decor turn** | Cylinder | 4 lățime · 2 înălțime | pe vârful turnului |
+| **Rampă** | Wedge | 8 înălțime · 16 lungime | lipită de turn, urcă spre vârf |
+
+**Cum faci:**
+1. Home → **Part** → **Block** (sau folosești cubul 8 × 8 × 8 de la exercițiu)  
+2. **Scale**: îl faci 8 × 8 × 8, cu snap-ul pe **1 studs**  
+3. **Move**: îl pui lângă SpawnLocation  
+4. **Anchor**: apasă-l cu cubul selectat  
+5. Home → Part → **Cylinder**, îl mărești puțin, îl pui pe vârf, îl **ancorezi**  
+6. Home → Part → **Wedge**, îl **rotești** (**Rotate**) până urcă spre turn, îl **ancorezi**  
+7. Roata din colțul Viewport-ului → **Visualization Modes** → bifezi **Anchored parts**: cele trei piese trebuie să apară marcate. Bifa o poți lăsa
+
+**Încearcă tu — turnul (5–8 min)**  
+- [ ] Turn + Cylinder + Wedge, toate **ancorate**  
+- [ ] Rampa te duce în **Play** până sus, pe turn  
+
+### 5) Play = steagul de test
 1. Apeși **Play** (săgeata albastră)  
-2. Controale tipice: **WASD** (sau săgeți) + mouse ca să te uiți · **Space** = salt  
-3. Te plimbi pe Baseplate, te urci pe Part dacă poți  
-4. **Stop** (pătrat roșu) — te întorci la editare  
+2. **W, A, S, D** (sau săgețile) te mișcă, **mouse-ul** se uită, **bara de spațiu** sare  
+3. Urci rampa, ajungi pe turn  
+4. **Stop** (pătratul roșu) te întoarce la editare  
 
-*Play ≠ salvare.* După ce îți place cum arată, **salvezi din nou** Place-ul.
+*Play nu salvează.* După ce îți place cum arată, salvezi din nou cu **File → Save**.
 
-**Încearcă tu — Play / Stop (2–3 min)**  
-- [ ] Play → te miști pe lume  
-- [ ] Stop → ești iar în editare  
-- [ ] Parts-urile **nu** au dispărut / nu au căzut (dacă da → Anchor)  
+**Încearcă tu — Play / Stop (3 min)**  
+- [ ] Play, urci pe turn, Stop  
+- [ ] Salvezi  
+
+### 6) Proiectul 2 — Podul care cade
+Acum construiești **podul** și îl încerci **fără Anchor**, ca să vezi de ce contează.
+
+| Piesă | Formă | Mărime aproximativă (stud-uri) | Cum |
+|-------|-------|---------------------------------|-----|
+| **Placă** | Block | 4 lățime · 1 înălțime · 4 adâncime | 6 bucăți, la **înălțimea turnului**, cu **gol de 2 stud-uri** între ele |
+| **Turn ieșire** | Block + Cylinder + Wedge | ca turnul de start, în oglindă | la capătul podului |
+
+**Cum faci:**
+1. Home → Part → Block, îl faci 4 × 1 × 4 și îl pui lipit de turnul de start, **la înălțimea de sus a turnului**  
+2. Selectezi placa și o dublezi cu **Ctrl+D** (pe Mac: **Cmd+D**); duplicatul apare peste ea, îl muți cu **Move** cu 6 stud-uri mai departe (4 placă + 2 gol)  
+3. Repeți până ai **6 plăci**  
+4. **Turnul de ieșire**: la capătul podului, un Block 8 × 8 × 8, un Cylinder pe el și un Wedge care coboară (**Rotate** pe partea cealaltă)  
+5. Ancorezi **turnul de ieșire**, cilindrul și rampa de coborâre  
+6. Plăcile podului **nu** trebuie să fie ancorate acum. Cu **Anchored parts** bifat, plăcile **nu** trebuie să fie marcate. Dacă sunt marcate, le selectezi pe toate și apeși **Anchor** o dată, ca să se **dezancoreze**  
+7. Apeși **Play**. Ce se întâmplă cu podul?  
+
+**Încearcă tu — podul care cade (5 min)**  
+- [ ] La **Play** plăcile **cad** pe Baseplate  
+- [ ] Apeși **Stop** și podul revine la locul lui  
+
+### 7) Podul care ține
+1. Selectezi **toate cele 6 plăci** (ții **Shift** sau **Ctrl** și dai click pe fiecare, sau tragi un dreptunghi cu mouse-ul)  
+2. Apeși **Anchor**  
+3. **Anchored parts** arată acum toate plăcile marcate  
+4. **Play**: urci rampa, treci podul, cobori pe turnul de ieșire, **Stop**  
+5. Salvezi  
+
+**Încearcă tu — podul care ține (4 min)**  
+- [ ] Treci podul de la un capăt la celălalt, **fără să cazi**  
+- [ ] Poți spune în cuvintele tale ce face **Anchor**  
+
+### 8) Numele etapei
+1. Selectezi **toate** piesele etapei (turn, rampă, plăci, turn de ieșire)  
+2. **Group** (în Home) sau **Ctrl+G**  
+3. În **Explorer**, dai dublu click pe numele grupului și scrii **`Etapa1_Pod`**  
+4. Salvezi  
+
+*Etapa 2 o vei construi mai departe, la **150 de stud-uri** de aici, spre dreapta (pe direcția roșie), nu lipită de aceasta. Cu **Move** mutăm SpawnLocation lângă etapa pe care o testăm.*
 
 ---
 
 ## Greșeli frecvente
-1. **„La Play totul cade”** — lipsește **Anchor** pe Parts.  
-2. **Nu găsesc Place-ul** — nume greșit / nesalvat; verifică `Prenume_Nume_M1`.  
-3. **Rămân în Play și „nu mai pot edita”** — apeși **Stop**.  
-4. **Am deschis Toolbox / Terrain și m-am pierdut** — închizi panoul; azi doar Home + Viewport + Play.  
-5. **Am șters Baseplate-ul** — Undo cu **Ctrl+Z** (pe Mac: Cmd+Z) sau Place nou + resalvare cu același nume.  
+1. **La Play tot ce construiesc cade** — piesele nu sunt ancorate; selectează-le și apasă **Anchor**.  
+2. **Podul nu cade la Play** — plăcile sunt deja ancorate. Cu **Anchored parts** bifat, selectează-le și apasă **Anchor**, până dispar marcajele.  
+3. **Nu găsesc Place-ul** — nume greșit sau nesalvat; caută `Prenume_Nume_M1` în **File → Open**.  
+4. **Rămân în Play și nu mai pot edita** — apasă **Stop**, nu butonul **Run** de jos.  
+5. **Am șters Baseplate-ul** — **Ctrl+Z** (pe Mac: **Cmd+Z**) sau un Place nou și resalvare cu același nume.  
+6. **Nu pot sări peste goluri** — golurile sunt de 2 stud-uri, nu mai mari; cu **Move** apropie plăcile.  
 
 ---
 
-## De făcut azi — „Primul meu Place”
+## De făcut azi — „Etapa1_Pod”
 Salvat: `Prenume_Nume_M1`
 
 ### Minim vs Complet
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | Place cu numele corect + **≥2 Parts** ancorate + tur scurt în **Play** |
-| **Complet (ținta orei)** | Minim + Parts așezate ca o **cale scurtă** (le poți trece pe jos) + **≥1** Part cu **culoare** diferită (Home → Color) |
+| **Minim** | Place salvat + **Proiectul 1**: turn de start, Cylinder și rampă, toate ancorate + un tur în Play |
+| **Complet** | Minim + **Proiectul 2**: podul de 6 plăci (a căzut când nu era ancorat și ține când e ancorat) + turn de ieșire + etapa grupată ca `Etapa1_Pod` |
 
-*Culoarea o aprofundăm la **L4** — azi doar încerci butonul **Color**, ca decor.*
-
-Dacă rămâi în urmă: salvează la **Minim**.  
-Cei rapizi: Complet, apoi Bonus.
+Dacă rămâi în urmă: salvează la **Minim**.
 
 ### Pasul 1 — Place-ul tău
-- [ ] Studio deschis pe Baseplate (sau Place-ul clasei)  
+- [ ] Studio deschis pe Baseplate  
 - [ ] Salvat: `Prenume_Nume_M1`  
 
-### Pasul 2 — Construcție scurtă *(Minim)*
-*(Ca la „Încearcă tu — Part” + „Play”.)*
+### Pasul 2 — Turnul de start *(Minim)*
+- [ ] Block, Cylinder, Wedge  
+- [ ] Toate **ancorate** (bifate în **Anchored parts**)  
+- [ ] **Play**: urci pe turn · **Stop** · salvat  
 
-- [ ] **≥2** Parts pe scenă  
-- [ ] Toate cu **Anchor**  
-- [ ] Play → te plimbi · Stop → editezi  
-- [ ] Salvat din nou  
+**→ Minim când:** poți urca pe turn din Play, și Place-ul e salvat.
 
-**→ Minim când:** un coleg vede Place-ul tău în Play și înțelege că „ai pus ceva pe lume”.
+### Pasul 3 — Podul și etapa *(Complet)*
+- [ ] 6 plăci, goluri de 2 stud-uri  
+- [ ] La **Play** fără Anchor: au căzut  
+- [ ] La **Play** cu Anchor: ai trecut podul  
+- [ ] Turn de ieșire + rampă  
+- [ ] Grupat și denumit **`Etapa1_Pod`**  
 
-### Pasul 3 — Cale + culoare *(Complet)*
-- [ ] Parts în șir / trepte — o poți parcurge fără să cazi de pe hartă  
-- [ ] Cel puțin un Part are **Color** schimbat (se vede clar) — *preview L4*  
-- [ ] Play din nou → treci calea · Stop · salvezi  
-
-**Gata Complet când:** în Play, faci un tur scurt pe „calea” ta și te întorci la editare fără panică.
+**Gata Complet când:** treci de la turnul de start la cel de ieșire, fără să cazi, și Place-ul e salvat.
 
 ---
 
-## Bonus (dacă ai terminat Complet)
-- [ ] Un Part mai **înalt** (Scale pe Y) — „zid” sau „stâlp”  
-- [ ] Un Part **rotit** (Rotate) ca rampă mică  
-- [ ] Redenumești un Part în Explorer (click pe nume) — ex. `Treapta1` *(preview L2)*  
+## Bonus ★★★ — Provocare: Parapetul podului
+*Doar dacă ai terminat Complet.*
 
-## Provocare Pro (opțional, după Complet)
-*Pentru cei care știu deja ceva Studio sau termină repede. Nu e obligatorie.*
+Un pod adevărat are **balustradă**.
 
-- [ ] **Duplicare rapidă:** selectezi un Part și îl dublezi cu **Ctrl+D** (pe Mac: **Cmd+D**); apoi construiești o cale de **5 Parts** fără să mai inserezi nimic din meniu  
-- [ ] **Selecție multiplă:** ții **Shift** sau **Ctrl** și selectezi mai multe Parts; le muți odată  
-- [ ] **Aliniere exactă:** cauți în meniu setările de **snap** (grila de mutare) și așezi platformele la distanțe egale  
-- [ ] **Test rapid:** cauți în meniul **Test** variantele de pornire a testului și spui care e diferența dintre ele *(profesorul confirmă)*
+- [ ] Pe **fiecare margine** a podului, 6 stâlpi subțiri din **Cylinder** (12 în total), la **distanțe egale**, făcuți cu **Ctrl+D** și **Move** cu snap la 1 stud  
+- [ ] Toți stâlpii sunt **ancorați** (verifici cu **Anchored parts**)  
+- [ ] Treci podul în Play de **3 ori la rând**, fără să cazi, și apoi **Stop** și salvezi  
+- [ ] Stâlpii sunt în același grup `Etapa1_Pod`  
 
-## Recapitulare rapidă
-1. **Viewport** = lumea · **Play / Stop** = testezi / editezi  
-2. **Part** = pui obiecte · **Anchor** = nu cad  
-3. **Move / Scale / Rotate** = le așezi  
-4. Nume Place: **`Prenume_Nume_M1`** (același tot Modulul 1; la M2 faci o copie `_M2`; rezervă la profesor dacă îl pierzi)  
-5. Azi **fără** Script / Terrain / Toolbox  
+## Recapitulare pe scurt
+1. **Viewport** = lumea · **Play** / **Stop** = testezi / editezi  
+2. **Part** (Block, Sphere, Wedge, Corner Wedge, Cylinder) = pui forme  
+3. **Move** / **Scale** / **Rotate** = le așezi  
+4. **Anchor** = stau pe loc; fără el **cad**  
+5. **Anchored parts** = vezi ce e ancorat  
+6. Etapa 1 e un grup `Etapa1_Pod`; Place-ul `Prenume_Nume_M1`  
 
-**Quiz scurt (cu profesorul):**  
-- Ce face **Play**? Ce face **Stop**?  
-- De ce folosim **Anchor**?  
-- Cum se numește Place-ul tău?
-
-## Exemplu / referință (opțional, la final)
-*(Parcurge **întâi** lecția și Minim/Complet. Dacă vrei un model vizual, profesorul poate arăta pe proiector un Place scurt — fără să copiezi asset-uri din Toolbox.)*
+## Quiz scurt
+- Ce face **Play**? Dar **Stop**?  
+- Ce se întâmplă cu plăcile podului fără **Anchor**?  
+- Cum vezi care Parts sunt ancorate?  
 
 ## Temă
-Opțional: acasă (dacă ai Studio) redeschizi `Prenume_Nume_M1` și adaugi **1** Part nou ancorat — același Place.  
-La **L2** învățăm Explorer + Properties pe îndelete.
+Opțional, acasă (dacă ai Studio): redeschizi `Prenume_Nume_M1` și adaugi la turnul de start un **steag** din 2 Parts (un Cylinder subțire și un Block mic), ancorat. Rămâi în același Place.
+
+---
+
+## Ce urmează — Lecția 2
+În **lecția 2** folosești **Explorer** și **Properties**, ca să pui nume pieselor și mărimi exacte, și construiești **Etapa 2**: o casă cu 3 camere.

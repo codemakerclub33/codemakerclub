@@ -680,16 +680,16 @@ export const lectii = [
   ]),
   // Roblox Modul 1 — Place Builder
   ...genLectii('m24', [
-    'Studio + primul Place',
-    'Explorer, Properties, Workspace',
-    'Parts: forme, mutare, scalare',
-    'Ancorare, materiale, culori',
-    'Camera + Playtest',
-    'Start (Spawn) + Finish',
-    'Traseu Obby: platforme',
-    'Checkpoint vizual (fără script)',
-    'Mini-proiect: Lumea Obby',
-    'Completare + prezentare + insignă Place Builder',
+    'Primul meu Place',
+    'Casa cu trei camere',
+    'Castelul',
+    'Parcarea',
+    'Pădurea',
+    'Labirintul',
+    'Zgârie-norul',
+    'Terenul de joacă',
+    'Alegerea ta',
+    'Lumea ta + insignă Place Builder',
   ]),
   // Roblox Modul 2 — Script Starter
   ...genLectii('m25', [
