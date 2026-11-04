@@ -4,9 +4,9 @@ import { useEffect, useState } from 'react'
 import { cursuri, module, lectii } from '@/lib/mockData'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
-import { ArrowLeft, ArrowRight, CheckCircle2, Lock } from 'lucide-react'
+import { ArrowLeft, ArrowRight, CheckCircle2, Lock, PauseCircle } from 'lucide-react'
 import { useElevCursantId } from '@/hooks/useElevCursantId'
-import { useProgresCursant } from '@/hooks/useProgresCursant'
+import { lectiiAccesibile, useProgresCursant } from '@/hooks/useProgresCursant'
 import LectieMarkdown from '@/components/LectieMarkdown'
 import AscultaLectie from '@/components/AscultaLectie'
 
@@ -42,8 +42,9 @@ export default function InvataLectiePage() {
     return <p className="text-slate-500">Lecția nu a fost găsită.</p>
   }
 
-  const unlockedIds = new Set((data?.progres ?? []).filter(p => p.bifat).map(p => p.lectie_id))
+  const { deschise: unlockedIds, pauzaSold } = lectiiAccesibile(data)
   const unlocked = unlockedIds.has(lectieId)
+  const bifataDeProfesor = (data?.progres ?? []).some(p => p.bifat && p.lectie_id === lectieId)
 
   const lectiiModul = lectii
     .filter(l => l.modul_id === modul.id)
@@ -52,6 +53,21 @@ export default function InvataLectiePage() {
   const idx = navigabile.findIndex(l => l.id === lectieId)
   const prev = idx > 0 ? navigabile[idx - 1] : null
   const next = idx >= 0 && idx < navigabile.length - 1 ? navigabile[idx + 1] : null
+
+  if (!unlocked && pauzaSold && bifataDeProfesor) {
+    return (
+      <div className="text-center py-16">
+        <PauseCircle className="mx-auto text-amber-400 mb-4" size={36} />
+        <h1 className="text-xl font-bold text-slate-800 mb-2">Lecțiile sunt în pauză</h1>
+        <p className="text-slate-500 text-sm mb-6 max-w-sm mx-auto">
+          Se redeschid imediat ce se reînnoiește abonamentul. Spune-i părintelui 😊
+        </p>
+        <Link href={`/invata/${cursId}`} className="text-sky-600 text-sm font-medium">
+          ← Înapoi la modul
+        </Link>
+      </div>
+    )
+  }
 
   if (!unlocked) {
     return (

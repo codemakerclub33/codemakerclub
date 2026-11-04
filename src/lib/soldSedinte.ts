@@ -54,6 +54,17 @@ export function calculeazaSoldCursant(
   }
 }
 
+/**
+ * De la acest sold în jos, lecțiile deblocate de profesor nu mai pot fi deschise de acasă
+ * (până la plata următorului pachet). Accesul Autodidact valid nu este afectat, iar
+ * profesorul poate bifa în continuare la atelier.
+ */
+export const SOLD_BLOCARE_LECTII = -1
+
+export function lectiiBlocateDeSold(sold: number | null | undefined): boolean {
+  return typeof sold === 'number' && sold <= SOLD_BLOCARE_LECTII
+}
+
 /** Clasă Tailwind pentru sold: negativ / aproape epuizat / ok. */
 export function culoareSold(sold: number): string {
   if (sold < 0) return 'text-red-600'

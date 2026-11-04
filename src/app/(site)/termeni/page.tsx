@@ -214,6 +214,12 @@ export default function TermeniPage() {
               către un alt solicitant aflat pe lista de așteptare.
             </p>
             <p className="mt-2">
+              Dacă pachetul s-a epuizat, cursantul poate participa în continuare la ședințele din program, iar ședințele
+              efectuate se scad din pachetul următor. Când soldul ajunge la <strong>−1 ședință</strong>, contul de elev rămâne
+              activ (progresul și istoricul se văd în continuare), dar lecțiile de pe platformă se pun pe pauză până la
+              achitarea următorului pachet; după plată se redeschid automat. Accesul Autodidact valid nu este afectat.
+            </p>
+            <p className="mt-2">
               Modalitățile de plată acceptate sunt transferul bancar (ordin de plată), plata cu cardul sau numerar la sediu.
               Pentru plățile cu cardul nu se percepe niciun comision suplimentar. Evidența ședințelor rămase și a bonusurilor
               acumulate este actualizată transparent în contul de elev/părinte de pe platformă.

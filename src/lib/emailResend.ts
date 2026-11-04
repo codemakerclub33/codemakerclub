@@ -62,10 +62,11 @@ export async function trimiteEmail(opts: {
 export async function trimiteEmailSedinteEpuizateReal(opts: {
   emailParinte: string
   prenumeCopil: string
+  sold?: number | null
 }): Promise<RezultatEmail> {
   return trimiteEmail({
     to: opts.emailParinte,
-    subject: subiectEmailSedinteEpuizate(opts.prenumeCopil),
-    text: mesajSedinteEpuizate(opts.prenumeCopil),
+    subject: subiectEmailSedinteEpuizate(opts.prenumeCopil, opts.sold),
+    text: mesajSedinteEpuizate(opts.prenumeCopil, opts.sold),
   })
 }

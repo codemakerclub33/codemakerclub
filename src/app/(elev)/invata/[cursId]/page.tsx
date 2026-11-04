@@ -7,7 +7,7 @@ import { ArrowLeft, Check, Lock, BookOpen } from 'lucide-react'
 import SedinteRamaseElev from '@/components/SedinteRamaseElev'
 import ModulNivelBadge from '@/components/ModulNivelBadge'
 import { useElevCursantId } from '@/hooks/useElevCursantId'
-import { useProgresCursant } from '@/hooks/useProgresCursant'
+import { lectiiAccesibile, useProgresCursant } from '@/hooks/useProgresCursant'
 import { esteActiv, zileRamase } from '@/lib/autodidact'
 
 export default function InvataCursPage() {
@@ -25,12 +25,14 @@ export default function InvataCursPage() {
   const autodidactActiv = (data?.autodidact ?? []).filter(
     a => a.curs_id === cursId && esteActiv(a, azi),
   )
-  const unlocked = new Set((data?.progres ?? []).filter(p => p.bifat).map(p => p.lectie_id))
+  const bifate = new Set((data?.progres ?? []).filter(p => p.bifat).map(p => p.lectie_id))
+  const { deschise, pauzaSold } = lectiiAccesibile(data)
   const insc = (data?.inscrieri ?? []).find(i => i.curs_id === cursId && i.activ)
   const modulActivId = insc?.modul_activ_id ?? null
   const modulActiv = module.find(m => m.id === modulActivId)
 
-  const isUnlocked = (lectieId: string) => unlocked.has(lectieId)
+  const isUnlocked = (lectieId: string) => deschise.has(lectieId)
+  const isBifata = (lectieId: string) => bifate.has(lectieId)
 
   const moduleCurs = module
     .filter(m => m.curs_id === cursId)
@@ -41,7 +43,7 @@ export default function InvataCursPage() {
     }))
 
   const moduleTrecute = moduleCurs.filter(
-    m => m.id !== modulActivId && m.lectii.some(l => isUnlocked(l.id)),
+    m => m.id !== modulActivId && m.lectii.some(l => isBifata(l.id)),
   )
 
   const renderLectie = (
@@ -49,7 +51,8 @@ export default function InvataCursPage() {
     opts: { showLocked: boolean },
   ) => {
     const unlockedL = isUnlocked(l.id)
-    if (!unlockedL && !opts.showLocked) return null
+    const inPauza = !unlockedL && pauzaSold && isBifata(l.id)
+    if (!unlockedL && !inPauza && !opts.showLocked) return null
 
     const inner = (
       <div className="flex items-center gap-3 p-3 rounded-xl bg-white border border-slate-100">
@@ -69,7 +72,9 @@ export default function InvataCursPage() {
           {l.titlu}
         </span>
         {!unlockedL && (
-          <span className="text-[10px] uppercase text-slate-300">în clasă</span>
+          <span className={`text-[10px] uppercase ${inPauza ? 'text-amber-500' : 'text-slate-300'}`}>
+            {inPauza ? 'pauză' : 'în clasă'}
+          </span>
         )}
       </div>
     )
@@ -112,6 +117,12 @@ export default function InvataCursPage() {
         </div>
       </div>
 
+      {pauzaSold && (
+        <p className="mt-4 rounded-xl border border-amber-100 bg-amber-50 px-3.5 py-2 text-sm text-amber-900">
+          ⏸️ Lecțiile de acasă sunt în pauză până se reînnoiește abonamentul. Spune-i părintelui 😊
+        </p>
+      )}
+
       {autodidactActiv.map(a => (
         <p
           key={a.id}
@@ -146,7 +157,7 @@ export default function InvataCursPage() {
                   {
                     lectii
                       .filter(l => l.modul_id === modulActiv.id)
-                      .filter(l => isUnlocked(l.id)).length
+                      .filter(l => isBifata(l.id)).length
                   }
                   /{lectii.filter(l => l.modul_id === modulActiv.id).length} lecții deblocate
                 </p>
@@ -170,7 +181,7 @@ export default function InvataCursPage() {
 
               <div className="space-y-6">
                 {moduleTrecute.map(modul => {
-                  const unlockedL = modul.lectii.filter(l => isUnlocked(l.id))
+                  const unlockedL = modul.lectii.filter(l => isBifata(l.id))
                   return (
                     <div key={modul.id}>
                       <h3 className="text-sm font-semibold text-slate-600 mb-0.5 inline-flex flex-wrap items-center gap-2">

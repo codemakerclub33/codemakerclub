@@ -68,7 +68,7 @@ export default function AbonamentNotificariPanel({
     }
   }, [lastBifare, emailParinte])
 
-  const mesaj = mesajSedinteEpuizate(prenume)
+  const mesaj = mesajSedinteEpuizate(prenume, ramase)
   const alerta = ramase !== null && ramase <= 0
   const soldPct =
     incluse != null && incluse > 0 && ramase != null

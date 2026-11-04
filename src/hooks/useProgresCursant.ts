@@ -5,6 +5,7 @@ import { getProgresCursantAction, type ProgresCursantData } from '@/app/actions/
 import { isSupabaseConfiguredClient } from '@/lib/supabase/publicFlag'
 import { lectii } from '@/lib/mockData'
 import { esteActiv } from '@/lib/autodidact'
+import { lectiiBlocateDeSold } from '@/lib/soldSedinte'
 
 /**
  * Pentru elev: lecțiile modulelor „Autodidact” aflate în perioada de acces sunt
@@ -50,6 +51,31 @@ function aplicaAutodidact(data: ProgresCursantData): ProgresCursantData {
     }
   }
   return { ...data, progres, inscrieri }
+}
+
+/**
+ * Lecțiile pe care elevul le poate deschide acum: cele bifate de profesor (doar dacă soldul
+ * nu a ajuns la pragul de blocare) plus toate lecțiile din modulele Autodidact active.
+ */
+export function lectiiAccesibile(data: ProgresCursantData | null): {
+  deschise: Set<string>
+  pauzaSold: boolean
+} {
+  const deschise = new Set<string>()
+  if (!data) return { deschise, pauzaSold: false }
+
+  const pauzaSold = lectiiBlocateDeSold(data.abonament?.sedinte_ramase)
+  if (!pauzaSold) {
+    for (const p of data.progres) if (p.bifat) deschise.add(p.lectie_id)
+  }
+
+  const azi = new Date().toISOString().slice(0, 10)
+  const moduleAutodidact = new Set(
+    (data.autodidact ?? []).filter(a => esteActiv(a, azi)).map(a => a.modul_id),
+  )
+  for (const l of lectii) if (moduleAutodidact.has(l.modul_id)) deschise.add(l.id)
+
+  return { deschise, pauzaSold }
 }
 
 export function useProgresCursant(cursantId: string | null) {

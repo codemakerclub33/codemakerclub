@@ -394,7 +394,7 @@ export async function bifareLectieAction(cursantId: string, lectieId: string): P
     alertaSold = ramase !== null && ramase <= 0
 
     if (alertaSold && consumNou) {
-      whatsappMesaj = mesajSedinteEpuizate(cursant.prenume)
+      whatsappMesaj = mesajSedinteEpuizate(cursant.prenume, ramase)
       const startZi = `${azi}T00:00:00`
       const { data: dejaAzi } = await client
         .from('notificari_email')
@@ -407,6 +407,7 @@ export async function bifareLectieAction(cursantId: string, lectieId: string): P
         const rez = await trimiteEmailSedinteEpuizateReal({
           emailParinte: cursant.email_parinte,
           prenumeCopil: cursant.prenume,
+          sold: ramase,
         })
         if (rez.ok) {
           // Înregistrăm doar emailurile trimise efectiv (altfel se reîncearcă la următoarea bifare)
@@ -422,7 +423,7 @@ export async function bifareLectieAction(cursantId: string, lectieId: string): P
         }
       }
     } else if (alertaSold) {
-      whatsappMesaj = mesajSedinteEpuizate(cursant.prenume)
+      whatsappMesaj = mesajSedinteEpuizate(cursant.prenume, ramase)
     }
   }
 

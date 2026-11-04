@@ -1,6 +1,7 @@
 'use client'
 
 import { useProgresCursant } from '@/hooks/useProgresCursant'
+import { lectiiBlocateDeSold } from '@/lib/soldSedinte'
 
 interface Props {
   cursantId: string
@@ -26,7 +27,9 @@ export default function SedinteRamaseElev({ cursantId }: Props) {
 
   return (
     <div className="ml-auto max-w-[240px] text-right rounded-xl bg-amber-50 border border-amber-100 px-3.5 py-2 text-sm text-amber-900">
-      Ședințele s-au terminat, spune-i părintelui 😊
+      {lectiiBlocateDeSold(ramase)
+        ? 'Lecțiile sunt în pauză până la reînnoire, spune-i părintelui 😊'
+        : 'Ședințele s-au terminat, spune-i părintelui 😊'}
     </div>
   )
 }

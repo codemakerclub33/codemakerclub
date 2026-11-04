@@ -1,15 +1,22 @@
 /** Template + canale notificare părinte — Code Maker Club Focșani */
 
+import { lectiiBlocateDeSold } from './soldSedinte'
+
 /** Folosit în email + WhatsApp (înscriere, oferte, ședințe epuizate) */
 export function textPrezentaObligatorie(): string {
   return `Prezența la curs este obligatorie pe durata anului școlar.
 În caz de absență, cursantul recuperează lecția pe platforma Code Maker Club Focșani.`
 }
 
-export function mesajSedinteEpuizate(prenumeCopil: string): string {
+export function mesajSedinteEpuizate(prenumeCopil: string, sold?: number | null): string {
+  const situatie = lectiiBlocateDeSold(sold)
+    ? `Pentru ${prenumeCopil}, ședințele din pachet s-au terminat, iar lecțiile de pe platformă sunt acum în pauză. Se redeschid automat imediat după reînnoirea abonamentului.
+
+Vă așteptăm în continuare cu următoarea ofertă:`
+    : `Pentru ${prenumeCopil} a fost ultima ședință. Vă așteptăm în continuare cu următoarea ofertă:`
   return `Bună ziua!
 
-Pentru ${prenumeCopil} a fost ultima ședință. Vă așteptăm în continuare cu următoarea ofertă:
+${situatie}
 
 Abonamente Code Maker Club Focșani (o ședință = 2 ore):
 ✅ 4 ședințe (8 ore) - 300 lei / 37,5 lei pe oră
@@ -39,7 +46,10 @@ Mulțumim!
 Code Maker Club Focșani`
 }
 
-export function subiectEmailSedinteEpuizate(prenumeCopil: string): string {
+export function subiectEmailSedinteEpuizate(prenumeCopil: string, sold?: number | null): string {
+  if (lectiiBlocateDeSold(sold)) {
+    return `Code Maker Club Focșani — lecțiile lui ${prenumeCopil} sunt în pauză`
+  }
   return `Code Maker Club Focșani — ședințe epuizate pentru ${prenumeCopil}`
 }
 
@@ -86,10 +96,10 @@ export async function trimiteEmailSedinteEpuizate(opts: {
   prenumeCopil: string
   sedinteRamase: number
 }): Promise<{ ok: true; canal: 'email-stub'; preview: string }> {
-  const body = mesajSedinteEpuizate(opts.prenumeCopil)
+  const body = mesajSedinteEpuizate(opts.prenumeCopil, opts.sedinteRamase)
   console.info('[email-stub]', {
     to: opts.emailParinte,
-    subject: subiectEmailSedinteEpuizate(opts.prenumeCopil),
+    subject: subiectEmailSedinteEpuizate(opts.prenumeCopil, opts.sedinteRamase),
     sedinteRamase: opts.sedinteRamase,
     body,
   })

@@ -347,7 +347,7 @@ export async function bifareLectie(cursantId: string, lectieId: string): Promise
     alertaSold = ramase <= 0
 
     if (alertaSold && consumNou) {
-      whatsappMesaj = mesajSedinteEpuizate(cursant.prenume)
+      whatsappMesaj = mesajSedinteEpuizate(cursant.prenume, ramase)
       const dejaAzi = store.notificari.some(
         n => n.cursant_id === cursantId && n.tip === 'sedinte_epuizate' && n.data === azi
       )
@@ -361,7 +361,7 @@ export async function bifareLectie(cursantId: string, lectieId: string): Promise
         emailTrimis = true
       }
     } else if (alertaSold) {
-      whatsappMesaj = mesajSedinteEpuizate(cursant.prenume)
+      whatsappMesaj = mesajSedinteEpuizate(cursant.prenume, ramase)
     }
   }
 
