@@ -101,9 +101,12 @@ Cu **Numpad** (sau emulat, cu tastele de sus):
 
 | Tasta | Ce face |
 |-------|---------|
-| **Home** | arată **toată scena** |
+| **Home** | **potrivește vederea** ca să încapă **toate obiectele** pe ecran (nu mută obiectele) |
 | **Numpad .** (punct) | **apropie** obiectul selectat |
 | **Shift + C** | resetează vederea și cursorul 3D |
+
+**Home** nu mută obiectele, ci doar **vederea**: o apropie sau o depărtează până când le vezi pe toate. Mouse-ul trebuie să fie deasupra viewport-ului.  
+**Pe laptop, fără tasta Home:** apeși **Fn** și **←**, sau alegi din meniu **View → Frame All**.
 
 **Încearcă tu — „nu te pierde” (2 min)**  
 - [ ] **Home** aduce toată scena în vedere  
@@ -111,7 +114,7 @@ Cu **Numpad** (sau emulat, cu tastele de sus):
 
 ### 6) Complet — jocul „Găsește obiectul”
 1. Adaugă 3 obiecte (**Shift + A → Mesh**: Cone, Torus, Monkey) și mută obiectele departe de centru cu **G**.  
-2. Apasă **Home**: le vezi pe toate.  
+2. Apasă **Home**, cu mouse-ul peste viewport: vederea se potrivește singură și le vezi pe toate trei (pe laptop: **Fn + ←** sau **View → Frame All**).  
 3. Click pe fiecare în **Outliner**, apoi **Numpad .**: vederea sare la el.  
 4. Fă un scurt „tur”: față (1), dreapta (3), sus (7) și cameră (0).
 
@@ -121,17 +124,17 @@ Cu **Numpad** (sau emulat, cu tastele de sus):
 
 ### 7) Creează tu — „Turul ghidat”
 Acum aranjezi tu scena și o arăți altcuiva.
-1. Construiește o scenă cu **5 obiecte diferite** (Shift + A → Mesh), la distanțe diferite față de centru. Dă fiecărui obiect un nume clar cu **F2**.  
-2. Așază obiectele ca să existe cel puțin un obiect **mai sus** decât celelalte și două obiecte **aproape unul de altul**.  
-3. Scrie pe o foaie sau în caiet 3 propoziții:  
-   - Din ce vedere se vede cel mai bine **înălțimea** obiectelor?  
-   - Din ce vedere vezi dacă două obiecte sunt **aliniate**?  
-   - Din ce vedere vezi cât de **departe** sunt două obiecte între ele?  
+1. Folosești scena de la jocul „Găsește obiectul”, cu cele **3 obiecte** (con, torus, maimuță), la distanțe diferite față de centru. Nu mai adaugi altele. Dă fiecărui obiect un nume clar cu **F2** (`Con`, `Torus`, `Maimuta`).  
+2. Mută obiectele cu **G**, ca unul să fie **mai sus** decât celelalte și două să fie **aproape unul de altul**.  
+3. Răspunde la 3 întrebări, cu câte un nume de obiect (pe foaie sau în caiet):  
+   - Apasă **1**: care obiect e cel mai **sus**?  
+   - Apasă **7**: care două obiecte sunt cele mai **aproape** unul de altul?  
+   - Apasă **3**: care obiect e cel mai **în față**? (în vederea din dreapta, cel mai în față e cel din **stânga** ecranului)  
 4. **Jocul:** un coleg sau un adult spune numele unui obiect, iar tu îl găsești în **mai puțin de 10 secunde** cu **Outliner** și **Numpad .**. Repetați de 3 ori.
 
 **Gata când:**  
-- [ ] Scena are 5 obiecte cu nume  
-- [ ] Am scris cele 3 propoziții  
+- [ ] Cele 3 obiecte au nume  
+- [ ] Am răspuns la cele 3 întrebări  
 - [ ] Am găsit un obiect cerut în sub 10 secunde  
 
 ---
@@ -152,7 +155,7 @@ Acum aranjezi tu scena și o arăți altcuiva.
 | | Ce trebuie |
 |--|------------|
 | **Minim** | Rotire, deplasare, zoom |
-| **Complet** | Minim + 4 vederi + ortografic + Home și Numpad . + turul ghidat (5 obiecte, 3 propoziții) |
+| **Complet** | Minim + 4 vederi + ortografic + Home și Numpad . + turul ghidat (3 obiecte cu nume, 3 răspunsuri) |
 
 ### Pasul 1 — Minim
 - [ ] Rotesc vederea  
@@ -164,20 +167,22 @@ Acum aranjezi tu scena și o arăți altcuiva.
 - [ ] Văd scena din față, dreapta, sus  
 - [ ] Trec între perspectivă și ortografic  
 - [ ] Găsesc fiecare obiect cu Numpad .  
-- [ ] Am făcut turul ghidat: scenă cu 5 obiecte și 3 propoziții  
+- [ ] Am făcut turul ghidat: scenă cu 3 obiecte cu nume și 3 răspunsuri  
 - [ ] Numele `B1_L02` e corect
 
 ---
 
-## Bonus ★★★ — Provocare: Comoara ascunsă
+## Bonus ★★★ — Provocare: Sabia din cuburi
 *Doar dacă ai terminat Complet.*
 
-Ascunde trei obiecte în scenă, iar un coleg le găsește doar cu navigarea.
+Construiește o sabie ca în jocurile cu blocuri, doar din cuburi.
 
-- [ ] Un cub, o sferă și un con, puse departe unul de altul și de centru
-- [ ] Din vederea de start nu se văd toate trei deodată
-- [ ] Colegul le găsește pe toate trei în mai puțin de un minut, doar cu rotire, deplasare și zoom, fără Outliner
-- [ ] Notezi pe foaie ce vedere (`1`, `3` sau `7`) l-a ajutat cel mai mult
+- [ ] Lama: cel puțin 5 cuburi scalate subțiri cu **S**, unul după altul, fără goluri
+- [ ] Garda: un cub lat, așezat de-a curmezișul lamei, iar mânerul: un cub mai mic, sub gardă
+- [ ] Din vederea din față (`1`) sabia e dreaptă, iar din dreapta (`3`) are aceeași grosime peste tot
+- [ ] Fiecare piesă are nume în Outliner (`Lama_1`, `Garda`, `Maner`)
+
+*Ajutor:* scalezi un cub, îl duplici cu **Shift + D** și îl muți cu **G**, pe o singură axă.
 
 ## Recapitulare pe scurt
 1. Rotire · deplasare · zoom  
@@ -194,4 +199,7 @@ Joacă un joc de aventură 3D și observă cum se mișcă camera. Acolo, camera 
 - Când e util modul ortografic?
 
 ## Temă
-Alege un obiect din casă (cană, jucărie) și spune ce ai vedea din **față, dreapta, sus**.
+Alege un obiect simplu din casă (o cană, o jucărie, o cutie) și **refă-l în Blender**, din forme de bază: cuburi, cilindri, sfere.
+- Privește obiectul real din **față, dreapta și sus** și notează ce forme vezi.
+- Construiește-l în Blender, cu `Shift + A`, `G`, `R` și `S`, și verifică-l din vederile `1`, `3` și `7`.
+- Dă fiecărei piese un nume (`F2`) și salvează fișierul `Prenume_Nume_B1_L02_Tema.blend`.

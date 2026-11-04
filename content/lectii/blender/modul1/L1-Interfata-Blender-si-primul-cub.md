@@ -19,7 +19,7 @@ La finalul orei știi să recunoști părțile ecranului Blender și ai salvat p
 |--------|----------|
 | 0–15 | Ce e 3D · instalare și pornire |
 | 15–40 | Cele 4 zone mari ale ecranului |
-| 40–70 | Primele acțiuni: selectăm, mutăm, anulăm |
+| 40–70 | Primele acțiuni: selectăm, mutăm, rotim, scalăm, anulăm |
 | 70–85 | Maimuța Suzanne și numele ei |
 | 85–105 | Creezi tu: o scenă pentru maimuță |
 | 105–120 | Salvare, recap, quiz, galerie |
@@ -34,6 +34,8 @@ La finalul orei știi să recunoști părțile ecranului Blender și ai salvat p
 |------------|---------|---------|
 | **Shift + A** | Adaugă un obiect nou în scenă | Shift + A → Mesh → Monkey |
 | **G** | Mută obiectul selectat | G, mișcă mouse-ul, click |
+| **R** | Rotește obiectul selectat | R, mișcă mouse-ul, click |
+| **S** | Mărește sau micșorează obiectul selectat | S, mișcă mouse-ul, click |
 | **F2** | Redenumește obiectul | F2 → `Maimuta_Alex` |
 | **Ctrl + Z** | Anulează ultima acțiune | după o mutare greșită |
 | **Ctrl + S** | Salvează fișierul | `Prenume_Nume_B1_L01.blend` |
@@ -86,16 +88,21 @@ Mouse-ul peste **3D Viewport**:
 |---------|-----|
 | Selectezi un obiect | **click stânga** pe el (apare conturul portocaliu) |
 | Muți obiectul | apeși **G**, miști mouse-ul, **click** ca să confirmi |
-| Anulezi o mutare | **Esc** sau **click dreapta** |
+| Rotești obiectul | apeși **R**, miști mouse-ul, **click** ca să confirmi |
+| Mărești sau micșorezi obiectul | apeși **S**, miști mouse-ul, **click** ca să confirmi |
+| Anulezi o mutare, rotire sau scalare | **Esc** sau **click dreapta** |
 | Anulezi ce ai făcut | **Ctrl + Z** |
 | Refaci | **Ctrl + Shift + Z** |
 | Ascunzi / arăți bara de unelte | **T** |
 | Ascunzi / arăți panoul din dreapta | **N** |
 
-Încearcă: selectează cubul, apasă **G**, mută cubul, confirmă; apoi **Ctrl + Z** și vezi cum se întoarce.
+**G**, **R** și **S** merg la fel: apeși tasta, miști mouse-ul, confirmi cu click. Poți și să scrii o valoare exactă: **S**, apoi `2`, apoi **Enter** face obiectul de două ori mai mare, iar **R**, apoi `45`, apoi **Enter** îl rotește cu 45 de grade.
 
-**Încearcă tu — prima mutare (3 min)**  
+Încearcă: selectează cubul, apasă **G**, mută cubul, confirmă; apoi **R** și **S**, pe rând; apoi **Ctrl + Z** de câteva ori și vezi cum se întoarce.
+
+**Încearcă tu — mutare, rotire, scalare (5 min)**  
 - [ ] Cubul se selectează (contur portocaliu) și se mută cu **G**  
+- [ ] Cubul se rotește cu **R** și se mărește sau se micșorează cu **S**  
 - [ ] După **Ctrl + Z**, cubul revine la locul lui  
 
 ### 5) Complet — maimuța Suzanne
@@ -111,12 +118,13 @@ Mouse-ul peste **3D Viewport**:
 ### 6) Creează tu — „Maimuța are nevoie de o scenă”
 De aici nu mai urmezi pași scriși: alegi tu ce construiești.
 1. Adaugă **cel puțin 3 obiecte** noi cu **Shift + A → Mesh**, în jurul maimuței. De exemplu: un cub mare ca **masă**, o sferă ca **minge**, un con ca **pălărie**.  
-2. Mută obiectele cu **G**, ca să formeze o scenă care are sens (maimuța lângă masă, mingea pe jos etc.).  
+2. Mută obiectele cu **G**, ca să formeze o scenă care are sens (maimuța lângă masă, mingea pe jos etc.). Fă masa mai mare și mingea mai mică cu **S**, iar pălăria înclinată cu **R**.  
 3. Dă fiecărui obiect un **nume clar** cu **F2** (`Masa`, `Mingea`, `Palaria`). Nu lăsa nume ca `Cube.001`.  
 4. Apasă **Home** și verifică: se văd toate obiectele împreună și nu se acoperă între ele?
 
 **Gata când:**  
 - [ ] Scena are maimuța și cel puțin 3 obiecte  
+- [ ] Un obiect e scalat cu **S** și unul e rotit cu **R**  
 - [ ] Fiecare obiect are nume în **Outliner**  
 - [ ] Un coleg ghicește ce scenă ai făcut  
 
@@ -136,7 +144,8 @@ De aici nu mai urmezi pași scriși: alegi tu ce construiești.
 2. **Nu găsești obiectul** — ai mutat obiectul departe; apasă **Home** (arată tot).  
 3. **Ai apăsat altă tastă și a apărut o schimbare** — **Ctrl + Z**.  
 4. **Ai pierdut fișierul** — nu ai salvat fișierul; folosește **Ctrl + S** des.  
-5. **Click dreapta nu face ce crezi** — în Blender 4, click **stânga** selectează; click dreapta deschide un meniu.
+5. **Obiectul a devenit uriaș, minuscul sau a dispărut** — ai ținut mouse-ul departe când ai apăsat **S**; apasă **Ctrl + Z** sau **Esc** și încearcă din nou.  
+6. **Click dreapta nu face ce crezi** — în Blender 4, click **stânga** selectează; click dreapta deschide un meniu.
 
 ---
 
@@ -147,11 +156,11 @@ De aici nu mai urmezi pași scriși: alegi tu ce construiești.
 | | Ce trebuie |
 |--|------------|
 | **Minim** | Mută cubul + salvează fișierul |
-| **Complet** | Minim + maimuța, redenumită, scena ta cu 3 obiecte cu nume, salvată cu numele corect |
+| **Complet** | Minim + maimuța, redenumită, scena ta cu 3 obiecte cu nume (unul scalat cu **S**, unul rotit cu **R**), salvată cu numele corect |
 
 ### Pasul 1 — Minim
 - [ ] Știu numele celor 4 zone  
-- [ ] Am mutat cubul cu **G**  
+- [ ] Am mutat cubul cu **G** și l-am rotit cu **R**  
 - [ ] Fișierul e salvat  
 
 **→ Minim când:** un coleg recunoaște ce ai făcut, fără explicații.  
@@ -161,24 +170,28 @@ De aici nu mai urmezi pași scriși: alegi tu ce construiești.
 - [ ] Am adăugat Suzanne  
 - [ ] Am dat un nume cu **F2**  
 - [ ] Am făcut o scenă cu cel puțin 3 obiecte, fiecare cu nume  
+- [ ] Am scalat un obiect cu **S** și am rotit unul cu **R**  
 - [ ] Numele fișierului `B1_L01` e corect
 
 ---
 
-## Bonus ★★★ — Provocare: Echipa de maimuțe
+## Bonus ★★★ — Provocare: Omulețul din cuburi
 *Doar dacă ai terminat Complet.*
 
-Fă o poză de grup: o echipă de maimuțe, ca la un meci.
+Fă un omuleț complet, ca în jocurile cu blocuri, doar din cuburi.
 
-- [ ] 6 maimuțe (Shift + A → Mesh → Monkey), în două rânduri de câte 3
-- [ ] Fiecare are un nume de jucător în Outliner (ex. `Capitanul`, `Portarul`)
-- [ ] Din vederea din față (`1`) se văd toate cele 6, fără să se atingă
-- [ ] Un coleg ghicește care e Capitanul (cea din mijloc, în față)
+- [ ] 6 piese: cap, corp, 2 brațe și 2 picioare, fiecare un cub scalat cu **S** (corpul mai înalt, brațele și picioarele lungi și subțiri)
+- [ ] Piesele se ating, fără goluri între ele (verifici cu **Home**)
+- [ ] Un braț ridicat cu **R**: omulețul salută
+- [ ] Fiecare piesă are nume în Outliner (`Cap`, `Corp`, `Brat_stang`…)
+- [ ] Un coleg recunoaște imediat că e un omuleț
+
+*Ajutor:* scalezi un braț și îl duplici cu **Shift + D**, apoi îl muți cu **G** în partea cealaltă. La fel faci cu piciorul.
 
 ## Recapitulare pe scurt
 1. Scena de start: **cub + lumină + cameră**  
 2. Zone: **Viewport, Outliner, Properties, Timeline**  
-3. **G** mută · **Esc** anulează · **Ctrl+Z** dă înapoi  
+3. **G** mută · **R** rotește · **S** scalează · **Esc** anulează · **Ctrl+Z** dă înapoi  
 4. **Shift+A** adaugă obiecte · **F2** redenumește
 
 ## Mai departe *(opțional)*
@@ -187,6 +200,7 @@ Pe blender.org găsești filme scurte făcute în Blender (de ex. „Big Buck Bu
 ## Quiz scurt
 - Cum se numește lista obiectelor din dreapta sus?  
 - Ce face **Shift + A**?  
+- Ce fac tastele **G**, **R** și **S**?  
 - Cum anulezi ultima acțiune?  
 - De ce dăm nume clare obiectelor (nu `Cube.001`)?
 

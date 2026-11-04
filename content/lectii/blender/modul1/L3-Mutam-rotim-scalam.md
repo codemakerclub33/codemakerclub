@@ -3,13 +3,13 @@
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
 
-> Azi înveți cele **trei mișcări** pe care le faci cel mai des în Blender: **G** (mută), **R** (rotește), **S** (scalează), plus cum le „blochezi” pe o axă.  
+> Azi faci **precise** cele trei mișcări din lecția 1, **G** (mută), **R** (rotește) și **S** (scalează): le „blochezi” pe o axă, scrii **numere exacte** și citești valorile în panoul **N**.  
 > Proiect: **„Scara spre cer”** · `Prenume_Nume_B1_L03.blend`
 
 ---
 
 ## Ce facem azi
-La finalul orei transformi obiecte precis, cu mouse-ul și cu **numere**. Tot ce faci în 3D începe cu aceste trei mișcări. Dacă le știi bine, poți construi aproape orice din forme simple.
+La finalul orei transformi obiecte precis, cu mouse-ul și cu **numere**. Tot ce faci în 3D începe cu cele trei mișcări pe care le-ai întâlnit deja în lecția 1. Acum le faci cu grijă și exact, ca să poți construi aproape orice din forme simple.
 
 ---
 
@@ -18,11 +18,11 @@ La finalul orei transformi obiecte precis, cu mouse-ul și cu **numere**. Tot ce
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap L2 |
-| 10–40 | **G**, **R**, **S** cu mouse |
-| 40–65 | Blocare pe axe |
-| 65–90 | Numere exacte |
-| 90–105 | Scara spre cer |
-| 105–120 | Scara mea, recap, quiz |
+| 10–20 | Recap **G**, **R**, **S** (din lecția 1) |
+| 20–50 | Blocare pe axe |
+| 50–80 | Numere exacte și panoul **N** |
+| 80–100 | Scara spre cer |
+| 100–120 | Scara mea, recap, quiz |
 
 **Ce ai nevoie:** Blender 4.2 · scena de start
 
@@ -32,7 +32,7 @@ La finalul orei transformi obiecte precis, cu mouse-ul și cu **numere**. Tot ce
 
 | Ce folosim | Ce face | Exemplu |
 |------------|---------|---------|
-| **G / R / S** | Mută, rotește, scalează | G, mouse, click |
+| **G / R / S** | Mută, rotește, scalează (recap din lecția 1) | G, mouse, click |
 | **X / Y / Z** | Blochează mișcarea pe o axă | G Z = doar în sus |
 | Numere + **Enter** | Valoare exactă | R Z 45 Enter |
 | **N** | Deschide panoul cu valorile obiectului | tabul Item |
@@ -42,8 +42,8 @@ La finalul orei transformi obiecte precis, cu mouse-ul și cu **numere**. Tot ce
 
 ## Pas cu pas
 
-### 1) Cele trei transformări
-Selectează cubul, mouse peste viewport:
+### 1) Recap: cele trei transformări
+Le-ai folosit în lecția 1. Selectează cubul, mouse peste viewport:
 
 | Tasta | Ce face | Confirmi cu | Anulezi cu |
 |-------|---------|-------------|------------|
@@ -53,7 +53,7 @@ Selectează cubul, mouse peste viewport:
 
 Mișcă mouse-ul după ce ai apăsat tasta: obiectul te urmează.
 
-**Încearcă tu — G, R, S (3 min)**  
+**Încearcă tu — recap G, R, S (3 min)**  
 - [ ] **G** mută, **R** rotește și **S** scalează cubul  
 - [ ] Cu **Esc** anulezi fiecare mișcare  
 
@@ -180,15 +180,19 @@ Reguli:
 
 ---
 
-## Bonus ★★★ — Provocare: Piramida în trepte
+## Bonus ★★★ — Provocare: Portal magic
 *Doar dacă ai terminat Complet.*
 
-Construiește o piramidă din plăci, fiecare mai mică decât cea de sub ea.
+Construiește un portal ca în jocurile cu blocuri: un cadru de piatră cu un interior luminos. Dimensiunile le scrii exact, cu numere.
 
-- [ ] 5 plăci groase, fiecare micșorată cu `S` `Shift + Z` `0.8` față de cea de dedesubt (așa se micșorează doar lățimea și lungimea, iar grosimea rămâne la fel)
-- [ ] Fiecare placă stă exact peste cealaltă, fără gol (verifici din vederea din față, `1`)
-- [ ] Notezi pe foaie valorile folosite la fiecare placă
-- [ ] Piramida e centrată: din vederea de sus (`7`) plăcile au același centru
+- [ ] Cadrul: 2 stâlpi verticali identici și 2 bare orizontale identice, sus și jos, scalate cu `S` și valori exacte
+- [ ] Cadrul e închis, fără goluri la colțuri (verifici din vederea din față, `1`)
+- [ ] Interiorul: o placă subțire, care umple golul din mijloc, fără să iasă din cadru
+- [ ] Portalul e simetric: din vederea din față, stâlpii sunt la aceeași distanță de centru
+- [ ] Notezi pe foaie valorile din panoul `N` pentru fiecare piesă
+- [ ] Fiecare piesă are nume (`Stalp_1`, `Stalp_2`, `Bara_sus`, `Bara_jos`, `Interior`)
+
+*Ajutor:* faci un stâlp, îl duplici cu **Shift + D** și îl muți cu `G`, `X` și o valoare exactă, ca să ajungă simetric în partea cealaltă.
 
 ## Recapitulare pe scurt
 1. **G** mută · **R** rotește · **S** scalează  
@@ -205,4 +209,8 @@ Uită-te la o scară reală și măsoară: ce înălțime are o treaptă? Încea
 - Cum readuci obiectul în centru?
 
 ## Temă
-Desenează pe hârtie o scenă cu 3 cuburi mutate, rotite și scalate diferit și scrie ce numere ai folosi.
+Alege un obiect simplu din casă (o carte, o cutie de pantofi, o telecomandă) și **refă-l în Blender**, cu **dimensiuni exacte**.
+- Măsoară obiectul real cu o riglă și notează lungimea, lățimea și înălțimea.
+- Construiește-l din cuburi și alte forme de bază, cu `G`, `R`, `S`, axele și numerele exacte.
+- Verifică în panoul `N` că dimensiunile se potrivesc cu ce ai notat și scrie valorile pe foaie.
+- Dă fiecărei piese un nume (`F2`) și salvează fișierul `Prenume_Nume_B1_L03_Tema.blend`.

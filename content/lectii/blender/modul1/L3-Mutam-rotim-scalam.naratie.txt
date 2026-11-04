@@ -1,12 +1,12 @@
 Lecția trei. Mutăm, rotim, scalăm.
 
-Astăzi înveți cele trei mișcări pe care le faci cel mai des în Blender: G pentru mutare, R pentru rotire și S pentru scalare, plus cum le blochezi pe o axă. Proiectul se numește Scara spre cer. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L trei, punct blend.
+Astăzi faci precise cele trei mișcări din lecția unu: G pentru mutare, R pentru rotire și S pentru scalare. Le blochezi pe o axă, scrii numere exacte și citești valorile în panoul N. Proiectul se numește Scara spre cer. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L trei, punct blend.
 
-Ce facem azi. La final transformi obiecte precis, cu mouse-ul și cu numere. Tot ce faci în trei D începe cu aceste trei mișcări. Dacă le știi bine, poți construi aproape orice din forme simple.
+Ce facem azi. La final transformi obiecte precis, cu mouse-ul și cu numere. Tot ce faci în trei D începe cu cele trei mișcări pe care le-ai întâlnit deja în lecția unu. Acum le faci cu grijă și exact, ca să poți construi aproape orice din forme simple.
 
 Instrucțiuni noi azi. G mută, R rotește, S scalează. După ele apeși X, Y sau Z ca să blochezi mișcarea pe o axă. Scrii un număr și apeși Enter pentru o valoare exactă. Tasta N deschide panoul cu valorile obiectului. Alt plus G, R sau S resetează poziția, rotirea sau mărimea.
 
-Primul pas. Cele trei transformări. Selectezi cubul, cu mouse-ul peste viewport. Tasta G mută, R rotește, S scalează. Mișcă mouse-ul după ce ai apăsat tasta, iar obiectul te urmează. Confirmi cu click stânga și anulezi cu Escape.
+Primul pas. Recapitulare: cele trei transformări. Le-ai folosit în lecția unu. Selectezi cubul, cu mouse-ul peste viewport. Tasta G mută, R rotește, S scalează. Mișcă mouse-ul după ce ai apăsat tasta, iar obiectul te urmează. Confirmi cu click stânga și anulezi cu Escape.
 
 Al doilea pas. Blocarea pe o axă. După ce apeși G, R sau S, apeși X, Y sau Z, iar obiectul se mișcă doar pe acea axă. De exemplu, G și apoi Z mută doar în sus sau în jos. R și apoi Z rotește ca un titirez. S și apoi Z întinde doar pe înălțime. G și apoi Shift plus Z mută fără axa Z, adică doar pe podea.
 
@@ -22,6 +22,6 @@ Pasul de creație. Scara mea. Acum o construiești pe a ta, fără pași scriși
 
 Greșeli frecvente. Obiectul sare departe: ai mișcat mouse-ul mult înainte de a confirma, apasă Escape și reia. Rotația merge pe axa greșită: apasă R, apoi Z, sau X, sau Y. Scalezi un obiect strâmb: ai blocat o singură axă, iar fără axă scalează uniform. Numerele nu se aplică: ai uitat Enter. Duplicatul rămâne peste original: după Shift plus D, mută copia imediat.
 
-Provocare, trei stele. Piramida în trepte. Construiești o piramidă din cinci plăci groase. Fiecare placă este micșorată cu S, Shift plus Z, zero virgulă opt, față de cea de dedesubt, ca doar lățimea și lungimea să scadă, iar grosimea să rămână la fel. Plăcile stau exact una peste alta, fără gol, iar din vederea de sus au același centru. Pe o foaie notezi valorile folosite la fiecare placă.
+Provocare, trei stele. Portal magic. Construiești un portal ca în jocurile cu blocuri: un cadru de piatră cu un interior luminos. Dimensiunile le scrii exact, cu numere. Cadrul are doi stâlpi verticali identici și două bare orizontale identice, sus și jos, scalate cu S și valori exacte. Cadrul este închis, fără goluri la colțuri, iar tu verifici din vederea din față, cu tasta unu. Interiorul este o placă subțire, care umple golul din mijloc, fără să iasă din cadru. Portalul este simetric: din vederea din față, stâlpii sunt la aceeași distanță de centru. Notezi pe foaie valorile din panoul N pentru fiecare piesă. Fiecare piesă are un nume. Ajutor: faci un stâlp, îl duplici cu Shift plus D și îl muți cu G, apoi X și o valoare exactă, ca să ajungă simetric în partea cealaltă.
 
 Succes la scară.
