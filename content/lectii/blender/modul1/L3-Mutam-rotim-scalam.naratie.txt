@@ -1,4 +1,4 @@
-Lecția trei. Mutăm, rotim, scalăm.
+Lecția trei. Scara spre cer.
 
 Astăzi faci precise cele trei mișcări din lecția unu: G pentru mutare, R pentru rotire și S pentru scalare. Le blochezi pe o axă, scrii numere exacte și citești valorile în panoul N. Proiectul se numește Scara spre cer. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L trei, punct blend.
 

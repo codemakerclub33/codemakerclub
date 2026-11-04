@@ -1,4 +1,4 @@
-Lecția nouă. Prima randare.
+Lecția nouă. Poza finală.
 
 Astăzi transformi scena trei D într-o imagine reală, pe care o poți trimite prietenilor. Procesul se numește randare, în engleză render. Proiectul se numește Poza finală. Obții două fișiere: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L nouă, punct blend, și același nume cu punct P N G.
 

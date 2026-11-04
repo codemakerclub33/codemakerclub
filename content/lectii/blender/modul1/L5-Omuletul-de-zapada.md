@@ -1,10 +1,10 @@
-# LECȚIA 5 — Omulețul meu
+# LECȚIA 5 — Omulețul de zăpadă
 ### Obiecte din sfere
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
 
 > Azi îți faci primul **personaj**: un omuleț de zăpadă, din sfere, cilindri și conuri, cu suprafață netedă și piese care se mișcă împreună.  
-> Proiect: **„Omulețul meu”** · `Prenume_Nume_B1_L05.blend`
+> Proiect: **„Omulețul de zăpadă”** · `Prenume_Nume_B1_L05.blend`
 
 ---
 
@@ -124,7 +124,7 @@ Vrei să muți omulețul întreg dintr-o mișcare. Soluția: **părinte și copi
 
 ---
 
-## De făcut azi — „Omulețul meu”
+## De făcut azi — „Omulețul de zăpadă”
 
 ### Minim vs Complet
 

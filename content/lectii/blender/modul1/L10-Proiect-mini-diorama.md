@@ -23,7 +23,7 @@ La finalul orei ai o scenă completă, colorată, luminată și randată. Un pro
 | 80–105 | Materiale, lumini, cameră |
 | 105–120 | Randare și galerie |
 
-**Ce ai nevoie:** Blender 4.2 · piesele din L4–L7 (casă, omuleț, rachetă)
+**Ce ai nevoie:** Blender 4.2 · piesele tale din L4–L9 (rachetă, omuleț, casă, tabără, tort)
 
 ---
 
@@ -37,6 +37,7 @@ Azi nu înveți nimic nou. Folosești tot ce știi din Modulul 1:
 | L4–L6 | forme de bază, `Shift + D`, `Ctrl + P`, Snap |
 | L7 | materiale: Base Color, Roughness, Metallic |
 | L8–L9 | lumini, cameră, randare cu `F12` |
+| Ajutoare | `Pivot` (L4), `Shade Smooth` (L5), `Ctrl + L → Link Materials` (L7), `Film → Transparent` (L9) |
 
 ---
 
@@ -49,6 +50,7 @@ Azi nu înveți nimic nou. Folosești tot ce știi din Modulul 1:
 | **Parcul** | bancă, copaci, felinar, fântână |
 | **Spațiul** | rachetă, planete, stele, antenă |
 | **Ferma** | hambar, gard, copac, vacă simplificată |
+| **Tabăra de noapte** | cort, foc, bușteni, brazi, lună |
 
 Desenează un plan scurt: **ce obiecte**, **unde stau**.
 
@@ -59,7 +61,7 @@ Desenează un plan scurt: **ce obiecte**, **unde stau**.
 ### 2) Baza
 O diorama arată bine pe o **bază** care „ține” scena:
 
-1. **Shift + A → Mesh → Cylinder** (Vertices 64, Radius 6, Depth 0.5), sau un **Cube** aplatizat.  
+1. **Shift + A → Mesh → Cylinder** (Vertices 64, Radius 6, Depth 0.5), sau un **Cube** aplatizat. Valorile `Vertices`, `Radius` și `Depth` apar în panoul mic din stânga-jos, imediat după ce adaugi forma.  
 2. Așază piesa la **Z = −0.25**, ca fața de sus să fie exact la nivelul 0.  
 3. Pe baza aceasta pui totul.
 
@@ -100,7 +102,7 @@ Sau refă piesele simplu, direct în scenă.
 1. **Materiale:** minim 5 culori diferite (L7).  
 2. **Sun** (caldă) + **Area** (rece, mică) ca lumină de umplere (L8).  
 3. **Camera** din colț, 35–50 mm, regula treimilor.  
-4. **Randare:** EEVEE, 1920 × 1080, 100%, **PNG** (L9).
+4. **Randare:** EEVEE (fila `Render`), 1920 × 1080, 100% (fila `Output`, imprimanta), **PNG** (L9).
 
 **Încearcă tu — culori, lumini, cameră (4 min)**  
 - [ ] Ai cel puțin 5 culori diferite și o scenă cu umbre  
@@ -169,7 +171,7 @@ Bifează ce poți face **singur**:
 
 Dă viață dioramei cu o poveste.
 
-- [ ] Cel puțin 12 obiecte în diorama ta
+- [ ] Un personaj mic și un detaliu de poveste (foc, steag, felinar)
 - [ ] 2 randări din unghiuri diferite (ex. din față și de sus)
 - [ ] Scrii 3 propoziții: cine e în diorama ta și ce se întâmplă
 - [ ] O prezentare de 1 minut în fața grupei
@@ -189,4 +191,4 @@ Arată dioramele colegilor și spune pentru fiecare un lucru care îți place. �
 - Cum faci un obiect să se miște împreună cu alte piese?
 
 ## Temă
-Alege un obiect din scena ta și scrie ce ai schimba la el în Modulul 2.
+Fă o a doua diorama mică, pe altă temă din tabel, la altă oră a zilei (zi sau noapte), și randeaz-o ca `Prenume_Nume_B1_L10_Tema.png`. Notează pe foaie ce lumină ai schimbat.

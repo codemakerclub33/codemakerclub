@@ -1,6 +1,6 @@
 Lecția cinci. Omulețul de zăpadă.
 
-Astăzi îți faci primul personaj: un omuleț de zăpadă, din sfere, cilindri și conuri, cu suprafață netedă și piese care se mișcă împreună. Proiectul se numește Omulețul meu. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L cinci, punct blend.
+Astăzi îți faci primul personaj: un omuleț de zăpadă, din sfere, cilindri și conuri, cu suprafață netedă și piese care se mișcă împreună. Proiectul se numește Omulețul de zăpadă. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L cinci, punct blend.
 
 Ce facem azi. La final ai un omuleț complet, cu corp, cap, nas, ochi, pălărie și nasturi. Personajele se construiesc din piese simple, așezate cu grijă. Aici înveți și două trucuri importante: netezirea suprafeței și legarea pieselor.
 

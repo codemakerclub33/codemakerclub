@@ -1,10 +1,10 @@
-# LECȚIA 1 — Primul meu fișier 3D
+# LECȚIA 1 — Primul fișier 3D
 ### Interfață și primul cub
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
 
 > Azi deschizi **Blender**, programul gratuit cu care se fac filme de animație, jocuri și modele 3D. Înveți unde e fiecare lucru și îți faci primul „obiect” 3D.  
-> Proiect: **„Primul meu fișier 3D”** · `Prenume_Nume_B1_L01.blend`
+> Proiect: **„Primul fișier 3D”** · `Prenume_Nume_B1_L01.blend`
 
 ---
 
@@ -149,7 +149,7 @@ De aici nu mai urmezi pași scriși: alegi tu ce construiești.
 
 ---
 
-## De făcut azi — „Primul meu fișier 3D”
+## De făcut azi — „Primul fișier 3D”
 
 ### Minim vs Complet
 

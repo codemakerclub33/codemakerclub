@@ -1,10 +1,10 @@
-# LECȚIA 4 — Racheta mea
+# LECȚIA 4 — Racheta spațială
 ### Forme de bază
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
 
 > Azi descoperi „cărămizile” modelării 3D: **cub, sferă, cilindru, con, plan, tor**. Din ele poți face aproape orice.  
-> Proiect: **„Racheta mea”** · `Prenume_Nume_B1_L04.blend`
+> Proiect: **„Racheta spațială”** · `Prenume_Nume_B1_L04.blend`
 
 ---
 
@@ -96,7 +96,7 @@ Imediat după ce adaugi o formă, în **colțul stânga-jos** al viewport-ului a
 - [ ] Vezi punctul portocaliu mic al unui obiect (originea)  
 - [ ] Obiectul are nume în **Outliner**, dat cu **F2**  
 
-### 5) Complet — „Racheta mea”
+### 5) Complet — „Racheta spațială”
 Construiește pe rând (șterge mai întâi cubul de start, cu **X**):
 
 | Piesă | Formă | Reglaje |
@@ -146,7 +146,7 @@ Racheta a fost construită după tabel. Acum alegi tu ce construiești.
 
 ---
 
-## De făcut azi — „Racheta mea”
+## De făcut azi — „Racheta spațială”
 
 ### Minim vs Complet
 

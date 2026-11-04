@@ -1,4 +1,4 @@
-Lecția doi. Navigare în trei D.
+Lecția doi. Turul obiectului.
 
 Astăzi înveți să te plimbi prin lumea trei D: să te rotești în jurul unui obiect, să te apropii și să te îndepărtezi, să vezi scena din față, de sus și din lateral. Proiectul se numește Turul obiectului. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L doi, punct blend.
 
@@ -20,7 +20,7 @@ Al șaselea pas, pentru varianta completă. Jocul Găsește obiectul. Adaugi tre
 
 Pasul de creație. Turul ghidat. Folosești scena de la jocul Găsește obiectul, cu cele trei obiecte, și nu mai adaugi altele. Le dai fiecăruia un nume clar și le muți cu G, ca unul să fie mai sus decât celelalte și două să fie aproape unul de altul. Apoi răspunzi la trei întrebări, cu câte un nume de obiect. Apeși unu: care obiect este cel mai sus? Apeși șapte: care două obiecte sunt cele mai aproape unul de altul? Apeși trei: care obiect este cel mai în față? În vederea din dreapta, cel mai în față este cel din stânga ecranului. La final joci jocul: cineva spune numele unui obiect, iar tu îl găsești în mai puțin de zece secunde cu Outliner și tasta punct de pe tastatura numerică.
 
-Greșeli frecvente. Totul pare strâmb: ești în perspectivă, apasă cinci pentru ortografic. Nu vezi nimic: ești prea aproape sau prea departe, apasă Home. Tastatura numerică nu merge: activează Emulate Numpad în Preferences. Vederea se învârte în loc: ai ținut Alt apăsat. Confuzie între vedere și obiect: la navigare nu muți obiectul, ci doar camera ta.
+Greșeli frecvente. Totul pare strâmb: ești în perspectivă, apasă cinci pentru ortografic. Nu vezi nimic: ești prea aproape sau prea departe, apasă Home. Tastatura numerică nu merge: activează Emulate Numpad, la Edit, Preferences, Input. Vederea se învârte în loc: ai ținut Alt apăsat. Confuzie între vedere și obiect: la navigare nu muți obiectul, ci doar camera ta.
 
 Provocare, trei stele. Sabia din cuburi. Construiești o sabie ca în jocurile cu blocuri, doar din cuburi. Lama are cel puțin cinci cuburi scalate subțiri cu S, unul după altul, fără goluri. Garda este un cub lat, așezat de-a curmezișul lamei, iar mânerul este un cub mai mic, sub gardă. Din vederea din față, cu tasta unu, sabia este dreaptă, iar din vederea din dreapta, cu tasta trei, are aceeași grosime peste tot. Fiecare piesă are un nume în Outliner, de exemplu Lama unu, Garda și Mâner. Ajutor: scalezi un cub, îl duplici cu Shift plus D și îl muți cu G, pe o singură axă.
 

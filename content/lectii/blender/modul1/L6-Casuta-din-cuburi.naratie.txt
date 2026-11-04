@@ -1,6 +1,6 @@
 Lecția șase. Căsuța din cuburi.
 
-Astăzi construiești o căsuță cu pereți, acoperiș, ușă și ferestre, folosind forme simple, duplicare și lipire pe grilă, numită snap. Proiectul se numește Căsuța mea. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L șase, punct blend.
+Astăzi construiești o căsuță cu pereți, acoperiș, ușă și ferestre, folosind forme simple, duplicare și lipire pe grilă, numită snap. Proiectul se numește Căsuța din cuburi. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L șase, punct blend.
 
 Ce facem azi. La final ai o căsuță cu proporții bune, cu piesele așezate exact. Clădirile din jocuri și din filme se fac exact așa: din forme simple, așezate precis. Snap-ul te ajută să nu pierzi timp cu mutări făcute din ochi.
 

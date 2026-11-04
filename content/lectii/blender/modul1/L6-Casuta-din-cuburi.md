@@ -1,10 +1,10 @@
-# LECȚIA 6 — Căsuța mea
+# LECȚIA 6 — Căsuța din cuburi
 ### Dimensiuni și snap
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
 
 > Azi construiești o **căsuță** cu pereți, acoperiș, ușă și ferestre, folosind forme simple, duplicare și lipire pe grilă (**snap**).  
-> Proiect: **„Căsuța mea”** · `Prenume_Nume_B1_L06.blend`
+> Proiect: **„Căsuța din cuburi”** · `Prenume_Nume_B1_L06.blend`
 
 ---
 
@@ -119,7 +119,7 @@ Snap = „magnet” care te ajută să muți exact pe grilă sau pe alte obiecte
 
 ---
 
-## De făcut azi — „Căsuța mea”
+## De făcut azi — „Căsuța din cuburi”
 
 ### Minim vs Complet
 

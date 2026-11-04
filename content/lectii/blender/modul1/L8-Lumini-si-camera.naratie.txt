@@ -1,4 +1,4 @@
-Lecția opt. Lumini și cameră.
+Lecția opt. Regizorul de lumini.
 
 Astăzi ești regizorul unei scene de film: construiești o tabără de noapte, cu cort și foc, apoi o luminezi și îți alegi camera, ca într-un film adevărat. Proiectul se numește Regizorul de lumini. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L opt, punct blend.
 

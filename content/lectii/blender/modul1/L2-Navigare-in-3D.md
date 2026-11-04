@@ -142,7 +142,7 @@ Acum aranjezi tu scena și o arăți altcuiva.
 ## Greșeli frecvente
 1. **Totul pare strâmb** — ești în perspectivă; apasă **5** pentru ortografic.  
 2. **Nu vezi nimic** — ești prea aproape sau prea departe; **Home**.  
-3. **Numpad nu merge** — activează **Emulate Numpad** în Preferences.  
+3. **Numpad nu merge** — activează **Emulate Numpad** în **Edit → Preferences → Input**.  
 4. **Vederea se învârte în loc** — ai ținut Alt apăsat.  
 5. **Confuzie între vedere și obiect** — la navigare **nu muți obiectul**, doar „camera ta”.
 

@@ -1,16 +1,16 @@
-Lecția zece. Proiect: mini-diorama.
+Lecția zece. Mini-diorama.
 
 Acesta este proiectul modulului. Construiești o mini-diorama, adică o scenă mică, de sine stătătoare, cu casă, pomi, personaj și lumină. Folosești tot ce ai învățat. Proiectul se numește Mini-diorama. Obții două fișiere: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L zece, punct blend, și imaginea cu același nume, punct P N G.
 
 Ce facem azi. La final ai o scenă completă, colorată, luminată și randată. Un proiect complet leagă toți pașii: modelare, culoare, lumină, cameră și randare. Dioramele sunt folosite în jocuri, filme și arhitectură ca să arate o idee.
 
-Ce folosești azi. Nu înveți nimic nou. Folosești tot ce știi din modulul unu: interfața și navigarea, G R S, formele de bază, duplicarea și legarea pieselor, materialele, luminile, camera și randarea.
+Ce folosești azi. Nu înveți nimic nou. Folosești tot ce știi din modulul unu: interfața și navigarea, G R S, formele de bază, duplicarea și legarea pieselor, materialele, luminile, camera și randarea. Te ajută și Pivot, Shade Smooth, Link Materials și Film, Transparent.
 
-Ce ai nevoie. Piesele din lecțiile patru până la șapte: casa, omulețul și racheta.
+Ce ai nevoie. Piesele tale din lecțiile patru până la nouă: racheta, omulețul, casa, tabăra și tortul.
 
-Primul pas. Alege o temă. Iarna: casă, omuleț, brazi, zăpadă. Parcul: bancă, copaci, felinar, fântână. Spațiul: rachetă, planete, stele, antenă. Ferma: hambar, gard, copac și o vacă simplificată. Desenează un plan scurt: ce obiecte ai și unde stau.
+Primul pas. Alege o temă. Iarna: casă, omuleț, brazi, zăpadă. Parcul: bancă, copaci, felinar, fântână. Spațiul: rachetă, planete, stele, antenă. Ferma: hambar, gard, copac și o vacă simplificată. Tabăra de noapte: cort, foc, bușteni, brazi și lună. Desenează un plan scurt: ce obiecte ai și unde stau.
 
-Al doilea pas. Baza. O diorama arată bine pe o bază care ține scena. Adaugi un cilindru, cu Shift plus A, Mesh, Cylinder, cu Vertices șaizeci și patru, Radius șase și Depth zero virgulă cinci, sau un cub aplatizat. O pui la înălțimea minus zero virgulă douăzeci și cinci, ca fața de sus să fie exact la nivelul zero. Pe această bază pui totul.
+Al doilea pas. Baza. O diorama arată bine pe o bază care ține scena. Adaugi un cilindru, cu Shift plus A, Mesh, Cylinder, cu Vertices șaizeci și patru, Radius șase și Depth zero virgulă cinci, sau un cub aplatizat. O pui la înălțimea minus zero virgulă douăzeci și cinci, ca fața de sus să fie exact la nivelul zero. Valorile Vertices, Radius și Depth apar în panoul mic din stânga jos, imediat după ce adaugi forma. Pe această bază pui totul.
 
 Al treilea pas. Obiecte din lecțiile trecute. Poți copia obiecte din alte fișiere. Mergi la File, Append. Alegi fișierul cu extensia blend, apoi folderul Object, apoi obiectul dorit. Dai click pe Append. Sau le refaci simplu, direct în scenă.
 
@@ -18,7 +18,7 @@ Un pom se face din forme simple. Trunchiul este un cilindru cu raza zero virgul�
 
 Al patrulea pas. Organizarea. Redenumești fiecare obiect cu F doi: Casa, Pom unu, Omulet și așa mai departe. Grupezi, cu Control plus P, piesele care merg împreună. Lași puțin spațiu între obiecte, ca scena să nu fie aglomerată.
 
-Al cincilea pas. Culori, lumini și cameră. Materiale: minim cinci culori diferite, ca în lecția șapte. Lumini: un Sun cald și un Area rece, mic, ca lumină de umplere, ca în lecția opt. Camera: dintr-un colț, între treizeci și cinci și cincizeci de milimetri, cu regula treimilor. Randarea: EEVEE, o mie nouă sute douăzeci pe o mie optzeci, o sută la sută, format P N G, ca în lecția nouă.
+Al cincilea pas. Culori, lumini și cameră. Materiale: minim cinci culori diferite, ca în lecția șapte. Lumini: un Sun cald și un Area rece, mic, ca lumină de umplere, ca în lecția opt. Camera: dintr-un colț, între treizeci și cinci și cincizeci de milimetri, cu regula treimilor. Randarea: EEVEE, în fila Render, iar rezoluția în fila Output, cea cu imprimanta: o mie nouă sute douăzeci pe o mie optzeci, o sută la sută, format P N G, ca în lecția nouă.
 
 Al șaselea pas. Lista de verificare. Fiecare obiect este pe bază și nimic nu plutește. Obiectele au nume. Ai cel puțin cinci culori. Se văd umbre. Subiectul principal este vizibil din cameră. Imaginea P N G este salvată.
 
@@ -26,6 +26,6 @@ Al șaptelea pas. Verificarea finală a modulului unu. Poți să te deplasezi î
 
 Greșeli frecvente. Prea multe obiecte și prea puțin timp: fă mai puține, dar bine finisate. Obiecte care se ating și se intersectează: verifică din față și de sus. Toate obiectele au aceeași culoare: creează materiale separate. Lumina este prea slabă: mărește Strength sau Power. Ai uitat să salvezi: Control plus S, des.
 
-Provocare, trei stele. Povestea dioramei. Diorama ta are cel puțin douăsprezece obiecte. Faci două randări din unghiuri diferite, de exemplu din față și de sus. Scrii trei propoziții: cine apare în diorama ta și ce se întâmplă. La final o prezinți în fața grupei, într-un minut.
+Provocare, trei stele. Povestea dioramei. Diorama ta are un personaj mic și un detaliu de poveste, de exemplu un foc, un steag sau un felinar. Faci două randări din unghiuri diferite, de exemplu din față și de sus. Scrii trei propoziții: cine apare în diorama ta și ce se întâmplă. La final o prezinți în fața grupei, într-un minut.
 
 Felicitări pentru finalul modulului unu.

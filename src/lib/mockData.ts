@@ -341,16 +341,16 @@ export const lectii = [
   ]),
   // Blender Modul 1 — Primii pași
   ...genLectii('m5', [
-    'Interfața Blender și primul cub',
-    'Navigare în 3D',
-    'Mutăm, rotim, scalăm',
-    'Forme de bază',
+    'Primul fișier 3D',
+    'Turul obiectului',
+    'Scara spre cer',
+    'Racheta spațială',
     'Omulețul de zăpadă',
     'Căsuța din cuburi',
-    'Culori și materiale',
-    'Lumini și cameră',
-    'Prima randare',
-    'Proiect: mini-diorama',
+    'Casa colorată',
+    'Regizorul de lumini',
+    'Poza finală',
+    'Mini-diorama',
   ]),
   // Blender Modul 2 — Edit Mode
   ...genLectii('m37', [

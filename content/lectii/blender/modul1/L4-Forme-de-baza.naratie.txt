@@ -1,6 +1,6 @@
-Lecția patru. Forme de bază.
+Lecția patru. Racheta spațială.
 
-Astăzi descoperi cărămizile modelării trei D: cubul, sfera, cilindrul, conul, planul și torul. Din ele poți face aproape orice. Proiectul se numește Racheta mea. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L patru, punct blend.
+Astăzi descoperi cărămizile modelării trei D: cubul, sfera, cilindrul, conul, planul și torul. Din ele poți face aproape orice. Proiectul se numește Racheta spațială. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B unu, linie jos, L patru, punct blend.
 
 Ce facem azi. La final adaugi și reglezi forme de bază și construiești o rachetă din ele. Modelatorii profesioniști încep adesea cu forme simple, pe care le combină și le modifică. Un copac este un cilindru și o sferă, iar o casă este un cub și un con.
 
@@ -14,7 +14,7 @@ Al treilea pas. Panoul Adjust Last Operation. Imediat după ce adaugi o formă, 
 
 Al patrulea pas. Origine și nume. Orice obiect are un punct de origine, punctul portocaliu mic. Rotația și scalarea se fac în jurul lui. Redenumește fiecare obiect cu F doi, ca să nu te încurci.
 
-Al cincilea pas, pentru varianta completă. Racheta mea. Ștergi mai întâi cubul de start cu X. Apoi construiești pe rând. Corpul este un cilindru cu raza zero virgulă cinci, adâncimea trei și treizeci și două de laturi. Vârful este un con cu raza zero virgulă cinci și adâncimea unu, așezat deasupra corpului. Aripile, trei la număr, sunt cuburi subțiate cu S, Y, zero virgulă unu, și S, X, zero virgulă șase, și S, Z, zero virgulă cinci, apoi puse jos, în jurul corpului. Geamul este o sferă mică, scalată cu S, zero virgulă cincisprezece, lipită pe corp, la mijloc. Flacăra este un con cu Radius zero virgulă trei și Depth unu, cu vârful în jos, obținut cu R, X, o sută optzeci, așezat sub corp.
+Al cincilea pas, pentru varianta completă. Racheta spațială. Ștergi mai întâi cubul de start cu X. Apoi construiești pe rând. Corpul este un cilindru cu raza zero virgulă cinci, adâncimea trei și treizeci și două de laturi. Vârful este un con cu raza zero virgulă cinci și adâncimea unu, așezat deasupra corpului. Aripile, trei la număr, sunt cuburi subțiate cu S, Y, zero virgulă unu, și S, X, zero virgulă șase, și S, Z, zero virgulă cinci, apoi puse jos, în jurul corpului. Geamul este o sferă mică, scalată cu S, zero virgulă cincisprezece, lipită pe corp, la mijloc. Flacăra este un con cu Radius zero virgulă trei și Depth unu, cu vârful în jos, obținut cu R, X, o sută optzeci, așezat sub corp.
 
 Pașii recomandați. Adaugi corpul și îl muți în sus cu G, Z, unu virgulă cinci, Enter, ca baza să stea pe podea. Adaugi conul, care apare la centru, și îl muți la înălțimea trei virgulă cinci. Adaugi o aripă, o ridici la înălțimea zero virgulă cinci și o muți la X egal zero virgulă șapte. Pentru celelalte aripi, folosești Shift plus D și rotești copiile în jurul corpului. Cel mai simplu este să muți mai întâi cursorul trei D în centru, cu Shift plus C, să alegi Pivot: cursorul trei D, din bara de sus a viewport-ului, lângă magnet, unde este un buton cu două cercuri, și apoi să apeși R, Z, o sută douăzeci, apoi R, Z, două sute patruzeci. La final pui Pivot înapoi pe Median Point. Geamul este o sferă mică la Y egal minus zero virgulă patruzeci și cinci și Z egal doi virgulă trei. Fiecare piesă primește un nume cu F doi: Corp, Varf, Aripa unu și așa mai departe.
 
