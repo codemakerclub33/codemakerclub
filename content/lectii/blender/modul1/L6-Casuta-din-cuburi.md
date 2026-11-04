@@ -21,7 +21,7 @@ La finalul orei ai o căsuță cu proporții bune, cu piesele așezate exact. Cl
 | 10–35 | Corpul și acoperișul |
 | 35–70 | Ușa și ferestrele |
 | 70–95 | Snap și duplicare |
-| 95–120 | Horn, pământ, recap, galerie |
+| 95–120 | Coș de fum, pământ, recap, galerie |
 
 **Ce ai nevoie:** Blender 4.2 · scena de start
 
@@ -32,9 +32,9 @@ La finalul orei ai o căsuță cu proporții bune, cu piesele așezate exact. Cl
 | Ce folosim | Ce face | Exemplu |
 |------------|---------|---------|
 | Panoul **N → Dimensions** | Arată și schimbă mărimea reală | ușa: X 0.8, Y 0.1, Z 1.6 |
-| **R Z 45** | Rotește cu 45° pe axa Z | con cu 4 laturi = acoperiș |
-| **Shift + D** | Duplică obiectul selectat | încă o fereastră identică |
 | **Snap** (magnetul) | Lipește mutarea pe grilă | piesele se așază exact |
+| *Recap:* **R Z 45** | Rotește cu 45° pe axa Z | con cu 4 laturi = acoperiș |
+| *Recap:* **Shift + D** | Duplică obiectul selectat | încă o fereastră identică |
 
 ---
 
@@ -98,13 +98,13 @@ Snap = „magnet” care te ajută să muți exact pe grilă sau pe alte obiecte
 - [ ] Pornești și oprești snap-ul cu **Shift + Tab**  
 - [ ] Cu snap, fereastra se lipește exact de colțul peretelui  
 
-### 6) Complet — horn și pământ
-- **Horn:** un cub (Dimensions X 0.4, Y 0.4, Z 1.0) pe acoperiș, **X = 0.8**, **Z = 3**.  
+### 6) Complet — coș de fum și pământ
+- **Coș de fum:** un cub (Dimensions X 0.4, Y 0.4, Z 1.0) pe acoperiș, **X = 0.8**, **Z = 3**.  
 - **Pământ:** **Shift + A → Mesh → Plane**, **S 8 Enter**. Se așază la **Z = 0**.  
 - Verifică casa din toate vederile (**1, 3, 7**).
 
-**Încearcă tu — hornul și pământul (2 min)**  
-- [ ] Hornul e pe acoperiș și nu intră în el prea adânc  
+**Încearcă tu — coșul de fum și pământul (2 min)**  
+- [ ] Coșul de fum e pe acoperiș și nu intră în el prea adânc  
 - [ ] Casa se vede completă din **1**, **3** și **7**  
 
 ---
@@ -125,7 +125,7 @@ Snap = „magnet” care te ajută să muți exact pe grilă sau pe alte obiecte
 | | Ce trebuie |
 |--|------------|
 | **Minim** | Corp, acoperiș, ușă, o fereastră |
-| **Complet** | Minim + ferestre duplicate + horn + pământ + snap |
+| **Complet** | Minim + ferestre duplicate + coș de fum + pământ + snap |
 
 ### Pasul 1 — Minim
 - [ ] Casa stă pe podea  
@@ -135,7 +135,7 @@ Snap = „magnet” care te ajută să muți exact pe grilă sau pe alte obiecte
 
 ### Pasul 2 — Complet
 - [ ] 2–4 ferestre simetrice  
-- [ ] Horn pe acoperiș  
+- [ ] Coș de fum pe acoperiș  
 - [ ] Pământ  
 - [ ] Numele `B1_L06` e corect
 
@@ -166,4 +166,8 @@ Fotografiază o casă din cartierul tău și încearcă să o refaci simplu, cu 
 - Ce face Snap?
 
 ## Temă
-Desenează casa visurilor tale cu 3 piese noi (garaj, turn, verandă) și scrie ce forme de bază ai folosi.
+Dacă ai terminat casa repede, construiește **Castelul cavalerilor**:
+- 4 turnuri din cilindri înalți, fiecare cu un con ca acoperiș.
+- 4 ziduri din plăci scalate, între turnuri, cu `Snap` pornit; zidurile au aceeași înălțime (verifici în `Dimensions`).
+- O poartă: un gol în zid sau o placă subțire.
+- Piesele au nume (`Turn_1`, `Zid_1`, `Poarta`).

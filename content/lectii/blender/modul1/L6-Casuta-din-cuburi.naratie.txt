@@ -4,7 +4,7 @@ Astăzi construiești o căsuță cu pereți, acoperiș, ușă și ferestre, fol
 
 Ce facem azi. La final ai o căsuță cu proporții bune, cu piesele așezate exact. Clădirile din jocuri și din filme se fac exact așa: din forme simple, așezate precis. Snap-ul te ajută să nu pierzi timp cu mutări făcute din ochi.
 
-Instrucțiuni noi azi. În panoul N, la Dimensions, vezi și schimbi mărimea reală a obiectului. R, Z și patruzeci și cinci rotește pe axa Z cu patruzeci și cinci de grade. Shift plus D duplică. Snap, magnetul, lipește mutarea pe grilă, ca piesele să se așeze exact.
+Instrucțiuni noi azi. În panoul N, la Dimensions, vezi și schimbi mărimea reală a obiectului. Snap, magnetul, lipește mutarea pe grilă, ca piesele să se așeze exact. Le știi deja: R, Z și patruzeci și cinci rotește pe axa Z cu patruzeci și cinci de grade, iar Shift plus D duplică.
 
 Primul pas. Corpul casei. Cubul de start are doi pe doi pe doi. Îl transformi într-o căsuță mai lată. Selectezi cubul. Apeși S, X, unu virgulă cinci, Enter, ca să fie mai lat, apoi S, Y, unu virgulă doi, Enter, ca să fie mai adânc. Apoi G, Z, unu, Enter, ca să stea pe podea, pentru că înălțimea centrului este jumătate din înălțimea cubului. În panoul N, la Item și Dimensions, vezi dimensiunile: trei, doi virgulă patru și doi.
 
@@ -16,7 +16,7 @@ Al patrulea pas. Ferestrele. Un cub mic, cu dimensiunile zero virgulă șase, ze
 
 Al cincilea pas. Snap, adică lipire exactă. Snap este un magnet care te ajută să muți exact pe grilă sau pe alte obiecte. Pornești sau oprești snap-ul cu Shift plus Tab, sau cu butonul cu magnet din bara de sus. Pentru snap pe grilă alegi Increment, în meniul magnetului. Pentru snap pe muchii sau vârfuri alegi Vertex și muți obiectul spre un vârf. Încearcă: pornește snap-ul, apasă G pe fereastră și apropie fereastra de colțul unui perete.
 
-Al șaselea pas, pentru varianta completă. Hornul și pământul. Hornul este un cub cu dimensiunile zero virgulă patru, zero virgulă patru și unu, pus pe acoperiș, la X zero virgulă opt și Z trei. Pământul este un plan, adăugat cu Shift plus A, Mesh, Plane, mărit cu S, opt, Enter, și așezat la înălțimea zero. Verifici casa din toate vederile: unu, trei și șapte.
+Al șaselea pas, pentru varianta completă. Coșul de fum și pământul. Coșul de fum este un cub cu dimensiunile zero virgulă patru, zero virgulă patru și unu, pus pe acoperiș, la X zero virgulă opt și Z trei. Pământul este un plan, adăugat cu Shift plus A, Mesh, Plane, mărit cu S, opt, Enter, și așezat la înălțimea zero. Verifici casa din toate vederile: unu, trei și șapte.
 
 Greșeli frecvente. Casa plutește: corpul nu este la o înălțime egală cu jumătate din înălțimea lui. Acoperișul este în romb: lipsește rotația de patruzeci și cinci de grade. Ușa intră în perete: ea trebuie să iasă puțin în afara peretelui. Ferestrele nu sunt simetrice: verifică valorile X, plus zero virgulă nouă și minus zero virgulă nouă. Snap-ul sare unde nu vrei: oprește snap-ul cu Shift plus Tab.
 
