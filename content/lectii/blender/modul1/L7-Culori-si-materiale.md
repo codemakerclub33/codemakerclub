@@ -42,7 +42,7 @@ La finalul orei casa ta e colorată și ai încercat 3 aspecte diferite: mat, lu
 ## Pas cu pas
 
 ### 1) Vezi culorile în viewport
-Colțul din dreapta sus al viewport-ului are 4 butoane („sfere”) pentru **modul de afișare**:
+Colțul din dreapta sus al viewport-ului are 4 butoane („sfere”) pentru **modul de afișare**. De la stânga la dreapta: Wireframe, Solid, Material Preview, Rendered.
 
 | Mod | Ce arată |
 |-----|----------|

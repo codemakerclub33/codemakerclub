@@ -14,7 +14,7 @@ Al treilea pas. Ușa. Adaugi un cub și, în panoul N, la Dimensions, scrii X ze
 
 Al patrulea pas. Ferestrele. Un cub mic, cu dimensiunile zero virgulă șase, zero virgulă unu și zero virgulă șase, la X zero virgulă nouă, Y minus unu virgulă douăzeci și cinci și Z unu virgulă trei. Apeși Shift plus D, click dreapta, apoi G, X, minus unu virgulă opt, Enter. Aceasta este a doua fereastră, simetrică. Ferestrele trebuie să iasă puțin din perete, ca să se vadă.
 
-Al cincilea pas. Snap, adică lipire exactă. Snap este un magnet care te ajută să muți exact pe grilă sau pe alte obiecte. Pornești sau oprești snap-ul cu Shift plus Tab, sau cu butonul cu magnet din bara de sus. Pentru snap pe grilă alegi Increment, în meniul magnetului. Pentru snap pe muchii sau vârfuri alegi Vertex și muți obiectul spre un vârf. Încearcă: pornește snap-ul, apasă G pe fereastră și apropie fereastra de colțul unui perete.
+Al cincilea pas. Snap, adică lipire exactă. Snap este un magnet care te ajută să muți exact pe grilă sau pe alte obiecte. Pornești sau oprești snap-ul cu Shift plus Tab, sau cu butonul cu magnet din bara de sus. Pentru snap pe grilă alegi Increment, în meniul magnetului, adică la mica săgeată de lângă magnet. Pentru snap pe muchii sau vârfuri alegi Vertex și muți obiectul spre un vârf. Încearcă: pornește snap-ul, apasă G pe fereastră și apropie fereastra de colțul unui perete.
 
 Al șaselea pas, pentru varianta completă. Coșul de fum și pământul. Coșul de fum este un cub cu dimensiunile zero virgulă patru, zero virgulă patru și unu, pus pe acoperiș, la X zero virgulă opt și Z trei. Pământul este un plan, adăugat cu Shift plus A, Mesh, Plane, mărit cu S, opt, Enter, și așezat la înălțimea zero. Verifici casa din toate vederile: unu, trei și șapte.
 

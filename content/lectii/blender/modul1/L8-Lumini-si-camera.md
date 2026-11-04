@@ -90,6 +90,8 @@ Folosește materialele din lecția 7 (**Material Preview**, fila Material, **New
 - [ ] Știi la ce e bună fiecare  
 
 ### 4) Setări (Properties → tab Light, becul verde)
+Selectează mai întâi lumina (click pe ea în Outliner). Tab-ul cu becul verde apare în **Properties** doar când o lumină e selectată.
+
 - **Color** — culoarea luminii (portocaliu cald, albastru rece).  
 - **Power / Strength** — cât de puternică e.  
 - Pentru **Sun**: **Strength** `0.3`–`4`. Pentru **Point**: **Power** `500`–`1000` W.
@@ -101,7 +103,7 @@ Folosește materialele din lecția 7 (**Material Preview**, fila Material, **New
 - [ ] Scena se luminează sau se întunecă după setări  
 
 ### 5) Experimentul nopții
-Treci în modul **Rendered** (sfera din dreapta sus). Pe rând, aprinzi și stingi:
+Treci în modul **Rendered** (a patra sferă, în dreapta sus a viewport-ului, ultima din cele 4). Pe rând, aprinzi și stingi:
 
 | Test | Ce faci | Ce vezi |
 |------|---------|---------|
@@ -120,16 +122,16 @@ Camera din scena de start e la dreapta și sus. O poți muta cu **G** și roti c
 1. Plasează-te în viewport în **unghiul în care vrei fotografia**.  
 2. Apasă **Ctrl + Alt + Numpad 0** (sau **View → Align View → Align Active Camera to View**): camera „sare” la vederea ta.  
 3. Verifică prin cameră: **Numpad 0**.  
-4. Dacă ai nevoie să ajustezi **fără să te încurci**, în **N → View → Camera to View** bifează opțiunea și poți naviga, iar camera te urmează (**debifează după!**).
+4. Dacă ai nevoie să ajustezi **fără să te încurci**, apasă **N**, alege tab-ul **View**, caută secțiunea **View Lock** și bifează **Camera to View** și poți naviga, iar camera te urmează (**debifează după!**).
 
 **Încearcă tu — camera (3 min)**  
 - [ ] Cu **Ctrl + Alt + Numpad 0** camera sare la vederea ta  
 - [ ] Cu **Numpad 0** vezi poza prin cameră  
 
 ### 7) Regula treimilor și lentila
-Împarte cu gândul ecranul în 3×3 pătrate. Pune subiectul **pe linii sau la intersecții**, nu mereu în mijloc. În **Properties → Camera → Viewport Display** bifează **Composition Guides → Thirds** (liniile apar în vederea camerei).
+Împarte cu gândul ecranul în 3×3 pătrate. Pune subiectul **pe linii sau la intersecții**, nu mereu în mijloc. Selectează camera, apoi în **Properties** alege tab-ul **Camera** (aparatul foto verde, apare doar când camera e selectată). Deschide panoul **Viewport Display** și bifează **Composition Guides → Thirds** (liniile apar în vederea camerei).
 
-**Properties → tab Camera → Focal Length:**
+**Properties → tab Camera → panoul Lens → Focal Length:**
 
 | Valoare | Efect |
 |---------|-------|
@@ -207,7 +209,7 @@ Alegi tu ce simte cine se uită la poza taberei.
 
 O scenă întunecată, în care singura lumină vine din cristale.
 
-- [ ] Fundal negru (Properties → World → Color) și fără celelalte lumini
+- [ ] Fundal negru (Properties → tab World, globul roșu → Surface → Color) și fără celelalte lumini
 - [ ] 4 cristale: conuri înalte, cu `Vertices` `5`, pe sol
 - [ ] Fiecare cristal are propria lumină `Point` în altă culoare (violet, albastru, verde, roz), Power `50`–`100` W
 - [ ] Camera arată cristalele, cu regula treimilor; verifici în `Rendered`

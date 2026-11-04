@@ -25,7 +25,7 @@ La finalul orei ai o imagine salvată (PNG) cu scena ta. Până acum ai lucrat �
 | 100–115 | Creezi tu: trei poze, trei povești |
 | 115–120 | Recap, galerie |
 
-**Ce ai nevoie:** Blender 4.2 · scena din L8 (cu cameră și lumină)
+**Ce ai nevoie:** Blender 4.2 · tabăra din L8 (cu cameră și lumină)
 
 ---
 
@@ -64,6 +64,8 @@ La finalul orei ai o imagine salvată (PNG) cu scena ta. Până acum ai lucrat �
 | **Render Engine** | „motorul” care calculează imaginea |
 | **Samples** | câte „încercări” face per pixel (mai multe = mai curat, dar mai lent) |
 
+`Render Engine` e primul câmp de sus. `Samples` sunt în panoul `Sampling` (click pe săgeată ca să îl deschizi), la rândul `Render`.
+
 **Încearcă tu — setările (2 min)**  
 - [ ] Găsești **Render Engine** și **Samples** în **Properties → Render**  
 - [ ] Știi că mai multe Samples înseamnă imagine mai curată, dar mai lentă  
@@ -98,8 +100,8 @@ Pentru calculatoare mai slabe, rămâi pe **EEVEE**.
 
 ### 5) Experiment: Cycles
 1. Render → **Cycles**.  
-2. **Render → Max Samples** pune **64**.  
-3. Activează **Denoise** (mai jos, în același panou), ca imaginea să arate curat și cu puține „puncte”.  
+2. În panoul **Sampling**, la rândul **Render**, pune **Max Samples** pe **64**.  
+3. Tot acolo, bifează **Denoise** (sub Max Samples), ca imaginea să arate curat și cu puține „puncte”.  
 4. F12. Compară cu EEVEE: umbrele și reflexiile sunt mai fine?  
 5. Notează cât a durat. Dacă e prea lent, scade **Resolution %**.
 
@@ -108,10 +110,10 @@ Pentru calculatoare mai slabe, rămâi pe **EEVEE**.
 - [ ] Ai notat cât a durat și ai comparat cu EEVEE  
 
 ### 6) Complet — fundal transparent
-Vrei omulețul fără cer, ca să lipești omulețul pe altă imagine:
+Vrei tabăra fără cer, ca să lipești tabăra pe altă imagine:
 
-1. **Properties → Render → Film → Transparent** (bifează).  
-2. **Output → Output → File Format: PNG**, **Color: RGBA**.  
+1. **Properties → tab Render**, derulează în jos până la panoul **Film** (deschide-l cu săgeata) și bifează **Transparent**.  
+2. **Properties → tab Output** (imprimanta) → panoul **Output** → **File Format: PNG**, **Color: RGBA**.  
 3. F12 și salvează. În editorul de imagini vezi pătrățele gri-albe în loc de fundal.
 
 **Încearcă tu — fundalul transparent (3 min)**  
@@ -120,7 +122,7 @@ Vrei omulețul fără cer, ca să lipești omulețul pe altă imagine:
 
 ### 7) Creează tu — „Trei poze, trei povești”
 Faci trei poze ale **aceleiași scene**. Schimbi de fiecare dată un singur lucru, ca să vezi ce diferență face.
-1. **Poza A:** schimbă **culoarea cerului** (Properties → World → Color).  
+1. **Poza A:** schimbă **culoarea cerului** (Properties → tab World, globul roșu → Surface → Color).  
 2. **Poza B:** schimbă **unghiul camerei** (alt colț sau mai de sus).  
 3. **Poza C:** schimbă **lumina** (culoare sau direcție).  
 4. Randează cu **EEVEE** (rapid), la 1280 × 720. Salvează imaginile ca `Prenume_Nume_B1_L09_A.png`, `_B.png`, `_C.png`.  
@@ -166,14 +168,17 @@ Faci trei poze ale **aceleiași scene**. Schimbi de fiecare dată un singur lucr
 
 ---
 
-## Bonus ★★★ — Provocare: Laboratorul de randare
+## Bonus ★★★ — Provocare: Tortul cu glazură
 *Doar dacă ai terminat Complet.*
 
-Compară motoarele și numărul de eșantioane pe aceeași scenă.
+Construiește un tort de aniversare și randează-l ca pe o poză de cofetărie.
 
-- [ ] 4 randări ale aceleiași scene: `EEVEE`, `Cycles` `16`, `Cycles` `64`, `Cycles` `256` samples
-- [ ] Pe foaie un tabel: motor, samples, timp, ce observi
-- [ ] Scrii o propoziție: ce primești în plus când aștepți mai mult?
+- [ ] 3 straturi: cilindri unul peste altul, fiecare puțin mai mic decât cel de dedesubt
+- [ ] Glazură: un cilindru subțire deasupra, mai lat decât stratul de sus, roz, cu `Roughness` mic
+- [ ] Cel puțin 8 bomboane sau fructe: sfere mici, de mai multe culori, pe margine
+- [ ] O lumânare: un cilindru subțire și un con mic, galben, deasupra
+- [ ] `Shade Smooth` pe glazură și pe sfere
+- [ ] Randare cu `Cycles` și `Film` → `Transparent`, salvată ca `Prenume_Nume_B1_L09_Tort.png`
 
 ## Recapitulare pe scurt
 1. **F12** randează · **Image → Save As** salvează  
@@ -190,4 +195,8 @@ Trimite poza unui prieten sau a părinților și întreabă ce le place. Ce ai �
 - Ce face „Transparent”?
 
 ## Temă
-Alege cea mai frumoasă randare a ta și scrie 2 propoziții despre ea: ce arată, ce ai îndrăgit.
+Alege un desert sau un fruct din casă (un măr, un cupcake, o felie de pizză) și **randează-l în Blender**.
+- Construiește-l simplu, din forme de bază, cu materiale potrivite.
+- Randează-l cu fundal transparent.
+- Salvează imaginea `Prenume_Nume_B1_L09_Tema.png`.
+- Notează pe foaie ce motor ai folosit (EEVEE sau Cycles) și cât a durat randarea.

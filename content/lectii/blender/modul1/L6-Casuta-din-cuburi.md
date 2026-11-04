@@ -89,6 +89,7 @@ Snap = „magnet” care te ajută să muți exact pe grilă sau pe alte obiecte
 | Ce faci | Cum |
 |---------|-----|
 | Pornești / oprești snap | **Shift + Tab** (sau butonul cu magnet din bara de sus) |
+| Meniul magnetului | mica săgeată de lângă magnet, în bara de sus a viewport-ului |
 | Snap pe **grilă** | alege „Increment” în meniul magnetului |
 | Snap pe **muchii / vârfuri** | alege „Vertex” și mută obiectul spre un vârf |
 
