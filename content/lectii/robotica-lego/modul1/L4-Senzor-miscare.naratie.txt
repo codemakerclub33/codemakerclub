@@ -1,0 +1,31 @@
+Lecția patru. Simulatorul de cutremur. Vibrații, intensitate și durată.
+
+Astăzi construiești un simulator de cutremur: un motor care zguduie o platformă cu trei clădiri. Afli ce se întâmplă când schimbi intensitatea și durata. Proiectul se numește Simulatorul de cutremur.
+
+Ce facem azi. La finalul orei ai un simulator de cutremur care scutură o platformă cu trei clădiri. Înveți că un cutremur are o intensitate, adică blocul verde Motor Power, și o durată, adică blocul galben Wait, și vezi ce clădiri rezistă și care cad. Programele din aplicație sunt aceleași pentru toți, iar suplimentul te învață să faci o alarmă cu lumină, sunet și mesaj pe ecran, apoi cutremurul.
+
+Instrucțiuni noi azi. Motor Power alege intensitatea, de la unu la nouă: trei înseamnă cutremur slab, nouă înseamnă puternic. Wait alege durata. Loop repetă blocurile dinăuntru. Display scrie un mesaj pe ecran, Play Sound redă un sunet, iar Hub Light schimbă culoarea hub-ului.
+
+Culorile blocurilor. Blocurile galbene pornesc și conduc programul. Blocurile verzi pun motorul în mișcare și schimbă lumina hub-ului. Blocurile roșii se ocupă de ecran și de sunet, iar cele albastre sunt senzorii. Azi folosim blocuri galbene, verzi și roșii, așezate într-un rând, de la stânga la dreapta. Blocurile din interiorul unui Loop sunt cele repetate. În lecție ai o schemă pentru fiecare program.
+
+Primul pas. Piesele și locul stabil. Pe masă pui hub-ul, motorul, piesele verzi, gri, portocalii și albastre și piesele pentru trei clădiri mici. Simulatorul vibrează, așa că îl pui pe o masă stabilă, departe de margine, fără obiecte fragile lângă el.
+
+Al doilea pas. Proiectul unu: baza, motorul și mecanismul care zguduie. Simulatorul se construiește din patruzeci și șase de pași. Pe fiecare pas ai nevoie de anumite piese, în număr precis. Ia doar atât. Dacă ai calculatorul la îndemână, poți deschide aplicația WeDo doi pentru calculator, unde construcția e arătată pas cu pas. Etapa unu, de la pasul unu la pasul șase: piese verzi, o piesă neagră și o placă portocalie fac baza, apoi pui hub-ul deasupra. Etapa doi, de la pasul șapte la pasul șaisprezece: prinzi motorul, cu cablul lui, lângă hub, apoi un braț verde lung și axa, cu piesele mici de legătură. La pasul cincisprezece întorci modelul. La capătul axei pui piesa roșie și greutatea neagră. Greutatea trebuie să fie în afara axei, nu în centru. Așezată într-o parte, ea face ca motorul să zguduie: când axa se învârte, greutatea trage după ea tot mecanismul.
+
+Al treilea pas. Proiectul unu: platforma, clădirile și programul A. Etapa trei, de la pasul șaptesprezece la pasul treizeci și unu: faci platforma din plăci verzi, cu piese gri și albastre pe margini, apoi piesele portocalii și floarea roșie, ca decor. La pasul treizeci și unu prinzi platforma de brațul motorului. Etapa patru, de la pasul treizeci și doi la pasul patruzeci și șase: construiești prima și a doua clădire din piese albastre și portocalii, apoi a treia clădire, mai înaltă, cu acoperiș. La pasul patruzeci și șase pui cele trei clădiri pe platformă, fără să se atingă între ele. Verifici toți cei patruzeci și șase de pași. Apoi faci programul A: blocul galben Start, blocul verde Motor Power trei, blocul verde Motor This Way, blocul galben Wait de cinci secunde, blocul verde Motor Off. Platforma se zguduie încet cinci secunde, apoi se oprește.
+
+Al patrulea pas. Proiectul doi: cutremurul, programul B și experimentul. Programul B: blocul galben Start, Motor Power nouă, Motor This Way, Wait de cinci secunde, Motor Off. Platforma se zguduie cât de tare poate, cinci secunde. Apoi faci experimentul: pui cele trei clădiri pe platformă și le zguduie de trei ori, cu intensitățile trei, șase și nouă, cinci secunde de fiecare dată. Pentru fiecare clădire notezi dacă stă, se mișcă sau cade. Schimbi doar Motor Power. După fiecare încercare pui clădirile la loc, în aceleași locuri.
+
+Al cincilea pas. Proiectul doi: suplimentul, programul C. Aplicația te învață programele A și B. Aici adaugi comenzi noi și le legi într-un program C: o alarmă, apoi cutremurul. Programul C: blocul galben Start, blocul roșu Play Sound, blocul roșu Display cu mesajul Cutremur, blocul verde Hub Light roșu, blocul galben Wait de două secunde, apoi un bloc galben Loop de trei ori. În Loop pui blocul verde Motor Power șase, Motor This Way, Wait de două secunde, Motor Off și Wait de o secundă. După Loop pui blocul verde Hub Light verde. Alarma sună, mesajul apare, platforma se zguduie de trei ori cu pauză, iar la final lumina devine verde.
+
+Greșeli frecvente. Platforma nu se mișcă: verifici dacă motorul este conectat la hub și dacă hub-ul este conectat la aplicație. Se mișcă, dar clădirile stau: greutatea neagră este prea aproape de axă, verifici pașii cincisprezece și șaisprezece. Simulatorul umblă pe masă: nu este stabil, îl pui pe un loc plat. Clădirile cad la orice intensitate: nu sunt prinse bine sau stau prea aproape de margine. Rezultatele nu se potrivesc: nu pui clădirile în aceleași locuri sau schimbi două lucruri odată.
+
+Proiectul de azi se numește Simulatorul de cutremur. La Minim simulatorul este construit după toți cei patruzeci și șase de pași și programul A zguduie platforma cinci secunde. La Complet adaugi programul B, tabelul cu trei încercări completat și programul C, cu alarmă. Ai terminat Complet când poți spune ce clădire cade prima și la ce intensitate. Dacă rămâi în urmă, lasă simulatorul gata și programul A pornit.
+
+Provocare trei stele, doar dacă ai terminat Complet. Clădirea care rezistă. Construiești o a patra clădire, mai rezistentă decât celelalte: mai lată la bază sau mai scundă. Faci un program care zguduie platforma cinci secunde la Motor Power nouă și vezi dacă toate cele patru clădiri rămân în picioare. Ce schimbare a ajutat cel mai mult clădirea?
+
+Recapitulare. Motor Power alege intensitatea, de la unu la nouă. Wait alege durata cutremurului. Greutatea neagră, așezată într-o parte, face ca mecanismul să zguduie. Un cutremur mai puternic dărâmă mai multe clădiri, mai ales pe cele înalte. Un experiment bun schimbă un singur lucru o dată.
+
+Ce urmează. În lecția cinci construim o broscuță cu aripioare și învățăm să schimbăm direcția motorului și să repetăm o mișcare în ritm.
+
+Succes!

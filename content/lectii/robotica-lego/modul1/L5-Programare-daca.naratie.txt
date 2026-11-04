@@ -1,0 +1,31 @@
+Lecția cinci. Broscuța care înoată. Direcție, repetare și ritm.
+
+Astăzi construiești o broscuță cu aripioare, pe care o pui să înoate: motorul se învârte într-o parte, apoi în cealaltă, iar broscuța își mișcă aripioarele în ritm. Proiectul se numește Broscuța care înoată.
+
+Ce facem azi. La finalul orei ai o broscuță care își mișcă aripioarele: înainte, înapoi, înainte, înapoi. Înveți să schimbi direcția motorului cu blocurile verzi Motor This Way și Motor That Way și să repeți o mișcare cu blocul galben Loop. Programele din aplicație sunt aceleași pentru toți, iar suplimentul te învață să faci broscuța să înoate în ritm, cu sunet, mesaj și lumină.
+
+Instrucțiuni noi azi. Motor This Way și Motor That Way învârt motorul într-o parte sau în cealaltă. Loop repetă blocurile dinăuntru. Wait alege cât durează fiecare mișcare. Motor Power alege viteza, de la unu la nouă. Display, Play Sound și Hub Light dau mesaj, sunet și lumină.
+
+Culorile blocurilor. Blocurile galbene pornesc și conduc programul. Blocurile verzi pun motorul în mișcare și schimbă lumina hub-ului. Blocurile roșii se ocupă de ecran și de sunet, iar cele albastre sunt senzorii. Azi folosim blocuri galbene, verzi și roșii, așezate într-un rând, de la stânga la dreapta. Blocurile din interiorul unui Loop sunt cele repetate. În lecție ai o schemă pentru fiecare program.
+
+Primul pas. Piesele și locul de lucru. Pe masă pui hub-ul, motorul, piesele verzi, portocalii și albastre și cele două piese curbe, transparente, pentru aripioare. Broscuța stă pe masă, pe o suprafață plată.
+
+Al doilea pas. Proiectul unu: corpul, motorul și aripioarele. Broscuța se construiește din treizeci de pași. Pe fiecare pas ai nevoie de anumite piese, în număr precis. Ia doar atât. Dacă ai calculatorul la îndemână, poți deschide aplicația WeDo doi pentru calculator, unde construcția e arătată pas cu pas. Etapa unu, de la pasul unu la pasul șapte: plăcile portocalii și barele verzi fac corpul, apoi pui hub-ul deasupra și piesele albastre. Etapa doi, de la pasul opt la pasul treisprezece: prinzi motorul, cu cablul lui, lângă hub și conectezi cablul la hub, apoi capacul albastru, axa cu capătul roșu și roțile dințate. Etapa trei, de la pasul paisprezece la pasul douăzeci și doi: piesele din spate, cu modelul întors la pasul paisprezece, apoi cele două aripioare curbe, transparente, cu modelul întors la pasul douăzeci și unu. Verifici că motorul este prins ferm și că, atunci când rotești axa cu degetul, aripioarele se mișcă fără să se agațe.
+
+Al treilea pas. Proiectul unu: ochii, picioarele și programul A. Etapa patru, de la pasul douăzeci și trei la pasul treizeci: faci cei doi ochi albi, apoi picioarele din piese mici gri, cu capăt roșu, și le prinzi de corp. Broscuța trebuie să stea dreaptă pe masă. Verifici toți cei treizeci de pași. Apoi faci programul A: blocul galben Start, blocul verde Motor Power cinci, blocul verde Motor This Way, blocul galben Wait de trei secunde, blocul verde Motor Off. Aripioarele se mișcă trei secunde și se opresc.
+
+Al patrulea pas. Proiectul doi: înotul, programul B și experimentul. Programul B: blocul galben Start, apoi un bloc galben Loop de cinci ori. În Loop pui blocul verde Motor This Way, Wait de o secundă, Motor That Way și Wait de o secundă. După Loop pui Motor Off. Aripioarele merg înainte, apoi înapoi, de cinci ori. Apoi faci experimentul: schimbi ritmul, adică cât durează fiecare mișcare, și numeri câte bătăi face broscuța în zece secunde. O bătaie înseamnă înainte și înapoi. Faci trei încercări, cu Wait de două secunde, de o secundă și de jumătate de secundă. Schimbi doar Wait din Loop și pornești cronometrul când apeși Start.
+
+Al cincilea pas. Proiectul doi: suplimentul, programul C. Aplicația te învață programele A și B. Aici adaugi comenzi noi și le legi într-un program C: broscuța care înoată cu sunet, mesaj și lumină. Programul C: blocul galben Start, blocul roșu Display cu mesajul Plici, apoi un bloc galben Loop de patru ori. În Loop pui blocul verde Hub Light verde, blocul roșu Play Sound, Motor Power șapte, Motor This Way, Wait de o secundă, Hub Light roșu, Motor That Way și Wait de o secundă. După Loop pui Motor Off. La fiecare bătaie se aude un sunet, iar lumina este verde la înainte și roșie la înapoi.
+
+Greșeli frecvente. Aripioarele nu se mișcă: verifici dacă motorul este conectat la hub și dacă hub-ul este conectat la aplicație. Axa se învârte, dar aripioarele stau: nu sunt prinse bine de axă, verifici pașii douăzeci și unu și douăzeci și doi. Broscuța se răstoarnă: picioarele nu sunt prinse la fel. Programul B merge doar o dată: blocurile nu sunt în Loop, le tragi înăuntru. Numeri greșit bătăile: o bătaie este înainte și înapoi.
+
+Proiectul de azi se numește Broscuța care înoată. La Minim broscuța este construită după toți cei treizeci de pași și programul A mișcă aripioarele trei secunde. La Complet adaugi programul B, tabelul cu trei încercări completat și programul C, cu sunet. Ai terminat Complet când poți spune cum se schimbă numărul de bătăi când Wait scade. Dacă rămâi în urmă, lasă broscuța gata și programul A pornit.
+
+Provocare trei stele, doar dacă ai terminat Complet. Zece bătăi exact. Faci un program în care broscuța face exact zece bătăi și se oprește singură, cu lumina verde și un sunet la final. Folosești Loop, Wait și Motor Power. Apoi schimbi ritmul astfel încât cele zece bătăi să dureze cât mai puțin, fără ca aripioarele să se agațe. În cât timp ai făcut cele zece bătăi?
+
+Recapitulare. Motor This Way și Motor That Way schimbă direcția motorului. Loop repetă blocurile dinăuntru. Un Wait mai mic înseamnă mai multe bătăi în aceeași perioadă. Motor Power schimbă viteza. Un experiment bun schimbă un singur lucru o dată.
+
+Ce urmează. În lecția șase construim o floare mecanică și o legăm la un senzor de mișcare: floarea se deschide singură când apropii mâna.
+
+Succes!

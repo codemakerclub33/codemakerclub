@@ -7,6 +7,7 @@ import { SCRATCH_M6_MODUL_ID } from '@/lib/scratchM6'
 import { arduinoModulNumar, arduinoTtsApiUrl, isArduinoLesson } from '@/lib/arduino'
 import { isPythonLesson, pythonModulNumar, pythonTtsApiUrl } from '@/lib/python'
 import { isRobloxLesson, robloxModulNumar, robloxTtsApiUrl } from '@/lib/roblox'
+import { isRoboticaLesson, roboticaModulNumar, roboticaTtsApiUrl } from '@/lib/robotica'
 import { cppModulNumar, cppTtsApiUrl, isCppLesson } from '@/lib/cpp'
 import { webModulNumar, webTtsApiUrl, isWebLesson } from '@/lib/web'
 import { isBlenderLesson, blenderModulNumar, blenderTtsApiUrl } from '@/lib/blender'
@@ -76,6 +77,11 @@ export function getAscultaConfig(modulId: string, ordine: number): AscultaConfig
   const rb = robloxModulNumar(modulId)
   if (rb !== null && isRobloxLesson(ordine)) {
     return { apiUrl: o => robloxTtsApiUrl(rb, o), logLabel: `AscultaRobloxM${rb}` }
+  }
+
+  const rob = roboticaModulNumar(modulId)
+  if (rob !== null && isRoboticaLesson(ordine)) {
+    return { apiUrl: o => roboticaTtsApiUrl(rob, o), logLabel: `AscultaRoboticaM${rob}` }
   }
 
   const cp = cppModulNumar(modulId)

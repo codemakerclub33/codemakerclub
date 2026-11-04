@@ -1,0 +1,31 @@
+Lecția trei. Mașina de curse. Viteză, timp și accelerare.
+
+Astăzi construiești o mașină de curse, o lansezi de la linia de start și afli cum se schimbă distanța și timpul când schimbi viteza motorului. La final o faci să accelereze. Proiectul se numește Mașina de curse.
+
+Ce facem azi. La finalul orei ai o mașină de curse care pornește de la linia de start, merge la viteza aleasă de tine și se oprește singură. Înveți că viteza, adică blocul verde Motor Power, și timpul, adică blocul galben Wait, se combină ca să afli cât de departe ajunge mașina. Programele din aplicație sunt aceleași pentru toți, iar suplimentul te învață să faci mașina să accelereze, cu lumini și sunet.
+
+Instrucțiuni noi azi. Motor Power alege viteza, de la unu la nouă: trei înseamnă încet, nouă înseamnă cât de repede poate. Wait așteaptă un timp, cât merge mașina. Motor Off oprește motorul. Hub Light schimbă culoarea hub-ului, iar Play Sound redă un sunet.
+
+Culorile blocurilor. Blocurile galbene pornesc și conduc programul. Blocurile verzi pun motorul în mișcare și schimbă lumina hub-ului. Blocurile roșii se ocupă de ecran și de sunet, iar cele albastre sunt senzorii. Azi folosim blocuri galbene, verzi și roșii, așezate într-un rând, de la stânga la dreapta, lipite unul de altul. În lecție ai o schemă pentru fiecare program.
+
+Primul pas. Piesele și linia de start. Pe masă pui hub-ul, motorul, piesele verzi și portocalii, roțile și elasticul. Pregătești o pistă dreaptă, de cel puțin un metru, cu o riglă lângă mașină și o linie de start făcută din bandă sau creion.
+
+Al doilea pas. Proiectul unu: șasiul, hub-ul și motorul. Mașina se construiește din douăzeci și șapte de pași. Pe fiecare pas ai nevoie de anumite piese, în număr precis. Ia doar atât. Dacă ai calculatorul la îndemână, poți deschide aplicația WeDo doi pentru calculator, unde construcția e arătată pas cu pas. Etapa unu, de la pasul unu la pasul nouă: plăcile verzi și barele lungi, cu axa care trece prin mijloc, apoi piesele mici de legătură și o piesă portocalie. Etapa doi, de la pasul zece la pasul paisprezece: pui hub-ul deasupra șasiului, prinzi motorul cu cablul lui, piesa de legătură și capătul axei, apoi capacul albastru peste hub. Capacul nu are voie să acopere butonul verde. Verifici că axa se învârte liber și că hub-ul și motorul sunt prinse ferm.
+
+Al treilea pas. Proiectul unu: botul mașinii, roțile și programul A. Etapa trei, de la pasul cincisprezece la pasul douăzeci și unu: cadrul gri cu piesa portocalie, bara lungă verde și plăcile portocalii, apoi placa verde din față, ca un spoiler, și două piese mici. La pasul douăzeci și unu prinzi partea din față de șasiu. Etapa patru, de la pasul douăzeci și doi la pasul douăzeci și șapte: la pasul douăzeci și doi conectezi senzorul la hub, în portul liber, apoi pui piesa roții din spate și elasticul, care leagă motorul de axă, și la final roțile. Verifici cei douăzeci și șapte de pași: mașina ta seamănă cu poza de pe copertă? Senzorul rămâne conectat, dar azi nu îl programăm. Apoi faci programul A: blocul galben Start, blocul verde Motor Power cinci, blocul verde Motor This Way, blocul galben Wait de trei secunde, blocul verde Motor Off. Mașina merge trei secunde la viteza cinci și se oprește.
+
+Al patrulea pas. Proiectul doi: cursa, programul B și experimentul. Programul B: blocul galben Start, Motor Power nouă, Motor This Way, Wait de două secunde, Motor Off. Mașina pornește cât de repede poate, două secunde. Apoi faci experimentul: lansezi mașina de la linia de start de trei ori, cu vitezele trei, șase și nouă, și măsori cu rigla cât de departe a ajuns în două secunde. Notezi fiecare rezultat în tabel. Schimbi doar Motor Power. Wait rămâne două secunde, iar mașina pornește de fiecare dată de la linia de start.
+
+Al cincilea pas. Proiectul doi: suplimentul, programul C. Aplicația te învață programele A și B. Aici adaugi comenzi noi și le legi într-un program C: o mașină care accelerează. Programul C: blocul galben Start, blocul roșu Play Sound, blocul verde Hub Light verde, Motor Power trei, Motor This Way, Wait de o secundă, Motor Power șase, Wait de o secundă, Motor Power nouă, Wait de o secundă, Motor Off și Hub Light roșu. Mașina pornește încet, accelerează în trei trepte, iar la final lumina devine roșie.
+
+Greșeli frecvente. Mașina nu merge drept: roțile din față nu sunt prinse la fel. Motorul merge, dar roțile stau: elasticul a sărit, îl pui la loc, întins. Roțile patinează la viteză mare: pista este prea lucioasă, încerci pe o suprafață mai aspră. Rezultatele nu se potrivesc: nu pornești de la aceeași linie sau schimbi două lucruri odată. Programul C pare la fel ca B: verifici că Motor Power se schimbă între blocurile Wait.
+
+Proiectul de azi se numește Mașina de curse. La Minim mașina este construită după toți cei douăzeci și șapte de pași și programul A merge trei secunde și se oprește. La Complet adaugi programul B, tabelul cu trei încercări completat și programul C, cu accelerare. Ai terminat Complet când poți spune cum se schimbă distanța când crește viteza. Dacă rămâi în urmă, lasă mașina gata și programul A pornit.
+
+Provocare trei stele, doar dacă ai terminat Complet. Linia de sosire. Pui o linie de sosire la un metru de start. Faci un program care pornește mașina de la start, o oprește după linia de sosire, la cel mult douăzeci de centimetri, aprinde lumina verde și redă un sunet. Reglezi viteza din Motor Power și timpul din Wait până îți iese. Te-ai oprit în cei douăzeci de centimetri după linie?
+
+Recapitulare. Motor Power alege viteza, de la unu la nouă. Wait alege cât timp merge mașina. O viteză mai mare duce mașina mai departe în același timp. Accelerarea se face schimbând Motor Power între blocurile Wait. Un experiment bun schimbă un singur lucru o dată.
+
+Ce urmează. În lecția patru construim un simulator de cutremur: un motor care zguduie o platformă cu clădiri, iar tu afli ce se întâmplă când schimbi intensitatea și durata.
+
+Succes!

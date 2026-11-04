@@ -1,0 +1,31 @@
+Lecția șapte. Stăvilarul. Timp, direcție și semnale.
+
+Astăzi construiești un stăvilar: o poartă care se ridică și coboară ca să lase o barcă să treacă. Afli cum controlezi cât de mult se ridică poarta cu timpul și faci un program cu semnale de lumină. Proiectul se numește Stăvilarul.
+
+Ce facem azi. La finalul orei ai un stăvilar care ridică poarta, o ține deschisă cât trece barca și o coboară la loc. Înveți că timpul, adică blocul galben Wait, și direcția motorului, adică blocurile verzi Motor This Way și Motor That Way, hotărăsc cât se ridică poarta. Programele din aplicație sunt aceleași pentru toți, iar suplimentul îți arată cum faci un stăvilar cu semnale: lumină roșie și verde, sunet și mesaj.
+
+Instrucțiuni noi azi. Motor This Way și Motor That Way ridică sau coboară poarta: într-o parte ridică, în cealaltă coboară. Wait alege cât se mișcă motorul, deci cât se ridică poarta. Hub Light folosește lumina hub-ului ca semnal: roșu înseamnă închis, verde înseamnă deschis. Play Sound și Display dau sunet și mesaj. Loop repetă blocurile dinăuntru.
+
+Culorile blocurilor. Blocurile galbene pornesc și conduc programul. Blocurile verzi pun motorul în mișcare și schimbă lumina hub-ului. Blocurile roșii se ocupă de ecran și de sunet, iar cele albastre sunt senzorii. Azi folosim blocuri galbene, verzi și roșii, așezate într-un rând, de la stânga la dreapta. În lecție ai o schemă pentru fiecare program.
+
+Primul pas. Piesele și locul de lucru. Pe masă pui hub-ul, motorul, piesele verzi, portocalii, albastre și gri și piesele pentru barcă. Stăvilarul stă pe masă, cu loc în față pentru barcă.
+
+Al doilea pas. Proiectul unu: baza, hub-ul, motorul și mecanismul porții. Stăvilarul se construiește din treizeci și opt de pași. Pe fiecare pas ai nevoie de anumite piese, în număr precis. Ia doar atât. Dacă ai calculatorul la îndemână, poți deschide aplicația WeDo doi pentru calculator, unde construcția e arătată pas cu pas. Etapa unu, de la pasul unu la pasul zece: plăcile portocalii și barele lungi verzi fac baza, apoi pui hub-ul deasupra. Etapa doi, de la pasul unsprezece la pasul douăzeci și cinci: prinzi motorul, cu cablul lui, lângă hub și conectezi cablul la hub, apoi axa, roata mică și piesa roșie de la capătul ei. La pasul douăzeci întorci modelul și prinzi mecanismul de bază. Verifici că motorul este prins ferm și că, atunci când rotești axa cu degetul, roata se învârte fără să se agațe.
+
+Al treilea pas. Proiectul unu: zidul, poarta, barca și programul A. Etapa trei, de la pasul douăzeci și șase la pasul treizeci și trei: faci zidul din piese albastre, cu ferestre, și învelișul verde, îl prinzi de baza cu motorul și pui la pasul treizeci și trei cele două plăci gri, care sunt poarta. Poarta trebuie să alunece ușor în sus și în jos. Etapa patru, de la pasul treizeci și patru la pasul treizeci și opt: faci barca dintr-o placă portocalie, un bloc negru și o piesă albastră și o pui în fața zidului. Verifici toți cei treizeci și opt de pași. Apoi faci programul A: blocul galben Start, blocul verde Motor Power cinci, blocul verde Motor This Way, blocul galben Wait de trei secunde, blocul verde Motor Off. Poarta se mișcă trei secunde și se oprește. Observi dacă s-a ridicat sau a coborât: pentru cealaltă mișcare învârți motorul în partea cealaltă.
+
+Al patrulea pas. Proiectul doi: barca trece, programul B și experimentul. Programul B: Start, Motor This Way, Wait de trei secunde, Motor Off, Wait de cinci secunde, Motor That Way, Wait de trei secunde, Motor Off. Poarta se ridică, stă deschisă cinci secunde, cât trece barca, apoi coboară. Apoi faci experimentul: schimbi cât timp merge motorul și măsori cu rigla cât s-a ridicat poarta. Faci trei încercări, cu Wait de o secundă, de două secunde și de trei secunde, cu Motor Power cinci la toate. Pornești de fiecare dată cu poarta jos. Schimbi doar Wait.
+
+Al cincilea pas. Proiectul doi: suplimentul, programul C. Aplicația te învață programele A și B. Aici adaugi comenzi noi și le legi într-un program C: un stăvilar cu semnale, ca la un drum cu semafor. Programul C: blocul galben Start, blocul verde Hub Light roșu, blocul roșu Display cu mesajul Așteaptă, Wait de două secunde, Hub Light verde, blocul roșu Play Sound, Motor This Way, Wait de trei secunde și Motor Off. Apoi Wait de cinci secunde, Hub Light roșu, Motor That Way, Wait de trei secunde și Motor Off. Lumina este roșie și apare mesajul, apoi lumina devine verde și se aude un sunet, poarta se ridică, barca trece, poarta coboară, iar lumina redevine roșie.
+
+Greșeli frecvente. Poarta nu se mișcă: verifici dacă motorul este conectat la hub și dacă hub-ul este conectat la aplicație. Axa se învârte, dar poarta stă: mecanismul nu este prins de poartă, verifici pașii douăzeci până la douăzeci și cinci și treizeci și trei. Poarta se ridică prea mult sau cade: Wait este prea mare, scazi timpul. Poarta nu coboară la loc: la a doua mișcare ai uitat Motor That Way. Barca nu trece: poarta nu stă suficient de sus, mărești Wait din prima mișcare.
+
+Proiectul de azi se numește Stăvilarul. La Minim stăvilarul este construit după toți cei treizeci și opt de pași și programul A mișcă poarta trei secunde. La Complet adaugi programul B, tabelul cu trei încercări completat și programul C, cu semnale. Ai terminat Complet când barca trece prin stăvilar, iar lumina schimbă culoarea. Dacă rămâi în urmă, lasă stăvilarul gata și programul A pornit.
+
+Provocare trei stele, doar dacă ai terminat Complet. Două bărci. Faci un program în care două bărci trec una după alta. Poarta se ridică, stă deschisă cât trece prima barcă, se închide, apoi se deschide din nou pentru a doua. Folosești un Loop de două ori și semnalele din programul C, roșu și verde. Încerci ca între cele două bărci poarta să stea închisă exact trei secunde. Ce blocuri ai pus în Loop?
+
+Recapitulare. Motor This Way și Motor That Way ridică și coboară poarta. Wait hotărăște cât se mișcă poarta. Hub Light poate fi un semnal: roșu înseamnă oprit, verde înseamnă liber. Display și Play Sound anunță ce se întâmplă. Un experiment bun schimbă un singur lucru o dată.
+
+Ce urmează. În lecția opt construim un elicopter de salvare, cu troliu și sfoară, și facem semnale care clipesc.
+
+Succes!

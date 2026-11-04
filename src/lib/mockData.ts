@@ -108,7 +108,7 @@ export const module = [
   { id: 'm44', curs_id: 'c5', nume: 'Modul 6 — Jocuri web', ordine: 6, badge: 'Web Game Maker', descriere: '10 lecții în care faci jocuri web cu HTML, CSS și JavaScript: vânătoare de monștri, clicker, Simon spune, cuvântul zilei, dino în deșert și păsărica zburătoare. La final: colecția ta de jocuri.' },
   { id: 'm45', curs_id: 'c13', nume: 'Modul 1 — AI pentru copii', ordine: 1, badge: 'AI Explorer', descriere: 'Ce este inteligența artificială, cum învață din exemple, unde greșește și cum o folosim în siguranță.' },
   // Robotică WeDo 2.0
-  { id: 'm12', curs_id: 'c6', nume: 'Modul 1 — Construcție și senzori (WeDo 2.0)', ordine: 1, badge: 'Robot Starter' },
+  { id: 'm12', curs_id: 'c6', nume: 'Modul 1 — Construcție și senzori (WeDo 2.0)', ordine: 1, badge: 'Robot Starter', descriere: '10 lecții în care construiești roboți LEGO WeDo 2.0 pas cu pas și îi programezi cu blocuri colorate: motor, viteză, timp, repetări, semnale și senzori. Pornești de la roverul Milo și ajungi la un rover lunar cu misiune. La final îți prezinți robotul și primești insigna Robot Starter.' },
   { id: 'm13', curs_id: 'c6', nume: 'Modul 2 — Proiecte avansate (WeDo 2.0)', ordine: 2, badge: 'Robot Inventor' },
   // Scratch — 6 module × 10 lecții (8–10 ani; M5 și M6 = 10+)
   {
@@ -525,16 +525,16 @@ export const lectii = [
     'Proiect: Ghidul meu despre AI',
   ]),
   ...genLectii('m12', [
-    'Ce este WeDo 2.0? Hub + primul motor',
-    'Motor: viteză, timp, direcție',
-    'Senzor de înclinare',
-    'Senzor de mișcare (distanță)',
-    'Programe cu „dacă”',
-    'Proiect: Vehiculul meu',
-    'Proiect: Ventilator / elice',
-    'Proiect: Creatura care reacționează',
-    'Proiect combinat (motor + 2 senzori)',
-    'Showcase + badge Robot Starter',
+    'Milo, roverul de știință',
+    'Robotul care trage',
+    'Mașina de curse',
+    'Simulatorul de cutremur',
+    'Broscuța care înoată',
+    'Floarea care înflorește',
+    'Stăvilarul',
+    'Elicopterul de salvare',
+    'Camionul de reciclare',
+    'Roverul lunar + insigna Robot Starter',
   ]),
   ...genLectii('m13', [
     'Recap M1 + misiunea Modulului 2',

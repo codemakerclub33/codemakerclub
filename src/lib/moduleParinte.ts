@@ -45,7 +45,7 @@ export const descriereModulParinte: Record<string, string> = {
   m45: 'Copilul află ce este inteligența artificială, cum învață din exemple, de ce mai greșește și cum o folosește în siguranță. Lucrează cu jocuri, discuții și foi de lucru. La final face propriul „Ghid despre AI”.',
 
   // Robotică LEGO WeDo 2.0
-  m12: 'Copilul descoperă robotica cu LEGO WeDo 2.0: construiește modele și le dă viață cu motoare și senzori, folosind programare cu blocuri. Face un vehicul, un ventilator și o creatură care reacționează la ce vede și simte.',
+  m12: 'Copilul descoperă robotica cu LEGO WeDo 2.0: construiește pas cu pas zece modele, de la un rover de știință până la un rover lunar, și le dă viață cu motoare și senzori, folosind programare cu blocuri colorate. Învață viteza, timpul, repetările și semnalele, iar la final își prezintă robotul. Are nevoie de kitul LEGO WeDo 2.0 și de un calculator cu Bluetooth.',
   m13: 'Copilul construiește roboți mai avansați: un braț care ridică, o barieră automată, o alarmă și un robot care sortează. Lucrează și în echipă la o provocare cu pistă, apoi își prezintă proiectul final.',
 
   // micro:bit (blocuri)
