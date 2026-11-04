@@ -180,15 +180,16 @@ Acum alegi tu culorile, nu le iei dintr-un tabel.
 
 ---
 
-## Bonus ★★★ — Provocare: Paleta de materiale
+## Bonus ★★★ — Provocare: Burgerul gigant
 *Doar dacă ai terminat Complet.*
 
-Fă o grilă de 12 sfere care arată cum se schimbă materialul.
+Construiește un burger cu straturi, fiecare cu materialul lui.
 
-- [ ] 12 sfere în grilă de 4 coloane și 3 rânduri, la distanțe egale
-- [ ] Coloanele au `Roughness` `0`, `0.3`, `0.6`, `1`
-- [ ] Rândurile au `Metallic` `0`, `0.5`, `1`
-- [ ] Fiecare sferă are numele ei și o culoare la alegere
+- [ ] 6 straturi: chiflă jos, carne, brânză, roșie, salată, chiflă sus
+- [ ] Cel puțin 5 materiale diferite, cu `Base Color` potrivit
+- [ ] Brânza e mai lucioasă decât chifla (`Roughness` diferit)
+- [ ] Semințe de susan: 6 sfere mici, cu același material pus prin `Ctrl + L` → `Link Materials`
+- [ ] Verifici culorile în `Material Preview`
 
 ## Recapitulare pe scurt
 1. **Material** = cum arată suprafața  
@@ -205,4 +206,8 @@ Priveste în jur: ce e lucios, ce e mat? Cum ai descrie un măr, o monedă și u
 - În ce mod vezi culorile în viewport?
 
 ## Temă
-Alege 3 obiecte din cameră și scrie ce valori de Roughness și Metallic ar avea.
+Alege un obiect din casă (o cană, o jucărie, un măr) și **colorează-l în Blender**.
+- Construiește-l simplu, din forme de bază.
+- Dă fiecărei piese materialul potrivit: mat, lucios sau metalic.
+- Notează pe foaie valorile `Roughness` și `Metallic` alese și de ce.
+- Dă nume pieselor (`F2`) și salvează fișierul `Prenume_Nume_B1_L07_Tema.blend`.
