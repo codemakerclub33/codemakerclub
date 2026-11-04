@@ -1,3 +1,4 @@
+import { refuzAccesTts } from '@/lib/accesLectie'
 import { getScratchM6Speech, speechJsonResponse } from '@/lib/scratchM6Tts'
 import { SCRATCH_M6_LESSON_COUNT } from '@/lib/scratchM6'
 
@@ -13,6 +14,9 @@ function parseLesson(searchParams: URLSearchParams): number | null {
 
 /** Scratch Modul 6 · L1–L10 — ?l=1 … ?l=10 */
 export async function GET(request: Request) {
+  const refuz = await refuzAccesTts(request)
+  if (refuz) return refuz
+
   const lesson = parseLesson(new URL(request.url).searchParams)
   if (lesson === null) {
     return Response.json(

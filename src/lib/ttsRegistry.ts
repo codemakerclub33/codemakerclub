@@ -12,6 +12,7 @@ import { webModulNumar, webTtsApiUrl, isWebLesson } from '@/lib/web'
 import { isBlenderLesson, blenderModulNumar, blenderTtsApiUrl } from '@/lib/blender'
 import { isMicrobitLesson, microbitModulNumar, microbitTtsApiUrl } from '@/lib/microbit'
 import { isTinkercadLesson, tinkercadModulNumar, tinkercadTtsApiUrl } from '@/lib/tinkercad'
+import { module as moduleCurriculum } from '@/lib/mockData'
 
 /**
  * Registru unic pentru butonul „Ascultă”.
@@ -85,6 +86,25 @@ export function getAscultaConfig(modulId: string, ordine: number): AscultaConfig
   const wb = webModulNumar(modulId)
   if (wb !== null && isWebLesson(ordine)) {
     return { apiUrl: o => webTtsApiUrl(wb, o), logLabel: `AscultaWebM${wb}` }
+  }
+  return null
+}
+
+/** Inversul lui `getAscultaConfig`: lecția căreia îi aparține o cerere către /api/tts/... */
+export function lectiePentruTts(url: URL): { modulId: string; ordine: number } | null {
+  if (url.pathname === '/api/tts/scratch-l1') return { modulId: SCRATCH_M1_MODUL_ID, ordine: 1 }
+
+  const ordine = Number.parseInt(url.searchParams.get('l') ?? url.searchParams.get('ordine') ?? '', 10)
+  if (!Number.isInteger(ordine)) return null
+  const modulCerut = url.searchParams.get('m') ?? url.searchParams.get('modul')
+
+  for (const m of moduleCurriculum) {
+    const cfg = getAscultaConfig(m.id, ordine)
+    if (!cfg) continue
+    const asteptat = new URL(cfg.apiUrl(ordine), url.origin)
+    if (asteptat.pathname === url.pathname && asteptat.searchParams.get('m') === modulCerut) {
+      return { modulId: m.id, ordine }
+    }
   }
   return null
 }

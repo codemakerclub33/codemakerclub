@@ -1,3 +1,4 @@
+import { refuzAccesTts } from '@/lib/accesLectie'
 import { getTinkercadSpeech, speechJsonResponse } from '@/lib/tinkercadTts'
 import { TINKERCAD_LESSON_COUNT } from '@/lib/tinkercad'
 
@@ -16,6 +17,9 @@ function parseIntParam(searchParams: URLSearchParams, keys: string[]): number | 
 
 /** Tinkercad · ?m=1…5 & ?l=1…10 */
 export async function GET(request: Request) {
+  const refuz = await refuzAccesTts(request)
+  if (refuz) return refuz
+
   const sp = new URL(request.url).searchParams
   const modul = parseIntParam(sp, ['m', 'modul'])
   const lesson = parseIntParam(sp, ['l', 'ordine'])
