@@ -1,15 +1,15 @@
-# LECȚIA 8 — Fotografia casei
+# LECȚIA 8 — Regizorul de lumini
 ### Lumini și cameră
 **Modulul 1 · Primii pași în Blender**  
 **Code Maker Club · Blender Starter**
 
-> Azi înveți cum să **luminezi** scena și cum să pui **camera** exact unde vrei, ca un regizor de film.  
-> Proiect: **„Fotografia casei”** · `Prenume_Nume_B1_L08.blend`
+> Azi ești **regizorul** unei scene de film: construiești o **tabără de noapte**, cu cort și foc, apoi o luminezi și îți alegi **camera**, ca într-un film adevărat.  
+> Proiect: **„Regizorul de lumini”** · `Prenume_Nume_B1_L08.blend`
 
 ---
 
 ## Ce facem azi
-La finalul orei scena ta e bine luminată și camera privește frumos către casă. Aceeași casă arată **foarte diferit** la prânz și la apus. Lumina face jumătate din frumusețea unui model, iar camera hotărăște ce vede privitorul.
+La finalul orei ai o tabără de noapte: un cort, un foc cu bușteni și o lună. Scena e luminată de focul din mijloc și de lumina lunii, iar camera privește frumos către ea. Aceeași tabără arată **foarte diferit** la apus și la miezul nopții. Lumina face jumătate din frumusețea unui model, iar camera hotărăște ce vede privitorul.
 
 ---
 
@@ -18,13 +18,14 @@ La finalul orei scena ta e bine luminată și camera privește frumos către cas
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap L7 |
-| 10–50 | Cele 4 tipuri de lumină |
-| 50–80 | Culoare și putere |
-| 80–100 | Camera: poziție și vedere |
-| 100–115 | Creezi tu: dispoziția mea |
-| 115–120 | Recap, quiz |
+| 10–40 | Construim tabăra: sol, cort, foc, bușteni |
+| 40–50 | Culorile taberei |
+| 50–75 | Tipuri de lumină, culoare și putere |
+| 75–90 | Experimentul nopții |
+| 90–105 | Camera, regula treimilor, lentila |
+| 105–120 | Creezi tu: dispoziția taberei · recap, quiz |
 
-**Ce ai nevoie:** Blender 4.2 · casa din L7
+**Ce ai nevoie:** Blender 4.2 · scena de start (cubul de start îl ștergi)
 
 ---
 
@@ -41,46 +42,79 @@ La finalul orei scena ta e bine luminată și camera privește frumos către cas
 
 ## Pas cu pas
 
-### 1) Tipuri de lumină
+### 1) Construim tabăra
+Pornești de la **File → New → General** și ștergi cubul cu **X**. Construiești tabăra din forme simple. Valorile sunt sugestii: le scrii în panoul **N** sau în panoul **Adjust Last Operation**.
+
+| Piesă | Forma | Reglaje | Locul |
+|-------|-------|---------|-------|
+| **Solul** | Plane | **S** `6` **Enter** | centru, Z `0` |
+| **Cortul** | Cone | Vertices `4`, Radius `1.5`, Depth `1.8`; apoi **R Z 45** și **Ctrl + A → Rotation** | X `−3`, Y `2`, Z `0.9` |
+| **Focul** | Cone | Radius `0.3`, Depth `0.7` | X `0`, Y `0`, Z `0.35` |
+| **Buștean 1 și 2** | Cylinder | Radius `0.12`, Depth `1.2`; rotit **R X 90** | X `1.5` și X `−1.5`, Y `0`, Z `0.12` |
+| **Buștean 3 și 4** | Cylinder | Radius `0.12`, Depth `1.2`; rotit **R Y 90** | Y `1.5` și Y `−1.5`, X `0`, Z `0.12` |
+
+Dă fiecărei piese un nume cu **F2** (`Sol`, `Cort`, `Foc`, `Bustean_1`…).
+
+**Încearcă tu — tabăra (20 min)**  
+- [ ] Solul e un plan mare, iar cortul stă pe el  
+- [ ] Focul e în centru, înconjurat de 4 bușteni  
+- [ ] Din vederea de sus (`7`) bușteanul 1 și 2 sunt pe axa X, iar 3 și 4 pe axa Y  
+- [ ] Toate piesele au nume  
+
+### 2) Culorile taberei
+Folosește materialele din lecția 7 (**Material Preview**, fila Material, **New**):
+
+| Piesă | Culoare |
+|-------|---------|
+| Solul | verde închis sau maro, `Roughness` `0.9` |
+| Cortul | roșu sau albastru |
+| Focul | portocaliu |
+| Buștenii | maro, `Roughness` `0.8` |
+
+**Încearcă tu — culorile (4 min)**  
+- [ ] Fiecare piesă are culoarea ei  
+- [ ] Buștenii au același material (**Ctrl + L → Link Materials**)  
+
+### 3) Tipuri de lumină
 **Shift + A → Light:**
 
 | Lumină | Cum arată | Bună pentru |
 |--------|-----------|-------------|
-| **Point** | bec care luminează în toate direcțiile | lampă, lumânare |
-| **Sun** | lumină de soare, paralelă | scene în aer liber |
+| **Point** | bec care luminează în toate direcțiile | foc, lumânare, lampă |
+| **Sun** | lumină de soare sau de lună, paralelă | scene în aer liber |
 | **Spot** | con de lumină | far, lanternă |
 | **Area** | panou luminos | studio foto, ferestre |
 
-**Încearcă tu — tipurile de lumină (2 min)**  
+**Încearcă tu — tipurile de lumină (3 min)**  
 - [ ] Ai adăugat cu **Shift + A → Light** o lumină Sun și una Point  
 - [ ] Știi la ce e bună fiecare  
 
-### 2) Setări (Properties → tab Light, becul verde)
-- **Color** — culoarea luminii (galben cald, albastru rece).  
+### 4) Setări (Properties → tab Light, becul verde)
+- **Color** — culoarea luminii (portocaliu cald, albastru rece).  
 - **Power / Strength** — cât de puternică e.  
-- Pentru **Sun**: **Strength** 2–4. Pentru **Point**: **Power** 500–1000 W.
+- Pentru **Sun**: **Strength** `0.3`–`4`. Pentru **Point**: **Power** `500`–`1000` W.
 
 > Lumina **Sun** se rotește cu **R** ca să se schimbe unghiul umbrei; poziția ei nu contează, doar **direcția**.
 
-**Încearcă tu — setările luminii (3 min)**  
+**Încearcă tu — setările luminii (4 min)**  
 - [ ] Ai schimbat **Color** și **Strength** sau **Power**  
 - [ ] Scena se luminează sau se întunecă după setări  
 
-### 3) Experimentul zilei
+### 5) Experimentul nopții
+Treci în modul **Rendered** (sfera din dreapta sus). Pe rând, aprinzi și stingi:
 
 | Test | Ce faci | Ce vezi |
 |------|---------|---------|
-| **Prânz** | Sun, Strength 3, aproape de verticală | umbre scurte, culori vii |
-| **Apus** | Sun aproape de orizontală, culoare portocalie | umbre lungi, atmosferă caldă |
-| **Seară** | Point la geam, culoare galbenă | casa „se luminează” |
+| **Focul** | **Point** portocaliu, Power `500`, deasupra focului (Z `0.9`) | cortul și buștenii se luminează cald |
+| **Luna** | **Sun** albastru deschis, Strength `0.3`, rotit ca să vină de sus | umbre lungi și albăstrii |
+| **Reflector** | **Spot** alb, Power `1000`, deasupra cortului | cortul iese în evidență |
 
-Treci în modul **Rendered** (sfera din dreapta sus) ca să vezi umbrele.
+**Încearcă tu — experimentul nopții (6 min)**  
+- [ ] Cu Point portocaliu cortul e luminat cald  
+- [ ] Cu Sun albastru slab apar umbre lungi  
+- [ ] Ai încercat și Spot, și știi ce schimbă  
 
-**Încearcă tu — experimentul zilei (3–4 min)**  
-- [ ] Cu Sun aproape vertical umbrele sunt scurte (prânz)  
-- [ ] Cu Sun aproape orizontal umbrele sunt lungi (apus)  
-
-### 4) Camera
+### 6) Camera
 Camera din scena de start e la dreapta și sus. O poți muta cu **G** și roti cu **R**, dar există un mod mult mai ușor:
 
 1. Plasează-te în viewport în **unghiul în care vrei fotografia**.  
@@ -92,10 +126,9 @@ Camera din scena de start e la dreapta și sus. O poți muta cu **G** și roti c
 - [ ] Cu **Ctrl + Alt + Numpad 0** camera sare la vederea ta  
 - [ ] Cu **Numpad 0** vezi poza prin cameră  
 
-### 5) Regula treimilor
+### 7) Regula treimilor și lentila
 Împarte cu gândul ecranul în 3×3 pătrate. Pune subiectul **pe linii sau la intersecții**, nu mereu în mijloc. În **Properties → Camera → Viewport Display** bifează **Composition Guides → Thirds** (liniile apar în vederea camerei).
 
-### 6) Lentila camerei
 **Properties → tab Camera → Focal Length:**
 
 | Valoare | Efect |
@@ -106,29 +139,29 @@ Camera din scena de start e la dreapta și sus. O poți muta cu **G** și roti c
 
 Pentru scena noastră, **35–50 mm** merge bine.
 
-**Încearcă tu — lentila (2 min)**  
-- [ ] Ai încercat 24 mm, 50 mm și 85 mm  
-- [ ] Pentru scena ta ai ales o valoare între 35 și 50 mm  
+**Încearcă tu — treimile și lentila (3 min)**  
+- [ ] Ai bifat Thirds și ai pus cortul sau focul pe o linie  
+- [ ] Ai încercat 24 mm, 50 mm și 85 mm, apoi ai ales o valoare între 35 și 50 mm  
 
-### 7) Complet — compoziția finală
-- Un **Sun** cald (portocaliu deschis, Strength 3).  
-- Un **Area** mic, albastru, **Power 200**, ca lumină de umplere din partea opusă.  
-- Camera la 35 mm, așezată din colț, ca să vezi **două fețe** ale casei.
+### 8) Complet — noaptea cu foc și lună
+- Un **Point** portocaliu deasupra focului, Power `500`.  
+- Un **Sun** albastru deschis, Strength `0.3`, ca lumină de lună.  
+- Camera la 35 mm, așezată dintr-un colț, ca să vezi **cortul și focul** în aceeași poză.
 
-**Încearcă tu — compoziția (4 min)**  
-- [ ] Ai un Sun cald și un Area albastru din partea opusă  
-- [ ] Camera vede două fețe ale casei  
+**Încearcă tu — noaptea (4 min)**  
+- [ ] Ai un Point portocaliu la foc și un Sun albastru slab  
+- [ ] Camera vede cortul și focul, cu compoziție în treimi  
 
-### 8) Creează tu — „Dispoziția mea”
-Alegi tu ce simte cine se uită la poza casei.
-1. Alege o dispoziție: **dimineață liniștită**, **seară caldă**, **noapte cu lună** sau **casa în care e petrecere**.  
-2. Folosește **cel puțin 2 lumini** cu **culori diferite** (de exemplu galben cald și albastru rece). Dă fiecărei lumini un nume cu **F2** (`Soarele`, `Umplere`).  
+### 9) Creează tu — „Dispoziția taberei”
+Alegi tu ce simte cine se uită la poza taberei.
+1. Alege o dispoziție: **apus liniștit**, **noapte cu lună plină**, **furtună** sau **petrecere la foc**.  
+2. Folosește **cel puțin 2 lumini** cu **culori diferite** (de exemplu portocaliu cald și albastru rece). Dă fiecărei lumini un nume cu **F2** (`Foc_lumina`, `Luna`).  
 3. Pune camera într-un **alt colț** decât la „Complet” și respectă regula treimilor.  
 4. Scrie pe o foaie: tipul și puterea fiecărei lumini și o propoziție despre ce simte cine privește poza.
 
 **Gata când:**  
 - [ ] Cel puțin 2 lumini cu culori diferite și nume  
-- [ ] Camera vede casa dintr-un alt colț, cu compoziție în treimi  
+- [ ] Camera vede tabăra dintr-un alt colț, cu compoziție în treimi  
 - [ ] Am notat valorile și propoziția  
 - [ ] Un coleg ghicește ce dispoziție ai ales  
 
@@ -137,24 +170,26 @@ Alegi tu ce simte cine se uită la poza casei.
 ## Greșeli frecvente
 1. **Totul e întunecat** — Power prea mic sau lumina e în spatele obiectelor.  
 2. **Lumina Sun „nu schimbă nimic” când o muți** — pentru Sun contează doar **rotația**.  
-3. **Camera nu vede casa** — Ctrl + Alt + Numpad 0, apoi verifică cu Numpad 0.  
+3. **Camera nu vede tabăra** — Ctrl + Alt + Numpad 0, apoi verifică cu Numpad 0.  
 4. **N-ai umbre** — treci în **Rendered**.  
-5. **Camera se mișcă singură** — ai uitat **Camera to View** bifat; debifează.
+5. **Camera se mișcă singură** — ai uitat **Camera to View** bifat; debifează.  
+6. **Cortul arată ca o piramidă strâmbă** — nu ai aplicat rotirea: **R Z 45**, apoi **Ctrl + A → Rotation**.
 
 ---
 
-## De făcut azi — „Fotografia casei”
+## De făcut azi — „Regizorul de lumini”
 
 ### Minim vs Complet
 
 | | Ce trebuie |
 |--|------------|
-| **Minim** | Lumină + cameră care vede casa |
-| **Complet** | Minim + 4 tipuri de lumină încercate + 2 lumini finale + regula treimilor + „Dispoziția mea” (2 lumini colorate, valori notate) |
+| **Minim** | Tabără: sol, cort, foc, bușteni · o lumină · camera vede tabăra |
+| **Complet** | Minim + culori + 4 tipuri de lumină încercate + Point și Sun finale + regula treimilor + „Dispoziția taberei” (2 lumini colorate, valori notate) |
 
 ### Pasul 1 — Minim
+- [ ] Tabăra e construită  
 - [ ] O lumină potrivită  
-- [ ] Camera vede casa (Numpad 0)  
+- [ ] Camera vede tabăra (Numpad 0)  
 
 **→ Minim când:** un coleg recunoaște ce ai făcut, fără explicații.  
 
@@ -162,20 +197,20 @@ Alegi tu ce simte cine se uită la poza casei.
 - [ ] Am testat Point, Sun, Spot, Area  
 - [ ] Culoare și putere reglate  
 - [ ] Compoziție cu treimi  
-- [ ] Am făcut „Dispoziția mea”, cu 2 lumini colorate și valorile notate  
+- [ ] Am făcut „Dispoziția taberei”, cu 2 lumini colorate și valorile notate  
 - [ ] Numele `B1_L08` e corect
 
 ---
 
-## Bonus ★★★ — Provocare: Aceeași casă, trei momente
+## Bonus ★★★ — Provocare: Peștera cu cristale magice
 *Doar dacă ai terminat Complet.*
 
-Aceeași scenă, trei momente ale zilei, doar din lumini.
+O scenă întunecată, în care singura lumină vine din cristale.
 
-- [ ] Salvezi 3 fișiere: `_dimineata`, `_apus`, `_noapte`
-- [ ] Casa și camera rămân la fel, se schimbă doar luminile
-- [ ] Noaptea: o lumină `Point` sau `Spot` la ușă sau la geam
-- [ ] Un coleg ghicește momentul din ecranul `Rendered`
+- [ ] Fundal negru (Properties → World → Color) și fără celelalte lumini
+- [ ] 4 cristale: conuri înalte, cu `Vertices` `5`, pe sol
+- [ ] Fiecare cristal are propria lumină `Point` în altă culoare (violet, albastru, verde, roz), Power `50`–`100` W
+- [ ] Camera arată cristalele, cu regula treimilor; verifici în `Rendered`
 
 ## Recapitulare pe scurt
 1. **Point · Sun · Spot · Area**  
@@ -187,9 +222,12 @@ Aceeași scenă, trei momente ale zilei, doar din lumini.
 Fă poze ale aceluiași obiect la ore diferite și observă cum se schimbă umbrele. Încearcă să le reproduci în Blender.
 
 ## Quiz scurt
-- Ce lumină folosești pentru Soare?  
+- Ce lumină folosești pentru Lună?  
 - Cum aduci camera la vederea ta?  
 - Ce lentilă seamănă cu ochiul uman?
 
 ## Temă
-Scrie ce lumină ai pune pentru: lumânare, far de mașină, soare de vară, ecranul unui telefon.
+Alege un obiect din casă (o cană, o jucărie) și **luminează-l în Blender** în două dispoziții, de exemplu zi și noapte.
+- Pentru fiecare dispoziție alege tipul, culoarea și puterea luminilor.
+- Notează pe foaie valorile alese pentru fiecare dispoziție.
+- Salvează fișierul `Prenume_Nume_B1_L08_Tema.blend`.
