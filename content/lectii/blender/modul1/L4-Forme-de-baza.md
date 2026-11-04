@@ -195,4 +195,8 @@ Alege o jucărie și încearcă să o descompui în forme de bază: câte cuburi
 - Cum faci un cilindru „rotund”?
 
 ## Temă
-Desenează o jucărie și scrie lângă fiecare parte ce formă de bază ai folosi.
+Alege o jucărie (sau un obiect simplu din casă) și **refă-o în Blender**, din forme de bază.
+- Descompune jucăria: câte cuburi, sfere, cilindri sau conuri ai nevoie? Notează pe foaie.
+- Construiește-o în Blender și schimbă ceva în panoul `Adjust Last Operation` la cel puțin o piesă.
+- Fă un tabel pe foaie: **Piesa · Forma · Ce am reglat**.
+- Dă fiecărei piese un nume (`F2`) și salvează fișierul `Prenume_Nume_B1_L04_Tema.blend`.

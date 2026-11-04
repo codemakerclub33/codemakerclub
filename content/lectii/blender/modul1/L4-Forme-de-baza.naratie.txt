@@ -4,7 +4,7 @@ Astăzi descoperi cărămizile modelării trei D: cubul, sfera, cilindrul, conul
 
 Ce facem azi. La final adaugi și reglezi forme de bază și construiești o rachetă din ele. Modelatorii profesioniști încep adesea cu forme simple, pe care le combină și le modifică. Un copac este un cilindru și o sferă, iar o casă este un cub și un con.
 
-Instrucțiuni noi azi. Shift plus A, apoi Mesh, adaugă o formă de bază. Panoul Adjust Last Operation din stânga jos reglează forma abia adăugată. Shift plus C readuce cursorul trei D în centru. F2 redenumește obiectul.
+Instrucțiuni noi azi. Shift plus A, apoi Mesh, adaugă o formă de bază. Panoul Adjust Last Operation din stânga jos reglează forma abia adăugată. Shift plus C readuce cursorul trei D în centru. F doi redenumește obiectul.
 
 Primul pas. Meniul Add. Cu mouse-ul peste viewport, apeși Shift plus A, apoi Mesh. Plane este bun pentru podea, perete sau foaie. Cube, pentru căsuțe, cutii și trepte. Circle, pentru contur sau bază. UV Sphere, pentru mingi, capete și planete. Ico Sphere este o sferă făcută din triunghiuri, bună pentru stânci. Cylinder, pentru trunchiuri, turnuri și roți. Cone, pentru vârfuri, pomi de brad și pălării. Torus, pentru inele, covrigi și roți groase. Monkey este Suzanne.
 
