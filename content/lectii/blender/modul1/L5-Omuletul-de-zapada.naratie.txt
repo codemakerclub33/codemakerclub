@@ -4,7 +4,7 @@ Astăzi îți faci primul personaj: un omuleț de zăpadă, din sfere, cilindri 
 
 Ce facem azi. La final ai un omuleț complet, cu corp, cap, nas, ochi, pălărie și nasturi. Personajele se construiesc din piese simple, așezate cu grijă. Aici înveți și două trucuri importante: netezirea suprafeței și legarea pieselor.
 
-Instrucțiuni noi azi. Shade Smooth netezește suprafața unui obiect. Shift plus D duplică obiectul selectat. Control plus P, apoi Object, leagă piesele de un părinte, ca să le muți împreună. Tasta X șterge obiectul selectat.
+Instrucțiuni noi azi. Shade Smooth netezește suprafața unui obiect. Control plus P, apoi Object, leagă piesele de un părinte, ca să le muți împreună. Le știi deja: Shift plus D duplică obiectul selectat, iar tasta X îl șterge.
 
 Primul pas. Pornim curat. File, New, General, apoi X și Delete pe cub.
 
