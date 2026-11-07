@@ -333,7 +333,7 @@ Fă o insignă animată pe care o poți purta la expoziție.
 - Ce arată placa dacă ai o eroare?
 
 ## Temă
-**Numărătoarea inversă.** Scrie acasă, în editor (merge și în simulator, fără placă), un program care numără de la `9` la `0`, câte o secundă pentru fiecare număr, apoi arată `Image.HAPPY`. Folosește `display.show(9)`, `sleep(1000)` și așa mai departe, un rând după altul.
+**Numărătoarea inversă.** Scrie acasă, în editor (merge și în simulator, fără placă), un program care numără de la `9` la `0`, câte o secundă pentru fiecare număr, apoi arată `Image.HAPPY`. Folosește `display.show(9)`, `sleep(1000)` și așa mai departe, un rând după altul. Salvează-l ca `Prenume_Nume_MP1_L01_Tema`.
 
 La final răspunde pe foaie: câte rânduri a avut programul? Ce ți-ar plăcea să poți scrie mai **scurt**? (În lecția 2 învățăm cum.)
 

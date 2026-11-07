@@ -68,7 +68,7 @@ Exercițiile B–F și Provocarea sunt pentru cine termină mai repede, sau pent
 
 > **Evenimentele** din blocuri (`on button A pressed`) nu au un „frate” direct în Python. Folosim **o buclă** care verifică la fiecare tură dacă s-a întâmplat ceva.
 
-### Exemplul 1 — Contorul (din L4 cu blocuri)
+### Exemplul 1 — Contorul (din cursul cu blocuri)
 Blocuri: A adaugă 1, B scade 1, A+B pune 0.
 ```python
 from microbit import *
@@ -95,7 +95,7 @@ while True:
 - [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
-### Exemplul 2 — Cursa până la 10 (din L5)
+### Exemplul 2 — Cursa până la 10 (din cursul cu blocuri)
 Blocuri: la 10 apare bifă și `Bravo`, scorul revine la 0.
 ```python
 from microbit import *
