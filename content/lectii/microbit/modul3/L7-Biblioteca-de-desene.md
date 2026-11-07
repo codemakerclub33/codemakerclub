@@ -1,19 +1,15 @@
-# Lecția 7 — Biblioteca de desene
-**Modulul 1 · Python pe micro:bit**  
+# LECȚIA 7 — Biblioteca de desene
+### Funcții: propriile tale comenzi
+**Modulul 1 · Python pe micro:bit · 2 ore**  
 **Code Maker Club · micro:bit Coder**
 
-> Azi înveți să-ți faci **propriile comenzi**: grupezi blocuri de cod sub un nume și le chemi de câte ori vrei. Se numesc **funcții**.  
+> Azi îți faci **propriile comenzi**: grupezi cod sub un nume și îl chemi de câte ori vrei. Se numesc **funcții**.  
 > Proiect: **„Biblioteca de desene”** · `Prenume_Nume_MP1_L07`
 
 ---
 
-## Obiectiv
-La finalul orei creezi funcții cu `def`, le dai **parametri** și folosești `return`.  
-**Minim:** un program cu **2 funcții cu parametri** (de exemplu `clipeste` și `bate_inima`), chemate de la butoane.  
-**Complet:** Minim + o **numărătoare inversă**, o **bară de nivel** și o funcție care **întoarce** o valoare (`limiteaza`).
-
-## De ce contează
-Dacă ai de scris de zece ori același lucru, nu-l copiezi de zece ori. Îl scrii **o singură dată**, îi pui un nume și îl chemi. Programele mari, de la jocuri la aplicații, sunt făcute din funcții mici, ca o casă din cărămizi.
+## Ce facem azi
+La finalul orei creezi funcții cu `def`, le dai **parametri** și folosești `return`. Dacă ai de scris de zece ori același lucru, nu-l copiezi de zece ori: îl scrii **o singură dată**, îi pui un nume și îl chemi. Programele mari, de la jocuri la aplicații, sunt făcute din funcții mici, ca o casă din cărămizi.
 
 ---
 
@@ -28,14 +24,31 @@ Dacă ai de scris de zece ori același lucru, nu-l copiezi de zece ori. Îl scri
 | 75–105 | Biblioteca de desene (**Minim** și **Complet**) |
 | 105–120 | Recapitulare, quiz, temă |
 
-**Unelte azi:** `def nume():` · parametri · valori implicite · `return` · apelul funcțiilor · `for … in range(…)`
+Exercițiile B–E și Provocarea sunt pentru cine termină mai repede, sau pentru acasă.
+
+**Ce ai nevoie:** [python.microbit.org](https://python.microbit.org) · placa micro:bit · cablu USB de date
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `def nume():` | Creează o funcție; corpul are **4 spații** în față | `def bate_inima():` |
+| `nume()` | **Cheamă** funcția; abia acum rulează | `bate_inima()` |
+| `def nume(a, b):` | Funcție cu **parametri**: valori primite la apel | `def arata(imagine, pauza):` |
+| `b=300` | Valoare **implicită** (de rezervă) pentru un parametru | `def clipeste(imagine, pauza=300):` |
+| `return valoare` | Funcția **întoarce** un rezultat | `return x * 2` |
+| `range(a, b, -1)` | Numără **în jos** | `range(3, 0, -1)` |
+
+**Ajutor în editor:** în panoul **Reference** caută `Functions`, `Maths` și `Advanced maths`.
 
 ---
 
 ## Pas cu pas
 
 ### 1) Jocul „Comenzi noi”
-Spui unui coleg „fă un salt”. Nu-i explici mereu cum. Ați **convenit** odată ce înseamnă „salt”. Funcția face la fel: îi dai un nume o dată, o chemi mereu.
+Spui unui prieten „fă un salt”. Nu-i explici mereu cum. Ați **convenit** odată ce înseamnă „salt”. Funcția face la fel: îi dai un nume o dată, o chemi mereu.
 
 ### Exemplul 1 — Prima funcție
 ```python
@@ -349,13 +362,21 @@ display.scroll(str(rezultat))
 
 ---
 
-## Bonus (după Complet)
-- [ ] Fă funcția `fulger(de_cate_ori)` (ecran plin 100 ms, stins 900 ms)  
-- [ ] Fă funcția `scrie_nume(nume)` care derulează un nume cu `display.scroll`  
-- [ ] Combină două funcții într-o a treia: `spectacol()`  
-- [ ] Mută funcțiile într-un fișier separat (cere ajutor profesorului)
+## Bonus ★★★ — Provocare: Mesaje Morse
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
+Morse trimite litere cu lumină: un **punct** e un semnal scurt, o **linie** e un semnal lung. Fă placa să „vorbească” în Morse, cu funcții.
+
+**Ajutor:** ecranul plin se poate defini așa: `PLIN = Image("99999:99999:99999:99999:99999")`. Un șir de semne se parcurge cu `for semn in cod:`, iar semnele se compară cu `if semn == ".":`.
+
+- [ ] Funcția `semnal(durata)` aprinde ecranul plin pentru `durata` milisecunde, apoi îl stinge pentru `200` ms
+- [ ] Funcțiile `punct()` și `linie()` cheamă `semnal(...)` cu `200`, respectiv `600`
+- [ ] Funcția `litera(cod)` primește un șir ca `"..."` sau `"---"`, parcurge fiecare semn cu `for` și cheamă `punct()` sau `linie()`; la final așteaptă `400` ms
+- [ ] **A** trimite **SOS**: `litera("...")`, `litera("---")`, `litera("...")`
+- [ ] **B** trimite **prima literă a numelui tău** (cere codul Morse de la profesor sau caută-l în panoul **Ideas**)
+- [ ] Salvează proiectul ca `Prenume_Nume_MP1_L07_Morse`
+
+## Recapitulare pe scurt
 1. `def nume():` creează o funcție; o **chemi** cu `nume()`.  
 2. **Parametrii** sunt valorile pe care le dai funcției.  
 3. Valorile **implicite** (`pauza=300`) sunt de rezervă.  
@@ -363,18 +384,19 @@ display.scroll(str(rezultat))
 5. Definește funcțiile **înainte** să le chemi.  
 6. Variabilele din funcție nu se văd în afară.
 
-## Schema pe scurt *(pe foaie)*
+**Schema pe scurt (pe foaie):** `def` → nume + parametri → corp (cu 4 spații) → chem: `nume(valori)` → (opțional) `return`
 
-`def` → nume + parametri → corp (cu 4 spații) → chem: `nume(valori)` → (opțional) `return`
-
-**Quiz scurt:**  
+## Quiz scurt
 - Ce se întâmplă dacă definești o funcție, dar nu o chemi?  
 - Ce afișează `str(dublu(5))`, dacă `dublu` întoarce `x * 2`?  
 - Ce valoare are `pauza` la `clipeste(Image.HEART)`?  
 - De ce e util `return`?
 
 ## Temă
-Scrie pe foaie **trei funcții** pe care le-ai vrea într-un joc (de exemplu `arata_viata`, `explozie`, `salveaza_scor`). La fiecare, scrie parametrii și ce ar face.
+**Spectacolul de lumini.** Scrie acasă, în editor (merge și în simulator, fără placă), un program cu trei funcții cu parametri: `fulger(de_cate_ori)` (ecran plin 100 ms, stins 900 ms), `val(pauza)` (o coloană aprinsă care se mută de la stânga la dreapta) și `puls(imagine, de_cate_ori)` (o imagine care clipește). Adaugă o a patra funcție, `spectacol()`, care le cheamă pe toate trei, iar la **A** rulează spectacolul. Salvează-l ca `Prenume_Nume_MP1_L07_Tema`.
+
+## Ce urmează — Lecția 8
+Devii **traducător**: iei programe făcute din blocuri MakeCode și le scrii în Python, cu `global`, decizii și bucle.
 
 ---
 

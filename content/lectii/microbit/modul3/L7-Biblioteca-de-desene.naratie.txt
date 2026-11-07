@@ -1,12 +1,12 @@
 Lecția șapte. Biblioteca de desene.
 
-Astăzi înveți să-ți faci propriile comenzi: grupezi blocuri de cod sub un nume și le chemi de câte ori vrei. Se numesc funcții. Proiectul se numește Biblioteca de desene. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P unu, linie jos, L zero șapte.
+Astăzi îți faci propriile comenzi: grupezi cod sub un nume și îl chemi de câte ori vrei. Se numesc funcții. Proiectul se numește Biblioteca de desene. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P unu, linie jos, L zero șapte.
 
-Obiectivul. La final creezi funcții cu def, le dai parametri și folosești return. Minim: un program cu două funcții cu parametri, de exemplu clipeste și bate inima, chemate de la butoane. Complet: minim, plus o numărătoare inversă, o bară de nivel și o funcție care întoarce o valoare, limiteaza.
+Ce facem azi. La final creezi funcții cu def, le dai parametri și folosești return. Dacă ai de scris de zece ori același lucru, nu îl copiezi de zece ori: îl scrii o singură dată, îi pui un nume și îl chemi. Programele mari, de la jocuri la aplicații, sunt făcute din funcții mici, ca o casă din cărămizi.
 
-De ce contează. Dacă ai de scris de zece ori același lucru, nu îl copiezi de zece ori. Îl scrii o singură dată, îi pui un nume și îl chemi. Programele mari, de la jocuri la aplicații, sunt făcute din funcții mici, ca o casă din cărămizi.
+Instrucțiuni noi azi. Def, numele funcției, paranteze și două puncte creează o funcție, iar corpul are patru spații în față. Numele cu paranteze o cheamă, și abia atunci rulează. Parametrii sunt valori primite la apel. O valoare implicită este una de rezervă, dacă nu dai parametrul. Return întoarce un rezultat. Range cu pasul minus unu numără în jos. Dacă uiți ceva, caută în panoul Reference din editor: Functions, Maths și Advanced maths.
 
-Primul pas. Jocul Comenzi noi. Spui unui coleg fă un salt. Nu îi explici mereu cum. Ați convenit odată ce înseamnă salt. Funcția face la fel: îi dai un nume o dată, o chemi mereu.
+Primul pas. Jocul Comenzi noi. Spui unui prieten fă un salt. Nu îi explici mereu cum. Ați convenit odată ce înseamnă salt. Funcția face la fel: îi dai un nume o dată, o chemi mereu.
 
 Exemplul unu. Prima funcție. Scrii def, bate inima, paranteze, două puncte, iar dedesubt, cu indentare, ce face. O chemi scriind bate inima cu paranteze.
 
@@ -22,8 +22,10 @@ Greșeli frecvente. Nu se întâmplă nimic: ai definit funcția, dar nu ai chem
 
 Proiectul de azi. Biblioteca de desene.
 
-Minim înseamnă: două funcții cu parametri, chemate de la butoane. Complet înseamnă: minim, plus numărătoarea, bara și funcția limiteaza. Dacă rămâi în urmă, salvează la Minim.
+Minim înseamnă: două funcții cu parametri, chemate de la butoane. Complet înseamnă: minim, plus numărătoarea, bara și funcția limiteaza. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg apasă A și B și vede funcțiile tale la lucru.
 
-Recapitulare. Def nume creează o funcție, iar o chemi cu nume și paranteze. Parametrii sunt valorile pe care le dai funcției. Valorile implicite sunt de rezervă. Return întoarce un rezultat. Definești funcțiile înainte să le chemi. Variabilele din funcție nu se văd în afară.
+Provocare, trei stele. Mesaje Morse. Morse trimite litere cu lumină: un punct este un semnal scurt, o linie este un semnal lung. Faci placa să vorbească în Morse, cu funcții. Funcția semnal primește o durată, aprinde ecranul plin pe durata aceea, apoi îl stinge două sute de milisecunde. Funcțiile punct și linie cheamă semnal cu două sute, respectiv șase sute. Funcția litera primește un șir de semne, le parcurge cu for și cheamă punct sau linie, iar la final așteaptă patru sute de milisecunde. Butonul A trimite S O S. Butonul B trimite prima literă a numelui tău. La final salvezi proiectul cu sufixul Morse.
+
+Recapitulare. Def creează o funcție, iar o chemi cu numele și paranteze. Parametrii sunt valorile pe care le dai funcției. Valorile implicite sunt de rezervă. Return întoarce un rezultat. Definești funcțiile înainte să le chemi. Variabilele din funcție nu se văd în afară.
 
 Succes la biblioteca ta.
