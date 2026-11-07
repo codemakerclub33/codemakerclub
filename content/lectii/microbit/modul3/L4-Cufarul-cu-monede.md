@@ -1,5 +1,6 @@
-# Lecția 4 — Cufărul cu monede
-**Modulul 1 · Python pe micro:bit**  
+# LECȚIA 4 — Cufărul cu monede
+### Variabile și condiții
+**Modulul 1 · Python pe micro:bit · 2 ore**  
 **Code Maker Club · micro:bit Coder**
 
 > Azi placa **ține minte** lucruri: câte monede ai, câte ai cheltuit. Folosim **variabile**, **calcule** și **condiții**.  
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei creezi variabile, le schimbi cu `+=` și `-=`, le compari și le afișezi pe LED-uri cu `str()`.  
-**Minim:** **A** adaugă o monedă (până la 20), **B** cumpără ceva care costă 3 monede, dacă ai destule.  
-**Complet:** Minim + **A+B** arată soldul și numărul de cumpărături, iar limitele sunt păzite.
-
-## De ce contează
-Orice joc ține minte scorul, viețile, banii. Orice aplicație ține minte numele tău și setările. Toate aceste lucruri stau în **variabile**. Azi folosești variabile și condiții împreună, ca într-un joc adevărat.
+## Ce facem azi
+La finalul orei creezi variabile, le schimbi cu `+=` și `-=`, le compari și le afișezi pe LED-uri cu `str()`. Orice joc ține minte scorul, viețile, banii. Orice aplicație ține minte numele tău și setările. Toate acestea stau în **variabile**. Azi folosești variabile și condiții împreună, ca într-un joc adevărat.
 
 ---
 
@@ -28,7 +24,24 @@ Orice joc ține minte scorul, viețile, banii. Orice aplicație ține minte nume
 | 70–105 | Cufărul cu monede (**Minim** și **Complet**) |
 | 105–120 | Recapitulare, quiz, temă |
 
-**Unelte azi:** variabile · `+=` · `-=` · `==`, `!=`, `<`, `>`, `<=`, `>=` · `and` · `or` · `str()` · `min()` · `max()`
+Exercițiile B–E și Provocarea sunt pentru cine termină mai repede, sau pentru acasă.
+
+**Ce ai nevoie:** [python.microbit.org](https://python.microbit.org) · placa micro:bit · cablu USB de date
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `nume = valoare` | Creează o variabilă: o cutie cu etichetă | `monede = 5` |
+| `+=` și `-=` | Adaugă sau scade din variabilă | `monede += 1` |
+| `==`, `!=`, `<`, `>`, `<=`, `>=` | Compară două valori | `if monede >= 3:` |
+| `and` / `or` | Cere ambele condiții / măcar una | `if a and b:` |
+| `str(număr)` | Transformă un număr în text | `display.scroll(str(monede))` |
+| `min()` și `max()` | Ține o valoare între două limite | `min(monede + 5, 20)` |
+
+**Ajutor în editor:** în panoul **Reference** caută `Variables`, `Maths` și `Data types`.
 
 ---
 
@@ -326,13 +339,18 @@ monede =+ 1
 
 ---
 
-## Bonus (după Complet)
-- [ ] Adaugă un **al doilea obiect** de cumpărat, care costă 7 monede, cu un alt buton (idee: scuturarea plăcii)  
-- [ ] Arată pe ecran **câte monede ai**, ca o bară de LED-uri: `for x in range(5): ...` și `display.set_pixel`  
-- [ ] Fă un mesaj special când ai 20 de monede: `display.scroll("PLIN")`  
-- [ ] Salvează **recordul** de cumpărături într-o variabilă `record`
+## Bonus ★★★ — Provocare: Creator de pixeli
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
+Fă un caiet de desen pe LED-uri, în care mișți un punct și lași urme.
+
+- [ ] Două variabile, `x` și `y`, țin locul punctului; la pornire punctul e în centru (`x = 2`, `y = 2`)
+- [ ] **A** mută punctul spre dreapta (`x += 1`), **B** îl mută în jos (`y += 1`), iar punctul se vede cu `display.set_pixel(x, y, 9)`
+- [ ] Punctul **nu iese** din ecran: după `4` se întoarce la `0` (sau folosești `min()`)
+- [ ] Punctele aprinse **rămân** pe ecran, ca urme; **A+B** șterge desenul (`display.clear()`) și readuce punctul în centru
+- [ ] Salvează proiectul ca `Prenume_Nume_MP1_L04_Pixeli`
+
+## Recapitulare pe scurt
 1. **Variabilă** = cutie cu nume: `monede = 5`.  
 2. `+=` și `-=` schimbă valoarea: `monede += 1`.  
 3. `==` compară, `=` pune.  
@@ -341,18 +359,19 @@ monede =+ 1
 6. Limitele se păzesc cu `if` sau cu `min()` și `max()`.  
 7. Constantele se scriu cu litere mari: `PRET`, `MAXIM`.
 
-## Schema pe scurt *(pe foaie)*
+**Schema pe scurt (pe foaie):** citesc `a` și `b` → `if a and b` → afișez soldul · `elif a` → adaug moneda (dacă mai e loc) · `elif b` → cumpăr (dacă am destule)
 
-citesc `a` și `b` → `if a and b` → afișez soldul · `elif a` → adaug moneda (dacă mai e loc) · `elif b` → cumpăr (dacă am destule)
-
-**Quiz scurt:**  
+## Quiz scurt
 - Ce valoare are `monede` după `monede = 4`, `monede += 3`, `monede -= 2`?  
 - Ce face `str(5)`?  
 - Ce diferență e între `and` și `or`?  
 - Cum împiedici monedele să treacă de 20?
 
 ## Temă
-Scrie pe foaie un program în Python pentru **un joc cu puncte și vieți** (ai nevoie de cel puțin 2 variabile). Descrie ce face fiecare buton și ce se întâmplă când pierzi toate viețile.
+**Clicker Challenge: câte apăsări în 10 secunde?** Scrie acasă, în editor (merge și în simulator, fără placă), un program în care **B** pornește proba. Placa golește mai întâi memoria butonului (`button_a.get_presses()`), așteaptă `sleep(10000)`, apoi arată cu `display.scroll(str(...))` câte apăsări pe **A** ai făcut. Ține minte **recordul** într-o variabilă, cu `max()`, și arată-l la final. Salvează-l ca `Prenume_Nume_MP1_L04_Tema`.
+
+## Ce urmează — Lecția 5
+Placa învață să **simtă**: citește lumina, temperatura și mișcarea, și dă alerte când trec de un prag.
 
 ---
 

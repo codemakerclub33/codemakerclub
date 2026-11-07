@@ -21,7 +21,7 @@ Dacă ai de scris de zece ori același lucru, nu-l copiezi de zece ori. Îl scri
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recap L6: radio, grup, mesaje |
+| 0–10 | Recap L6: `random`, liste, `for` |
 | 10–25 | De ce funcții? Jocul „Comenzi noi” |
 | 25–55 | `def`, apelul, parametrii |
 | 55–75 | `return`: funcții care răspund |

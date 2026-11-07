@@ -20,5 +20,5 @@ Stabilit în discuție (7 nov 2026). Regulă: **o singură placă pe copil**, f�
 - Idei rămase pentru teme: 12 Termometru, 14 Busolă, 17 Lumină de veghe, 39 Clicker, 40 Adevăr sau Provocare.
 
 ## De rezolvat
-- L6: de rescris complet (radio → Roata norocului), plus README, `mockData.ts` (titlu), narație, quiz-ul din L10 (întrebarea despre radio).
+- L6: scrisă („Roata norocului”); radioul a fost scos din Modul 1 (README, titlu în `mockData.ts`, L7, L9, L10 actualizate).
 - Modul 2 Python (`modul4`) L7 și L9 folosesc radio: de verificat separat.

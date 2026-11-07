@@ -6,7 +6,7 @@ Obiectivul. La final îți prezinți programul clar, citești codul unui coleg �
 
 De ce contează. Programatorii nu doar scriu cod: îl explică, îl citesc pe al altora și îl îmbunătățesc. Azi faci toate trei.
 
-Primul pas. Alegem programul de expus: Pixi, Seiful, Mesagerul radio, Detectivul de cameră, Cufărul cu monede sau Biblioteca de desene. Verifici că rulează pe placă.
+Primul pas. Alegem programul de expus: Pixi, Seiful, Roata norocului, Detectivul de cameră, Cufărul cu monede sau Biblioteca de desene. Verifici că rulează pe placă.
 
 Al doilea pas. Testul final, zece minute. Programul este pe placă. Ai testat fiecare buton și senzor. Ai testat cazurile ciudate, de exemplu ce se întâmplă dacă apeși de zece ori. Numele variabilelor sunt clare. Ai o copie de rezervă.
 
@@ -28,6 +28,6 @@ Proiectul de azi. Standul meu Coder.
 
 Minim înseamnă: program funcțional, fișă completă și cod cu comentarii. Complet înseamnă: minim, plus prezentarea, o îmbunătățire și verificarea.
 
-Recapitulare. Python pe micro:bit: imagini, butoane, variabile, senzori, radio, funcții. Codul bun este clar: comentarii, nume bune, rânduri goale. Prezentarea are ordine. Citim și îmbunătățim codul altora.
+Recapitulare. Python pe micro:bit: imagini, butoane, variabile, senzori, întâmplare și liste, funcții. Codul bun este clar: comentarii, nume bune, rânduri goale. Prezentarea are ordine. Citim și îmbunătățim codul altora.
 
 Felicitări, ai terminat primul modul de Python!

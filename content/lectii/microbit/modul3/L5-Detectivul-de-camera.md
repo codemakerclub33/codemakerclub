@@ -1,5 +1,6 @@
-# Lecția 5 — Detectivul de cameră
-**Modulul 1 · Python pe micro:bit**  
+# LECȚIA 5 — Detectivul de cameră
+### Senzorii plăcii și praguri
+**Modulul 1 · Python pe micro:bit · 2 ore**  
 **Code Maker Club · micro:bit Coder**
 
 > Placa ta are **senzori**: simte temperatura, lumina și mișcarea. Azi o transformi în **detectiv de cameră** care măsoară, observă și întocmește un raport.  
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei citești senzorii plăcii în Python și iei decizii pe baza lor.  
-**Minim:** **A** derulează temperatura, **B** derulează lumina, iar **scuturarea** derulează un raport cu amândouă.  
-**Complet:** Minim + când e prea cald sau prea întuneric, placa **dă alertă** singură, cu praguri puse în constante.
-
-## De ce contează
-Telefonul tău își face ecranul mai luminos la soare, lanterna se pornește dintr-o mișcare, termostatul pornește căldura la frig. Toate **citesc senzori** și **decid**. Azi înveți chiar tu cum se face.
+## Ce facem azi
+La finalul orei citești senzorii plăcii în Python și iei decizii pe baza lor. Telefonul tău își face ecranul mai luminos la soare, lanterna pornește dintr-o mișcare, termostatul pornește căldura la frig. Toate **citesc senzori** și **decid**. Azi înveți chiar tu cum se face.
 
 ---
 
@@ -28,7 +24,23 @@ Telefonul tău își face ecranul mai luminos la soare, lanterna se pornește di
 | 75–105 | Detectivul de cameră (**Minim** și **Complet**) |
 | 105–120 | Recapitulare, quiz, temă |
 
-**Unelte azi:** `temperature()` · `display.read_light_level()` · `accelerometer.get_x()` · `accelerometer.current_gesture()` · `accelerometer.was_gesture(...)` · `str()` · praguri · (V2: `microphone.sound_level()`)
+Exercițiile B–E și Provocarea sunt pentru cine termină mai repede, sau pentru acasă.
+
+**Ce ai nevoie:** [python.microbit.org](https://python.microbit.org) · placa micro:bit · cablu USB de date
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `temperature()` | Temperatura, în grade Celsius | `str(temperature())` |
+| `display.read_light_level()` | Lumina, de la `0` la `255` | `luminos = display.read_light_level()` |
+| `accelerometer.get_x()` / `get_y()` | Înclinarea plăcii, între aproximativ `-2000` și `2000` | `ax = accelerometer.get_x()` |
+| `accelerometer.current_gesture()` / `was_gesture("shake")` | Recunoaște un gest, de exemplu scuturarea | `if accelerometer.was_gesture("shake"):` |
+| `PRAG_CALD = 26` | O **constantă** cu pragul, ca să o schimbi ușor | `if t >= PRAG_CALD:` |
+
+**Ajutor în editor:** în panoul **Reference** caută `Temperature`, `Light level` și `Accelerometer`. În simulator, glisoarele de sub placă schimbă temperatura și lumina, iar lista „shake” scutură placa, ca să testezi fără senzori adevărați.
 
 ---
 
@@ -293,13 +305,19 @@ if accelerometer.was_gesture(shake):
 
 ---
 
-## Bonus (după Complet)
-- [ ] Adaugă un **mod nocturn**: dacă e întuneric, arată doar un LED din colț  
-- [ ] Notează temperatura în trei locuri și compară  
-- [ ] (V2) Adaugă alerta „prea gălăgios”, cu `microphone.sound_level()`  
-- [ ] Folosește `"face down"` ca să „oprești” detectivul
+## Bonus ★★★ — Provocare: Nivela cu bulă de aer
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
+Fă o nivelă ca a zidarilor, cu bulă pe ambele direcții.
+
+- [ ] Punctul se mișcă pe **ambele** axe: `get_x()` pentru stânga–dreapta și `get_y()` pentru sus–jos, cu formula de la Exemplul 5 pentru fiecare
+- [ ] Când placa e orizontală, punctul e în centru, adică `x = 2` și `y = 2`
+- [ ] Când punctul e în centru, un LED din colțul `(0, 0)` se aprinde, ca semn că suprafața e dreaptă
+- [ ] Pragul de „dreaptă” e o constantă, `TOLERANTA`, pe care o poți schimba ușor
+- [ ] Testează pe masă, pe o carte și pe un caiet și notează unde rezultatul e „dreaptă”
+- [ ] Salvează proiectul ca `Prenume_Nume_MP1_L05_Nivela`
+
+## Recapitulare pe scurt
 1. `temperature()` = grade Celsius (aproximativ).  
 2. `display.read_light_level()` = lumină de la `0` la `255`.  
 3. `accelerometer.get_x()` = înclinare stânga–dreapta.  
@@ -307,18 +325,19 @@ if accelerometer.was_gesture(shake):
 5. **Praguri** ca constante: `PRAG_CALD`, `PRAG_INTUNERIC`.  
 6. Condițiile cu prioritate mare se pun **primele**.
 
-## Schema pe scurt *(pe foaie)*
+**Schema pe scurt (pe foaie):** senzor → număr → compar cu **prag** → `if` / `elif` → imagine sau mesaj
 
-senzor → număr → compar cu **prag** → `if` / `elif` → imagine sau mesaj
-
-**Quiz scurt:**  
+## Quiz scurt
 - Ce imagine apare dacă `t = 20` și `luminos = 10`, cu pragurile din Exemplul 10?  
 - Ce face `was_gesture("shake")`?  
 - De ce folosim constante pentru praguri?  
 - Cum afli dacă ai placa V1 sau V2?
 
 ## Temă
-Alege **un loc din casă** (dormitor, bucătărie, balcon) și, cu placa, măsoară acolo temperatura și lumina dimineața și seara. Notează într-un tabel și scrie ce observi.
+**Lumina de veghe automată.** Scrie acasă, în editor (merge și în simulator, fără placă), un program care aprinde **toate LED-urile** la luminozitate maximă când lumina din cameră scade sub un prag (constantă `PRAG_INTUNERIC`) și le stinge când e lumină. Testează-l mutând glisorul de lumină din simulator. Adaugă un mesaj pe ecran la schimbarea stării (`display.scroll("NOAPTE")`, `display.scroll("ZI")`). Salvează-l ca `Prenume_Nume_MP1_L05_Tema`.
+
+## Ce urmează — Lecția 6
+Placa învață să **aleagă la întâmplare**: construiești o roată a norocului cu o săgeată care se rotește și se oprește singură, cu `random`, liste și `for`.
 
 ---
 

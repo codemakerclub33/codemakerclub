@@ -2,9 +2,9 @@ Lecția cinci. Detectivul de cameră.
 
 Placa ta are senzori: simte temperatura, lumina și mișcarea. Astăzi o transformi în detectiv de cameră, care măsoară, observă și întocmește un raport. Proiectul se numește Detectivul de cameră. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P unu, linie jos, L zero cinci.
 
-Obiectivul. La final citești senzorii plăcii în Python și iei decizii pe baza lor. Minim: A derulează temperatura, B derulează lumina, iar scuturarea derulează un raport cu amândouă. Complet: minim, plus când este prea cald sau prea întuneric, placa dă alertă singură, cu praguri puse în constante.
+Ce facem azi. La final citești senzorii plăcii în Python și iei decizii pe baza lor. Telefonul tău își face ecranul mai luminos la soare, lanterna pornește dintr-o mișcare, termostatul pornește căldura la frig. Toate citesc senzori și decid. Azi înveți chiar tu cum se face.
 
-De ce contează. Telefonul tău își face ecranul mai luminos la soare, lanterna pornește dintr-o mișcare, termostatul pornește căldura la frig. Toate citesc senzori și decid. Azi înveți chiar tu cum se face.
+Instrucțiuni noi azi. Temperature dă temperatura în grade Celsius. Display punct read light level dă lumina, de la zero la două sute cincizeci și cinci. Accelerometer punct get x și get y dau înclinarea plăcii. Current gesture și was gesture shake recunosc un gest, de exemplu scuturarea. Un prag scris ca o constantă, cu litere mari, se schimbă ușor. Dacă uiți ceva, caută în panoul Reference din editor: Temperature, Light level și Accelerometer. În simulator, glisoarele de sub placă schimbă temperatura și lumina, iar lista shake scutură placa, ca să testezi fără senzori adevărați.
 
 Primul pas. Ce poate simți placa? Temperatura, cu temperature, un număr întreg în grade Celsius. Lumina, cu display punct read light level, de la zero la două sute cincizeci și cinci. Mișcarea, cu accelerometer.
 
@@ -23,6 +23,8 @@ Greșeli frecvente. Apare funcția, nu valoarea: ai scris temperature fără par
 Proiectul de azi. Detectivul de cameră.
 
 Minim înseamnă: A temperatura, B lumina, scuturarea raportul. Complet înseamnă: minim, plus alerta cu praguri. Dacă rămâi în urmă, salvează la Minim.
+
+Provocare, trei stele. Nivela cu bulă de aer. Faci o nivelă ca a zidarilor, cu bulă pe ambele direcții. Punctul se mișcă pe ambele axe: get x pentru stânga și dreapta, get y pentru sus și jos, cu formula de la exemplul cinci pentru fiecare. Când placa este orizontală, punctul este în centru. Atunci un LED din colț se aprinde, ca semn că suprafața este dreaptă. Pragul de dreaptă este o constantă, TOLERANTA, pe care o poți schimba ușor. Testezi pe masă, pe o carte și pe un caiet și notezi unde rezultatul este dreaptă. La final salvezi proiectul cu sufixul Nivela.
 
 Recapitulare. Temperature dă grade Celsius, aproximativ. Read light level dă lumina de la zero la două sute cincizeci și cinci. Get x dă înclinarea stânga, dreapta. Was gesture shake recunoaște scuturarea. Pragurile se scriu ca constante.
 

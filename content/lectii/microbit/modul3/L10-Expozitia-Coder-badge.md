@@ -35,7 +35,7 @@ Programatorii nu doar scriu cod: îl **explică**, îl **citesc** pe al altora �
 ## Pas cu pas
 
 ### 1) Alegem proiectul de expus
-Alege **un** program: **Pixi** (L9), **Seiful** (L8), **Mesagerul radio** (L6), **Detectivul de cameră** (L5), **Cufărul cu monede** (L4) sau **Biblioteca de desene** (L7). Verifică că rulează pe placă.
+Alege **un** program: **Pixi** (L9), **Seiful** (L8), **Roata norocului** (L6), **Detectivul de cameră** (L5), **Cufărul cu monede** (L4) sau **Biblioteca de desene** (L7). Verifică că rulează pe placă.
 
 ### 2) Testul final (10 minute)
 - [ ] Programul e descărcat pe placă  
@@ -105,7 +105,7 @@ Răspunde pe foaie, fără să te uiți în lecții. Răspunsurile sunt la final
 3. Ce valoare are `score` după `score = 5` și `score += 2`?  
 4. De ce scriem `display.scroll(str(score))`?  
 5. Ce diferență e între `=` și `==`?  
-6. Ce trebuie să fie la fel la două plăci ca să comunice prin radio?  
+6. Ce face `random.randint(1, 6)` și pe ce poziție e primul element dintr-o listă?  
 7. Ce face `return` într-o funcție?  
 8. Când ai nevoie de `global`?  
 9. Ce face `range(3)` într-un `for`?  
@@ -120,13 +120,13 @@ Bifează ce poți face **singur**:
 - [ ] folosesc butoane și `if / elif / else`
 - [ ] folosesc variabile și comparații
 - [ ] citesc senzori (temperatură, lumină, mișcare)
-- [ ] trimit și primesc mesaje prin radio
+- [ ] aleg lucruri la întâmplare și folosesc liste
 - [ ] scriu funcții cu parametri
 - [ ] traduc un program din blocuri în Python
 - [ ] îmi prezint proiectul
 
 **Răspunsuri:**
-1. Aduce în program toate funcțiile plăcii (`display`, `button_a`, `sleep` …). 2. `is_pressed()` e adevărat **cât timp** ții apăsat; `was_pressed()` e adevărat dacă butonul **a fost apăsat** de la ultima verificare. 3. `7`. 4. `scroll` vrea **text**, iar `str()` transformă numărul în text. 5. `=` pune o valoare într-o variabilă; `==` **compară** două valori. 6. Același **grup** (`radio.config(group=…)`) și `radio.on()`. 7. Trimite o valoare înapoi celui care a apelat funcția. 8. Când o funcție **schimbă** o variabilă creată în afara ei. 9. Repetă de 3 ori, cu `i` luând valorile `0, 1, 2`. 10. Pentru că `was_pressed()` „uită” apăsarea după ce e citită; dacă o citim de două ori, a doua oară răspunsul poate fi greșit.
+1. Aduce în program toate funcțiile plăcii (`display`, `button_a`, `sleep` …). 2. `is_pressed()` e adevărat **cât timp** ții apăsat; `was_pressed()` e adevărat dacă butonul **a fost apăsat** de la ultima verificare. 3. `7`. 4. `scroll` vrea **text**, iar `str()` transformă numărul în text. 5. `=` pune o valoare într-o variabilă; `==` **compară** două valori. 6. `random.randint(1, 6)` dă un număr întreg de la `1` la `6`, inclusiv; primul element dintr-o listă e pe poziția `0`. 7. Trimite o valoare înapoi celui care a apelat funcția. 8. Când o funcție **schimbă** o variabilă creată în afara ei. 9. Repetă de 3 ori, cu `i` luând valorile `0, 1, 2`. 10. Pentru că `was_pressed()` „uită” apăsarea după ce e citită; dacă o citim de două ori, a doua oară răspunsul poate fi greșit.
 
 ---
 
@@ -176,7 +176,7 @@ Bifează ce poți face **singur**:
 
 ## Recapitulare rapidă
 1. Python pe micro:bit: `from microbit import *`.  
-2. Imagini, butoane, variabile, senzori, radio, funcții.  
+2. Imagini, butoane, variabile, senzori, întâmplare și liste, funcții.  
 3. Codul bun e **clar**: comentarii, nume bune, rânduri goale.  
 4. Prezentarea are ordine: ce face, cum merge, ce a fost greu, ce adaug.  
 5. Citim și îmbunătățim codul altora.

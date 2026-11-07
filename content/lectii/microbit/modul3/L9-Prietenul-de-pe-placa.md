@@ -440,7 +440,7 @@ while True
 - [ ] Pixi **crește**: după 5 jocuri primește „nivel” și o față nouă  
 - [ ] Adaugă **temperatura**: dacă e peste 28 °C, Pixi spune „Cald!”  
 - [ ] Un **sunet** (doar V2): `music.play(music.JUMP_UP)` după hrănire (`import music`)  
-- [ ] Doi Pixi care se „vizitează” prin radio  
+- [ ] Pixi are **stări de spirit** alese la întâmplare: la fiecare joc, `random.choice` îi dă o față nouă  
 
 ## Recapitulare rapidă
 1. Un program cu stări ține minte lucrurile în **variabile**.  

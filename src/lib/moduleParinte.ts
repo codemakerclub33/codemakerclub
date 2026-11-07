@@ -53,7 +53,7 @@ export const descriereModulParinte: Record<string, string> = {
   m22: 'Copilul face proiecte mai mari pe o singură placă micro:bit: un panou de comandă, o busolă, un pedometru, un ceas deșteptător, o alarmă și un joc cu un șarpe pe 25 de LED-uri. Învață liste, funcții și depanare, iar la final prezintă proiectele într-o expoziție.',
 
   // micro:bit (Python)
-  m23: 'Copilul trece de la blocuri la Python pe placa micro:bit: scrie cod pentru imagini, butoane, mișcare și radio. Învață cum se traduce ce știa în cod scris.',
+  m23: 'Copilul trece de la blocuri la Python pe placa micro:bit: scrie cod pentru imagini, butoane, senzori, întâmplare și liste. Învață cum se traduce ce știa în cod scris.',
   m41: 'Copilul construiește proiecte mai mari în Python pe micro:bit: un pian de buzunar, o busolă digitală, un labirint pe care îl înclini și mesaje cu cod. Își salvează recordurile și își prezintă proiectul la final.',
 
   // Roblox Studio

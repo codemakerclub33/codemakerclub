@@ -659,7 +659,7 @@ export const lectii = [
     'Semnalizatorul',
     'Cufărul cu monede',
     'Detectivul de cameră',
-    'Mesagerul radio',
+    'Roata norocului',
     'Biblioteca de desene',
     'Traducător de blocuri',
     'Prietenul de pe placă',

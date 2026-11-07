@@ -1,5 +1,6 @@
-# Lecția 3 — Semnalizatorul
-**Modulul 1 · Python pe micro:bit**  
+# LECȚIA 3 — Semnalizatorul
+### Butoane și decizii cu `if`
+**Modulul 1 · Python pe micro:bit · 2 ore**  
 **Code Maker Club · micro:bit Coder**
 
 > Azi placa **ascultă de butoane** în Python. Facem un **semnalizator de bicicletă**: stânga, dreapta și avarii.  
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei citești butoanele cu `is_pressed()` și `was_pressed()` și iei decizii cu `if`, `elif` și `else`.  
-**Minim:** cât ții apăsat **A** pâlpâie o săgeată spre stânga, cât ții **B** spre dreapta, cu **A+B** pâlpâie avariile.  
-**Complet:** Minim + semnalizatorul **rămâne pornit** după o apăsare scurtă și se oprește cu A+B.
-
-## De ce contează
-Biciclete, mașini și trotinete au semnalizatoare. Ele citesc un comutator și **decid** ce să arate. Programul tău face la fel: **citește** o intrare (butonul), **decide** cu `if` și **arată** rezultatul. Aceste trei lucruri apar în aproape orice program.
+## Ce facem azi
+La finalul orei citești butoanele cu `is_pressed()` și `was_pressed()` și iei decizii cu `if`, `elif` și `else`. Bicicletele, mașinile și trotinetele au semnalizatoare: ele citesc un comutator și **decid** ce să arate. Programul tău face la fel: **citește** o intrare (butonul), **decide** cu `if` și **arată** rezultatul. Aceste trei lucruri apar în aproape orice program.
 
 ---
 
@@ -28,7 +24,23 @@ Biciclete, mașini și trotinete au semnalizatoare. Ele citesc un comutator și 
 | 75–105 | Semnalizatorul care rămâne pornit (**Complet**) |
 | 105–120 | Recapitulare, quiz, temă |
 
-**Unelte azi:** `button_a.is_pressed()` · `button_b.is_pressed()` · `was_pressed()` · `if / elif / else` · `and` · `==` · variabile cu text
+Exercițiile B–E și Provocarea sunt pentru cine termină mai repede, sau pentru acasă.
+
+**Ce ai nevoie:** [python.microbit.org](https://python.microbit.org) · placa micro:bit · cablu USB de date
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `button_a.is_pressed()` | Răspunde `True` dacă butonul e apăsat **acum** | `if button_a.is_pressed():` |
+| `button_a.was_pressed()` | Răspunde `True` dacă a fost apăsat **de la ultima întrebare** | apăsări scurte |
+| `if` / `elif` / `else` | Alege ce se întâmplă, după o condiție | A → stânga, B → dreapta |
+| `and` | Cere ca **amândouă** condițiile să fie adevărate | A și B deodată |
+| `=` și `==` | `=` pune o valoare, `==` întreabă dacă două valori sunt egale | `directie == "stanga"` |
+
+**Ajutor în editor:** în panoul **Reference** caută `Buttons` și `Logic`. În simulator, butoanele **A** și **B** se apasă cu mouse-ul, în panoul din dreapta.
 
 ---
 
@@ -344,31 +356,39 @@ while True
 
 ---
 
-## Bonus (după Complet)
-- [ ] Adaugă săgeți diferite: `Image.ARROW_N` pentru „înainte”  
-- [ ] Fă ca avariile să arate două imagini alternativ, nu doar un pătrat  
-- [ ] Numără de câte ori ai pornit semnalizatorul și arată numărul când apeși A+B  
-- [ ] Scrie același program în blocuri și compară lungimea
+## Bonus ★★★ — Provocare: Emoji Box
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
+Fă o cutie de emoji, cu o față, un animal și o surpriză.
+
+- [ ] **A** arată o față (`Image.HAPPY`, `Image.SAD`, `Image.SILLY` sau `Image.ANGRY`), **B** arată un animal (`Image.DUCK`, `Image.COW`, `Image.RABBIT` sau `Image.GIRAFFE`), **A+B** arată o surpriză (`Image.GHOST`, `Image.SKULL` sau `Image.SURPRISED`)
+- [ ] Imaginea **rămâne pe ecran** până la următoarea apăsare, ținută minte într-o variabilă cu text, ca la Exemplul 8
+- [ ] Când apeși un buton, imaginea **pâlpâie o dată** (apare, se stinge 200 ms, apare din nou) înainte să rămână
+- [ ] La pornire placa arată `Image.ASLEEP`
+- [ ] Salvează proiectul ca `Prenume_Nume_MP1_L03_Emoji`
+
+## Recapitulare pe scurt
 1. `button_a.is_pressed()` = apăsat **acum**; `was_pressed()` = apăsat **de la ultima întrebare**.  
 2. `if` / `elif` / `else` aleg ce se întâmplă; Python se oprește la **prima** condiție adevărată.  
 3. `and` cere ca **amândouă** condițiile să fie adevărate.  
 4. `=` pune o valoare; `==` o compară.  
 5. Condiția cea mai **specifică** (A+B) se pune **prima**.
 
-## Schema pe scurt *(pe foaie)*
+**Schema pe scurt (pe foaie):** `while True:` → citesc butoanele → `if A și B` → avarii · `elif A` → stânga · `elif B` → dreapta · `else` → curat
 
-`while True:` → citesc butoanele → `if A și B` → avarii · `elif A` → stânga · `elif B` → dreapta · `else` → curat
-
-**Quiz scurt:**  
+## Quiz scurt
 - Ce înseamnă `elif`?  
 - De ce parantezele din `is_pressed()` sunt importante?  
 - Care e diferența dintre `is_pressed()` și `was_pressed()`?  
 - Ce face `and`?
 
 ## Temă
-Gândește-te la **un alt aparat cu 3 butoane** (ascensor, telecomandă). Scrie pe foaie un program în Python, cu `if` / `elif`, care ar răspunde la fiecare buton.
+**Indicatorul de dispoziție.** Scrie acasă, în editor (merge și în simulator, fără placă), un program care ține minte cum te simți: **A** = `Image.HAPPY`, **B** = `Image.SAD`, **A+B** = `Image.ASLEEP`. Fața rămâne pe ecran până la următoarea apăsare, ca la Exemplul 8. Salvează-l ca `Prenume_Nume_MP1_L03_Tema`.
+
+Pe foaie notează: ce ai fi făcut diferit dacă ai fi folosit `is_pressed()` în loc de `was_pressed()`?
+
+## Ce urmează — Lecția 4
+Placa învață să **numere**: faci un cufăr cu monede, cu variabile, `+=` și limite, în care adaugi monede cu A și cumperi lucruri cu B.
 
 ---
 

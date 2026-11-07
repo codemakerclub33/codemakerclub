@@ -1,0 +1,29 @@
+Lecția șase. Roata norocului.
+
+Astăzi placa învață să aleagă la întâmplare. Facem o roată a norocului: o săgeată se învârte, încetinește și se oprește singură, iar fiecare direcție are o misiune pentru tine. Proiectul se numește Roata norocului. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P unu, linie jos, L zero șase.
+
+Ce facem azi. La final folosești random ca să alegi numere și lucruri la întâmplare și ții mai multe valori într-o listă. Jocurile de societate, loteriile și jocurile video au nevoie de întâmplare: un zar, o carte trasă, un monstru care apare când nu te aștepți. Azi înveți cum o produce o placă, cu doar două instrucțiuni noi.
+
+Instrucțiuni noi azi. Import random aduce uneltele pentru întâmplare și se scrie sus, după from microbit import steluță. Random punct randint, cu două numere, dă un număr întreg la întâmplare, de la primul la al doilea, inclusiv. O listă ține mai multe valori sub un singur nume, între paranteze drepte. Pozițiile dintr-o listă se numără de la zero. Len dă câte elemente are lista. Random punct choice alege un element la întâmplare din listă. Semnul procent dă restul împărțirii și ține un număr între zero și o limită. Dacă uiți ceva, caută în panoul Reference din editor: Lists, Maths și Advanced maths.
+
+Primul pas. Întâmplarea în Python. Placa nu poate arunca un zar, dar poate calcula un număr care arată ca la întâmplare. Folosim modulul random, pe un rând nou, sub from microbit import steluță. Exemplul unu: display punct scroll de str de random punct randint, unu, nouă, dă o cifră de la unu la nouă, alta la fiecare rulare. Exemplul doi: cu un for, de cinci ori, primești cinci numere de două cifre.
+
+Al doilea pas. Listele. O listă ține mai multe valori sub un singur nume. Fiecare element are o poziție, iar pozițiile se numără de la zero. Exemplul trei: culori este o listă cu roșu, verde și albastru, iar culori între paranteze pătrate, unu, este al doilea element, deci verde. Exemplul patru: len de culori este trei, iar ultimul element este pe poziția trei minus unu, adică doi. Dacă ceri poziția trei, Python spune index error. Exemplul cinci: random punct choice alege un element la întâmplare, fără să te gândești la poziții.
+
+Al treilea pas. Roata. Python are opt săgeți, de la ARROW N, în sus, până la ARROW NW, în ordinea acelor de ceasornic. Le pui într-o listă și le arăți una după alta. Exemplul șase: display punct show cu lista de săgeți și delay arată un tur complet. Exemplul șapte: încetinirea. Într-un for, arăți săgeata de pe poziția i procent opt. Procentul dă restul împărțirii la opt, deci după șapte se reia de la zero, iar săgeata se învârte de mai multe ori. Pauza crește cu cincisprezece la fiecare pas, deci săgeata încetinește.
+
+Al patrulea pas. Se oprește la întâmplare. Exemplul opt: numărul de pași se alege la întâmplare, între șaisprezece și treizeci, deci săgeata se oprește de fiecare dată în altă parte. Exemplul nouă: pornești roata cu butonul A. Până apeși, stă pe ținta din mijloc.
+
+Al cincilea pas. Roata norocului cu misiuni. Exemplul zece, pentru Complet. Fiecare săgeată are o misiune, pe aceeași poziție dintr-o a doua listă. Misiunile le scrii tu, fără diacritice. Variabila directia ține minte unde s-a oprit săgeata. Butonul A învârte roata, iar butonul B derulează misiunea de pe poziția directia. Cele două liste au câte opt elemente.
+
+Greșeli frecvente. Name error la random: ai uitat import random. Atribut greșit la random: ai scris greșit randint sau choice. Index error: ai cerut o poziție care nu există, iar ultima poziție este len minus unu. Eroare la randint: lipsește o paranteză sau virgula dintre numere. Săgeata se oprește mereu la fel: ai uitat procentul opt. Misiunea nu apare la B: directia nu are valoare de la început, pune directia egal zero înainte de while True. Textul are semne ciudate: ai folosit diacritice în misiuni.
+
+Proiectul de azi. Roata norocului.
+
+Minim înseamnă: A învârte o săgeată care încetinește și se oprește la întâmplare. Complet înseamnă: minim, plus B derulează misiunea pentru săgeata la care s-a oprit roata, cu opt misiuni scrise de tine. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg apasă A de trei ori și vede săgeata oprindu-se în locuri diferite.
+
+Provocare, trei stele. Ghicește numărul. Faci un joc în care placa alege un număr secret, iar tu îl cauți. La pornire placa alege un număr secret cu random punct randint, de la unu la nouă, și îl ține într-o variabilă. A mărește cu unu numărul tău de încercat, până la nouă, apoi se întoarce la unu, iar numărul se vede pe ecran. B trimite încercarea: dacă este prea mic apare săgeata în sus, dacă este prea mare apare săgeata în jos, iar dacă este corect apare o față veselă. Placa numără încercările și le derulează la final. La final salvezi proiectul cu sufixul Ghiceste.
+
+Recapitulare. Import random aduce întâmplarea, iar randint dă un număr de la primul la al doilea, inclusiv. O listă ține mai multe valori. Pozițiile se numără de la zero. Random punct choice alege un element la întâmplare. Procentul dă restul împărțirii și ține un număr într-o limită. Două liste cu același număr de elemente se potrivesc pe poziții.
+
+Succes cu roata norocului.

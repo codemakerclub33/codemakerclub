@@ -2,9 +2,9 @@ Lecția patru. Cufărul cu monede.
 
 Astăzi placa ține minte lucruri: câte monede ai, câte ai cheltuit. Folosim variabile, calcule și condiții. Proiectul se numește Cufărul cu monede. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P unu, linie jos, L zero patru.
 
-Obiectivul. La final creezi variabile, le schimbi cu plus egal și minus egal, le compari și le afișezi pe LED-uri cu str. Minim: A adaugă o monedă, până la douăzeci, iar B cumpără ceva care costă trei monede, dacă ai destule. Complet: minim, plus A și B arată soldul și numărul de cumpărături, iar limitele sunt păzite.
+Ce facem azi. La final creezi variabile, le schimbi cu plus egal și minus egal, le compari și le afișezi pe LED-uri cu str. Orice joc ține minte scorul, viețile, banii. Orice aplicație ține minte numele tău și setările. Toate acestea stau în variabile. Azi folosești variabile și condiții împreună, ca într-un joc adevărat.
 
-De ce contează. Orice joc ține minte scorul, viețile, banii. Orice aplicație ține minte numele tău și setările. Toate acestea stau în variabile. Azi folosești variabile și condiții împreună, ca într-un joc adevărat.
+Instrucțiuni noi azi. Nume egal valoare creează o variabilă, o cutie cu etichetă. Plus egal și minus egal adaugă sau scad din variabilă. Semnele de comparare, de exemplu două egal, mai mic sau mai mare, compară două valori. And cere ambele condiții, or cere măcar una. Str transformă un număr în text. Min și max țin o valoare între două limite. Dacă uiți ceva, caută în panoul Reference din editor: Variables, Maths și Data types.
 
 Primul pas. Variabila este o cutie cu etichetă. Scrii monede egal cinci. Monede este numele, eticheta, cinci este valoarea, iar semnul egal înseamnă pune în cutie.
 
@@ -27,6 +27,8 @@ Greșeli frecvente. Eroare la scroll: ai lipit text cu număr fără str. Eroare
 Proiectul de azi. Cufărul cu monede.
 
 Minim înseamnă: A adaugă, B cumpără doar dacă ai destule. Complet înseamnă: minim, plus soldul și cumpărăturile la A și B. Dacă rămâi în urmă, salvează la Minim.
+
+Provocare, trei stele. Creator de pixeli. Faci un caiet de desen pe LED-uri, în care miști un punct și lași urme. Două variabile, x și y, țin locul punctului, iar la pornire punctul este în centru. A mută punctul spre dreapta, B îl mută în jos, iar punctul se vede cu display punct set pixel. Punctul nu iese din ecran: după patru se întoarce la zero, sau folosești min. Punctele aprinse rămân pe ecran, ca urme, iar A și B șterg desenul și readuc punctul în centru. La final salvezi proiectul cu sufixul Pixeli.
 
 Recapitulare. Variabila este o cutie cu nume. Plus egal și minus egal schimbă valoarea. Două semne egal compară, un semn egal pune. And cere ambele condiții, or cere măcar una. Str transformă un număr în text. Limitele se păzesc cu if sau cu min și max.
 
