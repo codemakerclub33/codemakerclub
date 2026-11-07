@@ -1,5 +1,6 @@
-# Lecția 2 — Galeria de imagini
-**Modulul 1 · Python pe micro:bit**  
+# LECȚIA 2 — Galeria de imagini
+### Imagini, pixeli și bucla `for`
+**Modulul 1 · Python pe micro:bit · 2 ore**  
 **Code Maker Club · micro:bit Coder**
 
 > Azi desenezi pe LED-uri cu **text**: folosești imaginile gata făcute, îți inventezi propriile imagini și faci animații cu `for`.  
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei creezi imagini cu `Image("…")`, setezi pixeli cu `display.set_pixel` și arăți mai multe imagini una după alta.  
-**Minim:** o galerie cu **3 imagini desenate de tine**, care se schimbă la nesfârșit.  
-**Complet:** Minim + o **a patra imagine** și o animație cu **luminozitate** (o inimă care se aprinde treptat).
-
-## De ce contează
-Fiecare ecran din lume e făcut din pixeli: cei de pe telefon, de pe televizor, din jocuri. Azi desenezi cu cei 25 de pixeli ai plăcii și înveți un secret: **un desen e doar un șir de cifre**.
+## Ce facem azi
+La finalul orei creezi imagini cu `Image("…")`, setezi pixeli cu `display.set_pixel` și arăți mai multe imagini una după alta, cu un `for`. Fiecare ecran din lume e făcut din pixeli: cel de pe telefon, de pe televizor, din jocuri. Azi desenezi cu cei 25 de pixeli ai plăcii și înveți un secret: **un desen e doar un șir de cifre**.
 
 ---
 
@@ -28,7 +24,24 @@ Fiecare ecran din lume e făcut din pixeli: cei de pe telefon, de pe televizor, 
 | 75–105 | Galeria (**Minim**) și luminozitatea (**Complet**) |
 | 105–120 | Recapitulare, quiz, temă |
 
-**Unelte azi:** `Image.NUME` · `Image("…")` · `display.show(lista)` · `display.set_pixel` · `display.clear()` · `for … in range(…)`
+Exercițiile B–F și Provocarea sunt pentru cine termină mai repede, sau pentru acasă.
+
+**Ce ai nevoie:** [python.microbit.org](https://python.microbit.org) · placa micro:bit · cablu USB de date
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `Image("00900:09990:…")` | Imagine proprie: 5 rânduri de 5 cifre, despărțite prin `:` | un pom |
+| `display.show(lista, delay=…)` | Arată imaginile dintr-o listă, pe rând | `[Image.HEART, Image.DUCK]` |
+| `display.set_pixel(x, y, l)` | Aprinde un singur LED (`x`, `y` de la 0 la 4, luminozitate 0–9) | `display.set_pixel(2, 2, 9)` |
+| `display.clear()` | Stinge toate LED-urile | între două cadre |
+| `for i in range(n):` | Repetă de `n` ori; `i` ia valorile 0, 1, 2, … | `for i in range(5):` |
+| `Image.HEART * 0.3` | Aceeași imagine, mai slab luminată | inima care se aprinde |
+
+**Ajutor în editor:** în panoul **Reference** caută `Display`, `Loops` și `Lists (arrays)`.
 
 ---
 
@@ -180,7 +193,18 @@ Se aprinde diagonala, un LED pe rând.
 - [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
-### Exemplul 7 — Coborâșul soarelui
+**Răspunsul la tema din lecția 1.** Numărătoarea inversă de la `9` la `0`, care avea peste 20 de rânduri, se scrie acum în 5:
+```python
+from microbit import *
+
+for n in range(9, -1, -1):
+    display.show(n)
+    sleep(1000)
+display.show(Image.HAPPY)
+```
+`range(9, -1, -1)` înseamnă „începe de la 9, oprește-te înainte de -1, scade câte 1”. Ai nevoie de el la **Exercițiul F** de mai jos.
+
+### Exemplul 7 — Apusul soarelui
 `display.clear()` stinge toate LED-urile.
 ```python
 from microbit import *
@@ -295,22 +319,29 @@ display.show(Image.heart)
 2. Care e adresa pixelului din colțul din dreapta jos?  
 3. De câte ori se repetă `for i in range(5):`?
 
+### Exercițiul F — Numărătoarea cu pas
+Scrie un program care numără de la `10` la `0` din 2 în 2 (`10, 8, 6, 4, 2, 0`), câte o secundă pentru fiecare număr. Pentru numere cu două cifre folosește `display.scroll(str(n))`.
+
 **Gata când:**
 - [ ] Programul merge pe placă  
 - [ ] Ai cel puțin 3 imagini proprii  
 - [ ] Folosești `while True:` și `sleep`  
 - [ ] Ai încercat `for` cu `set_pixel`  
-- [ ] Ai răspunsurile la B–E  
+- [ ] Ai răspunsurile la B–F  
 
 ---
 
-## Bonus (după Complet)
-- [ ] Fă o animație cu 5 cadre (o floare care se deschide, o rachetă care urcă)  
-- [ ] Desenează cu `set_pixel` și `for` un **rând întreg** aprins: `for x in range(5): display.set_pixel(x, 2, 9)`  
-- [ ] Fă un **fulger**: un cadru luminos 100 ms, apoi unul stins 900 ms  
-- [ ] Scrie-ți inițialele ca imagini (A, M, …)
+## Bonus ★★★ — Provocare: Felicitarea cu tort
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
+Fă o felicitare animată de zi de naștere.
+
+- [ ] Desenezi tu un tort în 3 cadre cu `Image("…")`: același tort, dar flacăra de sus are luminozitate diferită la fiecare cadru (`9`, apoi `4`, apoi `7`), ca să pâlpâie
+- [ ] Cadrele sunt într-o listă, arătate cu `display.show(…, delay=…)`, repetate de cel puțin 4 ori cu un `for`
+- [ ] La final derulează `"La multi ani!"` (fără diacritice) și apoi numele tău
+- [ ] Salvează proiectul ca `Prenume_Nume_MP1_L02_Felicitare`
+
+## Recapitulare pe scurt
 1. `Image.NUME` = imagini gata făcute (litere mari).  
 2. `Image("…")` = imagine proprie: 5 rânduri × 5 cifre, despărțite prin `:`.  
 3. Cifrele `0–9` = luminozitatea.  
@@ -318,18 +349,19 @@ display.show(Image.heart)
 5. `for i in range(5):` repetă de 5 ori.  
 6. Lista `[a, b, c]` poate fi arătată cu `display.show(lista)`.
 
-## Schema pe scurt *(pe foaie)*
+**Schema pe scurt (pe foaie):** grilă 5×5 → șir de cifre → `Image("…")` → `display.show(...)` → buclă `while True:`
 
-grilă 5×5 → șir de cifre → `Image("…")` → `display.show(...)` → buclă `while True:`
-
-**Quiz scurt:**  
+## Quiz scurt
 - Cum desparți rândurile într-un șir `Image`?  
 - Ce valori poate avea `x`?  
 - Ce face `display.clear()`?  
 - Care e diferența dintre `Image.HEART` și `Image.HEART * 0.3`?
 
 ## Temă
-Desenează pe foaie **o animație cu 4 cadre** (de exemplu un fluture) și scrie șirurile de cifre pentru fiecare cadru. Mâine o rulezi pe placă.
+**O animație cu 4 cadre.** Desenează pe foaie, pe grile 5×5, o mică animație (un fluture care bate din aripi, o floare care se deschide) și scrie șirurile de cifre pentru fiecare cadru. Apoi scrie programul în editor și rulează-l în simulator, fără placă. Salvează-l ca `Prenume_Nume_MP1_L02_Tema`.
+
+## Ce urmează — Lecția 3
+Placa începe să **asculte**: citești butoanele A și B și iei decizii cu `if`, `elif` și `else`, ca să construiești un semnalizator de bicicletă.
 
 ---
 
@@ -354,3 +386,12 @@ display.show(Image("99999:00900:00900:00900:00900"))
 **Exercițiul D:** 1) litera `A` în loc de cifră → `ValueError`. 2) `x = 5` e în afara intervalului `0–4` → `ValueError`. 3) luminozitatea `10` e peste `9` → `ValueError`. 4) `Image.heart` trebuie `Image.HEART` → `AttributeError`.
 
 **Exercițiul E:** 1) luminozitate maximă. 2) `(4, 4)`. 3) De 5 ori (`i` = 0, 1, 2, 3, 4).
+
+**Exercițiul F:**
+```python
+from microbit import *
+
+for n in range(10, -1, -2):
+    display.scroll(str(n))
+    sleep(1000)
+```

@@ -1,16 +1,16 @@
-Lecția unu. De la blocuri la Python.
+Lecția unu. Primul program Python.
 
 Până acum ai construit programe din blocuri. Astăzi le scrii cu litere, în limbajul Python, pe aceeași placă micro:bit. Proiectul se numește Salutul meu în cod. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P unu, linie jos, L zero unu.
 
-Obiectivul. La final scrii și rulezi primele programe Python pe placă și știi ce înseamnă import, display, sleep și while True. Minim: un program care derulează numele tău, apoi arată o inimă. Complet: minim, plus inima bate în buclă.
+Ce facem azi. La final scrii și rulezi primele programe Python pe placă și știi ce înseamnă import, display, sleep și while True. Blocurile sunt ca piesele de Lego: ușor de pus laolaltă. Python este limba pe care o vorbesc programatorii adevărați: o scrii cu tastatura și poți face lucruri mult mai mari, de la site-uri și jocuri până la roboți și inteligență artificială. Astăzi faci primul pas.
 
-De ce contează. Blocurile sunt ca piesele de Lego: ușor de pus laolaltă. Python este limba pe care o vorbesc programatorii adevărați: o scrii cu tastatura și poți face lucruri mult mai mari. Același limbaj se folosește pentru site-uri, jocuri, roboți și inteligență artificială.
+Instrucțiuni noi azi. From microbit import steluță aduce în program uneltele plăcii și se scrie primul. Display punct scroll derulează un text pe LED-uri. Display punct show arată o imagine. Sleep așteaptă, iar o mie înseamnă o secundă. While True repetă mereu rândurile de sub ea, scrise cu patru spații. Semnul diez începe un comentariu: o notiță pe care Python o ignoră. Dacă uiți ceva, caută în panoul Reference din editor.
 
 Primul pas. Blocuri și Python, aceleași idei. Fiecare bloc din MakeCode are un frate în Python. Show string devine display punct scroll, Show icon devine display punct show, Pause devine sleep, iar Forever devine while True.
 
-Al doilea pas. Editorul. Deschizi python punct microbit punct org, creezi un proiect nou și îl denumești cu numele din fișier.
+Al doilea pas. Editorul. Deschizi python punct microbit punct org. Editorul are deja un program de pornire: o inimă, o pauză și cuvântul Hello. Apeși Play pe placa desenată din dreapta sus și îl vezi rulând. Abia apoi îl ștergi, pentru că vom scrie noi totul. Dai proiectului numele din fișier. Pentru placa adevărată apeși Send to micro:bit, sub codul tău. În stânga este panoul Reference, cu explicații pentru fiecare temă, de exemplu Display, Loops și Comments. În mijloc este codul tău. În dreapta este placa desenată, cu controale pentru A și B, lumină, temperatură, busolă și scuturare, ca să testezi programele chiar fără placă. Editorul colorează codul: violet pentru cuvintele limbajului și comentarii, turcoaz pentru numere și True, roșu pentru textul dintre ghilimele. Dacă tot restul programului devine roșu, ai uitat o ghilimea la sfârșitul textului.
 
-Al treilea pas. Primul program. Pe primul rând scrii: from microbit import steluță. Asta aduce în program toate uneltele plăcii. Pe al doilea rând: display punct scroll, paranteză, ghilimele, Salut, semnul exclamării, ghilimele, paranteză. Apeși Send to micro:bit și textul se derulează pe LED-uri.
+Al treilea pas. Primul program. Pe primul rând scrii: from microbit import steluță. Asta aduce în program toate uneltele plăcii. Pe al doilea rând: display punct scroll, paranteză, ghilimele, Salut, semnul exclamării, ghilimele, paranteză. Apeși Send to micro:bit și textul se derulează pe LED-uri. Ghilimelele pot fi duble sau simple, merg la fel.
 
 Al patrulea pas. O imagine. Display punct show, paranteză, Image punct HEART, cu litere mari. Apare inima.
 
@@ -24,13 +24,15 @@ Al optulea pas. Numere. Display punct scroll cu str de doi plus trei afișează 
 
 Al nouălea pas. Mai multe imagini una după alta, cu sleep între ele, ca la animațiile din blocuri.
 
-Al zecelea pas. Erorile sunt normale. Dacă greșești o literă, placa nu se supără: afișează o față tristă și derulează un mesaj cu numărul liniei. Citești mesajul, repari, trimiți din nou.
+Al zecelea pas. Erorile sunt normale. Dacă greșești o literă, placa nu se supără: derulează pe LED-uri un mesaj, în engleză, cu numărul liniei și tipul erorii. Citești mesajul, repari, trimiți din nou.
 
 Greșeli frecvente. Nu găsește display: ai uitat primul rând sau ai scris cu literă mare. Textul nu derulează: ai uitat ghilimelele. Eroare la while True: ai uitat cele două puncte de la final. Eroare de indentare: rândurile din buclă nu sunt aliniate la fel. Python face diferența între litere mari și mici.
 
 Proiectul de azi. Salutul meu în cod.
 
-Minim înseamnă: numele derulat și o inimă. Complet înseamnă: minim, plus inima care bate în buclă. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg citește numele tău pe LED-uri.
+Minim înseamnă: numele derulat și o inimă. Complet înseamnă: minim, plus inima care bate în buclă, cu cel puțin două comentarii. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg citește numele tău pe LED-uri.
+
+Provocare, trei stele. Insigna cu numele meu. Faci o insignă animată pe care o poți purta la expoziție. Numele tău derulează în buclă, fără diacritice. După nume, în aceeași buclă, apar cel puțin patru imagini diferite, cu pauze potrivite, de exemplu Image punct HEART, HAPPY, DUCK și HOUSE. Pui un comentariu la fiecare bloc din program. Alegi tu o a doua propoziție scurtă, de exemplu numele clubului sau al grupei, și o derulezi după imagini. La final salvezi proiectul cu sufixul Insigna.
 
 Recapitulare. Python este text: o instrucțiune pe rând, de sus în jos. From microbit import steluță se scrie mereu primul. Display punct scroll derulează text, iar display punct show arată o imagine. Sleep o mie înseamnă o secundă. While True repetă mereu.
 

@@ -1,5 +1,6 @@
-# Lecția 1 — De la blocuri la Python
-**Modulul 1 · Python pe micro:bit**  
+# LECȚIA 1 — De la blocuri la Python
+### Primul program Python
+**Modulul 1 · Python pe micro:bit · 2 ore**  
 **Code Maker Club · micro:bit Coder**
 
 > Până acum ai construit programe din blocuri. Azi le **scrii cu litere**, în limbajul **Python**, pe aceeași placă micro:bit.  
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei scrii și rulezi primele programe Python pe placă și știi ce înseamnă `import`, `display`, `sleep` și `while True`.  
-**Minim:** un program care derulează numele tău, apoi arată o inimă.  
-**Complet:** Minim + inima **bate** în buclă, iar programul are **comentarii**.
-
-## De ce contează
-Blocurile sunt ca piesele de Lego: ușor de pus laolaltă. Python e ca limba pe care o vorbesc programatorii adevărați: o scrii cu tastatura și poți face lucruri mult mai mari. Același limbaj e folosit pentru site-uri, jocuri, roboți și inteligență artificială. Azi faci primul pas.
+## Ce facem azi
+La finalul orei scrii și rulezi primele programe Python pe placă și știi ce înseamnă `import`, `display`, `sleep` și `while True`. Blocurile sunt ca piesele de Lego: ușor de pus laolaltă. Python e limba pe care o vorbesc programatorii adevărați: o scrii cu tastatura și poți face lucruri mult mai mari, de la site-uri și jocuri până la roboți și inteligență artificială. Azi faci primul pas.
 
 ---
 
@@ -25,10 +21,27 @@ Blocurile sunt ca piesele de Lego: ușor de pus laolaltă. Python e ca limba pe 
 | 15–30 | Editorul Python și trimiterea unui program pe placă |
 | 30–60 | Primele instrucțiuni: `display.scroll`, `display.show`, `sleep` |
 | 60–85 | Bucla `while True` și indentarea |
-| 85–105 | Erori: cum le citim și cum le reparăm |
-| 105–120 | Proiectul, recapitulare, quiz, temă |
+| 85–105 | Numere, imagini în serie și erori: cum le citim și cum le reparăm |
+| 105–120 | „Salutul meu în cod” (Minim și Complet), recapitulare, temă |
 
-**Unelte azi:** [python.microbit.org](https://python.microbit.org) · placa micro:bit · cablu USB de date
+Exercițiile B–E și Provocarea sunt pentru cine termină mai repede, sau pentru acasă.
+
+**Ce ai nevoie:** [python.microbit.org](https://python.microbit.org) · placa micro:bit · cablu USB de date
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `from microbit import *` | Aduce în program uneltele plăcii; se scrie primul | primul rând din program |
+| `display.scroll("text")` | Derulează un text pe LED-uri | `display.scroll("Ana")` |
+| `display.show(Image.HEART)` | Arată o imagine | `Image.HAPPY` |
+| `sleep(ms)` | Așteaptă (1000 = o secundă) | `sleep(500)` |
+| `while True:` | Repetă mereu rândurile de sub ea, cu 4 spații | inima care bate |
+| `# text` | Comentariu: o notiță pe care Python o ignoră | `# inima mare` |
+
+**Ajutor în editor:** panoul **Reference**, din stânga, are câte o pagină pentru `Display`, `Loops` și `Comments`.
 
 ---
 
@@ -48,11 +61,30 @@ Fiecare bloc din MakeCode are un „frate” în Python:
 
 ### 2) Editorul
 1. Deschide [python.microbit.org](https://python.microbit.org).  
-2. Creezi un proiect nou și îl denumești `Prenume_Nume_MP1_L01`.  
-3. Editorul are deja câteva rânduri. Le poți șterge: vom scrie noi totul.  
-4. Cu placa legată prin USB apeși **Send to micro:bit** (conectezi o dată placa, când te întreabă). Dacă nu merge, apeși **Save** pentru a salva fișierul **.hex** și îl tragi pe unitatea **MICROBIT**, ca în Modulul 1 de la cursul cu blocuri.
+2. Editorul are deja un program de pornire: o inimă, o pauză și cuvântul `Hello`. Apasă **Play** pe placa desenată din dreapta sus și vezi cum rulează. Abia apoi îl ștergi, pentru că vom scrie noi totul.  
+3. Dă proiectului numele `Prenume_Nume_MP1_L01` (în partea de sus, lângă creion).  
+4. Cu placa legată prin USB apeși **Send to micro:bit**, sub codul tău (conectezi o dată placa, când te întreabă). Dacă nu merge, apeși **Save** pentru a salva fișierul **.hex** și îl tragi pe unitatea **MICROBIT**, ca în Modulul 1 de la cursul cu blocuri.
+
+**Ce vezi în editor:**
+- **Stânga:** panoul **Reference** (explicații pentru fiecare temă: `Display`, `Buttons`, `Loops`, `Logic`, `Comments`…). Când uiți o instrucțiune, o cauți acolo.
+- **Mijloc:** codul tău.
+- **Dreapta:** placa desenată (simulatorul). Sub ea sunt controale pentru **A** și **B**, lumină, temperatură, busolă și scuturare, ca să testezi programele chiar fără placă.
+
+**Culorile din editor** te ajută să vezi greșelile:
+
+| Culoare | Ce este | Exemplu |
+|---------|---------|---------|
+| violet | cuvinte ale limbajului și comentarii | `from`, `import`, `while`, `# notiță` |
+| turcoaz | numere și `True` | `1000`, `True` |
+| roșu | text între ghilimele | `'Hello'` |
+
+Dacă tot restul programului devine roșu, ai uitat o ghilimea la sfârșitul textului.
 
 > **Atenție:** MakeCode poate scrie și el Python, dar cu alte nume (`basic.show_icon`). În acest curs folosim **MicroPython** din [python.microbit.org](https://python.microbit.org). Nu amesteca cele două.
+
+**Gata când:**  
+- [ ] Ai apăsat **Play** pe programul de pornire și ai văzut inima  
+- [ ] Poți arăta cu degetul **Reference**, codul și placa desenată  
 
 ### 3) Exemplul 1 — Primul program
 ```python
@@ -61,7 +93,7 @@ from microbit import *
 display.scroll("Salut!")
 ```
 - `from microbit import *` înseamnă „adu toate uneltele plăcii”. Îl scrii **primul** în orice program.  
-- `display.scroll("Salut!")` derulează textul pe LED-uri. Textul stă între **ghilimele**.
+- `display.scroll("Salut!")` derulează textul pe LED-uri. Textul stă între **ghilimele**, duble sau simple: `"Salut!"` și `'Salut!'` merg la fel (editorul de pornire folosește cele simple).
 
 **Ce vezi pe placă:** literele S, a, l, u, t, ! trec de la dreapta la stânga, o singură dată.
 
@@ -173,7 +205,7 @@ Mai întâi doarme, apoi se miră, apoi se bucură. Fiecare linie se execută **
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### 10) Exemplul 8 — Erorile sunt normale
-Dacă greșești o literă, placa **nu se supără**, ci îți spune ce e greșit: afișează o față tristă și **derulează un mesaj** cu numărul liniei.
+Dacă greșești o literă, placa **nu se supără**, ci îți spune ce e greșit: **derulează pe LED-uri un mesaj** (în engleză) cu numărul liniei și tipul erorii.
 
 | Greșeala | Ce zice Python (tipul erorii) |
 |----------|-------------------------------|
@@ -273,13 +305,18 @@ Răspunde pe foaie:
 
 ---
 
-## Bonus (după Complet)
-- [ ] Fă un program care arată **trei fețe** diferite, cu pauze  
-- [ ] Derulează o propoziție de 5 cuvinte, fără diacritice  
-- [ ] Caută în lista imaginilor `Image.DUCK` și `Image.HOUSE` și arată-le pe rând  
-- [ ] Scrie același program în **blocuri** și în **Python** și compară-le
+## Bonus ★★★ — Provocare: Insigna cu numele meu
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
+Fă o insignă animată pe care o poți purta la expoziție.
+
+- [ ] Numele tău derulează în buclă, fără diacritice
+- [ ] După nume, în aceeași buclă, apar cel puțin 4 imagini diferite, cu pauze potrivite (de exemplu `Image.HEART`, `Image.HAPPY`, `Image.DUCK` și `Image.HOUSE`)
+- [ ] Pui un comentariu la fiecare bloc din program
+- [ ] Alege tu o a doua propoziție scurtă (numele clubului sau al grupei) și derulează-o după imagini
+- [ ] Salvează proiectul ca `Prenume_Nume_MP1_L01_Insigna`
+
+## Recapitulare pe scurt
 1. Python e text: **o instrucțiune pe rând**, de sus în jos.  
 2. `from microbit import *` îl scrii mereu **primul**.  
 3. `display.scroll("...")` derulează text; `display.show(Image.NUME)` arată o imagine.  
@@ -287,18 +324,21 @@ Răspunde pe foaie:
 5. `while True:` repetă mereu; rândurile din ea au **4 spații**.  
 6. Litere mari ≠ litere mici.
 
-## Schema pe scurt *(pe foaie)*
+**Schema pe scurt (pe foaie):** `from microbit import *` → `display.scroll(...)` / `display.show(...)` → `sleep(...)` → `while True:` (repetă)
 
-`from microbit import *` → `display.scroll(...)` / `display.show(...)` → `sleep(...)` → `while True:` (repetă)
-
-**Quiz scurt:**  
+## Quiz scurt
 - Ce înseamnă `1000` în `sleep(1000)`?  
 - Cum scrii în Python blocul `forever`?  
 - De ce nu scriem `Display.scroll`?  
 - Ce arată placa dacă ai o eroare?
 
 ## Temă
-Scrie acasă, pe foaie, un program Python care arată pe placă **pe rând, la un interval de o secundă**, trei imagini la alegere. Mâine îl introduci în editor și îl rulezi.
+**Numărătoarea inversă.** Scrie acasă, în editor (merge și în simulator, fără placă), un program care numără de la `9` la `0`, câte o secundă pentru fiecare număr, apoi arată `Image.HAPPY`. Folosește `display.show(9)`, `sleep(1000)` și așa mai departe, un rând după altul.
+
+La final răspunde pe foaie: câte rânduri a avut programul? Ce ți-ar plăcea să poți scrie mai **scurt**? (În lecția 2 învățăm cum.)
+
+## Ce urmează — Lecția 2
+În lecția următoare construiești **Galeria de imagini**: faci propriile imagini, pixel cu pixel, și le pui într-o listă.
 
 ---
 
