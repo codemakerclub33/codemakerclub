@@ -19,12 +19,12 @@ La finalul orei traduci evenimente, variabile, decizii și bucle din blocuri în
 |--------|----------|
 | 0–10 | Recap L7: funcții, parametri |
 | 10–30 | Dicționarul blocuri → Python |
-| 30–60 | Traducem 4 programe mici |
-| 60–80 | Seiful secret (**Minim**) |
+| 30–55 | Traducem 2 programe mici |
+| 55–80 | Seiful secret (**Minim**) |
 | 80–105 | Funcții, `global` și alarma (**Complet**) |
 | 105–120 | Recapitulare, quiz, temă |
 
-Exercițiile B–E și Provocarea sunt pentru cine termină mai repede, sau pentru acasă.
+Exercițiile B–F și Provocarea sunt pentru cine termină mai repede, sau pentru acasă.
 
 **Ce ai nevoie:** [python.microbit.org](https://python.microbit.org) · placa micro:bit · cablu USB de date
 
@@ -119,47 +119,6 @@ while True:
 - [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
-### Exemplul 3 — Bila magică (din L7)
-Blocuri: la scuturare alege 0, 1 sau 2. Pentru Python avem nevoie de modulul `random`.
-```python
-from microbit import *
-import random
-
-display.show("?")
-
-while True:
-    if accelerometer.was_gesture("shake"):
-        raspuns = random.randint(0, 2)
-        if raspuns == 0:
-            display.show(Image.YES)
-        elif raspuns == 1:
-            display.show(Image.NO)
-        else:
-            display.show(Image.CONFUSED)
-    sleep(100)
-```
-`random.randint(0, 2)` poate da `0`, `1` **sau** `2` (ambele capete sunt incluse).
-
-**Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
-### Exemplul 4 — Felinarul (din L8)
-```python
-from microbit import *
-
-while True:
-    if display.read_light_level() < 40:
-        display.show(Image("99999:99999:99999:99999:99999"))
-    else:
-        display.clear()
-    sleep(200)
-```
-
-**Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
 ### 2) Seiful — planul
 Codul secret e **A, B, A**. Variabila `pas` ține minte în ce pas ești:
 
@@ -171,7 +130,7 @@ Codul secret e **A, B, A**. Variabila `pas` ține minte în ce pas ești:
 
 La `pas == 2`, un **A** deschide seiful.
 
-### Exemplul 5 — Seiful Minim
+### Exemplul 3 — Seiful Minim
 ```python
 from microbit import *
 
@@ -210,13 +169,13 @@ while True:
             display.show(Image.SQUARE)
     sleep(100)
 ```
-Se vede cum aceleași blocuri `Yes` / `No` se repetă. Cu o **funcție** scăpăm de repetări.
+Se vede cum aceleași rânduri `NO` se repetă de patru ori. Cu o **funcție** scăpăm de repetări.
 
 **Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
-### Exemplul 6 — Probleme cu `global`
+### Exemplul 4 — Probleme cu `global`
 Încercăm să mutăm greșeala într-o funcție:
 ```text
 pas = 0
@@ -246,88 +205,11 @@ display.scroll(str(pas))
 > `global pas` se pune **înainte** să schimbi `pas` în funcție. Dacă doar **citești** o variabilă de afară, nu ai nevoie de `global`.
 
 **Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
-### Exemplul 7 — Alegem un text la întâmplare
-```python
-from microbit import *
-import random
-
-raspunsuri = ["Da", "Nu", "Poate"]
-display.scroll(random.choice(raspunsuri))
-```
-`random.choice(lista)` alege un element **la întâmplare** dintr-o listă.
-
-**Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 7** în simulator sau pe placă  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
-### Exemplul 8 — Seiful Complet, pe bucăți
-Pregătim două funcții mici:
-```python
-from microbit import *
-
-pas = 0
-greseli = 0
-
-def seif_inchis():
-    display.show(Image.SQUARE)
-
-def alarma():
-    for i in range(5):
-        display.show(Image.SKULL)
-        sleep(200)
-        display.clear()
-        sleep(200)
-
-seif_inchis()
-alarma()
-seif_inchis()
-```
-`alarma()` pâlpâie craniul de 5 ori, apoi seiful revine.
-
-**Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 8** în simulator sau pe placă  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
-### Exemplul 9 — Funcția `greseala`
-```python
-from microbit import *
-
-pas = 1
-greseli = 2
-
-def seif_inchis():
-    display.show(Image.SQUARE)
-
-def alarma():
-    for i in range(5):
-        display.show(Image.SKULL)
-        sleep(200)
-        display.clear()
-        sleep(200)
-
-def greseala():
-    global pas, greseli
-    greseli += 1
-    pas = 0
-    display.show(Image.NO)
-    sleep(700)
-    if greseli >= 3:
-        alarma()
-        greseli = 0
-    seif_inchis()
-
-greseala()
-```
-La a treia greșeală (`greseli` ajunge la `3`) pornește alarma.
-
-**Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 9** în simulator sau pe placă  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
-### Exemplul 10 — Seiful Complet
+### Exemplul 5 — Seiful Complet
+Aici folosim funcții și `global` din exemplul 4. `seif_inchis()` readuce seiful, `alarma()` pâlpâie craniul de 5 ori, iar `greseala()` numără greșelile și pornește alarma la a treia.
 ```python
 from microbit import *
 
@@ -384,10 +266,10 @@ while True:
 - **A, B, A** deschide seiful: `YES` timp de 2 secunde.  
 - Orice altă secvență (inclusiv **A+B**) e **greșeală**.  
 - La **3 greșeli la rând** pornește alarma; o deschidere reușită pune `greseli` înapoi pe `0`.  
-- Programul are **mai puține rânduri repetate** decât Exemplul 5.
+- Programul are **mai puține rânduri repetate** decât Exemplul 3.
 
 **Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 10** în simulator sau pe placă  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
@@ -415,10 +297,10 @@ while True:
 Scrie seiful tău. Alege un **cod diferit** de A–B–A (de exemplu B–A–B) și schimbă condițiile.
 
 ### Exercițiul B — Ce se întâmplă?
-La programul din Exemplul 10, apeși în ordine: **A, A, B, A**. Care sunt valorile finale ale lui `pas` și `greseli`? (Pornești cu `pas = 0`, `greseli = 0`.)
+La programul din Exemplul 5, apeși în ordine: **A, A, B, A**. Care sunt valorile finale ale lui `pas` și `greseli`? (Pornești cu `pas = 0`, `greseli = 0`.)
 
 ### Exercițiul C — Traduce bila magică cu 4 răspunsuri
-Blocuri: la scuturare, `pick random 0 to 3` alege `Yes`, `No`, `Confused` sau `Happy`. Scrie programul în Python.
+Blocuri: la scuturare, `pick random 0 to 3` alege `Yes`, `No`, `Confused` sau `Happy`. Scrie programul în Python. Ai nevoie de `import random` sub `from microbit import *`; `random.randint(0, 3)` dă `0`, `1`, `2` sau `3`.
 
 ### Exercițiul D — Găsește greșelile
 ```text
@@ -434,7 +316,10 @@ if button_a.was_pressed()
 x = random.randint(0, 3)
 ```
 
-### Exercițiul E — Explică
+### Exercițiul E — Felinarul
+Blocuri: `forever`, dacă lumina e sub `40` arată ecranul plin, altfel șterge ecranul. Scrie programul în Python (ecranul plin: `Image("99999:99999:99999:99999:99999")`).
+
+### Exercițiul F — Explică
 1. De ce Python nu are „blocuri de eveniment” ca MakeCode?  
 2. La ce folosește `global`?  
 3. Ce valori poate da `random.randint(1, 6)`?
@@ -444,7 +329,7 @@ x = random.randint(0, 3)
 - [ ] Codul secret e al tău  
 - [ ] Greșelile sunt numărate și pornește alarma  
 - [ ] Ai folosit cel puțin o funcție cu `global`  
-- [ ] Ai răspunsurile la B–E  
+- [ ] Ai răspunsurile la B–F  
 
 **→ Minim când:** un coleg încearcă codul și seiful se deschide doar la secvența corectă.
 
@@ -515,4 +400,16 @@ while True:
 
 **Exercițiul D:** 1) în `punct()` lipsește `global scor` (altfel apare `UnboundLocalError`). 2) lipsesc `:` după `if button_a.was_pressed()`. 3) `if`-ul nu e într-o buclă `while True:`, deci se verifică o singură dată. 4) `random` nu e importat (`NameError`).
 
-**Exercițiul E:** 1) Python e un limbaj de text; verificăm noi evenimentele într-o buclă. 2) Ca să schimbi o variabilă de afară dintr-o funcție. 3) `1, 2, 3, 4, 5` sau `6`.
+**Exercițiul E:**
+```python
+from microbit import *
+
+while True:
+    if display.read_light_level() < 40:
+        display.show(Image("99999:99999:99999:99999:99999"))
+    else:
+        display.clear()
+    sleep(200)
+```
+
+**Exercițiul F:** 1) Python e un limbaj de text; verificăm noi evenimentele într-o buclă. 2) Ca să schimbi o variabilă de afară dintr-o funcție. 3) `1, 2, 3, 4, 5` sau `6`.
