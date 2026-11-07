@@ -1,5 +1,6 @@
-# Lecția 9 — Prietenul de pe placă
-**Modulul 1 · Python pe micro:bit**  
+# LECȚIA 9 — Prietenul de pe placă
+### Stări, timp și funcții
+**Modulul 1 · Python pe micro:bit · 2 ore**  
 **Code Maker Club · micro:bit Coder**
 
 > Azi creezi **Pixi**, un animal de companie care trăiește pe placa ta! Îi e foame, se joacă, doarme când se face întuneric și își arată starea pe ecran. Este **proiectul final** al modulului.  
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai un program Python cu **stări**, **senzori**, **butoane**, **timp** și **funcții**.  
-**Minim:** Pixi are `foame` și `fericire`; **A** îl hrănește, **B** se joacă cu el, iar fața lui arată cum se simte.  
-**Complet:** Minim + **timp** (îi vine foame singur) + **doarme** pe întuneric + **ecran de stare** la A+B.
-
-## De ce contează
-Aproape orice joc sau aplicație ține minte **stări** (cât de flămând, cât de vesel) și le schimbă după ce face omul. Azi pui împreună tot ce ai învățat în modul: variabile, decizii, senzori, funcții.
+## Ce facem azi
+La finalul orei ai un program Python cu **stări**, **senzori**, **butoane**, **timp** și **funcții**. Aproape orice joc sau aplicație ține minte **stări** (cât de flămând, cât de vesel) și le schimbă după ce face omul. Azi pui împreună tot ce ai învățat în modul: variabile, decizii, senzori, funcții.
 
 ---
 
@@ -23,12 +19,28 @@ Aproape orice joc sau aplicație ține minte **stări** (cât de flămând, cât
 |--------|----------|
 | 0–10 | Recap L8: `global`, funcții |
 | 10–25 | Planul lui Pixi: stări și reguli |
-| 25–60 | Pixi **Minim**: foame, fericire, A și B |
-| 60–95 | Timp, somn și ecranul de stare — **Complet** |
+| 25–60 | Fața lui Pixi și Pixi **Minim** |
+| 60–95 | Timp, somn și ecranul de stare (**Complet**) |
 | 95–110 | Test cu un coleg, îmbunătățiri |
 | 110–120 | Recapitulare, quiz, temă |
 
-**Unelte azi:** variabile · funcții · `global` · `running_time()` · `display.read_light_level()` · `accelerometer.was_gesture()` · `if / elif / else`
+Exercițiile B–E și Provocarea sunt pentru cine termină mai repede, sau pentru acasă.
+
+**Ce ai nevoie:** [python.microbit.org](https://python.microbit.org) · placa micro:bit · cablu USB de date
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `running_time()` | Milisecundele de când a pornit placa; măsoară timpul fără `sleep` lung | `acum = running_time()` |
+| `return imagine` | O funcție care **întoarce** o imagine, ca s-o arăți cu `display.show` | `display.show(fata())` |
+| `pass` | „Nu fac nimic”; ține locul unui rând obligatoriu | `if doarme(): pass` |
+| `Image(5, 5)` | O imagine goală, pe care o desenezi cu `set_pixel` | `img = Image(5, 5)` |
+| `or` | „sau”: e adevărat dacă măcar una e adevărată | `foame >= 4 or fericire <= 1` |
+
+**Ajutor în editor:** în panoul **Reference** caută `Image`, `Light level` și `Accelerometer`. Funcția `limiteaza` o știi din lecția 7.
 
 ---
 
@@ -50,23 +62,7 @@ Regulile:
 - **Scuturat** se sperie.  
 - **A+B** arată starea.
 
-### Exemplul 1 — Funcția `limiteaza`
-O valoare nu trebuie să iasă din `0 … 5`. Reluăm funcția din L7:
-```python
-def limiteaza(x, mic, mare):
-    return max(mic, min(mare, x))
-
-print(limiteaza(7, 0, 5))
-print(limiteaza(-2, 0, 5))
-print(limiteaza(3, 0, 5))
-```
-`print` scrie în **consola serială** din editor (nu pe LED-uri). Se afișează `5`, `0` și `3`.
-
-**Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
-### Exemplul 2 — Fața lui Pixi
+### Exemplul 1 — Fața lui Pixi
 O funcție care **alege fața** după stări. Valorile le punem la început, ca să testăm:
 ```python
 from microbit import *
@@ -96,63 +92,10 @@ sleep(1500)
 > Funcția **returnează** o imagine (`return`), iar `display.show(...)` o afișează.
 
 **Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
+- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
-### Exemplul 3 — A hrănește
-```python
-from microbit import *
-
-foame = 4
-
-def limiteaza(x, mic, mare):
-    return max(mic, min(mare, x))
-
-while True:
-    if button_a.was_pressed():
-        foame = limiteaza(foame - 2, 0, 5)
-        display.show(Image.PACMAN)
-        sleep(800)
-        display.scroll(str(foame))
-    sleep(100)
-```
-Prima apăsare: `4 − 2 = 2`. A doua: `0`. A treia: tot `0`, nu `−2`, datorită lui `limiteaza`.
-
-**Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
-### Exemplul 4 — B se joacă
-Aici e o **regulă**: Pixi refuză dacă e foarte flămând.
-```python
-from microbit import *
-
-foame = 1
-fericire = 3
-
-def limiteaza(x, mic, mare):
-    return max(mic, min(mare, x))
-
-while True:
-    if button_b.was_pressed():
-        if foame >= 4:
-            display.show(Image.NO)
-            sleep(800)
-        else:
-            fericire = limiteaza(fericire + 1, 0, 5)
-            foame = limiteaza(foame + 1, 0, 5)
-            display.show(Image.DUCK)
-            sleep(800)
-        display.scroll(str(fericire) + " " + str(foame))
-    sleep(100)
-```
-La final se afișează `fericire` și `foame` (de exemplu `4 2`), ca să vezi cum se schimbă.
-
-**Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
-### Exemplul 5 — Timpul trece
+### Exemplul 2 — Timpul trece
 Ca să-i vină foame singur, ne uităm la ceas. `running_time()` dă **milisecundele** de când a pornit placa.
 ```python
 from microbit import *
@@ -174,10 +117,10 @@ La fiecare **4 secunde** `foame` crește cu 1, până la 5.
 > De ce nu folosim `sleep(4000)`? Pentru că atunci placa **nu ar mai vedea butoanele** 4 secunde. Cu `running_time()` programul rămâne atent tot timpul.
 
 **Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
+- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
-### Exemplul 6 — Pixi doarme
+### Exemplul 3 — Pixi doarme
 ```python
 from microbit import *
 
@@ -196,10 +139,10 @@ while True:
 Acoperă placa cu mâna: Pixi adoarme. Dacă lumina ambientală e mică, schimbă pragul.
 
 **Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
-### Exemplul 7 — Ecranul de stare
+### Exemplul 4 — Ecranul de stare
 Un mic grafic: **prima coloană** arată `foame`, **ultima** arată `fericire`.
 ```python
 from microbit import *
@@ -221,10 +164,10 @@ sleep(2000)
 **Ce vezi pe placă:** o coloană cu 3 LED-uri în stânga și una cu 4 în dreapta.
 
 **Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 7** în simulator sau pe placă  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
-### Exemplul 8 — Pixi Minim
+### Exemplul 5 — Pixi Minim
 ```python
 from microbit import *
 
@@ -270,10 +213,10 @@ while True:
 Observă că **funcțiile doar citesc** `foame` și `fericire`. De aceea nu au nevoie de `global`.
 
 **Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 8** în simulator sau pe placă  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
-### Exemplul 9 — Pixi Complet
+### Exemplul 6 — Pixi Complet
 Adăugăm timpul, somnul, scuturarea și ecranul de stare:
 ```python
 from microbit import *
@@ -360,21 +303,7 @@ Cum funcționează:
 - Ordinea contează: `a and b` e verificat **înaintea** lui `a` și `b` separat.
 
 **Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 9** în simulator sau pe placă  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
-### Exemplul 10 — Idei pentru Pixi 2.0
-```python
-from microbit import *
-import random
-
-nume = ["Pixi", "Lumi", "Bobo", "Nori"]
-display.scroll(random.choice(nume))
-```
-Fiecare prieten de pe placă poate primi **un nume la întâmplare**. Alte idei: un Pixi care **crește** (nivel), o **inimă** la 5 jocuri la rând, o altă imagine pentru **cald/rece** (`temperature()`).
-
-**Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 10** în simulator sau pe placă  
+- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
@@ -436,13 +365,21 @@ while True
 
 ---
 
-## Bonus (după Complet)
-- [ ] Pixi **crește**: după 5 jocuri primește „nivel” și o față nouă  
-- [ ] Adaugă **temperatura**: dacă e peste 28 °C, Pixi spune „Cald!”  
-- [ ] Un **sunet** (doar V2): `music.play(music.JUMP_UP)` după hrănire (`import music`)  
-- [ ] Pixi are **stări de spirit** alese la întâmplare: la fiecare joc, `random.choice` îi dă o față nouă  
+## Bonus ★★★ — Provocare: Testul de reflexe
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
+Cât de repede reacționezi? Placa așteaptă un timp la întâmplare, apoi dă semnalul, iar tu apeși **A** cât poți de repede.
+
+**Ajutor:** `sleep(random.randint(2000, 5000))` așteaptă între 2 și 5 secunde (ai nevoie de `import random`). Cu `button_a.was_pressed()` citit o dată înainte de așteptare **golești** memoria butonului. Timpul de reacție este `running_time()` de după apăsare minus `running_time()` de la semnal.
+
+- [ ] Pe ecran apare `Image.SQUARE_SMALL`; după o pauză la întâmplare de 2–5 secunde apare `Image.TARGET`
+- [ ] Placa măsoară în milisecunde cât timp ai așteptat până ai apăsat **A**
+- [ ] Rezultatul se derulează cu `display.scroll(...)`
+- [ ] Dacă apeși **înainte** de semnal, apare `Image.SAD` și testul se reia
+- [ ] Placa ține minte **recordul** (cel mai mic timp) și îl arată la **B**
+- [ ] Salvează proiectul ca `Prenume_Nume_MP1_L09_Reflexe`
+
+## Recapitulare pe scurt
 1. Un program cu stări ține minte lucrurile în **variabile**.  
 2. `limiteaza` ține valorile între două limite.  
 3. O funcție poate **returna** o imagine; o funcție care schimbă variabile de afară are nevoie de `global`.  
@@ -450,18 +387,19 @@ while True
 5. `pass` = „nu fac nimic”.  
 6. Ordinea `if / elif` contează: cazul cel mai specific (`a and b`) merge primul.
 
-## Schema pe scurt *(pe foaie)*
+**Schema pe scurt (pe foaie):** stări (`foame`, `fericire`) · butoane schimbă stările · `fata()` alege imaginea · `trece_timpul()` · `doarme()`
 
-stări (`foame`, `fericire`) · butoane schimbă stările · `fata()` alege imaginea · `trece_timpul()` · `doarme()`
-
-**Quiz scurt:**  
+## Quiz scurt  
 - Ce valori poate avea `foame`?  
 - Ce se întâmplă dacă apeși B când `foame` e 4?  
 - Ce arată ecranul de stare?  
 - De ce `a and b` e înaintea lui `a`?
 
 ## Temă
-Desenează pe foaie **fețele** lui Pixi (cel puțin 4) și scrie lângă fiecare **când** apare (de exemplu „foame ≥ 4”). Pregătește o **propoziție** despre proiectul tău pentru expoziția de data viitoare.
+**Temperatura lui Pixi.** Scrie acasă, în editor (merge și în simulator, fără placă), un program în care Pixi simte temperatura. La **A** placa citește `temperature()`: dacă e peste `28` arată `Image.SURPRISED` și derulează `"Cald!"`, dacă e sub `15` derulează `"Frig!"`, altfel arată `Image.HAPPY`. În simulator schimbi temperatura din panoul de senzori. Salvează-l ca `Prenume_Nume_MP1_L09_Tema`.
+
+## Ce urmează — Lecția 10
+Ultima lecție: **Expoziția Coder**. Alegi un joc, îl termini, îl arăți colegilor și primești insigna **Coder**.
 
 ---
 
