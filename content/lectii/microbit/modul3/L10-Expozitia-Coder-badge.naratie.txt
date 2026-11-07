@@ -2,9 +2,9 @@ Lecția zece. Expoziția Coder și badge.
 
 Astăzi este ziua expoziției! Îți prezinți programul Python, explici cum funcționează, primești păreri de la colegi și primești insigna micro:bit Coder. Proiectul se numește Standul meu Coder. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P unu, linie jos, L zece.
 
-Obiectivul. La final îți prezinți programul clar, citești codul unui coleg și completezi Verificarea Modulului unu. Minim: proiectul rulează pe placă, iar fișa lui este completă. Complet: minim, plus prezentare de două minute și o îmbunătățire făcută după părerile colegilor.
+Ce facem azi. La final îți prezinți programul clar, citești codul unui coleg și completezi Verificarea Modulului unu. Programatorii nu doar scriu cod: îl explică, îl citesc pe al altora și îl îmbunătățesc. Azi faci toate trei.
 
-De ce contează. Programatorii nu doar scriu cod: îl explică, îl citesc pe al altora și îl îmbunătățesc. Azi faci toate trei.
+Instrucțiuni noi azi. Azi nu învățăm instrucțiuni noi, ci cum să scrii cod ușor de citit. Un comentariu începe cu semnul diez și este o notiță pentru oameni, placa îl ignoră. O constantă are o valoare care nu se schimbă și se scrie cu litere mari. Variabilele au nume care spun ce sunt. Un rând gol separă părțile programului.
 
 Primul pas. Alegem programul de expus: Pixi, Seiful, Roata norocului, Detectivul de cameră, Cufărul cu monede sau Biblioteca de desene. Verifici că rulează pe placă.
 
@@ -27,6 +27,8 @@ Greșeli frecvente. Programul nu pornește la expoziție: reîncarcă-l înainte
 Proiectul de azi. Standul meu Coder.
 
 Minim înseamnă: program funcțional, fișă completă și cod cu comentarii. Complet înseamnă: minim, plus prezentarea, o îmbunătățire și verificarea.
+
+Provocare, trei stele. Prinde punctul. Un joc nou, făcut din tot ce ai învățat: un punct cade de sus, iar tu miști o platformă ca să-l prinzi. Platforma stă pe rândul de jos. Butonul A o mută la stânga, iar B la dreapta, fără să iasă din ecran. Punctul pornește de sus, de pe o coloană la întâmplare, și coboară un rând la fiecare trei sute de milisecunde. Dacă ajunge jos pe coloana platformei, scorul crește cu unu și pornește alt punct. Dacă ajunge jos în altă coloană, apare o față tristă, iar jocul derulează scorul. Punctul cade tot mai repede, pe măsură ce scorul crește. Salvezi proiectul cu sufixul Prinde.
 
 Recapitulare. Python pe micro:bit: imagini, butoane, variabile, senzori, întâmplare și liste, funcții. Codul bun este clar: comentarii, nume bune, rânduri goale. Prezentarea are ordine. Citim și îmbunătățim codul altora.
 

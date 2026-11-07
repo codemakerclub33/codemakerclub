@@ -13,7 +13,7 @@ Stabilit în discuție (7 nov 2026). Regulă: **o singură placă pe copil**, f�
 | 7 | Biblioteca de desene | Mesaje Morse cu funcții | 25 |
 | 8 | Traducător de blocuri | Simon Says | 37 |
 | 9 | Prietenul de pe placă | Testul de reflexe (`running_time`) | 31 |
-| 10 | Expoziția Coder | Un joc la alegere: 32, 33 sau 35 | 32/33/35 |
+| 10 | Expoziția Coder | Prinde punctul (joc nou, idea 33) | 33 |
 
 ## Teme (exemple)
 - L1: Numărătoarea inversă de la 9 la 0 (idea 5), scrisă rând cu rând; întrebarea „ce ai vrea să scrii mai scurt?" pregătește bucla din L2.

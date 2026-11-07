@@ -1,5 +1,6 @@
-# Lecția 10 — Expoziția Coder + badge
-**Modulul 1 · Python pe micro:bit**  
+# LECȚIA 10 — Expoziția Coder + badge
+### Prezentăm, citim cod, primim insigna
+**Modulul 1 · Python pe micro:bit · 2 ore**  
 **Code Maker Club · micro:bit Coder**
 
 > Azi e **ziua expoziției**! Îți prezinți programul Python, explici cum funcționează, primești păreri de la colegi și primești insigna **micro:bit Coder**.  
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei îți prezinți programul clar, citești codul unui coleg și completezi **Verificarea Modulului 1**.  
-**Minim:** proiectul rulează pe placă, iar fișa lui e completă.  
-**Complet:** Minim + **prezentare de 2 minute** + o **îmbunătățire** făcută după părerile colegilor.
-
-## De ce contează
-Programatorii nu doar scriu cod: îl **explică**, îl **citesc** pe al altora și îl **îmbunătățesc**. Azi faci toate trei.
+## Ce facem azi
+La finalul orei îți prezinți programul clar, citești codul unui coleg și completezi **Verificarea Modulului 1**. Programatorii nu doar scriu cod: îl **explică**, îl **citesc** pe al altora și îl **îmbunătățesc**. Azi faci toate trei.
 
 ---
 
@@ -28,7 +24,21 @@ Programatorii nu doar scriu cod: îl **explică**, îl **citesc** pe al altora �
 | 85–95 | Îmbunătățim după păreri |
 | 95–120 | **Verificarea Modulului 1** + autoevaluare + badge |
 
-**Unelte azi:** proiectul tău din Modul 1 (de preferat **L9: Pixi**) · cartonașe de păreri · afiș mic
+Provocarea este pentru cine termină mai repede, sau pentru acasă.
+
+**Ce ai nevoie:** [python.microbit.org](https://python.microbit.org) · placa micro:bit · cablu USB de date · proiectul tău din Modul 1 (de preferat **L9: Pixi**) · cartonașe de păreri
+
+---
+
+## Instrucțiuni noi azi
+Azi nu învățăm instrucțiuni noi, ci cum să scrii cod **ușor de citit**:
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `# text` | Comentariu: o notiță pentru oameni, placa o ignoră | `# daca e cald, afisam o fata mirata` |
+| `NUME_MARE` | Constantă: o valoare care nu se schimbă, cu litere mari | `PRAG_CALD = 26` |
+| nume clare | Variabile cu nume care spun ce sunt | `foame`, nu `x` |
+| rând gol | Separă părțile programului | între funcții și bucla principală |
 
 ---
 
@@ -168,24 +178,30 @@ Bifează ce poți face **singur**:
 
 ---
 
-## Bonus (după Complet)
-- [ ] Citește codul unui coleg și găsește **o idee** pentru el  
-- [ ] Rescrie un program din Modulul 1 mai scurt, cu o funcție  
-- [ ] Desenează o **hartă** a programului: ce apelează ce  
-- [ ] Gândește-te la un proiect pentru **Modulul 2** (Proiecte Python)
+## Bonus ★★★ — Provocare: Prinde punctul
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
+Un joc nou, făcut din tot ce ai învățat: un punct cade de sus, iar tu mișți o platformă ca să-l prinzi.
+
+**Ajutor:** platforma stă pe rândul de jos (`y = 4`), iar poziția ei e o variabilă `x` între `0` și `4`. Punctul cade pe o coloană aleasă cu `random.randint(0, 4)`. Redesenezi tot ecranul la fiecare pas: `display.clear()`, apoi două `display.set_pixel(...)`.
+
+- [ ] **A** mută platforma la stânga, **B** la dreapta; ea nu iese din ecran (poți folosi o funcție `limiteaza`)
+- [ ] Punctul pornește de sus, de pe o coloană la întâmplare, și coboară un rând la fiecare `300` ms
+- [ ] Dacă ajunge jos pe coloana platformei, scorul crește cu `1` și pornește alt punct
+- [ ] Dacă ajunge jos în altă coloană, apare `Image.SAD`, iar jocul derulează scorul
+- [ ] Punctul cade tot mai repede, pe măsură ce scorul crește
+- [ ] Salvează proiectul ca `Prenume_Nume_MP1_L10_Prinde`
+
+## Recapitulare pe scurt
 1. Python pe micro:bit: `from microbit import *`.  
 2. Imagini, butoane, variabile, senzori, întâmplare și liste, funcții.  
 3. Codul bun e **clar**: comentarii, nume bune, rânduri goale.  
 4. Prezentarea are ordine: ce face, cum merge, ce a fost greu, ce adaug.  
 5. Citim și îmbunătățim codul altora.
 
-## Schema pe scurt *(pe foaie)*
+**Schema pe scurt (pe foaie):** stand → test → comentarii → fișă → prezentare → păreri → îmbunătățire → badge
 
-stand → test → comentarii → fișă → prezentare → păreri → îmbunătățire → badge
-
-**Quiz scurt:**  
+## Quiz scurt  
 - Ce pui pe fișa proiectului?  
 - De ce comentezi codul?  
 - Ce faci cu o părere primită?  
@@ -193,3 +209,6 @@ stand → test → comentarii → fișă → prezentare → păreri → îmbună
 
 ## Temă
 Alege **un proiect** din Modulul 1 și scrie 3 rânduri: ce a mers bine, ce a fost greu, ce ai face altfel. Gândește-te ce ai vrea să construiești în **Modulul 2**.
+
+## Ce urmează — Modulul 2
+Construiești proiecte mai mari în Python: jocuri, aplicații cu senzori și programe cu mai multe funcții.
