@@ -2,9 +2,9 @@ Lecția opt. Traducător de blocuri.
 
 Astăzi ești traducător: iei programe făcute din blocuri și le scrii în Python. Descoperi că aceleași idei se spun în două limbi. Proiectul se numește Seiful secret în Python. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P unu, linie jos, L zero opt.
 
-Obiectivul. La final știi să traduci evenimente, variabile, decizii și bucle din blocuri în Python și folosești global și random. Minim: seiful cu codul A, B, A: deschide cu o bifă, iar orice greșeală îl închide din nou. Complet: minim, plus funcții, numărarea greșelilor și o alarmă după trei încercări greșite.
+Ce facem azi. La final traduci evenimente, variabile, decizii și bucle din blocuri în Python și folosești global și random. Blocurile te ajută să înțelegi o idee. Python îți permite să o scrii mai scurt și să construiești lucruri mai mari. Un programator bun trece ușor din unul în celălalt. Azi exersezi.
 
-De ce contează. Blocurile te ajută să înțelegi o idee. Python îți permite să o scrii mai scurt, mai clar, și să construiești lucruri mai mari. Un programator bun trece ușor din unul în celălalt.
+Instrucțiuni noi azi. While True înlocuiește blocul forever și verifică mereu evenimentele. Citești butoanele o singură dată pe tură, în variabilele a și b, ca să le poți compara. Elif înseamnă altfel, dacă. Global lasă o funcție să schimbe o variabilă de afară. Plus egal adaugă la o variabilă. Random punct randint alege un număr la întâmplare, de la primul la al doilea, inclusiv. Dacă uiți ceva, caută în panoul Reference din editor: Buttons, Accelerometer și Functions.
 
 Primul pas. Dicționarul blocuri, Python. On start devine rândurile de la început. Forever devine while True. Un eveniment, On button A pressed, devine un if cu button A punct was pressed, într-o buclă. Set score devine score egal zero. Change score by unu devine score plus egal unu. Pick random devine random punct randint. Show icon devine display punct show. Pause devine sleep. Repeat devine for în range. Evenimentele din blocuri nu au un frate direct în Python: folosim o buclă care verifică la fiecare tură dacă s-a întâmplat ceva.
 
@@ -23,6 +23,8 @@ Greșeli frecvente. Variabila nu se schimbă: ai schimbat-o într-o funcție fă
 Proiectul de azi. Seiful secret în Python.
 
 Minim înseamnă: codul A, B, A, cu bifă și cruce. Complet înseamnă: minim, plus funcții, global și alarma. Dacă rămâi în urmă, salvează la Minim.
+
+Provocare, trei stele. Simon Says. Placa arată o secvență de butoane, iar tu o repeți din memorie. La fiecare rundă secvența crește cu un pas. Începi cu o listă goală și adaugi la fiecare rundă un element ales la întâmplare dintre A și B, cu append și random punct choice. Placa arată secvența, litera cu litera. Apoi așteaptă să apeși butoanele în aceeași ordine. O apăsare greșită oprește jocul cu o față tristă. Dacă ai repetat corect, apare o față veselă și runda următoare adaugă un pas. La final placa derulează scorul, adică lungimea secvenței atinse. Salvezi proiectul cu sufixul Simon.
 
 Recapitulare. Blocurile și Python spun aceleași idei. Evenimentele din blocuri devin verificări în while True. Random randint alege un număr între două valori, inclusiv. Global este necesar când schimbi o variabilă de afară într-o funcție. Funcțiile scurtează codul repetat. Citim A și B o singură dată pe tură.
 

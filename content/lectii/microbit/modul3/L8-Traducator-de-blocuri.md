@@ -1,5 +1,6 @@
-# Lecția 8 — Traducător de blocuri
-**Modulul 1 · Python pe micro:bit**  
+# LECȚIA 8 — Traducător de blocuri
+### Din blocuri în Python
+**Modulul 1 · Python pe micro:bit · 2 ore**  
 **Code Maker Club · micro:bit Coder**
 
 > Azi ești **traducător**: iei programe făcute din blocuri și le scrii în Python. Descoperi că aceleași idei se spun în două limbi.  
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei știi să traduci evenimente, variabile, decizii și bucle din blocuri în Python și folosești `global` și `random`.  
-**Minim:** seiful cu codul **A – B – A**: deschide cu bifă, iar orice greșeală îl închide din nou.  
-**Complet:** Minim + **funcții**, numărarea **greșelilor** și o **alarmă** după 3 încercări greșite.
-
-## De ce contează
-Blocurile te ajută să înțelegi o idee. Python îți permite să o scrii **mai scurt, mai clar** și să construiești lucruri mai mari. Un programator bun poate trece ușor din unul în celălalt. Azi exersezi.
+## Ce facem azi
+La finalul orei traduci evenimente, variabile, decizii și bucle din blocuri în Python și folosești `global` și `random`. Blocurile te ajută să înțelegi o idee; Python îți permite să o scrii mai scurt și să construiești lucruri mai mari. Un programator bun trece ușor din unul în celălalt. Azi exersezi.
 
 ---
 
@@ -23,12 +19,29 @@ Blocurile te ajută să înțelegi o idee. Python îți permite să o scrii **ma
 |--------|----------|
 | 0–10 | Recap L7: funcții, parametri |
 | 10–30 | Dicționarul blocuri → Python |
-| 30–60 | Traducem 3 programe mici |
-| 60–80 | Seiful secret — **Minim** |
-| 80–105 | Funcții, `global` și alarma — **Complet** |
+| 30–60 | Traducem 4 programe mici |
+| 60–80 | Seiful secret (**Minim**) |
+| 80–105 | Funcții, `global` și alarma (**Complet**) |
 | 105–120 | Recapitulare, quiz, temă |
 
-**Unelte azi:** `global` · `import random` · `random.randint()` · `if / elif / else` · `while True:` · funcții
+Exercițiile B–E și Provocarea sunt pentru cine termină mai repede, sau pentru acasă.
+
+**Ce ai nevoie:** [python.microbit.org](https://python.microbit.org) · placa micro:bit · cablu USB de date
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `while True:` | Înlocuiește blocul `forever`; verifică mereu evenimentele | `while True:` |
+| `a = button_a.was_pressed()` | Citește butonul **o dată pe tură**, ca să poți compara `a` și `b` | `if a and b:` |
+| `elif` | „Altfel, dacă…” | `elif a:` |
+| `global nume` | Lasă o funcție să **schimbe** o variabilă de afară | `global pas, greseli` |
+| `x += 1` | Adaugă `1` la `x` | `greseli += 1` |
+| `random.randint(a, b)` | Un număr la întâmplare, de la `a` la `b` inclusiv | `random.randint(0, 2)` |
+
+**Ajutor în editor:** în panoul **Reference** caută `Buttons`, `Accelerometer` și `Functions`.
 
 ---
 
@@ -437,32 +450,41 @@ x = random.randint(0, 3)
 
 ---
 
-## Bonus (după Complet)
-- [ ] Fă codul de **4 pași** (ai nevoie de `pas == 3`)  
-- [ ] Alarma să dureze mai mult cu `for i in range(10)`  
-- [ ] Adaugă `display.scroll("BRAVO")` după deschidere  
-- [ ] Traduce în Python **Panoul de comandă** de la cursul cu blocuri (Modul 2, Lecția 1)
+## Bonus ★★★ — Provocare: Simon Says
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
+Placa arată o secvență de butoane, iar tu o repeți din memorie. La fiecare rundă secvența crește cu un pas.
+
+**Ajutor:** `secventa = []` face o listă goală, `secventa.append("A")` adaugă un element la sfârșit, iar `random.choice(["A", "B"])` alege între A și B. Cu `for litera in secventa:` parcurgi lista.
+
+- [ ] La început `secventa` e goală; la fiecare rundă adaugi un element ales la întâmplare dintre `"A"` și `"B"`
+- [ ] Placa arată secvența, litera cu litera (`display.show(litera)`, `sleep(600)`, `display.clear()`, `sleep(200)`)
+- [ ] Apoi așteaptă ca tu să apeși butoanele în aceeași ordine; o apăsare greșită oprește jocul cu `Image.SAD`
+- [ ] Dacă ai repetat corect, apare `Image.HAPPY`, iar runda următoare adaugă un pas
+- [ ] La final placa derulează scorul, adică lungimea secvenței atinse
+- [ ] Salvează proiectul ca `Prenume_Nume_MP1_L08_Simon`
+
+## Recapitulare pe scurt
 1. Blocurile și Python spun aceleași idei: variabile, decizii, bucle.  
-2. Evenimentele din blocuri → verificări în `while True:`.  
+2. Evenimentele din blocuri devin verificări în `while True:`.  
 3. `random.randint(a, b)` alege un număr între `a` și `b` (inclusiv).  
 4. `global` e nevoie ca să **schimbi** o variabilă de afară în funcție.  
 5. Funcțiile scurtează codul repetat.  
 6. Citim `a` și `b` la începutul fiecărei ture.
 
-## Schema pe scurt *(pe foaie)*
+**Schema pe scurt (pe foaie):** blocuri → dicționar → Python · `pas` ține minte starea · `greseala()` numără · `alarma()` după 3
 
-blocuri → dicționar → Python · `pas` ține minte starea · `greseala()` numără · `alarma()` după 3
-
-**Quiz scurt:**  
+## Quiz scurt
 - Cu ce înlocuim `forever`?  
 - Ce face `random.choice(lista)`?  
 - De ce ai nevoie de `global pas`?  
 - Ce se întâmplă la a treia greșeală?
 
 ## Temă
-Alege **un program** făcut la cursul cu blocuri (sau inventează unul) și scrie pe foaie traducerea lui în Python, rând cu rând.
+**Contorul de scuturări.** Iată programul în blocuri: la **scuturare** `scor` crește cu `1`; la **A** se arată `scor`; la **B** `scor` revine la `0`. Scrie-l acasă în Python, în editor (merge și în simulator, fără placă), cu `while True:` și `accelerometer.was_gesture("shake")`. Salvează-l ca `Prenume_Nume_MP1_L08_Tema`.
+
+## Ce urmează — Lecția 9
+Creezi **Pixi**, un prieten digital care trăiește pe placa ta: îi e foame, se joacă, doarme când se face întuneric și își arată starea pe ecran.
 
 ---
 

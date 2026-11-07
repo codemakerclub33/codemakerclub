@@ -18,6 +18,7 @@ Stabilit în discuție (7 nov 2026). Regulă: **o singură placă pe copil**, f�
 ## Teme (exemple)
 - L1: Numărătoarea inversă de la 9 la 0 (idea 5), scrisă rând cu rând; întrebarea „ce ai vrea să scrii mai scurt?" pregătește bucla din L2.
 - L7: Spectacolul de lumini (4 funcții cu parametri, `spectacol()`).
+- L8: Contorul de scuturări (traducere din blocuri).
 - Idei rămase pentru teme: 12 Termometru, 14 Busolă, 17 Lumină de veghe, 39 Clicker, 40 Adevăr sau Provocare.
 
 ## De rezolvat
