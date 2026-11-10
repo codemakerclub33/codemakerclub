@@ -1,25 +1,41 @@
 Lecția a treia din Modulul unu, AI pentru copii. Date: hrana pentru AI.
 
-Azi afli ce sunt datele, de ce AI are nevoie de ele și cum arată un set de date bun. Strângi date printr-un sondaj și le pui într-un tabel și într-o diagramă. Nu ai nevoie de calculator.
+Azi afli ce sunt datele, de ce AI are nevoie de ele și cum arată un set de date bun. Strângi date printr-un sondaj și le pui într-un tabel și într-o diagramă. Nu ai nevoie de calculator. Proiectul se numește Setul meu de date. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I unu, linie jos, L trei.
 
-Obiectivul. Minim: un tabel cu cel puțin opt răspunsuri. Complet: în plus o diagramă cu bare, trei motive pentru care un set poate fi slab și un set de douăsprezece exemple pentru o categorie.
+Ce facem azi. La final știi ce sunt datele, ce tipuri există, cum strângi date într-un tabel și ce înseamnă date bune sau date proaste. Dacă datele sunt multe, variate și corecte, modelul învață bine. Dacă sunt puține, repetitive sau greșite, învață prost. De aceea datele sunt hrana pentru AI.
 
-Ce sunt datele. Date sunt informații strânse despre ceva: numere, cuvinte, imagini sau sunete. Un program cu AI învață din date. Dacă datele sunt multe, variate și corecte, modelul învață bine. Dacă sunt puține, la fel sau greșite, modelul învață prost.
+Planul orei. Începem cu o recapitulare. Apoi vedem ce sunt datele, facem sondajul clasei și diagrama cu bare, comparăm date bune și date proaste și construim setul nostru de date. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă.
 
-Exemplele unu și doi. Cauți în jurul tău lucruri din care poți face date și potrivești întrebări cu tipul de date: vreme, sunet, imagini sau text.
+Cuvinte noi azi. Datele sunt informații strânse despre ceva. Sondajul înseamnă că întrebi mai multe persoane și notezi răspunsurile. Diagrama cu bare arată prin înălțimea barei câte răspunsuri sunt. Un set de date bun este suficient de mare, variat, corect și potrivit.
 
-Exemplul trei. Sondajul clasei. Alegi o întrebare simplă cu trei sau patru variante, întrebi cel puțin opt persoane și notezi răspunsurile cu liniuțe. Nu întrebi pe nimeni lucruri personale, cum ar fi adresa sau parolele.
+Ce sunt datele. Datele pot fi numerice, text, imagini sau sunet.
 
-Exemplul patru. Transformi tabelul într-o diagramă cu bare, cu titlu, numele variantelor jos și numărul de răspunsuri în stânga.
+Exemplul unu. Faci în perechi o listă cu șase lucruri din care poți face date, de exemplu temperatura din cameră sau culoarea hainelor.
 
-Exemplele cinci și șase. Un set bun de date este suficient de mare, variat, corect și potrivit. Programatorii spun gunoi intră, gunoi iese: dacă datele sunt proaste, și rezultatele sunt proaste.
+Exemplul doi. Citești patru întrebări și spui ce tip de date folosește fiecare: vremea, un cântec, o poză, o traducere.
 
-Exemplul șapte. Alegi o categorie și faci douăsprezece exemple variate, cu etichete. Apoi îți verifici setul: mărime, varietate, corectitudine, potrivire.
+Exemplul trei. Sondajul clasei. Alegi o întrebare simplă, cu trei sau patru variante, întrebi cel puțin opt persoane și notezi răspunsurile cu liniuțe. Nu întrebi lucruri personale, ca adresa, telefonul sau parolele.
 
-Greșeli frecvente. Să crezi că datele sunt doar numere, că mai multe date sunt mereu mai bune sau că poți întreba orice despre oameni.
+Exemplul patru. Transformi tabelul într-o diagramă cu bare și îi dai un titlu. Diagrama arată numere, dar nu arată motivul răspunsurilor.
 
-Întrebări de verificare. Ce sunt datele? Care sunt trei tipuri de date? Ce înseamnă un set variat? Ce înseamnă gunoi intră, gunoi iese? De ce nu strângem date personale?
+Exemplul cinci. Doi prieteni antrenează un model să recunoască câinii. Ana folosește poze toate la fel, Bogdan folosește poze variate. Setul lui Bogdan este mai bun, pentru că este variat.
 
-Temă. Termină setul, fă un sondaj simplu acasă și scrie trei lucruri din casă care produc date.
+Exemplul șase. Gunoi intră, gunoi iese. Dacă dai programului date proaste, primești rezultate proaste. Găsești problema în patru seturi: toate poze de noapte, etichete greșite, prea puține poze și poze potrivite pentru alt scop.
+
+Exemplul șapte. Alegi o categorie și faci douăsprezece exemple variate, cu etichete. Verifici lista: suficient de mare, variat, corect, potrivit.
+
+Greșeli frecvente. Să crezi că datele sunt doar numere, că mai multe date înseamnă mereu mai bine, că un sondaj cu două persoane ajunge sau că poți întreba orice despre oameni.
+
+De făcut azi. Minimul este un tabel cu cel puțin opt răspunsuri și totalurile numărate. Completul înseamnă și diagrama cu bare, setul de douăsprezece exemple cu lista de verificare și exercițiile de la B până la E.
+
+Provocare pentru cine termină mai repede: Setul slab și setul bun. Alegi o categorie și faci două seturi de câte șase exemple, unul prea la fel și unul variat. Bifezi lista pentru fiecare, lași pe cineva din familie să aleagă setul mai bun și scrii trei propoziții despre ce ar greși un model antrenat cu setul slab. Numele foii se termină cu Seturi.
+
+Recapitulare. Datele sunt informații. AI învață din date. Un set bun este suficient de mare, variat, corect și potrivit. Nu strângem date personale.
+
+Schema pe scurt, pe foaie: date, set mare, variat, corect și potrivit, model bun. Date proaste duc la rezultate proaste.
+
+Întrebări de verificare. Ce sunt datele? Numește trei tipuri de date. Ce înseamnă un set variat? Ce înseamnă gunoi intră, gunoi iese? De ce nu strângem date personale?
+
+Temă. Termină setul, fă un sondaj simplu acasă cu o întrebare nepersonală, scrie trei lucruri din casă care produc date și gândește-te ce date ar trebui să strângi ca un program să recunoască fructe. Numele foii se termină cu Tema.
 
 Urmează Lecția a patra: clasificare, pisică sau câine.
