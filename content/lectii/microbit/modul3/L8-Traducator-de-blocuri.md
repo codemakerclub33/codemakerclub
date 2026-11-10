@@ -413,3 +413,64 @@ while True:
 ```
 
 **Exercițiul F:** 1) Python e un limbaj de text; verificăm noi evenimentele într-o buclă. 2) Ca să schimbi o variabilă de afară dintr-o funcție. 3) `1, 2, 3, 4, 5` sau `6`.
+
+**Bonus ★★★ — Simon Says:**
+
+*Schema logicii:*
+1. `secventa` începe goală. La fiecare rundă adaugi la ea `"A"` sau `"B"`, la întâmplare.  
+2. `arata()` o arată literă cu literă.  
+3. `asteapta()` parcurge aceeași listă. Pentru fiecare literă așteaptă o apăsare; dacă ea nu se potrivește, întoarce `False`, iar dacă ajunge la capăt întoarce `True`.  
+4. Corect: `HAPPY` și runda următoare adaugă un pas. Greșit: `SAD`, scorul se derulează și jocul se oprește.
+
+```python
+from microbit import *
+import random
+
+secventa = []
+joc = True
+
+def arata():
+    for litera in secventa:
+        display.show(litera)
+        sleep(600)
+        display.clear()
+        sleep(200)
+
+def asteapta():
+    for litera in secventa:
+        apasat = ""
+        while apasat == "":
+            if button_a.was_pressed():
+                apasat = "A"
+            elif button_b.was_pressed():
+                apasat = "B"
+            sleep(20)
+        display.show(apasat)
+        sleep(200)
+        display.clear()
+        if apasat == litera:
+            pass
+        else:
+            return False
+    return True
+
+while joc:
+    secventa.append(random.choice(["A", "B"]))
+    arata()
+    button_a.was_pressed()
+    button_b.was_pressed()
+    if asteapta():
+        display.show(Image.HAPPY)
+        sleep(800)
+        display.clear()
+        sleep(500)
+    else:
+        display.show(Image.SAD)
+        sleep(1000)
+        display.scroll(str(len(secventa)))
+        joc = False
+```
+- `append` modifică lista direct, deci `secventa` nu are nevoie de `global`.  
+- Cele două `was_pressed()` din buclă nu folosesc rezultatul: **golesc** memoria butoanelor, ca o apăsare făcută în timpul arătării să nu fie luată în seamă.  
+- `return False` iese imediat din funcție, deci la prima greșeală nu mai așteptăm alte apăsări.  
+- `pass` ține locul unui rând obligatoriu: dacă litera e bună, nu facem nimic și trecem la următoarea.

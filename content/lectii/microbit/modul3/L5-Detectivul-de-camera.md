@@ -368,3 +368,37 @@ while True:
 **Exercițiul E:** 1) Senzorul e în interiorul plăcii, care se încălzește. 2) De la `0` la `255`. 3) Măsori valori în lumină și în întuneric și alegi una între ele.
 
 **Quiz:** cu `t = 20` și `luminos = 10`, `t >= 26` e fals, iar `luminos < 30` e adevărat, deci apare `ASLEEP`.
+
+**Bonus ★★★ — Nivela cu bulă de aer:**
+
+*Schema logicii:*
+1. Citești `ax` și `ay` din accelerometru.  
+2. Cu formula de la Exemplul 5, o aplici pe fiecare axă și păstrezi `x` și `y` între `0` și `4`.  
+3. Dacă `ax` și `ay` sunt amândouă mai mici ca `TOLERANTA` (în plus sau în minus), suprafața e dreaptă și aprinzi LED-ul din colț.  
+4. Desenezi bula la `(x, y)`.
+
+```python
+from microbit import *
+
+TOLERANTA = 150
+
+while True:
+    ax = accelerometer.get_x()
+    ay = accelerometer.get_y()
+
+    x = (ax + 1024) // 410
+    x = min(4, max(0, x))
+    y = (ay + 1024) // 410
+    y = min(4, max(0, y))
+
+    display.clear()
+    display.set_pixel(x, y, 9)
+
+    if ax > -TOLERANTA and ax < TOLERANTA and ay > -TOLERANTA and ay < TOLERANTA:
+        display.set_pixel(0, 0, 9)
+
+    sleep(50)
+```
+- Formula `(valoare + 1024) // 410` o folosești pe fiecare axă; `min` și `max` o țin între `0` și `4`.  
+- `TOLERANTA` e o constantă: o schimbi într-un singur loc și nivela devine mai strictă sau mai îngăduitoare.  
+- Condiția are patru părți legate cu `and`, deci LED-ul din colț se aprinde doar când **ambele** axe sunt aproape de `0`.

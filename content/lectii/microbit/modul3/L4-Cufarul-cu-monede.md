@@ -403,3 +403,41 @@ while True:
 **Exercițiul D:** 1) `"5" + 1` adună text cu număr → `TypeError`. 2) `=` în loc de `==` → `SyntaxError`. 3) `"Monede: " + monede` fără `str()` → `TypeError`. 4) `monede =+ 1` nu dă eroare, dar pune în `monede` valoarea `+1`, adică `1`; corect este `monede += 1`.
 
 **Exercițiul E:** 1) Adună 1 la `monede`. 2) `>` e „strict mai mare”, `>=` include și egalitatea. 3) Ca să se vadă că sunt valori care nu se schimbă.
+
+**Bonus ★★★ — Creator de pixeli:**
+
+*Schema logicii:*
+1. `x` și `y` țin locul punctului. La pornire sunt `2` și `2`.  
+2. Citești butoanele o singură dată pe tură, în `a` și `b`.  
+3. `A+B` șterge desenul și readuce punctul în centru. Altfel `A` mărește `x`, iar `B` mărește `y`; după `4` se revine la `0`.  
+4. `set_pixel` aprinde punctul. Nu stingem ecranul la fiecare tură, deci punctele vechi rămân ca urme.
+
+```python
+from microbit import *
+
+x = 2
+y = 2
+
+while True:
+    a = button_a.was_pressed()
+    b = button_b.was_pressed()
+
+    if a and b:
+        display.clear()
+        x = 2
+        y = 2
+    elif a:
+        x += 1
+        if x > 4:
+            x = 0
+    elif b:
+        y += 1
+        if y > 4:
+            y = 0
+
+    display.set_pixel(x, y, 9)
+    sleep(100)
+```
+- Verificăm `a and b` primul, altfel `A+B` ar fi tratat ca un simplu `A`.  
+- `if x > 4: x = 0` ține punctul în ecran: după ultima coloană urmează prima.  
+- `display.clear()` e apelat doar la `A+B`, de aceea desenul rămâne pe ecran între apăsări.

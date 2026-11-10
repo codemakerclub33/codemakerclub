@@ -426,3 +426,49 @@ while True:
 Greșelile: lipsea `:` după `while True`; lipseau `()` la `button_a.is_pressed`; `= True` era greșit (trebuia `==` sau nimic); lipsea `:` după `else`.
 
 **Exercițiul E:** 1) `=` pune o valoare, `==` compară. 2) Altfel placa s-ar opri la A. 3) Când vrei să prinzi și o apăsare scurtă, în timp ce programul face altceva.
+
+**Bonus ★★★ — Emoji Box:**
+
+*Schema logicii:*
+1. Variabila `stare` ține minte ce se vede: `"somn"`, `"fata"`, `"animal"` sau `"surpriza"`. La pornire e `"somn"`.  
+2. Verifici **întâi** `A` și `B` împreună, apoi doar `A`, apoi doar `B`. La o apăsare schimbi `stare` și pui `schimba = True`.  
+3. Arăți imaginea care corespunde lui `stare`.  
+4. Dacă `schimba` este `True`, imaginea se stinge `200` ms și apoi apare din nou, deci pâlpâie o dată.
+
+```python
+from microbit import *
+
+stare = "somn"
+
+while True:
+    schimba = False
+
+    if button_a.is_pressed() and button_b.is_pressed():
+        stare = "surpriza"
+        schimba = True
+    elif button_a.is_pressed():
+        stare = "fata"
+        schimba = True
+    elif button_b.is_pressed():
+        stare = "animal"
+        schimba = True
+
+    if stare == "fata":
+        display.show(Image.HAPPY)
+    elif stare == "animal":
+        display.show(Image.DUCK)
+    elif stare == "surpriza":
+        display.show(Image.GHOST)
+    else:
+        display.show(Image.ASLEEP)
+
+    if schimba:
+        sleep(200)
+        display.clear()
+        sleep(200)
+
+    sleep(100)
+```
+- `A+B` se verifică primul, altfel placa ar vedea doar `A` și nu ar ajunge niciodată la surpriză.  
+- Imaginea rămâne pe ecran pentru că `stare` nu se schimbă până la următoarea apăsare.  
+- `schimba` este `True` doar în tura în care ai apăsat, deci pâlpâirea apare o singură dată.

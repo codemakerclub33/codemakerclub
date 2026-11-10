@@ -419,3 +419,56 @@ def mancare():
 **Exercițiul D:** 1) în `hraneste()` lipsește `global foame` (`UnboundLocalError`). 2) după `while True` lipsește `:`. 3) `button_a.was_pressed` nu are paranteze: `button_a.was_pressed()`. 4) `"Foame: " + foame` lipește text cu număr: trebuie `"Foame: " + str(foame)`. (Și `foame` ar putea ajunge sub `0`: se poate folosi `limiteaza`.)
 
 **Exercițiul E:** 1) Pentru că `sleep(4000)` oprește programul și nu mai vede butoanele. 2) `fata()` doar **citește** variabilele; `trece_timpul()` le **schimbă**. 3) Nu face nimic; ține locul unui rând obligatoriu.
+
+**Bonus ★★★ — Testul de reflexe:**
+
+*Schema logicii:*
+1. `record` pornește cu un număr foarte mare, pe care orice timp îl bate.  
+2. La începutul rundei arăți `SQUARE_SMALL` și golești memoria butoanelor.  
+3. Aștepți un timp la întâmplare, în pași mici. Dacă apeși **A** în acest timp, notezi că ai apăsat prea devreme; dacă apeși **B**, vezi recordul.  
+4. Prea devreme: `SAD` și runda se reia. Altfel apare `TARGET`, notezi `start` și aștepți **A**. Timpul este `running_time() - start`.  
+5. Îl derulezi; dacă e mai mic decât `record`, devine noul record.
+
+```python
+from microbit import *
+import random
+
+record = 99999
+
+while True:
+    display.show(Image.SQUARE_SMALL)
+    button_a.was_pressed()
+    button_b.was_pressed()
+
+    pauza = random.randint(2000, 5000)
+    inceput = running_time()
+    prea_devreme = False
+
+    while running_time() - inceput < pauza:
+        if button_a.was_pressed():
+            prea_devreme = True
+        if button_b.was_pressed():
+            if record < 99999:
+                display.scroll(str(record))
+            display.show(Image.SQUARE_SMALL)
+        sleep(20)
+
+    if prea_devreme:
+        display.show(Image.SAD)
+        sleep(1000)
+    else:
+        display.show(Image.TARGET)
+        start = running_time()
+        gata = False
+        while gata == False:
+            if button_a.was_pressed():
+                gata = True
+            sleep(5)
+        timp = running_time() - start
+        display.scroll(str(timp))
+        if timp < record:
+            record = timp
+```
+- Primul `button_a.was_pressed()` din rundă golește memoria: o apăsare veche nu mai strică testul.  
+- Aici **mai mic** înseamnă **mai bun**, de aceea `timp < record`.  
+- Așteptarea e făcută în pași de `20` ms, ca placa să vadă butoanele în timp ce numără pauza.

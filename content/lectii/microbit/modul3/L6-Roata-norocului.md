@@ -393,3 +393,52 @@ while True:
 Greșelile: lipsea `import random`; lipseau `:` după `while True`; rândul `display.scroll(random.choice(animale))` nu avea indentare sub `if`; iar `animale[3]` nu există: lista are 3 elemente, deci pozițiile sunt `0`, `1`, `2`.
 
 **Exercițiul E:** 1) `2`, `3`, `4` sau `5`. 2) Primul e pe poziția `0`; ultimul, într-o listă cu 8 elemente, e pe `7`. 3) `i` crește peste `7` și ar cere o poziție care nu există; `i % 8` îl ține mereu între `0` și `7`, deci săgeata se învârte de mai multe ori.
+
+**Bonus ★★★ — Ghicește numărul:**
+
+*Schema logicii:*
+1. La pornire alegi `secret` cu `random.randint(1, 9)`. `ghicit` începe de la `1`, iar `incercari` de la `0`.  
+2. **A** mărește `ghicit`; după `9` se întoarce la `1`. Numărul se vede pe ecran.  
+3. **B** trimite încercarea: crește `incercari`, apoi compari `ghicit` cu `secret`. Prea mic: `ARROW_N`. Prea mare: `ARROW_S`.  
+4. Dacă e corect, arăți `HAPPY`, derulezi numărul de încercări și pornești un joc nou.
+
+```python
+from microbit import *
+import random
+
+secret = random.randint(1, 9)
+ghicit = 1
+incercari = 0
+display.show(ghicit)
+
+while True:
+    if button_a.was_pressed():
+        ghicit += 1
+        if ghicit > 9:
+            ghicit = 1
+        display.show(ghicit)
+
+    if button_b.was_pressed():
+        incercari += 1
+        if ghicit < secret:
+            display.show(Image.ARROW_N)
+            sleep(800)
+            display.show(ghicit)
+        elif ghicit > secret:
+            display.show(Image.ARROW_S)
+            sleep(800)
+            display.show(ghicit)
+        else:
+            display.show(Image.HAPPY)
+            sleep(1000)
+            display.scroll("Incercari: " + str(incercari))
+            secret = random.randint(1, 9)
+            ghicit = 1
+            incercari = 0
+            display.show(ghicit)
+
+    sleep(50)
+```
+- `secret` se alege o singură dată, la început, și se schimbă doar după ce ai ghicit.  
+- Săgeata în sus înseamnă „caută un număr mai mare”, săgeata în jos „caută unul mai mic”.  
+- `"Incercari: " + str(incercari)` lipește textul cu numărul, deci numărul trece prin `str()`.

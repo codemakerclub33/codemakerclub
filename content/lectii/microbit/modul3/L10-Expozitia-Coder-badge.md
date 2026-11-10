@@ -212,3 +212,67 @@ Alege **un proiect** din Modulul 1 și scrie 3 rânduri: ce a mers bine, ce a fo
 
 ## Ce urmează — Modulul 2
 Construiești proiecte mai mari în Python: jocuri, aplicații cu senzori și programe cu mai multe funcții.
+
+---
+
+## Răspunsuri
+
+**Bonus ★★★ — Prinde punctul:**
+
+*Schema logicii:*
+1. `x` este poziția platformei, pe rândul de jos. `px` și `py` sunt coloana și rândul punctului.  
+2. **A** și **B** mută platforma, iar funcția `limiteaza` o ține între `0` și `4`.  
+3. La fiecare `pauza` milisecunde punctul coboară un rând. Când ajunge pe rândul `4`, compari `px` cu `x`.  
+4. Dacă sunt egale, scorul crește, punctul pornește de sus de pe altă coloană și `pauza` scade (jocul se grăbește). Altfel apare `SAD`, se derulează scorul și jocul se oprește.  
+5. La fiecare tură redesenezi platforma și punctul.
+
+```python
+from microbit import *
+import random
+
+def limiteaza(valoare, mic, mare):
+    if valoare < mic:
+        return mic
+    if valoare > mare:
+        return mare
+    return valoare
+
+x = 2
+px = random.randint(0, 4)
+py = 0
+scor = 0
+pauza = 300
+ultima = running_time()
+joc = True
+
+while joc:
+    if button_a.was_pressed():
+        x = limiteaza(x - 1, 0, 4)
+    if button_b.was_pressed():
+        x = limiteaza(x + 1, 0, 4)
+
+    if running_time() - ultima >= pauza:
+        ultima = running_time()
+        py += 1
+        if py == 4:
+            if px == x:
+                scor += 1
+                pauza = limiteaza(300 - scor * 20, 100, 300)
+                px = random.randint(0, 4)
+                py = 0
+            else:
+                display.show(Image.SAD)
+                sleep(1000)
+                display.scroll(str(scor))
+                joc = False
+
+    if joc:
+        display.clear()
+        display.set_pixel(x, 4, 9)
+        display.set_pixel(px, py, 9)
+
+    sleep(30)
+```
+- Punctul nu coboară cu `sleep(300)`, ci cu `running_time()`: placa verifică butoanele des, iar platforma răspunde repede.  
+- `pauza = limiteaza(300 - scor * 20, 100, 300)` scade cu `20` ms la fiecare punct prins, dar nu coboară sub `100`.  
+- `if joc:` oprește desenarea după final, ca `SAD` să nu fie suprascris.

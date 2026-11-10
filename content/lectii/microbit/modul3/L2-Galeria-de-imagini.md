@@ -395,3 +395,29 @@ for n in range(10, -1, -2):
     display.scroll(str(n))
     sleep(1000)
 ```
+
+**Bonus ★★★ — Felicitarea cu tort:**
+
+*Schema logicii:*
+1. Ai trei imagini cu același tort. Doar pixelul flăcării (rândul de sus, coloana din mijloc) are luminozitatea `9`, apoi `4`, apoi `7`.  
+2. Le pui într-o listă `cadre`.  
+3. Un `for` cu `range(4)` arată lista de patru ori, cu `delay`, deci flacăra pâlpâie.  
+4. La final derulezi urarea și numele.
+
+```python
+from microbit import *
+
+T1 = Image("00900:00500:09990:99999:99999")
+T2 = Image("00400:00500:09990:99999:99999")
+T3 = Image("00700:00500:09990:99999:99999")
+cadre = [T1, T2, T3]
+
+for i in range(4):
+    display.show(cadre, delay=300)
+
+display.scroll("La multi ani!")
+display.scroll("Maria")
+```
+- Prima cifră a primului rând este flacăra: `9`, `4`, `7`. Restul rândurilor sunt la fel în toate cele trei imagini.  
+- `display.show(cadre, delay=300)` arată toată lista, câte o imagine la `300` ms.  
+- `range(4)` repetă de patru ori, deci animația are `12` cadre.

@@ -370,3 +370,34 @@ while True:
 Greșelile: lipsea `:` după `while True`; lipseau spațiile de la `display.show`; `Image.Heart` trebuie `Image.HEART`; `Display` trebuie `display`.
 
 **Exercițiul E:** 1) aduce în program uneltele plăcii (display, butoane, senzori). 2) Așteaptă 2 secunde. 3) Spațiile arată ce rânduri aparțin buclei.
+
+**Bonus ★★★ — Insigna cu numele meu:**
+
+*Schema logicii:*
+1. Totul stă într-un `while True`, ca insigna să meargă la nesfârșit.  
+2. Întâi derulezi numele, apoi arăți pe rând patru imagini, fiecare cu `sleep`.  
+3. La final derulezi a doua propoziție și bucla o ia de la capăt.
+
+```python
+from microbit import *
+
+while True:
+    # numele meu
+    display.scroll("Maria")
+
+    # imaginile, cu pauze
+    display.show(Image.HEART)
+    sleep(500)
+    display.show(Image.HAPPY)
+    sleep(500)
+    display.show(Image.DUCK)
+    sleep(500)
+    display.show(Image.HOUSE)
+    sleep(500)
+
+    # numele clubului
+    display.scroll("Code Maker Club")
+```
+- `scroll` așteaptă să termine textul, deci rândurile se execută în ordine.  
+- `show` lasă imaginea pe ecran, de aceea are nevoie de `sleep` după ea.  
+- Comentariile cu `#` nu schimbă programul: sunt notițe pentru oameni.

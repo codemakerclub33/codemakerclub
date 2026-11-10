@@ -420,3 +420,49 @@ punct(4, 4)
 **Exercițiul D:** lipsesc `:` după `def arata(imagine)`; corpul nu e indentat; `arata()` fără parametru → `TypeError`; `arata(Image.HAPPY, 500)` are un parametru în plus → `TypeError`; `dublu` nu e definită → `NameError`; `rezultat` nu există → `NameError`.
 
 **Exercițiul E:** 1) Definește o funcție. 2) Parametrul **intră** în funcție, valoarea de întoarcere **iese**. 3) Python citește de sus în jos; o funcție trebuie să existe înainte de apel.
+
+**Bonus ★★★ — Mesaje Morse:**
+
+*Schema logicii:*
+1. `semnal(durata)` aprinde ecranul plin, așteaptă `durata`, îl stinge și mai așteaptă `200` ms.  
+2. `punct()` și `linie()` cheamă `semnal` cu `200`, respectiv `600`.  
+3. `litera(cod)` parcurge semnele din șir: la `"."` cheamă `punct()`, altfel `linie()`. La final așteaptă `400` ms.  
+4. **A** trimite SOS (`...`, `---`, `...`). **B** trimite prima literă a numelui tău.
+
+```python
+from microbit import *
+
+PLIN = Image("99999:99999:99999:99999:99999")
+
+def semnal(durata):
+    display.show(PLIN)
+    sleep(durata)
+    display.clear()
+    sleep(200)
+
+def punct():
+    semnal(200)
+
+def linie():
+    semnal(600)
+
+def litera(cod):
+    for semn in cod:
+        if semn == ".":
+            punct()
+        else:
+            linie()
+    sleep(400)
+
+while True:
+    if button_a.was_pressed():
+        litera("...")
+        litera("---")
+        litera("...")
+    if button_b.was_pressed():
+        litera("--")      # litera M, pentru Maria
+    sleep(50)
+```
+- Funcțiile mici se construiesc una peste alta: `semnal` → `punct` și `linie` → `litera`.  
+- `for semn in cod` ia pe rând fiecare caracter din șir.  
+- Pentru alt nume schimbi doar codul din `litera(...)` de la **B**: de exemplu `"-."` pentru `N`.
