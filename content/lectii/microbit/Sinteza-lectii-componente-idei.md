@@ -28,7 +28,7 @@ Teme (idei): L1 numărătoare inversă (5), L7 Spectacolul de lumini, L8 Contoru
 | 2 | Cartea de glume | rescrisă | Cartea de glume cu surprize (3 liste, pagina `2/5`) | — |
 | 3 | Artistul cu bucle | rescrisă | Ceasul de nisip (`while`, `n % 5`, `n // 5`) | — |
 | 4 | Pianul de buzunar | rescrisă | Metronomul (BPM cu A/B, merge și fără sunet) | 24 |
-| 5 | Busola digitală | de rescris | busola cu 8 direcții | 14 |
+| 5 | Busola digitală | rescrisă | Busola cu 8 direcții (litere, `ultima`) | 14 |
 | 6 | Labirintul înclinat (chei, capcane, cronometru) | de rescris și comasat | — | — |
 | 7 | Mesaje secrete | rescrisă | Detectivul de coduri | cifru |
 | 8 | Recordul păstrat | de rescris | top 3 recorduri + nume | — |
