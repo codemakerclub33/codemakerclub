@@ -14,7 +14,7 @@
 | 3 | Artistul cu bucle | Bucle | `range(a, b, pas)`; `for` în `for`; `if` în buclă; `while`; `break` |
 | 4 | Pianul de buzunar | Sunet (V2 sau buzzer) | `music.play`; note; `set_tempo`; `music.pitch`; liste de note |
 | 5 | Busola digitală | Senzor magnetic | `compass.calibrate`; `compass.heading`; `//` și `%` pe grade; `Image.ALL_ARROWS` |
-| 6 | Labirintul înclinat | Accelerometru + date | șiruri ca hartă; `get_x`; coliziuni |
+| 6 | Labirintul înclinat | Hărți din text | `harta[y][x]`; funcții cu două valori; verificarea înainte de mutare; niveluri |
 | 7 | Mesaje secrete | Text, protocol, cifru | `split`; `int`; `try / except`; `find`; cifrul lui Cezar |
 | 8 | Recordul păstrat | Fișiere | `open`; `write`; `read`; `try / except` |
 | 9 | Cutia Exploratorului | Proiect final Python Pro | meniu + senzori + record + cronometru |

@@ -1,25 +1,29 @@
 Lecția șase. Labirintul înclinat.
 
-Placa devine un labirint: înclini placa, iar o bilă luminoasă se rostogolește printre pereți până la ieșire. Hărțile sunt scrise ca text, iar tu înveți cum citește un program o hartă. Proiectul se numește Labirintul înclinat. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P doi, linie jos, L zero șase.
+Placa devine un labirint: înclini placa, iar o bilă luminoasă se rostogolește printre pereți până la ieșire. Hărțile sunt scrise ca text, iar tu înveți cum un program citește o hartă. Proiectul se numește Labirintul înclinat. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P doi, linie jos, L zero șase.
 
-Obiectivul. La final ții o hartă ca listă de șiruri, citești înclinarea plăcii, verifici pereții și treci prin niveluri. Minim: un labirint cu un nivel: bila se mișcă prin înclinare, nu trece prin pereți, iar la ieșire apare o bifă. Complet: minim, plus trei niveluri, numărul de pași la final și A reia nivelul.
+Ce facem azi. La final ții o hartă ca listă de texte, citești înclinarea plăcii și muți o bilă fără să treacă prin pereți. Jocurile și aplicațiile păstrează hărțile ca date. Dacă harta este doar text, o schimbi ușor, fără să rescrii programul.
 
-De ce contează. Jocurile și aplicațiile păstrează hărțile ca date. Dacă harta este doar text, o poți schimba ușor, fără să rescrii programul.
+Planul orei. Începem cu o recapitulare a lui for în for din lecția trei și a accelerometrului din prima lecție. Apoi învățăm harta ca text și înclinarea plăcii. După aceea construim bila și pereții, în varianta Minim, apoi nivelurile, în varianta Complet. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă.
 
-Primul pas. Harta ca text. Ecranul are cinci rânduri a câte cinci caractere. Diez este perete, punct este loc liber, S este start, E este ieșire. Citești un caracter cu harta între paranteze drepte, întâi rândul y, apoi coloana x.
+Instrucțiuni noi. O hartă este o listă de texte, câte unul pe rând. Harta cu paranteze drepte, y, apoi x, dă caracterul din rândul y și coloana x, întâi rândul. O funcție poate întoarce două valori deodată. Un lanț de comparații verifică dacă un număr este între zero și patru. Semnul de diferit înseamnă diferit de. Ajutor în editor: în panoul Reference caută Lists și Gestures.
 
-Exemplul doi. Desenăm harta cu două bucle: pereții mai slab, ieșirea mai puternic. Exemplul trei. Înclinarea: get x crește când înclini spre dreapta, get y când înclini spre tine. Exemplul patru. O funcție care dă două valori, dx și dy, din înclinare. Exemplul cinci. Bila se mișcă, ținută în ecran cu max și min.
+Primul pas. Harta ca text. Ecranul are cinci rânduri a câte cinci puncte, deci harta are cinci texte a câte cinci caractere. Diezul este perete, punctul este loc liber, S este start, mereu în colțul din stânga sus, iar E este ieșirea. Exemplul unu. O hartă în Python: afișăm trei caractere, S, E și diezul. Exemplul doi. Desenăm harta cu for în for, ca în lecția trei: pereții slab luminoși și ieșirea mai puternică.
 
-Exemplul șase. Pereții: înainte să muți bila, verifici locul nou. Dacă este perete, rămâi pe loc. Exemplul șapte. Găsim startul cu o funcție. Exemplul opt. Labirintul Minim. Bila clipește, ca să o deosebești de ieșire. Se mută doar dacă locul nou este în ecran și nu este perete.
+Al doilea pas. Înclinarea plăcii. Accelerometrul dă un număr pozitiv când înclini placa spre dreapta și negativ spre stânga, iar pe cealaltă axă pozitiv când o înclini spre tine. Din înclinare vrem o direcție: dx, stânga sau dreapta, și dy, sus sau jos. Exemplul trei. Funcția inclinare întoarce două valori, iar apelul le despachetează în două variabile. Placa dreaptă dă zero și zero.
 
-Exemplul nouă. Mai multe niveluri, într-o listă de hărți. Funcția încarcă harta și startul. Exemplul zece. Labirintul Complet: pașii se numără doar la mutările reale, A reia nivelul, iar după ultimul nivel apare o inimă și numărul de pași.
+Al treilea pas. Pereții. Înainte să mutăm bila verificăm locul nou: dacă e perete sau iese din ecran, nu ne mișcăm. Mai întâi verificăm că locul e în ecran, apoi că nu e perete. Exemplul patru. Verificăm locul nou: sub S e un perete, deci apare un semn de nu. Exemplul cinci. Labirintul Minim: bila clipește, ca să o deosebești de ieșire, se mută doar dacă locul nou e în ecran și nu e perete, iar când ajunge pe E apare bifa și bila revine la start.
 
-Greșeli frecvente. Bila trece prin pereți: nu ai verificat perete înainte de mutare. IndexError: verifică întâi marginile, apoi harta. Harta este răsturnată: rândul vine primul, nu coloana. Bila fuge prea repede: mărește pauza. Nu se mișcă: înclin-o mai mult sau scade pragul. Nu poți ieși: harta nu are drum spre ieșire.
+Exemplul șase. Labirintul Complet: o listă de hărți și trecerea la nivelul următor. A pune bila înapoi la start, dacă te blochezi. După ultimul nivel apare o inimă și jocul reîncepe. Ca să adaugi un nivel pui încă o hartă în listă, iar codul nu se schimbă.
 
-Proiectul de azi. Labirintul înclinat.
+Greșeli frecvente. Bila trece prin pereți: nu ai verificat peretele înainte de mutare. Eroare de index: verifică întâi că locul e în ecran, apoi harta. Harta e răsturnată: întâi rândul, apoi coloana. Bila fuge prea repede: mărește pauza sau pragul. Nu se mișcă: placa e prea dreaptă. Nu poți ieși din nivel: harta nu are drum spre ieșire. Eroare la despachetare: o ramură a funcției întoarce o singură valoare, iar toate trebuie să întoarcă două.
 
-Minim înseamnă: un nivel, pereți și bifă. Complet înseamnă: minim, plus trei niveluri, pași și reluare. Dacă rămâi în urmă, salvează la Minim.
+Proiectul de azi. Labirintul înclinat. Minim: un nivel, bila se mișcă, pereții o opresc, bifă la ieșire. Complet: minim, plus trei niveluri și A care pune bila la start.
 
-Recapitulare. Harta este o listă de cinci șiruri. Get x și get y dau înclinarea. O funcție poate returna două sau trei valori. Mutăm doar dacă locul nou este în ecran și nu este perete. Datele sunt separate de cod.
+Provocarea. Labirintul cu chei și capcane. Un singur nivel mai greu: ieșirea este închisă până iei cheia, iar capcanele te trimit la start. O hartă din texte nu se poate schimba, deci nu ștergi cheia din hartă, ci ții minte într-o variabilă dacă ai luat-o. Când bila ajunge pe ieșire cu cheia, apare bifa, apoi timpul în secunde, iar jocul reîncepe. Numele fișierului se termină cu Chei.
 
-Succes în labirint.
+Recapitulare. Harta este o listă de cinci texte, întâi rândul, apoi coloana. Accelerometrul dă înclinarea. O funcție poate întoarce două valori. Mutăm doar dacă locul nou e în ecran și nu e perete. Hărțile sunt separate de cod: un nivel nou este doar o hartă nouă.
+
+Tema. Harta mea. Acasă, în editor, scrii un program care desenează o hartă făcută de tine, ca în exemplul doi: cinci texte cu diez, punct, S și E. Numele fișierului se termină cu Tema.
+
+Ce urmează. Lecția șapte. Placa învață să lucreze cu text: tai mesaje în bucăți și le ascunzi într-un cifru, ca să faci mesaje secrete.

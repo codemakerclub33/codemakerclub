@@ -29,7 +29,7 @@ Teme (idei): L1 numărătoare inversă (5), L7 Spectacolul de lumini, L8 Contoru
 | 3 | Artistul cu bucle | rescrisă | Ceasul de nisip (`while`, `n % 5`, `n // 5`) | — |
 | 4 | Pianul de buzunar | rescrisă | Metronomul (BPM cu A/B, merge și fără sunet) | 24 |
 | 5 | Busola digitală | rescrisă | Busola cu 8 direcții (litere, `ultima`) | 14 |
-| 6 | Labirintul înclinat (chei, capcane, cronometru) | de rescris și comasat | — | — |
+| 6 | Labirintul înclinat | rescrisă (comasat) | Chei, capcane și cronometru | — |
 | 7 | Mesaje secrete | rescrisă | Detectivul de coduri | cifru |
 | 8 | Recordul păstrat | de rescris | top 3 recorduri + nume | — |
 | 9 | Cutia Exploratorului | rescrisă | Jurnalul păstrat | — |

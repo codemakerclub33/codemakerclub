@@ -1,5 +1,6 @@
-# Lecția 6 — Labirintul înclinat
-**Modulul 2 · Proiecte Python**  
+# LECȚIA 6 — Labirintul înclinat
+### Hărți din text și o bilă care se rostogolește
+**Modulul 2 · Python pe micro:bit · 2 ore**  
 **Code Maker Club · micro:bit Python Pro**
 
 > Placa devine un **labirint**: înclini placa, iar o bilă luminoasă se rostogolește printre pereți până la ieșire. Hărțile sunt scrise ca **text**, iar tu înveți cum un program citește o hartă.  
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei știi să ții o **hartă** ca listă de șiruri, să citești **înclinarea** plăcii, să verifici **pereții** și să treci prin **niveluri**.  
-**Minim:** un labirint cu un nivel: bila se mișcă prin înclinare, nu trece prin pereți și când ajunge la ieșire apare o bifă.  
-**Complet:** Minim + **3 niveluri** + **numărul de pași** afișat la final + **A** = reia nivelul.
-
-## De ce contează
-Jocurile și aplicațiile păstrează **hărțile** (de joc, de oraș) ca date. Dacă harta e doar text, o poți schimba ușor, fără să rescrii programul. Azi vezi cum **datele** și **codul** lucrează împreună.
+## Ce facem azi
+La finalul orei ții o **hartă** ca listă de texte, citești **înclinarea** plăcii și muți o bilă fără să treacă prin **pereți**. Jocurile și aplicațiile păstrează hărțile ca date. Dacă harta e doar text, o schimbi ușor, fără să rescrii programul. Azi vezi cum **datele** și **codul** lucrează împreună.
 
 ---
 
@@ -21,26 +17,42 @@ Jocurile și aplicațiile păstrează **hărțile** (de joc, de oraș) ca date. 
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recap L5: gradele busolei |
+| 0–10 | Recap: `for` în `for` din L3 și accelerometrul din L1 |
 | 10–35 | Harta ca text; înclinarea plăcii |
-| 35–70 | Bila care se mișcă și pereții — **Minim** |
-| 70–105 | Niveluri, pași, reluare — **Complet** |
+| 35–75 | Bila și pereții (**Minim**) |
+| 75–105 | Niveluri și reluare (**Complet**) |
 | 105–120 | Recapitulare, quiz, temă |
 
-**Unelte azi:** liste de șiruri · `harta[y][x]` · `accelerometer.get_x()` / `get_y()` · funcții care returnează două valori · `display.set_pixel()`
+Exercițiile B–E și Provocarea sunt pentru cine termină mai repede, sau pentru acasă.
+
+**Ce ai nevoie:** [python.microbit.org](https://python.microbit.org) · placa micro:bit · cablu USB de date
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `harta = ["S....", "####."]` | O hartă: o listă de texte, câte unul pe rând | un text are `5` caractere |
+| `harta[y][x]` | Caracterul din rândul `y`, coloana `x` (**întâi rândul!**) | `harta[0][0]` este `"S"` |
+| `return 1, 0` | O funcție întoarce **două valori** deodată | `dx, dy = inclinare()` |
+| `0 <= nx <= 4` | Verifică dacă `nx` e între `0` și `4` | `if 0 <= nx <= 4:` |
+| `!=` | „Diferit de” | `harta[ny][nx] != "#"` |
+
+**Ajutor în editor:** în panoul **Reference** caută `Lists (arrays)` și `Gestures`.
 
 ---
 
 ## Pas cu pas
 
 ### 1) Harta ca text
-Ecranul are 5×5 puncte, deci harta are **5 rânduri** a câte **5 caractere**:
+Ecranul are `5` rânduri a câte `5` puncte, deci harta are **5 texte** a câte **5 caractere**:
 
 | Caracter | Înseamnă |
 |----------|----------|
 | `#` | perete |
 | `.` | loc liber |
-| `S` | start |
+| `S` | start (mereu în colțul din stânga-sus) |
 | `E` | ieșire |
 
 ```text
@@ -64,18 +76,18 @@ harta = [
     "E....",
 ]
 
-display.scroll(harta[0][0])      # S
-display.scroll(harta[4][0])      # E
-display.scroll(harta[1][0])      # #
+display.scroll(harta[0][0])
+display.scroll(harta[4][0])
+display.scroll(harta[1][0])
 ```
-Se afișează `S`, `E`, `#`.
+**Ce vezi pe placă:** `S`, `E`, `#`.
 
 **Gata când:**  
 - [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 2 — Desenăm harta
-Parcurgem toate rândurile și coloanele:
+Parcurgem toate rândurile și coloanele, ca în L3:
 ```python
 from microbit import *
 
@@ -107,25 +119,10 @@ sleep(3000)
 - [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
-### Exemplul 3 — Înclinarea plăcii
-Placa are un accelerometru: `get_x()` crește când o **înclini spre dreapta**, `get_y()` când o înclini **spre tine**.
-```python
-from microbit import *
+### 2) Înclinarea plăcii
+Placa are un accelerometru: `accelerometer.get_x()` e **pozitiv** când o înclini spre **dreapta** și negativ spre stânga, iar `get_y()` e pozitiv când o înclini **spre tine**. Din înclinare vrem o **direcție**: `dx` (stânga sau dreapta) și `dy` (sus sau jos). O funcție poate **întoarce două valori** deodată.
 
-while True:
-    x = accelerometer.get_x()
-    y = accelerometer.get_y()
-    display.scroll(str(x) + " " + str(y))
-    sleep(200)
-```
-Înclină placa în toate direcțiile și observă cum se schimbă numerele (aproape `0` când e dreaptă; peste `±300` când e înclinată bine).
-
-**Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
-### Exemplul 4 — O funcție care dă două valori
-Din înclinare vrem o **direcție**: `dx` (stânga/dreapta) și `dy` (sus/jos). O funcție poate **returna două valori** deodată:
+### Exemplul 3 — Funcția `inclinare`
 ```python
 from microbit import *
 
@@ -149,50 +146,18 @@ for i in range(30):
     display.scroll(str(dx) + str(dy), delay=60)
     sleep(100)
 ```
-`dx, dy = inclinare()` **despachetează** cele două valori. În direcția `y`: valoarea `1` înseamnă „în jos pe ecran”.
+- `dx, dy = inclinare()` **despachetează** cele două valori.  
+- `1` la `dy` înseamnă „în jos pe ecran”, iar `-1` „în sus”.  
+- Placa dreaptă dă `0` și `0`. Înclin-o mai mult de `PRAG`, ca să se schimbe.
 
 **Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
-### Exemplul 5 — Bila se mișcă
-Un singur pixel, `x` și `y` ținând poziția bilei:
-```python
-from microbit import *
+### 3) Pereții
+Înainte să mutăm bila, **verificăm locul nou**: dacă e perete sau iese din ecran, nu ne mișcăm. Mai întâi `0 <= nx <= 4` (altfel harta nu are locul acela), apoi `harta[ny][nx] != "#"`.
 
-PRAG = 300
-x = 0
-y = 0
-
-def inclinare():
-    ax = accelerometer.get_x()
-    ay = accelerometer.get_y()
-    if ax > PRAG:
-        return 1, 0
-    if ax < -PRAG:
-        return -1, 0
-    if ay > PRAG:
-        return 0, 1
-    if ay < -PRAG:
-        return 0, -1
-    return 0, 0
-
-for i in range(60):
-    dx, dy = inclinare()
-    x = max(0, min(4, x + dx))
-    y = max(0, min(4, y + dy))
-    display.clear()
-    display.set_pixel(x, y, 9)
-    sleep(250)
-```
-`max(0, min(4, …))` păstrează bila **în ecran** (de la 0 la 4).
-
-**Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
-### Exemplul 6 — Pereții
-Înainte să mutăm bila, **verificăm** locul nou: dacă e perete, nu ne mișcăm.
+### Exemplul 4 — Verificăm locul nou
 ```python
 from microbit import *
 
@@ -208,50 +173,21 @@ x = 0
 y = 0
 
 nx = x
-ny = y + 1                   # vrem sa coboram
-if harta[ny][nx] == "#":
-    display.show(Image.NO)    # e perete: ramanem pe loc
-else:
+ny = y + 1
+if 0 <= nx <= 4 and 0 <= ny <= 4 and harta[ny][nx] != "#":
     y = ny
     display.show(Image.YES)
+else:
+    display.show(Image.NO)
 sleep(1500)
 ```
-Sub `S` e un `#`, deci apare `NO`.
+Sub `S` e un `#`, deci apare `NO`. Schimbă `ny = y + 1` în `ny = y` și `nx = x + 1`: locul din dreapta e liber, deci apare `YES`.
 
 **Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
-### Exemplul 7 — Găsim startul
-Nu vrem să scriem de mână unde e `S` în fiecare hartă. Funcția îl caută:
-```python
-from microbit import *
-
-def gaseste_start(h):
-    for y in range(5):
-        for x in range(5):
-            if h[y][x] == "S":
-                return x, y
-    return 0, 0
-
-harta = [
-    "..S..",
-    ".###.",
-    ".....",
-    ".###.",
-    "E....",
-]
-
-sx, sy = gaseste_start(harta)
-display.scroll(str(sx) + "," + str(sy))
-```
-Se afișează `2,0`.
-
-**Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 7** în simulator sau pe placă  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
-### Exemplul 8 — Labirintul Minim
+### Exemplul 5 — Labirintul (Minim)
 ```python
 from microbit import *
 
@@ -318,60 +254,11 @@ while True:
 - Când ajunge pe `E`, apare bifa și bila revine la start.
 
 **Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 8** în simulator sau pe placă  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
-### Exemplul 9 — Mai multe niveluri
-O listă de hărți. Funcția `incarca(n)` dă harta, plus **startul**:
-```python
-from microbit import *
-
-NIVELE = [
-    [
-        "S....",
-        "####.",
-        ".....",
-        ".####",
-        "E....",
-    ],
-    [
-        "S#..E",
-        ".#.#.",
-        "...#.",
-        "##.#.",
-        ".....",
-    ],
-    [
-        "S.#..",
-        "#.#.#",
-        "....#",
-        ".##..",
-        "..##E",
-    ],
-]
-
-def gaseste_start(h):
-    for y in range(5):
-        for x in range(5):
-            if h[y][x] == "S":
-                return x, y
-    return 0, 0
-
-def incarca(n):
-    h = NIVELE[n]
-    sx, sy = gaseste_start(h)
-    return h, sx, sy
-
-harta, x, y = incarca(1)
-display.scroll(harta[0] + " " + str(x) + str(y))
-```
-Se afișează `S#..E 00`. Cu trei valori returnate, le despachetezi în trei variabile.
-
-**Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 9** în simulator sau pe placă  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
-### Exemplul 10 — Labirintul Complet
+### Exemplul 6 — Labirintul (Complet)
+O **listă de hărți**, trecerea la nivelul următor și **A** care reia nivelul. Toate hărțile au `S` în colțul din stânga-sus, deci bila pornește mereu din `x = 0`, `y = 0`:
 ```python
 from microbit import *
 
@@ -401,18 +288,6 @@ NIVELE = [
     ],
 ]
 
-def gaseste_start(h):
-    for y in range(5):
-        for x in range(5):
-            if h[y][x] == "S":
-                return x, y
-    return 0, 0
-
-def incarca(n):
-    h = NIVELE[n]
-    sx, sy = gaseste_start(h)
-    return h, sx, sy
-
 def inclinare():
     ax = accelerometer.get_x()
     ay = accelerometer.get_y()
@@ -440,20 +315,20 @@ def deseneaza(h, bx, by, vizibil):
         display.set_pixel(bx, by, 9)
 
 nivel = 0
-pasi = 0
+harta = NIVELE[nivel]
+x = 0
+y = 0
 tura = 0
-harta, x, y = incarca(nivel)
 
 while True:
     if button_a.was_pressed():
-        harta, x, y = incarca(nivel)         # reia nivelul
+        x = 0
+        y = 0
 
     dx, dy = inclinare()
     nx = x + dx
     ny = y + dy
     if 0 <= nx <= 4 and 0 <= ny <= 4 and harta[ny][nx] != "#":
-        if dx != 0 or dy != 0:
-            pasi += 1
         x = nx
         y = ny
 
@@ -464,33 +339,34 @@ while True:
         if nivel >= len(NIVELE):
             display.show(Image.HEART)
             sleep(1200)
-            display.scroll("Pasi: " + str(pasi))
             nivel = 0
-            pasi = 0
-        harta, x, y = incarca(nivel)
+        harta = NIVELE[nivel]
+        x = 0
+        y = 0
 
     tura += 1
     deseneaza(harta, x, y, tura % 2 == 0)
     sleep(150)
 ```
-- `incarca(nivel)` pune harta nouă și bila la start.  
-- `pasi` numără **doar** mutările reale.  
-- **A** reia nivelul curent (dacă te blochezi).  
-- După ultimul nivel apare inima, apoi numărul de pași, iar jocul reîncepe.
+- `NIVELE` e o listă de hărți, iar `NIVELE[nivel]` alege harta curentă.  
+- **A** pune bila înapoi la start (dacă te blochezi).  
+- După ultimul nivel apare inima și jocul reîncepe de la primul.  
+- Ca să adaugi un nivel, pui încă o hartă în listă. Codul nu se schimbă.
 
 **Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 10** în simulator sau pe placă  
+- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## Greșeli frecvente
 1. **„Bila trece prin pereți”** — nu ai verificat `harta[ny][nx] != "#"` înainte de mutare.  
-2. **„IndexError”** — `nx` sau `ny` ies din `0 … 4`. Verifică întâi `0 <= nx <= 4`, apoi harta (ordinea contează!).  
+2. **„IndexError”** — `nx` sau `ny` ies din `0 … 4`. Verifică întâi `0 <= nx <= 4`, apoi harta (ordinea contează).  
 3. **„Harta e răsturnată”** — ai scris `harta[x][y]`; trebuie `harta[y][x]` (rând, apoi coloană).  
 4. **„Bila fuge prea repede”** — mărește `sleep(150)` sau pragul.  
 5. **„Nu se mișcă”** — placa e prea dreaptă; înclin-o mai mult sau scade `PRAG`.  
-6. **„Nu pot ieși din nivel”** — harta nu are drum spre `E`. Verifică harta pe hârtie.
+6. **„Nu pot ieși din nivel”** — harta nu are drum spre `E`. Verifică harta pe hârtie.  
+7. **„ValueError la despachetare”** — o ramură a funcției întoarce o singură valoare; toate trebuie să întoarcă două (`return 0, 0`).
 
 ---
 
@@ -500,19 +376,20 @@ while True:
 
 | | Ce trebuie |
 |--|------------|
-| **Minim** | 1 nivel · bila se mișcă · pereții o opresc · bifă la ieșire |
-| **Complet** | Minim + 3 niveluri + pași + A reia nivelul |
+| **Minim** | 1 nivel · bila se mișcă · pereții o opresc · bifă la ieșire (Exemplul 5) |
+| **Complet** | Minim + 3 niveluri + **A** pune bila la start (Exemplul 6) |
 
 ### Exercițiul A — „Labirintul” (obligatoriu)
-Scrie labirintul. Schimbă **harta** (cu `#`, `.`, `S`, `E`). Atenție: trebuie să existe un **drum** de la `S` la `E`!
+Scrie programul din Exemplul 5 (Minim). Schimbă **harta** (cu `#`, `.`, `S`, `E`). Atenție: trebuie să existe un **drum** de la `S` la `E`! Pentru **Complet**, folosește Exemplul 6.
 
 ### Exercițiul B — Citește harta
 Pentru harta din Exemplul 1 (`"S...."`, `"####."`, `"....."`, `".####"`, `"E...."`): ce dă `harta[2][4]`? Dar `harta[3][0]`? Dar `harta[4][0]`?
 
 ### Exercițiul C — Un nivel nou
-Desenează pe hârtie un labirint 5×5 și scrie-l ca listă de 5 șiruri. Adaugă-l în `NIVELE`. Arată-l unui coleg: poate găsi un drum de la `S` la `E`?
+Desenează pe hârtie un labirint `5 × 5` și scrie-l ca listă de `5` texte. Adaugă-l în `NIVELE`. Poate un coleg să găsească un drum de la `S` la `E`?
 
 ### Exercițiul D — Găsește greșelile
+Programul are **6 greșeli**. Rescrie-l corect.
 ```text
 harta = ["S....", "####.", ".....", ".####", "E...."]
 x = 0
@@ -542,31 +419,39 @@ while True:
 
 ---
 
-## Bonus (după Complet)
-- [ ] Adaugă **chei** (`K`): bila trebuie să le ia înainte să poată ieși  
-- [ ] Adaugă **capcane** (`X`) care te întorc la start  
-- [ ] Un **cronometru** cu `running_time()` afișat la final  
-- [ ] **A+B** sare peste nivel (doar pentru profesor!)
+## Bonus ★★★ — Provocare: Labirintul cu chei și capcane
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
-1. Harta e o listă de 5 șiruri; `harta[y][x]` = rând, apoi coloană.  
-2. `accelerometer.get_x()` / `get_y()` → înclinarea.  
-3. O funcție poate **returna două sau trei valori**.  
+Un singur nivel mai greu: ieșirea e **închisă** până iei **cheia**, iar **capcanele** te trimit la start.
+
+**Ajutor:** o hartă din texte nu se poate schimba, deci nu șterge cheia din hartă. Ține minte într-o variabilă `are_cheie = False` dacă ai luat-o și desenează cheia doar cât timp `are_cheie` e `False`. Ieșirea se deschide doar dacă `are_cheie` e `True`. Timpul în secunde: `(running_time() - start) // 1000`.
+
+- [ ] Harta are `K` (cheia), `X` (capcana) și `E`, iar de la `S` există un drum spre `K` și de la `K` spre `E`
+- [ ] Bila nu poate intra pe `E` până nu a luat cheia
+- [ ] Când bila ajunge pe `X`, se întoarce la start și pierde cheia
+- [ ] Când ajunge pe `E` cu cheia, apare bifa, apoi timpul în secunde, iar jocul reîncepe
+- [ ] Salvează proiectul ca `Prenume_Nume_MP2_L06_Chei`
+
+## Recapitulare pe scurt
+1. Harta e o listă de `5` texte; `harta[y][x]` = rând, apoi coloană.  
+2. `accelerometer.get_x()` și `get_y()` dau înclinarea.  
+3. O funcție poate **întoarce două valori**: `dx, dy = inclinare()`.  
 4. Mutăm doar dacă locul nou e în ecran și nu e perete.  
-5. Datele (hărțile) sunt separate de cod.
+5. Datele (hărțile) sunt separate de cod: un nivel nou e doar o hartă nouă.
 
-## Schema pe scurt *(pe foaie)*
+**Schema pe scurt (pe foaie):** `harta[y][x]` · înclinare → `dx, dy` · loc nou: în ecran și nu perete · `E` → nivelul următor
 
-`harta[y][x]` · înclinare → `dx, dy` · loc nou? ecran + perete · `E` → nivel următor
-
-**Quiz scurt:**  
+## Quiz scurt
 - Ce înseamnă `#` pe hartă?  
 - Ce primești din `inclinare()`?  
 - Ce se întâmplă dacă locul nou e `#`?  
 - Cum treci la nivelul următor?
 
 ## Temă
-Desenează **2 hărți noi** pe hârtie, 5×5. La una, ascunde un drum lung. Schimbă hârtia cu un coleg.
+**Harta mea.** Scrie acasă, în editor (merge și în simulator, fără placă), un program care **desenează o hartă făcută de tine**, ca în Exemplul 2: `5` texte cu `#`, `.`, `S` și `E`. Salvează-l ca `Prenume_Nume_MP2_L06_Tema`.
+
+## Ce urmează — Lecția 7
+Placa învață să lucreze cu **text**: tai mesaje în bucăți și le ascunzi într-un **cifru**, ca să faci mesaje secrete.
 
 ---
 
@@ -574,8 +459,101 @@ Desenează **2 hărți noi** pe hârtie, 5×5. La una, ascunde un drum lung. Sch
 
 **Exercițiul B:** `harta[2][4] = "."`, `harta[3][0] = "."`, `harta[4][0] = "E"`.
 
-**Exercițiul C:** Orice hartă cu exact un `S` și un `E` și un drum liber între ele. Verificați pe hârtie, sau cu degetul, înainte de a o introduce.
+**Exercițiul C:** Orice hartă cu exact un `S` (în colțul din stânga-sus), un `E` și un drum liber între ele. Verificați pe hârtie, sau cu degetul, înainte de a o introduce.
 
-**Exercițiul D:** 1) lipsește `from microbit import *`. 2) `accelerometer.get_x` nu are paranteze: `accelerometer.get_x()`. 3) `harta[x][y]` trebuie `harta[y][x]`. 4) nu se verifică marginile ecranului (`x` poate depăși `4`). 5) mutarea trebuie verificată **înainte** (pe locul nou), nu după. 6) în buclă lipsește `sleep` (și nu se șterge ecranul).
+**Exercițiul D:** 1) lipsește `from microbit import *`. 2) `accelerometer.get_x` nu are paranteze: `accelerometer.get_x()`. 3) `harta[x][y]` trebuie `harta[y][x]`. 4) nu se verifică marginile ecranului (`x` poate depăși `4`). 5) mutarea trebuie verificată **înainte** (pe locul nou), nu după. 6) în buclă lipsesc `sleep` și ștergerea ecranului.
 
-**Exercițiul E:** 1) Pentru că harta e o listă de **rânduri**: întâi alegem rândul (`y`), apoi coloana din rând (`x`). 2) Primește cele două valori returnate și le pune în `dx` și `dy`. 3) Altfel am cere un loc care nu există și ar apărea `IndexError`.
+**Exercițiul E:** 1) Pentru că harta e o listă de **rânduri**: întâi alegem rândul (`y`), apoi coloana din rând (`x`). 2) Primește cele două valori întoarse și le pune în `dx` și `dy`. 3) Altfel am cere un loc care nu există și ar apărea `IndexError`.
+
+**Bonus ★★★ — Labirintul cu chei și capcane:**
+
+*Schema logicii:*
+1. Harta are `K`, `X` și `E`. Variabila `are_cheie` începe cu `False`.  
+2. Calculezi locul nou. Bila intră în el dacă e în ecran, nu e `#` și nu e `E` fără cheie.  
+3. Pe `K` pui `are_cheie = True`. Pe `X` te întorci la start și pui `are_cheie = False`.  
+4. Pe `E` (cu cheia) arăți bifa, apoi timpul în secunde, apoi reîncepi și repornești cronometrul.
+
+```python
+from microbit import *
+
+PRAG = 300
+
+harta = [
+    "S.K..",
+    "#.#X.",
+    "..#..",
+    ".X#..",
+    "...#E",
+]
+
+def inclinare():
+    ax = accelerometer.get_x()
+    ay = accelerometer.get_y()
+    if ax > PRAG:
+        return 1, 0
+    if ax < -PRAG:
+        return -1, 0
+    if ay > PRAG:
+        return 0, 1
+    if ay < -PRAG:
+        return 0, -1
+    return 0, 0
+
+def deseneaza(bx, by, vizibil):
+    for y in range(5):
+        for x in range(5):
+            c = harta[y][x]
+            if c == "#":
+                display.set_pixel(x, y, 4)
+            elif c == "E":
+                display.set_pixel(x, y, 7)
+            elif c == "K" and not are_cheie:
+                display.set_pixel(x, y, 6)
+            elif c == "X":
+                display.set_pixel(x, y, 2)
+            else:
+                display.set_pixel(x, y, 0)
+    if vizibil:
+        display.set_pixel(bx, by, 9)
+
+x = 0
+y = 0
+are_cheie = False
+start = running_time()
+tura = 0
+
+while True:
+    dx, dy = inclinare()
+    nx = x + dx
+    ny = y + dy
+    if 0 <= nx <= 4 and 0 <= ny <= 4:
+        loc = harta[ny][nx]
+        if loc != "#" and (loc != "E" or are_cheie):
+            x = nx
+            y = ny
+
+    loc = harta[y][x]
+    if loc == "K":
+        are_cheie = True
+    elif loc == "X":
+        x = 0
+        y = 0
+        are_cheie = False
+    elif loc == "E":
+        secunde = (running_time() - start) // 1000
+        display.show(Image.YES)
+        sleep(1200)
+        display.scroll(str(secunde) + "s")
+        x = 0
+        y = 0
+        are_cheie = False
+        start = running_time()
+
+    tura += 1
+    deseneaza(x, y, tura % 2 == 0)
+    sleep(150)
+```
+- `loc != "E" or are_cheie` înseamnă: intri pe `E` doar dacă ai cheia (iar locurile care nu sunt `E` sunt libere).  
+- Cheia se desenează doar cât `are_cheie` e `False`, deci „dispare” fără să schimbi harta.  
+- Capcana `X` pune bila la start și **pierde** cheia, ca să trebuiască s-o iei din nou.  
+- Cronometrul pornește la început și se repornește după fiecare ieșire.
