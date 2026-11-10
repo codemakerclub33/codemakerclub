@@ -1,0 +1,41 @@
+Lecția a zecea din Modulul doi, Antrenăm modele A I. Proiect: Aplicația mea cu A I.
+
+Azi pui laolaltă tot ce ai învățat în acest modul: construiești o aplicație cu un model antrenat de tine, o testezi, o păcălești, o repari și scrii o fișă cinstită despre ea. La final rezolvi testul final al modulului. Lucrăm la calculator, cu un adult prezent dacă se poate. Proiectul se numește Aplicația mea cu A I. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I doi, linie jos, L zece.
+
+Ce facem azi. La final ai un model cu două sau trei clase plus clasa altceva, testat cu un test fix, cu tabelul greșelilor, acuratețea și un prag pentru nu știu. Ai încercat să-l păcălești, l-ai reparat și ai scris o Fișă a aplicației cu rezultate, limite și reguli. Prezinți aplicația în două minute, rezolvi testul final și primești insigna A I Maker. Un model bun este unul pe care îl poți explica și pe care îl poți apăra cu cifre.
+
+Planul orei. Începem cu o recapitulare a lecțiilor de la unu la nouă. Apoi facem planul aplicației, antrenăm modelul, îl testăm și măsurăm, îl păcălim și îl reparăm, scriem Fișa aplicației și prezentăm în două minute. La final rezolvăm testul final și ne autoevaluăm. Exercițiile de la B până la D și provocarea sunt pentru cine termină mai repede, sau pentru acasă. Ai nevoie de un calculator cu cameră, sau cu microfon dacă ideea ta folosește sunete, de obiectele pentru clasele tale, de o foaie colorată pentru fundal, de foi A patru și de creioane colorate. Fără calculator sau fără cameră, adultul încarcă poze făcute în prealabil, sau proiectul se face pe hârtie, cu cartonașe, tabel de test și fișă.
+
+Cuvinte noi. Fișa aplicației este o pagină cinstită despre ce face aplicația, cât de bine și unde greșește. O limită este ceva ce aplicația nu poate face bine. Regula aplicației este ce face aplicația în caz de îndoială, de exemplu sub șaptezeci la sută spune nu știu. Autoevaluarea înseamnă să te gândești sincer ce ai învățat.
+
+Exemplul unu. Ce face aplicația mea? Pornești de la ideea aleasă în lecția nouă. Scrii pe foaie numele aplicației, ce face, adică recunoaște două sau trei clase de obiecte sau de sunete de obiecte, clasele plus clasa altceva, regula aplicației și semaforul: confirmi că lucrezi doar cu obiecte sau sunete de obiecte, fără fețe, documente sau date personale. Arăți planul unui adult și începi doar după ce a spus ok.
+
+Exemplul doi. Modelul aplicației. Deschizi Teachable Machine și alegi tipul de proiect potrivit, imagini sau sunete. Creezi clasele din plan. Pentru fiecare aduni cel puțin cincisprezece exemple variate, cu lumină diferită, unghiuri diferite și distanțe diferite. La sunete nu uiți zgomotul de fond. Creezi clasa altceva, cu fundalul gol și cu alte obiecte, cel puțin zece exemple. Antrenezi modelul și nu închizi fila, pentru că nimic nu se salvează singur. Notezi pe foaie câte exemple are fiecare clasă.
+
+Exemplul trei. Test fix și tabelul greșelilor. Pregătești un test fix de cincisprezece situații noi, cel puțin patru pentru fiecare clasă, plus situații cu altceva. Notezi într-un tabel situația, clasa reală, ce a spus modelul, încrederea și dacă a fost corect. Calculezi acuratețea totală: răspunsurile corecte împărțite la cincisprezece și înmulțite cu o sută. Calculezi acuratețea pe clase. Faci tabelul greșelilor: ce a fost încurcat cu ce. Aplici pragul de șaptezeci la sută: câte răspunsuri ar fi fost nu știu și câte dintre ele ar fi fost greșeli?
+
+Exemplul patru. Trei păcăleli. Alegi trei tipuri de păcăleli din lecția a șaptea: lumina, fundalul, unghiul, acoperirea, distanța sau obiectul asemănător. Faci câte două încercări pentru fiecare, în total șase, și notezi cât de des a fost păcălit modelul. Alegi tipul cel mai periculos și adaugi cinci exemple noi la fiecare clasă pentru el. Antrenezi din nou. Rulezi aceleași șase încercări și calculezi din nou rata păcălirii, înainte și după.
+
+Exemplul cinci. Fișa aplicației. Pe o foaie A patru scrii opt lucruri. Numele și clasele. Datele: câte exemple, cum le-ai adunat și ce ai evitat. Rezultatele: acuratețea totală, pe clase, pragul și câte nu știu. Păcălelile: rata înainte și după reparare. Limitele: două lucruri pe care aplicația nu le face bine. Cele cinci întrebări: date, echilibru, greșeli, om și transparență, câte un răspuns scurt. O regulă a ta pentru această aplicație. Semnătura ta și citit de la un adult.
+
+Exemplul șase. Două minute. Prezinți aplicația cuiva din clasă sau din familie în două minute: ce face, cum ai antrenat-o, cât de bine merge, unde greșește și ce regulă ai ales. Rolul tău este să fii cinstit, nu să arăți că este perfectă. Notezi o întrebare pe care ai primit-o.
+
+Greșeli frecvente. Să crezi că, dacă merge pe exemplele tale, este gata. Să ascunzi greșelile din fișă. Să schimbi testul ca să iasă mai bine. Să folosești fețe ca să fie mai interesant, deși nu este permis în laborator. Să crezi că, dacă nu salvezi nimic, pierzi tot, când de fapt trebuie să notezi rezultatele pe foaie.
+
+De făcut azi. Minimul este un model cu două clase plus altceva, antrenat, un test de cel puțin douăsprezece situații, acuratețea calculată și fișa cu primele trei părți. Completul înseamnă și păcălelile cu repararea, pragul, Fișa cu toate cele opt părți, prezentarea, autoevaluarea și testul final. Foaia se termină cu L zece.
+
+Exercițiul B. Pagina de autoevaluare. Scrii cel mai interesant lucru învățat în acest modul, cel mai greu lucru și un lucru pe care îl vei face diferit când folosești sau construiești A I. Exercițiul C. Prezintă aplicația cuiva și notează o întrebare primită. Exercițiul D. Testul final: răspunzi la cele zece întrebări, fără să te uiți în lecții. Pentru insignă ai nevoie de cel puțin opt răspunsuri corecte.
+
+Insigna. Completezi Completul și testul final și primești insigna A I Maker.
+
+Provocare pentru cine termină mai repede: Testul pe teren. Un membru al familiei alege zece situații pe care tu nu le-ai văzut, obiecte din clasele tale și câteva care nu aparțin niciunei clase. Rulezi aplicația și notezi rezultatul, calculezi acuratețea pe testul familiei și o compari cu acuratețea de pe testul tău fix. Scrii două motive posibile pentru diferență și alegi o situație greșită, spunând ce exemple ai adăuga ca s-o repari. Numele foii se termină cu Teren.
+
+Recapitulare. Aplicația are clase, altceva și o regulă pentru îndoială. Testăm cu un test fix de situații noi și calculăm acuratețea. Citim tabelul greșelilor și aplicăm un prag. Păcălim, reparăm și măsurăm din nou, cu același test. Scriem o fișă cinstită, cu limite. Lucrăm cu semaforul și cu cele cinci întrebări.
+
+Schema pe scurt, pe foaie: plan, exemple variate, antrenare, test fix, tabelul greșelilor, prag, păcălim, reparăm, fișă, insigna A I Maker.
+
+Testul final. Unu: ce este o clasă și ce este un exemplu? Doi: de ce împărțim datele în set de antrenare și set de test? Trei: cum calculezi acuratețea? Patru: ce arată tabelul greșelilor? Cinci: ce este o alarmă falsă și ce este o ratare? Șase: de ce adăugăm clasa altceva și ce face un prag? Șapte: de ce are nevoie un model de sunet de zgomot de fond? Opt: dă două feluri în care poate fi păcălit un model și spune cum îl repari. Nouă: care sunt cele patru părți ale unei cereri bune către un asistent și ce faci cu răspunsul? Zece: numește trei dintre cele cinci întrebări ale unui constructor responsabil.
+
+Temă. Arată aplicația și Fișa cuiva din familie și întreabă ce ar adăuga. Alege un lucru din modul și explică-l unui prieten. Păstrează Fișa într-un loc sigur și poți s-o adaugi la portofoliul tău. Gândește-te ce clasă nouă ai adăuga aplicației. Numele foii se termină cu Tema.
+
+Felicitări! Ai terminat Modulul doi din Antrenăm modele A I și ai primit insigna A I Maker. Continuă să testezi, să verifici și să te întrebi mereu cine poate fi afectat.

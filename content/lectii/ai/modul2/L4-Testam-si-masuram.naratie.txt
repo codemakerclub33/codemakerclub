@@ -1,0 +1,37 @@
+Lecția a patra din Modulul doi, Antrenăm modele A I. Testăm și măsurăm.
+
+Azi aflăm că optzeci și cinci la sută acuratețe nu spune tot. Facem un tabel al greșelilor, numărăm alarmele false și ratările și hotărâm care greșeală este mai gravă, în funcție de ce face modelul. Lucrăm la calculator, cu un adult prezent dacă se poate. Proiectul se numește Fișa greșelilor. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I doi, linie jos, L patru.
+
+Ce facem azi. La final știi să construiești tabelul greșelilor unui model, să deosebești o alarmă falsă de o ratare, să calculezi acuratețea totală și pe fiecare clasă și să spui ce fel de greșeală costă mai mult într-o situație reală. Două modele pot avea aceeași acuratețe și totuși să greșească foarte diferit. De aceea nu ne uităm doar la un procent.
+
+Planul orei. Începem cu o recapitulare a experimentului din lecția trecută. Apoi comparăm două modele cu aceeași acuratețe, refacem modelul și pregătim un test de douăzeci de situații, completăm tabelul greșelilor, calculăm acuratețea totală și pe clasă și hotărâm ce greșeală costă mai mult. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă. Ai nevoie de un calculator cu cameră, două perechi de obiecte mici, foi cu pătrățele și creioane. Dacă nu ai cameră, adultul poate încărca poze făcute în prealabil.
+
+Cuvinte noi azi. Tabelul greșelilor arată, pentru fiecare clasă reală, ce a răspuns modelul. Alarma falsă înseamnă că modelul spune că este clasa țintă, dar nu este. Ratarea înseamnă că modelul nu recunoaște clasa țintă, deși ea era acolo. Recunoscute din clasă arată câte exemple dintr-o clasă a recunoscut corect modelul.
+
+Exemplul unu. Ne amintim experimentul. Spui în perechi ce a ajutat mai mult modelul, mai multe poze la fel sau poze variate, ce înseamnă un singur lucru schimbat și de ce folosim un test fix.
+
+Exemplul doi. Două modele, aceeași acuratețe. Un detector de fum are două versiuni. Fiecare a fost testat în o sută de situații și a ghicit corect nouăzeci. Versiunea A a greșit de zece ori, pentru că nu a sunat deși era fum, adică zece ratări. Versiunea B a greșit de zece ori, pentru că a sunat fără fum, adică zece alarme false. Discutăm ce versiune ai pune în casa ta și de ce nu ne ajută doar numărul nouăzeci la sută.
+
+Exemplul trei. Refacem modelul și scriem testul. Unealta nu salvează singură, deci modelul din lecția trecută nu mai există. Alegi o clasă țintă, de exemplu creion, și o altă clasă, de exemplu gumă. Aduni cincisprezece exemple variate pe clasă și antrenezi modelul. Apoi scrii pe foaie testul: douăzeci de situații, zece pentru fiecare clasă, cu obiecte puse deoparte și poziții variate.
+
+Exemplul patru. Tabelul greșelilor. Rulezi cele douăzeci de situații și notezi, pentru fiecare, ce clasă era în realitate și ce a răspuns modelul. Completezi tabelul: pe rândul creion, câte au fost corecte și câte au fost ratări, iar pe rândul gumă, câte au fost alarme false și câte corecte. Suma fiecărui rând trebuie să fie zece.
+
+Exemplul cinci. Calculăm. Acuratețea totală este suma corectelor de la ambele clase, împărțită la douăzeci și înmulțită cu o sută. Apoi calculezi câte creioane și câte gume a recunoscut modelul și numeri alarmele false și ratările. De exemplu, cu opt creioane recunoscute, două ratări, o alarmă falsă și nouă gume recunoscute, acuratețea totală este optzeci și cinci la sută. Te întrebi ce confundă mai des modelul tău.
+
+Exemplul șase. Alarmă falsă sau ratare? Pentru detectorul de fum, filtrul de spam și poarta care se deschide pentru mașina familiei, spui care greșeală este mai gravă și de ce. Regula de gândire este: mai gravă este greșeala care poate face rău cuiva sau care nu se mai poate repara. Apoi completezi Fișa greșelilor, cu tabelul, cele trei procente și o propoziție despre greșeala mai gravă pentru modelul tău.
+
+Greșeli frecvente. Să crezi că acuratețea mare spune tot, că toate greșelile sunt la fel, că alarma falsă și ratarea sunt același lucru, că e în regulă dacă un rând nu are suma zece sau că poți testa cu obiectele de la antrenare.
+
+De făcut azi. Minimul este modelul refăcut, testul de douăzeci de situații și tabelul greșelilor completat. Completul înseamnă și cele trei procente, alarmele false și ratările numărate, cele trei situații analizate, propoziția cu greșeala mai gravă și exercițiile de la B până la E.
+
+Provocare pentru cine termină mai repede: Care greșeală e mai gravă. Scrii șase situații în care un model poate greși în două feluri, pe șase cartonașe. La patru dintre ele una dintre greșeli este clar mai gravă, iar la două depinde. Fiecare om din familie alege, pentru fiecare cartonaș, greșeala mai gravă. Notezi câte din cele patru cartonașe clare a ghicit fiecare și scrii două propoziții despre unde nu au fost de acord. Numele foii se termină cu Greseli.
+
+Recapitulare. Alarma falsă înseamnă că modelul spune da când era nu. Ratarea înseamnă că spune nu când era da. Tabelul greșelilor le arată pe amândouă. Calculăm acuratețea totală și recunoscute din fiecare clasă. Mai gravă este greșeala care poate face rău sau nu se mai repară.
+
+Schema pe scurt, pe foaie: test de douăzeci, tabelul greșelilor, alarme false și ratări, acuratețe totală și pe clasă, ce greșeală costă mai mult.
+
+Întrebări de verificare. Ce este o alarmă falsă? Ce este o ratare? Cum calculezi acuratețea totală din tabelul greșelilor? De ce două modele cu aceeași acuratețe pot fi diferite? Cum alegi greșeala mai gravă într-o situație?
+
+Temă. Termină Fișa greșelilor, explică unui adult diferența dintre alarma falsă și ratare, găsește trei aparate sau aplicații care pot greși în două feluri și scrie care greșeală este mai gravă, apoi gândește-te ce ai schimba la modelul tău ca să reduci greșeala mai gravă. Numele foii se termină cu Tema.
+
+Urmează Lecția a cincea: învățăm modelul să spună nu știu, cu o clasă pentru lucruri necunoscute și o regulă după încredere.

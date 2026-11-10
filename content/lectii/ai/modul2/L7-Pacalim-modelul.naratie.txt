@@ -1,0 +1,39 @@
+Lecția a șaptea din Modulul doi, Antrenăm modele A I. Păcălim modelul.
+
+Azi încercăm să păcălim propriul nostru model. Schimbăm lumina, fundalul, unghiul și vedem ce se strică. Apoi reparăm modelul și măsurăm din nou, cu același test. Așa lucrează cei care verifică dacă un model este de încredere. Lucrăm la calculator, cu un adult prezent dacă se poate. Proiectul se numește Raportul de păcăleală. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I doi, linie jos, L șapte.
+
+Ce facem azi. La final știi să cauți punctele slabe ale unui model, să deosebești șase feluri de păcăleli, să calculezi rata păcălirii și să repari modelul cu exemple noi. Un model care merge perfect pe masa ta nu este neapărat bun în lumea reală. Un specialist nu întreabă dacă funcționează, ci unde se strică.
+
+Planul orei. Începem cu o recapitulare. Apoi învățăm cele șase feluri de păcăleli, antrenăm un model de bază în condiții curate, facem douăsprezece încercări de păcălit, reparăm și măsurăm din nou. La final scriem raportul și vorbim despre lumea reală. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă. Ai nevoie de un calculator cu cameră, de două perechi de obiecte mici, de exemplu un creion și o gumă, plus un pix și o altă gumă pentru păcălit, de o foaie colorată sau cu desene pentru fundal, de o foaie albă pentru acoperit și, dacă vrei, de o lanternă ținută de un adult. Dacă nu ai cameră, adultul încarcă poze făcute în prealabil, sau lucrați pe hârtie, cu desene ale aceluiași obiect în condiții diferite.
+
+Cuvinte noi. O păcăleală este o schimbare a condițiilor care face modelul să greșească. Rata păcălirii arată câte încercări au păcălit modelul, din total, în procente. Un model robust se descurcă și în condiții diferite de cele de la antrenare. Repararea înseamnă să adăugăm exemple noi din situațiile în care modelul a greșit.
+
+Exemplul unu. Ne amintim. Spui în perechi care sunt cele trei feluri de date, ce este un test fix și de ce îl folosim și ce este altceva într-un model de imagini.
+
+Exemplul doi. Șase feluri de a păcăli un model. Primul este lumina: mai întunecat, mai luminos sau lumină colorată. Al doilea este fundalul, de exemplu o foaie cu desene. Al treilea este unghiul: obiectul văzut de sus, din spate sau înclinat. Al patrulea este obiectul parțial acoperit. Al cincilea este un obiect asemănător, care seamănă cu o clasă dar nu face parte din ea. Al șaselea este distanța: foarte aproape sau foarte departe de cameră. Scrie pe foaie cele șase tipuri și, lângă fiecare, un exemplu din casa ta.
+
+Exemplul trei. Un model de bază. Deschizi Teachable Machine, alegi proiectul cu imagini și dai nume celor două clase, creion și gumă. Îl antrenezi în condiții curate: lumină normală, fundal alb, obiectul din față sau din lateral, la distanță medie. Aduni zece exemple pe clasă. Antrenezi modelul și nu închizi fila. Verifici rapid că merge în condiții curate. Facem asta cu intenție, ca să vedem ce se strică atunci când schimbăm condițiile.
+
+Exemplul patru. Douăsprezece încercări. Pentru fiecare dintre cele șase tipuri de păcăleli faci două încercări, câte una pentru fiecare clasă. Notezi într-un tabel tipul păcălelii, ce ai făcut, clasa reală, ce a spus modelul, încrederea și dacă a fost păcălit. Păcălit înseamnă că modelul a dat clasa greșită. Calculezi rata păcălirii: numărul de încercări păcălite, împărțit la douăsprezece și înmulțit cu o sută. Vezi care tip de păcăleală a funcționat cel mai des.
+
+Exemplul cinci. Reparăm. Alegi cele două tipuri care au păcălit cel mai des modelul. Adaugi la fiecare clasă cinci exemple noi pentru fiecare dintre cele două tipuri, în total zece exemple noi pe clasă. Antrenezi din nou modelul. Rulezi exact aceleași douăsprezece încercări și completezi o coloană nouă, după reparare. Calculezi din nou rata păcălirii și compari. Rezultatul nu trebuie să fie perfect. Important este să vezi dacă reparația a ajutat și unde a rămas slab modelul.
+
+Exemplul șase. Raportul de păcăleală și lumea reală. Pe o foaie scrii titlul și numele, tabelul cu cele douăsprezece încercări, înainte și după, diagrama cu bare cu rata păcălirii înainte și după reparare și trei propoziții: ce tip de păcăleală a fost cel mai periculos, ce a ajutat reparația și ce tot nu merge. Apoi discutăm unde, în lumea reală, s-ar putea întâmpla asemenea păcăleli: o cameră de telefon într-o lumină slabă, un asistent vocal într-o cameră zgomotoasă sau un model care citește semne rutiere când semnul este murdar sau acoperit de zăpadă. Ce ar trebui să facă cei care construiesc astfel de modele înainte să le lase pe mâna oamenilor?
+
+Greșeli frecvente. Să crezi că, dacă merge pe masa ta, merge peste tot. Să repari modelul și să nu mai testezi. Să schimbi testul după reparare, deși nu mai poți compara. Să crezi că păcălirea înseamnă că modelul e prost, când de fapt arată unde are nevoie de exemple. Să repari toate tipurile deodată, fără să știi ce a ajutat.
+
+De făcut azi. Minimul este modelul de bază antrenat, tabelul cu cele douăsprezece încercări completat și rata păcălirii calculată. Completul înseamnă și repararea cu exemple noi, coloana după reparare, diagrama cu bare, cele trei propoziții și exercițiile de la B până la E. Foaia se termină cu L șapte.
+
+Exercițiul B. Spune ce fel de păcăleală este fiecare: creionul în cameră întunecată, guma pe un fundal cu desene colorate, creionul văzut doar de vârf, de sus, o foaie care acoperă jumătate din gumă, un pix arătat ca fiind creion și creionul ținut foarte aproape de cameră. Exercițiul C. Un model a fost păcălit în trei din douăsprezece încercări înainte de reparare și într-una din douăsprezece după. Calculează rata înainte și după și spune dacă a ajutat repararea. Exercițiul D. Modelul tău greșește când obiectul este pe un fundal cu desene și când lumina este slabă. Scrie ce exemple ai adăuga și cum verifici că reparația a funcționat. Exercițiul E. Explică în trei propoziții de ce nu este de ajuns ca un model să meargă în condiții curate.
+
+Provocare pentru cine termină mai repede: Cutia cu păcăleli. Lași familia să încerce să păcălească modelul. O persoană propune șase încercări diferite, iar tu le notezi, vezi ce a spus modelul și numeri câte l-au păcălit. Alegi două încercări reușite, adaugi exemple noi pentru ele, rulezi din nou cele șase încercări și scrii două propoziții despre ce ai învățat. Numele foii se termină cu Păcăleli.
+
+Recapitulare. Un model poate fi păcălit prin lumină, fundal, unghi, acoperire, obiecte asemănătoare și distanță. Rata păcălirii arată câte încercări au păcălit modelul. Reparăm cu exemple noi și verificăm cu același test, înainte și după. Un model robust se descurcă și în condiții diferite.
+
+Schema pe scurt, pe foaie: model de bază, douăsprezece păcăleli, rata păcălirii, reparare cu exemple noi, același test, comparăm.
+
+Întrebări de verificare. Numește trei feluri de păcăleli. Cum calculezi rata păcălirii? Cum repari un model care greșește într-un anumit loc? De ce rulăm din nou aceleași încercări? Ce înseamnă un model robust?
+
+Temă. Termină raportul. Arată familiei păcălelile care au funcționat și întreabă ce alte încercări ar face. Alege un aparat sau o aplicație din casă și scrie trei situații în care ar putea fi păcălit. Scrie cum ai verifica dacă este de încredere. Numele foii se termină cu Tema.
+
+Urmează Lecția a opta: lăsăm modelele noastre și lucrăm cu un asistent A I. Scriem cereri, comparăm răspunsurile și învățăm să le verificăm.

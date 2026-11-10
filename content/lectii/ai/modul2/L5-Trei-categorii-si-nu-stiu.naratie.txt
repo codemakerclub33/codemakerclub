@@ -1,0 +1,37 @@
+Lecția a cincea din Modulul doi, Antrenăm modele A I. Trei categorii și nu știu.
+
+Azi vedem ce face un model când primește un obiect pe care nu l-a văzut niciodată și îl învățăm să spună nu știu. Adăugăm o a treia clasă și o regulă după încredere. Lucrăm la calculator, cu un adult prezent dacă se poate. Proiectul se numește Modelul care știe să spună nu știu. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I doi, linie jos, L cinci.
+
+Ce facem azi. La final știi de ce un model cu două clase răspunde mereu, chiar și la un obiect necunoscut, cum adaugi o clasă numită altceva și cum folosești o regulă de încredere, adică un prag, ca să spui nu știu când modelul nu este destul de sigur. În Modulul unu ai aflat că un model nu spune sigur, ci cât de sigur. Acum folosim chiar numărul acela ca să luăm o decizie.
+
+Planul orei. Începem cu o recapitulare și cu o ipoteză: ce va spune modelul la un obiect necunoscut. Apoi facem un model cu două clase și îl testăm cu obiecte necunoscute, adăugăm clasa altceva, testăm cu douăsprezece situații, aplicăm regula pragului și completăm fișa. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă. Ai nevoie de un calculator cu cameră, patru obiecte pentru clasele creion și gumă, încă patru obiecte diferite, dintre care două pentru clasa altceva și două pe care modelul nu le va vedea niciodată, doar la test.
+
+Cuvinte noi azi. Clasa altceva este pentru tot ce nu este niciuna dintre clasele tale. Necunoscut este un obiect pe care modelul nu l-a văzut niciodată. Pragul este numărul de la care răspunsul modelului contează. Nu știu este răspunsul când încrederea este sub prag.
+
+Exemplul unu. Ce va spune modelul? Scrii ipoteza: dacă antrenezi un model doar cu creion și gumă și îi arăți o ascuțitoare, ce va spune? Creion, gumă sau nu știu? Și cât de sigur va fi?
+
+Exemplul doi. Obiecte necunoscute. Faci un model cu două clase, cu zece exemple variate pe clasă. Apoi arăți modelului cele două obiecte necunoscute, fiecare în două poziții, deci patru situații, și notezi ce spune și cât de sigur este. Compari cu ipoteza. Modelul nu poate spune nu știu, pentru că nu are o astfel de clasă.
+
+Exemplul trei. Clasa altceva. Adaugi o clasă nouă și îi dai numele altceva. În ea pui fundalul gol, adică camera fără niciun obiect, în poziții și lumini diferite, și două obiecte care nu sunt creion sau gumă și nu sunt cele două necunoscute de la test. Adaugi zece exemple variate și antrenezi din nou. Regula esențială este că obiectele necunoscute de la test nu intră niciodată la antrenare. Altfel nu mai sunt necunoscute.
+
+Exemplul patru. Douăsprezece situații. Rulezi testul pe patru situații cu creion, patru cu gumă și patru necunoscute, adică cele două obiecte în două poziții fiecare. Notezi ce a spus modelul și cât de sigur a fost. La un necunoscut, răspunsul altceva este corect. Calculezi câte din cele douăsprezece sunt corecte și câte din cele patru necunoscute au fost recunoscute ca altceva. Compari cu Exemplul doi.
+
+Exemplul cinci. Nu știu după încredere. Chiar și cu clasa altceva, modelul poate fi sigur pe un răspuns greșit. De aceea adăugăm o regulă pe care o aplicăm noi, pe hârtie: dacă cea mai mare încredere este sub pragul ales, spunem nu știu. Alegi pragul de șaptezeci la sută. Subliniezi rândurile cu încrederea sub șaptezeci, numeri la câte situații a răspuns modelul, câte au fost corecte și câte răspunsuri greșite au rămas. Regula îți aduce mai puține răspunsuri, dar mai de încredere.
+
+Exemplul șase. Fișa Modelul care știe să spună nu știu. Scrii titlul, tabelul cu douăsprezece situații, comparația dintre modelul cu două clase și cel cu trei clase, regula de încredere și trei propoziții: ce a învățat modelul, ce tot nu știe și ce prag ai alege dacă modelul ar ajuta un om.
+
+Greșeli frecvente. Să crezi că un model cu două clase știe să spună nu știu, să pui obiectele de test în clasa altceva, să crezi că un prag mare este mereu mai bun, că un procent mare înseamnă răspuns corect sau că altceva poate avea doar fundalul gol.
+
+De făcut azi. Minimul este modelul cu trei clase antrenat și tabelul cu douăsprezece situații completat. Completul înseamnă și modelul cu două clase testat pe necunoscute, pragul de șaptezeci la sută aplicat, fișa cu comparația și cele trei propoziții și exercițiile de la B până la E.
+
+Provocare pentru cine termină mai repede: Cât de sus punem pragul. Folosești tabelul cu douăsprezece situații și încrederea notată. Aplici, pe rând, pragurile de șaizeci, șaptezeci, optzeci și nouăzeci la sută. Pentru fiecare prag completezi la câte situații răspunde modelul, câte sunt corecte, câte răspunsuri greșite rămân și câte din cele patru necunoscute sunt prinse. Alegi pragul care ți se pare cel mai bun și scrii două propoziții: ce se întâmplă dacă pragul este prea mic și ce se întâmplă dacă este prea mare. Numele foii se termină cu Prag.
+
+Recapitulare. Un model cu două clase răspunde mereu, chiar și la un obiect necunoscut. Clasa altceva îl ajută să recunoască ce nu cunoaște. Obiectele necunoscute de la test nu intră la antrenare. Pragul este încrederea minimă, iar sub el spunem nu știu. Un prag mic lasă multe greșeli, iar unul prea mare lasă puține răspunsuri.
+
+Schema pe scurt, pe foaie: două clase, răspunde mereu. Plus altceva și prag, nu știu când încrederea e mică, mai puține greșeli, mai puține răspunsuri.
+
+Întrebări de verificare. De ce un model cu două clase nu poate spune nu știu? Ce punem în clasa altceva? De ce obiectele necunoscute de la test nu intră la antrenare? Ce este un prag? Ce se întâmplă dacă pragul este foarte mare?
+
+Temă. Termină fișa, explică unui adult ce înseamnă nu știu pentru un model și de ce este util, alege trei situații din viață în care un aparat ar trebui să spună nu știu în loc să ghicească și scrie ce prag ai pune pentru fiecare. Numele foii se termină cu Tema.
+
+Urmează Lecția a șasea: modele pe alte date, sunete și, dacă vrei, poziții ale corpului.

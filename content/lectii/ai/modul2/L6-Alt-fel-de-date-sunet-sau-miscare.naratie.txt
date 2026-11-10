@@ -1,0 +1,37 @@
+Lecția a șasea din Modulul doi, Antrenăm modele A I. Alt fel de date: sunet sau mișcare.
+
+Până acum modelele noastre au văzut imagini. Azi le învățăm să asculte sunete și, dacă vrei, să recunoască poziții. Comparăm trei feluri de date: imagini, sunete și poziții. Lucrăm la calculator, cu un adult prezent dacă se poate. Proiectul se numește Trei feluri de date. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I doi, linie jos, L șase.
+
+Ce facem azi. La final știi că modelele pot învăța nu doar din imagini, ci și din sunete și din poziții, ai făcut un model care recunoaște sunete și poți compara trei feluri de date. Afli și ce înseamnă zgomotul de fond și de ce un model de sunet nu poate funcționa fără el. Regulile laboratorului rămân valabile: acum ne ocupăm și de microfon.
+
+Planul orei. Începem cu o recapitulare a pragului și a clasei nu știu. Apoi facem semaforul pentru microfon, construim un model care ascultă, îl testăm și citim greșelile, încercăm un model de poziții și completăm tabelul comparativ. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă. Ai nevoie de un calculator cu cameră și microfon, de obiecte care fac zgomot, cum ar fi o foaie de hârtie, o cheie, un clopoțel de jucărie sau o sticlă mică cu orez. Dacă mulți lucrează în aceeași sală, sunetele se amestecă. Lucrați în perechi, în colțuri diferite sau pe rând, și înregistrați zgomotul de fond în locul în care lucrați.
+
+Cuvinte noi azi. Zgomotul de fond este sunetul din încăpere când nu se întâmplă nimic special. Un eșantion de sunet este o bucată de o secundă dintr-o înregistrare. Spectrograma este o poză a sunetului. Poziția este felul în care stă corpul, iar modelul urmărește punctele principale.
+
+Exemplul unu. Ne amintim nu știu. Spui în perechi de ce un model cu două clase nu poate spune nu știu, ce punem în clasa altceva și ce este un prag.
+
+Exemplul doi. Semaforul pentru microfon. Microfonul aude tot. Verde înseamnă sunete de obiecte: hârtie, cheie, clopoțel, sticlă cu orez, bătăi în masă și palme. Galben înseamnă propria ta voce, doar cu acordul unui adult, pentru un cuvânt scurt și fără salvare. Roșu înseamnă vocea altor oameni, conversațiile și orice înregistrare cu nume, adrese sau alte date personale. Unealta nu lucrează cu sunetul brut, ci cu o spectrogramă, o poză a sunetului, în care culorile arată cât de tare este fiecare ton în fiecare moment. Sunetele care arată la fel în spectrogramă pot fi încurcate de model.
+
+Exemplul trei. Un model care ascultă. Alegi proiectul cu sunete și permiți folosirea microfonului. Prima clasă, zgomotul de fond, există deja și este obligatorie. Înregistrezi douăzeci de secunde de liniște, în locul în care lucrezi, apoi extragi eșantioanele și obții douăzeci de eșantioane de o secundă. Dai nume celorlalte clase după sunetele tale. Pentru fiecare clasă înregistrezi cel puțin opt secunde, repetând sunetul, apoi extragi eșantioanele. Fiecare clasă are nevoie de cel puțin opt eșantioane. Antrenezi modelul și nu închizi fila. Sunetele trebuie să fie variate: aproape și departe, tare și încet. Evită două sunete foarte asemănătoare.
+
+Exemplul patru. Zece sunete. Testăm cinstit, cu sunete noi: alt clopoțel, altă foaie, alt unghi. Faci zece situații, calculezi acuratețea și construiești tabelul greșelilor: ce sunet a fost încurcat cu ce. Încerci și o situație de liniște, apoi un sunet foarte încet, și vezi ce spune modelul.
+
+Exemplul cinci. Poziții. Alegi una dintre două variante. Varianta A folosește poziții ale corpului, doar cu acordul tău și al adultului, fără salvare, pe loc, de la brâu în sus. Dai nume claselor, de exemplu mâini sus, mâini jos și nimeni în cadru, înregistrezi în poziții ușor diferite și la distanțe diferite, antrenezi și testezi cu șase situații noi. Varianta B folosește un obiect: antrenezi un model de imagini care deosebește un obiect așezat în picioare de același obiect culcat. În ambele variante aplici semaforul și nu salvezi nimic în Drive.
+
+Exemplul șase. Trei feluri de date. Completezi un tabel cu imagini, sunete și poziții: ce date aduni, ce clasă specială este nevoie, ce a mers bine, ce a încurcat modelul și ce risc există pentru viața privată. Apoi scrii trei propoziții: ce fel de date ți s-a părut cel mai ușor de folosit și de ce, și ce regulă din semafor a contat cel mai mult azi.
+
+Greșeli frecvente. Să crezi că zgomotul de fond nu contează, că poți înregistra pe oricine care vorbește, că două sunete asemănătoare merg bine împreună sau că un model de sunet merge la fel în orice încăpere.
+
+De făcut azi. Minimul este modelul de sunet antrenat, cu zgomot de fond și cel puțin două clase, și tabelul de test cu cel puțin opt situații. Completul înseamnă și zece situații cu acuratețea, tabelul greșelilor, modelul de poziții, tabelul comparativ cu cele trei propoziții și exercițiile de la B până la E.
+
+Provocare pentru cine termină mai repede: Duelul cu modelul. Alegi trei sunete pe care modelul le știe. Faci zece runde: produci un sunet în spatele unei perne, un om din familie ascultă fără să vadă și scrie ce crede că este, iar tu notezi și ce spune modelul. Numeri câte a ghicit fiecare și notezi runda în care s-au înșelat amândoi. Numele foii se termină cu Duel.
+
+Recapitulare. Modelele pot învăța din imagini, sunete și poziții. Un model de sunet are nevoie de zgomot de fond. Sunetul devine o spectrogramă, o poză a sunetului. Sunetele asemănătoare se încurcă, deci alegem sunete diferite. Microfonul aude tot, deci lucrăm cu sunete de obiecte și respectăm semaforul.
+
+Schema pe scurt, pe foaie: fundal și sunete, eșantioane de o secundă, antrenare, test cu sunete noi, tabelul greșelilor.
+
+Întrebări de verificare. Ce trei feluri de date au folosit modelele noastre? De ce este obligatoriu zgomotul de fond la sunete? Ce este o spectrogramă? De ce nu înregistrăm vocea colegilor? Ce se întâmplă dacă două sunete sunt foarte asemănătoare?
+
+Temă. Termină tabelul, găsește acasă trei sunete diferite care ar putea fi clase într-un model și scrie un prag potrivit, explică unui adult de ce un model de sunet are nevoie de fundal și gândește-te la un aparat din casă care ar putea folosi un model de sunet sau de poziții. Numele foii se termină cu Tema.
+
+Urmează Lecția a șaptea: încercăm să păcălim modelul și vedem ce se strică, apoi reparăm.

@@ -259,7 +259,7 @@ Fă un joc cu familia, ca să vezi dacă regulile laboratorului se înțeleg uș
 ---
 
 ## Ce urmează — Lecția 2
-Facem un model mai atent: plănuim exemplele pe hârtie, le adunăm, antrenăm modelul și îl testăm cu un raport.
+Facem un model mai atent: planificăm exemplele pe hârtie, le adunăm, antrenăm modelul și îl testăm cu un raport.
 
 ---
 
