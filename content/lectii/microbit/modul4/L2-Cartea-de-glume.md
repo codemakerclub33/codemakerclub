@@ -332,3 +332,42 @@ def urmatorul(i, n):
 **Exercițiul D:** 1) `i = i + 1` poate ieși din listă (`IndexError`): trebuie `(i + 1) % len(glume)`. 2) `glume.append["Super"]` trebuie paranteze rotunde: `glume.append("Super")`. 3) `display.scroll(glume)` nu poate afișa o listă; afișezi un element. 4) lipsește `sleep` în buclă. 5) lipsește `from microbit import *`.
 
 **Exercițiul E:** 1) Indexul arată **câte locuri sunt înainte** de element; primul are `0` înaintea lui. 2) Ține indexul între `0` și ultimul. 3) `pop()` scoate **ultimul**, `pop(0)` scoate **primul**.
+
+**Bonus ★★★ — Cartea de glume cu surprize:**
+
+*Schema logicii:*
+1. Ai trei liste: `intrebari`, `raspunsuri` (în aceeași ordine, cel puțin `6` elemente) și `surprize`.  
+2. Funcția `pagina()` derulează mai întâi `str(i + 1) + "/" + str(len(intrebari))`, apoi întrebarea.  
+3. **A** trece la pagina următoare cu `% len(intrebari)`, deci după ultima revii la prima. **B** arată răspunsul.  
+4. La scuturare arăți `Image.HEART`, apoi o surpriză aleasă cu `random.choice`.
+
+```python
+from microbit import *
+import random
+
+intrebari = ["Ce zice 0 catre 8?", "Ce mananca robotul?", "De ce e trist calculatorul?", "Cum se saluta programatorii?", "Ce zice un LED fericit?", "De ce a luat micro:bit o pauza?"]
+raspunsuri = ["Ce curea frumoasa!", "Cipuri!", "Are prea multe ferestre.", "Hello, world!", "Ma aprinzi!", "Avea nevoie de RESET!"]
+surprize = ["Esti geniu!", "Zambeste!", "Curaj!"]
+i = 0
+
+def pagina():
+    display.scroll(str(i + 1) + "/" + str(len(intrebari)))
+    display.scroll(intrebari[i])
+
+pagina()
+
+while True:
+    if button_a.was_pressed():
+        i = (i + 1) % len(intrebari)
+        pagina()
+    if button_b.was_pressed():
+        display.scroll(raspunsuri[i])
+    if accelerometer.was_gesture("shake"):
+        display.show(Image.HEART)
+        sleep(500)
+        display.scroll(random.choice(surprize))
+    sleep(100)
+```
+- `pagina()` doar **citește** `i`, deci nu are nevoie de `global`.  
+- Numărul paginii începe de la `1`, de aceea afișăm `i + 1`.  
+- Pentru cine vrea mai mult: `surprize.sort()` pus înainte de bucla `while` le ordonează alfabetic.

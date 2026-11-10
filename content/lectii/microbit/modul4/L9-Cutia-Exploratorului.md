@@ -490,3 +490,64 @@ def modul_lumina():
 **Exercițiul D:** 1) lipsește `from microbit import *`. 2) `"T=" + temperature()` lipește text cu număr: trebuie `"T=" + str(temperature())`. 3) `mod = mod + 1` poate ieși din listă; trebuie `(mod + 1) % len(NUME)`. 4) `modul_termometru` nu are cum să iasă din buclă (lipsește `A` și `break`). 5) în bucla mare lipsește `sleep`.
 
 **Exercițiul E:** 1) Ca să găsești greșelile ușor, într-o singură bucată. 2) Oprește bucla și funcția se termină, deci revenim în meniu. 3) Adăugăm o literă în listă și un `elif`; restul se adaptează singur.
+
+**Bonus ★★★ — Jurnalul păstrat:**
+
+*Schema logicii:*
+1. Jurnalul se scrie în fișier ca **un singur text**, cu valorile separate prin virgulă: `"21,23,22,"`.  
+2. `salveaza_jurnal(lista)` lipește fiecare valoare și o virgulă într-un text și îl scrie în fișier.  
+3. `citeste_jurnal()` deschide fișierul, taie textul cu `split(",")` și transformă fiecare bucată cu `int()`. Dacă fișierul lipsește sau e stricat, întoarce o listă goală.  
+4. La pornire `jurnal = citeste_jurnal()`. La **B** salvezi după `append` și `pop`. La scuturare derulezi valorile și media, doar dacă lista nu e goală.
+
+```python
+JURNAL = "jurnal.txt"
+
+def citeste_jurnal():
+    lista = []
+    try:
+        with open(JURNAL) as f:
+            text = f.read()
+        for bucata in text.split(","):
+            if bucata != "":
+                lista.append(int(bucata))
+    except OSError:
+        return []
+    except ValueError:
+        return []
+    return lista
+
+def salveaza_jurnal(lista):
+    text = ""
+    for t in lista:
+        text = text + str(t) + ","
+    with open(JURNAL, "w") as f:
+        f.write(text)
+
+jurnal = citeste_jurnal()
+
+def modul_jurnal():
+    while True:
+        a = button_a.was_pressed()
+        b = button_b.was_pressed()
+        if a:
+            break
+        if b:
+            jurnal.append(temperature())
+            if len(jurnal) > 5:
+                jurnal.pop(0)
+            salveaza_jurnal(jurnal)
+            display.show(Image.YES)
+            sleep(500)
+        if accelerometer.was_gesture("shake"):
+            if len(jurnal) > 0:
+                for t in jurnal:
+                    display.scroll(str(t))
+                display.scroll(str(sum(jurnal) // len(jurnal)))
+        display.show("J")
+        sleep(100)
+```
+În Cutia Complet pui `JURNAL`, `citeste_jurnal`, `salveaza_jurnal` și `jurnal = citeste_jurnal()` **înainte** de `modul_jurnal`, în locul lui `jurnal = []`.
+- Textul `"21,23,22,"` are o virgulă la sfârșit, deci `split` dă o ultimă bucată goală; de aceea sărim peste `""`.  
+- `try / except` din L8 acoperă ambele cazuri: fișier lipsă (`OSError`) și text care nu e număr (`ValueError`).  
+- Salvezi doar când notezi o valoare nouă, nu la fiecare tură.  
+- `sum(jurnal) // len(jurnal)` e media, fără zecimale.

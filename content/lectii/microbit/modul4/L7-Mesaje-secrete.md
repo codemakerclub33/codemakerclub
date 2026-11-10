@@ -385,3 +385,60 @@ display.show(emoji_din("E:0"))
 **Exercițiul D:** 1) lipsește `:` după `def codeaza(text, pas)`. 2) `ALFABET` nu e definit (`NameError`). 3) `rezultat` pe un rând singur nu întoarce nimic: trebuie `return rezultat`. 4) cu litere mici (`"abc"`) `find` dă `-1`: trebuie `text.upper()`. (În plus, la litere de la capătul alfabetului apare `IndexError`: trebuie `% 26`.)
 
 **Exercițiul E:** 1) Dă lista `["E", "2"]`. 2) Ca după `Z` să se întoarcă la `A`. 3) Cu pasul `-5`: `codeaza(mesaj, -5)`.
+
+**Bonus ★★★ — Detectivul de coduri:**
+
+*Schema logicii:*
+1. Placa alege un cuvânt secret și un pas secret, apoi calculează `cod = codeaza(secret, pas)` și îl derulează.  
+2. `incercare` pornește de la `0`. **A** o mărește cu `incercare % 25 + 1` (de la `1` la `25`, apoi iar `1`) și o derulează.  
+3. **B** numără încercarea, decodează `cod` cu `-incercare` și derulează rezultatul.  
+4. Dacă rezultatul e `secret`, arăți `Image.HAPPY` și numărul de încercări, apoi programul se oprește cu `break`. Altfel arăți `Image.SAD` și poți încerca din nou.
+
+```python
+from microbit import *
+import random
+
+ALFABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+CUVINTE = ["SALUT", "PIRAT", "COMOARA", "ROBOT", "PIXEL"]
+
+def muta(litera, pas):
+    i = ALFABET.find(litera)
+    if i == -1:
+        return litera
+    return ALFABET[(i + pas) % 26]
+
+def codeaza(text, pas):
+    rezultat = ""
+    for litera in text.upper():
+        rezultat = rezultat + muta(litera, pas)
+    return rezultat
+
+secret = random.choice(CUVINTE)
+pas = random.randint(1, 25)
+cod = codeaza(secret, pas)
+incercare = 0
+incercari = 0
+
+display.scroll(cod)
+
+while True:
+    if button_a.was_pressed():
+        incercare = incercare % 25 + 1
+        display.scroll(str(incercare))
+    if button_b.was_pressed():
+        incercari += 1
+        decodat = codeaza(cod, -incercare)
+        display.scroll(decodat)
+        if decodat == secret:
+            display.show(Image.HAPPY)
+            sleep(1000)
+            display.scroll(str(incercari))
+            break
+        else:
+            display.show(Image.SAD)
+            sleep(1000)
+    sleep(100)
+```
+- `incercare % 25 + 1` merge de la `1` la `25`, iar după `25` revine la `1`, la fel ca meniul în cerc.  
+- Decodezi cu `-incercare`: dacă pasul tău e egal cu pasul secret, ajungi la cuvântul de la început.  
+- `random.randint(1, 25)` alege pasul secret, iar `random.choice(CUVINTE)` alege cuvântul.

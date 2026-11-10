@@ -26,4 +26,4 @@ Recapitulare. Range cu pas: sfârșitul nu e inclus. O buclă în altă buclă r
 
 Tema. Desenul meu. Acasă, în editor, scrii programul din exemplul opt și adaugi un al patrulea desen, de exemplu plusul. Numele fișierului se termină cu Tema.
 
-Ce urmează. Lecția patru. Placa învață să cânte: faci un metronom care bate ritmul, iar tu alegi viteza cu butoanele.
+Ce urmează. Lecția patru. Placa învață să cânte: faci un pian de buzunar, cu note, melodii și înregistrare.

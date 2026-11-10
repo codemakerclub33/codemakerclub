@@ -12,7 +12,7 @@
 | 1 | Panoul de misiuni | Un program mai mare, cu meniu | constante; funcții pe misiuni; `%`; mod curent |
 | 2 | Cartea de glume | Liste | `append`; `pop`; `[-1]`; `for`; două liste în pereche |
 | 3 | Artistul cu bucle | Bucle | `range(a, b, pas)`; `for` în `for`; `if` în buclă; `while`; `break` |
-| 4 | Pianul de buzunar | Sunet (V2 sau buzzer) | `music.play`; `music.pitch`; liste de note |
+| 4 | Pianul de buzunar | Sunet (V2 sau buzzer) | `music.play`; note; `set_tempo`; `music.pitch`; liste de note |
 | 5 | Busola digitală | Busola | `compass.calibrate`; `heading`; direcții; săgeți |
 | 6 | Labirintul înclinat | Accelerometru + date | șiruri ca hartă; `get_x`; coliziuni |
 | 7 | Mesaje secrete | Text, protocol, cifru | `split`; `int`; `try / except`; `find`; cifrul lui Cezar |

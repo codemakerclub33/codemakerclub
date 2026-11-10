@@ -385,3 +385,60 @@ def misiune_salut():
 **Exercițiul D:** 1) în `porneste` lipsește `global facute`. 2) `if m = 0` trebuie `if m == 0:`. 3) `"Misiunea " + mod` lipește text cu număr: trebuie `"Misiunea " + str(mod + 1)`. 4) în `while True` nu există `sleep`, iar `porneste` nu este apelat (lipsește verificarea lui B). 5) lipsește `from microbit import *` la început.
 
 **Exercițiul E:** 1) Ca să se vadă că nu se schimbă și să fie ușor de găsit. 2) Întoarce `mod` la 0 după ultima misiune. 3) Ca să poată **schimba** variabila `facute` din afara funcției.
+
+**Bonus ★★★ — Panoul meu:**
+
+*Schema logicii:*
+1. Fiecare misiune nouă e o funcție cu un `for` de `100` de ture a câte `100` ms (`10` secunde).  
+2. În fiecare tură verifici condiția (lumina trece de `60`, sau a venit `freefall`). Dacă da, arăți semnalul și ieși din funcție cu `return`.  
+3. Pentru a le adăuga în meniu schimbi **trei lucruri**: funcțiile, `NR_MISIUNI = 6` și două ramuri noi în `porneste`.
+
+```python
+# Alarma sertarului
+def misiune_sertar():
+    display.clear()
+    for i in range(100):
+        if display.read_light_level() > 60:
+            for k in range(3):
+                display.show(Image.SKULL)
+                sleep(300)
+                display.clear()
+                sleep(300)
+            return
+        sleep(100)
+
+# Detectorul de cadere
+def misiune_cadere():
+    display.clear()
+    for i in range(100):
+        if accelerometer.was_gesture("freefall"):
+            display.show(Image.SURPRISED)
+            sleep(500)
+            display.scroll("AAAH!")
+            return
+        sleep(100)
+```
+În Panoul Complet (Exemplul 6) pui funcțiile **înainte** de `porneste`, apoi schimbi:
+```python
+NR_MISIUNI = 6
+```
+```python
+def porneste(m):
+    global facute
+    if m == 0:
+        misiune_lumina()
+    elif m == 1:
+        misiune_temperatura()
+    elif m == 2:
+        misiune_inima()
+    elif m == 3:
+        misiune_nivela()
+    elif m == 4:
+        misiune_sertar()
+    elif m == 5:
+        misiune_cadere()
+    facute += 1
+```
+- `display.clear()` la început stinge numărul din meniu, altfel LED-urile aprinse strică citirea luminii.  
+- `return` iese din funcție imediat, deci misiunea se termină și panoul revine la meniu.  
+- Contorul `facute` crește singur, pentru că `facute += 1` e la finalul lui `porneste`, după orice misiune.

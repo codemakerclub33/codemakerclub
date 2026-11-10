@@ -353,7 +353,7 @@ Ecranul se umple, **un pixel pe secundă**, ca un ceas de nisip. Poți opri ceas
 **Desenul meu.** Scrie acasă, în editor (merge și în simulator, fără placă), programul din Exemplul 8 și adaugă un **al patrulea desen**, de exemplu **plusul** (`x == 2 or y == 2`). Pune `NR_DESENE = 4`. Salvează-l ca `Prenume_Nume_MP2_L03_Tema`.
 
 ## Ce urmează — Lecția 4
-Placa învață să **cânte**: faci un metronom care bate ritmul, iar tu alegi viteza cu butoanele.
+Placa învață să **cânte**: faci un pian de buzunar, cu note, melodii și înregistrare.
 
 ---
 
@@ -375,3 +375,41 @@ for y in range(2, 5):
 **Exercițiul D:** 1) `range(6)` iese din ecran (`y` ajunge la `5`): trebuie `range(5)`. 2) lipsește `:` după `for x in range(5)`. 3) `if x = y` trebuie `if x == y`. 4) `set_pixel(x, y)` are nevoie și de luminozitate: `display.set_pixel(x, y, 9)`. 5) lipsește `from microbit import *` la început.
 
 **Exercițiul E:** 1) `for` repetă de un număr știut de ori sau pentru elementele unei liste; `while` repetă cât timp o condiție e adevărată. 2) Iese imediat din buclă. 3) Desenează un șah: suma `x + y` e pară din doi în doi pixeli, deci pixelii aprinși alternează ca la tabla de șah.
+
+**Bonus ★★★ — Ceasul de nisip:**
+
+*Schema logicii:*
+1. Pornești cu ecranul gol și cu `n = 0` (pixelul numărul `0`).  
+2. Cât timp `n < 25`: dacă a fost apăsat **A**, notezi că ai oprit ceasul (`oprit = True`) și ieși din buclă cu `break`. Altfel aprinzi pixelul `(n % 5, n // 5)`, crești `n` și aștepți o secundă.  
+3. După buclă arăți `Image.NO` dacă ai oprit ceasul, altfel `Image.HAPPY`.  
+4. Aștepți **B**, apoi o iei de la capăt. Bucla de afară e un `while True`.
+
+```python
+from microbit import *
+
+while True:
+    button_a.was_pressed()
+    display.clear()
+    n = 0
+    oprit = False
+
+    while n < 25:
+        if button_a.was_pressed():
+            oprit = True
+            break
+        display.set_pixel(n % 5, n // 5, 9)
+        n += 1
+        sleep(1000)
+
+    if oprit:
+        display.show(Image.NO)
+    else:
+        display.show(Image.HAPPY)
+
+    button_b.was_pressed()
+    while not button_b.was_pressed():
+        sleep(100)
+```
+- `button_a.was_pressed()` scris singur, la început, **golește** memoria butonului: o apăsare veche nu oprește ceasul nou. Același lucru face rândul din fața așteptării lui **B**.  
+- `x = n % 5` dă coloana (`0, 1, 2, 3, 4, 0, 1, …`), iar `y = n // 5` dă rândul (`0` pentru primii `5` pixeli, apoi `1`, …).  
+- `while not button_b.was_pressed():` așteaptă până apeși **B**.

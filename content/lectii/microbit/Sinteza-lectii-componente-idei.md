@@ -27,7 +27,7 @@ Teme (idei): L1 numărătoare inversă (5), L7 Spectacolul de lumini, L8 Contoru
 | 1 | Panoul de misiuni | rescrisă | Panoul meu | 11 + 18 |
 | 2 | Cartea de glume | rescrisă | Cartea de glume cu surprize (3 liste, pagina `2/5`) | — |
 | 3 | Artistul cu bucle | rescrisă | Ceasul de nisip (`while`, `n % 5`, `n // 5`) | — |
-| 4 | Pianul de buzunar (Metronom) | de rescris | Metronom, BPM cu A/B | 24 |
+| 4 | Pianul de buzunar | rescrisă | Metronomul (BPM cu A/B, merge și fără sunet) | 24 |
 | 5 | Busola digitală | de rescris | busola cu 8 direcții | 14 |
 | 6 | Labirintul înclinat (chei, capcane, cronometru) | de rescris și comasat | — | — |
 | 7 | Mesaje secrete | rescrisă | Detectivul de coduri | cifru |
