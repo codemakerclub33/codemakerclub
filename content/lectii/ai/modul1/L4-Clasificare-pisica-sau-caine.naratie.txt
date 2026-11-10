@@ -1,10 +1,14 @@
 Lecția a patra din Modulul unu, AI pentru copii. Clasificare: pisică sau câine.
 
-Azi afli cum alege un model între două sau mai multe categorii. Vezi ce sunt trăsăturile, cum se dă un scor și ce se întâmplă când modelul nu este sigur. Facem un clasificator de hârtie.
+Azi afli cum alege un model între două sau mai multe categorii. Vezi ce sunt trăsăturile, cum se dă un scor și ce se întâmplă când modelul nu este sigur. Facem un clasificator de hârtie. Proiectul se numește Clasificatorul meu de hârtie. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I unu, linie jos, L patru.
 
-Obiectivul. Minim: un clasificator de hârtie cu trei trăsături care alege între două categorii. Complet: în plus un scor pentru fiecare categorie, un caz în care modelul este nesigur și un tabel cu rezultatele testării.
+Ce facem azi. La final știi ce înseamnă clasificare, ce sunt trăsăturile, cum folosește un model scorurile ca să aleagă și cum numeri câte răspunsuri sunt corecte. Multe lucruri pe care le face AI sunt clasificări, de exemplu spam sau mesaj normal.
 
-Ce este clasificarea. Clasificarea înseamnă să pui un lucru într-o categorie: pisică sau câine, spam sau mesaj normal. Modelul se uită la trăsături, adică la lucruri pe care le poate observa, ca mărimea, culoarea sau forma urechilor.
+Planul orei. Începem cu o recapitulare despre date bune și date proaste. Apoi vedem ce este clasificarea, trăsăturile și scorurile, cazurile nesigure, testarea cu numărat și construim clasificatorul nostru. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă.
+
+Cuvinte noi azi. Clasificarea înseamnă să pui un lucru într-o categorie. Trăsătura este un lucru pe care îl poți observa. Scorul arată câte puncte are fiecare categorie. Acuratețea arată câte răspunsuri sunt corecte din total.
+
+Ce este clasificarea. Modelul se uită la trăsături, ca mărimea, culoarea sau forma urechilor.
 
 Exemplele unu și doi. Joci cele douăzeci de întrebări: un coleg se gândește la o pisică sau la un câine, iar tu pui întrebări cu da sau nu. Apoi alegi trăsăturile care ajută mult. Patru picioare au amândouă, deci nu ajută.
 
@@ -18,8 +22,16 @@ Exemplul șase. Îți faci clasificatorul tău: alegi două categorii, trei tră
 
 Greșeli frecvente. Să crezi că o trăsătură ajunge, că modelul este mereu sigur sau că acuratețea sută la sută înseamnă că modelul este perfect.
 
+De făcut azi. Minimul este un clasificator de hârtie cu două categorii, trei trăsături și tabel de scor. Completul înseamnă și șase exemple clasificate, acuratețea calculată, ce face modelul când nu este sigur și exercițiile de la B până la E.
+
+Provocare pentru cine termină mai repede: Clasificatorul cu trei categorii. Alegi trei categorii și cel puțin patru trăsături. Scrii o regulă: dacă primele două scoruri sunt egale, modelul spune nu sunt sigur. Clasifici opt animale și notezi câte sunt corecte, greșite și nesigure. Calculezi acuratețea și găsești un animal pe care îl încurcă. Numele foii se termină cu Trei.
+
+Recapitulare. Clasificarea pune un lucru într-o categorie. Modelul adună scoruri pentru trăsături. Când scorurile sunt apropiate, este nesigur. Acuratețea arată câte răspunsuri sunt corecte.
+
+Schema pe scurt, pe foaie: trăsături, scoruri pe categorii, alegem cel mai mare scor. Scoruri egale, nu sunt sigur, verifică un om.
+
 Întrebări de verificare. Ce este clasificarea? Ce este o trăsătură? De ce folosim mai multe trăsături? Cum calculezi acuratețea? Ce poate face un model când nu este sigur?
 
-Temă. Termină clasificatorul, testează clasificatorul pe cinci desene noi și scrie două lucruri pe care le încurcă.
+Temă. Termină clasificatorul, testează-l pe cinci desene noi, scrie două lucruri pe care le încurcă și adaugă o a treia categorie. Numele foii se termină cu Tema.
 
 Urmează Lecția a cincea: predicții și probabilități.
