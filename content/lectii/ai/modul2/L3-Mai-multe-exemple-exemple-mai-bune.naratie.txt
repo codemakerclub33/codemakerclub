@@ -1,0 +1,37 @@
+Lecția a treia din Modulul doi, Antrenăm modele A I. Mai multe exemple, exemple mai bune.
+
+Azi faci un experiment. Folosești un model, trei runde de antrenare și același test de fiecare dată. Afli dacă un model devine mai bun cu mai multe exemple sau cu exemple mai bune și înveți să compari cinstit. Lucrăm la calculator, cu un adult prezent dacă se poate. Proiectul se numește Experimentul meu: cantitate sau calitate. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I doi, linie jos, L trei.
+
+Ce facem azi. La final știi să faci un experiment cu un singur lucru schimbat, să folosești același test de fiecare dată, să compari rezultatele într-o diagramă și să spui ce ajută mai mult un model. În Modulul unu ai aflat că un set bun este mare și variat. Acum măsori asta, cu cifre.
+
+Planul orei. Începem cu o recapitulare. Apoi scriem ipoteza și testul fix, facem runda unu cu exemple la fel, runda doi cu mai multe exemple la fel, runda trei cu exemple variate, apoi desenăm diagrama și scriem concluzia. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă. Ai nevoie de un calculator cu cameră, două perechi de obiecte mici, foi cu pătrățele și riglă. Dacă nu ai cameră, adultul poate încărca poze făcute în prealabil.
+
+Cuvinte noi azi. Ipoteza este ce crezi că se va întâmpla, scris înainte de experiment. Testul fix este același test, folosit la fiecare rundă. Un singur lucru schimbat înseamnă că la fiecare rundă modifici doar un lucru, ca să știi ce a făcut diferența. Diagrama cu bare arată rezultatul prin înălțimea barei.
+
+Exemplul unu. Ne amintim. Spui în perechi ce este setul de antrenare, ce este setul de test, de ce testăm cu obiecte noi și cum se calculează acuratețea.
+
+Exemplul doi. Ipoteza și testul fix. Experimentul are trei runde, cu aceleași două clase. În runda unu ai cinci exemple pe clasă, toate din aceeași poziție. În runda doi ai cincisprezece exemple pe clasă, tot din aceeași poziție. În runda trei ai cincisprezece exemple pe clasă, din poziții diferite. Scrii pe foaie zece situații pentru test, cinci pentru fiecare clasă, cu obiectele puse deoparte și poziții variate. Aceleași zece situații se repetă la fiecare rundă. Dacă schimbi testul, nu mai poți compara. Înainte de experiment scrii ipoteza: care rundă crezi că va avea cea mai mare acuratețe și de ce.
+
+Exemplul trei. Runda unu. Dai nume claselor și adaugi cinci exemple pe clasă, toate din aceeași poziție, prin apăsări scurte, fără să miști obiectul. Antrenezi, nu închizi fila, rulezi testul fix și notezi ce a spus modelul. Calculezi acuratețea și completezi tabelul.
+
+Exemplul patru. Runda doi. Adaugi la fiecare clasă încă zece exemple, tot din aceeași poziție, ca să ajungi la cincisprezece. Antrenezi din nou și rulezi exact același test. A crescut acuratețea? Sunt de ajuns mai multe poze, dacă toate sunt la fel?
+
+Exemplul cinci. Runda trei. Ștergi exemplele fiecărei clase din meniul clasei și aduni cincisprezece exemple noi, din poziții diferite: din față, din lateral, mai departe, în altă lumină. Antrenezi și rulezi același test fix. Nu schimbi nimic altceva. Singurul lucru schimbat este varietatea.
+
+Exemplul șase. Diagrama și concluzia. Desenezi o diagramă cu trei bare, cu titlu și axe. Compari cu ipoteza ta și scrii trei propoziții: ce a ajutat cel mai mult modelul, ce nu s-a schimbat mult și de ce crezi asta. Mai multe poze nu înseamnă automat mai bine. Dacă toate sunt la fel, modelul nu învață nimic nou. Variația ajută, pentru că modelul vede obiectul în situații ca la test.
+
+Greșeli frecvente. Să crezi că mai multe poze la fel sunt mai bune, să schimbi mai multe lucruri deodată, să schimbi testul la fiecare rundă, să crezi că experimentul a eșuat dacă ipoteza a fost greșită sau să tragi concluzii dintr-o diferență de o singură situație.
+
+De făcut azi. Minimul este testul fix scris, runda unu și runda trei făcute și tabelul completat pentru ele. Completul înseamnă și runda doi, diagrama cu bare, ipoteza, cele trei propoziții și exercițiile de la B până la E.
+
+Provocare pentru cine termină mai repede: Curba exemplelor. Păstrezi aceleași clase și același test fix. Faci patru runde cu exemple variate, cu cinci, zece, douăzeci și patruzeci de exemple pe clasă. Notezi acuratețea la fiecare rundă și desenezi un grafic cu linie. Spui în ce punct acuratețea nu mai crește mult și scrii două propoziții despre ce ți-a arătat curba. Numele foii se termină cu Curba.
+
+Recapitulare. Un experiment cinstit schimbă un singur lucru odată. Folosim același test fix la fiecare rundă. Scriem ipoteza înainte și o comparăm cu rezultatul. Mai multe poze la fel ajută puțin, iar exemplele variate ajută mai mult. Desenăm rezultatele într-o diagramă.
+
+Schema pe scurt, pe foaie: ipoteză, test fix, runda unu, runda doi, runda trei, diagramă, concluzie.
+
+Întrebări de verificare. Ce este o ipoteză? Ce este un test fix și de ce îl folosim? Ce înseamnă un singur lucru schimbat? Ce ajută mai mult un model, cincisprezece poze la fel sau cincisprezece poze variate? De ce desenăm rezultatele într-o diagramă?
+
+Temă. Termină diagrama și concluzia, explică experimentul unui adult, alege o pereche nouă de obiecte și scrie ipoteza pentru un experiment nou, apoi gândește-te la un alt lucru pe care l-ai putea schimba, de exemplu lumina, și cum ai păstra testul fix. Numele foii se termină cu Tema.
+
+Urmează Lecția a patra: cum arătăm greșelile unui model într-un tabel simplu și cum citim ce confundă modelul.

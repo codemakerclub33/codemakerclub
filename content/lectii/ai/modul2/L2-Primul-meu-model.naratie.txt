@@ -1,0 +1,37 @@
+Lecția a doua din Modulul doi, Antrenăm modele A I. Primul meu model.
+
+Azi faci un model mai atent decât cel de data trecută. Îl plănuiești pe hârtie, aduni exemple variate, îl antrenezi, îl testezi cu obiecte noi și scrii un raport cu rezultatele. Lucrăm la calculator, cu un adult prezent dacă se poate. Proiectul se numește Raportul modelului meu. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I doi, linie jos, L doi.
+
+Ce facem azi. La final știi să plănuiești un model înainte să-l construiești, cunoști diferența dintre setul de antrenare și setul de test, calculezi acuratețea modelului tău și scrii un raport. Lucrăm ca niște cercetători: gândim înainte, măsurăm după și notăm tot pe foaie.
+
+Planul orei. Începem cu o recapitulare a regulilor și a celor trei pași. Apoi facem planul modelului pe hârtie, adunăm exemplele, antrenăm, testăm cu zece situații noi și scriem raportul. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă. Ai nevoie de un calculator cu cameră, un browser actual și patru până la șase obiecte mici, în două perechi diferite. Dacă nu ai cameră, adultul poate încărca poze făcute în prealabil.
+
+Cuvinte noi azi. Setul de antrenare este format din exemplele din care învață modelul. Setul de test este format din exemple noi, pe care modelul nu le-a văzut la antrenare. Variația înseamnă același obiect arătat în moduri diferite. Acuratețea arată câte răspunsuri sunt corecte din total.
+
+Exemplul unu. Ne amintim regulile. Spui din memorie cei trei pași ai unui model, cele trei culori ale semaforului cu câte un exemplu și de ce nu închidem fila în timpul antrenării.
+
+Exemplul doi. Planul modelului. Scrii pe foaie cele două clase, cel puțin trei variații, câte exemple vei aduna și obiectele pentru test. Ținta este cincisprezece exemple pentru fiecare clasă. Obiectele pentru test le pui deoparte și nu le folosești la antrenare. Un model nu poate fi testat cinstit cu aceleași obiecte din care a învățat. Ar fi ca la școală, când vezi întrebările de la test înainte de test.
+
+Exemplul trei. Adunăm exemplele. Deschizi unealta, alegi proiectul cu imagini și dai nume claselor. Pornești camera și ții apăsat butonul de înregistrare o secundă sau două, cu obiectul într-o poziție. O apăsare lungă face multe poze aproape la fel. Schimbi poziția, din față, din lateral, mai departe sau în altă lumină, și apeși din nou. Ajungi la cincisprezece exemple pentru fiecare clasă, cu același număr în ambele. Regula de aur este: mai multe poziții, nu mai multe poze la fel.
+
+Exemplul patru. Antrenăm. Verifici că ambele clase au același număr de exemple, apeși butonul de antrenare și nu închizi și nu schimbi fila cât timp antrenează. Apoi ții fiecare obiect în fața camerei și vezi dacă modelul îl recunoaște. Aceasta este doar o verificare rapidă, nu testul cinstit.
+
+Exemplul cinci. Zece situații noi. Folosești obiectele puse deoparte și poziții noi. Completezi tabelul cu ce arăți modelului, ce a spus, încrederea și dacă răspunsul este corect. Faci zece situații, cinci pentru fiecare clasă. Acuratețea este numărul de răspunsuri corecte împărțit la zece și înmulțit cu o sută. Dacă ai opt corecte din zece, acuratețea este optzeci la sută. Te uiți și la greșeli: ce obiect confundă modelul și în ce poziție.
+
+Exemplul șase. Raportul modelului meu. Pe o foaie scrii titlul și numele, planul, tabelul de test cu acuratețea și trei propoziții: ce a mers bine, ce a greșit modelul și o schimbare pe care ai face-o la date.
+
+Greșeli frecvente. Să testezi cu aceleași obiecte, să crezi că mai multe poze la fel sunt mai bune, să ai o clasă mult mai mare decât alta, să crezi că ești gata dacă modelul recunoaște obiectele de la antrenare sau să crezi că o acuratețe mare pe un test mic înseamnă un model perfect.
+
+De făcut azi. Minimul este planul pe hârtie, modelul antrenat cu două clase de câte cincisprezece exemple și tabelul de test cu cel puțin șase situații. Completul înseamnă și zece situații de test, acuratețea calculată, cele trei propoziții și exercițiile de la B până la E.
+
+Provocare pentru cine termină mai repede: Pariul familiei. Explici familiei ce clase are modelul. Fiecare spune, înainte de test, câte din zece situații crede că va ghici modelul. Faci testul, notezi rezultatul real și calculezi cine a fost cel mai aproape. Scrii două propoziții despre cine a câștigat și unde a greșit modelul. Numele foii se termină cu Pariu.
+
+Recapitulare. Un model bun începe cu un plan. Setul de antrenare învață modelul, iar setul de test îl verifică. Mai multe poziții sunt mai bune decât mai multe poze la fel. Acuratețea arată câte răspunsuri sunt corecte din total. Notăm tot într-un raport.
+
+Schema pe scurt, pe foaie: plan, exemple variate, antrenare, test cu obiecte noi, acuratețe, raport.
+
+Întrebări de verificare. Ce este setul de antrenare? Ce este setul de test? De ce nu testăm cu aceleași obiecte de la antrenare? Cum calculezi acuratețea? De ce schimbăm poziția între apăsări?
+
+Temă. Termină raportul, scrie planul unui model nou cu două obiecte din casă, explică unui adult de ce testul trebuie făcut cu obiecte noi și gândește-te la o situație în care modelul tău ar greși. Numele foii se termină cu Tema.
+
+Urmează Lecția a treia: mai multe exemple și exemple mai bune, cu o comparație pe care o măsurăm.
