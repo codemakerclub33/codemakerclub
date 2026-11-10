@@ -14,7 +14,7 @@ Exemplul trei. Parcurgem lista cu for: la fiecare tură variabila ia pe rând c�
 
 Exemplul șapte. Meniul în cerc, cu len. Dacă adaugi un mesaj, nu mai schimbi nimic. Exemplul opt. Înapoi: în Python, minus unu procent cinci este patru, deci poți merge înapoi în cerc. Exemplul nouă. Cartea Minim. Mesajele fără diacritice. Exemplul zece. Cartea Complet: A și B adaugă temperatura la sfârșit, iar dacă lista are mai mult de zece elemente scoate cel mai vechi. Scuturarea alege un index la întâmplare. Placa are memorie mică, de aceea limităm lista.
 
-Greșeli frecvente. IndexError: ai cerut un loc care nu există. Prima poziție este zero, nu unu. Cartea sare la întâmplare: ai citit butoanele de două ori. Nu poți afișa o listă întreagă: afișezi un element sau folosești for. Temperatura nu apare: lipsește str. Eroare de memorie: lista a crescut prea mult.
+Greșeli frecvente. IndexError: ai cerut un loc care nu există. Prima poziție este zero, nu unu. Cartea sare la întâmplare: ai citit butoanele de două ori. Nu poți afișa o listă întreagă: afișezi un element sau folosești for. Eroare la temperatură: nu poți lipi un text de un număr, folosește str. Eroare de memorie: lista a crescut prea mult.
 
 Proiectul de azi. Cartea de mesaje.
 

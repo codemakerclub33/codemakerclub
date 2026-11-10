@@ -1,28 +1,24 @@
 Lecția unu. Panoul de misiuni.
 
-Începem Modulul doi cu o provocare: un program mai mare, cu un meniu și mai multe misiuni. Alegi cu A misiunea, o pornești cu B. Proiectul se numește Panoul de misiuni. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P doi, linie jos, L zero unu.
+Începem Modulul doi cu un program mai mare: un panou cu meniu și mai multe misiuni. Alegi cu A misiunea, o pornești cu B. Proiectul se numește Panoul de misiuni. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P doi, linie jos, L zero unu.
 
-Obiectivul. La final știi să organizezi un program în părți, constante, funcții și buclă principală, și să faci un meniu. Minim: panou cu trei misiuni, lumină, temperatură și inimă, A alege, B pornește. Complet: minim, plus a patra misiune, nivela, și un contor de misiuni făcute, afișat la A și B.
+Ce facem azi. La final organizezi un program în părți, constante, funcții și buclă principală, și faci un meniu. Programele mici încap pe un ecran, dar cele mari au nevoie de ordine. Dacă fiecare misiune este o funcție, poți adăuga una nouă fără să strici restul. Așa lucrează programatorii adevărați. Azi refolosești lucruri din Modulul unu: lumină, temperatură, inimă și nivela.
 
-De ce contează. Programele mici încap pe un ecran. Cele mari au nevoie de ordine. Dacă fiecare misiune este o funcție, poți adăuga una nouă fără să strici restul. Așa lucrează programatorii adevărați.
+Instrucțiuni noi azi. Azi organizăm ce știi deja. Meniul trece la următoarea misiune cu mod egal mod plus unu, procent numărul de misiuni, și revine la prima după ultima. O funcție, porneste, alege misiunea după număr. Abs scoate semnul minus. Două bare oblice dau o împărțire fără zecimale. Dacă uiți ceva, caută în panoul Reference din editor: Functions, Accelerometer și Light level.
 
-Primul pas. Un program cu ordine, de sus în jos: importurile, constantele, variabilele, funcțiile, pornirea și bucla principală. Cine citește programul știe unde să caute fiecare lucru.
+Primul pas. Un program cu ordine, de sus în jos: importurile, constantele, variabilele, funcțiile, pornirea și bucla principală. Cine citește programul știe unde să caute fiecare lucru. Constantele le știi din Modulul unu: se scriu cu litere mari și se schimbă într-un singur loc.
 
-Exemplul unu. Constantele. O constantă este o valoare care nu se schimbă și se scrie cu litere mari, de exemplu NR MISIUNI. Dacă vrei patru misiuni, schimbi un singur loc.
+Exemplul unu. Meniul care se învârte. Cu procentul, după ultima misiune revii la prima. Pe ecran afișezi mod plus unu. Exemplul doi. Misiunea Lumină: un grafic cu LED-uri aprinse pe coloana din mijloc, cu atât mai multe cu cât e mai multă lumină. Durează trei secunde. Exemplul trei. Misiunile Temperatură și Inimă, scrise separat, ca să le poți testa pe rând.
 
-Exemplul doi. Operatorul procent. A procent b dă restul împărțirii. Șapte procent trei dă unu, iar șase procent trei dă zero.
+Exemplul patru. Panoul Minim: funcția porneste alege misiunea după număr. A schimbă misiunea, B o pornește. Exemplul cinci. Misiunea Nivela, din lecția cinci din Modulul unu: placa este dreaptă dacă nu este înclinată nici pe x, nici pe y. Exemplul șase. Panoul Complet, cu nivela și un contor de misiuni făcute. Funcția porneste schimbă o variabilă de afară, deci are global. A și B arată câte misiuni ai făcut. Cazul cu A și B se verifică primul. Ca să adaugi o misiune nouă, schimbi trei lucruri: funcția ei, numărul de misiuni și un elif în porneste.
 
-Exemplul trei. Meniul care se învârte. Mod egal, mod plus unu, procent NR MISIUNI. După ultima misiune revii la prima. Pe ecran afișezi mod plus unu.
-
-Exemplul patru. Misiunea Lumină: un grafic cu rânduri aprinse, după lumină împărțită la cincizeci și unu. Durează trei secunde. Exemplul cinci. Misiunea Temperatură. Exemplul șase. Misiunea Inimă, de trei ori. Exemplul șapte. Panoul Minim: o funcție, porneste, alege misiunea după număr.
-
-Exemplul opt. Misiunea Nivela: placa este dreaptă dacă nu este înclinată nici pe x, nici pe y. Abs scoate semnul minus. Exemplul nouă. Contorul de misiuni: funcția schimbă o variabilă de afară, deci are global. Dăm funcția ca unealtă, fără paranteze, iar ruleaza o apelează. Exemplul zece. Panoul Complet: A urmează, B pornește, A și B arată câte misiuni ai făcut. Cazul cu A și B se verifică primul.
-
-Greșeli frecvente. Meniul trece de trei: ai uitat procent NR MISIUNI. Misiunea pornește de două ori: citești B de mai multe ori. Contorul rămâne zero: lipsește global. Nu afișează numărul: folosește str. Misiunea nu pornește: numerele din porneste încep de la zero. Lumina nu arată nimic: pune placa lângă o lampă.
+Greșeli frecvente. Meniul trece de trei: ai uitat procent numărul de misiuni. Misiunea pornește de două ori: citești B de mai multe ori. Contorul rămâne zero: lipsește global. Meniul arată zero, unu, doi: afișează mod plus unu. Misiunea nu pornește: numerele din porneste încep de la zero. Lumina nu arată nimic: pune placa lângă o lampă.
 
 Proiectul de azi. Panoul de misiuni.
 
-Minim înseamnă: trei misiuni, A alege, B pornește. Complet înseamnă: minim, plus nivela și contorul. Dacă rămâi în urmă, salvează la Minim.
+Minim înseamnă: trei misiuni, A alege, B pornește. Complet înseamnă: minim, plus nivela și contorul. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg alege și pornește o misiune fără ajutor.
+
+Provocare, trei stele. Panoul meu. Adaugi la panou două misiuni noi, făcute de tine. Alarma sertarului: timp de zece secunde placa urmărește lumina. Dacă lumina trece de șaizeci, adică sertarul s-a deschis, ecranul arată un craniu care clipește de trei ori, apoi misiunea se termină. Detectorul de cădere: timp de zece secunde placa așteaptă căderea liberă. Dacă o detectează, arată o față mirată și derulează un strigăt de spaimă, apoi misiunea se termină. În simulator poți schimba lumina cu cursorul și poți simula căderea liberă din lista de gesturi. Cele două misiuni apar în meniu, deci panoul are șase misiuni, iar contorul funcționează și pentru ele. Fiecare misiune are un nume scurt într-un comentariu. La final salvezi proiectul cu sufixul Panou.
 
 Recapitulare. Un program mare are ordine. Constantele se scriu cu litere mari. Procentul ține meniul în cerc. Fiecare misiune este o funcție. O funcție care schimbă o variabilă de afară are global.
 

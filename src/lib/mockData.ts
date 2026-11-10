@@ -673,7 +673,7 @@ export const lectii = [
     'Pianul de buzunar',
     'Busola digitală',
     'Labirintul înclinat',
-    'Mesaje cu cod',
+    'Mesaje secrete',
     'Recordul păstrat',
     'Cutia Exploratorului',
     'Expoziția Python Pro + badge',

@@ -256,7 +256,7 @@ while True:
 2. **„Prima poziție e 1”** — în Python prima poziție e `0`.  
 3. **„Cartea sare la întâmplare”** — ai citit butoanele de două ori. Citește-le o dată pe tură.  
 4. **„Nu pot afișa lista”** — `display.scroll(lista)` nu merge; afișează **un element** sau folosește `for`.  
-5. **„Temperatura nu apare”** — `display.scroll` vrea text: `"T=" + str(temperature())`.  
+5. **„TypeError la temperatură”** — nu poți lipi un text de un număr: `"T=" + str(temperature())`.  
 6. **„Programul se oprește cu MemoryError”** — lista a crescut prea mult; limitează cu `pop(0)`.
 
 ---

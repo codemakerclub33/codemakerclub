@@ -113,7 +113,7 @@ Răspunde pe foaie, fără să te uiți în lecții. Răspunsurile sunt la final
 1. Ce face linia `from microbit import *`?  
 2. Care e diferența între `button_a.is_pressed()` și `button_a.was_pressed()`?  
 3. Ce valoare are `score` după `score = 5` și `score += 2`?  
-4. De ce scriem `display.scroll(str(score))`?  
+4. De ce scriem `"Scor: " + str(score)` și nu `"Scor: " + score`?  
 5. Ce diferență e între `=` și `==`?  
 6. Ce face `random.randint(1, 6)` și pe ce poziție e primul element dintr-o listă?  
 7. Ce face `return` într-o funcție?  
@@ -136,7 +136,7 @@ Bifează ce poți face **singur**:
 - [ ] îmi prezint proiectul
 
 **Răspunsuri:**
-1. Aduce în program toate funcțiile plăcii (`display`, `button_a`, `sleep` …). 2. `is_pressed()` e adevărat **cât timp** ții apăsat; `was_pressed()` e adevărat dacă butonul **a fost apăsat** de la ultima verificare. 3. `7`. 4. `scroll` vrea **text**, iar `str()` transformă numărul în text. 5. `=` pune o valoare într-o variabilă; `==` **compară** două valori. 6. `random.randint(1, 6)` dă un număr întreg de la `1` la `6`, inclusiv; primul element dintr-o listă e pe poziția `0`. 7. Trimite o valoare înapoi celui care a apelat funcția. 8. Când o funcție **schimbă** o variabilă creată în afara ei. 9. Repetă de 3 ori, cu `i` luând valorile `0, 1, 2`. 10. Pentru că `was_pressed()` „uită” apăsarea după ce e citită; dacă o citim de două ori, a doua oară răspunsul poate fi greșit.
+1. Aduce în program toate funcțiile plăcii (`display`, `button_a`, `sleep` …). 2. `is_pressed()` e adevărat **cât timp** ții apăsat; `was_pressed()` e adevărat dacă butonul **a fost apăsat** de la ultima verificare. 3. `7`. 4. Un text și un număr nu se pot lipi; `str()` transformă numărul în text. 5. `=` pune o valoare într-o variabilă; `==` **compară** două valori. 6. `random.randint(1, 6)` dă un număr întreg de la `1` la `6`, inclusiv; primul element dintr-o listă e pe poziția `0`. 7. Trimite o valoare înapoi celui care a apelat funcția. 8. Când o funcție **schimbă** o variabilă creată în afara ei. 9. Repetă de 3 ori, cu `i` luând valorile `0, 1, 2`. 10. Pentru că `was_pressed()` „uită” apăsarea după ce e citită; dacă o citim de două ori, a doua oară răspunsul poate fi greșit.
 
 ---
 

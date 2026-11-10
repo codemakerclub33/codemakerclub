@@ -159,6 +159,8 @@ while True:
 ### 7) Exemplul 5 — Comentarii
 Un comentariu începe cu `#`. Python **îl ignoră**: e doar o notiță pentru oameni.
 
+**Cum scrii `#`:** pe Mac apeși **Option + 3**. Poți și să selectezi unul sau mai multe rânduri și să apeși **Ctrl + /** (pe Mac **Cmd + /**): rândurile devin comentarii. Aceeași combinație le scoate din nou. E util ca să **oprești temporar** un rând, ca să vezi ce face programul fără el.
+
 ```python
 # Programul meu: inima care bate
 from microbit import *
@@ -178,9 +180,9 @@ while True:
 ```python
 from microbit import *
 
-display.scroll(str(2 + 3))
+display.scroll(2 + 3)
 ```
-Placa știe să calculeze. `2 + 3` face `5`. Pentru a-l arăta pe LED-uri, îl transformăm în text cu `str()`.
+Placa știe să calculeze. `2 + 3` face `5`, iar `display.scroll` arată numerele direct. Mai târziu, când vei lipi un număr de un text, vei folosi `str()`.
 
 **Ce vezi pe placă:** cifra `5`.
 

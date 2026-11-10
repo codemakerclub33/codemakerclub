@@ -16,7 +16,7 @@ Exemplul trei. Împărțim cercul în patru: adunăm patruzeci și cinci, împă
 
 Exemplul șapte. Acul care arată spre nord: dacă ești întors spre est, nordul este la stânga ta, deci acul arată spre vest. Formula este opt minus sectorul, procent opt. Exemplul opt. Busola cu ac. Exemplul nouă. B arată gradele. Exemplul zece. Busola Complet: A recalibrează, B arată gradele, altfel acul arată nordul.
 
-Greșeli frecvente. Busola arată prostii: nu ai calibrat sau ești lângă un magnet. Săgeata arată invers: ai folosit direct sectorul. IndexError: indexul nu este între zero și șapte, folosește procent opt. Eroare la scroll: lipsește str. Nordul nu este spre fereastră: este nord magnetic, verifică cu o busolă de turist.
+Greșeli frecvente. Busola arată prostii: nu ai calibrat sau ești lângă un magnet. Săgeata arată invers: ai folosit direct sectorul. IndexError: indexul nu este între zero și șapte, folosește procent opt. Eroare la lipire: nu poți lipi un text de un număr, folosește str. Nordul nu este spre fereastră: este nord magnetic, verifică cu o busolă de turist.
 
 Proiectul de azi. Busola digitală.
 

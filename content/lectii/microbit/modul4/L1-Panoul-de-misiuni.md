@@ -1,19 +1,15 @@
-# Lecția 1 — Panoul de misiuni
-**Modulul 2 · Proiecte Python**  
+# LECȚIA 1 — Panoul de misiuni
+### Un program mare, cu meniu
+**Modulul 2 · Python pe micro:bit · 2 ore**  
 **Code Maker Club · micro:bit Python Pro**
 
-> Începem Modulul 2 cu o provocare: **un program mai mare**, care are un **meniu** și mai multe **misiuni**. Alegi cu **A** misiunea, o pornești cu **B**.  
+> Începem Modulul 2 cu un program mai mare: un **panou cu meniu** și mai multe **misiuni**. Alegi cu **A** misiunea, o pornești cu **B**.  
 > Proiect: **„Panoul de misiuni”** · `Prenume_Nume_MP2_L01`
 
 ---
 
-## Obiectiv
-La finalul orei știi să **organizezi** un program în părți (constante, funcții, buclă principală) și să faci un **meniu**.  
-**Minim:** panou cu **3 misiuni** (lumină, temperatură, inimă); **A** alege, **B** pornește.  
-**Complet:** Minim + o **a 4-a misiune** (nivela) + **contor** de misiuni făcute, afișat la **A+B**.
-
-## De ce contează
-Programele mici încap pe un ecran. Cele mari au nevoie de **ordine**. Dacă fiecare misiune e o funcție, poți adăuga una nouă fără să strici restul. Așa lucrează programatorii adevărați.
+## Ce facem azi
+La finalul orei organizezi un program în părți (constante, funcții, buclă principală) și faci un **meniu**. Programele mici încap pe un ecran, dar cele mari au nevoie de **ordine**. Dacă fiecare misiune e o funcție, poți adăuga una nouă fără să strici restul. Așa lucrează programatorii adevărați. Azi refolosești lucruri din Modulul 1: lumină, temperatură, inimă și nivela.
 
 ---
 
@@ -22,12 +18,28 @@ Programele mici încap pe un ecran. Cele mari au nevoie de **ordine**. Dacă fie
 | Minute | Ce facem |
 |--------|----------|
 | 0–15 | Ce am învățat în Modulul 1? Misiunea Modulului 2 |
-| 15–30 | Cum organizăm un program mare; operatorul `%` |
-| 30–65 | Misiunile ca funcții; meniul — **Minim** |
-| 65–100 | Misiunea 4 și contorul — **Complet** |
-| 100–120 | Recapitulare, quiz, temă |
+| 15–35 | Ordinea unui program mare; meniul care se învârte |
+| 35–70 | Misiunile ca funcții; panoul (**Minim**) |
+| 70–105 | Nivela și contorul (**Complet**) |
+| 105–120 | Recapitulare, quiz, temă |
 
-**Unelte azi:** constante · funcții · `global` · `%` (restul împărțirii) · `for` · `display.show(str(n))`
+Exercițiile B–E și Provocarea sunt pentru cine termină mai repede, sau pentru acasă.
+
+**Ce ai nevoie:** [python.microbit.org](https://python.microbit.org) · placa micro:bit · cablu USB de date
+
+---
+
+## Instrucțiuni noi azi
+Azi **organizăm** ce știi deja. Singurele lucruri noi:
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `mod = (mod + 1) % NR_MISIUNI` | Meniul trece la următoarea misiune și revine la prima după ultima | `% 3` dă `0, 1, 2, 0, 1 …` |
+| `porneste(m)` | O funcție care alege misiunea după număr | `elif m == 1: misiune_temperatura()` |
+| `abs(x)` | Scoate semnul minus | `abs(-100)` dă `100` |
+| `a // b` | Împărțire fără zecimale | `17 // 5` dă `3` |
+
+**Ajutor în editor:** în panoul **Reference** caută `Functions`, `Accelerometer` și `Light level`.
 
 ---
 
@@ -43,40 +55,10 @@ Folosim mereu aceeași ordine, de sus în jos:
 5. pornire (afisari de inceput)
 6. while True:                (bucla principala)
 ```
-Cine citește programul știe unde să caute fiecare lucru.
+Cine citește programul știe unde să caute fiecare lucru. **Constantele** (`NR_MISIUNI`) le știi din Modulul 1: se scriu cu litere mari și se schimbă într-un singur loc.
 
-### Exemplul 1 — Constante
-O **constantă** e o valoare care nu se schimbă. O scriem cu **litere mari**:
-```python
-from microbit import *
-
-NR_MISIUNI = 3
-PRAG_INTUNERIC = 20
-
-display.scroll(str(NR_MISIUNI))
-```
-Dacă mai târziu vrei 4 misiuni, schimbi **un singur loc**.
-
-**Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
-### Exemplul 2 — Operatorul `%`
-`a % b` dă **restul** împărțirii lui `a` la `b`.
-```python
-from microbit import *
-
-display.scroll(str(7 % 3))    # 7 = 2*3 + 1  ->  1
-display.scroll(str(6 % 3))    # 6 = 2*3 + 0  ->  0
-```
-**Ce vezi pe placă:** `1`, apoi `0`.
-
-**Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
-### Exemplul 3 — Meniul care se învârte
-Dacă ai **3** misiuni numerotate `0, 1, 2`, după `2` vrei să revii la `0`. Cu `%` merge ușor:
+### Exemplul 1 — Meniul care se învârte
+Dacă ai **3** misiuni numerotate `0, 1, 2`, după `2` vrei să revii la `0`. Cu `%` (restul împărțirii, din lecția 6 din Modulul 1) merge ușor:
 ```python
 from microbit import *
 
@@ -92,50 +74,37 @@ while True:
 Apeși **A**: `1 → 2 → 3 → 1 → 2 …`. Pe ecran numerele sunt `1, 2, 3` (am adăugat `+ 1` doar la afișare).
 
 **Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
+- [ ] Am scris și am rulat **Exemplul 1** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
-### Exemplul 4 — Misiunea „Lumină”
-O funcție care arată un **grafic de lumină**: cu cât e mai multă lumină, cu atât mai multe rânduri aprinse.
+### Exemplul 2 — Misiunea „Lumină”
+O funcție care arată un **grafic de lumină**: cu cât e mai multă lumină, cu atât mai multe LED-uri aprinse pe coloana din mijloc.
 ```python
 from microbit import *
 
 def misiune_lumina():
     for i in range(30):
         nivel = display.read_light_level() // 51     # 0 ... 5
-        img = Image(5, 5)
+        display.clear()
         for y in range(nivel):
-            for x in range(5):
-                img.set_pixel(x, 4 - y, 9)
-        display.show(img)
+            display.set_pixel(2, 4 - y, 9)
         sleep(100)
 
 misiune_lumina()
 display.clear()
 ```
-Durează 3 secunde (30 × 100 ms). `//` e împărțirea fără zecimale.
+Durează 3 secunde (30 × 100 ms). `//` e împărțirea fără zecimale: `display.read_light_level() // 51` dă un număr de la `0` la `5`.
 
 **Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
+- [ ] Am scris și am rulat **Exemplul 2** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
-### Exemplul 5 — Misiunea „Temperatură”
+### Exemplul 3 — Misiunile „Temperatură” și „Inimă”
 ```python
 from microbit import *
 
 def misiune_temperatura():
     display.scroll(str(temperature()) + "C")
-
-misiune_temperatura()
-```
-
-**Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
-### Exemplul 6 — Misiunea „Inimă”
-```python
-from microbit import *
 
 def misiune_inima():
     for i in range(3):
@@ -144,15 +113,17 @@ def misiune_inima():
         display.show(Image.HEART_SMALL)
         sleep(400)
 
+misiune_temperatura()
 misiune_inima()
 display.clear()
 ```
+Fiecare misiune e o funcție cu **un nume clar**. Le-am scris separat ca să le poți testa pe rând.
 
 **Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
+- [ ] Am scris și am rulat **Exemplul 3** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
-### Exemplul 7 — Panoul Minim
+### Exemplul 4 — Panoul Minim
 Punem totul împreună. Funcția `porneste(m)` alege misiunea după număr:
 ```python
 from microbit import *
@@ -162,12 +133,10 @@ mod = 0
 
 def misiune_lumina():
     for i in range(30):
-        nivel = display.read_light_level() // 51
-        img = Image(5, 5)
+        nivel = display.read_light_level() // 51     # 0 ... 5
+        display.clear()
         for y in range(nivel):
-            for x in range(5):
-                img.set_pixel(x, 4 - y, 9)
-        display.show(img)
+            display.set_pixel(2, 4 - y, 9)
         sleep(100)
 
 def misiune_temperatura():
@@ -203,10 +172,10 @@ while True:
 **A** schimbă misiunea (1, 2, 3), **B** o pornește, iar după ea panoul arată din nou numărul.
 
 **Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 7** în simulator sau pe placă  
+- [ ] Am scris și am rulat **Exemplul 4** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
-### Exemplul 8 — Misiunea „Nivela”
+### Exemplul 5 — Misiunea „Nivela” (din L5 din Modulul 1)
 A 4-a misiune: placa e **dreaptă** dacă nu e înclinată nici pe x, nici pe y.
 ```python
 from microbit import *
@@ -227,41 +196,11 @@ display.clear()
 `abs()` scoate semnul minus: `abs(-100)` este `100`.
 
 **Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 8** în simulator sau pe placă  
+- [ ] Am scris și am rulat **Exemplul 5** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
-### Exemplul 9 — Contorul de misiuni
-Vrem să numărăm câte misiuni ai făcut. Funcția schimbă o variabilă de afară, deci are nevoie de `global`:
-```python
-from microbit import *
-
-facute = 0
-
-def misiune_inima():
-    for i in range(3):
-        display.show(Image.HEART)
-        sleep(300)
-        display.show(Image.HEART_SMALL)
-        sleep(300)
-
-def ruleaza(f):
-    global facute
-    f()
-    facute += 1
-
-ruleaza(misiune_inima)
-ruleaza(misiune_inima)
-display.scroll(str(facute))
-```
-**Ce vezi pe placă:** două serii de bătăi de inimă, apoi `2`.
-
-> Observă `ruleaza(misiune_inima)` — **fără paranteze** după `misiune_inima`. Dăm funcția ca pe o „unealtă” și `ruleaza` o apelează cu `f()`. Pentru moment, e suficient să știi că merge.
-
-**Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 9** în simulator sau pe placă  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
-### Exemplul 10 — Panoul Complet
+### Exemplul 6 — Panoul Complet
+Adăugăm nivela și un **contor** de misiuni făcute. Funcția `porneste` schimbă o variabilă de afară (`facute`), deci are nevoie de `global`, ca în lecția 8 din Modulul 1:
 ```python
 from microbit import *
 
@@ -271,12 +210,10 @@ facute = 0
 
 def misiune_lumina():
     for i in range(30):
-        nivel = display.read_light_level() // 51
-        img = Image(5, 5)
+        nivel = display.read_light_level() // 51     # 0 ... 5
+        display.clear()
         for y in range(nivel):
-            for x in range(5):
-                img.set_pixel(x, 4 - y, 9)
-        display.show(img)
+            display.set_pixel(2, 4 - y, 9)
         sleep(100)
 
 def misiune_temperatura():
@@ -326,10 +263,11 @@ while True:
     sleep(100)
 ```
 - **A** = următoarea misiune, **B** = pornește, **A+B** = câte misiuni ai făcut.  
-- Cazul `a and b` e **primul**, ca să nu fie „mâncat” de `a` sau `b`.
+- Cazul `a and b` e **primul**, ca să nu fie „mâncat” de `a` sau `b`.  
+- Ca să adaugi o misiune nouă schimbi **trei lucruri**: funcția ei, `NR_MISIUNI` și un `elif` în `porneste`.
 
 **Gata când:**  
-- [ ] Am scris și am rulat **Exemplul 10** în simulator sau pe placă  
+- [ ] Am scris și am rulat **Exemplul 6** în simulator sau pe placă  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
@@ -338,7 +276,7 @@ while True:
 1. **„Meniul trece de 3”** — ai uitat `% NR_MISIUNI`.  
 2. **„Misiunea pornește de două ori”** — citești `button_b.was_pressed()` de mai multe ori. Citește **o dată** la începutul turei.  
 3. **„Contorul rămâne 0”** — lipsește `global facute`.  
-4. **„Nu afișează numărul”** — `display.show(mod)` nu merge; folosește `str(mod + 1)`.  
+4. **„Meniul arată 0, 1, 2”** — afișezi `mod`; pentru `1, 2, 3` afișezi `mod + 1`.  
 5. **„Misiunea nu pornește”** — verifică numerele din `porneste` (se începe de la `0`).  
 6. **„Lumina nu arată nimic”** — în sală e prea întuneric? Pune placa lângă o lampă.
 
@@ -354,7 +292,7 @@ while True:
 | **Complet** | Minim + misiunea Nivela + contor la A+B |
 
 ### Exercițiul A — „Panoul” (obligatoriu)
-Scrie panoul pe placă. Poți schimba **ce arată** fiecare misiune (alte imagini, alt text).
+Scrie panoul pe placă (Exemplul 4 pentru Minim, Exemplul 6 pentru Complet). Poți schimba **ce arată** fiecare misiune (alte imagini, alt text).
 
 ### Exercițiul B — Ce dă?
 Fără să rulezi: `10 % 4`, `9 % 3`, `5 % 7`, `abs(-3)`, `17 // 5`.
@@ -376,7 +314,7 @@ def porneste(m):
 while True:
     if button_a.was_pressed():
         mod = (mod + 1) % NR_MISIUNI
-    display.show(mod)
+    display.scroll("Misiunea " + mod)
 ```
 
 ### Exercițiul E — Explică
@@ -395,30 +333,40 @@ while True:
 
 ---
 
-## Bonus (după Complet)
-- [ ] Afișează **numele** misiunii (text scurt) când ții apăsat pe **A**  
-- [ ] Adaugă o misiune cu **busola** sau cu **radio** (le vei învăța în lecțiile următoare)  
-- [ ] La 5 misiuni făcute, arată `Image.HEART` și scrie „Pro!”
+## Bonus ★★★ — Provocare: Panoul meu
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
+Adaugă la panou **două misiuni noi**, făcute de tine.
+
+**Ajutor:** în simulator poți schimba lumina cu cursorul de lumină și poți simula **căderea liberă** din lista de gesturi (`freefall`). Gestul se verifică cu `accelerometer.was_gesture("freefall")`. Ieși dintr-o funcție înainte de final cu `return`.
+
+- [ ] **Alarma sertarului:** timp de 10 secunde placa urmărește lumina; dacă `display.read_light_level()` trece de `60` (sertarul s-a deschis), ecranul arată `Image.SKULL` clipind de 3 ori, apoi misiunea se termină
+- [ ] **Detectorul de cădere:** timp de 10 secunde placa așteaptă `freefall`; dacă îl detectează, arată `Image.SURPRISED` și derulează `"AAAH!"`, apoi misiunea se termină
+- [ ] Cele două misiuni apar în meniu (panoul are acum **6 misiuni**), iar `NR_MISIUNI` e schimbat
+- [ ] Contorul de misiuni făcute (A+B) funcționează și pentru ele
+- [ ] Fiecare misiune are un **nume scurt** într-un comentariu deasupra funcției
+- [ ] Salvează proiectul ca `Prenume_Nume_MP2_L01_Panou`
+
+## Recapitulare pe scurt
 1. Un program mare are **ordine**: importuri, constante, variabile, funcții, buclă.  
 2. **Constantele** se scriu cu litere mari.  
 3. `a % b` = restul împărțirii; ține meniul în cerc.  
 4. Fiecare misiune e o **funcție**.  
 5. O funcție care schimbă o variabilă de afară are **`global`**.
 
-## Schema pe scurt *(pe foaie)*
+**Schema pe scurt (pe foaie):** constante · funcții-misiuni · `mod` ține alegerea · `% NR` face cercul · A alege, B pornește
 
-constante · funcții-misiuni · `mod` ține alegerea · `% NR` face cercul · A alege, B pornește
-
-**Quiz scurt:**  
+## Quiz scurt
 - Ce rest dă `11 % 4`?  
 - Ce se întâmplă cu `mod` după a treia apăsare pe A (la 3 misiuni)?  
 - De ce `a and b` e primul?  
 - Cum adaugi o misiune nouă?
 
 ## Temă
-Gândește-te la **alte 3 misiuni** pentru panou și scrie pe foaie ce ar face fiecare și ce ar folosi (buton, senzor, radio).
+**Misiunea mea.** Scrie acasă, în editor (merge și în simulator, fără placă), o **misiune nouă** pentru panou, inventată de tine, ca funcție `misiune_...()`. Adaug-o în meniu, cu `NR_MISIUNI` și `elif` în `porneste`. Salvează-l ca `Prenume_Nume_MP2_L01_Tema`.
+
+## Ce urmează — Lecția 2
+Înveți **listele** mai bine: faci o carte de mesaje în care dai pagina înainte și înapoi, cu `append`, indexuri și scuturare.
 
 ---
 
@@ -434,6 +382,6 @@ def misiune_salut():
     sleep(800)
 ```
 
-**Exercițiul D:** 1) în `porneste` lipsește `global facute`. 2) `if m = 0` trebuie `if m == 0:`. 3) `display.show(mod)` trebuie `display.show(str(mod + 1))`. 4) în `while True` nu există `sleep`, iar `porneste` nu este apelat (lipsește verificarea lui B). 5) lipsește `from microbit import *` la început.
+**Exercițiul D:** 1) în `porneste` lipsește `global facute`. 2) `if m = 0` trebuie `if m == 0:`. 3) `"Misiunea " + mod` lipește text cu număr: trebuie `"Misiunea " + str(mod + 1)`. 4) în `while True` nu există `sleep`, iar `porneste` nu este apelat (lipsește verificarea lui B). 5) lipsește `from microbit import *` la început.
 
 **Exercițiul E:** 1) Ca să se vadă că nu se schimbă și să fie ușor de găsit. 2) Întoarce `mod` la 0 după ultima misiune. 3) Ca să poată **schimba** variabila `facute` din afara funcției.

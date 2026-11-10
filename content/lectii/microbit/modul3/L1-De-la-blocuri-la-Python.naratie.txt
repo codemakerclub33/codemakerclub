@@ -18,9 +18,9 @@ Al cincilea pas. Pauza. Sleep, paranteză, o mie, paranteză, înseamnă o secun
 
 Al șaselea pas. Bucla while True, urmată de două puncte. Tot ce vrei să se repete se scrie sub ea, mai la dreapta, cu patru spații. Asta se numește indentare, iar în Python este foarte importantă.
 
-Al șaptelea pas. Comentariile. Un comentariu începe cu semnul diez. Python îl ignoră: este doar o notiță pentru oameni.
+Al șaptelea pas. Comentariile. Un comentariu începe cu semnul diez. Python îl ignoră: este doar o notiță pentru oameni. Pe Mac scrii semnul diez cu Option plus trei. Poți selecta rânduri și apăsa Control plus bară oblică, pe Mac Command plus bară oblică: rândurile devin comentarii, iar aceeași combinație le scoate din nou. Așa oprești temporar un rând, ca să vezi ce face programul fără el.
 
-Al optulea pas. Numere. Display punct scroll cu str de doi plus trei afișează cinci. Funcția str transformă numărul în text, pentru că scroll vrea text.
+Al optulea pas. Numere. Display punct scroll de doi plus trei afișează cinci: placa calculează, iar scroll arată numerele direct. Mai târziu, când lipești un număr de un text, vei folosi funcția str.
 
 Al nouălea pas. Mai multe imagini una după alta, cu sleep între ele, ca la animațiile din blocuri.
 

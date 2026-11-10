@@ -40,7 +40,7 @@ Exercițiile B–E și Provocarea sunt pentru cine termină mai repede, sau pent
 | `Image(5, 5)` | O imagine goală, pe care o desenezi cu `set_pixel` | `img = Image(5, 5)` |
 | `or` | „sau”: e adevărat dacă măcar una e adevărată | `foame >= 4 or fericire <= 1` |
 
-**Ajutor în editor:** în panoul **Reference** caută `Image`, `Light level` și `Accelerometer`. Funcția `limiteaza` o știi din lecția 7.
+**Ajutor în editor:** în panoul **Reference** caută `Images`, `Light level` și `Accelerometer`. Funcția `limiteaza` o știi din lecția 7.
 
 ---
 
@@ -312,7 +312,7 @@ Cum funcționează:
 1. **„Pixi nu mai are foame”** — `trece_timpul()` nu e apelat, sau lipsește `global`.  
 2. **„Foamea merge la −1 sau la 7”** — ai uitat `limiteaza`.  
 3. **„Pixi nu răspunde la butoane”** — am citit `button_a.was_pressed()` de mai multe ori. Citește **o singură dată** la începutul turei.  
-4. **„Crapă la `display.scroll(foame)`”** — `scroll` vrea text: `display.scroll(str(foame))`.  
+4. **„TypeError la `"Foame: " + foame`”** — nu poți lipi un text de un număr: `"Foame: " + str(foame)`.  
 5. **„Doarme și în lumină”** — pragul `PRAG_INTUNERIC` e prea mare pentru sala ta; încearcă `10` sau `5`.  
 6. **„A+B hrănește”** — `elif a and b` trebuie să fie **înaintea** lui `elif a`.
 
@@ -346,7 +346,7 @@ def hraneste():
 while True
     if button_a.was_pressed:
         hraneste()
-    display.scroll(foame)
+    display.scroll("Foame: " + foame)
 ```
 
 ### Exercițiul E — Explică
@@ -416,6 +416,6 @@ def mancare():
     sleep(800)
 ```
 
-**Exercițiul D:** 1) în `hraneste()` lipsește `global foame` (`UnboundLocalError`). 2) după `while True` lipsește `:`. 3) `button_a.was_pressed` nu are paranteze: `button_a.was_pressed()`. 4) `display.scroll(foame)` vrea text: `display.scroll(str(foame))`. (Și `foame` ar putea ajunge sub `0`: se poate folosi `limiteaza`.)
+**Exercițiul D:** 1) în `hraneste()` lipsește `global foame` (`UnboundLocalError`). 2) după `while True` lipsește `:`. 3) `button_a.was_pressed` nu are paranteze: `button_a.was_pressed()`. 4) `"Foame: " + foame` lipește text cu număr: trebuie `"Foame: " + str(foame)`. (Și `foame` ar putea ajunge sub `0`: se poate folosi `limiteaza`.)
 
 **Exercițiul E:** 1) Pentru că `sleep(4000)` oprește programul și nu mai vede butoanele. 2) `fata()` doar **citește** variabilele; `trece_timpul()` le **schimbă**. 3) Nu face nimic; ține locul unui rând obligatoriu.

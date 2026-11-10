@@ -1,25 +1,25 @@
 Lecția nouă. Cutia Exploratorului.
 
-Este proiectul final al cursului! Construiești Cutia Exploratorului: un meniu cu unelte pentru o expediție: busolă, termometru cu record păstrat, semnal de ajutor prin radio și jurnal de măsurători. Folosești tot ce ai învățat: funcții, liste, busolă, fișiere și radio. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P doi, linie jos, L zero nouă. Pentru semnal lucrați în perechi, în același grup radio.
+Este proiectul final al cursului. Construiești Cutia Exploratorului: un meniu cu unelte pentru o expediție, adică busolă, termometru cu record păstrat, cronometru și jurnal de măsurători. Folosești tot ce ai învățat: funcții, liste, busolă, fișiere și timp. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P doi, linie jos, L zero nouă.
 
-Obiectivul. La final ai un program mare, împărțit în funcții, cu meniu, care folosește senzori, fișier și radio. Minim: meniu cu trei unelte, B de la busolă, T de la termometru, cu record păstrat în fișier, și S de la semnal de ajutor. Complet: minim, plus a patra unealtă, J de la jurnal, cu ultimele cinci temperaturi, și un ecran de pornire.
+Ce facem azi. La final ai un program mare, împărțit în funcții, cu meniu, care folosește senzori, timp și fișier. Un program mare nu se scrie dintr-o dată: se construiește bucată cu bucată. Fiecare unealtă este o funcție pe care o testezi singură, apoi o pui în meniu. Așa lucrează și echipele de programatori.
 
-De ce contează. Un program mare nu se scrie dintr-o dată. Se construiește bucată cu bucată: fiecare unealtă este o funcție pe care o testezi singură, apoi o pui în meniu. Așa lucrează echipele de programatori.
+Instrucțiuni noi azi. Azi nu apar multe instrucțiuni noi, punem împreună ce știi deja. Break iese din buclă, aici din unealtă înapoi în meniu. Meniul este o listă care se învârte în cerc cu procentul din lungimea listei. O funcție, porneste, alege unealta după număr. Pop zero scoate primul element dintr-o listă. All clocks este lista celor douăsprezece imagini de ceas. Dacă uiți ceva, caută în panoul Reference din editor: Compass, File system și Images.
 
-Primul pas. Planul. Meniul: A alege unealta următoare, B o pornește. În unealtă, A înseamnă ieșire. Busola arată o săgeată spre nord. Termometrul arată temperatura la B și salvează recordul. Semnalul trimite ajutor la B și primește alarmă. Jurnalul notează temperatura la B, iar scuturarea o citește. Regula de aur: testezi fiecare funcție singură, înainte s-o pui în program.
+Primul pas. Planul Cutiei. Busola arată săgeata spre Nord. Termometrul măsoară la B și salvează recordul. Cronometrul pornește la B și se oprește tot la B. Jurnalul notează temperatura la B, iar la scuturare o citește. Meniul: A alege următoarea unealtă, B o pornește, iar în unealtă A înseamnă ieșire. Regula de aur: testezi fiecare funcție singură, înainte s-o pui în program.
 
-Exemplul unu. Unealta Busolă, cu funcția ac din lecția cinci. Exemplul doi. Recordul în fișier. Exemplul trei. Unealta Termometru: B măsoară, iar dacă temperatura bate recordul, se salvează și apare o inimă. Break oprește bucla când apeși A.
+Exemplul unu. Unealta Busolă: placa se calibrează, apoi o săgeată arată spre Nord, iar A oprește unealta. Exemplul doi. Unealta Termometru: recordul de temperatură se păstrează în fișier, iar dacă îl bați, apare o inimă. Break oprește bucla când apeși A. Exemplul trei. Cronometrul: măsori timpul cu running time, fără sleep lung. La al doilea B, placa derulează timpul în secunde. Exemplul patru. Scheletul meniului, testat singur: A trece prin litere, B arată numărul modului.
 
-Exemplul patru. Unealta Semnal, cu funcția parseaza din lecția șapte: B trimite S două puncte unu, iar când o placă primește acest mesaj, pornește o alarmă. Exemplul cinci. Scheletul meniului, testat singur. Exemplul șase. Cutia Minim. Funcția porneste alege unealta după numărul modului, iar radio se pornește o singură dată, la început.
+Exemplul cinci. Cutia Minim, cu trei unelte și un meniu. Recordul se păstrează după reset. Exemplul șase. Jurnalul ține ultimele cinci temperaturi într-o listă, modificată cu append și pop, deci nu ai nevoie de global. Ecranul de pornire învârte un ceas și derulează numele Cutiei. Exemplul șapte. Cutia Complet: pornești de la Minim și faci patru schimbări. Adaugi jurnalul și pornirea, adaugi unealta în funcția porneste, pui litera J în listă și chemi pornirea o singură dată, înainte de meniu.
 
-Exemplul șapte. Unealta Jurnal: lista jurnal ține ultimele cinci temperaturi. Exemplul opt. Pentru a patra unealtă schimbi doar două lucruri: adaugi litera J în listă și un elif în porneste. Exemplul nouă. Ecranul de pornire: ceasul se învârte și apare numele Cutiei. Exemplul zece. Cutia Complet, cu toate cele patru unelte, în care fiecare are aceeași formă: o buclă cu break la A.
-
-Greșeli frecvente. Nu poți ieși din unealtă: nu citește A sau nu are break. Recordul dispare: ai reîncărcat programul. Radio nu merge: grupuri diferite sau lipsește radio on. Alarma sună la toate perechile: același grup. IndexError în meniu: folosește procent len. Busola arată greșit: calibrează departe de magneți.
+Greșeli frecvente. Nu poți ieși din unealtă: nu citește A sau nu are break. Recordul dispare: ai reîncărcat programul, folosește reset. Cronometrul arată un timp ciudat: ai uitat să notezi startul. Index error în meniu: folosește procentul. Busola arată greșit: calibrează departe de magneți și laptopuri. Eroare la lipire: nu poți lipi un text de un număr, folosește str.
 
 Proiectul de azi. Cutia Exploratorului.
 
-Minim înseamnă: meniu, busolă, termometru cu record și semnal radio. Complet înseamnă: minim, plus jurnal și ecran de pornire. Dacă rămâi în urmă, salvează la Minim.
+Minim înseamnă: meniu, busolă, termometru cu record și cronometru. Complet înseamnă: minim, plus jurnal și ecran de pornire. Dacă rămâi în urmă, salvează la Minim. Ești la Minim când un coleg folosește toate cele trei unelte fără ajutor.
 
-Recapitulare. Un program mare înseamnă funcții mici, fiecare testată. Un meniu este o listă, procent și o funcție porneste. Unealta are propria buclă și iese cu break. Datele importante se salvează în fișier. Radio folosește un protocol simplu, tip, două puncte, valoare.
+Provocare, trei stele. Jurnalul păstrat. Jurnalul din Cutie uită totul la reset. Îl faci să țină minte, ca recordul. Un fișier ține doar text, deci lista se scrie ca text, cu virgule între valori. Când notezi o temperatură, jurnalul întreg se salvează într-un fișier, pe o singură linie. La pornire, jurnalul se citește din fișier, iar dacă fișierul nu există sau e gol, începe cu o listă goală. Jurnalul păstrează cel mult cinci valori. La scuturare placa derulează valorile, apoi media lor, doar dacă lista nu este goală. Salvezi doar când se notează o valoare nouă, nu la fiecare tură de buclă. La final salvezi proiectul cu sufixul Jurnal.
 
-Succes, explorator!
+Recapitulare. Un program mare înseamnă funcții mici, fiecare testată. Un meniu este o listă, procentul și funcția porneste. Unealta are propria buclă și iese cu break. Datele importante se salvează în fișier. Timpul se măsoară cu running time, fără sleep lung.
+
+Succes cu Cutia Exploratorului!

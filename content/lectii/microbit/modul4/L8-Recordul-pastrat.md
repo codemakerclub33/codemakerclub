@@ -8,7 +8,7 @@
 ---
 
 ## Obiectiv
-La finalul orei știi să **scrii** și să **citești** un fișier cu `open`, să tratezi lipsa fișierului cu `try / except` și să păstrezi un **record**.  
+La finalul orei știi să **scrii** și să **citești** un fișier cu `open`, să tratezi lipsa fișierului cu `try / except` (îl înveți chiar azi) și să păstrezi un **record**.  
 **Minim:** jocul de scuturat (10 secunde) care **salvează** recordul în fișier și îl arată la **B**.  
 **Complet:** Minim + **numărătoare inversă** `3, 2, 1` + **A+B** șterge recordul (ținut apăsat).
 
@@ -21,7 +21,7 @@ Aplicațiile adevărate **își amintesc**: scorul cel mai bun, setările, ultim
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recap L7: `try / except` |
+| 0–10 | Recap L7: texte, `split`, cifru |
 | 10–40 | Fișiere: `open`, `write`, `read`, lipsa fișierului |
 | 40–70 | Jocul de scuturat și recordul — **Minim** |
 | 70–105 | Numărătoare și resetare — **Complet** |
@@ -75,7 +75,7 @@ display.scroll(text)
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ### Exemplul 3 — Fișierul nu există
-Dacă încerci să citești un fișier care **nu există**, apare eroarea `OSError`. O prindem:
+Dacă încerci să citești un fișier care **nu există**, apare eroarea `OSError`. Cu `try` spui „încearcă”, iar cu `except OSError` „dacă apare eroarea asta, fă în schimb…”. Astfel programul nu se oprește:
 ```python
 from microbit import *
 
@@ -354,7 +354,7 @@ while True:
 3. **„TypeError la `write`”** — `f.write` vrea **text**: `f.write(str(n))`.  
 4. **„ValueError la `int`”** — fișierul e gol sau conține text. Prinde `ValueError`.  
 5. **„Scrii la fiecare tură”** — salvează doar când recordul se schimbă.  
-6. **„Nu mă văd pe ecran”** — `display.show(scor)` nu merge pentru număr; folosește `str(scor)`.
+6. **„Se vede doar o cifră”** — `display.show(scor)` arată cifrele pe rând; pentru numere mari folosește `display.scroll(scor)`.
 
 ---
 

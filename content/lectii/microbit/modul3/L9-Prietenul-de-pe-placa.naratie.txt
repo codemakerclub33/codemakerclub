@@ -4,7 +4,7 @@ Astăzi creezi Pixi, un animal de companie care trăiește pe placa ta. Îi este
 
 Ce facem azi. La final ai un program Python cu stări, senzori, butoane, timp și funcții. Aproape orice joc sau aplicație ține minte stări, cât de flămând, cât de vesel, și le schimbă după ce face omul. Azi pui împreună tot ce ai învățat în modul: variabile, decizii, senzori, funcții.
 
-Instrucțiuni noi azi. Running time dă milisecundele de când a pornit placa și măsoară timpul fără un sleep lung. O funcție poate întoarce o imagine, pe care o arăți cu display punct show. Pass înseamnă nu fac nimic și ține locul unui rând obligatoriu. Image cu două numere face o imagine goală, pe care o desenezi cu set pixel. Or înseamnă sau. Dacă uiți ceva, caută în panoul Reference din editor: Image, Light level și Accelerometer. Funcția limiteaza o știi din lecția șapte.
+Instrucțiuni noi azi. Running time dă milisecundele de când a pornit placa și măsoară timpul fără un sleep lung. O funcție poate întoarce o imagine, pe care o arăți cu display punct show. Pass înseamnă nu fac nimic și ține locul unui rând obligatoriu. Image cu două numere face o imagine goală, pe care o desenezi cu set pixel. Or înseamnă sau. Dacă uiți ceva, caută în panoul Reference din editor: Images, Light level și Accelerometer. Funcția limiteaza o știi din lecția șapte.
 
 Primul pas. Planul lui Pixi. Are două stări, fiecare între zero și cinci: foame, unde zero înseamnă sătul, iar cinci foarte flămând, și fericire, unde zero înseamnă trist, iar cinci foarte vesel. Reguli: A hrănește, foamea scade cu doi. B se joacă: fericirea crește cu unu, dar și foamea crește cu unu. Dacă Pixi este prea flămând, nu vrea să se joace. Din când în când îi vine foame singur. Pe întuneric doarme. Scuturat, se sperie. A și B arată starea.
 
@@ -14,7 +14,7 @@ Exemplul trei. Pixi doarme: dacă lumina este sub un prag, arăți fața adormit
 
 Exemplul șase. Pixi Complet. Funcția trece timpul schimbă foamea, fericirea și ultima măsurătoare, deci are global pentru toate trei. Când Pixi doarme, nu se întâmplă nimic. Ordinea contează: A și B se verifică înaintea lui A și B separat.
 
-Greșeli frecvente. Pixi nu mai are foame: funcția pentru timp nu este chemată sau lipsește global. Foamea ajunge la minus unu sau la șapte: ai uitat limiteaza. Pixi nu răspunde la butoane: ai citit butonul de mai multe ori. Eroare la scroll: lipsește str. Doarme și în lumină: pragul este prea mare pentru sala ta. A și B hrănește: elif a and b trebuie să fie înaintea lui elif a.
+Greșeli frecvente. Pixi nu mai are foame: funcția pentru timp nu este chemată sau lipsește global. Foamea ajunge la minus unu sau la șapte: ai uitat limiteaza. Pixi nu răspunde la butoane: ai citit butonul de mai multe ori. Eroare la lipirea unui text cu un număr: lipsește str. Doarme și în lumină: pragul este prea mare pentru sala ta. A și B hrănește: elif a and b trebuie să fie înaintea lui elif a.
 
 Proiectul de azi. Prietenul de pe placă.
 

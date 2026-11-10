@@ -9,7 +9,7 @@
 ---
 
 ## Ce facem azi
-La finalul orei creezi variabile, le schimbi cu `+=` și `-=`, le compari și le afișezi pe LED-uri cu `str()`. Orice joc ține minte scorul, viețile, banii. Orice aplicație ține minte numele tău și setările. Toate acestea stau în **variabile**. Azi folosești variabile și condiții împreună, ca într-un joc adevărat.
+La finalul orei creezi variabile, le schimbi cu `+=` și `-=`, le compari și le afișezi pe LED-uri și le lipești de texte cu `str()`. Orice joc ține minte scorul, viețile, banii. Orice aplicație ține minte numele tău și setările. Toate acestea stau în **variabile**. Azi folosești variabile și condiții împreună, ca într-un joc adevărat.
 
 ---
 
@@ -38,7 +38,7 @@ Exercițiile B–E și Provocarea sunt pentru cine termină mai repede, sau pent
 | `+=` și `-=` | Adaugă sau scade din variabilă | `monede += 1` |
 | `==`, `!=`, `<`, `>`, `<=`, `>=` | Compară două valori | `if monede >= 3:` |
 | `and` / `or` | Cere ambele condiții / măcar una | `if a and b:` |
-| `str(număr)` | Transformă un număr în text | `display.scroll(str(monede))` |
+| `str(număr)` | Transformă un număr în text; îți trebuie când lipești un număr de un text | `"Monede: " + str(monede)` |
 | `min()` și `max()` | Ține o valoare între două limite | `min(monede + 5, 20)` |
 
 **Ajutor în editor:** în panoul **Reference** caută `Variables`, `Maths` și `Data types`.
@@ -62,7 +62,7 @@ from microbit import *
 monede = 5
 display.scroll(str(monede))
 ```
-`display.scroll` știe să deruleze **text**, de aceea numărul îl transformăm în text cu `str()`.
+`display.scroll` arată și numere direct. `str()` îți trebuie când **lipești** un număr de un text (Exemplul 7). Noi îl scriem de la început, ca să ne obișnuim.
 
 **Ce vezi pe placă:** cifra `5`.
 
@@ -355,7 +355,7 @@ Fă un caiet de desen pe LED-uri, în care mișți un punct și lași urme.
 2. `+=` și `-=` schimbă valoarea: `monede += 1`.  
 3. `==` compară, `=` pune.  
 4. `and` cere ambele condiții, `or` cere măcar una.  
-5. `str(numar)` transformă un număr în text pentru `display.scroll`.  
+5. `str(numar)` transformă un număr în text, ca să-l poți lipi de un alt text.  
 6. Limitele se păzesc cu `if` sau cu `min()` și `max()`.  
 7. Constantele se scriu cu litere mari: `PRET`, `MAXIM`.
 
