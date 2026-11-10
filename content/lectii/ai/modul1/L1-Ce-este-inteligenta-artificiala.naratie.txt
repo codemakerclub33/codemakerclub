@@ -1,8 +1,12 @@
 Lecția întâi din Modulul unu, AI pentru copii. Ce este inteligența artificială.
 
-Azi afli ce înseamnă inteligența artificială, pe scurt AI, și unde o întâlnești în fiecare zi. Nu ai nevoie de calculator. Lucrăm cu cartonașe, foi și jocuri.
+Azi afli ce înseamnă inteligența artificială, pe scurt AI, unde o întâlnești în fiecare zi și cum se deosebește de un program obișnuit. Nu ai nevoie de calculator. Lucrăm cu cartonașe, foi și jocuri. Proiectul se numește Fișa mea: AI în jurul meu. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I unu, linie jos, L unu.
 
-Obiectivul. Minim: o listă cu cinci lucruri din jurul tău care folosesc AI și o explicație scurtă pentru unul dintre ele. Complet: în plus jocul Reguli sau exemple, sortarea cartonașelor și trei greșeli posibile ale AI.
+Ce facem azi. La final știi ce este AI, cum se deosebește de un program cu reguli scrise de om, unde o întâlnești și de ce poate greși. Dacă înțelegi cum funcționează, nu o vezi ca pe o magie. Tu ești cel care decide, nu ea.
+
+Planul orei. Începem cu jocul Om sau mașină. Apoi vedem programul cu reguli și programul care învață din exemple. După aceea sortăm cartonașe, vedem cum vede un calculator o imagine, vorbim despre greșelile AI și facem fișa. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă.
+
+Cuvinte noi azi. AI este un program care a învățat tipare din foarte multe exemple. Un program cu reguli face exact ce a scris omul. Exemplele sunt lucrurile din care învață AI, fiecare cu eticheta ei. Pixelul este un pătrățel dintr-o imagine, cu un număr în el.
 
 Ce este AI. Inteligența artificială înseamnă programe care pot face lucruri la care ne gândim că e nevoie de minte: să recunoască o poză, să înțeleagă o frază sau să aleagă un videoclip pentru tine. Atenție, AI nu gândește ca un om. Nu simte și nu înțelege lumea ca noi. Este un program care a învățat tipare din foarte multe exemple.
 
@@ -20,8 +24,16 @@ Exemplul opt. Completezi fișa AI în jurul meu: cinci locuri cu AI, o explicaț
 
 Greșeli frecvente. Să crezi că AI este un robot care gândește, că știe tot, că orice program este AI sau că tot ce spune este adevărat.
 
+De făcut azi. Minimul este fișa cu cinci locuri, explicația și desenul. Completul înseamnă și jocul cu reguli sau exemple, sortarea cartonașelor, trei greșeli posibile ale AI și exercițiile de la B până la E.
+
+Provocare pentru cine termină mai repede: Jocul cu cartonașe. Faci zece cartonașe, cu un lucru din viața de zi cu zi pe fiecare, și scrii pe spate de ce folosește sau nu folosește AI. Cel puțin două sunt cu capcană. Joci cu cineva din familie și notezi câte a ghicit corect. Numele foii se termină cu Cartonase.
+
+Recapitulare. AI învață tipare din exemple. Un program obișnuit urmează reguli scrise de om. Un calculator vede imaginile ca numere. AI poate greși, nu simte și nu decide pentru tine.
+
+Schema pe scurt, pe foaie: reguli scrise de om înseamnă program obișnuit. Multe exemple duc la tipare, apoi la AI, care poate greși, deci verificăm.
+
 Întrebări de verificare. Ce este AI? Care este diferența dintre un program cu reguli și unul cu AI? Dă două exemple. Cum vede un calculator o imagine? De ce poate greși AI?
 
-Temă. Termină fișa, întreabă pe cineva din familie unde crede că folosește AI și alege un lucru din casă pe care să îl explici.
+Temă. Termină fișa, întreabă pe cineva din familie unde crede că folosește AI, alege un lucru din casă pe care să îl explici și desenează litera ta preferată pe grila de cinci pe cinci. Numele foii se termină cu Tema.
 
 Urmează Lecția a doua: cum învață un calculator din exemple.
