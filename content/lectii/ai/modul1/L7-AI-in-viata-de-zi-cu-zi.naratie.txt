@@ -1,25 +1,37 @@
 Lecția a șaptea din Modulul unu, AI pentru copii. AI în viața de zi cu zi.
 
-Azi cauți AI într-o zi obișnuită: dimineața, la școală, pe drum, seara. Vezi unde ajută, unde trebuie să fii atent și cum se schimbă meseriile. Nu ai nevoie de calculator.
+Azi cauți AI într-o zi obișnuită: dimineața, la școală, pe drum, seara. Vezi unde ajută, unde trebuie să fii atent și cum se schimbă meseriile. Nu ai nevoie de calculator. Proiectul se numește Harta AI a zilei mele. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I unu, linie jos, L șapte.
 
-Obiectivul. Minim: o hartă cu șase locuri din ziua ta unde poate fi AI. Complet: în plus, pentru trei dintre ele, un avantaj, un risc și cine verifică, plus un interviu scurt cu cineva din familie.
+Ce facem azi. La final poți recunoaște locuri unde se folosește AI, poți spune ce avantaj și ce risc are fiecare și știi că AI este un ajutor, nu un înlocuitor al omului. Dacă îl recunoști, poți decide cum îl folosești și când ceri ajutorul unui om.
 
-Exemplul unu. O zi cu AI. Citim povestea lui Matei și bifăm unde poate fi AI. Alarma la oră fixă folosește o regulă simplă. Hărțile, traducerea, recomandările și vocea folosesc de obicei AI.
+Planul orei. Începem cu o recapitulare. Apoi urmărim o zi cu AI, vedem avantaje și riscuri, vorbim despre meserii, facem un interviu în familie și desenăm harta. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă.
 
-Exemplul doi. Completezi un tabel cu locuri unde ai văzut AI: acasă, la școală, pe drum, în magazin, la spital, în joc. Unde nu ești sigur, scrii nu știu sigur.
+Cuvinte noi azi. Avantajul este ce câștigi folosind AI. Riscul este ce poate merge prost. Cine verifică este persoana care se uită la răspuns. AI este ajutor, nu înlocuitor: ușurează munca, dar omul gândește și decide.
 
-Exemplul trei. Pentru fiecare exemplu spui ce ajută și la ce trebuie să fii atent. Traducerea te ajută să înțelegi repede, dar poate greși sensul. Recomandările îți găsesc lucruri care îți plac, dar pot arăta mereu același lucru.
+Exemplul unu. Citim povestea lui Matei și bifăm unde poate fi AI: vremea pe telefon, aplicația de hărți, traducătorul, recomandările video și asistentul vocal. Alarma la oră fixă folosește o regulă simplă.
 
-Exemplul patru. Meserii și AI. AI poate ajuta un medic să analizeze imagini, dar medicul vorbește cu pacientul și decide. Poate propune exerciții unui profesor, dar profesorul explică și înțelege elevul. AI ajută oamenii, nu îi înlocuiește complet.
+Exemplul doi. Completezi un tabel cu locuri unde ai văzut AI: acasă, școală, drum, magazin, spital, joc. Dacă nu ești sigur, scrii nu știu sigur.
 
-Exemplul cinci. Interviu în familie. Întrebi pe cineva unde crede că folosește AI și ce greșeli a întâlnit. Nu notezi date personale.
+Exemplul trei. Pentru fiecare exemplu spui ce ajută și la ce trebuie să fii atent. Traducerea ajută să înțelegi repede, dar poate greși sensul. Recomandările găsesc lucruri care îți plac, dar poți vedea mereu același tip de conținut.
 
-Exemplul șase. Desenezi harta AI a zilei tale cu locuri, simboluri și, pentru trei locuri, un avantaj, un risc și cine verifică.
+Exemplul patru. AI poate ajuta oamenii la muncă, dar de obicei nu îi înlocuiește complet. Medicul, profesorul și fermierul folosesc AI ca ajutor, dar omul decide. Alegi o meserie și completezi două coloane.
 
-Greșeli frecvente. Să crezi că orice aplicație folosește AI, că AI ia locul tuturor sau că este mereu bun ori mereu periculos.
+Exemplul cinci. Întrebi pe cineva din familie unde crede că folosește AI, dacă a avut o greșeală făcută de o aplicație și ce ar vrea să facă AI pentru el. Notezi două propoziții, fără date personale.
 
-Întrebări de verificare. Care sunt trei locuri unde se folosește AI? Care este un avantaj și un risc pentru traducerea automată? Cum poate ajuta AI un medic? Ce rămâne important la om? De ce verificăm?
+Exemplul șase. Desenezi harta zilei tale, cu un simbol stea acolo unde poate fi AI. Pentru trei locuri scrii un avantaj, un risc și cine verifică.
 
-Temă. Termină harta, arată harta cuiva din familie și alege o aplicație pe care o folosești pentru a spune ce face AI în ea.
+Greșeli frecvente. Să crezi că orice aplicație folosește AI, că AI ia locul tuturor, că este mereu bun sau mereu periculos, sau că nu te privește pe tine.
+
+De făcut azi. Minimul este o hartă cu șase locuri și simbolurile. Completul înseamnă și avantaj, risc și cine verifică pentru trei locuri, interviul în familie și exercițiile de la B până la E.
+
+Provocare pentru cine termină mai repede: Regulile familiei pentru AI. Faci un afiș cu exact cinci reguli pentru folosirea unui asistent AI acasă, fiecare cu un motiv care începe cu pentru că. Cel puțin două reguli sunt despre verificare și una despre ajutorul unui adult. Arăți afișul la două persoane din familie, notezi părerile și schimbi o regulă. Numele foii se termină cu Reguli.
+
+Recapitulare. AI este în aplicații, jocuri, mașini, spitale și magazine. Fiecare folosire are avantaje și riscuri. AI ajută oamenii, dar nu îi înlocuiește complet. Verificăm rezultatele.
+
+Schema pe scurt, pe foaie: AI în ziua mea, avantaj și risc, cine verifică, omul decide.
+
+Întrebări de verificare. Dă trei exemple de locuri unde se folosește AI. Dă un avantaj și un risc pentru traducerea automată. Cum poate ajuta AI un medic? Ce rămâne important la om? De ce verificăm ce ne arată AI?
+
+Temă. Termină harta, arată-o cuiva din familie, alege o aplicație și scrie ce face AI în ea și inventează o regulă pentru folosirea AI în clasa ta. Numele foii se termină cu Tema.
 
 Urmează Lecția a opta: cum vorbim cu un asistent AI.
