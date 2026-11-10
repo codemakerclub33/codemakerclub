@@ -10,7 +10,7 @@
 | # | Lecție | Obiectiv | Pași principali (nucleu) |
 |---|--------|----------|---------------------------|
 | 1 | Panoul de misiuni | Un program mai mare, cu meniu | constante; funcții pe misiuni; `%`; mod curent |
-| 2 | Cartea de mesaje | Liste | `[ ]`; index; `len`; `append`; parcurgere cu `for` |
+| 2 | Cartea de glume | Liste | `append`; `pop`; `[-1]`; `for`; două liste în pereche |
 | 3 | Ploaia de pixeli | Bucle | `for` în `for`; `range(a, b, pas)`; `while`; `break` |
 | 4 | Pianul de buzunar | Sunet (V2 sau buzzer) | `music.play`; `music.pitch`; liste de note |
 | 5 | Busola digitală | Busola | `compass.calibrate`; `heading`; direcții; săgeți |

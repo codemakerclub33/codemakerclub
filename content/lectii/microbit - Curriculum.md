@@ -60,7 +60,7 @@
 | # | Titlu | Focus |
 |---|--------|--------|
 | 1 | Panoul de misiuni | Meniu, constante, % |
-| 2 | Cartea de mesaje | Liste |
+| 2 | Cartea de glume | Liste |
 | 3 | Ploaia de pixeli | Bucle for/while |
 | 4 | Pianul de buzunar | music (V2/buzzer) |
 | 5 | Busola digitală | compass, direcții |

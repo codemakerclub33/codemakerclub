@@ -668,7 +668,7 @@ export const lectii = [
   // micro:bit Python Modul 2 — proiecte
   ...genLectii('m41', [
     'Panoul de misiuni',
-    'Cartea de mesaje',
+    'Cartea de glume',
     'Ploaia de pixeli',
     'Pianul de buzunar',
     'Busola digitală',

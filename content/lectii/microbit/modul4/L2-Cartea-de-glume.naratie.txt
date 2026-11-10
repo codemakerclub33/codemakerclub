@@ -1,0 +1,25 @@
+Lecția doi. Cartea de glume.
+
+Astăzi faci o carte de glume pe placă: dai pagina cu butonul A, afli poanta cu butonul B și scuturi placa pentru o glumă la întâmplare. Pe drum înveți să schimbi o listă: adaugi, scoți și o parcurgi. Proiectul se numește Cartea de glume. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P doi, linie jos, L zero doi.
+
+Ce facem azi. La final ții două liste în pereche, întrebările și răspunsurile, adaugi și scoți elemente cu append și pop și parcurgi o listă cu for. Cartea merge înainte, arată poanta și poate alege o glumă la întâmplare.
+
+Planul orei. Începem cu o recapitulare a listelor din primul modul. Apoi învățăm append, ultimul element, for și pop. După aceea ținem două liste în pereche și construim cartea de glume, în varianta Minim și în varianta Complet. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă.
+
+Instrucțiuni noi. Lista, indexul și len le știi deja. Azi adăugăm append, care pune un element la sfârșit. Indexul minus unu, care este ultimul element, oricât de lungă ar fi lista. For, care parcurge elementele unul câte unul. Pop, care scoate ultimul element, iar pop cu zero în paranteză scoate primul. Și două liste în pereche: elementul de pe locul i din prima merge cu cel de pe locul i din a doua. Ajutor în editor: în panoul Reference caută Lists, arrays.
+
+Exemplul unu. Pagina următoare, în cerc. Cu procent len, indexul revine la primul după ultimul, iar lungimea vine singură. Exemplul doi. Append adaugă un element, iar indexul minus unu îl arată pe ultimul. Dacă ceri un loc care nu există, apare IndexError. Exemplul trei. For parcurge lista: la fiecare tură variabila ia pe rând câte un element. Exemplul patru. Pop cu zero scoate primul element, pop fără număr scoate ultimul și ți-l dă înapoi.
+
+O glumă are două părți: întrebarea și răspunsul. Le ținem în două liste, în aceeași ordine. Exemplul cinci. Același index merge în ambele liste, așa că întrebarea și poanta se potrivesc. Exemplul șase. Cartea Minim: A arată întrebarea următoare, B arată răspunsul. Fără diacritice în texte. Exemplul șapte. Cartea Complet: scuturarea alege o glumă la întâmplare, iar A și B împreună scot ultima pagină din ambele liste, ca perechile să rămână potrivite. Ordinea contează: A și B împreună se verifică înaintea lui A și a lui B separat.
+
+Greșeli frecvente. IndexError: ai cerut un loc care nu există. Prima poziție este zero, nu unu. Poanta nu se potrivește: listele nu au aceeași ordine. Cartea sare la întâmplare: ai citit butoanele de două ori. Nu poți afișa o listă întreagă: afișezi un element sau folosești for. A și B nu merge: apasă cele două butoane exact în același timp. Eroare de tip: nu poți lipi un text de un număr, folosește str.
+
+Proiectul de azi. Cartea de glume. Minim: cinci glume, A întrebarea următoare, B poanta. Complet: minim, plus scuturarea și A cu B care scoate ultima pagină.
+
+Provocarea. Cartea de glume cu surprize. Cartea primește o a treia listă, cu pagini-surpriză, și arată la ce pagină ești. Numărul paginii se face cu str și len. Scuturarea arată mai întâi o inimă, apoi o surpriză aleasă la întâmplare. Cartea are cel puțin șase glume și se întoarce de la ultima la prima. Pentru cine vrea mai mult, sort pune surprizele în ordine alfabetică. Numele fișierului se termină cu Glume.
+
+Recapitulare. O listă ține mai multe elemente. Indexul începe de la zero. Append adaugă, pop scoate. For parcurge toate elementele. Două liste în aceeași ordine merg în pereche, cu același index.
+
+Tema. Cartea mea de cuvinte. Acasă, în editor, scrii un program cu cinci cuvinte dintr-o altă limbă și traducerile lor, în două liste în pereche. La A placa arată cuvântul următor, la B traducerea. Numele fișierului se termină cu Tema.
+
+Ce urmează. Lecția trei. Placa devine artist: desenezi pe ecranul de LED-uri cu bucle una într-alta, adică un for în alt for, și alegi desenul cu butoanele.
