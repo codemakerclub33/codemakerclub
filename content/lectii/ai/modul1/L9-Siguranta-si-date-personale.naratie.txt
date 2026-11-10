@@ -1,25 +1,39 @@
 Lecția a noua din Modulul unu, AI pentru copii. Siguranță și date personale.
 
-Azi afli ce informații despre tine rămân private, cum recunoști o poză sau un mesaj fals și ce faci când ceva pe internet te face să te simți prost. Folosim semaforul datelor și jocuri de rol. Nu ai nevoie de calculator.
+Azi afli ce informații despre tine rămân private, cum recunoști o poză sau un mesaj fals și ce faci când ceva pe internet te face să te simți prost. Folosim semaforul datelor și jocuri de rol. Nu ai nevoie de calculator. Proiectul se numește Afișul meu de siguranță. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I unu, linie jos, L nouă.
 
-Obiectivul. Minim: semaforul datelor completat cu nouă exemple. Complet: în plus jocul Ce răspund, o listă cu trei indicii pentru poze false și un afiș de siguranță.
+Ce facem azi. La final știi ce sunt datele personale, folosești semaforul verde, galben, roșu, poți recunoaște indicii că o poză sau un mesaj este fals și știi regula Stop, Gândește, Întreabă. Dacă ceva nu e în regulă, ai întotdeauna dreptul să spui stop și să ceri ajutor.
 
-Semaforul datelor. Verde: poți spune în siguranță, de exemplu că îți place să desenezi. Galben: doar cu un adult de încredere, de exemplu prenumele. Roșu: nu se dau niciodată online: adresa, telefonul, parolele, numele școlii cu clasa, locul unde ești acum și pozele cu uniforma sau cu casa.
+Planul orei. Începem cu o recapitulare. Apoi facem semaforul datelor, jucăm Ce răspund, căutăm indicii de poze false, vedem semne de alarmă la mesaje și facem afișul. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă.
 
-Exemplele unu și doi. Sortezi informațiile în verde, galben și roșu și explici ce ar putea urma dacă datele roșii ajung la cineva necunoscut.
+Cuvinte noi azi. Datele personale sunt informații care te pot identifica sau arată unde ești. Semaforul datelor înseamnă: verde, poți spune. Galben, doar cu un adult. Roșu, nu dai niciodată online. Conținutul generat este făcut cu AI și pare adevărat. Semnul de alarmă este un indiciu că un mesaj poate fi o păcăleală.
 
-Exemplul trei. Ce răspund. Joci situații: un asistent te întreabă unde locuiești, un joc cere parola de la email sau cineva trimite un link cu un premiu. Regula este Stop, Gândește, Întreabă. Oprești, te gândești de ce ți se cere asta și întrebi un adult de încredere.
+Semaforul datelor. Verde înseamnă lucruri fără risc, ca ce îți place să desenezi. Galben înseamnă lucruri pe care le spui doar cu un adult, ca prenumele. Roșu înseamnă adresa, telefonul, parolele, numele școlii cu clasa, locul unde ești acum și pozele cu uniforma sau cu casa.
 
-Exemplul patru. Cu AI se pot crea poze, voci și filmulețe care par adevărate, dar nu sunt. Indicii: mâini ciudate, text deformat, umbre care nu se potrivesc sau ceva prea perfect. Nu crede tot ce vezi, iar dacă este important, verifică sursa.
+Exemplul unu. Pui nouă informații în coloanele verde, galben sau roșu.
 
-Exemplul cinci. Un mesaj este suspect dacă promite ceva prea frumos, te grăbește, cere date sau vine de la cineva necunoscut. Nu răspunzi, nu apeși pe link și spui unui adult.
+Exemplul doi. Alegi două informații roșii și explici ce s-ar putea întâmpla dacă ar ajunge la un necunoscut.
 
-Exemplul șase. Faci un afiș cu titlul Stop, Gândește, Întreabă, semaforul datelor, un desen și propoziția: dacă ceva mă face să mă simt prost, spun unui adult.
+Exemplul trei. Joc de rol în perechi. Un asistent te întreabă cum te cheamă și unde locuiești. Un joc îți cere parola. Un link promite un premiu. Un necunoscut cere o poză. Regula este Stop, Gândește, Întreabă. Stop înseamnă că nu răspunzi și nu apeși. Gândești de ce ți se cere. Întrebi un adult de încredere.
 
-Greșeli frecvente. Să crezi că doar parola este secretă, că poți răspunde dacă te roagă frumos, că orice poză este adevărată sau că vei fi certat dacă spui.
+Exemplul patru. Detectivul de poze. Cu AI se pot face poze, voci și filmulețe care par adevărate. Indicii: mâini ciudate, text deformat, umbre care nu se potrivesc sau ceva prea perfect. Nu crede tot ce vezi, iar dacă este important, verifică sursa.
 
-Întrebări de verificare. Care sunt trei date roșii? Ce înseamnă Stop, Gândește, Întreabă? Care este un indiciu pentru o poză generată? Care este un semn de alarmă pentru un mesaj? Cui spui dacă ceva te sperie?
+Exemplul cinci. Semne de alarmă. Un mesaj este suspect dacă promite ceva prea frumos, te grăbește, cere date sau parole sau vine de la cineva necunoscut. Atunci nu răspunzi, nu apeși pe link și spui unui adult.
 
-Temă. Termină afișul, povestește regula cuiva din familie și scrie trei reguli de siguranță împreună cu un adult.
+Exemplul șase. Faci afișul pentru colegi, cu titlul Stop, Gândește, Întreabă, semaforul datelor cu câte două exemple pentru fiecare culoare, un desen și propoziția despre cererea de ajutor.
 
-Urmează Lecția a zecea: proiectul Ghidul meu despre AI.
+Greșeli frecvente. Să crezi că doar parola este secretă, că poți răspunde dacă te roagă frumos, că orice poză este adevărată, că adultul te va certa sau că un link de la un prieten este mereu sigur.
+
+De făcut azi. Minimul este semaforul datelor completat cu nouă exemple. Completul înseamnă și jocul Ce răspund, trei indicii pentru poze false, afișul de siguranță și exercițiile de la B până la E.
+
+Provocare pentru cine termină mai repede: Mesajul păcălitor. Inventezi un mesaj fals, cu exact trei dintre cele patru semne de alarmă, fără date reale. O persoană din familie subliniază semnele pe care le găsește. Apoi scrii în trei pași ce faci și o listă cu trei adulți de încredere. Numele foii se termină cu Pacaleala.
+
+Recapitulare. Verde poți spune, galben doar cu adult, roșu niciodată online. Nu scriem date personale într-un asistent sau într-un joc. Stop, Gândește, Întreabă. Pozele și vocile pot fi generate. Spunem unui adult când ceva nu e în regulă.
+
+Schema pe scurt, pe foaie: verde, galben, roșu. Mesaj suspect, Stop, Gândește, Întreabă, spun unui adult.
+
+Întrebări de verificare. Dă trei exemple de date roșii. Ce înseamnă Stop, Gândește, Întreabă? Dă un indiciu că o poză poate fi generată. Dă un semn de alarmă pentru un mesaj. Cui spui dacă ceva online te sperie?
+
+Temă. Termină afișul și pune-l într-un loc unde îl vezi, povestește cuiva din familie regula, alcătuiește împreună cu un adult trei reguli de siguranță pentru casă și inventează un mesaj fals. Numele foii se termină cu Tema.
+
+Urmează Lecția a zecea: proiectul final, Ghidul meu despre AI.
