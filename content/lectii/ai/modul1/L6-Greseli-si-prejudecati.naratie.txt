@@ -1,4 +1,4 @@
-Lecția a șasea din Modulul unu, AI pentru copii. Greșeli și prejudecăți.
+Lecția a șasea din Modulul unu, A I pentru copii. Greșeli și prejudecăți.
 
 Azi afli de ce un model poate trata inegal oameni sau situații, chiar dacă nimeni nu a vrut asta. Găsim cine lipsește din date și învățăm cum se repară problema. Nu ai nevoie de calculator. Proiectul se numește Detectivul de date. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I unu, linie jos, L șase.
 
@@ -34,4 +34,4 @@ Schema pe scurt, pe foaie: date incomplete, model care greșește pentru cine li
 
 Temă. Termină Detectivul de date, întreabă pe cineva din familie ce stereotip a auzit, desenează un set de șase exemple foarte variate și scrie trei întrebări pentru un program. Numele foii se termină cu Tema.
 
-Urmează Lecția a șaptea: AI în viața de zi cu zi.
+Urmează Lecția a șaptea: A I în viața de zi cu zi.

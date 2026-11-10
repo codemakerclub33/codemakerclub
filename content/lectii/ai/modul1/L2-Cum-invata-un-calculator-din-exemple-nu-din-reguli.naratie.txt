@@ -1,4 +1,4 @@
-Lecția a doua din Modulul unu, AI pentru copii. Cum învață un calculator: din exemple, nu din reguli.
+Lecția a doua din Modulul unu, A I pentru copii. Cum învață un calculator: din exemple, nu din reguli.
 
 Azi antrenezi un model de hârtie. Primești exemple cu etichete, descoperi regula ascunsă și o testezi pe exemple noi. Nu ai nevoie de calculator. Proiectul se numește Raportul antrenorului. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I unu, linie jos, L doi.
 
@@ -8,7 +8,7 @@ Planul orei. Începem cu o recapitulare. Apoi jucăm Mașina de sortat, vedem c�
 
 Cuvinte noi azi. Eticheta este răspunsul corect scris pe un exemplu. Antrenarea înseamnă că modelul primește exemple cu etichete și caută ce au în comun. Testarea înseamnă că primește exemple noi, fără etichetă, și ghicește. Modelul este ce a învățat programul.
 
-Ideea de bază. Un program cu AI trece prin două etape: antrenarea și testarea. Rezultatul antrenării se numește model.
+Ideea de bază. Un program cu A I trece prin două etape: antrenarea și testarea. Rezultatul antrenării se numește model.
 
 Exemplul unu. Mașina de sortat. Jucați în două echipe: Antrenorii și Modelul. Antrenorii desenează douăsprezece cartonașe cu forme în culori diferite și aleg în secret o regulă simplă, de exemplu toate formele roșii sunt A, restul sunt B. Pun opt cartonașe cu etichetă, iar Modelul încearcă să ghicească regula.
 
@@ -36,4 +36,4 @@ Schema pe scurt, pe foaie: exemple cu etichete, antrenare, model, testare pe exe
 
 Temă. Termină raportul, joacă Mașina de sortat cu cineva din familie, scrie un lucru pe care îl înveți din exemple și inventează o regulă pe care să o ghicească altcineva. Numele foii se termină cu Tema.
 
-Urmează Lecția a treia: datele, hrana pentru AI.
+Urmează Lecția a treia: datele, hrana pentru A I.

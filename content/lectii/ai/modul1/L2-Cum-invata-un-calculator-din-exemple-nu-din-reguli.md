@@ -101,7 +101,7 @@ Ce se întâmplă? Regula devine confuză și Modelul poate ghici mai prost sau 
 **Partea 4 — Învățare prin încercări**
 
 ### Exemplul 5 — Cald–rece
-Nu toată învățarea folosește etichete. Uneori programul primește doar un semn: **bine** sau **mai greu**.
+Nu toată învățarea folosește etichete. Uneori programul primește doar un semn: **bine** sau **greșit**.
 
 1. Un coleg ascunde un obiect mic în clasă (sau în cameră).  
 2. Tu cauți. Colegul spune doar „cald” când te apropii și „rece” când te îndepărtezi.  
@@ -181,7 +181,7 @@ Răspunde în 3 propoziții: cum învață un calculator din exemple?
 - [ ] Ai jucat „Mașina de sortat” cel puțin o dată, cu antrenare și testare  
 - [ ] Ai completat tabelul din raport  
 - [ ] Ai scris cele 3 propoziții de concluzie  
-- [ ] Ai răspuns la Exercițiul B  
+- [ ] Ai răspuns la Exercițiile B–E  
 - [ ] Foaia se numește `Prenume_Nume_AI1_L2`  
 
 ---

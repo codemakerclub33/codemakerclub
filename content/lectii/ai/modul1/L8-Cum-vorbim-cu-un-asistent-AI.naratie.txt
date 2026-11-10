@@ -1,14 +1,14 @@
-Lecția a opta din Modulul unu, AI pentru copii. Cum vorbim cu un asistent AI.
+Lecția a opta din Modulul unu, A I pentru copii. Cum vorbim cu un asistent A I.
 
-Azi înveți să dai instrucțiuni clare și să pui întrebări bune, la fel ca atunci când vorbești cu un asistent AI. Exersăm pe hârtie, cu un coleg sau cu un adult. Nu ai nevoie de calculator. Proiectul se numește Cartea mea de întrebări bune. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I unu, linie jos, L opt.
+Azi înveți să dai instrucțiuni clare și să pui întrebări bune, la fel ca atunci când vorbești cu un asistent A I. Exersăm pe hârtie, cu un coleg sau cu un adult. Nu ai nevoie de calculator. Proiectul se numește Cartea mea de întrebări bune. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I unu, linie jos, L opt.
 
-Ce facem azi. La final știi de ce o instrucțiune clară dă un rezultat mai bun, cum scrii o cerere cu Cine, Ce, Pentru cine și Cum și de ce verifici răspunsurile unui asistent AI. Dacă îi spui puțin, asistentul ghicește. Dacă îi spui clar, răspunsul este mai bun. Dar poate greși sau poate inventa lucruri care sună adevărate, deci verificăm.
+Ce facem azi. La final știi de ce o instrucțiune clară dă un rezultat mai bun, cum scrii o cerere cu Cine, Ce, Pentru cine și Cum și de ce verifici răspunsurile unui asistent A I. Dacă îi spui puțin, asistentul ghicește. Dacă îi spui clar, răspunsul este mai bun. Dar poate greși sau poate inventa lucruri care sună adevărate, deci verificăm.
 
 Planul orei. Începem cu o recapitulare. Apoi jucăm Robotul literal, comparăm cereri vagi și cereri clare, învățăm rețeta cererii bune, vedem cum verificăm un răspuns și facem cartea noastră. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă.
 
 Cuvinte noi azi. Cererea este ce îi spui asistentului să facă. Cererea clară spune Cine, Ce, Pentru cine și Cum. A inventa înseamnă că asistentul scrie lucruri care sună adevărat, dar nu sunt. Verificarea înseamnă că te asiguri că răspunsul este adevărat.
 
-Exemplul unu. Robotul literal. Lucrați în perechi. Un coleg este robotul și face exact ce i se spune. Spui întâi desenează o casă, apoi o cerere mult mai clară, cu acoperiș roșu, ferestre pătrate și ușă albastră. Compari desenele. Un asistent AI se comportă oarecum la fel: ce nu ai spus, ghicește.
+Exemplul unu. Robotul literal. Lucrați în perechi. Un coleg este robotul și face exact ce i se spune. Spui întâi desenează o casă, apoi o cerere mult mai clară, cu acoperiș roșu, ferestre pătrate și ușă albastră. Compari desenele. Un asistent A I se comportă oarecum la fel: ce nu ai spus, ghicește.
 
 Exemplul doi. Compari o cerere vagă cu una clară. Cererea clară adaugă subiectul exact, lungimea, pentru cine este și cum să arate.
 

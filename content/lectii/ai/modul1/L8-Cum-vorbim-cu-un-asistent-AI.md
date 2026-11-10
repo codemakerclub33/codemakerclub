@@ -253,7 +253,7 @@ Vorbim despre siguranță: ce date nu dăm niciodată și cum recunoaștem lucru
 **Bonus ★★★ — Scara cererilor:**
 
 *Schema logicii:*
-1. Alegi sarcina „desenează un pisoi” și scrii trei cereri, de la vag la clar.  
+1. Alegi sarcina „desenează un animal” și scrii trei cereri, de la vag la clar.  
 2. O persoană din familie joacă robotul literal: desenează exact ce zice fiecare cerere, nimic în plus. Fiecare desen e pe altă foaie.  
 3. Pui desenele unul lângă altul și le notezi de la 1 la 3, după cât seamănă cu ce îți imaginai.  
 4. Scrii o cerere cu „arată pașii”.  

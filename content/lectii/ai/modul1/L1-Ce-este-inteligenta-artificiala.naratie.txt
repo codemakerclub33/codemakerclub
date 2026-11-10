@@ -1,39 +1,39 @@
-Lecția întâi din Modulul unu, AI pentru copii. Ce este inteligența artificială.
+Lecția întâi din Modulul unu, A I pentru copii. Ce este inteligența artificială.
 
-Azi afli ce înseamnă inteligența artificială, pe scurt AI, unde o întâlnești în fiecare zi și cum se deosebește de un program obișnuit. Nu ai nevoie de calculator. Lucrăm cu cartonașe, foi și jocuri. Proiectul se numește Fișa mea: AI în jurul meu. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I unu, linie jos, L unu.
+Azi afli ce înseamnă inteligența artificială, pe scurt A I, unde o întâlnești în fiecare zi și cum se deosebește de un program obișnuit. Nu ai nevoie de calculator. Lucrăm cu cartonașe, foi și jocuri. Proiectul se numește Fișa mea: A I în jurul meu. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I unu, linie jos, L unu.
 
-Ce facem azi. La final știi ce este AI, cum se deosebește de un program cu reguli scrise de om, unde o întâlnești și de ce poate greși. Dacă înțelegi cum funcționează, nu o vezi ca pe o magie. Tu ești cel care decide, nu ea.
+Ce facem azi. La final știi ce este A I, cum se deosebește de un program cu reguli scrise de om, unde o întâlnești și de ce poate greși. Dacă înțelegi cum funcționează, nu o vezi ca pe o magie. Tu ești cel care decide, nu ea.
 
-Planul orei. Începem cu jocul Om sau mașină. Apoi vedem programul cu reguli și programul care învață din exemple. După aceea sortăm cartonașe, vedem cum vede un calculator o imagine, vorbim despre greșelile AI și facem fișa. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă.
+Planul orei. Începem cu jocul Om sau mașină. Apoi vedem programul cu reguli și programul care învață din exemple. După aceea sortăm cartonașe, vedem cum vede un calculator o imagine, vorbim despre greșelile A I și facem fișa. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă.
 
-Cuvinte noi azi. AI este un program care a învățat tipare din foarte multe exemple. Un program cu reguli face exact ce a scris omul. Exemplele sunt lucrurile din care învață AI, fiecare cu eticheta ei. Pixelul este un pătrățel dintr-o imagine, cu un număr în el.
+Cuvinte noi azi. A I este un program care a învățat tipare din foarte multe exemple. Un program cu reguli face exact ce a scris omul. Exemplele sunt lucrurile din care învață A I, fiecare cu eticheta ei. Pixelul este un pătrățel dintr-o imagine, cu un număr în el.
 
-Ce este AI. Inteligența artificială înseamnă programe care pot face lucruri la care ne gândim că e nevoie de minte: să recunoască o poză, să înțeleagă o frază sau să aleagă un videoclip pentru tine. Atenție, AI nu gândește ca un om. Nu simte și nu înțelege lumea ca noi. Este un program care a învățat tipare din foarte multe exemple.
+Ce este A I. Inteligența artificială înseamnă programe care pot face lucruri la care ne gândim că e nevoie de minte: să recunoască o poză, să înțeleagă o frază sau să aleagă un videoclip pentru tine. Atenție, A I nu gândește ca un om. Nu simte și nu înțelege lumea ca noi. Este un program care a învățat tipare din foarte multe exemple.
 
 Exemplul unu. Om sau mașină. Cineva din familie sau profesorul citește opt sarcini, iar tu ridici cartonașul Om sau Mașină. La unele răspunsuri nu suntem de acord, și asta este bine.
 
-Exemplele doi și trei. Un program obișnuit face exact ce a scris omul. Un program cu AI primește foarte multe exemple și găsește singur ce au în comun. În joc, încerci întâi să explici unei persoane cum recunoaște o pisică doar cu reguli. Regulile se strică repede. Apoi primești douăzeci de poze cu etichete și înveți din exemple, exact cum învață AI.
+Exemplele doi și trei. Un program obișnuit face exact ce a scris omul. Un program cu A I primește foarte multe exemple și găsește singur ce au în comun. În joc, încerci întâi să explici unei persoane cum recunoaște o pisică doar cu reguli. Regulile se strică repede. Apoi primești douăzeci de poze cu etichete și înveți din exemple, exact cum învață A I.
 
-Exemplul patru. Sortăm cartonașe în două grupe: folosește AI și nu folosește AI. Ceasul deșteptător și becul care se aprinde la o oră fixă urmează o regulă simplă, deci nu sunt AI. Traducerea, recomandările de videoclipuri, filtrele foto și comenzile vocale folosesc AI.
+Exemplul patru. Sortăm cartonașe în două grupe: folosește A I și nu folosește A I. Ceasul deșteptător și becul care se aprinde la o oră fixă urmează o regulă simplă, deci nu sunt A I. Traducerea, recomandările de videoclipuri, filtrele foto și comenzile vocale folosesc A I.
 
 Exemplul cinci. Un calculator nu vede poze ca noi. Vede numere. O imagine este o grilă de pixeli, iar fiecare pixel are un număr. Desenezi litera T pe o grilă de cinci pe cinci, cu unu pe pătrățelele colorate și zero pe cele goale.
 
-Exemplele șase și șapte. AI poate greși, pentru că se bazează pe exemplele văzute. Dacă sunt puține sau nu seamănă cu realitatea, greșește. AI nu este magie: nu știe ce simți, nu înțelege lumea ca noi, nu este mereu corectă și nu decide pentru tine.
+Exemplele șase și șapte. A I poate greși, pentru că se bazează pe exemplele văzute. Dacă sunt puține sau nu seamănă cu realitatea, greșește. A I nu este magie: nu știe ce simți, nu înțelege lumea ca noi, nu este mereu corectă și nu decide pentru tine.
 
-Exemplul opt. Completezi fișa AI în jurul meu: cinci locuri cu AI, o explicație în trei propoziții pentru unul dintre ele și un desen.
+Exemplul opt. Completezi fișa A I în jurul meu: cinci locuri cu A I, o explicație în trei propoziții pentru unul dintre ele și un desen.
 
-Greșeli frecvente. Să crezi că AI este un robot care gândește, că știe tot, că orice program este AI sau că tot ce spune este adevărat.
+Greșeli frecvente. Să crezi că A I este un robot care gândește, că știe tot, că orice program este A I sau că tot ce spune este adevărat.
 
-De făcut azi. Minimul este fișa cu cinci locuri, explicația și desenul. Completul înseamnă și jocul cu reguli sau exemple, sortarea cartonașelor, trei greșeli posibile ale AI și exercițiile de la B până la E.
+De făcut azi. Minimul este fișa cu cinci locuri, explicația și desenul. Completul înseamnă și jocul cu reguli sau exemple, sortarea cartonașelor, trei greșeli posibile ale A I și exercițiile de la B până la E.
 
-Provocare pentru cine termină mai repede: Jocul cu cartonașe. Faci zece cartonașe, cu un lucru din viața de zi cu zi pe fiecare, și scrii pe spate de ce folosește sau nu folosește AI. Cel puțin două sunt cu capcană. Joci cu cineva din familie și notezi câte a ghicit corect. Numele foii se termină cu Cartonase.
+Provocare pentru cine termină mai repede: Jocul cu cartonașe. Faci zece cartonașe, cu un lucru din viața de zi cu zi pe fiecare, și scrii pe spate de ce folosește sau nu folosește A I. Cel puțin două sunt cu capcană. Joci cu cineva din familie și notezi câte a ghicit corect. Numele foii se termină cu Cartonase.
 
-Recapitulare. AI învață tipare din exemple. Un program obișnuit urmează reguli scrise de om. Un calculator vede imaginile ca numere. AI poate greși, nu simte și nu decide pentru tine.
+Recapitulare. A I învață tipare din exemple. Un program obișnuit urmează reguli scrise de om. Un calculator vede imaginile ca numere. A I poate greși, nu simte și nu decide pentru tine.
 
-Schema pe scurt, pe foaie: reguli scrise de om înseamnă program obișnuit. Multe exemple duc la tipare, apoi la AI, care poate greși, deci verificăm.
+Schema pe scurt, pe foaie: reguli scrise de om înseamnă program obișnuit. Multe exemple duc la tipare, apoi la A I, care poate greși, deci verificăm.
 
-Întrebări de verificare. Ce este AI? Care este diferența dintre un program cu reguli și unul cu AI? Dă două exemple. Cum vede un calculator o imagine? De ce poate greși AI?
+Întrebări de verificare. Ce este A I? Care este diferența dintre un program cu reguli și unul cu A I? Dă două exemple. Cum vede un calculator o imagine? De ce poate greși A I?
 
-Temă. Termină fișa, întreabă pe cineva din familie unde crede că folosește AI, alege un lucru din casă pe care să îl explici și desenează litera ta preferată pe grila de cinci pe cinci. Numele foii se termină cu Tema.
+Temă. Termină fișa, întreabă pe cineva din familie unde crede că folosește A I, alege un lucru din casă pe care să îl explici și desenează litera ta preferată pe grila de cinci pe cinci. Numele foii se termină cu Tema.
 
 Urmează Lecția a doua: cum învață un calculator din exemple.

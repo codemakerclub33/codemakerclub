@@ -1,8 +1,8 @@
-Lecția a treia din Modulul unu, AI pentru copii. Date: hrana pentru AI.
+Lecția a treia din Modulul unu, A I pentru copii. Date: hrana pentru A I.
 
-Azi afli ce sunt datele, de ce AI are nevoie de ele și cum arată un set de date bun. Strângi date printr-un sondaj și le pui într-un tabel și într-o diagramă. Nu ai nevoie de calculator. Proiectul se numește Setul meu de date. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I unu, linie jos, L trei.
+Azi afli ce sunt datele, de ce A I are nevoie de ele și cum arată un set de date bun. Strângi date printr-un sondaj și le pui într-un tabel și într-o diagramă. Nu ai nevoie de calculator. Proiectul se numește Setul meu de date. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I unu, linie jos, L trei.
 
-Ce facem azi. La final știi ce sunt datele, ce tipuri există, cum strângi date într-un tabel și ce înseamnă date bune sau date proaste. Dacă datele sunt multe, variate și corecte, modelul învață bine. Dacă sunt puține, repetitive sau greșite, învață prost. De aceea datele sunt hrana pentru AI.
+Ce facem azi. La final știi ce sunt datele, ce tipuri există, cum strângi date într-un tabel și ce înseamnă date bune sau date proaste. Dacă datele sunt multe, variate și corecte, modelul învață bine. Dacă sunt puține, repetitive sau greșite, învață prost. De aceea datele sunt hrana pentru A I.
 
 Planul orei. Începem cu o recapitulare. Apoi vedem ce sunt datele, facem sondajul clasei și diagrama cu bare, comparăm date bune și date proaste și construim setul nostru de date. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă.
 
@@ -30,7 +30,7 @@ De făcut azi. Minimul este un tabel cu cel puțin opt răspunsuri și totaluril
 
 Provocare pentru cine termină mai repede: Setul slab și setul bun. Alegi o categorie și faci două seturi de câte șase exemple, unul prea la fel și unul variat. Bifezi lista pentru fiecare, lași pe cineva din familie să aleagă setul mai bun și scrii trei propoziții despre ce ar greși un model antrenat cu setul slab. Numele foii se termină cu Seturi.
 
-Recapitulare. Datele sunt informații. AI învață din date. Un set bun este suficient de mare, variat, corect și potrivit. Nu strângem date personale.
+Recapitulare. Datele sunt informații. A I învață din date. Un set bun este suficient de mare, variat, corect și potrivit. Nu strângem date personale.
 
 Schema pe scurt, pe foaie: date, set mare, variat, corect și potrivit, model bun. Date proaste duc la rezultate proaste.
 

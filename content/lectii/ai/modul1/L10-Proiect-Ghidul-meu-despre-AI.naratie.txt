@@ -1,14 +1,14 @@
-Lecția a zecea din Modulul unu, AI pentru copii. Proiect: Ghidul meu despre AI.
+Lecția a zecea din Modulul unu, A I pentru copii. Proiect: Ghidul meu despre A I.
 
 Azi pui laolaltă tot ce ai învățat și faci un ghid pe hârtie pentru un coleg, un frate sau un părinte. La final rezolvi testul final al modulului. Nu ai nevoie de calculator. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I unu, linie jos, L zece.
 
-Ce facem azi. La final ai un ghid de șase pagini care explică simplu și corect ce este AI, cum învață, ce sunt datele, unde greșește, cum îl folosim și cum ne ferim de pericole. Rezolvi testul final și primești insigna AI Explorer. Când poți explica un lucru altcuiva, înseamnă că l-ai înțeles cu adevărat.
+Ce facem azi. La final ai un ghid de șase pagini care explică simplu și corect ce este A I, cum învață, ce sunt datele, unde greșește, cum îl folosim și cum ne ferim de pericole. Rezolvi testul final și primești insigna A I Explorer. Când poți explica un lucru altcuiva, înseamnă că l-ai înțeles cu adevărat.
 
 Planul orei. Începem cu o recapitulare a lecțiilor de până acum. Apoi facem planul ghidului, scriem și desenăm paginile, verificăm și corectăm, prezentăm ghidul și rezolvăm testul final. Exercițiile de la B până la D și provocarea sunt pentru cine termină mai repede, sau pentru acasă.
 
 Cuvinte noi azi. Ghidul este un material scurt care explică un subiect altcuiva. Caseta Rețineți conține un singur lucru important. Autoevaluarea înseamnă că te gândești sincer ce ai învățat. Testul final are cele zece întrebări ale modulului.
 
-Exemplul unu. Ghidul are o copertă și șase pagini: ce este AI, cum învață AI, datele, unde greșește AI, cum vorbești cu un asistent și cum rămâi în siguranță. Alegi cui îi adresezi ghidul și scrii pe copertă: Ghid despre AI pentru.
+Exemplul unu. Ghidul are o copertă și șase pagini: ce este A I, cum învață A I, datele, unde greșește A I, cum vorbești cu un asistent și cum rămâi în siguranță. Alegi cui îi adresezi ghidul și scrii pe copertă: Ghid despre A I pentru.
 
 Exemplele doi și trei. Fiecare pagină are un titlu, două până la patru propoziții scrise cu cuvintele tale, un desen sau o schemă și o casetă Rețineți cu un singur lucru important. Nu copia din lecții și nu pune date personale. Dacă timpul este scurt, completează cel puțin patru pagini.
 
@@ -18,18 +18,18 @@ Exemplul cinci. Prezinți ghidul în două minute: spui la ce folosește, arăț
 
 Exemplul șase. Rezolvi cele zece întrebări ale testului final, fără să te uiți în lecții.
 
-Greșeli frecvente. Să copiezi din lecții, să pui poze personale, să crezi că AI este magic, că ghidul trebuie să fie lung sau că nu trebuie să verifici.
+Greșeli frecvente. Să copiezi din lecții, să pui poze personale, să crezi că A I este magic, că ghidul trebuie să fie lung sau că nu trebuie să verifici.
 
-De făcut azi. Minimul este coperta și patru pagini completate. Completul înseamnă toate cele șase pagini cu desene, pagina de autoevaluare, prezentarea și testul final rezolvat. Pentru Complet și testul final primești insigna AI Explorer.
+De făcut azi. Minimul este coperta și patru pagini completate. Completul înseamnă toate cele șase pagini cu desene, pagina de autoevaluare, prezentarea și testul final rezolvat. Pentru Complet și testul final primești insigna A I Explorer.
 
 Provocare pentru cine termină mai repede: Jocul de cărți din ghid. Faci zece cartonașe cu întrebarea pe față și răspunsul pe spate, cel puțin unul din fiecare pagină a ghidului. Un cartonaș este o capcană. Joci cu cineva din familie, fără ca ea să se uite în ghid, și notezi câte răspunsuri a dat corect. La greșeli scrii pe ce pagină din ghid se află răspunsul. Numele foii se termină cu Carti.
 
-Recapitulare. AI învață din exemple și poate greși. Datele bune sunt multe, variate și corecte. Probabil nu înseamnă sigur. Un model oglindește datele. La asistenți, cerere clară și verificare. Pentru siguranță, Stop, Gândește, Întreabă și fără date personale.
+Recapitulare. A I învață din exemple și poate greși. Datele bune sunt multe, variate și corecte. Probabil nu înseamnă sigur. Un model oglindește datele. La asistenți, cerere clară și verificare. Pentru siguranță, Stop, Gândește, Întreabă și fără date personale.
 
-Schema pe scurt, pe foaie: AI, exemple, date bune, probabil nu înseamnă sigur, verific, cerere clară, siguranță, ghidul meu, insigna AI Explorer.
+Schema pe scurt, pe foaie: A I, exemple, date bune, probabil nu înseamnă sigur, verific, cerere clară, siguranță, ghidul meu, insigna A I Explorer.
 
-Testul final. Ce este AI? Care este diferența dintre un program cu reguli și unul cu AI? Ce înseamnă antrenarea unui model? Ce sunt datele? Ce înseamnă un set de date variat? Cum calculezi acuratețea? De ce poate greși AI chiar dacă alege cel mai probabil răspuns? Care sunt cele patru părți ale unei cereri bune? Dă trei date roșii. Ce înseamnă Stop, Gândește, Întreabă?
+Testul final. Ce este A I? Care este diferența dintre un program cu reguli și unul cu A I? Ce înseamnă antrenarea unui model? Ce sunt datele? Ce înseamnă un set de date variat? Cum calculezi acuratețea? De ce poate greși A I chiar dacă alege cel mai probabil răspuns? Care sunt cele patru părți ale unei cereri bune? Dă trei date roșii. Ce înseamnă Stop, Gândește, Întreabă?
 
 Temă. Arată ghidul cuiva din familie și întreabă ce ar adăuga, explică un lucru din ghid unui prieten, păstrează ghidul într-un loc sigur și fă o copie pentru un coleg. Numele foii se termină cu Tema.
 
-Felicitări! Ai terminat Modulul unu din AI pentru copii și ai primit insigna AI Explorer. Continuă să fii curios și să verifici tot ce afli.
+Felicitări! Ai terminat Modulul unu din A I pentru copii și ai primit insigna A I Explorer. Continuă să fii curios și să verifici tot ce afli.

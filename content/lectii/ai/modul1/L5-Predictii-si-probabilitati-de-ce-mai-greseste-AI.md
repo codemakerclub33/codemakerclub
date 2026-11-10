@@ -143,7 +143,7 @@ Completezi ultima coloană după ce afli rezultatul.
 
 **Gata când:**  
 - [ ] Tabelul are 5 predicții, fiecare cu gradul de încredere  
-- [ ] Am ghicit cuvântul următor la „Câinele roade un…”  
+- [ ] Am completat „Ce am aflat” pentru cel puțin 2 predicții  
 
 ---
 
@@ -186,7 +186,7 @@ Scrie 3 propoziții neterminate și răspunsul cel mai probabil pentru fiecare, 
 
 **Exercițiul D — Probabil sau sigur?**  
 Spune pentru fiecare dacă este „sigur” sau „probabil”:
-1. Mâine va fi marți.  
+1. După luni vine marți.  
 2. Mâine va ploua.  
 3. Cineva din clasă are numele Maria.  
 4. După noapte vine ziua.
@@ -255,7 +255,7 @@ Vorbim despre greșelile AI și despre prejudecăți: ce se întâmplă când da
 
 ## Răspunsuri
 - **Quiz scurt:** (1) o presupunere despre ce va urma; (2) în 7 din 10 situații asemănătoare a plouat; ploaia este probabilă, dar nu sigură; (3) da, pentru că probabil nu înseamnă sigur; (4) a văzut foarte multe texte și alege cuvântul care apare cel mai des după acel început; (5) pentru că poate greși, chiar dacă pare sigur.  
-- **Exemplul 2:** (1) sigur; (2) probabil, 50%; (3) puțin probabil; (4) sigur.  
+- **Exemplul 2:** (1) sigur; (2) 50% șanse: acceptați „probabil” sau „puțin probabil”, cu explicație; (3) puțin probabil; (4) sigur.  
 - **Exemplul 4:** nu există un singur răspuns; contează observația că ies mai multe variante.  
 - **Exercițiul B:** rezultatele variază; important este ca elevul să observe că nu iese perfect egal.  
 - **Exercițiul D:** (1) sigur; (2) probabil; (3) probabil (depinde de clasă); (4) sigur.  

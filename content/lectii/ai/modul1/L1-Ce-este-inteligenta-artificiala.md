@@ -175,7 +175,7 @@ Completăm împreună pe tablă:
 Pe o foaie A4, lucrezi singur:
 
 1. Scrie titlul: **„AI în jurul meu”**.  
-2. Listează 5 locuri din viața ta unde cred că este AI (aplicații, jocuri, telefon, casă).  
+2. Listează 5 locuri din viața ta unde crezi că este AI (aplicații, jocuri, telefon, casă).  
 3. Alege unul și răspunde în 3 propoziții: ce face, de unde crezi că a învățat și ce greșeală ar putea face.  
 4. Desenează un mic desen care îl arată.
 
@@ -297,7 +297,7 @@ Aflăm cum învață un calculator din exemple: facem noi pe hârtie „antrenar
 ## Răspunsuri
 - **Quiz scurt:** (1) programe care învață tipare din multe exemple și fac lucruri pentru care ne gândim că e nevoie de „minte”; (2) programul cu reguli urmează reguli scrise de om, cel cu AI învață din exemple; (3) de exemplu traducerea automată, recomandările de videoclipuri, filtrele foto, comenzile vocale; (4) ca numere, adică pixeli cu valori; (5) pentru că se bazează pe exemplele văzute: dacă sunt puține sau nu seamănă cu realitatea, greșește.  
 - **Exemplul 1:** nu există un singur răspuns corect; scopul este discuția. În general: mașina este bună la calcul, traducere rapidă și căutare în multe date; omul la emoții, glume și alegeri care țin de suflet.  
-- **Exemplul 4:** folosesc AI: traducerea, recomandările de videoclipuri, filtrele foto, comanda vocală, șahul (în versiunile moderne); nu folosesc AI: calculatorul de buzunar, ceasul deșteptător, becul cu oră fixă. Acceptați și „nu știu sigur”, cu explicație.  
+- **Exemplul 4:** folosesc AI: traducerea, recomandările de videoclipuri, filtrele foto, comanda vocală; șahul depinde de program (unele învață din multe partide, altele doar calculează după reguli: acceptați ambele, cu explicație); nu folosesc AI: calculatorul de buzunar, ceasul deșteptător, becul cu oră fixă. Acceptați și „nu știu sigur”, cu explicație.  
 - **Exercițiul B:** (1) reguli; (2) exemple; (3) reguli; (4) exemple.  
 - **Exercițiul C:** (1) greșit, AI nu gândește ca un om, ci a învățat tipare; (2) corect; (3) greșit, AI poate greși; (4) greșit, un program cu reguli simple nu este AI.  
 - **Exercițiul D:** litera L este o coloană de 1 în stânga și o linie de 1 jos: `1 0 0 0 0` pe primele 4 rânduri, apoi `1 1 1 1 1` pe ultimul.  

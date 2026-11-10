@@ -1,8 +1,8 @@
-Lecția a patra din Modulul unu, AI pentru copii. Clasificare: pisică sau câine.
+Lecția a patra din Modulul unu, A I pentru copii. Clasificare: pisică sau câine.
 
 Azi afli cum alege un model între două sau mai multe categorii. Vezi ce sunt trăsăturile, cum se dă un scor și ce se întâmplă când modelul nu este sigur. Facem un clasificator de hârtie. Proiectul se numește Clasificatorul meu de hârtie. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I unu, linie jos, L patru.
 
-Ce facem azi. La final știi ce înseamnă clasificare, ce sunt trăsăturile, cum folosește un model scorurile ca să aleagă și cum numeri câte răspunsuri sunt corecte. Multe lucruri pe care le face AI sunt clasificări, de exemplu spam sau mesaj normal.
+Ce facem azi. La final știi ce înseamnă clasificare, ce sunt trăsăturile, cum folosește un model scorurile ca să aleagă și cum numeri câte răspunsuri sunt corecte. Multe lucruri pe care le face A I sunt clasificări, de exemplu spam sau mesaj normal.
 
 Planul orei. Începem cu o recapitulare despre date bune și date proaste. Apoi vedem ce este clasificarea, trăsăturile și scorurile, cazurile nesigure, testarea cu numărat și construim clasificatorul nostru. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă.
 
