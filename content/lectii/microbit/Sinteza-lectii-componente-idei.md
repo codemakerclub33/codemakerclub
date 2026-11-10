@@ -33,7 +33,7 @@ Teme (idei): L1 numărătoare inversă (5), L7 Spectacolul de lumini, L8 Contoru
 | 7 | Mesaje secrete | rescrisă | Detectivul de coduri | cifru |
 | 8 | Recordul păstrat (test de reflexe) | rescrisă | Campionul clasei (record cu nume în fișier) | — |
 | 9 | Cutia Exploratorului | rescrisă | Jurnalul păstrat | — |
-| 10 | Expoziția Python Pro + badge | de rescris, fără radio | Găsește comoara | 36 |
+| 10 | Expoziția Python Pro + badge | rescrisă, fără radio | Găsește comoara | 36 |
 
 Idei respinse pentru M2: 35 și 15.
 
@@ -61,7 +61,7 @@ Idei respinse pentru M2: 35 și 15.
 | M2 L7 | butoane, accelerometru, gesturi, funcții, liste (text, `find`, `split`) |
 | M2 L8 | butoane, accelerometru, gesturi, fișiere (`open`), timp, funcții |
 | M2 L9 | butoane, accelerometru, gesturi, lumină, temperatură, busolă, fișiere, timp, funcții, liste, pixeli |
-| M2 L10 | de curățat (mai are mențiuni de radio) |
+| M2 L10 | rescrisă: cod curat, fișă, Verificare M2 (fără radio) |
 
 Folosite în total: afișaj și imagini, butoane (inclusiv A+B), accelerometru și gesturi, senzor de lumină, temperatură, busolă, microfon (doar o dată, V2), muzică, fișiere, `running_time`, random, liste, funcții.
 Nefolosite: radio, logo tactil, pini, NeoPixels, jurnal `log`.
