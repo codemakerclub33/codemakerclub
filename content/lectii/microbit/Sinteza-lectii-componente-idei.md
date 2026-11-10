@@ -31,7 +31,7 @@ Teme (idei): L1 numărătoare inversă (5), L7 Spectacolul de lumini, L8 Contoru
 | 5 | Busola digitală | rescrisă | Busola cu 8 direcții (litere, `ultima`) | 14 |
 | 6 | Labirintul înclinat | rescrisă (comasat) | Chei, capcane și cronometru | — |
 | 7 | Mesaje secrete | rescrisă | Detectivul de coduri | cifru |
-| 8 | Recordul păstrat | de rescris | top 3 recorduri + nume | — |
+| 8 | Recordul păstrat (test de reflexe) | rescrisă | Campionul clasei (record cu nume în fișier) | — |
 | 9 | Cutia Exploratorului | rescrisă | Jurnalul păstrat | — |
 | 10 | Expoziția Python Pro + badge | de rescris, fără radio | Găsește comoara | 36 |
 

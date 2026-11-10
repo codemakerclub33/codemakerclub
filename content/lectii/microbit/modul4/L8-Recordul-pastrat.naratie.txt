@@ -1,25 +1,33 @@
 Lecția opt. Recordul păstrat.
 
-Variabilele uită totul când oprești placa. Astăzi înveți să scrii într-un fișier pe placă, ca recordul tău să rămână și după ce o oprești și o pornești din nou. Faci un joc de scuturat: câte scuturări reușești în zece secunde? Proiectul se numește Recordul păstrat. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P doi, linie jos, L zero opt.
+Variabilele uită totul când oprești placa. Astăzi înveți să scrii într-un fișier pe placă, ca recordul tău să rămână și după ce o oprești și o pornești din nou. Faci testul de reflexe: cât de repede apeși A când apare semnalul? Proiectul se numește Recordul păstrat. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P doi, linie jos, L zero opt.
 
-Obiectivul. La final scrii și citești un fișier cu open, tratezi lipsa fișierului cu try și except și păstrezi un record. Minim: jocul de scuturat de zece secunde, care salvează recordul în fișier și îl arată la B. Complet: minim, plus numărătoare inversă trei, doi, unu și A și B șterg recordul.
+Ce facem azi. La final scrii și citești un fișier cu open, tratezi lipsa fișierului cu try și except, pe care le înveți chiar azi, și păstrezi un record. Aplicațiile adevărate își amintesc: scorul cel mai bun, setările, ultimul nivel. Ele salvează în fișiere. Azi faci același lucru, în mic, pentru testul de reflexe din primul modul.
 
-De ce contează. Aplicațiile adevărate își amintesc scorul cel mai bun, setările, ultimul nivel. Ele salvează în fișiere. Azi faci același lucru, în mic.
+Planul orei. Începem cu o recapitulare a lui str și int din lecția șapte și a lui running time din primul modul. Apoi învățăm fișierele: open, write, read și lipsa fișierului. După aceea facem o rundă de reflexe, apoi testul cu record păstrat, în varianta Minim, apoi resetarea și mesajul de record, în varianta Complet. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă.
 
-Atenție. Fișierele sunt păstrate în memoria plăcii. Nu scrie în fișier la fiecare tură de buclă, pentru că memoria se uzează. Scriem doar când se schimbă recordul. Dacă încarci din nou programul pe placă, fișierele pot fi șterse. Recordul se păstrează cât timp oprești și pornești placa, fără să o reprogramezi.
+Atenție. Fișierele sunt păstrate în memoria plăcii. Nu scrie în fișier la fiecare tură de buclă, pentru că memoria se uzează. Scriem doar când se schimbă recordul. Dacă încarci din nou programul pe placă, fișierele pot fi șterse. Recordul se păstrează cât timp o oprești și o pornești, fără să o reprogramezi.
 
-Primul pas. Un fișier este ca un caiet. Open cu w deschide pentru scris, open simplu deschide pentru citit, iar with închide fișierul singur la final.
+Instrucțiuni noi. With open cu w deschide fișierul pentru scris, șterge ce era și îl închide singur. With open fără w îl deschide pentru citit. Fișierul ține text: numărul îl transformăm în text cu str la scriere și în număr cu int la citire. Try și except OSError înseamnă: încearcă, iar dacă fișierul lipsește, fă altceva. Running time dă milisecundele de la pornirea plăcii. Ajutor în editor: în panoul Reference caută File system, Data types și Maths.
 
-Exemplul unu. Scriem un fișier. Exemplul doi. Îl citim cu read. Exemplul trei. Dacă fișierul nu există, apare OSError, iar cu try și except programul nu se oprește. Exemplul patru. Salvăm un număr: str la scriere, int la citire. Exemplul cinci. Funcții pentru record: citește record și salvează record. Dacă fișierul lipsește sau are conținut ciudat, recordul este zero.
+Primul pas. Un fișier este ca un caiet. Open cu w deschide caietul pentru scris. Open fără w îl deschide pentru citit. With îl închide singur la final. Exemplul unu. Scriem și citim: write pune textul în fișier, iar read dă tot textul din fișier. Poți vedea fișierul în editor, la fila Files, cu placa conectată.
 
-Exemplul șase. Câte porniri: placa numără de câte ori a pornit, tot cu fișier. Apeși RESET, nu reîncarci programul. Exemplul șapte. O rundă de joc: numărăm scuturările în zece secunde, cu running time. Exemplul opt. Numărătoarea inversă. Exemplul nouă. Jocul Minim: A pornește runda, dacă scorul bate recordul îl salvăm, iar B arată recordul. Exemplul zece. Jocul Complet: A și B pun recordul pe zero și îl salvează.
+Al doilea pas. Fișierul nu există. Dacă încerci să citești un fișier care nu există, apare eroarea OSError. Cu try spui încearcă, iar cu except OSError spui, dacă apare eroarea asta, fă în schimb altceva. Astfel programul nu se oprește. Exemplul doi. Programul ne spune frumos că fișierul lipsește.
 
-Greșeli frecvente. Recordul dispare: ai reîncărcat programul. OSError la citire: fișierul nu există încă, folosește try. Eroare la write: vrea text, folosește str. Eroare la int: fișierul este gol sau conține text. Scrii la fiecare tură: salvează doar când recordul se schimbă. Eroare la show: numărul trebuie transformat în text.
+Exemplul trei. Funcții pentru record. Punem citirea și scrierea în funcții. Când nu există încă un record, folosim un număr foarte mare, pe care orice timp îl bate. Dacă fișierul lipsește sau are conținut ciudat, recordul este acel număr mare. Exemplul patru. Câte porniri: placa numără de câte ori a pornit, tot cu fișier. Apasă RESET, în spate: numărul crește. Nu reîncărca programul, altfel pornești de la început.
 
-Proiectul de azi. Recordul păstrat.
+Al treilea pas. Testul de reflexe. Placa așteaptă un timp la întâmplare, apoi arată un semnal. Tu apeși A cât poți de repede, iar placa măsoară milisecundele. Dacă apeși înainte de semnal, rezultatul nu se pune. Exemplul cinci. O rundă de reflexe. Apăsarea veche pe A se golește la început. Dacă A a fost apăsat în timpul așteptării, e prea devreme și funcția întoarce minus unu. Altfel apare ținta, pornește cronometrul și așteptăm A.
 
-Minim înseamnă: joc de zece secunde, record salvat și arătat la B. Complet înseamnă: minim, plus numărătoarea și resetarea. Dacă rămâi în urmă, salvează la Minim.
+Exemplul șase. Testul Minim. A pornește o rundă, iar rezultatul se derulează în milisecunde. Aici mai mic este mai bun: dacă timpul bate recordul, îl salvăm în fișier. B arată recordul. La pornire, recordul se citește din fișier. Exemplul șapte. Testul Complet: A și B împreună pun recordul înapoi pe fără record și îl salvează, iar la record nou se derulează mesajul Record. Verificăm A și B împreună primul, ca să nu fie mâncat de A sau de B separat.
 
-Recapitulare. Fișierele păstrează date și după oprirea plăcii. Open cu w scrie, open citește. Fișierul păstrează text: str și int. Fișierul lipsă dă OSError, pe care îl prindem. Scriem doar când este nevoie.
+Greșeli frecvente. Recordul dispare: ai reîncărcat programul pe placă. Eroare la citire: fișierul nu există încă, folosește try și except. Eroare la write: write vrea text, folosește str. Eroare la int: fișierul e gol sau conține text, prinde ValueError. Scrii la fiecare tură: salvează doar când recordul se schimbă. Timpul e mic și ciudat: ai apăsat A de la începutul rundei, golește memoria butonului înainte de așteptare.
 
-Succes la record.
+Proiectul de azi. Recordul păstrat. Minim: testul de reflexe, prea devreme nu se numără, recordul se salvează în fișier și B îl arată. Complet: minim, plus A și B resetează recordul și apare mesajul de record.
+
+Provocarea. Campionul clasei. Mai mulți colegi folosesc aceeași placă, iar placa ține minte cine are cel mai bun timp, nu doar timpul. Fișierul păstrează numele și timpul într-un singur text, separate prin virgulă, iar la citire îl tai cu split. B alege jucătorul următor, A pornește runda, iar scuturarea derulează campionul. Numele fișierului se termină cu Campion.
+
+Recapitulare. Fișierele păstrează date și după oprirea plăcii. Open cu w scrie, open fără w citește. Fișierul păstrează text, de aceea folosim str și int. Fișierul lipsă dă OSError, prins cu try și except. Scriem doar când e nevoie.
+
+Tema. Numele meu. Acasă, în editor, scrii un program care salvează într-un fișier numele tău și îl citește la pornire. Dacă fișierul există, derulează salut și numele. Dacă lipsește, derulează că nu te cunoaște, cu try și except. Dacă simulatorul nu păstrează fișierul după oprire, verifică rezultatul pe placă. Numele fișierului se termină cu Tema.
+
+Ce urmează. Lecția nouă. Construiești Cutia Exploratorului: un meniu cu mai multe unelte, de la busolă și termometru la cronometru, cu un record păstrat în fișier.

@@ -65,8 +65,8 @@
 | 4 | Pianul de buzunar | music (V2/buzzer) |
 | 5 | Busola digitală | compass, direcții |
 | 6 | Labirintul înclinat | Accelerometru, hărți text |
-| 7 | Mesaje secrete | Text, split, try/except, cifru |
-| 8 | Recordul păstrat | Fișiere |
+| 7 | Mesaje secrete | Text, split, find, cifru |
+| 8 | Recordul păstrat | Fișiere, try/except, test de reflexe |
 | 9 | Cutia Exploratorului | Proiect final Python Pro |
 | 10 | Expoziția Python Pro + badge | Prezentare + Verificare |
 
