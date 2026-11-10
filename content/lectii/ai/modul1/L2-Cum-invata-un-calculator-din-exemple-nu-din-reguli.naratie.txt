@@ -1,25 +1,39 @@
 Lecția a doua din Modulul unu, AI pentru copii. Cum învață un calculator: din exemple, nu din reguli.
 
-Azi antrenezi un model de hârtie. Primești exemple cu etichete, descoperi regula ascunsă și o testezi pe exemple noi. Nu ai nevoie de calculator.
+Azi antrenezi un model de hârtie. Primești exemple cu etichete, descoperi regula ascunsă și o testezi pe exemple noi. Nu ai nevoie de calculator. Proiectul se numește Raportul antrenorului. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I unu, linie jos, L doi.
 
-Obiectivul. Minim: jocul Mașina de sortat făcut o dată, cu regula ghicită și testată. Complet: în plus compari rezultatul după două exemple și după opt, vezi ce se întâmplă cu o etichetă greșită și completezi raportul.
+Ce facem azi. La final știi ce sunt exemplele, etichetele, antrenarea și testarea, și poți explica de ce un model învață mai bine cu mai multe exemple corecte. Când înțelegi cum se antrenează un model, înțelegi și de ce uneori greșește.
 
-Ideea de bază. Un program cu AI trece prin două etape. Antrenarea: primește exemple cu etichete, adică răspunsul corect, și caută ce au în comun. Testarea: primește exemple noi, fără etichetă, și încearcă să ghicească. Ce a învățat programul se numește model.
+Planul orei. Începem cu o recapitulare. Apoi jucăm Mașina de sortat, vedem câte exemple ajung, vedem ce face o etichetă greșită, jucăm cald și rece și completăm raportul. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă.
 
-Exemplele unu și doi. Jucați în două echipe, Antrenorii și Modelul. Antrenorii desenează forme pe cartonașe și aleg în secret o regulă simplă, de exemplu toate formele roșii sunt A. Modelul vede opt exemple cu etichetă și ghicește regula. Apoi primește patru cartonașe noi și spune A sau B. Notezi scorul.
+Cuvinte noi azi. Eticheta este răspunsul corect scris pe un exemplu. Antrenarea înseamnă că modelul primește exemple cu etichete și caută ce au în comun. Testarea înseamnă că primește exemple noi, fără etichetă, și ghicește. Modelul este ce a învățat programul.
 
-Exemplul trei. Joci o dată cu doar două exemple și o dată cu opt. De obicei cu mai multe exemple ghicești mai bine. Contează și cât de variate sunt.
+Ideea de bază. Un program cu AI trece prin două etape: antrenarea și testarea. Rezultatul antrenării se numește model.
 
-Exemplul patru. Antrenorii schimbă pe ascuns o etichetă. Modelul se încurcă. Exemplele greșite strică antrenarea.
+Exemplul unu. Mașina de sortat. Jucați în două echipe: Antrenorii și Modelul. Antrenorii desenează douăsprezece cartonașe cu forme în culori diferite și aleg în secret o regulă simplă, de exemplu toate formele roșii sunt A, restul sunt B. Pun opt cartonașe cu etichetă, iar Modelul încearcă să ghicească regula.
 
-Exemplul cinci. Cald sau rece. Un coleg ascunde un obiect, iar tu îl cauți. El spune doar cald sau rece. După câteva jocuri găsești mai repede. Așa învață și unele programe, prin încercări și semnale de tip bine sau greșit.
+Exemplul doi. Testarea. Antrenorii arată patru cartonașe noi, fără etichetă. Modelul spune A sau B, iar antrenorii verifică. Notezi scorul și schimbați rolurile.
 
-Exemplul șase. Completezi Raportul antrenorului: un tabel cu scorurile și trei propoziții despre ce ajută și ce încurcă un model.
+Exemplul trei. Repeți jocul, dar Modelul vede întâi doar două exemple, apoi opt. De obicei, cu mai multe exemple ghicești mai bine. Contează și cât de variate sunt exemplele.
 
-Greșeli frecvente. Să crezi că două exemple ajung, că antrenarea și testarea sunt la fel sau că o etichetă greșită nu contează.
+Exemplul patru. Antrenorii schimbă pe ascuns eticheta la un singur cartonaș. Regula devine confuză. Exemplele greșite strică antrenarea, iar dacă datele sunt greșite, modelul învață lucruri greșite.
+
+Exemplul cinci. Cald și rece. Un coleg ascunde un obiect, iar tu cauți. El spune doar cald sau rece. Joci de trei ori și vezi dacă găsești mai repede. Așa învață și unele programe, prin încercări și semnale.
+
+Exemplul șase. Raportul antrenorului. Completezi tabelul cu jocurile făcute și scrii trei propoziții: ce ajută un model să învețe bine și ce îl încurcă.
+
+Greșeli frecvente. Să crezi că două exemple ajung, că antrenarea și testarea sunt la fel, că o etichetă greșită nu contează sau că modelul înțelege regula.
+
+De făcut azi. Minimul este jocul făcut o dată, cu regula ghicită și testată, prima linie din tabel și o propoziție. Completul înseamnă și scorul cu două și cu opt exemple, jocul cu etichetă greșită, tabelul complet, cele trei propoziții și exercițiile de la B până la E.
+
+Provocare pentru cine termină mai repede: Regula cu două trăsături. Faci douăsprezece cartonașe și o regulă care folosește două trăsături deodată, de exemplu cerc și roșu. Pui opt exemple cu etichetă și patru fără, și vezi dacă cineva din familie ghicește regula și cele patru răspunsuri. Numele foii se termină cu Masina.
+
+Recapitulare. Antrenarea folosește exemple cu etichete. Testarea folosește exemple noi. Mai multe exemple variate ajută, iar o etichetă greșită poate strica antrenarea.
+
+Schema pe scurt, pe foaie: exemple cu etichete, antrenare, model, testare pe exemple noi, scor.
 
 Întrebări de verificare. Ce este antrenarea? Ce este testarea? Ce este o etichetă? De ce ajută mai multe exemple? Ce se întâmplă dacă o etichetă este greșită?
 
-Temă. Termină raportul, joacă Mașina de sortat cu cineva din familie și inventează o regulă pe care altcineva să o ghicească.
+Temă. Termină raportul, joacă Mașina de sortat cu cineva din familie, scrie un lucru pe care îl înveți din exemple și inventează o regulă pe care să o ghicească altcineva. Numele foii se termină cu Tema.
 
-Urmează Lecția a treia: date, hrana pentru AI.
+Urmează Lecția a treia: datele, hrana pentru AI.
