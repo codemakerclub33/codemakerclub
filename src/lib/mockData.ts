@@ -168,8 +168,8 @@ export const module = [
   // micro:bit — c8: 2 module blocuri (8+) · c10: 2 module Python (10+)
   { id: 'm21', curs_id: 'c8', nume: 'Modul 1 — MakeCode (blocuri)', ordine: 1, badge: 'micro:bit Starter', descriere: '10 lecții cu un mic proiect în fiecare: trimiți programe pe placă, desenezi pe LED-uri, folosești butoanele, variabilele, deciziile, buclele și senzorii. La final: o insignă inteligentă care adună proiectele din lecțiile trecute.' },
   { id: 'm22', curs_id: 'c8', nume: 'Modul 2 — Proiecte Maker (blocuri)', ordine: 2, badge: 'micro:bit Maker', descriere: '10 lecții cu proiecte mai mari, pe o singură placă: busolă, pedometru, ceas deșteptător, alarmă, jurnal de măsurători, theremin și un șarpe pe 25 de LED-uri. Înveți liste, funcții și depanare. La final: o expoziție Maker cu proiectele tale.' },
-  { id: 'm23', curs_id: 'c10', nume: 'Modul 1 — Python pe micro:bit', ordine: 1, badge: 'micro:bit Coder' },
-  { id: 'm41', curs_id: 'c10', nume: 'Modul 2 — Proiecte Python', ordine: 2, badge: 'micro:bit Python Pro' },
+  { id: 'm23', curs_id: 'c10', nume: 'Modul 1 — Python pe micro:bit', ordine: 1, badge: 'micro:bit Coder', descriere: '10 lecții cu un mic proiect în fiecare: treci de la blocuri la Python și scrii primele programe pe placă. Folosești imagini pe LED-uri, butoane, decizii, bucle, funcții și senzori. Faci un semnalizator, un cufăr cu monede, o roată a norocului și un prieten de pe placă. La final: o expoziție cu proiectul tău.' },
+  { id: 'm41', curs_id: 'c10', nume: 'Modul 2 — Proiecte Python', ordine: 2, badge: 'micro:bit Python Pro', descriere: '10 lecții cu proiecte mai mari, pe o singură placă: liste, bucle, sunet, busolă, hărți, text și fișiere. Faci un panou de misiuni, o carte de glume, un pian de buzunar, o busolă, un labirint înclinat și un jurnal care își amintește datele. La final: o expoziție cu proiectul tău.' },
   // Roblox Studio — 4 module × 10 lecții (12+ ani; Obby pe verticală)
   { id: 'm24', curs_id: 'c12', nume: 'Modul 1 — Place Builder', ordine: 1, badge: 'Place Builder' },
   { id: 'm25', curs_id: 'c12', nume: 'Modul 2 — Script Starter', ordine: 2, badge: 'Script Starter' },

@@ -363,7 +363,7 @@ Adaugă la panou **două misiuni noi**, făcute de tine.
 - Cum adaugi o misiune nouă?
 
 ## Temă
-**Misiunea mea.** Scrie acasă, în editor (merge și în simulator, fără placă), o **misiune nouă** pentru panou, inventată de tine, ca funcție `misiune_...()`. Adaug-o în meniu, cu `NR_MISIUNI` și `elif` în `porneste`. Salvează-l ca `Prenume_Nume_MP2_L01_Tema`.
+**Misiunea mea.** Scrie acasă, în editor (merge și în simulator, fără placă), o **misiune nouă** pentru panou, inventată de tine, ca funcție `misiune_...()`. Adaugă-o în meniu cu `NR_MISIUNI` și `elif` în `porneste`. Salvează-l ca `Prenume_Nume_MP2_L01_Tema`.
 
 ## Ce urmează — Lecția 2
 Înveți **listele** mai bine: faci o carte de mesaje în care dai pagina înainte și înapoi, cu `append`, indexuri și scuturare.

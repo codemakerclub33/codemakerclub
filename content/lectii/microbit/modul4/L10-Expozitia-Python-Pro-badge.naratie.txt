@@ -2,6 +2,8 @@ Lecția zece. Expoziția Python Pro și insigna.
 
 Azi este ziua expoziției finale. Îți prezinți proiectul, explici trei rânduri de cod, citești codul unui coleg, primești păreri și primești insigna micro bit Python Pro.
 
+Proiectul se numește Standul meu Python Pro. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P doi, linie jos, L zece.
+
 Începem cu o recapitulare a modulului doi. Am făcut panouri, liste, bucle, sunet, busolă, hărți, texte, cifruri și fișiere.
 
 Alege un singur proiect de expus. Verifică că rulează pe placă. Fă testul final. Apasă fiecare buton, încearcă fiecare meniu și testează cazurile ciudate. Păstrează o copie a programului.

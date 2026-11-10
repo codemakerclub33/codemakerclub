@@ -123,9 +123,7 @@ Răspunde pe foaie, fără să te uiți în lecții. Răspunsurile sunt la final
 9. Cum scrii într-un fișier numărul `7`?  
 10. Ce face `break` într-o buclă?
 
-**Autoevaluare** (bifează sincer):
-
-Bifează ce poți face **singur**:
+**Autoevaluare:** bifează sincer ce poți face **singur**:
 
 - [ ] organizez un program în funcții și meniu
 - [ ] folosesc liste
