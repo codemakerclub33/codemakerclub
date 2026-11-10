@@ -107,6 +107,7 @@ export const module = [
   { id: 'm43', curs_id: 'c5', nume: 'Modul 5 — Site complet: HTML + CSS + JavaScript', ordine: 5, badge: 'Web Designer', descriere: '10 lecții în care construiești un site de 3–4 pagini: plan, meniu, secțiune de intrare, carduri, galerie, formular de contact, mod întunecat și versiune pe telefon. La final: site-ul tău, publicat gratuit și prezentat.' },
   { id: 'm44', curs_id: 'c5', nume: 'Modul 6 — Jocuri web', ordine: 6, badge: 'Web Game Maker', descriere: '10 lecții în care faci jocuri web cu HTML, CSS și JavaScript: vânătoare de monștri, clicker, Simon spune, cuvântul zilei, dino în deșert și păsărica zburătoare. La final: colecția ta de jocuri.' },
   { id: 'm45', curs_id: 'c13', nume: 'Modul 1 — AI pentru copii', ordine: 1, badge: 'AI Explorer', descriere: 'Ce este inteligența artificială, cum învață din exemple, unde greșește și cum o folosim în siguranță.' },
+  { id: 'm46', curs_id: 'c13', nume: 'Modul 2 — Antrenăm modele AI', ordine: 2, badge: 'AI Maker', descriere: '10 lecții în care lucrezi cu AI pe calculator: antrenezi modele cu obiecte, sunete și mișcări, le testezi și le îmbunătățești, înveți unde greșesc și cum folosești responsabil un asistent AI. La final: aplicația ta cu AI.' },
   // Robotică WeDo 2.0
   { id: 'm12', curs_id: 'c6', nume: 'Modul 1 — Construcție și senzori (WeDo 2.0)', ordine: 1, badge: 'Robot Starter', descriere: '10 lecții în care construiești roboți LEGO WeDo 2.0 pas cu pas și îi programezi cu blocuri colorate: motor, viteză, timp, repetări, semnale și senzori. Pornești de la roverul Milo și ajungi la un rover lunar cu misiune. La final îți prezinți robotul și primești insigna Robot Starter.' },
   { id: 'm13', curs_id: 'c6', nume: 'Modul 2 — Proiecte avansate (WeDo 2.0)', ordine: 2, badge: 'Robot Inventor' },
@@ -523,6 +524,18 @@ export const lectii = [
     'Cum vorbim cu un asistent AI',
     'Siguranță și date personale',
     'Proiect: Ghidul meu despre AI',
+  ]),
+  ...genLectii('m46', [
+    'Laboratorul meu AI',
+    'Primul meu model',
+    'Mai multe exemple, exemple mai bune',
+    'Testăm și măsurăm',
+    'Trei categorii și „nu știu”',
+    'Alt fel de date: sunet sau mișcare',
+    'Păcălim modelul',
+    'Asistentul AI în practică',
+    'AI responsabil: regulile mele',
+    'Proiect: Aplicația mea cu AI',
   ]),
   ...genLectii('m12', [
     'Milo, roverul de știință',

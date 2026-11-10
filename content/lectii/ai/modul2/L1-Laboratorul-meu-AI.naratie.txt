@@ -1,0 +1,37 @@
+Lecția întâi din Modulul doi, Antrenăm modele A I. Laboratorul meu A I.
+
+Azi deschidem laboratorul de A I. Stabilim regulile de lucru, aflăm cum se antrenează un model pe calculator și facem împreună primul model, cu obiecte de pe masă. Lucrăm la calculator, cu un adult prezent dacă se poate. Proiectul se numește Fișa laboratorului meu A I. Numele folderului este: Prenume, linie jos, Nume, linie jos, A I doi, linie jos, L unu.
+
+Ce facem azi. La final știi ce faci și ce nu faci când lucrezi cu un model A I pe calculator, cunoști cei trei pași ai unui model, adună exemple, antrenează, testează, și ai făcut primul tău model cu două obiecte. În Modulul unu ai lucrat pe hârtie. Acum folosim o unealtă reală, gratuită, care rulează în browser. Înainte de orice experiment, stabilim regulile.
+
+Planul orei. Începem cu un joc de recapitulare. Apoi facem semaforul laboratorului, aflăm ce poate unealta, construim împreună primul model, citim răspunsul lui și completăm fișa. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă. Ai nevoie de un calculator cu cameră web, un browser actual și trei sau patru obiecte mici și diferite de pe masă. Dacă nu ai cameră, adultul poate încărca poze cu obiecte, făcute în prealabil.
+
+Cuvinte noi azi. Clasa este o grupă pe care modelul învață să o recunoască. Exemplul este una dintre pozele sau sunetele din care învață modelul. Antrenarea este pasul în care modelul învață din exemple. Încrederea arată cât de sigur este modelul de răspunsul lui, în procente.
+
+Exemplul unu. Jocul A I sau nu. Un adult sau un coleg citește opt afirmații din Modulul unu. După fiecare, ridici cartonașul Adevărat sau Fals, apoi corectăm împreună.
+
+Exemplul doi. Semaforul laboratorului. Înainte să pornim camera, hotărâm ce are voie să vadă. Verde înseamnă obiecte de pe masă, jucării, desene făcute de tine și sunete de obiecte. Galben înseamnă doar cu acordul unui adult și fără salvare, de exemplu propria ta mână, pe loc, pentru un test scurt. Roșu înseamnă fețele colegilor sau ale altor oameni, documente cu adresă, nume sau telefon și orice fotografiere fără acord. Rămân valabile regulile din Modulul unu: nu dăm date personale și nu instalăm nimic pe care ni-l cere o pagină sau o fereastră.
+
+Exemplul trei. Folosim Teachable Machine, o unealtă gratuită de la Google, care rulează în browser. Nu ai nevoie de cont pentru antrenare. Pozele din cameră rămân pe calculator, dacă nu salvezi proiectul. Noi nu salvăm. Atenție, unealta nu salvează nimic singură. Dacă închizi fila, modelul dispare, de aceea notăm rezultatele pe foaie. Există trei tipuri de proiecte: imagini, sunete și poziții ale corpului. Azi lucrăm cu imagini. Cei trei pași sunt: adună exemple, antrenează, testează.
+
+Exemplul patru. Primul model. Lucrați în perechi și alegeți două obiecte diferite. Dai nume claselor, apoi pornești camera și permiți folosirea ei. Ții apăsat butonul de înregistrare cât ții obiectul în fața camerei și îl miști încet. Faci zece exemple pentru fiecare clasă. Apoi apeși butonul de antrenare și nu închizi și nu schimbi fila cât timp antrenează. La final, ții fiecare obiect în fața camerei și vezi ce arată modelul.
+
+Exemplul cinci. Citim răspunsul. Procentele arată încrederea modelului. Dacă un obiect are nouăzeci și doi la sută, modelul crede că el este și este destul de sigur. Testăm cu același obiect ținut altfel, cu un obiect nou, pe care modelul nu l-a văzut, și cu camera fără niciun obiect. Modelul are mereu un răspuns, chiar și când nu a văzut niciodată lucrul respectiv. Nu știe să spună nu știu, dacă nu l-am învățat asta. O vom face în lecția a cincea.
+
+Exemplul șase. Fișa laboratorului meu A I. Scrii titlul, șase reguli, desenezi semaforul cu câte un exemplu pentru fiecare culoare, adaugi tabelul Primul test și semnezi.
+
+Greșeli frecvente. Să crezi că modelul rămâne salvat singur, că poți fotografia pe oricine, că un procent mare înseamnă mereu dreptate, că trebuie să instalezi ceva ca să meargă camera sau că modelul știe să spună nu știu.
+
+De făcut azi. Minimul este fișa cu cele șase reguli și semaforul, primul model cu două clase și tabelul Primul test. Completul înseamnă și jocul A I sau nu, turul celor trei tipuri de modele și exercițiile de la B până la E.
+
+Provocare pentru cine termină mai repede: Semaforul pentru familie. Scrii opt situații pe cartonașe, cu culoarea pe spate. Cel puțin două sunt capcană, par nevinovate, dar au o culoare mai gravă. O persoană din familie le sortează, iar tu notezi câte a pus corect și explici fiecare greșeală. Numele foii se termină cu Semafor.
+
+Recapitulare. Înainte de experiment stabilim regulile. Verde înseamnă obiecte, galben doar cu acord și fără salvare, roșu fețele altora și datele personale. Un model are trei pași: adună exemple, antrenează, testează. Încrederea arată cât de sigur este modelul, dar un model sigur poate greși. Unealta nu salvează singură.
+
+Schema pe scurt, pe foaie: reguli, exemple în clase, antrenare, test, încredere, notez pe foaie.
+
+Întrebări de verificare. Care sunt cei trei pași ai unui model? Ce înseamnă clasă? Ce arată procentul? Dă un exemplu roșu din semafor. Ce se întâmplă dacă închizi fila fără să notezi nimic?
+
+Temă. Termină fișa, arată-o cuiva din familie, alege trei perechi de obiecte din casă pe care ai putea antrena un model și explică unui adult cei trei pași. Numele foii se termină cu Tema.
+
+Urmează Lecția a doua: un model făcut mai atent, cu plan, antrenare și raport.

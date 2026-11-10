@@ -1,10 +1,11 @@
-/** Identificatori pentru cursul „AI pentru copii” (deocamdată Modul 1, 10 lecții). */
+/** Identificatori pentru cursul „AI pentru copii” (Modulele 1–2, câte 10 lecții). */
 export const AI_LESSON_COUNT = 10
-export const AI_MODUL_COUNT = 1
+export const AI_MODUL_COUNT = 2
 
 /** Modul AI (1) → id modul din mockData. */
 export const AI_MODUL_IDS: Record<number, string> = {
   1: 'm45',
+  2: 'm46',
 }
 
 export function aiModulNumar(modulId: string): number | null {

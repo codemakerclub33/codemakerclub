@@ -43,6 +43,7 @@ export const descriereModulParinte: Record<string, string> = {
   m43: 'Copilul construiește de la zero un site complet cu mai multe pagini: meniu, galerie cu poze mărite, pagină de contact cu verificare și mod întunecat. La final îl testează pe telefon și îl prezintă.',
   m44: 'Copilul construiește șapte jocuri care merg în browser: un joc cu monștri, un clicker, Simon spune, Cuvântul zilei, un dinozaur care sare și o păsărică zburătoare. La final le adună într-o colecție proprie, cu recorduri.',
   m45: 'Copilul află ce este inteligența artificială, cum învață din exemple, de ce mai greșește și cum o folosește în siguranță. Lucrează cu jocuri, discuții și foi de lucru. La final face propriul „Ghid despre AI”.',
+  m46: 'Copilul lucrează cu AI pe calculator: antrenează modele cu obiecte, sunete și mișcări, le testează, vede unde greșesc și învață să folosească responsabil un asistent AI. La final prezintă propria aplicație cu AI.',
 
   // Robotică LEGO WeDo 2.0
   m12: 'Copilul descoperă robotica cu LEGO WeDo 2.0: construiește pas cu pas zece modele, de la un rover de știință până la un rover lunar, și le dă viață cu motoare și senzori, folosind programare cu blocuri colorate. Învață viteza, timpul, repetările și semnalele, iar la final își prezintă robotul. Are nevoie de kitul LEGO WeDo 2.0 și de un calculator cu Bluetooth.',

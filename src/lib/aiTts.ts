@@ -17,10 +17,10 @@ function naratiePath(modul: number, lesson: number): string | null {
 
 export type AiSpeechResult = ScratchM1SpeechResult
 
-/** Resolve or generate TTS for AI modul 1, lecția 1–10. */
+/** Resolve or generate TTS for AI modul 1–2, lecția 1–10. */
 export async function getAiSpeech(modul: number, lesson: number): Promise<AiSpeechResult> {
   if (!Number.isInteger(modul) || modul < 1 || modul > AI_MODUL_COUNT) {
-    return { ok: false, status: 400, error: 'Parametru m invalid. Folosește ?m=1.' }
+    return { ok: false, status: 400, error: 'Parametru m invalid. Folosește ?m=1 … ?m=2.' }
   }
   if (!Number.isInteger(lesson) || lesson < 1 || lesson > AI_LESSON_COUNT) {
     return { ok: false, status: 400, error: `Parametru l invalid. Folosește ?l=1 … ?l=${AI_LESSON_COUNT}.` }

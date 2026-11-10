@@ -27,6 +27,7 @@ const MODUL_FOLDER: Record<string, string> = {
   m43: 'web/modul5',
   m44: 'web/modul6',
   m45: 'ai/modul1',
+  m46: 'ai/modul2',
   m12: 'robotica-lego/modul1',
   m13: 'robotica-lego/modul2',
   m16: 'scratch/modul1',

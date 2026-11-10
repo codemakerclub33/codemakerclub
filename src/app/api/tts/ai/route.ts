@@ -3,7 +3,7 @@ import { getAiSpeech, speechJsonResponse } from '@/lib/aiTts'
 
 export const maxDuration = 180
 
-/** AI pentru copii · ?m=1 & ?l=1…10 */
+/** AI pentru copii · ?m=1…2 & ?l=1…10 */
 export async function GET(request: Request) {
   const refuz = await refuzAccesTts(request)
   if (refuz) return refuz
