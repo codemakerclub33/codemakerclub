@@ -1,0 +1,29 @@
+Lecția trei. Artistul cu bucle.
+
+Astăzi placa ta devine artist: desenează pe cele douăzeci și cinci de LED-uri o ramă, un X și un șah. Nu aprinzi pixelii unul câte unul: lași buclele să o facă pentru tine. Proiectul se numește Artistul cu bucle. Numele fișierului este: Prenume, linie jos, Nume, linie jos, M P doi, linie jos, L zero trei.
+
+Ce facem azi. La final folosești range cu început, sfârșit și pas, pui o buclă într-o altă buclă și alegi cu if ce pixeli se aprind. Cu bucle bune, programul rămâne scurt. La final, A schimbă desenul, iar B îl face negativ.
+
+Planul orei. Începem cu o recapitulare a lui for, range și set pixel din primul modul. Apoi învățăm range cu pas și for în for. După aceea punem if în buclă: rama, X-ul și șahul. Urmează while și break, apoi construim artistul, în varianta Minim și în varianta Complet. Exercițiile de la B până la E și provocarea sunt pentru cine termină mai repede, sau pentru acasă.
+
+Instrucțiuni noi. Range cu început, sfârșit și pas numără din pas în pas, iar valoarea de sfârșit nu e inclusă. For în for este o buclă în interiorul alteia: pentru fiecare rând, toate coloanele. Cuvântul or înseamnă sau: ajunge să fie adevărată una dintre condiții. While repetă cât timp condiția este adevărată. Break iese imediat din buclă. Ajutor în editor: în panoul Reference caută Loops și Logic.
+
+Exemplul unu. Range din doi în doi aprinde coloanele zero, doi și patru. Ecranul are cinci rânduri și cinci coloane. Exemplul doi. Cu un for pentru rânduri și, înăuntrul lui, un for pentru coloane, treci prin toți pixelii: ecranul se umple rând cu rând, în total douăzeci și cinci de pași.
+
+Dacă pui un if în bucla dinăuntru, aprinzi doar pixelii care îndeplinesc o condiție. Exemplul trei. Rama: prima și ultima coloană, primul și ultimul rând. Exemplul patru. X-ul: o diagonală cu x egal cu y, cealaltă cu x plus y egal cu patru. Exemplul cinci. Șahul: x plus y, la rest împărțit la doi, egal cu zero, e adevărat din doi în doi pixeli.
+
+Exemplul șase. While cu condiție: nivelul crește la fiecare tură, iar când ajunge la cinci bucla se oprește. Exemplul șapte. Break: numără până la nouăzeci și nouă, dar apăsând A oprești numărătoarea.
+
+Exemplul opt. Artistul Minim. Punem fiecare desen într-o funcție care întoarce adevărat sau fals pentru pixelul x, y. Funcția deseneaza parcurge ecranul și aprinde sau stinge fiecare pixel. A trece la desenul următor, în cerc. Exemplul nouă. Artistul Complet: B schimbă negativul cu not, iar scuturarea alege un desen la întâmplare.
+
+Greșeli frecvente. Pixelii nu se sting: desenul vechi rămâne pe ecran. Eroare la set pixel: x și y merg doar între zero și patru. Desenul e greșit: verifică cele două diagonale cu un exemplu. Compari cu două semne egal, nu cu unul. Bucla nu se termină: în while condiția nu se schimbă niciodată. A nu face nimic: apasă scurt. Nu poți lipi un text de un număr, folosește str.
+
+Proiectul de azi. Artistul cu bucle. Minim: trei desene, A schimbă desenul, în cerc. Complet: minim, plus B face negativul și scuturarea alege un desen la întâmplare.
+
+Provocarea. Ceasul de nisip. Ecranul se umple, un pixel pe secundă, ca un ceas de nisip. Poți opri ceasul la jumătate cu A, iar B îl pornește de la capăt. Numărul pixelului se transformă în coloană și rând cu procent și cu împărțirea fără zecimale. Numele fișierului se termină cu Nisip.
+
+Recapitulare. Range cu pas: sfârșitul nu e inclus. O buclă în altă buclă repetă de înmulțit ori. If în buclă alege pixelii. While merge cât timp condiția e adevărată, iar break iese din buclă. Not întoarce adevărat în fals și invers.
+
+Tema. Desenul meu. Acasă, în editor, scrii programul din exemplul opt și adaugi un al patrulea desen, de exemplu plusul. Numele fișierului se termină cu Tema.
+
+Ce urmează. Lecția patru. Placa învață să cânte: faci un metronom care bate ritmul, iar tu alegi viteza cu butoanele.

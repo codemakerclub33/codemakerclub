@@ -61,7 +61,7 @@
 |---|--------|--------|
 | 1 | Panoul de misiuni | Meniu, constante, % |
 | 2 | Cartea de glume | Liste |
-| 3 | Ploaia de pixeli | Bucle for/while |
+| 3 | Artistul cu bucle | Bucle for/while |
 | 4 | Pianul de buzunar | music (V2/buzzer) |
 | 5 | Busola digitală | compass, direcții |
 | 6 | Labirintul înclinat | Accelerometru, hărți text |

@@ -669,7 +669,7 @@ export const lectii = [
   ...genLectii('m41', [
     'Panoul de misiuni',
     'Cartea de glume',
-    'Ploaia de pixeli',
+    'Artistul cu bucle',
     'Pianul de buzunar',
     'Busola digitală',
     'Labirintul înclinat',
