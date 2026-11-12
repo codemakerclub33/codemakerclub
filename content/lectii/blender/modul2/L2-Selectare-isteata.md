@@ -1,19 +1,15 @@
-# Lecția 2 — Selectare isteață
+# LECȚIA 2 — Peisajul din grilă
+### Selectare isteață
 **Modulul 2 · Modelare în Edit Mode**  
 **Code Maker Club · Mesh Modeler**
 
-> Cine selectează repede, modelează repede. Azi înveți **cinci metode de selectare** care îți economisesc zeci de click-uri.  
+> Cine selectează repede, modelează repede. Azi înveți **șase metode de selectare** care îți economisesc zeci de click-uri, iar cu ele ridici dealuri, munți și văi dintr-o simplă grilă.  
 > Proiect: **„Peisajul din grilă”** · `Prenume_Nume_B2_L02.blend`
 
 ---
 
-## Obiectiv
-La finalul orei selectezi rapid grupuri de piese și faci un **peisaj** dintr-o grilă.  
-**Minim:** folosești selecția cu **Box**, **Shift + click** și **Alt + A**.  
-**Complet:** Minim + **Alt + click** (buclă de muchii), **L** (piese legate), **Ctrl + I** (inversare) și un peisaj cu dealuri și o vale.
-
-## De ce contează
-Un model are sute de piese. Dacă le selectezi pe rând, pierzi mult timp. Metodele isteațe fac exact asta într-o singură mișcare.
+## Ce facem azi
+La finalul orei ai un **peisaj 3D** cu dealuri, un munte, o vale și un lac, făcut dintr-o singură grilă. Un model are sute de piese. Dacă le selectezi pe rând, pierzi mult timp. Metodele isteațe fac același lucru dintr-o singură mișcare.
 
 ---
 
@@ -22,78 +18,138 @@ Un model are sute de piese. Dacă le selectezi pe rând, pierzi mult timp. Metod
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap L1 |
-| 10–45 | Box select, Shift, A / Alt + A |
-| 45–75 | Buclă de muchii, selectare legată, inversare |
-| 75–110 | Peisajul din grilă |
-| 110–120 | Recap, quiz, galerie |
+| 10–25 | Grila de lucru |
+| 25–50 | Box select, Shift, A / Alt + A, X-ray |
+| 50–75 | Bucla de muchii, selectare legată, inversare |
+| 75–105 | Peisajul din grilă |
+| 105–120 | Recap, quiz, galerie |
 
-**Ce ai nevoie:** Blender 4.2 · scena de start (șterge cubul)
+**Ce ai nevoie:** Blender 4.2 · scena de start (cubul de start îl ștergi)
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce folosim | Ce face | Exemplu |
+|------------|---------|---------|
+| **Box select** (tragi un dreptunghi) | Selectează un grup de piese | un deal întreg |
+| **Alt + click pe o muchie** | Selectează o **buclă** întreagă | un rând de pe grilă |
+| **L** (mouse peste piesă) | Selectează tot ce e **legat** de ea | o casă, fără peisaj |
+| **Ctrl + I** | **Inversează** selecția | „tot, în afară de deal” |
+| *Recap:* **Alt + Z** | X-ray: vezi și prin obiect | selectezi și piesele din spate |
+| *Recap:* **A / Alt + A** | Selectează tot / nimic | start curat |
 
 ---
 
 ## Pas cu pas
 
 ### 1) Grila de lucru
-**Shift + A → Mesh → Grid.** În panoul din stânga-jos pune **X Subdivisions = 10**, **Y Subdivisions = 10**, **Size = 10**. Apasă **Tab** (Edit Mode), apoi **Numpad 7** (vedere de sus).
+1. **File → New → General**, apoi șterge cubul (**X → Delete**).  
+2. **Shift + A → Mesh → Grid.**  
+3. În panoul din stânga-jos (**Adjust Last Operation**) pune **X Subdivisions = 10**, **Y Subdivisions = 10**, **Size = 10**.  
+4. **Tab** (Edit Mode), alegi **Vertex** din butoanele din antet și apeși **7** (vedere de sus).
 
-### 2) Metodele de selectare
+**Încearcă tu — grila (3 min)**  
+- [ ] Vezi o plasă de pătrate, în Edit Mode, din vedere de sus  
+- [ ] Ai apăsat **A** și toată grila s-a făcut portocalie, apoi **Alt + A** a deselectat-o  
 
-| Metodă | Cum | Când o folosești |
-|--------|-----|------------------|
-| **Box select** | **tragi** un dreptunghi cu mouse-ul (sau **B**) | grupuri de piese |
-| **Shift + click** | adaugă / scoate o piesă | ajustări |
-| **A / Alt + A** | selectează / deselectează tot | start și final |
-| **Alt + click pe o muchie** | selectează o **buclă** întreagă | rânduri, inele |
-| **L** (cursorul peste piesă) | selectează tot ce e **legat** | piese separate |
-| **Ctrl + I** | **inversează** selecția | „tot, în afară de…” |
+### 2) Box select și Shift + click
+- **Tragi** un dreptunghi gol cu mouse-ul: selectezi tot ce e în el (**Box select**).  
+- **Shift + click** adaugă o piesă la selecție sau o scoate din ea.  
+- **Alt + A** deselectează tot: așa începi o selecție nouă.
+
+> Dacă nu merge tragerea, apasă **T** (bara de unelte din stânga) și alege instrumentul **Select Box**. Poți apăsa și **B**, apoi tragi.
+
+**Încearcă tu — Box select (5 min)**  
+- [ ] Selectezi cu Box un grup de vârfuri din mijloc  
+- [ ] Cu **Shift + click** scoți două vârfuri din selecție  
+- [ ] Cu **Alt + A** o iei de la capăt  
+
+### 3) Un deal, un munte, o vale
+1. Selectează cu Box un grup mare de vârfuri din mijloc. **G Z 2 Enter**: un **deal**.  
+2. **Alt + A**. Selectează o zonă mică și **G Z 4 Enter**: un **munte**.  
+3. **Alt + A**. Selectează o zonă din colț și **G Z −1 Enter**: o **vale**.
+
+Ca să vezi relieful, rotește vederea ca în Modulul 1. Dealurile au colțuri ascuțite, pentru că muți puține vârfuri. În lecția 6 înveți o metodă care le face rotunde.
+
+**Încearcă tu — relieful (5 min)**  
+- [ ] Ai un deal, un munte și o vale  
+- [ ] Le vezi din lateral (**3**) și din față (**1**)  
+- [ ] Anulezi un pas cu **Ctrl + Z** și îl refaci cu valori mai mari  
+
+### 4) X-ray: prinzi și ce nu se vede
+**Box select** selectează doar ce **se vede** din vederea ta. Ca să prinzi și piesele din spate, apasă **Alt + Z**. În vederea de sus a unei grile plate se vede totul, dar când privești din lateral sau lucrezi pe munți, X-ray contează.
+
+**Încearcă tu — X-ray (3 min)**  
+- [ ] Rotești vederea oblic, fără X-ray, tragi un dreptunghi peste munte și vezi în contor câte vârfuri ai prins  
+- [ ] Pornești **Alt + Z**, tragi același dreptunghi și numărul crește  
+
+### 5) Bucla de muchii (Alt + click)
+**Alt + click pe o muchie** selectează tot rândul de muchii, până la capătul grilei.
+
+1. Alegi modul **Edge**.  
+2. **Alt + click** pe o muchie din mijlocul unei linii.  
+3. **G Z 1 Enter**: ridici un **zid** prin peisaj. Apoi **Ctrl + Z**.  
+4. Încerci pe o linie în cealaltă direcție.
+
+> **Alt + click** trebuie dat pe o **muchie**, nu pe un vârf.
+>
+> **Laptop cu Emulate 3 Button Mouse?** Atunci **Alt + click** rotește vederea. Selectează o muchie cu un click simplu și alege din meniul de sus **Select → Select Loops → Edge Loops**: se selectează tot rândul.
+
+**Încearcă tu — bucla (4 min)**  
+- [ ] O linie întreagă a grilei este selectată cu un singur click  
+- [ ] Ai coborât o linie cu **G Z −0.5** și ai făcut un șanț  
+
+### 6) L: selectăm ce e legat
+Un model poate avea mai multe **piese separate** în același obiect. Ca să vezi cum merge **L**:
+1. **Alt + A**, apoi **Shift + A → Mesh → Cube**. Cubul apare **în același obiect**, ca o piesă separată.  
+2. Mută-l cu **G** într-un loc liber (cubul este selectat).  
+3. **Alt + A**, mouse peste cub, apasă **L**: se selectează doar cubul. Mouse peste grilă și **L**: se selectează grila întreagă.  
+4. Selectează cubul cu **L** și mută-l cu **G X 2**: casa se mută, peisajul rămâne.
+
+**Încearcă tu — L (4 min)**  
+- [ ] Cu **L** pe cub se selectează doar cubul  
+- [ ] Cu **L** pe grilă se selectează doar grila  
+- [ ] Ai mutat casa fără să atingi peisajul  
+
+### 7) Ctrl + I: inversăm selecția
+**Ctrl + I** schimbă ce e selectat cu ce nu e selectat. E util când e mai ușor să alegi ce **nu** vrei.
+
+1. Selectează cubul (casa) cu **L**.  
+2. **Ctrl + I**: acum e selectat tot, în afară de casă.  
+3. Cu peisajul selectat, **G Z −0.3 Enter**: peisajul coboară puțin, iar casa rămâne pe loc, cu o fundație la vedere.
+
+**Încearcă tu — inversarea (3 min)**  
+- [ ] Ai selectat o piesă, apoi **Ctrl + I** a ales restul  
+- [ ] Ai mutat restul, iar piesa rămasă a stat pe loc  
+
+### 8) Complet — „Peisajul din grilă”
+Pune totul laolaltă:
+1. **Trei dealuri** de înălțimi diferite (**Box select**, **G Z**).  
+2. Un **munte** în fundal.  
+3. O **vale** care trece de-a lungul grilei: **Alt + click** pe o linie din mijloc, coborâtă cu **G Z −1**.  
+4. O **casă** (cubul) pusă pe un deal, mutată cu **L**.  
+5. Ieși cu **Tab**, click dreapta pe obiect, **Shade Smooth**.  
+6. Un **lac**: **Shift + A → Mesh → Plane** în Object Mode, scalat cu **S 4**, așezat la **Z = −0.7**, ca să umple valea.
 
 **Gata când:**  
-- [ ] Am făcut toți pașii din „Metodele de selectare”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
-
-### 3) Atenție la X-ray
-Box select selectează doar ce **se vede**. Ca să prinzi și piesele din spate, apasă **Alt + Z**.
-
-### 4) Dacă nu merge selecția
-Bara de unelte din stânga (tasta **T**) are un instrument **Select Box**; asigură-te că e activ. Poți trece la **Tweak** sau **Lasso** (selectare liberă, cu desenat) din același loc.
-
-### 5) Peisajul din grilă
-1. Mod **Vertex** (**1**). **Alt + A** (nimic selectat).  
-2. Selectează cu **Box** un grup de vârfuri în mijloc. **G Z 2 Enter** → un **deal**.  
-3. Selectează altă zonă mai mică. **G Z 4 Enter** → un **munte**.  
-4. Selectează o zonă în colț. **G Z −1 Enter** → o **vale**.  
-5. Alege o muchie interioară și **Alt + click**: selectezi tot rândul. **G Z 1 Enter** → un „zid” prin peisaj.  
-6. **Ctrl + I** inversează selecția. **G Z −0.3 Enter** coboară tot restul puțin.
-
-Ieși cu **Tab** și apasă **Shade Smooth** (click dreapta).
-
-> Dealurile au colțuri ascuțite pentru că mutăm puține vârfuri. În lecția 6 vei învăța o metodă care le face rotunde.
-
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Peisajul din grilă”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
-
-### 6) Complet — mai mult peisaj
-- Fă **trei dealuri** de înălțimi diferite.  
-- Fă o **vale** care trece de-a lungul grilei (selectează un rând cu Alt + click și coboară rândul).  
-- Adaugă un **lac**: Plane albastră (Z = 0.2) în vale.
-
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Complet — mai mult peisaj”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
-
-### Dacă ai terminat devreme
-- [ ] Un **drum** (șir de fețe coborâte puțin) care șerpuiește prin peisaj  
-- [ ] Sau Bonusul de mai jos  
+- [ ] Peisajul are cel puțin 3 dealuri, un munte și o vale  
+- [ ] Casa se mută separat, cu **L**  
+- [ ] Lacul stă în vale și nu iese deasupra dealurilor  
+- [ ] Obiectele au nume: `Peisaj`, `Lac`  
 
 ---
 
 ## Greșeli frecvente
-1. **Nu merge Box select** — nu e activ instrumentul; apasă **T** sau **B**.  
-2. **Selecția a prins doar piese din față** — pornește **Alt + Z**.  
-3. **Alt + click nu face bucla** — dă click pe **muchie**, nu pe vârf, în modul Edge sau Vertex.  
-4. **Selectez prea mult** — **Alt + A** și reia.  
-5. **Peisajul e plat** — mutarea e mică; scrie numere mai mari.
+
+| Ce vezi | Cauza | Corect |
+|---------|-------|--------|
+| Nu merge Box select | Instrumentul nu e activ | **T** și alegi **Select Box**, sau **B** |
+| Se selectează doar piese din față | X-ray este oprit | **Alt + Z** |
+| **Alt + click** nu face bucla | Ai dat click pe vârf sau pe față, sau Alt rotește vederea (Emulate 3 Button Mouse) | Click pe **muchie**, în modul Edge; sau **Select → Select Loops → Edge Loops** |
+| Selectezi prea mult | Selecția veche a rămas | **Alt + A** și reiei |
+| Peisajul e plat | Mutarea e prea mică | Scrie numere mai mari |
+| **L** selectează totul | Piesa nu e separată de restul | Adaugi piesa cu **Shift + A** în Edit Mode |
 
 ---
 
@@ -103,42 +159,51 @@ Ieși cu **Tab** și apasă **Shade Smooth** (click dreapta).
 
 | | Ce trebuie |
 |--|------------|
-| **Minim** | Grilă + dealuri făcute cu Box select |
-| **Complet** | Minim + bucla de muchii + L + Ctrl + I + vale + lac |
+| **Minim** | Grilă 10 × 10 și 2 dealuri făcute cu Box select |
+| **Complet** | Minim + buclă de muchii, **L**, **Ctrl + I**, munte, vale, casă și lac |
 
 ### Pasul 1 — Minim
 - [ ] Am o grilă 10 × 10  
-- [ ] 2 dealuri  
+- [ ] Am făcut 2 dealuri cu Box select  
 
-**→ Minim când:** un coleg recunoaște ce ai făcut, fără explicații.  
+**→ Minim când:** un coleg recunoaște ce ai făcut, fără explicații.
 
 ### Pasul 2 — Complet
-- [ ] Am folosit Alt + click și Ctrl + I  
-- [ ] Vale și lac  
+- [ ] Am folosit **Alt + click**, **L** și **Ctrl + I**  
+- [ ] Peisajul are munte, vale, casă și lac  
 - [ ] Numele `B2_L02` e corect
 
 ---
 
-## Bonus
-- [ ] Colorează: deal verde, munte gri, apă albastră (L7, Modulul 1)
+## Bonus ★★★ — Provocare: Insula
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
-1. **Box** pentru grupuri · **Shift** pentru ajustări  
-2. **Alt + click** = buclă · **L** = legat · **Ctrl + I** = invers  
+Transformă peisajul într-o **insulă** înconjurată de apă.
+
+- [ ] Selectezi cu **Alt + click** (sau **Select Loops**) buclele din marginea grilei și le cobori cu **G Z −1.5**: marginile intră în apă  
+- [ ] Cu un plan mare, pus la **Z = −0.7**, apa înconjoară insula  
+- [ ] Pe insulă ai munte, drum, cel puțin 3 case și un lac  
+- [ ] Obiectele au nume clare  
+
+---
+
+## Recapitulare pe scurt
+1. **Box** pentru grupuri · **Shift + click** pentru ajustări  
+2. **Alt + click** pe muchie = buclă · **L** = piese legate · **Ctrl + I** = invers  
 3. **Alt + Z** vede și prin obiect  
 4. **A / Alt + A** = tot / nimic
 
-## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
-
-`Grila de lucru` → `Metodele de selectare` → `Atenție la X-ray` → `Dacă nu merge selecția` → `Peisajul din grilă` → `Complet — mai mult peisaj`
-
 ## Mai departe *(opțional)*
-Privește un peisaj real (pe fereastră sau în poză). Care sunt „dealurile”? Ce ai selecta pentru a le face?
+Privește un peisaj real, pe fereastră sau într-o poză. Care sunt „dealurile”? Ce ai selecta pentru a le face?
 
 ## Quiz scurt
 - Ce face **Alt + click** pe o muchie?  
+- La ce folosește **L**?  
 - Cum inversezi selecția?  
 - De ce ai nevoie uneori de X-ray?
 
 ## Temă
-Desenează un peisaj cu 3 dealuri și notează ce metodă de selectare ai folosi pentru fiecare.
+Alege un loc cunoscut (o curte, un parc, o piață) și **refă-l ca relief în Blender**, pe o grilă.
+- Schițează pe foaie unde sunt dealurile, apa și zonele plate.
+- Construiește relieful cu cel puțin două metode de selectare din lecție (box, buclă sau `L`) și notează-le pe foaie.
+- Dă fiecărei piese un nume (`F2`) și salvează fișierul `Prenume_Nume_B2_L02_Tema.blend`.

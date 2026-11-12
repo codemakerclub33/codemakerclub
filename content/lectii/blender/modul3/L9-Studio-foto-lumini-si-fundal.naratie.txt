@@ -6,11 +6,11 @@ Obiectivul. La final ai un studio cu trei lumini și un fundal curbat, în care 
 
 De ce contează. Aceeași cană poate arăta banală sau spectaculoasă, în funcție de lumini. Studioul îți dă control complet.
 
-Ce ai nevoie. Un obiect din lecțiile anterioare: cană, cufăr sau rachetă.
+Ce ai nevoie. Un obiect din lecțiile anterioare: cană, cufăr sau vulpe.
 
 Primul pas. Fundalul curbat, numit ciclorama. Este un fundal fără colțuri, ca să nu vezi unde se termină podeaua și începe peretele. Un plan, cu S, zece. Apeși Tab, treci în vederea din dreapta, cu Numpad trei, în modul Edge, cu doi. Selectezi muchia din spate. Apeși E, Z, opt, Enter, ca să extrudezi peretele. Selectezi muchia colțului, dintre podea și perete, și apeși Control plus B. Cu rotița pui opt segmente, iar din mouse alegi o rază mare, în jur de trei. Colțul devine o curbă lină. Apeși Tab și Shade Smooth.
 
-Al doilea pas. Obiectul de fotografiat. Pui cana, cufărul sau racheta în centrul curbei, deasupra podelei.
+Al doilea pas. Obiectul de fotografiat. Pui cana, cufărul sau vulpea în centrul curbei, deasupra podelei.
 
 Al treilea pas. Cele trei lumini. Lumina Key, principală, luminează obiectul și dă umbrele. Este un Area mare, în față-stânga, puțin sus, cu Power între șase sute și o mie de wați. Lumina Fill, de umplere, luminează umbrele și este mai slabă. Este un Area în față-dreapta, cu Power între două sute și trei sute de wați. Lumina Rim, de contur, conturează marginile. Este un Area sau un Spot, în spate și sus, cu Power cinci sute de wați. Cum le orientezi: cel mai ușor, cu o constrângere. Selectezi lumina, apoi Properties, fila Object Constraints, apoi Add Object Constraint, Track To, iar la Target alegi obiectul tău. Lumina se uită singură la obiect, oriunde o muți. Dacă ținta pare greșită, pui To pe minus Z și Up pe Y.
 

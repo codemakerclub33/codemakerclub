@@ -18,7 +18,7 @@ Al patrulea pas. Relieful, cu Bump. Culorile par plate, dar putem simula denivel
 
 Al cincilea pas. Podeaua cu pătrățele. Apeși Shift plus A, Texture, Checker Texture. Color unu și Color doi sunt alb și gri-albastru. Scale zece. Legi Color de Base Color.
 
-Al șaselea pas, pentru varianta completă. Scena finală. Peisajul din lecția șase a modulului doi primește iarbă pe dealuri și pământ pe o potecă, pentru care alegi fețele cu Assign, ca la rachetă. O podea cu pătrățele, ca plan de testare. Randezi cu un Sun și cer albastru.
+Al șaselea pas, pentru varianta completă. Scena finală. Peisajul din lecția șase a modulului doi primește iarbă pe dealuri și pământ pe o potecă, pentru care alegi fețele cu Assign, ca la fluture și vulpe. O podea cu pătrățele, ca plan de testare. Randezi cu un Sun și cer albastru.
 
 Al șaptelea pas. Dacă nu vezi texturile, treci pe Material Preview sau pe Rendered. În Solid nu se văd.
 

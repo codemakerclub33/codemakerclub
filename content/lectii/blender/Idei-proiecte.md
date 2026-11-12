@@ -74,4 +74,4 @@ Lucruri care se mișcă sau cad, cu motoarele fizice din Blender. **Ar ieși din
 ## Legătura cu Modulul 1 (discuție)
 - Lecția 2 poate deveni „navigare + prima sculptură” (planetă, piatră lunară, fruct).
 - Lumea Blocurilor (secțiunea 1) se potrivește bine pentru lecțiile 3–6: doar cuburi, G/R/S, culori.
-- Racheta (secțiunea 2) e deja în Modulul 2.
+- Racheta (secțiunea 2) e în Modulul 1; în Modulul 2 e vulpea low-poly.

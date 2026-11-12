@@ -1,19 +1,15 @@
-# Lecția 8 — Stil low-poly
+# LECȚIA 8 — Pădurea low-poly
+### Stilul low-poly
 **Modulul 2 · Modelare în Edit Mode**  
 **Code Maker Club · Mesh Modeler**
 
-> **Low-poly** înseamnă modele cu puține fețe plate, ca niște bijuterii șlefuite. E un stil modern, folosit în jocuri și ilustrații. Azi faci **stânci și brazi** în acest stil.  
+> **Low-poly** înseamnă modele cu puține fețe plate, ca niște bijuterii șlefuite. E un stil modern, folosit în jocuri și ilustrații. Azi faci **brazi și stânci** în acest stil.  
 > Proiect: **„Pădurea low-poly”** · `Prenume_Nume_B2_L08.blend`
 
 ---
 
-## Obiectiv
-La finalul orei ai o mică pădure cu brazi și stânci, în stil low-poly.  
-**Minim:** un brad și o stâncă cu fațete.  
-**Complet:** Minim + **3 brazi diferiți**, **2 stânci** și **randare** cu umbre.
-
-## De ce contează
-Low-poly e **rapid de făcut** și arată bine chiar și fără detalii. Fiecare față are o culoare puțin diferită, ca la o piatră tăiată.
+## Ce facem azi
+La finalul orei ai o mică **pădure cu brazi și stânci**, în stil low-poly, randată cu umbre. Low-poly e **rapid de făcut** și arată bine chiar și fără detalii: fiecare față are o culoare puțin diferită, ca la o piatră tăiată.
 
 ---
 
@@ -21,13 +17,26 @@ Low-poly e **rapid de făcut** și arată bine chiar și fără detalii. Fiecare
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recap L7 |
-| 10–35 | Flat vs Smooth |
-| 35–70 | Bradul |
-| 70–100 | Stânca |
-| 100–120 | Pădurea, recap, galerie |
+| 0–10 | Recap L7: Mirror |
+| 10–25 | Flat vs Smooth |
+| 25–50 | Bradul |
+| 50–70 | Stânca |
+| 70–85 | Copacul rotund |
+| 85–105 | Pădurea și randarea |
+| 105–120 | Recap, quiz, galerie |
 
 **Ce ai nevoie:** Blender 4.2 · scena de start
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce folosim | Ce face | Exemplu |
+|------------|---------|---------|
+| **Shade Flat** | Fețele plate, cu muchii vizibile | brad, stâncă |
+| **Ctrl + J** | Unește mai multe obiecte într-unul | conurile și trunchiul devin un brad |
+| **Mesh → Transform → Randomize** | Mută vârfurile puțin, la întâmplare | stâncă neregulată |
+| *Recap:* **Shift + D**, **R Z**, **S** | Copii variate | brazi diferiți |
 
 ---
 
@@ -37,74 +46,95 @@ Low-poly e **rapid de făcut** și arată bine chiar și fără detalii. Fiecare
 
 | Mod | Cum arată | Folosim la |
 |-----|-----------|------------|
-| **Shade Smooth** | suprafață fină, rotundă | personaje, cești, fructe |
+| **Shade Smooth** | suprafață fină, rotundă | personaje, căni, fructe |
 | **Shade Flat** | fețele plate, vizibile | low-poly |
 
 În Object Mode: **click dreapta → Shade Flat**. Pentru low-poly avem nevoie de **Flat**.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Flat și Smooth”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — Flat și Smooth (2 min)**  
+- [ ] Ai pus același cub pe **Smooth**, apoi pe **Flat**  
+- [ ] Vezi diferența: pe Flat se văd fețele  
 
 ### 2) Bradul low-poly
-1. **Cone**: **Vertices = 6**, **Radius = 1.2**, **Depth = 1.5**, **Z = 1.75**.  
-2. **Shift + D**, mută copia în sus: **G Z 0.8**, apoi **S 0.8**.  
-3. Încă o copie: **G Z 0.8**, **S 0.7**. Ai 3 niveluri.  
-4. **Trunchi**: **Cylinder** (Vertices 6, Radius 0.2, Depth 1), la **Z = 0.5**.  
-5. **Shade Flat** pe toate.  
-6. Materiale: **verde** pe conuri, **maro** pe trunchi.
+1. **Shift + A → Mesh → Cone**: **Vertices = 6**, **Radius = 1.2**, **Depth = 1.5**, apoi **G Z 1.75**.  
+2. **Shift + D**, **Enter**, **G Z 0.8 Enter**, apoi **S 0.8 Enter**.  
+3. Încă o copie: **Shift + D**, **G Z 0.8**, **S 0.7**. Ai 3 niveluri.  
+4. **Trunchi**: **Cylinder** (Vertices 6, Radius 0.2, Depth 1), apoi **G Z 0.5**.  
+5. Selectează cele 3 conuri și trunchiul (**Shift + click**), **Ctrl + J**: devin un singur obiect. Dă-i numele `Brad` cu **F2**.  
+6. **Shade Flat**. Materiale: **verde** pe conuri, **maro** pe trunchi (în Edit Mode, fețele trunchiului, **Assign** pe un slot nou).
 
-> Varierea mărimii și a rotației face brazii „vii”. Fă 3 brazi: unul înalt, unul mic, unul lat.
+> Varierea mărimii și a rotației face brazii „vii”.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Bradul low-poly”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — bradul (8 min)**  
+- [ ] Bradul are 3 niveluri, tot mai mici spre vârf  
+- [ ] Este un singur obiect, cu numele `Brad`  
+- [ ] Conurile sunt verzi, trunchiul maro  
 
 ### 3) Stânca low-poly
 1. **Shift + A → Mesh → Ico Sphere**: **Subdivisions = 1**, **Radius = 1**.  
-2. **Tab**, modul **Vertex**. **A** (selectează tot).  
-3. **S X 1.3**, **S Z 0.7** (mai lată decât înaltă).  
-4. **Alt + A**, apoi alege vârfurile aleatoriu, pe rând, și mută fiecare vârf puțin: **G** + mișcă mouse-ul într-o direcție nouă. Câteva „colțuri” fac stânca realistă.  
-5. Cu **O** (Proportional Editing) pornit și raza mică, tragi câte o „umflătură”.  
-6. **Shade Flat**, material gri-albăstrui, **Roughness 1**.
+2. **Tab**, modul **Vertex**, **A** (selectează tot).  
+3. **S X 1.3 Enter**, **S Z 0.7 Enter**: mai lată decât înaltă.  
+4. **Mesh → Transform → Randomize**. În panoul **Adjust Last Operation**: **Amount 0.3**. Dacă nu o găsești, mută câteva vârfuri cu **G** și mouse-ul.  
+5. Cu **O** (editare proporțională) pornit și raza mică, tragi câte o „umflătură”.  
+6. **Tab**, **Shade Flat**, material gri-albăstrui, **Roughness 1**.
 
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Stânca low-poly”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+**Încearcă tu — stânca (8 min)**  
+- [ ] Stânca e neregulată și are colțuri  
+- [ ] Nu arată ca un balon  
+- [ ] A rămas pe podea: dacă plutește, **G Z** în jos  
 
-### 4) Pădurea
-1. Un **plan** mare ca pământ, verde închis, **Z = 0**.  
-2. **Shift + D** pe brazi, în locuri diferite; **R Z** cu valori diferite; **S** de la 0.6 la 1.3.  
+### 4) Copacul rotund
+Pădurea are nevoie și de copaci cu coroană rotundă, nu doar de brazi.
+
+1. **Shift + A → Mesh → Ico Sphere**: **Subdivisions = 1**, **Radius = 1**, apoi **G Z 2.2**: coroana.  
+2. **Tab**, **A**, **Mesh → Transform → Randomize**, **Amount 0.15**: coroana iese neregulată, ca o piatră verde.  
+3. **Tab**. **Shift + A → Mesh → Cylinder**: **Vertices 6**, **Radius 0.15**, **Depth 1.4**, apoi **G Z 0.7**: trunchiul.  
+4. Selectează coroana și trunchiul, **Ctrl + J**, **F2**: numele `Copac`.  
+5. **Shade Flat**. Material verde pentru coroană, maro pentru trunchi (în Edit Mode, **Assign**).
+
+**Încearcă tu — copacul (6 min)**  
+- [ ] Coroana este rotundă, dar neregulată, cu fețe plate  
+- [ ] Coroana stă pe trunchi și nu plutește  
+- [ ] `Copac` este un singur obiect, cu două culori  
+
+### 5) Pădurea
+1. Un **Plane** mare ca pământ (**S 10**), verde închis, **Z = 0**.  
+2. **Shift + D** pe `Brad` și pe `Copac`, în locuri diferite; **R Z** cu valori diferite; **S** de la 0.6 la 1.3.  
 3. 2 stânci, una mare și una mai mică, lângă brazi.  
 4. **Sun** cu **Strength 3**, culoare caldă, într-un unghi care dă umbre.
 
+**Încearcă tu — pădurea (7 min)**  
+- [ ] Ai cel puțin 4 brazi și 2 copaci rotunzi, de mărimi și rotații diferite  
+- [ ] Copacii nu se ating unul de altul  
+- [ ] Vezi umbre pe pământ, în modul Rendered  
+
+### 6) Complet — randare
+1. Cameră care privește pădurea de la mică înălțime.  
+2. **Render → Render Image** (**F12**), apoi **Image → Save As** ca PNG.  
+
+**Încearcă tu — randarea (5 min)**  
+- [ ] Ai o imagine cu pădurea, cu umbre vizibile  
+- [ ] Ai încercat alt unghi al camerei și ai randat din nou  
+
 **Gata când:**  
-- [ ] Am făcut toți pașii din „Pădurea”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
+- [ ] Pădurea are brazi variați și stânci  
+- [ ] Totul este **Flat**, cu culori clare  
+- [ ] Imaginea PNG este salvată  
 
-### 5) Decimare (opțional)
-Pentru a simplifica un model cu prea multe fețe:
-
-1. Modificator **Decimate** (Generate → Decimate).  
-2. **Ratio** 0.2–0.5.  
-3. **Apply** (Ctrl + A pe modificator) când ești mulțumit.
-
-**Gata când:**  
-- [ ] Am făcut toți pașii din „Decimare (opțional)”  
-- [ ] Ce văd în Blender seamănă cu descrierea  
-
-### Dacă ai terminat devreme
-- [ ] O **ciupercă** (cilindru + con aplatizat)  
-- [ ] Sau Bonusul de mai jos  
+### 7) Creează tu — pădurea ta
+Schimbă forma unui brad (4 niveluri sau 2), culorile sau mărimea stâncilor. Un coleg trebuie să ghicească ce ai schimbat.
 
 ---
 
 ## Greșeli frecvente
-1. **Suprafața e prea netedă** — Shade Smooth rămas; treci pe **Shade Flat**.  
-2. **Brazii arată identic** — variază mărimea și rotația.  
-3. **Stânca e un balon** — mută vârfurile mai mult, nu doar scalezi.  
-4. **Umbrele lipsesc** — lumină Sun și vederea Rendered / randare.  
-5. **Prea multe fețe** — folosește Cone cu 6–8 laturi, nu 32.
+
+| Ce vezi | Cauza | Corect |
+|---------|-------|--------|
+| Suprafața e prea netedă | A rămas Shade Smooth | **Shade Flat** |
+| Brazii arată identic | Aceeași mărime și rotație | Variază **S** și **R Z** |
+| Stânca e un balon | Doar ai scalat | **Randomize** și mută vârfuri |
+| Umbrele lipsesc | Nu e lumină Sun sau nu e modul Rendered | Adaugă **Sun**, vedere Rendered |
+| Prea multe fețe | Cone cu 32 laturi | Cone cu **6–8** laturi |
 
 ---
 
@@ -115,34 +145,40 @@ Pentru a simplifica un model cu prea multe fețe:
 | | Ce trebuie |
 |--|------------|
 | **Minim** | Un brad și o stâncă low-poly |
-| **Complet** | Minim + 3 brazi, 2 stânci, randare cu umbre |
+| **Complet** | Minim + brazi și copaci variați, 2 stânci, randare cu umbre |
 
 ### Pasul 1 — Minim
 - [ ] Brad din 3 conuri + trunchi  
 - [ ] Stâncă din Ico Sphere  
 
-**→ Minim când:** un coleg recunoaște ce ai făcut, fără explicații.  
+**→ Minim când:** un coleg recunoaște ce ai făcut, fără explicații.
 
 ### Pasul 2 — Complet
 - [ ] Shade Flat peste tot  
-- [ ] Pădure cu variații  
+- [ ] Pădure cu brazi, copaci rotunzi și stânci  
 - [ ] Randare PNG  
 - [ ] Numele `B2_L08` e corect
 
 ---
 
-## Bonus
-- [ ] Un **lac** de formă neregulată
+## Bonus ★★★ — Provocare: Pădurea în patru anotimpuri
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
+Aceeași pădure, patru imagini randate, doar din culori.
+
+- [ ] Primăvara: verde deschis, lumină blândă  
+- [ ] Vara: verde închis, lumină puternică  
+- [ ] Toamna: portocaliu și maro, lumină caldă  
+- [ ] Iarna: brazi verzi cu pământ alb; cele patru imagini au nume clare  
+
+---
+
+## Recapitulare pe scurt
 1. **Low-poly** = puține fețe, plate  
 2. **Shade Flat** pentru fațete  
-3. Variază mărimea și rotația  
-4. Ico Sphere (subdiv 1) = stâncă
-
-## Schema pe scurt *(pe foaie — doar dacă o printezi separat)*
-
-`Flat și Smooth` → `Bradul low-poly` → `Stânca low-poly` → `Pădurea` → `Decimare (opțional)`
+3. **Ctrl + J** unește piesele într-un singur obiect  
+4. **Randomize** face o stâncă neregulată  
+5. Variază mărimea și rotația
 
 ## Mai departe *(opțional)*
 Caută „low poly art” pe internet și observă cum arată scenele din jocuri.
@@ -150,7 +186,11 @@ Caută „low poly art” pe internet și observă cum arată scenele din jocuri
 ## Quiz scurt
 - Ce înseamnă low-poly?  
 - Ce alegi: Smooth sau Flat?  
-- Cum faci o stâncă din Ico Sphere?
+- Cum faci o stâncă din Ico Sphere?  
+- Ce face **Ctrl + J**?
 
 ## Temă
-Alege un animal și gândește-te cum ai face animalul din 20 de fețe.
+Alege un obiect din casă sau din curte (o căsuță, o mașinuță, un cort) și **refă-l în stil low-poly**, în Blender.
+- Notează pe foaie din ce forme simple îl faci.
+- Folosește `Shade Flat`, puține fețe și cel puțin 2 culori; verifică în `Statistics` că ai sub 150 de fețe.
+- Dă fiecărei piese un nume (`F2`) și salvează fișierul `Prenume_Nume_B2_L08_Tema.blend`.

@@ -1,0 +1,33 @@
+Lecția nouă. Vulpea low-poly. Mirror, Extrude și Loop Cut.
+
+Astăzi modelezi un animal din tot ce ai învățat în Modulul doi: Mirror pentru simetrie, Extrude pentru gât, bot și coadă, Inset pentru urechi și picioare, Loop Cut pentru a împărți corpul. Totul pornește de la un singur cub. Proiectul se numește Vulpea low-poly. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B doi, linie jos, L nouă, punct blend.
+
+Ce facem azi. La final ai o vulpe low-poly, cu corp, patru picioare, cap cu bot, urechi, ochi și coadă stufoasă, modelată o singură dată pe jumătate și colorată. Animalele se fac din forme simple, trase în afară pas cu pas.
+
+Instrucțiuni noi azi. Mirror cu Clipping te lasă să modelezi doar jumătate de animal. E, Y, cu un număr, extrudează pe lungimea animalului: gât, cap, bot și coadă. Inset pe o față de la margine face un chenar care nu atinge mijlocul, deci apar piese separate: câte una în dreapta și în stânga, ca urechile și picioarele. Reții și Control plus R, S, Z și Assign. Ideea de bază: modelezi doar jumătatea din dreapta. Fețele care ating mijlocul devin piese din mijloc: corp, coadă, bot.
+
+Primul pas. Proporțiile. Vulpea stă cu fața spre tine. Corpul este lung pe axa Y, capul este spre minus Y, coada spre plus Y. Corpul are lungimea doi, lățimea zero virgulă opt și înălțimea unu. Picioarele au înălțimea zero virgulă șapte. Capul are lățimea zero virgulă opt, înălțimea zero virgulă șapte și lungimea zero virgulă cinci. Botul are lungimea zero virgulă patru, iar coada are trei bucăți.
+
+Al doilea pas. Corpul și Mirror. Ștergi cubul de start și adaugi un Cube. S, X, zero virgulă doi. S, Y, unu. S, Z, zero virgulă cinci. Apoi G, Z, unu virgulă doi. Control plus A, Scale, cu mouse-ul peste viewport. Tab, A, apoi G, X, zero virgulă doi: cubul stă acum doar în dreapta, cu marginea din stânga exact pe zero. Tab, apoi Properties, Modifiers, Add Modifier, Generate, Mirror, cu Clipping bifat și doar axa X. Shade Flat, F doi, și numești obiectul Vulpe. Încearcă tu: verifică dacă ai un corp lung de doi, lat de zero virgulă opt, deasupra podelei, dacă Mirror nu lasă nicio linie la mijloc și dacă în Edit Mode vezi doar jumătatea din dreapta.
+
+Al treilea pas. Picioarele. Tab, modul Face. Cu mouse-ul pe o muchie lungă de pe lateral, apeși Control plus R, rotița pe doi, click, click dreapta: corpul se împarte în trei părți. Privești din jos, din View, Viewpoint, Bottom. Selectezi fața de jos din față și, cu Shift plus click, fața de jos din spate, cele din capete, pe jumătatea din dreapta. I, zero virgulă zero opt, Enter, face un chenar pe fiecare față. E, Z, minus zero virgulă șapte, Enter, coboară picioarele până la podea. Încearcă tu: verifică dacă ai patru picioare, cu un gol între cele din stânga și din dreapta, care ating podeaua și arată la fel în față și în spate.
+
+Al patrulea pas. Capul și botul. Revii în vederea din față și selectezi fața din față a corpului, jumătatea din dreapta. E, Y, minus zero virgulă doi, Enter, este gâtul, apoi S, Z, zero virgulă șapte. E, Y, minus zero virgulă cinci, Enter, este capul. E, Y, minus zero virgulă patru, Enter, este botul, apoi S, Z, zero virgulă cinci, S, X, zero virgulă cinci și G, X, minus zero virgulă unu. Botul se subțiază și rămâne lipit de mijloc. Încearcă tu: verifică dacă botul este mai îngust decât capul, lipit de linia de mijloc, mai jos și mai subțire.
+
+Al cincilea pas. Urechile și ochii. Selectezi fața de sus a capului, nu a gâtului. I, zero virgulă unu, Enter, face chenarul, iar urechea nu atinge mijlocul. E, Z, zero virgulă treizeci și cinci, Enter, apoi S, zero virgulă trei: o ureche ascuțită. Mirror o face și pe cealaltă. Apoi selectezi fața laterală a capului, I, zero virgulă cincisprezece, Enter, și E, X, zero virgulă zero trei, Enter: un ochi. Încearcă tu: verifică dacă ai două urechi ascuțite, doi ochi și un cap simetric din față.
+
+Al șaselea pas. Coada. Selectezi fața din spate a corpului, jumătatea din dreapta. E, Y, zero virgulă cinci, Enter, apoi S, Z, zero virgulă șase: baza cozii. E, Y, zero virgulă șase, apoi S, Z, unu virgulă șase: mijlocul stufos. E, Y, zero virgulă cinci, apoi S, Z, zero virgulă patru: vârful. G, Z, zero virgulă trei, ridică puțin vârful. Încearcă tu: verifică dacă coada are trei bucăți, subțire, groasă și ascuțită, dacă vârful este ridicat și dacă din față coada este în mijloc.
+
+Al șaptelea pas, varianta completă. Culori și randare. Tab. Corpul primește un material portocaliu. Modul Face, Alt plus Z, vedere laterală. Cu B selectezi vârful cozii, ultima bucată, apoi un slot nou, material alb, Assign. Selectezi fața din fața botului, slot nou, material negru, Assign. La fel pentru cei doi ochi. Adaugi un Plane mare ca pământ, un Sun și o cameră, apeși F doisprezece și salvezi un PNG.
+
+Pasul de creație. Faci vulpea ta: botul mai lung, urechile mai mari sau coada mai mică. Un coleg trebuie să ghicească ce ai schimbat.
+
+Greșeli frecvente. Picioarele s-au lipit într-unul gros: ai uitat Inset înainte de Extrude. Gol între jumătăți la bot sau coadă: marginea nu este pe zero, verifică Clipping. Un singur ochi sau o singură ureche: Mirror nu este pornit. Corpul apare dublu: cubul nu a fost mutat în dreapta. Nu mai poți selecta fața: dai click pe jumătatea din dreapta.
+
+De făcut azi. Minim: corp cu Mirror, patru picioare și cap cu bot. Complet: minim, plus urechi, ochi, coadă, culori și randare.
+
+Provocare, trei stele. Alt animal, aceeași tehnică. Doar dacă ai terminat varianta completă. Construiești un iepure sau o pisică cu aceiași pași: corp cu Mirror, urechi lungi la iepure și mici la pisică, coadă bilă la iepure și lungă la pisică. Pui cele două animale în aceeași scenă, cu culori și nume clare.
+
+Recapitulare. Mirror și Clipping: modelezi jumătate și vezi întregul. E, Y trage gâtul, capul, botul și coada. I pe o față de la margine face piese separate. S, Z schimbă înălțimea fără să miște lateral. Assign pune culori pe fețe alese.
+
+Tema. Alegi un animal de jucărie sau din poze, o pisică, un câine sau un iepure, și îl refaci în Blender cu Mirror. Desenezi pe foaie animalul din patru sau cinci cuburi și notezi unealta pentru fiecare piesă. Îl construiești pe jumătate, cu Mirror, E și I, apoi pui cel puțin două culori cu Assign. Dai nume pieselor și salvezi fișierul cu numele din lecție, plus Tema. Succes!

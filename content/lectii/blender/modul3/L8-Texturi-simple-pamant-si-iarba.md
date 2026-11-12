@@ -96,7 +96,7 @@ Culorile par plate, dar putem simula **denivelări** fără să adăugăm geomet
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 6) Complet — scena finală
-- Peisajul din L6 (Modulul 2): **iarbă** pe dealuri, **pământ** pe o potecă (alege fețele cu **Assign**, ca la rachetă).  
+- Peisajul din L6 (Modulul 2): **iarbă** pe dealuri, **pământ** pe o potecă (alege fețele cu **Assign**, ca la fluture și vulpe).  
 - Podea cu pătrățele pentru un „plan de testare”.  
 - Randare cu **Sun** și cer albastru.
 

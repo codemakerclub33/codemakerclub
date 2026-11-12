@@ -1,25 +1,33 @@
-Lecția cinci. Loop Cut: cana de ceai.
+Lecția cinci. Cana de ceai. Loop Cut.
 
-Loop Cut adaugă un inel nou de muchii în jurul unui obiect. Cu el controlezi forma cu mult mai multă libertate. Astăzi faci o cană de ceai cu toartă. Proiectul se numește Cana mea. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B doi, linie jos, L cinci, punct blend.
+Astăzi înveți Loop Cut: adaugi un inel nou de muchii în jurul unui obiect și controlezi forma cu mult mai multă libertate. Faci o cană de ceai cu interior gol, buza rotunjită și toartă. Proiectul se numește Cana de ceai. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B doi, linie jos, L cinci, punct blend.
 
-Obiectivul. La final ai o cană cu interior gol, buza rotunjită și toartă. Minim: un cilindru golit cu Inset și Extrude în jos. Complet: minim, plus Loop Cut pentru a da cănii forma, Bevel la buză și o toartă dintr-un Torus.
+Ce facem azi. La final ai o cană cu formă rotunjită, interior gol, buza netedă și toartă. Un cilindru simplu are doar fețe sus și jos. Cu Loop Cut adaugi inele la mijloc și poți face cana mai lată la mijloc sau o vază cu gât îngust.
 
-De ce contează. Un cilindru simplu are doar fețe sus și jos. Cu Loop Cut adaugi inele la mijloc și poți face cana mai lată la mijloc, vaza mai îngustă la gât, sau o sticlă.
+Instrucțiuni noi azi. Control plus R face Loop Cut. Rotița mouse-ului în timpul tăierii alege câte inele adaugi. Din meniul Select, Select Loops, Edge Loops, selectezi tot inelul unei muchii. Shift plus A, Mesh, Torus adaugă un inel gros, bun pentru toartă. Și reții din lecția trecută I plus E negativ pentru goluri.
 
-Primul pas. Loop Cut, cu Control plus R. În Edit Mode, cu mouse-ul peste obiect, apeși Control plus R și apare o linie magenta, o previzualizare. Miști mouse-ul ca să alegi direcția, pentru că ea urmează muchiile. Cu rotița alegi câte tăieturi vrei: trei tăieturi înseamnă trei inele. Dai click stânga ca să confirmi, apoi click dreapta, ca inelul să rămână exact la mijloc. Altfel îl poți glisa.
+Primul pas. Cilindrul de pornire. Faci un fișier nou, General, și ștergi cubul cu X. Adaugi un Cylinder cu treizeci și două de laturi, raza unu și înălțimea doi. Îl ridici cu G, Z, unu, Enter, ca să stea pe podea. Tab te duce în Edit Mode. Încearcă tu: verifică dacă ai treizeci și două de laturi și dacă în Edit Mode vezi inele doar sus și jos.
 
-Al doilea pas. Pregătim cana. Ștergi cubul și adaugi un cilindru, cu Vertices treizeci și doi, Radius unu și Depth doi, la înălțimea unu, ca să stea pe podea. Apeși Tab. Apoi Control plus R, cu două tăieturi orizontale. Ai acum trei benzi de fețe.
+Al doilea pas. Loop Cut. În Edit Mode, cu mouse-ul pe o muchie verticală, apeși Control plus R. Apare o linie de previzualizare care merge în jurul cilindrului. Cu rotița alegi două inele. Click stânga confirmă, apoi click dreapta lasă inelele exact la locul lor, la distanțe egale. După tăiere, inelele noi rămân selectate. Dacă nu apare linia, ești în Object Mode: apasă Tab. Încearcă tu: ai două inele la distanțe egale, selectate, iar după Control plus Z ai refăcut tăierea cu un inel și apoi cu trei.
 
-Al treilea pas. Forma. Cana este puțin mai lată la mijloc. Treci în modul Edge, cu doi. Dai Alt plus click pe unul dintre cele două inele, ca să selectezi tot inelul, apoi Shift plus Alt plus click pe celălalt. Apeși S, unu virgulă cincisprezece, Enter, ca să mărești inelele.
+Al treilea pas. Forma cănii. Cu cele două inele selectate, apeși S, unu virgulă cincisprezece, Enter. Cana devine mai lată la mijloc, are burtă. Dacă selecția s-a pierdut, alegi Edge, selectezi o muchie din fiecare inel cu Shift plus click și apoi Select, Select Loops, Edge Loops. Încearcă tu: privește din față, cu unu, și încearcă și S zero virgulă opt, ca să obții o vază cu mijlocul îngust.
 
-Al patrulea pas. Golul. Treci în modul Face, cu trei. Dai click pe fața de sus, cercul. Apeși I, zero virgulă doisprezece, Enter, pentru grosimea peretelui. Apoi E, Z, minus unu virgulă șapte, Enter: extrudezi în jos, adânc, aproape de fund, lăsând zero virgulă trei grosime. Ar trebui să vezi un interior gol, ca la o cană adevărată.
+Al patrulea pas. Golul. Alegi Face și dai click pe fața de sus. Apeși I, zero virgulă doisprezece, Enter, pentru grosimea peretelui. Apoi E, Z, minus unu virgulă șapte, Enter: extrudezi în jos, aproape de fund, și rămâne un fund gros de zero virgulă trei. Încearcă tu: verifică dacă interiorul este gol și dacă din lateral peretele pare subțire.
 
-Al cincilea pas. Buza rotunjită. Selectezi muchiile de la marginea de sus: Alt plus click pe cea din exterior, apoi Shift plus Alt plus click pe cea din interior. Apeși Control plus B, cu o valoare în jur de zero virgulă zero patru și trei segmente din rotiță.
+Al cincilea pas. Buza rotunjită. Alegi Edge, dai click pe o muchie din cercul exterior de sus și Shift plus click pe o muchie din cercul interior. Apoi Select, Select Loops, Edge Loops selectează ambele cercuri. Control plus B, zero virgulă zero patru, trei segmente cu rotița, Enter. Încearcă tu: verifică dacă marginea este rotunjită și vezi ce se schimbă la zero virgulă zero opt.
 
-Al șaselea pas. Toarta din Torus. Adaugi un Torus, cu Shift plus A, Mesh, Torus. În panoul din stânga jos setezi Major Radius zero virgulă cinci și Minor Radius zero virgulă zero nouă. Apeși R, X, nouăzeci, ca să stea în picioare, apoi S, X, zero virgulă șapte. Îl muți lângă cană, la X unu virgulă cincisprezece și Z unu virgulă doi. Verifici din față, cu unu: jumătate din Torus intră în cană, iar cealaltă jumătate iese.
+Al șaselea pas. Toarta din Torus. Ieși cu Tab și adaugi Shift plus A, Mesh, Torus, cu raza mare zero virgulă cinci și raza mică zero virgulă zero nouă. R, X, nouăzeci îl ridică în picioare, iar S, X, zero virgulă șapte îl turtește puțin. Cu panoul N îl muți la X unu virgulă cincisprezece și Z unu virgulă doi. Din față, jumătate din Torus intră în cană și jumătate iese, ca o toartă. Încearcă tu: verifică dacă toarta este pe dreapta, la mijloc, și atinge cana.
 
-Al șaptelea pas, pentru varianta completă. Finisare. Aplici Shade Smooth pe cană și pe toartă. Pui un material alb, ceramic, cu Roughness zero virgulă doi. Poți adăuga o culoare diferită pentru interior, cu un material nou pentru fețele interioare, folosind Assign, despre care vei afla în lecția zece. Muți cana într-un colț și adaugi un plan drept masă.
+Al șaptelea pas, varianta completă. Finisare. Shade Smooth pe cană și pe toartă. Un material alb, ceramic, cu Roughness zero virgulă doi, ca în Modulul unu, lecția șapte. Un Plane mare dedesubt, ca masă, cu S, patru. Dai nume cu F doi: Cana, Toarta și Masa.
 
-Greșeli frecvente. Loop Cut nu apare: ești în Object Mode, apasă Tab. Tăietura este pe direcția greșită: mută mouse-ul spre altă muchie înainte să dai click. Fundul cănii este tăiat: extrudează mai puțin, de exemplu minus unu virgulă cinci. Toarta nu se prinde: mută toarta puțin mai aproape, la X egal unu. Cana este colțuroasă: lipsește Shade Smooth sau Bevel.
+Pasul de creație. Faci cana ta: alt număr de inele, altă lățime la mijloc, altă toartă. Un coleg trebuie să ghicească ce ai schimbat.
 
-Succes la cană.
+Greșeli frecvente. Loop Cut nu apare: ești în Object Mode. Tăietura e pe direcția greșită: mută mouse-ul pe o muchie verticală înainte de click. Inelul se mută: după click stânga dai click dreapta. Fundul cănii e tăiat: extrudezi mai puțin. Toarta nu se prinde: o aduci mai aproape. Cana e colțuroasă: lipsesc Shade Smooth sau Bevel.
+
+De făcut azi. Minim: cilindru cu treizeci și două de laturi, golit. Complet: minim, plus Loop Cut pentru formă, Bevel la buză și toartă.
+
+Provocare, trei stele. Setul de ceai. Doar dacă ai terminat varianta completă. Construiești ceainic, cană, farfurioară și masă. Ceainicul are burtă din inele mărite, un cioc dintr-un con scalat și un capac cu buton. Toate piesele sunt netezite, colorate diferit și au nume clare.
+
+Recapitulare. Control plus R face un inel nou. S pe un inel îl lărgește sau îl îngustează. I plus E negativ face golul. Select Loops selectează un inel întreg. Torusul este o toartă simplă.
+
+Tema. Alegi un obiect rotund din casă, o vază, o sticlă, un pahar sau o oală, și îl refaci în Blender cu Loop Cut. Desenezi pe foaie profilul lui și marchezi unde pui inelele. Îl construiești cu inele mărite sau micșorate, gol în interior și buza rotunjită. Dai nume pieselor și salvezi fișierul cu numele din lecție, plus Tema. Succes!

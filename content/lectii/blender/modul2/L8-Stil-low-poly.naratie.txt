@@ -1,21 +1,31 @@
-Lecția opt. Stil low-poly.
+Lecția opt. Pădurea low-poly. Stilul low-poly.
 
-Low-poly înseamnă modele cu puține fețe plate, ca niște bijuterii șlefuite. Este un stil modern, folosit în jocuri și în ilustrații. Astăzi faci stânci și brazi în acest stil. Proiectul se numește Pădurea low-poly. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B doi, linie jos, L opt, punct blend.
+Low-poly înseamnă modele cu puține fețe plate, ca niște bijuterii șlefuite. Este un stil modern, folosit în jocuri și ilustrații. Astăzi faci brazi și stânci în acest stil. Proiectul se numește Pădurea low-poly. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B doi, linie jos, L opt, punct blend.
 
-Obiectivul. La final ai o mică pădure cu brazi și stânci, în stil low-poly. Minim: un brad și o stâncă cu fațete. Complet: minim, plus trei brazi diferiți, două stânci și o randare cu umbre.
+Ce facem azi. La final ai o mică pădure cu brazi și stânci, randată cu umbre. Low-poly se face repede și arată bine chiar și fără detalii, pentru că fiecare față are o culoare puțin diferită, ca la o piatră tăiată.
 
-De ce contează. Low-poly se face repede și arată bine chiar și fără detalii. Fiecare față are o culoare puțin diferită, ca la o piatră tăiată.
+Instrucțiuni noi azi. Shade Flat arată fețele plate, cu muchii vizibile. Control plus J unește mai multe obiecte într-unul singur. Din Mesh, Transform, Randomize, muți vârfurile puțin, la întâmplare, pentru o stâncă neregulată. Reții și Shift plus D, R, Z și S pentru copii variate.
 
-Primul pas. Flat și Smooth. Shade Smooth dă o suprafață fină și rotundă, bună pentru personaje, căni și fructe. Shade Flat arată fețele plate, vizibile, și îl folosim la low-poly. În Object Mode, dai click dreapta, apoi Shade Flat. Pentru low-poly avem nevoie de Flat.
+Primul pas. Flat și Smooth. Smooth dă o suprafață fină, rotundă, bună pentru personaje, căni și fructe. Flat arată fețele plate și este stilul low-poly. În Object Mode, click dreapta, Shade Flat. Încearcă tu: pune același cub pe Smooth și apoi pe Flat și vezi diferența.
 
-Al doilea pas. Bradul low-poly. Un con cu Vertices șase, Radius unu virgulă doi și Depth unu virgulă cinci, la înălțimea unu virgulă șaptezeci și cinci. Apeși Shift plus D și muți copia în sus, cu G, Z, zero virgulă opt, apoi S, zero virgulă opt. Mai faci o copie: G, Z, zero virgulă opt, apoi S, zero virgulă șapte. Ai trei niveluri. Trunchiul este un cilindru, cu Vertices șase, Radius zero virgulă doi și Depth unu, la înălțimea zero virgulă cinci. Aplici Shade Flat pe toate. Materialele: verde pe conuri și maro pe trunchi. Variația mărimii și a rotației face brazii să pară vii. Fă trei brazi: unul înalt, unul mic și unul lat.
+Al doilea pas. Bradul. Adaugi un Cone cu șase laturi, raza unu virgulă doi și înălțimea unu virgulă cinci, apoi G, Z, unu virgulă șaptezeci și cinci. Shift plus D, Enter, G, Z, zero virgulă opt, apoi S, zero virgulă opt. Încă o copie, cu G, Z, zero virgulă opt și S, zero virgulă șapte: trei niveluri. Trunchiul este un Cylinder cu șase laturi, raza zero virgulă doi și înălțimea unu, cu G, Z, zero virgulă cinci. Selectezi cele trei conuri și trunchiul cu Shift plus click, apeși Control plus J și le numești Brad cu F doi. Shade Flat. Conurile sunt verzi, trunchiul maro, cu Assign pe un slot nou. Varierea mărimii și a rotației face brazii vii. Încearcă tu: verifică dacă bradul are trei niveluri, este un singur obiect și are culorile potrivite.
 
-Al treilea pas. Stânca low-poly. Adaugi o Ico Sphere, cu Subdivisions unu și Radius unu. Apeși Tab, treci în modul Vertex și apeși A, ca să selectezi tot. Apeși S, X, unu virgulă trei, apoi S, Z, zero virgulă șapte, ca stânca să fie mai lată decât înaltă. Apeși Alt plus A, apoi alegi vârfurile aleatoriu, pe rând, și muți fiecare vârf puțin cu G, într-o direcție nouă. Câteva colțuri fac stânca realistă. Cu O, Proportional Editing, pornit și raza mică, tragi câte o umflătură. Aplici Shade Flat și un material gri-albăstrui, cu Roughness unu.
+Al treilea pas. Stânca. Adaugi o Ico Sphere cu o subdiviziune și raza unu. Tab, modul Vertex, A pentru tot. S, X, unu virgulă trei și S, Z, zero virgulă șapte, ca să fie mai lată decât înaltă. Apoi Mesh, Transform, Randomize, și în panoul Adjust Last Operation alegi Amount zero virgulă trei. Dacă nu o găsești, muți câteva vârfuri cu G. Cu O pornit și raza mică tragi câte o umflătură. Ieși cu Tab, Shade Flat, material gri-albăstrui, Roughness unu. Încearcă tu: verifică dacă stânca are colțuri, nu arată ca un balon și stă pe podea.
 
-Al patrulea pas. Pădurea. Un plan mare, ca pământ, verde închis, la înălțimea zero. Duplici brazii cu Shift plus D, în locuri diferite, cu R, Z, cu valori diferite, și cu S, de la zero virgulă șase la unu virgulă trei. Pui două stânci, una mare și una mai mică, lângă brazi. Pui un Sun cu Strength trei, de culoare caldă, într-un unghi care dă umbre.
+Al patrulea pas. Copacul rotund. Pădurea are nevoie și de copaci cu coroană rotundă, nu doar de brazi. Adaugi o Ico Sphere cu o subdiviziune și raza unu, apoi G, Z, doi virgulă doi: coroana. Tab, A, Mesh, Transform, Randomize, cu Amount zero virgulă unu cinci: coroana iese neregulată, ca o piatră verde. Tab. Adaugi un Cylinder cu șase laturi, raza zero virgulă unu cinci și înălțimea unu virgulă patru, apoi G, Z, zero virgulă șapte: trunchiul. Selectezi coroana și trunchiul, Control plus J, F doi, numele Copac. Shade Flat, material verde pentru coroană și maro pentru trunchi, cu Assign. Încearcă tu: verifică dacă coroana este rotundă, dar neregulată, dacă stă pe trunchi și dacă Copac este un singur obiect, cu două culori.
 
-Al cincilea pas, opțional. Decimarea. Pentru a simplifica un model cu prea multe fețe, folosești modificatorul Decimate, din Generate. Ratio între zero virgulă doi și zero virgulă cinci. Apoi aplici modificatorul, cu Control plus A pe modificator, când ești mulțumit.
+Al cincilea pas. Pădurea. Un Plane mare ca pământ, cu S, zece, verde închis. Shift plus D pe Brad și pe Copac, în locuri diferite, cu R, Z diferit și S între zero virgulă șase și unu virgulă trei. Două stânci, una mare și una mică, lângă brazi. Un Sun cu Strength trei, culoare caldă, într-un unghi care dă umbre. Încearcă tu: verifică dacă ai cel puțin patru brazi și doi copaci rotunzi, variați și care nu se ating, și dacă vezi umbre în modul Rendered.
 
-Greșeli frecvente. Suprafața este prea netedă: a rămas Shade Smooth, treci pe Shade Flat. Brazii arată identic: variază mărimea și rotația. Stânca este un balon: mută vârfurile mai mult, nu doar scala. Umbrele lipsesc: folosește lumina Sun și vederea Rendered sau randarea. Prea multe fețe: folosește un con cu șase până la opt laturi, nu cu treizeci și două.
+Al șaselea pas, varianta completă. Randarea. O cameră care privește pădurea de la mică înălțime. Render, Render Image, F doisprezece, apoi Image, Save As, ca PNG. Încearcă tu: verifică dacă ai o imagine cu umbre vizibile, apoi încearcă alt unghi al camerei și randează din nou.
 
-Succes în pădure.
+Pasul de creație. Faci pădurea ta: un brad cu patru niveluri sau cu doar două, alte culori, stânci de altă mărime. Un coleg trebuie să ghicească ce ai schimbat.
+
+Greșeli frecvente. Suprafața e prea netedă: a rămas Smooth, treci pe Flat. Brazii arată identic: variază mărimea și rotația. Stânca e un balon: folosește Randomize și mută vârfuri. Umbrele lipsesc: adaugă un Sun și modul Rendered. Prea multe fețe: Cone cu șase sau opt laturi, nu treizeci și două.
+
+De făcut azi. Minim: un brad și o stâncă low-poly. Complet: minim, plus brazi și copaci variați, două stânci și randare cu umbre.
+
+Provocare, trei stele. Pădurea în patru anotimpuri. Doar dacă ai terminat varianta completă. Aceeași pădure, patru imagini, doar din culori: primăvara, verde deschis. Vara, verde închis. Toamna, portocaliu și maro. Iarna, pământ alb. Salvezi cele patru imagini cu nume clare.
+
+Recapitulare. Low-poly înseamnă puține fețe plate. Shade Flat arată fațetele. Control plus J unește piesele. Randomize face stânca neregulată. Variezi mărimea și rotația.
+
+Tema. Alegi un obiect din casă sau din curte, o căsuță, o mașinuță sau un cort, și îl refaci în stil low-poly, în Blender. Notezi pe foaie din ce forme simple îl faci. Folosești Shade Flat, puține fețe și cel puțin două culori, și verifici în Statistics că ai sub o sută cincizeci de fețe. Dai nume pieselor și salvezi fișierul cu numele din lecție, plus Tema. Succes!

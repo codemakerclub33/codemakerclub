@@ -31,7 +31,7 @@ export const descriereModulParinte: Record<string, string> = {
 
   // Blender
   m5: 'Copilul învață să se miște în spațiul 3D din Blender și să creeze forme simple: un om de zăpadă, o căsuță din cuburi, cu culori, lumini și o primă imagine finală. Modulul se termină cu o mică scenă proprie.',
-  m37: 'Copilul învață să modeleze obiecte mai complicate, trăgând și modelând forme: un turn de castel, un robot, o cană, dealuri și un fluture. La final construiește o rachetă în stil low-poly.',
+  m37: 'Copilul învață să modeleze obiecte mai complicate, trăgând și modelând forme: un turn de castel, un robot, o cană, dealuri și un fluture. La final adună figurinele (robot, cană, fluture, vulpe) pe un raft și îl randează.',
   m38: 'Copilul descoperă unelte care fac modelarea mai repede, pentru fructe rotunde, garduri, scări, cufere și brânză cu găuri. Învață și culori, texturi și lumini, apoi construiește o cameră 3D proprie.',
   m39: 'Copilul face proiecte 3D complete: un personaj cu corp, față și culori și o insulă plutitoare cu lumini și atmosferă. Își alege și un proiect final, pe care îl prezintă într-o expoziție.',
 

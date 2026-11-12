@@ -1,31 +1,33 @@
-Lecția patru. Inset și Bevel: robotul cutie.
+Lecția patru. Robotul cutie. Inset, Extrude și Bevel.
 
-Astăzi înveți două unelte care dau detalii: Inset, adică o față în interiorul altei fețe, și Bevel, adică rotunjirea muchiilor. Cu ele construiești un robot simpatic. Proiectul se numește Robotul cutie. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B doi, linie jos, L patru, punct blend.
+Astăzi construiești un personaj cu unelte de detaliu: Inset și Extrude pentru ochi și butoane, Bevel pentru colțuri rotunjite, ca la jucăriile din plastic. Începi de la două cuburi și termini cu un robot simpatic. Proiectul se numește Robotul cutie. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B doi, linie jos, L patru, punct blend.
 
-Obiectivul. La final ai un robot cu corp, cap, ochi, gură, brațe și butoane. Minim: corp și cap din cuburi, ochi cu Inset și Extrude, muchii rotunjite cu Bevel. Complet: minim, plus gură, antenă, brațe extrudate și butoane pe piept.
+Ce facem azi. La final ai un robot cu corp, cap, ochi, gură, antenă, brațe și butoane, cu colțurile rotunjite. Detaliile mici fac diferența între o cutie și un personaj. Rețeta Inset plus Extrude, din lecția trecută, pune ochi, butoane și ferestre. Bevel rotunjește muchiile.
 
-De ce contează. Detaliile mici fac diferența dintre o cutie și un personaj. Inset și Extrude se folosesc pentru butoane, ferestre și ochi. Bevel se folosește pentru colțuri rotunjite, ca la jucăriile din plastic.
+Instrucțiuni noi azi. I și apoi E, împreună, fac un chenar și apoi trag sau împing fața: ochi, butoane, ferestre. Control plus B este Bevel și rotunjește muchiile selectate. Rotița mouse-ului în timpul Bevel schimbă numărul de segmente. Shift plus A în Edit Mode adaugă o piesă nouă în același obiect. Control plus A, apoi Scale, fixează scara unui obiect: obiectul arată la fel, dar scara devine unu, iar măsurătorile din Edit Mode ies exacte.
 
-Primul pas. Inset, tasta I. În Edit Mode, cu o față selectată, apeși I și miști mouse-ul: apare o față mai mică, în interiorul celei vechi. Poți scrie un număr și Enter, pentru o distanță exactă, de exemplu I, zero virgulă doi, Enter. Dacă apeși I a doua oară în timp ce lucrezi, alegi modul Individual, în care fiecare față este tratată separat, când ai mai multe selectate.
+Primul pas. Inset plus Extrude. Cu o față selectată apeși I, scrii o distanță mică, de exemplu zero virgulă zero cinci, și Enter: apare un chenar. Apoi E, scrii minus zero virgulă unu pentru o adâncitură sau zero virgulă unu pentru o ieșitură, și Enter. Încearcă tu: pe un cub nou fă o adâncitură pe o față și o ieșitură pe alta.
 
-Al doilea pas. Inset plus Extrude înseamnă detaliu. Rețeta de bază pentru ochi, butoane și ferestre: selectezi fața, apeși I, apoi E, spre interior sau spre exterior.
+Al doilea pas. Bevel. Rotunjește muchiile, ca să nu fie tăioase. Alegi Edge din butoanele din antet și selectezi muchiile cu Shift plus click, sau apeși A pentru toate. Apeși Control plus B, miști mouse-ul sau scrii o valoare, de exemplu zero virgulă unu, iar cu rotița alegi segmentele. Enter confirmă. Doi sau trei segmente sunt de ajuns, pentru că la zece modelul are prea multe piese. Încearcă tu: pe un cub nou selectează toate muchiile, fă Bevel și schimbă segmentele de la unu la trei.
 
-Al treilea pas. Bevel, cu Control plus B. Rotunjește muchiile ca să nu fie tăioase. Selectezi muchiile, în modul Edge, cu doi și Shift plus click, sau apeși A pentru tot obiectul. Apeși Control plus B. Miști mouse-ul pentru a alege cât de mare este rotunjirea. Cu rotița alegi câte segmente are: mai multe înseamnă mai neted. Confirmi cu Enter. Pentru vârfuri, folosești Control plus Shift plus B.
+Al treilea pas. Corpul și capul. Ștergi cubul de start și adaugi un Cube. Corpul are scara X unu virgulă doi, Y unu, Z unu virgulă cinci și înălțimea unu virgulă cinci. Capul este un cub nou, cu scara zero virgulă opt pe toate axele și înălțimea trei virgulă opt. După ce scalezi o piesă, apeși Control plus A, alegi Scale și ții mouse-ul peste viewport. Faci asta la fiecare piesă scalată. Încearcă tu: verifică dacă corpul stă pe podea, capul este deasupra lui și scara arată unu în panoul N.
 
-Al patrulea pas. Robotul, pe rând. Începi cu scena de start, ștergi cubul și pornești de la un cub nou.
+Al patrulea pas. Ochii, gura și antena. Ochii sunt un cub cu scara zero virgulă cincisprezece, la X minus zero virgulă treizeci și cinci, Y minus zero virgulă opt și înălțimea patru. În Edit Mode alegi Face, selectezi fața din față a cubului mic, apeși I, zero virgulă zero cinci, Enter, apoi E, minus zero virgulă unu, Enter: un ochi adâncit. Cu Shift plus D și G, X, zero virgulă șapte, faci al doilea ochi, simetric. Gura este un cub cu scara X zero virgulă patru, Y zero virgulă unu și Z zero virgulă zero opt, la înălțimea trei virgulă patruzeci și cinci. Antena se face pe fața de sus a capului: I, zero virgulă șase, apoi E, Z, zero virgulă opt, apoi E, Z, zero virgulă doi și S, doi, pentru un bec în vârf. Încearcă tu: verifică dacă ochii sunt simetrici, la aceeași înălțime, și dacă antena are bec.
 
-Corpul: un cub, cu S, X, unu virgulă doi, apoi S, Z, unu virgulă cinci, apoi G, Z, unu virgulă cinci, ca să stea pe podea.
+Al cincilea pas. Brațele. Selectezi corpul, Tab, Face. Pentru brațul drept alegi fața din dreapta, apoi E, X, unu, Enter, S, zero virgulă patru, Enter și din nou E, X, unu, Enter. Pentru stânga repeți pe fața din stânga, dar cu E, X, minus unu, de ambele ori. Încearcă tu: verifică din față, cu unu, dacă robotul arată simetric.
 
-Capul: un al doilea cub, cu S, zero virgulă opt, apoi G, Z, trei virgulă opt. Ochii: adaugi un cub mic, cu S, zero virgulă cincisprezece, pe fața din față a capului, în stânga. În Edit Mode selectezi fața lui din față, apoi I, zero virgulă zero cinci, și E, minus zero virgulă unu, ca să obții un ecran adâncit. Duplici ochiul cu Shift plus D și îl muți simetric, de partea cealaltă.
+Al șaselea pas. Butoanele de pe piept. Cu corpul în Edit Mode, Shift plus A, Mesh, Cube adaugă un cub în același obiect. Apare în centrul scenei. Îl micșorezi cu S, zero virgulă cincisprezece, îl aduci în fața corpului cu G, Y, minus unu, și îl urci pe piept cu G, Z, doi virgulă doi. Selectezi fața din față, apeși I, zero virgulă zero cinci, apoi E, zero virgulă zero cinci. Faci încă două butoane, la înălțimile unu virgulă opt și unu virgulă patru. Încearcă tu: verifică din lateral, cu trei, dacă butoanele ies puțin din corp.
 
-Gura și antena: gura este un cub subțire și lat, cu S, X, zero virgulă cinci și S, Z, zero virgulă zero opt, lipit pe față, sub ochi. Antena: pe fața de sus a capului, I, zero virgulă șase, apoi E, Z, zero virgulă opt, apoi E, Z, zero virgulă doi și S, trei, ca să obții un bec mai lat în vârf.
+Al șaptelea pas, varianta completă. Rotunjim și colorăm. În Object Mode selectezi corpul și apoi, cu Control plus click în Outliner, și capul. Tab, A, Control plus B, scrii zero virgulă unu, alegi trei segmente cu rotița și Enter. Ca în Modulul unu, lecția șapte, faci un material pentru corp, unul pentru ochi și unul pentru butoane. Dai nume pieselor cu F doi.
 
-Brațele: selectezi fața din dreapta a corpului, apoi E, X, unu, Enter, apoi S, zero virgulă șase, Enter, apoi E, X, unu, Enter. Pe fața din stânga faci la fel, dar cu E, X, minus unu, la ambele extrudări, ca brațul să iasă în afară.
+Pasul de creație. Faci robotul al tău: schimbi proporțiile, forma ochilor sau culorile. Un coleg trebuie să ghicească ce ai schimbat.
 
-Butoanele: pe piept adaugi trei cuburi mici, cu S, zero virgulă cincisprezece, lipite de corp. Pe fața din față a fiecăruia faci I, zero virgulă zero cinci, apoi E, zero virgulă zero cinci.
+Greșeli frecvente. Bevel-ul face o formă ciudată: ai selectat și piese din interior. Inset-ul iese din față: scrie numărul, nu folosi mouse-ul. Ochiul iese în loc să intre: ai scris numărul pozitiv, nu minus. Brațele se intersectează cu corpul: nu ai extrudat suficient. Prea multe piese: prea multe segmente la Bevel. Piesele nu se potrivesc: verifică din față și din lateral.
 
-Al cincilea pas, pentru varianta completă. Finisaje. În Object Mode selectezi toate piesele cu A, apoi apeși Tab, ca să intri în Edit Mode pe toate odată. Apeși A, apoi Control plus B. Cu rotița alegi trei segmente și o mărime mică, în jur de zero virgulă zero cinci. Apoi Object, Shade Smooth. Dai un material corpului, gri-albastru, unul ochilor, galben, și unul butoanelor, roșu.
+De făcut azi. Minim: corp, cap, ochi cu Inset și Extrude și colțuri rotunjite cu Bevel. Complet: minim, plus gură, antenă, brațe, butoane, culori și nume.
 
-Greșeli frecvente. Bevel-ul face o formă ciudată: ai selectat și piese din interior, verifică selecția. Inset-ul iese din față: mouse-ul a mers în direcția greșită, scrie numărul. Brațele se intersectează cu corpul: nu ai extrudat suficient. Prea mulți vertici: folosește doi sau trei segmente de bevel, nu zece. Părțile nu se potrivesc: verifică din față și din lateral.
+Provocare, trei stele. Familia de roboți. Doar dacă ai terminat varianta completă. Copiezi robotul în Object Mode cu Shift plus D, îl muți și îl scalezi la jumătate. Fiul are un detaliu diferit: altă antenă, alți ochi sau altă culoare. Mama și fiul stau față în față, iar numele obiectelor arată cine este cine.
 
-Succes la robot.
+Recapitulare. I este inset, E este extrude. Inset plus Extrude negativ face adâncitură, iar pozitiv face ieșitură. Control plus B rotunjește muchiile. Shift plus A în Edit Mode adaugă piese în același obiect. Verifici mereu din față și din lateral.
+
+Tema. Alegi un obiect cu colțuri rotunjite din casă, o telecomandă, o cutie sau un aparat mic, și îl refaci în Blender cu Inset, Extrude și Bevel. Notezi pe foaie câte butoane, goluri sau ieșituri are. Rotunjești colțurile cu Control plus B și notezi valoarea și numărul de segmente. Dai nume pieselor și salvezi fișierul cu numele din lecție, plus Tema. Succes!

@@ -27,7 +27,7 @@ Aceeași cană poate arăta banală sau spectaculoasă în funcție de lumini. S
 | 80–105 | Obiectul, camera, randarea |
 | 105–120 | Recap, quiz, galerie |
 
-**Ce ai nevoie:** Blender 4.2 · un obiect din lecțiile anterioare (cană, cufăr, rachetă)
+**Ce ai nevoie:** Blender 4.2 · un obiect din lecțiile anterioare (cană, cufăr, vulpe)
 
 ---
 
@@ -47,7 +47,7 @@ Un fundal fără colțuri, ca să nu vezi unde se termină podeaua și începe p
 - [ ] Ce văd în Blender seamănă cu descrierea  
 
 ### 2) Obiectul de fotografiat
-Pune cana, cufărul sau racheta în centrul curbei, deasupra podelei.
+Pune cana, cufărul sau vulpea în centrul curbei, deasupra podelei.
 
 ### 3) Cele 3 lumini
 | Lumină | Rol | Poziție |

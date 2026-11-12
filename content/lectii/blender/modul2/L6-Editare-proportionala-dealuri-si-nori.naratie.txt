@@ -1,23 +1,31 @@
-Lecția șase. Editare proporțională: dealuri și nori.
+Lecția șase. Dealuri și nori. Editare proporțională.
 
-Când muți un vârf, vecinii lui rămân pe loc și apare un vârf ascuțit. Cu editarea proporțională, în engleză Proportional Editing, el trage după sine și zona din jur, ca atunci când tragi de o față de masă. Proiectul se numește Dealuri și nori. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B doi, linie jos, L șase, punct blend.
+Când muți un vârf, vecinii lui rămân pe loc și apare un vârf ascuțit. Cu editarea proporțională, zona din jur se mișcă după el, ca atunci când tragi de o față de masă. Astăzi faci dealuri rotunde și nori pufoși. Proiectul se numește Dealuri și nori. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B doi, linie jos, L șase, punct blend.
 
-Obiectivul. La final ai un peisaj cu dealuri rotunde și nori pufoși. Minim: activezi Proportional Editing și faci trei dealuri rotunde pe o grilă. Complet: minim, plus reglezi raza cu rotița, încerci tipuri de atenuare și modelezi trei nori din sfere deformate.
+Ce facem azi. La final ai un peisaj cu dealuri rotunde, o vale și trei nori, cu lumină și o imagine randată. Natura nu are colțuri, iar editarea proporțională este unealta principală pentru formele moi.
 
-De ce contează. Natura nu are colțuri: dealurile, norii și fețele sunt moi. Editarea proporțională este unealta principală pentru forme organice.
+Instrucțiuni noi azi. Litera O pornește și oprește editarea proporțională. Rotița mouse-ului, în timp ce muți cu G, mărește sau micșorează cercul de influență. Shift plus O schimbă tipul de atenuare. Reții și G, Z, cu un număr, pentru mutarea pe înălțime.
 
-Primul pas. Pregătirea. Adaugi o grilă, cu Shift plus A, Mesh, Grid, cu X și Y Subdivisions treizeci și Size doisprezece. Apeși Tab, treci în modul Vertex, cu unu, și apoi șapte, pentru vederea de sus. Grila trebuie să aibă multe vârfuri, ca dealurile să iasă netede.
+Primul pas. Pregătirea. Ștergi cubul și adaugi Shift plus A, Mesh, Grid, cu treizeci de subdiviziuni pe X și pe Y și mărimea doisprezece. Tab, modul Vertex din butoanele din antet, apoi vedere de sus, cu Numpad șapte. Grila trebuie să aibă multe vârfuri, ca dealurile să iasă netede. Încearcă tu: verifică dacă grila este plată și dacă ești în Edit Mode, în modul Vertex.
 
-Al doilea pas. Pornim Proportional Editing. Apeși litera O, în Edit Mode. În bara de sus apare un cerc cu puncte. Selectezi un singur vârf din mijloc. Apeși G, Z, trei, dar nu apeși Enter încă. Miști rotița mouse-ului: apare un cerc mare în jurul punctului, iar zona din cerc se ridică odată cu el. Rotița mărește sau micșorează cercul. Confirmi cu Enter.
+Al doilea pas. Pornim editarea proporțională. Apeși litera O și se aprinde butonul cu cercul din bara de sus. Selectezi un singur vârf din mijloc. Apeși G, Z, trei, dar nu apeși Enter. Miști rotița mouse-ului: un cerc apare în jurul punctului, iar zona din cerc se ridică odată cu el. Enter confirmă. Încearcă tu: verifică dacă ai un deal rotund, nu un vârf ascuțit. Refă dealul cu cercul mai mic și apoi mai mare. Oprește O, mută un vârf și vezi cum iese ascuțit.
 
-Al treilea pas. Tipuri de atenuare, în engleză Falloff. În bara de sus, lângă cerc, ai o listă. Smooth dă un deal rotunjit, natural, și este cel mai bun. Sphere dă un deal bombat. Sharp dă un deal ascuțit. Linear dă un con. Random dă un deal zgrunțuros. Încearcă fiecare pe un deal diferit. Schimbarea se face și cu Shift plus O.
+Al treilea pas. Tipuri de atenuare. Smooth dă un deal rotunjit, natural, cel mai bun. Sphere dă unul bombat. Sharp îl face ascuțit. Linear îl face con. Random îl face zgrunțuros. Se schimbă și cu Shift plus O. Încearcă tu: fă câte un deal cu Smooth, Sharp și Linear și recunoaște tipul după formă.
 
-Al patrulea pas. Dealurile. Alegi trei vârfuri în locuri diferite. Pentru fiecare, apeși G, Z, cu cifre diferite, de exemplu doi, trei și unu virgulă cinci, și reglezi raza cu rotița. Faci un deal lat, cu rază mare, și un deal ascuțit, cu rază mică. Pentru o vale, apeși G, Z, minus doi pe un vârf. Ieși cu Tab și aplici Shade Smooth.
+Al patrulea pas. Dealurile. Alegi trei vârfuri în locuri diferite. Pentru fiecare, G, Z, cu două, trei sau unu virgulă cinci, și reglezi raza cu rotița. Faci un deal lat, cu rază mare, și un deal ascuțit, cu rază mică. Pentru o vale, G, Z, minus doi pe un vârf. Ieși cu Tab și dai Shade Smooth. Încearcă tu: verifică dacă ai trei dealuri de mărimi diferite, o vale și un deal ascuțit, iar suprafața este netedă.
 
-Al cincilea pas. Norii. Adaugi o UV Sphere, cu treizeci și două de segmente și șaisprezece inele, și o muți sus, la înălțimea șase. Apeși S, X, unu virgulă șase, apoi S, Y, unu, apoi S, Z, zero virgulă șapte, ca să obții un nor lat. Apeși Tab. Cu O pornit, alegi câte un vârf și apeși G, plus rotița: faci bule pe suprafață. Faci trei sau patru bule mari pe partea de sus și două pe lateral. Aplici Shade Smooth și un material alb, cu Roughness unu. Duplici norul cu Shift plus D și așezi trei nori în locuri diferite, cu mărimi diferite.
+Al cincilea pas. Norii. Adaugi o UV Sphere cu treizeci și două de segmente și șaisprezece inele, și o ridici cu G, Z, șase. Apoi S, X, unu virgulă șase, S, Y, unu, S, Z, zero virgulă șapte: un nor lat. Tab, O pornit. Alegi câte un vârf și G cu rotița, ca să faci bule pe suprafață: trei sau patru mari sus și două pe lateral. Shade Smooth, material alb, Roughness unu. Cu Shift plus D și G faci încă doi nori, de mărimi diferite. Încearcă tu: verifică dacă ai trei nori pufoși, la înălțimi diferite, care nu ating dealurile.
 
-Al șaselea pas, pentru varianta completă. Scena completă. Peisajul primește un material verde, pentru iarbă. Un deal este în plan apropiat și două în fundal. Norii sunt trei, în locuri diferite. Pui o lumină Sun caldă și o cameră de unde se văd dealurile, ca în lecția opt a modulului unu. Randezi o imagine P N G.
+Al șaselea pas, varianta completă. Scena. Material verde pentru dealuri. Un deal în față și două în fundal. O lumină Sun caldă și o cameră de unde se văd dealurile, ca în Modulul unu, lecția opt. Randezi o imagine PNG, ca în lecția nouă din Modulul unu. Dai nume clare obiectelor.
 
-Greșeli frecvente. Dealul este ascuțit: nu ai pornit O. Dealul este ciudat de mic: raza este mică, mărește raza cu rotița în timp ce muți. Rotița schimbă zoom-ul: nu ai început încă mutarea cu G. Grila are prea puține vârfuri: folosește treizeci pe treizeci. Ai uitat să oprești O: dacă apoi muți vârfuri izolate, pornește sau oprește tasta O după nevoie.
+Pasul de creație. Faci peisajul tău: un deal foarte înalt, o vale adâncă, un nor uriaș. Un coleg trebuie să ghicească ce ai schimbat.
 
-Succes cu dealurile.
+Greșeli frecvente. Dealul e ascuțit: O nu este pornit. Dealul e ciudat de mic: raza e mică, o mărești cu rotița în timp ce muți. Rotița schimbă zoom-ul: nu ai început încă mutarea. Dealul iese zimțat: grila are prea puține vârfuri. Un vârf izolat iese ascuțit: pornește sau oprește O după nevoie.
+
+De făcut azi. Minim: trei dealuri rotunde pe grilă. Complet: minim, plus atenuări diferite, trei nori și randare.
+
+Provocare, trei stele. Dimineață, zi și apus. Doar dacă ai terminat varianta completă. Randezi același peisaj de trei ori: dimineața, cu lumină galben-pal și unghi mic. Ziua, cu lumină albă și unghi mare. Apusul, cu lumină portocalie și cer închis. Salvezi imaginile cu nume clare.
+
+Recapitulare. O pornește editarea proporțională. Rotița schimbă raza. Smooth dă forme naturale. Formele moi cer multe vârfuri. Mai multe vârfuri selectate dau un platou.
+
+Tema. Alegi un obiect moale din casă, o pernă, o pâine sau un pepene, și îl modelezi în Blender cu editare proporțională. Pornești de la o grilă sau o sferă cu multe vârfuri. Folosești cel puțin trei atenuări diferite și le notezi pe foaie. Dai nume pieselor și salvezi fișierul cu numele din lecție, plus Tema. Succes!

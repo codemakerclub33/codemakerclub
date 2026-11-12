@@ -1,23 +1,33 @@
-Lecția doi. Selectare isteață.
+Lecția doi. Peisajul din grilă. Selectare isteață.
 
-Cine selectează repede, modelează repede. Astăzi înveți cinci metode de selectare care îți economisesc zeci de clicuri. Proiectul se numește Peisajul din grilă. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B doi, linie jos, L doi, punct blend.
+Cine selectează repede, modelează repede. Astăzi înveți șase metode de selectare care îți economisesc zeci de click-uri, iar cu ele ridici dealuri, munți și văi dintr-o simplă grilă. Proiectul se numește Peisajul din grilă. Fișierul se numește: Prenume, linie jos, Nume, linie jos, B doi, linie jos, L doi, punct blend.
 
-Obiectivul. La final selectezi rapid grupuri de piese și faci un peisaj dintr-o grilă. Minim: folosești selecția cu Box, Shift plus click și Alt plus A. Complet: minim, plus Alt plus click pentru o buclă de muchii, tasta L pentru piese legate, Control plus I pentru inversare și un peisaj cu dealuri și o vale.
+Ce facem azi. La final ai un peisaj trei D cu dealuri, un munte, o vale și un lac, făcut dintr-o singură grilă. Un model are sute de piese. Dacă le selectezi pe rând, pierzi mult timp. Metodele isteațe fac același lucru dintr-o singură mișcare.
 
-De ce contează. Un model are sute de piese. Dacă le selectezi pe rând, pierzi mult timp. Metodele isteațe fac același lucru într-o singură mișcare.
+Instrucțiuni noi azi. Box select înseamnă să tragi un dreptunghi și să selectezi un grup de piese. Alt plus click pe o muchie selectează o buclă întreagă, adică un rând de pe grilă. L, cu mouse-ul peste o piesă, selectează tot ce este legat de ea. Control plus I inversează selecția. Le știi deja: Alt plus Z pornește X-ray, iar A și Alt plus A selectează tot sau nimic.
 
-Primul pas. Grila de lucru. Ștergi cubul. Apeși Shift plus A, Mesh, Grid. În panoul din stânga jos pui X Subdivisions zece, Y Subdivisions zece și Size zece. Apeși Tab, pentru Edit Mode, apoi șapte, pentru vederea de sus.
+Primul pas. Grila de lucru. Pornești o scenă nouă și ștergi cubul. Shift plus A, Mesh, Grid. În panoul din stânga jos setezi zece subdiviziuni pe X, zece pe Y și mărimea zece. Apeși Tab, alegi Vertex din butoanele din antet și apeși șapte pentru vedere de sus. Încearcă tu: vezi o plasă de pătrate, apasă A ca să selectezi tot și Alt plus A ca să deselectezi.
 
-Al doilea pas. Metodele de selectare. Box select: tragi un dreptunghi cu mouse-ul, sau apeși B, pentru grupuri de piese. Shift plus click adaugă sau scoate o piesă, pentru ajustări. A selectează tot, iar Alt plus A deselectează tot, la început și la final. Alt plus click pe o muchie selectează o buclă întreagă, adică un rând sau un inel. Tasta L, cu cursorul peste o piesă, selectează tot ce este legat de ea, util pentru piese separate. Control plus I inversează selecția, adică tot, în afară de ce ai ales.
+Al doilea pas. Box select și Shift plus click. Tragi un dreptunghi gol cu mouse-ul și selectezi tot ce e în el. Shift plus click adaugă sau scoate o piesă din selecție. Alt plus A deselectează tot, ca să începi o selecție nouă. Dacă nu merge tragerea, apeși T și alegi instrumentul Select Box, sau apeși B și tragi. Încearcă tu: selectează un grup din mijloc, scoate două vârfuri cu Shift plus click și ia-o de la capăt cu Alt plus A.
 
-Al treilea pas. Atenție la X-ray. Box select selectează doar ce se vede. Ca să prinzi și piesele din spate, apasă Alt plus Z.
+Al treilea pas. Un deal, un munte, o vale. Selectezi un grup mare din mijloc și apeși G, Z, doi, Enter: un deal. Alt plus A, o zonă mică și G, Z, patru, Enter: un munte. Alt plus A, o zonă din colț și G, Z, minus unu, Enter: o vale. Dealurile au colțuri ascuțite, pentru că muți puține vârfuri. În lecția șase înveți o metodă care le face rotunde. Încearcă tu: vezi relieful din lateral și din față și refă un pas cu valori mai mari.
 
-Al patrulea pas. Dacă nu merge selecția. Bara de unelte din stânga, pe care o arăți cu T, are instrumentul Select Box. Asigură-te că este activ. Poți trece la Tweak sau la Lasso, selectare liberă, desenată, din același loc.
+Al patrulea pas. X-ray. Box select selectează doar ce se vede din vederea ta. Ca să prinzi și piesele din spate, apeși Alt plus Z. Încearcă tu: rotește vederea oblic, trage un dreptunghi peste munte fără X-ray și uită-te în contor, apoi pornește X-ray și trage același dreptunghi: numărul crește.
 
-Al cincilea pas. Peisajul din grilă. Treci în modul Vertex, cu unu, și apeși Alt plus A, ca să nu ai nimic selectat. Selectezi cu Box un grup de vârfuri din mijloc și apeși G, Z, doi, Enter: un deal. Selectezi altă zonă, mai mică, și apeși G, Z, patru, Enter: un munte. Selectezi o zonă din colț și apeși G, Z, minus unu, Enter: o vale. Alegi o muchie interioară și dai Alt plus click: selectezi tot rândul. Apeși G, Z, unu, Enter: un zid prin peisaj. Control plus I inversează selecția, iar G, Z, minus zero virgulă trei, Enter, coboară tot restul puțin. Ieși cu Tab și aplici Shade Smooth, din click dreapta. Dealurile au colțuri ascuțite pentru că mutăm puține vârfuri. În lecția șase vei învăța o metodă care le face rotunde.
+Al cincilea pas. Bucla de muchii. Alegi modul Edge și dai Alt plus click pe o muchie, nu pe un vârf. Se selectează tot rândul. Apeși G, Z, unu, și ridici un zid prin peisaj. Dacă ai activat Emulate Three Button Mouse pe laptop, Alt plus click rotește vederea. Atunci selectezi o muchie cu un click simplu și alegi din meniul de sus Select, Select Loops, Edge Loops. Încearcă tu: selectează o linie întreagă cu un singur click și coboară-o ca să faci un șanț.
 
-Al șaselea pas, pentru varianta completă. Mai mult peisaj. Faci trei dealuri de înălțimi diferite. Faci o vale care trece de-a lungul grilei, selectând un rând cu Alt plus click și coborând acel rând. Adaugi un lac: un plan albastru, la înălțimea zero virgulă doi, în vale.
+Al șaselea pas. L selectează ce este legat. Un model poate avea mai multe piese separate în același obiect. Alt plus A, apoi Shift plus A, Mesh, Cube. Cubul apare în același obiect, ca o piesă separată. Îl muți într-un loc liber. Cu mouse-ul peste cub apeși L: se selectează doar cubul. Cu mouse-ul peste grilă apeși L: se selectează grila întreagă. Mută casa cu G, X, doi, iar peisajul rămâne pe loc. Încearcă tu: selectează cubul și apoi grila cu L și mută casa fără să atingi peisajul.
 
-Greșeli frecvente. Nu merge Box select: instrumentul nu este activ, apasă T sau B. Selecția a prins doar piese din față: pornește Alt plus Z. Alt plus click nu face bucla: dai click pe muchie, nu pe vârf, în modul Edge sau Vertex. Selectezi prea mult: Alt plus A și iei de la capăt. Peisajul este plat: mutarea este mică, scrie numere mai mari.
+Al șaptelea pas. Control plus I inversează selecția. E util când este mai ușor să alegi ce nu vrei. Selectezi casa cu L și apeși Control plus I. Acum este selectat tot, în afară de casă. Cobori peisajul cu G, Z, minus zero virgulă trei: casa rămâne pe loc, cu o fundație la vedere.
 
-Succes la peisaj.
+Al optulea pas, varianta completă. Pui totul laolaltă: trei dealuri de înălțimi diferite, un munte în fundal și o vale care trece de-a lungul grilei, făcută cu o buclă coborâtă. Pui o casă pe un deal, o muți cu L, ieși cu Tab și dai Shade Smooth cu click dreapta. La final adaugi un lac: un Plane în Object Mode, scalat cu S, patru, la înălțimea minus zero virgulă șapte, ca să umple valea. Obiectele se numesc Peisaj și Lac.
+
+Greșeli frecvente. Nu merge Box select: apasă T și alege Select Box. Se selectează doar piesele din față: pornește X-ray. Alt plus click nu face bucla: dă click pe muchie, în modul Edge. Selectezi prea mult: Alt plus A și reiei. Peisajul este plat: scrie numere mai mari. L selectează totul: piesa nu este separată de restul, deci o adaugi cu Shift plus A în Edit Mode.
+
+De făcut azi. Minim: o grilă de zece pe zece și două dealuri făcute cu Box select. Complet: minim, plus buclă, L, Control plus I, munte, vale, casă și lac.
+
+Provocare, trei stele. Insula. Doar dacă ai terminat varianta completă. Transformi peisajul într-o insulă înconjurată de apă. Cobori buclele din marginea grilei, ca marginile să intre în apă. Pui un plan mare la înălțimea minus zero virgulă șapte, ca apa să înconjoare insula. Pe insulă ai munte, drum, cel puțin trei case și un lac. Obiectele au nume clare.
+
+Recapitulare. Box pentru grupuri, Shift plus click pentru ajustări. Alt plus click pe muchie este buclă, L este piese legate, Control plus I este invers. Alt plus Z vede și prin obiect. A și Alt plus A sunt tot și nimic.
+
+Tema. Alegi un loc cunoscut, o curte, un parc sau o piață, și îl refaci ca relief în Blender, pe o grilă. Schițezi pe foaie unde sunt dealurile, apa și zonele plate. Folosești cel puțin două metode de selectare din lecție și le notezi pe foaie. Dai nume pieselor și salvezi fișierul cu numele din lecție, plus Tema. Succes!

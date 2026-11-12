@@ -1,12 +1,12 @@
 # Blender — Modulul 2
 
-- Lecția 1 — Vârfuri, muchii, fețe
-- Lecția 10 — Racheta low-poly II
-- Lecția 2 — Selectare isteață
-- Lecția 3 — Extrude: turnul de castel
-- Lecția 4 — Inset și Bevel: robotul cutie
-- Lecția 5 — Loop Cut: cana de ceai
-- Lecția 6 — Editare proporțională: dealuri și nori
-- Lecția 7 — Simetria: fluturele
-- Lecția 8 — Stil low-poly
-- Lecția 9 — Racheta low-poly I
+- Lecția 1 — Cubul care se transformă
+- Lecția 2 — Peisajul din grilă
+- Lecția 3 — Turnul de castel
+- Lecția 4 — Robotul cutie
+- Lecția 5 — Cana de ceai
+- Lecția 6 — Dealuri și nori
+- Lecția 7 — Fluturele
+- Lecția 8 — Pădurea low-poly
+- Lecția 9 — Vulpea low-poly
+- Lecția 10 — Raftul cu figurine
