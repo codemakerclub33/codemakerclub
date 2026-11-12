@@ -45,16 +45,16 @@
 
 | # | Titlu | Conținut | Proiect / exercițiu cheie |
 |---|--------|----------|---------------------------|
-| L11 | Bucla `for` | Contor, start/stop/pas | Afișare 1..N, tabela înmulțirii |
-| L12 | `for` — sumă, produs, numărare | Acumulatoare | Sumă numere, câte pare |
-| L13 | Bucla `while` | Condiție, citire până la stop | Citire până la 0 |
-| L14 | `do-while` + alegerea buclei | Meniuri, validare input | Meniu care se repetă |
-| L15 | Nested loops | Pattern-uri, tabele | Triunghiuri din `*` |
-| L16 | Array 1D — introducere | Declarare, index, citire/afișare | Vector de note |
-| L17 | Parcurgere vector | Sumă, medie, min, max | Statistici clasă |
-| L18 | Căutare în vector | Căutare liniară, numărare | „Există valoarea X?” |
-| L19 | Sortare simplă (intro) | Swap, bubble/selecție pe scurt | Sortare note crescător |
-| L20 | Recapitulare Modul 2 | Mix bucle + vectori | **Mini-proiect:** Catalog note |
+| L11 | Bucla `for` — Lansarea rachetei | Contor, start/stop/pas | Numărătoare inversă și rachetă |
+| L12 | Pușculița mea | Sumă, produs, numărare, medie | Total, zile cu cheltuieli mari, medie |
+| L13 | Codul de la ușă (`while`) | Condiție, santinelă, validare, cifre | Ghicește codul |
+| L14 | Automatul de dulciuri (`do-while`) | Meniuri, validare, alegerea buclei | Meniu care se repetă |
+| L15 | Constructorul de forme | Bucle imbricate | Dreptunghi, triunghi, piramidă |
+| L16 | Cutia cu piese (vectori) | Declarare, index, citire/afișare | Lista greutăților |
+| L17 | Stația meteo | Sumă, medie, min, max | Raport de temperaturi |
+| L18 | Colecția mea | Căutare liniară, numărare, dubluri | „Există valoarea X?” |
+| L19 | Recordurile mele | Swap, sortare prin selecție | Clasament și top 3 |
+| L20 | Arcada de jocuri | Mix bucle + vectori | **Mini-proiect:** meniu cu scoruri |
 
 ---
 
@@ -142,7 +142,7 @@
 | Modul | Cum verifici |
 |-------|----------------|
 | 1 | Mini-test + proiect meniu/`if` |
-| 2 | Catalog note (vector + bucle) |
+| 2 | Arcada de jocuri (vector + bucle) |
 | 3 | Set 5 probleme + mini-proiect string/funcții |
 | 4 | Proiect final prezentat (10–15 min) |
 | 5 | Joc RPG funcțional + demo (10–15 min) |

@@ -1,19 +1,17 @@
-# LECȚIA 1 — Bucla `for`
+# LECȚIA 1 — Lansarea rachetei
+### Bucla `for`
 **Modulul 2 · Bucle și vectori · 2 ore**  
 **Code Maker Club · Loop Master**
 
-> Azi înveți să spui calculatorului „repetă de câte ori vreau eu”, fără să scrii aceeași linie de 100 de ori.  
-> Proiect: **„Tabla înmulțirii”** · fișier: `Prenume_Nume_M2L1.cpp` (ex. `Ana_Pop_M2L1.cpp`)
+> Azi înveți să spui calculatorului „repetă de câte ori vreau eu”, fără să scrii aceeași linie de 100 de ori. La final lansezi o rachetă cu numărătoare inversă.  
+> Fișier: `Prenume_Nume_M2L1.cpp`
 
 ---
 
-## Obiectiv
-La finalul orei folosești bucla `for` ca să repeți o instrucțiune de un număr cunoscut de ori, știi ce rol au cele trei părți dintre paranteze (start, condiție, pas), numeri crescător, descrescător și din 2 în 2, și afișezi tabele simple.  
-**Minim:** un program care afișează numerele de la 1 la `n`, cu `n` citit de la tastatură.  
-**Ținta orei (Complet):** + numărătoare inversă, un pas diferit de 1 și tabla înmulțirii pentru un număr citit.
+## Ce facem azi
+La final folosești bucla `for` ca să repeți o instrucțiune de câte ori vrei, știi ce fac cele trei părți dintre paranteze (start, condiție, pas), numeri crescător, descrescător și din 2 în 2 și afișezi numărătoarea inversă a unei rachete.
 
-## De ce contează
-Programele reale repetă lucruri tot timpul: desenează 60 de cadre pe secundă, verifică 30 de elevi dintr-o clasă, numără scorul pe 10 niveluri. Fără bucle, ai scrie fiecare pas de mână. Cu `for`, trei rânduri fac munca a 100.
+Până acum, programele tale făceau fiecare lucru o singură dată. Dacă voiai 5 rânduri la fel, scriai 5 linii. Dacă voiai 100, scriai 100. De azi folosești o **buclă**: scrii instrucțiunea o dată și îi spui câte repetări vrei. Așa funcționează numărătoarea unui joc, cele 60 de cadre pe secundă ale unui film sau scorul care crește la fiecare nivel.
 
 ---
 
@@ -22,37 +20,46 @@ Programele reale repetă lucruri tot timpul: desenează 60 de cadre pe secundă,
 | Minute | Ce facem |
 |--------|----------|
 | 0–15 | Recapitulare Modulul 1 și problema repetării (**Exemplul 1**) |
-| 15–45 | Anatomia lui `for`: start, condiție, pas (**Exemplele 2–5**) |
-| 45–70 | Variații: invers, cu pas, între două valori (**Exemplele 6–9**) |
-| 70–90 | `for` cu `char` și cu `if` în interior (**Exemplele 10–12**) |
-| 90–115 | Proiecte (**Exemplele 13–16**) |
+| 15–40 | Cele trei părți ale lui `for` (**Exemplele 2–3**) |
+| 40–60 | Repetări alese de utilizator, cu `cin` (**Exemplul 4**) |
+| 60–85 | Invers și din 5 în 5 (**Exemplul 5**) |
+| 85–115 | Proiectul: Lansarea rachetei + Provocarea (**Exemplul 6**) |
 | 115–120 | Recap și temă |
-
-> **Pentru ritm lent sau începători:** în clasă faceți mai întâi cele **8 exemple marcate [Esențial]** (inclusiv proiectul sau exemplul final, acolo unde e cazul). Ele acoperă tot ce trebuie să rămână după lecție. Restul exemplelor sunt pentru cine merge repede sau pentru acasă.
 
 ---
 
-## 1. De ce avem nevoie de bucle
+## Instrucțiuni noi azi
 
-### Exemplul 1 — Fără buclă și cu buclă **[Esențial]**
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `for (start; condiție; pas) { ... }` | Repetă instrucțiunile din acolade cât timp condiția este adevărată | `for (int i = 1; i <= 5; i++)` |
+| `i++` | Mărește `i` cu 1 | `i++` din 3 devine 4 |
+| `i--` | Micșorează `i` cu 1 | `i--` din 3 devine 2 |
+| `i += 5` | Mărește `i` cu 5 | `i += 5` din 0 devine 5 |
 
-Vrei să afișezi de 5 ori mesajul „Salut!”. Fără buclă:
+---
+
+## Pas cu pas
+
+### Exemplul 1 — Fără buclă și cu buclă
+
+Vrem să afișăm numerele de la 1 la 5. Fără buclă:
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    cout << "Salut!" << endl;
-    cout << "Salut!" << endl;
-    cout << "Salut!" << endl;
-    cout << "Salut!" << endl;
-    cout << "Salut!" << endl;
+    cout << 1 << endl;
+    cout << 2 << endl;
+    cout << 3 << endl;
+    cout << 4 << endl;
+    cout << 5 << endl;
     return 0;
 }
 ```
 
-Cu bucla `for`:
+Cu buclă, același rezultat:
 
 ```cpp
 #include <iostream>
@@ -60,40 +67,29 @@ using namespace std;
 
 int main() {
     for (int i = 1; i <= 5; i++) {
-        cout << "Salut!" << endl;
+        cout << i << endl;
     }
     return 0;
 }
 ```
 
-Ambele afișează de 5 ori „Salut!”. Dar ce faci dacă ți se cere de 500 de ori? Varianta cu buclă se schimbă într-un singur loc (`5` devine `500`).
-
----
-
-## 2. Anatomia lui `for`
-
+**Ieșire** (la ambele):
 ```
-for (start; conditie; pas) {
-    // instructiuni repetate
-}
+1
+2
+3
+4
+5
 ```
 
-| Parte | Rol | În `for (int i = 1; i <= 5; i++)` |
-|-------|-----|-----------------------------------|
-| **start** | se execută o singură dată, la început | `int i = 1` (creează contorul `i`, pornit de la 1) |
-| **condiție** | se verifică înaintea fiecărei repetări; dacă e adevărată, se repetă | `i <= 5` |
-| **pas** | se execută după fiecare repetare | `i++` (mărește `i` cu 1) |
+Pentru 5 numere diferența nu e mare. Pentru numerele de la 1 la 100, primul program are nevoie de 100 de linii, iar al doilea tot de 3: schimbi doar `5` în `100`.
 
-Ordinea în care se execută lucrurile:
-1. se execută **start**;
-2. se verifică **condiția**: dacă e falsă, bucla se oprește; dacă e adevărată, merge mai departe;
-3. se execută **corpul** buclei (instrucțiunile din acolade);
-4. se execută **pasul**;
-5. se revine la punctul 2.
+**Încearcă tu (5 min)**  
+- [ ] Rulezi ambele programe și vezi că dau același rezultat  
+- [ ] În programul cu buclă schimbi `5` în `12` și rulezi din nou  
+- [ ] Explici cu cuvintele tale de ce varianta cu buclă este mai scurtă  
 
-Variabila `i` se numește **contor**. O repetare a corpului buclei se numește **iterație**.
-
-### Exemplul 2 — Numerele de la 1 la 10 **[Esențial]**
+### Exemplul 2 — Cele trei părți ale lui `for`
 
 ```cpp
 #include <iostream>
@@ -113,35 +109,61 @@ int main() {
 1 2 3 4 5 6 7 8 9 10 
 ```
 
-Poți folosi contorul în interior: aici îl afișăm, urmat de un spațiu. După buclă, `cout << endl;` trece pe rândul următor.
+Între parantezele lui `for` sunt trei părți, despărțite prin `;`:
 
-### Exemplul 3 — Ce se întâmplă la fiecare iterație **[Esențial]**
+| Parte | În exemplu | Ce face |
+|-------|------------|---------|
+| **Start** | `int i = 1` | Se execută o singură dată, la început: creează variabila `i` și îi dă valoarea 1 |
+| **Condiție** | `i <= 10` | Se verifică înainte de fiecare rotire: dacă e adevărată, bucla continuă |
+| **Pas** | `i++` | Se execută după fiecare rotire: mărește `i` cu 1 |
+
+Instrucțiunile din acolade `{ }` se numesc **corpul** buclei. Ele se repetă cât timp condiția este adevărată. Variabila `i` se numește **contor**.
+
+**Încearcă tu (10 min)**  
+- [ ] Afișezi numerele de la 1 la 20  
+- [ ] Schimbi condiția în `i < 10` și vezi ce se schimbă (ultimul număr)  
+- [ ] Afișezi numerele de la 5 la 15, schimbând startul și condiția  
+
+### Exemplul 3 — Ce se întâmplă la fiecare rotire
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    for (int i = 1; i <= 4; i++) {
-        cout << "Iteratia " << i << ": i = " << i << ", dublul lui i = " << i * 2 << endl;
+    for (int i = 1; i <= 3; i++) {
+        cout << "Rotirea cu i = " << i << endl;
     }
-    cout << "Bucla este gata." << endl;
+    cout << "Gata, bucla s-a terminat." << endl;
     return 0;
 }
 ```
 
 **Ieșire:**
 ```
-Iteratia 1: i = 1, dublul lui i = 2
-Iteratia 2: i = 2, dublul lui i = 4
-Iteratia 3: i = 3, dublul lui i = 6
-Iteratia 4: i = 4, dublul lui i = 8
-Bucla este gata.
+Rotirea cu i = 1
+Rotirea cu i = 2
+Rotirea cu i = 3
+Gata, bucla s-a terminat.
 ```
 
-Când `i` devine 5, condiția `i <= 4` este falsă și bucla se oprește. Ultima valoare afișată este 4. Mesajul de după buclă apare o singură dată.
+Pas cu pas:
 
-### Exemplul 4 — Numărul de repetări îl alege utilizatorul **[Esențial]**
+| Moment | Valoarea lui `i` | Condiția `i <= 3` | Ce se întâmplă |
+|--------|------------------|-------------------|----------------|
+| Start | `i = 1` | adevărată | se afișează „Rotirea cu i = 1”, apoi `i++` |
+| A doua rotire | `i = 2` | adevărată | se afișează „Rotirea cu i = 2”, apoi `i++` |
+| A treia rotire | `i = 3` | adevărată | se afișează „Rotirea cu i = 3”, apoi `i++` |
+| Verificare | `i = 4` | **falsă** | bucla se oprește |
+
+Rândul „Gata, bucla s-a terminat.” este după acolade, deci se afișează o singură dată, după buclă.
+
+**Încearcă tu (10 min)**  
+- [ ] Faci același tabel pe foaie pentru `for (int i = 2; i <= 6; i++)`  
+- [ ] Scrii programul și verifici dacă ai prevăzut bine ieșirea  
+- [ ] Muți linia „Gata” în interiorul acoladelor și observi ce se întâmplă  
+
+### Exemplul 4 — Utilizatorul alege cât numără
 
 ```cpp
 #include <iostream>
@@ -149,8 +171,7 @@ using namespace std;
 
 int main() {
     int n;
-
-    cout << "Pana la ce numar numaram? ";
+    cout << "Pana la cat numar? ";
     cin >> n;
 
     for (int i = 1; i <= n; i++) {
@@ -161,98 +182,32 @@ int main() {
 }
 ```
 
-**Rulare** (tastezi `7`):
+**Rulare:**
 ```
-Pana la ce numar numaram? 7
-1 2 3 4 5 6 7 
-```
-
-Aici apare adevărata putere a buclei: aceeași linie de cod funcționează pentru `7`, pentru `70` sau pentru `700`.
-
-### Exemplul 5 — Începem de la 0
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    cout << "De la 1: ";
-    for (int i = 1; i <= 5; i++) {
-        cout << i << " ";
-    }
-
-    cout << endl << "De la 0: ";
-    for (int i = 0; i < 5; i++) {
-        cout << i << " ";
-    }
-    cout << endl;
-    return 0;
-}
+Pana la cat numar? 8
+1 2 3 4 5 6 7 8 
 ```
 
-**Ieșire:**
-```
-De la 1: 1 2 3 4 5 
-De la 0: 0 1 2 3 4 
-```
-
-Ambele bucle se repetă de **5 ori**, dar scrise diferit:
-- `i = 1; i <= 5` numără de la 1 până la 5 inclusiv;
-- `i = 0; i < 5` numără de la 0 până la 4.
-
-A doua formă (`i = 0; i < n`) este foarte răspândită în C++, pentru că vectorii pe care îi învățăm mai târziu încep de la poziția 0. Reține regula: **de la 0 și cu `<`**, sau **de la 1 și cu `<=`**.
+Condiția poate folosi o variabilă citită cu `cin`. Același program numără până la 8, până la 50 sau până la 1000, fără să-l mai modifici.
 
 **Încearcă tu (10 min)**  
-- [ ] Afișezi de 8 ori un mesaj la alegere  
-- [ ] Afișezi numerele de la 1 la `n`, cu `n` citit  
-- [ ] Desenezi pe foaie un tabel cu valorile lui `i` pentru `for (int i = 3; i <= 7; i++)`  
+- [ ] Rulezi programul cu `3`, cu `20` și cu `0`: ce se întâmplă la `0` și de ce?  
+- [ ] Afișezi, pe un rând separat, mesajul „Gata!” după buclă  
+- [ ] Citești două numere, `a` și `b`, și afișezi toate numerele de la `a` la `b`  
 
----
-
-## 3. Variații ale lui `for`
-
-### Exemplul 6 — Numărătoare inversă **[Esențial]**
+### Exemplul 5 — Invers și din 5 în 5
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    for (int i = 10; i >= 1; i--) {
-        cout << i << "... ";
+    for (int i = 5; i >= 1; i--) {
+        cout << i << "..." << endl;
     }
-    cout << endl << "Start!" << endl;
-    return 0;
-}
-```
+    cout << "Decolare!" << endl;
 
-**Ieșire:**
-```
-10... 9... 8... 7... 6... 5... 4... 3... 2... 1... 
-Start!
-```
-
-Pentru a număra **descrescător**: pornești de la valoarea mare, condiția folosește `>=` (sau `>`), iar pasul este `i--`.
-
-### Exemplul 7 — Pas diferit de 1 **[Esențial]**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    cout << "Numere pare pana la 20: ";
-    for (int i = 2; i <= 20; i += 2) {
-        cout << i << " ";
-    }
-
-    cout << endl << "Din 5 in 5: ";
-    for (int i = 0; i <= 50; i += 5) {
-        cout << i << " ";
-    }
-
-    cout << endl << "Numere impare pana la 15: ";
-    for (int i = 1; i <= 15; i += 2) {
+    for (int i = 0; i <= 20; i += 5) {
         cout << i << " ";
     }
     cout << endl;
@@ -262,195 +217,25 @@ int main() {
 
 **Ieșire:**
 ```
-Numere pare pana la 20: 2 4 6 8 10 12 14 16 18 20 
-Din 5 in 5: 0 5 10 15 20 25 30 35 40 45 50 
-Numere impare pana la 15: 1 3 5 7 9 11 13 15 
+5...
+4...
+3...
+2...
+1...
+Decolare!
+0 5 10 15 20 
 ```
 
-`i += 2` înseamnă `i = i + 2` (ai învățat scurtătura în Modulul 1, lecția 3). Pasul poate fi orice număr.
+Prima buclă numără **invers**: pornește de la 5, condiția este `i >= 1` și pasul este `i--`. A doua buclă merge din **5 în 5**: pasul `i += 5` mărește `i` cu 5 la fiecare rotire.
 
-### Exemplul 8 — Între două numere citite **[Esențial]**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int a, b;
-
-    cout << "De la: ";
-    cin >> a;
-    cout << "Pana la: ";
-    cin >> b;
-
-    for (int i = a; i <= b; i++) {
-        cout << i << " ";
-    }
-    cout << endl;
-    return 0;
-}
-```
-
-**Rulare 1** (tastezi `4` și `9`):
-```
-De la: 4
-Pana la: 9
-4 5 6 7 8 9 
-```
-
-**Rulare 2** (tastezi `9` și `4`):
-```
-De la: 9
-Pana la: 4
-
-```
-
-La a doua rulare nu apare nimic: condiția `9 <= 4` este falsă de la început, deci corpul buclei **nu se execută niciodată**. Este normal, nu o eroare. Dacă vrei să tratezi și cazul invers, adaugi un `if` care schimbă între ele `a` și `b`.
-
-### Exemplul 9 — Contorul crește cu o regulă proprie
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    cout << "Puterile lui 2: ";
-    for (int p = 1; p <= 1000; p *= 2) {
-        cout << p << " ";
-    }
-
-    cout << endl << "Impartim la 10 la fiecare pas: ";
-    for (int x = 1000; x >= 1; x /= 10) {
-        cout << x << " ";
-    }
-    cout << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Puterile lui 2: 1 2 4 8 16 32 64 128 256 512 
-Impartim la 10 la fiecare pas: 1000 100 10 1 
-```
-
-Pasul nu trebuie să fie `++` sau `--`. Poate fi orice instrucțiune: `p *= 2` dublează valoarea la fiecare iterație, iar `x /= 10` o împarte la 10.
+> **Atenție:** dacă pasul nu duce niciodată condiția la fals (de exemplu `i--` într-o buclă care pornește de la 1 cu `i <= 10`), bucla **nu se mai oprește**. Se numește buclă infinită. Oprești programul cu **Ctrl + C** în terminal sau cu butonul de stop din Code::Blocks.
 
 **Încearcă tu (10 min)**  
-- [ ] Afișezi numerele de la 20 la 1  
-- [ ] Afișezi multiplii lui 7 până la 70  
-- [ ] Afișezi puterile lui 3 până la 500 (1, 3, 9, 27, …)  
+- [ ] Afișezi numărătoarea inversă de la 10 la 1  
+- [ ] Afișezi multiplii lui 3 până la 30 (3, 6, 9 și așa mai departe) cu `i += 3`  
+- [ ] Afișezi numerele de la 100 la 0, din 10 în 10, în ordine descrescătoare  
 
----
-
-## 4. `for` cu `char` și cu `if` în interior
-
-### Exemplul 10 — Literele alfabetului
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    for (char c = 'A'; c <= 'Z'; c++) {
-        cout << c << " ";
-    }
-    cout << endl;
-
-    for (char c = 'z'; c >= 'u'; c--) {
-        cout << c;
-    }
-    cout << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
-zyxwvu
-```
-
-Contorul poate fi și `char`, pentru că literele au coduri ASCII consecutive (Modulul 1, lecția 5). `c++` trece la litera următoare.
-
-### Exemplul 11 — Pătratele numerelor
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    cout << "Numar\tPatrat\tCub" << endl;
-    for (int i = 1; i <= 8; i++) {
-        cout << i << "\t" << i * i << "\t" << i * i * i << endl;
-    }
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Numar	Patrat	Cub
-1	1	1
-2	4	8
-3	9	27
-4	16	64
-5	25	125
-6	36	216
-7	49	343
-8	64	512
-```
-
-Un `for` combinat cu `\t` produce un tabel întreg. Calculele depind de contor, deci fiecare rând are valori diferite.
-
-### Exemplul 12 — `for` cu `if`: Fizz și Buzz
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    for (int i = 1; i <= 15; i++) {
-        if (i % 3 == 0 && i % 5 == 0) {
-            cout << "FizzBuzz" << endl;
-        } else if (i % 3 == 0) {
-            cout << "Fizz" << endl;
-        } else if (i % 5 == 0) {
-            cout << "Buzz" << endl;
-        } else {
-            cout << i << endl;
-        }
-    }
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-1
-2
-Fizz
-4
-Buzz
-Fizz
-7
-8
-Fizz
-Buzz
-11
-Fizz
-13
-14
-FizzBuzz
-```
-
-Regula: numerele divizibile cu 3 devin „Fizz”, cele divizibile cu 5 devin „Buzz”, iar cele divizibile cu amândouă devin „FizzBuzz”. Este o problemă clasică, folosită chiar și la interviurile de angajare. Observă că cazul „amândouă” este verificat **primul**, pentru că este cel mai restrictiv (Modulul 1, lecția 7).
-
----
-
-## 5. Proiecte mici
-
-### Exemplul 13 — Tabla înmulțirii
+### Exemplul 6 — Lansarea rachetei (proiectul orei)
 
 ```cpp
 #include <iostream>
@@ -458,41 +243,134 @@ using namespace std;
 
 int main() {
     int n;
-
-    cout << "Tabla inmultirii cu: ";
+    cout << "De la ce secunda incepe numaratoarea? ";
     cin >> n;
 
-    for (int i = 1; i <= 10; i++) {
-        cout << n << " x " << i << " = " << n * i << endl;
+    cout << "=== LANSARE ===" << endl;
+    for (int i = n; i >= 1; i--) {
+        cout << "T minus " << i << endl;
+    }
+    cout << "Decolare!" << endl;
+
+    cout << "   /\\" << endl;
+    cout << "  /  \\" << endl;
+    cout << "  |  |" << endl;
+    cout << "  |__|" << endl;
+    for (int i = 1; i <= n; i++) {
+        cout << "  ^^^^" << endl;
     }
     return 0;
 }
 ```
 
-**Rulare** (tastezi `7`):
+**Rulare:**
 ```
-Tabla inmultirii cu: 7
-7 x 1 = 7
-7 x 2 = 14
-7 x 3 = 21
-7 x 4 = 28
-7 x 5 = 35
-7 x 6 = 42
-7 x 7 = 49
-7 x 8 = 56
-7 x 9 = 63
-7 x 10 = 70
+De la ce secunda incepe numaratoarea? 4
+=== LANSARE ===
+T minus 4
+T minus 3
+T minus 2
+T minus 1
+Decolare!
+   /\
+  /  \
+  |  |
+  |__|
+  ^^^^
+  ^^^^
+  ^^^^
+  ^^^^
 ```
 
-### Exemplul 14 — O linie de steluțe
+Programul folosește două bucle. Prima numără invers de la `n` la 1. A doua desenează câte un rând de flăcări (`^^^^`) pentru fiecare secundă: cu cât numărătoarea e mai lungă, cu atât flacăra e mai mare. Observă că `\` apare dublu în cod (`"   /\\"`), dar pe ecran se vede o singură dată.
 
+**Încearcă tu (15 min)**  
+- [ ] Rulezi programul cu `3`, cu `6` și cu `10`  
+- [ ] Schimbi mesajul „T minus” cu un text al tău  
+- [ ] Adaugi sub rachetă un rând „Succes, misiunea a început!”  
+
+---
+
+## De făcut azi — „Lansarea rachetei”
+
+| | Ce trebuie să ai |
+|---|---|
+| **Minim** | Un program care citește un număr `n`, afișează numărătoarea inversă de la `n` la 1 și apoi „Decolare!” |
+| **Complet** | Minim + o rachetă desenată din caractere, cu flăcări în număr egal cu `n` (printr-o a doua buclă) și un test cu cel puțin trei valori diferite pentru `n` |
+
+**Gata când:**
+- [ ] Programul compilează fără erori  
+- [ ] Citește `n` cu `cin`, după un mesaj clar  
+- [ ] Afișează numărătoarea inversă de la `n` la 1  
+- [ ] Afișează „Decolare!” o singură dată, după buclă  
+- [ ] (Complet) Desenează racheta și atâtea rânduri de flăcări câte secunde a numărat  
+- [ ] (Complet) Ai testat cu minimum 3 valori diferite  
+- [ ] Fișierul se numește `Prenume_Nume_M2L1.cpp`
+
+---
+
+## Bonus ★★★ — Provocare: Calendarul de lansări
+*Doar dacă ai terminat Complet.*
+
+O bază spațială lansează o rachetă la fiecare **7 zile**. Afișează în ce zile din luna de 30 de zile au loc lansările și câte lansări sunt în total.
+
+- [ ] Programul folosește un `for` de la 1 la 30  
+- [ ] Afișează, de exemplu, „Lansare in ziua 7” pentru fiecare zi potrivită  
+- [ ] Afișează la final numărul total de lansări  
+- [ ] Schimbi intervalul din 7 în 5 zile și verifici rezultatul  
+
+---
+
+## Greșeli frecvente
+
+| Ce vezi | Cauza | Corect |
+|---------|-------|--------|
+| Bucla se repetă la nesfârșit | Pasul nu duce niciodată condiția la fals | Verifică dacă `i++` sau `i--` merge în sensul bun |
+| Bucla nu rulează deloc | Condiția este falsă de la început | Verifică startul și condiția, de exemplu `i = 1` și `i <= n` |
+| Lipsește ultimul număr | Ai scris `<` în loc de `<=` | `i <= n` ia și valoarea lui `n` |
+| Eroare la `for (int i = 1, i <= 5, i++)` | Ai pus virgulă în loc de `;` | Părțile se despart cu `;` |
+| Bucla afișează doar o dată | Ai pus `;` după paranteza lui `for` | Scrie `for (...) {`, fără `;` după paranteză |
+| Mesajul final apare la fiecare rotire | Este în interiorul acoladelor | Pune-l după acolada de închidere a buclei |
+| Eroare la `i` după buclă | `i` există doar în buclă | Declară `i` înainte de `for` dacă ai nevoie de el și după |
+
+---
+
+## Recapitulare pe scurt
+- Bucla `for` repetă instrucțiunile din acolade cât timp condiția este adevărată.  
+- Are trei părți: **start**, **condiție** și **pas**, despărțite prin `;`.  
+- `i++` crește cu 1, `i--` scade cu 1, iar `i += 5` crește cu 5.  
+- Pentru numărătoare inversă: pornești de la valoarea mare, folosești `>=` și `i--`.  
+- Cu `cin` poți lăsa utilizatorul să aleagă de câte ori se repetă bucla.  
+- O buclă fără oprire se numește buclă infinită: o oprești cu Ctrl + C.  
+
+---
+
+## Quiz scurt
+- Care sunt cele trei părți ale lui `for` și ce face fiecare?  
+- Câte numere afișează `for (int i = 1; i <= 5; i++)`?  
+- Ce diferență este între `i < 10` și `i <= 10`?  
+- Cum faci o numărătoare inversă de la 10 la 1?  
+- Ce este o buclă infinită și cum o oprești?  
+
+---
+
+## Temă
+1. Refă **Exemplele 1–6** pe calculatorul tău și testează fiecare cu cel puțin două valori.  
+2. Scrie un program care afișează numerele pare de la 2 la 20.  
+3. Scrie un program care citește `n` și afișează „Start!” de `n` ori, fiecare pe rând nou.  
+4. Scrie un program care afișează numerele de la 50 la 0, din 10 în 10.  
+5. Salvează tot ca `Tema_M2L1_Prenume_Nume.cpp`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le de mână, rulează-le și schimbă-le după preferințe.
+
+**Acasă 1 — O linie de steluțe**
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
     int n;
-
     cout << "Cate stelute? ";
     cin >> n;
 
@@ -503,187 +381,57 @@ int main() {
     return 0;
 }
 ```
+Pentru `6`, programul afișează `******`.
 
-**Rulare** (tastezi `12`):
-```
-Cate stelute? 12
-************
-```
-
-Fiecare iterație afișează o singură stea, fără `endl`, deci toate apar pe același rând. Un `endl` după buclă încheie rândul.
-
-### Exemplul 15 — Rachetă cu numărătoare inversă
-
+**Acasă 2 — Literele alfabetului**
 ```cpp
-/*
-   Program: Racheta
-   Scop:    numaratoare inversa cu mesaje diferite
-*/
 #include <iostream>
 using namespace std;
 
 int main() {
-    int start;
-
-    cout << "De la cat numaram? ";
-    cin >> start;
-
-    for (int i = start; i >= 1; i--) {
-        cout << i << "...";
-        if (i == 3) {
-            cout << " pregatiti!";
-        }
-        if (i == 1) {
-            cout << " aprindere motoare!";
-        }
-        cout << endl;
+    for (char c = 'A'; c <= 'Z'; c++) {
+        cout << c << " ";
     }
-
-    cout << "DECOLARE!" << endl;
+    cout << endl;
     return 0;
 }
 ```
+Bucla poate folosi și un `char` drept contor: literele merg una după alta, în ordinea alfabetului.
 
-**Rulare** (tastezi `5`):
-```
-De la cat numaram? 5
-5...
-4...
-3... pregatiti!
-2...
-1... aprindere motoare!
-DECOLARE!
-```
-
-### Exemplul 16 — Raportul unui an de economii **[Esențial]**
-
+**Acasă 3 — Pătratele numerelor**
 ```cpp
-/*
-   Program: Economii
-   Scop:    cat economisesti in 12 luni daca pui deoparte o suma fixa
-*/
 #include <iostream>
 using namespace std;
 
 int main() {
-    int sumaLunara;
-
-    cout << "Cat pui deoparte pe luna (lei)? ";
-    cin >> sumaLunara;
-
-    cout << "Luna\tEconomii" << endl;
-    for (int luna = 1; luna <= 12; luna++) {
-        cout << luna << "\t" << luna * sumaLunara << " lei" << endl;
+    for (int i = 1; i <= 10; i++) {
+        cout << i << " la patrat = " << i * i << endl;
     }
-
-    cout << "In 12 luni ai " << 12 * sumaLunara << " lei." << endl;
     return 0;
 }
 ```
+Contorul se poate folosi și în calcule: aici `i * i` dă pătratul fiecărui număr.
 
-**Rulare** (tastezi `50`):
+**Acasă 4 — Numere pare până la `n`**
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Pana la cat? ";
+    cin >> n;
+
+    for (int i = 2; i <= n; i += 2) {
+        cout << i << " ";
+    }
+    cout << endl;
+    return 0;
+}
 ```
-Cat pui deoparte pe luna (lei)? 50
-Luna	Economii
-1	50 lei
-2	100 lei
-3	150 lei
-4	200 lei
-5	250 lei
-6	300 lei
-7	350 lei
-8	400 lei
-9	450 lei
-10	500 lei
-11	550 lei
-12	600 lei
-In 12 luni ai 600 lei.
-```
-
----
-
-## Proiect / exerciții de finalizat AZI
-
-### Exercițiul A — „Tabla înmulțirii” (obligatoriu)
-Citește un număr `n` și afișează tabla înmulțirii cu `n`, de la `n x 1` la `n x 10`, ca în Exemplul 13.
-
-### Exercițiul B — Numere într-un interval
-Citește două numere `a` și `b` și afișează toate numerele de la `a` la `b`. Dacă `a` este mai mare decât `b`, afișează-le în ordine descrescătoare.
-
-### Exercițiul C — Multiplii
-Citește un număr `n` și un număr `m`. Afișează primii `m` multipli ai lui `n` (de exemplu, pentru `n = 4` și `m = 5`: `4 8 12 16 20`).
-
-### Exercițiul D — Alfabetul invers
-Afișează alfabetul de la `Z` la `A`, apoi alfabetul cu litere mici de la `a` la `z`.
-
-### Exercițiul E — Pătrate și cuburi
-Citește un număr `n` și afișează un tabel cu numerele de la 1 la `n`, pătratele și cuburile lor, aliniat cu `\t`.
-
-**Gata când:**
-- [ ] Programul compilează fără erori  
-- [ ] Folosește minimum o buclă `for`  
-- [ ] Numărul de repetări vine de la tastatură (`cin`)  
-- [ ] Ai testat cu minimum 2 valori diferite, inclusiv una mică (`1`)  
-- [ ] Ai explicat pe foaie cele trei părți ale lui `for`  
-- [ ] Fișierul se numește `Prenume_Nume_M2L1.cpp`  
-
----
-
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Afișează tabla înmulțirii pentru **toate** numerele de la 1 la 3, una după alta (pentru asta ai nevoie de un `for` în alt `for`, lecția 5 din acest modul, dar poți încerca să scrii bucla singur)  
-- [ ] Afișează numerele de la 1 la 100 care sunt divizibile cu 7  
-- [ ] Scrie un program care afișează „Salut, <nume>!” de câte ori vrei tu  
-- [ ] Afișează numerele de la 1 la 50, câte 10 pe fiecare rând (ajutor: `if (i % 10 == 0) cout << endl;`)  
-- [ ] Afișează pe un rând: `1 2 3 4 5 4 3 2 1`  
-
----
-
-## Greșeli frecvente
-
-| Ce vezi | Cauza | Corect |
-|---------|-------|--------|
-| Bucla nu se oprește niciodată | Condiția rămâne adevărată (de exemplu `i--` într-o buclă care crește) | Verifică dacă pasul duce spre oprire |
-| Bucla nu se execută deloc | Condiția este falsă de la început (`i = 10; i < 5`) | Verifică valoarea de start și sensul comparației |
-| Se repetă cu o dată mai mult sau mai puțin | `<` în loc de `<=` (sau invers) | Testează `n = 1` și `n = 2` și numără pe foaie |
-| `for (int i = 0; i < 5; i++);` și corpul rulează o singură dată | Un `;` după paranteză încheie bucla | Fără `;` după `)` |
-| `for (int i = 0, i < 5, i++)` | Ai folosit virgule în loc de `;` | Pune `;` între cele trei părți |
-| `i was not declared` după buclă | `int i` declarat în `for` există doar în buclă | Declară `int i;` înainte de `for` dacă ai nevoie de el după |
-| Afișarea e lipită | Ai uitat spațiul sau `endl` | `cout << i << " ";` |
-| Valori foarte mari sau ciudate | Contorul a depășit limita lui `int` | Folosește condiții realiste sau `long long` (lecția următoare) |
-| Contorul se modifică în corp | `i++` și în corp, și în paranteză | Modifică `i` o singură dată pe iterație, ca să nu sari peste valori |
-
----
-
-## Recapitulare pe scurt
-
-- `for (start; condiție; pas) { … }` repetă corpul cât timp condiția este adevărată.
-- Start se execută o dată, condiția înainte de fiecare iterație, pasul după fiecare iterație.
-- Numărare crescătoare: `for (int i = 1; i <= n; i++)`. Descrescătoare: `for (int i = n; i >= 1; i--)`. Din 2 în 2: `i += 2`.
-- „De la 0 cu `<`” și „de la 1 cu `<=`” repetă de același număr de ori.
-- Dacă condiția este falsă de la început, corpul nu se execută.
-- Contorul poate fi și `char`, iar corpul poate conține `if`, `cin`, `cout`.
-- Un `;` pus după paranteza lui `for` strică bucla.
-
----
-
-## Quiz scurt
-- Care sunt cele trei părți din paranteza lui `for` și când se execută fiecare?  
-- Cum scrii o numărare descrescătoare de la `n` la 1?  
-- Ce se întâmplă dacă pui `;` după paranteza lui `for`?  
-- Dacă condiția e falsă de la început, se execută corpul buclei?  
-- Cum numeri din 2 în 2?  
-
----
-
-## Temă
-1. Refă **Exemplele 1–16** pe calculatorul tău.  
-2. Scrie un program care citește un număr `n` și afișează primele `n` numere pare.  
-3. Scrie un program care afișează tabla înmulțirii cu 9, dar de la `9 x 10` în jos spre `9 x 1`.  
-4. Scrie un program care citește `n` și afișează expresia `1 + 2 + … + n` ca text (de exemplu, pentru `n = 5`: `1 + 2 + 3 + 4 + 5`), fără să calculezi suma. Atenție la ultimul termen: fără `+` după el!  
-5. **Bonus:** program care afișează un „ceas cu număr de secunde”: de la `10` la `0`, cu mesajul „Timp expirat!” la final.  
-6. Salvează tot ca `Tema_M2L1_Prenume_Nume.cpp`.
+Pentru `11`, programul afișează `2 4 6 8 10`. Ultimul număr este mai mic decât `n`, pentru că 12 ar depăși 11.
 
 ---
 
 ## Ce urmează — Lecția 2
-Învățăm să **adunăm și să numărăm** cu ajutorul buclelor: sume, produse și numărări (de exemplu, „câte numere pare sunt între 1 și 100?”).
+Folosim `for` ca să adunăm, să înmulțim și să numărăm: facem **Pușculița mea**, cu suma banilor, numărul de zile cu cheltuieli mari și media.

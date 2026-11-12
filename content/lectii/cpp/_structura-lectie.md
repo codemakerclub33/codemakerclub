@@ -36,4 +36,5 @@ Reguli: numerele în cuvinte, fără simboluri sau cod în text (se spune „c-o
 ## Stare
 - [x] Modul 1 · L1
 - [x] Modul 1 · L2–L10
-- [ ] Modulele 2–5
+- [x] Modul 2 · L1–L10 (refăcut pe tiparul M1)
+- [ ] Modulele 3–5

@@ -1,23 +1,27 @@
-Lecția cinci din Modulul doi. Bucle imbricate.
+Lecția cinci din Modulul doi. Constructorul de forme. Bucle imbricate: o buclă în altă buclă.
 
-Astăzi pui o buclă în interiorul altei bucle. Așa desenezi triunghiuri, piramide și table de șah din caractere și construiești tabele întregi, rând cu rând. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L cinci.
+Astăzi pui o buclă în interiorul altei bucle și desenezi din caractere dreptunghiuri, triunghiuri și piramide. La final construiești un program care desenează forma pe care o alegi. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L cinci.
 
-Obiectivul. Minim: un dreptunghi și un triunghi desenate cu bucle imbricate. Complet: minim, plus o piramidă și un meniu cu mai multe figuri.
+Instrucțiuni noi azi. Un for în interiorul altui for se numește buclă imbricată: bucla din interior se repetă complet la fiecare rotire a celei din exterior. Folosești i pentru rânduri și j pentru coloane. După bucla interioară pui endl, ca să treci la rândul următor. Pentru o piramidă, rândul i are n minus i spații și două ori i minus unu steluțe.
 
-Primul pas. Cum funcționează. Gândește-te la un ceas: acul mare face o tură completă pentru fiecare pas al acului mic. La fel, pentru fiecare pas al buclei din afară, bucla din interior rulează complet, de la început până la sfârșit. Numărul total de execuții este numărul de repetări din afară înmulțit cu cel din interior.
+Exemplul unu. Cum se învârt două bucle. Cât timp i este unu, j merge de la unu la doi. Apoi i devine doi, iar j o ia de la capăt. Bucla din interior face o tură întreagă la fiecare pas al celei din exterior, la fel cum acul minutelor face o tură la fiecare oră. Corpul buclei interioare se execută de trei ori doi, adică de șase ori. Încearcă tu: schimbă limitele în doi și patru și prevezi câte rânduri se afișează, fă același tabel pe foaie pentru trei și trei și afișează produsul lui i cu j.
 
-Al doilea pas. Șablonul de desen. Bucla din afară este pentru rânduri, iar bucla din interior este pentru coloane. După bucla din interior, pui rând nou. Așa desenezi un rând de steluțe, un dreptunghi cu trei rânduri și cinci coloane, un pătrat cu latura citită.
+Exemplul doi. Un dreptunghi de steluțe. Bucla exterioară dă rândurile, iar cea interioară dă coloanele. După ce rândul este gata, endl trece la rândul următor. Atenție la locul lui endl: după bucla interioară, dar în bucla exterioară. Dacă îl pui în bucla interioară, fiecare steluță ajunge pe rândul ei, iar dacă îl uiți, tot desenul apare pe un singur rând. Încearcă tu: desenează cinci rânduri și trei coloane, un pătrat de patru pe patru și mută endl ca să vezi ce se întâmplă.
 
-Al treilea pas. Triunghiuri. La triunghi, bucla din interior merge nu până la n, ci până la i, adică numărul rândului. Pe primul rând sunt puține steluțe, pe ultimul sunt multe. Poți face triunghiul întors sau un triunghi de numere.
+Exemplul trei. Dreptunghiul ales de utilizator. Limitele buclelor vin din c-in, deci același program desenează orice dreptunghi. Încearcă tu: rulează cu cinci rânduri și două coloane, schimbă simbolul și citește un singur număr pentru un pătrat.
 
-Al patrulea pas. Piramida. Pe rândul i pui n minus i spații, apoi două ori i minus unu steluțe, ca să iasă centrată. Faci și tabla înmulțirii completă, cu antet pentru rânduri și coloane.
+Exemplul patru. Triunghiul. Bucla interioară nu mai merge până la un număr fix, ci până la i, adică până la numărul rândului. Rândul unu are o steluță, rândul doi are două și așa mai departe. Încearcă tu: desenează triunghiul pentru înălțimile trei și șase, afișează în loc de steluțe numărul rândului și fă triunghiul întors.
 
-Al cincilea pas. Provocări. Tabla de șah, dreptunghiul gol și numerele prime până la treizeci. Ține minte: break oprește doar bucla în care se află.
+Exemplul cinci. Piramida. Pe fiecare rând sunt două bucle, una după alta. Prima afișează spațiile din stânga, n minus i. A doua afișează steluțele, două ori i minus unu. Spațiile se micșorează, iar steluțele cresc cu doi pe rând, de aceea piramida este simetrică. Încearcă tu: verifică tabelul pentru n egal cinci, desenează piramida pentru trei și pentru șase și schimbă caracterul.
 
-Al șaselea pas. Proiectul. Desenatorul de figuri: un meniu din care alegi ce figură vrei, iar programul o desenează.
+Exemplul șase. Constructorul de forme. Programul adună lecțiile modulului: do-while pentru meniu, if pentru alegerea formei, bucla exterioară pentru rânduri și bucle interioare pentru coloane. Dreptunghiul are înălțimea n și lățimea de două ori n, ca să arate aproape pătrat în consolă. Încearcă tu: desenează pe rând toate cele trei forme, alege o opțiune invalidă și adaugă o a patra formă.
 
-Greșeli frecvente. Toate steluțele apar pe un singur rând, pentru că ai uitat rândul nou. Fiecare steluță apare pe alt rând, pentru că ai pus rândul nou în bucla din interior. Triunghiul are mereu aceeași lățime, pentru că bucla din interior merge până la n. Piramida nu e centrată: numără spațiile. Ai folosit aceeași variabilă în ambele bucle, așa că folosește nume diferite, i și j. Ai pus limite foarte mari la ambele bucle și programul rulează foarte mult.
+De făcut azi. Constructorul de forme. Minim: un program care citește înălțimea și desenează un dreptunghi și un triunghi, cu bucle imbricate. Complet: minim, plus piramida, un meniu în do-while care alege forma și se repetă până la zero, și un mesaj pentru opțiune invalidă.
 
-Tema. Desenezi un brad de Crăciun: o piramidă de cinci rânduri și un trunchi de două rânduri. Afișezi tabla înmulțirii de la unu la zece, cu antet. Salvezi ca Tema, linie jos, M doi, L cinci.
+Bonus, trei stele. Tabla de joc. Doar dacă ai terminat varianta completă. Desenezi o tablă n pe n, în care pătratele alternează între diez și punct, ca la o tablă de șah. Afișezi diez când suma lui i și j este pară și punct când este impară. Citești mărimea n și folosești două bucle imbricate și restul împărțirii la doi. Pentru n egal cinci, colțul din stânga sus este diez, iar pătratul din dreapta lui este punct. Testezi cu patru și cu opt.
 
-Recapitulare. Rânduri în afară, coloane în interior. Rând nou după bucla din interior. Succes!
+Greșeli frecvente. Tot desenul apare pe un singur rând, pentru că lipsește endl după bucla interioară. Fiecare steluță este pe rândul ei, pentru că endl este în bucla interioară. Desenul este un dreptunghi, nu un triunghi, pentru că bucla interioară merge până la un număr fix. Piramida nu este simetrică, pentru că numărul de spații sau de steluțe este greșit. Ai amestecat i și j. Ai crescut în bucla interioară contorul celeilalte bucle.
+
+Tema. Refaci exemplele din lecție și le testezi cu cel puțin două înălțimi. Desenezi un triunghi de numere: unu, unu doi, unu doi trei și așa mai departe. Desenezi un dreptunghi gol, doar cu marginea din steluțe. Afișezi rândurile unu, doi doi, trei trei trei și așa până la cinci de cinci ori. Salvezi ca Tema, linie jos, M doi, L cinci. Găsești în lecție și exemple pentru acasă.
+
+Recapitulare. Două bucle una în alta se numesc bucle imbricate. Bucla din interior face o tură completă la fiecare rotire a celei din exterior. I numără rândurile, j numără coloanele, iar endl vine după bucla interioară. Dreptunghi: limite fixe. Triunghi: j până la i. Piramidă: n minus i spații, apoi două ori i minus unu steluțe. Succes!

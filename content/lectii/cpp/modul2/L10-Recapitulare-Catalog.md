@@ -1,16 +1,17 @@
-# LECȚIA 10 — Recapitulare Modul 2 și proiectul „Catalogul de note”
+# LECȚIA 10 — Arcada de jocuri
+### Recapitulare Modul 2 — proiect final
 **Modulul 2 · Bucle și vectori · 2 ore**  
 **Code Maker Club · Loop Master**
 
-> Azi încheiem Modulul 2. Recapitulăm tot ce am învățat (bucle și vectori), găsim și reparăm greșeli într-un cod „stricat”, rezolvăm un test scurt și construim **Catalogul de note**: un program cu meniu care adaugă, afișează, caută, sortează și șterge elevi.  
-> Proiect: **„Catalogul de note”** · fișier: `Prenume_Nume_M2L10.cpp` (ex. `Ana_Pop_M2L10.cpp`)
+> Azi aduni tot ce ai învățat în Modulul 2 într-un singur program: o **arcadă** cu meniu, în care ții scorurile tale, le afișezi, le cauți și le sortezi. La final primești insigna **Loop Master**.  
+> Fișier: `Prenume_Nume_M2_Proiect.cpp`
 
 ---
 
-## Obiectiv
-La finalul orei îți amintești și folosești toate buclele, vectorii, căutarea și sortarea, depanezi greșeli tipice și predai un program complet, cu meniu.  
-**Minim:** catalogul cu adăugare, afișare și statistici (medie, minim, maxim).  
-**Ținta orei (Complet):** + căutare, clasament sortat și ștergere, cu verificări pentru situațiile limită (catalog gol, catalog plin, nume inexistent).
+## Ce facem azi
+Azi aduni tot ce ai învățat în Modulul 2 într-un singur program: o **arcadă** cu meniu, în care ții scorurile tale, le afișezi, le cauți și le sortezi. La final primești insigna **Loop Master**.
+
+Nu mai înveți o regulă nouă. Folosești buclele și vectorii pe care îi știi deja ca să construiești un program întreg, de la meniu până la ieșire. Așa arată un joc sau o aplicație adevărată: un meniu care se repetă până alegi să ieși, și date păstrate într-un vector.
 
 ---
 
@@ -18,33 +19,36 @@ La finalul orei îți amintești și folosești toate buclele, vectorii, căutar
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–25 | Recapitulare cu exemple scurte (**Exemplele 1–9**) |
-| 25–45 | Vânătoare de greșeli: depanare (**Exemplele 10–12**) |
-| 45–60 | Test scurt cu răspunsuri |
-| 60–110 | Proiect: Catalogul de note (**Exemplele 13–14**) |
-| 110–120 | Predare, recap, ce urmează în Modulul 3 |
-
-> **Pentru ritm lent sau începători:** în clasă faceți mai întâi cele **7 exemple marcate [Esențial]** (inclusiv proiectul sau exemplul final, acolo unde e cazul). Ele acoperă tot ce trebuie să rămână după lecție. Restul exemplelor sunt pentru cine merge repede sau pentru acasă.
+| 0–25 | Recapitulare pe foaie și în cod (**Exemplele 1–5**) |
+| 25–40 | Depanare: găsim greșelile (**Exemplul 6**) |
+| 40–50 | Planificăm proiectul și parcurgem lista de verificare |
+| 50–100 | Construim proiectul (**Exemplul 7**) |
+| 100–115 | Prezentarea proiectelor, mini-testul și Provocarea |
+| 115–120 | Insigna **Loop Master** și temă |
 
 ---
 
-## 1. Recapitulare rapidă
+## Ce folosești azi
 
-### Ce ai învățat în Modulul 2
+Azi nu înveți nicio instrucțiune nouă. Folosești:
 
-| Lecția | Tema | Ideea-cheie |
-|--------|------|-------------|
-| 1 | `for` | Repetă de un număr cunoscut de ori: `for (int i = 0; i < n; i++)` |
-| 2 | Suma, produsul, numărarea | Acumulator (`suma = 0; suma += …`) și contor (`contor++`) |
-| 3 | `while` | Repetă cât timp condiția e adevărată; citire până la o valoare-santinelă |
-| 4 | `do-while` | Rulează cel puțin o dată: meniuri, validări |
-| 5 | Bucle imbricate | Rânduri și coloane: figuri, tabele, numere prime |
-| 6 | Vectori | `tip nume[N];` indici de la `0` la `N - 1` |
-| 7 | Calcule cu vectori | Sumă, medie, minim, maxim, numărări |
-| 8 | Căutare | `bool gasit`, `int poz = -1`, ștergere și inserare |
-| 9 | Sortare | Swap, Bubble Sort, Selection Sort |
+| Din lecția | Ce folosești |
+|-----------|--------------|
+| L1–L2 | `for`, contor, acumulator, `i += pas` |
+| L3–L4 | `while` cu santinelă, `do-while`, meniu cu `switch` |
+| L5 | bucle imbricate |
+| L6–L7 | vectori, indici de la `0`, sumă, medie, minim, maxim |
+| L8–L9 | căutare, schimbarea a două valori, sortare |
 
-### Exemplul 1 — `for`: suma pătratelor **[Esențial]**
+---
+
+## Pas cu pas
+
+### Recapitulare: cinci programe din lecțiile Modulului 2
+
+Fiecare program mic de mai jos rezumă una sau mai multe lecții. Citește programul, spune cu voce tare ce face și ce lecție ilustrează.
+
+### Exemplul 1 — L1–L2: `for` cu pas, suma
 
 ```cpp
 #include <iostream>
@@ -52,81 +56,70 @@ using namespace std;
 
 int main() {
     int suma = 0;
-    for (int i = 1; i <= 5; i++) {
-        suma += i * i;
+    for (int i = 3; i <= 30; i += 3) {
+        cout << i << " ";
+        suma += i;
     }
-    cout << "1^2 + 2^2 + ... + 5^2 = " << suma << endl;
+    cout << endl << "Suma: " << suma << endl;
     return 0;
 }
 ```
 
 **Ieșire:**
 ```
-1^2 + 2^2 + ... + 5^2 = 55
+3 6 9 12 15 18 21 24 27 30 
+Suma: 165
 ```
 
-### Exemplul 2 — `while`: suma cifrelor **[Esențial]**
+### Exemplul 2 — L3: `while` cu santinelă
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int n = 58231;
-    int suma = 0;
+    int x, nr = 0, suma = 0;
 
-    while (n > 0) {
-        suma += n % 10;
-        n /= 10;
+    cout << "Numar (0 = stop): ";
+    cin >> x;
+    while (x != 0) {
+        nr++;
+        suma += x;
+        cout << "Numar (0 = stop): ";
+        cin >> x;
     }
 
-    cout << "Suma cifrelor: " << suma << endl;
+    cout << "Ai citit " << nr << " numere, suma " << suma << endl;
     return 0;
 }
 ```
 
-**Ieșire:**
+**Rulare** (tastezi `5`, `3`, `10`, `0`):
 ```
-Suma cifrelor: 19
+Numar (0 = stop): 5
+Numar (0 = stop): 3
+Numar (0 = stop): 10
+Numar (0 = stop): 0
+Ai citit 3 numere, suma 18
 ```
 
-### Exemplul 3 — `do-while`: validare **[Esențial]**
+### Exemplul 3 — L4–L5: `do-while` și bucle imbricate
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int varsta;
+    int n;
 
     do {
-        cout << "Varsta (5-18): ";
-        cin >> varsta;
-    } while (varsta < 5 || varsta > 18);
+        cout << "Alege 1-5: ";
+        cin >> n;
+    } while (n < 1 || n > 5);
 
-    cout << "Varsta acceptata: " << varsta << endl;
-    return 0;
-}
-```
-
-**Rulare** (tastezi `3`, apoi `25`, apoi `12`):
-```
-Varsta (5-18): 3
-Varsta (5-18): 25
-Varsta (5-18): 12
-Varsta acceptata: 12
-```
-
-### Exemplul 4 — Bucle imbricate: triunghi de numere
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    for (int i = 1; i <= 4; i++) {
-        for (int j = i; j >= 1; j--) {
-            cout << j;
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            cout << "* ";
         }
         cout << endl;
     }
@@ -134,594 +127,293 @@ int main() {
 }
 ```
 
-**Ieșire:**
+**Rulare** (tastezi `7`, apoi `4`):
 ```
-1
-21
-321
-4321
+Alege 1-5: 7
+Alege 1-5: 4
+* 
+* * 
+* * * 
+* * * * 
 ```
 
-### Exemplul 5 — Vector: citire și afișare inversă **[Esențial]**
+### Exemplul 4 — L6–L7: vector, maxim și poziție
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    const int N = 4;
-    int v[N];
-
-    for (int i = 0; i < N; i++) {
-        cout << "v[" << i << "] = ";
-        cin >> v[i];
-    }
-
-    cout << "Invers: ";
-    for (int i = N - 1; i >= 0; i--) {
-        cout << v[i] << " ";
-    }
-    cout << endl;
-    return 0;
-}
-```
-
-**Rulare** (tastezi `3 6 9 12`):
-```
-v[0] = 3
-v[1] = 6
-v[2] = 9
-v[3] = 12
-Invers: 12 9 6 3 
-```
-
-### Exemplul 6 — Statistici: media, minimul, maximul **[Esențial]**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int nota[6] = {8, 10, 6, 9, 7, 10};
-    int suma = 0;
-    int minim = nota[0];
-    int maxim = nota[0];
-
-    for (int i = 0; i < 6; i++) {
-        suma += nota[i];
-        if (nota[i] < minim) minim = nota[i];
-        if (nota[i] > maxim) maxim = nota[i];
-    }
-
-    cout << "Media: " << (double)suma / 6 << endl;
-    cout << "Minim: " << minim << ", maxim: " << maxim << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Media: 8.33333
-Minim: 6, maxim: 10
-```
-
-### Exemplul 7 — Numărare cu condiție **[Esențial]**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int nota[8] = {4, 9, 5, 3, 10, 7, 2, 8};
-    int corigenti = 0;
-
-    for (int i = 0; i < 8; i++) {
-        if (nota[i] < 5) {
-            corigenti++;
-        }
-    }
-
-    cout << "Corigenti: " << corigenti << " din 8" << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Corigenti: 3 din 8
-```
-
-### Exemplul 8 — Căutare: pe ce poziție este valoarea?
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int v[6] = {14, 7, 22, 9, 31, 5};
-    int x = 9;
-    int poz = -1;
-
-    for (int i = 0; i < 6; i++) {
-        if (v[i] == x) {
-            poz = i;
-            break;
-        }
-    }
-
-    if (poz == -1) {
-        cout << "Negasit" << endl;
-    } else {
-        cout << x << " este pe pozitia " << poz << endl;
-    }
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-9 este pe pozitia 3
-```
-
-### Exemplul 9 — Sortare descrescătoare (Bubble Sort)
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int v[6] = {14, 7, 22, 9, 31, 5};
-    int n = 6;
-
-    for (int pas = 0; pas < n - 1; pas++) {
-        for (int i = 0; i < n - 1 - pas; i++) {
-            if (v[i] < v[i + 1]) {
-                int aux = v[i];
-                v[i] = v[i + 1];
-                v[i + 1] = aux;
-            }
-        }
-    }
-
-    for (int i = 0; i < n; i++) {
-        cout << v[i] << " ";
-    }
-    cout << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-31 22 14 9 7 5 
-```
-
----
-
-## 2. Vânătoarea de greșeli (depanare)
-
-Programele de mai jos **compilează**, dar rezultatul este greșit. Pentru fiecare: (1) citește codul, (2) ghicește ce afișează, (3) rulează programul și compară, (4) găsește greșeala, (5) repară programul.
-
-### Exemplul 10 — Maximul „care nu e maxim”
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int temp[5] = {-7, -3, -12, -1, -9};
-    int maxim = 0;
-
+    int g[5];
     for (int i = 0; i < 5; i++) {
-        if (temp[i] > maxim) {
-            maxim = temp[i];
+        cout << "Scorul " << i + 1 << ": ";
+        cin >> g[i];
+    }
+
+    int maxim = g[0];
+    int poz = 0;
+    for (int i = 1; i < 5; i++) {
+        if (g[i] > maxim) {
+            maxim = g[i];
+            poz = i;
         }
     }
 
-    cout << "Cea mai mare temperatura: " << maxim << endl;
+    cout << "Maxim: " << maxim << " pe pozitia " << poz + 1 << endl;
     return 0;
 }
 ```
 
-**Ieșire:**
+**Rulare** (tastezi `40`, `15`, `60`, `25`, `30`):
 ```
-Cea mai mare temperatura: 0
+Scorul 1: 40
+Scorul 2: 15
+Scorul 3: 60
+Scorul 4: 25
+Scorul 5: 30
+Maxim: 60 pe pozitia 3
 ```
 
-**Greșeala:** `maxim` pornește de la `0`, iar toate temperaturile sunt negative, deci nu depășesc niciodată `0`. **Reparație:** `int maxim = temp[0];`.
-
-### Exemplul 11 — Media „fără zecimale”
+### Exemplul 5 — L8: căutare în vector
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int nota[4] = {9, 8, 8, 10};
-    int suma = 0;
+    int g[5] = {40, 15, 60, 25, 30};
+    int n = 5;
+    int x;
 
-    for (int i = 0; i < 4; i++) {
-        suma += nota[i];
+    cout << "Ce scor cauti? ";
+    cin >> x;
+
+    int i = 0;
+    while (i < n && g[i] != x) {
+        i++;
     }
 
-    double medie = suma / 4;
-    cout << "Media: " << medie << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Media: 8
-```
-
-**Greșeala:** `suma / 4` este o împărțire între numere întregi (`35 / 4 = 8`), iar abia apoi rezultatul ajunge în `double`. **Reparație:** `double medie = (double)suma / 4;`.
-
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
-
-### Exemplul 12 — Bucla „care nu face nimic” *(Provocare, opțional)*
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int suma = 0;
-    int i;
-
-    for (i = 1; i <= 5; i++); {
-        suma += i;
+    if (i < n) {
+        cout << "Gasit pe pozitia " << i + 1 << endl;
+    } else {
+        cout << "Nu exista" << endl;
     }
-
-    cout << "Suma: " << suma << endl;
     return 0;
 }
 ```
 
-**Ieșire:**
+**Rulare** (tastezi `25`):
 ```
-Suma: 6
-```
-
-Compilatorul te avertizează aici: `warning: for loop has empty body`. Citește mereu avertismentele!
-
-**Greșeala:** `;` pus din greșeală după paranteza buclei `for` o transformă într-o buclă cu **corp vid**: ea doar numără de la 1 la 5, fără să adune nimic. Blocul `{ … }` de după rămâne separat și se execută **o singură dată**, cu `i = 6`. **Reparație:** șterge `;` de după `for (…)`.
-
-> Notă: la `while` se întâmplă la fel: `while (conditie);` creează o buclă fără corp, care poate rula la nesfârșit.
-
----
-
-## 3. Test scurt (10 minute, fără calculator)
-
-Răspunde pe foaie, apoi deschide răspunsurile.
-
-**1.** Ce afișează?
-```
-for (int i = 2; i <= 10; i += 3) cout << i << " ";
+Ce scor cauti? 25
+Gasit pe pozitia 4
 ```
 
-**2.** Câte steluțe se afișează?
-```
-for (int i = 1; i <= 3; i++)
-    for (int j = 1; j <= 4; j++)
-        cout << "*";
-```
+**Încearcă tu (10 min)**  
+- [ ] Alegi 3 dintre cele 5 programe și le rescrii **fără să te uiți**  
+- [ ] Spui cu voce tare, pentru fiecare, ce lecție ilustrează  
+- [ ] Notezi pe foaie ce ți se pare mai greu din tot Modulul 2  
 
-**3.** Un vector are 8 elemente. Care este ultimul indice valid?
+### Depanare: găsește greșelile
 
-**4.** Ce diferență există între `while` și `do-while`?
+Un programator petrece mult timp **căutând greșeli**. Este o aptitudine care se antrenează.
 
-**5.** Ce valoare trebuie să aibă `suma` înainte de o buclă care adună elemente?
+### Exemplul 6 — Programul cu 6 greșeli
 
-**6.** Cum găsești poziția maximului dintr-un vector?
-
-**7.** De ce `a = b; b = a;` nu interschimbă `a` și `b`?
-
-**8.** Ce trebuie interschimbat când sortezi „nume” după „notă”?
-
-<details>
-<summary><b>Răspunsuri</b></summary>
-
-1. `2 5 8` (după 8 urmează 11, care depășește 10).
-2. 12 steluțe (3 × 4).
-3. `7` (indicii sunt de la 0 la 7).
-4. `do-while` verifică condiția **după** corp, deci rulează cel puțin o dată; `while` o verifică înainte și poate să nu ruleze deloc.
-5. `0`.
-6. Pornești cu `pozMax = 0`, parcurgi de la `i = 1` și, dacă `v[i] > v[pozMax]`, faci `pozMax = i`.
-7. După `a = b;` valoarea veche a lui `a` este pierdută, deci `b = a;` pune în `b` aceeași valoare. Ai nevoie de o variabilă ajutătoare.
-8. Ambii vectori: și notele, și numele, în același timp.
-
-</details>
-
----
-
-## 4. Proiect final: „Catalogul de note”
-
-Programul reunește tot ce ai învățat în modul: meniu cu `do-while` + `switch`, vectori paraleli, validare, statistici, căutare, sortare și ștergere.
-
-### Exemplul 13 — Varianta de bază (adaugă, afișează, statistici) **[Esențial]**
-
-Începe cu varianta scurtă, apoi o extinzi în Exemplul 14.
+Programul ar trebui să afișeze media temperaturilor și **ziua** cea mai caldă. Are **6 greșeli** de logică. Compilează, dar rezultatele sunt greșite sau imprevizibile. Găsește greșelile înainte de a citi soluția.
 
 ```cpp
 #include <iostream>
-#include <iomanip>
-#include <string>
 using namespace std;
 
 int main() {
-    const int MAXIM = 30;
-    string nume[MAXIM];
-    int nota[MAXIM];
-    int n = 0;
-    int optiune;
+    int t[5] = {18, 25, 31, 22, 15};
+    int n = 5;
 
-    do {
-        cout << endl << "===== CATALOG - elevi: " << n << " =====" << endl;
-        cout << "1. Adauga elev" << endl;
-        cout << "2. Afiseaza catalogul" << endl;
-        cout << "3. Statistici" << endl;
-        cout << "0. Iesire" << endl;
-        cout << "Alege: ";
-        cin >> optiune;
+    int suma;
+    for (int i = 0; i <= n; i++) {
+        suma += t[i];
+    }
+    cout << "Media: " << suma / n << endl;
 
-        switch (optiune) {
-            case 1:
-                if (n == MAXIM) {
-                    cout << "Catalogul este plin." << endl;
-                } else {
-                    cout << "Nume: ";
-                    cin >> nume[n];
-                    do {
-                        cout << "Nota (1-10): ";
-                        cin >> nota[n];
-                    } while (nota[n] < 1 || nota[n] > 10);
-                    n++;
-                    cout << "Elev adaugat." << endl;
-                }
-                break;
-            case 2:
-                if (n == 0) {
-                    cout << "Catalogul este gol." << endl;
-                }
-                for (int i = 0; i < n; i++) {
-                    cout << i + 1 << ". " << nume[i] << " - " << nota[i] << endl;
-                }
-                break;
-            case 3:
-                if (n == 0) {
-                    cout << "Nu exista date." << endl;
-                } else {
-                    int suma = 0;
-                    int pozMax = 0;
-                    int pozMin = 0;
-                    for (int i = 0; i < n; i++) {
-                        suma += nota[i];
-                        if (nota[i] > nota[pozMax]) pozMax = i;
-                        if (nota[i] < nota[pozMin]) pozMin = i;
-                    }
-                    cout << fixed << setprecision(2);
-                    cout << "Media: " << (double)suma / n << endl;
-                    cout << "Cea mai mare: " << nume[pozMax] << " (" << nota[pozMax] << ")" << endl;
-                    cout << "Cea mai mica: " << nume[pozMin] << " (" << nota[pozMin] << ")" << endl;
-                }
-                break;
-            case 0:
-                cout << "La revedere!" << endl;
-                break;
-            default:
-                cout << "Optiune invalida." << endl;
+    int maxim = 0;
+    int ziMax = 0;
+    for (int i = 1; i < n; i++) {
+        if (t[i] > maxim);
+        {
+            maxim = t[i];
+            ziMax = i;
         }
-    } while (optiune != 0);
-
+    }
+    cout << "Cea mai calda zi: " << ziMax << endl;
     return 0;
 }
 ```
 
-**Rulare** (tastezi `1 Ana 9 1 Dan 6 2 3 0`):
+**Cum lucrezi:** rulează programul, compară rezultatul cu ce ai calcula pe foaie și caută diferențele. Pentru temperaturile `18 25 31 22 15`, rezultatul corect este media `22.2` și ziua `3`.
+
+#### Soluția
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t[5] = {18, 25, 31, 22, 15};
+    int n = 5;
+
+    int suma = 0;                         // 1. suma trebuia pornita de la 0
+    for (int i = 0; i < n; i++) {         // 2. i < n, nu i <= n
+        suma += t[i];
+    }
+    cout << "Media: " << (double)suma / n << endl;   // 3. (double), pentru zecimale
+
+    int maxim = t[0];                     // 4. maximul porneste de la t[0]
+    int ziMax = 0;
+    for (int i = 1; i < n; i++) {
+        if (t[i] > maxim) {               // 5. fara ; dupa if
+            maxim = t[i];
+            ziMax = i;
+        }
+    }
+    cout << "Cea mai calda zi: " << ziMax + 1 << endl;  // 6. ziua este ziMax + 1
+    return 0;
+}
 ```
 
-===== CATALOG - elevi: 0 =====
-1. Adauga elev
-2. Afiseaza catalogul
-3. Statistici
-0. Iesire
-Alege: 1
-Nume: Ana
-Nota (1-10): 9
-Elev adaugat.
-
-===== CATALOG - elevi: 1 =====
-1. Adauga elev
-2. Afiseaza catalogul
-3. Statistici
-0. Iesire
-Alege: 1
-Nume: Dan
-Nota (1-10): 6
-Elev adaugat.
-
-===== CATALOG - elevi: 2 =====
-1. Adauga elev
-2. Afiseaza catalogul
-3. Statistici
-0. Iesire
-Alege: 2
-1. Ana - 9
-2. Dan - 6
-
-===== CATALOG - elevi: 2 =====
-1. Adauga elev
-2. Afiseaza catalogul
-3. Statistici
-0. Iesire
-Alege: 3
-Media: 7.50
-Cea mai mare: Ana (9)
-Cea mai mica: Dan (6)
-
-===== CATALOG - elevi: 2 =====
-1. Adauga elev
-2. Afiseaza catalogul
-3. Statistici
-0. Iesire
-Alege: 0
-La revedere!
+**Rulare:**
+```
+Media: 22.2
+Cea mai calda zi: 3
 ```
 
-Observă că în `case 3` am declarat variabile (`int suma`, …) în interiorul unui `else { … }`, deci în acolade; așa nu apare eroarea de la `switch` (Modulul 1, lecția 9).
+Greșelile 1 și 2 produc rezultate imprevizibile: `suma` pornește de la o valoare întâmplătoare, iar `t[5]` este în afara vectorului. Greșeala 3 taie zecimalele. Greșeala 4 este ascunsă: nu se vede dacă maximul nu e primul element. Greșeala 5 (`;` după `if`) face ca blocul de după să se execute **mereu**. Greșeala 6 afișează indicele, nu ziua. Compilatorul nu prinde nicio greșeală aici: **testarea cu valori** o face.
 
-### Exemplul 14 — Varianta completă (cu căutare, clasament și ștergere)
+### Planul proiectului
+
+Proiectul este **Arcada de jocuri**: un program cu meniu, care se repetă până alegi `0`. Scorurile se păstrează într-un vector de cel mult 20 de locuri.
+
+| Opțiune | Ce face | Din lecția |
+|---------|---------|------------|
+| 1 | Adaugă un scor în listă (dacă mai e loc) | L4, L6 |
+| 2 | Afișează scorurile, numerotate | L6 |
+| 3 | Statistici: media, minimul, maximul | L7 |
+| 4 | Caută un scor și spune pe ce poziție este | L8 |
+| 5 | Sortează scorurile descrescător | L9 |
+| 0 | Ieșire | L4 |
+
+### Lista de verificare (o completezi înainte de demo)
+- [ ] Are **antet** (nume, dată, scop) și minimum 3 comentarii utile  
+- [ ] Meniul se repetă cu `do-while` până alegi `0`  
+- [ ] Folosește un `switch` pentru opțiuni, cu `default` pentru opțiuni greșite  
+- [ ] Păstrează scorurile într-un vector, cu `n` scoruri folosite  
+- [ ] Verifică situațiile limită: lista plină și lista goală  
+- [ ] Rulează fără erori, cu minimum **2 seturi de date** diferite  
+- [ ] Indentare corectă și nume clare pentru variabile  
+- [ ] Îl poți explica în **30 de secunde**  
+
+### Exemplul 7 — Arcada de jocuri (model)
+
+Acesta este un model. Nu îl copia: folosește-l ca idee și construiește programul **tău**, cu opțiuni sau mesaje alese de tine.
 
 ```cpp
 /*
-   Program: Catalogul de note
-   Scop:    gestioneaza elevi si note: adaugare, afisare, statistici,
-            cautare, clasament si stergere
+   Program: Arcada de jocuri
+   Scop:    meniu pentru scorurile mele: adauga, afiseaza, statistici,
+            cauta, sorteaza
 */
 #include <iostream>
-#include <iomanip>
-#include <string>
 using namespace std;
 
 int main() {
-    const int MAXIM = 30;
-    string nume[MAXIM];
-    int nota[MAXIM];
+    int g[20];
     int n = 0;
     int optiune;
 
+    cout << "===== ARCADA DE JOCURI =====" << endl;
+
     do {
-        cout << endl << "===== CATALOG - elevi: " << n << " =====" << endl;
-        cout << "1. Adauga elev" << endl;
-        cout << "2. Afiseaza catalogul" << endl;
-        cout << "3. Statistici" << endl;
-        cout << "4. Cauta elev" << endl;
-        cout << "5. Clasament (sorteaza dupa nota)" << endl;
-        cout << "6. Sterge elev" << endl;
-        cout << "0. Iesire" << endl;
+        cout << endl;
+        cout << "1 Adauga  2 Afiseaza  3 Statistici  4 Cauta  5 Sorteaza  0 Iesire" << endl;
         cout << "Alege: ";
         cin >> optiune;
 
         switch (optiune) {
             case 1:
-                if (n == MAXIM) {
-                    cout << "Catalogul este plin." << endl;
+                if (n == 20) {
+                    cout << "Lista este plina." << endl;
                 } else {
-                    cout << "Nume: ";
-                    cin >> nume[n];
-                    do {
-                        cout << "Nota (1-10): ";
-                        cin >> nota[n];
-                    } while (nota[n] < 1 || nota[n] > 10);
+                    cout << "Scor nou: ";
+                    cin >> g[n];
                     n++;
-                    cout << "Elev adaugat." << endl;
+                    cout << "Adaugat! Scoruri in lista: " << n << endl;
                 }
                 break;
 
             case 2:
                 if (n == 0) {
-                    cout << "Catalogul este gol." << endl;
-                }
-                for (int i = 0; i < n; i++) {
-                    cout << i + 1 << ". " << nume[i] << " - " << nota[i] << endl;
+                    cout << "Lista este goala." << endl;
+                } else {
+                    for (int i = 0; i < n; i++) {
+                        cout << i + 1 << ". " << g[i] << endl;
+                    }
                 }
                 break;
 
             case 3:
                 if (n == 0) {
-                    cout << "Nu exista date." << endl;
+                    cout << "Lista este goala." << endl;
                 } else {
                     int suma = 0;
-                    int pozMax = 0;
-                    int pozMin = 0;
-                    int promovati = 0;
+                    int minim = g[0];
+                    int maxim = g[0];
                     for (int i = 0; i < n; i++) {
-                        suma += nota[i];
-                        if (nota[i] > nota[pozMax]) pozMax = i;
-                        if (nota[i] < nota[pozMin]) pozMin = i;
-                        if (nota[i] >= 5) promovati++;
+                        suma += g[i];
+                        if (g[i] < minim) {
+                            minim = g[i];
+                        }
+                        if (g[i] > maxim) {
+                            maxim = g[i];
+                        }
                     }
-                    cout << fixed << setprecision(2);
                     cout << "Media: " << (double)suma / n << endl;
-                    cout << "Cea mai mare: " << nume[pozMax] << " (" << nota[pozMax] << ")" << endl;
-                    cout << "Cea mai mica: " << nume[pozMin] << " (" << nota[pozMin] << ")" << endl;
-                    cout << "Promovati: " << promovati << " din " << n << endl;
+                    cout << "Minim: " << minim << endl;
+                    cout << "Maxim: " << maxim << endl;
                 }
                 break;
 
-            case 4: {
-                string cautat;
-                cout << "Nume cautat: ";
-                cin >> cautat;
-                int poz = -1;
-                for (int i = 0; i < n; i++) {
-                    if (nume[i] == cautat) {
-                        poz = i;
-                        break;
+            case 4:
+                if (n == 0) {
+                    cout << "Lista este goala." << endl;
+                } else {
+                    int x;
+                    cout << "Ce scor cauti? ";
+                    cin >> x;
+                    int i = 0;
+                    while (i < n && g[i] != x) {
+                        i++;
+                    }
+                    if (i < n) {
+                        cout << "Gasit pe pozitia " << i + 1 << endl;
+                    } else {
+                        cout << "Nu exista." << endl;
                     }
                 }
-                if (poz == -1) {
-                    cout << "Elevul nu a fost gasit." << endl;
-                } else {
-                    cout << nume[poz] << " are nota " << nota[poz] << "." << endl;
-                }
                 break;
-            }
 
             case 5:
-                if (n == 0) {
-                    cout << "Catalogul este gol." << endl;
-                } else {
-                    for (int i = 0; i < n - 1; i++) {
-                        int pozMax = i;
-                        for (int j = i + 1; j < n; j++) {
-                            if (nota[j] > nota[pozMax]) {
-                                pozMax = j;
-                            }
+                for (int i = 0; i < n - 1; i++) {
+                    int poz = i;
+                    for (int j = i + 1; j < n; j++) {
+                        if (g[j] > g[poz]) {
+                            poz = j;
                         }
-                        int auxNota = nota[i];
-                        nota[i] = nota[pozMax];
-                        nota[pozMax] = auxNota;
-
-                        string auxNume = nume[i];
-                        nume[i] = nume[pozMax];
-                        nume[pozMax] = auxNume;
                     }
-                    cout << "--- Clasament ---" << endl;
-                    int loc = 1;
-                    for (int i = 0; i < n; i++) {
-                        if (i > 0 && nota[i] < nota[i - 1]) {
-                            loc = i + 1;
-                        }
-                        cout << "Locul " << loc << ": " << nume[i] << " (" << nota[i] << ")" << endl;
-                    }
+                    int aux = g[i];
+                    g[i] = g[poz];
+                    g[poz] = aux;
                 }
+                cout << "Scorurile sunt sortate descrescator." << endl;
                 break;
-
-            case 6: {
-                string sters;
-                cout << "Nume de sters: ";
-                cin >> sters;
-                int poz = -1;
-                for (int i = 0; i < n; i++) {
-                    if (nume[i] == sters) {
-                        poz = i;
-                        break;
-                    }
-                }
-                if (poz == -1) {
-                    cout << "Elevul nu a fost gasit." << endl;
-                } else {
-                    for (int i = poz; i < n - 1; i++) {
-                        nume[i] = nume[i + 1];
-                        nota[i] = nota[i + 1];
-                    }
-                    n--;
-                    cout << "Elev sters." << endl;
-                }
-                break;
-            }
 
             case 0:
                 cout << "La revedere!" << endl;
@@ -736,231 +428,285 @@ int main() {
 }
 ```
 
-**Rulare** (tastezi `1 Ana 8`, `1 Bogdan 10`, `1 Carmen 8`, `1 Dan 4`, apoi `3`, `5`, `4 Dan`, `6 Dan`, `2`, `0`):
+**Rulare** (tastezi `1 40`, `1 15`, `1 60`, `3`, `5`, `2`, `4 15`, `0`):
 ```
+===== ARCADA DE JOCURI =====
 
-===== CATALOG - elevi: 0 =====
-1. Adauga elev
-2. Afiseaza catalogul
-3. Statistici
-4. Cauta elev
-5. Clasament (sorteaza dupa nota)
-6. Sterge elev
-0. Iesire
+1 Adauga  2 Afiseaza  3 Statistici  4 Cauta  5 Sorteaza  0 Iesire
 Alege: 1
-Nume: Ana
-Nota (1-10): 8
-Elev adaugat.
+Scor nou: 40
+Adaugat! Scoruri in lista: 1
 
-===== CATALOG - elevi: 1 =====
-1. Adauga elev
-2. Afiseaza catalogul
-3. Statistici
-4. Cauta elev
-5. Clasament (sorteaza dupa nota)
-6. Sterge elev
-0. Iesire
+1 Adauga  2 Afiseaza  3 Statistici  4 Cauta  5 Sorteaza  0 Iesire
 Alege: 1
-Nume: Bogdan
-Nota (1-10): 10
-Elev adaugat.
+Scor nou: 15
+Adaugat! Scoruri in lista: 2
 
-===== CATALOG - elevi: 2 =====
-1. Adauga elev
-2. Afiseaza catalogul
-3. Statistici
-4. Cauta elev
-5. Clasament (sorteaza dupa nota)
-6. Sterge elev
-0. Iesire
+1 Adauga  2 Afiseaza  3 Statistici  4 Cauta  5 Sorteaza  0 Iesire
 Alege: 1
-Nume: Carmen
-Nota (1-10): 8
-Elev adaugat.
+Scor nou: 60
+Adaugat! Scoruri in lista: 3
 
-===== CATALOG - elevi: 3 =====
-1. Adauga elev
-2. Afiseaza catalogul
-3. Statistici
-4. Cauta elev
-5. Clasament (sorteaza dupa nota)
-6. Sterge elev
-0. Iesire
-Alege: 1
-Nume: Dan
-Nota (1-10): 4
-Elev adaugat.
-
-===== CATALOG - elevi: 4 =====
-1. Adauga elev
-2. Afiseaza catalogul
-3. Statistici
-4. Cauta elev
-5. Clasament (sorteaza dupa nota)
-6. Sterge elev
-0. Iesire
+1 Adauga  2 Afiseaza  3 Statistici  4 Cauta  5 Sorteaza  0 Iesire
 Alege: 3
-Media: 7.50
-Cea mai mare: Bogdan (10)
-Cea mai mica: Dan (4)
-Promovati: 3 din 4
+Media: 38.3333
+Minim: 15
+Maxim: 60
 
-===== CATALOG - elevi: 4 =====
-1. Adauga elev
-2. Afiseaza catalogul
-3. Statistici
-4. Cauta elev
-5. Clasament (sorteaza dupa nota)
-6. Sterge elev
-0. Iesire
+1 Adauga  2 Afiseaza  3 Statistici  4 Cauta  5 Sorteaza  0 Iesire
 Alege: 5
---- Clasament ---
-Locul 1: Bogdan (10)
-Locul 2: Ana (8)
-Locul 2: Carmen (8)
-Locul 4: Dan (4)
+Scorurile sunt sortate descrescator.
 
-===== CATALOG - elevi: 4 =====
-1. Adauga elev
-2. Afiseaza catalogul
-3. Statistici
-4. Cauta elev
-5. Clasament (sorteaza dupa nota)
-6. Sterge elev
-0. Iesire
-Alege: 4
-Nume cautat: Dan
-Dan are nota 4.
-
-===== CATALOG - elevi: 4 =====
-1. Adauga elev
-2. Afiseaza catalogul
-3. Statistici
-4. Cauta elev
-5. Clasament (sorteaza dupa nota)
-6. Sterge elev
-0. Iesire
-Alege: 6
-Nume de sters: Dan
-Elev sters.
-
-===== CATALOG - elevi: 3 =====
-1. Adauga elev
-2. Afiseaza catalogul
-3. Statistici
-4. Cauta elev
-5. Clasament (sorteaza dupa nota)
-6. Sterge elev
-0. Iesire
+1 Adauga  2 Afiseaza  3 Statistici  4 Cauta  5 Sorteaza  0 Iesire
 Alege: 2
-1. Bogdan - 10
-2. Ana - 8
-3. Carmen - 8
+1. 60
+2. 40
+3. 15
 
-===== CATALOG - elevi: 3 =====
-1. Adauga elev
-2. Afiseaza catalogul
-3. Statistici
-4. Cauta elev
-5. Clasament (sorteaza dupa nota)
-6. Sterge elev
-0. Iesire
+1 Adauga  2 Afiseaza  3 Statistici  4 Cauta  5 Sorteaza  0 Iesire
+Alege: 4
+Ce scor cauti? 15
+Gasit pe pozitia 3
+
+1 Adauga  2 Afiseaza  3 Statistici  4 Cauta  5 Sorteaza  0 Iesire
 Alege: 0
 La revedere!
 ```
 
-Programul are ~150 de linii și este organizat în cazuri clare. Este o aplicație completă, pe care o poți extinde în Modulul 3 cu **funcții**, ca să fie și mai ordonată.
+Ideile importante:
+- `do-while` ține meniul în funcțiune cât timp `optiune != 0`;
+- `n` este numărul de scoruri **folosite**; vectorul are 20 de locuri, dar folosim doar primele `n`;
+- fiecare opțiune se ocupă de situațiile limită înainte să facă ceva (lista goală sau plină);
+- sortarea, căutarea și statisticile sunt blocurile din lecțiile 7, 8 și 9, puse în cazuri de `switch`.
+
+### Prezentarea proiectului (demo)
+1. Spui într-o propoziție ce face programul.  
+2. Îl rulezi cu un set de date: adaugi scoruri, apoi încerci afișarea, statisticile și căutarea.  
+3. Arăți o secvență din cod și spui ce lecție ilustrează.  
+4. Răspunzi la o întrebare a colegilor sau a mentorului.  
+
+### Mini-test de verificare
+
+Fără să rulezi nimic, scrii pe foaie ce afișează fiecare secvență. Apoi verifici răspunsurile.
+
+**Test 1**
+```cpp
+for (int i = 1; i <= 4; i++) cout << i * 2 << " ";
+```
+
+**Test 2**
+```cpp
+int g[4] = {5, 8, 2, 9};
+cout << g[1] + g[3];
+```
+
+**Test 3**
+```cpp
+int x = 0;
+do { x += 3; } while (x < 10);
+cout << x;
+```
+
+**Test 4**
+```cpp
+int s = 0;
+for (int i = 0; i < 3; i++)
+    for (int j = 0; j < 2; j++)
+        s++;
+cout << s;
+```
+
+**Răspunsuri:** Test 1: `2 4 6 8`. Test 2: `17` (`g[1]` este `8`, `g[3]` este `9`). Test 3: `12` (`3, 6, 9, 12`, se oprește când `x` nu mai e sub `10`). Test 4: `6` (3 pași la exterior, câte 2 la interior).
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Arcada de jocuri”
 
-### Exercițiul A — „Catalogul de note” (obligatoriu)
-Scrie varianta completă (Exemplul 14) cu elevii tăi preferați. **Nu copia**: scrie fiecare opțiune pe rând și testează-o înainte de a trece la următoarea.
-
-**Pe niveluri (alege nivelul tău):**
-- **De bază:** varianta de bază din Exemplul 13 (adaugă, afișează, statistici).
-- **Complet:** varianta completă din Exemplul 14.
-- **Provocare:** + una dintre extinderile din Exercițiul B.
-
-Un catalog mic, care merge fără greșeli, este un succes.
-
-### Exercițiul B — Extinde catalogul (la alegere, minim una)
-- Adaugă opțiunea „Corectează nota unui elev” (căutare + citirea unei note noi, cu validare).  
-- Adaugă opțiunea „Afișează elevii cu nota peste medie”.  
-- Împiedică adăugarea a doi elevi cu același nume.  
-- Afișează la statistici câți elevi au 10, câți au între 5 și 9 și câți sunt corigenți.
-
-### Exercițiul C — Testează programul
-Completează o listă de teste: catalog gol (opțiunile 2, 3, 4, 5, 6), catalog cu un singur elev, catalog plin (30 de elevi), notă invalidă (0, 11), nume inexistent, opțiune de meniu inexistentă.
+| | Ce trebuie să ai |
+|---|---|
+| **Minim** | Meniu cu `do-while` și `switch`, cu opțiunile: adaugă un scor, afișează scorurile, ieșire |
+| **Complet** | Minim + statistici (medie, minim, maxim), căutare, sortare, verificări pentru lista plină sau goală, antet și comentarii și test cu minimum două seturi de date |
 
 **Gata când:**
-- [ ] Programul compilează fără erori sau avertismente  
-- [ ] Meniul se repetă până la `0`  
-- [ ] Ai minimum 5 opțiuni funcționale  
-- [ ] Notele sunt validate (1–10)  
-- [ ] Sunt tratate: catalog gol, catalog plin, nume negăsit  
-- [ ] Ștergerea și sortarea mută **ambii** vectori  
-- [ ] Ai completat testele din Exercițiul C  
-- [ ] Fișierul se numește `Prenume_Nume_M2L10.cpp`  
+- [ ] Programul compilează fără erori  
+- [ ] Meniul se repetă până alegi `0`  
+- [ ] Scorurile sunt păstrate într-un vector, cu `n` scoruri folosite  
+- [ ] (Complet) Statisticile, căutarea și sortarea funcționează corect  
+- [ ] (Complet) Programul reacționează corect la lista goală, lista plină și opțiuni greșite  
+- [ ] (Complet) Are antet, comentarii, indentare corectă și mesaje clare  
+- [ ] Ai testat programul cu minimum 2 seturi de date  
+- [ ] Ai prezentat programul și ai explicat ce face în 30 de secunde  
+- [ ] Ai primit insigna **Loop Master**
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Adaugă un al treilea vector (de exemplu, absențe) și afișează un raport complet  
-- [ ] Adaugă o opțiune „Elevii în ordine alfabetică”  
-- [ ] Adaugă o histogramă a notelor, ca în Lecția 7  
-- [ ] Adaugă o parolă de profesor cu 3 încercări la pornirea programului  
-- [ ] Adaugă opțiunea „Resetează catalogul” cu o întrebare de confirmare (d/n)  
+## Bonus ★★★ — Provocare: Ștergerea unui scor
+*Doar dacă ai terminat Complet.*
+
+Adaugă în meniu opțiunea **Șterge un scor**: utilizatorul alege poziția, iar scorul dispare din listă.
+
+- [ ] Verifici că poziția există (între `1` și `n`)  
+- [ ] Muți toate scorurile de după poziția ștearsă cu **un loc spre stânga**  
+- [ ] Scazi `n` cu `1`  
+- [ ] Testezi ștergerea primului, a ultimului și a unui scor din mijloc  
 
 ---
 
-## Greșeli frecvente (la proiect)
+## Greșeli frecvente
 
 | Ce vezi | Cauza | Corect |
 |---------|-------|--------|
-| Catalogul „uită” elevii | Variabilele `n`, `nume`, `nota` sunt declarate în interiorul buclei | Declară-le înainte de `do` |
-| `jump to case label` | Variabilă declarată într-un `case` fără acolade | `case 4: { … break; }` |
-| După sortare, numele nu se potrivesc cu notele | Ai sortat doar un vector | Interschimbă ambii vectori |
-| La statistici, media este greșită | Împarți la `MAXIM` în loc de `n` | `(double)suma / n` |
-| La ștergere rămâne un „gol” | Ai uitat `n--` | Mută elementele, apoi `n--` |
-| Se pot adăuga mai mult de 30 de elevi | Lipsește verificarea `n == MAXIM` | Verifică înainte de citire |
-| Programul se oprește la nume cu spațiu | `cin >>` citește un singur cuvânt | Folosește nume dintr-un cuvânt |
+| Meniul se oprește după o singură alegere | Lipsește bucla sau condiția este greșită | `do { ... } while (optiune != 0);` |
+| Programul trece prin mai multe cazuri | Lipsește `break;` la un `case` | Pune `break;` la finalul fiecărui caz |
+| Eroare la declarare în `case` | Variabila este declarată direct în `case` | Pune codul între `{ }` (de exemplu, în `else { }`) |
+| Statisticile ies ciudate când lista e goală | `g[0]` nu are încă o valoare | Verifică `if (n == 0)` înainte |
+| Scorurile se pierd sau se suprascriu | Ai uitat `n++` după adăugare | `g[n] = scor; n++;` |
+| Programul se oprește sau afișează valori ciudate | Ai folosit mai multe scoruri decât are vectorul | Verifică `n == 20` înainte să adaugi |
+| Sortarea strică ordinea | Bucla interioară nu pornește de la `i + 1` | `for (int j = i + 1; j < n; j++)` |
+| Căutarea spune mereu „Nu exista” | Compari cu `=` sau cauți până la `n - 1` | `g[i] != x`, `i < n` |
 
 ---
 
-## Recapitulare pe scurt (Modulul 2)
+## Recapitularea Modulului 2
+- **L1:** `for`, contor, numărătoare inversă, `i += pas`.
+- **L2:** sumă, produs, numărare, medie.
+- **L3:** `while`, santinelă, validare, cifrele unui număr.
+- **L4:** `do-while`, meniu cu `switch`.
+- **L5:** bucle imbricate: dreptunghi, triunghi, piramidă.
+- **L6:** vectori, indici de la `0`, citire și afișare.
+- **L7:** sumă, medie, minim, maxim, poziția maximului.
+- **L8:** căutare, poziție, apariții, dubluri.
+- **L9:** schimbarea a două valori, sortare, top 3.
+- **L10:** un program complet, cu meniu, de la idee la demo.
 
-- **Bucle:** `for` (cunoști numărul de repetări), `while` (nu știi, poate zero ori), `do-while` (cel puțin o dată).
-- **Șabloane:** acumulator (`suma += …`), contor (`contor++`), minim/maxim (pornești cu primul element), steag (`bool gasit`), poziție (`poz = -1`).
-- **Bucle imbricate:** rânduri și coloane; corpul interior se execută de (exterior × interior) ori.
-- **Vectori:** `tip nume[N];`, indici de la `0` la `N - 1`, parcurgere cu `for`, verificarea indicilor.
-- **Căutare liniară** și **ștergere/inserare** prin mutarea elementelor.
-- **Sortare:** swap cu variabilă ajutătoare, Bubble Sort, Selection Sort; la vectori paraleli se mută ambii vectori.
+---
+
+## Insigna Loop Master
+Felicitări! Dacă ai bifat toată lista de verificare, ai primit insigna **Loop Master**. Ai învățat să repeți acțiuni cu bucle și să lucrezi cu mai multe valori deodată, în vectori. Programele tale pot acum să proceseze sute de date cu aceleași câteva linii de cod. Asta este fundația pe care construim în Modulul 3, **Problem Solver**.
 
 ---
 
 ## Quiz scurt
-- Când folosești `for`, când `while` și când `do-while`?  
-- Ce șabloane de bază ai învățat în acest modul?  
-- De câte ori rulează corpul interior la bucle imbricate?  
-- Care e primul și care e ultimul indice dintr-un vector cu `N` elemente?  
-- Ce algoritmi de sortare cunoști acum?  
+- Ce poate face acum un program scris de tine, după Modulul 2?  
+- Când alegi `for`, `while` și `do-while`?  
+- De ce vectorul are indici de la `0`?  
+- Cum afli cea mai mare valoare dintr-un vector?  
+- Ce trebuie verificat înainte să adaugi un element într-un vector?  
 
 ---
 
 ## Temă
-1. Termină și testează **Catalogul de note**, apoi încarcă fișierul.  
-2. Refă din memorie, fără să te uiți, trei programe mici: suma unui vector, maximul cu poziția lui și sortarea crescătoare.  
-3. Scrie o listă cu 5 greșeli pe care le-ai făcut în Modulul 2 și cum le-ai reparat.  
-4. **Bonus:** scrie un program „Jurnalul de temperaturi”: citește 7 temperaturi, afișează media, ziua cea mai caldă, ziua cea mai rece și temperaturile în ordine crescătoare.  
-5. Salvează tot ca `Tema_M2L10_Prenume_Nume.cpp`.
+1. Îmbunătățește proiectul cu **o singură** idee mică: o opțiune nouă, un mesaj în plus sau o verificare suplimentară.  
+2. Pe foaie, scrie 3 lucruri învățate în Modulul 2 și 1 lucru pe care vrei să îl înțelegi mai bine.  
+3. Repetă cele 5 programe de recapitulare (Exemplele 1–5) și rescrie-le din memorie.  
+4. Salvează tot ca `Tema_M2L10_Prenume_Nume.cpp`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat în Modulul 2. Scrie-le de mână, rulează-le și schimbă-le după preferințe.
+
+**Acasă 1 — Meniu cu puncte**
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int puncte = 0;
+    int optiune;
+
+    do {
+        cout << "1 Castigi 10 puncte  2 Pierzi 5 puncte  3 Afiseaza  0 Iesire" << endl;
+        cout << "Alege: ";
+        cin >> optiune;
+
+        switch (optiune) {
+            case 1:
+                puncte += 10;
+                break;
+            case 2:
+                puncte -= 5;
+                break;
+            case 3:
+                cout << "Ai " << puncte << " puncte." << endl;
+                break;
+            case 0:
+                cout << "Scor final: " << puncte << endl;
+                break;
+            default:
+                cout << "Optiune invalida." << endl;
+        }
+    } while (optiune != 0);
+    return 0;
+}
+```
+
+**Rulare** (tastezi `1`, `2`, `3`, `0`):
+```
+1 Castigi 10 puncte  2 Pierzi 5 puncte  3 Afiseaza  0 Iesire
+Alege: 1
+1 Castigi 10 puncte  2 Pierzi 5 puncte  3 Afiseaza  0 Iesire
+Alege: 2
+1 Castigi 10 puncte  2 Pierzi 5 puncte  3 Afiseaza  0 Iesire
+Alege: 3
+Ai 5 puncte.
+1 Castigi 10 puncte  2 Pierzi 5 puncte  3 Afiseaza  0 Iesire
+Alege: 0
+Scor final: 5
+```
+
+Este scheletul oricărui joc cu meniu: `do-while` ține programul în funcțiune, iar `switch` alege acțiunea. Aici `puncte` este un acumulator care crește sau scade.
+
+**Acasă 2 — Inversăm vectorul pe loc**
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int g[6] = {10, 20, 30, 40, 50, 60};
+    int n = 6;
+
+    for (int i = 0; i < n / 2; i++) {
+        int aux = g[i];
+        g[i] = g[n - 1 - i];
+        g[n - 1 - i] = aux;
+    }
+
+    for (int i = 0; i < n; i++) {
+        cout << g[i] << " ";
+    }
+    cout << endl;
+    return 0;
+}
+```
+
+Rezultatul este `60 50 40 30 20 10`. Inversăm vectorul **pe loc**, schimbând perechile de la capete: primul cu ultimul, al doilea cu penultimul. Bucla merge doar până la jumătate (`n / 2`); dacă ar merge până la capăt, ar întoarce vectorul la loc.
+
+**Acasă 3 — Tabla înmulțirii**
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 5; i++) {
+        for (int j = 1; j <= 5; j++) {
+            cout << i * j << "\t";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+```
+
+Rezultat (tabla înmulțirii de la 1 la 5):
+```
+1	2	3	4	5
+2	4	6	8	10
+3	6	9	12	15
+4	8	12	16	20
+5	10	15	20	25
+```
+Bucla exterioară alege rândul `i`, iar cea interioară parcurge coloanele `j`. `\t` pune un spațiu mare între numere, ca să stea în coloane.
 
 ---
 
-## Felicitări — ai primit insigna **Loop Master**!
-
-Ai terminat Modulul 2: stăpânești buclele și vectorii, două dintre cele mai importante unelte din programare.
-
-## Ce urmează — Modulul 3
-**Funcții, string-uri și algoritmi (Problem Solver):** împarți programele mari în bucăți mici și reutilizabile (funcții), lucrezi cu texte, generezi numere aleatoare cu `rand()` și rezolvi probleme combinate.
+## Ce urmează — Modulul 3: „Funcții, string, algoritmi”
+Învățăm să împărțim un program în **bucăți mici, cu nume**, numite funcții, să lucrăm cu texte (`string`) și să rezolvăm probleme cu cifre și numere prime. Blocurile de azi, ca sortarea sau căutarea, pot deveni funcții pe care le folosești oricând.

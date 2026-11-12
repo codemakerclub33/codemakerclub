@@ -1,23 +1,27 @@
-Lecția doi din Modulul doi. For: sumă, produs și numărare.
+Lecția doi din Modulul doi. Pușculița mea. For: sumă, produs, numărare și medie.
 
-Astăzi bucla for începe să țină minte: aduni numere, le înmulțești, le numeri și afli cel mai mic și cel mai mare. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L doi.
+Astăzi bucla for începe să calculeze: adună banii cheltuiți într-o săptămână, numără zilele în care ai cheltuit mult și află media pe zi. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L doi.
 
-Obiectivul. Minim: un program care citește n numere și afișează suma lor. Complet: minim, plus media, câte numere sunt pare și cel mai mare număr citit.
+Instrucțiuni noi azi. Suma plus egal x adaugă x la sumă. Contor plus plus mărește contorul cu unu. Produs steluță egal x înmulțește produsul cu x. Total împărțit la șapte virgulă zero face o împărțire cu zecimale, pentru că unul dintre numere are punct.
 
-Primul pas. Acumulatorul. Pentru sumă ai nevoie de o variabilă care strânge totalul, numită acumulator. O creezi înainte de buclă, cu valoarea zero. În buclă adaugi la ea fiecare număr. Poți aduna numai numerele pare sau numai pe cele care îndeplinesc o condiție, dacă pui un if în buclă.
+Exemplul unu. Acumulatorul. Variabila suma se creează înainte de buclă, cu valoarea zero, și în buclă primește de fiecare dată încă un număr. Suma numerelor de la unu la cinci este cincisprezece. Dacă uiți să pui acumulatorul pe zero, rezultatul este greșit. Încearcă tu: schimbă cinci în zece și verifică suma, care trebuie să fie cincizeci și cinci, apoi adună numerele pare de la doi la douăzeci.
 
-Al doilea pas. Produsul. La produs acumulatorul pornește de la unu, nu de la zero, pentru că zero ori orice dă zero. Așa calculezi factorialul. Dar atenție, numerele cresc repede: int ajunge doar până la aproximativ două miliarde. Pentru numere mai mari folosești long long.
+Exemplul doi. Suma banilor cheltuiți, citită de la tastatură. Pentru fiecare zi citești o cheltuială și o adaugi la total. Variabila cheltuiala este în interiorul buclei și se creează din nou la fiecare zi, iar totalul este în afara buclei și își păstrează valoarea. Încearcă tu: rulează programul cu șapte numere ale tale, schimbă-l pentru zece zile și verifică totalul cu calculatorul.
 
-Al treilea pas. Citim n numere în buclă. Pui c-in în interiorul buclei și aduni fiecare număr citit. Media este suma împărțită la n, dar scrii double în fața sumei, ca să nu pierzi zecimalele.
+Exemplul trei. Contorul. Variabila zileMari pornește de la zero și crește cu unu doar când cheltuiala trece de douăzeci de lei. Cu numerele din exemplu sunt două zile mari. Încearcă tu: schimbă limita în zece, numără și zilele fără cheltuială și afișează ambele numere.
 
-Al patrulea pas. Contorul. Pentru numărare ai o variabilă care pornește de la zero și crește cu unu de fiecare dată când găsești ce cauți, deci în interiorul unui if. Așa afli câte numere sunt pare și câte impare sau câte note sunt de trecere.
+Exemplul patru. Media. Media este suma împărțită la numărul de valori. Ca să nu pierzi zecimalele, unul dintre numere trebuie să fie cu zecimale, de exemplu total împărțit la șapte virgulă zero. Dacă împarți două numere întregi, rămâne doar partea întreagă. Încearcă tu: compară media corectă cu cea greșită, calculează media pe cinci zile și înlocuiește șapte cu o variabilă citită cu c-in.
 
-Al cincilea pas. Minim și maxim. Pornești de la primul număr citit și, când găsești unul mai mare, îl pui în variabila maxim. La minim faci la fel, dar cu un număr mai mic. Poți nota și poziția maximului.
+Exemplul cinci. Produsul. Banii se dublează în fiecare zi: înmulțești cu doi. Pentru un produs, valoarea de pornire este unu, nu zero, pentru că orice număr înmulțit cu zero rămâne zero. Atenție: tipul int ține până la aproximativ două miliarde, deci rămâi la cel mult treizeci de zile. Încearcă tu: rulează pentru zece zile, schimbă dublarea în triplare și pornește de la cinci lei.
 
-Al șaselea pas. Proiecte mici. Puterea unui număr fără formulă, o pușculiță care se dublează și mini-proiectul Statistici de clasă.
+Exemplul șase. Pușculița mea. Programul citește banii de buzunar, apoi cheltuielile pe șapte zile. Aceeași buclă calculează totalul și numără zilele mari. La final afișează totalul, zilele cu cheltuială mare, media pe zi și câți bani au rămas. Încearcă tu: rulează cu datele tale, schimbă limita în cincisprezece și adaugă un mesaj care spune dacă ai rămas fără bani.
 
-Greșeli frecvente. Suma iese ciudată, pentru că acumulatorul nu are valoare de pornire. Produsul iese zero, pentru că a pornit de la zero. Suma este doar ultimul număr, pentru că ai pus variabila în interiorul buclei. Maximul este greșit la numere negative, pentru că ai pornit maximul de la zero. Media are doar partea întreagă. Contorul nu crește, pentru că este în afara if-ului.
+De făcut azi. Pușculița mea. Minim: un program care citește cheltuielile pe șapte zile și afișează totalul cheltuit. Complet: minim, plus banii de buzunar citiți la început, câte zile au cheltuială mare, media pe zi, cu zecimale, și cât a rămas.
 
-Tema. Citești n și aduni numerele impare divizibile cu trei. Citești n temperaturi și numeri câte sunt sub zero, câte între zero și douăzeci și câte peste douăzeci. Salvezi ca Tema, linie jos, M doi, L doi.
+Bonus, trei stele. Povestea dublării. Doar dacă ai terminat varianta completă. Primești un leu în prima zi, doi în a doua, patru în a treia, iar suma se dublează în fiecare zi. Citești numărul de zile, cel mult treizeci, și afișezi pentru fiecare zi cât primești și cât ai strâns în total. Pentru șase zile, totalul din ultima zi este șaizeci și trei. Observi o regulă: totalul de după n zile este cu unu mai mic decât suma primită în ziua următoare.
 
-Recapitulare. Suma pornește de la zero, produsul de la unu. Contorul crește în if. Succes!
+Greșeli frecvente. Suma este un număr ciudat, pentru că acumulatorul nu a fost pus pe zero. Produsul este mereu zero, pentru că ai pornit de la zero. Suma nu se adună, pentru că ai declarat acumulatorul în buclă. Media nu are zecimale, pentru că ai împărțit două numere întregi. Contorul numără prea mult, pentru că este în afara if-ului. La dublare, după multe zile, int depășește limita.
+
+Tema. Refaci exemplele din lecție și le testezi cu cel puțin două seturi de date. Citești cinci numere și afișezi suma și media. Citești zece numere și numeri câte sunt pozitive și câte negative. Citești n și calculezi doi la puterea n, prin înmulțiri repetate. Salvezi ca Tema, linie jos, M doi, L doi. Găsești în lecție și exemple pentru acasă.
+
+Recapitulare. Acumulatorul adună și pornește de la zero. Contorul numără și crește doar când condiția este adevărată. Produsul înmulțește și pornește de la unu. Pentru media cu zecimale folosești șapte virgulă zero. Succes!

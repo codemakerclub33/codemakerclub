@@ -1,19 +1,17 @@
-# LECȚIA 5 — Bucle imbricate (o buclă în altă buclă)
+# LECȚIA 5 — Constructorul de forme
+### Bucle imbricate: o buclă în altă buclă
 **Modulul 2 · Bucle și vectori · 2 ore**  
 **Code Maker Club · Loop Master**
 
-> Azi pui o buclă **în interiorul altei bucle**. Așa desenezi triunghiuri, piramide și table de șah din caractere și construiești tabele întregi, linie cu linie.  
-> Proiect: **„Desenatorul de figuri”** · fișier: `Prenume_Nume_M2L5.cpp` (ex. `Ana_Pop_M2L5.cpp`)
+> Azi pui o buclă **în interiorul** altei bucle și desenezi din caractere dreptunghiuri, triunghiuri și piramide. La final construiești un program care desenează forma pe care o alegi.  
+> Fișier: `Prenume_Nume_M2L5.cpp`
 
 ---
 
-## Obiectiv
-La finalul orei înțelegi cum se execută două bucle una în alta, desenezi dreptunghiuri, triunghiuri și piramide din `*`, generezi tabele și folosești `break` într-o buclă interioară.  
-**Minim:** un dreptunghi și un triunghi desenate cu bucle imbricate.  
-**Ținta orei (Complet):** + o piramidă și un meniu cu mai multe figuri.
+## Ce facem azi
+La final folosești două bucle una în alta (bucle **imbricate**), înțelegi cum se învârt ele (cea din interior se repetă complet la fiecare rotire a celei din exterior), desenezi dreptunghiuri, triunghiuri și piramide și alegi forma dintr-un meniu.
 
-## De ce contează
-Multe lucruri din lumea reală au **rânduri și coloane**: o tablă de șah, un tabel de note, un ecran de pixeli, harta unui joc. Pentru ele ai nevoie de o buclă pentru rânduri și, pentru fiecare rând, o altă buclă pentru coloane.
+Un desen din caractere are **rânduri** și, pe fiecare rând, **coloane**. O buclă se ocupă de rânduri, iar o a doua buclă, din interiorul ei, se ocupă de coloanele de pe fiecare rând. Aceeași idee stă în spatele unui tabel, al unei table de joc sau al pixelilor de pe ecran: pentru fiecare rând, parcurgi toate coloanele.
 
 ---
 
@@ -21,33 +19,29 @@ Multe lucruri din lumea reală au **rânduri și coloane**: o tablă de șah, un
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recapitulare: `for`, `while`, `do-while` |
-| 10–30 | Ideea de buclă imbricată și urmărirea pas cu pas (**Exemplele 1–3**) |
-| 30–60 | Dreptunghiuri și triunghiuri din `*` (**Exemplele 4–8**) |
-| 60–80 | Piramida și tabelele (**Exemplele 9–11**) |
-| 80–100 | Tabla de șah, `break` în bucla interioară, numere prime (**Exemplele 12–14**) |
-| 100–118 | Proiecte (**Exemplele 15–16**) |
-| 118–120 | Recap și temă |
-
-> **Pentru ritm lent sau începători:** în clasă faceți mai întâi cele **8 exemple marcate [Esențial]** (inclusiv proiectul sau exemplul final, acolo unde e cazul). Ele acoperă tot ce trebuie să rămână după lecție. Restul exemplelor sunt pentru cine merge repede sau pentru acasă.
+| 0–15 | Recapitulare L4: `do-while`, meniuri, alegerea buclei |
+| 15–35 | Cum se învârt două bucle (**Exemplul 1**) |
+| 35–60 | Dreptunghiuri (**Exemplele 2–3**) |
+| 60–85 | Triunghi și piramidă (**Exemplele 4–5**) |
+| 85–115 | Proiectul: Constructorul de forme + Provocarea (**Exemplul 6**) |
+| 115–120 | Recap și temă |
 
 ---
 
-## 1. Cum funcționează o buclă imbricată
+## Instrucțiuni noi azi
 
-Gândește-te la un ceas. Acul minutelor face o tură completă (60 de minute) pentru **fiecare** oră a acului orelor. Bucla din exterior este ora, bucla din interior este minutul.
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `for` în interiorul altui `for` | Bucla din interior se repetă complet la fiecare rotire a celei din exterior | `for (i...) { for (j...) { ... } }` |
+| `i` pentru rânduri, `j` pentru coloane | Două contoare, câte unul pentru fiecare buclă | `i <= 3`, `j <= 5` |
+| `cout << endl;` după bucla interioară | Trece la rândul următor | `cout << endl;` |
+| `n - i` și `2 * i - 1` | Câte spații și câte steluțe are rândul `i` al unei piramide | pentru `i = 2` și `n = 4`: 2 spații, 3 steluțe |
 
-```
-for (int i = 1; i <= 3; i++) {          // bucla EXTERIOARA (randuri)
-    for (int j = 1; j <= 4; j++) {      // bucla INTERIOARA (coloane)
-        // se executa de 3 x 4 = 12 ori
-    }
-}
-```
+---
 
-Regula de aur: pentru **o singură** valoare a lui `i`, bucla interioară rulează **complet**, de la început până la sfârșit. Abia apoi `i` crește.
+## Pas cu pas
 
-### Exemplul 1 — Urmărim perechile (i, j)
+### Exemplul 1 — Cum se învârt două bucle
 
 ```cpp
 #include <iostream>
@@ -56,7 +50,7 @@ using namespace std;
 int main() {
     for (int i = 1; i <= 3; i++) {
         for (int j = 1; j <= 2; j++) {
-            cout << "i=" << i << " j=" << j << endl;
+            cout << "i = " << i << ", j = " << j << endl;
         }
     }
     return 0;
@@ -65,43 +59,30 @@ int main() {
 
 **Ieșire:**
 ```
-i=1 j=1
-i=1 j=2
-i=2 j=1
-i=2 j=2
-i=3 j=1
-i=3 j=2
+i = 1, j = 1
+i = 1, j = 2
+i = 2, j = 1
+i = 2, j = 2
+i = 3, j = 1
+i = 3, j = 2
 ```
 
-Vezi cum `j` parcurge 1 și 2 pentru fiecare `i`. În total corpul interior se execută `3 × 2 = 6` ori.
+Citește ieșirea cu atenție. Cât timp `i` este `1`, bucla cu `j` rulează de la `1` la `2`. Apoi `i` devine `2`, iar `j` o ia de la capăt. Se întâmplă ca la ceas: **bucla din interior face o tură întreagă la fiecare pas al celei din exterior**, la fel cum acul minutelor face o tură la fiecare oră.
 
-### Exemplul 2 — Un rând de steluțe **[Esențial]**
+| `i` (exterior) | `j` (interior) |
+|----------------|----------------|
+| 1 | 1, 2 |
+| 2 | 1, 2 |
+| 3 | 1, 2 |
 
-Înainte de două bucle, o buclă simplă care desenează un rând:
+În total, corpul buclei interioare se execută `3 * 2 = 6` ori.
 
-```cpp
-#include <iostream>
-using namespace std;
+**Încearcă tu (10 min)**  
+- [ ] Schimbi limitele în `i <= 2` și `j <= 4` și prevezi câte rânduri se afișează (8)  
+- [ ] Faci același tabel pe foaie pentru `i <= 3` și `j <= 3`  
+- [ ] Afișezi doar `i * j` pe fiecare rând, în loc de text  
 
-int main() {
-    for (int j = 1; j <= 5; j++) {
-        cout << "*";
-    }
-    cout << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-*****
-```
-
-`cout << "*"` fără `endl` lasă cursorul pe același rând, deci steluțele se așază una lângă alta. `endl` de după buclă mută cursorul pe rândul următor.
-
-### Exemplul 3 — Dreptunghi de 3 rânduri și 5 coloane **[Esențial]**
-
-Repetăm de 3 ori rândul din exemplul anterior:
+### Exemplul 2 — Un dreptunghi de steluțe
 
 ```cpp
 #include <iostream>
@@ -125,30 +106,30 @@ int main() {
 *****
 ```
 
-Observă unde este `endl`: **după** bucla interioară, dar **în** bucla exterioară. Un rând se termină după ce ai pus toate coloanele lui.
+Bucla exterioară (`i`) se repetă de 3 ori: sunt **3 rânduri**. În fiecare rând, bucla interioară (`j`) afișează 5 steluțe: sunt **5 coloane**. După ce rândul este gata, `cout << endl;` trece la rândul următor. Observă **unde** este `endl`: **după** bucla interioară, dar **în** bucla exterioară.
 
-**Încearcă tu (8 min)**  
-- [ ] Schimbi dreptunghiul în 5 rânduri și 10 coloane  
-- [ ] Desenezi cu `#` în loc de `*`  
-- [ ] Mutezi `endl` în interiorul buclei interioare și observi ce se întâmplă  
+> **Atenție:** dacă pui `cout << endl;` în interiorul buclei cu `j`, fiecare steluță ajunge pe rândul ei. Dacă îl uiți, tot desenul apare pe un singur rând.
 
----
+**Încearcă tu (10 min)**  
+- [ ] Schimbi dreptunghiul în 5 rânduri și 3 coloane  
+- [ ] Desenezi un pătrat de 4 pe 4  
+- [ ] Muți `endl` în bucla interioară și vezi ce se întâmplă  
 
-## 2. Dreptunghiuri și triunghiuri
-
-### Exemplul 4 — Pătrat cu latura citită **[Esențial]**
+### Exemplul 3 — Dreptunghiul ales de utilizator
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int n;
-    cout << "Latura: ";
-    cin >> n;
+    int randuri, coloane;
+    cout << "Randuri: ";
+    cin >> randuri;
+    cout << "Coloane: ";
+    cin >> coloane;
 
-    for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= n; j++) {
+    for (int i = 1; i <= randuri; i++) {
+        for (int j = 1; j <= coloane; j++) {
             cout << "# ";
         }
         cout << endl;
@@ -157,152 +138,76 @@ int main() {
 }
 ```
 
-**Rulare** (tastezi `4`):
+**Rulare:**
 ```
-Latura: 4
+Randuri: 3
+Coloane: 4
 # # # # 
 # # # # 
 # # # # 
-# # # # 
 ```
 
-Spațiul din `"# "` face figura mai pătrată pe ecran, pentru că literele sunt mai înalte decât late.
-
-### Exemplul 5 — Triunghi dreptunghic **[Esențial]**
-
-Cheia: bucla interioară depinde de `i`. Pe rândul 1 desenăm 1 steluță, pe rândul 2 desenăm 2 etc.
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    for (int i = 1; i <= 5; i++) {
-        for (int j = 1; j <= i; j++) {
-            cout << "*";
-        }
-        cout << endl;
-    }
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-*
-**
-***
-****
-*****
-```
-
-Condiția `j <= i` este tot secretul: numărul de coloane crește odată cu numărul rândului.
-
-### Exemplul 6 — Triunghi întors **[Esențial]**
-
-Pe primul rând 5 steluțe, pe ultimul una singură:
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    for (int i = 5; i >= 1; i--) {
-        for (int j = 1; j <= i; j++) {
-            cout << "*";
-        }
-        cout << endl;
-    }
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-*****
-****
-***
-**
-*
-```
-
-Aici bucla exterioară numără invers (`i--`), iar cea interioară rămâne la fel.
-
-### Exemplul 7 — Triunghi de numere
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    for (int i = 1; i <= 5; i++) {
-        for (int j = 1; j <= i; j++) {
-            cout << j;
-        }
-        cout << endl;
-    }
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-1
-12
-123
-1234
-12345
-```
-
-Acum afișăm `j`, nu steluța. Fiecare rând numără de la 1 până la numărul rândului.
-
-### Exemplul 8 — Rânduri de cifre identice
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    for (int i = 1; i <= 5; i++) {
-        for (int j = 1; j <= i; j++) {
-            cout << i;
-        }
-        cout << endl;
-    }
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-1
-22
-333
-4444
-55555
-```
-
-Diferența față de exemplul anterior este doar `cout << i` în loc de `cout << j`. O schimbare mică, un desen cu totul diferit.
+Limitele buclelor vin acum din `cin`, deci același program desenează orice dreptunghi. Am pus un spațiu după fiecare `#`, ca desenul să arate mai pătrățos.
 
 **Încearcă tu (10 min)**  
-- [ ] Desenezi un triunghi de 8 rânduri  
-- [ ] Faci triunghiul de numere cu 9 rânduri  
-- [ ] Desenezi un triunghi care începe cu 1 steluță, crește la 5 și scade înapoi la 1 (două perechi de bucle, una după alta)  
+- [ ] Rulezi cu `5` rânduri și `2` coloane, apoi cu `1` și `8`  
+- [ ] Schimbi simbolul `#` cu un alt caracter, de exemplu `@`  
+- [ ] Citești un singur număr `n` și desenezi un pătrat `n` pe `n`  
 
----
-
-## 3. Piramida și tabelele
-
-### Exemplul 9 — Piramida centrată **[Esențial]**
-
-Pe fiecare rând avem întâi **spații**, apoi **steluțe**. Numărul de spații scade, numărul de steluțe crește (1, 3, 5, 7…).
+### Exemplul 4 — Triunghiul
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int n = 5;
+    int n;
+    cout << "Inaltime: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+```
+
+**Rulare:**
+```
+Inaltime: 4
+*
+**
+***
+****
+```
+
+Diferența față de dreptunghi este mică, dar importantă: bucla interioară nu mai merge până la un număr fix, ci până la `i`, adică până la **numărul rândului**. Rândul 1 are 1 steluță, rândul 2 are 2 și așa mai departe.
+
+| Rândul `i` | Câte steluțe (`j` de la 1 la `i`) |
+|------------|-----------------------------------|
+| 1 | 1 |
+| 2 | 2 |
+| 3 | 3 |
+| 4 | 4 |
+
+**Încearcă tu (10 min)**  
+- [ ] Desenezi triunghiul pentru înălțimile `3` și `6`  
+- [ ] Afișezi, în loc de steluțe, numărul rândului, de exemplu `1`, `22`, `333`  
+- [ ] Faci triunghiul „întors”: primul rând are `n` steluțe, iar ultimul are `1` (indiciu: `j <= n - i + 1`)  
+
+### Exemplul 5 — Piramida
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Inaltime: ";
+    cin >> n;
 
     for (int i = 1; i <= n; i++) {
         for (int s = 1; s <= n - i; s++) {
@@ -317,267 +222,34 @@ int main() {
 }
 ```
 
-**Ieșire:**
+**Rulare:**
 ```
-    *
-   ***
-  *****
- *******
-*********
-```
-
-Pe rândul `i` ai `n - i` spații și `2 * i - 1` steluțe. Verifică pe rândul 3: `5 - 3 = 2` spații și `2 × 3 - 1 = 5` steluțe. Cele două bucle interioare sunt **una după alta**, nu una în alta, ambele în bucla exterioară.
-
-### Exemplul 10 — Tabla înmulțirii (tabel complet) **[Esențial]**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    for (int i = 1; i <= 9; i++) {
-        for (int j = 1; j <= 9; j++) {
-            int p = i * j;
-            if (p < 10) {
-                cout << " ";
-            }
-            cout << p << " ";
-        }
-        cout << endl;
-    }
-    return 0;
-}
+Inaltime: 4
+   *
+  ***
+ *****
+*******
 ```
 
-**Ieșire:**
-```
- 1  2  3  4  5  6  7  8  9 
- 2  4  6  8 10 12 14 16 18 
- 3  6  9 12 15 18 21 24 27 
- 4  8 12 16 20 24 28 32 36 
- 5 10 15 20 25 30 35 40 45 
- 6 12 18 24 30 36 42 48 54 
- 7 14 21 28 35 42 49 56 63 
- 8 16 24 32 40 48 56 64 72 
- 9 18 27 36 45 54 63 72 81 
-```
+Pe fiecare rând sunt **două** bucle, una după alta, în interiorul buclei exterioare. Prima afișează **spațiile** din stânga: `n - i`. A doua afișează **steluțele**: `2 * i - 1`.
 
-Dacă produsul are o singură cifră, punem un spațiu în față, ca să rămână coloanele aliniate.
+| Rândul `i` (pentru `n = 4`) | Spații (`n - i`) | Steluțe (`2 * i - 1`) |
+|-----------------------------|------------------|-----------------------|
+| 1 | 3 | 1 |
+| 2 | 2 | 3 |
+| 3 | 1 | 5 |
+| 4 | 0 | 7 |
 
-### Exemplul 11 — Tabel cu antet
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    cout << "   |";
-    for (int j = 1; j <= 6; j++) {
-        cout << "  " << j;
-    }
-    cout << endl << "---+------------------" << endl;
-
-    for (int i = 1; i <= 6; i++) {
-        cout << " " << i << " |";
-        for (int j = 1; j <= 6; j++) {
-            int p = i * j;
-            if (p < 10) {
-                cout << " ";
-            }
-            cout << " " << p;
-        }
-        cout << endl;
-    }
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-   |  1  2  3  4  5  6
----+------------------
- 1 |  1  2  3  4  5  6
- 2 |  2  4  6  8 10 12
- 3 |  3  6  9 12 15 18
- 4 |  4  8 12 16 20 24
- 5 |  5 10 15 20 25 30
- 6 |  6 12 18 24 30 36
-```
-
-Prima buclă (singură) desenează antetul. A doua, imbricată, desenează rândurile. Fiecare rând începe cu numărul lui, apoi urmează produsele.
-
----
-
-## 4. Tabla de șah, `break` și numere prime
-
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
-
-### Exemplul 12 — Tabla de șah *(Provocare, opțional)*
-
-Alternăm `#` și `.` în funcție de suma `i + j`: pară înseamnă `#`, impară înseamnă `.`.
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    for (int i = 0; i < 8; i++) {
-        for (int j = 0; j < 8; j++) {
-            if ((i + j) % 2 == 0) {
-                cout << "# ";
-            } else {
-                cout << ". ";
-            }
-        }
-        cout << endl;
-    }
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-# . # . # . # . 
-. # . # . # . # 
-# . # . # . # . 
-. # . # . # . # 
-# . # . # . # . 
-. # . # . # . # 
-# . # . # . # . 
-. # . # . # . # 
-```
-
-Aici ne-am numărat de la `0`, ca să ne obișnuim cu felul în care vor fi numerotate pozițiile în vectori, în lecția următoare.
-
-### Exemplul 13 — Dreptunghi gol
-
-Desenăm doar conturul; interiorul rămâne gol. Un punct este pe contur dacă e pe primul/ultimul rând sau pe prima/ultima coloană.
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int linii = 5;
-    int coloane = 9;
-
-    for (int i = 1; i <= linii; i++) {
-        for (int j = 1; j <= coloane; j++) {
-            if (i == 1 || i == linii || j == 1 || j == coloane) {
-                cout << "*";
-            } else {
-                cout << " ";
-            }
-        }
-        cout << endl;
-    }
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-*********
-*       *
-*       *
-*       *
-*********
-```
-
-### Exemplul 14 — Numerele prime până la 30 (cu `break`) *(Provocare, opțional)*
-
-Un număr este **prim** dacă se împarte exact doar la 1 și la el însuși. Pentru fiecare număr `n`, căutăm un divizor `d`. Dacă găsim unul, `break` oprește **doar bucla interioară**.
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    cout << "Numere prime pana la 30:" << endl;
-
-    for (int n = 2; n <= 30; n++) {
-        bool prim = true;
-
-        for (int d = 2; d < n; d++) {
-            if (n % d == 0) {
-                prim = false;
-                break;
-            }
-        }
-
-        if (prim) {
-            cout << n << " ";
-        }
-    }
-    cout << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Numere prime pana la 30:
-2 3 5 7 11 13 17 19 23 29 
-```
-
-Pe fiecare număr `n` pornim presupunând că este prim (`prim = true`). Dacă găsim un divizor, schimbăm în `false` și ieșim din bucla interioară cu `break`, fără să mai căutăm. Bucla exterioară trece apoi la următorul `n`.
+Spațiile se micșorează, iar steluțele cresc cu 2 pe rând: de aceea piramida este simetrică.
 
 **Încearcă tu (10 min)**  
-- [ ] Modifici tabla de șah la 6 × 6  
-- [ ] Desenezi un dreptunghi gol de 4 × 12  
-- [ ] Afișezi numerele prime până la 100  
+- [ ] Verifici tabelul de mai sus pentru `n = 5`  
+- [ ] Desenezi piramida pentru `n = 3` și `n = 6`  
+- [ ] Înlocuiești steluțele cu un alt caracter  
 
----
-
-## 5. Proiecte
-
-### Exemplul 15 — Calendarul unei luni *(Provocare, opțional)*
-
-Afișăm 30 de zile, câte 7 pe rând (o săptămână). Folosim un contor de zile și o buclă interioară pe zilele săptămânii.
+### Exemplul 6 — Constructorul de forme (proiectul orei)
 
 ```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int zile = 30;
-    int zi = 1;
-
-    cout << "Lu Ma Mi Jo Vi Sa Du" << endl;
-
-    while (zi <= zile) {
-        for (int s = 1; s <= 7 && zi <= zile; s++) {
-            if (zi < 10) {
-                cout << " ";
-            }
-            cout << zi << " ";
-            zi++;
-        }
-        cout << endl;
-    }
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Lu Ma Mi Jo Vi Sa Du
- 1  2  3  4  5  6  7 
- 8  9 10 11 12 13 14 
-15 16 17 18 19 20 21 
-22 23 24 25 26 27 28 
-29 30 
-```
-
-Bucla `while` parcurge săptămânile, iar bucla `for` parcurge zilele dintr-o săptămână. Condiția `s <= 7 && zi <= zile` oprește rândul și când se termină luna, nu doar când se termină săptămâna. Aici am amestecat două tipuri de buclă, ceea ce este perfect normal.
-
-### Exemplul 16 — Desenatorul de figuri (mini-proiect) **[Esențial]**
-
-```cpp
-/*
-   Program: Desenatorul de figuri
-   Scop:    meniu care deseneaza figuri din caractere
-*/
 #include <iostream>
 using namespace std;
 
@@ -585,8 +257,8 @@ int main() {
     int optiune;
 
     do {
-        cout << endl << "===== DESENATOR =====" << endl;
-        cout << "1. Patrat" << endl;
+        cout << endl << "=== CONSTRUCTORUL DE FORME ===" << endl;
+        cout << "1. Dreptunghi" << endl;
         cout << "2. Triunghi" << endl;
         cout << "3. Piramida" << endl;
         cout << "0. Iesire" << endl;
@@ -595,35 +267,27 @@ int main() {
 
         if (optiune >= 1 && optiune <= 3) {
             int n;
-            cout << "Marimea (1-15): ";
+            cout << "Inaltime: ";
             cin >> n;
 
-            if (n < 1 || n > 15) {
-                cout << "Marime invalida." << endl;
-            } else if (optiune == 1) {
-                for (int i = 1; i <= n; i++) {
-                    for (int j = 1; j <= n; j++) {
-                        cout << "# ";
+            for (int i = 1; i <= n; i++) {
+                if (optiune == 1) {
+                    for (int j = 1; j <= 2 * n; j++) {
+                        cout << "#";
                     }
-                    cout << endl;
-                }
-            } else if (optiune == 2) {
-                for (int i = 1; i <= n; i++) {
+                } else if (optiune == 2) {
                     for (int j = 1; j <= i; j++) {
-                        cout << "* ";
+                        cout << "*";
                     }
-                    cout << endl;
-                }
-            } else {
-                for (int i = 1; i <= n; i++) {
+                } else {
                     for (int s = 1; s <= n - i; s++) {
                         cout << " ";
                     }
                     for (int j = 1; j <= 2 * i - 1; j++) {
                         cout << "*";
                     }
-                    cout << endl;
                 }
+                cout << endl;
             }
         } else if (optiune != 0) {
             cout << "Optiune invalida." << endl;
@@ -635,45 +299,34 @@ int main() {
 }
 ```
 
-**Rulare** (tastezi `1`, `3`, `2`, `4`, `3`, `3`, `0`):
+**Rulare** (alegi `1` cu înălțimea `3`, apoi `3` cu înălțimea `4`, apoi `0`):
 ```
 
-===== DESENATOR =====
-1. Patrat
+=== CONSTRUCTORUL DE FORME ===
+1. Dreptunghi
 2. Triunghi
 3. Piramida
 0. Iesire
 Alege: 1
-Marimea (1-15): 3
-# # # 
-# # # 
-# # # 
+Inaltime: 3
+######
+######
+######
 
-===== DESENATOR =====
-1. Patrat
-2. Triunghi
-3. Piramida
-0. Iesire
-Alege: 2
-Marimea (1-15): 4
-* 
-* * 
-* * * 
-* * * * 
-
-===== DESENATOR =====
-1. Patrat
+=== CONSTRUCTORUL DE FORME ===
+1. Dreptunghi
 2. Triunghi
 3. Piramida
 0. Iesire
 Alege: 3
-Marimea (1-15): 3
-  *
- ***
-*****
+Inaltime: 4
+   *
+  ***
+ *****
+*******
 
-===== DESENATOR =====
-1. Patrat
+=== CONSTRUCTORUL DE FORME ===
+1. Dreptunghi
 2. Triunghi
 3. Piramida
 0. Iesire
@@ -681,43 +334,43 @@ Alege: 0
 La revedere!
 ```
 
-În acest program ai folosit tot ce ai învățat în modulul: `do-while` pentru meniu, `if` pentru validare, trei variante de bucle imbricate și operatorii logici.
+Programul adună lecțiile modulului: `do-while` pentru meniu, `if` pentru alegerea formei, bucla exterioară pentru rânduri și bucle interioare pentru coloane. Dreptunghiul are înălțimea `n` și lățimea `2 * n`, ca să arate aproape pătrat în consolă.
+
+**Încearcă tu (15 min)**  
+- [ ] Desenezi pe rând toate cele trei forme, cu înălțimi diferite  
+- [ ] Alegi o opțiune invalidă și verifici mesajul  
+- [ ] Adaugi o a patra formă, de exemplu triunghiul „întors”  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Constructorul de forme”
 
-### Exercițiul A — „Desenatorul de figuri” (obligatoriu)
-Scrie programul cu meniu din Exemplul 16, cu cel puțin 3 figuri. Poți adăuga o figură în plus, la alegere (triunghi întors, dreptunghi gol).
-
-### Exercițiul B — Ceasul de nisip
-Desenează o figură formată dintr-un triunghi întors (deasupra) și o piramidă (dedesubt), cu `n = 5`.
-
-### Exercițiul C — Tabelul pătratelor
-Afișează un tabel cu numerele de la 1 la 10, fiecare cu pătratul și cubul lui, pe același rând.
-
-### Exercițiul D — Scara
-Citește un număr `n` și desenează o scară din `n` trepte, sub forma unui triunghi dreptunghic din caracterul `#`, aliniat la **dreapta** (spații la început, apoi `#`).
-
-### Exercițiul E — Numere perfecte *(Provocare, opțional)*
-Un număr este **perfect** dacă este egal cu suma divizorilor lui mai mici decât el (de exemplu 6 = 1 + 2 + 3). Afișează toate numerele perfecte până la 500.
+| | Ce trebuie să ai |
+|---|---|
+| **Minim** | Un program care citește înălțimea și desenează un dreptunghi și un triunghi, cu bucle imbricate |
+| **Complet** | Minim + piramida, un meniu în `do-while` care alege forma (și se repetă până la `0`) și un mesaj pentru opțiune invalidă |
 
 **Gata când:**
 - [ ] Programul compilează fără erori  
-- [ ] Meniul desenează cel puțin 3 figuri  
-- [ ] Ai folosit minimum o buclă în altă buclă  
-- [ ] `endl` este pus la locul potrivit (după bucla interioară)  
-- [ ] Ai testat mărimi diferite (1, 5, 15)  
-- [ ] Fișierul se numește `Prenume_Nume_M2L5.cpp`  
+- [ ] Citește înălțimea cu `cin`, după un mesaj clar  
+- [ ] Desenează un dreptunghi cu două bucle imbricate  
+- [ ] Desenează un triunghi cu două bucle imbricate  
+- [ ] (Complet) Desenează o piramidă simetrică  
+- [ ] (Complet) Meniul se repetă până alegi `0` și tratează opțiunile invalide  
+- [ ] Ai testat fiecare formă cu cel puțin două înălțimi  
+- [ ] Fișierul se numește `Prenume_Nume_M2L5.cpp`
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Desenează un romb (piramidă + piramidă întoarsă)  
-- [ ] Desenează un dreptunghi plin cu un contur diferit (de exemplu `#` pe contur și `.` în interior)  
-- [ ] Desenează un „X” de `n × n` caractere: un `*` apare doar pe cele două diagonale  
-- [ ] Citește caracterul cu care se desenează figura (`char`) și folosește caracterul în loc de `*`  
-- [ ] Afișează toate perechile `(a, b)` cu `1 ≤ a ≤ b ≤ 9` care au suma 10  
+## Bonus ★★★ — Provocare: Tabla de joc
+*Doar dacă ai terminat Complet.*
+
+Desenează o tablă de joc `n` pe `n`, în care pătratele alternează între `#` și `.`, ca la o tablă de șah. Afișează `#` când suma `i + j` este pară și `.` când este impară.
+
+- [ ] Citești mărimea `n` a tablei  
+- [ ] Folosești două bucle imbricate și `(i + j) % 2`  
+- [ ] Pentru `n = 5`, colțul din stânga sus este `#`, iar pătratul din dreapta lui este `.`  
+- [ ] Testezi cu `4` și cu `8`  
 
 ---
 
@@ -725,46 +378,111 @@ Un număr este **perfect** dacă este egal cu suma divizorilor lui mai mici dec�
 
 | Ce vezi | Cauza | Corect |
 |---------|-------|--------|
-| Toate steluțele pe un singur rând | Ai uitat `endl` după bucla interioară | `cout << endl;` în bucla exterioară |
-| Fiecare steluță pe alt rând | `endl` este în interiorul buclei interioare | Mută linia după `}` a buclei interioare |
-| Triunghiul are același număr de steluțe pe fiecare rând | Bucla interioară merge până la `n`, nu până la `i` | `j <= i` |
-| Piramida nu e centrată | Spațiile sunt prea puține sau prea multe | `n - i` spații pe rândul `i` |
-| Aceeași variabilă `i` în ambele bucle | Contorul exterior este modificat de bucla interioară | Folosește nume diferite: `i` și `j` |
-| `break` oprește tot programul | Crezi că `break` iese din toate buclele | `break` iese doar din bucla în care se află |
-| Programul rulează foarte mult | Ai pus limite foarte mari la ambele bucle (ex. 100000 × 100000) | Numărul de execuții se **înmulțește** |
+| Tot desenul apare pe un singur rând | Lipsește `cout << endl;` după bucla interioară | Pune `endl` după bucla cu `j`, în bucla cu `i` |
+| Fiecare steluță este pe rândul ei | `endl` este în bucla interioară | Mută `endl` după bucla interioară |
+| Desenul este un dreptunghi, nu triunghi | Bucla interioară merge până la un număr fix | Folosește `j <= i` |
+| Piramida nu este simetrică | Numărul de spații sau de steluțe este greșit | Spații: `n - i`; steluțe: `2 * i - 1` |
+| Bucla interioară nu se resetează | Ai declarat `j` în afara buclei exterioare | Declară `j` în `for (int j = 1; ...)`, în interior |
+| Se afișează prea multe sau prea puține rânduri | Ai amestecat `i` și `j` | `i` pentru rânduri, `j` pentru coloane |
+| Programul pare blocat | Ai pus `i++` în loc de `j++` în bucla interioară | Fiecare buclă își crește propriul contor |
 
 ---
 
 ## Recapitulare pe scurt
-
-- O buclă imbricată este o buclă în corpul altei bucle.
-- Pentru fiecare pas al buclei exterioare, bucla interioară rulează **complet**.
-- Numărul total de execuții ale corpului interior = (repetări exterioare) × (repetări interioare).
-- Șablon de desen: bucla exterioară = **rândurile**, bucla interioară = **coloanele**, iar `endl` vine după bucla interioară.
-- Triunghi: bucla interioară merge până la `i` (`j <= i`). Piramidă: `n - i` spații și `2 * i - 1` steluțe.
-- `break` dintr-o buclă interioară oprește **doar** acea buclă.
-- Folosește nume diferite pentru contoare: `i`, `j`, `s`.
+- Două bucle una în alta se numesc **bucle imbricate**.  
+- Bucla din interior face o tură completă la fiecare rotire a buclei din exterior.  
+- `i` numără rândurile, `j` numără coloanele; `endl` vine după bucla interioară.  
+- Dreptunghi: ambele limite sunt fixe. Triunghi: `j <= i`.  
+- Piramidă: `n - i` spații, apoi `2 * i - 1` steluțe.  
+- Numărul total de repetări ale corpului interior este rânduri înmulțit cu coloane.  
 
 ---
 
 ## Quiz scurt
-- Ce este o buclă imbricată?  
-- De câte ori rulează corpul interior, în total?  
-- Într-un desen, ce reprezintă bucla exterioară și ce cea interioară?  
-- Cum desenezi un triunghi: până unde merge bucla interioară?  
-- Ce oprește un `break` dintr-o buclă interioară?  
+- De câte ori se execută corpul buclei interioare la `i <= 3` și `j <= 4`?  
+- Unde pui `cout << endl;` într-un desen cu două bucle și de ce?  
+- Cum faci din dreptunghi un triunghi?  
+- Câte spații și câte steluțe are rândul 3 al unei piramide cu `n = 5`?  
+- La ce folosește `(i + j) % 2` într-o tablă de joc?  
 
 ---
 
 ## Temă
-1. Refă **Exemplele 1–16** pe calculatorul tău.  
-2. Desenează un **brad de Crăciun**: o piramidă de 5 rânduri, urmată de un trunchi format din 2 rânduri cu câte un `|` la mijloc.  
-3. Afișează **tabla înmulțirii** de la 1 la 10 cu antet pentru rânduri și coloane, aliniată corect (ca în Exemplul 11).  
-4. Citește un număr `n` și afișează un triunghi în care pe rândul `i` apar numerele de la `i` până la `1`, în ordine descrescătoare (de exemplu pentru `n = 4`: `1`, `21`, `321`, `4321`).  
-5. **Bonus:** afișează toate numerele prime până la 200, câte 10 pe rând.  
-6. Salvează tot ca `Tema_M2L5_Prenume_Nume.cpp`.
+1. Refă **Exemplele 1–6** pe calculatorul tău și testează fiecare cu cel puțin două înălțimi.  
+2. Scrie un program care desenează un triunghi de numere: `1`, `12`, `123` și așa mai departe.  
+3. Scrie un program care desenează un dreptunghi gol, doar cu marginea din `*`.  
+4. Scrie un program care afișează rândurile `1`, `22`, `333`, `4444`, `55555`.  
+5. Salvează tot ca `Tema_M2L5_Prenume_Nume.cpp`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le de mână, rulează-le și schimbă-le după preferințe.
+
+**Acasă 1 — Triunghi de numere**
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Inaltime: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            cout << j;
+        }
+        cout << endl;
+    }
+    return 0;
+}
+```
+Pentru `4`, programul afișează `1`, `12`, `123`, `1234`, fiecare pe rândul lui.
+
+**Acasă 2 — Dreptunghi gol**
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int randuri, coloane;
+    cout << "Randuri: ";
+    cin >> randuri;
+    cout << "Coloane: ";
+    cin >> coloane;
+
+    for (int i = 1; i <= randuri; i++) {
+        for (int j = 1; j <= coloane; j++) {
+            if (i == 1 || i == randuri || j == 1 || j == coloane) {
+                cout << "*";
+            } else {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+    return 0;
+}
+```
+Pentru `4` rânduri și `6` coloane, se desenează doar marginea: prima și ultima linie și prima și ultima coloană.
+
+**Acasă 3 — Rânduri de cifre identice**
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 5; i++) {
+        for (int j = 1; j <= i; j++) {
+            cout << i;
+        }
+        cout << endl;
+    }
+    return 0;
+}
+```
+Rezultatul este `1`, `22`, `333`, `4444`, `55555`. Rândul `i` conține cifra `i` repetată de `i` ori.
 
 ---
 
 ## Ce urmează — Lecția 6
-Facem cunoștință cu **vectorii**: un șir de variabile de același tip, ținute sub un singur nume, cu care poți păstra toate notele unei clase.
+Trecem la **vectori**: o listă de valori sub un singur nume. Facem **Cutia cu piese**, în care citim și afișăm greutatea mai multor piese.

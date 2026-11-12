@@ -1,21 +1,27 @@
-Lecția șapte din Modulul doi. Calcule cu vectori: sumă, medie, minim și maxim.
+Lecția șapte din Modulul doi. Stația meteo. Calcule cu vectori: sumă, medie, minim, maxim și numărare.
 
-Astăzi parcurgi un vector și afli lucruri despre el: suma, media, cel mai mic și cel mai mare element, câte elemente respectă o regulă și unde se află. Exact ce face un catalog sau o aplicație de statistici. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L șapte.
+Astăzi vectorul devine sursă de date. Citești temperaturile mai multor zile și afli media, cea mai rece și cea mai caldă zi și câte zile au fost calde. La final construiești o mică stație meteo. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L șapte.
 
-Obiectivul. Minim: suma, media, minimul și maximul unui vector de note. Complet: minim, plus numărarea notelor peste medie și un raport cu numele elevului cu cea mai mare notă.
+Instrucțiuni noi azi. Maxim egal t de zero pornește maximul de la primul element. Un if compară fiecare element cu maximul și îl înlocuiește când găsește ceva mai mare. Dublu între paranteze, urmat de suma, împărțită la n, face media cu zecimale. Iar zi max egal i reține poziția maximului, nu doar valoarea.
 
-Primul pas. Suma și media. Pornești de la zero și aduni fiecare element, într-un for. Media este suma împărțită la n, numărul real de elemente, cu double în fața sumei, ca să nu pierzi zecimalele.
+Exemplul unu. Suma și media. Prima buclă citește temperaturile, a doua le adună într-un acumulator, ca în lecția doi. Pentru medie împarți suma la numărul de zile. Ca rezultatul să aibă zecimale, scrii dublu între paranteze înaintea sumei. Fără asta, o sută cincizeci și unu împărțit la șapte ar da doar douăzeci și unu. Încearcă tu: rulează cu temperaturile tale pe cinci zile, încearcă temperaturi negative și verifică suma cu calculatorul.
 
-Al doilea pas. Maximul și minimul. Pornești de la primul element al vectorului, nu de la zero, și parcurgi restul. Când găsești un element mai bun, îl înlocuiești. Dacă vrei și poziția maximului, păstrezi indicele. Atenție: indicele nu este valoarea. Valoarea se află scriind vectorul cu acel indice între paranteze pătrate.
+Exemplul doi. Maximul. Ideea este ca la un concurs: cine e cel mai înalt. Începi cu primul și îl numești cel mai înalt de până acum. Apoi compari pe rând cu ceilalți: dacă găsești unul mai înalt, el devine campionul. Pornește maximul de la primul element al vectorului, nu de la zero, pentru că dacă toate temperaturile sunt negative, un maxim pornit de la zero ar rămâne zero, care nu e în vector. Încearcă tu: rulează cu alte șapte temperaturi, fă un tabel pe foaie pentru cinci, nouă, doi, opt, trei și caută temperatura cea mai mică, schimbând semnul de comparare.
 
-Al treilea pas. Numărări cu condiție. Numeri câte elemente sunt pare, câte note sunt de promovare sau suma doar a elementelor care respectă o regulă. Un contor crește în interiorul unui if.
+Exemplul trei. Minim, maxim și diferența. O singură buclă poate căuta și minimul, și maximul: la fiecare element faci două comparații. Diferența dintre ele arată cât s-a schimbat vremea în perioada respectivă. Încearcă tu: rulează cu alte valori, citește temperaturile de la tastatură și gândește-te ce se întâmplă dacă toate temperaturile sunt egale.
 
-Al patrulea pas. Două parcurgeri. Uneori ai nevoie de două parcurgeri: prima calculează media, a doua numără câte note sunt peste medie. Nu poți număra peste medie înainte să știi media. Poți afla și cele două note extreme și diferența dintre ele.
+Exemplul patru. Numărăm zilele care îndeplinesc o condiție. Este contorul din lecția doi, dar acum treci prin elementele vectorului. Zilele calde sunt cele cu douăzeci și cinci, treizeci și unu și douăzeci și opt, deci trei. Poți folosi doi contori în aceeași buclă. Încearcă tu: schimbă limita zilelor calde, numără zilele dintre douăzeci și treizeci de grade, folosind și, și numără zilele cu temperatură pară.
 
-Al cincilea pas. Proiecte. Histograma notelor, elevul cu cea mai mare notă, cu doi vectori paraleli, unul pentru nume și unul pentru note, legați prin același indice. Mini-proiectul este Statistica clasei.
+Exemplul cinci. Ziua cea mai caldă: reținem poziția. Pe lângă valoarea maximă, reții și poziția ei. Poziția este indicele, care începe de la zero, iar ziua este indicele plus unu, pentru că oamenii numără zilele de la unu. De fiecare dată când găsești un maxim nou, schimbi ambele variabile. Încearcă tu: afișează și cea mai rece zi, verifică dacă ziua patru este într-adevăr cea cu treizeci și unu de grade și gândește-te ce se întâmplă dacă două zile au aceeași temperatură maximă.
 
-Greșeli frecvente. Suma are o valoare uriașă, pentru că suma nu a pornit de la zero. Media apare întreagă, pentru că ai împărțit două numere întregi. Maximul este greșit la numere negative, pentru că ai pornit de la zero. Ai pus semnul mai mic în loc de mai mare. Ai împărțit media la un număr scris de mână, în loc de n. Ai afișat poziția în loc de valoare.
+Exemplul șase. Stația meteo, proiectul orei. O singură buclă calculează patru lucruri deodată: suma, minimul cu ziua lui, maximul cu ziua lui și numărul de zile calde. Bucla de citire este separată, pentru că întâi trebuie să ai toate datele. Do-while verifică numărul de zile, ca să nu depășim vectorul de treizeci și unu de locuri. Încearcă tu: rulează cu șapte, apoi cu zece temperaturi, schimbă limita zilelor calde și adaugă un mesaj dacă media depășește douăzeci de grade.
 
-Tema. Citești zece numere și afișezi suma, media, minimul, maximul și cât depășește maximul media. Citești opt prețuri și numeri câte sunt sub douăzeci de lei, câte între douăzeci și cincizeci și câte peste cincizeci. Salvezi ca Tema, linie jos, M doi, L șapte.
+De făcut azi. Stația meteo. Minim: un program care citește temperaturile pe n zile într-un vector și afișează media și temperatura maximă. Complet: minim, plus minimul, zilele minimului și maximului, numărul de zile calde, diferența dintre maxim și minim și verificarea lui n.
 
-Recapitulare. Suma pornește de la zero. Maximul și minimul pornesc de la primul element. Media se împarte la n. Succes!
+Bonus, trei stele. Valul de căldură. Doar dacă ai terminat varianta completă. Găsești cea mai lungă serie de zile calde consecutive, adică zile una după alta cu cel puțin douăzeci și cinci de grade. Folosești un contor pentru seria curentă și o variabilă pentru cea mai lungă serie. Când ziua este caldă, mărești seria curentă, altfel o pui pe zero. Testezi și cu un vector fără nicio zi caldă și cu unul în care toate zilele sunt calde.
+
+Greșeli frecvente. Maximul iese zero la temperaturi negative, pentru că ai pornit maximul de la zero. Media iese fără zecimale, pentru că ai împărțit două numere întregi. Se afișează ziua zero, pentru că ai afișat indicele, nu ziua. Se afișează valoarea, nu ziua, pentru că ai uitat să reții poziția. Suma este un număr ciudat, pentru că acumulatorul nu a pornit de la zero. Rezultatele sunt greșite la n mare, pentru că ai citit mai multe zile decât are vectorul.
+
+Tema. Refaci exemplele din lecție și le testezi cu cel puțin două seturi de date. Citești opt numere și afișezi câte sunt peste medie. Găsești cea mai mare creștere de temperatură de la o zi la alta. Afișezi de câte ori apare valoarea maximă. Salvezi ca Tema, linie jos, M doi, L șapte. Găsești în lecție și exemple pentru acasă.
+
+Recapitulare. Suma unui vector este un acumulator pornit de la zero. Media se calculează cu conversie la dublu, pentru zecimale. Maximul pornește de la primul element și se înlocuiește când găsești ceva mai mare. La minim, comparația este inversă. Poziția se reține cu i, iar ziua este i plus unu. O singură buclă poate calcula mai multe lucruri. Succes!

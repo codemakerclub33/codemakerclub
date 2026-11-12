@@ -11,7 +11,7 @@ export const descriereModulParinte: Record<string, string> = {
 
   // C++
   m1: 'Copilul învață bazele programării în C++: cum păstrează programul informații, cum face calcule și cum ia decizii. Modulul se termină cu un mini-proiect în care folosește tot ce a învățat.',
-  m2: 'Copilul învață să repete o acțiune de multe ori fără să o scrie de fiecare dată și să lucreze cu liste de numere: le parcurge, caută în ele și le sortează. Modulul se încheie cu un catalog de note făcut chiar de el.',
+  m2: 'Copilul învață să repete o acțiune de multe ori fără să o scrie de fiecare dată și să lucreze cu liste de numere: le parcurge, caută în ele și le sortează. Modulul se încheie cu o arcadă de jocuri cu meniu, făcută chiar de el.',
   m14: 'Copilul învață să împartă programul în bucăți mici cu nume (funcții), să lucreze cu text și să rezolve probleme cu numere, de la cifre și divizori până la numere prime. Învață și să caute și să repare greșelile din cod.',
   m15: 'Copilul învață să salveze date în fișiere, să grupeze informații despre obiecte și să facă meniuri. Apoi alege și construiește un proiect propriu: un joc, un magazin sau un quiz, pe care îl prezintă la final.',
   m34: 'Copilul construiește pas cu pas un joc de aventură în consolă, cu hartă, camere, obiecte, monștri, magazin și misiuni. Jocul se poate salva și reîncărca, iar la final copilul îl prezintă.',

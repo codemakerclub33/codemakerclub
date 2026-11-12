@@ -1,19 +1,17 @@
-# LECȚIA 6 — Vectori: mai multe valori sub un singur nume
+# LECȚIA 6 — Cutia cu piese
+### Vectori: mai multe valori sub un singur nume
 **Modulul 2 · Bucle și vectori · 2 ore**  
 **Code Maker Club · Loop Master**
 
-> Azi înveți să păstrezi **mai multe valori de același tip** într-o singură „cutie cu sertare”: un vector (în limbajul C++ clasic, un *array*). Îl citești, îl afișezi și îl modifici cu ajutorul buclelor `for`.  
-> Proiect: **„Notele mele”** · fișier: `Prenume_Nume_M2L6.cpp` (ex. `Ana_Pop_M2L6.cpp`)
+> Azi înveți să ții mai multe valori în **același loc**, ca într-o cutie cu sertare numerotate. Citești greutatea mai multor piese, le afișezi, le afișezi invers și schimbi una dintre ele.  
+> Fișier: `Prenume_Nume_M2L6.cpp`
 
 ---
 
-## Obiectiv
-La finalul orei declari un vector, îi dai valori, îl citești de la tastatură, îl afișezi cu `for`, folosești corect indicii (de la `0`) și eviți ieșirea din vector.  
-**Minim:** un vector de 5 numere, citit și afișat.  
-**Ținta orei (Complet):** + modificarea elementelor și afișarea lor în ordine inversă, cu indicii verificați.
+## Ce facem azi
+La final declari un vector, știi că primul element are indicele `0`, citești și afișezi un vector cu `for`, îl parcurgi și invers, schimbi un element și ai grijă să nu ieși din limitele lui.
 
-## De ce contează
-Imaginează-ți că vrei să păstrezi notele a 30 de elevi. Să creezi 30 de variabile (`nota1`, `nota2`, …, `nota30`) ar fi imposibil de folosit. Un vector rezolvă problema: **o singură denumire, 30 de „sertare”**, iar bucla `for` trece prin ele.
+Până acum, fiecare valoare avea variabila ei. Pentru 5 piese ai fi scris 5 variabile, pentru 100 de piese, 100. Un **vector** (numit și **tablou**) rezolvă problema: ai **un singur nume** și mai multe valori, fiecare cu **numărul ei de ordine**. Iar cu bucla `for`, pe care o știi deja, treci prin toate valorile cu trei rânduri.
 
 ---
 
@@ -21,586 +19,214 @@ Imaginează-ți că vrei să păstrezi notele a 30 de elevi. Să creezi 30 de va
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recapitulare: `for` și bucle imbricate |
-| 10–30 | Ce este un vector și cum se declară (**Exemplele 1–4**) |
-| 30–55 | Citire și afișare cu `for` (**Exemplele 5–8**) |
-| 55–80 | Modificarea elementelor, tipuri diferite (**Exemplele 9–12**) |
-| 80–100 | Capacitate și număr real de elemente, siguranța indicilor (**Exemplele 13–14**) |
-| 100–118 | Proiecte (**Exemplele 15–17**) |
-| 118–120 | Recap și temă |
-
-> **Pentru ritm lent sau începători:** în clasă faceți mai întâi cele **8 exemple marcate [Esențial]** (inclusiv proiectul sau exemplul final, acolo unde e cazul). Ele acoperă tot ce trebuie să rămână după lecție. Restul exemplelor sunt pentru cine merge repede sau pentru acasă.
+| 0–15 | Recapitulare L5: bucle imbricate |
+| 15–35 | De ce vectori și cum îi declarăm (**Exemplele 1–2**) |
+| 35–60 | Citim și afișăm cu `for` (**Exemplul 3**) |
+| 60–80 | Schimbăm elemente, `n` piese dintr-un vector mai mare (**Exemplul 4**) |
+| 80–90 | Parcurgere inversă și limitele vectorului (**Exemplul 5**) |
+| 90–115 | Proiectul: Cutia cu piese + Provocarea (**Exemplul 6**) |
+| 115–120 | Recap și temă |
 
 ---
 
-## 1. Ce este un vector
+## Instrucțiuni noi azi
 
-Un vector este un șir de variabile **de același tip**, așezate unele lângă altele în memorie și numerotate. Numărul fiecărui „sertar” se numește **indice** (sau poziție).
-
-```
-Declarare:   tip nume[dimensiune];
-
-int nota[5];    // 5 sertare de tip int: nota[0], nota[1], nota[2], nota[3], nota[4]
-```
-
-**Foarte important:** numerotarea începe de la **0**. Un vector cu 5 elemente are indicii `0, 1, 2, 3, 4`. Ultimul indice este `dimensiune - 1`, nu `dimensiune`.
-
-```
-  indice:    0     1     2     3     4
-           +-----+-----+-----+-----+-----+
-  nota:    |  9  |  7  | 10  |  8  |  6  |
-           +-----+-----+-----+-----+-----+
-```
-
-Accesezi un element cu paranteze drepte: `nota[2]` este elementul de pe poziția 2 (al **treilea**, pentru că numărăm de la 0).
-
-### Exemplul 1 — De ce nu merg variabilele separate
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int nota1 = 9;
-    int nota2 = 7;
-    int nota3 = 10;
-
-    cout << nota1 << " " << nota2 << " " << nota3 << endl;
-    cout << "Suma: " << nota1 + nota2 + nota3 << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-9 7 10
-Suma: 26
-```
-
-Pentru 3 note merge. Pentru 30 ar trebui 30 de variabile și 30 de adunări scrise de mână. De aceea avem vectori.
-
-### Exemplul 2 — Primul vector **[Esențial]**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int nota[3];
-
-    nota[0] = 9;
-    nota[1] = 7;
-    nota[2] = 10;
-
-    cout << "Prima nota: " << nota[0] << endl;
-    cout << "A doua nota: " << nota[1] << endl;
-    cout << "A treia nota: " << nota[2] << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Prima nota: 9
-A doua nota: 7
-A treia nota: 10
-```
-
-Atribuim valori fiecărui sertar în parte și le citim la fel. Observă: prima notă este `nota[0]`, nu `nota[1]`.
-
-### Exemplul 3 — Valori date de la început **[Esențial]**
-
-Dacă știi valorile dinainte, le scrii între acolade, la declarare:
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int nota[5] = {9, 7, 10, 8, 6};
-
-    for (int i = 0; i < 5; i++) {
-        cout << "nota[" << i << "] = " << nota[i] << endl;
-    }
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-nota[0] = 9
-nota[1] = 7
-nota[2] = 10
-nota[3] = 8
-nota[4] = 6
-```
-
-Bucla `for` merge de la `0` până la `i < 5`, deci `i` ia valorile 0, 1, 2, 3, 4, exact indicii vectorului. Aceasta este bucla standard pentru parcurgerea unui vector. Reține această buclă!
-
-### Exemplul 4 — Dimensiunea dintr-o constantă
-
-În loc să scrii `5` în mai multe locuri, folosești o constantă:
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    const int N = 5;
-    int v[N] = {10, 20, 30, 40, 50};
-
-    cout << "Primul element: " << v[0] << endl;
-    cout << "Ultimul element: " << v[N - 1] << endl;
-    cout << "Numar de elemente: " << N << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Primul element: 10
-Ultimul element: 50
-Numar de elemente: 5
-```
-
-Ultimul element se află la `v[N - 1]`. Dacă schimbi `N`, tot programul se adaptează.
-
-**Încearcă tu (8 min)**  
-- [ ] Declari un vector cu 6 numere și le afișezi cu `for`  
-- [ ] Afișezi doar primul și ultimul element  
-- [ ] Schimbi dimensiunea și vezi că se adaptează  
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `int g[5];` | Creează un vector cu 5 locuri, fără valori | `int g[5];` |
+| `int g[5] = {25, 40, 15, 60, 30};` | Creează vectorul și îi dă valori | `g[0]` este `25` |
+| `g[i]` | Elementul de pe poziția `i` (numărătoarea începe de la `0`) | `g[2]` este al treilea element |
+| `g[i] = x;` | Schimbă elementul de pe poziția `i` | `g[1] = 99;` |
 
 ---
 
-## 2. Citire și afișare
+## Pas cu pas
 
-### Exemplul 5 — Citim 5 numere și le afișăm **[Esențial]**
+### Exemplul 1 — Fără vector și cu vector
 
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    const int N = 5;
-    int v[N];
-
-    for (int i = 0; i < N; i++) {
-        cout << "v[" << i << "] = ";
-        cin >> v[i];
-    }
-
-    cout << "Ai introdus: ";
-    for (int i = 0; i < N; i++) {
-        cout << v[i] << " ";
-    }
-    cout << endl;
-    return 0;
-}
-```
-
-**Rulare** (tastezi `4 8 15 16 23`):
-```
-v[0] = 4
-v[1] = 8
-v[2] = 15
-v[3] = 16
-v[4] = 23
-Ai introdus: 4 8 15 16 23 
-```
-
-Primul `for` **citește** în vector, al doilea `for` îl **afișează**. Folosim doi `for` separați: nu poți afișa ceva ce nu a fost încă citit complet.
-
-### Exemplul 6 — Afișare în ordine inversă **[Esențial]**
+Cinci piese, cinci variabile:
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int v[6] = {3, 6, 9, 12, 15, 18};
+    int g0 = 25, g1 = 40, g2 = 15, g3 = 60, g4 = 30;
 
-    for (int i = 5; i >= 0; i--) {
-        cout << v[i] << " ";
-    }
-    cout << endl;
+    cout << "Piesa 1: " << g0 << " g" << endl;
+    cout << "Piesa 2: " << g1 << " g" << endl;
+    cout << "Piesa 3: " << g2 << " g" << endl;
+    cout << "Piesa 4: " << g3 << " g" << endl;
+    cout << "Piesa 5: " << g4 << " g" << endl;
     return 0;
 }
 ```
 
 **Ieșire:**
 ```
-18 15 12 9 6 3 
+Piesa 1: 25 g
+Piesa 2: 40 g
+Piesa 3: 15 g
+Piesa 4: 60 g
+Piesa 5: 30 g
 ```
 
-Bucla numără invers, de la ultimul indice (`5`) până la `0`. Întotdeauna ultimul indice este `dimensiunea - 1`.
+Funcționează, dar nu putem folosi o buclă: fiecare variabilă are alt nume. Cu 100 de piese, programul ar avea sute de linii. Un **vector** pune toate valorile sub același nume:
 
-### Exemplul 7 — Afișare numerotată („Elevul 1, 2…”) **[Esențial]**
+```cpp
+int g[5] = {25, 40, 15, 60, 30};
+```
+
+Acum `g` este o „cutie” cu 5 sertare. Sertarul de la poziția `0` conține `25`, cel de la poziția `1` conține `40` și așa mai departe.
+
+**Încearcă tu (5 min)**  
+- [ ] Rulezi programul cu cinci variabile  
+- [ ] Schimbi o greutate și rulezi din nou  
+- [ ] Spui pe foaie de ce nu putem folosi un `for` cu variabilele `g0`, `g1`, `g2`  
+
+### Exemplul 2 — Indicii încep de la 0
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int nota[4] = {10, 8, 9, 7};
+    int g[5] = {25, 40, 15, 60, 30};
 
-    for (int i = 0; i < 4; i++) {
-        cout << "Elevul " << i + 1 << ": nota " << nota[i] << endl;
-    }
+    cout << "Prima piesa: " << g[0] << " g" << endl;
+    cout << "A treia piesa: " << g[2] << " g" << endl;
+    cout << "Ultima piesa: " << g[4] << " g" << endl;
     return 0;
 }
 ```
 
 **Ieșire:**
 ```
-Elevul 1: nota 10
-Elevul 2: nota 8
-Elevul 3: nota 9
-Elevul 4: nota 7
+Prima piesa: 25 g
+A treia piesa: 15 g
+Ultima piesa: 30 g
 ```
 
-Oamenii numără de la 1, iar vectorul de la 0. Când afișezi pentru utilizator, folosești `i + 1`.
+Numărul din paranteze pătrate se numește **indice** sau **poziție**. **Numărătoarea începe de la `0`**, deci un vector cu 5 elemente are indicii `0, 1, 2, 3, 4`:
 
-### Exemplul 8 — Elementele de pe poziții pare
+| Indice | 0 | 1 | 2 | 3 | 4 |
+|--------|---|---|---|---|---|
+| Valoare | 25 | 40 | 15 | 60 | 30 |
 
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int v[8] = {5, 10, 15, 20, 25, 30, 35, 40};
-
-    cout << "Pozitiile 0, 2, 4, 6: ";
-    for (int i = 0; i < 8; i += 2) {
-        cout << v[i] << " ";
-    }
-    cout << endl;
-
-    cout << "Pozitiile 1, 3, 5, 7: ";
-    for (int i = 1; i < 8; i += 2) {
-        cout << v[i] << " ";
-    }
-    cout << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Pozitiile 0, 2, 4, 6: 5 15 25 35 
-Pozitiile 1, 3, 5, 7: 10 20 30 40 
-```
-
-Cu pasul `i += 2` sari din două în două poziții. Începi de la `0` pentru pozițiile pare sau de la `1` pentru cele impare.
+Ultimul element are indicele `4`, adică **dimensiunea minus 1**. La un vector cu 5 locuri nu există `g[5]`.
 
 **Încearcă tu (10 min)**  
-- [ ] Citești 6 numere și le afișezi invers  
-- [ ] Afișezi doar elementele de pe poziții impare  
-- [ ] Afișezi fiecare element pe un rând nou, numerotat de la 1  
+- [ ] Afișezi elementul de pe poziția `1` și pe cel de pe poziția `3`  
+- [ ] Prevezi ce afișează `g[0] + g[4]`, apoi verifici  
+- [ ] Faci tabelul indicilor pe foaie pentru un vector cu 7 valori  
 
----
-
-## 3. Modificarea elementelor și alte tipuri
-
-### Exemplul 9 — Modificăm valorile din vector **[Esențial]**
+### Exemplul 3 — Citim și afișăm cu `for`
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int nota[5] = {6, 7, 8, 9, 10};
-
-    nota[0] = 7;
-    nota[4] = nota[4] - 1;
+    int g[5];
 
     for (int i = 0; i < 5; i++) {
-        cout << nota[i] << " ";
+        cout << "Greutatea piesei " << i + 1 << ": ";
+        cin >> g[i];
     }
-    cout << endl;
+
+    cout << "In cutie sunt:" << endl;
+    for (int i = 0; i < 5; i++) {
+        cout << "Piesa " << i + 1 << ": " << g[i] << " g" << endl;
+    }
     return 0;
 }
 ```
 
-**Ieșire:**
+**Rulare:**
 ```
-7 7 8 9 9 
+Greutatea piesei 1: 25
+Greutatea piesei 2: 40
+Greutatea piesei 3: 15
+Greutatea piesei 4: 60
+Greutatea piesei 5: 30
+In cutie sunt:
+Piesa 1: 25 g
+Piesa 2: 40 g
+Piesa 3: 15 g
+Piesa 4: 60 g
+Piesa 5: 30 g
 ```
 
-Un element de vector se comportă ca o variabilă obișnuită: îi poți atribui valori și îl poți folosi în calcule.
+Tiparul `for (int i = 0; i < 5; i++)` este cel mai folosit la vectori: contorul pornește de la `0` și merge **până la dimensiune, fără ea** (`<`, nu `<=`). Variabila `i` este chiar indicele. Pentru afișare scriem `i + 1`, ca piesele să fie numerotate de la 1, așa cum numără oamenii.
 
-### Exemplul 10 — Mărim toate elementele
+**Încearcă tu (10 min)**  
+- [ ] Rulezi programul cu greutățile tale  
+- [ ] Schimbi vectorul la 8 piese (atenție la `5` din ambele bucle și din declarare)  
+- [ ] Afișezi greutățile pe un singur rând, despărțite prin spațiu  
+
+### Exemplul 4 — Schimbăm un element și folosim doar o parte din vector
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int puncte[5] = {10, 20, 30, 40, 50};
-
-    cout << "Inainte: ";
-    for (int i = 0; i < 5; i++) {
-        cout << puncte[i] << " ";
-    }
-    cout << endl;
-
-    for (int i = 0; i < 5; i++) {
-        puncte[i] += 5;
-    }
-
-    cout << "Dupa bonus: ";
-    for (int i = 0; i < 5; i++) {
-        cout << puncte[i] << " ";
-    }
-    cout << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Inainte: 10 20 30 40 50 
-Dupa bonus: 15 25 35 45 55 
-```
-
-Un `for` poate modifica toate elementele cu o singură linie. Ar fi nevoie de 5 linii separate fără vectori.
-
-### Exemplul 11 — Alte tipuri: `double`, `char` și `string`
-
-```cpp
-#include <iostream>
-#include <string>
-using namespace std;
-
-int main() {
-    double temp[4] = {21.5, 23.0, 19.8, 25.2};
-    char litere[3] = {'C', '+', '+'};
-    string zile[3] = {"Luni", "Marti", "Miercuri"};
-
-    for (int i = 0; i < 4; i++) {
-        cout << "Temperatura " << i + 1 << ": " << temp[i] << endl;
-    }
-
-    for (int i = 0; i < 3; i++) {
-        cout << litere[i];
-    }
-    cout << endl;
-
-    for (int i = 0; i < 3; i++) {
-        cout << zile[i] << " ";
-    }
-    cout << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Temperatura 1: 21.5
-Temperatura 2: 23
-Temperatura 3: 19.8
-Temperatura 4: 25.2
-C++
-Luni Marti Miercuri 
-```
-
-Un vector poate avea orice tip: `int`, `double`, `char`, `string`. Toate elementele aceluiași vector trebuie să aibă **același** tip.
-
-### Exemplul 12 — Un vector umplut cu formule
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    const int N = 8;
-    int patrat[N];
-    long long fib[N];
-
-    for (int i = 0; i < N; i++) {
-        patrat[i] = (i + 1) * (i + 1);
-    }
-
-    fib[0] = 1;
-    fib[1] = 1;
-    for (int i = 2; i < N; i++) {
-        fib[i] = fib[i - 1] + fib[i - 2];
-    }
-
-    cout << "Patrate: ";
-    for (int i = 0; i < N; i++) {
-        cout << patrat[i] << " ";
-    }
-    cout << endl;
-
-    cout << "Fibonacci: ";
-    for (int i = 0; i < N; i++) {
-        cout << fib[i] << " ";
-    }
-    cout << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Patrate: 1 4 9 16 25 36 49 64 
-Fibonacci: 1 1 2 3 5 8 13 21 
-```
-
-Valorile pot fi calculate. În șirul lui Fibonacci, fiecare element este suma celor două dinaintea lui: `fib[i - 1] + fib[i - 2]`. Un vector îți permite să te uiți „înapoi” la elementele deja calculate.
-
----
-
-## 4. Capacitate, număr real de elemente și indici siguri
-
-### Exemplul 13 — Vector mare, folosim doar o parte
-
-De multe ori nu știi dinainte câte valori vor fi. Declari un vector cu **capacitate** mare și ții minte într-o variabilă câte elemente ai folosit.
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int v[100];
+    int g[100];
     int n;
-
-    cout << "Cate numere (maxim 100)? ";
+    cout << "Cate piese? ";
     cin >> n;
 
-    if (n < 1 || n > 100) {
-        cout << "Numar invalid." << endl;
-        return 0;
+    for (int i = 0; i < n; i++) {
+        cin >> g[i];
     }
+
+    g[1] = 99;
 
     for (int i = 0; i < n; i++) {
-        cout << "v[" << i << "] = ";
-        cin >> v[i];
-    }
-
-    cout << "Numerele in ordine inversa: ";
-    for (int i = n - 1; i >= 0; i--) {
-        cout << v[i] << " ";
+        cout << g[i] << " ";
     }
     cout << endl;
     return 0;
 }
 ```
 
-**Rulare** (tastezi `4`, apoi `10 20 30 40`):
+**Rulare:**
 ```
-Cate numere (maxim 100)? 4
-v[0] = 10
-v[1] = 20
-v[2] = 30
-v[3] = 40
-Numerele in ordine inversa: 40 30 20 10 
+Cate piese? 4
+10 20 30 40
+10 99 30 40 
 ```
 
-Vectorul are 100 de locuri, dar folosim doar primele `n`. Verificăm `n` înainte de a citi, ca să nu depășim capacitatea.
+Două lucruri noi aici:
+- `g[1] = 99;` **schimbă** elementul de pe poziția `1` (a doua piesă): `20` a devenit `99`.  
+- `int g[100];` rezervă loc pentru **cel mult** 100 de piese, dar noi folosim doar primele `n`, numărul citit. Așa programul funcționează pentru orice `n` până la 100, și bucla merge până la `n`, nu până la 100.
 
-### Exemplul 14 — Nu ieși din vector! **[Esențial]**
-
-Cu un vector de 5 elemente, indicii valizi sunt `0–4`. Dacă folosești `v[5]` sau `v[-1]`, ajungi în memorie care **nu îți aparține**. C++ nu te oprește: programul poate afișa valori ciudate, se poate bloca sau poate părea că merge (ceea ce e și mai periculos).
-
-Soluția: verifici indicele înainte să folosești indicele.
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int v[5] = {11, 22, 33, 44, 55};
-    int poz;
-
-    cout << "Ce pozitie vrei sa vezi (0-4)? ";
-    cin >> poz;
-
-    if (poz >= 0 && poz < 5) {
-        cout << "v[" << poz << "] = " << v[poz] << endl;
-    } else {
-        cout << "Pozitie invalida! Indicii sunt intre 0 si 4." << endl;
-    }
-    return 0;
-}
-```
-
-**Rulare** (tastezi `2`):
-```
-Ce pozitie vrei sa vezi (0-4)? 2
-v[2] = 33
-```
-
-**Rulare** (tastezi `7`):
-```
-Ce pozitie vrei sa vezi (0-4)? 7
-Pozitie invalida! Indicii sunt intre 0 si 4.
-```
-
-Regula: pentru un vector cu `n` elemente, indicele este valid doar dacă `0 <= indice < n`. Aceasta este una dintre cele mai frecvente surse de erori la programatori, inclusiv la cei experimentați.
+> **Atenție:** dacă `n` este mai mare decât dimensiunea vectorului (de exemplu 150 la un vector de 100), programul scrie în afara vectorului. Rezultatul este imprevizibil: valori ciudate sau oprirea programului. De aceea verificăm `n` înainte.
 
 **Încearcă tu (10 min)**  
-- [ ] Citești `n` și apoi `n` numere, cu `n` verificat  
-- [ ] Ceri utilizatorului o poziție și afișezi elementul doar dacă poziția e validă  
-- [ ] Umpli un vector cu primele 10 numere pare  
+- [ ] Rulezi cu `n = 4`, apoi cu `n = 8`  
+- [ ] Schimbi elementul de pe poziția `0`, apoi pe cel de pe ultima poziție  
+- [ ] Dublezi valoarea unui element: `g[2] = g[2] * 2;`  
 
----
-
-## 5. Proiecte
-
-### Exemplul 15 — Ziua săptămânii după număr
-
-```cpp
-#include <iostream>
-#include <string>
-using namespace std;
-
-int main() {
-    string zile[7] = {"Luni", "Marti", "Miercuri", "Joi", "Vineri", "Sambata", "Duminica"};
-    int nr;
-
-    cout << "Numarul zilei (1-7): ";
-    cin >> nr;
-
-    if (nr >= 1 && nr <= 7) {
-        cout << "Ziua " << nr << " este " << zile[nr - 1] << "." << endl;
-    } else {
-        cout << "Numar invalid." << endl;
-    }
-    return 0;
-}
-```
-
-**Rulare** (tastezi `4`):
-```
-Numarul zilei (1-7): 4
-Ziua 4 este Joi.
-```
-
-Utilizatorul numără de la 1, vectorul de la 0, deci folosim `zile[nr - 1]`. Un vector este foarte potrivit ca „tabel de căutare”: numărul ales îți dă direct răspunsul, fără `switch` cu șapte cazuri.
-
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
-
-### Exemplul 16 — Inversăm vectorul pe loc *(Provocare, opțional)*
-
-Interschimbăm primul element cu ultimul, al doilea cu penultimul etc. Pentru a schimba două valori avem nevoie de o variabilă ajutătoare.
+### Exemplul 5 — Parcurgem și invers
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    const int N = 6;
-    int v[N] = {1, 2, 3, 4, 5, 6};
+    int g[5] = {25, 40, 15, 60, 30};
+    int n = 5;
 
-    for (int i = 0; i < N / 2; i++) {
-        int aux = v[i];
-        v[i] = v[N - 1 - i];
-        v[N - 1 - i] = aux;
+    cout << "In ordine: ";
+    for (int i = 0; i < n; i++) {
+        cout << g[i] << " ";
     }
+    cout << endl;
 
-    for (int i = 0; i < N; i++) {
-        cout << v[i] << " ";
+    cout << "Invers: ";
+    for (int i = n - 1; i >= 0; i--) {
+        cout << g[i] << " ";
     }
     cout << endl;
     return 0;
@@ -609,113 +235,131 @@ int main() {
 
 **Ieșire:**
 ```
-6 5 4 3 2 1 
+In ordine: 25 40 15 60 30 
+Invers: 30 60 15 40 25 
 ```
 
-Bucla merge doar până la jumătate (`N / 2`); dacă ar merge până la capăt, ar „inversa” vectorul de două ori și ar ajunge din nou la forma inițială. Variabila `aux` păstrează temporar o valoare, ca să nu o pierzi când o suprascrii.
+Pentru a parcurge invers, începi de la **ultimul indice** (`n - 1`), mergi cât timp `i >= 0` și scazi `i--`. Este numărătoarea inversă din lecția 1, aplicată indicilor.
 
-### Exemplul 17 — „Notele mele” (mini-proiect) **[Esențial]**
+| Direcția | Start | Condiție | Pas |
+|----------|-------|----------|-----|
+| În ordine | `i = 0` | `i < n` | `i++` |
+| Invers | `i = n - 1` | `i >= 0` | `i--` |
+
+**Încearcă tu (10 min)**  
+- [ ] Afișezi doar piesele de pe pozițiile pare (`0`, `2`, `4`), cu `i += 2`  
+- [ ] Afișezi piesele invers, cu numărul lor (`Piesa 5: 30 g` primul)  
+- [ ] Afișezi doar prima și ultima piesă, fără buclă  
+
+### Exemplul 6 — Cutia cu piese (proiectul orei)
 
 ```cpp
-/*
-   Program: Notele mele
-   Scop:    citeste notele la 5 materii si le afiseaza
-            intr-un tabel, apoi mareste nota de la o materie
-*/
 #include <iostream>
-#include <string>
 using namespace std;
 
 int main() {
-    const int N = 5;
-    string materie[N] = {"Romana", "Matematica", "Engleza", "Informatica", "Sport"};
-    int nota[N];
+    int g[20];
+    int n;
 
-    for (int i = 0; i < N; i++) {
-        do {
-            cout << "Nota la " << materie[i] << " (1-10): ";
-            cin >> nota[i];
-        } while (nota[i] < 1 || nota[i] > 10);
+    do {
+        cout << "Cate piese (1-20)? ";
+        cin >> n;
+    } while (n < 1 || n > 20);
+
+    for (int i = 0; i < n; i++) {
+        cout << "Greutatea piesei " << i + 1 << " (grame): ";
+        cin >> g[i];
     }
 
-    cout << endl << "--- Catalog ---" << endl;
-    for (int i = 0; i < N; i++) {
-        cout << i + 1 << ". " << materie[i] << ": " << nota[i] << endl;
+    cout << endl << "=== CUTIA CU PIESE ===" << endl;
+    for (int i = 0; i < n; i++) {
+        cout << "Piesa " << i + 1 << ": " << g[i] << " g" << endl;
     }
 
-    int ales;
-    cout << endl << "Ce materie vrei sa corectezi (1-" << N << ")? ";
-    cin >> ales;
+    cout << endl << "Invers: ";
+    for (int i = n - 1; i >= 0; i--) {
+        cout << g[i] << " ";
+    }
+    cout << endl;
 
-    if (ales >= 1 && ales <= N) {
-        cout << "Noua nota la " << materie[ales - 1] << ": ";
-        cin >> nota[ales - 1];
-        cout << materie[ales - 1] << " are acum nota " << nota[ales - 1] << "." << endl;
+    int poz, nou;
+    cout << endl << "Ce piesa schimbi (1-" << n << ")? ";
+    cin >> poz;
+    if (poz >= 1 && poz <= n) {
+        cout << "Noua greutate: ";
+        cin >> nou;
+        g[poz - 1] = nou;
+        cout << "Piesa " << poz << " are acum " << g[poz - 1] << " g." << endl;
     } else {
-        cout << "Materie inexistenta." << endl;
+        cout << "Nu exista piesa " << poz << "." << endl;
     }
     return 0;
 }
 ```
 
-**Rulare** (tastezi `9 12 8 10 10 7`, apoi `3` și `9`):
+**Rulare:**
 ```
-Nota la Romana (1-10): 9
-Nota la Matematica (1-10): 12
-Nota la Matematica (1-10): 8
-Nota la Engleza (1-10): 10
-Nota la Informatica (1-10): 10
-Nota la Sport (1-10): 7
+Cate piese (1-20)? 4
+Greutatea piesei 1 (grame): 25
+Greutatea piesei 2 (grame): 40
+Greutatea piesei 3 (grame): 15
+Greutatea piesei 4 (grame): 60
 
---- Catalog ---
-1. Romana: 9
-2. Matematica: 8
-3. Engleza: 10
-4. Informatica: 10
-5. Sport: 7
+=== CUTIA CU PIESE ===
+Piesa 1: 25 g
+Piesa 2: 40 g
+Piesa 3: 15 g
+Piesa 4: 60 g
 
-Ce materie vrei sa corectezi (1-5)? 3
-Noua nota la Engleza: 9
-Engleza are acum nota 9.
+Invers: 60 15 40 25 
+
+Ce piesa schimbi (1-4)? 2
+Noua greutate: 99
+Piesa 2 are acum 99 g.
 ```
 
-Observă cum se combină tot ce ai învățat: doi vectori paraleli (`materie` și `nota`, cu aceleași indici), un `for` cu un `do-while` în interior pentru validare, afișare numerotată cu `i + 1` și verificarea indicelui înainte de modificare. La notele introduse, `12` a fost respins și valoarea a fost cerută din nou.
+Observă cum folosește programul tot ce știi:
+- `do-while` verifică `n`, ca să nu depășim vectorul;  
+- `for` cu `i` de la `0` citește și afișează;  
+- `i + 1` face numerotarea pentru oameni;  
+- la schimbare, omul spune piesa 2, iar programul folosește indicele `poz - 1`, adică `1`;  
+- un `if` verifică dacă piesa există înainte să scrie în vector.
+
+**Încearcă tu (15 min)**  
+- [ ] Rulezi programul cu `4` piese, apoi cu `7`  
+- [ ] Alegi o poziție care nu există și verifici mesajul  
+- [ ] Afișezi, cu un `if`, dacă prima piesă este mai grea decât a doua (`g[0]` și `g[1]`)  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Cutia cu piese”
 
-### Exercițiul A — „Notele mele” (obligatoriu)
-Scrie programul din Exemplul 17, dar cu materiile tale. Adaugă o a șasea materie.
-
-### Exercițiul B — Temperaturi
-Citește 7 temperaturi (una pe zi) într-un vector de `double` și afișează-le numerotate, cu numele zilei din vectorul `zile` (ca la Exemplul 15).
-
-### Exercițiul C — Vector cu formulă
-Umple un vector cu primii 10 multipli ai lui 3 (`3, 6, 9, …, 30`) și afișează vectorul.
-
-### Exercițiul D — Inversare
-Citește `n` numere (maxim 50) și afișează-le în ordine inversă, apoi inversează vectorul pe loc (ca la Exemplul 16) și afișează vectorul din nou, în ordine normală.
-
-### Exercițiul E — Prima și ultima
-Citește `n` numere și afișează: primul, ultimul, al doilea, penultimul. Dacă `n < 4`, afișează un mesaj de eroare.
+| | Ce trebuie să ai |
+|---|---|
+| **Minim** | Un program care citește `n` piese (cel mult 10) într-un vector și le afișează, numerotate |
+| **Complet** | Minim + verificarea lui `n`, afișarea în ordine inversă și schimbarea greutății unei piese alese de utilizator, cu verificarea poziției |
 
 **Gata când:**
 - [ ] Programul compilează fără erori  
-- [ ] Folosești un vector cu dimensiune dată printr-o constantă  
-- [ ] Citirea și afișarea se fac cu `for`  
-- [ ] Indicii pornesc de la `0` și nu depășesc `dimensiune - 1`  
-- [ ] Ai verificat indicele ales de utilizator  
-- [ ] Fișierul se numește `Prenume_Nume_M2L6.cpp`  
+- [ ] Declară un vector și citește valorile cu un `for`  
+- [ ] Afișează piesele numerotate de la 1  
+- [ ] (Complet) Verifică `n` înainte de citire  
+- [ ] (Complet) Afișează valorile și în ordine inversă  
+- [ ] (Complet) Schimbă o piesă aleasă, doar dacă poziția există  
+- [ ] Ai testat cu două seturi de piese diferite  
+- [ ] Fișierul se numește `Prenume_Nume_M2L6.cpp`
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Citește 10 numere și afișează separat cele de pe poziții pare și cele de pe poziții impare  
-- [ ] Umple un vector cu cifrele numărului `4721` (folosind `% 10` și `/ 10`) și afișează vectorul în ordine corectă  
-- [ ] Rotește vectorul cu o poziție la stânga: `{1,2,3,4,5}` devine `{2,3,4,5,1}`  
-- [ ] Interschimbă primul cu ultimul element, fără să parcurgi tot vectorul  
-- [ ] Citește un cuvânt (`string`) și afișează literele lui câte una pe rând, numerotate, folosind `cuvant[i]` și `cuvant.length()`  
+## Bonus ★★★ — Provocare: Rotirea cutiei
+*Doar dacă ai terminat Complet.*
+
+Mută toate piesele **o poziție la dreapta**, iar ultima piesă ajunge pe prima poziție. Pentru `25 40 15 60 30` rezultatul este `30 25 40 15 60`.
+
+- [ ] Păstrezi ultima valoare într-o variabilă, înainte de mutare  
+- [ ] Mută elementele cu un `for` care merge **de la sfârșit spre început**  
+- [ ] Pui valoarea păstrată pe poziția `0`  
+- [ ] Explici pe foaie de ce nu merge dacă bucla ar merge de la început spre sfârșit  
 
 ---
 
@@ -723,48 +367,115 @@ Citește `n` numere și afișează: primul, ultimul, al doilea, penultimul. Dac�
 
 | Ce vezi | Cauza | Corect |
 |---------|-------|--------|
-| Valori ciudate (de ex. `-1245367`) | Ai afișat elemente la care nu ai atribuit nimic | Inițializează vectorul sau citește valorile înainte |
-| Ultimul element nu se afișează | `i < N - 1` în loc de `i < N` | `for (i = 0; i < N; i++)` |
-| Programul se blochează sau afișează gunoi | Ai folosit `v[N]` (un indice în afara vectorului) | Ultimul indice este `N - 1` |
-| Prima notă „lipsește” | Ai început de la `1` în loc de `0` | `for (int i = 0; …)` |
-| `int v[n];` cu `n` citit de la tastatură | Dimensiunea trebuie să fie cunoscută la compilare | Folosești `const int N` sau o capacitate mare (ex. 100) |
-| Eroare `invalid types … for array subscript` | Ai pus un indice de tip `double` sau text | Indicele trebuie să fie `int` |
-| Ai copiat vectorul cu `b = a;` | Vectorii nu se copiază așa | Copiezi element cu element, într-un `for` |
-| Elemente cu tipuri amestecate | Un vector are un singur tip | Folosești vectori separați |
+| Prima valoare lipsește sau se afișează ciudat | Ai pornit de la `1` | Indicii încep de la `0` |
+| Ultima valoare se afișează cu o valoare ciudată | Ai scris `i <= n` | Folosește `i < n` |
+| Programul se oprește sau afișează numere ciudate | Ai citit sau scris dincolo de vector | Verifică `n` și rămâi între `0` și `n - 1` |
+| `g[5]` nu merge la un vector cu 5 elemente | Ultimul indice este `4` | Dimensiunea minus 1 |
+| Vectorul rămâne cu valori ciudate | Nu ai citit sau ai uitat valori | Citește toate valorile cu un `for` |
+| Se schimbă piesa greșită | Ai folosit `poz` în loc de `poz - 1` | Numărul omului minus 1 este indicele |
+| Eroare sau comportament ciudat la `int g[n];` | În C++ standard, dimensiunea trebuie să fie cunoscută la compilare | Declară `int g[100];` și folosește primele `n` |
 
 ---
 
 ## Recapitulare pe scurt
-
-- Un vector este un șir de variabile de același tip, sub un singur nume: `tip nume[N];`
-- Indicii sunt de la **0** la **N − 1**. Primul element este `v[0]`, ultimul `v[N - 1]`.
-- Parcurgerea standard: `for (int i = 0; i < N; i++) { … v[i] … }`
-- Poți da valori la declarare: `int v[3] = {5, 6, 7};`
-- Citire: `cin >> v[i];` într-un `for`. Afișare: `cout << v[i];` într-un `for`.
-- Un element se folosește ca orice variabilă: `v[2] = 10;`, `v[i] += 5;`
-- Dacă nu știi câte elemente vor fi, declari o capacitate mare și ții minte câte folosești (`n`).
-- Verifică **mereu** indicii: `0 <= indice < n`.
+- Un **vector** ține mai multe valori de același tip sub un singur nume.  
+- `int g[5];` creează 5 locuri; indicii sunt `0, 1, 2, 3, 4`.  
+- `g[i]` este elementul de pe poziția `i`; `g[i] = x;` îl schimbă.  
+- Parcurgerea în ordine: `for (int i = 0; i < n; i++)`; invers: `for (int i = n - 1; i >= 0; i--)`.  
+- Ultimul indice este **dimensiunea minus 1**.  
+- Nu citești și nu scrii în afara vectorului.  
 
 ---
 
 ## Quiz scurt
-- Cum declari un vector de `N` elemente?  
-- Care e primul și care e ultimul indice valid?  
-- Cum parcurgi un vector cu `for`?  
-- Cum dai valori vectorului la declarare?  
-- De ce verificăm mereu indicii?  
+- Ce este un vector și de ce este mai bun decât mai multe variabile?  
+- Ce indice are primul element? Dar ultimul, la un vector cu 8 elemente?  
+- De ce folosim `i < n` și nu `i <= n`?  
+- Cum afișezi un vector în ordine inversă?  
+- Ce se poate întâmpla dacă scrii în afara vectorului?  
 
 ---
 
 ## Temă
-1. Refă **Exemplele 1–17** pe calculatorul tău.  
-2. Citește 10 numere într-un vector și afișează-le: o dată pe un singur rând, o dată câte unul pe rând, numerotate.  
-3. Umple un vector de 12 elemente cu numărul de zile ale fiecărei luni (31, 28, 31, …) și afișează „Luna 3 are 31 de zile” pentru o lună aleasă de utilizator (cu verificare).  
-4. Scrie un program care citește 5 prețuri (`double`) și le afișează, apoi aplică o reducere de 10% fiecărui preț și afișează noile prețuri.  
-5. **Bonus:** umple un vector cu primele 15 numere din șirul lui Fibonacci și afișează-le câte 5 pe rând (folosește `if (…%5==0)` pentru a trece pe rând nou).  
-6. Salvează tot ca `Tema_M2L6_Prenume_Nume.cpp`.
+1. Refă **Exemplele 1–6** pe calculatorul tău și testează fiecare cu cel puțin două seturi de date.  
+2. Scrie un program care citește 6 numere într-un vector și le afișează în ordine inversă.  
+3. Scrie un program care umple un vector cu pătratele numerelor de la 1 la 10 și îl afișează.  
+4. Scrie un program care citește 5 numere și afișează primul și ultimul, apoi schimbă între ele aceste două valori.  
+5. Salvează tot ca `Tema_M2L6_Prenume_Nume.cpp`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le de mână, rulează-le și schimbă-le după preferințe.
+
+**Acasă 1 — Vector de pătrate**
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int p[10];
+
+    for (int i = 0; i < 10; i++) {
+        p[i] = (i + 1) * (i + 1);
+    }
+
+    for (int i = 0; i < 10; i++) {
+        cout << p[i] << " ";
+    }
+    cout << endl;
+    return 0;
+}
+```
+Rezultatul este `1 4 9 16 25 36 49 64 81 100`. Valorile se pot calcula și pune în vector, nu doar citi.
+
+**Acasă 2 — Numere în ordine inversă**
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v[5];
+
+    cout << "Introdu 5 numere: ";
+    for (int i = 0; i < 5; i++) {
+        cin >> v[i];
+    }
+
+    cout << "In ordine inversa: ";
+    for (int i = 4; i >= 0; i--) {
+        cout << v[i] << " ";
+    }
+    cout << endl;
+    return 0;
+}
+```
+Pentru `1 2 3 4 5`, rezultatul este `5 4 3 2 1`.
+
+**Acasă 3 — Schimb primul cu ultimul**
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v[6] = {10, 20, 30, 40, 50, 60};
+    int n = 6;
+
+    cout << "Primul: " << v[0] << endl;
+    cout << "Ultimul: " << v[n - 1] << endl;
+
+    int aux = v[0];
+    v[0] = v[n - 1];
+    v[n - 1] = aux;
+
+    for (int i = 0; i < n; i++) {
+        cout << v[i] << " ";
+    }
+    cout << endl;
+    return 0;
+}
+```
+Rezultatul final este `60 20 30 40 50 10`. Variabila `aux` păstrează o valoare cât timp o suprascrii pe cealaltă: ca să schimbi două valori, ai nevoie de un loc în plus.
 
 ---
 
 ## Ce urmează — Lecția 7
-Facem calcule cu vectori: **suma, media, minimul și maximul** unui șir de note, adică exact ce face un catalog.
+Facem calcule cu vectori: suma, media, minimul și maximul. Construim **Stația meteo**, care analizează temperaturile unei luni.

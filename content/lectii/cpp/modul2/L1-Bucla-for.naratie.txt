@@ -1,21 +1,27 @@
-Lecția unu din Modulul doi. Bucla for.
+Lecția unu din Modulul doi. Lansarea rachetei. Bucla for.
 
-Astăzi înveți să spui calculatorului „repetă de câte ori vreau eu”, fără să scrii aceeași linie de o sută de ori. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L unu.
+Astăzi înveți să spui calculatorului repetă de câte ori vreau eu, fără să scrii aceeași linie de o sută de ori. La final lansezi o rachetă cu numărătoare inversă. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L unu.
 
-Obiectivul. Minim: un program care afișează numerele de la unu la n, cu n citit de la tastatură. Complet: minim, plus o numărătoare inversă, un pas diferit de unu și tabla înmulțirii pentru un număr citit.
+Instrucțiuni noi azi. For are între paranteze trei părți: start, condiție și pas. Instrucțiunile din acolade se repetă cât timp condiția este adevărată. I plus plus mărește i cu unu, i minus minus îl micșorează cu unu, iar i plus egal cinci îl mărește cu cinci.
 
-Primul pas. De ce bucle. Imaginează-ți că vrei să afișezi numerele de la unu la o sută. Fără buclă ai scrie o sută de linii, dar cu buclă scrii una singură.
+Exemplul unu. Fără buclă și cu buclă. Dacă vrei să afișezi numerele de la unu la cinci, poți scrie cinci linii sau o singură buclă. Rezultatul este același. Pentru numerele de la unu la o sută, fără buclă ai nevoie de o sută de linii, iar cu buclă tot de trei: schimbi doar numărul. Încearcă tu: rulează ambele programe și schimbă cinci în doisprezece.
 
-Al doilea pas. Cum arată for. Scrii for, apoi între paranteze trei părți despărțite prin punct și virgulă. Prima parte este startul, adică de unde pornești, de exemplu int i egal unu. A doua parte este condiția: bucla merge cât timp ea este adevărată, de exemplu i mai mic sau egal cu zece. A treia parte este pasul: ce se întâmplă după fiecare rotire, de exemplu i plus plus. Startul se execută o singură dată, condiția se verifică înainte de fiecare rotire, iar pasul se face după fiecare rotire. Poți lăsa chiar utilizatorul să aleagă de câte ori se repetă, citind n cu c-in.
+Exemplul doi. Cele trei părți ale lui for. Startul se execută o singură dată, la început: creează variabila i și îi dă valoarea unu. Condiția se verifică înainte de fiecare rotire. Pasul se execută după fiecare rotire. Variabila i se numește contor, iar instrucțiunile din acolade sunt corpul buclei. Încearcă tu: afișează numerele de la unu la douăzeci, schimbă condiția în mai mic decât zece și vezi ce se schimbă, apoi afișează numerele de la cinci la cincisprezece.
 
-Al treilea pas. Variații. Pentru numărătoare inversă pornești de la n și scazi cu unu. Pentru din doi în doi scrii i plus egal doi. Poți afișa numerele dintre două numere citite. Ține minte: pornești de la zero cu semnul mai mic sau de la unu cu mai mic sau egal, și bucla se repetă de același număr de ori.
+Exemplul trei. Ce se întâmplă la fiecare rotire. Urmărește valoarea lui i: unu, doi, trei. La patru condiția devine falsă și bucla se oprește. Rândul de după acolade se afișează o singură dată, după buclă. Încearcă tu: fă același tabel pe foaie pentru o buclă de la doi la șase, apoi verifică în program. Mută linia de final în interiorul acoladelor și observă ce se întâmplă.
 
-Al patrulea pas. Contorul poate fi și un char, ca să afișezi literele alfabetului. Poți pune în buclă și un if, ca în jocul Fizz Buzz.
+Exemplul patru. Utilizatorul alege cât numără. Citești un număr n cu c-in și îl folosești în condiție. Același program numără până la opt, până la cincizeci sau până la o mie, fără să-l mai modifici. Încearcă tu: rulează cu trei, cu douăzeci și cu zero și explică de ce la zero nu se afișează nimic. Citește apoi două numere și afișează toate numerele dintre ele.
 
-Al cincilea pas. Proiecte mici. Tabla înmulțirii, o linie de steluțe, o rachetă cu numărătoare inversă și raportul unui an de economii.
+Exemplul cinci. Invers și din cinci în cinci. Pentru numărătoare inversă pornești de la valoarea mare, folosești mai mare sau egal și i minus minus. Pentru din cinci în cinci folosești i plus egal cinci. Atenție la bucla infinită: dacă pasul nu duce niciodată condiția la fals, programul nu se mai oprește. Îl oprești cu Control și C în terminal. Încearcă tu: afișează numărătoarea inversă de la zece la unu, multiplii lui trei până la treizeci și numerele de la o sută la zero, din zece în zece.
 
-Greșeli frecvente. Bucla nu se oprește niciodată, pentru că pasul nu duce spre oprire. Bucla nu se execută deloc, pentru că de la început condiția este falsă. Se repetă cu o dată mai mult sau mai puțin: testează cu n egal unu și n egal doi. Ai pus punct și virgulă după paranteza lui for și corpul rulează o singură dată. Ai pus virgule în loc de punct și virgulă între cele trei părți.
+Exemplul șase. Lansarea rachetei. Programul citește secunda de la care începe numărătoarea, o afișează invers până la unu, scrie Decolare și desenează racheta. A doua buclă adaugă câte un rând de flăcări pentru fiecare secundă. În cod, bara oblică inversă apare de două ori, dar pe ecran se vede o singură dată. Încearcă tu: rulează cu trei, cu șase și cu zece, schimbă mesajul și adaugă sub rachetă un rând cu textul tău.
 
-Tema. Citești n și afișezi primele n numere pare. Afișezi tabla înmulțirii cu nouă, de la nouă ori zece în jos. Salvezi ca Tema, linie jos, M doi, L unu.
+De făcut azi. Lansarea rachetei. Minim: un program care citește un număr n, afișează numărătoarea inversă de la n la unu și apoi Decolare. Complet: minim, plus o rachetă desenată din caractere, cu flăcări în număr egal cu n, printr-o a doua buclă, și un test cu cel puțin trei valori diferite.
 
-Recapitulare. For are start, condiție și pas. Verifică mereu că pasul duce spre oprire. Succes!
+Bonus, trei stele. Calendarul de lansări. Doar dacă ai terminat varianta completă. O bază spațială lansează o rachetă la fiecare șapte zile. Afișezi zilele din luna de treizeci de zile în care au loc lansările și câte lansări sunt în total. Folosești un for de la unu la treizeci. La fiecare zi potrivită afișezi un mesaj și apoi, la final, totalul. Schimbi intervalul din șapte în cinci zile și verifici rezultatul.
+
+Greșeli frecvente. Bucla se repetă la nesfârșit: pasul nu duce condiția la fals. Bucla nu rulează deloc: condiția este falsă de la început. Lipsește ultimul număr: ai scris mai mic în loc de mai mic sau egal. Ai pus virgulă în loc de punct și virgulă între părțile lui for. Ai pus punct și virgulă după paranteza buclei. Mesajul final apare la fiecare rotire, pentru că este în interiorul acoladelor. Ai folosit variabila i după buclă, deși există doar în buclă.
+
+Tema. Refaci exemplele din lecție și le testezi cu cel puțin două valori. Afișezi numerele pare de la doi la douăzeci. Citești n și afișezi Start de n ori. Afișezi numerele de la cincizeci la zero, din zece în zece. Salvezi ca Tema, linie jos, M doi, L unu. Găsești în lecție și exemple pentru acasă.
+
+Recapitulare. For repetă instrucțiunile cât timp condiția este adevărată. Are trei părți: start, condiție și pas. I plus plus crește cu unu, i minus minus scade cu unu. Pentru numărătoare inversă pornești de la valoarea mare. Cu c-in lași utilizatorul să aleagă de câte ori se repetă bucla. Succes!

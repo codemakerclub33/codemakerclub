@@ -742,7 +742,7 @@ ana nu este palindrom
 Reparează cele cinci programe din Exemplul 16. Pentru fiecare, scrie în comentariu: **ce era greșit** și **cum ai descoperit**.
 
 ### Exercițiul B — Un program „urât” devine curat
-Ia un program din Modulul 2 sau 3 (de exemplu Catalogul de note) și rescrie programul: nume clare, indentare corectă, constante în loc de numere magice și funcții mici.
+Ia un program din Modulul 2 sau 3 (de exemplu Arcada de jocuri) și rescrie programul: nume clare, indentare corectă, constante în loc de numere magice și funcții mici.
 
 ### Exercițiul C — Testele tale
 Pentru trei funcții scrise de tine (de exemplu `estePrim`, `cmmdc`, `oglindit`), scrie 5 verificări `assert` fiecare, inclusiv pentru cazuri limită.

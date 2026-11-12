@@ -1,19 +1,17 @@
-# LECȚIA 8 — Căutarea în vector
+# LECȚIA 8 — Colecția mea
+### Căutarea într-un vector: există, unde este, de câte ori apare
 **Modulul 2 · Bucle și vectori · 2 ore**  
 **Code Maker Club · Loop Master**
 
-> Azi înveți să „cauți” într-un vector, ca atunci când apeși Ctrl+F într-o listă: **există** valoarea? **unde** se află? **de câte ori** apare? Mai înveți să **ștergi** și să **inserezi** elemente.  
-> Proiect: **„Agenda telefonică”** · fișier: `Prenume_Nume_M2L8.cpp` (ex. `Ana_Pop_M2L8.cpp`)
+> Ai o colecție de cartonașe cu numere și vrei să afli repede: „Îl am pe cel cu 7? Unde este? De câte ori îl am?” Azi înveți să **cauți într-un vector**, pas cu pas.  
+> Fișier: `Prenume_Nume_M2L8.cpp`
 
 ---
 
-## Obiectiv
-La finalul orei verifici dacă o valoare există într-un vector, găsești prima poziție, numeri aparițiile, cauți într-un vector de nume și modifici vectorul prin ștergere și inserare.  
-**Minim:** un program care spune dacă un număr există într-un vector și pe ce poziție.  
-**Ținta orei (Complet):** + numărarea aparițiilor și o agendă cu meniu, în care cauți un nume și afișezi telefonul.
+## Ce facem azi
+La final știi să verifici dacă o valoare **există** într-un vector, să afli **pe ce poziție** este prima ei apariție, să o **numeri**, să faci **mai multe căutări** una după alta, până scrii `0`, și să găsești **dublurile** dintr-o colecție.
 
-## De ce contează
-Agenda din telefon, căutarea unui produs într-un magazin online, verificarea unei parole într-o listă: toate încep cu **căutare**. Metoda de azi se numește **căutare liniară**: te uiți la fiecare element, pe rând, până îl găsești sau până se termină vectorul. Este simplă și funcționează oricând.
+Căutarea este una dintre cele mai folosite operații: când cauți un contact în telefon, o melodie într-o listă sau un obiect într-un joc, programul trece prin elemente până îl găsește. Metoda se numește **căutare liniară**: te uiți la rând, element cu element.
 
 ---
 
@@ -21,467 +19,233 @@ Agenda din telefon, căutarea unui produs într-un magazin online, verificarea u
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recapitulare: statistici pe vectori |
-| 10–35 | Există? Pe ce poziție? (**Exemplele 1–4**) |
-| 35–60 | Numărare, toate pozițiile, ultima apariție (**Exemplele 5–7**) |
-| 60–80 | Căutare în vectori de nume, verificări (**Exemplele 8–11**) |
-| 80–100 | Ștergere și inserare (**Exemplele 12–13**) |
-| 100–118 | Proiecte (**Exemplele 14–16**) |
-| 118–120 | Recap și temă |
-
-> **Pentru ritm lent sau începători:** în clasă faceți mai întâi cele **7 exemple marcate [Esențial]** (inclusiv proiectul sau exemplul final, acolo unde e cazul). Ele acoperă tot ce trebuie să rămână după lecție. Restul exemplelor sunt pentru cine merge repede sau pentru acasă.
+| 0–15 | Recapitulare L7: sumă, maxim, poziție |
+| 15–40 | Există sau nu? Și poziția (**Exemplele 1–2**) |
+| 40–60 | Numărăm apariții și căutăm de mai multe ori (**Exemplele 3–4**) |
+| 60–80 | Dublurile (**Exemplul 5**) |
+| 80–115 | Proiectul: Colecția mea + Provocarea (**Exemplul 6**) |
+| 115–120 | Recap și temă |
 
 ---
 
-## 1. Există valoarea? Pe ce poziție?
+## Instrucțiuni noi azi
 
-Ideea: parcurgi vectorul și compari fiecare element cu valoarea căutată. Poți folosi o variabilă „steag” (`bool`), pe care o schimbi când găsești valoarea (Modulul 1, lecția 5).
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `bool gasit = false;` | Un **semnal**: „încă nu am găsit” | devine `true` când găsim |
+| `while (i < n && c[i] != x)` | Merge înainte **până găsește** valoarea sau se termină vectorul | `i` rămâne la poziția găsită |
+| `if (i < n)` | După buclă: dacă `i` nu a ajuns la capăt, valoarea există | `i` este poziția |
+| `int prima = -1;` | Poziție care **nu poate exista**: înseamnă „nu am găsit” | indicii sunt de la `0` în sus |
 
-### Exemplul 1 — Există valoarea în vector? **[Esențial]**
+---
+
+## Pas cu pas
+
+### Exemplul 1 — Există sau nu?
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int v[7] = {12, 5, 38, 7, 21, 9, 14};
-    int x = 21;
-    bool gasit = false;
+    int c[5] = {14, 7, 23, 9, 31};
+    int n = 5;
+    int x;
 
-    for (int i = 0; i < 7; i++) {
-        if (v[i] == x) {
+    cout << "Ce cartonas cauti? ";
+    cin >> x;
+
+    bool gasit = false;
+    for (int i = 0; i < n; i++) {
+        if (c[i] == x) {
             gasit = true;
         }
     }
 
     if (gasit) {
-        cout << x << " exista in vector." << endl;
+        cout << "Il ai in colectie!" << endl;
     } else {
-        cout << x << " nu exista in vector." << endl;
+        cout << "Nu il ai." << endl;
     }
     return 0;
 }
 ```
 
-**Ieșire:**
+**Rulare** (cu `9`, apoi cu `5`):
 ```
-21 exista in vector.
+Ce cartonas cauti? 9
+Il ai in colectie!
+```
+```
+Ce cartonas cauti? 5
+Nu il ai.
 ```
 
-Pornim cu `gasit = false` („presupunem că nu e”). Dacă găsim valoarea, schimbăm în `true`. **Nu** punem `else gasit = false` în buclă; ar șterge un rezultat deja găsit.
+`gasit` este un **semnal** care pornește pe `false`. Parcurgem tot vectorul și, dacă vreun element este egal cu `x`, ridicăm semnalul pe `true`. Abia **după buclă** știm răspunsul. Dacă am spune „Nu il ai” în buclă, programul ar spune asta pentru fiecare element diferit, nu doar la final.
 
-### Exemplul 2 — Prima poziție (cu `break`) **[Esențial]**
+**Încearcă tu (10 min)**  
+- [ ] Cauți un cartonaș pe care îl ai și unul pe care nu-l ai  
+- [ ] Schimbi vectorul cu alte 5 numere  
+- [ ] Cauți primul și ultimul element, ca să verifici că bucla ajunge la capete  
+
+### Exemplul 2 — Pe ce poziție este?
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int v[8] = {4, 9, 15, 9, 22, 3, 9, 30};
-    int x = 9;
-    int poz = -1;
-
-    for (int i = 0; i < 8; i++) {
-        if (v[i] == x) {
-            poz = i;
-            break;
-        }
-    }
-
-    if (poz == -1) {
-        cout << x << " nu a fost gasit." << endl;
-    } else {
-        cout << x << " apare prima data pe pozitia " << poz << endl;
-    }
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-9 apare prima data pe pozitia 1
-```
-
-Folosim `poz = -1` pentru „negăsit”. De ce `-1`? Pentru că niciun indice valid nu este negativ, deci `-1` nu poate fi confundat cu o poziție reală. `break` oprește căutarea imediat ce găsim prima apariție.
-
-### Exemplul 3 — Căutare cu valoarea citită **[Esențial]**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    const int N = 6;
-    int cod[N] = {1012, 2055, 3101, 4020, 5517, 6003};
+    int c[5] = {14, 7, 23, 9, 31};
+    int n = 5;
     int x;
 
-    cout << "Cod produs: ";
+    cout << "Ce cartonas cauti? ";
     cin >> x;
 
-    int poz = -1;
-    for (int i = 0; i < N; i++) {
-        if (cod[i] == x) {
-            poz = i;
-            break;
-        }
-    }
-
-    if (poz != -1) {
-        cout << "Produsul exista, raftul " << poz + 1 << "." << endl;
-    } else {
-        cout << "Produs inexistent." << endl;
-    }
-    return 0;
-}
-```
-
-**Rulare** (tastezi `4020`):
-```
-Cod produs: 4020
-Produsul exista, raftul 4.
-```
-
-**Rulare** (tastezi `9999`):
-```
-Cod produs: 9999
-Produs inexistent.
-```
-
-### Exemplul 4 — Căutare cu `while` (se oprește singură)
-
-Aceeași căutare, dar cu `while`: continuăm cât timp **nu am găsit** și **nu am ajuns la capăt**.
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int v[6] = {8, 14, 3, 27, 6, 19};
-    int x = 27;
     int i = 0;
-
-    while (i < 6 && v[i] != x) {
+    while (i < n && c[i] != x) {
         i++;
     }
 
-    if (i < 6) {
-        cout << "Gasit pe pozitia " << i << endl;
+    if (i < n) {
+        cout << "Cartonasul " << x << " este al " << i + 1 << "-lea" << endl;
     } else {
-        cout << "Negasit" << endl;
+        cout << "Nu exista" << endl;
     }
     return 0;
 }
 ```
 
-**Ieșire:**
+**Rulare** (cu `23`):
 ```
-Gasit pe pozitia 3
+Ce cartonas cauti? 23
+Cartonasul 23 este al 3-lea
 ```
 
-Ordinea condițiilor contează: `i < 6` trebuie verificat **primul**. Altfel, dacă `i` ajunge la `6`, am citi `v[6]`, în afara vectorului (Lecția 6). Cu `&&`, dacă prima condiție e falsă, a doua nu se mai evaluează.
+Aici folosim `while`, nu `for`. Bucla merge înainte **cât timp** nu am ajuns la capăt (`i < n`) **și** elementul nu este cel căutat (`c[i] != x`). Se oprește fie când găsește valoarea, fie când vectorul se termină. După buclă, `i` ne spune ce s-a întâmplat: dacă `i < n`, am găsit valoarea pe poziția `i` (al `i + 1`-lea cartonaș); dacă `i == n`, nu există.
 
-**Încearcă tu (8 min)**  
-- [ ] Verifici dacă numărul 100 există într-un vector  
-- [ ] Afișezi poziția primei apariții a unui număr citit  
-- [ ] Rescrii căutarea cu `while`  
+> **Atenție la ordine:** scrie `i < n` **înaintea** lui `c[i] != x`. Dacă `i` ar fi `n`, `c[i]` ar citi în afara vectorului. Cu `&&`, când prima condiție este falsă, a doua nici nu se mai verifică.
 
----
+**Încearcă tu (10 min)**  
+- [ ] Cauți primul element, apoi ultimul, apoi unul care nu există  
+- [ ] Faci pe foaie un tabel cu `i` și `c[i]` pentru căutarea lui `9`  
+- [ ] Afișezi poziția cu indice de la `0`, apoi cu `+ 1`, și spui care este mai firească  
 
-## 2. Numărare, toate pozițiile, ultima apariție
-
-### Exemplul 5 — De câte ori apare o valoare **[Esențial]**
+### Exemplul 3 — De câte ori apare?
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int nota[12] = {9, 7, 10, 9, 8, 9, 6, 10, 9, 7, 8, 9};
-    int x = 9;
-    int aparitii = 0;
+    int c[8] = {14, 7, 23, 7, 31, 14, 7, 9};
+    int n = 8;
+    int x;
 
-    for (int i = 0; i < 12; i++) {
-        if (nota[i] == x) {
+    cout << "Ce cartonas cauti? ";
+    cin >> x;
+
+    int aparitii = 0;
+    for (int i = 0; i < n; i++) {
+        if (c[i] == x) {
             aparitii++;
         }
     }
 
-    cout << "Nota " << x << " apare de " << aparitii << " ori." << endl;
+    cout << "Cartonasul " << x << " apare de " << aparitii << " ori" << endl;
     return 0;
 }
 ```
 
-**Ieșire:**
+**Rulare** (cu `7`):
 ```
-Nota 9 apare de 5 ori.
-```
-
-### Exemplul 6 — Toate pozițiile **[Esențial]**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int v[10] = {2, 7, 2, 5, 2, 9, 7, 2, 1, 4};
-    int x = 2;
-    int gasite = 0;
-
-    cout << "Valoarea " << x << " apare pe pozitiile:";
-    for (int i = 0; i < 10; i++) {
-        if (v[i] == x) {
-            cout << " " << i;
-            gasite++;
-        }
-    }
-
-    if (gasite == 0) {
-        cout << " (nicio pozitie)";
-    }
-    cout << endl;
-    return 0;
-}
+Ce cartonas cauti? 7
+Cartonasul 7 apare de 3 ori
 ```
 
-**Ieșire:**
-```
-Valoarea 2 apare pe pozitiile: 0 2 4 7
-```
-
-### Exemplul 7 — Ultima apariție
-
-Două soluții: parcurgi de la sfârșit sau parcurgi tot și actualizezi poziția de fiecare dată.
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int v[8] = {5, 3, 5, 8, 5, 1, 3, 5};
-    int x = 3;
-
-    int ultima = -1;
-    for (int i = 0; i < 8; i++) {
-        if (v[i] == x) {
-            ultima = i;
-        }
-    }
-    cout << "Varianta 1 (actualizam): ultima pozitie = " << ultima << endl;
-
-    int poz = -1;
-    for (int i = 7; i >= 0; i--) {
-        if (v[i] == x) {
-            poz = i;
-            break;
-        }
-    }
-    cout << "Varianta 2 (de la sfarsit): ultima pozitie = " << poz << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Varianta 1 (actualizam): ultima pozitie = 6
-Varianta 2 (de la sfarsit): ultima pozitie = 6
-```
-
-În varianta 1 nu folosim `break`, ca să ajungem până la capăt; fiecare nouă apariție suprascrie poziția. În varianta 2 mergem de la coadă către început și ne oprim la prima apariție întâlnită.
+Este contorul din lecția 7, cu condiția `c[i] == x`. Dacă `aparitii` rămâne `0`, valoarea nu există. Așa afli și dacă ai **dubluri** în colecție.
 
 **Încearcă tu (10 min)**  
-- [ ] Numeri de câte ori apare cifra 0 într-un vector  
-- [ ] Afișezi toate pozițiile unde apare un număr citit  
-- [ ] Găsești ultima poziție pe care apare un număr  
+- [ ] Cauți `14`, apoi `9`, apoi `100`  
+- [ ] Faci programul să scrie „nu apare” când `aparitii` este `0`  
+- [ ] Schimbi vectorul cu 8 valori ale tale  
 
----
-
-## 3. Căutare în vectori de nume, verificări
-
-### Exemplul 8 — Căutăm un nume
-
-Pentru `string`, compararea cu `==` merge direct (Modulul 1, lecția 5).
-
-```cpp
-#include <iostream>
-#include <string>
-using namespace std;
-
-int main() {
-    string nume[5] = {"Ana", "Bogdan", "Carmen", "Dan", "Elena"};
-    string cautat;
-
-    cout << "Cauta elevul: ";
-    cin >> cautat;
-
-    int poz = -1;
-    for (int i = 0; i < 5; i++) {
-        if (nume[i] == cautat) {
-            poz = i;
-            break;
-        }
-    }
-
-    if (poz == -1) {
-        cout << cautat << " nu este in clasa." << endl;
-    } else {
-        cout << cautat << " este elevul numarul " << poz + 1 << "." << endl;
-    }
-    return 0;
-}
-```
-
-**Rulare** (tastezi `Carmen`):
-```
-Cauta elevul: Carmen
-Carmen este elevul numarul 3.
-```
-
-Atenție: `"carmen"` cu literă mică nu este același lucru cu `"Carmen"`. Compararea face diferența între litere mari și mici.
-
-### Exemplul 9 — Căutare într-un vector, răspuns în alt vector
-
-Vectori paraleli, din nou: cauți în unul, afișezi din celălalt.
-
-```cpp
-#include <iostream>
-#include <string>
-using namespace std;
-
-int main() {
-    string tara[4] = {"Romania", "Franta", "Italia", "Spania"};
-    string capitala[4] = {"Bucuresti", "Paris", "Roma", "Madrid"};
-    string cautat;
-
-    cout << "Tara: ";
-    cin >> cautat;
-
-    bool gasit = false;
-    for (int i = 0; i < 4; i++) {
-        if (tara[i] == cautat) {
-            cout << "Capitala: " << capitala[i] << endl;
-            gasit = true;
-        }
-    }
-
-    if (!gasit) {
-        cout << "Tara necunoscuta." << endl;
-    }
-    return 0;
-}
-```
-
-**Rulare** (tastezi `Italia`):
-```
-Tara: Italia
-Capitala: Roma
-```
-
-### Exemplul 10 — Sunt toate numerele pozitive?
-
-Pentru „toate elementele respectă o regulă”, ideea se inversează: cauți **un contraexemplu**. Dacă găsești unul, răspunsul este „nu”.
+### Exemplul 4 — Mai multe căutări, până scrii 0
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int v[6] = {4, 12, 7, -3, 9, 15};
-    bool toatePozitive = true;
+    int c[5] = {14, 7, 23, 9, 31};
+    int n = 5;
+    int x;
 
-    for (int i = 0; i < 6; i++) {
-        if (v[i] <= 0) {
-            toatePozitive = false;
-            break;
-        }
-    }
+    cout << "Cartonas (0 = stop): ";
+    cin >> x;
 
-    if (toatePozitive) {
-        cout << "Toate numerele sunt pozitive." << endl;
-    } else {
-        cout << "Exista cel putin un numar nepozitiv." << endl;
-    }
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Exista cel putin un numar nepozitiv.
-```
-
-> **Notă:** exemplul de mai jos este mai greu și **nu este necesar pentru proiectul lecției**. Dacă te simți nesigur, citește exemplul doar ca să vezi ce se poate face, apoi treci mai departe.
-
-### Exemplul 11 — Există duplicate? *(Provocare, opțional)*
-
-Comparăm fiecare element cu cele de după el, ceea ce înseamnă o buclă imbricată (Lecția 5).
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int v[7] = {14, 8, 31, 8, 20, 5, 14};
-
-    cout << "Valori care se repeta:" << endl;
-    bool exista = false;
-
-    for (int i = 0; i < 7; i++) {
-        for (int j = i + 1; j < 7; j++) {
-            if (v[i] == v[j]) {
-                cout << " - " << v[i] << " (pozitiile " << i << " si " << j << ")" << endl;
-                exista = true;
+    while (x != 0) {
+        bool gasit = false;
+        for (int i = 0; i < n; i++) {
+            if (c[i] == x) {
+                gasit = true;
             }
         }
-    }
 
-    if (!exista) {
-        cout << "Niciuna, toate sunt distincte." << endl;
+        if (gasit) {
+            cout << "Il ai!" << endl;
+        } else {
+            cout << "Nu il ai." << endl;
+        }
+
+        cout << "Cartonas (0 = stop): ";
+        cin >> x;
     }
     return 0;
 }
 ```
 
-**Ieșire:**
+**Rulare** (cu `9`, `4`, `0`):
 ```
-Valori care se repeta:
- - 14 (pozitiile 0 si 6)
- - 8 (pozitiile 1 si 3)
+Cartonas (0 = stop): 9
+Il ai!
+Cartonas (0 = stop): 4
+Nu il ai.
+Cartonas (0 = stop): 0
 ```
 
-Bucla interioară pornește de la `i + 1`, ca să nu compare un element cu el însuși și să nu repete perechile (dacă ai verificat `(0, 3)`, nu mai verifici `(3, 0)`).
+Combinăm ce știm: **santinela** `0` din lecția 3 ține bucla `while` în funcțiune, iar în interior facem căutarea din Exemplul 1. Observă că `gasit` este declarat **în** buclă, pentru că de fiecare dată căutarea începe de la „încă nu am găsit”.
 
 **Încearcă tu (10 min)**  
-- [ ] Verifici dacă un vector conține vreun număr negativ  
-- [ ] Verifici dacă toate numerele sunt pare  
-- [ ] Cauți un nume într-un vector de 5 prieteni  
+- [ ] Faci 4 căutări la rând, apoi scrii `0`  
+- [ ] Afișezi și câte căutări ai făcut până la oprire  
+- [ ] Afișezi la final câte au fost reușite  
 
----
-
-## 4. Ștergere și inserare
-
-Un vector are dimensiune fixă, dar cu o variabilă `n` (numărul de elemente folosite) poți „șterge” sau „insera”, prin mutarea elementelor.
-
-### Exemplul 12 — Ștergem un element **[Esențial]**
-
-Ștergem elementul de pe poziția `p`: mutăm toate elementele de după el cu **o poziție la stânga**, apoi micșorăm `n`.
+### Exemplul 5 — Dublurile: o buclă în altă buclă
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int v[10] = {10, 20, 30, 40, 50};
-    int n = 5;
-    int p = 2;
+    int c[7] = {14, 7, 23, 7, 31, 14, 9};
+    int n = 7;
 
-    for (int i = p; i < n - 1; i++) {
-        v[i] = v[i + 1];
-    }
-    n--;
-
-    cout << "Dupa stergere: ";
+    cout << "Cartonase dublate:";
     for (int i = 0; i < n; i++) {
-        cout << v[i] << " ";
+        int total = 0;
+        int inainte = 0;
+        for (int j = 0; j < n; j++) {
+            if (c[j] == c[i]) {
+                total++;
+                if (j < i) {
+                    inainte++;
+                }
+            }
+        }
+        if (total > 1 && inainte == 0) {
+            cout << " " << c[i];
+        }
     }
     cout << endl;
     return 0;
@@ -490,350 +254,139 @@ int main() {
 
 **Ieșire:**
 ```
-Dupa stergere: 10 20 40 50 
+Cartonase dublate: 14 7
 ```
 
-```
-Inainte:   10  20  30  40  50      (stergem poziția 2, adică 30)
-v[2] = v[3]  →  10  20  40  40  50
-v[3] = v[4]  →  10  20  40  50  50
-n devine 4   →  10  20  40  50
-```
+Pentru **fiecare** cartonaș `c[i]` căutăm în tot vectorul (bucla `j`) de câte ori apare, ca la bucle imbricate. Numărăm două lucruri: `total` (de câte ori apare) și `inainte` (câte apariții sunt **înaintea** lui). Afișăm valoarea doar dacă apare de mai multe ori (`total > 1`) și acesta este **prima** apariție (`inainte == 0`). Fără a doua condiție, `14` și `7` ar fi afișate de două ori.
 
-Ultimul element rămâne în memorie, dar nu mai este în „zona folosită” (`n` este mai mic acum), așa că nu mai apare.
+**Încearcă tu (10 min)**  
+- [ ] Schimbi vectorul și verifici dublurile  
+- [ ] Încerci un vector fără dubluri  
+- [ ] Scoți condiția `inainte == 0` și observi ce se afișează  
 
-### Exemplul 13 — Inserăm un element
-
-Inserăm valoarea `x` pe poziția `p`: mutăm elementele de la `p` încolo cu **o poziție la dreapta**, **începând de la coadă** (altfel valorile ar fi suprascrise), apoi punem `x`.
+### Exemplul 6 — Colecția mea (proiectul orei)
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int v[10] = {10, 20, 40, 50};
-    int n = 4;
-    int p = 2;
-    int x = 30;
-
-    for (int i = n; i > p; i--) {
-        v[i] = v[i - 1];
-    }
-    v[p] = x;
-    n++;
-
-    cout << "Dupa inserare: ";
-    for (int i = 0; i < n; i++) {
-        cout << v[i] << " ";
-    }
-    cout << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Dupa inserare: 10 20 30 40 50 
-```
-
-Ordinea contează: la ștergere mutăm de la **început** spre sfârșit, la inserare mutăm de la **sfârșit** spre început. Încearcă pe hârtie cu 4 pătrățele ca să vezi de ce.
-
----
-
-## 5. Proiecte
-
-### Exemplul 14 — Cel mai apropiat număr de o valoare *(Provocare, opțional)*
-
-Căutăm elementul cu **diferența** cea mai mică față de o țintă. Diferența trebuie luată fără semn, așa că folosim o mică verificare.
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int v[7] = {12, 45, 33, 8, 27, 51, 19};
-    int tinta = 30;
-
-    int pozBest = 0;
-    int diferentaBest = v[0] - tinta;
-    if (diferentaBest < 0) {
-        diferentaBest = -diferentaBest;
-    }
-
-    for (int i = 1; i < 7; i++) {
-        int dif = v[i] - tinta;
-        if (dif < 0) {
-            dif = -dif;
-        }
-        if (dif < diferentaBest) {
-            diferentaBest = dif;
-            pozBest = i;
-        }
-    }
-
-    cout << "Cel mai apropiat de " << tinta << " este " << v[pozBest]
-         << " (diferenta " << diferentaBest << ")" << endl;
-    return 0;
-}
-```
-
-**Ieșire:**
-```
-Cel mai apropiat de 30 este 33 (diferenta 3)
-```
-
-Este același șablon ca la minim, dar minimizăm **diferența**, nu valoarea. Valoarea absolută o obținem simplu: dacă diferența e negativă, îi schimbăm semnul (`dif = -dif`).
-
-### Exemplul 15 — Agenda cu o singură căutare
-
-```cpp
-#include <iostream>
-#include <string>
-using namespace std;
-
-int main() {
-    string nume[4] = {"Mama", "Tata", "Bunica", "Prieten"};
-    string tel[4] = {"0721111111", "0722222222", "0723333333", "0724444444"};
-    string cautat;
-
-    cout << "Pe cine suni? ";
-    cin >> cautat;
-
-    int poz = -1;
-    for (int i = 0; i < 4; i++) {
-        if (nume[i] == cautat) {
-            poz = i;
-        }
-    }
-
-    if (poz >= 0) {
-        cout << nume[poz] << ": " << tel[poz] << endl;
-    } else {
-        cout << "Contact negasit." << endl;
-    }
-    return 0;
-}
-```
-
-**Rulare** (tastezi `Bunica`):
-```
-Pe cine suni? Bunica
-Bunica: 0723333333
-```
-
-### Exemplul 16 — „Agenda telefonică” (mini-proiect) **[Esențial]**
-
-```cpp
-/*
-   Program: Agenda telefonica
-   Scop:    meniu cu adaugare, cautare, afisare si stergere contacte
-*/
-#include <iostream>
-#include <string>
-using namespace std;
-
-int main() {
-    const int MAXIM = 20;
-    string nume[MAXIM];
-    string tel[MAXIM];
-    int n = 0;
-    int optiune;
+    int c[30];
+    int n;
 
     do {
-        cout << endl << "===== AGENDA - contacte: " << n << " =====" << endl;
-        cout << "1. Adauga contact" << endl;
-        cout << "2. Cauta contact" << endl;
-        cout << "3. Afiseaza toate" << endl;
-        cout << "4. Sterge contact" << endl;
-        cout << "0. Iesire" << endl;
-        cout << "Alege: ";
-        cin >> optiune;
+        cout << "Cate cartonase ai (1-30)? ";
+        cin >> n;
+    } while (n < 1 || n > 30);
 
-        switch (optiune) {
-            case 1:
-                if (n == MAXIM) {
-                    cout << "Agenda este plina." << endl;
-                } else {
-                    cout << "Nume: ";
-                    cin >> nume[n];
-                    cout << "Telefon: ";
-                    cin >> tel[n];
-                    n++;
-                    cout << "Contact adaugat." << endl;
+    for (int i = 0; i < n; i++) {
+        cout << "Cartonasul " << i + 1 << ": ";
+        cin >> c[i];
+    }
+
+    int x;
+    cout << "Ce cartonas cauti (0 = stop)? ";
+    cin >> x;
+
+    while (x != 0) {
+        int aparitii = 0;
+        int prima = -1;
+        for (int i = 0; i < n; i++) {
+            if (c[i] == x) {
+                aparitii++;
+                if (prima == -1) {
+                    prima = i;
                 }
-                break;
-            case 2: {
-                string cautat;
-                cout << "Nume cautat: ";
-                cin >> cautat;
-                int poz = -1;
-                for (int i = 0; i < n; i++) {
-                    if (nume[i] == cautat) {
-                        poz = i;
-                        break;
-                    }
-                }
-                if (poz == -1) {
-                    cout << "Contact negasit." << endl;
-                } else {
-                    cout << nume[poz] << ": " << tel[poz] << endl;
-                }
-                break;
             }
-            case 3:
-                if (n == 0) {
-                    cout << "Agenda este goala." << endl;
-                }
-                for (int i = 0; i < n; i++) {
-                    cout << i + 1 << ". " << nume[i] << " - " << tel[i] << endl;
-                }
-                break;
-            case 4: {
-                string cautat;
-                cout << "Nume de sters: ";
-                cin >> cautat;
-                int poz = -1;
-                for (int i = 0; i < n; i++) {
-                    if (nume[i] == cautat) {
-                        poz = i;
-                        break;
-                    }
-                }
-                if (poz == -1) {
-                    cout << "Contact negasit." << endl;
-                } else {
-                    for (int i = poz; i < n - 1; i++) {
-                        nume[i] = nume[i + 1];
-                        tel[i] = tel[i + 1];
-                    }
-                    n--;
-                    cout << "Contact sters." << endl;
-                }
-                break;
-            }
-            case 0:
-                cout << "La revedere!" << endl;
-                break;
-            default:
-                cout << "Optiune invalida." << endl;
         }
-    } while (optiune != 0);
 
+        if (aparitii == 0) {
+            cout << "Nu ai cartonasul " << x << "." << endl;
+        } else {
+            cout << "Il ai! Prima data pe pozitia " << prima + 1
+                 << ", de " << aparitii << " ori." << endl;
+        }
+
+        cout << "Ce cartonas cauti (0 = stop)? ";
+        cin >> x;
+    }
+
+    int dublate = 0;
+    for (int i = 0; i < n; i++) {
+        int total = 0;
+        int inainte = 0;
+        for (int j = 0; j < n; j++) {
+            if (c[j] == c[i]) {
+                total++;
+                if (j < i) {
+                    inainte++;
+                }
+            }
+        }
+        if (total > 1 && inainte == 0) {
+            dublate++;
+        }
+    }
+    cout << "Cartonase dublate: " << dublate << endl;
     return 0;
 }
 ```
 
-**Rulare** (tastezi `1 Ana 0711 1 Dan 0722 3 2 Dan 4 Ana 3 0`):
+**Rulare** (7 cartonase `14 7 23 7 31 14 9`, căutări `7`, `5`, `0`):
+```
+Cate cartonase ai (1-30)? 7
+Cartonasul 1: 14
+Cartonasul 2: 7
+Cartonasul 3: 23
+Cartonasul 4: 7
+Cartonasul 5: 31
+Cartonasul 6: 14
+Cartonasul 7: 9
+Ce cartonas cauti (0 = stop)? 7
+Il ai! Prima data pe pozitia 2, de 2 ori.
+Ce cartonas cauti (0 = stop)? 5
+Nu ai cartonasul 5.
+Ce cartonas cauti (0 = stop)? 0
+Cartonase dublate: 2
 ```
 
-===== AGENDA - contacte: 0 =====
-1. Adauga contact
-2. Cauta contact
-3. Afiseaza toate
-4. Sterge contact
-0. Iesire
-Alege: 1
-Nume: Ana
-Telefon: 0711
-Contact adaugat.
+Programul pune cap la cap tot ce ai învățat: `do-while` pentru `n`, `for` pentru citire, `while` cu santinelă pentru căutări, un `for` cu poziția primei apariții (`prima`, pornit de la `-1`) și numărătoarea apariților, și la final buclele imbricate pentru dubluri. Fiecare parte face un singur lucru.
 
-===== AGENDA - contacte: 1 =====
-1. Adauga contact
-2. Cauta contact
-3. Afiseaza toate
-4. Sterge contact
-0. Iesire
-Alege: 1
-Nume: Dan
-Telefon: 0722
-Contact adaugat.
-
-===== AGENDA - contacte: 2 =====
-1. Adauga contact
-2. Cauta contact
-3. Afiseaza toate
-4. Sterge contact
-0. Iesire
-Alege: 3
-1. Ana - 0711
-2. Dan - 0722
-
-===== AGENDA - contacte: 2 =====
-1. Adauga contact
-2. Cauta contact
-3. Afiseaza toate
-4. Sterge contact
-0. Iesire
-Alege: 2
-Nume cautat: Dan
-Dan: 0722
-
-===== AGENDA - contacte: 2 =====
-1. Adauga contact
-2. Cauta contact
-3. Afiseaza toate
-4. Sterge contact
-0. Iesire
-Alege: 4
-Nume de sters: Ana
-Contact sters.
-
-===== AGENDA - contacte: 1 =====
-1. Adauga contact
-2. Cauta contact
-3. Afiseaza toate
-4. Sterge contact
-0. Iesire
-Alege: 3
-1. Dan - 0722
-
-===== AGENDA - contacte: 1 =====
-1. Adauga contact
-2. Cauta contact
-3. Afiseaza toate
-4. Sterge contact
-0. Iesire
-Alege: 0
-La revedere!
-```
-
-Aceasta este o aplicație adevărată, în sub 100 de linii. Combină: meniu cu `do-while` + `switch`, vectori paraleli, variabila `n` ca număr de contacte folosite, căutare liniară, ștergere prin mutare și verificarea limitelor (agenda plină / goală).
+**Încearcă tu (15 min)**  
+- [ ] Introduci cartonasele tale (cel puțin 6) și faci 3 căutări  
+- [ ] Cauți un cartonaș care apare de mai multe ori  
+- [ ] Mai adaugi un mesaj: „Colecția ta este foarte variată!” dacă nu ai nicio dublură  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Colecția mea”
 
-### Exercițiul A — „Agenda telefonică” (obligatoriu)
-Scrie programul din Exemplul 16. Adaugă o opțiune nouă: „5. Câte contacte încep cu o literă dată”. (Indiciu: `nume[i][0]` este prima literă din textul `nume[i]`, de tip `char`.)
-
-### Exercițiul B — Inventar
-Doi vectori paraleli: produse și cantități. Meniu: afișează stocul, caută un produs, vinde o cantitate (se scade din stoc, doar dacă există destulă) și un raport cu produsele epuizate.
-
-### Exercițiul C — Numere unice *(Provocare, opțional)*
-Citește `n` numere (maxim 30) și afișează doar valorile care apar o singură dată.
-
-### Exercițiul D — Eliminarea unei valori
-Șterge **toate** aparițiile unei valori dintr-un vector (nu doar prima). Atenție la poziția în care continui verificarea după o ștergere.
-
-### Exercițiul E — Inserare în ordine *(Provocare, opțional)*
-Dat fiind un vector deja în ordine crescătoare, inserează o valoare nouă pe poziția corectă, astfel încât vectorul să rămână în ordine.
+| | Ce trebuie să ai |
+|---|---|
+| **Minim** | Un program care citește `n` cartonașe într-un vector și spune dacă un număr căutat există |
+| **Complet** | Minim + poziția primei apariții, numărul de apariții, căutări repetate până la `0` și numărul de cartonașe dublate |
 
 **Gata când:**
 - [ ] Programul compilează fără erori  
-- [ ] Căutarea folosește `-1` sau `bool` pentru „negăsit”  
-- [ ] Meniul se repetă până la `0`  
-- [ ] Ai tratat cazurile: agendă goală, agendă plină, contact negăsit  
-- [ ] Ștergerea mută elementele corect și micșorează `n`  
-- [ ] Fișierul se numește `Prenume_Nume_M2L8.cpp`  
+- [ ] Citește cartonașele într-un vector, cu verificarea lui `n`  
+- [ ] Spune corect dacă un cartonaș există  
+- [ ] (Complet) Afișează prima poziție și numărul de apariții  
+- [ ] (Complet) Repetă căutarea până scrii `0`  
+- [ ] (Complet) Afișează câte cartonașe sunt dublate  
+- [ ] Ai testat cu un cartonaș care există, unul care nu există și unul dublat  
+- [ ] Fișierul se numește `Prenume_Nume_M2L8.cpp`
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Adaugă o căutare care găsește contacte după prefixul numelui (de exemplu, toate cele care încep cu „Ma”)  
-- [ ] Împiedică adăugarea a două contacte cu același nume  
-- [ ] Adaugă o opțiune care modifică numărul de telefon al unui contact  
-- [ ] Afișează agenda în ordine inversă  
-- [ ] Verifică dacă un cuvânt citit este palindrom (se citește la fel în ambele sensuri), cu două poziții care se apropie de mijloc  
+## Bonus ★★★ — Provocare: Cartonașele lipsă
+*Doar dacă ai terminat Complet.*
+
+Colecția completă are cartonașele de la `1` la `10`. Afișează **ce cartonașe îți lipsesc**. Pentru colecția `3 7 1 9 3 10`, lipsesc `2 4 5 6 8`.
+
+- [ ] Pentru fiecare număr `k` de la `1` la `10` cauți dacă există în vector  
+- [ ] Afișezi `k` doar dacă **nu** l-ai găsit  
+- [ ] Testezi cu o colecție completă (nu trebuie să lipsească nimic)  
+- [ ] Testezi cu valori în afara intervalului `1–10` (ele nu trebuie să schimbe rezultatul)  
 
 ---
 
@@ -841,48 +394,119 @@ Dat fiind un vector deja în ordine crescătoare, inserează o valoare nouă pe 
 
 | Ce vezi | Cauza | Corect |
 |---------|-------|--------|
-| „Negăsit” deși valoarea există | Ai pus `else gasit = false;` în buclă | Pune `false` doar înainte de buclă |
-| Poziția afișată este mereu `-1` | Compari cu altceva (`=` în loc de `==`) sau cauți în vectorul greșit | `if (v[i] == x)` |
-| Ai găsit valoarea, dar bucla continuă | Lipsește `break` | Adaugă `break;` după ce ai găsit |
-| Citești dincolo de vector | `while (v[i] != x && i < n)` (ordinea condițiilor) | `while (i < n && v[i] != x)` |
-| La ștergere dispare un element în plus | Ai uitat să micșorezi `n` sau ai mutat de la coadă | Mută de la `p` spre sfârșit, apoi `n--` |
-| La inserare se pierd valori | Ai mutat de la început | Mută de la coadă spre `p` |
-| `"ana"` nu găsește `"Ana"` | Literele mari și mici sunt diferite | Introdu exact aceeași formă |
-| Contactele cu spații în nume se citesc greșit | `cin >>` se oprește la spațiu | Deocamdată folosești nume dintr-un singur cuvânt |
+| „Nu il ai” apare de mai multe ori | Mesajul este scris în buclă, pentru fiecare element | Scrie răspunsul **după** buclă, în funcție de `gasit` |
+| Programul spune mereu „Nu il ai” | Ai pus `gasit = false;` în interiorul `for`, după ce îl ridicai | Pune `gasit = false;` **înainte** de `for` |
+| Poziția iese cu 1 mai mică | Ai afișat indicele, nu poziția | `i + 1` |
+| Valori ciudate sau oprire | `c[i] != x` este scris înaintea lui `i < n` | `i < n && c[i] != x` |
+| Contorul rămâne `0` | `aparitii` este declarat în buclă sau condiția este greșită | Declară-l înainte, folosește `==` |
+| Dublurile apar de mai multe ori | Ai numărat și aparițiile următoare | Afișează doar când `inainte == 0` |
+| A doua căutare dă același rezultat | Variabilele nu au fost puse pe zero | Pune-le la valoarea de start în interiorul buclei |
 
 ---
 
 ## Recapitulare pe scurt
-
-- **Căutare liniară:** parcurgi elementele pe rând și compari cu valoarea căutată.
-- „Există?” → un `bool gasit`, schimbat în `true` când găsești.
-- „Unde?” → un `int poz = -1`, pus pe `i` când găsești, plus `break`.
-- „De câte ori?” → un contor `aparitii++`.
-- „Toate respectă regula?” → cauți un contraexemplu.
-- Cu `while`, scrie întâi condiția pe indice: `i < n && v[i] != x`.
-- **Ștergere:** muți elementele de după `p` cu o poziție la stânga (de la început), apoi `n--`.
-- **Inserare:** muți elementele de la `p` cu o poziție la dreapta (de la coadă), pui valoarea, apoi `n++`.
+- Căutarea liniară: te uiți la rând, element cu element, până găsești valoarea sau se termină vectorul.  
+- Semnalul `gasit` pornește pe `false` și devine `true` când găsești.  
+- Poziția: `while (i < n && c[i] != x)` — după buclă, `i < n` înseamnă că ai găsit.  
+- Aparițiile: un contor cu `c[i] == x`.  
+- Mai multe căutări: `while (x != 0)` cu citirea din nou la finalul buclei.  
+- Dublurile: o buclă în altă buclă.  
 
 ---
 
 ## Quiz scurt
-- Cum faci o căutare liniară?  
-- Cum afli dacă un element există, și cum afli poziția lui?  
-- Cum verifici dacă toate elementele respectă o regulă?  
-- Cum ștergi un element de pe poziția `p`?  
-- Cum inserezi un element pe poziția `p`?  
+- De ce scriem „Nu il ai” **după** buclă, nu în ea?  
+- Ce înseamnă că după `while`, `i` este egal cu `n`?  
+- De ce scriem `i < n` înaintea lui `c[i] != x`?  
+- Cum afli de câte ori apare o valoare?  
+- De ce folosim `-1` pentru o poziție care nu a fost găsită?  
 
 ---
 
 ## Temă
-1. Refă **Exemplele 1–16** pe calculatorul tău.  
-2. Citește 10 numere și un număr `x`. Spune dacă `x` apare, pe ce poziții și de câte ori.  
-3. Citește un vector și afișează **primul** și **ultimul** număr negativ (sau un mesaj dacă nu există).  
-4. Scrie un program care citește 6 cuvinte și verifică dacă un cuvânt introdus de utilizator se află printre ele, indicând poziția.  
-5. **Bonus:** modifică agenda astfel încât la ieșire să afișeze un rezumat cu numărul de contacte adăugate și al celor șterse în timpul sesiunii (două contoare noi).  
-6. Salvează tot ca `Tema_M2L8_Prenume_Nume.cpp`.
+1. Refă **Exemplele 1–6** pe calculatorul tău și testează fiecare cu cel puțin două seturi de date.  
+2. Scrie un program care găsește primul număr par dintr-un vector și poziția lui.  
+3. Scrie un program care afișează **ultima** apariție a unui număr.  
+4. Scrie un program care afișează **toate pozițiile** unde apare un număr.  
+5. Salvează tot ca `Tema_M2L8_Prenume_Nume.cpp`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le de mână, rulează-le și schimbă-le după preferințe.
+
+**Acasă 1 — Primul număr par**
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v[6] = {7, 9, 4, 11, 6, 3};
+    int n = 6;
+
+    int i = 0;
+    while (i < n && v[i] % 2 != 0) {
+        i++;
+    }
+
+    if (i < n) {
+        cout << "Primul numar par este " << v[i] << " pe pozitia " << i + 1 << endl;
+    } else {
+        cout << "Nu exista numere pare" << endl;
+    }
+    return 0;
+}
+```
+Rezultatul este `Primul numar par este 4 pe pozitia 3`. Bucla se oprește la primul număr care **nu** este impar.
+
+**Acasă 2 — Ultima apariție**
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v[7] = {5, 8, 5, 2, 5, 9, 1};
+    int n = 7;
+    int x = 5;
+
+    int ultima = -1;
+    for (int i = 0; i < n; i++) {
+        if (v[i] == x) {
+            ultima = i;
+        }
+    }
+
+    if (ultima == -1) {
+        cout << "Nu exista" << endl;
+    } else {
+        cout << "Ultima aparitie: pozitia " << ultima + 1 << endl;
+    }
+    return 0;
+}
+```
+Rezultatul este `Ultima aparitie: pozitia 5`. Parcurgem tot vectorul și **rescriem** `ultima` la fiecare apariție, deci rămâne ultima.
+
+**Acasă 3 — Toate pozițiile**
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v[7] = {5, 8, 5, 2, 5, 9, 1};
+    int n = 7;
+    int x = 5;
+
+    cout << "Pozitiile lui " << x << ":";
+    for (int i = 0; i < n; i++) {
+        if (v[i] == x) {
+            cout << " " << i + 1;
+        }
+    }
+    cout << endl;
+    return 0;
+}
+```
+Rezultatul este `Pozitiile lui 5: 1 3 5`.
 
 ---
 
 ## Ce urmează — Lecția 9
-Punem vectorii **în ordine**: aflăm cum se interschimbă două valori și scriem prima noastră metodă de **sortare**.
+Punem vectorul în ordine: schimbăm două valori între ele și le sortăm crescător și descrescător. Construim **Recordurile mele** și afișăm cele mai bune trei.

@@ -1,23 +1,29 @@
-Lecția opt din Modulul doi. Căutarea în vector.
+Lecția opt din Modulul doi. Colecția mea. Căutarea într-un vector: există, unde este, de câte ori apare.
 
-Astăzi înveți să cauți într-un vector, ca atunci când apeși Control F într-o listă: există valoarea? Unde se află? De câte ori apare? Înveți și să ștergi și să inserezi elemente. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L opt.
+Ai o colecție de cartonașe cu numere și vrei să afli repede: îl am pe cel cu șapte? Unde este? De câte ori îl am? Astăzi înveți să cauți într-un vector, pas cu pas. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L opt.
 
-Obiectivul. Minim: un program care spune dacă un număr există într-un vector și pe ce poziție. Complet: minim, plus numărarea aparițiilor și o agendă cu meniu, în care cauți un nume și afișezi telefonul.
+Metoda se numește căutare liniară: te uiți la rând, element cu element, până găsești ce cauți sau până se termină vectorul. Cauți un contact în telefon sau un obiect într-un joc? Programul face la fel.
 
-Primul pas. Există valoarea? Folosești o variabilă bool, numită de exemplu gasit, care pornește pe fals. Parcurgi vectorul și, când găsești valoarea, o pui pe adevărat. Atenție: nu o pui înapoi pe fals în interiorul buclei, pentru că ai pierde rezultatul.
+Instrucțiuni noi azi. Un semnal, gasit, care pornește pe fals și devine adevărat când găsim valoarea. Un while care merge înainte cât timp nu am ajuns la capăt și elementul nu este cel căutat. După buclă, dacă i este mai mic decât n, valoarea există și i este poziția ei. Și minus unu, o poziție care nu poate exista, pentru situația în care nu am găsit nimic.
 
-Al doilea pas. Pe ce poziție? Folosești o variabilă poziție, care pornește de la minus unu, adică negăsit. Când găsești valoarea, pui în ea indicele și oprești bucla cu break. Poți căuta și cu while, care se oprește singur. În while, scrii întâi condiția pe indice: i mai mic ca n, și abia apoi comparația cu valoarea.
+Exemplul unu. Există sau nu? Semnalul gasit pornește pe fals. Parcurgi tot vectorul și, dacă vreun element este egal cu x, ridici semnalul pe adevărat. Abia după buclă știi răspunsul. Dacă ai spune că nu îl ai chiar în buclă, programul ar spune asta pentru fiecare element diferit. Încearcă tu: caută un cartonaș pe care îl ai și unul pe care nu-l ai, schimbă vectorul cu alte cinci numere și caută primul și ultimul element, ca să verifici că bucla ajunge la capete.
 
-Al treilea pas. De câte ori apare, toate pozițiile și ultima apariție. Pentru numărare folosești un contor. Pentru ultima apariție parcurgi tot vectorul și reții ultima poziție găsită. Mai poți afla dacă toate numerele sunt pozitive, căutând un contraexemplu, sau dacă există duplicate.
+Exemplul doi. Pe ce poziție este? Aici folosim while. Bucla merge înainte cât timp nu am ajuns la capăt și elementul nu este cel căutat. Se oprește când găsește valoarea sau când vectorul se termină. După buclă, i îți spune ce s-a întâmplat: dacă i este mai mic decât n, ai găsit valoarea, iar poziția este i plus unu pentru oameni. Dacă i este egal cu n, valoarea nu există. Atenție la ordine: scrie întâi i mai mic decât n și abia apoi comparația cu elementul. Cu și, când prima condiție este falsă, a doua nici nu se mai verifică, deci nu citim în afara vectorului. Încearcă tu: caută primul element, ultimul și unul care nu există, fă un tabel pe foaie pentru căutarea lui nouă și compară poziția de la zero cu cea de la unu.
 
-Al patrulea pas. Căutare de nume. Cauți un nume într-un vector de texte și afișezi răspunsul dintr-un alt vector, de exemplu telefonul. Atenție: Ana cu literă mare și ana cu literă mică sunt texte diferite.
+Exemplul trei. De câte ori apare? Este contorul din lecția șapte, cu condiția element egal cu x. Dacă numărul rămâne zero, valoarea nu există. Așa afli și dacă ai dubluri în colecție. Încearcă tu: caută paisprezece, nouă și o sută, apoi fă programul să scrie că nu apare, când numărul este zero.
 
-Al cincilea pas. Ștergere și inserare. La ștergere muți elementele de după poziția ștearsă cu un loc la stânga, începând de la început, apoi micșorezi n cu unu. La inserare muți elementele cu un loc la dreapta, începând de la coadă, ca să nu pierzi valori, pui valoarea nouă și mărești n cu unu.
+Exemplul patru. Mai multe căutări, până scrii zero. Combinăm ce știm. Santinela zero din lecția trei ține while-ul în funcțiune, iar înăuntru facem căutarea din exemplul unu. Variabila gasit este declarată în buclă, pentru că de fiecare dată căutarea începe de la: încă nu am găsit. Încearcă tu: fă patru căutări la rând, afișează câte căutări ai făcut și câte au fost reușite.
 
-Al șaselea pas. Proiectul. Agenda telefonică, cu meniu, în care adaugi, cauți și ștergi contacte.
+Exemplul cinci. Dublurile: o buclă în altă buclă. Pentru fiecare cartonaș cauți în tot vectorul de câte ori apare, ca la bucle imbricate. Numeri două lucruri: totalul aparițiilor și câte sunt înaintea lui. Afișezi valoarea doar dacă apare de mai multe ori și aceasta este prima apariție. Fără a doua condiție, paisprezece și șapte ar fi afișate de două ori. Încearcă tu: schimbă vectorul, încearcă unul fără dubluri și scoate a doua condiție ca să vezi ce se afișează.
 
-Greșeli frecvente. Spune negăsit, deși valoarea există, pentru că ai pus fals în buclă. Poziția este mereu minus unu, pentru că ai folosit un singur egal sau cauți în vectorul greșit. Ai găsit valoarea, dar bucla continuă, pentru că lipsește break. Citești dincolo de vector, pentru că ai scris condițiile în ordinea greșită. La ștergere dispare un element în plus, pentru că ai uitat să micșorezi n. La inserare se pierd valori, pentru că ai mutat de la început.
+Exemplul șase. Colecția mea, proiectul orei. Programul pune cap la cap tot ce ai învățat: do-while pentru n, for pentru citire, while cu santinelă pentru căutări, un for cu poziția primei apariții, pornită de la minus unu, și numărarea aparițiilor. La final, buclele imbricate găsesc dublurile. Fiecare parte face un singur lucru. Încearcă tu: introdu cel puțin șase cartonașe și fă trei căutări, caută un cartonaș care apare de mai multe ori și adaugă un mesaj dacă nu ai nicio dublură.
 
-Tema. Citești zece numere și un număr x, și spui dacă apare, pe ce poziții și de câte ori. Afișezi primul și ultimul număr negativ. Verifici dacă un cuvânt se află printre șase cuvinte. Salvezi ca Tema, linie jos, M doi, L opt.
+De făcut azi. Colecția mea. Minim: un program care citește n cartonașe într-un vector și spune dacă un număr căutat există. Complet: minim, plus poziția primei apariții, numărul de apariții, căutări repetate până la zero și numărul de cartonașe dublate.
 
-Recapitulare. Căutarea liniară parcurge elementele pe rând. Ștergerea mută la stânga, inserarea mută la dreapta. Succes!
+Bonus, trei stele. Cartonașele lipsă. Doar dacă ai terminat varianta completă. Colecția completă are cartonașele de la unu la zece. Afișează ce cartonașe îți lipsesc. Pentru fiecare număr de la unu la zece cauți dacă există în vector și îl afișezi doar dacă nu l-ai găsit. Testezi și cu o colecție completă, și cu valori în afara intervalului.
+
+Greșeli frecvente. Mesajul că nu îl ai apare de mai multe ori, pentru că l-ai scris în buclă. Programul spune mereu că nu îl ai, pentru că ai pus gasit pe fals chiar în for. Poziția iese cu unu mai mică, pentru că ai afișat indicele. Programul se oprește sau afișează valori ciudate, pentru că ai scris comparația cu elementul înaintea lui i mai mic decât n. Dublurile apar de mai multe ori, pentru că ai numărat și aparițiile următoare. A doua căutare dă același rezultat, pentru că variabilele nu au fost puse pe zero înăuntrul buclei.
+
+Tema. Refaci exemplele din lecție și le testezi cu cel puțin două seturi de date. Găsești primul număr par dintr-un vector și poziția lui. Afișezi ultima apariție a unui număr. Afișezi toate pozițiile unde apare un număr. Salvezi ca Tema, linie jos, M doi, L opt. Găsești în lecție și exemple pentru acasă.
+
+Recapitulare. Căutarea liniară trece prin elemente până găsește valoarea sau se termină vectorul. Semnalul pornește pe fals și devine adevărat la găsire. Poziția se află cu while, iar aparițiile cu un contor. Mai multe căutări se fac cu while și santinelă. Dublurile se găsesc cu o buclă în altă buclă. Succes!

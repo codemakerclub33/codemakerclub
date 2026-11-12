@@ -1,23 +1,27 @@
-Lecția patru din Modulul doi. Do while și alegerea buclei.
+Lecția patru din Modulul doi. Automatul de dulciuri. Do-while și alegerea buclei.
 
-Astăzi înveți bucla care rulează cel puțin o dată. Este perfectă pentru meniurile care se repetă și pentru validarea datelor. Înveți și cum alegi cea mai potrivită buclă pentru fiecare problemă. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L patru.
+Astăzi înveți bucla do-while, care se execută cel puțin o dată, și o folosești la un meniu care se repetă până alegi ieșirea. La final construiești un automat de dulciuri cu bani, produse și rest. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L patru.
 
-Obiectivul. Minim: un meniu cu cel puțin trei opțiuni, care se repetă până alegi zero. Complet: minim, plus o validare cu do while și întrebarea „Mai vrei o dată?”.
+Instrucțiuni noi azi. Do, urmat de acolade și de while cu condiția, execută corpul o dată, apoi repetă cât timp condiția este adevărată. La do-while se pune punct și virgulă după paranteza lui while. Sold minus egal preț scade prețul din sold.
 
-Primul pas. Structura. Scrii do, apoi corpul între acolade, apoi while cu condiția între paranteze și, la final, punct și virgulă. Diferența față de while: do while face mai întâi corpul și abia apoi verifică condiția. Așa corpul rulează sigur cel puțin o dată.
+Exemplul unu. Do-while: mai întâi execută, apoi întreabă. Corpul se execută prima dată fără să verifice nimic. Abia la final, condiția decide dacă se repetă. La while verifici înainte de fiecare rotire și bucla poate să nu ruleze deloc. La do-while verifici după fiecare rotire, deci bucla rulează cel puțin o dată. Încearcă tu: răspunde unu de trei ori și apoi zero, răspunde zero din prima și numără de câte ori apare mesajul, apoi schimbă mesajul.
 
-Al doilea pas. Validarea datelor. Citești nota în corpul buclei și repeți cât timp nota nu este între unu și zece. Nu mai repeți codul de citire de două ori. Poți face și un PIN cu număr limitat de încercări.
+Exemplul doi. Validarea datelor cu do-while. În lecția trecută ai citit numărul înainte de buclă și încă o dată în buclă. Cu do-while scrii citirea o singură dată, în interior, pentru că oricum trebuie să ceri numărul măcar o dată. Programul este mai scurt și mai clar. Încearcă tu: rulează cu valori greșite și apoi cu una corectă, schimbă intervalul și cere o vârstă între cinci și o sută douăzeci.
 
-Al treilea pas. Meniuri. Un meniu clasic arată așa: afișezi opțiunile, citești alegerea, o tratezi cu switch, iar bucla continuă cât timp alegerea nu este zero. Cu aceeași idee faci întrebarea „Mai vrei o dată? d sau n” și un coș în care adaugi produse.
+Exemplul trei. Un meniu care se repetă. Do-while repetă meniul, switch alege ce se întâmplă, iar bucla se oprește când utilizatorul alege zero. Zero este aici valoarea santinelă care oprește programul. Opțiunile invalide ajung la default. Încearcă tu: adaugă un al patrulea produs, alege opțiuni invalide și schimbă opțiunea de ieșire.
 
-Al patrulea pas. Cifrele unui număr, inclusiv zero. Cu while, numărul zero ar avea zero cifre. Cu do while corpul rulează o dată, deci zero are o cifră, cum e corect.
+Exemplul patru. Verificăm banii înainte de cumpărare. Un if verifică dacă soldul ajunge. Dacă da, scazi prețul din sold. Dacă nu, afișezi un mesaj și soldul rămâne neschimbat. Nu scazi niciodată banii fără să verifici înainte, altfel soldul ar putea deveni negativ. Încearcă tu: rulează cu zece lei și cumpără până nu mai ai bani, schimbă prețul sucului și numără câte sucuri ai cumpărat.
 
-Al cincilea pas. Ce buclă alegi. For, când știi de câte ori repeți. While, când nu știi și e posibil să nu ruleze deloc. Do while, când trebuie să ruleze măcar o dată.
+Exemplul cinci. Alegem bucla potrivită. For, while și do-while pot da același rezultat. Diferența apare când condiția este falsă de la început: do-while rulează o dată, while nu rulează deloc. Folosești for când știi de câte ori repeți. Folosești while când nu știi și s-ar putea să nu ruleze deloc. Folosești do-while când nu știi și trebuie să ruleze măcar o dată, de exemplu la un meniu sau la o validare. Încearcă tu: alege bucla potrivită pentru patru situații, explică pe foaie alegerea și rescrie numărătoarea cu fiecare dintre cele trei bucle.
 
-Al șaselea pas. Proiecte mici. Ghicește numărul cu do while, tabla înmulțirii repetată la cerere, un bancomat și jocul în care scapi din camera încuiată.
+Exemplul șase. Automatul de dulciuri. Programul citește soldul, apoi arată meniul până alegi zero. Switch stabilește prețul produsului ales. Un if verifică dacă ai ales un produs real, iar altul verifică dacă ai destui bani. Doi acumulatori și un contor țin evidența: cheltuit, sold și produse. La final se afișează rezumatul. Dacă ai trei lei și alegi ciocolata de cinci lei, automatul spune că nu ai destui bani și soldul rămâne trei. Încearcă tu: cumpără trei produse și ieși, încearcă să cumperi ceva mai scump decât soldul și adaugă un produs al tău.
 
-Greșeli frecvente. Ai uitat punct și virgulă după while la do while. Ai pus punct și virgulă după while la bucla while obișnuită: doar do while îl are. Meniul nu se oprește, pentru că în condiție nu apare opțiunea de ieșire. Ai declarat o variabilă în interiorul buclei, iar condiția nu o mai vede: declară variabila înainte de do. Soldul revine mereu la o mie, pentru că ai creat variabila în interiorul buclei. Ai declarat o variabilă într-un case, fără acolade.
+De făcut azi. Automatul de dulciuri. Minim: un meniu cu trei produse, în do-while, care se repetă până alegi zero și afișează ce ai ales. Complet: minim, plus banii citiți la început, verificarea soldului înainte de cumpărare, mesajul pentru opțiune invalidă și, la final, numărul de produse, totalul cheltuit și restul.
 
-Tema. Faci un meniu pentru o librărie, cu cărți, caiete, pixuri și ieșire. Afișezi cifrele unui număr, câte una pe linie, de la ultima la prima. Faci jocul Ghicește litera. Salvezi ca Tema, linie jos, M doi, L patru.
+Bonus, trei stele. Restul în monede. Doar dacă ai terminat varianta completă. La final, automatul dă restul în bancnote de cinci lei și monede de un leu. Cu slash și procent afli câte bancnote și câte monede trebuie să dea. Pentru un rest de treisprezece lei, rezultatul este două bancnote și trei monede. Testezi cu zero, patru, cinci și douăzeci și șapte.
 
-Recapitulare. Do while rulează măcar o dată și are punct și virgulă la final. Succes!
+Greșeli frecvente. Eroare de compilare, pentru că lipsește punct și virgulă după while la do-while. Meniul nu se mai oprește, pentru că opțiunea de ieșire nu este în condiție. Soldul devine negativ, pentru că ai scăzut prețul fără să verifici. Programul cumpără și la opțiunea zero, pentru că prețul a rămas de la tura trecută. Se afișează opțiune invalidă la zero, pentru că lipsește cazul pentru zero. Programul se strică dacă tastezi o literă, pentru că c-in așteaptă un număr.
+
+Tema. Refaci exemplele din lecție și le testezi cu cel puțin două seturi de date. Scrii un meniu cu trei opțiuni, de exemplu salut, glumă și ieșire, care se repetă până alegi ieșirea. Ceri un număr între unu și o sută cu do-while și spui dacă este par sau impar. Scrii un program Mai vrei o dată, care afișează un mesaj și întreabă dacă repetă. Salvezi ca Tema, linie jos, M doi, L patru. Găsești în lecție și exemple pentru acasă.
+
+Recapitulare. Do-while execută corpul o dată, apoi repetă cât timp condiția este adevărată. La do-while, punct și virgulă după while este obligatoriu. Un meniu se face cu do-while și switch. Zero poate fi valoarea santinelă care oprește meniul. Verifici soldul înainte să scazi banii. Succes!

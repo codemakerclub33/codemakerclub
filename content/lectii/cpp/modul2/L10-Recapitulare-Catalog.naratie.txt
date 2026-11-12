@@ -1,23 +1,31 @@
-Lecția zece din Modulul doi. Recapitulare și proiectul Catalogul de note.
+Lecția zece din Modulul doi. Arcada de jocuri. Recapitulare și proiect final.
 
-Astăzi încheiem Modulul doi. Recapitulăm tot ce am învățat, bucle și vectori, reparăm greșeli într-un cod stricat, rezolvăm un test scurt și construim Catalogul de note: un program cu meniu care adaugă, afișează, caută, sortează și șterge elevi. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, L zece.
+Astăzi aduni tot ce ai învățat în Modulul doi într-un singur program: o arcadă cu meniu, în care ții scorurile tale, le afișezi, le cauți și le sortezi. La final primești insigna Loop Master. Fișierul tău este Prenume, linie jos, Nume, linie jos, M doi, linie jos, Proiect, punct c p p.
 
-Obiectivul. Minim: catalogul cu adăugare, afișare și statistici, adică medie, minim și maxim. Complet: minim, plus căutare, clasament sortat și ștergere, cu verificări pentru situațiile limită: catalog gol, catalog plin și nume inexistent.
+Ce folosești azi. Nu înveți nicio instrucțiune nouă. Folosești for, contorul și acumulatorul din primele două lecții, while cu santinelă din lecția trei, do-while și meniul cu switch din lecția patru, buclele imbricate din lecția cinci, vectorii, suma, media, minimul și maximul din lecțiile șase și șapte, iar din lecțiile opt și nouă căutarea, schimbarea a două valori și sortarea.
 
-Primul pas. Recapitulare. Reiei buclele: for, când știi de câte ori repeți, while, când nu știi și poate nu rulează deloc, și do while, când trebuie să ruleze măcar o dată. Reiei bucle imbricate, vectori, statistici, numărări, căutare și sortare cu metoda bulelor.
+Recapitulare. Cinci programe din lecțiile modulului. Primul folosește for cu pas și o sumă. Al doilea folosește while cu santinelă. Al treilea combină do-while cu bucle imbricate. Al patrulea citește un vector și găsește maximul și poziția lui. Al cincilea caută o valoare într-un vector. Citește fiecare program, spune cu voce tare ce face și ce lecție ilustrează. Încearcă tu: alege trei dintre cele cinci programe și rescrie-le fără să te uiți.
 
-Cele cinci șabloane de care ai nevoie mereu: acumulatorul pentru sumă, contorul pentru numărare, minimul și maximul care pornesc de la primul element, steagul bool pentru „am găsit”, și poziția care pornește de la minus unu.
+Depanare. Primești un program cu șase greșeli de logică. Se compilează, dar rezultatele sunt greșite sau imprevizibile. Suma nu a pornit de la zero, bucla merge cu un element prea departe, media taie zecimalele, maximul nu pornește de la primul element, după if este un punct și virgulă care face blocul să se execute mereu, iar la afișare apare indicele în loc de zi. Le cauți singur, înainte să te uiți la soluție. Compilatorul nu prinde nicio greșeală aici, de aceea testarea cu valori este atât de importantă.
 
-Al doilea pas. Vânătoarea de greșeli. Primești coduri stricate: un maxim care nu e maxim, o medie fără zecimale și o buclă care nu face nimic. Tu găsești ce nu merge și repari.
+Planul proiectului. Arcada de jocuri este un program cu meniu, care se repetă până alegi zero. Scorurile se păstrează într-un vector de cel mult douăzeci de locuri. Opțiunea unu adaugă un scor, dacă mai este loc. Opțiunea doi afișează scorurile. Opțiunea trei calculează media, minimul și maximul. Opțiunea patru caută un scor și spune pe ce poziție este. Opțiunea cinci sortează scorurile descrescător. Opțiunea zero închide programul.
 
-Al treilea pas. Testul scurt. Zece minute, fără calculator. Spui ce afișează fiecare secvență, apoi verifici răspunsurile.
+Înainte de demo, verifici lista: ai un antet și cel puțin trei comentarii utile, meniul se repetă cu do-while, folosești switch cu default, scorurile sunt într-un vector, verifici lista plină și lista goală, programul rulează fără erori cu două seturi de date, indentarea este corectă și poți explica programul în treizeci de secunde.
 
-Al patrulea pas. Proiectul. Catalogul de note are un meniu într-un do while. Opțiunile sunt: adaugi un elev, afișezi catalogul, afli statisticile, cauți un elev, vezi clasamentul și ștergi un elev. În varianta de bază faci adăugarea, afișarea și statisticile. În varianta completă adaugi căutarea, clasamentul și ștergerea.
+Modelul. Este doar o idee: nu îl copia, ci construiește programul tău, cu opțiuni sau mesaje alese de tine. Do-while ține meniul în funcțiune. Variabila n este numărul de scoruri folosite, vectorul are douăzeci de locuri, dar folosim doar primele n. Fiecare opțiune verifică întâi situațiile limită, lista goală sau plină. Sortarea, căutarea și statisticile sunt blocurile din lecțiile șapte, opt și nouă, puse în cazuri de switch.
 
-Atenție la situațiile limită. Dacă ai trei elevi și ceri statistici, merge. Dar dacă e gol, nu împarți la zero. Dacă e plin, nu mai adaugi. Dacă numele nu există, spui asta.
+Prezentarea. Spui într-o propoziție ce face programul, îl rulezi cu un set de date, arăți o secvență din cod și spui ce lecție ilustrează, apoi răspunzi la o întrebare.
 
-Greșeli frecvente. Catalogul uită elevii, pentru că ai declarat variabilele în interiorul buclei. După sortare, numele nu se potrivesc cu notele, pentru că ai sortat un singur vector. Media este greșită, pentru că împarți la numărul maxim de locuri, nu la n. La ștergere rămâne un gol, pentru că ai uitat să micșorezi n. Se pot adăuga mai mult de treizeci de elevi, pentru că lipsește verificarea.
+Mini-testul. Fără să rulezi nimic, scrii pe foaie ce afișează fiecare dintre cele patru secvențe, apoi verifici răspunsurile.
 
-Tema. Termini și testezi catalogul și îl încarci. Refaci din memorie trei programe mici: suma unui vector, maximul cu poziția și sortarea crescătoare. Scrii cinci greșeli pe care le-ai făcut în acest modul. Salvezi ca Tema, linie jos, M doi, L zece.
+De făcut azi. Arcada de jocuri. Minim: meniu cu do-while și switch, cu opțiunile adaugă un scor, afișează scorurile și ieșire. Complet: minim, plus statistici, căutare, sortare, verificări pentru lista plină sau goală, antet și comentarii și test cu cel puțin două seturi de date.
 
-Bravo, ai terminat Modulul doi!
+Bonus, trei stele. Ștergerea unui scor. Doar dacă ai terminat varianta completă. Adaugi în meniu opțiunea de ștergere: utilizatorul alege poziția, iar scorul dispare din listă. Verifici că poziția există. Muți toate scorurile de după poziția ștearsă cu un loc spre stânga. Scazi n cu unu. Testezi ștergerea primului, a ultimului și a unui scor din mijloc.
+
+Greșeli frecvente. Meniul se oprește după o singură alegere, pentru că lipsește bucla. Programul trece prin mai multe cazuri, pentru că lipsește break. Primești eroare la declarare în case, deci pune codul între acolade. Statisticile ies ciudate când lista e goală, deci verifică n înainte. Scorurile se pierd, pentru că ai uitat să crești n după adăugare. Programul afișează valori ciudate, pentru că ai adăugat mai multe scoruri decât are vectorul. Sortarea strică ordinea, pentru că bucla interioară nu pornește de la i plus unu.
+
+Recapitularea modulului. Lecția unu: for și contor. Lecția doi: sumă, produs, numărare și medie. Lecția trei: while, santinelă și cifrele unui număr. Lecția patru: do-while și meniu. Lecția cinci: bucle imbricate. Lecția șase: vectori. Lecția șapte: sumă, medie, minim și maxim. Lecția opt: căutare și dubluri. Lecția nouă: sortare. Lecția zece: un program complet.
+
+Insigna Loop Master. Felicitări! Dacă ai bifat toată lista de verificare, ai primit insigna Loop Master. Ai învățat să repeți acțiuni cu bucle și să lucrezi cu mai multe valori deodată, în vectori. Programele tale pot acum să proceseze sute de date cu aceleași câteva linii de cod.
+
+Tema. Îmbunătățești proiectul cu o singură idee mică. Scrii pe foaie trei lucruri învățate în Modulul doi și unul pe care vrei să îl înțelegi mai bine. Repeți cele cinci programe de recapitulare și le rescrii din memorie. Găsești în lecție și exemple pentru acasă. Bravo, ai terminat Modulul doi!
