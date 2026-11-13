@@ -10,7 +10,7 @@ Primul pas. And și or. And înseamnă și una, și alta: amândouă condițiile
 
 Al doilea pas. Not și tabelele de adevăr. Not inversează: din adevărat face fals. Poți ține minte simplu: and este strict, cere ambele, or este blând, îi ajunge una.
 
-Al treilea pas. Situații din viața reală. Nota trebuie să fie între unu și zece. Un interval se scrie scurt, unu mai mic sau egal cu x, mai mic sau egal cu zece.
+Al treilea pas. Situații din viața reală. Scorul trebuie să fie între unu și zece. Un interval se scrie scurt, unu mai mic sau egal cu x, mai mic sau egal cu zece.
 
 Al patrulea pas. Parole și ordinea de evaluare. Poți valida o parolă cu mai multe reguli. Python evaluează întâi not, apoi and, apoi or. Parantezele schimbă ordinea. Când nu ești sigur, pune paranteze.
 

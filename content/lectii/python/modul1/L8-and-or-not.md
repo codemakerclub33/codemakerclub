@@ -34,7 +34,7 @@ La finalul orei folosești `and`, `or` și `not`, înțelegi tabelele de adevăr
 | `and` | Adevărat doar dacă ambele condiții sunt adevărate | `varsta >= 12 and inaltime >= 140` |
 | `or` | Adevărat dacă măcar una e adevărată | `zi == "sambata" or zi == "duminica"` |
 | `not` | Răstoarnă adevărul | `not ploua` |
-| `1 <= x <= 10` | Verifică un interval | `1 <= nota <= 10` |
+| `1 <= x <= 10` | Verifică un interval | `1 <= scor <= 10` |
 
 ---
 
@@ -161,30 +161,30 @@ Poți ține minte simplu: `and` este „strict” (cere ambele), `or` este „bl
 
 ## 4. Situații din viața reală
 
-### Exemplul 5 — Interval: nota trebuie să fie între 1 și 10
+### Exemplul 5 — Interval: scorul trebuie să fie între 1 și 10
 
 ```python
-nota = int(input("Scrie o nota: "))
-if nota >= 1 and nota <= 10:
-    print("Nota valida")
+scor = int(input("Scrie un scor: "))
+if scor >= 1 and scor <= 10:
+    print("Scor valid")
 else:
-    print("Nota invalida")
+    print("Scor invalid")
 
-if 1 <= nota <= 10:
+if 1 <= scor <= 10:
     print("Si asa merge, mai scurt!")
 ```
 
 **Ieșire:**
 ```text
-Scrie o nota: 7
-Nota valida
+Scrie un scor: 7
+Scor valid
 Si asa merge, mai scurt!
 ```
 
-Python permite o scriere scurtă pentru intervale: `1 <= nota <= 10`, exact ca la matematică.
+Python permite o scriere scurtă pentru intervale: `1 <= scor <= 10`, exact ca la matematică.
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 5** (Interval: nota trebuie să fie între 1 și 10)  
+- [ ] Am scris și am rulat **Exemplul 5** (Interval: scorul trebuie să fie între 1 și 10)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
