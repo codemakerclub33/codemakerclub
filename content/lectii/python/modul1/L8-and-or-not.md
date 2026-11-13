@@ -183,8 +183,6 @@ Si asa merge, mai scurt!
 
 Python permite o scriere scurtă pentru intervale: `1 <= nota <= 10`, exact ca la matematică.
 
-
-
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 5** (Interval: nota trebuie să fie între 1 și 10)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
@@ -432,5 +430,66 @@ if not varsta > 5 and
 
 ---
 
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+
+### 1. Divizibil cu 3 și cu 5
+
+```python
+n = int(input("Un numar: "))
+if n % 3 == 0 and n % 5 == 0:
+    print("Este divizibil si cu 3, si cu 5")
+else:
+    print("Nu este divizibil cu amandoua")
+```
+
+**Ieșire:**
+```text
+Un numar: 30
+Este divizibil si cu 3, si cu 5
+```
+
+### 2. Semaforul deștept
+
+```python
+lumina = input("Lumina (verde/rosu): ")
+masina = input("Vine o masina? (da/nu): ")
+if lumina == "verde" and masina == "nu":
+    print("Poti traversa!")
+else:
+    print("Asteapta!")
+```
+
+**Ieșire:**
+```text
+Lumina (verde/rosu): verde
+Vine o masina? (da/nu): da
+Asteapta!
+```
+
+### 3. Verificare de parolă
+
+```python
+parola = input("Parola: ")
+if len(parola) < 8:
+    print("Prea scurta (minim 8 caractere)")
+elif parola.isdigit():
+    print("Nu poate avea doar cifre")
+elif parola == "parola":
+    print("Alege altceva decat cuvantul parola")
+elif " " in parola:
+    print("Nu poate avea spatii")
+else:
+    print("Parola este buna!")
+```
+
+**Ieșire:**
+```text
+Parola: Pisica123
+Parola este buna!
+```
+
+---
 ## Ce urmează — Lecția 9
 Aducem **norocul** în programe: zaruri, monede și numere aleatoare cu modulul `random`.

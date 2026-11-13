@@ -1,12 +1,14 @@
-Lecția șase din Modulul doi. Liste, partea a doua.
+Lecția șase. Clasamentul.
 
 Astăzi sortezi liste, tai texte în cuvinte și lipești cuvinte în text. Proiectul se numește Clasamentul. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P doi, linie jos, L șase, punct P Y.
 
-Obiectivul. La final sortezi liste cu sort și sorted, folosești split și join, construiești liste cu for, lucrezi cu liste de liste și copiezi corect o listă. Minim: un program care citește scoruri într-o listă și le afișează sortate. Complet: minim, plus podiumul cu primii trei, media scorurilor și o tabelă făcută din liste.
+Ce facem azi. La final sortezi liste cu sort și sorted, folosești split și join, lucrezi cu liste de liste și copiezi corect o listă. Clasamentele din jocuri, listele de scoruri și tabelele cu date sunt liste sortate sau liste de liste. Capcana cu copierea listelor îi încurcă și pe programatorii cu experiență, așa că e bine s-o înveți acum.
 
-Primul pas. Sortarea. Sort schimbă lista pe loc. Sorted lasă lista neschimbată și dă o listă nouă. Cu reverse egal True sortezi descrescător. Poți sorta și texte, în ordine alfabetică.
+Instrucțiuni noi azi. Sort sortează lista pe loc. Sorted dă o listă sortată și lasă originalul neschimbat. Split taie un text în cuvinte, iar join lipește cuvintele la loc într-un singur text. O listă poate conține alte liste, ca un tabel. Copy face o copie adevărată a unei liste.
 
-Al doilea pas. Construim și lipim liste. Plus lipește două liste, iar steluța o repetă. Zero într-o listă înmulțit cu cinci creează o listă cu cinci zerouri. Poți construi o listă cu for sau cu list de range.
+Primul pas. Sortarea. Sort schimbă lista pe loc. Sorted lasă lista neschimbată și dă o listă nouă. Cu reverse egal True sortezi descrescător.
+
+Al doilea pas. Construim și lipim liste. Plus lipește două liste, iar steluța o repetă. Zero într-o listă înmulțit cu cinci creează o listă cu cinci zerouri.
 
 Al treilea pas. Text în listă și listă în text. Split face din text o listă de cuvinte. Join face invers: lipește cuvintele dintr-o listă într-un text, cu un separator.
 
@@ -20,8 +22,12 @@ Al șaptelea pas. Mini-proiect. Clasamentul: citești într-o buclă nume și sc
 
 Greșeli frecvente. Sortate egal lista punct sort dă None, pentru că sort nu returnează nimic. Schimbi o listă și se schimbă și alta: b egal a nu copiază. Type Error la join: elementele trebuie să fie texte, nu numere.
 
-Proiectul de azi. Clasamentul. Minim înseamnă scoruri sortate. Complet înseamnă podium, medie și tabelă.
+Proiectul de azi. Clasamentul. Minim înseamnă scoruri sortate. Complet înseamnă nume și scoruri citite, clasament, podium și medie.
+
+Provocare, trei stele. Clasamentul fără repetări. Doar dacă ai terminat varianta completă. Afișezi clasamentul fără numere duplicate. Citești o propoziție și afișezi cuvintele sortate alfabetic. Faci o tablă de șah de trei pe trei, cu liste în liste. Găsești al doilea cel mai mare scor din listă.
 
 Recapitulare. Sort sortează lista pe loc, sorted face o listă nouă. Plus lipește liste. Split face din text o listă, join face invers. O listă poate conține alte liste. Pentru o copie folosești copy.
+
+Ce urmează. În lecția următoare înveți dicționarele: cutii în care nu cauți după număr, ci după nume, ca într-o agendă de telefon.
 
 Succes cu clasamentul.

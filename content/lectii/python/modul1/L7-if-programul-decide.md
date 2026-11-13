@@ -212,8 +212,6 @@ Bine ai venit!
 
 Textele se compară cu `==`. Atenție: `"Python"` și `"python"` sunt **diferite**!
 
-
-
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 6** (Parola)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
@@ -460,5 +458,76 @@ if varsta > 12
 
 ---
 
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+
+### 1. Cel mai mare dintre trei
+
+```python
+a = int(input("Primul: "))
+b = int(input("Al doilea: "))
+c = int(input("Al treilea: "))
+if a >= b and a >= c:
+    print("Cel mai mare:", a)
+elif b >= c:
+    print("Cel mai mare:", b)
+else:
+    print("Cel mai mare:", c)
+```
+
+**Ieșire:**
+```text
+Primul: 4
+Al doilea: 9
+Al treilea: 6
+Cel mai mare: 9
+```
+
+### 2. Numele zilei
+
+```python
+zi = int(input("Ziua (1-7): "))
+if zi == 1:
+    print("luni")
+elif zi == 2:
+    print("marti")
+elif zi == 3:
+    print("miercuri")
+elif zi == 4:
+    print("joi")
+elif zi == 5:
+    print("vineri")
+elif zi == 6:
+    print("sambata")
+elif zi == 7:
+    print("duminica")
+else:
+    print("Numar gresit")
+```
+
+**Ieșire:**
+```text
+Ziua (1-7): 3
+miercuri
+```
+
+### 3. An bisect
+
+```python
+an = int(input("Anul: "))
+if an % 4 == 0:
+    print("An bisect")
+else:
+    print("Nu este bisect")
+```
+
+**Ieșire:**
+```text
+Anul: 2024
+An bisect
+```
+
+---
 ## Ce urmează — Lecția 8
 Învățăm `and`, `or`, `not`: cum punem **mai multe condiții** laolaltă.

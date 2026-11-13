@@ -172,7 +172,6 @@ Care e culoarea ta preferata? albastru
 Salut, Maria! albastru este o culoare frumoasa.
 ```
 
-
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 6** (Un mic dialog)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
@@ -188,7 +187,6 @@ varsta = int(input("Cati ani ai? "))
 ```
 
 Dacă utilizatorul scrie `zece` în loc de `10`, Python oprește programul cu `ValueError: invalid literal for int()`. Programul **nu** se strică din cauza ta: cere pur și simplu un număr, iar tu ai scris litere. Mai târziu, în modulul 4, vei învăța să prinzi astfel de erori cu `try/except`. Până atunci, **scrie doar numere** când programul cere numere.
-
 
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 7** (Ce se întâmplă dacă scrii litere unde cerem număr?)  
@@ -362,5 +360,55 @@ print("Dublul este" pret * 2)
 
 ---
 
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+
+### 1. Media a două numere
+
+```python
+a = float(input("Primul numar: "))
+b = float(input("Al doilea numar: "))
+print("Media:", (a + b) / 2)
+```
+
+**Ieșire:**
+```text
+Primul numar: 8
+Al doilea numar: 5
+Media: 6.5
+```
+
+### 2. Din Celsius în Fahrenheit
+
+```python
+c = float(input("Grade Celsius: "))
+print("Fahrenheit:", c * 9 / 5 + 32)
+```
+
+**Ieșire:**
+```text
+Grade Celsius: 25
+Fahrenheit: 77.0
+```
+
+### 3. Dublul, triplul și pătratul
+
+```python
+n = int(input("Un numar: "))
+print("Dublul:", n * 2)
+print("Triplul:", n * 3)
+print("Patratul:", n ** 2)
+```
+
+**Ieșire:**
+```text
+Un numar: 4
+Dublul: 8
+Triplul: 12
+Patratul: 16
+```
+
+---
 ## Ce urmează — Lecția 5
 Învățăm **operatorii**: rest la împărțire, ridicare la putere și ordinea în care Python face calculele.

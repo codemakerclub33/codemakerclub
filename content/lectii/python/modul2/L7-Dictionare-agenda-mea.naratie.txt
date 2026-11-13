@@ -1,8 +1,10 @@
-Lecția șapte din Modulul doi. Dicționare, agenda mea.
+Lecția șapte. Agenda mea.
 
 Astăzi înveți să păstrezi date cu etichete, ca într-o agendă. Proiectul se numește Agenda mea. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P doi, linie jos, L șapte, punct P Y.
 
-Obiectivul. La final creezi dicționare, citești, adaugi, modifici și ștergi valori, verifici dacă o cheie există, parcurgi un dicționar cu for și folosești get, items, keys și values. Minim: un dicționar cu datele tale, nume, vârstă, clasă și hobby, afișat. Complet: minim, plus o agendă cu meniu: adaugă, caută, arată tot, ieșire.
+Ce facem azi. La final creezi dicționare, citești, adaugi, modifici și ștergi valori, verifici dacă o cheie există, parcurgi un dicționar cu for și folosești get, items, keys și values. Aplicațiile păstrează date cu etichete: nume Ana, scor o sută douăzeci, nivel trei. Asta este un dicționar. Același tip de date stă în spatele profilurilor de utilizator, al inventarului dintr-un joc și al dicționarelor adevărate.
+
+Instrucțiuni noi azi. Un dicționar păstrează perechi: o cheie și o valoare, între acolade. Citești și schimbi o valoare cu cheia între paranteze drepte. Get citește fără eroare, chiar dacă cheia lipsește. In verifică dacă o cheie există, iar del șterge o pereche. Items te lasă să parcurgi cheile și valorile cu for.
 
 Primul pas. Ce este un dicționar. Un dicționar ține perechi cheie și valoare. Cheia este eticheta, iar valoarea este ce se află în spatele ei. Se scrie între acolade. De exemplu, cheia nume are valoarea Ana, iar cheia vârstă are valoarea zece. Citești cu cheia între paranteze pătrate.
 
@@ -12,7 +14,7 @@ Al treilea pas. Căutăm în dicționar. Cu in verifici dacă o cheie există. G
 
 Al patrulea pas. Parcurgem un dicționar. Keys dă cheile, values dă valorile, items dă perechile. Cu for parcurgi perechile, de exemplu produs și preț.
 
-Al cincilea pas. Folosiri practice. Un dicționar poate înlocui mai multe if-uri, de exemplu numărul zilei devine numele zilei. Poți construi un dicționar din input. Poți număra literele dintr-un text: cheia este litera, valoarea este de câte ori apare.
+Al cincilea pas. Folosiri practice. Poți construi un dicționar din input, adică din ce scrie utilizatorul.
 
 Al șaselea pas. Mini-proiect. Agenda mea, cu meniu care se repetă: adaugă un contact, caută, arată tot, ieșire.
 
@@ -20,6 +22,10 @@ Greșeli frecvente. Key Error: cheia nu există, deci verifică cu in sau folose
 
 Proiectul de azi. Agenda mea. Minim înseamnă un dicționar cu datele tale. Complet înseamnă agendă cu meniu.
 
+Provocare, trei stele. Inventarul de joc. Doar dacă ai terminat varianta completă. Numeri cuvintele dintr-o propoziție, nu literele, cu un dicționar. Faci un inventar de joc: obiect și cantitate, cu adăugare și scoatere de obiecte. Afișezi agenda sortată alfabetic. Pui în dicționar contacte cu telefon și email.
+
 Recapitulare. Un dicționar ține perechi cheie și valoare, între acolade. Citești cu cheia în paranteze pătrate. Get nu dă eroare dacă lipsește cheia. In verifică existența cheii. Del și pop șterg. Keys, values și items se parcurg cu for.
+
+Ce urmează. În lecția următoare înveți funcțiile: bucăți de program cărora le dai un nume și pe care le folosești de câte ori ai nevoie.
 
 Succes cu agenda.

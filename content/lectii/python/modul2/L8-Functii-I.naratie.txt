@@ -1,8 +1,10 @@
-Lecția opt din Modulul doi. Funcții, prima parte.
+Lecția opt. Cutia cu unelte.
 
 Astăzi înveți să-ți faci propriile comenzi. Proiectul se numește Cutia cu unelte. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P doi, linie jos, L opt, punct P Y.
 
-Obiectivul. La final definești funcții cu def, le apelezi, le dai parametri, folosești return pentru a primi un rezultat, înțelegi diferența dintre print și return și lucrezi cu valori implicite. Minim: două funcții, una fără parametri și una cu un parametru. Complet: minim, plus o funcție care returnează un rezultat și un program cu cel puțin cinci funcții.
+Ce facem azi. La final definești funcții cu def, le apelezi, le dai parametri, folosești return pentru a primi un rezultat, înțelegi diferența dintre print și return și lucrezi cu valori implicite. Imaginează-ți că ai scris o dată cum se desenează un chenar frumos. Fără funcții, ai copia codul de fiecare dată. Cu o funcție, îi spui doar numele. Programele mari se fac din sute de funcții mici.
+
+Instrucțiuni noi azi. Def definește o funcție, adică o bucată de program cu nume. Parametrii sunt valorile pe care funcția le primește. Return trimite un rezultat înapoi. Poți da unui parametru o valoare implicită. O funcție se apelează cu numele ei și paranteze, iar definiția singură nu face nimic.
 
 Primul pas. Prima funcție. O funcție este un grup de instrucțiuni cu un nume. O definești o singură dată, cu def, apoi o apelezi, adică o chemi, de câte ori vrei. Scrii def, numele, paranteze, două puncte, iar sub ea, indentat, ce face.
 
@@ -20,6 +22,10 @@ Greșeli frecvente. Name Error: ai apelat funcția înainte să o definești. Nu
 
 Proiectul de azi. Cutia cu unelte. Minim înseamnă două funcții. Complet înseamnă cinci funcții, cu return.
 
+Provocare, trei stele. Atelierul de funcții. Doar dacă ai terminat varianta completă. Faci o funcție care spune dacă un număr este prim. Faci o funcție care returnează media a trei numere. Faci o funcție care desenează un triunghi de steluțe cu înălțimea dată. Faci o funcție care întoarce un text invers.
+
 Recapitulare. Def definește o funcție, numele cu paranteze o apelează. Funcția trebuie definită înainte de apel. Parametrii primesc valori la apel. Return trimite o valoare înapoi și oprește funcția. Print arată, return dă înapoi. Un parametru poate avea valoare implicită.
+
+Ce urmează. În lecția următoare înveți funcții mai puternice: care primesc liste, returnează mai multe valori, se apelează între ele și te ajută să organizezi programe mari.
 
 Succes cu funcțiile.

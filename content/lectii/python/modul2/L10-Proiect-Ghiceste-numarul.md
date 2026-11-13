@@ -1,4 +1,5 @@
-# LECȚIA 10 — Proiect: Ghicește numărul
+# LECȚIA 10 — Ghicește numărul
+### Proiectul modulului: jocul complet
 **Modulul 2 · Repetăm, colecționăm, organizăm · 2 ore**  
 **Code Maker Club · Python Builder**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai un joc complet, organizat în funcții: număr secret, încercări limitate, indicii „prea mic / prea mare”, validarea răspunsurilor, mai multe runde și statistici.  
-**Minim:** jocul funcționează o rundă, cu indicii.  
-**Ținta orei (Complet):** + încercări limitate, validare, runde repetate și scor final.
-
-## De ce contează
-Aproape orice joc are aceleași piese: o **regulă secretă**, **răspunsul jucătorului**, **feedback** și **scor**. Dacă înțelegi jocul „Ghicește numărul”, poți construi multe alte jocuri.
+## Ce facem azi
+La finalul orei ai un joc complet, organizat în funcții: număr secret, încercări limitate, indicii „prea mic / prea mare”, validarea răspunsurilor, mai multe runde și statistici. Aproape orice joc are aceleași piese: o **regulă secretă**, **răspunsul jucătorului**, **feedback** și **scor**. Dacă înțelegi jocul „Ghicește numărul”, poți construi multe alte jocuri.
 
 ---
 
@@ -25,10 +21,24 @@ Aproape orice joc are aceleași piese: o **regulă secretă**, **răspunsul juc�
 | 10–25 | Jocul cel mai simplu (**Exemplul 1**) |
 | 25–45 | Încercări limitate (**Exemplele 2–3**) |
 | 45–65 | Validarea citirii (**Exemplul 4**) |
-| 65–85 | Funcții și runde (**Exemplele 5–7**) |
-| 85–100 | Statistici și variante (**Exemplele 8–9**) |
-| 100–115 | Jocul final (**Exemplul 10**) și proiectul tău |
+| 65–85 | Funcții și runde (**Exemplele 5–6**) |
+| 85–100 | Strategia câștigătoare (**Exemplul 7**) |
+| 100–115 | Jocul final (**Exemplul 8**) și proiectul tău |
 | 115–120 | Verificare Modul 2 și autoevaluare |
+
+---
+
+## Instrucțiuni noi azi
+
+Nu ai instrucțiuni noi. Combini ce știi deja:
+
+| Ce folosim | Ce face | Din lecția |
+|------------|---------|------------|
+| `for`, `while`, `break` | Încercări limitate, cu ieșire când ai ghicit | 1, 3 și 4 |
+| `random.randint(1, 100)` | Alege un număr secret aleator | Modulul 1, lecția 9 |
+| `text.isdigit()` | Verifică dacă textul are doar cifre | 9 |
+| `def` + `return`, `main()` | Împarte jocul în funcții mici | 8 și 9 |
+| listă, `min`, `sum`, `len` | Statistici dintr-o listă de scoruri | 5 și 6 |
 
 ---
 
@@ -210,31 +220,7 @@ Rezultat: 4
 
 Funcția returnează **numărul de încercări** dacă ai câștigat și `None` dacă ai pierdut. Programul care o folosește poate hotărî ce face cu această informație.
 
-### Exemplul 6 — Mai multe runde
-
-```python
-rezultate = [4, 6]
-while True:
-    raspuns = input("Mai joci? (da/nu) ")
-    if raspuns.lower() != "da":
-        break
-    print("Runda noua!")
-print("Ai terminat. Rezultate:", rezultate)
-```
-
-**Ieșire:**
-```text
-Mai joci? (da/nu) da
-Runda noua!
-Mai joci? (da/nu) da
-Runda noua!
-Mai joci? (da/nu) nu
-Ai terminat. Rezultate: [4, 6]
-```
-
-Bucla `while True` cu `break` este perfectă pentru „mai joci?”. Metoda `lower()` transformă răspunsul în litere mici, așa că `DA`, `Da` și `da` sunt toate bune.
-
-### Exemplul 7 — Dificultate
+### Exemplul 6 — Dificultate
 
 ```python
 def alege_dificultate(litera):
@@ -261,33 +247,14 @@ O funcție care returnează **două valori** (de la Lecția 9) ne ajută să ale
 
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 5** (Funcția care joacă o rundă)  
-- [ ] Am scris și am rulat **Exemplul 6** (Mai multe runde)  
-- [ ] Am scris și am rulat **Exemplul 7** (Dificultate)  
+- [ ] Am scris și am rulat **Exemplul 6** (Dificultate)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 4. Statistici și strategie
 
-### Exemplul 8 — Statistici cu o listă
-
-```python
-scoruri = [4, 6, 5]
-print("Runde castigate:", len(scoruri))
-print("Cel mai bun scor:", min(scoruri), "incercari")
-print(f"Media: {sum(scoruri) / len(scoruri):.1f} incercari")
-```
-
-**Ieșire:**
-```text
-Runde castigate: 3
-Cel mai bun scor: 4 incercari
-Media: 5.0 incercari
-```
-
-Lista `scoruri` memorează câte încercări ți-au trebuit în fiecare rundă câștigată. Cu `len`, `min` și `sum` scoți statisticile. La acest joc, **mai puține încercări înseamnă un scor mai bun**.
-
-### Exemplul 9 — Strategia: tăiem intervalul în două
+### Exemplul 7 — Strategia: tăiem intervalul în două
 
 ```python
 secret = 73
@@ -323,15 +290,14 @@ Gasit in 6 incercari
 Este **cea mai bună strategie**: încerci mereu numărul din **mijlocul** intervalului și eliminezi jumătate din posibilități. Pentru numere de la 1 la 100, ai nevoie de cel mult **7 încercări**. De aceea jocul nostru are 7 încercări: se poate câștiga mereu!
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 8** (Statistici cu o listă)  
-- [ ] Am scris și am rulat **Exemplul 9** (Strategia: tăiem intervalul în două)  
+- [ ] Am scris și am rulat **Exemplul 7** (Strategia: tăiem intervalul în două)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 5. Jocul final
 
-### Exemplul 10 — „Ghicește numărul”
+### Exemplul 8 — „Ghicește numărul”
 
 ```python
 import random
@@ -423,14 +389,55 @@ Media: 5.0 incercari
 Programul are **trei funcții**: `citeste_numar` (citire sigură), `joaca_runda` (o rundă) și `main` (runde, scor, statistici). În exemplul de mai sus, jucătorul a scris la început `abc` și `500` (greșit, jocul l-a ajutat să corecteze), apoi a jucat două runde cu strategia „mijlocul intervalului”.
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** („Ghicește numărul”)  
+- [ ] Am scris și am rulat **Exemplul 8** („Ghicește numărul”)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## 6. Verificarea modulului 2
 
-### Exercițiul A — Jocul tău „Ghicește numărul” (obligatoriu)
+Rezolvă pe foaie, fără să te uiți în lecții. Răspunsurile sunt la final.
+
+| # | Întrebare |
+|---|-----------|
+| 1 | Ce afișează `for i in range(3): print(i)`? |
+| 2 | Ce face `break` și ce face `continue`? |
+| 3 | Cum adaugi un element într-o listă? Dar cum îl ștergi? |
+| 4 | Cum citești valoarea de la cheia `"Ana"` dintr-un dicționar? |
+| 5 | Care este diferența dintre `print` și `return` într-o funcție? |
+| 6 | Ce rezultat are `[1, 2, 3][-1]`? |
+| 7 | Când folosești `while` în loc de `for`? |
+| 8 | Ce înseamnă o valoare implicită la un parametru? |
+
+**Răspunsuri:** 1) `0`, `1`, `2` (fiecare pe rând nou). · 2) `break` iese din buclă; `continue` sare la următoarea repetare. · 3) `lista.append(x)`; ștergi cu `lista.remove(x)` sau `lista.pop(i)`. · 4) `dictionar["Ana"]` (sau `dictionar.get("Ana")`). · 5) `print` doar arată; `return` dă valoarea înapoi programului. · 6) `3` (ultimul element). · 7) Când nu știi de câte ori se repetă (de exemplu „până ghicești”). · 8) O valoare folosită automat când nu o dai la apel: `def f(x, y=10)`.
+
+**Autoevaluare** — bifează cât ești de sigur:
+
+Bifează ce poți face **singur**:
+
+- [ ] folosesc `for` cu `range`
+- [ ] folosesc `while`, `break`, `continue`
+- [ ] lucrez cu liste
+- [ ] folosesc dicționare
+- [ ] scriu funcții cu parametri și `return`
+- [ ] organizez un program cu `main()`
+- [ ] construiesc un joc complet
+
+---
+
+## De făcut azi — „Ghicește numărul”
+
+### Minim vs Complet
+
+| | Ce trebuie |
+|--|------------|
+| **Minim** | Jocul funcționează o rundă, cu indicii |
+| **Complet** | Minim + încercări limitate, validare, runde repetate și scor final |
+
+### Pasul 1 — Minim
+- [ ] Jocul funcționează o rundă, cu indicii  
+
+### Pasul 2 — Complet
 Scrie jocul complet, cu cuvintele și ideile tale. Trebuie să aibă:
 1. număr secret **aleator** (`random.randint`);
 2. **încercări limitate** și indicii „prea mic / prea mare”;
@@ -438,39 +445,6 @@ Scrie jocul complet, cu cuvintele și ideile tale. Trebuie să aibă:
 4. **mai multe runde** („Mai joci?”);
 5. **statistici** la final (runde câștigate, cel mai bun scor);
 6. cel puțin **trei funcții**.
-
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
-
-```python
-scoruri = [5, 3, 7]
-print(min(scoruri))
-print(sum(scoruri) // len(scoruri))
-print(len(scoruri) == 0)
-```
-
-### Exercițiul C — Meniu de dificultate
-Adaugă la început un meniu: *ușor / mediu / greu* (folosește `alege_dificultate` din Exemplul 7) și joacă runda cu valorile alese.
-
-### Exercițiul D — Găsește greșelile
-Programul are 4 greșeli. Rescrie-l corect:
-
-```text
-import random
-secret = random.randint(1, 100)
-for nr in range(1, 8)
-    ghici = input("Numar: ")
-    if ghici = secret:
-        print("Bravo!")
-    elif ghici < secret
-        print("Prea mic!")
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. Ce înseamnă „strategia mijlocului” și de ce merge mereu în 7 încercări?  
-2. De ce validăm numerele citite?  
-3. Cum ai împărțit jocul în funcții?
 
 **Gata când:**
 - [ ] Jocul are număr aleator, încercări limitate și indicii  
@@ -482,8 +456,10 @@ Răspunde pe foaie:
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Rolurile se inversează: **tu te gândești** la un număr, iar **calculatorul** încearcă să-l ghicească (strategia mijlocului, ca în Exemplul 9)  
+## Bonus ★★★ — Provocare: Rolurile inversate
+*Doar dacă ai terminat Complet.*
+
+- [ ] Rolurile se inversează: **tu te gândești** la un număr, iar **calculatorul** încearcă să-l ghicească (strategia mijlocului, ca în Exemplul 7)  
 - [ ] Salvează cel mai bun scor într-o listă și afișează-l la început  
 - [ ] Adaugă un mod pentru **doi jucători** (unul scrie secretul, altul ghicește)  
 - [ ] Dă un **titlu** în funcție de scor: sub 5 încercări „Geniu”, sub 8 „Bravo”  
@@ -515,43 +491,6 @@ Răspunde pe foaie:
 
 ---
 
-## Verificare Modul 2
-
-Răspunde pe foaie (apoi verifică cu profesorul):
-
-1. Ce afișează `for i in range(3): print(i)`?  
-2. Ce face `break` și ce face `continue`?  
-3. Cum adaugi un element într-o listă? Dar cum îl ștergi?  
-4. Cum citești valoarea de la cheia `"Ana"` dintr-un dicționar?  
-5. Care este diferența dintre `print` și `return` într-o funcție?  
-6. Ce rezultat are `[1, 2, 3][-1]`?  
-7. Când folosești `while` în loc de `for`?  
-8. Ce înseamnă o valoare implicită la un parametru?  
-
-**Răspunsuri:**
-1. `0`, `1`, `2` (fiecare pe rând nou).  
-2. `break` iese din buclă; `continue` sare la următoarea repetare.  
-3. `lista.append(x)`; ștergi cu `lista.remove(x)` sau `lista.pop(i)`.  
-4. `dictionar["Ana"]` (sau `dictionar.get("Ana")`).  
-5. `print` doar arată; `return` dă valoarea înapoi programului.  
-6. `3` (ultimul element).  
-7. Când nu știi de câte ori se repetă (de exemplu „până ghicești”).  
-8. O valoare folosită automat când nu o dai la apel: `def f(x, y=10)`.  
-
-### Autoevaluare (bifează)
-
-Bifează ce poți face **singur**:
-
-- [ ] folosesc `for` cu `range`
-- [ ] folosesc `while`, `break`, `continue`
-- [ ] lucrez cu liste
-- [ ] folosesc dicționare
-- [ ] scriu funcții cu parametri și `return`
-- [ ] organizez un program cu `main()`
-- [ ] construiesc un joc complet
-
----
-
 ## Quiz scurt
 - Care sunt cele patru părți ale jocului „Ghicește numărul”?  
 - De ce alegem numărul secret o singură dată pe rundă?  
@@ -565,9 +504,187 @@ Bifează ce poți face **singur**:
 1. Termină jocul și testează-l cu cel puțin 5 runde.  
 2. Fă cel puțin **una** dintre provocările bonus.  
 3. Arată jocul unui prieten sau unui adult din familie și notează ce ți-a spus.  
-4. Salvează totul ca `Tema_P2_L10_Prenume_Nume.py`.
+4. **Meniu de dificultate.** Adaugă la început un meniu: *ușor / mediu / greu* (folosește `alege_dificultate` din Exemplul 6) și joacă runda cu valorile alese.
+5. Salvează totul ca `Tema_P2_L10_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le în Thonny, rulează-le și schimbă-le după preferințe.
+
+#### Acasă 1 — Mai multe runde
+
+```python
+rezultate = [4, 6]
+while True:
+    raspuns = input("Mai joci? (da/nu) ")
+    if raspuns.lower() != "da":
+        break
+    print("Runda noua!")
+print("Ai terminat. Rezultate:", rezultate)
+```
+
+**Ieșire:**
+```text
+Mai joci? (da/nu) da
+Runda noua!
+Mai joci? (da/nu) da
+Runda noua!
+Mai joci? (da/nu) nu
+Ai terminat. Rezultate: [4, 6]
+```
+
+Bucla `while True` cu `break` este perfectă pentru „mai joci?”. Metoda `lower()` transformă răspunsul în litere mici, așa că `DA`, `Da` și `da` sunt toate bune.
+
+#### Acasă 2 — Statistici cu o listă
+
+```python
+scoruri = [4, 6, 5]
+print("Runde castigate:", len(scoruri))
+print("Cel mai bun scor:", min(scoruri), "incercari")
+print(f"Media: {sum(scoruri) / len(scoruri):.1f} incercari")
+```
+
+**Ieșire:**
+```text
+Runde castigate: 3
+Cel mai bun scor: 4 incercari
+Media: 5.0 incercari
+```
+
+Lista `scoruri` memorează câte încercări ți-au trebuit în fiecare rundă câștigată. Cu `len`, `min` și `sum` scoți statisticile. La acest joc, **mai puține încercări înseamnă un scor mai bun**.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+scoruri = [5, 3, 7]
+print(min(scoruri))
+print(sum(scoruri) // len(scoruri))
+print(len(scoruri) == 0)
+```
+
+**Găsește greșelile.** Programul are 4 greșeli. Rescrie-l corect:
+
+```text
+import random
+secret = random.randint(1, 100)
+for nr in range(1, 8)
+    ghici = input("Numar: ")
+    if ghici = secret:
+        print("Bravo!")
+    elif ghici < secret
+        print("Prea mic!")
+```
 
 ---
 
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+
+### 1. Calculatorul ghicește
+
+```python
+mic = 1
+mare = 100
+incercari = 0
+print("Gandeste-te la un numar intre 1 si 100.")
+while True:
+    ghici = (mic + mare) // 2
+    incercari += 1
+    raspuns = input(f"Este {ghici}? (da / mai mic / mai mare) ")
+    if raspuns == "da":
+        print("Am ghicit din", incercari, "incercari!")
+        break
+    elif raspuns == "mai mic":
+        mare = ghici - 1
+    else:
+        mic = ghici + 1
+```
+
+**Ieșire:**
+```text
+Gandeste-te la un numar intre 1 si 100.
+Este 50? (da / mai mic / mai mare) mai mic
+Este 25? (da / mai mic / mai mare) mai mare
+Este 37? (da / mai mic / mai mare) da
+Am ghicit din 3 incercari!
+```
+
+### 2. Cel mai bun scor, afișat la început
+
+```python
+scoruri = [6, 4]
+if len(scoruri) > 0:
+    print("Cel mai bun scor:", min(scoruri), "incercari")
+else:
+    print("Nu a jucat nimeni inca.")
+
+# dupa o runda castigata in 5 incercari:
+scoruri.append(5)
+print("Cel mai bun scor acum:", min(scoruri), "incercari")
+```
+
+**Ieșire:**
+```text
+Cel mai bun scor: 4 incercari
+Cel mai bun scor acum: 4 incercari
+```
+
+### 3. Doi jucători
+
+```python
+secret = int(input("Jucatorul 1, scrie numarul secret (1-100): "))
+# in joc real poti scrie print("\n" * 20), ca sa nu se mai vada secretul
+print("-" * 30)
+ghicit = False
+for nr in range(1, 8):
+    ghici = int(input(f"Jucatorul 2, incercarea {nr}: "))
+    if ghici == secret:
+        print("Bravo! Ai ghicit!")
+        ghicit = True
+        break
+    elif ghici < secret:
+        print("Prea mic!")
+    else:
+        print("Prea mare!")
+if not ghicit:
+    print("Jucatorul 1 castiga! Numarul era", secret)
+```
+
+**Ieșire:**
+```text
+Jucatorul 1, scrie numarul secret (1-100): 42
+------------------------------
+Jucatorul 2, incercarea 1: 50
+Prea mare!
+Jucatorul 2, incercarea 2: 30
+Prea mic!
+Jucatorul 2, incercarea 3: 42
+Bravo! Ai ghicit!
+```
+
+### 4. Titlu după scor
+
+```python
+def titlu(incercari):
+    if incercari < 5:
+        return "Geniu"
+    elif incercari < 8:
+        return "Bravo"
+    return "Mai incearca"
+
+for scor in [3, 6, 9]:
+    print(scor, "incercari:", titlu(scor))
+```
+
+**Ieșire:**
+```text
+3 incercari: Geniu
+6 incercari: Bravo
+9 incercari: Mai incearca
+```
+
+---
 ## Ce urmează — Modulul 3
 **Desenăm cu Turtle**: o broască țestoasă care desenează după ce o programezi, cu forme, culori, spirale și jocuri!

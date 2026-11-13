@@ -206,7 +206,6 @@ Aceasta este problema clasică: **împărțirea cu rest**. `//` spune câte prim
 
 ## 6. Numerele cu virgulă și prescurtările
 
-
 ### Exemplul 6 — Prescurtări
 
 ```python
@@ -251,7 +250,6 @@ print(x)
 ---
 
 ## 7. Aplicații
-
 
 ### Exemplul 7 — Secunde în minute și secunde
 
@@ -458,5 +456,55 @@ print("Restul:", a % 0)
 
 ---
 
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+
+### 1. Par sau impar, cu restul
+
+```python
+n = int(input("Un numar: "))
+print("Restul la 2 este", n % 2)
+print("(0 inseamna par, 1 inseamna impar)")
+```
+
+**Ieșire:**
+```text
+Un numar: 7
+Restul la 2 este 1
+(0 inseamna par, 1 inseamna impar)
+```
+
+### 2. Săptămâni și zile
+
+```python
+zile = int(input("Cate zile? "))
+print("Saptamani:", zile // 7)
+print("Zile ramase:", zile % 7)
+```
+
+**Ieșire:**
+```text
+Cate zile? 17
+Saptamani: 2
+Zile ramase: 3
+```
+
+### 3. Aria și perimetrul pătratului
+
+```python
+latura = int(input("Latura: "))
+print("Aria:", latura * latura)
+print("Perimetrul:", 4 * latura)
+```
+
+**Ieșire:**
+```text
+Latura: 5
+Aria: 25
+Perimetrul: 20
+```
+
+---
 ## Ce urmează — Lecția 6
 Învățăm să lucrăm mai bine cu **text**: f-string-uri (propoziții cu variabile), litere mari și mici, tăiat și înlocuit.

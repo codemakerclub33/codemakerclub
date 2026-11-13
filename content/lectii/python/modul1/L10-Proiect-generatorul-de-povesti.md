@@ -382,5 +382,59 @@ Bifează ce poți face **singur**:
 
 ---
 
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+
+### 1. Poarta parcului
+
+```python
+varsta = int(input("Cati ani ai? "))
+insotit = input("Esti cu un adult? (da/nu) ")
+if varsta >= 12 or (varsta >= 6 and insotit == "da"):
+    print("Poti intra in parc!")
+else:
+    print("Nu poti intra.")
+```
+
+**Ieșire:**
+```text
+Cati ani ai? 8
+Esti cu un adult? (da/nu) da
+Poti intra in parc!
+```
+
+### 2. Mesaj special la numărul 6
+
+```python
+import random
+numar = random.randint(1, 6)
+print("Numarul tau norocos:", numar)
+if numar == 6:
+    print("Ai numarul de aur! Vor veni vesti bune!")
+```
+
+**Ieșire:**
+```text
+Numarul tau norocos: 6
+Ai numarul de aur! Vor veni vesti bune!
+```
+
+*Numerele sunt aleatoare, deci la tine ieșirea poate fi alta.*
+
+### 3. La revedere
+
+```python
+nume = input("Cum te cheama? ")
+print("La revedere,", nume)
+```
+
+**Ieșire:**
+```text
+Cum te cheama? Ana
+La revedere, Ana
+```
+
+---
 ## Ce urmează — Modulul 2
 Învățăm să **repetăm** (cu `for` și `while`), să **colecționăm** (liste, dicționare) și să **organizăm** programele în funcții.

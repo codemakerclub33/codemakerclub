@@ -1,4 +1,5 @@
-# LECȚIA 8 — Funcții I
+# LECȚIA 8 — Cutia cu unelte
+### Funcții I: def și return
 **Modulul 2 · Repetăm, colecționăm, organizăm · 2 ore**  
 **Code Maker Club · Python Builder**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei definești funcții cu `def`, le apelezi, le dai **parametri**, folosești `return` pentru a primi un rezultat, înțelegi diferența dintre `print` și `return` și lucrezi cu valori implicite.  
-**Minim:** două funcții, una fără parametri și una cu un parametru.  
-**Ținta orei (Complet):** + o funcție care returnează un rezultat, una cu valoare implicită și o „cutie cu unelte” de 4 funcții.
-
-## De ce contează
-Imaginează-ți că ai scris o dată cum se desenează un chenar frumos. Fără funcții, ai copia codul de fiecare dată. Cu o funcție, îi spui doar numele. Programele mari se fac din sute de funcții mici.
+## Ce facem azi
+La finalul orei definești funcții cu `def`, le apelezi, le dai **parametri**, folosești `return` pentru a primi un rezultat, înțelegi diferența dintre `print` și `return` și lucrezi cu valori implicite. Imaginează-ți că ai scris o dată cum se desenează un chenar frumos. Fără funcții, ai copia codul de fiecare dată. Cu o funcție, îi spui doar numele. Programele mari se fac din sute de funcții mici.
 
 ---
 
@@ -23,12 +19,24 @@ Imaginează-ți că ai scris o dată cum se desenează un chenar frumos. Fără 
 |--------|----------|
 | 0–10 | Recapitulare L7 |
 | 10–30 | `def` și apelul (**Exemplul 1**) |
-| 30–55 | Parametri (**Exemplele 2–3**) |
-| 55–80 | `return` (**Exemplele 4–6**) |
-| 80–95 | Valori implicite, variabile locale (**Exemplele 7–8**) |
-| 95–105 | O funcție utilă (**Exemplul 9**) |
-| 105–118 | Mini-proiect (**Exemplul 10**) |
+| 30–55 | Parametri (**Exemplul 2**) |
+| 55–80 | `return` (**Exemplele 3–4**) |
+| 80–95 | Valori implicite, variabile locale (**Exemplele 5–6**) |
+| 95–105 | O funcție utilă (**Exemplul 7**) |
+| 105–118 | Mini-proiect (**Exemplul 8**) |
 | 118–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `def nume():` | Definește o funcție | `def salut():` |
+| `def nume(x):` | Funcție cu parametru | `def dublu(x):` |
+| `return valoare` | Trimite un rezultat înapoi | `return x * 2` |
+| `def f(x, y=2):` | Valoare implicită, dacă nu dai alta | `def salut(nume="prietene"):` |
+| `nume()` | Apelează funcția, adică o execută | `salut()` |
 
 ---
 
@@ -99,34 +107,15 @@ Salut, Mihai!
 
 `nume` este un **parametru**: un loc gol pe care îl completezi la apel. `salut("Ana")` pune `"Ana"` în `nume`. Ca un șablon care primește valori diferite.
 
-### Exemplul 3 — Mai mulți parametri
-
-```python
-def prezentare(nume, varsta, oras):
-    print(f"{nume} are {varsta} ani si locuieste in {oras}.")
-
-prezentare("Ana", 10, "Focsani")
-prezentare("Radu", 11, "Bucuresti")
-```
-
-**Ieșire:**
-```text
-Ana are 10 ani si locuieste in Focsani.
-Radu are 11 ani si locuieste in Bucuresti.
-```
-
-Valorile se potrivesc cu parametrii **în ordine**: prima valoare merge în primul parametru, a doua în al doilea etc.
-
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 2** (Un parametru)  
-- [ ] Am scris și am rulat **Exemplul 3** (Mai mulți parametri)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 4. `return`: funcția dă un rezultat
 
-### Exemplul 4 — `return`
+### Exemplul 3 — `return`
 
 ```python
 def dublu(x):
@@ -147,7 +136,7 @@ print(dublu(dublu(3)))
 
 `return` **trimite o valoare înapoi** celui care a chemat funcția și **oprește** funcția. Rezultatul îl poți pune într-o variabilă, aduna, sau chiar folosi ca intrare pentru altă funcție.
 
-### Exemplul 5 — `print` sau `return`?
+### Exemplul 4 — `print` sau `return`?
 
 ```python
 def dublu_print(x):
@@ -174,48 +163,16 @@ b = 10
 
 Regula: dacă vrei să **folosești** rezultatul în alt calcul, folosește `return`. `print` e doar pentru a afișa.
 
-### Exemplul 6 — Funcție cu decizie
-
-```python
-def este_par(n):
-    return n % 2 == 0
-
-def calificativ(nota):
-    if nota >= 9:
-        return "Foarte bine"
-    elif nota >= 5:
-        return "Bine"
-    return "Insuficient"
-
-print(este_par(8))
-print(este_par(7))
-print(calificativ(10))
-print(calificativ(6))
-print(calificativ(3))
-```
-
-**Ieșire:**
-```text
-True
-False
-Foarte bine
-Bine
-Insuficient
-```
-
-O funcție poate returna `True` / `False`, text, numere, liste, orice. Când `return` este executat, funcția se **termină**: de aceea ultimul `return "Insuficient"` nu are nevoie de `else`.
-
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 4** (`return`)  
-- [ ] Am scris și am rulat **Exemplul 5** (`print` sau `return`?)  
-- [ ] Am scris și am rulat **Exemplul 6** (Funcție cu decizie)  
+- [ ] Am scris și am rulat **Exemplul 3** (`return`)  
+- [ ] Am scris și am rulat **Exemplul 4** (`print` sau `return`?)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 5. Valori implicite, variabile locale
 
-### Exemplul 7 — Valoare implicită
+### Exemplul 5 — Valoare implicită
 
 ```python
 def salut(nume="prietene", semn="!"):
@@ -237,7 +194,7 @@ Salut, prietene.
 
 Un parametru poate avea o valoare **implicită**, folosită dacă nu o dai tu. Poți numi parametrul la apel (`semn="."`), ca să sari peste cei dinainte.
 
-### Exemplul 8 — Variabile locale
+### Exemplul 6 — Variabile locale
 
 ```python
 def calcul():
@@ -255,15 +212,15 @@ In functie: 100
 Variabila `rezultat` există **doar în interiorul funcției**: este **locală**. După ce funcția se termină, ea dispare. Dacă ai încerca `print(rezultat)` în afara funcției, Python ar da `NameError`.
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 7** (Valoare implicită)  
-- [ ] Am scris și am rulat **Exemplul 8** (Variabile locale)  
+- [ ] Am scris și am rulat **Exemplul 5** (Valoare implicită)  
+- [ ] Am scris și am rulat **Exemplul 6** (Variabile locale)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 6. O funcție utilă
 
-### Exemplul 9 — Chenar pentru orice text
+### Exemplul 7 — Chenar pentru orice text
 
 ```python
 def chenar(text, simbol="*"):
@@ -289,14 +246,14 @@ chenar("Python este super", "#")
 Scrisă o singură dată, funcția poate desena chenare pentru orice text.
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 9** (Chenar pentru orice text)  
+- [ ] Am scris și am rulat **Exemplul 7** (Chenar pentru orice text)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 7. Mini-proiect
 
-### Exemplul 10 — Cutia cu unelte
+### Exemplul 8 — Cutia cu unelte
 
 ```python
 def patrat(x):
@@ -336,14 +293,24 @@ Suma patratelor 3 si 4: 25
 ```
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** (Cutia cu unelte)  
+- [ ] Am scris și am rulat **Exemplul 8** (Cutia cu unelte)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Cutia cu unelte”
 
-### Exercițiul A — „Cutia cu unelte” (obligatoriu)
+### Minim vs Complet
+
+| | Ce trebuie |
+|--|------------|
+| **Minim** | Două funcții, una fără parametri și una cu un parametru |
+| **Complet** | Minim + cel puțin 5 funcții: un titlu, două cu `return`, una cu valoare implicită și una cu `True` / `False` |
+
+### Pasul 1 — Minim
+- [ ] Două funcții, una fără parametri și una cu un parametru  
+
+### Pasul 2 — Complet
 Scrie un program cu **cel puțin 5 funcții**:
 1. una care afișează un **titlu** frumos (fără `return`);
 2. una care **returnează** pătratul unui număr;
@@ -353,54 +320,18 @@ Scrie un program cu **cel puțin 5 funcții**:
 
 Apelează-le pe toate cu cel puțin 2 valori diferite.
 
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
-
-```python
-def f(x, y=2):
-    return x * y
-
-print(f(3))
-print(f(3, 4))
-print(f(y=5, x=1))
-print(f(f(2), f(1, 1)))
-```
-
-### Exercițiul C — Convertorul de temperatură
-Scrie funcția `celsius_in_fahrenheit(c)` (formula: `c * 9 / 5 + 32`) și afișează temperaturile 0, 20 și 100.
-
-### Exercițiul D — Găsește greșelile
-Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
-
-```text
-def dublu(x)
-    return x * 2
-
-salut()
-def salut():
-print("Salut")
-
-rezultat = dublu()
-print(Rezultat)
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. Care e diferența dintre a **defini** și a **apela** o funcție?  
-2. Ce deosebește `print` de `return`?  
-3. Ce înseamnă „variabilă locală”?
-
 **Gata când:**
 - [ ] Programul are cel puțin 5 funcții  
 - [ ] Cel puțin 3 folosesc `return`  
 - [ ] Una are o valoare implicită  
 - [ ] Toate sunt apelate cu valori diferite  
-- [ ] Ai explicat pe foaie diferența dintre `print` și `return`  
 - [ ] Fișierul se numește `Prenume_Nume_P2_L8.py`  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Atelierul de funcții
+*Doar dacă ai terminat Complet.*
+
 - [ ] O funcție `este_prim(n)` care returnează `True` sau `False`  
 - [ ] O funcție `media(a, b, c)` care returnează media a trei numere  
 - [ ] O funcție care desenează un **triunghi** de `*` cu înălțimea dată  
@@ -444,13 +375,166 @@ Răspunde pe foaie:
 ---
 
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
+1. Refă **Exemplele 1–8** în Thonny, scrise de mână.  
 2. Scrie o funcție `cumpara(pret, bucati=1)` care returnează totalul și apeleaz-o în 3 feluri.  
 3. Scrie funcții `adunare`, `scadere`, `inmultire`, `impartire` și apelează-le cu două numere citite de la tastatură.  
-4. **Bonus:** funcție care primește o listă de note și returnează media.  
-5. Salvează totul ca `Tema_P2_L8_Prenume_Nume.py`.
+4. **Bonus:** funcție care primește o listă de scoruri și returnează media.  
+5. **Convertorul de temperatură.** Scrie funcția `celsius_in_fahrenheit(c)` (formula: `c * 9 / 5 + 32`) și afișează temperaturile 0, 20 și 100.
+6. Salvează totul ca `Tema_P2_L8_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le în Thonny, rulează-le și schimbă-le după preferințe.
+
+#### Acasă 1 — Mai mulți parametri
+
+```python
+def prezentare(nume, varsta, oras):
+    print(f"{nume} are {varsta} ani si locuieste in {oras}.")
+
+prezentare("Ana", 10, "Focsani")
+prezentare("Radu", 11, "Bucuresti")
+```
+
+**Ieșire:**
+```text
+Ana are 10 ani si locuieste in Focsani.
+Radu are 11 ani si locuieste in Bucuresti.
+```
+
+Valorile se potrivesc cu parametrii **în ordine**: prima valoare merge în primul parametru, a doua în al doilea etc.
+
+#### Acasă 2 — Funcție cu decizie
+
+```python
+def este_par(n):
+    return n % 2 == 0
+
+def nivel_scor(scor):
+    if scor >= 9:
+        return "Excelent"
+    elif scor >= 5:
+        return "Bun"
+    return "Slab"
+
+print(este_par(8))
+print(este_par(7))
+print(nivel_scor(10))
+print(nivel_scor(6))
+print(nivel_scor(3))
+```
+
+**Ieșire:**
+```text
+True
+False
+Excelent
+Bun
+Slab
+```
+
+O funcție poate returna `True` / `False`, text, numere, liste, orice. Când `return` este executat, funcția se **termină**: de aceea ultimul `return "Slab"` nu are nevoie de `else`.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+def f(x, y=2):
+    return x * y
+
+print(f(3))
+print(f(3, 4))
+print(f(y=5, x=1))
+print(f(f(2), f(1, 1)))
+```
+
+**Găsește greșelile.** Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
+
+```text
+def dublu(x)
+    return x * 2
+
+salut()
+def salut():
+print("Salut")
+
+rezultat = dublu()
+print(Rezultat)
+```
 
 ---
 
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+
+### 1. `este_prim(n)`
+
+```python
+def este_prim(n):
+    if n < 2:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+print(este_prim(7))
+print(este_prim(10))
+```
+
+**Ieșire:**
+```text
+True
+False
+```
+
+### 2. `media(a, b, c)`
+
+```python
+def media(a, b, c):
+    return (a + b + c) / 3
+
+print(media(4, 6, 8))
+```
+
+**Ieșire:**
+```text
+6.0
+```
+
+### 3. Triunghi cu înălțimea dată
+
+```python
+def triunghi(inaltime):
+    for i in range(1, inaltime + 1):
+        print("*" * i)
+
+triunghi(4)
+```
+
+**Ieșire:**
+```text
+*
+**
+***
+****
+```
+
+### 4. Text invers
+
+```python
+def invers(text):
+    return text[::-1]
+
+print(invers("python"))
+```
+
+**Ieșire:**
+```text
+nohtyp
+```
+
+---
 ## Ce urmează — Lecția 9
 Funcții mai puternice: care primesc **liste**, returnează **mai multe valori**, se apelează între ele și ne ajută să organizăm programe mari.

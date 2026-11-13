@@ -1,4 +1,5 @@
-# LECȚIA 9 — Funcții II
+# LECȚIA 9 — Calculatorul cu funcții
+### Funcții II: programe organizate
 **Modulul 2 · Repetăm, colecționăm, organizăm · 2 ore**  
 **Code Maker Club · Python Builder**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei dai liste ca parametri, returnezi mai multe valori, apelezi funcții din alte funcții, folosești argumente cu nume și documentezi o funcție, validezi datele introduse și organizezi un program cu o funcție `main()`.  
-**Minim:** o funcție care primește o listă și una care returnează două valori.  
-**Ținta orei (Complet):** + o funcție de citire cu validare și un calculator organizat în funcții.
-
-## De ce contează
-Programele mari nu sunt scrise într-un singur bloc lung, ci din **piese mici**, fiecare cu un rol. Așa le poți testa pe rând, le poți reutiliza și le înțelegi mai ușor. Aceasta este arta de a „organiza” codul.
+## Ce facem azi
+La finalul orei dai liste ca parametri, returnezi mai multe valori, apelezi funcții din alte funcții, folosești argumente cu nume și documentezi o funcție, validezi datele introduse și organizezi un program cu o funcție `main()`. Programele mari nu sunt scrise într-un singur bloc lung, ci din **piese mici**, fiecare cu un rol. Așa le poți testa pe rând, le poți reutiliza și le înțelegi mai ușor. Aceasta este arta de a „organiza” codul.
 
 ---
 
@@ -25,10 +21,21 @@ Programele mari nu sunt scrise într-un singur bloc lung, ci din **piese mici**,
 | 10–30 | Liste ca parametri (**Exemplul 1**) |
 | 30–50 | Mai multe valori returnate (**Exemplul 2**) |
 | 50–70 | Funcții care apelează funcții, argumente cu nume (**Exemplele 3–4**) |
-| 70–90 | Documentare, funcții cu `random`, validare (**Exemplele 5–7**) |
-| 90–100 | O funcție care se cheamă pe ea însăși (**Exemplul 8**) |
-| 100–118 | `main()` și mini-proiect (**Exemplele 9–10**) |
+| 70–100 | Documentare și validare (**Exemplele 5–6**) |
+| 100–118 | `main()` și mini-proiect (**Exemplele 7–8**) |
 | 118–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `def f(lista):` | Funcție care primește o listă | `def suma(l):` |
+| `return a, b` | Returnează două valori deodată | `x, y = f(4, 5)` |
+| `f(b=2, a=1)` | Argumente cu nume, în orice ordine | `salut(nume="Ana")` |
+| `"""text"""` | Descrierea unei funcții (docstring) | pusă chiar sub `def` |
+| `def main():` | Funcția principală a programului | `main()` |
 
 ---
 
@@ -57,9 +64,9 @@ def suma_lista(numere):
 def media(numere):
     return suma_lista(numere) / len(numere)
 
-note = [9, 10, 8, 7]
-print(suma_lista(note))
-print(media(note))
+scoruri = [9, 10, 8, 7]
+print(suma_lista(scoruri))
+print(media(scoruri))
 print(media([5, 5]))
 ```
 
@@ -166,7 +173,7 @@ Când apelezi o funcție, poți scrie `parametru=valoare`. Atunci **ordinea nu m
 
 ---
 
-## 5. Documentare, noroc și validare
+## 5. Documentare și validare
 
 ### Exemplul 5 — Descrierea unei funcții (docstring)
 
@@ -187,31 +194,7 @@ Calculeaza aria unui cerc cu raza data.
 
 Primul text scris **între ghilimele triple**, imediat sub `def`, se numește **docstring**: descrie ce face funcția. Îl citește oricine folosește funcția (și tu, peste o lună!).
 
-### Exemplul 6 — O funcție cu noroc
-
-```python
-import random
-
-def arunca_zar():
-    return random.randint(1, 6)
-
-def arunca_zaruri(cate):
-    return [arunca_zar() for _ in range(cate)]
-
-zaruri = arunca_zaruri(3)
-print(len(zaruri))
-print(all(1 <= z <= 6 for z in zaruri))
-```
-
-**Ieșire:**
-```text
-3
-True
-```
-
-Zarurile diferă la fiecare rulare, așa că nu le afișăm. Verificăm doar că sunt 3 și că toate sunt între 1 și 6. Linia `[arunca_zar() for _ in range(cate)]` construiește o listă în care `arunca_zar()` se repetă de `cate` ori (`_` este un nume pentru o variabilă de care nu avem nevoie). Poți să o înlocuiești și cu un `for` obișnuit cu `append`.
-
-### Exemplul 7 — Citire cu validare
+### Exemplul 6 — Citire cu validare
 
 ```python
 def citeste_numar(mesaj):
@@ -239,53 +222,14 @@ Funcția **nu se oprește** până nu primește un număr valid: `return` iese d
 
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 5** (Descrierea unei funcții (docstring))  
-- [ ] Am scris și am rulat **Exemplul 6** (O funcție cu noroc)  
-- [ ] Am scris și am rulat **Exemplul 7** (Citire cu validare)  
+- [ ] Am scris și am rulat **Exemplul 6** (Citire cu validare)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## 6. O funcție care se cheamă pe ea însăși
+## 6. Programul organizat
 
-### Exemplul 8 — Recursivitate (pentru curioși)
-
-```python
-def numaratoare(n):
-    if n == 0:
-        print("Start!")
-    else:
-        print(n)
-        numaratoare(n - 1)
-
-def factorial(n):
-    if n <= 1:
-        return 1
-    return n * factorial(n - 1)
-
-numaratoare(3)
-print(factorial(5))
-```
-
-**Ieșire:**
-```text
-3
-2
-1
-Start!
-120
-```
-
-O funcție se poate **chema pe ea însăși**; aceasta se numește **recursivitate**. Trebuie un **caz de oprire** (`n == 0` sau `n <= 1`), altfel funcția s-ar chema la nesfârșit. `factorial(5)` este `5 · 4 · 3 · 2 · 1 = 120`. Nu trebuie să stăpânești asta acum; e doar un gust din ce urmează.
-
-**Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 8** (Recursivitate (pentru curioși))  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
----
-
-## 7. Programul organizat
-
-### Exemplul 9 — Funcția `main()`
+### Exemplul 7 — Funcția `main()`
 
 ```python
 def titlu(text):
@@ -318,14 +262,14 @@ Gata!
 Programele organizate au **funcții mici** deasupra și o funcție **`main()`** care le folosește, apelată **o singură dată**, la sfârșit. Așa vezi imediat „povestea” programului.
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 9** (Funcția `main()`)  
+- [ ] Am scris și am rulat **Exemplul 7** (Funcția `main()`)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## 8. Mini-proiect
+## 7. Mini-proiect
 
-### Exemplul 10 — Calculatorul cu funcții
+### Exemplul 8 — Calculatorul cu funcții
 
 ```python
 def aduna(a, b):
@@ -406,72 +350,42 @@ Pa!
 Programul are **7 funcții mici**, fiecare cu un singur rol, și un `main()` care le leagă. Dacă vrei să adaugi ridicarea la putere, adaugi o funcție și un `elif`.
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** (Calculatorul cu funcții)  
+- [ ] Am scris și am rulat **Exemplul 8** (Calculatorul cu funcții)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Calculatorul cu funcții”
 
-### Exercițiul A — „Calculatorul cu funcții” (obligatoriu)
+### Minim vs Complet
+
+| | Ce trebuie |
+|--|------------|
+| **Minim** | O funcție care primește o listă și una care returnează două valori |
+| **Complet** | Minim + o funcție de citire cu validare și un calculator organizat în funcții |
+
+### Pasul 1 — Minim
+- [ ] O funcție care primește o listă și una care returnează două valori  
+
+### Pasul 2 — Complet
 Scrie propriul calculator organizat în funcții:
 1. cel puțin **5 operații** (adunare, scădere, înmulțire, împărțire, plus încă una la alegere, de exemplu putere sau rest), fiecare într-o **funcție**;
 2. o funcție care **citește** un număr, cu validare;
 3. o funcție `main()` cu meniu care se repetă;
 4. tratează **împărțirea la 0**.
 
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
-
-```python
-def f(lista):
-    return lista[0] + lista[-1]
-
-def g(a, b):
-    return a * b, a + b
-
-print(f([3, 8, 5]))
-x, y = g(4, 5)
-print(x, y)
-print(f([g(1, 2)[0], 10]))
-```
-
-### Exercițiul C — Statistica notelor
-Scrie funcția `statistica(note)` care returnează **media**, **cea mai mare** și **cea mai mică** notă, și afișează-le.
-
-### Exercițiul D — Găsește greșelile
-Programul are 5 greșeli. Rescrie-l corect și explică fiecare corecție:
-
-```text
-def min_max(lista):
-    return min(lista) max(lista)
-
-a, b, c = min_max([1, 2, 3])
-def media(l)
-    return sum(l) / len(l)
-print(media(1, 2, 3))
-main()
-def main():
-    print("Salut")
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. De ce împărțim un program în funcții mici?  
-2. Ce face `return a, b`?  
-3. La ce folosește `main()`?
-
 **Gata când:**
 - [ ] Calculatorul are cel puțin 5 operații în funcții  
 - [ ] Citirea numerelor se face într-o funcție, cu validare  
 - [ ] Există o funcție `main()` apelată o singură dată  
 - [ ] Împărțirea la 0 e tratată  
-- [ ] Ai explicat pe foaie de ce folosim funcții  
 - [ ] Fișierul se numește `Prenume_Nume_P2_L9.py`  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Calculatorul cu memorie
+*Doar dacă ai terminat Complet.*
+
 - [ ] Adaugă la calculator **memoria**: ultimul rezultat să poată fi folosit ca prim număr  
 - [ ] Scrie o funcție `este_palindrom(text)` care returnează `True` sau `False`  
 - [ ] Fă funcția `cmmdc(a, b)` care găsește cel mai mare divizor comun  
@@ -486,7 +400,6 @@ Răspunde pe foaie:
 | `ValueError: too many values to unpack` | Numărul de variabile nu se potrivește cu valorile returnate | `a, b = f(...)` pentru 2 valori |
 | `NameError: name 'main' is not defined` | Ai apelat `main()` înainte de definire | Apelează-l la sfârșitul fișierului |
 | `TypeError: media() takes 1 positional argument but 3 were given` | Ai dat 3 numere în loc de o listă | `media([1, 2, 3])` |
-| `RecursionError: maximum recursion depth exceeded` | Funcția recursivă nu are caz de oprire | Adaugă `if n == 0: return ...` |
 | `return min(l) max(l)` dă eroare | Lipsește virgula | `return min(l), max(l)` |
 | Funcția nu validează și se oprește la o greșeală | `int(input(...))` pe text | Folosește `isdigit()` ca în exemplu |
 | Funcția modifică lista originală | Listele sunt partajate între funcții | Lucrează pe o copie: `lista.copy()` |
@@ -515,13 +428,226 @@ Răspunde pe foaie:
 ---
 
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
+1. Refă **Exemplele 1–8** în Thonny, scrise de mână.  
 2. Scrie funcția `numara_vocale(text)` care returnează câte vocale are un text.  
 3. Scrie o funcție `convertor(km)` care returnează distanța în metri, centimetri și milimetri (trei valori).  
 4. **Bonus:** transformă programul „Agenda mea” din L7 într-unul cu funcții (`adauga`, `cauta`, `arata`, `main`).  
-5. Salvează totul ca `Tema_P2_L9_Prenume_Nume.py`.
+5. **Statistica scorurilor.** Scrie funcția `statistica(scoruri)` care returnează **media**, **cea mai mare** și **cea mai mică** valoare, și afișează-le.
+6. Salvează totul ca `Tema_P2_L9_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le în Thonny, rulează-le și schimbă-le după preferințe.
+
+#### Acasă 1 — O funcție cu noroc
+
+```python
+import random
+
+def arunca_zar():
+    return random.randint(1, 6)
+
+def arunca_zaruri(cate):
+    return [arunca_zar() for _ in range(cate)]
+
+zaruri = arunca_zaruri(3)
+print(len(zaruri))
+print(all(1 <= z <= 6 for z in zaruri))
+```
+
+**Ieșire:**
+```text
+3
+True
+```
+
+Zarurile diferă la fiecare rulare, așa că nu le afișăm. Verificăm doar că sunt 3 și că toate sunt între 1 și 6. Linia `[arunca_zar() for _ in range(cate)]` construiește o listă în care `arunca_zar()` se repetă de `cate` ori (`_` este un nume pentru o variabilă de care nu avem nevoie). Poți să o înlocuiești și cu un `for` obișnuit cu `append`.
+
+#### Acasă 2 — Recursivitate (pentru curioși)
+
+```python
+def numaratoare(n):
+    if n == 0:
+        print("Start!")
+    else:
+        print(n)
+        numaratoare(n - 1)
+
+def factorial(n):
+    if n <= 1:
+        return 1
+    return n * factorial(n - 1)
+
+numaratoare(3)
+print(factorial(5))
+```
+
+**Ieșire:**
+```text
+3
+2
+1
+Start!
+120
+```
+
+O funcție se poate **chema pe ea însăși**; aceasta se numește **recursivitate**. Trebuie un **caz de oprire** (`n == 0` sau `n <= 1`), altfel funcția s-ar chema la nesfârșit. `factorial(5)` este `5 · 4 · 3 · 2 · 1 = 120`. Nu trebuie să stăpânești asta acum; e doar un gust din ce urmează.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+def f(lista):
+    return lista[0] + lista[-1]
+
+def g(a, b):
+    return a * b, a + b
+
+print(f([3, 8, 5]))
+x, y = g(4, 5)
+print(x, y)
+print(f([g(1, 2)[0], 10]))
+```
+
+**Găsește greșelile.** Programul are 5 greșeli. Rescrie-l corect și explică fiecare corecție:
+
+```text
+def min_max(lista):
+    return min(lista) max(lista)
+
+a, b, c = min_max([1, 2, 3])
+def media(l)
+    return sum(l) / len(l)
+print(media(1, 2, 3))
+main()
+def main():
+    print("Salut")
+```
 
 ---
 
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+
+### 1. Calculator cu memorie
+
+```python
+def calculeaza(a, op, b):
+    if op == "+":
+        return a + b
+    elif op == "-":
+        return a - b
+    elif op == "*":
+        return a * b
+    return a / b
+
+memorie = 0
+while True:
+    a = input("Primul numar (m = memoria, gata = iesire): ")
+    if a == "gata":
+        break
+    if a == "m":
+        a = memorie
+    else:
+        a = float(a)
+    op = input("Operatia (+ - *): ")
+    b = float(input("Al doilea numar: "))
+    memorie = calculeaza(a, op, b)
+    print("Rezultat:", memorie)
+```
+
+**Ieșire:**
+```text
+Primul numar (m = memoria, gata = iesire): 4
+Operatia (+ - *): +
+Al doilea numar: 5
+Rezultat: 9.0
+Primul numar (m = memoria, gata = iesire): m
+Operatia (+ - *): *
+Al doilea numar: 2
+Rezultat: 18.0
+Primul numar (m = memoria, gata = iesire): gata
+```
+
+### 2. `este_palindrom(text)`
+
+```python
+def este_palindrom(text):
+    return text == text[::-1]
+
+print(este_palindrom("ele"))
+print(este_palindrom("mama"))
+```
+
+**Ieșire:**
+```text
+True
+False
+```
+
+### 3. `cmmdc(a, b)`
+
+```python
+def cmmdc(a, b):
+    while b != 0:
+        rest = a % b
+        a = b
+        b = rest
+    return a
+
+print(cmmdc(12, 18))
+print(cmmdc(100, 75))
+```
+
+**Ieșire:**
+```text
+6
+25
+```
+
+### 4. Joc de zaruri cu funcții
+
+```python
+import random
+
+def arunca():
+    return random.randint(1, 6)
+
+def runda():
+    tu = arunca()
+    calc = arunca()
+    print("Tu:", tu, "| Calculatorul:", calc)
+    if tu > calc:
+        print("Ai castigat!")
+    elif tu < calc:
+        print("Ai pierdut!")
+    else:
+        print("Egalitate!")
+
+def main():
+    for i in range(3):
+        print("Runda", i + 1)
+        runda()
+
+main()
+```
+
+**Ieșire:**
+```text
+Runda 1
+Tu: 2 | Calculatorul: 3
+Ai pierdut!
+Runda 2
+Tu: 1 | Calculatorul: 6
+Ai pierdut!
+Runda 3
+Tu: 4 | Calculatorul: 4
+Egalitate!
+```
+
+*Numerele sunt aleatoare, deci la tine ieșirea poate fi alta.*
+
+---
 ## Ce urmează — Lecția 10
 **Proiectul modulului**: jocul „Ghicește numărul”, cu funcții, încercări limitate, indicii și scor.

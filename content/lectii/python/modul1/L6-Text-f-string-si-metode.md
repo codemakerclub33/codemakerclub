@@ -70,7 +70,6 @@ Ma numesc Ana si am 10 ani.
 
 Python înlocuiește `{nume}` cu valoarea variabilei. Nu mai ai nevoie de `str(...)` pentru numere, iar propoziția arată ca în realitate.
 
-
 ### Exemplul 2 — Numere cu zecimale
 
 ```python
@@ -144,7 +143,6 @@ Imi plac pere si mere coapte
 ```
 
 `replace(vechi, nou)` înlocuiește **toate** bucățile găsite. Al treilea număr (`1`) limitează la **câte** înlocuiri.
-
 
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 3** (Litere mari și mici)  
@@ -429,5 +427,51 @@ print(nume[1:3.0])
 
 ---
 
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+
+### 1. Inițiala
+
+```python
+nume = input("Numele tau: ")
+print(nume[0].upper() + ".")
+```
+
+**Ieșire:**
+```text
+Numele tau: mihai
+M.
+```
+
+### 2. Palindrom
+
+```python
+cuvant = "ele"
+inversat = cuvant[::-1]
+print(cuvant == inversat)
+cuvant = "mama"
+print(cuvant == cuvant[::-1])
+```
+
+**Ieșire:**
+```text
+True
+False
+```
+
+### 3. Prețul cu două zecimale
+
+```python
+pret = 19.5
+print(f"Pretul este {pret:.2f} lei")
+```
+
+**Ieșire:**
+```text
+Pretul este 19.50 lei
+```
+
+---
 ## Ce urmează — Lecția 7
 Programul învață să **decidă**: cu `if` face un lucru dacă e adevărat ceva și alt lucru dacă nu.

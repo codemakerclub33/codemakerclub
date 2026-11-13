@@ -1,4 +1,5 @@
-# LECȚIA 1 — `for` și `range`
+# LECȚIA 1 — Numărătoarea rachetei
+### for și range
 **Modulul 2 · Repetăm, colecționăm, organizăm · 2 ore**  
 **Code Maker Club · Python Builder**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei folosești `for` cu `range(...)` (cu unul, doi sau trei numere), parcurgi un text și o listă, calculezi sume cu o buclă și afișezi pe același rând cu `end`.  
-**Minim:** o buclă `for` care afișează numerele de la 1 la 10.  
-**Ținta orei (Complet):** + o numărătoare inversă, o sumă calculată cu buclă și un mic desen cu `*`.
-
-## De ce contează
-Un joc verifică în fiecare secundă dacă ai atins un inamic. O aplicație trimite același mesaj către toți prietenii tăi. Fără bucle, ai scrie aceleași linii de sute de ori. Cu `for`, o scrii o singură dată.
+## Ce facem azi
+La finalul orei folosești `for` cu `range(...)` (cu unul, doi sau trei numere), parcurgi un text, calculezi sume cu o buclă și afișezi pe același rând cu `end`. Un joc verifică în fiecare secundă dacă ai atins un inamic. O aplicație trimite același mesaj către toți prietenii tăi. Fără bucle, ai scrie aceleași linii de sute de ori. Cu `for`, o scrii o singură dată.
 
 ---
 
@@ -24,10 +20,22 @@ Un joc verifică în fiecare secundă dacă ai atins un inamic. O aplicație tri
 | 0–10 | Recapitulare Modulul 1 |
 | 10–35 | Prima buclă `for` și `range(n)` (**Exemplele 1–2**) |
 | 35–60 | `range` cu început, sfârșit și pas (**Exemplele 3–4**) |
-| 60–85 | Sume, text, liste (**Exemplele 5–7**) |
-| 85–105 | Bucla cu `input` și numărătoarea inversă (**Exemplele 8–9**) |
-| 105–118 | Mini-proiect (**Exemplul 10**) |
+| 60–85 | Sume și text (**Exemplele 5–6**) |
+| 85–105 | Numărătoarea inversă (**Exemplul 7**) |
+| 105–118 | Mini-proiect (**Exemplul 8**) |
 | 118–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `for i in range(5):` | Repetă blocul de 5 ori, cu `i` de la 0 la 4 | `print(i)` |
+| `range(1, 11)` | Numerele de la 1 la 10 (ultimul nu intră) | `for n in range(1, 11):` |
+| `range(10, 0, -1)` | Numără din pas în pas, aici înapoi | `10, 9, 8 … 1` |
+| `for litera in text:` | Parcurge un text, litera cu literă | `for c in "mar":` |
+| `print(..., end=" ")` | Afișează pe același rând | `print(i, end=" ")` |
 
 ---
 
@@ -183,54 +191,16 @@ a
 
 Bucla `for` poate trece prin **fiecare literă** a unui text: `litera` primește pe rând `A`, `n`, `a`.
 
-### Exemplul 7 — `for` pe o listă
-
-```python
-fructe = ["mar", "para", "prune"]
-for fruct in fructe:
-    print(f"Imi plac {fruct}")
-print("Gata!")
-```
-
-**Ieșire:**
-```text
-Imi plac mar
-Imi plac para
-Imi plac prune
-Gata!
-```
-
-Aici `fruct` primește pe rând fiecare element din listă. Observă că linia `print("Gata!")` nu e indentată: se execută **o singură dată**, după buclă.
-
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 5** (Suma numerelor de la 1 la 10)  
 - [ ] Am scris și am rulat **Exemplul 6** (`for` pe un text)  
-- [ ] Am scris și am rulat **Exemplul 7** (`for` pe o listă)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## 5. Buclă și `input`
+## 5. Numărătoarea inversă
 
-### Exemplul 8 — Repetăm de câte ori vrea utilizatorul
-
-```python
-n = int(input("De cate ori sa repet? "))
-for i in range(n):
-    print(f"Repetarea {i + 1}")
-```
-
-**Ieșire:**
-```text
-De cate ori sa repet? 3
-Repetarea 1
-Repetarea 2
-Repetarea 3
-```
-
-Variabila `i` începe de la `0`, deci afișăm `i + 1` ca să numărăm de la 1, ca oamenii.
-
-### Exemplul 9 — Numărătoarea inversă
+### Exemplul 7 — Numărătoarea inversă
 
 ```python
 for i in range(5, 0, -1):
@@ -249,15 +219,14 @@ START!
 ```
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 8** (Repetăm de câte ori vrea utilizatorul)  
-- [ ] Am scris și am rulat **Exemplul 9** (Numărătoarea inversă)  
+- [ ] Am scris și am rulat **Exemplul 7** (Numărătoarea inversă)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 6. Mini-proiect
 
-### Exemplul 10 — Numărătoarea rachetei
+### Exemplul 8 — Numărătoarea rachetei
 
 ```python
 print("=== Centrul de control ===")
@@ -294,66 +263,41 @@ Racheta urca:
 În ultimul `for`, folosim un calcul cu `rand` ca să aliniem desenul: spațiile din stânga scad, iar semnele `^` cresc.
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** (Numărătoarea rachetei)  
+- [ ] Am scris și am rulat **Exemplul 8** (Numărătoarea rachetei)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Numărătoarea rachetei”
 
-### Exercițiul A — „Numărătoarea rachetei” (obligatoriu)
+### Minim vs Complet
+
+| | Ce trebuie |
+|--|------------|
+| **Minim** | O buclă `for` care afișează numerele de la 1 la 10 |
+| **Complet** | Minim + numărătoare inversă de la un număr citit, mesajul „Decolare!” și un desen cu `*` |
+
+### Pasul 1 — Minim
+- [ ] O buclă `for` care afișează numerele de la 1 la 10  
+
+### Pasul 2 — Complet
 Scrie un program care:
 1. citește de la ce număr să numere (de exemplu 10);
 2. afișează numărătoarea inversă cu un `for`;
 3. la final afișează „Decolare!” și un desen cu `*` sau `^`, făcut cu o buclă.
-
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
-
-```python
-for i in range(3):
-    print(i * 2)
-for n in range(2, 8, 2):
-    print(n)
-total = 0
-for k in range(1, 5):
-    total += k
-print(total)
-```
-
-### Exercițiul C — Tabla de adunare
-Citește un număr și afișează de la 1 la 10 rezultatul adunării lui cu fiecare număr, în forma `5 + 1 = 6`.
-
-### Exercițiul D — Găsește greșelile
-Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
-
-```text
-for i in range(5)
-print(i)
-for n in range(1, 6)
-total = total + n
-print("Suma:" total)
-for x in range(10, 0)
-    print(x)
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. Câte numere dă `range(5)` și care sunt ele?  
-2. Ce face al treilea număr din `range(1, 20, 3)`?  
-3. De ce linia de după buclă nu se repetă?
 
 **Gata când:**
 - [ ] Programul folosește cel puțin 2 bucle `for`  
 - [ ] Numărătoarea inversă funcționează  
 - [ ] Desenul se face cu o buclă  
 - [ ] Ai testat cu 3 valori diferite  
-- [ ] Ai explicat pe foaie ce dă `range(5)`  
 - [ ] Fișierul se numește `Prenume_Nume_P2_L1.py`  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Matematica buclelor
+*Doar dacă ai terminat Complet.*
+
 - [ ] Calculează suma numerelor **pare** de la 1 la 100  
 - [ ] Afișează un pom de Crăciun cu `*` din 6 rânduri  
 - [ ] Calculează **factorialul** unui număr (5! = 1·2·3·4·5) cu o buclă  
@@ -397,13 +341,151 @@ Răspunde pe foaie:
 ---
 
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
+1. Refă **Exemplele 1–8** în Thonny, scrise de mână.  
 2. Scrie un program care afișează **numerele de la 1 la 50** care sunt multipli de 3.  
 3. Scrie un program care citește un număr `n` și afișează **suma** numerelor de la 1 la `n`.  
 4. **Bonus:** desenează cu `*` un **romb** cu 7 rânduri.  
-5. Salvează totul ca `Tema_P2_L1_Prenume_Nume.py`.
+5. **Tabla de adunare.** Citește un număr și afișează de la 1 la 10 rezultatul adunării lui cu fiecare număr, în forma `5 + 1 = 6`.
+6. Salvează totul ca `Tema_P2_L1_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le în Thonny, rulează-le și schimbă-le după preferințe.
+
+#### Acasă 1 — `for` pe o listă
+
+```python
+fructe = ["mar", "para", "prune"]
+for fruct in fructe:
+    print(f"Imi plac {fruct}")
+print("Gata!")
+```
+
+**Ieșire:**
+```text
+Imi plac mar
+Imi plac para
+Imi plac prune
+Gata!
+```
+
+Aici `fruct` primește pe rând fiecare element din listă. Observă că linia `print("Gata!")` nu e indentată: se execută **o singură dată**, după buclă.
+
+#### Acasă 2 — Repetăm de câte ori vrea utilizatorul
+
+```python
+n = int(input("De cate ori sa repet? "))
+for i in range(n):
+    print(f"Repetarea {i + 1}")
+```
+
+**Ieșire:**
+```text
+De cate ori sa repet? 3
+Repetarea 1
+Repetarea 2
+Repetarea 3
+```
+
+Variabila `i` începe de la `0`, deci afișăm `i + 1` ca să numărăm de la 1, ca oamenii.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+for i in range(3):
+    print(i * 2)
+for n in range(2, 8, 2):
+    print(n)
+total = 0
+for k in range(1, 5):
+    total += k
+print(total)
+```
+
+**Găsește greșelile.** Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
+
+```text
+for i in range(5)
+print(i)
+for n in range(1, 6)
+total = total + n
+print("Suma:" total)
+for x in range(10, 0)
+    print(x)
+```
 
 ---
 
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+
+### 1. Suma numerelor pare de la 1 la 100
+
+```python
+total = 0
+for n in range(2, 101, 2):
+    total += n
+print(total)
+```
+
+**Ieșire:**
+```text
+2550
+```
+
+### 2. Pomul de Crăciun
+
+```python
+for i in range(1, 7):
+    print(" " * (6 - i) + "*" * (2 * i - 1))
+print(" " * 5 + "*")
+```
+
+**Ieșire:**
+```text
+     *
+    ***
+   *****
+  *******
+ *********
+***********
+     *
+```
+
+### 3. Factorialul
+
+```python
+n = 5
+factorial = 1
+for i in range(1, n + 1):
+    factorial *= i
+print(f"{n}! = {factorial}")
+```
+
+**Ieșire:**
+```text
+5! = 120
+```
+
+### 4. Literele unui cuvânt, cu număr de ordine
+
+```python
+cuvant = "robot"
+for i in range(len(cuvant)):
+    print(i + 1, cuvant[i])
+```
+
+**Ieșire:**
+```text
+1 r
+2 o
+3 b
+4 o
+5 t
+```
+
+---
 ## Ce urmează — Lecția 2
 Punem o buclă **în interiorul altei bucle** și desenăm tabla înmulțirii și multe modele.

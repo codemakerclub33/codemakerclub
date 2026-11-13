@@ -1,4 +1,5 @@
-# LECȚIA 5 — Liste I
+# LECȚIA 5 — Lista de cumpărături
+### Liste I
 **Modulul 2 · Repetăm, colecționăm, organizăm · 2 ore**  
 **Code Maker Club · Python Builder**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei creezi liste, citești și schimbi elemente cu indexul, adaugi cu `append` și `insert`, ștergi cu `remove` și `pop`, verifici cu `in`, parcurgi o listă cu `for` și calculezi suma, minimul și maximul.  
-**Minim:** o listă cu 5 elemente, afișată și parcursă cu `for`.  
-**Ținta orei (Complet):** + adăugări și ștergeri, calcule cu numere și un meniu pentru lista de cumpărături.
-
-## De ce contează
-Aproape orice aplicație lucrează cu **colecții**: lista prietenilor, scorurile unui joc, melodiile dintr-un playlist. Listele sunt unul dintre cele mai importante lucruri din Python.
+## Ce facem azi
+La finalul orei creezi liste, citești și schimbi elemente cu indexul, adaugi cu `append` și `insert`, ștergi cu `remove` și `pop`, verifici cu `in`, parcurgi o listă cu `for` și calculezi suma, minimul și maximul. Aproape orice aplicație lucrează cu **colecții**: lista prietenilor, scorurile unui joc, melodiile dintr-un playlist. Listele sunt unul dintre cele mai importante lucruri din Python.
 
 ---
 
@@ -24,11 +20,23 @@ Aproape orice aplicație lucrează cu **colecții**: lista prietenilor, scoruril
 | 0–10 | Recapitulare L4 |
 | 10–30 | Crearea și citirea listelor (**Exemplele 1–2**) |
 | 30–55 | Adăugăm și ștergem (**Exemplele 3–4**) |
-| 55–75 | Căutăm și parcurgem (**Exemplele 5–6**) |
-| 75–95 | Liste de numere, felii (**Exemplele 7–8**) |
-| 95–105 | Listă construită din `input` (**Exemplul 9**) |
-| 105–118 | Mini-proiect (**Exemplul 10**) |
+| 55–75 | Căutăm în listă (**Exemplul 5**) |
+| 75–95 | Calcule cu liste de numere (**Exemplul 6**) |
+| 95–105 | Listă construită din `input` (**Exemplul 7**) |
+| 105–118 | Mini-proiect (**Exemplul 8**) |
 | 118–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `fructe = ["mar", "para"]` | Creează o listă | `print(fructe)` |
+| `lista[0]`, `lista[-1]` | Primul și ultimul element | `fructe[0]` |
+| `.append(x)`, `.insert(i, x)` | Adaugă la final sau pe o poziție | `fructe.append("kiwi")` |
+| `.remove(x)`, `.pop()` | Șterge după valoare sau ultimul element | `fructe.remove("mar")` |
+| `x in lista`, `len(lista)` | Verifică dacă există; numără elementele | `"mar" in fructe` |
 
 ---
 
@@ -162,7 +170,7 @@ Dacă încerci `remove` pe o valoare care nu există, Python dă `ValueError`. V
 
 ---
 
-## 4. Căutăm și parcurgem
+## 4. Căutăm în listă
 
 ### Exemplul 5 — `in` și `not in`
 
@@ -183,50 +191,23 @@ True
 Sofia joaca in echipa!
 ```
 
-### Exemplul 6 — Parcurgem lista
-
-```python
-jucatori = ["Ana", "Mihai", "Sofia"]
-
-for nume in jucatori:
-    print("Salut,", nume)
-
-for i in range(len(jucatori)):
-    print(i + 1, ".", jucatori[i])
-```
-
-**Ieșire:**
-```text
-Salut, Ana
-Salut, Mihai
-Salut, Sofia
-1 . Ana
-2 . Mihai
-3 . Sofia
-```
-
-Două moduri de a parcurge:
-- `for nume in jucatori:` îți dă **direct elementele**; este cel mai simplu.
-- `for i in range(len(jucatori)):` îți dă **indexurile**, util când ai nevoie de poziție.
-
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 5** (`in` și `not in`)  
-- [ ] Am scris și am rulat **Exemplul 6** (Parcurgem lista)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## 5. Liste de numere și felii
+## 5. Liste de numere
 
-### Exemplul 7 — Calcule cu numere
+### Exemplul 6 — Calcule cu numere
 
 ```python
-note = [9, 10, 8, 7, 10]
-print("Suma:", sum(note))
-print("Cea mai mare:", max(note))
-print("Cea mai mica:", min(note))
-print("Media:", sum(note) / len(note))
-print("De cate ori apare 10:", note.count(10))
+scoruri = [9, 10, 8, 7, 10]
+print("Suma:", sum(scoruri))
+print("Cea mai mare:", max(scoruri))
+print("Cea mai mica:", min(scoruri))
+print("Media:", sum(scoruri) / len(scoruri))
+print("De cate ori apare 10:", scoruri.count(10))
 ```
 
 **Ieșire:**
@@ -245,36 +226,15 @@ De cate ori apare 10: 2
 | `min(lista)` | cel mai mic |
 | `lista.count(x)` | de câte ori apare `x` |
 
-### Exemplul 8 — Felii (slicing)
-
-```python
-zile = ["luni", "marti", "miercuri", "joi", "vineri", "sambata", "duminica"]
-print(zile[1:3])
-print(zile[:2])
-print(zile[5:])
-print(zile[::-1])
-```
-
-**Ieșire:**
-```text
-['marti', 'miercuri']
-['luni', 'marti']
-['sambata', 'duminica']
-['duminica', 'sambata', 'vineri', 'joi', 'miercuri', 'marti', 'luni']
-```
-
-Feliile merg ca la text: `lista[de_la:pana_la]`, **fără** ultimul. `[::-1]` inversează lista.
-
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 7** (Calcule cu numere)  
-- [ ] Am scris și am rulat **Exemplul 8** (Felii (slicing))  
+- [ ] Am scris și am rulat **Exemplul 6** (Calcule cu numere)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 6. Lista din `input`
 
-### Exemplul 9 — Colectăm cuvinte
+### Exemplul 7 — Colectăm cuvinte
 
 ```python
 cuvinte = []
@@ -304,14 +264,14 @@ Ai scris 3 cuvinte:
 `cuvinte = []` creează o **listă goală**. O umplem pe parcurs cu `append`.
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 9** (Colectăm cuvinte)  
+- [ ] Am scris și am rulat **Exemplul 7** (Colectăm cuvinte)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 7. Mini-proiect
 
-### Exemplul 10 — Lista de cumpărături
+### Exemplul 8 — Lista de cumpărături
 
 ```python
 lista = []
@@ -356,65 +316,41 @@ La cumparaturi placute!
 ```
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** (Lista de cumpărături)  
+- [ ] Am scris și am rulat **Exemplul 8** (Lista de cumpărături)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Lista de cumpărături”
 
-### Exercițiul A — „Lista de cumpărături” (obligatoriu)
+### Minim vs Complet
+
+| | Ce trebuie |
+|--|------------|
+| **Minim** | O listă cu 5 elemente, afișată și parcursă cu `for` |
+| **Complet** | Minim + un meniu cu adăugare, afișare numerotată și ștergere |
+
+### Pasul 1 — Minim
+- [ ] O listă cu 5 elemente, afișată și parcursă cu `for`  
+
+### Pasul 2 — Complet
 Scrie un program cu un **meniu care se repetă** (`while`) și cu opțiunile:
 1. **Adaugă** un produs;
 2. **Arată** lista, numerotată;
 3. **Șterge** un produs (după nume, cu verificare dacă există);
 4. **Ieșire**.
 
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
-
-```python
-l = [3, 1, 4]
-l.append(1)
-l.insert(1, 5)
-print(l)
-print(l.pop())
-print(len(l))
-print(l[1:3])
-print(4 in l)
-```
-
-### Exercițiul C — Notele mele
-Citește 5 note într-o listă. Afișează media, nota cea mai mare, nota cea mai mică și de câte ori apare nota 10.
-
-### Exercițiul D — Găsește greșelile
-Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
-
-```text
-fructe = ("mar", "para", "prune"]
-print(fructe[3])
-fructe.add("kiwi")
-fructe.remove("banana")
-for f in fructe
-    print(f)
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. Care e diferența dintre `append` și `insert`?  
-2. De ce primul element are indexul `0`?  
-3. Ce face `lista.pop()` și ce o deosebește de `remove`?
-
 **Gata când:**
 - [ ] Meniul se repetă până la „Ieșire”  
 - [ ] Poți adăuga, afișa și șterge produse  
 - [ ] Nu se blochează dacă lista e goală sau produsul nu există  
-- [ ] Ai explicat pe foaie diferența dintre `append` și `insert`  
 - [ ] Fișierul se numește `Prenume_Nume_P2_L5.py`  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Magazinul mai deștept
+*Doar dacă ai terminat Complet.*
+
 - [ ] Adaugă o opțiune care afișează **câte produse** sunt în listă  
 - [ ] Citește 6 numere și afișează lista **fără numerele negative**  
 - [ ] Inversează o listă fără `[::-1]`, cu o buclă  
@@ -445,7 +381,6 @@ Răspunde pe foaie:
 - `x in lista` verifică dacă există.
 - `for x in lista:` parcurge elementele.
 - `sum`, `max`, `min`, `len`, `count` fac calcule.
-- `lista[a:b]` dă o felie; `lista[::-1]` inversează.
 
 ---
 
@@ -454,18 +389,165 @@ Răspunde pe foaie:
 - Cum adaugi un element la sfârșitul listei?  
 - Care e diferența dintre `remove(x)` și `pop(i)`?  
 - Cum verifici dacă un element se află în listă?  
-- Ce dă `lista[::-1]`?  
+- Cum afli ultimul element al unei liste?  
 
 ---
 
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
+1. Refă **Exemplele 1–8** în Thonny, scrise de mână.  
 2. Fă o **listă cu hobby-urile tale** și un program care o afișează numerotat.  
 3. Scrie un program care citește **5 numere**, le pune într-o listă și afișează: lista, suma, media, cel mai mare și cel mai mic număr.  
 4. **Bonus:** program care citește numele a 4 prieteni și afișează un salut pentru fiecare, cu `for`.  
-5. Salvează totul ca `Tema_P2_L5_Prenume_Nume.py`.
+5. **Scorurile mele.** Citește 5 scoruri într-o listă. Afișează media, scorul cel mai mare, scorul cel mai mic și de câte ori apare scorul 10.
+6. Salvează totul ca `Tema_P2_L5_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le în Thonny, rulează-le și schimbă-le după preferințe.
+
+#### Acasă 1 — Parcurgem lista
+
+```python
+jucatori = ["Ana", "Mihai", "Sofia"]
+
+for nume in jucatori:
+    print("Salut,", nume)
+
+for i in range(len(jucatori)):
+    print(i + 1, ".", jucatori[i])
+```
+
+**Ieșire:**
+```text
+Salut, Ana
+Salut, Mihai
+Salut, Sofia
+1 . Ana
+2 . Mihai
+3 . Sofia
+```
+
+Două moduri de a parcurge:
+- `for nume in jucatori:` îți dă **direct elementele**; este cel mai simplu.
+- `for i in range(len(jucatori)):` îți dă **indexurile**, util când ai nevoie de poziție.
+
+#### Acasă 2 — Felii (slicing)
+
+```python
+zile = ["luni", "marti", "miercuri", "joi", "vineri", "sambata", "duminica"]
+print(zile[1:3])
+print(zile[:2])
+print(zile[5:])
+print(zile[::-1])
+```
+
+**Ieșire:**
+```text
+['marti', 'miercuri']
+['luni', 'marti']
+['sambata', 'duminica']
+['duminica', 'sambata', 'vineri', 'joi', 'miercuri', 'marti', 'luni']
+```
+
+Feliile merg ca la text: `lista[de_la:pana_la]`, **fără** ultimul. `[::-1]` inversează lista.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+l = [3, 1, 4]
+l.append(1)
+l.insert(1, 5)
+print(l)
+print(l.pop())
+print(len(l))
+print(l[1:3])
+print(4 in l)
+```
+
+**Găsește greșelile.** Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
+
+```text
+fructe = ("mar", "para", "prune"]
+print(fructe[3])
+fructe.add("kiwi")
+fructe.remove("banana")
+for f in fructe
+    print(f)
+```
 
 ---
 
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+
+### 1. Câte produse sunt în listă
+
+```python
+lista = ["lapte", "paine", "oua"]
+print("Produse:", len(lista))
+```
+
+**Ieșire:**
+```text
+Produse: 3
+```
+
+### 2. Lista fără numerele negative
+
+```python
+lista = []
+for i in range(6):
+    n = int(input("Numar: "))
+    if n >= 0:
+        lista.append(n)
+print(lista)
+```
+
+**Ieșire:**
+```text
+Numar: 3
+Numar: -1
+Numar: 4
+Numar: -5
+Numar: 2
+Numar: -7
+[3, 4, 2]
+```
+
+### 3. Lista inversată cu o buclă
+
+```python
+lista = [1, 2, 3, 4]
+invers = []
+for x in lista:
+    invers.insert(0, x)
+print(invers)
+```
+
+**Ieșire:**
+```text
+[4, 3, 2, 1]
+```
+
+### 4. Cuvinte interzise
+
+```python
+interzise = ["prost", "urat"]
+cuvant = input("Scrie un cuvant: ")
+if cuvant in interzise:
+    print("Cuvantul este interzis!")
+else:
+    print("Cuvantul este bun.")
+```
+
+**Ieșire:**
+```text
+Scrie un cuvant: urat
+Cuvantul este interzis!
+```
+
+---
 ## Ce urmează — Lecția 6
 Mai multe despre liste: **sortare**, liste în liste, copierea listelor și cum transformăm o propoziție într-o listă de cuvinte.

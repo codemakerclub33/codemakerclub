@@ -96,7 +96,6 @@ Dubla! Mai arunci o data!
 
 Cele două zaruri sunt **independente**: fiecare apel la `randint` dă un număr nou.
 
-
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 1** (Aruncăm un zar)  
 - [ ] Am scris și am rulat **Exemplul 2** (Două zaruri)  
@@ -199,7 +198,6 @@ Nu. Numarul era 2.
 ```
 
 Calculatorul alege un număr **în secret**, tu încerci să-l ghicești. În lecțiile din Modulul 2 vom lăsa jucătorul să încerce de mai multe ori.
-
 
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 5** (Zarul norocos)  
@@ -428,5 +426,71 @@ if zar = 6:
 
 ---
 
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+
+### 1. Aruncă zarurile
+
+```python
+import random
+tu = random.randint(1, 6) + random.randint(1, 6)
+calc = random.randint(1, 6) + random.randint(1, 6)
+print("Tu:", tu)
+print("Calculatorul:", calc)
+if tu > calc:
+    print("Ai castigat!")
+elif tu < calc:
+    print("A castigat calculatorul!")
+else:
+    print("Egalitate!")
+```
+
+**Ieșire:**
+```text
+Tu: 7
+Calculatorul: 7
+Egalitate!
+```
+
+*Numerele sunt aleatoare, deci la tine ieșirea poate fi alta.*
+
+### 2. Nume de dragon
+
+```python
+import random
+prenume = ["Focus", "Zmeu", "Aripa", "Cenusa"]
+nume = ["cel Mare", "de Foc", "din Nori", "cel Strasnic"]
+print(random.choice(prenume), random.choice(nume))
+```
+
+**Ieșire:**
+```text
+Aripa din Nori
+```
+
+*Numerele sunt aleatoare, deci la tine ieșirea poate fi alta.*
+
+### 3. Cine strânge masa
+
+```python
+import random
+nume = []
+for i in range(3):
+    nume.append(input("Nume: "))
+print("Strange masa:", random.choice(nume))
+```
+
+**Ieșire:**
+```text
+Nume: Ana
+Nume: Radu
+Nume: Ioana
+Strange masa: Ana
+```
+
+*Numerele sunt aleatoare, deci la tine ieșirea poate fi alta.*
+
+---
 ## Ce urmează — Lecția 10
 **Proiect de modul**: „Meniul meu de proiecte”, un meniu în care reiei proiectele din lecțiile trecute, cu mici modificări.

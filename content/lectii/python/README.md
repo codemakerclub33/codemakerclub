@@ -1,6 +1,6 @@
 # Python — Curs de programare (10+ ani)
 
-4 module × 10 lecții, Python 3 cu Thonny. Fiecare lecție durează 2 ore și are 10 exemple, proiect și exerciții A–E.
+4 module × 10 lecții, Python 3 cu Thonny. Fiecare lecție durează 2 ore și are 8 exemple, proiect, temă și exemple pentru acasă.
 
 | Modul | Titlu | Insigna |
 |-------|-------|---------|

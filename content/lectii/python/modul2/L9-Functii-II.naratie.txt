@@ -1,8 +1,10 @@
-Lecția nouă din Modulul doi. Funcții, partea a doua.
+Lecția nouă. Calculatorul cu funcții.
 
 Astăzi faci funcțiile să lucreze împreună și îți organizezi programul. Proiectul se numește Calculatorul cu funcții. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P doi, linie jos, L nouă, punct P Y.
 
-Obiectivul. La final dai liste ca parametri, returnezi mai multe valori, apelezi funcții din alte funcții, folosești argumente cu nume, documentezi o funcție, validezi datele introduse și organizezi un program cu o funcție main. Minim: o funcție care primește o listă și una care returnează două valori. Complet: minim, plus un calculator cu meniu, organizat în funcții.
+Ce facem azi. La final dai liste ca parametri, returnezi mai multe valori, apelezi funcții din alte funcții, folosești argumente cu nume, documentezi o funcție, validezi datele introduse și organizezi un program cu o funcție main. Programele mari nu sunt scrise într-un singur bloc lung, ci din piese mici, fiecare cu un rol. Așa le poți testa pe rând, le poți reutiliza și le înțelegi mai ușor. Aceasta este arta de a organiza codul.
+
+Instrucțiuni noi azi. O funcție poate primi o listă ca parametru. Return poate trimite două valori deodată. Argumentele pot avea nume și le dai în orice ordine. Descrierea unei funcții se scrie între ghilimele triple, chiar sub def. Funcția main adună tot programul și se apelează o singură dată.
 
 Primul pas. Liste în funcții. O funcție poate primi o listă, de exemplu ca să calculeze suma sau media numerelor.
 
@@ -10,18 +12,20 @@ Al doilea pas. Mai multe valori. Return poate da două valori, de exemplu minimu
 
 Al treilea pas. Funcții între ele și argumente cu nume. O funcție poate chema alta: suma pătratelor folosește funcția pătrat. La apel poți da argumentele cu nume, în orice ordine, ceea ce face codul mai clar.
 
-Al patrulea pas. Documentare, noroc și validare. Un docstring, scris între trei ghilimele, descrie ce face funcția. O funcție poate folosi random, de exemplu un zar. O validare repetată merge într-o funcție care citește un număr până primește unul corect.
+Al patrulea pas. Documentare și validare. Un docstring, scris între trei ghilimele, descrie ce face funcția. O validare repetată merge într-o funcție care citește un număr până primește unul corect.
 
-Al cincilea pas. Funcția care se cheamă pe ea însăși. Se numește recursivitate și este pentru curioși: factorialul unui număr este numărul înmulțit cu factorialul numărului mai mic cu unu.
+Al cincilea pas. Programul organizat. Programele bune au funcții mici deasupra și o funcție main, care le folosește și este apelată o singură dată, la sfârșit. Așa vezi imediat povestea programului.
 
-Al șaselea pas. Programul organizat. Programele bune au funcții mici deasupra și o funcție main, care le folosește și este apelată o singură dată, la sfârșit. Așa vezi imediat povestea programului.
-
-Al șaptelea pas. Mini-proiect. Calculatorul cu funcții: meniu cu adunare, scădere, înmulțire și împărțire, ieșire.
+Al șaselea pas. Mini-proiect. Calculatorul cu funcții: meniu cu adunare, scădere, înmulțire și împărțire, ieșire.
 
 Greșeli frecvente. Value Error too many values to unpack: numărul de variabile nu se potrivește cu valorile returnate. Name Error main: ai apelat main înainte de definire, deci îl apelezi la sfârșitul fișierului. Type Error: ai dat argumente în plus sau în minus.
 
 Proiectul de azi. Calculatorul cu funcții. Minim înseamnă listă în funcție și două valori returnate. Complet înseamnă calculator cu meniu și main.
 
+Provocare, trei stele. Calculatorul cu memorie. Doar dacă ai terminat varianta completă. Adaugi la calculator memoria: ultimul rezultat poate fi folosit ca prim număr. Scrii o funcție care spune dacă un text este palindrom. Faci o funcție care găsește cel mai mare divizor comun. Scrii un joc de zaruri în care fiecare pas este o funcție.
+
 Recapitulare. O funcție poate primi o listă. Return a virgulă b dă două valori. Funcțiile se pot chema între ele, iar fiecare face un singur lucru. Argumentele pot fi date cu nume. Un docstring descrie funcția. Main organizează programul.
+
+Ce urmează. În lecția următoare construiești proiectul modulului: jocul Ghicește numărul, cu funcții, încercări limitate, indicii și scor.
 
 Succes cu calculatorul.

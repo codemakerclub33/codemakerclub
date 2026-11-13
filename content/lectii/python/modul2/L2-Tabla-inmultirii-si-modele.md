@@ -1,4 +1,5 @@
-# LECȚIA 2 — Tabla înmulțirii și modele
+# LECȚIA 2 — Atelierul de modele
+### Bucle imbricate: tabla înmulțirii și modele
 **Modulul 2 · Repetăm, colecționăm, organizăm · 2 ore**  
 **Code Maker Club · Python Builder**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei folosești bucle `for` una în alta (bucle **imbricate**), formatezi numerele în coloane cu `:3` și construiești modele din `*` și cifre.  
-**Minim:** tabla înmulțirii cu un număr ales și un triunghi de `*`.  
-**Ținta orei (Complet):** + tabla completă 1–5, o piramidă și un model cu cifre.
-
-## De ce contează
-Ecranul unui joc este făcut din rânduri și coloane de puncte (pixeli). Ca să le parcurgi pe toate, ai nevoie de două bucle: una pentru rânduri, una pentru coloane. Aceeași idee stă și în spatele tabelelor, hărților și imaginilor.
+## Ce facem azi
+La finalul orei folosești bucle `for` una în alta (bucle **imbricate**), formatezi numerele în coloane cu `:3` și construiești modele din `*` și cifre. Ecranul unui joc este făcut din rânduri și coloane de puncte (pixeli). Ca să le parcurgi pe toate, ai nevoie de două bucle: una pentru rânduri, una pentru coloane. Aceeași idee stă și în spatele tabelelor, hărților și imaginilor.
 
 ---
 
@@ -24,10 +20,22 @@ Ecranul unui joc este făcut din rânduri și coloane de puncte (pixeli). Ca să
 | 0–10 | Recapitulare L1 |
 | 10–30 | Tabla înmulțirii (**Exemplele 1–2**) |
 | 30–60 | Bucle imbricate și tabla completă (**Exemplul 3**) |
-| 60–90 | Triunghi, pătrat, piramidă (**Exemplele 4–6**) |
-| 90–105 | Numere pare, cifre repetate, medie (**Exemplele 7–9**) |
-| 105–118 | Mini-proiect (**Exemplul 10**) |
+| 60–90 | Triunghi, piramidă (**Exemplele 4–5**) |
+| 90–105 | Numere pare și medie (**Exemplele 6–7**) |
+| 105–118 | Mini-proiect (**Exemplul 8**) |
 | 118–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `for i ...:` cu `for j ...:` înăuntru | Bucla din interior rulează complet la fiecare pas al celei de afară | rânduri și coloane |
+| `print()` | Trece pe rândul următor, după bucla interioară | `print()` |
+| `f"{x:3}"` | Pune numărul într-o coloană lată de 3 caractere | `print(f"{i * j:3}", end="")` |
+| `"*" * n` | Repetă un text de `n` ori | `"*" * 5` |
+| `" " * n` | Pune `n` spații, ca să centrezi o piramidă | `" " * 3` |
 
 ---
 
@@ -151,23 +159,7 @@ for i in range(1, 6):
 
 Aici nu avem nevoie de bucle imbricate: ne ajută faptul că un text se poate **înmulți** (`"*" * 3` este `***`).
 
-### Exemplul 5 — Dreptunghiul de `#`
-
-```python
-for rand in range(3):
-    for col in range(8):
-        print("#", end="")
-    print()
-```
-
-**Ieșire:**
-```text
-########
-########
-########
-```
-
-### Exemplul 6 — Piramida
+### Exemplul 5 — Piramida
 
 ```python
 inaltime = 5
@@ -190,15 +182,14 @@ Pe rândul `i` avem `inaltime - i` spații și `2 * i - 1` stele. Verifică: pe 
 
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 4** (Triunghiul)  
-- [ ] Am scris și am rulat **Exemplul 5** (Dreptunghiul de `#`)  
-- [ ] Am scris și am rulat **Exemplul 6** (Piramida)  
+- [ ] Am scris și am rulat **Exemplul 5** (Piramida)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 5. Mai multe modele
 
-### Exemplul 7 — Numerele pare
+### Exemplul 6 — Numerele pare
 
 ```python
 for n in range(2, 21, 2):
@@ -211,25 +202,7 @@ print()
 2 4 6 8 10 12 14 16 18 20
 ```
 
-### Exemplul 8 — Cifre repetate
-
-```python
-for i in range(1, 6):
-    print(str(i) * i)
-```
-
-**Ieșire:**
-```text
-1
-22
-333
-4444
-55555
-```
-
-`str(i)` transformă numărul în text, iar `* i` îl repetă de `i` ori.
-
-### Exemplul 9 — Suma și media a 3 numere
+### Exemplul 7 — Suma și media a 3 numere
 
 ```python
 total = 0
@@ -252,16 +225,15 @@ Media: 6.0
 Aici bucla **citește** numerele, nu doar le afișează. Așa nu scrii de 3 ori aceeași linie.
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 7** (Numerele pare)  
-- [ ] Am scris și am rulat **Exemplul 8** (Cifre repetate)  
-- [ ] Am scris și am rulat **Exemplul 9** (Suma și media a 3 numere)  
+- [ ] Am scris și am rulat **Exemplul 6** (Numerele pare)  
+- [ ] Am scris și am rulat **Exemplul 7** (Suma și media a 3 numere)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 6. Mini-proiect
 
-### Exemplul 10 — Atelierul de modele
+### Exemplul 8 — Atelierul de modele
 
 ```python
 n = int(input("Alege un numar (2-9): "))
@@ -311,63 +283,41 @@ Piramida de cifre:
 ```
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** (Atelierul de modele)  
+- [ ] Am scris și am rulat **Exemplul 8** (Atelierul de modele)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Atelierul de modele”
 
-### Exercițiul A — „Atelierul de modele” (obligatoriu)
+### Minim vs Complet
+
+| | Ce trebuie |
+|--|------------|
+| **Minim** | Tabla înmulțirii cu un număr ales și un triunghi de `*` |
+| **Complet** | Minim + o piramidă, pentru un `n` citit între 2 și 9 |
+
+### Pasul 1 — Minim
+- [ ] Tabla înmulțirii cu un număr ales și un triunghi de `*`  
+
+### Pasul 2 — Complet
 Scrie un program care:
 1. citește un număr `n` între 2 și 9;
 2. afișează **tabla înmulțirii** lui `n` de la 1 la 10;
 3. afișează un **triunghi** cu `n` rânduri;
 4. afișează **o piramidă** (de `*` sau de cifre) cu `n` rânduri.
 
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
-
-```python
-for i in range(1, 4):
-    for j in range(1, 3):
-        print(i, j)
-for i in range(3):
-    print("-" * (i + 1))
-```
-
-### Exercițiul C — Dreptunghiul tău
-Citește **numărul de rânduri** și **numărul de coloane** și desenează un dreptunghi plin din `#`.
-
-### Exercițiul D — Găsește greșelile
-Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
-
-```text
-for i in range(1, 6)
-    for j in range(1, 6):
-    print(i * j, end=" ")
-print()
-for i in range(1, 5):
-    print("*" * i
-print("Piramida:" * "-")
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. De câte ori se execută instrucțiunea din interior, dacă bucla de afară are 4 pași și cea din interior 3?  
-2. De ce punem `print()` după bucla interioară?  
-3. Ce face `:3` în `{valoare:3}`?
-
 **Gata când:**
 - [ ] Programul afișează tabla lui `n`  
 - [ ] Triunghiul și piramida au `n` rânduri  
 - [ ] Funcționează pentru cel puțin 3 valori diferite ale lui `n`  
-- [ ] Ai explicat pe foaie de ce folosim `print()` după bucla interioară  
 - [ ] Fișierul se numește `Prenume_Nume_P2_L2.py`  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Tabla de șah și rombul
+*Doar dacă ai terminat Complet.*
+
 - [ ] Afișează **tabla înmulțirii 1–9** completă, frumos aliniată  
 - [ ] Desenează un **romb** din `*`  
 - [ ] Afișează o **tablă de șah** de 8×8 cu `#` și `.` alternate  
@@ -409,13 +359,163 @@ Răspunde pe foaie:
 ---
 
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
+1. Refă **Exemplele 1–8** în Thonny, scrise de mână.  
 2. Afișează **tablele de înmulțire de la 2 la 5**, fiecare cu titlu.  
 3. Desenează o **casă** din caractere: triunghiul acoperișului și dreptunghiul pereților, cu bucle.  
 4. **Bonus:** afișează un model „scară” cu numere: rândul `i` conține numerele de la `1` la `i`.  
-5. Salvează totul ca `Tema_P2_L2_Prenume_Nume.py`.
+5. **Dreptunghiul tău.** Citește **numărul de rânduri** și **numărul de coloane** și desenează un dreptunghi plin din `#`.
+6. Salvează totul ca `Tema_P2_L2_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le în Thonny, rulează-le și schimbă-le după preferințe.
+
+#### Acasă 1 — Dreptunghiul de `#`
+
+```python
+for rand in range(3):
+    for col in range(8):
+        print("#", end="")
+    print()
+```
+
+**Ieșire:**
+```text
+########
+########
+########
+```
+
+#### Acasă 2 — Cifre repetate
+
+```python
+for i in range(1, 6):
+    print(str(i) * i)
+```
+
+**Ieșire:**
+```text
+1
+22
+333
+4444
+55555
+```
+
+`str(i)` transformă numărul în text, iar `* i` îl repetă de `i` ori.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+for i in range(1, 4):
+    for j in range(1, 3):
+        print(i, j)
+for i in range(3):
+    print("-" * (i + 1))
+```
+
+**Găsește greșelile.** Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
+
+```text
+for i in range(1, 6)
+    for j in range(1, 6):
+    print(i * j, end=" ")
+print()
+for i in range(1, 5):
+    print("*" * i
+print("Piramida:" * "-")
+```
 
 ---
 
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+
+### 1. Tabla înmulțirii 1–9
+
+```python
+for i in range(1, 10):
+    for j in range(1, 10):
+        print(f"{i * j:3}", end="")
+    print()
+```
+
+**Ieșire:**
+```text
+  1  2  3  4  5  6  7  8  9
+  2  4  6  8 10 12 14 16 18
+  3  6  9 12 15 18 21 24 27
+  4  8 12 16 20 24 28 32 36
+  5 10 15 20 25 30 35 40 45
+  6 12 18 24 30 36 42 48 54
+  7 14 21 28 35 42 49 56 63
+  8 16 24 32 40 48 56 64 72
+  9 18 27 36 45 54 63 72 81
+```
+
+### 2. Rombul
+
+```python
+n = 4
+for i in range(1, n + 1):
+    print(" " * (n - i) + "*" * (2 * i - 1))
+for i in range(n - 1, 0, -1):
+    print(" " * (n - i) + "*" * (2 * i - 1))
+```
+
+**Ieșire:**
+```text
+   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *
+```
+
+### 3. Tabla de șah 8×8
+
+```python
+for rand in range(8):
+    for col in range(8):
+        if (rand + col) % 2 == 0:
+            print("#", end="")
+        else:
+            print(".", end="")
+    print()
+```
+
+**Ieșire:**
+```text
+#.#.#.#.
+.#.#.#.#
+#.#.#.#.
+.#.#.#.#
+#.#.#.#.
+.#.#.#.#
+#.#.#.#.
+.#.#.#.#
+```
+
+### 4. Triunghiul inversat
+
+```python
+for i in range(5, 0, -1):
+    print("*" * i)
+```
+
+**Ieșire:**
+```text
+*****
+****
+***
+**
+*
+```
+
+---
 ## Ce urmează — Lecția 3
 Învățăm bucla `while`: repetăm **cât timp** o condiție este adevărată, chiar dacă nu știm de câte ori.

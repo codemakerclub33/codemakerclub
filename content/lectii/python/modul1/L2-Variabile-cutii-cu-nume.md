@@ -169,7 +169,6 @@ print(scor)
 
 `+=` adaugă, `-=` scade. Sunt prescurtări pentru `scor = scor + 5` și `scor = scor - 2`.
 
-
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 4** (Aria unui dreptunghi)  
 - [ ] Am scris și am rulat **Exemplul 5** (Creștem un scor)  
@@ -243,7 +242,6 @@ print(scor)
 ```
 
 Dacă ai scrie `print(Scor)` cu S mare, Python ar da o eroare `NameError`, pentru că `Scor` nu există. Variabila se numește `scor`.
-
 
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 6** (Schimbăm conținutul a două cutii)  
@@ -443,5 +441,66 @@ print("Salut" nume)
 
 ---
 
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+
+### 1. Suma, diferența și produsul
+
+```python
+a = 7
+b = 3
+print("Suma:", a + b)
+print("Diferenta:", a - b)
+print("Produsul:", a * b)
+```
+
+**Ieșire:**
+```text
+Suma: 10
+Diferenta: 4
+Produsul: 21
+```
+
+### 2. Valorile în cerc: a → b → c → a
+
+```python
+a = 1
+b = 2
+c = 3
+temp = c
+c = b
+b = a
+a = temp
+print(a, b, c)
+```
+
+**Ieșire:**
+```text
+3 1 2
+```
+
+### 3. Fișa unui monstru
+
+```python
+nume = "Goblin"
+viata = 30
+atac = 8
+aparare = 3
+print("Monstru:", nume)
+print("Viata:", viata)
+print("Atac:", atac)
+print("Aparare:", aparare)
+```
+
+**Ieșire:**
+```text
+Monstru: Goblin
+Viata: 30
+Atac: 8
+Aparare: 3
+```
+
+---
 ## Ce urmează — Lecția 3
 Aflăm ce fel de lucruri pot ține variabilele: **numere întregi, numere cu virgulă, text** și cum le transformăm unele în altele.

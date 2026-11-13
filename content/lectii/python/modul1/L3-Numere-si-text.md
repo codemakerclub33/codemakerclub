@@ -81,7 +81,6 @@ print(type(True))
 
 `type(...)` îți spune ce tip are o valoare. Rezultatul arată `class` pentru că tipurile sunt „clase” în Python, dar tu citești doar cuvântul dintre ghilimele: `int`, `float`, `str`, `bool`.
 
-
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 1** (Aflăm tipul cu `type()`)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
@@ -108,7 +107,6 @@ Salut, Ana!
 ```
 
 `+` între două texte le **lipește**. Dacă vrei spațiu, trebuie să-l pui singur: `" "`.
-
 
 ### Exemplul 3 — Lungimea unui text
 
@@ -435,5 +433,56 @@ print(type nume)
 
 ---
 
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+
+### 1. Chenar cât numele
+
+```python
+nume = "Alexandru"
+print("=" * len(nume))
+print(nume)
+print("=" * len(nume))
+```
+
+**Ieșire:**
+```text
+=========
+Alexandru
+=========
+```
+
+### 2. Rotunjiri
+
+```python
+x = 3.14159
+print(round(x, 1))
+print(round(x, 2))
+```
+
+**Ieșire:**
+```text
+3.1
+3.14
+```
+
+### 3. Prenume și nume lipite
+
+```python
+prenume = "Ana"
+nume = "Popescu"
+complet = prenume + " " + nume
+print(complet)
+print(len(complet))
+```
+
+**Ieșire:**
+```text
+Ana Popescu
+11
+```
+
+---
 ## Ce urmează — Lecția 4
 Învățăm `input()`: programul **te întreabă ceva**, tu răspunzi, iar el folosește răspunsul.

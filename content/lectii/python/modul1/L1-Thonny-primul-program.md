@@ -381,5 +381,68 @@ print("Gata!"
 
 ---
 
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+
+### 1. Numărătoarea cu `sep` și `end`
+
+```python
+print(1, 2, 3, sep=" - ", end=" - ")
+print("GO!")
+```
+
+**Ieșire:**
+```text
+1 - 2 - 3 - GO!
+```
+
+### 2. Robotul mare, cu comentarii
+
+```python
+# antena
+print("    |    ")
+# capul
+print("  _____  ")
+print(" | o o | ")
+print(" |  -  | ")
+print("  -----  ")
+# corpul
+print(" /|   |\\ ")
+print("/ |___| \\")
+# picioarele
+print("  |   |  ")
+print("  |   |  ")
+print(" _|   |_ ")
+```
+
+**Ieșire:**
+```text
+    |    
+  _____  
+ | o o | 
+ |  -  | 
+  -----  
+ /|   |\ 
+/ |___| \
+  |   |  
+  |   |  
+ _|   |_ 
+```
+
+### 3. Trei rânduri cu un singur `print`
+
+```python
+print("Primul rand\nAl doilea rand\nAl treilea rand")
+```
+
+**Ieșire:**
+```text
+Primul rand
+Al doilea rand
+Al treilea rand
+```
+
+---
 ## Ce urmează — Lecția 2
 Învățăm **variabilele**: cutii cu nume în care programul ține minte numere și cuvinte.

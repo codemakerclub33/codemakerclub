@@ -1,4 +1,5 @@
-# LECȚIA 7 — Dicționare: agenda mea
+# LECȚIA 7 — Agenda mea
+### Dicționare: căutăm după nume
 **Modulul 2 · Repetăm, colecționăm, organizăm · 2 ore**  
 **Code Maker Club · Python Builder**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei creezi dicționare, citești, adaugi, modifici și ștergi valori, verifici dacă o cheie există, parcurgi un dicționar cu `for` și folosești `.get()`, `.items()`, `.keys()` și `.values()`.  
-**Minim:** un dicționar cu datele tale (nume, vârstă, clasă, hobby), afișat.  
-**Ținta orei (Complet):** + o agendă cu meniu (adaugă, caută, afișează) și un contor de litere.
-
-## De ce contează
-Aplicațiile păstrează date cu etichete: „nume: Ana, scor: 120, nivel: 3”. Asta este un dicționar. Același tip de date stă în spatele profilurilor de utilizator, al inventarului dintr-un joc și al dicționarelor adevărate.
+## Ce facem azi
+La finalul orei creezi dicționare, citești, adaugi, modifici și ștergi valori, verifici dacă o cheie există, parcurgi un dicționar cu `for` și folosești `.get()`, `.items()`, `.keys()` și `.values()`. Aplicațiile păstrează date cu etichete: „nume: Ana, scor: 120, nivel: 3”. Asta este un dicționar. Același tip de date stă în spatele profilurilor de utilizator, al inventarului dintr-un joc și al dicționarelor adevărate.
 
 ---
 
@@ -23,12 +19,23 @@ Aplicațiile păstrează date cu etichete: „nume: Ana, scor: 120, nivel: 3”.
 |--------|----------|
 | 0–10 | Recapitulare L6 |
 | 10–30 | Creăm și citim dicționare (**Exemplele 1–2**) |
-| 30–50 | `get`, `in`, ștergere (**Exemplele 3–4, 7**) |
+| 30–50 | `get`, `in`, ștergere (**Exemplele 3–4**) |
 | 50–75 | Parcurgem dicționare (**Exemplele 5–6**) |
-| 75–95 | Un dicționar care numără (**Exemplul 9**) |
-| 95–105 | Agenda cu `input` (**Exemplul 8**) |
-| 105–118 | Mini-proiect (**Exemplul 10**) |
+| 75–105 | Agenda cu `input` (**Exemplul 7**) |
+| 105–118 | Mini-proiect (**Exemplul 8**) |
 | 118–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `d = {"nume": "Ana"}` | Creează un dicționar: cheie → valoare | `agenda = {"Ana": "0721"}` |
+| `d["cheie"]` | Citește sau schimbă o valoare | `agenda["Ana"]` |
+| `d.get("cheie", "nu exista")` | Citește fără eroare, chiar dacă lipsește | `agenda.get("Dan", "nu exista")` |
+| `"cheie" in d`, `del d["cheie"]` | Verifică dacă există; șterge o pereche | `del agenda["Ana"]` |
+| `for k, v in d.items():` | Parcurge perechile cheie – valoare | `print(k, v)` |
 
 ---
 
@@ -47,23 +54,23 @@ Aplicațiile păstrează date cu etichete: „nume: Ana, scor: 120, nivel: 3”.
 Un **dicționar** ține perechi **cheie : valoare**. Cheia este „eticheta”, iar valoarea este ce se află în spatele ei. Se scrie între **acolade** `{ }`.
 
 ```text
-elev = { "nume": "Ana",  "varsta": 10,  "clasa": 4 }
+jucator = { "nume": "Ana",  "varsta": 10,  "nivel": 4 }
            cheie  valoare   cheie  val.   cheie val.
 ```
 
 ### Exemplul 1 — Creăm și citim
 
 ```python
-elev = {"nume": "Ana", "varsta": 10, "clasa": 4}
-print(elev)
-print(elev["nume"])
-print(elev["varsta"] + 1)
-print(len(elev))
+jucator = {"nume": "Ana", "varsta": 10, "nivel": 4}
+print(jucator)
+print(jucator["nume"])
+print(jucator["varsta"] + 1)
+print(len(jucator))
 ```
 
 **Ieșire:**
 ```text
-{'nume': 'Ana', 'varsta': 10, 'clasa': 4}
+{'nume': 'Ana', 'varsta': 10, 'nivel': 4}
 Ana
 11
 3
@@ -77,15 +84,15 @@ Ana
 ### Exemplul 2 — Adăugăm și schimbăm
 
 ```python
-elev = {"nume": "Ana", "varsta": 10}
-elev["clasa"] = 4
-elev["varsta"] = 11
-print(elev)
+jucator = {"nume": "Ana", "varsta": 10}
+jucator["nivel"] = 4
+jucator["varsta"] = 11
+print(jucator)
 ```
 
 **Ieșire:**
 ```text
-{'nume': 'Ana', 'varsta': 11, 'clasa': 4}
+{'nume': 'Ana', 'varsta': 11, 'nivel': 4}
 ```
 
 `dictionar["cheie"] = valoare` face două lucruri: dacă cheia **nu există**, o **adaugă**; dacă **există**, îi **schimbă** valoarea.
@@ -102,12 +109,12 @@ print(elev)
 ### Exemplul 3 — `in` și `get`
 
 ```python
-elev = {"nume": "Ana", "varsta": 10}
-print("nume" in elev)
-print("hobby" in elev)
-print(elev.get("nume"))
-print(elev.get("hobby"))
-print(elev.get("hobby", "necunoscut"))
+jucator = {"nume": "Ana", "varsta": 10}
+print("nume" in jucator)
+print("hobby" in jucator)
+print(jucator.get("nume"))
+print(jucator.get("hobby"))
+print(jucator.get("hobby", "necunoscut"))
 ```
 
 **Ieșire:**
@@ -126,12 +133,12 @@ necunoscut
 ### Exemplul 4 — Ștergem
 
 ```python
-elev = {"nume": "Ana", "varsta": 10, "clasa": 4}
-del elev["clasa"]
-print(elev)
-varsta = elev.pop("varsta")
+jucator = {"nume": "Ana", "varsta": 10, "nivel": 4}
+del jucator["nivel"]
+print(jucator)
+varsta = jucator.pop("varsta")
 print(varsta)
-print(elev)
+print(jucator)
 ```
 
 **Ieșire:**
@@ -213,23 +220,7 @@ Total: 10 lei
 
 ## 5. Folosiri practice
 
-### Exemplul 7 — Dicționar în loc de `if`-uri
-
-```python
-zile = {1: "luni", 2: "marti", 3: "miercuri", 4: "joi", 5: "vineri"}
-numar = int(input("Ce zi din saptamana (1-5)? "))
-print(zile.get(numar, "Numar invalid"))
-```
-
-**Ieșire:**
-```text
-Ce zi din saptamana (1-5)? 3
-miercuri
-```
-
-Cheile pot fi și **numere**. Un dicționar este un mod elegant de a „traduce” o valoare în alta, fără lanțuri lungi de `elif`.
-
-### Exemplul 8 — Dicționar construit din `input`
+### Exemplul 7 — Dicționar construit din `input`
 
 ```python
 agenda = {}
@@ -254,42 +245,15 @@ Nume (gata pentru a termina): gata
 
 Pornim de la un dicționar **gol** `{}` și îl umplem pe parcurs: `agenda[nume] = telefon`.
 
-### Exemplul 9 — Numărăm literele
-
-```python
-text = "banana"
-frecventa = {}
-for litera in text:
-    if litera in frecventa:
-        frecventa[litera] += 1
-    else:
-        frecventa[litera] = 1
-print(frecventa)
-for litera, cate in frecventa.items():
-    print(f"litera '{litera}': {cate}")
-```
-
-**Ieșire:**
-```text
-{'b': 1, 'a': 3, 'n': 2}
-litera 'b': 1
-litera 'a': 3
-litera 'n': 2
-```
-
-Un dicționar este perfect pentru a **număra**: cheia este litera, valoarea este câte ori a apărut. Dacă litera e deja cheie, creștem contorul; dacă nu, o adăugăm cu valoarea 1.
-
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 7** (Dicționar în loc de `if`-uri)  
-- [ ] Am scris și am rulat **Exemplul 8** (Dicționar construit din `input`)  
-- [ ] Am scris și am rulat **Exemplul 9** (Numărăm literele)  
+- [ ] Am scris și am rulat **Exemplul 7** (Dicționar construit din `input`)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 6. Mini-proiect
 
-### Exemplul 10 — Agenda mea
+### Exemplul 8 — Agenda mea
 
 ```python
 agenda = {}
@@ -352,14 +316,24 @@ Pe curand!
 ```
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** (Agenda mea)  
+- [ ] Am scris și am rulat **Exemplul 8** (Agenda mea)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Agenda mea”
 
-### Exercițiul A — „Agenda mea” (obligatoriu)
+### Minim vs Complet
+
+| | Ce trebuie |
+|--|------------|
+| **Minim** | Un dicționar cu datele tale (nume, vârstă, oraș, hobby), afișat |
+| **Complet** | Minim + o agendă cu meniu (adaugă, caută, afișează, șterge) |
+
+### Pasul 1 — Minim
+- [ ] Un dicționar cu datele tale (nume, vârstă, oraș, hobby), afișat  
+
+### Pasul 2 — Complet
 Scrie o agendă cu meniu care se repetă și cu opțiunile:
 1. **Adaugă** un contact (nume și telefon);
 2. **Caută** un contact după nume;
@@ -367,50 +341,17 @@ Scrie o agendă cu meniu care se repetă și cu opțiunile:
 4. **Șterge** un contact (cu verificare dacă există);
 5. **Ieșire**.
 
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
-
-```python
-d = {"a": 1, "b": 2}
-d["c"] = 3
-d["a"] = 10
-print(d)
-print(d.get("z", 0))
-print("b" in d, 2 in d)
-for k, v in d.items():
-    print(k, v)
-```
-
-### Exercițiul C — Dicționar de traduceri
-Fă un dicționar cu 5 cuvinte în română și traducerea lor în engleză. Cere un cuvânt și afișează traducerea (sau „Nu știu acest cuvânt”).
-
-### Exercițiul D — Găsește greșelile
-Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
-
-```text
-elev = ("nume": "Ana", "varsta": 10)
-print(elev["clasa"])
-elev.add("hobby", "fotbal")
-for k, v in elev:
-    print(k, v)
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. Care e diferența dintre o listă și un dicționar?  
-2. De ce `d.get("cheie")` este mai sigur decât `d["cheie"]`?  
-3. Ce face `d.items()`?
-
 **Gata când:**
 - [ ] Agenda are meniu care se repetă  
 - [ ] Poți adăuga, căuta, afișa și șterge  
 - [ ] Nu dă eroare dacă numele nu există  
-- [ ] Ai explicat pe foaie diferența dintre listă și dicționar  
 - [ ] Fișierul se numește `Prenume_Nume_P2_L7.py`  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Inventarul de joc
+*Doar dacă ai terminat Complet.*
+
 - [ ] Numără **cuvintele** dintr-o propoziție (nu literele) cu un dicționar  
 - [ ] Fă un **inventar de joc**: obiect → cantitate; adaugă și scoate obiecte  
 - [ ] Afișează agenda **sortată** alfabetic (folosește `sorted(agenda)`)  
@@ -422,7 +363,7 @@ Răspunde pe foaie:
 
 | Ce vezi | Cauza | Corect |
 |---------|-------|--------|
-| `KeyError: 'clasa'` | Cheia nu există | Verifică cu `in` sau folosește `.get()` |
+| `KeyError: 'nivel'` | Cheia nu există | Verifică cu `in` sau folosește `.get()` |
 | `SyntaxError` la `("a": 1)` | Dicționarul se scrie cu `{ }` | `{"a": 1}` |
 | `AttributeError: 'dict' object has no attribute 'add'` | `add` nu există la dicționare | `d["cheie"] = valoare` |
 | `ValueError: too many values to unpack` la `for k, v in d:` | Ai uitat `.items()` | `for k, v in d.items():` |
@@ -454,13 +395,151 @@ Răspunde pe foaie:
 ---
 
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny, scrise de mână.  
-2. Fă un dicționar cu **notele tale** (materie → notă) și afișează media.  
+1. Refă **Exemplele 1–8** în Thonny, scrise de mână.  
+2. Fă un dicționar cu **scorurile tale** (joc → scor) și afișează media.  
 3. Scrie un program care citește o **propoziție** și numără de câte ori apare **fiecare cuvânt**.  
 4. **Bonus:** fă un „magazin”: produse și prețuri; cere ce vrea clientul și afișează prețul.  
-5. Salvează totul ca `Tema_P2_L7_Prenume_Nume.py`.
+5. **Dicționar de traduceri.** Fă un dicționar cu 5 cuvinte în română și traducerea lor în engleză. Cere un cuvânt și afișează traducerea (sau „Nu știu acest cuvânt”).
+6. Salvează totul ca `Tema_P2_L7_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le în Thonny, rulează-le și schimbă-le după preferințe.
+
+#### Acasă 1 — Dicționar în loc de `if`-uri
+
+```python
+zile = {1: "luni", 2: "marti", 3: "miercuri", 4: "joi", 5: "vineri"}
+numar = int(input("Ce zi din saptamana (1-5)? "))
+print(zile.get(numar, "Numar invalid"))
+```
+
+**Ieșire:**
+```text
+Ce zi din saptamana (1-5)? 3
+miercuri
+```
+
+Cheile pot fi și **numere**. Un dicționar este un mod elegant de a „traduce” o valoare în alta, fără lanțuri lungi de `elif`.
+
+#### Acasă 2 — Numărăm literele
+
+```python
+text = "banana"
+frecventa = {}
+for litera in text:
+    if litera in frecventa:
+        frecventa[litera] += 1
+    else:
+        frecventa[litera] = 1
+print(frecventa)
+for litera, cate in frecventa.items():
+    print(f"litera '{litera}': {cate}")
+```
+
+**Ieșire:**
+```text
+{'b': 1, 'a': 3, 'n': 2}
+litera 'b': 1
+litera 'a': 3
+litera 'n': 2
+```
+
+Un dicționar este perfect pentru a **număra**: cheia este litera, valoarea este câte ori a apărut. Dacă litera e deja cheie, creștem contorul; dacă nu, o adăugăm cu valoarea 1.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+d = {"a": 1, "b": 2}
+d["c"] = 3
+d["a"] = 10
+print(d)
+print(d.get("z", 0))
+print("b" in d, 2 in d)
+for k, v in d.items():
+    print(k, v)
+```
+
+**Găsește greșelile.** Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
+
+```text
+jucator = ("nume": "Ana", "varsta": 10)
+print(jucator["nivel"])
+jucator.add("hobby", "fotbal")
+for k, v in jucator:
+    print(k, v)
+```
 
 ---
 
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+
+### 1. Numărăm cuvintele
+
+```python
+text = "la mere si la pere"
+nr = {}
+for cuvant in text.split():
+    nr[cuvant] = nr.get(cuvant, 0) + 1
+print(nr)
+```
+
+**Ieșire:**
+```text
+{'la': 2, 'mere': 1, 'si': 1, 'pere': 1}
+```
+
+### 2. Inventar de joc
+
+```python
+inventar = {"sabie": 1, "potiune": 3}
+inventar["potiune"] += 2
+inventar["scut"] = 1
+inventar["potiune"] -= 1
+del inventar["sabie"]
+print(inventar)
+```
+
+**Ieșire:**
+```text
+{'potiune': 4, 'scut': 1}
+```
+
+### 3. Agenda sortată
+
+```python
+agenda = {"Radu": "0722", "Ana": "0721", "Mihai": "0723"}
+for nume in sorted(agenda):
+    print(nume, agenda[nume])
+```
+
+**Ieșire:**
+```text
+Ana 0721
+Mihai 0723
+Radu 0722
+```
+
+### 4. Telefon și email
+
+```python
+agenda = {
+    "Ana": {"telefon": "0721", "email": "ana@mail.ro"},
+    "Radu": {"telefon": "0722", "email": "radu@mail.ro"},
+}
+for nume, date in agenda.items():
+    print(nume, date["telefon"], date["email"])
+```
+
+**Ieșire:**
+```text
+Ana 0721 ana@mail.ro
+Radu 0722 radu@mail.ro
+```
+
+---
 ## Ce urmează — Lecția 8
 Învățăm **funcțiile**: bucăți de program cărora le dai un nume și pe care le folosești de câte ori ai nevoie.

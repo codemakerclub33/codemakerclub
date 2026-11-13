@@ -1,23 +1,29 @@
-Lecția unu din Modulul doi. For și range.
+Lecția unu. Numărătoarea rachetei.
 
 Astăzi înveți să repeți lucruri fără să le scrii de mai multe ori. Proiectul se numește Numărătoarea rachetei. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P doi, linie jos, L unu, punct P Y.
 
-Obiectivul. La final folosești for cu range, cu unul, două sau trei numere, parcurgi un text și o listă, calculezi sume cu o buclă și afișezi pe același rând cu end. Minim: o buclă for care afișează numerele de la unu la zece. Complet: minim, plus o numărătoare inversă, o sumă calculată cu buclă și un mic desen cu steluțe.
+Ce facem azi. La final folosești for cu range, cu unul, două sau trei numere, parcurgi un text, calculezi sume cu o buclă și afișezi pe același rând cu end. Un joc verifică în fiecare secundă dacă ai atins un inamic. O aplicație trimite același mesaj către toți prietenii tăi. Fără bucle, ai scrie aceleași linii de sute de ori. Cu for, o scrii o singură dată.
+
+Instrucțiuni noi azi. For repetă un bloc de un număr cunoscut de ori. Range dă numerele: cu un număr, cu două sau cu trei, adică de la, până la, din pas în pas. Cu for poți parcurge și un text, literă cu literă. Cu end afișezi pe același rând.
 
 Primul pas. Bucla for. Dacă vrei să afișezi Salut de cinci ori, ai putea scrie cinci linii print. Dar dacă ți-ar trebui cinci sute? Folosim o buclă. Scrii for i in range de cinci, două puncte, iar sub el, indentat cu patru spații, ce se repetă. Atenție: range de cinci dă numerele zero, unu, doi, trei, patru. Începe de la zero și se oprește înainte de cinci. Sunt tot cinci numere, deci bucla se repetă de cinci ori.
 
 Al doilea pas. Range cu mai multe numere. Range poate primi unu, două sau trei numere. Cu două numere, de exemplu unu și șase, obții de la unu la cinci. Cu trei numere, al treilea este pasul: de la zece la zero cu pasul minus trei numără invers din trei în trei.
 
-Al treilea pas. Bucla în acțiune. Suma numerelor de la unu la zece: pornești cu total egal zero și adaugi fiecare număr. După buclă, total conține suma. Este una dintre cele mai folosite scheme din programare. For merge și pe un text, litera cu litera, și pe o listă, element cu element.
+Al treilea pas. Bucla în acțiune. Suma numerelor de la unu la zece: pornești cu total egal zero și adaugi fiecare număr. După buclă, total conține suma. Este una dintre cele mai folosite scheme din programare. For merge și pe un text, litera cu litera.
 
-Al patrulea pas. Buclă și input. Poți repeta de câte ori vrea utilizatorul. Numărătoarea inversă folosește un pas negativ. Cu end egal spațiu, afișezi mai multe valori pe același rând.
+Al patrulea pas. Numărătoarea inversă. Folosești un pas negativ, de exemplu de la cinci la unu. Cu end egal spațiu, afișezi mai multe valori pe același rând.
 
 Al cincilea pas. Mini-proiect. Numărătoarea rachetei: citești de la ce număr să numere, de exemplu zece, și numeri invers până la decolare.
 
 Greșeli frecvente. Syntax Error: ai uitat cele două puncte după for. Indentation Error: corpul buclei nu este indentat. Bucla face cu unul mai puțin decât voiai: range de cinci se oprește la patru. Dacă vrei de la unu la cinci, scrii range de unu la șase.
 
-Proiectul de azi. Numărătoarea rachetei. Minim înseamnă numerele de la unu la zece. Complet înseamnă și numărătoare inversă, sumă și desen.
+Proiectul de azi. Numărătoarea rachetei. Minim înseamnă numerele de la unu la zece. Complet înseamnă și numărătoare inversă de la un număr citit, mesajul Decolare și un desen.
+
+Provocare, trei stele. Matematica buclelor. Doar dacă ai terminat varianta completă. Calculezi suma numerelor pare de la unu la o sută. Afișezi un pom de Crăciun din șase rânduri. Calculezi factorialul unui număr cu o buclă. Afișezi literele unui cuvânt, una pe rând, cu numărul lor de ordine.
 
 Recapitulare. For repetă blocul indentat. Range de n dă de la zero la n minus unu. Pasul negativ numără invers. For merge și pe texte, și pe liste. Schema sumei: total egal zero, apoi total plus egal n în buclă. End schimbă ce vine după print.
+
+Ce urmează. În lecția următoare pui o buclă în interiorul altei bucle și desenezi tabla înmulțirii și multe modele.
 
 Succes cu bucla.
