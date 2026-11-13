@@ -77,6 +77,7 @@ export const cursBlurbLandingPeGrupa: Record<string, Record<string, string>> = {
   },
 }
 
+// eslint-disable-next-line @next/next/no-assign-module-variable
 export const module = [
   // C++ — curriculum 5 module × 10 lecții (12+ ani; M5 = proiect RPG)
   { id: 'm1', curs_id: 'c1', nume: 'Modul 1 — Bazele C++', ordine: 1, badge: 'Junior Coder', descriere: '10 lecții cu un mic proiect în fiecare: afișezi text, folosești variabile, citești date de la tastatură și faci programul să ia decizii cu if și switch. La final: un quiz sau un calculator al tău.' },
