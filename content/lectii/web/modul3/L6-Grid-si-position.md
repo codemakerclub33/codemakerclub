@@ -1,19 +1,15 @@
-# LECȚIA 6 — Grid și position
+# LECȚIA 6 — Galeria de jocuri
+### Grid și position
 **Modulul 3 · CSS: Stil și culoare · 2 ore**  
 **Code Maker Club · CSS Stylist**
 
 > Flexbox așază elementele pe **un singur rând** (sau pe o singură coloană). Când vrei **rânduri și coloane în același timp**, ca într-o galerie sau într-un tabel de cutii, folosești **Grid**. Apoi învățăm `position`, cu care așezi un element **peste altul**: o insignă „NOU” într-un colț sau un buton care rămâne pe ecran.  
-> Proiect: **„Galeria mea de jocuri”** · folder: `Prenume_Nume_W3_L6` (ex. `Ana_Pop_W3_L6`)
+> Proiect: **„Galeria de jocuri”** · folder: `Prenume_Nume_W3_L6` (ex. `Ana_Pop_W3_L6`)
 
 ---
 
-## Obiectiv
-La finalul orei știi să faci o grilă cu `display: grid;`, să alegi coloanele cu `grid-template-columns` și unitatea `fr`, să pui spațiu cu `gap`, să întinzi un element pe mai multe coloane, să folosești `position` (`relative`, `absolute`, `fixed`, `sticky`) și să ordonezi straturile cu `z-index`.  
-**Minim:** o grilă cu 3 coloane egale și 6 cutii, plus o insignă pusă într-un colț al unei cutii.  
-**Ținta orei (Complet):** + un element întins pe două coloane, un antet care rămâne sus la derulare, un buton fix „Sus” și explicația diferenței dintre Flexbox și Grid.
-
-## De ce contează
-Galeriile, listele de produse și paginile cu mai multe coloane se fac cu Grid. Insignele, butoanele plutitoare și antetele care rămân sus se fac cu `position`. Împreună cu Flexbox, ai uneltele pentru aproape orice pagină.
+## Ce facem azi
+La final ai o galerie în grilă cu 3 coloane, cu o cutie întinsă pe două coloane, insigne în colțuri, un antet care rămâne sus la derulare și un buton „Sus” fix pe ecran. Galeriile, listele de produse și paginile cu mai multe coloane se fac cu Grid, iar insignele, butoanele plutitoare și antetele care rămân sus se fac cu `position`. Împreună cu Flexbox, ai uneltele pentru aproape orice pagină.
 
 ---
 
@@ -21,13 +17,27 @@ Galeriile, listele de produse și paginile cu mai multe coloane se fac cu Grid. 
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pornim proiectul |
-| 15–40 | Grid: coloane, `fr`, `gap` (**Exemplele 1–3**) |
-| 40–55 | Elemente întinse pe mai multe coloane (**Exemplul 4**) |
-| 55–80 | `position`: `relative` și `absolute` (**Exemplele 5–6**) |
-| 80–100 | `fixed`, `sticky`, `z-index` (**Exemplele 7–9**) |
-| 100–115 | Proiect (**Exemplul 10**) |
+| 0–15 | Recapitulare · aducem pagina cu articolul de pe Wikipedia |
+| 15–30 | Grid: prima grilă, `fr` și `repeat` (**Exemplele 1–2**) |
+| 30–45 | Înălțimea rândurilor · elemente întinse pe mai multe coloane (**Exemplele 3–4**) |
+| 45–65 | `position`: `relative` și `absolute` (**Exemplul 5**) |
+| 65–80 | `fixed` (**Exemplul 6**) |
+| 80–100 | `sticky` și `z-index` (**Exemplul 7**) |
+| 100–115 | Mini-proiect: galeria de jocuri (**Exemplul 8**) |
 | 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `display: grid;` | Face un container grid (pe părinte) | `.grila { … }` |
+| `grid-template-columns` | Alege coloanele; `fr` = o parte din spațiul liber | `repeat(3, 1fr)` |
+| `grid-column: span 2;` | Întinde un element pe mai multe coloane | `1 / -1` |
+| `position: relative;` și `absolute` | Insignă în colțul unei cutii | `top`, `right` |
+| `position: fixed;` și `sticky` | Rămâne pe ecran; se lipește sus la derulare | `top: 0;` |
+| `z-index` | Ordinea straturilor | `z-index: 100;` |
 
 ---
 
@@ -38,10 +48,11 @@ Din lecția trecută ții minte că:
 - `justify-content` lucrează pe axa principală, `align-items` pe cea secundară;
 - `gap` pune spațiu între elemente, iar `flex-wrap: wrap;` le lasă să treacă pe rândul următor.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Creează folderul `Prenume_Nume_W3_L6` cu `index.html` (scheletul complet, legat la `stil.css`) și `stil.css`  
 - [ ] Pune `* { box-sizing: border-box; }` prima în `stil.css`  
 - [ ] Pune în `<body>` un `<div class="grila">` cu șase `<div class="cutie">` în el, numerotate de la 1 la 6  
+- [ ] Copiază în folder `tema.html`, `stil.css` și folderele `imagini` și `media` din lecția trecută  
 
 > De aici înainte, exemplele arată ce scrii în `<body>` și, separat, ce scrii în `stil.css`.
 
@@ -98,6 +109,15 @@ Cele șase cutii se așază singure pe **două rânduri de câte trei**. Nu a tr
 
 Prima coloană are **fix** 200px, iar a doua ia **tot restul**. Este o machetă clasică: meniu lateral plus conținut. Cu `2fr 1fr`, prima coloană ar fi de două ori mai lată decât a doua.
 
+**Încearcă tu (6 min)**  
+- [ ] Fă o grilă cu 3 coloane egale și `gap` pentru cele șase cutii  
+- [ ] Scrie-o și cu `repeat(3, 1fr)`  
+- [ ] În `tema.html`, pune imaginile din articol într-un `<div class="galerie">` cu `display: grid;` și 3 coloane  
+
+---
+
+## 3. Înălțimea rândurilor și elemente întinse
+
 ### Exemplul 3 — Înălțimea rândurilor
 
 ```css
@@ -111,7 +131,7 @@ Prima coloană are **fix** 200px, iar a doua ia **tot restul**. Este o machetă 
 
 `grid-auto-rows: 120px;` dă fiecărui rând înălțimea de 120px, oricâte rânduri apar. Fără ea, înălțimea rândului se potrivește cu ce este în cutie. Dacă vrei un rând care **crește** când textul este mai lung, folosește `grid-auto-rows: minmax(120px, auto);`: minimum 120px, iar dacă e nevoie, mai mult.
 
-### Flexbox sau Grid?
+**Flexbox sau Grid?**
 
 | | Flexbox | Grid |
 |---|---------|------|
@@ -121,17 +141,7 @@ Prima coloană are **fix** 200px, iar a doua ia **tot restul**. Este o machetă 
 
 Nu alegi un singur câștigător: se pot folosi **împreună** (o grilă de carduri, iar în fiecare card un Flexbox).
 
-**Gata când:**  
-- [ ] Cele șase cutii stau în 3 coloane egale, cu `gap`  
-- [ ] Ai încercat `repeat(3, 1fr)` și `200px 1fr`  
-- [ ] Ai setat înălțimea rândurilor cu `grid-auto-rows`  
-- [ ] Poți spune când folosești Flexbox și când Grid  
-
----
-
-## 3. Elemente întinse pe mai multe coloane
-
-### Exemplul 4 — `span`
+### Exemplul 4 — `span`: întindem pe mai multe coloane
 
 ```css
 .mare {
@@ -161,9 +171,14 @@ Nu alegi un singur câștigător: se pot folosi **împreună** (o grilă de card
 Poți întinde și pe rânduri, cu `grid-row: span 2;`.
 
 **Încearcă tu (6 min)**  
+- [ ] Dă rândurilor înălțimea `120px` cu `grid-auto-rows`  
 - [ ] Întinde o cutie pe două coloane cu `span 2`  
-- [ ] Fă o cutie pe toată lățimea cu `1 / -1`  
-- [ ] Schimbă grila la 4 coloane și vezi ce se mută  
+- [ ] În `tema.html`, întinde prima imagine pe două coloane  
+
+**Gata când:**  
+- [ ] Cele șase cutii stau în 3 coloane egale, cu `gap`  
+- [ ] O cutie este întinsă pe două coloane  
+- [ ] Poți spune când folosești Flexbox și când Grid  
 
 ---
 
@@ -179,7 +194,7 @@ Fiecare element are o proprietate `position`. Valoarea implicită este `static`:
 | `fixed` | se așază **față de fereastră** și rămâne acolo la derulare |
 | `sticky` | stă normal, apoi se **lipește sus** când derulezi până la el |
 
-### Exemplul 5 — `relative`
+### Exemplul 5 — `relative` și `absolute`: o insignă în colț
 
 ```css
 .mutat {
@@ -189,9 +204,7 @@ Fiecare element are o proprietate `position`. Valoarea implicită este `static`:
 }
 ```
 
-Elementul este împins cu 10px în jos și 30px spre dreapta față de **locul în care ar fi stat**. Celelalte elemente nu se mișcă, iar locul lui rămâne gol. Cel mai des, `relative` nu se folosește ca să muți ceva, ci ca să fie **părinte de referință** pentru un copil `absolute`.
-
-### Exemplul 6 — `absolute`: o insignă în colț
+Elementul este împins cu 10px în jos și 30px spre dreapta față de **locul în care ar fi stat**. Celelalte elemente nu se mișcă, iar locul lui rămâne gol. Cel mai des, `relative` nu se folosește ca să muți ceva, ci ca să fie **părinte de referință** pentru un copil `absolute`:
 
 ```html
 <div class="produs">
@@ -225,16 +238,20 @@ Elementul este împins cu 10px în jos și 30px spre dreapta față de **locul �
 
 Regula de aur: **`absolute` se așază față de cel mai apropiat părinte care are `position`** (de obicei `relative`). Fără `position: relative;` pe `.produs`, insigna s-ar așeza față de toată pagina și ar ajunge în colțul ei, nu al cutiei. Un element `absolute` nu mai ocupă loc în rând, deci celelalte se așază ca și cum el nu ar exista.
 
+**Încearcă tu (6 min)**  
+- [ ] Fă o cutie cu o insignă „NOU” în colțul din dreapta sus  
+- [ ] Scoate `position: relative;` din părinte și privește unde fuge insigna  
+- [ ] În `tema.html`, pune o insignă „Imagine din articol” în colțul unei imagini din galerie  
+
 **Gata când:**  
 - [ ] Insigna „NOU” apare în colțul din dreapta sus al cutiei  
 - [ ] Părintele are `position: relative;`  
-- [ ] Ai încercat să scoți `position: relative;` și ai văzut că insigna fuge în colțul paginii  
 
 ---
 
-## 5. `fixed`, `sticky` și `z-index`
+## 5. `fixed`: un buton care rămâne pe ecran
 
-### Exemplul 7 — `fixed`: un buton care rămâne pe ecran
+### Exemplul 6 — `position: fixed;`
 
 ```html
 <a class="sus" href="#sus">↑ Sus</a>
@@ -255,7 +272,17 @@ Regula de aur: **`absolute` se așază față de cel mai apropiat părinte care 
 
 Elementul rămâne **la același loc pe ecran**, oricât derulezi. Pune pe `<header>` atributul `id="sus"`, iar legătura `href="#sus"` te duce înapoi la începutul paginii. Ca să vezi efectul, pagina trebuie să fie destul de lungă încât să deruleze (pune mai multe cutii sau mult text).
 
-### Exemplul 8 — `sticky`: antetul rămâne sus
+**Încearcă tu (8 min)**  
+- [ ] Fă un buton „Sus” fix în colțul din dreapta jos  
+- [ ] Pune `id="sus"` pe antet și apasă pe buton după ce derulezi  
+- [ ] În `tema.html`, pune și acolo un buton „Sus” fix  
+- [ ] Mărește fereastra: butonul rămâne în colț?  
+
+---
+
+## 6. `sticky` și `z-index`
+
+### Exemplul 7 — Antetul rămâne sus, cu `z-index`
 
 ```css
 .antet {
@@ -268,8 +295,6 @@ Elementul rămâne **la același loc pe ecran**, oricât derulezi. Pune pe `<hea
 ```
 
 Antetul stă normal, la începutul paginii. Când derulezi și el ar ieși din ecran, se **lipește** sus, la `top: 0`. Atenție: `sticky` are nevoie de o valoare `top` (sau `bottom`), altfel nu face nimic.
-
-### Exemplul 9 — `z-index`: ce este deasupra
 
 Când două elemente se suprapun, cel scris **mai târziu** în pagină stă deasupra. Cu `z-index` alegi tu ordinea straturilor:
 
@@ -287,16 +312,21 @@ Când două elemente se suprapun, cel scris **mai târziu** în pagină stă dea
 
 Numărul mai mare stă deasupra numărului mai mic. `z-index` funcționează doar pe elementele care au `position` (orice valoare în afară de `static`). Dacă antetul tău `sticky` se ascunde sub cutii când derulezi, îi lipsește un `z-index` mai mare, de exemplu `z-index: 100;`.
 
-**Încearcă tu (6 min)**  
-- [ ] Fă un buton „Sus” fix în colțul din dreapta jos  
-- [ ] Fă antetul `sticky` și derulează pagina  
+**Încearcă tu (8 min)**  
+- [ ] Fă antetul `sticky` cu `top: 0;` și derulează pagina  
+- [ ] Adaugă `z-index: 100;` dacă cutiile trec peste el  
 - [ ] Suprapune două cutii și schimbă ordinea lor cu `z-index`  
+- [ ] În `tema.html`, fă titlul din antet `sticky`, ca să rămână sus când derulezi articolul  
+
+**Gata când:**  
+- [ ] Antetul rămâne sus la derulare  
+- [ ] Butonul „Sus” este fix și te duce la începutul paginii  
 
 ---
 
-## 6. Proiectul
+## 7. Mini-proiect
 
-### Exemplul 10 — „Galeria mea de jocuri”
+### Exemplul 8 — „Galeria de jocuri”
 
 Fișierul `index.html`:
 
@@ -306,12 +336,12 @@ Fișierul `index.html`:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galeria mea de jocuri</title>
+  <title>Galeria de jocuri</title>
   <link rel="stylesheet" href="stil.css">
 </head>
 <body>
   <header class="antet" id="sus">
-    <h1>Galeria mea de jocuri</h1>
+    <h1>Galeria de jocuri</h1>
   </header>
 
   <main>
@@ -450,55 +480,43 @@ Fă galeria cu **un subiect ales de tine** (jocuri, animale, echipe, filme). Ada
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Galeria de jocuri”
 
-### Exercițiul A — „Galeria mea” (obligatoriu)
-Fă o pagină cu `index.html` și `stil.css`, cu:
-- `* { box-sizing: border-box; }` prima în `stil.css`;
-- o galerie în **grilă cu 3 coloane**, cu **minimum 6 cutii** și `gap`;
-- o cutie întinsă pe **două coloane**;
-- **minimum 2 insigne** puse cu `position: absolute;` în părinți cu `position: relative;`;
-- un antet `sticky`;
-- un buton „Sus” cu `position: fixed;`;
-- cel puțin două comentarii în CSS.
+### Minim vs Complet
 
-### Exercițiul B — Ce face regula?
-Spune ce se întâmplă: (1) `grid-template-columns: 200px 1fr;`; (2) `grid-template-columns: repeat(4, 1fr);`; (3) `grid-column: 1 / -1;`; (4) `position: absolute; top: 0; right: 0;` pe un copil, când părintele **nu** are `position`.
+| | Ce trebuie |
+|--|------------|
+| **Minim** | O grilă cu 3 coloane egale și 6 cutii, plus o insignă pusă într-un colț al unei cutii |
+| **Complet** | Minim + un element întins pe două coloane, un antet care rămâne sus la derulare, un buton fix „Sus” și explicația diferenței dintre Flexbox și Grid |
 
-### Exercițiul C — Scrie regula
-Scrie în CSS: (1) o grilă cu două coloane, prima de două ori mai lată decât a doua, cu 20px între ele; (2) un element întins pe trei coloane; (3) un steag mic în colțul din stânga jos al unei cutii.
+### Pasul 1 — Minim
+Pe scheletul complet, legat la `stil.css`, fă o grilă cu 3 coloane și 6 cutii și o insignă în colțul unei cutii.
 
-### Exercițiul D — Găsește greșelile
-Găsește **3 greșeli** în codul de mai jos și repară greșelile:
-
-```text
-.grila {
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 15;
-}
-
-.insigna {
-  position: absolute;
-  top: 10px;
-  z-index: 5px;
-}
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Într-un comentariu din cod: care este diferența dintre Flexbox și Grid? Față de ce se așază un element cu `position: absolute;`? Ce face `position: sticky;` și ce proprietate îi mai trebuie?
-
-**Gata când:**  
 - [ ] Folderul `Prenume_Nume_W3_L6` are `index.html` și `stil.css`  
-- [ ] Galeria are grilă, o cutie întinsă, insigne, antet `sticky` și buton `fixed`  
-- [ ] Ai răspuns la exercițiile B–E  
+- [ ] Grila are 3 coloane egale, cu `gap`  
+- [ ] O insignă este pusă în colțul unei cutii, cu `position: absolute;`  
+- [ ] Pagina se vede în browser, cu Live Server pornit  
+
+### Pasul 2 — Complet
+Îmbunătățești pagina:
+
+- [ ] Ai `* { box-sizing: border-box; }` prima în `stil.css`  
+- [ ] Ai **minimum 6 cutii** în grilă, una întinsă pe **două coloane**  
+- [ ] Ai **minimum 2 insigne** în părinți cu `position: relative;`  
+- [ ] Antetul este `sticky`, iar butonul „Sus” este `fixed`  
+- [ ] Ai cel puțin două comentarii în CSS  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Galeria articolului tău
+*Doar dacă ai terminat Complet.*
+
+Faci `tema.html` să arate ca o galerie.
+
+- [ ] Pune imaginile din articol în grilă cu `repeat(3, 1fr)`, una întinsă pe două coloane, fiecare cu o insignă în colț  
 - [ ] Fă o machetă de pagină cu `grid-template-columns: 200px 1fr;`: meniu lateral în stânga și conținut în dreapta  
 - [ ] Pune o cutie care se întinde pe două rânduri cu `grid-row: span 2;`  
-- [ ] Fă un cerc cu număr în colțul unei cutii (insignă rotundă, ca la Lecția 4)  
-- [ ] În DevTools, apasă pe semnul „grid” de lângă container și vezi liniile grilei desenate  
+- [ ] În DevTools (**F12**; pe Mac Cmd + Option + I), apasă pe semnul „grid” de lângă container și vezi liniile grilei desenate  
 
 ---
 
@@ -511,8 +529,6 @@ Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 6. **Antetul `sticky` nu se lipește** — îi lipsește `top: 0;`.  
 7. **Antetul se ascunde sub cutii** — îi trebuie un `z-index` mai mare.  
 8. **Ai scris `z-index: 5px`** — este un număr simplu, fără unitate.  
-9. **`z-index` nu schimbă nimic** — elementul nu are `position`.  
-10. **Butonul `fixed` acoperă textul** — lasă spațiu jos în pagină sau fă butonul mai mic.  
 
 ---
 
@@ -532,7 +548,63 @@ Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 - De ce nu merge `z-index` pe un element fără `position`?
 
 ## Temă
-Fă o pagină „Colecția mea” cu o grilă de 8 cutii (cărți, jucării sau cărți de joc), cu o cutie mai mare, insigne „NOU” pe două dintre ele și un buton „Sus”. Salvează în `Prenume_Nume_W3_L6`.
+1. Fă o pagină „Colecția mea” cu o grilă de 8 cutii (cărți, jucării sau cărți de joc), cu o cutie mai mare, insigne „NOU” pe două dintre ele și un buton „Sus”. Salvează în `Prenume_Nume_W3_L6`.  
+2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
+3. **Exemple pentru acasă.** Încearcă amândouă:
+
+**Acasă 1 — O grilă care se adaptează singură.**
+
+```css
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+```
+
+Grila pune singură cât mai multe coloane de cel puțin 150px. Micșorează fereastra și numără coloanele.
+
+**Acasă 2 — O insignă rotundă.**
+
+```css
+.insigna-rotunda {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background-color: gold;
+  border-radius: 50%;
+  font-weight: bold;
+}
+```
+
+Valorile negative scot insigna puțin în afara cutiei, ca un autocolant lipit pe colț.
+
+4. **Încă patru exerciții (B–E):**
+
+**B — Ce face regula?** Spune ce se întâmplă: (1) `grid-template-columns: 200px 1fr;`; (2) `grid-template-columns: repeat(4, 1fr);`; (3) `grid-column: 1 / -1;`; (4) `position: absolute; top: 0; right: 0;` pe un copil, când părintele **nu** are `position`.
+
+**C — Scrie regula.** Scrie în CSS: (1) o grilă cu două coloane, prima de două ori mai lată decât a doua, cu 20px între ele; (2) un element întins pe trei coloane; (3) un steag mic în colțul din stânga jos al unei cutii.
+
+**D — Găsește greșelile.** Găsește **3 greșeli** în codul de mai jos și repară greșelile:
+
+```text
+.grila {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15;
+}
+
+.insigna {
+  position: absolute;
+  top: 10px;
+  z-index: 5px;
+}
+```
+
+**E — Explică cu cuvintele tale.** Într-un comentariu din cod: care este diferența dintre Flexbox și Grid? Față de ce se așază un element cu `position: absolute;`? Ce face `position: sticky;` și ce proprietate îi mai trebuie?
 
 ## Ce urmează — Lecția 7
 Învățăm **`:hover` și tranziții**: butoane care își schimbă culoarea când pui mouse-ul pe ele și cărți care se măresc lin.
@@ -541,9 +613,9 @@ Fă o pagină „Colecția mea” cu o grilă de 8 cutii (cărți, jucării sau 
 
 ## Răspunsuri
 - **Quiz scurt:** (1) trei coloane egale, fiecare o parte din spațiul liber (se poate scrie și `repeat(3, 1fr)`); (2) cu `grid-column: span 2;`; (3) față de cel mai apropiat părinte care are `position` (de obicei `relative`); (4) `fixed` rămâne la același loc pe ecran, iar `sticky` stă normal în pagină și se lipește sus abia când derulezi până la el; (5) pentru că `z-index` funcționează doar pe elementele care au `position` (altă valoare decât `static`).  
-- **Dacă ritmul clasei este lent:** rămâneți la Grid de bază, `relative`, `absolute` și `fixed`; Exemplul 8 (`sticky`), Exemplul 9 (`z-index`) și `minmax(...)` sunt opționale.  
-- **Exercițiul B:** (1) două coloane: prima fixă de 200px, a doua ia restul; (2) patru coloane egale; (3) elementul se întinde de la prima până la ultima linie a grilei, adică pe toată lățimea; (4) elementul se așază față de pagină (față de cel mai apropiat strămoș cu `position`, iar aici nu există), deci ajunge în colțul din dreapta sus al paginii.  
-- **Exercițiul C:** (1) `.grila { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }`; (2) `grid-column: span 3;`; (3) părintele `position: relative;`, iar steagul `position: absolute; bottom: 10px; left: 10px;`.  
-- **Exercițiul D:** (1) lipsește `display: grid;` din `.grila`; (2) `gap: 15;` trebuie `gap: 15px;`; (3) `z-index: 5px` trebuie `z-index: 5` (număr fără unitate).  
-- **Exercițiul E:** Flexbox lucrează pe o direcție, Grid pe rânduri și coloane; `absolute` se așază față de cel mai apropiat părinte cu `position`; `sticky` se lipește sus la derulare și are nevoie de `top` (sau `bottom`).  
+- **Dacă ritmul clasei este lent:** rămâneți la Grid de bază, `relative`, `absolute` și `fixed`; Exemplul 7 (`sticky` și `z-index`) și `minmax(...)` sunt opționale.  
+- **Tema, exercițiul B:** (1) două coloane: prima fixă de 200px, a doua ia restul; (2) patru coloane egale; (3) elementul se întinde de la prima până la ultima linie a grilei, adică pe toată lățimea; (4) elementul se așază față de pagină (față de cel mai apropiat strămoș cu `position`, iar aici nu există), deci ajunge în colțul din dreapta sus al paginii.  
+- **Tema, exercițiul C:** (1) `.grila { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }`; (2) `grid-column: span 3;`; (3) părintele `position: relative;`, iar steagul `position: absolute; bottom: 10px; left: 10px;`.  
+- **Tema, exercițiul D:** (1) lipsește `display: grid;` din `.grila`; (2) `gap: 15;` trebuie `gap: 15px;`; (3) `z-index: 5px` trebuie `z-index: 5` (număr fără unitate).  
+- **Tema, exercițiul E:** Flexbox lucrează pe o direcție, Grid pe rânduri și coloane; `absolute` se așază față de cel mai apropiat părinte cu `position`; `sticky` se lipește sus la derulare și are nevoie de `top` (sau `bottom`).  
 - **Notă pentru profesor:** copiii confundă des `fixed` cu `sticky`. Demonstrați pe proiector: `fixed` nu există în pagină, plutește peste ea; `sticky` stă la locul lui până când ar ieși din ecran. Pentru galerie nu sunt necesare imagini: cutii colorate cu text sunt suficiente și evită datele personale.

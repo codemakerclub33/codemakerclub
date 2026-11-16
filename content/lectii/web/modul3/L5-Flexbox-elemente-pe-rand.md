@@ -1,4 +1,5 @@
-# LECȚIA 5 — Flexbox: elemente pe rând
+# LECȚIA 5 — Clubul animalelor: meniu și carduri pe rând
+### Flexbox: elemente pe rând
 **Modulul 3 · CSS: Stil și culoare · 2 ore**  
 **Code Maker Club · CSS Stylist**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei știi să faci un container flex cu `display: flex;`, să alegi direcția cu `flex-direction`, să așezi elementele cu `justify-content` și `align-items`, să pui distanță cu `gap`, să le lași să treacă pe rândul următor cu `flex-wrap`, să le împarți spațiul cu `flex` și să faci un meniu orizontal dintr-o listă.  
-**Minim:** un meniu orizontal făcut dintr-o listă și trei cutii așezate pe un rând.  
-**Ținta orei (Complet):** + un element centrat pe orizontală și pe verticală, cutii care trec pe rândul următor când nu încap, un antet cu logo în stânga și meniu în dreapta și explicarea celor două axe.
-
-## De ce contează
-Fără Flexbox, să pui trei cutii una lângă alta cerea trucuri greu de ținut minte, iar centrarea pe verticală era o adevărată bătaie de cap. Cu Flexbox faci același lucru în două rânduri, iar rezultatul se adaptează singur la ecrane mari și mici.
+## Ce facem azi
+La final ai o pagină cu un antet (logo în stânga, meniu în dreapta), un rând de carduri care trec pe rândul următor când fereastra se micșorează și un subsol centrat. Fără Flexbox, să pui trei cutii una lângă alta cerea trucuri greu de ținut minte, iar centrarea pe verticală era o adevărată bătaie de cap. Cu Flexbox faci același lucru în două rânduri, iar rezultatul se adaptează singur la ecrane mari și mici.
 
 ---
 
@@ -21,13 +17,27 @@ Fără Flexbox, să pui trei cutii una lângă alta cerea trucuri greu de ținut
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pornim proiectul |
-| 15–35 | Containerul flex · direcția (**Exemplele 1–2**) |
-| 35–60 | `justify-content` și `align-items` (**Exemplele 3–4**) |
-| 60–75 | `gap` și `flex-wrap` (**Exemplele 5–6**) |
-| 75–95 | `flex` pe elemente · meniu orizontal (**Exemplele 7–8**) |
-| 95–115 | Carduri pe rând · proiect (**Exemplele 9–10**) |
+| 0–15 | Recapitulare · aducem pagina cu articolul de pe Wikipedia |
+| 15–30 | Containerul flex (**Exemplul 1**) · direcția și axele (**Exemplul 2**) |
+| 30–50 | `justify-content` și `align-items` (**Exemplul 3**) |
+| 50–65 | `gap` și `flex-wrap` (**Exemplul 4**) |
+| 65–80 | `flex` pe elemente (**Exemplul 5**) |
+| 80–95 | Un meniu orizontal (**Exemplul 6**) |
+| 95–105 | Carduri pe rând (**Exemplul 7**) |
+| 105–115 | Mini-proiect: Clubul animalelor (**Exemplul 8**) |
 | 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `display: flex;` | Pune copiii pe un rând (pe părinte) | `.rand { … }` |
+| `flex-direction` | Alege direcția | `row`, `column` |
+| `justify-content`, `align-items` | Așază pe axa principală și pe cea secundară | `center`, `space-between` |
+| `gap`, `flex-wrap: wrap;` | Spațiu între elemente; rând nou când nu încap | `15px` |
+| `flex: 1 1 250px;` | Carduri care se adaptează | `flex: 1;` |
 
 ---
 
@@ -39,10 +49,11 @@ Din lecția trecută ții minte că:
 - `margin: 0 auto;` centrează o cutie cu lățime;
 - `block` ocupă un rând întreg, iar `inline-block` stă în rând.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Creează folderul `Prenume_Nume_W3_L5` cu `index.html` (scheletul complet, legat la `stil.css`) și `stil.css`  
 - [ ] Pune `* { box-sizing: border-box; }` prima în `stil.css`  
 - [ ] Pune în `<body>` un `<div class="rand">` cu trei `<div class="cutie">` în el, cu numerele 1, 2 și 3  
+- [ ] Copiază în folder `tema.html`, `stil.css` și folderele `imagini` și `media` din lecția trecută  
 
 > De aici înainte, exemplele arată ce scrii în `<body>` și, separat, ce scrii în `stil.css`.
 
@@ -82,6 +93,11 @@ Fără altceva, cutiile stau **una sub alta**. Acum schimbăm containerul:
 
 Cele trei cutii s-au așezat **una lângă alta**, pe un singur rând. Ai făcut din `.rand` un **container flex**, iar cutiile din el sunt **elementele flex**. Regula se scrie pe **părinte**, nu pe copii.
 
+**Încearcă tu (5 min)**  
+- [ ] Pune `display: flex;` pe `.rand` și privește cum se mută cutiile  
+- [ ] Scoate regula și pune-o la loc: ce se schimbă?  
+- [ ] Pune încă o cutie în container: ce se întâmplă?  
+
 ### Exemplul 2 — Direcția: `flex-direction`
 
 ```css
@@ -109,16 +125,20 @@ Direcția dă cele **două axe** pe care se așază elementele:
 
 Axele contează în secțiunea următoare, pentru că `justify-content` lucrează pe axa principală, iar `align-items` pe cea secundară.
 
+**Încearcă tu (5 min)**  
+- [ ] Schimbă direcția cu `column` și apoi revino la `row`  
+- [ ] Încearcă `row-reverse`: în ce ordine apar cutiile?  
+- [ ] Scrie într-un comentariu din cod care este axa principală la `row` și care la `column`  
+
 **Gata când:**  
 - [ ] Trei cutii stau pe un rând, cu `display: flex;` pus pe părinte  
-- [ ] Ai schimbat direcția cu `column` și apoi ai revenit la `row`  
 - [ ] Poți spune care sunt cele două axe  
 
 ---
 
 ## 3. Așezarea pe axe
 
-### Exemplul 3 — `justify-content`: pe axa principală
+### Exemplul 3 — `justify-content` și `align-items`
 
 ```css
 .rand {
@@ -140,7 +160,7 @@ Axele contează în secțiunea următoare, pentru că `justify-content` lucreaz�
 
 Încearcă fiecare valoare și vezi cum se mută cutiile.
 
-### Exemplul 4 — `align-items`: pe axa secundară
+Acum cealaltă axă:
 
 ```css
 .rand {
@@ -156,16 +176,16 @@ Axele contează în secțiunea următoare, pentru că `justify-content` lucreaz�
 
 Combinația `justify-content: center;` plus `align-items: center;` pune un element **exact la mijlocul** containerului, pe ambele axe. Este cea mai simplă centrare din CSS.
 
-**Încearcă tu (6 min)**  
+**Încearcă tu (5 min)**  
 - [ ] Încearcă pe rând toate valorile lui `justify-content` și notează ce face fiecare  
 - [ ] Centrează o cutie pe ambele axe, într-un container de 200px înălțime  
-- [ ] Schimbă `align-items` între `flex-start`, `center` și `flex-end`  
+- [ ] În `tema.html`, pune titlul `h1` într-un antet cu `display: flex;`, centrat pe ambele axe, înalt de 120px  
 
 ---
 
-## 4. Distanță, rânduri și împărțirea spațiului
+## 4. Distanță și rânduri
 
-### Exemplul 5 — `gap`: spațiu între elemente
+### Exemplul 4 — `gap` și `flex-wrap`
 
 ```css
 .rand {
@@ -175,8 +195,6 @@ Combinația `justify-content: center;` plus `align-items: center;` pune un eleme
 ```
 
 `gap` pune spațiu **între** elemente, fără să umple marginile din exterior și fără să calculezi `margin` pentru fiecare. Poți scrie `gap: 10px 20px;` (întâi între rânduri, apoi între coloane).
-
-### Exemplul 6 — `flex-wrap`: treci pe rândul următor
 
 ```css
 .rand {
@@ -192,6 +210,11 @@ Combinația `justify-content: center;` plus `align-items: center;` pune un eleme
 
 În mod normal, elementele flex se **înghesuie** pe un rând, chiar dacă nu mai au loc. Cu `flex-wrap: wrap;` ele trec **pe rândul următor** când nu mai încap. Micșorează fereastra browserului și privește cum cad cutiile pe rândul de jos.
 
+**Încearcă tu (5 min)**  
+- [ ] Pune `gap: 15px;` pe container și vezi spațiul dintre cutii  
+- [ ] Pune opt cutii de 150px și adaugă `flex-wrap: wrap;`  
+- [ ] În `tema.html`, pune mai multe imagini din articol într-un `<div class="galerie">` cu `display: flex;`, `gap` și `flex-wrap`  
+
 **Gata când:**  
 - [ ] Cutiile au `gap` între ele  
 - [ ] Cu `flex-wrap: wrap;`, cutiile trec pe rândul următor când micșorezi fereastra  
@@ -199,9 +222,9 @@ Combinația `justify-content: center;` plus `align-items: center;` pune un eleme
 
 ---
 
-## 5. Elementele flex și meniul
+## 5. Elementele flex
 
-### Exemplul 7 — `flex`: împărțim spațiul
+### Exemplul 5 — `flex`: împărțim spațiul
 
 ```css
 .rand {
@@ -228,7 +251,16 @@ Combinația `justify-content: center;` plus `align-items: center;` pune un eleme
 
 `flex: 1;` pe fiecare element înseamnă „împarteți **egal** spațiul rămas”. Un element cu `flex: 2;` ia **de două ori mai mult** decât unul cu `flex: 1;`. Dacă pui doar `flex: 1;` la un singur element și lași celelalte cu lățimea lor, acela **umple tot spațiul rămas**.
 
-### Exemplul 8 — Un meniu orizontal
+**Încearcă tu (5 min)**  
+- [ ] Împarte spațiul între trei cutii cu `flex: 1;`  
+- [ ] Dă uneia `flex: 2;` și observă ce se întâmplă  
+- [ ] În `tema.html`, pune o imagine și un paragraf pe același rând: imaginea `flex: 1;` și textul `flex: 2;`  
+
+---
+
+## 6. Meniul orizontal
+
+### Exemplul 6 — Un meniu din listă
 
 Dintr-o listă faci un meniu în rând:
 
@@ -268,16 +300,16 @@ Dintr-o listă faci un meniu în rând:
 
 Un meniu așa este ceva ce vei pune în fiecare site.
 
-**Încearcă tu (6 min)**  
-- [ ] Fă un meniu orizontal cu patru linkuri, ca în Exemplul 8  
-- [ ] Împarte spațiul între trei cutii cu `flex: 1;`, apoi dă uneia `flex: 2;`  
+**Încearcă tu (5 min)**  
+- [ ] Fă un meniu orizontal cu patru linkuri, ca în Exemplul 6  
 - [ ] Pune meniul la mijloc cu `justify-content: center;`  
+- [ ] În `tema.html`, pune sus un `<nav>` cu linkuri către capitolele articolului (`#id` pe fiecare `<h2>`), stilat ca un meniu orizontal  
 
 ---
 
-## 6. Carduri pe rând și proiectul
+## 7. Carduri pe rând
 
-### Exemplul 9 — Rând de carduri care se adaptează
+### Exemplul 7 — Rând de carduri care se adaptează
 
 ```css
 .carduri {
@@ -305,7 +337,20 @@ Un meniu așa este ceva ce vei pune în fiecare site.
 
 Rezultat: pe un ecran lat sunt 3–4 carduri pe rând, pe unul mai îngust 2, iar pe telefon unul singur pe rând, fără nicio altă regulă. Este tehnica cea mai folosită pentru carduri.
 
-### Exemplul 10 — „Clubul animalelor”
+**Încearcă tu (5 min)**  
+- [ ] Fă patru carduri cu `flex: 1 1 250px;`  
+- [ ] Micșorează fereastra: câte carduri sunt pe rând la fiecare lățime?  
+- [ ] În `tema.html`, pune „Pe scurt” (3 fapte din articol) în trei carduri pe rând  
+
+**Gata când:**  
+- [ ] Meniul și cardurile sunt făcute cu Flexbox  
+- [ ] Cardurile se adaptează la lățimea ferestrei  
+
+---
+
+## 8. Mini-proiect
+
+### Exemplul 8 — „Clubul animalelor”
 
 Fișierul `index.html`:
 
@@ -460,52 +505,43 @@ Fă pagina cu **un subiect ales de tine** (animale, sporturi, jocuri, călători
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Clubul animalelor”
 
-### Exercițiul A — „Clubul animalelor” (obligatoriu)
-Fă o pagină cu `index.html` și `stil.css`, cu:
-- regula `* { box-sizing: border-box; }` prima în `stil.css`;
-- un `<header>` cu **logo în stânga și meniu în dreapta** (`space-between`, `align-items: center`);
-- un meniu cu **minimum 3 linkuri**, făcut dintr-o listă cu Flexbox;
-- **minimum 4 carduri** în rând, cu `flex-wrap: wrap;`, `gap` și `flex: 1 1 …px`;
-- un `<footer>` cu textul centrat cu Flexbox;
-- cel puțin două comentarii în CSS.
+### Minim vs Complet
 
-Verifică pagina cu Live Server și micșorează fereastra ca să vezi cardurile cum cad pe rânduri.
+| | Ce trebuie |
+|--|------------|
+| **Minim** | Un meniu orizontal făcut dintr-o listă și trei cutii așezate pe un rând |
+| **Complet** | Minim + un element centrat pe orizontală și pe verticală, cutii care trec pe rândul următor când nu încap, un antet cu logo în stânga și meniu în dreapta și explicarea celor două axe |
 
-### Exercițiul B — Ce face regula?
-Spune ce se întâmplă cu cele trei cutii: (1) `display: flex; justify-content: space-between;`; (2) `display: flex; flex-direction: column;`; (3) `display: flex; justify-content: center; align-items: center; height: 200px;`; (4) `display: flex; flex-wrap: wrap;` când cutiile au `width: 300px;`, iar fereastra are 700px lățime.
+### Pasul 1 — Minim
+Pe scheletul complet, legat la `stil.css`, fă un meniu orizontal dintr-o listă și trei cutii pe un rând.
 
-### Exercițiul C — Scrie regula
-Scrie în CSS: (1) un container care pune elementele pe rând, la mijloc, cu 20px între ele; (2) un meniu fără buline, orizontal, cu 15px între linkuri; (3) trei cutii care împart spațiul în mod egal.
-
-### Exercițiul D — Găsește greșelile
-Găsește **3 greșeli** în codul de mai jos și repară greșelile:
-
-```text
-.rand {
-  display: flexbox;
-  justify-content: middle;
-  flex-direction: vertical;
-}
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Într-un comentariu din cod: care sunt cele două axe ale Flexbox? Care este diferența dintre `justify-content` și `align-items`? Pe ce element se scrie `display: flex;` (părinte sau copii)?
-
-**Gata când:**  
 - [ ] Folderul `Prenume_Nume_W3_L5` are `index.html` și `stil.css`  
-- [ ] Pagina are antet cu meniu orizontal, carduri pe rând și subsol  
-- [ ] Cardurile trec pe rândul următor când micșorezi fereastra  
-- [ ] Ai răspuns la exercițiile B–E  
+- [ ] Meniul are minimum 3 linkuri și este orizontal  
+- [ ] Trei cutii stau pe un rând, cu `display: flex;` pe părinte  
+- [ ] Pagina se vede în browser, cu Live Server pornit  
+
+### Pasul 2 — Complet
+Îmbunătățești pagina:
+
+- [ ] Ai regula `* { box-sizing: border-box; }` prima în `stil.css`  
+- [ ] Un `<header>` cu **logo în stânga și meniu în dreapta** (`space-between`, `align-items: center`)  
+- [ ] **Minimum 4 carduri** în rând, cu `flex-wrap: wrap;`, `gap` și `flex: 1 1 …px`  
+- [ ] Un `<footer>` cu textul centrat cu Flexbox  
+- [ ] Ai cel puțin două comentarii în CSS  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Articolul tău cu meniu
+*Doar dacă ai terminat Complet.*
+
+Faci `tema.html` să arate ca un mic site.
+
+- [ ] Pune în `tema.html` un antet cu titlul în stânga și un meniu cu linkuri către capitole în dreapta  
+- [ ] Pune imaginile din articol într-o galerie cu Flexbox, cu `gap` și `flex-wrap`  
 - [ ] Împinge ultimul link din meniu la dreapta cu `margin-left: auto;` (truc: `auto` ia tot spațiul liber)  
-- [ ] Fă un card în care titlul, textul și un buton stau pe coloană, iar butonul rămâne mereu jos (`display: flex; flex-direction: column;` și `margin-top: auto;` pe buton)  
-- [ ] Fă o „bară de etichete” cu 6 etichete care trec pe rândul următor (`flex-wrap`)  
-- [ ] În DevTools, apasă pe un container flex: apare un mic semn „flex” lângă el. Apasă pe el și vezi cum se desenează spațiile și axele  
+- [ ] În DevTools, apasă pe un container flex: apare un mic semn „flex” lângă el. Apasă pe el și vezi cum se desenează spațiile și axele (**F12**; pe Mac Cmd + Option + I)  
 
 ---
 
@@ -518,8 +554,6 @@ Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 6. **Elementele ies din pagină** — ai uitat `flex-wrap: wrap;`.  
 7. **Linkurile din meniu nu stau în rând** — ai pus `display: flex;` pe `li`, nu pe `ul`.  
 8. **Bulinele apar în meniu** — ai uitat `list-style: none;`.  
-9. **Spații ciudate în jurul meniului** — ai uitat `margin: 0; padding: 0;` pe `ul`.  
-10. **Ai pus lățimi fixe care depășesc ecranul** — folosește `flex: 1 1 …px` ca să se adapteze.  
 
 ---
 
@@ -539,7 +573,56 @@ Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 - Cum faci un meniu orizontal dintr-o listă?
 
 ## Temă
-Fă pagina „Echipa mea de fotbal” cu un antet cu logo și meniu, cinci carduri de jucători pe rând (care trec pe rândul următor) și un subsol centrat. Salvează în `Prenume_Nume_W3_L5`.
+1. Fă pagina „Echipa mea de fotbal” cu un antet cu logo și meniu, cinci carduri de jucători pe rând (care trec pe rândul următor) și un subsol centrat. Salvează în `Prenume_Nume_W3_L5`.  
+2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
+3. **Exemple pentru acasă.** Încearcă amândouă:
+
+**Acasă 1 — Ordinea elementelor.**
+
+```css
+.rand {
+  display: flex;
+}
+
+.ultima {
+  order: -1;
+}
+```
+
+`order` schimbă ordinea cutiilor fără să muți nimic în HTML. Valoarea `-1` pune elementul primul.
+
+**Acasă 2 — Un card cu butonul mereu jos.**
+
+```css
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card .buton {
+  margin-top: auto;
+}
+```
+
+Într-un card cu direcția `column`, `margin-top: auto;` împinge butonul în partea de jos.
+
+4. **Încă patru exerciții (B–E):**
+
+**B — Ce face regula?** Spune ce se întâmplă cu cele trei cutii: (1) `display: flex; justify-content: space-between;`; (2) `display: flex; flex-direction: column;`; (3) `display: flex; justify-content: center; align-items: center; height: 200px;`; (4) `display: flex; flex-wrap: wrap;` când cutiile au `width: 300px;`, iar fereastra are 700px lățime.
+
+**C — Scrie regula.** Scrie în CSS: (1) un container care pune elementele pe rând, la mijloc, cu 20px între ele; (2) un meniu fără buline, orizontal, cu 15px între linkuri; (3) trei cutii care împart spațiul în mod egal.
+
+**D — Găsește greșelile.** Găsește **3 greșeli** în codul de mai jos și repară greșelile:
+
+```text
+.rand {
+  display: flexbox;
+  justify-content: middle;
+  flex-direction: vertical;
+}
+```
+
+**E — Explică cu cuvintele tale.** Într-un comentariu din cod: care sunt cele două axe ale Flexbox? Care este diferența dintre `justify-content` și `align-items`? Pe ce element se scrie `display: flex;` (părinte sau copii)?
 
 ## Ce urmează — Lecția 6
 Învățăm **Grid**, pentru machete cu rânduri și coloane (de exemplu o galerie), și **position**, ca să așezi un element peste altul (o insignă într-un colț, un buton care rămâne fixat pe ecran).
@@ -548,8 +631,9 @@ Fă pagina „Echipa mea de fotbal” cu un antet cu logo și meniu, cinci cardu
 
 ## Răspunsuri
 - **Quiz scurt:** (1) pe părinte, adică pe container; (2) primul element la început, ultimul la sfârșit, iar restul distanțate egal; (3) pe container: `display: flex; justify-content: center; align-items: center;`, cu o înălțime pusă containerului; (4) elementele trec pe rândul următor când nu mai încap; (5) pe `ul` pui `display: flex;` și `list-style: none;`, plus `margin: 0; padding: 0;`.  
-- **Exercițiul B:** (1) prima cutie la început, ultima la sfârșit, cea din mijloc distanțată egal; (2) cutiile stau una sub alta; (3) cutiile sunt la mijlocul containerului, pe orizontală și pe verticală; (4) două cutii pe primul rând (300 + 300 = 600 încape) și a treia pe rândul de jos.  
-- **Exercițiul C:** (1) `.rand { display: flex; justify-content: center; gap: 20px; }`; (2) `.meniu { display: flex; gap: 15px; list-style: none; margin: 0; padding: 0; }`; (3) `.container { display: flex; }` și `.cutie { flex: 1; }`.  
-- **Exercițiul D:** (1) `flexbox` trebuie `flex`; (2) `middle` trebuie `center`; (3) `vertical` trebuie `column`.  
-- **Exercițiul E:** axa principală (direcția elementelor) și axa secundară (perpendiculară); `justify-content` așază pe axa principală, `align-items` pe cea secundară; `display: flex;` se scrie pe părinte.  
-- **Notă pentru profesor:** dacă elevii se încurcă între axe, desenați pe tablă o săgeată pentru axa principală. Un joc bun: „unde ajunge cutia?”, cu `justify-content` și `align-items` schimbate pe rând pe proiector. În Exemplul 9, valorile `flex: 1 1 250px` nu trebuie memorate; contează ideea „crește, se micșorează, vrea cam 250px”.
+- **Tema, exercițiul B:** (1) prima cutie la început, ultima la sfârșit, cea din mijloc distanțată egal; (2) cutiile stau una sub alta; (3) cutiile sunt la mijlocul containerului, pe orizontală și pe verticală; (4) două cutii pe primul rând (300 + 300 = 600 încape) și a treia pe rândul de jos.  
+- **Tema, exercițiul C:** (1) `.rand { display: flex; justify-content: center; gap: 20px; }`; (2) `.meniu { display: flex; gap: 15px; list-style: none; margin: 0; padding: 0; }`; (3) `.container { display: flex; }` și `.cutie { flex: 1; }`.  
+- **Tema, exercițiul D:** (1) `flexbox` trebuie `flex`; (2) `middle` trebuie `center`; (3) `vertical` trebuie `column`.  
+- **Tema, exercițiul E:** axa principală (direcția elementelor) și axa secundară (perpendiculară); `justify-content` așază pe axa principală, `align-items` pe cea secundară; `display: flex;` se scrie pe părinte.  
+- **Dacă ritmul clasei este lent:** Exemplul 5 (`flex: 1`, `flex: 2`) poate rămâne pentru acasă; cardurile din Exemplul 7 folosesc oricum `flex: 1 1 250px`.  
+- **Notă pentru profesor:** dacă elevii se încurcă între axe, desenați pe tablă o săgeată pentru axa principală. Un joc bun: „unde ajunge cutia?”, cu `justify-content` și `align-items` schimbate pe rând pe proiector. În Exemplul 7, valorile `flex: 1 1 250px` nu trebuie memorate; contează ideea „crește, se micșorează, vrea cam 250px”.

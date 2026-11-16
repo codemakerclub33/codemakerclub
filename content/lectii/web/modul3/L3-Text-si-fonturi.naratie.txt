@@ -1,21 +1,27 @@
-Lecția a treia din Modulul trei. Text și fonturi.
+Lecția trei. Povestea cu litere frumoase: text și fonturi.
 
-Pe un site se citește mult. Un text bine aranjat se citește cu plăcere, iar unul înghesuit sau prea mic îți dă dureri de cap. Azi alegi literele, mărimea, grosimea și spațiile care fac textul plăcut.
+Pe un site se citește mult. Un text bine aranjat se citește cu plăcere, iar unul înghesuit sau prea mic îți dă dureri de cap. Azi înveți să alegi literele, mărimea, grosimea și spațiile care fac textul plăcut.
 
-Obiectivul. Minim: o pagină cu un font ales, titluri de mărimi diferite și paragrafe cu spațiu între rânduri. Complet: în plus text cu umbră, titlu cu majuscule și spațiu între litere, link fără subliniere, o coloană de text îngustă și centrată și explicația pentru lista de rezervă a fonturilor.
+Ce facem azi. La final ai o pagină de citit cu un font ales, titluri de mărimi diferite, paragrafe cu aer între rânduri și o coloană îngustă și centrată. Același text poate arăta ca o carte frumoasă sau ca o pagină greu de citit, doar prin felul în care îl aranjezi.
 
-Primul pas. Font family alege felul literelor. Scrii mai multe nume, separate prin virgulă, pentru că fiecare calculator are alte fonturi. Browserul încearcă primul font, apoi al doilea. Ultimul nume este un grup general care există mereu: sans serif, serif sau monospace. Un nume cu spațiu se scrie între ghilimele. Azi folosim doar fonturile deja instalate.
+Instrucțiuni noi azi. Font family alege fontul, cu listă de rezervă. Font size dă mărimea. Font weight îngroașă, font style înclină. Text align, line height și letter spacing dau alinierea și aerul. Text decoration, text transform și text shadow schimbă sublinierea, majusculele și umbra. Max width și margin zero auto fac o coloană îngustă și centrată.
 
-Al doilea pas. Mărimea se scrie în pixeli sau în rem. Un rem înseamnă mărimea de bază a paginii, de obicei șaisprezece pixeli. Rem se adaptează, dacă omul își mărește literele din setări. Între număr și unitate nu se pune spațiu. Font weight îngroașă, iar font style italic înclină.
+Primul pas. Fontul. Scrii mai multe nume, separate prin virgulă, pentru că fiecare calculator are alte fonturi. Browserul încearcă primul font, apoi următorul. Ultimul este un grup general, care există mereu: sans serif, serif sau monospace. Numele cu spațiu se scrie între ghilimele. Azi folosim doar fonturi deja instalate.
 
-Al treilea pas. Text align poate fi stânga, mijloc, dreapta sau justify. Line height este înălțimea unui rând. Scrisă ca număr fără unitate, de exemplu unu virgulă șase, face textul plăcut de citit. Letter spacing este spațiul dintre litere.
+Al doilea pas. Mărimea și grosimea. Mărimea se scrie în pixeli sau în rem. Rem este un multiplu al mărimii de bază și se adaptează pe telefon. Între număr și unitate nu se pune spațiu. Bold îngroașă, italic înclină.
 
-Al patrulea pas. Text decoration none scoate sublinierea de la un link, dar atunci fă linkul altfel colorat, ca să se vadă că poate fi apăsat. Text transform uppercase scrie cu majuscule fără să schimbi textul din html. Text shadow face umbră, cu patru valori: spre dreapta, în jos, încețoșarea și culoarea. Folosește umbra cu măsură.
+Al treilea pas. Alinierea și aerul. Text align poate fi stânga, mijloc, dreapta sau justify. Line height este înălțimea unui rând și se scrie ca număr, de obicei între unu virgulă patru și unu virgulă opt. Letter spacing dă aer între litere. Text decoration none scoate sublinierea, iar uppercase face majuscule fără să rescrii textul.
 
-Al cincilea pas. Rândurile foarte lungi obosesc ochii. Fă o coloană îngustă, cu max width, și centrată, cu margin zero auto. Alege cel mult două fonturi pe pagină, unul pentru titluri și unul pentru text.
+Al patrulea pas. Umbra și coloana. Text shadow are patru valori: dreapta, jos, încețoșare și culoare. Folosește umbra cu măsură. Rândurile foarte lungi se citesc greu, așa că pui textul într-o coloană cu lățime maximă și o centrezi.
 
-Greșeli frecvente. Ai uitat grupul general la sfârșitul listei. Ai uitat ghilimelele la un font cu spațiu. Ai scris mărimea cu spațiu. Ai scris text align middle în loc de center. Ai pus prea multe fonturi.
+Al cincilea pas. Titlul cu personalitate. Un font diferit, majuscule, spațiu între litere și o umbră mică. Cel mult două fonturi pe pagină.
 
-Tema. Fișa unui personaj de poveste, cu două fonturi, un titlu cu majuscule și un citat stilat.
+De făcut azi. Minim: o pagină cu un font ales, titluri de mărimi diferite și paragrafe cu spațiu între rânduri. Complet: adaugi două fonturi cu rezervă, un titlu cu efecte, mărimi în rem și o coloană îngustă și centrată.
 
-Recapitulare. Fontul se alege cu o listă de rezervă, mărimea cu rem, iar aerul dintre rânduri face textul plăcut. Succes!
+Bonus. Articolul tău ca o carte. Pui în pagina cu articolul de pe Wikipedia o coloană îngustă, o literă mare la început, un citat stilat și încerci valori în DevTools. Pe Mac deschizi DevTools cu Command, Option și I.
+
+Greșeli frecvente. Ai uitat grupul general. Ai uitat ghilimelele la un font cu spațiu. Ai scris mărimea cu spațiu. Ai scris middle în loc de center. Ai pus prea multe fonturi.
+
+Tema. O fișă de personaj de poveste cu două fonturi, titlu cu majuscule, coloană centrată și citat stilat. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
+
+Recapitulare. Fontul cu rezervă, mărimea în rem, aerul între rânduri, coloana îngustă și centrată. Succes!

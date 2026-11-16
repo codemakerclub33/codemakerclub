@@ -1,19 +1,27 @@
-Lecția a șasea din Modulul trei. Grid și position.
+Lecția șase. Galeria de jocuri: Grid și position.
 
-Flexbox așază elementele pe un singur rând. Când vrei rânduri și coloane în același timp, ca într-o galerie, folosești Grid. Apoi învățăm position, cu care așezi un element peste altul: o insignă în colț sau un buton care rămâne pe ecran.
+Flexbox așază elementele pe un singur rând sau pe o singură coloană. Când vrei rânduri și coloane în același timp, ca într o galerie, folosești Grid. Apoi învățăm position, cu care așezi un element peste altul: o insignă nouă într un colț sau un buton care rămâne pe ecran.
 
-Obiectivul. Minim: o grilă cu trei coloane egale și șase cutii, plus o insignă într-un colț. Complet: în plus un element întins pe două coloane, un antet care rămâne sus la derulare, un buton fix și diferența dintre Flexbox și Grid.
+Ce facem azi. La final ai o galerie în grilă cu trei coloane, o cutie întinsă pe două coloane, insigne în colțuri, un antet care rămâne sus la derulare și un buton fix. Galeriile se fac cu Grid, iar insignele și butoanele plutitoare se fac cu position.
 
-Primul pas. Scrii display grid pe părinte și grid template columns cu trei valori de un fr. Unitatea fr este o parte din spațiul liber. Repeat trei, unu fr, face același lucru, mai scurt. Gap pune spațiu între rânduri și coloane. Rândurile apar singure, cât este nevoie.
+Instrucțiuni noi azi. Display grid face un container grid. Grid template columns alege coloanele, iar fr înseamnă o parte din spațiul liber. Grid column span doi întinde un element pe două coloane. Position relative și absolute pun o insignă în colț. Fixed rămâne pe ecran, iar sticky se lipește sus la derulare. Z index ordonează straturile.
 
-Al doilea pas. Poți amesteci unitățile: două sute de pixeli și unu fr înseamnă o coloană fixă și una care ia restul. Grid auto rows dă înălțimea rândurilor. Cu grid column span doi, un element se întinde pe două coloane. Cu unu, bară, minus unu, se întinde pe toată lățimea.
+Primul pas. Prima grilă. Display grid pe părinte, apoi trei coloane egale, cu spațiu între ele. Grila adaugă rânduri singură. Repeat trei, unu fr, înseamnă trei coloane egale. Poți amesteca unități: o coloană fixă și una care ia restul, ca la un meniu lateral.
 
-Al treilea pas. Position are mai multe valori. Relative lasă elementul la locul lui și îl poți împinge. Absolute îl scoate din rând și îl așază față de cel mai apropiat părinte care are position. De aceea părintele primește position relative, iar insigna primește position absolute, cu top și right.
+Al doilea pas. Grid auto rows dă înălțimea rândurilor. Flexbox lucrează pe o direcție, Grid pe rânduri și coloane, iar pe cele două le poți folosi și împreună. Grid column span doi întinde un element pe două coloane, iar unu slash minus unu îl întinde pe toată lățimea.
 
-Al patrulea pas. Fixed așază elementul față de fereastră și rămâne acolo la derulare, bun pentru un buton Sus. Sticky stă normal, apoi se lipește sus când derulezi, dar are nevoie de top zero. Z index ordonează straturile: numărul mai mare stă deasupra, dar numai pe elemente care au position.
+Al treilea pas. Position. Implicit elementele stau normal. Relative îl împinge față de locul lui, dar mai ales devine părinte de referință. Absolute se așază față de cel mai apropiat părinte care are position. Așa faci o insignă în colț. Fără relative pe părinte, insigna fuge în colțul paginii.
 
-Greșeli frecvente. Ai uitat display grid. Ai scris gap fără pixeli. Insigna fuge în colțul paginii pentru că părintele nu are position relative. Antetul sticky nu are top. Z index are unitate, deși este un număr simplu.
+Al patrulea pas. Fixed rămâne la același loc pe ecran, oricât derulezi, ca butonul Sus.
 
-Tema. Colecția mea, cu opt cutii, insigne și un buton Sus.
+Al cincilea pas. Sticky stă normal, apoi se lipește sus când derulezi, dar are nevoie de top. Z index spune ce stă deasupra, dar numai pe elemente cu position. Dacă antetul se ascunde sub cutii, îi dai un z index mai mare.
 
-Recapitulare. Grid pentru rânduri și coloane. Relative pe părinte, absolute pe copil. Fixed rămâne pe ecran, sticky se lipește sus. Succes!
+De făcut azi. Minim: o grilă cu trei coloane, șase cutii și o insignă într un colț. Complet: adaugi o cutie pe două coloane, un antet sticky, un buton fix și explicația diferenței dintre Flexbox și Grid.
+
+Bonus. Galeria articolului tău. Pui imaginile din pagina cu articolul de pe Wikipedia într o grilă, cu insigne în colț, și încerci o machetă cu meniu lateral. Pe Mac deschizi DevTools cu Command, Option și I.
+
+Greșeli frecvente. Ai uitat display grid. Ai scris gap fără unitate. Părintele nu are relative. Sticky nu are top. Ai scris z index cu unitate.
+
+Tema. Colecția mea, cu opt cutii, o cutie mai mare, insigne și buton Sus. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
+
+Recapitulare. Grid pentru rânduri și coloane, relative cu absolute pentru insigne, fixed și sticky pentru ce rămâne pe ecran. Succes!

@@ -1,21 +1,29 @@
-Lecția a opta din Modulul trei. Animații cu keyframes.
+Lecția opt. Totul în mișcare: animații cu keyframes.
 
-Tranziția are nevoie de o atingere ca să pornească. O animație pornește singură și poate avea mai mulți pași: un buton care pulsează, o minge care sare, un titlu care apare încet, un cerc care se învârte.
+Tranziția din lecția trecută are nevoie de o atingere ca să pornească. O animație pornește singură și poate avea mai mulți pași: un buton care pulsează, o minge care sare, un titlu care apare încet, un cerc care se învârte. Le faci cu keyframes și cu proprietatea animation.
 
-Obiectivul. Minim: un buton care pulsează la infinit. Complet: în plus un titlu care apare lin, o minge care sare, un cerc care se învârte și o regulă care oprește animațiile la cererea utilizatorului.
+Ce facem azi. La final ai o pagină cu un titlu care apare lin, rânduri care apar unul după altul, un buton care pulsează, o minge care sare și un cerc care se învârte, plus o regulă care oprește mișcarea pentru cine o dorește oprită. Folosite cu măsură, animațiile ajută. Folosite prea mult sau prea repede, obosesc, de aceea învățăm și regulile de siguranță.
 
-Primul pas. O animație are două părți. Prima este rețeta: at keyframes, urmat de un nume ales de tine, și înăuntru from și to, sau procente. A doua este pornirea: pe element scrii animation name și animation duration. Numele trebuie să fie identic în ambele locuri, iar durata se scrie cu s, de exemplu două secunde.
+Instrucțiuni noi azi. Keyframes este rețeta animației: ce se schimbă. Animation o pornește pe un element. Animation delay este așteptarea dinainte de pornire. Animation play state paused oprește animația pe loc. Prefers reduced motion oprește mișcarea pentru cine a cerut asta.
 
-Al doilea pas. Pentru mai mulți pași folosești procente: zero la sută, cincizeci la sută și o sută la sută. Pentru controlul rulării ai animation delay, pentru așteptare, animation iteration count, cu valoarea infinite pentru repetare la nesfârșit, animation direction cu alternate, pentru înainte și înapoi, și animation fill mode both. Scurtătura animation le scrie pe toate într-o singură linie: nume, durată, fel, întârziere, repetări.
+Primul pas. O animație are două părți: rețeta și pornirea. În rețetă scrii un nume, apoi from și to. Pornirea pune numele și durata pe un element. Numele trebuie să fie identic în ambele locuri.
 
-Al treilea pas. Pulsarea mărește blând butonul de la unu la unu virgulă unu. Mingea sare cu translate Y. Rândurile apar unul după altul, cu delay diferit, iar both le ține invizibile cât așteaptă. Cercul care se învârte are o latură colorată și rotate de trei sute șaizeci de grade, cu viteză linear.
+Al doilea pas. Când ai mai multe stări, folosești procente: zero, cincizeci și o sută la sută. Apoi alegi durata, felul mersului, întârzierea, câte repetări, direcția și fill mode. Scurtătura le scrie pe toate într o singură linie. Infinite înseamnă la nesfârșit, iar alternate înseamnă înainte și apoi înapoi.
 
-Al patrulea pas. Animation play state paused oprește animația cât ții mouse-ul deasupra. Animează mai ales transform și opacity, pentru că se calculează ușor.
+Al treilea pas. Pulsarea unui buton trebuie să fie blândă, de la unu la unu virgulă unu. Săritura unei mingi se face cu translate Y. Animăm mai ales transform și opacity, pentru că se calculează ușor.
 
-Siguranța. Niciun element nu trebuie să licărească de mai mult de trei ori pe secundă, pentru că poate provoca disconfort sau crize unor oameni. Folosește puține animații și nu pune infinit pe text care se citește. Respectă dorința utilizatorului cu at media prefers reduced motion reduce, unde pui animation none. Scrie regula la sfârșitul fișierului.
+Al patrulea pas. Rândurile pot apărea unul după altul, cu întârzieri diferite. Both ține elementul invizibil cât așteaptă, ca să nu sară la început. Nth of type numără doar paragrafele.
 
-Greșeli frecvente. Ai scris keyframe fără s. Numele nu este identic. Ai scris durata fără s. Ai uitat durata. Ai pus infinit pe tot.
+Al cincilea pas. Rotirea. Un cerc cu o latură colorată, rotit la trei sute șaizeci de grade, cu viteză egală, arată ca un indicator de încărcare.
 
-Tema. Povestea mea animată.
+Al șaselea pas. Siguranța. Animation play state paused oprește mingea cât ții mouse ul deasupra. Prefers reduced motion se scrie la sfârșitul fișierului și oprește animațiile pentru cei care au cerut mișcare redusă. Fără licăriri rapide: cel mult trei pe secundă. Animații cu măsură, iar textul care se citește stă nemișcat.
 
-Recapitulare. Rețeta cu keyframes, pornirea cu animation. Animează transform și opacity. Fără licăriri rapide și cu mișcare redusă la cerere. Succes!
+De făcut azi. Minim: un buton care pulsează la infinit. Complet: adaugi un titlu care apare lin, o minge care sare, un cerc care se învârte și regula pentru mișcare redusă.
+
+Bonus. Articolul tău în mișcare. Pui în pagina cu articolul de pe Wikipedia titlul care apare lin, capitolele care apar unul după altul și regula pentru mișcare redusă.
+
+Greșeli frecvente. Ai scris keyframe fără s. Numele nu coincide. Ai scris durata fără unitate. Ai uitat durata. Ai pus infinite pe tot. Ai uitat regula de mișcare redusă.
+
+Tema. O poveste animată cu titlu, trei rânduri și un personaj care sare. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
+
+Recapitulare. Rețeta și pornirea, procente, animații blânde și siguranță. Succes!

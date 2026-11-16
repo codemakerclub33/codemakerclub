@@ -1,10 +1,12 @@
-Lecția nouă din Modulul trei. Primul stil: fișierul stil punct css și selectorii.
+Lecția unu. Primul stil: fișierul stil punct css și selectorii.
 
 Până acum ai pus stilul în atributul style sau într-un bloc style. Azi mutăm tot într-un fișier separat, pe care îl poate folosi orice pagină. Așa schimbi aspectul unui întreg site dintr-un singur loc.
 
-Obiectivul. Minim: o pagină legată la fișierul de stil, cu trei reguli, una pentru un tag, una pentru o clasă și una pentru un id. Complet: în plus o regulă cu mai mulți selectori separați prin virgulă, o regulă pentru elementele din interiorul unei clase, comentarii și explicația pentru cine câștigă între tag, clasă și id.
+Ce facem azi. La final ai o pagină legată la un fișier de stil, cu reguli pentru tag, pentru clasă și pentru id, cu selectori grupați și comentarii. Știi și cine câștigă atunci când două reguli se bat. Un site poate avea douăzeci de pagini. Dacă stilul stă în fiecare pagină, schimbi douăzeci de fișiere. Dacă stă într-un singur fișier, schimbi un rând și toate paginile se schimbă deodată.
 
-Primul pas. Un site poate avea douăzeci de pagini. Dacă stilul stă în fiecare pagină, schimbi douăzeci de fișiere. Dacă stă într-un singur fișier, schimbi un rând. Creezi un fișier numit stil punct css, în același folder cu pagina. În head adaugi un link, cu rel egal stylesheet și href egal stil punct css. În fișierul css nu scrii style și nu scrii taguri html, doar reguli. Dacă stilul nu apare, verifică numele fișierului, folderul și dacă ai salvat ambele fișiere.
+Instrucțiuni noi azi. Link cu rel egal stylesheet leagă pagina de fișierul de stil. O regulă are un selector, acolade și rânduri cu proprietate și valoare. Clasa se scrie cu punct, id-ul cu diez. Mai mulți selectori se separă cu virgulă. Comentariile se scriu între slash steluță și steluță slash.
+
+Primul pas. Fișierul separat. Creezi un fișier numit stil punct css, în același folder cu pagina. În head adaugi un link, cu rel egal stylesheet și href egal stil punct css. În fișierul css nu scrii style și nu scrii taguri html, doar reguli. Dacă stilul nu apare, verifică numele fișierului, folderul și dacă ai salvat ambele fișiere.
 
 Al doilea pas. O regulă are un selector, care spune cine primește stilul, apoi acolade și rânduri cu proprietate, două puncte, valoare și punct și virgulă. Un selector scris doar cu numele tagului stilează toate tagurile de acel fel.
 
@@ -12,10 +14,14 @@ Al treilea pas. Clasa se scrie în html fără punct, iar în css cu punct. Id-u
 
 Al patrulea pas. Mai mulți selectori se separă cu virgulă. Dacă scrii selectorul unei cutii, un spațiu și un alt selector, stilul se aplică doar în interiorul cutiei. Atenție la spațiu. Două clase lipite, fără spațiu, înseamnă un element care le are pe amândouă.
 
-Al cincilea pas. Cine câștigă? Tagul este cel mai slab, apoi clasa, apoi id-ul, apoi atributul style. La putere egală, câștigă regula scrisă mai jos. Comentariile se scriu între slash steluță și steluță slash.
+Al cincilea pas. Cine câștigă? Tagul este cel mai slab, apoi clasa, apoi id-ul, apoi atributul style. La putere egală, câștigă regula scrisă mai jos. Comentariile ajută la ordine.
+
+De făcut azi. Minim: o pagină legată la fișierul de stil, cu trei reguli, una pentru un tag, una pentru o clasă și una pentru un id. Complet: adaugi o regulă cu virgulă, una pentru elementele din interiorul unei clase și comentarii.
+
+Bonus. Un stil pentru tot site-ul. Faci o a doua pagină care folosește același fișier de stil, schimbi o culoare și vezi că se schimbă în ambele pagini, adaugi o a doua clasă și cauți regulile în DevTools.
 
 Greșeli frecvente. Ai scris style în fișierul css. Ai uitat link-ul din head. Ai uitat punctul înaintea clasei. Ai uitat o acoladă sau un punct și virgulă. Ai uitat să salvezi.
 
-Tema. Un site cu două pagini care folosesc același fișier de stil.
+Tema. Un site cu două pagini care folosesc același fișier de stil. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
 
 Recapitulare. Stilul stă într-un fișier. Selectorii sunt tag, clasă și id. Id-ul bate clasa, iar clasa bate tagul. Succes!

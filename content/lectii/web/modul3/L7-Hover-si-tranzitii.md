@@ -1,4 +1,5 @@
-# LECȚIA 7 — :hover și tranziții
+# LECȚIA 7 — Butoane și cărți vii
+### :hover și tranziții
 **Modulul 3 · CSS: Stil și culoare · 2 ore**  
 **Code Maker Club · CSS Stylist**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei știi să schimbi stilul când mouse-ul este deasupra (`:hover`), când un element este selectat (`:focus`) sau apăsat (`:active`), să schimbi cursorul, să faci schimbări line cu `transition`, să muți, să mărești și să rotești cu `transform`, și să alegi elemente după poziție cu `:nth-child`.  
-**Minim:** un buton care își schimbă culoarea la `:hover`, cu `transition`.  
-**Ținta orei (Complet):** + o carte care se ridică și își mărește umbra, un meniu cu efecte, rânduri de tabel colorate alternativ și explicația de ce nu ascundem lucruri importante în spatele lui `:hover`.
-
-## De ce contează
-Efectele mici spun utilizatorului „aici poți apăsa” și fac site-ul plăcut. Aproape orice site folosește aceste trucuri la butoane, meniuri și carduri.
+## Ce facem azi
+La final ai o pagină cu butoane care își schimbă culoarea, cărți care se ridică și își mărește umbra, un meniu cu efecte și un tabel cu rânduri colorate alternativ. Efectele mici spun utilizatorului „aici poți apăsa” și fac site-ul plăcut. Aproape orice site folosește aceste trucuri la butoane, meniuri și carduri.
 
 ---
 
@@ -21,13 +17,26 @@ Efectele mici spun utilizatorului „aici poți apăsa” și fac site-ul plăcu
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pornim proiectul |
-| 15–35 | `:hover`, `:focus`, `:active`, `cursor` (**Exemplele 1–3**) |
-| 35–60 | `transition` și `transform` (**Exemplele 4–5**) |
-| 60–80 | Carte care se ridică · meniu (**Exemplele 6, 8**) |
-| 80–95 | `:nth-child` (**Exemplul 7**) |
-| 95–115 | Zoom pe imagine · proiect (**Exemplele 9–10**) |
+| 0–15 | Recapitulare · aducem pagina cu articolul de pe Wikipedia |
+| 15–30 | `:hover`, `:focus`, `:active`, `cursor` (**Exemplele 1–2**) |
+| 30–45 | `transition` și `transform` (**Exemplele 3–4**) |
+| 45–60 | Carte care se ridică (**Exemplul 5**) |
+| 60–80 | `:nth-child` (**Exemplul 6**) |
+| 80–100 | Meniu cu efecte · zoom pe imagine (**Exemplul 7**) |
+| 100–115 | Mini-proiect: butoane și cărți vii (**Exemplul 8**) |
 | 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `:hover`, `:focus`, `:active` | Stil după stare: mouse deasupra, selectat, apăsat | `.buton:hover` |
+| `cursor: pointer;` | Mânuță pe tot ce se apasă | butoane, linkuri |
+| `transition` | Schimbare lină | `0.3s ease` |
+| `transform` | Mărește, rotește, mută | `scale(1.1)` |
+| `:nth-child(even)` | Alege după poziție | rânduri alternative |
 
 ---
 
@@ -38,10 +47,11 @@ Din lecția trecută ții minte că:
 - `position: relative;` pe părinte și `absolute` pe copil așază o insignă în colț;
 - `z-index` ordonează straturile.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Creează folderul `Prenume_Nume_W3_L7` cu `index.html` (scheletul complet, legat la `stil.css`) și `stil.css`  
 - [ ] Pune `* { box-sizing: border-box; }` prima în `stil.css`  
 - [ ] Pune în `<body>` un `<button class="buton">Apasă aici</button>` (butonul îl faci mai jos mai frumos)  
+- [ ] Copiază în folder `tema.html`, `stil.css` și folderele `imagini` și `media` din lecția trecută  
 
 > De aici înainte, exemplele arată ce scrii în `<body>` și, separat, ce scrii în `stil.css`.
 
@@ -70,7 +80,12 @@ Din lecția trecută ții minte că:
 
 `:hover` se scrie **după** selector, cu două puncte, și se aplică **numai cât timp mouse-ul este deasupra** elementului. Când scoți mouse-ul, stilul revine. Se numește **pseudo-clasă**: o clasă „invizibilă” pe care o pune browserul singur, în anumite situații.
 
-### Exemplul 2 — `:focus` și `:active`
+**Încearcă tu (5 min)**  
+- [ ] Fă un buton care își schimbă culoarea când pui mouse-ul pe el  
+- [ ] Schimbă și culoarea textului la `:hover`  
+- [ ] În `tema.html`, fă linkurile să își schimbe culoarea la `:hover`  
+
+### Exemplul 2 — `:focus`, `:active` și `cursor`
 
 ```css
 .buton:focus {
@@ -80,36 +95,35 @@ Din lecția trecută ții minte că:
 .buton:active {
   background-color: darkred;
 }
-```
 
-- `:focus`: elementul este selectat (de exemplu ai ajuns la el cu tasta **Tab**);  
-- `:active`: elementul este **apăsat chiar acum**.
-
-Apasă **Tab** în pagină: vezi cum trece selecția de la un element la altul. Cine nu folosește mouse-ul (de exemplu o persoană care folosește doar tastatura) are nevoie de `:focus` vizibil. De aceea, **nu scoate niciodată** conturul cu `outline: none;` fără să pui altceva în loc.
-
-Ordinea contează la linkuri: dacă stilizezi toate stările, scrie regulile în ordinea `:link`, `:visited`, `:hover`, `:active`.
-
-### Exemplul 3 — `cursor`
-
-```css
 .buton {
   cursor: pointer;
 }
 ```
 
-`cursor: pointer;` schimbă săgeata în **mânuță**, ca la un link. Alte valori: `default` (săgeata obișnuită), `text` (bară de scris), `not-allowed` (interzis), `grab` (mână care apucă). Pune `pointer` pe tot ce se poate apăsa.
+- `:focus`: elementul este selectat (de exemplu ai ajuns la el cu tasta **Tab**);  
+- `:active`: elementul este **apăsat chiar acum**;  
+- `cursor: pointer;` schimbă săgeata în **mânuță**, ca la un link. Alte valori: `default` (săgeata obișnuită), `text` (bară de scris), `not-allowed` (interzis), `grab` (mână care apucă). Pune `pointer` pe tot ce se poate apăsa.
+
+Apasă **Tab** în pagină: vezi cum trece selecția de la un element la altul. Cine nu folosește mouse-ul (de exemplu o persoană care folosește doar tastatura) are nevoie de `:focus` vizibil. De aceea, **nu scoate niciodată** conturul cu `outline: none;` fără să pui altceva în loc.
+
+Ordinea contează la linkuri: dacă stilizezi toate stările, scrie regulile în ordinea `:link`, `:visited`, `:hover`, `:active`.
+
+**Încearcă tu (5 min)**  
+- [ ] Apasă Tab de mai multe ori: vezi conturul de la `:focus`?  
+- [ ] Fă butonul să arate altfel cât timp îl ții apăsat  
+- [ ] În `tema.html`, pune `:focus` vizibil pe linkuri și apasă Tab  
 
 **Gata când:**  
 - [ ] Butonul își schimbă culoarea când pui mouse-ul pe el  
 - [ ] Ai un contur vizibil la `:focus` (verifică cu tasta Tab)  
-- [ ] Butonul arată altfel cât timp îl ții apăsat  
 - [ ] Cursorul devine mânuță pe buton  
 
 ---
 
 ## 3. Schimbări line și mișcare
 
-### Exemplul 4 — `transition`
+### Exemplul 3 — `transition`
 
 Schimbarea culorii de mai sus este bruscă. Pentru o schimbare lină, scrie `transition` pe elementul **de bază** (nu pe `:hover`):
 
@@ -134,7 +148,7 @@ Schimbarea culorii de mai sus este bruscă. Pentru o schimbare lină, scrie `tra
 
 Alte feluri de mers: `linear` (viteză egală), `ease-in`, `ease-out`, `ease-in-out`. Pentru mai multe proprietăți, pune între ele virgulă: `transition: background-color 0.3s, transform 0.3s;`. Timpul bun pentru efectele mici este între 0,2s și 0,4s. Dacă durează mai mult, pagina pare înceată.
 
-### Exemplul 5 — `transform`
+### Exemplul 4 — `transform`
 
 ```css
 .cutie {
@@ -159,13 +173,13 @@ Poți combina mai multe într-un singur `transform`, separate prin spațiu: `tra
 **Încearcă tu (6 min)**  
 - [ ] Adaugă `transition` pe buton ca să se schimbe lin  
 - [ ] Fă o cutie care se mărește la `:hover` cu `scale(1.1)`  
-- [ ] Încearcă `rotate(10deg)` și `translateY(-6px)` și compară  
+- [ ] În `tema.html`, fă linkurile să se schimbe lin, cu `transition: color 0.3s ease;`  
 
 ---
 
-## 4. Carduri vii, rânduri colorate și meniu
+## 4. Carte care se ridică
 
-### Exemplul 6 — Carte care se ridică
+### Exemplul 5 — `transform` plus `box-shadow`
 
 ```html
 <div class="carte">
@@ -193,7 +207,20 @@ Poți combina mai multe într-un singur `transform`, separate prin spațiu: `tra
 
 Cartea se ridică 6px, iar umbra se mărește: pare că se desprinde de pagină. Ambele proprietăți se schimbă lin, pentru că le-ai trecut în `transition`.
 
-### Exemplul 7 — `:nth-child`: după poziție
+**Încearcă tu (6 min)**  
+- [ ] Fă trei cărți care se ridică la `:hover`  
+- [ ] Schimbă `translateY(-6px)` în `-12px` și compară  
+- [ ] În `tema.html`, fă capitolele (secțiunile) să se ridice ușor la `:hover`  
+
+**Gata când:**  
+- [ ] Cartea se ridică și își mărește umbra la `:hover`  
+- [ ] Schimbarea este lină  
+
+---
+
+## 5. Alegem după poziție
+
+### Exemplul 6 — `:nth-child`
 
 ```html
 <table class="tabel">
@@ -237,7 +264,16 @@ Cartea se ridică 6px, iar umbra se mărește: pare că se desprinde de pagină.
 
 Rândurile colorate alternativ se citesc mai ușor. `border-collapse: collapse;` lipește chenarele celulelor într-unul singur.
 
-### Exemplul 8 — Meniu cu efecte
+**Încearcă tu (6 min)**  
+- [ ] Fă un tabel cu 5 rânduri și colorează-l alternativ cu `:nth-child(even)`  
+- [ ] Schimbă în `odd` și vezi ce rânduri se colorează  
+- [ ] În `tema.html`, colorează alternativ elementele unei liste din articol  
+
+---
+
+## 6. Meniu cu efecte și zoom pe imagine
+
+### Exemplul 7 — Meniu cu efecte și imagine cu zoom
 
 ```html
 <nav>
@@ -277,17 +313,7 @@ Rândurile colorate alternativ se citesc mai ușor. `border-collapse: collapse;`
 
 Observă virgula: aceeași regulă pentru `:hover` (mouse) și `:focus` (tastatură), deci meniul este prietenos pentru toți.
 
-**Gata când:**  
-- [ ] Cartea se ridică și își mărește umbra la `:hover`  
-- [ ] Rândurile tabelului sunt colorate alternativ cu `:nth-child(even)`  
-- [ ] Meniul reacționează și la mouse, și la tasta Tab  
-- [ ] Poți explica ce alege `:nth-child(odd)`  
-
----
-
-## 5. Zoom pe imagine și proiectul
-
-### Exemplul 9 — Zoom fără să iasă din cutie
+Acum o imagine care se mărește fără să iasă din cutie:
 
 ```html
 <div class="poza">
@@ -315,7 +341,20 @@ Observă virgula: aceeași regulă pentru `:hover` (mouse) și `:focus` (tastatu
 
 Imaginea se mărește, dar `overflow: hidden;` pe cutie **taie ce iese**, deci zoom-ul rămâne în cadru. Selectorul `.poza:hover img` spune: „când mouse-ul este pe `.poza`, schimbă imaginea din ea”. Folosește o imagine făcută de tine, un desen sau o imagine fără persoane, pusă în același folder cu `index.html`.
 
-### Exemplul 10 — „Butoane și cărți vii”
+**Încearcă tu (6 min)**  
+- [ ] Fă un meniu cu `:hover` și `:focus` și testează-l și cu Tab  
+- [ ] Pune o imagine într-o cutie cu `overflow: hidden;` și zoom la `:hover`  
+- [ ] În `tema.html`, adaugă zoom pe imaginile din articol  
+
+**Gata când:**  
+- [ ] Meniul reacționează și la mouse, și la tasta Tab  
+- [ ] Imaginea se mărește fără să iasă din cutie  
+
+---
+
+## 7. Mini-proiect
+
+### Exemplul 8 — „Butoane și cărți vii”
 
 Fișierul `index.html`:
 
@@ -520,53 +559,42 @@ Fă pagina cu **un subiect ales de tine**. Verifică efectele cu mouse-ul și cu
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Butoane și cărți vii”
 
-### Exercițiul A — „Butoane și cărți vii” (obligatoriu)
-Fă o pagină cu `index.html` și `stil.css`, cu:
-- `* { box-sizing: border-box; }` prima în `stil.css`;
-- un meniu cu **minimum 3 linkuri** cu `:hover` și `:focus`, plus `transition`;
-- **minimum 3 cărți** care se ridică la `:hover` (`transform` plus `box-shadow`);
-- **minimum 2 butoane** cu `:hover`, `:active`, `cursor: pointer;` și `transition`;
-- un tabel cu **minimum 4 rânduri**, colorate alternativ cu `:nth-child(even)`;
-- cel puțin două comentarii în CSS.
+### Minim vs Complet
 
-### Exercițiul B — Ce face regula?
-Spune ce se întâmplă: (1) `.a:hover { transform: scale(0.9); }`; (2) `li:nth-child(3) { color: red; }`; (3) `.b { transition: transform 1s linear; }` împreună cu `.b:hover { transform: rotate(90deg); }`; (4) `p:first-child { font-weight: bold; }`.
+| | Ce trebuie |
+|--|------------|
+| **Minim** | Un buton care își schimbă culoarea la `:hover`, cu `transition` |
+| **Complet** | Minim + o carte care se ridică și își mărește umbra, un meniu cu efecte, rânduri de tabel colorate alternativ și explicația de ce nu ascundem lucruri importante în spatele lui `:hover` |
 
-### Exercițiul C — Scrie regula
-Scrie în CSS: (1) un link care devine roșu și fără subliniere la `:hover`; (2) o cutie care se rotește 5 grade lin la `:hover`, în 0,4 secunde; (3) o listă în care elementele impare au fundal galben.
+### Pasul 1 — Minim
+Pe scheletul complet, legat la `stil.css`, fă un buton care își schimbă lin culoarea la `:hover`.
 
-### Exercițiul D — Găsește greșelile
-Găsește **3 greșeli** în codul de mai jos și repară greșelile:
-
-```text
-.buton:hover {
-  background-color: crimson;
-  transition: background-color 0.3;
-}
-
-.cutie {
-  transform: scale(1.2);
-  transform: rotate(10deg);
-}
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Într-un comentariu din cod: de ce nu ascundem informații importante în spatele lui `:hover`? De ce trebuie `:focus` vizibil? Unde se scrie `transition`: pe stilul de bază sau pe `:hover`?
-
-**Gata când:**  
 - [ ] Folderul `Prenume_Nume_W3_L7` are `index.html` și `stil.css`  
-- [ ] Pagina are meniu, cărți, butoane și tabel cu efecte line  
-- [ ] Ai testat și cu tasta Tab  
-- [ ] Ai răspuns la exercițiile B–E  
+- [ ] Butonul are `:hover` și `transition`  
+- [ ] Pagina se vede în browser, cu Live Server pornit  
+
+### Pasul 2 — Complet
+Îmbunătățești pagina:
+
+- [ ] Ai `* { box-sizing: border-box; }` prima în `stil.css`  
+- [ ] Ai un meniu cu **minimum 3 linkuri**, cu `:hover`, `:focus` și `transition`  
+- [ ] Ai **minimum 3 cărți** care se ridică la `:hover` (`transform` plus `box-shadow`)  
+- [ ] Ai **minimum 2 butoane** cu `:hover`, `:active` și `cursor: pointer;`  
+- [ ] Ai un tabel cu **minimum 4 rânduri**, colorate alternativ cu `:nth-child(even)`  
+- [ ] Ai cel puțin două comentarii în CSS  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Articolul tău viu
+*Doar dacă ai terminat Complet.*
+
+Faci `tema.html` să răspundă la mouse și la tastatură.
+
+- [ ] Pune în `tema.html` linkuri cu `:hover` și `:focus`, capitole care se ridică, imagini cu zoom și o listă colorată alternativ  
 - [ ] Fă un buton care se rotește cu 360 de grade la `:hover` (`rotate(360deg)` cu `transition` de 0,6s)  
 - [ ] Fă o cutie care își schimbă culoarea de fundal, mărimea și colțurile în același timp, la `:hover`  
-- [ ] Pune `:first-child` și `:last-child` pe elementele unei liste, cu culori diferite  
 - [ ] Adaugă `a:visited` cu o culoare mai închisă pentru linkurile deja vizitate  
 
 ---
@@ -578,10 +606,8 @@ Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 4. **`:hover` fără două puncte** sau scris `.buton :hover` (cu spațiu) — pseudo-clasa se lipește de selector: `.buton:hover`.  
 5. **Ai scos conturul cu `outline: none;`** fără să pui altceva — cine folosește tastatura nu mai vede unde este.  
 6. **Ai pus informații importante doar la `:hover`** — pe telefon nu există mouse, deci nu apar niciodată.  
-7. **Efect prea lung** (de exemplu 3 secunde) — pagina pare înceată. Alege între 0,2s și 0,4s.  
-8. **`:nth-child` nu alege ce vrei** — numără toți frații, inclusiv titlul sau alte elemente de același nivel; pentru un anumit tip de tag folosește `:nth-of-type`.  
-9. **Zoom-ul imaginii iese din cutie** — lipsește `overflow: hidden;` pe cutie.  
-10. **Cursorul rămâne săgeată pe buton** — ai uitat `cursor: pointer;`.  
+7. **Zoom-ul imaginii iese din cutie** — lipsește `overflow: hidden;` pe cutie.  
+8. **Cursorul rămâne săgeată pe buton** — ai uitat `cursor: pointer;`.  
 
 ---
 
@@ -601,7 +627,62 @@ Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 - De ce nu folosim `outline: none;` fără alt contur?
 
 ## Temă
-Fă pagina „Lista mea de jocuri”: un meniu, patru cărți care se ridică, două butoane și un tabel cu 5 rânduri colorate alternativ. Salvează în `Prenume_Nume_W3_L7`.
+1. Fă pagina „Lista mea de jocuri”: un meniu, patru cărți care se ridică, două butoane și un tabel cu 5 rânduri colorate alternativ. Salvează în `Prenume_Nume_W3_L7`.  
+2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
+3. **Exemple pentru acasă.** Încearcă amândouă:
+
+**Acasă 1 — Subliniere care crește.**
+
+```css
+.link {
+  text-decoration: none;
+  background-image: linear-gradient(crimson, crimson);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 3px;
+  transition: background-size 0.3s ease;
+}
+
+.link:hover {
+  background-size: 100% 3px;
+}
+```
+
+La `:hover`, o linie colorată crește de la stânga la dreapta sub link.
+
+**Acasă 2 — Un buton care pulsează la focus.**
+
+```css
+.buton:focus {
+  outline: 3px solid gold;
+  outline-offset: 3px;
+  transform: scale(1.05);
+}
+```
+
+Un contur mai îndepărtat și o mică mărire fac butonul ușor de văzut pentru cine folosește Tab.
+
+4. **Încă patru exerciții (B–E):**
+
+**B — Ce face regula?** Spune ce se întâmplă: (1) `.a:hover { transform: scale(0.9); }`; (2) `li:nth-child(3) { color: red; }`; (3) `.b { transition: transform 1s linear; }` împreună cu `.b:hover { transform: rotate(90deg); }`; (4) `p:first-child { font-weight: bold; }`.
+
+**C — Scrie regula.** Scrie în CSS: (1) un link care devine roșu și fără subliniere la `:hover`; (2) o cutie care se rotește 5 grade lin la `:hover`, în 0,4 secunde; (3) o listă în care elementele impare au fundal galben.
+
+**D — Găsește greșelile.** Găsește **3 greșeli** în codul de mai jos și repară greșelile:
+
+```text
+.buton:hover {
+  background-color: crimson;
+  transition: background-color 0.3;
+}
+
+.cutie {
+  transform: scale(1.2);
+  transform: rotate(10deg);
+}
+```
+
+**E — Explică cu cuvintele tale.** Într-un comentariu din cod: de ce nu ascundem informații importante în spatele lui `:hover`? De ce trebuie `:focus` vizibil? Unde se scrie `transition`: pe stilul de bază sau pe `:hover`?
 
 ## Ce urmează — Lecția 8
 Învățăm **animațiile cu `@keyframes`**: elemente care pulsează, sar sau apar încet, fără ca cineva să le atingă.
@@ -610,9 +691,9 @@ Fă pagina „Lista mea de jocuri”: un meniu, patru cărți care se ridică, d
 
 ## Răspunsuri
 - **Quiz scurt:** (1) schimbă stilul elementului numai cât timp mouse-ul este deasupra lui; (2) pe elementul de bază, nu pe `:hover`; (3) mărește elementul de 1,1 ori, fără să împingă celelalte elemente; (4) rândurile pare ale tabelului (al doilea, al patrulea și tot așa); (5) pentru că cine folosește tastatura nu ar mai vedea unde este selecția, deci trebuie pus un alt contur în loc.  
-- **Dacă ritmul clasei este lent:** Exemplul 7 (`:nth-child`) și tabelul din proiect sunt opționale; rămâneți la `:hover` și `transition`.  
-- **Exercițiul B:** (1) elementul se micșorează la 90% când mouse-ul este deasupra; (2) al treilea element `li` (între frații lui) devine roșu; (3) cutia se rotește lin 90 de grade într-o secundă, cu viteză egală, la `:hover`, și revine lin când mouse-ul pleacă, pentru că `transition` este pus pe starea de bază; (4) orice `p` care este **primul copil** al părintelui său devine îngroșat; dacă înaintea lui este alt element (de exemplu un `h1`), regula nu are niciun efect. Pentru primul `p`, oriunde ar sta, se folosește `p:first-of-type`.  
-- **Exercițiul C:** (1) `a:hover { color: red; text-decoration: none; }`; (2) `.c { transition: transform 0.4s ease; } .c:hover { transform: rotate(5deg); }`; (3) `li:nth-child(odd) { background-color: yellow; }`.  
-- **Exercițiul D:** (1) `transition` trebuie scris pe `.buton`, nu pe `:hover`; (2) `0.3` trebuie `0.3s`; (3) două `transform` în aceeași regulă — trebuie unite: `transform: scale(1.2) rotate(10deg);`.  
-- **Exercițiul E:** pe telefon nu există mouse, iar informația ar dispărea; cine folosește tastatura are nevoie să vadă unde este selecția; `transition` se scrie pe stilul de bază.  
-- **Notă pentru profesor:** la **Exercițiul B (3)**, accentul este că `transition` pus pe starea de bază face lină și intrarea, și ieșirea. Dacă elevii încurcă, arătați pe proiector cele două variante, cu `transition` pe bază și pe `:hover`. Imaginile din Exemplul 9 sunt opționale: se pot folosi desene proprii sau poze fără persoane; fără imagini, exemplul se poate face cu o cutie colorată.
+- **Dacă ritmul clasei este lent:** Exemplul 6 (`:nth-child`) și tabelul din proiect sunt opționale; rămâneți la `:hover` și `transition`.  
+- **Tema, exercițiul B:** (1) elementul se micșorează la 90% când mouse-ul este deasupra; (2) al treilea element `li` (între frații lui) devine roșu; (3) cutia se rotește lin 90 de grade într-o secundă, cu viteză egală, la `:hover`, și revine lin când mouse-ul pleacă, pentru că `transition` este pus pe starea de bază; (4) orice `p` care este **primul copil** al părintelui său devine îngroșat; dacă înaintea lui este alt element (de exemplu un `h1`), regula nu are niciun efect. Pentru primul `p`, oriunde ar sta, se folosește `p:first-of-type`.  
+- **Tema, exercițiul C:** (1) `a:hover { color: red; text-decoration: none; }`; (2) `.c { transition: transform 0.4s ease; } .c:hover { transform: rotate(5deg); }`; (3) `li:nth-child(odd) { background-color: yellow; }`.  
+- **Tema, exercițiul D:** (1) `transition` trebuie scris pe `.buton`, nu pe `:hover`; (2) `0.3` trebuie `0.3s`; (3) două `transform` în aceeași regulă — trebuie unite: `transform: scale(1.2) rotate(10deg);`.  
+- **Tema, exercițiul E:** pe telefon nu există mouse, iar informația ar dispărea; cine folosește tastatura are nevoie să vadă unde este selecția; `transition` se scrie pe stilul de bază.  
+- **Notă pentru profesor:** la **exercițiul B (3)** din temă, accentul este că `transition` pus pe starea de bază face lină și intrarea, și ieșirea. Dacă elevii încurcă, arătați pe proiector cele două variante, cu `transition` pe bază și pe `:hover`. Imaginile din Exemplul 7 sunt opționale: se pot folosi desene proprii sau poze fără persoane; fără imagini, exemplul se poate face cu o cutie colorată.

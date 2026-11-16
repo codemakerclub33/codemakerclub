@@ -1,21 +1,27 @@
-Lecția a șaptea din Modulul trei. Hover și tranziții.
+Lecția șapte. Butoane și cărți vii: hover și tranziții.
 
-Până acum pagina ta arăta la fel tot timpul. Acum o facem să răspundă: butonul își schimbă culoarea când treci cu mouse-ul peste el, cartea se ridică ușor, iar schimbarea se face lin, nu brusc.
+Până acum pagina ta arăta la fel tot timpul. Acum o facem să răspundă: butonul își schimbă culoarea când treci cu mouse ul peste el, cartea se ridică ușor, iar schimbarea se face lin, nu brusc. Cu hover, transition și transform pagina pare vie.
 
-Obiectivul. Minim: un buton care își schimbă culoarea la hover, cu tranziție. Complet: în plus o carte care se ridică și își mărește umbra, un meniu cu efecte, rânduri de tabel colorate alternativ și explicația de ce nu ascundem lucruri importante în spatele lui hover.
+Ce facem azi. La final ai o pagină cu butoane care își schimbă culoarea, cărți care se ridică și își măresc umbra, un meniu cu efecte și un tabel cu rânduri colorate alternativ. Efectele mici spun utilizatorului că acolo poate apăsa.
 
-Primul pas. Hover se scrie după selector, cu două puncte, și se aplică doar cât timp mouse-ul este deasupra. Focus înseamnă că elementul este selectat, de exemplu cu tasta Tab. Active înseamnă că este apăsat chiar acum. Nu scoate niciodată conturul cu outline none, fără să pui altceva în loc, pentru că cine folosește tastatura trebuie să vadă unde se află. Cursor pointer schimbă săgeata în mânuță.
+Instrucțiuni noi azi. Hover, focus și active schimbă stilul după stare: mouse deasupra, selectat, apăsat. Cursor pointer pune mânuța pe tot ce se apasă. Transition face schimbarea lină. Transform mărește, rotește sau mută. Nth child alege elementele după poziție.
 
-Al doilea pas. Transition se scrie pe stilul de bază, nu pe hover. Are trei părți: ce proprietate se schimbă, cât durează, de exemplu zero virgulă trei secunde, și cum merge, de exemplu ease. Pentru efecte mici alege între zero virgulă două și zero virgulă patru secunde.
+Primul pas. Hover se scrie după selector, cu două puncte, și se aplică numai cât timp mouse ul este deasupra. Focus înseamnă că elementul este selectat, de exemplu cu tasta Tab. Active înseamnă că îl ții apăsat. Nu scoți niciodată conturul fără să pui altul în loc, pentru că cine folosește tastatura trebuie să vadă unde este.
 
-Al treilea pas. Transform schimbă forma sau poziția fără să împingă celelalte elemente. Scale mărește sau micșorează, rotate rotește, translate Y mută în sus sau în jos. Dacă vrei mai multe, le scrii în același transform, separate prin spațiu. Dacă scrii transform de două ori, a doua regulă o înlocuiește pe prima.
+Al doilea pas. Transition se scrie pe elementul de bază, nu pe hover. Are trei părți: ce proprietate, cât durează și cum merge. Timpul bun este între zero virgulă doi și zero virgulă patru secunde. Transform folosește scale, rotate și translate, într un singur transform, fără să împingă celelalte elemente.
 
-Al patrulea pas. Cartea care se ridică are transform translate Y minus șase pixeli și o umbră mai mare la hover. Nth child alege elementele după poziție. Even înseamnă pare, odd înseamnă impare. Cu even faci rânduri de tabel colorate alternativ, care se citesc mai ușor.
+Al treilea pas. Cartea care se ridică. La hover o muți puțin în sus și îi mărești umbra, iar tranziția face mișcarea lină.
 
-Al cincilea pas. Pentru zoom pe o imagine, pui overflow hidden pe cutie, ca imaginea mărită să nu iasă din ea. Meniul primește același efect și la hover, și la focus.
+Al patrulea pas. Nth child even alege rândurile pare, iar odd pe cele impare. Rândurile colorate alternativ se citesc mai ușor.
 
-Greșeli frecvente. Ai pus transition pe hover și revenirea e bruscă. Ai scris timpul fără s. Ai scris două transform într-o regulă. Ai pus informații importante doar la hover, dar pe telefon nu există mouse.
+Al cincilea pas. Meniul cu efecte folosește aceeași regulă pentru hover și focus, deci merge și cu mouse ul, și cu tastatura. Imaginea cu zoom stă într o cutie cu overflow hidden, ca să nu iasă din cadru.
 
-Tema. Lista mea de jocuri, cu meniu, patru cărți, două butoane și un tabel.
+De făcut azi. Minim: un buton care își schimbă lin culoarea la hover. Complet: adaugi o carte care se ridică, un meniu cu efecte, un tabel colorat alternativ și explicația de ce nu ascundem lucruri importante în spatele lui hover.
 
-Recapitulare. Hover, focus, active. Transition pe stilul de bază. Transform cu scale, rotate și translate. Nth child pentru rânduri alternative. Succes!
+Bonus. Articolul tău viu. Pui în pagina cu articolul de pe Wikipedia linkuri cu hover și focus, capitole care se ridică, imagini cu zoom și o listă colorată alternativ.
+
+Greșeli frecvente. Ai scris transition pe hover. Ai uitat litera s la timp. Ai pus două transform în aceeași regulă. Ai scos conturul de focus. Ai pus informații importante doar la hover. Zoom ul iese din cutie.
+
+Tema. O pagină cu un meniu, patru cărți, două butoane și un tabel colorat alternativ. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
+
+Recapitulare. Hover, focus și active, tranziții line, transform și nth child. Succes!

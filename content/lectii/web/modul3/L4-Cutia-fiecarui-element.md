@@ -1,19 +1,15 @@
-# LECȚIA 4 — Cutia fiecărui element
+# LECȚIA 4 — Cartonașe de joc
+### Cutia fiecărui element
 **Modulul 3 · CSS: Stil și culoare · 2 ore**  
 **Code Maker Club · CSS Stylist**
 
 > Secretul care face CSS-ul să pară ușor: **fiecare element dintr-o pagină este o cutie**. Un titlu este o cutie, un paragraf este o cutie, o imagine este o cutie. Când înțelegi cutia, știi să așezi orice lucru exact unde vrei.  
-> Proiect: **„Cărți de joc cu animale, versiunea frumoasă”** · folder: `Prenume_Nume_W3_L4` (ex. `Ana_Pop_W3_L4`)
+> Proiect: **„Cartonașe de joc”** · folder: `Prenume_Nume_W3_L4` (ex. `Ana_Pop_W3_L4`)
 
 ---
 
-## Obiectiv
-La finalul orei știi că orice element are patru straturi (conținut, spațiu în interior, chenar și spațiu în afară), le schimbi cu `width`, `height`, `padding`, `border` și `margin`, centrezi o cutie, rotunjești colțuri, pui umbră, folosești `box-sizing: border-box` și știi diferența dintre `block`, `inline` și `inline-block`.  
-**Minim:** o cutie cu lățime, spațiu în interior, chenar și spațiu în afară, centrată pe pagină.  
-**Ținta orei (Complet):** + colțuri rotunjite și umbră, `box-sizing: border-box`, un buton făcut dintr-un link, imagini care nu ies din cutie și o explicație a celor patru straturi cu ajutorul DevTools.
-
-## De ce contează
-Dacă un element nu stă unde vrei, aproape mereu problema este o cutie: un spațiu în plus, o lățime greșită sau un chenar care adaugă ceva. Cine citește bine cutiile repară o pagină în câteva minute.
+## Ce facem azi
+La final ai o pagină cu cărți de joc: cutii cu lățime, spațiu în interior, chenar, colțuri rotunjite și umbră, centrate pe pagină. Dacă un element nu stă unde vrei, aproape mereu problema este o cutie: un spațiu în plus, o lățime greșită sau un chenar care adaugă ceva. Cine citește bine cutiile repară o pagină în câteva minute.
 
 ---
 
@@ -21,14 +17,27 @@ Dacă un element nu stă unde vrei, aproape mereu problema este o cutie: un spa�
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pornim proiectul |
-| 15–30 | Cutia · lățime și înălțime (**Exemplele 1–2**) |
-| 30–50 | `padding` și `border` (**Exemplele 3–4**) |
-| 50–65 | `margin` și centrare (**Exemplul 5**) |
-| 65–85 | `box-sizing` · `block`, `inline`, `inline-block` (**Exemplele 6–7**) |
-| 85–100 | Colțuri, umbră, buton · imagini (**Exemplele 8–9**) |
-| 100–115 | Proiect (**Exemplul 10**) |
+| 0–15 | Recapitulare · aducem pagina cu articolul de pe Wikipedia |
+| 15–30 | Cutia · lățime și înălțime (**Exemplul 1**) |
+| 30–45 | `padding` și `border` (**Exemplul 2**) |
+| 45–60 | `margin` și centrare (**Exemplul 3**) |
+| 60–80 | `box-sizing` · `block`, `inline`, `inline-block` (**Exemplele 4–5**) |
+| 80–100 | Colțuri, umbră, buton · imagini (**Exemplele 6–7**) |
+| 100–115 | Mini-proiect: cartonașe de joc (**Exemplul 8**) |
 | 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `width`, `max-width` | Lățimea cutiei | `300px` |
+| `padding`, `border`, `margin` | Spațiu în interior, chenar, spațiu în afară | `20px`, `3px solid tomato` |
+| `margin: 0 auto;` | Centrează o cutie cu lățime | `width: 300px;` |
+| `box-sizing: border-box;` | `width` include `padding` și `border` | `* { … }` |
+| `display: inline-block;` | În rând, cu lățime și spațiu | buton, etichetă |
+| `border-radius`, `box-shadow` | Colțuri rotunjite și umbră | `12px` |
 
 ---
 
@@ -40,9 +49,11 @@ Din lecția trecută ții minte că:
 - `line-height` dă aer între rânduri;
 - `max-width` și `margin: 0 auto;` fac o coloană îngustă și centrată (azi înțelegi de ce).
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Creează folderul `Prenume_Nume_W3_L4` cu `index.html` (scheletul complet, legat la `stil.css`) și `stil.css`  
 - [ ] Pune în `<body>` un `<h1>` și trei cutii `<div class="carte">` cu câte un `<h2>` și un `<p>` despre un animal  
+- [ ] Copiază în folder `tema.html`, `stil.css` și folderele `imagini` și `media` din lecția trecută  
+- [ ] Deschide `tema.html` cu Live Server: ce elemente crezi că sunt „cutii” în articolul tău?  
 
 > De aici înainte, exemplele arată ce scrii în `<body>` și, separat, ce scrii în `stil.css`.
 
@@ -70,7 +81,7 @@ Fiecare element are, de la **interior spre exterior**, patru straturi:
 
 Cel mai bun mod să le vezi: deschide DevTools (**F12**; pe Mac Cmd + Option + I), fila **Elements**, apasă pe un element și privește panoul **Styles**, jos, la desenul colorat al cutiei. Albastrul este conținutul, verdele este `padding`, galbenul este `border`, iar portocaliul este `margin`. Dacă treci cu mouse-ul peste element în DevTools, vezi aceleași culori pe pagină.
 
-### Exemplul 2 — Lățime și înălțime
+Acum lățimea și înălțimea:
 
 ```css
 .carte {
@@ -96,21 +107,26 @@ Mai sunt două reguli utile:
 
 `max-width` este lățimea cea mai mare pe care o poate avea, iar `min-height` este înălțimea cea mai mică. Sunt mai prietenoase decât `width` și `height` fixe, pentru că se adaptează.
 
+**Încearcă tu (5 min)**  
+- [ ] Dă unei cutii `width: 250px;` și un fundal colorat  
+- [ ] Deschide DevTools și apasă pe cutie: găsește cele patru straturi colorate  
+- [ ] În `tema.html`, deschide DevTools, apasă pe un paragraf și notează câți pixeli are `padding` și `margin`  
+
 **Gata când:**  
 - [ ] Ai o cutie cu o lățime fixă și un fundal colorat  
-- [ ] Ai deschis DevTools și ai văzut cele patru straturi colorate ale cutiei  
 - [ ] Poți spune în ce ordine sunt straturile, de la interior spre exterior  
 
 ---
 
 ## 3. Spațiu în interior și chenar
 
-### Exemplul 3 — `padding`
+### Exemplul 2 — `padding` și `border`
 
 ```css
 .carte {
   background-color: lightyellow;
   padding: 20px;
+  border: 3px solid tomato;
 }
 
 .alta {
@@ -123,6 +139,14 @@ Mai sunt două reguli utile:
 
 .a-patra {
   padding-left: 40px;
+}
+
+.punctat {
+  border: 2px dashed navy;
+}
+
+.jos {
+  border-bottom: 4px solid green;
 }
 ```
 
@@ -137,34 +161,18 @@ Mai sunt două reguli utile:
 
 Același lucru se aplică și la `margin`.
 
-### Exemplul 4 — `border`
-
-```css
-.carte {
-  border: 3px solid tomato;
-}
-
-.punctat {
-  border: 2px dashed navy;
-}
-
-.jos {
-  border-bottom: 4px solid green;
-}
-```
-
 `border` are trei lucruri, scrise în orice ordine, separate prin spațiu: **grosimea**, **stilul** și **culoarea**. Stiluri: `solid` (linie), `dashed` (liniuțe), `dotted` (puncte), `double` (dublu). Poți pune chenar doar pe o latură: `border-top`, `border-right`, `border-bottom`, `border-left`.
 
 **Încearcă tu (6 min)**  
 - [ ] Dă unei cutii `padding` de 20px și vezi cum se mărește spațiul din jurul textului  
 - [ ] Fă o cutie cu chenar punctat și una cu chenar doar jos  
-- [ ] Schimbă `padding` cu două valori (`10px 30px`) și observă diferența  
+- [ ] În `tema.html`, pune pe fiecare capitol (`h2` și paragrafele lui, într-un `<section>`) `padding: 20px;` și un chenar subțire  
 
 ---
 
 ## 4. Spațiu în afară și centrare
 
-### Exemplul 5 — `margin`
+### Exemplul 3 — `margin`
 
 ```css
 .carte {
@@ -187,16 +195,16 @@ Cel mai folositor truc: **`margin: 0 auto;`** pe o cutie cu lățime fixă o **c
 
 > `padding` este **în interior** (are fundalul cutiei), iar `margin` este **în afară** (este transparent). Dacă vrei spațiu între două cutii, folosești `margin`.
 
-**Încearcă tu (5 min)**  
+**Încearcă tu (6 min)**  
 - [ ] Pune `margin: 20px;` pe trei cutii și vezi spațiul dintre ele  
 - [ ] Dă unei cutii `width: 300px;` și `margin: 0 auto;` și vezi cum se centrează  
-- [ ] Schimbă `margin` cu patru valori și observă fiecare latură  
+- [ ] În `tema.html`, dă capitolelor `margin: 20px 0;` ca să respire între ele  
 
 ---
 
 ## 5. Mărimea reală, `block` și `inline`
 
-### Exemplul 6 — Cutia pare mai mare decât ai cerut: `box-sizing`
+### Exemplul 4 — Cutia pare mai mare decât ai cerut: `box-sizing`
 
 ```css
 .cutie {
@@ -222,7 +230,12 @@ Asta încurcă mult. Soluția: spune calculatorului să socotească `padding` ș
 
 `*` înseamnă „toate elementele”. Acum o cutie cu `width: 200px;` ocupă **exact** 200px, oricât `padding` și `border` ai pune. Scrie această regulă **prima** în fiecare `stil.css`, de azi încolo.
 
-### Exemplul 7 — `block`, `inline` și `inline-block`
+**Încearcă tu (5 min)**  
+- [ ] Fă o cutie cu `width: 200px;`, `padding: 20px;` și chenar de 5px  
+- [ ] Măsoară-o în DevTools: câți pixeli are?  
+- [ ] Pune regula și în `stil.css` de la `tema.html`  
+
+### Exemplul 5 — `block`, `inline` și `inline-block`
 
 Elementele au un fel de a se așeza, numit `display`:
 
@@ -249,6 +262,11 @@ Elementele au un fel de a se așeza, numit `display`:
 
 Dacă un `span` nu vrea să primească lățime sau spațiu sus și jos, probabil este `inline`. Schimbă `display` în `inline-block` și funcționează.
 
+**Încearcă tu (6 min)**  
+- [ ] Fă trei etichete `span` în rând, cu `display: inline-block;`, fundal și `padding`  
+- [ ] Încearcă să le dai `width` fără `inline-block`: ce se întâmplă?  
+- [ ] În `tema.html`, fă din cuvintele „Nou”, „Important” sau „De știut” etichete colorate  
+
 **Gata când:**  
 - [ ] Ai pus `* { box-sizing: border-box; }` la începutul fișierului `stil.css`  
 - [ ] Poți calcula lățimea unei cutii cu `padding` și `border`, fără și cu `border-box`  
@@ -256,9 +274,9 @@ Dacă un `span` nu vrea să primească lățime sau spațiu sus și jos, probabi
 
 ---
 
-## 6. Colțuri, umbră, imagini și proiect
+## 6. Colțuri, umbră și imagini
 
-### Exemplul 8 — Colțuri rotunjite, umbră și buton
+### Exemplul 6 — Colțuri rotunjite, umbră și buton
 
 ```css
 .carte {
@@ -293,7 +311,7 @@ Dacă un `span` nu vrea să primească lățime sau spațiu sus și jos, probabi
 - `box-shadow` are patru valori: spre dreapta, în jos, încețoșarea și culoarea (de obicei negru transparent);  
 - un link cu `display: inline-block;`, `padding`, fundal și colțuri rotunjite arată ca un **buton**.
 
-### Exemplul 9 — Imagini care nu ies din cutie
+### Exemplul 7 — Imagini care nu ies din cutie
 
 ```css
 img {
@@ -304,7 +322,16 @@ img {
 
 O imagine mare poate ieși din cutia ei. Cu `max-width: 100%;` ea nu devine niciodată mai lată decât cutia în care stă, iar `height: auto;` păstrează proporțiile. Este o regulă bună pentru **orice** pagină.
 
-### Exemplul 10 — „Cărți de joc cu animale, versiunea frumoasă”
+**Încearcă tu (6 min)**  
+- [ ] Rotunjește colțurile unei cutii și pune o umbră ușoară  
+- [ ] Fă un cerc cu `border-radius: 50%;` și un buton dintr-un link  
+- [ ] În `tema.html`, rotunjește capitolele cu `border-radius: 12px;` și pune o umbră ușoară  
+
+---
+
+## 7. Mini-proiect
+
+### Exemplul 8 — „Cartonașe de joc”
 
 Fișierul `index.html`:
 
@@ -422,52 +449,42 @@ Fă pagina cu **animalele tale**: minimum 4 cărți. Observă cum o singură reg
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Cartonașe de joc”
 
-### Exercițiul A — „Cărți de joc cu animale, versiunea frumoasă” (obligatoriu)
-Fă o pagină cu `index.html` și `stil.css`, cu:
-- regula `* { box-sizing: border-box; }` prima în `stil.css`;
-- **minimum 4 cărți** `<div class="carte">`, centrate cu `margin: 0 auto;`, cu `width`, `padding`, `border`, `border-radius` și `box-shadow`;
-- cel puțin o carte cu două clase (`carte rara`);
-- un buton făcut dintr-un link, cu `display: inline-block;`;
-- un număr de putere într-un `<span>` rotunjit, cu `inline-block`;
-- cel puțin două comentarii în CSS.
+### Minim vs Complet
 
-Verifică pagina cu Live Server.
+| | Ce trebuie |
+|--|------------|
+| **Minim** | O cutie cu lățime, spațiu în interior, chenar și spațiu în afară, centrată pe pagină |
+| **Complet** | Minim + colțuri rotunjite și umbră, `box-sizing: border-box`, un buton făcut dintr-un link, imagini care nu ies din cutie și o explicație a celor patru straturi cu ajutorul DevTools |
 
-### Exercițiul B — Calculează
-Calculează lățimea totală a cutiilor: (1) `width: 300px; padding: 10px; border: 2px solid;` fără `border-box`; (2) aceeași cutie, cu `box-sizing: border-box`; (3) la `margin: 5px 10px 15px 20px;` spune câți pixeli sunt sus, dreapta, jos și stânga.
+### Pasul 1 — Minim
+Pe scheletul complet, legat la `stil.css`, fă o carte cu `width`, `padding`, `border` și `margin: 0 auto;`.
 
-### Exercițiul C — Scrie regula
-Scrie în CSS: (1) o cutie lată de 250px, cu spațiu în interior de 15px, chenar gri de 2px, colțuri rotunjite de 10px, centrată pe pagină; (2) o etichetă `inline-block` cu fundal verde deschis, spațiu `5px 10px` și colțuri rotunjite; (3) o regulă care face imaginile să nu iasă din cutie.
-
-### Exercițiul D — Găsește greșelile
-Găsește **3 greșeli** în codul de mai jos și repară greșelile:
-
-```text
-.cutie {
-  width: 200;
-  padding: 10px 20px 30px 40px 50px;
-  border: solid 2px;
-  margin = 10px;
-}
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Într-un comentariu din cod: care sunt cele patru straturi ale unei cutii, de la interior spre exterior? Care este diferența dintre `padding` și `margin`? De ce punem `box-sizing: border-box`?
-
-**Gata când:**  
 - [ ] Folderul `Prenume_Nume_W3_L4` are `index.html` și `stil.css`  
-- [ ] Cărțile au chenar, colțuri rotunjite, umbră și sunt centrate  
-- [ ] Ai folosit `box-sizing: border-box`, `inline-block` și un buton  
-- [ ] Ai răspuns la exercițiile B–E  
+- [ ] Cartea are lățime, `padding`, `border` și este centrată  
+- [ ] Pagina se vede în browser, cu Live Server pornit  
+
+### Pasul 2 — Complet
+Îmbunătățești pagina:
+
+- [ ] Ai regula `* { box-sizing: border-box; }` prima în `stil.css`  
+- [ ] Ai **minimum 4 cărți** `<div class="carte">` cu `border-radius` și `box-shadow`  
+- [ ] Cel puțin o carte are două clase (`carte rara`)  
+- [ ] Ai un buton făcut dintr-un link, cu `display: inline-block;`  
+- [ ] Ai un număr de putere într-un `<span>` rotunjit, cu `inline-block`  
+- [ ] Ai cel puțin două comentarii în CSS  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Capitolele ca niște cărți
+*Doar dacă ai terminat Complet.*
+
+Faci `tema.html` să arate ca o pagină cu cărți.
+
+- [ ] Pune fiecare capitol din `tema.html` într-un `<section>` și stilează-l ca o carte: `padding`, chenar, `border-radius`, `box-shadow`, `margin: 20px auto;` și `max-width`  
+- [ ] Pune `img { max-width: 100%; height: auto; }` și rotunjește imaginile cu `border-radius: 8px;`  
 - [ ] Fă un cerc mai mare (100px) cu `border-radius: 50%` și pune în el un număr mare, centrat cu `text-align: center;` și `line-height` egal cu înălțimea  
-- [ ] Fă o cutie cu un chenar gros doar în stânga, într-o culoare vie (`border-left: 8px solid tomato;`)  
-- [ ] Fă un „card de profil” cu o imagine pătrată de 120px (fără persoane) și colțuri rotunjite  
 - [ ] În DevTools, schimbă valorile `padding` și `margin` în panoul **Styles** și vezi cum se mișcă cutia pe pagină  
 
 ---
@@ -481,8 +498,6 @@ Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 6. **Ai pus `width` pe un `span`** — `span` este `inline` și îl ignoră; folosește `inline-block`.  
 7. **Ai folosit `margin` când voiai spațiu în interior** (sau invers) — spațiul interior este `padding`.  
 8. **Imaginea iese din cutie** — adaugă `img { max-width: 100%; height: auto; }`.  
-9. **Ai pus înălțime fixă pe o cutie cu text** — textul poate ieși din ea; folosește `min-height`.  
-10. **Ai crezut că `border-radius: 50%` face cerc la orice cutie** — doar când lățimea este egală cu înălțimea.  
 
 ---
 
@@ -502,7 +517,53 @@ Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 - Cum faci un buton dintr-un link?
 
 ## Temă
-Fă o pagină „Carduri de jucători” cu **5 carduri** ale unor jucători inventați, fiecare cu nume, o descriere scurtă și un buton. Una dintre cărți are și clasa `capitan` cu alt fundal. Salvează în `Prenume_Nume_W3_L4`.
+1. Fă o pagină „Carduri de jucători” cu **5 carduri** ale unor jucători inventați, fiecare cu nume, o descriere scurtă și un buton. Una dintre cărți are și clasa `capitan` cu alt fundal. Salvează în `Prenume_Nume_W3_L4`.  
+2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
+3. **Exemple pentru acasă.** Încearcă amândouă:
+
+**Acasă 1 — Un cadru dublu.**
+
+```css
+.cadru {
+  border: 6px double navy;
+  outline: 3px solid gold;
+  outline-offset: 4px;
+  padding: 15px;
+}
+```
+
+`outline` este un al doilea contur, desenat în afara chenarului; `outline-offset` îl îndepărtează puțin.
+
+**Acasă 2 — Un titlu cu bară în stânga.**
+
+```css
+.titlu-bara {
+  border-left: 8px solid tomato;
+  padding-left: 12px;
+  background-color: #fff4ee;
+}
+```
+
+O bară groasă în stânga este un truc simplu pentru titluri și citate.
+
+4. **Încă patru exerciții (B–E):**
+
+**B — Calculează.** Calculează lățimea totală a cutiilor: (1) `width: 300px; padding: 10px; border: 2px solid;` fără `border-box`; (2) aceeași cutie, cu `box-sizing: border-box`; (3) la `margin: 5px 10px 15px 20px;` spune câți pixeli sunt sus, dreapta, jos și stânga.
+
+**C — Scrie regula.** Scrie în CSS: (1) o cutie lată de 250px, cu spațiu în interior de 15px, chenar gri de 2px, colțuri rotunjite de 10px, centrată pe pagină; (2) o etichetă `inline-block` cu fundal verde deschis, spațiu `5px 10px` și colțuri rotunjite; (3) o regulă care face imaginile să nu iasă din cutie.
+
+**D — Găsește greșelile.** Găsește **3 greșeli** în codul de mai jos și repară greșelile:
+
+```text
+.cutie {
+  width: 200;
+  padding: 10px 20px 30px 40px 50px;
+  border: solid 2px;
+  margin = 10px;
+}
+```
+
+**E — Explică cu cuvintele tale.** Într-un comentariu din cod: care sunt cele patru straturi ale unei cutii, de la interior spre exterior? Care este diferența dintre `padding` și `margin`? De ce punem `box-sizing: border-box`?
 
 ## Ce urmează — Lecția 5
 Învățăm **Flexbox**: așezăm cutiile una lângă alta, într-un rând, le distanțăm și le centrăm fără să mai calculăm marginile. Din cărți vom face un rând frumos de carduri.
@@ -512,8 +573,8 @@ Fă o pagină „Carduri de jucători” cu **5 carduri** ale unor jucători inv
 ## Răspunsuri
 - **Quiz scurt:** (1) de la interior spre exterior: conținut, `padding`, `border`, `margin`; (2) centrează pe orizontală o cutie care are `width` sau `max-width`; (3) 250px (200 + 20 + 20 + 5 + 5); (4) `display: inline-block;`; (5) îi pui `display: inline-block;`, `padding`, fundal, `border-radius` și `text-decoration: none;`.  
 - **Dacă ritmul clasei este lent:** în proiect cereți minimum 3 cărți și lăsați `box-shadow` și imaginile pentru bonus.  
-- **Exercițiul B:** (1) 300 + 10 + 10 + 2 + 2 = 324px; (2) 300px; (3) sus 5px, dreapta 10px, jos 15px, stânga 20px.  
-- **Exercițiul C:** (1) `.cutie { width: 250px; padding: 15px; border: 2px solid gray; border-radius: 10px; margin: 0 auto; }`; (2) `.eticheta { display: inline-block; background-color: lightgreen; padding: 5px 10px; border-radius: 6px; }`; (3) `img { max-width: 100%; height: auto; }`.  
-- **Exercițiul D:** (1) `width: 200` trebuie `200px`; (2) `padding` nu poate avea cinci valori; (3) `margin = 10px` trebuie `margin: 10px`.  
-- **Exercițiul E:** conținut, `padding`, `border`, `margin`; `padding` este spațiul din interior (are fundalul cutiei), `margin` este spațiul din afară (transparent); `border-box` face ca `width` să includă `padding` și `border`, deci cutia are mărimea scrisă.  
-- **Notă pentru profesor:** desenul cu caractere din Exemplul 1 este un ajutor; arată cutia în DevTools pe proiector. În Exemplul 6, calculul 200 + 40 + 10 = 250px este punctul-cheie al lecției; verifică că toți elevii l-au înțeles înainte de `border-box`. `margin` între cutii vecine se poate „topi” într-una singură (se ia cea mai mare valoare), dar nu insistăm în această lecție.
+- **Tema, exercițiul B:** (1) 300 + 10 + 10 + 2 + 2 = 324px; (2) 300px; (3) sus 5px, dreapta 10px, jos 15px, stânga 20px.  
+- **Tema, exercițiul C:** (1) `.cutie { width: 250px; padding: 15px; border: 2px solid gray; border-radius: 10px; margin: 0 auto; }`; (2) `.eticheta { display: inline-block; background-color: lightgreen; padding: 5px 10px; border-radius: 6px; }`; (3) `img { max-width: 100%; height: auto; }`.  
+- **Tema, exercițiul D:** (1) `width: 200` trebuie `200px`; (2) `padding` nu poate avea cinci valori; (3) `margin = 10px` trebuie `margin: 10px`.  
+- **Tema, exercițiul E:** conținut, `padding`, `border`, `margin`; `padding` este spațiul din interior (are fundalul cutiei), `margin` este spațiul din afară (transparent); `border-box` face ca `width` să includă `padding` și `border`, deci cutia are mărimea scrisă.  
+- **Notă pentru profesor:** desenul cu caractere din Exemplul 1 este un ajutor; arată cutia în DevTools pe proiector. În Exemplul 4, calculul 200 + 40 + 10 = 250px este punctul-cheie al lecției; verifică că toți elevii l-au înțeles înainte de `border-box`. `margin` între cutii vecine se poate „topi” într-una singură (se ia cea mai mare valoare), dar nu insistăm în această lecție.

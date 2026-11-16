@@ -1,19 +1,15 @@
-# LECȚIA 8 — Animații cu @keyframes
+# LECȚIA 8 — Totul în mișcare
+### Animații cu @keyframes
 **Modulul 3 · CSS: Stil și culoare · 2 ore**  
 **Code Maker Club · CSS Stylist**
 
 > Tranziția din lecția trecută are nevoie de o atingere ca să pornească. O **animație** pornește **singură** și poate avea mai mulți pași: un buton care pulsează, o minge care sare, un titlu care apare încet, un cerc care se învârte. Le faci cu `@keyframes` și cu proprietatea `animation`.  
-> Proiect: **„Pagina cu mișcare”** · folder: `Prenume_Nume_W3_L8` (ex. `Ana_Pop_W3_L8`)
+> Proiect: **„Totul în mișcare”** · folder: `Prenume_Nume_W3_L8` (ex. `Ana_Pop_W3_L8`)
 
 ---
 
-## Obiectiv
-La finalul orei știi să scrii o animație cu `@keyframes`, să o legi de un element cu `animation`, să alegi durata, întârzierea, repetarea și direcția, să faci o animație care pulsează, sare, apare lin sau se învârte, și să oprești mișcarea pentru cine nu o dorește (`prefers-reduced-motion`).  
-**Minim:** un buton care pulsează (se mărește și se micșorează) la infinit.  
-**Ținta orei (Complet):** + un titlu care apare lin, o minge care sare, un cerc care se învârte și o regulă care oprește animațiile la cererea utilizatorului.
-
-## De ce contează
-Animațiile atrag privirea spre un lucru important (un buton, un mesaj) și fac pagina plăcută. Folosite cu măsură, ele ajută. Folosite prea mult sau prea repede, obosesc și pot face rău unor oameni, de aceea învățăm și regulile de siguranță.
+## Ce facem azi
+La final ai o pagină cu un titlu care apare lin, rânduri care apar unul după altul, un buton care pulsează, o minge care sare și un cerc care se învârte, plus o regulă care oprește mișcarea pentru cine o dorește oprită. Animațiile atrag privirea spre un lucru important și fac pagina plăcută. Folosite cu măsură, ele ajută; folosite prea mult sau prea repede, obosesc și pot face rău unor oameni, de aceea învățăm și regulile de siguranță.
 
 ---
 
@@ -21,13 +17,28 @@ Animațiile atrag privirea spre un lucru important (un buton, un mesaj) și fac 
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pornim proiectul |
-| 15–35 | Prima animație: `@keyframes` și `animation` (**Exemplele 1–2**) |
-| 35–55 | Proprietățile animației (**Exemplul 3**) |
-| 55–85 | Pulsare, săritură, apariție, rotire (**Exemplele 4–7**) |
-| 85–100 | Pauză la `:hover` · reguli de siguranță (**Exemplele 8–9**) |
-| 100–115 | Proiect (**Exemplul 10**) |
+| 0–15 | Recapitulare · aducem pagina cu articolul de pe Wikipedia |
+| 15–30 | Prima animație: `@keyframes` și `animation` (**Exemplul 1**) |
+| 30–50 | Procente și proprietățile animației (**Exemplul 2**) |
+| 50–60 | Pulsare (**Exemplul 3**) |
+| 60–70 | Săritură (**Exemplul 4**) |
+| 70–80 | Apariție, una după alta (**Exemplul 5**) |
+| 80–90 | Rotire (**Exemplul 6**) |
+| 90–100 | Pauză la `:hover` · reguli de siguranță (**Exemplul 7**) |
+| 100–115 | Mini-proiect: totul în mișcare (**Exemplul 8**) |
 | 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `@keyframes nume { … }` | Rețeta animației: ce se schimbă | `from`, `to`, `50%` |
+| `animation: nume durată …;` | Pornește animația pe un element | `pulsare 2s infinite` |
+| `animation-delay` | Așteptare înainte de pornire | `0.5s` |
+| `animation-play-state: paused;` | Oprește animația pe loc | `:hover` |
+| `@media (prefers-reduced-motion: reduce)` | Oprește mișcarea la cerere | `animation: none;` |
 
 ---
 
@@ -38,10 +49,11 @@ Din lecția trecută ții minte că:
 - `transform` are `scale`, `rotate` și `translate`;
 - `:nth-child` alege elemente după poziție.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Creează folderul `Prenume_Nume_W3_L8` cu `index.html` (scheletul complet, legat la `stil.css`) și `stil.css`  
 - [ ] Pune `* { box-sizing: border-box; }` prima în `stil.css`  
 - [ ] Pune în `<body>` un `<h1>` și un `<button class="buton">Apasă aici</button>`  
+- [ ] Copiază în folder `tema.html`, `stil.css` și folderele `imagini` și `media` din lecția trecută  
 
 > De aici înainte, exemplele arată ce scrii în `<body>` și, separat, ce scrii în `stil.css`.
 
@@ -82,7 +94,20 @@ h1 {
 
 Reîncarcă pagina: titlul apare încet. **Numele din `animation-name` trebuie să fie identic** cu cel din `@keyframes`.
 
-### Exemplul 2 — Mai mulți pași, cu procente
+**Încearcă tu (5 min)**  
+- [ ] Fă titlul să apară încet, în 2 secunde  
+- [ ] Schimbă numele din `animation-name` cu o literă și vezi că nu mai pornește nimic  
+- [ ] În `tema.html`, fă titlul articolului să apară lin la încărcare  
+
+**Gata când:**  
+- [ ] Titlul apare încet la încărcarea paginii  
+- [ ] Numele din `animation-name` este identic cu cel din `@keyframes`  
+
+---
+
+## 3. Pași, procente și proprietăți
+
+### Exemplul 2 — Mai mulți pași și cum rulează animația
 
 Când ai mai mult de două stări, folosești **procente** în loc de `from` și `to`:
 
@@ -102,16 +127,7 @@ Când ai mai mult de două stări, folosești **procente** în loc de `from` și
 
 `0%` este începutul, `50%` mijlocul, `100%` sfârșitul. Aici elementul se mărește până la mijloc, apoi revine. Când începutul și sfârșitul sunt la fel, le poți scrie împreună: `0%, 100% { … }`.
 
-**Gata când:**  
-- [ ] Titlul apare încet la încărcarea paginii  
-- [ ] Numele din `animation-name` este identic cu cel din `@keyframes`  
-- [ ] Ai scris o animație cu trei pași (`0%`, `50%`, `100%`)  
-
----
-
-## 3. Proprietățile animației
-
-### Exemplul 3 — Cum rulează animația
+Cum rulează animația:
 
 ```css
 .buton {
@@ -145,16 +161,20 @@ Există și o **scurtătură** care le scrie pe toate într-o singură linie, î
 
 Primele două valori de timp sunt **durata** și apoi **întârzierea**. Nu trebuie să le scrii pe toate: `animation: pulsare 1.5s infinite;` este suficient.
 
-**Încearcă tu (6 min)**  
+**Încearcă tu (5 min)**  
+- [ ] Scrie o animație cu trei pași (`0%`, `50%`, `100%`)  
 - [ ] Fă butonul să pulseze la infinit cu `pulsare 1.5s infinite;`  
 - [ ] Schimbă durata la `0.5s`, apoi la `3s` și compară  
-- [ ] Adaugă `alternate` și vezi diferența  
+
+**Gata când:**  
+- [ ] Ai scris o animație cu trei pași  
+- [ ] Poți spune ce face `infinite` și ce face `alternate`  
 
 ---
 
 ## 4. Animații pe care le folosești des
 
-### Exemplul 4 — Pulsare (buton care cere atenție)
+### Exemplul 3 — Pulsare (buton care cere atenție)
 
 ```css
 @keyframes pulsare {
@@ -173,7 +193,12 @@ Primele două valori de timp sunt **durata** și apoi **întârzierea**. Nu treb
 
 Un buton care pulsează încet spune „apasă aici”. Pulsarea trebuie să fie **blândă** (de la 1 la 1,1), nu bruscă.
 
-### Exemplul 5 — Săritură (minge)
+**Încearcă tu (5 min)**  
+- [ ] Fă butonul să pulseze blând, de la 1 la 1,1  
+- [ ] Compară cu o pulsare bruscă (de la 1 la 1,5, în 0,3s): care obosește mai puțin?  
+- [ ] În `tema.html`, fă un buton „Citește mai departe” care pulsează blând  
+
+### Exemplul 4 — Săritură (minge)
 
 ```html
 <div class="teren">
@@ -207,7 +232,12 @@ Un buton care pulsează încet spune „apasă aici”. Pulsarea trebuie să fie
 
 Mingea urcă și coboară la nesfârșit. Terenul are o înălțime ca mingea să aibă loc. Observă că folosim `transform`, nu `top`: `transform` și `opacity` se animează cel mai lin, pentru că browserul le calculează ușor.
 
-### Exemplul 6 — Apariție la încărcare, una după alta
+**Încearcă tu (5 min)**  
+- [ ] Fă mingea să sară la nesfârșit într-un teren înalt de 150px  
+- [ ] Schimbă `translateY(100px)` în `160px` și vezi ce se întâmplă cu mingea  
+- [ ] Schimbă fel-ul în `linear`: cum sare acum?  
+
+### Exemplul 5 — Apariție la încărcare, una după alta
 
 ```html
 <p class="intrare">Primul rând</p>
@@ -242,7 +272,12 @@ Mingea urcă și coboară la nesfârșit. Terenul are o înălțime ca mingea s�
 
 Fiecare rând apare cu o mică întârziere față de cel dinainte, ca într-un spectacol. `:nth-of-type(2)` alege al doilea paragraf `p`, chiar dacă în pagină mai sunt și alte taguri (un titlu, un buton). `both` ține rândul **invizibil cât așteaptă** (starea de la `from`) și îl lasă vizibil la final. Fără `both`, rândurile ar sta vizibile în timpul așteptării și ar „sări” când pornește animația.
 
-### Exemplul 7 — Rotire (cerc de încărcare)
+**Încearcă tu (5 min)**  
+- [ ] Fă trei rânduri să apară unul după altul  
+- [ ] Scoate `both` din scurtătură și vezi cum „sar” rândurile la început  
+- [ ] În `tema.html`, fă capitolele să apară unul după altul, cu `animation-delay` diferit  
+
+### Exemplul 6 — Rotire (cerc de încărcare)
 
 ```html
 <div class="rotitor"></div>
@@ -267,6 +302,11 @@ Fiecare rând apare cu o mică întârziere față de cel dinainte, ca într-un 
 
 Un cerc cu o singură latură colorată, care se învârte, arată ca un indicator de încărcare. Folosim `linear`, ca viteza să fie egală, fără încetiniri. Observă că `from` lipsește: dacă îl omiți, animația pornește din starea normală a elementului.
 
+**Încearcă tu (5 min)**  
+- [ ] Fă un cerc care se învârte cu viteză egală  
+- [ ] Schimbă culoarea laturii colorate  
+- [ ] Schimbă `1s` în `3s`: ce indică acum?  
+
 **Gata când:**  
 - [ ] Butonul pulsează blând la infinit  
 - [ ] Mingea sare la nesfârșit în teren  
@@ -277,7 +317,7 @@ Un cerc cu o singură latură colorată, care se învârte, arată ca un indicat
 
 ## 5. Siguranță și control
 
-### Exemplul 8 — Pauză la `:hover`
+### Exemplul 7 — Pauză la `:hover` și respect pentru utilizator
 
 ```css
 .minge:hover {
@@ -286,8 +326,6 @@ Un cerc cu o singură latură colorată, care se învârte, arată ca un indicat
 ```
 
 `animation-play-state: paused;` oprește animația pe loc cât timp ții mouse-ul deasupra. Când pleci, își continuă mersul. E util când vrei ca un element care se mișcă să poată fi citit sau apăsat.
-
-### Exemplul 9 — Respectă dorința utilizatorului
 
 Unor oameni mișcarea de pe ecran le provoacă amețeală sau disconfort, așa că sistemul lor (telefon sau calculator) are o opțiune „redu mișcarea”. Pagina ta o poate respecta:
 
@@ -310,16 +348,20 @@ Regula din `@media (prefers-reduced-motion: reduce)` se aplică **numai** pentru
 3. **Infinit doar la ce are sens**: indicatori de încărcare, un buton important. Textul care se citește trebuie să stea nemișcat.  
 4. **Respectă `prefers-reduced-motion`.**
 
-**Încearcă tu (6 min)**  
+**Încearcă tu (5 min)**  
 - [ ] Oprește mingea la `:hover` cu `animation-play-state: paused;`  
 - [ ] Adaugă regula `@media (prefers-reduced-motion: reduce)` la sfârșitul fișierului  
-- [ ] Poți spune câte licăriri pe secundă sunt permise cel mult  
+- [ ] Adaugă regula și în `stil.css` de la `tema.html`, pentru animațiile de acolo  
+
+**Gata când:**  
+- [ ] Mingea se oprește la `:hover`  
+- [ ] Pagina are regula `prefers-reduced-motion` la sfârșit  
 
 ---
 
-## 6. Proiectul
+## 6. Mini-proiect
 
-### Exemplul 10 — „Pagina cu mișcare”
+### Exemplul 8 — „Totul în mișcare”
 
 Fișierul `index.html`:
 
@@ -329,12 +371,12 @@ Fișierul `index.html`:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pagina cu mișcare</title>
+  <title>Totul în mișcare</title>
   <link rel="stylesheet" href="stil.css">
 </head>
 <body>
   <main>
-    <h1 class="titlu">Pagina cu mișcare</h1>
+    <h1 class="titlu">Totul în mișcare</h1>
 
     <p class="intrare">Aici fiecare rând apare pe rând.</p>
     <p class="intrare">Animațiile pornesc singure, fără mouse.</p>
@@ -505,54 +547,44 @@ Fă pagina cu **un subiect ales de tine**. Păstrează animațiile blânde.
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Totul în mișcare”
 
-### Exercițiul A — „Pagina cu mișcare” (obligatoriu)
-Fă o pagină cu `index.html` și `stil.css`, cu:
-- `* { box-sizing: border-box; }` prima în `stil.css`;
-- **minimum 4 animații** diferite, fiecare cu propriul `@keyframes` (apariție, pulsare, săritură, rotire sau altele ale tale);
-- cel puțin una cu **procente** (`0%`, `50%`, `100%`) și cel puțin una cu `from` și `to`;
-- cel puțin o animație cu `animation-delay` și una cu `infinite`;
-- o pauză la `:hover` pe un element care se mișcă;
-- regula `@media (prefers-reduced-motion: reduce)` la sfârșit;
-- cel puțin două comentarii în CSS.
+### Minim vs Complet
 
-### Exercițiul B — Ce face regula?
-Spune ce se întâmplă: (1) `animation: pulsare 3s infinite;`; (2) `animation-iteration-count: 3;`; (3) `animation-direction: alternate;` la o animație care mută un element de la stânga la dreapta; (4) `animation-delay: 2s;` fără `animation-fill-mode`, la o animație care pornește cu `opacity: 0`.
+| | Ce trebuie |
+|--|------------|
+| **Minim** | Un buton care pulsează (se mărește și se micșorează) la infinit |
+| **Complet** | Minim + un titlu care apare lin, o minge care sare, un cerc care se învârte și o regulă care oprește animațiile la cererea utilizatorului |
 
-### Exercițiul C — Scrie regula
-Scrie în CSS: (1) o animație „clatină” care rotește un element de la `-5deg` la `5deg` și înapoi, la infinit, în 1 secundă; (2) o animație „culori” care schimbă `background-color` din roșu în galben și în verde, în 6 secunde; (3) o regulă care oprește animația `clatina` la `:hover`.
+### Pasul 1 — Minim
+Pe scheletul complet, legat la `stil.css`, fă un buton care pulsează blând la infinit.
 
-### Exercițiul D — Găsește greșelile
-Găsește **3 greșeli** în codul de mai jos și repară greșelile:
-
-```text
-@keyframe pulsare {
-  from { transform: scale(1); }
-  to   { transform: scale(1.2); }
-}
-
-.buton {
-  animation: pulseaza 2 infinite;
-}
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Într-un comentariu din cod: care este diferența dintre `transition` și `animation`? Câte licăriri pe secundă sunt permise cel mult? De ce respectăm `prefers-reduced-motion`?
-
-**Gata când:**  
 - [ ] Folderul `Prenume_Nume_W3_L8` are `index.html` și `stil.css`  
-- [ ] Pagina are cel puțin 4 animații, o pauză la `:hover` și regula pentru mișcare redusă  
-- [ ] Nicio animație nu licărește rapid  
-- [ ] Ai răspuns la exercițiile B–E  
+- [ ] Butonul pulsează la infinit, cu `@keyframes`  
+- [ ] Pagina se vede în browser, cu Live Server pornit  
+
+### Pasul 2 — Complet
+Îmbunătățești pagina:
+
+- [ ] Ai `* { box-sizing: border-box; }` prima în `stil.css`  
+- [ ] Ai **minimum 4 animații** diferite, fiecare cu propriul `@keyframes`  
+- [ ] Cel puțin una cu **procente** și cel puțin una cu `from` și `to`  
+- [ ] Cel puțin o animație cu `animation-delay` și una cu `infinite`  
+- [ ] Ai o pauză la `:hover` pe un element care se mișcă  
+- [ ] Ai regula `@media (prefers-reduced-motion: reduce)` la sfârșit  
+- [ ] Ai cel puțin două comentarii în CSS  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Articolul tău în mișcare
+*Doar dacă ai terminat Complet.*
+
+Faci `tema.html` să prindă viață, blând.
+
+- [ ] Pune în `tema.html` titlul care apare lin, capitolele care apar unul după altul și regula `prefers-reduced-motion` la sfârșit  
 - [ ] Fă un text care „bate” ca o inimă (`scale` rapid, dar blând, la 1,2s)  
 - [ ] Fă un nor care traversează ecranul de la stânga la dreapta (`translateX`) la infinit, încet  
 - [ ] Fă trei puncte care sar pe rând („se scrie un mesaj”), cu `animation-delay` diferit  
-- [ ] Combină `transform` și `opacity` în aceeași animație pentru un efect de „plutire”  
 
 ---
 
@@ -565,8 +597,6 @@ Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 6. **Ai pus `infinite` pe tot** — pagina obosește privirea.  
 7. **Ai animat `top` sau `width`** — merge, dar este mai greu pentru calculator; preferă `transform` și `opacity`.  
 8. **Ai uitat regula de mișcare redusă** sau ai pus regula la începutul fișierului, unde poate fi suprascrisă.  
-9. **Licăriri prea rapide** — mai mult de 3 pe secundă pot provoca disconfort.  
-10. **Ai scris două `transform` în același pas** — a doua înlocuiește prima; scrie ambele funcții într-un singur `transform`.  
 
 ---
 
@@ -586,7 +616,73 @@ Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 - Câte licăriri pe secundă sunt permise?
 
 ## Temă
-Fă o pagină „Povestea mea animată”: titlul apare lin, trei rânduri de text apar unul după altul, un personaj desenat din cutii sare, iar regula de mișcare redusă este la sfârșit. Salvează în `Prenume_Nume_W3_L8`.
+1. Fă o pagină „Povestea mea animată”: titlul apare lin, trei rânduri de text apar unul după altul, un personaj desenat din cutii sare, iar regula de mișcare redusă este la sfârșit. Salvează în `Prenume_Nume_W3_L8`.  
+2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
+3. **Exemple pentru acasă.** Încearcă amândouă:
+
+**Acasă 1 — Un text care se scrie singur.**
+
+```html
+<p class="scris">Salut, lume!</p>
+```
+
+```css
+@keyframes scrie {
+  from {
+    width: 0;
+  }
+  to {
+    width: 12ch;
+  }
+}
+
+.scris {
+  width: 12ch;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid navy;
+  animation: scrie 3s steps(12) both;
+}
+```
+
+Textul „Salut, lume!” (12 caractere) apare literă cu literă. `ch` este lățimea unui caracter, iar `steps(12)` face mișcarea în 12 pași, nu lină.
+
+**Acasă 2 — Fundal care se mișcă.**
+
+```css
+@keyframes culori {
+  0% { background-color: lightblue; }
+  50% { background-color: lightyellow; }
+  100% { background-color: lightblue; }
+}
+
+body {
+  animation: culori 10s ease-in-out infinite;
+}
+```
+
+O schimbare foarte lentă și blândă de culoare: este plăcută, nu obositoare.
+
+4. **Încă patru exerciții (B–E):**
+
+**B — Ce face regula?** Spune ce se întâmplă: (1) `animation: pulsare 3s infinite;`; (2) `animation-iteration-count: 3;`; (3) `animation-direction: alternate;` la o animație care mută un element de la stânga la dreapta; (4) `animation-delay: 2s;` fără `animation-fill-mode`, la o animație care pornește cu `opacity: 0`.
+
+**C — Scrie regula.** Scrie în CSS: (1) o animație „clatină” care rotește un element de la `-5deg` la `5deg` și înapoi, la infinit, în 1 secundă; (2) o animație „culori” care schimbă `background-color` din roșu în galben și în verde, în 6 secunde; (3) o regulă care oprește animația `clatina` la `:hover`.
+
+**D — Găsește greșelile.** Găsește **3 greșeli** în codul de mai jos și repară greșelile:
+
+```text
+@keyframe pulsare {
+  from { transform: scale(1); }
+  to   { transform: scale(1.2); }
+}
+
+.buton {
+  animation: pulseaza 2 infinite;
+}
+```
+
+**E — Explică cu cuvintele tale.** Într-un comentariu din cod: care este diferența dintre `transition` și `animation`? Câte licăriri pe secundă sunt permise cel mult? De ce respectăm `prefers-reduced-motion`?
 
 ## Ce urmează — Lecția 9
 Învățăm să facem pagina **să arate bine pe telefon**: `viewport`, unități relative, `@media` și carduri care se așază singure.
@@ -595,9 +691,9 @@ Fă o pagină „Povestea mea animată”: titlul apare lin, trei rânduri de te
 
 ## Răspunsuri
 - **Quiz scurt:** (1) rețeta (`@keyframes`, ce se schimbă) și pornirea (`animation`, pe ce element rulează); (2) animația se repetă la nesfârșit; (3) animația merge înainte, apoi înapoi, alternativ; (4) `transform` și `opacity`; (5) cel mult 3 pe secundă.  
-- **Dacă ritmul clasei este lent:** la proiect cereți minimum 2 animații.  
-- **Exercițiul B:** (1) animația `pulsare` rulează 3 secunde și se repetă la infinit; (2) animația rulează de 3 ori și se oprește; (3) elementul merge de la stânga la dreapta, apoi înapoi de la dreapta la stânga, alternativ; (4) în cele 2 secunde de așteptare elementul este vizibil (starea normală), apoi dispare brusc și apare lin (de aceea trebuie `both`).  
-- **Exercițiul C:** (1) `@keyframes clatina { 0%, 100% { transform: rotate(-5deg); } 50% { transform: rotate(5deg); } }` și `.element { animation: clatina 1s ease-in-out infinite; }`; (2) `@keyframes culori { 0% { background-color: red; } 50% { background-color: yellow; } 100% { background-color: green; } }` cu `animation: culori 6s infinite;`; (3) `.element:hover { animation-play-state: paused; }`.  
-- **Exercițiul D:** (1) `@keyframe` trebuie `@keyframes`; (2) numele `pulseaza` nu coincide cu `pulsare`; (3) `2` trebuie `2s`.  
-- **Exercițiul E:** `transition` are nevoie de o declanșare (hover, focus) și face o schimbare între două stări; `animation` pornește singură și poate avea mai mulți pași; cel mult 3 licăriri pe secundă; unii oameni sunt deranjați de mișcare, iar sistemul le permite să ceară mai puțină.  
-- **Notă pentru profesor:** la Exercițiul B (4) este bine să rulați exemplul pe proiector, cu și fără `both`. Insistați asupra regulii de siguranță: elevii adoră efectele rapide, iar licărirea rapidă poate fi periculoasă pentru copiii sensibili. Dacă un elev are probleme cu mișcarea de pe ecran, lăsați elevul să dezactiveze animațiile din setările sistemului și arătați cum reacționează pagina lui.
+- **Dacă ritmul clasei este lent:** la proiect cereți minimum 2 animații; Exemplul 6 (rotire) este opțional.  
+- **Tema, exercițiul B:** (1) animația `pulsare` rulează 3 secunde și se repetă la infinit; (2) animația rulează de 3 ori și se oprește; (3) elementul merge de la stânga la dreapta, apoi înapoi de la dreapta la stânga, alternativ; (4) în cele 2 secunde de așteptare elementul este vizibil (starea normală), apoi dispare brusc și apare lin (de aceea trebuie `both`).  
+- **Tema, exercițiul C:** (1) `@keyframes clatina { 0%, 100% { transform: rotate(-5deg); } 50% { transform: rotate(5deg); } }` și `.element { animation: clatina 1s ease-in-out infinite; }`; (2) `@keyframes culori { 0% { background-color: red; } 50% { background-color: yellow; } 100% { background-color: green; } }` cu `animation: culori 6s infinite;`; (3) `.element:hover { animation-play-state: paused; }`.  
+- **Tema, exercițiul D:** (1) `@keyframe` trebuie `@keyframes`; (2) numele `pulseaza` nu coincide cu `pulsare`; (3) `2` trebuie `2s`.  
+- **Tema, exercițiul E:** `transition` are nevoie de o declanșare (hover, focus) și face o schimbare între două stări; `animation` pornește singură și poate avea mai mulți pași; cel mult 3 licăriri pe secundă; unii oameni sunt deranjați de mișcare, iar sistemul le permite să ceară mai puțină.  
+- **Notă pentru profesor:** la exercițiul B (4) din temă este bine să rulați exemplul pe proiector, cu și fără `both`. Insistați asupra regulii de siguranță: elevii adoră efectele rapide, iar licărirea rapidă poate fi periculoasă pentru copiii sensibili. Dacă un elev are probleme cu mișcarea de pe ecran, lăsați elevul să dezactiveze animațiile din setările sistemului și arătați cum reacționează pagina lui.

@@ -1,0 +1,46 @@
+---
+description: Tiparul lecțiilor web (M1, M2, M3) și cuvinte de evitat. Citește când scrii sau modifici lecții în content/lectii/web.
+alwaysApply: false
+---
+
+# Tiparul lecțiilor web (`content/lectii/web/modulN/L<n>-*.md` și `.naratie.txt`)
+
+## Structura fișierului `.md`
+1. `# LECȚIA N — <nume proiect>` și dedesubt `### <tema lecției>`; apoi modulul și durata; apoi un citat cu descriere scurtă și „Proiect: **„…”** · folder: `Prenume_Nume_WN_LN`".
+2. `## Ce facem azi` (rezultatul final și de ce contează, scurt).
+3. `## Planul orei (120 minute)` — tabel pe minute (recapitulare ~15 min, exemplele, mini-proiect ~15 min, recap și temă 5 min).
+4. `## Instrucțiuni noi azi` — tabel (ce scriem / ce face / exemplu). La lecțiile de proiect final: se spune că nu sunt instrucțiuni noi.
+5. `## 1. Recapitulare rapidă` — 3–4 puncte + „Încearcă tu (≈8 min)” (creează folderul, scheletul, aduce `tema.html` și `imagini`/`media` din lecția trecută).
+6. Exact **8 exemple** (`### Exemplul N — …`), grupate în secțiuni numerotate. Fiecare exemplu are cod, explicație scurtă și `**Încearcă tu (≈6–10 min)**` cu 4 puncte, dintre care unul pe `tema.html` (firul Wikipedia). După grup: `**Gata când:**` cu puncte bifabile.
+7. **Exemplul 8** = pagina completă (în M3: `index.html` + `stil.css`). Firul Wikipedia NU intră aici.
+8. `## De făcut azi — „<proiect>”` cu tabelul Minim vs Complet, `### Pasul 1 — Minim`, `### Pasul 2 — Complet` (bife).
+9. `## Bonus ★★★ — Provocare: <nume>` — exact 4 puncte; firul Wikipedia apare aici (nu în Complet). Bonusul trebuie să fie de sine stătător (fără „vezi Acasă N”).
+10. `## Greșeli frecvente` (8), `## Recapitulare pe scurt` (6), `## Quiz scurt` (5 întrebări).
+11. `## Temă` — 1) proiect nou, 2) refă 4 exemple din 8, 3) „Acasă 1” și „Acasă 2” (exemple noi, mici, cu cod), 4) exercițiile B–E (ce face, scrie, găsește greșelile, explică).
+12. `## Ce urmează — Lecția N+1`, apoi `## Răspunsuri` (quiz, exercițiile din Temă, notă pentru profesor).
+
+## Firul Wikipedia
+Elevul își construiește pagina din Wikipedia pas cu pas: M1 `wikipedia.html` → `tema.html` (L10) → M2 `tema.html` (+ `intreaba.html`, `sondaj.html`, `tema.txt`) → M3 stilizată prin `stil.css`. Se lucrează doar în „Încearcă tu” și în Bonus, niciodată în Complet sau Exemplul 8. Text real, 3 paragrafe pe capitol, fără persoane în imagini.
+
+## Narațiile `.naratie.txt`
+- Limbaj vorbit, fără cifre și fără simboluri (`0-9 % # * _ ` / < > = + ( ) [ ] { }`); scrie „stil punct css”, „F doisprezece”, „Command, Option și I”.
+- Același traseu ca lecția: ce facem azi, instrucțiuni noi, pașii, de făcut azi, bonus, greșeli, temă, recapitulare. Bonus și Temă trebuie să corespundă cu fișierul `.md`.
+- Orice schimbare regenerează audio-ul: modifică narațiile doar când e nevoie.
+- M1 și M2 încep cu „Lecția …” și conțin titlul.
+
+## Reguli de conținut
+- Română simplă, pentru copii; fără „într-un caiet / pe hârtie” (se scrie „într-un comentariu”).
+- DevTools: `F12`; pe Mac `Cmd + Option + I`.
+- M2: „împreună cu un adult” (nu „profesor”, „școală”, „elev”). M3 păstrează „profesor” în notele pentru profesor.
+- Titlul din aplicație (`src/lib/mockData.ts`) = numele proiectului din titlul mare al lecției.
+- Fără `<`, `>`, `&times;` scrise în text explicativ (se folosesc cuvinte).
+- Commit și push doar după „da” explicit al utilizatorului.
+
+## Cuvinte și tipare de evitat (să nu se repete)
+- **„mea / meu / mele”** în titlurile lecțiilor: cel mult unul pe modul (acum M3 are prea multe: „Pagina mea…”, „Povestea mea…”, „Galeria mea…”). Preferă „Pagina cu…”, „Galeria de…”, „Clubul…”.
+- Același început de titlu la mai multe lecții („Pagina …” de mai mult de 2–3 ori pe modul).
+- „De ce contează” ca titlu separat (acum este inclus în „Ce facem azi”).
+- „Obiectiv” și „Proiect / exerciții de finalizat AZI” (titluri vechi; folosește „Ce facem azi” și „De făcut azi”).
+- „profesor”, „școală”, „elev” în textul pentru copii din M2.
+- Exemple de nume repetate în toate lecțiile (Pisica, Cățelul, Delfinul): variază subiectele între lecții.
+- Cuvinte decorative de umplutură: „super”, „minunat”, „perfect”.

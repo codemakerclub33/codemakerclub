@@ -1,19 +1,31 @@
-Lecția a noua din Modulul trei. Adaptare la telefon.
+Lecția nouă. Site-ul pe orice ecran: adaptare la telefon.
 
-Pagina ta arată bine pe calculator. Dar mulți oameni o vor deschide pe telefon, unde ecranul este mult mai îngust. O pagină bună se adaptează singură la orice ecran.
+Pagina ta arată bine pe calculator. Dar mulți oameni o vor deschide pe telefon, unde ecranul este mult mai îngust. O pagină bună se adaptează singură la orice ecran. Se numește design adaptiv.
 
-Obiectivul. Minim: o pagină cu viewport, o imagine care nu iese din ecran și o regulă media care schimbă ceva pe telefon. Complet: în plus un antet care trece în coloană, carduri care se așază singure, un titlu cu mărime adaptivă și testarea în DevTools.
+Ce facem azi. La final ai o pagină cu viewport, o coloană care se adaptează, imagini care nu ies din ecran, o galerie care își schimbă singură numărul de coloane și un antet care trece în coloană pe telefon. Mai mult de jumătate din vizitele pe site uri vin de pe telefon.
 
-Primul pas. Linia viewport din head spune telefonului să folosească lățimea reală a ecranului. Fără ea, telefonul micșorează toată pagina și textul nu se mai citește. Apoi folosești unități care se adaptează: procente, rem și vw. Pe coloana de conținut pui max width și margin zero auto, nu o lățime fixă, care ar scoate pagina din ecran. Imaginile primesc max width o sută la sută și height auto.
+Instrucțiuni noi azi. Eticheta viewport spune telefonului să folosească lățimea reală. Max width, procentele, rem și vw se adaptează la ecran. Imaginea cu max width o sută la sută nu iese din ecran. Media max width șase sute de pixeli aplică reguli doar pe ecrane mici. Auto fit cu minmax face o grilă care își schimbă singură coloanele. Clamp adaptează mărimea textului.
 
-Al doilea pas. At media max width șase sute de pixeli înseamnă: dacă fereastra are cel mult șase sute de pixeli, aplică și regulile dinăuntru. Scrii regula după celelalte, ca să le poată înlocui. Pe telefon antetul trece din rând în coloană, cu flex direction column.
+Primul pas. Viewport. Fără el, telefonul se preface că ecranul are nouă sute optzeci de pixeli și micșorează toată pagina. Verifică linia în head la fiecare pagină.
 
-Al treilea pas. Repeat auto fit minmax două sute douăzeci de pixeli, unu fr, face atâtea coloane câte încap, fără nicio regulă media. Clamp alege o mărime de text între un minim și un maxim, ca titlul să nu fie nici prea mare pe telefon, nici prea mic pe calculator.
+Al doilea pas. Unitățile fixe rămân la fel pe orice ecran, cele relative se adaptează. O coloană de conținut are max width, margin zero auto și padding, nu o lățime fixă. Imaginile primesc max width o sută la sută și height auto.
 
-Al patrulea pas. Testezi cu DevTools: apeși F12, apoi pictograma cu telefon și tabletă, și alegi un dispozitiv. Dacă apare derulare pe orizontală, ceva este prea lat. Pentru degete, butoanele au minimum patruzeci și patru de pixeli înălțime, cu spațiu între ele, iar textul principal nu coboară sub un rem. Nimic important nu stă doar la hover.
+Al treilea pas. Media. Dacă fereastra are cel mult șase sute de pixeli, se aplică și regulile dinăuntru. Regula se scrie după cele obișnuite, ca să le poată înlocui.
 
-Greșeli frecvente. Ai uitat viewport. Ai pus lățimi fixe mari. Ai scris max width șase sute fără px. Ai pus regula media înaintea celorlalte. Ai testat doar pe calculator.
+Al patrulea pas. Antetul. Pe calculator logoul este în stânga și meniul în dreapta. Pe telefon, elementele trec unul sub altul, iar meniul poate trece pe mai multe rânduri. În media schimbi doar ce trebuie.
 
-Tema. Echipa mea de fotbal, adaptată pentru telefon.
+Al cincilea pas. Auto fit cu minmax înseamnă atâtea coloane câte încap, fiecare de cel puțin două sute douăzeci de pixeli, fără nicio regulă media. Clamp alege o mărime care crește cu ecranul, dar nu coboară sub minim și nu trece de maxim.
 
-Recapitulare. Viewport, unități relative, imagini cu max width, regulă media, grilă auto fit și testare în DevTools. Succes!
+Al șaselea pas. Testarea. Deschizi DevTools și apeși pe pictograma cu telefon și tabletă. Pe Mac deschizi DevTools cu Command, Option și I. Verifici dacă apare derulare pe orizontală și dacă butoanele se apasă ușor.
+
+Al șaptelea pas. Reguli pentru degete. Butoane de cel puțin patruzeci și patru de pixeli, spațiu între ele, text de cel puțin un rem și nimic important doar la hover.
+
+De făcut azi. Minim: viewport, o imagine care nu iese din ecran și o regulă media. Complet: adaugi un antet care trece în coloană, carduri care se așază singure, un titlu cu clamp și testarea pe mai multe ecrane.
+
+Bonus. Articolul tău pe telefon. Faci pagina cu articolul de pe Wikipedia să se citească bine pe telefon: coloană îngustă, imagini adaptive, meniu în coloană și titlu cu clamp.
+
+Greșeli frecvente. Ai uitat viewport. Ai folosit lățimi fixe mari. Ai scris media fără px. Ai pus media înaintea celorlalte reguli. Imaginea iese din ecran. Butoanele sunt prea mici.
+
+Tema. Pagina echipei de fotbal, adaptată pentru telefon. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
+
+Recapitulare. Viewport, unități relative, media, grilă adaptivă și testare. Succes!
