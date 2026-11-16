@@ -19,7 +19,7 @@ La final ai pagina unui **club sportiv imaginar**, împărțită pe camere: ante
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pornim proiectul |
+| 0–15 | Recapitulare · pornim proiectul · aducem pagina cu articolul de pe Wikipedia |
 | 15–35 | Harta paginii · `header` · `nav` (**Exemplele 1–3**) |
 | 35–65 | `main` · `section` · `article` (**Exemplele 4–5**) |
 | 65–85 | `aside` · `footer` (**Exemplele 6–7**) |
@@ -48,9 +48,11 @@ La final ai pagina unui **club sportiv imaginar**, împărțită pe camere: ante
 - `<ul>` și `<li>` fac liste.  
 - Meniul este o linie de linkuri `<a>`.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Creează folderul `Prenume_Nume_W2_L8` și fișierul `index.html` cu scheletul complet  
 - [ ] Pune în `<body>` un `<h1>` „Clubul Fulgerul” și un paragraf scurt  
+- [ ] Copiază în folder pagina `tema.html` din lecția trecută, cu folderele `imagini` și `media`  
+- [ ] Desenează într-un comentariu harta paginii: ce e antet, ce e meniu, ce e conținut, ce e notă laterală și ce e subsol  
 
 > De aici înainte, exemplele arată doar ce scrii **în interiorul `<body>`**, dacă nu spunem altfel.
 
@@ -114,10 +116,12 @@ Majoritatea paginilor au aceleași părți:
 
 `<nav>` învelește **meniul principal**, adică linkurile spre părțile mari ale site-ului. Nu pui `<nav>` la orice grup de linkuri, ci doar la meniurile importante. Lista cu `<ul>` este bună pentru meniu, pentru că un meniu este o listă de linkuri.
 
-**Încearcă tu (6 min)**  
+**Încearcă tu (10 min)**  
 - [ ] Pune în pagină un `<header>` cu un `<h1>` și o propoziție  
 - [ ] Adaugă un `<nav>` cu cel puțin trei linkuri într-o listă  
 - [ ] Explică diferența dintre `<head>` și `<header>`  
+- [ ] În `tema.html`, pune titlul articolului într-un `<header>`, iar sub el un `<nav>` cu linkuri `#` spre capitole  
+- [ ] Pune `id` pe fiecare capitol, ca meniul să ducă la el  
 
 ---
 
@@ -166,10 +170,12 @@ Observă titlurile: `<h1>` în antet, `<h2>` pentru secțiune, `<h3>` pentru fie
 
 > Cum alegi între `section` și `article`? Dacă partea este „un capitol”, folosești `section`. Dacă este „o postare sau un card de sine stătător”, folosești `article`.
 
-**Încearcă tu (7 min)**  
+**Încearcă tu (11 min)**  
 - [ ] Pune în pagină un `<main>` cu două `<section>`, fiecare cu un `<h2>`  
 - [ ] Într-una dintre secțiuni, pune două `<article>`, fiecare cu un `<h3>` și un paragraf  
 - [ ] Verifică ordinea titlurilor: `h1` → `h2` → `h3`  
+- [ ] În `tema.html`, pune capitolele în `<main>`, fiecare într-un `<section>` cu `<h2>`  
+- [ ] Pune în fiecare `section` câte un `<article>` pentru fiecare idee mai mare  
 
 ---
 
@@ -197,10 +203,12 @@ Observă titlurile: `<h1>` în antet, `<h2>` pentru secțiune, `<h3>` pentru fie
 
 `<footer>` este **finalul paginii**: cine a făcut pagina, anul, câteva linkuri. Nu pune în el adresa, telefonul sau numele complet.
 
-**Încearcă tu (5 min)**  
+**Încearcă tu (9 min)**  
 - [ ] Adaugă un `<aside>` cu o curiozitate  
 - [ ] Adaugă un `<footer>` cu anul și prenumele tău (doar prenumele)  
 - [ ] Verifică ca meniul și subsolul să fie în afara lui `<main>`  
+- [ ] În `tema.html`, mută „Fișa pe scurt” într-un `<aside>` și pune sursa articolului într-un `<footer>`  
+- [ ] Verifică în DevTools dacă se vede arborele paginii: `header`, `nav`, `main`, `aside`, `footer`  
 
 ---
 
@@ -314,7 +322,7 @@ Fă pagina unui **club imaginar** (sport, jocuri, desen, muzică).
 *Doar dacă ai terminat Complet.*
 
 - [ ] Adaugă o a treia `<section>` „Programul” cu un tabel de antrenamente, ca în Lecția 2  
-- [ ] Transformă un site din Modulul 1 în varianta cu taguri cu înțeles  
+- [ ] Fă din `tema.html` o pagină cu toate tagurile cu înțeles, cu `figure` pentru imagini și `time` pentru ani  
 - [ ] Pune în `<aside>` o listă cu trei curiozități despre sportul tău  
 - [ ] Deschide DevTools și numără câte taguri cu înțeles are o pagină cunoscută (împreună cu un adult)  
 

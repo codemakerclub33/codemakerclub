@@ -19,7 +19,7 @@ La final ai un formular de **rezervare de bilete la un muzeu imaginar**, care nu
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pornim proiectul |
+| 0–15 | Recapitulare · pornim proiectul · aducem sondajul despre articol |
 | 15–35 | `required` · lungimi (**Exemplele 1–2**) |
 | 35–55 | Numere cu limite · `email` · `url` (**Exemplele 3–4**) |
 | 55–75 | `pattern` și `title` (**Exemplul 5**) |
@@ -48,8 +48,10 @@ La final ai un formular de **rezervare de bilete la un muzeu imaginar**, care nu
 - `value` este răspunsul păstrat.  
 - Nu cerem și nu scriem date personale.
 
-**Încearcă tu (3 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Creează folderul `Prenume_Nume_W2_L5` și fișierul `index.html` cu scheletul complet  
+- [ ] Copiază în folder pagina `sondaj.html` din lecția trecută  
+- [ ] Deschide-o cu Live Server, trimite-o goală și vezi ce se întâmplă: azi o facem să se apere singură  
 - [ ] Creează un `<h1>` și un formular cu o casetă de text, `name="porecla"`, o etichetă legată și un buton „Trimite”  
 
 > De aici înainte, exemplele arată doar ce scrii **în interiorul `<body>`**, iar la mini-proiect scriem pagina completă. Pentru fiecare exemplu, **încearcă să trimiți formularul greșit**, ca să vezi mesajul browserului.
@@ -84,10 +86,12 @@ Scrie 2 caractere și apasă „Trimite”: primești un mesaj. Scrie 10: caseta
 
 > Reține: parola e tot **de probă**. Nu scriem parole reale.
 
-**Încearcă tu (6 min)**  
+**Încearcă tu (9 min)**  
 - [ ] Adaugă un câmp cu `required` și încearcă să trimiți formularul gol  
 - [ ] Adaugă un câmp cu `minlength` și `maxlength` și testează valori prea scurte  
 - [ ] Explică ce se întâmplă când apeși „Trimite” cu un câmp obligatoriu gol  
+- [ ] În `sondaj.html`, pune `required` la întrebarea `radio` și la `select`  
+- [ ] Adaugă o casetă „Porecla” cu `required`, `minlength="3"` și `maxlength="15"`  
 
 ---
 
@@ -122,10 +126,12 @@ Scrie 2 caractere și apasă „Trimite”: primești un mesaj. Scrie 10: caseta
 
 > Browserul verifică **doar forma**, nu dacă adresa există. Pentru exerciții folosim adrese de probă cu `example.com`, nu adrese reale.
 
-**Încearcă tu (6 min)**  
+**Încearcă tu (9 min)**  
 - [ ] Adaugă un câmp `number` cu `min` și `max` și încearcă o valoare în afara limitelor  
 - [ ] Adaugă un câmp `email` și încearcă `ana` (fără `@`), apoi `ana@example.com`  
 - [ ] Adaugă un câmp `url` și încearcă o adresă fără `https://`  
+- [ ] În `sondaj.html`, pune o notă `number` între 1 și 10, cu `min` și `max`  
+- [ ] Adaugă „Adresa articolului” cu `type="url"` și verifică-o cu adresa de pe Wikipedia  
 
 ---
 
@@ -160,8 +166,9 @@ Alte exemple de `pattern`:
 
 > `pattern` este puternic, dar nu e nevoie să știi totul. În lecție folosim doar aceste forme simple.
 
-**Încearcă tu (5 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Adaugă un câmp cu `pattern` și cu `title` explicativ  
+- [ ] În `sondaj.html`, cere porecla cu `pattern` doar din litere, cu `title` care spune regula  
 - [ ] Încearcă un cod greșit (de exemplu `muz12` cu litere mici) și unul corect (`MUZ12`)  
 - [ ] Citește `pattern="[0-9]{4}"` cu cuvinte  
 
@@ -200,8 +207,9 @@ Alte exemple de `pattern`:
 - La `checkbox`, vizitatorul **trebuie să bifeze** căsuța ca să poată trimite.  
 - La `select`, prima opțiune trebuie să aibă `value=""`, ca browserul să înțeleagă că „-- alege --” nu este un răspuns.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Fă un grup `radio` cu `required` și o bifă `required`  
+- [ ] Încearcă să trimiți `sondaj.html` greșit în trei feluri și notează mesajele într-un comentariu  
 - [ ] Adaugă un `select` cu `required` și prima opțiune cu `value=""`  
 
 ---
@@ -316,7 +324,7 @@ Fă formularul unui **muzeu imaginar ales de tine** (de exemplu muzeul jocurilor
 - [ ] Adaugă `disabled` la o casetă și vezi ce face (caută „HTML disabled input”)  
 - [ ] Compară `disabled` cu `readonly` din Lecția 3: care valoare se trimite?  
 - [ ] Împreună cu un adult, deschide DevTools și șterge `required`: ce se întâmplă?  
-- [ ] Încearcă `type="search"` și vezi ce se schimbă  
+- [ ] Fă din `sondaj.html` un formular care nu se trimite dacă lipsește ceva: toate întrebările cu reguli, sursa într-un `<small>`  
 
 ---
 

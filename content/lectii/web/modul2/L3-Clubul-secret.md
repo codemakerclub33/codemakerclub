@@ -19,7 +19,7 @@ La final ai o pagină de **înscriere în clubul secret** al jocurilor: un formu
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pornim proiectul |
+| 0–15 | Recapitulare · pornim proiectul · pagina „Întreabă despre tema mea” |
 | 15–35 | `form` · `input` · `label` · `placeholder` (**Exemplele 1–3**) |
 | 35–60 | `name` · parola · `textarea` (**Exemplele 4–6**) |
 | 60–75 | Butoane (**Exemplul 7**) |
@@ -48,9 +48,12 @@ La final ai o pagină de **înscriere în clubul secret** al jocurilor: un formu
 - `thead`, `tbody`, `tfoot` împart tabelul.  
 - Tagurile se indentează cu 2 spații.
 
-**Încearcă tu (3 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Creează folderul `Prenume_Nume_W2_L3` și deschide folderul în VS Code  
 - [ ] Creează `index.html` cu scheletul complet și pornește Live Server  
+- [ ] Copiază în folder pagina `tema.html` din lecția trecută  
+- [ ] Creează o pagină nouă, `intreaba.html`, cu scheletul complet și un `<h1>` „Întreabă despre” urmat de numele articolului tău  
+- [ ] Pune în `tema.html` un link spre `intreaba.html`  
 
 > De aici înainte, exemplele arată doar ce scrii **în interiorul `<body>`**, dacă nu spunem altfel.
 
@@ -98,10 +101,12 @@ Valoarea din `for` din etichetă este **aceeași** cu `id` din casetă: `porecla
 
 `placeholder` („text-loc”) arată un exemplu gri în casetă, care dispare când scrii. Nu înlocuiește eticheta: eticheta rămâne mereu vizibilă.
 
-**Încearcă tu (6 min)**  
+**Încearcă tu (10 min)**  
 - [ ] Fă un formular cu o casetă de text și o etichetă legată prin `for` și `id`  
 - [ ] Verifică în Live Server că apăsarea pe etichetă pune cursorul în casetă  
 - [ ] Adaugă un `placeholder` care dă un exemplu  
+- [ ] În `intreaba.html`, fă un formular cu o casetă „Porecla ta” (nu numele tău real), cu etichetă și `placeholder`  
+- [ ] Verifică dacă `for` și `id` au aceeași valoare  
 
 ---
 
@@ -144,10 +149,12 @@ Pentru mesaje pe mai multe rânduri folosești `<textarea>`:
 - `rows="4"` înseamnă patru rânduri vizibile; `cols="30"` înseamnă 30 de caractere în lățime.  
 - `<textarea>` **are** tag de închidere. Ce scrii între taguri apare ca text de început.
 
-**Încearcă tu (6 min)**  
+**Încearcă tu (10 min)**  
 - [ ] Adaugă o a doua casetă de text cu `name` diferit  
 - [ ] Adaugă o casetă `password` cu o parolă de probă  
 - [ ] Adaugă un `<textarea>` cu `rows` și `cols`  
+- [ ] În `intreaba.html`, adaugă un `<textarea>` pentru „Întrebarea ta despre articol”, cu `name` și etichetă  
+- [ ] Adaugă o a doua casetă, „Ce ai vrea să afli?”, cu `name` diferit  
 
 ---
 
@@ -169,8 +176,10 @@ Pentru mesaje pe mai multe rânduri folosești `<textarea>`:
 
 Textul dintre `<button>` și `</button>` este ce apare pe buton.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (7 min)**  
 - [ ] Adaugă în formular un buton `submit` și unul `reset`  
+- [ ] În `intreaba.html`, pune butoanele „Trimite întrebarea” și „Șterge tot”  
+- [ ] Trimite formularul și citește în bara de adrese ce s-a trimis  
 - [ ] Scrie ceva în casete, apasă „Șterge tot” și vezi ce se întâmplă  
 
 ---
@@ -272,7 +281,7 @@ Fă `index.html` cu un `<h1>` și un formular pentru **un club imaginar ales de 
 Faci un formular mai bogat și mai ordonat.
 
 - [ ] Adaugă un titlu mic cu `<h2>` pentru fiecare grup de întrebări (de exemplu „Despre tine” și „Despre club”)  
-- [ ] Încearcă `<input type="text" size="40">` și vezi cum se schimbă lățimea  
+- [ ] Fă din `intreaba.html` un formular cu două grupuri, „Despre tine” (porecla) și „Despre articol” (două întrebări), cu sursa articolului într-un `<small>`  
 - [ ] Adaugă o casetă `<input type="text" value="Ninja">` și explică ce face `value`  
 - [ ] Deschide DevTools (**F12**; pe Mac Cmd + Option + I), fila **Elements**, și caută formularul: vezi cum este legată eticheta de casetă  
 

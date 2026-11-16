@@ -16,7 +16,7 @@ Al patrulea pas. Mini-proiect. Id este pentru un singur element special, iar cla
 
 De făcut azi. Minim: trei cutii cu aceeași clasă, stilate printr-o singură regulă. Complet: adaugi un span cu clasă, un id pe titlul principal cu regulă proprie, o carte cu două clase și explici într-un comentariu diferența dintre id și class.
 
-Bonus. Colecția cu grupuri. Adaugi o clasă pentru cărțile obișnuite, o cutie care conține toate cărțile, un link către titlu și schimbi regula direct în DevTools.
+Bonus. Colecția cu grupuri. Adaugi o clasă pentru cărțile obișnuite, o cutie care conține toate cărțile, pagina ta de pe Wikipedia cu aspect comun și schimbi regula direct în DevTools.
 
 Greșeli frecvente. Ai scris numele clasei fără punct. Ai folosit semnul diez pentru o clasă. Același id de două ori. Nume cu spații sau diacritice. Ai uitat punct și virgula. Style pus în body. Div acolo unde exista un tag cu înțeles. Clase separate cu virgulă.
 

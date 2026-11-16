@@ -18,7 +18,7 @@ Al cincilea pas. Programul turneului. Faci un tabel cu ora pe rânduri și teren
 
 De făcut azi. Minim: un tabel de program cu o celulă unită pe orizontală și una unită pe verticală. Complet: adaugi thead și tbody, antet colorat, cel puțin trei terenuri și cinci ore, și un al doilea tabel cu tfoot și totalul calculat corect.
 
-Bonus. Scorul turneului. Faci un tabel pentru patru echipe și trei runde, cu total, aliniezi cifrele la dreapta, faci un antet unit pe două niveluri și adaugi programului sâmbăta și duminica.
+Bonus. Scorul turneului. Faci un tabel pentru patru echipe și trei runde, cu total, aliniezi cifrele la dreapta, faci un antet unit pe două niveluri și faci din cronologia ta de pe Wikipedia un tabel cu cel puțin opt rânduri.
 
 Greșeli frecvente. Ai numărat greșit coloanele. Ai uitat să scoți celula ocupată de rowspan. Ai scris colspan fără ghilimele. Ai lăsat rânduri în afara lui thead, tbody sau tfoot. Ai adunat greșit totalul.
 

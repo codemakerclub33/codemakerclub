@@ -17,7 +17,7 @@ La final ai o pagină cu **două tabele**: orarul unei zile de weekend (ore, act
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare Modulul 1 · pornim proiectul |
+| 0–15 | Recapitulare Modulul 1 · pornim proiectul · aducem pagina cu articolul de pe Wikipedia |
 | 15–35 | Primul tabel: `table`, `tr`, `td` (**Exemplele 1–2**) |
 | 35–55 | Antetul `th` și titlul `caption` (**Exemplele 3–4**) |
 | 55–70 | Liniile tabelului (**Exemplul 5**) |
@@ -48,10 +48,13 @@ Din Modulul 1 ții minte că:
 - ultimul tag deschis se închide primul;
 - codul se indentează cu 2 spații pentru fiecare nivel.
 
-**Încearcă tu (3 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Creează folderul `Prenume_Nume_W2_L1` și deschide-l în VS Code  
 - [ ] Creează `index.html` cu scheletul complet scris de tine  
 - [ ] Pornește Live Server și verifică pagina  
+- [ ] Copiază în folder pagina `tema.html` din Modulul 1 (articolul tău de pe Wikipedia) și deschide-o cu Live Server  
+- [ ] Deschide articolul pe Wikipedia și uită-te la **căsuța din dreapta sus** (fișa pe scurt): are date ca anul, locul sau mărimea  
+- [ ] Alege din ea 4–5 date; azi le vei pune într-un tabel  
 
 > De aici înainte, exemplele arată doar ce scrii **în interiorul `<body>`**, dacă nu spunem altfel.
 
@@ -102,9 +105,11 @@ Dacă deschizi exemplul, vezi text aranjat pe rânduri, **fără linii**. Este n
 
 > **Ordinea tagurilor:** `table` conține `tr`, iar `tr` conține `td`. Nu pune niciodată `td` direct în `table` și nu uita să închizi fiecare tag.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Scrie tabelul din Exemplul 2, dar cu două sporturi sau jocuri alese de tine  
 - [ ] Verifică în Live Server că ambele rânduri au același număr de celule  
+- [ ] În `tema.html`, sub titlu, fă un tabel cu două rânduri: o dată din articol și valoarea ei  
+- [ ] Verifică dacă fiecare rând are două celule `td`  
 
 ---
 
@@ -154,9 +159,11 @@ Regulă: `<th>` pentru **titlurile** de coloană, `<td>` pentru **date**.
 
 `<caption>` („legendă”) se scrie **imediat după `<table>`**, înaintea primului rând. Browserul îl afișează deasupra tabelului, iar cine citește pagina știe despre ce este tabelul.
 
-**Încearcă tu (5 min)**  
+**Încearcă tu (10 min)**  
 - [ ] Fă un tabel cu antet (`th`), 3 coloane și 3 rânduri de date  
 - [ ] Adaugă un titlu cu `<caption>` imediat după `<table>`  
+- [ ] Transformă tabelul din `tema.html` în „Fișa pe scurt”: un antet cu două coloane („Ce” și „Valoare”) și 4–5 rânduri cu datele alese  
+- [ ] Pune ca `<caption>` numele articolului tău  
 
 ---
 
@@ -185,9 +192,10 @@ Pune bucata în **`<head>`**, nu în `<body>`. Salvează și vei vedea liniile p
 
 > Poți schimba culoarea: `border: 1px solid navy;`. Poți colora antetul: adaugă în aceeași bucată `th { background-color: lightblue; }`.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (6 min)**  
 - [ ] Adaugă bucata `<style>` în `<head>` și verifică liniile  
 - [ ] Schimbă culoarea liniilor din `black` în altă culoare  
+- [ ] Pune aceeași regulă în `tema.html` și verifică dacă „Fișa pe scurt” are linii  
 
 ---
 
@@ -247,9 +255,12 @@ O celulă poate conține orice ai învățat deja:
 
 > **Siguranță:** linkurile le alegi doar împreună cu un adult, iar imaginile sunt desenele sau pozele aprobate (fără persoane).
 
-**Încearcă tu (6 min)**  
+**Încearcă tu (10 min)**  
 - [ ] Fă un clasament cu trei elemente, cu antet și un cuvânt îngroșat într-o celulă  
 - [ ] Pune într-o celulă un link sau o imagine  
+- [ ] În „Fișa pe scurt”, pune într-o celulă un link spre articolul de pe Wikipedia  
+- [ ] Îngroașă cea mai importantă valoare din fișă  
+- [ ] Verifică dacă tabelul încape în pagină și dacă textul se citește  
 
 ---
 
@@ -374,7 +385,7 @@ Faci un tabel care se citește foarte ușor.
 
 - [ ] Fă tabelul înmulțirii cu 2: două coloane (`2 × 1`, `2 × 2` și așa mai departe) și 10 rânduri  
 - [ ] Schimbă culoarea antetului cu `th { background-color: lightblue; }`  
-- [ ] Fă un tabel „Sporturi” cu coloanele Sport, Minge și Unde se joacă  
+- [ ] Adaugă în `tema.html` un al doilea tabel, o comparație între două lucruri din articol (de exemplu două animale sau două locuri), cu 4 rânduri  
 - [ ] Deschide DevTools (**F12**; pe Mac Cmd + Option + I), fila **Elements**, și deschide pe rând `table`, `tr` și `td` ca să vezi structura  
 
 ---

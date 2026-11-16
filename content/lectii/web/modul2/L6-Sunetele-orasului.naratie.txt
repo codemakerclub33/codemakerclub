@@ -16,7 +16,7 @@ Al patrulea pas. Mini-proiect. Un tabel cu antet, cu sunetul fiecărui loc, poza
 
 De făcut azi. Minim: o pagină cu un sunet și un film, amândouă cu butoane. Complet: un tabel cu cel puțin trei sunete cu poză, poster la film, descrieri și fișiere scurte, alese cu grijă.
 
-Bonus. Ghidul sonor. Înregistrezi un sunet fără voci, adaugi subtitrări împreună cu un adult, o coloană cu legende și compari dimensiunile fișierelor în DevTools.
+Bonus. Ghidul sonor. Înregistrezi un sunet fără voci, adaugi subtitrări împreună cu un adult, un tabel cu media din pagina ta de pe Wikipedia și compari dimensiunile fișierelor în DevTools.
 
 Greșeli frecvente. Nume cu spații sau diacritice. Lipsește controls. Fișierul nu este în folderul din src. Autoplay cu sunet. Fișiere foarte mari. Melodii luate din internet. Ai uitat descrierea.
 

@@ -18,7 +18,7 @@ Al cincilea pas. Mini-proiect. Validarea din browser este ca un portar politicos
 
 De făcut azi. Minim: un câmp obligatoriu, un câmp text cu lungime limitată și un câmp numeric cu limite. Complet: adaugi email, pattern cu title, o alegere obligatorie, o bifă obligatorie, un select obligatoriu și notezi cinci greșeli de completare.
 
-Bonus. Biletul cu surprize. Încerci un câmp dezactivat, îl compari cu unul doar pentru citire, cauți required în DevTools împreună cu un adult și încerci tipul search.
+Bonus. Biletul cu surprize. Încerci un câmp dezactivat, îl compari cu unul doar pentru citire, cauți required în DevTools împreună cu un adult și faci sondajul tău să nu se trimită dacă lipsește ceva.
 
 Greșeli frecvente. Ai uitat required. Minlength mai mare decât maxlength. Min mai mare decât max. Ai uitat title la pattern. La select, prima opțiune nu are value gol. Required la toate casetele radio. Ai crezut că email verifică dacă adresa există.
 

@@ -19,7 +19,7 @@ La final ai o pagină de **vot** pentru sportul preferat, cu butoane rotunde, c�
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pornim proiectul |
+| 0–15 | Recapitulare · pornim proiectul · pagina „Sondaj despre tema mea” |
 | 15–35 | `radio`: o singură alegere (**Exemplele 1–2**) |
 | 35–55 | `checkbox`: mai multe alegeri (**Exemplul 3**) |
 | 55–70 | `select`: lista de alegere (**Exemplul 4**) |
@@ -50,9 +50,12 @@ La final ai o pagină de **vot** pentru sportul preferat, cu butoane rotunde, c�
 - La trimitere, datele apar în adresa paginii, după `?`.  
 - Nu scriem date personale în formularele de exercițiu.
 
-**Încearcă tu (3 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Creează folderul `Prenume_Nume_W2_L4` și fișierul `index.html` cu scheletul complet  
 - [ ] Creează în `<body>` un `<h1>` și un formular gol (`<form></form>`)  
+- [ ] Copiază în folder pagina `intreaba.html` din lecția trecută și redenumește-o `sondaj.html`  
+- [ ] Schimbă `<h1>` în „Sondaj despre” și numele articolului tău de pe Wikipedia  
+- [ ] Scrie pe o listă 3 întrebări pe care le-ai pune unui coleg despre tema ta  
 
 > De aici înainte, exemplele arată doar ce scrii **în interiorul `<body>`**, dacă nu spunem altfel.
 
@@ -94,10 +97,11 @@ Dacă vrei o variantă aleasă de la început, adaugi `checked`:
 
 Pune `checked` **la o singură variantă** dintr-un grup.
 
-**Încearcă tu (6 min)**  
+**Încearcă tu (9 min)**  
 - [ ] Fă o întrebare cu cel puțin trei variante `radio`, toate cu același `name`  
 - [ ] Fiecare variantă are `id`, `value` și etichetă legată  
 - [ ] Verifică în Live Server că poți alege doar una  
+- [ ] În `sondaj.html`, pune o întrebare `radio` despre articolul tău: „Cât de interesant ți s-a părut?”, cu trei variante  
 
 ---
 
@@ -128,10 +132,11 @@ Bifezi oricâte vrei. La trimitere, fiecare variantă bifată apare în adresă:
 | `name` | același pentru tot grupul | poate fi același |
 | Când îl folosești | „Ce sport preferi?” | „Ce îți place la sport?” |
 
-**Încearcă tu (5 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Adaugă o întrebare cu `checkbox` cu trei variante  
 - [ ] Bifează două variante și apasă pe un buton de trimitere  
 - [ ] Citește în adresă ce s-a trimis  
+- [ ] În `sondaj.html`, adaugă „Ce părți ți-au plăcut?” cu `checkbox`: textul, imaginile, tabelul, cronologia  
 
 ---
 
@@ -157,9 +162,10 @@ Bifezi oricâte vrei. La trimitere, fiecare variantă bifată apare în adresă:
 
 `select` este bun când ai **multe** variante (zile, luni, orașe) și nu vrei să ocupi mult loc.
 
-**Încearcă tu (5 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Fă o întrebare cu `select` și cel puțin patru opțiuni  
 - [ ] Pune `selected` la una dintre opțiuni  
+- [ ] În `sondaj.html`, adaugă „Capitolul tău preferat” cu `select`, cu capitolele din articol ca opțiuni  
 
 ---
 
@@ -206,9 +212,10 @@ Grupezi întrebările legate între ele într-un chenar:
 | `color` | o paletă de culori |
 | `range` | un cursor care se mută între `min` și `max` |
 
-**Încearcă tu (5 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Grupează o întrebare cu `fieldset` și `legend`  
 - [ ] Folosește cel puțin două dintre `number`, `color` și `range`  
+- [ ] În `sondaj.html`, grupează întrebările în două `fieldset`-uri și pune un `range` de la 1 la 10 pentru nota articolului  
 
 ---
 
@@ -328,8 +335,8 @@ Fă un vot despre **un subiect ales de tine** (sporturi, jocuri, mâncare, oraș
 
 - [ ] Adaugă la `select` atributul `multiple` și vezi cum se schimbă lista  
 - [ ] Fă o întrebare cu `range` între 0 și 100, cu `step="10"`  
-- [ ] Adaugă `<datalist>`: o casetă de text care sugerează variante (caută „HTML datalist” împreună cu un adult)  
 - [ ] Adaugă o a patra întrebare `radio` și verifică din nou rezultatele din adresă  
+- [ ] Fă `sondaj.html` un sondaj complet despre articol: 6 întrebări, două grupuri, buton de trimitere și sursa într-un `<small>`  
 
 ---
 

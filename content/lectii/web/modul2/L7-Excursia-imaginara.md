@@ -19,7 +19,7 @@ La final ai o pagină de **excursie într-un oraș**: o hartă a unui loc public
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pornim proiectul |
+| 0–15 | Recapitulare · pornim proiectul · aducem pagina cu articolul de pe Wikipedia |
 | 15–35 | Primul iframe: propria pagină (**Exemplele 1–2**) |
 | 35–60 | O hartă (**Exemplele 3–4**) |
 | 60–80 | Un film încorporat (**Exemplul 5**) |
@@ -48,9 +48,11 @@ La final ai o pagină de **excursie într-un oraș**: o hartă a unui loc public
 - Folosim doar materiale permise.  
 - Nu punem date personale în pagini.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Creează folderul `Prenume_Nume_W2_L7` și fișierul `index.html` cu scheletul complet  
 - [ ] Creează în același folder și `despre.html`, cu scheletul complet, un `<h1>` și un paragraf scurt  
+- [ ] Copiază în folder pagina `tema.html` din lecția trecută, împreună cu folderele `imagini` și `media`  
+- [ ] Caută în articolul tău de pe Wikipedia **un loc**: unde trăiește animalul, orașul, țara, stadionul  
 
 > De aici înainte, exemplele arată doar ce scrii **în interiorul `<body>`**, dacă nu spunem altfel.
 
@@ -85,9 +87,11 @@ Implicit, browserul desenează o ramă subțire. Poți schimba rama cu `style`:
 
 Pentru fără ramă: `style="border: none;"`. Culoarea și grosimea le alegi ca la tabel.
 
-**Încearcă tu (5 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Pune în `index.html` un iframe către `despre.html`, cu `width`, `height` și `title`  
 - [ ] Schimbă rama cu `style`  
+- [ ] Pune în `index.html` un iframe către `tema.html`, cu `title`, și derulează-l  
+- [ ] Compară cum se vede pagina într-un iframe mic și într-unul mare  
 
 ---
 
@@ -122,10 +126,11 @@ Dacă nu vezi opțiunea, folosește harta din Exemplul 3 și schimbă doar `titl
 
 > **Nu pune harta casei tale.** Harta arată oricui exact unde este locul.
 
-**Încearcă tu (8 min)**  
+**Încearcă tu (11 min)**  
 - [ ] Pune în pagina ta harta din Exemplul 3 cu un `title` potrivit  
 - [ ] Alege împreună cu un adult un loc public și pune harta lui în pagină  
 - [ ] Verifică în Live Server că harta se vede  
+- [ ] În `tema.html`, adaugă o secțiune „Unde se află” cu harta locului din articol (un loc public sau o regiune, nu o adresă de acasă)  
 
 ---
 
@@ -149,9 +154,10 @@ Site-urile cu filme dau un cod de încorporare. Forma lui este:
 
 **Filmul îl alege un adult** (un film potrivit pentru copii, de la un canal verificat). Înlocuiește `ID_VIDEO` cu al lui și scrie un `title` care spune ce film este.
 
-**Încearcă tu (6 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Pune un film încorporat (ales de un adult) în aceeași pagină cu harta  
 - [ ] Verifică ca fiecare iframe să aibă `title` care descrie conținutul  
+- [ ] Scrie sub hartă o propoziție din articol despre acel loc  
 
 ---
 
@@ -177,9 +183,10 @@ Uneori iframe-ul arată doar un spațiu gol sau mesajul „refused to connect”
 
 Nu este vina ta când un site refuză. Alege alt site sau ia codul de „încorporare” oficial, dacă există.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (6 min)**  
 - [ ] Adaugă `loading="lazy"` la harta ta  
 - [ ] Scrie într-un comentariu 5 reguli de siguranță pentru iframe-uri, cu cuvintele tale  
+- [ ] Pune `loading="lazy"` și la celelalte iframe-uri din `tema.html`  
 
 ---
 
@@ -261,7 +268,7 @@ Fă pagina pentru **un oraș ales de tine**, cu un loc public.
 ## Bonus ★★★ — Provocare: Excursia în două locuri
 *Doar dacă ai terminat Complet.*
 
-- [ ] Pune în pagină iframe-uri către alte două pagini ale tale, cu rame diferite  
+- [ ] Fă din `tema.html` o pagină cu hartă și film despre articol, cu fiecare iframe cu `title`, `loading` și o descriere  
 - [ ] Pune două hărți ale unor locuri publice, una lângă alta (împreună cu un adult)  
 - [ ] Caută „HTML iframe sandbox” și citește împreună cu un adult ce face  
 - [ ] Deschide DevTools, fila **Elements**, și găsește iframe-ul: vezi că în interior este o pagină întreagă  

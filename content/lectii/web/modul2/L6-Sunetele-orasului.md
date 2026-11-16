@@ -19,7 +19,7 @@ La final ai o pagină cu **sunetele unui oraș**: tramvaiul, clopotele și ploai
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pornim proiectul · pregătim folderul `media` |
+| 0–15 | Recapitulare · pornim proiectul · pregătim folderul `media` · sunet pentru articol |
 | 15–35 | `<audio>` și `controls` (**Exemplele 1–3**) |
 | 35–60 | `<video>`, `width`, `poster` (**Exemplele 4–6**) |
 | 60–80 | Formate, foldere și text pentru toți (**Exemplul 7**) |
@@ -47,9 +47,12 @@ La final ai o pagină cu **sunetele unui oraș**: tramvaiul, clopotele și ploai
 - `../` înseamnă „un folder mai sus”.  
 - Numele fișierelor: litere mici, fără spații, fără diacritice.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (10 min)**  
 - [ ] Creează folderul `Prenume_Nume_W2_L6`, cu fișierul `index.html` (schelet complet) și folderul `media`  
 - [ ] Pune în `media` fișierele din pachetul media (sau ale tale)  
+- [ ] Copiază în folder pagina `tema.html` din lecția 2 (cu cronologia) și folderul `imagini`  
+- [ ] Caută **împreună cu un adult**, în articol sau pe Wikimedia Commons, un sunet sau un film scurt legat de tema ta, cu licență liberă  
+- [ ] Salvează-l în `media`, cu un nume simplu, și notează în `tema.txt` de unde e  
 
 > De aici înainte, exemplele arată doar ce scrii **în interiorul `<body>`**, dacă nu spunem altfel.
 
@@ -99,10 +102,11 @@ Acum merge și un singur fișier mp3 în aproape orice browser. Cu mai multe sur
 
 > Regula noastră: **nu folosim `autoplay` cu sunet**. Lasă vizitatorul să apese.
 
-**Încearcă tu (6 min)**  
+**Încearcă tu (9 min)**  
 - [ ] Pune un sunet în pagină, cu `controls`, și pornește-l  
 - [ ] Încearcă varianta fără `controls` și vezi ce se întâmplă  
 - [ ] Explică de ce nu folosim `autoplay` cu sunet  
+- [ ] Adaugă în `tema.html`, la sfârșit, sunetul găsit, cu `controls` și un text de rezervă  
 
 ---
 
@@ -138,10 +142,11 @@ Dacă filmul nu are sunet și vrei să se repete ca un desen animat în fundal:
 
 Folosește asta **rar**: o mișcare continuă poate obosi sau deranja pe unii vizitatori. Când pui `autoplay`, pune și `controls`, ca vizitatorul să poată opri filmul.
 
-**Încearcă tu (7 min)**  
+**Încearcă tu (9 min)**  
 - [ ] Pune în pagină un film cu `controls` și `width`  
 - [ ] Adaugă un `poster` cu o imagine din folderul `imagini`  
 - [ ] Încearcă `width="200"` și `width="600"` ca să vezi diferența  
+- [ ] Dacă ai găsit un film, pune-l în `tema.html`, cu `controls`, `width` și o imagine `poster` din articol  
 
 ---
 
@@ -192,9 +197,10 @@ Din `index.html`, calea este `media/tramvai.mp3`. Dacă pagina ar fi într-un su
 
 La filmele cu voce, un **text cu ce se spune** (o transcriere) ajută foarte mult. Subtitrările le lăsăm pentru bonus.
 
-**Încearcă tu (5 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Verifică în folder că numele fișierelor au litere mici, fără spații  
 - [ ] Adaugă o descriere scurtă sub sunetul tău  
+- [ ] Scrie sub sunet și sursa: „Sunet: …, de pe Wikimedia Commons”  
 - [ ] Verifică mărimea fișierelor și folosește unele scurte  
 
 ---
@@ -306,7 +312,7 @@ Fă o pagină despre **sunetele unui oraș ales de tine** (sau ale orașului tă
 
 - [ ] Înregistrează cu telefonul un sunet fără voci (ploaia, un instrument, vântul) și pune-l în pagină  
 - [ ] Caută „HTML track subtitles” și, împreună cu un adult, adaugă subtitrări unui film  
-- [ ] Adaugă în tabel o coloană cu o legendă pentru fiecare sunet  
+- [ ] Fă în `tema.html` un tabel „Media” cu două sunete sau filme, cu coloane pentru nume, descriere și sursă  
 - [ ] Deschide DevTools, fila **Network**, reîncarcă pagina și vezi cât de mari sunt fișierele audio și video  
 
 ---

@@ -18,7 +18,7 @@ Al cincilea pas. Orarul de weekend. Pui totul într-o pagină: titlul, un tabel 
 
 De făcut azi. Minim: un tabel de orar cu trei coloane, patru rânduri de date, antet și linii vizibile. Complet: adaugi un titlu cu caption, un al doilea tabel cu clasamentul, un cuvânt îngroșat și o celulă cu link sau imagine.
 
-Bonus. Tabelul înmulțirii. Faci tabelul înmulțirii cu doi, colorezi antetul, faci un tabel cu sporturi și deschizi tabelul în DevTools.
+Bonus. Tabelul înmulțirii. Faci tabelul înmulțirii cu doi, colorezi antetul, adaugi pe pagina ta de pe Wikipedia o comparație între două lucruri și deschizi tabelul în DevTools.
 
 Greșeli frecvente. Ai pus td direct în table. Rândurile au număr diferit de celule. Ai uitat să închizi un tag. Ai pus caption la sfârșit. Ai pus style în body. Ai folosit td pentru titluri. Ai folosit un tabel doar ca să aranjezi pagina, deși tabelele sunt pentru date.
 

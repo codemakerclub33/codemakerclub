@@ -17,7 +17,7 @@ La final ai o pagină cu **programul unui turneu sportiv**, pe terenuri și pe o
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pornim proiectul |
+| 0–15 | Recapitulare · pornim proiectul · aducem pagina cu articolul de pe Wikipedia |
 | 15–35 | `colspan`: celule unite pe orizontală (**Exemplele 1–2**) |
 | 35–55 | `rowspan`: celule unite pe verticală (**Exemplele 3–4**) |
 | 55–75 | `thead`, `tbody`, `tfoot` · `scope` (**Exemplele 5–6**) |
@@ -47,8 +47,10 @@ La final ai o pagină cu **programul unui turneu sportiv**, pe terenuri și pe o
 - Liniile apar prin regula din `<head>`.  
 - Toate rândurile aveau același număr de celule. Azi vedem cum se poate schimba.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Creează folderul `Prenume_Nume_W2_L2` și fișierul `index.html` cu scheletul complet  
+- [ ] Copiază în folder pagina `tema.html` din lecția trecută (cu „Fișa pe scurt”)  
+- [ ] Caută în articolul tău de pe Wikipedia 5–6 **ani sau date importante** (nașteri, descoperiri, schimbări): azi le pui într-o cronologie  
 - [ ] Copiază în `<head>` regula pentru linii din lecția trecută:  
 
 ```html
@@ -96,9 +98,11 @@ Tabelul are 3 coloane. În ultimul rând sunt două celule, dar a doua are `cols
 
 Antetul „Goluri” se întinde pe două coloane și are sub el „Meci 1” și „Meci 2”. „Echipa” se întinde pe două rânduri (vezi secțiunea următoare).
 
-**Încearcă tu (5 min)**  
+**Încearcă tu (9 min)**  
 - [ ] Fă un tabel cu 3 coloane și o celulă `colspan="2"` într-un rând  
 - [ ] Verifică în fiecare rând că suma coloanelor este 3  
+- [ ] În `tema.html`, fă un tabel „Cronologie” cu două coloane (An și Ce s-a întâmplat), cu un antet unit cu `colspan="2"` peste ele  
+- [ ] Verifică dacă fiecare rând de date are exact două celule  
 
 ---
 
@@ -132,8 +136,9 @@ La `rowspan`, rândul de sub celula unită are cu **o celulă mai puțin**. Un t
 
 Primul rând are 3 celule (A, B, C). În al doilea, A ocupă încă prima coloană, deci mai scrii doar D și E. Total: tot 3 coloane în fiecare rând.
 
-**Încearcă tu (6 min)**  
+**Încearcă tu (10 min)**  
 - [ ] Fă un tabel cu o celulă `rowspan="2"`  
+- [ ] În cronologie, adaugă o coloană „Perioada” și unește, cu `rowspan`, două evenimente din aceeași perioadă  
 - [ ] Fă în pagină un tabel cu 3 coloane și 3 rânduri, în care o celulă ocupă 2 rânduri, și scrie într-un comentariu câte celule are fiecare rând  
 
 ---
@@ -188,9 +193,11 @@ Atributul `scope` spune ce acoperă o celulă `<th>`:
 
 Un copil care folosește un cititor de ecran aude „Fotbal, Jucători, 11”, nu doar „11”.
 
-**Încearcă tu (6 min)**  
+**Încearcă tu (10 min)**  
 - [ ] Fă un tabel cu `thead`, `tbody` și `tfoot`, cu totalul calculat corect  
 - [ ] Folosește `scope="col"` și `scope="row"` într-un tabel  
+- [ ] Împarte cronologia din `tema.html` în `thead` și `tbody`, iar în `tfoot` scrie câte evenimente are  
+- [ ] Pune `scope` pe antete  
 
 ---
 
@@ -221,9 +228,10 @@ Antetele vor avea fundal albastru deschis. Pentru cifre, e mai frumos să stea l
 
 > Numerele aliniate la dreapta se compară mai ușor, pentru că cifrele sunt una sub alta.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (7 min)**  
 - [ ] Colorează antetele cu regula `th` din exemplu  
 - [ ] Aliniază la dreapta cifrele dintr-un tabel  
+- [ ] În cronologie, aliniază anii la dreapta și colorează antetul cu o culoare care se potrivește temei  
 
 ---
 
@@ -308,7 +316,7 @@ Faci un tabel de scoruri ca la televizor.
 - [ ] Fă un tabel pentru un turneu cu 4 echipe și 3 runde, cu total pe fiecare echipă  
 - [ ] Pune `style="text-align: right;"` pe toate celulele cu numere  
 - [ ] Fă un antet unit pe două niveluri, ca în Exemplul 2, pentru un alt subiect  
-- [ ] Adaugă programului zilele sâmbătă și duminică, ca două tabele cu `<caption>`  
+- [ ] Fă din cronologia ta de pe Wikipedia un tabel cu cel puțin 8 rânduri, cu perioade unite, `thead`, `tbody` și `tfoot`  
 
 ---
 

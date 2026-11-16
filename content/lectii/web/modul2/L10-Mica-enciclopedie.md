@@ -11,7 +11,7 @@
 ## Ce facem azi
 La final ai o **pagină de enciclopedie** scrisă de tine, cu antet și meniu, o secțiune de prezentare, o fișă în tabel, un sunet, un sondaj cu formular, o hartă și o notă „Știai că…”. Nu învățăm taguri noi: **reiei lecțiile 1–9** și le aduni într-o pagină, folosind tagurile cu înțeles și clasele. Un proiect adevărat te obligă să folosești lucrurile învățate **împreună**: dacă o parte nu merge, vezi imediat. Este și un bun portofoliu, o pagină pe care o poți arăta familiei.
 
-> **Siguranță înainte de toate:** alegi un **oraș**, un **sport** sau un **joc**, nu o persoană. Nu scrii date personale (nume complet, adresă, telefon). Imaginile, sunetele și filmele sunt **din pachetul media**, făcute de tine sau alese cu un adult; nu folosim melodii și poze luate din internet, iar în poze nu apar persoane. Formularul este **de exercițiu**: nu trimite nimic și nu cere parole sau date reale. Harta este a unui **loc public** (un parc, un muzeu, o piață).
+> **Siguranță înainte de toate:** alegi un **oraș**, un **sport**, un **joc** sau **tema ta de pe Wikipedia** (dacă nu e o persoană). Nu scrii date personale (nume complet, adresă, telefon). Imaginile, sunetele și filmele sunt **din pachetul media**, făcute de tine sau alese cu un adult; nu folosim melodii și poze luate din internet, iar în poze nu apar persoane. Formularul este **de exercițiu**: nu trimite nimic și nu cere parole sau date reale. Harta este a unui **loc public** (un parc, un muzeu, o piață).
 
 ---
 
@@ -66,7 +66,8 @@ footer
 Scrie sub fiecare parte ce vei pune în ea. Alege 3–4 culori care se potrivesc. În exemple folosim orașul **București**; tu înlocuiești cu subiectul tău (pentru un sport sau un joc, harta poate arăta locul unde se joacă, iar sunetul poate fi al mingii sau al jocului).
 
 **Încearcă tu (8 min)**  
-- [ ] Alege subiectul și scrie-l într-un comentariu  
+- [ ] Alege subiectul și scrie-l într-un comentariu (poate fi articolul tău de pe Wikipedia, dacă nu e despre o persoană)  
+- [ ] Deschide în VS Code pagina `tema.html` din lecțiile trecute: de acolo poți copia text, tabel, hartă și sondaj  
 - [ ] Scrie într-un comentariu harta paginii, cu tagurile potrivite  
 - [ ] Notează într-un comentariu 4 lucruri despre subiect (ce este, unde se găsește, un lucru cunoscut, un lucru ciudat)  
 - [ ] Creează în folderul proiectului folderele `imagini` și `media` și pune în ele fișierele de care ai nevoie  
@@ -294,10 +295,11 @@ Formularul este **de exercițiu**: nu cere date personale. `required` și `maxle
 
 Harta se pune **doar împreună cu un adult**, pentru un loc public. Subsolul (`footer`) este deja în schelet, după `</main>`.
 
-**Încearcă tu (20 min)**  
-- [ ] Fă secțiunea „Despre” cu text și imagine cu `alt`  
+**Încearcă tu (25 min)**  
+- [ ] Fă secțiunea „Despre” cu text și imagine cu `alt` (poți folosi paragrafele din `tema.html`)  
 - [ ] Fă tabelul cu cel puțin 4 rânduri de date verificate, cu `caption`, `thead`, `tbody`  
 - [ ] Adaugă un sunet sau un film cu `controls` și o descriere  
+- [ ] Pune la sfârșit sursa articolului de pe Wikipedia într-un `<small>`  
 - [ ] Adaugă formularul de sondaj cu `fieldset`, `legend`, `label` și butoane  
 - [ ] Adaugă harta, `aside` și verifică meniul: fiecare link duce la un `id`  
 

@@ -16,7 +16,7 @@ Al patrulea pas. Mini-proiect. Punem toate camerele laolaltă în pagina clubulu
 
 De făcut azi. Minim: header, nav, main și footer. Complet: adaugi cel puțin două secțiuni, două articole, o notă laterală, titluri în ordine și explici într-un comentariu diferența dintre head și header.
 
-Bonus. Camera cu program. Adaugi o secțiune cu un tabel de antrenamente, transformi un site din Modulul unu și pui curiozități în aside.
+Bonus. Camera cu program. Adaugi o secțiune cu un tabel de antrenamente, faci pagina ta de pe Wikipedia cu toate tagurile cu înțeles și pui curiozități în aside.
 
 Greșeli frecvente. Ai confundat head cu header. Ai pus două main. Ai pus meniul sau finalul în main. Section fără titlu. Ai sărit peste niveluri de titluri. Nav la orice grup de linkuri. Date personale în footer.
 

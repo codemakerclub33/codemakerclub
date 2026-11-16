@@ -18,7 +18,7 @@ Al cincilea pas. Mini-proiect. Pagina excursiei are titluri, o hartă, o listă,
 
 De făcut azi. Minim: un iframe către o altă pagină a ta și unul către o hartă. Complet: adaugi un film ales de un adult, încărcare leneșă, title la fiecare iframe și cinci reguli de siguranță.
 
-Bonus. Excursia în două locuri. Pui alte două pagini ale tale cu rame diferite, două hărți una lângă alta, citești despre sandbox și cauți iframe-ul în DevTools.
+Bonus. Excursia în două locuri. Faci pagina ta de pe Wikipedia cu hartă și film, fiecare cu titlu, două hărți una lângă alta, citești despre sandbox și cauți iframe-ul în DevTools.
 
 Greșeli frecvente. Nu ai scris title. Ai uitat închiderea iframe-ului. Hartă cu casa ta. Site care nu permite iframe. Adresă greșită. Dimensiuni prea mici. Cod copiat dintr-un loc necunoscut. Prea multe iframe-uri.
 

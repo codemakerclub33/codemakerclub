@@ -18,7 +18,7 @@ Al cincilea pas. Votul complet. Pentru una din mai multe variante folosim radio 
 
 De făcut azi. Minim: o întrebare cu radio, una cu checkbox și una cu select. Complet: adaugi grupuri, un câmp special, o variantă aleasă de la început, butoanele de trimitere și de ștergere, și notezi răspunsurile din adresă.
 
-Bonus. Votul cu sugestii. Încerci lista cu alegere multiplă, un cursor cu pași și lista de sugestii.
+Bonus. Votul cu sugestii. Încerci lista cu alegere multiplă, un cursor cu pași și faci un sondaj complet despre articolul tău de pe Wikipedia.
 
 Greșeli frecvente. Radio cu nume diferit. Același id la mai multe casete. Lipsește value. Checked pe mai multe variante. Legend care nu este primul în fieldset. Etichete nelegate. Date personale cerute.
 

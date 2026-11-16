@@ -17,7 +17,7 @@ La final ai o pagină cu **cărți de colecție** despre jocurile preferate: fie
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pornim proiectul |
+| 0–15 | Recapitulare · pornim proiectul · aducem pagina cu articolul de pe Wikipedia |
 | 15–35 | `div` și `span` (**Exemplele 1–2**) |
 | 35–55 | `id` (**Exemplul 3**) |
 | 55–80 | `class` · reguli cu `.` și `#` (**Exemplele 4–6**) |
@@ -46,9 +46,11 @@ La final ai o pagină cu **cărți de colecție** despre jocurile preferate: fie
 - Regula de stil: `proprietate: valoare;`.  
 - Linkurile spre o parte a paginii se fac cu `#id`.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Creează folderul `Prenume_Nume_W2_L9` și fișierul `index.html` cu scheletul complet  
 - [ ] Pune în `<body>` un `<h1>` „Cărțile de colecție”  
+- [ ] Copiază în folder pagina `tema.html` din lecția trecută (cu taguri cu înțeles), împreună cu folderele `imagini` și `media`  
+- [ ] Numără în ea câte secțiuni și articole sunt: vor deveni „cărți” cu aspect comun  
 
 > De aici înainte, exemplele arată doar ce scrii **în interiorul `<body>`**, iar regulile de stil se scriu într-un `<style>` din `<head>`, dacă nu spunem altfel.
 
@@ -98,10 +100,11 @@ Diferența față de `div`:
 | Se folosește | pentru grupuri de lucruri (titlu + text + imagine) | pentru **o parte din text** |
 | Se așază | pe rând nou | în interiorul rândului |
 
-**Încearcă tu (5 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Pune un `<div>` care grupează un titlu și un paragraf  
 - [ ] Dă cutiei un chenar cu `style`  
 - [ ] Explică diferența dintre `<div>` și `<span>`  
+- [ ] În `tema.html`, pune cu `<span>` cuvintele importante din paragrafe, ca să le poți colora  
 
 ---
 
@@ -132,9 +135,10 @@ Regula `#sah { … }` se aplică **doar** elementului cu `id="sah"`.
 
 > Fiecare `id` apare **o singură dată** într-o pagină, ca numărul de pe tricoul unui jucător: nu există doi jucători cu același număr în echipă.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (7 min)**  
 - [ ] Pune un `id` pe un titlu și fă un link către el cu `#`  
 - [ ] Scrie în `<style>` o regulă cu `#` pentru acel `id`  
+- [ ] Pune în `tema.html` un `id` pe titlul principal și un link „↑ Înapoi sus” care duce la el  
 
 ---
 
@@ -221,10 +225,13 @@ Un element poate avea **mai multe clase**, separate prin spațiu:
 
 Cutia primește stilul cărții **și** fundalul auriu al cărții rare.
 
-**Încearcă tu (8 min)**  
+**Încearcă tu (14 min)**  
 - [ ] Fă trei `<div>`-uri cu `class="carte"` și o singură regulă `.carte` în `<style>`  
 - [ ] Schimbă o culoare în regulă și verifică în Live Server că se schimbă la toate trei  
 - [ ] Adaugă un `<span class="important">` într-un paragraf  
+- [ ] În `tema.html`, pune `class="carte"` pe fiecare capitol și scrie o singură regulă `.carte`, cu chenar, colțuri rotunjite și spațiu  
+- [ ] Schimbă o culoare în regulă și verifică dacă se schimbă toate capitolele  
+- [ ] Pune `class="important"` pe cuvintele importante și dă-le o culoare  
 
 ---
 
@@ -340,7 +347,7 @@ Fă cărți de colecție despre **jocurile tale preferate** (sau despre sporturi
 
 - [ ] Adaugă o clasă `.comuna` cu un alt fundal și folosește clasa la două cărți  
 - [ ] Fă un `<div class="grup">` care conține toate cărțile și dă cutiei un chenar  
-- [ ] Adaugă un link în meniu către `#titlu-pagina`  
+- [ ] Fă din `tema.html` o pagină cu aspect comun: `.carte` pe capitole, `.important` pe cuvinte, `id` pe secțiuni și meniu care duce la ele  
 - [ ] Schimbă în DevTools, în panoul de stil, culoarea regulii `.carte` și vezi cum se schimbă toate cărțile (schimbarea e doar temporară)  
 
 ---
