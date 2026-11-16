@@ -1,10 +1,10 @@
-# LECȚIA 6 — Lampa mea colorată
+# LECȚIA 6 — Lampa colorată
 ### LED RGB: amestecul culorilor
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 
 > Azi amesteci **lumină roșie, verde și albastră** ca să obții orice culoare cu un **LED RGB**.  
-> Proiect: **„Lampa mea colorată”** · `Prenume_Nume_A1_L06`
+> Proiect: **„Lampa colorată”** · `Prenume_Nume_A1_L06`
 
 ---
 
@@ -167,7 +167,7 @@ Rotește pe rând: vezi cum apar **portocaliul**, **roz-ul**, **turcoazul**.
 
 ---
 
-## De făcut azi — „Lampa mea colorată”
+## De făcut azi — „Lampa colorată”
 
 ### Minim vs Complet
 

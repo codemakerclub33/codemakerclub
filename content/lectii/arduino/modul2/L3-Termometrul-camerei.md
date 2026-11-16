@@ -1,15 +1,15 @@
-# LECȚIA 3 — Termometrul meu
+# LECȚIA 3 — Termometrul camerei
 ### TMP36, formula în grade și un termostat de seră
 **Modulul 2 · Senzori**  
 **Code Maker Club · Sensor Scout**
 
 > Azi citești **temperatura** cu senzorul **TMP36** și o transformi în **grade Celsius**.  
-> Proiect: **„Termometrul meu”** · `Prenume_Nume_A2_L03`
+> Proiect: **„Termometrul camerei”** · `Prenume_Nume_A2_L03`
 
 ---
 
 ## Ce facem azi
-La finalul orei ai **două proiecte**: **Termometrul meu** (temperatura în Serial Monitor, în °C și °F) și **Termostatul de seră** (3 LED-uri care arată dacă e prea frig, bine sau prea cald). Temperatura e cea mai folosită măsurătoare: termostate, frigidere, sere, vreme. Azi vezi cum o **tensiune** devine **grade**, pas cu pas.
+La finalul orei ai **două proiecte**: **Termometrul camerei** (temperatura în Serial Monitor, în °C și °F) și **Termostatul de seră** (3 LED-uri care arată dacă e prea frig, bine sau prea cald). Temperatura e cea mai folosită măsurătoare: termostate, frigidere, sere, vreme. Azi vezi cum o **tensiune** devine **grade**, pas cu pas.
 
 ---
 
@@ -24,7 +24,7 @@ La finalul orei ai **două proiecte**: **Termometrul meu** (temperatura în Seri
 | 75–110 | **Proiectul 2** · termostat de seră |
 | 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme |
 
-**Componente azi:** Arduino Uno · Breadboard · **Temperature Sensor [TMP36]** · 3 × LED (albastru, verde, roșu) · 3 × Resistor 220 Ω · fire
+**Componente azi:** Arduino Uno · Breadboard · **Temperature Sensor [TMP36]** · 3 × LED (albastru, verde, roșu) · 3 × Resistor 220 Ω · Piezo (doar la Bonus) · fire
 
 ---
 
@@ -258,7 +258,7 @@ Apoi, în `loop()`, după ce ai citit `c`:
 
 ---
 
-## De făcut azi — „Termometrul meu”
+## De făcut azi — „Termometrul camerei”
 
 ### Minim vs Complet
 
@@ -284,14 +284,14 @@ Apoi, în `loop()`, după ce ai citit `c`:
 
 ---
 
-## Bonus ★★★ — Provocare: Trendul temperaturii
+## Bonus ★★★ — Provocare: Trendul temperaturii cu bip
 *Doar dacă ai terminat Proiectul 2.*
 
-Termometrul spune și **încotro merge** temperatura.
+Termometrul spune și **încotro merge** temperatura. **Piesă nouă:** un buzzer pe pin 8 și GND.
 
 - [ ] La fiecare secundă compari temperatura cu cea precedentă și scrii **urcă** (peste 0,5 °C mai mult), **scade** (peste 0,5 °C mai puțin) sau **stabil**  
-- [ ] Testezi cu glisorul TMP36 la 0, 25 și 37 °C: temperatura afișată diferă de valoarea reală cu cel mult **1 °C**  
-- [ ] Muți glisorul și verifici că trendul se schimbă: **urcă**, apoi **stabil**, apoi **scade**
+- [ ] Buzzerul face un bip scurt doar în clipa în care trendul devine „urcă”, nu la fiecare secundă  
+- [ ] Testezi cu glisorul TMP36 la 0, 25 și 37 °C (diferență de cel mult **1 °C** față de valoarea reală) și verifici succesiunea **urcă → stabil → scade**  
 
 ## Recapitulare pe scurt
 1. TMP36: 10 mV pe grad, decalare 0,5 V  

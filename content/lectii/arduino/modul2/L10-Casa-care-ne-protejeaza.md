@@ -9,7 +9,7 @@
 ---
 
 ## Ce facem azi
-La finalul orei ai **două proiecte** în aceeași casă: **Casa protejată** (lampă automată, alarmă armabilă, alertă de căldură și raport) și o **Lampă inteligentă**, care se aprinde doar când e întuneric **și** e mișcare. Mai adaugi o **întârziere de ieșire** pentru alarmă și un LED verde „totul e în regulă”.
+La finalul orei ai **două proiecte** în aceeași casă: **Casa protejată** (lampă automată, alarmă armabilă, alertă de căldură și raport) și o **casă cu timp de plecare**: alarma are **întârziere de ieșire** de 5 secunde, iar un LED verde îți spune că „totul e în regulă”.
 
 ---
 
@@ -20,11 +20,11 @@ La finalul orei ai **două proiecte** în aceeași casă: **Casa protejată** (l
 | 0–10 | Recap L1–L9 · ce senzori știm |
 | 10–25 | Planul: 3 sisteme într-o casă |
 | 25–65 | **Proiectul 1** · Casa protejată (lampă, alarmă, termostat, raport) |
-| 65–100 | **Proiectul 2** · întârziere de ieșire, LED verde și lampă inteligentă |
+| 65–100 | **Proiectul 2** · întârziere de ieșire și LED verde |
 | 100–110 | Scenarii de test |
 | 110–120 | Verificare finală Modul 2, galerie · **Bonus ★★★** |
 
-**Componente azi:** Arduino Uno · Breadboard · Photoresistor · Resistor 10 kΩ · PIR · TMP36 · Pushbutton · 3 × LED · **LED verde** · 4 × Resistor 220 Ω · Piezo · fire
+**Componente azi:** Arduino Uno · Breadboard · Photoresistor · Resistor 10 kΩ · PIR · TMP36 · Pushbutton · 3 × LED · **LED verde** · 4 × Resistor 220 Ω · Piezo · Potentiometer (doar la Bonus) · fire
 
 ---
 
@@ -255,7 +255,7 @@ Apeleaz-o în `loop()`, după `termostat();`:
 |--|------------|
 | **Minim** | Lampa automată + alarma armabilă |
 | **Complet** | Minim + alertă de căldură + raport la 2 secunde |
-| **Proiectul 2** | Întârziere de ieșire de 5 secunde + LED verde „totul e în regulă” + lampă inteligentă |
+| **Proiectul 2** | Întârziere de ieșire de 5 secunde + LED verde „totul e în regulă” |
 
 ### Pasul 1 — Minim
 - [ ] Lampa funcționează  
@@ -279,14 +279,14 @@ Apeleaz-o în `loop()`, după `termostat();`:
 
 ---
 
-## Bonus ★★★ — Provocare: Lampa inteligentă
+## Bonus ★★★ — Provocare: Lampa inteligentă cu timp reglabil
 *Doar dacă ai terminat Proiectul 2.*
 
-O lampă care se aprinde doar când are motiv.
+O lampă care se aprinde doar când are motiv. **Piesă nouă:** un potențiometru (mijloc la **A2**) care reglează cât timp rămâne aprinsă.
 
 - [ ] Lampa se aprinde doar când e **întuneric ȘI e mișcare**  
-- [ ] Rămâne aprinsă încă **10 secunde** după ultima mișcare (cu `millis()`), apoi se stinge  
-- [ ] Testezi: cu lumină și mișcare lampa e stinsă; la întuneric fără mișcare e stinsă; la întuneric cu mișcare se aprinde; după **10 secunde** fără mișcare se stinge (între 10 și 11 secunde)
+- [ ] Rămâne aprinsă după ultima mișcare între **5 și 30 de secunde**, reglat din potențiometru (cu `map` și `millis()`)  
+- [ ] Testezi: cu lumină și mișcare lampa e stinsă; la întuneric fără mișcare e stinsă; la întuneric cu mișcare se aprinde; cu potențiometrul la minim se stinge după ~5 secunde, la maxim după ~30  
 
 ## Recapitulare pe scurt
 1. Împarte proiectul în **funcții**  

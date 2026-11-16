@@ -1,25 +1,35 @@
 Lecția zece din Modulul trei. Telecomanda magică.
 
-Astăzi, la proiectul modulului, controlezi LED-uri de la distanță cu o telecomandă cu infraroșu, ca la televizor. Proiectul se numește Telecomanda mea. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zece.
+Astăzi, la proiectul modulului, controlezi LED-uri de la distanță cu o telecomandă cu infraroșu, ca la televizor. Proiectul se numește Telecomanda magică. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zece.
 
-Obiectivul. La final comanzi lumini cu o telecomandă I R. Minim: trei butoane ale telecomenzii aprind și sting trei LED-uri. Complet: minim, plus un buton Power care stinge totul și butoane de volum, plus și minus, care schimbă luminozitatea unui al patrulea LED.
+Ce facem azi. La final ai două proiecte: Telecomanda magică, cu trei butoane care comută trei LED-uri, un buton Power care stinge totul și butoane de volum care schimbă luminozitatea, și o încuietoare cu telecomandă, care se deschide doar dacă apeși butoanele în ordinea secretă. Telecomenzile de televizor, aerul condiționat și boxele folosesc infraroșu: un LED trimite impulsuri de lumină invizibilă, iar un receptor le transformă în coduri. Azi citești și folosești aceste coduri.
 
-De ce contează. Telecomenzile de televizor, aerul condiționat și boxele folosesc infraroșu: un LED trimite impulsuri de lumină invizibilă, iar un receptor le transformă în coduri. Azi citești și folosești aceste coduri.
+Instrucțiuni noi azi. Obiectul I R recv creează receptorul pe un pin, iar enable I R In îl pornește. Decode este adevărat când a sosit un cod. Value este codul, iar resume pregătește receptorul pentru următorul. Funcția comută inversează un LED. Un tablou de coduri și o poziție dau o secvență secretă.
 
-Primul pas. Conexiuni. Receptorul I R are semnalul la pinul unsprezece, alimentarea la cinci volți și GND. LED-urile au rezistoare.
+Primul pas. Conexiuni. Receptorul I R are semnalul la pinul unsprezece, alimentarea la cinci volți și GND. LED-urile sunt la pinii patru, cinci, șase și nouă, fiecare cu rezistor. Telecomanda din Tinkercad nu se conectează la nimic: o selectezi, o ții spre receptor și apeși butoanele cu mouse-ul.
 
-Al doilea pas. Cum merge. Fiecare buton trimite un cod numeric unic, în hexazecimal. Receptorul primește codul, iar biblioteca I R remote îl decodează.
+Al doilea pas. Cum merge. Fiecare buton trimite un cod numeric unic, în hexazecimal. Receptorul primește codul, iar biblioteca I R remote îl decodează. Tu compari codul primit cu cele pe care le cunoști și decizi ce faci.
 
-Al treilea pas. Aflăm codurile. Orice telecomandă are alte coduri, deci mai întâi le citim și le afișăm în Serial Monitor. După fiecare cod apelezi resume, ca receptorul să asculte din nou.
+Al treilea pas. Aflăm codurile. Orice telecomandă are alte coduri, deci mai întâi le citim și le afișăm în Serial Monitor. După fiecare cod apelezi resume, ca receptorul să asculte din nou. Notezi codurile în tabel.
 
-Al patrulea pas. Minim. Pui codurile tale în locul celor din exemplu. Când primești codul primului buton, comuți primul LED, adică îl aprinzi dacă era stins și invers. O funcție, comută, face asta pentru oricare LED.
+Al patrulea pas. Minim. Pui codurile tale în locul celor din exemplu. Când primești codul primului buton, comuți primul LED, adică îl aprinzi dacă era stins și invers. Funcția comută face asta pentru oricare LED.
 
-Al cincilea pas, pentru Complet. Butonul Power stinge toate LED-urile. Volum plus și volum minus cresc sau scad luminozitatea celui de al patrulea LED, cu analog Write.
+Al cincilea pas, pentru Complet. Butonul Power stinge toate LED-urile. Volum plus și volum minus cresc sau scad luminozitatea celui de al patrulea LED, cu Analog Write.
 
-Greșeli frecvente. Nu primești nimic: lipsește pornirea receptorului sau pinul nu este unsprezece. Primești un singur buton: ai uitat resume. Butoanele nu fac nimic: codurile din program nu sunt ale telecomenzii tale, deci citește-le cu primul pas. LED-ul clipește la ținut apăsat: vezi codul de repetare, F F F F F F F F, și îl ignori. Eroare la include: în Tinkercad biblioteca este inclusă, dar pe un Arduino real trebuie instalată, iar versiunile noi au alte comenzi.
+Al șaselea pas. Proiectul doi, încuietoarea cu telecomandă. Ca la seif, dar fără tastatură: încuietoarea se deschide doar dacă apeși trei butoane în ordinea secretă. Un buton greșit la orice pas anulează tot și aprinde LED-ul roșu. Codurile secrete stau într-un tablou, iar o variabilă, poziția, ține minte cât din secvență ai nimerit. La butonul așteptat, poziția crește. Când ajunge la trei, se aprinde LED-ul verde. Codul de repetare, F F F F F F F F, apare când ții un buton apăsat, deci îl ignori, ca să nu fie luat drept greșeală.
 
-Proiectul de azi. Telecomanda mea. Minim înseamnă trei LED-uri comandate. Complet înseamnă Power și luminozitate.
+Al șaptelea pas. Testul încuietorii. Trei, unu, doi: LED verde. Trei, unu, trei: LED roșu. Unu, trei, unu, doi: roșu la primul buton, apoi începi de la zero. Alegi apoi propria ta secvență secretă, schimbând ordinea din tablou.
 
-Recapitulare. Fiecare buton I R are un cod. Citește mai întâi codurile, apoi folosește-le. Resume după fiecare cod. Funcția comută inversează un LED.
+Greșeli frecvente. Nu primești nimic: lipsește pornirea receptorului sau pinul nu este unsprezece. Primești un singur buton: ai uitat resume. Butoanele nu fac nimic: codurile din program nu sunt ale telecomenzii tale, deci le citești cu al treilea pas. LED-ul clipește la ținut apăsat: vezi codul de repetare și îl ignori. Eroare la include: în Tinkercad biblioteca este inclusă, dar pe un Arduino real trebuie instalată, iar versiunile noi au alte comenzi. Încuietoarea se deschide la orice buton: compari cu primul cod, nu cu cel de la poziția curentă. Nu se deschide niciodată: codurile nu sunt ale telecomenzii tale sau nu readuci poziția la zero. LED roșu la un buton ținut apăsat: nu ignori codul de repetare.
+
+Proiectul de azi. Telecomanda magică. Minim înseamnă trei LED-uri comandate. Complet înseamnă Power și luminozitate. Proiectul doi înseamnă încuietoare cu telecomandă.
+
+Verificare finală a modulului. Poți afișa text pe un ecran. Poți muta un servo la un unghi dorit. Poți controla un motor cu tranzistor. Poți citi o tastatură sau o telecomandă.
+
+Provocare, trei stele. Scene de lumină cu sunet. Transformi telecomanda într-un panou de scene: butoanele patru, cinci și șase pornesc efecte cu cele trei LED-uri din primul proiect, cu coduri citite de tine. Adaugi un buzzer, la pinul opt. Butonul patru aprinde toate LED-urile, butonul cinci le aprinde pe rând, iar butonul șase le face să clipească de trei ori. Un buton recunoscut dă un bip scurt, iar un cod necunoscut un bip grav. Power stinge LED-urile oricând.
+
+Recapitulare. Fiecare buton I R are un cod. Citește mai întâi codurile, apoi folosește-le. Resume după fiecare cod. Funcția comută inversează un LED. Un tablou de coduri și o poziție dau o secvență secretă.
+
+Ce urmează. Ai terminat Modulul trei! În Modulul patru pui laolaltă tot ce ai învățat: planifici, faci schema și construiești proiecte complete, de la o casă inteligentă la un joc de reflexe.
 
 Felicitări, ai terminat Modulul trei.

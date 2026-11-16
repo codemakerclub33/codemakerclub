@@ -1,6 +1,6 @@
-Lecția doi. Semnalizator de bicicletă.
+Lecția doi. Semnalizatorul de bicicletă.
 
-Astăzi folosești două LED-uri, variabile și bucla for, ca să faci un semnalizator care arată direcția. Proiectul se numește Bicicleta mea. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero doi.
+Astăzi folosești două LED-uri, variabile și bucla for, ca să faci un semnalizator care arată direcția. Proiectul se numește Semnalizatorul de bicicletă. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero doi.
 
 Ce facem azi. La final ai două LED-uri care clipesc pe rând, stânga și dreapta, și un program scris cu nume clare. Până acum ai comandat un singur pin. Acum comanzi mai mulți, înveți să dai nume lucrurilor și să repeți fără să copiezi.
 
@@ -16,7 +16,7 @@ Al patrulea pas, pentru Complet. Punem fiecare semnal într-o funcție. Funcția
 
 Greșeli frecvente. Ambele LED-uri clipesc odată: ai folosit același pin sau ai uitat Low pentru celălalt. Un singur LED merge: celuilalt îi lipsește firul spre GND. For nu se oprește: ai scris i minus minus în loc de i plus plus. Eroare not declared: numele din cod nu este scris la fel peste tot, STANGA cu majuscule nu este același lucru cu stanga cu litere mici. O singură rezistență pentru două LED-uri: fiecare LED are rezistorul lui.
 
-Proiectul de azi. Bicicleta mea. Minim înseamnă două LED-uri alternând, cu const int. Complet înseamnă minim, plus funcția clipește, virare stânga, virare dreapta și avarii.
+Proiectul de azi. Semnalizatorul de bicicletă. Minim înseamnă două LED-uri alternând, cu const int. Complet înseamnă minim, plus funcția clipește, virare stânga, virare dreapta și avarii.
 
 Provocare, trei stele. Frâna bicicletei. Pui un al treilea LED, pe pinul zece, ca lumină de frână, aprins o secundă după fiecare semnal. Apoi faci clipirea mai rapidă, cu o sută cincizeci în loc de trei sute.
 

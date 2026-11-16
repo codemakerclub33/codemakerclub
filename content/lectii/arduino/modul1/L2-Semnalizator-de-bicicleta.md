@@ -1,10 +1,10 @@
-# LECȚIA 2 — Bicicleta mea
+# LECȚIA 2 — Semnalizatorul de bicicletă
 ### Două LED-uri, variabile și bucla for
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 
 > Azi folosești **două LED-uri**, **variabile** și **bucla `for`** ca să faci un semnalizator care arată direcția.  
-> Proiect: **„Bicicleta mea”** · `Prenume_Nume_A1_L02`
+> Proiect: **„Semnalizatorul de bicicletă”** · `Prenume_Nume_A1_L02`
 
 ---
 
@@ -172,7 +172,7 @@ void loop() {
 
 ---
 
-## De făcut azi — „Bicicleta mea”
+## De făcut azi — „Semnalizatorul de bicicletă”
 
 ### Minim vs Complet
 

@@ -1,15 +1,15 @@
-# LECȚIA 7 — Planta mea
+# LECȚIA 7 — Ghiveciul inteligent
 ### Senzor de sol, procente și reamintiri
 **Modulul 2 · Senzori**  
 **Code Maker Club · Sensor Scout**
 
 > Azi faci o plantă „vorbitoare”: un senzor de **umiditate a solului** îți spune când are nevoie de apă.  
-> Proiect: **„Planta mea”** · `Prenume_Nume_A2_L07`
+> Proiect: **„Ghiveciul inteligent”** · `Prenume_Nume_A2_L07`
 
 ---
 
 ## Ce facem azi
-La finalul orei ai **două proiecte**: **Planta mea** (umiditatea în procente, trei LED-uri și buzzer) și o **Pompă automată**, care pornește când solul e uscat și se oprește când e destul de ud. Sistemele de irigații inteligente funcționează așa.
+La finalul orei ai **două proiecte**: **Ghiveciul inteligent** (umiditatea în procente, trei LED-uri și buzzer) și o **plantă care vorbește**: îți amintește la 10 secunde că i-e sete și îți spune „Multumesc!” după ce o uzi. Sistemele de irigații inteligente funcționează după aceeași idee: măsoară, decid și te anunță.
 
 ---
 
@@ -21,10 +21,10 @@ La finalul orei ai **două proiecte**: **Planta mea** (umiditatea în procente, 
 | 10–25 | Circuit și calibrarea senzorului de sol |
 | 25–50 | Minim · „mi-e sete” |
 | 50–75 | **Proiectul 1** · procente și 3 LED-uri |
-| 75–110 | **Proiectul 2** · reamintiri și pompă automată |
+| 75–110 | **Proiectul 2** · reamintiri și „Multumesc!” |
 | 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme |
 
-**Componente azi:** Arduino Uno · Breadboard · **Soil Moisture Sensor** · 3 × LED (roșu, verde, albastru) · 3 × Resistor 220 Ω · Piezo · **LED albastru pentru pompă** · Resistor 220 Ω · fire
+**Componente azi:** Arduino Uno · Breadboard · **Soil Moisture Sensor** · 3 × LED (roșu, verde, albastru) · 3 × Resistor 220 Ω · Piezo · LED albastru pentru pompă + Resistor 220 Ω (doar la Bonus) · fire
 
 ---
 
@@ -237,7 +237,7 @@ Apoi, în `loop()`, după ce ai calculat `procent`:
 
 ---
 
-## De făcut azi — „Planta mea”
+## De făcut azi — „Ghiveciul inteligent”
 
 ### Minim vs Complet
 
@@ -245,7 +245,7 @@ Apoi, în `loop()`, după ce ai calculat `procent`:
 |--|------------|
 | **Minim** | Un LED roșu când solul e uscat |
 | **Complet** | Minim + procente + 3 LED-uri + bip |
-| **Proiectul 2** | Reamintire la 10 secunde + mesajul „Multumesc!” + pompă automată |
+| **Proiectul 2** | Reamintire la 10 secunde + mesajul „Multumesc!” |
 
 ### Pasul 1 — Minim
 - [ ] Calibrare notată în tabel  

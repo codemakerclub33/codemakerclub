@@ -1,14 +1,14 @@
-Lecția zece. Panoul camerei mele.
+Lecția zece. Panoul de lumini.
 
-Astăzi aduni într-un panou de control proiectele din lecțiile cinci, șase și șapte: lampa, lampa colorată și soneria. Treci de la unul la altul cu un buton. Proiectul se numește Panoul meu. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zece.
+Astăzi aduni într-un panou de control proiectele din lecțiile cinci, șase și șapte: lampa, lampa colorată și soneria. Treci de la unul la altul cu un buton. Proiectul se numește Panoul de lumini. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zece.
 
-Ce facem azi. Pui la un loc proiectele tale din modul, ca o expoziție: Lampa mea din lecția cinci, Lampa mea colorată din lecția șase și Soneria mea din lecția șapte. Fiecare devine un mod al panoului, iar un buton te mută de la unul la altul. La final îl prezinți.
+Ce facem azi. Pui la un loc proiectele tale din modul, ca o expoziție: Lampa cu reglaj din lecția cinci, Lampa colorată din lecția șase și Soneria de la ușă din lecția șapte. Fiecare devine un mod al panoului, iar un buton te mută de la unul la altul. La final îl prezinți.
 
 Instrucțiuni noi azi. Switch alege un bloc de cod în funcție de valoare, iar fiecare caz se termină cu break. Procentul dă restul împărțirii și păstrează un număr într-un interval. Random de două sute cincizeci și șase dă o valoare de la zero la două sute cincizeci și cinci. Funcțiile culoare, dingDong și bip fac codul ușor de citit.
 
 Primul pas. Conexiuni. LED-ul R G B merge pe pinii nouă, zece și șase, cu rezistoare, iar piezo pe pinul opt. Butonul de mod este pe pinul doi, iar butonul de sonerie pe pinul patru. Potențiometrul și buzzerul au pinii lor, ca în lecțiile anterioare.
 
-Al doilea pas. Schema modurilor. Modul zero: Lampa mea din lecția cinci, alb, cu luminozitatea dată de potențiometru. Modul unu: Lampa mea colorată din lecția șase, cu culoarea aleasă de un singur potențiometru, nu de trei ca atunci. Modul doi: Soneria mea din lecția șapte, unde al doilea buton sună ding dong, iar lampa se face verde cât sună. Modul trei, la Complet: petrecere.
+Al doilea pas. Schema modurilor. Modul zero: Lampa cu reglaj din lecția cinci, alb, cu luminozitatea dată de potențiometru. Modul unu: Lampa colorată din lecția șase, cu culoarea aleasă de un singur potențiometru, nu de trei ca atunci. Modul doi: Soneria de la ușă din lecția șapte, unde al doilea buton sună ding dong, iar lampa se face verde cât sună. Modul trei, la Complet: petrecere.
 
 Al treilea pas. Minim. Ții minte modul într-o variabilă. La fiecare apăsare pe butonul de mod crești modul cu unu, iar cu operatorul procent îl păstrezi în interval, ca după ultimul mod să revii la zero. Cu switch alegi ce face panoul în fiecare mod. Soneria este o funcție, dingDong, pe care o chemi din modul doi. Nu uita break la fiecare caz.
 
@@ -18,7 +18,7 @@ Al cincilea pas. Prezentarea. Spune colegilor ce face panoul tău, din ce lecți
 
 Greșeli frecvente. Modul sare prea repede: lipsește delay după apăsarea butonului. Eroare în switch: un caz cu variabile noi are nevoie de acolade. Lampa este mereu aceeași: ai uitat break între cazuri. Soneria nu sună: ești în alt mod, soneria merge doar în modul doi. Culoarea la petrecere nu se schimbă: lipsește random Seed sau delay-ul este prea mic. Pinul unsprezece cu tone: am evitat trei și unsprezece tocmai din acest motiv, deci nu muta albastrul pe unsprezece.
 
-Proiectul de azi. Panoul meu. Minim înseamnă trei moduri: lampa, lampa colorată și soneria. Complet înseamnă minim, plus petrecere, bip și prezentare.
+Proiectul de azi. Panoul de lumini. Minim înseamnă trei moduri: lampa, lampa colorată și soneria. Complet înseamnă minim, plus petrecere, bip și prezentare.
 
 Provocare, trei stele. Moduri noi. Adaugi un al cincilea mod, respirație, în care albul crește și scade. Apoi un al șaselea mod, semafor, cu roșu, galben și verde, pe rând.
 

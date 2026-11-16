@@ -24,7 +24,7 @@ La finalul orei ai **două proiecte**: **Parcarea inteligentă** (distanța în 
 | 75–110 | **Proiectul 2** · bip proporțional cu distanța |
 | 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme |
 
-**Componente azi:** Arduino Uno · Breadboard · **Ultrasonic Distance Sensor (HC-SR04)** · Piezo · 3 × LED · 3 × Resistor 220 Ω · fire
+**Componente azi:** Arduino Uno · Breadboard · **Ultrasonic Distance Sensor (HC-SR04)** · Piezo · 3 × LED · 3 × Resistor 220 Ω · Pushbutton (doar la Bonus) · fire
 
 ---
 
@@ -319,14 +319,14 @@ Apoi folosește-le în `map`: `map((int)cm, DIST_MIN, DIST_MAX, PAUZA_MIN, PAUZA
 
 ---
 
-## Bonus ★★★ — Provocare: Bara de distanță
+## Bonus ★★★ — Provocare: Bara de distanță cu pauză
 *Doar dacă ai terminat Proiectul 2.*
 
-Afișează distanța ca o **bară** în Serial Monitor.
+Afișează distanța ca o **bară** în Serial Monitor. **Piesă nouă:** un buton pe pin 2 și GND, care pune parcarea pe pauză.
 
-- [ ] Fiecare 10 cm înseamnă un `#`: la 30 cm vezi `###`, la 60 cm vezi `######`  
-- [ ] Lângă bară scrii valoarea în cm  
-- [ ] Testezi la **10, 30, 60, 90 și 150 cm**: valorile diferă de distanța reală cu cel mult **2 cm**
+- [ ] Fiecare 10 cm înseamnă un `#`: la 30 cm vezi `###`, la 60 cm vezi `######`, iar lângă bară scrii valoarea în cm  
+- [ ] Cât timp butonul e apăsat, LED-urile se sting, buzzerul tace și se scrie „PAUZĂ”  
+- [ ] Testezi la **10, 30, 60, 90 și 150 cm**: valorile diferă de distanța reală cu cel mult **2 cm**  
 
 ## Recapitulare pe scurt
 1. TRIG trimite, ECHO primește  

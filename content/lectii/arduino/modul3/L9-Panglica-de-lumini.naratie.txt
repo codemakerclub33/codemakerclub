@@ -1,25 +1,33 @@
-Lecția nouă din Modulul trei. Panglica de lumini.
+Lecția nouă din Modulul trei. Panglica magică.
 
-Astăzi lucrezi cu LED-uri Neo Pixel: LED-uri R G B pe care le comanzi individual, cu un singur fir. Proiectul se numește Panglica magică. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero nouă.
+Astăzi legi un inel de LED-uri NeoPixel și faci efecte de lumină. Proiectul se numește Panglica magică. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero nouă.
 
-Obiectivul. La final ai o panglică de lumini cu efecte. Minim: aprinzi pixelii într-o culoare și faci o rază care aleargă. Complet: minim, plus curcubeu, un buton care schimbă efectul și un potențiometru pentru luminozitate.
+Ce facem azi. La final ai două proiecte: Panglica magică, cu o rază care aleargă, un curcubeu și o respirație de culori, schimbate cu un buton, cu luminozitatea din potențiometru, și un indicator de nivel, care aprinde tot mai multe LED-uri, de la verde la roșu, ca la un VU-metru. Luminile inteligente, pantofii care se aprind și ecranele LED mari folosesc LED-uri adresabile: orice culoare, pe orice LED, cu un singur pin Arduino.
 
-De ce contează. Luminile de Crăciun inteligente, pantofii care se aprind și ecranele L E D mari folosesc LED-uri adresabile. Poți face orice culoare, pe orice LED, cu un singur pin Arduino.
+Instrucțiuni noi azi. Obiectul NeoPixel se creează cu numărul de pixeli și pinul. Color primește roșu, verde și albastru, între zero și două sute cincizeci și cinci. Set Pixel Color pune o culoare pe un pixel, de la zero. Show trimite culorile la LED-uri, iar fără el nu se vede nimic. Clear stinge toți pixelii, iar Set Brightness limitează luminozitatea. Condiția i mai mic decât nivelul aprinde doar primii pixeli.
 
-Primul pas. Conexiuni. Alimentarea plus a panglicii merge la cinci volți, GND la GND, iar firul de date la pinul șase.
+Primul pas. Conexiuni. Alimentarea merge la cinci volți, GND la GND, iar semnalul, D I N, la pinul șase. Potențiometrul are laturile la cinci volți și GND, iar mijlocul la pinul A zero. Butonul este la pinul doi și GND. Pe un inel real pui și un rezistor pe firul de semnal și un condensator mare pe alimentare.
 
-Al doilea pas. Primele culori. Incluzi biblioteca Adafruit Neo Pixel și creezi obiectul cu numărul de pixeli, pinul și tipul. Cu set Pixel Color alegi culoarea fiecărui pixel, cu Color de roșu, verde, albastru. Fără show nu se vede nimic: show trimite culorile spre panglică.
+Al doilea pas. Primele culori. Creezi banda, o pornești cu begin și pui culori pe primii trei pixeli: roșu, verde și albastru. Apoi chemi show.
 
-Al treilea pas. Raza care aleargă, pentru Minim. Cu un for aprinzi pe rând câte un pixel, îl stingi pe cel de dinainte și pui o pauză mică.
+Al treilea pas. Minim, raza care aleargă. În loop, stingi tot, aprinzi un singur pixel și chemi show, apoi treci la următorul. Rezultatul este o rază care se învârte.
 
-Al patrulea pas. Curcubeul. Folosești o funcție, roata culorilor, care primește un număr de la zero la două sute cincizeci și cinci și returnează o culoare, parcurgând tot spectrul. Dai fiecărui pixel o culoare puțin diferită.
+Al patrulea pas. Curcubeul. O funcție, roata culorilor, primește un număr de la zero la două sute cincizeci și cinci și dă o culoare, parcurgând spectrul. Fiecare pixel ia o culoare puțin diferită, iar un contor o rotește, deci curcubeul pare să se miște.
 
-Al cincilea pas, pentru Complet. Un buton alege efectul, cu operatorul procent, în ciclu. Potențiometrul reglează luminozitatea, cu set Brightness. Pe lângă aspect, asta consumă și mai puțin curent.
+Al cincilea pas, pentru Complet. Efecte, buton, luminozitate. Ai trei efecte: rază, curcubeu și respirație. Butonul trece la următorul efect, în cerc. Potențiometrul reglează luminozitatea în timp real.
 
-Greșeli frecvente. Nu se aprinde nimic: lipsește show. Culori greșite: ordinea din cod este N E O G R B, iar unele benzi sunt N E O R G B. Doar primul pixel merge: numărul de pixeli este prea mic. Prea luminos: folosește set Brightness. Eroare la compilare: lipsește linia de include pentru Adafruit Neo Pixel.
+Al șaselea pas. Proiectul doi, indicator de nivel. Boxele, microfoanele și încărcătoarele au un indicator: cu cât valoarea este mai mare, cu atât se aprind mai multe LED-uri, iar culoarea trece de la verde la galben și la roșu. Potențiometrul este sursa de sunet, iar map îl transformă într-un număr de pixeli aprinși, de la zero la doisprezece. Pixelii de deasupra nivelului îi stingi, altfel ar rămâne aprinși când scazi nivelul. Prima treime a benzii este verde, mijlocul galben, restul roșu. Show îl chemi o singură dată, după ce toți pixelii au primit culoarea.
 
-Proiectul de azi. Panglica magică. Minim înseamnă o culoare și raza. Complet înseamnă curcubeu, buton și luminozitate.
+Al șaptelea pas. Testul indicatorului. Potențiometrul la minim: niciun pixel. La un sfert: trei pixeli verzi. La mijloc: șase pixeli, patru verzi și doi galbeni. Aproape de maxim: zece sau unsprezece pixeli. La maxim: toți doisprezece, patru verzi, patru galbeni și patru roșii.
 
-Recapitulare. Creezi obiectul cu numărul de pixeli, pinul și tipul. Set Pixel Color și show aprind pixelii. Color de roșu, verde, albastru face culoarea. Un buton și procentul alege efectul.
+Greșeli frecvente. Nu se aprinde nimic: lipsește show. Culori greșite: ordinea este G R B în cod, iar unele benzi sunt R G B. Doar primul pixel merge: numărul de pixeli este prea mic. Prea luminos: folosești Set Brightness. Eroare la compilare: lipsește include pentru bibliotecă. Pixelii rămân aprinși când scazi nivelul: lipsește ramura care îi stinge. Culorile nu urmează verde, galben, roșu: pragurile sunt greșite. Ultimul pixel nu se aprinde niciodată: la map ai pus un pixel în minus.
+
+Proiectul de azi. Panglica magică. Minim înseamnă o rază de culoare care aleargă. Complet înseamnă curcubeu, buton și luminozitate. Proiectul doi înseamnă indicator de nivel.
+
+Provocare, trei stele. Indicator cu alarmă. Dai indicatorului de nivel și un sunet. Adaugi un buzzer, la pinul opt, care sună doar când toți cei doisprezece pixeli sunt aprinși și tace imediat ce nivelul scade. Când nivelul este zece sau mai mult, pixelii roșii clipesc, cu millis, nu cu delay. Testezi: la nivel mic liniște, la nivel maxim alarmă.
+
+Recapitulare. Creezi banda, o pornești cu begin, pui culori cu Set Pixel Color și le arăți cu show. Color are valori de la zero la două sute cincizeci și cinci. Fără show nu se vede nimic. Efectele se fac cu for și un contor de pași. Map și condiția i mai mic decât nivelul fac un indicator de nivel.
+
+Ce urmează. În lecția zece, proiectul modulului: o telecomandă cu infraroșu care aprinde LED-uri și le reglează luminozitatea de la distanță.
 
 Succes cu panglica.

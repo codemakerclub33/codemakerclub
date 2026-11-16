@@ -1,10 +1,10 @@
-# LECȚIA 5 — Lampa mea
+# LECȚIA 5 — Lampa cu reglaj
 ### Potențiometru și PWM
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 
 > Azi citești un **potențiometru** (un buton rotativ) și reglezi **luminozitatea** unui LED cu **PWM**.  
-> Proiect: **„Lampa mea”** · `Prenume_Nume_A1_L05`
+> Proiect: **„Lampa cu reglaj”** · `Prenume_Nume_A1_L05`
 
 ---
 
@@ -161,7 +161,7 @@ Primul `for` **crește** lumina, al doilea o **scade**. Schimbă `delay(5)` ca s
 
 ---
 
-## De făcut azi — „Lampa mea”
+## De făcut azi — „Lampa cu reglaj”
 
 ### Minim vs Complet
 

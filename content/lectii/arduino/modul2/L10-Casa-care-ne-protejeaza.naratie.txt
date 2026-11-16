@@ -1,8 +1,8 @@
-Lecția zece din Modulul doi. Casa care ne protejează.
+Lecția zece din Modulul doi. Casa protejată.
 
 Astăzi, la proiectul modulului, combini lumină, mișcare și temperatură într-o casă care se apără singură. Proiectul se numește Casa protejată. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zece.
 
-Ce facem azi. La final ai două proiecte în aceeași casă: Casa protejată, cu lampă automată, alarmă armabilă, alertă de căldură și raport, și o lampă inteligentă, care se aprinde doar când este întuneric și este mișcare. Mai adaugi o întârziere de ieșire pentru alarmă și un LED verde care spune că totul este în regulă.
+Ce facem azi. La final ai două proiecte în aceeași casă: Casa protejată, cu lampă automată, alarmă armabilă, alertă de căldură și raport, și o casă cu timp de plecare: alarma are întârziere de ieșire de cinci secunde, iar un LED verde spune că totul este în regulă.
 
 Instrucțiuni noi azi. Unsigned long armat la ține momentul armării alarmei. Bool activ înseamnă alarmă armată și trecută de întârziere. Două linii verticale înseamnă sau: este adevărat dacă măcar una dintre condiții este adevărată. Două semne și comercial înseamnă și: este adevărat doar dacă ambele sunt adevărate.
 
@@ -20,9 +20,9 @@ Al șaselea pas. LED verde, totul este în regulă. Un al patrulea LED, verde, l
 
 Greșeli frecvente. Un sistem blochează pe celelalte: folosești un delay lung, iar soluția este millis. Alarma sună și când nu este armată: lipsește armat și. Bipurile se acoperă: alarma și căldura folosesc același buzzer, deci ai grijă la praguri. Lampa clipește: vezi histerezisul din lecția doi. Nu iese nimic în Serial Monitor: lipsește Serial begin. Alarma sună imediat după armare: lipsește momentul armării. LED-ul verde nu se stinge: funcția nu este apelată în loop.
 
-Proiectul de azi. Casa protejată. Minim înseamnă lampă și alarmă. Complet înseamnă minim, plus alertă de căldură și raport. Proiectul doi înseamnă întârziere de ieșire, LED verde și lampă inteligentă.
+Proiectul de azi. Casa protejată. Minim înseamnă lampă și alarmă. Complet înseamnă minim, plus alertă de căldură și raport. Proiectul doi înseamnă întârziere de ieșire și LED verde.
 
-Provocare, trei stele. Lampa inteligentă. Lampa se aprinde doar când este întuneric și este mișcare. Rămâne aprinsă încă zece secunde după ultima mișcare, măsurate cu millis, apoi se stinge. Testezi: cu lumină și mișcare lampa este stinsă, la întuneric fără mișcare este stinsă, la întuneric cu mișcare se aprinde, iar după zece secunde fără mișcare se stinge, între zece și unsprezece secunde.
+Provocare, trei stele. Lampa inteligentă cu timp reglabil. O lampă care se aprinde doar când are motiv. Adaugi un potențiometru, cu mijlocul la pinul A doi, care reglează cât timp rămâne lampa aprinsă. Lampa se aprinde doar când este întuneric și este mișcare. Rămâne aprinsă după ultima mișcare între cinci și treizeci de secunde, reglat din potențiometru, cu map și millis. Testezi: cu lumină și mișcare lampa este stinsă, la întuneric fără mișcare este stinsă, la întuneric cu mișcare se aprinde. Cu potențiometrul la minim se stinge după aproape cinci secunde, iar la maxim după aproape treizeci.
 
 Recapitulare. Împarte proiectul în funcții. Loop doar le apelează. Millis înlocuiește delay când ai mai multe sarcini. Testează fiecare scenariu. Cele două semne și comercial și cele două linii verticale combină senzorii în decizii mai deștepte.
 

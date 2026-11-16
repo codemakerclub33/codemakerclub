@@ -1,10 +1,10 @@
-# LECȚIA 9 — Stația mea meteo
+# LECȚIA 9 — Mini stație meteo
 ### Doi senzori, min/max și medii
 **Modulul 2 · Senzori**  
 **Code Maker Club · Sensor Scout**
 
 > Azi combini **doi senzori** (temperatură și lumină) într-o mică stație meteo cu raport în Serial Monitor.  
-> Proiect: **„Stația mea meteo”** · `Prenume_Nume_A2_L09`
+> Proiect: **„Mini stație meteo”** · `Prenume_Nume_A2_L09`
 
 ---
 
@@ -24,7 +24,7 @@ La finalul orei ai **două proiecte**: **Stația meteo** (temperatură, lumină,
 | 75–110 | **Proiectul 2** · buton de resetare și media ultimelor 5 citiri |
 | 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme |
 
-**Componente azi:** Arduino Uno · Breadboard · TMP36 · Photoresistor · Resistor 10 kΩ · LED · Resistor 220 Ω · **Pushbutton** · fire
+**Componente azi:** Arduino Uno · Breadboard · TMP36 · Photoresistor · Resistor 10 kΩ · 2 × LED (al doilea, roșu, pentru Bonus) · 2 × Resistor 220 Ω · **Pushbutton** · fire
 
 ---
 
@@ -258,7 +258,7 @@ Apoi, în `loop()`, după ce ai citit `t`:
 
 ---
 
-## De făcut azi — „Stația mea meteo”
+## De făcut azi — „Mini stație meteo”
 
 ### Minim vs Complet
 

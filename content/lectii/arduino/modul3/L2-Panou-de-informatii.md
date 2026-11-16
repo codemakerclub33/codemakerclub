@@ -1,19 +1,15 @@
-# Lecția 2 — Panou de informații
+# LECȚIA 2 — Panou de informații
+### Pagini, buton și actualizare fără clipiri
 **Modulul 3 · Afișaj și mișcare**  
 **Code Maker Club · Display Maker**
 
 > Azi transformi LCD-ul într-un **panou** care schimbă pagini la apăsarea unui buton: temperatura, lumina și un mesaj.  
-> Proiect: **„Panoul meu”** · `Prenume_Nume_A3_L02`
+> Proiect: **„Panou de informații”** · `Prenume_Nume_A3_L02`
 
 ---
 
-## Obiectiv
-La finalul orei ai un panou cu mai multe **pagini** pe LCD.  
-**Minim:** TMP36 → temperatura pe LCD, actualizată la fiecare secundă.  
-**Complet:** Minim + **3 pagini** (temperatură, lumină, mesaj) schimbate cu un **buton**, fără clipiri.
-
-## De ce contează
-Aproape orice aparat cu ecran are **meniuri sau pagini**. Azi înveți să ții evidența paginii curente și să desenezi doar ce trebuie.
+## Ce facem azi
+La finalul orei ai **două proiecte**: **Panoul de informații** (trei pagini pe LCD: temperatura, lumina și un mesaj, schimbate cu un buton) și un **termometru cu minim și maxim**, care ține minte cea mai rece și cea mai caldă valoare. Aproape orice aparat cu ecran are **pagini** și valori care se actualizează singure, fără clipiri.
 
 ---
 
@@ -23,11 +19,25 @@ Aproape orice aparat cu ecran are **meniuri sau pagini**. Azi înveți să ții 
 |--------|----------|
 | 0–10 | Recap L1 · LCD |
 | 10–25 | Conexiuni (LCD ca în L1 + senzori) |
-| 25–55 | Temperatura pe LCD |
-| 55–105 | 3 pagini cu buton |
-| 105–120 | Recap, quiz, galerie |
+| 25–40 | **Proiectul 1** · temperatura pe LCD |
+| 40–70 | **Proiectul 1** · 3 pagini cu buton, fără clipiri |
+| 70–110 | **Proiectul 2** · minim și maxim |
+| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme |
 
-**Componente azi:** Arduino Uno · Breadboard · LCD 16 x 2 · TMP36 · Photoresistor · Resistor 10 kΩ · Pushbutton · Resistor 220 Ω · fire
+**Componente azi:** Arduino Uno · Breadboard · LCD 16 x 2 · TMP36 · Photoresistor · Resistor 10 kΩ · Pushbutton · 2 × Resistor 220 Ω · LED roșu (doar la Bonus) · fire
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `lcd.print(grade, 1)` | Afișează un număr cu o zecimală | `lcd.print(temperatura(), 1);` |
+| `(pagina + 1) % NR_PAGINI` | `%` dă restul împărțirii: ciclul 0 → 1 → 2 → 0 | `pagina = (pagina + 1) % 3;` |
+| `apasat && !butonAnterior` | Front: acționezi doar în clipa apăsării | `if (apasat && !butonAnterior) { ... }` |
+| `millis() - ultima >= 500` | Face ceva periodic, fără `delay` | `if (millis() - ultimaActualizare >= 500) { ... }` |
+| `void titlu()` | Funcție pentru o parte din desen | `titlu();` |
+| `float minim = 100;` | Pornești cu o valoare uriașă, pe care orice măsurătoare o bate | `if (t < minim) minim = t;` |
 
 ---
 
@@ -216,6 +226,80 @@ void loop() {
 - [ ] Codul complet se compilează fără erori  
 - [ ] Simularea face tot ce scrie în „Complet”  
 
+### 6) Proiectul 2 — Minim și maxim
+Un termometru bun nu arată doar temperatura de **acum**, ci și cea mai rece și cea mai caldă valoare de când a pornit. Pornim cu `minim = 100` și `maxim = -100`: orice temperatură reală este mai mică decât 100 și mai mare decât −100, deci prima măsurătoare le înlocuiește pe amândouă. Butonul de pe pin 7 le **resetează**. Circuitul rămâne cel de la proiectul 1.
+
+```cpp
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+const int BUTON = 7;
+
+float minim = 100;
+float maxim = -100;
+unsigned long ultimaActualizare = 0;
+
+float temperatura() {
+  float volti = analogRead(A1) * 5.0 / 1023.0;
+  return (volti - 0.5) * 100.0;
+}
+
+void setup() {
+  pinMode(BUTON, INPUT_PULLUP);
+  lcd.begin(16, 2);
+}
+
+void loop() {
+  if (digitalRead(BUTON) == LOW) {
+    minim = 100;
+    maxim = -100;
+  }
+
+  if (millis() - ultimaActualizare >= 500) {
+    ultimaActualizare = millis();
+    float t = temperatura();
+
+    if (t < minim) minim = t;
+    if (t > maxim) maxim = t;
+
+    lcd.setCursor(0, 0);
+    lcd.print("Acum: ");
+    lcd.print(t, 1);
+    lcd.print(" C   ");
+
+    lcd.setCursor(0, 1);
+    lcd.print("m");
+    lcd.print(minim, 1);
+    lcd.print(" M");
+    lcd.print(maxim, 1);
+    lcd.print("    ");
+  }
+  delay(30);
+}
+```
+
+- `if (t < minim) minim = t;` păstrează cea mai mică valoare văzută până acum; `maxim` face la fel invers.  
+- Rândul 1 arată temperatura de acum, rândul 2 minimul (`m`) și maximul (`M`).  
+- Spațiile de la sfârșit șterg resturile unui număr mai lung.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] `m` și `M` se schimbă doar când temperatura iese din intervalul văzut până acum  
+
+### 7) Testul termometrului
+
+| Pas | Ce faci | Ce vezi |
+|-----|---------|---------|
+| 1 | Pornești simularea | `m` și `M` sunt egale cu temperatura de acum |
+| 2 | Crești temperatura TMP36 | `M` crește, `m` rămâne |
+| 3 | O scazi sub valoarea de început | `m` scade, `M` rămâne |
+| 4 | Apeși butonul | `m` și `M` se aliniază din nou la temperatura de acum |
+
+**Gata când:**  
+- [ ] Am încercat fiecare pas din listă  
+- [ ] Am notat ce nu a mers și am corectat
+
 ---
 
 ## Greșeli frecvente
@@ -224,10 +308,13 @@ void loop() {
 3. **Rămân cifre vechi** — lipsesc spațiile.  
 4. **Temperatura mereu la fel** — `valoare()` nu e apelată periodic.  
 5. **Eroare la compilare** — ai omis `;` după `lcd.print(...)` sau acolade.
+6. **Minimul rămâne 100** — ai uitat `if (t < minim) minim = t;`.  
+7. **Minim și maxim se schimbă la fiecare măsurătoare** — le resetezi în `loop` fără buton.  
+8. **Butonul nu resetează nimic** — lipsește `INPUT_PULLUP` pentru pin 7.  
 
 ---
 
-## De făcut azi — „Panoul meu”
+## De făcut azi — „Panou de informații”
 
 ### Minim vs Complet
 
@@ -235,6 +322,7 @@ void loop() {
 |--|------------|
 | **Minim** | Temperatura pe LCD |
 | **Complet** | 3 pagini cu buton, valori actualizate, fără clipiri |
+| **Proiectul 2** | Termometru cu minim și maxim, resetat cu un buton |
 
 ### Pasul 1 — Minim
 - [ ] Temperatura se actualizează  
@@ -244,17 +332,28 @@ void loop() {
 - [ ] Titlu separat de valoare  
 - [ ] Numele `A3_L02` e corect
 
+### Pasul 3 — Proiectul 2
+- [ ] `minim` și `maxim` ținute în variabile  
+- [ ] Rândul 2 arată `m` și `M` cu o zecimală  
+- [ ] Butonul resetează valorile  
+
 ---
 
-## Bonus
-- [ ] A patra pagină: **minim/maxim** de temperatură  
-- [ ] A doua apăsare **lungă** (peste 1 secundă) revine la prima pagină
+## Bonus ★★★ — Provocare: Panou cu alertă de căldură
+*Doar dacă ai terminat Proiectul 2.*
 
-## Recapitulare rapidă
+Pune termometrul cu minim și maxim ca **a patra pagină** a panoului. **Piesă nouă:** un LED roșu pe pin 8 (prin 220 Ω) care se aprinde când temperatura trece de 30 °C.
+
+- [ ] Butonul trece prin 4 pagini: temperatură, lumină, mesaj, minim/maxim  
+- [ ] LED-ul se aprinde peste 30 °C și se stinge sub 28 °C, ca să nu clipească la limită  
+- [ ] Alerta funcționează pe oricare pagină, nu doar pe prima  
+
+## Recapitulare pe scurt
 1. Păstrăm **pagina curentă** într-o variabilă  
 2. `%` face ciclul `0 → 1 → 2 → 0`  
 3. `clear` doar la schimbarea paginii  
-4. `millis()` pentru actualizări periodice
+4. `millis()` pentru actualizări periodice  
+5. `minim` și `maxim` pornesc din valori extreme și se corectează la fiecare măsurătoare  
 
 ## Pe placa reală *(opțional)*
 Un meniu pe LCD se face la fel, dar de obicei cu 2–3 butoane (sus, jos, OK).
@@ -263,6 +362,12 @@ Un meniu pe LCD se face la fel, dar de obicei cu 2–3 butoane (sus, jos, OK).
 - Ce rezultat are `5 % 3`?  
 - De ce nu punem `lcd.clear()` în `loop` la fiecare rundă?  
 - Ce înseamnă „front” la un buton?
+- De ce pornim `minim` de la 100, nu de la 0?  
 
 ## Temă
 Desenează pe hârtie 3 pagini ale panoului tău (ce text, ce valoare) pentru un produs real (ex. frigider).
+
+---
+
+## Ce urmează — Lecția 3
+În **lecția 3** legi un afișaj cu 7 segmente și construiești o numărătoare inversă de rachetă, cu buton și bip.

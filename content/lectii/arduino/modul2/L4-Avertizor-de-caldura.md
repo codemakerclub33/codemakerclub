@@ -24,7 +24,7 @@ La finalul orei ai **două proiecte**: **Avertizorul de căldură** (verde, galb
 | 75–110 | **Proiectul 2** · termostat cu histerezis |
 | 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme |
 
-**Componente azi:** Arduino Uno · Breadboard · TMP36 · 3 × LED (verde, galben, roșu) · **LED albastru** · 4 × Resistor 220 Ω · Piezo · fire
+**Componente azi:** Arduino Uno · Breadboard · TMP36 · 3 × LED (verde, galben, roșu) · **LED albastru** · 4 × Resistor 220 Ω · Piezo · Pushbutton (doar la Bonus) · fire
 
 ---
 
@@ -265,14 +265,14 @@ Mută glisorul TMP36 în ordinea din tabel și completează coloana „Ce vezi�
 
 ---
 
-## Bonus ★★★ — Provocare: Patru trepte
+## Bonus ★★★ — Provocare: Patru trepte cu buton de liniștire
 *Doar dacă ai terminat Proiectul 2.*
 
-Un avertizor cu **patru nivele**, nu trei.
+Un avertizor cu **patru nivele**, nu trei. **Piesă nouă:** un buton pe pin 2 și GND, care oprește buzzerul.
 
-- [ ] **Îngheț** (sub 5 °C): LED albastru · **normal** (5–29 °C): verde · **atenție** (30–44 °C): galben care **clipește** la 500 ms, cu `millis()`, nu cu `delay` · **pericol** (45 °C sau mai mult): roșu și buzzer  
-- [ ] Testezi la **0, 4, 20, 35, 44 și 50 °C** și notezi LED-ul aprins  
-- [ ] Un singur LED este aprins la un moment dat
+- [ ] **Îngheț** (sub 5 °C): LED albastru · **normal** (5–29 °C): verde · **atenție** (30–44 °C): galben care **clipește** la 500 ms, cu `millis()` · **pericol** (45 °C sau mai mult): roșu și buzzer  
+- [ ] O apăsare pe buton oprește buzzerul (mute) până când temperatura iese din pericol; LED-ul roșu rămâne aprins  
+- [ ] Testezi la **0, 4, 20, 35, 44 și 50 °C**; un singur LED e aprins la un moment dat  
 
 ## Recapitulare pe scurt
 1. `if / else if / else` alege **o singură** ramură  

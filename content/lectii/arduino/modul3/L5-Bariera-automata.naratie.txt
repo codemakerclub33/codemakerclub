@@ -1,25 +1,33 @@
 Lecția cinci din Modulul trei. Bariera automată.
 
-Astăzi combini senzorul de distanță cu servo-ul și construiești o barieră de parcare care se ridică singură. Proiectul se numește Bariera mea. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero cinci.
+Astăzi combini senzorul de distanță cu servo-ul și construiești o barieră de parcare care se ridică singură. Proiectul se numește Bariera automată. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero cinci.
 
-Obiectivul. La final ai o barieră care se deschide când se apropie o mașină și se închide după câteva secunde. Minim: servo ridicat la distanță mică, coborât altfel. Complet: minim, plus LED verde și roșu, o întârziere de trei secunde înainte de închidere, fără delay, și mesaj în Serial Monitor.
+Ce facem azi. La final ai două proiecte: Bariera automată, care se ridică singură când se apropie o mașină și se închide după trei secunde, fără delay, și o parcare cu locuri limitate, care numără mașinile și nu mai lasă pe nimeni să intre când este plină. Barierele, ușile automate și porțile de garaj au aceeași logică: detectez, deschid, aștept, închid. Aceasta se numește mașină de stări.
 
-De ce contează. Barierele, ușile automate și porțile de garaj au aceeași logică: detectez, deschid, aștept, închid. Aceasta se numește mașină de stări.
+Instrucțiuni noi azi. Enum creează un tip propriu, cu trei valori posibile, iar o variabilă ține starea curentă. Schimbi starea cu un egal. Millis verifică dacă au trecut trei secunde, fără delay. O funcție de tip bool răspunde da sau nu. O constantă ține numărul maxim de locuri. Plus plus și minus minus cresc sau scad numărul de mașini.
 
-Primul pas. Conexiuni. Servo-ul are roșu la cinci volți, negru la GND și semnal la pinul nouă. Senzorul cu ultrasunete are Trig la pinul șapte, iar la fel ca în Modulul doi, Echo, alimentarea și GND. LED-urile verde și roșu au rezistoare.
+Primul pas. Conexiuni. Servo-ul are roșu la cinci volți, negru la GND și semnal la pinul nouă. Senzorul cu ultrasunete are Trig la pinul șapte și Echo la pinul șase, plus alimentarea și GND. LED-urile verde și roșu sunt la pinii patru și cinci, cu rezistoare.
 
-Al doilea pas. Varianta simplă. Măsori distanța. Dacă este mai mică decât un prag, de exemplu cincisprezece centimetri, ridici servo-ul. Altfel îl cobori.
+Al doilea pas. Minim, varianta simplă. Măsori distanța. Dacă este mai mică decât douăzeci de centimetri, ridici servo-ul la nouăzeci de grade. Altfel îl cobori la zero. Problema este că bariera se închide imediat ce mașina trece de senzor.
 
-Al treilea pas. Mașina de stări. Vrem ca bariera să rămână ridicată încă trei secunde după ce mașina a plecat. Folosim stări: închisă, deschisă, așteptare. Din închisă treci în deschisă când vine o mașină. Din deschisă treci în așteptare când mașina pleacă. Din așteptare revii în deschisă dacă vine alta, sau treci în închisă după trei secunde. Folosești enum pentru stări și o variabilă de stare.
+Al treilea pas. Mașina de stări. Vrem ca bariera să rămână ridicată încă trei secunde după ce mașina a plecat. Folosim trei stări: închisă, deschisă, așteptare. Din închisă treci în deschisă când vine o mașină. Din deschisă treci în așteptare când mașina pleacă. Din așteptare revii în deschisă dacă vine alta, sau treci în închisă după trei secunde.
 
-Al patrulea pas. Timpul fără delay. Cu millis ții minte momentul plecării mașinii și compari cât timp a trecut. Așa programul nu se blochează.
+Al patrulea pas, pentru Complet. Codul. Folosești enum pentru stări și o variabilă de stare. În starea de așteptare nu blochezi programul cu delay de trei mii de milisecunde. Ții minte cu millis momentul plecării și verifici cât timp a trecut, deci dacă apare altă mașină, bariera reacționează imediat.
 
-Al cincilea pas. Testul. Obiect la zece centimetri: bariera sus, LED verde. Obiectul pleacă: după trei secunde bariera coboară, LED roșu.
+Al cincilea pas. Testul. Obiect la zece centimetri: bariera sus, LED verde. Obiectul pleacă: trei secunde bariera rămâne sus. Aduci obiectul în timpul așteptării: bariera revine în starea deschisă. Aștepți trei secunde fără obiect: bariera coboară, LED roșu.
 
-Greșeli frecvente. Bariera tremură: senzorul oscilează la limită, deci mărește pragul sau fă o medie. Nu se închide niciodată: distanța zero este tratată ca mașină, deci folosește condiția distanță mai mare decât zero și. Stare blocată: lipsește o tranziție. Timp greșit: compari millis cu variabila greșită. Servo nu ajunge la nouăzeci de grade: pe servo-ul real poate fi nevoie de calibrare.
+Al șaselea pas. Proiectul doi, parcare cu locuri limitate. Adaugi un contor: fiecare mașină care intră ocupă un loc, iar un buton de ieșire, la pinul doi, eliberează unul. Contorul crește o singură dată, chiar în clipa trecerii din închisă în deschisă, altfel mașina ar fi numărată de mai multe ori. Când parcarea este plină, bariera nu se mai deschide, iar LED-ul roșu clipește, la fiecare două sute de milisecunde. Butonul scade numărul doar dacă mai este ceva de scăzut, tot cu tehnica frontului. După fiecare intrare sau ieșire, Serial Monitor arată câte locuri sunt libere.
 
-Proiectul de azi. Bariera mea. Minim înseamnă barieră cu prag. Complet înseamnă mașină de stări, LED-uri și mesaje.
+Al șaptelea pas. Testul parcării. Trei obiecte pe rând, cu așteptarea închiderii între ele, deschid bariera de trei ori, iar locurile libere scad de la trei la zero. Al patrulea obiect nu deschide bariera, iar LED-ul roșu clipește. Apeși butonul de ieșire și apare un loc liber. Aduci din nou obiectul: bariera se deschide, apoi se închide după trei secunde.
 
-Recapitulare. Detectez, deschid, aștept, închid. Enum și o variabilă de stare dau mașina de stări. Millis măsoară timpul fără să blocheze. Testează toate tranzițiile.
+Greșeli frecvente. Bariera tremură: senzorul oscilează la limită, deci mărești pragul sau faci o medie. Nu se închide niciodată: distanța zero este tratată ca mașină. Stare blocată: lipsește o tranziție. Timp greșit: compari millis cu variabila greșită. Servo nu ajunge la nouăzeci de grade: pe servo-ul real poate fi nevoie de calibrare. Contorul crește cât timp mașina stă în fața senzorului: l-ai pus în afara tranziției. Locuri libere negative: scazi fără verificare. Butonul scade de mai multe ori: lipsește frontul. LED-ul roșu nu clipește: clipirea trebuie pusă după ce îl aprinzi.
+
+Proiectul de azi. Bariera automată. Minim înseamnă barieră cu prag. Complet înseamnă mașină de stări, LED-uri și timp cu millis. Proiectul doi înseamnă parcare cu trei locuri.
+
+Provocare, trei stele. Butonul de urgență. Adaugi un al doilea buton, la pinul trei, care deschide bariera oricând, chiar dacă parcarea este plină. Cât timp este ținut apăsat, LED-ul verde clipește și bariera rămâne sus. La eliberare, bariera se închide după trei secunde, fără să schimbe numărul de locuri libere.
+
+Recapitulare. Detectez, deschid, aștept, închid. Enum și o variabilă de stare dau mașina de stări. Millis măsoară timpul fără să blocheze. Un contor se modifică o singură dată, la schimbarea stării. Testează toate tranzițiile.
+
+Ce urmează. În lecția șase pui senzorul de distanță pe servo și construiești un radar care găsește obiectul cel mai apropiat.
 
 Succes cu bariera.

@@ -1,4 +1,4 @@
-Lecția nouă. Cine apasă primul?
+Lecția nouă. Duelul de reflexe.
 
 Astăzi faci un joc de reflexe pentru doi jucători: un semnal verde apare după o pauză aleatorie, iar cine apasă primul câștigă. Proiectul se numește Duelul de reflexe. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero nouă.
 

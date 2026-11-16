@@ -8,11 +8,11 @@ Instrucțiuni noi azi. If, else if și else aleg o singură treaptă de temperat
 
 Primul pas. Conexiuni. Senzorul merge la cinci volți, GND și A zero. LED-ul verde este la pinul patru, galbenul la pinul cinci, roșul la pinul șase, fiecare cu rezistor de două sute douăzeci de ohmi. Piezo este la pinul opt și la GND.
 
-Al doilea pas. Trei trepte, pentru Minim. Citești temperatura ca în lecția trecută. La începutul buclei stingi toate LED-urile. Apoi, cu if, else if și else, alegi o singură ramură: sub treizeci de grade aprinzi verdele, între treizeci și treizeci și cinci galbenul, iar peste, roșul.
+Al doilea pas. Trei trepte, pentru Minim. Citești temperatura ca în lecția trecută. La începutul buclei stingi toate LED-urile. Apoi, cu if, else if și else, alegi o singură ramură: sub treizeci de grade aprinzi verdele, între treizeci și patruzeci și patru galbenul, iar la patruzeci și cinci sau mai mult, roșul.
 
 Al treilea pas, pentru Complet. La roșu, buzzerul face bip, bip. Folosești tone cu durată și no Tone. Pui reacția într-o funcție, alarma, ca să rămână codul curat.
 
-Al patrulea pas. Testul. Muți glisorul de temperatură al senzorului în Tinkercad și verifici fiecare treaptă: sub treizeci verde, între treizeci și treizeci și cinci galben, peste roșu cu sunet.
+Al patrulea pas. Testul. Muți glisorul de temperatură al senzorului în Tinkercad și verifici fiecare treaptă: sub treizeci verde, între treizeci și patruzeci și patru galben, la patruzeci și cinci sau mai mult roșu cu sunet.
 
 Al cincilea pas. Proiectul doi, termostat cu histerezis. Un termostat care pornește și oprește la aceeași temperatură ar clipi la limită. De aceea folosește două praguri: pornește la douăzeci și opt de grade și se oprește abia la douăzeci și cinci. LED-ul albastru de la pinul trei este ventilatorul. Variabila ventilator, declarată în afara funcțiilor, ține minte starea. Peste douăzeci și opt o faci adevărată, sub douăzeci și cinci o faci falsă, iar între ele nu schimbi nimic.
 
@@ -22,7 +22,7 @@ Greșeli frecvente. Două LED-uri aprinse: ai uitat să le stingi la începutul 
 
 Proiectul de azi. Avertizorul de căldură. Minim înseamnă trei trepte cu LED-uri. Complet înseamnă și buzzer intermitent. Proiectul doi înseamnă termostatul cu histerezis.
 
-Provocare, trei stele. Patru trepte. Un avertizor cu patru nivele. Sub cinci grade este îngheț și se aprinde LED-ul albastru. Între cinci și douăzeci și nouă este normal, verde. Între treizeci și patruzeci și patru este atenție, galben care clipește la cinci sute de milisecunde, cu millis, nu cu delay. De la patruzeci și cinci în sus este pericol, roșu și buzzer. Testezi la zero, patru, douăzeci, treizeci și cinci, patruzeci și patru și cincizeci de grade. Un singur LED este aprins la un moment dat.
+Provocare, trei stele. Patru trepte cu buton de liniștire. Un avertizor cu patru nivele, nu trei. Adaugi un buton, la pinul doi, care oprește buzzerul. Sub cinci grade, îngheț, LED albastru. Între cinci și douăzeci și nouă, normal, verde. Între treizeci și patruzeci și patru, atenție, galben care clipește la cinci sute de milisecunde, cu millis. La patruzeci și cinci sau mai mult, pericol, roșu și buzzer. O apăsare pe buton oprește buzzerul până când temperatura iese din pericol, iar LED-ul roșu rămâne aprins. Testezi la zero, patru, douăzeci, treizeci și cinci, patruzeci și patru și cincizeci de grade. Un singur LED este aprins la un moment dat.
 
 Recapitulare. If, else if și else aleg o singură ramură. Stingem toate, apoi aprindem unul. Funcția alarma face codul mai curat. Tone și no Tone dau sunetul. Două praguri, adică histerezis, opresc clipirea la limită.
 

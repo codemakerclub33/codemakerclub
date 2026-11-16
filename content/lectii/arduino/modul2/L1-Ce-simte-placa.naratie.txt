@@ -14,17 +14,17 @@ Al treilea pas. Minim. Citești potențiometrul cu analog Read, butonul cu digit
 
 Al patrulea pas, pentru Complet. Analog Read dă de la zero la o mie douăzeci și trei, dar tensiunea este între zero și cinci volți. Ca să obții volții, înmulțești cu cinci virgulă zero împărțit la o mie douăzeci și trei virgulă zero. Folosim float, un număr cu zecimale. Apoi cu if alegi mesajul: mic, mediu sau mare.
 
-Al cincilea pas. Tipuri de date. Int ține un număr întreg, float un număr cu zecimale, bool adevărat sau fals, iar String un text.
+Al cincilea pas. Tipuri de date. Int ține un număr întreg, float un număr cu zecimale, iar bool adevărat sau fals.
 
-Greșeli frecvente. Serial Monitor este gol: n-ai pus Serial punct begin sau n-ai pornit simularea. Caractere ciudate: viteza din cod trebuie să fie aceeași cu cea din monitor. Volți egal zero sau patru: ai scris cinci împărțit la o mie douăzeci și trei fără zecimale, iar împărțirea întreagă dă zero. Scrie cinci virgulă zero. Se derulează prea repede: lipsește delay. Butonul arată mereu zero: ai uitat input pull up.
-
-Al șaselea pas. Proiectul doi, voltmetrul cu bară. Aceeași valoare, dar desenată: cu cât rotești mai mult, cu atât bara are mai multe diezi. Cu map treci de la zero la o mie douăzeci și trei la zero la douăzeci, apoi cu un for scrii douăzeci de caractere: diez pentru partea plină și punct pentru rest. Lângă bară afișezi procentul, tot cu map. La potențiometru la mijloc vezi aproape jumătate din bară plină.
+Al șaselea pas. Proiectul doi, voltmetrul cu bară. Aceeași valoare, dar desenată: cu cât rotești mai mult, cu atât bara are mai multe semne diez. Cu map treci de la zero la o mie douăzeci și trei la zero la douăzeci, apoi cu un for scrii douăzeci de caractere: diez pentru partea plină și punct pentru rest. Lângă bară afișezi procentul, tot cu map. La potențiometru la mijloc vezi aproape jumătate din bară plină.
 
 Al șaptelea pas. Pauza cu butonul. Cât ții butonul apăsat, bara îngheață: nu se mai scrie nimic. Butonul este input pull up, deci neapăsat înseamnă high. Pui tot afișajul într-un if care verifică dacă butonul este high.
 
+Greșeli frecvente. Serial Monitor este gol: n-ai pus Serial punct begin sau n-ai pornit simularea. Caractere ciudate: viteza din cod trebuie să fie aceeași cu cea din monitor. Volții ies zero: ai scris cinci împărțit la o mie douăzeci și trei fără zecimale, iar împărțirea întreagă dă zero. Scrie cinci virgulă zero. Se derulează prea repede: lipsește delay. Butonul arată mereu zero: ai uitat input pull up în setup.
+
 Proiectul de azi. Jurnalul plăcii și voltmetrul cu bară. Minim înseamnă potențiometru și buton pe un rând. Complet înseamnă și volți, și mesaj. Proiectul doi înseamnă bara de douăzeci de caractere, cu procent și pauză pe buton.
 
-Provocare, trei stele. Cinci zone. Voltmetrul spune și în cuvinte cât de sus este potențiometrul: cinci zone în loc de trei, cu pragurile la două sute cinci, patru sute zece, șase sute paisprezece și opt sute nouăsprezece, și mesajele foarte mic, mic, mediu, mare și foarte mare, lângă bară. Testezi cu potențiometrul la zero, douăzeci și cinci, cincizeci, șaptezeci și cinci și o sută la sută și completezi un tabel cu poziția, bara și zona. Toate cele cinci rânduri trebuie să se potrivească.
+Provocare, trei stele. Cinci zone cu alarmă. Voltmetrul spune și în cuvinte cât de sus este potențiometrul. Adaugi un buzzer, la pinul opt. Ai cinci zone în loc de trei, cu pragurile la două sute cinci, patru sute zece, șase sute paisprezece și opt sute nouăsprezece, și mesajele foarte mic, mic, mediu, mare și foarte mare, lângă bară. Buzzerul sună doar în zona foarte mare. Testezi cu potențiometrul la zero, douăzeci și cinci, cincizeci, șaptezeci și cinci și o sută la sută și completezi un tabel cu poziția, bara, zona și buzzerul. Toate cele cinci rânduri trebuie să se potrivească.
 
 Recapitulare. Serial begin se pune o dată, în setup. Print și println afișează texte și numere. Float este pentru zecimale. Senzorul trimite un număr, iar tu decizi ce înseamnă. Map și for pot transforma un număr într-o bară pe care o vezi.
 

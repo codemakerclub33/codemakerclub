@@ -1,19 +1,15 @@
-# Lecția 10 — Telecomanda magică
+# LECȚIA 10 — Telecomanda magică
+### Proiectul modulului · infraroșu, coduri și comenzi la distanță
 **Modulul 3 · Afișaj și mișcare**  
 **Code Maker Club · Display Maker**
 
 > Proiectul modulului: controlezi LED-uri de la distanță cu o **telecomandă cu infraroșu**, ca la televizor.  
-> Proiect: **„Telecomanda mea”** · `Prenume_Nume_A3_L10`
+> Proiect: **„Telecomanda magică”** · `Prenume_Nume_A3_L10`
 
 ---
 
-## Obiectiv
-La finalul orei comanzi lumini cu o telecomandă IR.  
-**Minim:** trei butoane ale telecomenzii aprind / sting trei LED-uri.  
-**Complet:** Minim + buton **Power** care stinge totul + **volum +/−** care schimbă luminozitatea unui al patrulea LED.
-
-## De ce contează
-Telecomenzile TV, aerul condiționat și boxele folosesc **infraroșu**: un LED trimite impulsuri de lumină invizibilă, iar un receptor le transformă în **coduri**. Azi citești și folosești aceste coduri.
+## Ce facem azi
+La finalul orei ai **două proiecte**: **Telecomanda magică** (trei butoane care comută trei LED-uri, Power care stinge totul și volum +/− care schimbă luminozitatea) și o **încuietoare cu telecomandă**, care se deschide doar dacă apeși butoanele în ordinea secretă. Telecomenzile TV, aerul condiționat și boxele folosesc **infraroșu**: un LED trimite impulsuri de lumină invizibilă, iar un receptor le transformă în **coduri**. Azi citești și folosești aceste coduri.
 
 ---
 
@@ -22,12 +18,26 @@ Telecomenzile TV, aerul condiționat și boxele folosesc **infraroșu**: un LED 
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap modul · parcurgem proiectele |
-| 10–25 | Cum trimite și primește IR |
-| 25–55 | Aflăm codurile butoanelor |
-| 55–105 | Comenzi pentru LED-uri + luminozitate |
-| 105–120 | Verificare finală Modul 3, galerie |
+| 10–25 | Cum trimite și primește IR · conexiuni |
+| 25–45 | **Proiectul 1** · aflăm codurile și comandăm 3 LED-uri |
+| 45–70 | **Proiectul 1** · Power și luminozitate |
+| 70–105 | **Proiectul 2** · încuietoarea cu telecomandă |
+| 105–120 | Verificare finală Modul 3, galerie · **Bonus ★★★** pentru cine termină devreme |
 
-**Componente azi:** Arduino Uno · Breadboard · **IR Sensor** (receptor) · **IR Remote** · 4 × LED · 4 × Resistor 220 Ω · fire
+**Componente azi:** Arduino Uno · Breadboard · **IR Sensor** (receptor) · **IR Remote** · 4 × LED · 4 × Resistor 220 Ω · Piezo (doar la Bonus) · fire
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `IRrecv receptor(PIN_IR);` | Creează receptorul infraroșu, pe un pin | `IRrecv receptor(11);` |
+| `receptor.enableIRIn()` | Pornește receptorul (în `setup`) | `receptor.enableIRIn();` |
+| `receptor.decode(&rezultat)` | Adevărat când a sosit un cod | `if (receptor.decode(&rezultat)) { ... }` |
+| `rezultat.value` · `receptor.resume()` | Codul primit · pregătește receptorul pentru următorul | `unsigned long cod = rezultat.value;` |
+| `void comuta(int pin)` | Inversează un LED: aprins ↔ stins | `comuta(LED1);` |
+| `SECRET[pozitie]` | Un tablou de coduri; `pozitie` arată ce cod aștepți acum | `if (cod == SECRET[pozitie]) pozitie++;` |
 
 ---
 
@@ -62,11 +72,7 @@ Telecomanda din Tinkercad nu se conectează la nimic: o selectezi, ținând-o �
 - Receptorul primește codul, iar biblioteca `IRremote` îl **decodează**.  
 - Tu compari codul primit cu codurile pe care le cunoști și decizi ce faci.
 
-**Gata când:**  
-- [ ] Am încercat fiecare situație din listă  
-- [ ] Am notat ce nu a mers și am corectat  
-
-### 4) Pasul 1 — Aflăm codurile
+### 4) Aflăm codurile
 Orice telecomandă are alte coduri, deci mai întâi le **citim**:
 
 ```cpp
@@ -232,18 +238,105 @@ void loop() {
 - [ ] Codul complet se compilează fără erori  
 - [ ] Simularea face tot ce scrie în „Complet”  
 
+### 7) Proiectul 2 — Încuietoarea cu telecomandă
+Ca la seif, dar fără tastatură: încuietoarea se deschide doar dacă apeși **trei butoane în ordinea secretă** (de exemplu 3, 1, 2). Un buton greșit la orice pas **anulează tot** și aprinde LED-ul roșu. Codurile secrete stau într-un **tablou**, iar variabila `pozitie` ține minte cât din secvență ai nimerit. Folosește LED verde pe pin 4 și LED roșu pe pin 5 (ca LED 1 și LED 2 de la proiectul 1), iar receptorul pe pin 11.
+
+```cpp
+#include <IRremote.h>
+
+const int PIN_IR = 11;
+const int VERDE = 4;
+const int ROSU = 5;
+
+const unsigned long BTN_1 = 0xFF30CF;
+const unsigned long BTN_2 = 0xFF18E7;
+const unsigned long BTN_3 = 0xFF7A85;
+
+const int LUNGIME = 3;
+const unsigned long SECRET[LUNGIME] = {BTN_3, BTN_1, BTN_2};
+
+IRrecv receptor(PIN_IR);
+decode_results rezultat;
+
+int pozitie = 0;
+
+void lumina(int pin) {
+  digitalWrite(pin, HIGH);
+  delay(1000);
+  digitalWrite(pin, LOW);
+}
+
+void setup() {
+  pinMode(VERDE, OUTPUT);
+  pinMode(ROSU, OUTPUT);
+  receptor.enableIRIn();
+  Serial.begin(9600);
+}
+
+void loop() {
+  if (receptor.decode(&rezultat)) {
+    unsigned long cod = rezultat.value;
+
+    if (cod != 0xFFFFFFFF) {
+      if (cod == SECRET[pozitie]) {
+        pozitie++;
+        Serial.print("Corect: ");
+        Serial.println(pozitie);
+
+        if (pozitie == LUNGIME) {
+          lumina(VERDE);
+          pozitie = 0;
+        }
+      } else {
+        lumina(ROSU);
+        pozitie = 0;
+      }
+    }
+
+    receptor.resume();
+  }
+}
+```
+
+- `SECRET[pozitie]` e codul pe care îl **aștepți acum**: la început `BTN_3`, apoi `BTN_1`, apoi `BTN_2`.  
+- Dacă apeși butonul așteptat, `pozitie++` te duce la pasul următor; dacă ajungi la `LUNGIME`, încuietoarea se deschide (LED verde) și începe din nou.  
+- Orice alt buton aprinde LED-ul roșu și pune `pozitie` înapoi la 0.  
+- `0xFFFFFFFF` e semnalul de **repetare** (buton ținut apăsat): îl ignorăm, ca să nu fie luat drept greșeală.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Secvența corectă aprinde LED-ul verde, iar orice greșeală pe cel roșu  
+
+### 8) Testul încuietorii
+
+| Ce apeși | Ce vezi |
+|----------|---------|
+| 3, 1, 2 | LED verde |
+| 3, 1, 3 | LED roșu (al treilea buton e greșit) |
+| 1, 3, 1, 2 | LED roșu la primul buton; apoi începi de la zero și 3, 1, 2 dau LED verde |
+| 3, 1, 2, apoi din nou 3, 1, 2 | LED verde de două ori |
+
+Alege-ți **propria secvență secretă** schimbând ordinea din `SECRET`.
+
+**Gata când:**  
+- [ ] Am încercat fiecare secvență din tabel  
+- [ ] Am schimbat secvența secretă și am verificat-o
+
 ---
 
 ## Greșeli frecvente
 1. **Nu primești nimic** — lipsește `receptor.enableIRIn()` sau pinul nu e 11.  
 2. **Primești un singur buton** — ai uitat `receptor.resume()`.  
-3. **Butoanele nu fac nimic** — codurile din program nu sunt cele ale telecomenzii tale; citește-le cu pasul 1.  
+3. **Butoanele nu fac nimic** — codurile din program nu sunt cele ale telecomenzii tale; citește-le la pasul „Aflăm codurile”.  
 4. **LED-ul clipește la ținut apăsat** — vezi `FFFFFFFF` (repetare); ignoră-l.  
 5. **Eroare `IRremote.h`** — în Tinkercad biblioteca e inclusă; pe Arduino real trebuie instalată (și versiunile noi au alte comenzi).
+6. **Încuietoarea se deschide la orice buton** — compari cu `SECRET[0]`, nu cu `SECRET[pozitie]`.  
+7. **Nu se deschide niciodată** — codurile din program nu sunt cele ale telecomenzii tale, sau nu pui `pozitie = 0` după deschidere.  
+8. **LED roșu la un buton ținut apăsat** — nu ignori codul de repetare `FFFFFFFF`.  
 
 ---
 
-## De făcut azi — „Telecomanda mea”
+## De făcut azi — „Telecomanda magică”
 
 ### Minim vs Complet
 
@@ -251,6 +344,7 @@ void loop() {
 |--|------------|
 | **Minim** | 3 butoane comută 3 LED-uri |
 | **Complet** | Minim + Power + Vol +/− |
+| **Proiectul 2** | Încuietoare cu telecomandă: secvență secretă de 3 butoane, LED verde / roșu |
 
 ### Pasul 1 — Minim
 - [ ] Codurile butoanelor citite și notate  
@@ -261,6 +355,11 @@ void loop() {
 - [ ] Luminozitate cu Vol +/−  
 - [ ] Numele `A3_L10` e corect
 
+### Pasul 3 — Proiectul 2
+- [ ] Secvența secretă stă într-un tablou  
+- [ ] `pozitie` avansează la fiecare buton corect  
+- [ ] Un buton greșit aprinde LED-ul roșu și începe de la zero  
+
 ### Verificare finală Modul 3
 - [ ] Afișez text pe un LCD  
 - [ ] Mișc un servo la un unghi dorit  
@@ -269,15 +368,21 @@ void loop() {
 
 ---
 
-## Bonus
-- [ ] Butonul „Mute” face LED-urile să clipească 3 ori  
-- [ ] Afișează pe LCD ce buton ai apăsat
+## Bonus ★★★ — Provocare: Scene de lumină cu sunet
+*Doar dacă ai terminat Proiectul 2.*
 
-## Recapitulare rapidă
+Transformă telecomanda într-un **panou de scene**: butoanele 4, 5 și 6 pornesc efecte cu cele trei LED-uri din proiectul 1 (coduri citite de tine). **Piesă nouă:** un buzzer pe pin 8 și GND.
+
+- [ ] Butonul 4 aprinde toate cele trei LED-uri, butonul 5 le aprinde pe rând, iar butonul 6 le face să clipească de 3 ori împreună  
+- [ ] Un buton recunoscut dă un bip scurt (1000 Hz), iar un cod necunoscut un bip grav (300 Hz)  
+- [ ] Power stinge LED-urile oricând  
+
+## Recapitulare pe scurt
 1. Fiecare buton IR = un **cod**  
 2. Citește mai întâi codurile, apoi folosește-le  
 3. `resume()` după fiecare cod  
-4. `comuta()` inversează un LED
+4. `comuta()` inversează un LED  
+5. Un tablou de coduri + `pozitie` = o secvență secretă  
 
 ## Pe placa reală *(opțional)*
 Receptorul fizic (VS1838B) are 3 pini: OUT, GND, VCC. Biblioteca `IRremote` din versiunea 3 în sus folosește alte nume (`IrReceiver.decode()`), dar ideea e aceeași.
@@ -286,6 +391,12 @@ Receptorul fizic (VS1838B) are 3 pini: OUT, GND, VCC. Biblioteca `IRremote` din 
 - De ce citim mai întâi codurile?  
 - Ce face `resume()`?  
 - Cum ai adăuga un al cincilea buton?
+- De ce ignorăm codul `FFFFFFFF` la încuietoare?  
 
 ## Temă
 Desenează o telecomandă pentru **robotul tău** (4 butoane) și scrie ce face fiecare.
+
+---
+
+## Ce urmează — Modulul 4
+Ai terminat **Modulul 3**! În Modulul 4 pui laolaltă tot ce ai învățat: planifici, faci schema și construiești proiecte complete, de la o casă inteligentă la un joc de reflexe.

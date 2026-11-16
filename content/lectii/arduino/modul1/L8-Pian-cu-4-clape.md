@@ -1,10 +1,10 @@
-# LECȚIA 8 — Pianul meu
+# LECȚIA 8 — Pianul cu 4 clape
 ### Butoane, note și tablouri
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 
 > Azi faci un **pian mic**: 4 butoane, fiecare cu altă notă, și înveți **tablouri** (`array`) ca să cânți melodii.  
-> Proiect: **„Pianul meu”** · `Prenume_Nume_A1_L08`
+> Proiect: **„Pianul cu 4 clape”** · `Prenume_Nume_A1_L08`
 
 ---
 
@@ -208,7 +208,7 @@ void loop() {
 
 ---
 
-## De făcut azi — „Pianul meu”
+## De făcut azi — „Pianul cu 4 clape”
 
 ### Minim vs Complet
 

@@ -1,15 +1,15 @@
-# LECȚIA 2 — Veioza mea
+# LECȚIA 2 — Veioza automată
 ### Fotorezistor, prag și histerezis
 **Modulul 2 · Senzori**  
 **Code Maker Club · Sensor Scout**
 
 > Azi folosești un **fotorezistor** (senzor de lumină) ca să aprinzi singur un LED când se face întuneric.  
-> Proiect: **„Veioza mea”** · `Prenume_Nume_A2_L02`
+> Proiect: **„Veioza automată”** · `Prenume_Nume_A2_L02`
 
 ---
 
 ## Ce facem azi
-La finalul orei ai **două proiecte**: **Veioza mea** (un LED care se aprinde singur când se face întuneric) și **Lumina de noapte cu 3 stări** (zi, amurg și noapte). Lămpile de stradă, luminile din telefon și farurile automate folosesc același lucru: un senzor de lumină și un **prag**.
+La finalul orei ai **două proiecte**: **Veioza automată** (un LED care se aprinde singur când se face întuneric) și **Lumina de noapte cu 3 stări** (zi, amurg și noapte). Lămpile de stradă, luminile din telefon și farurile automate folosesc același lucru: un senzor de lumină și un **prag**.
 
 ---
 
@@ -24,7 +24,7 @@ La finalul orei ai **două proiecte**: **Veioza mea** (un LED care se aprinde si
 | 75–110 | **Proiectul 2** · lumina de noapte cu 3 stări |
 | 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme |
 
-**Componente azi:** Arduino Uno · Breadboard · **Photoresistor** · **Resistor 10 kΩ** · LED · Resistor 220 Ω · **Pushbutton** · fire
+**Componente azi:** Arduino Uno · Breadboard · **Photoresistor** · **Resistor 10 kΩ** · 2 × LED · 2 × Resistor 220 Ω · **Pushbutton** · fire
 
 ---
 
@@ -262,7 +262,7 @@ void loop() {
 
 ---
 
-## De făcut azi — „Veioza mea”
+## De făcut azi — „Veioza automată”
 
 ### Minim vs Complet
 

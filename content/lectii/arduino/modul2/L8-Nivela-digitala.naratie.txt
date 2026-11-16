@@ -1,8 +1,8 @@
 Lecția opt din Modulul doi. Nivela digitală.
 
-Astăzi folosești senzori de înclinare, numiți tilt, ca să construiești o nivelă: LED-urile îți arată încotro este înclinat obiectul. Proiectul se numește Nivela mea. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero opt.
+Astăzi folosești senzori de înclinare, numiți tilt, ca să construiești o nivelă: LED-urile îți arată încotro este înclinat obiectul. Proiectul se numește Nivela digitală. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero opt.
 
-Ce facem azi. La final ai două proiecte: Nivela mea, cu doi senzori de înclinare, trei LED-uri și un bip când obiectul este drept, și un pedometru care numără pașii și are buton de resetare. Telefoanele și brățările de fitness numără pașii în același fel: detectează o schimbare.
+Ce facem azi. La final ai două proiecte: Nivela digitală, cu doi senzori de înclinare, trei LED-uri și un bip când obiectul este drept, și un pedometru care numără pașii și are buton de resetare. Telefoanele și brățările de fitness numără pașii în același fel: detectează o schimbare.
 
 Instrucțiuni noi azi. Stare și nu stare anterioară detectează schimbarea din deschis în închis. Pași plus plus crește contorul cu unu. Restul împărțirii la zece, egal cu zero, înseamnă din zece în zece pași. Input pull up pentru butonul de resetare, ca în lecțiile trecute.
 
@@ -18,9 +18,9 @@ Al cincilea pas. LED, mesaj la zece pași și resetare. LED-ul urmează senzorul
 
 Greșeli frecvente. Merge invers: contactul închis înseamnă Low, nu High. Mereu aprins: senzorul nu are un pin la GND. Nu reacționează: ai uitat input pull up. Pasul se numără de zeci de ori: numeri tot timpul cât este închis, nu doar schimbarea. Ambele LED-uri laterale aprinse: senzorii nu sunt montați în oglindă. Pedometrul nu pornește de la zero: butonul de resetare nu are un picior la GND. Mesajul de zece pași apare tot timpul: ai scris împărțire în loc de rest.
 
-Proiectul de azi. Nivela mea. Minim înseamnă un senzor și un LED. Complet înseamnă doi senzori, trei LED-uri și bip. Proiectul doi înseamnă pedometru cu buton de resetare.
+Proiectul de azi. Nivela digitală. Minim înseamnă un senzor și un LED. Complet înseamnă doi senzori, trei LED-uri și bip. Proiectul doi înseamnă pedometru cu buton de resetare.
 
-Provocare, trei stele. Detectorul de scuturare. Dacă senzorul se închide de cinci ori în două secunde, măsurate cu millis, scrii scuturat, iar LED-ul clipește repede. Pașii normali, mai rari, nu declanșează scuturarea. Testezi zece pași normali, fără alarmă, și o scuturare, cu alarmă.
+Provocare, trei stele. Detectorul de scuturare cu LED de alarmă. Diferența dintre pași și scuturare. Adaugi un LED roșu, la pinul nouă, dedicat alarmei. Dacă senzorul se închide de cinci ori în două secunde, măsurat cu millis, scrii scuturat, iar LED-ul roșu clipește rapid trei secunde. Pașii normali, mai rari, nu declanșează scuturarea. Testezi zece pași normali, fără alarmă, și o scuturare, cu alarmă.
 
 Recapitulare. Senzorul de înclinare este un întrerupător cu bilă. Input pull up înseamnă că închis dă Low. Bool ajută la citirea codului. Contează momentul în care starea se schimbă. Stare și nu stare anterioară numără schimbările, nu durata.
 

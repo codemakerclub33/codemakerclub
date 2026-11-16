@@ -1,19 +1,15 @@
-# Lecția 8 — Seiful cu cod
+# LECȚIA 8 — Seiful cu cod
+### Tastatură 4×4, texte și încercări
 **Modulul 3 · Afișaj și mișcare**  
 **Code Maker Club · Display Maker**
 
 > Azi construiești un **seif**: tastezi codul pe o **tastatură 4×4**, iar LCD-ul, servo-ul și LED-urile îți spun dacă s-a deschis.  
-> Proiect: **„Seiful meu”** · `Prenume_Nume_A3_L08`
+> Proiect: **„Seiful cu cod”** · `Prenume_Nume_A3_L08`
 
 ---
 
-## Obiectiv
-La finalul orei ai un seif care se deschide doar cu codul corect.  
-**Minim:** introduci 4 cifre; dacă sunt corecte, LED verde, altfel LED roșu.  
-**Complet:** Minim + **LCD** cu stelute (`****`) + **servo** care deschide „ușa” + **3 încercări**, apoi blocare + tasta `*` șterge, `#` confirmă.
-
-## De ce contează
-Parolele, PIN-urile și lacătele electronice funcționează așa: **compari ce a tastat cineva cu ce știi tu** și decizi. Azi pui laolaltă tot ce ai învățat: LCD, servo, LED-uri, funcții și stări.
+## Ce facem azi
+La finalul orei ai **două proiecte**: **Seiful cu cod** (tastatură, LCD cu stelute, servo care deschide „ușa” și blocare după 3 încercări greșite) și un **seif cu cod schimbabil**: cine știe codul vechi poate alege unul nou. Parolele, PIN-urile și lacătele electronice funcționează așa: **compari ce a tastat cineva cu ce știi tu** și decizi. Azi pui laolaltă tot ce ai învățat: LCD, servo, LED-uri, funcții și stări.
 
 ---
 
@@ -22,12 +18,26 @@ Parolele, PIN-urile și lacătele electronice funcționează așa: **compari ce 
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap L7 · parole, de ce contează |
-| 10–35 | Conexiuni (tastatură + LCD) |
-| 35–65 | Citirea tastelor, comparare cod |
-| 65–105 | LCD, servo, încercări |
-| 105–120 | Recap, quiz, galerie |
+| 10–30 | Conexiuni (tastatură + LCD) |
+| 30–50 | **Proiectul 1** · citirea tastelor și cod de 4 cifre |
+| 50–75 | **Proiectul 1** · LCD, servo și încercări |
+| 75–110 | **Proiectul 2** · schimbarea codului |
+| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme |
 
-**Componente azi:** Arduino Uno · Breadboard · **Keypad 4 x 4** · LCD 16 x 2 · Micro Servo · LED verde · LED roșu · 2 × Resistor 220 Ω · Piezo · fire
+**Componente azi:** Arduino Uno · Breadboard · **Keypad 4 x 4** · LCD 16 x 2 · Micro Servo · LED verde · LED roșu · 3 × Resistor 220 Ω · Piezo · LED galben + Resistor 220 Ω (doar la Bonus) · fire
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `Keypad tastatura = Keypad(makeKeymap(taste), ...)` | Creează tastatura, cu tastele și pinii ei | `char tasta = tastatura.getKey();` |
+| `tastatura.getKey()` | Dă tasta apăsată, sau `0` dacă nu e nicio tastă | `if (tasta) { ... }` |
+| `introdus += tasta` | Adaugă o literă la textul `introdus` | `String introdus = "";` |
+| `introdus == COD` | Compară două texte | `if (introdus == COD) { ... }` |
+| `String cod = "1234";` | Cod care **poate fi schimbat** (fără `const`) | `cod = introdus;` |
+| `enum Mod { NORMAL, COD_VECHI, COD_NOU };` | Moduri de lucru ale seifului, ca stările de la barieră | `Mod mod = NORMAL;` |
 
 ---
 
@@ -293,6 +303,151 @@ void loop() {
 - [ ] Codul complet se compilează fără erori  
 - [ ] Simularea face tot ce scrie în „Complet”  
 
+### 6) Proiectul 2 — Seiful cu cod schimbabil
+Un seif în care codul nu se poate schimba nu e prea practic. Adăugăm **tasta A**: apeși `A`, scrii **codul vechi** și `#`; dacă e corect, scrii **codul nou** (4 cifre) și `#`, iar seiful îl ține minte. Codul nu mai e o constantă, ci o variabilă `String cod`, iar seiful are trei **moduri**: `NORMAL`, `COD_VECHI` și `COD_NOU`. Circuitul rămâne cel de la proiectul 1 (servo-ul nu e folosit azi).
+
+```cpp
+#include <Keypad.h>
+#include <LiquidCrystal.h>
+
+const byte RANDURI = 4;
+const byte COLOANE = 4;
+
+char taste[RANDURI][COLOANE] = {
+  {'1', '2', '3', 'A'},
+  {'4', '5', '6', 'B'},
+  {'7', '8', '9', 'C'},
+  {'*', '0', '#', 'D'}
+};
+
+byte pinRanduri[RANDURI] = {6, 7, 8, 9};
+byte pinColoane[COLOANE] = {A0, A1, A2, A3};
+
+Keypad tastatura = Keypad(makeKeymap(taste), pinRanduri, pinColoane, RANDURI, COLOANE);
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+enum Mod { NORMAL, COD_VECHI, COD_NOU };
+Mod mod = NORMAL;
+
+String cod = "1234";
+String introdus = "";
+const int VERDE = A4;
+const int ROSU = A5;
+
+void mesaj(String sus, String jos) {
+  lcd.clear();
+  lcd.print(sus);
+  lcd.setCursor(0, 1);
+  lcd.print(jos);
+}
+
+void ecran() {
+  lcd.clear();
+  if (mod == NORMAL) {
+    lcd.print("Introdu codul:");
+  } else if (mod == COD_VECHI) {
+    lcd.print("Cod vechi:");
+  } else {
+    lcd.print("Cod nou:");
+  }
+  lcd.setCursor(0, 1);
+  for (unsigned int i = 0; i < introdus.length(); i++) {
+    lcd.print('*');
+  }
+}
+
+void lumina(int pin) {
+  digitalWrite(pin, HIGH);
+  delay(1000);
+  digitalWrite(pin, LOW);
+}
+
+void setup() {
+  pinMode(VERDE, OUTPUT);
+  pinMode(ROSU, OUTPUT);
+  lcd.begin(16, 2);
+  ecran();
+}
+
+void loop() {
+  char tasta = tastatura.getKey();
+  if (!tasta) {
+    return;
+  }
+
+  if (tasta == '*') {
+    introdus = "";
+  } else if (tasta == 'A' && mod == NORMAL) {
+    mod = COD_VECHI;
+    introdus = "";
+  } else if (tasta == '#') {
+    if (mod == NORMAL) {
+      if (introdus == cod) {
+        mesaj("Cod corect!", "Seif deschis");
+        lumina(VERDE);
+      } else {
+        mesaj("Cod gresit!", "");
+        lumina(ROSU);
+      }
+    } else if (mod == COD_VECHI) {
+      if (introdus == cod) {
+        mod = COD_NOU;
+      } else {
+        mesaj("Cod gresit!", "Nu schimb nimic");
+        lumina(ROSU);
+        mod = NORMAL;
+      }
+    } else {
+      if (introdus.length() == 4) {
+        cod = introdus;
+        mesaj("Cod schimbat!", "Cod nou salvat");
+        lumina(VERDE);
+      } else {
+        mesaj("Trebuie 4 cifre", "Codul ramane");
+        lumina(ROSU);
+      }
+      mod = NORMAL;
+    }
+    introdus = "";
+  } else if (introdus.length() < 8) {
+    introdus += tasta;
+  }
+
+  ecran();
+}
+```
+
+| Tastă | Ce face |
+|-------|---------|
+| `0`–`9` | adaugă o cifră (apare `*` pe LCD) |
+| `*` | șterge ce ai scris |
+| `A` | începe schimbarea codului (doar în modul normal) |
+| `#` | confirmă: depinde de mod |
+
+- `String cod = "1234";` nu mai are `const`, deci îl poți înlocui: `cod = introdus;`.  
+- `mod` spune ce așteaptă seiful acum: un cod obișnuit, codul vechi sau codul nou. Același `#` face lucruri diferite în fiecare mod.  
+- Codul nou e acceptat doar dacă are **exact 4 cifre**.  
+- După fiecare confirmare, `mod` se întoarce la `NORMAL`, iar `introdus` se golește.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Cu `A`, codul vechi corect duce la „Cod nou:”, iar codul nou funcționează apoi la deschidere  
+
+### 7) Testul seifului
+
+| Pas | Ce faci | Ce vezi |
+|-----|---------|---------|
+| 1 | `1234 #` | „Cod corect!”, LED verde |
+| 2 | `A`, `1234 #`, `5678 #` | „Cod schimbat!” |
+| 3 | `1234 #` | „Cod gresit!”, LED roșu (codul vechi nu mai merge) |
+| 4 | `5678 #` | „Cod corect!” |
+| 5 | `A`, `0000 #` | „Cod gresit! Nu schimb nimic” |
+| 6 | `A`, `5678 #`, `12 #` | „Trebuie 4 cifre”, codul rămâne 5678 |
+
+**Gata când:**  
+- [ ] Am încercat fiecare pas din listă  
+- [ ] Am notat ce nu a mers și am corectat
+
 ---
 
 ## Greșeli frecvente
@@ -301,10 +456,13 @@ void loop() {
 3. **Comparația eșuează** — codul din `COD` are alt format (`"1234"` e text, cu ghilimele).  
 4. **LCD blocat** — pinii LCD se suprapun cu cei ai tastaturii.  
 5. **Servo tremură** — lipsește GND comun.
+6. **Codul nou nu se salvează** — `cod` a rămas `const`; pentru schimbare trebuie să fie variabilă.  
+7. **Seiful rămâne în modul „Cod nou” mereu** — după confirmare nu pui `mod = NORMAL`.  
+8. **Tasta `A` apare printre stelute** — în modul normal trebuie tratată înainte de `introdus += tasta`.  
 
 ---
 
-## De făcut azi — „Seiful meu”
+## De făcut azi — „Seiful cu cod”
 
 ### Minim vs Complet
 
@@ -312,6 +470,7 @@ void loop() {
 |--|------------|
 | **Minim** | Cod de 4 cifre, LED verde / roșu |
 | **Complet** | Minim + LCD cu stelute + servo + 3 încercări + `*` și `#` |
+| **Proiectul 2** | Seif cu cod schimbabil: tasta A, cod vechi, cod nou de 4 cifre, moduri cu `enum` |
 
 ### Pasul 1 — Minim
 - [ ] Tastatura citește tastele  
@@ -323,17 +482,28 @@ void loop() {
 - [ ] Blocare după 3 greșeli  
 - [ ] Numele `A3_L08` e corect
 
+### Pasul 3 — Proiectul 2
+- [ ] Trei moduri: `NORMAL`, `COD_VECHI`, `COD_NOU`  
+- [ ] Codul vechi corect duce la introducerea codului nou  
+- [ ] Codul nou are exact 4 cifre și funcționează după schimbare  
+
 ---
 
-## Bonus
-- [ ] **Schimbarea codului:** cu tasta `A` introduci codul vechi, apoi cel nou  
-- [ ] O parolă de **6 cifre**
+## Bonus ★★★ — Provocare: Parolă de 6 cifre și LED de mod
+*Doar dacă ai terminat Proiectul 2.*
 
-## Recapitulare rapidă
-1. `Keypad` + `getKey()` citește tastatura  
-2. `String` păstrează ce a tastat utilizatorul  
-3. Funcțiile `deschide()` / `gresit()` fac codul clar  
-4. Un contor de încercări limitează ghicitul
+Fă seiful mai greu de ghicit. **Piesă nouă:** un LED galben pe pin 13 (prin 220 Ω), care arată că seiful e în modul de schimbare a codului. În proiectul 2 buzzerul nu se folosește, deci pin 13 e liber.
+
+- [ ] Lungimea codului e o constantă `NR_CIFRE` (6), folosită peste tot, iar codul nou trebuie să aibă exact `NR_CIFRE` cifre  
+- [ ] LED-ul galben e aprins cât timp seiful așteaptă codul vechi sau codul nou  
+- [ ] După 3 greșeli la rând, seiful se blochează 10 secunde, cu un numărător pe LCD  
+
+## Recapitulare pe scurt
+1. `Keypad` + `getKey()` citesc tastele  
+2. `String` ține ce a tastat utilizatorul; `+=` adaugă  
+3. Compari cu `==` și golești `introdus` după fiecare încercare  
+4. `enum Mod` dă seifului mai multe moduri, ca stările de la barieră  
+5. Un `#` poate face lucruri diferite, în funcție de mod  
 
 ## Pe placa reală *(opțional)*
 Un seif real nu ține codul în text simplu în program și folosește un încuietor puternic. Aici învățăm principiul: **comparăm și decidem**.
@@ -342,6 +512,12 @@ Un seif real nu ține codul în text simplu în program și folosește un încui
 - Ce returnează `getKey()` dacă nu apeși nimic?  
 - De ce afișăm `*` și nu cifrele?  
 - Ce se întâmplă după 3 încercări greșite?
+- De ce `cod` nu mai are `const` în proiectul 2?  
 
 ## Temă
 Gândește-te la 3 locuri unde se folosește un cod PIN și ce ar trebui să se întâmple la 3 greșeli.
+
+---
+
+## Ce urmează — Lecția 9
+În **lecția 9** legi un inel de LED-uri NeoPixel și faci efecte de lumină: o rază, un curcubeu și o respirație.

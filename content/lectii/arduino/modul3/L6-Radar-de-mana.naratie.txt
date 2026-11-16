@@ -1,25 +1,33 @@
-Lecția șase din Modulul trei. Radar de mână.
+Lecția șase din Modulul trei. Radar cu servo.
 
-Astăzi pui un senzor de distanță pe un servo și construiești un radar care scanează camera. Proiectul se numește Radarul meu. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero șase.
+Astăzi construiești un radar care se rotește și raportează obiectele din jur. Proiectul se numește Radar cu servo. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero șase.
 
-Obiectivul. La final ai un radar care se rotește și raportează obiectele din jur. Minim: servo care se rotește de la zero la o sută optzeci de grade și afișează distanța la fiecare unghi în Serial Monitor. Complet: minim, plus LED de alertă și buzzer când găsește un obiect aproape, plus memorarea unghiului obiectului celui mai apropiat.
+Ce facem azi. La final ai două proiecte: Radarul, cu un senzor de distanță pe un servo, care scanează de la zero la o sută optzeci de grade, dă alerta când găsește ceva aproape și reține unghiul obiectului celui mai apropiat, și un radar care arată spre țintă: după scanare se oprește exact în direcția obiectului. Radarele, sonarele și LIDAR-ul mașinilor autonome fac același lucru: rotesc un senzor și construiesc o hartă a ce este în jur.
 
-De ce contează. Radarele, sonarele și L I D A R-ul mașinilor autonome fac același lucru: rotesc un senzor și construiesc o hartă a ce este în jur.
+Instrucțiuni noi azi. Plus egal zece face pași de zece grade. O funcție cu parametri scanează de la un unghi la altul, cu un pas, iar un pas negativ inversează sensul. Cel mai apropiat pornește de la nouă sute nouăzeci și nouă, ca orice măsurătoare să-l bată. Afișezi unghiul și distanța despărțite de virgulă, ca în aplicațiile reale de radar. Write duce radarul spre un unghi reținut. Condiția distanță mai mare decât zero și mai mică decât pragul ignoră lipsa ecoului.
 
-Primul pas. Conexiuni. Servo-ul are roșu la cinci volți, negru la GND și semnal la pinul nouă. Senzorul cu ultrasunete are Trig la pinul șapte, iar în Tinkercad îl lipești pe servo, ca să se rotească împreună cu el.
+Primul pas. Conexiuni. Servo-ul are roșu la cinci volți, negru la GND și semnal la pinul nouă. Senzorul are Trig la pinul șapte și Echo la pinul șase. LED-ul roșu este la pinul patru, cu rezistor, iar piezo la pinul opt. În Tinkercad lipești senzorul de brațul servo, ca să se rotească împreună.
 
-Al doilea pas. Scanarea. Cu un for muți servo-ul grad cu grad. La fiecare unghi aștepți puțin, ca servo-ul să ajungă, măsori distanța și scrii în Serial Monitor unghiul și distanța.
+Al doilea pas. Minim, scanarea. Servo-ul merge de la zero la o sută optzeci de grade, din zece în zece, și înapoi. La fiecare unghi aștepți trei sute de milisecunde, ca servo-ul să ajungă, apoi măsori și afișezi unghiul și distanța.
 
-Al treilea pas. O funcție de scanare. Scrii funcția scanează, care primește unghiul de început, unghiul de final și pasul. Cu pas negativ scanezi și în sens invers, deci radarul merge înainte și înapoi.
+Al treilea pas. O funcție pentru un singur sens. Ca să nu duplici codul, faci o funcție care scanează între două unghiuri, cu un pas. Pasul negativ inversează sensul.
 
-Al patrulea pas, pentru Complet. Păstrezi, în variabile globale, cea mai mică distanță găsită și unghiul ei. Dacă un obiect este sub un prag, aprinzi LED-ul și sună buzzerul.
+Al patrulea pas, pentru Complet. Alertă și cel mai apropiat obiect. Două variabile globale rețin cea mai mică distanță și unghiul ei. La început de scanare, distanța pornește foarte mare. Sub treizeci de centimetri se aprind LED-ul și buzzerul. La final scrii raportul: cel mai apropiat obiect este la atâția centimetri, la atâtea grade.
 
-Al cincilea pas. Cum citești rezultatul. Dacă în Serial Monitor vezi șaptezeci, virgulă, optsprezece, înseamnă că la șaptezeci de grade este ceva la optsprezece centimetri. Pune un obiect în fața radarului și învârte-l, ca să vezi cum se schimbă unghiul.
+Al cincilea pas. Cum citești rezultatul. Dacă vezi șaptezeci, virgulă, optsprezece, înseamnă că la șaptezeci de grade este ceva la optsprezece centimetri.
 
-Greșeli frecvente. Distanțe aiurea: măsori înainte ca servo-ul să ajungă, deci mărește delay-ul. Ciclu infinit: condiția din for nu este atinsă. Senzorul nu se rotește: nu este lipit de servo. Zgomot: alertele se declanșează mereu, deci mărește pragul sau fă media a trei măsurători. Servo tremură: lipsește GND comun.
+Al șaselea pas. Proiectul doi, radarul care arată spre țintă. Scanezi o dată de la zero la o sută optzeci de grade și reții doar unghiul obiectului celui mai apropiat. Apoi întorci radarul exact spre el și aprinzi LED-ul pentru două secunde, iar în Serial Monitor scrii unghiul și distanța. Dacă nu găsești nimic mai aproape de o sută de centimetri, scrii că nu vezi nimic. La final radarul se întoarce la zero, ca următoarea scanare să înceapă din același loc.
 
-Proiectul de azi. Radarul meu. Minim înseamnă scanare și afișare. Complet înseamnă alertă și cel mai apropiat obiect.
+Al șaptelea pas. Testul radarului. Un obiect la patruzeci de centimetri, în dreapta: radarul arată spre el. Îl muți în partea opusă: unghiul se schimbă la următoarea scanare. Cu două obiecte, la treizeci și la șaizeci de centimetri, radarul alege pe cel de la treizeci. Fără obiecte, scrie că nu vede nimic și LED-ul rămâne stins.
 
-Recapitulare. Senzor plus servo înseamnă radar. O funcție cu pas negativ scanează în ambele sensuri. Variabilele globale rețin cel mai bun rezultat. Așteptăm servo-ul înainte să măsurăm.
+Greșeli frecvente. Distanțe aiurea: măsori înainte ca servo-ul să ajungă, deci mărești pauza. Ciclu infinit: condiția din for nu este atinsă. Senzorul nu se rotește: nu este lipit de servo. Zgomot: alertele se declanșează mereu, deci mărești pragul sau faci media a trei măsurători. Servo tremură: lipsește GND comun. Radarul arată mereu spre aceeași direcție: nu ai resetat distanța la nouă sute nouăzeci și nouă. Arată spre un obiect care nu există: ai tratat lipsa ecoului ca distanță mică. Prima măsurătoare este aiurea: radarul nu a ajuns încă la zero la pornire.
+
+Proiectul de azi. Radar cu servo. Minim înseamnă scanare cu distanța afișată. Complet înseamnă alertă și cel mai apropiat obiect. Proiectul doi înseamnă radar care se întoarce spre țintă.
+
+Provocare, trei stele. Radar cu pauză. Adaugi un buton, la pinul doi, care oprește scanarea pe loc: servo-ul rămâne la unghiul curent, iar a doua apăsare o reia de unde a rămas. În pauză, Serial Monitor scrie în fiecare secundă distanța măsurată la unghiul curent. Pasul scanării este o constantă, cinci sau zece, schimbată într-un singur loc.
+
+Recapitulare. For cu plus egal zece scanează în trepte. Funcția de scanare merge în ambele sensuri. Cel mai apropiat pornește de la o valoare mare și se corectează. Distanța mai mare decât zero ignoră lipsa ecoului. Un unghi reținut poate fi refolosit cu write.
+
+Ce urmează. În lecția șapte treci de la servo la un motor de curent continuu, pornit printr-un tranzistor, și construiești un ventilator.
 
 Succes cu radarul.

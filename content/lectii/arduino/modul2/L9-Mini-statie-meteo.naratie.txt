@@ -1,6 +1,6 @@
 Lecția nouă din Modulul doi. Mini stație meteo.
 
-Astăzi combini doi senzori, temperatură și lumină, într-o mică stație meteo, cu raport în Serial Monitor. Proiectul se numește Stația mea meteo. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero nouă.
+Astăzi combini doi senzori, temperatură și lumină, într-o mică stație meteo, cu raport în Serial Monitor. Proiectul se numește Mini stație meteo. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero nouă.
 
 Ce facem azi. La final ai două proiecte: Stația meteo, cu temperatură, lumină, minime și maxime și mesaje, și o stație cu buton de resetare și medie, care netezește citirile. Stațiile meteo adevărate fac același lucru: măsoară, rețin extremele și calculează medii.
 
@@ -18,7 +18,7 @@ Al cincilea pas. Media ultimelor cinci temperaturi. O citire singură poate săr
 
 Greșeli frecvente. Valori amestecate: senzorii sunt pe pinul greșit, A zero sau A unu. Minim și maxim greșite: le-ai declarat în loop, nu global, și se resetează la fiecare rundă. Raport prea des: lipsește delay de două mii. Lumină negativă: folosește constrain. Apar semne ciudate în loc de simbolul gradului: scrie simplu C. Butonul de resetare întârzie: ai lăsat delay de două secunde. Media este greșită la început: împarți la cinci în loc de numărul de citiri.
 
-Proiectul de azi. Stația mea meteo. Minim înseamnă două funcții și un raport. Complet înseamnă minime, maxime și mesaje. Proiectul doi înseamnă buton de resetare și media ultimelor cinci temperaturi.
+Proiectul de azi. Mini stație meteo. Minim înseamnă două funcții și un raport. Complet înseamnă minime, maxime și mesaje. Proiectul doi înseamnă buton de resetare și media ultimelor cinci temperaturi.
 
 Provocare, trei stele. Alarma meteo. Un LED roșu la pinul doisprezece și un mesaj de avertizare când temperatura trece de treizeci de grade sau lumina scade sub zece la sută. Raportul se scrie și în formatul temperatură, punct și virgulă, lumină. Testezi patru scenarii: cald și lumină, cald și întuneric, rece și lumină, rece și întuneric, și notezi dacă alarma este corectă.
 

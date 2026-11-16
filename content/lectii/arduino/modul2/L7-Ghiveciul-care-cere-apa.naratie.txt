@@ -1,10 +1,10 @@
-Lecția șapte din Modulul doi. Ghiveciul care cere apă.
+Lecția șapte din Modulul doi. Ghiveciul inteligent.
 
-Astăzi un senzor de umiditate a solului îți spune când planta are nevoie de apă. Proiectul se numește Planta mea. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero șapte.
+Astăzi un senzor de umiditate a solului îți spune când planta are nevoie de apă. Proiectul se numește Ghiveciul inteligent. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero șapte.
 
-Ce facem azi. La final ai două proiecte: Planta mea, cu umiditatea în procente, trei LED-uri și buzzer, și o pompă automată, care pornește când solul este uscat și se oprește când este destul de ud. Sistemele de irigații inteligente funcționează așa.
+Ce facem azi. La final ai două proiecte: Ghiveciul inteligent, cu umiditatea în procente, trei LED-uri și buzzer, și o plantă care vorbește: îți amintește la zece secunde că îi este sete și îți spune mulțumesc după ce o uzi. Sistemele de irigații inteligente funcționează după aceeași idee: măsoară, decid și te anunță.
 
-Instrucțiuni noi azi. Millis dă milisecundele de la pornire și face reamintiri fără delay. Unsigned long ține minte când ai făcut ceva ultima dată. Procentul anterior te lasă să compari valoarea de acum cu cea de dinainte. Două praguri diferite dau histerezis: pornește sub un prag și oprește peste altul.
+Instrucțiuni noi azi. Millis dă milisecundele de la pornire și face reamintiri fără delay. Unsigned long ține minte când ai făcut ceva ultima dată. Procentul anterior te lasă să compari valoarea de acum cu cea de dinainte. Două praguri diferite dau histerezis: pornește sub un prag și oprește peste altul, iar îl folosești la provocare.
 
 Primul pas. Conexiuni. Senzorul de sol are semnal la A zero, alimentare la cinci volți și GND. LED-ul roșu, pentru uscat, este la pinul patru, cel verde, pentru în regulă, la pinul cinci, iar cel albastru, pentru prea ud, la pinul șase. Piezo este la pinul opt. În Tinkercad dai click pe senzor și muți glisorul de umiditate.
 
@@ -20,7 +20,7 @@ Al șaselea pas. Mulțumesc. Planta poate spune și mulțumesc. Ții minte proce
 
 Greșeli frecvente. Mereu zero la sută: senzorul nu este alimentat sau semnalul nu este la A zero. Procente negative: ai uitat constrain sau calibrarea este greșită. Prea sensibil: mărește zona în regulă. Buzzerul sună continuu: folosește tone cu durată, al treilea argument. Merge invers cu senzorul real: inversează valorile în map. Planta cere apă la fiecare secundă: ai uitat să notezi momentul reamintirii. Mulțumesc nu apare niciodată: procentul anterior este declarat în loop, nu în afara funcțiilor.
 
-Proiectul de azi. Planta mea. Minim înseamnă LED roșu când solul este uscat. Complet înseamnă procente, trei LED-uri și buzzer. Proiectul doi înseamnă reamintire la zece secunde și mesajul de mulțumire.
+Proiectul de azi. Ghiveciul inteligent. Minim înseamnă LED roșu când solul este uscat. Complet înseamnă procente, trei LED-uri și buzzer. Proiectul doi înseamnă reamintire la zece secunde și mesajul de mulțumire.
 
 Provocare, trei stele. Pompa automată. Un LED albastru la pinul trei este pompa. Pornește sub treizeci la sută și se oprește abia peste șaizeci la sută, adică are histerezis. Testezi cu glisorul de la zero la o sută și înapoi la zero: pompa pornește o singură dată și se oprește o singură dată. Între treizeci și șaizeci la sută pompa își păstrează starea de dinainte.
 

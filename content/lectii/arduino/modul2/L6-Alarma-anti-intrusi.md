@@ -24,7 +24,7 @@ La finalul orei ai **două proiecte**: **Santinela** (o alarmă care se armează
 | 75–110 | **Proiectul 2** · întârziere de ieșire și contor de alarme |
 | 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme |
 
-**Componente azi:** Arduino Uno · Breadboard · **PIR Sensor** · Pushbutton · 2 × LED (verde, roșu) · 2 × Resistor 220 Ω · Piezo · fire
+**Componente azi:** Arduino Uno · Breadboard · **PIR Sensor** · Pushbutton · 2 × LED (verde, roșu) · 2 × Resistor 220 Ω · Piezo · LED galben + Resistor 220 Ω (doar la Bonus) · fire
 
 ---
 
@@ -64,8 +64,8 @@ PIR („Passive InfraRed”) simte **căldura** corpurilor care se mișcă. Are 
 | **Piezo** | pin **8** și **GND** |
 
 **Gata când:**  
-- [ ] Am încercat fiecare situație din listă  
-- [ ] Am notat ce nu a mers și am corectat  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Minim — mișcare = LED
 
@@ -280,14 +280,14 @@ Apoi, în `loop()`, după ce ai calculat `activ`:
 
 ---
 
-## Bonus ★★★ — Provocare: Jurnalul alarmei
+## Bonus ★★★ — Provocare: Jurnalul alarmei cu LED de progres
 *Doar dacă ai terminat Proiectul 2.*
 
-Alarma ține minte **când** a sunat.
+Alarma ține minte **când** a sunat. **Piesă nouă:** un LED galben pe pin 9 (prin 220 Ω), care arată cât ții butonul apăsat.
 
 - [ ] Fiecare alarmă se scrie în Serial Monitor cu momentul ei, de exemplu **„Alarma #2 la 41 s”** (`millis() / 1000`)  
-- [ ] **Apăsare lungă:** dezarmezi doar dacă ții butonul **2 secunde**, nu la o atingere  
-- [ ] Testezi **3 intruziuni** la momente diferite, la cel puțin 2 secunde una de alta, și verifici că jurnalul arată timpi crescători
+- [ ] **Apăsare lungă:** dezarmezi doar dacă ții butonul **2 secunde**; LED-ul galben e aprins cât ții butonul apăsat și se stinge dacă îl lași mai devreme  
+- [ ] Testezi **3 intruziuni** la momente diferite, la cel puțin 2 secunde una de alta, și verifici că jurnalul arată timpi crescători  
 
 ## Recapitulare pe scurt
 1. PIR dă `HIGH` când vede mișcare  

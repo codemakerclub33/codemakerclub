@@ -1,23 +1,31 @@
 Lecția doi din Modulul trei. Panou de informații.
 
-Astăzi transformi L C D-ul într-un panou care schimbă pagini la apăsarea unui buton: temperatura, lumina și un mesaj. Proiectul se numește Panoul meu. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero doi.
+Astăzi transformi ecranul într-un panou care schimbă pagini la apăsarea unui buton: temperatura, lumina și un mesaj. Proiectul se numește Panou de informații. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero doi.
 
-Obiectivul. La final ai un panou cu mai multe pagini pe L C D. Minim: T M P treizeci și șase, cu temperatura pe L C D, actualizată la fiecare secundă. Complet: minim, plus trei pagini, temperatură, lumină și mesaj, schimbate cu un buton, fără clipiri.
+Ce facem azi. La final ai două proiecte: panoul de informații, cu trei pagini schimbate cu un buton, și un termometru cu minim și maxim, care ține minte cea mai rece și cea mai caldă valoare. Aproape orice aparat cu ecran are pagini și valori care se actualizează singure, fără clipiri.
 
-De ce contează. Aproape orice aparat cu ecran are meniuri sau pagini. Azi înveți să ții evidența paginii curente și să desenezi doar ce trebuie.
+Instrucțiuni noi azi. Print cu o zecimală afișează un număr cu o zecimală. Semnul procent dă restul împărțirii și face ciclul zero, unu, doi, zero. Frontul înseamnă că acționezi doar în clipa apăsării butonului. Millis face ceva periodic, fără delay. Funcțiile împart desenul în părți. Pornești minimul cu o valoare uriașă, pe care orice măsurătoare o bate.
 
-Primul pas. Conexiuni. L C D-ul rămâne conectat exact ca în lecția unu. Adaugi senzorul de temperatură, senzorul de lumină și un buton pentru schimbarea paginii.
+Primul pas. Conexiuni. Ecranul rămâne conectat exact ca în lecția unu. Adaugi senzorul de temperatură la pinul A unu, fotorezistorul la pinul A zero, cu rezistor de zece kiloohmi, și butonul la pinul șapte și la GND.
 
-Al doilea pas. Minim. Citești temperatura ca în Modulul doi, o transformi în grade și o scrii pe al doilea rând al ecranului, cu un delay de o secundă.
+Al doilea pas. Minim. Citești senzorul de temperatură, calculezi gradele și le scrii pe ecran, cu o zecimală, o dată pe secundă.
 
-Al treilea pas. Pagini cu buton. Ții minte pagina curentă într-o variabilă. Butonul o crește: zero, unu, doi, apoi iar zero. Pentru asta folosești operatorul modulo, semnul procent. Cu if sau switch afișezi conținutul paginii alese.
+Al treilea pas. Pagini cu buton. Ții minte pagina curentă într-o variabilă. Butonul o crește cu operatorul procent, adică restul împărțirii, iar după ultima pagină revii la prima. Schimbi pagina doar în clipa apăsării, nu cât timp butonul este ținut.
 
-Al patrulea pas, pentru Complet. Valori vii, fără clipiri. Dacă temperatura se afișează o singură dată, rămâne neschimbată. Vrem s-o actualizăm, dar fără clear la fiecare rundă, pentru că face ecranul să clipească. Redesenezi doar rândul doi, iar clear apelezi doar când se schimbă pagina. Actualizarea periodică se face cu millis.
+Al patrulea pas, pentru Complet. Valori vii, fără clipiri. Nu ștergi ecranul la fiecare rundă, pentru că ar clipi. Titlul se desenează doar la schimbarea paginii, iar valoarea se redesenează la fiecare cinci sute de milisecunde, cu millis. Spațiile de la sfârșit șterg resturile.
 
-Greșeli frecvente. Ecranul clipește: ai pus clear în loop la fiecare rundă. Pagina sare peste mai multe: numeri tot timpul cât este apăsat butonul, nu doar momentul apăsării. Rămân cifre vechi: lipsesc spațiile. Temperatura rămâne mereu la fel: funcția nu este apelată periodic. Eroare la compilare: ai omis punct și virgulă după print sau acolade.
+Al cincilea pas. Proiectul doi, minim și maxim. Pornești minimul de la o sută și maximul de la minus o sută. Orice temperatură reală le înlocuiește la prima măsurătoare. După fiecare măsurătoare compari: dacă temperatura este mai mică decât minimul, devine minim, iar dacă este mai mare decât maximul, devine maxim. Pe primul rând apare temperatura de acum, iar pe al doilea minimul și maximul. Butonul le resetează.
 
-Proiectul de azi. Panoul meu. Minim înseamnă temperatura pe L C D. Complet înseamnă trei pagini cu buton.
+Al șaselea pas. Testul. Pornești simularea: minimul și maximul sunt egale cu temperatura de acum. Crești temperatura și crește maximul. O scazi sub valoarea de început și scade minimul. Apeși butonul și ambele se aliniază din nou.
 
-Recapitulare. Păstrăm pagina curentă într-o variabilă. Procentul face ciclul zero, unu, doi, zero. Clear doar la schimbarea paginii. Millis pentru actualizări periodice.
+Greșeli frecvente. Ecranul clipește: ai șters ecranul la fiecare rundă. Pagina sare peste mai multe: numeri tot timpul cât este apăsat, nu doar frontul. Rămân cifre vechi: lipsesc spațiile. Temperatura rămâne mereu la fel: valoarea nu este redesenată periodic. Eroare la compilare: ai omis un punct și virgulă sau o acoladă. Minimul rămâne o sută: ai uitat comparația cu minimul. Minimul și maximul se schimbă la fiecare măsurătoare: le resetezi în loop fără buton. Butonul nu resetează nimic: lipsește input pull up.
+
+Proiectul de azi. Panou de informații. Minim înseamnă temperatura pe ecran. Complet înseamnă trei pagini, valori actualizate, fără clipiri. Proiectul doi înseamnă termometru cu minim și maxim.
+
+Provocare, trei stele. Panou cu alertă de căldură. Pui termometrul cu minim și maxim ca a patra pagină a panoului. Adaugi un LED roșu, la pinul opt, care se aprinde când temperatura trece de treizeci de grade și se stinge sub douăzeci și opt, ca să nu clipească la limită. Alerta funcționează pe oricare pagină, nu doar pe prima.
+
+Recapitulare. Păstrezi pagina curentă într-o variabilă. Procentul face ciclul. Clear doar la schimbarea paginii. Millis pentru actualizări periodice. Minimul și maximul pornesc din valori extreme și se corectează la fiecare măsurătoare.
+
+Ce urmează. În lecția trei legi un afișaj cu șapte segmente și construiești o numărătoare inversă de rachetă, cu buton și bip.
 
 Succes cu panoul.

@@ -1,10 +1,10 @@
-# LECȚIA 3 — Lumina mea de veghe
+# LECȚIA 3 — Lumina de veghe
 ### Buton și decizii: if și else
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 
 > Azi citești un **buton** cu Arduino și iei **decizii** cu `if` / `else`.  
-> Proiect: **„Lumina mea de veghe”** · `Prenume_Nume_A1_L03`
+> Proiect: **„Lumina de veghe”** · `Prenume_Nume_A1_L03`
 
 ---
 
@@ -183,7 +183,7 @@ void loop() {
 
 ---
 
-## De făcut azi — „Lumina mea de veghe”
+## De făcut azi — „Lumina de veghe”
 
 ### Minim vs Complet
 

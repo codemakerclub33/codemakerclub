@@ -1,25 +1,31 @@
-Lecția trei din Modulul trei. Numărătoare inversă.
+Lecția trei din Modulul trei. Lansarea rachetei.
 
-Astăzi lucrezi cu afișajul cu șapte segmente și faci o numărătoare inversă de la nouă la zero, ca la lansarea unei rachete. Proiectul se numește Lansarea rachetei. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero trei.
+Astăzi legi un afișaj cu șapte segmente și construiești o numărătoare inversă de rachetă. Proiectul se numește Lansarea rachetei. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero trei.
 
-Obiectivul. La final ai o numărătoare inversă care se termină cu un bip lung. Minim: afișezi pe rând cifrele nouă, opt, șapte, până la zero. Complet: minim, plus un buton de start, buzzer la final și un LED care se aprinde la Decolare.
+Ce facem azi. La final ai două proiecte: Lansarea rachetei, o numărătoare inversă de la nouă la zero, pornită cu un buton, cu bip la fiecare cifră și LED la decolare, și un zar electronic, care se rotește tot mai încet și se oprește la un număr de la unu la șase. Cifrele de pe cuptoare, ceasuri și aparate digitale sunt făcute din segmente: șapte LED-uri puse în forma lui opt.
 
-De ce contează. Cifrele de pe ceasuri, cuptoare și aparate digitale sunt făcute din segmente. Un afișaj cu șapte segmente înseamnă șapte LED-uri puse în forma lui opt, iar tu decizi care se aprind.
+Instrucțiuni noi azi. Un tablou cu două dimensiuni ține zece cifre a câte șapte segmente. O funcție afișează segmentele unei cifre. Un for numără înapoi, cu minus minus. Random dă un număr aleatoriu, iar limita de sus nu intră. Random Seed amestecă generatorul. Tone dă un bip scurt.
 
-Primul pas. Segmentele. Ele se numesc a, b, c, d, e, f și g.
+Primul pas. Segmentele și conexiunile. Segmentele se numesc a, b, c, d, e, f și g. Le legi la pinii doi până la opt, fiecare printr-un rezistor de două sute douăzeci de ohmi. Pinul comun, catodul, merge la GND. Butonul este la pinul zece, piezo la pinul unsprezece, iar LED-ul la pinul doisprezece, cu rezistor. Dacă afișajul tău are anod comun, îl legi la cinci volți și logica se inversează.
 
-Al doilea pas. Conexiuni. Afișajul cu catod comun are un pin comun, la GND, iar fiecare segment are propriul pin. Pui un rezistor de două sute douăzeci de ohmi pe fiecare segment. Segmentele merg la pinii de la doi la opt, iar butonul la pinul zece.
+Al doilea pas. Tabelul cifrelor. Fiecare cifră înseamnă o combinație de segmente, unu pentru aprins și zero pentru stins, în ordinea a, b, c, d, e, f, g. De exemplu, cifra opt le aprinde pe toate.
 
-Al treilea pas. Tabelul cifrelor. Fiecare cifră înseamnă o combinație de segmente: unu înseamnă aprins, zero stins, în ordinea a, b, c, d, e, f, g. De exemplu, pentru cifra opt sunt aprinse toate, iar pentru cifra unu doar b și c.
+Al treilea pas. Minim. Pui tabelul într-un tablou cu două dimensiuni. O funcție parcurge cele șapte segmente și le aprinde sau le stinge după tabel. În loop numeri înapoi de la nouă la zero, cu o secundă între cifre.
 
-Al patrulea pas. Minim. Păstrezi pinii într-un tablou și cifrele într-un tablou cu două dimensiuni, zece rânduri a câte șapte valori. Un for în jos, cu c minus minus, trece de la nouă la zero, iar o funcție, afișează, aprinde segmentele potrivite.
+Al patrulea pas, pentru Complet. Start, bip, decolare. Numărătoarea pornește când apeși butonul. La fiecare cifră se aude un bip scurt. La zero sună lung și se aprinde LED-ul, adică decolare. Apoi totul revine la nouă.
 
-Al cincilea pas, pentru Complet. Numărătoarea pornește la apăsarea butonului. La zero sună buzzerul, iar LED-ul se aprinde la Decolare.
+Al cincilea pas. Proiectul doi, zarul electronic. Un zar adevărat se rostogolește și încetinește. La apăsare, afișajul schimbă cifre la întâmplare, iar pauza dintre ele crește, de la patruzeci la patru sute de milisecunde, până când zarul se oprește pe rezultat. Random unu, șapte dă numere de la unu la șase. Random Seed citește un pin neconectat, care prinde zgomot electric, ca de fiecare dată să iasă altceva.
 
-Greșeli frecvente. Cifre ciudate: un segment este conectat la alt pin față de tablou. Toate segmentele aprinse: comunul este la cinci volți, anod comun, în loc de GND. Segmente slabe: lipsesc rezistoarele sau valorile sunt prea mari. Eroare la compilare: lipsește punct și virgulă după acolada tabloului. Pornește singură: butonul n-are input pull up.
+Al șaselea pas. Testul zarului. Arunci zarul de douăsprezece ori și notezi ce a ieșit. Nu trebuie să iasă fiecare cifră de două ori, dar nu au voie să apară zero, șapte, opt sau nouă.
 
-Proiectul de azi. Lansarea rachetei. Minim înseamnă cifrele de la nouă la zero. Complet înseamnă buton, buzzer și LED.
+Greșeli frecvente. Cifre ciudate: un segment este la alt pin decât în tablou. Toate segmentele aprinse: pinul comun este la cinci volți, nu la GND. Segmente slabe: lipsesc rezistoarele. Eroare la compilare: lipsește punct și virgulă după acolada tabloului. Pornește singură: butonul nu are input pull up. Zarul nu arată niciodată șase: ai scris random unu, șase, iar limita de sus nu intră. La fiecare pornire ies aceleași numere: lipsește random Seed. Zarul se învârte la fel de repede: pauza nu crește.
 
-Recapitulare. Șapte segmente înseamnă șapte LED-uri, câte un pin. Tabelul cifrelor stă într-un tablou cu două dimensiuni. For în jos se face cu c minus minus. O funcție, afișează, ține codul curat.
+Proiectul de azi. Lansarea rachetei. Minim înseamnă numărătoarea de la nouă la zero. Complet înseamnă buton, bip și LED la final. Proiectul doi înseamnă zarul electronic.
 
-Succes la lansare.
+Provocare, trei stele. Start reglabil și eroare. Adaugi un potențiometru, cu mijlocul la pinul A zero, care alege cifra de la care pornește numărătoarea din primul proiect, între trei și nouă. Afișajul o arată înainte să apeși butonul. Dacă apeși butonul în timpul numărătorii, afișajul arată litera E, de la eroare, cu segmentele a, d, e, f și g, o secundă, apoi numărătoarea continuă.
+
+Recapitulare. Șapte segmente sunt șapte LED-uri, câte un pin. Tabelul cifrelor stă într-un tablou cu două dimensiuni. For în jos cu minus minus. O funcție ține codul curat. Random unu, șapte dă numere de la unu la șase, iar Random Seed le amestecă.
+
+Ce urmează. În lecția patru conectezi un servomotor și faci un braț de robot care salută, se mișcă lin și ascultă de un potențiometru.
+
+Succes cu racheta.

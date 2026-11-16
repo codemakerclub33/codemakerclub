@@ -1,4 +1,4 @@
-Lecția unu. Hello, Arduino!
+Lecția unu. LED-ul care clipește.
 
 Astăzi pornești simulatorul Tinkercad Circuits, cunoști placa Arduino Uno și faci primul LED să clipească. Proiectul se numește LED-ul care clipește. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero unu.
 

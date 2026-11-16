@@ -1,25 +1,33 @@
-Lecția patru din Modulul trei. Servo-ul care salută.
+Lecția patru din Modulul trei. Robotul care salută.
 
-Astăzi dai mișcare proiectelor: un servomotor care poate merge exact la unghiul pe care îl alegi. Proiectul se numește Robotul care salută. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero patru.
+Astăzi conectezi un servomotor și faci un braț de robot care salută. Proiectul se numește Robotul care salută. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero patru.
 
-Obiectivul. La final ai un braț de robot care face cu mâna. Minim: servo care merge la zero, nouăzeci și o sută optzeci de grade. Complet: minim, plus mișcare fluidă înainte și înapoi, control cu potențiometrul și salut la apăsarea unui buton.
+Ce facem azi. La final ai două proiecte: Robotul care salută, cu un servo care merge la unghiuri fixe, se mișcă lin, ascultă de un potențiometru și face cu mâna la apăsarea unui buton, și un braț cu gesturi, da, nu și salut, cu viteza reglată din potențiometru. Brațele de roboți, flapsurile avioanelor și direcția mașinilor de jucărie folosesc servomotoare: un servo știe unde este și se oprește exact la unghiul cerut.
 
-De ce contează. Brațele de roboți, flapsurile avioanelor și direcția mașinilor cu telecomandă folosesc servomotoare. Un servo știe unde este și se oprește exact la unghiul cerut.
+Instrucțiuni noi azi. Incluzi biblioteca Servo și creezi un obiect de tip Servo. Attach îi spune pe ce pin este semnalul. Write îl duce la un unghi între zero și o sută optzeci de grade. O funcție, merge La, mută brațul grad cu grad până la țintă. While repetă cât timp condiția este adevărată. Operatorul procent trece la următorul gest, în cerc.
 
-Primul pas. Conexiuni. Servo-ul are trei fire: roșu la cinci volți, negru la GND, iar firul de semnal la pinul nouă.
+Primul pas. Conexiuni. Servo-ul are trei fire: roșu la cinci volți, negru sau maro la GND și portocaliu sau galben, semnalul, la pinul nouă. Potențiometrul are laturile la cinci volți și GND și mijlocul la pinul A zero. Butonul este la pinul doi și GND.
 
-Al doilea pas. Minim, unghiuri fixe. Incluzi biblioteca Servo, creezi un obiect, de exemplu braț, și în setup îl legi de pin cu attach de nouă. Apoi cu write îi dai unghiul, cu pauze între unghiuri.
+Al doilea pas. Minim, unghiuri fixe. Servo-ul merge la zero, nouăzeci și o sută optzeci de grade, cu o secundă între ele.
 
-Al treilea pas. Mișcare fluidă. Dacă schimbi unghiul brusc, servo-ul sare. Dacă îl crești grad cu grad, cu un for și un delay mic, se mișcă lin.
+Al treilea pas. Mișcare fluidă. Dacă schimbi unghiul brusc, servo-ul sare. Dacă îl crești grad cu grad, cu o mică pauză, se mișcă lin. Mărești pauza pentru o mișcare mai lentă.
 
-Al patrulea pas. Controlul cu potențiometrul. Citești potențiometrul, transformi valoarea din zero până la o mie douăzeci și trei în zero până la o sută optzeci cu map și o trimiți servo-ului.
+Al patrulea pas. Servo controlat de potențiometru. Cu map transformi valorile de la zero la o mie douăzeci și trei în unghiuri de la zero la o sută optzeci.
 
-Al cincilea pas, pentru Complet. Salutul. La apăsarea butonului, brațul face cu mâna de trei ori, apoi revine.
+Al cincilea pas, pentru Complet. Salut la buton. Când apeși butonul, brațul face cu mâna de trei ori și revine. Altfel, potențiometrul controlează brațul.
 
-Greșeli frecvente. Servo-ul tremură: firul de semnal nu este la pinul nouă sau lipsește GND comun. Nu se mișcă: lipsește attach. Mișcare sacadată: unghiul sare prea mult, deci folosește for cu delay mic. Erori la compilare: Servo se scrie cu S mare. Unghi peste o sută optzeci: un servo standard merge doar între zero și o sută optzeci.
+Al șaselea pas. Proiectul doi, brațul cu gesturi. Faci trei gesturi: da, un semn mic, nu, un semn mai larg, și salut, cel mai larg. Fiecare apăsare execută un gest și pregătește următorul, în cerc. Potențiometrul nu mai alege unghiul, ci viteza mișcării. Funcția merge La ține minte unghiul curent și îl crește sau îl scade cu unu, cu while, până ajunge la țintă. O singură funcție, balans, face toate cele trei gesturi, cu alte numere.
 
-Proiectul de azi. Robotul care salută. Minim înseamnă trei unghiuri. Complet înseamnă mișcare lină, potențiometru și salut.
+Al șaptelea pas. Testul gesturilor. Prima apăsare face da, a doua nu, a treia salut, iar a patra o ia de la capăt cu da.
 
-Recapitulare. Include Servo, creezi obiectul și faci attach. Write dă unghiul, între zero și o sută optzeci. For dă mișcare lină. Map leagă potențiometrul de unghi.
+Greșeli frecvente. Servo-ul tremură: semnalul nu este la pinul nouă sau lipsește GND comun. Nu se mișcă: lipsește attach. Mișcare sacadată: unghiul sare prea mult, deci folosești for cu pauză mică. Erori la compilare: Servo se scrie cu S mare. Unghi peste o sută optzeci: servo-ul standard merge doar de la zero la o sută optzeci. Brațul sare, nu se mișcă lin: în merge La ai uitat pauza. Programul rămâne blocat: unghiul curent nu se schimbă în while. Gestul se repetă cât ții butonul apăsat: lipsește frontul.
+
+Proiectul de azi. Robotul care salută. Minim înseamnă unghiuri fixe. Complet înseamnă mișcare fluidă, potențiometru și salut. Proiectul doi înseamnă brațul cu trei gesturi.
+
+Provocare, trei stele. Dansul brațului cu lumini. Combini mai multe mișcări într-un dans, pe care brațul îl face singur, o dată, la apăsarea butonului. Adaugi un LED la pinul patru, ochiul robotului. Unghiurile dansului stau într-un tablou cu cel puțin șase valori, parcurs cu for și merge La. Ochiul clipește scurt de fiecare dată când brațul ajunge la un unghi. Dansul se termină cu brațul la nouăzeci de grade și cu ochiul stins.
+
+Recapitulare. Incluzi Servo, creezi obiectul și faci attach. Write dă unghiul. For și while dau mișcare lină. Map leagă potențiometrul de unghi sau de viteză. Câteva funcții mici construiesc gesturi.
+
+Ce urmează. În lecția cinci combini servo-ul cu senzorul de distanță și construiești o barieră care se ridică singură.
 
 Succes cu robotul.

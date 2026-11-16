@@ -1,6 +1,6 @@
 Lecția șapte. Soneria de la ușă.
 
-Astăzi faci Arduino să sune: conectezi un buzzer, numit și piezo, și programezi o sonerie cu butonul de la ușă. Proiectul se numește Soneria mea. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero șapte.
+Astăzi faci Arduino să sune: conectezi un buzzer, numit și piezo, și programezi o sonerie cu butonul de la ușă. Proiectul se numește Soneria de la ușă. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero șapte.
 
 Ce facem azi. La final ai o sonerie care scoate un sunet când apeși un buton. Sunetul este cel mai bun mod prin care un aparat atrage atenția: alarme, jocuri, aparate de bucătărie. Cu tone poți face note muzicale.
 
@@ -18,7 +18,7 @@ Al cincilea pas. Alarmă cu sirenă. Frecvența crește și scade, ca la mașina
 
 Greșeli frecvente. Nu sună nimic: buzzerul nu este la pinul opt și GND sau n-ai pornit simularea. Sună tot timpul: ai uitat no Tone pe ramura else. Sunet urât: frecvențe prea mari sau schimbări prea rapide. Se aude în buclă: fără delay de trei sute după ding-dong, soneria repornește dacă ții apăsat. Pinii trei și unsprezece: tone ocupă un timer, deci evită analog Write pe acești pini în același timp.
 
-Proiectul de azi. Soneria mea. Minim înseamnă sunet la apăsare. Complet înseamnă ding-dong și LED.
+Proiectul de azi. Soneria de la ușă. Minim înseamnă sunet la apăsare. Complet înseamnă ding-dong și LED.
 
 Provocare, trei stele. Soneria personală. Alegi alte două note pentru soneria ta. Apoi faci o sirenă la apăsarea butonului, în loc de ding-dong.
 

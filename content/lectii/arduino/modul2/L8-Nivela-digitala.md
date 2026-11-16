@@ -1,15 +1,15 @@
-# LECȚIA 8 — Nivela mea
+# LECȚIA 8 — Nivela digitală
 ### Senzori de înclinare și pedometru
 **Modulul 2 · Senzori**  
 **Code Maker Club · Sensor Scout**
 
 > Azi folosești **senzori de înclinare** (tilt) ca să construiești o nivelă: LED-urile îți arată încotro e înclinat obiectul.  
-> Proiect: **„Nivela mea”** · `Prenume_Nume_A2_L08`
+> Proiect: **„Nivela digitală”** · `Prenume_Nume_A2_L08`
 
 ---
 
 ## Ce facem azi
-La finalul orei ai **două proiecte**: **Nivela mea** (doi senzori de înclinare, trei LED-uri și un bip când obiectul e drept) și un **Pedometru** care numără pașii și are buton de resetare. Telefoanele și brățările de fitness numără pașii în același fel: detectează o **schimbare**.
+La finalul orei ai **două proiecte**: **Nivela digitală** (doi senzori de înclinare, trei LED-uri și un bip când obiectul e drept) și un **Pedometru** care numără pașii și are buton de resetare. Telefoanele și brățările de fitness numără pașii în același fel: detectează o **schimbare**.
 
 ---
 
@@ -24,7 +24,7 @@ La finalul orei ai **două proiecte**: **Nivela mea** (doi senzori de înclinare
 | 75–110 | **Proiectul 2** · pedometru cu buton de resetare |
 | 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme |
 
-**Componente azi:** Arduino Uno · Breadboard · 2 × **Tilt Sensor** · 3 × LED · 3 × Resistor 220 Ω · Piezo · **Pushbutton** · fire
+**Componente azi:** Arduino Uno · Breadboard · 2 × **Tilt Sensor** · 3 × LED · 3 × Resistor 220 Ω · Piezo · **Pushbutton** · LED roșu + Resistor 220 Ω (doar la Bonus) · fire
 
 ---
 
@@ -64,8 +64,8 @@ Senzorul de înclinare are o bilă metalică mică. Când îl înclini într-o d
 > Montezi cei doi senzori **în oglindă**: unul se închide când înclini spre stânga, celălalt spre dreapta.
 
 **Gata când:**  
-- [ ] Am încercat fiecare situație din listă  
-- [ ] Am notat ce nu a mers și am corectat  
+- [ ] Toate firele sunt conectate exact ca în tabel  
+- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
 
 ### 3) Minim — un senzor, un LED
 
@@ -217,7 +217,7 @@ Adaugă trei lucruri în `loop()`. **LED-ul** urmează senzorul, un mesaj apare 
 
 ---
 
-## De făcut azi — „Nivela mea”
+## De făcut azi — „Nivela digitală”
 
 ### Minim vs Complet
 
@@ -243,14 +243,14 @@ Adaugă trei lucruri în `loop()`. **LED-ul** urmează senzorul, un mesaj apare 
 
 ---
 
-## Bonus ★★★ — Provocare: Detectorul de scuturare
+## Bonus ★★★ — Provocare: Detectorul de scuturare cu LED de alarmă
 *Doar dacă ai terminat Proiectul 2.*
 
-Diferența dintre **pași** și **scuturare**.
+Diferența dintre **pași** și **scuturare**. **Piesă nouă:** un LED roșu pe pin 9 (prin 220 Ω), dedicat alarmei.
 
-- [ ] Dacă senzorul se închide de **5 ori în 2 secunde** (măsurat cu `millis()`), scrii **SCUTURAT** și LED-ul clipește repede  
+- [ ] Dacă senzorul se închide de **5 ori în 2 secunde** (măsurat cu `millis()`), scrii **SCUTURAT** și LED-ul roșu clipește rapid 3 secunde  
 - [ ] Pașii normali (mai rari) **nu** declanșează scuturarea  
-- [ ] Testezi **10 pași normali** (fără alarmă) și **1 scuturare** (cu alarmă)
+- [ ] Testezi **10 pași normali** (fără alarmă) și **1 scuturare** (cu alarmă)  
 
 ## Recapitulare pe scurt
 1. Senzorul de înclinare = un **întrerupător** cu bilă  

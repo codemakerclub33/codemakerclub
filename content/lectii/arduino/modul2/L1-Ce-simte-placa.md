@@ -24,7 +24,7 @@ La finalul orei ai **două proiecte**: **Jurnalul plăcii** (valorile unui poten
 | 75–110 | **Proiectul 2** · voltmetrul cu bară |
 | 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme |
 
-**Componente azi:** Arduino Uno · Breadboard · Potentiometer · Pushbutton · fire
+**Componente azi:** Arduino Uno · Breadboard · Potentiometer · Pushbutton · Piezo (doar la Bonus) · fire
 
 ---
 
@@ -235,9 +235,9 @@ void loop() {
 ## Greșeli frecvente
 1. **Serial Monitor e gol** — n-ai pus `Serial.begin(9600)` sau n-ai pornit simularea.  
 2. **Caractere ciudate** — viteza din cod (`9600`) trebuie să fie aceeași ca în monitor.  
-3. **Volți = 0 sau 4** — ai scris `5 / 1023` (împărțire întreagă = 0). Scrie `5.0 / 1023.0`.  
+3. **Volții ies 0** — ai scris `5 / 1023` (împărțire întreagă = 0). Scrie `5.0 / 1023.0`.  
 4. **Se derulează prea repede** — lipsește `delay`.  
-5. **Butonul arată mereu 0** — ai uitat `INPUT_PULLUP`.  
+5. **Butonul arată mereu 0** — ai uitat `INPUT_PULLUP` în `setup()`.  
 6. **Bara are altă lungime** — `for` trebuie să meargă de la `0` până la `i < 20`, iar `map` să dea valori între `0` și `20`.  
 7. **Pauza merge invers** — cu `INPUT_PULLUP`, butonul neapăsat e `HIGH`.
 
@@ -269,14 +269,14 @@ void loop() {
 
 ---
 
-## Bonus ★★★ — Provocare: Cinci zone
+## Bonus ★★★ — Provocare: Cinci zone cu alarmă
 *Doar dacă ai terminat Proiectul 2.*
 
-Voltmetrul spune și **în cuvinte** cât de sus e potențiometrul.
+Voltmetrul spune și **în cuvinte** cât de sus e potențiometrul. **Piesă nouă:** un buzzer pe pin 8 și GND.
 
-- [ ] **5 zone** în loc de 3, cu praguri la 205, 410, 614 și 819  
-- [ ] Mesajele: foarte mic, mic, mediu, mare, foarte mare, afișate lângă bară  
-- [ ] Testezi cu potențiometrul la 0 %, 25 %, 50 %, 75 % și 100 % și completezi un tabel: **poziția · bara · zona**. Toate cele 5 rânduri trebuie să se potrivească  
+- [ ] **5 zone** în loc de 3, cu praguri la 205, 410, 614 și 819, și mesajele foarte mic, mic, mediu, mare, foarte mare lângă bară  
+- [ ] Buzzerul sună doar în zona „foarte mare” și tace în rest  
+- [ ] Testezi cu potențiometrul la 0 %, 25 %, 50 %, 75 % și 100 % și completezi un tabel: **poziția · bara · zona · buzzer**. Toate cele 5 rânduri trebuie să se potrivească  
 
 ## Recapitulare pe scurt
 1. `Serial.begin(9600)` o dată, în `setup()`  

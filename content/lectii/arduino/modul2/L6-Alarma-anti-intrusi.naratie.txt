@@ -1,4 +1,4 @@
-Lecția șase din Modulul doi. Alarma anti-intruși.
+Lecția șase din Modulul doi. Santinela.
 
 Astăzi construiești o alarmă cu senzor de mișcare P I R, un buton de armare și o sirenă. Proiectul se numește Santinela. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A doi, linie jos, L zero șase.
 
@@ -22,7 +22,7 @@ Greșeli frecvente. P I R sună imediat la pornire: la un senzor real, la încep
 
 Proiectul de azi. Santinela. Minim înseamnă că mișcarea aprinde un LED. Complet înseamnă alarmă armabilă cu sirenă. Proiectul doi înseamnă întârziere de ieșire și contor de alarme.
 
-Provocare, trei stele. Jurnalul alarmei. Alarma ține minte când a sunat: fiecare alarmă se scrie în Serial Monitor cu momentul ei, de exemplu alarma doi la patruzeci și una de secunde. Dezarmezi doar dacă ții butonul două secunde, nu la o atingere. Testezi trei intruziuni la momente diferite, la cel puțin două secunde una de alta, și verifici că jurnalul arată timpi crescători.
+Provocare, trei stele. Jurnalul alarmei cu LED de progres. Alarma ține minte când a sunat. Adaugi un LED galben, la pinul nouă, care arată cât ții butonul apăsat. Fiecare alarmă se scrie în Serial Monitor cu momentul ei, de exemplu alarma numărul doi la patruzeci și una de secunde. Apăsare lungă: dezarmezi doar dacă ții butonul două secunde. LED-ul galben este aprins cât ții butonul apăsat și se stinge dacă îl lași mai devreme. Testezi trei intruziuni la momente diferite, la cel puțin două secunde una de alta, și verifici că jurnalul arată timpi crescători.
 
 Recapitulare. P I R dă High când vede mișcare. Variabila bool armat ține starea sistemului. Semnul exclamării inversează o valoare. Și înseamnă că ambele condiții trebuie să fie adevărate. Millis măsoară timpul fără să oprească programul.
 

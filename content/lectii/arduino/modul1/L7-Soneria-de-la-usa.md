@@ -1,10 +1,10 @@
-# LECȚIA 7 — Soneria mea
+# LECȚIA 7 — Soneria de la ușă
 ### Buzzer: sunet și sonerie
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 
 > Azi faci Arduino să **sune**: conectezi un **buzzer (piezo)** și programezi o **sonerie** cu butonul de la ușă.  
-> Proiect: **„Soneria mea”** · `Prenume_Nume_A1_L07`
+> Proiect: **„Soneria de la ușă”** · `Prenume_Nume_A1_L07`
 
 ---
 
@@ -163,7 +163,7 @@ void loop() {
 
 ---
 
-## De făcut azi — „Soneria mea”
+## De făcut azi — „Soneria de la ușă”
 
 ### Minim vs Complet
 

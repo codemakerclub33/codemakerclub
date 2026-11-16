@@ -1,6 +1,6 @@
-Lecția șase. Lampa R G B a camerei.
+Lecția șase. Lampa colorată.
 
-Astăzi amesteci lumină roșie, verde și albastră, ca să obții orice culoare cu un LED R G B. Proiectul se numește Lampa mea colorată. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero șase.
+Astăzi amesteci lumină roșie, verde și albastră, ca să obții orice culoare cu un LED R G B. Proiectul se numește Lampa colorată. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero șase.
 
 Ce facem azi. La final ai un LED R G B care poate afișa culori diferite, comandate din cod. Ecranul telefonului, televizorul și luminile de petrecere folosesc același truc: trei lumini mici, roșu, verde și albastru, care amestecate dau orice culoare. Azi îl faci tu.
 
@@ -18,7 +18,7 @@ Al cincilea pas, pentru Complet. Mixerul. Fiecare potențiometru comandă o culo
 
 Greșeli frecvente. O culoare lipsește: un picior nu este conectat la pin sau nu are rezistor. Culorile par amestecate greșit: ai încurcat picioarele. Nu se aprinde nimic: piciorul comun nu este la GND. LED R G B cu anod comun: comunul merge la cinci volți și valorile se inversează. Rezistor lipsă: fiecare culoare are propriul rezistor.
 
-Proiectul de azi. Lampa mea colorată. Minim înseamnă șase culori pe rând. Complet înseamnă minim, plus mixerul cu trei potențiometre.
+Proiectul de azi. Lampa colorată. Minim înseamnă șase culori pe rând. Complet înseamnă minim, plus mixerul cu trei potențiometre.
 
 Provocare, trei stele. Curcubeul. Lampa trece prin roșu, portocaliu, galben, verde, albastru și mov, câte o jumătate de secundă fiecare. La final îți alegi culoarea preferată și scrii valorile ei într-un comentariu.
 

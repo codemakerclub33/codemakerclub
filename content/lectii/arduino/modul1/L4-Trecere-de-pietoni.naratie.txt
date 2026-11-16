@@ -1,6 +1,6 @@
-Lecția patru. Trecere de pietoni.
+Lecția patru. Trecerea de pietoni.
 
-Astăzi construiești un semafor pentru mașini, cu buton de traversare pentru pietoni. Proiectul se numește Trecerea mea. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero patru.
+Astăzi construiești un semafor pentru mașini, cu buton de traversare pentru pietoni. Proiectul se numește Trecerea de pietoni. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero patru.
 
 Ce facem azi. La final ai un semafor cu trei LED-uri pentru mașini, un LED verde pentru pietoni și un buton care cere traversarea. Semafoarele sunt un exemplu perfect de stări. Ceva se află într-o stare, verde, galben sau roșu, și trece în alta când se întâmplă ceva. Aceeași idee apare în jocuri și în ascensoare.
 
@@ -16,7 +16,7 @@ Al patrulea pas, pentru Complet. Mașinile au verde. Dacă cineva apasă butonul
 
 Greșeli frecvente. Două culori aprinse odată: ai uitat să stingi culoarea anterioară. Pietonul rămâne verde: nu ai oprit LED-ul la sfârșitul funcției traversare. Butonul nu reacționează: pinul doi nu are input pull up sau nu este legat la GND. Ordinea parametrilor: dacă o încurci, culorile se amestecă. LED-uri de aceeași culoare: pune culori diferite în Tinkercad.
 
-Proiectul de azi. Trecerea mea. Minim înseamnă semafor automat. Complet înseamnă minim, plus butonul pietonului.
+Proiectul de azi. Trecerea de pietoni. Minim înseamnă semafor automat. Complet înseamnă minim, plus butonul pietonului.
 
 Provocare, trei stele. Semaforul de noapte. Un al doilea buton pune semaforul în starea de noapte, în care galbenul clipește. O nouă apăsare readuce semaforul normal.
 

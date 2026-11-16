@@ -1,23 +1,31 @@
 Lecția opt din Modulul trei. Seiful cu cod.
 
-Astăzi construiești un seif: tastezi codul pe o tastatură patru pe patru, iar L C D-ul, servo-ul și LED-urile îți spun dacă s-a deschis. Proiectul se numește Seiful meu. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero opt.
+Astăzi construiești un seif care se deschide doar cu codul corect. Proiectul se numește Seiful cu cod. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero opt.
 
-Obiectivul. La final ai un seif care se deschide doar cu codul corect. Minim: introduci patru cifre, iar dacă sunt corecte se aprinde LED-ul verde, altfel cel roșu. Complet: minim, plus L C D cu stelute în loc de cifre, servo care deschide ușa, trei încercări și apoi blocare, iar tasta steluță șterge, iar tasta diez confirmă.
+Ce facem azi. La final ai două proiecte: Seiful cu cod, cu tastatură, ecran cu stelute, servo care deschide ușa și blocare după trei încercări greșite, și un seif cu cod schimbabil: cine știe codul vechi poate alege unul nou. Parolele, codurile PIN și lacătele electronice funcționează așa: compari ce a tastat cineva cu ce știi tu și decizi. Azi pui laolaltă tot ce ai învățat: ecran, servo, LED-uri, funcții și stări.
 
-De ce contează. Parolele, P I N-urile și lacătele electronice funcționează așa: compari ce a tastat cineva cu ce știi tu și decizi. Azi pui laolaltă tot ce ai învățat: L C D, servo, LED-uri, funcții și stări.
+Instrucțiuni noi azi. Obiectul Keypad creează tastatura, cu tastele și pinii ei. Get Key dă tasta apăsată, sau zero dacă nu este nicio tastă. Plus egal adaugă o literă la un text. Două semne egal compară două texte. Un cod fără const poate fi schimbat. Enum dă seifului mai multe moduri, ca stările de la barieră.
 
-Primul pas. Conexiuni. Sunt multe, deci mergi pe rând. L C D-ul este ca în lecția unu. Servo-ul are semnalul pe pinul lui, LED-urile au rezistoare, iar tastatura se conectează la opt pini, patru pentru rânduri și patru pentru coloane. Atenție să nu suprapui pinii L C D-ului cu cei ai tastaturii.
+Primul pas. Conexiuni. Sunt multe, deci mergi pe rând. Ecranul se leagă ca în lecția unu: R S la pinul doisprezece, E la unsprezece, D patru până la D șapte la cinci, patru, trei și doi. Tastatura are opt pini: rândurile la pinii șase, șapte, opt și nouă, iar coloanele la pinii A zero până la A trei. Servo-ul are semnalul la pinul zece. LED-ul verde este la A patru, cel roșu la A cinci, iar piezo la pinul treisprezece. Pinii analogici pot fi folosiți și ca pini digitali obișnuiți.
 
-Al doilea pas. Tastatura. Este o grilă. Biblioteca Keypad află ce tastă este apăsată verificând rândurile și coloanele. Îi dai un tablou cu tastele și pinii pentru rânduri și coloane, iar cu get Key citești tasta apăsată.
+Al doilea pas. Tastatura. Este o grilă, iar biblioteca Keypad află ce tastă este apăsată verificând rândurile și coloanele. Get Key dă tasta apăsată, sau zero.
 
-Al treilea pas. Minim, cod de patru cifre. Ții ce a tastat utilizatorul într-un String. După patru cifre compari cu codul secret, scris între ghilimele, fiindcă este text. Dacă sunt la fel, LED verde. Altfel, LED roșu.
+Al treilea pas. Minim, cod de patru cifre. Un text ține ce a tastat utilizatorul, iar fiecare tastă se adaugă la el. După patru cifre compari cu codul. Corect: LED verde. Greșit: LED roșu. Apoi golești textul.
 
-Al patrulea pas, pentru Complet. Afișezi o steluță pe L C D pentru fiecare cifră. Funcția deschide mișcă servo-ul și scrie Deschis. Funcția greșit scrie mesajul de eroare și crește contorul de încercări. După trei încercări greșite seiful se blochează. Steluța șterge ce ai scris, iar diezul confirmă.
+Al patrulea pas, pentru Complet. Seiful cu ecran, servo și încercări. Ecranul arată stelute, nu cifrele, ca să nu fie văzut codul. Tasta steluță șterge tot, iar diez confirmă. Codul corect deschide servo-ul trei secunde. După trei greșeli, seiful se blochează zece secunde.
 
-Greșeli frecvente. Taste greșite: rândurile și coloanele sunt inversate la pini. Nu citește nimic: firele tastaturii nu sunt la pinii din liste. Comparația eșuează: codul are alt format, iar unu doi trei patru este text, cu ghilimele. L C D blocat: pinii L C D-ului se suprapun cu ai tastaturii. Servo tremură: lipsește GND comun.
+Al cincilea pas. Proiectul doi, seiful cu cod schimbabil. Adaugi tasta A: o apeși, scrii codul vechi și diez, iar dacă este corect, scrii codul nou, de patru cifre, și diez. Codul nu mai este o constantă, ci o variabilă. Seiful are trei moduri: normal, cod vechi și cod nou. Același diez face lucruri diferite în fiecare mod. Codul nou este acceptat doar dacă are exact patru cifre. După fiecare confirmare, seiful revine în modul normal.
 
-Proiectul de azi. Seiful meu. Minim înseamnă cod de patru cifre și LED-uri. Complet înseamnă L C D, servo, trei încercări și taste speciale.
+Al șaselea pas. Testul seifului. Cu codul unu, doi, trei, patru, seiful se deschide. Apeși A, scrii codul vechi, apoi cinci, șase, șapte, opt, și codul se schimbă. Acum unu, doi, trei, patru, nu mai merge, iar cinci, șase, șapte, opt, merge. Dacă apeși A și scrii un cod vechi greșit, nu se schimbă nimic. Dacă la codul nou scrii doar două cifre, seiful spune că trebuie patru cifre și codul rămâne cel vechi.
 
-Recapitulare. Keypad și get Key citesc tastatura. String păstrează ce a tastat utilizatorul. Funcțiile deschide și greșit fac codul clar. Un contor de încercări limitează ghicitul.
+Greșeli frecvente. Taste greșite: rândurile și coloanele sunt inversate la pini. Nu citește nimic: firele tastaturii nu sunt la pinii din program. Comparația eșuează: codul este text, deci are ghilimele. Ecran blocat: pinii ecranului se suprapun cu cei ai tastaturii. Servo tremură: lipsește GND comun. Codul nou nu se salvează: codul a rămas constantă. Seiful rămâne mereu în modul cod nou: după confirmare nu revii la normal. Tasta A apare printre stelute: în modul normal trebuie tratată înainte de a fi adăugată.
+
+Proiectul de azi. Seiful cu cod. Minim înseamnă cod de patru cifre cu LED verde și roșu. Complet înseamnă ecran, servo și trei încercări. Proiectul doi înseamnă seif cu cod schimbabil.
+
+Provocare, trei stele. Parolă de șase cifre și LED de mod. Faci seiful mai greu de ghicit. Adaugi un LED galben, la pinul treisprezece, care arată că seiful este în modul de schimbare a codului: în proiectul doi buzzerul nu se folosește, deci pinul este liber. Lungimea codului este o constantă, șase, folosită peste tot, iar codul nou trebuie să aibă exact atâtea cifre. LED-ul galben este aprins cât timp seiful așteaptă codul vechi sau codul nou. După trei greșeli la rând, seiful se blochează zece secunde, cu un numărător pe ecran.
+
+Recapitulare. Keypad și get Key citesc tastele. Un text ține ce a tastat utilizatorul. Compari cu două semne egal și golești textul după fiecare încercare. Enum dă seifului mai multe moduri. Același diez poate face lucruri diferite, în funcție de mod.
+
+Ce urmează. În lecția nouă legi un inel de LED-uri NeoPixel și faci efecte de lumină: o rază, un curcubeu și o respirație.
 
 Succes cu seiful.

@@ -1,23 +1,31 @@
-Lecția șapte din Modulul trei. Ventilatorul meu.
+Lecția șapte din Modulul trei. Ventilatorul inteligent.
 
-Astăzi comanzi un motor de curent continuu cu ajutorul unui tranzistor și faci un ventilator cu viteză reglabilă și pornire automată la căldură. Proiectul se numește Ventilatorul meu. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero șapte.
+Astăzi controlezi un motor cu Arduino, prin tranzistor, și construiești un ventilator. Proiectul se numește Ventilatorul inteligent. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A trei, linie jos, L zero șapte.
 
-Obiectivul. La final ai un ventilator controlat de Arduino. Minim: motor pornit și oprit cu un buton, prin tranzistor. Complet: minim, plus viteză reglată cu potențiometrul, prin P W M, și mod automat pe baza temperaturii, cu T M P treizeci și șase.
+Ce facem azi. La final ai două proiecte: Ventilatorul inteligent, pornit cu un buton, cu viteză reglată din potențiometru și un mod automat care ține cont de temperatură, și un ventilator cu pornire moale, care accelerează și încetinește treptat, ca un aparat adevărat. Un pin Arduino dă doar douăzeci de miliamperi, iar un motor cere mult mai mult, de aceea folosim un tranzistor: un întrerupător electronic comandat de un curent mic.
 
-De ce contează. Un pin Arduino poate da doar aproximativ douăzeci de miliamperi. Un motor cere mult mai mult. De aceea folosim un tranzistor, un întrerupător electronic comandat de un curent mic, care controlează un curent mare.
+Instrucțiuni noi azi. Digital Write pornește sau oprește motorul, prin tranzistor. Analog Write dă viteza prin P W M, între zero și două sute cincizeci și cinci. Map transformă potențiometrul în viteză. Int în paranteze taie zecimalele, ca map să primească numere întregi. Plus plus și minus minus apropie treptat viteza de țintă. LED-ul se aprinde cât timp motorul se învârte.
 
-Primul pas. Cum funcționează tranzistorul. Un tranzistor N P N are trei picioare: bază, colector și emitor. Un curent mic în bază lasă un curent mare să curgă de la colector la emitor. Baza primește semnalul de la pin, printr-un rezistor. Emitorul merge la GND. Motorul este între alimentare și colector, cu o diodă de protecție.
+Primul pas. Cum funcționează tranzistorul. Un tranzistor N P N are trei picioare: baza, colectorul și emitorul. Un curent mic în bază lasă un curent mare să curgă de la colector la emitor. Baza merge la pinul nouă printr-un rezistor de un kiloohm. Colectorul merge la un fir al motorului, iar emitorul la GND. Celălalt fir al motorului merge la cinci volți. O diodă, în paralel cu motorul, cu banda spre cinci volți, protejează tranzistorul la oprirea motorului: o pui mereu la motoare și relee. Potențiometrul este la pinul A zero, butonul la pinul doi, iar senzorul de temperatură la pinul A unu.
 
-Al doilea pas. Minim. Motorul este la pinul nouă, butonul la pinul doi. La apăsare pornești motorul cu digital Write, altfel îl oprești.
+Al doilea pas. Minim, pornit și oprit. Fiecare apăsare de buton schimbă starea, pornit sau oprit, cu tehnica frontului din lecțiile trecute.
 
-Al treilea pas. Viteza cu P W M. Pinul nouă poate face P W M, deci motorul primește mai mult sau mai puțin curent în medie. Citești potențiometrul, convertești cu map și folosești analog Write.
+Al treilea pas. Viteză cu P W M. Pinul nouă poate face P W M, deci motorul primește mai mult sau mai puțin curent în medie. Un motor mic poate să nu pornească la valori foarte mici: are nevoie de un impuls ca să învingă frecarea.
 
-Al patrulea pas, pentru Complet. Manual și automat. Într-un mod ții viteza dată de potențiometru. În celălalt, citești temperatura și pornești ventilatorul cu atât mai tare cu cât este mai cald.
+Al patrulea pas, pentru Complet. Manual și automat. Butonul alege modul. În modul manual viteza vine din potențiometru. În modul automat vine din temperatură: la douăzeci de grade motorul este oprit, iar la patruzeci de grade merge la viteză maximă.
 
-Greșeli frecvente. Motorul nu pornește: emitorul nu este la GND sau baza nu primește semnal. Tranzistorul se arde, în simulator: motorul este conectat direct la pin, nu prin tranzistor, sau lipsește rezistorul de bază. Motorul merge mereu: colectorul și emitorul sunt inversate. Fără diodă: merge în simulator, dar în realitate poate strica placa. Viteză mică, nu pornește: are nevoie de un minim, deci folosește map de la șaizeci la două sute cincizeci și cinci.
+Al cincilea pas. Proiectul doi, pornire moale. Un motor care pornește brusc se uzează repede și face zgomot. Separi ținta, viteza dorită, de viteza curentă, care se apropie de țintă cu unu la fiecare zece milisecunde. Butonul pornește sau oprește ventilatorul, potențiometrul alege viteza dorită, iar un LED arată când motorul se învârte. De la zero la maxim durează aproape două secunde și jumătate. Poți roti potențiometrul în timp ce motorul merge, iar viteza se apropie lin de noua țintă.
 
-Proiectul de azi. Ventilatorul meu. Minim înseamnă pornit și oprit cu buton. Complet înseamnă viteză reglabilă și mod automat.
+Al șaselea pas. Testul ventilatorului. Cu potențiometrul la maxim, apeși butonul și motorul accelerează în aproape trei secunde. Rotești potențiometrul spre minim și viteza scade lin. La a doua apăsare motorul încetinește până la oprire, apoi LED-ul se stinge. Dacă apeși de două ori repede, viteza nu sare brusc, ci urcă sau coboară de unde a ajuns.
 
-Recapitulare. Pinul Arduino nu alimentează motorul direct. Tranzistorul este un întrerupător electronic. Dioda protejează la oprire. P W M schimbă viteza.
+Greșeli frecvente. Motorul nu pornește: emitorul nu este la GND sau baza nu primește semnal. Tranzistorul se arde în simulator: motorul este legat direct la pin sau lipsește rezistorul de bază. Motorul merge mereu: colectorul și emitorul sunt inversate. Fără diodă merge în simulator, dar în realitate poate strica placa. Viteza mică nu pornește: are nevoie de un minim, deci folosești un interval care începe de la șaizeci. Motorul pornește brusc: viteza primește direct valoarea țintei. Motorul nu se oprește la a doua apăsare: ținta nu devine zero. Viteza nu răspunde la potențiometru: ținta este calculată o singură dată.
+
+Proiectul de azi. Ventilatorul inteligent. Minim înseamnă buton și motor pornit sau oprit. Complet înseamnă viteză cu potențiometru și mod automat. Proiectul doi înseamnă pornire moale.
+
+Provocare, trei stele. Trei viteze cu un buton. Alegi viteza cu un al doilea buton, la pinul trei, ca la ventilatoarele de birou: oprit, lent, mediu, rapid. Treptele sunt zero, o sută, o sută șaptezeci și două sute cincizeci și cinci, parcurse în cerc cu operatorul procent. Trecerea între trepte este lină. Serial Monitor scrie numele treptei: oprit, lent, mediu sau rapid.
+
+Recapitulare. Pinul dă puțin curent, deci motorul se comandă printr-un tranzistor. Dioda protejează la oprirea motorului. Analog Write dă viteza prin P W M. Ținta și viteza separate fac pornirea moale. Modul automat leagă viteza de temperatură.
+
+Ce urmează. În lecția opt legi o tastatură de patru pe patru și construiești un seif cu cod, cu ecran, servo și blocare după trei încercări greșite.
 
 Succes cu ventilatorul.

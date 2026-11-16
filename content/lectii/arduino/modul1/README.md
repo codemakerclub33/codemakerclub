@@ -14,6 +14,6 @@
 | 7 | Soneria de la ușă | Sunet | Buzzer + buton |
 | 8 | Pian cu 4 clape | Note și frecvențe | 4 butoane + buzzer |
 | 9 | Cine apasă primul? | Logică și decizii (`if`) | Joc cu 2 butoane și LED câștigător |
-| 10 | Panoul camerei mele | Mini-proiect | Combinăm RGB + buton + potențiometru + buzzer |
+| 10 | Panoul de lumini | Mini-proiect | Combinăm RGB + buton + potențiometru + buzzer |
 
 **Salvare sugerată:** `Prenume_Nume_A1_L01` … `A1_L10`

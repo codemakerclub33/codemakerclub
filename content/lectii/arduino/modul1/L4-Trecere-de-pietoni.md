@@ -1,10 +1,10 @@
-# LECȚIA 4 — Trecerea mea
+# LECȚIA 4 — Trecerea de pietoni
 ### Semafor cu buton de traversare
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 
 > Azi construiești un **semafor** pentru mașini cu **buton de traversare** pentru pietoni.  
-> Proiect: **„Trecerea mea”** · `Prenume_Nume_A1_L04`
+> Proiect: **„Trecerea de pietoni”** · `Prenume_Nume_A1_L04`
 
 ---
 
@@ -193,7 +193,7 @@ Programul **verifică butonul tot timpul** în `loop()`. Când îl găsește ap�
 
 ---
 
-## De făcut azi — „Trecerea mea”
+## De făcut azi — „Trecerea de pietoni”
 
 ### Minim vs Complet
 

@@ -1,15 +1,15 @@
-# LECȚIA 10 — Panoul meu
+# LECȚIA 10 — Panoul de lumini
 ### Reluare: lampa, lampa colorată și soneria într-un panou
 **Modulul 1 · Primele circuite**  
 **Code Maker Club · Circuit Starter**
 
 > Azi aduni într-un **panou de control** proiectele din lecțiile 5, 6 și 7: lampa, lampa colorată și soneria. Treci de la unul la altul cu un buton.  
-> Proiect: **„Panoul meu”** · `Prenume_Nume_A1_L10`
+> Proiect: **„Panoul de lumini”** · `Prenume_Nume_A1_L10`
 
 ---
 
 ## Ce facem azi
-Pui la un loc **proiectele tale din modul**, ca o expoziție: **Lampa mea** (lecția 5), **Lampa mea colorată** (lecția 6) și **Soneria mea** (lecția 7). Fiecare devine un **mod** al panoului, iar un buton te mută de la unul la altul. Un proiect adevărat nu e o singură piesă, ci **mai multe care lucrează împreună**. La final îl prezinți.
+Pui la un loc **proiectele tale din modul**, ca o expoziție: **Lampa cu reglaj** (lecția 5), **Lampa colorată** (lecția 6) și **Soneria de la ușă** (lecția 7). Fiecare devine un **mod** al panoului, iar un buton te mută de la unul la altul. Un proiect adevărat nu e o singură piesă, ci **mai multe care lucrează împreună**. La final îl prezinți.
 
 ---
 
@@ -67,9 +67,9 @@ Pui la un loc **proiectele tale din modul**, ca o expoziție: **Lampa mea** (lec
 
 | Mod | Ce face lampa |
 |-----|---------------|
-| **0** | **Lampa mea** (lecția 5): lumină albă, luminozitate cu potențiometrul |
-| **1** | **Lampa mea colorată** (lecția 6): culoare aleasă cu **un singur** potențiometru (în lecția 6 aveai trei), de la roșu la albastru |
-| **2** | **Soneria mea** (lecția 7): al doilea buton sună ding-dong, iar lampa se face verde cât sună |
+| **0** | **Lampa cu reglaj** (lecția 5): lumină albă, luminozitate cu potențiometrul |
+| **1** | **Lampa colorată** (lecția 6): culoare aleasă cu **un singur** potențiometru (în lecția 6 aveai trei), de la roșu la albastru |
+| **2** | **Soneria de la ușă** (lecția 7): al doilea buton sună ding-dong, iar lampa se face verde cât sună |
 | **3** (Complet) | Petrecere: culori aleatorii |
 
 Fiecare apăsare pe **butonul de mod** trece la **modul următor**; după ultimul, revii la 0.
@@ -262,7 +262,7 @@ Spune colegilor:
 
 ---
 
-## De făcut azi — „Panoul meu”
+## De făcut azi — „Panoul de lumini”
 
 ### Minim vs Complet
 

@@ -1,6 +1,6 @@
 Lecția cinci. Lampa cu reglaj.
 
-Astăzi citești un potențiometru, un buton rotativ, și reglezi luminozitatea unui LED cu P W M. Proiectul se numește Lampa mea. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero cinci.
+Astăzi citești un potențiometru, un buton rotativ, și reglezi luminozitatea unui LED cu P W M. Proiectul se numește Lampa cu reglaj. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero cinci.
 
 Ce facem azi. La final ai o lampă a cărei lumină crește sau scade când rotești potențiometrul. Până acum totul era aprins sau stins. Lumea reală e plină de valori între: volum, lumină, viteză. Azi înveți cum citește Arduino o valoare între zero și o mie douăzeci și trei și cum o trimite înapoi.
 
@@ -18,7 +18,7 @@ Al cincilea pas, pentru Complet. Afișezi valorile în Serial Monitor și faci L
 
 Greșeli frecvente. LED-ul este fie stins, fie aprins complet: ai folosit un pin fără tilde sau digital Write în loc de analog Write. Potențiometrul nu face nimic: piciorul din mijloc nu este la A zero. Lumina merge invers: ai inversat cinci volți cu GND. Eroare la A zero: scrie A zero, nu doar zero. Prea mult în Serial Monitor: pune delay de o sută.
 
-Proiectul de azi. Lampa mea. Minim înseamnă lumina urmând potențiometrul. Complet înseamnă minim, plus Serial Monitor și respirația.
+Proiectul de azi. Lampa cu reglaj. Minim înseamnă lumina urmând potențiometrul. Complet înseamnă minim, plus Serial Monitor și respirația.
 
 Provocare, trei stele. Lampa inversă. Un al doilea LED, pe pinul zece, este mai luminos când primul este mai slab. Lampa nu se stinge complet: luminozitatea minimă este douăzeci.
 
