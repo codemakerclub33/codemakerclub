@@ -16,11 +16,11 @@ Al patrulea pas. Subfolderele. Dacă paginile sunt într-un folder numit pagini,
 
 Al cincilea pas. Când un link nu merge. Dacă vezi patru zero patru sau o pagină goală, browserul nu a găsit fișierul. Verifică numele exact, extensia punct html, folderul, dacă ai salvat și dacă ai folosit bara dreaptă, nu cea inversă.
 
-Înainte să scrii cod, desenează pe foaie harta site-ului: o căsuță pentru fiecare pagină și săgeți pentru linkuri.
+Înainte să scrii cod, scrie într-un comentariu harta site-ului: câte un rând pentru fiecare pagină și săgeți pentru linkuri.
 
 De făcut azi. Minim: un site cu două pagini, index punct html și despre punct html, legate prin linkuri în ambele sensuri. Complet: adaugi o a treia pagină, un meniu identic în toate paginile și același fundal colorat peste tot.
 
-Bonus. Site cu patru pagini. Adaugi o galerie, pui un link Sus în fiecare pagină, muți paginile într-un folder pagini și repari linkurile, apoi vezi în DevTools ce fișiere cere browserul.
+Bonus. Site cu patru pagini. Adaugi o galerie, faci din articolul tău de pe Wikipedia un site cu patru sau cinci pagini, muți paginile într-un folder pagini și repari linkurile, apoi vezi în DevTools ce fișiere cere browserul.
 
 Greșeli frecvente. Litere mari sau mici diferite între link și fișier. Ai scris punct htm în loc de punct html. Nume cu spații. Ai uitat meniul într-o pagină. Ai copiat o pagină și ai uitat să schimbi titlul.
 

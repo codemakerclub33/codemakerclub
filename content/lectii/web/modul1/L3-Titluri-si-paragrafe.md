@@ -17,11 +17,11 @@ La final ai o **poveste într-o pagină**, cu un titlu mare, capitole cu titluri
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · scheletul scris singur |
+| 0–15 | Recapitulare · scheletul scris singur · articolul de pe Wikipedia |
 | 15–45 | Cele șase titluri · un singur `h1` · ordinea titlurilor (**Exemplele 1–3**) |
 | 45–65 | Paragrafe și rânduri noi (**Exemplele 4–5**) |
 | 65–85 | Linia `<hr>` · titluri și paragrafe împreună (**Exemplele 6–7**) |
-| 85–110 | Mini-proiect: povestea mea (**Exemplul 8**) |
+| 85–110 | Mini-proiect: povestea mea, plus articolul tău de pe Wikipedia (**Exemplul 8**) |
 | 110–120 | Recap și temă |
 
 ---
@@ -45,9 +45,11 @@ Din lecția trecută ții minte că:
 - ultimul tag deschis se închide primul;
 - tot ce vrei să se vadă scrii în `<body>`.
 
-**Încearcă tu (3 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Creează folderul `Prenume_Nume_W1_L3` și fișierul `index.html`  
 - [ ] Scrie scheletul complet **singur**, cu un `<title>` și un `<p>` în `<body>`, apoi pornește Live Server  
+- [ ] Deschide din nou articolul ales pe Wikipedia în lecția trecută și uită-te la **cuprinsul** lui: ce capitole are?  
+- [ ] Alege **trei capitole** din articol, cu titlurile lor, pe care le vei scrie azi  
 
 > De aici înainte, exemplele arată doar ce scrii **în interiorul `<body>`**, dacă nu spunem altfel.
 
@@ -106,9 +108,13 @@ Titlurile se așază ca un **cuprins**: `h2` sunt capitolele, iar `h3` sunt păr
 
 Ordinea corectă merge **pe rând**: după `h1` vine `h2`, după `h2` vine `h3`. Nu sări de la `h2` direct la `h5`.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (10 min)**  
 - [ ] Scrie Exemplul 3 și schimbă animalele cu ale tale  
-- [ ] Desenează pe o foaie „cuprinsul” paginii tale, ca să vezi ce titluri ai  
+- [ ] Scrie într-un comentariu „cuprinsul” paginii tale (lista titlurilor), ca să vezi ce titluri ai  
+- [ ] Pune ca `<h1>` **titlul articolului** tău de pe Wikipedia  
+- [ ] Pune ca `<h2>` cele **trei capitole** alese, în ordinea din articol  
+- [ ] Sub un capitol adaugă un `<h3>` cu o parte mai mică din el  
+- [ ] Deschide DevTools cu **F12** (pe Mac **Cmd + Option + I**), fila **Elements**, și verifică dacă titlurile sunt în ordine  
 
 ---
 
@@ -138,9 +144,12 @@ Fiecare `<p>` începe pe un rând nou și are **puțin spațiu** deasupra și de
 
 > Folosește `<br>` doar pentru versuri sau adrese. Pentru un text nou, pune un **paragraf nou**.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (12 min)**  
 - [ ] Scrie 2 paragrafe despre tine și schimbă lățimea ferestrei browserului  
 - [ ] Scrie Exemplul 5 și compară cu o variantă fără `<br>`  
+- [ ] Sub **fiecare** capitol `<h2>` din pagina ta, pune **trei paragrafe** `<p>` din articolul de pe Wikipedia, câte 2–3 propoziții  
+- [ ] Verifică dacă fiecare paragraf are `</p>` și dacă diacriticele se văd corect  
+- [ ] Mută un paragraf în alt capitol și vezi cum se schimbă povestea  
 
 ---
 
@@ -172,9 +181,12 @@ Fiecare `<p>` începe pe un rând nou și are **puțin spațiu** deasupra și de
 
 Observă: după fiecare titlu urmează text (un paragraf) sau un titlu mai mic. Un titlu fără nimic sub el rămâne gol și nu ajută pe nimeni.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (10 min)**  
 - [ ] Pune o linie `<hr>` între două părți ale paginii tale  
 - [ ] Scrie Exemplul 7 și schimbă titlurile și paragrafele cu ale tale  
+- [ ] Pune `<hr>` între capitolele paginii tale de pe Wikipedia  
+- [ ] Adaugă la sfârșit un capitol „Curiozități”, cu 3–4 fapte scrise pe rânduri separate, cu `<br>`  
+- [ ] Verifică în pagină că fiecare titlu are sub el text sau un titlu mai mic  
 
 ---
 
@@ -228,7 +240,7 @@ Povestea ta trebuie să fie despre **tine**: schimbă toate textele cu ale tale.
 | | Ce trebuie |
 |--|------------|
 | **Minim** | O pagină cu un `<h1>`, două titluri `<h2>` și câte un paragraf sub fiecare |
-| **Complet** | Minim + un titlu `<h3>`, o linie `<hr>` și o poezie cu `<br>` |
+| **Complet** | Minim + un titlu `<h3>`, o linie `<hr>`, o poezie cu `<br>` |
 
 ### Pasul 1 — Minim
 Pe scheletul complet, scrie în `<body>` un `<h1>` cu titlul povestirii, două titluri `<h2>` și câte un paragraf sub fiecare.
@@ -253,9 +265,9 @@ Pe scheletul complet, scrie în `<body>` un `<h1>` cu titlul povestirii, două t
 Scrii o pagină care arată ca o carte.
 
 - [ ] Scrie o pagină cu **regulile jocului tău preferat**, cu titluri și paragrafe  
+- [ ] Adaugă la pagina ta un capitol din articolul de pe Wikipedia: un `<h2>` cu **trei paragrafe** copiate de acolo și un comentariu cu sursa  
 - [ ] Încearcă și `<h5>` și `<h6>` într-o pagină cu cuprins de 4 niveluri  
-- [ ] Scrie în pagină, ca text, tagurile `<h1>` și `</h1>`, folosind `&lt;` și `&gt;` (vezi Acasă 2)  
-- [ ] Deschide DevTools cu **F12**, fila **Elements**, și caută titlurile paginii tale  
+- [ ] Deschide DevTools cu **F12** (pe Mac **Cmd + Option + I**), fila **Elements**, și caută titlurile paginii tale  
 
 ---
 
@@ -285,9 +297,7 @@ Scrii o pagină care arată ca o carte.
 ## Temă
 1. Fă o pagină `index.html` despre **un loc unde ai fost în vacanță** (sau pe care ai vrea să îl vezi): un `<h1>`, cel puțin trei titluri `<h2>`, paragrafe sub ele și o linie `<hr>`. Pune pagina în folderul `Prenume_Nume_W1_L3`.  
 2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
-3. **Exemple pentru acasă.** Încearcă amândouă:
-
-**Acasă 1 — Spațiile în plus se ignoră.**
+3. **Exemplu pentru acasă — Spațiile în plus se ignoră.** Încearcă-l:
 
 ```html
 <p>Salut,           lume!</p>
@@ -296,25 +306,6 @@ Scrii o pagină care arată ca o carte.
 ```
 
 Oricâte spații sau Enter-uri pui între cuvinte, browserul le arată ca **un singur spațiu**. Dacă vrei un rând nou, ai nevoie de un tag.
-
-**Acasă 2 — Semne speciale: `<` și `>`.**
-
-Ce se întâmplă dacă vrei să scrii **în pagină** un tag, de exemplu `<p>`? Browserul crede că e un tag adevărat și nu îl afișează. Folosim coduri speciale:
-
-| Vrei să apară | Scrii în cod |
-|---------------|--------------|
-| `<` | `&lt;` |
-| `>` | `&gt;` |
-| `&` | `&amp;` |
-
-```html
-<p>Tagul pentru paragraf este &lt;p&gt;.</p>
-<p>Ana &amp; Mihai sunt prieteni.</p>
-```
-
-În browser apare: **Tagul pentru paragraf este `<p>`.** și **Ana & Mihai sunt prieteni.**
-
-> Codul începe cu `&` și se termină cu `;` (punct și virgulă). „lt” vine de la „less than” (mai mic), iar „gt” de la „greater than” (mai mare).
 
 4. **Încă patru exerciții (B–E):**
 
@@ -340,7 +331,7 @@ Sporturi de echipă (h2)
 <h1>Sfârșit</h1>
 ```
 
-**E — Explică cu cuvintele tale.** Pe foaie: de ce nu folosim `h1` pentru orice text care trebuie să arate mare?
+**E — Explică cu cuvintele tale.** Într-un comentariu din cod: de ce nu folosim `h1` pentru orice text care trebuie să arate mare?
 
 ## Ce urmează — Lecția 4
 Învățăm să facem textul **îngroșat** și **înclinat** și să scriem **liste** cu buline și cu numere, ca într-o rețetă sau într-un top 5.

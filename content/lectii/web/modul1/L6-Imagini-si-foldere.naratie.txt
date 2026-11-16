@@ -20,7 +20,7 @@ Al cincilea pas. Legendă și link. Figure înfășoară imaginea, iar figcaptio
 
 De făcut azi. Minim: o pagină cu trei imagini din folderul imagini, fiecare cu text alt. Complet: adaugi o legendă sub fiecare imagine, o imagine care este și link și lățimea aleasă.
 
-Bonus. Colțul meu cu poze, ediția mare. Adaugi o a patra imagine, faci o a doua pagină într-un folder pagini, greșești intenționat un nume ca să vezi textul alt și cauți imaginea în DevTools.
+Bonus. Colțul meu cu poze, ediția mare. Adaugi o a patra imagine, faci o a doua pagină într-un folder pagini, termini pagina ta de pe Wikipedia cu trei imagini, fiecare cu alt, legendă și sursă, și cauți imaginea în DevTools.
 
 Greșeli frecvente. Imaginea nu se vede din cauza unei litere greșite în src. Ai scris bară inversă în loc de bară. Ai scris bară img. Lipsește alt. Ai pus și width, și height și imaginea s-a deformat.
 

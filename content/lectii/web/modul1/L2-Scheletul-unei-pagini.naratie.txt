@@ -18,7 +18,7 @@ Al cincilea pas. Indentarea. Tragi codul spre dreapta cu două spații pentru fi
 
 De făcut azi. Minim: scheletul complet, scris de tine, cu un title și un paragraf în body. Complet: adaugi un titlu mare, trei paragrafe despre tine, un comentariu și codul aranjat frumos, cu indentare.
 
-Bonus. Cartea de vizită a unui personaj. Faci o a doua carte de vizită, pentru un pirat, o vrăjitoare sau un robot, încerci trei titluri diferite în title și cauți head și body în DevTools.
+Bonus. Cartea de vizită a unui personaj. Faci o a doua carte de vizită, pentru un pirat, o vrăjitoare sau un robot, faci o a doua pagină cu trei paragrafe din articolul tău de pe Wikipedia și cauți head și body în DevTools.
 
 Greșeli frecvente. Ai scris textul în head și nu apare în pagină. Ai uitat închiderea title. Ai pus două body. Html nu este ultimul tag. Tag-uri încrucișate. Nu ai salvat.
 

@@ -17,7 +17,7 @@ La final ai primul tău **mini-site despre tine**, cu trei pagini legate printr-
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pornim proiectul |
+| 0–15 | Recapitulare · pornim proiectul · aducem pagina cu articolul de pe Wikipedia |
 | 15–40 | Un site = mai multe pagini · două pagini legate (**Exemplele 1–2**) |
 | 40–65 | Meniul · trei pagini (**Exemplele 3–4**) |
 | 65–90 | Subfolder · `../` · când linkul nu merge (**Exemplele 5–6**) |
@@ -46,9 +46,11 @@ La final ai primul tău **mini-site despre tine**, cu trei pagini legate printr-
 - Textul trebuie să se citească bine pe fundal.  
 - Linkurile se fac cu `<a href="...">`, iar linkurile către fișierele tale se scriu fără `https://`.
 
-**Încearcă tu (3 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Creează folderul `Prenume_Nume_W1_L8` și deschide folderul în VS Code  
 - [ ] Creează în el fișierul `index.html` cu scheletul complet scris de tine  
+- [ ] Copiază în folder pagina `wikipedia.html` din lecția trecută, împreună cu folderul `imagini`  
+- [ ] Numără capitolele `<h2>` din ea: din fiecare capitol vei face azi **o pagină a site-ului**  
 
 ---
 
@@ -90,6 +92,11 @@ Fișierul `despre.html` (în `<body>`):
 Deschide `index.html` cu Live Server, apasă pe link și ajungi în `despre.html`. Apoi apasă pe linkul din ea ca să te întorci.
 
 > Fiecare pagină trebuie să aibă propriul **schelet complet** (`<!DOCTYPE html>`, `<head>`, `<body>`). Exemplele arată doar interiorul lui `<body>`.
+
+**Încearcă tu (8 min)**  
+- [ ] În `index.html`, scrie un `<h1>` cu titlul articolului tău de pe Wikipedia și un paragraf de prezentare  
+- [ ] Pune în `index.html` un link spre `wikipedia.html`, cu text care spune unde duce  
+- [ ] Pune în `wikipedia.html` un link înapoi spre `index.html`  
 
 **Gata când:**  
 - [ ] Ai creat `despre.html` cu scheletul complet și un titlu  
@@ -142,10 +149,13 @@ Pune **același meniu** și în `index.html` și în `despre.html`. Testează c�
 
 > Dacă schimbi un nume de fișier, trebuie să schimbi linkul în **toate** paginile care îl folosesc. De aceea e bine să alegi numele din prima.
 
-**Încearcă tu (6 min)**  
+**Încearcă tu (14 min)**  
 - [ ] Creează `hobby.html` cu scheletul complet  
 - [ ] Pune meniul cu trei linkuri în toate cele trei pagini  
 - [ ] Parcurge toate linkurile cu Live Server, pe rând  
+- [ ] Împarte `wikipedia.html` în **două pagini**: pune primul capitol în `capitol1.html` și al doilea în `capitol2.html`, fiecare cu scheletul complet  
+- [ ] Pune un meniu cu patru linkuri (Acasă, Despre mine, Capitolul 1, Capitolul 2) în toate paginile  
+- [ ] Parcurge toate linkurile și verifică dacă poți ajunge din orice pagină în orice pagină  
 
 ---
 
@@ -196,6 +206,11 @@ Dacă apeși pe link și vezi „**404**”, „Cannot GET” sau o pagină goal
 4. Ai salvat fișierul (**Ctrl+S**) și ai pus fișierul în folderul proiectului?  
 5. Ai folosit bara `/`, nu `\`?
 
+**Încearcă tu (8 min)**  
+- [ ] Greșește intenționat un link spre `capitol2.html` (scrie `capitol2.htm`), vezi „404” și repară-l  
+- [ ] Cere unui coleg să strice un link din site-ul tău, iar tu găsești greșeala folosind lista de verificare  
+- [ ] Notează într-un comentariu care a fost greșeala  
+
 **Gata când:**  
 - [ ] Ai încercat un link greșit (de exemplu `despre.htm`) și ai înțeles mesajul „404”, apoi ai reparat linkul  
 - [ ] Poți explica de ce la `../` urcăm un folder  
@@ -206,7 +221,7 @@ Dacă apeși pe link și vezi „**404**”, „Cannot GET” sau o pagină goal
 
 ### Exemplul 7 — Harta site-ului
 
-Înainte să scrii cod, desenează pe foaie **harta site-ului**: o căsuță pentru fiecare pagină și săgeți pentru linkuri.
+Înainte să scrii cod, scrie într-un comentariu **harta site-ului**: câte un rând pentru fiecare pagină și săgeți (`->`) pentru linkuri.
 
 ```text
         [ Acasă ]
@@ -214,7 +229,7 @@ Dacă apeși pe link și vezi „**404**”, „Cannot GET” sau o pagină goal
 [Despre mine] [Hobby] [Animalele mele]
 ```
 
-Din fiecare pagină se poate ajunge în oricare alta, prin meniu. Hartă pe hârtie înseamnă mai puține greșeli în cod.
+Din fiecare pagină se poate ajunge în oricare alta, prin meniu. O hartă scrisă din timp înseamnă mai puține greșeli în cod.
 
 ### Exemplul 8 — Mini-site cu trei pagini
 
@@ -244,6 +259,12 @@ Din fiecare pagină se poate ajunge în oricare alta, prin meniu. Hartă pe hâr
 ```
 
 `despre.html` și `hobby.html` au **același schelet, același meniu și același stil de fundal**, dar alt titlu și alt conținut. Folosește culori care se potrivesc și pe toate paginile.
+
+**Încearcă tu (8 min)**  
+- [ ] Scrie într-un comentariu harta site-ului tău, cu toate paginile (`index`, `despre`, capitolele) și săgeți pentru linkuri  
+- [ ] Pune în fiecare pagină același fundal colorat, ales să se potrivească cu tema  
+- [ ] Pune în `<title>` al fiecărei pagini numele paginii, ca să se vadă în filă  
+- [ ] Pune în `index.html` o listă cu linkuri spre capitole, cu o frază despre fiecare  
 
 **Gata când:**  
 - [ ] Site-ul are trei pagini: `index.html`, `despre.html`, `hobby.html`  
@@ -285,9 +306,9 @@ Transformi paginile într-un mini-site:
 Faci site-ul mai mare și mai ordonat.
 
 - [ ] Adaugă o a patra pagină, `galerie.html`, cu imagini și legende  
-- [ ] Pune în fiecare pagină un link „Sus”, către `#sus`  
+- [ ] Fă din articolul tău de pe Wikipedia un site cu 4–5 pagini, cu același meniu, același fundal și imagini cu legende  
 - [ ] Mută paginile `despre` și `hobby` în folderul `pagini` și repară toate linkurile  
-- [ ] Deschide DevTools (**F12**), fila **Network**, reîncarcă pagina și vezi ce fișiere cere browserul  
+- [ ] Deschide DevTools (**F12**, pe Mac **Cmd + Option + I**), fila **Network**, reîncarcă pagina și vezi ce fișiere cere browserul  
 
 ---
 
@@ -370,7 +391,7 @@ Aceeași regulă ca la linkuri: `../` înseamnă „un folder mai sus”.
 <a href=index.html>Acasă</a>
 ```
 
-**E — Harta ta.** Desenează pe foaie harta unui site cu patru pagini despre un subiect ales de tine. Scrie sub fiecare căsuță numele fișierului.
+**E — Harta ta.** Scrie într-un comentariu harta unui site cu patru pagini despre un subiect ales de tine. Scrie lângă fiecare pagină numele fișierului.
 
 ## Ce urmează — Lecția 9
 Învățăm să **ținem codul ordonat**: indentare, comentarii și cum folosești DevTools ca să găsești greșelile.

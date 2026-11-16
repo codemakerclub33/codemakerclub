@@ -17,7 +17,7 @@ La final ai **colțul tău cu poze**: o pagină cu trei imagini din folderul `im
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pregătim pozele și folderele |
+| 0–15 | Recapitulare · pregătim pozele și folderele · imagini din articolul de pe Wikipedia |
 | 15–40 | Prima imagine · textul `alt` (**Exemplele 1–2**) |
 | 40–65 | Folderul `imagini` · mărimea imaginii (**Exemplele 3–4**) |
 | 65–80 | Formate de imagini (**Exemplul 5**) |
@@ -52,9 +52,12 @@ Ai nevoie de **3 imagini** ale **animalului tău preferat** (sau ale unui lucru 
 > **Despre imaginile din internet:** nu copia imaginile din orice loc. Multe sunt protejate și nu ai voie să le folosești în paginile tale. Alege imaginile **împreună cu profesorul** (există site-uri cu imagini libere) sau folosește **poze și desene făcute de tine**.  
 > **Fără poze cu oameni** (nici cu tine, nici cu alții) într-o pagină pe care o vede altcineva, dacă nu are acordul părinților.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (10 min)**  
 - [ ] Creează folderul `Prenume_Nume_W1_L6` și fișierul `index.html` cu scheletul scris de tine  
 - [ ] Pune cele 3 imagini într-un folder `imagini` din interiorul folderului proiectului, cu nume simple (`pisica1.jpg`, `pisica2.jpg`, `pisica3.jpg`)  
+- [ ] Copiază în folder pagina `wikipedia.html` din lecția trecută  
+- [ ] Alege **împreună cu profesorul** două imagini din articolul tău de pe Wikipedia, doar dintre cele cu licență liberă (profesorul verifică pagina imaginii), și salvează-le în folderul `imagini`, cu nume simple  
+- [ ] Scrie într-un fișier `tema.txt` de unde e fiecare imagine  
 
 > De aici înainte, exemplele arată doar ce scrii **în interiorul `<body>`**.
 
@@ -96,6 +99,11 @@ Compară:
 Al doilea text este mult mai bun: spune **ce vezi**, nu doar „poza”.
 
 > Încearcă și o greșeală: scrie `src="pisica1.jpgg"` (cu un `g` în plus). Imaginea dispare și apare textul `alt`. Repară și imaginea revine.
+
+**Încearcă tu (8 min)**  
+- [ ] Pune în `wikipedia.html` prima imagine din articol, după `<h1>`, cu `alt` care spune ce se vede în ea  
+- [ ] Scrie pentru a doua imagine un `alt` prost („poza”) și unul bun și compară cele două texte  
+- [ ] Greșește intenționat numele imaginii, vezi textul `alt` apărând în pagină, apoi repară  
 
 **Gata când:**  
 - [ ] O imagine se vede în pagină  
@@ -142,6 +150,11 @@ La fel ca la linkuri: `/` pentru a intra într-un folder, `../` pentru a urca.
 
 > Scrie doar `width`. Dacă scrii și `height` cu o valoare care nu se potrivește, imaginea se întinde urât (o pisică lungă și subțire!).
 
+**Încearcă tu (8 min)**  
+- [ ] Mută imaginile din `wikipedia.html` în folderul `imagini` și schimbă `src` în `imagini/...`  
+- [ ] Pune `width` pe fiecare imagine și încearcă 200, 300 și 400  
+- [ ] Alege lățimea la care se vede bine și imaginea, și textul din jur  
+
 **Gata când:**  
 - [ ] Imaginile sunt în folderul `imagini`, iar `src` începe cu `imagini/`  
 - [ ] Ai încercat două lățimi diferite și ai văzut cum se schimbă imaginea  
@@ -164,8 +177,10 @@ Imaginile se salvează în formate diferite. Le recunoști după terminație:
 
 Pentru paginile noastre vom folosi mai ales `.jpg` și `.png`.
 
-**Încearcă tu (3 min)**  
+**Încearcă tu (5 min)**  
 - [ ] Verifică ce formate au pozele tale (`.jpg` sau `.png`) și cum se numesc fișierele  
+- [ ] Verifică ce formate au imaginile din articol și dacă numele fișierelor sunt scurte, cu litere mici  
+- [ ] Redenumește fișierele care au spații, majuscule sau diacritice  
 
 ---
 
@@ -197,9 +212,13 @@ Poți pune o imagine **în interiorul** unui link:
 
 Acum, dacă apeși pe imagine, mergi la linkul din `href`. La fel cum ai pus text, poți pune imaginea între `<a>` și `</a>`.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (10 min)**  
 - [ ] Pune o imagine cu legendă sub ea  
 - [ ] Fă o imagine care e și link spre o altă pagină din folderul tău sau spre un site ales cu profesorul  
+- [ ] În `wikipedia.html`, pune fiecare imagine într-un `<figure>`, cu legendă  
+- [ ] Scrie în legendă și sursa: „Imagine: Wikipedia, articolul …”  
+- [ ] Fă din prima imagine un link spre articolul de pe Wikipedia  
+- [ ] Pune a doua imagine în alt capitol, lângă paragrafele lui  
 
 ---
 
@@ -280,9 +299,9 @@ Completezi colțul cu poze:
 Faci colțul cu poze mai mare și mai ordonat.
 
 - [ ] Adaugă o a patra imagine, un desen făcut de tine și fotografiat  
+- [ ] Termină `wikipedia.html` cu 3 imagini, în capitole diferite, fiecare cu `alt`, legendă cu sursă și `width`  
 - [ ] Fă o a doua pagină `galerie.html` într-un folder `pagini` și pune imaginile cu `../imagini/...`  
-- [ ] Greșește intenționat numele unei imagini, vezi textul `alt` și apoi repară  
-- [ ] Deschide DevTools (**F12**), fila **Elements**, apasă pe o imagine și vezi atributele `src` și `alt`  
+- [ ] Deschide DevTools (**F12**, pe Mac **Cmd + Option + I**), fila **Elements**, apasă pe o imagine și vezi atributele `src` și `alt`  
 
 ---
 
@@ -365,7 +384,7 @@ Ce scrii în `src` pentru imaginea `pisica.jpg`: (1) în `index.html`? (2) în `
 <img src="imagini/caine.jpg" alt="Câinele meu"></img>
 ```
 
-**E — Explică cu cuvintele tale.** Pe foaie: la ce folosește textul `alt` și de ce nu scriem doar „poza” în el?
+**E — Explică cu cuvintele tale.** Într-un comentariu din cod: la ce folosește textul `alt` și de ce nu scriem doar „poza” în el?
 
 ## Ce urmează — Lecția 7
 Facem paginile **colorate**: învățăm să schimbăm culoarea textului și a fundalului, primul pas spre aspectul pe care îl vei controla complet în Modulul 3.

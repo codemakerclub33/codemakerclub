@@ -17,11 +17,11 @@ La final ai scheletul unei pagini scris de tine, fără ajutorul lui `!` + Tab, 
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare din lecția 1 · pornim VS Code și Live Server |
+| 0–15 | Recapitulare din lecția 1 · alegem tema de pe Wikipedia · pornim VS Code și Live Server |
 | 15–40 | Scheletul scris de mână · `DOCTYPE` și `html` (**Exemplele 1–3**) |
 | 40–65 | `head`, `title`, `meta` (**Exemplele 4–5**) |
 | 65–90 | Tag-uri în tag-uri · indentare (**Exemplele 6–7**) |
-| 90–115 | Mini-proiect: cartea de vizită (**Exemplul 8**) |
+| 90–115 | Mini-proiect: cartea de vizită, cu text de pe Wikipedia (**Exemplul 8**) |
 | 115–120 | Recap și temă |
 
 ---
@@ -48,9 +48,13 @@ Din lecția trecută ții minte că:
 - un tag are, de obicei, **deschidere** `<p>` și **închidere** `</p>`;
 - salvezi cu **Ctrl + S** (pe Mac **Cmd + S**), iar **Live Server** reîncarcă pagina.
 
-**Încearcă tu (3 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Creează folderul `Prenume_Nume_W1_L2` și deschide folderul în VS Code  
 - [ ] Fă fișierul `index.html` și scrie în el un paragraf `<p>`, apoi pornește Live Server  
+- [ ] **Alege o temă de pe Wikipedia** (un animal, un sport, un oraș, un joc) și deschide articolul în browser  
+- [ ] Scrie într-un fișier `tema.txt` numele articolului: va fi **sursa** textelor tale, în tot modulul  
+
+> Din Wikipedia copiezi **texte scurte**, câte 2–3 propoziții, ca să ai ce scrie în paragrafe. Tema o păstrezi pe toată durata modulului, iar la fiecare lecție adaugi ceva nou la ea.
 
 ---
 
@@ -111,9 +115,11 @@ Două lucruri speciale:
 
 `lang="ro"` înseamnă „pagina este în limba română”. Se numește **atribut**: o informație în plus, scrisă în tagul de deschidere, în forma `nume="valoare"`. Calculatoarele care citesc pagina cu voce tare sau browserele care traduc pagini se folosesc de el. Pentru engleză ar fi `lang="en"`.
 
-**Încearcă tu (3 min)**  
+**Încearcă tu (6 min)**  
 - [ ] Schimbă `lang="ro"` în `lang="en"` și apoi pune din nou `ro`  
 - [ ] Verifică ce tag se închide **ultimul** în pagina ta  
+- [ ] Scrie în `<body>` un prim paragraf `<p>` cu **primele 2–3 propoziții** din articolul tău de pe Wikipedia  
+- [ ] Scrie într-un comentariu `<!-- -->` ce face `html` și ce face `lang`  
 
 ---
 
@@ -148,9 +154,12 @@ Fără această linie, pe unele calculatoare apar semne ciudate în loc de diacr
 
 > `meta` nu are tag de închidere. Tagurile care nu au închidere, precum `meta`, `br` și `hr`, se numesc **tag-uri singure**.
 
-**Încearcă tu (4 min)**  
-- [ ] Schimbă `<title>` în numele tău și vezi noul titlu în filă  
+**Încearcă tu (8 min)**  
+- [ ] Schimbă `<title>` în numele articolului tău de pe Wikipedia și vezi noul titlu în filă  
 - [ ] Scrie în `<body>` un paragraf cu diacritice (de exemplu „Șoricelul țese mătase”) și verifică să se vadă corect  
+- [ ] Mai adaugă **încă două paragrafe** `<p>` din articolul tău, fiecare cu 2–3 propoziții  
+- [ ] Verifică dacă diacriticele din textul copiat se văd corect în pagină  
+- [ ] Încearcă trei titluri pentru aceeași pagină și alege-l pe cel mai bun  
 
 ---
 
@@ -179,9 +188,12 @@ Regula: **ultimul tag deschis se închide primul.**
 </body>
 ```
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Scrie Exemplul 6 și vezi că „Ana” apare îngroșat  
-- [ ] Scrie pe foaie ordinea în care se închid `<body>`, `<p>` și `<strong>`  
+- [ ] Scrie într-un comentariu ordinea în care se închid `<body>`, `<p>` și `<strong>`  
+- [ ] În paragrafele din articolul tău, pune cu `<strong>` **un cuvânt important** în fiecare paragraf  
+- [ ] Pune într-un paragraf **două** cuvinte îngroșate, în locuri diferite  
+- [ ] Verifică în cod că fiecare `<strong>` are `</strong>` și că ultimul tag deschis se închide primul  
 
 ---
 
@@ -213,8 +225,11 @@ VS Code poate aranja codul pentru tine: apasă **Shift + Alt + F** (pe Mac **Shi
 
 > Tasta **Tab** în VS Code pune spații pentru indentare, iar **Shift + Tab** le scoate.
 
-**Încearcă tu (3 min)**  
+**Încearcă tu (6 min)**  
 - [ ] Șterge indentarea din pagina ta, apoi aranjează codul cu **Shift + Alt + F** (sau cu mâna)  
+- [ ] Mută un paragraf mai sus și un altul mai jos, apoi aranjează din nou codul  
+- [ ] Pune câte o linie goală între paragrafe și vezi că în browser nu se schimbă nimic  
+- [ ] Spune unui coleg ce stă în ce, citind codul tău de sus în jos  
 
 ---
 
@@ -241,6 +256,7 @@ VS Code poate aranja codul pentru tine: apasă **Shift + Alt + F** (pe Mac **Shi
 ```
 
 Cartea ta de vizită este despre **tine**: schimbă numele, orașul, hobby-ul și visul.
+
 
 ---
 
@@ -277,8 +293,8 @@ Transformi pagina în „Cartea mea de vizită”:
 Inventezi un personaj și îi faci cartea de vizită.
 
 - [ ] Fă o a doua „carte de vizită”, pentru un personaj inventat (un pirat, o vrăjitoare, un robot)  
-- [ ] Scrie un `<title>` de 3 feluri diferite și alege titlul cel mai bun  
-- [ ] Deschide DevTools cu **F12**, fila **Elements**, și găsește `head` și `body` ale paginii tale  
+- [ ] Fă o a doua pagină cu **trei paragrafe** `<p>` din articolul tău de pe Wikipedia, cu un cuvânt important îngroșat în fiecare și un comentariu cu sursa  
+- [ ] Deschide DevTools cu **F12** (pe Mac **Cmd + Option + I**), fila **Elements**, și găsește `head` și `body` ale paginii tale  
 - [ ] Deschide „Vezi sursa” (Ctrl + U) pe o pagină din internet și caută `<title>` și `lang=`  
 
 ---
@@ -384,7 +400,7 @@ Aici `</p>` apare **înainte** de `</strong>`, deși `<strong>` s-a deschis dup�
 </body>
 ```
 
-**E — Explică cu cuvintele tale.** Pe foaie, într-o propoziție pentru fiecare: la ce folosesc `head`, `body` și `title`?
+**E — Explică cu cuvintele tale.** Într-un comentariu din cod, într-o propoziție pentru fiecare: la ce folosesc `head`, `body` și `title`?
 
 ## Ce urmează — Lecția 3
 Învățăm să scriem **titluri de mărimi diferite** (`h1` … `h6`) și să împărțim textul în **paragrafe**. Paginile tale încep să arate ca niște pagini adevărate.

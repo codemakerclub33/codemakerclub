@@ -18,10 +18,10 @@ Al cincilea pas. Linia hr trasează o linie orizontală între două părți ale
 
 De făcut azi. Minim: o pagină cu un titlu h unu, două titluri h doi și câte un paragraf sub fiecare. Complet: adaugi un titlu h trei, o linie hr și o poezie cu br.
 
-Bonus. Regulile jocului meu. Scrii regulile jocului tău preferat, încerci h cinci și h șase într-un cuprins cu patru niveluri și cauți titlurile în DevTools.
+Bonus. Regulile jocului meu. Scrii regulile jocului tău preferat, adaugi un capitol din articolul tău de pe Wikipedia, încerci h cinci și h șase într-un cuprins cu patru niveluri și cauți titlurile în DevTools.
 
 Greșeli frecvente. Titlu deschis cu h doi și închis cu h trei. Mai multe h unu pe aceeași pagină. Sărituri de la h doi la h cinci. Ai crezut că Enter face rând nou. Ai uitat închiderea paragrafului.
 
-Tema. O pagină despre un loc unde ai fost în vacanță. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
+Tema. O pagină despre un loc unde ai fost în vacanță. Apoi refaci patru exemple, încerci un exemplu pentru acasă și rezolvi încă patru exerciții.
 
 Recapitulare. Titlurile merg de la h unu la h șase, ca un cuprins. Paragraful este p, rândul nou este br, linia este hr. Succes!

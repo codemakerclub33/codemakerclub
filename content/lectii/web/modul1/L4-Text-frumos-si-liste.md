@@ -17,7 +17,7 @@ La final ai o **rețetă** (sau un **top**) cu titlu, ingrediente într-o listă
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pornim proiectul |
+| 0–15 | Recapitulare · pornim proiectul · pagina cu articolul de pe Wikipedia |
 | 15–40 | `strong`, `em` și tag-uri în tag-uri (**Exemplele 1–3**) |
 | 40–55 | `mark` și `small` (**Exemplul 4**) |
 | 55–85 | Liste cu buline și cu numere (**Exemplele 5–6**) |
@@ -46,12 +46,14 @@ La final ai o **rețetă** (sau un **top**) cu titlu, ingrediente într-o listă
 Din lecția trecută ții minte că:
 - titlurile merg de la `h1` la `h6`, în ordine, ca un cuprins;
 - `<p>` face paragrafe, `<br>` rupe rândul, `<hr>` trasează o linie;
-- ultimul tag deschis se închide primul;
-- `&lt;` și `&gt;` scriu semnele `<` și `>` în text.
+- ultimul tag deschis se închide primul.
 
-**Încearcă tu (3 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Creează folderul `Prenume_Nume_W1_L4` și fișierul `index.html` cu scheletul scris de tine  
 - [ ] Pune în `<body>` un `<h1>` și un paragraf despre mâncarea ta preferată  
+- [ ] Fă o a doua pagină, `wikipedia.html`, cu scheletul scris de tine, în același folder  
+- [ ] Pune în ea ca `<h1>` titlul articolului tău de pe Wikipedia, apoi un `<h2>` cu un capitol din articol  
+- [ ] Copiază sub capitol **trei paragrafe** `<p>`, de 2–3 propoziții fiecare  
 
 > De aici înainte, exemplele arată doar ce scrii **în interiorul `<body>`**.
 
@@ -91,6 +93,12 @@ Aici `<em>` e în interiorul lui `<strong>`, deci cuvântul e **și îngroșat, 
 - [ ] Ai scris un cuvânt îngroșat, unul înclinat și unul amândouă  
 - [ ] Ai verificat ordinea închiderilor la tag-urile puse unul în altul  
 
+**Încearcă tu (10 min)**  
+- [ ] În `wikipedia.html`, pune cu `<strong>` **un cuvânt important** în fiecare paragraf  
+- [ ] Pune cu `<em>` numele unei cărți, al unui film sau al unui loc din text  
+- [ ] Pune într-un paragraf un cuvânt și îngroșat, și înclinat  
+- [ ] Verifică în cod că toate tagurile se închid în ordinea corectă  
+
 ---
 
 ## 3. Alte feluri de text
@@ -105,8 +113,11 @@ Aici `<em>` e în interiorul lui `<strong>`, deci cuvântul e **și îngroșat, 
 - `<mark>` pune un **fundal galben**, ca atunci când treci cu textmarkerul.  
 - `<small>` face textul **mai mic**, pentru note și mențiuni mărunte.
 
-**Încearcă tu (3 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Scrie un paragraf cu `<mark>` pe data de azi și o notă mică cu `<small>`  
+- [ ] În `wikipedia.html`, evidențiază cu `<mark>` **un an sau o dată** din text  
+- [ ] Pune la sfârșit o notă mică cu `<small>`: „Sursa: Wikipedia, articolul …”  
+- [ ] Compară cum arată `<strong>`, `<em>` și `<mark>` pe același cuvânt  
 
 ---
 
@@ -144,9 +155,12 @@ Când ordinea nu contează (ce iei la picnic, ce animale îți plac), folosim `<
 
 `<ol>` (de la „ordered list”, adică „listă ordonată”) numerotează singură: 1, 2, 3, 4. Când ordinea contează (pași, reguli, clasamente), folosim `<ol>`.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (12 min)**  
 - [ ] Scrie o listă cu buline despre ce iei într-o excursie  
 - [ ] Scrie o listă numerotată cu pașii unei rețete simple sau cu un top 5  
+- [ ] În `wikipedia.html`, adaugă un capitol „Pe scurt” cu o **listă cu buline** de 4 fapte din articol  
+- [ ] Adaugă un capitol „Top 3” cu o **listă numerotată**, de exemplu cele mai importante 3 lucruri despre tema ta  
+- [ ] Schimbă `<ul>` în `<ol>` și invers și vezi ce se schimbă  
 
 ---
 
@@ -178,6 +192,11 @@ Uneori un element al listei are la rândul lui o listă mică. O punem **în int
 Observă: lista mică stă **între** `<li>` și `</li>` al elementului din care face parte. Bulinele listei din interior arată altfel, ca să vezi că sunt de „al doilea nivel”.
 
 > Indentează cu atenție. Așa vezi imediat ce listă stă în ce element.
+
+**Încearcă tu (8 min)**  
+- [ ] Scrie Exemplul 7 și schimbă fructele și legumele cu ale tale  
+- [ ] În `wikipedia.html`, fă lista „Pe scurt” cu un element care are o sub-listă de 2–3 elemente  
+- [ ] Pune într-un `<li>` un cuvânt îngroșat  
 
 **Gata când:**  
 - [ ] Ai o listă cu două elemente care au fiecare o listă mică  
@@ -260,9 +279,9 @@ Pe scheletul complet, scrie un `<h1>` cu numele rețetei (sau al topului), o lis
 Faci un top mai bogat, cu liste în liste.
 
 - [ ] Adaugă la rețeta ta o listă în listă (de exemplu: „Pentru decor” cu două sub-elemente)  
-- [ ] Scrie o formulă cu `<sup>`, de exemplu viteza în m/s sau aria într-un cm² (vezi Acasă 1)  
-- [ ] Fă un top 5 cu `<ol reversed>` și un cuvânt îngroșat în fiecare element (vezi Acasă 2)  
-- [ ] Caută listele paginii tale în DevTools: **F12**, fila **Elements**  
+- [ ] Fă din `wikipedia.html` o pagină completă: 3 capitole `<h2>` cu câte 3 paragrafe, o listă „Pe scurt” și sursa în `<small>`  
+- [ ] Pune într-o listă cu pași un cuvânt evidențiat cu `<mark>` și unul cu `<em>`  
+- [ ] Caută listele paginii tale în DevTools: **F12** (pe Mac **Cmd + Option + I**), fila **Elements**  
 
 ---
 
@@ -300,14 +319,12 @@ Faci un top mai bogat, cu liste în liste.
 **Acasă 1 — Exponenți și indici: `<sup>`, `<sub>`.**
 
 ```html
-<p>Aria unui pătrat cu latura 3 este 3 &times; 3 = 9 m<sup>2</sup>.</p>
+<p>Aria unui pătrat cu latura 3 este 3 × 3 = 9 m<sup>2</sup>.</p>
 <p>Apa se scrie H<sub>2</sub>O.</p>
 ```
 
 - `<sup>` (de la „superscript”) ridică textul **sus**: m².  
 - `<sub>` (de la „subscript”) îl coboară **jos**: H₂O.  
-
-`&times;` este semnul înmulțirii (×), scris cu un cod special, ca `&lt;` din exercițiul de acasă la Lecția 3.
 
 **Acasă 2 — Topul meu, cu numărătoare inversă.**
 
@@ -349,7 +366,7 @@ Cu atributul `reversed` lista se numără **înapoi**: 5, 4, 3, 2, 1. Mai poți 
 <li>Nuci</li>
 ```
 
-**E — Explică cu cuvintele tale.** Pe foaie: când folosim `<ul>` și când folosim `<ol>`? Dă câte un exemplu.
+**E — Explică cu cuvintele tale.** Într-un comentariu din cod: când folosim `<ul>` și când folosim `<ol>`? Dă câte un exemplu.
 
 ## Ce urmează — Lecția 5
 Învățăm să facem **linkuri**: cuvinte pe care apeși și te duc pe alte pagini, pe site-uri din internet sau chiar într-un loc anume din aceeași pagină.

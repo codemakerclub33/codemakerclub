@@ -20,7 +20,7 @@ Al cincilea pas. Linkuri în aceeași pagină. Dai unui titlu un id, de exemplu 
 
 De făcut azi. Minim: o pagină cu trei linkuri, două spre site-uri din internet și unul spre o a doua pagină făcută de tine. Complet: adaugi un link în filă nouă, un link Înapoi sus și o listă cu buline pentru linkuri.
 
-Bonus. Cuprinsul meu. Faci un mini-cuprins cu linkuri spre fiecare titlu, adaugi o a treia pagină, încerci un link pentru e-mail cu o adresă de probă și numeri linkurile unei pagini reale.
+Bonus. Cuprinsul meu. Faci un mini-cuprins cu linkuri spre fiecare titlu, adaugi o a treia pagină, lărgești pagina ta de pe Wikipedia la patru capitole, cu cuprins și linkuri, încerci un link Înapoi sus și numeri linkurile unei pagini reale.
 
 Greșeli frecvente. Adresă fără h-t-t-p-s. Lipsesc ghilimelele. Ai uitat închiderea tagului a. Ai greșit numele fișierului. Ai scris blank fără liniuță jos. Ai uitat semnul diez la linkul din pagină.
 

@@ -18,7 +18,7 @@ Al cincilea pas. Rețeta mea. Faci o pagină cu titlu, o listă cu ingrediente, 
 
 De făcut azi. Minim: o pagină cu text îngroșat și înclinat, o listă cu buline și o listă cu numere. Complet: adaugi o listă în altă listă, un cuvânt evidențiat și o notă mică.
 
-Bonus. Topul cu sub-liste. Adaugi la rețetă o listă în listă, încerci un exponent cu sup și un top cinci cu numărătoare inversă, apoi cauți listele în DevTools.
+Bonus. Topul cu sub-liste. Adaugi la rețetă o listă în listă, încerci un cuvânt evidențiat și unul înclinat într-o listă cu pași, apoi faci pagina ta de pe Wikipedia completă, cu trei capitole, o listă pe scurt și sursa într-o notă mică. La final cauți listele în DevTools.
 
 Greșeli frecvente. Li scris în afara unei liste. Ul închis cu bară ol. Ai uitat închiderea li. Tag-uri încrucișate. Ai scris singur numerele, deși ol numerotează automat.
 

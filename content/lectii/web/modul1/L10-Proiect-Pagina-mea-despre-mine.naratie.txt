@@ -8,7 +8,7 @@ Instrucțiuni noi azi. Nu avem taguri noi, doar reluăm ce știi. Scheletul pagi
 
 Siguranța, înainte de toate. Nu scrie în site numele complet, adresa, orașul, numele școlii, numărul de telefon sau adresa reală de e-mail. Nu pune poze cu fața ta sau a altor persoane. Folosește un desen, un avatar făcut de tine sau o imagine aleasă cu profesorul. Scrie doar prenumele sau o poreclă.
 
-Primul pas. Planul. Desenează pe foaie harta site-ului, cu cinci pagini: Acasă, Cartea mea de vizită, Rețeta mea, Colecția mea de linkuri și Colțul meu cu poze. Sub fiecare căsuță scrie ce proiect din modul reiei. Dacă ai păstrat folderele din lecțiile trecute, poți copia paginile de acolo.
+Primul pas. Planul. Scrie într-un comentariu harta site-ului, cu cinci pagini: Acasă, Cartea mea de vizită, Rețeta mea, Colecția mea de linkuri și Colțul meu cu poze. Sub fiecare căsuță scrie ce proiect din modul reiei. Dacă ai păstrat folderele din lecțiile trecute, poți copia paginile de acolo.
 
 Al doilea pas. Folderul, scheletul, meniul și culorile. Scrii scheletul și meniul o singură dată, în index punct html, apoi le copiezi în celelalte pagini și schimbi titlul fiecărei pagini. Alegi aceleași culori pe toate paginile, ca site-ul să arate ca un singur site.
 
@@ -26,7 +26,7 @@ Al optulea pas. Verificarea. Fiecare pagină are scheletul complet și titlu dif
 
 De făcut azi. Minim: trei pagini, index, carte și poze, cu același meniu, aceleași culori și cel puțin o imagine cu alt. Complet: adaugi pagina cu rețeta și pagina cu linkuri, comentarii pe secțiuni, cod indentat și lista de verificare bifată.
 
-Bonus. Pagina poveștii. Adaugi povestea din lecția trei, un link Sus în fiecare pagină și muți paginile într-un folder pagini, cu toate linkurile reparate.
+Bonus. Pagina poveștii. Adaugi povestea din lecția trei, un link Sus în fiecare pagină, faci din pagina cu articolul de pe Wikipedia cea mai bună pagină a site-ului și muți paginile într-un folder pagini, cu toate linkurile reparate.
 
 Greșeli frecvente. Meniul diferă de la o pagină la alta. Ai uitat să schimbi titlul după copiere. Numele imaginilor nu se potrivesc. Culori diferite pe fiecare pagină. Ai pus date personale. Ai uitat alt. Cod neindentat. Au rămas linkuri vechi către pagini care nu mai există.
 

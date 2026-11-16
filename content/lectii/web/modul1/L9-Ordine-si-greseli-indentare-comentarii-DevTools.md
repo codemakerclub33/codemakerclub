@@ -17,7 +17,7 @@ La final ai reparat o **pagină stricată**, cu șase greșeli ascunse, și ai p
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pornim proiectul |
+| 0–15 | Recapitulare · pornim proiectul · aducem site-ul cu articolul de pe Wikipedia |
 | 15–35 | Indentarea (**Exemplele 1–2**) |
 | 35–55 | Comentariile (**Exemplele 3–4**) |
 | 55–70 | Cum căutăm o greșeală (**Exemplul 5**) |
@@ -46,9 +46,11 @@ La final ai reparat o **pagină stricată**, cu șase greșeli ascunse, și ai p
 - `../` înseamnă „un folder mai sus”.  
 - Dacă un link nu merge, verifici numele fișierului, extensia și folderul.
 
-**Încearcă tu (3 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Creează folderul `Prenume_Nume_W1_L9` și deschide folderul în VS Code  
 - [ ] Creează fișierul `index.html` cu scheletul complet scris de tine  
+- [ ] Copiază în folder site-ul din lecția trecută (toate paginile și folderul `imagini`)  
+- [ ] Deschide-l cu Live Server și verifică dacă merg toate linkurile din meniu  
 
 ---
 
@@ -100,6 +102,12 @@ VS Code te ajută:
 La prima folosire, VS Code poate întreba ce formatator să folosească. Alege cel pentru HTML.
 
 > Formatarea automată arată ce ai de reparat: dacă un tag nu are închidere, rândurile de după el apar mutate greșit.
+
+**Încearcă tu (8 min)**  
+- [ ] Deschide una dintre paginile site-ului tău și mută o listă cu un nivel greșit, ca să vezi cum arată codul neindentat  
+- [ ] Indentează-o la loc, manual, cu **Tab**  
+- [ ] Formatează cu **Shift + Alt + F** (pe Mac **Shift + Option + F**) toate paginile site-ului, pe rând  
+- [ ] Verifică dacă a rămas vreo pagină cu rânduri mutate greșit  
 
 **Gata când:**  
 - [ ] Ai scris sau ai copiat o listă fără indentare și ai indentat lista manual cu Tab  
@@ -153,10 +161,12 @@ Este util când vrei să **testezi** pagina fără o bucată de cod, fără să 
 
 > Nu scrie în comentarii informații personale (adresa, telefonul). Oricine poate vedea comentariile, cu Ctrl + U sau cu DevTools.
 
-**Încearcă tu (5 min)**  
+**Încearcă tu (10 min)**  
 - [ ] Pune în pagina ta trei comentarii care marchează secțiunile  
 - [ ] Ascunde un paragraf cu **Ctrl + /** (sau Cmd + /) și verifică în browser că a dispărut  
 - [ ] Apasă din nou scurtătura și verifică în browser că a reapărut  
+- [ ] În paginile cu articolul de pe Wikipedia, pune un comentariu înaintea fiecărui capitol  
+- [ ] Pune în fiecare pagină un comentariu cu **sursa** articolului  
 
 ---
 
@@ -186,6 +196,12 @@ Când pagina nu arată cum vrei, **nu te panica** și nu schimba la întâmplare
 
 Textul de după titlu apare mare, deși este în `<p>`. Greșeala nu este în paragraf, ci **înainte**: titlul nu a fost închis (`<h1>` în loc de `</h1>`). Greșeala și efectul sunt în locuri diferite.
 
+**Încearcă tu (10 min)**  
+- [ ] Fă o copie a unei pagini, `test.html`, și **strică în ea trei lucruri** (un tag neînchis, o literă în numele unei imagini, un `;` lipsă)  
+- [ ] Dă `test.html` unui coleg, iar tu primești pagina lui  
+- [ ] Găsește greșelile colegului, folosind pașii din listă, și notează-le într-un comentariu  
+- [ ] Spune care pas din listă te-a ajutat cel mai mult  
+
 **Gata când:**  
 - [ ] Poți spune cu cuvintele tale primii patru pași pentru căutarea unei greșeli  
 - [ ] Ai găsit greșeala din Exemplul 5 fără să te uiți la rezolvare  
@@ -214,11 +230,13 @@ Failed to load resource: the server responded with a status of 404 (Not Found)
 
 Acesta înseamnă: „Nu am găsit un fișier”. Mesajul arată și numele fișierului căutat, deci vezi exact ce nume a căutat browserul. Compară acest nume cu numele din folder.
 
-**Încearcă tu (8 min)**  
+**Încearcă tu (14 min)**  
 - [ ] Deschide DevTools pe pagina ta și găsește în Elements titlul `<h1>`  
 - [ ] Apasă pe titlu în Elements și vezi tagul lui evidențiat  
 - [ ] Scrie greșit numele unei imagini, salvează și găsește mesajul „404” în Console  
 - [ ] Repară numele imaginii, reîncarcă pagina și verifică în Console că mesajul a dispărut  
+- [ ] Deschide în Elements pagina cu articolul de pe Wikipedia și găsește un `<h2>` și o imagine  
+- [ ] Verifică în Console că toate paginile site-ului nu au erori, pe rând  
 
 ---
 
@@ -284,7 +302,7 @@ Căutați greșeli împreună, ca doi detectivi.
 - [ ] Creează cu un coleg câte o pagină cu 5 greșeli ascunse și schimbați paginile: fiecare găsește greșelile celuilalt  
 - [ ] În Elements, apasă clic dreapta pe un tag și caută opțiunea de a șterge temporar acel tag; apoi reîncarcă pagina  
 - [ ] Cu profesorul, încearcă un validator HTML (un site care verifică codul) și citește mesajele lui  
-- [ ] Deschide DevTools în modul pentru telefon (icoana cu telefon și tabletă) și vezi cum arată pagina mai îngustă  
+- [ ] Verifică întreg site-ul de pe Wikipedia: indentat, cu comentarii, fără erori în Console și cu toate linkurile funcționale  
 
 ---
 
@@ -316,7 +334,7 @@ Căutați greșeli împreună, ca doi detectivi.
 - De ce schimbi un singur lucru odată când repari o pagină?
 
 ## Temă
-1. Alege cea mai lungă pagină făcută de tine în acest modul. Formatează pagina cu **Shift + Alt + F**, adaugă comentarii care marchează secțiunile și verifică în DevTools, fila Console, că nu există erori. Notează pe foaie ce ai reparat.  
+1. Alege cea mai lungă pagină făcută de tine în acest modul. Formatează pagina cu **Shift + Alt + F**, adaugă comentarii care marchează secțiunile și verifică în DevTools, fila Console, că nu există erori. Notează într-un comentariu ce ai reparat.  
 2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
 3. **Exemple pentru acasă.** Încearcă amândouă:
 
@@ -334,16 +352,16 @@ Dacă pagina are 40 de linii și nu știi unde este greșeala: pune în comentar
 
 **B — Comentarii.** În `curat.html`, adaugă trei comentarii care spun ce face fiecare secțiune. Ascunde apoi desertul cu un comentariu și verifică în browser. Apoi afișează din nou desertul.
 
-**C — Greșelile pe foaie.** Pe foaie, scrie fiecare dintre cele 6 greșeli din Exemplul 8 și ce ai schimbat ca să o repari.
+**C — Greșelile într-un comentariu.** Într-un comentariu din cod, scrie fiecare dintre cele 6 greșeli din Exemplul 8 și ce ai schimbat ca să o repari.
 
 **D — Misiune DevTools.** Deschide site-ul tău din Lecția 8. Cu DevTools:
 1. găsește în Elements meniul de linkuri;  
 2. schimbă temporar culoarea unui titlu;  
 3. scrie greșit un link către o imagine, salvează și citește mesajul din Console.  
 
-Notează pe foaie ce ai găsit.
+Notează într-un comentariu ce ai găsit.
 
-**E — Explică cu cuvintele tale.** Pe foaie: de ce ne ajută indentarea? Dă un exemplu de situație în care un comentariu este util.
+**E — Explică cu cuvintele tale.** Într-un comentariu din cod: de ce ne ajută indentarea? Dă un exemplu de situație în care un comentariu este util.
 
 ## Ce urmează — Lecția 10
 Ultimul proiect din modul: **„Pagina mea despre mine”**. Folosești tot ce ai învățat: schelet, titluri, liste, linkuri, imagini, culori și multe pagini.

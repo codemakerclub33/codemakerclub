@@ -17,7 +17,7 @@ La final ai o **pagină colorată** despre ceva ce îți place, cu fundal, titlu
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pornim proiectul |
+| 0–15 | Recapitulare · pornim proiectul · aducem pagina cu articolul de pe Wikipedia |
 | 15–40 | Primul stil · culori cu nume (**Exemplele 1–2**) |
 | 40–65 | Culoarea fundalului · mai multe reguli (**Exemplele 3–4**) |
 | 65–80 | Colorăm un cuvânt (**Exemplul 5**) |
@@ -47,9 +47,11 @@ Din lecția trecută ții minte că:
 - pozele stau într-un folder `imagini`;
 - `<figure>` și `<figcaption>` pun o legendă sub imagine.
 
-**Încearcă tu (3 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Creează folderul `Prenume_Nume_W1_L7` și fișierul `index.html` cu scheletul scris de tine  
 - [ ] Pune în `<body>` un `<h1>`, două paragrafe și o listă cu buline cu trei lucruri  
+- [ ] Copiază în folder pagina `wikipedia.html` din lecția trecută, împreună cu folderul `imagini`  
+- [ ] Deschide-o cu Live Server și verifică dacă imaginile se văd  
 
 > De aici înainte, exemplele arată doar ce scrii **în interiorul `<body>`**, dacă nu spunem altfel.
 
@@ -106,6 +108,11 @@ Câteva nume frecvente:
 
 > Dacă scrii greșit numele culorii, culoarea pur și simplu **nu se schimbă**. Verifică cum e scris.
 
+**Încearcă tu (8 min)**  
+- [ ] În `wikipedia.html`, colorează `<h1>` cu o culoare cu nume  
+- [ ] Colorează cu câte o culoare diferită cele trei titluri `<h2>` ale capitolelor  
+- [ ] Schimbă o culoare de trei ori și alege-o pe cea mai potrivită temei tale  
+
 **Gata când:**  
 - [ ] Ai colorat un titlu și un paragraf cu culori alese de tine  
 - [ ] Ai schimbat o culoare și ai văzut cum se schimbă pagina după salvare  
@@ -137,9 +144,12 @@ Scrii regulile **una după alta**, fiecare terminată cu `;`. Aici titlul are te
 
 > Regulă: **între reguli pui `;`**. Dacă îl uiți, a doua regulă nu mai funcționează. Pune `;` și după ultima regulă, ca obicei.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (10 min)**  
 - [ ] Pune un fundal deschis pe `<body>`  
 - [ ] Fă un titlu cu text alb pe fundal închis, cu două reguli în același `style`  
+- [ ] În `wikipedia.html`, pune pe `<body>` un fundal deschis, ales să se potrivească cu tema  
+- [ ] Fă din `<h1>` un titlu alb pe fundal închis, cu două reguli în același `style`  
+- [ ] Verifică dacă ai pus `;` după fiecare regulă  
 
 ---
 
@@ -155,8 +165,10 @@ Dacă pui `style` pe `<p>`, se colorează tot paragraful. Cum colorezi doar **un
 
 Doar cuvintele din interiorul `<span>` se colorează.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Colorează două cuvinte dintr-un paragraf cu culori diferite, cu `<span>`  
+- [ ] În `wikipedia.html`, colorează cu `<span>` cuvintele importante din fiecare paragraf (cele îngroșate cu `<strong>`)  
+- [ ] Colorează cu `<span>` un an sau o dată din text  
 
 ---
 
@@ -193,9 +205,12 @@ Nu trebuie să știi codurile pe de rost. Dacă VS Code arată un **pătrățel 
 
 Textul și fundalul trebuie să fie **foarte diferite** ca strălucire: una **închisă** și una **deschisă**. Verifică mereu pagina de la o distanță de brațe: dacă nu poți citi, schimbă culorile.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (10 min)**  
 - [ ] Alege o culoare cu cod `#` (cu paleta din VS Code sau din internet) și folosește culoarea la un titlu  
 - [ ] Testează o pereche de culori care se citește prost și una care se citește bine  
+- [ ] În `wikipedia.html`, colorează cu cod `#` titlul `<h1>` și o notă de la sfârșit  
+- [ ] Verifică de la distanță dacă tot textul se citește ușor  
+- [ ] Cere unui coleg să citească pagina și să spună unde nu se vede bine  
 
 ---
 
@@ -272,9 +287,9 @@ Completezi pagina colorată:
 Faci o pagină plină de culori, dar care se citește bine.
 
 - [ ] Fă o pagină „curcubeu”: șapte titluri, fiecare într-o culoare a curcubeului  
+- [ ] Fă din `wikipedia.html` o pagină în trei culori care se potrivesc, cu text care se citește bine și cu sursa într-o culoare gri  
 - [ ] Încearcă `font-family: Arial;` pe un paragraf și vezi cum se schimbă literele  
-- [ ] Pune o imagine pe pagina colorată și vezi cum arată cu fundalul ales  
-- [ ] Deschide DevTools (**F12**), fila **Elements**, apasă pe un titlu colorat și caută regula `style` în panoul din dreapta  
+- [ ] Deschide DevTools (**F12**, pe Mac **Cmd + Option + I**), fila **Elements**, apasă pe un titlu colorat și caută regula `style` în panoul din dreapta  
 
 ---
 
@@ -355,7 +370,7 @@ O culoare pusă pe `<body>` se aplică și **textului din interior**, ca o moșt
 <h1 style="color: red">Titlu</p>
 ```
 
-**E — Explică cu cuvintele tale.** Pe foaie: de ce nu e bine să scrii text galben pe fundal alb? Dă un exemplu de pereche de culori care merge bine.
+**E — Explică cu cuvintele tale.** Într-un comentariu din cod: de ce nu e bine să scrii text galben pe fundal alb? Dă un exemplu de pereche de culori care merge bine.
 
 ## Ce urmează — Lecția 8
 Legăm **mai multe pagini** într-un mic site, cu un meniu de linkuri pe care îl pui în fiecare pagină, ca să te plimbi ușor între ele.

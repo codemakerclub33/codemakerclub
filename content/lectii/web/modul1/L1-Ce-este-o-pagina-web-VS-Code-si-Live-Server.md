@@ -301,7 +301,7 @@ Transformi pagina într-un „cap de pagină” despre tine:
 Ești detectiv: cauți urme de HTML pe pagini reale.
 
 - [ ] Scrie despre **mâncarea ta preferată** în trei paragrafe  
-- [ ] Deschide DevTools cu **F12** și caută paragraful tău în fila **Elements**  
+- [ ] Deschide DevTools cu **F12** (pe Mac **Cmd + Option + I**) și caută paragraful tău în fila **Elements**  
 - [ ] Deschide „Vezi sursa” (Ctrl + U) pe o pagină de pe internet și găsește tagul `<title>`  
 
 ---
@@ -375,7 +375,7 @@ Salvează. Browserul nu spune „ai greșit”; el doar încearcă să se descur
 <p>Doarme toată ziua.<\p>
 ```
 
-   - **E — Explică cu cuvintele tale.** Pe foaie, în două propoziții: ce face HTML, ce face CSS și ce face JavaScript?  
+   - **E — Explică cu cuvintele tale.** Într-un comentariu din cod, în două propoziții: ce face HTML, ce face CSS și ce face JavaScript?  
 
 ---
 

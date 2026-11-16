@@ -57,7 +57,7 @@ Scrie doar **prenumele** (sau o poreclă) și lucruri pe care ai voie să le ar�
 
 ### Exemplul 1 — Harta site-ului și lista de proiecte
 
-Desenează pe foaie harta, ca în Lecția 8:
+Scrie într-un comentariu harta, ca în Lecția 8:
 
 ```text
                     [ Acasă ]
@@ -78,10 +78,11 @@ Apoi scrie sub fiecare căsuță ce proiect din modul reiei:
 Dacă ai păstrat folderele din lecțiile trecute, **copiază paginile de acolo** și schimbă ce trebuie. Dacă nu, le scrii din nou, după exemplele de mai jos.
 
 **Încearcă tu (8 min)**  
-- [ ] Desenează pe foaie harta site-ului tău, cu cele cinci pagini  
-- [ ] Scrie pe foaie ce reiei în fiecare pagină  
-- [ ] Alege 3–4 culori care se potrivesc și scrie culorile pe foaie  
+- [ ] Scrie într-un comentariu harta site-ului tău, cu cele cinci pagini  
+- [ ] Scrie într-un comentariu ce reiei în fiecare pagină  
+- [ ] Alege 3–4 culori care se potrivesc și scrie culorile într-un comentariu  
 - [ ] Pregătește imaginile (desene, avatar sau poze alese cu profesorul) într-un folder `imagini`  
+- [ ] Scrie pe hartă și o a șasea pagină, `tema.html`, pentru articolul tău de pe Wikipedia, cu capitolele făcute în lecțiile 2–9  
 
 ---
 
@@ -234,6 +235,12 @@ Alege **tu** site-urile. Modificarea de azi: în loc de un link spre `despre.htm
 
 Pune 2–3 imagini, fiecare cu `alt` și legendă. Dacă o imagine nu apare, verifică numele fișierului și folderul `imagini`. Folosește desene sau imagini alese cu profesorul, nu poze cu fețe.
 
+**Încearcă tu (12 min)**  
+- [ ] Copiază în folder pagina cu articolul tău de pe Wikipedia, făcută în lecțiile trecute, și redenumește-o `tema.html`  
+- [ ] Pune în meniul **tuturor** paginilor un link spre `tema.html`, cu textul numele articolului  
+- [ ] Verifică dacă pagina `tema.html` are scheletul complet, culorile comune ale site-ului, imaginile cu `alt` și legendă și sursa într-un comentariu  
+- [ ] Verifică dacă linkurile și imaginile din `tema.html` merg din folderul nou  
+
 ---
 
 ## 4. Verificare
@@ -303,6 +310,7 @@ Adaugi încă un proiect din modul și faci site-ul mai ușor de folosit.
 
 - [ ] Adaugă `poveste.html` din Lecția 3: o poveste de 5 rânduri despre ziua ta preferată, cu `<h1>`, `<h2>`, o linie `<hr>` și `<br>` între rânduri, și un link către ea în meniu  
 - [ ] Adaugă în fiecare pagină un link „Sus”, către un `id` din partea de sus  
+- [ ] Fă din `tema.html` pagina cea mai bună a site-ului: 3 capitole cu câte 3 paragrafe, o listă, imagini cu legende, un cuvânt colorat cu `<span>` și sursa în `<small>`  
 - [ ] Mută paginile în folderul `pagini` și repară toate linkurile și imaginile cu `../`  
 
 ---
@@ -333,9 +341,9 @@ Ai învățat să creezi o pagină cu schelet, titluri și paragrafe, text îngr
 - Cum cauți o greșeală pas cu pas?
 
 ## Temă
-1. Alege **un lucru de îmbunătățit** din feedbackul colegului sau din lista de verificare și corectează acel lucru. Notează pe foaie ce ai schimbat. Adu la ora următoare, în folderul `Prenume_Nume_W1_L10`, versiunea finală.  
-2. **Autoevaluare.** Pe foaie, pune câte o notă de la 1 la 5 pentru fiecare: ordinea codului, aspectul paginilor, linkurile, imaginile, textul scris de tine. Scrie ce vei face mai bine data viitoare.  
-3. **Fișa greșelilor.** Scrie pe foaie trei greșeli făcute în acest modul și cum ai găsit și cum ai reparat fiecare greșeală.  
+1. Alege **un lucru de îmbunătățit** din feedbackul colegului sau din lista de verificare și corectează acel lucru. Notează într-un comentariu ce ai schimbat. Adu la ora următoare, în folderul `Prenume_Nume_W1_L10`, versiunea finală.  
+2. **Autoevaluare.** Într-un comentariu din cod, pune câte o notă de la 1 la 5 pentru fiecare: ordinea codului, aspectul paginilor, linkurile, imaginile, textul scris de tine. Scrie ce vei face mai bine data viitoare.  
+3. **Fișa greșelilor.** Scrie într-un comentariu trei greșeli făcute în acest modul și cum ai găsit și cum ai reparat fiecare greșeală.  
 4. **Întrebări pentru profesor.** Scrie două întrebări despre HTML la care nu ai primit încă răspuns. Vor fi folosite în Modulul 2.  
 5. **Exemplu pentru acasă.**
 

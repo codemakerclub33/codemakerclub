@@ -17,7 +17,7 @@ La final ai un mic site cu **două pagini**: prima pagină are o colecție de li
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pornim proiectul |
+| 0–15 | Recapitulare · pornim proiectul · aducem pagina cu articolul de pe Wikipedia |
 | 15–40 | Primul link · adresa completă · filă nouă (**Exemplele 1–3**) |
 | 40–55 | Textul unui link bun (**Exemplul 4**) |
 | 55–80 | Link spre propria pagină (**Exemplul 5**) |
@@ -45,9 +45,11 @@ Din lecția trecută ții minte că:
 - `<ul>` face liste cu buline, `<ol>` liste cu numere, iar `<li>` este un rând din listă;
 - ultimul tag deschis se închide primul.
 
-**Încearcă tu (3 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Creează folderul `Prenume_Nume_W1_L5` și fișierul `index.html` cu scheletul scris de tine  
 - [ ] Pune în `<body>` un `<h1>` și o listă cu buline cu trei lucruri care îți plac  
+- [ ] Copiază în folder pagina `wikipedia.html` din lecția trecută (cu articolul tău de pe Wikipedia)  
+- [ ] Deschide-o cu Live Server și verifică dacă se vede la fel ca data trecută  
 
 > De aici înainte, exemplele arată doar ce scrii **în interiorul `<body>`**.
 
@@ -92,6 +94,11 @@ Pentru un site din internet, adresa începe cu `https://`. Fără ea, browserul 
 
 Folosește fila nouă pentru **linkuri spre alte site-uri**. Pentru paginile tale e mai bine să rămâi în aceeași filă.
 
+**Încearcă tu (8 min)**  
+- [ ] În `wikipedia.html`, la sfârșit, pune un paragraf cu un link spre **articolul tău de pe Wikipedia** (adresa completă, copiată din browser)  
+- [ ] Fă linkul să se deschidă în filă nouă, cu `target` și `rel`  
+- [ ] Mai pune în pagină un link spre o a doua pagină de pe Wikipedia, legată de tema ta  
+
 **Gata când:**  
 - [ ] Ai scris un link spre un site ales cu profesorul  
 - [ ] Ai un link care se deschide în filă nouă, cu `target` și `rel`  
@@ -111,9 +118,12 @@ Compară:
 
 Al doilea este mai bun. Cine citește doar cuvintele linkurilor (de exemplu un program care citește pagina cu voce tare) trebuie să înțeleagă **unde duce linkul**. „Aici” nu spune nimic, „site-ul NASA” spune tot.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (10 min)**  
 - [ ] Scrie trei linkuri spre site-uri alese cu profesorul, fiecare cu text care spune unde duce  
 - [ ] Verifică în browser că fiecare link merge și arată la ce adresă te duce  
+- [ ] În `wikipedia.html`, transformă **trei cuvinte din paragrafe** în linkuri spre articolele lor de pe Wikipedia  
+- [ ] Verifică dacă textul fiecărui link spune unde duce, nu doar „aici”  
+- [ ] Verifică dacă `</a>` se află imediat după cuvântul din link  
 
 ---
 
@@ -139,9 +149,12 @@ Aici adresa e doar **numele fișierului**, fără `https://`. Browserul îl caut
 
 > Numele fișierelor: litere mici, fără spații și fără diacritice (`despre.html`, nu `Despre mine.html`). Dacă greșești o literă, linkul nu merge.
 
-**Încearcă tu (5 min)**  
-- [ ] Fă pagina `despre.html` și leag-o de `index.html`, în ambele sensuri  
+**Încearcă tu (10 min)**  
+- [ ] Fă pagina `despre.html` și leagă-o de `index.html`, în ambele sensuri  
 - [ ] Verifică numele fișierelor: litere mici, fără spații și fără diacritice  
+- [ ] Pune în `index.html` un link spre `wikipedia.html`, cu textul numele articolului tău  
+- [ ] Pune în `wikipedia.html` un link înapoi spre `index.html`  
+- [ ] Apasă pe linkuri și verifică dacă poți merge pe toate cele trei pagini, înainte și înapoi  
 
 ---
 
@@ -175,9 +188,11 @@ Când apeși, pagina **derulează** până la titlul cu `id="hobby"`.
 
 Pui `id="sus"` pe primul titlu și un link `#sus` la finalul paginii. E util când pagina e lungă.
 
-**Încearcă tu (4 min)**  
+**Încearcă tu (10 min)**  
 - [ ] Fă o pagină cu trei titluri `<h2>`, cu `id` pe fiecare, și un mic cuprins cu trei linkuri `#`  
 - [ ] Adaugă un link „↑ Înapoi sus” la final  
+- [ ] În `wikipedia.html`, pune `id` pe fiecare `<h2>` și un cuprins cu linkuri `#` sub `<h1>`  
+- [ ] Pune `id="sus"` pe `<h1>` și un link „↑ Înapoi sus” la sfârșitul fiecărui capitol  
 
 ---
 
@@ -275,7 +290,7 @@ Faci o pagină ușor de parcurs, cu linkuri peste tot.
 
 - [ ] Fă un mini-cuprins în partea de sus a unei pagini lungi, cu linkuri `#` spre fiecare titlu  
 - [ ] Adaugă o a treia pagină (`hobby.html`) și pune un link către ea  
-- [ ] Pune un link `mailto:` cu o adresă de probă și testează linkul (vezi Acasă 2)  
+- [ ] Lărgește `wikipedia.html` la 4 capitole cu câte 3 paragrafe, un cuprins sus și linkuri către cuvintele importante  
 - [ ] Deschide „Vezi sursa” (Ctrl + U) pe o pagină din internet și numără câte linkuri `<a href=...>` găsești  
 
 ---
@@ -360,7 +375,7 @@ Un link care începe cu `mailto:` deschide programul de e-mail al calculatorului
 <a href="https://www.nasa.gov" target="blank">NASA</a>
 ```
 
-**E — Explică cu cuvintele tale.** Pe foaie: de ce e mai bine să scrii „site-ul NASA” decât „apasă aici” ca text al unui link?
+**E — Explică cu cuvintele tale.** Într-un comentariu din cod: de ce e mai bine să scrii „site-ul NASA” decât „apasă aici” ca text al unui link?
 
 ## Ce urmează — Lecția 6
 Învățăm să punem **imagini** în pagină, să ținem pozele în foldere și să scriem descrieri pentru ele, ca pagina ta să nu mai fie doar text.

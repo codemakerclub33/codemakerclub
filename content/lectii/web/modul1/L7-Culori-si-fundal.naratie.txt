@@ -22,7 +22,7 @@ Al șaptelea pas. Citibilitatea. Textul și fundalul trebuie să fie foarte dife
 
 De făcut azi. Minim: o pagină cu fundalul colorat, un titlu colorat și un paragraf cu un cuvânt colorat. Complet: adaugi o culoare scrisă cu cod, o listă cu elemente colorate diferit și verifici că tot textul se citește bine.
 
-Bonus. Curcubeul meu. Faci o pagină cu șapte titluri în culorile curcubeului, încerci alt tip de litere și cauți regula style în DevTools.
+Bonus. Curcubeul meu. Faci o pagină cu șapte titluri în culorile curcubeului, faci pagina ta de pe Wikipedia în trei culori care se potrivesc, încerci alt tip de litere și cauți regula style în DevTools.
 
 Greșeli frecvente. Ai scris semnul egal în loc de două puncte. Ai uitat punctul și virgulă. Ai scris greșit numele culorii. Ai uitat o ghilimea. Ai ales culori prea apropiate sau prea multe.
 
