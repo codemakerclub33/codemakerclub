@@ -326,7 +326,7 @@ Când trimiți un obiect unei funcții, ea primește **obiectul însuși**, nu o
 **Încearcă tu (5 min)**  
 - [ ] Scrie o funcție `arataAnimal(animal)` care afișează un animal  
 - [ ] Scrie o funcție `maresteVarsta(animal)`, cheamă funcția, apoi afișează animalul  
-- [ ] Spune pe foaie de ce vârsta s-a schimbat și în afara funcției  
+- [ ] Spune într-un comentariu de ce vârsta s-a schimbat și în afara funcției  
 
 ---
 
@@ -470,7 +470,7 @@ console.log(pisica.Nume);
 ```
 
 ### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: ce este o listă și când o folosești? De ce primul element are numărul 0? Care este diferența dintre o listă și un obiect? De ce o funcție poate schimba un obiect pe care îl primește?
+Într-un comentariu din cod: ce este o listă și când o folosești? De ce primul element are numărul 0? Care este diferența dintre o listă și un obiect? De ce o funcție poate schimba un obiect pe care îl primește?
 
 **Gata când:**  
 - [ ] Folderul `Prenume_Nume_W4_L8` are `index.html` și `script.js`  

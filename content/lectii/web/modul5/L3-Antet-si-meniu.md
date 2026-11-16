@@ -252,7 +252,7 @@ Pe rând:
 - [ ] Scrie scriptul  
 - [ ] În modul telefon, apasă „Meniu”: se deschide și se închide?  
 - [ ] Inspectează butonul (clic dreapta → *Inspect*): se schimbă `aria-expanded`?  
-- [ ] Dacă nu merge: deschide consola (F12) și citește mesajul roșu
+- [ ] Dacă nu merge: deschide consola (F12; pe Mac Cmd + Option + I) și citește mesajul roșu
 
 ---
 
@@ -304,7 +304,7 @@ butonMeniu.addEventListener("click", function () {
 ```
 
 ### Exercițiul D — Explică cu cuvintele tale
-Pe foaie: de ce este mai bun un `<button>` decât un `<div>` pentru deschiderea meniului? Ce face `classList.toggle`? De ce punem `if (... !== null)`?
+Într-un comentariu din cod: de ce este mai bun un `<button>` decât un `<div>` pentru deschiderea meniului? Ce face `classList.toggle`? De ce punem `if (... !== null)`?
 
 **Gata când:**  
 - [ ] Antetul merge pe toate paginile  

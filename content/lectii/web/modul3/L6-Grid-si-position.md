@@ -485,7 +485,7 @@ Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 ```
 
 ### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: care este diferența dintre Flexbox și Grid? Față de ce se așază un element cu `position: absolute;`? Ce face `position: sticky;` și ce proprietate îi mai trebuie?
+Într-un comentariu din cod: care este diferența dintre Flexbox și Grid? Față de ce se așază un element cu `position: absolute;`? Ce face `position: sticky;` și ce proprietate îi mai trebuie?
 
 **Gata când:**  
 - [ ] Folderul `Prenume_Nume_W3_L6` are `index.html` și `stil.css`  

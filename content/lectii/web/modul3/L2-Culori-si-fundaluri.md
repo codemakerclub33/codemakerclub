@@ -449,7 +449,7 @@ Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 ```
 
 ### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: care este diferența dintre `opacity: 0.5` și `rgba(…, 0.5)` pe fundal? De ce nu punem text direct peste o imagine? Cum alegi culorile unei pagini?
+Într-un comentariu din cod: care este diferența dintre `opacity: 0.5` și `rgba(…, 0.5)` pe fundal? De ce nu punem text direct peste o imagine? Cum alegi culorile unei pagini?
 
 **Gata când:**  
 - [ ] Folderul `Prenume_Nume_W3_L2` are `index.html`, `stil.css` și (dacă ai folosit imagine) folderul `imagini`  

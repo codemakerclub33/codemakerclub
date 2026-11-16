@@ -148,7 +148,7 @@ Clasa `buton-cta` o vom folosi și la butonul formularului, în lecția 7.
 
 ### Exemplul 4 — Cele 3 mărimi
 
-Deschide DevTools (F12) și testează la trei lățimi: **1200 px** (calculator), **768 px** (tabletă), **375 px** (telefon). Caută:
+Deschide DevTools (F12; pe Mac Cmd + Option + I) și testează la trei lățimi: **1200 px** (calculator), **768 px** (tabletă), **375 px** (telefon). Caută:
 
 ```text
 □ Titlul nu iese din ecran și nu este tăiat
@@ -216,7 +216,7 @@ Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 ```
 
 ### Exercițiul D — Explică cu cuvintele tale
-Pe foaie: de ce butonul „Vezi galeria” este un `<a>` și nu un `<button>`? Ce face `clamp`? De ce o pagină are un singur `<h1>`?
+Într-un comentariu din cod: de ce butonul „Vezi galeria” este un `<a>` și nu un `<button>`? Ce face `clamp`? De ce o pagină are un singur `<h1>`?
 
 **Gata când:**  
 - [ ] `hero` arată bine pe calculator și pe telefon  

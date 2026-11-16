@@ -1,21 +1,27 @@
-Lecția cinci din Modulul doi. Formulare, partea a treia: validare.
+Lecția cinci. Paznicul de la intrare.
 
-Ce se întâmplă dacă vizitatorul lasă o casetă goală sau scrie un cuvânt într-o casetă pentru numere? Azi înveți să ceri răspunsuri corecte. Se numește validare.
+Ce se întâmplă dacă vizitatorul lasă o casetă goală sau scrie într-o casetă pentru număr un cuvânt? Azi înveți să ceri răspunsuri corecte: câmpuri obligatorii, lungimi, limite și forma potrivită. Se numește validare, iar formularul tău devine un paznic politicos la intrarea unui muzeu.
 
-Obiectivul. Minim: un formular cu un câmp obligatoriu, unul cu lungime limitată și unul numeric cu limite. Complet: în plus email, pattern cu explicația în title, o alegere radio obligatorie, o bifă obligatorie și explicația limitelor validării.
+Ce facem azi. La final ai un formular de rezervare de bilete la un muzeu imaginar, care nu pleacă până nu este completat corect. Știi să faci un câmp obligatoriu cu required, să limitezi lungimea cu minlength și maxlength, să limitezi numerele cu min, max și step, să folosești tipurile email și url și să ceri o formă anume cu pattern. Cu validare, browserul te oprește și îți spune ce să repari, înainte de trimitere. Folosim adrese de probă cu example punct com și o poreclă în loc de nume. Nu scriem email, telefon sau adresă reale.
 
-Primul pas. Atributul required cere ca un câmp să fie completat. Dacă apeși trimite cu caseta goală, browserul nu trimite formularul și arată un mesaj. Mesajul îl scrie browserul, deci poate arăta diferit. Minlength și maxlength limitează lungimea textului, cel puțin și cel mult. Parola rămâne mereu una de probă.
+Instrucțiuni noi azi. Required înseamnă că nu poți lăsa câmpul gol. Minlength și maxlength dau lungimea minimă și maximă. Min, max și step dau limitele și pasul unui număr. Tipurile email și url verifică forma unei adrese. Pattern cere o formă anume, iar title o explică.
 
-Al doilea pas. Pentru numere folosești min și max, care dau limitele, și step, care este pasul numerelor permise. Cu type egal email, browserul verifică forma: trebuie să existe semnul arond cu text înainte și după. Verifică doar forma, nu dacă adresa există. Pentru exerciții folosim adrese de probă cu example punct com. Cu type egal url, adresa trebuie să înceapă cu https.
+Primul pas. Câmpuri obligatorii și lungimi. Dacă apeși trimite cu caseta goală, browserul nu trimite formularul și îți arată un mesaj. Cu maxlength, browserul nici nu te lasă să scrii mai mult. Parola rămâne tot de probă.
 
-Al treilea pas. Pattern cere o formă anume. De exemplu, un cod format din trei litere mari și două cifre. Se scrie paranteză pătrată A minus Z, acolade trei, paranteză pătrată zero minus nouă, acolade doi. Atributul title explică vizitatorului ce formă se cere, altfel mesajul este neclar.
+Al doilea pas. Numere, email și adresă web. Min și max dau limitele unui număr, iar step este pasul numerelor permise. Tipul email cere un arond, cu text înainte și după. Tipul url cere o adresă completă, care începe cu https. Browserul verifică doar forma, nu dacă adresa există.
 
-Al patrulea pas. Alegeri obligatorii. La radio, required pus pe o singură variantă din grup cere ca una să fie bifată. La checkbox, vizitatorul trebuie să bifeze căsuța. La select, prima opțiune trebuie să aibă value gol, ca browserul să nu o accepte drept răspuns.
+Al treilea pas. Pattern. Cerem o formă anume, de exemplu un cod de rezervare din trei litere mari și două cifre. Pattern se citește bucată cu bucată: o literă mare, de trei ori, apoi o cifră, de două ori. Title apare în fereastra de eroare și explică ce se cere.
 
-Limitele validării. Validarea din browser este ca un portar politicos. Oprește greșelile obișnuite, dar nu verifică dacă o adresă există, poate fi ocolită de cineva care schimbă codul și nu înlocuiește verificarea făcută de server. Pe un site adevărat verifică și browserul, și serverul.
+Al patrulea pas. Alegeri obligatorii. La radio, required pe una dintre variante cere ca din grup să fie bifată una. La checkbox, vizitatorul trebuie să bifeze căsuța. La select, prima opțiune trebuie să aibă value gol.
 
-Greșeli frecvente. Ai uitat required. Minlength mai mare decât maxlength. Min mai mare decât max. Ai uitat title la pattern. Prima opțiune de la select nu are value gol.
+Al cincilea pas. Mini-proiect. Validarea din browser este ca un portar politicos. Nu verifică dacă o adresă există, poate fi ocolită de cineva care schimbă codul paginii și nu înlocuiește verificarea serverului. Apoi construim formularul de rezervare și îl trimitem greșit în trei feluri.
 
-Tema. Un formular de rezervare la un spectacol imaginar, cu verificări.
+De făcut azi. Minim: un câmp obligatoriu, un câmp text cu lungime limitată și un câmp numeric cu limite. Complet: adaugi email, pattern cu title, o alegere obligatorie, o bifă obligatorie, un select obligatoriu și notezi cinci greșeli de completare.
 
-Recapitulare. Required, lungimi, limite și pattern. Succes!
+Bonus. Biletul cu surprize. Încerci un câmp dezactivat, îl compari cu unul doar pentru citire, cauți required în DevTools împreună cu un adult și încerci tipul search.
+
+Greșeli frecvente. Ai uitat required. Minlength mai mare decât maxlength. Min mai mare decât max. Ai uitat title la pattern. La select, prima opțiune nu are value gol. Required la toate casetele radio. Ai crezut că email verifică dacă adresa există.
+
+Tema. Un formular de înscriere la un concurs imaginar. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
+
+Recapitulare. Required cere completarea, lungimile și limitele opresc valorile prea mici sau prea mari, email și url verifică forma, pattern cere o formă anume. Succes!

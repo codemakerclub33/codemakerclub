@@ -553,7 +553,7 @@ Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 ```
 
 ### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: de ce nu ascundem informații importante în spatele lui `:hover`? De ce trebuie `:focus` vizibil? Unde se scrie `transition`: pe stilul de bază sau pe `:hover`?
+Într-un comentariu din cod: de ce nu ascundem informații importante în spatele lui `:hover`? De ce trebuie `:focus` vizibil? Unde se scrie `transition`: pe stilul de bază sau pe `:hover`?
 
 **Gata când:**  
 - [ ] Folderul `Prenume_Nume_W3_L7` are `index.html` și `stil.css`  

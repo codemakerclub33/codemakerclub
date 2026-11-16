@@ -410,7 +410,7 @@ Ultimele două arată de ce folosim cel mai apropiat punct, nu doar „pătrate 
 
 **Încearcă tu (20 min)**  
 - [ ] Scrie funcțiile și rulează cele 4 teste din tabel  
-- [ ] Desenează pe foaie cercul și dreptunghiul din al treilea test și găsește punctul cel mai apropiat
+- [ ] Scrie într-un comentariu coordonatele cercului și ale dreptunghiului din al treilea test și găsește punctul cel mai apropiat
 
 ---
 
@@ -635,7 +635,7 @@ pasare.vy = VITEZA_BATAIE;
 ```
 
 ### Exercițiul D — Explică cu cuvintele tale
-Pe foaie: cum găsim punctul din dreptunghi cel mai apropiat de centrul cercului? De ce comparăm pătratele distanțelor? De ce are fiecare țeavă `numarata`? De ce `-VITEZA_BATAIE` are minus?
+Într-un comentariu din cod: cum găsim punctul din dreptunghi cel mai apropiat de centrul cercului? De ce comparăm pătratele distanțelor? De ce are fiecare țeavă `numarata`? De ce `-VITEZA_BATAIE` are minus?
 
 **Gata când:**  
 - [ ] Jocul merge și lista este bifată  

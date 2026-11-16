@@ -338,7 +338,7 @@ console.log("Lungime:", "Salut".Length);
 ```
 
 ### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: de ce `"5" + 3` dă `53`? Ce face `%` și la ce folosește? Ce tip de valoare dă întotdeauna `prompt`?
+Într-un comentariu din cod: de ce `"5" + 3` dă `53`? Ce face `%` și la ce folosește? Ce tip de valoare dă întotdeauna `prompt`?
 
 **Gata când:**  
 - [ ] Folderul `Prenume_Nume_W4_L3` are `index.html` și `script.js`  

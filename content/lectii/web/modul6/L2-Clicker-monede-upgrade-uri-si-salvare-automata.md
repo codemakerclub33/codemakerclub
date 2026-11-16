@@ -45,7 +45,7 @@ Clickerele par simple, dar folosesc idei puternice: **liste de obiecte**, **calc
 
 ### Exemplul 1 — Ce se vinde în fabrică
 
-Gândește pe foaie:
+Gândește într-un comentariu:
 
 ```text
 Câștig:          1 monedă la fiecare clic pe monedă
@@ -59,7 +59,7 @@ Salvare:         se salvează singur la 5 secunde și la fiecare cumpărare
 De ce **cresc prețurile**? Dacă o îmbunătățire ar costa mereu la fel, ai cumpăra la nesfârșit același lucru și jocul ar fi plictisitor. Prețurile care cresc te fac să alegi: mai cumpăr un robot, sau economisesc pentru fabrică?
 
 **Încearcă tu (10 min)**  
-- [ ] Scrie regulile pe foaie  
+- [ ] Scrie regulile într-un comentariu  
 - [ ] Inventează **3 îmbunătățiri ale tale** (nume, ce fac, preț de start). Poți păstra cele din lecție sau poți schimba tema (de exemplu „Grădina de flori”, „Laboratorul de bomboane”)  
 - [ ] Creează folderul `Prenume_Nume_W6_L2` cu `index.html`, `stil.css` și `script.js`
 
@@ -559,7 +559,7 @@ localStorage.setItem("clickerSalvare", { monede: monede });
 ```
 
 ### Exercițiul D — Explică cu cuvintele tale
-Pe foaie: de ce nu ținem „câștigul pe clic” într-o variabilă, ci îl calculăm? De ce transformăm obiectul în text cu `JSON.stringify` înainte să îl salvezi? De ce nu avem încredere în ce citim din `localStorage`?
+Într-un comentariu din cod: de ce nu ținem „câștigul pe clic” într-o variabilă, ci îl calculăm? De ce transformăm obiectul în text cu `JSON.stringify` înainte să îl salvezi? De ce nu avem încredere în ce citim din `localStorage`?
 
 **Gata când:**  
 - [ ] Jocul merge și lista este bifată  

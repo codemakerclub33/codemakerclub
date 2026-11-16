@@ -81,7 +81,7 @@ Ca să găsești elementul care „iese”, în DevTools: clic dreapta pe pagin�
 
 **Încearcă tu (25 min)**  
 - [ ] Testează cele 3 pagini la 4 lățimi  
-- [ ] Notează fiecare problemă pe foaie (pagina, lățimea, ce nu merge)
+- [ ] Notează fiecare problemă într-un comentariu (pagina, lățimea, ce nu merge)
 
 ---
 
@@ -246,7 +246,7 @@ Raportul de mai jos are **3 probleme**. Care sunt?
 ```
 
 ### Exercițiul D — Explică cu cuvintele tale
-Pe foaie: de ce testăm și cu tastatura? De ce este bine ca altcineva să testeze site-ul? De ce nu ajunge nota din Lighthouse?
+Într-un comentariu din cod: de ce testăm și cu tastatura? De ce este bine ca altcineva să testeze site-ul? De ce nu ajunge nota din Lighthouse?
 
 **Gata când:**  
 - [ ] Raportul este complet  

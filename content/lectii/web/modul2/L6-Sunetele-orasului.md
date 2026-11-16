@@ -1,27 +1,17 @@
-# LECȚIA 6 — Audio și video
+# LECȚIA 6 — Sunetele orașului
+### Audio și video
 **Modulul 2 · HTML II: Pagini mai bogate · 2 ore**  
 **Code Maker Club · HTML Builder**
 
-> Până acum paginile tale se citeau și se priveau. Azi **vorbesc și se mișcă**: pui în ele sunete și filme scurte, cu butoane de pornire și oprire.  
-> Proiect: **„Cutia cu sunete a animalelor”** · folder: `Prenume_Nume_W2_L6` (ex. `Ana_Pop_W2_L6`)
+> Până acum paginile tale se citeau și se priveau. Azi **vorbesc și se mișcă**: pui în ele sunete și filme scurte, cu butoane de pornire și oprire, ca să faci o hartă sonoră a unui oraș.  
+> Proiect: **„Sunetele orașului”** · folder: `Prenume_Nume_W2_L6` (ex. `Ana_Pop_W2_L6`)
 
 ---
 
-## Obiectiv
-La finalul orei știi să pui un sunet cu `<audio>` și un film cu `<video>`, să le dai butoane de comandă cu `controls`, să alegi formate potrivite, să ții fișierele într-un folder `media` și să scrii un text care ajută pe cine nu poate auzi sau vedea.  
-**Minim:** o pagină cu un `<audio>` și un `<video>`, ambele cu butoane.  
-**Ținta orei (Complet):** + un tabel cu cel puțin 3 animale și câte un sunet pentru fiecare, imaginea de început pentru film (`poster`), un text care descrie sunetul și filmul și un fișier ales cu grijă pentru dimensiune.
+## Ce facem azi
+La final ai o pagină cu **sunetele unui oraș**: tramvaiul, clopotele și ploaia, fiecare cu poză și buton de pornire, plus un film scurt cu o stradă. Știi să pui un sunet cu `<audio>` și un film cu `<video>`, să le dai butoane cu `controls`, să alegi formate potrivite, să ții fișierele într-un folder `media` și să scrii un text care ajută pe cine nu poate auzi sau vedea. Un sunet poate face o pagină mai vie, iar un film scurt poate explica ceva mai bine decât zece paragrafe. Dar fișierele mari încetinesc pagina, iar sunetul pornit singur deranjează, de aceea alegi cu grijă.
 
-## De ce contează
-Un sunet poate face o pagină mai vie, iar un film scurt poate explica ceva mai bine decât zece paragrafe. Dar fișierele mari încetinesc pagina, iar sunetul pornit singur poate speria sau deranja. De aceea, cine face pagina trebuie să aleagă cu grijă.
-
----
-
-## Despre fișierele pe care le folosim
-- Sunetele și filmele pentru exerciții le primești de la profesor, într-un **pachet media**, sau le faci tu (de exemplu înregistrezi cu telefonul **sunetul unui animal sau al unui instrument**).  
-- **Nu punem filme sau sunete cu alți copii sau adulți** fără acordul lor și al părinților.  
-- Nu folosim melodii luate din internet: au drepturi de autor, adică nu ai voie să le pui oriunde.  
-- Fișierele se salvează cu **litere mici, fără spații și fără diacritice**: `pisica.mp3`, `film.mp4`.
+> **Despre fișierele pe care le folosim:** sunetele și filmele pentru exerciții le primești de la un adult, într-un **pachet media**, sau le faci singur (de exemplu înregistrezi cu telefonul **sunetul ploii sau al unui instrument**). Nu punem filme sau sunete cu **voci sau persoane** fără acordul lor și al părinților. Nu folosim melodii luate din internet: au drepturi de autor. Fișierele se salvează cu **litere mici, fără spații și fără diacritice**: `tramvai.mp3`, `strada.mp4`.
 
 ---
 
@@ -32,10 +22,21 @@ Un sunet poate face o pagină mai vie, iar un film scurt poate explica ceva mai 
 | 0–15 | Recapitulare · pornim proiectul · pregătim folderul `media` |
 | 15–35 | `<audio>` și `controls` (**Exemplele 1–3**) |
 | 35–60 | `<video>`, `width`, `poster` (**Exemplele 4–6**) |
-| 60–75 | Formate și mai multe surse (**Exemplul 7**) |
-| 75–95 | Foldere și text pentru toți (**Exemplele 8–9**) |
-| 95–115 | Proiect · greșeli (**Exemplul 10**) |
+| 60–80 | Formate, foldere și text pentru toți (**Exemplul 7**) |
+| 80–115 | Mini-proiect: sunetele orașului (**Exemplul 8**) |
 | 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `<audio src="..." controls>` | Pune un sunet, cu butoane | `<audio src="media/tramvai.mp3" controls></audio>` |
+| `<video src="..." controls>` | Pune un film, cu butoane | `<video src="media/strada.mp4" controls width="400"></video>` |
+| `poster` | Imaginea care se vede înainte de pornire | `poster="imagini/strada.jpg"` |
+| `<source>` | Un fișier dintre mai multe formate | `<source src="media/ploaie.ogg" type="audio/ogg">` |
+| `loop`, `muted`, `preload` | Repetă, fără sunet, încarcă mai târziu | `<audio controls loop preload="none">` |
 
 ---
 
@@ -50,7 +51,7 @@ Un sunet poate face o pagină mai vie, iar un film scurt poate explica ceva mai 
 - [ ] Creează folderul `Prenume_Nume_W2_L6`, cu fișierul `index.html` (schelet complet) și folderul `media`  
 - [ ] Pune în `media` fișierele din pachetul media (sau ale tale)  
 
-> De aici înainte, exemplele arată doar ce scrii **în interiorul `<body>`**.
+> De aici înainte, exemplele arată doar ce scrii **în interiorul `<body>`**, dacă nu spunem altfel.
 
 ---
 
@@ -59,7 +60,7 @@ Un sunet poate face o pagină mai vie, iar un film scurt poate explica ceva mai 
 ### Exemplul 1 — Primul sunet
 
 ```html
-<audio src="media/pisica.mp3" controls></audio>
+<audio src="media/tramvai.mp3" controls></audio>
 ```
 
 - `src` arată unde este fișierul (la fel ca la imagini);  
@@ -72,8 +73,8 @@ Fără `controls`, nu apare nimic, deoarece nu există niciun buton.
 
 ```html
 <audio controls>
-  <source src="media/pisica.mp3" type="audio/mpeg">
-  <source src="media/pisica.ogg" type="audio/ogg">
+  <source src="media/tramvai.mp3" type="audio/mpeg">
+  <source src="media/tramvai.ogg" type="audio/ogg">
   Browserul tău nu poate reda sunetul.
 </audio>
 ```
@@ -98,10 +99,10 @@ Acum merge și un singur fișier mp3 în aproape orice browser. Cu mai multe sur
 
 > Regula noastră: **nu folosim `autoplay` cu sunet**. Lasă vizitatorul să apese.
 
-**Gata când:**  
-- [ ] Ai pus un sunet în pagină, cu `controls`, și îl poți porni și opri  
-- [ ] Ai încercat varianta fără `controls` și ai văzut ce se întâmplă  
-- [ ] Poți explica de ce nu folosim `autoplay` cu sunet  
+**Încearcă tu (6 min)**  
+- [ ] Pune un sunet în pagină, cu `controls`, și pornește-l  
+- [ ] Încearcă varianta fără `controls` și vezi ce se întâmplă  
+- [ ] Explică de ce nu folosim `autoplay` cu sunet  
 
 ---
 
@@ -110,7 +111,7 @@ Acum merge și un singur fișier mp3 în aproape orice browser. Cu mai multe sur
 ### Exemplul 4 — Primul film
 
 ```html
-<video src="media/film.mp4" controls width="400"></video>
+<video src="media/strada.mp4" controls width="400"></video>
 ```
 
 - la fel ca `audio`: `src` și `controls`;  
@@ -119,7 +120,7 @@ Acum merge și un singur fișier mp3 în aproape orice browser. Cu mai multe sur
 ### Exemplul 5 — Imaginea de început: `poster`
 
 ```html
-<video src="media/film.mp4" controls width="400" poster="imagini/coperta.jpg"></video>
+<video src="media/strada.mp4" controls width="400" poster="imagini/strada.jpg"></video>
 ```
 
 `poster` este imaginea care se vede **înainte** să pornească filmul. Poate fi o poză din film sau un desen. Fără `poster`, de obicei se vede primul cadru sau un ecran negru.
@@ -129,7 +130,7 @@ Acum merge și un singur fișier mp3 în aproape orice browser. Cu mai multe sur
 Dacă filmul nu are sunet și vrei să se repete ca un desen animat în fundal:
 
 ```html
-<video src="media/valuri.mp4" autoplay muted loop width="400"></video>
+<video src="media/ploaie.mp4" autoplay muted loop width="400"></video>
 ```
 
 - `muted` înseamnă fără sunet; browserele permit `autoplay` doar la filme **fără sunet**;  
@@ -146,7 +147,7 @@ Folosește asta **rar**: o mișcare continuă poate obosi sau deranja pe unii vi
 
 ## 4. Formate, foldere și text pentru toți
 
-### Exemplul 7 — Formate frecvente
+### Exemplul 7 — Formate, foldere și descriere
 
 | Fel | Format | Observație |
 |-----|--------|------------|
@@ -160,93 +161,107 @@ La filme poți pune și mai multe `<source>`:
 
 ```html
 <video controls width="400">
-  <source src="media/film.mp4" type="video/mp4">
-  <source src="media/film.webm" type="video/webm">
+  <source src="media/strada.mp4" type="video/mp4">
+  <source src="media/strada.webm" type="video/webm">
   Browserul tău nu poate reda filmul.
 </video>
 ```
 
-**Atenție la dimensiune:** un film lung poate avea sute de megaocteți. Pentru pagini, folosește filme **scurte** (sub un minut) și sunete scurte. Verifică mărimea fișierelor în folder: dacă un sunet are zeci de megaocteți, alege altul.
-
-### Exemplul 8 — Foldere și căi
+Fișierele stau în foldere, iar calea se scrie privind din folderul paginii:
 
 ```text
 Prenume_Nume_W2_L6/
   index.html
   imagini/
-    coperta.jpg
+    strada.jpg
   media/
-    pisica.mp3
-    film.mp4
+    tramvai.mp3
+    strada.mp4
 ```
 
-Din `index.html`, calea este `media/pisica.mp3`. Dacă pagina ar fi într-un subfolder, ar trebui `../media/pisica.mp3`. Regula este aceeași ca la imagini: privești din folderul paginii în care te afli.
+Din `index.html`, calea este `media/tramvai.mp3`. Dacă pagina ar fi într-un subfolder, ar trebui `../media/tramvai.mp3`.
 
-### Exemplul 9 — Text pentru cine nu aude sau nu vede
+**Atenție la dimensiune:** un film lung poate avea sute de megaocteți. Pentru pagini, folosește filme **scurte** (sub un minut) și sunete scurte. Dacă un sunet are zeci de megaocteți, alege altul.
 
-Nu toți vizitatorii pot auzi sunetul sau vedea filmul. Un text ajută:
+**Text pentru cine nu aude sau nu vede.** Nu toți vizitatorii pot auzi sunetul sau vedea filmul. O descriere scurtă sub fiecare ajută:
 
 ```html
-<h2>Pisica toarce</h2>
-<audio src="media/pisica.mp3" controls></audio>
-<p><em>Descriere: sunetul unei pisici care toarce încet, timp de zece secunde.</em></p>
-
-<h2>Filmul meu</h2>
-<video src="media/film.mp4" controls width="400"></video>
-<p><em>Descriere: un film despre un cățel care aleargă prin iarbă.</em></p>
+<audio src="media/clopote.mp3" controls></audio>
+<p><em>Descriere: clopotele unei biserici bat de cinci ori.</em></p>
 ```
 
-La filmele cu voce, un **text cu ce se spune** (o transcriere) ajută foarte mult. Se mai pot adăuga și **subtitrări**, dar le lăsăm pentru bonus.
+La filmele cu voce, un **text cu ce se spune** (o transcriere) ajută foarte mult. Subtitrările le lăsăm pentru bonus.
 
-**Gata când:**  
-- [ ] Fișierele tale stau în folderul `media`  
-- [ ] Ai o descriere scurtă sub sunet și sub film  
-- [ ] Ai verificat că nicio melodie sau film luat din internet nu este în pagina ta  
-- [ ] Ai verificat mărimea fișierelor și folosești unele scurte  
+**Încearcă tu (5 min)**  
+- [ ] Verifică în folder că numele fișierelor au litere mici, fără spații  
+- [ ] Adaugă o descriere scurtă sub sunetul tău  
+- [ ] Verifică mărimea fișierelor și folosește unele scurte  
 
 ---
 
-## 5. Proiect și greșeli
+## 5. Mini-proiect
 
-### Exemplul 10 — „Cutia cu sunete a animalelor”
+### Exemplul 8 — „Sunetele orașului”
+
+Acesta este proiectul **complet**, cu tot scheletul paginii. Salvează-l în `index.html` și scrie-l singur, bucată cu bucată.
 
 ```html
-<h1>Cutia cu sunete a animalelor</h1>
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunetele orașului</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 6px;
+    }
+    th {
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sunetele orașului</h1>
 
-<table>
-  <caption>Cine face ce sunet?</caption>
-  <thead>
-    <tr>
-      <th scope="col">Animal</th>
-      <th scope="col">Poză</th>
-      <th scope="col">Sunet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Pisica</td>
-      <td><img src="imagini/pisica.jpg" alt="O pisică gri" width="100"></td>
-      <td><audio src="media/pisica.mp3" controls preload="none"></audio></td>
-    </tr>
-    <tr>
-      <td>Câinele</td>
-      <td><img src="imagini/catel.jpg" alt="Un câine maro" width="100"></td>
-      <td><audio src="media/catel.mp3" controls preload="none"></audio></td>
-    </tr>
-    <tr>
-      <td>Vaca</td>
-      <td><img src="imagini/vaca.jpg" alt="O vacă albă cu pete negre" width="100"></td>
-      <td><audio src="media/vaca.mp3" controls preload="none"></audio></td>
-    </tr>
-  </tbody>
-</table>
+  <table>
+    <caption>Ce se aude pe străzi?</caption>
+    <thead>
+      <tr>
+        <th scope="col">Sunet</th>
+        <th scope="col">Poză</th>
+        <th scope="col">Ascultă</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Tramvaiul</td>
+        <td><img src="imagini/tramvai.jpg" alt="Un tramvai galben pe linie" width="100"></td>
+        <td><audio src="media/tramvai.mp3" controls preload="none"></audio></td>
+      </tr>
+      <tr>
+        <td>Clopotele</td>
+        <td><img src="imagini/clopote.jpg" alt="Turnul unei biserici cu clopote" width="100"></td>
+        <td><audio src="media/clopote.mp3" controls preload="none"></audio></td>
+      </tr>
+      <tr>
+        <td>Ploaia</td>
+        <td><img src="imagini/ploaie.jpg" alt="Stropi de ploaie pe o fereastră" width="100"></td>
+        <td><audio src="media/ploaie.mp3" controls preload="none"></audio></td>
+      </tr>
+    </tbody>
+  </table>
 
-<h2>Filmul fermei</h2>
-<video src="media/ferma.mp4" controls width="400" poster="imagini/ferma.jpg"></video>
-<p><em>Descriere: un film scurt cu animale la fermă.</em></p>
+  <h2>O stradă dimineața</h2>
+  <video src="media/strada.mp4" controls width="400" poster="imagini/strada.jpg"></video>
+  <p><em>Descriere: un film scurt cu o stradă liniștită, dimineața, fără oameni în cadru.</em></p>
+</body>
+</html>
 ```
 
-Înlocuiește animalele și fișierele cu ale tale. Dacă nu ai poze, folosește desene.
+Înlocuiește sunetele și fișierele cu ale tale. Dacă nu ai poze, folosește desene.
 
 Greșeli de verificat dacă nu merge ceva:
 - numele din `src` nu seamănă cu numele din folder;  
@@ -255,63 +270,49 @@ Greșeli de verificat dacă nu merge ceva:
 - extensia fișierului nu este cea scrisă (de exemplu `.mp3.mp3`);  
 - ai pus fișierul pe Desktop, nu în folderul proiectului.
 
-Dacă nu se aude nimic, verifică **volumul** calculatorului și al butonului din pagină. Dacă tot nu merge, deschide DevTools (**F12**), fila **Console**: un mesaj „404” arată că fișierul nu a fost găsit.
-
-**Gata când:**  
-- [ ] Tabelul cu animale are 3 sunete care merg  
-- [ ] Filmul pornește cu butoanele lui și are `poster`  
-- [ ] Nu apare niciun mesaj „404” în Console  
-- [ ] Descrierile sunt scrise sub sunete și film  
+Dacă nu se aude nimic, verifică **volumul** calculatorului și al butonului din pagină. Dacă tot nu merge, deschide DevTools (**F12**; pe Mac Cmd + Option + I), fila **Console**: un mesaj „404” arată că fișierul nu a fost găsit.
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Sunetele orașului”
 
-### Exercițiul A — „Cutia cu sunete a animalelor” (obligatoriu)
-Fă pagina din Exemplul 10 cu:
-- un `<h1>` și un tabel cu antet (`th`) și minimum 3 animale;  
-- câte un `<audio controls>` pentru fiecare animal;  
-- o imagine cu `alt` pentru fiecare animal;  
-- un `<video>` cu `controls`, `width` și `poster`;  
-- o descriere scrisă sub film;  
-- fișierele în folderele `media` și `imagini`.
+### Minim vs Complet
 
-### Exercițiul B — Ce face atributul?
-Spune ce face fiecare: (1) `controls`; (2) `loop`; (3) `preload="none"`; (4) `poster`; (5) `muted`.
+| | Ce trebuie |
+|--|------------|
+| **Minim** | O pagină cu un `<audio>` și un `<video>`, ambele cu `controls` |
+| **Complet** | Minim + tabel cu cel puțin 3 sunete cu poză, `poster` la film, câte o descriere pentru sunet și film, și fișiere scurte, alese cu grijă |
 
-### Exercițiul C — Alege formatul
-Pentru fiecare, alege un format potrivit: (1) un sunet scurt pentru o pagină; (2) un film scurt; (3) un sunet foarte mare, de studio.
+### Pasul 1 — Minim
+Fă o pagină despre **sunetele unui oraș ales de tine** (sau ale orașului tău).
 
-### Exercițiul D — Găsește greșelile
-Găsește **3 greșeli** și repară greșelile:
+- [ ] Folderul `Prenume_Nume_W2_L6` conține `index.html` și folderul `media`  
+- [ ] Ai un `<audio>` cu `controls` și un `<video>` cu `controls` și `width`  
+- [ ] Sunetul și filmul pornesc și se opresc din butoane  
 
-```text
-<audio src="media/Pisica Mea.mp3" controls></audio>
-<video src="media/film.mp4" width="400" controls poster="imagini/coperta.jpg"
-<audio src="media/ploaie.mp3" controls autoplay></audio>
-```
+### Pasul 2 — Complet
+Îmbunătățești pagina:
 
-### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: de ce nu punem sunet care pornește singur? De ce scriem o descriere sub sunet și film?
-
-**Gata când:**  
-- [ ] Folderul `Prenume_Nume_W2_L6` conține `index.html` și folderele `media` și `imagini`  
-- [ ] Pagina merge fără mesaje „404”  
+- [ ] Tabelul are antet (`th`) și minimum 3 sunete, fiecare cu poză cu `alt` și `<audio controls>`  
+- [ ] Filmul are `poster` și o descriere scrisă sub el  
+- [ ] Pagina merge fără mesaje „404” în Console  
+- [ ] Niciun sunet sau film nu este luat din internet  
 - [ ] Codul este indentat și are comentarii  
-- [ ] Ai răspuns la exercițiile B–E  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Înregistrează un sunet cu telefonul (un instrument sau un animal) și pune sunetul în pagină  
-- [ ] Caută „HTML track subtitles” și, cu profesorul, adaugă subtitrări unui film  
-- [ ] Pune în același tabel o coloană cu o legendă pentru fiecare sunet  
+## Bonus ★★★ — Provocare: Ghidul sonor
+*Doar dacă ai terminat Complet.*
+
+- [ ] Înregistrează cu telefonul un sunet fără voci (ploaia, un instrument, vântul) și pune-l în pagină  
+- [ ] Caută „HTML track subtitles” și, împreună cu un adult, adaugă subtitrări unui film  
+- [ ] Adaugă în tabel o coloană cu o legendă pentru fiecare sunet  
 - [ ] Deschide DevTools, fila **Network**, reîncarcă pagina și vezi cât de mari sunt fișierele audio și video  
 
 ---
 
 ## Greșeli frecvente
-1. **Nume cu spații sau diacritice** (`Pisica Mea.mp3`) — folosește `pisica.mp3`.  
+1. **Nume cu spații sau diacritice** (`Tramvai Mare.mp3`) — folosește `tramvai.mp3`.  
 2. **Lipsește `controls`** — nu apar butoanele.  
 3. **Fișierul nu este în folderul scris în `src`**.  
 4. **Ai folosit `autoplay` cu sunet** — browserul îl blochează, iar sunetul deranjează.  
@@ -339,16 +340,54 @@ Pe foaie: de ce nu punem sunet care pornește singur? De ce scriem o descriere s
 - Cum verifici dacă fișierul nu este găsit?
 
 ## Temă
-Fă o pagină „Instrumentele mele preferate” cu un tabel cu 3 instrumente, câte un sunet pentru fiecare (din pachetul media sau înregistrat de tine) și o descriere. Salvează în `Prenume_Nume_W2_L6`.
+1. Fă o pagină „Sunetele sportului preferat” cu un tabel cu 3 sunete (de exemplu mingea, fluierul, pașii pe teren), câte un `<audio>` pentru fiecare, făcute de tine sau din pachetul media, și o descriere. Salvează în `Prenume_Nume_W2_L6`.  
+2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
+3. **Exemple pentru acasă.** Încearcă amândouă:
+
+**Acasă 1 — Sunet cu legendă: `figure` și `figcaption`.**
+
+```html
+<figure>
+  <audio src="media/ploaie.mp3" controls></audio>
+  <figcaption>Ploaia de seară pe fereastră</figcaption>
+</figure>
+```
+
+`<figure>` învelește sunetul, iar `<figcaption>` este legenda lui.
+
+**Acasă 2 — Film care încape pe orice ecran.**
+
+```html
+<video src="media/strada.mp4" controls style="max-width: 100%;"></video>
+```
+
+Cu `max-width: 100%`, filmul nu iese din pagină pe un ecran mic. Încearcă să micșorezi fereastra browserului.
+
+4. **Încă patru exerciții (B–E):**
+
+**B — Ce face atributul?** Spune ce face fiecare: (1) `controls`; (2) `loop`; (3) `preload="none"`; (4) `poster`; (5) `muted`.
+
+**C — Alege formatul.** Pentru fiecare, alege un format potrivit: (1) un sunet scurt pentru o pagină; (2) un film scurt; (3) un sunet foarte mare, de studio.
+
+**D — Găsește greșelile.** Găsește **3 greșeli** și repară greșelile:
+
+```text
+<audio src="media/Tramvai Mare.mp3" controls></audio>
+<video src="media/strada.mp4" width="400" controls poster="imagini/strada.jpg"
+<audio src="media/ploaie.mp3" controls autoplay></audio>
+```
+
+**E — Explică cu cuvintele tale.** Într-un comentariu din cod: de ce nu punem sunet care pornește singur? De ce scriem o descriere sub sunet și film?
 
 ## Ce urmează — Lecția 7
-**iframe**: punem în pagină o altă pagină, o hartă sau un film dintr-un alt site.
+**Excursia imaginară**: punem în pagină o altă pagină, o hartă sau un film dintr-un alt site, cu `iframe`.
 
 ---
 
 ## Răspunsuri
-- **Quiz scurt:** (1) face să apară butoanele (pornire, oprire, volum); (2) `src` este atributul care arată un singur fișier, iar `<source>` este un tag pus în `<audio>` sau `<video>` pentru mai multe fișiere sau formate, din care browserul alege primul pe care îl poate reda; (3) imaginea care se vede înainte să pornească filmul; (4) browserele îl blochează de obicei, iar sunetul care pornește singur deranjează; (5) deschizi DevTools (**F12**), fila **Console**: un mesaj „404” arată că fișierul nu a fost găsit.  
-- **Exercițiul B:** (1) arată butoanele; (2) repetă; (3) nu încarcă fișierul până la pornire; (4) imaginea de început a filmului; (5) fără sunet.  
-- **Exercițiul C:** (1) `.mp3`; (2) `.mp4`; (3) `.wav`, dar se recomandă micșorarea lui sau alegerea unui `.mp3`.  
-- **Exercițiul D:** (1) numele de fișier `Pisica Mea.mp3` are spațiu și litere mari (corect: `pisica.mp3`); (2) tagul `<video …` nu are `>` de încheiere și nici `</video>`; (3) `autoplay` cu sunet (blocat de browsere și deranjant).  
-- **Siguranță:** fișiere doar din pachetul media sau făcute de elev; fără persoane; fără melodii din internet.
+- **Quiz scurt:** (1) face să apară butoanele (pornire, oprire, volum); (2) `src` este atributul care arată un singur fișier, iar `<source>` este un tag pus în `<audio>` sau `<video>` pentru mai multe fișiere sau formate, din care browserul alege primul pe care îl poate reda; (3) imaginea care se vede înainte să pornească filmul; (4) browserele îl blochează de obicei, iar sunetul care pornește singur deranjează; (5) deschizi DevTools (**F12**; pe Mac Cmd + Option + I), fila **Console**: un mesaj „404” arată că fișierul nu a fost găsit.  
+- **Tema, exercițiul B:** (1) arată butoanele; (2) repetă; (3) nu încarcă fișierul până la pornire; (4) imaginea de început a filmului; (5) fără sunet.  
+- **Tema, exercițiul C:** (1) `.mp3`; (2) `.mp4`; (3) `.wav`, dar se recomandă micșorarea lui sau alegerea unui `.mp3`.  
+- **Tema, exercițiul D:** (1) numele de fișier `Tramvai Mare.mp3` are spațiu și litere mari (corect: `tramvai.mp3`); (2) tagul `<video …` nu are `>` de încheiere și nici `</video>`; (3) `autoplay` cu sunet (blocat de browsere și deranjant).  
+- **Tema, exercițiul E:** sunetul care pornește singur deranjează și este blocat de browsere; descrierea ajută cine nu aude sau nu vede.  
+- **Siguranță:** fișiere doar din pachetul media sau făcute de tine; fără voci sau persoane; fără melodii din internet.

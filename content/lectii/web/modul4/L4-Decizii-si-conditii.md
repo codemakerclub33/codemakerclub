@@ -441,7 +441,7 @@ if (n >= 1 || n <= 10) {
 ```
 
 ### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: care este diferența dintre `=` și `===`? Ce înseamnă `&&`, `||` și `!`? De ce contează ordinea condițiilor la `else if`? La ce folosește `break` în `switch`?
+Într-un comentariu din cod: care este diferența dintre `=` și `===`? Ce înseamnă `&&`, `||` și `!`? De ce contează ordinea condițiilor la `else if`? La ce folosește `break` în `switch`?
 
 **Gata când:**  
 - [ ] Folderul `Prenume_Nume_W4_L4` are `index.html` și `script.js`  

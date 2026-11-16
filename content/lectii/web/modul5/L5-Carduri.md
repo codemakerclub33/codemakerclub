@@ -219,7 +219,7 @@ Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 ```
 
 ### Exercițiul D — Explică cu cuvintele tale
-Pe foaie: ce face `repeat(auto-fit, minmax(240px, 1fr))`? De ce folosim `<article>`? De ce ascundem pictograma de cititoarele de ecran?
+Într-un comentariu din cod: ce face `repeat(auto-fit, minmax(240px, 1fr))`? De ce folosim `<article>`? De ce ascundem pictograma de cititoarele de ecran?
 
 **Gata când:**  
 - [ ] Cardurile merg pe calculator și pe telefon  

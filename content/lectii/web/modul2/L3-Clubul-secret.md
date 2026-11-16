@@ -1,27 +1,17 @@
-# LECȚIA 3 — Formulare I: text, parolă, buton
+# LECȚIA 3 — Clubul secret
+### Formulare: text, parolă și butoane
 **Modulul 2 · HTML II: Pagini mai bogate · 2 ore**  
 **Code Maker Club · HTML Builder**
 
 > Când te înscrii la un joc sau scrii un mesaj pe un site, completezi un **formular**. Azi înveți să faci primul tău formular: casete de text, o casetă pentru parolă, un loc pentru mesaje lungi și butoane.  
-> Proiect: **„Formular pentru clubul meu”** · folder: `Prenume_Nume_W2_L3` (ex. `Ana_Pop_W2_L3`)
+> Proiect: **„Clubul secret”** · folder: `Prenume_Nume_W2_L3` (ex. `Ana_Pop_W2_L3`)
 
 ---
 
-## Obiectiv
-La finalul orei știi să faci un formular cu `<form>`, să pui casete cu `<input>` de tip `text` și `password`, să le legi de o etichetă cu `<label>`, să faci o casetă mare cu `<textarea>` și să adaugi butoane.  
-**Minim:** un formular cu două casete de text, fiecare cu etichetă, și un buton.  
-**Ținta orei (Complet):** + o casetă pentru parolă, o casetă de mesaj, butonul de ștergere și o explicație pe foaie a ce vezi în adresa paginii după apăsarea butonului.
+## Ce facem azi
+La final ai o pagină de **înscriere în clubul secret** al jocurilor: un formular cu poreclă, parolă de probă, jocul preferat și un mesaj, cu butoane de trimitere și de ștergere. Știi să faci un formular cu `<form>`, să pui casete cu `<input>` de tip `text` și `password`, să le legi de o etichetă cu `<label>`, să faci o casetă mare cu `<textarea>` și să adaugi butoane. Formularele sunt singurul mod prin care vizitatorul scrie ceva pe o pagină (nume, mesaj, căutare); fără ele, paginile ar fi doar de citit.
 
-## De ce contează
-Formularele sunt singurul mod prin care vizitatorul scrie ceva pe o pagină: nume, mesaj, căutare. Fără ele, paginile ar fi doar de citit.
-
----
-
-## Siguranță: ce NU scriem în formulare
-Formularele noastre sunt **de exercițiu**. Ele nu trimit nimic pe internet. Totuși:
-- nu scriem **parole reale** (nici ale noastre, nici ale altcuiva), doar cuvinte de probă, de exemplu `test123`;  
-- nu scriem adresa, telefonul sau numele complet;  
-- pentru nume folosim o **poreclă** sau un prenume inventat.
+> **Siguranță:** formularele noastre sunt **de exercițiu** și nu trimit nimic pe internet. Nu scriem **parole reale** (nici ale noastre, nici ale altcuiva), doar cuvinte de probă, de exemplu `test123`. Nu scriem adresa, telefonul sau numele complet; pentru nume folosim o **poreclă** sau un prenume inventat.
 
 ---
 
@@ -30,12 +20,24 @@ Formularele noastre sunt **de exercițiu**. Ele nu trimit nimic pe internet. Tot
 | Minute | Ce facem |
 |--------|----------|
 | 0–15 | Recapitulare · pornim proiectul |
-| 15–35 | `form` · `input` · `label` (**Exemplele 1–3**) |
-| 35–55 | `name` · `placeholder` · parola (**Exemplele 4–5**) |
-| 55–75 | `textarea` · butoane (**Exemplele 6–7**) |
-| 75–95 | Aranjarea formularului · ce se întâmplă la trimitere (**Exemplele 8–9**) |
-| 95–115 | Greșeli și proiect (**Exemplul 10**) |
+| 15–35 | `form` · `input` · `label` · `placeholder` (**Exemplele 1–3**) |
+| 35–60 | `name` · parola · `textarea` (**Exemplele 4–6**) |
+| 60–75 | Butoane (**Exemplul 7**) |
+| 75–115 | Mini-proiect: clubul secret · ce se întâmplă la trimitere (**Exemplul 8**) |
 | 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `<form>` | Învelește tot formularul | `<form> ... </form>` |
+| `<label for="x">` | Eticheta: textul care spune ce se scrie | `<label for="porecla">Porecla:</label>` |
+| `<input type="text" id="x" name="x">` | Caseta în care scrie vizitatorul | `<input type="text" id="porecla" name="porecla">` |
+| `type="password"` | Casetă în care literele devin puncte | `<input type="password" id="parola" name="parola">` |
+| `<textarea>` | Casetă mare pentru mesaje lungi | `<textarea id="mesaj" name="mesaj" rows="4" cols="30"></textarea>` |
+| `<button type="submit">` | Buton care trimite formularul (sau `reset`, `button`) | `<button type="submit">Trimite</button>` |
 
 ---
 
@@ -50,7 +52,7 @@ Formularele noastre sunt **de exercițiu**. Ele nu trimit nimic pe internet. Tot
 - [ ] Creează folderul `Prenume_Nume_W2_L3` și deschide folderul în VS Code  
 - [ ] Creează `index.html` cu scheletul complet și pornește Live Server  
 
-> De aici înainte, exemplele arată doar ce scrii **în interiorul `<body>`**.
+> De aici înainte, exemplele arată doar ce scrii **în interiorul `<body>`**, dacă nu spunem altfel.
 
 ---
 
@@ -60,8 +62,8 @@ Formularele noastre sunt **de exercițiu**. Ele nu trimit nimic pe internet. Tot
 
 ```html
 <form>
-  <label for="prenume">Prenumele tău:</label>
-  <input type="text" id="prenume" name="prenume">
+  <label for="porecla">Porecla ta:</label>
+  <input type="text" id="porecla" name="porecla">
 </form>
 ```
 
@@ -79,27 +81,27 @@ Formularele noastre sunt **de exercițiu**. Ele nu trimit nimic pe internet. Tot
 ### Exemplul 2 — Eticheta și caseta se leagă între ele
 
 ```html
-<label for="prenume">Prenumele tău:</label>
-<input type="text" id="prenume" name="prenume">
+<label for="porecla">Porecla ta:</label>
+<input type="text" id="porecla" name="porecla">
 ```
 
-Valoarea din `for` din etichetă este **aceeași** cu `id` din casetă: `prenume`. Acum, dacă apeși pe cuvintele „Prenumele tău”, cursorul intră în casetă. Fără legătura asta, eticheta ar fi doar text. Un cititor de ecran citește eticheta când ajunge la casetă.
+Valoarea din `for` din etichetă este **aceeași** cu `id` din casetă: `porecla`. Acum, dacă apeși pe cuvintele „Porecla ta”, cursorul intră în casetă. Fără legătura asta, eticheta ar fi doar text. Un cititor de ecran citește eticheta când ajunge la casetă.
 
 > Fiecare `id` trebuie să fie **unic** în pagină. Nu pune același `id` la două casete.
 
 ### Exemplul 3 — Text care ajută: `placeholder`
 
 ```html
-<label for="porecla">Porecla ta:</label>
-<input type="text" id="porecla" name="porecla" placeholder="de exemplu: Ninja">
+<label for="joc">Jocul tău preferat:</label>
+<input type="text" id="joc" name="joc" placeholder="de exemplu: Minecraft">
 ```
 
 `placeholder` („text-loc”) arată un exemplu gri în casetă, care dispare când scrii. Nu înlocuiește eticheta: eticheta rămâne mereu vizibilă.
 
-**Gata când:**  
-- [ ] Ai făcut un formular cu o casetă de text și o etichetă legată prin `for` și `id`  
-- [ ] Ai verificat că apăsarea pe etichetă pune cursorul în casetă  
-- [ ] Ai adăugat un `placeholder` care dă un exemplu  
+**Încearcă tu (6 min)**  
+- [ ] Fă un formular cu o casetă de text și o etichetă legată prin `for` și `id`  
+- [ ] Verifică în Live Server că apăsarea pe etichetă pune cursorul în casetă  
+- [ ] Adaugă un `placeholder` care dă un exemplu  
 
 ---
 
@@ -111,13 +113,13 @@ Când formularul se trimite, fiecare casetă trimite perechea **nume = valoare**
 
 ```html
 <form>
-  <label for="animal">Animalul tău preferat:</label>
-  <input type="text" id="animal" name="animal">
+  <label for="joc">Jocul tău preferat:</label>
+  <input type="text" id="joc" name="joc">
   <button type="submit">Trimite</button>
 </form>
 ```
 
-Scrie `pisică` și apasă butonul. Privește **adresa paginii** din browser: apare ceva ca `index.html?animal=pisic%C4%83`. Vezi numele casetei (`animal`) și ce ai scris. Diacriticele se transformă în coduri, dar înțelesul rămâne.
+Scrie `Minecraft` și apasă butonul. Privește **adresa paginii** din browser: apare ceva ca `index.html?joc=Minecraft`. Vezi numele casetei (`joc`) și ce ai scris. Diacriticele se transformă în coduri, dar înțelesul rămâne.
 
 > Dacă o casetă nu are `name`, valoarea ei nu apare deloc.
 
@@ -128,7 +130,7 @@ Scrie `pisică` și apasă butonul. Privește **adresa paginii** din browser: ap
 <input type="password" id="parola" name="parola">
 ```
 
-La `type="password"`, literele sunt înlocuite cu puncte, ca să nu le vadă cineva peste umăr. **Atenție:** în formularul nostru de exercițiu parola apare totuși în adresa paginii (vezi mai jos), de aceea scriem doar cuvinte de probă.
+La `type="password"`, literele sunt înlocuite cu puncte, ca să nu le vadă cineva peste umăr. **Atenție:** în formularul nostru de exercițiu parola apare totuși în adresa paginii (vezi Exemplul 8), de aceea scriem doar cuvinte de probă.
 
 ### Exemplul 6 — Mesaje lungi: `textarea`
 
@@ -149,7 +151,7 @@ Pentru mesaje pe mai multe rânduri folosești `<textarea>`:
 
 ---
 
-## 4. Butoane și aranjare
+## 4. Butoane
 
 ### Exemplul 7 — Trei feluri de butoane
 
@@ -167,118 +169,112 @@ Pentru mesaje pe mai multe rânduri folosești `<textarea>`:
 
 Textul dintre `<button>` și `</button>` este ce apare pe buton.
 
-### Exemplul 8 — Formular ordonat
+**Încearcă tu (4 min)**  
+- [ ] Adaugă în formular un buton `submit` și unul `reset`  
+- [ ] Scrie ceva în casete, apasă „Șterge tot” și vezi ce se întâmplă  
+
+---
+
+## 5. Mini-proiect
+
+### Exemplul 8 — „Clubul secret”
+
+Acesta este proiectul **complet**, cu tot scheletul paginii. Salvează-l în `index.html` și scrie-l singur, bucată cu bucată.
 
 Dacă pui totul una lângă alta, apar înghesuite. Învelește fiecare pereche etichetă + casetă într-un `<p>`:
 
 ```html
-<h1>Înscriere la clubul meu</h1>
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clubul secret</title>
+</head>
+<body>
+  <h1>Clubul secret</h1>
 
-<form>
-  <p>
-    <label for="porecla">Porecla ta:</label><br>
-    <input type="text" id="porecla" name="porecla" placeholder="de exemplu: Ninja">
-  </p>
+  <form>
+    <p>
+      <label for="porecla">Porecla ta:</label><br>
+      <input type="text" id="porecla" name="porecla" placeholder="de exemplu: Ninja">
+    </p>
 
-  <p>
-    <label for="parola">Parola de probă:</label><br>
-    <input type="password" id="parola" name="parola">
-  </p>
+    <p>
+      <label for="parola">Parola de probă:</label><br>
+      <input type="password" id="parola" name="parola">
+    </p>
 
-  <p>
-    <label for="mesaj">De ce vrei să intri în club?</label><br>
-    <textarea id="mesaj" name="mesaj" rows="4" cols="30"></textarea>
-  </p>
+    <p>
+      <label for="joc">Jocul tău preferat:</label><br>
+      <input type="text" id="joc" name="joc" placeholder="de exemplu: Minecraft">
+    </p>
 
-  <p>
-    <button type="submit">Trimite</button>
-    <button type="reset">Șterge tot</button>
-  </p>
-</form>
+    <p>
+      <label for="mesaj">De ce vrei să intri în club?</label><br>
+      <textarea id="mesaj" name="mesaj" rows="4" cols="30"></textarea>
+    </p>
+
+    <p>
+      <button type="submit">Trimite</button>
+      <button type="reset">Șterge tot</button>
+    </p>
+  </form>
+</body>
+</html>
 ```
 
 `<br>` duce caseta pe rândul de sub etichetă.
 
-### Exemplul 9 — Ce se întâmplă când apeși „Trimite”
-
-Formularul tău nu are încă un loc unde să trimită datele. De aceea, browserul **reîncarcă aceeași pagină** și pune datele în adresă, după semnul `?`, despărțite de `&`:
+**Ce se întâmplă când apeși „Trimite”?** Formularul tău nu are încă un loc unde să trimită datele. De aceea, browserul **reîncarcă aceeași pagină** și pune datele în adresă, după semnul `?`, despărțite de `&`:
 
 ```text
-index.html?porecla=Ninja&parola=test123&mesaj=Vreau+sa+invat
+index.html?porecla=Ninja&parola=test123&joc=Minecraft&mesaj=Vreau+sa+invat
 ```
 
 Observă:
 - fiecare casetă apare cu `name` și valoarea ei;  
 - **parola se vede în adresă**!  
 
-Site-urile reale trimit parolele altfel: nu le pun în adresă (folosesc metoda `post`) și le protejează pe un site cu `https`, adică cu lacăt în adresă. Pentru exercițiile noastre, **scriem doar parole de probă**. Mai târziu, în Modulul 5, vei învăța ca formularul să verifice datele cu JavaScript.
-
-### Exemplul 10 — Greșeli frecvente
-
-```text
-<label for="nume">Numele:</label>
-<input type="text" id="prenume" name="prenume">
-```
-
-Aici `for` este `nume`, iar `id` este `prenume`: nu se potrivesc, deci eticheta nu este legată de casetă. Corect:
-
-```html
-<label for="prenume">Prenumele:</label>
-<input type="text" id="prenume" name="prenume">
-```
-
-**Gata când:**  
-- [ ] Ai apăsat „Trimite” și ai găsit în adresa paginii numele și valorile din casete  
-- [ ] Poți explica de ce nu scriem parole reale  
-- [ ] Ai găsit greșeala din Exemplul 10 fără să te uiți la rezolvare  
+Site-urile reale trimit parolele altfel: nu le pun în adresă (folosesc metoda `post`) și le protejează pe un site cu `https`, adică cu lacăt în adresă. Pentru exercițiile noastre, **scriem doar parole de probă**. Mai târziu, în Modulul 5, vei învăța ca formularul să verifice datele.
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Clubul secret”
 
-### Exercițiul A — „Înscriere la clubul meu” (obligatoriu)
-Fă formularul din Exemplul 8 pentru **un club imaginar ales de tine** (de exemplu clubul animalelor, clubul de desen, clubul de fotbal). Trebuie să aibă:
-- un `<h1>` și un `<form>`;  
-- cel puțin două casete de text, o casetă `password` (cu parolă de probă), un `<textarea>` și cele două butoane;  
-- toate casetele cu etichete legate prin `for` și `id`;  
-- cel puțin un `placeholder` care dă un exemplu.
+### Minim vs Complet
 
-### Exercițiul B — Ce vezi în adresă?
-Completează formularul cu date inventate, apasă „Trimite” și copiază pe foaie ce apare în adresa paginii, după `?`. Marchează numele casetelor și valorile.
+| | Ce trebuie |
+|--|------------|
+| **Minim** | O pagină cu un formular cu două casete de text, fiecare cu etichetă legată prin `for` și `id`, și un buton de trimitere |
+| **Complet** | Minim + o casetă de parolă de probă, un `<textarea>`, butonul de ștergere, un `placeholder` și ce vezi în adresă după trimitere, notat într-un comentariu |
 
-### Exercițiul C — Ce tip?
-Pentru fiecare, alege `text`, `password` sau `textarea`: (1) porecla; (2) parola de probă; (3) povestea unei zile; (4) animalul preferat.
+### Pasul 1 — Minim
+Fă `index.html` cu un `<h1>` și un formular pentru **un club imaginar ales de tine** (de exemplu clubul de jocuri, de desen sau de fotbal).
 
-### Exercițiul D — Găsește greșelile
-Găsește **3 greșeli** și repară greșelile:
+- [ ] Folderul `Prenume_Nume_W2_L3` are `index.html` cu scheletul complet  
+- [ ] Formularul are cel puțin două casete de text, fiecare cu etichetă legată prin `for` și `id`  
+- [ ] Ai un buton `submit`, iar fiecare casetă are `name`  
 
-```text
-<form>
-  <label for="animale">Animalul tău:</label>
-  <input type="text" id="animal">
-  <label for="mesaj">Mesaj:</label>
-  <textarea id="mesaj" name="mesaj" rows="4" cols="30">
-  <button type="submit">Trimite</button>
-</form>
-```
+### Pasul 2 — Complet
+Îmbunătățești formularul:
 
-### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: la ce folosește eticheta `<label>` și de ce `for` trebuie să fie la fel cu `id`? De ce nu scriem parole reale în formularele de exercițiu?
-
-**Gata când:**  
-- [ ] Folderul `Prenume_Nume_W2_L3` conține `index.html` cu formularul complet  
-- [ ] Toate casetele au etichete legate, iar butoanele merg  
-- [ ] Ai notat pe foaie ce se vede în adresă după trimitere  
-- [ ] Codul este indentat și are comentarii  
-- [ ] Ai răspuns la exercițiile C–E  
+- [ ] Ai o casetă `password` (cu parolă de probă), un `<textarea>` și butonul `reset`  
+- [ ] Cel puțin un `placeholder` dă un exemplu  
+- [ ] Ai apăsat „Trimite” și ai notat într-un comentariu ce apare în adresa paginii, după `?`, cu numele casetelor și valorile  
+- [ ] Codul este indentat și fiecare grup de casete are un comentariu  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Adaugă o casetă `<input type="text" value="Ana">`: ce face `value`?  
-- [ ] Adaugă un titlu mic cu `<h2>` pentru fiecare grup de întrebări  
+## Bonus ★★★ — Provocare: Formularul cu grupuri
+*Doar dacă ai terminat Complet.*
+
+Faci un formular mai bogat și mai ordonat.
+
+- [ ] Adaugă un titlu mic cu `<h2>` pentru fiecare grup de întrebări (de exemplu „Despre tine” și „Despre club”)  
 - [ ] Încearcă `<input type="text" size="40">` și vezi cum se schimbă lățimea  
-- [ ] Deschide DevTools (**F12**), fila **Elements**, și caută formularul: vezi cum este legată eticheta de casetă  
+- [ ] Adaugă o casetă `<input type="text" value="Ninja">` și explică ce face `value`  
+- [ ] Deschide DevTools (**F12**; pe Mac Cmd + Option + I), fila **Elements**, și caută formularul: vezi cum este legată eticheta de casetă  
 
 ---
 
@@ -311,16 +307,62 @@ Pe foaie: la ce folosește eticheta `<label>` și de ce `for` trebuie să fie la
 - De ce nu scriem parole reale în formularele de exercițiu?
 
 ## Temă
-Fă un formular „Fișa prietenului meu” pentru un prieten **imaginar**: poreclă, hobby, mesaj. Pune în el un buton de trimitere și unul de ștergere și salvează în `Prenume_Nume_W2_L3`.
+1. Fă un formular „Fișa unui jucător” pentru un jucător **imaginar**: poreclă, joc preferat, mesaj. Pune în el un buton de trimitere și unul de ștergere și salvează în `Prenume_Nume_W2_L3`.  
+2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
+3. **Exemple pentru acasă.** Încearcă amândouă:
+
+**Acasă 1 — O valoare de început: `value`.**
+
+```html
+<label for="porecla">Porecla ta:</label>
+<input type="text" id="porecla" name="porecla" value="Ninja">
+```
+
+Cu `value` caseta apare completată de la început, iar vizitatorul poate schimba textul.
+
+**Acasă 2 — Casetă care nu se poate schimba: `readonly`.**
+
+```html
+<label for="club">Clubul:</label>
+<input type="text" id="club" name="club" value="Clubul secret" readonly>
+```
+
+Cu `readonly` vizitatorul vede textul, dar nu îl poate modifica. Valoarea se trimite totuși odată cu formularul.
+
+4. **Încă patru exerciții (B–E):**
+
+**B — Ce vezi în adresă?** Completează formularul cu date inventate, apasă „Trimite” și copiază într-un comentariu ce apare în adresa paginii, după `?`. Marchează numele casetelor și valorile.
+
+**C — Ce tip?** Pentru fiecare, alege `text`, `password` sau `textarea`: (1) porecla; (2) parola de probă; (3) povestea unei zile; (4) jocul preferat.
+
+**D — Găsește greșelile.** Găsește **3 greșeli** în fiecare cod și repară greșelile:
+
+```text
+<form>
+  <label for="jocuri">Jocul tău:</label>
+  <input type="text" id="joc">
+  <label for="mesaj">Mesaj:</label>
+  <textarea id="mesaj" name="mesaj" rows="4" cols="30">
+  <button type="submit">Trimite</button>
+</form>
+```
+
+```text
+<label for="nume">Numele:</label>
+<input type="text" id="prenume" name="prenume">
+```
+
+**E — Explică cu cuvintele tale.** Într-un comentariu din cod: la ce folosește eticheta `<label>` și de ce `for` trebuie să fie la fel cu `id`? De ce nu scriem parole reale în formularele de exercițiu?
 
 ## Ce urmează — Lecția 4
-Formulare II: **alegeri**. Butoane rotunde, căsuțe bifate, liste de unde alegi.
+Formulare II: **alegeri**. Butoane rotunde, căsuțe bifate și liste de unde alegi, pentru un vot al sporturilor preferate.
 
 ---
 
 ## Răspunsuri
 - **Quiz scurt:** (1) valoarea `for` din `<label>` este la fel cu `id` din `<input>`; (2) înlocuiește literele cu puncte, ca să nu le vadă cineva peste umăr; (3) `submit` trimite formularul, `reset` șterge ce ai scris în toate casetele; (4) `name` este numele sub care se trimite valoarea casetei (perechea nume = valoare); fără el valoarea nu apare; (5) parola apare în adresa paginii și poate fi văzută, deci scriem doar parole de probă.  
-- **Exercițiul C:** (1) `text`; (2) `password`; (3) `textarea`; (4) `text`.  
-- **Exercițiul D:** (1) `for="animale"` nu se potrivește cu `id="animal"`; (2) caseta `animal` nu are `name`; (3) `<textarea>` nu este închis cu `</textarea>`.  
-- **Exemplul 10:** `for="nume"` nu se potrivește cu `id="prenume"`.  
+- **Tema, exercițiul C:** (1) `text`; (2) `password`; (3) `textarea`; (4) `text`.  
+- **Tema, exercițiul D, primul cod:** (1) `for="jocuri"` nu se potrivește cu `id="joc"`; (2) caseta `joc` nu are `name`; (3) `<textarea>` nu este închis cu `</textarea>`.  
+- **Tema, exercițiul D, al doilea cod:** `for="nume"` nu se potrivește cu `id="prenume"`; corect este `for="prenume"` (sau `id="nume"` și `name="nume"`).  
+- **Tema, exercițiul E:** eticheta spune ce se scrie în casetă, iar `for` trebuie să fie la fel cu `id` ca să se lege; parolele reale nu se scriu pentru că parola apare în adresa paginii.  
 - **Siguranță:** verificați că nimeni nu scrie parole sau date reale în exerciții.

@@ -340,7 +340,7 @@ formular.addEventListener("click", function (eveniment) {
 ```
 
 ### Exercițiul D — Explică cu cuvintele tale
-Pe foaie: ce face `preventDefault`? De ce nu cerem numele, telefonul sau emailul? De ce folosim `textContent` și nu `innerHTML` pentru textul scris de vizitator?
+Într-un comentariu din cod: ce face `preventDefault`? De ce nu cerem numele, telefonul sau emailul? De ce folosim `textContent` și nu `innerHTML` pentru textul scris de vizitator?
 
 **Gata când:**  
 - [ ] Formularul merge și nu cere date personale  

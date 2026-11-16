@@ -64,7 +64,7 @@ Ca exemplu, în lecții construim „Clubul animalelor”. Tu faci același lucr
 
 ### Exemplul 2 — Alegem și scriem
 
-Completează pe foaie:
+Completează într-un comentariu:
 
 ```text
 Titlul site-ului:    Clubul animalelor
@@ -78,7 +78,7 @@ Un titlu bun este **scurt** și spune clar despre ce este vorba. Nu scrie numele
 **Încearcă tu (10 min)**  
 - [ ] Alege subiectul și titlul  
 - [ ] Completează cele 4 rânduri de mai sus  
-- [ ] Arată foaia unui coleg: înțelege despre ce este site-ul?
+- [ ] Arată planul unui coleg: înțelege despre ce este site-ul?
 
 **Gata când:**  
 - [ ] Ai un subiect potrivit pentru copii  
@@ -100,7 +100,7 @@ O **hartă a site-ului** arată paginile și drumurile dintre ele:
 (galerie.html)  (contact.html)    meniul către toate)
 ```
 
-Apoi desenează pe foaie **fiecare pagină**, cu dreptunghiuri:
+Apoi descrie într-un comentariu **fiecare pagină**, cu dreptunghiuri scrise ca text:
 
 ```text
 +-----------------------------------+
@@ -118,8 +118,8 @@ Apoi desenează pe foaie **fiecare pagină**, cu dreptunghiuri:
 Desenul se numește **schiță** (în engleză, *wireframe*). Nu trebuie să fie frumos, trebuie să arate **unde stă fiecare lucru**.
 
 **Încearcă tu (20 min)**  
-- [ ] Desenează harta cu cele 3 pagini  
-- [ ] Desenează schița paginii Acasă, a Galeriei și a paginii Contact  
+- [ ] Scrie harta cu cele 3 pagini  
+- [ ] Scrie schița paginii Acasă, a Galeriei și a paginii Contact  
 - [ ] Scrie sub fiecare schiță ce cuvinte vor fi pe pagină
 
 **Gata când:**  
@@ -150,7 +150,7 @@ Reguli bune:
 
 **Încearcă tu (10 min)**  
 - [ ] Scrie cele 4 culori cu rolul lor  
-- [ ] Colorează 4 pătrate pe foaie și verifică dacă literele se văd pe ele
+- [ ] Pune cele 4 culori una lângă alta într-o pagină de probă și verifică dacă literele se văd pe ele
 
 ---
 
@@ -175,7 +175,7 @@ Scrie și textele: un titlu pentru fiecare pagină, câte 1–2 propoziții pent
 
 **Încearcă tu (15 min)**  
 - [ ] Alege 6 imagini și redenumește imaginile `g1.jpg … g6.jpg`  
-- [ ] Scrie pe foaie textul alternativ al fiecăreia  
+- [ ] Scrie într-un comentariu textul alternativ al fiecăreia  
 - [ ] Scrie textele pentru cele 6 carduri
 
 ---
@@ -225,17 +225,17 @@ Deschide pagina în browser (clic dreapta → *Open with Live Server*, sau dublu
 **Gata când:**  
 - [ ] Folderul `Prenume_Nume_W5` are cele 5 fișiere și folderul `imagini`  
 - [ ] Testul cu imaginea merge  
-- [ ] Ai planul pe foaie (hartă, schițe, culori, texte)
+- [ ] Ai planul într-un comentariu (hartă, schițe, culori, texte)
 
 ---
 
 ## Proiect / exerciții de finalizat AZI
 
 ### Exercițiul A — „Planul site-ului meu” (obligatoriu)
-Foaia cu titlul, harta, cele 3 schițe, paleta și textele, plus folderul `Prenume_Nume_W5` cu structura din Exemplul 6.
+Fișierul de plan cu titlul, harta, cele 3 schițe, paleta și textele, plus folderul `Prenume_Nume_W5` cu structura din Exemplul 6.
 
 ### Exercițiul B — Autoevaluare
-Pe foaie, notează de la 1 la 5 cât de sigur ești pe: etichete HTML de bază, selectori CSS, Flexbox și Grid, evenimente în JavaScript. Pe cele cu 1–2 le recitești înainte de lecțiile următoare.
+Într-un comentariu din cod, notează de la 1 la 5 cât de sigur ești pe: etichete HTML de bază, selectori CSS, Flexbox și Grid, evenimente în JavaScript. Pe cele cu 1–2 le recitești înainte de lecțiile următoare.
 
 ### Exercițiul C — Găsește greșelile
 Găsește **3 probleme** în planul de mai jos și propune o variantă bună:
@@ -248,7 +248,7 @@ Formular: cere numele, adresa și telefonul
 ```
 
 ### Exercițiul D — Explică cu cuvintele tale
-Pe foaie: de ce facem un plan înainte să scriem cod? De ce un site pentru copii nu cere telefon sau adresă?
+Într-un comentariu din cod: de ce facem un plan înainte să scriem cod? De ce un site pentru copii nu cere telefon sau adresă?
 
 **Gata când:**  
 - [ ] Planul este complet  
@@ -257,7 +257,7 @@ Pe foaie: de ce facem un plan înainte să scriem cod? De ce un site pentru copi
 ---
 
 ## Bonus / Provocare (dacă ai terminat)
-- [ ] Desenează și o a patra pagină (de exemplu „Despre club”) și scrie ce ar conține  
+- [ ] Adaugă și o a patra pagină (de exemplu „Despre club”) și scrie ce ar conține  
 - [ ] Alege un al doilea set de 4 culori, pentru varianta întunecată  
 - [ ] Caută pe un site cunoscut pentru copii meniul și spune câte pagini are
 
@@ -284,7 +284,7 @@ Pe foaie: de ce facem un plan înainte să scriem cod? De ce un site pentru copi
 4. Ce date nu punem pe site?
 
 ## Temă
-Termină planul pe foaie și arată planul unui adult din familie. Întreabă ce se înțelege și ce nu. Notează o schimbare pe care o faci. Salvează folderul `Prenume_Nume_W5` și fă o copie de siguranță numită `Prenume_Nume_W5_L1`.
+Termină planul într-un comentariu și arată planul unui adult din familie. Întreabă ce se înțelege și ce nu. Notează o schimbare pe care o faci. Salvează folderul `Prenume_Nume_W5` și fă o copie de siguranță numită `Prenume_Nume_W5_L1`.
 
 ## Ce urmează — Lecția 2
 Scriem **scheletul**: cele 3 pagini HTML cu același antet și același subsol, legate prin meniu, plus fișierul `stil.css` cu paleta ta.

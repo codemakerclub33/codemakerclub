@@ -97,7 +97,7 @@ Variabila `i` se numește **contor** (de la „index”). Putem alege alt nume, 
 
 **Gata când:**  
 - [ ] Ai scris o buclă `for` care afișează de la 1 la 10  
-- [ ] Poți spune pe foaie cele trei părți ale lui `for`  
+- [ ] Poți spune cu voce tare cele trei părți ale lui `for`  
 - [ ] Ai schimbat limita la 20 și bucla a mers fără alte modificări  
 
 ---
@@ -141,7 +141,7 @@ Aici `i` scade (1, 0, −1, …), deci `i <= 5` este mereu adevărat. Dacă ți 
 **Încearcă tu (6 min)**  
 - [ ] Afișează numerele impare de la 1 la 9 (`i += 2`)  
 - [ ] Fă o numărătoare inversă de la 10 la 1, apoi afișează „Decolare!”  
-- [ ] Prezice pe foaie ce afișează `for (let i = 0; i < 3; i++)` înainte să rulezi bucla  
+- [ ] Prezice într-un comentariu ce afișează `for (let i = 0; i < 3; i++)` înainte să rulezi bucla  
 
 ---
 
@@ -376,7 +376,7 @@ console.log(suma);
 ```
 
 ### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: care sunt cele trei părți ale lui `for`? Când se oprește bucla? De ce pagina îngheață la o buclă fără sfârșit și ce faci atunci?
+Într-un comentariu din cod: care sunt cele trei părți ale lui `for`? Când se oprește bucla? De ce pagina îngheață la o buclă fără sfârșit și ce faci atunci?
 
 **Gata când:**  
 - [ ] Folderul `Prenume_Nume_W4_L5` are `index.html` și `script.js`  
@@ -436,4 +436,4 @@ Fă un program „Ceasul de numărat”: cere un număr `n` și afișează numer
 - **Exercițiul C:** (1) `for (let i = 10; i <= 20; i++) { console.log(i); }`; (2) `for (let i = 5; i <= 50; i += 5) { console.log(i); }`; (3) `let produs = 1; for (let i = 1; i <= 5; i++) { produs *= i; } console.log(produs);` (rezultă 120; cu valoarea de pornire 0 ar fi mereu 0).  
 - **Exercițiul D:** (1) `i--` trebuie `i++` (bucla nu se oprește niciodată); (2) în `for` părțile se despart prin `;`, nu prin `,`; (3) `let suma;` trebuie `let suma = 0;` (altfel `NaN`).  
 - **Exercițiul E:** început, condiție, pas; bucla se oprește când condiția devine falsă; la o buclă fără sfârșit condiția rămâne mereu adevărată, iar elevul închide fila și repară.  
-- **Notă pentru profesor:** pentru a înțelege bucla, faceți un „joc de rol”: un elev este calculatorul, are `i` pe o foaie și execută pașii cu voce tare (verifică, rulează, mărește). Pentru bucla fără sfârșit, rugați elevii să salveze lucrul înainte de a rula ceva îndoielnic: la nevoie, fila se închide și munca nu se pierde dacă a fost salvată. Evitați limite uriașe în demonstrații.
+- **Notă pentru profesor:** pentru a înțelege bucla, faceți un „joc de rol”: un elev este calculatorul, ține minte `i`, îl mărește la fiecare pas și execută pașii cu voce tare (verifică, rulează, mărește). Pentru bucla fără sfârșit, rugați elevii să salveze lucrul înainte de a rula ceva îndoielnic: la nevoie, fila se închide și munca nu se pierde dacă a fost salvată. Evitați limite uriașe în demonstrații.

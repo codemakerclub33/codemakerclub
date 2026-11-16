@@ -352,7 +352,7 @@ function evalueaza(incercare) {
 ```
 
 ### Exercițiul D — Explică cu cuvintele tale
-Pe foaie: de ce verificăm literele în **două treceri**? Ce face `%` în `numarZi % CUVINTE.length`? De ce nu ne bazăm doar pe culori pentru a arăta rezultatul?
+Într-un comentariu din cod: de ce verificăm literele în **două treceri**? Ce face `%` în `numarZi % CUVINTE.length`? De ce nu ne bazăm doar pe culori pentru a arăta rezultatul?
 
 **Gata când:**  
 - [ ] Jocul este complet și lista este bifată  
@@ -404,4 +404,4 @@ Trecem la **Canvas**: o pânză pe care desenăm cu JavaScript și pe care mișc
 - **Exercițiul B:** nu are răspuns unic; verificați că toate cuvintele au 5 litere, fără diacritice, și sunt potrivite pentru copii.  
 - **Exercițiul C:** (1) `incercare[i] = secret[i]` este atribuire; trebuie `===`; (2) lipsește „consumarea” literelor: `ramase[i] = null` în trecerea 1 și `ramase[pozitie] = null` în trecerea 2, ceea ce dă rezultate greșite pentru literele repetate; (3) condiția `pozitie === -1` este inversă: trebuie `pozitie !== -1` pentru `"prezent"`.  
 - **Exercițiul D:** o singură trecere ar da galben unei litere care este deja verde în altă poziție; `%` dă restul împărțirii și alege o poziție validă în listă; unii oameni nu disting culorile, deci adăugăm semne și descrieri.  
-- **Notă pentru profesor:** dacă un elev are încercări colorate greșit, cereți să scrie pe foaie secretul și încercarea și să facă cele două treceri cu creionul; apoi comparați cu rezultatul programului. Pentru bonusul cu lista de cuvinte valide, explicați că un joc real are o listă mult mai mare. Verificați că niciun elev nu lasă `console.log(secret)` în varianta finală.
+- **Notă pentru profesor:** dacă un elev are încercări colorate greșit, cereți să scrie într-un comentariu secretul și încercarea și să facă cele două treceri cu creionul; apoi comparați cu rezultatul programului. Pentru bonusul cu lista de cuvinte valide, explicați că un joc real are o listă mult mai mare. Verificați că niciun elev nu lasă `console.log(secret)` în varianta finală.

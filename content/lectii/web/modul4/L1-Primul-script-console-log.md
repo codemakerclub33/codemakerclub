@@ -75,7 +75,7 @@ Linia `<script src="script.js"></script>` îi spune browserului: „citește și
 console.log("Salut, lume!");
 ```
 
-Deschide pagina cu **Live Server**. Apoi deschide **consola**: apasă **F12** (sau clic dreapta pe pagină, apoi „Inspect”) și alege fila **Console**. Vei vedea:
+Deschide pagina cu **Live Server**. Apoi deschide **consola**: apasă **F12** (pe Mac **Cmd + Option + I**; sau clic dreapta pe pagină, apoi „Inspect”) și alege fila **Console**. Vei vedea:
 
 ```text
 Salut, lume!
@@ -92,7 +92,7 @@ Consola este caietul tău de probă: aici vezi ce face programul, iar utilizator
 **Gata când:**  
 - [ ] `script.js` este legat de `index.html` înainte de `</body>`  
 - [ ] Vezi „Salut, lume!” în consolă  
-- [ ] Știi să deschizi consola (F12, fila Console)  
+- [ ] Știi să deschizi consola (F12; pe Mac Cmd + Option + I, fila Console)  
 
 ---
 
@@ -219,7 +219,7 @@ Repară: scrie `console.log`. Cele mai frecvente erori de început:
 
 **Încearcă tu (6 min)**  
 - [ ] Provoacă pe rând fiecare eroare din tabel și citește mesajul din consolă  
-- [ ] Notează pe foaie rândul indicat de consolă pentru o eroare  
+- [ ] Notează într-un comentariu rândul indicat de consolă pentru o eroare  
 - [ ] Repară toate greșelile și verifică dacă dispar mesajele roșii  
 
 ---
@@ -308,7 +308,7 @@ Console.log("Am 10 ani");
 ```
 
 ### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: ce face HTML, ce face CSS și ce face JavaScript? Unde vezi rezultatul unui `console.log`? Ce faci când apare un mesaj roșu în consolă?
+Într-un comentariu din cod: ce face HTML, ce face CSS și ce face JavaScript? Unde vezi rezultatul unui `console.log`? Ce faci când apare un mesaj roșu în consolă?
 
 **Gata când:**  
 - [ ] Folderul `Prenume_Nume_W4_L1` are `index.html` și `script.js`  
@@ -334,7 +334,7 @@ Pe foaie: ce face HTML, ce face CSS și ce face JavaScript? Unde vezi rezultatul
 6. **Ai pus un număr între ghilimele** — `"5 + 3"` nu calculează nimic, ci scrie textul.  
 7. **Ai amestecat ghilimelele** (`"text'`) — folosește aceleași la început și la sfârșit.  
 8. **Ai uitat `;`** la sfârșit — de multe ori merge, dar obișnuiește-te să scrii punctul și virgula.  
-9. **Te uiți la pagină, nu la consolă** — mesajele `console.log` apar numai în consolă (F12).  
+9. **Te uiți la pagină, nu la consolă** — mesajele `console.log` apar numai în consolă (F12; pe Mac Cmd + Option + I).  
 10. **Nu ai salvat fișierul** (Ctrl+S) — programul vechi rulează în continuare.  
 
 ---
@@ -342,7 +342,7 @@ Pe foaie: ce face HTML, ce face CSS și ce face JavaScript? Unde vezi rezultatul
 ## Recapitulare pe scurt
 1. HTML = structura, CSS = aspectul, JavaScript = comportamentul.  
 2. `<script src="script.js"></script>` înainte de `</body>` leagă scriptul.  
-3. `console.log(…);` scrie în consolă (F12, fila Console).  
+3. `console.log(…);` scrie în consolă (F12; pe Mac Cmd + Option + I, fila Console).  
 4. Textul se scrie între ghilimele; numerele, fără.  
 5. `//` și `/* … */` sunt comentarii: calculatorul le ignoră.  
 6. Mesajele roșii spun felul erorii și rândul ei: citește mesajele cu calm.
@@ -363,9 +363,9 @@ Scrie un program care afișează un „carnet de note” al jocurilor tale prefe
 ---
 
 ## Răspunsuri
-- **Quiz scurt:** (1) JavaScript dă comportament paginii: calculează, ia decizii și răspunde la click; (2) `console.log(3 + 4);` afișează `7`, iar `console.log("3 + 4");` afișează textul `3 + 4`; (3) apăsând F12 (sau clic dreapta, „Inspect”) și alegând fila Console; (4) o notiță pentru oameni, scrisă cu `//` sau `/* … */`, pe care calculatorul o ignoră; (5) eroarea este în fișierul `script.js`, la rândul 5.  
+- **Quiz scurt:** (1) JavaScript dă comportament paginii: calculează, ia decizii și răspunde la click; (2) `console.log(3 + 4);` afișează `7`, iar `console.log("3 + 4");` afișează textul `3 + 4`; (3) apăsând F12 (pe Mac Cmd + Option + I) (sau clic dreapta, „Inspect”) și alegând fila Console; (4) o notiță pentru oameni, scrisă cu `//` sau `/* … */`, pe care calculatorul o ignoră; (5) eroarea este în fișierul `script.js`, la rândul 5.  
 - **Exercițiul B:** (1) `10`; (2) `8 + 2` (text); (3) `Am 12 mere`; (4) `5`.  
 - **Exercițiul C:** (1) `console.log("Bună ziua!");`; (2) `console.log(9 * 9);` (rezultă 81); (3) `console.log("Am", 7, "prieteni");`.  
 - **Exercițiul D:** (1) `consol` trebuie `console`; (2) lipsește ghilimeaua de închidere după `Ana`; (3) `Console` trebuie `console` (litera mică).  
-- **Exercițiul E:** HTML pune structura, CSS dă aspectul, JavaScript dă comportamentul; rezultatul se vede în consolă (F12, fila Console); citesc mesajul, văd rândul indicat și repar greșeala.  
+- **Exercițiul E:** HTML pune structura, CSS dă aspectul, JavaScript dă comportamentul; rezultatul se vede în consolă (F12; pe Mac Cmd + Option + I, fila Console); citesc mesajul, văd rândul indicat și repar greșeala.  
 - **Notă pentru profesor:** cea mai frecventă problemă este „nu apare nimic”: verificați, în ordine, (1) fișierul `script.js` este salvat; (2) linia `<script>` este în `index.html` și numele este corect; (3) consola este deschisă pe fila Console. Mulți elevi pierd mesajele pentru că se uită la pagină. Încurajați elevii să citească mesajele de eroare cu voce tare: este cea mai bună obișnuință pentru programare. Exemplele nu folosesc imagini, deci nu apar date personale.

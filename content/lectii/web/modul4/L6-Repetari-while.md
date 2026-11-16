@@ -86,7 +86,7 @@ Aici nu mai este `i++`: valoarea lui `i` rămâne `1`, condiția rămâne mereu 
 
 **Gata când:**  
 - [ ] Ai scris o buclă `while` care numără de la 1 la 5  
-- [ ] Poți arăta pe foaie unde stau început, condiție și pas într-un `while`  
+- [ ] Poți arăta în cod unde stau început, condiție și pas într-un `while`  
 - [ ] Știi de ce bucla fără pas nu se termină  
 
 ---
@@ -366,7 +366,7 @@ if (x > 3) {
 ```
 
 ### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: când alegi `for` și când alegi `while`? Care este diferența dintre `while` și `do…while`? Ce fac `break` și `continue`?
+Într-un comentariu din cod: când alegi `for` și când alegi `while`? Care este diferența dintre `while` și `do…while`? Ce fac `break` și `continue`?
 
 **Gata când:**  
 - [ ] Folderul `Prenume_Nume_W4_L6` are `index.html` și `script.js`  

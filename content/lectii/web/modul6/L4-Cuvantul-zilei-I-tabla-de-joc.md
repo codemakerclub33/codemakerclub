@@ -65,7 +65,7 @@ joculSaTerminat        mai poți scrie sau nu
 **Tabla este o listă de liste:** `casute[2][3]` înseamnă „rândul al treilea, coloana a patra”, pentru că numărăm de la 0.
 
 **Încearcă tu (10 min)**  
-- [ ] Desenează pe foaie tabla (6 × 5) și notează în căsuța din colțul de jos dreapta cum o scrii (`casute[5][4]`)  
+- [ ] Scrie într-un comentariu tabla (6 × 5) ca text și notează în căsuța din colțul de jos dreapta cum o scrii (`casute[5][4]`)  
 - [ ] Creează folderul `Prenume_Nume_W6_L4` cu `index.html`, `stil.css` și `script.js`
 
 ---
@@ -585,7 +585,7 @@ function stergeLitera() {
 ```
 
 ### Exercițiul D — Explică cu cuvintele tale
-Pe foaie: ce înseamnă `casute[2][3]`? De ce avem nevoie de două bucle una în alta pentru tablă? De ce ignorăm `Shift` și `Ctrl`?
+Într-un comentariu din cod: ce înseamnă `casute[2][3]`? De ce avem nevoie de două bucle una în alta pentru tablă? De ce ignorăm `Shift` și `Ctrl`?
 
 **Gata când:**  
 - [ ] Tabla merge și lista este bifată  
@@ -623,7 +623,7 @@ Pe foaie: ce înseamnă `casute[2][3]`? De ce avem nevoie de două bucle una în
 4. Ce face `joculSaTerminat`?
 
 ## Temă
-Joacă scrierea cu un coleg: unul spune un cuvânt de 5 litere, celălalt îl scrie pe tablă cu tastatura. Verificați dacă merge ștergerea. Dacă ai idei de cuvinte pentru lecția următoare (5 litere, fără diacritice), notează cuvintele pe foaie. Salvează varianta în `Prenume_Nume_W6_L4`.
+Joacă scrierea cu un coleg: unul spune un cuvânt de 5 litere, celălalt îl scrie pe tablă cu tastatura. Verificați dacă merge ștergerea. Dacă ai idei de cuvinte pentru lecția următoare (5 litere, fără diacritice), notează cuvintele într-un comentariu. Salvează varianta în `Prenume_Nume_W6_L4`.
 
 ## Ce urmează — Lecția 5
 Terminăm **Cuvântul zilei**: jocul alege un cuvânt secret în fiecare zi, verifică literele cu culori (verde, galben, gri) și arată cine a câștigat.

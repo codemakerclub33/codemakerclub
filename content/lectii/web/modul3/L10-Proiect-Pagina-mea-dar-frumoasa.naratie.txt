@@ -1,6 +1,6 @@
 Lecția a zecea din Modulul trei. Proiect: Pagina mea, dar frumoasă.
 
-Ai învățat selectori, culori, text, cutii, Flexbox, Grid, efecte, animații și adaptare la telefon. Azi le folosești pe toate. Iei pagina făcută de tine în modulul trecut, Fișa animalului meu preferat, și o transformi dintr-o pagină simplă într-una frumoasă, cu un fișier de stil separat.
+Ai învățat selectori, culori, text, cutii, Flexbox, Grid, efecte, animații și adaptare la telefon. Azi le folosești pe toate. Iei pagina făcută de tine în modulul trecut, Mica enciclopedie, și o transformi dintr-o pagină simplă într-una frumoasă, cu un fișier de stil separat.
 
 Obiectivul. Minim: stil punct css legat corect, culori și fonturi alese, carduri cu chenar și colțuri rotunjite, un meniu orizontal cu Flexbox și o regulă media pentru telefon. Complet: în plus variabile pentru culori, grilă adaptivă, efecte la hover cu tranziție, o animație blândă, comentarii și o prezentare de un minut.
 

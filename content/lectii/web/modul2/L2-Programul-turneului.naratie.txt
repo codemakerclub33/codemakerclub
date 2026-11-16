@@ -1,21 +1,27 @@
-Lecția doi din Modulul doi. Tabele mai deștepte.
+Lecția doi. Programul turneului.
 
-În lecția trecută toate rândurile aveau același număr de celule. Azi înveți să unești celule și să împarți tabelul în partea de sus, mijloc și final. Așa faci orare și tabele de scoruri ca ale profesioniștilor.
+În lecția trecută toate rândurile aveau același număr de celule. Azi înveți să unești celule și să împarți tabelul în partea de sus, mijloc și final, ca să faci programe și tabele de scoruri ca ale profesioniștilor.
 
-Obiectivul. Minim: un tabel cu o celulă unită pe orizontală și una unită pe verticală. Complet: în plus un tabel cu thead, tbody și tfoot, un orar săptămânal complet, antet colorat și rândurile verificate.
+Ce facem azi. La final ai o pagină cu programul unui turneu sportiv, pe terenuri și pe ore, cu o pauză care se întinde pe toată lățimea, un meci care ține două ore și un antet colorat, plus un tabel cu golurile marcate și totalul lor. Știi să unești celule pe orizontală cu colspan și pe verticală cu rowspan, să împarți tabelul cu thead, tbody și tfoot, să folosești scope pe antet și să aliniezi cifrele.
 
-Primul pas. Colspan unește celule pe orizontală. De exemplu pauza mare se întinde pe toate coloanele. Celula cu colspan egal doi se numără ca două coloane. Regula de aur: în fiecare rând, suma coloanelor ocupate de celule trebuie să fie egală cu numărul de coloane al tabelului.
+Instrucțiuni noi azi. Colspan întinde o celulă pe mai multe coloane. Rowspan o întinde pe mai multe rânduri. Thead, tbody și tfoot sunt partea de sus, mijlocul și finalul tabelului. Scope arată ce acoperă un antet. O regulă pentru th colorează antetele, iar text-align right aliniază cifrele la dreapta.
 
-Al doilea pas. Rowspan unește celule pe verticală. O oră de două ore se întinde pe două rânduri. În rândul de sub ea nu mai scrii o celulă pentru acea coloană, pentru că locul este deja ocupat. Rândul de sub celula unită are cu o celulă mai puțin.
+Primul pas. Colspan unește celule pe orizontală. De exemplu, pauza mare se întinde pe toate coloanele. Celula cu colspan egal doi se numără ca două coloane. Regula de aur: în fiecare rând, suma coloanelor ocupate de celule trebuie să fie egală cu numărul de coloane al tabelului. De acum scriem un rând întreg pe o singură linie, ca să vezi mai ușor câte celule are.
 
-Al treilea pas. Împărțirea tabelului. Thead conține rândurile de antet, tbody conține rândurile cu date, iar tfoot conține rândul de final, de exemplu totalul. Calculatorul nu face adunarea singur, o faci tu, deci verifică de două ori. Atributul scope spune ce acoperă un antet: scope egal col este antetul unei coloane, iar scope egal row este antetul unui rând. Ajută cititoarele de ecran.
+Al doilea pas. Rowspan unește celule pe verticală. Un meci de două ore se întinde pe două rânduri. În rândul de sub el nu mai scrii o celulă pentru acea coloană, pentru că locul este deja ocupat. Rândul de sub celula unită are cu o celulă mai puțin.
 
-Al patrulea pas. Aspectul. Poți colora antetele cu o regulă pentru th în style, din head. Cifrele se aliniază la dreapta cu text-align right, ca să fie una sub alta.
+Al treilea pas. Împărțirea tabelului. Thead conține rândurile de antet, tbody conține rândurile cu date, iar tfoot conține rândul de final, de exemplu totalul. Calculatorul nu face adunarea singur, o faci tu, deci verifică de două ori. Atributul scope spune ce acoperă un antet: pentru coloană sau pentru rând. Ajută cititoarele de ecran.
 
-Cum verifici un tabel. Pentru fiecare rând, numeri câte coloane ocupă celulele lui. Cu rowspan, adaugi și celulele ocupate de rândul de deasupra. Dacă toate rândurile dau același număr, tabelul este corect. Poți folosi și DevTools, fila Elements.
+Al patrulea pas. Aspectul. Colorezi antetele cu o regulă pentru th în style, din head. Cifrele se aliniază la dreapta, ca să fie una sub alta.
+
+Al cincilea pas. Programul turneului. Faci un tabel cu ora pe rânduri și terenurile pe coloane, cu un meci de două ore, o pauză mare pe toată lățimea și finalele la sfârșit. Pentru fiecare rând numeri câte coloane ocupă celulele lui. Cu rowspan, adaugi și celulele ocupate de rândul de deasupra. Dacă toate rândurile dau același număr, tabelul este corect.
+
+De făcut azi. Minim: un tabel de program cu o celulă unită pe orizontală și una unită pe verticală. Complet: adaugi thead și tbody, antet colorat, cel puțin trei terenuri și cinci ore, și un al doilea tabel cu tfoot și totalul calculat corect.
+
+Bonus. Scorul turneului. Faci un tabel pentru patru echipe și trei runde, cu total, aliniezi cifrele la dreapta, faci un antet unit pe două niveluri și adaugi programului sâmbăta și duminica.
 
 Greșeli frecvente. Ai numărat greșit coloanele. Ai uitat să scoți celula ocupată de rowspan. Ai scris colspan fără ghilimele. Ai lăsat rânduri în afara lui thead, tbody sau tfoot. Ai adunat greșit totalul.
 
-Tema. Un orar de weekend, cu o activitate de două ore și o pauză.
+Tema. Programul unei zile în oraș, cu o vizită de două ore și o pauză. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
 
 Recapitulare. Colspan unește pe orizontală, rowspan pe verticală. Succes!

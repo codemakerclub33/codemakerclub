@@ -45,7 +45,7 @@ Simon este un exemplu bun pentru **o listă care crește** și pentru **mai mult
 
 ### Exemplul 1 — Stările jocului
 
-Pe foaie:
+Scrie într-un comentariu:
 
 ```text
 Ce vezi:       4 butoane colorate (roșu, verde, albastru, galben), runda, record
@@ -74,8 +74,8 @@ record            cele mai multe runde reușite
 Exemplu: dacă `secventa` este `[2, 0, 0]`, jocul aprinde albastru, roșu, roșu, iar tu trebuie să apeși albastru, roșu, roșu.
 
 **Încearcă tu (10 min)**  
-- [ ] Scrie regulile pe foaie  
-- [ ] Desenează cum arată ecranul  
+- [ ] Scrie regulile într-un comentariu  
+- [ ] Scrie într-un comentariu cum arată ecranul (butoanele și mesajul)  
 - [ ] Creează folderul `Prenume_Nume_W6_L3` cu `index.html`, `stil.css` și `script.js`
 
 ---
@@ -539,7 +539,7 @@ if (numar === secventa[pozitie]) {
 ```
 
 ### Exercițiul D — Explică cu cuvintele tale
-Pe foaie: ce reține variabila `pozitie`? De ce ignorăm apăsările când `acceptaApasari` este `false`? Ce face `await`?
+Într-un comentariu din cod: ce reține variabila `pozitie`? De ce ignorăm apăsările când `acceptaApasari` este `false`? Ce face `await`?
 
 **Gata când:**  
 - [ ] Jocul merge și lista este bifată  

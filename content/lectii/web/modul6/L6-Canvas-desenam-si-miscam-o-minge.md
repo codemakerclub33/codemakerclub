@@ -77,7 +77,7 @@ ctx.clearRect(x, y, lat, inalt);  șterge o zonă
 Unghiurile din `arc` se măsoară în **radiani**: `Math.PI * 2` este cercul întreg.
 
 **Încearcă tu (10 min)**  
-- [ ] Desenează pe foaie o pânză de 600 × 360 și notează unde ar fi un soare la (520, 60)  
+- [ ] Calculează într-un comentariu unde ar fi un soare la (520, 60) pe o pânză de 600 × 360  
 - [ ] Gândește-te: dacă y crește în jos, mingea cade când y **crește** sau **scade**?  
 - [ ] Creează folderul `Prenume_Nume_W6_L6` cu `index.html`, `stil.css` și `script.js`
 
@@ -522,7 +522,7 @@ function cadru(timp) {
 ```
 
 ### Exercițiul D — Explică cu cuvintele tale
-Pe foaie: unde este punctul (0, 0) pe pânză și încotro crește y? De ce înmulțim vitezele cu `dt`? Ce face `clearRect` la începutul fiecărui cadru?
+Într-un comentariu din cod: unde este punctul (0, 0) pe pânză și încotro crește y? De ce înmulțim vitezele cu `dt`? Ce face `clearRect` la începutul fiecărui cadru?
 
 **Gata când:**  
 - [ ] Mingea merge și lista este bifată  

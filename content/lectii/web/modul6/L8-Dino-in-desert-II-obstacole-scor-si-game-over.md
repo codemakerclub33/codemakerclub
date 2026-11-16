@@ -313,7 +313,7 @@ function seCiocnesc(cactus) {
 - [ ] Scrie funcția  
 - [ ] Testează în consolă cu un cactus pus **peste** dinozaur: `seCiocnesc({ x: 60, latime: 24, inaltime: 40 })`. Trebuie să dea `true`  
 - [ ] Testează cu un cactus **departe**: `seCiocnesc({ x: 400, latime: 24, inaltime: 40 })`. Trebuie să dea `false`  
-- [ ] Desenează pe foaie dinozaurul și un cactus și verifică, pe rând, cele patru condiții
+- [ ] Scrie într-un comentariu coordonatele dinozaurului și ale unui cactus și verifică, pe rând, cele patru condiții
 
 ---
 
@@ -504,7 +504,7 @@ if (scorFinal < record) {
 ```
 
 ### Exercițiul D — Explică cu cuvintele tale
-Pe foaie: când se ating două dreptunghiuri? De ce curățăm lista de cactuși? De ce așteptăm 600 de milisecunde după Game over? De ce distanța dintre cactuși crește odată cu viteza?
+Într-un comentariu din cod: când se ating două dreptunghiuri? De ce curățăm lista de cactuși? De ce așteptăm 600 de milisecunde după Game over? De ce distanța dintre cactuși crește odată cu viteza?
 
 **Gata când:**  
 - [ ] Jocul merge și lista este bifată  

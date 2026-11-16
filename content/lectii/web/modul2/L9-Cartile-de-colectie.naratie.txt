@@ -1,23 +1,25 @@
-Lecția nouă din Modulul doi. Div, span, id și class.
+Lecția nouă. Cărțile de colecție.
 
-Uneori ai nevoie de o cutie în care să pui câteva lucruri, sau de o etichetă care să marcheze un cuvânt, iar niciun tag cu înțeles nu se potrivește. Pentru asta există div și span. Iar ca să le dai nume, folosești id și class.
+Uneori ai nevoie de o cutie în care să pui câteva lucruri, sau de o etichetă care să marcheze un cuvânt, iar niciun tag cu înțeles nu se potrivește. Pentru asta există div și span. Iar ca să le dai nume, folosești id și class. Cu ele faci cărți de colecție cu jocurile tale preferate.
 
-Obiectivul. Minim: o pagină cu trei div-uri cu aceeași clasă, stilate printr-o singură regulă. Complet: în plus un span cu clasă, un id folosit și ca țintă de link, o regulă cu punct și una cu diez, două clase pe același element și explicația diferenței dintre id și class.
+Ce facem azi. La final ai o pagină cu cărți de colecție despre jocurile preferate: fiecare carte este o cutie cu chenar, titlu și o valoare, iar una este rară, cu fundal auriu. Știi să folosești div ca să grupezi lucruri și span ca să marchezi o parte dintr-un text, să dai nume cu id, care este unic, și cu class, care este refolosibil, și să folosești aceste nume într-o regulă de stil din head. Cu class poți face aceeași schimbare de aspect la zece elemente deodată, scriind regula o singură dată.
 
-Primul pas. Div este o cutie fără niciun înțeles. Nu schimbă aspectul, doar grupează lucruri, de exemplu un titlu și un paragraf. Dacă există un tag cu înțeles, îl alegi pe acela. Span marchează o parte din text, în interiorul rândului, în timp ce div stă pe rând nou.
+Instrucțiuni noi azi. Div este o cutie fără înțeles, care grupează lucruri. Span este o etichetă pentru o parte dintr-un text. Id este un nume unic pentru un singur element. Class este un nume pentru un grup de elemente. În stil, o clasă se scrie cu punct în față, iar un id cu semnul diez.
 
-Al doilea pas. Id este numele unic al unui singur element din pagină, ca numărul de pe tricoul unui jucător. Poate fi ținta unui link cu semnul diez. În stil, o regulă pentru un id începe cu diez.
+Primul pas. Div și span. Div este o cutie fără niciun înțeles, o folosești doar ca să grupezi un titlu și un paragraf care merg împreună. Dacă există un tag cu înțeles, îl alegi pe acela. Span marchează o parte din text, în interiorul rândului, în timp ce div se așază pe rând nou.
 
-Al treilea pas. Class este un nume pentru un grup de elemente. În stil, regula începe cu punct. Dacă scrii o regulă pentru punct carte, ea se aplică tuturor elementelor cu clasa carte. Scrii regula o singură dată, iar toate cărțile arată la fel. Clasa merge pe orice tag. Un element poate avea mai multe clase, separate prin spațiu.
+Al doilea pas. Id. Id este numele unic al unui singur element. Poate fi ținta unui link și poate fi folosit într-o regulă de stil. Fiecare id apare o singură dată în pagină, ca numărul de pe tricoul unui jucător.
 
-Al patrulea pas. Id sau class? Dacă este un singur element special, id. Dacă este un grup de elemente care arată la fel, class. Numele se scriu cu litere mici, fără spații și fără diacritice, iar pentru mai multe cuvinte folosești liniuță. Numele spune ce este, nu cum arată.
+Al treilea pas. Class. Regula cu punct se aplică tuturor elementelor cu acea clasă, așa că o scrii o singură dată. Clasa merge pe orice tag. Un element poate avea mai multe clase, separate prin spațiu.
 
-Reguli noi folosite. Border desenează un chenar, padding lasă spațiu în interiorul chenarului, margin lasă spațiu în afară. Le înveți pe larg în Modulul trei.
+Al patrulea pas. Mini-proiect. Id este pentru un singur element special, iar class pentru un grup de elemente care arată la fel. Numele au litere mici, fără spații și fără diacritice, cu liniuță între cuvinte, și spun ce este, nu cum arată. Apoi facem cărțile de colecție, cu o regulă pentru toate cărțile și una pentru cartea rară. În DevTools vezi clasele și regulile.
 
-DevTools. Apasă pe un element, în Elements, și vezi clasa lui și regulile care i se aplică.
+De făcut azi. Minim: trei cutii cu aceeași clasă, stilate printr-o singură regulă. Complet: adaugi un span cu clasă, un id pe titlul principal cu regulă proprie, o carte cu două clase și explici într-un comentariu diferența dintre id și class.
 
-Greșeli frecvente. Ai scris numele clasei fără punct în regulă. Ai folosit diez pentru clasă. Ai folosit același id de două ori. Ai pus style în body.
+Bonus. Colecția cu grupuri. Adaugi o clasă pentru cărțile obișnuite, o cutie care conține toate cărțile, un link către titlu și schimbi regula direct în DevTools.
 
-Tema. Cinci carduri de jucători, cu clasă pentru fiecare, și una cu două clase.
+Greșeli frecvente. Ai scris numele clasei fără punct. Ai folosit semnul diez pentru o clasă. Același id de două ori. Nume cu spații sau diacritice. Ai uitat punct și virgula. Style pus în body. Div acolo unde exista un tag cu înțeles. Clase separate cu virgulă.
 
-Recapitulare. Div grupează, span marchează, id este unic, class este pentru grup. Succes!
+Tema. Cărți de colecție cu sporturi. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
+
+Recapitulare. Div grupează, span marchează text, id este unic, class este pentru un grup. Succes!

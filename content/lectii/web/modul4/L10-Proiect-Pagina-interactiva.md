@@ -45,7 +45,7 @@ Un proiect adevărat te obligă să folosești lucrurile învățate **împreun�
 
 ### Exemplul 1 — Harta testului
 
-Alege subiectul (de exemplu „Animale”) și gândește-te pe foaie:
+Alege subiectul (de exemplu „Animale”) și gândește-te într-un comentariu:
 
 ```text
 Titlul testului:      Cât știu despre animale?
@@ -59,7 +59,7 @@ Scrie cele **5 întrebări** (cu răspunsurile lor). Verifică întrebările: ex
 **Încearcă tu (8 min)**  
 - [ ] Alege subiectul și titlul testului  
 - [ ] Scrie 5 întrebări, fiecare cu 3 răspunsuri și răspunsul corect marcat  
-- [ ] Desenează pe foaie cum arată pagina  
+- [ ] Scrie într-un comentariu cum arată pagina (titlu, butoane, rezultat)  
 - [ ] Creează folderul `Prenume_Nume_W4_L10` cu `index.html`, `stil.css` și `script.js`  
 
 ---
@@ -458,7 +458,7 @@ Lasă un coleg să joace testul. Colegul îți spune **un lucru reușit** și **
 Folderul `Prenume_Nume_W4_L10` are `index.html`, `stil.css` și `script.js`, cu tot ce este în **lista de verificare** din Exemplul 7.
 
 ### Exercițiul B — Autoevaluare
-Pe foaie, notează de la 1 la 5 cât de bine ai înțeles fiecare lecție din modul (console.log, variabile, numere și text, decizii, `for`, `while`, funcții, liste și obiecte, DOM și evenimente). Scrie două lecții pe care vrei să le mai repeți.
+Într-un comentariu din cod, notează de la 1 la 5 cât de bine ai înțeles fiecare lecție din modul (console.log, variabile, numere și text, decizii, `for`, `while`, funcții, liste și obiecte, DOM și evenimente). Scrie două lecții pe care vrei să le mai repeți.
 
 ### Exercițiul C — Găsește greșelile
 Găsește **3 greșeli** în codul de mai jos și repară greșelile.
@@ -480,7 +480,7 @@ for (let i = 0; i <= intrebari[0].optiuni.length; i++) {
 ```
 
 ### Exercițiul D — Explică cu cuvintele tale
-Pe foaie: de ce întrebările sunt obiecte într-o listă? De ce folosim variabila `amRaspuns`? De ce folosim `textContent`, nu `innerHTML`?
+Într-un comentariu din cod: de ce întrebările sunt obiecte într-o listă? De ce folosim variabila `amRaspuns`? De ce folosim `textContent`, nu `innerHTML`?
 
 **Gata când:**  
 - [ ] Folderul `Prenume_Nume_W4_L10` are `index.html`, `stil.css` și `script.js`  

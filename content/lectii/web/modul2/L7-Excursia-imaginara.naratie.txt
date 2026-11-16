@@ -1,23 +1,27 @@
-Lecția șapte din Modulul doi. Iframe: hartă și video.
+Lecția șapte. Excursia imaginară.
 
-Cum pui într-o pagină o hartă sau un film care stă pe alt site? Cu un geam prin care se vede o altă pagină. Se numește iframe.
+Cum pui într-o pagină o hartă sau un film care stă pe alt site? Cu un geam prin care se vede o altă pagină. Se numește iframe. Cu el îți faci o excursie imaginară într-un oraș, fără să pleci de acasă.
 
-Siguranță. Un iframe este o pagină întreagă din alt loc. Punem în iframe doar site-uri alese împreună cu profesorul. Nu punem hărți cu adresa casei sau a școlii noastre, ci locuri publice, de exemplu un parc, un muzeu sau o grădină zoologică. Nu copiem coduri de încorporare de pe site-uri necunoscute.
+Ce facem azi. La final ai o pagină de excursie într-un oraș: o hartă a unui loc public, o listă cu ce vedem acolo, o altă pagină a ta într-un geam și, dacă adultul alege un film, un film încorporat. Știi să pui o altă pagină în pagina ta cu iframe, să alegi mărimea ei, să scrii un title, să știi de ce uneori geamul rămâne gol și să folosești iframe-urile cu grijă. Un iframe este o pagină întreagă din alt loc. De aceea punem doar site-uri alese împreună cu un adult. Nu punem hărți cu adresa casei noastre, ci locuri publice, de exemplu un parc, un muzeu sau o piață. Nu copiem coduri de încorporare de pe site-uri necunoscute.
 
-Obiectivul. Minim: o pagină cu un iframe către o altă pagină a ta și unul către o hartă. Complet: în plus un film încorporat, ales cu profesorul, loading lazy, titlu pentru fiecare iframe și reguli de siguranță scrise de tine.
+Instrucțiuni noi azi. Iframe arată o altă pagină în pagina ta. Width și height dau mărimea geamului. Title spune în cuvinte ce se vede în geam. Loading cu valoarea lazy încarcă geamul doar când ajungi lângă el. Allowfullscreen permite ecranul mare la film.
 
-Primul pas. Tagul iframe. Src este adresa paginii, width și height sunt lățimea și înălțimea geamului, iar title spune în cuvinte ce se vede în geam, la fel cum alt spune ce se vede într-o imagine. Cititorul de ecran citește title, deci scrie mereu un title care descrie conținutul. Iframe are tag de închidere. Rama o schimbi cu style și border.
+Primul pas. Primul iframe. Src este adresa paginii, iar title spune ce se vede în geam, la fel cum alt spune ce se vede într-o imagine. Un cititor de ecran citește title și vizitatorul știe ce urmează. Cu style poți schimba rama geamului.
 
-Al doilea pas. O hartă. Site-ul OpenStreetMap permite încorporarea hărților. După semnul întrebării din adresă sunt setările: bbox arată ce zonă se vede, cu patru numere, stânga, jos, dreapta și sus. Pentru un loc public alegi locul împreună cu profesorul, apeși butonul de partajare, cauți opțiunea de încorporare H-T-M-L și copiezi codul.
+Al doilea pas. O hartă. Site-ul OpenStreetMap permite încorporarea hărților. După semnul întrebării sunt setările: bbox arată ce zonă se vede, iar layer este stilul hărții. Alegem împreună cu un adult un loc public și copiem codul de încorporare. Nu punem harta casei noastre.
 
-Al treilea pas. Un film. Site-urile cu filme dau un cod de încorporare. În adresă apare un id al filmului, un șir de litere și cifre. Filmul îl alege profesorul. Atributul allowfullscreen permite ecranul mare.
+Al treilea pas. Un film. Site-urile cu filme dau un cod de încorporare, cu un identificator al filmului. Filmul îl alege un adult, potrivit pentru copii. Allowfullscreen permite ecranul mare.
 
-Al patrulea pas. Loading lazy face browserul să încarce iframe-ul doar când ajungi lângă el, deci pagina se deschide mai repede.
+Al patrulea pas. Probleme și siguranță. Loading lazy face pagina să se deschidă mai repede. Uneori geamul rămâne gol, pentru că site-ul nu permite să fie arătat în alte pagini, adresa este greșită sau nu ai internet. Nu este vina ta când un site refuză. Scrii într-un comentariu cinci reguli de siguranță cu cuvintele tale.
 
-Când geamul rămâne gol. Unele site-uri nu permit să fie arătate în alte pagini. Alte cauze sunt o adresă greșită sau lipsa internetului. Nu este vina ta când un site refuză. Alege alt site.
+Al cincilea pas. Mini-proiect. Pagina excursiei are titluri, o hartă, o listă, un geam cu pagina ta și, dacă ai, un film.
 
-Greșeli frecvente. Nu ai scris title. Ai uitat să închizi iframe. Ai pus harta casei sau a școlii. Ai greșit adresa din src. Ai pus prea multe iframe-uri.
+De făcut azi. Minim: un iframe către o altă pagină a ta și unul către o hartă. Complet: adaugi un film ales de un adult, încărcare leneșă, title la fiecare iframe și cinci reguli de siguranță.
 
-Tema. O pagină despre un loc public preferat, cu hartă, listă și descriere.
+Bonus. Excursia în două locuri. Pui alte două pagini ale tale cu rame diferite, două hărți una lângă alta, citești despre sandbox și cauți iframe-ul în DevTools.
 
-Recapitulare. Iframe arată o altă pagină în pagina ta, iar title îl descrie. Succes!
+Greșeli frecvente. Nu ai scris title. Ai uitat închiderea iframe-ului. Hartă cu casa ta. Site care nu permite iframe. Adresă greșită. Dimensiuni prea mici. Cod copiat dintr-un loc necunoscut. Prea multe iframe-uri.
+
+Tema. O pagină despre un loc public preferat, cu hartă. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
+
+Recapitulare. Iframe arată o altă pagină în pagina ta, title descrie ce se vede, lazy încarcă doar când trebuie, iar folosim doar site-uri alese cu un adult. Succes!

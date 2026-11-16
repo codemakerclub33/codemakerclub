@@ -327,7 +327,7 @@ p {
 
 Aici paragrafele sunt portocalii, pentru că ultima regulă câștigă.
 
-> Dacă o regulă pare că nu funcționează, poate o bate o alta mai puternică sau una scrisă mai jos. Verifică cu DevTools (**F12**): regulile bătute apar tăiate cu o linie.
+> Dacă o regulă pare că nu funcționează, poate o bate o alta mai puternică sau una scrisă mai jos. Verifică cu DevTools (**F12**; pe Mac Cmd + Option + I): regulile bătute apar tăiate cu o linie.
 
 ### Exemplul 10 — Comentarii și „Pagina mea cu fișier de stil”
 
@@ -471,7 +471,7 @@ h1 {
 ```
 
 ### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: de ce este mai bine să ai stilul într-un fișier `stil.css` decât în fiecare pagină? Care este diferența dintre `.carte` și `#carte`?
+Într-un comentariu din cod: de ce este mai bine să ai stilul într-un fișier `stil.css` decât în fiecare pagină? Care este diferența dintre `.carte` și `#carte`?
 
 **Gata când:**  
 - [ ] Folderul `Prenume_Nume_W3_L1` are `index.html` și `stil.css`  
@@ -485,7 +485,7 @@ Pe foaie: de ce este mai bine să ai stilul într-un fișier `stil.css` decât �
 - [ ] Fă încă o pagină `despre.html` care folosește **același** `stil.css` și vezi cum arată la fel  
 - [ ] Schimbă o culoare în `stil.css` și verifică în ambele pagini că s-a schimbat  
 - [ ] Adaugă o clasă `.rara` cu alt fundal și pune clasa împreună cu `carte` la o cutie (`class="carte rara"`)  
-- [ ] Deschide DevTools (**F12**), fila **Elements**, apasă pe un paragraf și privește panoul **Styles**: vezi în ce fișier este scrisă fiecare regulă  
+- [ ] Deschide DevTools (**F12**; pe Mac Cmd + Option + I), fila **Elements**, apasă pe un paragraf și privește panoul **Styles**: vezi în ce fișier este scrisă fiecare regulă  
 
 ---
 

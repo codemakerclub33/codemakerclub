@@ -454,7 +454,7 @@ function actualizeaza(dt) {
 ```
 
 ### Exercițiul D — Explică cu cuvintele tale
-Pe foaie: de ce `vy` este negativ când dinozaurul urcă? De ce verificăm `peSol` înainte de salt? Ce face `preventDefault()`?
+Într-un comentariu din cod: de ce `vy` este negativ când dinozaurul urcă? De ce verificăm `peSol` înainte de salt? Ce face `preventDefault()`?
 
 **Gata când:**  
 - [ ] Dinozaurul sare și lista este bifată  

@@ -1,27 +1,17 @@
-# LECȚIA 7 — iframe: hartă și video
+# LECȚIA 7 — Excursia imaginară
+### `iframe`: hartă și video
 **Modulul 2 · HTML II: Pagini mai bogate · 2 ore**  
 **Code Maker Club · HTML Builder**
 
-> Cum pui într-o pagină **o hartă** sau **un film** care stă pe alt site? Cu un „geam” prin care se vede o altă pagină. Se numește **iframe**.  
-> Proiect: **„Excursia mea imaginară”** · folder: `Prenume_Nume_W2_L7` (ex. `Ana_Pop_W2_L7`)
+> Cum pui într-o pagină **o hartă** sau **un film** care stă pe alt site? Cu un „geam” prin care se vede o altă pagină. Se numește **iframe**. Cu el îți faci o excursie imaginară într-un oraș, fără să pleci de acasă.  
+> Proiect: **„Excursia imaginară”** · folder: `Prenume_Nume_W2_L7` (ex. `Ana_Pop_W2_L7`)
 
 ---
 
-## Obiectiv
-La finalul orei știi să pui o altă pagină în pagina ta cu `<iframe>`, să alegi mărimea paginii încorporate, să scrii un `title`, să adaugi o hartă și un film dintr-un alt site, să știi de ce uneori „geamul” rămâne gol și să folosești iframe-urile cu grijă.  
-**Minim:** o pagină cu un `<iframe>` către o altă pagină a ta și unul către o hartă.  
-**Ținta orei (Complet):** + un film încorporat (cu profesorul), `loading="lazy"`, titlu pentru fiecare iframe și o listă de reguli de siguranță scrisă de tine.
+## Ce facem azi
+La final ai o pagină de **excursie într-un oraș**: o hartă a unui loc public, o listă cu ce vedem acolo, o altă pagină a ta într-un „geam” și, dacă adultul alege un film, un film încorporat. Știi să pui o altă pagină în pagina ta cu `<iframe>`, să alegi mărimea paginii încorporate, să scrii un `title`, să știi de ce uneori „geamul” rămâne gol și să folosești iframe-urile cu grijă. Multe site-uri au hărți și filme care nu sunt făcute de ele, ci „încorporate” din alt loc; azi faci și tu asta.
 
-## De ce contează
-Multe site-uri au hărți și filme care nu sunt făcute de ele, ci „încorporate” din alt loc. Dacă ai înțeles iframe, poți face și tu asta, dar trebuie să știi **ce pui în pagină**: iframe arată un alt site în interiorul paginii tale.
-
----
-
-## Siguranță cu iframe
-Un iframe nu e doar o imagine: este **o pagină întreagă** din alt loc. De aceea:
-- punem în iframe **doar site-uri alese împreună cu profesorul** (hărți sau filme verificate);  
-- nu punem **hărți cu adresa casei sau a școlii noastre**, ci locuri publice (un parc, un muzeu, o grădină zoologică);  
-- nu copiem coduri de „încorporare” de pe site-uri necunoscute.
+> **Siguranță cu iframe:** un iframe nu e doar o imagine, ci **o pagină întreagă** din alt loc. De aceea punem doar site-uri **alese împreună cu un adult** (hărți sau filme verificate). Nu punem hărți cu **adresa casei noastre**, ci locuri publice (un parc, un muzeu, o piață). Nu copiem coduri de „încorporare” de pe site-uri necunoscute.
 
 ---
 
@@ -30,12 +20,24 @@ Un iframe nu e doar o imagine: este **o pagină întreagă** din alt loc. De ace
 | Minute | Ce facem |
 |--------|----------|
 | 0–15 | Recapitulare · pornim proiectul |
-| 15–35 | Primul iframe: propria pagină (**Exemplele 1–3**) |
-| 35–60 | O hartă (**Exemplele 4–5**) |
-| 60–80 | Un film încorporat (**Exemplul 6**) |
-| 80–95 | `loading="lazy"` · când iframe rămâne gol (**Exemplele 7–8**) |
-| 95–115 | Siguranță · proiect (**Exemplele 9–10**) |
+| 15–35 | Primul iframe: propria pagină (**Exemplele 1–2**) |
+| 35–60 | O hartă (**Exemplele 3–4**) |
+| 60–80 | Un film încorporat (**Exemplul 5**) |
+| 80–95 | `loading="lazy"` · când iframe rămâne gol (**Exemplele 6–7**) |
+| 95–115 | Mini-proiect: excursia imaginară (**Exemplul 8**) |
 | 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `<iframe>` | Arată o altă pagină în pagina ta | `<iframe src="despre.html"></iframe>` |
+| `width` și `height` | Mărimea „geamului”, în pixeli | `width="500" height="300"` |
+| `title` | Spune în cuvinte ce se vede în geam | `title="Harta orașului"` |
+| `loading="lazy"` | Încarcă geamul doar când ajungi lângă el | `loading="lazy"` |
+| `allowfullscreen` | Permite ecranul mare la film | `<iframe ... allowfullscreen>` |
 
 ---
 
@@ -50,7 +52,7 @@ Un iframe nu e doar o imagine: este **o pagină întreagă** din alt loc. De ace
 - [ ] Creează folderul `Prenume_Nume_W2_L7` și fișierul `index.html` cu scheletul complet  
 - [ ] Creează în același folder și `despre.html`, cu scheletul complet, un `<h1>` și un paragraf scurt  
 
-> De aici înainte, exemplele arată doar ce scrii **în interiorul `<body>`**.
+> De aici înainte, exemplele arată doar ce scrii **în interiorul `<body>`**, dacă nu spunem altfel.
 
 ---
 
@@ -59,7 +61,7 @@ Un iframe nu e doar o imagine: este **o pagină întreagă** din alt loc. De ace
 ### Exemplul 1 — O pagină în altă pagină
 
 ```html
-<h1>Pagina mea principală</h1>
+<h1>Pagina principală</h1>
 
 <iframe src="despre.html" width="500" height="200" title="Pagina despre mine"></iframe>
 ```
@@ -70,11 +72,9 @@ Un iframe nu e doar o imagine: este **o pagină întreagă** din alt loc. De ace
 - `title` spune în cuvinte **ce se vede în geam**, la fel cum `alt` spune ce se vede în imagine;  
 - `<iframe>` are tag de închidere.
 
-### Exemplul 2 — De ce scriem `title`
-
 Un cititor de ecran citește `title`-ul și vizitatorul știe ce urmează: „Pagina despre mine”. Fără `title`, ar auzi doar „cadru”. Scrie mereu un `title` care descrie conținutul, nu doar „iframe”.
 
-### Exemplul 3 — Ramă în jurul geamului
+### Exemplul 2 — Ramă în jurul geamului
 
 Implicit, browserul desenează o ramă subțire. Poți schimba rama cu `style`:
 
@@ -85,16 +85,15 @@ Implicit, browserul desenează o ramă subțire. Poți schimba rama cu `style`:
 
 Pentru fără ramă: `style="border: none;"`. Culoarea și grosimea le alegi ca la tabel.
 
-**Gata când:**  
-- [ ] Ai pus în `index.html` un iframe către `despre.html`  
-- [ ] Iframe-ul are `width`, `height` și `title`  
-- [ ] Ai schimbat rama cu `style`  
+**Încearcă tu (5 min)**  
+- [ ] Pune în `index.html` un iframe către `despre.html`, cu `width`, `height` și `title`  
+- [ ] Schimbă rama cu `style`  
 
 ---
 
 ## 3. O hartă
 
-### Exemplul 4 — Harta unui oraș
+### Exemplul 3 — Harta unui oraș
 
 Site-ul OpenStreetMap, o hartă liberă, permite încorporarea hărților:
 
@@ -111,28 +110,28 @@ Adresa are două părți:
 
 `bbox` are patru numere, în această ordine: **stânga, jos, dreapta, sus** (pe hartă, coordonate). Dacă le schimbi, harta se mută.
 
-### Exemplul 5 — Harta unui loc public
+### Exemplul 4 — Harta unui loc public
 
-Cum alegi un loc? Cu profesorul:
-1. deschide `openstreetmap.org` și caută un **loc public** (un parc, un muzeu, grădina zoologică);  
+Cum alegi un loc? Împreună cu un adult:
+1. deschide `openstreetmap.org` și caută un **loc public** (un parc, un muzeu, o piață);  
 2. apasă pe butonul de partajare („Share” sau „Distribuie”) și caută opțiunea de încorporare „HTML”;  
 3. copiază codul `<iframe …>` și pune codul în pagina ta;  
 4. scrie un `title` bun și verifică în Live Server.
 
-Dacă nu vezi opțiunea, alege un loc din exemplu și schimbă doar `title`.
+Dacă nu vezi opțiunea, folosește harta din Exemplul 3 și schimbă doar `title`.
 
-> **Nu pune harta casei tale sau a școlii.** Harta arată oricui exact unde este locul.
+> **Nu pune harta casei tale.** Harta arată oricui exact unde este locul.
 
 **Încearcă tu (8 min)**  
-- [ ] Pune în pagina ta harta din Exemplul 4 cu un `title` potrivit  
-- [ ] Alege împreună cu profesorul un loc public și pune harta lui în pagină  
+- [ ] Pune în pagina ta harta din Exemplul 3 cu un `title` potrivit  
+- [ ] Alege împreună cu un adult un loc public și pune harta lui în pagină  
 - [ ] Verifică în Live Server că harta se vede  
 
 ---
 
 ## 4. Un film încorporat
 
-### Exemplul 6 — Filmul dintr-un alt site
+### Exemplul 5 — Filmul dintr-un alt site
 
 Site-urile cu filme dau un cod de încorporare. Forma lui este:
 
@@ -148,18 +147,17 @@ Site-urile cu filme dau un cod de încorporare. Forma lui este:
 - `allowfullscreen` permite ecranul mare;  
 - `youtube-nocookie.com` este varianta care urmărește mai puțin vizitatorul.
 
-**Filmul îl alege profesorul** (un film potrivit pentru copii, de la un canal verificat). Înlocuiește `ID_VIDEO` cu al lui și scrie un `title` care spune ce film este.
+**Filmul îl alege un adult** (un film potrivit pentru copii, de la un canal verificat). Înlocuiește `ID_VIDEO` cu al lui și scrie un `title` care spune ce film este.
 
-**Gata când:**  
-- [ ] Ai o hartă și un film încorporate în aceeași pagină (cu filmul ales de profesor)  
-- [ ] Fiecare iframe are `title` care descrie conținutul  
-- [ ] Poți explica de ce nu punem harta casei  
+**Încearcă tu (6 min)**  
+- [ ] Pune un film încorporat (ales de un adult) în aceeași pagină cu harta  
+- [ ] Verifică ca fiecare iframe să aibă `title` care descrie conținutul  
 
 ---
 
-## 5. Probleme, siguranță și proiect
+## 5. Probleme și siguranță
 
-### Exemplul 7 — `loading="lazy"`
+### Exemplul 6 — `loading="lazy"`
 
 ```html
 <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=26.07%2C44.42%2C26.12%2C44.45&layer=mapnik"
@@ -169,7 +167,7 @@ Site-urile cu filme dau un cod de încorporare. Forma lui este:
 
 `loading="lazy"` („încărcare leneșă”) face browserul să încarce iframe-ul **doar când ajungi cu pagina lângă el**. Pagina se deschide mai repede, mai ales dacă ai mai multe hărți sau filme.
 
-### Exemplul 8 — Când geamul rămâne gol
+### Exemplul 7 — Când geamul rămâne gol
 
 Uneori iframe-ul arată doar un spațiu gol sau mesajul „refused to connect” („a refuzat conexiunea”). Cauze frecvente:
 - **site-ul nu permite** să fie arătat în alte pagini (multe site-uri interzic asta, din siguranță);  
@@ -179,95 +177,93 @@ Uneori iframe-ul arată doar un spațiu gol sau mesajul „refused to connect”
 
 Nu este vina ta când un site refuză. Alege alt site sau ia codul de „încorporare” oficial, dacă există.
 
-### Exemplul 9 — Reguli de siguranță
+**Încearcă tu (4 min)**  
+- [ ] Adaugă `loading="lazy"` la harta ta  
+- [ ] Scrie într-un comentariu 5 reguli de siguranță pentru iframe-uri, cu cuvintele tale  
 
-Scrie pe foaie cu cuvintele tale 5 reguli pentru folosirea iframe-urilor. Câteva idei:
-1. Folosesc doar site-uri alese cu profesorul.  
-2. Nu pun hărți cu casa sau școala mea.  
-3. Nu copiez coduri de „încorporare” din locuri necunoscute.  
-4. Scriu mereu un `title`.  
-5. Verific pagina înainte să o arăt altora.
+---
 
-### Exemplul 10 — „Excursia mea imaginară”
+## 6. Mini-proiect
+
+### Exemplul 8 — „Excursia imaginară”
+
+Acesta este proiectul **complet**, cu tot scheletul paginii. Salvează-l în `index.html` și scrie-l singur, bucată cu bucată.
 
 ```html
-<h1>Excursia mea imaginară</h1>
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excursia imaginară</title>
+</head>
+<body>
+  <h1>Excursia imaginară</h1>
 
-<h2>Unde mergem?</h2>
-<p>Vizităm un loc public, de exemplu o grădină zoologică sau un muzeu.</p>
+  <h2>Unde mergem?</h2>
+  <p>Vizităm un oraș și un loc public din el, de exemplu un muzeu sau un parc.</p>
 
-<h2>Harta</h2>
-<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=26.07%2C44.42%2C26.12%2C44.45&layer=mapnik"
-        width="500" height="300" title="Harta locului pe care îl vizităm"
-        loading="lazy"></iframe>
+  <h2>Harta</h2>
+  <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=26.07%2C44.42%2C26.12%2C44.45&layer=mapnik"
+          width="500" height="300" title="Harta locului pe care îl vizităm"
+          loading="lazy"></iframe>
 
-<h2>Ce vedem acolo</h2>
-<ul>
-  <li>animale</li>
-  <li>pavilioane</li>
-  <li>o plimbare lungă</li>
-</ul>
+  <h2>Ce vedem acolo</h2>
+  <ul>
+    <li>un muzeu</li>
+    <li>un parc</li>
+    <li>o plimbare cu tramvaiul</li>
+  </ul>
 
-<h2>Pagina mea despre mine</h2>
-<iframe src="despre.html" width="500" height="200"
-        title="Pagina mea despre mine" style="border: 3px solid teal;"></iframe>
+  <h2>Pagina despre mine</h2>
+  <iframe src="despre.html" width="500" height="200"
+          title="Pagina despre mine" style="border: 3px solid teal;"></iframe>
 
-<h2>Un film despre loc</h2>
-<iframe src="https://www.youtube-nocookie.com/embed/ID_VIDEO"
-        width="560" height="315" title="Film despre locul vizitat"
-        loading="lazy" allowfullscreen></iframe>
+  <h2>Un film despre oraș</h2>
+  <iframe src="https://www.youtube-nocookie.com/embed/ID_VIDEO"
+          width="560" height="315" title="Film despre orașul vizitat"
+          loading="lazy" allowfullscreen></iframe>
+</body>
+</html>
 ```
 
-Înlocuiește conținutul cu locul ales de tine. Înlocuiește `ID_VIDEO` cu al filmului ales de profesor. Dacă nu ai un film, poți lăsa doar harta.
-
-**Gata când:**  
-- [ ] Pagina excursiei are un titlu, o hartă și o listă  
-- [ ] Ai un film încorporat (sau o explicație pe foaie de ce nu ai pus filmul)  
-- [ ] Ai scris pe foaie cele 5 reguli de siguranță  
+Înlocuiește conținutul cu orașul ales de tine. Înlocuiește `ID_VIDEO` cu al filmului ales de un adult. Dacă nu ai un film, poți lăsa doar harta.
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Excursia imaginară”
 
-### Exercițiul A — „Excursia mea imaginară” (obligatoriu)
-Fă pagina din Exemplul 10 pentru **un loc public ales de tine**, cu:
-- un `<h1>`, titluri `<h2>` și o listă;  
-- un iframe cu hartă (cu `title`, `loading="lazy"`);  
-- un iframe către propria pagină (`despre.html`) cu `title` și ramă colorată;  
-- un iframe cu film (dacă profesorul alege unul) și `allowfullscreen`.
+### Minim vs Complet
 
-### Exercițiul B — Ce face atributul?
-Spune ce face fiecare: (1) `src`; (2) `title`; (3) `loading="lazy"`; (4) `allowfullscreen`.
+| | Ce trebuie |
+|--|------------|
+| **Minim** | O pagină cu un `<iframe>` către o altă pagină a ta și unul către o hartă |
+| **Complet** | Minim + un film încorporat (ales de un adult), `loading="lazy"`, `title` la fiecare iframe și o listă de 5 reguli de siguranță scrisă de tine |
 
-### Exercițiul C — Merge sau nu?
-Spune, pentru fiecare, dacă este o idee bună: (1) harta casei tale; (2) o hartă a muzeului din orașul tău; (3) un iframe cu un site primit de la un străin; (4) un film ales de profesor.
+### Pasul 1 — Minim
+Fă pagina pentru **un oraș ales de tine**, cu un loc public.
 
-### Exercițiul D — Găsește greșelile
-Găsește **3 greșeli** și repară greșelile:
-
-```text
-<iframe src="despre.html" width="500" height="200"></iframe>
-<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=26.07%2C44.42%2C26.12%2C44.45&layer=mapnik"
-        width=300 title="Harta"
-<iframe src="https://exemplu.ro/film" title="iframe"></iframe>
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: ce este un iframe? De ce nu punem în iframe orice site?
-
-**Gata când:**  
 - [ ] Folderul `Prenume_Nume_W2_L7` conține `index.html` și `despre.html`  
-- [ ] Toate iframe-urile au `title` care descrie conținutul  
-- [ ] Nicio hartă nu arată casa sau școala ta  
+- [ ] Ai un iframe către `despre.html`, cu `width`, `height` și `title`  
+- [ ] Ai un iframe cu o hartă a unui loc public  
+
+### Pasul 2 — Complet
+Îmbunătățești pagina:
+
+- [ ] Pagina are un `<h1>`, titluri `<h2>` și o listă  
+- [ ] Ai un film încorporat (sau o explicație într-un comentariu de ce nu l-ai pus) și `allowfullscreen`  
+- [ ] Toate iframe-urile au `title` și harta are `loading="lazy"`  
+- [ ] Ai scris într-un comentariu 5 reguli de siguranță pentru iframe-uri  
 - [ ] Codul este indentat și are comentarii  
-- [ ] Ai răspuns la exercițiile B–E  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Excursia în două locuri
+*Doar dacă ai terminat Complet.*
+
 - [ ] Pune în pagină iframe-uri către alte două pagini ale tale, cu rame diferite  
-- [ ] Pune două hărți ale unor locuri publice, una lângă alta (cu profesorul)  
-- [ ] Caută „HTML iframe sandbox” și citește cu profesorul ce face  
+- [ ] Pune două hărți ale unor locuri publice, una lângă alta (împreună cu un adult)  
+- [ ] Caută „HTML iframe sandbox” și citește împreună cu un adult ce face  
 - [ ] Deschide DevTools, fila **Elements**, și găsește iframe-ul: vezi că în interior este o pagină întreagă  
 
 ---
@@ -275,7 +271,7 @@ Pe foaie: ce este un iframe? De ce nu punem în iframe orice site?
 ## Greșeli frecvente
 1. **Nu ai scris `title`** — cititorul de ecran nu știe ce urmează.  
 2. **Ai uitat `</iframe>`**.  
-3. **Ai pus o hartă cu casa sau școala ta**.  
+3. **Ai pus o hartă cu casa ta**.  
 4. **Ai încercat un site care nu permite iframe** — geamul rămâne gol.  
 5. **Ai greșit adresa din `src`**.  
 6. **Ai folosit dimensiuni foarte mici** — harta sau filmul nu se văd bine.  
@@ -290,7 +286,7 @@ Pe foaie: ce este un iframe? De ce nu punem în iframe orice site?
 3. Hărțile și filmele se încorporează cu un cod dat de site.  
 4. `loading="lazy"` încarcă iframe-ul doar când este nevoie.  
 5. Unele site-uri nu permit să fie încorporate.  
-6. Folosim doar site-uri alese cu profesorul.
+6. Folosim doar site-uri alese împreună cu un adult.
 
 ## Quiz scurt
 - Ce arată un iframe?  
@@ -300,17 +296,53 @@ Pe foaie: ce este un iframe? De ce nu punem în iframe orice site?
 - De ce nu punem harta casei noastre?
 
 ## Temă
-Fă o pagină despre **un loc public preferat** (un parc, un muzeu, o plajă) cu o hartă încorporată, o listă cu ce se poate face acolo și o descriere. Salvează în `Prenume_Nume_W2_L7`.
+1. Fă o pagină despre **un loc public preferat** dintr-un oraș (un parc, un muzeu, un stadion) cu o hartă încorporată, o listă cu ce se poate face acolo și o descriere. Salvează în `Prenume_Nume_W2_L7`.  
+2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
+3. **Exemple pentru acasă.** Încearcă amândouă:
+
+**Acasă 1 — Geam care se potrivește pe orice ecran.**
+
+```html
+<iframe src="despre.html" title="Pagina despre mine"
+        style="width: 100%; max-width: 500px; height: 200px;"></iframe>
+```
+
+Cu `width: 100%` și `max-width: 500px`, geamul se micșorează pe un ecran mic și nu depășește 500 de pixeli pe unul mare.
+
+**Acasă 2 — Un link sub hartă.**
+
+```html
+<p><a href="https://www.openstreetmap.org" target="_blank" rel="noopener noreferrer">Deschide harta mare</a></p>
+```
+
+Dacă geamul rămâne gol, vizitatorul are măcar un link către site.
+
+4. **Încă patru exerciții (B–E):**
+
+**B — Ce face atributul?** Spune ce face fiecare: (1) `src`; (2) `title`; (3) `loading="lazy"`; (4) `allowfullscreen`.
+
+**C — Merge sau nu?** Spune, pentru fiecare, dacă este o idee bună: (1) harta casei tale; (2) o hartă a muzeului din orașul tău; (3) un iframe cu un site primit de la un străin; (4) un film ales de un adult.
+
+**D — Găsește greșelile.** Găsește **3 greșeli** și repară greșelile:
+
+```text
+<iframe src="despre.html" width="500" height="200"></iframe>
+<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=26.07%2C44.42%2C26.12%2C44.45&layer=mapnik"
+        width=300 title="Harta"
+<iframe src="https://exemplu.ro/film" title="iframe"></iframe>
+```
+
+**E — Explică cu cuvintele tale.** Într-un comentariu din cod: ce este un iframe? De ce nu punem în iframe orice site?
 
 ## Ce urmează — Lecția 8
-**Taguri cu înțeles**: `header`, `nav`, `main`, `footer` și celelalte, care spun ce este fiecare parte a paginii.
+**Casa cu camere**: `header`, `nav`, `main`, `footer` și celelalte taguri care spun ce este fiecare parte a paginii.
 
 ---
 
 ## Răspunsuri
 - **Quiz scurt:** (1) o altă pagină întreagă, ca printr-un „geam” în pagina ta; (2) ca să descrie ce se vede în geam pentru cititorul de ecran, la fel ca `alt` la imagine; (3) încarcă iframe-ul doar când ajungi cu pagina lângă el, ca pagina să se deschidă mai repede; (4) site-ul nu permite să fie arătat în alte pagini, adresa din `src` este greșită, nu există internet sau numele fișierului propriu este greșit; (5) pentru că harta arată oricui exact unde este locul, deci punem doar locuri publice.  
-- **Exercițiul B:** (1) adresa paginii; (2) descrie conținutul pentru cititorul de ecran; (3) încarcă iframe-ul doar când vizitatorul ajunge lângă el; (4) permite ecranul mare.  
-- **Exercițiul C:** (1) nu; (2) da; (3) nu; (4) da.  
-- **Exercițiul D:** (1) lipsește `title` la primul iframe; (2) al doilea iframe nu este închis cu `>` și `</iframe>`; (3) `title="iframe"` nu descrie conținutul (corect: de exemplu „Film despre animale”). Acceptați orice formulare apropiată.  
-- **ID_VIDEO:** profesorul alege un film potrivit și dă elevilor ID-ul.  
+- **Tema, exercițiul B:** (1) adresa paginii; (2) descrie conținutul pentru cititorul de ecran; (3) încarcă iframe-ul doar când vizitatorul ajunge lângă el; (4) permite ecranul mare.  
+- **Tema, exercițiul C:** (1) nu; (2) da; (3) nu; (4) da.  
+- **Tema, exercițiul D:** (1) lipsește `title` la primul iframe; (2) al doilea iframe nu este închis cu `>` și `</iframe>`; (3) `title="iframe"` nu descrie conținutul (corect: de exemplu „Film despre un oraș”). Acceptați orice formulare apropiată.  
+- **ID_VIDEO:** un adult alege un film potrivit și dă ID-ul.  
 - **Siguranță:** doar locuri publice; fără adrese personale.

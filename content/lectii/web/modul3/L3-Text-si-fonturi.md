@@ -406,7 +406,7 @@ p {
 ```
 
 ### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: de ce scriem mai multe fonturi în `font-family`? De ce este bine ca un paragraf să aibă `line-height` mai mare de 1? De ce nu punem textul pe toată lățimea unui ecran mare?
+Într-un comentariu din cod: de ce scriem mai multe fonturi în `font-family`? De ce este bine ca un paragraf să aibă `line-height` mai mare de 1? De ce nu punem textul pe toată lățimea unui ecran mare?
 
 **Gata când:**  
 - [ ] Folderul `Prenume_Nume_W3_L3` are `index.html` și `stil.css`  
@@ -421,7 +421,7 @@ Pe foaie: de ce scriem mai multe fonturi în `font-family`? De ce este bine ca u
 - [ ] Încearcă `first-letter` pentru o literă mare la începutul poveștii:  
   `.poveste p:first-of-type::first-letter { font-size: 2.5rem; font-weight: bold; }`  
 - [ ] Fă un `<blockquote>` cu stil: înclinat, cu o linie colorată în stânga (`border-left: 4px solid tomato; padding-left: 15px;`)  
-- [ ] Deschide DevTools (**F12**), apasă pe un paragraf și încearcă în panoul **Styles** valori diferite pentru `line-height` și `font-size`, ca să vezi efectul pe loc  
+- [ ] Deschide DevTools (**F12**; pe Mac Cmd + Option + I), apasă pe un paragraf și încearcă în panoul **Styles** valori diferite pentru `line-height` și `font-size`, ca să vezi efectul pe loc  
 
 ---
 

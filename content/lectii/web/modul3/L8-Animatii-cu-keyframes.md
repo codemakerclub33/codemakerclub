@@ -538,7 +538,7 @@ Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 ```
 
 ### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: care este diferența dintre `transition` și `animation`? Câte licăriri pe secundă sunt permise cel mult? De ce respectăm `prefers-reduced-motion`?
+Într-un comentariu din cod: care este diferența dintre `transition` și `animation`? Câte licăriri pe secundă sunt permise cel mult? De ce respectăm `prefers-reduced-motion`?
 
 **Gata când:**  
 - [ ] Folderul `Prenume_Nume_W3_L8` are `index.html` și `stil.css`  

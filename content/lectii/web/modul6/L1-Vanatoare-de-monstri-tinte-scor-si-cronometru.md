@@ -43,9 +43,9 @@ Aproape orice joc are aceleași trei lucruri: **o stare** (scorul, timpul), **o 
 
 ## 1. Cum arată jocul
 
-### Exemplul 1 — Regulile, pe foaie
+### Exemplul 1 — Regulile, într-un comentariu
 
-Înainte de cod, scrie pe foaie **regulile**. Un joc bun are reguli simple:
+Înainte de cod, scrie într-un comentariu **regulile**. Un joc bun are reguli simple:
 
 ```text
 Numele jocului:     Vânătoare de monștri
@@ -68,7 +68,7 @@ record            cel mai mare scor
 ```
 
 **Încearcă tu (10 min)**  
-- [ ] Scrie regulile jocului pe foaie  
+- [ ] Scrie regulile jocului într-un comentariu  
 - [ ] Alege emoticoana pentru monstru (de exemplu 👾, 👻, 🐲, 🦖) și un titlu al tău  
 - [ ] Creează folderul `Prenume_Nume_W6_L1` cu `index.html`, `stil.css` și `script.js`
 
@@ -355,7 +355,7 @@ Pe bucăți:
 
 **Încearcă tu (20 min)**  
 - [ ] Scrie secțiunea  
-- [ ] Deocamdată jocul nu pornește singur: în consolă (F12) scrie `arataMonstru()` și apasă Enter ca să vezi un monstru  
+- [ ] Deocamdată jocul nu pornește singur: în consolă (F12; pe Mac Cmd + Option + I) scrie `arataMonstru()` și apasă Enter ca să vezi un monstru  
 - [ ] Apasă pe vizuina cu monstrul: scorul nu crește încă, pentru că `joculMerge` este `false` (se pornește în exemplul următor)
 
 ---
@@ -470,7 +470,7 @@ Cum merge:
 Folderul `Prenume_Nume_W6_L1` are `index.html`, `stil.css` și `script.js` și jocul merge după lista din Exemplul 7.
 
 ### Exercițiul B — Îl faci al tău
-Schimbă: emoticoana monstrului, culorile, numărul de secunde, viteza (800 ms) și textele mesajelor. Notează pe foaie ce ai schimbat și cum se simte jocul (mai ușor / mai greu).
+Schimbă: emoticoana monstrului, culorile, numărul de secunde, viteza (800 ms) și textele mesajelor. Notează într-un comentariu ce ai schimbat și cum se simte jocul (mai ușor / mai greu).
 
 ### Exercițiul C — Găsește greșelile
 Găsește **3 greșeli** în codul de mai jos și repară greșelile:
@@ -488,7 +488,7 @@ ceasMonstru = setInterval(arataMonstru(), 800);
 ```
 
 ### Exercițiul D — Explică cu cuvintele tale
-Pe foaie: ce este „starea” unui joc? Ce face `setInterval` și ce face `clearInterval`? De ce rotunjim cu `Math.floor` numărul aleator?
+Într-un comentariu din cod: ce este „starea” unui joc? Ce face `setInterval` și ce face `clearInterval`? De ce rotunjim cu `Math.floor` numărul aleator?
 
 **Gata când:**  
 - [ ] Jocul merge și lista este bifată  

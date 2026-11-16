@@ -2,7 +2,7 @@
 **Modulul 3 · CSS: Stil și culoare · 2 ore**  
 **Code Maker Club · CSS Stylist**
 
-> Ai învățat selectori, culori, text, cutii, Flexbox, Grid, efecte, animații și adaptare la telefon. Azi le folosești pe toate: iei o pagină făcută de tine în modulul trecut (**Fișa animalului meu preferat**) și o transformi dintr-o pagină simplă într-una **frumoasă**, cu un fișier de stil separat.  
+> Ai învățat selectori, culori, text, cutii, Flexbox, Grid, efecte, animații și adaptare la telefon. Azi le folosești pe toate: iei o pagină făcută de tine în modulul trecut (**Mica enciclopedie**) și o transformi dintr-o pagină simplă într-una **frumoasă**, cu un fișier de stil separat.  
 > Proiect: **„Pagina mea, dar frumoasă”** · folder: `Prenume_Nume_W3_L10` (ex. `Ana_Pop_W3_L10`)
 
 ---
@@ -45,7 +45,7 @@ Un proiect adevărat te obligă să folosești lucrurile învățate **împreun�
 
 ### Exemplul 1 — Harta stilului
 
-Înainte de a scrie CSS, hotărăște pe foaie:
+Înainte de a scrie CSS, hotărăște într-un comentariu:
 
 ```text
 Paleta (4 culori):  culoare principală, culoare de fundal, culoare pentru text, culoare de accent
@@ -59,9 +59,9 @@ Telefon:            ce se schimbă sub 600px?
 Alege 4 culori care se potrivesc și verifică ca textul să se **citească** pe fundal (culoare închisă pe fundal deschis sau invers).
 
 **Încearcă tu (8 min)**  
-- [ ] Alege pagina de la care pornești (de exemplu „Fișa animalului meu preferat”)  
-- [ ] Notează pe foaie cele 4 culori și cele două fonturi  
-- [ ] Desenează pe foaie cum vrei să arate antetul și cardurile  
+- [ ] Alege pagina de la care pornești (de exemplu „Mica enciclopedie”)  
+- [ ] Notează într-un comentariu cele 4 culori și cele două fonturi  
+- [ ] Scrie într-un comentariu cum vrei să arate antetul și cardurile  
 - [ ] Creează folderul `Prenume_Nume_W3_L10` și pune în el pagina ta, ca `index.html`, plus folderele `imagini` (și `media`, dacă ai)  
 
 ---
@@ -369,7 +369,7 @@ Colegul care ascultă îți spune **un lucru reușit** și **un lucru care se po
 Folderul `Prenume_Nume_W3_L10` are `index.html` și `stil.css`, cu tot ce este în **lista de verificare** din Exemplul 8.
 
 ### Exercițiul B — Autoevaluare
-Pe foaie, notează de la 1 la 5 cât de bine ai înțeles fiecare lecție din modul (selectori, culori, text, cutii, Flexbox, Grid și `position`, `:hover`, animații, telefon). Scrie două lecții pe care vrei să le mai repeți.
+Într-un comentariu din cod, notează de la 1 la 5 cât de bine ai înțeles fiecare lecție din modul (selectori, culori, text, cutii, Flexbox, Grid și `position`, `:hover`, animații, telefon). Scrie două lecții pe care vrei să le mai repeți.
 
 ### Exercițiul C — Găsește greșelile
 Găsește **3 greșeli** în codul de mai jos și repară greșelile:
@@ -387,7 +387,7 @@ Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 ```
 
 ### Exercițiul D — Explică cu cuvintele tale
-Pe foaie: de ce este mai bine să ai un fișier `stil.css` separat? De ce folosim variabile pentru culori? Ce faci ca pagina ta să fie prietenoasă cu cineva care folosește doar tastatura sau cu cineva sensibil la mișcare?
+Într-un comentariu din cod: de ce este mai bine să ai un fișier `stil.css` separat? De ce folosim variabile pentru culori? Ce faci ca pagina ta să fie prietenoasă cu cineva care folosește doar tastatura sau cu cineva sensibil la mișcare?
 
 **Gata când:**  
 - [ ] Folderul `Prenume_Nume_W3_L10` are `index.html`, `stil.css` și folderele de imagini  
@@ -434,7 +434,7 @@ Pe foaie: de ce este mai bine să ai un fișier `stil.css` separat? De ce folosi
 - Ce faci pentru cine nu vrea mișcare pe ecran?
 
 ## Temă
-Arată pagina unui membru al familiei, pe calculator și pe telefon, și întreabă ce a plăcut persoanei cel mai mult. Notează răspunsul pe foaie și, dacă vrei, fă o îmbunătățire.
+Arată pagina unui membru al familiei, pe calculator și pe telefon, și întreabă ce a plăcut persoanei cel mai mult. Notează răspunsul într-un comentariu și, dacă vrei, fă o îmbunătățire.
 
 ## Ce urmează — Modulul 4
 Începem **JavaScript**: pagina ta nu doar arată frumos, ci și **face lucruri**: răspunde la apăsări, calculează și își schimbă singură conținutul.

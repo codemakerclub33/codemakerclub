@@ -36,7 +36,7 @@ Fără variabile, un program ar putea doar să afișeze lucruri scrise de la în
 
 Din lecția trecută ții minte că:
 - `script.js` se leagă de pagină cu `<script src="script.js"></script>` înainte de `</body>`;
-- `console.log(…);` scrie în consolă (F12, fila Console);
+- `console.log(…);` scrie în consolă (F12; pe Mac Cmd + Option + I, fila Console);
 - textul se scrie între ghilimele, iar numerele fără ghilimele;
 - mesajul roșu din consolă spune felul erorii și rândul.
 
@@ -162,7 +162,7 @@ După aceste rânduri, `monede` este: 0, apoi 3, 2, 4, 5, 4. Deci în consolă a
 **Încearcă tu (6 min)**  
 - [ ] Creează `let scor = 0;` și adaugă 10, apoi 5, afișând scorul de fiecare dată  
 - [ ] Folosește `++` de trei ori și `--` o dată  
-- [ ] Prezice rezultatul pe foaie înainte să vezi rezultatul în consolă  
+- [ ] Prezice rezultatul într-un comentariu înainte să vezi rezultatul în consolă  
 
 ---
 
@@ -393,7 +393,7 @@ console.log("nume");
 ```
 
 ### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: ce este o variabilă? Care este diferența dintre `let` și `const`? De ce `console.log(scor)` și `console.log("scor")` afișează lucruri diferite?
+Într-un comentariu din cod: ce este o variabilă? Care este diferența dintre `let` și `const`? De ce `console.log(scor)` și `console.log("scor")` afișează lucruri diferite?
 
 **Gata când:**  
 - [ ] Folderul `Prenume_Nume_W4_L2` are `index.html` și `script.js`  

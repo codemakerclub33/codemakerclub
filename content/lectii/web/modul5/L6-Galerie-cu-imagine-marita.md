@@ -310,7 +310,7 @@ for (const mini of miniaturi) {
 ```
 
 ### Exercițiul D — Explică cu cuvintele tale
-Pe foaie: de ce punem imaginile în `<button>`? De ce are `.lightbox[hidden]` o regulă separată? De ce mutăm focusul la deschidere și îl întoarcem la închidere?
+Într-un comentariu din cod: de ce punem imaginile în `<button>`? De ce are `.lightbox[hidden]` o regulă separată? De ce mutăm focusul la deschidere și îl întoarcem la închidere?
 
 **Gata când:**  
 - [ ] Galeria merge cu mouse-ul și cu tastatura  

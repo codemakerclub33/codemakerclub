@@ -1,21 +1,27 @@
-Lecția unu din Modulul doi. Tabele: orarul și clasamentul meu.
+Lecția unu. Orarul de weekend.
 
-Orarul școlii, clasamentul unui joc, lista de prețuri: toate sunt tabele. Azi înveți să le faci în H-T-M-L, rând cu rând și coloană cu coloană.
+Orarul unei zile, clasamentul unui joc, lista de prețuri: toate sunt tabele. Azi înveți să le faci în H-T-M-L, rând cu rând și coloană cu coloană.
 
-Obiectivul. Minim: un tabel de orar cu trei coloane și patru rânduri, cu linii vizibile. Complet: în plus un al doilea tabel, un clasament, cu titlu și o celulă cu imagine sau link.
+Ce facem azi. La final ai o pagină cu două tabele: orarul unei zile de weekend, cu ore, activități și locuri, și un clasament cu trei jocuri, ambele cu titlu, antet și linii vizibile. Știi să faci un tabel cu table, tr, th și td, să-i pui un titlu cu caption, să pui în celule text îngroșat, linkuri sau imagini și să adaugi liniile cu o regulă de stil.
 
-Primul pas. Un tabel este făcut din rânduri, iar fiecare rând din celule. Tagul table învelește tot tabelul. Tagul tr, de la table row, este un rând. Tagul td, de la table data, este o celulă obișnuită. Numărul de coloane este dat de numărul de celule dintr-un rând, iar toate rândurile trebuie să aibă același număr de celule. Td stă mereu în tr, iar tr stă în table.
+Instrucțiuni noi azi. Table învelește tot tabelul. Tr este un rând, de la table row. Td este o celulă de date, de la table data. Th este o celulă de antet, îngroșată și centrată. Caption este titlul tabelului, scris imediat după deschiderea lui. Liniile se adaugă cu o regulă de stil din head.
 
-Al doilea pas. Antetul. Prima linie spune ce conține fiecare coloană. Pentru ea folosești th, de la table header. Textul din th apare îngroșat și centrat. Folosești th pentru titlurile coloanelor și td pentru date.
+Primul pas. Primul tabel. Un tabel este făcut din rânduri, iar fiecare rând din celule. Numărul de coloane este dat de numărul de celule dintr-un rând, iar toate rândurile trebuie să aibă același număr de celule. Td stă mereu în tr, iar tr stă în table. Un tabel fără stil nu are linii, pentru că H-T-M-L aranjează datele, iar liniile se adaugă separat.
 
-Al treilea pas. Titlul tabelului. Tagul caption se scrie imediat după deschiderea tabelului, înaintea primului rând. Browserul îl afișează deasupra tabelului.
+Al doilea pas. Antetul și titlul. Prima linie spune ce conține fiecare coloană. Pentru ea folosești th, pentru titluri de coloană, și td pentru date. Caption se scrie imediat după deschiderea tabelului, înaintea primului rând, iar browserul îl afișează deasupra tabelului.
 
-Al patrulea pas. Liniile. Un tabel fără stil nu are linii, pentru că H-T-M-L aranjează datele, iar liniile se adaugă cu stil. Copiezi în head o bucată style, cu regula pentru table, th și td: border de un px solid black, border-collapse collapse și padding de șase px. Nu trebuie să o înțelegi acum, o înveți în Modulul trei. Important: o pui în head, nu în body.
+Al treilea pas. Liniile. Copiezi în head o bucată style, cu o regulă pentru table, th și td: un border subțire, negru, border collapse collapse, ca să nu apară linii duble, și puțin padding în celule. Nu trebuie să o înțelegi acum, o înveți în Modulul trei. Important: o pui în head, nu în body.
 
-Al cincilea pas. Ce punem în celule. O celulă poate avea text îngroșat, un link sau o imagine. Linkurile le alegi împreună cu profesorul, iar imaginile sunt desene sau poze aprobate, fără persoane.
+Al patrulea pas. Ce punem în celule. Într-un clasament, tabelul arată locul, jocul și nota, pe coloane, iar un cuvânt îngroșat stă în interiorul celulei. O celulă poate avea și un link sau o imagine. Linkurile le alegi împreună cu un adult, iar imaginile sunt desene sau poze aprobate, fără persoane.
 
-Greșeli frecvente. Ai pus td direct în table. Rândurile au număr diferit de celule. Ai uitat să închizi un tag. Ai pus caption la sfârșit. Ai pus style în body. Ai folosit un tabel doar ca să aranjezi pagina, deși tabelele sunt pentru date.
+Al cincilea pas. Orarul de weekend. Pui totul într-o pagină: titlul, un tabel cu ora, activitatea și locul, apoi un clasament cu trei jocuri. Orarul poate fi despre sport, despre o zi în oraș sau despre jocuri.
 
-Tema. Un tabel cu cărțile tale preferate, cu titlu, autor și nota ta, minimum cinci rânduri.
+De făcut azi. Minim: un tabel de orar cu trei coloane, patru rânduri de date, antet și linii vizibile. Complet: adaugi un titlu cu caption, un al doilea tabel cu clasamentul, un cuvânt îngroșat și o celulă cu link sau imagine.
+
+Bonus. Tabelul înmulțirii. Faci tabelul înmulțirii cu doi, colorezi antetul, faci un tabel cu sporturi și deschizi tabelul în DevTools.
+
+Greșeli frecvente. Ai pus td direct în table. Rândurile au număr diferit de celule. Ai uitat să închizi un tag. Ai pus caption la sfârșit. Ai pus style în body. Ai folosit td pentru titluri. Ai folosit un tabel doar ca să aranjezi pagina, deși tabelele sunt pentru date.
+
+Tema. Un tabel cu cărțile sau filmele tale preferate, cu cel puțin cinci rânduri. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
 
 Recapitulare. Table conține tr, tr conține td și th, caption este titlul. Succes!

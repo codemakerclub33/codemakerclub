@@ -278,7 +278,7 @@ Linkurile către părți din pagină vor derula lin. La **sfârșitul** fișieru
 }
 ```
 
-Dacă omul a cerut mișcare redusă, **oprim** derularea lină și tranzițiile. Poți încerca: în DevTools (F12) → `⋮` → *More tools* → *Rendering* → *Emulate CSS media feature prefers-reduced-motion*.
+Dacă omul a cerut mișcare redusă, **oprim** derularea lină și tranzițiile. Poți încerca: în DevTools (F12; pe Mac Cmd + Option + I) → `⋮` → *More tools* → *Rendering* → *Emulate CSS media feature prefers-reduced-motion*.
 
 ---
 
@@ -328,7 +328,7 @@ window.addEventListener("scroll", function () {
 ```
 
 ### Exercițiul D — Explică cu cuvintele tale
-Pe foaie: de ce folosim variabile CSS pentru culori? De ce este nevoie de `try … catch` la `localStorage`? Ce înseamnă „mișcare redusă” și de ce o respectăm?
+Într-un comentariu din cod: de ce folosim variabile CSS pentru culori? De ce este nevoie de `try … catch` la `localStorage`? Ce înseamnă „mișcare redusă” și de ce o respectăm?
 
 **Gata când:**  
 - [ ] Detaliile merg pe toate paginile  

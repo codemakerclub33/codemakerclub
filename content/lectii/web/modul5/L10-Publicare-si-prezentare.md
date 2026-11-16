@@ -142,7 +142,7 @@ Dacă oricare punct lipsește, **nu publicăm**. Site-ul se prezintă local și 
 
 **Încearcă tu (20 min)**  
 - [ ] Citește tare regulile de siguranță și explică unui coleg de ce fiecare este importantă  
-- [ ] Scrie pe foaie: „Eu aș publica / nu aș publica site-ul meu pentru că …”  
+- [ ] Scrie într-un comentariu: „Eu aș publica / nu aș publica site-ul meu pentru că …”  
 - [ ] Dacă profesorul publică site-uri, urmărește pașii pe proiector, fără să îți faci cont
 
 ---
@@ -169,7 +169,7 @@ Sfaturi:
 - Vorbește către public, nu către ecran.
 
 **Încearcă tu (25 min)**  
-- [ ] Scrie ordinea prezentării pe foaie  
+- [ ] Scrie ordinea prezentării într-un comentariu  
 - [ ] Exersează cu un coleg (3 minute)  
 - [ ] Prezintă în fața grupei sau a profesorului
 
@@ -225,7 +225,7 @@ Autoevaluarea din Exemplul 5, cu un pas concret pentru fiecare „PARȚIAL” sa
 Un coleg spune: „Am pus în subsol numele școlii, imaginile sunt luate de pe internet, iar meniul are linkul `galerie.html` dar fișierul meu se numește `Galerie.HTML`. Vreau să îl public singur, cu contul meu.” Găsește **4 probleme** și spune ce ar trebui să facă colegul.
 
 ### Exercițiul D — Explică cu cuvintele tale
-Pe foaie: ce este un server? De ce publicarea se face cu un adult? De ce nu punem date personale pe un site? Ce înseamnă că un site este „static”?
+Într-un comentariu din cod: ce este un server? De ce publicarea se face cu un adult? De ce nu punem date personale pe un site? Ce înseamnă că un site este „static”?
 
 **Gata când:**  
 - [ ] Ai făcut proiectul și autoevaluarea  

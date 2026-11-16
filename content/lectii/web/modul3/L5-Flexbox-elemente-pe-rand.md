@@ -491,7 +491,7 @@ Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 ```
 
 ### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: care sunt cele două axe ale Flexbox? Care este diferența dintre `justify-content` și `align-items`? Pe ce element se scrie `display: flex;` (părinte sau copii)?
+Într-un comentariu din cod: care sunt cele două axe ale Flexbox? Care este diferența dintre `justify-content` și `align-items`? Pe ce element se scrie `display: flex;` (părinte sau copii)?
 
 **Gata când:**  
 - [ ] Folderul `Prenume_Nume_W3_L5` are `index.html` și `stil.css`  

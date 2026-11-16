@@ -267,7 +267,7 @@ img {
 Folderul `Prenume_Nume_W5` are `index.html`, `galerie.html`, `contact.html` și `stil.css`, cu tot ce este în lista din Exemplul 5.
 
 ### Exercițiul B — Autoevaluare
-Pe foaie: scrie ce înseamnă `header`, `nav`, `main`, `footer`, `lang` și `viewport`.
+Într-un comentariu din cod: scrie ce înseamnă `header`, `nav`, `main`, `footer`, `lang` și `viewport`.
 
 ### Exercițiul C — Găsește greșelile
 Găsește **3 greșeli** în codul de mai jos și repară greșelile:
@@ -282,7 +282,7 @@ Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 ```
 
 ### Exercițiul D — Explică cu cuvintele tale
-Pe foaie: de ce are fiecare pagină alt `<title>`? Ce arată `aria-current="page"`? De ce punem meniul într-o listă?
+Într-un comentariu din cod: de ce are fiecare pagină alt `<title>`? Ce arată `aria-current="page"`? De ce punem meniul într-o listă?
 
 **Gata când:**  
 - [ ] Ai scheletul complet  

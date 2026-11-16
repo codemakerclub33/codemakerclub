@@ -133,7 +133,7 @@ Părțile:
 - `function () { … }`: funcția care **rulează doar când apare evenimentul**, nu imediat;  
 - sfârșitul: `});` — acolada funcției, paranteza lui `addEventListener` și `;`.
 
-Dacă pagina nu se schimbă, deschide consola (F12): apare un mesaj roșu care spune ce nu merge.
+Dacă pagina nu se schimbă, deschide consola (F12; pe Mac Cmd + Option + I): apare un mesaj roșu care spune ce nu merge.
 
 ### Exemplul 4 — Un contor
 
@@ -537,7 +537,7 @@ buton.addEventListener("click", spuneSalut());
 ```
 
 ### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: ce este DOM-ul? Ce face `addEventListener`? De ce folosim `textContent` și nu `innerHTML` pentru text scris de utilizator?
+Într-un comentariu din cod: ce este DOM-ul? Ce face `addEventListener`? De ce folosim `textContent` și nu `innerHTML` pentru text scris de utilizator?
 
 **Gata când:**  
 - [ ] Folderul `Prenume_Nume_W4_L9` are `index.html`, `stil.css` și `script.js`  

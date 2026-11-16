@@ -1,28 +1,17 @@
-# LECȚIA 10 — Proiect: Fișa animalului meu preferat
+# LECȚIA 10 — Mica enciclopedie
+### Reluare: tabele, formulare, media și taguri într-o singură pagină
 **Modulul 2 · HTML II: Pagini mai bogate · 2 ore**  
 **Code Maker Club · HTML Builder**
 
-> Ai învățat tabele, formulare, sunete, filme, hărți și taguri cu înțeles. Azi le pui pe toate într-o singură pagină: **fișa animalului tău preferat**, ca într-o mică enciclopedie.  
-> Proiect: **„Fișa animalului meu preferat”** · folder: `Prenume_Nume_W2_L10` (ex. `Ana_Pop_W2_L10`)
+> Ai ajuns la finalul modulului! Ai învățat tabele, formulare, sunete, filme, hărți și taguri cu înțeles. Azi le pui pe toate într-o singură pagină: o **mică enciclopedie** despre un oraș, un sport sau un joc, ales de tine.  
+> Proiect: **„Mica enciclopedie”** · folder: `Prenume_Nume_W2_L10` (ex. `Ana_Pop_W2_L10`)
 
 ---
 
-## Obiectiv
-La finalul orei ai o pagină completă despre un animal, făcută din taguri cu înțeles, cu text, imagine, tabel, sunet, formular de sondaj și clase pentru aspect.  
-**Minim:** o pagină cu `header`, `nav`, `main` cu cel puțin 3 secțiuni (despre animal, fișă în tabel, sondaj cu formular) și `footer`.  
-**Ținta orei (Complet):** + un sunet sau un film, o hartă a unui loc public, clase (`.carte`) pentru aspect, comentarii, cod indentat și o prezentare de un minut.
+## Ce facem azi
+La final ai o **pagină de enciclopedie** scrisă de tine, cu antet și meniu, o secțiune de prezentare, o fișă în tabel, un sunet, un sondaj cu formular, o hartă și o notă „Știai că…”. Nu învățăm taguri noi: **reiei lecțiile 1–9** și le aduni într-o pagină, folosind tagurile cu înțeles și clasele. Un proiect adevărat te obligă să folosești lucrurile învățate **împreună**: dacă o parte nu merge, vezi imediat. Este și un bun portofoliu, o pagină pe care o poți arăta familiei.
 
-## De ce contează
-Un proiect adevărat te obligă să folosești lucrurile învățate **împreună**: dacă o parte nu merge, vezi imediat. Este și un bun portofoliu: o pagină pe care o poți arăta familiei.
-
----
-
-## Siguranță înainte de toate
-- Alegi **un animal** (nu o persoană).  
-- Nu scrii date personale (nume complet, adresă, școală, telefon).  
-- Imaginile, sunetele și filmele sunt **din pachetul media**, făcute de tine sau alese cu profesorul. Nu folosim melodii și poze luate din internet.  
-- Formularul este **de exercițiu**: nu trimite nimic și nu cere parole sau date reale.  
-- Harta este a unui **loc public** (o grădină zoologică, un parc, un muzeu).
+> **Siguranță înainte de toate:** alegi un **oraș**, un **sport** sau un **joc**, nu o persoană. Nu scrii date personale (nume complet, adresă, telefon). Imaginile, sunetele și filmele sunt **din pachetul media**, făcute de tine sau alese cu un adult; nu folosim melodii și poze luate din internet, iar în poze nu apar persoane. Formularul este **de exercițiu**: nu trimite nimic și nu cere parole sau date reale. Harta este a unui **loc public** (un parc, un muzeu, o piață).
 
 ---
 
@@ -30,13 +19,28 @@ Un proiect adevărat te obligă să folosești lucrurile învățate **împreun�
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Plan: ce animal, ce secțiuni (**Exemplul 1**) |
-| 15–30 | Schelet, stil și antet (**Exemplele 2–3**) |
-| 30–70 | Secțiunile paginii (**Exemplele 4–8**) |
-| 70–90 | Verificare cu lista (**Exemplul 9**) |
-| 90–100 | Test cu un coleg |
-| 100–115 | Prezentare de un minut (**Exemplul 10**) |
-| 115–120 | Recap și temă |
+| 0–10 | Planul: ce subiect, ce secțiuni (**Exemplul 1**) |
+| 10–25 | Schelet, stil, antet și meniu (**Exemplul 2**) |
+| 25–50 | Prezentarea și fișa în tabel (**Exemplele 3–4**) |
+| 50–70 | Sunetul și sondajul (**Exemplele 5–6**) |
+| 70–85 | Harta, nota laterală și finalul (**Exemplul 7**) |
+| 85–118 | Verificare, test cu un coleg și prezentare de un minut (**Exemplul 8**) |
+| 118–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+Azi nu învățăm taguri noi. Reiei ce știi deja, din lecțiile trecute:
+
+| Ce reiei | De unde | Unde apare azi |
+|----------|---------|----------------|
+| Tabel cu `caption`, `thead`, `tbody` | Lecțiile 1–2 | „Fișa în cifre” |
+| Formular cu `label`, `radio`, `textarea`, validare | Lecțiile 3–5 | „Sondaj” |
+| `audio`, `video` | Lecția 6 | „Cum sună” |
+| `iframe` cu hartă | Lecția 7 | „Harta” |
+| `header`, `nav`, `main`, `section`, `aside`, `footer` | Lecția 8 | toată pagina |
+| `div`, `id`, `class` | Lecția 9 | `.carte` și meniul |
 
 ---
 
@@ -44,13 +48,13 @@ Un proiect adevărat te obligă să folosești lucrurile învățate **împreun�
 
 ### Exemplul 1 — Harta paginii
 
-Alege animalul (de exemplu pisica) și desenează pe foaie harta paginii:
+Alege subiectul (de exemplu **un oraș**, **un sport** sau **un joc**) și scrie într-un comentariu harta paginii:
 
 ```text
-header: titlul fișei
+header: titlul enciclopediei
 nav: Despre | Fișa | Sunet | Sondaj | Harta
 main:
-  section "Despre animal"    (text + imagine + curiozități)
+  section "Despre subiect"   (text + imagine + curiozități)
   section "Fișa în cifre"    (tabel)
   section "Cum sună"         (audio / video)
   section "Sondaj"           (formular)
@@ -59,19 +63,19 @@ main:
 footer
 ```
 
-Scrie sub fiecare parte ce vei pune în ea. Alege 3–4 culori care se potrivesc.
+Scrie sub fiecare parte ce vei pune în ea. Alege 3–4 culori care se potrivesc. În exemple folosim orașul **București**; tu înlocuiești cu subiectul tău (pentru un sport sau un joc, harta poate arăta locul unde se joacă, iar sunetul poate fi al mingii sau al jocului).
 
 **Încearcă tu (8 min)**  
-- [ ] Alege animalul și scrie numele animalului pe foaie  
-- [ ] Desenează pe foaie harta paginii, cu tagurile potrivite  
-- [ ] Notează pe foaie 4 lucruri despre animal (ce mănâncă, unde trăiește, cât trăiește, un lucru ciudat)  
+- [ ] Alege subiectul și scrie-l într-un comentariu  
+- [ ] Scrie într-un comentariu harta paginii, cu tagurile potrivite  
+- [ ] Notează într-un comentariu 4 lucruri despre subiect (ce este, unde se găsește, un lucru cunoscut, un lucru ciudat)  
 - [ ] Creează în folderul proiectului folderele `imagini` și `media` și pune în ele fișierele de care ai nevoie  
 
 ---
 
 ## 2. Scheletul, stilul și antetul
 
-### Exemplul 2 — Scheletul cu stil
+### Exemplul 2 — Scheletul cu stil, `header` și `nav`
 
 ```html
 <!DOCTYPE html>
@@ -79,21 +83,48 @@ Scrie sub fiecare parte ce vei pune în ea. Alege 3–4 culori care se potrivesc
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fișa animalului meu: pisica</title>
+  <title>Mica enciclopedie: București</title>
   <style>
     body {
       background-color: lightyellow;
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    header {
+      background-color: navy;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      border-radius: 12px;
     }
     h1 {
-      color: tomato;
+      color: gold;
     }
     h2 {
       color: navy;
     }
+    nav ul {
+      list-style: none;
+      text-align: center;
+      padding: 0;
+    }
+    nav li {
+      display: inline-block;
+      margin: 5px;
+    }
+    nav a {
+      background-color: tomato;
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 20px;
+    }
     .carte {
       border: 2px solid navy;
-      padding: 10px;
-      margin: 10px;
+      border-radius: 12px;
+      padding: 10px 20px;
+      margin: 15px 0;
       background-color: white;
     }
     table, th, td {
@@ -104,77 +135,72 @@ Scrie sub fiecare parte ce vei pune în ea. Alege 3–4 culori care se potrivesc
     th {
       background-color: lightblue;
     }
+    footer {
+      text-align: center;
+      color: gray;
+    }
   </style>
 </head>
 <body>
-  <!-- aici vin părțile paginii -->
+  <header>
+    <h1>București, orașul cu tramvaie</h1>
+    <p>Mica enciclopedie</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#despre">Despre</a></li>
+      <li><a href="#fisa">Fișa</a></li>
+      <li><a href="#sunet">Sunet</a></li>
+      <li><a href="#sondaj">Sondaj</a></li>
+      <li><a href="#harta">Harta</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- secțiunile vin aici -->
+  </main>
+
+  <footer>
+    <p>Pagină făcută de Ana, în anul 2026.</p>
+  </footer>
 </body>
 </html>
 ```
 
-Aici ai deja tot stilul de care ai nevoie: culorile paginii, chenarul cărților (`.carte`) și liniile tabelului.
+Aici ai tot stilul de care ai nevoie: un antet albastru cu titlu auriu, un meniu cu butoane rotunjite, chenarul cărților (`.carte`) și liniile tabelului. Regulile de stil ți le dăm gata: le copiezi, iar în Modulul 3 înveți să le scrii singur. Fiecare link din meniu duce la un `id` pe care îl vei pune pe o secțiune. De aici înainte, exemplele arată ce scrii **în interiorul lui `<main>`**.
 
-### Exemplul 3 — `header` și `nav`
-
-```html
-<header>
-  <h1>Pisica, prietena noastră</h1>
-  <p>Fișa animalului meu preferat</p>
-</header>
-
-<nav>
-  <ul>
-    <li><a href="#despre">Despre</a></li>
-    <li><a href="#fisa">Fișa</a></li>
-    <li><a href="#sunet">Sunet</a></li>
-    <li><a href="#sondaj">Sondaj</a></li>
-    <li><a href="#harta">Harta</a></li>
-  </ul>
-</nav>
-```
-
-Fiecare link duce la un `id` pe care îl vei pune pe secțiuni.
-
-**Gata când:**  
-- [ ] Ai scheletul complet, cu `<style>` în `<head>`  
-- [ ] Ai `header` cu `h1` și `nav` cu linkuri către secțiuni  
-- [ ] Ai alegerea animalului și titlul paginii potrivit  
+**Încearcă tu (7 min)**  
+- [ ] Scrie scheletul complet, cu `<style>` în `<head>`  
+- [ ] Adaugă `header` cu `h1`, `nav` cu cinci linkuri, `main` gol și `footer` (doar prenumele și anul)  
 
 ---
 
 ## 3. Secțiunile paginii
 
-Totul din acest capitol se scrie într-un `<main>`, după `<nav>`. Începe `<main>` așa:
-
-```html
-<main>
-  <!-- secțiunile vin aici -->
-</main>
-```
-
-### Exemplul 4 — „Despre animal”
+### Exemplul 3 — „Despre subiect”
 
 ```html
 <section id="despre" class="carte">
-  <h2>Despre pisică</h2>
+  <h2>Despre București</h2>
   <figure>
-    <img src="imagini/pisica.jpg" alt="O pisică gri care doarme pe o pernă" width="300">
-    <figcaption>O pisică gri.</figcaption>
+    <img src="imagini/oras.jpg" alt="Clădiri și un parc într-un oraș" width="300">
+    <figcaption>Un colț de oraș.</figcaption>
   </figure>
-  <p>Pisica este un animal de companie. Are blană moale, ochi mari și mustăți.</p>
-  <p>Pisicile sunt <strong>carnivore</strong>: mănâncă mai ales carne.</p>
+  <p>București este capitala României. Are străzi mari, parcuri, muzee și tramvaie.</p>
+  <p>Orașul are și un <strong>metrou</strong>, cu care te poți plimba rapid.</p>
 </section>
 ```
 
-Scrie propriul text, cu cuvintele tale. Imaginea trebuie să aibă `alt` care o descrie.
+Scrie propriul text, cu cuvintele tale. Imaginea trebuie să aibă `alt` care o descrie, fără persoane în ea.
 
-### Exemplul 5 — „Fișa în cifre” (tabel)
+### Exemplul 4 — „Fișa în cifre” (tabel)
 
 ```html
 <section id="fisa" class="carte">
   <h2>Fișa în cifre</h2>
   <table>
-    <caption>Pisica domestică</caption>
+    <caption>București pe scurt</caption>
     <thead>
       <tr>
         <th scope="col">Caracteristică</th>
@@ -183,57 +209,57 @@ Scrie propriul text, cu cuvintele tale. Imaginea trebuie să aibă `alt` care o 
     </thead>
     <tbody>
       <tr>
-        <th scope="row">Hrană</th>
-        <td>carne</td>
+        <th scope="row">Țara</th>
+        <td>România</td>
       </tr>
       <tr>
-        <th scope="row">Greutate obișnuită</th>
-        <td>aproximativ 3–5 kg</td>
+        <th scope="row">Rolul</th>
+        <td>capitala țării</td>
       </tr>
       <tr>
-        <th scope="row">Cât trăiește, în casă</th>
-        <td>aproximativ 12–18 ani</td>
+        <th scope="row">Râul din oraș</th>
+        <td>Dâmbovița</td>
       </tr>
       <tr>
-        <th scope="row">Somn</th>
-        <td>aproximativ 12–16 ore pe zi</td>
+        <th scope="row">Metrou</th>
+        <td>da</td>
       </tr>
     </tbody>
   </table>
 </section>
 ```
 
-Pune în tabel date verificate (din cartea de științe sau de la profesor). Dacă nu știi o cifră exactă, scrie „aproximativ”.
+Pune în tabel date verificate (dintr-o carte, dintr-o enciclopedie sau de la un adult). Dacă nu știi o cifră exactă, scrie „aproximativ”. Pentru un sport poți pune: numărul de jucători, durata, echipamentul, locul unde se joacă.
 
-### Exemplul 6 — „Cum sună” (sunet sau film)
+### Exemplul 5 — „Cum sună” (sunet sau film)
 
 ```html
 <section id="sunet" class="carte">
   <h2>Cum sună</h2>
-  <audio src="media/pisica.mp3" controls preload="none"></audio>
-  <p><em>Descriere: sunetul unei pisici care toarce încet.</em></p>
+  <audio src="media/tramvai.mp3" controls preload="none"></audio>
+  <p><em>Descriere: un tramvai care trece pe o stradă liniștită.</em></p>
 </section>
 ```
 
 Fără `autoplay`! Poți pune și un `<video>` cu `controls`, `width` și `poster`. Descrie ce se aude sau se vede.
 
-### Exemplul 7 — „Sondaj” (formular)
+### Exemplul 6 — „Sondaj” (formular)
 
 ```html
 <section id="sondaj" class="carte">
-  <h2>Sondaj: ce animal preferi?</h2>
+  <h2>Sondaj: ce ai vizita?</h2>
   <form>
     <fieldset>
-      <legend>Alege animalul preferat:</legend>
+      <legend>Alege un loc:</legend>
 
-      <input type="radio" id="pisica" name="animal" value="pisica" required>
-      <label for="pisica">Pisică</label><br>
+      <input type="radio" id="muzeu" name="loc" value="muzeu" required>
+      <label for="muzeu">Un muzeu</label><br>
 
-      <input type="radio" id="catel" name="animal" value="catel">
-      <label for="catel">Cățel</label><br>
+      <input type="radio" id="parc" name="loc" value="parc">
+      <label for="parc">Un parc</label><br>
 
-      <input type="radio" id="alt" name="animal" value="alt">
-      <label for="alt">Altul</label>
+      <input type="radio" id="piata" name="loc" value="piata">
+      <label for="piata">O piață</label>
     </fieldset>
 
     <p>
@@ -251,44 +277,35 @@ Fără `autoplay`! Poți pune și un `<video>` cu `controls`, `width` și `poste
 
 Formularul este **de exercițiu**: nu cere date personale. `required` și `maxlength` sunt validare.
 
-### Exemplul 8 — „Știai că” și „Hartă”
+### Exemplul 7 — „Harta”, „Știai că” și finalul
 
 ```html
+<section id="harta" class="carte">
+  <h2>Unde ne plimbăm?</h2>
+  <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=26.07%2C44.42%2C26.12%2C44.45&layer=mapnik"
+          width="500" height="300" title="Harta centrului orașului București" loading="lazy"></iframe>
+</section>
+
 <aside class="carte">
   <h2>Știai că…</h2>
-  <p>Pisicile își petrec o mare parte din zi dormind.</p>
+  <p>Prin București curge râul Dâmbovița.</p>
 </aside>
-
-<section id="harta" class="carte">
-  <h2>Unde putem vedea animale?</h2>
-  <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=26.07%2C44.42%2C26.12%2C44.45&layer=mapnik"
-          width="500" height="300" title="Harta unui loc public din București" loading="lazy"></iframe>
-</section>
 ```
 
-Harta este opțională și se pune **doar cu profesorul**, pentru un loc public.
+Harta se pune **doar împreună cu un adult**, pentru un loc public. Subsolul (`footer`) este deja în schelet, după `</main>`.
 
-Apoi închide pagina cu subsolul, după `</main>`:
-
-```html
-<footer>
-  <p>Pagină făcută de Ana, în anul 2026.</p>
-</footer>
-```
-
-**Gata când:**  
-- [ ] Ai secțiunea „Despre animal” cu text și imagine cu `alt`  
-- [ ] Ai tabelul cu cel puțin 4 rânduri de date verificate, cu `caption`, `thead`, `tbody`  
-- [ ] Ai un sunet sau un film cu `controls` și o descriere  
-- [ ] Ai formularul de sondaj cu `fieldset`, `legend`, `label` și butoane  
-- [ ] Ai `aside` și `footer`  
-- [ ] Meniul duce la fiecare secțiune cu `id` potrivit  
+**Încearcă tu (20 min)**  
+- [ ] Fă secțiunea „Despre” cu text și imagine cu `alt`  
+- [ ] Fă tabelul cu cel puțin 4 rânduri de date verificate, cu `caption`, `thead`, `tbody`  
+- [ ] Adaugă un sunet sau un film cu `controls` și o descriere  
+- [ ] Adaugă formularul de sondaj cu `fieldset`, `legend`, `label` și butoane  
+- [ ] Adaugă harta, `aside` și verifică meniul: fiecare link duce la un `id`  
 
 ---
 
 ## 4. Verificarea
 
-### Exemplul 9 — Lista de verificare
+### Exemplul 8 — Lista de verificare, testul și prezentarea
 
 Pune o bifă doar la ce este **adevărat**:
 
@@ -306,13 +323,9 @@ Pune o bifă doar la ce este **adevărat**:
 
 **Test cu un coleg:** fiecare deschide pagina celuilalt cu Live Server, o parcurge cu meniul și spune **un lucru reușit** și **un lucru de îmbunătățit**. Repară cel puțin un lucru.
 
----
+**Prezentare de un minut:**
 
-## 5. Prezentarea
-
-### Exemplul 10 — Un minut despre fișa ta
-
-1. „Fișa mea este despre …”  
+1. „Enciclopedia mea este despre …”  
 2. „Am folosit … taguri cu înțeles: …”  
 3. „Partea mea preferată este … pentru că …”  
 4. „Cel mai greu lucru a fost … și am rezolvat așa: …”  
@@ -320,36 +333,44 @@ Pune o bifă doar la ce este **adevărat**:
 
 > Dacă ceva nu merge, spune și asta. Nimeni nu are un cod perfect, iar a vorbi despre greșeli face parte din meserie.
 
-**Gata când:**  
+**Încearcă tu (25 min)**  
+- [ ] Parcurge lista de verificare și repară ce nu este bifat  
+- [ ] Fă testul cu un coleg și notează un lucru reușit și unul de îmbunătățit  
+- [ ] Pregătește prezentarea de un minut și prezintă-o  
+
+---
+
+## De făcut azi — „Mica enciclopedie”
+
+### Minim vs Complet
+
+| | Ce trebuie |
+|--|------------|
+| **Minim** | O pagină cu `header`, `nav`, `main` cu cel puțin 3 secțiuni (despre subiect, fișă în tabel, sondaj cu formular) și `footer` |
+| **Complet** | Minim + un sunet sau un film, o hartă a unui loc public, clasa `.carte` pentru aspect, comentarii, cod indentat, lista de verificare bifată și prezentarea de un minut |
+
+### Pasul 1 — Minim
+Fă folderul `Prenume_Nume_W2_L10` cu `index.html` și folderul `imagini`.
+
+- [ ] Pagina are scheletul complet, un `<title>` potrivit și un singur `<h1>`  
+- [ ] Ai `header`, `nav` cu linkuri către secțiuni, `main` și `footer`  
+- [ ] Ai secțiunile „Despre” (cu imagine cu `alt`), „Fișa” (tabel cu `caption` și `thead`) și „Sondaj” (formular cu validare)  
+- [ ] Fiecare secțiune are `id`, iar meniul duce la ea  
+
+### Pasul 2 — Complet
+Adaugi restul și pui ordine în cod:
+
+- [ ] Ai un sunet sau un film cu `controls` și o descriere, într-un folder `media`  
+- [ ] Ai o hartă a unui loc public, cu `title`, și un `aside` „Știai că…”  
+- [ ] Secțiunile folosesc clasa `.carte`, iar codul este indentat și are comentarii  
+- [ ] Ai bifat lista de verificare, ai făcut testul cu un coleg și ai reparat un lucru  
 - [ ] Ai pregătit prezentarea de un minut  
-- [ ] Ai prezentat fișa colegilor sau profesorului  
-- [ ] Ai spus un lucru reușit și un lucru pe care îl vei îmbunătăți  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## Bonus ★★★ — Provocare: Două pagini
+*Doar dacă ai terminat Complet.*
 
-### Exercițiul A — „Fișa animalului meu preferat” (obligatoriu)
-O pagină cu minimum: `header`, `nav`, `main` cu 3 secțiuni (despre, tabel, sondaj), `footer`, imagine cu `alt`, tabel cu `caption` și `thead`, formular cu validare, o clasă `.carte` și `id`-uri pentru meniu.
-
-### Exercițiul B — Autoevaluare
-Pe foaie, pune o notă de la 1 la 5 pentru fiecare: ordinea codului, tagurile cu înțeles, tabelul, formularul, textul scris de tine. Scrie ce vei face mai bine data viitoare.
-
-### Exercițiul C — Fișa greșelilor
-Scrie pe foaie trei greșeli făcute în acest modul și cum ai găsit sau ai reparat fiecare greșeală.
-
-### Exercițiul D — Întrebări pentru Modulul 3
-Scrie două lucruri pe care ai vrea să le schimbi la aspectul paginii (culori, litere, așezarea pe ecran) și pe care crezi că le vei putea face cu CSS.
-
-**Gata când:**  
-- [ ] Folderul `Prenume_Nume_W2_L10` conține `index.html` și folderele `imagini` și `media`  
-- [ ] Ai bifat lista de verificare din Exemplul 9  
-- [ ] Ai făcut autoevaluarea și fișa greșelilor  
-- [ ] Ai prezentat pagina și ai făcut testul cu un coleg  
-
----
-
-## Bonus / Provocare (dacă ai terminat)
 - [ ] Adaugă o a doua pagină, `curiozitati.html`, legată de prima printr-un meniu  
 - [ ] Adaugă un `<video>` cu `poster`, `controls` și `width`  
 - [ ] Adaugă o a doua clasă (`.rara`) și folosește clasa la o secțiune  
@@ -362,7 +383,7 @@ Scrie două lucruri pe care ai vrea să le schimbi la aspectul paginii (culori, 
 2. **Ai pus două `<main>` sau doi `<h1>`**.  
 3. **Ai pus un `id` de două ori**.  
 4. **Ai folosit `div` unde exista un tag cu înțeles**.  
-5. **Cifre luate din memorie, fără verificare** — verifică în carte sau cu profesorul.  
+5. **Date luate din memorie, fără verificare** — verifică într-o carte sau cu un adult.  
 6. **Ai pus sunete sau poze din internet** fără permisiune.  
 7. **Ai uitat `alt`, `caption` sau descrierea sunetului**.  
 8. **Ai pus date personale în pagină sau în formular**.  
@@ -384,7 +405,13 @@ Scrie două lucruri pe care ai vrea să le schimbi la aspectul paginii (culori, 
 - Care este diferența dintre `id` și `class`?
 
 ## Temă
-Alege un lucru de îmbunătățit din feedbackul colegului sau din lista de verificare și repară acel lucru. Notează pe foaie ce ai schimbat. Adu la ora următoare versiunea finală.
+1. Alege **un lucru de îmbunătățit** din feedbackul colegului sau din lista de verificare și corectează acel lucru. Notează într-un comentariu ce ai schimbat. Adu la ora următoare, în folderul `Prenume_Nume_W2_L10`, versiunea finală.  
+2. **Autoevaluare.** Într-un comentariu din cod, pune câte o notă de la 1 la 5 pentru fiecare: ordinea codului, tagurile cu înțeles, tabelul, formularul, textul scris de tine. Scrie ce vei face mai bine data viitoare.  
+3. **Fișa greșelilor.** Scrie într-un comentariu trei greșeli făcute în acest modul și cum ai găsit și cum ai reparat fiecare greșeală.  
+4. **Întrebări pentru Modulul 3.** Scrie două lucruri pe care ai vrea să le schimbi la aspectul paginii (culori, litere, așezarea pe ecran) și pe care crezi că le vei putea face cu CSS.  
+5. **Exemplu pentru acasă.**
+
+**Acasă 1 — O a doua enciclopedie.** Alege alt subiect (un sport sau un joc, dacă prima a fost un oraș) și refă pagina cu același plan. Câte părți poți refolosi fără să le schimbi?
 
 ## Ce urmează — Modulul 3: CSS
 Învățăm să dăm aspect paginilor: culori, litere, spații, așezare pe ecran, animații și pagini care arată bine și pe telefon.
@@ -392,7 +419,8 @@ Alege un lucru de îmbunătățit din feedbackul colegului sau din lista de veri
 ---
 
 ## Răspunsuri
+- **Quiz final de modul:** (1) `colspan` unește celule pe orizontală, pe mai multe coloane; (2) valoarea `for` din `<label>` este la fel cu `id` din `<input>`; (3) `radio` permite o singură alegere dintr-un grup, `checkbox` permite oricâte; (4) `required`; (5) `<audio src="media/sunet.mp3" controls></audio>`; (6) descrie în cuvinte conținutul iframe-ului, pentru cititorul de ecran; (7) `<head>` conține informații invizibile (`title`, `meta`), iar `<header>` este antetul vizibil din `<body>`; (8) `id` este unic și apare o singură dată, `class` este pentru un grup de elemente.  
 - **Evaluare sugerată (25 puncte):** schelet și taguri cu înțeles corecte (4); secțiunea „Despre” cu imagine și `alt` (3); tabel complet și corect (4); sunet sau film cu `controls` și descriere (3); formular cu etichete și validare (4); clasă și `id` folosite corect (3); cod indentat, comentarii și fără erori în Console (2); fără date personale (1); prezentare (1).  
-- **Verificați:** cifrele din tabel (să fie aproximativ corecte), ca la științe; locurile din hartă să fie publice; să nu existe date personale.  
+- **Verificați:** datele din tabel (să fie corecte sau marcate „aproximativ”); locul din hartă să fie public; să nu existe date personale.  
 - **Greșeli frecvente la verificare:** un singur `h1` și `main`, `alt` la imagini, `id` unic, nume de fișiere cu litere mici, fără spații.  
-- **Exercițiul D:** adunați întrebările și folosiți întrebările la începutul Modulului 3.
+- **Tema, punctul 4:** adunați întrebările și folosiți-le la începutul Modulului 3.

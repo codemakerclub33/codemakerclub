@@ -10,7 +10,7 @@ Primul pas: proiectul final. Va avea trei pagini: index punct html, galerie punc
 
 Al doilea pas: subiectul. Scrii titlul, despre ce este site-ul, pentru cine este și ce vrei să vadă lumea. Titlul trebuie să fie scurt și clar.
 
-Al treilea pas: harta site-ului și schițele. Desenezi pe foaie paginile și drumurile dintre ele. Apoi desenezi fiecare pagină cu dreptunghiuri: antet, titlu mare, carduri, subsol. Schița nu trebuie să fie frumoasă, trebuie să arate unde stă fiecare lucru.
+Al treilea pas: harta site-ului și schițele. Scrii într-un comentariu paginile și drumurile dintre ele. Apoi descrii fiecare pagină cu dreptunghiuri scrise ca text: antet, titlu mare, carduri, subsol. Schița nu trebuie să fie frumoasă, trebuie să arate unde stă fiecare lucru.
 
 Al patrulea pas: culorile. Alegi patru culori: principală, accent, fundal și text. Textul închis pe fundal deschis se citește ușor. Butonul trebuie să aibă altă culoare decât fundalul. Folosești cel mult două familii de litere din sistem.
 
@@ -22,6 +22,6 @@ Greșeli frecvente: subiect prea mare, nume de fișiere cu spații, imagini prea
 
 Întrebări de verificare. Ce este o schiță a paginii? De ce numim fișierele g unu punct jpg? Ce este textul alternativ? Ce date nu punem pe site?
 
-Temă. Termină planul pe foaie și arată planul unui adult din familie. Fă o copie de siguranță a folderului.
+Temă. Termină planul într-un comentariu și arată planul unui adult din familie. Fă o copie de siguranță a folderului.
 
 Urmează Lecția doi: scriem scheletul site-ului.

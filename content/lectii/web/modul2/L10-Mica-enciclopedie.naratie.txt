@@ -1,23 +1,27 @@
-Lecția zece din Modulul doi. Proiect: Fișa animalului meu preferat.
+Lecția zece. Mica enciclopedie.
 
-Ai învățat tabele, formulare, sunete, filme, hărți și taguri cu înțeles. Azi le pui pe toate într-o singură pagină: fișa animalului tău preferat, ca într-o mică enciclopedie.
+Ai ajuns la finalul modulului! Ai învățat tabele, formulare, sunete, filme, hărți și taguri cu înțeles. Azi le pui pe toate într-o singură pagină: o mică enciclopedie despre un oraș, un sport sau un joc, ales de tine.
 
-Siguranță. Alegi un animal, nu o persoană. Nu scrii date personale. Imaginile, sunetele și filmele sunt din pachetul media, făcute de tine sau alese cu profesorul. Formularul este de exercițiu și nu cere parole sau date reale. Harta, dacă o pui, este a unui loc public.
+Ce facem azi. La final ai o pagină de enciclopedie scrisă de tine, cu antet și meniu, o secțiune de prezentare, o fișă în tabel, un sunet, un sondaj cu formular, o hartă și o notă știai că. Nu învățăm taguri noi: reiei lecțiile de până acum și le aduni într-o pagină, folosind tagurile cu înțeles și clasele. Un proiect adevărat te obligă să folosești lucrurile învățate împreună: dacă o parte nu merge, vezi imediat. Este și un bun portofoliu, o pagină pe care o poți arăta familiei. Alegi un oraș, un sport sau un joc, nu o persoană. Nu scrii date personale. Imaginile, sunetele și filmele sunt din pachetul media, făcute de tine sau alese cu un adult, fără persoane în poze. Formularul este de exercițiu, nu trimite nimic și nu cere parole sau date reale. Harta este a unui loc public.
 
-Obiectivul. Minim: o pagină cu header, nav, main cu trei secțiuni, despre animal, fișă în tabel și sondaj cu formular, și footer. Complet: în plus un sunet sau un film, o hartă a unui loc public, clase pentru aspect, comentarii, cod indentat și o prezentare de un minut.
+Instrucțiuni noi azi. Azi nu învățăm taguri noi, reiei ce știi. Tabelul, din primele lecții, pentru fișa în cifre. Formularul, din lecțiile despre formulare, pentru sondaj. Audio și video pentru sunet. Iframe pentru hartă. Header, nav, main, section, aside și footer pentru toată pagina. Div, id și class pentru chenare și pentru meniu.
 
-Primul pas. Planul. Alege animalul și desenează pe foaie harta paginii: header, nav, main cu secțiunile, aside și footer. Scrie sub fiecare parte ce pui în ea și alege trei sau patru culori care se potrivesc.
+Primul pas. Planul. Alegi subiectul și scrii într-un comentariu harta paginii: antet, meniu, secțiuni pentru prezentare, fișă, sunet, sondaj și hartă, o notă laterală și final. Scrii sub fiecare parte ce vei pune în ea și alegi trei sau patru culori care se potrivesc.
 
-Al doilea pas. Scheletul. Pui în head un style cu culorile paginii, chenarul cărților, adică clasa carte, și liniile tabelului. În header pui titlul, iar în nav un meniu cu linkuri către secțiuni. Fiecare link duce la un id pus pe o secțiune.
+Al doilea pas. Scheletul, stilul și antetul. Scrii scheletul complet, cu stilul în head: un antet albastru cu titlu auriu, un meniu cu butoane rotunjite, chenarul cărților și liniile tabelului. Regulile de stil sunt date gata, iar în Modulul trei înveți să le scrii singur. Apoi adaugi antetul cu titlul, meniul cu cinci linkuri, un main gol și finalul cu prenumele și anul.
 
-Al treilea pas. Secțiunile. Despre animal: text cu cuvintele tale și o imagine cu alt. Fișa în cifre: un tabel cu caption, thead și tbody. Pune date verificate, iar dacă nu știi o cifră exactă, scrie aproximativ. Cum sună: un audio cu controls și o descriere, fără autoplay. Sondajul: un formular cu fieldset, legend, etichete legate și butoane, cu required și maxlength. Apoi aside cu o curiozitate și footer cu prenumele tău și anul.
+Al treilea pas. Secțiunile paginii. Despre subiect, cu text și imagine cu alt. Fișa în cifre, un tabel cu titlu, antet și date verificate; dacă nu știi o cifră exactă, scrii aproximativ. Cum sună, cu un sunet cu butoane și o descriere, fără pornire automată. Sondajul, un formular cu grup de alegeri, etichete legate, validare și butoane. Harta unui loc public și nota știai că.
 
-Al patrulea pas. Verificarea. Un singur h unu și un singur main. Toate imaginile au alt. Fiecare id este unic. Codul este indentat și are comentarii. În Console nu apare niciun mesaj patru zero patru. Nu există date personale.
+Al patrulea pas. Verificarea. Parcurgi lista: schelet complet, un singur titlu principal, un singur main, alt la toate imaginile, tabel complet, sunet cu descriere, formular cu etichete legate, id unic, cod indentat, fără mesaje de eroare în Console și fără date personale. Apoi testezi pagina cu un coleg: fiecare spune un lucru reușit și un lucru de îmbunătățit. La final, prezinți enciclopedia într-un minut. Dacă ceva nu merge, spune și asta, pentru că nimeni nu are un cod perfect.
 
-Al cincilea pas. Testul cu un coleg. Fiecare parcurge pagina celuilalt cu meniul și spune un lucru reușit și unul de îmbunătățit.
+De făcut azi. Minim: o pagină cu antet, meniu, trei secțiuni și final. Complet: adaugi un sunet sau un film, o hartă, clasa pentru aspect, comentarii, cod indentat, lista bifată și prezentarea de un minut.
 
-Al șaselea pas. Prezentarea de un minut: despre ce este fișa, ce taguri cu înțeles ai folosit, partea preferată, cel mai greu lucru și ce vrei să înveți mai departe. Poți spune și despre o greșeală. Nimeni nu are un cod perfect.
+Bonus. Două pagini. Adaugi o a doua pagină legată prin meniu, un film cu imagine de început, o a doua clasă pentru o secțiune și o notă cu un test de două întrebări.
 
-Tema. Alege un lucru de îmbunătățit din feedback și repară acel lucru.
+Greșeli frecvente. Ai uitat id pe secțiuni. Doi main sau doi titluri principale. Același id de două ori. Div acolo unde exista un tag cu înțeles. Date luate din memorie, fără verificare. Sunete sau poze din internet. Ai uitat alt, titlul tabelului sau descrierea sunetului. Date personale. Ai uitat să salvezi.
 
-Recapitulare. Ai terminat al doilea modul. Felicitări! Urmează Modulul trei, CSS.
+Recapitulare. În Modulul doi ai învățat tabele, formulare, audio și video, iframe, taguri cu înțeles, div, span, id și class. Acum poți construi pagini bogate și bine organizate.
+
+Tema. Alegi un lucru de îmbunătățit și îl repari. Faci o autoevaluare cu note de la unu la cinci. Scrii fișa greșelilor, două lucruri de schimbat cu CSS și, dacă ai timp, refaci pagina cu un alt subiect.
+
+Ce urmează. Modulul trei: CSS. Învățăm să dăm aspect paginilor, cu culori, litere, spații, așezare pe ecran și pagini care arată bine și pe telefon. Succes!

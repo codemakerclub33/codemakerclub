@@ -369,7 +369,7 @@ console.log(patrat());
 ```
 
 ### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: ce este o funcție și de ce o folosim? Care este diferența dintre parametru și argument? Ce diferență este între `console.log` și `return`?
+Într-un comentariu din cod: ce este o funcție și de ce o folosim? Care este diferența dintre parametru și argument? Ce diferență este între `console.log` și `return`?
 
 **Gata când:**  
 - [ ] Folderul `Prenume_Nume_W4_L7` are `index.html` și `script.js`  
@@ -429,4 +429,4 @@ Scrie funcțiile pentru un mini-magazin de jocuri: `pretCuReducere(pret, procent
 - **Exercițiul C:** (1) `function patrat(x) { return x * x; }`; (2) `function esteMajor(varsta) { return varsta >= 18; }`; (3) `function repetaText(text, ori) { return text.repeat(ori); }`.  
 - **Exercițiul D:** (1) funcția `aduna` afișează în loc să returneze (trebuie `return a + b;`); (2) `salut;` nu cheamă funcția (trebuie `salut("Ana");`); (3) `patrat()` fără argument dă `NaN` (trebuie `patrat(4)`).  
 - **Exercițiul E:** funcția este o bucată de cod cu nume, scrisă o dată și folosită de mai multe ori; parametrul este „cutia” din definiție, argumentul este valoarea pe care o dai la apel; `console.log` afișează, `return` dă valoarea înapoi.  
-- **Notă pentru profesor:** pentru parametri și argumente, o analogie bună este „cutia de suc”: parametrul este locul gol, argumentul este sucul care intră. Pentru `return`, folosiți un automat de bomboane: bagi banii (argumentele) și primești bomboana (valoarea returnată). Pentru Exemplul 8, cereți elevilor să aleagă mai întâi pe foaie cele două funcții noi, apoi să le scrie.
+- **Notă pentru profesor:** pentru parametri și argumente, o analogie bună este „cutia de suc”: parametrul este locul gol, argumentul este sucul care intră. Pentru `return`, folosiți un automat de bomboane: bagi banii (argumentele) și primești bomboana (valoarea returnată). Pentru Exemplul 8, cereți elevilor să aleagă mai întâi într-un comentariu cele două funcții noi, apoi să le scrie.

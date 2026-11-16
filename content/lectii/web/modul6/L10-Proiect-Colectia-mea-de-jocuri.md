@@ -508,7 +508,7 @@ Iar în `stil.css` al fiecărui joc, la final:
 Folderul `Prenume_Nume_W6_L10` are pagina principală și jocurile tale, iar totul merge după lista din Exemplul 7.
 
 ### Exercițiul B — O fișă pentru fiecare joc
-Pe o foaie sau într-un fișier text, pentru **fiecare joc**, scrie 2 propoziții: ce idee de programare am folosit (de exemplu: „timp cu `setInterval`”, „gravitație”, „ciocnire cerc–dreptunghi”, „localStorage”) și ce a fost cel mai greu.
+Într-un comentariu sau într-un fișier text, pentru **fiecare joc**, scrie 2 propoziții: ce idee de programare am folosit (de exemplu: „timp cu `setInterval`”, „gravitație”, „ciocnire cerc–dreptunghi”, „localStorage”) și ce a fost cel mai greu.
 
 ### Exercițiul C — Găsește greșelile
 Găsește **3 greșeli** în codurile de mai jos și repară greșelile:

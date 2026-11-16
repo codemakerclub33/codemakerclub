@@ -1,23 +1,25 @@
-Lecția șase din Modulul doi. Audio și video.
+Lecția șase. Sunetele orașului.
 
-Până acum paginile tale se citeau și se priveau. Azi vorbesc și se mișcă: pui în ele sunete și filme scurte, cu butoane de pornire și oprire.
+Până acum paginile tale se citeau și se priveau. Azi vorbesc și se mișcă: pui în ele sunete și filme scurte, cu butoane de pornire și oprire, ca să faci o hartă sonoră a unui oraș.
 
-Fișierele. Sunetele și filmele pentru exerciții le primești de la profesor, într-un pachet media, sau le faci tu, de exemplu înregistrezi cu telefonul sunetul unui animal. Nu punem sunete sau filme cu alți copii sau adulți fără acordul lor și al părinților. Nu folosim melodii luate din internet, pentru că au drepturi de autor.
+Ce facem azi. La final ai o pagină cu sunetele unui oraș: tramvaiul, clopotele și ploaia, fiecare cu poză și buton de pornire, plus un film scurt cu o stradă. Știi să pui un sunet cu audio și un film cu video, să le dai butoane cu controls, să alegi formate potrivite, să ții fișierele într-un folder media și să scrii un text care ajută pe cine nu poate auzi sau vedea. Fișierele mari încetinesc pagina, iar sunetul pornit singur deranjează, de aceea alegi cu grijă. Sunetele și filmele le primești de la un adult sau le faci singur. Nu punem sunete sau filme cu voci sau persoane fără acordul lor și al părinților. Nu folosim melodii luate din internet, pentru că au drepturi de autor. Numele fișierelor au litere mici, fără spații și fără diacritice.
 
-Obiectivul. Minim: o pagină cu un audio și un video, ambele cu butoane. Complet: în plus un tabel cu trei animale și câte un sunet pentru fiecare, imaginea de început pentru film, un text de descriere și fișiere alese cu grijă ca mărime.
+Instrucțiuni noi azi. Audio pune un sunet, iar video pune un film, amândouă cu butoane de la controls. Poster este imaginea care se vede înainte de pornire. Source arată un fișier dintre mai multe formate. Loop repetă, muted înseamnă fără sunet, iar preload alege când se încarcă fișierul.
 
-Primul pas. Tagul audio. Atributul src arată unde este fișierul, iar controls face să apară butoanele: pornire, oprire, volum. Fără controls nu apare nimic. Poți pune mai multe tag-uri source, cu type, iar browserul alege primul pe care îl poate reda. Loop repetă sunetul. Preload cu valoarea none nu încarcă fișierul până nu apeși pornire. Autoplay pornește sunetul singur, dar browserele îl blochează și sunetul deranjează, deci nu îl folosim cu sunet.
+Primul pas. Sunetul. Src arată unde este fișierul, iar controls face să apară butoanele. Fără controls nu apare nimic. Cu mai multe tag-uri source, browserul alege primul fișier pe care îl poate reda. Loop repetă sunetul, iar preload cu valoarea none nu încarcă fișierul până nu apeși pornire. Autoplay cu sunet nu îl folosim, pentru că deranjează. Lăsăm vizitatorul să apese.
 
-Al doilea pas. Tagul video. La fel: src și controls, plus width pentru lățime. Poster este imaginea care se vede înainte să pornească filmul. Un film fără sunet poate avea autoplay, muted și loop, dar folosește asta rar și pune controls ca vizitatorul să poată opri filmul.
+Al doilea pas. Filmul. La video folosim src, controls și width pentru lățime. Poster este imaginea de dinainte de film. Un film fără sunet poate porni singur, cu autoplay și muted, dar folosește asta rar, iar când îl pui, adaugă și controls.
 
-Al treilea pas. Formatele. Pentru sunet, mp3 merge peste tot și este mic. Pentru film, mp4. Wav este foarte mare. Folosește filme și sunete scurte, ca pagina să se încarce repede. Fișierele stau în folderul media, cu nume cu litere mici, fără spații și fără diacritice.
+Al treilea pas. Formate, foldere și text pentru toți. Pentru pagini folosim fișiere scurte, în folderul media. Sub fiecare sunet și film scriem o descriere scurtă, pentru cine nu aude sau nu vede.
 
-Al patrulea pas. Text pentru toți. Nu toți vizitatorii pot auzi sau vedea. Scrie sub sunet și film o descriere scurtă. La filmele cu voce, ajută și un text cu ce se spune.
+Al patrulea pas. Mini-proiect. Un tabel cu antet, cu sunetul fiecărui loc, poza lui cu alt și un buton audio, apoi un film cu poster și o descriere. Dacă nu se aude nimic, verifică volumul, iar în Console, un mesaj patru sute patru arată că fișierul nu a fost găsit.
 
-Dacă nu merge. Verifică numele din src, folderul, controls și volumul. Deschide DevTools, fila Console, iar un mesaj patru zero patru arată că fișierul nu a fost găsit.
+De făcut azi. Minim: o pagină cu un sunet și un film, amândouă cu butoane. Complet: un tabel cu cel puțin trei sunete cu poză, poster la film, descrieri și fișiere scurte, alese cu grijă.
 
-Greșeli frecvente. Nume cu spații sau diacritice. Lipsește controls. Ai folosit autoplay cu sunet. Fișiere foarte mari. Ai luat melodii din internet.
+Bonus. Ghidul sonor. Înregistrezi un sunet fără voci, adaugi subtitrări împreună cu un adult, o coloană cu legende și compari dimensiunile fișierelor în DevTools.
 
-Tema. O pagină cu trei instrumente muzicale preferate, cu câte un sunet.
+Greșeli frecvente. Nume cu spații sau diacritice. Lipsește controls. Fișierul nu este în folderul din src. Autoplay cu sunet. Fișiere foarte mari. Melodii luate din internet. Ai uitat descrierea.
 
-Recapitulare. Audio și video cu controls, poster pentru film, descriere pentru toți. Succes!
+Tema. O pagină cu sunetele sportului preferat. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
+
+Recapitulare. Audio pune sunetul, video pune filmul, controls dă butoane, poster este imaginea de început, iar sunetul nu pornește singur. Succes!

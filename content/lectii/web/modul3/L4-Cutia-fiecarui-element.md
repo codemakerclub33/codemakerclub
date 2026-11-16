@@ -68,7 +68,7 @@ Fiecare element are, de la **interior spre exterior**, patru straturi:
 | `border` | chenarul | cutia cadoului |
 | `margin` | spațiu **în afara** chenarului | spațiul dintre cutii pe raft |
 
-Cel mai bun mod să le vezi: deschide DevTools (**F12**), fila **Elements**, apasă pe un element și privește panoul **Styles**, jos, la desenul colorat al cutiei. Albastrul este conținutul, verdele este `padding`, galbenul este `border`, iar portocaliul este `margin`. Dacă treci cu mouse-ul peste element în DevTools, vezi aceleași culori pe pagină.
+Cel mai bun mod să le vezi: deschide DevTools (**F12**; pe Mac Cmd + Option + I), fila **Elements**, apasă pe un element și privește panoul **Styles**, jos, la desenul colorat al cutiei. Albastrul este conținutul, verdele este `padding`, galbenul este `border`, iar portocaliul este `margin`. Dacă treci cu mouse-ul peste element în DevTools, vezi aceleași culori pe pagină.
 
 ### Exemplul 2 — Lățime și înălțime
 
@@ -454,7 +454,7 @@ Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 ```
 
 ### Exercițiul E — Explică cu cuvintele tale
-Pe foaie: care sunt cele patru straturi ale unei cutii, de la interior spre exterior? Care este diferența dintre `padding` și `margin`? De ce punem `box-sizing: border-box`?
+Într-un comentariu din cod: care sunt cele patru straturi ale unei cutii, de la interior spre exterior? Care este diferența dintre `padding` și `margin`? De ce punem `box-sizing: border-box`?
 
 **Gata când:**  
 - [ ] Folderul `Prenume_Nume_W3_L4` are `index.html` și `stil.css`  
