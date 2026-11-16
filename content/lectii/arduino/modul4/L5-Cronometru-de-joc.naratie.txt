@@ -1,25 +1,35 @@
 Lecția cinci din Modulul patru. Cronometru de joc.
 
-Astăzi construiești un cronometru cu L C D, pornire, oprire, tur și un mod de numărătoare inversă pentru jocuri de societate. Totul cu millis. Proiectul se numește Cronometrul meu. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A patru, linie jos, L zero cinci.
+Astăzi construiești un cronometru cu ecran, pornire, oprire, tur și numărătoare inversă pentru jocuri de societate. Totul cu millis. Proiectul se numește Cronometru de joc. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A patru, linie jos, L zero cinci.
 
-Obiectivul. La final ai un cronometru precis, controlat cu două butoane. Minim: start și stop, cu afișare minute două puncte secunde pe L C D. Complet: minim, plus reset, tur, adică lap, și un mod de numărătoare inversă de treizeci de secunde, cu buzzer.
+Ce facem azi. La final ai două proiecte: un cronometru de joc, cu pornire și oprire, tur, reset și numărătoare inversă de treizeci de secunde cu buzzer, și un cronometru de șah pentru doi jucători, cu câte șaizeci de secunde fiecare. Placa numără timpul, citește butoanele și actualizează ecranul în același timp, fără pauze lungi.
 
-De ce contează. Delay oprește programul. Cu millis, placa poate număra timpul, citi butoane și actualiza ecranul în același timp. Este cea mai importantă tehnică din proiectele mari.
+Instrucțiuni noi azi. Millis minus start arată cât timp a trecut de la un moment notat. Împărțirea întreagă și restul ei transformă milisecundele în minute și secunde. Tipul pentru numere mari, fără minus, este potrivit pentru timp. Cu semnul întrebării și două puncte alegi între două valori, într-o singură linie. O variabilă cu valorile zero, unu și doi ține minte al cui este rândul. Diferența dintre acum și ultima trecere arată cât timp a trecut prin bucla principală.
 
-Primul pas. Conexiuni. L C D-ul este ca în lecția anterioară. Butonul A este la pinul șapte, butonul B la alt pin, iar buzzerul la pinul lui.
+Primul pas. Circuit nou.
 
-Al doilea pas. Ideea. Un cronometru nu numără, ci își amintește momentul de start și calculează diferența. Timpul scurs este millis minus momentul de start.
+Al doilea pas. Conexiuni. Ecranul are pinii obișnuiți, butonul A este la pinul șapte, butonul B la pinul opt, iar buzzerul la pinul treisprezece.
 
-Al treilea pas. Funcția de afișare. Transformi milisecundele în minute, secunde și zecimi. Împarți la o mie pentru secunde, la șaizeci pentru minute și afișezi cu spații după, ca să nu rămână cifre vechi.
+Al treilea pas. Ideea. Un cronometru nu numără, ci își amintește momentul de start și calculează diferența. Când îl oprești, salvezi timpul. Când îl repornești, continui de unde ai rămas.
 
-Al patrulea pas. Minim, start și stop. Butonul A pornește cronometrul și îl oprește. Ții minte momentul de start și timpul acumulat. Când rulează, timpul este acumulat plus millis minus start. La stop, adaugi la acumulat.
+Al patrulea pas. Funcția de afișare transformă milisecundele în minute, secunde și zecimi, cu zero în față când numărul este sub zece.
 
-Al cincilea pas, pentru Complet. Butonul B: dacă cronometrul rulează, face tur și salvează timpul pe rândul de sus. Dacă este oprit, face reset. Ținut apăsat mai mult de o secundă și jumătate, schimbă modul, între cronometru și numărătoare inversă de treizeci de secunde, iar la zero sună buzzerul.
+Al cincilea pas. Minim, pornire și oprire. Variabila acumulat ține timpul strâns în rulările anterioare. La oprire adaugi cât a rulat. La pornire notezi momentul. Timpul afișat este acumulatul plus cât rulează acum.
 
-Greșeli frecvente. Timpul sare: folosești int în loc de unsigned long pentru millis. Pornește de la zero de fiecare dată: nu adaugi la acumulat la stop. Ecranul clipește: clear se face doar la reset. Cifre rămase: lipsesc spațiile după timp. Butonul acționează de mai multe ori: lipsește detectarea momentului apăsării.
+Al șaselea pas, pentru Complet. Tur, reset și numărătoare inversă. Butonul B, apăsat scurt cât rulează, notează turul. Apăsat scurt când este oprit, face reset. Apăsat lung, schimbă modul între cronometru și numărătoare inversă de treizeci de secunde, care sună la final.
 
-Proiectul de azi. Cronometrul meu. Minim înseamnă start și stop. Complet înseamnă reset, tur și numărătoare inversă.
+Al șaptelea pas. Proiectul doi, cronometrul de șah. Doi jucători au câte șaizeci de secunde. Butonul A aparține primului jucător, butonul B celui de-al doilea. Când îți termini mutarea, apeși butonul tău, iar ceasul adversarului pornește. Cine rămâne primul fără timp pierde, iar buzzerul sună. Ținând ambele butoane apăsate, jocul se resetează. Din ceasul fiecărui jucător scazi doar timpul scurs cât a fost rândul lui.
 
-Recapitulare. Millis este ceasul intern și nu blochează. Când rulează, timpul este acumulat plus millis minus start. Unsigned long este pentru timp. Fără delay lung, totul rămâne receptiv.
+Al optulea pas. Testul. Apeși A, iar ceasul celui de-al doilea jucător scade. Apeși A încă o dată și nu se întâmplă nimic. Apeși B și rândul trece la primul jucător. Lași un ceas să ajungă la zero și apare mesajul de final. Ții ambele butoane și jocul se resetează.
 
-Succes cu cronometrul.
+Greșeli frecvente. Timpul sare, pentru că ai folosit tipul obișnuit în loc de cel pentru numere mari. Pornește de fiecare dată de la zero, pentru că nu adaugi la acumulat la oprire. Ecranul clipește, pentru că ștergi ecranul prea des. Rămân cifre vechi, pentru că lipsesc spațiile după timp. Butonul acționează de mai multe ori, pentru că lipsește detecția apăsării. Ambele ceasuri scad, pentru că scazi timpul din amândoi jucătorii. Timpul sare la un număr uriaș, pentru că scăderea poate ieși sub zero. Jocul nu pornește, pentru că ai uitat să notezi momentul în reset.
+
+Proiectul de azi. Cronometru de joc. Minim înseamnă pornire, oprire și afișare cu minute și secunde. Complet înseamnă tur, reset, numărătoare inversă și buzzer. Proiectul doi înseamnă cronometrul de șah pentru doi jucători.
+
+Provocare, trei stele. Avertizare roșie. Adaugi un LED roșu la pinul nouă. Clipește cât timp jucătorul activ are sub zece secunde. Folosești timpul intern, împărțit și cu rest, ca să clipească fără pauze. Verifici că se stinge când rândul trece la celălalt jucător.
+
+Recapitulare. Millis este ceasul intern și nu blochează. Timpul este acumulatul plus cât a trecut de la start. Diferența dintre două treceri prin bucla principală arată cât scazi. Un ceas pentru doi jucători înseamnă o variabilă a rândului și o scădere.
+
+Ce urmează. În lecția șase construiești un oracol cu zar electronic, cu animație, sunet și statistică.
+
+Succes cu timpul.

@@ -329,16 +329,16 @@ export const lectii = [
   ]),
   // Arduino Modul 4 — Proiecte complete
   ...genLectii('m36', [
-    'De la idee la schemă',
-    'Casa inteligentă I',
-    'Casa inteligentă II',
-    'Jocul de reflexe',
+    'Planul de inventator',
+    'Casa inteligentă: lumini și climat',
+    'Casa inteligentă: securitate și acces',
+    'Arena reflexelor',
     'Cronometru de joc',
     'Oracolul cu zar',
-    'Stația meteo a școlii',
+    'Stația meteo de exterior',
     'Robotul care ocolește',
-    'Proiect final: construcția',
-    'Expoziția + verificare finală',
+    'Proiectul final',
+    'Consola de comandă',
   ]),
   // Blender Modul 1 — Primii pași
   ...genLectii('m5', [

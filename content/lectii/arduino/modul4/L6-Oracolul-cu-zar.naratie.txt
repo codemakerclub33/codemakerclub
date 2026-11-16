@@ -1,25 +1,35 @@
 Lecția șase din Modulul patru. Oracolul cu zar.
 
-Astăzi construiești un zar electronic cu șapte LED-uri și un oracol care îți dă răspunsuri pe L C D. Proiectul se numește Oracolul. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A patru, linie jos, L zero șase.
+Astăzi construiești un zar electronic cu șapte LED-uri și un oracol care îți dă răspunsuri pe ecran. Proiectul se numește Oracolul cu zar. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A patru, linie jos, L zero șase.
 
-Obiectivul. La final ai un zar care se rostogolește și un oracol care răspunde la întrebări. Minim: un buton aruncă zarul, iar șapte LED-uri arată fața, de la unu la șase. Complet: minim, plus animație de rostogolire, sunet și L C D cu numărul și un răspuns al oracolului după zar.
+Ce facem azi. La final ai două proiecte: un oracol cu zar, cu șapte LED-uri aranjate ca pe un zar, animație de rostogolire, sunet și un răspuns pe ecran, și o statistică a zarului, care numără fiecare față și afișează la fiecare cinci aruncări care a ieșit cel mai des. Înveți tablouri, adică un rând dintr-un tabel pentru fiecare față, și vezi că probabilitatea se poate măsura.
 
-De ce contează. Zarurile electronice sunt jocuri de probabilitate. Înveți și o tehnică foarte folosită: tablouri de modele, unde fiecare față a zarului este un rând dintr-un tabel.
+Instrucțiuni noi azi. Un tablou cu rânduri și coloane ține câte un rând pentru fiecare față. Un tablou de texte ține răspunsurile oracolului. Random între unu și șapte dă un număr de la unu la șase, pentru că șapte nu intră. O buclă repetă pentru fiecare LED din tablou. Cu plus plus crești contorul feței ieșite. Restul împărțirii la cinci, egal cu zero, este adevărat la fiecare a cincea aruncare.
 
-Primul pas. Dispunerea LED-urilor. Le pui ca pe un zar real: două în stânga sus și dreapta sus, două la mijloc, în stânga și dreapta, unul în centru, și două jos. Le numerotezi de la L zero la L șase.
+Primul pas. Circuit nou.
 
-Al doilea pas. Tabelul fețelor. Fiecare față înseamnă care LED-uri se aprind: unu înseamnă aprins. De exemplu, fața unu aprinde doar LED-ul din centru, iar fața șase aprinde cele șase din margini.
+Al doilea pas. Dispunerea LED-urilor. Pune cele șapte LED-uri ca pe un zar real, fiecare cu rezistorul lui și catodul la GND. Pinii sunt șase, șapte, opt, nouă, zece, A zero și A unu. Butonul este la A doi, buzzerul la pinul treisprezece, iar ecranul are pinii obișnuiți.
 
-Al treilea pas. Minim, zar simplu. Păstrezi pinii LED-urilor într-un tablou, iar butonul la un pin separat. La apăsare alegi un număr cu random de unu până la șapte, adică șapte exclus, și aprinzi LED-urile din tabel pentru acea față.
+Al treilea pas. Tabelul fețelor. Fiecare față arată care LED-uri se aprind.
 
-Al patrulea pas, pentru Complet. Animație: arăți câteva fețe la întâmplare, cu pauze tot mai mari, ca un zar care încetinește. Adaugi sunete. Pe L C D afișezi numărul, iar dintr-un tablou de texte alegi răspunsul oracolului, cu indexul zar minus unu.
+Al patrulea pas. Minim, zar simplu. Rândul zero din tabel este cu toate LED-urile stinse, iar rândurile de la unu la șase sunt fețele. Așa folosești direct numărul zarului, fără să scazi unu.
 
-Al cincilea pas. Fețe corecte? Un test: în setup arăți pentru fiecare față de la unu la șase, câte o jumătate de secundă. Dacă nu seamănă cu un zar, ai o greșeală în tabel sau în fire.
+Al cincilea pas, pentru Complet. Animație, sunet și oracol. Funcția de rostogolire schimbă fața de douăsprezece ori, tot mai încet, cu sunet tot mai ascuțit, ca și cum zarul s-ar opri. Rezultatul final este ales separat, ca animația să nu influențeze zarul. Un tablou de texte alege răspunsul oracolului.
 
-Greșeli frecvente. Aceleași numere la fiecare pornire: lipsește random Seed. Zar cu șapte: ai scris random de unu la opt în loc de unu la șapte. Fețe greșite: LED-urile nu sunt la pinii din tablou. Răspunsul nu se potrivește: indexul zar minus unu este greșit. Prea multe fire: pune rezistoarele pe rând, cu bifă.
+Al șaselea pas. Fețe corecte. Arăți pe rând fiecare față, câte o jumătate de secundă. Dacă nu seamănă cu un zar, ai o greșeală în tabel sau în fire.
 
-Proiectul de azi. Oracolul. Minim înseamnă zar cu șapte LED-uri. Complet înseamnă animație, sunet și oracol.
+Al șaptelea pas. Proiectul doi, statistica zarului. Un zar corect ar trebui să dea fiecare față cam la fel de des. Programul numără de câte ori a ieșit fiecare față și, la fiecare cinci aruncări, arată câte aruncări au fost și care față a ieșit cel mai des. Un tablou cu șapte locuri te lasă să folosești direct numărul zarului. O buclă caută contorul cel mai mare.
 
-Recapitulare. Folosim un tablou de modele pentru fețe. Random cu două numere are maximul exclus. Animația înseamnă pauze tot mai mari. Un tablou de texte dă răspunsurile.
+Al optulea pas. Testul. Arunci zarul de cinci ori și apare statistica. Mai arunci încă de cinci ori și numărul de aruncări crește. Notezi pe hârtie fețele ieșite și verifici dacă se potrivesc cu ecranul.
 
-Succes cu oracolul.
+Greșeli frecvente. Aceleași numere la fiecare pornire, pentru că lipsește initializarea aleatoriului. Zar cu fața șapte, pentru că ai pus limita prea sus. Fețe greșite, pentru că LED-urile nu sunt la pinii din tablou. Răspunsul nu se potrivește, pentru că indexul este greșit. Prea multe fire, așa că pune rezistoarele pe rând. Statistica arată mereu zero, pentru că ai crescut contorul înainte să alegi zarul. Valori ciudate, pentru că tabloul are prea puține locuri. Statistica apare la fiecare aruncare, pentru că lipsește restul împărțirii la cinci.
+
+Proiectul de azi. Oracolul cu zar. Minim înseamnă un buton care aruncă zarul cu șapte LED-uri. Complet înseamnă animație, sunet și răspuns pe ecran. Proiectul doi înseamnă statistica zarului.
+
+Provocare, trei stele. Jackpot la două de șase. Adaugi un LED galben la pinul A patru. Ții minte aruncarea anterioară. Dacă ies doi de șase la rând, LED-ul galben clipește de trei ori și buzzerul sună. Arunci până obții jackpotul și notezi câte aruncări ai avut nevoie.
+
+Recapitulare. Un tablou de modele pentru fețe. Limita de sus a aleatoriului nu intră. Animația înseamnă pauze tot mai mari. Contoarele stau într-un tablou.
+
+Ce urmează. În lecția șapte construiești o stație meteo de exterior, cu temperatură, lumină, grafic și tendință.
+
+Succes cu zarurile.

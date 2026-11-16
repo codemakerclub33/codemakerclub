@@ -1,19 +1,15 @@
-# Lecția 6 — Oracolul cu zar
+# LECȚIA 6 — Oracolul cu zar
+### Tablouri, animație, sunet și statistică
 **Modulul 4 · Proiecte complete**  
 **Code Maker Club · Arduino Creator**
 
 > Azi construiești un **zar electronic** cu 7 LED-uri și un **oracol** care îți dă „răspunsuri” pe LCD.  
-> Proiect: **„Oracolul”** · `Prenume_Nume_A4_L06`
+> Proiect: **„Oracolul cu zar”** · `Prenume_Nume_A4_L06`
 
 ---
 
-## Obiectiv
-La finalul orei ai un zar care „se rostogolește” și un oracol care răspunde la întrebări.  
-**Minim:** buton care aruncă zarul; 7 LED-uri arată fața (1–6).  
-**Complet:** Minim + **animație** de rostogolire + **sunet** + **LCD** cu numărul și un răspuns al oracolului după zar.
-
-## De ce contează
-Zarurile electronice sunt jocuri de **probabilitate**. Înveți și o tehnică foarte folosită: **tablouri de modele** (`array`), unde fiecare față a zarului e un rând dintr-un tabel.
+## Ce facem azi
+La finalul orei ai **două proiecte**: un **oracol cu zar** (7 LED-uri aranjate ca pe un zar, animație de rostogolire, sunet și un răspuns pe LCD) și o **statistică a zarului**, care numără fiecare față și afișează la fiecare 5 aruncări care a ieșit cel mai des. Înveți **tablouri** (un rând din tabel pentru fiecare față) și vezi că probabilitatea se poate **măsura**.
 
 ---
 
@@ -22,12 +18,26 @@ Zarurile electronice sunt jocuri de **probabilitate**. Înveți și o tehnică f
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap L5 · `random` |
-| 10–35 | Montăm cele 7 LED-uri ca pe un zar |
-| 35–70 | Fețele zarului |
-| 70–105 | Animație + oracol |
-| 105–120 | Test, recap, galerie |
+| 10–30 | Montăm cele 7 LED-uri ca pe un zar |
+| 30–55 | **Proiectul 1** · fețele zarului |
+| 55–80 | **Proiectul 1** · animație, sunet și oracol |
+| 80–110 | **Proiectul 2** · statistica zarului |
+| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme |
 
-**Componente azi:** Arduino Uno · Breadboard · 7 × LED · 7 × Resistor 220 Ω · LCD 16 x 2 · Pushbutton · Piezo · fire
+**Componente azi:** Arduino Uno · Breadboard · 7 × LED · 7 × Resistor 220 Ω · LCD 16 x 2 · Pushbutton · Piezo · LED galben + Resistor 220 Ω (doar la Bonus) · fire
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `const byte FETE[7][7]` | Un tablou cu rânduri și coloane (câte un rând pentru fiecare față) | `digitalWrite(LEDURI[i], FETE[fata][i]);` |
+| `const char* RASPUNSURI[6]` | Un tablou de texte | `lcd.print(RASPUNSURI[zar - 1]);` |
+| `random(1, 7)` | Un număr de la 1 la 6 (7 nu intră) | `int zar = random(1, 7);` |
+| `for (int i = 0; i < 7; i++)` | Repetă pentru fiecare LED din tablou | `for (...) pinMode(LEDURI[i], OUTPUT);` |
+| `numarari[zar]++` | Crește cu 1 contorul feței ieșite | `numarari[zar]++;` |
+| `aruncari % 5 == 0` | Adevărat la fiecare a cincea aruncare | `if (aruncari % 5 == 0) arataStatistica();` |
 
 ---
 
@@ -217,6 +227,67 @@ void loop() {
 ### 6) Fețe corecte? (un test)
 La final adaugă în `setup()` un test: pentru fiecare față de la 1 la 6, o arăți 500 ms. Dacă nu seamănă cu un zar, ai o greșeală în tabel sau în fire.
 
+### 7) Proiectul 2 — Statistica zarului
+Un zar corect ar trebui să dea fiecare față cam la fel de des. Hai să verificăm! Programul **numără** de câte ori a ieșit fiecare față și, la fiecare **5 aruncări**, arată pe LCD câte aruncări au fost și care față a ieșit cel mai des. Circuitul rămâne cel de la proiectul 1; adaugi doar cod în programul **Complet**.
+
+**a) Variabile și funcție nouă** (le pui înainte de `setup()`):
+
+```cpp
+int numarari[7];       // numarari[1] ... numarari[6]
+int aruncari = 0;
+
+void arataStatistica() {
+  int maxim = 1;
+  for (int f = 2; f <= 6; f++) {
+    if (numarari[f] > numarari[maxim]) maxim = f;
+  }
+
+  lcd.clear();
+  lcd.print("Aruncari: ");
+  lcd.print(aruncari);
+  lcd.setCursor(0, 1);
+  lcd.print("Mai des: ");
+  lcd.print(maxim);
+  lcd.print(" (");
+  lcd.print(numarari[maxim]);
+  lcd.print("x)");
+}
+```
+
+**b) În `loop()`** înlocuiești `delay(500);` de la sfârșit cu:
+
+```cpp
+    aruncari++;
+    numarari[zar]++;
+    delay(1500);
+
+    if (aruncari % 5 == 0) {
+      arataStatistica();
+      delay(2500);
+    }
+```
+
+- `int numarari[7];` are 7 locuri ca să folosim direct `numarari[zar]` (locul 0 rămâne nefolosit).  
+- Tabloul global pornește cu zerouri, așa că nu trebuie inițializat.  
+- Bucla `for` caută față cu cel mai mare contor.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] După 5 aruncări apare statistica  
+
+### 8) Testul statisticii
+
+| Pas | Ce faci | Ce vezi |
+|-----|---------|---------|
+| 1 | Arunci zarul de 5 ori | Zarul și răspunsul, apoi statistica |
+| 2 | Verifici `Aruncari: 5` | Numărul e corect |
+| 3 | Arunci încă 5 ori | `Aruncari: 10` și față care a ieșit cel mai des |
+| 4 | Notezi pe hârtie fețele ieșite și le numeri | Se potrivește cu ce arată LCD-ul |
+
+**Gata când:**  
+- [ ] Am încercat fiecare pas din listă  
+- [ ] Am notat ce nu a mers și am corectat  
+
 ---
 
 ## Greșeli frecvente
@@ -225,10 +296,13 @@ La final adaugă în `setup()` un test: pentru fiecare față de la 1 la 6, o ar
 3. **Fețe greșite** — LED-urile nu sunt la pinii din `LEDURI[]`.  
 4. **Răspunsul nu se potrivește** — indexul `zar - 1` greșit.  
 5. **Prea multe fire** — pune rezistoarele **pe rând**, cu bifă.
+6. **Statistica arată mereu 0** — ai pus `numarari[zar]++` înainte ca `zar` să fie ales.    
+7. **Programul se blochează sau afișează valori ciudate** — `numarari` are doar 6 locuri; folosește `numarari[7]`.    
+8. **Statistica apare la fiecare aruncare** — lipsește `% 5 == 0`.    
 
 ---
 
-## De făcut azi — „Oracolul”
+## De făcut azi — „Oracolul cu zar”
 
 ### Minim vs Complet
 
@@ -236,6 +310,7 @@ La final adaugă în `setup()` un test: pentru fiecare față de la 1 la 6, o ar
 |--|------------|
 | **Minim** | Buton → zar cu 7 LED-uri |
 | **Complet** | Minim + animație + sunet + LCD cu răspuns |
+| **Proiectul 2** | Statistica zarului: contor pentru fiecare față, afișat la 5 aruncări |
 
 ### Pasul 1 — Minim
 - [ ] 7 LED-uri ca un zar  
@@ -246,17 +321,27 @@ La final adaugă în `setup()` un test: pentru fiecare față de la 1 la 6, o ar
 - [ ] LCD cu zarul și răspunsul  
 - [ ] Numele `A4_L06` e corect
 
+### Pasul 3 — Proiectul 2
+- [ ] `numarari[zar]++` la fiecare aruncare  
+- [ ] La 5 aruncări apare statistica  
+- [ ] Se vede ce față a ieșit cel mai des  
+
 ---
 
-## Bonus
-- [ ] Un **al doilea zar** pe LCD (numerele a două zaruri și suma)  
-- [ ] Contor: de câte ori a ieșit fiecare față, în 20 de aruncări
+## Bonus ★★★ — Jackpot la două de 6
+*Doar dacă ai terminat Proiectul 2.*
 
-## Recapitulare rapidă
+Zarul sărbătorește o serie norocoasă. **Piesă nouă:** un LED galben pe pin **A4** (prin 220 Ω).
+
+- [ ] Ții minte aruncarea anterioară într-o variabilă  
+- [ ] Dacă ies doi de 6 la rând, LED-ul galben clipește de 3 ori și buzzerul sună  
+- [ ] Aruncă zarul până obții jackpotul și notezi câte aruncări ai avut nevoie  
+
+## Recapitulare pe scurt
 1. Tablou de **modele** pentru fețe  
 2. `random(min, max)` — max e **exclus**  
 3. Animație = pauze tot mai mari  
-4. Tablou de texte pentru răspunsuri
+4. Contoare într-un tablou: `numarari[zar]++`  
 
 ## Pe placa reală *(opțional)*
 Un zar „adevărat” ar putea fi pornit prin **scuturare**, cu un senzor de înclinare, ca în Modulul 2 L8.
@@ -265,6 +350,12 @@ Un zar „adevărat” ar putea fi pornit prin **scuturare**, cu un senzor de î
 - Câte valori diferite poate da `random(1, 7)`?  
 - De ce rândul 0 din `FETE` e gol?  
 - Cum ai adăuga al 7-lea răspuns?
+- De ce `numarari` are 7 locuri, deși zarul are 6 fețe?  
 
 ## Temă
-Scrie 6 răspunsuri amuzante pentru oracolul tău (fiecare, maxim 16 caractere).
+Scrie 6 răspunsuri amuzante pentru oracol (fiecare, maxim 16 caractere).
+
+---
+
+## Ce urmează — Lecția 7
+În **lecția 7** construiești o stație meteo de exterior, cu temperatură, lumină, grafic și tendință.

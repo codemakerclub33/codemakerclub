@@ -1,0 +1,43 @@
+Lecția zece din Modulul patru. Consola de comandă.
+
+Astăzi este ultima lecție din cursul de Arduino. Construiești o consolă cu mai multe moduri, îți prezinți proiectul și faci verificarea finală. Proiectul se numește Consola de comandă. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A patru, linie jos, L zero zece.
+
+Ce facem azi. La final ai două proiecte: Consola de comandă, o consolă cu patru moduri, schimbate cu un buton: termometru, zar, reflexe și cronometru, și o consolă cu somn, care adoarme după douăzeci de secunde fără apăsări și se trezește la orice buton. Pui laolaltă piesele din tot modulul: funcții, timpul intern, aleatoriul, senzorul și ecranul. Apoi îți prezinți proiectul și faci verificarea finală a cursului.
+
+Instrucțiuni noi azi. Un tablou ține numele modurilor. Cu restul împărțirii treci la modul următor și, după ultimul, revii la primul. Cu o alegere după valoare faci acțiunea potrivită modului. O funcție desenează titlul modului curent. O variabilă ține minte dacă consola doarme. Cu o ieșire din funcție, restul codului nu se mai execută.
+
+Primul pas. Circuit nou.
+
+Al doilea pas. Conexiuni. Ecranul are pinii obișnuiți. Senzorul de temperatură este la A unu, butonul pentru moduri la pinul opt, butonul de acțiune la pinul nouă, LED-ul la pinul șapte, iar buzzerul la pinul treisprezece.
+
+Al treilea pas. Cum merge consola. Butonul de moduri trece la modul următor: termometru, zar, reflexe, cronometru, apoi iar termometru. Butonul de acțiune aruncă zarul, pornește o rundă de reflexe sau pornește și oprește cronometrul. În modul termometru, LED-ul se aprinde peste treizeci de grade.
+
+Al patrulea pas. Minim, două moduri. Termometru și zar. Titlul se desenează doar când se schimbă modul, iar restul ecranului se actualizează fără ștergeri continue.
+
+Al cincilea pas, pentru Complet. Patru moduri. Adaugi reflexele, cu start greșit și record, și cronometrul, care continuă să meargă și când treci la alt mod, pentru că folosește timpul intern.
+
+Al șaselea pas. Testul consolei. Treci prin toate modurile și revii la început. Arunci zarul de câteva ori. La reflexe apeși prea devreme și apare start greșit, apoi apeși la timp și apare timpul și recordul. Pornești cronometrul, treci la alt mod și te întorci: a mers în tot acest timp.
+
+Al șaptelea pas. Proiectul doi, consola cu somn. După douăzeci de secunde fără apăsări, ecranul arată somn, iar LED-ul clipește lent. Orice buton o trezește, iar apăsarea de trezire nu face nimic altceva. Cronometrul continuă să meargă în somn. Cât timp consola doarme, bucla principală face doar clipirea și așteaptă un buton. Momentul ultimei apăsări se reînnoiește la fiecare apăsare.
+
+Al optulea pas. Testul somnului. Nu atingi nimic douăzeci de secunde și consola doarme. Apeși un buton și se trezește, în același mod. Pornești cronometrul, aștepți somnul, te trezești, iar cronometrul a continuat. Dacă apeși des butoanele, consola nu adoarme niciodată.
+
+Al nouălea pas. Prezentarea de două minute. În primele cincisprezece secunde spui cum se numește proiectul și ce problemă rezolvă. Apoi spui ce piese are și de ce le-ai ales. Urmează demonstrația, în direct. Spui cea mai grea problemă întâlnită și cum ai rezolvat-o. La final spui ce ai îmbunătăți. Prezinți proiectul final din lecția nouă, sau consola de azi dacă nu l-ai terminat. Exersează o dată cu un cronometru. Dacă ceva nu merge, spune calm ce ar fi trebuit să se întâmple. Asta arată că înțelegi.
+
+Al zecelea pas. Foaia de feedback. Pentru două proiecte ale colegilor completezi numele proiectului, ce ți-a plăcut cel mai mult, ce idee ți-a dat și o sugestie prietenoasă. Feedback-ul trebuie să fie politicos, concret și util.
+
+Al unsprezecelea pas. Verificarea finală a cursului. Are zece întrebări, în trei părți: circuite, cod, senzori și afișaje. Fiecare întrebare are un singur răspuns corect. Răspunsurile le verifici abia după ce termini.
+
+Greșeli frecvente. Cronometrul nu merge în alt mod, pentru că folosește pauze în loc de timpul intern. Reflexele dau start greșit imediat, pentru că lipsește așteptarea eliberării butonului. Ecranul clipește, pentru că îl ștergi prea des. Modul sare de două ori, pentru că lipsește detecția apăsării. Consola nu se mai trezește, pentru că ai uitat ieșirea din funcție sau starea de somn. Consola adoarme prea repede, pentru că momentul ultimei apăsări nu se reînnoiește.
+
+Proiectul de azi. Consola de comandă. Minim înseamnă două moduri, termometru și zar. Complet înseamnă reflexe cu record și cronometru. Proiectul doi înseamnă consola cu somn.
+
+Verificare finală a cursului. Poți aprinde un LED și îl controlezi cu un buton. Citești un potențiometru și un senzor. Folosești praguri și decizii. Afișezi date. Comanzi un servo și un motor. Scrii funcții și folosești timpul intern. Planifici, construiești, testezi și prezinți un proiect.
+
+Provocare, trei stele. Pragul reglabil. Adaugi un potențiometru la A zero. Îl transformi într-un prag între douăzeci și patruzeci de grade. LED-ul se aprinde când temperatura depășește pragul, în loc de treizeci de grade. În modul termometru, pe rândul de sus apare pragul curent.
+
+Recapitulare, tot cursul. Modulul unu: circuite de bază, LED-uri, butoane și sunete. Modulul doi: senzori, praguri și fereastra serială. Modulul trei: ecran, servo, motoare, tastatură, bandă de LED-uri și telecomandă. Modulul patru: proiecte complete, planificare și prezentare.
+
+Ce urmează. Cursul s-a terminat. Felicitări, ai terminat Modulul patru și tot cursul de Arduino. Dacă ți-a plăcut robotul, încearcă un robot pe șasiu. Dacă ți-a plăcut casa inteligentă, încearcă module fără fir. Dacă ți-au plăcut senzorii, fă proiecte cu date. Și, bineînțeles, placa reală: tot ce ai făcut în simulator merge și pe un Arduino adevărat, cu mici adaptări.
+
+Succes în continuare.

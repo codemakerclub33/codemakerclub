@@ -1,19 +1,15 @@
-# Lecția 1 — De la idee la schemă
+# LECȚIA 1 — Planul de inventator
+### Idee, piese, tabel de pini și program de test
 **Modulul 4 · Proiecte complete**  
 **Code Maker Club · Arduino Creator**
 
 > Ultimul modul: nu mai copiezi proiecte, le **gândești** tu. Azi înveți cum arată un proiect bine pregătit, **înainte** să pui prima piesă.  
-> Proiect: **„Planul meu de inventator”** · `Prenume_Nume_A4_L01`
+> Proiect: **„Planul de inventator”** · `Prenume_Nume_A4_L01`
 
 ---
 
-## Obiectiv
-La finalul orei ai **planul** unui proiect: idee, listă de piese, tabel de pini și un program de test.  
-**Minim:** o idee clară în 2 propoziții + lista de componente + tabel de pini.  
-**Complet:** Minim + **schema pe hârtie** + **program de test** care verifică, pe rând, fiecare piesă.
-
-## De ce contează
-Inginerii petrec mai mult timp **planificând** decât lipind fire. Un proiect cu plan se termină; unul fără plan se blochează la jumătate și nu mai știi ce fir merge unde.
+## Ce facem azi
+La finalul orei ai **planul** unui proiect: o idee clară în două propoziții, lista de piese, tabelul de pini, schema desenată și un **program de test** care verifică piesele pe rând. Inginerii petrec mai mult timp **planificând** decât lipind fire: un proiect cu plan se termină, unul fără plan se blochează la jumătate și nu mai știi ce fir merge unde.
 
 ---
 
@@ -25,9 +21,21 @@ Inginerii petrec mai mult timp **planificând** decât lipind fire. Un proiect c
 | 15–40 | Alegem ideea |
 | 40–75 | Tabelul de pini și schema |
 | 75–110 | Programul de test |
-| 110–120 | Recap, galerie |
+| 110–120 | Recap, galerie · **Bonus ★★★** pentru cine termină devreme |
 
-**Componente azi:** Arduino Uno · piese după ideea ta (le alegi în lecție)
+**Componente azi:** Arduino Uno · Breadboard · LED + Resistor 220 Ω · Pushbutton · Piezo · piese după ideea ta (le alegi în lecție) · Micro Servo (doar la Bonus) · fire
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| tabelul de pini | Hârtia în care fiecare piesă primește **un pin**, fără conflicte | `TMP36 → A1`, `LED → 7` |
+| `void testLed()` | Câte o funcție de test pentru fiecare piesă | `testLed();` în `setup()` |
+| `Serial.println(...)` | Mesaje care îți spun ce test rulează | `Serial.println("Test LED...");` |
+| `condiție ? text1 : text2` | Alege între două texte, într-o singură linie | `digitalRead(BUTON) == LOW ? "APASAT" : "liber"` |
+| pini **PWM**: 3, 5, 6, 9, 10, 11 | Doar pe ei merge `analogWrite` | `analogWrite(6, 128);` |
 
 ---
 
@@ -56,7 +64,7 @@ Exemple de idei, ca inspirație:
 | Sera automată | umiditate, TMP36, LDR | motor (ventilator), LED, LCD |
 | Garajul inteligent | HC-SR04, buton | servo, LED-uri, buzzer |
 | Lumina de noapte pe hol | LDR, PIR | NeoPixel, buzzer |
-| Casa mea inteligentă | LDR, TMP36, PIR | LCD, servo, motor, LED-uri |
+| Casa inteligentă | LDR, TMP36, PIR | LCD, servo, motor, LED-uri |
 | Sertarul secret | tastatură | servo, LCD |
 
 **Regulă:** proiectul tău trebuie să aibă cel puțin **2 intrări** și **2 ieșiri diferite**. Alege ceva ce poți termina în 4–5 ore în total.
@@ -64,10 +72,10 @@ Exemple de idei, ca inspirație:
 ### 3) Descrierea în 2 propoziții
 Completează:
 
-> **Proiectul meu se numește** ____________.  
+> **Proiectul se numește** ____________.  
 > **Când** ____________ (intrare), **atunci** ____________ (ieșire).
 
-Exemplu: „Sera mea. Când pământul e uscat, se aprinde un LED, iar când e cald pornește ventilatorul.”
+Exemplu: „Sera automată. Când pământul e uscat, se aprinde un LED, iar când e cald pornește ventilatorul.”
 
 ### 4) Lista de componente
 Scrie fiecare piesă și **de câte ori** o ai nevoie:
@@ -157,8 +165,8 @@ void loop() {
 Fiecare piesă are **propria funcție de test**. Adaugi altele (servo, LCD, motor) pe măsură ce le conectezi. Când un test nu merge, știi **exact** unde e problema.
 
 **Gata când:**  
-- [ ] Codul complet se compilează fără erori  
-- [ ] Simularea face tot ce scrie în „Complet”  
+- [ ] Codul de test se compilează fără erori  
+- [ ] Fiecare piesă are propria funcție de test și o vezi rulând  
 
 ---
 
@@ -168,17 +176,19 @@ Fiecare piesă are **propria funcție de test**. Adaugi altele (servo, LCD, moto
 3. **Fără plan** — începi să lipești fire fără tabel.  
 4. **Test omis** — lipești 6 piese, nimic nu merge și nu știi de ce.  
 5. **Prea multe piese** — Arduino Uno are doar 14 pini digitali și 6 analogici.
+6. **Testul nu afișează nimic** — lipsește `Serial.begin(9600)` din `setup()`.    
+7. **Tabelul de pini făcut după ce ai lipit firele** — nu mai e un plan, e doar o poză. Fă-l întâi.  
 
 ---
 
-## De făcut azi — „Planul meu de inventator”
+## De făcut azi — „Planul de inventator”
 
 ### Minim vs Complet
 
 | | Ce trebuie |
 |--|------------|
 | **Minim** | Idee în 2 propoziții + piese + tabel de pini |
-| **Complet** | Minim + schema + program de test |
+| **Complet** | Minim + schema desenată + program de test pe piese |
 
 ### Pasul 1 — Minim
 - [ ] Ideea în 2 propoziții  
@@ -192,15 +202,20 @@ Fiecare piesă are **propria funcție de test**. Adaugi altele (servo, LCD, moto
 
 ---
 
-## Bonus
-- [ ] Un al doilea plan, pentru o idee de rezervă  
-- [ ] Estimează cât timp ți-ar lua fiecare parte (circuit, cod, test)
+## Bonus ★★★ — Programul de test cu servo
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
+Adaugă în planul tău o piesă care se mișcă. **Piesă nouă:** un servo (semnal pe pin 10, roșu la 5V, negru la GND) și funcția `testServo()` în programul de test.
+
+- [ ] `testServo()` mută servo-ul la 0°, 90° și 0°, cu o pauză între ele, și scrie „Test servo...” în Serial Monitor  
+- [ ] Programul de test rulează toate funcțiile, una după alta, și la final scrie „Toate piesele sunt OK”  
+- [ ] Pentru fiecare parte a proiectului (circuit, cod, test) scrii cât timp crezi că îți ia  
+
+## Recapitulare pe scurt
 1. Proiect = intrări + decizie + ieșiri  
-2. Tabelul de pini previne conflicte  
-3. Testezi piesele **pe rând**  
-4. Începe simplu, adaugă apoi
+2. Tabelul de pini previne conflictele  
+3. Testezi piesele **pe rând**, fiecare cu funcția ei  
+4. Începe simplu, adaugă apoi  
 
 ## Pe placa reală *(opțional)*
 La proiectele reale se mai adaugă: sursa de alimentare, cutia (carcasa), lipiturile. Planifică-le din start.
@@ -209,6 +224,13 @@ La proiectele reale se mai adaugă: sursa de alimentare, cutia (carcasa), lipitu
 - Care sunt pinii PWM?  
 - De ce folosim un program de test?  
 - Ce piese ar trebui pentru „un ceas deșteptător”?
+- Care pini pot face PWM?  
+- Ce pini nu-i folosești niciodată pentru piese, și de ce?  
 
 ## Temă
-Alege și **scrie** ideea proiectului tău final (L9) și arată-o unui părinte sau profesorului: se înțelege clar ce face?
+Alege și **scrie** ideea proiectului tău final (lecția 9) și arată-o unui adult: se înțelege clar ce face?
+
+---
+
+## Ce urmează — Lecția 2
+În **lecția 2** construiești prima parte a unei case inteligente: lampă automată, ventilator pe temperatură și un panou cu pagini pe LCD.

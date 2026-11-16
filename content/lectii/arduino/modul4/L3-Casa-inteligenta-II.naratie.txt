@@ -1,25 +1,35 @@
-Lecția trei din Modulul patru. Casă inteligentă, partea a doua: securitate și acces.
+Lecția trei din Modulul patru. Casa inteligentă: securitate și acces.
 
-Astăzi adaugi casei securitate: o alarmă cu P I R și o ușă cu servo. Continui circuitul din lecția anterioară. Proiectul se numește Casa mea doi. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A patru, linie jos, L zero trei.
+Astăzi adaugi casei securitate: o alarmă cu senzor de mișcare și o ușă cu servo. Continui circuitul din lecția anterioară. Proiectul se numește Casa inteligentă: securitate și acces. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A patru, linie jos, L zero trei.
 
-Obiectivul. La final casa ta are lumini, climat și securitate într-un singur program. Minim: alarmă P I R care se armează cu buton, cu sirenă. Complet: minim, plus o ușă cu servo care se deschide la buton, un LED de alarmă și mesaje pe L C D, Armat și Intrus.
+Ce facem azi. La final ai două proiecte: Casa inteligentă, partea a doua, cu alarmă armabilă cu buton, sirenă, ușă cu servo și mesaje pe ecran, în același circuit cu luminile și clima, și o alarmă cu întârziere de ieșire și jurnal de intruziuni, care îți dă cinci secunde să pleci și numără alarmele. Aici înveți să extinzi un proiect existent fără să-l strici: copiezi circuitul, adaugi funcții noi și le chemi din loop.
 
-De ce contează. Aici înveți să extinzi un proiect existent fără să îl strici: copiezi circuitul, adaugi funcții noi și le chemi din loop.
+Instrucțiuni noi azi. O variabilă bool ține minte că alarma s-a declanșat, chiar dacă omul pleacă. Un ton care urcă și coboară, calculat din millis, face sirena. Starea ușii și millis închid ușa după trei secunde, fără delay. O funcție activ răspunde dacă alarma este armată și a trecut întârzierea. Plus plus pe contor crește jurnalul cu unu.
 
-Primul pas. Circuit nou, din copia lecției anterioare. Deschizi circuitul din lecția doi, apeși Duplică și îl redenumești cu numele de azi. Astfel păstrezi partea întâi intactă.
+Primul pas. Circuit nou, din copia lecției doi. Deschizi circuitul din lecția doi, îl duplici și îl redenumești. Așa partea întâi rămâne neatinsă.
 
-Al doilea pas. Piese noi. P I R-ul are semnalul la A doi, alimentarea la cinci volți și GND. Mai adaugi buzzerul pentru sirenă, butonul de armare, servo-ul pentru ușă și LED-ul de alarmă, conform tabelului de pini.
+Al doilea pas. Piese noi. Senzorul de mișcare merge la A doi, butonul de armare la A trei, butonul ușii la pinul nouă, servo-ul ușii la pinul zece, buzzerul la pinul treisprezece, iar LED-ul de alarmă la A patru, cu rezistor. Nu mai atingi pinii deja folosiți.
 
-Al treilea pas. Ce adăugăm la program. Funcția alarma citește butonul de armare și P I R-ul și pornește sirena. Funcția usa mișcă servo-ul. Funcția afișaj arată pe L C D starea alarmei.
+Al treilea pas. Minim. Butonul armează și dezarmează alarma, cu tehnica frontului. Dacă alarma este armată și senzorul vede mișcare, variabila intrus devine adevărată și rămâne așa până dezarmezi. Sirena schimbă tonul după millis.
 
-Al patrulea pas. Codul complet. Lipești funcțiile noi lângă cele din partea întâi. Loop cheamă, pe rând: lampa, climatul, alarma, ușa și afișajul.
+Al patrulea pas. Ce adăugăm la program. Patru funcții noi: alarma, ușa, paginile și mesajul de alarmă.
 
-Al cincilea pas. Test integrat. Noapte și cald: lampa aprinsă și ventilatorul pornit. Alarmă armată și mișcare: sună sirena și pe ecran apare Intrus. Dezarmezi: sirena tace. Apeși butonul ușii: servo-ul o deschide.
+Al cincilea pas, pentru Complet. Codul complet, părțile întâi și a doua împreună. Loop cheamă toate funcțiile, fără delay lung, deci toate sistemele merg în paralel. Ușa folosește aceeași idee ca bariera din Modulul trei: o stare și millis pentru cele trei secunde.
 
-Greșeli frecvente. Merge partea întâi, dar nu partea a doua: ai redenumit circuitul fără să îl duplici. Conflict de pini: două piese pe același pin, deci verifică tabelul. Sirena se aude mereu: variabila intrus nu se resetează la dezarmare. Alarmă fără armare: lipsește armat și în condiție. Programul se blochează: un delay lung într-o funcție.
+Al șaselea pas. Test integrat. Noaptea și cald: lampa aprinsă și ventilatorul pornit. Armezi și miști obiectul: sirenă și mesajul de intrus. Dezarmezi: liniște și LED-ul de alarmă stins. Butonul de pagină schimbă informația de pe ecran. Butonul ușii mută servo-ul la nouăzeci de grade și, după trei secunde, îl readuce.
 
-Proiectul de azi. Casa mea doi. Minim înseamnă alarmă armabilă. Complet înseamnă ușă, LED și mesaje.
+Al șaptelea pas. Proiectul doi, întârziere de ieșire și jurnal. O alarmă adevărată îți dă timp să pleci și ține un jurnal cu alarmele declanșate. Alarma devine activă abia la cinci secunde după armare, iar ecranul arată armare în curs cât timp așteaptă. Contorul de intruziuni crește o singură dată pe alarmă, de aceea condiția verifică și că alarma nu s-a declanșat deja.
 
-Recapitulare. Extinde un proiect existent în pași mici. Funcții separate înseamnă cod ușor de schimbat. Starea sistemului stă în variabile globale. Testează fiecare scenariu.
+Al optulea pas. Testul jurnalului. Armezi și miști imediat obiectul: armare în curs, fără sirenă. Aștepți cinci secunde și miști: sirenă și mesajul de intrus. Dezarmezi, armezi din nou și aștepți: ecranul arată intruziuni unu. După a doua alarmă, jurnalul arată doi.
 
-Succes cu securitatea casei.
+Greșeli frecvente. Merge partea întâi, dar nu partea a doua: ai redenumit circuitul fără să-l duplici. Conflict de pini: două piese pe același pin. Sirena se aude mereu: intrus nu se resetează la dezarmare. Alarmă fără armare: lipsește condiția cu armat. Programul se blochează: un delay lung într-o funcție. Alarma sună imediat după armare: lipsește momentul armării. Jurnalul crește de zeci de ori la o alarmă: lipsește condiția cu intrus.
+
+Proiectul de azi. Casa inteligentă: securitate și acces. Minim înseamnă alarmă cu armare și sirenă. Complet înseamnă ușă cu servo, LED de alarmă și mesaje pe ecran, împreună cu partea întâi. Proiectul doi înseamnă întârziere de ieșire și jurnal de intruziuni.
+
+Provocare, trei stele. Indicator de ușă și lampă la mișcare. Adaugi un LED galben, la A cinci, aprins cât timp ușa este deschisă. Când este întuneric și senzorul vede mișcare, lampa se aprinde și rămâne aprinsă încă zece secunde după ultima mișcare. Partea de securitate merge la fel ca înainte.
+
+Recapitulare. Extinzi un proiect existent în pași mici. Funcțiile separate fac codul ușor de schimbat. Starea sistemului stă în variabile globale. Întârzierea de ieșire înseamnă momentul armării și millis.
+
+Ce urmează. În lecția patru construiești un joc de reflexe: un LED aleator, butoane, runde și scor pe ecran.
+
+Succes cu securitatea.

@@ -1,0 +1,35 @@
+Lecția patru din Modulul patru. Arena reflexelor.
+
+Astăzi construiești un joc: un LED se aprinde la un moment imprevizibil, iar tu trebuie să apeși cât mai repede. Arduino îți măsoară reflexele în milisecunde. Proiectul se numește Arena reflexelor. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A patru, linie jos, L zero patru.
+
+Ce facem azi. La final ai două proiecte: Arena reflexelor, cu un LED care se aprinde la un moment imprevizibil, cinci runde, medie, record și start greșit, și o arenă cu vieți, în care ai trei vieți, limita de timp scade la fiecare rundă reușită și pierzi o viață dacă ești prea lent. Jocurile electronice sunt făcute din aceleași ingrediente: timp, aleatoriu, reguli și scor.
+
+Instrucțiuni noi azi. Random dă un număr aleatoriu între două limite, iar cea de sus nu intră. O funcție poate returna timpul sau un semnal special, minus unu, la start greșit. Continue sare la următoarea repetare, fără să numere runda. Poți lipi un text cu un număr. Un while ține jocul cât timp mai ai vieți. Max alege cea mai mare dintre două valori, ca limita să nu scadă prea jos.
+
+Primul pas. Circuitul nou, cu ecran, LED verde, buton și buzzer.
+
+Al doilea pas. Conexiuni. Ecranul are pinii obișnuiți, LED-ul verde este la pinul șapte, butonul la pinul opt și GND, iar buzzerul la pinul treisprezece.
+
+Al treilea pas. Regulile. Pe ecran apare pregătește-te. După o pauză aleatorie, între o secundă și patru, LED-ul se aprinde. Apeși cât mai repede, iar Arduino afișează timpul de reacție. Dacă apeși înainte să se aprindă LED-ul, apare start greșit.
+
+Al patrulea pas. Minim, o singură rundă. După pauza aleatorie aprinzi LED-ul și notezi momentul cu millis. Aștepți cât timp butonul nu este apăsat, apoi calculezi diferența și o afișezi. Pentru ca aleatoriul să nu fie același la fiecare pornire, folosești random Seed cu un pin liber.
+
+Al cincilea pas, pentru Complet. Cinci runde, start greșit și record. O funcție rulează o rundă și returnează timpul, sau minus unu dacă ai apăsat prea devreme. Runda greșită nu se numără. La final calculezi media și o compari cu recordul păstrat în memorie.
+
+Al șaselea pas. Cum arată reflexele tale. Sub două sute de milisecunde ești super rapid, între două sute și trei sute foarte bun, între trei sute și patru sute cincizeci normal.
+
+Al șaptelea pas. Proiectul doi, arena cu vieți. Ai trei vieți, iar la început ai opt sute de milisecunde să apeși după ce se aprinde LED-ul. După fiecare rundă reușită primești un punct, iar limita scade cu cincizeci de milisecunde, dar nu sub trei sute. Pierzi o viață dacă apeși prea devreme sau dacă nu apeși la timp. Când nu mai ai vieți, jocul se termină și afișează scorul. Funcția de rundă are acum trei rezultate: timpul, minus unu pentru prea devreme sau minus doi pentru prea târziu.
+
+Al optulea pas. Testul arenei. Apeși înainte de LED: start greșit și două vieți. Nu apeși deloc: prea târziu și o viață. Apeși repede: timpul în milisecunde și un punct. Pierzi ultima viață: game over cu scorul.
+
+Greșeli frecvente. Timpul este mereu zero: butonul era deja apăsat, iar așteptarea eliberării rezolvă. Pauza este mereu aceeași: lipsește random Seed. Scorul nu se actualizează: recordul este declarat în loop, nu global. Ecranul clipește: mesajul este apelat prea des. Rundele nu se termină: startul greșit numără ca rundă. Pierzi o viață la fiecare rundă: limita pornește prea mică. Jocul nu se termină niciodată: lipsește scăderea unei vieți dintr-o ramură. Limita ajunge la zero: ai uitat max.
+
+Proiectul de azi. Arena reflexelor. Minim înseamnă o rundă cu timpul afișat. Complet înseamnă start greșit, cinci runde, medie și record. Proiectul doi înseamnă arena cu trei vieți și game over.
+
+Provocare, trei stele. Lumina roșie, nu apăsa. Adaugi un LED roșu, la pinul șase, pe care nu trebuie să apeși. La una din patru runde, aleasă cu random, se aprinde LED-ul roșu în locul celui verde. Dacă apeși când este roșu, pierzi o viață. Dacă aștepți limita fără să apeși, primești un punct. Testezi opt runde și notezi de câte ori a apărut roșul.
+
+Recapitulare. Random și random Seed dau imprevizibilul. Millis măsoară timpul de reacție și limita. O funcție poate returna semnale speciale. Reguli, scor și vieți fac un joc.
+
+Ce urmează. În lecția cinci construiești un cronometru precis, cu ture și numărătoare inversă, și un cronometru de șah pentru doi jucători.
+
+Succes în arenă.

@@ -1,19 +1,15 @@
-# Lecția 9 — Proiect final: construcția
+# LECȚIA 9 — Proiectul final
+### Construcție pe etape, program organizat și plan de teste
 **Modulul 4 · Proiecte complete**  
 **Code Maker Club · Arduino Creator**
 
 > Azi îți construiești **proiectul final**, cel pe care l-ai planificat în Lecția 1. Nu mai e o lecție cu pași: ești **inventator**, iar eu sunt doar ghidul.  
-> Proiect: **proiectul tău** · `Prenume_Nume_A4_L09`
+> Proiect: **„Proiectul final”** · `Prenume_Nume_A4_L09`
 
 ---
 
-## Obiectiv
-La finalul orei proiectul tău **funcționează** (cel puțin varianta de bază) și are un program organizat.  
-**Minim:** circuitul complet + programul care face funcția principală.  
-**Complet:** Minim + **toate cerințele** de mai jos bifate + **plan de teste** completat.
-
-## De ce contează
-Proiectul final arată ce știi să faci **singur**. Nu trebuie să fie uriaș, ci **funcțional**, **organizat** și **explicat**.
+## Ce facem azi
+Azi îți construiești **proiectul final**, cel planificat în lecția 1. La finalul orei proiectul **funcționează** (cel puțin varianta de bază), are un program organizat pe secțiuni și un plan de teste. Proiectul final arată ce știi să faci **singur**: nu trebuie să fie uriaș, ci **funcțional**, **organizat** și **explicat**.
 
 ---
 
@@ -21,13 +17,24 @@ Proiectul final arată ce știi să faci **singur**. Nu trebuie să fie uriaș, 
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recitim planul din L1 |
+| 0–10 | Recitim planul din lecția 1 |
 | 10–45 | Construim circuitul pe etape |
 | 45–90 | Programul, pe funcții |
 | 90–110 | Teste |
-| 110–120 | Pregătim prezentarea de mâine |
+| 110–120 | Recap, galerie · **Bonus ★★★** pentru cine termină devreme · pregătim prezentarea |
 
 **Componente azi:** cele din planul tău
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `enum Stare { LINISTIT, ALERTA };` | Un tip cu nume de stări, în loc de numere | `Stare stare = LINISTIT;` |
+| `bool butonApasat()` | O funcție care răspunde: s-a apăsat acum butonul? | `if (butonApasat()) { ... }` |
+| `stare == ALERTA ? "ALERTA" : "linistit"` | Alege textul potrivit într-o singură linie | `Serial.println(stare == ALERTA ? "ALERTA" : "linistit");` |
+| `// comentariu` | Text pentru oameni, ignorat de placă | `// ===== 1. PINI =====` |
 
 ---
 
@@ -176,7 +183,7 @@ Mergi pe această listă:
 
 ---
 
-## De făcut azi — proiectul final
+## De făcut azi — „Proiectul final”
 
 ### Minim vs Complet
 
@@ -196,15 +203,20 @@ Mergi pe această listă:
 
 ---
 
-## Bonus
-- [ ] O funcție „surpriză” (un efect, un sunet, o glumă pe LCD)  
-- [ ] Scrie un **README** de 5 rânduri: ce face, cum se folosește
+## Bonus ★★★ — O piesă în plus față de plan
+*Doar dacă ai terminat Complet.*
 
-## Recapitulare rapidă
+Proiectul tău primește o surpriză. **Piesă nouă:** alege **o singură** piesă care nu era în plan (un LED, un buzzer, un buton sau un senzor).
+
+- [ ] Conectezi piesa nouă și o testezi singură, într-un program mic  
+- [ ] O adaugi în proiect printr-o funcție nouă (de exemplu un efect, un sunet sau o glumă pe LCD)  
+- [ ] Scrii un **README** de 5 rânduri: ce face proiectul, cum se folosește  
+
+## Recapitulare pe scurt
 1. Planifică, apoi construiește  
 2. O piesă, un test  
 3. Program pe secțiuni: pini, setări, stare, funcții, setup + loop  
-4. Testează inclusiv cazurile ciudate
+4. Testează inclusiv cazurile ciudate  
 
 ## Pe placa reală *(opțional)*
 Pentru un proiect fizic: pune circuitul într-o cutie, etichetează fiecare fir și fă o poză a schemei. Poți continua după curs!
@@ -213,6 +225,12 @@ Pentru un proiect fizic: pune circuitul într-o cutie, etichetează fiecare fir 
 - De ce `setup()` și `loop()` trebuie să fie scurte?  
 - Ce rol are tabelul de teste?  
 - Ce faci prima dată când ceva nu merge?
+- Ce piesă a fost cea mai greu de pus la punct și de ce?  
 
 ## Temă
-Pregătește o prezentare de **2 minute** pentru ora următoare (vezi pașii din L10).
+Pregătește o prezentare de **2 minute** pentru lecția următoare (vezi pașii din lecția 10).
+
+---
+
+## Ce urmează — Lecția 10
+În **lecția 10** prezinți proiectul, vezi proiectele colegilor și faci verificarea finală a cursului.

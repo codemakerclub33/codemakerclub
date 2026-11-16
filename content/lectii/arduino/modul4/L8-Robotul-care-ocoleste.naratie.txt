@@ -1,27 +1,37 @@
 Lecția opt din Modulul patru. Robotul care ocolește.
 
-Astăzi construiești creierul unui robot cu două motoare și un senzor de distanță, care merge singur și ocolește obstacolele. Proiectul se numește Robotul meu. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A patru, linie jos, L zero opt.
+Astăzi construiești creierul unui robot cu două motoare și un senzor de distanță, care merge singur și ocolește obstacolele. Proiectul se numește Robotul care ocolește. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A patru, linie jos, L zero opt.
 
-Obiectivul. La final robotul tău merge înainte și se întoarce când vede un obstacol. Minim: două motoare și un senzor de distanță, iar dacă obstacolul este aproape, robotul se întoarce într-o parte. Complet: minim, plus un servo care se uită în stânga și în dreapta, iar robotul alege partea cu mai mult loc, un buton de pornire și un LED de stare.
+Ce facem azi. La final ai două proiecte: un robot care ocolește obstacolele, cu două motoare, un senzor de distanță și un servo care se uită în stânga și în dreapta și alege partea cu mai mult loc, și un robot cu viteză adaptată, care încetinește când se apropie de un obstacol și își numără ocolirile. Robotul autonom pune cap la cap tot ce știi: simte, decide, acționează.
 
-De ce contează. Robotul autonom pune cap la cap tot ce știi: senzori, decizii, motoare și funcții. Aspiratoarele-robot și mașinile autonome fac exact asta: simt, decid, acționează.
+Instrucțiuni noi azi. Cu analog Write dai motorului o viteză între zero și două sute cincizeci și cinci. Cu pulse In măsori cât durează ecoul, cu o limită de timp. Servo-ul se mută la un unghi. O funcție întoarce servo-ul și măsoară distanța. Cu map transformi distanța într-o viteză. Cu plus plus crești contorul de ocoliri.
 
-Primul pas. Cum merge un robot cu două roți. Fiecare roată are propriul motor. Fără mers înapoi, virezi oprind o singură roată. Dacă oprești roata stângă, robotul virează la stânga. Dacă oprești roata dreaptă, virează la dreapta.
+Primul pas. Circuit nou.
 
-Al doilea pas. Conexiuni. Fiecare motor are un fir la cinci volți, iar celălalt la colectorul unui tranzistor. Emitorul merge la GND, baza la un pin, printr-un rezistor de un kiloohm, iar dioda stă în paralel cu motorul. Motorul din stânga este comandat de pinul cinci, cel din dreapta de pinul șase. Senzorul de distanță și servo-ul au pinii lor din tabel.
+Al doilea pas. Cum merge un robot cu două roți. Fiecare roată are propriul motor. Fără mers înapoi, virezi oprind o singură roată. Dacă oprești roata stângă, robotul virează la stânga. Dacă oprești roata dreaptă, virează la dreapta.
 
-Al treilea pas. Funcții de bază. Scrii funcțiile înainte, stânga, dreapta și oprește. Fiecare pornește sau oprește motoarele potrivite.
+Al treilea pas. Conexiuni. Fiecare motor are un tranzistor, o diodă în paralel și un rezistor de un kiloohm la bază. Motorul din stânga este la pinul cinci, cel din dreapta la pinul șase. Senzorul de distanță are trigger la pinul șapte și echo la pinul opt. Servo-ul este la pinul nouă, butonul de start la pinul doi, iar LED-ul de stare la pinul treisprezece.
 
-Al patrulea pas. Minim, ocolește la douăzeci de centimetri. Măsori distanța. Dacă este mai mare de douăzeci, mergi înainte. Altfel, virezi o parte, un timp, și continui.
+Al patrulea pas. Funcții de bază. Înainte, stânga, dreapta și oprește. Restul programului arată ca niște comenzi simple.
 
-Al cincilea pas, pentru Complet. Robotul se oprește, servo-ul se uită în stânga și măsoară, apoi în dreapta și măsoară. Compari cele două distanțe și alegi direcția cu mai mult loc.
+Al cincilea pas. Minim, ocolește la douăzeci de centimetri. Dacă obstacolul este aproape, robotul virează. Dacă nu vine ecou, considerăm calea liberă, nu un obstacol.
 
-Al șaselea pas. Teste. Cale liberă: ambele motoare merg. Obstacol în față: robotul se oprește și alege o direcție. Perete în stânga: virează dreapta.
+Al șaselea pas, pentru Complet. Robotul se uită și alege. Merge înainte cât timp calea este liberă. Vede un obstacol sub douăzeci de centimetri și se oprește. Servo-ul se uită la stânga și la dreapta și măsoară. Alege partea cu distanța mai mare și virează. Apoi servo-ul revine în față și robotul pornește iar.
 
-Greșeli frecvente. Robotul se învârte mereu: pragul este prea mare sau senzorul vede mereu ceva. Un motor nu merge: tranzistorul sau dioda este greșit conectată. Nu virează: ambele motoare primesc același semnal. Servo-ul tremură: alimentare insuficientă, deci adaugă GND comun. Citiri zero tratate ca obstacol: la lipsa ecoului întoarce o valoare mare, de exemplu patru sute.
+Al șaptelea pas. Teste. Cale liberă, ambele motoare merg. Obstacol în față, motoarele se opresc. Mai mult loc în stânga, virează spre stânga. Butonul pornește și oprește robotul.
 
-Proiectul de azi. Robotul meu. Minim înseamnă ocolire simplă. Complet înseamnă servo care se uită, buton și LED.
+Al optulea pas. Proiectul doi, viteză adaptată și contor de ocoliri. Un robot care merge mereu cu aceeași viteză lovește obstacolele la fel de tare. Acum robotul încetinește când se apropie: la o sută de centimetri sau mai mult merge cu viteza maximă, iar la douăzeci de centimetri merge mai încet. În plus, numără ocolirile și le trimite în fereastra serială. Păstrezi distanța între două limite, ca să primești mereu o viteză bună.
 
-Recapitulare. Robot înseamnă simte, decide, acționează. Virezi oprind o singură roată. Funcții simple: înainte, stânga, dreapta, oprește. Compară distanțele ca să alegi direcția.
+Al nouălea pas. Testul vitezei. Obstacol departe, viteză maximă. Obstacol la șaizeci de centimetri, viteză mai mică. Obstacol la douăzeci și cinci, aproape de viteza minimă. Obstacol la zece centimetri, robotul se oprește, ocolește și numără o ocolire.
+
+Greșeli frecvente. Robotul se învârte mereu, pentru că pragul este prea mare. Un motor nu merge, pentru că tranzistorul sau dioda este conectată greșit. Nu virează, pentru că ambele motoare primesc același semnal. Servo-ul tremură, pentru că alimentarea este insuficientă. Citirile zero sunt tratate ca obstacol, deci trebuie întoarsă o distanță mare. Robotul nu pornește deloc, pentru că viteza minimă este prea mică. Viteza sare haotic, pentru că lipsește limitarea distanței. Contorul crește tot timpul, pentru că este în bucla principală.
+
+Proiectul de azi. Robotul care ocolește. Minim înseamnă că merge, vede obstacolul și virează. Complet înseamnă servo, alegerea direcției și buton. Proiectul doi înseamnă viteză adaptată și contor de ocoliri.
+
+Provocare, trei stele. Robotul gânditor. Adaugi un LED roșu la pinul patru. Se aprinde la începutul ocolirii și se stinge la final. Dacă ambele părți sunt blocate, la mai puțin de cincisprezece centimetri, robotul se învârte mai mult, ca la o întoarcere completă. Testezi cu obstacole pe ambele părți.
+
+Recapitulare. Robot înseamnă simte, decide, acționează. Virezi oprind o singură roată. Funcțiile simple fac programul clar. Limitarea și maparea leagă viteza de distanță.
+
+Ce urmează. În lecția nouă începi proiectul final: alegi ce construiești, faci circuitul și programul de bază.
 
 Succes cu robotul.

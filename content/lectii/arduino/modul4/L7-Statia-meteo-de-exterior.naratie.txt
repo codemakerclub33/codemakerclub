@@ -1,0 +1,37 @@
+Lecția șapte din Modulul patru. Stația meteo de exterior.
+
+Astăzi construiești o stație meteo completă, care înregistrează valorile și le arată pe ecran ca pe un tablou de bord. Proiectul se numește Stația meteo de exterior. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A patru, linie jos, L zero șapte.
+
+Ce facem azi. La final ai două proiecte: o stație meteo de exterior, cu temperatură, lumină, umiditatea solului, istoric, minim, maxim, medie, grafic cu bare și LED de alertă, și o funcție de tendință, care îți spune dacă temperatura se încălzește, se răcește sau este stabilă. Datele valoroase sunt cele adunate în timp. Așa lucrează meteorologii, fermierii și cercetătorii.
+
+Instrucțiuni noi azi. Un tablou ține ultimele zece măsurători. După ultimul loc, poziția revine la zero, prin restul împărțirii. O buclă parcurge toate valorile din istoric. Poți crea un caracter propriu pe ecran. Poți desena un caracter propriu cu numărul lui. O funcție compară cea mai nouă valoare cu cea mai veche.
+
+Primul pas. Circuit nou.
+
+Al doilea pas. Conexiuni. Ecranul are pinii obișnuiți. Senzorul de temperatură este la A unu, fotorezistorul la A zero, cu rezistor de zece kiloohmi, senzorul de sol la A doi, butonul pentru pagini la pinul opt, iar LED-ul de alertă la pinul șapte.
+
+Al treilea pas. Minim, trei pagini. Un buton schimbă pagina: temperatura, lumina și umiditatea solului. Valorile se actualizează la o jumătate de secundă, fără pauze lungi.
+
+Al patrulea pas. Istoricul. Vrem să ținem ultimele zece temperaturi. Când s-au umplut, următoarea o înlocuiește pe cea mai veche. Se numește tablou circular. Un contor ține minte câte valori valide avem.
+
+Al cincilea pas. Statistici. Trei funcții parcurg tabloul și calculează minimul, maximul și media.
+
+Al șaselea pas. Grafic cu bare pe ecran. Definim patru caractere proprii, de la o linie plină până la toate liniile pline. Fiecare este mai înalt decât precedentul.
+
+Al șaptelea pas, pentru Complet. Codul întreg. Măsurătorile intră în istoric la două secunde, iar ecranul se actualizează la o jumătate de secundă. LED-ul de alertă se aprinde peste treizeci de grade.
+
+Al optulea pas. Proiectul doi, tendința. Din istoric aflăm încotro merge temperatura: scădem cea mai veche valoare din cea mai nouă. Dacă diferența este peste jumătate de grad, spunem că se încălzește. Dacă este sub minus jumătate de grad, spunem că se răcește. Altfel, stabil. Programul primește o pagină nouă. Cea mai nouă valoare este ultima scrisă, iar pentru cea mai veche adunăm lungimea tabloului, ca să nu ieșim sub zero.
+
+Al nouălea pas. Testul tendinței. Aștepți douăzeci de secunde cu temperatura neschimbată și apare stabil. Mărești temperatura cu cinci grade și, după câteva măsurători, apare se încălzește. O scazi la loc și apare se răcește.
+
+Greșeli frecvente. Media este ciudată la început, pentru că împarți la lungimea tabloului, nu la numărul de valori. Graficul este gol, pentru că lipsește crearea caracterelor proprii. Poziția iese din tablou, pentru că nu este limitată cu restul împărțirii. Ecranul clipește, pentru că îl ștergi prea des. Valori nerealiste, pentru că lipsește calibrarea senzorilor. Tendința arată mereu stabil, pentru că compari două valori consecutive. Tendința sare la valori uriașe, pentru că poziția a ieșit negativă. Pagina nouă nu apare, pentru că ai uitat numărul de pagini.
+
+Proiectul de azi. Stația meteo de exterior. Minim înseamnă trei senzori și pagini pe ecran. Complet înseamnă istoric, minim, maxim, medie, grafic și alertă. Proiectul doi înseamnă pagina cu tendința.
+
+Provocare, trei stele. Lumina de noapte. Adaugi un LED albastru la pinul nouă. Se aprinde când lumina este sub treizeci la sută și se stinge abia peste patruzeci la sută, ca să nu clipească. Acoperi fotorezistorul cu mâna și verifici cele două praguri.
+
+Recapitulare. Un datalogger înseamnă valori în timp. Tabloul circular folosește restul împărțirii. Minimul, maximul și media sunt funcții. Tendința este valoarea nouă minus valoarea veche.
+
+Ce urmează. În lecția opt construiești un robot care ocolește obstacolele, cu viteză adaptată distanței.
+
+Succes în exterior.

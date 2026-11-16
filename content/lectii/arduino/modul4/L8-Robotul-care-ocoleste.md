@@ -1,19 +1,15 @@
-# Lecția 8 — Robotul care ocolește
+# LECȚIA 8 — Robotul care ocolește
+### Senzor, decizie, motoare și viteză adaptată
 **Modulul 4 · Proiecte complete**  
 **Code Maker Club · Arduino Creator**
 
 > Azi construiești „creierul” unui **robot** cu două motoare și un senzor de distanță, care merge singur și **ocolește obstacolele**.  
-> Proiect: **„Robotul meu”** · `Prenume_Nume_A4_L08`
+> Proiect: **„Robotul care ocolește”** · `Prenume_Nume_A4_L08`
 
 ---
 
-## Obiectiv
-La finalul orei robotul tău merge înainte și se întoarce când vede un obstacol.  
-**Minim:** două motoare + senzor de distanță: dacă obstacolul e aproape, se întoarce într-o parte.  
-**Complet:** Minim + **servo care „se uită”** în stânga și în dreapta și robotul alege **partea cu mai mult loc** + buton de pornire + LED de stare.
-
-## De ce contează
-Robotul autonom pune cap la cap tot ce știi: senzori, decizii, motoare, funcții. Aspiratoarele-robot și mașinile autonome fac exact asta: **simt, decid, acționează**.
+## Ce facem azi
+La finalul orei ai **două proiecte**: un **robot care ocolește obstacolele** (două motoare, un senzor de distanță și un servo care „se uită” în stânga și în dreapta și alege partea cu mai mult loc) și un **robot cu viteză adaptată**, care încetinește când se apropie de un obstacol și își numără ocolirile. Robotul autonom pune cap la cap tot ce știi: **simte**, **decide**, **acționează**.
 
 ---
 
@@ -22,12 +18,26 @@ Robotul autonom pune cap la cap tot ce știi: senzori, decizii, motoare, funcți
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap L7 · ce face un robot |
-| 10–40 | Circuitul: 2 motoare + senzor |
-| 40–70 | Mersul și întoarcerea |
-| 70–105 | Servo care alege direcția |
-| 105–120 | Test, recap, galerie |
+| 10–35 | Circuitul: 2 motoare și senzorul |
+| 35–60 | **Proiectul 1** · mersul și întoarcerea |
+| 60–80 | **Proiectul 1** · servo care alege direcția |
+| 80–110 | **Proiectul 2** · viteză adaptată și contor de ocoliri |
+| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme |
 
-**Componente azi:** Arduino Uno · Breadboard · 2 × DC Motor · 2 × NPN transistor · 2 × Diodă · 2 × Resistor 1 kΩ · HC-SR04 · Micro Servo · Pushbutton · LED · Resistor 220 Ω · fire
+**Componente azi:** Arduino Uno · Breadboard · 2 × DC Motor · 2 × NPN transistor · 2 × Diodă · 2 × Resistor 1 kΩ · HC-SR04 · Micro Servo · Pushbutton · LED · Resistor 220 Ω · LED roșu + Resistor 220 Ω (doar la Bonus) · fire
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `analogWrite(MOTOR_ST, viteza)` | Dă motorului o viteză între 0 și 255 | `analogWrite(MOTOR_ST, 200);` |
+| `pulseIn(ECHO, HIGH, 30000)` | Măsoară cât durează ecoul, cu limită de timp | `long timp = pulseIn(ECHO, HIGH, 30000);` |
+| `cap.write(unghi)` | Mută servo-ul la un unghi | `cap.write(150);` |
+| `float masoaraLa(int unghi)` | Funcție care întoarce servo-ul și măsoară distanța | `float dist = masoaraLa(30);` |
+| `map(cm, PRAG, 100, 120, 255)` | Transformă distanța într-o viteză | `return map(c, PRAG, 100, 120, 255);` |
+| `ocoliri++` | Crește contorul cu 1, o dată la fiecare ocolire | `ocoliri++;` |
 
 ---
 
@@ -289,6 +299,57 @@ void loop() {
 - [ ] Am încercat fiecare situație din listă  
 - [ ] Am notat ce nu a mers și am corectat  
 
+### 8) Proiectul 2 — Viteză adaptată și contor de ocoliri
+Un robot care merge mereu cu aceeași viteză lovește obstacolele la fel de tare. Acum robotul **încetinește** când se apropie: la 100 cm sau mai mult merge cu viteza **255**, iar la 20 cm are doar **120**. În plus, **numără ocolirile** și le trimite în Serial Monitor. Circuitul rămâne cel de la proiectul 1; modifici programul **Complet**.
+
+**a) Variabilă și funcție nouă** (înainte de `ocoleste()`):
+
+```cpp
+int ocoliri = 0;
+
+int vitezaPentru(float cm) {
+  int c = constrain((int)cm, PRAG, 100);
+  return map(c, PRAG, 100, 120, 255);
+}
+```
+
+**b) În `ocoleste()`**, după `opreste();`, adaugi:
+
+```cpp
+  ocoliri++;
+  Serial.print("Ocoliri: ");
+  Serial.println(ocoliri);
+```
+
+**c) În `loop()`**, ramura `else` devine:
+
+```cpp
+    } else {
+      inainte(vitezaPentru(cm));
+    }
+```
+
+- `constrain` păstrează distanța între 20 și 100 cm, ca `map` să dea mereu o viteză între 120 și 255.  
+- Sub 120 motoarele nu pornesc de obicei, de aceea viteza minimă nu e 0.  
+- Contorul ocolirilor se vede în **Serial Monitor**.
+
+**Gata când:**  
+- [ ] Codul se compilează fără erori  
+- [ ] Robotul încetinește când se apropie și Serial Monitor numără ocolirile  
+
+### 9) Testul vitezei
+
+| Pas | Ce faci | Ce vezi |
+|-----|---------|---------|
+| 1 | Obstacol la 150 cm | Viteză maximă |
+| 2 | Muți obstacolul la 60 cm | Viteză mai mică |
+| 3 | Muți obstacolul la 25 cm | Viteză aproape de 120 |
+| 4 | Muți obstacolul la 10 cm | Robotul se oprește și ocolește, `Ocoliri: 1` |
+
+**Gata când:**  
+- [ ] Am încercat fiecare pas din listă  
+- [ ] Am notat ce nu a mers și am corectat  
+
 ---
 
 ## Greșeli frecvente
@@ -297,10 +358,13 @@ void loop() {
 3. **Nu virează** — ambele motoare primesc același semnal.  
 4. **Servo-ul tremură** — alimentare insuficientă; adaugă GND comun.  
 5. **Citiri 0** — tratate ca obstacol; folosește `return 400` la lipsa ecoului.
+6. **Robotul nu pornește deloc** — viteza minimă e prea mică pentru motoare; ridic-o la 120–150.    
+7. **Viteza sare haotic** — lipsește `constrain`, iar `map` primește distanțe în afara intervalului.    
+8. **Contorul crește tot timpul** — `ocoliri++` e în `loop()`, nu în `ocoleste()`.    
 
 ---
 
-## De făcut azi — „Robotul meu”
+## De făcut azi — „Robotul care ocolește”
 
 ### Minim vs Complet
 
@@ -308,6 +372,7 @@ void loop() {
 |--|------------|
 | **Minim** | Merge, vede obstacol, virează |
 | **Complet** | Minim + servo care se uită + alege partea liberă + buton |
+| **Proiectul 2** | Viteză adaptată distanței și contor de ocoliri |
 
 ### Pasul 1 — Minim
 - [ ] 2 motoare cu tranzistoare și diode  
@@ -319,17 +384,27 @@ void loop() {
 - [ ] Buton pornit / oprit  
 - [ ] Numele `A4_L08` e corect
 
+### Pasul 3 — Proiectul 2
+- [ ] `vitezaPentru()` dă 120–255 după distanță  
+- [ ] Robotul încetinește când se apropie  
+- [ ] `ocoliri` se afișează în Serial Monitor  
+
 ---
 
-## Bonus
-- [ ] Dacă ambele părți sunt blocate (sub 15 cm), se învârte **mai mult** timp (întoarcere completă)  
-- [ ] LED roșu care se aprinde când robotul „gândește” (în `ocoleste`)
+## Bonus ★★★ — Robotul gânditor
+*Doar dacă ai terminat Proiectul 2.*
 
-## Recapitulare rapidă
+Robotul arată când „gândește”. **Piesă nouă:** un LED roșu pe pin **4** (prin 220 Ω).
+
+- [ ] LED-ul roșu se aprinde la începutul funcției `ocoleste()` și se stinge la final  
+- [ ] Dacă ambele părți sunt blocate (sub 15 cm), robotul se învârte mai mult, ca la o întoarcere completă  
+- [ ] Testezi cu obstacole pe ambele părți  
+
+## Recapitulare pe scurt
 1. Robot = **simte → decide → acționează**  
 2. Virezi oprind o singură roată  
 3. Funcții simple: `inainte`, `stanga`, `dreapta`, `opreste`  
-4. Compară distanțele ca să alegi direcția
+4. `map` și `constrain` leagă viteza de distanță  
 
 ## Pe placa reală *(opțional)*
 Un robot real are nevoie de **șasiu**, roți, baterii separate pentru motoare și un modul driver (L298N sau L9110) care permite și mersul înapoi. Alimentează motoarele separat de Arduino, cu GND comun.
@@ -338,6 +413,12 @@ Un robot real are nevoie de **șasiu**, roți, baterii separate pentru motoare �
 - Cum virează robotul cu 2 roți?  
 - De ce `return 400` când nu vine ecou?  
 - Ce face robotul dacă ambele părți au aceeași distanță?
+- De ce folosim `constrain` înainte de `map` la viteză?  
 
 ## Temă
-Desenează pe hârtie un labirint simplu și urmărește cum ar trece robotul tău, pas cu pas.
+Desenează pe hârtie un labirint simplu și urmărește cum ar trece robotul prin el, pas cu pas.
+
+---
+
+## Ce urmează — Lecția 9
+În **lecția 9** începi **proiectul final**: alegi ce construiești, faci circuitul și programul de bază.
