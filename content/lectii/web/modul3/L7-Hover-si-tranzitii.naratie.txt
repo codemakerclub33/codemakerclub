@@ -1,27 +1,31 @@
-Lecția șapte. Butoane și cărți vii: hover și tranziții.
+Lecția șapte. Pagina prinde viață: hover și tranziții.
 
-Până acum pagina ta arăta la fel tot timpul. Acum o facem să răspundă: butonul își schimbă culoarea când treci cu mouse ul peste el, cartea se ridică ușor, iar schimbarea se face lin, nu brusc. Cu hover, transition și transform pagina pare vie.
+O pagină care reacționează când treci cu mouse-ul peste ea pare vie. Azi înveți să schimbi culoarea unui link sau să ridici un capitol când îl atingi cu cursorul, și să faci schimbarea lină, nu bruscă. Lucrezi tot pe pagina ta, în același fișier de stil.
 
-Ce facem azi. La final ai o pagină cu butoane care își schimbă culoarea, cărți care se ridică și își măresc umbra, un meniu cu efecte și un tabel cu rânduri colorate alternativ. Efectele mici spun utilizatorului că acolo poate apăsa.
+Ce facem azi. La final linkurile din meniul paginii tale își schimbă culoarea lin când treci peste ele, și când le selectezi cu tastatura, meniul are un submeniu care apare sub link, iar capitolele se ridică ușor și primesc o umbră mai mare. Efectele spun vizitatorului că aici poate apăsa. Folosite cu măsură, fac o pagină plăcută; folosite prea mult, o obosesc.
 
-Instrucțiuni noi azi. Hover, focus și active schimbă stilul după stare: mouse deasupra, selectat, apăsat. Cursor pointer pune mânuța pe tot ce se apasă. Transition face schimbarea lină. Transform mărește, rotește sau mută. Nth child alege elementele după poziție.
+Instrucțiuni noi azi. Hover, focus și active dau stilul după stare: mouse deasupra, selectat cu tastatura, apăsat. Transition face schimbarea lină. Transform translate Y mută un element în sus sau în jos. Position relative și absolute așază submeniul sub link, iar display none îl ascunde.
 
-Primul pas. Hover se scrie după selector, cu două puncte, și se aplică numai cât timp mouse ul este deasupra. Focus înseamnă că elementul este selectat, de exemplu cu tasta Tab. Active înseamnă că îl ții apăsat. Nu scoți niciodată conturul fără să pui altul în loc, pentru că cine folosește tastatura trebuie să vadă unde este.
+Pregătirea. Creezi folderul lecției ca o copie a folderului din lecția trecută. Treci cu mouse-ul peste meniu și capitole și notezi două lucruri care ar trebui să reacționeze.
 
-Al doilea pas. Transition se scrie pe elementul de bază, nu pe hover. Are trei părți: ce proprietate, cât durează și cum merge. Timpul bun este între zero virgulă doi și zero virgulă patru secunde. Transform folosește scale, rotate și translate, într un singur transform, fără să împingă celelalte elemente.
+Primul pas. Stările. Hover se aplică doar cât timp cursorul stă deasupra elementului. Se scrie după selector, fără spațiu. Unii oameni folosesc tastatura, nu mouse-ul, și sar de la link la link cu tasta Tab. Elementul selectat așa are starea focus, deci pui aceleași reguli și la focus, separate prin virgulă.
 
-Al treilea pas. Cartea care se ridică. La hover o muți puțin în sus și îi mărești umbra, iar tranziția face mișcarea lină.
+Al doilea pas. Schimbarea lină. Transition spune ce proprietăți se schimbă lin și cât durează, de obicei între două și patru zecimi de secundă. Îl scrii pe starea normală a elementului, nu pe hover, ca schimbarea să fie lină și la intrare, și la ieșire.
 
-Al patrulea pas. Nth child even alege rândurile pare, iar odd pe cele impare. Rândurile colorate alternativ se citesc mai ușor.
+Al treilea pas. Capitolele care se ridică. Transform translate Y cu minus cinci pixeli urcă elementul, fără să mute restul paginii. Adaugi o umbră mai mare la hover și transition pe starea normală, cu ambele proprietăți.
 
-Al cincilea pas. Meniul cu efecte folosește aceeași regulă pentru hover și focus, deci merge și cu mouse ul, și cu tastatura. Imaginea cu zoom stă într o cutie cu overflow hidden, ca să nu iasă din cadru.
+Al patrulea pas. Apăsat și mai multe proprietăți. Active este starea cât ții clicul apăsat. Mai multe proprietăți în transition se separă prin virgulă. Evită transition all, enumeră proprietățile. Proprietățile se scriu o singură dată pe un element.
 
-De făcut azi. Minim: un buton care își schimbă lin culoarea la hover. Complet: adaugi o carte care se ridică, un meniu cu efecte, un tabel colorat alternativ și explicația de ce nu ascundem lucruri importante în spatele lui hover.
+Al cincilea pas. Submeniul. Piesă nouă de html: o listă mică, pusă în interiorul unui element din meniu, cu linkuri după subiectul tău. Elementului din meniu îi dai position relative, iar submeniului position absolute, top o sută la sută și left zero, ca să stea exact sub link și să plutească deasupra paginii. Apoi îl ascunzi cu display none și îl arăți cu hover pe elementul din meniu. Focus within îl deschide și cu tasta Tab.
 
-Bonus. Articolul tău viu. Pui în pagina cu articolul de pe Wikipedia linkuri cu hover și focus, capitole care se ridică, imagini cu zoom și o listă colorată alternativ.
+Al șaselea pas. Toate la un loc. Pagina despre delfin primește în fișierul de stil o secțiune pentru efecte. Delfinul este modelul tău: tu îți faci pagina cu subiectul tău și cu valorile tale.
 
-Greșeli frecvente. Ai scris transition pe hover. Ai uitat litera s la timp. Ai pus două transform în aceeași regulă. Ai scos conturul de focus. Ai pus informații importante doar la hover. Zoom ul iese din cutie.
+De făcut azi. Minim: pagina ta cu linkurile din meniu care își schimbă culoarea la hover, cu transition. Complet: adaugi focus, capitole care se ridică cu umbră mai mare, active pe meniu, submeniul care apare la hover și verifici cu tasta Tab.
 
-Tema. O pagină cu un meniu, patru cărți, două butoane și un tabel colorat alternativ. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
+Bonus. Rânduri alternative și zoom. Colorezi alternativ rândurile tabelului, colorezi rândul peste care treci, mărești puțin o imagine la hover și încerci starea hover forțată în DevTools. Pe Mac deschizi DevTools cu Command, Option și I.
 
-Recapitulare. Hover, focus și active, tranziții line, transform și nth child. Succes!
+Greșeli frecvente. Ai pus spațiu înainte de hover. Ai uitat litera s la durată. Ai pus transition pe hover în loc de starea normală. Ai scris transition de două ori. Ai uitat unitatea la translate. Ai folosit transition all.
+
+Tema. Termini efectele paginii tale. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
+
+Recapitulare. Hover, focus și active. Transition pe starea normală. Translate Y ridică un element. Efecte blânde. Succes!

@@ -1,29 +1,31 @@
-Lecția opt. Totul în mișcare: animații cu keyframes.
+Lecția opt. Apariții pe rând: animații cu keyframes.
 
-Tranziția din lecția trecută are nevoie de o atingere ca să pornească. O animație pornește singură și poate avea mai mulți pași: un buton care pulsează, o minge care sare, un titlu care apare încet, un cerc care se învârte. Le faci cu keyframes și cu proprietatea animation.
+La tranziție elementul se mișcă doar când ceri tu, cu mouse-ul. O animație pornește singură și poate avea mai mulți pași. Azi faci capitolele paginii tale să apară lin, unul după altul, când se încarcă pagina, și înveți să respecți oamenii care nu vor mișcare pe ecran. Lucrezi tot pe pagina ta, în același fișier de stil.
 
-Ce facem azi. La final ai o pagină cu un titlu care apare lin, rânduri care apar unul după altul, un buton care pulsează, o minge care sare și un cerc care se învârte, plus o regulă care oprește mișcarea pentru cine o dorește oprită. Folosite cu măsură, animațiile ajută. Folosite prea mult sau prea repede, obosesc, de aceea învățăm și regulile de siguranță.
+Ce facem azi. La final capitolele paginii tale apar lin, unul după altul, un cuvânt important pulsează blând, iar în banner un delfin, sau ce alegi tu, înoată încoace și încolo, iar cine nu vrea mișcare nu vede nimic din toate acestea. O animație blândă face pagina plăcută. Una prea mare sau prea rapidă obosește ochii și poate fi chiar supărătoare, de aceea o facem puțină și blândă.
 
-Instrucțiuni noi azi. Keyframes este rețeta animației: ce se schimbă. Animation o pornește pe un element. Animation delay este așteptarea dinainte de pornire. Animation play state paused oprește animația pe loc. Prefers reduced motion oprește mișcarea pentru cine a cerut asta.
+Instrucțiuni noi azi. Keyframes este rețeta animației: ce se schimbă. Animation o pornește pe un element. Animation delay așteaptă înainte de pornire. Infinite alternate repetă mișcarea înainte și înapoi. Opacity spune cât de vizibil este elementul, de la zero la unu. Prefers reduced motion oprește mișcarea la cerere.
 
-Primul pas. O animație are două părți: rețeta și pornirea. În rețetă scrii un nume, apoi from și to. Pornirea pune numele și durata pe un element. Numele trebuie să fie identic în ambele locuri.
+Pregătirea. Creezi folderul lecției ca o copie a folderului din lecția trecută. Reîncarci pagina și notezi ce ai vrea să apară lin la încărcare.
 
-Al doilea pas. Când ai mai multe stări, folosești procente: zero, cincizeci și o sută la sută. Apoi alegi durata, felul mersului, întârzierea, câte repetări, direcția și fill mode. Scurtătura le scrie pe toate într o singură linie. Infinite înseamnă la nesfârșit, iar alternate înseamnă înainte și apoi înapoi.
+Primul pas. Prima animație. Are două părți: rețeta, cu keyframes și un nume ales de tine, și pornirea, cu animation, nume și durată. În rețetă, from este începutul, to este sfârșitul. Opacity zero este invizibil, opacity unu este complet vizibil.
 
-Al treilea pas. Pulsarea unui buton trebuie să fie blândă, de la unu la unu virgulă unu. Săritura unei mingi se face cu translate Y. Animăm mai ales transform și opacity, pentru că se calculează ușor.
+Al doilea pas. Mai mult control. În rețetă poți schimba mai multe lucruri deodată, de exemplu să apară și să urce puțin. Ease face mișcarea să înceapă și să se termine mai încet. Backwards ține elementul în starea de început cât așteaptă.
 
-Al patrulea pas. Rândurile pot apărea unul după altul, cu întârzieri diferite. Both ține elementul invizibil cât așteaptă, ca să nu sară la început. Nth of type numără doar paragrafele.
+Al treilea pas. Una după alta. Animation delay face un capitol să aștepte câteva zecimi de secundă, deci apare după primul. Regula cu diez este mai puternică, așa că schimbă doar întârzierea.
 
-Al cincilea pas. Rotirea. Un cerc cu o latură colorată, rotit la trei sute șaizeci de grade, cu viteză egală, arată ca un indicator de încărcare.
+Al patrulea pas. Mai mulți pași și personajul. În loc de from și to poți scrie procente, cu pași între ele. Infinite repetă animația la nesfârșit, dar doar la mișcări lente, de două secunde sau mai mult. Piesă nouă de html: o emoticoană într un element span, în banner, după fraza ta. Translate X o mută pe orizontală. Elementul are nevoie de display inline block, altfel ignoră mișcarea. Infinite cu alternate o face să meargă înainte și apoi înapoi, lent.
 
-Al șaselea pas. Siguranța. Animation play state paused oprește mingea cât ții mouse ul deasupra. Prefers reduced motion se scrie la sfârșitul fișierului și oprește animațiile pentru cei care au cerut mișcare redusă. Fără licăriri rapide: cel mult trei pe secundă. Animații cu măsură, iar textul care se citește stă nemișcat.
+Al cincilea pas. Respect pentru cel care citește. Unii oameni se simt rău când văd multă mișcare. Regula prefers reduced motion se aplică doar celor care au cerut mai puțină mișcare și oprește animațiile și tranzițiile. O scrii la sfârșitul fișierului. Animația și hover pe același element merg împreună doar cu backwards, iar animation și transition se scriu o singură dată pe un element.
 
-De făcut azi. Minim: un buton care pulsează la infinit. Complet: adaugi un titlu care apare lin, o minge care sare, un cerc care se învârte și regula pentru mișcare redusă.
+Al șaselea pas. Toate la un loc. Pagina despre delfin primește la sfârșitul fișierului de stil secțiunea pentru animații. Delfinul este modelul tău: tu îți faci pagina cu subiectul tău și cu valorile tale.
 
-Bonus. Articolul tău în mișcare. Pui în pagina cu articolul de pe Wikipedia titlul care apare lin, capitolele care apar unul după altul și regula pentru mișcare redusă.
+De făcut azi. Minim: pagina ta cu o animație pornită pe capitole. Complet: adaugi întârzieri între capitole, un personaj care înoată în banner, un cuvânt care pulsează blând, regula pentru mișcare redusă la sfârșit și hover care încă merge.
 
-Greșeli frecvente. Ai scris keyframe fără s. Numele nu coincide. Ai scris durata fără unitate. Ai uitat durata. Ai pus infinite pe tot. Ai uitat regula de mișcare redusă.
+Bonus. Mișcare cu pauză. Oprești pulsarea la hover, schimbi emoticoana și felul mișcării, aduci fișa pe scurt din stânga și te uiți în DevTools la panoul de animații. Pe Mac deschizi DevTools cu Command, Option și I.
 
-Tema. O poveste animată cu titlu, trei rânduri și un personaj care sare. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
+Greșeli frecvente. Numele rețetei nu e la fel în ambele locuri. Ai uitat durata. Ai uitat litera s la durată. Ai scris animation de două ori. Capitolul apare, dispare și apare din nou fără backwards. Hover nu mai merge din cauza lui forwards.
 
-Recapitulare. Rețeta și pornirea, procente, animații blânde și siguranță. Succes!
+Tema. Termini animațiile paginii tale. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
+
+Recapitulare. Rețetă și pornire. Backwards, delay și infinite. Animații blânde și respect pentru mișcare redusă. Succes!

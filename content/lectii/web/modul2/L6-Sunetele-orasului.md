@@ -134,7 +134,7 @@ Acum merge și un singur fișier mp3 în aproape orice browser. Cu mai multe sur
 Dacă filmul nu are sunet și vrei să se repete ca un desen animat în fundal:
 
 ```html
-<video src="media/ploaie.mp4" autoplay muted loop width="400"></video>
+<video src="media/ploaie.mp4" autoplay muted loop controls width="400"></video>
 ```
 
 - `muted` înseamnă fără sunet; browserele permit `autoplay` doar la filme **fără sunet**;  

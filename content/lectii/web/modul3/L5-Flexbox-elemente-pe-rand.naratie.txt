@@ -1,29 +1,33 @@
-Lecția cinci. Clubul animalelor: meniu și carduri pe rând, cu Flexbox.
+Lecția cinci. Meniul pe un rând: Flexbox și elementele pe rând.
 
-Până acum cutiile tale stăteau una sub alta. Cu Flexbox le așezi una lângă alta, le distanțezi, le centrezi și le lași să treacă pe rândul următor când nu mai încap. Flexbox este unealta cu care se fac meniurile și rândurile de carduri de pe aproape orice site.
+Până acum, elementele pe care le-ai pus în pagină stau una sub alta. Cu Flexbox le poți așeza pe un rând, le poți centra și le poți distanța. Azi îl folosim ca să transformi lista de linkuri din meniu într-un meniu orizontal. Lucrezi tot pe pagina ta, în același fișier de stil.
 
-Ce facem azi. La final ai o pagină cu un antet, cu logo în stânga și meniu în dreapta, un rând de carduri care trec pe rândul următor când fereastra se micșorează și un subsol centrat. Cu Flexbox faci în două rânduri ceea ce înainte cerea trucuri, iar rezultatul se adaptează singur.
+Ce facem azi. La final pagina ta are un meniu orizontal, cu butoane pe un rând, centrate, cu spațiu între ele și care trec pe rândul următor când ecranul e îngust, și un subsol centrat. Aproape toate paginile de pe internet au un meniu pe un rând, iar Flexbox este cea mai simplă metodă să-l faci.
 
-Instrucțiuni noi azi. Display flex pe părinte pune copiii pe un rând. Flex direction alege direcția. Justify content și align items așază elementele pe cele două axe. Gap pune spațiu între elemente, iar flex wrap le lasă să treacă pe rândul următor. Flex unu unu două sute cincizeci de pixeli face carduri care se adaptează.
+Instrucțiuni noi azi. Display flex pune copiii pe un rând, pe părinte. Flex direction alege direcția. Justify content și align items așază elementele pe cele două axe. Gap pune spațiu între elemente, flex wrap lasă elementele să treacă pe rândul următor, iar flex unu dă unui element tot spațiul rămas.
 
-Primul pas. Display flex se scrie pe părinte, nu pe copii. Cutiile din el se așază una lângă alta. Direcția poate fi row sau column. Din direcție rezultă două axe: cea principală și cea secundară, perpendiculară pe ea.
+Pregătirea. Creezi folderul lecției ca o copie a folderului din lecția trecută. Te uiți la meniu și notezi cum ai vrea să arate.
 
-Al doilea pas. Justify content spune cum împarți spațiul rămas pe axa principală: la început, la mijloc, la sfârșit sau distanțat. Align items lucrează pe cealaltă axă. Ca să centrezi un element pe ambele axe, folosești amândouă cu center, iar containerul are nevoie de o înălțime.
+Primul pas. Un rând. Meniul este o listă. Pui display flex pe lista din meniu, nu pe elementele ei, și scoți bulinele cu list style none. Margin zero și padding zero scot spațiul pe care browserul îl pune la o listă. Regula se scrie pe părinte.
 
-Al treilea pas. Gap pune spațiu între elemente fără margin. Flex wrap wrap lasă elementele să treacă pe rândul următor. Micșorează fereastra și vezi cum cad cutiile.
+Al doilea pas. Direcția și axele. Row pune elementele pe rând, column una sub alta. Axa principală este direcția elementelor, iar axa secundară este perpendiculară.
 
-Al patrulea pas. Flex unu împarte spațiul rămas în mod egal. Un element cu flex doi ia de două ori mai mult.
+Al treilea pas. Așezarea. Justify content lucrează pe axa principală și poate fi început, mijloc, sfârșit sau space between. Align items lucrează pe axa secundară și are nevoie de un container mai înalt decât elementele. Justify content center cu align items center pune un element exact la mijloc. Așa centrezi subsolul.
 
-Al cincilea pas. Meniul. O listă cu display flex, fără buline, fără margin și padding, și cu linkuri făcute cutii mari. Îl vei pune în fiecare site.
+Al patrulea pas. Distanța și rândurile. Gap pune spațiu între elemente. Flex wrap wrap lasă linkurile să treacă pe rândul următor când nu mai încap, în loc să iasă din ecran.
 
-Al șaselea pas. Cardurile. Flex unu unu două sute cincizeci de pixeli înseamnă că poate crește, se poate micșora și își dorește cam atât. Pe ecran mare sunt mai multe carduri pe rând, pe telefon unul singur.
+Al cincilea pas. Poza lângă text. Piesă nouă de html: un capitol cu o poză și un text, pe care îl copiezi în pagină după caseta cu fapt amuzant. Pui în folderul de imagini o poză despre subiectul tău. Capitolul are două clase, una pentru chenar și una pentru așezare. Faci capitolul un container flex, centrezi poza pe verticală cu align items, pui spațiu între poză și text cu gap, iar textului îi dai flex unu, ca să ia tot spațiul rămas.
 
-De făcut azi. Minim: un meniu orizontal dintr-o listă și trei cutii pe un rând. Complet: adaugi un element centrat pe ambele axe, carduri care trec pe rândul următor, un antet cu logo și meniu și un subsol centrat.
+Al șaselea pas. Meniul complet. Linkurile primesc display block, padding, chenar și colțuri rotunjite, ca să arate ca niște butoane.
 
-Bonus. Articolul tău cu meniu. Pui în pagina cu articolul de pe Wikipedia un antet cu meniu către capitole și o galerie de imagini cu Flexbox. Pe Mac deschizi DevTools cu Command, Option și I.
+Al șaptelea pas. Toate la un loc. Pagina despre delfin primește o secțiune nouă în fișierul de stil, pentru meniu, poză și subsol. Delfinul este modelul tău: tu îți faci pagina cu subiectul tău și cu culorile tale.
 
-Greșeli frecvente. Ai pus display flex pe copii. Ai scris flexbox în loc de flex. Ai scris middle în loc de center. Ai confundat cele două axe. Containerul nu are înălțime. Ai uitat flex wrap.
+De făcut azi. Minim: pagina ta cu meniul pe un rând, fără buline. Complet: adaugi linkuri ca butoane, centrate, cu spațiu între ele, flex wrap verificat pe fereastră îngustă, un capitol cu poza lângă text și un subsol centrat.
 
-Tema. O pagină cu echipa mea de fotbal, cu antet, cinci carduri și subsol. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
+Bonus. Galeria în rând. Pui trei imagini într o galerie flex, le împarți lățimea egal cu flex unu și te uiți în DevTools la desenul rândului. Pe Mac deschizi DevTools cu Command, Option și I.
 
-Recapitulare. Display flex pe părinte, două axe, gap, wrap și flex pentru carduri. Succes!
+Greșeli frecvente. Ai uitat display flex. Ai pus display flex pe elemente în loc de părinte. Bulinele rămân. Ai încurcat axele. Align items nu face nimic fără înălțime. Meniul iese din ecran fără flex wrap.
+
+Tema. Termini meniul paginii tale. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
+
+Recapitulare. Display flex pe părinte, justify content, align items, gap și flex wrap. Succes!

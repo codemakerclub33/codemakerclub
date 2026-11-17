@@ -1,15 +1,15 @@
-# LECȚIA 9 — Site-ul pe orice ecran
+# LECȚIA 9 — Ecranul de telefon
 ### Adaptare la telefon
 **Modulul 3 · CSS: Stil și culoare · 2 ore**  
 **Code Maker Club · CSS Stylist**
 
-> Pagina ta arată bine pe calculator. Dar mulți oameni o vor deschide **pe telefon**, unde ecranul este mult mai îngust. O pagină bună **se adaptează singură** la orice ecran. Se numește **design adaptiv** (în engleză, *responsive design*).  
-> Proiect: **„Site-ul pe orice ecran”** · folder: `Prenume_Nume_W3_L9` (ex. `Ana_Pop_W3_L9`)
+> Mulți oameni deschid paginile pe **telefon**, unde ecranul e mic și se atinge cu degetul. O pagină făcută doar pentru calculator iese din ecran sau are litere minuscule. Azi înveți să adaptezi pagina ta la orice ecran, cu regula `@media`. Lucrezi tot pe `tema.html`, în același `stil.css`.  
+> Proiect: **„Ecranul de telefon”** · folder: `Prenume_Nume_W3_L9` (ex. `Ana_Pop_W3_L9`)
 
 ---
 
 ## Ce facem azi
-La final ai o pagină cu `viewport`, o coloană care se adaptează, imagini care nu ies din ecran, o galerie care își schimbă singură numărul de coloane și un antet care trece în coloană pe telefon. Mai mult de jumătate din vizitele pe site-uri vin de pe telefon. O pagină pe care trebuie să o mărești cu degetele sau pe care o derulezi și în lateral este greu de folosit, iar oamenii pleacă.
+La final pagina ta se vede bine și pe calculator, și pe telefon: pe telefon lista din stânga, capitolele și cifrele stau într-o singură coloană, meniul stă pe verticală, cu butoane mari, titlul e mai mic și nu apare derulare pe orizontală. Aproape jumătate din vizitatorii unui site vin de pe telefon, deci o pagină care nu arată bine acolo pierde cititori.
 
 ---
 
@@ -17,14 +17,14 @@ La final ai o pagină cu `viewport`, o coloană care se adaptează, imagini care
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · aducem pagina cu articolul de pe Wikipedia |
-| 15–30 | `viewport` (**Exemplul 1**) · unități și imagini care se adaptează (**Exemplul 2**) |
-| 30–45 | `@media` (**Exemplul 3**) |
-| 45–60 | Antetul trece din rând în coloană (**Exemplul 4**) |
-| 60–75 | Grilă adaptivă și text adaptiv (**Exemplul 5**) |
-| 75–90 | Testare în DevTools (**Exemplul 6**) |
-| 90–100 | Reguli pentru degete (**Exemplul 7**) |
-| 100–115 | Mini-proiect: site-ul pe orice ecran (**Exemplul 8**) |
+| 0–15 | Recapitulare · copiem folderul lecției trecute |
+| 15–30 | `viewport` · lățimi care se adaptează (**Exemplele 1–2**) |
+| 30–50 | Prima regulă `@media` · meniul pe telefon (**Exemplele 3–4**) |
+| 50–65 | Text, spațiu și degete (**Exemplul 5**) |
+| 65–85 | Piesă nouă: cifre pe scurt · trei pe un rând, una sub alta pe telefon (**Exemplul 6**) |
+| 85–95 | Testezi cu DevTools (**Exemplul 7**) |
+| 95–110 | Mini-proiect: toate la un loc (**Exemplul 8**) |
+| 110–115 | Verificare: apare derulare pe orizontală pe telefon? |
 | 115–120 | Recap și temă |
 
 ---
@@ -33,12 +33,10 @@ La final ai o pagină cu `viewport`, o coloană care se adaptează, imagini care
 
 | Ce scriem | Ce face | Exemplu |
 |-----------|---------|---------|
-| `<meta name="viewport" …>` | Telefonul folosește lățimea reală | în `<head>` |
-| `max-width`, `%`, `rem`, `vw` | Unități care se adaptează | `max-width: 800px;` |
-| `img { max-width: 100%; }` | Imaginea nu iese din ecran | `height: auto;` |
-| `@media (max-width: 600px) { … }` | Reguli doar pentru ecrane mici | `flex-direction: column;` |
-| `repeat(auto-fit, minmax(220px, 1fr))` | Grilă care își schimbă singură coloanele | galerie |
-| `clamp(min, ideal, max)` | Mărime de text adaptivă | `clamp(1.5rem, 5vw, 3rem)` |
+| `<meta name="viewport" …>` | Spune telefonului să nu micșoreze pagina | în `<head>` |
+| `@media (max-width: 600px) { … }` | Reguli doar pentru ecrane înguste | telefon |
+| `grid-template-columns: 1fr;` | O singură coloană pe telefon | în `@media` |
+| `flex-direction: column;` | Meniul stă pe verticală | în `@media` |
 
 ---
 
@@ -46,611 +44,446 @@ La final ai o pagină cu `viewport`, o coloană care se adaptează, imagini care
 
 Din lecția trecută ții minte că:
 - o animație are o rețetă (`@keyframes`) și o pornire (`animation`);
-- `prefers-reduced-motion` respectă dorința utilizatorului;
+- `animation-delay` face elementele să apară pe rând;
+- `prefers-reduced-motion` oprește mișcarea pentru cine o cere;
 - regula `@media` se aplică doar când o condiție este adevărată.
 
 **Încearcă tu (8 min)**  
-- [ ] Creează folderul `Prenume_Nume_W3_L9` cu `index.html` (scheletul complet, legat la `stil.css`) și `stil.css`  
-- [ ] Pune `* { box-sizing: border-box; }` prima în `stil.css`  
-- [ ] Pune în `<body>` un `<header>` cu un `<h1>` și un `<nav>` cu trei linkuri, apoi un `<main>` cu un paragraf lung  
-- [ ] Copiază în folder `tema.html`, `stil.css` și folderele `imagini` și `media` din lecția trecută  
+- [ ] Creează folderul `Prenume_Nume_W3_L9` ca o **copie** a folderului `Prenume_Nume_W3_L8` (cu `tema.html`, `stil.css`, `imagini`, `media`)  
+- [ ] Deschide `tema.html` cu Live Server și micșorează fereastra browserului: ce se întâmplă cu capitolele și cu meniul?  
+- [ ] Notează într-un comentariu ce nu arată bine pe un ecran îngust  
 
-> De aici înainte, exemplele arată ce scrii în `<body>` și, separat, ce scrii în `stil.css`.
+> De aici înainte, exemplele arată ce scrii în `stil.css`, pe piesele paginii-model despre delfin.
 
 ---
 
-## 2. Pregătirea paginii
+## 2. Ecranul mic
 
 ### Exemplul 1 — `viewport`
 
-În scheletul paginii există o linie pe care ai copiat de la început:
+În `<head>`, pagina ta are (din Modulul 1) acest rând:
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 
-Ea spune telefonului: „folosește **lățimea reală** a ecranului și nu mări pagina”. **Fără ea**, telefonul se preface că ecranul are 980px lățime și **micșorează** toată pagina, deci textul devine mic și nu se mai citește. Verifică că această linie este în `<head>` la fiecare pagină.
+Fără el, telefonul crede că pagina e făcută pentru calculator și o **micșorează** ca să încapă, iar literele devin minuscule. Cu el, pagina folosește lățimea reală a telefonului. Verifică să-l ai în `tema.html`.
 
-**Încearcă tu (5 min)**  
-- [ ] Verifică dacă `index.html` are linia `viewport` în `<head>`  
-- [ ] Verifică și în `tema.html`: este acolo?  
-- [ ] Scrie într-un comentariu din cod ce se întâmplă fără ea  
+### Exemplul 2 — Lățimi care se adaptează
 
-### Exemplul 2 — Unități care se adaptează și imagini care nu ies din ecran
-
-Unitățile fixe (`px`) rămân la fel pe orice ecran. Cele **relative** se adaptează:
-
-| Unitate | Înseamnă | Exemplu |
-|---------|----------|---------|
-| `%` | procent din părinte | `width: 50%;` |
-| `rem` | mărimea textului de bază | `padding: 1.5rem;` |
-| `vw` | 1% din **lățimea ferestrei** | `font-size: 5vw;` |
-| `vh` | 1% din **înălțimea ferestrei** | `min-height: 100vh;` |
-
-Cea mai folositoare combinație pentru o coloană de conținut:
+Lățimile fixe în `px` nu încap pe un ecran mic:
 
 ```css
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
+.fix {
+  width: 800px;      /* iese din ecran pe telefon */
 }
 ```
 
-Pe calculator, coloana are cel mult 800px și stă la mijloc. Pe telefon, ocupă tot ecranul, cu puțin spațiu pe margini. Nu ai scris `width: 800px;` (o lățime **fixă** ar face pagina să iasă din ecran pe telefon).
-
-Imaginile:
+Folosește lățimi care se **adaptează**:
 
 ```css
+.pagina {
+  max-width: 1200px;   /* cel mult 1200px, dar poate fi mai îngustă */
+}
+
+table {
+  width: 100%;         /* tabelul umple cutia, nu iese din ea */
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
 ```
 
-Imaginea nu depășește niciodată lățimea părintelui, iar `height: auto;` păstrează proporțiile. Pune regula aceasta la începutul oricărui proiect cu imagini.
+Cu `max-width` și `%`, elementele se micșorează singure pe un ecran mic. Imaginea ai făcut-o deja în lecția 4.
 
-**Încearcă tu (5 min)**  
-- [ ] Pune conținutul într-un `<main>` cu `max-width`, `margin: 0 auto;` și `padding: 1rem;`  
-- [ ] Pune o imagine mare și adaugă `max-width: 100%; height: auto;`  
-- [ ] În `tema.html`, pune articolul într-o coloană cu `max-width` și verifică imaginile  
+**Încearcă tu (7 min)**  
+- [ ] Verifică dacă ai rândul `viewport` în `<head>`  
+- [ ] Pune `table { width: 100%; }` și `img { max-width: 100%; height: auto; }`  
+- [ ] Micșorează fereastra: mai iese ceva din ecran? Notează ce  
 
 **Gata când:**  
-- [ ] Pagina are linia `viewport` în `<head>`  
-- [ ] Coloana de conținut are `max-width` și `margin: 0 auto;`  
-- [ ] Imaginile au `max-width: 100%; height: auto;`  
-- [ ] Nu ai nicio lățime fixă mare pe elementele principale  
+- [ ] Ai rândul `viewport` în `<head>`  
+- [ ] Tabelul și imaginile nu ies din cutie  
 
 ---
 
-## 3. `@media`: reguli pentru ecrane mici
+## 3. Regula `@media`
 
 ### Exemplul 3 — Prima regulă `@media`
 
-```css
-body {
-  background-color: white;
-}
+`@media` aplică reguli **doar când o condiție este adevărată**. Condiția cea mai folosită este lățimea ecranului:
 
+```css
 @media (max-width: 600px) {
-  body {
-    background-color: lightyellow;
+  .pagina {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    grid-template-columns: 1fr;
   }
 }
 ```
 
-`@media (max-width: 600px)` înseamnă: „**dacă** fereastra are cel mult 600px lățime, aplică și regulile de dinăuntru”. Pe un ecran mai lat, regulile din interior sunt ignorate. Regulile din `@media` se scriu **după** regulile obișnuite, ca să le poată înlocui.
+Se citește: „când ecranul are **cel mult 600px** lățime, `.pagina` și `main` au o singură coloană”. Ai două grile (lista din stânga și capitolele), deci le pui pe amândouă pe o coloană: lista ajunge deasupra capitolelor. Pe calculator, regula nu se aplică. Regulile din interior se scriu **între acolade**, ca într-o regulă mare care conține altele. 600px este o lățime obișnuită pentru telefoane.
 
-Micșorează fereastra browserului: la 600px fundalul devine galben. Valorile des folosite pentru „puncte de schimbare” (breakpoints): **600px** pentru telefon, **900px** pentru tabletă.
+> Pune `@media` **la sfârșitul fișierului**, lângă regula `prefers-reduced-motion`, ca să poată înlocui regulile de dinainte.
 
-**Încearcă tu (5 min)**  
-- [ ] Fă regula `@media (max-width: 600px)` care schimbă culoarea fundalului  
-- [ ] Micșorează fereastra și verifică la ce lățime se schimbă  
-- [ ] În `tema.html`, fă textul mai mare pe ecrane de maximum 600px  
+### Exemplul 4 — Meniul pe telefon
 
----
-
-## 4. Antetul trece din rând în coloană
-
-### Exemplul 4 — Meniu adaptiv
-
-```html
-<header class="antet">
-  <p class="logo">Clubul meu</p>
-  <nav>
-    <ul class="meniu">
-      <li><a href="#acasa">Acasă</a></li>
-      <li><a href="#despre">Despre</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-```
+Pe un ecran îngust, butoanele din meniu stau mai bine una sub alta:
 
 ```css
-.antet {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: navy;
-  padding: 10px 20px;
-}
-
-.logo {
-  margin: 0;
-  color: white;
-  font-weight: bold;
-}
-
-.meniu {
-  display: flex;
-  gap: 10px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.meniu a {
-  display: block;
-  padding: 10px 14px;
-  color: white;
-  text-decoration: none;
-  border: 2px solid white;
-  border-radius: 8px;
-}
-
 @media (max-width: 600px) {
-  .antet {
+  nav ul {
     flex-direction: column;
-    gap: 10px;
   }
 
-  .meniu {
-    flex-wrap: wrap;
-    justify-content: center;
+  nav a {
+    text-align: center;
+  }
+
+  nav li ul {
+    position: static;
+    box-shadow: none;
   }
 }
 ```
 
-Pe calculator, logoul este în stânga și meniul în dreapta. Pe telefon, elementele trec **una sub alta**, iar meniul poate trece pe mai multe rânduri. În `@media` ai schimbat doar ce trebuia (direcția și aliniarea), nu ai rescris tot.
+Meniul trece pe coloană, iar textul din butoane se centrează. Submeniul din Lecția 7 nu mai plutește (`position: static;` îl aduce înapoi în rând, sub link). Regulile merg în **același** `@media`: nu scrii un `@media` nou pentru fiecare regulă.
 
-**Încearcă tu (5 min)**  
-- [ ] Fă antetul să treacă în coloană pe ecran îngust  
-- [ ] Fă meniul să treacă pe mai multe rânduri, cu `flex-wrap: wrap;`  
-- [ ] În `tema.html`, fă meniul cu linkuri către capitole să treacă în coloană pe telefon  
-
----
-
-## 5. Grilă și text care se adaptează
-
-### Exemplul 5 — `auto-fit`, `minmax` și `clamp`
-
-```css
-.galerie {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
-}
-```
-
-Înseamnă: „fă **atâtea coloane câte încap**, fiecare de **minimum 220px** și, dacă mai rămâne loc, lățește coloanele egal”. Pe calculator pot fi 4 coloane, pe tabletă 2, pe telefon una. **Nu a trebuit nicio regulă `@media`.** Este una dintre cele mai bune unelte pentru galerii și carduri.
-
-Mărimea textului se poate adapta și ea:
-
-```css
-h1 {
-  font-size: clamp(1.5rem, 5vw, 3rem);
-}
-```
-
-`clamp(minim, ideal, maxim)` alege o mărime care crește odată cu ecranul, dar **nu coboară sub minim** și **nu trece de maxim**. Aici titlul are cel puțin `1.5rem`, cel mult `3rem`, iar între ele merge cu `5vw`. Un titlu uriaș pe telefon nu mai încape pe rând, iar unul minuscul pe calculator nu se vede, deci `clamp` rezolvă ambele probleme.
-
-**Încearcă tu (5 min)**  
-- [ ] Fă o galerie cu 6 carduri și `repeat(auto-fit, minmax(220px, 1fr))`  
-- [ ] Micșorează și mărește fereastra: câte coloane apar la fiecare lățime?  
-- [ ] În `tema.html`, pune imaginile într-o galerie adaptivă, cu `auto-fit`  
+**Încearcă tu (7 min)**  
+- [ ] Scrie `@media (max-width: 600px)` la sfârșitul `stil.css`, cu `.pagina` și `main` pe o singură coloană  
+- [ ] Pune meniul pe coloană în același `@media`  
+- [ ] Micșorează fereastra sub 600px și urmărește cum se schimbă pagina  
 
 **Gata când:**  
-- [ ] Galeria își schimbă singură numărul de coloane când schimbi lățimea ferestrei  
-- [ ] Titlul își schimbă mărimea cu `clamp`  
-- [ ] Antetul trece în coloană sub 600px  
+- [ ] Pe un ecran îngust, lista din stânga și capitolele stau într-o singură coloană  
+- [ ] Meniul stă pe verticală  
 
 ---
 
-## 6. Testare și reguli pentru degete
+## 4. Text, spațiu și degete
 
-### Exemplul 6 — Testezi cu DevTools
+### Exemplul 5 — Text, spațiu și butoane mari
 
-Nu ai nevoie de un telefon ca să testezi pagina:
-1. Deschide pagina în Chrome și apasă **F12** (DevTools; pe Mac **Cmd + Option + I**).  
-2. Apasă pe pictograma cu **telefon și tabletă** (bara de dispozitive) din colțul stânga sus al panoului.  
-3. Alege un dispozitiv din listă (de exemplu un telefon) sau trage de margini ca să schimbi lățimea.  
-4. Verifică: se vede tot textul? Apare derulare pe **orizontală**? Se pot apăsa ușor butoanele?
-
-Dacă pagina se derulează și în lateral, ceva este prea lat: o imagine fără `max-width`, o lățime fixă sau un text fără spații care nu trece pe rândul următor. Caută elementul cu DevTools.
-
-**Încearcă tu (5 min)**  
-- [ ] Deschide pagina în DevTools, în modul telefon  
-- [ ] Verifică dacă apare derulare pe orizontală  
-- [ ] Deschide și `tema.html` în modul telefon și caută elementele prea late  
-
-### Exemplul 7 — Reguli pentru degete
-
-Pe telefon, în loc de mouse ai degetul, care este mai gros:
+Pe telefon, un titlu mare ocupă prea mult, spațiul larg de la margini mănâncă din loc, iar butoanele se apasă cu **degetul**, nu cu un cursor mic. Ele trebuie să fie **mari** și să aibă spațiu între ele:
 
 ```css
-.buton {
-  min-height: 44px;
-  padding: 12px 20px;
-  font-size: 1rem;
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .pagina {
+    padding: 0.5rem;
+  }
+
+  nav a {
+    padding: 14px 16px;
+  }
+
+  nav ul {
+    gap: 8px;
+  }
 }
 ```
 
-- **Butoane și linkuri de minimum 44px** înălțime și lățime: altfel sunt greu de nimerit.  
-- **Spațiu între ele**, ca să nu apeși pe cel de alături.  
-- **Text de minimum 16px** (`1rem`) pentru textul principal.  
-- **Nimic important doar la `:hover`**: pe telefon nu există mouse (ai învățat deja asta în Lecția 7).
+Titlul se micșorează, pagina are mai puțin spațiu la margini, iar butoanele sunt înalte, de aproximativ 44px (14 + 14 + textul). Dacă două butoane sunt prea aproape, degetul le poate nimeri pe amândouă. Regulile se adaugă în același `@media`.
 
-**Încearcă tu (5 min)**  
-- [ ] Fă butoanele de cel puțin 44px înălțime  
-- [ ] Pune spațiu între linkurile din meniu, cu `gap`  
-- [ ] În `tema.html`, fă linkurile din meniu ușor de apăsat cu degetul  
-
-**Gata când:**  
-- [ ] Ai testat pagina în modul telefon  
-- [ ] Butoanele au cel puțin 44px înălțime  
+**Încearcă tu (7 min)**  
+- [ ] Micșorează titlul și `padding`-ul lui `.pagina` în `@media`  
+- [ ] Fă butoanele din meniu mai înalte, cu `gap` între ele, în același `@media`  
+- [ ] Micșorează fereastra sub 600px și compară cu înainte  
 
 ---
 
-## 7. Mini-proiect
+## 5. Cifre pe scurt
 
-### Exemplul 8 — „Site-ul pe orice ecran”
+### Piesă nouă de HTML: cifre pe scurt
 
-Fișierul `index.html`:
+Azi pagina primește un rând cu **trei cifre**, ca pe o fișă. Copiază-l în `<main>`, **după capitolul cu poză**:
 
 ```html
-<!DOCTYPE html>
-<html lang="ro">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site-ul pe orice ecran</title>
-  <link rel="stylesheet" href="stil.css">
-</head>
-<body>
-  <header class="antet">
-    <p class="logo">Clubul animalelor</p>
-    <nav>
-      <ul class="meniu">
-        <li><a href="#acasa">Acasă</a></li>
-        <li><a href="#animale">Animale</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <h1>Animalele noastre</h1>
-    <p class="intro">Pagina aceasta se adaptează singură: pe calculator are mai multe coloane, iar pe telefon cardurile se așază unul sub altul.</p>
-
-    <section class="galerie" id="animale">
-      <div class="card">
-        <h2>Pisica</h2>
-        <img src="imagini/pisica.jpg" alt="O pisică">
-        <p>Doarme toată ziua și vânează seara.</p>
-      </div>
-      <div class="card">
-        <h2>Cățelul</h2>
-        <p>Aleargă prin curte și își apără prietenii.</p>
-      </div>
-      <div class="card">
-        <h2>Delfinul</h2>
-        <p>Înoată repede și face salturi mari.</p>
-      </div>
-      <div class="card">
-        <h2>Papagalul</h2>
-        <p>Imită sunete și are pene colorate.</p>
-      </div>
-      <div class="card">
-        <h2>Calul</h2>
-        <p>Aleargă repede și trăiește în herghelii.</p>
-      </div>
-      <div class="card">
-        <h2>Broasca</h2>
-        <p>Sare departe și trăiește lângă apă.</p>
-      </div>
-    </section>
-
-    <button class="buton">Află mai multe</button>
-  </main>
-
-  <footer class="subsol">
-    <p>© Clubul animalelor</p>
-  </footer>
-</body>
-</html>
+<section class="cifre">
+  <div class="cifra"><strong>2–4 m</strong> lungime</div>
+  <div class="cifra"><strong>40 km/h</strong> viteză</div>
+  <div class="cifra"><strong>30 de ani</strong> viață</div>
+</section>
 ```
 
-Pune o imagine a ta în folderul `imagini` (cu numele `pisica.jpg`) sau schimbă numele din `src`. Fișierul `stil.css`:
+Scrie **trei cifre adevărate despre subiectul tău** (verifică-le într-o carte sau cu profesorul). Până îi dăm stil, cele trei cutii stau una sub alta.
+
+### Exemplul 6 — Trei pe un rând, una sub alta pe telefon
 
 ```css
-* {
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  font-size: 1rem;
-  background-color: #f4f9f9;
-  color: #264653;
-}
-
-/* Antetul: logo și meniu pe un rând */
-.antet {
+.cifre {
+  grid-column: 1 / -1;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: navy;
-  padding: 10px 20px;
-}
-
-.logo {
-  margin: 0;
-  color: white;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-.meniu {
-  display: flex;
-  gap: 10px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.meniu a {
-  display: block;
-  padding: 10px 14px;
-  color: white;
-  text-decoration: none;
-  border: 2px solid white;
-  border-radius: 8px;
-}
-
-.meniu a:hover,
-.meniu a:focus {
-  background-color: white;
-  color: navy;
-}
-
-/* Conținutul: coloană care se adaptează */
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-h1 {
-  text-align: center;
-  font-size: clamp(1.5rem, 5vw, 2.8rem);
-}
-
-.intro {
-  text-align: center;
-  line-height: 1.6;
-}
-
-/* Galeria: coloane care se adaptează singure */
-.galerie {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 15px;
-  margin: 1.5rem 0;
 }
 
-.card {
-  background-color: white;
-  border: 2px solid navy;
-  border-radius: 12px;
+.cifra {
+  flex: 1;
+  text-align: center;
   padding: 15px;
+  color: white;
+  background-color: var(--principala);
+  border-radius: 12px;
 }
 
-.card h2 {
-  margin-top: 0;
-  color: navy;
-  font-size: 1.2rem;
-}
-
-.buton {
+.cifra strong {
   display: block;
-  margin: 0 auto;
-  min-height: 44px;
-  background-color: navy;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  font-size: 1rem;
-  border-radius: 10px;
-  cursor: pointer;
+  font-size: 1.6rem;
 }
 
-.subsol {
-  background-color: navy;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
-.subsol p {
-  margin: 0;
-}
-
-/* Pe telefon */
 @media (max-width: 600px) {
-  .antet {
+  .cifre {
     flex-direction: column;
-    gap: 10px;
-  }
-
-  .meniu {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .buton {
-    width: 100%;
   }
 }
 ```
 
-Fă pagina cu **un subiect ales de tine**. Testează pagina în DevTools, în modul telefon, la mai multe lățimi.
+- `.cifre` ocupă tot rândul din `main` (`grid-column: 1 / -1;`, ca la caseta „Știai că?”) și este un rând Flexbox: cele trei cutii stau **pe un rând**, egale (`flex: 1;`);  
+- `display: block;` pe cifră o mută pe un rând separat, deasupra explicației;  
+- în `@media`, `flex-direction: column;` le pune **una sub alta** pe telefon. La fel faci și pentru capitolul cu poză (`.cu-poza`), ca poza să nu strângă textul.
+
+**Încearcă tu (8 min)**  
+- [ ] Copiază cele trei cifre în `tema.html`, cu cifrele tale  
+- [ ] Scrie regulile pentru `.cifre` și `.cifra` și vezi trei cutii pe un rând  
+- [ ] Adaugă în `@media` regula `flex-direction: column;` și verifică pe un ecran îngust  
 
 **Gata când:**  
-- [ ] Pagina are `viewport`, coloană cu `max-width` și imagini cu `max-width: 100%`  
-- [ ] Galeria își schimbă singură numărul de coloane  
-- [ ] Antetul trece în coloană sub 600px, iar butonul ocupă toată lățimea  
-- [ ] Nu apare derulare pe orizontală la nicio lățime  
+- [ ] Pe calculator, cele trei cifre stau pe un rând  
+- [ ] Pe telefon, ele stau una sub alta  
+
+### Exemplul 7 — Testezi cu DevTools
+
+Nu trebuie să ai un telefon la îndemână:
+
+1. Deschide DevTools (**F12**; pe Mac Cmd + Option + I).  
+2. Apasă butonul cu telefonul și tableta (**Toggle device toolbar**) sau apasă Ctrl + Shift + M (pe Mac Cmd + Shift + M).  
+3. Alege un telefon din listă sau trage de marginea ecranului ca să schimbi lățimea.  
+4. Verifică: **nu** apare derulare pe orizontală, textul se citește, butoanele se văd.
+
+**Încearcă tu (5 min)**  
+- [ ] Deschide DevTools în modul telefon și alege două lățimi diferite  
+- [ ] Verifică dacă apare derulare pe orizontală  
+- [ ] Notează într-un comentariu ce ai mai îndreptat  
 
 ---
 
-## De făcut azi — „Site-ul pe orice ecran”
+## 6. Mini-proiect: toate la un loc
+
+### Exemplul 8 — Tot ce ai învățat azi, în `stil.css`
+
+Pagina despre delfin (cea din Lecția 1) primește în HTML doar rândul cu cifre. În `stil.css` păstrezi tot ce ai făcut în lecțiile 2–8, adaugi `table { width: 100%; }`, regulile pentru cifre și, **la sfârșit**, regula `@media` pentru telefon. Delfinul este **modelul tău**:
+
+```css
+/* Lățimi care se adaptează */
+table {
+  width: 100%;
+}
+
+/* Cifrele */
+.cifre {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 15px;
+}
+
+.cifra {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  background-color: var(--principala);
+  border-radius: 12px;
+}
+
+.cifra strong {
+  display: block;
+  font-size: 1.6rem;
+}
+
+/* Telefonul (la sfârșitul fișierului) */
+@media (max-width: 600px) {
+  .pagina {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  nav a {
+    padding: 14px 16px;
+    text-align: center;
+  }
+
+  nav li ul {
+    position: static;
+    box-shadow: none;
+  }
+
+  .cifre,
+  .cu-poza {
+    flex-direction: column;
+  }
+}
+```
+
+Pe un ecran îngust, lista din stânga, capitolele și cifrele stau într-o singură coloană, titlul e mai mic, iar meniul are butoane mari, unul sub altul. Pe calculator, pagina rămâne ca înainte.
+
+**Acum e rândul tău:** fă-ți propria pagină după modelul Delfinul, cu **subiectul tău și valorile tale**. Nu copia valorile delfinului: alege-ți tu lățimea (poate 600px sau 700px), cifrele și mărimile.
+
+**Încearcă tu (10 min)**  
+- [ ] Adaugă regula `@media` la sfârșitul `stil.css`, cu o singură coloană și titlul mai mic  
+- [ ] Pune meniul pe coloană, fă butoanele mari, cu `gap`, și pune cifrele una sub alta  
+- [ ] Compară cu modelul: ai toate cele cinci părți (coloana, titlul, meniul, butoanele mari, cifrele)?  
+
+**Gata când:**  
+- [ ] Ai rândul `viewport` și lățimi care se adaptează  
+- [ ] Ai o regulă `@media (max-width: …)` la sfârșitul fișierului  
+- [ ] Pe telefon (în DevTools) nu apare derulare pe orizontală  
+- [ ] Butoanele din meniu sunt mari și cu spațiu între ele  
+- [ ] Cele trei cifre stau pe un rând pe calculator și una sub alta pe telefon  
+
+---
+
+## De făcut azi — „Ecranul de telefon”
 
 ### Minim vs Complet
 
 | | Ce trebuie |
 |--|------------|
-| **Minim** | O pagină cu `viewport`, o imagine care nu iese din ecran și o regulă `@media` care schimbă ceva pe telefon |
-| **Complet** | Minim + un antet care trece din rând în coloană pe telefon, carduri care se așază singure, un titlu cu mărime adaptivă și testarea paginii pe mai multe ecrane |
+| **Minim** | `tema.html` cu `viewport` și o regulă `@media (max-width: 600px)` care pune lista din stânga și capitolele pe o singură coloană |
+| **Complet** | Minim + meniul pe coloană cu butoane mari, titlul mai mic, cifrele una sub alta, tabelul și imaginile care nu ies din cutie și verificarea în DevTools, în modul telefon |
 
 ### Pasul 1 — Minim
-Pe scheletul complet, legat la `stil.css`, adaugă `viewport`, `img { max-width: 100%; height: auto; }` și o regulă `@media`.
+Pe `tema.html`, adaugă `viewport` (dacă lipsește) și o regulă `@media` pentru telefon.
 
-- [ ] Folderul `Prenume_Nume_W3_L9` are `index.html` și `stil.css`  
-- [ ] Linia `viewport` este în `<head>`  
-- [ ] O imagine nu iese din ecran, iar o regulă `@media` schimbă ceva pe telefon  
-- [ ] Pagina se vede în browser, cu Live Server pornit  
+- [ ] Folderul `Prenume_Nume_W3_L9` are `tema.html` și `stil.css`  
+- [ ] Pagina are rândul `viewport` în `<head>`  
+- [ ] Ai `@media (max-width: 600px)` cu lista din stânga și capitolele pe o singură coloană  
 
 ### Pasul 2 — Complet
 Îmbunătățești pagina:
 
-- [ ] Ai `* { box-sizing: border-box; }` prima în `stil.css`  
-- [ ] Ai conținutul într-o coloană cu `max-width` și `margin: 0 auto;`  
-- [ ] Ai o galerie cu **minimum 6 carduri**, cu `repeat(auto-fit, minmax(…px, 1fr))`  
-- [ ] Ai un titlu cu `clamp(…)`  
-- [ ] Ai butoane de cel puțin 44px înălțime  
-- [ ] Ai testat pagina în DevTools, pe cel puțin două dispozitive, și ai făcut o captură de ecran din modul telefon  
-- [ ] Ai cel puțin două comentarii în CSS  
+- [ ] Meniul stă pe coloană pe telefon, cu butoane mari și `gap`  
+- [ ] Titlul este mai mic pe telefon, iar cele trei cifre stau una sub alta  
+- [ ] Tabelul și imaginile nu ies din cutie  
+- [ ] Ai verificat pagina în DevTools, în modul telefon, la două lățimi, și nu apare derulare pe orizontală  
 
 ---
 
-## Bonus ★★★ — Provocare: Articolul tău pe telefon
+## Bonus ★★★ — Provocare: Titlu care se adaptează singur
 *Doar dacă ai terminat Complet.*
 
-Faci `tema.html` să arate bine pe orice ecran.
+Faci pagina să se adapteze și fără multe reguli `@media`.
 
-- [ ] Fă `tema.html` să se citească bine pe telefon: coloană cu `max-width`, imagini adaptive, meniu care trece în coloană și titlu cu `clamp`  
-- [ ] Adaugă o a doua regulă `@media (max-width: 900px)` pentru tabletă și schimbă ceva în ea  
-- [ ] Ascunde pe telefon un element mai puțin important (cu `display: none;`) și explică de ce este în regulă  
-- [ ] Încearcă regula inversă, `@media (min-width: 900px)`: ce se aplică numai pe ecrane late?  
+- [ ] Scrie pe `h1`: `font-size: clamp(1.5rem, 5vw, 2.5rem);` (mărimea crește odată cu ecranul, dar rămâne între 1.5rem și 2.5rem) și șterge regula `font-size` de pe `h1` din `@media`  
+- [ ] Înlocuiește coloanele din `main` cu `grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));` și șterge din `@media` linia cu coloana unică: grila se adaptează singură  
+- [ ] Adaugă un al doilea `@media (max-width: 900px)` pentru tabletă, cu `.pagina { padding: 1rem; }`  
+- [ ] Rotește telefonul în DevTools (butonul de rotire din bara de sus) și verifică pagina și pe orizontală  
 
 ---
 
 ## Greșeli frecvente
-1. **Ai uitat linia `viewport`** — pe telefon pagina apare micșorată.  
-2. **Ai folosit lățimi fixe mari** (`width: 900px;`) — pagina iese din ecran pe telefon; folosește `max-width`.  
-3. **Ai scris `@media (max-width: 600)`** fără `px` — condiția nu funcționează.  
-4. **Ai scris regula `@media` înaintea celorlalte** — este înlocuită de regulile de după ea; pune regula la sfârșit.  
-5. **Imaginea iese din ecran** — lipsește `max-width: 100%;`.  
-6. **Apare derulare pe orizontală** — un element este mai lat decât ecranul.  
-7. **Butoane prea mici** pentru deget — folosește minimum 44px.  
-8. **Ai ascuns un meniu fără alternativă** — pe telefon utilizatorul nu mai poate naviga.  
+1. **Ai uitat `viewport`** — telefonul micșorează pagina și literele devin mici.  
+2. **Ai lățimi fixe în `px`** — pagina iese din ecran; folosește `max-width` și `%`.  
+3. **Ai scris `@media` la început de fișier** — regulile de dinainte o bat; pune-l la sfârșit.  
+4. **Ai scris `max-width: 600` fără `px`** — scrie `600px`.  
+5. **Ai scris `@media` fără paranteze** în jurul condiției — corect este `@media (max-width: 600px)`.  
+6. **Ai uitat o acoladă** — regula `@media` are două niveluri de acolade.  
+7. **Butoane mici sau lipite** — pe telefon se apasă greu.  
+8. **N-ai testat** — verifică în DevTools, în modul telefon, înainte să zici „gata”.  
 
 ---
 
 ## Recapitulare pe scurt
-1. Linia `viewport` face ca telefonul să folosească lățimea reală a ecranului.  
-2. `%`, `rem`, `vw` și `max-width` se adaptează la ecran.  
-3. `img { max-width: 100%; height: auto; }` oprește imaginile să iasă din ecran.  
-4. `@media (max-width: 600px) { … }` aplică reguli doar pe ecrane mici.  
-5. `repeat(auto-fit, minmax(220px, 1fr))` face o grilă care își schimbă coloanele singură.  
-6. Testează cu DevTools, în modul telefon.
+1. Rândul `viewport` din `<head>` spune telefonului să folosească lățimea reală.  
+2. Folosește `max-width`, `%` și `img { max-width: 100%; }`, nu lățimi fixe.  
+3. `@media (max-width: 600px) { … }` aplică reguli doar pe ecrane înguste.  
+4. Pe telefon: o singură coloană și meniul pe verticală.  
+5. Butoanele trebuie să fie mari și cu spațiu între ele.  
+6. Testezi cu DevTools, în modul telefon.
 
 ## Quiz scurt
-- Ce face linia `viewport`?  
+- Ce face rândul `viewport`?  
 - Ce înseamnă `@media (max-width: 600px)`?  
-- De ce `max-width` și nu `width` pe conținut?  
-- Ce face `clamp(1.5rem, 5vw, 3rem)`?  
-- Cum verifici pagina pe telefon, fără telefon?
+- De ce nu folosim lățimi fixe în `px` pentru un site?  
+- Cum faci meniul să stea pe verticală pe telefon?  
+- Cum testezi pagina fără un telefon?
 
 ## Temă
-1. Ia pagina „Echipa mea de fotbal” din Lecția 5 și fă pagina să se adapteze: `viewport`, `max-width`, grilă `auto-fit`, antet care trece în coloană pe telefon. Salvează în `Prenume_Nume_W3_L9`.  
+1. Termină adaptarea paginii `tema.html` la telefon: `viewport`, o regulă `@media` cu o coloană, meniu pe verticală cu butoane mari, titlu mai mic, fără derulare pe orizontală. Salvează în `Prenume_Nume_W3_L9`.  
 2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
 3. **Exemple pentru acasă.** Încearcă amândouă:
 
-**Acasă 1 — O regulă pentru ecrane late.**
+**Acasă 1 — Fișa pe scurt, mai mică pe telefon.**
 
 ```css
-@media (min-width: 900px) {
-  main {
-    font-size: 1.15rem;
+@media (max-width: 600px) {
+  aside {
+    font-size: 0.9rem;
   }
 }
 ```
 
-`min-width` este opusul lui `max-width`: regula se aplică doar când fereastra are cel puțin 900px.
+Pe telefon, textul din fișă se micșorează puțin, ca tabelul să încapă mai ușor.
 
-**Acasă 2 — O imagine care umple cadrul.**
+**Acasă 2 — O regulă pentru ecrane mari.**
 
 ```css
-.poza {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 12px;
+@media (min-width: 900px) {
+  .pagina {
+    max-width: 1400px;
+  }
 }
 ```
 
-`object-fit: cover;` taie puțin din imagine ca să umple tot cadrul, fără să o deformeze. Este util când imaginile au proporții diferite.
+`min-width` este opusul lui `max-width`: regula se aplică doar când ecranul are **cel puțin** 900px, deci pe ecrane mari conținutul se lărgește.
 
 4. **Încă patru exerciții (B–E):**
 
-**B — Ce face regula?** Spune ce se întâmplă: (1) `@media (max-width: 600px) { .meniu { display: none; } }`; (2) `img { max-width: 100%; }`; (3) `grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));` pe un ecran de 650px lățime, fără `gap`; (4) `font-size: clamp(1rem, 4vw, 2rem);` pe un ecran de 200px lățime.
+**B — Ce face regula?** Spune ce face fiecare regulă: (1) `@media (max-width: 600px) { main { grid-template-columns: 1fr; } }`; (2) `nav ul { flex-direction: column; }` în interiorul unui `@media`; (3) `img { max-width: 100%; }`; (4) `<meta name="viewport" …>`; (5) `@media (min-width: 900px) { … }`.
 
-**C — Scrie regula.** Scrie în CSS: (1) o regulă care, pe ecrane de maximum 700px, face un `.rand` flex să treacă în coloană; (2) o imagine care nu iese niciodată din părinte; (3) un titlu cu mărimea între `1.4rem` și `2.5rem`, cu `4vw` între ele.
+**C — Scrie regula.** Scrie în CSS: (1) pe ecrane de cel mult 500px, `h1` are mărimea `1.5rem`; (2) în același `@media`, `.meniu` este pe coloană; (3) imaginile nu depășesc niciodată cutia lor.
 
 **D — Găsește greșelile.** Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 
 ```text
-@media (max-width: 600) {
-  .antet {
-    flex-direction: vertical;
+@media max-width: 600 {
+  main {
+    grid-template-columns: 1fr;
   }
-}
-
-main {
-  width: 900px;
-}
 ```
 
-**E — Explică cu cuvintele tale.** Într-un comentariu din cod: ce face linia `viewport`? De ce este mai bine `max-width` decât `width` pe coloana de conținut? De ce nu punem informații importante doar la `:hover`?
+**E — Explică cu cuvintele tale.** Într-un comentariu din cod: de ce punem `@media` la sfârșitul fișierului? De ce trebuie să testăm pagina și pe un ecran îngust? De ce sunt importante butoanele mari pe telefon?
 
 ## Ce urmează — Lecția 10
-Proiectul final al modulului: **„Enciclopedia în haine noi”**. Folosim tot ce am învățat: selectori, culori, text, cutii, Flexbox, Grid, efecte, animații și adaptare la telefon.
+Folosim tot ce am învățat în Modulul 3 ca să ducem **articolul tău** la forma finală: o pagină frumoasă, cu stil, meniu, carduri, efecte și adaptare la telefon.
 
 ---
 
 ## Răspunsuri
-- **Quiz scurt:** (1) spune telefonului să folosească lățimea reală a ecranului, nu să micșoreze pagina; (2) regulile dinăuntru se aplică doar dacă fereastra are cel mult 600px lățime; (3) `max-width` lasă conținutul să se micșoreze pe ecrane mici, iar un `width` fix îl face să iasă din ecran; (4) alege o mărime care crește cu ecranul (`5vw`), dar nu coboară sub `1.5rem` și nu trece de `3rem`; (5) cu DevTools (**F12**; pe Mac Cmd + Option + I), în modul telefon.  
-- **Dacă ritmul clasei este lent:** `auto-fit`, `minmax` și `clamp` pot fi tratate ca provocare; instrumentul principal este `@media`.  
-- **Tema, exercițiul B:** (1) pe ecrane de maximum 600px meniul dispare (atenție: utilizatorul nu mai are navigare); (2) imaginea nu depășește lățimea părintelui, dar poate rămâne mai îngustă decât el; (3) pe 650px încap trei coloane de minimum 200px (3 × 200 = 600), iar restul de 50px se împarte egal între ele, deci sunt trei coloane; (4) mărimea ideală `4vw` este 8px, dar `clamp` o ridică la minimum `1rem`, adică 16px.  
-- **Tema, exercițiul C:** (1) `@media (max-width: 700px) { .rand { flex-direction: column; } }`; (2) `img { max-width: 100%; height: auto; }`; (3) `h1 { font-size: clamp(1.4rem, 4vw, 2.5rem); }`.  
-- **Tema, exercițiul D:** (1) `600` trebuie `600px`; (2) `vertical` trebuie `column`; (3) `width: 900px;` trebuie `max-width: 900px;`.  
-- **Tema, exercițiul E:** `viewport` spune telefonului să folosească lățimea reală; `max-width` lasă conținutul să se micșoreze pe ecrane mici, `width` fix îl face să iasă din ecran; pe telefon nu există mouse.  
-- **Notă pentru profesor:** la ecrane foarte înguste (sub 250px) `minmax(220px, 1fr)` poate produce derulare laterală; pentru un proiect de club nu este nevoie de tratare, dar cei curioși pot folosi `minmax(min(220px, 100%), 1fr)`. Pentru capturile de ecran, rugați elevii să nu includă în ele date personale (nume de utilizator, bară de favorite cu pagini personale).
+- **Quiz scurt:** (1) spune telefonului să folosească lățimea reală a ecranului, nu să micșoreze pagina; (2) regulile dinăuntru se aplică doar când ecranul are cel mult 600px lățime; (3) pentru că nu încap pe ecrane mici și pagina iese din ecran; (4) cu `flex-direction: column;` pe `nav ul`, într-un `@media`; (5) cu DevTools (F12), în modul telefon (Toggle device toolbar).  
+- **Tema, exercițiul B:** (1) pe ecrane de cel mult 600px, `main` are o singură coloană; (2) pe ecrane înguste, meniul stă pe verticală; (3) imaginea nu depășește niciodată cutia ei; (4) telefonul folosește lățimea reală, nu micșorează pagina; (5) regulile se aplică doar pe ecrane de cel puțin 900px.  
+- **Tema, exercițiul C:** (1) `@media (max-width: 500px) { h1 { font-size: 1.5rem; } }`; (2) în același `@media`: `.meniu { flex-direction: column; }`; (3) `img { max-width: 100%; height: auto; }`.  
+- **Tema, exercițiul D:** (1) lipsesc parantezele: `@media (max-width: 600px)`; (2) `600` trebuie `600px`; (3) lipsește acolada de închidere a lui `@media`.  
+- **Tema, exercițiul E:** pentru ca regulile din `@media` să poată înlocui regulile de dinainte; pentru că mulți oameni folosesc telefonul; pentru că degetul e mai gros decât cursorul și poate apăsa pe mai multe butoane.  
+- **Dacă ritmul clasei este lent:** Exemplele 2 și 5 se pot face scurt; Exemplele 1, 3, 4 și 7 sunt obligatorii. Cifrele (Exemplul 6) sunt piesa nouă a paginii și se pot termina acasă. DevTools în modul telefon poate fi făcut de profesor pe ecranul mare, apoi repetat de elevi.  
+- **Notă pentru profesor:** `clamp()`, `vw`, `auto-fit` și `minmax` apar doar în Bonus. Dacă un elev nu vede modul telefon în DevTools, poate trage de marginea ferestrei browserului, fără alte unelte. Verificați împreună cu elevii lipsa derulării pe orizontală.

@@ -303,6 +303,7 @@ Ești detectiv: cauți urme de HTML pe pagini reale.
 - [ ] Scrie despre **mâncarea ta preferată** în trei paragrafe  
 - [ ] Deschide DevTools cu **F12** (pe Mac **Cmd + Option + I**) și caută paragraful tău în fila **Elements**  
 - [ ] Deschide „Vezi sursa” (Ctrl + U) pe o pagină de pe internet și găsește tagul `<title>`  
+- [ ] Scrie în pagina ta, sub titlu, un comentariu `<!-- Pagină făcută de … -->` cu numele tău și verifică dacă nu apare în pagină  
 
 ---
 

@@ -1,29 +1,31 @@
-Lecția patru. Cartonașe de joc: cutia fiecărui element.
+Lecția patru. Cutiile paginii: cutia fiecărui element.
 
-Secretul care face CSS ul să pară ușor: fiecare element dintr o pagină este o cutie. Un titlu este o cutie, un paragraf este o cutie, o imagine este o cutie. Când înțelegi cutia, știi să așezi orice lucru exact unde vrei.
+Pentru css, fiecare element din pagină este o cutie: are conținut, spațiu în interior, chenar și spațiu în afară. Când înțelegi cutiile, înțelegi de ce lucrurile stau unde stau. Azi le învățăm pe toate și le folosim ca să faci din capitolele tale niște cartonașe. Lucrezi tot pe pagina ta, în același fișier de stil.
 
-Ce facem azi. La final ai o pagină cu cărți de joc: cutii cu lățime, spațiu în interior, chenar, colțuri rotunjite și umbră, centrate pe pagină. Dacă un element nu stă unde vrei, aproape mereu problema este o cutie. Cine citește bine cutiile repară o pagină în câteva minute.
+Ce facem azi. La final capitolele paginii tale sunt cartonașe cu chenar, colțuri rotunjite și umbră, cu spațiu între ele, într-o coloană centrată, iar imaginile nu mai ies din ele. Dacă nu înțelegi cutia, nu poți așeza nimic în pagină: toate lecțiile următoare se bazează pe ea.
 
-Instrucțiuni noi azi. Width dă lățimea. Padding, border și margin dau spațiul din interior, chenarul și spațiul din afară. Margin zero auto centrează o cutie cu lățime. Box sizing border box face ca lățimea să includă padding și border. Display inline block pune elementul în rând, cu lățime și spațiu. Border radius și box shadow dau colțuri rotunjite și umbră.
+Instrucțiuni noi azi. Padding, border și margin dau spațiul din interior, chenarul și spațiul din afară. Max width și margin zero auto fac o coloană centrată. Box sizing border box face ca lățimea să includă padding și border. Border radius rotunjește colțurile, iar box shadow face umbră. Max width o sută la sută și height auto țin imaginile în cutie.
 
-Primul pas. Cutia. De la interior spre exterior sunt patru straturi: conținut, padding, border și margin. Le vezi în DevTools, în panoul Styles. Pe Mac deschizi DevTools cu Command, Option și I. Albastrul este conținutul, verdele padding, galbenul border, portocaliul margin.
+Pregătirea. Creezi folderul lecției ca o copie a folderului din lecția trecută. Te uiți la capitolele paginii și notezi ce elemente crezi că sunt cutii.
 
-Al doilea pas. Padding și border. Padding poate avea una, două sau patru valori, în sensul acelor de ceasornic. Border are grosime, stil și culoare. Poți pune chenar doar pe o latură.
+Primul pas. Cutia. De la interior spre exterior sunt patru straturi: conținut, padding, border și margin. Padding este în interiorul chenarului, margin în afara lui. Le vezi în DevTools, în desenul colorat al cutiei. Pe Mac deschizi DevTools cu Command, Option și I.
 
-Al treilea pas. Margin este spațiul din afara chenarului. Margin zero auto centrează o cutie care are lățime. Padding este în interior și are fundalul cutiei, iar margin este în afară și este transparent.
+Al doilea pas. Spațiul. Piesă nouă de html: caseta, un fapt amuzant despre subiectul tău, pe care o copiezi în pagină după primul capitol. Ea se alege în css cu punct. Padding poate avea o valoare sau două, de exemplu zece pixeli sus și jos și treizeci stânga și dreapta. Border are grosime, stil și culoare. Chenarul poate fi și pe o singură latură, de exemplu la stânga, ca la caseta ta. Margin se scrie la fel ca padding. Dacă vrei spațiu între două cutii, folosești margin.
 
-Al patrulea pas. O cutie cu lățime două sute, padding douăzeci și chenar cinci ocupă mai mult decât crezi. Cu box sizing border box, lățimea include padding și border. Scrii regula prima în fiecare fișier de stil.
+Al treilea pas. Coloana centrată. Max width spune cât de lată poate fi cutia cel mult. Margin zero auto o centrează pe orizontală. Rândurile prea lungi se citesc greu, așa că limităm lățimea.
 
-Al cincilea pas. Block ocupă un rând întreg. Inline stă în rând și ignoră lățimea. Inline block stă în rând și primește lățime și spațiu. Din el faci etichete și butoane.
+Al patrulea pas. Mărimea reală. Fără box sizing, calculatorul adaugă la lățime și padding, și border, deci o cutie de două sute de pixeli poate ocupa două sute cincizeci. Cu regula box sizing border box pe toate elementele, lățimea scrisă este lățimea reală. O scrii prima în fiecare fișier de stil.
 
-Al șaselea pas. Border radius rotunjește colțurile, iar cincizeci la sută pe un pătrat face un cerc. Box shadow dă umbră. Un link cu inline block, padding și fundal arată ca un buton. Imaginile primesc max width o sută la sută, ca să nu iasă din cutie.
+Al cincilea pas. Colțurile, umbra și imaginile. Border radius rotunjește colțurile, la capitole și la casetă. Box shadow are patru valori: dreapta, jos, încețoșare și culoare, de obicei negru transparent. Imaginea primește max width o sută la sută, ca să nu iasă din cutie.
 
-De făcut azi. Minim: o cutie cu lățime, padding, chenar și margin, centrată. Complet: adaugi colțuri rotunjite, umbră, border box, un buton și patru cărți.
+Al șaselea pas. Toate la un loc. Pagina despre delfin primește o secțiune nouă în fișierul de stil, pentru cutii. Delfinul este modelul tău: tu îți faci pagina cu subiectul tău și cu mărimile tale.
 
-Bonus. Capitolele ca niște cărți. Pui capitolele din pagina cu articolul de pe Wikipedia în secțiuni stilate ca niște cărți, cu imagini rotunjite și cutii verificate în DevTools.
+De făcut azi. Minim: pagina ta cu box sizing prima, o coloană centrată și capitole cu padding, chenar și margin. Complet: adaugi colțuri rotunjite și umbră, fișa pe scurt ca o cutie, imaginile în cutie și verifici desenul cutiei în DevTools.
 
-Greșeli frecvente. Ai uitat border box. Ai scris lățimea fără unitate. Ai pus cinci valori la padding. Ai scris egal în loc de două puncte. Ai pus lățime pe un span.
+Bonus. Etichete și cutii în rând. Faci trei etichete în interiorul unui paragraf, cu display inline block, apoi compari cu varianta fără și citești cutia unei etichete în DevTools.
 
-Tema. Cinci carduri de jucători inventați, cu buton. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
+Greșeli frecvente. Ai uitat box sizing. Ai scris padding fără unitate. Ai pus margin în loc de padding. Ai pus margin zero auto fără lățime. Ai scris chenarul fără culoare. Imaginea iese din cutie.
 
-Recapitulare. Patru straturi, centrare cu margin zero auto, border box și inline block. Succes!
+Tema. Termini cutiile paginii tale. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
+
+Recapitulare. Conținut, padding, border, margin. Coloană centrată. Box sizing border box prima. Colțuri rotunjite și umbră. Succes!

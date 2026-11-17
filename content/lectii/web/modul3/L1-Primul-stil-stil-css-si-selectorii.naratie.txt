@@ -1,10 +1,16 @@
 Lecția unu. Primul stil: fișierul stil punct css și selectorii.
 
-Până acum ai pus stilul în atributul style sau într-un bloc style. Azi mutăm tot într-un fișier separat, pe care îl poate folosi orice pagină. Așa schimbi aspectul unui întreg site dintr-un singur loc.
+Până acum ai pus stilul în atributul style sau într-un bloc style. Azi mutăm tot într-un fișier separat, pe care îl poate folosi orice pagină. Așa schimbi aspectul unui întreg site dintr-un singur loc. În tot modulul lucrezi la o singură pagină: articolul tău de pe Wikipedia, tema punct html.
 
-Ce facem azi. La final ai o pagină legată la un fișier de stil, cu reguli pentru tag, pentru clasă și pentru id, cu selectori grupați și comentarii. Știi și cine câștigă atunci când două reguli se bat. Un site poate avea douăzeci de pagini. Dacă stilul stă în fiecare pagină, schimbi douăzeci de fișiere. Dacă stă într-un singur fișier, schimbi un rând și toate paginile se schimbă deodată.
+Ce facem azi. La final pagina ta este legată la un fișier de stil, cu reguli pentru tag, pentru clasă și pentru id, cu selectori grupați și comentarii. Știi și cine câștigă atunci când două reguli se bat. Un site poate avea douăzeci de pagini. Dacă stilul stă în fiecare pagină, schimbi douăzeci de fișiere. Dacă stă într-un singur fișier, schimbi un rând și toate paginile se schimbă deodată.
 
 Instrucțiuni noi azi. Link cu rel egal stylesheet leagă pagina de fișierul de stil. O regulă are un selector, acolade și rânduri cu proprietate și valoare. Clasa se scrie cu punct, id-ul cu diez. Mai mulți selectori se separă cu virgulă. Comentariile se scriu între slash steluță și steluță slash.
+
+Live Server pornești cu clic dreapta pe pagina ta și apoi Open with Live Server, sau cu butonul Go Live din bara de jos. Pagina se reîncarcă singură la fiecare salvare.
+
+Pagina de la care pornim. Copiezi în folderul lecției pagina tema punct html din Modulul doi, cu folderele imagini și media. Ea are antet, meniu, capitole, o fișă pe scurt și un subsol. Pentru exemple folosim o pagină-model despre delfin; a ta are alt subiect, dar aceleași piese. De acum scriem mai ales css, mereu în același fișier de stil. Din când în când primești și o piesă nouă de html, pe care o copiezi în pagina ta. Așa pagina crește de la o lecție la alta, până la una completă și frumoasă.
+
+Unde salvezi. Ține toate folderele cursului într-un singur folder, cu câte un subfolder pentru fiecare modul. În modulul trei, fiecare lecție are folderul ei, copiat din cel al lecției trecute. Numele fișierelor nu se schimbă: pagina, fișierul de stil, imaginile și media.
 
 Primul pas. Fișierul separat. Creezi un fișier numit stil punct css, în același folder cu pagina. În head adaugi un link, cu rel egal stylesheet și href egal stil punct css. În fișierul css nu scrii style și nu scrii taguri html, doar reguli. Dacă stilul nu apare, verifică numele fișierului, folderul și dacă ai salvat ambele fișiere.
 
@@ -22,6 +28,6 @@ Bonus. Un stil pentru tot site-ul. Faci o a doua pagină care folosește acelaș
 
 Greșeli frecvente. Ai scris style în fișierul css. Ai uitat link-ul din head. Ai uitat punctul înaintea clasei. Ai uitat o acoladă sau un punct și virgulă. Ai uitat să salvezi.
 
-Tema. Un site cu două pagini care folosesc același fișier de stil. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
+Tema. Termini stilul paginii tale. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
 
 Recapitulare. Stilul stă într-un fișier. Selectorii sunt tag, clasă și id. Id-ul bate clasa, iar clasa bate tagul. Succes!

@@ -1,15 +1,15 @@
-# LECȚIA 7 — Butoane și cărți vii
-### :hover și tranziții
+# LECȚIA 7 — Pagina prinde viață
+### `:hover` și tranziții
 **Modulul 3 · CSS: Stil și culoare · 2 ore**  
 **Code Maker Club · CSS Stylist**
 
-> Până acum pagina ta arăta la fel tot timpul. Acum o facem să **răspundă**: butonul își schimbă culoarea când treci cu mouse-ul peste el, cartea se ridică ușor, iar schimbarea se face **lin**, nu brusc. Cu `:hover`, `transition` și `transform` pagina pare vie.  
-> Proiect: **„Butoane și cărți vii”** · folder: `Prenume_Nume_W3_L7` (ex. `Ana_Pop_W3_L7`)
+> O pagină care reacționează când treci cu mouse-ul peste ea pare **vie**. Azi înveți să schimbi culoarea unui link sau să ridici un capitol când îl atingi cu cursorul, și să faci schimbarea **lină**, nu bruscă. Lucrezi tot pe `tema.html`, în același `stil.css`.  
+> Proiect: **„Pagina prinde viață”** · folder: `Prenume_Nume_W3_L7` (ex. `Ana_Pop_W3_L7`)
 
 ---
 
 ## Ce facem azi
-La final ai o pagină cu butoane care își schimbă culoarea, cărți care se ridică și își mărește umbra, un meniu cu efecte și un tabel cu rânduri colorate alternativ. Efectele mici spun utilizatorului „aici poți apăsa” și fac site-ul plăcut. Aproape orice site folosește aceste trucuri la butoane, meniuri și carduri.
+La final linkurile din meniul paginii tale își schimbă culoarea lin când treci peste ele (și când le selectezi cu tastatura), meniul are un submeniu care apare sub link, iar capitolele se ridică ușor și primesc o umbră mai mare. Efectele spun vizitatorului „aici poți apăsa”. Folosite cu măsură, fac o pagină plăcută; folosite prea mult, o obosesc.
 
 ---
 
@@ -17,13 +17,14 @@ La final ai o pagină cu butoane care își schimbă culoarea, cărți care se r
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · aducem pagina cu articolul de pe Wikipedia |
-| 15–30 | `:hover`, `:focus`, `:active`, `cursor` (**Exemplele 1–2**) |
-| 30–45 | `transition` și `transform` (**Exemplele 3–4**) |
-| 45–60 | Carte care se ridică (**Exemplul 5**) |
-| 60–80 | `:nth-child` (**Exemplul 6**) |
-| 80–100 | Meniu cu efecte · zoom pe imagine (**Exemplul 7**) |
-| 100–115 | Mini-proiect: butoane și cărți vii (**Exemplul 8**) |
+| 0–15 | Recapitulare · copiem folderul lecției trecute |
+| 15–35 | `:hover` și `:focus` (**Exemplele 1–2**) |
+| 35–50 | `transition`: schimbare lină (**Exemplul 3**) |
+| 50–65 | `transform` și umbră la `:hover` (**Exemplul 4**) |
+| 65–75 | Starea „apăsat” · mai multe proprietăți în `transition` (**Exemplul 5**) |
+| 75–95 | Piesă nouă: submeniul · `position` și afișarea la `:hover` (**Exemplele 6–7**) |
+| 95–110 | Mini-proiect: toate la un loc (**Exemplul 8**) |
+| 110–115 | Verificare: se mișcă lin și nimic nu sare? |
 | 115–120 | Recap și temă |
 
 ---
@@ -32,11 +33,11 @@ La final ai o pagină cu butoane care își schimbă culoarea, cărți care se r
 
 | Ce scriem | Ce face | Exemplu |
 |-----------|---------|---------|
-| `:hover`, `:focus`, `:active` | Stil după stare: mouse deasupra, selectat, apăsat | `.buton:hover` |
-| `cursor: pointer;` | Mânuță pe tot ce se apasă | butoane, linkuri |
+| `:hover`, `:focus`, `:active` | Stil după stare: mouse deasupra, selectat, apăsat | `nav a:hover` |
 | `transition` | Schimbare lină | `0.3s ease` |
-| `transform` | Mărește, rotește, mută | `scale(1.1)` |
-| `:nth-child(even)` | Alege după poziție | rânduri alternative |
+| `transform: translateY(…)` | Mută un element în sus sau în jos | `translateY(-5px)` |
+| `position: relative;` și `absolute;` | Un element se așază față de părintele lui, în afara rândului | submeniul |
+| `display: none;` | Ascunde un element | submeniul, până treci peste el |
 
 ---
 
@@ -44,656 +45,398 @@ La final ai o pagină cu butoane care își schimbă culoarea, cărți care se r
 
 Din lecția trecută ții minte că:
 - `display: grid;` face rânduri și coloane, iar `fr` este o parte din spațiul liber;
-- `position: relative;` pe părinte și `absolute` pe copil așază o insignă în colț;
-- `z-index` ordonează straturile.
+- `gap` pune spațiu între capitole;
+- `grid-column: 1 / -1;` întinde un element pe tot rândul;
+- `position: sticky;` cu `top: 0;` lipește meniul sus.
 
 **Încearcă tu (8 min)**  
-- [ ] Creează folderul `Prenume_Nume_W3_L7` cu `index.html` (scheletul complet, legat la `stil.css`) și `stil.css`  
-- [ ] Pune `* { box-sizing: border-box; }` prima în `stil.css`  
-- [ ] Pune în `<body>` un `<button class="buton">Apasă aici</button>` (butonul îl faci mai jos mai frumos)  
-- [ ] Copiază în folder `tema.html`, `stil.css` și folderele `imagini` și `media` din lecția trecută  
+- [ ] Creează folderul `Prenume_Nume_W3_L7` ca o **copie** a folderului `Prenume_Nume_W3_L6` (cu `tema.html`, `stil.css`, `imagini`, `media`)  
+- [ ] Deschide `tema.html` cu Live Server și treci cu mouse-ul peste meniu și capitole: reacționează?  
+- [ ] Notează într-un comentariu două lucruri din pagină care ar trebui să reacționeze (linkuri, capitole)  
 
-> De aici înainte, exemplele arată ce scrii în `<body>` și, separat, ce scrii în `stil.css`.
+> De aici înainte, exemplele arată ce scrii în `stil.css`, pe piesele paginii-model despre delfin.
 
 ---
 
-## 2. Stări: `:hover`, `:focus`, `:active`
+## 2. Stări: `:hover` și `:focus`
 
 ### Exemplul 1 — `:hover`
 
-În `stil.css`:
-
 ```css
-.buton {
-  background-color: navy;
+nav a:hover {
+  background-color: var(--principala);
   color: white;
-  border: none;
-  padding: 12px 24px;
-  font-size: 1rem;
-  border-radius: 10px;
-}
-
-.buton:hover {
-  background-color: crimson;
 }
 ```
 
-`:hover` se scrie **după** selector, cu două puncte, și se aplică **numai cât timp mouse-ul este deasupra** elementului. Când scoți mouse-ul, stilul revine. Se numește **pseudo-clasă**: o clasă „invizibilă” pe care o pune browserul singur, în anumite situații.
+`:hover` este o **stare**: se aplică doar cât timp cursorul stă **deasupra** elementului. Se scrie după selector, fără spațiu: `nav a:hover` înseamnă „linkurile din meniu, când mouse-ul e peste ele”. Când ridici mouse-ul, stilul dispare.
 
-**Încearcă tu (5 min)**  
-- [ ] Fă un buton care își schimbă culoarea când pui mouse-ul pe el  
-- [ ] Schimbă și culoarea textului la `:hover`  
-- [ ] În `tema.html`, fă linkurile să își schimbe culoarea la `:hover`  
+### Exemplul 2 — `:focus`
 
-### Exemplul 2 — `:focus`, `:active` și `cursor`
+Nu toată lumea folosește mouse-ul: unii folosesc **tastatura** (tasta Tab sare de la link la link). Elementul pe care ești cu tastatura are starea `:focus`. Pui aceleași reguli și la `:focus`:
 
 ```css
-.buton:focus {
-  outline: 3px solid gold;
-}
-
-.buton:active {
-  background-color: darkred;
-}
-
-.buton {
-  cursor: pointer;
+nav a:hover,
+nav a:focus {
+  background-color: var(--principala);
+  color: white;
 }
 ```
 
-- `:focus`: elementul este selectat (de exemplu ai ajuns la el cu tasta **Tab**);  
-- `:active`: elementul este **apăsat chiar acum**;  
-- `cursor: pointer;` schimbă săgeata în **mânuță**, ca la un link. Alte valori: `default` (săgeata obișnuită), `text` (bară de scris), `not-allowed` (interzis), `grab` (mână care apucă). Pune `pointer` pe tot ce se poate apăsa.
+Virgula spune „și când e în `:hover`, și când e în `:focus`”. Așa pagina se vede bine și cu mouse-ul, și cu tastatura.
 
-Apasă **Tab** în pagină: vezi cum trece selecția de la un element la altul. Cine nu folosește mouse-ul (de exemplu o persoană care folosește doar tastatura) are nevoie de `:focus` vizibil. De aceea, **nu scoate niciodată** conturul cu `outline: none;` fără să pui altceva în loc.
-
-Ordinea contează la linkuri: dacă stilizezi toate stările, scrie regulile în ordinea `:link`, `:visited`, `:hover`, `:active`.
-
-**Încearcă tu (5 min)**  
-- [ ] Apasă Tab de mai multe ori: vezi conturul de la `:focus`?  
-- [ ] Fă butonul să arate altfel cât timp îl ții apăsat  
-- [ ] În `tema.html`, pune `:focus` vizibil pe linkuri și apasă Tab  
+**Încearcă tu (7 min)**  
+- [ ] Pune `:hover` pe linkurile din meniu: culoare nouă de fundal și text alb  
+- [ ] Apasă Tab de mai multe ori și urmărește care link e selectat  
+- [ ] Adaugă `:focus` la aceeași regulă și apasă din nou Tab  
 
 **Gata când:**  
-- [ ] Butonul își schimbă culoarea când pui mouse-ul pe el  
-- [ ] Ai un contur vizibil la `:focus` (verifică cu tasta Tab)  
-- [ ] Cursorul devine mânuță pe buton  
+- [ ] Linkurile din meniu se schimbă la `:hover`  
+- [ ] Se schimbă și la `:focus`, când apeși Tab  
 
 ---
 
-## 3. Schimbări line și mișcare
+## 3. Schimbarea lină
 
 ### Exemplul 3 — `transition`
 
-Schimbarea culorii de mai sus este bruscă. Pentru o schimbare lină, scrie `transition` pe elementul **de bază** (nu pe `:hover`):
+Fără `transition`, culoarea sare dintr-o dată. Cu ea, trece lin:
 
 ```css
-.buton {
-  background-color: navy;
-  transition: background-color 0.3s ease;
-}
-
-.buton:hover {
-  background-color: crimson;
+nav a {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 ```
 
-`transition: background-color 0.3s ease;` are trei părți:
+- `background-color` și `color` sunt **proprietățile** care se schimbă lin;  
+- `0.3s` este **durata** (trei zecimi de secundă). Pentru efecte la pagină, `0.2s`–`0.4s` este de obicei potrivit;  
+- `ease` face schimbarea să înceapă și să se termine mai încet.
 
-| Parte | Ce spune |
-|-------|----------|
-| `background-color` | **ce** proprietate se schimbă lin |
-| `0.3s` | **cât durează** (0,3 secunde) |
-| `ease` | **cum** merge: pornește încet, accelerează, apoi încetinește |
-
-Alte feluri de mers: `linear` (viteză egală), `ease-in`, `ease-out`, `ease-in-out`. Pentru mai multe proprietăți, pune între ele virgulă: `transition: background-color 0.3s, transform 0.3s;`. Timpul bun pentru efectele mici este între 0,2s și 0,4s. Dacă durează mai mult, pagina pare înceată.
-
-### Exemplul 4 — `transform`
-
-```css
-.cutie {
-  transition: transform 0.3s ease;
-}
-
-.cutie:hover {
-  transform: scale(1.1);
-}
-```
-
-`transform` schimbă forma sau poziția elementului **fără să împingă celelalte elemente**:
-
-| Funcție | Ce face |
-|---------|---------|
-| `scale(1.1)` | mărește de 1,1 ori (`0.9` îl micșorează) |
-| `rotate(10deg)` | rotește cu 10 grade |
-| `translateY(-6px)` | mută 6px în sus (`translateX` mută pe orizontală) |
-
-Poți combina mai multe într-un singur `transform`, separate prin spațiu: `transform: scale(1.1) rotate(5deg);`. Scrie `transform` o singură dată, altfel a doua regulă o înlocuiește pe prima.
+Pui `transition` pe **starea normală** (`nav a`), nu pe `:hover`. Așa schimbarea e lină și la intrare, și la ieșire.
 
 **Încearcă tu (6 min)**  
-- [ ] Adaugă `transition` pe buton ca să se schimbe lin  
-- [ ] Fă o cutie care se mărește la `:hover` cu `scale(1.1)`  
-- [ ] În `tema.html`, fă linkurile să se schimbe lin, cu `transition: color 0.3s ease;`  
+- [ ] Pune `transition` pe `nav a`, pentru `background-color` și `color`  
+- [ ] Schimbă durata în `1s` și simte diferența, apoi revino la `0.3s`  
+- [ ] Mută `transition` pe `:hover` și vezi ce se întâmplă când ridici mouse-ul  
 
 ---
 
-## 4. Carte care se ridică
+## 4. Capitole care se ridică
 
-### Exemplul 5 — `transform` plus `box-shadow`
-
-```html
-<div class="carte">
-  <h2>Pisica</h2>
-  <p>Doarme toată ziua și vânează seara.</p>
-</div>
-```
+### Exemplul 4 — `transform: translateY()` și umbră
 
 ```css
 .carte {
-  width: 250px;
-  background-color: white;
-  border: 2px solid navy;
-  border-radius: 12px;
-  padding: 15px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .carte:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
 ```
 
-Cartea se ridică 6px, iar umbra se mărește: pare că se desprinde de pagină. Ambele proprietăți se schimbă lin, pentru că le-ai trecut în `transition`.
+- `transform` mută sau schimbă elementul **fără să strice restul paginii**. `translateY(-5px)` îl urcă cu 5px (minus înseamnă în sus; plus, în jos). Elementele din jur rămân unde sunt;  
+- la `:hover` capitolul urcă, iar umbra devine mai mare, ca și cum s-ar desprinde de pagină;  
+- `transition` e scris pe `.carte` (starea normală) și enumeră **ambele** proprietăți care se schimbă, separate prin virgulă.
 
-**Încearcă tu (6 min)**  
-- [ ] Fă trei cărți care se ridică la `:hover`  
-- [ ] Schimbă `translateY(-6px)` în `-12px` și compară  
-- [ ] În `tema.html`, fă capitolele (secțiunile) să se ridice ușor la `:hover`  
+**Încearcă tu (7 min)**  
+- [ ] Fă capitolele să se ridice cu `translateY(-5px)` la `:hover`  
+- [ ] Adaugă o umbră mai mare la `:hover` și `transition` pe `.carte`  
+- [ ] Încearcă `-2px` și `-10px` și alege ce ți se pare mai blând  
 
 **Gata când:**  
-- [ ] Cartea se ridică și își mărește umbra la `:hover`  
-- [ ] Schimbarea este lină  
+- [ ] Capitolele se ridică lin la `:hover`  
+- [ ] Umbra crește odată cu ridicarea  
 
 ---
 
-## 5. Alegem după poziție
+## 5. Apăsat și mai multe proprietăți
 
-### Exemplul 6 — `:nth-child`
+### Exemplul 5 — `:active` și lista din `transition`
 
-```html
-<table class="tabel">
-  <tr><th>Jucător</th><th>Goluri</th></tr>
-  <tr><td>Andrei</td><td>5</td></tr>
-  <tr><td>Maria</td><td>7</td></tr>
-  <tr><td>Radu</td><td>3</td></tr>
-  <tr><td>Ioana</td><td>6</td></tr>
-</table>
-```
+`:active` este starea „**apăsat**”: cât ții clicul apăsat.
 
 ```css
-.tabel {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.tabel td,
-.tabel th {
-  padding: 8px;
-  border: 1px solid navy;
-}
-
-.tabel tr:nth-child(even) {
-  background-color: #e8f1f2;
-}
-
-.tabel tr:hover {
-  background-color: gold;
+nav a:active {
+  transform: translateY(2px);
 }
 ```
 
-`:nth-child(...)` alege elementele după **numărul lor de ordine** între frați. Variante:
+Butonul „se apasă” în jos cu 2px.
 
-| Scriere | Alege |
-|---------|-------|
-| `:nth-child(even)` | al doilea, al patrulea, … (pare) |
-| `:nth-child(odd)` | primul, al treilea, … (impare) |
-| `:nth-child(3)` | exact al treilea |
-| `:first-child` și `:last-child` | primul și ultimul |
+Când se schimbă mai multe proprietăți, le scrii în **același** `transition`, separate prin virgulă, cum ai făcut la `.carte`. Poți scrie și `transition: all 0.3s;`, care schimbă lin orice se schimbă, dar încetinește pagina și poate anima lucruri la care nu te-ai gândit, deci **evită `all`**: enumeră proprietățile.
 
-Rândurile colorate alternativ se citesc mai ușor. `border-collapse: collapse;` lipește chenarele celulelor într-unul singur.
+> Dacă scrii `transition` de două ori pe același element, a doua înlocuiește prima.
 
 **Încearcă tu (6 min)**  
-- [ ] Fă un tabel cu 5 rânduri și colorează-l alternativ cu `:nth-child(even)`  
-- [ ] Schimbă în `odd` și vezi ce rânduri se colorează  
-- [ ] În `tema.html`, colorează alternativ elementele unei liste din articol  
+- [ ] Adaugă `:active` pe linkurile din meniu  
+- [ ] Verifică dacă `.carte` are un singur `transition`, cu două proprietăți  
+- [ ] Înlocuiește un `all`, dacă ai scris unul, cu proprietățile exacte  
 
 ---
 
-## 6. Meniu cu efecte și zoom pe imagine
+## 6. Submeniul
 
-### Exemplul 7 — Meniu cu efecte și imagine cu zoom
+### Piesă nouă de HTML: submeniul
+
+Azi meniul primește un **submeniu**: o listă care apare sub un link când treci peste el. Copiază în `<nav>`, în lista `<ul>` principală, **după ultimul `<li>`**:
 
 ```html
-<nav>
-  <ul class="meniu">
-    <li><a href="#acasa">Acasă</a></li>
-    <li><a href="#animale">Animale</a></li>
-    <li><a href="#contact">Contact</a></li>
+<li>
+  <a href="#">Mai mult</a>
+  <ul>
+    <li><a href="#">Salturile</a></li>
+    <li><a href="#">Sunetele</a></li>
   </ul>
-</nav>
+</li>
 ```
 
+Scrie linkurile **după subiectul tău**. Observă că lista mică stă **în interiorul** unui `<li>` din meniu. Până îi dăm stil, ea apare lângă link; o așezăm sub el în Exemplul 6 și o ascundem în Exemplul 7.
+
+### Exemplul 6 — `position: relative;` și `absolute;`
+
 ```css
-.meniu {
-  display: flex;
-  gap: 10px;
-  list-style: none;
-  margin: 0;
+nav li {
+  position: relative;
+}
+
+nav li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
   padding: 0;
-}
-
-.meniu a {
-  display: block;
-  padding: 10px 18px;
-  background-color: navy;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.meniu a:hover,
-.meniu a:focus {
-  background-color: crimson;
-  transform: translateY(-3px);
+  background-color: white;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
 }
 ```
 
-Observă virgula: aceeași regulă pentru `:hover` (mouse) și `:focus` (tastatură), deci meniul este prietenos pentru toți.
+- `position: relative;` pe `li` îl face **punctul de plecare** pentru ce stă în el;  
+- `position: absolute;` scoate submeniul din rândul normal și îl așază față de `li`: `top: 100%;` înseamnă „imediat sub link”, iar `left: 0;` „la marginea din stânga”;  
+- regula `nav ul` din Lecția 5 se aplică și submeniului, de aceea îi dăm `padding: 0;`;  
+- submeniul nu mai împinge restul paginii: **plutește** deasupra.
 
-Acum o imagine care se mărește fără să iasă din cutie:
-
-```html
-<div class="poza">
-  <img src="animal.jpg" alt="Un animal desenat de mine">
-</div>
-```
+### Exemplul 7 — Apare doar la `:hover`
 
 ```css
-.poza {
-  width: 250px;
-  overflow: hidden;
-  border-radius: 12px;
+nav li ul {
+  display: none;
 }
 
-.poza img {
+nav li:hover ul,
+nav li:focus-within ul {
   display: block;
-  width: 100%;
-  transition: transform 0.4s ease;
-}
-
-.poza:hover img {
-  transform: scale(1.15);
 }
 ```
 
-Imaginea se mărește, dar `overflow: hidden;` pe cutie **taie ce iese**, deci zoom-ul rămâne în cadru. Selectorul `.poza:hover img` spune: „când mouse-ul este pe `.poza`, schimbă imaginea din ea”. Folosește o imagine făcută de tine, un desen sau o imagine fără persoane, pusă în același folder cu `index.html`.
+- `display: none;` ascunde submeniul;  
+- `nav li:hover ul` înseamnă „lista din `li`, când mouse-ul e peste `li`”: submeniul apare. Cât ții mouse-ul pe submeniu, el rămâne deschis, pentru că și el e în interiorul lui `li`;  
+- `:focus-within` înseamnă „un element din interior are `:focus`”: așa se deschide submeniul și când sari cu tasta Tab.
 
-**Încearcă tu (6 min)**  
-- [ ] Fă un meniu cu `:hover` și `:focus` și testează-l și cu Tab  
-- [ ] Pune o imagine într-o cutie cu `overflow: hidden;` și zoom la `:hover`  
-- [ ] În `tema.html`, adaugă zoom pe imaginile din articol  
+**Încearcă tu (8 min)**  
+- [ ] Copiază submeniul în `tema.html`, cu linkurile tale  
+- [ ] Scrie regulile din Exemplul 6 și vezi submeniul sub link  
+- [ ] Adaugă `display: none;` și regula de `:hover`, apoi apasă Tab ca să verifici `:focus-within`  
 
 **Gata când:**  
-- [ ] Meniul reacționează și la mouse, și la tasta Tab  
-- [ ] Imaginea se mărește fără să iasă din cutie  
+- [ ] Submeniul stă sub link, nu împinge pagina și apare doar la `:hover` sau `:focus-within`  
 
 ---
 
-## 7. Mini-proiect
+## 7. Mini-proiect: toate la un loc
 
-### Exemplul 8 — „Butoane și cărți vii”
+### Exemplul 8 — Tot ce ai învățat azi, în `stil.css`
 
-Fișierul `index.html`:
-
-```html
-<!DOCTYPE html>
-<html lang="ro">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Butoane și cărți vii</title>
-  <link rel="stylesheet" href="stil.css">
-</head>
-<body>
-  <header class="antet">
-    <h1>Butoane și cărți vii</h1>
-    <nav>
-      <ul class="meniu">
-        <li><a href="#acasa">Acasă</a></li>
-        <li><a href="#animale">Animale</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <div class="carti">
-      <div class="carte">
-        <h2>Pisica</h2>
-        <p>Doarme toată ziua și vânează seara.</p>
-        <button class="buton">Află mai mult</button>
-      </div>
-      <div class="carte">
-        <h2>Cățelul</h2>
-        <p>Aleargă prin curte și își apără prietenii.</p>
-        <button class="buton">Află mai mult</button>
-      </div>
-      <div class="carte">
-        <h2>Delfinul</h2>
-        <p>Înoată repede și face salturi mari.</p>
-        <button class="buton">Află mai mult</button>
-      </div>
-    </div>
-
-    <h2>Clasamentul golgheterilor</h2>
-    <table class="tabel">
-      <tr><th>Jucător</th><th>Goluri</th></tr>
-      <tr><td>Andrei</td><td>5</td></tr>
-      <tr><td>Maria</td><td>7</td></tr>
-      <tr><td>Radu</td><td>3</td></tr>
-      <tr><td>Ioana</td><td>6</td></tr>
-    </table>
-  </main>
-</body>
-</html>
-```
-
-Fișierul `stil.css`:
+Pagina despre delfin (cea din Lecția 1) primește în HTML doar submeniul de mai sus. În `stil.css` păstrezi tot ce ai făcut în lecțiile 2–6 și adaugi o secțiune nouă, **Efectele**. Delfinul este **modelul tău**:
 
 ```css
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f9f9;
-  color: #264653;
-}
-
-/* Antet cu meniu */
-.antet {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: navy;
-  padding: 10px 20px;
-}
-
-.antet h1 {
-  margin: 0;
-  color: white;
-  font-size: 1.4rem;
-}
-
-.meniu {
-  display: flex;
-  gap: 10px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.meniu a {
-  display: block;
-  padding: 8px 14px;
-  color: white;
-  text-decoration: none;
-  border: 2px solid white;
-  border-radius: 8px;
+/* Efectele */
+nav a {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.meniu a:hover,
-.meniu a:focus {
+nav a:hover,
+nav a:focus {
+  background-color: var(--principala);
+  color: white;
+}
+
+nav a:active {
+  transform: translateY(2px);
+}
+
+nav li {
+  position: relative;
+}
+
+nav li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  padding: 0;
   background-color: white;
-  color: navy;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Cărțile care se ridică */
-.carti {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-bottom: 30px;
+nav li:hover ul,
+nav li:focus-within ul {
+  display: block;
 }
 
 .carte {
-  flex: 1 1 220px;
-  background-color: white;
-  border: 2px solid navy;
-  border-radius: 12px;
-  padding: 15px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .carte:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-.carte h2 {
-  margin-top: 0;
-  color: navy;
-}
-
-/* Butonul viu */
-.buton {
-  background-color: navy;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.buton:hover {
-  background-color: crimson;
-}
-
-.buton:focus {
-  outline: 3px solid gold;
-}
-
-.buton:active {
-  transform: scale(0.95);
-}
-
-/* Tabelul cu rânduri alternative */
-.tabel {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.tabel th,
-.tabel td {
-  padding: 8px 12px;
-  border: 1px solid navy;
-  text-align: left;
-}
-
-.tabel th {
-  background-color: navy;
-  color: white;
-}
-
-.tabel tr:nth-child(even) {
-  background-color: #e8f1f2;
-}
-
-.tabel tr:hover td {
-  background-color: gold;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
 ```
 
-Fă pagina cu **un subiect ales de tine**. Verifică efectele cu mouse-ul și cu tasta Tab.
+Meniul reacționează la mouse și la tastatură și are un submeniu care apare doar când treci peste el, iar capitolele se ridică lin. Observă că `transition` stă pe starea normală, iar `:hover` doar schimbă valorile.
+
+**Acum e rândul tău:** fă-ți propria pagină după modelul Delfinul, cu **subiectul tău și culorile tale**. Nu copia valorile delfinului: alege-ți durata, înălțimea de ridicare, linkurile din submeniu și culorile.
+
+**Încearcă tu (10 min)**  
+- [ ] Adaugă în `stil.css` secțiunea „Efectele”, cu `transition` pe starea normală și `:hover` și `:focus` pe meniu  
+- [ ] Fă capitolele să se ridice lin, cu umbră mai mare, la `:hover`; pune submeniul sub link  
+- [ ] Compară cu modelul: ai toate cele cinci părți (meniul, submeniul, ridicarea, umbra, tranziția)?  
 
 **Gata când:**  
-- [ ] Butoanele, cărțile și linkurile din meniu reacționează la `:hover`  
-- [ ] Schimbările sunt line (au `transition`)  
-- [ ] Tabelul are rânduri colorate alternativ  
-- [ ] Toate elementele care se apasă au `cursor: pointer;` și un `:focus` vizibil  
+- [ ] Linkurile din meniu reacționează la `:hover` și `:focus`  
+- [ ] Capitolele se ridică lin, cu umbră mai mare, la `:hover`  
+- [ ] Submeniul apare sub link doar la `:hover` sau `:focus-within`  
+- [ ] `transition` este scris pe starea normală și are durate de 0.2s–0.4s  
 
 ---
 
-## De făcut azi — „Butoane și cărți vii”
+## De făcut azi — „Pagina prinde viață”
 
 ### Minim vs Complet
 
 | | Ce trebuie |
 |--|------------|
-| **Minim** | Un buton care își schimbă culoarea la `:hover`, cu `transition` |
-| **Complet** | Minim + o carte care se ridică și își mărește umbra, un meniu cu efecte, rânduri de tabel colorate alternativ și explicația de ce nu ascundem lucruri importante în spatele lui `:hover` |
+| **Minim** | `tema.html` cu linkurile din meniu care își schimbă culoarea la `:hover`, cu `transition` |
+| **Complet** | Minim + `:focus` la meniu, capitole care se ridică cu umbră mai mare la `:hover`, `:active` pe meniu, submeniu care apare la `:hover` și verificarea cu tasta Tab |
 
 ### Pasul 1 — Minim
-Pe scheletul complet, legat la `stil.css`, fă un buton care își schimbă lin culoarea la `:hover`.
+Pe `tema.html`, fă linkurile din meniu să-și schimbe culoarea lin la `:hover`.
 
-- [ ] Folderul `Prenume_Nume_W3_L7` are `index.html` și `stil.css`  
-- [ ] Butonul are `:hover` și `transition`  
-- [ ] Pagina se vede în browser, cu Live Server pornit  
+- [ ] Folderul `Prenume_Nume_W3_L7` are `tema.html` și `stil.css`  
+- [ ] `nav a:hover` schimbă fundalul și culoarea textului  
+- [ ] `nav a` are `transition`  
 
 ### Pasul 2 — Complet
 Îmbunătățești pagina:
 
-- [ ] Ai `* { box-sizing: border-box; }` prima în `stil.css`  
-- [ ] Ai un meniu cu **minimum 3 linkuri**, cu `:hover`, `:focus` și `transition`  
-- [ ] Ai **minimum 3 cărți** care se ridică la `:hover` (`transform` plus `box-shadow`)  
-- [ ] Ai **minimum 2 butoane** cu `:hover`, `:active` și `cursor: pointer;`  
-- [ ] Ai un tabel cu **minimum 4 rânduri**, colorate alternativ cu `:nth-child(even)`  
-- [ ] Ai cel puțin două comentarii în CSS  
+- [ ] Ai `:focus` la aceeași regulă ca `:hover` și ai verificat cu Tab  
+- [ ] Capitolele se ridică lin la `:hover`, cu umbră mai mare  
+- [ ] Meniul are `:active` și un submeniu care apare doar la `:hover`  
+- [ ] Nu ai folosit `transition: all`  
 
 ---
 
-## Bonus ★★★ — Provocare: Articolul tău viu
+## Bonus ★★★ — Provocare: Rânduri alternative și zoom
 *Doar dacă ai terminat Complet.*
 
-Faci `tema.html` să răspundă la mouse și la tastatură.
+Faci tabelul din „Fișa pe scurt” și imaginile să reacționeze.
 
-- [ ] Pune în `tema.html` linkuri cu `:hover` și `:focus`, capitole care se ridică, imagini cu zoom și o listă colorată alternativ  
-- [ ] Fă un buton care se rotește cu 360 de grade la `:hover` (`rotate(360deg)` cu `transition` de 0,6s)  
-- [ ] Fă o cutie care își schimbă culoarea de fundal, mărimea și colțurile în același timp, la `:hover`  
-- [ ] Adaugă `a:visited` cu o culoare mai închisă pentru linkurile deja vizitate  
+- [ ] Fă rândurile tabelului alternative: `tr:nth-child(even) { background-color: #e8f1f2; }`  
+- [ ] Fă rândul peste care treci să se coloreze: `tr:hover { background-color: lightyellow; }`  
+- [ ] Fă o imagine să se mărească puțin la `:hover`: `img { transition: transform 0.3s ease; }` și `img:hover { transform: scale(1.05); }`  
+- [ ] Deschide DevTools (**F12**; pe Mac Cmd + Option + I), apasă pe un link, apoi pe butonul `:hov` din panoul **Styles** și bifează `:hover`: vezi regulile de `:hover` fără să ții mouse-ul acolo  
 
 ---
 
 ## Greșeli frecvente
-1. **Ai scris `transition` pe `:hover`** — efectul merge la intrare, dar revenirea este bruscă. Scrie `transition` pe stilul de bază.  
-2. **Ai uitat unitatea la timp** — `0.3` nu este corect, scrie `0.3s`.  
-3. **Ai pus două `transform` în aceeași regulă** — a doua o înlocuiește pe prima. Scrie ambele funcții într-un singur `transform`.  
-4. **`:hover` fără două puncte** sau scris `.buton :hover` (cu spațiu) — pseudo-clasa se lipește de selector: `.buton:hover`.  
-5. **Ai scos conturul cu `outline: none;`** fără să pui altceva — cine folosește tastatura nu mai vede unde este.  
-6. **Ai pus informații importante doar la `:hover`** — pe telefon nu există mouse, deci nu apar niciodată.  
-7. **Zoom-ul imaginii iese din cutie** — lipsește `overflow: hidden;` pe cutie.  
-8. **Cursorul rămâne săgeată pe buton** — ai uitat `cursor: pointer;`.  
+1. **Ai pus spațiu înainte de `:hover`** — `nav a :hover` nu merge; scrie `nav a:hover`.  
+2. **Ai uitat unitatea la durată** — `transition: color 0.3;` nu merge; scrie `0.3s`.  
+3. **Ai pus `transition` pe `:hover`** — schimbarea e lină doar la intrare; pune-l pe starea normală.  
+4. **Ai scris `transition` de două ori** pe același element — a doua o înlocuiește pe prima.  
+5. **Ai scris `translateY(5)`** fără unitate — scrie `translateY(5px)`.  
+6. **Ai folosit `transition: all`** — enumeră proprietățile.  
+7. **Efectul e prea mare sau prea lung** — ține-te de 0.2s–0.4s și de mutări mici.  
+8. **Ai pus efecte doar la `:hover`** — pe telefon nu există mouse, deci pagina trebuie să arate bine și fără efect.  
 
 ---
 
 ## Recapitulare pe scurt
-1. `:hover` (mouse deasupra), `:focus` (selectat), `:active` (apăsat) schimbă stilul în funcție de stare.  
-2. `cursor: pointer;` face mânuța pe tot ce se apasă.  
-3. `transition: proprietate durată fel;` pe stilul de bază face schimbarea lină.  
-4. `transform`: `scale`, `rotate`, `translate`; scrie funcțiile într-un singur `transform`.  
-5. `:nth-child(even)` și `:nth-child(odd)` alege după poziție.  
-6. Nu ascunde lucruri importante în spatele lui `:hover` și lasă `:focus` vizibil.
+1. `:hover` se aplică cât timp mouse-ul e deasupra; `:focus` când elementul e selectat cu tastatura; `:active` când e apăsat.  
+2. `transition` face schimbarea lină; se scrie pe starea normală.  
+3. `transform: translateY(-5px)` urcă un element fără să mute restul paginii.  
+4. Mai multe proprietăți în `transition` se separă prin virgulă.  
+5. Evită `transition: all`.  
+6. Efectele sunt blânde: 0.2s–0.4s și mutări mici.
 
 ## Quiz scurt
 - Ce face `:hover`?  
-- Unde scrii `transition`?  
-- Ce face `transform: scale(1.1);`?  
-- Ce alege `tr:nth-child(even)`?  
-- De ce nu folosim `outline: none;` fără alt contur?
+- De ce punem și `:focus`?  
+- Unde scriem `transition`: pe starea normală sau pe `:hover`?  
+- Ce face `transform: translateY(-5px);`?  
+- De ce evităm `transition: all`?
 
 ## Temă
-1. Fă pagina „Lista mea de jocuri”: un meniu, patru cărți care se ridică, două butoane și un tabel cu 5 rânduri colorate alternativ. Salvează în `Prenume_Nume_W3_L7`.  
+1. Termină efectele paginii `tema.html`: meniu cu `:hover`, `:focus` și `transition`, și capitole care se ridică lin. Salvează în `Prenume_Nume_W3_L7`.  
 2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
 3. **Exemple pentru acasă.** Încearcă amândouă:
 
-**Acasă 1 — Subliniere care crește.**
+**Acasă 1 — Subliniere la `:hover` pe linkurile din text.**
 
 ```css
-.link {
+.carte a {
   text-decoration: none;
-  background-image: linear-gradient(crimson, crimson);
-  background-repeat: no-repeat;
-  background-position: 0 100%;
-  background-size: 0% 3px;
-  transition: background-size 0.3s ease;
 }
 
-.link:hover {
-  background-size: 100% 3px;
+.carte a:hover {
+  text-decoration: underline;
 }
 ```
 
-La `:hover`, o linie colorată crește de la stânga la dreapta sub link.
+Linkurile din capitole par curate și arată sublinierea doar când treci peste ele.
 
-**Acasă 2 — Un buton care pulsează la focus.**
+**Acasă 2 — Rândul de tabel colorat la `:hover`.**
 
 ```css
-.buton:focus {
-  outline: 3px solid gold;
-  outline-offset: 3px;
-  transform: scale(1.05);
+tr:hover {
+  background-color: lightyellow;
 }
 ```
 
-Un contur mai îndepărtat și o mică mărire fac butonul ușor de văzut pentru cine folosește Tab.
+Rândul peste care treci se colorează, ca să urmărești ușor datele din „Fișa pe scurt”.
 
 4. **Încă patru exerciții (B–E):**
 
-**B — Ce face regula?** Spune ce se întâmplă: (1) `.a:hover { transform: scale(0.9); }`; (2) `li:nth-child(3) { color: red; }`; (3) `.b { transition: transform 1s linear; }` împreună cu `.b:hover { transform: rotate(90deg); }`; (4) `p:first-child { font-weight: bold; }`.
+**B — Ce face regula?** Spune ce face fiecare regulă: (1) `nav a:hover { color: red; }`; (2) `transition: color 0.5s;`; (3) `transform: translateY(-10px);`; (4) `nav a:focus { background-color: gold; }`; (5) `nav a:active { transform: translateY(2px); }`.
 
-**C — Scrie regula.** Scrie în CSS: (1) un link care devine roșu și fără subliniere la `:hover`; (2) o cutie care se rotește 5 grade lin la `:hover`, în 0,4 secunde; (3) o listă în care elementele impare au fundal galben.
+**C — Scrie regula.** Scrie în CSS: (1) un link `.buton` cu fundal albastru care devine verde la `:hover`; (2) schimbarea culorii să dureze o jumătate de secundă; (3) o `.cutie` care se ridică cu 8px la `:hover`.
 
 **D — Găsește greșelile.** Găsește **3 greșeli** în codul de mai jos și repară greșelile:
 
 ```text
-.buton:hover {
-  background-color: crimson;
-  transition: background-color 0.3;
+.buton :hover {
+  background-color: green
 }
 
-.cutie {
-  transform: scale(1.2);
-  transform: rotate(10deg);
+.buton {
+  transition: background-color 0.3;
 }
 ```
 
-**E — Explică cu cuvintele tale.** Într-un comentariu din cod: de ce nu ascundem informații importante în spatele lui `:hover`? De ce trebuie `:focus` vizibil? Unde se scrie `transition`: pe stilul de bază sau pe `:hover`?
+**E — Explică cu cuvintele tale.** Într-un comentariu din cod: de ce punem și `:focus`, nu doar `:hover`? De ce scriem `transition` pe starea normală? De ce nu e bine să punem prea multe efecte într-o pagină?
 
 ## Ce urmează — Lecția 8
-Învățăm **animațiile cu `@keyframes`**: elemente care pulsează, sar sau apar încet, fără ca cineva să le atingă.
+Învățăm **animațiile**: elemente care se mișcă singure, fără să le atingi, cu `@keyframes`.
 
 ---
 
 ## Răspunsuri
-- **Quiz scurt:** (1) schimbă stilul elementului numai cât timp mouse-ul este deasupra lui; (2) pe elementul de bază, nu pe `:hover`; (3) mărește elementul de 1,1 ori, fără să împingă celelalte elemente; (4) rândurile pare ale tabelului (al doilea, al patrulea și tot așa); (5) pentru că cine folosește tastatura nu ar mai vedea unde este selecția, deci trebuie pus un alt contur în loc.  
-- **Dacă ritmul clasei este lent:** Exemplul 6 (`:nth-child`) și tabelul din proiect sunt opționale; rămâneți la `:hover` și `transition`.  
-- **Tema, exercițiul B:** (1) elementul se micșorează la 90% când mouse-ul este deasupra; (2) al treilea element `li` (între frații lui) devine roșu; (3) cutia se rotește lin 90 de grade într-o secundă, cu viteză egală, la `:hover`, și revine lin când mouse-ul pleacă, pentru că `transition` este pus pe starea de bază; (4) orice `p` care este **primul copil** al părintelui său devine îngroșat; dacă înaintea lui este alt element (de exemplu un `h1`), regula nu are niciun efect. Pentru primul `p`, oriunde ar sta, se folosește `p:first-of-type`.  
-- **Tema, exercițiul C:** (1) `a:hover { color: red; text-decoration: none; }`; (2) `.c { transition: transform 0.4s ease; } .c:hover { transform: rotate(5deg); }`; (3) `li:nth-child(odd) { background-color: yellow; }`.  
-- **Tema, exercițiul D:** (1) `transition` trebuie scris pe `.buton`, nu pe `:hover`; (2) `0.3` trebuie `0.3s`; (3) două `transform` în aceeași regulă — trebuie unite: `transform: scale(1.2) rotate(10deg);`.  
-- **Tema, exercițiul E:** pe telefon nu există mouse, iar informația ar dispărea; cine folosește tastatura are nevoie să vadă unde este selecția; `transition` se scrie pe stilul de bază.  
-- **Notă pentru profesor:** la **exercițiul B (3)** din temă, accentul este că `transition` pus pe starea de bază face lină și intrarea, și ieșirea. Dacă elevii încurcă, arătați pe proiector cele două variante, cu `transition` pe bază și pe `:hover`. Imaginile din Exemplul 7 sunt opționale: se pot folosi desene proprii sau poze fără persoane; fără imagini, exemplul se poate face cu o cutie colorată.
+- **Quiz scurt:** (1) aplică stilul cât timp cursorul e deasupra elementului; (2) pentru cei care folosesc tastatura (Tab); (3) pe starea normală, ca schimbarea să fie lină și la intrare, și la ieșire; (4) urcă elementul cu 5px, fără să mute restul paginii; (5) pentru că încetinește pagina și poate anima lucruri la care nu te-ai gândit.  
+- **Tema, exercițiul B:** (1) linkul devine roșu cât timp mouse-ul e peste el; (2) culoarea se schimbă lin, în jumătate de secundă; (3) elementul urcă cu 10px; (4) linkul selectat cu tastatura devine auriu; (5) elementul coboară 2px cât ții clicul apăsat.  
+- **Tema, exercițiul C:** (1) `.buton { background-color: blue; } .buton:hover { background-color: green; }`; (2) `.buton { transition: background-color 0.5s; }`; (3) `.cutie { transition: transform 0.3s; } .cutie:hover { transform: translateY(-8px); }`.  
+- **Tema, exercițiul D:** (1) `.buton :hover` are spațiu, trebuie `.buton:hover`; (2) lipsește `;` după `green`; (3) `0.3` trebuie `0.3s`.  
+- **Tema, exercițiul E:** pentru că nu toată lumea folosește mouse-ul; ca să fie lină și la intrare, și la ieșire; efectele prea multe obosesc ochii și distrag de la conținut.  
+- **Dacă ritmul clasei este lent:** Exemplul 5 (`:active`) se poate face scurt; Exemplul 2 (`:focus`) rămâne obligatoriu, pentru accesibilitate. Submeniul (Exemplele 6–7) este piesa nouă a lecției: dacă nu ajung la el, îl pot termina acasă, cu codul din Exemplul 8.  
+- **Notă pentru profesor:** `scale`, `rotate`, `:nth-child` și zoom-ul pe imagini apar doar în Bonus; `cursor` nu face parte din lecție. `position: relative` și `absolute` apar doar pentru submeniu (nu sunt predate separat), iar `:focus-within` doar ca o linie în plus pentru tastatură. Efectele de `:hover` nu funcționează pe telefon, deci verificați împreună cu elevii că pagina arată bine și fără ele.

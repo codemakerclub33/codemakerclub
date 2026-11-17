@@ -44,3 +44,17 @@ Elevul își construiește pagina din Wikipedia pas cu pas: M1 `wikipedia.html` 
 - „profesor”, „școală”, „elev” în textul pentru copii din M2.
 - Exemple de nume repetate în toate lecțiile (Pisica, Cățelul, Delfinul): variază subiectele între lecții.
 - Cuvinte decorative de umplutură: „super”, „minunat”, „perfect”.
+
+## Hotărâri pentru M3 (CSS): un singur fir
+- Copilul lucrează la **o singură pagină**: `tema.html` (articolul de pe Wikipedia), cu **un singur `stil.css`** care crește lecție cu lecție. Nu există pagină de joacă (`index.html`) și nici proiecte separate (animale, jocuri).
+- Fiecare lecție: folder nou `Prenume_Nume_W3_L<n>`, **copie** a folderului lecției trecute (L1: `tema.html`, `imagini`, `media` din M2). Fără creat/copiat fișier cu fișier.
+- **Nume de fișiere fixe** (`tema.html`, `stil.css`, `imagini`, `media`): nu se redenumesc pe lecție (se strică căile din `<link>` și `src`). Versiunile sunt păstrate de folderele pe lecție. Toate folderele se țin într-un folder-părinte `Cursul_HTML_CSS` cu subfoldere `Modul1`, `Modul2`, `Modul3`.
+- Pagina-model „Delfinul” (L1): `header` (h1#titlu-pagina + p), `nav`, `main` cu `section.carte`, `aside` (fișa), `footer`. Exemplele arată doar CSS pe aceste piese. Exemplul 8 arată `stil.css` al modelului, apoi copilul își face **propria pagină după model** (subiect și culori proprii).
+- Lecții mai ușoare: ~2.500–2.700 cuvinte, 10–14 blocuri de cod, un exemplu = o idee (bloc de max 8–10 rânduri), max 4–5 lucruri noi pe lecție. Ce se scoate se notează în `content/lectii/web/_de-mutat-in-modul4.md`.
+- Live Server: clic dreapta pe `tema.html` → Open with Live Server (sau Go Live), reamintit în L1.
+
+## M3: pagina Delfinul crește lecție cu lecție (piese noi de HTML)
+- Pagina-model rămâne Delfinul (L1 neschimbat ca pagină). Din L2, fiecare lecție poate aduce o **piesă nouă de HTML**, într-o secțiune `### Piesă nouă de HTML: <nume>`, plasată **chiar înaintea exemplului** care o stilizează și **înaintea** bulinei „Încearcă tu” care o folosește. Piesa se copiază, nu se învață; stilul ei apare într-un singur exemplu (fără repetări), apoi în Ex8.
+- Copilul își face piesa pe subiectul lui (o frază/poză proprie). Fără exerciții „Repară codul” din fișierele vechi.
+- Piese: L2 banner `.banner` (între `</nav>` și `<main>`); L3 nimic (doar `.banner` font-size); L4 caseta „Știai că?” `.stiai`; L5 capitol cu poză + text `.cu-poza` (poza proprie din `imagini`), Bonus galerie 3 poze; L6 coloana stângă „Alte animale” (trei zone cu grid) + buton „Sus” în Bonus; L7 submeniu `nav li ul` la hover; L8 `<span class="delfin">🐬</span>` în banner, animat cu @keyframes; L9 `<section class="cifre">` cu 3 cutii (rând pe calculator, coloană pe telefon); L10 nimic nou.
+- Referințe în text: „Exemplul N din această lecție” (nu „Exemplul N” gol, ca să nu se confunde cu Lecția N).

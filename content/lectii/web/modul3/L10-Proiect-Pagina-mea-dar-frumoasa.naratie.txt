@@ -1,35 +1,13 @@
-Lecția zece. Proiect: Enciclopedia în haine noi.
+Lecția zece. Pagina a doua: două pagini și un singur stil.
 
-Ai învățat selectori, culori, text, cutii, Flexbox, Grid, efecte, animații și adaptare la telefon. Azi le folosești pe toate: iei pagina cu mica ta enciclopedie din modulul trecut și o transformi dintr o pagină simplă într una frumoasă, cu un fișier de stil separat.
+Azi faci singur o provocare. Ai deja o pagină, iar acum construiești o a doua pagină, o galerie cu șase carduri, care folosește același fișier de stil. Nu primești cod de stil gata scris. Primești doar scheletul paginii și o fișă cu cerințe.
 
-Ce facem azi. La final ai o pagină completă, cu stil separat, paletă în variabile, text citibil, antet cu meniu, carduri în grilă, efecte la hover, o animație blândă și adaptare la telefon. Un proiect adevărat te obligă să folosești lucrurile învățate împreună, iar la sfârșit ai o pagină pe care o poți arăta familiei.
+Mai întâi citești fișa și alegi șase lucruri despre subiectul tău, câte unul pentru fiecare card. Apoi pui în ordine fișierul de stil, cu comentarii și cu regulile pentru telefon la sfârșit.
 
-Siguranță. Folosești pagina ta sau un animal ori un hobby, nu o persoană. Nu scrii date personale. Imaginile sunt din pachetul media, făcute de tine sau alese cu profesorul. Animațiile sunt blânde, fără licăriri rapide, iar pagina respectă mișcarea redusă. Fonturile sunt cele din sistem.
+Creezi pagina a doua din schelet și o legi de același fișier de stil. Adaugi în meniu un link spre ea, ca să mergi de pe o pagină pe cealaltă.
 
-Azi nu învățăm instrucțiuni noi. Folosim tot ce știm din modul: link și selectori, variabile, fonturi, cutii, Flexbox, Grid, hover, animații și media.
+Apoi scrii cele șase carduri și le pui în grilă, cu trei coloane, chenar, colțuri rotunjite și umbră. Dai paginii a doua o dispoziție proprie: altă culoare de accent, schimbată cu variabile doar pentru această pagină.
 
-Primul pas. Harta stilului. Hotărăști patru culori care se potrivesc, două fonturi, cum arată antetul și cardurile, ce se mișcă la hover și ce se schimbă pe telefon. Verifici ca textul să se citească pe fundal. Creezi folderul și pui în el pagina ta ca index punct html.
+Adaugi un efect când treci cu mouse-ul, o animație blândă și o singură coloană pe telefon. Ai grijă ca regula pentru telefon să fie scrisă pe aceeași clasă ca regula de grilă, altfel nu are efect. Nu uita regula pentru cei care nu vor mișcare.
 
-Al doilea pas. Muți stilul din blocul style în fișierul stil punct css și îl legi cu link în head. Verifici și linia viewport. Scrii paleta în variabile, regula de bază cu border box, imaginile cu max width și textul cu fonturi cu rezervă și line height.
-
-Al treilea pas. Antetul și meniul. Header cu culoarea principală, meniu orizontal cu Flexbox, fără buline, și meniul lipit sus la derulare.
-
-Al patrulea pas. Cardurile. Fiecare secțiune are clasa carte. Le așezi într o grilă cu auto fit, cu chenar, colțuri rotunjite și umbră. Tabelul primește antet colorat și rânduri alternative.
-
-Al cincilea pas. Efectele. Hover și focus pe meniu, cărți care se ridică și o singură animație blândă de apariție. Regula pentru mișcare redusă se scrie la sfârșit. Fiecare proprietate, transition și animation, se scrie o singură dată pe un element.
-
-Al șaselea pas. Telefonul. O regulă media la sfârșitul fișierului: meniul poate trece pe mai multe rânduri, iar cardurile stau pe o singură coloană. Verifici în DevTools, în modul telefon. Pe Mac deschizi DevTools cu Command, Option și I.
-
-Al șaptelea pas. Lista de verificare. Parcurgi punct cu punct și repari ce nu e bifat.
-
-Al optulea pas. Prezentarea de un minut: despre ce este pagina, de ce ai ales culorile, de ce ești mândru, ce a fost greu și cum arată pe telefon. Colegul îți spune un lucru reușit și un lucru care se poate îmbunătăți.
-
-De făcut azi. Minim: stil legat corect, culori și fonturi alese, carduri cu chenar, meniu orizontal și o regulă media. Complet: adaugi variabile, grilă adaptivă, efecte, animație, comentarii, verificare pe telefon și prezentarea.
-
-Bonus. Pagina cu două teme. O a doua paletă, un buton Sus, o a doua pagină cu același stil și o regulă pentru tabletă.
-
-Greșeli frecvente. Ai uitat link ul. Ai lăsat și blocul style. Calea este greșită. Ai scris var fără liniuțe. Ai uitat litera s la timp. Textul nu se vede pe fundal. Cardurile ies din ecran.
-
-Tema. Arată pagina cuiva din familie și întreabă ce a plăcut. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
-
-Recapitulare. Stil separat, paletă în variabile, Flexbox pentru meniu, Grid pentru carduri, efecte blânde și adaptare la telefon. În modulul patru începem JavaScript. Succes!
+La final verifici totul cu lista, testezi cu un coleg și prezinți paginile într-un minut. Dacă ai timp, bonusul îți cere o a treia pagină și un buton pentru a urca sus. Spor la lucru!

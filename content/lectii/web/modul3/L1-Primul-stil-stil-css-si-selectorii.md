@@ -3,13 +3,13 @@
 **Modulul 3 · CSS: Stil și culoare · 2 ore**  
 **Code Maker Club · CSS Stylist**
 
-> Până acum ai pus stilul în atributul `style` sau într-un bloc `<style>`. Azi mutăm tot într-un **fișier separat**, `stil.css`, pe care îl poate folosi orice pagină. Așa schimbi aspectul unui întreg site dintr-un singur loc.  
+> Până acum ai pus stilul în atributul `style` sau într-un bloc `<style>`. Azi mutăm tot într-un **fișier separat**, `stil.css`, pe care îl poate folosi orice pagină. Așa schimbi aspectul unui întreg site dintr-un singur loc. În tot Modulul 3 lucrezi la **o singură pagină**: articolul tău de pe Wikipedia, `tema.html`.  
 > Proiect: **„Primul fișier de stil”** · folder: `Prenume_Nume_W3_L1` (ex. `Ana_Pop_W3_L1`)
 
 ---
 
 ## Ce facem azi
-La final ai o pagină legată la un fișier `stil.css`, cu reguli pentru tag, pentru clasă și pentru id, cu selectori grupați, cu selectori „în interiorul” altor elemente și cu comentarii. Știi și ce se întâmplă când două reguli se bat: cine câștigă. Un site poate avea 20 de pagini. Dacă stilul stă în fiecare pagină, schimbi 20 de fișiere. Dacă stă într-un singur `stil.css`, schimbi un rând și **toate paginile se schimbă deodată**. Așa lucrează toți oamenii care fac site-uri.
+La final pagina ta `tema.html` este legată la un fișier `stil.css`, cu reguli pentru tag, pentru clasă și pentru id, cu selectori grupați, cu selectori „în interiorul” altor elemente și cu comentarii. Știi și ce se întâmplă când două reguli se bat: cine câștigă. Un site poate avea 20 de pagini. Dacă stilul stă în fiecare pagină, schimbi 20 de fișiere. Dacă stă într-un singur `stil.css`, schimbi un rând și **toate paginile se schimbă deodată**. Așa lucrează toți oamenii care fac site-uri.
 
 ---
 
@@ -17,13 +17,13 @@ La final ai o pagină legată la un fișier `stil.css`, cu reguli pentru tag, pe
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · aducem pagina cu articolul de pe Wikipedia |
+| 0–15 | Recapitulare · aducem pagina `tema.html` și vedem din ce piese este făcută |
 | 15–30 | Un fișier separat pentru stil · legarea cu `<link>` (**Exemplul 1**) |
 | 30–45 | Cum arată o regulă · selectorul de tag (**Exemplul 2**) |
 | 45–65 | Selectori după clasă și după id (**Exemplele 3–4**) |
 | 65–80 | Mai mulți selectori · elemente din interiorul altora (**Exemplele 5–6**) |
 | 80–100 | Cine câștigă · comentarii (**Exemplul 7**) |
-| 100–115 | Mini-proiect: primul fișier de stil (**Exemplul 8**) |
+| 100–115 | Mini-proiect: toate la un loc (**Exemplul 8**) |
 | 115–120 | Recap și temă |
 
 ---
@@ -47,14 +47,69 @@ Din Modulele 1 și 2 ții minte că:
 - un bloc `<style>` din `<head>` poate stila mai multe elemente deodată;
 - `class` este un nume pentru un grup, iar în stil se scrie cu **punct**: `.carte`;
 - `id` este un nume unic, iar în stil se scrie cu **diez**: `#titlu`.
+- Live Server pornește așa: **clic dreapta** pe `tema.html`, apoi **Open with Live Server** (sau butonul **Go Live** din bara de jos); pagina se reîncarcă singură la fiecare salvare cu Ctrl+S.
+
+Pagina ta din Modulul 2, `tema.html`, are aceste piese. Tot Modulul 3 o îmbracăm în stil. Mai jos este o **pagină-model** despre delfin; a ta are alt subiect, dar aceleași piese:
+
+```html
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delfinul</title>
+</head>
+<body>
+  <header>
+    <h1 id="titlu-pagina">Delfinul</h1>
+    <p>Articol după Wikipedia</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#descriere">Descriere</a></li>
+      <li><a href="#hrana">Hrana</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="carte" id="descriere">
+      <h2>Descriere</h2>
+      <p>Delfinul este un mamifer care trăiește în apă. <span class="important">Respiră aer</span>, ca noi.</p>
+    </section>
+
+    <section class="carte" id="hrana">
+      <h2>Hrana</h2>
+      <p>Mănâncă pești mici și calamari.</p>
+    </section>
+
+    <aside>
+      <h2>Fișa pe scurt</h2>
+      <table>
+        <tr><th>Lungime</th><td>2–4 metri</td></tr>
+        <tr><th>Trăiește</th><td>în mări și oceane</td></tr>
+      </table>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Sursa: Wikipedia</p>
+  </footer>
+</body>
+</html>
+```
+
+În lecțiile următoare scriem mai ales **CSS** pentru aceste piese. Din când în când primești și o **piesă nouă de HTML** (un banner, o casetă, un submeniu), pe care o copiezi în `tema.html`: așa pagina ta crește de la o lecție la alta, până la una completă și frumoasă. Dacă pagina ta nu are `header`, `nav`, `main`, `section class="carte"`, `aside` și `footer`, completează-le acum, după Modulul 2.
 
 **Încearcă tu (8 min)**  
-- [ ] Creează folderul `Prenume_Nume_W3_L1` și fișierul `index.html` cu scheletul complet scris de tine  
-- [ ] Pune în `<body>` un `<h1>`, două paragrafe și o listă cu trei elemente  
-- [ ] Copiază în folder pagina `tema.html` din Modulul 2 (articolul tău de pe Wikipedia), împreună cu folderele `imagini` și `media`  
-- [ ] Deschide `tema.html` cu Live Server și uită-te la regulile din `<style>`: azi le muți într-un fișier separat  
+- [ ] Creează folderul `Prenume_Nume_W3_L1` și copiază în el `tema.html` din Modulul 2, împreună cu folderele `imagini` și `media`  
+- [ ] Deschide `tema.html` cu Live Server și găsește în ea `header`, `nav`, `main`, `section`, `aside` și `footer`  
+- [ ] Verifică ce clase și ce id-uri are: `class="carte"` pe capitole, `id="titlu-pagina"` pe `<h1>`; adaugă-le dacă lipsesc  
+- [ ] Uită-te la regulile din `<style>`: azi le muți într-un fișier separat  
 
-> De aici înainte, exemplele arată ce scrii în `index.html` (în interiorul `<body>`) și, separat, ce scrii în `stil.css`. Când trebuie scheletul întreg, îl arătăm.
+> De aici înainte, exemplele arată ce scrii în `stil.css`. Când trebuie și HTML-ul, îl arătăm. Scrii mereu în **același** `stil.css`, pe pagina ta.
+
+> **Unde salvezi:** ține toate folderele cursului într-un singur folder, `Cursul_HTML_CSS`, cu câte un subfolder pe modul (`Modul1`, `Modul2`, `Modul3`). În Modulul 3, fiecare lecție are folderul ei (`Prenume_Nume_W3_L1`, `Prenume_Nume_W3_L2` și așa mai departe), copiat din cel al lecției trecute. **Numele fișierelor nu se schimbă:** `tema.html`, `stil.css`, `imagini`, `media`.
 
 ---
 
@@ -78,27 +133,20 @@ h1 {
 }
 ```
 
-Pasul 1: în același folder cu `index.html`, creează un fișier nou numit `stil.css`.
+Pasul 1: în același folder cu `tema.html`, creează un fișier nou numit `stil.css`.
 
-Pasul 2: în `<head>` din `index.html`, adaugă rândul care leagă pagina de fișierul de stil:
+Pasul 2: în `<head>` din `tema.html`, adaugă rândul care leagă pagina de fișierul de stil:
 
 ```html
-<!DOCTYPE html>
-<html lang="ro">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Primul fișier de stil</title>
+  <title>Delfinul</title>
   <link rel="stylesheet" href="stil.css">
 </head>
-<body>
-  <h1>Salut!</h1>
-  <p>Aceasta este prima mea pagină cu fișier de stil.</p>
-</body>
-</html>
 ```
 
-Pasul 3: în `stil.css` scrie regula de mai sus. Salvează **ambele** fișiere (Ctrl+S) și privește pagina în Live Server. Titlul a devenit roșu-portocaliu, iar în `index.html` nu ai scris nicio culoare!
+Pasul 3: în `stil.css` scrie regula de mai sus. Salvează **ambele** fișiere (Ctrl+S) și privește pagina în Live Server. Titlul a devenit roșu-portocaliu, iar în `tema.html` nu ai scris nicio culoare!
 
 | Parte din `<link>` | Ce înseamnă |
 |--------------------|-------------|
@@ -107,15 +155,15 @@ Pasul 3: în `stil.css` scrie regula de mai sus. Salvează **ambele** fișiere (
 
 > În `stil.css` **nu** scrii `<style>` și nu scrii taguri HTML. Fișierul conține doar reguli CSS.
 
-> Dacă stilul nu apare: verifică numele (`stil.css`, nu `stil.css.txt`), că fișierul este în **același folder** cu `index.html`, că ai salvat ambele fișiere și că ai scris `rel="stylesheet"` fără greșeli.
+> Dacă stilul nu apare: verifică numele (`stil.css`, nu `stil.css.txt`), că fișierul este în **același folder** cu `tema.html`, că ai salvat ambele fișiere și că ai scris `rel="stylesheet"` fără greșeli.
 
 **Încearcă tu (6 min)**  
-- [ ] Creează `stil.css` lângă `index.html` și leagă-l cu `<link>` în `<head>`  
-- [ ] Creează în `tema.html` același `<link>` și un fișier `stil.css` în folderul ei  
-- [ ] Mută în `stil.css` regulile din `<style>` de la `tema.html` și șterge blocul `<style>`  
+- [ ] Creează `stil.css` lângă `tema.html` și leagă-l cu `<link>` în `<head>`  
+- [ ] Mută în `stil.css` regulile din `<style>` și șterge blocul `<style>`  
+- [ ] Pune `h1 { color: tomato; }` în `stil.css` și verifică dacă titlul se schimbă  
 
 **Gata când:**  
-- [ ] Ai un fișier `stil.css` lângă `index.html`  
+- [ ] Ai un fișier `stil.css` lângă `tema.html`  
 - [ ] Pagina este legată la `stil.css` cu `<link>` în `<head>`  
 - [ ] `tema.html` arată la fel ca înainte, dar stilul vine din `stil.css`  
 
@@ -166,7 +214,7 @@ li {
 **Încearcă tu (6 min)**  
 - [ ] Pune în `stil.css` reguli pentru `body`, `h1`, `h2` și `p`  
 - [ ] Schimbă o culoare și salvează: vezi cum se schimbă toate elementele de același fel  
-- [ ] În `tema.html`, pune un fundal deschis pe `body` și o culoare pentru `h1` și `h2`, care se potrivește cu tema ta  
+- [ ] Alege un fundal deschis pentru `body` și o culoare pentru `h1` și `h2` care se potrivește cu tema ta  
 
 ---
 
@@ -174,12 +222,10 @@ li {
 
 ### Exemplul 3 — Selectorul de clasă (punct)
 
-În `index.html`:
+În `tema.html` (pagina-model) există deja:
 
 ```html
-<p>Un paragraf obișnuit.</p>
-<p class="important">Un paragraf important.</p>
-<p class="important">Încă unul important.</p>
+<p>Delfinul este un mamifer care trăiește în apă. <span class="important">Respiră aer</span>, ca noi.</p>
 ```
 
 În `stil.css`:
@@ -191,14 +237,14 @@ li {
 }
 ```
 
-În HTML scrii `class="important"` **fără punct**. În CSS scrii `.important` **cu punct**. Doar paragrafele cu clasa `important` devin roșii și groase. Primul paragraf rămâne obișnuit.
+În HTML scrii `class="important"` **fără punct**. În CSS scrii `.important` **cu punct**. Doar cuvintele din `<span class="important">` devin roșii și groase. Restul paragrafului rămâne obișnuit.
 
 ### Exemplul 4 — Selectorul de id (diez)
 
-În `index.html`:
+În `tema.html`:
 
 ```html
-<h1 id="titlu-pagina">Jocurile mele preferate</h1>
+<h1 id="titlu-pagina">Delfinul</h1>
 ```
 
 În `stil.css`:
@@ -219,9 +265,9 @@ Un `id` apare **o singură dată** într-o pagină. Regula cu `#` se aplică doa
 | id | `#titlu-pagina` | unui singur element |
 
 **Încearcă tu (6 min)**  
-- [ ] Scrie o regulă pentru o clasă și una pentru un id în `stil.css`  
-- [ ] Pune în `index.html` clasa și id-ul fără punct și fără diez  
-- [ ] În `tema.html`, pune `id="titlu-pagina"` pe `<h1>` și centrează-l din `stil.css`  
+- [ ] Scrie în `stil.css` o regulă pentru `.important` și una pentru `#titlu-pagina`  
+- [ ] Pune în `tema.html` clasa și id-ul **fără** punct și fără diez  
+- [ ] Centrează `<h1>` prin regula cu `#`  
 
 **Gata când:**  
 - [ ] Ai folosit un selector de tag, unul de clasă și unul de id în `stil.css`  
@@ -246,17 +292,13 @@ Regula se aplică și titlurilor `<h1>`, și `<h2>`, și `<h3>`. Mai scurt decâ
 
 ### Exemplul 6 — Doar în interiorul altui element
 
-Uneori vrei să stilezi un `<p>` doar dacă se află în interiorul unei cutii. Scrii **selectorul cutiei, un spațiu și selectorul din interior**:
-
-În `index.html`:
+Uneori vrei să stilezi un `<p>` doar dacă se află în interiorul unui capitol. Scrii **selectorul capitolului, un spațiu și selectorul din interior**. În pagina-model, paragrafele sunt în `section class="carte"`:
 
 ```html
-<p>Paragraf în afara cutiei.</p>
-
-<div class="carte">
-  <h2>Pisica</h2>
-  <p>Paragraf în interiorul cutiei.</p>
-</div>
+<section class="carte" id="hrana">
+  <h2>Hrana</h2>
+  <p>Mănâncă pești mici și calamari.</p>
+</section>
 ```
 
 În `stil.css`:
@@ -273,15 +315,15 @@ Uneori vrei să stilezi un `<p>` doar dacă se află în interiorul unei cutii. 
 }
 ```
 
-`.carte p` se citește „orice `p` din interiorul unui element cu clasa `carte`”. Doar al doilea paragraf devine gri și înclinat. Primul rămâne neschimbat.
+`.carte p` se citește „orice `p` din interiorul unui element cu clasa `carte`”. Doar paragrafele din capitole devin gri și înclinate. Paragraful din `header` rămâne neschimbat.
 
 > Atenție la spațiu: `.carte p` (cu spațiu) înseamnă „un `p` în interiorul clasei”. `.carte.rara` (fără spațiu) înseamnă „un element care are **ambele** clase”.
 
 **Încearcă tu (8 min)**  
 - [ ] Grupează `h1, h2` într-o singură regulă cu virgulă  
-- [ ] Fă o cutie cu clasa `carte` care conține un titlu și un paragraf  
-- [ ] Stilează doar paragraful din interiorul cutiei, cu `.carte p`  
-- [ ] În `tema.html`, grupează titlurile `h2, h3` într-o regulă și stilează `.carte p` pentru paragrafele din capitole  
+- [ ] Verifică dacă fiecare capitol are `class="carte"`  
+- [ ] Stilează doar paragrafele din capitole, cu `.carte p`  
+- [ ] Pune un chenar și un `padding` pe `.carte`  
 
 ---
 
@@ -291,7 +333,7 @@ Uneori vrei să stilezi un `<p>` doar dacă se află în interiorul unei cutii. 
 
 Ce culoare va avea acest paragraf?
 
-În `index.html`:
+Într-o pagină de probă:
 
 ```html
 <p class="special" id="unic">Salut!</p>
@@ -336,10 +378,10 @@ body {
 ```
 
 **Încearcă tu (8 min)**  
-- [ ] Scrie cele trei reguli din exemplu și verifică culoarea paragrafului  
+- [ ] Pune în `tema.html` un paragraf cu `class="special" id="unic"` și scrie cele trei reguli din exemplu; verifică culoarea  
 - [ ] Mută regula `p` sub regula `.special` și vezi dacă se schimbă ceva  
-- [ ] Pune în `stil.css` comentarii care împart fișierul în secțiuni (pagina, titluri, cutii, texte speciale)  
-- [ ] În `tema.html`, pune un `style="color: black;"` pe un paragraf și vezi că bate regulile din `stil.css`  
+- [ ] Pune un `style="color: black;"` pe acel paragraf și vezi că bate regulile din `stil.css`; apoi șterge paragraful de probă  
+- [ ] Pune în `stil.css` comentarii care împart fișierul în secțiuni (pagina, titluri, capitole, texte speciale)  
 
 **Gata când:**  
 - [ ] Poți spune ce culoare are paragraful din exemplu și de ce  
@@ -347,41 +389,11 @@ body {
 
 ---
 
-## 7. Mini-proiect
+## 7. Mini-proiect: toate la un loc
 
-### Exemplul 8 — „Primul fișier de stil”
+### Exemplul 8 — Tot ce ai învățat, într-un singur `stil.css`
 
-Fișierul `index.html`:
-
-```html
-<!DOCTYPE html>
-<html lang="ro">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fotbalul meu</title>
-  <link rel="stylesheet" href="stil.css">
-</head>
-<body>
-  <h1 id="titlu-pagina">Fotbalul meu</h1>
-  <p class="intro">Fotbalul este sportul meu preferat. Iată câteva lucruri despre el.</p>
-
-  <h2>Poziții pe teren</h2>
-  <div class="carte">
-    <h3>Portarul</h3>
-    <p>Apără poarta și poate prinde mingea cu mâinile.</p>
-  </div>
-  <div class="carte">
-    <h3>Atacantul</h3>
-    <p>Încearcă să dea goluri.</p>
-  </div>
-
-  <p class="important">Fotbalul se joacă în echipă!</p>
-</body>
-</html>
-```
-
-Fișierul `stil.css`:
+Pagina despre delfin (cea din Recapitularea rapidă) are doar în plus, în `<head>`, rândul `<link rel="stylesheet" href="stil.css">`. Restul HTML-ului nu se schimbă. Iată `stil.css` pentru ea, cu **tot ce ai învățat azi la un loc**. Citește-l de sus în jos; fiecare parte are un comentariu. Delfinul este **modelul tău**:
 
 ```css
 /* Pagina în general */
@@ -401,7 +413,7 @@ h2, h3 {
   color: navy;
 }
 
-/* Cutiile cu poziții */
+/* Capitolele */
 .carte {
   border: 2px solid darkgreen;
   background-color: white;
@@ -414,20 +426,20 @@ h2, h3 {
 }
 
 /* Texte speciale */
-.intro {
-  font-size: 18px;
-}
-
 .important {
   color: crimson;
   font-weight: bold;
 }
 ```
 
-Fă pagina despre **un sport sau un joc** care îți place. Folosește selectori de tag, de clasă și de id, cel puțin o regulă cu virgulă, una cu „în interior” și comentarii.
+Cu doar 4 grupuri de reguli, pagina are deja culori, titlu centrat și capitole încadrate. Ai folosit selectori de tag, de clasă și de id, o regulă cu virgulă, una cu „în interior” și comentarii. **Acum e rândul tău:** fă-ți propria pagină după modelul Delfinul, cu **subiectul tău și culorile tale**. Nu copia culorile delfinului, ci urmează aceiași pași: reguli de tag, o clasă, un id, o regulă cu virgulă, una „în interior” și comentarii.
+
+**Încearcă tu (10 min)**  
+- [ ] Scrie în `stil.css` de la pagina ta câte o regulă de tag, de clasă și de id, ca în model  
+- [ ] Adaugă o regulă cu virgulă și una „în interior”, cu culorile tale  
+- [ ] Împarte fișierul cu comentarii, ca în model  
 
 **Gata când:**  
-- [ ] Pagina are `index.html` și `stil.css`, legate cu `<link>`  
 - [ ] `stil.css` conține reguli de tag, de clasă și de id  
 - [ ] Ai o regulă cu virgulă și una cu un selector din interiorul unei clase  
 - [ ] Ai scris cel puțin două comentarii în CSS  
@@ -444,9 +456,9 @@ Fă pagina despre **un sport sau un joc** care îți place. Folosește selectori
 | **Complet** | Minim + o regulă cu mai mulți selectori separați prin virgulă, o regulă pentru elementele din interiorul unei clase și comentarii în CSS |
 
 ### Pasul 1 — Minim
-Pe scheletul complet, leagă pagina la `stil.css` și scrie în el o regulă pentru un tag, una pentru o clasă și una pentru un id.
+Pe `tema.html`, leagă pagina la `stil.css` și scrie în el o regulă pentru un tag, una pentru o clasă și una pentru un id.
 
-- [ ] Folderul `Prenume_Nume_W3_L1` are `index.html` și `stil.css`  
+- [ ] Folderul `Prenume_Nume_W3_L1` are `tema.html` și `stil.css`  
 - [ ] Pagina are un `<link>` către `stil.css` în `<head>`  
 - [ ] Ai o regulă de tag, una de clasă și una de id  
 
@@ -454,8 +466,8 @@ Pe scheletul complet, leagă pagina la `stil.css` și scrie în el o regulă pen
 Îmbunătățești pagina:
 
 - [ ] Ai un `<h1>` cu `id`, stilat cu selector de id  
-- [ ] Ai cel puțin **trei cutii** `<div class="carte">`, stilate printr-o singură regulă de clasă  
-- [ ] Ai o regulă `.carte p` pentru paragrafele din cutii  
+- [ ] Toate capitolele au `class="carte"`, stilate printr-o singură regulă de clasă  
+- [ ] Ai o regulă `.carte p` pentru paragrafele din capitole  
 - [ ] Ai o regulă cu mai mulți selectori separați prin virgulă  
 - [ ] Ai cel puțin **două comentarii** în `stil.css`, iar codul este indentat  
 
@@ -466,9 +478,9 @@ Pe scheletul complet, leagă pagina la `stil.css` și scrie în el o regulă pen
 
 Faci un singur fișier de stil pentru mai multe pagini.
 
-- [ ] Fă încă o pagină, `despre.html`, care folosește **același** `stil.css`, și vezi cum arată la fel  
+- [ ] Fă încă o pagină, `despre.html`, cu un titlu și două paragrafe, care folosește **același** `stil.css`, și vezi cum arată la fel  
 - [ ] Schimbă o culoare în `stil.css` și verifică în ambele pagini că s-a schimbat  
-- [ ] Adaugă o clasă `.rara` cu alt fundal și pune clasa împreună cu `carte` la o cutie (`class="carte rara"`)  
+- [ ] Adaugă o clasă `.rara` cu alt fundal și pune clasa împreună cu `carte` la un capitol (`class="carte rara"`)  
 - [ ] Deschide DevTools (**F12**; pe Mac Cmd + Option + I), fila **Elements**, apasă pe un paragraf și privește panoul **Styles**: vezi în ce fișier este scrisă fiecare regulă  
 
 ---
@@ -501,14 +513,14 @@ Faci un singur fișier de stil pentru mai multe pagini.
 - Cum scrii un comentariu în CSS?
 
 ## Temă
-1. Fă un site mic cu **două pagini** (`index.html` și `despre.html`) despre **animalul tău preferat**, care folosesc **același** fișier `stil.css`. Folosește cel puțin o clasă, un id și o regulă cu virgulă. Salvează totul în `Prenume_Nume_W3_L1`.  
+1. Termină stilul paginii `tema.html`: cel puțin o clasă, un id, o regulă cu virgulă, una „în interior” și comentarii. Salvează totul în `Prenume_Nume_W3_L1`.  
 2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
 3. **Exemple pentru acasă.** Încearcă amândouă:
 
 **Acasă 1 — Două clase pe același element.**
 
 ```html
-<div class="carte rara">Carte rară</div>
+<section class="carte rara">Capitol rar</section>
 ```
 
 ```css

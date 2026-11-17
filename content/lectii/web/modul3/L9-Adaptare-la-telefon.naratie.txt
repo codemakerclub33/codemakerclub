@@ -1,31 +1,31 @@
-Lecția nouă. Site-ul pe orice ecran: adaptare la telefon.
+Lecția nouă. Ecranul de telefon: adaptare la telefon.
 
-Pagina ta arată bine pe calculator. Dar mulți oameni o vor deschide pe telefon, unde ecranul este mult mai îngust. O pagină bună se adaptează singură la orice ecran. Se numește design adaptiv.
+Mulți oameni deschid paginile pe telefon, unde ecranul e mic și se atinge cu degetul. O pagină făcută doar pentru calculator iese din ecran sau are litere minuscule. Azi înveți să adaptezi pagina ta la orice ecran, cu regula media. Lucrezi tot pe pagina ta, în același fișier de stil.
 
-Ce facem azi. La final ai o pagină cu viewport, o coloană care se adaptează, imagini care nu ies din ecran, o galerie care își schimbă singură numărul de coloane și un antet care trece în coloană pe telefon. Mai mult de jumătate din vizitele pe site uri vin de pe telefon.
+Ce facem azi. La final pagina ta se vede bine și pe calculator, și pe telefon: pe telefon lista din stânga, capitolele și cifrele stau într o singură coloană, meniul stă pe verticală, cu butoane mari, titlul e mai mic și nu apare derulare pe orizontală. Aproape jumătate din vizitatorii unui site vin de pe telefon, deci o pagină care nu arată bine acolo pierde cititori.
 
-Instrucțiuni noi azi. Eticheta viewport spune telefonului să folosească lățimea reală. Max width, procentele, rem și vw se adaptează la ecran. Imaginea cu max width o sută la sută nu iese din ecran. Media max width șase sute de pixeli aplică reguli doar pe ecrane mici. Auto fit cu minmax face o grilă care își schimbă singură coloanele. Clamp adaptează mărimea textului.
+Instrucțiuni noi azi. Meta viewport spune telefonului să nu micșoreze pagina. Media cu max width aplică reguli doar pe ecrane înguste. Grid template columns o fr dă o singură coloană, iar flex direction column pune meniul pe verticală.
 
-Primul pas. Viewport. Fără el, telefonul se preface că ecranul are nouă sute optzeci de pixeli și micșorează toată pagina. Verifică linia în head la fiecare pagină.
+Pregătirea. Creezi folderul lecției ca o copie a folderului din lecția trecută. Micșorezi fereastra browserului și notezi ce nu arată bine.
 
-Al doilea pas. Unitățile fixe rămân la fel pe orice ecran, cele relative se adaptează. O coloană de conținut are max width, margin zero auto și padding, nu o lățime fixă. Imaginile primesc max width o sută la sută și height auto.
+Primul pas. Ecranul mic. Pagina ta are în head rândul viewport. Fără el, telefonul crede că pagina e făcută pentru calculator și o micșorează, iar literele devin minuscule. Lățimile fixe în pixeli nu încap pe un ecran mic, așa că folosești max width și procente, iar imaginile și tabelul primesc lățime maximă o sută la sută.
 
-Al treilea pas. Media. Dacă fereastra are cel mult șase sute de pixeli, se aplică și regulile dinăuntru. Regula se scrie după cele obișnuite, ca să le poată înlocui.
+Al doilea pas. Regula media. Aplică reguli doar când o condiție este adevărată, de obicei lățimea ecranului. Max width șase sute de pixeli înseamnă cel mult șase sute de pixeli. Înăuntru pui reguli normale, între acolade. O pui la sfârșitul fișierului, ca să poată înlocui regulile de dinainte. Pe telefon, lista din stânga și capitolele stau într o singură coloană, iar meniul stă pe coloană, iar submeniul nu mai plutește.
 
-Al patrulea pas. Antetul. Pe calculator logoul este în stânga și meniul în dreapta. Pe telefon, elementele trec unul sub altul, iar meniul poate trece pe mai multe rânduri. În media schimbi doar ce trebuie.
+Al treilea pas. Textul și degetele. Titlul se micșorează pe telefon, iar spațiul de la margini scade. Butoanele trebuie să fie mari și cu spațiu între ele, ca să se apese ușor cu degetul.
 
-Al cincilea pas. Auto fit cu minmax înseamnă atâtea coloane câte încap, fiecare de cel puțin două sute douăzeci de pixeli, fără nicio regulă media. Clamp alege o mărime care crește cu ecranul, dar nu coboară sub minim și nu trece de maxim.
+Al patrulea pas. Cifre pe scurt. Piesă nouă de html: un rând cu trei cutii, fiecare cu o cifră adevărată despre subiectul tău, pe care le copiezi în pagină după capitolul cu poză. Pe calculator cutiile stau pe un rând, egale, cu flex unu. Pe telefon, flex direction column le pune una sub alta. La fel faci și cu capitolul cu poză.
 
-Al șaselea pas. Testarea. Deschizi DevTools și apeși pe pictograma cu telefon și tabletă. Pe Mac deschizi DevTools cu Command, Option și I. Verifici dacă apare derulare pe orizontală și dacă butoanele se apasă ușor.
+Al cincilea pas. Testezi cu DevTools: apeși butonul cu telefonul și tableta și verifici că nu apare derulare pe orizontală. Pe Mac deschizi DevTools cu Command, Option și I.
 
-Al șaptelea pas. Reguli pentru degete. Butoane de cel puțin patruzeci și patru de pixeli, spațiu între ele, text de cel puțin un rem și nimic important doar la hover.
+Al șaselea pas. Toate la un loc. Pagina despre delfin primește la sfârșitul fișierului de stil regula pentru telefon. Delfinul este modelul tău: tu îți faci pagina cu subiectul tău și cu valorile tale.
 
-De făcut azi. Minim: viewport, o imagine care nu iese din ecran și o regulă media. Complet: adaugi un antet care trece în coloană, carduri care se așază singure, un titlu cu clamp și testarea pe mai multe ecrane.
+De făcut azi. Minim: pagina ta cu viewport și o regulă media care pune capitolele pe o singură coloană. Complet: adaugi meniul pe coloană cu butoane mari, titlul mai mic, cifrele una sub alta, tabelul și imaginile în cutie și verifici în DevTools.
 
-Bonus. Articolul tău pe telefon. Faci pagina cu articolul de pe Wikipedia să se citească bine pe telefon: coloană îngustă, imagini adaptive, meniu în coloană și titlu cu clamp.
+Bonus. Titlu care se adaptează singur. Folosești clamp pentru titlu, o grilă care se adaptează singură, un al doilea media pentru tabletă și rotești telefonul în DevTools.
 
-Greșeli frecvente. Ai uitat viewport. Ai folosit lățimi fixe mari. Ai scris media fără px. Ai pus media înaintea celorlalte reguli. Imaginea iese din ecran. Butoanele sunt prea mici.
+Greșeli frecvente. Ai uitat viewport. Ai lățimi fixe în pixeli. Ai scris media la început de fișier. Ai scris lățimea fără px. Ai uitat parantezele sau o acoladă. Butoane mici sau lipite. N ai testat.
 
-Tema. Pagina echipei de fotbal, adaptată pentru telefon. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
+Tema. Termini adaptarea paginii tale la telefon. Apoi refaci patru exemple, încerci două exemple pentru acasă și rezolvi încă patru exerciții.
 
-Recapitulare. Viewport, unități relative, media, grilă adaptivă și testare. Succes!
+Recapitulare. Viewport, lățimi care se adaptează, regula media la sfârșit, o singură coloană pe telefon și butoane mari. Succes!
