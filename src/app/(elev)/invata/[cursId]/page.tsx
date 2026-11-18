@@ -8,7 +8,7 @@ import SedinteRamaseElev from '@/components/SedinteRamaseElev'
 import ModulNivelBadge from '@/components/ModulNivelBadge'
 import { useElevCursantId } from '@/hooks/useElevCursantId'
 import { lectiiAccesibile, useProgresCursant } from '@/hooks/useProgresCursant'
-import { esteActiv, zileRamase } from '@/lib/autodidact'
+import { accesuriExpirate, dataRo, esteActiv, zileRamase } from '@/lib/autodidact'
 
 export default function InvataCursPage() {
   const params = useParams<{ cursId: string }>()
@@ -24,6 +24,10 @@ export default function InvataCursPage() {
   const azi = new Date().toISOString().slice(0, 10)
   const autodidactActiv = (data?.autodidact ?? []).filter(
     a => a.curs_id === cursId && esteActiv(a, azi),
+  )
+  const autodidactExpirat = accesuriExpirate(
+    (data?.autodidact ?? []).filter(a => a.curs_id === cursId),
+    azi,
   )
   const bifate = new Set((data?.progres ?? []).filter(p => p.bifat).map(p => p.lectie_id))
   const { deschise, pauzaSold } = lectiiAccesibile(data)
@@ -131,6 +135,17 @@ export default function InvataCursPage() {
           🚀 <strong>Autodidact:</strong> {module.find(m => m.id === a.modul_id)?.nume} — toate lecțiile sunt
           deschise încă {zileRamase(a, azi)} {zileRamase(a, azi) === 1 ? 'zi' : 'zile'} (până pe{' '}
           {new Date(`${a.data_sfarsit}T12:00:00`).toLocaleDateString('ro-RO')}).
+        </p>
+      ))}
+
+      {autodidactExpirat.map(a => (
+        <p
+          key={a.id}
+          className="mt-4 rounded-xl border border-amber-100 bg-amber-50 px-3.5 py-2 text-sm text-amber-900"
+        >
+          ⏳ <strong>Autodidact:</strong> accesul la {module.find(m => m.id === a.modul_id)?.nume} a expirat
+          pe {dataRo(a.data_sfarsit)}, deci lecțiile sunt închise. Spune-i părintelui să îl reînnoiască, ca să
+          poți continua 😊
         </p>
       ))}
 

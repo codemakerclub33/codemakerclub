@@ -8,6 +8,7 @@ import { useElevCursantId } from '@/hooks/useElevCursantId'
 import { useProgresCursant } from '@/hooks/useProgresCursant'
 import { getSession } from '@/lib/auth'
 import { useEffect, useState } from 'react'
+import { accesuriExpirate, dataRo } from '@/lib/autodidact'
 
 export default function InvataHomePage() {
   const cursantId = useElevCursantId()
@@ -29,6 +30,9 @@ export default function InvataHomePage() {
     (data?.inscrieri ?? []).some(i => i.curs_id === c.id && i.activ),
   )
 
+  const azi = new Date().toISOString().slice(0, 10)
+  const expirate = accesuriExpirate(data?.autodidact ?? [], azi)
+
   return (
     <div>
       <div className="flex items-start justify-between gap-4 mb-8">
@@ -42,6 +46,16 @@ export default function InvataHomePage() {
           <SedinteRamaseElev cursantId={cursantId} />
         </div>
       </div>
+
+      {expirate.map(a => (
+        <p
+          key={a.id}
+          className="mb-4 rounded-xl border border-amber-100 bg-amber-50 px-3.5 py-2 text-sm text-amber-900"
+        >
+          ⏳ <strong>Autodidact:</strong> accesul la {module.find(m => m.id === a.modul_id)?.nume} a expirat pe{' '}
+          {dataRo(a.data_sfarsit)}. Spune-i părintelui să îl reînnoiască, ca să poți continua 😊
+        </p>
+      ))}
 
       {cursuriInscrise.length === 0 ? (
         <p className="text-slate-500 text-sm bg-white rounded-2xl border border-slate-100 p-5">

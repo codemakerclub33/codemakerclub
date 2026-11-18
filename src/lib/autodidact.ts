@@ -80,3 +80,25 @@ export function pretAutodidact(accesuri: IntervalAcces[], dataCumparare: string)
         : `Modul consecutiv nr. ${lant + 1}`
   return { pret, lant, motiv }
 }
+
+/**
+ * Accesurile expirate (câte unul pe modul, cel mai recent), pentru modulele care nu mai au
+ * niciun acces activ. Folosit ca să-i spunem elevului de ce lecțiile sunt închise.
+ */
+export function accesuriExpirate<T extends IntervalAcces & { modul_id: string }>(
+  accesuri: T[],
+  azi: string,
+): T[] {
+  const activeModule = new Set(accesuri.filter(a => esteActiv(a, azi)).map(a => a.modul_id))
+  const celeMaiRecente = new Map<string, T>()
+  for (const a of accesuri) {
+    if (a.data_sfarsit >= azi || activeModule.has(a.modul_id)) continue
+    const curent = celeMaiRecente.get(a.modul_id)
+    if (!curent || a.data_sfarsit > curent.data_sfarsit) celeMaiRecente.set(a.modul_id, a)
+  }
+  return [...celeMaiRecente.values()]
+}
+
+export function dataRo(iso: string): string {
+  return new Date(`${iso}T12:00:00`).toLocaleDateString('ro-RO')
+}

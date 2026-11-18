@@ -9,6 +9,7 @@ import { useElevCursantId } from '@/hooks/useElevCursantId'
 import { lectiiAccesibile, useProgresCursant } from '@/hooks/useProgresCursant'
 import LectieMarkdown from '@/components/LectieMarkdown'
 import AscultaLectie from '@/components/AscultaLectie'
+import { accesuriExpirate, dataRo } from '@/lib/autodidact'
 
 export default function InvataLectiePage() {
   const params = useParams<{ cursId: string; lectieId: string }>()
@@ -61,6 +62,25 @@ export default function InvataLectiePage() {
         <h1 className="text-xl font-bold text-slate-800 mb-2">Lecțiile sunt în pauză</h1>
         <p className="text-slate-500 text-sm mb-6 max-w-sm mx-auto">
           Se redeschid imediat ce se reînnoiește abonamentul. Spune-i părintelui 😊
+        </p>
+        <Link href={`/invata/${cursId}`} className="text-sky-600 text-sm font-medium">
+          ← Înapoi la modul
+        </Link>
+      </div>
+    )
+  }
+
+  const expirat = accesuriExpirate(data?.autodidact ?? [], new Date().toISOString().slice(0, 10)).find(
+    a => a.modul_id === modul.id,
+  )
+  if (!unlocked && expirat) {
+    return (
+      <div className="text-center py-16">
+        <Lock className="mx-auto text-amber-400 mb-4" size={36} />
+        <h1 className="text-xl font-bold text-slate-800 mb-2">Accesul Autodidact a expirat</h1>
+        <p className="text-slate-500 text-sm mb-6 max-w-sm mx-auto">
+          Accesul la acest modul s-a încheiat pe {dataRo(expirat.data_sfarsit)}. Spune-i părintelui să îl
+          reînnoiască, ca să poți continua 😊
         </p>
         <Link href={`/invata/${cursId}`} className="text-sky-600 text-sm font-medium">
           ← Înapoi la modul
