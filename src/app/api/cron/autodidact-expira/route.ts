@@ -10,7 +10,7 @@ import {
 } from '@/lib/notificari'
 
 /** Cu câte zile înainte de expirare trimitem emailul. */
-const ZILE_INAINTE = 3
+const ZILE_INAINTE = 5
 
 function dataRo(iso: string): string {
   return new Date(`${iso}T12:00:00`).toLocaleDateString('ro-RO')
@@ -18,7 +18,7 @@ function dataRo(iso: string): string {
 
 /**
  * Rulat zilnic de Vercel Cron (vezi vercel.json).
- * Trimite părintelui un email cu cel mult 3 zile înainte ca un acces Autodidact plătit să expire,
+ * Trimite părintelui un email cu cel mult 5 zile înainte ca un acces Autodidact plătit să expire,
  * cu prețul următorului modul (200 / 150 / 100 lei, după lanțul de module consecutive).
  */
 export async function GET(request: NextRequest) {

@@ -77,7 +77,7 @@ export default function InvataCursPage() {
         </span>
         {!unlockedL && (
           <span className={`text-[10px] uppercase ${inPauza ? 'text-amber-500' : 'text-slate-300'}`}>
-            {inPauza ? 'pauză' : 'în clasă'}
+            {inPauza ? 'pauză' : 'conținut'}
           </span>
         )}
       </div>
@@ -135,6 +135,13 @@ export default function InvataCursPage() {
           🚀 <strong>Autodidact:</strong> {module.find(m => m.id === a.modul_id)?.nume} — toate lecțiile sunt
           deschise încă {zileRamase(a, azi)} {zileRamase(a, azi) === 1 ? 'zi' : 'zile'} (până pe{' '}
           {new Date(`${a.data_sfarsit}T12:00:00`).toLocaleDateString('ro-RO')}).
+          {zileRamase(a, azi) <= 5 && (
+            <>
+              {' '}
+              Îți place? Spune-i părintelui să reînnoiască accesul înainte să expire, ca să continui fără
+              pauză 🚀
+            </>
+          )}
         </p>
       ))}
 
