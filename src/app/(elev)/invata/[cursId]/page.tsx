@@ -75,11 +75,9 @@ export default function InvataCursPage() {
         >
           {l.titlu}
         </span>
-        {!unlockedL && (
-          <span className={`text-[10px] uppercase ${inPauza ? 'text-amber-500' : 'text-slate-300'}`}>
-            {inPauza ? 'pauză' : 'conținut'}
-          </span>
-        )}
+        <span className={`text-[10px] uppercase ${inPauza ? 'text-amber-500' : 'text-slate-300'}`}>
+          {inPauza ? 'pauză' : 'lecție'}
+        </span>
       </div>
     )
 
