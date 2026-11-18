@@ -25,7 +25,7 @@ Ca să se învârtă o roată, trebuie să aibă **loc** pe ax: gaura roții e m
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recap L1 · desen pe foaie: roată, ax, caroserie |
+| 0–10 | Recap L1 · privim o mașinuță reală: roată, ax, caroserie |
 | 10–50 | **Obiectul 1** — Mașinuța (Minim) |
 | 50–85 | **Obiectul 2** — Remorca (Minim) |
 | 85–110 | **Complet** pe primul obiect: cuplajul |
@@ -226,18 +226,13 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 4. Grupul temporar centrează seturile fără să le lipească  
 5. Cuiul `Ø6` în gaura `Ø8` cuplează două vehicule  
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** roată 24·24·6 − Hole 7 (rotită 90°) · ax 5·5·52 · set ax+2 roți · copie la 50 mm · caroserie 80·36·12 − 2 Hole 7·7·40 (+6 mm) · cabină 40·32·12 · remorcă: corp 60·36·10 − Hole 7·7·40 (+7 mm) + set ax+2 roți + lance 30·14·4 (la 9) − Hole 8·8·10  
-**Complet:** + prag 26·14·3 și cui 6·6·10 · cuplare · Ruler · culori
-
 **Quiz scurt:**  
 - De ce gaura roții e mai mare decât axul?  
 - Cu cât e mai subțire cuiul decât gaura lăncii? De ce?  
 - Care sunt cele trei tipuri de piese ale mașinuței?
 
 ## Temă
-Opțional: desenezi pe foaie un **camion** cu 3 axe. Câte roți are? Câte găuri are caroseria?
+Opțional, acasă, într-un proiect nou `T3_L02_B`: un **camion** cu 3 axe. Câte roți are? Câte găuri are caroseria?
 
 ## Ce urmează
 În **Lecția 3** faci o **morișcă de vânt** și un **ventilator**: un rotor care se învârte pe un stâlp.

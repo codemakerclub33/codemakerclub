@@ -28,8 +28,9 @@ La finalul orei ai o barcă recunoscută din lateral: **corp** + **catarg** + **
 |--------|----------|
 | 0–10 | Recap L5 · poze cu bărci — numim formele din ele |
 | 10–30 | Demo: <span style="color:#1E90FF;font-weight:700">Half Sphere</span> răsturnată, <span style="color:#1E90FF;font-weight:700">Wedge</span> ca pânză |
-| 30–95 | Minim → Complet → Bonus |
-| 95–120 | Recap, quiz, galerie |
+| 30–65 | Construim barca: Minim → Complet |
+| 65–100 | **Bonus:** cabina, echipamentul și farul, pe trepte (fiecare merge cât apucă) |
+| 100–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -57,7 +58,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 2. Nume: `Prenume_Nume_T1_L06`  
 3. Salvare automată — verifici numele
 
-**Încearcă tu — Proiect nou (4 min)**  
+**Încearcă tu — Proiect nou (2 min)**  
 - [ ] Proiectul e creat și redenumit `Prenume_Nume_T1_L06`  
 
 ### 2) Corpul bărcii
@@ -68,7 +69,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 5. Verifici din <span style="color:#D400D4;font-weight:700">Front</span> sau <span style="color:#D400D4;font-weight:700">Right</span>: vezi rotundul jos, plat sus?  
 6. Baza (acum vârful rotund) să fie pe plan (dacă plutește → <span style="color:#E65722;font-weight:700">D</span>)
 
-**Încearcă tu — Corpul bărcii (12 min)**  
+**Încearcă tu — Corpul bărcii (7 min)**  
 - [ ] Half Sphere **60 × 20 × 15**, partea plată **sus**  
 - [ ] Din <span style="color:#D400D4;font-weight:700">Front</span>: rotund jos, plat sus  
 
@@ -78,7 +79,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 3. Îl ridici cu **<span style="color:#E65722;font-weight:700">conul negru</span>** la **14** — puntea e la 15, deci catargul intră 1 mm în corp  
 4. Verifici din <span style="color:#D400D4;font-weight:700">Front</span>: catargul intră puțin în barcă (nu plutește)
 
-**Încearcă tu — Catargul (10 min)**  
+**Încearcă tu — Catargul (5 min)**  
 - [ ] Catargul are **3 × 3 × 40**, e pe mijlocul bărcii, la **14**  
 - [ ] Din <span style="color:#D400D4;font-weight:700">Front</span>, intră 1 mm în corp  
 
@@ -89,7 +90,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 4. Îl ridici cu <span style="color:#E65722;font-weight:700">conul negru</span> la **15** (pe punte) și îl muți cu mouse-ul din <span style="color:#D400D4;font-weight:700">Top</span> / <span style="color:#D400D4;font-weight:700">Front</span> până latura dreaptă **intră 1 mm** în catarg  
 5. <span style="color:#E65722;font-weight:700">L</span> nu e necesar azi — muți manual
 
-**Încearcă tu — Pânza (12 min)**  
+**Încearcă tu — Pânza (6 min)**  
 - [ ] Din <span style="color:#D400D4;font-weight:700">Front</span>, pânza e un **triunghi** cu latura dreaptă lângă catarg  
 - [ ] Pânza e subțire (**2 mm**), la **15**, și intră 1 mm în catarg  
 
@@ -98,7 +99,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 2. **Steag:** Box plat mic (**8 × 1 × 5**) ridicat la **49**, lipit de vârful catargului (catargul se termină la 54)  
 3. <span style="color:#00A600;font-weight:700">Color</span> pe barcă, pânze, steag
 
-**Încearcă tu — Complet (20 min)**  
+**Încearcă tu — Complet (10 min)**  
 - [ ] A doua pânză e oglindită, pe cealaltă parte a catargului  
 - [ ] Steagul e la vârful catargului  
 - [ ] Piesele au culori  
@@ -108,7 +109,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 2. Apa are 8 mm, barca 15: puțin peste jumătate din corp e „în apă”, restul iese deasupra  
 3. Verifici din <span style="color:#D400D4;font-weight:700">Front</span>: barca nu „zboară” deasupra apei, apa nu acoperă puntea
 
-**Încearcă tu — Apa (12 min)**  
+**Încearcă tu — Apa (5 min)**  
 - [ ] Apa e albastră, **90 × 50 × 8**, în jurul bărcii  
 - [ ] Barca nu „zboară” și apa nu acoperă puntea
 
@@ -156,29 +157,34 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Barca cu cabină și vâsle
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Barca cu cabină, vâsle și far
+*Doar dacă ai terminat Complet. Lucrezi în același proiect, `Prenume_Nume_T1_L06`. Dificultatea crește de la o treaptă la alta; nu primești pași, ci reguli. Alegi tu cum ajungi la rezultat.*
 
-- [ ] Schimbă culoarea pânzelor și a steagului  
-- [ ] **Provocarea:** adaugi o **cabină** (Box `12 × 10 × 8`) pe punte, **lângă catarg** (nu peste el), la înălțimea `15`, și **2 vâsle** din cilindri subțiri, rotiți cu cel puțin `45°`. Din Front și din Right, un coleg recunoaște **4 părți** (corp, cabină, catarg, vâsle) în cel mult **30 de secunde**.  
+Barca ta primește o cabină, echipament și un far în depărtare. Nimic nu plutește. Treptele, de la ușor la greu:
+
+- [ ] **Treapta 1 — Cabina.** Un `Box` de `12 × 10 × 8` pe punte, la **pupa** (capătul din spate), în afara pânzelor, la înălțimea `15`, înfipt `1` mm în corp. Nu atinge pânzele și nu iese peste marginea bărcii (verifici din **Top**)  
+- [ ] **Treapta 2 — Vâslele.** `2` cilindri subțiri, rotiți cu cel puțin `45°`, unul pe fiecare bord, **simetrici** (unul copiat și oglindit cu `M`). Capetele lor sunt înfipte în bordul bărcii  
+- [ ] **Treapta 3 — Colacul de salvare.** Un colac făcut dintr-un `Cylinder` scund și lat, cu o gaură `Hole` în mijloc, grupate cu Group. Colacul stă pe peretele cabinei (cilindrul culcat, rotit `90°`), cu cel mult `1` mm între el și perete, de altă culoare decât cabina  
+- [ ] **Treapta 4 — Hubloturile.** `3` ferestre rotunde de `2` mm, în peretele lung al cabinei (`12` mm), tăiate cu `Hole` și Group, la **aceeași înălțime** și la **distanțe egale**. Se văd prin ele și din spate  
+- [ ] **Treapta 5 — Plăcuța cu numele.** Numele bărcii, în relief (piesa `Text`, **nu** oglindită), pe o placă mică lipită pe cabină, centrată cu `L`. Se citește normal din **Front**  
+- [ ] **Treapta 6 — Farul.** Un obiect nou, făcut de la zero: o stâncă (`Half Sphere`) lângă barcă, în apă, cu un turn (cilindru sau con) și o lumină (sferă) în vârf. Farul e de cel puțin `2` ori mai înalt decât catargul și nu atinge barca. Dacă trebuie să modifici hubloturile, faci Ungroup, apoi Group  
+
+**Verificare (cu un coleg):** colegul numără în **cel mult 30 de secunde**: cabina, vâslele, colacul, hubloturile, numele și farul. Apoi verifică din **Front** că nimic nu plutește.  
 
 ## Recapitulare rapidă
 1. Orice obiect se descompune în **forme simple**  
 2. **180°** cu <span style="color:#E65722;font-weight:700">săgeata curbă</span> răstoarnă o piesă  
 3. <span style="color:#D400D4;font-weight:700">Front</span> / <span style="color:#D400D4;font-weight:700">Right</span> = verifici lateral
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** Half Sphere (plat sus) → catarg → Wedge pânză  
-**Complet:** + pânză 2, steag, apă, culori
-
 **Quiz scurt:**  
 - Din ce formă ai făcut **corpul**?  
 - Cum **răstorni** o piesă?  
 - Din ce vedere verifici că **catargul stă pe barcă**?
 
-## Temă
-Opțional: un vapor sau o barcă cu motor — același `T1_L06` sau proiect nou.
+## Temă (opțional)
+- Dacă ai doar Minim: acasă adaugi a doua pânză, steagul, apa și culorile (Pasul 2), în același `Prenume_Nume_T1_L06`.  
+- Dacă ai Complet: într-un proiect nou `T1_L06_B`, un **vapor** sau o **barcă cu motor**, din aceleași forme.
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T1_L06_C`, un **submarin** din cilindri, cu periscop.  
 
 ## Ce urmează
 În **Lecția 7** construiești o **rachetă**, cu **simetrie în jurul unei axe**.

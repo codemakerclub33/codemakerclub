@@ -202,12 +202,6 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 4. Două piese care lucrează împreună = **nu** le grupezi
 5. Al doilea obiect (Ghiveciul pătrat cu farfurie) exersează aceeași idee pe alte mărimi
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Ghiveci:** Cylinder 60·60·50 − Hole 54·54·50 (+3 mm) + Hole 8·8·10 (scurgere) → Group  
-**Farfurie:** Cylinder 78·78·12 − Hole 72·72·12 (+3 mm) → Group  
-**Complet:** + guler 66·66·6 · Ruler · 2 culori
-
 **Quiz scurt:**  
 - De ce farfuria trebuie să fie mai largă?  
 - Ce ar păți planta fără gaura de scurgere?  

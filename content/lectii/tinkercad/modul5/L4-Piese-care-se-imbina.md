@@ -25,7 +25,7 @@ Mărimile sunt gândite cu **joc** (L3): capul Ø9 trece prin gaura Ø10; axul �
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Cum funcționează agățătoarea de perete? Schița pe foaie |
+| 0–15 | Cum funcționează agățătoarea de perete? Citim schema |
 | 15–55 | Pas cu pas: placa A cu gaură-cheie · placa B cu bolț |
 | 55–100 | Minim → Complet (al doilea bolț, asamblare) |
 | 100–120 | Verificare din Front, recap, salvare |
@@ -34,8 +34,8 @@ Mărimile sunt gândite cu **joc** (L3): capul Ø9 trece prin gaura Ø10; axul �
 
 ---
 
-## Schița *(pe foaie, 5 minute)*
-Desenezi placa A de sus: un cerc mare și, lipită de el, o fantă îngustă spre dreapta. Scrii: **Ø10**, **fantă 14 × 5,4**, **axul Ø5**, **capul Ø9**.  
+## Schema *(5 minute)*
+Privești placa A de sus: un cerc mare și, lipită de el, o fantă îngustă spre dreapta. Cotele sunt: **Ø10**, **fantă 14 × 5,4**, **axul Ø5**, **capul Ø9**.  
 Întrebare: de ce capul (9) trebuie să fie mai mic decât gaura (10), dar mai mare decât fanta (5,4)?
 
 ---
@@ -73,7 +73,7 @@ Desenezi placa A de sus: un cerc mare și, lipită de el, o fantă îngustă spr
 - [ ] Placa B (**30 · 20 · 3**) are axul **Ø5** și capul **Ø9**, la **9 mm**  
 - [ ] Placa B, axul și capul sunt grupate  
 
-### 4) Verificarea *(din Front, pe foaie)*
+### 4) Verificarea *(din Front, cu Ruler)*
 | Piesă | Mărime | Trebuie |
 |-------|--------|---------|
 | Gaura | 10 | mai mare decât capul *(joc 0,5 pe parte)* |
@@ -146,7 +146,7 @@ Atenție: dacă mărești un Group, **întinzi și bolțul, și găurile**. De a
 ## Bonus (extra — după Complet)
 - [ ] Un mic „opritor” la capătul fantei, ca bolțul să nu iasă  
 - [ ] Capul bolțului cu un șanț pentru șurubelniță *(Hole mic)*  
-- [ ] Pe foaie: unde ai folosi o astfel de îmbinare acasă?
+- [ ] Spune colegului: unde ai folosi o astfel de îmbinare acasă?
 
 ## Recapitulare rapidă
 1. Îmbinare = **o parte lată trece printr-un loc larg și stă într-unul îngust**  
@@ -154,15 +154,10 @@ Atenție: dacă mărești un Group, **întinzi și bolțul, și găurile**. De a
 3. Piesele rămân **separate**  
 4. Verificare din **Front**
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** A = Box 40·30·5 − Hole Ø10 (centru 10) − fantă 14·5,4 (din centru) · B = Box 30·20·3 + ax Ø5·6 (+3) + cap Ø9·2 (+9)  
-**Complet:** A pe B (+3) → A împinsă 7 mm → al doilea bolț
-
 **Quiz scurt:**  
 - De ce capul de Ø9 nu iese prin fanta de 5,4?  
 - Ce joc are axul în fantă? *(0,2 mm pe parte)*  
 - De ce nu grupăm A cu B?
 
 ## Temă
-Opțional: găsește acasă un obiect care se agață pe un perete cu o îmbinare asemănătoare și desenează-l cu cote.
+Opțional: găsește acasă un obiect care se agață pe un perete cu o îmbinare asemănătoare și modeleaz-o într-un proiect nou `T5_L04_B`, cu cotele ei.

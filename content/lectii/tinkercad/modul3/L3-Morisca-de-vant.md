@@ -206,18 +206,13 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 4. Rotorul rămâne **separat** de stâlp (între bază și capac)  
 5. Rotirea cu număr (`60°`) face orice unghi  
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** baza 50·50·5 + stâlp 8·8·70 → Group · butuc 20·20·8 − Hole 9·9·14 + 2 bare 80·12·2 (90°) → Group · rotor la 40 · capac 14·14·4 · ventilator: baza + stâlp 8·8·50 · butuc 16·16·10 − Hole 9 + 3 bare 56·10·2 (60°) → rotor la 30 · capac  
-**Complet:** + 8 palete (45°) · Ruler · culori
-
 **Quiz scurt:**  
 - De ce gaura rotorului e mai mare decât stâlpul?  
 - Câte palete dau 3 bare centrate pe butuc?  
 - De ce rotorul nu trebuie lipit de stâlp?
 
 ## Temă
-Opțional: desenezi pe foaie o **moară de vânt** cu **3** palete și scrii unghiul dintre ele (`120°`). Câte bare ar trebui?
+Opțional, acasă, într-un proiect nou `T3_L03_B`: o **moară de vânt** cu **3** palete, cu `120°` între ele. Câte bare ai folosit?
 
 ## Ce urmează
 În **Lecția 4** faci un **labirint cu bilă** și un **labirint rotund**: culoare cu joc pentru o bilă.

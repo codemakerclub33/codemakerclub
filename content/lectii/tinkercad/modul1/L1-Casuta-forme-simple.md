@@ -30,8 +30,9 @@ Fără cameră, plan, Undo și nume de proiect, orele următoare se blochează. 
 | 10–25 | Provocare: **5 forme** pe plan, Delete și Undo |
 | 25–40 | Cum te uiți în spațiu: orbită, zoom, View Cube |
 | 40–70 | Corpul și acoperișul (**Minim**) |
-| 70–105 | **Complet:** culori, ușă și fereastră |
-| 105–120 | Recap, bonus, arăți ce ai gata |
+| 70–90 | **Complet:** culori, ușă și fereastră |
+| 90–110 | **Bonus:** casa cu grădină și mașină (pe trepte) |
+| 110–120 | Recap, quiz, arăți ce ai gata |
 
 **Unelte azi:** calculator cu mouse · browser Chrome sau Edge · cont Tinkercad (de la școală) · [tinkercad.com](https://www.tinkercad.com)
 
@@ -81,7 +82,7 @@ Fără cameră, plan, Undo și nume de proiect, orele următoare se blochează. 
 
 **Formele din Basic Shapes** se recunosc după culoare: <span style="color:#1E90FF;font-weight:700">Box</span> roșu, Cylinder portocaliu, Sphere albastră, Cone mov, <span style="color:#1E90FF;font-weight:700">Pyramid</span> galbenă, Roof verde. Formele **gri cu dungi** (primul rând) sunt **găuri** (Hole): azi **nu** le folosim.
 
-**Încearcă tu — proiectul (3–5 min)**  
+**Încearcă tu — proiectul (5 min)**  
 - [ ] Proiectul se numește `Prenume_Nume_T1_L01` și sus e ales **3D**  
 - [ ] Arăți: **Workplane** · **panoul de forme** · <span style="color:#D400D4;font-weight:700">View Cube</span> · **Snap Grid**  
 
@@ -92,7 +93,7 @@ Fără cameră, plan, Undo și nume de proiect, orele următoare se blochează. 
 4. Apeși <span style="color:#DC143C;font-weight:700">Ctrl+Z</span> (sau săgeata **Undo** din bara de sus): forma **se întoarce**  
 5. Ca să cureți planul: <span style="color:#DC143C;font-weight:700">Ctrl+A</span>, apoi <span style="color:#DC143C;font-weight:700">Delete</span>  
 
-**Încearcă tu — 5 forme (8–10 min)**  
+**Încearcă tu — 5 forme (15 min)**  
 - [ ] 5 forme **diferite** stau pe plan  
 - [ ] Ai șters o formă și ai adus-o înapoi cu <span style="color:#DC143C;font-weight:700">Ctrl+Z</span>  
 - [ ] Planul e curat după <span style="color:#DC143C;font-weight:700">Ctrl+A</span> și <span style="color:#DC143C;font-weight:700">Delete</span>  
@@ -104,7 +105,7 @@ Fără cameră, plan, Undo și nume de proiect, orele următoare se blochează. 
 4. <span style="color:#D400D4;font-weight:700">View Cube</span>: apeși o față și te întorci pe **Top**, **Front** etc.  
 5. Dacă doar **rotești camera**, obiectele **rămân** pe plan  
 
-**Încearcă tu — vederea (8–10 min)**  
+**Încearcă tu — vederea (15 min)**  
 - [ ] Rotești vederea și faci zoom  
 - [ ] Te întorci pe **Top** și pe **Front** cu <span style="color:#D400D4;font-weight:700">View Cube</span>  
 - [ ] Spui de ce casa nu se mișcă atunci când rotești camera  
@@ -116,7 +117,7 @@ Fără cameră, plan, Undo și nume de proiect, orele următoare se blochează. 
    *Mai sigur:* în fereastra piesei, la **Properties**, scrii direct <span style="color:#E65722;font-weight:700">Length</span> `40`, <span style="color:#E65722;font-weight:700">Width</span> `40`, <span style="color:#E65722;font-weight:700">Height</span> `25`  
 4. Dacă plutește: selectezi și apeși <span style="color:#E65722;font-weight:700">D</span>, cade pe plan  
 
-**Încearcă tu — corpul (10–12 min)**  
+**Încearcă tu — corpul (12 min)**  
 - [ ] Baza corpului e **`40 × 40`**  
 - [ ] Înălțimea e **`25`**  
 - [ ] Stă pe plan, nu plutește  
@@ -137,7 +138,7 @@ Rezultatul tău (Minim):
 | Corp | <span style="color:#1E90FF;font-weight:700">Box</span> | `40 × 40 × 25` | `0` (pe plan) |
 | Acoperiș | <span style="color:#1E90FF;font-weight:700">Pyramid</span> | `50 × 50` | `25` (pe cub) |
 
-**Încearcă tu — acoperișul (12–15 min)**  
+**Încearcă tu — acoperișul (18 min)**  
 - [ ] Baza piramidei e **`50 × 50`**  
 - [ ] Piramida stă **pe** cub, la înălțimea `25`  
 - [ ] Din două unghiuri arată a **casă**  
@@ -147,7 +148,7 @@ Rezultatul tău (Minim):
 2. Selectezi acoperișul, apeși <span style="color:#00A600;font-weight:700">Color</span> (cercul colorat) și alegi **altă** culoare  
 3. **Nu** apeși **Hole**: asta face piesa **gaură**, nu o colorează  
 
-**Încearcă tu — culorile (5–8 min)**  
+**Încearcă tu — culorile (8 min)**  
 - [ ] Corpul și acoperișul au culori **diferite**  
 - [ ] Culorile se văd și din <span style="color:#D400D4;font-weight:700">View Cube</span> → **Front**, și din **Top**  
 
@@ -156,7 +157,7 @@ Rezultatul tău (Minim):
 2. **Fereastra:** un <span style="color:#1E90FF;font-weight:700">Box</span> de **`8 × 4 × 8`**, ridicat cu <span style="color:#E65722;font-weight:700">conul negru</span> la **`10`**, tot cu **2 mm intrați** în perete  
 3. Le colorezi cu <span style="color:#00A600;font-weight:700">Color</span> diferit de perete  
 
-**Încearcă tu — fațada (12–15 min)**  
+**Încearcă tu — fațada (12 min)**  
 - [ ] Ușa e în mijlocul fațadei și intră **2 mm** în perete  
 - [ ] Fereastra e în perete la înălțimea `10`, nu plutește  
 - [ ] Ușa și fereastra au o culoare diferită de perete  
@@ -207,11 +208,19 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Satul de trei case
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Casa cu grădină și mașină
+*Doar dacă ai terminat Complet. Lucrezi în același proiect, `Prenume_Nume_T1_L01`. Dificultatea crește de la o treaptă la alta; nu primești pași, ci reguli.*
 
-- [ ] Schimbă culorile casei și mărește ușa cu `2` mm  
-- [ ] **Provocarea:** construiești **3 case**, fiecare cu **alt acoperiș** (Pyramid, Roof și Cone), între ele o **alee** (Box plat, înălțime `2`) care **atinge toate trei casele**. Nimic nu plutește, verificat din **Top** și din **Front**. Un coleg trebuie să recunoască **3 case diferite** în **cel mult 30 de secunde**.  
+Casa ta primește o vecină și o curte întreagă. Nimic nu plutește. Piesele se ating sau intră puțin una în alta doar unde trebuie: ușile, coșul, coroana copacului. Treptele, de la ușor la greu:
+
+- [ ] **Treapta 1 — Coșul de fum.** Un `Box` mic pe acoperiș, care stă **pe pantă**, nu în aer și nu străpunge acoperișul. Verifici din **Front**  
+- [ ] **Treapta 2 — Casa a doua.** Mai mare decât prima: corpul `50 × 40 × 30`, cu **alt acoperiș** (`Roof`) și o ușă pusă exact **la mijlocul** fațadei, calculată cu numere  
+- [ ] **Treapta 3 — Copacul.** Trunchi (`Cylinder`) și coroană (`Sphere` sau `Cone`), mai înalt decât **ambele** case, cu coroana prinsă de trunchi  
+- [ ] **Treapta 4 — Aleea.** Un `Box` plat, înalt de `2`, care **atinge ușile ambelor case**  
+- [ ] **Treapta 5 — Gardul.** Cel puțin **6 stâlpi** (`Box` subțiri) la **distanțe egale**, în fața caselor. Toți au aceeași înălțime  
+- [ ] **Treapta 6 — Mașina.** Din forme simple: corpul, o cabină pe corp și **4 roți**. Stă pe plan, lângă alee, și nu atinge gardul  
+
+**Verificare (cu un coleg):** colegul numără în **cel mult 30 de secunde**: `2` case, copacul, gardul și mașina. Apoi verifică din **Top** că aleea atinge ambele uși, iar din **Front** că nimic nu plutește.  
 
 ## Recapitulare rapidă
 1. **Planul** e masa pe care construiești; **camera** se rotește, obiectele stau pe loc  
@@ -221,10 +230,7 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 5. O casă = **cub** + **piramidă** pusă **pe** el  
 6. Minim = Pasul 1 · Complet = Pasul 1 + 2  
 
-## Schema pe scurt *(pe foaie)*
-<span style="color:#1E90FF;font-weight:700">Box</span> `40 × 40 × 25` → <span style="color:#1E90FF;font-weight:700">Pyramid</span> `50 × 50` la `25` → <span style="color:#00A600;font-weight:700">Color</span> → ușă `10 × 4 × 16` + fereastră `8 × 4 × 8` la `10`
-
-**Quiz scurt (cu profesorul):**  
+**Quiz scurt:**  
 - De ce nu se mișcă casa când rotești camera?  
 - Ce unealtă ridică piramida pe cub?  
 - Ce tastă coboară o piesă pe plan, dacă plutește?  
@@ -233,8 +239,8 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ## Temă (opțional)
 - Dacă ai doar Minim: acasă adaugi culorile, ușa și fereastra (Pasul 2), în același `Prenume_Nume_T1_L01`.  
-- Dacă ai Complet: desenezi pe foaie o casă cu **două etaje** și scrii ce forme ai folosi și ce dimensiuni.  
-- Dacă ai terminat și Bonusul: faci o copie și schimbi acoperișul unei case.  
+- Dacă ai Complet: într-un proiect nou `T1_L01_B`, construiești o casă cu **două etaje**, din aceleași forme.
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T1_L01_C`, construiești o școală sau un magazin, cu o curte a lui, făcută cum vrei tu.  
 
 ## Ce urmează
 În **Lecția 2** construiești un **om de zăpadă**: sfere, scalare cu Shift și rotire.

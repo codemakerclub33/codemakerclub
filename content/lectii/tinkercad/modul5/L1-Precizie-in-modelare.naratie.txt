@@ -1,6 +1,6 @@
 Lecția unu. Piesa cu cote.
 
-Astăzi lucrezi ca un inginer. Fiecare piesă are cote, adică mărimi pe care le poți spune cu voce tare, fără cuvântul aproximativ. Faci o plăcuță cu două găuri, folosind numai numere, și o fișă de cote pe foaie. Creezi un design nou și îl numești Prenume, linie jos, Nume, linie jos, T cinci, linie jos, L unu. Proiectul se numește Piesa cu cote. Imprimanta trei D nu se folosește la oră.
+Astăzi lucrezi ca un inginer. Fiecare piesă are cote, adică mărimi pe care le poți spune cu voce tare, fără cuvântul aproximativ. Faci o plăcuță cu două găuri, folosind numai numere, și o fișă de cote verificată cu Ruler. Creezi un design nou și îl numești Prenume, linie jos, Nume, linie jos, T cinci, linie jos, L unu. Proiectul se numește Piesa cu cote. Imprimanta trei D nu se folosește la oră.
 
 Obiectivul. Minim: o placă de șaizeci pe treizeci pe cinci și două găuri cu diametru șase, cu centrele la zece milimetri de capete. Distanța dintre ele este de patruzeci de milimetri. Le verifici cu Ruler, iar marginile găurilor trebuie să fie la șapte și treisprezece, apoi la patruzeci și șapte și cincizeci și trei. Completezi și fișa de cote. Complet: minim, plus o fantă de douăzeci pe șase pe șapte, exact la mijloc, cu toate cotele verificate cu Ruler.
 
@@ -18,7 +18,7 @@ Al cincilea pas pe ecran. Apeși Ruler, în colțul din dreapta sus, și îl pui
 
 Al șaselea pas pe ecran, pentru Complet. Tragi un Box de douăzeci pe șase pe șapte și îl faci Hole. Cu L îl centrezi pe placă, pe ambele axe. Îl cobori un milimetru și îl grupezi cu placa. Cu Ruler, fanta începe la douăzeci de milimetri de capătul stâng și se termină la patruzeci. Verifici că nu atinge găurile.
 
-Al șaptelea pas pe ecran. Pe foaie completezi fișa de cote. Placa, șaizeci pe treizeci pe cinci. Fiecare gaură, diametru șase, cu centrul la zece, respectiv cincizeci. Distanța dintre găuri, patruzeci. Fanta, douăzeci pe șase, începe la douăzeci.
+Al șaptelea pas pe ecran. Verifici cu Ruler fișa de cote. Placa, șaizeci pe treizeci pe cinci. Fiecare gaură, diametru șase, cu centrul la zece, respectiv cincizeci. Distanța dintre găuri, patruzeci. Fanta, douăzeci pe șase, începe la douăzeci.
 
 Greșeli frecvente. Tragi din colț fără să tastezi. Confunzi diametrul cu raza. Gaura nu taie, pentru că nu e Hole sau nu ai grupat. Uiți să cobori gaura un milimetru. Măsori de la margine, nu de la centru. Ai Snap Grid prea mare.
 
@@ -26,6 +26,6 @@ Proiectul de azi. Piesa cu cote.
 
 Minim înseamnă: placa, două găuri la zece și cincizeci de milimetri, verificate cu Ruler, și fișa de cote. Complet înseamnă: minim, plus fanta centrată, verificată de la douăzeci la patruzeci de milimetri. Dacă rămâi în urmă, salvează la Minim.
 
-Recapitulare. Tastezi mărimile, nu tragi din ochi. Diametrul este lățimea întreagă a găurii, iar poziția o măsori până la centru. Hole și Group înseamnă decupaj. Ruler verifică ce ai desenat.
+Recapitulare. Tastezi mărimile, nu tragi din ochi. Diametrul este lățimea întreagă a găurii, iar poziția o măsori până la centru. Hole și Group înseamnă decupaj. Ruler verifică ce ai construit.
 
 Succes la piesa ta cu cote.

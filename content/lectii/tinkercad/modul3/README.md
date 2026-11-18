@@ -14,7 +14,7 @@
 | 7 | Zaruri personalizate | Precizie și simetrie | Obiect 1: zar 40 cu puncte Ø6 adânci 2 mm (1–6, 2–5, 3–4); obiect 2: cutie cu capac pentru 2 zaruri; bonus: 3 zaruri rotunjite și cutie pentru 3 |
 | 8 | Fortăreața cu pod mobil | Balama pe ax | Obiect 1: fortăreață cu pod pe ax orizontal (ax Ø4, gaură Ø5); obiect 2: poartă cu 2 canaturi pe axe verticale; bonus: șanț și pod ridicat |
 | 9 | Carusel și roată panoramică | Rotor pe stâlp și pe ax | Obiect 1: carusel cu 8 scaune (gaură Ø13, stâlp Ø12); obiect 2: roată panoramică pe ax orizontal (8 spițe, 8 cabine); bonus: carusel cu 16 scaune |
-| 10 | Proiect final de modul | Mecanism la alegere | Obiect 1: mecanism la alegere (schiță, piesă fixă + piesă mobilă cu joc); obiect 2: piesa a doua; bonus: set în 3 mărimi |
+| 10 | Proiect final de modul | Mecanism la alegere | Obiect 1: mecanism la alegere (plan, piesă fixă + piesă mobilă cu joc); obiect 2: piesa a doua; bonus: set în 3 mărimi |
 
 **Notă L9:** doar două atracții (carusel și roată); parcul și peisajul urban vin în **City Builder (M4)**.
 

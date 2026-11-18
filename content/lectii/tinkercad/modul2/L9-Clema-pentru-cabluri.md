@@ -64,12 +64,12 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 ### 1) Proiect nou și calculul
 1. **Create new design** · nume `Prenume_Nume_T2_L09`  
 2. Snap Grid: **5.0 mm**  
-3. Pe foaie, cu placa Arduino Uno (`69 × 54`, rotunjită în sus):  
+3. Calculezi (în minte sau cu calculatorul) cu placa Arduino Uno (`69 × 54`, rotunjită în sus):  
    gol = 69 + 1 = **70** și 54 + 1 = **55** · exterior = 70 + 10 = **80** și 55 + 10 = **65**  
    dop pentru capac = **69 × 54** (golul − 1)
 
 **Încearcă tu — Proiect nou și calculul (5 min)**  
-- [ ] Ai calculat pe foaie: golul, exteriorul și dopul pentru placa ta  
+- [ ] Ai calculat golul, exteriorul și dopul pentru placa ta  
 
 ### 2) Cutia
 1. <span style="color:#1E90FF;font-weight:700">Box</span> → **80 · 65 · 28**: cutia  
@@ -178,7 +178,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lecția următoare.
 
 ### Pasul 1 — Obiectul 1: Carcasa Arduino *(Minim)*
-- [ ] Calcul pe foaie: gol `70 × 55`, exterior `80 × 65`, dop `69 × 54`  
+- [ ] Calcul: gol `70 × 55`, exterior `80 × 65`, dop `69 × 54`  
 - [ ] Cutia **80 · 65 · 28** cu golul **70 · 55 · 25**, centrat, la `5` mm de plan  
 - [ ] **2** porturi pe peretele din stânga: **15 · 10 · 16** la `5` mm și **22 · 10 · 16** la `30` mm de față  
 - [ ] Capac: dop **69 · 54 · 4**, plăcuță **80 · 65 · 4** la `3` mm, **3** fante egale la `10` mm  
@@ -214,19 +214,13 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 4. Fantele egale = **Ctrl+D** repetat, cu aceeași mutare  
 5. Al doilea obiect (carcasa micro:bit) exersează aceeași regulă pe altă placă  
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Calcul:** placă 69·54 → gol 70·55 → exterior 80·65 → dop 69·54  
-**Minim:** Box 80·65·28 − Hole 70·55·25 (la 5) − porturi 15·10·16 și 22·10·16 · capac: dop 69·54·4 + plăcuță 80·65·4 (la 3) − 3 fante 40·4·10 · apoi carcasa micro:bit 61·51·23  
-**Complet:** + Text UNO · Ruler · Color
-
 **Quiz scurt:**  
 - De ce golul e placa `+ 1` mm?  
 - De ce dopul capacului e golul `− 1` mm?  
 - De ce gaura portului e mai mare decât portul?
 
 ## Temă
-Opțional: măsori o placă sau un obiect electronic de acasă (de exemplu o telecomandă), calculezi pe foaie golul, peretele și dopul, și scrii mărimile (fără Tinkercad). Îl facem la L10, dacă îl alegi.
+Opțional, acasă, într-un proiect nou `T2_L09_B`: măsori cu o riglă un obiect electronic de acasă (de exemplu o telecomandă) și faci o carcasă cu gol, perete și dop. Îl putem continua la L10, dacă îl alegi.
 
 ## Ce urmează
 În **Lecția 10** alegi **tu** un obiect util, cu **piesa lui pereche** care se potrivește cu joc.

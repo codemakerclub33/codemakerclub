@@ -1,0 +1,14 @@
+---
+description: Tiparul lecțiilor Tinkercad (conținut în content/lectii/tinkercad)
+globs: content/lectii/tinkercad/**
+alwaysApply: false
+---
+
+# Tiparul lecțiilor Tinkercad
+
+- Fără hârtie și fără desen pe foaie (la club și acasă nu se folosește hârtie). Schițele devin „plan” (gândit și spus colegului); calculele se fac în minte sau cu calculatorul și se verifică cu Ruler.
+- Fără secțiunea „Schema pe scurt”. Fără secțiunea „Răspunsuri / Pentru profesor”.
+- Structura: Obiectiv, De ce contează, Planul orei, Pas cu pas (cu „Încearcă tu”), Greșeli frecvente, De făcut (Minim vs Complet), Bonus ★★★, Recapitulare rapidă, Quiz scurt, Temă, Ce urmează.
+- Un singur Bonus ★★★, cu cel mult 6 trepte de dificultate crescătoare (scop și reguli, nu pași), verificat cu un coleg; rând „Bonus” în „Planul orei”.
+- Tema opțională pentru bonus: proiect nou `T<m>_L<nn>_B` sau `_C`.
+- Fiecare lecție are `.naratie.txt`: română vorbită, fără cifre și simboluri; după modificare se regenerează audio.

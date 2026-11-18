@@ -29,8 +29,9 @@ La oraș (M4) vei repeta ferestre la fel.
 |--------|----------|
 | 0–10 | Recap L7 · ce e un crenel (poză de castel) |
 | 10–30 | Demo **de două ori**: copie → mută o dată → Ctrl+D → Ctrl+D… |
-| 30–95 | Minim → Complet → Bonus |
-| 95–120 | Recap, quiz, galerie |
+| 30–65 | Construim castelul: Minim → Complet |
+| 65–100 | **Bonus:** castelul cu șanț, pe trepte (fiecare merge cât apucă) |
+| 100–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -58,14 +59,14 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 2. Nume: `Prenume_Nume_T1_L08`  
 3. Salvare automată — verifici numele
 
-**Încearcă tu — Proiect nou (4 min)**  
+**Încearcă tu — Proiect nou (2 min)**  
 - [ ] Proiectul e creat și redenumit `Prenume_Nume_T1_L08`  
 
 ### 2) Zidul
 1. Tragi un <span style="color:#1E90FF;font-weight:700">Box</span> și îl faci **104 lungime × 10 grosime × 20 înălțime**  
 2. Pe plan (dacă plutește → <span style="color:#E65722;font-weight:700">D</span>)
 
-**Încearcă tu — Zidul (8 min)**  
+**Încearcă tu — Zidul (3 min)**  
 - [ ] Zidul are **104 × 10 × 20** și stă pe plan  
 
 ### 3) Crenelurile (repetarea Ctrl+D)
@@ -77,7 +78,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 6. **Atenție:** nu muți alte copii între timp — doar prima mutare, apoi doar Ctrl+D  
 7. Dacă golurile nu ies egale cu crenelurile, nu e grav — important e să fie **toate la fel**; altfel <span style="color:#DC143C;font-weight:700">Ctrl+Z</span> și refaci prima mutare
 
-**Încearcă tu — Crenelurile (repetarea Ctrl+D) (20 min)**  
+**Încearcă tu — Crenelurile (repetarea Ctrl+D) (12 min)**  
 - [ ] Ai **7** creneluri, toate la aceeași distanță  
 - [ ] Primul crenel e ridicat la **20**  
 
@@ -86,7 +87,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 2. Acoperiș: <span style="color:#1E90FF;font-weight:700">Cone</span> **30 × 30 × 15** ridicat la **40** **sau** creneluri mici pe margine (Ctrl+D ca la zid)  
 3. Turnul pe plan; dacă plutește → <span style="color:#E65722;font-weight:700">D</span> (dar **nu** pe con — conul îl ridici la 40)
 
-**Încearcă tu — Turnul (15 min)**  
+**Încearcă tu — Turnul (6 min)**  
 - [ ] Turnul are **26 × 26 × 40**, centrat pe capătul zidului  
 - [ ] Acoperișul (con la **40**) sau crenelurile mici sunt la locul lor  
 
@@ -100,7 +101,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 3. **Steag:** un stâlp (Cylinder **2 × 2 × 12**) înfipt 3 mm în vârful conului + un Box **8 × 1 × 5** lipit de capătul de sus al stâlpului  
 4. <span style="color:#00A600;font-weight:700">Color</span>
 
-**Încearcă tu — Complet (25 min)**  
+**Încearcă tu — Complet (12 min)**  
 - [ ] Ai al doilea turn sau zid pe încă o latură  
 - [ ] Poarta (<span style="color:#00A600;font-weight:700">Hole</span>) taie zidul pe ambele fețe  
 - [ ] Steagul e înfipt în vârf  
@@ -148,29 +149,34 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Castelul cu patru ziduri
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Castelul cu șanț
+*Doar dacă ai terminat Complet. Lucrezi în același proiect, `Prenume_Nume_T1_L08`. Dificultatea crește de la o treaptă la alta; nu primești pași, ci reguli. Alegi tu cum ajungi la rezultat.*
 
-- [ ] Schimbă mărimea turnului și culorile  
-- [ ] **Provocarea:** construiești **4 ziduri** care formează un pătrat, cu **4 turnuri** (câte unul la fiecare colț) și **o poartă**. Toate crenelurile sunt la **aceeași distanță**, iar nimic nu plutește. Un coleg numără **4 turnuri** și găsește poarta în cel mult **20 de secunde**.  
+Castelul tău devine o fortăreață adevărată. Nimic nu plutește. Treptele, de la ușor la greu:
+
+- [ ] **Treapta 1 — Poarta cu arc.** Partea de jos a porții o scurtezi la `8` mm, iar deasupra pui un cilindru culcat (`Hole`) cu diametrul `20`, cu centrul la `8`, care face arcul. Arcul **nu trece de `18`**, ca să nu taie crenelurile. Se taie cu Group și se vede din ambele părți  
+- [ ] **Treapta 2 — Deschiderile.** `4` deschideri înguste (`Hole`, de exemplu `4 × 14 × 8`) în zid, la `16` mm una de alta, cu poarta la mijloc, făcute cu `Ctrl+D` repetat. Nu ating poarta sau turnul. Se văd și din spate  
+- [ ] **Treapta 3 — Scara spre poartă.** `4` trepte, făcute cu `Ctrl+D` repetat, dar mutarea include și **ridicarea**: fiecare treaptă e cu `3` mm mai sus și cu `6` mm mai departe decât cea de dinainte. Prima treaptă atinge poarta  
+- [ ] **Treapta 4 — Al doilea zid.** Perpendicular pe primul, cu `7` creneluri la aceeași distanță, care se întâlnește la colț cu un turn. Turnul din colț acoperă capetele zidurilor  
+- [ ] **Treapta 5 — Pătratul.** Cele `4` ziduri formează un pătrat, cu câte un turn la fiecare colț. Toate crenelurile sunt la aceeași distanță, iar nimic nu plutește  
+- [ ] **Treapta 6 — Șanțul și podul.** Castelul stă pe o platformă (`Box` de `150 × 150 × 4`), cu un șanț format din `4` fâșii `Hole` de `10` mm lățime, în jurul zidurilor, tăiate cu Group. În dreptul porții, un pod (`Box`) care atinge poarta și malul, fără să cadă în șanț. Dacă trebuie să modifici șanțul, faci Ungroup, apoi Group  
+
+**Verificare (cu un coleg):** colegul numără în **cel mult 30 de secunde**: arcul porții, deschiderile, treptele, cele `4` turnuri și podul. Apoi verifică din **Top** distanțele crenelurilor și că nimic nu plutește.  
 
 ## Recapitulare rapidă
 1. <span style="color:#DC143C;font-weight:700">Ctrl+D</span> → mută copia **o dată** → <span style="color:#DC143C;font-weight:700">Ctrl+D</span> = piese la aceeași distanță  
 2. <span style="color:#00A600;font-weight:700">Hole</span> prin zid + <span style="color:#DC143C;font-weight:700">Group</span> = poartă  
 3. Greșeală → <span style="color:#DC143C;font-weight:700">Ctrl+Z</span> și refaci prima mutare
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** zid → crenel → Ctrl+D → mută o dată → Ctrl+D… → turn  
-**Complet:** + poartă Hole+Group, turn 2, steag
-
 **Quiz scurt:**  
 - Cum faci **10 creneluri** la distanțe egale?  
 - Cum faci o **poartă** în zid?  
 - Ce faci dacă **distanța** e greșită?
 
-## Temă
-Opțional: un gard cu stâlpi repetați (Ctrl+D) — același `T1_L08` sau proiect nou.
+## Temă (opțional)
+- Dacă ai doar Minim: acasă adaugi poarta, al doilea turn sau zid, steagul și culorile (Pasul 2), în același `Prenume_Nume_T1_L08`.  
+- Dacă ai Complet: într-un proiect nou `T1_L08_B`, un **gard** cu stâlpi repetați cu `Ctrl+D`.
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T1_L08_C`, un **pod** cu stâlpi și balustradă, făcute cu `Ctrl+D` repetat.  
 
 ## Ce urmează
 În **Lecția 9** faci o **cană** goală pe dinăuntru, cu **toartă**.

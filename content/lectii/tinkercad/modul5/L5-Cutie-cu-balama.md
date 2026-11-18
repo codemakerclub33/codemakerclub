@@ -26,7 +26,7 @@ Imprimantele pot face **piese care se mișcă**, deja montate, dacă între ele 
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Schița balamalei: ce e fix, ce se mișcă · numerele din tabel |
+| 0–15 | Schema balamalei: ce e fix, ce se mișcă · numerele din tabel |
 | 15–45 | Cutia · capacul |
 | 45–100 | Balamaua: articulații · știft · punți · verificare |
 | 100–120 | Complet (adâncitura), recap, salvare |
@@ -35,8 +35,8 @@ Imprimantele pot face **piese care se mișcă**, deja montate, dacă între ele 
 
 ---
 
-## Schița balamalei *(pe foaie)*
-Desenezi cutia **din lateral**: în spate, la înălțimea capacului, un cerc mare (articulația Ø8) și în el unul mic (știftul Ø4). Marchezi: **știftul ține de cutie**, **articulația din mijloc ține de capac**.
+## Schema balamalei
+Privești cutia **din lateral**: în spate, la înălțimea capacului, un cerc mare (articulația Ø8) și în el unul mic (știftul Ø4). Reții: **știftul ține de cutie**, **articulația din mijloc ține de capac**.
 
 | Piesă | Mărime | Loc *(de la colțul din față-stânga-jos al cutiei)* |
 |-------|--------|----------------------------------------------------|
@@ -183,7 +183,7 @@ Desenezi cutia **din lateral**: în spate, la înălțimea capacului, un cerc ma
 ## Bonus (extra — după Complet)
 - [ ] O mică „limbă” care ține capacul închis: Box **8·2·4** pe fața din față *(pune-o astfel încât să nu atingă capacul: joc 0,5 mm)*  
 - [ ] Un compartiment în cutie: perete **2·35·15**  
-- [ ] Pe foaie: cum ai așeza cutia la printare? *(cu fundul în jos, balamaua culcată)*
+- [ ] Spune colegului: cum ai așeza cutia la printare? *(cu fundul în jos, balamaua culcată)*
 
 ## Recapitulare rapidă
 1. Balama = știft + articulații cu **joc 0,5**  
@@ -191,15 +191,10 @@ Desenezi cutia **din lateral**: în spate, la înălțimea capacului, un cerc ma
 3. Articulațiile sunt cilindri **culcați** (rotiți 90°)  
 4. Verifici din **Right** și **Top**
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** cutie 50·40·20 − gol 45,2·35,2 · capac 50·39,5·3 (+20,5) · articulație capac Ø8·23 (x 13,5) + gaură Ø5·25 · știft Ø4·50 · articulații cutie Ø8·13 (x 0 și 37) · punți · 2 grupuri  
-**Complet:** adâncitură Ø12 + nume
-
 **Quiz scurt:**  
 - De ce știftul e Ø4 și gaura Ø5?  
 - De ce capacul are 39,5 și nu 40?  
 - Ce se întâmplă dacă grupezi capacul cu cutia?
 
 ## Temă
-Opțional: desenează pe foaie o balama pentru o ușă de dulap. Ce mărimi ai alege pentru știft și joc?
+Opțional, acasă, într-un proiect nou `T5_L05_B`: o balama pentru o ușă de dulap. Ce mărimi alegi pentru știft și joc?

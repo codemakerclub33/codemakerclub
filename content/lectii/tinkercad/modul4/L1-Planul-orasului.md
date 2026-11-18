@@ -39,11 +39,11 @@ Scara te ajută să știi cât de mare e o casă, o stradă sau o mașină faț�
 
 ### 1) Proiect nou și calculul scării
 1. **Create new design** · nume `Prenume_Nume_T4_L01`  
-2. Pe foaie, completezi: **1 m = 2 mm** → o casă de 10 m = **__ mm** · o mașină de 4 m = **__ mm** · o stradă de 8 m = **__ mm** *(20 · 8 · 16)*  
+2. Calculezi (în minte sau cu calculatorul): **1 m = 2 mm** → o casă de 10 m = **__ mm** · o mașină de 4 m = **__ mm** · o stradă de 8 m = **__ mm** *(20 · 8 · 16)*  
 3. Snap Grid: **1.0 mm**
 
 **Gata când:**  
-- [ ] Ai completat pe foaie calculele pentru scara **1 m = 2 mm**  
+- [ ] Ai calculat mărimile pentru scara **1 m = 2 mm**  
 
 ### 2) Placa
 1. **Box** → **150 · 150 · 3** *(un pătrat de 75 m × 75 m în realitate)*  
@@ -109,7 +109,7 @@ Scara te ajută să știi cât de mare e o casă, o stradă sau o mașină faț�
 | **Complet** | + legenda + numele cartierului + săgeata N |
 
 ### Pasul 1 — Minim
-- [ ] Calculul scării completat pe foaie  
+- [ ] Calculul scării făcut  
 - [ ] Placă **150·150·3**  
 - [ ] 4 zone **67·67·1**, câte una în fiecare colț, ridicate la 3 mm  
 - [ ] Culori diferite, golul de 16 mm între zone  
@@ -134,15 +134,10 @@ Scara te ajută să știi cât de mare e o casă, o stradă sau o mașină faț�
 3. Zonele în colțuri, **16 mm** între ele  
 4. Din L5, în gol vin străzile
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** placă 150·150·3 → 4 zone 67·67·1 (colțuri, +3 mm) → culori → Text „1 m = 2 mm”  
-**Complet:** + legendă · nume · săgeată N
-
 **Quiz scurt:**  
 - Câți mm are o casă de 12 m?  
 - De ce toate plăcile au aceleași mărimi?  
 - Cât e golul dintre zone? Ce vine acolo?
 
 ## Temă
-Opțional: măsori pe hartă (sau cu pașii) o stradă din orașul tău și calculezi în mm cât ar fi pe placă. Scrie răspunsul pe foaie.
+Opțional: măsori o stradă din orașul tău (pe o hartă online sau cu pașii) și calculezi în mm cât ar fi pe placă. Verifici cu o piesă de probă în Tinkercad, cu Ruler.

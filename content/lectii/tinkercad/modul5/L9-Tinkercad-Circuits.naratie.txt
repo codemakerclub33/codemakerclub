@@ -28,8 +28,8 @@ Bonus. Schimbi pragul și vezi cum se oprește mai devreme sau mai târziu. Prov
 
 Recapitulare. Sim Lab arată fizica modelului înainte să-l construiești. Axle connector cu Motor Type Stepper înseamnă roată cu motor. Controllerul rulează blocurile, iar Set target speed dă viteza motorului. Viteza pozitivă merge înainte, cea negativă înapoi, zero oprește. Field Sensor, Distance și If dau oprire automată.
 
-Tema, opțional. Dacă ai doar Minim, adaugi acasă senzorul și zidul. Dacă ai Complet, desenezi pe foaie un robot cu alt senzor, de exemplu IMU sensor, și scrii ce ar face. Dacă ai terminat și Bonusul, încerci căruciorul pe Marte, apoi pe Jupiter.
+Tema, opțional. Dacă ai doar Minim, adaugi acasă senzorul și zidul. Dacă ai Complet, construiești în Circuits un robot cu alt senzor, de exemplu IMU sensor, și spui ce ar face. Dacă ai terminat și Bonusul, încerci căruciorul pe Marte, apoi pe Jupiter.
 
-Ce urmează. În lecția zece îți alegi o idee și faci un produs complet, de la schiță la prezentare.
+Ce urmează. În lecția zece îți alegi o idee și faci un produs complet, de la plan la prezentare.
 
 Succes la căruciorul tău.

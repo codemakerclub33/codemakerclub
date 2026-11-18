@@ -9,8 +9,8 @@
 ---
 
 ## Obiectiv
-La finalul orei ai **două plăci**: una cu știfturi **Ø6** și una cu găuri de **Ø6,2 / 6,4 / 6,6**, plus **regulile de print** scrise pe foaie.  
-**Minim:** placa A **80·20·5** cu 3 știfturi **Ø6·8** la 15 mm una de alta · placa B **80·20·5** cu 3 găuri **Ø6,2 · Ø6,4 · Ø6,6** perfect în dreptul știfturilor · regulile de print copiate pe foaie.  
+La finalul orei ai **două plăci**: una cu știfturi **Ø6** și una cu găuri de **Ø6,2 / 6,4 / 6,6**, plus **regulile de print**, pe care le poți explica.  
+**Minim:** placa A **80·20·5** cu 3 știfturi **Ø6·8** la 15 mm una de alta · placa B **80·20·5** cu 3 găuri **Ø6,2 · Ø6,4 · Ø6,6** perfect în dreptul știfturilor · regulile de print citite și explicate colegului.  
 **Complet:** Minim + încă 2 perechi (**Ø6,0** și **Ø6,8**) + o **cutiuță** **30·20·15** cu pereți de **1,6 mm**.
 
 ## De ce contează
@@ -34,7 +34,7 @@ Cât de mare? Depinde de imprimantă. Tu faci acum testul; **după oră** (la pr
 
 ---
 
-## Regulile de print *(le copiezi pe foaie)*
+## Regulile de print *(le citești atent)*
 
 | Regula | Valoare | De ce |
 |--------|---------|-------|
@@ -94,7 +94,7 @@ Cât de mare? Depinde de imprimantă. Tu faci acum testul; **după oră** (la pr
 ### 5) Verificare
 1. Din **Top**: fiecare gaură e în dreptul unui știft *(prima placă și a doua au aceleași centre pe stânga–dreapta)*  
 2. Selectezi fiecare gaură: câmpurile de mărime arată 6,2 · 6,4 · 6,6 *(cu **Ruler** verifici și distanțele: 15 mm între centre)*  
-3. Pe foaie: notezi jocul pe parte *(6,2 − 6) ÷ 2 = 0,1 mm; 6,4 → 0,2 mm; 6,6 → 0,3 mm*
+3. Calculezi jocul pe parte *(6,2 − 6) ÷ 2 = 0,1 mm; 6,4 → 0,2 mm; 6,6 → 0,3 mm*
 
 **Gata când:**  
 - [ ] Am parcurs toate punctele din verificare  
@@ -137,7 +137,7 @@ Cât de mare? Depinde de imprimantă. Tu faci acum testul; **după oră** (la pr
 
 | | Ce trebuie |
 |--|------------|
-| **Minim** | Placa A (3 știfturi Ø6) · placa B (găuri Ø6,2/6,4/6,6) centrate · regulile pe foaie |
+| **Minim** | Placa A (3 știfturi Ø6) · placa B (găuri Ø6,2/6,4/6,6) centrate · regulile explicate colegului |
 | **Complet** | + perechile Ø6,0 și Ø6,8 + cutiuța cu pereți 1,6 mm |
 
 ### Pasul 1 — Minim
@@ -145,7 +145,7 @@ Cât de mare? Depinde de imprimantă. Tu faci acum testul; **după oră** (la pr
 - [ ] 3 ghiduri la același loc pe placa B  
 - [ ] 3 găuri centrate, apoi ghiduri șterse  
 - [ ] **Ctrl+G** pe placa B  
-- [ ] Regulile pe foaie  
+- [ ] Ai explicat regulile colegului  
 
 ### Pasul 2 — Complet
 - [ ] Perechi la 10 și 70  
@@ -157,7 +157,7 @@ Cât de mare? Depinde de imprimantă. Tu faci acum testul; **după oră** (la pr
 ## Bonus (extra — după Complet)
 - [ ] Scrie sub fiecare gaură mărimea ei, cu **Text** mic *(Hole înalt 2 mm, ridicat la 4 mm: adâncime 1 mm)*  
 - [ ] Un test pentru o piesă care **se mișcă**: ax Ø5 și gaură Ø5,8  
-- [ ] Pe foaie: cum ai orienta cutiuța la printare, ca să nu ai nimic „în aer”?
+- [ ] Spune colegului: cum ai orienta cutiuța la printare, ca să nu ai nimic „în aer”?
 
 ## Recapitulare rapidă
 1. Piesele se potrivesc doar cu **joc**  
@@ -165,15 +165,10 @@ Cât de mare? Depinde de imprimantă. Tu faci acum testul; **după oră** (la pr
 3. Perete minim **1,2 mm**  
 4. Ghidul te ajută să centrezi exact
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** placa A 80·20·5 + știfturi Ø6·8 (25, 40, 55) → placa B 80·20·5 + găuri Ø6,2 / 6,4 / 6,6 centrate pe ghiduri  
-**Complet:** + Ø6,0 și Ø6,8 · cutiuță 30·20·15, pereți 1,6 *(gol 26,8·16,8·14, ridicat 1,6)*
-
 **Quiz scurt:**  
 - De ce un știft de 6,0 nu intră într-o gaură de 6,0?  
 - Câți mm e jocul pe parte la gaura de 6,4? *(0,2)*  
 - Care e peretele minim pe care îl folosim?
 
 ## Temă
-Opțional: spune pe foaie ce joc ai alege pentru un capac care trebuie să **se deschidă ușor**, și ce joc pentru un știft care trebuie să **țină strâns**.
+Opțional, acasă, într-un proiect nou `T5_L03_B`: două perechi știft–gaură, una pentru un capac care trebuie să **se deschidă ușor** și una pentru un știft care trebuie să **țină strâns**. Ce joc alegi pentru fiecare?

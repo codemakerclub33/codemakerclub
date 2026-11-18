@@ -212,18 +212,13 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 3. Rotorul și roata rămân **separate** de ax  
 4. Roata în picioare: din Front se vede ca o roată, iar centrul ei e la aceeași înălțime cu axul  
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** carusel: bază Ø100·4 + stâlp Ø12·60 + capac Ø18·3 · rotor: platformă Ø80·4 + 8 stâlpi Ø4·36 la R30 cu scaune 10·10·3 + acoperiș con 90·90·14 − Hole Ø13 la 8 mm · roată: placă 90·40·4 + 2 stâlpi 8·8·50 + ax Ø4·40 · roată: 4 bare 70·4·8 + 8 cabine 8·8·8 + butuc Ø12·8 − Hole Ø5  
-**Complet:** + steag la 58 mm · Ruler · culori
-
 **Quiz scurt:**  
 - De ce gaura rotorului e mai mare decât stâlpul?  
 - Cu cât e mai mare gaura (`13`) decât stâlpul (`12`), pe fiecare parte?  
 - Câți stâlpi sunt la carusel și cum i-ai făcut?
 
 ## Temă
-Opțional: desenezi pe foaie o **roată panoramică** văzută din față și marchezi axul, butucul și o cabină.
+Opțional, acasă, într-un proiect nou `T3_L09_B`: o **roată panoramică**, cu ax, butuc și o cabină, văzută din față.
 
 ## Ce urmează
 În **Lecția 10** faci **proiectul final de modul**: alegi un mecanism cu o piesă fixă, una mobilă cu joc și o piesă repetată, și îl prezinți.

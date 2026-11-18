@@ -146,15 +146,10 @@ Detaliile mici dau viață unui oraș. Dar nu le faci pe rând, una câte una: f
 2. Distanțe egale = **Ctrl+D**  
 3. Semafor: roșu, galben, verde, de sus în jos
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** felinar (stâlp 0,8·0,8·8 + cap 3·1,2·1 la 12 mm) → Ctrl+D ×3 (20 mm) · semafor (Ø0,8·9, cutie 2·2·5, 3 sfere Ø1,5) · indicator (Ø0,6·7 + placă 3·0,3·3)  
-**Complet:** 8 felinare · 4 semafoare · 3 indicatoare
-
 **Quiz scurt:**  
 - Care e ordinea luminilor la semafor?  
 - Cum faci 4 felinare egale?  
 - De ce grupezi piesele?
 
 ## Temă
-Opțional: observă pe drum spre casă ce detalii urbane vezi (felinare, indicatoare, coșuri). Desenează două dintre ele.
+Opțional: observă pe drum spre casă ce detalii urbane vezi (felinare, indicatoare, coșuri) și construiește două dintre ele într-un proiect nou `T4_L09_B`.

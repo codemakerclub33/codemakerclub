@@ -26,9 +26,11 @@ Proiectul de azi. Barca mea.
 
 Minim înseamnă: Half Sphere cu partea plată sus, catarg și o pânză Wedge subțire, nimic nu plutește, verificat din Front, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus a doua pânză, steag, apă și culori, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când profesorul cere arată-mi barca din lateral, iar din Front se recunoaște clar o barcă.
 
-Bonus. Schimbi culoarea pânzelor și a steagului. Provocarea, Barca cu cabină și vâsle: adaugi o cabină, un Box de doisprezece pe zece pe opt, pe punte, lângă catarg, nu peste el, la înălțimea cincisprezece, și două vâsle din cilindri subțiri, rotiți cu cel puțin patruzeci și cinci de grade. Din Front și din Right, un coleg recunoaște patru părți, corp, cabină, catarg și vâsle, în cel mult treizeci de secunde.
+Bonus. Lucrezi în același proiect. Barca ta primește o cabină, echipament și un far în depărtare, pe trepte, de la ușor la greu. Prima treaptă: cabina, un Box de doisprezece pe zece pe opt, pe punte, la pupa, în afara pânzelor, la înălțimea cincisprezece, care nu atinge pânzele și nu iese peste marginea bărcii. A doua: două vâsle din cilindri subțiri, rotiți cu cel puțin patruzeci și cinci de grade, simetrice, unul pe fiecare bord. A treia: un colac de salvare, dintr-un cilindru scund și lat, cu o gaură Hole în mijloc și Group, culcat pe peretele cabinei, de altă culoare. A patra: trei hublouri rotunde, de doi milimetri, pe peretele lung al cabinei, făcute cu Hole și Group, la aceeași înălțime și la distanțe egale. A cincea: numele bărcii în relief, pe o placă mică lipită pe cabină, citit normal din Front. A șasea: un far, un obiect nou, o stâncă din Half Sphere, cu turn și lumină în vârf, de cel puțin două ori mai înalt decât catargul. Un coleg numără în treizeci de secunde: cabina, vâslele, colacul, hubloturile, numele și farul. Apoi verifică din Front că nimic nu plutește.
 
 Recapitulare. Orice obiect se împarte în forme simple. O rotire de o sută optzeci de grade, cu săgeata curbă, răstoarnă o piesă. Front și Right sunt vederile din lateral, cu care verifici.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă a doua pânză, steagul, apa și culorile. Dacă ai Complet, faci acasă, într-un proiect nou, un vapor sau o barcă cu motor, din aceleași forme. Dacă ai terminat și Bonusul, opțional, acasă, într-un proiect nou, un submarin din cilindri, cu periscop.
 
 Ce urmează. În lecția șapte construiești o rachetă, cu simetrie în jurul unei axe.
 

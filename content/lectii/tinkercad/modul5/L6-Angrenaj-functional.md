@@ -30,7 +30,7 @@ Raportul de transmisie arată cât de repede se rotește fiecare roată: **roata
 |--------|----------|
 | 0–15 | Ce e raportul de transmisie? Exemplu cu bicicleta |
 | 15–50 | Pas cu pas: generatorul · axele · distanța |
-| 50–100 | Minim → Complet (manivela) → raportul pe foaie |
+| 50–100 | Minim → Complet (manivela) → raportul |
 | 100–120 | Verificare, recap, salvare |
 
 **Unelte azi:** **Shape Generators (Gear)** · **Cylinder** · **Box** · **Hole** · **Ruler** · **Snap Grid 0.5** · mutare cu **săgețile** · rotire cu numere · **Align** (**L**) · **View Cube** (Top, Front) · **Ctrl+G**
@@ -69,7 +69,7 @@ Raportul de transmisie arată cât de repede se rotește fiecare roată: **roata
 2. Pui roțile pe același rând *(L: mijloc pe față–spate)* și le muți până când centrele sunt la **d** *(distanța dintre centre = jumătate din D1 + jumătate din D2 + spațiul dintre ele; măsori cu Ruler de la marginea stângă a primei roți)*  
 3. Din **Top**, mărit la maximum: dinții unei roți intră în golurile celeilalte, **fără** să se suprapună  
 4. Dacă dinții se suprapun: depărtezi cu **0,5 mm**; dacă e gol mare între ei: apropii cu **0,5 mm**  
-5. Notezi pe foaie **d final = …**
+5. Reții **d final = …**
 
 > **Dacă dinții se ciocnesc, dar distanța pare bună:** poate roata mică e doar rotită „nepotrivit”. Rotește-o cu **15°** *(jumătate din pasul unui dinte: 360 ÷ 12 ÷ 2; tastezi unghiul la săgeata curbă)* și privește din nou din **Top**: dinții ei trebuie să intre în golurile roții mari.
 
@@ -89,7 +89,7 @@ Raportul de transmisie arată cât de repede se rotește fiecare roată: **roata
 - [ ] Axele (**Ø5**) și placa sunt grupate  
 - [ ] Roțile sunt **separate**, ridicate la **5 mm**  
 
-### 6) Tabelul pe foaie
+### 6) Tabelul
 
 | | Roata mică | Roata mare |
 |--|-----------|-----------|
@@ -98,7 +98,7 @@ Raportul de transmisie arată cât de repede se rotește fiecare roată: **roata
 | Distanța dintre axe | d = … | |
 
 **Gata când:**  
-- [ ] Tabelul de pe foaie e completat  
+- [ ] Tabelul e completat (îl citești colegului)  
 
 ### 7) Complet — manivela și raportul
 1. **Manivela:** **Box** **L_m · 6 · 4**, unde **L_m = 25** sau mai puțin, dar **mai mic decât d − 5** *(altfel lovește axul roții mici)* · **L** cu axul roții mari: mijloc pe față–spate și marginea din stânga sau din dreapta cu axul *(manivela pornește de la ax, de preferat în partea opusă roții mici)* · ridicată pe roata mare, la **5 mm + grosimea roții** · **Hole** **Cylinder 5,8** peste ax, prin manivelă · **Ctrl+G** manivelă + gaură + **roata mare**  
@@ -138,7 +138,7 @@ Raportul de transmisie arată cât de repede se rotește fiecare roată: **roata
 - [ ] D1 și D2 măsurate  
 - [ ] Distanța d, verificată din **Top**  
 - [ ] Axe și placă · roțile separate de axe  
-- [ ] Tabelul pe foaie  
+- [ ] Tabelul completat  
 
 ### Pasul 2 — Complet
 - [ ] Manivela  
@@ -150,18 +150,13 @@ Raportul de transmisie arată cât de repede se rotește fiecare roată: **roata
 ## Bonus (extra — după Complet)
 - [ ] O a treia roată de **18 dinți** — calculează raportul față de roata mare  
 - [ ] Un angrenaj cu raportul **1 : 3** *(12 și 36 de dinți)*  
-- [ ] Pe foaie: cum ai folosi un angrenaj la o bicicletă?
+- [ ] Spune colegului: cum ai folosi un angrenaj la o bicicletă?
 
 ## Recapitulare rapidă
 1. Raport = dinți roata conducătoare ÷ dinți roata condusă  
 2. Mai puțini dinți = se învârte **mai repede**  
 3. Aceeași mărime a dintelui la ambele roți  
 4. Distanța dintre axe se verifică din **Top**
-
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** Gear 12 dinți + Gear 24 dinți → D1, D2 → d ≈ (D1+D2)÷2 → verificat Top → axe Ø5 + placă  
-**Complet:** manivelă · raport 24 ÷ 12 = 2
 
 **Quiz scurt:**  
 - Câte ture face roata mică (12) când cea mare (24) face 3? *(6)*  

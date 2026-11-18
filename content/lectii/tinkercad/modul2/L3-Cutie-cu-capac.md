@@ -28,10 +28,11 @@ Dacă marginea capacului e **exact** cât gaura, la printare nu intră. Azi laș
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap lecția trecută · privim obiecte reale: ce părți au? |
-| 10–50 | **Obiectul 1** — Cutia cu capac (Minim) |
-| 50–85 | **Obiectul 2** — Cutia rotundă (Minim) |
-| 85–110 | **Complet** pe primul obiect |
-| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme sau ca temă |
+| 10–44 | **Obiectul 1** — Cutia cu capac (Minim) |
+| 44–68 | **Obiectul 2** — Cutia rotundă (Minim) |
+| 68–85 | **Complet** pe primul obiect |
+| 85–110 | **Bonus ★★★** — turnul de cutii, pe trepte (fiecare merge cât apucă) |
+| 110–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -134,7 +135,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 4. <span style="color:#E65722;font-weight:700">Ruler</span>: pe o piesă selectată citești mărimea ei. Din <span style="color:#D400D4;font-weight:700">Top</span>, măsori marginea capacului (**53**) și golul cutiei (**54**) — diferența e 1 mm (0,5 pe parte). *(Golul se măsoară doar dacă Hole-ul e separat: <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span> pe cutie, măsori, apoi <span style="color:#DC143C;font-weight:700">Ctrl+A</span> pe Hole+cutie → <span style="color:#DC143C;font-weight:700">Ctrl+G</span> la loc)*  
 5. <span style="color:#00A600;font-weight:700">Color</span>: cutia o culoare, capacul alta
 
-**Încearcă tu — Complet — capacul pe cutie (15 min)**  
+**Încearcă tu — Complet — capacul pe cutie (17 min)**  
 - [ ] Capacul e rotit **180°** (marginea în jos) și stă pe pereți, la **27 mm**  
 - [ ] Din <span style="color:#D400D4;font-weight:700">Front</span>, capacul nu e „înfipt” în pereți  
 - [ ] Cutia și capacul au culori diferite
@@ -188,11 +189,19 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Cutie cu două compartimente
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Turnul de cutii
+*Doar dacă ai terminat Complet. Lucrezi în proiectul `Prenume_Nume_T2_L03`, cu capacul pus pe cutia mare (starea de la Complet), pe trepte, de la ușor la greu. Fiecare piesă o faci de la zero, nu o copiezi din altă piesă. Treapta următoare o începi după ce ai încheiat-o pe cea dinainte.*
 
-- [ ] Schimbă culorile și pune pe capac text cu numele tău (`1` mm)  
-- [ ] **Provocarea (obiect mai complicat):** cutia `60 × 40 × 30` cu **2 compartimente egale**: perete **`3 × 34 × 25`** pus **după** Group, la mijloc, apoi <span style="color:#DC143C;font-weight:700">Group</span> din nou; plus un **mâner** pe capac (Cylinder `10 · 10 · 5`). Cele două compartimente au câte `25,5` mm lățime (verificat cu <span style="color:#E65722;font-weight:700">Ruler</span>), iar capacul se potrivește în continuare.  
+*Ideea: cutia mică stă pe capacul cutiei mari. Capacul are o **pastilă** care iese deasupra, iar cutia mică are dedesubt un **locaș** puțin mai mare, cu același joc de `0,5` mm pe parte.*
+
+- [ ] **Treapta 1 — Numele pe cutia mare.** Un `Text` cu numele tău (cel mult `6` litere), cu literele de `8` mm înălțime și grosimea `2`. Îl rotești cu `90°`, ca să stea în picioare, și îl pui pe peretele din față, la mijloc: `1` mm intră în perete, `1` mm iese.  
+- [ ] **Treapta 2 — Despărțitorul.** În cutia mare, un `Box` `3 · 36 · 24`, centrat, la `3` (pe fund). Cei `36` mm intră câte `1` mm în pereții cutiei. Rezultă **2 compartimente** de `25,5` mm lățime, pe care le verifici cu `Ruler`. Vârful peretelui e la `27`, exact cât marginea capacului, deci capacul se potrivește în continuare.  
+- [ ] **Treapta 3 — Cutia mică.** O cutie nouă, goală, `40 · 30 · 20`, cu pereți de `3` mm și fund de `4` mm: un `Hole` `34 · 24 · 20`, ridicat la `4`, apoi `Ctrl+G`.  
+- [ ] **Treapta 4 — Pastila și locașul.** Pe capacul mare, un `Box` `34 · 24 · 3`, centrat și ridicat la `33`, ca să iasă `2` mm deasupra capacului. Selectezi capacul și pastila și dai `Ctrl+G`. Sub cutia mică, un `Hole` `35 · 25 · 2,5`, pus la baza ei și grupat cu ea. Pui cutia mică pe capacul mare (la `34`, centrată) și cu `Ruler` confirmi jocul de `0,5` mm pe parte.  
+- [ ] **Treapta 5 — Capacul cutiei mici.** O placă `40 · 30 · 4` și o margine `33 · 23 · 3`, ridicată la `4`, ca la capacul cutiei mari. Margine: golul e `34 · 24`, deci jocul e `0,5` mm pe parte. Le grupezi.  
+- [ ] **Treapta 6 — Turnul.** Întorci capacul mic cu `180°` și îl pui pe cutia mică, ridicat la `51`, centrat. Din `Front` verifici că cutia mică stă pe pastilă și capacul ei stă pe pereți.  
+
+**Verificare (cu un coleg):** colegul numără în cel mult **30 de secunde**: cutia mare, capacul mare, despărțitorul, textul, cutia mică și capacul mic. Apoi scoate și pune la loc cutia de sus și spune dacă stă strâmb sau se mișcă.  
 
 ## Recapitulare rapidă
 1. Cutie goală = Box Solid + Box <span style="color:#00A600;font-weight:700">Hole</span> mai mic + <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
@@ -201,19 +210,15 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 4. Cutia și capacul rămân **2 piese**
 5. Al doilea obiect (Cutia rotundă) exersează aceeași idee pe alte mărimi
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Cutie:** Box 60·40·30 + Hole 54·34·30 (ridicat 3 mm) → Group  
-**Capac:** Box 60·40·4 + margine 53·33·3 → Group  
-**Complet:** capac întors 180° pe cutie · Ruler · Color
-
 **Quiz scurt:**  
 - De ce marginea capacului nu poate fi exact cât golul?  
 - Câți mm are fundul cutiei?  
 - Câte piese separate trebuie să rămână la final?
 
-## Temă
-Opțional: o cutie pătrată **40 × 40 × 20** cu capac — aplici aceeași regulă (gol − 1 mm).
+## Temă (opțional)
+- Dacă ai doar Minim: acasă termini în același proiect ce nu ai apucat.  
+- Dacă ai Complet: într-un proiect nou `T2_L03_C`, o cutie pătrată **40 × 40 × 20** cu capac — aplici aceeași regulă (gol − 1 mm).  
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T2_L03_D`, un **turn de 3 cutii**, cu mărimi la alegere, în care calculezi tu pastilele, locașurile și jocul.
 
 ## Ce urmează
 În **Lecția 4** faci un **tăietor pentru biscuiți** în formă de stea și unul cu **forma ta**, cu perete subțire de `2` mm.

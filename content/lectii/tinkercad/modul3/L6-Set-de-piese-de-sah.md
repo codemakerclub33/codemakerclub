@@ -202,18 +202,13 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 4. <span style="color:#DC143C;font-weight:700">Ctrl+D</span> cu aceeași mutare dă locașuri la distanțe egale  
 5. Piesele rămân **separate** de tablă  
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** bază 30·30·4 (×3, la 40 mm) · pion: gât 14·14·18 + sferă 16 la 14 · turn: corp 18·18·34 + coroană 24·24·8 la 30 − 4 creneluri 6·28·8 · tablă 160·80·6 − 8 locașuri 31·31·4 (la 3, la 40 mm)  
-**Complet:** + nebun: con 18·18·32 + sferă 12 la 28 − crestătură 2·20·8 (45°) · pion alb și negru · culori
-
 **Quiz scurt:**  
 - De ce toate piesele au aceeași bază?  
 - Cu cât e mai mare locașul decât baza, pe fiecare parte?  
 - Cum faci 8 locașuri egale depărtate?
 
 ## Temă
-Opțional: desenezi pe foaie siluetele a **3** piese de șah și scrii înălțimea fiecăreia.
+Opțional, acasă, într-un proiect nou `T3_L06_B`: **3** piese de șah, cu înălțimi diferite. Notează înălțimea fiecăreia cu Ruler.
 
 ## Ce urmează
 În **Lecția 7** faci **zaruri personalizate** și o **cutie pentru zaruri**: un cub cu puncte și o cutie în care stă cu joc.

@@ -211,12 +211,7 @@ Dacă rămâi în urmă: **oprește-te la Minim** și salvează. Nu e eșec, e b
 5. <span style="color:#2E9E4F;font-weight:700">Field Sensor</span> + <span style="color:#8E4DF0;font-weight:700">distance</span> + <span style="color:#F28C28;font-weight:700">if</span> = oprire automată  
 6. Minim = Pasul 1 · Complet = Pasul 1 + 2  
 
-## Schema pe scurt *(pe foaie)*
-Box + 2 cilindri + <span style="color:#2E9E4F;font-weight:700">Axle connector</span> (Stepper) + <span style="color:#2E9E4F;font-weight:700">Controller</span>  
-W → viteză `400` · S → viteză `-400` · eliberare → `0`  
-<span style="color:#2E9E4F;font-weight:700">Field Sensor</span>: distanță `< 100` → viteză `0`
-
-**Quiz scurt (cu profesorul):**  
+**Quiz scurt:**  
 - Ce diferență e între 3D și Sim Lab?  
 - Ce face Motor Type: Stepper?  
 - De ce avem nevoie de on key release?  
@@ -225,8 +220,8 @@ W → viteză `400` · S → viteză `-400` · eliberare → `0`
 
 ## Temă (opțional)
 - Dacă ai doar Minim: acasă adaugi senzorul și zidul (Pasul 2), în același `Prenume_Nume_T5_L09`.  
-- Dacă ai Complet: desenezi pe foaie un robot cu **alt senzor** (de exemplu IMU sensor) și scrii ce ar face.  
+- Dacă ai Complet: construiești în Circuits un robot cu **alt senzor** (de exemplu IMU sensor) și spui ce ar face.
 - Dacă ai terminat și Bonusul: faci o copie și o încerci pe **Marte**, apoi pe **Jupiter**.  
 
 ## Ce urmează
-În **Lecția 10** îți alegi o idee și faci un **produs complet**, de la schiță la prezentare.
+În **Lecția 10** îți alegi o idee și faci un **produs complet**, de la plan la prezentare.

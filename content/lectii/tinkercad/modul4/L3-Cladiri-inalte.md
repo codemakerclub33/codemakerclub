@@ -146,15 +146,10 @@ O clădire înaltă are zeci de ferestre identice. Nu le faci una câte una: fac
 3. Rândurile în sus: aceeași mutare de **6 mm**  
 4. Cu **Ctrl+D** nu mai măsori de fiecare dată
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** Box 30·20·54 − ușă 8·4·8 − fereastră 4·4·3 (−12, +8 mm) → Ctrl+D ×3 (8 mm) → Group → Ctrl+D ×2 (+6 mm) → Group → +4 mm pe zona centru  
-**Complet:** 8 rânduri · terasă · antenă · al doilea bloc
-
 **Quiz scurt:**  
 - Câți mm are un bloc de 12 etaje? *(72)*  
 - Cum faci 4 ferestre egale fără să măsori fiecare?  
 - De ce copiem rândul, nu fereastra?
 
 ## Temă
-Opțional: pe foaie, desenezi un bloc cu 10 etaje și 3 ferestre pe rând. Câte ferestre are în total? Câți mm are în înălțime?
+Opțional, acasă, într-un proiect nou `T4_L03_B`: un bloc cu 10 etaje și 3 ferestre pe rând. Câte ferestre are în total? Câți mm are în înălțime?

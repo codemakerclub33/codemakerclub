@@ -198,11 +198,6 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 4. Baza lată = stabilitate
 5. Al doilea obiect (Suportul de vacanță) are canale la distanțe egale și un capac cu joc de `0,5` mm
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** Cylinder 70·70·40 − Hole 16·16·40 (ridicat 5 mm) → mută 15+15 mm → Ctrl+D (30 mm) → ambele → Ctrl+D (30 mm) → Group  
-**Complet:** + bază 80·80·4 · Ruler · Color
-
 **Quiz scurt:**  
 - De ce gaura se ridică 5 mm de la plan și nu stă pe plan?  
 - Cum faci al doilea rând de găuri fără să măsori din nou?  

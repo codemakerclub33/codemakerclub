@@ -29,8 +29,9 @@ Azi le exersezi pe piese rotunde. Fără **Shift** la scalare, sfera se „strâ
 |--------|----------|
 | 0–10 | Recap L1 (D, Ctrl+Z, camera) · privim un om de zăpadă (poză / obiect) |
 | 10–35 | Demo: <span style="color:#E65722;font-weight:700">Shift</span>, <span style="color:#DC143C;font-weight:700">Ctrl+D</span>, rotire (<span style="color:#E65722;font-weight:700">săgeata curbă</span> — o dată, ca să vezi cum merge), ridicare (<span style="color:#E65722;font-weight:700">conul negru</span>) |
-| 35–95 | Construim omul: Minim → Complet → Bonus (cei rapizi nu stau inactivi) |
-| 95–120 | Recap, quiz, galerie (fiecare își arată omul) |
+| 35–75 | Construim omul: Minim → Complet |
+| 75–105 | **Bonus:** scena de iarnă, pe trepte (fiecare merge cât apucă) |
+| 105–120 | Recap, quiz, galerie (fiecare își arată scena) |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -59,7 +60,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 2. Nume: `Prenume_Nume_T1_L02`  
 3. Tinkercad salvează automat — verifici numele sus
 
-**Încearcă tu — Proiect nou (4 min)**  
+**Încearcă tu — Proiect nou (2 min)**  
 - [ ] Proiectul e creat și redenumit `Prenume_Nume_T1_L02`  
 
 ### 2) Corpul (sfera de jos)
@@ -67,7 +68,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 2. Scalezi **proporțional**: ții <span style="color:#E65722;font-weight:700">Shift</span> și tragi de un **pătrățel alb din colț** până vezi **40 × 40 × 40**  
 3. Ea e cea mai mare (baza) · stă pe plan (dacă plutește → <span style="color:#E65722;font-weight:700">D</span>)
 
-**Încearcă tu — Corpul (sfera de jos) (8 min)**  
+**Încearcă tu — Corpul (sfera de jos) (4 min)**  
 - [ ] Sfera de jos e **40 × 40 × 40** și stă pe plan  
 
 ### 3) Mijlocul
@@ -77,7 +78,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 4. După scalare, verifici din <span style="color:#D400D4;font-weight:700">Top</span> (View Cube): sfera e pe **mijlocul** celei de jos? Dacă nu, o muți cu mouse-ul (alinierea cu <span style="color:#E65722;font-weight:700">L</span> vine la L3)  
 5. O ridici cu **<span style="color:#E65722;font-weight:700">conul negru</span> de deasupra piesei** până la **32** — ea intră **8 mm** în sfera de jos (sferele doar „atinse” ar avea un singur punct comun)
 
-**Încearcă tu — Mijlocul (12 min)**  
+**Încearcă tu — Mijlocul (6 min)**  
 - [ ] Sfera din mijloc e **30 × 30 × 30**, centrată, la **32** (intră în cea de jos)  
 
 ### 4) Capul
@@ -85,7 +86,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 2. Centrezi din Top cu ochiul, apoi ridici cu <span style="color:#E65722;font-weight:700">conul negru</span> la **54** (intră 8 mm în sfera din mijloc)  
 3. Din **lateral** (View Cube → Front / Right): sferele se suprapun puțin — fără gol între ele
 
-**Încearcă tu — Capul (12 min)**  
+**Încearcă tu — Capul (6 min)**  
 - [ ] Capul e **20 × 20 × 20**, la **54**  
 - [ ] Din lateral nu e gol între sfere  
 
@@ -96,7 +97,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 4. Îl muți în fața capului, la înălțimea feței: ridici cu <span style="color:#E65722;font-weight:700">conul negru</span> la ~**61** (ca mijlocul lui să fie pe la mijlocul capului, 64). Partea lată a conului **intră 2–3 mm** în cap  
 5. Verifici din lateral (Right) că vârful iese în față și e la înălțimea feței
 
-**Încearcă tu — Nasul — rotirea (15 min)**  
+**Încearcă tu — Nasul — rotirea (8 min)**  
 - [ ] Conul e rotit **90°**, vârful spre față  
 - [ ] Din <span style="color:#D400D4;font-weight:700">Right</span>, vârful iese în față, la înălțimea feței  
 
@@ -105,7 +106,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 2. Pe capul **rotund**, verifici din Front că pălăria **intră puțin** în sferă — altfel rămâne un gol urât. Centrezi din Top  
 3. **Ochi:** 2 Sphere de ~**3 mm**, jumătate în cap, pe față, deasupra nasului, la ~**67** înălțime · **Nasturi:** 2–3 Sphere de ~**4 mm** pe fața corpului, pe mijloc, pe verticală, jumătate înfundate · <span style="color:#00A600;font-weight:700">Color</span>
 
-**Încearcă tu — Complet (20 min)**  
+**Încearcă tu — Complet (14 min)**  
 - [ ] Pălăria intră puțin în cap, fără gol  
 - [ ] Ochii și nasturii sunt înfipți pe jumătate, nu plutesc  
 - [ ] Piesele au culori
@@ -155,11 +156,19 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Omul cu accesorii
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Scena de iarnă
+*Doar dacă ai terminat Complet. Lucrezi în același proiect, `Prenume_Nume_T1_L02`. Dificultatea crește de la o treaptă la alta; nu primești pași, ci reguli. Alegi tu cum ajungi la rezultat.*
 
-- [ ] Schimbă culorile și mărește pălăria cu `2` mm  
-- [ ] **Provocarea:** adaugi **fular** (Torus), **2 brațe** din cilindri rotiți cu cel puțin `45°` și un **al doilea om**, mai mic, doar din sfere. Nimic nu plutește (verificat din Front). Un coleg recunoaște **4 accesorii** (pălărie, fular, brațe, al doilea om) în cel mult **30 de secunde**.  
+Omul tău nu mai stă singur: construiești în jurul lui o **scenă de iarnă**, pe o tavă. Treptele sunt în ordine, de la ușor la greu:
+
+- [ ] **Treapta 1 — Fularul și brațele.** Un `Cylinder` turtit (lat și foarte scund), puțin înclinat, care înconjoară gâtul (locul unde se întâlnesc capul și mijlocul), fără gol între el și corp. Apoi doi cilindri subțiri ca brațe, rotiți **în unghiuri diferite** (niciunul de `90°`), cu capătul **înfipt** în sfera din mijloc, la înălțimea umerilor. Din **Top**, brațele sunt la aceeași distanță de axa omului  
+- [ ] **Treapta 2 — Pomul de iarnă.** Lângă om: un trunchi (cilindru) și cel puțin **3 conuri suprapuse**, tot mai mici spre vârf. Conurile se suprapun între ele cu `1`–`2` mm, iar pomul e **mai înalt** decât omul  
+- [ ] **Treapta 3 — Omul mic.** Un al doilea om de zăpadă, **cu aceleași proporții** ca primul (jos : mijloc : cap = `4 : 3 : 2`), dar la jumătate de mărime, făcut doar din sfere, cu nas din con rotit `90°`  
+- [ ] **Treapta 4 — Sania.** O sanie pentru omul mic, din forme simple: **două tălpi** paralele (cutii lungi și joase), o **scândură** deasupra lor, care **intră `1` mm** în tălpi, și un **cilindru culcat** (rotit `90°`) ca bară în față. **Al doilea om de zăpadă stă pe sanie**: baza lui intră `1` mm în scândură. Din **Front** și din **Top** sania e dreaptă și simetrică  
+- [ ] **Treapta 5 — Sfoara.** **Omul mare trage sania**: o sfoară dintr-un cilindru foarte subțire, **rotit într-un unghi**, care leagă **mâna** (capătul unui braț) de **bara** din față a săniei. Sfoara **intră puțin** în mână și în bară, deci nu are goluri. Din **Front** și din **Top** se vede că ambele capete sunt prinse, iar sania nu plutește  
+- [ ] **Treapta 6 — Tava.** Un `Cylinder` lat sau un `Box` (de ex. `100 × 60 × 3`) pe care stau **toate** obiectele: omul, pomul și sania cu omul mic, legate de sfoară. Ridici toată scena (`Ctrl+A`, conul negru) la `2` mm, ca să **intre `1` mm** în tavă. Nimic nu iese peste marginea tăvii, iar între obiecte (în afară de sfoară) e un spațiu de cel puțin `5` mm (verificat din **Top**)  
+
+**Verificare (cu un coleg):** colegul numără în cel mult **30 de secunde**: omul cu fular și brațe, pomul, omul mic, sania, sfoara și tava. Apoi arată **cel mai înalt** obiect din scenă și spune dacă vreo piesă plutește.  
 
 ## Recapitulare rapidă
 1. <span style="color:#DC143C;font-weight:700">Ctrl+D</span> = copie (apoi o muți — e peste original)  
@@ -167,18 +176,18 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 3. <span style="color:#E65722;font-weight:700">Săgeata curbă</span> (pe marginea piesei) = rotești, pași de 22,5°  
 4. <span style="color:#E65722;font-weight:700">Conul negru</span> = ridici / cobori
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-Sphere + Shift → Ctrl+D (mută copia) → 3 sfere pe verticală → Cone + <span style="color:#E65722;font-weight:700">săgeata curbă</span> (~90°) → pălărie / ochi / nasturi
-
 **Quiz scurt:**  
 - Ce face <span style="color:#E65722;font-weight:700">Shift</span> când scalezi?  
 - Cum faci **rapid o copie** a unei sfere?  
 - Cum **rotești** un con ca să stea culcat?  
 - Cum verifici din **lateral** că între piese nu e gol?
 
-## Temă
-Opțional: un pom de iarnă (cilindru + con) lângă om — același `T1_L02`.
+## Temă (opțional)
+- Dacă ai doar Minim: acasă adaugi pălăria, ochii, nasturii și culorile (Pasul 2), în același `Prenume_Nume_T1_L02`.  
+- Dacă ai Complet: într-un proiect nou `T1_L02_B`, construiești un **om de zăpadă cu proporții noi** (de exemplu mai înalt și mai subțire), din aceleași forme.
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T1_L02_C`, un animal de iarnă (urs polar sau pinguin), făcut doar din sfere, conuri și cilindri. Stă pe plan, iar piesele se suprapun puțin.  
 
 ## Ce urmează
 În **Lecția 3** faci un **fluture**: copiezi o aripă, o **oglindești** cu `M` și o **aliniezi** cu `L`.
+
+---

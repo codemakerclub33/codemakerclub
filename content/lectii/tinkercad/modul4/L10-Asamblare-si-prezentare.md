@@ -10,7 +10,7 @@
 ## Obiectiv
 La finalul orei placa ta e **gata de tur**: arată bine, e la scară și o poți prezenta fără ajutor.  
 **Minim:** placă **150·150·3** cu **cel puțin 4 elemente** din cele făcute (de exemplu: o casă, o clădire publică, străzile, un pod sau parcul) + **verificarea cu lista** de mai jos + **prezentare de 45 de secunde**.  
-**Complet:** Minim + **toate cele 6 tipuri** de elemente (case, bloc, clădire publică, străzi, râu cu pod, parc) + **numele cartierului** scris cu Text + prezentare **fără foaie**.
+**Complet:** Minim + **toate cele 6 tipuri** de elemente (case, bloc, clădire publică, străzi, râu cu pod, parc) + **numele cartierului** scris cu Text + prezentare **liberă**.
 
 ## De ce contează
 Plăcile tuturor au **aceeași mărime (150 mm)** și **aceeași scară (1 m = 2 mm)**, iar străzile pornesc din **mijlocul** fiecărei laturi. De aceea, dacă pui patru plăci una lângă alta, străzile se **continuă** de la o placă la alta — ca într-un oraș adevărat.
@@ -25,7 +25,7 @@ Plăcile tuturor au **aceeași mărime (150 mm)** și **aceeași scară (1 m = 2
 |--------|----------|
 | 0–15 | Lista de verificare a plăcii |
 | 15–35 | Finisaj: culori, nume, ordine pe placă |
-| 35–45 | Pregătim prezentarea pe foaie |
+| 35–45 | Pregătim prezentarea (4 propoziții, în minte) |
 | 45–105 | Turul orașului: câte 45 s fiecare + plăcile așezate împreună |
 | 105–120 | Păreri + salvare finală |
 
@@ -35,7 +35,7 @@ Plăcile tuturor au **aceeași mărime (150 mm)** și **aceeași scară (1 m = 2
 
 ## Pas cu pas
 
-### 1) Lista de verificare *(15 minute — bifezi cu creionul)*
+### 1) Lista de verificare *(15 minute — bifezi pe rând)*
 Deschizi proiectul `Prenume_Nume_T4_L09`, faci o copie (**Duplicate**) și o redenumești `Prenume_Nume_T4_L10`.
 
 - [ ] Placa are **150 × 150 × 3 mm** *(cu **Ruler** sau dând click pe ea și citind mărimile de la pătratele albe)*  
@@ -53,8 +53,8 @@ Deschizi proiectul `Prenume_Nume_T4_L09`, faci o copie (**Duplicate**) și o red
 4. **Numele cartierului:** **Text** (de exemplu `Cartierul Nord`), pe **zona de centru**, lângă marginea plăcii, ridicat la **4 mm** *(nu în gol: acolo e asfalt)*  
 5. Un **N** de la Nord pe zona de locuințe, lângă marginea din spate, la 4 mm, dacă nu ai pus unul în L1
 
-### 3) Prezentarea *(pe foaie, 10 minute)*
-Scrii 4 rânduri scurte:
+### 3) Prezentarea *(10 minute)*
+Pregătești în minte 4 propoziții scurte:
 1. „Cartierul meu se numește …”  
 2. „Aici sunt …” *(3 lucruri: ex. școala, podul, parcul)*  
 3. „Scara este 1 m = 2 mm, deci o mașină de 5 m are … mm.” *(10)*  
@@ -86,7 +86,7 @@ Scrii 4 rânduri scurte:
 | Ordine | nimic în aer, nimic peste margine |
 | Străzi | centrate, ajung la marginea plăcii |
 | Culori | fiecare lucru are o culoare potrivită |
-| Prezentare | 45 secunde, fără să citești tot de pe foaie (Complet: fără foaie) |
+| Prezentare | 45 secunde, vorbești liber (Complet: fără notițe) |
 
 ---
 
@@ -97,14 +97,14 @@ Scrii 4 rânduri scurte:
 | | Ce trebuie |
 |--|------------|
 | **Minim** | Placă 150·150·3 cu 4 elemente · lista bifată · prezentare 45 s |
-| **Complet** | + toate cele 6 tipuri de elemente · nume cu Text · prezentare fără foaie |
+| **Complet** | + toate cele 6 tipuri de elemente · nume cu Text · prezentare liberă |
 
 ### Pasul 1 — Finisaj
 - [ ] Lista de verificare bifată  
 - [ ] Culori potrivite  
 
 ### Pasul 2 — Prezentare
-- [ ] Cele 4 rânduri pe foaie  
+- [ ] Cele 4 propoziții pregătite  
 - [ ] 45 de secunde  
 
 ### Pasul 3 — Închidere
@@ -125,11 +125,6 @@ Scrii 4 rânduri scurte:
 3. Prezentare = 4 rânduri scurte, 45 de secunde  
 4. Urmează **Design Pro** (Modulul 5)
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** lista de verificare → finisaj → 4 rânduri de prezentare → tur  
-**Complet:** + 6 tipuri de elemente · nume cu Text · prezentare fără foaie
-
 **Quiz scurt:**  
 - De ce toate plăcile au 150 mm?  
 - Cât de lungă e în model o mașină de 5 m? *(10 mm)*  
@@ -143,4 +138,4 @@ Scrii 4 rânduri scurte:
 5. Ce vrei să construiești în Modulul 5 (Design Pro)?
 
 ## Temă
-Opțional: desenezi pe foaie orașul făcut din toate plăcile clasei și scrii câte străzi se întâlnesc în mijloc.
+Opțional: într-un proiect nou `T4_L10_B`, pui alături piese din plăcile clasei și numeri câte străzi se întâlnesc în mijloc.

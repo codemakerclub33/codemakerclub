@@ -192,18 +192,13 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 4. Nu scalezi un grup: **schimbi numerele**  
 5. Al doilea obiect (Tăietorul cu forma ta) exersează aceeași idee pe o formă desenată de tine  
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** Star 60·60·15 + Star 66·66·3 (sus) − Hole 56·56·20 → L (3 direcții) → Group  
-**Complet:** + tăietor mic 40/46/36 · Ruler · Color
-
 **Quiz scurt:**  
 - De ce golul e mai înalt decât corpul?  
 - Cât e peretele dacă corpul are `60` și golul `56`?  
 - De ce nu scalăm un tăietor grupat?
 
 ## Temă
-Opțional: desenezi pe foaie forma biscuitului tău preferat și scrii cele trei mărimi (corp, guler, gol), ca peretele să fie de `2` mm. Fără Tinkercad.
+Opțional, acasă, într-un proiect nou `T2_L04_B`: forma biscuitului tău preferat, cu corp, guler și gol, astfel încât peretele să fie de `2` mm.
 
 ## Ce urmează
 În **Lecția 5** faci o **săpunieră cu scurgere** și un **grătar** care intră în ea.

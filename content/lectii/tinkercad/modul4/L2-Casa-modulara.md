@@ -156,15 +156,10 @@ Ușile și ferestrele de pe model sunt **de 2 ori mai mari decât în realitate*
 3. Ușa și ferestrele: **Hole** de 4 mm grosime, mutat 2 mm în perete (taie doar 2 mm), **Ctrl+G**  
 4. Acoperișul: ridicat la **12 mm**, aliniat pe centru
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** Box 24·20·12 − ușă 4·4·8 − 2 ferestre 4·4·4 (+6, 12 mm) → Group → Wedge 24·20·8 (+12) → casa +4 mm pe zonă  
-**Complet:** 3 case · acoperișuri: Wedge / Pyramid / Box · 4 ferestre
-
 **Quiz scurt:**  
 - Câți mm are o casă de 14 m? *(28)*  
 - De ce ușile sunt mai mari decât în realitate?  
 - Ce schimbi la copia casei ca să arate altfel?
 
 ## Temă
-Opțional: desenezi pe foaie casa visurilor, cu mărimi în metri și apoi în mm (× 2).
+Opțional, acasă, într-un proiect nou `T4_L02_B`: casa visurilor, cu mărimile în metri transformate în mm (× 2).

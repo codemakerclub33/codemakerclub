@@ -207,18 +207,13 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 4. Rând decalat = rotire de **jumătate** de pas
 5. Al doilea obiect (Lampionul) exersează aceeași idee pe alte mărimi
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** Cylinder 70·70·70 − Hole 64·64·80 → Hole 90·8·15 → Ctrl+D + 45° (×3) → Group  
-**Complet:** + rând 2 la 40 mm, decalat 22,5° · Color
-
 **Quiz scurt:**  
 - De ce bara Hole e mai lungă decât tubul?  
 - Câte ferestre dau 4 bare rotite la 45°?  
 - Cum faci ferestrele de sus să nu fie exact deasupra celor de jos?
 
 ## Temă
-Opțional: schimbă rotirea la **90°** (2 bare) — câte ferestre ies? Notează pe foaie și compară cu 45°.
+Opțional: schimbă rotirea la **90°** (2 bare) — câte ferestre ies? Compară în Tinkercad cu varianta de `45°`.
 
 ## Ce urmează
 În **Lecția 8** faci un **ghiveci cu farfurie** și un **ghiveci pătrat**, două piese care lucrează împreună.

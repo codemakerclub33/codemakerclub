@@ -145,15 +145,10 @@ Trecerile de pietoni se fac din **dungi egale** — iar Ctrl+D le repetă perfec
 2. Dungile: prima la loc, restul cu **Ctrl+D** (2 mm)  
 3. Centrat = **L** cu placa, mijloc pe ambele axe
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** 2 Box-uri 150·12·1 și 12·150·1 centrate, +3 mm → dungă 6·1·0,4 (+4 mm) → Ctrl+D ×5 (2 mm) → Group → copie la −30 mm  
-**Complet:** trecere rotită 90° · trotuare 67·2·2 · cerc Ø20 + insulă Ø8
-
 **Quiz scurt:**  
 - Cât e lățimea reală a unei străzi de 12 mm? *(6 m)*  
 - De ce folosim Ctrl+D pentru dungi?  
 - Ce se întâmplă dacă sensul giratoriu e prea mare?
 
 ## Temă
-Opțional: pe foaie, desenezi harta cartierului tău și treci unde ai pune semaforul.
+Opțional, acasă, într-un proiect nou `T4_L05_B`: o intersecție din cartierul tău, cu semaforul la locul potrivit.

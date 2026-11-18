@@ -29,8 +29,9 @@ La finalul orei ai o felie de brânză cu **găuri** care trec prin ea (nu cercu
 |--------|----------|
 | 0–10 | Recap L3 · privim o brânză cu găuri |
 | 10–30 | Demo live: Solid vs <span style="color:#00A600;font-weight:700">Hole</span> · **cu** Group și **fără** Group |
-| 30–95 | Minim → Complet (culoare) → Bonus dacă apuci |
-| 95–120 | Recap, quiz, galerie |
+| 30–65 | Construim brânza: Minim → Complet (culoare) |
+| 65–100 | **Bonus:** șoricelul și brânza, pe trepte (fiecare merge cât apucă) |
+| 100–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -58,7 +59,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 2. Nume: `Prenume_Nume_T1_L04`  
 3. Salvare automată — verifici numele
 
-**Încearcă tu — Proiect nou (4 min)**  
+**Încearcă tu — Proiect nou (2 min)**  
 - [ ] Proiectul e creat și redenumit `Prenume_Nume_T1_L04`  
 
 ### 2) Brânza (felie)
@@ -66,7 +67,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 2. Îl scalezi ca să arate a **felie**: ~**60 × 40 × 30** (<span style="color:#E65722;font-weight:700">pătrățelele albe</span>)  
 3. Pe plan (dacă plutește → <span style="color:#E65722;font-weight:700">D</span>) · rămâne <span style="color:#00A600;font-weight:700">Solid</span>
 
-**Încearcă tu — Brânza (felie) (8 min)**  
+**Încearcă tu — Brânza (felie) (4 min)**  
 - [ ] Felia (<span style="color:#1E90FF;font-weight:700">Wedge</span>) are ~**60 × 40 × 30** și stă pe plan  
 
 ### 3) Cilindrii care vor tăia
@@ -76,7 +77,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 4. Verifici din **lateral** (View Cube → Front / Right): se vede capătul de sus ieșit deasupra feliei  
 5. <span style="color:#DC143C;font-weight:700">Ctrl+D</span> pentru încă 2 → muți copia (apare peste) · Minim: **≥3** cilindri. Pentru **Complet** faci unul mai mare (ex. **12 × 12**) și unul mai mic (**5 × 5**) chiar acum, cu <span style="color:#E65722;font-weight:700">Shift</span> pe colț
 
-**Încearcă tu — Cilindrii care vor tăia (15 min)**  
+**Încearcă tu — Cilindrii care vor tăia (8 min)**  
 - [ ] Ai **cel puțin 3** cilindri, **înăuntrul** feliei  
 - [ ] Din lateral, cilindrii ies **deasupra** feliei și pornesc de pe plan  
 
@@ -86,23 +87,23 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 3. La fel pentru ceilalți cilindri  
 4. Brânza rămâne <span style="color:#00A600;font-weight:700">Solid</span>
 
-**Încearcă tu — Hole (8 min)**  
+**Încearcă tu — Hole (4 min)**  
 - [ ] Cilindrii au **dungi** (Hole)  
 - [ ] Brânza a rămas <span style="color:#00A600;font-weight:700">Solid</span>  
 
 ### 5) Group = se taie
-1. <span style="color:#DC143C;font-weight:700">Ctrl+A</span> — doar dacă pe plan sunt **numai** brânza + cilindrii. Dacă ai deja și altceva (șoricel…): <span style="color:#E65722;font-weight:700">Shift+click</span> pe felie + cilindri  
+1. <span style="color:#DC143C;font-weight:700">Ctrl+A</span> — doar dacă pe plan sunt **numai** brânza + cilindrii. Dacă ai deja și altceva pe plan: <span style="color:#E65722;font-weight:700">Shift+click</span> pe felie + cilindri  
 2. <span style="color:#DC143C;font-weight:700">Ctrl+G</span> (Mac: <span style="color:#DC143C;font-weight:700">Cmd+G</span>)  
 3. Găurile dispar ca piese — rămân **goluri** în felie
 
-**Încearcă tu — Group = se taie (8 min)**  
+**Încearcă tu — Group = se taie (4 min)**  
 - [ ] După <span style="color:#DC143C;font-weight:700">Group</span>, în felie sunt goluri, nu cilindri  
 
 ### 6) Verificare
 1. Rotești vederea: găurile se văd și din **spate**?  
 2. Dacă nu: <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span> → **lungești** / muți cilindrii → Hole din nou dacă trebuie → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>
 
-**Încearcă tu — Verificare (8 min)**  
+**Încearcă tu — Verificare (4 min)**  
 - [ ] Am parcurs toate punctele din verificare  
 - [ ] Am corectat ce nu se potrivea  
 
@@ -111,7 +112,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 2. În fereastra piesei, lângă Solid/Hole, apeși **cercul colorat** (<span style="color:#00A600;font-weight:700">Color</span>) → gălbui / portocaliu  
 3. Găuri de **mărimi diferite**: dacă nu ai deja — <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span> (Ungroup), scalezi un cilindru cu <span style="color:#E65722;font-weight:700">Shift</span> pe colț (înălțimea să rămână peste 30), <span style="color:#DC143C;font-weight:700">Ctrl+G</span> din nou (culoarea o poți pune după)
 
-**Încearcă tu — Complet — culoare și găuri (12 min)**  
+**Încearcă tu — Complet — culoare și găuri (9 min)**  
 - [ ] Brânza are culoare  
 - [ ] Găurile au mărimi **diferite**
 
@@ -122,7 +123,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 2. **Cilindrul pe margine** — îl muți **înăuntrul** conturului feliei.  
 3. **Group, dar felia arată la fel** — cilindrii sunt încă Solid; pui <span style="color:#00A600;font-weight:700">Hole</span>, apoi Group.  
 4. **Brânza a dispărut** — și ea e pe Hole. <span style="color:#DC143C;font-weight:700">Ungroup</span> și îi pui înapoi <span style="color:#00A600;font-weight:700">Solid</span>.  
-5. **Am grupat doar găurile** sau **am grupat și șoricelul** — selectezi doar felia + cilindrii (Shift+click).  
+5. **Am grupat doar găurile** sau **am grupat și altceva de pe plan** — selectezi doar felia + cilindrii (Shift+click).  
 6. **Vreau să modific după Group** — <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span>, modifici, regrupezi.  
 7. **Nu văd fereastra piesei** — click din nou pe piesă.
 
@@ -157,11 +158,19 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Brânza cu șoricel
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Șoricelul și brânza
+*Doar dacă ai terminat Complet. Lucrezi în același proiect, `Prenume_Nume_T1_L04`. Dificultatea crește de la o treaptă la alta; nu primești pași, ci reguli. Alegi tu cum ajungi la rezultat.*
 
-- [ ] Fă o gaură **pe lateral**, cu un cilindru orizontal (Hole)  
-- [ ] **Provocarea:** faci un **șoricel** din cel puțin **5 piese** (corp, cap, 2 urechi, coadă), pe plan, lângă brânză, plus **o gaură pe lateral** (un cilindru **Hole** orizontal, intrat în grup) care se vede din Front. Un coleg ghicește **animalul** fără explicații, în cel mult **20 de secunde**.  
+Șoricelul a găsit brânza, dar pisica pândește. Nimic nu plutește. Treptele, de la ușor la greu:
+
+- [ ] **Treapta 1 — Blocul de brânză.** O a doua bucată, făcută de la zero, cu altă formă: un `Box` de `50 × 40 × 30`, de altă culoare decât felia  
+- [ ] **Treapta 2 — Urmele de dinți.** Șoricelul a mâncat din bloc: `3` mușcături de mărimi diferite pe marginea de sus (`Hole` sfere, de la `8` la `16` mm), fără să se atingă între ele. Blocul și cele `3` sfere `Hole` le grupezi cu Group, ca la felie. După Group, marginea e „mâncată”  
+- [ ] **Treapta 3 — Șoricelul.** Cel puțin **5 piese** (corp, cap, `2` urechi, coadă), suprapuse puțin, ca să nu plutească. Are cel mult `12` mm înălțime și cel mult `24` mm lungime. Un coleg ghicește animalul în cel mult **20 de secunde**  
+- [ ] **Treapta 4 — Platoul.** Pe el stau blocul, felia și șoricelul: un `Box` de `140 × 110 × 6` și un `Hole` de `130 × 100 × 6`, ridicat la `2`, ca să rămână o margine de `5` mm în jur și un fund de `2` mm. După Group, platoul are bord  
+- [ ] **Treapta 5 — Pisica.** Dușmanul șoricelului pândește pe platou: cel puțin **6 piese** (corp, cap, `2` urechi triunghiulare, coadă, labe), de cel puțin `2` ori mai lungă decât șoricelul. Stă cu fața spre el, la cel puțin `10` mm distanță  
+- [ ] **Treapta 6 — Tunelul de scăpare.** Un tunel prin blocul de brânză, cu o **cotitură în L**: intră pe față și iese pe lateral (două `Hole`-uri care se întâlnesc înăuntru). Șoricelul încape în el, cu cel puțin `1` mm joc, și poate sta la cotitură. Pisica nu încape. Blocul cu mușcături e deja grup: faci Ungroup, adaugi tunelul și grupezi din nou, exact ca în pasul de verificare  
+
+**Verificare (cu un coleg):** colegul numără în **cel mult 30 de secunde**: blocul cu mușcături, șoricelul, platoul, pisica și tunelul. Apoi se uită din **Top** și caută lumina prin ambele capete ale tunelului.  
 
 ## Recapitulare rapidă
 1. Cilindrul **străpunge** felia (iese deasupra, jos pornește de pe plan)  
@@ -169,18 +178,15 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 3. <span style="color:#DC143C;font-weight:700">Ctrl+G</span> = se taie · fără Group, Hole nu taie  
 4. <span style="color:#DC143C;font-weight:700">Ungroup</span> = desface ca să modifici
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** Wedge → cilindri mai înalți decât felia → Hole → Group  
-**Complet:** + Color · mărimi diferite
-
 **Quiz scurt:**  
 - Ce face un <span style="color:#00A600;font-weight:700">Hole</span> după Group?  
 - De ce cilindrul trebuie să fie **mai înalt** decât felia (să iasă deasupra)?  
-- Ce se întâmplă dacă **uiți Ctrl+G**? Descrie sau desenează pe foaie (cilindri dungați pe brânză, fără gol).
+- Ce se întâmplă dacă **uiți Ctrl+G**? Descrie colegului sau încearcă în Tinkercad (cilindri dungați pe brânză, fără gol).
 
-## Temă
-Opțional: un alt obiect cu găuri — același `T1_L04` sau proiect nou.
+## Temă (opțional)
+- Dacă ai doar Minim: acasă adaugi culoarea și găurile de mărimi diferite (Pasul 2), în același `Prenume_Nume_T1_L04`.  
+- Dacă ai Complet: într-un proiect nou `T1_L04_B`, un **alt obiect cu găuri** (o sită sau un burete), cu același Hole și Group.
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T1_L04_C`, o **capcană de șoareci** din forme simple, cu un loc pentru brânză.  
 
 ## Ce urmează
 În **Lecția 5** faci o **ștampilă**: text 3D, **oglindit** cu `M`.

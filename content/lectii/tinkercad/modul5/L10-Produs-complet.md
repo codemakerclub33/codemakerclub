@@ -3,18 +3,18 @@
 **Code Maker Club · Design Pro**  
 **Public:** recomandat **10+**
 
-> Proiectul final: pornești de la o **problemă reală**, schițezi, construiești un produs din **mai multe piese** cu tot ce ai învățat și îl **prezinți**.  
+> Proiectul final: pornești de la o **problemă reală**, planifici, construiești un produs din **mai multe piese** cu tot ce ai învățat și îl **prezinți**.  
 > Proiect: **„Produsul meu”** · `Prenume_Nume_T5_L10`
 
 ---
 
 ## Obiectiv
 La finalul orei ai un **produs 3D** care rezolvă o problemă mică și o **prezentare de 1 minut**.  
-**Minim:** problema scrisă într-o propoziție · **schiță cu cel puțin 4 cote** · model din **cel puțin 2 piese** separate · **un joc corect** între ele *(0,2 mm pe parte la piese strânse, 0,5 mm la piese care se mișcă)* · **pereți de cel puțin 1,2 mm** · prezentare.  
-**Complet:** Minim + **o tehnică din modulul 5** în plus *(balama, îmbinare cu cheie, simbol SVG, angrenaj, cod sau circuit)* + **lista „gata de print”** bifată + prezentare fără foaie.
+**Minim:** problema scrisă într-o propoziție · **plan cu cel puțin 4 cote** · model din **cel puțin 2 piese** separate · **un joc corect** între ele *(0,2 mm pe parte la piese strânse, 0,5 mm la piese care se mișcă)* · **pereți de cel puțin 1,2 mm** · prezentare.  
+**Complet:** Minim + **o tehnică din modulul 5** în plus *(balama, îmbinare cu cheie, simbol SVG, angrenaj, cod sau circuit)* + **lista „gata de print”** bifată + prezentare liberă.
 
 ## De ce contează
-Un designer nu începe cu forma, ci cu **problema**. Apoi schițează, alege mărimile, verifică potrivirea și arată ce a făcut. Azi parcurgi tot drumul.
+Un designer nu începe cu forma, ci cu **problema**. Apoi planifică, alege mărimile, verifică potrivirea și arată ce a făcut. Azi parcurgi tot drumul.
 
 **Notă:** imprimanta 3D **nu** e folosită la oră. Printarea modelelor, dacă se face, se face **după ore**.
 
@@ -25,7 +25,7 @@ Un designer nu începe cu forma, ci cu **problema**. Apoi schițează, alege mă
 | Minute | Ce facem |
 |--------|----------|
 | 0–15 | Alegem problema · criteriile (tabelul de mai jos) |
-| 15–30 | Schița: 3 idei mici, alegi una, scrii cotele |
+| 15–30 | Planul: 3 idei mici, alegi una, alegi cotele |
 | 30–95 | Construcție: Minim → Complet |
 | 95–110 | Lista „gata de print” și corecturi |
 | 110–120 | Prezentări de 1 minut + păreri |
@@ -49,15 +49,15 @@ Alege **una** din listă *(sau propune tu, cu acordul profesorului)*. Produsul t
 | Vreau un joc | **Mecanism cu roți dințate** și manivelă | angrenajul (L6) |
 | Vreau o lanternă | **Carcasă cu LED** și capac | circuitul și carcasa (L9) |
 
-### 2) Schița *(15 minute, pe foaie)*
-1. Desenezi **3 idei** foarte mici pentru produsul ales  
-2. Alegi una și o desenezi mare, **din față** și **de sus**  
-3. Scrii **cel puțin 4 cote**: lungime, lățime, înălțime și o gaură sau o fantă  
-4. Marchezi **piesele separate** și locul unde este **joc** *(de ex. „gaură 6,4 pentru știft 6”)*
+### 2) Planul *(15 minute)*
+1. Te gândești la **3 idei** foarte mici pentru produsul ales  
+2. Alegi una și te gândești la ea **din față** și **de sus**  
+3. Alegi **cel puțin 4 cote**: lungime, lățime, înălțime și o gaură sau o fantă  
+4. Stabilești **piesele separate** și locul unde este **joc** *(de ex. „gaură 6,4 pentru știft 6”)*. Spui planul colegului
 
 ### 3) Construcția *(cu numere!)*
 1. Proiect nou: `Prenume_Nume_T5_L10` · Snap Grid **0.5 mm** *(sau 1 mm)*  
-2. Fiecare piesă: tastezi mărimile din schiță  
+2. Fiecare piesă: tastezi mărimile din plan  
 3. Centrare și poziții: **Align** și mutări cu pași fixi, **Ctrl+D** pentru copii  
 4. **Piesele care se mișcă sau se îmbină rămân separate** *(nu le grupezi între ele)*  
 5. Joc: **0,2 mm pe parte** *(strâns)* sau **0,5 mm** *(mobil)*  
@@ -65,17 +65,17 @@ Alege **una** din listă *(sau propune tu, cu acordul profesorului)*. Produsul t
 7. Fața de jos a fiecărei piese este **plată**
 
 ### 4) Verificare *(lista „gata de print”)*
-Bifezi pe foaie:
+Verifici, punct cu punct:
 - [ ] Toate piesele au o **față plată** în jos  
 - [ ] Niciun perete nu e mai subțire de **1,2 mm**  
 - [ ] Între piesele care se potrivesc este **joc** *(măsurat cu Ruler)*  
 - [ ] Nu există piese **în aer** *(verifici din Front și Right)*  
 - [ ] Nu mai sunt **Hole-uri negrupate**  
-- [ ] Mărimile din Tinkercad sunt cele din schiță  
+- [ ] Mărimile din Tinkercad sunt cele din plan  
 - [ ] Numele fișierului: `T5_L10`
 
 ### 5) Prezentarea *(1 minut)*
-Pe foaie, 4 propoziții:
+Pregătești 4 propoziții:
 1. „Problema pe care am vrut să o rezolv este …”  
 2. „Produsul meu are … piese: …”  
 3. „Cea mai importantă mărime este … pentru că …”  
@@ -84,7 +84,7 @@ Pe foaie, 4 propoziții:
 ---
 
 ## Greșeli frecvente
-1. **Începi fără schiță** — piesele nu se potrivesc. Oprește-te și desenează cotele.  
+1. **Începi fără plan** — piesele nu se potrivesc. Oprește-te și alege cotele.  
 2. **Fără joc** — gaura și știftul au aceeași mărime.  
 3. **Totul într-un singur Group** — piesele mobile se lipesc. Separă-le.  
 4. **Prea ambițios** — mai bine un produs curat, cu 2 piese, decât cinci neterminate.  
@@ -100,7 +100,7 @@ Pe foaie, 4 propoziții:
 | Criteriu | Ce căutăm |
 |----------|-----------|
 | Problema | scrisă clar, într-o propoziție |
-| Schița | cel puțin 4 cote, piese marcate |
+| Planul | cel puțin 4 cote, piese stabilite |
 | Piese | cel puțin 2, separate |
 | Joc | 0,2 mm (strâns) sau 0,5 mm (mobil), scris cu numere |
 | Print | pereți ≥ 1,2 mm, fața de jos plată |
@@ -115,12 +115,12 @@ Pe foaie, 4 propoziții:
 
 | | Ce trebuie |
 |--|------------|
-| **Minim** | Problema + schiță cu 4 cote · 2 piese separate cu joc 0,2 / 0,5 · pereți ≥ 1,2 · prezentare |
-| **Complet** | + o tehnică din M5 · lista „gata de print” bifată · prezentare fără foaie |
+| **Minim** | Problema + plan cu 4 cote · 2 piese separate cu joc 0,2 / 0,5 · pereți ≥ 1,2 · prezentare |
+| **Complet** | + o tehnică din M5 · lista „gata de print” bifată · prezentare liberă |
 
 ### Pasul 1 — Minim
 - [ ] Problema alesă  
-- [ ] Schiță cu 4 cote  
+- [ ] Plan cu 4 cote  
 - [ ] 2 piese separate  
 - [ ] Joc scris cu numere  
 - [ ] Prezentare  
@@ -135,18 +135,13 @@ Pe foaie, 4 propoziții:
 ## Bonus (extra — după Complet)
 - [ ] O a doua variantă a produsului, cu altă mărime  
 - [ ] Textul numelui tău pe produs *(Hole înalt 2 mm, cu 1 mm în piesă: adâncime 1 mm)*  
-- [ ] Pe foaie: ce ai îmbunătăți dacă ai printa 3D obiectul?
+- [ ] Spune colegului: ce ai îmbunătăți dacă ai printa 3D obiectul?
 
 ## Recapitulare rapidă
-1. Produs bun = **problemă + schiță + cote + joc**  
+1. Produs bun = **problemă + plan + cote + joc**  
 2. Pereți **≥ 1,2 mm**, față de jos **plată**  
 3. Piesele care se potrivesc rămân **separate**  
 4. Prezentare = 4 propoziții
-
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** problemă → schiță (4 cote) → 2 piese cu joc → pereți ≥ 1,2 → prezentare  
-**Complet:** + tehnică M5 · lista „gata de print”
 
 **Quiz scurt:**  
 - Ce joc alegi pentru un capac care se deschide ușor?  
@@ -161,4 +156,4 @@ Pe foaie, 4 propoziții:
 5. Ce ai vrea să construiești în continuare?
 
 ## Temă
-Opțional: desenează pe foaie ce ai îmbunătăți la produsul tău și ce cotă ai schimba.
+Opțional: într-un proiect nou `T5_L10_B`, o variantă a produsului tău cu o cotă schimbată. Ce ai îmbunătățit?

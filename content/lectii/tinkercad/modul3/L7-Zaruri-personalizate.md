@@ -231,18 +231,13 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 4. Golul cutiei (`81 × 41`) e puțin mai mare decât zarurile (`80 × 40`): joc de `0,5` mm pe parte  
 5. Zarurile și capacul rămân **separate** de cutie  
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** cub 40³ − puncte 6·6·4 (2 mm adâncime): 1/6, 2/5, 3/4 · cutie 87·47·48 − gol 81·41·48 (la 3) · capac: placă 87·47·4 (la 48) + dop 80·40·4 (la 45)  
-**Complet:** + al doilea zar · culori
-
 **Quiz scurt:**  
 - Ce număr e opus lui 3?  
 - De ce golul cutiei are `81 × 41`, nu `80 × 40`?  
 - Cum faci puncte la distanțe egale?
 
 ## Temă
-Opțional: desenezi pe foaie un zar cu **8** fețe: ce perechi dau **9**?
+Opțional, acasă, într-un proiect nou `T3_L07_B`: un al doilea zar, cu alt model de puncte, în care fețele opuse adună `7`.
 
 ## Ce urmează
 În **Lecția 8** faci o **fortăreață cu pod mobil** și o **poartă cu 2 canaturi**: piese care se mișcă pe axe, cu joc.

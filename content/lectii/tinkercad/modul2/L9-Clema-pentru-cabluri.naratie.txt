@@ -8,7 +8,7 @@ De ce contează. O carcasă bună pornește de la placa reală. Măsori, rotunje
 
 Ce face fiecare unealtă de azi. Ruler măsoară placa și verifică jocul. Mărimile cu numere sunt cele calculate: placa plus un milimetru. Hole este golul plăcii, porturile, fantele și ferestrele. Tasta L centrează golul și piesele capacului. Conul negru ridică golul sau portul la înălțimea lor. Săgețile de la tastatură mută portul și fantele în pași de cinci milimetri. Control și D face a doua gaură, egală cu prima. Control și G, adică Group, face ca golurile să taie cutia sau capacul.
 
-Primul pas pe ecran. Apasă Create new design și scrie numele. Snap Grid, cinci milimetri. Pe foaie calculezi pentru placa Arduino Uno, de șaizeci și nouă pe cincizeci și patru: golul este șaptezeci pe cincizeci și cinci, exteriorul optzeci pe șaizeci și cinci, iar dopul pentru capac șaizeci și nouă pe cincizeci și patru.
+Primul pas pe ecran. Apasă Create new design și scrie numele. Snap Grid, cinci milimetri. Calculezi pentru placa Arduino Uno, de șaizeci și nouă pe cincizeci și patru: golul este șaptezeci pe cincizeci și cinci, exteriorul optzeci pe șaizeci și cinci, iar dopul pentru capac șaizeci și nouă pe cincizeci și patru.
 
 Al doilea pas pe ecran. Trage un Box și scrie: optzeci, șaizeci și cinci, douăzeci și opt. Este cutia. Alt Box, șaptezeci, cincizeci și cinci, douăzeci și cinci, pus pe Hole: golul. Selectează golul și cutia, apasă tasta L și alege mijloc pe stânga și dreapta, și pe față și spate. Ridică golul cu conul negru la cinci. Fundul rămâne de cinci milimetri, iar golul iese deasupra cutiei.
 
@@ -34,6 +34,6 @@ Bonus. Schimbi culorile și adaugi pe capac text cu numele tău. Provocarea, Car
 
 Recapitulare. Placa reală se măsoară, se rotunjește în sus, apoi primește un milimetru joc. Dopul capacului este golul minus un milimetru. Porturile se decupează cu Hole mai mare decât portul și ridicat la înălțimea lui. Fantele egale înseamnă Control și D repetat, cu aceeași mutare.
 
-Ce urmează. În lecția zece alegi tu un obiect util și piesa lui pereche, cu schiță și prezentare.
+Ce urmează. În lecția zece alegi tu un obiect util și piesa lui pereche, cu plan și prezentare.
 
 Succes la carcasa ta.

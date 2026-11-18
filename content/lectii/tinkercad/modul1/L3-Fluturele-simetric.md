@@ -28,8 +28,9 @@ Multe obiecte sunt simetrice. Faci **o jumătate** și o **oglindești** — nu 
 |--------|----------|
 | 0–10 | Recap L2 · fluture / poză · **axa de simetrie** |
 | 10–35 | Demo: aripă înclinată → <span style="color:#DC143C;font-weight:700">Ctrl+D</span> → <span style="color:#E65722;font-weight:700">M</span> (se vede!) → <span style="color:#E65722;font-weight:700">L</span> |
-| 35–95 | Minim → Complet → Bonus |
-| 95–120 | Recap, quiz, galerie |
+| 35–70 | Construim fluturele: Minim → Complet |
+| 70–100 | **Bonus:** fluturii pe flori, pe trepte (fiecare merge cât apucă) |
+| 100–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -57,7 +58,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 2. Nume: `Prenume_Nume_T1_L03`  
 3. Salvare automată — verifici numele
 
-**Încearcă tu — Proiect nou (4 min)**  
+**Încearcă tu — Proiect nou (2 min)**  
 - [ ] Proiectul e creat și redenumit `Prenume_Nume_T1_L03`  
 
 ### 2) Corpul (pe plan)
@@ -65,7 +66,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 2. Din <span style="color:#D400D4;font-weight:700">Top</span> (View Cube), corpul trebuie să fie ca o baghetă **în sus–jos** pe ecran, iar aripile vor ieși **stânga–dreapta**. Dacă e pe orizontală, îl rotești încă 90° pe verticală (în jurul axei de sus)  
 3. După rotire poate pluti → <span style="color:#E65722;font-weight:700">D</span>
 
-**Încearcă tu — Corpul (pe plan) (8 min)**  
+**Încearcă tu — Corpul (pe plan) (3 min)**  
 - [ ] Corpul e culcat, pe verticală pe ecran (sus–jos) din <span style="color:#D400D4;font-weight:700">Top</span>  
 - [ ] Stă pe plan  
 
@@ -76,7 +77,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 3. Aripa = **o singură piesă**  
 4. O așezi lângă corp, pe o parte (intră 1–2 mm în corp)
 
-**Încearcă tu — O aripă (trebuie să fie asimetrică) (12 min)**  
+**Încearcă tu — O aripă (trebuie să fie asimetrică) (6 min)**  
 - [ ] Aripa e asimetrică: din <span style="color:#D400D4;font-weight:700">Top</span> vezi un triunghi  
 - [ ] E **o singură** piesă și intră 1–2 mm în corp  
 
@@ -84,7 +85,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 1. Selectezi aripa → <span style="color:#DC143C;font-weight:700">Ctrl+D</span> (Mac: <span style="color:#DC143C;font-weight:700">Cmd+D</span>)  
 2. Copia e **peste** original — o tragi în lateral
 
-**Încearcă tu — Duplicare (6 min)**  
+**Încearcă tu — Duplicare (2 min)**  
 - [ ] Ai o copie a aripii, mutată în lateral, pe care o vezi  
 
 ### 5) Oglindire (**M**)
@@ -94,7 +95,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 4. Aripa oglindită trebuie să fie **înclinată invers** — așa știi că M a mers. Copia rămâne în același loc (peste original)  
 5. Muți copia **în linie dreaptă, orizontal**, pe **cealaltă** parte a corpului — aceeași distanță față de corp ca prima. Poți apăsa și săgețile tastaturii (mută piesa selectată) ca să corectezi puțin
 
-**Încearcă tu — Oglindire (M) (12 min)**  
+**Încearcă tu — Oglindire (M) (6 min)**  
 - [ ] Copia e înclinată **invers** față de original  
 - [ ] E pe cealaltă parte a corpului, la aceeași distanță  
 
@@ -103,7 +104,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 2. **Aliniere cu L:** selectezi cele **două aripi** (Shift+click pe fiecare), apeși <span style="color:#E65722;font-weight:700">L</span>. Apar **puncte negre** pe margini — fiecare aliniază pe o direcție. Alegi **punctul din mijloc** pe direcția **în sus–jos** din Top (lungimea corpului): aripile ajung la același nivel. **Nu** apeși punctele pe direcția stânga–dreapta (ai lipi aripile una peste alta)  
 3. Dacă aripile ajung **peste corp** sau Align e confuz: <span style="color:#DC143C;font-weight:700">Ctrl+Z</span> și **muți manual** din Top — e OK pentru Minim
 
-**Încearcă tu — Simetria (L sau manual) (12 min)**  
+**Încearcă tu — Simetria (L sau manual) (6 min)**  
 - [ ] Din <span style="color:#D400D4;font-weight:700">Top</span>, aripile sunt oglindă una alteia  
 - [ ] Corpul e la mijloc între ele  
 
@@ -113,7 +114,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 3. **A doua pereche de aripi:** Ctrl+D pe o aripă mare → o micșorezi cu <span style="color:#E65722;font-weight:700">Shift</span> → o așezi lângă partea din spate a corpului (pe plan, intră 1–2 mm în corp) → Ctrl+D → <span style="color:#E65722;font-weight:700">M</span> → pe cealaltă parte  
 4. <span style="color:#00A600;font-weight:700">Color</span> pe corp și aripi
 
-**Încearcă tu — Complet (15 min)**  
+**Încearcă tu — Complet (10 min)**  
 - [ ] Capul e la un capăt și intră 2 mm în corp  
 - [ ] Antenele sunt înclinate invers una față de alta  
 - [ ] A doua pereche de aripi e simetrică, la fel ca prima  
@@ -163,11 +164,19 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Fluturele cu modele
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Fluturii pe flori
+*Doar dacă ai terminat Complet. Lucrezi în același proiect, `Prenume_Nume_T1_L03`. Dificultatea crește de la o treaptă la alta; nu primești pași, ci reguli. Alegi tu cum ajungi la rezultat.*
 
-- [ ] Schimbă culorile aripilor  
-- [ ] **Provocarea:** pe **fiecare aripă** pui **2 cercuri** (cilindri plați, lipiți pe aripă): le faci pe o aripă, apoi copiezi aripa **cu tot cu cercuri** și o **oglindești**. Adaugi și **o floare** din sfere sub fluture. Din **Top**, un coleg nu găsește **nicio diferență** între cele două jumătăți ale fluturelui.  
+Fluturele tău primește modele pe aripi, un partener diferit și câte o floare pentru fiecare. Nimic nu plutește. Treptele, de la ușor la greu:
+
+- [ ] **Treapta 1 — Modelele.** Pe fiecare aripă mare, `2` cercuri (cilindri plați, înfipți `1` mm în aripă). Le faci pe o aripă, apoi copiezi aripa cu tot cu cercuri și o oglindești  
+- [ ] **Treapta 2 — Cercuri în cercuri.** În fiecare cerc, un cerc mai mic, de altă culoare, **centrat exact** cu `L`, pe ambele direcții. Verifici din **Top**  
+- [ ] **Treapta 3 — Fluturele în zbor.** Aripile se ridică în sus, **rotite cu `22,5°`**, ambele la **același unghi**. Din **Front**, aripile fac un **V simetric** și rămân prinse de corp (se suprapun `1`–`2` mm). Trebuie să afli singur în ce direcție se rotește fiecare aripă  
+- [ ] **Treapta 4 — Floarea mare.** Pentru fluturele mare: o tulpină (cilindru), un centru (sferă) și cel puțin `4` petale (sfere turtite), așezate cu `L` **simetric** în jurul centrului. Fluturele stă pe ea: corpul lui atinge centrul florii (se suprapun `1` mm), iar tulpina ajunge pe plan  
+- [ ] **Treapta 5 — Floarea mică.** O altă floare, cu **altă configurație**: alt număr de petale (cel puțin `6`) sau altă formă (de exemplu cilindri plați în loc de sfere turtite), altă culoare și o tulpină mai scurtă. Din **Top** e și ea simetrică  
+- [ ] **Treapta 6 — Fluturele mic.** Un al doilea fluture, **făcut de la zero, cu altă formă**, nu o copie a primului: alt tip de aripă (de exemplu din `Roof` sau dintr-un `Box` înclinat, nu din `Wedge`) și alt corp (de exemplu din sfere unite). Aripa e **asimetrică**, o faci o singură dată, apoi o copiezi și o **oglindești**. Fluturele are **cel mult jumătate** din lungimea celui mare și stă pe **floarea mică**: corpul lui atinge centrul florii (se suprapun `1` mm). Cele două flori sunt la cel puțin `10` mm una de alta, iar din **Front** nimic nu plutește  
+
+**Verificare (cu un coleg):** colegul numără în **cel mult 30 de secunde**: `2` fluturi **diferiți**, `2` flori, cercurile din cercuri. Apoi caută din **Top** și din **Front** o diferență între jumătatea stângă și cea dreaptă a fiecărui fluture. Dacă nu găsește niciuna, treapta trece.  
 
 ## Recapitulare rapidă
 1. Aripa **asimetrică** → <span style="color:#E65722;font-weight:700">M</span> se vede  
@@ -175,18 +184,15 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 3. <span style="color:#E65722;font-weight:700">M</span> = oglindă  
 4. <span style="color:#E65722;font-weight:700">L</span> = aliniere — verifici mereu din <span style="color:#D400D4;font-weight:700">Top</span>
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** corp → aripă înclinată → Ctrl+D → M → simetric din Top  
-**Complet:** + cap, antene (D+M), aripi mici
-
 **Quiz scurt:**  
 - Ce face tasta <span style="color:#E65722;font-weight:700">M</span>?  
 - Cum îți dai seama că ai **oglindit** aripa, nu doar ai mutat aripa?  
 - Din ce vedere verifici **simetria**?
 
-## Temă
-Opțional: un avion simetric — aceeași tehnică, `T1_L03` sau `T1_L03b`.
+## Temă (opțional)
+- Dacă ai doar Minim: acasă adaugi capul, antenele, a doua pereche de aripi și culorile (Pasul 2), în același `Prenume_Nume_T1_L03`.  
+- Dacă ai Complet: într-un proiect nou `T1_L03_B`, construiești un **avion simetric**, cu aceeași tehnică (copiezi, oglindești, aliniezi).
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T1_L03_C`, o **libelulă simetrică**, cu modele pe aripi.  
 
 ## Ce urmează
 În **Lecția 4** înveți **Hole** și **Group**: faci o **bucată de brânză** cu găuri adevărate.

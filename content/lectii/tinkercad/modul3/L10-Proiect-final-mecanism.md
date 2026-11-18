@@ -11,7 +11,7 @@
 
 ## Obiectiv
 La finalul orei ai **două obiecte**: **Mecanismul tău** și **Piesa a doua** (perechea lui).  
-**Minim:** **Obiectul 1:** mecanismul tău (schiță cu **cel puțin 3 mărimi**, **piesa fixă** cu ax, **piesa mobilă** cu gaură mai mare decât axul, **un Hole** + <span style="color:#DC143C;font-weight:700">Ctrl+G</span>, **o piesă repetată** cu <span style="color:#DC143C;font-weight:700">Ctrl+D</span>) și **Obiectul 2:** **piesa a doua** (a doua piesă mobilă sau capacul), care se potrivește cu primul **cu joc de `0,5` mm pe parte**, cu **cel puțin 8 unelte diferite**.  
+**Minim:** **Obiectul 1:** mecanismul tău (plan cu **cel puțin 3 mărimi**, **piesa fixă** cu ax, **piesa mobilă** cu gaură mai mare decât axul, **un Hole** + <span style="color:#DC143C;font-weight:700">Ctrl+G</span>, **o piesă repetată** cu <span style="color:#DC143C;font-weight:700">Ctrl+D</span>) și **Obiectul 2:** **piesa a doua** (a doua piesă mobilă sau capacul), care se potrivește cu primul **cu joc de `0,5` mm pe parte**, cu **cel puțin 8 unelte diferite**.  
 **Ținta orei (Complet):** a doua parte: <span style="color:#E65722;font-weight:700">Ruler</span> pe gaură și ax, <span style="color:#00A600;font-weight:700">Color</span>, text cu numele tău și prezentare de `30` de secunde, cu cel puțin **6 unelte diferite**.
 
 ## De ce contează
@@ -27,7 +27,7 @@ Azi pornești **tu** de la o idee și ajungi la un mecanism cu mărimi gândite.
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Criteriile și alegi mecanismul |
-| 10–25 | Schiță pe hârtie: piesa fixă, piesa mobilă, axul, **mărimile**, jocul |
+| 10–25 | Planul: piesa fixă, piesa mobilă, axul, **mărimile**, jocul |
 | 25–60 | **Obiectul 1** — mecanismul tău (Minim) |
 | 60–85 | **Obiectul 2** — piesa a doua, cu joc (Minim) |
 | 85–105 | **Complet** — Ruler, Color, text, prezentare pregătită |
@@ -41,13 +41,13 @@ Azi pornești **tu** de la o idee și ajungi la un mecanism cu mărimi gândite.
 
 | Unealtă | Ce face |
 |---------|---------|
-| <span style="color:#E65722;font-weight:700">mărimi cu numere</span> | mărimile din schiță, scrise cu numere |
+| <span style="color:#E65722;font-weight:700">mărimi cu numere</span> | mărimile din plan, scrise cu numere |
 | <span style="color:#00A600;font-weight:700">Hole</span> | gaura piesei mobile: taie după Group |
 | <span style="color:#DC143C;font-weight:700">Ctrl+D</span> | piese repetate: aceeași mutare sau aceeași rotire |
 | <span style="color:#E65722;font-weight:700">Align (L)</span> | centrează piesele |
 | <span style="color:#E65722;font-weight:700">joc `0,5` mm</span> | spațiul pe parte între ax și gaură |
 | <span style="color:#E65722;font-weight:700">conul negru</span> | ridică piesa cu un număr exact de milimetri |
-| <span style="color:#E65722;font-weight:700">Ruler</span> | compari mărimile cu schița |
+| <span style="color:#E65722;font-weight:700">Ruler</span> | compari mărimile cu planul |
 | <span style="color:#DC143C;font-weight:700">Ctrl+G</span> și <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span> | Group și Ungroup |
 
 Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-weight:700">Color</span>, <span style="color:#DC143C;font-weight:700">Ctrl+Z</span>) le știi din lecțiile trecute.
@@ -75,24 +75,24 @@ Alegi **după ce îți place**: toate cinci folosesc aceleași unelte și se pot
 **Încearcă tu — Alegi mecanismul (4 min)**  
 - [ ] Am ales mecanismul din meniu (sau am aprobarea profesorului pentru altul)
 
-### 2) Schița pe hârtie
-1. Desenezi mecanismul din față și de sus  
-2. Marchezi **piesa fixă** și **piesa mobilă**  
-3. Scrii **cel puțin 3 mărimi**, inclusiv axul și gaura (axul `+ 1` mm pentru gaură)  
-4. Marchezi unde ai <span style="color:#00A600;font-weight:700">Hole</span>, unde ai **piese repetate** și unde piesele **se potrivesc**
+### 2) Planul mecanismului
+1. Te gândești la mecanism din față și de sus  
+2. Alegi **piesa fixă** și **piesa mobilă**  
+3. Alegi **cel puțin 3 mărimi**, inclusiv axul și gaura (axul `+ 1` mm pentru gaură)  
+4. Alegi unde ai <span style="color:#00A600;font-weight:700">Hole</span>, unde ai **piese repetate** și unde piesele **se potrivesc**. Spui planul colegului
 
-**Încearcă tu — Schița pe hârtie (12 min)**  
-- [ ] Ai desenat mecanismul din față și de sus, cu **cel puțin 3** mărimi  
-- [ ] Ai marcat piesa fixă, piesa mobilă, Hole-urile și piesele repetate
+**Încearcă tu — Planul (12 min)**  
+- [ ] Ai ales **cel puțin 3** mărimi, inclusiv axul și gaura  
+- [ ] Știi piesa fixă, piesa mobilă, Hole-urile și piesele repetate
 
 ### 3) Proiect nou și piesa fixă
 1. **Create new design** · nume `Prenume_Nume_T3_L10`  
 2. <span style="color:#E65722;font-weight:700">Snap Grid</span> potrivit (`1` mm pentru mărimi fine, `5` mm pentru mutări mari)  
-3. Piesa fixă întâi: baza și axul, cu mărimile din schiță scrise cu numere. Le aliniezi cu <span style="color:#E65722;font-weight:700">L</span> și le grupezi între ele  
+3. Piesa fixă întâi: baza și axul, cu mărimile din plan scrise cu numere. Le aliniezi cu <span style="color:#E65722;font-weight:700">L</span> și le grupezi între ele  
 4. *Atenție la <span style="color:#E65722;font-weight:700">Align</span>: mută **ambele** piese. Tragi forma nouă **peste** cea veche; ce trebuie să rămână împreună, grupezi temporar (<span style="color:#DC143C;font-weight:700">Ctrl+G</span>), aliniezi, apoi <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span>.*
 
 **Încearcă tu — Proiect nou și piesa fixă (8 min)**  
-- [ ] Piesa fixă (baza și axul) are mărimile din schiță, scrise cu numere  
+- [ ] Piesa fixă (baza și axul) are mărimile din plan, scrise cu numere  
 - [ ] Baza și axul sunt grupate
 
 ### 4) Piesa mobilă, gaura și copiile
@@ -109,33 +109,33 @@ Alegi **după ce îți place**: toate cinci folosesc aceleași unelte și se pot
 **Obiectul 2 — Piesa a doua**
 
 ### 5) Obiectul 2: piesa a doua
-1. Alegi piesa care **se potrivește** cu primul obiect: roata mare la angrenaj, remorca la vehicul, a doua elice la ventilator, capacul la cutie, un al doilea rotor la atracție. Din schiță alegi **mărimile**  
-2. Faci piesa într-un **proiect nou**: `Prenume_Nume_T3_L10_B`, cu mărimile din schiță scrise cu numere. Poți copia piese din primul proiect cu <span style="color:#DC143C;font-weight:700">Ctrl+C</span> și <span style="color:#DC143C;font-weight:700">Ctrl+V</span>  
+1. Alegi piesa care **se potrivește** cu primul obiect: roata mare la angrenaj, remorca la vehicul, a doua elice la ventilator, capacul la cutie, un al doilea rotor la atracție. Din plan alegi **mărimile**  
+2. Faci piesa într-un **proiect nou**: `Prenume_Nume_T3_L10_B`, cu mărimile din plan scrise cu numere. Poți copia piese din primul proiect cu <span style="color:#DC143C;font-weight:700">Ctrl+C</span> și <span style="color:#DC143C;font-weight:700">Ctrl+V</span>  
 3. Potrivirea: **gol interior = piesa + `1` mm** (adică **joc `0,5` mm pe parte**). Exemplu: axul are `4`, gaura are `5`  
 4. Selectezi **doar** piesele noi (Shift+click) → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>. Apoi încerci potrivirea din <span style="color:#D400D4;font-weight:700">Front</span> și din <span style="color:#D400D4;font-weight:700">Top</span>: piesa a doua are loc lângă prima, cu joc egal  
 
 **Încearcă tu — Obiectul 2: piesa a doua (25 min)**  
-- [ ] Piesa a doua are mărimi din schiță, scrise cu numere  
+- [ ] Piesa a doua are mărimi din plan, scrise cu numere  
 - [ ] Golul e cu `1` mm mai mare decât piesa care intră în el (joc `0,5` mm pe parte)  
 - [ ] Piesa a doua se potrivește cu primul obiect, din Front și din Top  
 
 **Complet**
 
 ### 6) Complet — Ruler, Color, text și prezentare
-1. <span style="color:#E65722;font-weight:700">Ruler</span> pe gaură și pe ax: compari cu schița  
+1. <span style="color:#E65722;font-weight:700">Ruler</span> pe gaură și pe ax: compari cu planul  
 2. <span style="color:#00A600;font-weight:700">Color</span> coerent: piesa fixă într-o culoare, piesele mobile în altele  
 3. <span style="color:#1E90FF;font-weight:700">Text</span> cu numele tău, pe piesa fixă (`1` mm înălțime), pus **după** Group, ca să nu fie tăiat  
 4. Pregătești prezentarea de `30` de secunde: **ce este, ce se mișcă, pe ce se mișcă și ce joc are**  
 
 **Încearcă tu — Complet — Ruler, Color, text și prezentare (20 min)**  
-- [ ] Cu Ruler, gaura și axul au mărimile din schiță  
+- [ ] Cu Ruler, gaura și axul au mărimile din plan  
 - [ ] Culorile se potrivesc între ele  
 - [ ] Textul cu numele tău e pe piesa fixă, iar prezentarea e pregătită  
 
 ### 7) Verificare finală
 1. Rotești vederea din toate părțile: nimic nu plutește  
 2. Numele proiectelor e corect  
-3. Mărimile din Tinkercad se potrivesc cu schița  
+3. Mărimile din Tinkercad se potrivesc cu planul  
 
 **Încearcă tu — Verificare finală (6 min)**  
 - [ ] Am parcurs toate punctele din verificare  
@@ -144,7 +144,7 @@ Alegi **după ce îți place**: toate cinci folosesc aceleași unelte și se pot
 ---
 
 ## Greșeli frecvente
-1. **Am început fără schiță** — piesele nu se potrivesc. Oprește-te și desenează cu mărimi.  
+1. **Am început fără plan** — piesele nu se potrivesc. Oprește-te și gândește-te la mărimi.  
 2. **Prea multe idei** — mai bine un mecanism curat decât trei neterminate.  
 3. **Axul și gaura au aceeași mărime** — nu e joc. Adaugi `1` mm la gaură.  
 4. **Piesa mobilă e grupată cu cea fixă** — se lipesc. Ele trebuie să rămână două piese.  
@@ -159,7 +159,7 @@ Alegi **după ce îți place**: toate cinci folosesc aceleași unelte și se pot
 
 | Criteriu | Ce căutăm |
 |----------|-----------|
-| Schiță | cel puțin 3 mărimi, piesa mobilă marcată |
+| Plan | cel puțin 3 mărimi, piesa mobilă marcată |
 | Joc | gaura mai mare decât axul cu `1` mm (scris cu numere) |
 | Două piese separate | una fixă, una mobilă |
 | Repetare | cel puțin o piesă copiată cu Ctrl+D |
@@ -175,20 +175,20 @@ Alegi **după ce îți place**: toate cinci folosesc aceleași unelte și se pot
 
 | | Ce trebuie |
 |--|------------|
-| **Minim („am reușit”)** | **Pașii 1 și 2** — mecanismul tău (schiță cu `3` mărimi, piesă fixă cu ax, piesă mobilă cu gaură `+ 1` mm, Hole + Group, piesă repetată) **și** piesa a doua cu joc de `0,5` mm pe parte, cu **cel puțin 8 unelte diferite** |
+| **Minim („am reușit”)** | **Pașii 1 și 2** — mecanismul tău (plan cu `3` mărimi, piesă fixă cu ax, piesă mobilă cu gaură `+ 1` mm, Hole + Group, piesă repetată) **și** piesa a doua cu joc de `0,5` mm pe parte, cu **cel puțin 8 unelte diferite** |
 | **Complet (ținta orei)** | Minim + **Pasul 3** — `Ruler` pe gaură și ax, culoare, text cu numele tău și prezentare de `30` de secunde, cu cel puțin **6 unelte diferite** |
 
 Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru Modulul 4.
 
 ### Pasul 1 — Obiectul 1: Mecanismul tău *(Minim)*
-- [ ] Schiță cu **3** mărimi  
-- [ ] Piesa fixă (bază + ax), cu numerele din schiță  
+- [ ] Plan cu **3** mărimi  
+- [ ] Piesa fixă (bază + ax), cu numerele din plan  
 - [ ] Piesa mobilă cu gaură mai mare (**ax + 1 mm**), separată de cea fixă  
 - [ ] Cel puțin un <span style="color:#00A600;font-weight:700">Hole</span> + <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
 - [ ] O piesă repetată cu <span style="color:#DC143C;font-weight:700">Ctrl+D</span>  
 
 ### Pasul 2 — Obiectul 2: Piesa a doua *(Minim)*
-- [ ] Piesa a doua are mărimi din schiță, scrise cu numere  
+- [ ] Piesa a doua are mărimi din plan, scrise cu numere  
 - [ ] Golul e cu `1` mm mai mare decât piesa (joc `0,5` mm pe parte)  
 - [ ] Piesa a doua se potrivește cu primul obiect  
 - [ ] Ai folosit cel puțin **8 unelte diferite** (la ambele obiecte): <span style="color:#E65722;font-weight:700">mărimi cu numere</span>, <span style="color:#00A600;font-weight:700">Hole</span>, <span style="color:#DC143C;font-weight:700">Ctrl+G</span>, <span style="color:#DC143C;font-weight:700">Ctrl+D</span>, <span style="color:#E65722;font-weight:700">Align (L)</span>, <span style="color:#E65722;font-weight:700">conul negru</span>, <span style="color:#E65722;font-weight:700">Snap Grid</span>, <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span>, <span style="color:#D400D4;font-weight:700">View Cube</span>  
@@ -196,7 +196,7 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru Mod
 **→ Ai Minim când:** un coleg vede cele două obiecte, iar piesele mobile ar avea loc să se miște pe axele lor, cu joc mic și egal.
 
 ### Pasul 3 — Complet
-- [ ] Cu <span style="color:#E65722;font-weight:700">Ruler</span>, gaura și axul au mărimile din schiță  
+- [ ] Cu <span style="color:#E65722;font-weight:700">Ruler</span>, gaura și axul au mărimile din plan  
 - [ ] Culorile se potrivesc între ele  
 - [ ] Textul cu numele tău e pe piesa fixă, iar prezentarea e pregătită  
 - [ ] Numele proiectelor `T3_L10` și `T3_L10_B` e corect  
@@ -219,11 +219,6 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru Mod
 4. Un mecanism curat > trei neterminate  
 5. Piesa a doua exersează aceeași idee pe alte mărimi  
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** schiță (3 mărimi) → piesa fixă (bază + ax) → piesa mobilă cu Hole = ax + 1 mm → Ctrl+D (piesă repetată) → Group (doar în interiorul fiecărei piese) · obiectul 2: piesa a doua cu joc (gol = piesă + 1 mm)  
-**Complet:** + Ruler · Color · text · prezentare
-
 ## Formular de păreri *(elev)*
 1. Care lecție ți-a plăcut cel mai mult?  
 2. Ce a fost cel mai greu?  
@@ -231,7 +226,7 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru Mod
 4. Cât de bine știi acum să faci piese care se mișcă, cu joc? (1–5)
 
 ## Temă
-Opțional: finalizezi mecanismul acasă sau desenezi pe foaie un al doilea, cu mărimi — același `T3_L10`.
+Opțional: finalizezi mecanismul acasă sau faci un al doilea mecanism, cu mărimi, într-un proiect nou `T3_L10_C`.
 
 ## Ce urmează
 Ai terminat **Modulul 3**! În **Modulul 4** construim **orașul nostru**.

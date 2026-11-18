@@ -15,7 +15,7 @@ La finalul orei ai **două labirinturi cu bilă**: **Labirintul pătrat** și **
 **Ținta orei (Complet):** a doua parte: **2 pinteni** la labirintul pătrat, drumul verificat cu degetul și culoarele măsurate cu <span style="color:#E65722;font-weight:700">Ruler</span>, culori, cu cel puțin **6 unelte diferite**.
 
 ## De ce contează
-Un labirint bun nu e doar desenat: culoarele trebuie să fie **mai late decât bila**. Bila are `10` mm, iar culoarele `22`, `16` sau `14` mm. Aici planifici **înainte** de construcție, cu o schiță și cu numere.  
+Un labirint bun nu e doar desenat: culoarele trebuie să fie **mai late decât bila**. Bila are `10` mm, iar culoarele `22`, `16` sau `14` mm. Aici planifici **înainte** de construcție, cu un plan și cu numere.  
 La labirintul rotund înveți că o **deschidere** se face cu un <span style="color:#00A600;font-weight:700">Hole</span> care taie prin perete.
 
 **Notă:** imprimanta 3D **nu** e folosită la oră — doar design.
@@ -26,7 +26,7 @@ La labirintul rotund înveți că o **deschidere** se face cu un <span style="co
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recap L3 · desenăm pe foaie un labirint și drumul bilei |
+| 0–10 | Recap L3 · privim un labirint și urmărim drumul bilei |
 | 10–50 | **Obiectul 1** — Labirintul pătrat (Minim) |
 | 50–85 | **Obiectul 2** — Labirintul rotund (Minim) |
 | 85–110 | **Complet** pe primul obiect |
@@ -57,14 +57,14 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 
 **Obiectul 1 — Labirintul pătrat**
 
-### 1) Proiect nou și schița
+### 1) Proiect nou și planul
 1. **Create new design** · nume `Prenume_Nume_T3_L04`  
-2. Pe foaie desenezi pătratul de `100 × 100`, **3 pereți** orizontali și săgeți: drumul merge **în zigzag** de jos în sus  
+2. Îți faci planul în minte: pătratul de `100 × 100`, **3 pereți** orizontali, iar drumul merge **în zigzag** de jos în sus. Îl spui colegului  
 3. <span style="color:#E65722;font-weight:700">Snap Grid</span>: **1.0 mm**  
 
-**Încearcă tu — Proiect nou și schița (6 min)**  
+**Încearcă tu — Proiect nou și planul (6 min)**  
 - [ ] Proiectul e creat și redenumit `Prenume_Nume_T3_L04`  
-- [ ] Ai schița pe foaie: pătrat `100 × 100`, **3** pereți și săgeți în zigzag  
+- [ ] Știi planul: pătrat `100 × 100`, **3** pereți și drum în zigzag  
 
 ### 2) Placa și cadrul
 1. <span style="color:#1E90FF;font-weight:700">Box</span> → **100 · 100 · 4** *(placa)*. Alt <span style="color:#1E90FF;font-weight:700">Box</span> → **100 · 100 · 10** *(cadrul, încă plin)*  
@@ -214,18 +214,13 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 4. Bila rămâne **separată** de labirint  
 5. Pintenii nu trebuie să blocheze drumul: rămân `14` mm  
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** placă 100·100·4 + cadru (100·100·10 − Hole 94·94·14) la 4 · 3 pereți 75·3·10 la 25 mm · start și final 12·12·1 · bilă Ø10 · rotund: placă Ø100·4 + cadru + inel Ø60 (Hole 54) + inel Ø26 (Hole 20) + 2 deschideri 8·14·14  
-**Complet:** + 2 pinteni 3·11·10 · Ruler · culori
-
 **Quiz scurt:**  
 - De ce culoarul trebuie să fie mai lat decât bila?  
 - Câți milimetri are culoarul labirintului pătrat? Dar golul lângă pinten?  
 - Cum faci o deschidere într-un inel?
 
 ## Temă
-Opțional: desenezi pe foaie un labirint cu **5** pereți și calculezi cât de lat e fiecare culoar.
+Opțional, acasă, într-un proiect nou `T3_L04_B`: un labirint cu **5** pereți. Cât de lat e fiecare culoar? Trece bila de `10` mm?
 
 ## Ce urmează
 În **Lecția 5** faci un **puzzle 3D**: piese care se potrivesc cu joc, dop în locaș.

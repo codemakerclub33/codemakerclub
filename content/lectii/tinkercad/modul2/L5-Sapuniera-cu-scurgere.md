@@ -207,11 +207,6 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 4. Piciorușe = aer sub tavă
 5. Al doilea obiect (Grătarul) exersează aceeași idee pe alte mărimi
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** Box 100·70·20 − Hole 94·64·20 (+3 mm) → Hole 70·6·10 → Ctrl+D ×2 (15 mm) → Group  
-**Complet:** + 4 piciorușe 10·10·5 · tava +4 mm · Color
-
 **Quiz scurt:**  
 - De ce fanta nu poate fi lungă de 94 mm?  
 - Ce se întâmplă dacă uiți <span style="color:#DC143C;font-weight:700">Ctrl+G</span>?  

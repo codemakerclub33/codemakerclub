@@ -28,8 +28,9 @@ Cavitățile sunt peste tot: căni, cutii, vaze. **Ordinea pieselor contează** 
 |--------|----------|
 | 0–10 | Recap L8 · cană reală: perete, fund, toartă |
 | 10–30 | Demo: Hole **mai îngust, ridicat de la fund**, Torus rotit |
-| 30–95 | Minim → Complet → Bonus |
-| 95–120 | Recap, quiz, galerie |
+| 30–65 | Construim cana: Minim → Complet |
+| 65–100 | **Bonus:** ceaiul de la ora cinci, pe trepte (fiecare merge cât apucă) |
+| 100–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -57,14 +58,14 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 2. Nume: `Prenume_Nume_T1_L09`  
 3. Salvare automată — verifici numele
 
-**Încearcă tu — Proiect nou (4 min)**  
+**Încearcă tu — Proiect nou (2 min)**  
 - [ ] Proiectul e creat și redenumit `Prenume_Nume_T1_L09`  
 
 ### 2) Corpul
 1. Tragi un <span style="color:#1E90FF;font-weight:700">Cylinder</span> și îl faci **40 × 40 × 45** (diametru 40, înălțime 45) — corpul cănii  
 2. Pe plan (dacă plutește → <span style="color:#E65722;font-weight:700">D</span>)
 
-**Încearcă tu — Corpul (8 min)**  
+**Încearcă tu — Corpul (3 min)**  
 - [ ] Corpul are **40 × 40 × 45** și stă pe plan  
 
 ### 3) Golul (Hole)
@@ -75,7 +76,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 5. Îl pui **în centru**: selectezi **corpul + golul** (Shift+click), apeși <span style="color:#E65722;font-weight:700">L</span> și alegi **punctul din mijloc** pe ambele direcții din Top. Verifici din Top că peretele are aceeași grosime peste tot  
 6. Verifici din <span style="color:#D400D4;font-weight:700">Front</span>: golul începe **deasupra** planului (5 mm) și iese deasupra marginii cănii
 
-**Încearcă tu — Golul (Hole) (15 min)**  
+**Încearcă tu — Golul (Hole) (10 min)**  
 - [ ] Golul (<span style="color:#00A600;font-weight:700">Hole</span>) are **32 × 32 × 42**, începe la **5** mm și iese deasupra marginii  
 - [ ] Din <span style="color:#D400D4;font-weight:700">Top</span>, peretele are aceeași grosime peste tot  
 
@@ -86,7 +87,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 4. Îl scalezi dacă iese prea mare sau strâmb (pătrățele albe + <span style="color:#E65722;font-weight:700">Shift</span>)  
 5. Verifici din <span style="color:#D400D4;font-weight:700">Top</span>: toarta intră doar în perete (peretele are 4 mm; **nu** intră mai mult de 3 mm, ca să nu ajungă în gol)
 
-**Încearcă tu — Toarta — înainte de Group (15 min)**  
+**Încearcă tu — Toarta — înainte de Group (8 min)**  
 - [ ] Toarta e vertical (din <span style="color:#D400D4;font-weight:700">Front</span> vezi un cerc)  
 - [ ] Intră cel mult ~3 mm în perete, la ~**10** înălțime  
 
@@ -96,7 +97,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 3. Rotești vederea: cana e goală, are fund, toarta e afară  
 4. Dacă toarta intră în cavitate (Hole-ul o taie), <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span> (Ungroup), o muți spre exterior, <span style="color:#DC143C;font-weight:700">Ctrl+G</span> din nou
 
-**Încearcă tu — Group (10 min)**  
+**Încearcă tu — Group (4 min)**  
 - [ ] Cana e goală, cu fund  
 - [ ] Toarta e pe exterior, nu în cavitate  
 
@@ -105,7 +106,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 2. **Model:** cercuri mici sau dungi subțiri lipite pe exterior (formă <span style="color:#00A600;font-weight:700">Solid</span>, nu Hole)  
 3. Nume corect
 
-**Încearcă tu — Complet (20 min)**  
+**Încearcă tu — Complet (8 min)**  
 - [ ] Cana are culoare (sau culori făcute **înainte** de Group)  
 - [ ] Modelul lipit pe exterior e <span style="color:#00A600;font-weight:700">Solid</span>, nu Hole
 
@@ -153,29 +154,34 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Cana cu farfurioară și capac
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Ceaiul de la ora cinci
+*Doar dacă ai terminat Complet. Lucrezi în același proiect, `Prenume_Nume_T1_L09`. Dificultatea crește de la o treaptă la alta; nu primești pași, ci reguli. Alegi tu cum ajungi la rezultat.*
 
-- [ ] Schimbă mărimea toartei și culorile  
-- [ ] **Provocarea:** adaugi o **farfurioară** (Cylinder `70 × 70 × 3`) pe care stă cana, ridicată la `2` (intră 1 mm în farfurioară), și un **capac separat** (Cylinder `40 × 40 × 4`) care **nu** e grupat cu cana. Din Front nu e **niciun gol** între cană și farfurioară.  
+Cana ta nu stă singură: pregătești o masă de ceai. Nimic nu plutește. Treptele, de la ușor la greu:
+
+- [ ] **Treapta 1 — Tăvița.** Un `Box` de `150 × 80 × 3`, pe care stă cana, ridicat la `2` (intră `1` mm în tăviță). Din Front nu e niciun gol între cană și tăviță  
+- [ ] **Treapta 2 — Capacul.** Un disc de `42 × 42 × 3` cu un buton (sferă de `8` mm) centrat, **separat** de cană (neprins în Group). Stă pe cană și din Front nu e gol  
+- [ ] **Treapta 3 — Lingurița.** Pe tăviță, lângă cană: un căuș (`Half Sphere`) și un mâner (`Box` subțire). Nu atinge cana  
+- [ ] **Treapta 4 — Cuburile de zahăr.** `3` cuburi de `8` mm pe tăviță, la distanțe egale, făcute cu `Ctrl+D` repetat (ca la castel). Nu ating lingurița  
+- [ ] **Treapta 5 — Ceașca.** O a doua cană, făcută de la zero, cu **altă formă**: un `Half Sphere` de `40 × 40 × 20` (rotit `180°`, ca la barcă), cu un `Hole` tot de tip `Half Sphere`, mai mic, care începe mai sus de fund și iese deasupra marginii. Are o toartă mică și stă pe tăviță  
+- [ ] **Treapta 6 — Ceainicul.** Un obiect nou, lângă tăviță, pe plan: o sferă goală înăuntru (`Hole` sferă mai mică, deschisă sus), un cioc (con culcat cu un canal `Hole` prin el), o toartă (`Torus`) și un capac separat. Dacă trebuie să modifici golurile, faci Ungroup, apoi Group  
+
+**Verificare (cu un coleg):** colegul numără în **cel mult 30 de secunde**: tăvița, capacul, lingurița, zahărul, ceașca și ceainicul. Apoi verifică din **Front** că nimic nu plutește și că ambele căni sunt cu adevărat goale.  
 
 ## Recapitulare rapidă
 1. Cavitate = **Hole mai îngust**, care începe **mai sus de plan** (fund) și **iese deasupra** (deschis sus)  
 2. Fundul și peretele nu trebuie să fie prea subțiri  
 3. Toarta: <span style="color:#1E90FF;font-weight:700">Torus</span> rotit **90°**, în perete, nu în gol
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** Cylinder → Cylinder Hole mai îngust, ridicat la 5 mm și ieșit deasupra → fund → Group  
-**Complet:** + Torus 90° în perete → Group → culori, model
-
 **Quiz scurt:**  
 - De ce golul **nu coboară până la plan**? Și de ce **iese deasupra** cănii?  
 - Cum **rotești** toarta?  
 - Ce se întâmplă dacă toarta ajunge în **gol**?
 
-## Temă
-Opțional: o vază cu gât îngust — același `T1_L09` sau proiect nou.
+## Temă (opțional)
+- Dacă ai doar Minim: acasă adaugi toarta, culorile și modelul (Pasul 2), în același `Prenume_Nume_T1_L09`.  
+- Dacă ai Complet: într-un proiect nou `T1_L09_B`, o **vază** cu gât îngust.
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T1_L09_C`, o **cutie** goală cu **capac** separat.  
 
 ## Ce urmează
 În **Lecția 10** îți faci **insula în miniatură**, cu piese din toate lecțiile.

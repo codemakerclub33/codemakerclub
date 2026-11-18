@@ -150,15 +150,10 @@ Un parc face orașul mai plăcut. Copacii se repetă cu **Ctrl+D**, ca ferestrel
 2. Distanțe egale = **Ctrl+D**  
 3. Parcul are: copaci, bănci, alee
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** trunchi 2·2·6 (+4) + coroană Cone 10·10·14 (+8) → Group → Ctrl+D ×3 (14 mm) → bancă (scaun 8·3·1 +6, picioare 1·3·2 +4, spătar 8·0,6·2 +7) → alee 4·20·0,4  
-**Complet:** 8 copaci · 2 bănci · fântână
-
 **Quiz scurt:**  
 - Câți mm are un copac de 9 m? *(18)*  
 - De ce grupăm copacul?  
 - Care e distanța între copaci?
 
 ## Temă
-Opțional: pe foaie, desenezi parcul visurilor tale. Ce pui în el?
+Opțional, acasă, într-un proiect nou `T4_L07_B`: parcul visurilor tale. Ce pui în el?

@@ -16,21 +16,23 @@ Al treilea pas pe ecran. Cilindrii care vor tăia. Tragi un Cylinder. Rămâne �
 
 Al patrulea pas pe ecran. Hole. Dai click pe un cilindru, ca să se deschidă fereastra piesei. Alegi Hole, varianta cu dungi, nu Solid. La fel faci pentru ceilalți cilindri. Brânza rămâne Solid.
 
-Al cincilea pas pe ecran. Group, adică momentul tăierii. Apeși Control și A împreună, dar doar dacă pe plan sunt numai brânza și cilindrii. Dacă ai și altceva, de exemplu șoricelul, ții Shift și dai click pe felie și pe fiecare cilindru. Apoi apeși Control și G. Pe Mac, Command și G. Găurile dispar ca piese și rămân goluri în felie.
+Al cincilea pas pe ecran. Group, adică momentul tăierii. Apeși Control și A împreună, dar doar dacă pe plan sunt numai brânza și cilindrii. Dacă ai și altceva pe plan, ții Shift și dai click pe felie și pe fiecare cilindru. Apoi apeși Control și G. Pe Mac, Command și G. Găurile dispar ca piese și rămân goluri în felie.
 
 Al șaselea pas pe ecran. Verificarea. Rotești vederea. Găurile se văd și din spate? Dacă nu, apeși Control, Shift și G ca să desfaci grupul, lungești sau muți cilindrii, pui Hole din nou dacă trebuie, și apeși iar Control și G.
 
 Al șaptelea pas pe ecran, pentru Complet. Selectezi grupul, adică brânza cu găuri. În fereastra piesei, apeși cercul colorat de lângă Solid și alegi gălbui sau portocaliu. Dacă nu ai deja găuri de mărimi diferite, desfaci grupul cu Control, Shift și G, scalezi un cilindru cu Shift pe colț, cu înălțimea peste treizeci, și grupezi din nou cu Control și G.
 
-Greșeli frecvente. Gaura nu trece: din lateral, cilindrul nu iese deasupra feliei, sau stă prea sus și nu atinge planul. Îl înalți din pătrățelul alb de sus. Cilindrul stă pe margine: îl muți înăuntrul conturului. Ai dat Group și nimic nu se schimbă: cilindrii sunt încă Solid, pui Hole, apoi Group. Brânza a dispărut: și ea este Hole, desfaci grupul și îi pui înapoi Solid. Ai grupat doar găurile, sau ai grupat și șoricelul: selectezi doar felia și cilindrii, cu Shift și click. Vrei să modifici după Group: Control, Shift și G, modifici, regrupezi. Nu vezi fereastra piesei: dai click din nou pe piesă.
+Greșeli frecvente. Gaura nu trece: din lateral, cilindrul nu iese deasupra feliei, sau stă prea sus și nu atinge planul. Îl înalți din pătrățelul alb de sus. Cilindrul stă pe margine: îl muți înăuntrul conturului. Ai dat Group și nimic nu se schimbă: cilindrii sunt încă Solid, pui Hole, apoi Group. Brânza a dispărut: și ea este Hole, desfaci grupul și îi pui înapoi Solid. Ai grupat doar găurile, sau ai grupat și altceva de pe plan: selectezi doar felia și cilindrii, cu Shift și click. Vrei să modifici după Group: Control, Shift și G, modifici, regrupezi. Nu vezi fereastra piesei: dai click din nou pe piesă.
 
 Proiectul de azi. Brânza cu găuri.
 
 Minim înseamnă: un Wedge de șaizeci pe patruzeci pe treizeci, cu cel puțin trei găuri după Group, vizibile și din spate, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus găuri de mărimi diferite și culoare, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg se uită din spate și vede găurile trecând prin felie.
 
-Bonus. Faci o gaură pe lateral, cu un cilindru orizontal, Hole. Provocarea, Brânza cu șoricel: faci un șoricel din cel puțin cinci piese, corp, cap, două urechi și coadă, pe plan, lângă brânză, plus o gaură pe lateral, făcută cu un cilindru Hole orizontal, intrat în grup, care se vede din Front. Un coleg ghicește animalul fără explicații, în cel mult douăzeci de secunde.
+Bonus. Lucrezi în același proiect. Șoricelul a găsit brânza, dar pisica pândește. Treptele merg de la ușor la greu. Prima: un bloc de brânză, făcut de la zero, cu altă formă și altă culoare decât felia. A doua: urmele de dinți, trei mușcături de mărimi diferite pe marginea de sus, făcute cu sfere Hole, pe care le grupezi cu blocul, ca la felie. A treia: șoricelul, din cel puțin cinci piese: corp, cap, două urechi și coadă. Un coleg îl ghicește în douăzeci de secunde. A patra: platoul pe care stau blocul, felia și șoricelul, cu bord, făcut cu un Hole. A cincea: pisica, din cel puțin șase piese, de cel puțin două ori mai lungă decât șoricelul, care stă cu fața spre el. A șasea: tunelul de scăpare prin blocul de brânză, cu o cotitură în L, intră pe față și iese pe lateral, în care încape șoricelul cu un milimetru joc, dar pisica nu. Blocul cu mușcături este deja grup: faci Ungroup, adaugi tunelul și grupezi din nou, ca la verificare. Un coleg numără în treizeci de secunde: blocul cu mușcături, șoricelul, platoul, pisica și tunelul. Apoi se uită din Top și caută lumina prin ambele capete ale tunelului.
 
 Recapitulare. Cilindrul străpunge felia: iese deasupra, iar jos pornește de pe plan. Hole pe cilindru, Solid pe brânză. Control și G înseamnă tăiere. Fără Group, Hole nu taie. Ungroup desface grupul, ca să poți modifica.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă culoarea și găurile de mărimi diferite. Dacă ai Complet, faci acasă, într-un proiect nou, un alt obiect cu găuri, o sită sau un burete, cu același Hole și Group. Dacă ai terminat și Bonusul, opțional, acasă, într-un proiect nou, o capcană de șoareci din forme simple, cu un loc pentru brânză.
 
 Ce urmează. În lecția cinci faci o ștampilă: text trei D, oglindit cu M.
 

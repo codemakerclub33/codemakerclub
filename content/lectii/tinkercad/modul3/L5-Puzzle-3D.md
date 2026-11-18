@@ -29,8 +29,8 @@ Dopuri de **mărimi diferite** fac ca piesele să se potrivească doar în ordin
 | 0–10 | Recap L4 · ce puzzle-uri cunoașteți? Cum se potrivesc piesele? |
 | 10–50 | **Obiectul 1** — Cubul din 2 piese (Minim) |
 | 50–85 | **Obiectul 2** — Puzzle-ul în șir (Minim) |
-| 85–110 | **Complet** pe primul obiect |
-| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme sau ca temă |
+| 85–105 | **Complet** pe primul obiect · cine termină trece la **Bonus ★★★** (pe trepte, cât apucă; restul rămâne temă) |
+| 105–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -197,11 +197,18 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Cub din 3 straturi
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Puzzle-ul cu cheie
+*Doar dacă ai terminat Complet. Continui cu aceleași două puzzle-uri și cu un obiect nou, de același fel. Dificultatea crește de la o treaptă la alta; nu primești dimensiuni sau pași, ci reguli. Alegi tu mărimile.*
 
-- [ ] Schimbă culorile și gravează un text mic pe o față (Hole, `1` mm adâncime)  
-- [ ] **Provocarea (obiect mai complicat):** în proiectul `Prenume_Nume_T3_L05_C`, un **cub de `40 · 40 · 60`** din **3 straturi** `40 · 40 · 20`, care se montează într-o singură ordine. Stratul de jos are dop `16 · 16 · 10`, stratul de mijloc are locaș `16,4` jos și dop `8 · 8 · 10` sus, la `14` mm de centru, iar stratul de sus are locaș `8,4` la `14` mm de centru. Straturile rămân **separate**. Cu <span style="color:#E65722;font-weight:700">Ruler</span> confirmi înălțimea cubului (`60` mm) și jocul (`16` față de `16,4`, `8` față de `8,4`). Un coleg încearcă să pună stratul de sus întors cu `180°`: nu intră.  
+Toate piesele respectă regula de azi: **jocul de `0,2` mm pe parte** (locașul e cu `0,4` mm mai mare decât dopul). Treptele, de la ușor la greu:
+
+- [ ] **Treapta 1 — Personalizează.** Schimbi culorile și gravezi un text mic pe o față a unei piese (`Hole`, `1` mm adâncime)  
+- [ ] **Treapta 2 — A patra placă.** În `Prenume_Nume_T3_L05_B`, puzzle-ul în șir primește placa **D**, după C. Dopurile sunt toate de **mărimi diferite**, iar piesele se potrivesc doar în ordinea **A, B, C, D**. Dopul de la B nu intră în locașul de la C  
+- [ ] **Treapta 3 — Cubul din 3 straturi.** În proiectul `Prenume_Nume_T3_L05_C`: un cub de `40 · 40 · 60`, din **3 straturi** de `40 · 40 · 20`, care se montează într-o **singură ordine**. Straturile rămân **separate**, iar dopurile sunt de **mărimi diferite**  
+- [ ] **Treapta 4 — Cheia.** Stratul de sus **nu intră** dacă îl rotești cu `90°` sau cu `180°`. Tu alegi unde pui dopurile și locașurile (de exemplu **descentrat**), ca să se întâmple asta  
+- [ ] **Treapta 5 — Testul jocului.** Faci aceeași pereche dop–locaș în **3 variante**, cu joc de `0,1`, `0,2` și `0,3` mm pe parte. Îi spui colegului care ți se pare **prea strâns**, care **potrivit** și care **prea larg**, și de ce  
+
+**Verificare (cu un coleg):** colegul încearcă să monteze cubul în ordinea greșită și cu stratul de sus întors: nu intră. Cu **Ruler**, confirmi înălțimea cubului (`60` mm) și jocul de `0,2` mm la fiecare îmbinare.  
 
 ## Recapitulare rapidă
 1. Locașul e **puțin mai mare** decât dopul: asta e jocul  
@@ -210,18 +217,15 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 4. Dopuri de mărimi diferite dau **o singură ordine** de montaj  
 5. Rotirea cu `180°` arată dacă piesele se potrivesc într-un singur fel  
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** A: cub 40·40·20 + dop 16·16·10 · B: cub 40·40·20 − locaș 16,4·16,4·12 (la 19) · plăci 40·30·8: A + dop 9·16·8 · B − locaș 8,4·16,4·10 + dop 9·10·8 · C − locaș 8,4·10,4·10  
-**Complet:** + dop 8·8·10 și locaș 8,4 (la 14 mm) · culori
-
 **Quiz scurt:**  
 - De ce locașul are `16,4`, nu `16`?  
 - Cu cât e mai mare locașul decât dopul, pe fiecare parte?  
 - De ce dopul de `16` nu intră în locașul de `10,4`?
 
 ## Temă
-Opțional: desenezi pe foaie un puzzle din **4** piese și marchezi ce dop intră în ce locaș.
+Opțional, acasă, într-un proiect nou `T3_L05_D`: un capac de pix din două piese, un corp cu dop și un capac cu locaș, cu joc de `0,2` mm pe parte. Capacul intră doar într-un singur fel.
 
 ## Ce urmează
 În **Lecția 6** faci un **set de piese de șah** și o **tablă mică**: piese pe baze identice, care stau în locașuri cu joc.
+
+---

@@ -6,7 +6,7 @@ Obiectivul. La final ai o placă de o sută cincizeci pe o sută cincizeci de mi
 
 De ce contează. Toți elevii folosesc aceeași placă și aceeași scară, ca plăcile să se potrivească la sfârșit într-un oraș mare. Scara te ajută să știi cât de mare e o casă, o stradă sau o mașină față de realitate. O casă de zece metri lungime are douăzeci de milimetri. O stradă de opt metri lățime are șaisprezece milimetri. Azi imprimanta trei D nu se folosește. Facem doar design.
 
-Primul pas pe ecran. Mai întâi, pe foaie, faci calculul scării. Un metru este doi milimetri. O casă de zece metri are douăzeci de milimetri. O mașină de patru metri are opt milimetri. O stradă de opt metri are șaisprezece milimetri. Apoi, în Tinkercad, uită-te jos, în dreapta ecranului, la Snap Grid, și pune unu milimetru.
+Primul pas pe ecran. Mai întâi faci calculul scării, în minte sau cu calculatorul. Un metru este doi milimetri. O casă de zece metri are douăzeci de milimetri. O mașină de patru metri are opt milimetri. O stradă de opt metri are șaisprezece milimetri. Apoi, în Tinkercad, uită-te jos, în dreapta ecranului, la Snap Grid, și pune unu milimetru.
 
 Al doilea pas pe ecran. Din lista de forme, din dreapta, tragi un Box pe Workplane. Îi scrii mărimile: o sută cincizeci, o sută cincizeci, trei. Este un pătrat de șaptezeci și cinci de metri în realitate. Îi dai o culoare neutră, gri deschis.
 

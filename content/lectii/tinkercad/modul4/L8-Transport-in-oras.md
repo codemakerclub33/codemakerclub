@@ -143,11 +143,6 @@ Toate înălțimile sunt socotite **de la suprafața asfaltului (4 mm)**.
 3. Roțile: **cilindru culcat** (4 pași de rotire)  
 4. Ferestrele autobuzului: o gaură, copiată cu **Ctrl+D**
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** mașină 10·4·2 + cabină 5·3,6·1,5 + 4 roți Ø3·0,8 culcate → autobuz 24·5·8 − 5 ferestre 3·6·3 (4,5 mm) + 4 roți Ø4·1 → stația 10·3·0,6 + 2 stâlpi 0,8·0,8·6  
-**Complet:** 3 mașini · alt sens · semn de stație
-
 **Quiz scurt:**  
 - Cât de lungă e o mașină de 6 m în model? *(12 mm)*  
 - De ce roțile se rotesc 90°?  

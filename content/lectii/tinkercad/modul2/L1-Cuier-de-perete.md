@@ -28,10 +28,11 @@ Azi înveți să **scrii mărimile cu numere**, nu doar să măsori cu ochiul. �
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap lecția trecută · privim obiecte reale: ce părți au? |
-| 10–50 | **Obiectul 1** — Șina de perete (Minim) |
-| 50–85 | **Obiectul 2** — Raftul cu console (Minim) |
-| 85–110 | **Complet** pe primul obiect |
-| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme sau ca temă |
+| 10–46 | **Obiectul 1** — Șina de perete (Minim) |
+| 46–72 | **Obiectul 2** — Raftul cu console (Minim) |
+| 72–85 | **Complet** pe primul obiect |
+| 85–110 | **Bonus ★★★** — camera mea, pe trepte (fiecare merge cât apucă) |
+| 110–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -144,7 +145,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 3. <span style="color:#E65722;font-weight:700">Ruler</span>: `25` mm de la capăt la prima fantă și `20` mm între fante. Dacă ai grupat textul, verifici din <span style="color:#D400D4;font-weight:700">Top</span>  
 4. <span style="color:#00A600;font-weight:700">Color</span>: șina într-o culoare  
 
-**Încearcă tu — Complet — text, Ruler, culoare (12 min)**  
+**Încearcă tu — Complet — text, Ruler, culoare (13 min)**  
 - [ ] Litera (`2` mm înălțime, din care `1` mm iese) e între prima și a doua fantă  
 - [ ] Cu <span style="color:#E65722;font-weight:700">Ruler</span>: `25` mm la capăt și `20` mm între fante  
 - [ ] Șina e colorată  
@@ -198,11 +199,17 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Sistem modular
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Camera mea
+*Doar dacă ai terminat Complet. Lucrezi pe trepte, de la ușor la greu. Treptele 1–4 sunt pe raft, în proiectul `Prenume_Nume_T2_L01_B`; treapta 5 e pe șină, în `Prenume_Nume_T2_L01`. Fiecare piesă o faci de la zero. Treapta următoare o începi după ce ai încheiat-o pe cea dinainte. Piesele de pe raft stau la cel puțin `10` mm de console și de capete.*
 
-- [ ] Schimbă culorile modulelor și adaugă un text pe unul dintre ele  
-- [ ] **Provocarea (obiect mai complicat):** în proiectul `Prenume_Nume_T2_L01`, **lângă șină**, **două module separate** care se pot prinde în ea: câte o plăcuță `70 × 30 × 5` cu **2 cepi** <span style="color:#1E90FF;font-weight:700">Box</span> `9 · 19 · 8` la **30 mm** unul de altul, adică exact distanța dintre fantele `10 × 20` (joc de `0,5` mm pe fiecare parte). Primul modul are un **cârlig** <span style="color:#1E90FF;font-weight:700">Cylinder</span> `10 · 10 · 25` pe mijloc, al doilea o **buză** `70 · 3 · 10` pe marginea din față. Cu <span style="color:#E65722;font-weight:700">Ruler</span> confirmi cepii (`9 × 19`) și `30` mm între ei. Un coleg poate pune oricare modul în **oricare două fante vecine**.  
+- [ ] **Treapta 1 — Cărțile.** Pe raft, `5` cărți `Box` în picioare, una lângă alta, cu grosimi **diferite**: `6`, `8`, `10`, `12` și `14` mm. Fiecare are adâncimea `20`, iar înălțimile sunt între `20` și `28`. Baza lor e la `29` (intră `1` mm în raft). Prima carte e la `10` mm de capătul din stânga (`Align (L)`, apoi `săgețile`), iar cărțile sunt lipite. Cu `Ruler` verifici că toate încap în cei `100` mm ai raftului.  
+- [ ] **Treapta 2 — Ghiveciul cu floare.** Pe raft, în dreapta cărților, la `10` mm de ele: un `Cylinder` `20 · 20 · 12` (ghiveciul), o tulpină `Cylinder` `3 · 3 · 14` și o floare, o `Sphere` `10 · 10 · 10`. Toate trei se suprapun puțin (`1` mm). Din `Front` verifici că ghiveciul și floarea sunt sub `40` mm înălțime peste raft.  
+- [ ] **Treapta 3 — Etajul doi.** Pe spatele de `50` pui un al doilea `Box` `100 · 5 · 60`, la `49` (intră `1` mm). Apoi un al doilea raft `Box` `100 · 30 · 5`, la `70`, aliniat cu `L`, ca primul. Dedesubt, `2` console `Wedge` `5 · 25 · 26`, la `45`, cu unghiul drept sus, ca la primul raft. Din `Right` verifici că nimic de pe raftul de jos nu atinge raftul de sus.  
+- [ ] **Treapta 4 — Lampa de birou.** Pe raftul de sus, în dreapta: baza `Cylinder` `18 · 18 · 3`, un stâlp `Cylinder` `3 · 3 · 20` și un abajur `Cone` `16 · 16 · 10`, fiecare intrat `1` mm în cel de dedesubt. Nu o copiezi din alt proiect.  
+- [ ] **Treapta 5 — Cuierul.** În proiectul `Prenume_Nume_T2_L01`: `3` cârlige `Cylinder` `10 · 10 · 25` pe șină, la `5` (intră `1` mm). Primul stă între gaură și prima fantă, apoi `Ctrl+D` cu aceeași mutare de `30` mm, ca să cadă între fante: la `15`, `45` și `75` mm. Pe unul pui o pălărie: un `Cylinder` `24 · 24 · 3` la `29` și deasupra un `Cylinder` `14 · 14 · 8` la `31`.  
+- [ ] **Treapta 6 — Camera gata.** Verifici din `Front` și din `Top`, în ambele proiecte, că nimic nu plutește și nimic nu se atinge din greșeală. Cu `Ruler` confirmi că cele `5` cărți au împreună `50` mm și că cârligele sunt la `30` mm unul de altul.  
+
+**Verificare (cu un coleg):** colegul numără în cel mult **30 de secunde**: cărțile, ghiveciul cu floare, lampa și cârligele, apoi arată **cel mai înalt** obiect de pe rafturi și spune dacă vreo piesă plutește.  
 
 ## Recapitulare rapidă
 1. Mărimile se scriu **cu numere**, în pătrățelul alb  
@@ -211,18 +218,15 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 4. O **consolă** în formă de triunghi sprijină raftul  
 5. Al doilea obiect (Raftul cu console) exersează aceleași trucuri pe alte piese  
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** Box 120·40·6 − 2 găuri Ø6 − 3 fante 10·20 (la 30 mm) → Group · Box 100·5·50 + Box 100·30·5 (la 25) + 2 Wedge 5·25·26 → Group  
-**Complet:** + Text · Ruler · Color
-
 **Quiz scurt:**  
 - De ce fantele trebuie să fie la aceeași distanță?  
 - Cât e distanța de la capătul șinei până la prima fantă?  
 - De ce o consolă are formă de triunghi?
 
-## Temă
-Opțional: desenezi pe foaie un raft pentru camera ta și scrii trei mărimi (lungime, adâncime, înălțime) și câte console are nevoie (fără Tinkercad).
+## Temă (opțional)
+- Dacă ai doar Minim: acasă termini în același proiect ce nu ai apucat (fantele, găurile sau consolele).  
+- Dacă ai Complet: într-un proiect nou `T2_L01_C`, un **raft pentru camera ta**, cu lungime, adâncime și înălțime la alegere și cu câte console are nevoie.  
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T2_L01_D`, un **birou al tău**: un raft cu cărți, o lampă și un cuier cu `2` cârlige, toate făcute de tine, cu mărimi la alegere.
 
 ## Ce urmează
 În **Lecția 2** faci un **suport pentru căști** și un **suport de agățat de birou**, cu Align pe toate cele trei direcții.

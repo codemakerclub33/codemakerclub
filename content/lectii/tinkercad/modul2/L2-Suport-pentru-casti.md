@@ -28,10 +28,11 @@ Un obiect înalt se **răstoarnă** dacă are baza prea mică. Azi înveți regu
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap lecția trecută · privim obiecte reale: ce părți au? |
-| 10–50 | **Obiectul 1** — Suportul pentru căști (Minim) |
-| 50–85 | **Obiectul 2** — Suportul de agățat de birou (Minim) |
-| 85–110 | **Complet** pe primul obiect |
-| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme sau ca temă |
+| 10–48 | **Obiectul 1** — Suportul pentru căști (Minim) |
+| 48–70 | **Obiectul 2** — Suportul de agățat de birou (Minim) |
+| 70–85 | **Complet** pe primul obiect |
+| 85–110 | **Bonus ★★★** — căștile pe suport, pe trepte (fiecare merge cât apucă) |
+| 110–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -199,11 +200,17 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Suport dublu de birou
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Căștile pe suport
+*Doar dacă ai terminat Complet. Lucrezi pe trepte, de la ușor la greu. Treptele 1–5 sunt în proiectul `Prenume_Nume_T2_L02` (suportul pentru căști), treapta 6 în `Prenume_Nume_T2_L02_B` (suportul de birou). Snap Grid: **5.0 mm**. Fiecare piesă o faci de la zero, nu o copiezi din altă piesă. Treapta următoare o începi după ce ai încheiat-o pe cea dinainte.*
 
-- [ ] Schimbă culorile și mărește buza cârligului la `30` mm înălțime  
-- [ ] **Provocarea (obiect mai complicat):** un **suport dublu** pentru căști: baza `100 × 60 × 8`, stâlp `Ø14 × 150`, **2 bare** (una la `150`, alta la `100` mm de bază), a doua bară **rotită cu `90°`** față de prima. Cu <span style="color:#E65722;font-weight:700">Ruler</span> confirmi cel puțin **`40` mm** pe verticală între bare, iar din Front căștile stau pe ambele bare fără să se atingă.  
+- [ ] **Treapta 1 — Pernuțele căștilor.** Lângă suport, pe plan: un `Cylinder` `30 · 30 · 10`, rotit cu `90°`, ca să se vadă cerc din `Front`. Apoi `Ctrl+D` și muți copia cu `40` mm (`8` apăsări pe săgeată), pe direcția față–spate. Cu `Ruler` confirmi **`30` mm** între pernuțe, pe interior: stâlpul de `14` mm încape între ele.  
+- [ ] **Treapta 2 — Banda.** Un `Box` `10 · 50 · 6`, ridicat cu conul negru la `28`, ca să intre `2` mm în vârful pernuțelor. Selectezi banda și cele două pernuțe, `L`, mijloc pe stânga–dreapta și mijloc pe față–spate, apoi `Ctrl+G`. Căștile sunt gata.  
+- [ ] **Treapta 3 — Căștile pe bară.** Selectezi căștile și suportul → `L` → mijloc pe stânga–dreapta și mijloc pe față–spate. Apoi ridici căștile cu conul negru la `122`: banda stă pe bara de sus, iar pernuțele atârnă de o parte și de alta a stâlpului. Din `Front` și `Right` verifici că nu ating stâlpul (rămân `8` mm între pernuțe și stâlp) și nici baza.  
+- [ ] **Treapta 4 — A doua bară și căștile mici.** O bară nouă `40 · 14 · 12`, aliniată cu suportul pe mijloc, la `80` mm de bază. Pe ea, o pereche mai mică: pernuțe `Ø24` și grosime `8`, la `22` mm între ele pe interior (centrele la `30` mm), și o bandă `8 · 38 · 6`. Banda stă pe bară, iar pernuțele ating banda. Cu `Ruler` confirmi cel puțin `40` mm pe verticală între cele două bare.  
+- [ ] **Treapta 5 — Cârligul pentru cablu.** Pe stâlp, la `50` mm de bază, spre față: un `Box` `10 · 14 · 4` care intră în stâlp, și la capătul lui un `Box` `10 · 4 · 10`, în sus. Cârligul nu atinge căștile.  
+- [ ] **Treapta 6 — Căștile pe suportul de birou.** În proiectul `Prenume_Nume_T2_L02_B`, pe cârligul `40 · 30 · 6`: două pernuțe mici `Cylinder` `14 · 14 · 6`, cu centrele la `10` mm de mijloc, spre fiecare parte, și la `11` mm în afara spatelui suportului, cu baza la `5`, și între ele o bandă `Box` `8 · 4 · 4`, la `8`. Nu ating buza cârligului. Pernuțele rămân la `1` mm de ea.  
+
+**Verificare (cu un coleg):** colegul numără în cel mult **30 de secunde**: cele `3` perechi de căști, cele două bare și cârligul de cablu. Apoi arată perechea cea mai mare și spune dacă vreo piesă plutește sau iese din bază.  
 
 ## Recapitulare rapidă
 1. Obiectul înalt: **baza mai lată** decât tot ce e deasupra  
@@ -212,18 +219,15 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 4. <span style="color:#DC143C;font-weight:700">Ctrl+G</span> la sfârșit, nu la început
 5. Al doilea obiect (Suportul de agățat de birou) exersează aceeași idee pe alte mărimi
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** Cylinder 70·70·8 → Cylinder 14·14·150 → <span style="color:#E65722;font-weight:700">L</span> (centru) → Group → Box 60·14·12 → <span style="color:#E65722;font-weight:700">L</span> (centru + sus) → Group  
-**Complet:** + Sphere pe capete · Ruler · Color
-
 **Quiz scurt:**  
 - De ce baza e mai lată decât stâlpul?  
 - Bara are 60 mm lungime — cât iese de fiecare parte a stâlpului?  
 - Ce faci dacă bara iese mai mult decât baza?
 
-## Temă
-Opțional: desenezi pe foaie un suport pentru **telefon** sau pentru **altceva** de agățat și scrii mărimile pentru bază, stâlp și braț (fără Tinkercad). Îl facem la L10, dacă îl alegi.
+## Temă (opțional)
+- Dacă ai doar Minim: acasă termini în același proiect ce nu ai apucat.  
+- Dacă ai Complet: într-un proiect nou `T2_L02_C`, un suport pentru **telefon** sau pentru **altceva** de agățat, cu bază, stâlp și braț.  
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T2_L02_D`, o pereche de **căști** sau de **ochelari**, făcută de tine, cu un suport pe măsura ei.
 
 ## Ce urmează
 În **Lecția 3** faci o **cutie cu capac** și o **cutie rotundă cu capac**, cu **joc** între piese.

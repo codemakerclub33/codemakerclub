@@ -26,9 +26,11 @@ Proiectul de azi. Omul meu de zăpadă.
 
 Minim înseamnă: trei sfere de patruzeci, treizeci și douăzeci, baza pe plan, suprapuse puțin, și nasul din Cone rotit nouăzeci de grade, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus pălărie, ochi, nasturi înfipți și culori, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg spune e un om de zăpadă, iar din Front nu se vede gol între sfere.
 
-Bonus. Schimbi culorile și mărești pălăria cu doi milimetri. Provocarea, Omul cu accesorii: adaugi un fular din Torus, două brațe din cilindri rotiți cu cel puțin patruzeci și cinci de grade și un al doilea om, mai mic, doar din sfere. Nimic nu plutește, verificat din Front. Un coleg recunoaște patru accesorii în cel mult treizeci de secunde.
+Bonus. Lucrezi în același proiect și construiești o scenă de iarnă, pe trepte, de la ușor la greu. Prima treaptă: un fular din cilindru turtit, puțin înclinat, în jurul gâtului, și doi cilindri subțiri ca brațe, rotiți în unghiuri diferite și înfipți în corp. A doua: un pom de iarnă, din trunchi și cel puțin trei conuri suprapuse, mai înalt decât omul. A treia: un al doilea om de zăpadă, cu aceleași proporții ca omul mare, dar la jumătate de mărime. A patra: o sanie pentru omul mic, din două tălpi, o scândură și o bară din cilindru culcat, iar al doilea om de zăpadă stă pe ea. A cincea: omul mare trage sania, cu o sfoară din cilindru foarte subțire, rotit într-un unghi, care leagă mâna lui de bara săniei. A șasea: o tavă pe care stau toate obiectele, cu cel puțin cinci milimetri spațiu între ele, în afară de sfoară. Un coleg numără obiectele, cu tot cu sanie și sfoară, în cel mult treizeci de secunde și arată cel mai înalt obiect.
 
 Recapitulare. Control și D face o copie, pe care apoi o muți. Shift scalează proporțional. Săgeata curbă de pe marginea piesei rotește, din douăzeci și doi virgulă cinci grade în douăzeci și doi virgulă cinci grade. Conul negru ridică și coboară piesa.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă pălăria, ochii, nasturii și culorile. Dacă ai Complet, construiești acasă, într-un proiect nou, un om de zăpadă cu proporții noi, de exemplu mai înalt și mai subțire, din aceleași forme. Dacă ai terminat și Bonusul, opțional, acasă, într-un proiect nou, un animal de iarnă, urs polar sau pinguin, făcut doar din sfere, conuri și cilindri.
 
 Ce urmează. În lecția trei faci un fluture: copiezi o aripă, o oglindești cu M și o aliniezi cu L.
 

@@ -26,9 +26,11 @@ Proiectul de azi. Cana mea.
 
 Minim înseamnă: Cylinder de patruzeci pe patruzeci pe patruzeci și cinci, Hole de treizeci și doi la cinci milimetri, care iese deasupra cănii, Group și fund de cinci milimetri, verificat din Front, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus toartă, culori și model pe cană, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când cana este goală sus și închisă jos, iar din Front se vede un fund de cinci milimetri.
 
-Bonus. Schimbi mărimea toartei și culorile. Provocarea, Cana cu farfurioară și capac: adaugi o farfurioară, un Cylinder de șaptezeci pe șaptezeci pe trei, pe care stă cana, ridicată la doi milimetri, deci intră un milimetru în farfurioară, și un capac separat, un Cylinder de patruzeci pe patruzeci pe patru, care nu este grupat cu cana. Din Front nu este niciun gol între cană și farfurioară.
+Bonus. Lucrezi în același proiect. Cana ta nu stă singură: pregătești o masă de ceai, pe trepte, de la ușor la greu. Prima treaptă: o tăviță, un Box de o sută cincizeci pe optzeci pe trei, pe care stă cana, ridicată la doi milimetri, fără gol între cană și tăviță. A doua: un capac separat, un disc cu un buton sferic, care stă pe cană și nu este grupat cu ea. A treia: lingurița, un căuș din Half Sphere și un mâner din Box subțire, pe tăviță, lângă cană. A patra: trei cuburi de zahăr, la distanțe egale, făcute cu Control și D repetat. A cincea: ceașca, o a doua cană, făcută de la zero, cu altă formă, dintr-un Half Sphere rotit o sută optzeci de grade, cu un Hole mai mic, care iese deasupra marginii, și cu o toartă mică. A șasea: ceainicul, un obiect nou, lângă tăviță: o sferă goală, un cioc dintr-un con culcat, cu un canal Hole prin el, o toartă din Torus și un capac separat. Un coleg numără în treizeci de secunde: tăvița, capacul, lingurița, zahărul, ceașca și ceainicul. Apoi verifică din Front că nimic nu plutește și că ambele căni sunt goale.
 
 Recapitulare. Cavitatea este un Hole mai îngust, care începe mai sus de plan, pentru fund, și iese deasupra, ca să fie deschis sus. Fundul și peretele nu trebuie să fie prea subțiri. Toarta este un Torus rotit nouăzeci de grade, în perete, nu în gol.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă toarta, culorile și modelul. Dacă ai Complet, faci acasă, într-un proiect nou, o vază cu gât îngust. Dacă ai terminat și Bonusul, opțional, acasă, într-un proiect nou, o cutie goală cu capac separat.
 
 Ce urmează. În lecția zece îți faci insula în miniatură, cu piese din toate lecțiile.
 

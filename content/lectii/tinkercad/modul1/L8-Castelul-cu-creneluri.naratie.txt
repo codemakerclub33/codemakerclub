@@ -24,9 +24,11 @@ Proiectul de azi. Castelul meu.
 
 Minim înseamnă: zid, șapte creneluri egale făcute cu Control și D repetat și un turn, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus poartă, al doilea turn sau zid, steag și culori, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg spune că crenelurile par făcute cu rigla.
 
-Bonus. Schimbi mărimea turnului și culorile. Provocarea, Castelul cu patru ziduri: construiești patru ziduri care formează un pătrat, cu patru turnuri, câte unul la fiecare colț, și o poartă. Toate crenelurile sunt la aceeași distanță, iar nimic nu plutește. Un coleg numără patru turnuri și găsește poarta în cel mult douăzeci de secunde.
+Bonus. Lucrezi în același proiect. Castelul tău devine o fortăreață adevărată, pe trepte, de la ușor la greu. Prima treaptă: poarta cu arc. Partea de jos o scurtezi, iar deasupra pui un cilindru culcat Hole, care face arcul și nu trece mai sus de optsprezece milimetri, ca să nu taie crenelurile. A doua: patru deschideri înguste în zid, la șaisprezece milimetri una de alta, cu poarta la mijloc, făcute cu Control și D repetat. A treia: scara spre poartă, patru trepte făcute cu Control și D repetat, în care mutarea include și ridicarea: fiecare treaptă este cu trei milimetri mai sus și cu șase milimetri mai departe decât cea de dinainte. A patra: al doilea zid, perpendicular pe primul, cu șapte creneluri la aceeași distanță, care se întâlnește la colț cu un turn. A cincea: cele patru ziduri formează un pătrat, cu câte un turn la fiecare colț. A șasea: șanțul și podul. Castelul stă pe o platformă, cu un șanț făcut din patru fâșii Hole, în jurul zidurilor, iar în dreptul porții este un pod care atinge poarta și malul. Un coleg numără în treizeci de secunde: arcul porții, deschiderile, treptele, cele patru turnuri și podul. Apoi verifică din Top distanțele crenelurilor și că nimic nu plutește.
 
 Recapitulare. Control și D, muți copia o dată, apoi Control și D din nou: piese la aceeași distanță. Hole prin zid și Group fac poarta. Dacă greșești, Control și Z și refaci prima mutare.
+
+Tema, opțional. Dacă ai doar Minim, adaugi acasă poarta, al doilea turn sau zid, steagul și culorile. Dacă ai Complet, faci acasă, într-un proiect nou, un gard cu stâlpi repetați cu Control și D. Dacă ai terminat și Bonusul, opțional, acasă, într-un proiect nou, un pod cu stâlpi și balustradă, făcute cu Control și D repetat.
 
 Ce urmează. În lecția nouă faci o cană goală pe dinăuntru, cu toartă.
 

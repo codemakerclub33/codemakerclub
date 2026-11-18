@@ -217,18 +217,13 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 4. Grupul temporar centrează balamaua fără s-o lipească  
 5. <span style="color:#DC143C;font-weight:700">Ctrl+D</span> cu rotire de `180°` dă canatul din dreapta  
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** placă 120·70·4 + zid 80·8·30 − poartă 20·12·22 + 2 turnuri 20·20·40 · ax 4·4·24 prin butuc 10·10·18 − Hole 5 · pod 18·24·2 · poartă: placă 80·30·4 + 2 stâlpi 12·12·36 + 2 axe 4·4·30 (la ±20) · 2 canaturi 19·3·24 cu butuc 8·8·24 − Hole 5  
-**Complet:** + 3 creneluri 6·12·8 la 10 mm · Ruler · culori
-
 **Quiz scurt:**  
 - De ce gaura butucului e mai mare decât axul?  
 - Cu cât e mai mare gaura (`5`) decât axul (`4`), pe fiecare parte?  
 - De ce rotești canatul din dreapta cu `180°`?
 
 ## Temă
-Opțional: desenezi pe foaie un **pod mobil** văzut din lateral și marchezi axul, butucul și podul.
+Opțional, acasă, într-un proiect nou `T3_L08_B`: un **pod mobil**, cu ax, butuc și pod, văzut din lateral.
 
 ## Ce urmează
 În **Lecția 9** faci un **carusel** și o **roată panoramică**: un rotor care se învârte pe o axă, cu joc.

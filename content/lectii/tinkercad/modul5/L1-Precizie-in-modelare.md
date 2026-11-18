@@ -9,8 +9,8 @@
 ---
 
 ## Obiectiv
-La finalul orei ai o **plăcuță cu 2 găuri**, făcută cu numere, și o **fișă de cote** pe foaie.  
-**Minim:** placă **60 × 30 × 5** · 2 găuri **Ø6** cu centrele la **10 mm** de capete (distanța dintre ele: **40 mm**) · verificat cu **Ruler** *(marginile găurilor la 7–13 și 47–53)* · fișa de cote completată.  
+La finalul orei ai o **plăcuță cu 2 găuri**, făcută cu numere, și o **fișă de cote** verificată cu Ruler.  
+**Minim:** placă **60 × 30 × 5** · 2 găuri **Ø6** cu centrele la **10 mm** de capete (distanța dintre ele: **40 mm**) · verificat cu **Ruler** *(marginile găurilor la 7–13 și 47–53)* · fișa de cote verificată.  
 **Complet:** Minim + o **fantă** **20·6·7** exact la mijloc + verificarea tuturor cotelor cu Ruler.
 
 ## De ce contează
@@ -25,7 +25,7 @@ Astăzi înveți trei obiceiuri: **tastezi** mărimile, folosești **Snap Grid**
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Ce înseamnă „cotă”? Unde e Ruler? Citim un desen tehnic simplu |
+| 0–15 | Ce înseamnă „cotă”? Unde e Ruler? Citim un plan tehnic simplu |
 | 15–50 | Pas cu pas: placa · găurile · verificarea cu Ruler |
 | 50–100 | Minim → Complet (fanta) → fișa de cote |
 | 100–120 | Verificare în perechi, recap, salvare |
@@ -93,7 +93,7 @@ Astăzi înveți trei obiceiuri: **tastezi** mărimile, folosești **Snap Grid**
 - [ ] Fanta (**20 · 6 · 7**) începe la **20 mm** și se termină la **40 mm**  
 - [ ] Fanta nu atinge găurile  
 
-### 7) Fișa de cote *(pe foaie)*
+### 7) Fișa de cote *(o verifici cu Ruler)*
 
 | Element | Mărime | Unde e |
 |---------|--------|--------|
@@ -104,7 +104,7 @@ Astăzi înveți trei obiceiuri: **tastezi** mărimile, folosești **Snap Grid**
 | Fantă *(Complet)* | 20 · 6 | începe la 20 |
 
 **Gata când:**  
-- [ ] Fișa de cote e completată pe foaie  
+- [ ] Ai verificat cu Ruler fiecare cotă din fișă  
 
 ---
 
@@ -133,7 +133,7 @@ Astăzi înveți trei obiceiuri: **tastezi** mărimile, folosești **Snap Grid**
 - [ ] Prima gaură la 10 mm de capăt  
 - [ ] A doua gaură cu **Ctrl+D**, la 40 mm distanță  
 - [ ] **Ctrl+G** · Ruler confirmă marginile găurilor (7–13 și 47–53), deci centrele 10 și 50  
-- [ ] Fișa de cote completată  
+- [ ] Fișa de cote verificată  
 
 ### Pasul 2 — Complet
 - [ ] Fantă centrată  
@@ -143,7 +143,7 @@ Astăzi înveți trei obiceiuri: **tastezi** mărimile, folosești **Snap Grid**
 ---
 
 ## Bonus (extra — după Complet)
-- [ ] Două găuri **Ø4** în plus, la mijloc (x = 30), cu centrele la **6 mm** de marginea din față și de cea din spate — calculează întâi pe foaie  
+- [ ] Două găuri **Ø4** în plus, la mijloc (x = 30), cu centrele la **6 mm** de marginea din față și de cea din spate — calculează întâi în minte  
 - [ ] Un text cu numele tău pe placă *(Hole înalt 2 mm, ridicat la 4 mm: adâncime 1 mm)*  
 - [ ] Fă o a doua placă **70·30·5** cu aceleași găuri la 10 mm de capete — unde ajunge a doua gaură?
 
@@ -153,15 +153,10 @@ Astăzi înveți trei obiceiuri: **tastezi** mărimile, folosești **Snap Grid**
 3. Hole + **Ctrl+G** = decupaj  
 4. **Ruler** verifică ce ai desenat *(arată marginile; centrul e la mijloc)*
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** Box 60·30·5 → Cylinder Hole Ø6·7 → L (mijloc, stânga) → +7 mm → −1 mm jos → Ctrl+D +40 → Group → Ruler (margini 7–13, 47–53)  
-**Complet:** fantă 20·6·7 la mijloc
-
 **Quiz scurt:**  
 - La ce distanță de capăt e centrul unei găuri Ø6 a cărei margine e la 7 mm? *(10)*  
 - De ce măsurăm găurile de la centru?  
 - Ce faci dacă piesa nu se potrivește: tragi sau tastezi?
 
 ## Temă
-Opțional: măsoară cu o riglă o piesă de acasă (un capac, un cartonaș) și scrie fișa ei de cote pe foaie.
+Opțional: măsoară cu o riglă o piesă de acasă (un capac, un cartonaș) și modeleaz-o într-un proiect nou `T5_L01_B`, cu cotele ei.

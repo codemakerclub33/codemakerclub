@@ -11,7 +11,7 @@
 ## Obiectiv
 La finalul orei ai un **șir de 5 cuburi** egale, la distanțe egale.  
 **Minim (cu Codeblocks):** un program cu o **buclă** care se repetă de **5 ori**: face un cub **10·10·10** și îl mută **15 mm** spre dreapta · apeși **Run** și apare șirul.  
-**Minim (fără Codeblocks):** același șir făcut cu **Ctrl+D** și mutarea de 15 mm + 2 propoziții pe foaie despre ce ar face o buclă.  
+**Minim (fără Codeblocks):** același șir făcut cu **Ctrl+D** și mutarea de 15 mm + 2 propoziții spuse colegului despre ce ar face o buclă.  
 **Complet:** Minim + două **variabile** (`n` = câte cuburi, `pas` = cât de departe) + o **scară**: fiecare cub cu **5 mm mai înalt** decât cel dinainte.
 
 ## De ce contează
@@ -28,7 +28,7 @@ Dacă schimbi un număr, schimbi tot obiectul: așa gândesc inginerii care fac 
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Ce e un program? Exemplu pe foaie: „Repetă de 5 ori: fă un cub, mută-te 15 la dreapta” |
+| 0–15 | Ce e un program? Exemplu: „Repetă de 5 ori: fă un cub, mută-te 15 la dreapta” |
 | 15–50 | Pas cu pas: un cub din cod · bucla |
 | 50–100 | Minim → Complet (variabile, scara) |
 | 100–120 | Verificare, recap, salvare |
@@ -83,7 +83,7 @@ Dacă schimbi un număr, schimbi tot obiectul: așa gândesc inginerii care fac 
 2. Cubul din buclă are înălțimea **h**  
 3. La sfârșitul buclei: **h devine h + 5**  
 4. **Run**: cuburile cresc ca niște trepte  
-5. Pe foaie: cât e înălțimea ultimului cub cu n = 5? *(10, 15, 20, 25, **30**)*
+5. Calculezi: cât e înălțimea ultimului cub cu n = 5? *(10, 15, 20, 25, **30**)*
 
 **Gata când:**  
 - [ ] Cuburile cresc ca niște trepte (**h** crește cu 5)  
@@ -96,7 +96,7 @@ Dacă schimbi un număr, schimbi tot obiectul: așa gândesc inginerii care fac 
 1. **Box** **10 · 10 · 10**  
 2. Snap Grid **1.0 mm** · **Ctrl+D** → muți copia **15 mm spre dreapta** *(15 apăsări de săgeată la Snap 1.0)* → **Ctrl+D** de încă 3 ori *(fiecare Ctrl+D repetă aceeași mutare)* → **5 cuburi**  
 3. Din **Top**: 5 cuburi egale, la 5 mm distanță  
-4. Pe foaie, 2 propoziții: *„Dacă aș avea o buclă, aș scrie …”* și *„Cu o variabilă n aș putea …”*  
+4. Spui colegului 2 propoziții: *„Dacă aș avea o buclă, aș scrie …”* și *„Cu o variabilă n aș putea …”*  
 5. **Complet fără cod:** al doilea cub 15 mm înălțime *(tastezi înălțimea)*, al treilea 20 etc., apoi **L** → jos *(toate cuburile pe plan)*
 
 ---
@@ -138,7 +138,7 @@ Dacă schimbi un număr, schimbi tot obiectul: așa gândesc inginerii care fac 
 ## Bonus (extra — după Complet)
 - [ ] Șirul pe **verticală** *(mutare pe Z)* — un turn de 5 cuburi  
 - [ ] Două bucle, una într-alta: un **zid** de 5 × 3 cuburi  
-- [ ] Pe foaie: ce obiect din oraș poți construi cu o buclă? *(garduri, ferestre, scări)*
+- [ ] Spune colegului: ce obiect din oraș poți construi cu o buclă? *(garduri, ferestre, scări)*
 
 ## Recapitulare rapidă
 1. **Buclă** = repetă aceleași comenzi  
@@ -146,15 +146,10 @@ Dacă schimbi un număr, schimbi tot obiectul: așa gândesc inginerii care fac 
 3. Ordinea contează: întâi creezi, apoi muți  
 4. Fără cod: **Ctrl+D** face același lucru
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** repetă 5 ori: cub 10·10·10 → mută X +15 → Run  
-**Complet:** n, pas, h: repetă n ori: cub înălțime h → mută +pas → h = h + 5
-
 **Quiz scurt:**  
 - Câte cuburi face o buclă care se repetă de 8 ori?  
 - Ce se întâmplă dacă lipsește blocul de mutare?  
 - La ce folosește o variabilă?
 
 ## Temă
-Opțional: scrie pe foaie un program (în cuvinte) care desenează un gard cu 6 stâlpi.
+Opțional, acasă, într-un proiect nou `T5_L07_B`: un gard cu 6 stâlpi, făcut cu `Ctrl+D`.

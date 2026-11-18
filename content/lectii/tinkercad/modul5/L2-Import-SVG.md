@@ -140,15 +140,10 @@ Multe obiecte reale (logo-uri, ștampile, brelocuri) pornesc de la un **desen pl
 3. **Shift** la scalare păstrează forma  
 4. Centrat = **L**
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** Import SVG → 20 mm înălțime (Shift) → 2 mm grosime → placă 50·30·3 → L (mijloc) → +3 mm  
-**Complet:** Hole Ø4 (+5 mm) cu placa · Text
-
 **Quiz scurt:**  
 - Ce e un SVG?  
 - De ce alegem forme simple?  
 - Ce faci dacă simbolul e prea mare?
 
 ## Temă
-Opțional: desenează pe foaie un simbol simplu (fără detalii mici) pe care l-ai vrea pe un breloc. Spune de ce e potrivit pentru 3D.
+Opțional: alege un alt simbol simplu (fără detalii mici) pe care îl importi ca breloc. Spune de ce e potrivit pentru 3D.

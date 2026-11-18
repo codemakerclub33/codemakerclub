@@ -150,15 +150,10 @@ Un oraș are adesea un râu. Podul leagă cele două maluri. Aici folosești **H
 2. Apa e **mai jos** decât malurile  
 3. Podul are **4 mm** pe fiecare mal
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** Hole 67·12·2 (+3) + zona de parc → Group → apă 67·12·0,5 (+3) → pod 8·20·2 (+4) → 2 parapete 1·20·1,5 (+6, 7 mm) → Group  
-**Complet:** 4 stâlpi · barcă
-
 **Quiz scurt:**  
 - Cu ce obiecte grupezi gaura râului?  
 - Cât de lung este podul și de ce?  
 - Cât de lat e râul în realitate? *(6 m)*
 
 ## Temă
-Opțional: pe foaie, desenezi cum ar arăta orașul tău dacă râul ar trece prin centru. Unde ai pune podurile?
+Opțional, acasă, într-un proiect nou `T4_L06_B`: o placă cu un râu care trece prin centru și două poduri.

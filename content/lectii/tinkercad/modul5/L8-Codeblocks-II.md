@@ -28,7 +28,7 @@ Așa se fac produsele care vin în mai multe mărimi: vase, suporturi, turnuri.
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recap L7 · ce e un parametru? Desen pe foaie al turnului |
+| 0–15 | Recap L7 · ce e un parametru? Privim planul turnului |
 | 15–55 | Pas cu pas: etajele · variabile · rularea cu 5 etaje |
 | 55–100 | Minim → Complet (a doua variantă, al doilea parametru) |
 | 100–120 | Compararea celor două turnuri, recap, salvare |
@@ -37,7 +37,7 @@ Așa se fac produsele care vin în mai multe mărimi: vase, suporturi, turnuri.
 
 ---
 
-## Planul turnului *(pe foaie, înainte de cod)*
+## Planul turnului *(înainte de cod)*
 
 | Etaj | Lățime | Înălțime etaj | Începe la înălțimea |
 |------|--------|----------------|---------------------|
@@ -92,7 +92,7 @@ La 8 etaje: ultimul are lățimea 20 − 14 = **6** și începe la **42**.
 1. Variabilă nouă **L** = 20 la început *(lățimea de bază)*  
 2. **lat** pornește de la **L**  
 3. Rulezi cu **L = 30** și **etaje = 8**: atenție, 8 etaje cu pasul de 2 ajung la lățime 16 — turnul e mai gros  
-4. Pe foaie, 3 propoziții:  
+4. Spui colegului 3 propoziții:  
    - „Dacă schimb **etaje**, se schimbă …”  
    - „Dacă schimb **L**, se schimbă …”  
    - „Un parametru bun este … deoarece …”
@@ -111,7 +111,7 @@ La 8 etaje: ultimul are lățimea 20 − 14 = **6** și începe la **42**.
 4. **Box** **14 · 14 · 6** → centrat · ridicat la **18 mm**  
 5. **Box** **12 · 12 · 6** → centrat · ridicat la **24 mm** · **Ctrl+G** → **Turn_5**  
 6. A doua variantă: **Ctrl+D** pe turn, muți copia **30 mm** într-o parte; apoi adaugi etajele 6, 7 și 8 *(10·10·6 la 30, 8·8·6 la 36, 6·6·6 la 42; fiecare cu **L** mijloc pe ambele axe față de turn)* → **Ctrl+G** → **Turn_8**  
-7. Pe foaie: ce parametru ai schimbat, de fapt? *(numărul de etaje)*
+7. Spune colegului: ce parametru ai schimbat, de fapt? *(numărul de etaje)*
 
 ---
 
@@ -137,7 +137,7 @@ La 8 etaje: ultimul are lățimea 20 − 14 = **6** și începe la **42**.
 | **Complet** | + al doilea parametru L + 3 propoziții |
 
 ### Pasul 1 — Minim
-- [ ] Planul turnului pe foaie  
+- [ ] Planul turnului citit și înțeles  
 - [ ] Turn cu 5 etaje  
 - [ ] Turn cu 8 etaje  
 - [ ] Salvat `T5_L08`  
@@ -160,11 +160,6 @@ La 8 etaje: ultimul are lățimea 20 − 14 = **6** și începe la **42**.
 2. Bucla pune etajele, variabilele le schimbă mărimea  
 3. Două rulări = **două variante** din aceeași idee  
 4. Fără cod, aceeași idee se face cu Box-uri
-
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** etaje = 5; lat = 20; z = 0 → repetă etaje ori: box lat·lat·6 la z → lat = lat − 2 → z = z + 6 → Run  
-**Complet:** parametrul L · rulare L = 30
 
 **Quiz scurt:**  
 - Cât de înalt e un turn cu 8 etaje? *(48)*  

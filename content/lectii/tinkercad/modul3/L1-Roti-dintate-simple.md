@@ -246,18 +246,13 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 4. Pivotul e mai subțire decât gaura = **joc**  
 5. Roata cu **jumătate** din dinți face **dublul** de ture  
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** Cylinder 40·40·6 + 4 bare 56·6·6 (45°) − Hole 8 → Group → copie + 22,5° + 50 mm → pivoturi 6·6·16 → placă 120·64·4 → roți +5 mm · Cylinder 60·60·6 + 8 bare 68·4·6 (22,5°) − Hole 8 și Cylinder 30·30·6 + 4 bare 38·4·6 (45°) − Hole 8, rotită 22,5°, la 50 mm → pivoturi → placă 110·76·4 → roți +5 mm  
-**Complet:** + roata 3 la 100 mm · Ruler · culori
-
 **Quiz scurt:**  
 - De ce a doua roată se rotește cu 22,5°?  
 - Dacă prima roată se învârte spre dreapta, încotro se învârte a doua?  
 - Roata mare are 16 dinți, cea mică 8. Câte ture face roata mică când cea mare face una?
 
 ## Temă
-Opțional: desenezi pe foaie un șir de **4** roți. Marchezi cu săgeți sensul fiecăreia (prima spre dreapta).
+Opțional, acasă, într-un proiect nou `T3_L01_B`: un șir de **4** roți dințate, la distanța potrivită ca dinții să se prindă. Prima se învârte spre dreapta; în ce sens se învârte fiecare dintre celelalte?
 
 ## Ce urmează
 În **Lecția 2** faci o mașinuță cu roți și axe și o remorcă pe care o poți cupla de ea.

@@ -6,7 +6,7 @@ Obiectivul. Minim: placa A, de patruzeci pe treizeci pe cinci, cu o gaură cu di
 
 De ce contează. Multe obiecte se țin cu îmbinări. Ideea este simplă: o parte lată trece printr-un loc larg, apoi stă într-unul îngust. Mărimile au joc. Capul de nouă trece prin gaura de zece, iar axul de cinci stă în fanta de cinci virgulă patru.
 
-Pe foaie desenezi placa A de sus. Un cerc mare și, lipită de el, o fantă spre dreapta. Scrii cotele. Întrebare pentru tine: de ce capul trebuie să fie mai mic decât gaura, dar mai mare decât fanta?
+Privești placa A de sus. Un cerc mare și, lipită de el, o fantă spre dreapta. Cotele sunt cele din schemă. Întrebare pentru tine: de ce capul trebuie să fie mai mic decât gaura, dar mai mare decât fanta?
 
 Primul pas pe ecran. Design nou, Snap Grid zero virgulă cinci milimetri. Zecimalele le tastezi cu punct.
 
@@ -14,7 +14,7 @@ Al doilea pas pe ecran. Tragi un Box de patruzeci pe treizeci pe cinci, placa A.
 
 Al treilea pas pe ecran. Tragi un Box de treizeci pe douăzeci pe trei, placa B, în afara plăcii A. Tragi un Cylinder de cinci pe cinci pe șase, axul. Cu L îl aliniezi pe mijloc față spate și pe marginea din stânga. Îl muți șapte virgulă cinci milimetri spre dreapta, deci centrul e la zece, și îl ridici la trei milimetri. Tragi un Cylinder de nouă pe nouă pe doi, capul. Cu L îl centrezi pe ax, pe ambele axe, și îl ridici la nouă milimetri, în vârful axului. Selectezi placa B, axul și capul și apeși Control și G. Din Front vezi placa, axul subțire și capul lat.
 
-Al patrulea pas pe ecran. Verifici pe foaie. Gaura de zece este mai mare decât capul de nouă. Capul este mai mare decât fanta de cinci virgulă patru. Fanta este mai mare decât axul de cinci.
+Al patrulea pas pe ecran. Verifici cu Ruler. Gaura de zece este mai mare decât capul de nouă. Capul este mai mare decât fanta de cinci virgulă patru. Fanta este mai mare decât axul de cinci.
 
 Al cincilea pas pe ecran, pentru Complet. Ridici placa A la trei milimetri, ca să stea pe placa B. Cu L, față de placa B, o aliniezi pe marginea din stânga și pe mijloc față spate. Gaura din A e exact peste bolț. Din Front, axul trece prin A, iar capul e deasupra, cu un milimetru de aer. Apoi muți placa A șapte milimetri spre stânga. Bolțul ajunge în fanta îngustă. Din Top, axul e în fantă, iar capul stă peste margini. E blocat.
 

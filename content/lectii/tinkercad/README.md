@@ -43,4 +43,4 @@ Fiecare lecție se închide cu un **obiect finalizat și salvat**.
 - [modul4/README.md](./modul4/README.md) — City Builder  
 - [modul5/README.md](./modul5/README.md) — Design Pro  
 
-Conținutul lecțiilor: pe scheletul Minim/Complet ca Scratch (Obiectiv → Plan → Pas cu pas → Greșeli → De făcut → Schema pe scurt).
+Conținutul lecțiilor: pe scheletul Minim/Complet ca Scratch (Obiectiv → Plan → Pas cu pas → Greșeli → De făcut).

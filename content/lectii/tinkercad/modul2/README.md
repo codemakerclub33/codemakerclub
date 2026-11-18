@@ -14,7 +14,7 @@
 | 7 | Abajur cu decupaje + lampion | Model prin goluri repetate și rotite | Tub; bară Hole; Ctrl+D + rotire 45°; rând decalat |
 | 8 | Ghiveci cu farfurie + ghiveci pătrat | Două piese împreună | Ghiveci cu scurgere; farfurie mai largă; guler-inel |
 | 9 | Carcasă Arduino Uno + carcasă micro:bit | Măsurare, joc și decupaje | Gol = placă + 1 mm; dop = gol − 1 mm; porturi cu Hole; fante egale |
-| 10 | Obiect util la alegere + piesa pereche | Proiect de modul | Schiță cu mărimi; Hole; piesă repetată; piesă cu joc; prezentare |
+| 10 | Obiect util la alegere + piesa pereche | Proiect de modul | Plan cu mărimi; Hole; piesă repetată; piesă cu joc; prezentare |
 
 **Salvare sugerată:** `Prenume_Nume_T2_L01` … `T2_L10`
 

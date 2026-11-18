@@ -27,8 +27,9 @@ Un proiect propriu arată ce ai reținut. Îți pregătește și **portofoliul**
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Criteriile (tabelul de mai jos) + obiectivul |
-| 10–25 | Planificare: schiță pe hârtie cu elementele insulei |
-| 25–90 | Construcție: Minim → Complet → Bonus |
+| 10–15 | Proiect nou și planul insulei: alegi elementele și unde le pui |
+| 15–60 | Construcție: Minim → Complet |
+| 60–90 | Bonus (doar dacă ai terminat Complet) |
 | 90–110 | Prezentări scurte (~1 minut fiecare; la grupe mari, în perechi) |
 | 110–120 | Formular de păreri |
 
@@ -53,13 +54,14 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 
 ## Pas cu pas
 
-### 1) Proiect nou + schiță
+### 1) Proiect nou + plan
 1. **Create new design** · nume `Prenume_Nume_T1_L10`  
-2. Pe foaie: desenezi o insulă și **4–6 elemente** (ce pui unde)  
+2. Alegi **4–6 elemente** pentru insulă (ce pui unde) și îi spui colegului planul  
 3. Salvare automată — verifici numele
 
-**Încearcă tu — Proiect nou + schiță (5 min)**  
+**Încearcă tu — Proiect nou + plan (5 min)**  
 - [ ] Proiectul e creat și redenumit `Prenume_Nume_T1_L10`  
+- [ ] Ai ales **4–6** elemente și știi unde le pui  
 
 ### 2) Terenul
 1. <span style="color:#1E90FF;font-weight:700">Cylinder</span> plat, **120 × 120 × 6** (cel mai simplu: suprafață plată, elementele se așază ușor)  
@@ -67,7 +69,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 3. Pe plan (dacă plutește → <span style="color:#E65722;font-weight:700">D</span>)  
 *(Un Half Sphere turtit arată mai bine, dar suprafața e curbă — doar dacă vrei să te complici.)*
 
-**Încearcă tu — Terenul (8 min)**  
+**Încearcă tu — Terenul (6 min)**  
 - [ ] Terenul are **120 × 120 × 6**, e colorat și stă pe plan  
 
 ### 3) Refolosire (min. 2 elemente)
@@ -78,7 +80,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 5. Dacă nu ai proiectul vechi, refaci rapid o versiune simplă (Minim din lecția aceea)  
 6. Dacă piesele includ și o bază sau apă (ex. apa de la barcă), le ștergi — nu le vrei pe insulă
 
-**Încearcă tu — Refolosire (min. 2 elemente) (15 min)**  
+**Încearcă tu — Refolosire (min. 2 elemente) (10 min)**  
 - [ ] Ai **cel puțin 2** obiecte din proiectele vechi  
 - [ ] Sunt scalate să încapă și ridicate la **5**  
 
@@ -88,7 +90,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 3. **Potecă:** Box plat, colorat  
 4. Fiecare element **stă pe teren** (nu în aer): baza lui e la **5 mm** (ridici cu <span style="color:#E65722;font-weight:700">conul negru</span>; intră 1 mm în teren). <span style="color:#E65722;font-weight:700">D</span> nu ajută aici — coboară elementul pe plan, adică **în** teren
 
-**Încearcă tu — Elemente noi (15 min)**  
+**Încearcă tu — Elemente noi (10 min)**  
 - [ ] Copacii, stâncile sau poteca stau pe teren, la **5** mm  
 - [ ] Nimic nu plutește  
 
@@ -98,7 +100,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 3. **Culori coerente** (nu toate la întâmplare)  
 4. Ajungi la **6 elemente** (fără să strici ce ai)
 
-**Încearcă tu — Complet (25 min)**  
+**Încearcă tu — Complet (14 min)**  
 - [ ] Ai o piesă cu **Hole + Group**  
 - [ ] Plăcuța cu text e **neoglindită**  
 - [ ] Ai **6 elemente**, cu culori care se potrivesc  
@@ -108,7 +110,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 2. Verifici din <span style="color:#D400D4;font-weight:700">Top</span> și din <span style="color:#D400D4;font-weight:700">Front</span>  
 3. Numele proiectului e corect
 
-**Încearcă tu — Verificare finală (10 min)**  
+**Încearcă tu — Verificare finală (5 min)**  
 - [ ] Am parcurs toate punctele din verificare  
 - [ ] Am corectat ce nu se potrivea
 
@@ -155,23 +157,26 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 ---
 
 ## Bonus ★★★ — Provocare: Insula cu pod și vapor
-*Doar dacă ai terminat Complet.*
+*Doar dacă ai terminat Complet. Lucrezi în același proiect, pe trepte, de la ușor la greu. Treapta următoare o începi doar după ce ai încheiat-o pe cea dinainte. Piesele sunt toate făcute de la zero, nu copiate.*
 
-- [ ] Adaugă un copac în plus și schimbă culorile  
-- [ ] **Provocarea:** adaugi **un pod sau un mal**, **un animal** din forme simple și **un vapor** pe o bucată de apă (Box albastru plat de `2` mm), lângă insulă, în total **cel puțin 9 elemente**, iar nimic nu plutește (verificat din Front și din Top). Prezinți insula în **1 minut**, iar un coleg spune **ce reprezintă fiecare element**, fără întrebări.  
+- [ ] **Treapta 1 — Bradul.** Un copac în plus, dar brad: trunchi `Cylinder` `4 × 4 × 10` la `5` și trei conuri suprapuse (`20 × 20 × 10`, `15 × 15 × 10`, `10 × 10 × 10`), fiecare intrat cu `2` mm în cel de dedesubt. Schimbi culoarea coroanei, ca să nu semene cu ceilalți copaci.
+- [ ] **Treapta 2 — Farul.** `Cylinder` `14 × 14 × 40` la `5`, cu o ferestruică făcută cu `Hole` (un cilindru mic, culcat, care taie peretele), apoi **Group** doar pe turn. Deasupra, un `Cone` roșu `16 × 16 × 10`, coborât cu `1` mm în turn.
+- [ ] **Treapta 3 — Apa.** Un `Box` albastru plat `260 × 200 × 2`, pe plan. Terenul intră în el, deci insula nu plutește. Apa trebuie să încapă și insula mare, și insula mică de la treapta următoare, cu loc de vapor.
+- [ ] **Treapta 4 — Insula mică și podul.** O insulă mică, **cu altă formă** decât cea mare: un `Box` `50 × 40 × 6`, pe plan, la `30` mm de insula mare, pe aceeași linie cu ea, spre dreapta. Podul este un `Box` `34 × 10 × 2`, la `5`, cu capetele intrate câte `2` mm în fiecare insulă. Două balustrade `Box` `34 × 2 × 4`, la `6`, pe marginile podului.
+- [ ] **Treapta 5 — Vaporul.** Pe apă, la cel puțin `5` mm de insule, cu cel puțin trei piese: corp, cabină și coș de fum. Îl faci de la zero, cu **altă formă** decât barca din Lecția 6. Stă pe plan, în apă.
+- [ ] **Treapta 6 — Animalul și prezentarea.** Un animal din forme simple (cel puțin patru piese: corp, cap, picioare, urechi sau coadă), pe insula mică, la `5`. În total ai **cel puțin 9 elemente** (farul, bradul, podul, vaporul și animalul se numără câte unul), iar nimic nu plutește (verificat din Front și din Top).
+
+**Verificare (cu un coleg):** prezinți insula în **1 minut**, iar colegul spune **ce reprezintă fiecare element**, fără întrebări. Apoi arată piesa care **intră în apă** și spune dacă vreo piesă plutește.  
 
 ## Recapitulare rapidă
 1. M1 = forme, scalare, <span style="color:#E65722;font-weight:700">M</span>, <span style="color:#E65722;font-weight:700">L</span>, <span style="color:#00A600;font-weight:700">Hole</span>, text, <span style="color:#DC143C;font-weight:700">Ctrl+D</span>  
 2. Refolosești piese între proiecte cu **Ctrl+C / Ctrl+V**  
 3. Calitate: **5 curate** > 10 neterminate
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** schiță → teren → 4 elemente (2 refolosite) → nimic nu plutește  
-**Complet:** + 6 elemente, Hole+Group, text, culori
-
-## Temă
-Opțional: completezi insula acasă cu un element nou — același `T1_L10`.
+## Temă (opțional)
+- Dacă ai doar Minim: completezi insula acasă cu un element nou, în același `T1_L10`.  
+- Dacă ai Complet: într-un proiect nou `T1_L10_B`, „Parcul”: un teren `Box` `120 × 120 × 6`, cu `5` elemente (cel puțin `2` refolosite din proiectele tale) și o piesă cu Hole și Group.  
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T1_L10_C`, „Portul”: cu apă `Box` plată de `2` mm, un pod și două vapoare diferite, în total cel puțin `8` elemente, iar nimic nu plutește.
 
 ## Ce urmează
 Ai terminat **Modulul 1**! În **Modulul 2** faci **obiecte utile**, cu mărimi exacte.

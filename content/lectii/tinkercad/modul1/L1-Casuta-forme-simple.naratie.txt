@@ -28,11 +28,11 @@ Proiectul de azi. Căsuța mea.
 
 Minim înseamnă: corpul de patruzeci pe patruzeci pe douăzeci și cinci, acoperișul de cincizeci pe cincizeci pus la douăzeci și cinci, nimic nu plutește, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus culori diferite, ușă și fereastră lipite de perete, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim. Ești la Minim când un coleg spune e o casă fără explicații, iar tu poți arăta dimensiunile de pe ecran.
 
-Bonus. Schimbi culorile casei și mărești ușa cu doi milimetri. Provocarea, Satul de trei case: construiești trei case, fiecare cu alt acoperiș, Pyramid, Roof și Cone. Între ele pui o alee, un Box plat înalt de doi milimetri, care atinge toate cele trei case. Nimic nu plutește, verificat din Top și din Front. Un coleg trebuie să recunoască trei case diferite în cel mult treizeci de secunde.
+Bonus. Lucrezi în același proiect și faci casei o vecină și o curte, pe trepte, de la ușor la greu. Prima treaptă: un coș de fum pe acoperiș, care stă pe pantă. A doua: a doua casă, mai mare, cu alt acoperiș și cu ușa exact la mijlocul fațadei. A treia: un copac mai înalt decât ambele case. A patra: o alee plată care atinge ușile ambelor case. A cincea: un gard din cel puțin șase stâlpi la distanțe egale. A șasea: o mașină din forme simple, cu patru roți. Un coleg numără în treizeci de secunde: două case, copacul, gardul și mașina.
 
 Recapitulare. Planul este masa pe care construiești, camera se rotește, iar obiectele stau pe loc. Forma, mărimea, locul, culoarea. Pătrățelele albe schimbă mărimea, conul negru ridică, tasta D coboară pe plan. Delete șterge, Control și Z anulează. O casă este un cub cu o piramidă pusă pe el.
 
-Tema, opțional. Dacă ai doar Minim, adaugi acasă culorile, ușa și fereastra. Dacă ai Complet, desenezi pe foaie o casă cu două etaje și scrii ce forme ai folosi și ce dimensiuni. Dacă ai terminat și Bonusul, faci o copie și schimbi acoperișul unei case.
+Tema, opțional. Dacă ai doar Minim, adaugi acasă culorile, ușa și fereastra. Dacă ai Complet, construiești acasă, într-un proiect nou, o casă cu două etaje, din aceleași forme. Dacă ai terminat și Bonusul, opțional, acasă, într-un proiect nou, construiești o școală sau un magazin, cu o curte a lui, făcută cum vrei tu.
 
 Ce urmează. În lecția doi construiești un om de zăpadă: sfere, scalare cu Shift și rotire.
 

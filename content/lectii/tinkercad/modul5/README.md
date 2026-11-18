@@ -16,6 +16,6 @@
 | 7 | Codeblocks I | Forme prin cod | Buclă; variabile; șir de cuburi · opțional (Minim fără cod) |
 | 8 | Codeblocks II | Obiect parametric | Turn cu `etaje`; două variante · opțional (Minim fără cod) |
 | 9 | Căruciorul teleghidat (Sim Lab) | Fizică și cod | Caroserie + roți; Axle connector cu motor Stepper; Controller; blocuri W/S; Field Sensor · opțional (Minim fără senzor) |
-| 10 | Produs complet | Ideea → prezentare | Problemă; schiță; model cu joc; lista „gata de print”; prezentare |
+| 10 | Produs complet | Ideea → prezentare | Problemă; plan; model cu joc; lista „gata de print”; prezentare |
 
 **Salvare sugerată:** `Prenume_Nume_T5_L01` … `T5_L10`

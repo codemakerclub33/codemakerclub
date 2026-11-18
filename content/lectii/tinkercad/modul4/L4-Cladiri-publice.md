@@ -143,15 +143,10 @@ Fără semn, un cub gri poate fi orice.
 2. **Ctrl+G** pe corp și găuri **înainte** de trepte  
 3. Coloanele: prima la loc, restul cu **Ctrl+D**
 
-## Schema pe scurt *(pe foaie — dacă o printezi separat)*
-
-**Minim:** Box 40·20·16 − ușă 6·4·10 − 2 ferestre 6·4·5 → Group → trepte 14·6·1 și 14·3·2 → steag (Cylinder 1·1·14 + Box 6·0,5·4) → +4 mm pe zona albastră  
-**Complet:** acoperiș 42·26·1,5 · 4 coloane 3·3·16 · spital 30·18·24 cu cruce
-
 **Quiz scurt:**  
 - Cum recunoști o școală față de o casă?  
 - De ce dăm Ctrl+G înainte de trepte?  
 - Câți metri are școala ta în lățime? *(20)*
 
 ## Temă
-Opțional: desenezi pe foaie ce clădire publică ar mai trebui în cartier (bibliotecă? poliție?) și ce semn pui pe ea.
+Opțional, acasă, într-un proiect nou `T4_L04_B`: o clădire publică care ar mai trebui în cartier (bibliotecă? poliție?), cu semnul ei.
