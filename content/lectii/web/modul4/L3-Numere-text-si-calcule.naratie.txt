@@ -1,21 +1,35 @@
-Lecția a treia din Modulul patru. Numere, text și calcule.
+Lecția trei. Zarul și calculatorul: numere, text și calcule.
 
-Calculatorul este foarte bun la calcule și la text. Azi înveți restul împărțirii, rotunjirile, numerele aleatoare, ca să arunci un zar, lucrul cu litere mari și mici și cum ceri o valoare de la utilizator cu prompt.
+Calculatorul este foarte bun la două lucruri: calcule și text. Azi înveți restul împărțirii, rotunjirile, numerele aleatoare, ca să arunci un zar, litere mari și mici, lungimea unui text și cum ceri o valoare de la utilizator cu prompt.
 
-Obiectivul. Minim: un program care cere două numere și afișează suma și produsul. Complet: în plus restul împărțirii, un zar de la unu la șase, transformări de text și diferența dintre cinci între ghilimele plus trei, și cinci plus trei.
+Ce facem azi. La final ai un program care cere două numere și face cu ele cinci calcule, aruncă un zar și lucrează cu un text: îl scrie cu litere mari, îi numără literele și îi arată prima literă. Aproape orice program lucrează cu numere și cu text, iar dacă înțelegi cum se comportă fiecare, eviți greșeli ciudate.
 
-Primul pas. Operatorii sunt plus, minus, steluță, bară, procent și două steluțe. Procentul dă restul împărțirii. Dacă numărul procent doi este zero, numărul este par. Înmulțirea și împărțirea se fac înaintea adunării, iar parantezele schimbă ordinea.
+Instrucțiuni noi azi. Procent dă restul împărțirii. Două steluțe ridică la putere. Math punct round, floor și ceil rotunjesc. Math punct random dă un număr aleator. Length, to upper case și to lower case lucrează cu textul. Includes, slice și replace caută, taie și înlocuiesc. Number transformă text în număr, iar prompt cere o valoare utilizatorului.
 
-Al doilea pas. Math punct round rotunjește la cel mai apropiat întreg, floor în jos, ceil în sus. Math punct random dă un număr între zero și unu. Pentru un zar scrii Math punct floor, paranteză, Math punct random ori șase, paranteză, plus unu. Construiești pas cu pas: random, ori șase, floor, plus unu.
+Pregătirea. Creezi folderul lecției ca o copie a folderului din lecția trecută și alegi din articolul tău de pe Wikipedia două numere și un titlu sau un cuvânt.
 
-Al treilea pas. Pentru text, length arată câte caractere are, fără paranteze. To upper case face literele mari, to lower case mici. Prima literă este la poziția zero, pentru că în programare numărătoarea începe de la zero. Includes spune dacă textul conține o bucată, slice taie o bucată, replace înlocuiește. Metodele nu schimbă textul original, ci dau unul nou.
+Primul pas. Cei patru operatori obișnuiți sunt adunarea, scăderea, înmulțirea și împărțirea. În plus avem restul împărțirii și puterea. Dacă restul la doi este zero, numărul este par. Restul la zece dă ultima cifră.
 
-Al patrulea pas. Dacă un termen este text, plus lipește: cinci între ghilimele plus trei dă cincizeci și trei. Funcția Number transformă textul în număr. Dacă nu se poate, rezultă NaN, adică nu este număr.
+Al doilea pas. Ca la matematică, înmulțirea și împărțirea se fac înaintea adunării și scăderii. Parantezele schimbă ordinea. Când ai dubii, pune paranteze.
 
-Al cincilea pas. Prompt deschide o fereastră cu o cutie de scris. Ce scrie utilizatorul este întotdeauna text, chiar dacă a scris zece. Dacă vrei să calculezi, folosești Number în jurul lui prompt. Nu scrie date personale în prompt.
+Al treilea pas. Round rotunjește la cel mai apropiat număr întreg, floor în jos, ceil în sus. Max și min dau cel mai mare și cel mai mic. To fixed păstrează câte zecimale vrei, dar rezultatul este text.
 
-Greșeli frecvente. Ai uitat Number. Ai scris length cu L mare. Zarul iese de la zero la cinci, pentru că ai uitat plus unu. Ai crezut că prima literă are numărul unu.
+Al patrulea pas. Math punct random dă un număr zecimal între zero și unu. Pentru un zar îl înmulțești cu șase, îl rotunjești în jos cu floor și adaugi unu. Așa obții numere de la unu la șase. Aceeași rețetă merge pentru orice interval.
 
-Tema. Un joc de ghicit norocul cu zarul.
+Al cincilea pas. Length arată câte caractere are un text. To upper case face literele mari, to lower case le face mici. Prima literă este la poziția zero, pentru că în programare numărătoarea începe de la zero. Ultima este la poziția lungime minus unu.
 
-Recapitulare. Operatori și rest. Math pentru rotunjiri și zar. Metode pentru text. Number și prompt. Succes!
+Al șaselea pas. Includes spune dacă textul conține o bucată. Slice taie o parte, repeat repetă, replace înlocuiește. Metodele nu schimbă textul original, ci dau un text nou, pe care îl pui într-o variabilă.
+
+Al șaptelea pas. Între numere, plus adună. Dacă un termen este text, plus lipește: cinci în ghilimele plus trei dă cincizeci și trei. Number transformă textul în număr. Dacă textul nu arată a număr, rezultatul este N-a-N, adică nu este număr. Prompt deschide o fereastră în care utilizatorul scrie, iar ce scrie este întotdeauna text. Dacă vrei să calculezi, folosești Number. Nu scrie date personale, doar numere și numele unui animal sau al unui joc.
+
+Mini-proiectul. Scrii programul zarul și calculatorul: două numere cerute, cinci calcule, par sau impar, un zar și un text cu litere mari, lungime și prima literă.
+
+De făcut azi. Minim: două numere cerute, suma și produsul. Complet: toate cele cinci calcule, zarul, textul transformat, o rotunjire și comentarii.
+
+Bonus. Un convertor din lei în euro, două zaruri, un cuvânt repetat de trei ori și o căutare cu includes.
+
+Greșeli frecvente. Ai uitat Number la prompt. Ai scris length cu literă mare. Ai scris greșit to upper case. Zarul iese cu zecimale, pentru că ai uitat floor. Zarul începe de la zero, pentru că ai uitat plusul unu.
+
+Tema. Termini proiectul, refaci patru exemple și încerci două exemple de acasă: zecimale ciudate și poziția unei litere. Mai ai patru exerciții, de la B până la E.
+
+Recapitulare. Procentul dă restul. Floor, round și ceil rotunjesc. Random cu floor face zarul. Prompt dă mereu text, iar Number îl transformă în număr. Succes!

@@ -1,21 +1,35 @@
-Lecția a șaptea din Modulul patru. Funcții.
+Lecția șapte. Trusa de unelte: funcții.
 
-Ai observat că unele lucruri le scrii de mai multe ori: aruncarea unui zar, un mesaj de salut, un calcul. O funcție este o bucată de cod căreia îi dai un nume. O scrii o singură dată, apoi o chemi de câte ori vrei, ca pe o rețetă.
+Ai observat că unele lucruri le scrii de mai multe ori: aruncarea unui zar, un mesaj de salut, un calcul. O funcție este o bucată de cod căreia îi dai un nume. O scrii o singură dată, apoi o chemi de câte ori vrei, ca pe o rețetă pe care o folosești iar și iar.
 
-Obiectivul. Minim: o funcție salut cu parametrul nume, chemată de două ori. Complet: în plus o funcție care calculează și returnează un rezultat, o funcție zar, o funcție cu if, o funcție care cheamă alta și diferența dintre console log și return.
+Ce facem azi. La final ai o trusă de unelte: cel puțin cinci funcții mici, un salut, un zar, o medie, o verificare și un titlu cu chenar, pe care le chemi cu valori diferite. Funcțiile fac programele mai scurte, mai ușor de citit și mai ușor de reparat. Toate programele mari sunt făcute din funcții mici.
 
-Primul pas. Scrii cuvântul function, numele funcției, paranteze și acolade cu corpul. Dacă rulezi doar atât, nu se întâmplă nimic: rețeta este scrisă, dar nu a fost gătită. O chemi scriind numele urmat de paranteze. Fără paranteze, funcția nu pornește.
+Instrucțiuni noi azi. Cuvântul function scrie o funcție. Numele ei urmat de paranteze o cheamă. Parametrul primește o valoare la fiecare apel. O valoare de rezervă se folosește dacă nu dai nimic. Return trimite o valoare înapoi și încheie funcția.
 
-Al doilea pas. Parametrii sunt cutii care primesc valori la fiecare apelare. Valoarea pe care o dai se numește argument. Ordinea contează. Un parametru poate avea o valoare de rezervă, folosită dacă nu dai nimic.
+Pregătirea. Creezi folderul lecției ca o copie a folderului din lecția trecută și alegi din articolul tău un titlu, un an și un număr.
 
-Al treilea pas. Return trimite o valoare înapoi acolo unde ai chemat funcția și încheie funcția pe loc. Console log doar arată ceva în consolă și nu poți folosi rezultatul mai departe. Dacă funcția calculează ceva, returnează. Afișarea o faci la apel.
+Primul pas. Funcția se scrie cu function, un nume, paranteze și un corp între acolade. Scrisă singură, nu face nimic: este doar rețeta. Ca să pornească, o chemi scriind numele și parantezele. Fără paranteze, nu se întâmplă nimic.
 
-Al patrulea pas. O funcție poate decide și returna true sau false, de exemplu este par. Numele acestor funcții încep de obicei cu este sau are. O funcție poate chema altă funcție: aruncă două zaruri folosește funcția zar de două ori. Variabilele create în interiorul unei funcții sunt locale și nu se văd în afară.
+Al doilea pas. Parametrul este o cutie care primește o valoare la fiecare apelare. Valoarea pe care o dai se numește argument. Poți avea mai mulți parametri, iar ordinea contează: primul argument intră în primul parametru.
 
-Proiectul. Trusa mea de unelte, cu cel puțin cinci funcții: salut, zar, medie, este par și un titlu cu chenar. Adaugi cel puțin două funcții ale tale.
+Al treilea pas. Un parametru poate avea o valoare de rezervă. Dacă dai un argument, funcția îl folosește. Dacă nu dai nimic, folosește valoarea de rezervă.
 
-Greșeli frecvente. Ai uitat parantezele la apelare. Ai scris console log în loc de return. Ai uitat un argument. Ai pus cod după return.
+Al patrulea pas. Return trimite o valoare înapoi acolo unde ai chemat funcția. O poți pune într-o variabilă sau o poți folosi în alt calcul. Ce este scris după return nu se mai execută.
 
-Tema. Mini magazin de jocuri cu reducere, total și factură.
+Al cincilea pas. Console log doar arată ceva în consolă, iar return dă o valoare înapoi. Dacă o funcție afișează, dar nu returnează, rezultatul nu poate fi folosit mai departe și calculul dă N-a-N. Dacă funcția calculează, returnează.
 
-Recapitulare. Function scrie, numele cu paranteze cheamă. Parametri, return, funcții mici care se combină. Succes!
+Al șaselea pas. O funcție poate decide. Ea returnează adevărat sau fals, iar numele ei începe de obicei cu este sau cu are. Nu ai nevoie de else, pentru că return termină funcția.
+
+Al șaptelea pas. Funcțiile pot folosi alte funcții. Așa se construiesc programele mari: funcții mici, fiecare cu o treabă. O variabilă creată în interiorul unei funcții există doar acolo și se numește locală. De aceea funcțiile returnează rezultatele.
+
+Mini-proiectul. Scrii trusa de unelte, cu cel puțin cinci funcții: un salut cu valoare de rezervă, un zar cu număr de fețe, o medie, o verificare pentru vocale și un titlu cu chenar. Apoi le chemi cu argumente diferite.
+
+De făcut azi. Minim: o funcție salut cu un parametru, chemată de două ori. Complet: cel puțin cinci funcții, cu return, cu valoare de rezervă, cu adevărat sau fals și o funcție care cheamă alta.
+
+Bonus. Maximul dintre trei numere, jocul ghicește numărul scris cu funcții, factorialul și scrierea scurtă cu săgeată.
+
+Greșeli frecvente. Ai uitat parantezele la apel. Ai scris console log în loc de return. Ai pus cod după return. Ai uitat un argument. Ai pus argumentele în altă ordine. Ai folosit în afara funcției o variabilă locală. Ai ales un nume neclar. Ai uitat acoladele.
+
+Tema. Termini proiectul, refaci patru exemple și încerci două exemple de acasă: un apel în alt apel și o funcție cu mai multe return. Mai ai patru exerciții, de la B până la E.
+
+Recapitulare. Funcția se scrie o dată și se cheamă de câte ori vrei. Return dă valoarea înapoi, iar console log doar arată. Variabilele din funcție sunt locale. Succes!

@@ -1,23 +1,31 @@
-Lecția întâi din Modulul patru. Primul script, console log.
+Lecția unu. Fișa în consolă: primul script, console punct log.
 
-Până acum ai învățat HTML, adică ce este în pagină, și CSS, adică cum arată pagina. Acum învățăm JavaScript, adică ce face pagina. Gândește-te la o mașinuță: HTML este caroseria, CSS este vopseaua, iar JavaScript este motorul.
+Până acum ai învățat H-T-M-L, adică ce este în pagină, și C-S-S, adică cum arată pagina. Acum învățăm JavaScript, adică ce face pagina. Gândește-te la o mașinuță: H-T-M-L este caroseria, C-S-S este vopseaua, iar JavaScript este motorul.
 
-Obiectivul. Minim: un fișier script punct js legat de pagină, care afișează trei rânduri în consolă. Complet: în plus text și numere, un calcul, comentarii, un alert, o eroare provocată și reparată și diferența dintre HTML, CSS și JavaScript.
+Ce facem azi. La final ai un program, script punct js, legat de pagina ta cu articolul de pe Wikipedia. El scrie în consolă o fișă cu datele din articol: text, numere și câteva calcule. Știi să legi un script de o pagină, să deschizi consola, să afișezi text și numere, să scrii comentarii și să citești un mesaj de eroare.
 
-Primul pas. Creezi un fișier script punct js în același folder cu index punct html. În pagină, chiar înainte de body de închidere, scrii script src egal script punct js. Așa browserul citește comenzile tale după ce pagina s-a încărcat.
+Instrucțiuni noi azi. Script cu src leagă fișierul cu programul de pagină. Console punct log scrie ceva în consolă. Textul se scrie între ghilimele. Plus, minus, steluță și bară înseamnă adunare, scădere, înmulțire și împărțire. Două bare înseamnă comentariu, pe care calculatorul îl ignoră.
 
-Al doilea pas. În script scrii console punct log, paranteză, textul între ghilimele, paranteză, punct și virgulă. Deschizi pagina cu Live Server, apeși F12 și alegi fila Console. Acolo apare textul. Consola este caietul tău de probă: utilizatorii paginii nu o văd.
+Pregătirea. Creezi folderul lecției ca o copie a folderului din lecția zece din Modulul trei. Deschizi articolul pe Wikipedia, te uiți la căsuța din dreapta sus și alegi patru sau cinci date, de preferat numere.
 
-Al treilea pas. Textul se scrie între ghilimele, la fel la început și la sfârșit. Numerele se scriu fără ghilimele. Poți aduna, scădea, înmulți cu steluță și împărți cu bară. Doi plus trei fără ghilimele dă cinci. Același lucru între ghilimele este doar text și se afișează așa cum l-ai scris.
+Primul pas. Creezi un fișier script punct js în același folder cu pagina. În pagină, chiar înainte de body de închidere, scrii script src egal script punct js. Așa browserul citește comenzile tale după ce pagina s-a încărcat.
+
+Al doilea pas. În script scrii console punct log, paranteză, textul între ghilimele, paranteză, punct și virgulă. Deschizi pagina cu Live Server, apeși F doisprezece și alegi fila Console. Pe Mac apeși Command, Option și I. Consola este caietul tău de probă: vizitatorii paginii nu o văd.
+
+Al treilea pas. Textul se scrie între ghilimele, la fel la început și la sfârșit. Numerele se scriu fără ghilimele. Doi plus trei fără ghilimele dă cinci. Același lucru între ghilimele este doar text și se afișează așa cum l-ai scris.
 
 Al patrulea pas. Comentariile încep cu două bare și sunt ignorate de calculator. Într-un console log poți pune mai multe valori, separate prin virgulă, iar consola le scrie pe același rând.
 
 Al cincilea pas. Erorile. Greșelile sunt normale. Consola scrie mesajul cu roșu și îți spune felul erorii și rândul. De exemplu, dacă scrii console punct lg, apare că nu este o funcție. JavaScript face diferența între litere mari și mici, deci Console cu C mare nu merge. Citește mesajul cu calm și repară.
 
-Alert deschide o fereastră mică cu un mesaj. Folosește alert rar.
+Mini-proiectul. Scrii fișa subiectului tău, după modelul cu delfinul: un titlu, patru sau cinci date din articol și două calcule cu numerele din fișă.
+
+De făcut azi. Minim: un script legat de pagină, care scrie trei rânduri. Complet: cel puțin opt rânduri, două calcule, comentarii și o eroare provocată și reparată.
+
+Bonus. Tabelul înmulțirii cu șapte, câte secunde are o oră, o figură din steluțe și o fereastră alert, pe care o folosești rar.
 
 Greșeli frecvente. Ai uitat să legi scriptul. Ai uitat ghilimeaua sau paranteza. Te uiți la pagină, nu la consolă. Nu ai salvat fișierul.
 
-Tema. Un carnet de note pentru jocurile tale preferate, cu un calcul al sumei notelor.
+Tema. Termini proiectul, refaci patru exemple și încerci două exemple de acasă: ghilimele în text și rând nou în text. Mai ai patru exerciții, de la B până la E.
 
-Recapitulare. HTML structura, CSS aspectul, JavaScript comportamentul. Console log scrie în consolă. Succes!
+Recapitulare. H-T-M-L structura, C-S-S aspectul, JavaScript comportamentul. Console log scrie în consolă. Succes!

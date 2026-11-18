@@ -17,7 +17,7 @@ alwaysApply: false
 9. `## Bonus ★★★ — Provocare: <nume>` — exact 4 puncte; firul Wikipedia apare aici (nu în Complet). Bonusul trebuie să fie de sine stătător (fără „vezi Acasă N”).
 10. `## Greșeli frecvente` (8), `## Recapitulare pe scurt` (6), `## Quiz scurt` (5 întrebări).
 11. `## Temă` — 1) proiect nou, 2) refă 4 exemple din 8, 3) „Acasă 1” și „Acasă 2” (exemple noi, mici, cu cod), 4) exercițiile B–E (ce face, scrie, găsește greșelile, explică).
-12. `## Ce urmează — Lecția N+1`, apoi `## Răspunsuri` (quiz, exercițiile din Temă, notă pentru profesor).
+12. `## Ce urmează — Lecția N+1`, apoi `## Răspunsuri` (quiz, exercițiile din Temă, notă informativă).
 
 ## Firul Wikipedia
 Elevul își construiește pagina din Wikipedia pas cu pas: M1 `wikipedia.html` → `tema.html` (L10) → M2 `tema.html` (+ `intreaba.html`, `sondaj.html`, `tema.txt`) → M3 stilizată prin `stil.css`. Se lucrează doar în „Încearcă tu” și în Bonus, niciodată în Complet sau Exemplul 8. Text real, 3 paragrafe pe capitol, fără persoane în imagini.
@@ -31,7 +31,7 @@ Elevul își construiește pagina din Wikipedia pas cu pas: M1 `wikipedia.html` 
 ## Reguli de conținut
 - Română simplă, pentru copii; fără „într-un caiet / pe hârtie” (se scrie „într-un comentariu”).
 - DevTools: `F12`; pe Mac `Cmd + Option + I`.
-- M2: „împreună cu un adult” (nu „profesor”, „școală”, „elev”). M3 păstrează „profesor” în notele pentru profesor.
+- M2: „împreună cu un adult” (nu „profesor”, „școală”, „elev”). „Notă informativă” (ultima secțiune, în Răspunsuri) se adresează direct copilului („tu”, „verifică”), nu profesorului.
 - Titlul din aplicație (`src/lib/mockData.ts`) = numele proiectului din titlul mare al lecției.
 - Fără `<`, `>`, `&times;` scrise în text explicativ (se folosesc cuvinte).
 - Commit și push doar după „da” explicit al utilizatorului.
@@ -58,3 +58,9 @@ Elevul își construiește pagina din Wikipedia pas cu pas: M1 `wikipedia.html` 
 - Copilul își face piesa pe subiectul lui (o frază/poză proprie). Fără exerciții „Repară codul” din fișierele vechi.
 - Piese: L2 banner `.banner` (între `</nav>` și `<main>`); L3 nimic (doar `.banner` font-size); L4 caseta „Știai că?” `.stiai`; L5 capitol cu poză + text `.cu-poza` (poza proprie din `imagini`), Bonus galerie 3 poze; L6 coloana stângă „Alte animale” (trei zone cu grid) + buton „Sus” în Bonus; L7 submeniu `nav li ul` la hover; L8 `<span class="delfin">🐬</span>` în banner, animat cu @keyframes; L9 `<section class="cifre">` cu 3 cutii (rând pe calculator, coloană pe telefon); L10 nimic nou.
 - Referințe în text: „Exemplul N din această lecție” (nu „Exemplul N” gol, ca să nu se confunde cu Lecția N).
+
+## M4: JavaScript pe aceeași pagină
+- Folder `Prenume_Nume_W4_L<n>`, copie a lecției trecute (L1: copie a `W3_L10`); `script.js` stă lângă `tema.html` și `stil.css`.
+- L1–L8: proiecte în consolă (fișă, personaj, zar, ghicit, tabla înmulțirii, while, trusă de unelte, clasament) cu date din articolul Wikipedia al copilului; L9–L10 pe `tema.html` (butoane, mod noapte, contor, listă; apoi „Testul cu scor”).
+- Titluri: Fișa în consolă, Fișa personajului, Zarul și calculatorul, Ghicește numărul, Tabla înmulțirii, Mai multe încercări, Trusa de unelte, Clasamentul jocurilor, Pagina care reacționează, Testul cu scor (în `mockData.ts`, `m11`).
+- Bonus: exact 4 bife, cu indicii în „Răspunsuri”; „Notă informativă” se adresează copilului („tu”). Narațiile: fără cifre sau simboluri, la schimbare se regenerează audio.

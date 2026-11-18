@@ -1,19 +1,15 @@
-# LECȚIA 2 — Variabile: let și const
+# LECȚIA 2 — Fișa personajului
+### Variabile: `let` și `const`
 **Modulul 4 · JavaScript pentru începători · 2 ore**  
 **Code Maker Club · JavaScript Starter**
 
 > Un program trebuie să **țină minte** lucruri: scorul unui joc, numele jucătorului, câte vieți mai are. Pentru asta folosim **variabile**: cutii cu nume, în care păstrăm o valoare. Azi înveți să faci cutii cu `let` și `const`, să le schimbi conținutul și să le folosești în mesaje.  
-> Proiect: **„Fișa unui personaj de joc”** · folder: `Prenume_Nume_W4_L2` (ex. `Ana_Pop_W4_L2`)
+> Proiect: **„Fișa personajului”** · folder: `Prenume_Nume_W4_L2` (ex. `Ana_Pop_W4_L2`)
 
 ---
 
-## Obiectiv
-La finalul orei știi să creezi o variabilă cu `let` și cu `const`, să citești și să schimbi valoarea, să alegi nume bune, să folosești `+=` și `++`, să construiești mesaje cu variabile și să recunoști tipurile text, număr și adevărat/fals.  
-**Minim:** un program cu 4 variabile (nume, număr, text, un număr care se schimbă) afișate în consolă.  
-**Ținta orei (Complet):** + o constantă, mesaje cu variabile, `+=` și `++`, un exemplu de eroare la `const`, nume corecte și explicarea diferenței dintre `let` și `const`.
-
-## De ce contează
-Fără variabile, un program ar putea doar să afișeze lucruri scrise de la început. Cu variabile, poate ține scorul, poate număra și își poate schimba comportamentul. Toate jocurile și aplicațiile se bazează pe ele.
+## Ce facem azi
+La final ai un program care ține minte datele unui personaj (un animal, un robot sau un erou de poveste): ce nu se schimbă (numele, viețile maxime) și ce se schimbă pe parcurs (scorul, nivelul, viețile rămase). Știi să faci o variabilă cu `let` și cu `const`, să-i schimbi valoarea, să alegi nume bune, să construiești mesaje cu variabile și să recunoști tipurile text, număr și adevărat/fals. Fără variabile, un program ar putea doar să afișeze lucruri scrise de la început; cu ele poate ține scorul, poate număra și își poate schimba comportamentul. Toate jocurile și aplicațiile se bazează pe ele.
 
 ---
 
@@ -21,14 +17,26 @@ Fără variabile, un program ar putea doar să afișeze lucruri scrise de la în
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pornim proiectul |
-| 15–35 | Prima variabilă cu `let` (**Exemplele 1–2**) |
-| 35–55 | Schimbăm valoarea: `=`, `+=`, `++` (**Exemplele 3–4**) |
-| 55–70 | `const` (**Exemplul 5**) |
-| 70–85 | Nume bune pentru variabile (**Exemplul 6**) |
-| 85–100 | Mesaje cu variabile · tipuri (**Exemplele 7–8**) |
-| 100–115 | Proiect (**Exemplul 9**) |
+| 0–15 | Recapitulare · pornim proiectul · alegem datele din articol |
+| 15–35 | Prima variabilă cu `let` · mai multe variabile (**Exemplele 1–2**) |
+| 35–55 | Schimbăm valoarea: `=`, `+=`, `++` (**Exemplul 3**) |
+| 55–70 | `const` (**Exemplul 4**) |
+| 70–85 | Nume bune pentru variabile (**Exemplul 5**) |
+| 85–105 | Mesaje cu variabile · tipuri (**Exemplele 6–7**) |
+| 105–115 | Mini-proiect: fișa personajului (**Exemplul 8**) |
 | 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `let` | Creează o variabilă a cărei valoare se poate schimba | `let scor = 0;` |
+| `const` | Creează o variabilă a cărei valoare nu se schimbă | `const pi = 3.14;` |
+| `+=`  `-=`  `*=`  `++`  `--` | Schimbă valoarea mai repede | `scor += 5;` |
+| `` `...${nume}...` `` | Text cu variabile înăuntru | `` `Salut, ${nume}!` `` |
+| `typeof` | Spune ce fel de valoare este | `typeof 10` |
 
 ---
 
@@ -40,10 +48,11 @@ Din lecția trecută ții minte că:
 - textul se scrie între ghilimele, iar numerele fără ghilimele;
 - mesajul roșu din consolă spune felul erorii și rândul.
 
-**Încearcă tu (4 min)**  
-- [ ] Creează folderul `Prenume_Nume_W4_L2` cu `index.html` (scheletul complet, cu `<script src="script.js"></script>` înainte de `</body>`) și `script.js`  
-- [ ] Pune în `<body>` un `<h1>` cu textul „Variabile”  
-- [ ] În `script.js` scrie un `console.log` care afișează „Salut din lecția 2”  
+**Încearcă tu (8 min)**  
+- [ ] Creează folderul `Prenume_Nume_W4_L2` ca o **copie** a folderului `Prenume_Nume_W4_L1` (cu `tema.html`, `script.js`, `stil.css`, `imagini`, `media`)  
+- [ ] Șterge din `script.js` fișa de la lecția trecută (sau comentează-o cu `/* … */`) și scrie un `console.log` cu „Salut din lecția 2”  
+- [ ] Deschide `tema.html` cu Live Server și verifică mesajul în consolă  
+- [ ] Alege din articolul tău pe Wikipedia 3 date care **nu se schimbă** (de exemplu un an sau o mărime) și 2 lucruri pe care le poți **număra** (de exemplu câte imagini sau câte capitole ai tu)  
 
 > De aici înainte, exemplele arată ce scrii în `script.js`.
 
@@ -71,14 +80,12 @@ Ce înseamnă prima linie:
 - `"Rex"` este valoarea;  
 - `;` încheie instrucțiunea.
 
-În a doua linie, `console.log(nume);` afișează **ce este în cutie**. Atenție: aici `nume` este **fără ghilimele**. Cu ghilimele ar afișa cuvântul `nume`:
+În a doua linie, `console.log(nume);` afișează **ce este în cutie**. Atenție: aici `nume` este **fără ghilimele**. Cu ghilimele (`console.log("nume");`) ar afișa cuvântul `nume`.
 
-```javascript
-console.log(nume);
-console.log("nume");
-```
-
-Prima afișează `Rex`, a doua afișează `nume`.
+**Încearcă tu (5 min)**  
+- [ ] Creează o variabilă cu numele subiectului din articolul tău și afișeaz-o  
+- [ ] Afișează aceeași variabilă o dată fără ghilimele și o dată cu ghilimele  
+- [ ] Spune cu voce tare ce face semnul `=`  
 
 ### Exemplul 2 — Mai multe variabile, de feluri diferite
 
@@ -90,23 +97,20 @@ let greutate = 12.5;
 console.log(animal);
 console.log(varsta);
 console.log(greutate);
+console.log(varsta + greutate);
 ```
 
-O variabilă poate ține text, un număr întreg sau un număr cu zecimale. **Zecimalele se scriu cu punct**, nu cu virgulă: `12.5`, nu `12,5`. Poți face calcule direct cu variabilele:
+O variabilă poate ține text, un număr întreg sau un număr cu zecimale. **Zecimalele se scriu cu punct**, nu cu virgulă: `12.5`, nu `12,5`. Poți face calcule direct cu variabilele: ultima linie afișează `15.5`.
 
-```javascript
-let mere = 5;
-let pere = 3;
-console.log(mere + pere);
-```
-
-Rezultatul este `8`.
+**Încearcă tu (6 min)**  
+- [ ] Creează variabile cu cele 3 date alese din articol (text, număr întreg, număr cu zecimale, după caz)  
+- [ ] Afișează-le cu `console.log`, fără ghilimele  
+- [ ] Fă un calcul cu două dintre ele  
 
 **Gata când:**  
 - [ ] Ai creat variabile cu `let` pentru un text, un număr întreg și un număr cu zecimale  
-- [ ] Le-ai afișat cu `console.log`, fără ghilimele  
-- [ ] Ai adunat două variabile numerice  
-- [ ] Poți spune ce face semnul `=` într-o variabilă  
+- [ ] Le-ai afișat fără ghilimele  
+- [ ] Ai făcut un calcul cu două variabile  
 
 ---
 
@@ -119,35 +123,27 @@ let scor = 0;
 console.log("Scor la început:", scor);
 
 scor = 10;
-console.log("Scor după prima rundă:", scor);
-
 scor = scor + 5;
-console.log("Scor după a doua rundă:", scor);
+console.log("Scor după două runde:", scor);
+
+let monede = 0;
+monede += 3;   // la fel ca monede = monede + 3
+monede -= 1;   // la fel ca monede = monede - 1
+monede *= 2;   // la fel ca monede = monede * 2
+monede++;      // la fel ca monede = monede + 1
+monede--;      // la fel ca monede = monede - 1
+console.log(monede);
 ```
 
 Rezultat:
 
 ```text
 Scor la început: 0
-Scor după prima rundă: 10
-Scor după a doua rundă: 15
+Scor după două runde: 15
+4
 ```
 
 Observă: **`let` se scrie doar prima dată**, la crearea variabilei. Când schimbi valoarea, scrii doar numele: `scor = 10;`. Linia `scor = scor + 5;` se citește așa: „ia ce este în `scor`, adaugă 5 și pune rezultatul înapoi în `scor`”. Calculatorul rezolvă mai întâi partea din dreapta, apoi pune rezultatul.
-
-### Exemplul 4 — Scurtături
-
-```javascript
-let monede = 0;
-
-monede += 3;   // la fel ca monede = monede + 3
-monede -= 1;   // la fel ca monede = monede - 1
-monede *= 2;   // la fel ca monede = monede * 2
-monede++;      // la fel ca monede = monede + 1
-monede--;      // la fel ca monede = monede - 1
-
-console.log(monede);
-```
 
 | Scurtătură | Ce face |
 |------------|---------|
@@ -157,18 +153,24 @@ console.log(monede);
 | `++` | adaugă 1 |
 | `--` | scade 1 |
 
-După aceste rânduri, `monede` este: 0, apoi 3, 2, 4, 5, 4. Deci în consolă apare `4`.
+După rândurile de mai sus, `monede` este: 0, apoi 3, 2, 4, 5, 4. Deci în consolă apare `4`.
 
-**Încearcă tu (6 min)**  
-- [ ] Creează `let scor = 0;` și adaugă 10, apoi 5, afișând scorul de fiecare dată  
-- [ ] Folosește `++` de trei ori și `--` o dată  
-- [ ] Prezice rezultatul într-un comentariu înainte să vezi rezultatul în consolă  
+**Încearcă tu (8 min)**  
+- [ ] Creează `let contor = 0;` pentru un lucru pe care îl numeri în pagina ta (de exemplu imaginile)  
+- [ ] Mărește-l cu `++` de trei ori și scade-l o dată cu `--`  
+- [ ] Prezice rezultatul într-un comentariu înainte să-l vezi în consolă  
+- [ ] Adaugă `contor += 10;` și afișează valoarea după fiecare schimbare  
+
+**Gata când:**  
+- [ ] Ai schimbat o variabilă fără să mai scrii `let`  
+- [ ] Ai folosit `+=`, `++` și `--`  
+- [ ] Rezultatul din consolă este cel prezis  
 
 ---
 
 ## 4. `const`: valori care nu se schimbă
 
-### Exemplul 5 — Constante
+### Exemplul 4 — Constante
 
 ```javascript
 const pi = 3.14;
@@ -202,16 +204,21 @@ Regula simplă:
 
 Dacă ai dubii, începe cu `const`. Dacă primești eroarea de mai sus, înseamnă că valoarea trebuie să se schimbe, deci treci la `let`.
 
+**Încearcă tu (6 min)**  
+- [ ] Pune cele 3 date care nu se schimbă din articolul tău în trei constante  
+- [ ] Provoacă eroarea „Assignment to constant variable” și citește mesajul  
+- [ ] Repară eroarea ștergând rândul care schimbă constanta  
+
 **Gata când:**  
-- [ ] Ai o constantă cu `const` și o variabilă cu `let` care se schimbă  
-- [ ] Ai provocat eroarea „Assignment to constant variable” și ai citit mesajul  
+- [ ] Ai constante cu `const` și o variabilă cu `let` care se schimbă  
+- [ ] Ai citit mesajul „Assignment to constant variable”  
 - [ ] Poți explica ce alegi, `let` sau `const`, pentru scor și pentru numele jocului  
 
 ---
 
 ## 5. Nume bune
 
-### Exemplul 6 — Cum alegi numele
+### Exemplul 5 — Cum alegi numele
 
 ```javascript
 let scorJucator = 0;       // bun
@@ -229,16 +236,16 @@ Reguli pentru nume:
 
 Stilul obișnuit se numește **camelCase**: primul cuvânt cu literă mică, următoarele cu literă mare la început: `scorMaxim`, `numarVieti`, `numeAnimalPreferat`. Numele trebuie să spună **ce conține** variabila: peste o lună vei înțelege de ce ai scris `scorMaxim`, dar nu și de ce ai scris `x`.
 
-**Încearcă tu (4 min)**  
-- [ ] Scrie cinci nume bune pentru variabile (scor, vieți, numele jocului, nivelul, viteza)  
+**Încearcă tu (5 min)**  
+- [ ] Scrie cinci nume bune pentru variabilele din articolul tău, în camelCase  
 - [ ] Scrie două nume greșite și spune de ce nu merg  
 - [ ] Verifică în consolă diferența dintre `scor` și `Scor`  
 
 ---
 
-## 6. Mesaje cu variabile și tipuri
+## 6. Mesaje și tipuri
 
-### Exemplul 7 — Lipim text cu valori
+### Exemplul 6 — Lipim text cu valori
 
 Două moduri de a construi un mesaj:
 
@@ -260,9 +267,14 @@ Bună, Ana! Ai 10 ani.
 ```
 
 - **Cu `+`**: lipești bucăți de text și variabile. Nu uita spațiile din interiorul ghilimelelor.  
-- **Cu semnul `` ` `` (backtick)**: scrii tot mesajul între semnele `` ` ``, iar variabilele le pui în `${…}`. Este mai ușor de citit. Semnul `` ` `` nu este ghilimea: este alt caracter, de pe tastatură (cere ajutor profesorului dacă nu găsești semnul).
+- **Cu semnul `` ` `` (backtick)**: scrii tot mesajul între semnele `` ` ``, iar variabilele le pui în `${…}`. Este mai ușor de citit. Semnul `` ` `` nu este ghilimea: este alt caracter, de pe tastatură (cere ajutor unui adult dacă nu găsești semnul).
 
-### Exemplul 8 — Tipuri de valori
+**Încearcă tu (6 min)**  
+- [ ] Scrie un mesaj despre subiectul tău, făcut cu `+`  
+- [ ] Scrie același mesaj cu `` `${…}` ``  
+- [ ] Verifică dacă între cuvinte au apărut spațiile  
+
+### Exemplul 7 — Tipuri de valori
 
 ```javascript
 let titlu = "Joc nou";   // text (string)
@@ -290,6 +302,11 @@ boolean
 
 `true` și `false` se scriu **fără ghilimele** și cu litere mici. Vei avea nevoie de ele la decizii. Dacă faci o variabilă fără valoare (`let x;`), ea conține `undefined`, adică „nedefinit”: cutia există, dar este goală.
 
+**Încearcă tu (5 min)**  
+- [ ] Creează o variabilă `true` sau `false` despre subiectul tău (de exemplu `esteRar`)  
+- [ ] Afișează cu `typeof` tipul pentru un text, un număr și un `true`  
+- [ ] Spune ce afișează `typeof` pentru `"5"` (cu ghilimele) și pentru `5`  
+
 **Gata când:**  
 - [ ] Ai un mesaj făcut cu `+` și unul făcut cu `` `${…}` ``  
 - [ ] Ai o variabilă `true` sau `false`  
@@ -297,30 +314,11 @@ boolean
 
 ---
 
-## 7. Proiectul
+## 7. Mini-proiect: toate la un loc
 
-### Exemplul 9 — „Fișa unui personaj de joc”
+### Exemplul 8 — „Fișa personajului”
 
-Fișierul `index.html`:
-
-```html
-<!DOCTYPE html>
-<html lang="ro">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fișa unui personaj de joc</title>
-</head>
-<body>
-  <h1>Fișa unui personaj de joc</h1>
-  <p>Deschide consola (F12) ca să vezi fișa.</p>
-
-  <script src="script.js"></script>
-</body>
-</html>
-```
-
-Fișierul `script.js`:
+Iată programul-model, despre un personaj de joc. Scrie un `script.js` ca acesta, cu **personajul tău** (un animal, un robot, un erou de poveste) și cu date din articolul tău:
 
 ```javascript
 // Datele care nu se schimbă
@@ -352,9 +350,13 @@ scor += bonus;
 console.log(`Bonus pentru vieți: ${bonus}. Scor final: ${scor}`);
 ```
 
-Rezultat (pe scurt): scorul crește de la 0 la 50, apoi la 70 (bonus 2 × 10), nivelul devine 2, iar viețile scad la 2.
+Rezultat (pe scurt): scorul crește de la 0 la 50, apoi la 70 (bonus 2 × 10), nivelul devine 2, iar viețile scad la 2. Nu pune **date personale** (nume complet, adresă, școală, telefon): alege un personaj inventat.
 
-Fă fișa cu **un personaj ales de tine** (un animal, un robot, un erou de poveste). Nu pune date personale.
+**Încearcă tu (10 min)**  
+- [ ] Scrie fișa personajului tău, după model, cu cel puțin 2 constante și 4 variabile `let`  
+- [ ] Folosește `+=`, `++` și `--` cel puțin o dată fiecare  
+- [ ] Pune în fișă și 2 date din articolul tău, în constante  
+- [ ] Citește programul rând cu rând și spune cu voce tare ce valoare are fiecare variabilă  
 
 **Gata când:**  
 - [ ] Ai cel puțin 2 constante (`const`) și 4 variabile (`let`)  
@@ -364,46 +366,37 @@ Fă fișa cu **un personaj ales de tine** (un animal, un robot, un erou de poves
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Fișa personajului”
 
-### Exercițiul A — „Fișa unui personaj de joc” (obligatoriu)
-În folderul `Prenume_Nume_W4_L2` ai `index.html` și `script.js`, cu:
-- **minimum 2 constante** (`const`) și **minimum 4 variabile** (`let`), cu nume în camelCase;
-- cel puțin un text, un număr, un număr cu zecimale și un `true`/`false`;
-- cel puțin **un `+=`**, **un `++`** și **un `--`**;
-- cel puțin **două mesaje** cu variabile (cu `+` sau cu `${…}`);
-- un calcul care folosește două variabile;
-- cel puțin două comentarii.
+### Minim vs Complet
 
-### Exercițiul B — Ce valoare are variabila?
-Spune ce afișează programul: (1) `let a = 5; a = a + 2; console.log(a);` (2) `let b = 10; b -= 3; b *= 2; console.log(b);` (3) `let c = 1; c++; c++; c--; console.log(c);` (4) `const d = 4; console.log(d * d);`
+| | Ce trebuie |
+|--|------------|
+| **Minim** | `script.js` cu 4 variabile (un nume, un număr, un text și un număr care se schimbă) afișate în consolă |
+| **Complet** | Minim + cel puțin 2 constante și 4 variabile `let` cu nume în camelCase, un text, un număr, un număr cu zecimale și un `true`/`false`, `+=`, `++` și `--`, două mesaje cu variabile, un calcul cu două variabile și două comentarii |
 
-### Exercițiul C — Scrie codul
-Scrie codul care: (1) face o variabilă `vieti` cu valoarea 3 și o scade cu 1; (2) face o constantă `nume` cu textul „Luna” și afișează mesajul `Salut, Luna!` folosind variabila; (3) face o variabilă `pret` cu 20, o dublează și o afișează.
+### Pasul 1 — Minim
+În folderul `Prenume_Nume_W4_L2`:
 
-### Exercițiul D — Găsește greșelile
-Găsește **3 greșeli** în codul de mai jos și repară greșelile. Programul vrea să afișeze numele `Ana` și să nu mai schimbe valoarea lui `pi`.
+- [ ] Ai `tema.html` (cu `<script>` legat), `script.js` și `stil.css`  
+- [ ] Ai 4 variabile și le afișezi în consolă  
+- [ ] Unul dintre numere se schimbă în program  
 
-```text
-let 2jucatori = 5;
-const pi = 3.14;
-pi = 3.15;
-let nume = "Ana";
-console.log("nume");
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Într-un comentariu din cod: ce este o variabilă? Care este diferența dintre `let` și `const`? De ce `console.log(scor)` și `console.log("scor")` afișează lucruri diferite?
-
-**Gata când:**  
-- [ ] Folderul `Prenume_Nume_W4_L2` are `index.html` și `script.js`  
-- [ ] Programul rulează fără erori  
-- [ ] Ai răspuns la exercițiile B–E  
+### Pasul 2 — Complet
+- [ ] Ai cel puțin 2 constante și 4 variabile `let`, cu nume în camelCase  
+- [ ] Ai un text, un număr, un număr cu zecimale și un `true`/`false`  
+- [ ] Ai folosit `+=`, `++` și `--`  
+- [ ] Ai două mesaje cu variabile și un calcul cu două variabile  
+- [ ] Ai cel puțin două comentarii  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Fă un „coș de cumpărături”: preț, cantitate și total (`pret * cantitate`)  
+## Bonus ★★★ — Provocare: Coșul de cumpărături
+*Doar dacă ai terminat Complet.*
+
+Faci un mic program de cumpărături, cu variabile.
+
+- [ ] Fă un coș cu preț, cantitate și total (`pret * cantitate`) pentru un joc sau o jucărie  
 - [ ] Schimbă între ele valorile a două variabile, folosind o a treia variabilă ajutătoare  
 - [ ] Calculează aria unui dreptunghi (`lungime * latime`) și perimetrul lui  
 - [ ] Afișează `typeof` pentru o variabilă fără valoare (`let x;`) și spune ce observi  
@@ -414,13 +407,11 @@ console.log("nume");
 1. **Ai scris `let` de două ori** pentru aceeași variabilă — apare o eroare („already been declared”). `let` se scrie o singură dată.  
 2. **Ai încercat să schimbi un `const`** — `Assignment to constant variable`. Dacă se schimbă, folosește `let`.  
 3. **Ai pus ghilimele în jurul numelui variabilei** — `"nume"` este text, `nume` este variabila.  
-4. **Ai scris nume cu spațiu** (`scor maxim`) — folosește `scorMaxim`.  
-5. **Numele începe cu o cifră** (`2jucatori`) — nu merge.  
-6. **Ai amestecat literele mari și mici** (`Scor` în loc de `scor`) — „is not defined”.  
-7. **Ai scris zecimalele cu virgulă** (`12,5`) — folosește punctul: `12.5`.  
-8. **Ai uitat spațiile la lipirea textului cu `+`** — mesajul apare lipit: `Bună,Ana`.  
-9. **Ai scris `${nume}` între ghilimele obișnuite** — merge doar între semnele `` ` ``.  
-10. **Ai folosit o variabilă înainte să creezi variabila** — creează variabila mai sus în fișier.  
+4. **Ai scris nume cu spațiu sau care începe cu o cifră** (`scor maxim`, `2jucatori`) — folosește `scorMaxim`, `jucatori2`.  
+5. **Ai amestecat literele mari și mici** (`Scor` în loc de `scor`) — „is not defined”.  
+6. **Ai scris zecimalele cu virgulă** (`12,5`) — folosește punctul: `12.5`.  
+7. **Ai uitat spațiile la lipirea textului cu `+`** — mesajul apare lipit: `Bună,Ana`.  
+8. **Ai scris `${nume}` între ghilimele obișnuite** — merge doar între semnele `` ` ``.  
 
 ---
 
@@ -440,7 +431,47 @@ console.log("nume");
 - Care este tipul valorii `true`?
 
 ## Temă
-Scrie un program „Magazinul meu de jocuri”: o constantă cu numele magazinului, variabile pentru prețul unui joc și numărul de jocuri cumpărate, calculul totalului și un mesaj final cu toate valorile. Salvează în `Prenume_Nume_W4_L2`.
+1. Termină `Prenume_Nume_W4_L2` (Minim, apoi Complet).  
+2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
+3. **Exemple pentru acasă.** Încearcă amândouă:
+
+**Acasă 1 — Text plus număr.**
+
+```javascript
+console.log(typeof (5 + 5));
+console.log("5" + 5);
+console.log(typeof ("5" + 5));
+```
+
+Afișează `number`, apoi `55`, apoi `string`: când un text se lipește cu un număr, rezultatul este tot text. Încearcă și `"5" - 2` și spune ce observi.
+
+**Acasă 2 — Text pe mai multe rânduri.**
+
+```javascript
+const poveste = `Era odată un delfin.
+El înota repede.`;
+console.log(poveste);
+```
+
+Între semnele `` ` `` textul poate continua pe rândul următor. Scrie o poveste de trei rânduri despre subiectul tău, într-o singură variabilă.
+
+4. **Încă patru exerciții (B–E):**
+
+**B — Ce valoare are variabila?** Spune ce afișează programul: (1) `let a = 5; a = a + 2; console.log(a);` (2) `let b = 10; b -= 3; b *= 2; console.log(b);` (3) `let c = 1; c++; c++; c--; console.log(c);` (4) `const d = 4; console.log(d * d);`
+
+**C — Scrie codul.** Scrie codul care: (1) face o variabilă `vieti` cu valoarea 3 și o scade cu 1; (2) face o constantă `nume` cu textul „Luna” și afișează mesajul `Salut, Luna!` folosind variabila; (3) face o variabilă `pret` cu 20, o dublează și o afișează.
+
+**D — Găsește greșelile.** Găsește **3 greșeli** în codul de mai jos și repară greșelile. Programul vrea să afișeze numele `Ana` și să nu mai schimbe valoarea lui `pi`.
+
+```text
+let 2jucatori = 5;
+const pi = 3.14;
+pi = 3.15;
+let nume = "Ana";
+console.log("nume");
+```
+
+**E — Explică cu cuvintele tale.** Într-un comentariu din cod: ce este o variabilă? Care este diferența dintre `let` și `const`? De ce `console.log(scor)` și `console.log("scor")` afișează lucruri diferite?
 
 ## Ce urmează — Lecția 3
 Învățăm mai multe despre **numere, text și calcule**: restul împărțirii, rotunjiri, lungimea unui text, litere mari și mici, și cum primim date de la utilizator.
@@ -449,8 +480,10 @@ Scrie un program „Magazinul meu de jocuri”: o constantă cu numele magazinul
 
 ## Răspunsuri
 - **Quiz scurt:** (1) creează o variabilă numită `scor` și pune în ea valoarea `0`; (2) când valoarea nu se schimbă (de exemplu numele jocului); (3) afișează textul `scor`, nu valoarea variabilei; (4) mărește valoarea lui `scor` cu 1; (5) `boolean` (adevărat/fals).  
-- **Exercițiul B:** (1) `7`; (2) `14` (10 − 3 = 7, apoi 7 × 2); (3) `2` (1, 2, 3, apoi 2); (4) `16`.  
-- **Exercițiul C:** (1) `let vieti = 3; vieti--;` (sau `vieti -= 1;`); (2) `const nume = "Luna"; console.log("Salut, " + nume + "!");` sau `` console.log(`Salut, ${nume}!`); ``; (3) `let pret = 20; pret *= 2; console.log(pret);`.  
-- **Exercițiul D:** (1) `2jucatori` începe cu o cifră (de exemplu `jucatori2`); (2) `pi` este `const` și nu poate fi schimbat (se șterge linia `pi = 3.15;`); (3) `console.log("nume")` afișează cuvântul `nume`; trebuie `console.log(nume)`.  
-- **Exercițiul E:** variabila este o cutie cu nume care ține o valoare; `let` pentru valori care se schimbă, `const` pentru valori care nu se schimbă; cu ghilimele este text, fără ghilimele este variabila.  
-- **Notă pentru profesor:** unii elevi nu găsesc semnul `` ` `` pe tastatură: arătați elevilor tasta sau lăsați elevii să folosească metoda cu `+` până se obișnuiesc. Pentru comparația cu „cutia”, desenați pe tablă cutii cu etichete. Insistați pe faptul că `=` este „pune în”, nu „este egal cu”: confuzia cu matematica îi încurcă mult. Nu cereți numere mari sau date personale la „fișa personajului”.
+- **Dacă ritmul clasei este lent:** Exemplul 7 (tipuri) se poate face scurt; Exemplele 1, 3, 4 și 6 sunt obligatorii.  
+- **Tema, exercițiul B:** (1) `7`; (2) `14` (10 − 3 = 7, apoi 7 × 2); (3) `2` (1, 2, 3, apoi 2); (4) `16`.  
+- **Tema, exercițiul C:** (1) `let vieti = 3; vieti--;` (sau `vieti -= 1;`); (2) `const nume = "Luna"; console.log("Salut, " + nume + "!");` sau `` console.log(`Salut, ${nume}!`); ``; (3) `let pret = 20; pret *= 2; console.log(pret);`.  
+- **Tema, exercițiul D:** (1) `2jucatori` începe cu o cifră (de exemplu `jucatori2`); (2) `pi` este `const` și nu poate fi schimbat (se șterge linia `pi = 3.15;`); (3) `console.log("nume")` afișează cuvântul `nume`; trebuie `console.log(nume)`.  
+- **Tema, exercițiul E:** variabila este o cutie cu nume care ține o valoare; `let` pentru valori care se schimbă, `const` pentru valori care nu se schimbă; cu ghilimele este text, fără ghilimele este variabila.  
+- **Bonus (indicii):** (1) `let pret = 25; let cantitate = 3;` apoi `console.log(pret * cantitate);`; (2) ai nevoie de o a treia variabilă în care salvezi prima valoare **înainte** să o pierzi; (3) aria este `lungime * latime`, iar perimetrul `2 * (lungime + latime)`; (4) o variabilă fără valoare are tipul `undefined`.  
+- **Notă informativă:** dacă nu găsești semnul `` ` `` pe tastatură, cere ajutor sau folosește deocamdată metoda cu `+`. Ține minte: `=` înseamnă „pune în”, nu „este egal cu”. Gândește-te la variabile ca la cutii cu etichete. Nu folosi numere mari sau date personale în „fișa personajului”. Dacă nu ai `tema.html` din Modulul 3, alege date dintr-un animal, un loc sau un hobby. La Acasă 1, `"5" - 2` dă `3`: JavaScript transformă textul în număr doar la scădere, nu și la adunare.

@@ -1,10 +1,14 @@
-Lecția a doua din Modulul patru. Variabile, let și const.
+Lecția doi. Fișa personajului: variabile, let și const.
 
 Un program trebuie să țină minte lucruri: scorul unui joc, numele jucătorului, câte vieți mai are. Pentru asta folosim variabile: cutii cu nume, în care păstrăm o valoare.
 
-Obiectivul. Minim: un program cu patru variabile afișate în consolă. Complet: în plus o constantă, mesaje cu variabile, plus egal și plus plus, o eroare la const și nume corecte.
+Ce facem azi. La final ai un program care ține minte datele unui personaj: ce nu se schimbă, cum ar fi numele, și ce se schimbă pe parcurs, cum ar fi scorul și viețile rămase. Știi să faci o variabilă cu let și cu const, să-i schimbi valoarea, să alegi nume bune și să construiești mesaje cu variabile.
 
-Primul pas. Scrii let, apoi numele cutiei, semnul egal și valoarea. De exemplu let nume egal Rex între ghilimele. Semnul egal înseamnă pune în, nu egal ca la matematică. Console log cu numele fără ghilimele afișează ce este în cutie. Cu ghilimele afișează chiar cuvântul. Zecimalele se scriu cu punct, nu cu virgulă.
+Instrucțiuni noi azi. Let creează o variabilă care se poate schimba. Const creează o variabilă care nu se schimbă. Plus egal, minus egal, plus plus și minus minus schimbă valoarea mai repede. Semnul backtick, cu dolar și acolade, pune variabile în mijlocul unui text. Typeof spune ce fel de valoare este.
+
+Pregătirea. Creezi folderul lecției ca o copie a folderului din lecția trecută. Din articolul tău de pe Wikipedia alegi trei date care nu se schimbă și două lucruri pe care le poți număra.
+
+Primul pas. Scrii let, apoi numele cutiei, semnul egal și valoarea. Semnul egal înseamnă pune în, nu egal ca la matematică. Console log cu numele fără ghilimele afișează ce este în cutie. Cu ghilimele afișează chiar cuvântul. Zecimalele se scriu cu punct, nu cu virgulă.
 
 Al doilea pas. Pentru a schimba valoarea, scrii doar numele, fără let. Scor egal scor plus cinci înseamnă: ia ce este în scor, adaugă cinci și pune rezultatul înapoi. Scurtăturile sunt plus egal, minus egal, steluță egal, plus plus și minus minus.
 
@@ -14,8 +18,14 @@ Al patrulea pas. Numele conțin litere, cifre și liniuță jos, fără spații,
 
 Al cincilea pas. Mesajele se construiesc cu plus, lipind text și variabile, sau cu semnul backtick, unde variabila se pune între dolar și acolade. Tipurile sunt string, pentru text, number, pentru numere, și boolean, pentru true sau false. Cu typeof afli tipul unei valori.
 
+Mini-proiectul. Scrii fișa personajului tău, după modelul cu cavalerul: două constante, patru variabile care se schimbă, un tur de joc și un calcul de bonus.
+
+De făcut azi. Minim: patru variabile afișate în consolă. Complet: două constante și patru variabile, plus egal, plus plus și minus minus, două mesaje cu variabile, un calcul și comentarii.
+
+Bonus. Un coș de cumpărături, schimbarea valorilor a două variabile, aria și perimetrul unui dreptunghi și tipul unei variabile fără valoare.
+
 Greșeli frecvente. Ai scris let de două ori. Ai schimbat un const. Ai pus ghilimele în jurul numelui. Ai uitat spațiile la lipirea textului.
 
-Tema. Magazinul meu de jocuri, cu preț, cantitate și total.
+Tema. Termini proiectul, refaci patru exemple și încerci două exemple de acasă: text plus număr și text pe mai multe rânduri. Mai ai patru exerciții, de la B până la E.
 
 Recapitulare. Variabila este o cutie cu nume. Let pentru ce se schimbă, const pentru ce nu se schimbă. Succes!

@@ -591,3 +591,4 @@ h1 {
 - **Tema, exercițiul D:** (1) lipsește `{` după `p`; (2) `carte` fără punct trebuie `.carte`; (3) lipsește `;` după `blue`.  
 - **Tema, exercițiul E:** un fișier se schimbă o dată și se aplică tuturor paginilor; `.carte` se aplică mai multor elemente (clasă), `#carte` unui singur element (id).  
 - **Notă:** `border`, `padding`, `margin` și `font-weight` apar deja din Modulul 2; sunt explicate pe larg în lecțiile 3 și 4. În exemple, `font-family: Arial, sans-serif;` este explicat în Lecția 3.
+- **Bonus (indicii):** (1) în `despre.html` pui aceeași linie `<link rel="stylesheet" href="stil.css">`; (2) schimbă culoarea o singură dată, în `stil.css`, apoi reîncarcă ambele pagini; (3) două clase se scriu cu spațiu între ele: `class="carte rara"`; (4) în panoul **Styles**, în dreapta fiecărei reguli, apare numele fișierului și rândul.

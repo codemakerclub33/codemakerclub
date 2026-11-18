@@ -1,21 +1,37 @@
-Lecția a zecea din Modulul patru. Proiect: Pagina interactivă.
+Lecția zece. Testul cu scor: proiect, pagina interactivă.
 
-Ai învățat variabile, decizii, bucle, funcții, liste, obiecte, DOM și evenimente. Azi le pui pe toate într-un singur proiect: un test cu întrebări și scor, făcut de tine, pe un subiect la alegere. Pagina pune o întrebare, tu alegi un răspuns, ea îți spune dacă ai nimerit, ține scorul și la final îți dă un mesaj.
+Ai învățat variabile, decizii, bucle, funcții, liste, obiecte, DOM și evenimente. Azi le pui pe toate într-un singur proiect: un test cu întrebări și scor, făcut de tine, chiar în pagina ta, despre subiectul articolului tău de pe Wikipedia. Pagina pune o întrebare, tu alegi un răspuns, ea îți spune dacă ai nimerit, ține scorul și la final îți dă un mesaj.
 
-Obiectivul. Minim: un test cu cel puțin patru întrebări, în care apeși un răspuns, vezi corect sau greșit și la final vezi scorul. Complet: în plus stil cu CSS, progres, blocarea răspunsului după prima alegere, mesaj final cu else if, buton de reluare și o prezentare de un minut.
+Ce facem azi. La final ai, în pagina ta, o secțiune cu testul: o listă de întrebări, butoane de răspuns create din JavaScript, scor, mesaje pentru răspuns corect sau greșit, un buton pentru următoarea întrebare, un ecran final cu mesaj în funcție de scor și un buton de reluare. Un proiect adevărat te obligă să folosești lucrurile învățate împreună, iar dacă o parte nu merge, vezi imediat.
 
-Siguranța. Alege un subiect potrivit pentru copii: animale, sport, jocuri, spațiu. Nu cere și nu afișa date personale. Verifică întrebările, ca să aibă un singur răspuns corect clar. Pagina nu trimite nimic nicăieri.
+Siguranță înainte de toate. Subiectul testului este sigur și potrivit pentru copii. Nu ceri și nu afișezi date personale. Întrebările trebuie să aibă un răspuns corect clar, pe care îl verifici în articol sau cu un adult. Nu copia întrebări din internet fără să le rescrii cu cuvintele tale. Tot ce se întâmplă rămâne în browserul tău.
 
-Primul pas. Planul: subiectul, cinci întrebări cu trei răspunsuri fiecare și răspunsul corect. Al doilea pas: scheletul paginii cu secțiunea joc și secțiunea final, ascunsă cu atributul hidden. Clasele corect și greșit se scriu în CSS, iar JavaScript doar le pornește.
+Instrucțiuni noi azi. Azi nu învățăm instrucțiuni noi, cu o singură excepție: atributul hidden, care ascunde sau arată un element.
 
-Al treilea pas. Întrebările sunt o listă de obiecte. Fiecare obiect are text, o listă de opțiuni și poziția răspunsului corect, numărând de la zero. Al patrulea pas: o funcție arată întrebarea curentă, creează câte un buton pentru fiecare răspuns și îl adaugă în pagină. Variabilele indice, scor și am răspuns țin starea jocului.
+Pregătirea. Creezi folderul lecției ca o copie a folderului din lecția trecută și lași în script tot ce ai de la lecția nouă. Azi adaugi testul sub el.
 
-Al cincilea pas. Când apeși un răspuns, compari poziția lui cu cea corectă. Dacă ai nimerit, scorul crește și butonul devine verde. Dacă nu, butonul devine roșu și răspunsul corect se colorează în verde. Variabila am răspuns împiedică să răspunzi de două ori. Butonul următoarea mărește indicele sau duce la ecranul final, unde un else if alege mesajul. Butonul de reluare resetează totul.
+Primul pas. Alegi cinci lucruri din articolul tău și scrii cinci întrebări, fiecare cu trei răspunsuri și un singur răspuns corect. Verifici fiecare răspuns în articol.
 
-Verificarea. Bifezi lista: întrebări corecte, butoane create din JavaScript, scor corect, progres, mesaj final, reluare, fără erori în consolă, cod indentat și comentat, pagina arată bine pe telefon. Apoi prezinți un minut și lași un coleg să joace.
+Al doilea pas. Adaugi în pagină secțiunea testului, cu elementele care au identificatori, și regulile de stil. Atributul hidden ascunde butonul pentru următoarea întrebare și ecranul final. Clasele pentru corect și greșit le va pune JavaScript, dar aspectul lor stă în C-S-S. Fiecare lucru la locul lui.
 
-Greșeli frecvente. Poziția corectă nu există. Ai uitat virgula între obiecte. Ai uitat să golești butoanele vechi. Ai uitat să resetezi scorul la joacă din nou.
+Al treilea pas. Datele stau într-o listă de obiecte. Fiecare întrebare este un obiect cu trei proprietăți: textul, lista de răspunsuri și poziția răspunsului corect, numărând de la zero. Respecți virgulele dintre proprietăți și dintre obiecte.
 
-Tema. Arată testul unui membru al familiei.
+Al patrulea pas. Găsești elementele paginii și creezi trei variabile care țin starea jocului: la ce întrebare suntem, scorul și dacă ai răspuns deja. Funcția care arată întrebarea scrie progresul și textul, golește butoanele vechi și creează câte un buton pentru fiecare răspuns. Fiecare buton își aduce aminte de poziția lui.
 
-Recapitulare. Date în listă de obiecte, stare în variabile, butoane create din cod, mesaje cu decizii. Felicitări, ai terminat Modulul patru!
+Al cincilea pas. Funcția care alege răspunsul nu te lasă să răspunzi de două ori. Dacă ai nimerit, scorul crește și butonul devine verde. Dacă nu, butonul devine roșu, iar răspunsul corect se colorează verde. Apoi apare butonul pentru următoarea întrebare, sau pentru rezultat, la ultima.
+
+Al șaselea pas. Butonul următoarea mărește poziția întrebării. Dacă mai sunt întrebări, le arată, altfel arată ecranul final. Mesajul final se alege cu else if, după scor. La joacă din nou resetezi starea și pornești testul de la început. Ultima linie din cod pornește jocul când se încarcă pagina.
+
+Al șaptelea pas. Verifici proiectul cu o listă: subiect potrivit, întrebări corecte, butoane create din JavaScript, scor corect, progres, mesaj final, reluare, text pus doar cu text content, fără erori în consolă, cod indentat și pagină bună pe telefon.
+
+Al optulea pas. Prezinți testul într-un minut: despre ce este, care este cea mai grea întrebare, de ce ești mândru, ce a fost greu, ce ai adăuga. Lași un coleg să joace testul și să îți spună un lucru reușit și un lucru care se poate îmbunătăți.
+
+De făcut azi. Minim: un test cu cel puțin patru întrebări, în care vezi dacă ai nimerit și la final scorul. Complet: stil cu clase, progres, blocarea răspunsului, mesaj final, buton de reluare și comentarii.
+
+Bonus. Întrebări amestecate, un cronometru, un record salvat în browser și imagini pentru întrebări.
+
+Greșeli frecvente. Ai marcat greșit răspunsul corect. Ai uitat o virgulă sau ai pus un singur egal în comparație. Ai scris mai mic sau egal în buclă. Ai uitat variabila care blochează al doilea răspuns. Nu ai golit butoanele vechi. Nu ai resetat starea la reluare. Ai scris diferit identificatorii. Ai pus date personale.
+
+Tema. Termini proiectul și arăți testul cuiva din familie. Încerci două exemple de acasă: scorul în procente și butoane blocate după răspuns. Mai ai trei exerciții, de la B până la D, printre care o autoevaluare a întregului modul.
+
+Recapitulare. Datele stau într-o listă de obiecte, starea într-un set de variabile, elementele noi se creează cu JavaScript, iar aspectul se schimbă prin clase din C-S-S. Ai terminat modulul de JavaScript. Felicitări!

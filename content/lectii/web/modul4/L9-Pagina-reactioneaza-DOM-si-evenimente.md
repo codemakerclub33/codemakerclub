@@ -1,19 +1,15 @@
-# LECȚIA 9 — Pagina reacționează: DOM și evenimente
+# LECȚIA 9 — Pagina care reacționează
+### DOM și evenimente
 **Modulul 4 · JavaScript pentru începători · 2 ore**  
 **Code Maker Club · JavaScript Starter**
 
-> Până acum rezultatele programelor tale apăreau doar în consolă. Azi **pagina însăși prinde viață**: apeși un buton și se schimbă un text, scrii un cuvânt și apare într-o listă, apeși alt buton și pagina trece în „modul noapte”. Pentru asta înveți două lucruri: cum **găsește** JavaScript elementele paginii (DOM) și cum **ascultă** ce face utilizatorul (evenimente).  
-> Proiect: **„Pagina mea care reacționează”** · folder: `Prenume_Nume_W4_L9` (ex. `Ana_Pop_W4_L9`)
+> Până acum rezultatele programelor tale apăreau doar în consolă. Azi **pagina ta însăși prinde viață**: apeși un buton și se schimbă un text, scrii un cuvânt și apare într-o listă, apeși alt buton și pagina trece în „modul noapte”. Pentru asta înveți două lucruri: cum **găsește** JavaScript elementele paginii (DOM) și cum **ascultă** ce face utilizatorul (evenimente).  
+> Proiect: **„Pagina care reacționează”** · folder: `Prenume_Nume_W4_L9` (ex. `Ana_Pop_W4_L9`)
 
 ---
 
-## Obiectiv
-La finalul orei știi ce este DOM-ul, cum găsești un element cu `document.querySelector`, cum îi schimbi textul cu `textContent`, cum îi schimbi aspectul cu `classList`, cum asculți un click cu `addEventListener`, cum citești ce a scris utilizatorul într-un câmp și cum adaugi un element nou în pagină.  
-**Minim:** un buton care, la apăsare, schimbă un text din pagină.  
-**Ținta orei (Complet):** + un contor cu butoane, un buton care schimbă aspectul paginii, o listă la care adaugi elemente dintr-un câmp de text și explicarea diferenței dintre a scrie o funcție și a o lăsa să ruleze la un eveniment.
-
-## De ce contează
-Aici se întâlnesc cele trei limbaje: HTML pune elementele, CSS le dă aspectul, JavaScript le face să reacționeze. Fiecare site cu butoane, jocuri, formulare și meniuri care se deschid folosește exact aceste unelte.
+## Ce facem azi
+La final ai `tema.html` cu trei lucruri noi, care funcționează în pagină, nu în consolă: un buton „Mod noapte”, un contor cu butoane și o listă la care adaugi fapte scrise într-un câmp. Știi ce este DOM-ul, cum găsești un element cu `document.querySelector`, cum îi schimbi textul cu `textContent`, cum îi schimbi aspectul cu `classList`, cum asculți un click cu `addEventListener`, cum citești ce a scris utilizatorul într-un câmp și cum adaugi un element nou în pagină. Aici se întâlnesc cele trei limbaje: HTML pune elementele, CSS le dă aspectul, JavaScript le face să reacționeze. Fiecare site cu butoane, jocuri, formulare și meniuri care se deschid folosește exact aceste unelte.
 
 ---
 
@@ -21,13 +17,30 @@ Aici se întâlnesc cele trei limbaje: HTML pune elementele, CSS le dă aspectul
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pornim proiectul |
-| 15–35 | DOM: găsim un element, îi schimbăm textul (**Exemplele 1–2**) |
-| 35–60 | Evenimente: `click` (**Exemplele 3–4**) |
-| 60–75 | Schimbăm aspectul cu `classList` (**Exemplul 5**) |
-| 75–95 | Citim un câmp de text · adăugăm în listă (**Exemplele 6–7**) |
-| 95–115 | Proiect (**Exemplul 8**) |
+| 0–10 | Recapitulare · pregătim `tema.html` |
+| 10–22 | DOM: găsim un element (**Exemplul 1**) |
+| 22–32 | Schimbăm textul cu `textContent` (**Exemplul 2**) |
+| 32–45 | Evenimente: `click` (**Exemplul 3**) |
+| 45–58 | Un contor (**Exemplul 4**) |
+| 58–70 | Schimbăm aspectul cu `classList` (**Exemplul 5**) |
+| 70–80 | Citim un câmp de text (**Exemplul 6**) |
+| 80–90 | Adăugăm elemente într-o listă (**Exemplul 7**) |
+| 90–115 | Mini-proiect: pagina care reacționează (**Exemplul 8**) |
 | 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `document.querySelector("#id")` | Găsește un element al paginii | `document.querySelector("#titlu")` |
+| `querySelectorAll(".clasa")` | Găsește toate elementele cu o clasă | `querySelectorAll(".carte")` |
+| `element.textContent` | Textul din interiorul elementului | `titlu.textContent = "Salut";` |
+| `element.addEventListener("click", …)` | Rulează o funcție la un eveniment | `buton.addEventListener("click", function () { … });` |
+| `classList.toggle("clasa")` | Adaugă sau scoate o clasă CSS | `document.body.classList.toggle("noapte");` |
+| `camp.value` | Textul scris într-un câmp | `camp.value.trim()` |
+| `createElement` și `appendChild` | Creează un element și îl pune în pagină | `lista.appendChild(element);` |
 
 ---
 
@@ -39,13 +52,13 @@ Din lecția trecută ții minte că:
 - o funcție primește parametri și poate returna un rezultat;
 - `const` ține un obiect sau o listă, dar permite schimbarea conținutului.
 
-**Încearcă tu (4 min)**  
-- [ ] Creează folderul `Prenume_Nume_W4_L9` cu `index.html` (scheletul complet) și `script.js`  
-- [ ] Pune în `index.html` un `<h1 id="titlu">Pagina mea</h1>`, un `<p id="mesaj">Salut!</p>` și un `<button id="buton">Apasă aici</button>`  
-- [ ] Creează și `stil.css` (poate fi gol acum), legat în `<head>` cu `<link rel="stylesheet" href="stil.css">`; îl vom folosi în exemplele de mai jos  
-- [ ] Leagă `script.js` cu `<script src="script.js"></script>` **chiar înainte de `</body>`** (este important: elementele trebuie să existe înainte să le cauți)  
+**Încearcă tu (10 min)**  
+- [ ] Creează folderul `Prenume_Nume_W4_L9` ca o **copie** a folderului `Prenume_Nume_W4_L8` (cu `tema.html`, `script.js`, `stil.css`, `imagini`, `media`)  
+- [ ] Golește `script.js` (sau comentează tot ce era înăuntru)  
+- [ ] În `tema.html` pune `id="titlu"` pe `<h1>` și adaugă, sub el, `<p id="mesaj">Salut!</p>` și `<button id="buton">Apasă aici</button>`  
+- [ ] Verifică ca linia `<script src="script.js"></script>` să fie **chiar înainte de `</body>`** (este important: elementele trebuie să existe înainte să le cauți)  
 
-> De aici înainte, exemplele arată ce scrii în `index.html` și, separat, în `script.js`.
+> De aici înainte, exemplele arată ce scrii în `tema.html` și, separat, în `script.js`. Rezultatele le vezi **în pagină**, nu în consolă.
 
 ---
 
@@ -68,6 +81,22 @@ const mesaj = document.querySelector("#mesaj");
 
 Dacă elementul nu există (ai scris greșit selectorul), rezultatul este `null` și vei primi erori mai târziu („Cannot read properties of null”).
 
+Dacă ai mai multe elemente cu aceeași clasă, `querySelectorAll` le găsește pe **toate**, iar tu le parcurgi cu `for…of`:
+
+```javascript
+const carti = document.querySelectorAll(".carte");
+
+for (const carte of carti) {
+  console.log(carte.textContent);
+}
+```
+
+**Încearcă tu (6 min)**  
+- [ ] Găsește elementul cu `id="titlu"` și afișează-l în consolă cu `console.log`  
+- [ ] Găsește un element cu `id` greșit și vezi ce apare (`null`)  
+- [ ] Găsește toate elementele `.carte` din pagina ta (sau alt selector care există) și afișează câte sunt  
+- [ ] Spune cu voce tare ce este DOM-ul  
+
 ### Exemplul 2 — Schimbăm textul
 
 ```javascript
@@ -83,15 +112,11 @@ console.log(titlu.textContent);
 
 **Atenție la securitate:** pentru a pune text primit de la utilizator folosim întotdeauna `textContent`. Există și `innerHTML`, care înțelege etichete HTML, dar **nu îl folosim cu text scris de utilizator**, pentru că cineva ar putea strecura cod rău intenționat. `textContent` este sigur: tratează tot ca simplu text.
 
-Dacă ai mai multe elemente cu aceeași clasă, `querySelectorAll` le găsește pe **toate**, iar tu le parcurgi cu `for…of`:
-
-```javascript
-const carti = document.querySelectorAll(".carte");
-
-for (const carte of carti) {
-  carte.textContent = "Carte schimbată";
-}
-```
+**Încearcă tu (6 min)**  
+- [ ] Schimbă textul titlului paginii tale din JavaScript  
+- [ ] Schimbă textul paragrafului `#mesaj`  
+- [ ] Pune în `#mesaj` o propoziție cu numele subiectului articolului tău de pe Wikipedia  
+- [ ] Explică de ce pentru text de la utilizator nu folosim `innerHTML`  
 
 **Gata când:**  
 - [ ] Ai găsit un element cu `querySelector` și ai schimbat textul cu `textContent`  
@@ -107,7 +132,7 @@ for (const carte of carti) {
 
 Un **eveniment** este ceva ce se întâmplă în pagină: un click, o tastă apăsată, mouse-ul care trece peste ceva. Poți spune unui element: „când se întâmplă X, rulează funcția asta”.
 
-În `index.html`:
+În `tema.html`:
 
 ```html
 <p id="mesaj">Nu ai apăsat încă.</p>
@@ -134,6 +159,12 @@ Părțile:
 - sfârșitul: `});` — acolada funcției, paranteza lui `addEventListener` și `;`.
 
 Dacă pagina nu se schimbă, deschide consola (F12; pe Mac Cmd + Option + I): apare un mesaj roșu care spune ce nu merge.
+
+**Încearcă tu (6 min)**  
+- [ ] Fă un buton care schimbă textul unui titlu sau al unui paragraf  
+- [ ] Fă butonul să scrie și în consolă „Click!”  
+- [ ] Fă un buton „Arată un fapt” care pune în `#mesaj` un fapt din articolul tău  
+- [ ] Scoate acolada de la sfârșit și citește eroarea din consolă, apoi pune-o la loc  
 
 ### Exemplul 4 — Un contor
 
@@ -174,9 +205,15 @@ Observă:
 - după ce schimbi variabila, **actualizezi și textul din pagină**: variabila nu se vede singură.
 
 **Încearcă tu (8 min)**  
-- [ ] Fă un buton care schimbă textul unui titlu  
 - [ ] Fă un contor cu butoane de +1, −1 și reset  
-- [ ] Verifică în consolă ce eroare apare dacă scrii greșit un selector  
+- [ ] Fă ca valoarea să nu coboare sub 0  
+- [ ] Pune contorul în pagina ta, pentru ceva din articolul tău (de exemplu „Imagini văzute”)  
+- [ ] Mută `let numar = 0;` în interiorul unei funcții și vezi ce se strică  
+
+**Gata când:**  
+- [ ] Ai un buton care schimbă un text la click  
+- [ ] Ai un contor cu cel puțin două butoane, care ține minte valoarea  
+- [ ] Poți explica de ce variabila contorului stă în afara funcțiilor  
 
 ---
 
@@ -208,6 +245,12 @@ butonTema.addEventListener("click", function () {
 `document.body` este elementul `<body>` (nu are nevoie de `querySelector`). Cu această metodă, stilul rămâne în CSS, iar JavaScript doar **pornește și oprește** clasele. Așa lucrează programatorii: fiecare limbaj face ce știe mai bine.
 
 Dacă totuși vrei o schimbare rapidă, `style` merge, cu proprietatea scrisă în **camelCase**: `titlu.style.backgroundColor = "gold";` (fără liniuță, cu majusculă).
+
+**Încearcă tu (8 min)**  
+- [ ] Scrie în `stil.css` clasa `.noapte` și un buton `#tema` care o pornește și o oprește  
+- [ ] Încearcă `add` și `remove` în locul lui `toggle`  
+- [ ] Fă ca și cardurile paginii tale să aibă alte culori în modul noapte (`body.noapte .carte { … }`)  
+- [ ] Schimbă culoarea titlului cu `style.color` și spune de ce clasa este mai bună  
 
 **Gata când:**  
 - [ ] Ai un buton care adaugă sau scoate o clasă cu `classList.toggle`  
@@ -248,6 +291,12 @@ butonSaluta.addEventListener("click", function () {
 
 Ca să transformi în număr: `Number(camp.value)`. Pentru siguranță, **nu cerem nume reale sau date personale**: folosește nume de animale, jocuri sau personaje inventate.
 
+**Încearcă tu (6 min)**  
+- [ ] Fă un câmp de text și un buton care afișează un salut cu textul scris  
+- [ ] Verifică dacă textul este gol înainte să-l afișezi  
+- [ ] Fă un câmp în care scrii numele unui animal și butonul îl afișează cu litere mari  
+- [ ] Scrie doar spații în câmp și vezi ce face `trim()`  
+
 ### Exemplul 7 — Adăugăm un element în listă
 
 ```html
@@ -286,128 +335,56 @@ Cum se **creează** un element nou:
 `return;` fără valoare **oprește** funcția mai devreme (dacă textul este gol, nu mai adăugăm nimic).
 
 **Încearcă tu (8 min)**  
-- [ ] Fă un câmp de text și un buton care afișează un salut cu textul scris  
-- [ ] Verifică dacă textul este gol înainte să afișezi textul  
 - [ ] Fă o listă la care adaugi elemente dintr-un câmp, cu golirea câmpului după adăugare  
+- [ ] Verifică dacă textul este gol înainte de adăugare  
+- [ ] Fă lista să primească fapte despre subiectul articolului tău  
+- [ ] Adaugă un buton care scrie în consolă câte elemente are lista (`lista.children.length`)  
+
+**Gata când:**  
+- [ ] Ai citit un câmp cu `.value` și ai folosit `.trim()`  
+- [ ] Ai adăugat un element nou cu `createElement` și `appendChild`  
+- [ ] Câmpul gol primește un mesaj sau este ignorat  
 
 ---
 
-## 6. Proiectul
+## 6. Mini-proiect: toate la un loc
 
-### Exemplul 8 — „Pagina mea care reacționează”
+### Exemplul 8 — „Pagina care reacționează”
 
-Fișierul `index.html`:
+Adaugi trei lucruri în `tema.html`. În primul rând, în `<header>` (sau lângă titlu) pui butonul pentru modul noapte, iar în `<main>` adaugi două secțiuni noi:
 
 ```html
-<!DOCTYPE html>
-<html lang="ro">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pagina mea care reacționează</title>
-  <link rel="stylesheet" href="stil.css">
-</head>
-<body>
-  <header>
-    <h1 id="titlu">Pagina mea care reacționează</h1>
-    <button id="tema">Mod noapte</button>
-  </header>
+<button id="tema">Mod noapte</button>
 
-  <main>
-    <section class="carte">
-      <h2>Contor de goluri</h2>
-      <p class="mare">Goluri: <span id="numar">0</span></p>
-      <button id="plus">+1</button>
-      <button id="minus">-1</button>
-      <button id="reset">Resetează</button>
-    </section>
+<section class="carte">
+  <h2>Contor de aprecieri</h2>
+  <p class="mare">Aprecieri: <span id="numar">0</span></p>
+  <button id="plus">+1</button>
+  <button id="minus">-1</button>
+  <button id="reset">Resetează</button>
+</section>
 
-    <section class="carte">
-      <h2>Jocurile mele preferate</h2>
-      <input type="text" id="joc" placeholder="Scrie un joc">
-      <button id="adauga">Adaugă</button>
-      <p id="eroare" class="eroare"></p>
-      <ul id="lista"></ul>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<section class="carte">
+  <h2>Faptele mele</h2>
+  <input type="text" id="fapt" placeholder="Scrie un fapt">
+  <button id="adauga">Adaugă</button>
+  <p id="eroare" class="eroare"></p>
+  <ul id="lista"></ul>
+</section>
 ```
 
-Fișierul `stil.css`:
+În `stil.css` adaugi la sfârșit (pagina ta are deja culori și fonturi din Modulul 3):
 
 ```css
-* {
-  box-sizing: border-box;
+/* Modul noapte, pornit și oprit din JavaScript */
+body.noapte {
+  background-color: #1d2d44;
+  color: #eaf4f8;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f9f9;
-  color: #264653;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  background-color: navy;
-  color: white;
-  padding: 10px 20px;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 1.4rem;
-}
-
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
-  display: grid;
-  gap: 20px;
-}
-
-.carte {
-  background-color: white;
-  color: #264653;
-  border: 2px solid navy;
-  border-radius: 12px;
-  padding: 1rem;
-}
-
-.mare {
-  font-size: 1.5rem;
-}
-
-button {
-  background-color: navy;
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  min-height: 44px;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-button:hover,
-button:focus {
-  background-color: crimson;
-}
-
-input {
-  padding: 10px;
-  font-size: 1rem;
-  min-height: 44px;
-  border: 2px solid navy;
-  border-radius: 8px;
+body.noapte .carte {
+  background-color: #26394f;
+  color: #eaf4f8;
 }
 
 .eroare {
@@ -415,14 +392,27 @@ input {
   min-height: 1.2em;
 }
 
-/* Modul noapte, pornit și oprit din JavaScript */
-.noapte {
-  background-color: #1d2d44;
-  color: white;
+.mare {
+  font-size: 1.5rem;
+}
+
+button {
+  min-height: 44px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+input {
+  min-height: 44px;
+  padding: 10px;
+  font-size: 1rem;
 }
 ```
 
-Fișierul `script.js`:
+Dacă pagina ta folosește variabile de culoare (`--fundal`, `--text`), poți schimba doar ele în `body.noapte`, în loc de culorile scrise aici.
+
+Și în `script.js`, tot programul:
 
 ```javascript
 // ----- 1. Modul noapte -----
@@ -461,24 +451,24 @@ reset.addEventListener("click", function () {
   actualizeazaContor();
 });
 
-// ----- 3. Lista de jocuri -----
-const campJoc = document.querySelector("#joc");
+// ----- 3. Lista de fapte -----
+const campFapt = document.querySelector("#fapt");
 const butonAdauga = document.querySelector("#adauga");
 const eroare = document.querySelector("#eroare");
 const lista = document.querySelector("#lista");
 
-const MAX_JOCURI = 8;
+const MAX_FAPTE = 8;
 
 butonAdauga.addEventListener("click", function () {
-  const text = campJoc.value.trim();
+  const text = campFapt.value.trim();
 
   if (text === "") {
-    eroare.textContent = "Scrie mai întâi numele unui joc.";
+    eroare.textContent = "Scrie mai întâi un fapt.";
     return;
   }
 
-  if (lista.children.length >= MAX_JOCURI) {
-    eroare.textContent = `Lista are deja ${MAX_JOCURI} jocuri.`;
+  if (lista.children.length >= MAX_FAPTE) {
+    eroare.textContent = `Lista are deja ${MAX_FAPTE} fapte.`;
     return;
   }
 
@@ -488,83 +478,75 @@ butonAdauga.addEventListener("click", function () {
   element.textContent = text;
   lista.appendChild(element);
 
-  campJoc.value = "";
-  campJoc.focus();
+  campFapt.value = "";
+  campFapt.focus();
 });
 ```
 
-Observă cum **lucrează toate împreună**: CSS-ul scris în Modulul 3 (cu clasa `.noapte`), funcțiile din lecția 7, `if` din lecția 4 și evenimentele de azi. Contorul nu coboară sub 0, câmpul gol primește un mesaj, iar lista are o limită.
+Observă cum **lucrează toate împreună**: CSS-ul din Modulul 3 (cu clasa `.noapte`), funcțiile din lecția 7, `if` din lecția 4 și evenimentele de azi. Contorul nu coboară sub 0, câmpul gol primește un mesaj, iar lista are o limită.
 
-Personalizează proiectul: alt subiect (animale, filme), alt contor (puncte, vieți), alte culori. Nu cere nume reale și nu pune date personale.
+Personalizează: alt contor (puncte, vieți), alte culori, fapte despre alt subiect. Nu cere nume reale și nu pune date personale.
+
+**Încearcă tu (14 min)**  
+- [ ] Adaugă în `tema.html` butonul, contorul și lista, cu textele tale  
+- [ ] Scrie `script.js` cu cele trei părți, nu copiat  
+- [ ] Schimbă contorul să numere ceva din articolul tău și limita listei la 5  
+- [ ] Testează cu tastatura: apasă Tab până la un buton și Enter  
 
 **Gata când:**  
 - [ ] Butonul „Mod noapte” schimbă aspectul paginii  
 - [ ] Contorul merge cu +1, −1 (nu coboară sub 0) și reset  
-- [ ] Lista primește jocuri noi, golește câmpul și avertizează la câmp gol  
+- [ ] Lista primește fapte noi, golește câmpul și avertizează la câmp gol  
 - [ ] Consola nu arată erori roșii  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Pagina care reacționează”
 
-### Exercițiul A — „Pagina mea care reacționează” (obligatoriu)
-În folderul `Prenume_Nume_W4_L9` ai `index.html`, `stil.css` și `script.js`, cu:
-- scriptul legat **chiar înainte de `</body>`**;
-- un **contor** cu cel puțin două butoane și o variabilă care ține minte valoarea;
-- un buton care schimbă aspectul paginii cu `classList.toggle` (clasa scrisă în CSS);
-- un **câmp de text** și o **listă** la care adaugi elemente cu `createElement` și `appendChild`, cu verificarea câmpului gol;
-- text pus în pagină doar cu `textContent` (nu `innerHTML`);
-- cod indentat și cel puțin două comentarii.
+### Minim vs Complet
 
-### Exercițiul B — Ce se întâmplă?
-Spune ce face fiecare cod: (1) `document.querySelector("#titlu").textContent = "Salut";` (2) `buton.addEventListener("click", function () { console.log("Click!"); });` (3) `document.body.classList.add("noapte");` (4) `const x = document.querySelector("#nu-exista"); console.log(x);`
+| | Ce trebuie |
+|--|------------|
+| **Minim** | În `tema.html`, un buton care, la apăsare, schimbă un text din pagină |
+| **Complet** | Minim + un contor cu cel puțin două butoane și o variabilă care ține minte valoarea, un buton care schimbă aspectul cu `classList.toggle` (clasa scrisă în CSS), un câmp de text și o listă la care adaugi elemente cu `createElement` și `appendChild` (cu verificarea câmpului gol), text pus doar cu `textContent`, cod indentat și două comentarii |
 
-### Exercițiul C — Scrie codul
-Scrie codul care: (1) schimbă textul unui paragraf cu `id="info"` în „Gata!”; (2) la click pe un buton `#ascunde`, adaugă clasa `ascuns` pe un element `#cutie` (clasa `.ascuns` o scrii în CSS cu `display: none;`) și o scoate la al doilea click; (3) citește textul din câmpul `#cuvant` și îl afișează cu litere mari în `#rezultat`.
+### Pasul 1 — Minim
+În folderul `Prenume_Nume_W4_L9`:
 
-### Exercițiul D — Găsește greșelile
-Găsește **3 greșeli** în codul de mai jos și repară greșelile. În pagină există un `<button id="buton">` și un `<p id="mesaj">`.
+- [ ] Ai `tema.html` cu scriptul legat chiar înainte de `</body>`  
+- [ ] Ai un buton cu `id` și un element de text cu `id`  
+- [ ] La click, textul se schimbă cu `textContent`  
 
-```text
-const buton = document.querySelector("buton");
-const mesaj = document.querySelector("#mesaj");
-
-function spuneSalut() {
-  mesaj.textcontent = "Salut!";
-}
-
-buton.addEventListener("click", spuneSalut());
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Într-un comentariu din cod: ce este DOM-ul? Ce face `addEventListener`? De ce folosim `textContent` și nu `innerHTML` pentru text scris de utilizator?
-
-**Gata când:**  
-- [ ] Folderul `Prenume_Nume_W4_L9` are `index.html`, `stil.css` și `script.js`  
-- [ ] Pagina funcționează fără erori în consolă  
-- [ ] Ai răspuns la exercițiile B–E  
+### Pasul 2 — Complet
+- [ ] Ai un contor cu cel puțin două butoane și o variabilă în afara funcțiilor  
+- [ ] Ai un buton care schimbă aspectul paginii cu `classList.toggle` (clasa este în `stil.css`)  
+- [ ] Ai un câmp de text și o listă la care adaugi elemente, cu verificarea câmpului gol  
+- [ ] Tot textul pus în pagină folosește `textContent`, nu `innerHTML`  
+- [ ] Codul este indentat și are cel puțin două comentarii  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Pagina mai deșteaptă
+*Doar dacă ai terminat Complet.*
+
+Faci pagina mai interactivă.
+
 - [ ] Fă un buton care schimbă culoarea de fundal a unei cutii, ciclic, printr-o listă de culori (folosește un contor și `culori[i]`)  
 - [ ] Adaugă la listă un buton „Șterge ultimul” cu `lista.lastElementChild.remove()` (verifică întâi dacă lista nu este goală)  
-- [ ] Fă ca tasta **Enter** să adauge un element în listă: `campJoc.addEventListener("keydown", function (e) { if (e.key === "Enter") { … } })`  
+- [ ] Fă ca tasta **Enter** să adauge un element în listă: `campFapt.addEventListener("keydown", function (e) { if (e.key === "Enter") { … } })`  
 - [ ] Afișează sub contor un mesaj „Gol de aur!” când contorul ajunge la 10  
 
 ---
 
 ## Greșeli frecvente
 1. **Scriptul este înainte de elemente** (în `<head>` sau la început) — elementele nu există încă; pune scriptul înainte de `</body>`.  
-2. **Selector greșit** — `querySelector("buton")` caută un tag `<buton>`; pentru `id` scrii `"#buton"`.  
-3. **Ai uitat ghilimelele** în jurul selectorului — scrie `querySelector("#buton")`, nu `querySelector(#buton)`.  
-4. **Ai scris `addEventListener("click", functie())`** — cu paranteze, funcția rulează imediat. Scrie numele ei fără paranteze (`functie`) sau o funcție scrisă direct acolo.  
-5. **Ai scris `textcontent`** sau `Textcontent` — corect este `textContent` (cu C mare).  
-6. **Ai uitat `.value`** la un câmp de text — `camp` este elementul, `camp.value` este textul scris.  
-7. **Ai schimbat variabila, dar nu și pagina** — după `numar++` trebuie `afisaj.textContent = numar;`.  
-8. **Ai creat variabila contorului în interiorul funcției** — se reface la fiecare click; trebuie în afară.  
-9. **Ai folosit `innerHTML` cu text de la utilizator** — folosește `textContent`.  
-10. **Ai uitat să golești câmpul** după adăugare — rămâne textul vechi.  
+2. **Selector greșit** — `querySelector("buton")` caută un tag `<buton>`; pentru `id` scrii `"#buton"`, cu ghilimele (`querySelector(#buton)` nu merge).  
+3. **Ai scris `addEventListener("click", functie())`** — cu paranteze, funcția rulează imediat. Scrie numele ei fără paranteze (`functie`) sau o funcție scrisă direct acolo.  
+4. **Ai scris `textcontent`** sau `Textcontent` — corect este `textContent` (cu C mare).  
+5. **Ai uitat `.value`** la un câmp de text — `camp` este elementul, `camp.value` este textul scris.  
+6. **Ai schimbat variabila, dar nu și pagina** — după `numar++` trebuie `afisaj.textContent = numar;`.  
+7. **Ai creat variabila contorului în interiorul funcției** — se reface la fiecare click; trebuie în afară.  
+8. **Ai folosit `innerHTML` cu text de la utilizator** — folosește `textContent`.  
 
 ---
 
@@ -584,18 +566,67 @@ buton.addEventListener("click", spuneSalut());
 - Ce tip de valoare dă `camp.value`?
 
 ## Temă
-Fă o pagină „Colecția mea”: un câmp și un buton care adaugă elemente într-o listă, un contor cu câte elemente ai adăugat și un buton „Golește lista”. Salvează în `Prenume_Nume_W4_L9`.
+1. Termină `Prenume_Nume_W4_L9` (Minim, apoi Complet).  
+2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
+3. **Exemple pentru acasă.** Încearcă amândouă:
+
+**Acasă 1 — Trece mouse-ul peste buton.**
+
+```javascript
+const buton = document.querySelector("#buton");
+
+buton.addEventListener("mouseover", function () {
+  buton.textContent = "Mă vezi!";
+});
+
+buton.addEventListener("mouseout", function () {
+  buton.textContent = "Apasă aici";
+});
+```
+
+Evenimentul `mouseover` apare când mouse-ul intră pe element, iar `mouseout` când iese. Textul butonului se schimbă singur, fără click. Încearcă să schimbi și culoarea.
+
+**Acasă 2 — Numărăm elementele din pagină.**
+
+```javascript
+const elemente = document.querySelectorAll("li");
+console.log(elemente.length);
+```
+
+`querySelectorAll` dă o listă, iar `length` arată câte elemente a găsit. Numără cu el câte `<li>`, `<p>` sau `<img>` are pagina ta.
+
+4. **Încă patru exerciții (B–E):**
+
+**B — Ce se întâmplă?** Spune ce face fiecare cod: (1) `document.querySelector("#titlu").textContent = "Salut";` (2) `buton.addEventListener("click", function () { console.log("Click!"); });` (3) `document.body.classList.add("noapte");` (4) `const x = document.querySelector("#nu-exista"); console.log(x);`
+
+**C — Scrie codul.** Scrie codul care: (1) schimbă textul unui paragraf cu `id="info"` în „Gata!”; (2) la click pe un buton `#ascunde`, adaugă clasa `ascuns` pe un element `#cutie` (clasa `.ascuns` o scrii în CSS cu `display: none;`) și o scoate la al doilea click; (3) citește textul din câmpul `#cuvant` și îl afișează cu litere mari în `#rezultat`.
+
+**D — Găsește greșelile.** Găsește **3 greșeli** în codul de mai jos și repară greșelile. În pagină există un `<button id="buton">` și un `<p id="mesaj">`.
+
+```text
+const buton = document.querySelector("buton");
+const mesaj = document.querySelector("#mesaj");
+
+function spuneSalut() {
+  mesaj.textcontent = "Salut!";
+}
+
+buton.addEventListener("click", spuneSalut());
+```
+
+**E — Explică cu cuvintele tale.** Într-un comentariu din cod: ce este DOM-ul? Ce face `addEventListener`? De ce folosim `textContent` și nu `innerHTML` pentru text scris de utilizator?
 
 ## Ce urmează — Lecția 10
-Proiectul final al modulului: **„Pagina interactivă”**, un mic joc sau un test făcut de tine, cu butoane, scor și mesaje, folosind tot ce ai învățat.
+Proiectul final al modulului: **„Testul cu scor”**, un test făcut de tine, cu butoane, scor și mesaje, pe pagina ta, folosind tot ce ai învățat.
 
 ---
 
 ## Răspunsuri
 - **Quiz scurt:** (1) pentru că elementele trebuie să existe în pagină înainte ca scriptul să le caute; (2) `document.querySelector("#titlu")`; (3) numai când apare evenimentul (de exemplu la click), nu imediat; (4) adaugă clasa dacă lipsește și o scoate dacă există (un comutator); (5) text (`string`), chiar dacă utilizatorul a scris un număr.  
-- **Dacă ritmul clasei este lent:** `querySelectorAll`, `style.backgroundColor` și `focus()` sunt opționale; puteți da elevilor CSS-ul gata, ca timpul să meargă pe JavaScript.  
-- **Exercițiul B:** (1) schimbă textul elementului cu `id="titlu"` în „Salut”; (2) la fiecare click pe `buton`, scrie „Click!” în consolă; (3) adaugă clasa `noapte` pe `<body>`; (4) afișează `null`, pentru că elementul nu există.  
-- **Exercițiul C:** (1) `document.querySelector("#info").textContent = "Gata!";`; (2) `document.querySelector("#ascunde").addEventListener("click", function () { document.querySelector("#cutie").classList.toggle("ascuns"); });` plus `.ascuns { display: none; }` în CSS; (3) `document.querySelector("#rezultat").textContent = document.querySelector("#cuvant").value.toUpperCase();` (într-un `click`).  
-- **Exercițiul D:** (1) `"buton"` trebuie `"#buton"`; (2) `textcontent` trebuie `textContent`; (3) `spuneSalut()` cu paranteze rulează imediat; trebuie `spuneSalut`.  
-- **Exercițiul E:** DOM este structura paginii ca un arbore de elemente; `addEventListener` spune unui element să ruleze o funcție când apare un eveniment; `textContent` tratează totul ca text, iar `innerHTML` poate rula cod rău intenționat.  
-- **Notă pentru profesor:** cea mai frecventă problemă este „nu se întâmplă nimic”: verificați, în ordine, consola (mesaj roșu), selectorul (`#`), poziția scriptului și paranteza la `addEventListener`. În clasă, nu cereți nume reale: folosiți animale, jocuri sau personaje inventate, iar elevii să nu trimită nimic nicăieri: tot ce se scrie rămâne în browserul lor. Analogie utilă: evenimentul este soneria, funcția este ce face portarul când sună.
+- **Dacă ritmul clasei este lent:** `querySelectorAll`, `style.backgroundColor` și `focus()` sunt opționale; poți folosi CSS-ul din Exemplul 8 așa cum este, ca timpul să meargă pe JavaScript.  
+- **Tema, exercițiul B:** (1) schimbă textul elementului cu `id="titlu"` în „Salut”; (2) la fiecare click pe `buton`, scrie „Click!” în consolă; (3) adaugă clasa `noapte` pe `<body>`; (4) afișează `null`, pentru că elementul nu există.  
+- **Tema, exercițiul C:** (1) `document.querySelector("#info").textContent = "Gata!";`; (2) `document.querySelector("#ascunde").addEventListener("click", function () { document.querySelector("#cutie").classList.toggle("ascuns"); });` plus `.ascuns { display: none; }` în CSS; (3) `document.querySelector("#rezultat").textContent = document.querySelector("#cuvant").value.toUpperCase();` (într-un `click`).  
+- **Tema, exercițiul D:** (1) `"buton"` trebuie `"#buton"`; (2) `textcontent` trebuie `textContent`; (3) `spuneSalut()` cu paranteze rulează imediat; trebuie `spuneSalut`.  
+- **Tema, exercițiul E:** DOM este structura paginii ca un arbore de elemente; `addEventListener` spune unui element să ruleze o funcție când apare un eveniment; `textContent` tratează totul ca text, iar `innerHTML` poate rula cod rău intenționat.  
+- **Bonus (indicii):** (1) ții o listă de culori și un contor `i`; la click treci la următoarea (`i = (i + 1) % culori.length`) și pui `culori[i]` în `style.backgroundColor`; (2) `if (lista.children.length > 0)` înainte de `lista.lastElementChild.remove()`; (3) pui în funcție ce ai scris la click, ca s-o chemi și din `keydown`; (4) în funcția contorului adaugi `if (numar === 10)` și scrii mesajul într-un `<p>` de sub contor.  
+- **Notă informativă:** dacă „nu se întâmplă nimic”, verifică, în ordine: consola (mesaj roșu), selectorul (`#`), poziția scriptului și paranteza de la `addEventListener`. Nu scrie nume reale: folosește animale, jocuri sau personaje inventate. Nu trimiți nimic nicăieri: tot ce scrii rămâne în browserul tău. Ține minte: evenimentul este soneria, funcția este ce face portarul când sună.

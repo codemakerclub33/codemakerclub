@@ -1,19 +1,15 @@
-# LECȚIA 3 — Numere, text și calcule
+# LECȚIA 3 — Zarul și calculatorul
+### Numere, text și calcule
 **Modulul 4 · JavaScript pentru începători · 2 ore**  
 **Code Maker Club · JavaScript Starter**
 
 > Calculatorul este foarte bun la două lucruri: **calcule** și **text**. Azi înveți restul împărțirii, rotunjirile, numerele aleatoare (ca să arunci un zar), cum lucrezi cu litere mari și mici, cum afli lungimea unui text și cum ceri o valoare de la utilizator cu `prompt`.  
-> Proiect: **„Calculatorul și zarul meu”** · folder: `Prenume_Nume_W4_L3` (ex. `Ana_Pop_W4_L3`)
+> Proiect: **„Zarul și calculatorul”** · folder: `Prenume_Nume_W4_L3` (ex. `Ana_Pop_W4_L3`)
 
 ---
 
-## Obiectiv
-La finalul orei știi să folosești operatorii `+ - * / % **` și parantezele, să rotunjești cu `Math.round`, `Math.floor` și `Math.ceil`, să faci un număr aleator, să lucrezi cu text (`length`, `toUpperCase`, `toLowerCase`, `includes`, `slice`), să transformi text în număr cu `Number(…)` și să ceri date cu `prompt`.  
-**Minim:** un program care cere două numere și afișează suma și produsul lor.  
-**Ținta orei (Complet):** + restul împărțirii, un zar aleator de la 1 la 6, transformări de text, rotunjiri și explicarea diferenței dintre `"5" + 3` și `5 + 3`.
-
-## De ce contează
-Aproape orice program lucrează cu numere și cu text: scoruri, prețuri, nume, mesaje. Dacă înțelegi cum se comportă fiecare, eviți multe greșeli ciudate, de exemplu `2 + 3` care pare să dea `23`.
+## Ce facem azi
+La final ai un program care cere două numere și face cu ele cinci calcule, aruncă un zar și lucrează cu un text: îl scrie cu litere mari, îi numără literele și îi arată prima literă. Știi să folosești operatorii `+ - * / % **` și parantezele, să rotunjești, să faci un număr aleator, să folosești metodele de bază pentru text și să transformi un text în număr. Aproape orice program lucrează cu numere și cu text: scoruri, prețuri, nume, mesaje. Dacă înțelegi cum se comportă fiecare, eviți greșeli ciudate, de exemplu `2` plus `3` care pare să dea `23`.
 
 ---
 
@@ -21,13 +17,29 @@ Aproape orice program lucrează cu numere și cu text: scoruri, prețuri, nume, 
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Recapitulare · pornim proiectul |
-| 15–35 | Operatori, rest, putere, paranteze (**Exemplele 1–2**) |
-| 35–50 | Rotunjiri și numere aleatoare (**Exemplele 3–4**) |
-| 50–75 | Text: lungime, litere mari și mici, tăiere (**Exemplele 5–6**) |
-| 75–95 | Text sau număr? `Number(...)` și `prompt` (**Exemplele 7–8**) |
-| 95–115 | Proiect (**Exemplul 9**) |
+| 0–15 | Recapitulare · pornim proiectul · alegem date din articol |
+| 15–30 | Operatori, rest, putere, paranteze (**Exemplele 1–2**) |
+| 30–45 | Rotunjiri și numere aleatoare (**Exemplele 3–4**) |
+| 45–70 | Text: lungime, litere mari și mici, căutare, tăiere (**Exemplele 5–6**) |
+| 70–90 | Text sau număr? `Number(...)` și `prompt` (**Exemplul 7**) |
+| 90–115 | Mini-proiect: zarul și calculatorul (**Exemplul 8**) |
 | 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `%` | Restul împărțirii | `7 % 3` |
+| `**` | Ridicare la putere | `2 ** 3` |
+| `Math.round()` `Math.floor()` `Math.ceil()` | Rotunjesc | `Math.floor(4.9)` |
+| `Math.max()` `Math.min()` `.toFixed(2)` | Cel mai mare, cel mai mic, zecimale | `(3.14159).toFixed(2)` |
+| `Math.random()` | Număr aleator între 0 și 1 | `Math.random()` |
+| `.length` `.toUpperCase()` `.toLowerCase()` `[0]` | Lungimea, litere mari, litere mici, prima literă | `"Rex".length` |
+| `.includes()` `.slice()` `.replace()` `.repeat()` | Caută, taie, înlocuiește, repetă | `"casa".slice(0, 2)` |
+| `Number()` | Transformă text în număr | `Number("5")` |
+| `prompt()` | Cere o valoare utilizatorului | `prompt("Câți ani ai?")` |
 
 ---
 
@@ -39,10 +51,11 @@ Din lecția trecută ții minte că:
 - mesajele se construiesc cu `+` sau cu `` `${…}` ``;
 - tipurile sunt `string`, `number` și `boolean`.
 
-**Încearcă tu (4 min)**  
-- [ ] Creează folderul `Prenume_Nume_W4_L3` cu `index.html` (scheletul complet, cu `<script src="script.js"></script>` înainte de `</body>`) și `script.js`  
-- [ ] Pune în `<body>` un `<h1>` cu textul „Calculatorul și zarul meu”  
-- [ ] În `script.js` creează `let numar = 10;` și afișează numărul în consolă  
+**Încearcă tu (8 min)**  
+- [ ] Creează folderul `Prenume_Nume_W4_L3` ca o **copie** a folderului `Prenume_Nume_W4_L2` (cu `tema.html`, `script.js`, `stil.css`, `imagini`, `media`)  
+- [ ] Șterge din `script.js` fișa de la lecția trecută (sau comentează-o cu `/* … */`) și scrie un `console.log` cu „Salut din lecția 3”  
+- [ ] Deschide `tema.html` cu Live Server și verifică mesajul în consolă  
+- [ ] Alege din articolul tău pe Wikipedia **două numere** (de exemplu un an și o mărime) și **un titlu sau un cuvânt** din articol  
 
 > De aici înainte, exemplele arată ce scrii în `script.js`.
 
@@ -69,22 +82,31 @@ console.log(2 ** 3);  // 8
 
 Restul împărțirii se numește în programare **modulo**. Este foarte folositor: dacă `numar % 2` este `0`, numărul este **par**; dacă este `1`, este **impar**. Și `numar % 10` îți dă ultima cifră a numărului.
 
+**Încearcă tu (5 min)**  
+- [ ] Folosește toți cei șase operatori cu cele două numere din articolul tău  
+- [ ] Află dacă unul dintre numere este par sau impar, cu `%`  
+- [ ] Afișează ultima cifră a unui număr, cu `% 10`  
+- [ ] Prezice rezultatul într-un comentariu înainte să-l vezi în consolă  
+
 ### Exemplul 2 — Ordinea operațiilor și parantezele
 
 ```javascript
 console.log(2 + 3 * 4);     // 14
 console.log((2 + 3) * 4);   // 20
-```
 
-Ca la matematică, **înmulțirea și împărțirea se fac înaintea adunării și scăderii**. Parantezele schimbă ordinea: se face întâi ce este în paranteză. Când ai dubii, pune paranteze: sunt gratis și fac codul clar.
-
-```javascript
 let pret = 12;
 let cantitate = 3;
 let reducere = 5;
 let total = pret * cantitate - reducere;
 console.log("Total:", total);   // 31
 ```
+
+Ca la matematică, **înmulțirea și împărțirea se fac înaintea adunării și scăderii**. Parantezele schimbă ordinea: se face întâi ce este în paranteză. Când ai dubii, pune paranteze: sunt gratis și fac codul clar.
+
+**Încearcă tu (5 min)**  
+- [ ] Arată că `2 + 3 * 4` și `(2 + 3) * 4` dau rezultate diferite  
+- [ ] Calculează cu variabile câți ani au trecut de la anul din articol până în 2026  
+- [ ] Pune parantezele astfel încât `10 - 4 / 2` să dea `3`  
 
 **Gata când:**  
 - [ ] Ai folosit toți cei șase operatori, inclusiv `%` și `**`  
@@ -108,6 +130,12 @@ console.log((3.14159).toFixed(2)); // "3.14"  (două zecimale, ca text)
 
 `Math` este o „trusă” de unelte pentru numere. `Math.round` rotunjește la cel mai apropiat întreg, `Math.floor` rotunjește **în jos**, `Math.ceil` **în sus**. `toFixed(2)` păstrează două zecimale (rezultatul este text, bun pentru afișare, de exemplu la prețuri).
 
+**Încearcă tu (5 min)**  
+- [ ] Rotunjește `7.5`, `7.4` și `7.9` cu `round`, `floor` și `ceil` și compară  
+- [ ] Află cel mai mare dintre trei numere cu `Math.max`  
+- [ ] Împarte un număr din articol la `3` și afișează rezultatul cu două zecimale  
+- [ ] Spune când ai folosi `floor` și când `ceil`  
+
 ### Exemplul 4 — Numere aleatoare: zarul
 
 ```javascript
@@ -130,9 +158,15 @@ Cum se construiește:
 Reîncarcă pagina de mai multe ori: de fiecare dată iese alt număr. Aceeași rețetă merge pentru orice interval: `Math.floor(Math.random() * 10) + 1` dă numere de la 1 la 10.
 
 **Încearcă tu (6 min)**  
-- [ ] Rotunjește `7.5`, `7.4` și `7.9` cu `round`, `floor` și `ceil` și compară  
+- [ ] Afișează fiecare pas al zarului separat, ca să vezi cum se transformă numărul  
 - [ ] Aruncă zarul de 5 ori, reîncărcând pagina  
 - [ ] Fă un „număr norocos” între 1 și 100  
+- [ ] Alege un capitol sau o imagine din articolul tău la întâmplare, cu un număr aleator între 1 și numărul lor  
+
+**Gata când:**  
+- [ ] Ai rotunjit același număr cu `round`, `floor` și `ceil`  
+- [ ] Zarul tău dă numere între 1 și 6, niciodată cu zecimale  
+- [ ] Poți spune ce face fiecare pas din formula zarului  
 
 ---
 
@@ -157,6 +191,12 @@ console.log(cuvant[cuvant.length - 1]); // l  (ultima literă)
 
 Aceste unelte se numesc **metode**: se scriu după un punct, lipite de variabilă. Atenție la litere: `.length` se scrie cu l mic, iar `.toUpperCase()` cu U mare în mijloc.
 
+**Încearcă tu (5 min)**  
+- [ ] Pune titlul articolului tău într-o variabilă și afișează lungimea lui  
+- [ ] Afișează-l cu litere mari și cu litere mici  
+- [ ] Afișează prima și ultima literă  
+- [ ] Spune de ce prima literă este la poziția `0`  
+
 ### Exemplul 6 — Căutăm și tăiem
 
 ```javascript
@@ -180,8 +220,14 @@ console.log(fraza.replace("programez", "joc"));  // Îmi place să joc
 
 Metodele **nu schimbă** textul original, ci **dau un text nou**. Dacă vrei să păstrezi rezultatul, îl pui într-o variabilă: `let mare = fraza.toUpperCase();`.
 
+**Încearcă tu (6 min)**  
+- [ ] Copiază o propoziție din articolul tău într-o variabilă  
+- [ ] Verifică cu `includes` dacă ea conține un cuvânt ales de tine  
+- [ ] Taie primele 10 caractere cu `slice(0, 10)`  
+- [ ] Înlocuiește un cuvânt din propoziție cu `replace`  
+
 **Gata când:**  
-- [ ] Ai afișat lungimea unui cuvânt și versiunea lui cu litere mari și mici  
+- [ ] Ai afișat lungimea unui text și versiunea lui cu litere mari și mici  
 - [ ] Ai afișat prima și ultima literă  
 - [ ] Ai folosit `includes`, `slice` și `replace`  
 - [ ] Știi de ce `cuvant[0]` este prima literă  
@@ -190,12 +236,11 @@ Metodele **nu schimbă** textul original, ci **dau un text nou**. Dacă vrei să
 
 ## 5. Text sau număr?
 
-### Exemplul 7 — `"5" + 3` și `5 + 3`
+### Exemplul 7 — `Number(...)` și `prompt`
 
 ```javascript
-console.log(5 + 3);         // 8
-console.log("5" + 3);       // 53   (text lipit!)
-console.log("5" - 3);       // 2    (aici calculează)
+console.log(5 + 3);           // 8
+console.log("5" + 3);         // 53   (text lipit!)
 console.log(Number("5") + 3); // 8
 console.log(Number("abc"));   // NaN  (nu este număr)
 ```
@@ -203,12 +248,9 @@ console.log(Number("abc"));   // NaN  (nu este număr)
 Ce se întâmplă:
 - Între numere, `+` **adună**.  
 - Dacă un termen este **text**, `+` **lipește**: `"5" + 3` devine `"53"`.  
-- `-`, `*` și `/` încearcă să transforme textul în număr și calculează.  
 - `Number("5")` **transformă** textul în număr. Dacă textul nu arată a număr, rezultă `NaN` („Not a Number”, adică „nu este număr”).
 
-Acesta este cel mai frecvent „necaz” al începătorilor: un număr care arată corect, dar este de fapt text.
-
-### Exemplul 8 — `prompt`: întrebăm utilizatorul
+Acum cerem valori de la utilizator:
 
 ```javascript
 let nume = prompt("Cum se numește animalul tău preferat?");
@@ -237,39 +279,26 @@ let b = Number(prompt("Al doilea număr:"));
 console.log(a + b);                 // 5
 ```
 
-Poți pune `prompt` direct în `Number(…)`: întâi se cere valoarea, apoi se transformă.
+Poți pune `prompt` direct în `Number(…)`: întâi se cere valoarea, apoi se transformă. Nu scrie **date personale** (nume complet, adresă, telefon) la `prompt`: folosește numere și numele unui animal sau al unui joc.
 
-**Încearcă tu (6 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Arată în consolă diferența dintre `5 + 3`, `"5" + 3` și `Number("5") + 3`  
 - [ ] Cere numele animalului tău preferat cu `prompt` și afișează un mesaj cu el  
 - [ ] Cere două numere și afișează suma, apoi verifică ce se întâmplă fără `Number`  
+- [ ] Cere un număr și afișează cât de mult se deosebește de numărul din articol (diferența dintre ele)  
+
+**Gata când:**  
+- [ ] Ai arătat diferența dintre `5 + 3` și `"5" + 3`  
+- [ ] Ai folosit `prompt` și `Number(…)` pentru a aduna două numere cerute  
+- [ ] Ai văzut `23` în loc de `5` când ai uitat `Number`  
 
 ---
 
-## 6. Proiectul
+## 6. Mini-proiect: toate la un loc
 
-### Exemplul 9 — „Calculatorul și zarul meu”
+### Exemplul 8 — „Zarul și calculatorul”
 
-Fișierul `index.html`:
-
-```html
-<!DOCTYPE html>
-<html lang="ro">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculatorul și zarul meu</title>
-</head>
-<body>
-  <h1>Calculatorul și zarul meu</h1>
-  <p>Răspunde la întrebări, apoi deschide consola (F12) ca să vezi rezultatele.</p>
-
-  <script src="script.js"></script>
-</body>
-</html>
-```
-
-Fișierul `script.js`:
+Iată programul-model. `tema.html` rămâne cum este; în `script.js` scrii:
 
 ```javascript
 // 1. Calculatorul
@@ -299,58 +328,55 @@ console.log("Are", animal.length, "litere");
 console.log("Prima literă este:", animal[0]);
 ```
 
-Rulează programul și introdu valori diferite. Nu scrie **date personale** la `prompt` (nume complet, adresă, telefon): folosește numere și numele unui animal sau al unui joc.
+Rulează programul și introdu valori diferite. Dacă browserul blochează ferestrele `prompt`, permite-le pentru pagina de test.
+
+**Încearcă tu (12 min)**  
+- [ ] Scrie programul în `script.js`, cu valorile tale, nu copiat  
+- [ ] În locul animalului, folosește titlul articolului tău, cu litere mari, lungimea și prima literă  
+- [ ] Adaugă un al doilea zar și afișează suma lor  
+- [ ] Citește programul rând cu rând și spune ce afișează în consolă  
 
 **Gata când:**  
 - [ ] Programul cere două numere și afișează cele cinci calcule  
 - [ ] Zarul afișează un număr între 1 și 6  
-- [ ] Programul afișează numele animalului cu litere mari, lungimea și prima literă  
+- [ ] Programul afișează textul cu litere mari, lungimea și prima literă  
 - [ ] Nu apar erori roșii în consolă  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Zarul și calculatorul”
 
-### Exercițiul A — „Calculatorul și zarul meu” (obligatoriu)
-În folderul `Prenume_Nume_W4_L3` ai `index.html` și `script.js`, cu:
-- **două numere** cerute cu `prompt` și transformate cu `Number(…)`;
-- **suma, diferența, produsul, câtul și restul** afișate în mesaje clare;
-- un **zar** de la 1 la 6 cu `Math.random()` și `Math.floor`;
-- un **text** cerut cu `prompt`, afișat cu litere mari, cu lungimea lui și cu prima literă;
-- cel puțin o rotunjire (`round`, `floor`, `ceil` sau `toFixed`);
-- cel puțin două comentarii.
+### Minim vs Complet
 
-### Exercițiul B — Ce afișează programul?
-Spune ce afișează: (1) `console.log(17 % 5);` (2) `console.log("7" + 2);` (3) `console.log(2 + 3 * 2);` (4) `console.log("pisica".length);` (5) `console.log("pisica".toUpperCase());` (6) `console.log(Math.floor(8.9));`
+| | Ce trebuie |
+|--|------------|
+| **Minim** | `script.js` care cere două numere cu `prompt`, le transformă cu `Number(…)` și afișează suma și produsul |
+| **Complet** | Minim + diferența, câtul și restul, un zar de la 1 la 6, un text cerut cu `prompt` afișat cu litere mari, cu lungimea și cu prima literă, o rotunjire și două comentarii |
 
-### Exercițiul C — Scrie codul
-Scrie codul care: (1) afișează ultima cifră a numărului `4729`; (2) face un zar de la 1 la 10; (3) ia cuvântul `"programare"` și afișează primele 4 litere.
+### Pasul 1 — Minim
+În folderul `Prenume_Nume_W4_L3`:
 
-### Exercițiul D — Găsește greșelile
-Găsește **3 greșeli** în codul de mai jos și repară greșelile. Programul vrea să afișeze suma a două numere cerute, un zar de la 1 la 6 și lungimea cuvântului „Salut”.
+- [ ] Ai `tema.html` (cu `<script>` legat), `script.js` și `stil.css`  
+- [ ] Programul cere două numere și le transformă cu `Number(…)`  
+- [ ] Afișează suma și produsul în mesaje clare  
 
-```text
-let a = prompt("Primul număr:");
-let b = prompt("Al doilea număr:");
-console.log("Suma:", a + b);
-console.log("Zar:", Math.random() * 6);
-console.log("Lungime:", "Salut".Length);
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Într-un comentariu din cod: de ce `"5" + 3` dă `53`? Ce face `%` și la ce folosește? Ce tip de valoare dă întotdeauna `prompt`?
-
-**Gata când:**  
-- [ ] Folderul `Prenume_Nume_W4_L3` are `index.html` și `script.js`  
-- [ ] Programul rulează fără erori  
-- [ ] Ai răspuns la exercițiile B–E  
+### Pasul 2 — Complet
+- [ ] Afișezi și diferența, câtul și restul  
+- [ ] Ai un zar de la 1 la 6 cu `Math.random()` și `Math.floor`  
+- [ ] Ai un text cerut cu `prompt`, afișat cu litere mari, cu lungimea și cu prima literă  
+- [ ] Ai cel puțin o rotunjire (`round`, `floor`, `ceil` sau `toFixed`)  
+- [ ] Ai cel puțin două comentarii  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Fă un convertor: cere lei și afișează cât înseamnă în euro, la un curs ales de tine, cu 2 zecimale  
+## Bonus ★★★ — Provocare: Convertorul norocos
+*Doar dacă ai terminat Complet.*
+
+Faci un program care schimbă bani și alege un câștigător la zar.
+
+- [ ] Cere lei și afișează cât înseamnă în euro, la un curs ales de tine, cu 2 zecimale  
 - [ ] Aruncă două zaruri și afișează suma lor  
-- [ ] Cere un cuvânt și afișează cuvântul de 3 ori, cu litere mari, separat prin spații  
+- [ ] Cere un cuvânt și afișează-l de 3 ori, cu litere mari, separat prin spații  
 - [ ] Scrie „Caut ac în carul cu fân” într-o variabilă și afișează dacă conține cuvântul „ac” (`includes`)  
 
 ---
@@ -363,9 +389,7 @@ console.log("Lungime:", "Salut".Length);
 5. **Zarul iese cu zecimale** (de exemplu 3.72) — ai uitat `Math.floor`.  
 6. **Ai scris `Math.floor(Math.random() * 6)`** fără `+ 1` — iese de la 0 la 5.  
 7. **Numerele cu zecimale** — scrie `3.5`, nu `3,5`.  
-8. **`NaN` în rezultat** — ai transformat în număr un text care nu este număr.  
-9. **Ai crezut că prima literă are numărul 1** — are numărul 0.  
-10. **Ai uitat că metodele nu schimbă textul original** — pune rezultatul într-o variabilă.  
+8. **Ai crezut că prima literă are numărul 1** — are numărul 0.  
 
 ---
 
@@ -385,18 +409,59 @@ console.log("Lungime:", "Salut".Length);
 - Cum transformi un text în număr?
 
 ## Temă
-Scrie un program „Joc de ghicit norocul”: aruncă un zar, cere utilizatorului un număr de la 1 la 6 cu `prompt`, apoi afișează ambele numere (comparația o înveți în lecția următoare). Salvează în `Prenume_Nume_W4_L3`.
+1. Termină `Prenume_Nume_W4_L3` (Minim, apoi Complet).  
+2. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).  
+3. **Exemple pentru acasă.** Încearcă amândouă:
+
+**Acasă 1 — Zecimale ciudate.**
+
+```javascript
+console.log(0.1 + 0.2);
+console.log((0.1 + 0.2).toFixed(1));
+```
+
+Prima linie afișează `0.30000000000000004`, nu `0.3`: calculatorul lucrează cu zecimalele în alt fel decât noi. A doua linie afișează `0.3`. Încearcă și `0.1 * 3` și rotunjește rezultatul.
+
+**Acasă 2 — Unde se află o literă?**
+
+```javascript
+let cuvant = "programare";
+console.log(cuvant.indexOf("g"));
+console.log(cuvant.indexOf("z"));
+```
+
+`indexOf` spune **la ce poziție** apare textul căutat (numărând de la 0); dacă nu apare, dă `-1`. Aici afișează `3`, apoi `-1`. Caută în titlul articolului tău trei litere diferite.
+
+4. **Încă patru exerciții (B–E):**
+
+**B — Ce afișează programul?** Spune ce afișează: (1) `console.log(17 % 5);` (2) `console.log("7" + 2);` (3) `console.log(2 + 3 * 2);` (4) `console.log("pisica".length);` (5) `console.log("pisica".toUpperCase());` (6) `console.log(Math.floor(8.9));`
+
+**C — Scrie codul.** Scrie codul care: (1) afișează ultima cifră a numărului `4729`; (2) face un zar de la 1 la 10; (3) ia cuvântul `"programare"` și afișează primele 4 litere.
+
+**D — Găsește greșelile.** Găsește **3 greșeli** în codul de mai jos și repară greșelile. Programul vrea să afișeze suma a două numere cerute, un zar de la 1 la 6 și lungimea cuvântului „Salut”.
+
+```text
+let a = prompt("Primul număr:");
+let b = prompt("Al doilea număr:");
+console.log("Suma:", a + b);
+console.log("Zar:", Math.random() * 6);
+console.log("Lungime:", "Salut".Length);
+```
+
+**E — Explică cu cuvintele tale.** Într-un comentariu din cod: de ce `"5" + 3` dă `53`? Ce face `%` și la ce folosește? Ce tip de valoare dă întotdeauna `prompt`?
 
 ## Ce urmează — Lecția 4
-Învățăm **decizii**: `if`, `else`, `else if`, „și / sau / nu” (`&&`, `||`, `!`) și `switch`, ca programul să aleagă ce face în funcție de situație.
+Învățăm **decizii**: `if`, `else`, `else if`, „și / sau / nu” (`&&`, `||`, `!`) și `switch`, ca programul să aleagă ce face în funcție de situație. Vom construi jocul „Ghicește numărul”.
 
 ---
 
 ## Răspunsuri
 - **Quiz scurt:** (1) `1` (restul împărțirii lui 10 la 3); (2) `Math.floor(Math.random() * 6) + 1`; (3) `3`; (4) pentru că `"2"` și `"3"` sunt texte, iar `+` lipește textele; (5) cu `Number(…)`, de exemplu `Number("5")`.  
 - **Dacă ritmul clasei este lent:** `**`, `Math.max` / `Math.min`, `toFixed`, `replace` și `repeat` sunt opționale; rămâneți la operatori, `Math.random`, `Math.floor` și metodele de text de bază.  
-- **Exercițiul B:** (1) `2`; (2) `72` (text lipit); (3) `8`; (4) `6`; (5) `PISICA`; (6) `8`.  
-- **Exercițiul C:** (1) `console.log(4729 % 10);` (rezultă 9); (2) `Math.floor(Math.random() * 10) + 1`; (3) `console.log("programare".slice(0, 4));` (rezultă `prog`).  
-- **Exercițiul D:** (1) lipsește `Number(…)` la `prompt`, deci `a + b` lipește textele; (2) `Math.random() * 6` dă un zecimal între 0 și 6; trebuie `Math.floor(Math.random() * 6) + 1`; (3) `.Length` trebuie `.length`.  
-- **Exercițiul E:** dacă un termen este text, `+` lipește; `%` dă restul împărțirii și ajută la par/impar; `prompt` dă întotdeauna text.  
-- **Notă pentru profesor:** zarul este locul bun pentru a insista pe construirea pas cu pas: `Math.random()`, apoi `* 6`, apoi `Math.floor`, apoi `+ 1`. Lăsați elevii să afișeze fiecare pas separat. La `prompt`, rugați elevii să nu scrie nume complete sau alte date personale. Dacă browserul blochează ferestrele `prompt`, permiteți ferestrele pentru pagina de test.
+- **Exemplul 1, Încearcă tu:** `10 - 4 / 2` dă `8`; cu paranteze, `(10 - 4) / 2` dă `3`.  
+- **Tema, exercițiul B:** (1) `2`; (2) `72` (text lipit); (3) `8`; (4) `6`; (5) `PISICA`; (6) `8`.  
+- **Tema, exercițiul C:** (1) `console.log(4729 % 10);` (rezultă 9); (2) `Math.floor(Math.random() * 10) + 1`; (3) `console.log("programare".slice(0, 4));` (rezultă `prog`).  
+- **Tema, exercițiul D:** (1) lipsește `Number(…)` la `prompt`, deci `a + b` lipește textele; (2) `Math.random() * 6` dă un zecimal între 0 și 6; trebuie `Math.floor(Math.random() * 6) + 1`; (3) `.Length` trebuie `.length`.  
+- **Tema, exercițiul E:** dacă un termen este text, `+` lipește; `%` dă restul împărțirii și ajută la par/impar; `prompt` dă întotdeauna text.  
+- **Bonus (indicii):** (1) `let lei = Number(prompt("Câți lei?"));`, apoi împarți la curs sau înmulțești cu `0.2` și afișezi rezultatul cu `.toFixed(2)`; (2) faci zarul de două ori, în două variabile, apoi le aduni; (3) pune un spațiu după cuvânt înainte de `.repeat(3)`, de exemplu `(cuvant + " ").repeat(3)`; (4) `.includes("ac")` dă `true` sau `false`.  
+- **Notă informativă:** zarul se construiește pas cu pas: `Math.random()`, apoi `* 6`, apoi `Math.floor`, apoi `+ 1`. Afișează fiecare pas separat, ca să vezi ce face. La `prompt` nu scrie nume complete sau alte date personale. Dacă browserul blochează ferestrele `prompt`, permite-le pentru pagina de test. La Acasă 1, zecimalele ciudate apar în toate limbajele de programare; nu trebuie să explici motivul.
