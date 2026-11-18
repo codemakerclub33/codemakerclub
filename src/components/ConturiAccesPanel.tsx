@@ -151,7 +151,13 @@ export default function ConturiAccesPanel({ cursant }: Props) {
           </p>
           <p>
             <span className="text-slate-500">PIN:</span>{' '}
-            <span className="font-mono font-medium text-slate-900">{pin}</span>
+            {useSupabase && !pinSalvat && !pinCunoscut ? (
+              <span className="text-amber-700 text-xs">
+                nesalvat (cont creat înainte de funcția PIN vizibil) — apasă „Reset PIN elev”
+              </span>
+            ) : (
+              <span className="font-mono font-medium text-slate-900">{pin}</span>
+            )}
           </p>
         </div>
         <div className="rounded-xl bg-slate-50 p-4 space-y-1">

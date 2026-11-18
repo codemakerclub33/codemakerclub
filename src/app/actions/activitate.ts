@@ -1,5 +1,6 @@
 'use server'
 
+import { listeazaTotiUtilizatorii, gasesteUtilizatorDupaEmail } from '@/lib/supabase/authUsers'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { createClient } from '@/lib/supabase/server'
 import { isSupabaseAdminConfigured, isSupabaseConfigured } from '@/lib/supabase/env'
@@ -144,8 +145,7 @@ export async function rezumatProfesoriAction(
     .select('id, nume_afisat')
     .eq('rol', 'profesor')
     .order('created_at', { ascending: true })
-  const { data: listed } = await admin.auth.admin.listUsers({ perPage: 1000 })
-  const emailById = new Map((listed?.users ?? []).map(u => [u.id, u.email ?? '']))
+  const emailById = new Map((await listeazaTotiUtilizatorii(admin)).map(u => [u.id, u.email ?? '']))
 
   let migrareLipsa = false
   const data: RezumatProfesor[] = []
@@ -244,7 +244,7 @@ export async function activitateProfesorAction(
 /**
  * Ședințe efectuate în luna curentă:
  *  - profesor → doar cele făcute (bifate) de el
- *  - admin → toate cele făcute de toți profesorii
+ *  - admin → toate (și cele bifate de admin)
  */
 export async function sedinteEfectuateLunaCurentaAction(): Promise<
   { ok: true; count: number } | { ok: false; error: string; count: 0 }
@@ -269,22 +269,15 @@ export async function sedinteEfectuateLunaCurentaAction(): Promise<
   const now = new Date()
   const { start, end } = interval(now.getMonth(), now.getFullYear())
 
-  let autoriIds: string[]
-  if (profile.rol === 'profesor') {
-    autoriIds = [auth.user.id]
-  } else {
-    const { data: profs } = await admin.from('profile').select('id').eq('rol', 'profesor')
-    autoriIds = (profs ?? []).map(p => p.id as string)
-  }
-  if (!autoriIds.length) return { ok: true, count: 0 }
-
-  const { count, error } = await admin
+  let q = admin
     .from('sedinte')
     .select('id', { count: 'exact', head: true })
-    .in('creat_de', autoriIds)
     .eq('consuma_sedinta', true)
     .gte('data', start)
     .lt('data', end)
+  // Profesor: doar ale lui. Admin: toate (inclusiv cele bifate de admin).
+  if (profile.rol === 'profesor') q = q.eq('creat_de', auth.user.id)
+  const { count, error } = await q
 
   if (error) return { ok: false, error: error.message, count: 0 }
   return { ok: true, count: count ?? 0 }

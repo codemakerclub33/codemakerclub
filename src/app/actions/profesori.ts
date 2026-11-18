@@ -1,5 +1,6 @@
 'use server'
 
+import { listeazaTotiUtilizatorii, gasesteUtilizatorDupaEmail } from '@/lib/supabase/authUsers'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { createClient } from '@/lib/supabase/server'
 import { incarcaPermisiuni } from '@/lib/permisiuniServer'
@@ -79,8 +80,7 @@ export async function listStaffAction(): Promise<
 
   if (error) return { ok: false, error: error.message, data: [] }
 
-  const { data: listed } = await admin.auth.admin.listUsers({ perPage: 1000 })
-  const byId = new Map((listed?.users ?? []).map(u => [u.id, u]))
+  const byId = new Map((await listeazaTotiUtilizatorii(admin)).map(u => [u.id, u]))
 
   const data: StaffMember[] = (profiles ?? [])
     .filter(p => p.rol === 'admin' || p.rol === 'profesor')
@@ -89,8 +89,11 @@ export async function listStaffAction(): Promise<
       const isAdmin = p.rol === 'admin'
       return {
         id: p.id,
-        // Nu expunem emailul de login al adminului către profesori
-        email: isAdmin ? '' : (u?.email ?? '—'),
+        // Profesorul nu vede emailurile altora (nici ale adminului, nici ale colegilor): doar pe al lui.
+        email:
+          gate.rol === 'admin'
+            ? isAdmin ? '' : (u?.email ?? '—')
+            : p.id === gate.userId ? (u?.email ?? '') : '',
         nume: p.nume_afisat || (isAdmin ? 'Admin' : u?.email) || '—',
         rol: p.rol as 'admin' | 'profesor',
         ...(gate.rol === 'admin' && !isAdmin ? { permisiuni: normalizeazaPermisiuni(p.permisiuni) } : {}),
@@ -118,8 +121,7 @@ export async function adaugaProfesorAction(input: {
 
   const admin = createAdminClient()
 
-  const { data: listed } = await admin.auth.admin.listUsers({ perPage: 1000 })
-  if (listed?.users?.some(u => u.email?.toLowerCase() === email)) {
+  if (await gasesteUtilizatorDupaEmail(admin, email)) {
     return { ok: false, error: 'Există deja un cont cu acest email.' }
   }
 

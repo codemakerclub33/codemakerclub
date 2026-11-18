@@ -1,5 +1,6 @@
 'use server'
 
+import { listeazaTotiUtilizatorii, gasesteUtilizatorDupaEmail } from '@/lib/supabase/authUsers'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { createClient } from '@/lib/supabase/server'
 import { elevAuthEmail, elevAuthPassword, isSupabaseAdminConfigured, isSupabaseConfigured } from '@/lib/supabase/env'
@@ -79,8 +80,7 @@ export async function resetPinElevAction(cursantId: string): Promise<ResetPinRes
   if (error || !cursant) return { ok: false, error: error?.message ?? 'Cursant inexistent.' }
 
   const elevEmail = elevAuthEmail(cursant.username)
-  const { data: listed } = await admin.auth.admin.listUsers({ perPage: 1000 })
-  const elevUser = listed?.users?.find(u => u.email?.toLowerCase() === elevEmail)
+  const elevUser = await gasesteUtilizatorDupaEmail(admin, elevEmail)
   if (!elevUser) return { ok: false, error: 'Contul elevului nu a fost găsit în Auth.' }
 
   const pin = genereazaPin(4)
@@ -117,9 +117,7 @@ export async function resetParolaParinteAction(cursantId: string): Promise<Reset
     .maybeSingle()
   if (error || !cursant) return { ok: false, error: error?.message ?? 'Cursant inexistent.' }
 
-  const { data: listed } = await admin.auth.admin.listUsers({ perPage: 1000 })
-  let parinteId =
-    listed?.users?.find(u => u.email?.toLowerCase() === cursant.email_parinte.toLowerCase())?.id ?? null
+  let parinteId = (await gasesteUtilizatorDupaEmail(admin, cursant.email_parinte))?.id ?? null
 
   if (!parinteId) {
     // Emailul din fișă nu are încă cont (de exemplu a fost schimbat): îl legăm/creăm acum.

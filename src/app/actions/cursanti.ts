@@ -1,5 +1,6 @@
 'use server'
 
+import { listeazaTotiUtilizatorii, gasesteUtilizatorDupaEmail } from '@/lib/supabase/authUsers'
 import { incarcaPermisiuni } from '@/lib/permisiuniServer'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { createClient } from '@/lib/supabase/server'
@@ -214,10 +215,7 @@ export async function adaugaCursantAction(
   let parolaNoua = false
   let parinteUserId: string | null = null
 
-  const { data: listed } = await admin.auth.admin.listUsers({ perPage: 1000 })
-  const existingParinte = listed?.users?.find(
-    u => u.email?.toLowerCase() === emailParinte,
-  )
+  const existingParinte = await gasesteUtilizatorDupaEmail(admin, emailParinte)
 
   if (existingParinte) {
     // Emailul nu poate aparține unui cont de personal (admin/profesor) sau de elev
@@ -231,6 +229,34 @@ export async function adaugaCursantAction(
       await admin.auth.admin.deleteUser(elevAuth.user.id)
       await admin.from('cursanti').delete().eq('id', cursant.id)
       return { ok: false, error: 'Acest email aparține unui cont de personal. Folosește emailul părintelui.' }
+    }
+    if (rolStaff === 'profesor') {
+      // Profesorul poate refolosi un email de părinte doar dacă toți copiii lui actuali
+      // sunt asignați lui (de exemplu frați). Altfel părintele ar vedea și copiii altcuiva.
+      const { data: copiiParinte } = await admin
+        .from('cursanti')
+        .select('id')
+        .ilike('email_parinte', emailParinte.replace(/[\\%_]/g, '\\$&'))
+        .neq('id', cursant.id)
+      const ids = (copiiParinte ?? []).map(c => c.id as string)
+      if (ids.length > 0) {
+        const { data: ai } = await admin
+          .from('profesor_cursanti')
+          .select('cursant_id')
+          .eq('profesor_id', authUser.user.id)
+          .in('cursant_id', ids)
+        const aiSet = new Set((ai ?? []).map(l => l.cursant_id as string))
+        if (!ids.every(id => aiSet.has(id))) {
+          await admin.from('profile').delete().eq('id', elevAuth.user.id)
+          await admin.auth.admin.deleteUser(elevAuth.user.id)
+          await admin.from('cursanti').delete().eq('id', cursant.id)
+          return {
+            ok: false,
+            error:
+              'Acest email de părinte este deja folosit pentru copii care nu sunt ai tăi. Cere adminului să adauge copilul.',
+          }
+        }
+      }
     }
     parinteUserId = existingParinte.id
     // Parola unui părinte existent o poate schimba doar adminul (profesorul nu).

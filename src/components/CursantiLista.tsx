@@ -3,7 +3,7 @@
 import { usePermisiuni } from '@/hooks/usePermisiuni'
 import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
-import { Plus, Search, X, UserCheck, UserX, Layers, CalendarPlus } from 'lucide-react'
+import { Plus, Search, X, UserCheck, UserX, Layers, CalendarPlus, BatteryLow } from 'lucide-react'
 import { cursuri, module } from '@/lib/mockData'
 import { getStore, getCursanti, sedinteRamaseCursant, type Cursant } from '@/lib/mockStore'
 import CursantAvatar from '@/components/CursantAvatar'
@@ -20,6 +20,7 @@ export default function CursantiLista() {
   const [modulId, setModulId] = useState('')
   const [status, setStatus] = useState<'toti' | 'activ' | 'inactiv'>('toti')
   const [inscrisiLuna, setInscrisiLuna] = useState(false)
+  const [doarEpuizate, setDoarEpuizate] = useState(false)
   const [tick, setTick] = useState(0)
   const [isProfesor, setIsProfesor] = useState(false)
   const perm = usePermisiuni()
@@ -116,6 +117,22 @@ export default function CursantiLista() {
     }
   }, [cursId, modulId])
 
+  const soldPentru = (cursantId: string): { incluse: number; ramase: number } | null => {
+    if (isSupabaseConfiguredClient()) {
+      return remoteSolduri[cursantId] ?? null
+    }
+    if (!store) return null
+    const abos = store.abonamente.filter(a => a.cursant_id === cursantId)
+    if (!abos.length) return null
+    const incluse = abos.reduce((s, a) => s + a.sedinte_incluse, 0)
+    return { incluse, ramase: sedinteRamaseCursant(cursantId, store) }
+  }
+
+  const esteEpuizat = (cursantId: string) => {
+    const sold = soldPentru(cursantId)
+    return !!sold && sold.incluse > 0 && sold.ramase <= 0
+  }
+  const epuizateCount = totiCursanti.filter(c => esteEpuizat(c.id)).length
   const activi = totiCursanti.filter(c => c.activ).length
   const inactivi = totiCursanti.filter(c => !c.activ).length
   const cursuriActiveCount = useMemo(() => {
@@ -162,6 +179,7 @@ export default function CursantiLista() {
       const insc = inscrieri.filter(i => i.cursant_id === c.id && i.activ)
 
       if (inscrisiLuna && !esteInscrisLunaAsta(c.data_inscriere)) return false
+      if (doarEpuizate && !esteEpuizat(c.id)) return false
 
       if (cursId) {
         if (!insc.some(i => i.curs_id === cursId)) return false
@@ -173,20 +191,9 @@ export default function CursantiLista() {
 
       return true
     })
-  }, [inscrieri, totiCursanti, q, cursId, modulId, status, inscrisiLuna])
+  }, [inscrieri, totiCursanti, q, cursId, modulId, status, inscrisiLuna, doarEpuizate, remoteSolduri, store])
 
-  const areFiltre = q || cursId || modulId || status !== 'toti' || inscrisiLuna
-
-  const soldPentru = (cursantId: string): { incluse: number; ramase: number } | null => {
-    if (isSupabaseConfiguredClient()) {
-      return remoteSolduri[cursantId] ?? null
-    }
-    if (!store) return null
-    const abos = store.abonamente.filter(a => a.cursant_id === cursantId)
-    if (!abos.length) return null
-    const incluse = abos.reduce((s, a) => s + a.sedinte_incluse, 0)
-    return { incluse, ramase: sedinteRamaseCursant(cursantId, store) }
-  }
+  const areFiltre = q || cursId || modulId || status !== 'toti' || inscrisiLuna || doarEpuizate
 
   if (!ready || (!store && !isSupabaseConfiguredClient()) || supabaseLoading) {
     return <p className="text-slate-400">Se încarcă…</p>
@@ -214,7 +221,7 @@ export default function CursantiLista() {
         )}
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-6">
         <button
           type="button"
           onClick={() => {
@@ -251,6 +258,22 @@ export default function CursantiLista() {
           </div>
           <p className="text-2xl font-bold text-slate-900">{inactivi}</p>
           <p className="text-slate-700 text-sm font-medium mt-0.5">Inactivi</p>
+        </button>
+
+        <button
+          type="button"
+          onClick={() => setDoarEpuizate(v => !v)}
+          className={`rounded-xl p-4 shadow-sm border text-left transition-all ${
+            doarEpuizate
+              ? 'bg-amber-50 border-amber-200 ring-2 ring-amber-300'
+              : 'bg-white border-slate-100'
+          }`}
+        >
+          <div className="w-10 h-10 bg-amber-50 rounded-lg flex items-center justify-center mb-2.5">
+            <BatteryLow size={18} className="text-amber-600" />
+          </div>
+          <p className="text-2xl font-bold text-slate-900">{epuizateCount}</p>
+          <p className="text-slate-700 text-sm font-medium mt-0.5">Ședințe epuizate</p>
         </button>
 
         <div className="bg-white rounded-xl p-4 shadow-sm border border-slate-100">
@@ -354,6 +377,7 @@ export default function CursantiLista() {
                 setModulId('')
                 setStatus('toti')
                 setInscrisiLuna(false)
+                setDoarEpuizate(false)
               }}
               className="inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-slate-800 px-3 py-2.5"
             >

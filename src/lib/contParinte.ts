@@ -1,4 +1,5 @@
 import type { SupabaseClient } from '@supabase/supabase-js'
+import { listeazaTotiUtilizatorii, gasesteUtilizatorDupaEmail } from '@/lib/supabase/authUsers'
 import type { Database } from '@/lib/supabase/types'
 import { genereazaParola } from '@/lib/authHelpers'
 
@@ -21,8 +22,7 @@ export async function sincronizeazaContParinte(
   opts: { creeaza: boolean; numeCursant: string },
 ): Promise<SincronizareParinte> {
   const email = emailNou.trim().toLowerCase()
-  const { data: listed } = await admin.auth.admin.listUsers({ perPage: 1000 })
-  const useri = listed?.users ?? []
+  const useri = await listeazaTotiUtilizatorii(admin)
   const existent = useri.find(u => u.email?.toLowerCase() === email)
 
   const { data: legaturi } = await admin
