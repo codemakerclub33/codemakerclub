@@ -28,10 +28,11 @@ Azi înveți și o regulă importantă: **nu scalezi un grup**. Dacă tragi de c
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap lecția trecută · privim obiecte reale: ce părți au? |
-| 10–50 | **Obiectul 1** — Tăietorul stea (Minim) |
-| 50–85 | **Obiectul 2** — Tăietorul cu forma ta (Minim) |
-| 85–110 | **Complet** pe primul obiect |
-| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme sau ca temă |
+| 10–42 | **Obiectul 1** — Tăietorul stea (Minim) |
+| 42–68 | **Obiectul 2** — Tăietorul cu forma ta (Minim) |
+| 68–85 | **Complet** pe primul obiect |
+| 85–110 | **Bonus ★★★** — tăietoare pentru petrecere, pe trepte (fiecare merge cât apucă) |
+| 110–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -70,7 +71,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 2. Alt <span style="color:#1E90FF;font-weight:700">Star</span> → **66 · 66 · 3**: gulerul, de care apeși cu degetele  
 3. Selectezi cele două stele → <span style="color:#E65722;font-weight:700">L</span> → **mijloc** pe stânga–dreapta și pe față–spate, apoi punctul de **sus** pe înălțime: gulerul se așază sus, pe vârful corpului  
 
-**Încearcă tu — Corpul și gulerul (10 min)**  
+**Încearcă tu — Corpul și gulerul (12 min)**  
 - [ ] Corpul are **60 · 60 · 15**, gulerul **66 · 66 · 3**  
 - [ ] Gulerul e centrat și stă sus, pe vârful corpului  
 
@@ -79,7 +80,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 2. Selectezi **golul și corpul** (Shift+click, nu și gulerul) → <span style="color:#E65722;font-weight:700">L</span> → **mijloc** pe **toate cele trei** direcții  
 3. Golul iese `2,5` mm sus și jos: peretele e `(60 − 56) / 2 = 2` mm  
 
-**Încearcă tu — Golul (8 min)**  
+**Încearcă tu — Golul (10 min)**  
 - [ ] Golul (**56 · 56 · 20**, Hole) e centrat pe trei direcții  
 - [ ] Iese puțin deasupra și dedesubt  
 
@@ -125,7 +126,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 4. <span style="color:#E65722;font-weight:700">Ruler</span>: peretele este `(40 − 36) / 2 = 2` mm, la fel ca la tăietorul mare  
 5. <span style="color:#00A600;font-weight:700">Color</span>: pe fiecare tăietor altă culoare  
 
-**Încearcă tu — Complet — versiunea mică (15 min)**  
+**Încearcă tu — Complet — versiunea mică (17 min)**  
 - [ ] Tăietorul mic are **40 · 40 · 15**, gulerul **46 · 46 · 3**, golul **36 · 36 · 20**  
 - [ ] Cu <span style="color:#E65722;font-weight:700">Ruler</span>: peretele are **2 mm**, ca la tăietorul mare  
 - [ ] Cele două tăietoare au culori diferite  
@@ -179,11 +180,19 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Tăietor cu ștampilă
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Tăietoare pentru petrecere
+*Doar dacă ai terminat Complet. Lucrezi în proiectul `Prenume_Nume_T2_L04`, **lângă** tăietoarele de până acum, pe trepte, de la ușor la greu. Snap Grid: **1.0 mm**. Fiecare piesă o faci de la zero, nu o copiezi din altă piesă. Treapta următoare o începi după ce ai încheiat-o pe cea dinainte.*
 
-- [ ] Schimbă culorile și alege altă literă pentru ștampilă  
-- [ ] **Provocarea (obiect mai complicat):** în proiectul `Prenume_Nume_T2_L04`, **lângă tăietor**, o **ștampilă** care intră în el cu joc: un <span style="color:#1E90FF;font-weight:700">Star</span> **55 · 55 · 6** (cu `0,5` mm joc pe fiecare parte față de golul `56`), ridicat cu <span style="color:#E65722;font-weight:700">conul negru</span> la **1**; o literă <span style="color:#1E90FF;font-weight:700">Text</span> **oglindită** (înălțime `1` mm) sub el, la `0`–`1`; și un mâner <span style="color:#1E90FF;font-weight:700">Cylinder</span> **14 · 14 · 10** pe mijloc, ridicat la **6**. Cu <span style="color:#E65722;font-weight:700">Ruler</span> confirmi jocul de `0,5` mm. Ștampila e **separată** de tăietor (nu o grupezi cu el).  
+*Regula rămâne aceeași: la fiecare piesă, gulerul e corpul `+ 6` mm și `3` mm înălțime, iar golul e corpul `− 4` mm și `20` mm înălțime, centrat pe trei direcții. Peretele e `(corp − gol) / 2 = 2` mm.*
+
+- [ ] **Treapta 1 — Capul rotund.** Corp `Cylinder` `50 · 50 · 15`, guler `56 · 56 · 3`, gol `Hole` `46 · 46 · 20`. **Nu dai `Group` încă**: capul se unește cu urechile la treapta 3, iar `Ctrl+G` îl dai o singură dată, la final.  
+- [ ] **Treapta 2 — Tăietorul oval.** Un tăietor nou pentru un balon sau un ou: corp `70 · 40 · 15`, guler `76 · 46 · 3`, gol `66 · 36 · 20`. Scrii numerele pe fiecare axă (nu tragi cu mouse-ul). Cu `Ruler` verifici peretele de `2` mm, și pe lungime, și pe lățime.  
+- [ ] **Treapta 3 — Pisica.** Pe capul de la treapta 1 pui două urechi. Fiecare ureche e un `Box` `20 · 20 · 15` **rotit cu `45°`** (2 pași de `22,5°`): un romb, din care jumătate iese din cap. Centrul urechii e pe marginea capului: la `15` mm stânga și la `20` mm spre spate față de mijlocul capului (`15² + 20² = 25²`). A doua ureche e de partea cealaltă, la `30` mm distanță. Fiecare ureche primește guler (`26 · 26 · 3`) și gol (`16 · 16 · 20`, `Hole`), cu aceeași rotire de `45°` și centrate pe trei direcții. La final `Ctrl+A`, `Ctrl+G`.  
+- [ ] **Treapta 4 — Bradul.** Trei romburi, din `Box` rotit cu `45°`, cu laturile `30`, `38` și `46`, unul peste altul: centrele la `20`, `0` și `−20` mm pe față–spate (cel mic sus, cel mare jos). Dedesubt, un trunchi `Box` `8 · 10 · 15`, cu centrul la `−56`. Fiecare piesă are guler (`+ 6`) și gol (`− 4`), cu aceleași centre. La trunchi: guler `14 · 16 · 3`, gol `4 · 10 · 20`, centrul la `−54`, ca să se unească cu golul romburilor. `Ctrl+A`, `Ctrl+G`.  
+- [ ] **Treapta 5 — Platoul.** Un `Box` `260 · 130 · 3` și pe el cele `3` tăietoare noi (oval, pisică, brad), ridicate la `2`, la `10` mm unul de altul și de margini. Confirmi distanțele cu `Ruler`.  
+- [ ] **Treapta 6 — Verificarea.** Din `Top` și `Front`, nimic nu plutește și niciun tăietor nu atinge altul. Cu `Ruler` măsori peretele în `3` locuri (cap, ureche, brad): trebuie să fie în jur de `2` mm.  
+
+**Verificare (cu un coleg):** colegul numără în cel mult **30 de secunde**: tăietoarele de pe platou (oval, pisică, brad). Apoi arată pe cel mai mare și pe cel mai mic și spune dacă vreo piesă plutește.  
 
 ## Recapitulare rapidă
 1. Peretele = `(corp − gol) / 2`  
@@ -197,8 +206,10 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 - Cât e peretele dacă corpul are `60` și golul `56`?  
 - De ce nu scalăm un tăietor grupat?
 
-## Temă
-Opțional, acasă, într-un proiect nou `T2_L04_B`: forma biscuitului tău preferat, cu corp, guler și gol, astfel încât peretele să fie de `2` mm.
+## Temă (opțional)
+- Dacă ai doar Minim: acasă termini în același proiect ce nu ai apucat.  
+- Dacă ai Complet: într-un proiect nou `T2_L04_C`, forma biscuitului tău preferat, cu corp, guler și gol, astfel încât peretele să fie de `2` mm.  
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T2_L04_D`, un tăietor pentru o sărbătoare la alegere (de exemplu clopoțel sau om de zăpadă), făcut din cilindri și pătrate rotite.
 
 ## Ce urmează
 În **Lecția 5** faci o **săpunieră cu scurgere** și un **grătar** care intră în ea.

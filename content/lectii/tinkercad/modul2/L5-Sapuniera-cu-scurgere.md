@@ -28,10 +28,11 @@ Fanta e mai îngustă decât săpunul și **nu atinge pereții**: dacă taie per
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap lecția trecută · privim obiecte reale: ce părți au? |
-| 10–50 | **Obiectul 1** — Săpuniera (Minim) |
-| 50–85 | **Obiectul 2** — Grătarul (Minim) |
-| 85–110 | **Complet** pe primul obiect |
-| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme sau ca temă |
+| 10–44 | **Obiectul 1** — Săpuniera (Minim) |
+| 44–70 | **Obiectul 2** — Grătarul (Minim) |
+| 70–85 | **Complet** pe primul obiect |
+| 85–110 | **Bonus ★★★** — săpunieră dublă cu mascotă, pe trepte (fiecare merge cât apucă) |
+| 110–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -140,7 +141,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 7. Piciorușele se înfig 1 mm în tavă (5 mm înălțime) — se prind  
 8. <span style="color:#DC143C;font-weight:700">Ctrl+A</span> → <span style="color:#DC143C;font-weight:700">Ctrl+G</span> · <span style="color:#00A600;font-weight:700">Color</span>
 
-**Încearcă tu — Complet — piciorușe (12 min)**  
+**Încearcă tu — Complet — piciorușe (15 min)**  
 - [ ] Ai **4** piciorușe (**10 · 10 · 5**), câte unul în fiecare colț  
 - [ ] Tava e ridicată cu **4 mm**, pe piciorușe  
 - [ ] Suportul e colorat
@@ -194,11 +195,17 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Săpunieră dublă
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Săpunieră dublă cu mascotă
+*Doar dacă ai terminat Complet. Lucrezi în proiectul `Prenume_Nume_T2_L05`, **lângă** săpuniera de până acum, pe trepte, de la ușor la greu. Fiecare piesă o faci de la zero, nu o copiezi din altă piesă. Treapta următoare o începi după ce ai încheiat-o pe cea dinainte. La treptele 1–4: Snap Grid **5.0 mm**; la treptele 5–6: **1.0 mm**.*
 
-- [ ] Schimbă culorile și adaugă text „SĂPUN” pe un perete (`1` mm)  
-- [ ] **Provocarea (obiect mai complicat):** o **tavă dublă** `200 × 70 × 20`, cu un perete de `3` mm la mijloc (pus **după** Group) și **câte 3 fante** `70 × 6` în fiecare compartiment (**6** în total), toate egale. Grătarul `92 × 62` stă într-un compartiment (interior `95,5 × 64`), iar cu <span style="color:#E65722;font-weight:700">Ruler</span> confirmi jocul. Un coleg numără **6 fante** în cel mult **20 de secunde**.  
+- [ ] **Treapta 1 — Tava dublă.** O tavă nouă: `Box` `200 · 70 · 20`, cu un gol `Hole` `194 · 64 · 20` ridicat la `3`, apoi `Ctrl+G`. După aceea, un perete `Box` `3 · 70 · 20`, la mijloc, pe plan, și `Ctrl+G` din nou. Rezultă **2 compartimente** de `95,5` mm lățime, pe care le verifici cu `Ruler`.  
+- [ ] **Treapta 2 — Fantele.** În compartimentul din stânga: `3` fante `Hole` `70 · 6 · 10`, la `15` mm una de alta (centrele la `−15`, `0` și `15`), fanta din mijloc cu centrul la `45` mm de mijlocul tăvii (`Align` pe marginea stângă a tăvii, apoi `4` apăsări pe săgeată spre dreapta). În compartimentul din dreapta: `3` fante `70 · 10 · 10`, la `20` mm una de alta, cu centrul la `45` mm de mijlocul tăvii, spre dreapta (`Align` pe marginea dreaptă, apoi `4` apăsări spre stânga). Le faci cu `Ctrl+D` repetat și le cobori `1` mm sub plan. Fantele nu ating pereții. `Ctrl+G`.  
+- [ ] **Treapta 3 — Gura de scurgere.** În peretele din dreapta, la mijloc: un `Hole` `Box` `20 · 8 · 12`, ridicat la `3`, cu marginea dreaptă pe marginea tăvii. Apa iese pe lateral, iar fundul rămâne întreg. `Ctrl+G` din nou.  
+- [ ] **Treapta 4 — Grătarul rotund.** Un `Cylinder` `60 · 60 · 3`, ridicat la `3` (stă pe fund), în compartimentul din dreapta. Are `4` fante `Hole` `40 · 5 · 10`, la `10` mm una de alta (centrele la `−15`, `−5`, `5` și `15`), cu `Ctrl+D` repetat. Joc de `2` mm pe parte față de pereți. `Ctrl+G` doar pe grătar.  
+- [ ] **Treapta 5 — Mascota rățușcă.** O rățușcă de săpun, pe grătar, la mijloc, făcută din formele pe care le știi: corp `Sphere` `36 · 26 · 22`, baza la `5`; cap `Sphere` `18 · 18 · 18`, cu centrul la `12` mm în față de mijlocul corpului și la `29` înălțime; cioc `Wedge` `5 · 5 · 4`, la `19`–`24` mm, la `27` înălțime; doi ochi `Sphere` `3 · 3 · 3`, la `17` mm în față, `6` mm în stânga și în dreapta și la `32` înălțime. Piesele se suprapun puțin, apoi `Ctrl+G`: mascota e un obiect, separat de tavă. Rămâne la cel puțin `5` mm de marginea grătarului.  
+- [ ] **Treapta 6 — Piciorușele și verificarea.** Selectezi tava, grătarul și mascota (nu și piciorușele) și le ridici la `4`. Sub tavă, `6` piciorușe `Cylinder` `10 · 10 · 5`: câte unul în fiecare colț și `2` sub peretele din mijloc, în față și în spate, făcute cu `Align` și `Ctrl+D`. Din `Top` și `Front`, nimic nu plutește, fantele nu ating pereții, iar mascota stă pe grătar.  
+
+**Verificare (cu un coleg):** colegul numără în cel mult **20 de secunde** cele **6** fante ale tăvii, apoi arată gura de scurgere și mascota și spune dacă vreo piesă plutește.  
 
 ## Recapitulare rapidă
 1. Gaura utilă are **formă, loc și mărime** alese  
@@ -212,8 +219,10 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 - Ce se întâmplă dacă uiți <span style="color:#DC143C;font-weight:700">Ctrl+G</span>?  
 - Cu cât ridici tava ca să stea pe piciorușe?
 
-## Temă
-Opțional: o săpunieră pentru **două** săpunuri — tava lungă **180 × 70** cu fante noi (calculezi tu câte fante încap).
+## Temă (opțional)
+- Dacă ai doar Minim: acasă termini în același proiect ce nu ai apucat.  
+- Dacă ai Complet: într-un proiect nou `T2_L05_C`, o **săpunieră rotundă**, pentru un săpun rotund de `Ø70`, cu fante egale prin fund.  
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T2_L05_D`, o altă **mascotă de săpun** (pisică, pește sau alt animal), făcută din sfere, conuri și cilindri.
 
 ## Ce urmează
 În **Lecția 6** faci un **suport pentru periuțe** și un **suport pentru periuțe de vacanță, care se închide**, cu **matrice de găuri**.
