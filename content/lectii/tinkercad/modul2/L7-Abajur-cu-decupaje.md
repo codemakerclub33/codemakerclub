@@ -30,10 +30,11 @@ Lumina trece **doar** prin golurile tăiate de tine.
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap lecția trecută · privim obiecte reale: ce părți au? |
-| 10–50 | **Obiectul 1** — Abajurul (Minim) |
-| 50–85 | **Obiectul 2** — Lampionul (Minim) |
-| 85–110 | **Complet** pe primul obiect |
-| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme sau ca temă |
+| 10–44 | **Obiectul 1** — Abajurul (Minim) |
+| 44–68 | **Obiectul 2** — Lampionul (Minim) |
+| 68–85 | **Complet** pe primul obiect |
+| 85–110 | **Bonus ★★★** — lampa de masă completă, pe trepte (fiecare merge cât apucă) |
+| 110–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -141,7 +142,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 4. <span style="color:#DC143C;font-weight:700">Ctrl+A</span> → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
 5. <span style="color:#00A600;font-weight:700">Color</span>
 
-**Încearcă tu — Complet — al doilea rând (12 min)**  
+**Încearcă tu — Complet — al doilea rând (17 min)**  
 - [ ] Rândul al doilea e la **40 mm** și rotit cu **22,5°** (ferestrele sunt decalate)  
 - [ ] Abajurul e colorat
 
@@ -194,11 +195,17 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Abajur cu trei rânduri și capac
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Lampa de masă completă
+*Doar dacă ai terminat Complet. Lucrezi în proiectul `Prenume_Nume_T2_L07`, **lângă** obiectele de până acum, pe trepte, de la ușor la greu. Fiecare piesă o faci de la zero, nu o copiezi din altă piesă. Treapta următoare o începi după ce ai încheiat-o pe cea dinainte. Snap Grid: **1.0 mm**.*
 
-- [ ] Schimbă culorile și folosește ferestre rotunde (Cylinder Hole orizontal) la lampion  
-- [ ] **Provocarea (obiect mai complicat):** un **abajur cu 3 rânduri** de ferestre (`8` ferestre pe rând, bare la `10`, `30` și `50` mm), **fiecare rând decalat cu `22,5°`** față de cel de dedesubt, plus un **capac** sus, cu un orificiu `Ø10` pentru cablu. Un coleg numără **24** de ferestre și vede din Top decalajul dintre rânduri.  
+- [ ] **Treapta 1 — Lampionul cu ferestre rotunde.** Un tub `Cylinder` `50 · 50 · 60`, cu gol `44 · 44 · 70`. Apoi un `Cylinder` `Hole` `12 · 12 · 70`, **culcat** (rotit `90°` cu săgeata curbă de lângă el), centrat, ridicat la `14`. `Ctrl+D`, copia rotită `90°`: `4` ferestre rotunde. Selectezi ambele găuri, `Ctrl+D`, ridici copiile la `34`: `8` ferestre rotunde pe `2` rânduri. `Ctrl+G`.  
+- [ ] **Treapta 2 — Abajurul cu `3` rânduri.** Un tub `Ø70 × 70`, cu gol `Ø64 × 80`, și `4` bare `Hole` `90 · 8 · 10`, rotite din `45°` în `45°`, ridicate la `10`. Copiezi cele `4` bare la `30`, rotite `22,5°`, apoi la `50`, rotite încă `22,5°`. Rămân cel puțin `10` mm de perete plin între rânduri. `Ctrl+G`: `24` de ferestre.  
+- [ ] **Treapta 3 — Capacul.** Un `Cylinder` `70 · 70 · 3`, ridicat la `69` (intră `1` mm în tub), cu un `Hole` `Cylinder` `10 · 10 · 10` în centru, pentru cablu. `Ctrl+G`.  
+- [ ] **Treapta 4 — Soclul.** Un `Cylinder` `80 · 80 · 10`. În el, un canal pentru cablu: un `Hole` `Cylinder` `6 · 6 · 44`, culcat, ridicat la `2`, cu un capăt ieșit din margine și celălalt puțin dincolo de centru. În centru, o gaură verticală `Hole` `Cylinder` `6 · 6 · 12`, ridicată la `2`, care întâlnește canalul. `Ctrl+G`.  
+- [ ] **Treapta 5 — Asamblarea.** Selectezi abajurul și capacul și le ridici **împreună** la `9` (intră `1` mm în soclu). Aliniezi totul cu `Align` pe mijloc, pe stânga–dreapta și pe față–spate. Cu `Ruler` confirmi înălțimea totală: `81` mm.  
+- [ ] **Treapta 6 — Verificarea.** Din `Top` se vede decalajul dintre rânduri, iar din `Front` ferestrele sunt la aceeași înălțime, pe rânduri.  
+
+**Verificare (cu un coleg):** colegul numără în cel mult **30 de secunde** cele **24** de ferestre ale abajurului și găsește orificiul pentru cablu din capac și canalul din soclu.  
 
 ## Recapitulare rapidă
 1. Tub = Cylinder Solid − Cylinder <span style="color:#00A600;font-weight:700">Hole</span> mai mic și mai înalt (deschis la capete)  
@@ -212,8 +219,10 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 - Câte ferestre dau 4 bare rotite la 45°?  
 - Cum faci ferestrele de sus să nu fie exact deasupra celor de jos?
 
-## Temă
-Opțional: schimbă rotirea la **90°** (2 bare) — câte ferestre ies? Compară în Tinkercad cu varianta de `45°`.
+## Temă (opțional)
+- Dacă ai doar Minim: acasă termini în același proiect ce nu ai apucat.  
+- Dacă ai Complet: într-un proiect nou `T2_L07_C`, un **abajur** `Ø60 × 80`, cu `3` rânduri de ferestre, fiecare decalat față de cel de dedesubt.  
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T2_L07_D`, un **lampion cu ferestre rotunde** și un soclu cu canal pentru cablu, făcute de la zero.
 
 ## Ce urmează
 În **Lecția 8** faci un **ghiveci cu farfurie** și un **ghiveci pătrat**, două piese care lucrează împreună.

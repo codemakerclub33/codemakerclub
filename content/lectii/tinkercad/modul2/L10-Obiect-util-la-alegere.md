@@ -28,11 +28,12 @@ Azi pornești **tu** de la o nevoie și ajungi la un obiect. Așa lucrează un d
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Criteriile și alegi obiectul |
-| 10–25 | Planul: forma, **mărimile**, găurile, copiile și piesa pereche |
-| 25–60 | **Obiectul 1** — obiectul tău util (Minim) |
-| 60–85 | **Obiectul 2** — piesa pereche, cu joc (Minim) |
-| 85–105 | **Complet** — Ruler, Color, text, prezentare pregătită |
-| 105–120 | Prezentări scurte (în perechi la grupe mari) · **Bonus ★★★** ca temă |
+| 10–22 | Planul: forma, **mărimile**, găurile, copiile și piesa pereche |
+| 22–42 | **Obiectul 1** — obiectul tău util (Minim) |
+| 42–60 | **Obiectul 2** — piesa pereche, cu joc (Minim) |
+| 60–85 | **Complet** — Ruler, Color, text, prezentare pregătită, verificare finală |
+| 85–110 | **Bonus ★★★** — setul mic, mediu și mare, pe trepte (fiecare merge cât apucă) |
+| 110–120 | Prezentări scurte (în perechi la grupe mari) |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -109,7 +110,7 @@ Alegi **după ce îți place**: toate cinci folosesc aceleași unelte și se pot
 3. Potrivirea: **gol interior = piesa + `1` mm** (adică **joc `0,5` mm pe parte**). Exemplu: piesa are `40`, golul are `41`  
 4. Selectezi **doar** piesele noi (Shift+click) → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>. Apoi încerci potrivirea: muți piesa pereche pe primul obiect și verifici din <span style="color:#D400D4;font-weight:700">Front</span> și din <span style="color:#D400D4;font-weight:700">Top</span>  
 
-**Încearcă tu — Obiectul 2: piesa pereche (capac, farfurie, suport) (20 min)**  
+**Încearcă tu — Obiectul 2: piesa pereche (capac, farfurie, suport) (18 min)**  
 - [ ] Piesa pereche are mărimi din plan, scrise cu numere  
 - [ ] Golul e cu `1` mm mai mare decât piesa (joc `0,5` mm pe parte)  
 - [ ] Piesa pereche se potrivește pe primul obiect  
@@ -122,7 +123,7 @@ Alegi **după ce îți place**: toate cinci folosesc aceleași unelte și se pot
 3. <span style="color:#1E90FF;font-weight:700">Text</span> cu numele tău, pe obiect (`1` mm înălțime), pus **după** Group, ca să nu fie tăiat  
 4. Pregătești prezentarea de `30` de secunde: **ce este, la ce folosește, ce mărimi are**  
 
-**Încearcă tu — Complet — Ruler, Color, text și prezentare (18 min)**  
+**Încearcă tu — Complet — Ruler, Color, text și prezentare (19 min)**  
 - [ ] Cu <span style="color:#E65722;font-weight:700">Ruler</span>, mărimile se potrivesc cu planul  
 - [ ] Culorile se potrivesc între ele  
 - [ ] Textul cu numele tău e pe obiect, iar prezentarea e pregătită  
@@ -188,10 +189,16 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 ---
 
 ## Bonus ★★★ — Provocare: Setul mic, mediu și mare
-*Doar dacă ai terminat Complet.*
+*Doar dacă ai terminat Complet. Lucrezi în proiectul `Prenume_Nume_T2_L10`, **lângă** obiectele de până acum, pe trepte, de la ușor la greu. Fiecare piesă o faci de la zero, nu o copiezi din altă piesă. Treapta următoare o începi după ce ai încheiat-o pe cea dinainte. Snap Grid: **1.0 mm**.*
 
-- [ ] Schimbă culorile și adaugă pe obiect text cu numele tău  
-- [ ] **Provocarea (obiect mai complicat):** un **set de 3** versiuni ale obiectului tău (**mic, mediu, mare**), fiecare cu **alt set de numere** (de exemplu cu `0,5`, `1` și `1,5` ori mărimile) și cu **piesa pereche** pentru fiecare. Nicio gaură nu e la mai puțin de `2` mm de perete (verificat cu <span style="color:#E65722;font-weight:700">Ruler</span>). Prezinți cele **3** mărimi într-un minut.  
+- [ ] **Treapta 1 — Tabelul de mărimi.** Pentru fiecare mărime din plan calculezi versiunea **mică** (jumătate) și versiunea **mare** (de `1,5` ori), **rotunjite în sus la milimetru întreg**. Versiunea **medie** e obiectul tău. Le notezi pe rânduri: mic, mediu, mare.  
+- [ ] **Treapta 2 — Versiunea mică.** Obiectul, de la zero, cu numerele mici, cu Hole și piesa repetată. Pereții rămân de cel puțin `3` mm: ei **nu** se micșorează.  
+- [ ] **Treapta 3 — Piesa pereche mică.** Golul e piesa plus `1` mm, deci jocul rămâne `0,5` mm pe parte.  
+- [ ] **Treapta 4 — Versiunea mare.** Obiectul, de la zero, cu numerele mari, cu Hole și piesa repetată.  
+- [ ] **Treapta 5 — Piesa pereche mare.** La fel, cu joc de `0,5` mm pe parte. Cu `Ruler` confirmi că nicio gaură nu e la mai puțin de `2` mm de perete, la niciuna dintre cele `3` mărimi.  
+- [ ] **Treapta 6 — Setul aranjat.** Cele `3` obiecte, în ordine, de la mic la mare, la `10` mm unul de altul. Pregătești prezentarea setului pentru un minut.  
+
+**Verificare (cu un coleg):** colegul numără în cel mult **30 de secunde** cele **3** perechi și verifică, punând piesele una peste alta, că fiecare piesă pereche intră doar pe obiectul ei.  
 
 ## Recapitulare rapidă
 1. M2 = **numere** în loc de ochi, <span style="color:#00A600;font-weight:700">Hole</span>, <span style="color:#E65722;font-weight:700">Align</span>, <span style="color:#DC143C;font-weight:700">Ctrl+D</span>, piese cu joc  
@@ -199,8 +206,10 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 3. Un obiect curat > trei neterminate
 4. Al doilea obiect (Piesa pereche) exersează aceeași idee pe alte mărimi
 
-## Temă
-Opțional: finalizezi obiectul acasă sau faci un al doilea obiect cu mărimi, într-un proiect nou `T2_L10_B`.
+## Temă (opțional)
+- Dacă ai doar Minim: acasă termini în același proiect ce nu ai apucat.  
+- Dacă ai Complet: într-un proiect nou `T2_L10_C`, un **al doilea obiect util** din meniu, cu piesa lui pereche.  
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T2_L10_D`, o **cutie sau un suport** care ține împreună ambele obiecte, cu joc de `0,5` mm pe parte.  
 
 ## Ce urmează
 Ai terminat **Modulul 2**! În **Modulul 3** faci **piese mobile și mecanisme simple**.

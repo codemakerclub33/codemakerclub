@@ -28,10 +28,11 @@ Gaura de scurgere lasă apa să iasă din ghiveci în farfurie.
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap lecția trecută · privim obiecte reale: ce părți au? |
-| 10–50 | **Obiectul 1** — Ghiveciul rotund cu farfurie (Minim) |
-| 50–85 | **Obiectul 2** — Ghiveciul pătrat cu farfurie (Minim) |
-| 85–110 | **Complet** pe primul obiect |
-| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme sau ca temă |
+| 10–40 | **Obiectul 1** — Ghiveciul rotund cu farfurie (Minim) |
+| 40–68 | **Obiectul 2** — Ghiveciul pătrat cu farfurie (Minim) |
+| 68–85 | **Complet** pe primul obiect |
+| 85–110 | **Bonus ★★★** — jardiniera cu plante, pe trepte (fiecare merge cât apucă) |
+| 110–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -70,7 +71,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 3. Selectezi Hole-ul și ghiveciul → <span style="color:#E65722;font-weight:700">L</span> → **mijloc** pe ambele direcții de pe plan. Apoi ridici Hole-ul cu **3 mm**, folosind **<span style="color:#E65722;font-weight:700">conul negru</span>** (fund de 3 mm; Hole-ul iese deasupra)  
 4. <span style="color:#DC143C;font-weight:700">Ctrl+A</span> → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>
 
-**Încearcă tu — Ghiveciul — exterior și gol (8 min)**  
+**Încearcă tu — Ghiveciul — exterior și gol (6 min)**  
 - [ ] Ghiveciul (**60 · 60 · 50**) are gol **54 · 54** și fund de **3 mm**
 
 ### 3) Gaura de scurgere
@@ -79,7 +80,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 3. Cobori gaura cu **1 mm** sub plan, folosind **<span style="color:#E65722;font-weight:700">conul negru</span>**: ea stă în centrul fundului și îl taie complet (3 mm)  
 4. <span style="color:#DC143C;font-weight:700">Ctrl+A</span> → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>
 
-**Încearcă tu — Gaura de scurgere (8 min)**  
+**Încearcă tu — Gaura de scurgere (6 min)**  
 - [ ] Gaura de scurgere (**8 · 8 · 10**) e în centrul fundului și îl taie complet
 
 ### 4) Farfuria
@@ -88,7 +89,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 3. Selectezi Hole-ul și farfuria → <span style="color:#E65722;font-weight:700">L</span> → **mijloc** pe ambele direcții de pe plan. Apoi ridici Hole-ul cu **3 mm**, folosind **<span style="color:#E65722;font-weight:700">conul negru</span>** (fund de 3 mm)  
 4. Selectezi Hole-ul și farfuria → <span style="color:#DC143C;font-weight:700">Ctrl+G</span> — farfurie cu pereți de 3 mm
 
-**Încearcă tu — Farfuria (10 min)**  
+**Încearcă tu — Farfuria (8 min)**  
 - [ ] Farfuria (**78 · 78 · 12**) are gol **72 · 72** și pereți de **3 mm**
 
 ### 5) Potrivirea
@@ -97,7 +98,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 3. Pune ghiveciul **în** farfurie, pe fundul ei: îl tragi întâi **complet în interiorul** farfuriei, apoi selectezi ghiveciul și farfuria → <span style="color:#E65722;font-weight:700">L</span> pe ambele direcții de pe plan (farfuria rămâne pe loc, ghiveciul se centrează; nu alege nimic pe sus–jos) și îl ridici cu 3 mm, folosind **<span style="color:#E65722;font-weight:700">conul negru</span>**  
 4. View Cube → <span style="color:#D400D4;font-weight:700">Front</span>: ghiveciul stă pe fundul farfuriei, între pereți
 
-**Încearcă tu — Potrivirea (8 min)**  
+**Încearcă tu — Potrivirea (6 min)**  
 - [ ] Ghiveciul stă pe fundul farfuriei, între pereți (din <span style="color:#D400D4;font-weight:700">Front</span>)
 
 **Obiectul 2 — Ghiveciul pătrat cu farfurie**
@@ -134,7 +135,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 4. <span style="color:#E65722;font-weight:700">Ruler</span>: măsori ghiveciul (60) și gaura farfuriei (72) → spațiu de 6 mm pe fiecare parte *(Hole-ul farfuriei se măsoară doar separat: <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span> pe farfurie, măsori, apoi <span style="color:#DC143C;font-weight:700">Ctrl+A</span> pe Hole+farfurie → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>)*  
 5. <span style="color:#00A600;font-weight:700">Color</span>: ghiveciul o culoare, farfuria alta
 
-**Încearcă tu — Complet — guler, Ruler, culori (15 min)**  
+**Încearcă tu — Complet — guler, Ruler, culori (17 min)**  
 - [ ] Gulerul stă pe marginea de sus a ghiveciului, golul rămâne deschis  
 - [ ] Cu <span style="color:#E65722;font-weight:700">Ruler</span>: spațiu de **6 mm** între ghiveci și peretele farfuriei  
 - [ ] Ghiveciul și farfuria au culori diferite
@@ -189,11 +190,17 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Jardinieră cu trei ghivece
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Jardiniera cu plante
+*Doar dacă ai terminat Complet. Lucrezi în proiectul `Prenume_Nume_T2_L08`, **lângă** obiectele de până acum, pe trepte, de la ușor la greu. Fiecare piesă o faci de la zero, nu o copiezi din altă piesă. Treapta următoare o începi după ce ai încheiat-o pe cea dinainte. Snap Grid: **1.0 mm**.*
 
-- [ ] Schimbă culorile și adaugă `3` piciorușe `Ø8 × 4` sub un ghiveci  
-- [ ] **Provocarea (obiect mai complicat):** o **jardinieră**: farfurie lungă `190 × 62 × 10` (interior `184 × 56`), în care stau **3 ghivece pătrate** `50 × 50 × 45`, cu **`10` mm egali** între ele (și `7` mm la capete). Cu <span style="color:#E65722;font-weight:700">Ruler</span> confirmi cele două spații de `10` mm; niciun ghiveci nu atinge peretele farfuriei.  
+- [ ] **Treapta 1 — Ghiveciul pe piciorușe.** Un ghiveci `Cylinder` `40 · 40 · 35`, cu `Hole` `34 · 34 · 35` ridicat la `3` și o scurgere `Hole` `Ø6` prin fund. Sub el, `4` piciorușe `Cylinder` `8 · 8 · 4`, la `3` pe verticală și la `±10` mm pe ambele axe față de centru. Ghiveciul grupat îl ridici la `6` (intră `1` mm în piciorușe). Farfurie `Cylinder` `58 · 58 · 10` cu `Hole` `52 · 52 · 10` la `3`. Ghiveciul stă în ea, centrat.  
+- [ ] **Treapta 2 — Jardiniera goală.** Un `Box` `190 · 62 · 10` cu un `Hole` `Box` `184 · 56 · 10`, ridicat la `3`, centrat. `Ctrl+G`: pereți de `3` mm.  
+- [ ] **Treapta 3 — Trei ghivece.** Trei ghivece pătrate `Box` `50 · 50 · 45`, cu gol `44 · 44 · 45` la `3` și scurgere `Ø8`, ridicate la `3` pe fundul jardinierei. Între ele `10` mm egali, iar la capete `7` mm. Confirmi cu `Ruler`; niciun ghiveci nu atinge peretele.  
+- [ ] **Treapta 4 — Trei plante diferite**, fiecare centrată pe fundul ghiveciului, la `6`: o **floare** (`Cylinder` `6 · 6 · 40` și `Sphere` `20 · 20 · 20` deasupra, la `40`), un **cactus** (`Cylinder` `14 · 14 · 40` și `Sphere` `14 · 14 · 14` deasupra, la `40`) și un **brad** (`Cylinder` `6 · 6 · 20` și `Cone` `36 · 36 · 40`, la `24`).  
+- [ ] **Treapta 5 — Mânerele.** Două mânere `Box` `16 · 30 · 6`, lipite la capetele jardinierei (intră `1` mm în ea), la `2` pe verticală, fiecare cu o gaură `Hole` `Cylinder` `10 · 10 · 10` în centru, pentru agățat. `Ctrl+G` pe fiecare.  
+- [ ] **Treapta 6 — Verificarea.** Din `Front` și din `Top`, nimic nu plutește și niciun ghiveci nu atinge peretele.  
+
+**Verificare (cu un coleg):** colegul numără în cel mult **30 de secunde** cele **3** ghivece, **3** plante diferite, **4** piciorușe și **2** mânere.  
 
 ## Recapitulare rapidă
 1. Ghiveci = Cylinder − Hole (ridicat 3 mm) → fund  
@@ -207,8 +214,10 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 - Ce ar păți planta fără gaura de scurgere?  
 - De ce nu grupăm ghiveciul cu farfuria?
 
-## Temă
-Opțional: un ghiveci **mai mare** (Ø80) — calculezi tu farfuria (gaura cu cel puțin 6 mm mai mare, pereții de 3 mm).
+## Temă (opțional)
+- Dacă ai doar Minim: acasă termini în același proiect ce nu ai apucat.  
+- Dacă ai Complet: într-un proiect nou `T2_L08_C`, un **ghiveci** `Ø80` cu farfurie, calculând tu farfuria (golul cu cel puțin `6` mm mai mare decât ghiveciul, pereții de `3` mm).  
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T2_L08_D`, o **jardinieră cu `4` ghivece pătrate**, calculând tu lungimea farfuriei (spații egale de `10` mm între ghivece).
 
 ## Ce urmează
 În **Lecția 9** faci o **carcasă pentru Arduino Uno** și una pentru **micro:bit**, cu mărimi **măsurate**, **joc** și decupaje pentru porturi.

@@ -28,10 +28,12 @@ Proiectul de azi. Obiectul meu util.
 
 Minim înseamnă: obiectul tău util, cu plan cu trei mărimi, Hole cu Group și o piesă repetată, și piesa pereche cu joc de o jumătate de milimetru pe parte, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus Ruler pe o mărime, culoare, text cu numele tău și prezentare de treizeci de secunde, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg vede cele două piese, pe care le poți așeza una peste alta, cu joc mic și egal.
 
-Bonus. Schimbi culorile și adaugi pe obiect text cu numele tău. Provocarea, Setul mic, mediu și mare: un set de trei versiuni ale obiectului tău, mică, medie și mare, fiecare cu alt set de numere, de exemplu cu jumătate, o dată și o dată și jumătate mărimile, și cu piesa pereche pentru fiecare. Nicio gaură nu este la mai puțin de doi milimetri de perete, verificat cu Ruler. Prezinți cele trei mărimi într-un minut.
+Bonus. Setul mic, mediu și mare. Lucrezi în același proiect, lângă obiectele de până acum, pe trepte, de la ușor la greu. Fiecare piesă o faci de la zero. Snap Grid este un milimetru. Prima treaptă: tabelul de mărimi. Pentru fiecare mărime din plan calculezi versiunea mică, jumătate, și versiunea mare, de o dată și jumătate, rotunjite în sus la milimetru întreg. Versiunea medie este obiectul tău. A doua: versiunea mică, de la zero, cu pereții de cel puțin trei milimetri, care nu se micșorează. A treia: piesa pereche mică, cu golul piesa plus un milimetru, deci jocul rămâne o jumătate de milimetru pe parte. A patra: versiunea mare, de la zero. A cincea: piesa pereche mare, cu același joc. Cu Ruler confirmi că nicio gaură nu este la mai puțin de doi milimetri de perete, la niciuna dintre cele trei mărimi. A șasea: aranjezi cele trei obiecte, de la mic la mare, la zece milimetri unul de altul, și pregătești prezentarea setului pentru un minut. Un coleg numără în cel mult treizeci de secunde cele trei perechi și verifică, punând piesele una peste alta, că fiecare piesă pereche intră doar pe obiectul ei.
 
 Recapitulare. Modulul doi înseamnă numere în loc de ochi, Hole, Align, Control și D și piese cu joc. Întâi planul cu mărimi, apoi modelul. Un obiect curat valorează mai mult decât trei neterminate.
 
 Ce urmează. Ai terminat Modulul doi! În Modulul trei faci piese mobile și mecanisme simple.
+
+Tema. Cu Minim: acasă termini în același proiect ce nu ai apucat. Cu Complet: un proiect nou, T doi, L zece, C: un al doilea obiect util din meniu, cu piesa lui pereche. Cu Bonus: un proiect nou, T doi, L zece, D: o cutie sau un suport care ține împreună ambele obiecte, cu joc de o jumătate de milimetru pe parte.
 
 Succes la obiectul tău util.

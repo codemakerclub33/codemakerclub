@@ -32,10 +32,12 @@ Proiectul de azi. Ghiveciul meu.
 
 Minim înseamnă: ghiveciul rotund cu farfurie și ghiveciul pătrat cu farfurie, ambele ghivece stau în farfurii, cu cel puțin opt unelte diferite. Complet înseamnă: minim, plus guler la ghiveciul rotund, Ruler și culori diferite, cu cel puțin șase unelte diferite. Dacă rămâi în urmă, oprește-te la minim și salvează. Ești la Minim când un coleg vede două ghivece care încap în farfuriile lor, cu gaură de scurgere prin fund.
 
-Bonus. Schimbi culorile și adaugi trei piciorușe de opt diametru pe patru sub un ghiveci. Provocarea, Jardinieră cu trei ghivece: o farfurie lungă de o sută nouăzeci pe șaizeci și doi pe zece, în care stau trei ghivece pătrate de cincizeci pe cincizeci pe patruzeci și cinci, cu zece milimetri egali între ele și șapte milimetri la capete. Cu Ruler confirmi cele două spații de zece milimetri. Niciun ghiveci nu atinge peretele farfuriei.
+Bonus. Jardiniera cu plante. Lucrezi în același proiect, lângă obiectele de până acum, pe trepte, de la ușor la greu. Fiecare piesă o faci de la zero. Snap Grid este un milimetru. Prima treaptă: un ghiveci mic de patruzeci diametru, cu scurgere, pus pe patru piciorușe mici, ca apa să iasă pe dedesubt, și o farfurie de cincizeci și opt diametru în care stă. A doua: jardiniera goală, o farfurie lungă de o sută nouăzeci pe șaizeci și doi pe zece, cu pereți de trei milimetri. A treia: trei ghivece pătrate de cincizeci pe cincizeci pe patruzeci și cinci, cu zece milimetri egali între ele și șapte la capete. Cu Ruler confirmi spațiile, iar niciun ghiveci nu atinge peretele. A patra: trei plante diferite, câte una în fiecare ghiveci: o floare, cu tulpină și o sferă, un cactus și un brad, cu un con. A cincea: două mânere la capetele jardinierei, fiecare cu o gaură pentru agățat. A șasea: verifici din Front și din Top că nimic nu plutește. Un coleg numără în cel mult treizeci de secunde cele trei ghivece, cele trei plante diferite, cele patru piciorușe și cele două mânere.
 
 Recapitulare. Hole-ul ridicat trei milimetri lasă fundul. Scurgerea este un Hole mic în centrul fundului. Golul farfuriei e mai mare decât ghiveciul. Două piese care lucrează împreună nu se grupează.
 
 Ce urmează. În lecția nouă faci o carcasă pentru Arduino Uno și una pentru micro bit, cu mărimi măsurate, joc și decupaje pentru porturi.
+
+Tema. Cu Minim: acasă termini în același proiect ce nu ai apucat. Cu Complet: un proiect nou, T doi, L opt, C: un ghiveci de optzeci diametru cu farfurie, calculând tu farfuria, cu golul cu cel puțin șase milimetri mai mare decât ghiveciul. Cu Bonus: un proiect nou, T doi, L opt, D: o jardinieră cu patru ghivece pătrate, calculând tu lungimea farfuriei, cu spații egale de zece milimetri între ghivece.
 
 Succes la ghiveciul tău.

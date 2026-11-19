@@ -28,10 +28,11 @@ Cu <span style="color:#DC143C;font-weight:700">Ctrl+D</span> faci un rând, apoi
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap lecția trecută · privim obiecte reale: ce părți au? |
-| 10–50 | **Obiectul 1** — Suportul pentru periuțe (Minim) |
-| 50–85 | **Obiectul 2** — Suportul de vacanță, care se închide (Minim) |
-| 85–110 | **Complet** pe primul obiect |
-| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme sau ca temă |
+| 10–44 | **Obiectul 1** — Suportul pentru periuțe (Minim) |
+| 44–71 | **Obiectul 2** — Suportul de vacanță, care se închide (Minim) |
+| 71–85 | **Complet** pe primul obiect |
+| 85–110 | **Bonus ★★★** — setul de baie, pe trepte (fiecare merge cât apucă) |
+| 110–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -132,7 +133,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 3. <span style="color:#E65722;font-weight:700">Ruler</span>: pui rigla la marginea stângă a unei găuri, click pe gaura vecină din rând: **30 mm** între aceleași margini, adică între centre *(Hole-urile se măsoară doar separat: dacă sunt în Group, <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span>, măsori, apoi <span style="color:#DC143C;font-weight:700">Ctrl+A</span> → <span style="color:#DC143C;font-weight:700">Ctrl+G</span> la loc)*  
 4. Selectezi tot → <span style="color:#DC143C;font-weight:700">Ctrl+G</span> (suport și bază) · <span style="color:#00A600;font-weight:700">Color</span>
 
-**Încearcă tu — Complet — bază lată + Ruler (12 min)**  
+**Încearcă tu — Complet — bază lată + Ruler (14 min)**  
 - [ ] Baza (**80 · 80 · 4**) e sub corp și mai lată decât el (din <span style="color:#D400D4;font-weight:700">Front</span>)  
 - [ ] Cu <span style="color:#E65722;font-weight:700">Ruler</span>: **30 mm** între găuri  
 - [ ] Suportul și baza sunt grupate și colorate
@@ -146,7 +147,7 @@ Celelalte unelte (formele de bază, vederea, <span style="color:#00A600;font-wei
 4. **Gaura prea aproape de margine** — peretele se rupe. Păstrează distanțele de 15 mm.  
 5. **Snap Grid prea mic** — mutarea sare din 1 în 1 mm și obosește. Pune **5.0 mm**.  
 6. **Baza nu e centrată** — apeși <span style="color:#E65722;font-weight:700">L</span> pe amândouă și alegi mijloc pe ambele direcții.
-7. **O gaură iese prin perete** — matricea nu e centrată: refaci prima gaură cu <span style="color:#E65722;font-weight:700">L</span> și apoi mutările de `25` și `10` mm.  
+7. **O gaură iese prin perete** — matricea nu e centrată: refaci prima gaură cu <span style="color:#E65722;font-weight:700">L</span> și apoi mutările de `15` mm.  
 
 ---
 
@@ -185,11 +186,17 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Organizator cu trei mărimi de găuri
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Setul de baie
+*Doar dacă ai terminat Complet. Lucrezi în proiectul `Prenume_Nume_T2_L06`, **lângă** suportul de până acum, pe trepte, de la ușor la greu. Fiecare piesă o faci de la zero, nu o copiezi din altă piesă. Treapta următoare o începi după ce ai încheiat-o pe cea dinainte. Snap Grid: **5.0 mm** la treptele 1 și 5, **1.0 mm** la treptele 2–4.*
 
-- [ ] Schimbă culorile și adaugă text „PERIUȚE” pe baza lată (`1` mm)  
-- [ ] **Provocarea (obiect mai complicat):** un **organizator** `120 × 50 × 35` cu **cel puțin 9 găuri** de **3 mărimi diferite** (de exemplu `Ø8` pentru pixuri, `Ø12` pentru markere, `Ø22` pentru o foarfecă), toate în șiruri egale și **niciuna** la mai puțin de `3` mm de perete (verificat cu <span style="color:#E65722;font-weight:700">Ruler</span>). Fundul rămâne închis, la `5` mm.  
+- [ ] **Treapta 1 — Suportul mare.** Un `Box` `100 · 70 · 40`, cu `6` găuri `Hole` `Ø16`, în `2` rânduri și `3` coloane, la `30` mm între centre, ridicate la `5`. Faci un rând cu `Ctrl+D`, apoi copiezi rândul. Pereții dintre găuri și până la margine au cel puțin `12` mm.  
+- [ ] **Treapta 2 — Paharul pentru pastă.** Un `Cylinder` `40 · 40 · 30` cu un `Hole` `34 · 34 · 30` ridicat la `3`, apoi `Ctrl+G`: pereți și fund de `3` mm.  
+- [ ] **Treapta 3 — Storcătorul de pastă.** O tijă `Cylinder` `16 · 16 · 60`, în picioare. Prin ea, o **fantă**: un `Hole` `Box` `3 · 20 · 55`, centrat și ridicat la `2,5`. Taie tija de-a curmezișul, iar capătul turtit al tubului de pastă intră în ea din lateral. Rămân `2,5` mm la fiecare capăt. Apoi manivela: un braț `Box` `30 · 8 · 6`, la `54`, cu un capăt în axa tijei, și un mâner `Cylinder` `10 · 10 · 15`, la capătul brațului, la `54`. Aliniezi totul cu `Align`, apoi `Ctrl+G`.  
+- [ ] **Treapta 4 — Clepsidra de două minute.** O placă de jos `Cylinder` `50 · 50 · 4` și un con `Cone` `30 · 30 · 30` pe ea, la `3`, cu vârful în sus. Deasupra, al doilea con, **rotit cu `180°`** (vârful în jos), la `32`, cu vârfurile unul în celălalt. O placă de sus `50 · 50 · 4`, la `61`, și `4` stâlpi `Cylinder` `4 · 4 · 62`, la `2`, în colțuri, la `15` mm de centru pe ambele axe. Aliniezi totul pe mijloc. `Ctrl+G`.  
+- [ ] **Treapta 5 — Platoul.** Un `Box` `170 · 150 · 4`. Pe el așezi cele patru obiecte (suportul și paharul pe un rând, clepsidra și storcătorul pe celălalt), ridicate la `3`, la cel puțin `10` mm unul de altul și de margini. Confirmi distanțele cu `Ruler`.  
+- [ ] **Treapta 6 — Verificarea.** Din `Front`, `Top` și `Right`, nimic nu plutește și nimic nu iese de pe platou.  
+
+**Verificare (cu un coleg):** colegul numără în cel mult **30 de secunde** găurile suportului (`6`), paharul, storcătorul și clepsidra, apoi arată cel mai înalt obiect și spune dacă vreo piesă iese de pe platou.  
 
 ## Recapitulare rapidă
 1. Matrice = găuri în rânduri și coloane  
@@ -203,8 +210,10 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 - Cum faci al doilea rând de găuri fără să măsori din nou?  
 - De ce baza e mai lată?
 
-## Temă
-Opțional: un suport cu **6 găuri** (2 rânduri × 3 coloane) pe un corp <span style="color:#1E90FF;font-weight:700">Box</span> — calculezi lungimea corpului.
+## Temă (opțional)
+- Dacă ai doar Minim: acasă termini în același proiect ce nu ai apucat.  
+- Dacă ai Complet: într-un proiect nou `T2_L06_C`, un **suport pentru pixuri** cu `8` găuri (`2` rânduri × `4` coloane), calculând tu lungimea corpului.  
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T2_L06_D`, un **organizator** cu găuri de `3` mărimi (de exemplu `Ø8`, `Ø12`, `Ø22`), toate în șiruri egale.
 
 ## Ce urmează
 În **Lecția 7** faci un **abajur cu decupaje** și un **lampion**, cu rotiri repetate.
