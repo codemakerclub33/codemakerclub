@@ -27,10 +27,11 @@ La labirintul rotund înveți că o **deschidere** se face cu un <span style="co
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap L3 · privim un labirint și urmărim drumul bilei |
-| 10–50 | **Obiectul 1** — Labirintul pătrat (Minim) |
-| 50–85 | **Obiectul 2** — Labirintul rotund (Minim) |
-| 85–110 | **Complet** pe primul obiect |
-| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme sau ca temă |
+| 10–42 | **Obiectul 1** — Labirintul pătrat (Minim) |
+| 42–70 | **Obiectul 2** — Labirintul rotund (Minim) |
+| 70–85 | **Complet** pe primul obiect |
+| 85–110 | **Bonus ★★★** — labirintul cu patru pereți și capac, pe trepte (fiecare merge cât apucă) |
+| 110–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -62,7 +63,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 2. Îți faci planul în minte: pătratul de `100 × 100`, **3 pereți** orizontali, iar drumul merge **în zigzag** de jos în sus. Îl spui colegului  
 3. <span style="color:#E65722;font-weight:700">Snap Grid</span>: **1.0 mm**  
 
-**Încearcă tu — Proiect nou și planul (6 min)**  
+**Încearcă tu — Proiect nou și planul (5 min)**  
 - [ ] Proiectul e creat și redenumit `Prenume_Nume_T3_L04`  
 - [ ] Știi planul: pătrat `100 × 100`, **3** pereți și drum în zigzag  
 
@@ -74,7 +75,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 5. <span style="color:#DC143C;font-weight:700">Ctrl+G</span>: placă cu cadru, iar pereții se văd `10` mm deasupra podelei  
 *Atenție la <span style="color:#E65722;font-weight:700">Align</span>: mută **ambele** piese spre mijlocul lor. Ca placa să rămână pe loc, trage forma nouă **peste** ea înainte de <span style="color:#E65722;font-weight:700">L</span>.*
 
-**Încearcă tu — Placa și cadrul (10 min)**  
+**Încearcă tu — Placa și cadrul (8 min)**  
 - [ ] Placa (**100 · 100 · 4**) are cadrul (inel cu pereți de **3 mm**)  
 - [ ] Cadrul stă **pe** placă, la `4` mm  
 
@@ -85,7 +86,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 4. Primul perete → <span style="color:#DC143C;font-weight:700">Ctrl+D</span> → muți copia **50 mm** spre spate → al treilea perete, lipit de stânga  
 5. Din <span style="color:#D400D4;font-weight:700">Top</span>: pereții alternează — gol la dreapta, gol la stânga, gol la dreapta  
 
-**Încearcă tu — Cei 3 pereți interiori (12 min)**  
+**Încearcă tu — Cei 3 pereți interiori (10 min)**  
 - [ ] Primul perete (**75 · 3 · 10**) e lipit de stânga, la **25 mm** de față  
 - [ ] Pereții alternează: gol la dreapta, la stânga, la dreapta  
 
@@ -97,7 +98,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 5. <span style="color:#1E90FF;font-weight:700">Sphere</span> → **10 · 10 · 10** → <span style="color:#E65722;font-weight:700">L</span> cu marcajul de start (mijloc pe cele două direcții de pe plan) → o ridici cu conul negru la **5 mm**  
 6. <span style="color:#DC143C;font-weight:700">Ctrl+A</span>, apoi Shift+click pe **bilă** (o scoți din selecție) → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
 
-**Încearcă tu — Start, final și bila (12 min)**  
+**Încearcă tu — Start, final și bila (9 min)**  
 - [ ] Start-ul e în colțul din față (verde), iar final-ul în colțul din spate (roșu)  
 - [ ] Bila (**10 mm**) stă pe marcajul de start și rămâne **în afara grupului**  
 
@@ -110,7 +111,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 4. Selectezi placa și inelul → <span style="color:#E65722;font-weight:700">L</span> → mijloc pe cele două direcții de pe plan. Inelul → <span style="color:#E65722;font-weight:700">D</span> → îl ridici cu conul negru cu **4 mm** → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
 *Și aici: trage fiecare formă nouă **peste** placă înainte de <span style="color:#E65722;font-weight:700">L</span>, ca placa să rămână pe loc.*
 
-**Încearcă tu — Labirintul rotund: proiect nou, placa și cadrul (10 min)**  
+**Încearcă tu — Labirintul rotund: proiect nou, placa și cadrul (8 min)**  
 - [ ] Placa (**Ø100 · 4**) are cadru cu pereți de **3 mm**, ridicat pe ea la `4` mm  
 
 ### 6) Cele 2 inele și deschiderile lor
@@ -120,7 +121,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 4. <span style="color:#1E90FF;font-weight:700">Box</span> → **8 · 14 · 14** → <span style="color:#00A600;font-weight:700">Hole</span> *(deschiderea inelului mare)*. <span style="color:#E65722;font-weight:700">L</span> cu placa → mijloc pe cele două direcții de pe plan. <span style="color:#E65722;font-weight:700">Snap Grid</span> **5.0** → o muți **30 mm** spre dreapta (`6` apăsări). O ridici cu conul negru la **4 mm**  
 5. <span style="color:#1E90FF;font-weight:700">Box</span> → **8 · 14 · 14** → <span style="color:#00A600;font-weight:700">Hole</span> *(deschiderea inelului mic)*. La fel, dar o muți **10 mm** spre **stânga** (`2` apăsări) și o ridici la **4 mm**  
 
-**Încearcă tu — Cele 2 inele și deschiderile lor (14 min)**  
+**Încearcă tu — Cele 2 inele și deschiderile lor (12 min)**  
 - [ ] Inelul mare (**60 · 60 · 10**, gol **54**) și inelul mic (**26 · 26 · 10**, gol **20**) sunt centrate pe placă  
 - [ ] Deschiderea inelului mare e în **dreapta**, iar a celui mic în **stânga**  
 
@@ -131,7 +132,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 4. <span style="color:#1E90FF;font-weight:700">Sphere</span> → **10 · 10 · 10** → <span style="color:#E65722;font-weight:700">L</span> cu marcajul de start → o ridici la **5 mm**  
 5. <span style="color:#DC143C;font-weight:700">Ctrl+A</span>, apoi Shift+click pe **bilă** → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>. Drumul: din start în jurul inelului mare până la deschiderea din dreapta, apoi prin culoarul de mijloc până la deschiderea din stânga, apoi în centru  
 
-**Încearcă tu — Start, final și bila (12 min)**  
+**Încearcă tu — Start, final și bila (8 min)**  
 - [ ] Start-ul e în culoarul exterior, final-ul în centru; bila (**10 mm**) stă pe start, în afara grupului  
 - [ ] Cu degetul pe ecran, drumul start → final trece doar prin deschideri  
 
@@ -147,7 +148,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 5. <span style="color:#E65722;font-weight:700">Ruler</span>: culoarul (`22` mm) față de bilă (`10` mm) și golul de `14` mm de lângă pinten  
 6. <span style="color:#00A600;font-weight:700">Color</span>: <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span> pe labirint → colorezi placa cu cadru într-o culoare și pereții interiori în alta → <span style="color:#DC143C;font-weight:700">Ctrl+A</span>, Shift+click pe bilă, <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
 
-**Încearcă tu — Complet — pinteni, test, culori (25 min)**  
+**Încearcă tu — Complet — pinteni, test, culori (15 min)**  
 - [ ] Ai **2** pinteni (**3 · 11 · 10**), la `25` mm unul de altul  
 - [ ] Cu degetul pe ecran, drumul start → final nu trece prin perete  
 - [ ] Cu Ruler: culoarul **22 mm**, bila **10 mm**, golul de lângă pinten **14 mm**  
@@ -201,11 +202,17 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Labirint cu 4 pereți și capac
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Labirintul cu patru pereți și capac
+*Doar dacă ai terminat Complet. Lucrezi în proiectul `Prenume_Nume_T3_L04`, **lângă** labirintul pătrat de până acum, pe trepte, de la ușor la greu. Fiecare piesă o faci de la zero, nu o copiezi din altă piesă. Treapta următoare o începi după ce ai încheiat-o pe cea dinainte. Snap Grid: **1.0 mm**.*
 
-- [ ] Schimbă culorile și adaugă un text pe margine  
-- [ ] **Provocarea (obiect mai complicat):** un proiect nou `Prenume_Nume_T3_L04_C`. Copiezi cu <span style="color:#DC143C;font-weight:700">Ctrl+C</span> și <span style="color:#DC143C;font-weight:700">Ctrl+V</span> **placa cu cadru** din primul proiect (fără pereți). Pui **4 pereți** `75 · 3 · 10` alternanți, cu <span style="color:#E65722;font-weight:700">Snap Grid</span> **1.0**: primul la `19` mm de marginea din față a plăcii, apoi câte `19` mm între ei. Culoarele ies de **16 mm**, tot mai late decât bila. Apoi un **capac**: <span style="color:#1E90FF;font-weight:700">Box</span> `100 · 100 · 3` ridicat la `14`, cu o **fereastră** <span style="color:#00A600;font-weight:700">Hole</span> `60 · 60 · 6` în mijloc, grupate între ele, dar separate de labirint. Cu <span style="color:#E65722;font-weight:700">Ruler</span> confirmi culoarul (`16` mm), capacul (`100 × 100`, la `14` mm) și fereastra (`60 × 60`). Un coleg trasează drumul prin fereastră.  
+- [ ] **Treapta 1 — Placa nouă.** Un `Box` `100 · 100 · 4`, cu un cadru de `3` mm (inel făcut cu `Hole`), ridicat la `4`. `Ctrl+G`.  
+- [ ] **Treapta 2 — Patru pereți.** Patru pereți `Box` `75 · 3 · 10`, ridicați la `4` și alternanți: primul lipit de stânga, la `19` mm de marginea din față, al doilea lipit de dreapta, apoi câte `19` mm între ei. Culoarele ies de `16` mm, mai late decât bila.  
+- [ ] **Treapta 3 — Start, final și bila.** Marcaje `12 · 12 · 1` (start în colțul din față-stânga, final în colțul din spate-stânga, unde duce ultima deschidere) și o bilă `Sphere` `10 · 10 · 10` la `5`, **separată** de grup.  
+- [ ] **Treapta 4 — Capacul.** Un `Box` `100 · 100 · 3`, ridicat la `14` (stă pe pereți), cu o fereastră `Hole` `60 · 60 · 6`, centrată și ridicată la `13`. `Ctrl+G` între ele, **separat** de labirint.  
+- [ ] **Treapta 5 — Numele tău.** Un `Text` cu numele tău, de `1` mm înălțime, lipit pe marginea din față a capacului, între fereastră și margine. Din `Top` verifici că nu intră în fereastră.  
+- [ ] **Treapta 6 — Verificarea.** Cu `Ruler` confirmi culoarul de `16` mm, capacul `100 × 100` la `14` mm și fereastra `60 × 60`.  
+
+**Verificare (cu un coleg):** colegul trasează în cel mult **30 de secunde** drumul bilei prin fereastră, cu degetul, de la start la final, și numără cei **4** pereți.  
 
 ## Recapitulare rapidă
 1. Culoarul trebuie să fie **mai lat decât bila** (`10` mm)  
@@ -219,8 +226,10 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 - Câți milimetri are culoarul labirintului pătrat? Dar golul lângă pinten?  
 - Cum faci o deschidere într-un inel?
 
-## Temă
-Opțional, acasă, într-un proiect nou `T3_L04_B`: un labirint cu **5** pereți. Cât de lat e fiecare culoar? Trece bila de `10` mm?
+## Temă (opțional)
+- Dacă ai doar Minim: acasă termini în același proiect ce nu ai apucat.  
+- Dacă ai Complet: într-un proiect nou `T3_L04_C`, un labirint cu **5** pereți. Cât de lat e fiecare culoar? Trece bila de `10` mm?  
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T3_L04_D`, un **labirint rotund cu `3` inele** pe o placă `Ø140`, cu culoare de `14` mm, calculând tu diametrele inelelor (pereții inelelor de `3` mm).  
 
 ## Ce urmează
 În **Lecția 5** faci un **puzzle 3D**: piese care se potrivesc cu joc, dop în locaș.

@@ -27,11 +27,12 @@ Ca să se potrivească, dinții unei roți intră în **golurile** celeilalte. D
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–10 | Recap M2 · privim roți dințate (poză sau desen): câți dinți are fiecare? |
-| 10–50 | **Obiectul 1** — Angrenajul cu două roți egale (Minim) |
-| 50–85 | **Obiectul 2** — Reducția cu roată mare și roată mică (Minim) |
-| 85–110 | **Complet** pe primul obiect |
-| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme sau ca temă |
+| 0–10 | Recap M2 · privim roți dințate într-o poză: câți dinți are fiecare? |
+| 10–42 | **Obiectul 1** — Angrenajul cu două roți egale (Minim) |
+| 42–72 | **Obiectul 2** — Reducția cu roată mare și roată mică (Minim) |
+| 72–85 | **Complet** pe primul obiect |
+| 85–110 | **Bonus ★★★** — trenul de angrenaje cu manivelă, pe trepte (fiecare merge cât apucă) |
+| 110–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -75,7 +76,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 5. <span style="color:#DC143C;font-weight:700">Ctrl+D</span> din nou — repetă aceeași rotire → a treia bară. Încă o dată → a patra  
 6. Rezultat: 4 bare la 0°, 45°, 90°, 135° → **8 dinți** egal depărtați  
 
-**Încearcă tu — Prima roată: discul și cei 8 dinți (10 min)**  
+**Încearcă tu — Prima roată: discul și cei 8 dinți (8 min)**  
 - [ ] Discul are **40 · 40 · 6**, iar bara **56 · 6 · 6** e centrată pe el  
 - [ ] Ai **4** bare, la **0°, 45°, 90°, 135°**, deci **8** dinți egal depărtați  
 
@@ -85,7 +86,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 3. <span style="color:#DC143C;font-weight:700">Ctrl+G</span> — prima roată → apeși <span style="color:#E65722;font-weight:700">D</span> (stă pe plan)  
 4. View Cube → <span style="color:#D400D4;font-weight:700">Top</span>: 8 dinți, gaura în centru  
 
-**Încearcă tu — Gaura din mijloc și Group (6 min)**  
+**Încearcă tu — Gaura din mijloc și Group (5 min)**  
 - [ ] Gaura (**8 · 8 · 10**, Hole) e în centru  
 - [ ] Prima roată e grupată și stă pe plan  
 
@@ -96,7 +97,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 4. O muți **50 mm** spre dreapta (`10` apăsări pe săgeată, câte `5` mm)  
 5. Din <span style="color:#D400D4;font-weight:700">Top</span>: dinții primei roți intră în golurile celei de-a doua și invers  
 
-**Încearcă tu — A doua roată (8 min)**  
+**Încearcă tu — A doua roată (6 min)**  
 - [ ] A doua roată e rotită cu **22,5°** și mutată cu **50 mm**  
 - [ ] Din Top, dinții unei roți intră în golurile celeilalte  
 
@@ -108,7 +109,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 5. Selectezi **cele două roți** și **cele două pivoturi** → <span style="color:#DC143C;font-weight:700">Ctrl+G</span> *(temporar, doar ca să centrezi)* → cu placa → <span style="color:#E65722;font-weight:700">L</span> → mijloc pe cele două direcții de pe plan → <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span> pe grupul temporar  
 6. Selectezi **cele două pivoturi** și **placa** → <span style="color:#DC143C;font-weight:700">Ctrl+G</span> — placa are pivoturi  
 
-**Încearcă tu — Pivoturile și placa (8 min)**  
+**Încearcă tu — Pivoturile și placa (6 min)**  
 - [ ] Pivoturile (**6 · 6 · 16**) sunt centrate pe cele două roți  
 - [ ] Placa are **120 · 64 · 4**, cu roțile centrate pe ea  
 - [ ] Pivoturile și placa sunt grupate; roțile rămân separate  
@@ -118,7 +119,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 2. Le ridici cu <span style="color:#E65722;font-weight:700">conul negru</span> cu **5 mm** — stau deasupra plăcii, nu lipite de ea  
 3. View Cube → <span style="color:#D400D4;font-weight:700">Front</span>: între placă și roți e un gol mic; pivoturile trec prin roți  
 
-**Încearcă tu — Roțile stau pe pivoturi (4 min)**  
+**Încearcă tu — Roțile stau pe pivoturi (3 min)**  
 - [ ] Roțile sunt ridicate cu **5 mm** și stau pe pivoturi, nelipite de placă  
 
 **Obiectul 2 — Reducția cu roată mare și roată mică**
@@ -132,7 +133,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 6. <span style="color:#1E90FF;font-weight:700">Cylinder</span> **8 · 8 · 10** → <span style="color:#00A600;font-weight:700">Hole</span> → cu corpul → <span style="color:#E65722;font-weight:700">L</span> → mijloc pe cele **trei** direcții → <span style="color:#DC143C;font-weight:700">Ctrl+A</span> → <span style="color:#DC143C;font-weight:700">Ctrl+G</span> → <span style="color:#E65722;font-weight:700">D</span>  
 7. <span style="color:#E65722;font-weight:700">Snap Grid</span>: **5.0 mm**. Muți roata mare **50 mm** spre stânga (`10` apăsări): face loc roții mici, la mijloc  
 
-**Încearcă tu — Roata mare: proiect nou, 16 dinți (14 min)**  
+**Încearcă tu — Roata mare: proiect nou, 16 dinți (12 min)**  
 - [ ] Discul are **60 · 60 · 6**, iar bara **68 · 4 · 6**  
 - [ ] Ai **8** bare la câte **22,5°**, deci **16** dinți, cu gaura **8 · 8 · 10** în centru  
 
@@ -145,7 +146,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 6. Rotești **roata mică** **22,5°** (un pas): acum are **gol** înspre roata mare, iar roata mare are **dinte** înspre ea  
 7. Din <span style="color:#D400D4;font-weight:700">Top</span>: dinții se potrivesc, iar centrele sunt la **50 mm**  
 
-**Încearcă tu — Roata mică și potrivirea (12 min)**  
+**Încearcă tu — Roata mică și potrivirea (10 min)**  
 - [ ] Roata mică (**30 · 30 · 6**, bară **38 · 4 · 6**) are **8** dinți și gaura **8 · 8 · 10**  
 - [ ] Roata mică e rotită cu **22,5°**; din Top, dinții intră în goluri și centrele sunt la **50 mm**  
 
@@ -157,7 +158,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 5. <span style="color:#D400D4;font-weight:700">Front</span>: roțile stau pe pivoturi. <span style="color:#D400D4;font-weight:700">Top</span>: placa depășește roata mare cu cel puțin `2` mm  
 6. Raportul: roata mică are **8** dinți, roata mare **16** → mică face **2 ture** cât mare face **una**  
 
-**Încearcă tu — Pivoturile, placa și raportul (10 min)**  
+**Încearcă tu — Pivoturile, placa și raportul (8 min)**  
 - [ ] Placa are **110 · 76 · 4**, cu pivoturile (**6 · 6 · 16**) grupate cu ea, iar roțile sunt **separate** și ridicate **5 mm**  
 - [ ] Pot spune câte ture face roata mică cât roata mare face una  
 
@@ -175,7 +176,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 7. <span style="color:#E65722;font-weight:700">Ruler</span>: între pivoturi `50` mm și `100` mm de la primul la al treilea  
 8. <span style="color:#00A600;font-weight:700">Color</span>: câte o culoare pe roată  
 
-**Încearcă tu — Complet — a treia roată și Ruler (12 min)**  
+**Încearcă tu — Complet — a treia roată și Ruler (13 min)**  
 - [ ] A treia roată e la **100 mm** de prima, la aceeași înălțime  
 - [ ] Placa are lungimea **170** și **3** pivoturi  
 - [ ] Cu Ruler: **50** mm între pivoturi vecine  
@@ -234,10 +235,16 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 ---
 
 ## Bonus ★★★ — Provocare: Trenul de angrenaje cu manivelă
-*Doar dacă ai terminat Complet.*
+*Doar dacă ai terminat Complet. Lucrezi în proiectul `Prenume_Nume_T3_L01_B`, **lângă** reducția de până acum, pe trepte, de la ușor la greu. Fiecare piesă o faci de la zero, nu o copiezi din altă piesă. Treapta următoare o începi după ce ai încheiat-o pe cea dinainte. Snap Grid: **1.0 mm**, iar la mutări de `50` mm: **5.0 mm**.*
 
-- [ ] Schimbă culorile roților și adaugă un text pe placă  
-- [ ] **Provocarea (obiect mai complicat):** în proiectul `Prenume_Nume_T3_L01_B`, adaugă o **a doua roată mică** (copia primei roți mici), la **50 mm** de roata mare, pe partea cealaltă: așa ai un tren de **3 roți** (**8 + 16 + 8 = 32** dinți). Pune un pivot **6 · 6 · 16** și pe ea și mărește placa la `150`, centrată. Apoi o **manivelă**, piesă **separată**: <span style="color:#1E90FF;font-weight:700">Box</span> `40 · 14 · 4` cu o gaură <span style="color:#00A600;font-weight:700">Hole</span> `Ø8` la `7` mm de un capăt, ridicată cu <span style="color:#E65722;font-weight:700">conul negru</span> la `12`, ca să stea pe pivotul unei roți mici, cu **mâner** <span style="color:#1E90FF;font-weight:700">Cylinder</span> `6 · 6 · 10` la celălalt capăt. Cu <span style="color:#E65722;font-weight:700">Ruler</span> confirmi cele **două** distanțe de `50` mm între pivoturi și gaura manivelei (`8`) față de pivot (`6`). Un coleg numără cele **32** de dinți și vede că manivela nu e lipită de roată.  
+- [ ] **Treapta 1 — A doua roată mică.** Un disc `Cylinder` `30 · 30 · 6` și `4` bare `Box` `38 · 4 · 6`, rotite din `45°` în `45°` (`Ctrl+D`), apoi gaura `Hole` `8 · 8 · 10`, centrată pe `3` direcții. `Ctrl+G`, `D`. O rotești `22,5°` (un pas).  
+- [ ] **Treapta 2 — Poziționarea.** O muți la `50` mm de roata mare, pe **partea cealaltă** (`10` apăsări pe săgeată). Din `Top` verifici că dinții intră în goluri. Acum ai `3` roți, cu `8 + 16 + 8 = 32` de dinți.  
+- [ ] **Treapta 3 — Pivotul și placa.** Un pivot `Cylinder` `6 · 6 · 16`, centrat pe roata nouă. Placa se mărește la `150 · 76 · 4`: cele `3` roți ocupă `138` mm, deci rămân `6` mm margine la capete. Centrezi totul cu un grup temporar, ca la Complet.  
+- [ ] **Treapta 4 — Roțile ridicate.** Cele `3` roți stau la `5` mm și rămân **separate** de placă. Din `Front` verifici că nu sunt lipite.  
+- [ ] **Treapta 5 — Manivela.** Un `Box` `40 · 14 · 4`, cu un `Hole` `Cylinder` `Ø8` la `7` mm de un capăt. Ridici manivela cu conul negru la `12`, ca să stea pe pivotul unei roți mici, deasupra roții, cu `1` mm de aer.  
+- [ ] **Treapta 6 — Mânerul și verificarea.** Un mâner `Cylinder` `6 · 6 · 10` la celălalt capăt al manivelei, la `15` (intră `1` mm). Cu `Ruler` confirmi cele **două** distanțe de `50` mm între pivoturi și gaura manivelei (`8`) față de pivot (`6`).  
+
+**Verificare (cu un coleg):** colegul numără în cel mult **30 de secunde** cei **32** de dinți și vede că manivela nu e lipită de roată.  
 
 ## Recapitulare rapidă
 1. Roțile vecine se învârt în **sens invers**  
@@ -251,8 +258,10 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 - Dacă prima roată se învârte spre dreapta, încotro se învârte a doua?  
 - Roata mare are 16 dinți, cea mică 8. Câte ture face roata mică când cea mare face una?
 
-## Temă
-Opțional, acasă, într-un proiect nou `T3_L01_B`: un șir de **4** roți dințate, la distanța potrivită ca dinții să se prindă. Prima se învârte spre dreapta; în ce sens se învârte fiecare dintre celelalte?
+## Temă (opțional)
+- Dacă ai doar Minim: acasă termini în același proiect ce nu ai apucat.  
+- Dacă ai Complet: într-un proiect nou `T3_L01_C`, un șir de **4** roți dințate, la distanța potrivită ca dinții să se prindă. Prima se învârte spre dreapta: în ce sens se învârte fiecare dintre celelalte?  
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T3_L01_D`, un angrenaj cu două roți mai mari (`Ø50`, dinți de `8` mm), cu distanța dintre pivoturi calculată de tine: raza discului plus raza până la vârful dinților plus `2` mm.  
 
 ## Ce urmează
 În **Lecția 2** faci o mașinuță cu roți și axe și o remorcă pe care o poți cupla de ea.

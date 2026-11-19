@@ -27,10 +27,11 @@ Locașul are `31` mm, baza `30` mm: joc de `0,5` mm pe parte, ca piesa să intre
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap L5 · privim piese de șah: ce silueta au pionul, turnul, nebunul? |
-| 10–50 | **Obiectul 1** — Pionul și turnul (Minim) |
-| 50–85 | **Obiectul 2** — Tabla cu locașuri (Minim) |
-| 85–110 | **Complet** pe primul obiect |
-| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme sau ca temă |
+| 10–42 | **Obiectul 1** — Pionul și turnul (Minim) |
+| 42–70 | **Obiectul 2** — Tabla cu locașuri (Minim) |
+| 70–85 | **Complet** pe primul obiect |
+| 85–110 | **Bonus ★★★** — regele, regina și tabla mare, pe trepte (fiecare merge cât apucă) |
+| 110–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -64,7 +65,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 3. <span style="color:#E65722;font-weight:700">Snap Grid</span> **5.0 mm** → <span style="color:#DC143C;font-weight:700">Ctrl+D</span> → muți copia **40 mm** (`8` apăsări) → <span style="color:#DC143C;font-weight:700">Ctrl+D</span> din nou: **3** baze identice, la `40` mm una de alta  
 *Atenție la <span style="color:#E65722;font-weight:700">Align</span>: mută **ambele** piese spre mijlocul lor. Ca baza să rămână pe loc, trage forma nouă **peste** baza ei înainte de <span style="color:#E65722;font-weight:700">L</span>.*
 
-**Încearcă tu — Proiect nou și bazele (8 min)**  
+**Încearcă tu — Proiect nou și bazele (6 min)**  
 - [ ] Proiectul e creat și redenumit `Prenume_Nume_T3_L06`  
 - [ ] Ai **3** baze identice (**30 · 30 · 4**), la **40 mm** una de alta  
 
@@ -74,7 +75,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 3. Din <span style="color:#D400D4;font-weight:700">Front</span>: baza, gâtul, capul — o siluetă clară de pion  
 4. Selectezi baza, gâtul și capul (Shift+click) → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
 
-**Încearcă tu — Pionul (12 min)**  
+**Încearcă tu — Pionul (10 min)**  
 - [ ] Pionul are bază, gât (**14 · 14 · 18**) și cap (sferă **16**, la **14 mm**)  
 - [ ] Pionul e grupat  
 
@@ -87,7 +88,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 6. Selectezi baza, corpul, coroana și cele două Hole-uri (Shift+click) → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
 7. Din <span style="color:#D400D4;font-weight:700">Top</span>: coroana are **4** creneluri; din <span style="color:#D400D4;font-weight:700">Front</span>: turnul (`38` mm) e mai înalt decât pionul (`30` mm)  
 
-**Încearcă tu — Turnul (20 min)**  
+**Încearcă tu — Turnul (16 min)**  
 - [ ] Turnul are corp (**18 · 18 · 34**) și coroană (**24 · 24 · 8**, la **30 mm**)  
 - [ ] Coroana are **4** creneluri în cruce (din Top)  
 - [ ] Turnul e mai înalt decât pionul (din Front)  
@@ -102,7 +103,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 5. Selectezi cele **4** locașuri (Shift+click) → <span style="color:#DC143C;font-weight:700">Ctrl+D</span> → muți copiile **40 mm** spre spate (`8` apăsări): al doilea rând, **8** locașuri  
 6. <span style="color:#DC143C;font-weight:700">Ctrl+A</span> → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
 
-**Încearcă tu — Tabla: proiect nou, placa și locașurile (14 min)**  
+**Încearcă tu — Tabla: proiect nou, placa și locașurile (10 min)**  
 - [ ] Tabla are **160 · 80 · 6**  
 - [ ] Ai **8** locașuri (**31 · 31 · 4**, Hole), la **40 mm** între centre, cu fund de `3` mm  
 
@@ -111,7 +112,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 2. Pionul → <span style="color:#E65722;font-weight:700">L</span> cu tabla: punctul din **stânga** și punctul din **față**. Apoi <span style="color:#E65722;font-weight:700">Snap Grid</span> **5.0** → **1** apăsare spre dreapta și **1** spre spate: baza e chiar în primul locaș. O ridici cu conul negru cu **3 mm**: baza stă în locaș  
 3. Turnul → <span style="color:#E65722;font-weight:700">L</span> cu tabla: punctul din **dreapta** și punctul din **față**. Apoi **1** apăsare spre stânga și **1** spre spate: baza e în locașul din dreapta, în fața tablei. Îl ridici cu **3 mm**  
 
-**Încearcă tu — Piesele pe tablă (12 min)**  
+**Încearcă tu — Piesele pe tablă (10 min)**  
 - [ ] Pionul și turnul stau în locașuri, cu bazele ridicate cu **3 mm**  
 - [ ] Piesele sunt **separate** de tablă (click pe piesă → se selectează singură)  
 
@@ -136,7 +137,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 5. <span style="color:#E65722;font-weight:700">Snap Grid</span> **5.0** → pionul → <span style="color:#DC143C;font-weight:700">Ctrl+D</span> → muți copia **120 mm** spre dreapta (`24` apăsări), în dreapta nebunului  
 6. <span style="color:#00A600;font-weight:700">Color</span>: pionul original alb (sau deschis), copia neagră (sau închis). La fel poți colora turnul  
 
-**Încearcă tu — Complet — nebunul și culorile (25 min)**  
+**Încearcă tu — Complet — nebunul și culorile (15 min)**  
 - [ ] Nebunul are con (**18 · 18 · 32**), cap (sferă **12**, la **28 mm**) și crestătură rotită **45°**  
 - [ ] Nebunul e cel mai înalt (**40 mm**)  
 - [ ] Ai un pion alb și unul negru  
@@ -189,11 +190,17 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Regele și regina
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Regele, regina și tabla mare
+*Doar dacă ai terminat Complet. Treptele 1–3 sunt în proiectul `Prenume_Nume_T3_L06`, **lângă** piesele de până acum. Treptele 4–6 sunt în `Prenume_Nume_T3_L06_B`, lângă tabla de până acum. Fiecare piesă o faci de la zero. Treapta următoare o începi după ce ai încheiat-o pe cea dinainte. Snap Grid: **1.0 mm**, iar la mutări de `40` mm: **5.0 mm**.*
 
-- [ ] Schimbă culorile și adaugă un număr pe fiecare piesă, cu un text mic de `1` mm  
-- [ ] **Provocarea (obiect mai complicat):** în proiectul `Prenume_Nume_T3_L06`, încă **două piese** pe baze `Ø30 × 4` identice cu celelalte. **Regele:** corp <span style="color:#1E90FF;font-weight:700">Cylinder</span> `18 · 18 · 40`, coroană `24 · 24 · 6` la `38`, cruce din două <span style="color:#1E90FF;font-weight:700">Box</span>: una verticală `4 · 4 · 14` la `42` și una orizontală `12 · 4 · 4` la `48`, cu înălțimea totală de **56 mm**. **Regina:** corp `18 · 18 · 40`, coroană `24 · 24 · 6` la `38` și o sferă `Ø12` pe vârf, la `42`, cu înălțimea totală de **54 mm**. Cu <span style="color:#E65722;font-weight:700">Ruler</span> confirmi înălțimile (`56` și `54` mm) și bazele (`30` mm). Un coleg le recunoaște după siluetă și le așază în locașurile tablei din proiectul `_B`.  
+- [ ] **Treapta 1 — Regele.** O bază `Cylinder` `30 · 30 · 4`, identică cu celelalte, un corp `Cylinder` `18 · 18 · 40` și o coroană `Cylinder` `24 · 24 · 6`, la `38`. Toate centrate pe bază.  
+- [ ] **Treapta 2 — Crucea regelui.** Un `Box` vertical `4 · 4 · 14`, la `42`, și unul orizontal `12 · 4 · 4`, la `48`, centrate pe coroană. `Ctrl+G` pe tot regele. Înălțimea totală e de **56 mm**.  
+- [ ] **Treapta 3 — Regina.** O bază `30 · 30 · 4`, un corp `18 · 18 · 40`, o coroană `24 · 24 · 6`, la `38`, și o `Sphere` `12 · 12 · 12`, la `42`. `Ctrl+G`. Înălțimea totală e de **54 mm**.  
+- [ ] **Treapta 4 — Tabla mare.** Un `Box` `160 · 160 · 6` cu `16` locașuri `Hole` `Cylinder` `31 · 31 · 4`, ridicate la `3`, în `4` rânduri a câte `4`, la `40` mm între centre. Locașurile de la margine rămân la `4,5` mm de margine.  
+- [ ] **Treapta 5 — Piesele pe tablă.** Regele și regina, copiați cu `Ctrl+C` și `Ctrl+V` în proiectul tablei, stau în locașuri vecine, cu bazele ridicate cu `3` mm. Cu `Ruler` confirmi `40` mm între centrele lor.  
+- [ ] **Treapta 6 — Verificarea.** Cu `Ruler` confirmi bazele (`30` mm), locașurile (`31` mm) și înălțimile (`56` și `54` mm). Din `Front` și `Top`, piesele stau în locașuri, cu joc egal în jur.  
+
+**Verificare (cu un coleg):** colegul recunoaște în cel mult **30 de secunde** piesele după siluetă și numără cele **16** locașuri.  
 
 ## Recapitulare rapidă
 1. Toate piesele stau pe **aceeași bază** (`Ø30 × 4`)  
@@ -207,8 +214,10 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 - Cu cât e mai mare locașul decât baza, pe fiecare parte?  
 - Cum faci 8 locașuri egale depărtate?
 
-## Temă
-Opțional, acasă, într-un proiect nou `T3_L06_B`: **3** piese de șah, cu înălțimi diferite. Notează înălțimea fiecăreia cu Ruler.
+## Temă (opțional)
+- Dacă ai doar Minim: acasă termini în același proiect ce nu ai apucat.  
+- Dacă ai Complet: într-un proiect nou `T3_L06_C`, **3** piese de șah cu înălțimi diferite. Notează înălțimea fiecăreia cu Ruler.  
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T3_L06_D`, o **cutie pentru piese**, cu `4` locașuri `Ø31` într-un rând și pereți de `5` mm, cu lungimea calculată de tine.  
 
 ## Ce urmează
 În **Lecția 7** faci **zaruri personalizate** și o **cutie pentru zaruri**: un cub cu puncte și o cutie în care stă cu joc.

@@ -26,10 +26,11 @@ Ca să se învârtă o roată, trebuie să aibă **loc** pe ax: gaura roții e m
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap L1 · privim o mașinuță reală: roată, ax, caroserie |
-| 10–50 | **Obiectul 1** — Mașinuța (Minim) |
-| 50–85 | **Obiectul 2** — Remorca (Minim) |
-| 85–110 | **Complet** pe primul obiect: cuplajul |
-| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme sau ca temă |
+| 10–42 | **Obiectul 1** — Mașinuța (Minim) |
+| 42–70 | **Obiectul 2** — Remorca (Minim) |
+| 70–85 | **Complet** pe primul obiect: cuplajul |
+| 85–110 | **Bonus ★★★** — trenul cu două remorci, pe trepte (fiecare merge cât apucă) |
+| 110–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -71,7 +72,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 3. Rotești roata **90°** (`4` pași de câte 22,5° pe <span style="color:#E65722;font-weight:700">săgeata curbă</span>). <span style="color:#D400D4;font-weight:700">Front</span>: roata se vede ca un **cerc**? Dacă vezi o linie, mai rotește `90°` pe cealaltă săgeată. Apoi <span style="color:#E65722;font-weight:700">D</span>  
 4. <span style="color:#1E90FF;font-weight:700">Cylinder</span> → **5 · 5 · 52** *(axul)*. Îl rotești la fel, până când din <span style="color:#D400D4;font-weight:700">Front</span> se vede ca un cerc mic. Apoi <span style="color:#E65722;font-weight:700">D</span>  
 
-**Încearcă tu — Roata și axul (10 min)**  
+**Încearcă tu — Roata și axul (8 min)**  
 - [ ] Roata (**24 · 24 · 6**, gaură **7 mm**) se vede ca un **cerc** din Front și stă pe plan  
 - [ ] Axul (**5 · 5 · 52**) se vede ca un cerc mic din Front și stă pe plan  
 
@@ -82,7 +83,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 4. Fiecare roată stă la capătul axului, **nelipită de el**: axul trece prin gaura de `7` mm  
 5. Selectezi **cele trei piese** → <span style="color:#DC143C;font-weight:700">Ctrl+D</span> → muți copia **50 mm** pe direcția lungimii mașinii (Snap Grid **5.0 mm**, `10` sărituri) — al doilea set  
 
-**Încearcă tu — Setul „ax + 2 roți” (8 min)**  
+**Încearcă tu — Setul „ax + 2 roți” (6 min)**  
 - [ ] Axul trece prin gaura roților, fără să le lipească  
 - [ ] Ai al doilea set „ax + 2 roți”, la **50 mm** de primul  
 
@@ -94,7 +95,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 5. Shift+click pe **caroserie și pe cele două găuri** *(nu Ctrl+A — ar prinde și roțile)* → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
 6. <span style="color:#E65722;font-weight:700">D</span>, apoi o ridici cu <span style="color:#E65722;font-weight:700">conul negru</span> cu **6 mm** (Snap Grid **1.0**): găurile ajung la **12 mm** de plan, ca axele  
 
-**Încearcă tu — Caroseria (10 min)**  
+**Încearcă tu — Caroseria (8 min)**  
 - [ ] Caroseria are **80 · 36 · 12**, cu **2** găuri la **50 mm** una de alta  
 - [ ] Găurile sunt la **12 mm** de plan, ca axele  
 
@@ -104,7 +105,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 3. <span style="color:#1E90FF;font-weight:700">Box</span> → **40 · 32 · 12** → <span style="color:#E65722;font-weight:700">L</span> cu caroseria, mijloc pe cele două direcții de pe plan. Îl ridici cu conul negru la **18 mm**, pe acoperiș  
 4. Selectezi cabina și caroseria → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
 
-**Încearcă tu — Axele prin caroserie și cabina (8 min)**  
+**Încearcă tu — Axele prin caroserie și cabina (6 min)**  
 - [ ] Din Front și Top, axele trec prin găuri și roțile sunt în afara caroseriei  
 - [ ] Cabina (**40 · 32 · 12**) stă pe acoperiș, la **18 mm**  
 
@@ -117,7 +118,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 4. Selectezi corpul și setul → <span style="color:#E65722;font-weight:700">L</span> → mijloc pe cele **două** direcții de pe plan — **nu** pe înălțime  
 5. <span style="color:#E65722;font-weight:700">D</span>, apoi ridici **corpul** cu <span style="color:#E65722;font-weight:700">conul negru</span> cu **7 mm**: gaura ajunge la **12 mm**, ca axul  
 
-**Încearcă tu — Remorca: proiect nou, corpul și roțile (14 min)**  
+**Încearcă tu — Remorca: proiect nou, corpul și roțile (12 min)**  
 - [ ] Corpul are **60 · 36 · 10** și o gaură **Ø7** la **12 mm** de plan  
 - [ ] Axul trece prin gaură, iar roțile sunt la capete, nelipite  
 
@@ -129,7 +130,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 5. Ridici gaura la **6 mm** cu conul negru: ea trece prin toată lancea (de la `9` la `13`)  
 6. Shift+click pe **corp, lance și gaura nouă** (nu pe roți și axe) → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
 
-**Încearcă tu — Lancea cu gaura de cuplare (12 min)**  
+**Încearcă tu — Lancea cu gaura de cuplare (10 min)**  
 - [ ] Lancea (**30 · 14 · 4**) iese `28` mm din corp, la **9 mm** de plan  
 - [ ] Gaura (**Ø8**) trece prin lance, la `8` mm de vârf  
 
@@ -139,7 +140,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 3. <span style="color:#E65722;font-weight:700">Ruler</span>: gaura **8 mm**, cuiul **6 mm** → joc de `1` mm pe parte  
 4. Ștergi cuiul de test (Delete). Axul și roțile rămân **separate** de corp  
 
-**Încearcă tu — Verificare cu un cui de test (8 min)**  
+**Încearcă tu — Verificare cu un cui de test (6 min)**  
 - [ ] Am văzut cuiul în gaură, cu spațiu pe toate părțile  
 - [ ] Cu Ruler: gaura **8 mm**, cuiul **6 mm**  
 
@@ -156,7 +157,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 6. <span style="color:#E65722;font-weight:700">Ruler</span>: gaura **8 mm**, cuiul **6 mm**, iar între caroseria mașinuței și corpul remorcii sunt **30 mm**  
 7. <span style="color:#00A600;font-weight:700">Color</span>: mașinuța o culoare, remorca alta  
 
-**Încearcă tu — Complet — cuplajul pe mașinuță (25 min)**  
+**Încearcă tu — Complet — cuplajul pe mașinuță (15 min)**  
 - [ ] Cuiul (**6 · 6 · 10**) stă pe prag, la `10` mm de caroserie  
 - [ ] Lancea remorcii e pe cui, cu spațiu egal în jurul lui  
 - [ ] Cu Ruler: **30 mm** între mașinuță și remorcă  
@@ -213,11 +214,17 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Trenul cu 2 remorci
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Trenul cu două remorci
+*Doar dacă ai terminat Complet. Lucrezi în proiectul `Prenume_Nume_T3_L02`, **lângă** mașinuța și remorca de până acum, pe trepte, de la ușor la greu. Fiecare piesă o faci de la zero, nu o copiezi din altă piesă. Treapta următoare o începi după ce ai încheiat-o pe cea dinainte. Snap Grid: **1.0 mm**, iar la mutări mari: **5.0 mm**.*
 
-- [ ] Schimbă culorile și adaugă un text pe corpul unei remorci  
-- [ ] **Provocarea (obiect mai complicat):** în proiectul `Prenume_Nume_T3_L02`, adaugă o **a doua remorcă**, identică cu prima (copia ei, cu <span style="color:#DC143C;font-weight:700">Ctrl+D</span>), cuplată de prima. Prima remorcă primește la spate, ca mașinuța, un **prag** `26 · 14 · 3` la `6` mm și un **cui** `6 · 6 · 10` la `10` mm de corp. Lancea celei de-a doua se pune pe acest cui, cu `30` mm între remorci. Cu <span style="color:#E65722;font-weight:700">Ruler</span> confirmi lungimea totală a trenului, de la fața din dreapta a mașinuței până la capătul din stânga al celei de-a doua remorci: **80 + 30 + 60 + 30 + 60 = 260 mm** (fără lance și fără prag). Un coleg poate cupla remorcile în orice ordine, fiindcă sunt identice.  
+- [ ] **Treapta 1 — Cuiul din spatele primei remorci.** Un prag `Box` `26 · 14 · 3` la `6`, cu un capăt ieșit `20` mm în stânga corpului și `6` mm sub el. Un cui `Cylinder` `6 · 6 · 10` la `9`, la `10` mm de corp, ca la mașinuță.  
+- [ ] **Treapta 2 — Corpul celei de-a doua remorci.** Un `Box` `60 · 36 · 10` cu un `Hole` `Cylinder` `7 · 7 · 40`, rotit ca axul, centrat pe `3` direcții și ridicat la `7`. `Ctrl+G`.  
+- [ ] **Treapta 3 — Axul și roțile ei.** Un ax `Cylinder` `5 · 5 · 52` și `2` roți `Cylinder` `24 · 24 · 6` cu gaură `Hole` `Ø7`, rotite `90°`, nelipite de ax. Le centrezi pe corp cu un grup temporar, ca la remorca întâi.  
+- [ ] **Treapta 4 — Lancea ei.** Un `Box` `30 · 14 · 4` la `9`, intrat `2` mm în corp, cu o gaură `Hole` `Ø8`, ridicată la `6`, la `8` mm de vârf.  
+- [ ] **Treapta 5 — Cuplarea.** O muți în stânga primei remorci, până când cuiul e în mijlocul găurii lăncii. Cu `Ruler` confirmi `30` mm între cele două remorci și joc egal în jurul cuiului.  
+- [ ] **Treapta 6 — Trenul întreg.** Cu `Ruler` măsori lungimea de la fața din dreapta a mașinuței până la capătul din stânga al celei de-a doua remorci: `80 + 30 + 60 + 30 + 60 = 260` mm (fără lance și fără prag). Din `Front` și `Top` nimic nu se atinge din greșeală.  
+
+**Verificare (cu un coleg):** colegul numără în cel mult **30 de secunde** cele **3** vehicule, cele **8** roți și cele **2** cuplaje, apoi spune dacă remorcile se pot cupla în orice ordine.  
 
 ## Recapitulare rapidă
 1. Roată + ax + caroserie = **3 tipuri de piese separate**  
@@ -231,8 +238,10 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 - Cu cât e mai subțire cuiul decât gaura lăncii? De ce?  
 - Care sunt cele trei tipuri de piese ale mașinuței?
 
-## Temă
-Opțional, acasă, într-un proiect nou `T3_L02_B`: un **camion** cu 3 axe. Câte roți are? Câte găuri are caroseria?
+## Temă (opțional)
+- Dacă ai doar Minim: acasă termini în același proiect ce nu ai apucat.  
+- Dacă ai Complet: într-un proiect nou `T3_L02_C`, un **camion** cu `3` axe. Câte roți are? Câte găuri are caroseria?  
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T3_L02_D`, o **remorcă cu `2` axe**, cu lance și gaură de cuplare, care se potrivește pe cuiul mașinuței.  
 
 ## Ce urmează
 În **Lecția 3** faci o **morișcă de vânt** și un **ventilator**: un rotor care se învârte pe un stâlp.

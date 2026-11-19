@@ -27,10 +27,11 @@ Ca la morișcă și la balama: **piesa care se rotește** are o gaură **mai mar
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap L8 · privim o atracție adevărată: pe ce se rotește rotorul? |
-| 10–50 | **Obiectul 1** — Caruselul (Minim) |
-| 50–85 | **Obiectul 2** — Roata panoramică (Minim) |
-| 85–110 | **Complet** pe primul obiect |
-| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme sau ca temă |
+| 10–42 | **Obiectul 1** — Caruselul (Minim) |
+| 42–70 | **Obiectul 2** — Roata panoramică (Minim) |
+| 70–85 | **Complet** pe primul obiect |
+| 85–110 | **Bonus ★★★** — ghișeul de bilete, pe trepte (fiecare merge cât apucă) |
+| 110–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -65,7 +66,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 4. Selectezi **capacul și stâlpul** → <span style="color:#E65722;font-weight:700">L</span> → punctul de **sus**: capacul stă pe vârful stâlpului  
 5. Selectezi baza, stâlpul și capacul → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>: baza cu stâlp. Îl muți **100 mm** deoparte (rotorul se face separat, lângă el)  
 
-**Încearcă tu — Proiect nou, baza cu stâlp (8 min)**  
+**Încearcă tu — Proiect nou, baza cu stâlp (6 min)**  
 - [ ] Baza (**100 · 100 · 4**) are stâlp (**12 · 12 · 60**) și capac (**18 · 18 · 3**), grupate  
 - [ ] Grupul e mutat deoparte, la **100 mm**  
 
@@ -77,7 +78,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 5. <span style="color:#DC143C;font-weight:700">Ctrl+D</span> → muți copia **60 mm** spre stânga (`12` apăsări). Selectezi cei **doi** stâlpi → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>: o „bară”, centrată pe platformă  
 6. Selectezi bara → <span style="color:#DC143C;font-weight:700">Ctrl+D</span> → rotești copia **45°** (`2` pași de 22,5°) → <span style="color:#DC143C;font-weight:700">Ctrl+D</span> încă o dată, apoi încă o dată. Din <span style="color:#D400D4;font-weight:700">Top</span>: `4` bare = **8 stâlpi**, egal depărtați, în cerc  
 
-**Încearcă tu — Platforma, cei 8 stâlpi și scaunele (14 min)**  
+**Încearcă tu — Platforma, cei 8 stâlpi și scaunele (11 min)**  
 - [ ] Stâlpul cu scaun (**4 · 4 · 36** + **10 · 10 · 3**, scaunul la **10 mm**) e la **30 mm** de centru  
 - [ ] Ai **4** bare = **8** stâlpi în cerc (din **Top**), toate scaunele la aceeași înălțime  
 
@@ -87,7 +88,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 3. <span style="color:#1E90FF;font-weight:700">Cylinder</span> → **13 · 13 · 70** → <span style="color:#00A600;font-weight:700">Hole</span> → îl tragi peste platformă → <span style="color:#E65722;font-weight:700">L</span> cu platforma → mijloc **doar** pe cele două direcții de pe plan *(gaura pornește de la plan și trece prin platformă și acoperiș, deci nu o aliniezi pe înălțime)*  
 4. Selectezi platforma, cele 4 bare, acoperișul și gaura (Shift+click) → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>: **rotorul**. Gaura `Ø13` e mai mare decât stâlpul `Ø12`: **0,5 mm** joc pe parte  
 
-**Încearcă tu — Acoperișul, gaura și rotorul (10 min)**  
+**Încearcă tu — Acoperișul, gaura și rotorul (9 min)**  
 - [ ] Acoperișul (con **90 · 90 · 14**) stă la **35 mm**, pe vârful stâlpilor  
 - [ ] Gaura (**13 · 13 · 70**, Hole) e centrată și grupată în rotor  
 
@@ -110,7 +111,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 5. <span style="color:#1E90FF;font-weight:700">Cylinder</span> → **12 · 12 · 8** *(butucul)* → îl tragi peste roată → <span style="color:#E65722;font-weight:700">L</span> cu prima bară: mijloc pe cele două direcții de pe plan și punctul de jos. <span style="color:#1E90FF;font-weight:700">Cylinder</span> → **5 · 5 · 8** → <span style="color:#00A600;font-weight:700">Hole</span> → cu butucul → <span style="color:#E65722;font-weight:700">L</span> → mijloc pe cele două direcții și punctul de jos  
 6. Selectezi cele **4** bare, butucul și gaura (Shift+click) → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>: **roata**. Gaura `Ø5` va primi axul `Ø4`  
 
-**Încearcă tu — Roata: bare cu cabine, butuc (14 min)**  
+**Încearcă tu — Roata: bare cu cabine, butuc (11 min)**  
 - [ ] Bară **70 · 4 · 8** cu cabine **8 · 8 · 8** la capete; din Top: `8` spițe și `8` cabine în cerc  
 - [ ] Butucul (**12 · 12 · 8**) cu gaura **5 mm** e în centru; roata e grupată  
 
@@ -120,7 +121,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 3. <span style="color:#1E90FF;font-weight:700">Cylinder</span> → **4 · 4 · 40** *(axul)* → îl rotești **90°** (`4` pași de 22,5°) până când, din <span style="color:#D400D4;font-weight:700">Front</span>, se vede ca un **cerc** → <span style="color:#E65722;font-weight:700">L</span> cu placa: mijloc pe cele două direcții de pe plan. Îl ridici cu conul negru la **41 mm**: axul e la `43` mm de plan, în stâlpi  
 4. Selectezi placa, cei 2 stâlpi și axul → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>: suportul  
 
-**Încearcă tu — Suportul: placa, stâlpii și axul (12 min)**  
+**Încearcă tu — Suportul: placa, stâlpii și axul (9 min)**  
 - [ ] Placa (**90 · 40 · 4**) are 2 stâlpi (**8 · 8 · 50**) la capete, cu `24` mm între ei  
 - [ ] Axul (**4 · 4 · 40**) e orizontal, la **43 mm** de plan, prins în stâlpi; suportul e grupat  
 
@@ -131,7 +132,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 4. <span style="color:#D400D4;font-weight:700">Front</span>: axul (cerc) în gaura butucului. <span style="color:#D400D4;font-weight:700">Top</span>: roata stă între stâlpi, la `8` mm de fiecare. Roata nu atinge placa  
 5. Click pe roată: se selectează singură — e **separată** de ax  
 
-**Încearcă tu — Roata pe ax și verificarea (10 min)**  
+**Încearcă tu — Roata pe ax și verificarea (8 min)**  
 - [ ] Roata e în picioare, cu butucul pe ax, la **8 mm** de placă  
 - [ ] Din Top, `8` mm între roată și fiecare stâlp; roata e **separată** de suport  
 
@@ -146,7 +147,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 4. <span style="color:#E65722;font-weight:700">Ruler</span>: gaura `13` mm față de stâlp `12` mm  
 5. <span style="color:#00A600;font-weight:700">Color</span>: acoperiș, scaune, platformă în culori diferite  
 
-**Încearcă tu — Complet — steag, culori, Ruler (25 min)**  
+**Încearcă tu — Complet — steag, culori, Ruler (15 min)**  
 - [ ] Steagul stă pe stâlp, la **58 mm**  
 - [ ] Cu Ruler: gaura **13 mm**, stâlpul **12 mm**  
 - [ ] Acoperișul, scaunele și platforma au culori diferite  
@@ -200,11 +201,17 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Carusel cu două inele de scaune
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Ghișeul de bilete
+*Doar dacă ai terminat Complet. Lucrezi în proiectul `Prenume_Nume_T3_L09_B`, **lângă** roata panoramică (la `100` mm distanță). Fiecare piesă o faci de la zero. Treapta următoare o începi după ce ai încheiat-o pe cea dinainte. Snap Grid: **1.0 mm**.*
 
-- [ ] Schimbă culorile și adaugă lumini: sfere mici pe marginea acoperișului  
-- [ ] **Provocarea (obiect mai complicat):** în proiectul `Prenume_Nume_T3_L09`, selectezi rotorul → <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span>, ca să-l desfaci în piesele lui. Faci un **al doilea inel** de scaune, mai aproape de centru: <span style="color:#1E90FF;font-weight:700">Cylinder</span> `4 · 4 · 30` și <span style="color:#1E90FF;font-weight:700">Box</span> `8 · 8 · 3` ridicat la `8` mm → grupate într-un „stâlp cu scaun”, aliniate cu platforma și mutate cu `15` mm spre dreapta; <span style="color:#DC143C;font-weight:700">Ctrl+D</span> → copia la `30` mm spre stânga → bara; apoi <span style="color:#DC143C;font-weight:700">Ctrl+D</span> cu rotire de `45°`, de `3` ori: încă **8 scaune**, în total `16`. Selectezi apoi platforma, toate cele `8` bare, acoperișul și gaura → <span style="color:#DC143C;font-weight:700">Ctrl+G</span> și îl ridici din nou la `8` mm. Cu <span style="color:#E65722;font-weight:700">Ruler</span> confirmi raza primului inel (`30`), a celui de al doilea (`15`) și distanța dintre ele (`15`). Un coleg numără: `16` scaune, în două inele.  
+- [ ] **Treapta 1 — Corpul.** Un `Box` `50 · 20 · 30` și un `Hole` `Box` `44 · 14 · 27`, centrat pe el cu `Align` și ridicat cu conul negru la `3` mm. `Ctrl+G`. Pereții și fundul au `3` mm.  
+- [ ] **Treapta 2 — Fereastra.** Un `Hole` `Box` `20 · 6 · 10`, la `15` mm, centrat pe lățime pe peretele din față. `Ctrl+G` cu corpul: taie tot peretele.  
+- [ ] **Treapta 3 — Blatul.** Un `Box` `60 · 28 · 3`, centrat pe corp, la `30` mm. Depășește corpul cu `5` mm pe lateral și cu `4` mm în față și în spate.  
+- [ ] **Treapta 4 — Fanta pentru bani.** Un `Hole` `Box` `12 · 2 · 5`, la `29` mm, în blat, în dreptul ferestrei. `Ctrl+G` cu blatul și corpul: fanta taie blatul de la o față la alta.  
+- [ ] **Treapta 5 — Copertina.** Doi `Cylinder` `6 · 6 · 30`, la `33` mm, la colțurile din față ale blatului (la `4` mm de margini), și un `Wedge` `64 · 32 · 8`, la `63` mm, centrat pe blat, cu panta spre spate. Înălțimea totală e de `71` mm.  
+- [ ] **Treapta 6 — Verificarea.** Cu `Ruler` confirmi pereții (`3`), fereastra (`20 · 10`), blatul (`30` mm de plan) și copertina (`63` mm de plan). Din `Front`, fereastra se vede sub blat, între cei doi stâlpi.  
+
+**Verificare (cu un coleg):** colegul numără în cel mult **30 de secunde** fereastra, fanta, cei doi stâlpi și copertina.  
 
 ## Recapitulare rapidă
 1. Piesa mobilă are gaura **mai mare** decât axul: `13` față de `12` la carusel, `5` față de `4` la roată  
@@ -217,8 +224,10 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 - Cu cât e mai mare gaura (`13`) decât stâlpul (`12`), pe fiecare parte?  
 - Câți stâlpi sunt la carusel și cum i-ai făcut?
 
-## Temă
-Opțional, acasă, într-un proiect nou `T3_L09_B`: o **roată panoramică**, cu ax, butuc și o cabină, văzută din față.
+## Temă (opțional)
+- Dacă ai doar Minim: acasă termini în același proiect ce nu ai apucat.  
+- Dacă ai Complet: într-un proiect nou `T3_L09_C`, o **roată panoramică**, cu ax, butuc și o cabină, văzută din față.  
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T3_L09_D`, un **ghișeu cu 2 ferestre**, cu dimensiunile calculate de tine.  
 
 ## Ce urmează
 În **Lecția 10** faci **proiectul final de modul**: alegi un mecanism cu o piesă fixă, una mobilă cu joc și o piesă repetată, și îl prezinți.

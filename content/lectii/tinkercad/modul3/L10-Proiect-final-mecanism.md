@@ -27,11 +27,12 @@ Azi pornești **tu** de la o idee și ajungi la un mecanism cu mărimi gândite.
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Criteriile și alegi mecanismul |
-| 10–25 | Planul: piesa fixă, piesa mobilă, axul, **mărimile**, jocul |
-| 25–60 | **Obiectul 1** — mecanismul tău (Minim) |
-| 60–85 | **Obiectul 2** — piesa a doua, cu joc (Minim) |
-| 85–105 | **Complet** — Ruler, Color, text, prezentare pregătită |
-| 105–120 | Prezentări scurte (în perechi la grupe mari) · **Bonus ★★★** ca temă |
+| 10–22 | Planul: piesa fixă, piesa mobilă, axul, **mărimile**, jocul |
+| 22–42 | **Obiectul 1** — mecanismul tău (Minim) |
+| 42–60 | **Obiectul 2** — piesa a doua, cu joc (Minim) |
+| 60–85 | **Complet** — Ruler, Color, text, prezentare pregătită, verificare finală |
+| 85–110 | **Bonus ★★★** — setul mic, mediu și mare, pe trepte (fiecare merge cât apucă) |
+| 110–120 | Prezentări scurte (în perechi la grupe mari) |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -101,7 +102,7 @@ Alegi **după ce îți place**: toate cinci folosesc aceleași unelte și se pot
 3. <span style="color:#E65722;font-weight:700">Align (L)</span> pentru centre (alegi doar direcțiile de care ai nevoie); ridici cu <span style="color:#E65722;font-weight:700">conul negru</span> ce trebuie să stea la înălțime  
 4. Piesa mobilă rămâne **separată** de piesa fixă: nu le grupezi între ele  
 
-**Încearcă tu — Piesa mobilă, gaura și copiile (20 min)**  
+**Încearcă tu — Piesa mobilă, gaura și copiile (12 min)**  
 - [ ] Piesa mobilă are un Hole mai mare decât axul, cu `1` mm  
 - [ ] Piesele repetate sunt egale (<span style="color:#DC143C;font-weight:700">Ctrl+D</span> + aceeași mutare sau rotire)  
 - [ ] Piesa mobilă rămâne separată de cea fixă
@@ -114,7 +115,7 @@ Alegi **după ce îți place**: toate cinci folosesc aceleași unelte și se pot
 3. Potrivirea: **gol interior = piesa + `1` mm** (adică **joc `0,5` mm pe parte**). Exemplu: axul are `4`, gaura are `5`  
 4. Selectezi **doar** piesele noi (Shift+click) → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>. Apoi încerci potrivirea din <span style="color:#D400D4;font-weight:700">Front</span> și din <span style="color:#D400D4;font-weight:700">Top</span>: piesa a doua are loc lângă prima, cu joc egal  
 
-**Încearcă tu — Obiectul 2: piesa a doua (25 min)**  
+**Încearcă tu — Obiectul 2: piesa a doua (18 min)**  
 - [ ] Piesa a doua are mărimi din plan, scrise cu numere  
 - [ ] Golul e cu `1` mm mai mare decât piesa care intră în el (joc `0,5` mm pe parte)  
 - [ ] Piesa a doua se potrivește cu primul obiect, din Front și din Top  
@@ -127,7 +128,7 @@ Alegi **după ce îți place**: toate cinci folosesc aceleași unelte și se pot
 3. <span style="color:#1E90FF;font-weight:700">Text</span> cu numele tău, pe piesa fixă (`1` mm înălțime), pus **după** Group, ca să nu fie tăiat  
 4. Pregătești prezentarea de `30` de secunde: **ce este, ce se mișcă, pe ce se mișcă și ce joc are**  
 
-**Încearcă tu — Complet — Ruler, Color, text și prezentare (20 min)**  
+**Încearcă tu — Complet — Ruler, Color, text și prezentare (19 min)**  
 - [ ] Cu Ruler, gaura și axul au mărimile din plan  
 - [ ] Culorile se potrivesc între ele  
 - [ ] Textul cu numele tău e pe piesa fixă, iar prezentarea e pregătită  
@@ -207,10 +208,16 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru Mod
 ---
 
 ## Bonus ★★★ — Provocare: Setul mic, mediu și mare
-*Doar dacă ai terminat Complet.*
+*Doar dacă ai terminat Complet. Lucrezi în proiectul `Prenume_Nume_T3_L10`, **lângă** obiectele de până acum, pe trepte, de la ușor la greu. Fiecare piesă o faci de la zero, nu o copiezi din altă piesă. Treapta următoare o începi după ce ai încheiat-o pe cea dinainte. Snap Grid: **1.0 mm**.*
 
-- [ ] Schimbă culorile și adaugă o manivelă sau un mâner pentru piesa mobilă  
-- [ ] **Provocarea (obiect mai complicat):** un **set de 3** versiuni ale mecanismului tău (**mic, mediu, mare**), fiecare cu **alt set de numere** (de exemplu cu `0,75`, `1` și `1,25` ori mărimile) și cu **piesa a doua** pentru fiecare. La fiecare, gaura e cu `1` mm mai mare decât axul și nicio gaură nu e la mai puțin de `2` mm de margine (verificat cu <span style="color:#E65722;font-weight:700">Ruler</span>). Prezinți cele **3** mărimi într-un minut.  
+- [ ] **Treapta 1 — Tabelul de mărimi.** Pentru fiecare mărime din plan calculezi versiunea **mică** (jumătate) și versiunea **mare** (de `1,5` ori), **rotunjite în sus la milimetru întreg**. Versiunea **medie** e mecanismul tău. Jocul **nu** se scalează: la fiecare mărime, gaura e axul plus `1` mm. Le notezi pe rânduri: mic, mediu, mare.  
+- [ ] **Treapta 2 — Mecanismul mic.** Piesa fixă cu ax și piesa mobilă cu gaură, de la zero, cu numerele mici, cu Hole și piesa repetată. Pereții rămân de cel puțin `3` mm: ei **nu** se micșorează.  
+- [ ] **Treapta 3 — Piesa a doua mică.** Golul e piesa plus `1` mm, deci jocul rămâne `0,5` mm pe parte.  
+- [ ] **Treapta 4 — Mecanismul mare.** Piesa fixă cu ax, piesa mobilă cu gaură și piesa repetată, de la zero, cu numerele mari.  
+- [ ] **Treapta 5 — Piesa a doua mare.** La fel, cu joc de `0,5` mm pe parte. Cu `Ruler` confirmi că nicio gaură nu e la mai puțin de `2` mm de perete, la niciuna dintre cele `3` mărimi.  
+- [ ] **Treapta 6 — Setul aranjat.** Cele `3` mecanisme, în ordine, de la mic la mare, la `10` mm unul de altul. Pregătești prezentarea setului pentru un minut.  
+
+**Verificare (cu un coleg):** colegul numără în cel mult **30 de secunde** cele **3** perechi și verifică, punând piesele una peste alta, că fiecare piesă a doua intră doar pe mecanismul ei.  
 
 ## Recapitulare rapidă
 1. M3 = **ax, joc, piese separate, copii egale**  
@@ -225,8 +232,10 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru Mod
 3. Ce vrei să construiești în Modulul 4 (orașul nostru)?  
 4. Cât de bine știi acum să faci piese care se mișcă, cu joc? (1–5)
 
-## Temă
-Opțional: finalizezi mecanismul acasă sau faci un al doilea mecanism, cu mărimi, într-un proiect nou `T3_L10_C`.
+## Temă (opțional)
+- Dacă ai doar Minim: acasă termini în același proiect ce nu ai apucat.  
+- Dacă ai Complet: într-un proiect nou `T3_L10_C`, un **al doilea mecanism** din meniu, cu piesa lui a doua.  
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T3_L10_D`, o **cutie sau un suport** care ține împreună ambele mecanisme, cu joc de `0,5` mm pe parte.  
 
 ## Ce urmează
 Ai terminat **Modulul 3**! În **Modulul 4** construim **orașul nostru**.

@@ -27,10 +27,11 @@ Cutia învață aceeași regulă ca la lecțiile trecute: golul e **puțin mai m
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap L6 · privim un zar real: ce număr e opus lui 1? |
-| 10–50 | **Obiectul 1** — Zarul (Minim) |
-| 50–85 | **Obiectul 2** — Cutia pentru zaruri (Minim) |
-| 85–110 | **Complet** pe primul obiect |
-| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme sau ca temă |
+| 10–42 | **Obiectul 1** — Zarul (Minim) |
+| 42–70 | **Obiectul 2** — Cutia pentru zaruri (Minim) |
+| 70–85 | **Complet** pe primul obiect |
+| 85–110 | **Bonus ★★★** — paharul și tava pentru zaruri, pe trepte (fiecare merge cât apucă) |
+| 110–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -77,7 +78,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 
 *(Orice punct nou: <span style="color:#DC143C;font-weight:700">Ctrl+D</span> pe un punct, apoi îl muți cu Snap Grid 5.0 mm — 2 sărituri = 10 mm.)*
 
-**Încearcă tu — Proiect nou, cubul și un punct (6 min)**  
+**Încearcă tu — Proiect nou, cubul și un punct (5 min)**  
 - [ ] Cubul are **40 · 40 · 40**  
 - [ ] Punctul (**6 · 6 · 4**, Hole) taie **2 mm** în fața de sus  
 
@@ -89,7 +90,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 5. Selectezi **cele 7 puncte** (1 sus + 6 jos) → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>: o „pereche” de găuri într-un singur Group  
 6. Din <span style="color:#D400D4;font-weight:700">Front</span>: un punct sus, șase jos. Muți perechea **60 mm deoparte** pe plan, ca să nu te încurce  
 
-**Încearcă tu — Perechea 1–6 (10 min)**  
+**Încearcă tu — Perechea 1–6 (8 min)**  
 - [ ] Perechea **1–6**: un punct sus și **6** jos, la pozițiile din tabel  
 - [ ] Cele **7** puncte sunt grupate  
 
@@ -100,7 +101,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 4. Selectezi cele 7 puncte → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>: perechea 2–5  
 5. Rotești grupul **90°** (`4` pași de câte 22,5°, săgeata curbă care îl culcă): acum cele două fețe sunt **stânga** și **dreapta**. Muți perechea **60 mm deoparte**, în altă direcție  
 
-**Încearcă tu — Perechea 2–5 (8 min)**  
+**Încearcă tu — Perechea 2–5 (6 min)**  
 - [ ] Perechea **2–5** e făcută după tabel și rotită **90°**  
 
 ### 4) Perechea 3–4
@@ -108,7 +109,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 2. Selectezi cele 7 puncte → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
 3. Rotești `90°` pe **cealaltă** săgeată curbă: fețele sunt acum **față** și **spate**. Muți perechea **60 mm deoparte**, în altă direcție  
 
-**Încearcă tu — Perechea 3–4 (6 min)**  
+**Încearcă tu — Perechea 3–4 (5 min)**  
 - [ ] Perechea **3–4** e făcută după tabel și rotită **90°** pe cealaltă săgeată  
 
 ### 5) Zarul gata
@@ -116,7 +117,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 2. Selectezi **cubul** și cele **3 perechi** → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
 3. Rotești vederea: 1 opus 6, 2 opus 5, 3 opus 4. Adunate două câte două: **7**  
 
-**Încearcă tu — Zarul gata (10 min)**  
+**Încearcă tu — Zarul gata (8 min)**  
 - [ ] Cubul și cele **3** perechi sunt centrate dintr-o singură dată și grupate  
 - [ ] 1 e opus lui 6, 2 opus lui 5, 3 opus lui 4  
 
@@ -128,7 +129,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 3. Îl tragi peste cutie → <span style="color:#E65722;font-weight:700">L</span> cu cutia → mijloc pe cele două direcții de pe plan. Apoi îl ridici cu <span style="color:#E65722;font-weight:700">conul negru</span> la **3 mm**: fundul are `3` mm, iar golul iese deasupra  
 4. <span style="color:#DC143C;font-weight:700">Ctrl+A</span> → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>. <span style="color:#D400D4;font-weight:700">Front</span>: fundul e de `3` mm, pereții de `3` mm  
 
-**Încearcă tu — Cutia: proiect nou, cutia și golul (12 min)**  
+**Încearcă tu — Cutia: proiect nou, cutia și golul (10 min)**  
 - [ ] Cutia are **87 · 47 · 48**, cu gol **81 · 41** ridicat la **3 mm**  
 - [ ] Fundul și pereții au **3 mm**  
 
@@ -140,7 +141,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 3. Selectezi placa și dopul → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>: **capacul**. Rămâne separat de cutie  
 4. Dopul (`80 × 40`) e cu `1` mm mai mic decât golul (`81 × 41`): joc de `0,5` mm pe parte  
 
-**Încearcă tu — Capacul cu dop (10 min)**  
+**Încearcă tu — Capacul cu dop (8 min)**  
 - [ ] Placa (**87 · 47 · 4**) stă pe marginea cutiei, la **48 mm**  
 - [ ] Dopul (**80 · 40 · 4**) e la **45 mm**, în gol, cu **1 mm** mai mic decât golul  
 
@@ -151,7 +152,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 4. Selectezi grupul de zaruri → <span style="color:#DC143C;font-weight:700">Ctrl+Shift+G</span>: zarurile sunt din nou **separate**  
 5. <span style="color:#D400D4;font-weight:700">Front</span>: zarurile în cutie, capacul deasupra, cu dopul înăuntru. <span style="color:#E65722;font-weight:700">Ruler</span>: golul **81 × 41**, cele două zaruri **80 × 40**  
 
-**Încearcă tu — Zarurile în cutie și capacul pus (12 min)**  
+**Încearcă tu — Zarurile în cutie și capacul pus (10 min)**  
 - [ ] Cele **2** zaruri stau pe fundul cutiei, separate de ea  
 - [ ] Capacul stă pe cutie, cu dopul în gol, fără să atingă zarurile (dopul la `45` mm, zarurile până la `43`)  
 - [ ] Cu Ruler: golul **81 × 41**, zarurile **80 × 40**  
@@ -165,7 +166,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 2. <span style="color:#00A600;font-weight:700">Color</span>: un zar o culoare, celălalt alta  
 3. Spui pe rând, pe fiecare zar: 1+6, 2+5, 3+4 → toate dau **7**  
 
-**Încearcă tu — Complet — al doilea zar și suma 7 (25 min)**  
+**Încearcă tu — Complet — al doilea zar și suma 7 (15 min)**  
 - [ ] Ai **2** zaruri, de culori diferite  
 - [ ] Pe fiecare zar, fețele opuse dau **7**  
 
@@ -218,11 +219,17 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Zaruri rotunjite și cutie pentru 3
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Paharul și tava pentru zaruri
+*Doar dacă ai terminat Complet. Lucrezi în proiectul `Prenume_Nume_T3_L07_B`, **lângă** cutia de până acum (la `100` mm distanță). Fiecare piesă o faci de la zero. Treapta următoare o începi după ce ai încheiat-o pe cea dinainte. Snap Grid: **1.0 mm**.*
 
-- [ ] Schimbă culorile și fă un zar cu **litere** în loc de puncte (Text Hole)  
-- [ ] **Provocarea (obiect mai complicat):** în proiectul `Prenume_Nume_T3_L07_C`, **3 zaruri rotunjite**: la cub setezi **Radius** `4` în fereastra piesei (Properties), cu aceleași puncte `Ø6` adânci de `2` mm. Apoi o **cutie pentru 3 zaruri**: cutie `127 × 47 × 48`, gol `121 × 41 × 48` la `3` mm, capac cu placă `127 × 47 × 4` la `48` și dop `120 × 40 × 4` la `45`. Cu <span style="color:#E65722;font-weight:700">Ruler</span> confirmi golul (`121 × 41`), zarurile (`3 × 40 = 120`) și dopul (`120 × 40`). Un coleg pune cele 3 zaruri în cutie și închide capacul.  
+- [ ] **Treapta 1 — Paharul.** Un `Cylinder` `66 · 66 · 50` și un `Hole` `Cylinder` `60 · 60 · 50`, centrat pe el cu `Align` și ridicat cu conul negru la `3` mm. `Ctrl+G`. Pereții și fundul au `3` mm. Golul de `60` e mai mare decât diagonala zarului (`40 × √2 ≈ 57`).  
+- [ ] **Treapta 2 — Capacul paharului.** O placă `Cylinder` `66 · 66 · 3`, la `50`, și un dop `Cylinder` `59 · 59 · 4`, la `47`, ambele centrate pe pahar. `Ctrl+G` pe cele două. Dopul are `0,5` mm joc pe parte.  
+- [ ] **Treapta 3 — Tava.** Un `Box` `150 · 150 · 20` și un `Hole` `Box` `144 · 144 · 20`, centrat pe el și ridicat la `3` mm. `Ctrl+G`. Zarurile aruncate nu sar afară.  
+- [ ] **Treapta 4 — Rampa.** Un `Wedge` `60 · 40 · 15`, pus pe fundul tăvii (la `3`) într-un colț. Îl rotești din `22,5°` în `22,5°`, până când panta coboară spre centrul tăvii. Zarul se rostogolește astfel înăuntru.  
+- [ ] **Treapta 5 — Titlul.** Un `Text` `Hole` cu „ZAR”, înalt de `2` mm, la `52`, pe capacul paharului. Taie `1` mm în placă.  
+- [ ] **Treapta 6 — Verificarea.** Cu `Ruler` confirmi paharul (`66`), golul (`60`) și dopul (`59`). Copiezi zarul în proiect doar ca test și vezi că intră în pahar.  
+
+**Verificare (cu un coleg):** colegul numără în cel mult **30 de secunde** pereții tăvii, rampa și capacul paharului.  
 
 ## Recapitulare rapidă
 1. Fețele opuse ale unui zar dau **7**  
@@ -236,8 +243,10 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 - De ce golul cutiei are `81 × 41`, nu `80 × 40`?  
 - Cum faci puncte la distanțe egale?
 
-## Temă
-Opțional, acasă, într-un proiect nou `T3_L07_B`: un al doilea zar, cu alt model de puncte, în care fețele opuse adună `7`.
+## Temă (opțional)
+- Dacă ai doar Minim: acasă termini în același proiect ce nu ai apucat.  
+- Dacă ai Complet: într-un proiect nou `T3_L07_C`, un zar cu alt model de puncte, în care fețele opuse adună `7`.  
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T3_L07_D`, o tavă cu `2` rampe și pereți de `3` mm, cu dimensiunile calculate de tine.  
 
 ## Ce urmează
 În **Lecția 8** faci o **fortăreață cu pod mobil** și o **poartă cu 2 canaturi**: piese care se mișcă pe axe, cu joc.

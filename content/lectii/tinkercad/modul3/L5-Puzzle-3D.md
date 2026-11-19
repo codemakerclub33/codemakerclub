@@ -27,10 +27,11 @@ Dopuri de **mărimi diferite** fac ca piesele să se potrivească doar în ordin
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap L4 · ce puzzle-uri cunoașteți? Cum se potrivesc piesele? |
-| 10–50 | **Obiectul 1** — Cubul din 2 piese (Minim) |
-| 50–85 | **Obiectul 2** — Puzzle-ul în șir (Minim) |
-| 85–105 | **Complet** pe primul obiect · cine termină trece la **Bonus ★★★** (pe trepte, cât apucă; restul rămâne temă) |
-| 105–120 | Recap, quiz, galerie |
+| 10–42 | **Obiectul 1** — Cubul din 2 piese (Minim) |
+| 42–70 | **Obiectul 2** — Puzzle-ul în șir (Minim) |
+| 70–85 | **Complet** pe primul obiect |
+| 85–110 | **Bonus ★★★** — cubul cu trei straturi și cheie, pe trepte (fiecare merge cât apucă) |
+| 110–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -71,7 +72,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 3. Selectezi dopul și cubul → <span style="color:#DC143C;font-weight:700">Ctrl+G</span> — **piesa A**  
 4. <span style="color:#1E90FF;font-weight:700">Box</span> → **40 · 40 · 20** *(piesa B)*. Selectezi B și A → <span style="color:#E65722;font-weight:700">L</span> → mijloc pe cele două direcții de pe plan. Ridici B cu conul negru la **20 mm**: stă exact pe A, ca un cub întreg de `40`  
 
-**Încearcă tu — Piesa A cu dop și piesa B (12 min)**  
+**Încearcă tu — Piesa A cu dop și piesa B (8 min)**  
 - [ ] Piesa A: cub **40 · 40 · 20** și dop **16 · 16 · 10** pe fața de sus, grupate  
 - [ ] Piesa B (**40 · 40 · 20**) stă exact pe A, ca un cub întreg de **40**  
 
@@ -82,7 +83,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 4. Din <span style="color:#D400D4;font-weight:700">Front</span>: locașul înconjoară dopul, cu loc pe lateral  
 5. Selectezi **locașul și B** (nu și A!) → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>: locaș cu `0,2` mm joc pe fiecare parte  
 
-**Încearcă tu — Locașul din B (14 min)**  
+**Încearcă tu — Locașul din B (12 min)**  
 - [ ] Locașul (**16,4 · 16,4 · 12**, Hole) e la **19 mm**  
 - [ ] Locașul e grupat cu **B**, nu cu A  
 - [ ] Din Front, locașul înconjoară dopul, cu joc  
@@ -92,7 +93,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 2. <span style="color:#D400D4;font-weight:700">Front</span>: dopul se vede la A, locașul la B. <span style="color:#E65722;font-weight:700">Ruler</span>: dopul **16 mm**, locașul **16,4 mm**  
 3. Muți B **60 mm** înapoi, deasupra lui A (cum era): dopul intră în locaș  
 
-**Încearcă tu — Separarea și verificarea (10 min)**  
+**Încearcă tu — Separarea și verificarea (8 min)**  
 - [ ] B mutată lateral: sunt **două** piese separate  
 - [ ] Cu Ruler: dopul **16**, locașul **16,4**; B pusă la loc: dopul intră în locaș  
 
@@ -103,7 +104,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 2. <span style="color:#1E90FF;font-weight:700">Box</span> → **40 · 30 · 8** *(placa A)*. <span style="color:#E65722;font-weight:700">Snap Grid</span> **5.0** → <span style="color:#DC143C;font-weight:700">Ctrl+D</span> → muți copia **40 mm** spre dreapta (`8` apăsări): placa B. <span style="color:#DC143C;font-weight:700">Ctrl+D</span> din nou: placa C, la **80 mm** de A  
 3. Cele 3 plăci stau una lângă alta, într-un șir de `120` mm. Nu le grupa: sunt **3 piese separate**  
 
-**Încearcă tu — Puzzle-ul în șir: proiect nou și cele 3 plăci (12 min)**  
+**Încearcă tu — Puzzle-ul în șir: proiect nou și cele 3 plăci (8 min)**  
 - [ ] Ai **3** plăci **40 · 30 · 8**, în șir, la **40 mm** una de alta, negrupate  
 
 ### 6) Îmbinarea A–B: dop de 16
@@ -112,7 +113,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 3. <span style="color:#1E90FF;font-weight:700">Box</span> → **8,4 · 16,4 · 10** → <span style="color:#00A600;font-weight:700">Hole</span> *(locașul)* → îl tragi peste placa B → <span style="color:#E65722;font-weight:700">L</span> cu B: punctul din **stânga** pe stânga–dreapta și mijloc pe față–spate. Îl cobori cu conul negru cu **1 mm**: taie prin toată placa  
 4. Selectezi locașul și placa B → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
 
-**Încearcă tu — Îmbinarea A–B: dop de 16 (12 min)**  
+**Încearcă tu — Îmbinarea A–B: dop de 16 (10 min)**  
 - [ ] A are dopul (**9 · 16 · 8**), care iese `7` mm din ea  
 - [ ] B are locașul (**8,4 · 16,4 · 10**, Hole), care trece prin placă  
 
@@ -142,7 +143,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 7. <span style="color:#00A600;font-weight:700">Color</span>: A o culoare, B alta  
 8. Rotești B cu **180°** (pe loc, săgeata de sus): dopul mic nu mai are locaș — piesele se potrivesc **într-un singur fel**  
 
-**Încearcă tu — Complet — al doilea dop și culori (25 min)**  
+**Încearcă tu — Complet — al doilea dop și culori (15 min)**  
 - [ ] Al doilea dop (**8 · 8 · 10**) e la **14 mm** de centru, la **20 mm** înălțime  
 - [ ] Locașul mic (**8,4**) e în B, la **14 mm**  
 - [ ] Cu B rotită **180°**, dopul mic nu mai intră: piesele se potrivesc într-un singur fel  
@@ -197,18 +198,17 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Puzzle-ul cu cheie
-*Doar dacă ai terminat Complet. Continui cu aceleași două puzzle-uri și cu un obiect nou, de același fel. Dificultatea crește de la o treaptă la alta; nu primești dimensiuni sau pași, ci reguli. Alegi tu mărimile.*
+## Bonus ★★★ — Provocare: Cubul cu trei straturi și cheie
+*Doar dacă ai terminat Complet. Lucrezi în proiectul `Prenume_Nume_T3_L05`, **lângă** cubul de până acum, pe trepte, de la ușor la greu. Fiecare piesă o faci de la zero, nu o copiezi din altă piesă. Treapta următoare o începi după ce ai încheiat-o pe cea dinainte. Snap Grid: **1.0 mm**. Toate îmbinările au **jocul de `0,2` mm pe parte** (locașul e cu `0,4` mm mai mare decât dopul).*
 
-Toate piesele respectă regula de azi: **jocul de `0,2` mm pe parte** (locașul e cu `0,4` mm mai mare decât dopul). Treptele, de la ușor la greu:
+- [ ] **Treapta 1 — Stratul de jos.** Un `Box` `40 · 40 · 20` și un dop `Box` `16 · 16 · 10`, centrat, la `20`. `Ctrl+G`.  
+- [ ] **Treapta 2 — Stratul de mijloc.** Un `Box` `40 · 40 · 20`, la `20`. Un locaș `Hole` `Box` `16,4 · 16,4 · 12`, centrat, la `19` (pe dedesubt). Un dop `Box` `10 · 10 · 10`, centrat, la `40` (pe deasupra). `Ctrl+G` pe toate.  
+- [ ] **Treapta 3 — Stratul de sus.** Un `Box` `40 · 40 · 20`, la `40`, cu un locaș `Hole` `Box` `10,4 · 10,4 · 12`, centrat, la `39`. `Ctrl+G`. Cubul întreg are `40 · 40 · 60`, iar straturile rămân **separate**.  
+- [ ] **Treapta 4 — Cheia.** Dopul de `10` (stratul de mijloc) și locașul de `10,4` (stratul de sus) se mută **amândouă** cu `10` mm spre dreapta (descentrate). Acum stratul de sus, rotit cu `90°` sau cu `180°`, nu mai intră.  
+- [ ] **Treapta 5 — Testul jocului.** Un dop `Box` `12 · 12 · 10` pe o placă `Box` `30 · 30 · 4`, și trei plăci `Box` `30 · 30 · 14`, la `10` mm una de alta, cu locașuri `Hole` de `12,2`, `12,4` și `12,6` (joc `0,1`, `0,2` și `0,3` mm pe parte). Îi spui colegului care e prea strâns, care potrivit și care prea larg, și de ce.  
+- [ ] **Treapta 6 — Verificarea.** Cu `Ruler` confirmi înălțimea cubului (`60` mm) și jocul de `0,2` mm la fiecare îmbinare.  
 
-- [ ] **Treapta 1 — Personalizează.** Schimbi culorile și gravezi un text mic pe o față a unei piese (`Hole`, `1` mm adâncime)  
-- [ ] **Treapta 2 — A patra placă.** În `Prenume_Nume_T3_L05_B`, puzzle-ul în șir primește placa **D**, după C. Dopurile sunt toate de **mărimi diferite**, iar piesele se potrivesc doar în ordinea **A, B, C, D**. Dopul de la B nu intră în locașul de la C  
-- [ ] **Treapta 3 — Cubul din 3 straturi.** În proiectul `Prenume_Nume_T3_L05_C`: un cub de `40 · 40 · 60`, din **3 straturi** de `40 · 40 · 20`, care se montează într-o **singură ordine**. Straturile rămân **separate**, iar dopurile sunt de **mărimi diferite**  
-- [ ] **Treapta 4 — Cheia.** Stratul de sus **nu intră** dacă îl rotești cu `90°` sau cu `180°`. Tu alegi unde pui dopurile și locașurile (de exemplu **descentrat**), ca să se întâmple asta  
-- [ ] **Treapta 5 — Testul jocului.** Faci aceeași pereche dop–locaș în **3 variante**, cu joc de `0,1`, `0,2` și `0,3` mm pe parte. Îi spui colegului care ți se pare **prea strâns**, care **potrivit** și care **prea larg**, și de ce  
-
-**Verificare (cu un coleg):** colegul încearcă să monteze cubul în ordinea greșită și cu stratul de sus întors: nu intră. Cu **Ruler**, confirmi înălțimea cubului (`60` mm) și jocul de `0,2` mm la fiecare îmbinare.  
+**Verificare (cu un coleg):** colegul încearcă să monteze cubul în ordinea greșită și cu stratul de sus întors: nu intră. Apoi numără în cel mult **30 de secunde** cele **3** straturi și cele **3** plăci de test.  
 
 ## Recapitulare rapidă
 1. Locașul e **puțin mai mare** decât dopul: asta e jocul  
@@ -222,8 +222,10 @@ Toate piesele respectă regula de azi: **jocul de `0,2` mm pe parte** (locașul 
 - Cu cât e mai mare locașul decât dopul, pe fiecare parte?  
 - De ce dopul de `16` nu intră în locașul de `10,4`?
 
-## Temă
-Opțional, acasă, într-un proiect nou `T3_L05_D`: un capac de pix din două piese, un corp cu dop și un capac cu locaș, cu joc de `0,2` mm pe parte. Capacul intră doar într-un singur fel.
+## Temă (opțional)
+- Dacă ai doar Minim: acasă termini în același proiect ce nu ai apucat.  
+- Dacă ai Complet: într-un proiect nou `T3_L05_C`, un **capac de pix** din două piese, un corp cu dop și un capac cu locaș, cu joc de `0,2` mm pe parte. Capacul intră doar într-un singur fel.  
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T3_L05_D`, un **puzzle în șir cu `5` plăci**, cu dopuri de mărimi diferite.  
 
 ## Ce urmează
 În **Lecția 6** faci un **set de piese de șah** și o **tablă mică**: piese pe baze identice, care stau în locașuri cu joc.

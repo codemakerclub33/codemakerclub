@@ -27,10 +27,11 @@ Mai înveți un truc: o bară centrată dă **două palete**, iar prin copiere c
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recap L2 · privim o morișcă și un ventilator: ce se învârte și pe ce? |
-| 10–50 | **Obiectul 1** — Morișca (Minim) |
-| 50–85 | **Obiectul 2** — Ventilatorul (Minim) |
-| 85–110 | **Complet** pe primul obiect |
-| 110–120 | Recap, quiz, galerie · **Bonus ★★★** pentru cine termină devreme sau ca temă |
+| 10–42 | **Obiectul 1** — Morișca (Minim) |
+| 42–70 | **Obiectul 2** — Ventilatorul (Minim) |
+| 70–85 | **Complet** pe primul obiect |
+| 85–110 | **Bonus ★★★** — turnul eolian cu două rotoare, pe trepte (fiecare merge cât apucă) |
+| 110–120 | Recap, quiz, galerie |
 
 **Grupe de unelte azi:**  
 <span style="color:#1E90FF;font-weight:700">Forme</span> · <span style="color:#D400D4;font-weight:700">Vedere</span> · <span style="color:#E65722;font-weight:700">Mărime și loc</span> · <span style="color:#00A600;font-weight:700">Culoare</span> · <span style="color:#DC143C;font-weight:700">Taste de editare</span>  
@@ -70,7 +71,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 3. <span style="color:#DC143C;font-weight:700">Ctrl+G</span> — baza cu stâlp  
 4. <span style="color:#E65722;font-weight:700">Snap Grid</span> **5.0** → muți grupul **100 mm** deoparte (`20` apăsări): rotorul se face separat, lângă el. Apoi Snap Grid înapoi pe **1.0**  
 
-**Încearcă tu — Baza și stâlpul (8 min)**  
+**Încearcă tu — Baza și stâlpul (7 min)**  
 - [ ] Baza are **50 · 50 · 5**, iar stâlpul **8 · 8 · 70**, centrat  
 - [ ] Baza și stâlpul sunt grupate și mutate deoparte  
 
@@ -82,7 +83,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 5. Selectezi cu Shift+click **butucul, gaura și cele două bare** *(nu Ctrl+A — ar prinde și baza)* → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
 6. Din <span style="color:#D400D4;font-weight:700">Top</span>: **4** palete egale, în cruce  
 
-**Încearcă tu — Rotorul cu 4 palete (12 min)**  
+**Încearcă tu — Rotorul cu 4 palete (11 min)**  
 - [ ] Butucul (**20 · 20 · 8**) are gaura **9 mm**, centrată pe trei direcții  
 - [ ] Din Top: **4** palete egale, în cruce  
 - [ ] Butucul, gaura și paletele sunt grupate  
@@ -94,7 +95,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 4. Selectezi capacul și baza cu stâlp → <span style="color:#DC143C;font-weight:700">Ctrl+G</span> — rotorul rămâne **separat**  
 5. <span style="color:#D400D4;font-weight:700">Front</span>: stâlpul trece prin gaura rotorului; rotorul **nu atinge** baza și nici capacul. Click pe rotor → se selectează singur  
 
-**Încearcă tu — Rotorul pe stâlp, capacul și verificarea (12 min)**  
+**Încearcă tu — Rotorul pe stâlp, capacul și verificarea (10 min)**  
 - [ ] Rotorul e la **40 mm** și stâlpul trece prin gaura lui  
 - [ ] Capacul (**14 · 14 · 4**) stă pe vârful stâlpului, iar rotorul rămâne o piesă separată  
 
@@ -105,7 +106,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 2. <span style="color:#1E90FF;font-weight:700">Cylinder</span> → **50 · 50 · 5** *(baza)* și <span style="color:#1E90FF;font-weight:700">Cylinder</span> → **8 · 8 · 50** *(stâlpul)*. <span style="color:#E65722;font-weight:700">L</span> → mijloc pe ambele direcții de pe plan → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
 3. <span style="color:#E65722;font-weight:700">Snap Grid</span> **5.0** → muți grupul **100 mm** deoparte → Snap Grid înapoi pe **1.0**  
 
-**Încearcă tu — Ventilatorul: proiect nou, baza și stâlpul (12 min)**  
+**Încearcă tu — Ventilatorul: proiect nou, baza și stâlpul (10 min)**  
 - [ ] Baza are **50 · 50 · 5**, stâlpul **8 · 8 · 50**, grupate  
 
 ### 6) Rotorul cu 6 palete
@@ -115,7 +116,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 4. <span style="color:#DC143C;font-weight:700">Ctrl+D</span> din nou — repetă aceeași rotire → a treia bară. Ai **3** bare, la **0°, 60°, 120°**  
 5. Selectezi cu Shift+click **butucul, gaura și cele 3 bare** → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>. Din <span style="color:#D400D4;font-weight:700">Top</span>: **6** palete egale  
 
-**Încearcă tu — Rotorul cu 6 palete (12 min)**  
+**Încearcă tu — Rotorul cu 6 palete (10 min)**  
 - [ ] Butucul (**16 · 16 · 10**) are gaura **9 mm**, iar bara are **56 · 10 · 2**  
 - [ ] Ai **3** bare la **0°, 60°, 120°**, adică **6** palete egale  
 
@@ -125,7 +126,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 3. <span style="color:#1E90FF;font-weight:700">Cylinder</span> → **14 · 14 · 4** *(capacul)* → <span style="color:#E65722;font-weight:700">L</span> cu baza și stâlpul: mijloc pe ambele direcții de pe plan și punctul de **sus**. Selectezi capacul și baza cu stâlp → <span style="color:#DC143C;font-weight:700">Ctrl+G</span>  
 4. <span style="color:#D400D4;font-weight:700">Front</span>: rotorul stă între bază și capac, **nu atinge** niciuna și se selectează singur  
 
-**Încearcă tu — Rotorul pe stâlp și capacul (10 min)**  
+**Încearcă tu — Rotorul pe stâlp și capacul (8 min)**  
 - [ ] Rotorul e la **30 mm**, cu stâlpul prin gaură  
 - [ ] Capacul stă pe vârf, iar rotorul rămâne separat  
 
@@ -140,7 +141,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 4. <span style="color:#E65722;font-weight:700">Ruler</span>: gaura (`9` mm) față de stâlp (`8` mm). Spațiul dintre rotor și baza: `35` mm; între rotor și capac: `18` mm  
 5. <span style="color:#00A600;font-weight:700">Color</span>: paletele în culori diferite  
 
-**Încearcă tu — Complet — 8 palete, Ruler, culori (25 min)**  
+**Încearcă tu — Complet — 8 palete, Ruler, culori (15 min)**  
 - [ ] Ai **8** palete (bare la 0°, 45°, 90°, 135°)  
 - [ ] Cu Ruler: gaura **9 mm**, stâlpul **8 mm**  
 - [ ] Paletele au culori diferite  
@@ -156,6 +157,7 @@ Celelalte unelte (formele de bază, <span style="color:#00A600;font-weight:700">
 6. **Stâlpul nu trece prin gaură** — gaura trebuie să fie `9`, stâlpul `8`.  
 7. **La ventilator ai 4 palete în loc de 6** — ai rotit cu `90°` în loc de `60°`. Scrie `60` în câmpul cu număr.  
 8. **Capacul nu e pe vârf** — la <span style="color:#E65722;font-weight:700">L</span> alege punctul de **sus**.  
+9. **La `8` palete, paletele se suprapun lângă butuc** — e normal: barele sunt late de `12` mm, iar la `45°` ele se întâlnesc aproape de centru. Nu strică nimic.  
 
 ---
 
@@ -193,11 +195,17 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 
 ---
 
-## Bonus ★★★ — Provocare: Turnul eolian cu 2 rotoare
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Turnul eolian cu două rotoare
+*Doar dacă ai terminat Complet. Lucrezi în proiectul `Prenume_Nume_T3_L03_B`, **lângă** ventilatorul de până acum, pe trepte, de la ușor la greu. Fiecare piesă o faci de la zero, nu o copiezi din altă piesă. Treapta următoare o începi după ce ai încheiat-o pe cea dinainte. Snap Grid: **1.0 mm**, iar la mutări mari: **5.0 mm**.*
 
-- [ ] Schimbă culorile și adaugă un text pe una dintre baze  
-- [ ] **Provocarea (obiect mai complicat):** în proiectul `Prenume_Nume_T3_L03_B`, un **suport nou**: bază `Ø50 × 5`, stâlp `Ø8 × 100`, capac `Ø14 × 4` cu partea de sus la `100`. Pe el pui **două rotoare**: rotorul ventilatorului (copia lui, înălțime `10`) la **40 mm** de bază și rotorul morișcii (copiat din primul proiect cu <span style="color:#DC143C;font-weight:700">Ctrl+C</span> și <span style="color:#DC143C;font-weight:700">Ctrl+V</span>, înălțime `8`) la **70 mm**. Rotoarele rămân separate și nu se ating. Cu <span style="color:#E65722;font-weight:700">Ruler</span> confirmi **20 mm** între cele două rotoare (`70 − 50`), și că gaura (`9`) e mai mare decât stâlpul (`8`). Un coleg verifică din <span style="color:#D400D4;font-weight:700">Front</span> că niciun rotor nu atinge capacul sau baza.  
+- [ ] **Treapta 1 — Suportul nou.** O bază `Cylinder` `50 · 50 · 5`, un stâlp `Cylinder` `8 · 8 · 100`, centrat, și un capac `Cylinder` `14 · 14 · 4`, cu partea de sus la `100`. `Ctrl+G` pe cele trei. Îl muți `100` mm deoparte.  
+- [ ] **Treapta 2 — Rotorul de jos.** Un butuc `Cylinder` `16 · 16 · 10` cu `Hole` `9 · 9 · 14`, o bară `Box` `56 · 10 · 2`, apoi `Ctrl+D` cu rotire `60`, încă o dată: `3` bare la `0°`, `60°`, `120°`, deci `6` palete. `Ctrl+G` pe butuc, gaură și bare. Îl ridici la `40`, pe stâlp.  
+- [ ] **Treapta 3 — Rotorul de sus.** Un butuc `Cylinder` `20 · 20 · 8` cu `Hole` `9 · 9 · 14`, o bară `Box` `80 · 12 · 2`, apoi `Ctrl+D` cu rotire `90°`: `4` palete în cruce. `Ctrl+G`. Îl ridici la `70`. Între cele două rotoare rămân `20` mm (`70 − 50`).  
+- [ ] **Treapta 4 — Șaiba dintre rotoare.** Un `Cylinder` `14 · 14 · 4` cu `Hole` `Cylinder` `9 · 9 · 6`, centrat, `Ctrl+G`. O pui pe stâlp, la `58`: stă liberă, cu câte `8` mm de aer deasupra și dedesubt, față de rotoare.  
+- [ ] **Treapta 5 — Steagul de vânt.** O tijă `Cylinder` `3 · 3 · 20`, la `99`, centrată pe capac (intră `1` mm în el), și un steag `Box` `18 · 2 · 10`, la `109`, centrat pe tijă. Steagul se grupează cu capacul.  
+- [ ] **Treapta 6 — Verificarea.** Cu `Ruler` confirmi `20` mm între rotoare și `18` mm între rotorul de sus și capac (`96 − 78`). Din `Front`, niciun rotor și nicio șaibă nu atinge capacul sau baza.  
+
+**Verificare (cu un coleg):** colegul numără în cel mult **30 de secunde**: **2** rotoare, **10** palete, **1** șaibă, **1** steag, și arată că rotoarele se selectează singure, fiind separate de stâlp.  
 
 ## Recapitulare rapidă
 1. Rotorul stă **liber** pe stâlp: gaura (`9`) e mai mare decât stâlpul (`8`)  
@@ -211,8 +219,10 @@ Dacă rămâi în urmă: **oprește-te la Minim**. Nu e eșec, e baza pentru lec
 - Câte palete dau 3 bare centrate pe butuc?  
 - De ce rotorul nu trebuie lipit de stâlp?
 
-## Temă
-Opțional, acasă, într-un proiect nou `T3_L03_B`: o **moară de vânt** cu **3** palete, cu `120°` între ele. Câte bare ai folosit?
+## Temă (opțional)
+- Dacă ai doar Minim: acasă termini în același proiect ce nu ai apucat.  
+- Dacă ai Complet: într-un proiect nou `T3_L03_C`, o **moară de vânt** cu **3** palete, cu `120°` între ele. Câte bare ai folosit?  
+- Dacă ai terminat și Bonusul: opțional, acasă, într-un proiect nou `T3_L03_D`, un **turn cu `3` rotoare** și `2` șaibe, cu înălțimea stâlpului calculată de tine.  
 
 ## Ce urmează
 În **Lecția 4** faci un **labirint cu bilă** și un **labirint rotund**: culoare cu joc pentru o bilă.
