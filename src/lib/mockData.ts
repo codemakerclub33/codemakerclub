@@ -119,7 +119,7 @@ export const module = [
     ordine: 1,
     badge: 'Scratch Starter',
     nivel: 'Starter',
-    descriere: '9 proiecte noi + prezentare. Fiecare oră se închide cu ceva jucabil sau privibil.',
+    descriere: '10 lecții cu un mic proiect în fiecare: faci un card animat, o lume cu decoruri, un personaj care se plimbă, un buton magic, un interviu, un concert și o vânătoare de comori. Înveți mișcarea, aspectul, sunetul, coordonatele și repetarea. La final: galeria ta de proiecte.',
   },
   {
     id: 'm17',
@@ -128,7 +128,7 @@ export const module = [
     ordine: 2,
     badge: 'Logic Explorer',
     nivel: 'Explorer',
-    descriere: '10 lecții cu jocuri și proiecte: dacă, variabile, operatori, blocuri proprii și mesaje.',
+    descriere: '10 lecții în care proiectele tale încep să gândească: un meci de fotbal, un acvariu, un robot prieten, un magazin de dulciuri, zaruri, o poartă secretă și o vânătoare de bile. Înveți decizii cu dacă, variabile, operatori, desenul cu stiloul și propriile tale blocuri. La final: galeria ta de logică.',
   },
   {
     id: 'm18',
@@ -137,7 +137,7 @@ export const module = [
     ordine: 3,
     badge: 'Game Builder',
     nivel: 'Builder',
-    descriere: '10 lecții cu jocuri și teme educative: straturi, clone, liste, sunet, timp. Capstone: „Zidul magic”.',
+    descriere: '10 lecții cu jocuri mai mari: o pădure fermecată, o cursă în sistemul solar, o invazie de clone, o trusă de prim ajutor, Formula 1, capsula timpului și salvarea planetei. Înveți clone, liste, cronometru, sunet și scor. La final: jocul „Zidul magic” și o galerie cu jocurile tale.',
   },
   {
     id: 'm19',
@@ -146,7 +146,7 @@ export const module = [
     ordine: 4,
     badge: 'Scratch Creator',
     nivel: 'Creator',
-    descriere: '6 proiecte: 1 joc Creator al tău (L1→L6→L7) + 5 antrenamente.',
+    descriere: '9 jocuri independente, fiecare cu start, final și restart, și o galerie la final. Jocurile au mai multe personaje care vorbesc între ele prin mesaje: un cavaler și o cheie, o comoară de pirați, curățenie pe orbită, asteroizi, apărarea unui castel și altele. Combini variabile, clone, liste și blocuri proprii cu intrări. La final: prezentare și insigna Scratch Creator.',
   },
   {
     id: 'm28',
@@ -155,7 +155,7 @@ export const module = [
     ordine: 5,
     badge: 'Maestru de jocuri',
     nivel: 'Master',
-    descriere: '6 antrenamente (gravitație, scroll, inamici…) + 1 proiect mare.',
+    descriere: '10 lecții despre cum funcționează un joc adevărat: gravitație și săritură, hărți care se derulează, inamici care patrulează, liste și inventar, blocuri proprii și magazin cu monede. Cu ele construiești un platformer complet, în lecțiile 7–10. La final: prezentare și insigna Maestru de jocuri.',
   },
   {
     id: 'm20',
@@ -164,7 +164,7 @@ export const module = [
     ordine: 6,
     badge: 'Cube Crafter',
     nivel: 'Crafter',
-    descriere: '1 proiect pe toate 10 lecțiile: lumea de cuburi (sparge, pune, craft).',
+    descriere: '10 lecții, un singur joc: o lume de cuburi. Pas cu pas adaugi mișcarea pe grilă, spargerea și punerea blocurilor, inventarul, două zone, o creatură periculoasă, crafting, o misiune și un meniu. La final îți prezinți lumea și primești insigna Cube Crafter.',
   },
   // micro:bit — c8: 2 module blocuri (8+) · c10: 2 module Python (10+)
   { id: 'm21', curs_id: 'c8', nume: 'Modul 1 — MakeCode (blocuri)', ordine: 1, badge: 'micro:bit Starter', descriere: '10 lecții cu un mic proiect în fiecare: trimiți programe pe placă, desenezi pe LED-uri, folosești butoanele, variabilele, deciziile, buclele și senzorii. La final: o insignă inteligentă care adună proiectele din lecțiile trecute.' },
@@ -602,14 +602,14 @@ export const lectii = [
   ]),
   // Scratch Modul 4 — proiecte concrete (fără „greu” în fiecare titlu)
   ...genLectii('m19', [
-    'Pornești proiectul tău (motorul)',
-    'Proiect: Poveste interactivă cu alegeri',
-    'Proiect: Quiz pe runde',
-    'Proiect: Clip pe acte',
-    'Proiect: Labirint pe 2 nivele',
-    'Proiectul tău — versiunea finală',
-    'Depanare: găsești și repari greșelile',
-    'Proiect: Felicitare pe scene',
+    'Cavalerul și Cheia',
+    'Comoara Piratului',
+    'Curățenie pe orbită',
+    'Clip pe acte',
+    'Labirint pe 2 nivele',
+    'Cavalerul și Cheia: jocul final',
+    'Cavalerul și Cheia: depanare și publicare',
+    'Felicitare pe scene',
     'Prezentare + insignă Scratch Creator',
     'Portofoliu Creator',
   ]),

@@ -6,22 +6,22 @@
 **Cei rapizi:** **Bonus / Provocare** pe fiecare lecție.  
 **Stil:** același schelet ca Modul 1–3 (Obiectiv, Minim/Complet, Pas cu pas, Greșeli, Schema pe scurt, Quiz).  
 **Culori blocuri:** [`_culori-scratch.md`](../_culori-scratch.md)  
-**Dificultatea** e ridicată pe tot modulul (Creator, nu „intro”).
+**Dificultatea** e peste M3: 4–6 personaje pe joc, mai multe sisteme combinate (variabile, clone, liste, blocuri proprii cu intrări). Minim = scripturi complete (≥ 10 blocuri diferite). Complet = doar schemă și indicii (≥ 12 blocuri). Bonus = doar obiectivul.
 
 | # | Fișier | Titlu / proiect |
 |---|--------|-----------------|
-| 1 | [L1-Start-proiect.md](./L1-Start-proiect.md) | Baza jocului — „Baza jocului meu” |
-| 2 | [L2-Poveste.md](./L2-Poveste.md) | Poveste cu alegeri — `…_M4_L2` |
-| 3 | [L3-Quiz.md](./L3-Quiz.md) | Quiz pe runde — `…_M4_L3` |
-| 4 | [L4-Animatie-muzica.md](./L4-Animatie-muzica.md) | Clip pe acte (+ **Muzică** / **Stilou**) |
-| 5 | [L5-Labirint.md](./L5-Labirint.md) | Labirint pe nivele — `…_M4_L5` |
-| 6 | [L6-Proiect-liber.md](./L6-Proiect-liber.md) | Proiectul tău — versiunea finală |
-| 7 | [L7-Bug-polish-publicare.md](./L7-Bug-polish-publicare.md) | Depanare + finisări + publicare |
-| 8 | [L8-Felicitare.md](./L8-Felicitare.md) | Felicitare pe scene — `…_M4_L8` |
-| 9 | [L9-Prezentare-showcase.md](./L9-Prezentare-showcase.md) | Prezentare + **insignă** Scratch Creator |
-| 10 | [L10-Portofoliu-creator.md](./L10-Portofoliu-creator.md) | Colecție de proiecte Creator (+ poartă spre M5) |
+| 1 | [L1-Cavalerul-si-Cheia.md](./L1-Cavalerul-si-Cheia.md) | Cavalerul și Cheia — joc pe 2 nivele — `…_M4_L1` |
+| 2 | [L2-Comoara-Piratului.md](./L2-Comoara-Piratului.md) | Comoara Piratului — poveste cu alegeri — `…_M4_L2` |
+| 3 | [L3-Curatenie-pe-orbita.md](./L3-Curatenie-pe-orbita.md) | Curățenie pe orbită — quiz pe runde — `…_M4_L3` |
+| 4 | *(în lucru, fișierul vechi `L4-Animatie-muzica.md` se rescrie)* | Asteroizii — navă și asteroizi, extensia Muzică |
+| 5 | *(în lucru, `L5-Labirint.md`)* | Apără castelul — inamici în valuri, apărători |
+| 6 | *(în lucru, `L6-Proiect-liber.md`)* | Pet-ul meu — clicker cu nivele |
+| 7 | *(în lucru, `L7-Bug-polish-publicare.md`)* | Fotbal cu Stilou — 2 jucători, extensia Stilou |
+| 8 | *(în lucru, `L8-Felicitare.md`)* | Fabrica de monștri — alegi și monstrul dansează |
+| 9 | *(în lucru, `L9-Prezentare-showcase.md`)* | Jocul meu, de la idee la publicare |
+| 10 | *(în lucru, `L10-Portofoliu-creator.md`)* | Completare + prezentare: Galeria Scratch Creator (+ insignă) |
 
-**Flux:** L1→L6→L7 = **același** proiect · L2–L5, L8 = fișiere **separate** · L9 = prezentare + insignă · L10 = colecție de proiecte Scratch (fără Python)  
+**Flux:** L1–L9 = jocuri **independente**, fiecare în fișierul lui · L10 = galerie cu 3 personaje preferate, prezentare și insignă  
 
 **Salvare:** `Prenume_Nume_M4_L1` … `M4_L10`
 

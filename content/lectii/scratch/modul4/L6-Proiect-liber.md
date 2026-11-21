@@ -1,4 +1,4 @@
-# Lecția 6 — Proiectul tău — versiunea finală
+# Lecția 6 — Cavalerul și Cheia: jocul final
 **Modulul 4 · Fir Creator: L1 → L6 → L7**  
 **Code Maker Club · Scratch Creator**
 

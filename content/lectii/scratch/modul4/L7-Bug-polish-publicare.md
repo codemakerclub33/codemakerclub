@@ -1,4 +1,4 @@
-# Lecția 7 — Depanare, finisări și publicare
+# Lecția 7 — Cavalerul și Cheia: depanare și publicare
 **Modulul 4 · Fir Creator: L1 → L6 → L7**  
 **Code Maker Club · Scratch Creator**
 
