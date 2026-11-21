@@ -225,7 +225,14 @@ void loop() {
 - [ ] Simularea face tot ce scrie în „Complet”  
 
 ### 6) Fețe corecte? (un test)
-La final adaugă în `setup()` un test: pentru fiecare față de la 1 la 6, o arăți 500 ms. Dacă nu seamănă cu un zar, ai o greșeală în tabel sau în fire.
+La final adaugă în `setup()`, **înainte** de ultima linie `arataFata(0);`, un test: pentru fiecare față de la 1 la 6, o arăți 500 ms. Dacă nu seamănă cu un zar, ai o greșeală în tabel sau în fire.
+
+```cpp
+  for (int f = 1; f <= 6; f++) {
+    arataFata(f);
+    delay(500);
+  }
+```
 
 ### 7) Proiectul 2 — Statistica zarului
 Un zar corect ar trebui să dea fiecare față cam la fel de des. Hai să verificăm! Programul **numără** de câte ori a ieșit fiecare față și, la fiecare **5 aruncări**, arată pe LCD câte aruncări au fost și care față a ieșit cel mai des. Circuitul rămâne cel de la proiectul 1; adaugi doar cod în programul **Complet**.

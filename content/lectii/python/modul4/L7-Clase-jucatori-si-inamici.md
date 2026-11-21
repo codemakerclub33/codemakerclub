@@ -1,4 +1,5 @@
-# LECȚIA 7 — Clase: jucători și inamici
+# LECȚIA 7 — Arena monedelor
+### Clase: jucători și inamici
 **Modulul 4 · Jocuri cu Pygame · 2 ore**  
 **Code Maker Club · Game Creator**
 
@@ -7,13 +8,13 @@
 
 ---
 
-## Obiectiv
-La finalul orei scrii clase cu `__init__`, atribute și metode, creezi mai multe obiecte din aceeași clasă, ții obiecte în liste, folosești `__str__` și o clasă „copil” (moștenire) și construiești un joc cu clase.  
-**Minim:** o clasă și două obiecte create din ea.  
-**Ținta orei (Complet):** + clase pentru jucător, inamic și monedă, folosite într-un joc.
+## Ce facem azi
 
-## De ce contează
-Aproape toate jocurile reale sunt scrise cu clase: fiecare personaj, glonț sau obiect este un **obiect** care își **știe singur** poziția, viteza și cum se desenează. Codul devine mai scurt, mai ordonat și ușor de extins.
+La final scrii clase cu `__init__`, atribute și metode, creezi mai multe obiecte din aceeași clasă, ții obiecte în liste, folosești o clasă „copil” (moștenire) și construiești un joc cu clase.
+
+Până acum, fiecare lucru din joc era o grămadă de variabile: `jucator_x`, `jucator_y`, `jucator_viteza`... Cu 10 inamici ai fi avut 30 de variabile! **Clasa** este o **rețetă** după care faci oricâte obiecte vrei: un jucător, o sută de inamici, o mie de monede. Aproape toate jocurile reale sunt scrise așa: fiecare personaj, glonț sau obiect își **știe singur** poziția, viteza și cum se desenează.
+
+La final ai **„Arena monedelor”**: un jucător, monede și inamici, toți făcuți cu clase.
 
 ---
 
@@ -24,10 +25,23 @@ Aproape toate jocurile reale sunt scrise cu clase: fiecare personaj, glonț sau 
 | 0–10 | Recapitulare L6 |
 | 10–35 | Prima clasă: atribute și metode (**Exemplele 1–2**) |
 | 35–60 | Clase în Pygame, liste de obiecte (**Exemplele 3–5**) |
-| 60–80 | `__str__`, clase copil (**Exemplele 6–8**) |
-| 80–90 | Moștenire în joc (**Exemplul 9**) |
-| 90–118 | Mini-proiect (**Exemplul 10**) |
+| 60–90 | Clase copil, moștenire (**Exemplele 6–7**) |
+| 90–118 | Mini-proiect: Arena monedelor (**Exemplul 8**) |
 | 118–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `class Caine:` | Începe o clasă (rețeta) | `class Jucator:` |
+| `def __init__(self, ...):` | Rulează la crearea obiectului; `self` este „obiectul acesta” | `def __init__(self, nume, varsta):` |
+| `self.nume = nume` | Un atribut: o dată care aparține obiectului | `self.vieti = 3` |
+| `def latra(self):` și `rex.latra()` | O metodă: o funcție a obiectului | `jucator.muta(taste)` |
+| `rex = Caine("Rex", 3)` | Creează un obiect din clasă | `inamici.append(Inamic(10, 20))` |
+| `class Copil(Parinte):` | Clasă copil: moștenește tot de la părinte | `class Vanator(Inamic):` |
+| `super().__init__(...)` | Apelează `__init__` al părintelui | `super().__init__()` |
 
 ---
 
@@ -36,9 +50,6 @@ Aproape toate jocurile reale sunt scrise cu clase: fiecare personaj, glonț sau 
 - Funcția `scrie` are parametri cu valori implicite.
 - Starea jocului ne spune ce se întâmplă acum.
 - Un dicționar poate păstra mai multe informații despre același lucru.
-
-**Încearcă tu (3 min)**  
-- [ ] Creează un dicționar `caine` cu cheile `nume` și `varsta`, apoi afișează-le  
 
 ---
 
@@ -352,7 +363,7 @@ Inamici: 5
 
 Primele două `print`-uri sunt teste: inamicul de la marginea dreaptă este **împins înapoi** exact în ecran (`x = 560`, pentru că lățimea lui este 40) și își schimbă direcția (`dx` devine −5). Fără linia `self.rect.right = LATIME`, un inamic poate „rămâne lipit” de margine!
 
-**Încearcă tu (5 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Am scris și am rulat **Exemplul 3** (Jucătorul ca obiect)  
 - [ ] Am scris și am rulat **Exemplul 4** (Liste de monede)  
 - [ ] Am scris și am rulat **Exemplul 5** (Inamici care sar de pereți)  
@@ -360,112 +371,9 @@ Primele două `print`-uri sunt teste: inamicul de la marginea dreaptă este **î
 
 ---
 
-## 4. Mai multe despre clase
+## 4. Clase copil
 
-### Exemplul 6 — Picăturile de ploaie
-
-```python
-import random
-import pygame
-
-pygame.init()
-LATIME = 600
-INALTIME = 400
-ecran = pygame.display.set_mode((LATIME, INALTIME))
-pygame.display.set_caption("Ploaie")
-ceas = pygame.time.Clock()
-
-class Picatura:
-    def __init__(self, x, y, viteza):
-        self.rect = pygame.Rect(x, y, 4, 14)
-        self.viteza = viteza
-
-    def cade(self):
-        self.rect.y += self.viteza
-
-    def a_iesit(self):
-        return self.rect.top >= INALTIME
-
-    def deseneaza(self):
-        pygame.draw.rect(ecran, (120, 180, 255), self.rect)
-
-test = Picatura(10, 390, 5)
-test.cade()
-print(test.rect.y, test.a_iesit())
-test.cade()
-print(test.rect.y, test.a_iesit())
-
-picaturi = []
-ruleaza = True
-while ruleaza:
-    for eveniment in pygame.event.get():
-        if eveniment.type == pygame.QUIT:
-            ruleaza = False
-
-    for i in range(3):
-        picaturi.append(Picatura(random.randint(0, LATIME), -14, random.randint(5, 10)))
-
-    for p in picaturi:
-        p.cade()
-    picaturi = [p for p in picaturi if not p.a_iesit()]
-
-    ecran.fill((40, 40, 70))
-    for p in picaturi:
-        p.deseneaza()
-    pygame.display.flip()
-    ceas.tick(60)
-
-pygame.quit()
-```
-
-**Ieșire:**
-```text
-395 False
-400 True
-```
-
-**Ce vezi pe ecran:** pe fundal gri-albăstrui, **sute de picături albastre** care cad cu viteze diferite, ca într-o ploaie. Când ajung jos, dispar, deci programul nu se încetinește.
-
-Linia `picaturi = [p for p in picaturi if not p.a_iesit()]` este o formă **scurtă** a buclei cu lista `ramase`: „păstrează în listă doar picăturile care nu au ieșit”. Poți folosi oricare dintre cele două variante.
-
-### Exemplul 7 — Afișarea unui obiect cu `__str__`
-
-```python
-class Inamic:
-    numar = 0
-
-    def __init__(self, nume, vieti):
-        self.nume = nume
-        self.vieti = vieti
-        Inamic.numar += 1
-
-    def __str__(self):
-        return f"{self.nume} ({self.vieti} vieti)"
-
-a = Inamic("Zombi", 3)
-b = Inamic("Dragon", 10)
-print(a)
-print(b)
-print("Inamici creati:", Inamic.numar)
-
-lista = [a, b]
-for i in lista:
-    print("-", i)
-```
-
-**Ieșire:**
-```text
-Zombi (3 vieti)
-Dragon (10 vieti)
-Inamici creati: 2
-- Zombi (3 vieti)
-- Dragon (10 vieti)
-```
-
-- Metoda **`__str__`** spune cum arată obiectul când îl afișezi cu `print`. Fără ea, ai vedea ceva neinteligibil, de genul `<__main__.Inamic object at 0x...>`;
-- `numar = 0`, scris **direct în clasă** (nu în `__init__`), este un **atribut al clasei**: este **comun** tuturor obiectelor. Aici numără câți inamici au fost creați. Îl citim cu `Inamic.numar`.
-
-### Exemplul 8 — Clase „copil” (moștenire)
+### Exemplul 6 — Clase „copil” (moștenire)
 
 ```python
 class Personaj:
@@ -533,7 +441,7 @@ Merlin nu mai are mana!
 - `super().__init__(nume, 8)` apelează `__init__` din clasa **părinte**, ca să nu rescriem codul;
 - Clasa `Razboinic` **înlocuiește** metoda `se_prezinta` (se numește **suprascriere**), dar folosește și varianta părintelui prin `super()`.
 
-### Exemplul 9 — Moștenire în joc
+### Exemplul 7 — Moștenire în joc
 
 ```python
 import random
@@ -611,10 +519,8 @@ True True False
 
 Clasa de bază `Obiect` ține ce au toate obiectele în comun (poziția, culoarea, `deseneaza`). `Inamic` și `Bonus` o **moștenesc** și adaugă fiecare ce-i trebuie. `isinstance(obiect, Clasa)` verifică dacă un obiect este făcut dintr-o clasă (sau din „copilul” ei): primul `print` arată `True True False`.
 
-**Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 6** (Picăturile de ploaie)  
-- [ ] Am scris și am rulat **Exemplul 7** (Afișarea unui obiect cu `__str__`)  
-- [ ] Am scris și am rulat **Exemplul 8** (Clase „copil” (moștenire))  
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 6** (Clase „copil” (moștenire))  
 - [ ] Am rulat și restul exemplelor din secțiune  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
@@ -622,7 +528,7 @@ Clasa de bază `Obiect` ține ce au toate obiectele în comun (poziția, culoare
 
 ## 5. Mini-proiect
 
-### Exemplul 10 — „Arena monedelor”
+### Exemplul 8 — „Arena monedelor”
 
 ```python
 import math
@@ -794,77 +700,47 @@ pygame.quit()
 Codul principal este foarte scurt, pentru că **fiecare clasă își știe singură treaba**: `Jucator` se mișcă și primește lovituri, `Inamic` ricoșează, `Moneda` apare în alt loc. Funcția `inamic_nou` alege un loc **la peste 150 de pixeli** de jucător, ca să nu fii lovit imediat.
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** („Arena monedelor”)  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+- [ ] Am scris și am rulat **Exemplul 8** („Arena monedelor”)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Arena monedelor”
 
-### Exercițiul A — „Arena monedelor” (obligatoriu)
-Pornește de la Exemplul 10 și fă jocul **al tău**:
+### Minim vs Complet
+
+| Nivel | Ce trebuie să ai |
+|-------|------------------|
+| **Minim** | O clasă și două obiecte create din ea |
+| **Complet** | Minim + jocul tău cu clasele `Jucator`, `Inamic`, `Moneda`, `Bonus` și un inamic mai rapid (clasă copil) |
+
+### Pasul 1 — Minim
+Scrie o clasă (de exemplu `Animal` sau `Robot`) cu `__init__`, două atribute și o metodă; creează două obiecte din ea și apelează metoda.
+
+### Pasul 2 — Complet
+Pornește de la Exemplul 8 și fă jocul **al tău**:
 1. schimbă **tema** (alt jucător, alți inamici, altă monedă, alt fundal);
 2. adaugă o clasă nouă, **`Bonus`**: un obiect care apare din când în când și, dacă îl prinzi, îți dă o **viață în plus** (maximum 5);
 3. fă ca un tip de inamic (clasă copil) să fie **mai rapid**;
 4. adaugă un **ecran de meniu** înainte de joc;
 5. păstrează `Jucator`, `Inamic` și `Moneda` ca **clase**.
 
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
-
-```python
-class Cutie:
-    def __init__(self, continut):
-        self.continut = continut
-
-    def deschide(self):
-        return "In cutie: " + self.continut
-
-a = Cutie("o carte")
-b = Cutie("o minge")
-b.continut = "un joc"
-print(a.deschide())
-print(b.deschide())
-```
-
-### Exercițiul C — Clasa `Animal`
-Scrie o clasă `Animal` cu `nume` și metoda `vorbeste()`. Fă clasele `Pisica` și `Caine` care moștenesc din `Animal` și **suprascriu** `vorbeste()` (de exemplu „Miau!” și „Ham!”). Creează câte un obiect din fiecare și pune-le într-o listă. Cu o buclă `for`, fă-le să vorbească.
-
-### Exercițiul D — Găsește greșelile
-Programul are 3 greșeli. Rescrie-l corect:
-
-```text
-class Caine:
-    def __init__(nume, varsta):
-        self.nume = nume
-        self.varsta = varsta
-    def latra():
-        print("Ham!")
-rex = Caine("Rex", 3)
-rex.latra()
-print(rex.Nume)
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. Ce este o clasă și ce este un obiect? (folosește exemplul rețetei)  
-2. Ce înseamnă `self`?  
-3. Ce înseamnă că o clasă „moștenește” altă clasă?
-
 **Gata când:**
 - [ ] Jocul are clasele `Jucator`, `Inamic` și `Moneda`  
 - [ ] Ai adăugat clasa `Bonus` și un inamic mai rapid  
 - [ ] Ai un meniu înainte de joc  
-- [ ] Ai explicat pe foaie ce sunt clasa și obiectul  
-- [ ] Fișierul se numește `Prenume_Nume_P4_L7.py`  
+- [ ] Fișierul se numește `Prenume_Nume_P4_L7.py`
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Adaugă o clasă `Glont`: jucătorul trage cu **SPAȚIU** în sus și distruge inamicii  
-- [ ] Fă ca inamicii să **urmărească** jucătorul (își schimbă `dx` și `dy` după poziția lui)  
-- [ ] Fă o clasă `Nivel` care păstrează numărul de inamici și viteza  
-- [ ] Adaugă metoda `__str__` la `Jucator` și afișează-l în consolă  
+## Bonus ★★★ — Provocare: Arena monedelor, ediția de luptă
+
+*Doar dacă ai terminat Complet. Lucrezi tot în „Arena monedelor”, în același program.*
+
+- [ ] **Clasa `Glont`.** La **SPAȚIU**, jucătorul trage un glonț în sus; un inamic lovit dispare, apare altul în alt loc și primești 2 puncte  
+- [ ] **Clasa `Vanator`.** O clasă copil din `Inamic`, care urmărește jucătorul (mai încet decât ceilalți); apare la fiecare 10 puncte  
+- [ ] **`__str__`.** Adaugă metoda `__str__` la `Jucator` și afișează-l în consolă când jocul se termină (vezi „Acasă 2”)  
+- [ ] **Clasa `MonedaAur`.** O clasă copil din `Moneda`: din când în când, moneda este una de aur, mai mare, care valorează 3 puncte
 
 ---
 
@@ -902,14 +778,896 @@ Răspunde pe foaie:
 
 ---
 
+---
+
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny.  
-2. Adaugă în „Arena monedelor” un tip nou de inamic (de exemplu **vânătorul**, care urmărește jucătorul).  
-3. Fă o clasă `Buton` pentru meniu (cu text, culoare și metoda `este_apasat(pozitie)`).  
-4. **Bonus:** fă un joc cu **obiecte care cad** (clase `Stea` și `Piatra` care moștenesc din `Obiect`).  
-5. Salvează totul ca `Tema_P4_L7_Prenume_Nume.py`.
+1. Refă **4 exemple la alegere** din cele 8, scrise de tine (nu copiate).  
+2. **Clasa `Animal`.** Scrie o clasă `Animal` cu `nume` și metoda `vorbeste()`. Fă clasele `Pisica` și `Caine` care moștenesc din `Animal` și **suprascriu** `vorbeste()` (de exemplu „Miau!” și „Ham!”). Creează câte un obiect din fiecare și pune-le într-o listă. Cu o buclă `for`, fă-le să vorbească.  
+3. Adaugă în „Arena monedelor” un tip nou de inamic (de exemplu o **fantomă**, care traversează ecranul de sus în jos și reapare sus).  
+4. Fă o clasă `Buton` pentru meniu (cu text, culoare și metoda `este_apasat(pozitie)`).  
+5. **Explică pe foaie:** Ce este o clasă și ce este un obiect? (folosește exemplul rețetei) Ce înseamnă `self`? Ce înseamnă că o clasă „moștenește” altă clasă?  
+6. **Bonus:** fă un joc cu **obiecte care cad** (clase `Stea` și `Piatra` care moștenesc din `Obiect`).  
+7. Salvează totul ca `Tema_P4_L7_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le în Thonny, rulează-le și schimbă-le după preferințe.
+
+#### Acasă 1 — Picăturile de ploaie
+
+```python
+import random
+import pygame
+
+pygame.init()
+LATIME = 600
+INALTIME = 400
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Ploaie")
+ceas = pygame.time.Clock()
+
+class Picatura:
+    def __init__(self, x, y, viteza):
+        self.rect = pygame.Rect(x, y, 4, 14)
+        self.viteza = viteza
+
+    def cade(self):
+        self.rect.y += self.viteza
+
+    def a_iesit(self):
+        return self.rect.top >= INALTIME
+
+    def deseneaza(self):
+        pygame.draw.rect(ecran, (120, 180, 255), self.rect)
+
+test = Picatura(10, 390, 5)
+test.cade()
+print(test.rect.y, test.a_iesit())
+test.cade()
+print(test.rect.y, test.a_iesit())
+
+picaturi = []
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+
+    for i in range(3):
+        picaturi.append(Picatura(random.randint(0, LATIME), -14, random.randint(5, 10)))
+
+    for p in picaturi:
+        p.cade()
+    picaturi = [p for p in picaturi if not p.a_iesit()]
+
+    ecran.fill((40, 40, 70))
+    for p in picaturi:
+        p.deseneaza()
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+
+**Ieșire:**
+```text
+395 False
+400 True
+```
+
+**Ce vezi pe ecran:** pe fundal gri-albăstrui, **sute de picături albastre** care cad cu viteze diferite, ca într-o ploaie. Când ajung jos, dispar, deci programul nu se încetinește.
+
+Linia `picaturi = [p for p in picaturi if not p.a_iesit()]` este o formă **scurtă** a buclei cu lista `ramase`: „păstrează în listă doar picăturile care nu au ieșit”. Poți folosi oricare dintre cele două variante.
+
+#### Acasă 2 — Afișarea unui obiect cu `__str__`
+
+```python
+class Inamic:
+    numar = 0
+
+    def __init__(self, nume, vieti):
+        self.nume = nume
+        self.vieti = vieti
+        Inamic.numar += 1
+
+    def __str__(self):
+        return f"{self.nume} ({self.vieti} vieti)"
+
+a = Inamic("Zombi", 3)
+b = Inamic("Dragon", 10)
+print(a)
+print(b)
+print("Inamici creati:", Inamic.numar)
+
+lista = [a, b]
+for i in lista:
+    print("-", i)
+```
+
+**Ieșire:**
+```text
+Zombi (3 vieti)
+Dragon (10 vieti)
+Inamici creati: 2
+- Zombi (3 vieti)
+- Dragon (10 vieti)
+```
+
+- Metoda **`__str__`** spune cum arată obiectul când îl afișezi cu `print`. Fără ea, ai vedea ceva neinteligibil, de genul `<__main__.Inamic object at 0x...>`;
+- `numar = 0`, scris **direct în clasă** (nu în `__init__`), este un **atribut al clasei**: este **comun** tuturor obiectelor. Aici numără câți inamici au fost creați. Îl citim cu `Inamic.numar`.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+class Cutie:
+    def __init__(self, continut):
+        self.continut = continut
+
+    def deschide(self):
+        return "In cutie: " + self.continut
+
+a = Cutie("o carte")
+b = Cutie("o minge")
+b.continut = "un joc"
+print(a.deschide())
+print(b.deschide())
+```
+
+**Găsește greșelile.** Programul are 3 greșeli. Rescrie-l corect:
+
+```text
+class Caine:
+    def __init__(nume, varsta):
+        self.nume = nume
+        self.varsta = varsta
+    def latra():
+        print("Ham!")
+rex = Caine("Rex", 3)
+rex.latra()
+print(rex.Nume)
+```
 
 ---
 
+## Răspunsuri la bonus
+Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit, important este să funcționeze. Fiecare cod este un program întreg, pornit de la „Arena monedelor” (Exemplul 8).
+
+### 1. Clasa Glont
+```python
+import math
+import random
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 500
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Arena monedelor")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 32)
+font_mare = pygame.font.Font(None, 72)
+
+class Jucator:
+    def __init__(self):
+        self.rect = pygame.Rect(0, 0, 36, 36)
+        self.viteza = 6
+        self.reseteaza()
+
+    def reseteaza(self):
+        self.rect.center = (LATIME // 2, INALTIME // 2)
+        self.vieti = 3
+        self.scor = 0
+        self.imun_pana = 0
+
+    def este_imun(self):
+        return pygame.time.get_ticks() < self.imun_pana
+
+    def loveste(self):
+        if not self.este_imun():
+            self.vieti -= 1
+            self.imun_pana = pygame.time.get_ticks() + 1500
+
+    def muta(self, taste):
+        if taste[pygame.K_LEFT] or taste[pygame.K_a]:
+            self.rect.x -= self.viteza
+        if taste[pygame.K_RIGHT] or taste[pygame.K_d]:
+            self.rect.x += self.viteza
+        if taste[pygame.K_UP] or taste[pygame.K_w]:
+            self.rect.y -= self.viteza
+        if taste[pygame.K_DOWN] or taste[pygame.K_s]:
+            self.rect.y += self.viteza
+        self.rect.clamp_ip(ecran.get_rect())
+
+    def deseneaza(self):
+        if self.este_imun():
+            culoare = (255, 255, 255)
+        else:
+            culoare = (60, 200, 90)
+        pygame.draw.rect(ecran, culoare, self.rect, border_radius=8)
+
+class Inamic:
+    def __init__(self, x, y):
+        self.rect = pygame.Rect(x, y, 34, 34)
+        self.dx = random.choice([-4, -3, 3, 4])
+        self.dy = random.choice([-4, -3, 3, 4])
+
+    def muta(self):
+        self.rect.x += self.dx
+        self.rect.y += self.dy
+        if self.rect.left < 0:
+            self.rect.left = 0
+            self.dx = abs(self.dx)
+        if self.rect.right > LATIME:
+            self.rect.right = LATIME
+            self.dx = -abs(self.dx)
+        if self.rect.top < 0:
+            self.rect.top = 0
+            self.dy = abs(self.dy)
+        if self.rect.bottom > INALTIME:
+            self.rect.bottom = INALTIME
+            self.dy = -abs(self.dy)
+
+    def deseneaza(self):
+        pygame.draw.rect(ecran, (220, 50, 50), self.rect, border_radius=10)
+        pygame.draw.circle(ecran, (255, 255, 255), (self.rect.x + 11, self.rect.y + 14), 5)
+        pygame.draw.circle(ecran, (255, 255, 255), (self.rect.x + 23, self.rect.y + 14), 5)
+
+class Glont:
+    def __init__(self, x, y):
+        self.rect = pygame.Rect(0, 0, 6, 16)
+        self.rect.midbottom = (x, y)
+
+    def muta(self):
+        self.rect.y -= 10
+
+    def deseneaza(self):
+        pygame.draw.rect(ecran, (255, 255, 0), self.rect)
+
+class Moneda:
+    def __init__(self):
+        self.rect = pygame.Rect(0, 0, 22, 22)
+        self.muta_aleator()
+
+    def muta_aleator(self):
+        self.rect.x = random.randint(20, LATIME - 42)
+        self.rect.y = random.randint(60, INALTIME - 42)
+
+    def deseneaza(self):
+        pygame.draw.circle(ecran, (255, 200, 0), self.rect.center, 11)
+        pygame.draw.circle(ecran, (200, 140, 0), self.rect.center, 11, 2)
+
+jucator = Jucator()
+moneda = Moneda()
+inamici = []
+gloante = []
+record = 0
+final = False
+
+def inamic_nou():
+    while True:
+        i = Inamic(random.randint(0, LATIME - 34), random.randint(0, INALTIME - 34))
+        distanta = math.hypot(i.rect.centerx - jucator.rect.centerx, i.rect.centery - jucator.rect.centery)
+        if distanta > 150:
+            return i
+
+def joc_nou():
+    global final
+    jucator.reseteaza()
+    moneda.muta_aleator()
+    inamici.clear()
+    gloante.clear()
+    inamici.append(inamic_nou())
+    final = False
+
+joc_nou()
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_r and final:
+                joc_nou()
+            if eveniment.key == pygame.K_SPACE and not final:
+                gloante.append(Glont(jucator.rect.centerx, jucator.rect.top))
+
+    if not final:
+        jucator.muta(pygame.key.get_pressed())
+        for i in inamici:
+            i.muta()
+            if i.rect.colliderect(jucator.rect):
+                jucator.loveste()
+        ramase = []
+        for g in gloante:
+            g.muta()
+            lovit = False
+            for i in inamici:
+                if g.rect.colliderect(i.rect):
+                    inamici.remove(i)
+                    inamici.append(inamic_nou())
+                    jucator.scor += 2
+                    lovit = True
+                    break
+            if not lovit and g.rect.bottom > 0:
+                ramase.append(g)
+        gloante[:] = ramase
+
+        if jucator.rect.colliderect(moneda.rect):
+            jucator.scor += 1
+            moneda.muta_aleator()
+            if jucator.scor % 5 == 0:
+                inamici.append(inamic_nou())
+        if jucator.vieti <= 0:
+            final = True
+            if jucator.scor > record:
+                record = jucator.scor
+
+    ecran.fill((25, 35, 60))
+    moneda.deseneaza()
+    for i in inamici:
+        i.deseneaza()
+    for g in gloante:
+        g.deseneaza()
+    jucator.deseneaza()
+
+    ecran.blit(font.render("Scor: " + str(jucator.scor), True, (255, 255, 255)), (10, 10))
+    ecran.blit(font.render("Vieti: " + str(jucator.vieti), True, (255, 120, 120)), (10, 40))
+    ecran.blit(font.render("Inamici: " + str(len(inamici)), True, (200, 200, 200)), (LATIME - 130, 10))
+    ecran.blit(font.render("Record: " + str(record), True, (255, 220, 0)), (LATIME - 130, 40))
+
+    if final:
+        text = font_mare.render("GAME OVER", True, (255, 90, 90))
+        ecran.blit(text, (LATIME // 2 - text.get_width() // 2, 190))
+        text2 = font.render("Apasa R pentru joc nou", True, (255, 255, 255))
+        ecran.blit(text2, (LATIME // 2 - text2.get_width() // 2, 270))
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** arena obișnuită; la **SPAȚIU** pleacă un glonț galben în sus din jucător. Dacă lovește un inamic, acela dispare, apare altul în alt loc, iar scorul crește cu 2. `Glont` este o clasă nouă, cu aceleași trei metode ca celelalte (`__init__`, `muta`, `deseneaza`); gloantele stau într-o listă, iar cele care ies din ecran sau lovesc un inamic nu mai sunt păstrate.
+
+### 2. Clasa Vanator
+```python
+import math
+import random
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 500
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Arena monedelor")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 32)
+font_mare = pygame.font.Font(None, 72)
+
+class Jucator:
+    def __init__(self):
+        self.rect = pygame.Rect(0, 0, 36, 36)
+        self.viteza = 6
+        self.reseteaza()
+
+    def reseteaza(self):
+        self.rect.center = (LATIME // 2, INALTIME // 2)
+        self.vieti = 3
+        self.scor = 0
+        self.imun_pana = 0
+
+    def este_imun(self):
+        return pygame.time.get_ticks() < self.imun_pana
+
+    def loveste(self):
+        if not self.este_imun():
+            self.vieti -= 1
+            self.imun_pana = pygame.time.get_ticks() + 1500
+
+    def muta(self, taste):
+        if taste[pygame.K_LEFT] or taste[pygame.K_a]:
+            self.rect.x -= self.viteza
+        if taste[pygame.K_RIGHT] or taste[pygame.K_d]:
+            self.rect.x += self.viteza
+        if taste[pygame.K_UP] or taste[pygame.K_w]:
+            self.rect.y -= self.viteza
+        if taste[pygame.K_DOWN] or taste[pygame.K_s]:
+            self.rect.y += self.viteza
+        self.rect.clamp_ip(ecran.get_rect())
+
+    def deseneaza(self):
+        if self.este_imun():
+            culoare = (255, 255, 255)
+        else:
+            culoare = (60, 200, 90)
+        pygame.draw.rect(ecran, culoare, self.rect, border_radius=8)
+
+class Inamic:
+    def __init__(self, x, y):
+        self.rect = pygame.Rect(x, y, 34, 34)
+        self.dx = random.choice([-4, -3, 3, 4])
+        self.dy = random.choice([-4, -3, 3, 4])
+
+    def muta(self):
+        self.rect.x += self.dx
+        self.rect.y += self.dy
+        if self.rect.left < 0:
+            self.rect.left = 0
+            self.dx = abs(self.dx)
+        if self.rect.right > LATIME:
+            self.rect.right = LATIME
+            self.dx = -abs(self.dx)
+        if self.rect.top < 0:
+            self.rect.top = 0
+            self.dy = abs(self.dy)
+        if self.rect.bottom > INALTIME:
+            self.rect.bottom = INALTIME
+            self.dy = -abs(self.dy)
+
+    def deseneaza(self):
+        pygame.draw.rect(ecran, (220, 50, 50), self.rect, border_radius=10)
+        pygame.draw.circle(ecran, (255, 255, 255), (self.rect.x + 11, self.rect.y + 14), 5)
+        pygame.draw.circle(ecran, (255, 255, 255), (self.rect.x + 23, self.rect.y + 14), 5)
+
+class Vanator(Inamic):
+    def muta(self):
+        if self.rect.centerx < jucator.rect.centerx:
+            self.rect.x += 2
+        elif self.rect.centerx > jucator.rect.centerx:
+            self.rect.x -= 2
+        if self.rect.centery < jucator.rect.centery:
+            self.rect.y += 2
+        elif self.rect.centery > jucator.rect.centery:
+            self.rect.y -= 2
+
+    def deseneaza(self):
+        pygame.draw.rect(ecran, (150, 60, 220), self.rect, border_radius=10)
+        pygame.draw.circle(ecran, (255, 255, 255), (self.rect.x + 11, self.rect.y + 14), 5)
+        pygame.draw.circle(ecran, (255, 255, 255), (self.rect.x + 23, self.rect.y + 14), 5)
+
+class Moneda:
+    def __init__(self):
+        self.rect = pygame.Rect(0, 0, 22, 22)
+        self.muta_aleator()
+
+    def muta_aleator(self):
+        self.rect.x = random.randint(20, LATIME - 42)
+        self.rect.y = random.randint(60, INALTIME - 42)
+
+    def deseneaza(self):
+        pygame.draw.circle(ecran, (255, 200, 0), self.rect.center, 11)
+        pygame.draw.circle(ecran, (200, 140, 0), self.rect.center, 11, 2)
+
+jucator = Jucator()
+moneda = Moneda()
+inamici = []
+record = 0
+final = False
+
+def inamic_nou():
+    while True:
+        i = Inamic(random.randint(0, LATIME - 34), random.randint(0, INALTIME - 34))
+        distanta = math.hypot(i.rect.centerx - jucator.rect.centerx, i.rect.centery - jucator.rect.centery)
+        if distanta > 150:
+            return i
+
+def joc_nou():
+    global final
+    jucator.reseteaza()
+    moneda.muta_aleator()
+    inamici.clear()
+    inamici.append(inamic_nou())
+    final = False
+
+joc_nou()
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_r and final:
+                joc_nou()
+
+    if not final:
+        jucator.muta(pygame.key.get_pressed())
+        for i in inamici:
+            i.muta()
+            if i.rect.colliderect(jucator.rect):
+                jucator.loveste()
+        if jucator.rect.colliderect(moneda.rect):
+            jucator.scor += 1
+            moneda.muta_aleator()
+            if jucator.scor % 5 == 0:
+                inamici.append(inamic_nou())
+            if jucator.scor % 10 == 0:
+                inamici.append(Vanator(20, 20))
+        if jucator.vieti <= 0:
+            final = True
+            if jucator.scor > record:
+                record = jucator.scor
+
+    ecran.fill((25, 35, 60))
+    moneda.deseneaza()
+    for i in inamici:
+        i.deseneaza()
+    jucator.deseneaza()
+
+    ecran.blit(font.render("Scor: " + str(jucator.scor), True, (255, 255, 255)), (10, 10))
+    ecran.blit(font.render("Vieti: " + str(jucator.vieti), True, (255, 120, 120)), (10, 40))
+    ecran.blit(font.render("Inamici: " + str(len(inamici)), True, (200, 200, 200)), (LATIME - 130, 10))
+    ecran.blit(font.render("Record: " + str(record), True, (255, 220, 0)), (LATIME - 130, 40))
+
+    if final:
+        text = font_mare.render("GAME OVER", True, (255, 90, 90))
+        ecran.blit(text, (LATIME // 2 - text.get_width() // 2, 190))
+        text2 = font.render("Apasa R pentru joc nou", True, (255, 255, 255))
+        ecran.blit(text2, (LATIME // 2 - text2.get_width() // 2, 270))
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** la 10 puncte apare un inamic mov, în colțul stânga-sus, care vine încet spre jucător, în timp ce ceilalți ricoșează. `Vanator(Inamic)` moștenește `__init__` de la `Inamic` și **înlocuiește** doar `muta` și `deseneaza`; restul codului îl tratează ca pe orice alt inamic, pentru că stă în aceeași listă `inamici`.
+
+### 3. __str__
+```python
+import math
+import random
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 500
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Arena monedelor")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 32)
+font_mare = pygame.font.Font(None, 72)
+
+class Jucator:
+    def __init__(self):
+        self.rect = pygame.Rect(0, 0, 36, 36)
+        self.viteza = 6
+        self.reseteaza()
+
+    def reseteaza(self):
+        self.rect.center = (LATIME // 2, INALTIME // 2)
+        self.vieti = 3
+        self.scor = 0
+        self.imun_pana = 0
+
+    def __str__(self):
+        return "Jucator: scor " + str(self.scor) + ", vieti " + str(self.vieti)
+
+    def este_imun(self):
+        return pygame.time.get_ticks() < self.imun_pana
+
+    def loveste(self):
+        if not self.este_imun():
+            self.vieti -= 1
+            self.imun_pana = pygame.time.get_ticks() + 1500
+
+    def muta(self, taste):
+        if taste[pygame.K_LEFT] or taste[pygame.K_a]:
+            self.rect.x -= self.viteza
+        if taste[pygame.K_RIGHT] or taste[pygame.K_d]:
+            self.rect.x += self.viteza
+        if taste[pygame.K_UP] or taste[pygame.K_w]:
+            self.rect.y -= self.viteza
+        if taste[pygame.K_DOWN] or taste[pygame.K_s]:
+            self.rect.y += self.viteza
+        self.rect.clamp_ip(ecran.get_rect())
+
+    def deseneaza(self):
+        if self.este_imun():
+            culoare = (255, 255, 255)
+        else:
+            culoare = (60, 200, 90)
+        pygame.draw.rect(ecran, culoare, self.rect, border_radius=8)
+
+class Inamic:
+    def __init__(self, x, y):
+        self.rect = pygame.Rect(x, y, 34, 34)
+        self.dx = random.choice([-4, -3, 3, 4])
+        self.dy = random.choice([-4, -3, 3, 4])
+
+    def muta(self):
+        self.rect.x += self.dx
+        self.rect.y += self.dy
+        if self.rect.left < 0:
+            self.rect.left = 0
+            self.dx = abs(self.dx)
+        if self.rect.right > LATIME:
+            self.rect.right = LATIME
+            self.dx = -abs(self.dx)
+        if self.rect.top < 0:
+            self.rect.top = 0
+            self.dy = abs(self.dy)
+        if self.rect.bottom > INALTIME:
+            self.rect.bottom = INALTIME
+            self.dy = -abs(self.dy)
+
+    def deseneaza(self):
+        pygame.draw.rect(ecran, (220, 50, 50), self.rect, border_radius=10)
+        pygame.draw.circle(ecran, (255, 255, 255), (self.rect.x + 11, self.rect.y + 14), 5)
+        pygame.draw.circle(ecran, (255, 255, 255), (self.rect.x + 23, self.rect.y + 14), 5)
+
+class Moneda:
+    def __init__(self):
+        self.rect = pygame.Rect(0, 0, 22, 22)
+        self.muta_aleator()
+
+    def muta_aleator(self):
+        self.rect.x = random.randint(20, LATIME - 42)
+        self.rect.y = random.randint(60, INALTIME - 42)
+
+    def deseneaza(self):
+        pygame.draw.circle(ecran, (255, 200, 0), self.rect.center, 11)
+        pygame.draw.circle(ecran, (200, 140, 0), self.rect.center, 11, 2)
+
+jucator = Jucator()
+moneda = Moneda()
+inamici = []
+record = 0
+final = False
+
+def inamic_nou():
+    while True:
+        i = Inamic(random.randint(0, LATIME - 34), random.randint(0, INALTIME - 34))
+        distanta = math.hypot(i.rect.centerx - jucator.rect.centerx, i.rect.centery - jucator.rect.centery)
+        if distanta > 150:
+            return i
+
+def joc_nou():
+    global final
+    jucator.reseteaza()
+    moneda.muta_aleator()
+    inamici.clear()
+    inamici.append(inamic_nou())
+    final = False
+
+joc_nou()
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_r and final:
+                joc_nou()
+
+    if not final:
+        jucator.muta(pygame.key.get_pressed())
+        for i in inamici:
+            i.muta()
+            if i.rect.colliderect(jucator.rect):
+                jucator.loveste()
+        if jucator.rect.colliderect(moneda.rect):
+            jucator.scor += 1
+            moneda.muta_aleator()
+            if jucator.scor % 5 == 0:
+                inamici.append(inamic_nou())
+        if jucator.vieti <= 0:
+            final = True
+            if jucator.scor > record:
+                record = jucator.scor
+            print(jucator)
+
+    ecran.fill((25, 35, 60))
+    moneda.deseneaza()
+    for i in inamici:
+        i.deseneaza()
+    jucator.deseneaza()
+
+    ecran.blit(font.render("Scor: " + str(jucator.scor), True, (255, 255, 255)), (10, 10))
+    ecran.blit(font.render("Vieti: " + str(jucator.vieti), True, (255, 120, 120)), (10, 40))
+    ecran.blit(font.render("Inamici: " + str(len(inamici)), True, (200, 200, 200)), (LATIME - 130, 10))
+    ecran.blit(font.render("Record: " + str(record), True, (255, 220, 0)), (LATIME - 130, 40))
+
+    if final:
+        text = font_mare.render("GAME OVER", True, (255, 90, 90))
+        ecran.blit(text, (LATIME // 2 - text.get_width() // 2, 190))
+        text2 = font.render("Apasa R pentru joc nou", True, (255, 255, 255))
+        ecran.blit(text2, (LATIME // 2 - text2.get_width() // 2, 270))
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** jocul arată la fel; când pierzi ultima viață, în consolă din Thonny apare, de exemplu, „Jucator: scor 7, vieti 0”. `print(jucator)` apelează automat metoda `__str__`, care trebuie să **returneze** textul.
+
+### 4. Clasa MonedaAur
+```python
+import math
+import random
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 500
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Arena monedelor")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 32)
+font_mare = pygame.font.Font(None, 72)
+
+class Jucator:
+    def __init__(self):
+        self.rect = pygame.Rect(0, 0, 36, 36)
+        self.viteza = 6
+        self.reseteaza()
+
+    def reseteaza(self):
+        self.rect.center = (LATIME // 2, INALTIME // 2)
+        self.vieti = 3
+        self.scor = 0
+        self.imun_pana = 0
+
+    def este_imun(self):
+        return pygame.time.get_ticks() < self.imun_pana
+
+    def loveste(self):
+        if not self.este_imun():
+            self.vieti -= 1
+            self.imun_pana = pygame.time.get_ticks() + 1500
+
+    def muta(self, taste):
+        if taste[pygame.K_LEFT] or taste[pygame.K_a]:
+            self.rect.x -= self.viteza
+        if taste[pygame.K_RIGHT] or taste[pygame.K_d]:
+            self.rect.x += self.viteza
+        if taste[pygame.K_UP] or taste[pygame.K_w]:
+            self.rect.y -= self.viteza
+        if taste[pygame.K_DOWN] or taste[pygame.K_s]:
+            self.rect.y += self.viteza
+        self.rect.clamp_ip(ecran.get_rect())
+
+    def deseneaza(self):
+        if self.este_imun():
+            culoare = (255, 255, 255)
+        else:
+            culoare = (60, 200, 90)
+        pygame.draw.rect(ecran, culoare, self.rect, border_radius=8)
+
+class Inamic:
+    def __init__(self, x, y):
+        self.rect = pygame.Rect(x, y, 34, 34)
+        self.dx = random.choice([-4, -3, 3, 4])
+        self.dy = random.choice([-4, -3, 3, 4])
+
+    def muta(self):
+        self.rect.x += self.dx
+        self.rect.y += self.dy
+        if self.rect.left < 0:
+            self.rect.left = 0
+            self.dx = abs(self.dx)
+        if self.rect.right > LATIME:
+            self.rect.right = LATIME
+            self.dx = -abs(self.dx)
+        if self.rect.top < 0:
+            self.rect.top = 0
+            self.dy = abs(self.dy)
+        if self.rect.bottom > INALTIME:
+            self.rect.bottom = INALTIME
+            self.dy = -abs(self.dy)
+
+    def deseneaza(self):
+        pygame.draw.rect(ecran, (220, 50, 50), self.rect, border_radius=10)
+        pygame.draw.circle(ecran, (255, 255, 255), (self.rect.x + 11, self.rect.y + 14), 5)
+        pygame.draw.circle(ecran, (255, 255, 255), (self.rect.x + 23, self.rect.y + 14), 5)
+
+class Moneda:
+    def __init__(self):
+        self.rect = pygame.Rect(0, 0, 22, 22)
+        self.valoare = 1
+        self.muta_aleator()
+
+    def muta_aleator(self):
+        self.rect.x = random.randint(20, LATIME - 42)
+        self.rect.y = random.randint(60, INALTIME - 42)
+
+    def deseneaza(self):
+        pygame.draw.circle(ecran, (255, 200, 0), self.rect.center, 11)
+        pygame.draw.circle(ecran, (200, 140, 0), self.rect.center, 11, 2)
+
+class MonedaAur(Moneda):
+    def __init__(self):
+        super().__init__()
+        self.valoare = 3
+
+    def deseneaza(self):
+        pygame.draw.circle(ecran, (255, 120, 0), self.rect.center, 14)
+        pygame.draw.circle(ecran, (255, 230, 80), self.rect.center, 9)
+
+jucator = Jucator()
+moneda = Moneda()
+inamici = []
+record = 0
+final = False
+
+def inamic_nou():
+    while True:
+        i = Inamic(random.randint(0, LATIME - 34), random.randint(0, INALTIME - 34))
+        distanta = math.hypot(i.rect.centerx - jucator.rect.centerx, i.rect.centery - jucator.rect.centery)
+        if distanta > 150:
+            return i
+
+def joc_nou():
+    global final
+    jucator.reseteaza()
+    moneda.muta_aleator()
+    inamici.clear()
+    inamici.append(inamic_nou())
+    final = False
+
+joc_nou()
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_r and final:
+                joc_nou()
+
+    if not final:
+        jucator.muta(pygame.key.get_pressed())
+        for i in inamici:
+            i.muta()
+            if i.rect.colliderect(jucator.rect):
+                jucator.loveste()
+        if jucator.rect.colliderect(moneda.rect):
+            jucator.scor += moneda.valoare
+            if random.randint(1, 4) == 1:
+                moneda = MonedaAur()
+            else:
+                moneda = Moneda()
+            if jucator.scor // 5 >= len(inamici):
+                inamici.append(inamic_nou())
+        if jucator.vieti <= 0:
+            final = True
+            if jucator.scor > record:
+                record = jucator.scor
+
+    ecran.fill((25, 35, 60))
+    moneda.deseneaza()
+    for i in inamici:
+        i.deseneaza()
+    jucator.deseneaza()
+
+    ecran.blit(font.render("Scor: " + str(jucator.scor), True, (255, 255, 255)), (10, 10))
+    ecran.blit(font.render("Vieti: " + str(jucator.vieti), True, (255, 120, 120)), (10, 40))
+    ecran.blit(font.render("Inamici: " + str(len(inamici)), True, (200, 200, 200)), (LATIME - 130, 10))
+    ecran.blit(font.render("Record: " + str(record), True, (255, 220, 0)), (LATIME - 130, 40))
+
+    if final:
+        text = font_mare.render("GAME OVER", True, (255, 90, 90))
+        ecran.blit(text, (LATIME // 2 - text.get_width() // 2, 190))
+        text2 = font.render("Apasa R pentru joc nou", True, (255, 255, 255))
+        ecran.blit(text2, (LATIME // 2 - text2.get_width() // 2, 270))
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** din când în când, în loc de moneda galbenă apare una de aur, mai mare, cu centru deschis; prinsă, dă 3 puncte. `MonedaAur(Moneda)` apelează `super().__init__()`, apoi schimbă `valoare`; are și o metodă `deseneaza` proprie. Scorul se adună cu `moneda.valoare`, deci funcționează la fel pentru ambele clase. Inamicii noi apar din 5 în 5 puncte (`scor // 5 >= len(inamici)`), chiar dacă scorul sare peste un multiplu de 5.
+
+---
 ## Ce urmează — Lecția 8
 **Fișiere și try/except**: învățăm să **salvăm recordul într-un fișier**, ca să rămână și după ce închizi jocul.

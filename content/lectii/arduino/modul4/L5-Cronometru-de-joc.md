@@ -298,7 +298,7 @@ void loop() {
 - [ ] Simularea face tot ce scrie în „Complet”  
 
 ### 7) Proiectul 2 — Cronometru de șah
-Doi jucători au **60 de secunde fiecare**. Butonul **A** aparține jucătorului 1, butonul **B** jucătorului 2. Când îți termini mutarea, apeși **butonul tău**, iar ceasul adversarului pornește. Cine rămâne primul fără timp pierde, iar buzzerul sună. Ținând ambele butoane apăsate, jocul se resetează. Circuitul rămâne cel de la proiectul 1.
+Doi jucători au **60 de secunde fiecare**. Butonul **A** aparține jucătorului 1, butonul **B** jucătorului 2. Când îți termini mutarea, apeși **butonul tău**, iar ceasul adversarului pornește. Cine rămâne primul fără timp pierde, iar buzzerul sună. Ținând ambele butoane apăsate, jocul se resetează (dacă simulatorul nu te lasă să ții două butoane odată, repornește simularea). Circuitul rămâne cel de la proiectul 1.
 
 ```cpp
 #include <LiquidCrystal.h>
@@ -359,8 +359,8 @@ void sfarsit(int pierde) {
   lcd.print("Pierde J");
   lcd.print(pierde);
 
-  // așteptăm apăsarea ambelor butoane
-  while (!(digitalRead(BTN_A) == LOW && digitalRead(BTN_B) == LOW)) {
+  // așteptăm apăsarea oricărui buton
+  while (digitalRead(BTN_A) == HIGH && digitalRead(BTN_B) == HIGH) {
   }
   delay(300);
   reset();
@@ -416,7 +416,7 @@ void loop() {
 | 1 | Apeși A | Săgeata trece la J2, ceasul lui J2 scade |
 | 2 | Apeși A din nou, cât e rândul lui J2 | Nimic, butonul nu contează |
 | 3 | Apeși B | Săgeata trece la J1 |
-| 4 | Lași un ceas să ajungă la zero | „Timp expirat!”, buzzer, cine pierde |
+| 4 | Lași un ceas să ajungă la zero | „Timp expirat!”, buzzer, cine pierde; apeși orice buton ca să începi din nou |
 | 5 | Ții ambele butoane apăsate | Jocul se resetează la 60 de secunde |
 
 **Gata când:**  

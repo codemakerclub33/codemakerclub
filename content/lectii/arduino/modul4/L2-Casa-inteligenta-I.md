@@ -211,7 +211,7 @@ void afiseaza() {
     lcd.print(map(viteza, 0, 255, 0, 100));
     lcd.print(" %   ");
   } else {
-    lcd.print("Ventilator MANUAL");
+    lcd.print("Vent. MANUAL    ");
     lcd.setCursor(0, 1);
     lcd.print(ventilatorManual ? "pornit (tine 1s)" : "oprit  (tine 1s)");
   }

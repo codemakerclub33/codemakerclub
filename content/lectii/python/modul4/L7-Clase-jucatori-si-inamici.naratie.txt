@@ -1,21 +1,27 @@
-Lecția șapte din Modulul patru. Clase: jucători și inamici.
+Lecția șapte din Modulul patru. Arena monedelor.
 
 Astăzi înveți să faci obiecte după o rețetă. Proiectul se numește Arena monedelor. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P patru, linie jos, L șapte, punct P Y.
 
-Obiectivul. La final scrii clase cu init, atribute și metode, creezi mai multe obiecte din aceeași clasă, ții obiecte în liste, folosești str și o clasă copil, adică moștenire, și construiești un joc cu clase. Minim: o clasă și două obiecte create din ea. Complet: minim, plus clase pentru jucător, monede și inamici, și Arena monedelor.
+Ce facem azi. La final scrii clase cu init, atribute și metode, creezi mai multe obiecte din aceeași clasă, ții obiecte în liste, folosești o clasă copil, adică moștenire, și construiești un joc cu clase. Până acum, fiecare lucru din joc era o grămadă de variabile. Clasa este o rețetă după care faci oricâte obiecte vrei: un jucător, o sută de inamici, o mie de monede. Aproape toate jocurile reale sunt scrise așa.
+
+Instrucțiuni noi azi. Class începe o clasă, adică rețeta. Funcția init rulează la crearea obiectului, iar self înseamnă obiectul acesta. Un atribut este o dată care aparține obiectului, de exemplu self punct vieți. O metodă este o funcție a obiectului, pe care o apelezi cu punct. Creezi un obiect scriind numele clasei, cu valorile între paranteze. O clasă copil moștenește tot de la clasa părinte, iar super apelează init al părintelui.
 
 Primul pas. Prima clasă. Clasa este rețeta, obiectul este lucrul făcut după rețetă. De exemplu, clasa Câine, cu nume și vârstă. Funcția init rulează la crearea obiectului, iar self înseamnă obiectul acesta. Metodele sunt funcții în clasă, iar atributele sunt datele obiectului.
 
-Al doilea pas. Clase în Pygame. Jucătorul este un obiect, cu poziție, viteză și scor. Monedele sunt obiecte într-o listă, iar inamicii sar de pereți. Picăturile de ploaie sunt tot obiecte, făcute după aceeași clasă.
+Al doilea pas. Clase în Pygame. Jucătorul este un obiect, cu poziție, viteză și scor. Monedele sunt obiecte într-o listă, iar inamicii sar de pereți.
 
-Al treilea pas. Mai multe despre clase. Metoda str spune cum se afișează obiectul. Moștenirea înseamnă o clasă copil: ea primește tot ce are clasa părinte și adaugă lucruri noi, de exemplu un inamic rapid care moștenește clasa Inamic.
+Al treilea pas. Clase copil. Moștenirea înseamnă o clasă copil: ea primește tot ce are clasa părinte și adaugă lucruri noi, sau le schimbă pe cele vechi. De exemplu, un inamic rapid moștenește clasa Inamic.
 
-Al patrulea pas. Mini-proiect. Arena monedelor: un jucător, monede și inamici, toate făcute cu clase.
+Al patrulea pas. Mini-proiect. Arena monedelor: un jucător, monede și inamici, toate făcute cu clase. La fiecare cinci puncte apare un inamic nou.
 
-Greșeli frecvente. Type Error la crearea obiectului: lipsește self sau un parametru. Toate obiectele se mișcă la fel: au aceeași poziție la creare. Atributul nu este găsit: nu l-ai creat în init. Ai uitat self în fața unui atribut.
+Greșeli frecvente. Type Error la crearea obiectului: lipsește self sau un parametru. Toate obiectele se mișcă la fel: au aceleași valori la creare. Atributul nu este găsit: nu l-ai creat în init, sau ai scris numele cu altă literă. Ai uitat self în fața unui atribut.
 
-Proiectul de azi. Arena monedelor. Minim înseamnă o clasă și două obiecte. Complet înseamnă clase pentru jucător, monede și inamici.
+Proiectul de azi. Arena monedelor. Minim înseamnă o clasă și două obiecte create din ea. Complet înseamnă jocul tău, cu clasele jucător, inamic și monedă, o clasă bonus, un inamic mai rapid și un meniu înainte de joc.
+
+Provocare, trei stele. Arena monedelor, ediția de luptă. Doar dacă ai terminat varianta completă. Adaugi în același program o clasă Glont: la tasta spațiu jucătorul trage în sus, iar un inamic lovit dispare, apare altul în alt loc și primești două puncte. O clasă Vânător, copil al clasei Inamic, care urmărește jucătorul și apare la fiecare zece puncte. Metoda str la jucător, ca să îl afișezi în consolă când jocul se termină. Și o clasă Monedă de aur, copil al clasei Monedă, care valorează trei puncte.
 
 Recapitulare. Clasa este rețeta, obiectul este lucrul făcut după ea. Init rulează la crearea obiectului, iar self este obiectul acesta. Metodele sunt funcții în clasă, atributele sunt datele. Obiectele se păstrează în liste. Str spune cum se afișează obiectul. Moștenirea adaugă lucruri unei clase existente.
+
+Ce urmează. În lecția următoare învățăm să salvăm recordul într-un fișier, ca să rămână și după ce închizi jocul.
 
 Succes în arenă.

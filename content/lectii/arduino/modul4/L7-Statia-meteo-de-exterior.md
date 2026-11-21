@@ -301,10 +301,11 @@ void afiseaza() {
     lcd.setCursor(0, 1);
     lcd.print("                ");
   } else if (pagina == 2) {
-    lcd.print("Min ");
+    lcd.print("Mn ");
     lcd.print(minim(), 1);
-    lcd.print(" Max ");
+    lcd.print(" Mx ");
     lcd.print(maxim(), 1);
+    lcd.print(" ");
     lcd.setCursor(0, 1);
     lcd.print("Medie: ");
     lcd.print(medie(), 1);
@@ -353,7 +354,7 @@ void loop() {
 |--------|----------|
 | 0 | temperatură + lumină |
 | 1 | umiditate sol |
-| 2 | min / max / medie |
+| 2 | `Mn` (minim), `Mx` (maxim) și medie |
 | 3 | grafic cu bare |
 
 Măsurătorile intră în istoric **la 2 secunde**, iar ecranul se actualizează **la 0,5 secunde**. LED-ul de alertă se aprinde peste 30 °C.

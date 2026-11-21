@@ -1,21 +1,27 @@
-Lecția nouă din Modulul patru. Proiect final: jocul meu.
+Lecția nouă din Modulul patru. Jocul meu.
 
-Astăzi construiești un joc mare din piese mici, apoi începi propriul tău joc. Proiectul se numește Apărătorii galaxiei, iar apoi Jocul meu. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P patru, linie jos, L nouă, punct P Y.
+Astăzi construiești un joc mare din piese mici, apoi începi propriul tău joc. Proiectul se numește Jocul meu, iar modelul este Apărătorii galaxiei. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P patru, linie jos, L nouă, punct P Y.
 
-Obiectivul. La final ai înțeles cum se construiește un joc din piese, clase și funcții, ai scris un joc cu gloanțe, obstacole, explozii, meniu, niveluri și record, și ai început propriul tău joc. Minim: un joc cu meniu, scor, vieți și ecran de final. Complet: minim, plus clase, niveluri, explozii și record.
+Ce facem azi. La final ai construit un joc complet din piese mici, Apărătorii galaxiei, cu gloanțe, meteoriți, explozii, meniu, niveluri, scut și record, și ai început propriul tău joc. Un joc mare nu se scrie dintr-o suflare. Se construiește din piese mici, clase, funcții și un dicționar de stare, adăugate pe rând și testate la fiecare pas.
 
-Primul pas. Piesele jocului. Scheletul unui joc: meniu, joc, pauză și final. Cerul cu stele care se mișcă. Gloanțele, cu ritm de tragere. Meteoriții, care cad din cer.
+Instrucțiuni noi azi. Un dicționar cu funcții alege ecranul potrivit stării jocului și îl apelează. For g in gloante, cu paranteze pătrate și două puncte, parcurge o copie, ca să poți scoate elemente din listă. Clasa Particula și random punct uniform fac exploziile, cu bucățele mici care zboară în toate părțile. Clasa Buton și collidepoint fac un buton pe care se poate da click. O listă cu for și if, între paranteze pătrate, păstrează doar elementele care trec de condiție, iar cu două puncte între paranteze schimbi lista existentă. O funcție dificultate întoarce setările fiecărui nivel. Scut pana este momentul de acum plus durata scutului, deci scutul ține doar un timp limitat.
 
-Al doilea pas. Lovituri, explozii, butoane. Un glonț care lovește un meteorit îl distruge. Exploziile se fac cu particule, bucățele mici care zboară în toate părțile. Butoanele se fac cu collidepoint. Dificultatea crește cu nivelul: pauza dintre meteoriți se micșorează. Scutul ține doar un timp limitat.
+Primul pas. Piesele jocului. Scheletul unui joc are patru stări: meniu, joc, pauză și final. Meteoriții sunt obiecte cu rază și viteză proprii, care cad din cer. Stelele care se mișcă și gloanțele cu ritm de tragere le găsești la exemplele pentru acasă.
 
-Al treilea pas. Jocul întreg. Pui totul laolaltă. Starea jocului este într-un dicționar. Clasele descriu jucătorul, gloanțele, meteoriții și exploziile.
+Al doilea pas. Lovituri, explozii, butoane. Un glonț care lovește un meteorit îl distruge. Exploziile se fac cu particule. Butoanele se fac cu collidepoint. Dificultatea crește cu nivelul: pauza dintre meteoriți se micșorează. Scutul ține doar un timp limitat.
 
-Al patrulea pas. Jocul meu. Faci un joc al tău, cu meniu, scor, vieți, ecran final, cel puțin o clasă și un record salvat.
+Al treilea pas. Jocul întreg. Apărătorii galaxiei pune totul laolaltă. Starea jocului este într-un dicționar. Clasele descriu nava, gloanțele, meteoriții, particulele și butoanele.
 
-Greșeli frecvente. Eroare când ștergi din listă în timp ce o parcurgi: parcurgi o copie, cu lista între paranteze pătrate cu două puncte. Scutul nu se termină: nu verifici timpul. Jocul se blochează la meniu: butoanele nu verifică click-ul.
+Al patrulea pas. Jocul meu. Alegi un tip de joc sau inventezi unul. Pornești de la schelet sau de la Apărătorii galaxiei. Adaugi piesele pe rând și rulezi jocul după fiecare piesă. Dacă ceva nu merge, citești ultima linie a erorii.
 
-Proiectul de azi. Jocul meu. Minim înseamnă meniu, scor, vieți și final. Complet înseamnă clase, niveluri, explozii și record.
+Greșeli frecvente. Eroare când scoți din listă în timp ce o parcurgi: parcurgi o copie. Același obiect scos de două ori: pui break după prima lovitură. Orb este None și îl folosești: verifici întâi. Se trag zeci de gloanțe pe secundă: nu ai ritm de tragere. Recordul nu se păstrează: ai uitat să-l salvezi.
 
-Recapitulare. Un joc mare se construiește din piese mici: clase, funcții, un dicționar de stare. Stările organizează ecranele. Scoatem elemente din liste parcurgând o copie. Ritmul de tragere și scutul folosesc timpul, cu get ticks.
+Proiectul de azi. Jocul meu. Minim înseamnă un joc cu meniu, scor, vieți și ecran de final. Complet înseamnă minim, plus cel puțin două clase, niveluri, record salvat în fișier și un element inventat de tine.
+
+Provocare, trei stele. Apărătorii galaxiei, versiunea completă. Doar dacă ai terminat varianta completă. Scutul nu mai scade cât timp jocul este în pauză, iar inelul lui rămâne pe ecran. Un buton Reguli în meniu duce la un ecran cu regulile și un buton Înapoi. Un top cinci, păstrat în fișier, apare în meniu. Iar nava și meteoriții devin imagini desenate pe o suprafață transparentă, cu meteoriții redimensionați.
+
+Recapitulare. Un joc mare se construiește din piese mici: clase, funcții și un dicționar de stare. Stările organizează ecranele. Scoatem elemente din liste parcurgând o copie. Ritmul de tragere și scutul folosesc get ticks. Dificultatea crește dintr-o singură funcție, iar recordul se salvează într-un fișier.
+
+Ce urmează. În ultima lecție prezentăm jocurile, jucăm jocurile colegilor și facem testul final al modulului și al cursului.
 
 Succes cu jocul tău.

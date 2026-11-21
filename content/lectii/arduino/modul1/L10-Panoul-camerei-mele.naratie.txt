@@ -6,13 +6,13 @@ Ce facem azi. Pui la un loc proiectele tale din modul, ca o expoziție: Lampa cu
 
 Instrucțiuni noi azi. Switch alege un bloc de cod în funcție de valoare, iar fiecare caz se termină cu break. Procentul dă restul împărțirii și păstrează un număr într-un interval. Random de două sute cincizeci și șase dă o valoare de la zero la două sute cincizeci și cinci. Funcțiile culoare, dingDong și bip fac codul ușor de citit.
 
-Primul pas. Conexiuni. LED-ul R G B merge pe pinii nouă, zece și șase, cu rezistoare, iar piezo pe pinul opt. Butonul de mod este pe pinul doi, iar butonul de sonerie pe pinul patru. Potențiometrul și buzzerul au pinii lor, ca în lecțiile anterioare.
+Primul pas. Conexiuni. LED-ul R G B merge pe pinii nouă, zece și șase, cu rezistoare, iar piezo pe pinul opt. Butonul de mod este pe pinul doi, iar butonul de sonerie pe pinul patru. Potențiometrul are mijlocul la A zero, iar capetele la cinci volți și GND.
 
 Al doilea pas. Schema modurilor. Modul zero: Lampa cu reglaj din lecția cinci, alb, cu luminozitatea dată de potențiometru. Modul unu: Lampa colorată din lecția șase, cu culoarea aleasă de un singur potențiometru, nu de trei ca atunci. Modul doi: Soneria de la ușă din lecția șapte, unde al doilea buton sună ding dong, iar lampa se face verde cât sună. Modul trei, la Complet: petrecere.
 
 Al treilea pas. Minim. Ții minte modul într-o variabilă. La fiecare apăsare pe butonul de mod crești modul cu unu, iar cu operatorul procent îl păstrezi în interval, ca după ultimul mod să revii la zero. Cu switch alegi ce face panoul în fiecare mod. Soneria este o funcție, dingDong, pe care o chemi din modul doi. Nu uita break la fiecare caz.
 
-Al patrulea pas, pentru Complet. Petrecerea: culori aleatorii, cu random, și un bip scurt, într-o funcție, la fiecare schimbare. Funcțiile culoare și bip fac codul ușor de citit.
+Al patrulea pas, pentru Complet. Petrecerea: culori aleatorii, cu random, și un bip scurt, într-o funcție, la fiecare schimbare. În modul petrecere, delay poate dura până la șase sute de milisecunde, deci ține apăsat butonul de mod până se schimbă modul. Funcțiile culoare și bip fac codul ușor de citit.
 
 Al cincilea pas. Prezentarea. Spune colegilor ce face panoul tău, din ce lecții vine fiecare mod și ce a fost cel mai greu. Două minute sunt de ajuns.
 
@@ -22,7 +22,11 @@ Proiectul de azi. Panoul de lumini. Minim înseamnă trei moduri: lampa, lampa c
 
 Provocare, trei stele. Moduri noi. Adaugi un al cincilea mod, respirație, în care albul crește și scade. Apoi un al șaselea mod, semafor, cu roșu, galben și verde, pe rând.
 
+Verificare finală, Modulul unu. Răspunde la cele cinci întrebări: ce face pin Mode cu opt și output, ce înseamnă input pull up, care pini permit analog Write, ce face map și ce este un tablou.
+
 Recapitulare. Un proiect înseamnă mai multe piese care lucrează împreună. Poți aduna proiecte mai vechi ca moduri într-un singur program. Switch alege între moduri. Procentul păstrează un număr într-un interval. Funcțiile fac codul ușor de citit.
+
+Quiz final al modulului. Alege un mod din panoul tău, adică una dintre lecțiile cinci, șase sau șapte, și explică-l unui coleg într-un minut.
 
 Ce urmează. În Modulul doi, Senzori, citești lumina, temperatura și distanța.
 

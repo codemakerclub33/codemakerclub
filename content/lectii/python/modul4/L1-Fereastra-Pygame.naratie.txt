@@ -1,8 +1,10 @@
-Lecția unu din Modulul patru. Fereastra Pygame.
+Lecția unu din Modulul patru. Ecranul meu de start.
 
 Astăzi începem să facem jocuri adevărate cu Pygame. Proiectul se numește Ecranul meu de start. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P patru, linie jos, L unu, punct P Y.
 
-Obiectivul. La final ai Pygame instalat, deschizi o fereastră, o ții deschisă cu bucla jocului, o închizi corect, cu butonul X sau cu tasta Escape, schimbi culoarea fundalului, citești mărimea ferestrei și scrii text pe ecran. Minim: o fereastră care se deschide, are o culoare și se închide corect. Complet: minim, plus schimbare de culoare la tastă și la click, text și un ecran de start.
+Ce facem azi. La final ai Pygame instalat, deschizi o fereastră, o ții deschisă cu bucla jocului, o închizi corect, cu butonul X sau cu tasta Escape, schimbi culoarea fundalului, citești tastele și scrii text pe ecran. Orice joc are aceeași structură: o buclă care se repetă de zeci de ori pe secundă. La fiecare repetare, jocul citește ce faci tu, schimbă lumea jocului și desenează totul din nou. Azi construim acest schelet, iar în lecțiile următoare îl umplem cu personaje.
+
+Instrucțiuni noi azi. Init pornește Pygame, iar display set mode creează fereastra, cu lățime și înălțime. Bucla jocului este un while care, la fiecare repetare, citește evenimentele. Fill umple ecranul cu o culoare, iar flip arată pe ecran cadrul desenat. KEYDOWN apare când apeși o tastă. Tick limitează jocul la șaizeci de cadre pe secundă. Render creează textul, iar blit îl lipește pe ecran.
 
 Primul pas. Instalăm Pygame. Pygame nu vine odată cu Python, deci îl instalăm o singură dată, din Thonny, din meniul pentru pachete. Apoi verifici că funcționează, cu un mic program.
 
@@ -10,20 +12,24 @@ Al doilea pas. Prima fereastră. Faci import pygame, pornești cu init și creez
 
 Al treilea pas. Culori. Culoarea este un grup de trei numere, roșu, verde, albastru, fiecare de la zero la două sute cincizeci și cinci. Alb este două sute cincizeci și cinci de trei ori, negru este zero de trei ori.
 
-Al patrulea pas. Evenimente. Când închizi fereastra apare evenimentul QUIT. Când apeși o tastă apare KEYDOWN, iar la click apare MOUSEBUTTONDOWN. Poți închide jocul și cu tasta Escape.
+Al patrulea pas. Evenimente. Când închizi fereastra apare evenimentul QUIT. Când apeși o tastă apare KEYDOWN. Poți închide jocul și cu tasta Escape.
 
-Al cincilea pas. Mărime și viteză. Poți afla cât este de mare fereastra. Cu un ceas limitezi jocul la un număr de cadre pe secundă, de exemplu șaizeci.
+Al cincilea pas. Coordonate și viteză. În Pygame, punctul zero zero este în colțul din stânga sus. Pe orizontală, x crește spre dreapta, iar pe verticală, y crește în jos, invers față de țestoasa din modulul trei. Cu un ceas limitezi jocul la un număr de cadre pe secundă, de exemplu șaizeci.
 
-Al șaselea pas. Interacțiuni simple. Culoarea se schimbă la o tastă sau la click.
+Al șaselea pas. Interacțiuni simple. Culoarea se schimbă când apeși o tastă.
 
 Al șaptelea pas. Text pe ecran. Alegi un font, creezi textul și îl lipești pe ecran.
 
-Al optulea pas. Mini-proiect. Ecranul meu de start, cu titlul jocului.
+Al optulea pas. Mini-proiect. Ecranul meu de start, cu titlul jocului, o ramă, text și culori care se schimbă la tastă.
 
 Greșeli frecvente. Fereastra nu se închide: nu tratezi evenimentul QUIT. Ecranul rămâne negru: ai uitat flip. Pygame nu se găsește: nu este instalat. Jocul merge prea repede: lipsește limitarea cadrelor pe secundă.
 
-Proiectul de azi. Ecranul meu de start. Minim înseamnă o fereastră cu culoare. Complet înseamnă interacțiuni și text.
+Proiectul de azi. Ecranul meu de start. Minim înseamnă o fereastră cu culoare, care se închide corect. Complet înseamnă ecranul de start al jocului tău, cu titlu, cel puțin cinci culori de fundal și numărul culorii afișat.
 
-Recapitulare. Structura unui joc este init, apoi bucla cu evenimente, actualizare, desenare și flip, apoi quit. Set mode creează fereastra. Culoarea este un grup de trei numere. QUIT apare când închizi fereastra.
+Provocare, trei stele. Ecranul de start devine interactiv. Doar dacă ai terminat varianta completă. Adaugi în același program un fundal care se schimbă singur la fiecare două secunde, textul cu coordonatele mouse-ului, afișat pe ecran, un steag din trei dreptunghiuri colorate și o fereastră mai mare, la care schimbi doar constantele pentru lățime și înălțime, iar textele rămân centrate.
+
+Recapitulare. Structura unui joc este init, apoi bucla cu evenimente, actualizare, desenare și flip, apoi quit. Set mode creează fereastra. Culoarea este un grup de trei numere. QUIT apare când închizi fereastra. Punctul zero zero este în stânga sus, iar y crește în jos.
+
+Ce urmează. În lecția următoare desenăm forme și imagini: dreptunghiuri, cercuri și linii, cu care construim un orășel.
 
 Succes cu prima fereastră.

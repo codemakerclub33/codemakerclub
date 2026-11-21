@@ -331,7 +331,7 @@ void setup() {
 }
 
 void loop() {
-  mesaj("Arena reflexelor", "Apasa pentru start");
+  mesaj("Arena reflexelor", "Apasa pentru joc");
   while (digitalRead(BUTON) == HIGH) {
   }
   asteaptaEliberare();

@@ -1,21 +1,27 @@
-Lecția opt din Modulul patru. Fișiere și try except: salvăm recordul.
+Lecția opt din Modulul patru. Click rapid.
 
 Astăzi jocul tău își amintește scorurile, chiar și după ce îl închizi. Proiectul se numește Click rapid. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P patru, linie jos, L opt, punct P Y.
 
-Obiectivul. La final scrii și citești fișiere text cu with open, adaugi linii la un fișier existent, tratezi erorile cu try și except, salvezi date cu json, păstrezi un record și un top și construiești un joc care își amintește scorurile. Minim: salvezi și citești un record dintr-un fișier. Complet: minim, plus topul scorurilor și jocul Click rapid.
+Ce facem azi. La final scrii și citești fișiere text cu with open, adaugi linii la un fișier existent, tratezi erorile cu try și except, păstrezi un record și un top și construiești un joc care își amintește scorurile. Variabilele trăiesc doar cât rulează programul. Ca să păstrăm lucrurile, le scriem într-un fișier. Iar dacă fișierul nu există sau conține prostii, programul nu trebuie să se strice.
+
+Instrucțiuni noi azi. With open, cu litera w, deschide fișierul pentru scris și șterge ce era înainte. Litera a deschide pentru adăugat, la sfârșit. Litera r citește fișierul, linie cu linie, cu un for. Try și except prind o eroare, de exemplu fișierul nu există. Strip și split taie o linie în bucăți, după virgulă. Sort cu reverse sortează descrescător, iar cu paranteze pătrate, două puncte, cinci, păstrezi primele cinci.
 
 Primul pas. Fișiere. Variabilele dispar când programul se închide, dar fișierele rămân. Scrii with open, numele fișierului și litera w, pentru scriere. Litera a adaugă la sfârșit, iar litera r citește. With închide fișierul singur. În fișiere scrii text, iar la citire transformi cu int.
 
 Al doilea pas. Try și except. Dacă fișierul nu există, programul ar da eroare. Cu try pui codul riscant, iar cu except prinzi eroarea și programul merge mai departe. Aceeași metodă salvează programul când utilizatorul scrie text în loc de număr. Scrii o funcție care citește recordul în siguranță: dacă fișierul lipsește, recordul este zero.
 
-Al treilea pas. Record, top, json. Păstrezi recordul: la final compari scorul cu recordul și, dacă este mai mare, îl salvezi. Topul scorurilor se păstrează într-o listă sortată. Else se execută dacă nu a fost eroare, iar finally se execută oricum. Cu json salvezi un dicționar întreg într-un fișier și îl citești înapoi.
+Al treilea pas. Record și top. Păstrezi recordul: la final compari scorul cu recordul și, dacă este mai mare, îl salvezi. Topul scorurilor se păstrează într-o listă sortată, din care ții doar primele cinci.
 
-Al patrulea pas. Mini-proiect. Click rapid: jocul numără click-urile, iar la final salvează recordul.
+Al patrulea pas. Mini-proiect. Click rapid: ai cincisprezece secunde să dai click pe țintă. La final se afișează un top cinci, salvat într-un fișier. Dacă fișierul lipsește sau este stricat, jocul pornește cu un top gol, fără erori.
 
 Greșeli frecvente. File Not Found Error: fișierul nu există, deci folosești try. Value Error: textul din fișier nu este număr. Recordul nu se salvează: ai uitat să scrii în fișier. Fișierul se șterge: ai deschis cu w în loc de a.
 
-Proiectul de azi. Click rapid. Minim înseamnă un record salvat și citit. Complet înseamnă top și jocul complet.
+Proiectul de azi. Click rapid. Minim înseamnă un record salvat și citit. Complet înseamnă jocul tău, cu tratarea erorilor, top cinci, o țintă care se micșorează, o țintă rea și mesajul record nou.
+
+Provocare, trei stele. Click rapid, versiunea cu memorie. Doar dacă ai terminat varianta completă. Adaugi în același program data fiecărui scor, afișată lângă nume. Pe ecranul final, tastele unu, doi și trei aleg durata rundei, zece, cincisprezece sau treizeci de secunde, salvată cu json și citită la pornire. Tasta D șterge topul, dar abia la a doua apăsare, pentru că prima cere confirmarea. Și un număr de runde jucate, păstrat cu json între porniri și afișat pe ecranul final.
 
 Recapitulare. Fișierele rămân după ce programul se închide. With open scrie, adaugă sau citește și se închide singur. Try și except prind erorile. Json salvează dicționare. Recordul se compară cu scorul și se salvează.
+
+Ce urmează. În lecția următoare începem să construim un joc complet, cu tot ce am învățat în acest modul.
 
 Succes cu recordul.

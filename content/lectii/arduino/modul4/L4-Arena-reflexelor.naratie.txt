@@ -16,7 +16,7 @@ Al patrulea pas. Minim, o singură rundă. După pauza aleatorie aprinzi LED-ul 
 
 Al cincilea pas, pentru Complet. Cinci runde, start greșit și record. O funcție rulează o rundă și returnează timpul, sau minus unu dacă ai apăsat prea devreme. Runda greșită nu se numără. La final calculezi media și o compari cu recordul păstrat în memorie.
 
-Al șaselea pas. Cum arată reflexele tale. Sub două sute de milisecunde ești super rapid, între două sute și trei sute foarte bun, între trei sute și patru sute cincizeci normal.
+Al șaselea pas. Cum arată reflexele tale. Sub două sute de milisecunde ești super rapid, între două sute și trei sute foarte bun, între trei sute și patru sute cincizeci normal, iar peste patru sute cincizeci mai încearcă.
 
 Al șaptelea pas. Proiectul doi, arena cu vieți. Ai trei vieți, iar la început ai opt sute de milisecunde să apeși după ce se aprinde LED-ul. După fiecare rundă reușită primești un punct, iar limita scade cu cincizeci de milisecunde, dar nu sub trei sute. Pierzi o viață dacă apeși prea devreme sau dacă nu apeși la timp. Când nu mai ai vieți, jocul se termină și afișează scorul. Funcția de rundă are acum trei rezultate: timpul, minus unu pentru prea devreme sau minus doi pentru prea târziu.
 

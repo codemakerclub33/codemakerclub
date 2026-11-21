@@ -276,6 +276,7 @@ void loop() {
 - `intrus` ține minte că s-a declanșat alarma, chiar dacă omul pleacă; se oprește doar la **dezarmare**.  
 - Sirena schimbă tonul după `millis()`: `900 + (millis() / 5) % 600` urcă între 900 și 1500 Hz.
 
+- Pentru ca programul să încapă într-o singură lecție, partea I apare aici simplificată: 2 pagini pe LCD și ventilator doar după temperatură. Modul manual și alerta de căldură din L2 le poți adăuga tu, ca funcții.  
 - Ușa folosește aceeași idee ca bariera din Modulul 3: o stare (`usaDeschisa`) și `millis()` pentru cele 3 secunde, fără `delay`.
 
 **Gata când:**  

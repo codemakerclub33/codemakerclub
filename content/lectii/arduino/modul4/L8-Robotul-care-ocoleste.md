@@ -60,8 +60,8 @@ Fiecare roată are propriul motor. Fără mers înapoi, **virezi** oprind **o si
 | oprit | oprit | stă |
 
 **Gata când:**  
-- [ ] Am încercat fiecare situație din listă  
-- [ ] Am notat ce nu a mers și am corectat  
+- [ ] Pot spune ce roată opresc ca să viruez la stânga  
+- [ ] Pot spune ce roată opresc ca să viruez la dreapta  
 
 ### 3) Conexiuni
 

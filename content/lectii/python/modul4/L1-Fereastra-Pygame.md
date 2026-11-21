@@ -1,4 +1,5 @@
-# LECȚIA 1 — Fereastra Pygame
+# LECȚIA 1 — Ecranul meu de start
+### Fereastra Pygame, culori și text
 **Modulul 4 · Jocuri cu Pygame · 2 ore**  
 **Code Maker Club · Game Creator**
 
@@ -7,13 +8,13 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai Pygame instalat, deschizi o fereastră, o ții deschisă cu bucla jocului, o închizi corect (cu butonul X sau cu tasta Escape), schimbi culoarea fundalului, citești mărimea ferestrei și scrii text pe ecran.  
-**Minim:** o fereastră care se deschide, are o culoare și se închide corect.  
-**Ținta orei (Complet):** + fundal care se schimbă la tastă sau la click și ecranul de start cu text.
+## Ce facem azi
 
-## De ce contează
-Orice joc, de la cele mai simple la cele mai mari, are aceeași structură: o **buclă** care se repetă de zeci de ori pe secundă și, la fiecare repetare, **citește ce faci tu**, **schimbă lumea jocului** și **desenează totul din nou**. Azi construim exact scheletul acesta, iar în următoarele lecții îl umplem cu personaje.
+La finalul orei ai Pygame instalat, deschizi o fereastră, o ții deschisă cu bucla jocului, o închizi corect (cu butonul X sau cu tasta Escape), schimbi culoarea fundalului, citești tastele și scrii text pe ecran.
+
+Orice joc, de la cele mai simple la cele mai mari, are aceeași structură: o **buclă** care se repetă de zeci de ori pe secundă și, la fiecare repetare, **citește ce faci tu**, **schimbă lumea jocului** și **desenează totul din nou**. Azi construim scheletul acesta, iar în următoarele lecții îl umplem cu personaje.
+
+La final ai **„Ecranul meu de start”** — primul ecran al unui joc.
 
 ---
 
@@ -21,14 +22,31 @@ Orice joc, de la cele mai simple la cele mai mari, are aceeași structură: o **
 
 | Minute | Ce facem |
 |--------|----------|
-| 0–15 | Instalăm Pygame (**Exemplul 1**) |
-| 15–40 | Prima fereastră și bucla jocului (**Exemplul 2**) |
-| 40–60 | Culori RGB (**Exemplul 3**) |
-| 60–75 | Evenimente: Escape și click (**Exemplele 4, 7, 8**) |
-| 75–90 | Mărimea ferestrei și cadrele pe secundă (**Exemplele 5–6**) |
-| 90–100 | Un cadru și text (**Exemplul 9**) |
-| 100–118 | Mini-proiect (**Exemplul 10**) |
+| 0–10 | Recapitulare din Modulul 3 |
+| 10–25 | Instalăm Pygame (**Exemplul 1**) |
+| 25–50 | Prima fereastră și bucla jocului (**Exemplul 2**) |
+| 50–65 | Culori RGB (**Exemplul 3**) |
+| 65–80 | Evenimente: Escape (**Exemplul 4**) |
+| 80–90 | Coordonate și cadre pe secundă (**Exemplul 5**) |
+| 90–98 | Culoarea se schimbă la tastă (**Exemplul 6**) |
+| 98–106 | Primul text (**Exemplul 7**) |
+| 106–118 | Mini-proiect: Ecranul meu de start (**Exemplul 8**) |
 | 118–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `pygame.init()` | Pornește Pygame | `pygame.init()` |
+| `pygame.display.set_mode((l, h))` | Creează fereastra (lățime, înălțime) | `ecran = pygame.display.set_mode((600, 400))` |
+| `while ruleaza:` + `pygame.event.get()` | Bucla jocului: citește evenimentele | `for eveniment in pygame.event.get():` |
+| `ecran.fill((r, g, b))` | Umple ecranul cu o culoare | `ecran.fill((30, 30, 60))` |
+| `pygame.display.flip()` | Arată pe ecran cadrul desenat | `pygame.display.flip()` |
+| `eveniment.type == pygame.KEYDOWN` | Se apasă o tastă | `eveniment.key == pygame.K_ESCAPE` |
+| `ceas.tick(60)` | Limitează jocul la 60 de cadre pe secundă | `ceas = pygame.time.Clock()` |
+| `font.render(...)` + `ecran.blit(...)` | Scrie text pe ecran | `ecran.blit(imagine, (x, y))` |
 
 ---
 
@@ -37,9 +55,6 @@ Orice joc, de la cele mai simple la cele mai mari, are aceeași structură: o **
 - Funcții cu `def`, bucle `while` și `for`, dicționare.
 - Evenimente: „când apeși o tastă, execută o funcție”.
 - Coordonatele ecranului și culori.
-
-**Încearcă tu (3 min)**  
-- [ ] Scrie un `while` care repetă până când scrii „stop” de la tastatură  
 
 ---
 
@@ -205,37 +220,11 @@ pygame.quit()
 
 ---
 
-## 6. Mărime și viteză
+## 6. Coordonate și viteză
 
-### Exemplul 5 — Cât de mare este fereastra?
+În Pygame, **originea `(0, 0)` este în colțul din STÂNGA-SUS**. `x` crește spre **dreapta**, iar `y` crește în **jos** (invers față de matematică și față de țestoasa din Modulul 3!). O fereastră de `600 × 400` are centrul la `(300, 200)`.
 
-```python
-import pygame
-
-pygame.init()
-LATIME = 800
-INALTIME = 500
-ecran = pygame.display.set_mode((LATIME, INALTIME))
-
-print("Latime:", ecran.get_width())
-print("Inaltime:", ecran.get_height())
-print("Marime:", ecran.get_size())
-print("Centrul ferestrei:", LATIME // 2, INALTIME // 2)
-
-pygame.quit()
-```
-
-**Ieșire:**
-```text
-Latime: 800
-Inaltime: 500
-Marime: (800, 500)
-Centrul ferestrei: 400 250
-```
-
-Punem lățimea și înălțimea în **constante** (`LATIME`, `INALTIME`), ca să le schimbăm într-un singur loc. Observă coordonatele în Pygame: **originea `(0, 0)` este în colțul din STÂNGA-SUS**. `x` crește spre **dreapta**, iar `y` crește în **jos** (invers față de Turtle!). Centrul ferestrei este la `(400, 250)`.
-
-### Exemplul 6 — Cadre pe secundă
+### Exemplul 5 — Cadre pe secundă
 
 ```python
 import pygame
@@ -264,16 +253,15 @@ pygame.quit()
 
 `ceas.tick(60)` cere ca bucla să ruleze **cel mult 60 de ori pe secundă** (60 FPS, „frames per second”). Fără el, calculatorul ar repeta bucla de mii de ori pe secundă, degeaba. În 1 secundă, numărul din titlu crește cu aproximativ 60.
 
-**Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 5** (Cât de mare este fereastra?)  
-- [ ] Am scris și am rulat **Exemplul 6** (Cadre pe secundă)  
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 5** (Cadre pe secundă)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 7. Interacțiuni simple
 
-### Exemplul 7 — Culoarea se schimbă la tastă
+### Exemplul 6 — Culoarea se schimbă la tastă
 
 ```python
 import pygame
@@ -303,44 +291,15 @@ pygame.quit()
 
 Dacă recunoști `% len(culori)` din Modulul 3, ai dreptate: parcurge lista **în cerc**.
 
-### Exemplul 8 — Culoarea se schimbă la click
-
-```python
-import random
-import pygame
-
-pygame.init()
-ecran = pygame.display.set_mode((600, 400))
-culoare = (0, 0, 0)
-
-ruleaza = True
-while ruleaza:
-    for eveniment in pygame.event.get():
-        if eveniment.type == pygame.QUIT:
-            ruleaza = False
-        if eveniment.type == pygame.MOUSEBUTTONDOWN:
-            culoare = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
-
-    ecran.fill(culoare)
-    pygame.display.flip()
-
-pygame.quit()
-```
-
-**Ce vezi pe ecran:** fundal **negru**. La fiecare **click cu mouse-ul**, fundalul capătă o **culoare nouă, aleasă la întâmplare** (câte un număr de la 0 la 255 pentru roșu, verde și albastru).
-
-`pygame.MOUSEBUTTONDOWN` apare când apeși un buton al mouse-ului. Poziția click-ului este în `eveniment.pos`, o pereche `(x, y)`.
-
-**Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 7** (Culoarea se schimbă la tastă)  
-- [ ] Am scris și am rulat **Exemplul 8** (Culoarea se schimbă la click)  
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 6** (Culoarea se schimbă la tastă)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 8. Text pe ecran
 
-### Exemplul 9 — Primul text
+### Exemplul 7 — Primul text
 
 ```python
 import pygame
@@ -380,14 +339,14 @@ Pașii pentru text sunt:
 Fontul standard nu are toate literele românești, deci în jocuri scriem fără diacritice.
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 9** (Primul text)  
+- [ ] Am scris și am rulat **Exemplul 7** (Primul text)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 9. Mini-proiect
 
-### Exemplul 10 — Ecranul meu de start
+### Exemplul 8 — Ecranul meu de start
 
 ```python
 import pygame
@@ -439,75 +398,48 @@ Ce este nou:
 - funcția `scrie_centrat` calculează `x` ca textul să fie **la mijloc**: `(LATIME - lățimea textului) // 2`.
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** (Ecranul meu de start)  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+- [ ] Am scris și am rulat **Exemplul 8** (Ecranul meu de start)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Ecranul meu de start”
 
-### Exercițiul A — „Ecranul meu de start” (obligatoriu)
-Pornește de la Exemplul 10 și fă ecranul **al tău**:
+### Minim vs Complet
+
+| Nivel | Ce trebuie să ai |
+|-------|------------------|
+| **Minim** | O fereastră care se deschide, are o culoare și se închide corect (X și Escape) |
+| **Complet** | Minim + ecranul de start al jocului tău: titlu, cel puțin 5 culori de fundal și numărul culorii afișat |
+
+### Pasul 1 — Minim
+Scrie un program care deschide o fereastră cu fundal colorat și o închide cu **X** și cu **Escape**.
+
+### Pasul 2 — Complet
+Pornește de la Exemplul 8 și fă ecranul **al tău**:
 1. alege un **titlu** pentru jocul tău (cum vrei să-l numești!);
 2. alege **cel puțin 5 culori** de fundal;
 3. adaugă la fiecare apăsare pe **săgeata dreapta** culoarea următoare și pe **săgeata stânga** culoarea anterioară;
 4. afișează jos numărul culorii curente („Culoarea 2 din 5”);
 5. închide jocul cu **Escape** și cu **X**.
 
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
-
-```python
-import pygame
-
-pygame.init()
-ecran = pygame.display.set_mode((400, 300))
-print(ecran.get_width() // 2)
-print(ecran.get_height() - 100)
-print((255, 128, 0)[1])
-pygame.quit()
-```
-
-### Exercițiul C — Culori făcute de tine
-Alege 6 culori noi, scrie-le ca `(R, G, B)` și numește-le. Cum faci **un gri deschis**? Dar **un roz**? Indiciu: gri înseamnă că cele trei numere sunt egale.
-
-### Exercițiul D — Găsește greșelile
-Programul are 3 greșeli. Rescrie-l corect:
-
-```text
-import pygame
-pygame.init()
-ecran = pygame.display.set_mode(600, 400)
-while ruleaza:
-    for eveniment in pygame.event.get()
-        if eveniment.type == pygame.QUIT:
-            ruleaza = False
-    ecran.fill((30, 30, 60))
-    pygame.display.flip()
-pygame.quit()
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. Ce face bucla jocului și de ce se repetă?  
-2. De ce se desenează totul din nou la fiecare cadru?  
-3. Ce reprezintă numerele `(255, 140, 0)`?
-
 **Gata când:**
 - [ ] Ai Pygame instalat și fereastra se deschide  
 - [ ] Ecranul de start are titlul și culorile tale  
 - [ ] Săgețile stânga și dreapta schimbă culoarea  
 - [ ] Jocul se închide cu X și cu Escape  
-- [ ] Ai explicat pe foaie bucla jocului  
-- [ ] Fișierul se numește `Prenume_Nume_P4_L1.py`  
+- [ ] Fișierul se numește `Prenume_Nume_P4_L1.py`
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Fă fundalul să se schimbe **singur** la fiecare 2 secunde (indiciu: `pygame.time.get_ticks()`)  
-- [ ] Afișează **coordonatele mouse-ului** în titlul ferestrei (`pygame.mouse.get_pos()`)  
-- [ ] Desenează 3 dreptunghiuri colorate, unul sub altul, ca un steag  
-- [ ] Fă fereastra **mai mare** și textul să rămână centrat  
+## Bonus ★★★ — Provocare: Ecranul de start devine interactiv
+
+*Doar dacă ai terminat Complet. Lucrezi tot în „Ecranul meu de start”, în același program.*
+
+- [ ] **Fundal automat.** Pe lângă SPAȚIU, fă fundalul să se schimbe **singur** la fiecare 2 secunde (indiciu: `pygame.time.get_ticks()`, care dă milisecundele de la pornire)  
+- [ ] **Mouse pe ecran.** Afișează jos, pe ecran, textul „Mouse: x, y” cu coordonatele mouse-ului (`pygame.mouse.get_pos()`)  
+- [ ] **Steag.** Desenează între titlu și text un steag din **3 dreptunghiuri** colorate, unul lângă altul (`pygame.draw.rect`)  
+- [ ] **Fereastră mare.** Fă fereastra de `1000 × 600` schimbând **doar constantele** `LATIME` și `INALTIME` și pozițiile `y` ale textelor, ca totul să rămână centrat
 
 ---
 
@@ -545,14 +477,302 @@ Răspunde pe foaie:
 
 ---
 
+---
+
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny.  
+1. Refă **4 exemple la alegere** din cele 8, scrise de tine (nu copiate).  
 2. Fă un **ecran de start** pentru jocul pe care îți dorești să-l faci în acest modul.  
-3. Fă fereastra să afișeze în titlu **cât a trecut de la pornire** (în secunde).  
-4. **Bonus:** fă o fereastră care devine **gri** la tasta `G`, **roșie** la `R` și **albastră** la `B`.  
-5. Salvează totul ca `Tema_P4_L1_Prenume_Nume.py`.
+3. Fă fereastra să afișeze în titlu **cât a trecut de la pornire** (în secunde). Indiciu: `pygame.display.set_caption(...)` în buclă și `pygame.time.get_ticks() // 1000`.  
+4. **Culori făcute de tine.** Alege 6 culori noi, scrie-le ca `(R, G, B)` și numește-le. Cum faci **un gri deschis**? Dar **un roz**? Indiciu: gri înseamnă că cele trei numere sunt egale.  
+5. **Explică pe foaie:** ce face bucla jocului și de ce se repetă? De ce se desenează totul din nou la fiecare cadru? Ce reprezintă numerele `(255, 140, 0)`?  
+6. **Bonus:** fă o fereastră care devine **gri** la tasta `G`, **roșie** la `R` și **albastră** la `B`.  
+7. Salvează totul ca `Tema_P4_L1_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le în Thonny, rulează-le și schimbă-le după preferințe.
+
+#### Acasă 1 — Cât de mare este fereastra?
+
+```python
+import pygame
+
+pygame.init()
+LATIME = 800
+INALTIME = 500
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+
+print("Latime:", ecran.get_width())
+print("Inaltime:", ecran.get_height())
+print("Marime:", ecran.get_size())
+print("Centrul ferestrei:", LATIME // 2, INALTIME // 2)
+
+pygame.quit()
+```
+
+**Ieșire:**
+```text
+Latime: 800
+Inaltime: 500
+Marime: (800, 500)
+Centrul ferestrei: 400 250
+```
+
+Punem lățimea și înălțimea în **constante** (`LATIME`, `INALTIME`), ca să le schimbăm într-un singur loc. Observă coordonatele în Pygame: **originea `(0, 0)` este în colțul din STÂNGA-SUS**. `x` crește spre **dreapta**, iar `y` crește în **jos** (invers față de Turtle!). Centrul ferestrei este la `(400, 250)`.
+
+#### Acasă 2 — Culoarea se schimbă la click
+
+```python
+import random
+import pygame
+
+pygame.init()
+ecran = pygame.display.set_mode((600, 400))
+culoare = (0, 0, 0)
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.MOUSEBUTTONDOWN:
+            culoare = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+
+    ecran.fill(culoare)
+    pygame.display.flip()
+
+pygame.quit()
+```
+
+**Ce vezi pe ecran:** fundal **negru**. La fiecare **click cu mouse-ul**, fundalul capătă o **culoare nouă, aleasă la întâmplare** (câte un număr de la 0 la 255 pentru roșu, verde și albastru).
+
+`pygame.MOUSEBUTTONDOWN` apare când apeși un buton al mouse-ului. Poziția click-ului este în `eveniment.pos`, o pereche `(x, y)`.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+import pygame
+
+pygame.init()
+ecran = pygame.display.set_mode((400, 300))
+print(ecran.get_width() // 2)
+print(ecran.get_height() - 100)
+print((255, 128, 0)[1])
+pygame.quit()
+```
+
+**Găsește greșelile.** Programul are 3 greșeli. Rescrie-l corect:
+
+```text
+import pygame
+pygame.init()
+ecran = pygame.display.set_mode(600, 400)
+while ruleaza:
+    for eveniment in pygame.event.get()
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+    ecran.fill((30, 30, 60))
+    pygame.display.flip()
+pygame.quit()
+```
 
 ---
 
+## Răspunsuri la bonus
+Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit, important este să funcționeze. Fiecare cod este un program întreg, pornit de la „Ecranul meu de start” (Exemplul 8).
+
+### 1. Fundal automat
+```python
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 450
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Jocul meu")
+ceas = pygame.time.Clock()
+
+font_titlu = pygame.font.Font(None, 90)
+font_mic = pygame.font.Font(None, 36)
+
+culori_fundal = [(20, 20, 60), (60, 20, 60), (20, 60, 60)]
+indice = 0
+ultima_schimbare = 0
+
+def scrie_centrat(text, font, culoare, y):
+    imagine = font.render(text, True, culoare)
+    x = (LATIME - imagine.get_width()) // 2
+    ecran.blit(imagine, (x, y))
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_SPACE:
+                indice = (indice + 1) % len(culori_fundal)
+
+    acum = pygame.time.get_ticks()
+    if acum - ultima_schimbare >= 2000:
+        indice = (indice + 1) % len(culori_fundal)
+        ultima_schimbare = acum
+
+    ecran.fill(culori_fundal[indice])
+    pygame.draw.rect(ecran, (255, 255, 255), (10, 10, LATIME - 20, INALTIME - 20), 4)
+    scrie_centrat("JOCUL MEU", font_titlu, (255, 220, 0), 120)
+    scrie_centrat("Apasa SPATIU pentru alta culoare", font_mic, (255, 255, 255), 250)
+    scrie_centrat("Escape = iesire", font_mic, (180, 180, 180), 300)
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** ecranul de start obișnuit, dar fundalul trece singur la următoarea culoare din 2 în 2 secunde; SPAȚIU funcționează în continuare. Ideea: `ultima_schimbare` ține minte *când* s-a schimbat ultima dată culoarea, iar `acum - ultima_schimbare >= 2000` înseamnă „au trecut 2000 de milisecunde”.
+
+### 2. Mouse pe ecran
+```python
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 450
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Jocul meu")
+ceas = pygame.time.Clock()
+
+font_titlu = pygame.font.Font(None, 90)
+font_mic = pygame.font.Font(None, 36)
+
+culori_fundal = [(20, 20, 60), (60, 20, 60), (20, 60, 60)]
+indice = 0
+
+def scrie_centrat(text, font, culoare, y):
+    imagine = font.render(text, True, culoare)
+    x = (LATIME - imagine.get_width()) // 2
+    ecran.blit(imagine, (x, y))
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_SPACE:
+                indice = (indice + 1) % len(culori_fundal)
+
+    ecran.fill(culori_fundal[indice])
+    pygame.draw.rect(ecran, (255, 255, 255), (10, 10, LATIME - 20, INALTIME - 20), 4)
+    scrie_centrat("JOCUL MEU", font_titlu, (255, 220, 0), 120)
+    scrie_centrat("Apasa SPATIU pentru alta culoare", font_mic, (255, 255, 255), 250)
+    scrie_centrat("Escape = iesire", font_mic, (180, 180, 180), 300)
+    pozitie = pygame.mouse.get_pos()
+    scrie_centrat("Mouse: " + str(pozitie[0]) + ", " + str(pozitie[1]), font_mic, (255, 255, 255), INALTIME - 60)
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** jos apare textul „Mouse: x, y”, care se schimbă când miști mouse-ul deasupra ferestrei. `get_pos()` dă o pereche `(x, y)`, iar `pozitie[0]` și `pozitie[1]` sunt cele două numere. Textul se redesenează în fiecare cadru, deci numerele sunt mereu la zi.
+
+### 3. Steag
+```python
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 450
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Jocul meu")
+ceas = pygame.time.Clock()
+
+font_titlu = pygame.font.Font(None, 90)
+font_mic = pygame.font.Font(None, 36)
+
+culori_fundal = [(20, 20, 60), (60, 20, 60), (20, 60, 60)]
+indice = 0
+
+def scrie_centrat(text, font, culoare, y):
+    imagine = font.render(text, True, culoare)
+    x = (LATIME - imagine.get_width()) // 2
+    ecran.blit(imagine, (x, y))
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_SPACE:
+                indice = (indice + 1) % len(culori_fundal)
+
+    ecran.fill(culori_fundal[indice])
+    pygame.draw.rect(ecran, (255, 255, 255), (10, 10, LATIME - 20, INALTIME - 20), 4)
+    scrie_centrat("JOCUL MEU", font_titlu, (255, 220, 0), 120)
+    pygame.draw.rect(ecran, (255, 0, 0), (260, 190, 60, 45))
+    pygame.draw.rect(ecran, (255, 220, 0), (320, 190, 60, 45))
+    pygame.draw.rect(ecran, (0, 120, 255), (380, 190, 60, 45))
+    scrie_centrat("Apasa SPATIU pentru alta culoare", font_mic, (255, 255, 255), 250)
+    scrie_centrat("Escape = iesire", font_mic, (180, 180, 180), 300)
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** între titlu și text apar trei dreptunghiuri lipite — roșu, galben, albastru. Fiecare e lat de 60, deci al doilea începe la `260 + 60 = 320` și al treilea la `380`; împreună acoperă de la `260` la `440`, adică exact centrat într-o fereastră de 700.
+
+### 4. Fereastră mare
+```python
+import pygame
+
+pygame.init()
+LATIME = 1000
+INALTIME = 600
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Jocul meu")
+ceas = pygame.time.Clock()
+
+font_titlu = pygame.font.Font(None, 90)
+font_mic = pygame.font.Font(None, 36)
+
+culori_fundal = [(20, 20, 60), (60, 20, 60), (20, 60, 60)]
+indice = 0
+
+def scrie_centrat(text, font, culoare, y):
+    imagine = font.render(text, True, culoare)
+    x = (LATIME - imagine.get_width()) // 2
+    ecran.blit(imagine, (x, y))
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_SPACE:
+                indice = (indice + 1) % len(culori_fundal)
+
+    ecran.fill(culori_fundal[indice])
+    pygame.draw.rect(ecran, (255, 255, 255), (10, 10, LATIME - 20, INALTIME - 20), 4)
+    scrie_centrat("JOCUL MEU", font_titlu, (255, 220, 0), INALTIME // 3)
+    scrie_centrat("Apasa SPATIU pentru alta culoare", font_mic, (255, 255, 255), INALTIME // 3 + 130)
+    scrie_centrat("Escape = iesire", font_mic, (180, 180, 180), INALTIME // 3 + 180)
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** o fereastră de `1000 × 600` cu rama albă pe margini (ea folosește `LATIME` și `INALTIME`) și cu titlul și textele centrate. Pozițiile `y` sunt calculate din `INALTIME // 3`, așa că rămân frumoase la orice mărime.
+
+---
 ## Ce urmează — Lecția 2
 **Forme, culori și imagini**: desenăm dreptunghiuri, cercuri, linii și creăm imaginile pentru personajele noastre.

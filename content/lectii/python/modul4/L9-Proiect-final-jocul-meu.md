@@ -1,4 +1,5 @@
-# LECȚIA 9 — Proiect final: jocul meu
+# LECȚIA 9 — Jocul meu
+### Proiect final: construim un joc complet
 **Modulul 4 · Jocuri cu Pygame · 2 ore**  
 **Code Maker Club · Game Creator**
 
@@ -7,13 +8,13 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai înțeles cum se construiește un joc din piese (clase și funcții), ai scris un joc cu gloanțe, obstacole, explozii, meniu, niveluri și record, și ai început **propriul tău joc**.  
-**Minim:** un joc cu meniu, scor, vieți și ecran de final.  
-**Ținta orei (Complet):** + clase, niveluri, record salvat în fișier și un element nou, inventat de tine.
+## Ce facem azi
 
-## De ce contează
-Aici se vede cât de departe ai ajuns: un joc cu meniu, grafică, scor, vieți, niveluri și record, scris **de tine**, în Python, de la zero.
+La final ai construit un joc complet din piese mici, „Apărătorii galaxiei”, cu gloanțe, meteoriți, explozii, meniu, niveluri, scut și record, și ai început **propriul tău joc**.
+
+Azi folosim tot ce ai învățat în patru module. Un joc mare nu se scrie dintr-o suflare: se construiește din **piese mici** (clase, funcții și un dicționar de stare), adăugate **pe rând** și testate la fiecare pas.
+
+Ai „Apărătorii galaxiei” ca model, iar apoi faci **jocul tău**, pe care îl vei prezenta în ultima lecție.
 
 ---
 
@@ -22,11 +23,25 @@ Aici se vede cât de departe ai ajuns: un joc cu meniu, grafică, scor, vieți, 
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recapitulare L8 și planul jocului |
-| 10–45 | Piesele noi: schelet, stele, gloanțe, meteoriți (**Exemplele 1–4**) |
-| 45–70 | Lovituri, explozii, butoane, dificultate, scut (**Exemplele 5–9**) |
-| 70–80 | „Apărătorii galaxiei” (**Exemplul 10**): rulăm și înțelegem |
-| 80–115 | **Jocul meu**: construim |
+| 10–35 | Piesele noi: schelet și meteoriți (**Exemplele 1–2**) |
+| 35–65 | Lovituri, explozii, butoane, dificultate, scut (**Exemplele 3–7**) |
+| 65–75 | „Apărătorii galaxiei” (**Exemplul 8**): rulăm și înțelegem |
+| 75–115 | **Jocul meu**: construim |
 | 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `ecrane[joc["stare"]]()` | Alege din dicționar funcția potrivită stării și o apelează | `ecrane = {"meniu": deseneaza_meniu}` |
+| `lista[:] = [x for x in lista if ...]` | Păstrează în listă doar elementele care îndeplinesc condiția (forma scurtă a listei `ramase`) | `meteoriti[:] = [m for m in meteoriti if not m.a_iesit()]` |
+| `for g in gloante[:]:` | Parcurge o copie, ca să poți scoate elemente din listă | `gloante.remove(g)` |
+| `class Particula:` și `random.uniform` | Particule mici care zboară în toate părțile (explozie) | `math.cos(unghi) * viteza` |
+| `class Buton:` și `collidepoint(pos)` | Buton pe care se poate da click | `buton.este_apasat(eveniment.pos)` |
+| `def dificultate(nivel): return {...}` | O funcție care întoarce setările nivelului | `max(15, 60 - nivel * 8)` |
+| `scut_pana = acum + DURATA_SCUT` | Scut care ține doar un timp limitat | `scut_pana > acum` |
 
 ---
 
@@ -35,9 +50,6 @@ Aici se vede cât de departe ai ajuns: un joc cu meniu, grafică, scor, vieți, 
 - Fișiere: `with open(nume, "w"/"a"/"r") as f:`.
 - `try / except FileNotFoundError` și `ValueError`.
 - Topul și recordul se păstrează într-un fișier.
-
-**Încearcă tu (3 min)**  
-- [ ] Scrie o funcție `citeste_numar(fisier)` care întoarce numărul din fișier sau 0 dacă fișierul lipsește  
 
 ### Cum plănuim un joc (5 minute pe hârtie!)
 Înainte de cod, răspunde pe foaie:
@@ -50,6 +62,8 @@ Aici se vede cât de departe ai ajuns: un joc cu meniu, grafică, scor, vieți, 
 ---
 
 ## 2. Piesele jocului
+
+Stelele care se mișcă și gloanțele cu ritm de tragere le găsești la „Acasă 1” și „Acasă 2”; le folosim și în Exemplul 8.
 
 ### Exemplul 1 — Scheletul unui joc
 
@@ -125,140 +139,7 @@ Starile: ['meniu', 'joc', 'final']
 
 Iată **scheletul** oricărui joc. Ce e nou: într-un dicționar `ecrane` avem **funcții** (fără paranteze!), iar `ecrane[joc["stare"]]()` o alege și o apelează pe cea potrivită stării. Tot ce se schimbă (starea, scorul) stă în dicționarul `joc`, așa că nu avem nevoie de `global`.
 
-### Exemplul 2 — Cer cu stele care se mișcă
-
-```python
-import random
-import pygame
-
-pygame.init()
-LATIME = 600
-INALTIME = 500
-ecran = pygame.display.set_mode((LATIME, INALTIME))
-pygame.display.set_caption("Stele")
-ceas = pygame.time.Clock()
-
-stele = []
-for i in range(60):
-    stele.append([random.randint(0, LATIME), random.randint(0, INALTIME), random.randint(1, 3)])
-print("Stele:", len(stele))
-
-ruleaza = True
-while ruleaza:
-    for eveniment in pygame.event.get():
-        if eveniment.type == pygame.QUIT:
-            ruleaza = False
-
-    for s in stele:
-        s[1] += s[2]
-        if s[1] > INALTIME:
-            s[1] = 0
-            s[0] = random.randint(0, LATIME)
-
-    ecran.fill((5, 5, 25))
-    for s in stele:
-        stralucire = 80 + 50 * s[2]
-        pygame.draw.rect(ecran, (stralucire, stralucire, stralucire), (s[0], s[1], s[2], s[2]))
-    pygame.display.flip()
-    ceas.tick(60)
-
-pygame.quit()
-```
-
-**Ieșire:**
-```text
-Stele: 60
-```
-
-**Ce vezi pe ecran:** un cer **foarte închis** cu **60 de stele** albe care **curg în jos**. Stelele rapide sunt **mai mari și mai luminoase**, cele lente sunt mici și mai întunecate, ca și cum ai zbura printre ele.
-
-Fiecare stea este o **listă mică** `[x, y, viteză]`. Când iese jos, se întoarce sus, într-un loc nou. Cu viteza și luminozitatea legate între ele, apare iluzia de **adâncime**.
-
-### Exemplul 3 — Gloanțe și ritmul de tragere
-
-```python
-import pygame
-
-pygame.init()
-LATIME = 600
-INALTIME = 500
-ecran = pygame.display.set_mode((LATIME, INALTIME))
-pygame.display.set_caption("Gloante")
-ceas = pygame.time.Clock()
-font = pygame.font.Font(None, 30)
-
-class Glont:
-    def __init__(self, x, y):
-        self.rect = pygame.Rect(0, 0, 6, 16)
-        self.rect.midbottom = (x, y)
-        self.viteza = 10
-
-    def muta(self):
-        self.rect.y -= self.viteza
-
-    def a_iesit(self):
-        return self.rect.bottom < 0
-
-    def deseneaza(self):
-        pygame.draw.rect(ecran, (255, 240, 100), self.rect, border_radius=3)
-
-test = Glont(100, 50)
-test.muta()
-print(test.rect.y, test.a_iesit())
-for i in range(6):
-    test.muta()
-print(test.rect.y, test.a_iesit())
-
-nava = pygame.Rect(0, 0, 50, 40)
-nava.midbottom = (LATIME // 2, INALTIME - 20)
-gloante = []
-ultimul_foc = 0
-RITM = 250
-
-ruleaza = True
-while ruleaza:
-    for eveniment in pygame.event.get():
-        if eveniment.type == pygame.QUIT:
-            ruleaza = False
-
-    taste = pygame.key.get_pressed()
-    if taste[pygame.K_LEFT]:
-        nava.x -= 7
-    if taste[pygame.K_RIGHT]:
-        nava.x += 7
-    nava.clamp_ip(ecran.get_rect())
-
-    acum = pygame.time.get_ticks()
-    if taste[pygame.K_SPACE] and acum - ultimul_foc > RITM:
-        gloante.append(Glont(nava.centerx, nava.top))
-        ultimul_foc = acum
-
-    for g in gloante:
-        g.muta()
-    gloante = [g for g in gloante if not g.a_iesit()]
-
-    ecran.fill((10, 10, 40))
-    for g in gloante:
-        g.deseneaza()
-    pygame.draw.polygon(ecran, (0, 200, 255), [(nava.centerx, nava.top), (nava.left, nava.bottom), (nava.right, nava.bottom)])
-    ecran.blit(font.render("Gloante pe ecran: " + str(len(gloante)), True, (255, 255, 255)), (10, 10))
-    pygame.display.flip()
-    ceas.tick(60)
-
-pygame.quit()
-```
-
-**Ieșire:**
-```text
-24 False
--36 True
-```
-
-**Ce vezi pe ecran:** jos, o **navă triunghiulară albastră**, pe care o miști cu **stânga/dreapta**. Cu **SPAȚIU** tragi **gloanțe galbene** care zboară în sus și dispar când ies din ecran. Sus scrie câte gloanțe sunt pe ecran.
-
-**Ritmul de tragere:** `pygame.time.get_ticks()` dă timpul în **milisecunde**. Tragem doar dacă au trecut **mai mult de 250 ms** de la ultimul foc. Fără asta, ai trage 60 de gloanțe pe secundă! Cele două `print`-uri de la început sunt teste: după o mutare gloanțul e la `y = 24` (încă pe ecran), iar după șapte mutări e la `-36`: a ieșit complet.
-
-### Exemplul 4 — Meteoriți
+### Exemplul 2 — Meteoriți
 
 ```python
 import random
@@ -331,10 +212,11 @@ pygame.quit()
 
 Meteoritul are **rază** și **viteză** proprii (alese la întâmplare). Pătratul `rect` (de latură `2 * raza`) este folosit pentru coliziuni, iar cercul este doar pentru desen. Un meteorit nou apare din **30 în 30 de cadre** (de două ori pe secundă): condiția **`cadru % 30 == 0`** este adevărată atunci când numărul cadrului se împarte exact la 30.
 
+Linia `meteoriti = [m for m in meteoriti if not m.a_iesit()]` este forma **scurtă** a buclei cu lista `ramase` din Lecțiile 5–7 (vezi „Acasă 1” din Lecția 7): „păstrează în listă doar meteoriții care nu au ieșit”. Mai târziu, în joc, scriem `meteoriti[:] = [...]`, ca să schimbăm **lista existentă**, nu să facem alta (ca la `monede[:] = ramase` din Lecția 5).
+
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 1** (Scheletul unui joc)  
-- [ ] Am scris și am rulat **Exemplul 2** (Cer cu stele care se mișcă)  
-- [ ] Am scris și am rulat **Exemplul 3** (Gloanțe și ritmul de tragere)  
+- [ ] Am scris și am rulat **Exemplul 2** (Meteoriți)  
 - [ ] Am rulat și restul exemplelor din secțiune  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
@@ -342,7 +224,7 @@ Meteoritul are **rază** și **viteză** proprii (alese la întâmplare). Pătra
 
 ## 3. Lovituri, explozii, butoane, dificultate, scut
 
-### Exemplul 5 — Glonț lovește meteorit
+### Exemplul 3 — Glonț lovește meteorit
 
 ```python
 import pygame
@@ -389,7 +271,7 @@ Aici este **inima** jocului: pentru fiecare glonț verificăm dacă lovește vre
 - `break` oprește căutarea după prima lovitură, pentru că un glonț **nu poate lovi doi** meteoriți deodată (și nu ar trebui să-l scoatem de două ori din listă);
 - funcția întoarce **câte lovituri** au fost, ca să adăugăm punctele.
 
-### Exemplul 6 — Explozii cu particule
+### Exemplul 4 — Explozii cu particule
 
 ```python
 import math
@@ -463,7 +345,7 @@ pygame.quit()
 
 Fiecare particulă are o **direcție** (`dx`, `dy`) și o **viață**. Direcțiile sunt calculate cu **`cos`** și **`sin`**, dintr-un unghi ales la întâmplare (`random.uniform(a, b)` alege un număr **cu zecimale** între a și b): așa punctele pornesc în toate direcțiile, ca un cerc. Pe măsură ce viața scade, raza particulei devine mai mică. La fel se fac artificiile!
 
-### Exemplul 7 — Butoane
+### Exemplul 5 — Butoane
 
 ```python
 import pygame
@@ -529,7 +411,7 @@ True False
 
 Clasa `Buton` știe să se **deseneze** (cu text centrat: `imagine.get_rect(center=...)` creează un dreptunghi cu mijlocul în locul dorit) și să spună dacă **a fost apăsat**. O poți folosi pentru orice meniu.
 
-### Exemplul 8 — Niveluri de dificultate
+### Exemplul 6 — Niveluri de dificultate
 
 ```python
 def dificultate(nivel):
@@ -556,7 +438,7 @@ Nivel 6 : viteza 8 - 10 , un meteorit la 15 cadre
 
 O singură funcție decide cât de greu este jocul: cu cât nivelul e mai mare, meteoriții sunt mai **rapizi** și apar mai **des**. `max(15, ...)` pune o **limită**: pauza nu scade niciodată sub 15 cadre (altfel, la niveluri mari, jocul ar deveni imposibil). Poți schimba **numerele** și jocul devine mai ușor sau mai greu, fără să atingi restul codului.
 
-### Exemplul 9 — Scut cu timp limitat
+### Exemplul 7 — Scut cu timp limitat
 
 ```python
 import random
@@ -630,10 +512,10 @@ True False False
 
 Scutul funcționează cu **timpul**: la prindere reținem **până când** este activ (`scut_pana = acum + 4000`), apoi la fiecare cadru verificăm `scut_activ(scut_pana, acum)`. Variabila `orb` este `None` (adică „nimic”) cât timp nu există nicio bilă; verificăm cu `is None` / `is not None`.
 
-**Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 5** (Glonț lovește meteorit)  
-- [ ] Am scris și am rulat **Exemplul 6** (Explozii cu particule)  
-- [ ] Am scris și am rulat **Exemplul 7** (Butoane)  
+**Încearcă tu (8 min)**  
+- [ ] Am scris și am rulat **Exemplul 3** (Glonț lovește meteorit)  
+- [ ] Am scris și am rulat **Exemplul 4** (Explozii cu particule)  
+- [ ] Am scris și am rulat **Exemplul 5** (Butoane)  
 - [ ] Am rulat și restul exemplelor din secțiune  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
@@ -641,7 +523,7 @@ Scutul funcționează cu **timpul**: la prindere reținem **până când** este 
 
 ## 4. Jocul întreg
 
-### Exemplul 10 — „Apărătorii galaxiei”
+### Exemplul 8 — „Apărătorii galaxiei”
 
 ```python
 import math
@@ -971,7 +853,7 @@ pygame.quit()
 Privește cum este organizat: **clase** pentru lucrurile din joc (`Nava`, `Glont`, `Meteorit`, `Particula`, `Buton`), **funcții** pentru acțiuni (`joc_nou`, `explozie`, `dificultate`, `scut_activ`), un **dicționar `joc`** cu tot ce se schimbă și o **buclă** care le coordonează. Același tipar îl vei folosi la jocul tău!
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** („Apărătorii galaxiei”)  
+- [ ] Am scris și am rulat **Exemplul 8** („Apărătorii galaxiei”)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
@@ -980,7 +862,7 @@ Privește cum este organizat: **clase** pentru lucrurile din joc (`Nava`, `Glont
 
 ### Cum lucrăm în a doua parte a orei
 1. **Alege un tip de joc** (vezi lista de idei de mai jos) sau inventează unul.  
-2. **Începe de la scheletul** din Exemplul 1 sau de la „Apărătorii galaxiei” și schimbă-l.  
+2. **Începe de la scheletul** din Exemplul 1 sau de la „Apărătorii galaxiei” (Exemplul 8) și schimbă-l.  
 3. Adaugă piesele **pe rând**, iar după **fiecare** piesă rulează jocul. Nu scrie 100 de rânduri și abia apoi să testezi!  
 4. Dacă ceva nu merge, citește **ultima linie** a erorii și caută numărul liniei.  
 5. Salvează des (**Ctrl + S**).
@@ -992,80 +874,46 @@ Privește cum este organizat: **clase** pentru lucrurile din joc (`Nava`, `Glont
 - **Pescar:** prinzi pești (puncte) și ocolești deșeurile.  
 - **Șerpișor:** o listă de pătrățele care crește când mănâncă.  
 - **Memorie / perechi:** cărți care se întorc la click.  
-- **Tunar:** tragi în ținte care se mișcă (ca în Exemplul 10).
+- **Tunar:** tragi în ținte care se mișcă (ca în Exemplul 8).
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Jocul meu”
 
-### Exercițiul A — Jocul meu (obligatoriu)
-Fă un joc **al tău**, cu **toate** acestea:
-1. un **meniu** de început (cu butoane sau tastă);
-2. **cel puțin două clase** (de exemplu `Jucator` și `Inamic`);
-3. **scor** și **vieți** (sau timp) afișate pe ecran;
-4. **cel puțin 3 niveluri** sau o dificultate care crește;
-5. **GAME OVER** cu posibilitatea de a juca din nou;
-6. **record** salvat într-un fișier, citit cu `try / except`;
-7. **un element inventat de tine** (power-up, inamic special, efect, sunet, personaj nou).
+### Minim vs Complet
 
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
+| Nivel | Ce trebuie să ai |
+|-------|------------------|
+| **Minim** | Un joc cu meniu, scor, vieți și ecran de final |
+| **Complet** | Minim + clase, niveluri, record salvat în fișier și un element inventat de tine |
 
-```python
-def dificultate(nivel):
-    return max(10, 50 - nivel * 10)
+### Pasul 1 — Minim
+Fă un joc **al tău** (vezi „Idei de jocuri”) cu un **meniu** de început (butoane sau tastă), **scor** și **vieți** afișate pe ecran și un **GAME OVER** de la care poți juca din nou.
 
-for nivel in range(1, 6):
-    print(nivel, dificultate(nivel))
-
-lista = [1, 2, 3, 4, 5, 6]
-for x in lista[:]:
-    if x % 2 == 0:
-        lista.remove(x)
-print(lista)
-```
-
-### Exercițiul C — Un element nou
-Alege **una** dintre variante și adaugă-o în „Apărătorii galaxiei”: un tip de **inamic care coboară în zigzag**; un **power-up** care trage trei gloanțe deodată; un **boss** la nivelul 5; o **viață bonus** care cade din cer.
-
-### Exercițiul D — Găsește greșelile
-Programul are 3 greșeli. Rescrie-l corect:
-
-```text
-class Glont:
-    def __init__(self, x, y):
-        self.rect = pygame.Rect(0, 0, 6, 16)
-        self.rect.midbottom = (x, y)
-    def muta(self):
-        rect.y -= 10
-gloante = [Glont(10, 10), Glont(20, 10)]
-for g in gloante:
-    g.muta()
-    if g.a_iesit():
-        gloante.remove(g)
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. Care sunt **părțile** jocului tău (clase, funcții, stări)?  
-2. De ce parcurgem o **copie** a listei (`lista[:]`) când scoatem elemente din ea?  
-3. Ce ai învățat în acest modul și ce ți-a plăcut cel mai mult?
+### Pasul 2 — Complet
+Pornește de la scheletul din Exemplul 1 sau de la „Apărătorii galaxiei” (Exemplul 8) și adaugă, pe rând:
+1. **cel puțin două clase** (de exemplu `Jucator` și `Inamic`);
+2. **cel puțin 3 niveluri** sau o dificultate care crește;
+3. **record** salvat într-un fișier, citit cu `try / except`;
+4. **un element inventat de tine** (power-up, inamic special, efect, personaj nou).
 
 **Gata când:**
 - [ ] Jocul are meniu, scor, vieți, niveluri și GAME OVER  
 - [ ] Are cel puțin două clase  
 - [ ] Recordul este salvat în fișier, cu `try / except`  
 - [ ] Are un element inventat de tine  
-- [ ] Ai explicat pe foaie cum este organizat jocul  
-- [ ] Fișierul se numește `Prenume_Nume_P4_L9.py`  
+- [ ] Fișierul se numește `Prenume_Nume_P4_L9.py`
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Adaugă **sunete** cu `pygame.mixer` (un sunet la tragere și unul la explozie)  
-- [ ] Folosește **imagini** (L2) pentru navă și meteoriți  
-- [ ] Scutul continuă să scadă și în pauză. **Repară asta!**  
-- [ ] Adaugă un **ecran de reguli** și un **top 5** (L8)  
+## Bonus ★★★ — Provocare: Apărătorii galaxiei, versiunea completă
+
+*Doar dacă ai terminat Complet. Lucrezi în „Apărătorii galaxiei” (Exemplul 8); apoi aplică ideile și în jocul tău.*
+
+- [ ] **Scutul în pauză.** Când apeși **P**, scutul nu trebuie să mai scadă: timpul rămas se păstrează, iar inelul scutului rămâne pe ecran  
+- [ ] **Ecran de reguli.** Adaugă în meniu un buton „Reguli” care duce la un ecran cu regulile jocului și un buton „Inapoi”  
+- [ ] **Top 5.** Păstrează în fișier cele mai bune 5 scoruri (nu doar recordul) și afișează-le în meniu (vezi Lecția 8)  
+- [ ] **Imagini.** Desenează nava și meteoriții pe o `Surface` cu transparență, afișează-i cu `blit` și redimensionează meteoriții cu `pygame.transform.scale` (vezi Lecția 2)
 
 ---
 
@@ -1104,14 +952,1522 @@ Răspunde pe foaie:
 
 ---
 
+---
+
 ## Temă
 1. Termină **jocul tău** acasă: bifează toate punctele din „Gata când”.  
 2. Joacă-l cu **trei persoane** și notează ce li s-a părut greu sau neclar. Îmbunătățește jocul după părerile lor.  
 3. Pregătește **prezentarea de 2 minute**: numele jocului, ideea, controlul, ce ai inventat tu.  
-4. **Bonus:** fă o copie a jocului cu un **alt aspect** (alte culori, alte personaje).  
-5. Salvează totul ca `Tema_P4_L9_Prenume_Nume.py`.
+4. **Explică pe foaie:** Care sunt părțile jocului tău (clase, funcții, stări)? De ce parcurgem o copie a listei (`lista[:]`) când scoatem elemente din ea? Ce ai învățat în acest modul și ce ți-a plăcut cel mai mult?  
+5. **Bonus:** fă o copie a jocului cu un **alt aspect** (alte culori, alte personaje).  
+6. Salvează totul ca `Tema_P4_L9_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le în Thonny, rulează-le și schimbă-le după preferințe.
+
+#### Acasă 1 — Cer cu stele care se mișcă
+
+```python
+import random
+import pygame
+
+pygame.init()
+LATIME = 600
+INALTIME = 500
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Stele")
+ceas = pygame.time.Clock()
+
+stele = []
+for i in range(60):
+    stele.append([random.randint(0, LATIME), random.randint(0, INALTIME), random.randint(1, 3)])
+print("Stele:", len(stele))
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+
+    for s in stele:
+        s[1] += s[2]
+        if s[1] > INALTIME:
+            s[1] = 0
+            s[0] = random.randint(0, LATIME)
+
+    ecran.fill((5, 5, 25))
+    for s in stele:
+        stralucire = 80 + 50 * s[2]
+        pygame.draw.rect(ecran, (stralucire, stralucire, stralucire), (s[0], s[1], s[2], s[2]))
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+
+**Ieșire:**
+```text
+Stele: 60
+```
+
+**Ce vezi pe ecran:** un cer **foarte închis** cu **60 de stele** albe care **curg în jos**. Stelele rapide sunt **mai mari și mai luminoase**, cele lente sunt mici și mai întunecate, ca și cum ai zbura printre ele.
+
+Fiecare stea este o **listă mică** `[x, y, viteză]`. Când iese jos, se întoarce sus, într-un loc nou. Cu viteza și luminozitatea legate între ele, apare iluzia de **adâncime**.
+
+#### Acasă 2 — Gloanțe și ritmul de tragere
+
+```python
+import pygame
+
+pygame.init()
+LATIME = 600
+INALTIME = 500
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Gloante")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 30)
+
+class Glont:
+    def __init__(self, x, y):
+        self.rect = pygame.Rect(0, 0, 6, 16)
+        self.rect.midbottom = (x, y)
+        self.viteza = 10
+
+    def muta(self):
+        self.rect.y -= self.viteza
+
+    def a_iesit(self):
+        return self.rect.bottom < 0
+
+    def deseneaza(self):
+        pygame.draw.rect(ecran, (255, 240, 100), self.rect, border_radius=3)
+
+test = Glont(100, 50)
+test.muta()
+print(test.rect.y, test.a_iesit())
+for i in range(6):
+    test.muta()
+print(test.rect.y, test.a_iesit())
+
+nava = pygame.Rect(0, 0, 50, 40)
+nava.midbottom = (LATIME // 2, INALTIME - 20)
+gloante = []
+ultimul_foc = 0
+RITM = 250
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+
+    taste = pygame.key.get_pressed()
+    if taste[pygame.K_LEFT]:
+        nava.x -= 7
+    if taste[pygame.K_RIGHT]:
+        nava.x += 7
+    nava.clamp_ip(ecran.get_rect())
+
+    acum = pygame.time.get_ticks()
+    if taste[pygame.K_SPACE] and acum - ultimul_foc > RITM:
+        gloante.append(Glont(nava.centerx, nava.top))
+        ultimul_foc = acum
+
+    for g in gloante:
+        g.muta()
+    gloante = [g for g in gloante if not g.a_iesit()]
+
+    ecran.fill((10, 10, 40))
+    for g in gloante:
+        g.deseneaza()
+    pygame.draw.polygon(ecran, (0, 200, 255), [(nava.centerx, nava.top), (nava.left, nava.bottom), (nava.right, nava.bottom)])
+    ecran.blit(font.render("Gloante pe ecran: " + str(len(gloante)), True, (255, 255, 255)), (10, 10))
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+
+**Ieșire:**
+```text
+24 False
+-36 True
+```
+
+**Ce vezi pe ecran:** jos, o **navă triunghiulară albastră**, pe care o miști cu **stânga/dreapta**. Cu **SPAȚIU** tragi **gloanțe galbene** care zboară în sus și dispar când ies din ecran. Sus scrie câte gloanțe sunt pe ecran.
+
+**Ritmul de tragere:** `pygame.time.get_ticks()` dă timpul în **milisecunde**. Tragem doar dacă au trecut **mai mult de 250 ms** de la ultimul foc. Fără asta, ai trage 60 de gloanțe pe secundă! Cele două `print`-uri de la început sunt teste: după o mutare gloanțul e la `y = 24` (încă pe ecran), iar după șapte mutări e la `-36`: a ieșit complet.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+def dificultate(nivel):
+    return max(10, 50 - nivel * 10)
+
+for nivel in range(1, 6):
+    print(nivel, dificultate(nivel))
+
+lista = [1, 2, 3, 4, 5, 6]
+for x in lista[:]:
+    if x % 2 == 0:
+        lista.remove(x)
+print(lista)
+```
+
+**Găsește greșelile.** Programul are 3 greșeli. Rescrie-l corect:
+
+```text
+class Glont:
+    def __init__(self, x, y):
+        self.rect = pygame.Rect(0, 0, 6, 16)
+        self.rect.midbottom = (x, y)
+    def muta(self):
+        rect.y -= 10
+gloante = [Glont(10, 10), Glont(20, 10)]
+for g in gloante:
+    g.muta()
+    if g.a_iesit():
+        gloante.remove(g)
+```
 
 ---
 
+## Răspunsuri la bonus
+Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit, important este să funcționeze. Fiecare cod este un program întreg, pornit de la „Apărătorii galaxiei” (Exemplul 8).
+
+### 1. Scutul în pauză
+```python
+import math
+import random
+import pygame
+
+pygame.init()
+LATIME = 600
+INALTIME = 650
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Aparatorii galaxiei")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 32)
+font_mare = pygame.font.Font(None, 70)
+
+FISIER_RECORD = "record_galaxie.txt"
+DURATA_SCUT = 5000
+
+def citeste_record():
+    try:
+        with open(FISIER_RECORD, "r") as f:
+            return int(f.read().strip())
+    except (FileNotFoundError, ValueError):
+        return 0
+
+def salveaza_record(valoare):
+    with open(FISIER_RECORD, "w") as f:
+        f.write(str(valoare))
+
+def scrie(text, x, y, culoare=(255, 255, 255), fnt=None, centrat=False):
+    if fnt is None:
+        fnt = font
+    imagine = fnt.render(text, True, culoare)
+    if centrat:
+        x = x - imagine.get_width() // 2
+    ecran.blit(imagine, (x, y))
+
+def dificultate(nivel):
+    return {
+        "viteza_min": 2 + nivel,
+        "viteza_max": 4 + nivel,
+        "pauza": max(15, 60 - nivel * 8),
+    }
+
+def scut_activ(pana, acum):
+    return pana > acum
+
+def inima(x, y, culoare):
+    pygame.draw.circle(ecran, culoare, (x - 6, y), 7)
+    pygame.draw.circle(ecran, culoare, (x + 6, y), 7)
+    pygame.draw.polygon(ecran, culoare, [(x - 13, y + 2), (x + 13, y + 2), (x, y + 18)])
+
+class Nava:
+    def __init__(self):
+        self.rect = pygame.Rect(0, 0, 50, 40)
+        self.viteza = 7
+        self.reseteaza()
+
+    def reseteaza(self):
+        self.rect.midbottom = (LATIME // 2, INALTIME - 25)
+
+    def muta(self, taste):
+        if taste[pygame.K_LEFT] or taste[pygame.K_a]:
+            self.rect.x -= self.viteza
+        if taste[pygame.K_RIGHT] or taste[pygame.K_d]:
+            self.rect.x += self.viteza
+        self.rect.clamp_ip(ecran.get_rect())
+
+    def deseneaza(self):
+        r = self.rect
+        pygame.draw.polygon(ecran, (255, 160, 0), [(r.centerx - 8, r.bottom), (r.centerx + 8, r.bottom), (r.centerx, r.bottom + 14)])
+        pygame.draw.polygon(ecran, (0, 200, 255), [(r.centerx, r.top), (r.left, r.bottom), (r.right, r.bottom)])
+
+class Glont:
+    def __init__(self, x, y):
+        self.rect = pygame.Rect(0, 0, 6, 16)
+        self.rect.midbottom = (x, y)
+        self.viteza = 10
+
+    def muta(self):
+        self.rect.y -= self.viteza
+
+    def a_iesit(self):
+        return self.rect.bottom < 0
+
+    def deseneaza(self):
+        pygame.draw.rect(ecran, (255, 240, 100), self.rect, border_radius=3)
+
+class Meteorit:
+    def __init__(self, x, y, raza, viteza):
+        self.raza = raza
+        self.viteza = viteza
+        self.rect = pygame.Rect(0, 0, 2 * raza, 2 * raza)
+        self.rect.center = (x, y)
+
+    def muta(self):
+        self.rect.y += self.viteza
+
+    def a_iesit(self):
+        return self.rect.top > INALTIME
+
+    def deseneaza(self):
+        pygame.draw.circle(ecran, (130, 125, 120), self.rect.center, self.raza)
+        pygame.draw.circle(ecran, (95, 90, 85), (self.rect.centerx - self.raza // 3, self.rect.centery - self.raza // 4), self.raza // 4)
+        pygame.draw.circle(ecran, (95, 90, 85), (self.rect.centerx + self.raza // 3, self.rect.centery + self.raza // 3), self.raza // 5)
+
+class Particula:
+    def __init__(self, x, y, dx, dy, viata, culoare):
+        self.x = x
+        self.y = y
+        self.dx = dx
+        self.dy = dy
+        self.viata = viata
+        self.culoare = culoare
+
+    def muta(self):
+        self.x += self.dx
+        self.y += self.dy
+        self.viata -= 1
+
+    def deseneaza(self):
+        pygame.draw.circle(ecran, self.culoare, (int(self.x), int(self.y)), max(1, self.viata // 8))
+
+class Buton:
+    def __init__(self, text, x, y, latime, inaltime):
+        self.text = text
+        self.rect = pygame.Rect(x, y, latime, inaltime)
+
+    def este_apasat(self, pozitie):
+        return self.rect.collidepoint(pozitie)
+
+    def deseneaza(self):
+        if self.rect.collidepoint(pygame.mouse.get_pos()):
+            culoare = (70, 140, 255)
+        else:
+            culoare = (40, 90, 200)
+        pygame.draw.rect(ecran, culoare, self.rect, border_radius=12)
+        pygame.draw.rect(ecran, (255, 255, 255), self.rect, 2, border_radius=12)
+        imagine = font.render(self.text, True, (255, 255, 255))
+        ecran.blit(imagine, imagine.get_rect(center=self.rect.center))
+
+nava = Nava()
+gloante = []
+meteoriti = []
+particule = []
+stele = []
+for i in range(60):
+    stele.append([random.randint(0, LATIME), random.randint(0, INALTIME), random.randint(1, 3)])
+
+butoane_meniu = [Buton("Joaca", 200, 330, 200, 55), Buton("Iesire", 200, 410, 200, 55)]
+butoane_final = [Buton("Din nou", 200, 400, 200, 55), Buton("Meniu", 200, 480, 200, 55)]
+
+joc = {"stare": "meniu", "scor": 0, "vieti": 3, "nivel": 1, "record": citeste_record(),
+       "scut_pana": 0, "scut_ramas": 0, "ultimul_foc": 0, "orb": None}
+
+def joc_nou():
+    joc["stare"] = "joc"
+    joc["scor"] = 0
+    joc["vieti"] = 3
+    joc["nivel"] = 1
+    joc["scut_pana"] = 0
+    joc["scut_ramas"] = 0
+    joc["ultimul_foc"] = 0
+    joc["orb"] = None
+    gloante.clear()
+    meteoriti.clear()
+    particule.clear()
+    nava.reseteaza()
+
+def explozie(x, y, culoare, cate=14):
+    for i in range(cate):
+        unghi = random.uniform(0, 2 * math.pi)
+        viteza = random.uniform(1, 5)
+        particule.append(Particula(x, y, math.cos(unghi) * viteza, math.sin(unghi) * viteza, random.randint(20, 40), culoare))
+
+cadru = 0
+ruleaza = True
+while ruleaza:
+    acum = pygame.time.get_ticks()
+
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_p:
+                if joc["stare"] == "joc":
+                    joc["stare"] = "pauza"
+                    joc["scut_ramas"] = max(0, joc["scut_pana"] - acum)
+                elif joc["stare"] == "pauza":
+                    joc["stare"] = "joc"
+        if eveniment.type == pygame.MOUSEBUTTONDOWN:
+            if joc["stare"] == "meniu":
+                if butoane_meniu[0].este_apasat(eveniment.pos):
+                    joc_nou()
+                elif butoane_meniu[1].este_apasat(eveniment.pos):
+                    ruleaza = False
+            elif joc["stare"] == "final":
+                if butoane_final[0].este_apasat(eveniment.pos):
+                    joc_nou()
+                elif butoane_final[1].este_apasat(eveniment.pos):
+                    joc["stare"] = "meniu"
+
+    if joc["stare"] == "pauza":
+        joc["scut_pana"] = acum + joc["scut_ramas"]
+
+    if joc["stare"] != "pauza":
+        for s in stele:
+            s[1] += s[2]
+            if s[1] > INALTIME:
+                s[1] = 0
+                s[0] = random.randint(0, LATIME)
+        for p in particule:
+            p.muta()
+        particule[:] = [p for p in particule if p.viata > 0]
+
+    if joc["stare"] == "joc":
+        cadru += 1
+        dif = dificultate(joc["nivel"])
+        nava.muta(pygame.key.get_pressed())
+
+        if pygame.key.get_pressed()[pygame.K_SPACE] and acum - joc["ultimul_foc"] > 220:
+            gloante.append(Glont(nava.rect.centerx, nava.rect.top))
+            joc["ultimul_foc"] = acum
+
+        if cadru % dif["pauza"] == 0:
+            r = random.randint(15, 35)
+            meteoriti.append(Meteorit(random.randint(r, LATIME - r), -r, r, random.randint(dif["viteza_min"], dif["viteza_max"])))
+
+        for g in gloante:
+            g.muta()
+        for m in meteoriti:
+            m.muta()
+        gloante[:] = [g for g in gloante if not g.a_iesit()]
+        meteoriti[:] = [m for m in meteoriti if not m.a_iesit()]
+
+        for g in gloante[:]:
+            for m in meteoriti[:]:
+                if g.rect.colliderect(m.rect):
+                    gloante.remove(g)
+                    meteoriti.remove(m)
+                    joc["scor"] += 1
+                    joc["nivel"] = joc["scor"] // 10 + 1
+                    explozie(m.rect.centerx, m.rect.centery, (255, 160, 0))
+                    break
+
+        for m in meteoriti[:]:
+            if m.rect.colliderect(nava.rect):
+                meteoriti.remove(m)
+                explozie(m.rect.centerx, m.rect.centery, (255, 160, 0))
+                if not scut_activ(joc["scut_pana"], acum):
+                    joc["vieti"] -= 1
+                    explozie(nava.rect.centerx, nava.rect.centery, (255, 60, 60), 24)
+
+        if joc["orb"] is None and random.randint(1, 600) == 1:
+            joc["orb"] = pygame.Rect(random.randint(20, LATIME - 44), -24, 24, 24)
+        if joc["orb"] is not None:
+            joc["orb"].y += 3
+            if joc["orb"].colliderect(nava.rect):
+                joc["scut_pana"] = acum + DURATA_SCUT
+                joc["orb"] = None
+            elif joc["orb"].top > INALTIME:
+                joc["orb"] = None
+
+        if joc["vieti"] <= 0:
+            joc["stare"] = "final"
+            if joc["scor"] > joc["record"]:
+                joc["record"] = joc["scor"]
+                salveaza_record(joc["record"])
+
+    ecran.fill((5, 5, 25))
+    for s in stele:
+        stralucire = 80 + 50 * s[2]
+        pygame.draw.rect(ecran, (stralucire, stralucire, stralucire), (s[0], s[1], s[2], s[2]))
+
+    if joc["stare"] == "meniu":
+        scrie("APARATORII", LATIME // 2, 130, (255, 220, 0), font_mare, True)
+        scrie("GALAXIEI", LATIME // 2, 195, (255, 220, 0), font_mare, True)
+        scrie("Stanga/Dreapta = mergi, SPATIU = tragi", LATIME // 2, 270, (200, 200, 200), None, True)
+        for b in butoane_meniu:
+            b.deseneaza()
+        scrie("Record: " + str(joc["record"]), LATIME // 2, 500, (120, 255, 120), None, True)
+    else:
+        for m in meteoriti:
+            m.deseneaza()
+        for g in gloante:
+            g.deseneaza()
+        if joc["orb"] is not None:
+            pygame.draw.circle(ecran, (80, 200, 255), joc["orb"].center, 12)
+            pygame.draw.circle(ecran, (255, 255, 255), joc["orb"].center, 12, 2)
+        for p in particule:
+            p.deseneaza()
+        if joc["stare"] != "final":
+            nava.deseneaza()
+            if scut_activ(joc["scut_pana"], acum):
+                pygame.draw.circle(ecran, (120, 220, 255), nava.rect.center, 42, 3)
+
+        scrie("Scor: " + str(joc["scor"]), 10, 10)
+        scrie("Nivel: " + str(joc["nivel"]), 10, 40)
+        scrie("Record: " + str(joc["record"]), 10, 70, (255, 220, 0))
+        for i in range(3):
+            if i < joc["vieti"]:
+                inima(LATIME - 30 - i * 35, 22, (230, 30, 60))
+            else:
+                inima(LATIME - 30 - i * 35, 22, (80, 80, 90))
+        if scut_activ(joc["scut_pana"], acum):
+            ramas = (joc["scut_pana"] - acum) / DURATA_SCUT
+            pygame.draw.rect(ecran, (80, 200, 255), (10, INALTIME - 24, int(150 * ramas), 14))
+            scrie("SCUT", 170, INALTIME - 28)
+
+        if joc["stare"] == "pauza":
+            scrie("PAUZA", LATIME // 2, 280, (255, 255, 255), font_mare, True)
+        if joc["stare"] == "final":
+            scrie("GAME OVER", LATIME // 2, 200, (255, 90, 90), font_mare, True)
+            scrie("Scor final: " + str(joc["scor"]), LATIME // 2, 290, (255, 255, 255), None, True)
+            scrie("Record: " + str(joc["record"]), LATIME // 2, 330, (255, 220, 0), None, True)
+            for b in butoane_final:
+                b.deseneaza()
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** după ce prinzi bila albastră, apeși **P**: apare „PAUZA”, dar inelul și bara scutului rămân pe ecran și nu se micșorează. La reluare, scutul continuă exact de unde a rămas. La apăsarea lui **P** salvăm timpul rămas în `scut_ramas`, iar cât timp jocul este în pauză mutăm mereu `scut_pana` înainte, ca `scut_pana = acum + scut_ramas`.
+
+### 2. Ecran de reguli
+```python
+import math
+import random
+import pygame
+
+pygame.init()
+LATIME = 600
+INALTIME = 650
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Aparatorii galaxiei")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 32)
+font_mare = pygame.font.Font(None, 70)
+
+FISIER_RECORD = "record_galaxie.txt"
+DURATA_SCUT = 5000
+
+def citeste_record():
+    try:
+        with open(FISIER_RECORD, "r") as f:
+            return int(f.read().strip())
+    except (FileNotFoundError, ValueError):
+        return 0
+
+def salveaza_record(valoare):
+    with open(FISIER_RECORD, "w") as f:
+        f.write(str(valoare))
+
+def scrie(text, x, y, culoare=(255, 255, 255), fnt=None, centrat=False):
+    if fnt is None:
+        fnt = font
+    imagine = fnt.render(text, True, culoare)
+    if centrat:
+        x = x - imagine.get_width() // 2
+    ecran.blit(imagine, (x, y))
+
+def dificultate(nivel):
+    return {
+        "viteza_min": 2 + nivel,
+        "viteza_max": 4 + nivel,
+        "pauza": max(15, 60 - nivel * 8),
+    }
+
+def scut_activ(pana, acum):
+    return pana > acum
+
+def inima(x, y, culoare):
+    pygame.draw.circle(ecran, culoare, (x - 6, y), 7)
+    pygame.draw.circle(ecran, culoare, (x + 6, y), 7)
+    pygame.draw.polygon(ecran, culoare, [(x - 13, y + 2), (x + 13, y + 2), (x, y + 18)])
+
+class Nava:
+    def __init__(self):
+        self.rect = pygame.Rect(0, 0, 50, 40)
+        self.viteza = 7
+        self.reseteaza()
+
+    def reseteaza(self):
+        self.rect.midbottom = (LATIME // 2, INALTIME - 25)
+
+    def muta(self, taste):
+        if taste[pygame.K_LEFT] or taste[pygame.K_a]:
+            self.rect.x -= self.viteza
+        if taste[pygame.K_RIGHT] or taste[pygame.K_d]:
+            self.rect.x += self.viteza
+        self.rect.clamp_ip(ecran.get_rect())
+
+    def deseneaza(self):
+        r = self.rect
+        pygame.draw.polygon(ecran, (255, 160, 0), [(r.centerx - 8, r.bottom), (r.centerx + 8, r.bottom), (r.centerx, r.bottom + 14)])
+        pygame.draw.polygon(ecran, (0, 200, 255), [(r.centerx, r.top), (r.left, r.bottom), (r.right, r.bottom)])
+
+class Glont:
+    def __init__(self, x, y):
+        self.rect = pygame.Rect(0, 0, 6, 16)
+        self.rect.midbottom = (x, y)
+        self.viteza = 10
+
+    def muta(self):
+        self.rect.y -= self.viteza
+
+    def a_iesit(self):
+        return self.rect.bottom < 0
+
+    def deseneaza(self):
+        pygame.draw.rect(ecran, (255, 240, 100), self.rect, border_radius=3)
+
+class Meteorit:
+    def __init__(self, x, y, raza, viteza):
+        self.raza = raza
+        self.viteza = viteza
+        self.rect = pygame.Rect(0, 0, 2 * raza, 2 * raza)
+        self.rect.center = (x, y)
+
+    def muta(self):
+        self.rect.y += self.viteza
+
+    def a_iesit(self):
+        return self.rect.top > INALTIME
+
+    def deseneaza(self):
+        pygame.draw.circle(ecran, (130, 125, 120), self.rect.center, self.raza)
+        pygame.draw.circle(ecran, (95, 90, 85), (self.rect.centerx - self.raza // 3, self.rect.centery - self.raza // 4), self.raza // 4)
+        pygame.draw.circle(ecran, (95, 90, 85), (self.rect.centerx + self.raza // 3, self.rect.centery + self.raza // 3), self.raza // 5)
+
+class Particula:
+    def __init__(self, x, y, dx, dy, viata, culoare):
+        self.x = x
+        self.y = y
+        self.dx = dx
+        self.dy = dy
+        self.viata = viata
+        self.culoare = culoare
+
+    def muta(self):
+        self.x += self.dx
+        self.y += self.dy
+        self.viata -= 1
+
+    def deseneaza(self):
+        pygame.draw.circle(ecran, self.culoare, (int(self.x), int(self.y)), max(1, self.viata // 8))
+
+class Buton:
+    def __init__(self, text, x, y, latime, inaltime):
+        self.text = text
+        self.rect = pygame.Rect(x, y, latime, inaltime)
+
+    def este_apasat(self, pozitie):
+        return self.rect.collidepoint(pozitie)
+
+    def deseneaza(self):
+        if self.rect.collidepoint(pygame.mouse.get_pos()):
+            culoare = (70, 140, 255)
+        else:
+            culoare = (40, 90, 200)
+        pygame.draw.rect(ecran, culoare, self.rect, border_radius=12)
+        pygame.draw.rect(ecran, (255, 255, 255), self.rect, 2, border_radius=12)
+        imagine = font.render(self.text, True, (255, 255, 255))
+        ecran.blit(imagine, imagine.get_rect(center=self.rect.center))
+
+nava = Nava()
+gloante = []
+meteoriti = []
+particule = []
+stele = []
+for i in range(60):
+    stele.append([random.randint(0, LATIME), random.randint(0, INALTIME), random.randint(1, 3)])
+
+butoane_meniu = [Buton("Joaca", 200, 330, 200, 55), Buton("Reguli", 200, 400, 200, 55), Buton("Iesire", 200, 470, 200, 55)]
+buton_inapoi = Buton("Inapoi", 200, 520, 200, 55)
+butoane_final = [Buton("Din nou", 200, 400, 200, 55), Buton("Meniu", 200, 480, 200, 55)]
+
+joc = {"stare": "meniu", "scor": 0, "vieti": 3, "nivel": 1, "record": citeste_record(),
+       "scut_pana": 0, "ultimul_foc": 0, "orb": None}
+
+def joc_nou():
+    joc["stare"] = "joc"
+    joc["scor"] = 0
+    joc["vieti"] = 3
+    joc["nivel"] = 1
+    joc["scut_pana"] = 0
+    joc["ultimul_foc"] = 0
+    joc["orb"] = None
+    gloante.clear()
+    meteoriti.clear()
+    particule.clear()
+    nava.reseteaza()
+
+def explozie(x, y, culoare, cate=14):
+    for i in range(cate):
+        unghi = random.uniform(0, 2 * math.pi)
+        viteza = random.uniform(1, 5)
+        particule.append(Particula(x, y, math.cos(unghi) * viteza, math.sin(unghi) * viteza, random.randint(20, 40), culoare))
+
+cadru = 0
+ruleaza = True
+while ruleaza:
+    acum = pygame.time.get_ticks()
+
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_p:
+                if joc["stare"] == "joc":
+                    joc["stare"] = "pauza"
+                elif joc["stare"] == "pauza":
+                    joc["stare"] = "joc"
+        if eveniment.type == pygame.MOUSEBUTTONDOWN:
+            if joc["stare"] == "meniu":
+                if butoane_meniu[0].este_apasat(eveniment.pos):
+                    joc_nou()
+                elif butoane_meniu[1].este_apasat(eveniment.pos):
+                    joc["stare"] = "reguli"
+                elif butoane_meniu[2].este_apasat(eveniment.pos):
+                    ruleaza = False
+            elif joc["stare"] == "reguli":
+                if buton_inapoi.este_apasat(eveniment.pos):
+                    joc["stare"] = "meniu"
+            elif joc["stare"] == "final":
+                if butoane_final[0].este_apasat(eveniment.pos):
+                    joc_nou()
+                elif butoane_final[1].este_apasat(eveniment.pos):
+                    joc["stare"] = "meniu"
+
+    if joc["stare"] != "pauza":
+        for s in stele:
+            s[1] += s[2]
+            if s[1] > INALTIME:
+                s[1] = 0
+                s[0] = random.randint(0, LATIME)
+        for p in particule:
+            p.muta()
+        particule[:] = [p for p in particule if p.viata > 0]
+
+    if joc["stare"] == "joc":
+        cadru += 1
+        dif = dificultate(joc["nivel"])
+        nava.muta(pygame.key.get_pressed())
+
+        if pygame.key.get_pressed()[pygame.K_SPACE] and acum - joc["ultimul_foc"] > 220:
+            gloante.append(Glont(nava.rect.centerx, nava.rect.top))
+            joc["ultimul_foc"] = acum
+
+        if cadru % dif["pauza"] == 0:
+            r = random.randint(15, 35)
+            meteoriti.append(Meteorit(random.randint(r, LATIME - r), -r, r, random.randint(dif["viteza_min"], dif["viteza_max"])))
+
+        for g in gloante:
+            g.muta()
+        for m in meteoriti:
+            m.muta()
+        gloante[:] = [g for g in gloante if not g.a_iesit()]
+        meteoriti[:] = [m for m in meteoriti if not m.a_iesit()]
+
+        for g in gloante[:]:
+            for m in meteoriti[:]:
+                if g.rect.colliderect(m.rect):
+                    gloante.remove(g)
+                    meteoriti.remove(m)
+                    joc["scor"] += 1
+                    joc["nivel"] = joc["scor"] // 10 + 1
+                    explozie(m.rect.centerx, m.rect.centery, (255, 160, 0))
+                    break
+
+        for m in meteoriti[:]:
+            if m.rect.colliderect(nava.rect):
+                meteoriti.remove(m)
+                explozie(m.rect.centerx, m.rect.centery, (255, 160, 0))
+                if not scut_activ(joc["scut_pana"], acum):
+                    joc["vieti"] -= 1
+                    explozie(nava.rect.centerx, nava.rect.centery, (255, 60, 60), 24)
+
+        if joc["orb"] is None and random.randint(1, 600) == 1:
+            joc["orb"] = pygame.Rect(random.randint(20, LATIME - 44), -24, 24, 24)
+        if joc["orb"] is not None:
+            joc["orb"].y += 3
+            if joc["orb"].colliderect(nava.rect):
+                joc["scut_pana"] = acum + DURATA_SCUT
+                joc["orb"] = None
+            elif joc["orb"].top > INALTIME:
+                joc["orb"] = None
+
+        if joc["vieti"] <= 0:
+            joc["stare"] = "final"
+            if joc["scor"] > joc["record"]:
+                joc["record"] = joc["scor"]
+                salveaza_record(joc["record"])
+
+    ecran.fill((5, 5, 25))
+    for s in stele:
+        stralucire = 80 + 50 * s[2]
+        pygame.draw.rect(ecran, (stralucire, stralucire, stralucire), (s[0], s[1], s[2], s[2]))
+
+    if joc["stare"] == "meniu":
+        scrie("APARATORII", LATIME // 2, 130, (255, 220, 0), font_mare, True)
+        scrie("GALAXIEI", LATIME // 2, 195, (255, 220, 0), font_mare, True)
+        scrie("Stanga/Dreapta = mergi, SPATIU = tragi", LATIME // 2, 270, (200, 200, 200), None, True)
+        for b in butoane_meniu:
+            b.deseneaza()
+        scrie("Record: " + str(joc["record"]), LATIME // 2, 560, (120, 255, 120), None, True)
+    elif joc["stare"] == "reguli":
+        scrie("REGULI", LATIME // 2, 110, (255, 220, 0), font_mare, True)
+        scrie("Fereste-te de meteoriti sau distruge-i cu gloante", LATIME // 2, 220, (255, 255, 255), None, True)
+        scrie("Meteorit distrus = +1 punct", LATIME // 2, 270, (255, 255, 255), None, True)
+        scrie("Meteorit care te atinge = -1 viata", LATIME // 2, 320, (255, 255, 255), None, True)
+        scrie("Bila albastra = scut de 5 secunde", LATIME // 2, 370, (255, 255, 255), None, True)
+        scrie("P = pauza", LATIME // 2, 420, (200, 200, 200), None, True)
+        buton_inapoi.deseneaza()
+    else:
+        for m in meteoriti:
+            m.deseneaza()
+        for g in gloante:
+            g.deseneaza()
+        if joc["orb"] is not None:
+            pygame.draw.circle(ecran, (80, 200, 255), joc["orb"].center, 12)
+            pygame.draw.circle(ecran, (255, 255, 255), joc["orb"].center, 12, 2)
+        for p in particule:
+            p.deseneaza()
+        if joc["stare"] != "final":
+            nava.deseneaza()
+            if scut_activ(joc["scut_pana"], acum):
+                pygame.draw.circle(ecran, (120, 220, 255), nava.rect.center, 42, 3)
+
+        scrie("Scor: " + str(joc["scor"]), 10, 10)
+        scrie("Nivel: " + str(joc["nivel"]), 10, 40)
+        scrie("Record: " + str(joc["record"]), 10, 70, (255, 220, 0))
+        for i in range(3):
+            if i < joc["vieti"]:
+                inima(LATIME - 30 - i * 35, 22, (230, 30, 60))
+            else:
+                inima(LATIME - 30 - i * 35, 22, (80, 80, 90))
+        if scut_activ(joc["scut_pana"], acum):
+            ramas = (joc["scut_pana"] - acum) / DURATA_SCUT
+            pygame.draw.rect(ecran, (80, 200, 255), (10, INALTIME - 24, int(150 * ramas), 14))
+            scrie("SCUT", 170, INALTIME - 28)
+
+        if joc["stare"] == "pauza":
+            scrie("PAUZA", LATIME // 2, 280, (255, 255, 255), font_mare, True)
+        if joc["stare"] == "final":
+            scrie("GAME OVER", LATIME // 2, 200, (255, 90, 90), font_mare, True)
+            scrie("Scor final: " + str(joc["scor"]), LATIME // 2, 290, (255, 255, 255), None, True)
+            scrie("Record: " + str(joc["record"]), LATIME // 2, 330, (255, 220, 0), None, True)
+            for b in butoane_final:
+                b.deseneaza()
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** meniul are trei butoane: „Joaca”, „Reguli” și „Iesire”. „Reguli” deschide un ecran cu regulile jocului și un buton „Inapoi”, care te readuce în meniu. Este o stare nouă, `"reguli"`, cu propriul desen și propriul click.
+
+### 3. Top 5
+```python
+import math
+import random
+import pygame
+
+pygame.init()
+LATIME = 600
+INALTIME = 650
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Aparatorii galaxiei")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 32)
+font_mare = pygame.font.Font(None, 70)
+
+FISIER_TOP = "top_galaxie.txt"
+DURATA_SCUT = 5000
+
+def citeste_top():
+    top = []
+    try:
+        with open(FISIER_TOP, "r") as f:
+            for linie in f:
+                try:
+                    top.append(int(linie.strip()))
+                except ValueError:
+                    pass
+    except FileNotFoundError:
+        pass
+    top.sort(reverse=True)
+    return top[:5]
+
+def salveaza_top(top):
+    with open(FISIER_TOP, "w") as f:
+        for scor in top:
+            f.write(str(scor) + "\n")
+
+def scrie(text, x, y, culoare=(255, 255, 255), fnt=None, centrat=False):
+    if fnt is None:
+        fnt = font
+    imagine = fnt.render(text, True, culoare)
+    if centrat:
+        x = x - imagine.get_width() // 2
+    ecran.blit(imagine, (x, y))
+
+def dificultate(nivel):
+    return {
+        "viteza_min": 2 + nivel,
+        "viteza_max": 4 + nivel,
+        "pauza": max(15, 60 - nivel * 8),
+    }
+
+def scut_activ(pana, acum):
+    return pana > acum
+
+def inima(x, y, culoare):
+    pygame.draw.circle(ecran, culoare, (x - 6, y), 7)
+    pygame.draw.circle(ecran, culoare, (x + 6, y), 7)
+    pygame.draw.polygon(ecran, culoare, [(x - 13, y + 2), (x + 13, y + 2), (x, y + 18)])
+
+class Nava:
+    def __init__(self):
+        self.rect = pygame.Rect(0, 0, 50, 40)
+        self.viteza = 7
+        self.reseteaza()
+
+    def reseteaza(self):
+        self.rect.midbottom = (LATIME // 2, INALTIME - 25)
+
+    def muta(self, taste):
+        if taste[pygame.K_LEFT] or taste[pygame.K_a]:
+            self.rect.x -= self.viteza
+        if taste[pygame.K_RIGHT] or taste[pygame.K_d]:
+            self.rect.x += self.viteza
+        self.rect.clamp_ip(ecran.get_rect())
+
+    def deseneaza(self):
+        r = self.rect
+        pygame.draw.polygon(ecran, (255, 160, 0), [(r.centerx - 8, r.bottom), (r.centerx + 8, r.bottom), (r.centerx, r.bottom + 14)])
+        pygame.draw.polygon(ecran, (0, 200, 255), [(r.centerx, r.top), (r.left, r.bottom), (r.right, r.bottom)])
+
+class Glont:
+    def __init__(self, x, y):
+        self.rect = pygame.Rect(0, 0, 6, 16)
+        self.rect.midbottom = (x, y)
+        self.viteza = 10
+
+    def muta(self):
+        self.rect.y -= self.viteza
+
+    def a_iesit(self):
+        return self.rect.bottom < 0
+
+    def deseneaza(self):
+        pygame.draw.rect(ecran, (255, 240, 100), self.rect, border_radius=3)
+
+class Meteorit:
+    def __init__(self, x, y, raza, viteza):
+        self.raza = raza
+        self.viteza = viteza
+        self.rect = pygame.Rect(0, 0, 2 * raza, 2 * raza)
+        self.rect.center = (x, y)
+
+    def muta(self):
+        self.rect.y += self.viteza
+
+    def a_iesit(self):
+        return self.rect.top > INALTIME
+
+    def deseneaza(self):
+        pygame.draw.circle(ecran, (130, 125, 120), self.rect.center, self.raza)
+        pygame.draw.circle(ecran, (95, 90, 85), (self.rect.centerx - self.raza // 3, self.rect.centery - self.raza // 4), self.raza // 4)
+        pygame.draw.circle(ecran, (95, 90, 85), (self.rect.centerx + self.raza // 3, self.rect.centery + self.raza // 3), self.raza // 5)
+
+class Particula:
+    def __init__(self, x, y, dx, dy, viata, culoare):
+        self.x = x
+        self.y = y
+        self.dx = dx
+        self.dy = dy
+        self.viata = viata
+        self.culoare = culoare
+
+    def muta(self):
+        self.x += self.dx
+        self.y += self.dy
+        self.viata -= 1
+
+    def deseneaza(self):
+        pygame.draw.circle(ecran, self.culoare, (int(self.x), int(self.y)), max(1, self.viata // 8))
+
+class Buton:
+    def __init__(self, text, x, y, latime, inaltime):
+        self.text = text
+        self.rect = pygame.Rect(x, y, latime, inaltime)
+
+    def este_apasat(self, pozitie):
+        return self.rect.collidepoint(pozitie)
+
+    def deseneaza(self):
+        if self.rect.collidepoint(pygame.mouse.get_pos()):
+            culoare = (70, 140, 255)
+        else:
+            culoare = (40, 90, 200)
+        pygame.draw.rect(ecran, culoare, self.rect, border_radius=12)
+        pygame.draw.rect(ecran, (255, 255, 255), self.rect, 2, border_radius=12)
+        imagine = font.render(self.text, True, (255, 255, 255))
+        ecran.blit(imagine, imagine.get_rect(center=self.rect.center))
+
+nava = Nava()
+gloante = []
+meteoriti = []
+particule = []
+stele = []
+for i in range(60):
+    stele.append([random.randint(0, LATIME), random.randint(0, INALTIME), random.randint(1, 3)])
+
+butoane_meniu = [Buton("Joaca", 200, 330, 200, 55), Buton("Iesire", 200, 410, 200, 55)]
+butoane_final = [Buton("Din nou", 200, 400, 200, 55), Buton("Meniu", 200, 480, 200, 55)]
+
+joc = {"stare": "meniu", "scor": 0, "vieti": 3, "nivel": 1, "top": citeste_top(), "record": 0,
+       "scut_pana": 0, "ultimul_foc": 0, "orb": None}
+
+if len(joc["top"]) > 0:
+    joc["record"] = joc["top"][0]
+
+def joc_nou():
+    joc["stare"] = "joc"
+    joc["scor"] = 0
+    joc["vieti"] = 3
+    joc["nivel"] = 1
+    joc["scut_pana"] = 0
+    joc["ultimul_foc"] = 0
+    joc["orb"] = None
+    gloante.clear()
+    meteoriti.clear()
+    particule.clear()
+    nava.reseteaza()
+
+def explozie(x, y, culoare, cate=14):
+    for i in range(cate):
+        unghi = random.uniform(0, 2 * math.pi)
+        viteza = random.uniform(1, 5)
+        particule.append(Particula(x, y, math.cos(unghi) * viteza, math.sin(unghi) * viteza, random.randint(20, 40), culoare))
+
+cadru = 0
+ruleaza = True
+while ruleaza:
+    acum = pygame.time.get_ticks()
+
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_p:
+                if joc["stare"] == "joc":
+                    joc["stare"] = "pauza"
+                elif joc["stare"] == "pauza":
+                    joc["stare"] = "joc"
+        if eveniment.type == pygame.MOUSEBUTTONDOWN:
+            if joc["stare"] == "meniu":
+                if butoane_meniu[0].este_apasat(eveniment.pos):
+                    joc_nou()
+                elif butoane_meniu[1].este_apasat(eveniment.pos):
+                    ruleaza = False
+            elif joc["stare"] == "final":
+                if butoane_final[0].este_apasat(eveniment.pos):
+                    joc_nou()
+                elif butoane_final[1].este_apasat(eveniment.pos):
+                    joc["stare"] = "meniu"
+
+    if joc["stare"] != "pauza":
+        for s in stele:
+            s[1] += s[2]
+            if s[1] > INALTIME:
+                s[1] = 0
+                s[0] = random.randint(0, LATIME)
+        for p in particule:
+            p.muta()
+        particule[:] = [p for p in particule if p.viata > 0]
+
+    if joc["stare"] == "joc":
+        cadru += 1
+        dif = dificultate(joc["nivel"])
+        nava.muta(pygame.key.get_pressed())
+
+        if pygame.key.get_pressed()[pygame.K_SPACE] and acum - joc["ultimul_foc"] > 220:
+            gloante.append(Glont(nava.rect.centerx, nava.rect.top))
+            joc["ultimul_foc"] = acum
+
+        if cadru % dif["pauza"] == 0:
+            r = random.randint(15, 35)
+            meteoriti.append(Meteorit(random.randint(r, LATIME - r), -r, r, random.randint(dif["viteza_min"], dif["viteza_max"])))
+
+        for g in gloante:
+            g.muta()
+        for m in meteoriti:
+            m.muta()
+        gloante[:] = [g for g in gloante if not g.a_iesit()]
+        meteoriti[:] = [m for m in meteoriti if not m.a_iesit()]
+
+        for g in gloante[:]:
+            for m in meteoriti[:]:
+                if g.rect.colliderect(m.rect):
+                    gloante.remove(g)
+                    meteoriti.remove(m)
+                    joc["scor"] += 1
+                    joc["nivel"] = joc["scor"] // 10 + 1
+                    explozie(m.rect.centerx, m.rect.centery, (255, 160, 0))
+                    break
+
+        for m in meteoriti[:]:
+            if m.rect.colliderect(nava.rect):
+                meteoriti.remove(m)
+                explozie(m.rect.centerx, m.rect.centery, (255, 160, 0))
+                if not scut_activ(joc["scut_pana"], acum):
+                    joc["vieti"] -= 1
+                    explozie(nava.rect.centerx, nava.rect.centery, (255, 60, 60), 24)
+
+        if joc["orb"] is None and random.randint(1, 600) == 1:
+            joc["orb"] = pygame.Rect(random.randint(20, LATIME - 44), -24, 24, 24)
+        if joc["orb"] is not None:
+            joc["orb"].y += 3
+            if joc["orb"].colliderect(nava.rect):
+                joc["scut_pana"] = acum + DURATA_SCUT
+                joc["orb"] = None
+            elif joc["orb"].top > INALTIME:
+                joc["orb"] = None
+
+        if joc["vieti"] <= 0:
+            joc["stare"] = "final"
+            joc["top"].append(joc["scor"])
+            joc["top"].sort(reverse=True)
+            joc["top"][:] = joc["top"][:5]
+            salveaza_top(joc["top"])
+            joc["record"] = joc["top"][0]
+
+    ecran.fill((5, 5, 25))
+    for s in stele:
+        stralucire = 80 + 50 * s[2]
+        pygame.draw.rect(ecran, (stralucire, stralucire, stralucire), (s[0], s[1], s[2], s[2]))
+
+    if joc["stare"] == "meniu":
+        scrie("APARATORII", LATIME // 2, 130, (255, 220, 0), font_mare, True)
+        scrie("GALAXIEI", LATIME // 2, 195, (255, 220, 0), font_mare, True)
+        scrie("Stanga/Dreapta = mergi, SPATIU = tragi", LATIME // 2, 270, (200, 200, 200), None, True)
+        for b in butoane_meniu:
+            b.deseneaza()
+        scrie("TOP 5", LATIME // 2, 490, (120, 255, 120), None, True)
+        loc = 1
+        for scor in joc["top"]:
+            scrie(str(loc) + ". " + str(scor), LATIME // 2, 490 + loc * 26, (220, 220, 220), None, True)
+            loc += 1
+    else:
+        for m in meteoriti:
+            m.deseneaza()
+        for g in gloante:
+            g.deseneaza()
+        if joc["orb"] is not None:
+            pygame.draw.circle(ecran, (80, 200, 255), joc["orb"].center, 12)
+            pygame.draw.circle(ecran, (255, 255, 255), joc["orb"].center, 12, 2)
+        for p in particule:
+            p.deseneaza()
+        if joc["stare"] != "final":
+            nava.deseneaza()
+            if scut_activ(joc["scut_pana"], acum):
+                pygame.draw.circle(ecran, (120, 220, 255), nava.rect.center, 42, 3)
+
+        scrie("Scor: " + str(joc["scor"]), 10, 10)
+        scrie("Nivel: " + str(joc["nivel"]), 10, 40)
+        scrie("Record: " + str(joc["record"]), 10, 70, (255, 220, 0))
+        for i in range(3):
+            if i < joc["vieti"]:
+                inima(LATIME - 30 - i * 35, 22, (230, 30, 60))
+            else:
+                inima(LATIME - 30 - i * 35, 22, (80, 80, 90))
+        if scut_activ(joc["scut_pana"], acum):
+            ramas = (joc["scut_pana"] - acum) / DURATA_SCUT
+            pygame.draw.rect(ecran, (80, 200, 255), (10, INALTIME - 24, int(150 * ramas), 14))
+            scrie("SCUT", 170, INALTIME - 28)
+
+        if joc["stare"] == "pauza":
+            scrie("PAUZA", LATIME // 2, 280, (255, 255, 255), font_mare, True)
+        if joc["stare"] == "final":
+            scrie("GAME OVER", LATIME // 2, 200, (255, 90, 90), font_mare, True)
+            scrie("Scor final: " + str(joc["scor"]), LATIME // 2, 290, (255, 255, 255), None, True)
+            scrie("Record: " + str(joc["record"]), LATIME // 2, 330, (255, 220, 0), None, True)
+            for b in butoane_final:
+                b.deseneaza()
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** în meniu apare „TOP 5”, cu cele mai bune scoruri, numerotate. La fiecare GAME OVER scorul intră în listă, se sortează descrescător, rămân primele 5 și lista se scrie în `top_galaxie.txt`. Dacă fișierul lipsește sau are linii stricate, `citeste_top` le ignoră și jocul pornește fără erori.
+
+### 4. Imagini
+```python
+import math
+import random
+import pygame
+
+pygame.init()
+LATIME = 600
+INALTIME = 650
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Aparatorii galaxiei")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 32)
+font_mare = pygame.font.Font(None, 70)
+
+FISIER_RECORD = "record_galaxie.txt"
+DURATA_SCUT = 5000
+
+def citeste_record():
+    try:
+        with open(FISIER_RECORD, "r") as f:
+            return int(f.read().strip())
+    except (FileNotFoundError, ValueError):
+        return 0
+
+def salveaza_record(valoare):
+    with open(FISIER_RECORD, "w") as f:
+        f.write(str(valoare))
+
+def scrie(text, x, y, culoare=(255, 255, 255), fnt=None, centrat=False):
+    if fnt is None:
+        fnt = font
+    imagine = fnt.render(text, True, culoare)
+    if centrat:
+        x = x - imagine.get_width() // 2
+    ecran.blit(imagine, (x, y))
+
+def dificultate(nivel):
+    return {
+        "viteza_min": 2 + nivel,
+        "viteza_max": 4 + nivel,
+        "pauza": max(15, 60 - nivel * 8),
+    }
+
+def scut_activ(pana, acum):
+    return pana > acum
+
+def inima(x, y, culoare):
+    pygame.draw.circle(ecran, culoare, (x - 6, y), 7)
+    pygame.draw.circle(ecran, culoare, (x + 6, y), 7)
+    pygame.draw.polygon(ecran, culoare, [(x - 13, y + 2), (x + 13, y + 2), (x, y + 18)])
+
+img_nava = pygame.Surface((50, 56), pygame.SRCALPHA)
+pygame.draw.polygon(img_nava, (255, 160, 0), [(17, 40), (33, 40), (25, 56)])
+pygame.draw.polygon(img_nava, (0, 200, 255), [(25, 0), (0, 40), (50, 40)])
+pygame.draw.circle(img_nava, (255, 255, 255), (25, 22), 6)
+
+img_meteorit = pygame.Surface((60, 60), pygame.SRCALPHA)
+pygame.draw.circle(img_meteorit, (130, 125, 120), (30, 30), 30)
+pygame.draw.circle(img_meteorit, (95, 90, 85), (20, 22), 8)
+pygame.draw.circle(img_meteorit, (95, 90, 85), (40, 38), 6)
+
+class Nava:
+    def __init__(self):
+        self.rect = pygame.Rect(0, 0, 50, 40)
+        self.viteza = 7
+        self.reseteaza()
+
+    def reseteaza(self):
+        self.rect.midbottom = (LATIME // 2, INALTIME - 25)
+
+    def muta(self, taste):
+        if taste[pygame.K_LEFT] or taste[pygame.K_a]:
+            self.rect.x -= self.viteza
+        if taste[pygame.K_RIGHT] or taste[pygame.K_d]:
+            self.rect.x += self.viteza
+        self.rect.clamp_ip(ecran.get_rect())
+
+    def deseneaza(self):
+        ecran.blit(img_nava, (self.rect.x, self.rect.y))
+
+class Glont:
+    def __init__(self, x, y):
+        self.rect = pygame.Rect(0, 0, 6, 16)
+        self.rect.midbottom = (x, y)
+        self.viteza = 10
+
+    def muta(self):
+        self.rect.y -= self.viteza
+
+    def a_iesit(self):
+        return self.rect.bottom < 0
+
+    def deseneaza(self):
+        pygame.draw.rect(ecran, (255, 240, 100), self.rect, border_radius=3)
+
+class Meteorit:
+    def __init__(self, x, y, raza, viteza):
+        self.raza = raza
+        self.viteza = viteza
+        self.rect = pygame.Rect(0, 0, 2 * raza, 2 * raza)
+        self.rect.center = (x, y)
+        self.imagine = pygame.transform.scale(img_meteorit, (2 * raza, 2 * raza))
+
+    def muta(self):
+        self.rect.y += self.viteza
+
+    def a_iesit(self):
+        return self.rect.top > INALTIME
+
+    def deseneaza(self):
+        ecran.blit(self.imagine, self.rect)
+
+class Particula:
+    def __init__(self, x, y, dx, dy, viata, culoare):
+        self.x = x
+        self.y = y
+        self.dx = dx
+        self.dy = dy
+        self.viata = viata
+        self.culoare = culoare
+
+    def muta(self):
+        self.x += self.dx
+        self.y += self.dy
+        self.viata -= 1
+
+    def deseneaza(self):
+        pygame.draw.circle(ecran, self.culoare, (int(self.x), int(self.y)), max(1, self.viata // 8))
+
+class Buton:
+    def __init__(self, text, x, y, latime, inaltime):
+        self.text = text
+        self.rect = pygame.Rect(x, y, latime, inaltime)
+
+    def este_apasat(self, pozitie):
+        return self.rect.collidepoint(pozitie)
+
+    def deseneaza(self):
+        if self.rect.collidepoint(pygame.mouse.get_pos()):
+            culoare = (70, 140, 255)
+        else:
+            culoare = (40, 90, 200)
+        pygame.draw.rect(ecran, culoare, self.rect, border_radius=12)
+        pygame.draw.rect(ecran, (255, 255, 255), self.rect, 2, border_radius=12)
+        imagine = font.render(self.text, True, (255, 255, 255))
+        ecran.blit(imagine, imagine.get_rect(center=self.rect.center))
+
+nava = Nava()
+gloante = []
+meteoriti = []
+particule = []
+stele = []
+for i in range(60):
+    stele.append([random.randint(0, LATIME), random.randint(0, INALTIME), random.randint(1, 3)])
+
+butoane_meniu = [Buton("Joaca", 200, 330, 200, 55), Buton("Iesire", 200, 410, 200, 55)]
+butoane_final = [Buton("Din nou", 200, 400, 200, 55), Buton("Meniu", 200, 480, 200, 55)]
+
+joc = {"stare": "meniu", "scor": 0, "vieti": 3, "nivel": 1, "record": citeste_record(),
+       "scut_pana": 0, "ultimul_foc": 0, "orb": None}
+
+def joc_nou():
+    joc["stare"] = "joc"
+    joc["scor"] = 0
+    joc["vieti"] = 3
+    joc["nivel"] = 1
+    joc["scut_pana"] = 0
+    joc["ultimul_foc"] = 0
+    joc["orb"] = None
+    gloante.clear()
+    meteoriti.clear()
+    particule.clear()
+    nava.reseteaza()
+
+def explozie(x, y, culoare, cate=14):
+    for i in range(cate):
+        unghi = random.uniform(0, 2 * math.pi)
+        viteza = random.uniform(1, 5)
+        particule.append(Particula(x, y, math.cos(unghi) * viteza, math.sin(unghi) * viteza, random.randint(20, 40), culoare))
+
+cadru = 0
+ruleaza = True
+while ruleaza:
+    acum = pygame.time.get_ticks()
+
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_p:
+                if joc["stare"] == "joc":
+                    joc["stare"] = "pauza"
+                elif joc["stare"] == "pauza":
+                    joc["stare"] = "joc"
+        if eveniment.type == pygame.MOUSEBUTTONDOWN:
+            if joc["stare"] == "meniu":
+                if butoane_meniu[0].este_apasat(eveniment.pos):
+                    joc_nou()
+                elif butoane_meniu[1].este_apasat(eveniment.pos):
+                    ruleaza = False
+            elif joc["stare"] == "final":
+                if butoane_final[0].este_apasat(eveniment.pos):
+                    joc_nou()
+                elif butoane_final[1].este_apasat(eveniment.pos):
+                    joc["stare"] = "meniu"
+
+    if joc["stare"] != "pauza":
+        for s in stele:
+            s[1] += s[2]
+            if s[1] > INALTIME:
+                s[1] = 0
+                s[0] = random.randint(0, LATIME)
+        for p in particule:
+            p.muta()
+        particule[:] = [p for p in particule if p.viata > 0]
+
+    if joc["stare"] == "joc":
+        cadru += 1
+        dif = dificultate(joc["nivel"])
+        nava.muta(pygame.key.get_pressed())
+
+        if pygame.key.get_pressed()[pygame.K_SPACE] and acum - joc["ultimul_foc"] > 220:
+            gloante.append(Glont(nava.rect.centerx, nava.rect.top))
+            joc["ultimul_foc"] = acum
+
+        if cadru % dif["pauza"] == 0:
+            r = random.randint(15, 35)
+            meteoriti.append(Meteorit(random.randint(r, LATIME - r), -r, r, random.randint(dif["viteza_min"], dif["viteza_max"])))
+
+        for g in gloante:
+            g.muta()
+        for m in meteoriti:
+            m.muta()
+        gloante[:] = [g for g in gloante if not g.a_iesit()]
+        meteoriti[:] = [m for m in meteoriti if not m.a_iesit()]
+
+        for g in gloante[:]:
+            for m in meteoriti[:]:
+                if g.rect.colliderect(m.rect):
+                    gloante.remove(g)
+                    meteoriti.remove(m)
+                    joc["scor"] += 1
+                    joc["nivel"] = joc["scor"] // 10 + 1
+                    explozie(m.rect.centerx, m.rect.centery, (255, 160, 0))
+                    break
+
+        for m in meteoriti[:]:
+            if m.rect.colliderect(nava.rect):
+                meteoriti.remove(m)
+                explozie(m.rect.centerx, m.rect.centery, (255, 160, 0))
+                if not scut_activ(joc["scut_pana"], acum):
+                    joc["vieti"] -= 1
+                    explozie(nava.rect.centerx, nava.rect.centery, (255, 60, 60), 24)
+
+        if joc["orb"] is None and random.randint(1, 600) == 1:
+            joc["orb"] = pygame.Rect(random.randint(20, LATIME - 44), -24, 24, 24)
+        if joc["orb"] is not None:
+            joc["orb"].y += 3
+            if joc["orb"].colliderect(nava.rect):
+                joc["scut_pana"] = acum + DURATA_SCUT
+                joc["orb"] = None
+            elif joc["orb"].top > INALTIME:
+                joc["orb"] = None
+
+        if joc["vieti"] <= 0:
+            joc["stare"] = "final"
+            if joc["scor"] > joc["record"]:
+                joc["record"] = joc["scor"]
+                salveaza_record(joc["record"])
+
+    ecran.fill((5, 5, 25))
+    for s in stele:
+        stralucire = 80 + 50 * s[2]
+        pygame.draw.rect(ecran, (stralucire, stralucire, stralucire), (s[0], s[1], s[2], s[2]))
+
+    if joc["stare"] == "meniu":
+        scrie("APARATORII", LATIME // 2, 130, (255, 220, 0), font_mare, True)
+        scrie("GALAXIEI", LATIME // 2, 195, (255, 220, 0), font_mare, True)
+        scrie("Stanga/Dreapta = mergi, SPATIU = tragi", LATIME // 2, 270, (200, 200, 200), None, True)
+        for b in butoane_meniu:
+            b.deseneaza()
+        scrie("Record: " + str(joc["record"]), LATIME // 2, 500, (120, 255, 120), None, True)
+    else:
+        for m in meteoriti:
+            m.deseneaza()
+        for g in gloante:
+            g.deseneaza()
+        if joc["orb"] is not None:
+            pygame.draw.circle(ecran, (80, 200, 255), joc["orb"].center, 12)
+            pygame.draw.circle(ecran, (255, 255, 255), joc["orb"].center, 12, 2)
+        for p in particule:
+            p.deseneaza()
+        if joc["stare"] != "final":
+            nava.deseneaza()
+            if scut_activ(joc["scut_pana"], acum):
+                pygame.draw.circle(ecran, (120, 220, 255), nava.rect.center, 42, 3)
+
+        scrie("Scor: " + str(joc["scor"]), 10, 10)
+        scrie("Nivel: " + str(joc["nivel"]), 10, 40)
+        scrie("Record: " + str(joc["record"]), 10, 70, (255, 220, 0))
+        for i in range(3):
+            if i < joc["vieti"]:
+                inima(LATIME - 30 - i * 35, 22, (230, 30, 60))
+            else:
+                inima(LATIME - 30 - i * 35, 22, (80, 80, 90))
+        if scut_activ(joc["scut_pana"], acum):
+            ramas = (joc["scut_pana"] - acum) / DURATA_SCUT
+            pygame.draw.rect(ecran, (80, 200, 255), (10, INALTIME - 24, int(150 * ramas), 14))
+            scrie("SCUT", 170, INALTIME - 28)
+
+        if joc["stare"] == "pauza":
+            scrie("PAUZA", LATIME // 2, 280, (255, 255, 255), font_mare, True)
+        if joc["stare"] == "final":
+            scrie("GAME OVER", LATIME // 2, 200, (255, 90, 90), font_mare, True)
+            scrie("Scor final: " + str(joc["scor"]), LATIME // 2, 290, (255, 255, 255), None, True)
+            scrie("Record: " + str(joc["record"]), LATIME // 2, 330, (255, 220, 0), None, True)
+            for b in butoane_final:
+                b.deseneaza()
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** nava și meteoriții arată ca înainte, dar acum sunt **imagini**: fiecare este desenată o singură dată pe o `Surface` transparentă (`img_nava`, `img_meteorit`) și afișată cu `blit`. Fiecare meteorit își face propria imagine, scalată la mărimea lui (`pygame.transform.scale`).
+
+---
 ## Ce urmează — Lecția 10
 **Expoziția + verificare finală**: prezentăm jocurile, jucăm jocurile colegilor și facem **testul final** al modulului și al cursului.

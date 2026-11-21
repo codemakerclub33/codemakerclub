@@ -1,4 +1,5 @@
-# LECȚIA 3 — Mișcare: bucla jocului
+# LECȚIA 3 — Mingile care ricoșează
+### Mișcare: bucla jocului
 **Modulul 4 · Jocuri cu Pygame · 2 ore**  
 **Code Maker Club · Game Creator**
 
@@ -7,13 +8,13 @@
 
 ---
 
-## Obiectiv
-La finalul orei miști obiecte schimbând `x` și `y` la fiecare cadru, le faci să ricoșeze, să apară din partea opusă, să cadă (gravitație), să lase o urmă, ții mai multe obiecte într-o listă și calculezi mișcarea independent de viteza calculatorului.  
-**Minim:** o minge care se mișcă și ricoșează de margini.  
-**Ținta orei (Complet):** + mai multe mingi, urme și screensaver-ul cu taste.
+## Ce facem azi
 
-## De ce contează
-Toate jocurile se mișcă: personajele aleargă, gloanțele zboară, mașinile circulă. Ceea ce înveți azi (poziție, viteză, ricoșeu) este **baza** pentru orice joc.
+La final miști obiecte schimbând `x` și `y` la fiecare cadru, le faci să ricoșeze, să cadă (gravitație) și să lase o urmă, iar mai multe mingi le ții într-o listă.
+
+Toate jocurile se mișcă: personajele aleargă, gloanțele zboară, mașinile circulă. Ceea ce înveți azi (poziție, viteză, ricoșeu) este **baza** pentru orice joc. Ecranul tău este ca un **film**: de 60 de ori pe secundă desenezi aceeași scenă, cu obiectele puțin mutate, iar ochiul vede mișcare.
+
+La final ai **„Mingile care ricoșează”**: un screensaver cu mingi, urme și taste.
 
 ---
 
@@ -22,13 +23,26 @@ Toate jocurile se mișcă: personajele aleargă, gloanțele zboară, mașinile c
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recapitulare L2 |
-| 10–30 | Prima mișcare, marginea (**Exemplele 1–2**) |
-| 30–55 | Ricoșeul: pe o direcție, apoi diagonal (**Exemplele 3–4**) |
-| 55–70 | Mingea cu imagine, mai multe mingi (**Exemplele 5–6**) |
-| 70–90 | Urme și gravitație (**Exemplele 7–8**) |
-| 90–100 | Viteză independentă de FPS (**Exemplul 9**) |
-| 100–118 | Mini-proiect (**Exemplul 10**) |
+| 10–30 | Prima mișcare (**Exemplul 1**) |
+| 30–55 | Ricoșeul: pe o direcție, apoi diagonal (**Exemplele 2–3**) |
+| 55–70 | Mingea cu imagine, mai multe mingi (**Exemplele 4–5**) |
+| 70–90 | Urme și gravitație (**Exemplele 6–7**) |
+| 90–118 | Mini-proiect: Mingile care ricoșează (**Exemplul 8**) |
 | 118–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `x += viteza` | Mută obiectul la fiecare cadru | `x += 3` |
+| `viteza = -viteza` | Schimbă direcția la margine (ricoșeu) | `if x + 50 > LATIME: viteza = -abs(viteza)` |
+| `imagine.get_rect()` | Dreptunghiul imaginii; îl folosim ca poziție | `pozitie = imagine.get_rect()` |
+| `mingi = []` + `for m in mingi:` | O listă de dicționare: mai multe mingi | `mingi.append(mingea_noua())` |
+| `voal.set_alpha(40)` | Un strat semitransparent, pentru urme | `ecran.blit(voal, (0, 0))` |
+| `viteza += gravitatie` | Gravitația: viteza crește la fiecare cadru | `y += viteza` |
+| `random.randint(a, b)` / `random.choice(lista)` | Valori alese la întâmplare | `random.choice([-4, 4])` |
 
 ---
 
@@ -37,9 +51,6 @@ Toate jocurile se mișcă: personajele aleargă, gloanțele zboară, mașinile c
 - Desenăm cu `pygame.draw.rect`, `circle`, `line`, `polygon`.
 - `Rect` păstrează un dreptunghi: `left`, `right`, `top`, `bottom`, `center`.
 - Ce desenăm mai târziu se vede peste ce am desenat mai devreme.
-
-**Încearcă tu (3 min)**  
-- [ ] Scrie scheletul jocului din Lecția 1 din memorie  
 
 ---
 
@@ -85,51 +96,15 @@ Bucla are acum **trei părți**, în această ordine:
 
 Notează: la fiecare cadru **ștergem tot** cu `fill` și **redesenăm** obiectul în poziția nouă.
 
-### Exemplul 2 — Apare din partea cealaltă
-
-```python
-import pygame
-
-pygame.init()
-LATIME = 600
-ecran = pygame.display.set_mode((LATIME, 300))
-ceas = pygame.time.Clock()
-
-x = 0
-y = 125
-
-ruleaza = True
-while ruleaza:
-    for eveniment in pygame.event.get():
-        if eveniment.type == pygame.QUIT:
-            ruleaza = False
-
-    x += 4
-    if x > LATIME:
-        x = -50
-
-    ecran.fill((30, 30, 60))
-    pygame.draw.rect(ecran, (255, 200, 0), (x, y, 50, 50))
-    pygame.display.flip()
-    ceas.tick(60)
-
-pygame.quit()
-```
-
-**Ce vezi pe ecran:** pătratul galben merge spre dreapta, iese pe margine și **reapare imediat din stânga**, la nesfârșit, ca într-un tunel.
-
-Condiția `if x > LATIME` verifică dacă a ieșit complet din ecran, iar `x = -50` îl mută chiar **înainte** de marginea din stânga (cu lățimea lui, 50), ca să intre încet, nu să apară brusc.
-
-**Încearcă tu (5 min)**  
+**Încearcă tu (3 min)**  
 - [ ] Am scris și am rulat **Exemplul 1** (Pătratul care aleargă)  
-- [ ] Am scris și am rulat **Exemplul 2** (Apare din partea cealaltă)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 3. Ricoșeul
 
-### Exemplul 3 — Ricoșează pe orizontală
+### Exemplul 2 — Ricoșează pe orizontală
 
 ```python
 import pygame
@@ -172,7 +147,7 @@ pygame.quit()
 - scriem `viteza = abs(viteza)` (mereu pozitivă) la peretele din stânga și `viteza = -abs(viteza)` (mereu negativă) la cel din dreapta. Așa evităm ca obiectul să rămână „lipit” de perete;
 - partea **dreaptă** a pătratului este `x + 50` (poziția + lățimea).
 
-### Exemplul 4 — Ricoșează pe diagonală
+### Exemplul 3 — Ricoșează pe diagonală
 
 ```python
 import pygame
@@ -222,15 +197,15 @@ pygame.quit()
 Aici folosim un `Rect` pentru minge: `minge.left`, `minge.right`, `minge.top`, `minge.bottom` ne dau marginile, iar `minge.x += vx` o mută. Sunt **două viteze**: `vx` pe orizontală, `vy` pe verticală. La un perete vertical se schimbă semnul lui `vx`, la unul orizontal semnul lui `vy`. `pygame.draw.ellipse(ecran, culoare, rect)` desenează o elipsă în interiorul dreptunghiului: pentru un dreptunghi pătrat, rezultă un **cerc**.
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 3** (Ricoșează pe orizontală)  
-- [ ] Am scris și am rulat **Exemplul 4** (Ricoșează pe diagonală)  
+- [ ] Am scris și am rulat **Exemplul 2** (Ricoșează pe orizontală)  
+- [ ] Am scris și am rulat **Exemplul 3** (Ricoșează pe diagonală)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 4. Imagini și mai multe obiecte
 
-### Exemplul 5 — Mingea ca imagine
+### Exemplul 4 — Mingea ca imagine
 
 ```python
 import pygame
@@ -275,7 +250,7 @@ pygame.quit()
 
 Observă `imagine.get_rect()`: ne dă **dreptunghiul imaginii** (cu aceeași mărime). Îl folosim și pentru poziție, și la desenare: `ecran.blit(imagine, pozitie)`. Așa avem **un singur obiect** (`pozitie`) care ne spune unde este mingea.
 
-### Exemplul 6 — Mai multe mingi
+### Exemplul 5 — Mai multe mingi
 
 ```python
 import random
@@ -340,15 +315,15 @@ Mingi create: 8
 Fiecare minge este un **dicționar** cu `x`, `y`, viteze, rază și culoare. Toate se află într-o **listă**, iar o buclă `for` le mută și le desenează pe rând. Cu aceeași schemă ai putea avea 8 mingi sau 800: de aceea folosim liste, nu variabile separate.
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 5** (Mingea ca imagine)  
-- [ ] Am scris și am rulat **Exemplul 6** (Mai multe mingi)  
+- [ ] Am scris și am rulat **Exemplul 4** (Mingea ca imagine)  
+- [ ] Am scris și am rulat **Exemplul 5** (Mai multe mingi)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 5. Urme, gravitație, timp
 
-### Exemplul 7 — Mingea lasă o urmă
+### Exemplul 6 — Mingea lasă o urmă
 
 ```python
 import pygame
@@ -393,7 +368,7 @@ pygame.quit()
 
 Trucul: în loc să ștergem tot ecranul cu `fill`, lipim peste el o imagine întunecată, **aproape transparentă** (`set_alpha(30)`, din 255). Ce era desenat înainte se întunecă puțin la fiecare cadru, deci urmele dispar încet.
 
-### Exemplul 8 — Gravitația
+### Exemplul 7 — Gravitația
 
 ```python
 y = 50.0
@@ -465,72 +440,16 @@ pygame.quit()
 
 Dacă `y` are zecimale (de exemplu `12.5`), pentru desenare îl facem întreg cu `int(y)`.
 
-### Exemplul 9 — Viteză independentă de calculator
-
-```python
-viteza_pe_secunda = 200
-
-for fps in [30, 60, 120]:
-    pixeli_pe_cadru = viteza_pe_secunda / fps
-    print(fps, "FPS ->", round(pixeli_pe_cadru, 2), "pixeli pe cadru")
-
-dt = 0.5
-print("In", dt, "secunde la", viteza_pe_secunda, "pixeli/s -> ", viteza_pe_secunda * dt, "pixeli")
-```
-
-**Ieșire:**
-```text
-30 FPS -> 6.67 pixeli pe cadru
-60 FPS -> 3.33 pixeli pe cadru
-120 FPS -> 1.67 pixeli pe cadru
-In 0.5 secunde la 200 pixeli/s ->  100.0 pixeli
-```
-
-Dacă mutăm obiectul cu „3 pixeli pe cadru”, pe un calculator care face 30 de cadre pe secundă va merge **la jumătate de viteză** față de unul cu 60. Soluția: măsurăm **timpul dintre cadre** (`dt`) și mutăm obiectul cu `viteza * dt`. Atunci contează **pixelii pe secundă**, nu pixelii pe cadru.
-
-În Pygame, `ceas.tick(60)` **returnează** milisecundele trecute de la cadrul anterior. Împărțite la 1000, ne dau `dt` în secunde:
-
-```python
-import pygame
-
-pygame.init()
-ecran = pygame.display.set_mode((600, 200))
-ceas = pygame.time.Clock()
-
-x = 0.0
-viteza = 200
-
-ruleaza = True
-while ruleaza:
-    dt = ceas.tick(60) / 1000
-    for eveniment in pygame.event.get():
-        if eveniment.type == pygame.QUIT:
-            ruleaza = False
-
-    x += viteza * dt
-    if x > 600:
-        x = -40
-
-    ecran.fill((30, 30, 60))
-    pygame.draw.rect(ecran, (255, 200, 0), (int(x), 80, 40, 40))
-    pygame.display.flip()
-
-pygame.quit()
-```
-
-**Ce vezi pe ecran:** un **pătrat galben** care traversează fereastra cu **200 de pixeli pe secundă**, aproximativ **3 secunde** de la un capăt la altul, **pe orice calculator**.
-
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 7** (Mingea lasă o urmă)  
-- [ ] Am scris și am rulat **Exemplul 8** (Gravitația)  
-- [ ] Am scris și am rulat **Exemplul 9** (Viteză independentă de calculator)  
+- [ ] Am scris și am rulat **Exemplul 6** (Mingea lasă o urmă)  
+- [ ] Am scris și am rulat **Exemplul 7** (Gravitația)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 6. Mini-proiect
 
-### Exemplul 10 — Screensaver
+### Exemplul 8 — Screensaver
 
 ```python
 import random
@@ -619,75 +538,47 @@ Ce este nou:
 - banda cu text se desenează **peste** urme, ca textul să rămână clar.
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** (Screensaver)  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+- [ ] Am scris și am rulat **Exemplul 8** (Screensaver)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Mingile care ricoșează”
 
-### Exercițiul A — „Mingile care ricoșează” (obligatoriu)
-Pornește de la Exemplul 10 și fă un screensaver **al tău**:
+### Minim vs Complet
+
+| Nivel | Ce trebuie să ai |
+|-------|------------------|
+| **Minim** | O minge care se mișcă și ricoșează de margini |
+| **Complet** | Minim + mai multe mingi, urme și screensaver-ul cu taste |
+
+### Pasul 1 — Minim
+Scrie un program cu o minge care se mișcă și ricoșează de toate cele patru margini.
+
+### Pasul 2 — Complet
+Pornește de la Exemplul 8 și fă un screensaver **al tău**:
 1. mingile au **forme sau culori speciale** alese de tine (de exemplu, imagini create cu `Surface`);
 2. adaugă **gravitație** care se pornește și se oprește cu tasta **G**;
 3. adaugă tasta **S** care **oprește** sau **pornește** mișcarea (pauză);
 4. afișează pe ecran **numărul de ricoșeuri** totale;
 5. păstrează funcția `mingea_noua()`.
 
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
-
-```python
-x = 590
-viteza = 5
-for cadru in range(4):
-    x += viteza
-    if x + 50 > 600:
-        viteza = -abs(viteza)
-    print(cadru, x, viteza)
-```
-
-### Exercițiul C — Două pătrate
-Fă două pătrate: unul care merge **spre dreapta** și altul **spre stânga**, pe rânduri diferite. Când ajung la margine, ricoșează. Apoi adaugă un al treilea, care merge **pe verticală**.
-
-### Exercițiul D — Găsește greșelile
-Programul are 3 greșeli. Rescrie-l corect:
-
-```text
-import pygame
-pygame.init()
-ecran = pygame.display.set_mode((600, 300))
-x = 0
-ruleaza = True
-while ruleaza:
-    for eveniment in pygame.event.get():
-        if eveniment.type == pygame.QUIT
-            ruleaza = False
-    x + 3
-    pygame.draw.rect(ecran, (255, 0, 0), (x, 100, 50, 50)
-    pygame.display.flip()
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. Care sunt cele trei părți ale buclei jocului?  
-2. De ce schimbăm semnul vitezei când mingea lovește un perete?  
-3. De ce folosim `dt` (timpul dintre cadre)?
-
 **Gata când:**
 - [ ] Screensaver-ul are mingi cu formă proprie, gravitație și pauză  
 - [ ] Ricoșeurile sunt numărate pe ecran  
 - [ ] Mingile nu rămân „lipite” de margini  
-- [ ] Ai explicat pe foaie cele trei părți ale buclei  
-- [ ] Fișierul se numește `Prenume_Nume_P4_L3.py`  
+- [ ] Fișierul se numește `Prenume_Nume_P4_L3.py`
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Fă mingile să se **ciocnească** între ele (indiciu: distanța dintre centre mai mică decât suma razelor)  
-- [ ] Fă un **ceas** cu un pătrat care se rotește în cerc (`math.sin`, `math.cos`)  
-- [ ] Adaugă un **vânt**: o forță mică spre dreapta, care crește viteza  
-- [ ] Fă **mingea să crească** de fiecare dată când lovește un perete  
+## Bonus ★★★ — Provocare: Screensaver cu vânt și ciocniri
+
+*Doar dacă ai terminat Complet. Lucrezi tot în screensaver-ul „Mingile care ricoșează”, în același program.*
+
+- [ ] **Vânt.** La tasta **V** pornește sau oprește un vânt spre dreapta: la fiecare cadru, viteza pe orizontală crește puțin (dar nu peste 8)  
+- [ ] **Mingi care cresc.** De fiecare dată când o minge lovește un perete, raza ei crește cu 1, până la cel mult 40  
+- [ ] **Ciocniri.** Când două mingi se ating, desenează în jurul lor un contur alb (indiciu: distanța dintre centre este mai mică decât suma razelor)  
+- [ ] **Soare care orbitează.** Un cerc galben se învârte în jurul centrului ecranului (indiciu: `math.cos` și `math.sin`)
 
 ---
 
@@ -712,7 +603,7 @@ Răspunde pe foaie:
 - Ricoșeu = schimbăm semnul vitezei la margine (și aducem obiectul în ecran).
 - Gravitație = `viteza += gravitatie`, apoi `y += viteza`.
 - Mai multe obiecte = o **listă de dicționare**, parcursă cu `for`.
-- Pentru viteză independentă de FPS: `dt = ceas.tick(60) / 1000` și `x += viteza * dt`.
+- Pentru viteză independentă de FPS: `dt = ceas.tick(60) / 1000` și `x += viteza * dt` (vezi „Acasă 2”).
 
 ---
 
@@ -725,14 +616,497 @@ Răspunde pe foaie:
 
 ---
 
+---
+
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny.  
-2. Fă **un joc de „ping”**: o minge care ricoșează între doi pereți și o bară jos care o ține (fără tastatură deocamdată: bara urmărește mouse-ul).  
-3. Fă o **ploaie**: 30 de picături care cad și reapar sus.  
-4. **Bonus:** fă o **mașinuță** care merge pe o șosea, reapare din stânga și accelerează la tasta SPAȚIU.  
-5. Salvează totul ca `Tema_P4_L3_Prenume_Nume.py`.
+1. Refă **4 exemple la alegere** din cele 8, scrise de tine (nu copiate).  
+2. **Două pătrate.** Fă două pătrate: unul care merge **spre dreapta** și altul **spre stânga**, pe rânduri diferite. Când ajung la margine, ricoșează. Apoi adaugă un al treilea, care merge **pe verticală**.  
+3. Fă **un joc de „ping”**: o minge care ricoșează între doi pereți și o bară jos care o ține (fără tastatură deocamdată: bara urmărește mouse-ul).  
+4. Fă o **ploaie**: 30 de picături care cad și reapar sus.  
+5. **Explică pe foaie:** Care sunt cele trei părți ale buclei jocului? De ce schimbăm semnul vitezei când mingea lovește un perete? De ce folosim `dt` (timpul dintre cadre)? (vezi „Acasă 2”)  
+6. **Bonus:** fă o **mașinuță** care merge pe o șosea, reapare din stânga și accelerează la tasta SPAȚIU.  
+7. Salvează totul ca `Tema_P4_L3_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le în Thonny, rulează-le și schimbă-le după preferințe.
+
+#### Acasă 1 — Apare din partea cealaltă
+
+```python
+import pygame
+
+pygame.init()
+LATIME = 600
+ecran = pygame.display.set_mode((LATIME, 300))
+ceas = pygame.time.Clock()
+
+x = 0
+y = 125
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+
+    x += 4
+    if x > LATIME:
+        x = -50
+
+    ecran.fill((30, 30, 60))
+    pygame.draw.rect(ecran, (255, 200, 0), (x, y, 50, 50))
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+
+**Ce vezi pe ecran:** pătratul galben merge spre dreapta, iese pe margine și **reapare imediat din stânga**, la nesfârșit, ca într-un tunel.
+
+Condiția `if x > LATIME` verifică dacă a ieșit complet din ecran, iar `x = -50` îl mută chiar **înainte** de marginea din stânga (cu lățimea lui, 50), ca să intre încet, nu să apară brusc.
+
+#### Acasă 2 — Viteză independentă de calculator
+
+```python
+viteza_pe_secunda = 200
+
+for fps in [30, 60, 120]:
+    pixeli_pe_cadru = viteza_pe_secunda / fps
+    print(fps, "FPS ->", round(pixeli_pe_cadru, 2), "pixeli pe cadru")
+
+dt = 0.5
+print("In", dt, "secunde la", viteza_pe_secunda, "pixeli/s -> ", viteza_pe_secunda * dt, "pixeli")
+```
+
+**Ieșire:**
+```text
+30 FPS -> 6.67 pixeli pe cadru
+60 FPS -> 3.33 pixeli pe cadru
+120 FPS -> 1.67 pixeli pe cadru
+In 0.5 secunde la 200 pixeli/s ->  100.0 pixeli
+```
+
+Dacă mutăm obiectul cu „3 pixeli pe cadru”, pe un calculator care face 30 de cadre pe secundă va merge **la jumătate de viteză** față de unul cu 60. Soluția: măsurăm **timpul dintre cadre** (`dt`) și mutăm obiectul cu `viteza * dt`. Atunci contează **pixelii pe secundă**, nu pixelii pe cadru.
+
+În Pygame, `ceas.tick(60)` **returnează** milisecundele trecute de la cadrul anterior. Împărțite la 1000, ne dau `dt` în secunde:
+
+```python
+import pygame
+
+pygame.init()
+ecran = pygame.display.set_mode((600, 200))
+ceas = pygame.time.Clock()
+
+x = 0.0
+viteza = 200
+
+ruleaza = True
+while ruleaza:
+    dt = ceas.tick(60) / 1000
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+
+    x += viteza * dt
+    if x > 600:
+        x = -40
+
+    ecran.fill((30, 30, 60))
+    pygame.draw.rect(ecran, (255, 200, 0), (int(x), 80, 40, 40))
+    pygame.display.flip()
+
+pygame.quit()
+```
+
+**Ce vezi pe ecran:** un **pătrat galben** care traversează fereastra cu **200 de pixeli pe secundă**, aproximativ **3 secunde** de la un capăt la altul, **pe orice calculator**.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+x = 590
+viteza = 5
+for cadru in range(4):
+    x += viteza
+    if x + 50 > 600:
+        viteza = -abs(viteza)
+    print(cadru, x, viteza)
+```
+
+**Găsește greșelile.** Programul are 3 greșeli. Rescrie-l corect:
+
+```text
+import pygame
+pygame.init()
+ecran = pygame.display.set_mode((600, 300))
+x = 0
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT
+            ruleaza = False
+    x + 3
+    pygame.draw.rect(ecran, (255, 0, 0), (x, 100, 50, 50)
+    pygame.display.flip()
+```
 
 ---
 
+## Răspunsuri la bonus
+Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit, important este să funcționeze. Fiecare cod este un program întreg, pornit de la screensaver-ul „Mingile care ricoșează” (Exemplul 8).
+
+### 1. Vânt
+```python
+import random
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 450
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Screensaver")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 30)
+
+voal = pygame.Surface((LATIME, INALTIME))
+voal.fill((5, 5, 25))
+voal.set_alpha(40)
+
+mingi = []
+
+def mingea_noua():
+    return {
+        "x": random.randint(40, LATIME - 40),
+        "y": random.randint(40, INALTIME - 40),
+        "vx": random.choice([-5, -4, -3, 3, 4, 5]),
+        "vy": random.choice([-5, -4, -3, 3, 4, 5]),
+        "r": random.randint(8, 22),
+        "culoare": (random.randint(80, 255), random.randint(80, 255), random.randint(80, 255)),
+    }
+
+for i in range(5):
+    mingi.append(mingea_noua())
+
+vant = False
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_SPACE:
+                mingi.append(mingea_noua())
+            if eveniment.key == pygame.K_c:
+                mingi.clear()
+            if eveniment.key == pygame.K_v:
+                vant = not vant
+        if eveniment.type == pygame.MOUSEBUTTONDOWN:
+            minge = mingea_noua()
+            minge["x"], minge["y"] = eveniment.pos
+            mingi.append(minge)
+
+    for m in mingi:
+        if vant and m["vx"] < 8:
+            m["vx"] += 0.05
+        m["x"] += m["vx"]
+        m["y"] += m["vy"]
+        if m["x"] - m["r"] < 0:
+            m["x"] = m["r"]
+            m["vx"] = abs(m["vx"])
+        if m["x"] + m["r"] > LATIME:
+            m["x"] = LATIME - m["r"]
+            m["vx"] = -abs(m["vx"])
+        if m["y"] - m["r"] < 0:
+            m["y"] = m["r"]
+            m["vy"] = abs(m["vy"])
+        if m["y"] + m["r"] > INALTIME:
+            m["y"] = INALTIME - m["r"]
+            m["vy"] = -abs(m["vy"])
+
+    ecran.blit(voal, (0, 0))
+    for m in mingi:
+        pygame.draw.circle(ecran, m["culoare"], (m["x"], m["y"]), m["r"])
+
+    text = font.render("Mingi: " + str(len(mingi)) + "   SPATIU = adauga, C = sterge, V = vant", True, (200, 200, 200))
+    pygame.draw.rect(ecran, (5, 5, 25), (0, 0, LATIME, 34))
+    ecran.blit(text, (10, 8))
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** screensaver-ul obișnuit, plus „V = vant” în banda de sus. La **V**, toate mingile încep să fie împinse spre dreapta și se adună spre peretele din dreapta; la a doua apăsare pe **V** vântul se oprește. `vant = not vant` întoarce `True` în `False` și invers, iar `m["vx"] < 8` oprește creșterea vitezei.
+
+### 2. Mingi care cresc
+```python
+import random
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 450
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Screensaver")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 30)
+
+voal = pygame.Surface((LATIME, INALTIME))
+voal.fill((5, 5, 25))
+voal.set_alpha(40)
+
+mingi = []
+
+def mingea_noua():
+    return {
+        "x": random.randint(40, LATIME - 40),
+        "y": random.randint(40, INALTIME - 40),
+        "vx": random.choice([-5, -4, -3, 3, 4, 5]),
+        "vy": random.choice([-5, -4, -3, 3, 4, 5]),
+        "r": random.randint(8, 22),
+        "culoare": (random.randint(80, 255), random.randint(80, 255), random.randint(80, 255)),
+    }
+
+for i in range(5):
+    mingi.append(mingea_noua())
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_SPACE:
+                mingi.append(mingea_noua())
+            if eveniment.key == pygame.K_c:
+                mingi.clear()
+        if eveniment.type == pygame.MOUSEBUTTONDOWN:
+            minge = mingea_noua()
+            minge["x"], minge["y"] = eveniment.pos
+            mingi.append(minge)
+
+    for m in mingi:
+        m["x"] += m["vx"]
+        m["y"] += m["vy"]
+        lovit = False
+        if m["x"] - m["r"] < 0:
+            m["x"] = m["r"]
+            m["vx"] = abs(m["vx"])
+            lovit = True
+        if m["x"] + m["r"] > LATIME:
+            m["x"] = LATIME - m["r"]
+            m["vx"] = -abs(m["vx"])
+            lovit = True
+        if m["y"] - m["r"] < 0:
+            m["y"] = m["r"]
+            m["vy"] = abs(m["vy"])
+            lovit = True
+        if m["y"] + m["r"] > INALTIME:
+            m["y"] = INALTIME - m["r"]
+            m["vy"] = -abs(m["vy"])
+            lovit = True
+        if lovit and m["r"] < 40:
+            m["r"] += 1
+
+    ecran.blit(voal, (0, 0))
+    for m in mingi:
+        pygame.draw.circle(ecran, m["culoare"], (m["x"], m["y"]), m["r"])
+
+    text = font.render("Mingi: " + str(len(mingi)) + "   SPATIU = adauga, C = sterge, Click = pune", True, (200, 200, 200))
+    pygame.draw.rect(ecran, (5, 5, 25), (0, 0, LATIME, 34))
+    ecran.blit(text, (10, 8))
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** mingile ricoșează ca de obicei, dar fiecare lovitură de perete le face puțin mai mari, până ajung la raza 40. Variabila `lovit` este `False` la începutul fiecărui cadru și devine `True` în orice ramură care a atins un perete; abia apoi mărim raza.
+
+### 3. Ciocniri
+```python
+import random
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 450
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Screensaver")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 30)
+
+voal = pygame.Surface((LATIME, INALTIME))
+voal.fill((5, 5, 25))
+voal.set_alpha(40)
+
+mingi = []
+
+def mingea_noua():
+    return {
+        "x": random.randint(40, LATIME - 40),
+        "y": random.randint(40, INALTIME - 40),
+        "vx": random.choice([-5, -4, -3, 3, 4, 5]),
+        "vy": random.choice([-5, -4, -3, 3, 4, 5]),
+        "r": random.randint(8, 22),
+        "culoare": (random.randint(80, 255), random.randint(80, 255), random.randint(80, 255)),
+    }
+
+for i in range(5):
+    mingi.append(mingea_noua())
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_SPACE:
+                mingi.append(mingea_noua())
+            if eveniment.key == pygame.K_c:
+                mingi.clear()
+        if eveniment.type == pygame.MOUSEBUTTONDOWN:
+            minge = mingea_noua()
+            minge["x"], minge["y"] = eveniment.pos
+            mingi.append(minge)
+
+    for m in mingi:
+        m["x"] += m["vx"]
+        m["y"] += m["vy"]
+        if m["x"] - m["r"] < 0:
+            m["x"] = m["r"]
+            m["vx"] = abs(m["vx"])
+        if m["x"] + m["r"] > LATIME:
+            m["x"] = LATIME - m["r"]
+            m["vx"] = -abs(m["vx"])
+        if m["y"] - m["r"] < 0:
+            m["y"] = m["r"]
+            m["vy"] = abs(m["vy"])
+        if m["y"] + m["r"] > INALTIME:
+            m["y"] = INALTIME - m["r"]
+            m["vy"] = -abs(m["vy"])
+
+    ecran.blit(voal, (0, 0))
+    for m in mingi:
+        pygame.draw.circle(ecran, m["culoare"], (m["x"], m["y"]), m["r"])
+
+    for i in range(len(mingi)):
+        for j in range(i + 1, len(mingi)):
+            a = mingi[i]
+            b = mingi[j]
+            dx = a["x"] - b["x"]
+            dy = a["y"] - b["y"]
+            if (dx * dx + dy * dy) ** 0.5 < a["r"] + b["r"]:
+                pygame.draw.circle(ecran, (255, 255, 255), (a["x"], a["y"]), a["r"] + 4, 2)
+                pygame.draw.circle(ecran, (255, 255, 255), (b["x"], b["y"]), b["r"] + 4, 2)
+
+    text = font.render("Mingi: " + str(len(mingi)) + "   SPATIU = adauga, C = sterge, Click = pune", True, (200, 200, 200))
+    pygame.draw.rect(ecran, (5, 5, 25), (0, 0, LATIME, 34))
+    ecran.blit(text, (10, 8))
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** când două mingi se ating, apare câte un contur alb în jurul lor, care dispare când se despart. Cele două `for` iau fiecare pereche o singură dată (`j` pornește de la `i + 1`), iar `(dx * dx + dy * dy) ** 0.5` este distanța dintre centre.
+
+### 4. Soare care orbitează
+```python
+import math
+import random
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 450
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Screensaver")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 30)
+
+voal = pygame.Surface((LATIME, INALTIME))
+voal.fill((5, 5, 25))
+voal.set_alpha(40)
+
+mingi = []
+
+def mingea_noua():
+    return {
+        "x": random.randint(40, LATIME - 40),
+        "y": random.randint(40, INALTIME - 40),
+        "vx": random.choice([-5, -4, -3, 3, 4, 5]),
+        "vy": random.choice([-5, -4, -3, 3, 4, 5]),
+        "r": random.randint(8, 22),
+        "culoare": (random.randint(80, 255), random.randint(80, 255), random.randint(80, 255)),
+    }
+
+for i in range(5):
+    mingi.append(mingea_noua())
+
+unghi = 0
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_SPACE:
+                mingi.append(mingea_noua())
+            if eveniment.key == pygame.K_c:
+                mingi.clear()
+        if eveniment.type == pygame.MOUSEBUTTONDOWN:
+            minge = mingea_noua()
+            minge["x"], minge["y"] = eveniment.pos
+            mingi.append(minge)
+
+    for m in mingi:
+        m["x"] += m["vx"]
+        m["y"] += m["vy"]
+        if m["x"] - m["r"] < 0:
+            m["x"] = m["r"]
+            m["vx"] = abs(m["vx"])
+        if m["x"] + m["r"] > LATIME:
+            m["x"] = LATIME - m["r"]
+            m["vx"] = -abs(m["vx"])
+        if m["y"] - m["r"] < 0:
+            m["y"] = m["r"]
+            m["vy"] = abs(m["vy"])
+        if m["y"] + m["r"] > INALTIME:
+            m["y"] = INALTIME - m["r"]
+            m["vy"] = -abs(m["vy"])
+
+    ecran.blit(voal, (0, 0))
+    for m in mingi:
+        pygame.draw.circle(ecran, m["culoare"], (m["x"], m["y"]), m["r"])
+
+    unghi += 0.03
+    sx = LATIME // 2 + 150 * math.cos(unghi)
+    sy = INALTIME // 2 + 150 * math.sin(unghi)
+    pygame.draw.circle(ecran, (255, 220, 0), (sx, sy), 14)
+
+    text = font.render("Mingi: " + str(len(mingi)) + "   SPATIU = adauga, C = sterge, Click = pune", True, (200, 200, 200))
+    pygame.draw.rect(ecran, (5, 5, 25), (0, 0, LATIME, 34))
+    ecran.blit(text, (10, 8))
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** un cerc galben se rotește în jurul centrului ferestrei, pe un cerc cu raza 150, peste mingile care ricoșează. `unghi` crește cu 0.03 la fiecare cadru; `cos` dă poziția pe orizontală, iar `sin` pe verticală.
+
+---
 ## Ce urmează — Lecția 4
 **Tastatura: controlăm personajul**: acum tu decizi unde merge personajul, cu săgețile și cu W, A, S, D.

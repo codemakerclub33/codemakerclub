@@ -60,7 +60,7 @@ Alegi culori **corecte** pentru LED-uri: în Tinkercad dai click pe LED și schi
 
 **Gata când:**  
 - [ ] Toate firele sunt conectate exact ca în tabel  
-- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
+- [ ] Am verificat de două ori GND și pinii înainte să pornesc simularea  
 
 ### 3) Semafor automat (Minim)
 

@@ -16,7 +16,7 @@ Al patrulea pas. Ding-dong. O sonerie adevărată sună două note una după alt
 
 Al cincilea pas. Alarmă cu sirenă. Frecvența crește și scade, ca la mașina de poliție, cu un for care urcă și apoi coboară.
 
-Greșeli frecvente. Nu sună nimic: buzzerul nu este la pinul opt și GND sau n-ai pornit simularea. Sună tot timpul: ai uitat no Tone pe ramura else. Sunet urât: frecvențe prea mari sau schimbări prea rapide. Se aude în buclă: fără delay de trei sute după ding-dong, soneria repornește dacă ții apăsat. Pinii trei și unsprezece: tone ocupă un timer, deci evită analog Write pe acești pini în același timp.
+Greșeli frecvente. Nu sună nimic: buzzerul nu este la pinul opt și GND sau n-ai pornit simularea. Sună tot timpul: ai uitat no Tone pe ramura else. Sunet urât: frecvențe prea mari sau schimbări prea rapide. Soneriile se lipesc una de alta: dacă ții butonul apăsat, soneria repornește imediat, iar delay de trei sute după ding-dong pune o mică pauză între două ding-dong. Pinii trei și unsprezece: tone ocupă un timer, deci evită analog Write pe acești pini în același timp.
 
 Proiectul de azi. Soneria de la ușă. Minim înseamnă sunet la apăsare. Complet înseamnă ding-dong și LED.
 

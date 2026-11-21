@@ -1,23 +1,27 @@
-Lecția patru din Modulul patru. Tastatura: controlăm personajul.
+Lecția patru din Modulul patru. Nava mea.
 
 Astăzi comanzi un personaj de la tastatură. Proiectul se numește Nava mea. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P patru, linie jos, L patru, punct P Y.
 
-Obiectivul. La final citești tastatura cu evenimente și cu get pressed, miști un personaj în patru direcții, îl ții în fereastră, îl faci să sară și să tragă, folosești o pauză între focuri și construiești o navă spațială controlată de tine. Minim: un personaj care se mișcă cu săgețile. Complet: minim, plus sărituri, gloanțe, pauză între focuri și nava.
+Ce facem azi. La final citești tastatura cu evenimente și cu get pressed, miști un personaj în patru direcții, îl ții în fereastră, îl faci să tragă și folosești o pauză între focuri. Controlul transformă o animație într-un joc. O tastă apăsată trebuie să se simtă imediat și să fie ușor de folosit.
+
+Instrucțiuni noi azi. KEYDOWN apare o singură dată, când apeși o tastă. Get pressed spune ce taste sunt apăsate acum, deci personajul merge continuu cât ții tasta. Clamp ip ține un dreptunghi în interiorul unei zone. Tasta Shift ținută apăsată poate da turbo. Glonțul se așază în fața navei cu midbottom egal cu midtop al navei. Get ticks dă milisecundele de la pornirea jocului și ne ajută la pauza între focuri.
 
 Primul pas. Cele două moduri de a citi tastatura. KEYDOWN apare o singură dată, la apăsare: personajul face un pas la fiecare apăsare. Get pressed spune ce taste sunt apăsate acum: personajul merge continuu cât ții tasta. Poți folosi săgețile sau literele W, A, S, D.
 
-Al doilea pas. Margini, viteză, direcție. Metoda clamp ip ține personajul în ecran. Cu Shift apeși turbo și mergi mai repede. Personajul se întoarce în direcția în care merge.
+Al doilea pas. Margini și turbo. Metoda clamp ip ține personajul în ecran, ca un gard invizibil. Cu Shift apeși turbo și mergi mai repede.
 
-Al treilea pas. Săritura. La apăsare, personajul primește o viteză în sus, iar gravitația îl trage înapoi la fiecare cadru.
+Al treilea pas. Tragerea. Fiecare tragere creează un glonț, păstrat într-o listă, care se mișcă la fiecare cadru. Gloanțele care ies din ecran se șterg din listă. Pentru ca nava să nu tragă mult prea repede, folosim o pauză, numită cooldown: tragi doar dacă a trecut destul timp de la ultimul foc.
 
-Al patrulea pas. Tragerea. Fiecare tragere creează un glonț, păstrat într-o listă, care se mișcă la fiecare cadru. Pentru ca nava să nu tragă mult prea repede, folosim o pauză, numită cooldown: tragi doar dacă a trecut destul timp de la ultimul foc.
-
-Al cincilea pas. Mini-proiect. Nava mea: se mișcă în patru direcții, trage și rămâne în fereastră.
+Al patrulea pas. Mini-proiect. Nava mea: o navă desenată de tine, cu stele care cad. Se mișcă în patru direcții, trage și rămâne în fereastră.
 
 Greșeli frecvente. Personajul se mișcă o singură dată: ai folosit KEYDOWN în loc de get pressed. Iese din ecran: lipsește clamp ip. Gloanțele se adună în listă și încetinesc jocul: nu le ștergi când ies din ecran. Trage prea repede: lipsește pauza.
 
-Proiectul de azi. Nava mea. Minim înseamnă mișcare. Complet înseamnă sărituri, gloanțe și pauză.
+Proiectul de azi. Nava mea. Minim înseamnă un personaj care se mișcă cu săgețile și rămâne în fereastră. Complet înseamnă nava ta, cu turbo, trei tipuri de gloanțe, pauză între focuri și numărul de focuri afișat.
+
+Provocare, trei stele. Nava mea, versiunea pro. Doar dacă ai terminat varianta completă. Adaugi în același program o flacără desenată doar când nava urcă. O pauză la tasta P, în care nava, gloanțele și stelele stau pe loc, iar pe ecran apare mesajul pauză. O înclinare de douăzeci de grade când nava merge spre stânga sau spre dreapta. Și o bară mică sub navă, care se umple verde cât timp se scurge pauza dintre două focuri.
 
 Recapitulare. KEYDOWN dă o singură dată, get pressed dă cât timp ții tasta. Clamp ip ține personajul în ecran. Săritura înseamnă o viteză în sus și gravitație. Pauza între focuri se face cu timpul.
+
+Ce urmează. În lecția următoare aflăm când două obiecte se ating și facem un joc cu monede de strâns.
 
 Succes cu nava.

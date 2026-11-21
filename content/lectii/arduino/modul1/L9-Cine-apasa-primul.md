@@ -58,7 +58,7 @@ La finalul orei ai un joc cu 2 butoane și 3 LED-uri care decide câștigătorul
 
 **Gata când:**  
 - [ ] Toate firele sunt conectate exact ca în tabel  
-- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
+- [ ] Am verificat de două ori GND și pinii înainte să pornesc simularea  
 
 ### 3) Numere aleatorii
 `random(min, max)` dă un număr întâmplător între `min` (inclus) și `max` (exclus). Ca să nu fie mereu aceeași secvență, pornești generatorul din „zgomotul” unui pin liber:

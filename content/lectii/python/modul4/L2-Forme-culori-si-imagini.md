@@ -1,4 +1,5 @@
-# LECȚIA 2 — Forme, culori și imagini
+# LECȚIA 2 — Orășelul meu
+### Forme, culori și imagini
 **Modulul 4 · Jocuri cu Pygame · 2 ore**  
 **Code Maker Club · Game Creator**
 
@@ -7,13 +8,13 @@
 
 ---
 
-## Obiectiv
-La finalul orei desenezi cu `pygame.draw` (dreptunghi, cerc, linie, poligon, elipsă), folosești obiecte `Rect`, creezi imagini proprii (`Surface`), le salvezi și le încarci din fișier, le lipești de mai multe ori pe ecran, le mărești, le rotești și le oglindești.  
-**Minim:** un desen din cel puțin 4 forme diferite.  
-**Ținta orei (Complet):** + o imagine creată de tine, salvată și încărcată + orășelul din mini-proiect.
+## Ce facem azi
 
-## De ce contează
+La final desenezi cu `pygame.draw` (dreptunghi, cerc, elipsă, linie, poligon), folosești obiecte `Rect`, creezi imagini proprii (`Surface`), le salvezi și le încarci din fișier și le lipești de mai multe ori pe ecran.
+
 Fiecare personaj, copac, monedă sau inamic dintr-un joc este o **imagine** sau o **formă**. Dacă știi să le creezi și să le așezi pe ecran, poți construi orice lume.
+
+La final ai **„Orășelul meu”**: case, copaci, soare, nori și un drum, desenate cu forme și imagini.
 
 ---
 
@@ -23,12 +24,24 @@ Fiecare personaj, copac, monedă sau inamic dintr-un joc este o **imagine** sau 
 |--------|----------|
 | 0–10 | Recapitulare L1 |
 | 10–35 | Dreptunghi, cerc, linie, poligon (**Exemplele 1–3**) |
-| 35–50 | Un peisaj din forme (**Exemplul 4**) |
-| 50–65 | Obiectul `Rect` (**Exemplul 5**) |
-| 65–90 | Imagini proprii: `Surface`, salvare, încărcare (**Exemplele 6–8**) |
-| 90–100 | Mărire, rotire, oglindire (**Exemplul 9**) |
-| 100–118 | Mini-proiect (**Exemplul 10**) |
+| 35–50 | Obiectul `Rect` (**Exemplul 4**) |
+| 50–80 | Imagini proprii: `Surface`, salvare, încărcare, transparență (**Exemplele 5–7**) |
+| 80–118 | Mini-proiect: Orășelul meu (**Exemplul 8**) |
 | 118–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `pygame.draw.rect(ecran, culoare, (x, y, l, h))` | Desenează un dreptunghi | `pygame.draw.rect(ecran, (255, 0, 0), (10, 10, 80, 40))` |
+| `pygame.draw.circle(ecran, culoare, (x, y), raza)` | Desenează un cerc cu centrul în `(x, y)` | `pygame.draw.circle(ecran, (255, 220, 0), (600, 80), 50)` |
+| `pygame.draw.line` / `polygon` / `ellipse` | Linie, poligon (listă de puncte), elipsă | `pygame.draw.polygon(ecran, culoare, [(0, 60), (60, 5), (120, 60)])` |
+| `pygame.Rect(x, y, l, h)` | Un dreptunghi cu margini și centru calculate | `r.center`, `r.right`, `r.bottom` |
+| `pygame.Surface((l, h), pygame.SRCALPHA)` | O imagine nouă, cu fundal transparent | `casa = pygame.Surface((120, 150), pygame.SRCALPHA)` |
+| `ecran.blit(imagine, (x, y))` | Lipește o imagine pe ecran | `ecran.blit(casa, (20, 190))` |
+| `pygame.image.save(...)` / `pygame.image.load(...)` | Salvează / încarcă o imagine din fișier | `img = pygame.image.load("jucator.png")` |
 
 ---
 
@@ -37,9 +50,6 @@ Fiecare personaj, copac, monedă sau inamic dintr-un joc este o **imagine** sau 
 - Scheletul jocului: `init`, `set_mode`, bucla `while`, `event.get()`, `fill`, `flip`, `quit`.
 - Culoarea este `(R, G, B)`.
 - `(0, 0)` este în **stânga-sus**, iar `y` crește **în jos**.
-
-**Încearcă tu (3 min)**  
-- [ ] Scrie culoarea galbenă `(R, G, B)`, adică roșu + verde la maxim, albastru zero  
 
 > În toate exemplele de azi folosim același **schelet de joc** din Lecția 1. Partea nouă este desenul dintre `fill` și `flip`. Toate programele sunt **complete**: le poți scrie și rula.
 
@@ -141,7 +151,7 @@ pygame.quit()
 - `pygame.draw.line(ecran, culoare, început, sfârșit, grosime)` unește două puncte;
 - `pygame.draw.polygon(ecran, culoare, lista_de_puncte)` desenează orice formă cu colțurile date; prima oară plin, a doua oară (cu grosime 3) doar conturul.
 
-**Încearcă tu (5 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Am scris și am rulat **Exemplul 1** (Dreptunghiuri)  
 - [ ] Am scris și am rulat **Exemplul 2** (Cercuri și elipse)  
 - [ ] Am scris și am rulat **Exemplul 3** (Linii și poligoane)  
@@ -149,52 +159,9 @@ pygame.quit()
 
 ---
 
-## 3. Un peisaj
+## 3. Obiectul `Rect`
 
-### Exemplul 4 — Peisaj din forme
-
-```python
-import pygame
-
-pygame.init()
-ecran = pygame.display.set_mode((700, 450))
-pygame.display.set_caption("Peisaj")
-
-ruleaza = True
-while ruleaza:
-    for eveniment in pygame.event.get():
-        if eveniment.type == pygame.QUIT:
-            ruleaza = False
-
-    ecran.fill((135, 206, 235))
-    pygame.draw.circle(ecran, (255, 220, 0), (600, 80), 50)
-    pygame.draw.rect(ecran, (60, 170, 60), (0, 330, 700, 120))
-
-    pygame.draw.rect(ecran, (230, 200, 130), (100, 230, 140, 110))
-    pygame.draw.polygon(ecran, (170, 40, 40), [(90, 230), (170, 160), (250, 230)])
-    pygame.draw.rect(ecran, (110, 60, 20), (155, 280, 30, 60))
-    pygame.draw.rect(ecran, (200, 240, 255), (115, 250, 30, 30))
-
-    pygame.draw.rect(ecran, (110, 60, 20), (440, 260, 24, 80))
-    pygame.draw.circle(ecran, (20, 110, 20), (452, 240), 45)
-    pygame.display.flip()
-
-pygame.quit()
-```
-
-**Ce vezi pe ecran:** un **peisaj** pe cer albastru: **soare** galben în dreapta-sus, **iarbă** verde jos, o **casă** (pereți nisipii, acoperiș roșu, ușă maro, fereastră deschisă) și un **copac** (trunchi maro, coroană verde închis).
-
-Ordinea contează: **ce desenezi mai târziu se vede peste ce ai desenat mai devreme**. De aceea mai întâi cerul și iarba, apoi casa, abia la sfârșit detaliile.
-
-**Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 4** (Peisaj din forme)  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
----
-
-## 4. Obiectul `Rect`
-
-### Exemplul 5 — Dreptunghiul ca obiect
+### Exemplul 4 — Dreptunghiul ca obiect
 
 ```python
 import pygame
@@ -227,14 +194,14 @@ Un `Rect` (de la „rectangle”) memorează un dreptunghi și știe să-și cal
 Un `Rect` se poate da și la `pygame.draw.rect(ecran, culoare, r)`.
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 5** (Dreptunghiul ca obiect)  
+- [ ] Am scris și am rulat **Exemplul 4** (Dreptunghiul ca obiect)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## 5. Imagini proprii
+## 4. Imagini proprii
 
-### Exemplul 6 — O imagine făcută de noi (`Surface`)
+### Exemplul 5 — O imagine făcută de noi (`Surface`)
 
 ```python
 import pygame
@@ -272,7 +239,7 @@ Imaginea are marimea (100, 80)
 
 O `Surface` este o **imagine goală**, pe care poți desena la fel ca pe ecran (`fill`, `pygame.draw...`). `ecran.blit(imagine, (x, y))` o lipește pe ecran oriunde. Așa avem **un singur desen**, dar îl putem folosi de câte ori vrem.
 
-### Exemplul 7 — Salvăm și încărcăm o imagine
+### Exemplul 6 — Salvăm și încărcăm o imagine
 
 ```python
 import pygame
@@ -322,7 +289,7 @@ Programul face trei lucruri:
 
 Așa vei încărca și imaginile **descărcate** sau făcute în alt program: se pun în același folder cu jocul, iar numele fișierului se scrie între ghilimele. `convert_alpha()` pregătește imaginea ca să se deseneze rapid, păstrând transparența.
 
-### Exemplul 8 — Transparența
+### Exemplul 7 — Transparența
 
 ```python
 import pygame
@@ -356,77 +323,17 @@ pygame.quit()
 
 De aceea, pentru personajele din jocuri folosim `pygame.SRCALPHA`: partea pe care nu o desenăm rămâne **transparentă**.
 
-**Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 6** (O imagine făcută de noi (`Surface`))  
-- [ ] Am scris și am rulat **Exemplul 7** (Salvăm și încărcăm o imagine)  
-- [ ] Am scris și am rulat **Exemplul 8** (Transparența)  
+**Încearcă tu (8 min)**  
+- [ ] Am scris și am rulat **Exemplul 5** (O imagine făcută de noi (`Surface`))  
+- [ ] Am scris și am rulat **Exemplul 6** (Salvăm și încărcăm o imagine)  
+- [ ] Am scris și am rulat **Exemplul 7** (Transparența)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## 6. Mărire, rotire, oglindire
+## 5. Mini-proiect
 
-### Exemplul 9 — Transformări
-
-```python
-import pygame
-
-pygame.init()
-ecran = pygame.display.set_mode((600, 250))
-
-sageata = pygame.Surface((60, 30), pygame.SRCALPHA)
-pygame.draw.polygon(sageata, (220, 30, 30), [(0, 8), (35, 8), (35, 0), (60, 15), (35, 30), (35, 22), (0, 22)])
-
-mare = pygame.transform.scale(sageata, (120, 60))
-rotita = pygame.transform.rotate(sageata, 90)
-oglinda = pygame.transform.flip(sageata, True, False)
-
-print("Original:", sageata.get_size())
-print("Mare:", mare.get_size())
-print("Rotita cu 90 de grade:", rotita.get_size())
-print("Oglinda:", oglinda.get_size())
-
-ruleaza = True
-while ruleaza:
-    for eveniment in pygame.event.get():
-        if eveniment.type == pygame.QUIT:
-            ruleaza = False
-
-    ecran.fill((255, 255, 255))
-    ecran.blit(sageata, (30, 100))
-    ecran.blit(mare, (130, 80))
-    ecran.blit(rotita, (300, 80))
-    ecran.blit(oglinda, (420, 100))
-    pygame.display.flip()
-
-pygame.quit()
-```
-
-**Ieșire:**
-```text
-Original: (60, 30)
-Mare: (120, 60)
-Rotita cu 90 de grade: (30, 60)
-Oglinda: (60, 30)
-```
-
-**Ce vezi pe ecran:** patru săgeți roșii: prima este cea **originală**, a doua are **dublă mărime**, a treia este **rotită** și arată în sus, iar a patra este **oglindită** și arată spre stânga.
-
-- `transform.scale(imagine, (lățime, înălțime))` o face mai mare sau mai mică;
-- `transform.rotate(imagine, grade)` o rotește (în sens invers acelor de ceasornic); pentru 90° lățimea și înălțimea **se schimbă între ele**;
-- `transform.flip(imagine, orizontal, vertical)` o oglindește.
-
-Aceste comenzi **returnează o imagine nouă**; originalul rămâne neschimbat.
-
-**Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 9** (Transformări)  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
----
-
-## 7. Mini-proiect
-
-### Exemplul 10 — Orășelul meu
+### Exemplul 8 — Orășelul meu
 
 ```python
 import pygame
@@ -488,71 +395,47 @@ pygame.quit()
 Ideea cea mai importantă: funcția `creeaza_casa(culoare)` **construiește o imagine** și o **returnează**; o apelăm de patru ori cu culori diferite și punem rezultatele într-o **listă**. Apoi o buclă `for` le lipește pe ecran, la distanțe egale (`20 + i * 165`).
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** (Orășelul meu)  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+- [ ] Am scris și am rulat **Exemplul 8** (Orășelul meu)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Orășelul meu”
 
-### Exercițiul A — „Orășelul meu” (obligatoriu)
-Pornește de la Exemplul 10 și fă orășelul **al tău**:
+### Minim vs Complet
+
+| Nivel | Ce trebuie să ai |
+|-------|------------------|
+| **Minim** | Un desen din cel puțin 4 forme diferite |
+| **Complet** | Minim + o imagine creată de tine, salvată și încărcată + orășelul din mini-proiect |
+
+### Pasul 1 — Minim
+Desenează pe un fundal colorat cel puțin 4 forme diferite (de exemplu dreptunghi, cerc, linie și poligon).
+
+### Pasul 2 — Complet
+Pornește de la Exemplul 8 și fă orășelul **al tău**:
 1. cel puțin **6 clădiri** (poți crea și altă clădire: bloc, școală, biserică, turn);
 2. cel puțin **trei copaci**, creați **o singură dată** și lipiți de mai multe ori;
 3. un **soare**, **nori** și un **drum**;
 4. cel puțin **o imagine** salvată cu `pygame.image.save` și încărcată înapoi;
 5. titlul orașului tău, scris pe ecran.
 
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
-
-```python
-import pygame
-
-r = pygame.Rect(10, 20, 100, 50)
-print(r.right)
-print(r.bottom)
-print(r.center)
-r.y = 100
-print(r.bottom)
-```
-
-### Exercițiul C — Personajul tău
-Desenează pe o `Surface` de 80 × 80 **un personaj propriu** (robot, pisică, extraterestru), cu cel puțin 6 forme. Salvează-l ca `personaj.png`, încarcă-l și lipește-l de **5 ori** pe ecran, o dată mărit, o dată rotit și o dată oglindit.
-
-### Exercițiul D — Găsește greșelile
-Programul are 4 greșeli. Rescrie-l corect:
-
-```text
-import pygame
-pygame.init()
-ecran = pygame.display.set_mode((600, 400))
-img = pygame.Surface(60, 60)
-pygame.draw.circle(img, (255, 0, 0), 30, 30, 25)
-ecran.blit(img)
-pygame.display.flip()
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. De ce ordinea în care desenăm contează?  
-2. Ce este o `Surface` și cum o folosim?  
-3. De ce folosim `pygame.SRCALPHA` pentru personaje?
-
 **Gata când:**
 - [ ] Orășelul are 6 clădiri, copaci, soare, nori și drum  
 - [ ] Ai salvat și ai încărcat cel puțin o imagine  
-- [ ] Personajul tău apare mărit, rotit și oglindit  
-- [ ] Ai explicat pe foaie `Surface` și transparența  
-- [ ] Fișierul se numește `Prenume_Nume_P4_L2.py`  
+- [ ] Titlul orașului tău apare pe ecran  
+- [ ] Fișierul se numește `Prenume_Nume_P4_L2.py`
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Desenează **noaptea**: fundal închis, lună, stele și ferestre galbene luminate  
-- [ ] Fă un **semafor** cu trei cercuri (roșu, galben, verde)  
-- [ ] Adaugă **munți** (triunghiuri) în fundal  
-- [ ] Creează o **hartă** cu `for` în `for`: o grilă de pătrate de culori diferite (iarbă, apă, nisip)  
+## Bonus ★★★ — Provocare: Orășelul prinde viață
+
+*Doar dacă ai terminat Complet. Lucrezi tot în „Orășelul meu”, în același program.*
+
+- [ ] **Noaptea.** Desenează orășelul noaptea: fundal închis, lună, 10 stele mici și ferestre galbene luminate  
+- [ ] **Semafor.** Adaugă pe iarbă, între două case, un semafor: un stâlp, o cutie neagră și trei cercuri (roșu, galben, verde)  
+- [ ] **Munți.** Adaugă în fundal trei munți din triunghiuri (poligoane), în spatele caselor  
+- [ ] **Hartă.** Înlocuiește iarba cu o hartă făcută cu `for` în `for`: o grilă de pătrate de culori diferite (iarbă, apă, nisip)
 
 ---
 
@@ -577,7 +460,7 @@ Răspunde pe foaie:
 - Ce se desenează mai târziu se vede **peste** ce s-a desenat mai devreme.
 - `Rect` păstrează un dreptunghi și își calculează marginile și centrul.
 - O `Surface` este o imagine pe care desenăm; o lipim cu `blit` de câte ori vrem.
-- `pygame.image.save` / `pygame.image.load` salvează și încarcă imagini; `transform.scale`, `rotate`, `flip` le modifică.
+- `pygame.image.save` / `pygame.image.load` salvează și încarcă imagini; `transform.scale`, `rotate`, `flip` le modifică (vezi „Acasă 2”).
 
 ---
 
@@ -590,14 +473,386 @@ Răspunde pe foaie:
 
 ---
 
+---
+
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny.  
-2. Desenează **o hartă a unui joc** (iarbă, apă, drum) cu `for` în `for`.  
-3. Creează **trei personaje diferite** și salvează-le ca imagini.  
-4. **Bonus:** desenează un **robot** din forme, pe o `Surface`, și rotește-l în 4 poziții.  
-5. Salvează totul ca `Tema_P4_L2_Prenume_Nume.py`.
+1. Refă **4 exemple la alegere** din cele 8, scrise de tine (nu copiate).  
+2. Desenează o **tablă de șah** de 8 × 8 cu un `for` în `for`: pătrate de 50 de pixeli, alternând alb și negru.  
+3. **Personajul tău.** Desenează pe o `Surface` de 80 × 80 un personaj propriu (robot, pisică, extraterestru), cu cel puțin 6 forme. Salvează-l ca `personaj.png`, încarcă-l și lipește-l de **5 ori** pe ecran, o dată mărit, o dată rotit și o dată oglindit (vezi „Acasă 2”).  
+4. Creează **trei personaje diferite** și salvează-le ca imagini.  
+5. **Explică pe foaie:** De ce contează ordinea în care desenăm? Ce este o `Surface` și cum o folosim? De ce folosim `pygame.SRCALPHA` pentru personaje?  
+6. **Bonus:** desenează un **robot** din forme, pe o `Surface`, și rotește-l în 4 poziții.  
+7. Salvează totul ca `Tema_P4_L2_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le în Thonny, rulează-le și schimbă-le după preferințe.
+
+#### Acasă 1 — Peisaj din forme
+
+```python
+import pygame
+
+pygame.init()
+ecran = pygame.display.set_mode((700, 450))
+pygame.display.set_caption("Peisaj")
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+
+    ecran.fill((135, 206, 235))
+    pygame.draw.circle(ecran, (255, 220, 0), (600, 80), 50)
+    pygame.draw.rect(ecran, (60, 170, 60), (0, 330, 700, 120))
+
+    pygame.draw.rect(ecran, (230, 200, 130), (100, 230, 140, 110))
+    pygame.draw.polygon(ecran, (170, 40, 40), [(90, 230), (170, 160), (250, 230)])
+    pygame.draw.rect(ecran, (110, 60, 20), (155, 280, 30, 60))
+    pygame.draw.rect(ecran, (200, 240, 255), (115, 250, 30, 30))
+
+    pygame.draw.rect(ecran, (110, 60, 20), (440, 260, 24, 80))
+    pygame.draw.circle(ecran, (20, 110, 20), (452, 240), 45)
+    pygame.display.flip()
+
+pygame.quit()
+```
+
+**Ce vezi pe ecran:** un **peisaj** pe cer albastru: **soare** galben în dreapta-sus, **iarbă** verde jos, o **casă** (pereți nisipii, acoperiș roșu, ușă maro, fereastră deschisă) și un **copac** (trunchi maro, coroană verde închis).
+
+Ordinea contează: **ce desenezi mai târziu se vede peste ce ai desenat mai devreme**. De aceea mai întâi cerul și iarba, apoi casa, abia la sfârșit detaliile.
+
+#### Acasă 2 — Transformări
+
+```python
+import pygame
+
+pygame.init()
+ecran = pygame.display.set_mode((600, 250))
+
+sageata = pygame.Surface((60, 30), pygame.SRCALPHA)
+pygame.draw.polygon(sageata, (220, 30, 30), [(0, 8), (35, 8), (35, 0), (60, 15), (35, 30), (35, 22), (0, 22)])
+
+mare = pygame.transform.scale(sageata, (120, 60))
+rotita = pygame.transform.rotate(sageata, 90)
+oglinda = pygame.transform.flip(sageata, True, False)
+
+print("Original:", sageata.get_size())
+print("Mare:", mare.get_size())
+print("Rotita cu 90 de grade:", rotita.get_size())
+print("Oglinda:", oglinda.get_size())
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+
+    ecran.fill((255, 255, 255))
+    ecran.blit(sageata, (30, 100))
+    ecran.blit(mare, (130, 80))
+    ecran.blit(rotita, (300, 80))
+    ecran.blit(oglinda, (420, 100))
+    pygame.display.flip()
+
+pygame.quit()
+```
+
+**Ieșire:**
+```text
+Original: (60, 30)
+Mare: (120, 60)
+Rotita cu 90 de grade: (30, 60)
+Oglinda: (60, 30)
+```
+
+**Ce vezi pe ecran:** patru săgeți roșii: prima este cea **originală**, a doua are **dublă mărime**, a treia este **rotită** și arată în sus, iar a patra este **oglindită** și arată spre stânga.
+
+- `transform.scale(imagine, (lățime, înălțime))` o face mai mare sau mai mică;
+- `transform.rotate(imagine, grade)` o rotește (în sens invers acelor de ceasornic); pentru 90° lățimea și înălțimea **se schimbă între ele**;
+- `transform.flip(imagine, orizontal, vertical)` o oglindește.
+
+Aceste comenzi **returnează o imagine nouă**; originalul rămâne neschimbat.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+import pygame
+
+r = pygame.Rect(10, 20, 100, 50)
+print(r.right)
+print(r.bottom)
+print(r.center)
+r.y = 100
+print(r.bottom)
+```
+
+**Găsește greșelile.** Programul are 4 greșeli. Rescrie-l corect:
+
+```text
+import pygame
+pygame.init()
+ecran = pygame.display.set_mode((600, 400))
+img = pygame.Surface(60, 60)
+pygame.draw.circle(img, (255, 0, 0), 30, 30, 25)
+ecran.blit(img)
+pygame.display.flip()
+```
 
 ---
 
+## Răspunsuri la bonus
+Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit, important este să funcționeze. Fiecare cod este un program întreg, pornit de la „Orășelul meu” (Exemplul 8).
+
+### 1. Noaptea
+```python
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 450
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Orasul meu")
+font = pygame.font.Font(None, 40)
+
+def creeaza_casa(culoare, fereastra):
+    casa = pygame.Surface((120, 150), pygame.SRCALPHA)
+    pygame.draw.rect(casa, culoare, (10, 60, 100, 90))
+    pygame.draw.polygon(casa, (160, 40, 40), [(0, 60), (60, 5), (120, 60)])
+    pygame.draw.rect(casa, (110, 60, 20), (48, 100, 24, 50))
+    pygame.draw.rect(casa, fereastra, (18, 80, 24, 24))
+    pygame.draw.rect(casa, fereastra, (78, 80, 24, 24))
+    return casa
+
+case = [
+    creeaza_casa((230, 200, 130), (255, 230, 100)),
+    creeaza_casa((150, 200, 240), (255, 230, 100)),
+    creeaza_casa((240, 170, 190), (255, 230, 100)),
+    creeaza_casa((170, 230, 170), (255, 230, 100)),
+]
+
+copac = pygame.Surface((60, 120), pygame.SRCALPHA)
+pygame.draw.rect(copac, (110, 60, 20), (25, 70, 10, 50))
+pygame.draw.circle(copac, (20, 120, 20), (30, 45), 30)
+
+titlu = font.render("ORASUL MEU", True, (255, 255, 255))
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+
+    ecran.fill((15, 20, 50))
+    pygame.draw.circle(ecran, (240, 240, 200), (620, 70), 40)
+    for i in range(10):
+        pygame.draw.circle(ecran, (255, 255, 255), (40 + i * 65, 25 + (i % 3) * 30), 2)
+    pygame.draw.rect(ecran, (20, 70, 30), (0, 330, LATIME, 120))
+    pygame.draw.rect(ecran, (90, 90, 90), (0, 400, LATIME, 30))
+
+    for i in range(4):
+        ecran.blit(case[i], (20 + i * 165, 190))
+    ecran.blit(copac, (630, 210))
+
+    ecran.blit(titlu, (20, 15))
+    pygame.display.flip()
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** același orășel, dar pe fundal închis, cu o lună, zece stele mici și ferestre galbene luminate. Funcția `creeaza_casa` primește acum și culoarea ferestrelor, deci o poți schimba pentru fiecare casă. Stelele sunt desenate cu un `for` care calculează pozițiile: `40 + i * 65` pentru `x`, iar `i % 3` face `y` să urce și să coboare.
+
+### 2. Semafor
+```python
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 450
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Orasul meu")
+font = pygame.font.Font(None, 40)
+
+def creeaza_casa(culoare):
+    casa = pygame.Surface((120, 150), pygame.SRCALPHA)
+    pygame.draw.rect(casa, culoare, (10, 60, 100, 90))
+    pygame.draw.polygon(casa, (160, 40, 40), [(0, 60), (60, 5), (120, 60)])
+    pygame.draw.rect(casa, (110, 60, 20), (48, 100, 24, 50))
+    pygame.draw.rect(casa, (200, 240, 255), (18, 80, 24, 24))
+    pygame.draw.rect(casa, (200, 240, 255), (78, 80, 24, 24))
+    return casa
+
+case = [
+    creeaza_casa((230, 200, 130)),
+    creeaza_casa((150, 200, 240)),
+    creeaza_casa((240, 170, 190)),
+    creeaza_casa((170, 230, 170)),
+]
+
+copac = pygame.Surface((60, 120), pygame.SRCALPHA)
+pygame.draw.rect(copac, (110, 60, 20), (25, 70, 10, 50))
+pygame.draw.circle(copac, (20, 120, 20), (30, 45), 30)
+
+titlu = font.render("ORASUL MEU", True, (255, 255, 255))
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+
+    ecran.fill((135, 206, 235))
+    pygame.draw.circle(ecran, (255, 220, 0), (620, 70), 40)
+    pygame.draw.ellipse(ecran, (255, 255, 255), (80, 50, 120, 40))
+    pygame.draw.ellipse(ecran, (255, 255, 255), (300, 80, 140, 40))
+    pygame.draw.rect(ecran, (70, 170, 70), (0, 330, LATIME, 120))
+    pygame.draw.rect(ecran, (90, 90, 90), (0, 400, LATIME, 30))
+
+    for i in range(4):
+        ecran.blit(case[i], (20 + i * 165, 190))
+    ecran.blit(copac, (630, 210))
+
+    pygame.draw.rect(ecran, (60, 60, 60), (326, 328, 8, 72))
+    pygame.draw.rect(ecran, (30, 30, 30), (318, 256, 24, 72))
+    pygame.draw.circle(ecran, (230, 40, 40), (330, 272), 8)
+    pygame.draw.circle(ecran, (255, 210, 0), (330, 292), 8)
+    pygame.draw.circle(ecran, (40, 200, 60), (330, 312), 8)
+
+    ecran.blit(titlu, (20, 15))
+    pygame.display.flip()
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** între a doua și a treia casă stă un semafor: stâlp gri, cutie neagră și trei lumini (roșu, galben, verde). Ordinea contează: stâlpul se desenează primul, apoi cutia, apoi cercurile, ca să se vadă peste cutie.
+
+### 3. Munți
+```python
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 450
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Orasul meu")
+font = pygame.font.Font(None, 40)
+
+def creeaza_casa(culoare):
+    casa = pygame.Surface((120, 150), pygame.SRCALPHA)
+    pygame.draw.rect(casa, culoare, (10, 60, 100, 90))
+    pygame.draw.polygon(casa, (160, 40, 40), [(0, 60), (60, 5), (120, 60)])
+    pygame.draw.rect(casa, (110, 60, 20), (48, 100, 24, 50))
+    pygame.draw.rect(casa, (200, 240, 255), (18, 80, 24, 24))
+    pygame.draw.rect(casa, (200, 240, 255), (78, 80, 24, 24))
+    return casa
+
+case = [
+    creeaza_casa((230, 200, 130)),
+    creeaza_casa((150, 200, 240)),
+    creeaza_casa((240, 170, 190)),
+    creeaza_casa((170, 230, 170)),
+]
+
+copac = pygame.Surface((60, 120), pygame.SRCALPHA)
+pygame.draw.rect(copac, (110, 60, 20), (25, 70, 10, 50))
+pygame.draw.circle(copac, (20, 120, 20), (30, 45), 30)
+
+titlu = font.render("ORASUL MEU", True, (255, 255, 255))
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+
+    ecran.fill((135, 206, 235))
+    pygame.draw.circle(ecran, (255, 220, 0), (620, 70), 40)
+    pygame.draw.ellipse(ecran, (255, 255, 255), (80, 50, 120, 40))
+    pygame.draw.ellipse(ecran, (255, 255, 255), (300, 80, 140, 40))
+    pygame.draw.polygon(ecran, (120, 120, 140), [(0, 330), (120, 190), (250, 330)])
+    pygame.draw.polygon(ecran, (100, 100, 125), [(180, 330), (330, 160), (480, 330)])
+    pygame.draw.polygon(ecran, (130, 130, 150), [(400, 330), (540, 200), (690, 330)])
+    pygame.draw.rect(ecran, (70, 170, 70), (0, 330, LATIME, 120))
+    pygame.draw.rect(ecran, (90, 90, 90), (0, 400, LATIME, 30))
+
+    for i in range(4):
+        ecran.blit(case[i], (20 + i * 165, 190))
+    ecran.blit(copac, (630, 210))
+
+    ecran.blit(titlu, (20, 15))
+    pygame.display.flip()
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** trei munți gri-violet în spatele caselor. Munții se desenează **înaintea** ierbii și a caselor, deci iarba îi taie jos, iar casele stau în fața lor.
+
+### 4. Hartă
+```python
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 450
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Orasul meu")
+font = pygame.font.Font(None, 40)
+
+def creeaza_casa(culoare):
+    casa = pygame.Surface((120, 150), pygame.SRCALPHA)
+    pygame.draw.rect(casa, culoare, (10, 60, 100, 90))
+    pygame.draw.polygon(casa, (160, 40, 40), [(0, 60), (60, 5), (120, 60)])
+    pygame.draw.rect(casa, (110, 60, 20), (48, 100, 24, 50))
+    pygame.draw.rect(casa, (200, 240, 255), (18, 80, 24, 24))
+    pygame.draw.rect(casa, (200, 240, 255), (78, 80, 24, 24))
+    return casa
+
+case = [
+    creeaza_casa((230, 200, 130)),
+    creeaza_casa((150, 200, 240)),
+    creeaza_casa((240, 170, 190)),
+    creeaza_casa((170, 230, 170)),
+]
+
+copac = pygame.Surface((60, 120), pygame.SRCALPHA)
+pygame.draw.rect(copac, (110, 60, 20), (25, 70, 10, 50))
+pygame.draw.circle(copac, (20, 120, 20), (30, 45), 30)
+
+titlu = font.render("ORASUL MEU", True, (255, 255, 255))
+
+culori_harta = {"I": (70, 170, 70), "A": (60, 120, 220), "N": (230, 210, 140)}
+harta = [
+    "IIIIIIIIIIIIII",
+    "IIIINNIIIIIAAA",
+    "IIIIIIINNAAAAA",
+]
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+
+    ecran.fill((135, 206, 235))
+    pygame.draw.circle(ecran, (255, 220, 0), (620, 70), 40)
+    pygame.draw.ellipse(ecran, (255, 255, 255), (80, 50, 120, 40))
+    pygame.draw.ellipse(ecran, (255, 255, 255), (300, 80, 140, 40))
+    for rand in range(3):
+        for col in range(14):
+            litera = harta[rand][col]
+            pygame.draw.rect(ecran, culori_harta[litera], (col * 50, 330 + rand * 40, 50, 40))
+    pygame.draw.rect(ecran, (90, 90, 90), (0, 400, LATIME, 30))
+
+    for i in range(4):
+        ecran.blit(case[i], (20 + i * 165, 190))
+    ecran.blit(copac, (630, 210))
+
+    ecran.blit(titlu, (20, 15))
+    pygame.display.flip()
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** în loc de un singur dreptunghi verde, partea de jos este o hartă din pătrate de iarbă, nisip și apă. Primul `for` alege rândul, al doilea alege coloana; litera din `harta` spune ce culoare se folosește din `culori_harta`. Pătratele au `50 × 40`, deci coloana `col` începe la `col * 50`, iar rândul `rand` la `330 + rand * 40`.
+
+---
 ## Ce urmează — Lecția 3
 **Mișcare: bucla jocului**: personajul se mișcă singur, ricoșează și trăiește în bucla jocului.

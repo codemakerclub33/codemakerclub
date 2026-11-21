@@ -21,8 +21,8 @@ La finalul orei ai un circuit cu **LED + rezistor** conectat la Arduino și un p
 |--------|----------|
 | 0–10 | Ce e Arduino · tur: placa, pinii, breadboard |
 | 10–25 | Cont Tinkercad · **Create new Circuit** · punem Arduino Uno |
-| 25–50 | Exemplul 1: Blink cu LED-ul de pe placă |
-| 50–95 | Exemplele 2–4: LED extern, viteză, SOS |
+| 25–50 | Pasul 3: Blink cu LED-ul de pe placă |
+| 50–95 | Pașii 4–6: LED extern, cod cu nume, SOS |
 | 95–120 | Recap, quiz, verifici numele, arăți circuitul |
 
 **Componente azi:** Arduino Uno R3 · Breadboard Small · LED · Resistor (220 Ω) · 2 fire

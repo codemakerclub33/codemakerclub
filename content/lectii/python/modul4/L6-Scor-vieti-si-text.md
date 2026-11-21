@@ -1,4 +1,5 @@
-# LECȚIA 6 — Scor, vieți și text
+# LECȚIA 6 — Ploaia de stele
+### Scor, vieți și text
 **Modulul 4 · Jocuri cu Pygame · 2 ore**  
 **Code Maker Club · Game Creator**
 
@@ -7,13 +8,13 @@
 
 ---
 
-## Obiectiv
-La finalul orei scrii text pe ecran cu o funcție proprie, afișezi scor, nivel și vieți (cu inimioare), folosești **stări de joc** (meniu, joc, pauză, final), calculezi nivelurile, afișezi mesaje temporare, desenezi o bară de progres și ții minte cel mai bun scor.  
-**Minim:** scor și vieți afișate pe ecran.  
-**Ținta orei (Complet):** + meniu, final, pauză, niveluri și jocul „Ploaia de stele”.
+## Ce facem azi
 
-## De ce contează
-Fără scor și vieți, un joc nu are miză. Fără meniu și ecran de final, nu are început și sfârșit. Aceste detalii fac diferența dintre „un desen care se mișcă” și **un joc adevărat**.
+La final scrii text pe ecran cu o funcție proprie, afișezi scor, nivel și vieți (cu inimioare), folosești **stări de joc** (meniu, joc, pauză, final), calculezi nivelurile, desenezi o bară de progres și ții minte cel mai bun scor.
+
+Un joc bun îți spune mereu **cum stai**: câte puncte ai, câte vieți îți mai rămân, la ce nivel ești și când ai pierdut. Fără scor și vieți, un joc nu are miză. Fără meniu și ecran de final, nu are început și sfârșit. Aceste detalii fac diferența dintre „un desen care se mișcă” și **un joc adevărat**.
+
+La final ai **„Ploaia de stele”**: un joc complet, cu meniu, scor, vieți, niveluri și final.
 
 ---
 
@@ -22,12 +23,25 @@ Fără scor și vieți, un joc nu are miză. Fără meniu și ecran de final, nu
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recapitulare L5 |
-| 10–30 | Funcția `scrie` și scorul (**Exemplele 1–2**) |
-| 30–45 | Vieți ca inimioare (**Exemplul 3**) |
-| 45–70 | Stările jocului, nivelurile (**Exemplele 4–5**) |
-| 70–90 | Pauză, mesaje, bare, record (**Exemplele 6–9**) |
-| 90–118 | Mini-proiect (**Exemplul 10**) |
+| 10–25 | Funcția `scrie` (**Exemplul 1**) |
+| 25–40 | Vieți ca inimioare (**Exemplul 2**) |
+| 40–65 | Stările jocului, nivelurile (**Exemplele 3–4**) |
+| 65–90 | Pauză, bară, record (**Exemplele 5–7**) |
+| 90–118 | Mini-proiect: Ploaia de stele (**Exemplul 8**) |
 | 118–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `def scrie(text, x, y, culoare=(255, 255, 255), centrat=False):` | O funcție cu valori implicite, care scrie text | `scrie("Scor: 5", 10, 10)` |
+| `stare = {"joc": "meniu", "scor": 0, ...}` | Un dicționar care ține minte totul | `stare["scor"] += 1` |
+| `if stare["joc"] == "joc":` | Starea jocului decide ce se actualizează și ce se desenează | `stare["joc"] = "final"` |
+| `scor // 5 + 1` | Nivelul din scor (`//` = împărțire întreagă) | `nivel_pentru_scor(12)` dă `3` |
+| `inima(x, y, culoare)` | O funcție care desenează o inimă din forme | `inima(560, 22, (230, 30, 60))` |
+| `random.randint(1, 100) <= 3` | Un eveniment care se întâmplă din când în când | `obiecte.append(obiect_nou())` |
 
 ---
 
@@ -36,9 +50,6 @@ Fără scor și vieți, un joc nu are miză. Fără meniu și ecran de final, nu
 - Coliziuni: `colliderect`, `collidepoint`, `collidelist`.
 - Lista `ramase`: păstrăm doar obiectele care mai rămân în joc.
 - Imunitatea după lovitură previne pierderea vieților dintr-o singură atingere.
-
-**Încearcă tu (3 min)**  
-- [ ] Scrie o funcție `dublu(x)` care returnează dublul lui `x`  
 
 ---
 
@@ -83,68 +94,15 @@ pygame.quit()
 
 Funcția `scrie` ascunde toți pașii (creează imaginea textului, o lipește) și are **valori implicite**: dacă nu spui culoarea, textul este alb; dacă nu spui fontul, se folosește fontul mic; `centrat=True` așază textul **cu mijlocul** în `x`. Din acest moment, orice text este o singură linie!
 
-### Exemplul 2 — Scorul crește
-
-```python
-import pygame
-
-pygame.init()
-ecran = pygame.display.set_mode((600, 400))
-pygame.display.set_caption("Click pe minge")
-font = pygame.font.Font(None, 48)
-
-CENTRU = (300, 220)
-RAZA = 80
-scor = 0
-
-def in_cerc(punct, centru, raza):
-    dx = punct[0] - centru[0]
-    dy = punct[1] - centru[1]
-    return (dx * dx + dy * dy) ** 0.5 <= raza
-
-print(in_cerc((300, 220), CENTRU, RAZA))
-print(in_cerc((350, 260), CENTRU, RAZA))
-print(in_cerc((500, 50), CENTRU, RAZA))
-
-ruleaza = True
-while ruleaza:
-    for eveniment in pygame.event.get():
-        if eveniment.type == pygame.QUIT:
-            ruleaza = False
-        if eveniment.type == pygame.MOUSEBUTTONDOWN:
-            if in_cerc(eveniment.pos, CENTRU, RAZA):
-                scor += 1
-
-    ecran.fill((255, 245, 220))
-    pygame.draw.circle(ecran, (220, 40, 60), CENTRU, RAZA)
-    text = font.render("Scor: " + str(scor), True, (60, 60, 60))
-    ecran.blit(text, (20, 20))
-    pygame.display.flip()
-
-pygame.quit()
-```
-
-**Ieșire:**
-```text
-True
-True
-False
-```
-
-**Ce vezi pe ecran:** pe fundal crem, un **cerc roșu** mare și, sus, **„Scor: 0”**. De fiecare dată când dai click **în cerc**, scorul crește cu 1. Click-urile în afara lui nu contează.
-
-Funcția `in_cerc(punct, centru, raza)` returnează `True` dacă punctul este în cerc. Primele trei rânduri `print` sunt teste: centrul este în cerc, punctul `(350, 260)` este la distanța ~64 (în cerc), iar `(500, 50)` este departe.
-
-**Încearcă tu (5 min)**  
+**Încearcă tu (3 min)**  
 - [ ] Am scris și am rulat **Exemplul 1** (Funcția `scrie`)  
-- [ ] Am scris și am rulat **Exemplul 2** (Scorul crește)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 3. Vieți
 
-### Exemplul 3 — Inimioare
+### Exemplul 2 — Inimioare
 
 ```python
 import pygame
@@ -197,14 +155,14 @@ Vieti ramase: 3 din 5
 Inima este făcută din **două cercuri** și **un triunghi** (jos). Funcția `deseneaza_vieti(vieti, maxim)` desenează `maxim` inimioare, în care primele `vieti` sunt roșii.
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 3** (Inimioare)  
+- [ ] Am scris și am rulat **Exemplul 2** (Inimioare)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 4. Stări și niveluri
 
-### Exemplul 4 — Meniu, joc, final
+### Exemplul 3 — Meniu, joc, final
 
 ```python
 import pygame
@@ -263,7 +221,7 @@ pygame.quit()
 
 Variabila **`stare`** (un text: `"meniu"`, `"joc"` sau `"final"`) ne spune **ce se întâmplă acum**. Tastele fac **tranziții** între stări, iar `if / elif / else` desenează ecranul potrivit. Așa funcționează aproape orice joc.
 
-### Exemplul 5 — Nivelurile
+### Exemplul 4 — Nivelurile
 
 ```python
 def nivel_pentru_scor(scor):
@@ -290,15 +248,15 @@ Scor 23 -> nivel 5 , viteza 8
 La fiecare **5 puncte** începe un **nivel nou** (`scor // 5` este câtul împărțirii întregi: 0 pentru 0–4, 1 pentru 5–9, 2 pentru 10–14 etc.). Cu cât nivelul este mai mare, cu atât jocul este mai **rapid**. Așa jocul rămâne provocator.
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 4** (Meniu, joc, final)  
-- [ ] Am scris și am rulat **Exemplul 5** (Nivelurile)  
+- [ ] Am scris și am rulat **Exemplul 3** (Meniu, joc, final)  
+- [ ] Am scris și am rulat **Exemplul 4** (Nivelurile)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## 5. Pauză, mesaje, bare, record
+## 5. Pauză, bară, record
 
-### Exemplul 6 — Pauză
+### Exemplul 5 — Pauză
 
 ```python
 import pygame
@@ -340,49 +298,7 @@ pygame.quit()
 
 `pauza = not pauza` **întoarce** valoarea: `True` devine `False`, `False` devine `True`. Pauza nu oprește bucla (ca să poți ieși din pauză), ci doar **sare peste actualizare**.
 
-### Exemplul 7 — Mesaje care dispar
-
-```python
-import pygame
-
-pygame.init()
-ecran = pygame.display.set_mode((600, 400))
-ceas = pygame.time.Clock()
-font = pygame.font.Font(None, 40)
-
-mesaje = []
-
-ruleaza = True
-while ruleaza:
-    for eveniment in pygame.event.get():
-        if eveniment.type == pygame.QUIT:
-            ruleaza = False
-        if eveniment.type == pygame.MOUSEBUTTONDOWN:
-            mesaje.append({"text": "+1", "x": eveniment.pos[0], "y": eveniment.pos[1], "viata": 40})
-
-    ramase = []
-    for m in mesaje:
-        m["y"] -= 1
-        m["viata"] -= 1
-        if m["viata"] > 0:
-            ramase.append(m)
-    mesaje = ramase
-
-    ecran.fill((30, 60, 40))
-    for m in mesaje:
-        imagine = font.render(m["text"], True, (255, 255, 100))
-        ecran.blit(imagine, (m["x"], m["y"]))
-    pygame.display.flip()
-    ceas.tick(60)
-
-pygame.quit()
-```
-
-**Ce vezi pe ecran:** fundal verde închis. De fiecare dată când dai click, în locul respectiv apare **„+1”** galben, care **urcă încet** și **dispare** după o secundă (40 de cadre).
-
-Fiecare mesaj este un dicționar cu text, poziție și `viata` (câte cadre mai are de trăit). La fiecare cadru urcă un pixel și pierde o unitate din viață; când viața ajunge la 0, nu mai este păstrat în listă.
-
-### Exemplul 8 — Bara și recordul
+### Exemplul 6 — Bara și recordul
 
 ```python
 def latime_umplere(valoare, maxim, latime):
@@ -468,16 +384,15 @@ pygame.quit()
 **Ce vezi pe ecran:** o **bară lungă** cu contur alb, plină de **verde**. Cu săgeata **jos** energia scade, iar bara se golește. Sub 50 devine **galbenă**, sub 25 **roșie**. Cu săgeata **sus** crește din nou.
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 6** (Pauză)  
-- [ ] Am scris și am rulat **Exemplul 7** (Mesaje care dispar)  
-- [ ] Am scris și am rulat **Exemplul 8** (Bara și recordul)  
+- [ ] Am scris și am rulat **Exemplul 5** (Pauză)  
+- [ ] Am scris și am rulat **Exemplul 6** (Bara și recordul)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 6. Mini-proiect
 
-### Exemplul 9 — Orice obiect care cade
+### Exemplul 7 — Orice obiect care cade
 
 ```python
 import random
@@ -539,7 +454,7 @@ Un obiect nou are cheile: ['rect', 'tip', 'viteza']
 
 Funcția `obiect_nou()` creează un dicționar: poziția (un `Rect`, deasupra ecranului), viteza și tipul (de trei ori mai multe stele decât pietre: `"stea"` apare de 3 ori în listă). `sorted(...keys())` afișează cheile dicționarului în ordine alfabetică. Acesta este „motorul” pentru jocul următor.
 
-### Exemplul 10 — „Ploaia de stele”
+### Exemplul 8 — „Ploaia de stele”
 
 ```python
 import math
@@ -697,73 +612,48 @@ pygame.quit()
 Așa se leagă lucrurile: **un dicționar `stare`** păstrează totul (scor, vieți, nivel, record și în ce ecran suntem), funcțiile mici (`scrie`, `deseneaza_stea`, `inima`, `joc_nou`, `pierde_viata`) fac fiecare câte un lucru, iar bucla jocului doar le **coordonează**.
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 9** (Orice obiect care cade)  
-- [ ] Am scris și am rulat **Exemplul 10** („Ploaia de stele”)  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+- [ ] Am scris și am rulat **Exemplul 7** (Orice obiect care cade)  
+- [ ] Am scris și am rulat **Exemplul 8** („Ploaia de stele”)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Ploaia de stele”
 
-### Exercițiul A — „Ploaia de stele” (obligatoriu)
-Pornește de la Exemplul 10 și fă jocul **al tău**:
+### Minim vs Complet
+
+| Nivel | Ce trebuie să ai |
+|-------|------------------|
+| **Minim** | Scor și vieți afișate pe ecran |
+| **Complet** | Minim + meniu, final, pauză, niveluri și jocul „Ploaia de stele” |
+
+### Pasul 1 — Minim
+Scrie un program în care obiecte cad și tu le prinzi cu un coș; afișează pe ecran scorul și numărul de vieți.
+
+### Pasul 2 — Complet
+Pornește de la Exemplul 8 și fă jocul **al tău**:
 1. schimbă **tema** (alte obiecte care cad: mere și viermi, monede și bombe, pești și deșeuri);
 2. adaugă un obiect **bonus** (o inimă): dacă îl prinzi, câștigi o viață (maximum 5);
 3. adaugă **o bară de nivel** care arată cât mai lipsește până la nivelul următor;
-4. adaugă **mesaje „+1”** care urcă din locul unde ai prins stea (Exemplul 7);
+4. adaugă **mesaje „+1”** care urcă din locul unde ai prins o stea (vezi „Acasă 2”);
 5. păstrează stările `meniu`, `joc`, `pauza`, `final` și recordul.
-
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
-
-```python
-def nivel(scor):
-    return scor // 5 + 1
-
-print(nivel(0), nivel(4), nivel(5), nivel(19), nivel(20))
-print(not True, not False)
-pauza = False
-pauza = not pauza
-print(pauza)
-```
-
-### Exercițiul C — Meniu cu butoane
-Fă un **meniu** cu trei butoane („Joaca”, „Reguli”, „Iesire”), în care **mouse-ul** schimbă culoarea butoanelor (L5) și **click-ul** schimbă starea jocului.
-
-### Exercițiul D — Găsește greșelile
-Programul are 4 greșeli. Rescrie-l corect:
-
-```text
-stare = "meniu"
-scor = 0
-def scrie(text, x, y):
-    imagine = font.render(text, True)
-    ecran.blit(imagine, x, y)
-if stare = "meniu":
-    scrie("Joc", 100, 100)
-nivel = scor / 5 + 1
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. Ce este starea jocului și cum o folosim?  
-2. De ce un joc are nevoie de meniu și de ecran de final?  
-3. Cum funcționează pauza?
 
 **Gata când:**
 - [ ] Jocul are meniu, joc, pauză și final  
 - [ ] Are scor, nivel, vieți (cu inimioare) și record  
 - [ ] Are un obiect bonus și mesaje „+1”  
-- [ ] Ai explicat pe foaie stările jocului  
-- [ ] Fișierul se numește `Prenume_Nume_P4_L6.py`  
+- [ ] Fișierul se numește `Prenume_Nume_P4_L6.py`
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Salvează recordul într-un **fișier** (în lecția 8 învățăm cum, dar poți încerca înainte)  
-- [ ] Adaugă **efecte de sunet** pentru stea și piatră (`pygame.mixer`)  
-- [ ] Fă **trei niveluri** diferite, cu fundaluri și viteze diferite  
-- [ ] Adaugă un **ecran de reguli** în meniu  
+## Bonus ★★★ — Provocare: Ploaia de stele, ediția specială
+
+*Doar dacă ai terminat Complet. Lucrezi tot în „Ploaia de stele”, în același program.*
+
+- [ ] **Ecran de reguli.** În meniu, tasta **R** deschide un ecran „REGULI” (o stare nouă); tot **R** te întoarce în meniu  
+- [ ] **Fundal pe niveluri.** Fundalul își schimbă culoarea la fiecare nivel (trei culori, apoi se reiau)  
+- [ ] **Stea mare.** Una din zece stele este albastră și mai mare, și valorează 3 puncte; scăpată, nu costă nicio viață  
+- [ ] **Serie.** Afișează „Serie: n”, numărul de stele prinse la rând; seria revine la 0 când pierzi o viață
 
 ---
 
@@ -801,14 +691,768 @@ Răspunde pe foaie:
 
 ---
 
+---
+
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny.  
-2. Adaugă „Ploii de stele” un **ecran de reguli** și un buton de ieșire.  
+1. Refă **4 exemple la alegere** din cele 8, scrise de tine (nu copiate).  
+2. **Meniu cu butoane.** Fă un **meniu** cu trei butoane („Joaca”, „Reguli”, „Iesire”), în care **mouse-ul** schimbă culoarea butoanelor (L5) și **click-ul** schimbă starea jocului.  
 3. Fă o **a doua variantă a jocului**, cu altă temă și alte culori.  
-4. **Bonus:** fă un joc în care prinzi doar **obiecte de culoarea aleasă** la început.  
-5. Salvează totul ca `Tema_P4_L6_Prenume_Nume.py`.
+4. **Explică pe foaie:** Ce este starea jocului și cum o folosim? De ce un joc are nevoie de meniu și de ecran de final? Cum funcționează pauza?  
+5. **Bonus:** fă un joc în care prinzi doar **obiecte de culoarea aleasă** la început.  
+6. Salvează totul ca `Tema_P4_L6_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le în Thonny, rulează-le și schimbă-le după preferințe.
+
+#### Acasă 1 — Scorul crește
+
+```python
+import pygame
+
+pygame.init()
+ecran = pygame.display.set_mode((600, 400))
+pygame.display.set_caption("Click pe minge")
+font = pygame.font.Font(None, 48)
+
+CENTRU = (300, 220)
+RAZA = 80
+scor = 0
+
+def in_cerc(punct, centru, raza):
+    dx = punct[0] - centru[0]
+    dy = punct[1] - centru[1]
+    return (dx * dx + dy * dy) ** 0.5 <= raza
+
+print(in_cerc((300, 220), CENTRU, RAZA))
+print(in_cerc((350, 260), CENTRU, RAZA))
+print(in_cerc((500, 50), CENTRU, RAZA))
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.MOUSEBUTTONDOWN:
+            if in_cerc(eveniment.pos, CENTRU, RAZA):
+                scor += 1
+
+    ecran.fill((255, 245, 220))
+    pygame.draw.circle(ecran, (220, 40, 60), CENTRU, RAZA)
+    text = font.render("Scor: " + str(scor), True, (60, 60, 60))
+    ecran.blit(text, (20, 20))
+    pygame.display.flip()
+
+pygame.quit()
+```
+
+**Ieșire:**
+```text
+True
+True
+False
+```
+
+**Ce vezi pe ecran:** pe fundal crem, un **cerc roșu** mare și, sus, **„Scor: 0”**. De fiecare dată când dai click **în cerc**, scorul crește cu 1. Click-urile în afara lui nu contează.
+
+Funcția `in_cerc(punct, centru, raza)` returnează `True` dacă punctul este în cerc. Primele trei rânduri `print` sunt teste: centrul este în cerc, punctul `(350, 260)` este la distanța ~64 (în cerc), iar `(500, 50)` este departe.
+
+#### Acasă 2 — Mesaje care dispar
+
+```python
+import pygame
+
+pygame.init()
+ecran = pygame.display.set_mode((600, 400))
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 40)
+
+mesaje = []
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.MOUSEBUTTONDOWN:
+            mesaje.append({"text": "+1", "x": eveniment.pos[0], "y": eveniment.pos[1], "viata": 40})
+
+    ramase = []
+    for m in mesaje:
+        m["y"] -= 1
+        m["viata"] -= 1
+        if m["viata"] > 0:
+            ramase.append(m)
+    mesaje = ramase
+
+    ecran.fill((30, 60, 40))
+    for m in mesaje:
+        imagine = font.render(m["text"], True, (255, 255, 100))
+        ecran.blit(imagine, (m["x"], m["y"]))
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+
+**Ce vezi pe ecran:** fundal verde închis. De fiecare dată când dai click, în locul respectiv apare **„+1”** galben, care **urcă încet** și **dispare** după o secundă (40 de cadre).
+
+Fiecare mesaj este un dicționar cu text, poziție și `viata` (câte cadre mai are de trăit). La fiecare cadru urcă un pixel și pierde o unitate din viață; când viața ajunge la 0, nu mai este păstrat în listă.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+def nivel(scor):
+    return scor // 5 + 1
+
+print(nivel(0), nivel(4), nivel(5), nivel(19), nivel(20))
+print(not True, not False)
+pauza = False
+pauza = not pauza
+print(pauza)
+```
+
+**Găsește greșelile.** Programul are 4 greșeli. Rescrie-l corect:
+
+```text
+stare = "meniu"
+scor = 0
+def scrie(text, x, y):
+    imagine = font.render(text, True)
+    ecran.blit(imagine, x, y)
+if stare = "meniu":
+    scrie("Joc", 100, 100)
+nivel = scor / 5 + 1
+```
 
 ---
 
+## Răspunsuri la bonus
+Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit, important este să funcționeze. Fiecare cod este un program întreg, pornit de la „Ploaia de stele” (Exemplul 8).
+
+### 1. Ecran de reguli
+```python
+import math
+import random
+import pygame
+
+pygame.init()
+LATIME = 600
+INALTIME = 500
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Ploaia de stele")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 32)
+font_mare = pygame.font.Font(None, 72)
+
+def scrie(text, x, y, culoare=(255, 255, 255), fnt=None, centrat=False):
+    if fnt is None:
+        fnt = font
+    imagine = fnt.render(text, True, culoare)
+    if centrat:
+        x = x - imagine.get_width() // 2
+    ecran.blit(imagine, (x, y))
+
+def deseneaza_stea(centru, raza, culoare):
+    puncte = []
+    for i in range(10):
+        if i % 2 == 0:
+            r = raza
+        else:
+            r = raza * 0.45
+        unghi = math.radians(-90 + i * 36)
+        puncte.append((centru[0] + r * math.cos(unghi), centru[1] + r * math.sin(unghi)))
+    pygame.draw.polygon(ecran, culoare, puncte)
+
+def inima(x, y, culoare):
+    pygame.draw.circle(ecran, culoare, (x - 6, y), 7)
+    pygame.draw.circle(ecran, culoare, (x + 6, y), 7)
+    pygame.draw.polygon(ecran, culoare, [(x - 13, y + 2), (x + 13, y + 2), (x, y + 18)])
+
+def nivel_pentru_scor(scor):
+    return scor // 5 + 1
+
+stare = {"joc": "meniu", "scor": 0, "vieti": 3, "nivel": 1, "record": 0}
+cos = pygame.Rect(0, 0, 100, 20)
+cos.midbottom = (LATIME // 2, INALTIME - 15)
+obiecte = []
+
+def obiect_nou():
+    return {
+        "rect": pygame.Rect(random.randint(0, LATIME - 30), -30, 30, 30),
+        "viteza": random.randint(3, 5) + stare["nivel"] // 2,
+        "tip": random.choice(["stea", "stea", "stea", "piatra"]),
+    }
+
+def joc_nou():
+    stare["joc"] = "joc"
+    stare["scor"] = 0
+    stare["vieti"] = 3
+    stare["nivel"] = 1
+    obiecte.clear()
+    cos.midbottom = (LATIME // 2, INALTIME - 15)
+
+def pierde_viata():
+    stare["vieti"] -= 1
+    if stare["vieti"] <= 0:
+        stare["joc"] = "final"
+        if stare["scor"] > stare["record"]:
+            stare["record"] = stare["scor"]
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_SPACE and stare["joc"] in ("meniu", "final"):
+                joc_nou()
+            if eveniment.key == pygame.K_r:
+                if stare["joc"] == "meniu":
+                    stare["joc"] = "reguli"
+                elif stare["joc"] == "reguli":
+                    stare["joc"] = "meniu"
+            if eveniment.key == pygame.K_p:
+                if stare["joc"] == "joc":
+                    stare["joc"] = "pauza"
+                elif stare["joc"] == "pauza":
+                    stare["joc"] = "joc"
+
+    if stare["joc"] == "joc":
+        taste = pygame.key.get_pressed()
+        if taste[pygame.K_LEFT] or taste[pygame.K_a]:
+            cos.x -= 8
+        if taste[pygame.K_RIGHT] or taste[pygame.K_d]:
+            cos.x += 8
+        cos.clamp_ip(ecran.get_rect())
+
+        if random.randint(1, 100) <= 3 + stare["nivel"]:
+            obiecte.append(obiect_nou())
+
+        ramase = []
+        for o in obiecte:
+            o["rect"].y += o["viteza"]
+            if o["rect"].colliderect(cos):
+                if o["tip"] == "stea":
+                    stare["scor"] += 1
+                    stare["nivel"] = nivel_pentru_scor(stare["scor"])
+                else:
+                    pierde_viata()
+            elif o["rect"].top > INALTIME:
+                if o["tip"] == "stea":
+                    pierde_viata()
+            else:
+                ramase.append(o)
+        obiecte[:] = ramase
+
+    ecran.fill((10, 10, 45))
+    if stare["joc"] == "meniu":
+        scrie("PLOAIA DE STELE", LATIME // 2, 140, (255, 220, 0), font_mare, True)
+        scrie("Prinde stelele, fereste-te de pietre", LATIME // 2, 240, (255, 255, 255), None, True)
+        scrie("Stanga/Dreapta = mergi, P = pauza", LATIME // 2, 280, (180, 180, 180), None, True)
+        scrie("Apasa SPATIU ca sa incepi", LATIME // 2, 340, (120, 255, 120), None, True)
+        scrie("R = reguli", LATIME // 2, 380, (180, 180, 180), None, True)
+    elif stare["joc"] == "reguli":
+        scrie("REGULI", LATIME // 2, 100, (255, 220, 0), font_mare, True)
+        scrie("Steaua prinsa = +1 punct", LATIME // 2, 200, (255, 255, 255), None, True)
+        scrie("Steaua scapata = -1 viata", LATIME // 2, 240, (255, 255, 255), None, True)
+        scrie("Piatra prinsa = -1 viata", LATIME // 2, 280, (255, 255, 255), None, True)
+        scrie("R = inapoi la meniu", LATIME // 2, 360, (120, 255, 120), None, True)
+    else:
+        for o in obiecte:
+            if o["tip"] == "stea":
+                deseneaza_stea(o["rect"].center, 17, (255, 220, 0))
+            else:
+                pygame.draw.circle(ecran, (140, 140, 140), o["rect"].center, 15)
+        pygame.draw.rect(ecran, (0, 180, 255), cos, border_radius=8)
+
+        scrie("Scor: " + str(stare["scor"]), 10, 10)
+        scrie("Nivel: " + str(stare["nivel"]), 10, 40)
+        scrie("Record: " + str(stare["record"]), 10, 70)
+        for i in range(3):
+            if i < stare["vieti"]:
+                inima(LATIME - 30 - i * 35, 22, (230, 30, 60))
+            else:
+                inima(LATIME - 30 - i * 35, 22, (80, 80, 90))
+
+        if stare["joc"] == "pauza":
+            scrie("PAUZA", LATIME // 2, 200, (255, 255, 255), font_mare, True)
+        if stare["joc"] == "final":
+            scrie("GAME OVER", LATIME // 2, 170, (255, 90, 90), font_mare, True)
+            scrie("Scor final: " + str(stare["scor"]), LATIME // 2, 250, (255, 255, 255), None, True)
+            scrie("SPATIU = joc nou", LATIME // 2, 290, (120, 255, 120), None, True)
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** în meniu apare și „R = reguli”. La **R** se deschide ecranul „REGULI”, cu cele trei reguli ale jocului; tot la **R** te întorci în meniu, iar **SPATIU** din meniu pornește jocul ca până acum. „reguli” este o stare nouă, ca „meniu” sau „final”: are propria ei ramură la desenare.
+
+### 2. Fundal pe niveluri
+```python
+import math
+import random
+import pygame
+
+pygame.init()
+LATIME = 600
+INALTIME = 500
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Ploaia de stele")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 32)
+font_mare = pygame.font.Font(None, 72)
+
+def scrie(text, x, y, culoare=(255, 255, 255), fnt=None, centrat=False):
+    if fnt is None:
+        fnt = font
+    imagine = fnt.render(text, True, culoare)
+    if centrat:
+        x = x - imagine.get_width() // 2
+    ecran.blit(imagine, (x, y))
+
+def deseneaza_stea(centru, raza, culoare):
+    puncte = []
+    for i in range(10):
+        if i % 2 == 0:
+            r = raza
+        else:
+            r = raza * 0.45
+        unghi = math.radians(-90 + i * 36)
+        puncte.append((centru[0] + r * math.cos(unghi), centru[1] + r * math.sin(unghi)))
+    pygame.draw.polygon(ecran, culoare, puncte)
+
+def inima(x, y, culoare):
+    pygame.draw.circle(ecran, culoare, (x - 6, y), 7)
+    pygame.draw.circle(ecran, culoare, (x + 6, y), 7)
+    pygame.draw.polygon(ecran, culoare, [(x - 13, y + 2), (x + 13, y + 2), (x, y + 18)])
+
+def nivel_pentru_scor(scor):
+    return scor // 5 + 1
+
+fundaluri = [(10, 10, 45), (10, 50, 40), (60, 15, 50)]
+
+stare = {"joc": "meniu", "scor": 0, "vieti": 3, "nivel": 1, "record": 0}
+cos = pygame.Rect(0, 0, 100, 20)
+cos.midbottom = (LATIME // 2, INALTIME - 15)
+obiecte = []
+
+def obiect_nou():
+    return {
+        "rect": pygame.Rect(random.randint(0, LATIME - 30), -30, 30, 30),
+        "viteza": random.randint(3, 5) + stare["nivel"] // 2,
+        "tip": random.choice(["stea", "stea", "stea", "piatra"]),
+    }
+
+def joc_nou():
+    stare["joc"] = "joc"
+    stare["scor"] = 0
+    stare["vieti"] = 3
+    stare["nivel"] = 1
+    obiecte.clear()
+    cos.midbottom = (LATIME // 2, INALTIME - 15)
+
+def pierde_viata():
+    stare["vieti"] -= 1
+    if stare["vieti"] <= 0:
+        stare["joc"] = "final"
+        if stare["scor"] > stare["record"]:
+            stare["record"] = stare["scor"]
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_SPACE and stare["joc"] in ("meniu", "final"):
+                joc_nou()
+            if eveniment.key == pygame.K_p:
+                if stare["joc"] == "joc":
+                    stare["joc"] = "pauza"
+                elif stare["joc"] == "pauza":
+                    stare["joc"] = "joc"
+
+    if stare["joc"] == "joc":
+        taste = pygame.key.get_pressed()
+        if taste[pygame.K_LEFT] or taste[pygame.K_a]:
+            cos.x -= 8
+        if taste[pygame.K_RIGHT] or taste[pygame.K_d]:
+            cos.x += 8
+        cos.clamp_ip(ecran.get_rect())
+
+        if random.randint(1, 100) <= 3 + stare["nivel"]:
+            obiecte.append(obiect_nou())
+
+        ramase = []
+        for o in obiecte:
+            o["rect"].y += o["viteza"]
+            if o["rect"].colliderect(cos):
+                if o["tip"] == "stea":
+                    stare["scor"] += 1
+                    stare["nivel"] = nivel_pentru_scor(stare["scor"])
+                else:
+                    pierde_viata()
+            elif o["rect"].top > INALTIME:
+                if o["tip"] == "stea":
+                    pierde_viata()
+            else:
+                ramase.append(o)
+        obiecte[:] = ramase
+
+    ecran.fill(fundaluri[(stare["nivel"] - 1) % 3])
+    if stare["joc"] == "meniu":
+        scrie("PLOAIA DE STELE", LATIME // 2, 140, (255, 220, 0), font_mare, True)
+        scrie("Prinde stelele, fereste-te de pietre", LATIME // 2, 240, (255, 255, 255), None, True)
+        scrie("Stanga/Dreapta = mergi, P = pauza", LATIME // 2, 280, (180, 180, 180), None, True)
+        scrie("Apasa SPATIU ca sa incepi", LATIME // 2, 340, (120, 255, 120), None, True)
+    else:
+        for o in obiecte:
+            if o["tip"] == "stea":
+                deseneaza_stea(o["rect"].center, 17, (255, 220, 0))
+            else:
+                pygame.draw.circle(ecran, (140, 140, 140), o["rect"].center, 15)
+        pygame.draw.rect(ecran, (0, 180, 255), cos, border_radius=8)
+
+        scrie("Scor: " + str(stare["scor"]), 10, 10)
+        scrie("Nivel: " + str(stare["nivel"]), 10, 40)
+        scrie("Record: " + str(stare["record"]), 10, 70)
+        for i in range(3):
+            if i < stare["vieti"]:
+                inima(LATIME - 30 - i * 35, 22, (230, 30, 60))
+            else:
+                inima(LATIME - 30 - i * 35, 22, (80, 80, 90))
+
+        if stare["joc"] == "pauza":
+            scrie("PAUZA", LATIME // 2, 200, (255, 255, 255), font_mare, True)
+        if stare["joc"] == "final":
+            scrie("GAME OVER", LATIME // 2, 170, (255, 90, 90), font_mare, True)
+            scrie("Scor final: " + str(stare["scor"]), LATIME // 2, 250, (255, 255, 255), None, True)
+            scrie("SPATIU = joc nou", LATIME // 2, 290, (120, 255, 120), None, True)
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** jocul obișnuit, dar fundalul este albastru-închis la nivelul 1, verzui la nivelul 2 și vișiniu la nivelul 3, apoi se reiau. `(stare["nivel"] - 1) % 3` dă `0`, `1` sau `2`, adică poziția culorii din lista `fundaluri`.
+
+### 3. Stea mare
+```python
+import math
+import random
+import pygame
+
+pygame.init()
+LATIME = 600
+INALTIME = 500
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Ploaia de stele")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 32)
+font_mare = pygame.font.Font(None, 72)
+
+def scrie(text, x, y, culoare=(255, 255, 255), fnt=None, centrat=False):
+    if fnt is None:
+        fnt = font
+    imagine = fnt.render(text, True, culoare)
+    if centrat:
+        x = x - imagine.get_width() // 2
+    ecran.blit(imagine, (x, y))
+
+def deseneaza_stea(centru, raza, culoare):
+    puncte = []
+    for i in range(10):
+        if i % 2 == 0:
+            r = raza
+        else:
+            r = raza * 0.45
+        unghi = math.radians(-90 + i * 36)
+        puncte.append((centru[0] + r * math.cos(unghi), centru[1] + r * math.sin(unghi)))
+    pygame.draw.polygon(ecran, culoare, puncte)
+
+def inima(x, y, culoare):
+    pygame.draw.circle(ecran, culoare, (x - 6, y), 7)
+    pygame.draw.circle(ecran, culoare, (x + 6, y), 7)
+    pygame.draw.polygon(ecran, culoare, [(x - 13, y + 2), (x + 13, y + 2), (x, y + 18)])
+
+def nivel_pentru_scor(scor):
+    return scor // 5 + 1
+
+stare = {"joc": "meniu", "scor": 0, "vieti": 3, "nivel": 1, "record": 0}
+cos = pygame.Rect(0, 0, 100, 20)
+cos.midbottom = (LATIME // 2, INALTIME - 15)
+obiecte = []
+
+def obiect_nou():
+    tip = random.choice(["stea", "stea", "stea", "piatra"])
+    if random.randint(1, 10) == 1:
+        tip = "mare"
+    return {
+        "rect": pygame.Rect(random.randint(0, LATIME - 30), -30, 30, 30),
+        "viteza": random.randint(3, 5) + stare["nivel"] // 2,
+        "tip": tip,
+    }
+
+def joc_nou():
+    stare["joc"] = "joc"
+    stare["scor"] = 0
+    stare["vieti"] = 3
+    stare["nivel"] = 1
+    obiecte.clear()
+    cos.midbottom = (LATIME // 2, INALTIME - 15)
+
+def pierde_viata():
+    stare["vieti"] -= 1
+    if stare["vieti"] <= 0:
+        stare["joc"] = "final"
+        if stare["scor"] > stare["record"]:
+            stare["record"] = stare["scor"]
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_SPACE and stare["joc"] in ("meniu", "final"):
+                joc_nou()
+            if eveniment.key == pygame.K_p:
+                if stare["joc"] == "joc":
+                    stare["joc"] = "pauza"
+                elif stare["joc"] == "pauza":
+                    stare["joc"] = "joc"
+
+    if stare["joc"] == "joc":
+        taste = pygame.key.get_pressed()
+        if taste[pygame.K_LEFT] or taste[pygame.K_a]:
+            cos.x -= 8
+        if taste[pygame.K_RIGHT] or taste[pygame.K_d]:
+            cos.x += 8
+        cos.clamp_ip(ecran.get_rect())
+
+        if random.randint(1, 100) <= 3 + stare["nivel"]:
+            obiecte.append(obiect_nou())
+
+        ramase = []
+        for o in obiecte:
+            o["rect"].y += o["viteza"]
+            if o["rect"].colliderect(cos):
+                if o["tip"] == "stea":
+                    stare["scor"] += 1
+                    stare["nivel"] = nivel_pentru_scor(stare["scor"])
+                elif o["tip"] == "mare":
+                    stare["scor"] += 3
+                    stare["nivel"] = nivel_pentru_scor(stare["scor"])
+                else:
+                    pierde_viata()
+            elif o["rect"].top > INALTIME:
+                if o["tip"] == "stea":
+                    pierde_viata()
+            else:
+                ramase.append(o)
+        obiecte[:] = ramase
+
+    ecran.fill((10, 10, 45))
+    if stare["joc"] == "meniu":
+        scrie("PLOAIA DE STELE", LATIME // 2, 140, (255, 220, 0), font_mare, True)
+        scrie("Prinde stelele, fereste-te de pietre", LATIME // 2, 240, (255, 255, 255), None, True)
+        scrie("Stanga/Dreapta = mergi, P = pauza", LATIME // 2, 280, (180, 180, 180), None, True)
+        scrie("Apasa SPATIU ca sa incepi", LATIME // 2, 340, (120, 255, 120), None, True)
+    else:
+        for o in obiecte:
+            if o["tip"] == "stea":
+                deseneaza_stea(o["rect"].center, 17, (255, 220, 0))
+            elif o["tip"] == "mare":
+                deseneaza_stea(o["rect"].center, 24, (120, 220, 255))
+            else:
+                pygame.draw.circle(ecran, (140, 140, 140), o["rect"].center, 15)
+        pygame.draw.rect(ecran, (0, 180, 255), cos, border_radius=8)
+
+        scrie("Scor: " + str(stare["scor"]), 10, 10)
+        scrie("Nivel: " + str(stare["nivel"]), 10, 40)
+        scrie("Record: " + str(stare["record"]), 10, 70)
+        for i in range(3):
+            if i < stare["vieti"]:
+                inima(LATIME - 30 - i * 35, 22, (230, 30, 60))
+            else:
+                inima(LATIME - 30 - i * 35, 22, (80, 80, 90))
+
+        if stare["joc"] == "pauza":
+            scrie("PAUZA", LATIME // 2, 200, (255, 255, 255), font_mare, True)
+        if stare["joc"] == "final":
+            scrie("GAME OVER", LATIME // 2, 170, (255, 90, 90), font_mare, True)
+            scrie("Scor final: " + str(stare["scor"]), LATIME // 2, 250, (255, 255, 255), None, True)
+            scrie("SPATIU = joc nou", LATIME // 2, 290, (120, 255, 120), None, True)
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** din când în când cade o stea albastră, mai mare. Prinsă, dă 3 puncte; dacă o scapi, nu pierzi nicio viață (ramura de „scăpat” verifică doar `"stea"`). Tipul se alege în `obiect_nou`: întâi ca la început, apoi, cu șansa de 1 din 10, devine `"mare"`.
+
+### 4. Serie
+```python
+import math
+import random
+import pygame
+
+pygame.init()
+LATIME = 600
+INALTIME = 500
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Ploaia de stele")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 32)
+font_mare = pygame.font.Font(None, 72)
+
+def scrie(text, x, y, culoare=(255, 255, 255), fnt=None, centrat=False):
+    if fnt is None:
+        fnt = font
+    imagine = fnt.render(text, True, culoare)
+    if centrat:
+        x = x - imagine.get_width() // 2
+    ecran.blit(imagine, (x, y))
+
+def deseneaza_stea(centru, raza, culoare):
+    puncte = []
+    for i in range(10):
+        if i % 2 == 0:
+            r = raza
+        else:
+            r = raza * 0.45
+        unghi = math.radians(-90 + i * 36)
+        puncte.append((centru[0] + r * math.cos(unghi), centru[1] + r * math.sin(unghi)))
+    pygame.draw.polygon(ecran, culoare, puncte)
+
+def inima(x, y, culoare):
+    pygame.draw.circle(ecran, culoare, (x - 6, y), 7)
+    pygame.draw.circle(ecran, culoare, (x + 6, y), 7)
+    pygame.draw.polygon(ecran, culoare, [(x - 13, y + 2), (x + 13, y + 2), (x, y + 18)])
+
+def nivel_pentru_scor(scor):
+    return scor // 5 + 1
+
+stare = {"joc": "meniu", "scor": 0, "vieti": 3, "nivel": 1, "record": 0, "serie": 0}
+cos = pygame.Rect(0, 0, 100, 20)
+cos.midbottom = (LATIME // 2, INALTIME - 15)
+obiecte = []
+
+def obiect_nou():
+    return {
+        "rect": pygame.Rect(random.randint(0, LATIME - 30), -30, 30, 30),
+        "viteza": random.randint(3, 5) + stare["nivel"] // 2,
+        "tip": random.choice(["stea", "stea", "stea", "piatra"]),
+    }
+
+def joc_nou():
+    stare["joc"] = "joc"
+    stare["scor"] = 0
+    stare["vieti"] = 3
+    stare["nivel"] = 1
+    stare["serie"] = 0
+    obiecte.clear()
+    cos.midbottom = (LATIME // 2, INALTIME - 15)
+
+def pierde_viata():
+    stare["vieti"] -= 1
+    stare["serie"] = 0
+    if stare["vieti"] <= 0:
+        stare["joc"] = "final"
+        if stare["scor"] > stare["record"]:
+            stare["record"] = stare["scor"]
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_SPACE and stare["joc"] in ("meniu", "final"):
+                joc_nou()
+            if eveniment.key == pygame.K_p:
+                if stare["joc"] == "joc":
+                    stare["joc"] = "pauza"
+                elif stare["joc"] == "pauza":
+                    stare["joc"] = "joc"
+
+    if stare["joc"] == "joc":
+        taste = pygame.key.get_pressed()
+        if taste[pygame.K_LEFT] or taste[pygame.K_a]:
+            cos.x -= 8
+        if taste[pygame.K_RIGHT] or taste[pygame.K_d]:
+            cos.x += 8
+        cos.clamp_ip(ecran.get_rect())
+
+        if random.randint(1, 100) <= 3 + stare["nivel"]:
+            obiecte.append(obiect_nou())
+
+        ramase = []
+        for o in obiecte:
+            o["rect"].y += o["viteza"]
+            if o["rect"].colliderect(cos):
+                if o["tip"] == "stea":
+                    stare["scor"] += 1
+                    stare["serie"] += 1
+                    stare["nivel"] = nivel_pentru_scor(stare["scor"])
+                else:
+                    pierde_viata()
+            elif o["rect"].top > INALTIME:
+                if o["tip"] == "stea":
+                    pierde_viata()
+            else:
+                ramase.append(o)
+        obiecte[:] = ramase
+
+    ecran.fill((10, 10, 45))
+    if stare["joc"] == "meniu":
+        scrie("PLOAIA DE STELE", LATIME // 2, 140, (255, 220, 0), font_mare, True)
+        scrie("Prinde stelele, fereste-te de pietre", LATIME // 2, 240, (255, 255, 255), None, True)
+        scrie("Stanga/Dreapta = mergi, P = pauza", LATIME // 2, 280, (180, 180, 180), None, True)
+        scrie("Apasa SPATIU ca sa incepi", LATIME // 2, 340, (120, 255, 120), None, True)
+    else:
+        for o in obiecte:
+            if o["tip"] == "stea":
+                deseneaza_stea(o["rect"].center, 17, (255, 220, 0))
+            else:
+                pygame.draw.circle(ecran, (140, 140, 140), o["rect"].center, 15)
+        pygame.draw.rect(ecran, (0, 180, 255), cos, border_radius=8)
+
+        scrie("Scor: " + str(stare["scor"]), 10, 10)
+        scrie("Nivel: " + str(stare["nivel"]), 10, 40)
+        scrie("Record: " + str(stare["record"]), 10, 70)
+        scrie("Serie: " + str(stare["serie"]), 10, 100)
+        for i in range(3):
+            if i < stare["vieti"]:
+                inima(LATIME - 30 - i * 35, 22, (230, 30, 60))
+            else:
+                inima(LATIME - 30 - i * 35, 22, (80, 80, 90))
+
+        if stare["joc"] == "pauza":
+            scrie("PAUZA", LATIME // 2, 200, (255, 255, 255), font_mare, True)
+        if stare["joc"] == "final":
+            scrie("GAME OVER", LATIME // 2, 170, (255, 90, 90), font_mare, True)
+            scrie("Scor final: " + str(stare["scor"]), LATIME // 2, 250, (255, 255, 255), None, True)
+            scrie("SPATIU = joc nou", LATIME // 2, 290, (120, 255, 120), None, True)
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** sub „Record” apare „Serie: n”. Fiecare stea prinsă o mărește cu 1; o piatră prinsă sau o stea scăpată o aduc la 0, pentru că ambele trec prin `pierde_viata()`. La joc nou, seria pornește de la 0.
+
+---
 ## Ce urmează — Lecția 7
 **Clase: jucători și inamici**: învățăm să scriem „rețete” pentru obiecte și să creăm cu ele sute de inamici.

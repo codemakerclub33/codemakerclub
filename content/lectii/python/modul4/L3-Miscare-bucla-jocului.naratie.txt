@@ -1,23 +1,29 @@
-Lecția trei din Modulul patru. Mișcare și bucla jocului.
+Lecția trei din Modulul patru. Mingile care ricoșează.
 
 Astăzi pui lucrurile în mișcare. Proiectul se numește Mingile care ricoșează. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P patru, linie jos, L trei, punct P Y.
 
-Obiectivul. La final miști obiecte schimbând x și y la fiecare cadru, le faci să ricoșeze, să apară din partea opusă, să cadă, să lase o urmă, ții mai multe obiecte într-o listă și calculezi mișcarea independent de viteza calculatorului. Minim: o minge care se mișcă și ricoșează. Complet: minim, plus mai multe mingi, urmă, gravitație și un screensaver.
+Ce facem azi. La final miști obiecte schimbând x și y la fiecare cadru, le faci să ricoșeze, să cadă și să lase o urmă, iar mai multe mingi le ții într-o listă. Toate jocurile se mișcă: personajele aleargă, gloanțele zboară, mașinile circulă. Ecranul tău este ca un film: de șaizeci de ori pe secundă desenezi aceeași scenă, cu obiectele puțin mutate, iar ochiul vede mișcare.
 
-Primul pas. Prima mișcare. Poziția obiectului este în variabile, x și y. La fiecare cadru le schimbăm puțin și apoi desenăm obiectul în noul loc. Un pătrat poate alerga pe ecran. Dacă iese pe o parte, poate apărea pe partea opusă.
+Instrucțiuni noi azi. X plus egal viteza mută obiectul la fiecare cadru. Când schimbi semnul vitezei, obiectul ricoșează la margine. Get rect dă dreptunghiul unei imagini, pe care îl folosim ca poziție. O listă de dicționare păstrează mai multe mingi, iar un for le parcurge. Set alpha face un strat semitransparent, bun pentru urme. Gravitația înseamnă că viteza crește la fiecare cadru. Random alege valori la întâmplare.
+
+Primul pas. Prima mișcare. Poziția obiectului este în variabile, x și y. La fiecare cadru le schimbăm puțin și apoi desenăm obiectul în noul loc. Un pătrat poate alerga pe ecran.
 
 Al doilea pas. Ricoșeul. Când obiectul atinge marginea, schimbăm semnul vitezei: din plus în minus. Așa ricoșează pe orizontală. Cu două viteze, pe x și pe y, ricoșează pe diagonală.
 
 Al treilea pas. Imagini și mai multe obiecte. Mingea poate fi o imagine. Mai multe mingi se păstrează într-o listă, iar o buclă for le mișcă pe toate.
 
-Al patrulea pas. Urme, gravitație, timp. Dacă nu ștergi ecranul, mingea lasă o urmă. Gravitația înseamnă că la fiecare cadru viteza crește, apoi mișcăm obiectul. Ca viteza să nu depindă de calculator, calculăm pixelii pe cadru din viteza pe secundă împărțită la numărul de cadre pe secundă.
+Al patrulea pas. Urme și gravitație. Dacă nu ștergi ecranul de tot, ci îl acoperi cu un strat semitransparent, mingea lasă o urmă. Gravitația înseamnă că la fiecare cadru viteza crește, apoi mișcăm obiectul.
 
-Al cincilea pas. Mini-proiect. Un screensaver, cu mingi care ricoșează.
+Al cincilea pas. Mini-proiect. Un screensaver cu mingi care ricoșează și lasă urme. Cu spațiu adaugi o minge, cu C le ștergi, iar la click pui o minge în locul în care ai dat click.
 
 Greșeli frecvente. Obiectul iese din ecran: nu aduci obiectul înapoi după ricoșeu. Mingea nu se mișcă: nu actualizezi x și y în buclă. Se vede o urmă nedorită: nu ștergi ecranul la fiecare cadru.
 
-Proiectul de azi. Mingile care ricoșează. Minim înseamnă o minge. Complet înseamnă mai multe mingi, urmă și gravitație.
+Proiectul de azi. Mingile care ricoșează. Minim înseamnă o minge care se mișcă și ricoșează. Complet înseamnă mai multe mingi, urme și screensaver-ul tău, cu gravitație la tasta G, pauză la tasta S și numărul de ricoșeuri afișat.
+
+Provocare, trei stele. Screensaver cu vânt și ciocniri. Doar dacă ai terminat varianta completă. Adaugi în același program un vânt care se pornește și se oprește cu tasta V și împinge mingile spre dreapta, dar nu peste o viteză de opt. Mingi care cresc cu unu la fiecare lovitură de perete, până la raza patruzeci. Un contur alb în jurul a două mingi care se ating. Și un soare galben care se învârte în jurul centrului ecranului.
 
 Recapitulare. Bucla jocului: evenimente, actualizare, desenare. Mișcare înseamnă x plus egal viteza la fiecare cadru. Ricoșeul înseamnă că schimbăm semnul vitezei. Gravitația înseamnă că viteza crește la fiecare cadru. Mai multe obiecte înseamnă o listă.
+
+Ce urmează. În lecția următoare tu decizi unde merge personajul, cu săgețile și cu W, A, S, D.
 
 Succes cu mingile.

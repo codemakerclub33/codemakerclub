@@ -1,4 +1,5 @@
-# LECȚIA 10 — Expoziția + verificare finală
+# LECȚIA 10 — Expoziția
+### Expoziția + verificare finală
 **Modulul 4 · Jocuri cu Pygame · 2 ore**  
 **Code Maker Club · Game Creator**
 
@@ -7,13 +8,13 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai un joc **finisat** (cu ecran de reguli, credite și tranziții), l-ai prezentat colegilor, ai primit și ai dat păreri, ai rezolvat testul final al modulului și al cursului.  
-**Minim:** jocul tău funcționează și îl prezinți în 2 minute.  
-**Ținta orei (Complet):** + ecran de reguli, credite, captură de ecran, setări salvate, prezentare și feedback pentru colegi.
+## Ce facem azi
 
-## De ce contează
+La final ai un joc **finisat**, cu ecran de reguli, credite și tranziții, l-ai prezentat colegilor, ai primit și ai dat păreri, iar apoi ai rezolvat testul final al modulului și al cursului.
+
 Un joc bun este **terminat și arătat altora**. Când îl prezinți, înveți să explici ce ai făcut, să asculți păreri și să îți îmbunătățești munca. Exact așa lucrează și programatorii adevărați.
+
+Azi dai jocului tău ultimele retușuri, apoi organizăm **Expoziția de jocuri**: prezinți ce ai făcut și joci jocurile colegilor.
 
 ---
 
@@ -22,11 +23,24 @@ Un joc bun este **terminat și arătat altora**. Când îl prezinți, înveți s
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recapitulare și pregătirea expoziției |
-| 10–40 | Retușuri: reguli, fade, captură, FPS, credite, setări (**Exemplele 1–9**) |
-| 40–55 | Cadrul expoziției, aplicat jocului tău (**Exemplul 10**) |
+| 10–40 | Retușuri: reguli, fade, captură, FPS, credite, cod curat (**Exemplele 1–7**) |
+| 40–55 | Cadrul expoziției, aplicat jocului tău (**Exemplul 8**) |
 | 55–95 | **Expoziția**: prezentări și joc între colegi, cu fișe de feedback |
 | 95–115 | **Verificare finală** (Modulul 4 și cursul) |
 | 115–120 | Recapitulare, diplome și mulțumiri |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `schimba_stare("meniu")` | O singură funcție care schimbă ecranul (cu fade) | `schimba_stare("credite")` |
+| `negru.set_alpha(alfa)` | Face o suprafață mai mult sau mai puțin transparentă (fade) | `for alfa in range(0, 256, 20):` |
+| `pygame.image.save(ecran, nume)` | Salvează o captură de ecran | `nume = "captura_" + time.strftime("%Y%m%d_%H%M%S") + ".png"` |
+| `ceas.get_fps()` | Spune câte cadre pe secundă rulează jocul | `int(ceas.get_fps())` |
+| `credite_y -= 1.5` | Mută textul în sus, la fiecare cadru (credite care urcă) | `if credite_y < 0:` |
+| `VITEZA_NAVA = 7` | Constantă cu nume, în loc de număr „magic” | `LATIME_ECRAN - LATIME_NAVA` |
 
 ---
 
@@ -36,12 +50,11 @@ Un joc bun este **terminat și arătat altora**. Când îl prezinți, înveți s
 - Parcurgem o **copie** a listei când scoatem elemente din ea.
 - Recordul se salvează într-un fișier, cu `try / except`.
 
-**Încearcă tu (3 min)**  
-- [ ] Scrie, pe foaie, în trei propoziții, **despre ce este jocul tău**  
-
 ---
 
 ## 2. Retușurile care fac diferența
+
+Mesajul „Record nou!” care clipește și setările salvate cu `json` le găsești la „Acasă 1” și „Acasă 2”.
 
 ### Exemplul 1 — Ecran de reguli
 
@@ -303,96 +316,7 @@ pygame.quit()
 
 Textul este o **listă**, iar `y_start` scade cu 1,5 pixeli la fiecare cadru. Când `y_start + 45 * len(CREDITE)` devine negativ, toate rândurile au trecut de marginea de sus și reluăm. Pune **numele tău** în credite: este jocul tău!
 
-### Exemplul 6 — „Record nou!” care clipește
-
-```python
-import pygame
-
-pygame.init()
-LATIME = 600
-INALTIME = 300
-ecran = pygame.display.set_mode((LATIME, INALTIME))
-pygame.display.set_caption("Clipire")
-ceas = pygame.time.Clock()
-font_mare = pygame.font.Font(None, 80)
-font = pygame.font.Font(None, 36)
-
-def clipeste(ms, perioada=400):
-    return (ms // perioada) % 2 == 0
-
-print(clipeste(0), clipeste(399), clipeste(400), clipeste(799), clipeste(800))
-
-ruleaza = True
-while ruleaza:
-    for eveniment in pygame.event.get():
-        if eveniment.type == pygame.QUIT:
-            ruleaza = False
-
-    ecran.fill((20, 20, 60))
-    if clipeste(pygame.time.get_ticks()):
-        text = font_mare.render("RECORD NOU!", True, (255, 220, 0))
-        ecran.blit(text, (LATIME // 2 - text.get_width() // 2, 90))
-    ecran.blit(font.render("Scor: 100", True, (255, 255, 255)), (250, 190))
-    pygame.display.flip()
-    ceas.tick(60)
-
-pygame.quit()
-```
-
-**Ieșire:**
-```text
-True True False False True
-```
-
-**Ce vezi pe ecran:** pe fundal albastru închis, scrisul galben **„RECORD NOU!”** care **apare și dispare** de aproximativ două ori pe secundă, iar dedesubt, fix, „Scor: 100”.
-
-Funcția `clipeste` împarte timpul la `perioada` (400 ms) și verifică dacă rezultatul este **par**: prima 400 ms `True`, următoarele 400 ms `False`, și tot așa. Folosește-o pentru orice element care trebuie să **atragă atenția**.
-
-### Exemplul 7 — Setări salvate
-
-```python
-import json
-import os
-
-IMPLICIT = {"muzica": True, "culoare": "albastru", "dificultate": 2}
-FISIER = "setari_test.json"
-
-def incarca_setari(fisier):
-    setari = dict(IMPLICIT)
-    try:
-        with open(fisier, "r") as f:
-            setari.update(json.load(f))
-    except (FileNotFoundError, json.JSONDecodeError):
-        pass
-    return setari
-
-if os.path.exists(FISIER):
-    os.remove(FISIER)
-
-print("Fara fisier:", incarca_setari(FISIER))
-
-with open(FISIER, "w") as f:
-    json.dump({"culoare": "rosu"}, f)
-print("Cu o setare:", incarca_setari(FISIER))
-
-with open(FISIER, "w") as f:
-    f.write("{asta nu e json")
-print("Fisier stricat:", incarca_setari(FISIER))
-
-print("Valorile implicite au ramas:", IMPLICIT)
-```
-
-**Ieșire:**
-```text
-Fara fisier: {'muzica': True, 'culoare': 'albastru', 'dificultate': 2}
-Cu o setare: {'muzica': True, 'culoare': 'rosu', 'dificultate': 2}
-Fisier stricat: {'muzica': True, 'culoare': 'albastru', 'dificultate': 2}
-Valorile implicite au ramas: {'muzica': True, 'culoare': 'albastru', 'dificultate': 2}
-```
-
-Funcția pornește de la **valorile implicite**, apoi citește fișierul și **suprascrie** doar ce găsește acolo (`update`). Astfel, dacă fișierul lipsește, e stricat sau conține doar o parte din setări, jocul **merge oricum**. `dict(IMPLICIT)` face o **copie**: fără ea, am modifica chiar dicționarul original.
-
-### Exemplul 8 — Fișa jocului
+### Exemplul 6 — Fișa jocului
 
 ```python
 fisa = {
@@ -435,7 +359,7 @@ Controale:
 
 Înainte să-ți prezinți jocul, completează o **fișă**: titlu, autor, tip, idee, controale. Iată cum o poți face și în cod. Un dicționar păstrează informațiile, iar o funcție le afișează frumos. `"=" * 32` repetă semnul `=` de 32 de ori, pentru o linie despărțitoare. Aceleași informații le poți pune în **ecranul de reguli** și în **credite**.
 
-### Exemplul 9 — Codul curat: constante cu nume
+### Exemplul 7 — Codul curat: constante cu nume
 
 ```python
 def pozitie_noua_v1(x, directie):
@@ -477,7 +401,7 @@ Aceleasi rezultate: True
 
 Cele două funcții fac **exact același lucru**, dar a doua este mai bună: numerele „magice” (`7`, `550`) au primit **nume** (`VITEZA_NAVA`, `LATIME_ECRAN - LATIME_NAVA`). Dacă vrei o navă mai rapidă sau un ecran mai lat, schimbi **un singur loc**, iar numele îți spun la ce folosește fiecare valoare. Înainte de expoziție, caută în jocul tău numere care se repetă și dă-le nume.
 
-**Încearcă tu (5 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Am scris și am rulat **Exemplul 1** (Ecran de reguli)  
 - [ ] Am scris și am rulat **Exemplul 2** (Tranziție cu fade)  
 - [ ] Am scris și am rulat **Exemplul 3** (Captură de ecran)  
@@ -488,7 +412,7 @@ Cele două funcții fac **exact același lucru**, dar a doua este mai bună: num
 
 ## 3. Cadrul expoziției
 
-### Exemplul 10 — „Expoziția”
+### Exemplul 8 — „Expoziția”
 
 Acesta este **cadrul** în care pui jocul tău: meniu cu butoane (**Joaca, Reguli, Credite, Iesire**), tranziții cu fade, captură de ecran (**F12**), contor FPS (**F3**) și un **mini-joc** de probă, pe care îl înlocuiești cu jocul tău.
 
@@ -692,7 +616,7 @@ pygame.quit()
 **Înlocuiește mini-jocul cu jocul tău!** Starea `"joc"` este locul unde pui bucla jocului tău: ce desenează și ce actualizează jocul. Meniul, regulile, creditele, fade-ul și captura **rămân la fel**, schimbi doar titlul, autorul, regulile și creditele (listele de la început).
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** („Expoziția”)  
+- [ ] Am scris și am rulat **Exemplul 8** („Expoziția”)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
@@ -722,68 +646,43 @@ pygame.quit()
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Expoziția”
 
-### Exercițiul A — Jocul meu, finisat (obligatoriu)
-Pregătește jocul pentru expoziție:
-1. jocul **pornește fără erori** și se poate **juca din nou** după GAME OVER;
-2. are **ecran de reguli** și **credite** cu numele tău;
-3. recordul este **salvat în fișier**;
-4. ai o **captură de ecran** a jocului (F12);
-5. ai pregătit **prezentarea de 2 minute**.
+### Minim vs Complet
 
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
+| Nivel | Ce trebuie să ai |
+|-------|------------------|
+| **Minim** | Jocul tău funcționează și îl prezinți în 2 minute |
+| **Complet** | Minim + ecran de reguli, credite, record salvat, captură de ecran, fișa jocului, prezentare și feedback pentru colegi |
 
-```python
-def clipeste(ms, perioada=500):
-    return (ms // perioada) % 2 == 0
+### Pasul 1 — Minim
+Pregătește jocul pentru expoziție: **pornește fără erori**, se poate **juca din nou** după GAME OVER, iar tu ai pregătit **prezentarea de 2 minute**.
 
-print(clipeste(100), clipeste(500), clipeste(1100))
-print(list(range(0, 100, 25)))
-setari = {"muzica": True}
-setari.update({"muzica": False, "volum": 5})
-print(setari)
-```
-
-### Exercițiul C — Feedback pentru colegi
-Joacă **două** jocuri ale colegilor și completează câte o **fișă de feedback**. Alege **un lucru** pe care vrei să-l încerci și tu la jocul tău.
-
-### Exercițiul D — Găsește greșelile
-Programul are 3 greșeli. Rescrie-l corect:
-
-```text
-import json
-def incarca(fisier):
-    try:
-        with open(fisier, "r") as f
-            return json.load(f)
-    except FileNotFound:
-        return {}
-setari = incarca("setari.json")
-print(setari["culoare"])
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. Ce este cel mai bun lucru la jocul tău?  
-2. Ce ai face diferit dacă ai începe din nou?  
-3. Ce ai învățat în acest curs și ce vrei să înveți mai departe?
+### Pasul 2 — Complet
+Pornește de la jocul tău din Lecția 9 și de la cadrul din Exemplul 8 și adaugă:
+1. **ecran de reguli** și **credite** cu numele tău;
+2. **recordul salvat în fișier**;
+3. o **captură de ecran** a jocului (**F12**) și **fișa jocului**;
+4. **prezentarea de 2 minute**;
+5. **două jocuri ale colegilor** jucate și câte o **fișă de feedback** completată pentru fiecare; alege **un lucru** pe care vrei să-l încerci și tu la jocul tău.
 
 **Gata când:**
 - [ ] Jocul funcționează și se poate juca din nou după final  
 - [ ] Are ecran de reguli, credite și record salvat  
 - [ ] Ai o captură de ecran și o fișă a jocului  
 - [ ] Ai prezentat jocul și ai completat două fișe de feedback  
-- [ ] Fișierul se numește `Prenume_Nume_P4_L10.py`  
+- [ ] Fișierul se numește `Prenume_Nume_P4_L10.py`
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Adaugă **sunete** și **muzică** (`pygame.mixer`) și un buton care le oprește  
-- [ ] Salvează **setările** jocului (muzică, culori) într-un fișier `json`  
-- [ ] Fă un **al doilea nivel** cu alt fundal și alți inamici  
-- [ ] Publică jocul: cere ajutorul profesorului pentru un fișier `.exe` sau pentru a-l pune pe GitHub  
+## Bonus ★★★ — Provocare: Expoziția, versiunea completă
+
+*Doar dacă ai terminat Complet. Lucrezi în cadrul „Expoziția” (Exemplul 8); apoi aplică ideile și în jocul tău.*
+
+- [ ] **Record în fișier.** Salvează recordul în `record_expozitie.txt` și citește-l la pornire, cu `try / except` (vezi Lecția 8)  
+- [ ] **Stea care se micșorează.** La fiecare 5 puncte, steaua devine mai mică (dar nu sub 20)  
+- [ ] **Fișa jocului pe ecran.** Tasta **F**, din meniu, deschide un ecran cu titlul, autorul, tipul, ideea și controalele jocului; **ESC** te întoarce  
+- [ ] **Meniu animat.** Pe fundalul meniului curg stele, ca în „Apărătorii galaxiei”
 
 ---
 
@@ -897,15 +796,961 @@ Bifează ce poți face **singur**:
 
 ---
 
+---
+
 ## Temă
 1. Mai joacă-ți jocul cu **3 persoane** și notează ce îmbunătățiri propun.  
 2. Pune în joc **cel puțin două** îmbunătățiri propuse de colegi sau de familie.  
 3. Pune pe un document **fișa jocului**, **o captură de ecran** și **codul** (acesta este începutul portofoliului tău!).  
-4. **Bonus:** alege **următorul tău proiect** (un joc nou, o aplicație sau un desen animat) și fă un plan de o pagină.  
-5. Salvează totul ca `Tema_P4_L10_Prenume_Nume.py`.
+4. **Explică pe foaie:** Care este cel mai bun lucru la jocul tău? Ce ai face diferit dacă ai începe din nou? Ce ai învățat în acest curs și ce vrei să înveți mai departe?  
+5. **Bonus:** alege **următorul tău proiect** (un joc nou, o aplicație sau un desen animat) și fă un plan de o pagină.  
+6. Salvează totul ca `Tema_P4_L10_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le în Thonny, rulează-le și schimbă-le după preferințe.
+
+#### Acasă 1 — „Record nou!” care clipește
+
+```python
+import pygame
+
+pygame.init()
+LATIME = 600
+INALTIME = 300
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Clipire")
+ceas = pygame.time.Clock()
+font_mare = pygame.font.Font(None, 80)
+font = pygame.font.Font(None, 36)
+
+def clipeste(ms, perioada=400):
+    return (ms // perioada) % 2 == 0
+
+print(clipeste(0), clipeste(399), clipeste(400), clipeste(799), clipeste(800))
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+
+    ecran.fill((20, 20, 60))
+    if clipeste(pygame.time.get_ticks()):
+        text = font_mare.render("RECORD NOU!", True, (255, 220, 0))
+        ecran.blit(text, (LATIME // 2 - text.get_width() // 2, 90))
+    ecran.blit(font.render("Scor: 100", True, (255, 255, 255)), (250, 190))
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+
+**Ieșire:**
+```text
+True True False False True
+```
+
+**Ce vezi pe ecran:** pe fundal albastru închis, scrisul galben **„RECORD NOU!”** care **apare și dispare** de aproximativ două ori pe secundă, iar dedesubt, fix, „Scor: 100”.
+
+Funcția `clipeste` împarte timpul la `perioada` (400 ms) și verifică dacă rezultatul este **par**: prima 400 ms `True`, următoarele 400 ms `False`, și tot așa. Folosește-o pentru orice element care trebuie să **atragă atenția**.
+
+#### Acasă 2 — Setări salvate
+
+```python
+import json
+import os
+
+IMPLICIT = {"muzica": True, "culoare": "albastru", "dificultate": 2}
+FISIER = "setari_test.json"
+
+def incarca_setari(fisier):
+    setari = dict(IMPLICIT)
+    try:
+        with open(fisier, "r") as f:
+            setari.update(json.load(f))
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+    return setari
+
+if os.path.exists(FISIER):
+    os.remove(FISIER)
+
+print("Fara fisier:", incarca_setari(FISIER))
+
+with open(FISIER, "w") as f:
+    json.dump({"culoare": "rosu"}, f)
+print("Cu o setare:", incarca_setari(FISIER))
+
+with open(FISIER, "w") as f:
+    f.write("{asta nu e json")
+print("Fisier stricat:", incarca_setari(FISIER))
+
+print("Valorile implicite au ramas:", IMPLICIT)
+```
+
+**Ieșire:**
+```text
+Fara fisier: {'muzica': True, 'culoare': 'albastru', 'dificultate': 2}
+Cu o setare: {'muzica': True, 'culoare': 'rosu', 'dificultate': 2}
+Fisier stricat: {'muzica': True, 'culoare': 'albastru', 'dificultate': 2}
+Valorile implicite au ramas: {'muzica': True, 'culoare': 'albastru', 'dificultate': 2}
+```
+
+Funcția pornește de la **valorile implicite**, apoi citește fișierul și **suprascrie** doar ce găsește acolo (`update`). Astfel, dacă fișierul lipsește, e stricat sau conține doar o parte din setări, jocul **merge oricum**. `dict(IMPLICIT)` face o **copie**: fără ea, am modifica chiar dicționarul original.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+def clipeste(ms, perioada=500):
+    return (ms // perioada) % 2 == 0
+
+print(clipeste(100), clipeste(500), clipeste(1100))
+print(list(range(0, 100, 25)))
+setari = {"muzica": True}
+setari.update({"muzica": False, "volum": 5})
+print(setari)
+```
+
+**Găsește greșelile.** Programul are 3 greșeli. Rescrie-l corect:
+
+```text
+import json
+def incarca(fisier):
+    try:
+        with open(fisier, "r") as f
+            return json.load(f)
+    except FileNotFound:
+        return {}
+setari = incarca("setari.json")
+print(setari["culoare"])
+```
 
 ---
 
+## Răspunsuri la bonus
+Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit, important este să funcționeze. Fiecare cod este un program întreg, pornit de la „Expoziția” (Exemplul 8).
+
+### 1. Record în fișier
+```python
+import random
+import time
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 500
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Expozitia")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 34)
+font_mare = pygame.font.Font(None, 72)
+
+TITLU = "CLICK PE STELE"
+AUTOR = "Prenume Nume"
+DURATA_MINI_JOC = 15
+REGULI = [
+    "Click pe stea ca sa o prinzi",
+    "Fiecare stea valoreaza 1 punct",
+    "Ai 15 secunde",
+    "ESC = inapoi la meniu",
+]
+CREDITE = [TITLU, "", "Creat de", AUTOR, "", "Facut cu Python si Pygame", "", "Multumesc ca ai jucat!"]
+PAS_CREDITE = 45
+FISIER_RECORD = "record_expozitie.txt"
+
+def scrie(text, x, y, culoare=(255, 255, 255), fnt=None, centrat=False):
+    if fnt is None:
+        fnt = font
+    imagine = fnt.render(text, True, culoare)
+    if centrat:
+        x = x - imagine.get_width() // 2
+    ecran.blit(imagine, (x, y))
+
+def citeste_record():
+    try:
+        with open(FISIER_RECORD, "r") as f:
+            return int(f.read().strip())
+    except (FileNotFoundError, ValueError):
+        return 0
+
+def salveaza_record(valoare):
+    with open(FISIER_RECORD, "w") as f:
+        f.write(str(valoare))
+
+def nume_captura():
+    return "captura_" + time.strftime("%Y%m%d_%H%M%S") + ".png"
+
+def fade_out(viteza=20):
+    copie = ecran.copy()
+    negru = pygame.Surface((LATIME, INALTIME))
+    negru.fill((0, 0, 0))
+    for alfa in range(0, 256, viteza):
+        negru.set_alpha(alfa)
+        ecran.blit(copie, (0, 0))
+        ecran.blit(negru, (0, 0))
+        pygame.display.flip()
+        ceas.tick(60)
+
+class Buton:
+    def __init__(self, text, x, y, latime, inaltime):
+        self.text = text
+        self.rect = pygame.Rect(x, y, latime, inaltime)
+
+    def este_apasat(self, pozitie):
+        return self.rect.collidepoint(pozitie)
+
+    def deseneaza(self):
+        if self.rect.collidepoint(pygame.mouse.get_pos()):
+            culoare = (70, 140, 255)
+        else:
+            culoare = (40, 90, 200)
+        pygame.draw.rect(ecran, culoare, self.rect, border_radius=12)
+        pygame.draw.rect(ecran, (255, 255, 255), self.rect, 2, border_radius=12)
+        imagine = font.render(self.text, True, (255, 255, 255))
+        ecran.blit(imagine, imagine.get_rect(center=self.rect.center))
+
+butoane = [
+    Buton("Joaca", 250, 190, 200, 50),
+    Buton("Reguli", 250, 255, 200, 50),
+    Buton("Credite", 250, 320, 200, 50),
+    Buton("Iesire", 250, 385, 200, 50),
+]
+
+stea = pygame.Rect(0, 0, 44, 44)
+
+joc = {
+    "stare": "meniu",
+    "scor": 0,
+    "record": citeste_record(),
+    "start": 0,
+    "credite_y": INALTIME,
+    "mesaj": "",
+    "mesaj_pana": 0,
+    "fps": False,
+}
+
+def muta_stea():
+    stea.x = random.randint(20, LATIME - 64)
+    stea.y = random.randint(80, INALTIME - 64)
+
+def afiseaza_mesaj(text, durata=2000):
+    joc["mesaj"] = text
+    joc["mesaj_pana"] = pygame.time.get_ticks() + durata
+
+def schimba_stare(noua):
+    fade_out()
+    joc["stare"] = noua
+    if noua == "joc":
+        joc["scor"] = 0
+        joc["start"] = pygame.time.get_ticks()
+        muta_stea()
+    if noua == "credite":
+        joc["credite_y"] = INALTIME
+
+ruleaza = True
+while ruleaza:
+    acum = pygame.time.get_ticks()
+
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                if joc["stare"] == "meniu":
+                    ruleaza = False
+                else:
+                    schimba_stare("meniu")
+            if eveniment.key == pygame.K_F12:
+                fisier = nume_captura()
+                pygame.image.save(ecran, fisier)
+                afiseaza_mesaj("Captura salvata: " + fisier)
+            if eveniment.key == pygame.K_F3:
+                joc["fps"] = not joc["fps"]
+        if eveniment.type == pygame.MOUSEBUTTONDOWN:
+            if joc["stare"] == "meniu":
+                if butoane[0].este_apasat(eveniment.pos):
+                    schimba_stare("joc")
+                elif butoane[1].este_apasat(eveniment.pos):
+                    schimba_stare("reguli")
+                elif butoane[2].este_apasat(eveniment.pos):
+                    schimba_stare("credite")
+                elif butoane[3].este_apasat(eveniment.pos):
+                    ruleaza = False
+            elif joc["stare"] == "joc":
+                if stea.collidepoint(eveniment.pos):
+                    joc["scor"] += 1
+                    muta_stea()
+
+    if joc["stare"] == "joc":
+        ramas = DURATA_MINI_JOC - (acum - joc["start"]) / 1000
+        if ramas <= 0:
+            if joc["scor"] > joc["record"]:
+                joc["record"] = joc["scor"]
+                salveaza_record(joc["record"])
+            schimba_stare("meniu")
+            afiseaza_mesaj("Scor final: " + str(joc["scor"]) + ". Record: " + str(joc["record"]), 3000)
+    if joc["stare"] == "credite":
+        joc["credite_y"] -= 1.5
+        if joc["credite_y"] + PAS_CREDITE * len(CREDITE) < 0:
+            joc["credite_y"] = INALTIME
+
+    ecran.fill((15, 20, 50))
+    if joc["stare"] == "meniu":
+        scrie(TITLU, LATIME // 2, 80, (255, 220, 0), font_mare, True)
+        scrie("de " + AUTOR, LATIME // 2, 145, (200, 200, 200), None, True)
+        for b in butoane:
+            b.deseneaza()
+    elif joc["stare"] == "reguli":
+        scrie("REGULI", LATIME // 2, 50, (255, 220, 0), font_mare, True)
+        y = 150
+        numar = 1
+        for linie in REGULI:
+            scrie(str(numar) + ". " + linie, 120, y)
+            y += 50
+            numar += 1
+        scrie("ESC = inapoi", LATIME // 2, INALTIME - 50, (150, 150, 150), None, True)
+    elif joc["stare"] == "credite":
+        y = joc["credite_y"]
+        for i in range(len(CREDITE)):
+            if i == 0:
+                scrie(CREDITE[i], LATIME // 2, y, (255, 220, 0), font_mare, True)
+            else:
+                scrie(CREDITE[i], LATIME // 2, y, (230, 230, 230), None, True)
+            y += PAS_CREDITE
+    elif joc["stare"] == "joc":
+        pygame.draw.circle(ecran, (255, 220, 0), stea.center, 22)
+        pygame.draw.circle(ecran, (255, 255, 160), stea.center, 12)
+        scrie("Scor: " + str(joc["scor"]), 15, 15)
+        scrie("Timp: " + str(int(ramas) + 1), LATIME - 130, 15)
+
+    if acum < joc["mesaj_pana"]:
+        scrie(joc["mesaj"], LATIME // 2, INALTIME - 40, (120, 255, 120), None, True)
+    if joc["fps"]:
+        scrie("FPS: " + str(int(ceas.get_fps())), 10, INALTIME - 30, (255, 255, 0))
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** jocul arată ca înainte, dar recordul nu mai dispare: după o rundă cu scor mare, în `record_expozitie.txt` apare numărul, iar la următoarea pornire jocul îl citește. Dacă fișierul lipsește sau conține text care nu e număr, `citeste_record` întoarce 0, fără erori.
+
+### 2. Stea care se micșorează
+```python
+import random
+import time
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 500
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Expozitia")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 34)
+font_mare = pygame.font.Font(None, 72)
+
+TITLU = "CLICK PE STELE"
+AUTOR = "Prenume Nume"
+DURATA_MINI_JOC = 15
+REGULI = [
+    "Click pe stea ca sa o prinzi",
+    "Fiecare stea valoreaza 1 punct",
+    "Ai 15 secunde",
+    "ESC = inapoi la meniu",
+]
+CREDITE = [TITLU, "", "Creat de", AUTOR, "", "Facut cu Python si Pygame", "", "Multumesc ca ai jucat!"]
+PAS_CREDITE = 45
+
+def scrie(text, x, y, culoare=(255, 255, 255), fnt=None, centrat=False):
+    if fnt is None:
+        fnt = font
+    imagine = fnt.render(text, True, culoare)
+    if centrat:
+        x = x - imagine.get_width() // 2
+    ecran.blit(imagine, (x, y))
+
+def nume_captura():
+    return "captura_" + time.strftime("%Y%m%d_%H%M%S") + ".png"
+
+def fade_out(viteza=20):
+    copie = ecran.copy()
+    negru = pygame.Surface((LATIME, INALTIME))
+    negru.fill((0, 0, 0))
+    for alfa in range(0, 256, viteza):
+        negru.set_alpha(alfa)
+        ecran.blit(copie, (0, 0))
+        ecran.blit(negru, (0, 0))
+        pygame.display.flip()
+        ceas.tick(60)
+
+class Buton:
+    def __init__(self, text, x, y, latime, inaltime):
+        self.text = text
+        self.rect = pygame.Rect(x, y, latime, inaltime)
+
+    def este_apasat(self, pozitie):
+        return self.rect.collidepoint(pozitie)
+
+    def deseneaza(self):
+        if self.rect.collidepoint(pygame.mouse.get_pos()):
+            culoare = (70, 140, 255)
+        else:
+            culoare = (40, 90, 200)
+        pygame.draw.rect(ecran, culoare, self.rect, border_radius=12)
+        pygame.draw.rect(ecran, (255, 255, 255), self.rect, 2, border_radius=12)
+        imagine = font.render(self.text, True, (255, 255, 255))
+        ecran.blit(imagine, imagine.get_rect(center=self.rect.center))
+
+butoane = [
+    Buton("Joaca", 250, 190, 200, 50),
+    Buton("Reguli", 250, 255, 200, 50),
+    Buton("Credite", 250, 320, 200, 50),
+    Buton("Iesire", 250, 385, 200, 50),
+]
+
+stea = pygame.Rect(0, 0, 44, 44)
+
+joc = {
+    "stare": "meniu",
+    "scor": 0,
+    "record": 0,
+    "start": 0,
+    "credite_y": INALTIME,
+    "mesaj": "",
+    "mesaj_pana": 0,
+    "fps": False,
+}
+
+def marime_stea():
+    return max(20, 44 - joc["scor"] // 5 * 4)
+
+def muta_stea():
+    stea.width = marime_stea()
+    stea.height = marime_stea()
+    stea.x = random.randint(20, LATIME - 64)
+    stea.y = random.randint(80, INALTIME - 64)
+
+def afiseaza_mesaj(text, durata=2000):
+    joc["mesaj"] = text
+    joc["mesaj_pana"] = pygame.time.get_ticks() + durata
+
+def schimba_stare(noua):
+    fade_out()
+    joc["stare"] = noua
+    if noua == "joc":
+        joc["scor"] = 0
+        joc["start"] = pygame.time.get_ticks()
+        muta_stea()
+    if noua == "credite":
+        joc["credite_y"] = INALTIME
+
+ruleaza = True
+while ruleaza:
+    acum = pygame.time.get_ticks()
+
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                if joc["stare"] == "meniu":
+                    ruleaza = False
+                else:
+                    schimba_stare("meniu")
+            if eveniment.key == pygame.K_F12:
+                fisier = nume_captura()
+                pygame.image.save(ecran, fisier)
+                afiseaza_mesaj("Captura salvata: " + fisier)
+            if eveniment.key == pygame.K_F3:
+                joc["fps"] = not joc["fps"]
+        if eveniment.type == pygame.MOUSEBUTTONDOWN:
+            if joc["stare"] == "meniu":
+                if butoane[0].este_apasat(eveniment.pos):
+                    schimba_stare("joc")
+                elif butoane[1].este_apasat(eveniment.pos):
+                    schimba_stare("reguli")
+                elif butoane[2].este_apasat(eveniment.pos):
+                    schimba_stare("credite")
+                elif butoane[3].este_apasat(eveniment.pos):
+                    ruleaza = False
+            elif joc["stare"] == "joc":
+                if stea.collidepoint(eveniment.pos):
+                    joc["scor"] += 1
+                    muta_stea()
+
+    if joc["stare"] == "joc":
+        ramas = DURATA_MINI_JOC - (acum - joc["start"]) / 1000
+        if ramas <= 0:
+            if joc["scor"] > joc["record"]:
+                joc["record"] = joc["scor"]
+            schimba_stare("meniu")
+            afiseaza_mesaj("Scor final: " + str(joc["scor"]) + ". Record: " + str(joc["record"]), 3000)
+    if joc["stare"] == "credite":
+        joc["credite_y"] -= 1.5
+        if joc["credite_y"] + PAS_CREDITE * len(CREDITE) < 0:
+            joc["credite_y"] = INALTIME
+
+    ecran.fill((15, 20, 50))
+    if joc["stare"] == "meniu":
+        scrie(TITLU, LATIME // 2, 80, (255, 220, 0), font_mare, True)
+        scrie("de " + AUTOR, LATIME // 2, 145, (200, 200, 200), None, True)
+        for b in butoane:
+            b.deseneaza()
+    elif joc["stare"] == "reguli":
+        scrie("REGULI", LATIME // 2, 50, (255, 220, 0), font_mare, True)
+        y = 150
+        numar = 1
+        for linie in REGULI:
+            scrie(str(numar) + ". " + linie, 120, y)
+            y += 50
+            numar += 1
+        scrie("ESC = inapoi", LATIME // 2, INALTIME - 50, (150, 150, 150), None, True)
+    elif joc["stare"] == "credite":
+        y = joc["credite_y"]
+        for i in range(len(CREDITE)):
+            if i == 0:
+                scrie(CREDITE[i], LATIME // 2, y, (255, 220, 0), font_mare, True)
+            else:
+                scrie(CREDITE[i], LATIME // 2, y, (230, 230, 230), None, True)
+            y += PAS_CREDITE
+    elif joc["stare"] == "joc":
+        pygame.draw.circle(ecran, (255, 220, 0), stea.center, stea.width // 2)
+        pygame.draw.circle(ecran, (255, 255, 160), stea.center, stea.width // 4)
+        scrie("Scor: " + str(joc["scor"]), 15, 15)
+        scrie("Timp: " + str(int(ramas) + 1), LATIME - 130, 15)
+
+    if acum < joc["mesaj_pana"]:
+        scrie(joc["mesaj"], LATIME // 2, INALTIME - 40, (120, 255, 120), None, True)
+    if joc["fps"]:
+        scrie("FPS: " + str(int(ceas.get_fps())), 10, INALTIME - 30, (255, 255, 0))
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** steaua începe la 44 de pixeli lățime și, la fiecare 5 puncte, se micșorează cu 4, până la minimum 20. Mărimea se calculează în `marime_stea()`, iar cercurile se desenează după `stea.width`, deci arată bine la orice mărime.
+
+### 3. Fișa jocului pe ecran
+```python
+import random
+import time
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 500
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Expozitia")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 34)
+font_mare = pygame.font.Font(None, 72)
+
+TITLU = "CLICK PE STELE"
+AUTOR = "Prenume Nume"
+DURATA_MINI_JOC = 15
+REGULI = [
+    "Click pe stea ca sa o prinzi",
+    "Fiecare stea valoreaza 1 punct",
+    "Ai 15 secunde",
+    "ESC = inapoi la meniu",
+]
+CREDITE = [TITLU, "", "Creat de", AUTOR, "", "Facut cu Python si Pygame", "", "Multumesc ca ai jucat!"]
+PAS_CREDITE = 45
+FISA = {
+    "tip": "Joc de reflexe",
+    "ideea": "Prinzi cat mai multe stele in 15 secunde",
+    "controale": ["Click: prinde steaua", "ESC: inapoi", "F12: captura", "F3: FPS"],
+}
+
+def scrie(text, x, y, culoare=(255, 255, 255), fnt=None, centrat=False):
+    if fnt is None:
+        fnt = font
+    imagine = fnt.render(text, True, culoare)
+    if centrat:
+        x = x - imagine.get_width() // 2
+    ecran.blit(imagine, (x, y))
+
+def nume_captura():
+    return "captura_" + time.strftime("%Y%m%d_%H%M%S") + ".png"
+
+def fade_out(viteza=20):
+    copie = ecran.copy()
+    negru = pygame.Surface((LATIME, INALTIME))
+    negru.fill((0, 0, 0))
+    for alfa in range(0, 256, viteza):
+        negru.set_alpha(alfa)
+        ecran.blit(copie, (0, 0))
+        ecran.blit(negru, (0, 0))
+        pygame.display.flip()
+        ceas.tick(60)
+
+class Buton:
+    def __init__(self, text, x, y, latime, inaltime):
+        self.text = text
+        self.rect = pygame.Rect(x, y, latime, inaltime)
+
+    def este_apasat(self, pozitie):
+        return self.rect.collidepoint(pozitie)
+
+    def deseneaza(self):
+        if self.rect.collidepoint(pygame.mouse.get_pos()):
+            culoare = (70, 140, 255)
+        else:
+            culoare = (40, 90, 200)
+        pygame.draw.rect(ecran, culoare, self.rect, border_radius=12)
+        pygame.draw.rect(ecran, (255, 255, 255), self.rect, 2, border_radius=12)
+        imagine = font.render(self.text, True, (255, 255, 255))
+        ecran.blit(imagine, imagine.get_rect(center=self.rect.center))
+
+butoane = [
+    Buton("Joaca", 250, 190, 200, 50),
+    Buton("Reguli", 250, 255, 200, 50),
+    Buton("Credite", 250, 320, 200, 50),
+    Buton("Iesire", 250, 385, 200, 50),
+]
+
+stea = pygame.Rect(0, 0, 44, 44)
+
+joc = {
+    "stare": "meniu",
+    "scor": 0,
+    "record": 0,
+    "start": 0,
+    "credite_y": INALTIME,
+    "mesaj": "",
+    "mesaj_pana": 0,
+    "fps": False,
+}
+
+def muta_stea():
+    stea.x = random.randint(20, LATIME - 64)
+    stea.y = random.randint(80, INALTIME - 64)
+
+def afiseaza_mesaj(text, durata=2000):
+    joc["mesaj"] = text
+    joc["mesaj_pana"] = pygame.time.get_ticks() + durata
+
+def schimba_stare(noua):
+    fade_out()
+    joc["stare"] = noua
+    if noua == "joc":
+        joc["scor"] = 0
+        joc["start"] = pygame.time.get_ticks()
+        muta_stea()
+    if noua == "credite":
+        joc["credite_y"] = INALTIME
+
+ruleaza = True
+while ruleaza:
+    acum = pygame.time.get_ticks()
+
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                if joc["stare"] == "meniu":
+                    ruleaza = False
+                else:
+                    schimba_stare("meniu")
+            if eveniment.key == pygame.K_f and joc["stare"] == "meniu":
+                schimba_stare("fisa")
+            if eveniment.key == pygame.K_F12:
+                fisier = nume_captura()
+                pygame.image.save(ecran, fisier)
+                afiseaza_mesaj("Captura salvata: " + fisier)
+            if eveniment.key == pygame.K_F3:
+                joc["fps"] = not joc["fps"]
+        if eveniment.type == pygame.MOUSEBUTTONDOWN:
+            if joc["stare"] == "meniu":
+                if butoane[0].este_apasat(eveniment.pos):
+                    schimba_stare("joc")
+                elif butoane[1].este_apasat(eveniment.pos):
+                    schimba_stare("reguli")
+                elif butoane[2].este_apasat(eveniment.pos):
+                    schimba_stare("credite")
+                elif butoane[3].este_apasat(eveniment.pos):
+                    ruleaza = False
+            elif joc["stare"] == "joc":
+                if stea.collidepoint(eveniment.pos):
+                    joc["scor"] += 1
+                    muta_stea()
+
+    if joc["stare"] == "joc":
+        ramas = DURATA_MINI_JOC - (acum - joc["start"]) / 1000
+        if ramas <= 0:
+            if joc["scor"] > joc["record"]:
+                joc["record"] = joc["scor"]
+            schimba_stare("meniu")
+            afiseaza_mesaj("Scor final: " + str(joc["scor"]) + ". Record: " + str(joc["record"]), 3000)
+    if joc["stare"] == "credite":
+        joc["credite_y"] -= 1.5
+        if joc["credite_y"] + PAS_CREDITE * len(CREDITE) < 0:
+            joc["credite_y"] = INALTIME
+
+    ecran.fill((15, 20, 50))
+    if joc["stare"] == "meniu":
+        scrie(TITLU, LATIME // 2, 80, (255, 220, 0), font_mare, True)
+        scrie("de " + AUTOR, LATIME // 2, 145, (200, 200, 200), None, True)
+        for b in butoane:
+            b.deseneaza()
+        scrie("F = fisa jocului", LATIME - 190, 15, (150, 150, 150))
+    elif joc["stare"] == "fisa":
+        scrie("FISA JOCULUI", LATIME // 2, 40, (255, 220, 0), font_mare, True)
+        scrie("Titlu: " + TITLU, 100, 130)
+        scrie("Autor: " + AUTOR, 100, 170)
+        scrie("Tip: " + FISA["tip"], 100, 210)
+        scrie("Ideea: " + FISA["ideea"], 100, 250)
+        y = 300
+        for c in FISA["controale"]:
+            scrie("- " + c, 120, y)
+            y += 35
+        scrie("ESC = inapoi", LATIME // 2, INALTIME - 50, (150, 150, 150), None, True)
+    elif joc["stare"] == "reguli":
+        scrie("REGULI", LATIME // 2, 50, (255, 220, 0), font_mare, True)
+        y = 150
+        numar = 1
+        for linie in REGULI:
+            scrie(str(numar) + ". " + linie, 120, y)
+            y += 50
+            numar += 1
+        scrie("ESC = inapoi", LATIME // 2, INALTIME - 50, (150, 150, 150), None, True)
+    elif joc["stare"] == "credite":
+        y = joc["credite_y"]
+        for i in range(len(CREDITE)):
+            if i == 0:
+                scrie(CREDITE[i], LATIME // 2, y, (255, 220, 0), font_mare, True)
+            else:
+                scrie(CREDITE[i], LATIME // 2, y, (230, 230, 230), None, True)
+            y += PAS_CREDITE
+    elif joc["stare"] == "joc":
+        pygame.draw.circle(ecran, (255, 220, 0), stea.center, 22)
+        pygame.draw.circle(ecran, (255, 255, 160), stea.center, 12)
+        scrie("Scor: " + str(joc["scor"]), 15, 15)
+        scrie("Timp: " + str(int(ramas) + 1), LATIME - 130, 15)
+
+    if acum < joc["mesaj_pana"]:
+        scrie(joc["mesaj"], LATIME // 2, INALTIME - 40, (120, 255, 120), None, True)
+    if joc["fps"]:
+        scrie("FPS: " + str(int(ceas.get_fps())), 10, INALTIME - 30, (255, 255, 0))
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** în meniu, în dreapta sus, scrie „F = fisa jocului”. Tasta **F** deschide ecranul „FISA JOCULUI”, cu titlul, autorul, tipul, ideea și controalele luate din dicționarul `FISA`. **ESC** te întoarce în meniu, pentru că folosim aceeași `schimba_stare`.
+
+### 4. Meniu animat
+```python
+import random
+import time
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 500
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Expozitia")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 34)
+font_mare = pygame.font.Font(None, 72)
+
+TITLU = "CLICK PE STELE"
+AUTOR = "Prenume Nume"
+DURATA_MINI_JOC = 15
+REGULI = [
+    "Click pe stea ca sa o prinzi",
+    "Fiecare stea valoreaza 1 punct",
+    "Ai 15 secunde",
+    "ESC = inapoi la meniu",
+]
+CREDITE = [TITLU, "", "Creat de", AUTOR, "", "Facut cu Python si Pygame", "", "Multumesc ca ai jucat!"]
+PAS_CREDITE = 45
+
+def scrie(text, x, y, culoare=(255, 255, 255), fnt=None, centrat=False):
+    if fnt is None:
+        fnt = font
+    imagine = fnt.render(text, True, culoare)
+    if centrat:
+        x = x - imagine.get_width() // 2
+    ecran.blit(imagine, (x, y))
+
+def nume_captura():
+    return "captura_" + time.strftime("%Y%m%d_%H%M%S") + ".png"
+
+def fade_out(viteza=20):
+    copie = ecran.copy()
+    negru = pygame.Surface((LATIME, INALTIME))
+    negru.fill((0, 0, 0))
+    for alfa in range(0, 256, viteza):
+        negru.set_alpha(alfa)
+        ecran.blit(copie, (0, 0))
+        ecran.blit(negru, (0, 0))
+        pygame.display.flip()
+        ceas.tick(60)
+
+class Buton:
+    def __init__(self, text, x, y, latime, inaltime):
+        self.text = text
+        self.rect = pygame.Rect(x, y, latime, inaltime)
+
+    def este_apasat(self, pozitie):
+        return self.rect.collidepoint(pozitie)
+
+    def deseneaza(self):
+        if self.rect.collidepoint(pygame.mouse.get_pos()):
+            culoare = (70, 140, 255)
+        else:
+            culoare = (40, 90, 200)
+        pygame.draw.rect(ecran, culoare, self.rect, border_radius=12)
+        pygame.draw.rect(ecran, (255, 255, 255), self.rect, 2, border_radius=12)
+        imagine = font.render(self.text, True, (255, 255, 255))
+        ecran.blit(imagine, imagine.get_rect(center=self.rect.center))
+
+butoane = [
+    Buton("Joaca", 250, 190, 200, 50),
+    Buton("Reguli", 250, 255, 200, 50),
+    Buton("Credite", 250, 320, 200, 50),
+    Buton("Iesire", 250, 385, 200, 50),
+]
+
+stea = pygame.Rect(0, 0, 44, 44)
+
+stele_meniu = []
+for i in range(50):
+    stele_meniu.append([random.randint(0, LATIME), random.randint(0, INALTIME), random.randint(1, 3)])
+
+joc = {
+    "stare": "meniu",
+    "scor": 0,
+    "record": 0,
+    "start": 0,
+    "credite_y": INALTIME,
+    "mesaj": "",
+    "mesaj_pana": 0,
+    "fps": False,
+}
+
+def muta_stea():
+    stea.x = random.randint(20, LATIME - 64)
+    stea.y = random.randint(80, INALTIME - 64)
+
+def afiseaza_mesaj(text, durata=2000):
+    joc["mesaj"] = text
+    joc["mesaj_pana"] = pygame.time.get_ticks() + durata
+
+def schimba_stare(noua):
+    fade_out()
+    joc["stare"] = noua
+    if noua == "joc":
+        joc["scor"] = 0
+        joc["start"] = pygame.time.get_ticks()
+        muta_stea()
+    if noua == "credite":
+        joc["credite_y"] = INALTIME
+
+ruleaza = True
+while ruleaza:
+    acum = pygame.time.get_ticks()
+
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                if joc["stare"] == "meniu":
+                    ruleaza = False
+                else:
+                    schimba_stare("meniu")
+            if eveniment.key == pygame.K_F12:
+                fisier = nume_captura()
+                pygame.image.save(ecran, fisier)
+                afiseaza_mesaj("Captura salvata: " + fisier)
+            if eveniment.key == pygame.K_F3:
+                joc["fps"] = not joc["fps"]
+        if eveniment.type == pygame.MOUSEBUTTONDOWN:
+            if joc["stare"] == "meniu":
+                if butoane[0].este_apasat(eveniment.pos):
+                    schimba_stare("joc")
+                elif butoane[1].este_apasat(eveniment.pos):
+                    schimba_stare("reguli")
+                elif butoane[2].este_apasat(eveniment.pos):
+                    schimba_stare("credite")
+                elif butoane[3].este_apasat(eveniment.pos):
+                    ruleaza = False
+            elif joc["stare"] == "joc":
+                if stea.collidepoint(eveniment.pos):
+                    joc["scor"] += 1
+                    muta_stea()
+
+    if joc["stare"] == "joc":
+        ramas = DURATA_MINI_JOC - (acum - joc["start"]) / 1000
+        if ramas <= 0:
+            if joc["scor"] > joc["record"]:
+                joc["record"] = joc["scor"]
+            schimba_stare("meniu")
+            afiseaza_mesaj("Scor final: " + str(joc["scor"]) + ". Record: " + str(joc["record"]), 3000)
+    if joc["stare"] == "meniu":
+        for s in stele_meniu:
+            s[1] += s[2]
+            if s[1] > INALTIME:
+                s[1] = 0
+                s[0] = random.randint(0, LATIME)
+    if joc["stare"] == "credite":
+        joc["credite_y"] -= 1.5
+        if joc["credite_y"] + PAS_CREDITE * len(CREDITE) < 0:
+            joc["credite_y"] = INALTIME
+
+    ecran.fill((15, 20, 50))
+    if joc["stare"] == "meniu":
+        for s in stele_meniu:
+            luminos = 80 + 50 * s[2]
+            pygame.draw.rect(ecran, (luminos, luminos, luminos), (s[0], s[1], s[2], s[2]))
+        scrie(TITLU, LATIME // 2, 80, (255, 220, 0), font_mare, True)
+        scrie("de " + AUTOR, LATIME // 2, 145, (200, 200, 200), None, True)
+        for b in butoane:
+            b.deseneaza()
+    elif joc["stare"] == "reguli":
+        scrie("REGULI", LATIME // 2, 50, (255, 220, 0), font_mare, True)
+        y = 150
+        numar = 1
+        for linie in REGULI:
+            scrie(str(numar) + ". " + linie, 120, y)
+            y += 50
+            numar += 1
+        scrie("ESC = inapoi", LATIME // 2, INALTIME - 50, (150, 150, 150), None, True)
+    elif joc["stare"] == "credite":
+        y = joc["credite_y"]
+        for i in range(len(CREDITE)):
+            if i == 0:
+                scrie(CREDITE[i], LATIME // 2, y, (255, 220, 0), font_mare, True)
+            else:
+                scrie(CREDITE[i], LATIME // 2, y, (230, 230, 230), None, True)
+            y += PAS_CREDITE
+    elif joc["stare"] == "joc":
+        pygame.draw.circle(ecran, (255, 220, 0), stea.center, 22)
+        pygame.draw.circle(ecran, (255, 255, 160), stea.center, 12)
+        scrie("Scor: " + str(joc["scor"]), 15, 15)
+        scrie("Timp: " + str(int(ramas) + 1), LATIME - 130, 15)
+
+    if acum < joc["mesaj_pana"]:
+        scrie(joc["mesaj"], LATIME // 2, INALTIME - 40, (120, 255, 120), None, True)
+    if joc["fps"]:
+        scrie("FPS: " + str(int(ceas.get_fps())), 10, INALTIME - 30, (255, 255, 0))
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** în meniu, 50 de stele albe curg încet în jos, cele rapide sunt mai mari și mai luminoase. Când ies jos, reapar sus, într-un loc nou. Stelele se mișcă și se desenează doar cât timp ești în starea `"meniu"`.
+
+---
 ## Ce urmează — după curs
 
 Felicitări! Ai parcurs **cele patru module** ale cursului de Python:

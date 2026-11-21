@@ -8,7 +8,7 @@ Instrucțiuni noi azi. Return oprește o funcție pe loc. Un semn de întrebare 
 
 Primul pas. Circuitul nou. Îl vei duplica, adică îl vei copia, în lecția următoare.
 
-Al doilea pas. Tabelul de pini al casei, valabil pentru lecțiile doi și trei. Ecranul folosește pinii doisprezece, unsprezece, cinci, patru, trei și doi, ca în Modulul trei. Ceilalți pini sunt trecuți în tabel, pentru lampă, ventilator, buton și senzori, iar pentru securitate rămân pini liberi.
+Al doilea pas. Tabelul de pini al casei, valabil pentru lecțiile doi și trei. Ecranul folosește pinii doisprezece, unsprezece, cinci, patru, trei și doi, ca în Modulul trei. Tabelul cuprinde și pinii pentru lampă, ventilator, buton și senzori, iar pinii pentru securitatea din lecția trei sunt deja rezervați.
 
 Al treilea pas. Conexiuni, partea întâi. Ecranul se conectează ca în Modulul trei, lecția unu. Fotorezistorul, senzorul de temperatură, tranzistorul cu motorul și dioda de protecție au pinii lor din tabel.
 

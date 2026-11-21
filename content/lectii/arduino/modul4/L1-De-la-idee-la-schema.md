@@ -223,8 +223,7 @@ La proiectele reale se mai adaugă: sursa de alimentare, cutia (carcasa), lipitu
 ## Quiz scurt
 - Care sunt pinii PWM?  
 - De ce folosim un program de test?  
-- Ce piese ar trebui pentru „un ceas deșteptător”?
-- Care pini pot face PWM?  
+- Ce piese ar trebui pentru „un ceas deșteptător”?  
 - Ce pini nu-i folosești niciodată pentru piese, și de ce?  
 
 ## Temă

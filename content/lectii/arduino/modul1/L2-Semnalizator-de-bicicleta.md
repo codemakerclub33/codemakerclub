@@ -58,7 +58,7 @@ Fiecare LED are **propriul** rezistor.
 
 **Gata când:**  
 - [ ] Toate firele sunt conectate exact ca în tabel  
-- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
+- [ ] Am verificat de două ori GND și pinii înainte să pornesc simularea  
 
 ### 3) Alternare (Minim)
 

@@ -1,4 +1,5 @@
-# LECȚIA 8 — Fișiere și try/except: salvăm recordul
+# LECȚIA 8 — Click rapid
+### Fișiere și try/except: salvăm recordul
 **Modulul 4 · Jocuri cu Pygame · 2 ore**  
 **Code Maker Club · Game Creator**
 
@@ -7,13 +8,13 @@
 
 ---
 
-## Obiectiv
-La finalul orei scrii și citești fișiere text cu `with open`, adaugi linii la un fișier existent, tratezi erorile cu `try / except`, salvezi date cu `json`, păstrezi un record și un top și construiești un joc care își amintește scorurile.  
-**Minim:** salvezi și citești un record dintr-un fișier.  
-**Ținta orei (Complet):** + tratarea erorilor, top 5 și jocul „Click rapid”.
+## Ce facem azi
 
-## De ce contează
-Aproape orice joc își salvează ceva: recordul, nivelul atins, setările. Iar orice program care citește fișiere trebuie să se descurce și atunci când ceva nu merge, fără să se „blocheze” cu un mesaj roșu.
+La final scrii și citești fișiere text cu `with open`, adaugi linii la un fișier existent, tratezi erorile cu `try / except`, păstrezi un record și un top și construiești un joc care își amintește scorurile.
+
+Ai doborât recordul, închizi jocul... și a doua zi recordul a dispărut! Variabilele trăiesc doar **cât rulează programul**; ca să păstrăm lucrurile, le scriem într-un **fișier**. Iar dacă fișierul **nu există** sau conține prostii, programul nu trebuie să se strice: pentru asta există **`try / except`**.
+
+La final ai **„Click rapid”**: un joc cu top 5 salvat în fișier.
 
 ---
 
@@ -23,12 +24,23 @@ Aproape orice joc își salvează ceva: recordul, nivelul atins, setările. Iar 
 |--------|----------|
 | 0–10 | Recapitulare L7 |
 | 10–35 | Scriem și citim fișiere (**Exemplele 1–2**) |
-| 35–60 | `try / except` (**Exemplele 3–5**) |
-| 60–85 | Record, top, `json` (**Exemplele 6–9**) |
-| 85–118 | Mini-proiect (**Exemplul 10**) |
+| 35–65 | `try / except` (**Exemplele 3–5**) |
+| 65–90 | Record și top (**Exemplele 6–7**) |
+| 90–118 | Mini-proiect: Click rapid (**Exemplul 8**) |
 | 118–120 | Recap și temă |
 
-> **Important:** salvează **mai întâi** programul (în Thonny: *File → Save*), într-un folder al tău. Fișierele create de program apar **în același folder** cu programul.
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `with open("scor.txt", "w") as f:` | Deschide fișierul pentru scris (șterge ce era) | `f.write(str(scor) + "\n")` |
+| `open(..., "a")` | Deschide pentru adăugat, la sfârșit | `with open("jurnal.txt", "a") as f:` |
+| `open(..., "r")` + `for linie in f:` | Citește fișierul linie cu linie | `numar = int(linie)` |
+| `try:` / `except FileNotFoundError:` | Prinde eroarea „fișierul nu există” | `except ValueError:` |
+| `linie.strip().split(",")` | Taie linia în bucăți, după virgulă | `parti = "Ana,12".split(",")` |
+| `top.sort(reverse=True)` și `top[:5]` | Sortează descrescător și păstrează primele 5 | `top = top[:5]` |
 
 ---
 
@@ -37,9 +49,6 @@ Aproape orice joc își salvează ceva: recordul, nivelul atins, setările. Iar 
 - O clasă este o rețetă, un obiect este lucrul făcut după ea.
 - `__init__`, `self`, metode și atribute.
 - Obiectele se păstrează în liste.
-
-**Încearcă tu (3 min)**  
-- [ ] Scrie o clasă `Mingea` cu `__init__(self, raza)` și o metodă `diametru()`  
 
 ---
 
@@ -194,7 +203,7 @@ print(citeste_record("record_inexistent.txt"))
 
 Funcția întoarce **0** în loc să se strice, în două situații: fișierul lipsește (`FileNotFoundError`) sau conține altceva decât un număr (`ValueError`). Prima rulare a jocului, când nu există încă niciun record, merge perfect. Observă că putem pune **mai multe** `except` la rând, câte unul pentru fiecare tip de eroare.
 
-**Încearcă tu (5 min)**  
+**Încearcă tu (8 min)**  
 - [ ] Am scris și am rulat **Exemplul 3** (Fișier care nu există)  
 - [ ] Am scris și am rulat **Exemplul 4** (Text în loc de număr)  
 - [ ] Am scris și am rulat **Exemplul 5** (Citirea sigură a recordului)  
@@ -202,7 +211,7 @@ Funcția întoarce **0** în loc să se strice, în două situații: fișierul l
 
 ---
 
-## 4. Record, top, json
+## 4. Record și top
 
 ### Exemplul 6 — Păstrăm recordul
 
@@ -296,103 +305,9 @@ Linie stricata, o sar: 'Dan,zece'
 
 Fiecare linie din fișier arată așa: `Ana,12`. `split(",")` o desparte în **listă** (`["Ana", "12"]`). Păstrăm datele ca perechi `(scor, nume)`, pentru că `top.sort(reverse=True)` sortează întâi după **scor**, de la cel mai mare. Liniile stricate („linie fără scor” → `IndexError`, „Dan,zece” → `ValueError`) sunt **sărite**, iar topul rămâne corect. `top[:3]` păstrează doar primele **trei** elemente.
 
-### Exemplul 8 — `else` și `finally`
-
-```python
-def medie_din_fisier(nume):
-    try:
-        with open(nume, "r") as f:
-            note = []
-            for linie in f:
-                text = linie.strip()
-                try:
-                    note.append(int(text))
-                except ValueError:
-                    print("  sar linia:", repr(text))
-            medie = sum(note) / len(note)
-    except FileNotFoundError:
-        print("  fisierul nu exista")
-    except ZeroDivisionError:
-        print("  nu am gasit nicio nota")
-    else:
-        print(f"  media este {medie:.1f}")
-    finally:
-        print("  (am terminat cu", nume + ")")
-
-with open("note.txt", "w") as f:
-    f.write("9\n8\nfoarte bine\n10\n")
-with open("gol.txt", "w") as f:
-    f.write("")
-
-medie_din_fisier("note.txt")
-medie_din_fisier("gol.txt")
-medie_din_fisier("lipsa.txt")
-```
-
-**Ieșire:**
-```text
-  sar linia: 'foarte bine'
-  media este 9.0
-  (am terminat cu note.txt)
-  nu am gasit nicio nota
-  (am terminat cu gol.txt)
-  fisierul nu exista
-  (am terminat cu lipsa.txt)
-```
-
-- `else` rulează **doar dacă nu a apărut nicio eroare**;
-- `finally` rulează **întotdeauna** (cu sau fără eroare). Bun pentru „curățenie” sau mesaje de final;
-- `ZeroDivisionError` apare la `sum(note) / len(note)` când lista este goală (împărțire la 0);
-- Observă că `try` poate fi **în interiorul altui `try`**: cel interior tratează linia greșită, cel exterior tratează fișierul.
-
-### Exemplul 9 — Salvăm un dicționar cu `json`
-
-```python
-import json
-
-def salveaza(fisier, date):
-    with open(fisier, "w") as f:
-        json.dump(date, f)
-
-def incarca(fisier, implicit):
-    try:
-        with open(fisier, "r") as f:
-            return json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
-        return implicit
-
-jucator = {"nume": "Ana", "nivel": 3, "inventar": ["sabie", "scut"]}
-salveaza("jucator.json", jucator)
-
-with open("jucator.json", "r") as f:
-    print(f.read())
-
-citit = incarca("jucator.json", {})
-citit["nivel"] += 1
-citit["inventar"].append("potiune")
-print(citit)
-
-print(incarca("nu_exista.json", {"nivel": 1}))
-
-with open("stricat.json", "w") as f:
-    f.write("{asta nu e json")
-print(incarca("stricat.json", {"nivel": 1}))
-```
-
-**Ieșire:**
-```text
-{"nume": "Ana", "nivel": 3, "inventar": ["sabie", "scut"]}
-{'nume': 'Ana', 'nivel': 4, 'inventar': ['sabie', 'scut', 'potiune']}
-{'nivel': 1}
-{'nivel': 1}
-```
-
-Cu modulul **`json`** poți salva dintr-o dată un dicționar sau o listă întreagă (cu numere, texte, liste în ele), fără să împarți tu textul pe linii. `json.dump(date, f)` scrie, iar `json.load(f)` citește și îți dă înapoi **dicționarul**. Dacă fișierul lipsește sau e stricat, funcția `incarca` întoarce valoarea **implicită**, așa că jocul pornește cu setări de bază.
-
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 6** (Păstrăm recordul)  
 - [ ] Am scris și am rulat **Exemplul 7** (Topul scorurilor)  
-- [ ] Am scris și am rulat **Exemplul 8** (`else` și `finally`)  
 - [ ] Am rulat și restul exemplelor din secțiune  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
@@ -400,7 +315,7 @@ Cu modulul **`json`** poți salva dintr-o dată un dicționar sau o listă într
 
 ## 5. Mini-proiect
 
-### Exemplul 10 — „Click rapid”
+### Exemplul 8 — „Click rapid”
 
 ```python
 import random
@@ -516,74 +431,47 @@ pygame.quit()
 Topul rămâne în fișierul `top_click.txt` (în folderul programului): **închide jocul și deschide-l mâine**, iar scorurile vor fi tot acolo! Dacă fișierul lipsește sau e stricat, jocul pornește cu un top gol, fără erori.
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** („Click rapid”)  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+- [ ] Am scris și am rulat **Exemplul 8** („Click rapid”)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Click rapid”
 
-### Exercițiul A — „Click rapid” (obligatoriu)
-Pornește de la Exemplul 10 și fă jocul **al tău**:
+### Minim vs Complet
+
+| Nivel | Ce trebuie să ai |
+|-------|------------------|
+| **Minim** | Salvezi și citești un record dintr-un fișier |
+| **Complet** | Minim + tratarea erorilor, top 5 și jocul „Click rapid” |
+
+### Pasul 1 — Minim
+Scrie un program care citește recordul din `record.txt` (cu `try / except` dacă fișierul lipsește), îl afișează, apoi salvează un record nou.
+
+### Pasul 2 — Complet
+Pornește de la Exemplul 8 și fă jocul **al tău**:
 1. schimbă **ținta** (o față zâmbitoare, o bulină, o pizza etc.) și **culorile**;
 2. adaugă **viteză**: ținta devine mai mică la fiecare 5 puncte;
 3. adaugă **o țintă „rea”** (albastră): dacă dai click pe ea, pierzi 2 puncte;
 4. păstrează topul în fișier, cu `try / except` pentru fișier lipsă sau stricat;
 5. afișează **„Record nou!”** când scorul este cel mai mare din top.
 
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
-
-```python
-with open("t.txt", "w") as f:
-    f.write("1\n2\n3\n")
-
-total = 0
-with open("t.txt") as f:
-    for linie in f:
-        total += int(linie)
-print(total)
-
-try:
-    print(int("zece"))
-except ValueError:
-    print("Nu e numar")
-print("Gata")
-```
-
-### Exercițiul C — Jurnalul meu
-Scrie un program care te întreabă (`input`) ce ai făcut azi și **adaugă** răspunsul într-un fișier `jurnal.txt` (cu `"a"`). La final, citește fișierul și afișează toate zilele salvate, numerotate.
-
-### Exercițiul D — Găsește greșelile
-Programul are 3 greșeli. Rescrie-l corect:
-
-```text
-with open("scor.txt", "r") as f
-    continut = f.read
-scor = int(continut)
-print("Scor: " + scor)
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. De ce dispar variabilele când închizi programul și cum rezolvăm asta?  
-2. Care este diferența dintre `"w"` și `"a"`?  
-3. La ce folosește `try / except`? Dă un exemplu.
-
 **Gata când:**
 - [ ] Jocul salvează topul în fișier și îl citește la pornire  
 - [ ] Merge și când fișierul lipsește sau este stricat  
 - [ ] Ai țintă „rea” și ținta devine mai mică  
-- [ ] Ai explicat pe foaie `"w"`, `"a"` și `try / except`  
-- [ ] Fișierul se numește `Prenume_Nume_P4_L8.py`  
+- [ ] Fișierul se numește `Prenume_Nume_P4_L8.py`
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Salvează cu `json` **setările** jocului (culoarea țintei, durata rundei)  
-- [ ] Adaugă un meniu de **setări** care schimbă durata (10, 15 sau 30 de secunde), salvată în fișier  
-- [ ] Salvează și **data** scorului (`import time` și `time.strftime("%d.%m.%Y")`)  
-- [ ] Fă o opțiune „Șterge topul” cu **confirmare**  
+## Bonus ★★★ — Provocare: Click rapid, versiunea cu memorie
+
+*Doar dacă ai terminat Complet. Lucrezi tot în „Click rapid”, în același program.*
+
+- [ ] **Data scorului.** Salvează în top și data fiecărui scor (`time.strftime("%d.%m.%Y")`) și afișează-o lângă nume  
+- [ ] **Durata rundei.** Pe ecranul final, tastele **1**, **2**, **3** aleg durata rundei (10, 15 sau 30 de secunde); durata se salvează cu `json` și se citește la pornire (vezi „Acasă 2”)  
+- [ ] **Șterge topul.** Pe ecranul final, tasta **D** șterge topul, dar abia la a doua apăsare (prima cere confirmarea)  
+- [ ] **Statistici.** Păstrează cu `json` numărul de runde jucate, între porniri, și afișează-l pe ecranul final
 
 ---
 
@@ -607,8 +495,8 @@ Răspunde pe foaie:
 - `with open(nume, "w"/"a"/"r") as f:` scrie, adaugă sau citește și se închide singur.
 - În fișiere scriem **text**; la citire transformăm cu `int(...)`.
 - `try / except TipEroare:` prinde erorile și programul merge mai departe.
-- `else` rulează dacă nu a fost eroare, `finally` rulează mereu.
-- `json.dump` și `json.load` salvează dicționare și liste întregi.
+- `else` rulează dacă nu a fost eroare, `finally` rulează mereu (vezi „Acasă 1”).
+- `json.dump` și `json.load` salvează dicționare și liste întregi (vezi „Acasă 2”).
 
 ---
 
@@ -621,14 +509,652 @@ Răspunde pe foaie:
 
 ---
 
+---
+
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny.  
-2. Fă un joc la alegere (de exemplu „Strânge monedele” din Lecția 5) care **salvează recordul** într-un fișier.  
-3. Adaugă în „Click rapid” **trei dificultăți** (ușor, mediu, greu), fiecare cu **topul ei** (un fișier pentru fiecare).  
-4. **Bonus:** salvează cu `json` tot progresul unui joc (nivel, vieți, scor) și reia-l la următoarea pornire.  
-5. Salvează totul ca `Tema_P4_L8_Prenume_Nume.py`.
+1. Refă **4 exemple la alegere** din cele 8, scrise de tine (nu copiate).  
+2. **Jurnalul meu.** Scrie un program care te întreabă (`input`) ce ai făcut azi și **adaugă** răspunsul într-un fișier `jurnal.txt` (cu `"a"`). La final, citește fișierul și afișează toate zilele salvate, numerotate.  
+3. Fă un joc la alegere (de exemplu „Strânge monedele” din Lecția 5) care **salvează recordul** într-un fișier.  
+4. Adaugă în „Click rapid” **trei dificultăți** (ușor, mediu, greu), fiecare cu **topul ei** (un fișier pentru fiecare).  
+5. **Explică pe foaie:** De ce dispar variabilele când închizi programul și cum rezolvăm asta? Care este diferența dintre `"w"` și `"a"`? La ce folosește `try / except`? Dă un exemplu.  
+6. **Bonus:** salvează cu `json` tot progresul unui joc (nivel, vieți, scor) și reia-l la următoarea pornire.  
+7. Salvează totul ca `Tema_P4_L8_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le în Thonny, rulează-le și schimbă-le după preferințe.
+
+#### Acasă 1 — `else` și `finally`
+
+```python
+def medie_din_fisier(nume):
+    try:
+        with open(nume, "r") as f:
+            note = []
+            for linie in f:
+                text = linie.strip()
+                try:
+                    note.append(int(text))
+                except ValueError:
+                    print("  sar linia:", repr(text))
+            medie = sum(note) / len(note)
+    except FileNotFoundError:
+        print("  fisierul nu exista")
+    except ZeroDivisionError:
+        print("  nu am gasit nicio nota")
+    else:
+        print(f"  media este {medie:.1f}")
+    finally:
+        print("  (am terminat cu", nume + ")")
+
+with open("note.txt", "w") as f:
+    f.write("9\n8\nfoarte bine\n10\n")
+with open("gol.txt", "w") as f:
+    f.write("")
+
+medie_din_fisier("note.txt")
+medie_din_fisier("gol.txt")
+medie_din_fisier("lipsa.txt")
+```
+
+**Ieșire:**
+```text
+  sar linia: 'foarte bine'
+  media este 9.0
+  (am terminat cu note.txt)
+  nu am gasit nicio nota
+  (am terminat cu gol.txt)
+  fisierul nu exista
+  (am terminat cu lipsa.txt)
+```
+
+- `else` rulează **doar dacă nu a apărut nicio eroare**;
+- `finally` rulează **întotdeauna** (cu sau fără eroare). Bun pentru „curățenie” sau mesaje de final;
+- `ZeroDivisionError` apare la `sum(note) / len(note)` când lista este goală (împărțire la 0);
+- Observă că `try` poate fi **în interiorul altui `try`**: cel interior tratează linia greșită, cel exterior tratează fișierul.
+
+#### Acasă 2 — Salvăm un dicționar cu `json`
+
+```python
+import json
+
+def salveaza(fisier, date):
+    with open(fisier, "w") as f:
+        json.dump(date, f)
+
+def incarca(fisier, implicit):
+    try:
+        with open(fisier, "r") as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return implicit
+
+jucator = {"nume": "Ana", "nivel": 3, "inventar": ["sabie", "scut"]}
+salveaza("jucator.json", jucator)
+
+with open("jucator.json", "r") as f:
+    print(f.read())
+
+citit = incarca("jucator.json", {})
+citit["nivel"] += 1
+citit["inventar"].append("potiune")
+print(citit)
+
+print(incarca("nu_exista.json", {"nivel": 1}))
+
+with open("stricat.json", "w") as f:
+    f.write("{asta nu e json")
+print(incarca("stricat.json", {"nivel": 1}))
+```
+
+**Ieșire:**
+```text
+{"nume": "Ana", "nivel": 3, "inventar": ["sabie", "scut"]}
+{'nume': 'Ana', 'nivel': 4, 'inventar': ['sabie', 'scut', 'potiune']}
+{'nivel': 1}
+{'nivel': 1}
+```
+
+Cu modulul **`json`** poți salva dintr-o dată un dicționar sau o listă întreagă (cu numere, texte, liste în ele), fără să împarți tu textul pe linii. `json.dump(date, f)` scrie, iar `json.load(f)` citește și îți dă înapoi **dicționarul**. Dacă fișierul lipsește sau e stricat, funcția `incarca` întoarce valoarea **implicită**, așa că jocul pornește cu setări de bază.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+with open("t.txt", "w") as f:
+    f.write("1\n2\n3\n")
+
+total = 0
+with open("t.txt") as f:
+    for linie in f:
+        total += int(linie)
+print(total)
+
+try:
+    print(int("zece"))
+except ValueError:
+    print("Nu e numar")
+print("Gata")
+```
+
+**Găsește greșelile.** Programul are 3 greșeli. Rescrie-l corect:
+
+```text
+with open("scor.txt", "r") as f
+    continut = f.read
+scor = int(continut)
+print("Scor: " + scor)
+```
 
 ---
 
+## Răspunsuri la bonus
+Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit, important este să funcționeze. Fiecare cod este un program întreg, pornit de la „Click rapid” (Exemplul 8).
+
+### 1. Data scorului
+```python
+import random
+import time
+import pygame
+
+FISIER = "top_click.txt"
+
+def citeste_top():
+    top = []
+    try:
+        with open(FISIER, "r") as f:
+            for linie in f:
+                parti = linie.strip().split(",")
+                try:
+                    if len(parti) > 2:
+                        data = parti[2]
+                    else:
+                        data = ""
+                    top.append((int(parti[1]), parti[0], data))
+                except (ValueError, IndexError):
+                    pass
+    except FileNotFoundError:
+        pass
+    top.sort(reverse=True)
+    return top[:5]
+
+def salveaza_top(top):
+    with open(FISIER, "w") as f:
+        for scor, nume, data in top:
+            f.write(nume + "," + str(scor) + "," + data + "\n")
+
+nume = input("Numele tau (fara diacritice): ").strip().replace(",", " ")
+if nume == "":
+    nume = "Anonim"
+
+pygame.init()
+LATIME = 600
+INALTIME = 450
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Click rapid")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 36)
+font_mare = pygame.font.Font(None, 80)
+
+DURATA = 15
+tinta = pygame.Rect(0, 0, 60, 60)
+
+def muta_tinta():
+    tinta.x = random.randint(20, LATIME - 80)
+    tinta.y = random.randint(70, INALTIME - 80)
+
+def scrie(text, x, y, culoare=(255, 255, 255), fnt=None, centrat=False):
+    if fnt is None:
+        fnt = font
+    imagine = fnt.render(text, True, culoare)
+    if centrat:
+        x = x - imagine.get_width() // 2
+    ecran.blit(imagine, (x, y))
+
+top = citeste_top()
+stare = "joc"
+scor = 0
+start = time.time()
+muta_tinta()
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.MOUSEBUTTONDOWN and stare == "joc":
+            if tinta.collidepoint(eveniment.pos):
+                scor += 1
+                muta_tinta()
+        if eveniment.type == pygame.KEYDOWN and eveniment.key == pygame.K_r and stare == "final":
+            stare = "joc"
+            scor = 0
+            start = time.time()
+            muta_tinta()
+
+    ramas = DURATA - (time.time() - start)
+    if stare == "joc" and ramas <= 0:
+        stare = "final"
+        top.append((scor, nume, time.strftime("%d.%m.%Y")))
+        top.sort(reverse=True)
+        top = top[:5]
+        salveaza_top(top)
+
+    ecran.fill((25, 30, 60))
+    if stare == "joc":
+        pygame.draw.circle(ecran, (255, 80, 80), tinta.center, 30)
+        pygame.draw.circle(ecran, (255, 255, 255), tinta.center, 18)
+        pygame.draw.circle(ecran, (255, 80, 80), tinta.center, 8)
+        scrie("Scor: " + str(scor), 15, 15)
+        scrie("Timp: " + str(int(ramas) + 1), LATIME - 130, 15)
+        if len(top) > 0:
+            scrie("Record: " + str(top[0][0]), LATIME // 2, 15, (255, 220, 0), None, True)
+    else:
+        scrie("TIMPUL A TRECUT!", LATIME // 2, 30, (255, 120, 120), font_mare, True)
+        scrie("Scorul tau: " + str(scor), LATIME // 2, 110, (255, 255, 255), None, True)
+        scrie("TOP 5", LATIME // 2, 160, (255, 220, 0), None, True)
+        loc = 1
+        for s, n, d in top:
+            scrie(str(loc) + ". " + n + " - " + str(s) + "  (" + d + ")", LATIME // 2, 160 + loc * 35, (220, 220, 220), None, True)
+            loc += 1
+        scrie("R = joc nou", LATIME // 2, INALTIME - 40, (120, 255, 120), None, True)
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** în TOP 5, fiecare scor are lângă el data, de exemplu „1. Ana - 12  (20.11.2026)”. În fișier, fiecare linie are acum trei părți: `nume,scor,data`. Liniile din fișierele vechi, fără dată, se citesc în continuare (data este atunci un text gol, deci apare „()”), iar liniile stricate sunt ignorate, ca până acum.
+
+### 2. Durata rundei
+```python
+import json
+import random
+import time
+import pygame
+
+FISIER = "top_click.txt"
+FISIER_SETARI = "setari.json"
+
+def citeste_top():
+    top = []
+    try:
+        with open(FISIER, "r") as f:
+            for linie in f:
+                parti = linie.strip().split(",")
+                try:
+                    top.append((int(parti[1]), parti[0]))
+                except (ValueError, IndexError):
+                    pass
+    except FileNotFoundError:
+        pass
+    top.sort(reverse=True)
+    return top[:5]
+
+def salveaza_top(top):
+    with open(FISIER, "w") as f:
+        for scor, nume in top:
+            f.write(nume + "," + str(scor) + "\n")
+
+def citeste_durata():
+    try:
+        with open(FISIER_SETARI, "r") as f:
+            date = json.load(f)
+        return date["durata"]
+    except (FileNotFoundError, ValueError, KeyError):
+        return 15
+
+def salveaza_durata(durata):
+    with open(FISIER_SETARI, "w") as f:
+        json.dump({"durata": durata}, f)
+
+nume = input("Numele tau (fara diacritice): ").strip().replace(",", " ")
+if nume == "":
+    nume = "Anonim"
+
+pygame.init()
+LATIME = 600
+INALTIME = 450
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Click rapid")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 36)
+font_mare = pygame.font.Font(None, 80)
+
+DURATA = citeste_durata()
+tinta = pygame.Rect(0, 0, 60, 60)
+
+def muta_tinta():
+    tinta.x = random.randint(20, LATIME - 80)
+    tinta.y = random.randint(70, INALTIME - 80)
+
+def scrie(text, x, y, culoare=(255, 255, 255), fnt=None, centrat=False):
+    if fnt is None:
+        fnt = font
+    imagine = fnt.render(text, True, culoare)
+    if centrat:
+        x = x - imagine.get_width() // 2
+    ecran.blit(imagine, (x, y))
+
+top = citeste_top()
+stare = "joc"
+scor = 0
+start = time.time()
+muta_tinta()
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.MOUSEBUTTONDOWN and stare == "joc":
+            if tinta.collidepoint(eveniment.pos):
+                scor += 1
+                muta_tinta()
+        if eveniment.type == pygame.KEYDOWN and eveniment.key == pygame.K_r and stare == "final":
+            stare = "joc"
+            scor = 0
+            start = time.time()
+            muta_tinta()
+        if eveniment.type == pygame.KEYDOWN and stare == "final":
+            if eveniment.key == pygame.K_1:
+                DURATA = 10
+                salveaza_durata(DURATA)
+            if eveniment.key == pygame.K_2:
+                DURATA = 15
+                salveaza_durata(DURATA)
+            if eveniment.key == pygame.K_3:
+                DURATA = 30
+                salveaza_durata(DURATA)
+
+    ramas = DURATA - (time.time() - start)
+    if stare == "joc" and ramas <= 0:
+        stare = "final"
+        top.append((scor, nume))
+        top.sort(reverse=True)
+        top = top[:5]
+        salveaza_top(top)
+
+    ecran.fill((25, 30, 60))
+    if stare == "joc":
+        pygame.draw.circle(ecran, (255, 80, 80), tinta.center, 30)
+        pygame.draw.circle(ecran, (255, 255, 255), tinta.center, 18)
+        pygame.draw.circle(ecran, (255, 80, 80), tinta.center, 8)
+        scrie("Scor: " + str(scor), 15, 15)
+        scrie("Timp: " + str(int(ramas) + 1), LATIME - 130, 15)
+        if len(top) > 0:
+            scrie("Record: " + str(top[0][0]), LATIME // 2, 15, (255, 220, 0), None, True)
+    else:
+        scrie("TIMPUL A TRECUT!", LATIME // 2, 30, (255, 120, 120), font_mare, True)
+        scrie("Scorul tau: " + str(scor), LATIME // 2, 110, (255, 255, 255), None, True)
+        scrie("TOP 5", LATIME // 2, 160, (255, 220, 0), None, True)
+        loc = 1
+        for s, n in top:
+            scrie(str(loc) + ". " + n + " - " + str(s), LATIME // 2, 160 + loc * 35, (220, 220, 220), None, True)
+            loc += 1
+        scrie("1 / 2 / 3 = durata 10 / 15 / 30 s (acum: " + str(DURATA) + " s)", LATIME // 2, INALTIME - 80, (200, 200, 200), None, True)
+        scrie("R = joc nou", LATIME // 2, INALTIME - 40, (120, 255, 120), None, True)
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** pe ecranul final apare „1 / 2 / 3 = durata 10 / 15 / 30 s (acum: …)”. Apeși o tastă, iar durata se schimbă și se scrie în `setari.json`; următoarea rundă (și următoarea pornire a jocului) o folosește. Dacă fișierul lipsește sau este stricat, `citeste_durata` returnează 15, fără erori.
+
+### 3. Șterge topul
+```python
+import random
+import time
+import pygame
+
+FISIER = "top_click.txt"
+
+def citeste_top():
+    top = []
+    try:
+        with open(FISIER, "r") as f:
+            for linie in f:
+                parti = linie.strip().split(",")
+                try:
+                    top.append((int(parti[1]), parti[0]))
+                except (ValueError, IndexError):
+                    pass
+    except FileNotFoundError:
+        pass
+    top.sort(reverse=True)
+    return top[:5]
+
+def salveaza_top(top):
+    with open(FISIER, "w") as f:
+        for scor, nume in top:
+            f.write(nume + "," + str(scor) + "\n")
+
+nume = input("Numele tau (fara diacritice): ").strip().replace(",", " ")
+if nume == "":
+    nume = "Anonim"
+
+pygame.init()
+LATIME = 600
+INALTIME = 450
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Click rapid")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 36)
+font_mare = pygame.font.Font(None, 80)
+
+DURATA = 15
+tinta = pygame.Rect(0, 0, 60, 60)
+
+def muta_tinta():
+    tinta.x = random.randint(20, LATIME - 80)
+    tinta.y = random.randint(70, INALTIME - 80)
+
+def scrie(text, x, y, culoare=(255, 255, 255), fnt=None, centrat=False):
+    if fnt is None:
+        fnt = font
+    imagine = fnt.render(text, True, culoare)
+    if centrat:
+        x = x - imagine.get_width() // 2
+    ecran.blit(imagine, (x, y))
+
+top = citeste_top()
+stare = "joc"
+confirma = False
+scor = 0
+start = time.time()
+muta_tinta()
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.MOUSEBUTTONDOWN and stare == "joc":
+            if tinta.collidepoint(eveniment.pos):
+                scor += 1
+                muta_tinta()
+        if eveniment.type == pygame.KEYDOWN and eveniment.key == pygame.K_r and stare == "final":
+            stare = "joc"
+            confirma = False
+            scor = 0
+            start = time.time()
+            muta_tinta()
+        if eveniment.type == pygame.KEYDOWN and eveniment.key == pygame.K_d and stare == "final":
+            if confirma:
+                top = []
+                salveaza_top(top)
+                confirma = False
+            else:
+                confirma = True
+
+    ramas = DURATA - (time.time() - start)
+    if stare == "joc" and ramas <= 0:
+        stare = "final"
+        top.append((scor, nume))
+        top.sort(reverse=True)
+        top = top[:5]
+        salveaza_top(top)
+
+    ecran.fill((25, 30, 60))
+    if stare == "joc":
+        pygame.draw.circle(ecran, (255, 80, 80), tinta.center, 30)
+        pygame.draw.circle(ecran, (255, 255, 255), tinta.center, 18)
+        pygame.draw.circle(ecran, (255, 80, 80), tinta.center, 8)
+        scrie("Scor: " + str(scor), 15, 15)
+        scrie("Timp: " + str(int(ramas) + 1), LATIME - 130, 15)
+        if len(top) > 0:
+            scrie("Record: " + str(top[0][0]), LATIME // 2, 15, (255, 220, 0), None, True)
+    else:
+        scrie("TIMPUL A TRECUT!", LATIME // 2, 30, (255, 120, 120), font_mare, True)
+        scrie("Scorul tau: " + str(scor), LATIME // 2, 110, (255, 255, 255), None, True)
+        scrie("TOP 5", LATIME // 2, 160, (255, 220, 0), None, True)
+        loc = 1
+        for s, n in top:
+            scrie(str(loc) + ". " + n + " - " + str(s), LATIME // 2, 160 + loc * 35, (220, 220, 220), None, True)
+            loc += 1
+        if confirma:
+            scrie("Apasa D inca o data ca sa stergi topul", LATIME // 2, INALTIME - 80, (255, 120, 120), None, True)
+        else:
+            scrie("D = sterge topul", LATIME // 2, INALTIME - 80, (200, 200, 200), None, True)
+        scrie("R = joc nou", LATIME // 2, INALTIME - 40, (120, 255, 120), None, True)
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** pe ecranul final apare „D = sterge topul”. La prima apăsare pe **D** mesajul devine „Apasa D inca o data ca sa stergi topul”; la a doua, topul se golește și fișierul rămâne gol. Dacă apeși **R** între timp, confirmarea se anulează (`confirma = False`).
+
+### 4. Statistici
+```python
+import json
+import random
+import time
+import pygame
+
+FISIER = "top_click.txt"
+FISIER_STAT = "statistici.json"
+
+def citeste_top():
+    top = []
+    try:
+        with open(FISIER, "r") as f:
+            for linie in f:
+                parti = linie.strip().split(",")
+                try:
+                    top.append((int(parti[1]), parti[0]))
+                except (ValueError, IndexError):
+                    pass
+    except FileNotFoundError:
+        pass
+    top.sort(reverse=True)
+    return top[:5]
+
+def salveaza_top(top):
+    with open(FISIER, "w") as f:
+        for scor, nume in top:
+            f.write(nume + "," + str(scor) + "\n")
+
+def citeste_runde():
+    try:
+        with open(FISIER_STAT, "r") as f:
+            date = json.load(f)
+        return date["runde"]
+    except (FileNotFoundError, ValueError, KeyError):
+        return 0
+
+def salveaza_runde(runde):
+    with open(FISIER_STAT, "w") as f:
+        json.dump({"runde": runde}, f)
+
+nume = input("Numele tau (fara diacritice): ").strip().replace(",", " ")
+if nume == "":
+    nume = "Anonim"
+
+pygame.init()
+LATIME = 600
+INALTIME = 450
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Click rapid")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 36)
+font_mare = pygame.font.Font(None, 80)
+
+DURATA = 15
+tinta = pygame.Rect(0, 0, 60, 60)
+
+def muta_tinta():
+    tinta.x = random.randint(20, LATIME - 80)
+    tinta.y = random.randint(70, INALTIME - 80)
+
+def scrie(text, x, y, culoare=(255, 255, 255), fnt=None, centrat=False):
+    if fnt is None:
+        fnt = font
+    imagine = fnt.render(text, True, culoare)
+    if centrat:
+        x = x - imagine.get_width() // 2
+    ecran.blit(imagine, (x, y))
+
+top = citeste_top()
+runde = citeste_runde()
+stare = "joc"
+scor = 0
+start = time.time()
+muta_tinta()
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.MOUSEBUTTONDOWN and stare == "joc":
+            if tinta.collidepoint(eveniment.pos):
+                scor += 1
+                muta_tinta()
+        if eveniment.type == pygame.KEYDOWN and eveniment.key == pygame.K_r and stare == "final":
+            stare = "joc"
+            scor = 0
+            start = time.time()
+            muta_tinta()
+
+    ramas = DURATA - (time.time() - start)
+    if stare == "joc" and ramas <= 0:
+        stare = "final"
+        top.append((scor, nume))
+        top.sort(reverse=True)
+        top = top[:5]
+        salveaza_top(top)
+        runde += 1
+        salveaza_runde(runde)
+
+    ecran.fill((25, 30, 60))
+    if stare == "joc":
+        pygame.draw.circle(ecran, (255, 80, 80), tinta.center, 30)
+        pygame.draw.circle(ecran, (255, 255, 255), tinta.center, 18)
+        pygame.draw.circle(ecran, (255, 80, 80), tinta.center, 8)
+        scrie("Scor: " + str(scor), 15, 15)
+        scrie("Timp: " + str(int(ramas) + 1), LATIME - 130, 15)
+        if len(top) > 0:
+            scrie("Record: " + str(top[0][0]), LATIME // 2, 15, (255, 220, 0), None, True)
+    else:
+        scrie("TIMPUL A TRECUT!", LATIME // 2, 30, (255, 120, 120), font_mare, True)
+        scrie("Scorul tau: " + str(scor), LATIME // 2, 110, (255, 255, 255), None, True)
+        scrie("TOP 5", LATIME // 2, 160, (255, 220, 0), None, True)
+        loc = 1
+        for s, n in top:
+            scrie(str(loc) + ". " + n + " - " + str(s), LATIME // 2, 160 + loc * 35, (220, 220, 220), None, True)
+            loc += 1
+        scrie("Runde jucate: " + str(runde), LATIME // 2, INALTIME - 80, (200, 200, 200), None, True)
+        scrie("R = joc nou", LATIME // 2, INALTIME - 40, (120, 255, 120), None, True)
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** pe ecranul final apare „Runde jucate: n”. Numărul crește la fiecare rundă terminată și se păstrează în `statistici.json`, deci rămâne și după ce închizi jocul. Citirea este protejată cu `try / except`: dacă fișierul lipsește, pornești de la 0.
+
+---
 ## Ce urmează — Lecția 9
 **Proiect final: jocul meu**: începem să construim un joc complet, cu toate lucrurile învățate în acest modul.

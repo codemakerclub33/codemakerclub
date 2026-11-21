@@ -59,7 +59,7 @@ La finalul orei ai un pian cu 4 clape care cântă **Do, Re, Mi, Fa**. Un tablou
 
 **Gata când:**  
 - [ ] Toate firele sunt conectate exact ca în tabel  
-- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
+- [ ] Am verificat de două ori GND și pinii înainte să pornesc simularea  
 
 ### 3) Frecvențele notelor
 
@@ -202,9 +202,10 @@ void loop() {
 ## Greșeli frecvente
 1. **O notă nu sună** — butonul respectiv nu e la pinul din listă sau nu e legat la GND.  
 2. **Sună toate la fel** — ai pus aceeași frecvență în `note`.  
-3. **Eroare „out of range”** — ai folosit `note[4]` într-o listă cu 4 elemente (indicii sunt 0–3).  
+3. **Sunete ciudate** — ai folosit `note[4]` într-o listă cu 4 elemente (indicii sunt 0–3). Arduino nu dă eroare: citește ce găsește în memorie.  
 4. **Nota nu se oprește** — lipsește `noTone` când niciun buton nu e apăsat.  
 5. **Listele au lungimi diferite** — `butoane` și `note` trebuie să aibă același număr de elemente.
+6. **Sunet amestecat** — ai apăsat două clape deodată; Arduino cântă o singură notă, așa că apasă o singură clapă o dată.  
 
 ---
 
@@ -232,7 +233,7 @@ void loop() {
 
 Pianul tău crește.
 
-- [ ] A cincea clapă (Sol, 392 Hz) pe pinul 7
+- [ ] A cincea clapă (încă un buton): Sol, 392 Hz, pe pinul 7
 - [ ] Schimbi melodia: scrii în `melodie[]` „Mary had a little lamb” sau o melodie care îți place
 
 ## Recapitulare pe scurt

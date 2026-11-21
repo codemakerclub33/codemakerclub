@@ -238,7 +238,7 @@ void loop() {
 }
 ```
 
-La modul 3, potențiometrul reglează **cât de repede** se schimbă culorile.
+La modul 3, potențiometrul reglează **cât de repede** se schimbă culorile. Atenție: `delay` poate dura până la 600 ms, deci **ține apăsat** butonul de mod până se schimbă modul.
 
 **Gata când:**  
 - [ ] Codul complet se compilează fără erori  

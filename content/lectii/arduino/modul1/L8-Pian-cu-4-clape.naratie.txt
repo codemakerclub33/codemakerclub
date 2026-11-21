@@ -1,6 +1,6 @@
 Lecția opt. Pianul cu patru clape.
 
-Astăzi faci un pian mic: patru butoane, fiecare cu altă notă, și înveți tablouri, numite array, ca să cânți melodii. Proiectul se numește Pianul cu 4 clape. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero opt.
+Astăzi faci un pian mic: patru butoane, fiecare cu altă notă, și înveți tablouri, numite array, ca să cânți melodii. Proiectul se numește Pianul cu patru clape. Numele circuitului este: Prenume, linie jos, Nume, linie jos, A unu, linie jos, L zero opt.
 
 Ce facem azi. La final ai un pian cu patru clape care cântă Do, Re, Mi și Fa. Un tablou este o listă cu nume. În loc de patru variabile separate ai una singură, cu patru valori. Ajută la tot: note, culori, pini, scoruri.
 
@@ -16,9 +16,9 @@ Al patrulea pas. Varianta cu tablouri, pentru Minim. Faci un tablou cu pinii but
 
 Al cincilea pas, pentru Complet. Melodie automată. Al cincilea buton cântă primele note din Oda bucuriei, cu o listă de note și o listă de durate, iar for o parcurge nota cu nota.
 
-Greșeli frecvente. O notă nu sună: butonul nu este la pinul din listă sau nu este legat la GND. Sună toate la fel: ai pus aceeași frecvență în listă. Eroare out of range: ai folosit elementul patru într-o listă cu patru elemente, iar indicii sunt de la zero la trei. Nota nu se oprește: lipsește no Tone când niciun buton nu este apăsat. Listele au lungimi diferite: lista butoanelor și lista notelor trebuie să aibă același număr de elemente.
+Greșeli frecvente. O notă nu sună: butonul nu este la pinul din listă sau nu este legat la GND. Sună toate la fel: ai pus aceeași frecvență în listă. Sunete ciudate: ai folosit elementul patru într-o listă cu patru elemente, iar indicii sunt de la zero la trei. Arduino nu dă eroare, ci citește ce găsește în memorie. Nota nu se oprește: lipsește no Tone când niciun buton nu este apăsat. Sunet amestecat: ai apăsat două clape deodată, iar Arduino cântă o singură notă. Listele au lungimi diferite: lista butoanelor și lista notelor trebuie să aibă același număr de elemente.
 
-Proiectul de azi. Pianul cu 4 clape. Minim înseamnă patru clape. Complet înseamnă minim, plus melodia automată.
+Proiectul de azi. Pianul cu patru clape. Minim înseamnă patru clape. Complet înseamnă minim, plus melodia automată.
 
 Provocare, trei stele. A cincea clapă și melodia ta. Adaugi a cincea clapă, Sol, cu trei sute nouăzeci și doi de herți, pe pinul șapte. Apoi schimbi melodia automată cu una care îți place.
 

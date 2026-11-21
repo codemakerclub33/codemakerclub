@@ -578,7 +578,6 @@ Dacă ai un kit Arduino, reia proiectul tău pe placa reală. Atenție la alimen
 - Ce senzor nou ai vrea să încerci?  
 - Cum ai explica Arduino unui prieten, într-o frază?
 - De ce are consola o variabilă `somn`?  
-- Care a fost cea mai grea problemă din proiectul tău?  
 
 ## Temă
 **Felicitări, ești Arduino Creator!** Scrie 3 idei de proiecte pe care vrei să le faci după curs și păstrează lista.

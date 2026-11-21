@@ -1,21 +1,31 @@
-Lecția zece din Modulul patru. Expoziția și verificarea finală.
+Lecția zece din Modulul patru. Expoziția.
 
-Aceasta este ultima oră din cursul de Python. Îți prezinți jocul, vezi jocurile colegilor și faci verificarea finală. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P patru, linie jos, L zece, punct P Y.
+Aceasta este ultima oră din cursul de Python. Îți prezinți jocul, vezi jocurile colegilor și faci verificarea finală. Proiectul se numește Expoziția. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P patru, linie jos, L zece, punct P Y.
 
-Obiectivul. La final ai un joc finisat, cu ecran de reguli, credite și tranziții, l-ai prezentat colegilor, ai primit și ai dat păreri și ai rezolvat testul final al modulului și al cursului. Minim: jocul tău funcționează și îl prezinți în două minute. Complet: minim, plus ecran de reguli, credite, feedback dat altor colegi și testul final.
+Ce facem azi. La final ai un joc finisat, cu ecran de reguli, credite și tranziții, l-ai prezentat colegilor, ai primit și ai dat păreri, iar apoi ai rezolvat testul final al modulului și al cursului. Un joc bun este terminat și arătat altora. Când îl prezinți, înveți să explici ce ai făcut, să asculți păreri și să îți îmbunătățești munca. Exact așa lucrează și programatorii adevărați.
 
-Primul pas. Retușurile care fac diferența. Un ecran de reguli. O tranziție cu fade, adică ecranul se întunecă încet. O captură de ecran, la o tastă. Un contor de cadre pe secundă, util la depanare. Creditele care urcă. Un mesaj Record nou care clipește. Setări salvate. O fișă a jocului, cu titlu și autor. Și cod curat, cu constante cu nume.
+Instrucțiuni noi azi. O singură funcție, schimbă stare, schimbă ecranul, cu tranziție. Set alpha face o suprafață mai mult sau mai puțin transparentă, iar așa se face tranziția fade. Pygame punct image punct save salvează o captură de ecran. Get fps spune câte cadre pe secundă rulează jocul. Textul din credite urcă dacă îl muți în sus la fiecare cadru. Iar o constantă cu nume, de exemplu viteza navei, înlocuiește un număr magic.
 
-Al doilea pas. Cadrul expoziției. Este un cadru în care pui jocul tău: meniu cu butoane, Joacă, Reguli, Credite și Ieșire, tranziții, captură de ecran cu F douăsprezece și contor de cadre cu F trei.
+Primul pas. Retușurile care fac diferența. Un ecran de reguli. O tranziție cu fade, adică ecranul se întunecă încet. O captură de ecran, la o tastă. Un contor de cadre pe secundă, util la depanare. Creditele care urcă. O fișă a jocului, cu titlu și autor. Și cod curat, cu constante cu nume. Mesajul Record nou care clipește și setările salvate le găsești la exemplele pentru acasă.
 
-Al treilea pas. Expoziția de jocuri. Pregătești jocul pentru prezentare: îl testezi, îl exersezi și îl prezinți în două minute. Spui cum se numește, ce face, ce a fost greu și ce ai îmbunătăți. Apoi te uiți la jocurile colegilor și dai feedback concret.
+Al doilea pas. Cadrul expoziției. Este un cadru în care pui jocul tău: meniu cu butoane, Joacă, Reguli, Credite și Ieșire, tranziții, captură de ecran cu F douăsprezece și contor de cadre cu F trei. Înlocuiești mini-jocul cu jocul tău.
+
+Al treilea pas. Expoziția de jocuri. Pregătești jocul pentru prezentare: îl testezi, îl exersezi și îl prezinți în două minute. Spui cum se numește, ce face, ce ai inventat tu și ce a fost greu. Apoi te uiți la jocurile colegilor și dai feedback concret.
 
 Al patrulea pas. Verificarea finală. Rezolvi testul, fără să ghicești, gândindu-te la fiecare răspuns.
 
-Greșeli frecvente. Jocul nu a fost testat înainte: verifică totul. Prezentare fără exersare: repet-o măcar o dată. Feedback vag: fii concret. Răspunsuri la întâmplare la test: gândește-te, nu ghici.
+Greșeli frecvente. Jocul se oprește la meniu: starea nu se schimbă. Fade-ul îngheață jocul: îl folosești doar la schimbarea stării. Eroare la captură: salvezi programul într-un folder al tău. Eroare de cheie lipsă: folosești get cu o valoare implicită. Textul cu diacritice apare ca pătrățele: scrii textele din joc fără diacritice.
 
-Proiectul de azi. Jocul meu, finisat. Minim înseamnă joc funcțional și prezentare. Complet înseamnă și reguli, credite și feedback.
+Proiectul de azi. Expoziția. Minim înseamnă un joc care funcționează și o prezentare de două minute. Complet înseamnă și ecran de reguli, credite, record salvat, captură de ecran, fișa jocului, prezentare și feedback pentru colegi.
+
+Provocare, trei stele. Expoziția, versiunea completă. Doar dacă ai terminat varianta completă. Salvezi recordul într-un fișier, cu try și except. Steaua devine mai mică la fiecare cinci puncte, dar nu sub o limită. Tasta F, din meniu, deschide un ecran cu fișa jocului, iar escape te întoarce. Și pe fundalul meniului curg stele.
 
 Recapitulare. Un joc finisat are meniu, reguli, credite, tranziții și record salvat. Constantele cu nume fac codul mai clar. Capturile de ecran și fișa jocului ajută la prezentare. Când arăți jocul altora, afli ce merge bine și ce poate fi îmbunătățit.
 
-Felicitări, ai terminat cursul de Python. Ai pornit de la un print și ai ajuns la jocuri adevărate. Continuă să construiești.
+Verificare Modul patru. Răspunde pe foaie la cele opt întrebări: ce face flip, la ce folosește tick, diferența dintre evenimentul de tastă și tastele ținute apăsate, ce întoarce colliderect, ce face clamp, ce înseamnă self, diferența dintre w și a la fișiere și de ce parcurgem o copie a listei. Apoi bifează în autoevaluare ce poți face singur.
+
+Verificare finală, cursul de Python. Răspunde pe foaie la cele zece întrebări, din toate cele patru module: operațiile cu numere și texte, lista și dicționarul, range, diferența dintre print și return, o funcție care dublează, unghiul triunghiului, clasa și obiectul, try și except și pașii buclei unui joc. Apoi bifează autoevaluarea cursului.
+
+Ce urmează. Felicitări, ai terminat cele patru module ale cursului de Python. Poți continua să-ți îmbunătățești jocurile, să înveți despre sunete, imagini și animații în Pygame, să încerci alte cursuri din Code Maker Club, de exemplu Blender, și să-ți ții un portofoliu.
+
+Felicitări, ai pornit de la un print și ai ajuns la jocuri adevărate. Continuă să construiești.

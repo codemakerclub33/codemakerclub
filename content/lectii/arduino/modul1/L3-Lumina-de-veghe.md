@@ -58,7 +58,7 @@ Butonul din Tinkercad are **4 picioare**. Cele din aceeași parte sunt legate î
 
 **Gata când:**  
 - [ ] Toate firele sunt conectate exact ca în tabel  
-- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
+- [ ] Am verificat de două ori GND și pinii înainte să pornesc simularea  
 
 ### 3) Ce înseamnă `INPUT_PULLUP`
 Un pin de intrare **lăsat liber** poate „citi” valori aleatorii. Cu `INPUT_PULLUP`, Arduino îl ține pe **HIGH** (liniște) și butonul îl trage la **GND**:

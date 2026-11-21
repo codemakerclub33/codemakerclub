@@ -57,7 +57,7 @@ La finalul orei ai o sonerie care scoate un sunet când apeși un buton. Sunetul
 
 **Gata când:**  
 - [ ] Toate firele sunt conectate exact ca în tabel  
-- [ ] Am verificat de două ori GND și 5V înainte să pornesc simularea  
+- [ ] Am verificat de două ori GND și pinii înainte să pornesc simularea  
 
 ### 3) Ce face `tone`
 `tone(pin, frecventa, durata)` trimite un sunet:
@@ -158,7 +158,7 @@ void loop() {
 1. **Nu sună nimic** — buzzerul nu e la pin 8 și GND, sau n-ai pornit simularea.  
 2. **Sună tot timpul** — ai uitat `noTone` pe ramura `else`.  
 3. **Sunet urât / scârțâit** — frecvențe prea mari sau schimbări prea rapide.  
-4. **Se aude în buclă** — fără `delay(300)` după `dingDong()`, soneria repornește dacă ții apăsat.  
+4. **Soneriile se lipesc una de alta** — dacă ții butonul apăsat, soneria repornește imediat; `delay(300)` după `dingDong()` pune o mică pauză între două „ding-dong”.  
 5. **Același pin pentru `tone` și pentru PWM** — `tone` ocupă un timer; evită `analogWrite` pe pinii 3 și 11 în același timp.
 
 ---

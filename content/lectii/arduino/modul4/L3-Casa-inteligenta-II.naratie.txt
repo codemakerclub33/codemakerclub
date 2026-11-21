@@ -14,7 +14,7 @@ Al treilea pas. Minim. Butonul armează și dezarmează alarma, cu tehnica front
 
 Al patrulea pas. Ce adăugăm la program. Patru funcții noi: alarma, ușa, paginile și mesajul de alarmă.
 
-Al cincilea pas, pentru Complet. Codul complet, părțile întâi și a doua împreună. Loop cheamă toate funcțiile, fără delay lung, deci toate sistemele merg în paralel. Ușa folosește aceeași idee ca bariera din Modulul trei: o stare și millis pentru cele trei secunde.
+Al cincilea pas, pentru Complet. Codul complet, părțile întâi și a doua împreună. Loop cheamă toate funcțiile, fără delay lung, deci toate sistemele merg în paralel. Ușa folosește aceeași idee ca bariera din Modulul trei: o stare și millis pentru cele trei secunde. Partea întâi apare aici simplificată: două pagini pe ecran și ventilator doar după temperatură. Modul manual și alerta de căldură din lecția doi le poți adăuga tu, ca funcții.
 
 Al șaselea pas. Test integrat. Noaptea și cald: lampa aprinsă și ventilatorul pornit. Armezi și miști obiectul: sirenă și mesajul de intrus. Dezarmezi: liniște și LED-ul de alarmă stins. Butonul de pagină schimbă informația de pe ecran. Butonul ușii mută servo-ul la nouăzeci de grade și, după trei secunde, îl readuce.
 

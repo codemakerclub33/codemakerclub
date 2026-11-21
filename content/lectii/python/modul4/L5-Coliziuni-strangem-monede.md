@@ -1,4 +1,5 @@
-# LECȚIA 5 — Coliziuni: strângem monede
+# LECȚIA 5 — Strânge monedele
+### Coliziuni
 **Modulul 4 · Jocuri cu Pygame · 2 ore**  
 **Code Maker Club · Game Creator**
 
@@ -7,13 +8,13 @@
 
 ---
 
-## Obiectiv
-La finalul orei verifici dacă două dreptunghiuri se ating (`colliderect`), dacă un punct este într-un dreptunghi (`collidepoint`), cauți într-o listă (`collidelist`), blochezi personajul la pereți, verifici coliziunea dintre două cercuri, strângi obiecte dintr-o listă și construiești un joc cu monede și timp.  
-**Minim:** un personaj care ia o monedă și scorul crește.  
-**Ținta orei (Complet):** + pereți, mai multe monede și jocul cu timp din mini-proiect.
+## Ce facem azi
 
-## De ce contează
-Fără coliziuni, un joc nu are reguli: personajul ar trece prin pereți, ar ignora monedele și inamicii. Coliziunea este momentul în care „se întâmplă ceva”: un punct, o viață pierdută, un nivel terminat.
+La final verifici dacă două dreptunghiuri se ating (`colliderect`), dacă un punct este într-un dreptunghi (`collidepoint`), cauți într-o listă (`collidelist`), blochezi personajul la pereți, strângi obiecte dintr-o listă și construiești un joc cu monede și timp.
+
+Fără coliziuni, un joc nu are reguli: personajul ar trece prin pereți, ar ignora monedele și inamicii. Coliziunea este momentul în care „se întâmplă ceva”: un punct, o viață pierdută, un nivel terminat. Calculatorul doar verifică dacă două obiecte **se suprapun**.
+
+La final ai **„Strânge monedele”**: un mic labirint cu monede, scor și timp.
 
 ---
 
@@ -23,11 +24,25 @@ Fără coliziuni, un joc nu are reguli: personajul ar trece prin pereți, ar ign
 |--------|----------|
 | 0–10 | Recapitulare L4 |
 | 10–30 | `colliderect` și `collidepoint` (**Exemplele 1–2**) |
-| 30–55 | Prima monedă, mai multe monede (**Exemplele 3–5**) |
-| 55–75 | Pereți (**Exemplul 6**) |
-| 75–95 | Cercuri, liste, imunitate (**Exemplele 7–9**) |
-| 95–118 | Mini-proiect (**Exemplul 10**) |
+| 30–55 | Prima monedă, mai multe monede (**Exemplele 3–4**) |
+| 55–75 | Pereți (**Exemplul 5**) |
+| 75–95 | Căutăm în listă, imunitate (**Exemplele 6–7**) |
+| 95–118 | Mini-proiect: Strânge monedele (**Exemplul 8**) |
 | 118–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `a.colliderect(b)` | Două dreptunghiuri se suprapun (doar marginile atinse nu contează) | `if jucator.colliderect(moneda):` |
+| `rect.collidepoint(x, y)` | Un punct este în interiorul dreptunghiului (mouse pe buton) | `buton.collidepoint(eveniment.pos)` |
+| `rect.collidelist(lista)` | Numărul primului `Rect` atins din listă, sau `-1` | `if jucator.collidelist(pereti) != -1:` |
+| `rect.collidelistall(lista)` | Lista numerelor tuturor celor atinse | `[1, 3]` |
+| `monede[:] = ramase` | Schimbă lista existentă (scoate monedele luate) | `monede[:] = ramase` |
+| `acum - ultima_lovitura >= IMUNITATE` | Imunitate: loviturile se numără doar la o pauză | `ultima_lovitura = acum` |
+| `time.time()` | Secundele trecute (pentru cronometru) | `durata = time.time() - start` |
 
 ---
 
@@ -36,9 +51,6 @@ Fără coliziuni, un joc nu are reguli: personajul ar trece prin pereți, ar ign
 - Tastatura: `KEYDOWN` pentru o singură dată, `get_pressed()` pentru mers continuu.
 - `Rect`: `left`, `right`, `top`, `bottom`, `center`; `clamp_ip(zona)` ține un obiect în ecran.
 - Gloanțele sunt `Rect`-uri într-o listă; cele ieșite din ecran se șterg.
-
-**Încearcă tu (3 min)**  
-- [ ] Creează un `Rect(10, 10, 50, 50)` și afișează `right` și `bottom`  
 
 ---
 
@@ -127,53 +139,7 @@ pygame.quit()
 
 ## 3. Monede
 
-### Exemplul 3 — Atingem un obstacol
-
-```python
-import pygame
-
-pygame.init()
-ecran = pygame.display.set_mode((600, 400))
-ceas = pygame.time.Clock()
-zona = ecran.get_rect()
-
-jucator = pygame.Rect(50, 170, 40, 40)
-obstacol = pygame.Rect(300, 150, 100, 100)
-
-ruleaza = True
-while ruleaza:
-    for eveniment in pygame.event.get():
-        if eveniment.type == pygame.QUIT:
-            ruleaza = False
-
-    taste = pygame.key.get_pressed()
-    if taste[pygame.K_LEFT]:
-        jucator.x -= 5
-    if taste[pygame.K_RIGHT]:
-        jucator.x += 5
-    if taste[pygame.K_UP]:
-        jucator.y -= 5
-    if taste[pygame.K_DOWN]:
-        jucator.y += 5
-    jucator.clamp_ip(zona)
-
-    if jucator.colliderect(obstacol):
-        culoare_obstacol = (255, 50, 50)
-    else:
-        culoare_obstacol = (80, 80, 80)
-
-    ecran.fill((230, 230, 255))
-    pygame.draw.rect(ecran, culoare_obstacol, obstacol)
-    pygame.draw.rect(ecran, (0, 150, 80), jucator)
-    pygame.display.flip()
-    ceas.tick(60)
-
-pygame.quit()
-```
-
-**Ce vezi pe ecran:** un **pătrat verde** (tu) și un **obstacol gri**. Cât timp nu vă atingeți, obstacolul rămâne gri. Când pătratul verde **îl atinge**, obstacolul devine **roșu**. Când te îndepărtezi, redevine gri.
-
-### Exemplul 4 — Prima monedă
+### Exemplul 3 — Prima monedă
 
 ```python
 import random
@@ -226,7 +192,7 @@ pygame.quit()
 
 **Ce vezi pe ecran:** pe fundal albastru închis, un **pătrat verde** (tu) și o **monedă aurie** într-un loc la întâmplare. Cu săgețile te duci la monedă: când o atingi, **scorul crește** cu 1, iar moneda **apare în alt loc**. Scorul este scris sus, în stânga.
 
-### Exemplul 5 — Mai multe monede
+### Exemplul 4 — Mai multe monede
 
 ```python
 import random
@@ -301,16 +267,15 @@ Monede la inceput: 10
 Folosim lista **ramase**, ca în lecția trecută: păstrăm doar monedele care **nu au fost luate**. Dacă o monedă este atinsă, nu o mai punem în noua listă.
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 3** (Atingem un obstacol)  
-- [ ] Am scris și am rulat **Exemplul 4** (Prima monedă)  
-- [ ] Am scris și am rulat **Exemplul 5** (Mai multe monede)  
+- [ ] Am scris și am rulat **Exemplul 3** (Prima monedă)  
+- [ ] Am scris și am rulat **Exemplul 4** (Mai multe monede)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 4. Pereți
 
-### Exemplul 6 — Nu trecem prin pereți
+### Exemplul 5 — Nu trecem prin pereți
 
 ```python
 import pygame
@@ -378,39 +343,14 @@ Mutăm și verificăm **separat** pe `x` și pe `y`: așa poți **aluneca** pe l
 `jucator.collidelist(lista)` caută în lista de `Rect`-uri un obiect care se atinge de `jucator` și returnează **numărul lui** din listă, sau **-1** dacă nu atinge nimic.
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 6** (Nu trecem prin pereți)  
+- [ ] Am scris și am rulat **Exemplul 5** (Nu trecem prin pereți)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## 5. Cercuri, liste, imunitate
+## 5. Liste și imunitate
 
-### Exemplul 7 — Coliziune între cercuri
-
-```python
-import math
-
-def cercuri_se_ating(x1, y1, r1, x2, y2, r2):
-    distanta = math.hypot(x1 - x2, y1 - y2)
-    return distanta < r1 + r2
-
-print(cercuri_se_ating(0, 0, 10, 15, 0, 10))
-print(cercuri_se_ating(0, 0, 10, 30, 0, 10))
-print(cercuri_se_ating(0, 0, 10, 12, 16, 10))
-print(cercuri_se_ating(100, 100, 30, 100, 100, 5))
-```
-
-**Ieșire:**
-```text
-True
-False
-False
-True
-```
-
-Pentru obiecte rotunde, dreptunghiurile nu sunt tocmai potrivite (colțurile lor „ating” înainte ca cercurile să se atingă). Două cercuri se ating dacă **distanța dintre centre** este mai mică decât **suma razelor**. `math.hypot(a, b)` calculează `radical din (a² + b²)`, adică distanța. Rezultatele: în primul caz distanța este 15 și razele însumează 20: **se ating**. În al doilea, 30 față de 20: nu. În al treilea, distanța este exact 20: nu se **suprapun** (doar se ating în marginea lor). În al patrulea, cercul mic este în interiorul celui mare: se ating.
-
-### Exemplul 8 — Căutăm în listă
+### Exemplul 6 — Căutăm în listă
 
 ```python
 import pygame
@@ -445,7 +385,7 @@ Dupa mutare, toti: []
 
 În primul caz `jucator` atinge obiectul 1 (de la 100) și obiectul 3 (de la 120). Când îl mutăm la `x = 300`, nu mai atinge nimic.
 
-### Exemplul 9 — Imunitate după o lovitură
+### Exemplul 7 — Imunitate după o lovitură
 
 ```python
 import pygame
@@ -524,16 +464,15 @@ True
 De ce avem nevoie de **imunitate**? Fără ea, un contact de o secundă ar fi detectat în **60 de cadre** la rând, iar cele trei vieți ar dispărea instantaneu. Funcția `poate_fi_lovit` verifică dacă au trecut cel puțin 1500 ms de la ultima lovitură (ca la pauza între focuri).
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 7** (Coliziune între cercuri)  
-- [ ] Am scris și am rulat **Exemplul 8** (Căutăm în listă)  
-- [ ] Am scris și am rulat **Exemplul 9** (Imunitate după o lovitură)  
+- [ ] Am scris și am rulat **Exemplul 6** (Căutăm în listă)  
+- [ ] Am scris și am rulat **Exemplul 7** (Imunitate după o lovitură)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 6. Mini-proiect
 
-### Exemplul 10 — „Strânge monedele”
+### Exemplul 8 — „Strânge monedele”
 
 ```python
 import random
@@ -654,75 +593,47 @@ Ce este nou aici:
 - cheia `stare["castigat"]` oprește mișcarea după victorie.
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** („Strânge monedele”)  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+- [ ] Am scris și am rulat **Exemplul 8** („Strânge monedele”)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Strânge monedele”
 
-### Exercițiul A — „Strânge monedele” (obligatoriu)
-Pornește de la Exemplul 10 și fă jocul **al tău**:
+### Minim vs Complet
+
+| Nivel | Ce trebuie să ai |
+|-------|------------------|
+| **Minim** | Un personaj care ia o monedă și scorul crește |
+| **Complet** | Minim + pereți, mai multe monede și jocul cu timp din mini-proiect |
+
+### Pasul 1 — Minim
+Scrie un program cu un pătrat pe care îl conduci și o monedă. Când o atingi, scorul crește cu 1 și moneda apare în alt loc.
+
+### Pasul 2 — Complet
+Pornește de la Exemplul 8 și fă jocul **al tău**:
 1. **hărți noi**: desenează-ți propriul labirint (cel puțin 8 pereți);
 2. **monede de două feluri**: aurii (+1) și albastre (+3), ultimele mai rare;
-3. **un inamic** care patrulează (ca în Exemplul 9) și te face să pierzi timp sau vieți;
+3. **un inamic** care patrulează (ca în Exemplul 7) și te face să pierzi timp sau vieți;
 4. **cel mai bun timp** păstrat între runde (cât timp programul rămâne deschis);
 5. păstrează funcțiile `pozitie_libera` și `joc_nou`.
-
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
-
-```python
-import pygame
-
-a = pygame.Rect(0, 0, 40, 40)
-b = pygame.Rect(40, 0, 40, 40)
-c = pygame.Rect(39, 39, 10, 10)
-print(a.colliderect(b))
-print(a.colliderect(c))
-print(a.collidelist([b, c]))
-print(a.collidelistall([b, c]))
-```
-
-### Exercițiul C — Butonul de joc
-Desenează trei **butoane** („Joacă”, „Reguli”, „Ieși”). Când treci cu mouse-ul peste ele, își schimbă culoarea, iar când dai click, se afișează în Thonny numele butonului.
-
-### Exercițiul D — Găsește greșelile
-Programul are 4 greșeli. Rescrie-l corect:
-
-```text
-import pygame
-jucator = pygame.Rect(10, 10, 30, 30)
-moneda = pygame.Rect(20, 20, 20, 20)
-if jucator.colliderect(moneda)
-    scor += 1
-if jucator.collidepoint(moneda):
-    print("Atins")
-pereti = [pygame.Rect(0, 0, 10, 10)]
-if jucator.collidelist(pereti) == True:
-    print("Perete")
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. Ce înseamnă o coliziune și cum o verificăm cu `Rect`?  
-2. De ce mutăm și verificăm separat pe `x` și pe `y` la pereți?  
-3. La ce folosește imunitatea după o lovitură?
 
 **Gata când:**
 - [ ] Jocul are o hartă proprie cu cel puțin 8 pereți  
 - [ ] Are monede de două feluri și un inamic care patrulează  
 - [ ] Se păstrează cel mai bun timp  
-- [ ] Ai explicat pe foaie coliziunile și imunitatea  
-- [ ] Fișierul se numește `Prenume_Nume_P4_L5.py`  
+- [ ] Fișierul se numește `Prenume_Nume_P4_L5.py`
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Adaugă **chei și uși**: ușa se deschide doar dacă ai luat cheia  
-- [ ] Adaugă **capcane** (ghimpi) care te trimit înapoi la start  
-- [ ] Fă monedele să **se rotească** (alternează două imagini)  
-- [ ] Adaugă **teleportoare**: două cercuri care te mută dintr-un loc în altul  
+## Bonus ★★★ — Provocare: Labirintul cu surprize
+
+*Doar dacă ai terminat Complet. Lucrezi tot în „Strânge monedele”, în același program.*
+
+- [ ] **Capcane.** Adaugă 3 capcane (dreptunghiuri roșii) care te trimit înapoi la start când le atingi; monedele nu trebuie să apară în ele  
+- [ ] **Teleportoare.** Adaugă două cercuri mov: când intri în unul, ajungi în celălalt (cu o pauză de o secundă, ca să nu te teleportezi la nesfârșit)  
+- [ ] **Monede care se rotesc.** Fă monedele să alterneze, de câteva ori pe secundă, între o formă rotundă și una îngustă  
+- [ ] **Bară de progres.** Lângă text, desenează o bară care se umple pe măsură ce strângi cele 12 monede
 
 ---
 
@@ -746,7 +657,7 @@ Răspunde pe foaie:
 - `rect.collidepoint(x, y)` — un punct este înăuntru (butoane, click).
 - `collidelist` / `collidelistall` — caută într-o listă de `Rect`-uri (-1 sau `[]` = nimic).
 - Pereți: mută pe `x`, verifică, anulează; apoi la fel pe `y`.
-- Cercuri: distanța dintre centre `< r1 + r2`.
+- Cercuri (vezi „Acasă 2”): distanța dintre centre `< r1 + r2`.
 - Imunitatea previne pierderea tuturor vieților de la o singură atingere.
 
 ---
@@ -760,14 +671,612 @@ Răspunde pe foaie:
 
 ---
 
+---
+
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny.  
-2. Fă un **labirint** cu intrare, ieșire și chei, în care trebuie să ajungi la ieșire.  
-3. Fă un joc în care **prinzi mere care cad** cu un coș (jucătorul merge doar stânga-dreapta).  
-4. **Bonus:** adaugă o **a doua monedă specială**, care îți dă 5 secunde în plus.  
-5. Salvează totul ca `Tema_P4_L5_Prenume_Nume.py`.
+1. Refă **4 exemple la alegere** din cele 8, scrise de tine (nu copiate).  
+2. **Butonul de joc.** Desenează trei **butoane** („Joacă”, „Reguli”, „Ieși”). Când treci cu mouse-ul peste ele, își schimbă culoarea, iar când dai click, se afișează în Thonny numele butonului.  
+3. Fă un **labirint** cu intrare, ieșire și chei, în care trebuie să ajungi la ieșire.  
+4. Fă un joc în care **prinzi mere care cad** cu un coș (jucătorul merge doar stânga-dreapta).  
+5. **Explică pe foaie:** Ce înseamnă o coliziune și cum o verificăm cu `Rect`? De ce mutăm și verificăm separat pe `x` și pe `y` la pereți? La ce folosește imunitatea după o lovitură?  
+6. **Bonus:** adaugă o **a doua monedă specială**, care îți dă 5 secunde în plus.  
+7. Salvează totul ca `Tema_P4_L5_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le în Thonny, rulează-le și schimbă-le după preferințe.
+
+#### Acasă 1 — Atingem un obstacol
+
+```python
+import pygame
+
+pygame.init()
+ecran = pygame.display.set_mode((600, 400))
+ceas = pygame.time.Clock()
+zona = ecran.get_rect()
+
+jucator = pygame.Rect(50, 170, 40, 40)
+obstacol = pygame.Rect(300, 150, 100, 100)
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+
+    taste = pygame.key.get_pressed()
+    if taste[pygame.K_LEFT]:
+        jucator.x -= 5
+    if taste[pygame.K_RIGHT]:
+        jucator.x += 5
+    if taste[pygame.K_UP]:
+        jucator.y -= 5
+    if taste[pygame.K_DOWN]:
+        jucator.y += 5
+    jucator.clamp_ip(zona)
+
+    if jucator.colliderect(obstacol):
+        culoare_obstacol = (255, 50, 50)
+    else:
+        culoare_obstacol = (80, 80, 80)
+
+    ecran.fill((230, 230, 255))
+    pygame.draw.rect(ecran, culoare_obstacol, obstacol)
+    pygame.draw.rect(ecran, (0, 150, 80), jucator)
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+
+**Ce vezi pe ecran:** un **pătrat verde** (tu) și un **obstacol gri**. Cât timp nu vă atingeți, obstacolul rămâne gri. Când pătratul verde **îl atinge**, obstacolul devine **roșu**. Când te îndepărtezi, redevine gri.
+
+#### Acasă 2 — Coliziune între cercuri
+
+```python
+import math
+
+def cercuri_se_ating(x1, y1, r1, x2, y2, r2):
+    distanta = math.hypot(x1 - x2, y1 - y2)
+    return distanta < r1 + r2
+
+print(cercuri_se_ating(0, 0, 10, 15, 0, 10))
+print(cercuri_se_ating(0, 0, 10, 30, 0, 10))
+print(cercuri_se_ating(0, 0, 10, 12, 16, 10))
+print(cercuri_se_ating(100, 100, 30, 100, 100, 5))
+```
+
+**Ieșire:**
+```text
+True
+False
+False
+True
+```
+
+Pentru obiecte rotunde, dreptunghiurile nu sunt tocmai potrivite (colțurile lor „ating” înainte ca cercurile să se atingă). Două cercuri se ating dacă **distanța dintre centre** este mai mică decât **suma razelor**. `math.hypot(a, b)` calculează `radical din (a² + b²)`, adică distanța. Rezultatele: în primul caz distanța este 15 și razele însumează 20: **se ating**. În al doilea, 30 față de 20: nu. În al treilea, distanța este exact 20: nu se **suprapun** (doar se ating în marginea lor). În al patrulea, cercul mic este în interiorul celui mare: se ating.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+import pygame
+
+a = pygame.Rect(0, 0, 40, 40)
+b = pygame.Rect(40, 0, 40, 40)
+c = pygame.Rect(39, 39, 10, 10)
+print(a.colliderect(b))
+print(a.colliderect(c))
+print(a.collidelist([b, c]))
+print(a.collidelistall([b, c]))
+```
+
+**Găsește greșelile.** Programul are 4 greșeli. Rescrie-l corect:
+
+```text
+import pygame
+jucator = pygame.Rect(10, 10, 30, 30)
+moneda = pygame.Rect(20, 20, 20, 20)
+if jucator.colliderect(moneda)
+    scor += 1
+if jucator.collidepoint(moneda):
+    print("Atins")
+pereti = [pygame.Rect(0, 0, 10, 10)]
+if jucator.collidelist(pereti) == True:
+    print("Perete")
+```
 
 ---
 
+## Răspunsuri la bonus
+Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit, important este să funcționeze. Fiecare cod este un program întreg, pornit de la „Strânge monedele” (Exemplul 8).
+
+### 1. Capcane
+```python
+import random
+import time
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 500
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Strange monedele")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 32)
+font_mare = pygame.font.Font(None, 64)
+
+pereti = [
+    pygame.Rect(0, 50, LATIME, 10),
+    pygame.Rect(150, 60, 20, 250),
+    pygame.Rect(300, 190, 20, 260),
+    pygame.Rect(450, 60, 20, 250),
+    pygame.Rect(580, 190, 20, 260),
+    pygame.Rect(0, INALTIME - 10, LATIME, 10),
+]
+
+capcane = [
+    pygame.Rect(230, 120, 40, 20),
+    pygame.Rect(380, 400, 40, 20),
+    pygame.Rect(500, 100, 40, 20),
+]
+
+jucator = pygame.Rect(40, 400, 30, 30)
+monede = []
+stare = {"scor": 0, "start": time.time(), "durata": 0.0, "castigat": False}
+
+def pozitie_libera():
+    while True:
+        r = pygame.Rect(random.randint(20, LATIME - 40), random.randint(80, INALTIME - 50), 24, 24)
+        if r.collidelist(pereti) == -1 and r.collidelist(capcane) == -1 and not r.colliderect(jucator):
+            return r
+
+def joc_nou():
+    jucator.topleft = (40, 400)
+    monede.clear()
+    for i in range(12):
+        monede.append(pozitie_libera())
+    stare["scor"] = 0
+    stare["start"] = time.time()
+    stare["durata"] = 0.0
+    stare["castigat"] = False
+
+joc_nou()
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_r:
+                joc_nou()
+
+    if not stare["castigat"]:
+        dx = 0
+        dy = 0
+        taste = pygame.key.get_pressed()
+        if taste[pygame.K_LEFT] or taste[pygame.K_a]:
+            dx -= 5
+        if taste[pygame.K_RIGHT] or taste[pygame.K_d]:
+            dx += 5
+        if taste[pygame.K_UP] or taste[pygame.K_w]:
+            dy -= 5
+        if taste[pygame.K_DOWN] or taste[pygame.K_s]:
+            dy += 5
+
+        jucator.x += dx
+        if jucator.collidelist(pereti) != -1:
+            jucator.x -= dx
+        jucator.y += dy
+        if jucator.collidelist(pereti) != -1:
+            jucator.y -= dy
+        jucator.clamp_ip(ecran.get_rect())
+
+        if jucator.collidelist(capcane) != -1:
+            jucator.topleft = (40, 400)
+
+        ramase = []
+        for moneda in monede:
+            if jucator.colliderect(moneda):
+                stare["scor"] += 1
+            else:
+                ramase.append(moneda)
+        monede[:] = ramase
+
+        stare["durata"] = time.time() - stare["start"]
+        if len(monede) == 0:
+            stare["castigat"] = True
+
+    ecran.fill((245, 240, 225))
+    for perete in pereti:
+        pygame.draw.rect(ecran, (80, 70, 60), perete)
+    for moneda in monede:
+        pygame.draw.ellipse(ecran, (255, 200, 0), moneda)
+        pygame.draw.ellipse(ecran, (200, 150, 0), moneda, 3)
+    for capcana in capcane:
+        pygame.draw.rect(ecran, (200, 30, 30), capcana)
+    pygame.draw.rect(ecran, (0, 140, 90), jucator)
+
+    text = font.render("Monede: " + str(stare["scor"]) + " / 12     Timp: " + str(int(stare["durata"])) + " s", True, (30, 30, 30))
+    ecran.blit(text, (10, 15))
+    if stare["castigat"]:
+        mesaj = font_mare.render("AI CASTIGAT!", True, (0, 120, 0))
+        ecran.blit(mesaj, (LATIME // 2 - mesaj.get_width() // 2, 200))
+        sub = font.render("Apasa R pentru joc nou", True, (30, 30, 30))
+        ecran.blit(sub, (LATIME // 2 - sub.get_width() // 2, 270))
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** harta obișnuită, plus trei dreptunghiuri roșii (capcane). Dacă pătratul verde atinge una, se întoarce imediat la start. Lista `capcane` este verificată cu `collidelist`, ca pereții, iar `pozitie_libera` o ocolește, deci nicio monedă nu apare în capcană.
+
+### 2. Teleportoare
+```python
+import random
+import time
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 500
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Strange monedele")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 32)
+font_mare = pygame.font.Font(None, 64)
+
+pereti = [
+    pygame.Rect(0, 50, LATIME, 10),
+    pygame.Rect(150, 60, 20, 250),
+    pygame.Rect(300, 190, 20, 260),
+    pygame.Rect(450, 60, 20, 250),
+    pygame.Rect(580, 190, 20, 260),
+    pygame.Rect(0, INALTIME - 10, LATIME, 10),
+]
+
+tp_a = pygame.Rect(30, 330, 40, 40)
+tp_b = pygame.Rect(610, 100, 40, 40)
+ultim_tp = -10000
+
+jucator = pygame.Rect(40, 400, 30, 30)
+monede = []
+stare = {"scor": 0, "start": time.time(), "durata": 0.0, "castigat": False}
+
+def pozitie_libera():
+    while True:
+        r = pygame.Rect(random.randint(20, LATIME - 40), random.randint(80, INALTIME - 50), 24, 24)
+        if r.collidelist(pereti) == -1 and not r.colliderect(jucator) and not r.colliderect(tp_a) and not r.colliderect(tp_b):
+            return r
+
+def joc_nou():
+    jucator.topleft = (40, 400)
+    monede.clear()
+    for i in range(12):
+        monede.append(pozitie_libera())
+    stare["scor"] = 0
+    stare["start"] = time.time()
+    stare["durata"] = 0.0
+    stare["castigat"] = False
+
+joc_nou()
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_r:
+                joc_nou()
+
+    if not stare["castigat"]:
+        dx = 0
+        dy = 0
+        taste = pygame.key.get_pressed()
+        if taste[pygame.K_LEFT] or taste[pygame.K_a]:
+            dx -= 5
+        if taste[pygame.K_RIGHT] or taste[pygame.K_d]:
+            dx += 5
+        if taste[pygame.K_UP] or taste[pygame.K_w]:
+            dy -= 5
+        if taste[pygame.K_DOWN] or taste[pygame.K_s]:
+            dy += 5
+
+        jucator.x += dx
+        if jucator.collidelist(pereti) != -1:
+            jucator.x -= dx
+        jucator.y += dy
+        if jucator.collidelist(pereti) != -1:
+            jucator.y -= dy
+        jucator.clamp_ip(ecran.get_rect())
+
+        acum = pygame.time.get_ticks()
+        if acum - ultim_tp > 1000:
+            if jucator.colliderect(tp_a):
+                jucator.center = tp_b.center
+                ultim_tp = acum
+            elif jucator.colliderect(tp_b):
+                jucator.center = tp_a.center
+                ultim_tp = acum
+
+        ramase = []
+        for moneda in monede:
+            if jucator.colliderect(moneda):
+                stare["scor"] += 1
+            else:
+                ramase.append(moneda)
+        monede[:] = ramase
+
+        stare["durata"] = time.time() - stare["start"]
+        if len(monede) == 0:
+            stare["castigat"] = True
+
+    ecran.fill((245, 240, 225))
+    for perete in pereti:
+        pygame.draw.rect(ecran, (80, 70, 60), perete)
+    for moneda in monede:
+        pygame.draw.ellipse(ecran, (255, 200, 0), moneda)
+        pygame.draw.ellipse(ecran, (200, 150, 0), moneda, 3)
+    pygame.draw.ellipse(ecran, (150, 60, 220), tp_a)
+    pygame.draw.ellipse(ecran, (150, 60, 220), tp_b)
+    pygame.draw.rect(ecran, (0, 140, 90), jucator)
+
+    text = font.render("Monede: " + str(stare["scor"]) + " / 12     Timp: " + str(int(stare["durata"])) + " s", True, (30, 30, 30))
+    ecran.blit(text, (10, 15))
+    if stare["castigat"]:
+        mesaj = font_mare.render("AI CASTIGAT!", True, (0, 120, 0))
+        ecran.blit(mesaj, (LATIME // 2 - mesaj.get_width() // 2, 200))
+        sub = font.render("Apasa R pentru joc nou", True, (30, 30, 30))
+        ecran.blit(sub, (LATIME // 2 - sub.get_width() // 2, 270))
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** două cercuri mov: unul jos, în stânga, și unul sus, în dreapta. Când intri în unul, apari în celălalt. `ultim_tp` ține minte momentul ultimei teleportări, iar `acum - ultim_tp > 1000` oprește teleportarea înapoi cât timp mai ești în cercul de sosire.
+
+### 3. Monede care se rotesc
+```python
+import random
+import time
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 500
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Strange monedele")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 32)
+font_mare = pygame.font.Font(None, 64)
+
+pereti = [
+    pygame.Rect(0, 50, LATIME, 10),
+    pygame.Rect(150, 60, 20, 250),
+    pygame.Rect(300, 190, 20, 260),
+    pygame.Rect(450, 60, 20, 250),
+    pygame.Rect(580, 190, 20, 260),
+    pygame.Rect(0, INALTIME - 10, LATIME, 10),
+]
+
+jucator = pygame.Rect(40, 400, 30, 30)
+monede = []
+stare = {"scor": 0, "start": time.time(), "durata": 0.0, "castigat": False}
+
+def pozitie_libera():
+    while True:
+        r = pygame.Rect(random.randint(20, LATIME - 40), random.randint(80, INALTIME - 50), 24, 24)
+        if r.collidelist(pereti) == -1 and not r.colliderect(jucator):
+            return r
+
+def joc_nou():
+    jucator.topleft = (40, 400)
+    monede.clear()
+    for i in range(12):
+        monede.append(pozitie_libera())
+    stare["scor"] = 0
+    stare["start"] = time.time()
+    stare["durata"] = 0.0
+    stare["castigat"] = False
+
+joc_nou()
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_r:
+                joc_nou()
+
+    if not stare["castigat"]:
+        dx = 0
+        dy = 0
+        taste = pygame.key.get_pressed()
+        if taste[pygame.K_LEFT] or taste[pygame.K_a]:
+            dx -= 5
+        if taste[pygame.K_RIGHT] or taste[pygame.K_d]:
+            dx += 5
+        if taste[pygame.K_UP] or taste[pygame.K_w]:
+            dy -= 5
+        if taste[pygame.K_DOWN] or taste[pygame.K_s]:
+            dy += 5
+
+        jucator.x += dx
+        if jucator.collidelist(pereti) != -1:
+            jucator.x -= dx
+        jucator.y += dy
+        if jucator.collidelist(pereti) != -1:
+            jucator.y -= dy
+        jucator.clamp_ip(ecran.get_rect())
+
+        ramase = []
+        for moneda in monede:
+            if jucator.colliderect(moneda):
+                stare["scor"] += 1
+            else:
+                ramase.append(moneda)
+        monede[:] = ramase
+
+        stare["durata"] = time.time() - stare["start"]
+        if len(monede) == 0:
+            stare["castigat"] = True
+
+    ecran.fill((245, 240, 225))
+    for perete in pereti:
+        pygame.draw.rect(ecran, (80, 70, 60), perete)
+    for moneda in monede:
+        if (pygame.time.get_ticks() // 300) % 2 == 0:
+            forma = moneda
+        else:
+            forma = pygame.Rect(moneda.x + 7, moneda.y, 10, 24)
+        pygame.draw.ellipse(ecran, (255, 200, 0), forma)
+        pygame.draw.ellipse(ecran, (200, 150, 0), forma, 3)
+    pygame.draw.rect(ecran, (0, 140, 90), jucator)
+
+    text = font.render("Monede: " + str(stare["scor"]) + " / 12     Timp: " + str(int(stare["durata"])) + " s", True, (30, 30, 30))
+    ecran.blit(text, (10, 15))
+    if stare["castigat"]:
+        mesaj = font_mare.render("AI CASTIGAT!", True, (0, 120, 0))
+        ecran.blit(mesaj, (LATIME // 2 - mesaj.get_width() // 2, 200))
+        sub = font.render("Apasa R pentru joc nou", True, (30, 30, 30))
+        ecran.blit(sub, (LATIME // 2 - sub.get_width() // 2, 270))
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** monedele își schimbă forma de câteva ori pe secundă: rotunde, apoi înguste, ca și cum s-ar învârti. `(get_ticks() // 300) % 2` este alternativ `0` și `1`, la fiecare 300 de milisecunde; la `1` desenăm un `Rect` îngust, pus în mijlocul monedei.
+
+### 4. Bară de progres
+```python
+import random
+import time
+import pygame
+
+pygame.init()
+LATIME = 700
+INALTIME = 500
+ecran = pygame.display.set_mode((LATIME, INALTIME))
+pygame.display.set_caption("Strange monedele")
+ceas = pygame.time.Clock()
+font = pygame.font.Font(None, 32)
+font_mare = pygame.font.Font(None, 64)
+
+pereti = [
+    pygame.Rect(0, 50, LATIME, 10),
+    pygame.Rect(150, 60, 20, 250),
+    pygame.Rect(300, 190, 20, 260),
+    pygame.Rect(450, 60, 20, 250),
+    pygame.Rect(580, 190, 20, 260),
+    pygame.Rect(0, INALTIME - 10, LATIME, 10),
+]
+
+jucator = pygame.Rect(40, 400, 30, 30)
+monede = []
+stare = {"scor": 0, "start": time.time(), "durata": 0.0, "castigat": False}
+
+def pozitie_libera():
+    while True:
+        r = pygame.Rect(random.randint(20, LATIME - 40), random.randint(80, INALTIME - 50), 24, 24)
+        if r.collidelist(pereti) == -1 and not r.colliderect(jucator):
+            return r
+
+def joc_nou():
+    jucator.topleft = (40, 400)
+    monede.clear()
+    for i in range(12):
+        monede.append(pozitie_libera())
+    stare["scor"] = 0
+    stare["start"] = time.time()
+    stare["durata"] = 0.0
+    stare["castigat"] = False
+
+joc_nou()
+
+ruleaza = True
+while ruleaza:
+    for eveniment in pygame.event.get():
+        if eveniment.type == pygame.QUIT:
+            ruleaza = False
+        if eveniment.type == pygame.KEYDOWN:
+            if eveniment.key == pygame.K_ESCAPE:
+                ruleaza = False
+            if eveniment.key == pygame.K_r:
+                joc_nou()
+
+    if not stare["castigat"]:
+        dx = 0
+        dy = 0
+        taste = pygame.key.get_pressed()
+        if taste[pygame.K_LEFT] or taste[pygame.K_a]:
+            dx -= 5
+        if taste[pygame.K_RIGHT] or taste[pygame.K_d]:
+            dx += 5
+        if taste[pygame.K_UP] or taste[pygame.K_w]:
+            dy -= 5
+        if taste[pygame.K_DOWN] or taste[pygame.K_s]:
+            dy += 5
+
+        jucator.x += dx
+        if jucator.collidelist(pereti) != -1:
+            jucator.x -= dx
+        jucator.y += dy
+        if jucator.collidelist(pereti) != -1:
+            jucator.y -= dy
+        jucator.clamp_ip(ecran.get_rect())
+
+        ramase = []
+        for moneda in monede:
+            if jucator.colliderect(moneda):
+                stare["scor"] += 1
+            else:
+                ramase.append(moneda)
+        monede[:] = ramase
+
+        stare["durata"] = time.time() - stare["start"]
+        if len(monede) == 0:
+            stare["castigat"] = True
+
+    ecran.fill((245, 240, 225))
+    for perete in pereti:
+        pygame.draw.rect(ecran, (80, 70, 60), perete)
+    for moneda in monede:
+        pygame.draw.ellipse(ecran, (255, 200, 0), moneda)
+        pygame.draw.ellipse(ecran, (200, 150, 0), moneda, 3)
+    pygame.draw.rect(ecran, (0, 140, 90), jucator)
+
+    text = font.render("Monede: " + str(stare["scor"]) + " / 12     Timp: " + str(int(stare["durata"])) + " s", True, (30, 30, 30))
+    ecran.blit(text, (10, 15))
+    pygame.draw.rect(ecran, (200, 200, 190), (450, 18, 200, 18))
+    pygame.draw.rect(ecran, (0, 160, 80), (450, 18, 200 * stare["scor"] // 12, 18))
+    pygame.draw.rect(ecran, (30, 30, 30), (450, 18, 200, 18), 2)
+    if stare["castigat"]:
+        mesaj = font_mare.render("AI CASTIGAT!", True, (0, 120, 0))
+        ecran.blit(mesaj, (LATIME // 2 - mesaj.get_width() // 2, 200))
+        sub = font.render("Apasa R pentru joc nou", True, (30, 30, 30))
+        ecran.blit(sub, (LATIME // 2 - sub.get_width() // 2, 270))
+
+    pygame.display.flip()
+    ceas.tick(60)
+
+pygame.quit()
+```
+**Ce vezi pe ecran:** în dreapta textului, o bară care se umple verde cu fiecare monedă strânsă și devine plină la a 12-a. Lățimea benzii verzi este `200 * scor // 12`, adică partea din 200 de pixeli care corespunde monedelor luate.
+
+---
 ## Ce urmează — Lecția 6
 **Scor, vieți și text**: transformăm jocul într-un joc complet cu meniu, scor, vieți, nivele și ecran de final.
