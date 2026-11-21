@@ -140,8 +140,10 @@ Alegi un personaj din bibliotecă care seamănă cu un chitarist. Are **2 script
 <span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(chitara)*  
 <span style="color:#FFAB19;font-weight:700">așteaptă</span> `2` secunde  
 <span style="color:#CF63CF;font-weight:700">modifică volumul cu</span> `20`  
+<span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(chitara)*  
 <span style="color:#FFAB19;font-weight:700">așteaptă</span> `2` secunde  
 <span style="color:#CF63CF;font-weight:700">modifică volumul cu</span> `20`  
+<span style="color:#CF63CF;font-weight:700">pornește sunetul</span> *(chitara)*  
 <span style="color:#9966FF;font-weight:700">spune</span> `( volum )` pentru `2` secunde  
 <span style="color:#E6A800;font-weight:700">difuzează</span> `start`  
 
@@ -187,7 +189,9 @@ Alegi un personaj care seamănă cu un toboșar. Are **2 scripturi**, iar al doi
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 - [ ] **Al 3-lea personaj** (Publicul), care aplaudă la final:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
@@ -214,7 +218,7 @@ Alegi un personaj care seamănă cu un toboșar. Are **2 scripturi**, iar al doi
 ## Schema pe scurt *(pe foaie)*
 
 **Pe Chitarist**  
-la steag → `șterge efectele audio` → `setează volumul la` → `pornește sunetul` → `așteaptă` → `modifică volumul` → `așteaptă` → `modifică volumul` → `spune ( volum )` → `difuzează start`  
+la steag → `șterge efectele audio` → `setează volumul la` → `pornește sunetul` → `așteaptă` → `modifică volumul` → `pornește sunetul` → `așteaptă` → `modifică volumul` → `pornește sunetul` → `spune ( volum )` → `difuzează start`  
 la tasta spațiu → `setează efectul` → `redă sunetul` → `modifică efectul` → `așteaptă` → `pornește sunetul` → `așteaptă` → `oprește toate sunetele`
 
 **Pe Toboșar**  

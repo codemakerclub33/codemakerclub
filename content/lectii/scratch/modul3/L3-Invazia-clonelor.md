@@ -198,7 +198,9 @@ Prăjitura are **un script**, complet, care rulează tot timpul. Scriptul Gânda
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 - [ ] **Al 3-lea personaj** (Norul), care aduce ploaia o dată la zece secunde. Adaugi din bibliotecă un nor (în căutare scrii `cloud`) sau îl desenezi, îl redenumești `Norul` și adaugi în **Sunete** un sunet. Norul e **mic** cât timp se încarcă și **mare** când e gata:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  

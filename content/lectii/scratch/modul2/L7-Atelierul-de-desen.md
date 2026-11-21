@@ -144,6 +144,7 @@ Ordinea e un **model**: poți schimba textele, numerele și mesajele.
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
 <span style="color:#0FBD8C;font-weight:700">șterge tot</span>  
+<span style="color:#0FBD8C;font-weight:700">stilou sus</span>  
 <span style="color:#4C97FF;font-weight:700">mergi la x:</span> `0` <span style="color:#4C97FF;font-weight:700">y:</span> `0`  
 <span style="color:#0FBD8C;font-weight:700">setează grosimea stiloului la</span> `2`  
 <span style="color:#0FBD8C;font-weight:700">setează culoarea stiloului la</span> `[roșu]`  
@@ -178,6 +179,7 @@ Steaua are **2 scripturi**, iar al doilea pornește când Pictorul difuzează `s
 <span style="color:#4C97FF;font-weight:700">mergi la</span> `[poziție aleatoare]`  
 <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `40` %  
 <span style="color:#0FBD8C;font-weight:700">setează [transparența] stiloului la</span> `30`  
+<span style="color:#0FBD8C;font-weight:700">setează grosimea stiloului la</span> `1`  
 <span style="color:#0FBD8C;font-weight:700">stilou jos</span>  
 <span style="color:#FFAB19;font-weight:700">repetă</span> `10`  
 ↳ <span style="color:#4C97FF;font-weight:700">glisează în</span> `0,5` <span style="color:#4C97FF;font-weight:700">secunde la</span> `[poziție aleatoare]`  
@@ -197,7 +199,9 @@ Steaua are **2 scripturi**, iar al doilea pornește când Pictorul difuzează `s
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 - [ ] **Al 3-lea personaj** (Pensula), care pictează după mouse-ul tău:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
@@ -227,11 +231,11 @@ Steaua are **2 scripturi**, iar al doilea pornește când Pictorul difuzează `s
 ## Schema pe scurt *(pe foaie)*
 
 **Pe Pictor**  
-la steag → `șterge tot` → `mergi la x: y:` → `setează grosimea` → `setează culoarea` → `stilou jos` → `repetă 36` (`repetă 4` (`mergi` + `rotește ↻ 90`) + `rotește ↻ 10` + `schimbă [culoarea] cu 5`) → `stilou sus` → `spune` → `difuzează steaua și așteaptă` → `difuzează final`
+la steag → `șterge tot` → `stilou sus` → `mergi la x: y:` → `setează grosimea` → `setează culoarea` → `stilou jos` → `repetă 36` (`repetă 4` (`mergi` + `rotește ↻ 90`) + `rotește ↻ 10` + `schimbă [culoarea] cu 5`) → `stilou sus` → `spune` → `difuzează steaua și așteaptă` → `difuzează final`
 
 **Pe Stea**  
 la steag → `ascunde`  
-când primesc steaua → `arată` → `mergi la [poziție aleatoare]` → `setează mărimea` → `setează [transparența]` → `stilou jos` → `repetă 10` (`glisează` + `ștampila` + `schimbă grosimea` + `schimbă [culoarea]`) → `stilou sus` → `ascunde`
+când primesc steaua → `arată` → `mergi la [poziție aleatoare]` → `setează mărimea` → `setează [transparența]` → `setează grosimea` → `stilou jos` → `repetă 10` (`glisează` + `ștampila` + `schimbă grosimea` + `schimbă [culoarea]`) → `stilou sus` → `ascunde`
 
 **Pe Pensulă**  
 la steag → `ascunde`  

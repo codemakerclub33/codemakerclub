@@ -58,7 +58,7 @@ La finalul orei joci un meci de fotbal: Fotbalistul tău aleargă cu săgețile 
 | <span style="color:#9966FF;font-weight:700">Aspect</span> | `spune … pentru … secunde`, `setează mărimea la` |
 | <span style="color:#CF63CF;font-weight:700">Sunet</span> | `pornește sunetul` |
 
-### 1) Culorile de pe scenă
+### 1) Personajul vede culori
 1. Din <span style="color:#5CB1D1;font-weight:700">Detectare</span> iei <span style="color:#5CB1D1;font-weight:700">atinge culoarea ( )?</span>
 2. Faci click pe **cercul colorat** din bloc, apoi pe **pipetă** și apoi pe culoarea de pe scenă pe care vrei să o recunoască personajul. Culoarea trebuie să fie **exact aceeași**
 3. Blocul are colțuri: nu stă singur, ci în locul gol al lui <span style="color:#FFAB19;font-weight:700">dacă … atunci</span>
@@ -205,7 +205,9 @@ Mingea are **2 scripturi**; al doilea pornește când Fotbalistul difuzează `lo
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 - [ ] **Al 3-lea personaj** (Portarul), care apără poarta albastră și spune unde a oprit mingea:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  

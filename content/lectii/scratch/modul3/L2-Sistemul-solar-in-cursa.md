@@ -229,7 +229,9 @@ Fiecare planetă e un personaj nou: **Desenează** un cerc mic, colorat cu **Ump
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 ### Pasul 5 — Soarele *(★★★)*
 Al 3-lea personaj se rotește și arată sau ascunde lista cu două taste. Adaugi din bibliotecă un personaj rotund, galben (sau desenezi un cerc), îl redenumești `Soarele` și îi pui **3 scripturi** complete:
 

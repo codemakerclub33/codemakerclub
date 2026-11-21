@@ -305,7 +305,9 @@ Apoi volanul, motorul și turele. Toate trei pornesc când Semaforul difuzează 
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 ### Pasul 5 — A doua pistă și Arbitrul *(★★★)*
 Mai întâi creezi **a doua pistă**: în tab-ul **Decoruri**, copiezi `Pista 1`, schimbi culoarea drumului din gri în **maro** (iarba rămâne verde, linia rămâne violet) și o redenumești `Pista 2`. Ordinea contează: `Pista 1` primul, `Pista 2` al doilea. Apoi adaugi un personaj de om din bibliotecă, fără verde în el, și îl redenumești `Arbitrul`. Scripturile din Pașii 2, 3 și 4 **nu se mai schimbă**: Bolidul trimite deja `sfârșit` la finalul cursei, iar Arbitrul îl primește.
 

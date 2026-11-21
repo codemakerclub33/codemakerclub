@@ -179,7 +179,9 @@ Alegi un extraterestru sau alt personaj. El pornește după Rachetă și se uit�
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 - [ ] **Al 3-lea personaj** (Astronautul), care apare după ceilalți:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
@@ -193,7 +195,7 @@ Alegi un extraterestru sau alt personaj. El pornește după Rachetă și se uit�
 <span style="color:#9966FF;font-weight:700">gândește</span> `Ce zi!` pentru `2` secunde  
 <span style="color:#9966FF;font-weight:700">schimbă costumul la</span> *(un costum ales de tine)*  
 
-- [ ] ★★★ **Provocare:** Racheta desenează un pătrat în aer, cu <span style="color:#FFAB19;font-weight:700">repetă</span> `4` → <span style="color:#4C97FF;font-weight:700">mergi</span> `50` pași → <span style="color:#4C97FF;font-weight:700">rotește-te ↻</span> `90` grade
+- [ ] ★★★ **Provocare:** Racheta zboară pe un traseu în formă de pătrat, cu <span style="color:#FFAB19;font-weight:700">repetă</span> `4` → <span style="color:#4C97FF;font-weight:700">mergi</span> `50` pași → <span style="color:#4C97FF;font-weight:700">rotește-te ↻</span> `90` grade
 
 ## Recapitulare rapidă
 1. `mergi la x: y:` **sare** · `glisează` **alunecă**  

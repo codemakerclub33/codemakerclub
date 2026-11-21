@@ -185,7 +185,9 @@ Alegi un animal sau alt personaj. El face **lucruri diferite** față de Copil �
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 - [ ] **Al 3-lea personaj** (Pasărea), care apare în parc, după ceilalți:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  

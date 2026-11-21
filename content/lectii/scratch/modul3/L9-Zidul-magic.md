@@ -246,7 +246,7 @@ Cărămida are **3 scripturi** complete. Primul o ascunde, al doilea construieș
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ <span style="color:#FFAB19;font-weight:700">șterge această clonă</span>  
 &nbsp;&nbsp;&nbsp;&nbsp;→ <span style="color:#FFAB19;font-weight:700">altfel</span>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ <span style="color:#9966FF;font-weight:700">schimbă costumul la</span> <span style="color:#59C059;font-weight:700">(</span><span style="color:#9966FF;font-weight:700">(costumul [număr])</span> <span style="color:#59C059;font-weight:700">-</span> `1`<span style="color:#59C059;font-weight:700">)</span>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0.3` secunde
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3` secunde
 
 **Cum îl construiești, pe bucăți (scriptul al doilea):**
 1. `setează cărămizi la 0` și `la infinit`: zid după zid
@@ -348,7 +348,9 @@ Fiecare buton are **3 scripturi**: poziția lui, click-ul lui și ascunderea (sa
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 ### Pasul 7 — Butonul Bonus și Aurul *(★★★)*
 Două personaje noi: butonul **Bonus** și **Aurul**, o cărămidă de aur care **cade** din când în când și dă `5` puncte dacă o prinzi cu paleta. Aurul apare doar dacă ai pornit jocul cu **Bonus**. Scripturile din Pașii 2–6 **nu se mai schimbă**.
 

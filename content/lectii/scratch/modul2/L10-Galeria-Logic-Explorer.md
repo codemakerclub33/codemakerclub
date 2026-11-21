@@ -192,7 +192,9 @@ Al doilea personaj ales. Are scheletul de mai jos, cu **2 numere** din rețete, 
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 - [ ] **Al 3-lea personaj** (al doilea artist), cu **2 numere** din lecții diferite și cel puțin **10 blocuri diferite**. Exemplul: Paznicul (din L6), cu „Parolă” (L6) și „Distanță” (L2). Răspunde la `număr2`:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  

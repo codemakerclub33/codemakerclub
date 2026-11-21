@@ -204,7 +204,7 @@ Fiecare decor are **2 scripturi**. Sunt la fel, doar poziția se schimbă: poți
 <span style="color:#9966FF;font-weight:700">spune</span> `Pune-mă unde vrei!` <span style="color:#9966FF;font-weight:700">pentru</span> `2` secunde  
 
 - [ ] La steag decorurile sunt ascunse  
-- [ ] După ce Peștele 1 spune „Bun venit în acvariu!”, apar toate trei, pe rând, cu sunet  
+- [ ] După ce Peștele 1 spune „Bun venit în acvariu!”, apar toate trei, cu sunet  
 - [ ] Fiecare spune „Pune-mă unde vrei!”  
 - [ ] Le tragi cu mouse-ul în ecranul complet și le așezi în acvariu  
 - [ ] Salvat din nou: `Prenume_Nume_L2`  
@@ -213,7 +213,9 @@ Fiecare decor are **2 scripturi**. Sunt la fel, doar poziția se schimbă: poți
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 ### Pasul 4 — Peștele 2 și Peștele 3 *(★★★)*
 Mai adaugi doi pești, `Peștele 2` și `Peștele 3`. Fiecare are **2 scripturi**: aceleași ca la Peștele 1, dar fără `spune` și fără `difuzează start`, iar `glisează` durează **2** și **3 secunde**. Așa înoată în șir după mouse, unul în urma celuilalt. Scripturile din Pașii 2 și 3 **nu se mai schimbă**: Peștele 1 difuzează deja `start`, iar ei îl primesc.
 

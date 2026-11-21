@@ -148,7 +148,7 @@ Alegi un personaj din bibliotecă care seamănă cu un reporter. Ordinea e un **
 - [ ] Steag din nou → începe de la capăt, cu mărime și culoare normale  
 - [ ] Salvat: `Prenume_Nume_L5`  
 
-**→ Minim când:** Reporterul întâmpină publicul, pune întrebarea, se face verde, spune „Hai afară!” și decorul trece la `Afară`.
+**→ Minim când:** Reporterul întâmpină publicul, pune întrebarea, își schimbă culoarea, spune „Hai afară!” și decorul trece la `Afară`.
 
 ### Pasul 3 — Dragonul *(Complet)*
 Alegi un dragon sau alt personaj. Are **3 scripturi**:
@@ -177,7 +177,9 @@ Alegi un dragon sau alt personaj. Are **3 scripturi**:
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 - [ ] **Al 3-lea personaj** (Publicul), care reacționează afară:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  

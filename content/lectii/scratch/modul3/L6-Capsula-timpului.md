@@ -230,7 +230,9 @@ Capsula are **3 scripturi** complete. Primul o așază pe scenă, al doilea o po
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 ### Pasul 4 — Calendarul *(★★★)*
 Al 3-lea personaj te ajută să vezi **cât timp a trecut** de la anul 2000 și dacă ești conectat. Alegi din bibliotecă un personaj care arată a foaie sau a ceas, sau desenezi un calendar, și îl redenumești `Calendarul`. Scripturile din Pașii 2 și 3 **nu se mai schimbă**: Pilotul trimite deja `sfârșit`, iar Calendarul îl primește.
 

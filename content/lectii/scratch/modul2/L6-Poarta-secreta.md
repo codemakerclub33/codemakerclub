@@ -189,7 +189,9 @@ Exploratorul are **2 scripturi**, iar al doilea pornește când Paznicul difuzea
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 - [ ] **Al 3-lea personaj** (Cheia), care crește când timpul trece de zece secunde, ca un indiciu:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  

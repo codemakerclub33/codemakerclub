@@ -196,7 +196,9 @@ Model pentru personajul 2 *(alt ritm, alte blocuri în alt loc)*:
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 - [ ] **Al 3-lea personaj** la alegere, care intră ultimul  
 - [ ] Modelul de mai jos (începe cu `așteaptă` `14` secunde, ca să apară după personajul 2):
 

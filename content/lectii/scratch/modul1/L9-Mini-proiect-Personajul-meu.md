@@ -133,6 +133,7 @@ Alegi personajul tău, cu cel puțin 2 costume. Are **3 scripturi**. Ordinea e u
 <span style="color:#FFAB19;font-weight:700">la infinit</span>  
 ↳ <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D1;font-weight:700">tasta [săgeată dreapta] apăsată?</span> <span style="color:#FFAB19;font-weight:700">atunci</span> → <span style="color:#4C97FF;font-weight:700">modifică x cu</span> `10`  
 ↳ <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D1;font-weight:700">tasta [săgeată stânga] apăsată?</span> <span style="color:#FFAB19;font-weight:700">atunci</span> → <span style="color:#4C97FF;font-weight:700">modifică x cu</span> `-10`  
+↳ <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,1` secunde  
 
 <span style="color:#E6A800;font-weight:700">când primesc</span> `acasă`  
 <span style="color:#4C97FF;font-weight:700">setează x la</span> `-150`  
@@ -177,7 +178,9 @@ Alegi un personaj care seamănă cu un stăpân. Are **3 scripturi**:
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 - [ ] **Al 3-lea personaj** (Balonul), cu care te joci în grădină:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
@@ -212,7 +215,7 @@ când primesc acasă → `schimbă decorul la` Cameră
 
 **Pe Animal**  
 la steag → `setează x` → `setează y` → `spune` → `așteaptă` → `difuzează plimbare`  
-când primesc plimbare → `pornește sunetul` → `repetă` (`modifică x` + `costumul următor` + `așteaptă`) → `glisează` → `la infinit` (`dacă` `tasta` `atunci` `modifică x`)  
+când primesc plimbare → `pornește sunetul` → `repetă` (`modifică x` + `costumul următor` + `așteaptă`) → `glisează` → `la infinit` (`dacă` `tasta` `atunci` `modifică x`; `așteaptă`)  
 când primesc acasă → `setează x` → `setează y` → `spune`
 
 **Pe Stăpân**  

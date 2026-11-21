@@ -78,7 +78,7 @@ Ai învățat **53 de blocuri**, în 6 capitole:
 | <span style="color:#4C97FF;font-weight:700">Mișcare</span> | 13 | `mergi`, `rotește-te ↻ ↺`, `mergi la` (aleatoare și x y), `glisează` (aleatoare și x y), `orientează-te` (direcția și spre), `modifică` și `setează` x și y |
 | <span style="color:#E6A800;font-weight:700">Evenimente</span> | 8 | steagul verde, `când tasta`, `când se dă click pe acest personaj`, `când decorul se schimbă`, `difuzează`, `difuzează … și așteaptă`, `când primesc`, `când [intensitatea sunetului] >` |
 | <span style="color:#9966FF;font-weight:700">Aspect</span> | 13 | `spune`, `gândește` (cu și fără durată), costumul și decorul (`schimbă`, `următorul`), mărimea (`modifică`, `setează`), efectele (`modifică`, `setează`, `anulează`) |
-| <span style="color:#CF63CF;font-weight:700">Sunet</span> | 9 | `pornește`, `redă … până la final`, `oprește toate`, volumul (`modifică`, `setează`, valoarea `volum`), efectele audio (`modifică`, `setează`, `șterge`) |
+| <span style="color:#CF63CF;font-weight:700">Sunet</span> | 9 | `pornește sunetul`, `redă sunetul … până la final`, `oprește toate sunetele`, volumul (`modifică`, `setează`, valoarea `volum`), efectele audio (`modifică`, `setează`, `șterge`) |
 | <span style="color:#FFAB19;font-weight:700">Control</span> | 8 | `așteaptă`, `repetă`, `la infinit`, `dacă`, `dacă … altfel`, `așteaptă până când`, `repetă până când`, `stop` |
 | <span style="color:#5CB1D1;font-weight:700">Detectare</span> | 2 | `tasta apăsată?`, `atinge cursorul mouse-ului?` |
 
@@ -151,7 +151,7 @@ Gazda e primul personaj ales. Are scheletul de mai jos, cu **2 numere** puse la 
 | L5 | **Transformare** | <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `150` % → <span style="color:#9966FF;font-weight:700">modifică efectul [culoare] cu</span> `30` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `1` secundă → <span style="color:#9966FF;font-weight:700">anulează efectele grafice</span> → <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `100` % |
 | L6 | **Muzică** | <span style="color:#CF63CF;font-weight:700">setează volumul la</span> `60` % → <span style="color:#CF63CF;font-weight:700">pornește sunetul</span> → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `2` secunde → <span style="color:#CF63CF;font-weight:700">modifică volumul cu</span> `30` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `2` secunde → <span style="color:#CF63CF;font-weight:700">oprește toate sunetele</span> |
 | L7 | **Plimbare** | <span style="color:#4C97FF;font-weight:700">setează x la</span> `-100` → <span style="color:#4C97FF;font-weight:700">setează y la</span> `0` → <span style="color:#FFAB19;font-weight:700">repetă</span> `4` → <span style="color:#4C97FF;font-weight:700">modifică x cu</span> `40` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3` · apoi <span style="color:#4C97FF;font-weight:700">modifică y cu</span> `40` |
-| L8 | **Reacție** | <span style="color:#FFAB19;font-weight:700">repetă</span> `10` → <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D1;font-weight:700">atinge [cursorul mouse-ului]?</span> <span style="color:#FFAB19;font-weight:700">atunci</span> <span style="color:#9966FF;font-weight:700">modifică efectul [culoare] cu</span> `25` **altfel** <span style="color:#9966FF;font-weight:700">setează efectul [culoare] la</span> `0` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3` *(ții mouse-ul pe personaj)* |
+| L8 | **Reacție** | <span style="color:#FFAB19;font-weight:700">repetă</span> `10` → <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D1;font-weight:700">atinge [cursorul mouse-ului]?</span> <span style="color:#FFAB19;font-weight:700">atunci</span> <span style="color:#9966FF;font-weight:700">modifică efectul [culoare] cu</span> `25` **altfel** <span style="color:#9966FF;font-weight:700">setează efectul [culoare] la</span> `0` → <span style="color:#FFAB19;font-weight:700">așteaptă</span> `0,3` · apoi <span style="color:#9966FF;font-weight:700">anulează efectele grafice</span> *(ții mouse-ul pe personaj)* |
 
 - [ ] Gazda are **2 numere din lecții diferite**  
 - [ ] Fără artiști, Gazda își termină scriptul singură  
@@ -186,7 +186,9 @@ Al doilea personaj ales. Are scheletul de mai jos, cu **2 numere** din rețete, 
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 - [ ] **Al 3-lea personaj** (al doilea artist), cu **2 numere** din lecții diferite și cel puțin **10 blocuri diferite**. Exemplul: Chitaristul, cu „Muzică” (L6) și „Reacție” (L8). Răspunde la `număr2`:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  

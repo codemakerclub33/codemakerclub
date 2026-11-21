@@ -219,7 +219,9 @@ Ordinea e un **model**: poți schimba numerele și textele. Detectorul are **un 
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 ### Pasul 4 — Ghidul, cele 2 scripturi *(★★★)*
 Al 3-lea personaj îți dă un **indiciu** când ai greșit. Alegi din bibliotecă un personaj care nu seamănă cu Detectorul (de exemplu un animal, dacă Detectorul e om) și îl redenumești `Ghidul`. Scripturile din Pașii 2 și 3 **nu se mai schimbă**: Detectorul trimite deja `greșit`, iar Ghidul îl primește.
 

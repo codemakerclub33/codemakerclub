@@ -11,7 +11,7 @@
 ## Obiectiv
 La finalul orei Robotul tău te întreabă cum te cheamă, apoi îți spune numele, câte litere are, cu ce literă începe și dacă are litera „a”.  
 **Minim:** personajul 1 (Robotul) cu cel puțin **8 blocuri diferite**.  
-**Ținta orei (Complet):** personajul 2 (Papagalul), cu cel puțin **8 blocuri diferite**, care apare la semnalul Robotului și repetă numele tău, literă cu literă.
+**Ținta orei (Complet):** personajul 2 (Papagalul), cu cel puțin **8 blocuri diferite**, care apare la semnalul Robotului și spune primele trei litere din numele tău.
 
 ## De ce contează
 Jocurile și aplicațiile vorbesc cu cine le folosește: întreabă un nume, o vârstă, un cuvânt, apoi răspund. Pentru asta citești ce scrie copilul cu blocurile din <span style="color:#5CB1D1;font-weight:700">Detectare</span> (EN: *Sensing*) și lucrezi cu text cu blocurile din <span style="color:#59C059;font-weight:700">Operatori</span> (EN: *Operators*).
@@ -188,7 +188,9 @@ Papagalul are **2 scripturi**, iar al doilea pornește când Robotul difuzează 
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 - [ ] **Al 3-lea personaj** (Copilul detectiv) care, după Robot și Papagal, întreabă numele unui prieten și îl analizează:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  

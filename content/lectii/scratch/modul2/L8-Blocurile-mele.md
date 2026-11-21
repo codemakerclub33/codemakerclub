@@ -150,6 +150,7 @@ Scriptul de desen:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
 <span style="color:#0FBD8C;font-weight:700">șterge tot</span>  
+<span style="color:#0FBD8C;font-weight:700">stilou sus</span>  
 <span style="color:#4C97FF;font-weight:700">mergi la x:</span> `0` <span style="color:#4C97FF;font-weight:700">y:</span> `60`  
 <span style="color:#0FBD8C;font-weight:700">stilou jos</span>  
 <span style="color:#FFAB19;font-weight:700">repetă</span> `12`  
@@ -204,7 +205,9 @@ Steaua are **3 scripturi**: blocul ei, scriptul de steag și scriptul care porne
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 - [ ] **Al 3-lea personaj** (Pensula), cu un bloc cu **două intrări**, `poligon (laturi) (mărime)`:
 
 <span style="color:#FF6680;font-weight:700">definește poligon (laturi) (mărime)</span>  
@@ -249,7 +252,7 @@ Steaua are **3 scripturi**: blocul ei, scriptul de steag și scriptul care porne
 
 **Pe Pictor**  
 `definește pătrat (mărime)` → `repetă 4` (`mergi (mărime)` + `rotește ↻ 90`)  
-la steag → `șterge tot` → `mergi la x: y:` → `stilou jos` → `repetă 12` (`pătrat (60)` + `rotește ↻ 30` + `schimbă [culoarea] cu 10`) → `stilou sus` → `spune` → `difuzează steaua și așteaptă` → `difuzează final`
+la steag → `șterge tot` → `stilou sus` → `mergi la x: y:` → `stilou jos` → `repetă 12` (`pătrat (60)` + `rotește ↻ 30` + `schimbă [culoarea] cu 10`) → `stilou sus` → `spune` → `difuzează steaua și așteaptă` → `difuzează final`
 
 **Pe Stea**  
 `definește stea (mărime)` → `repetă 5` (`mergi (mărime)` + `rotește ↻ 144`)  

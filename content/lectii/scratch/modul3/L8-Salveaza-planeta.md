@@ -237,7 +237,9 @@ Ordinea e un **model**: poți schimba numerele și textele. Gunoiul are **un sin
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 ### Pasul 4 — Planeta, scriptul ei *(★★★)*
 Al 5-lea personaj e **Planeta**: se învârte mereu, își schimbă culoarea și **crește** pe măsură ce reciclezi, iar când pierzi vieți devine tot mai **estompată**. Alegi din bibliotecă `Earth` sau `Planet2` și o redenumești `Planeta`. Scripturile din Pașii 2 și 3 **nu se mai schimbă**: mesajul „Planeta e salvată!” e deja în scriptul Gunoiului.
 

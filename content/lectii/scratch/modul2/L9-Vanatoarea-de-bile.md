@@ -167,6 +167,8 @@ Bila are **un script**, care rulează tot timpul:
 <span style="color:#FF8C1A;font-weight:700">setează scor la</span> `0`  
 <span style="color:#5CB1D1;font-weight:700">resetează cronometru</span>  
 <span style="color:#4C97FF;font-weight:700">mergi la</span> `[poziție aleatoare]`  
+<span style="color:#FFAB19;font-weight:700">repetă până când</span> <span style="color:#59C059;font-weight:700">nu</span> <span style="color:#5CB1D1;font-weight:700">atinge culoarea [albastru]?</span>  
+&nbsp;&nbsp;&nbsp;&nbsp;→ <span style="color:#4C97FF;font-weight:700">mergi la</span> `[poziție aleatoare]`  
 <span style="color:#FFAB19;font-weight:700">la infinit</span>  
 ↳ <span style="color:#FFAB19;font-weight:700">dacă</span> <span style="color:#5CB1D1;font-weight:700">atinge [Mâncăciosul]?</span> <span style="color:#FFAB19;font-weight:700">atunci</span>  
 &nbsp;&nbsp;&nbsp;&nbsp;→ <span style="color:#FF8C1A;font-weight:700">modifică scor cu</span> `1`  
@@ -189,10 +191,13 @@ Bila are **un script**, care rulează tot timpul:
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 - [ ] **Al 3-lea personaj** (Fantoma), care vine după tine și îți ia vieți:
 
 <span style="color:#E6A800;font-weight:700">când se dă click pe</span> <span style="color:#3F8F2A;font-weight:700">steagul verde</span>  
+<span style="color:#4C97FF;font-weight:700">setează stilul de rotație</span> `[stânga-dreapta]`  
 <span style="color:#9966FF;font-weight:700">setează mărimea la</span> `50` %  
 <span style="color:#4C97FF;font-weight:700">mergi la x:</span> `200` <span style="color:#4C97FF;font-weight:700">y:</span> `140`  
 <span style="color:#FFAB19;font-weight:700">la infinit</span>  
@@ -222,10 +227,10 @@ Pe Fantomă adaugi în tab-ul **Sunete** un sunet.
 la steag → `setează vieți la 3` → `mergi la x: y:` → `la infinit` (`dacă tasta … apăsată?` `atunci` `orientează-te` + `mergi 5` + `costumul următor` × 4 săgeți + `dacă atinge culoarea [albastru]?` `atunci` `mergi -5` + `dacă atinge culoarea [roșu]?` `atunci` `modifică vieți cu -1` + `mergi la x: y:` + `dacă vieți = 0` `atunci` `spune` + `stop [totul]`)
 
 **Pe Bilă**  
-la steag → `setează scor la 0` → `resetează cronometru` → `mergi la [poziție aleatoare]` → `la infinit` (`dacă atinge [Mâncăciosul]?` `atunci` `modifică scor cu 1` + `pornește sunetul` + `mergi la [poziție aleatoare]` + `repetă până când` `nu` `atinge culoarea [albastru]?` (`mergi la [poziție aleatoare]`) + `dacă scor = 8` `atunci` `spune Bravo!` + `spune (cronometru)` + `stop [totul]`)
+la steag → `setează scor la 0` → `resetează cronometru` → `mergi la [poziție aleatoare]` → `repetă până când` `nu` `atinge culoarea [albastru]?` (`mergi la [poziție aleatoare]`) → `la infinit` (`dacă atinge [Mâncăciosul]?` `atunci` `modifică scor cu 1` + `pornește sunetul` + `mergi la [poziție aleatoare]` + `repetă până când` `nu` `atinge culoarea [albastru]?` (`mergi la [poziție aleatoare]`) + `dacă scor = 8` `atunci` `spune Bravo!` + `spune (cronometru)` + `stop [totul]`)
 
 **Pe Fantomă**  
-la steag → `setează mărimea` → `mergi la x: y:` → `la infinit` (`orientează-te spre [Mâncăciosul]` + `mergi 2` + `dacă atinge [Mâncăciosul]?` `atunci` `modifică vieți cu -1` + `pornește sunetul` + `mergi la x: y:` + `așteaptă 1`)
+la steag → `setează stilul de rotație` → `setează mărimea` → `mergi la x: y:` → `la infinit` (`orientează-te spre [Mâncăciosul]` + `mergi 2` + `dacă atinge [Mâncăciosul]?` `atunci` `modifică vieți cu -1` + `pornește sunetul` + `mergi la x: y:` + `așteaptă 1`)
 
 **Quiz scurt (cu profesorul):**  
 - Cum faci un perete cu `atinge culoarea`? De ce pasul înapoi, `-5`?  

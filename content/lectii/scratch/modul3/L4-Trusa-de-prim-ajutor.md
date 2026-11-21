@@ -245,7 +245,9 @@ Trusa are **2 scripturi** complete. Primul golește lista, o umple cu trei obiec
 
 ---
 
-## Bonus (dacă ai terminat Complet)
+## Bonus ★★★ — Provocare
+*Doar dacă ai terminat Complet.*
+
 ### Pasul 4 — Scripturile Trofeului *(★★★)*
 Al 3-lea personaj ține minte cel mai bun scor. Creezi lista `record`, **pentru toate personajele**, și scrii în ea un singur rând: `0`. Alegi din bibliotecă personajul `Star` (steaua va fi trofeul). Dacă vrei, o colorezi aurie în editorul de costume. Îl redenumești `Trofeul`. Scriptul Copilului **nu se mai schimbă**: are deja `difuzează sfârșit` la final, iar Trofeul îl primește.
 
