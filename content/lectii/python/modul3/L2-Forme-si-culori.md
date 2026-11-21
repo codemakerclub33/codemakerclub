@@ -1,4 +1,5 @@
-# LECȚIA 2 — Forme și culori
+# LECȚIA 2 — Omul de zăpadă
+### Culori, umplere, cercuri și poligoane
 **Modulul 3 · Desenăm cu Turtle · 2 ore**  
 **Code Maker Club · Turtle Artist**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei schimbi culoarea și grosimea liniei, schimbi fundalul, desenezi triunghiuri, poligoane și cercuri, umpli forme cu culoare și folosești culori scrise ca nume sau ca cod.  
-**Minim:** un triunghi și un cerc colorate.  
-**Ținta orei (Complet):** + o formă umplută, un poligon cu număr de laturi la alegere și omul de zăpadă.
-
-## De ce contează
-Culorile fac desenul viu. În jocuri și aplicații, culorile arată ce este important: roșu pentru pericol, verde pentru „merge”. Aceleași comenzi le vei folosi și în Pygame.
+## Ce facem azi
+La finalul orei schimbi culoarea și grosimea liniei, schimbi fundalul, desenezi triunghiuri, poligoane și cercuri, umpli forme cu culoare și folosești culori scrise ca nume. Culorile fac desenul viu. În jocuri și aplicații, culorile arată ce este important: roșu pentru pericol, verde pentru „merge”. Aceleași comenzi le vei folosi și în Pygame.
 
 ---
 
@@ -25,10 +21,21 @@ Culorile fac desenul viu. În jocuri și aplicații, culorile arată ce este imp
 | 10–30 | Culoare, grosime, fundal (**Exemplele 1–2**) |
 | 30–55 | Triunghi și umplere (**Exemplele 3–4**) |
 | 55–80 | Cercuri și poligoane (**Exemplele 5–6**) |
-| 80–95 | Culori din listă și coduri (**Exemplele 7–8**) |
-| 95–105 | Semaforul (**Exemplul 9**) |
-| 105–118 | Mini-proiect (**Exemplul 10**) |
+| 80–100 | Culori dintr-o listă (**Exemplul 7**) |
+| 100–118 | Mini-proiect (**Exemplul 8**) |
 | 118–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `t.color("red")` · `t.pensize(5)` | Schimbă culoarea · grosimea liniei | `t.color("blue")` |
+| `t.color("contur", "umplere")` + `begin_fill()` / `end_fill()` | Umple o formă | `t.color("black", "gold")` |
+| `t.circle(raza)` · `t.dot(mărime, culoare)` | Cerc · punct plin | `t.circle(60)` |
+| `turtle.Screen()` · `bgcolor(...)` | Ecranul și culoarea lui de fundal | `screen.bgcolor("black")` |
+| `360 / laturi` | Unghiul de rotire pentru un poligon | `t.left(360 / 6)` |
 
 ---
 
@@ -195,7 +202,7 @@ for i in range(laturi):
 turtle.done()
 ```
 
-**Ieșire:**
+**Ieșire** (în fereastra Thonny, jos):
 ```text
 Unghiul de rotire: 60.0
 ```
@@ -237,67 +244,15 @@ turtle.done()
 
 **Ce vezi pe ecran:** **5 linii colorate** (roșu, portocaliu, galben, verde, albastru), cu mici spații între ele. Folosim un `for` direct pe lista de culori, ca în Modulul 2.
 
-### Exemplul 8 — Culori cu cod
-
-```python
-import turtle
-
-t = turtle.Turtle()
-t.pensize(8)
-
-t.color("#ff8800")
-t.forward(100)
-
-turtle.colormode(255)
-t.color(30, 144, 255)
-t.left(90)
-t.forward(100)
-
-turtle.done()
-```
-
-**Ce vezi pe ecran:** o linie **portocalie** spre dreapta, apoi o linie **albastră** în sus.
-
-Există două feluri de a scrie o culoare cu cod:
-- **cod hexazecimal**: `"#ff8800"` (cele trei perechi sunt cantitatea de roșu, verde și albastru);
-- **trei numere** de la 0 la 255 (roșu, verde, albastru), după ce scrii `turtle.colormode(255)`.
-
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 7** (Culori dintr-o listă)  
-- [ ] Am scris și am rulat **Exemplul 8** (Culori cu cod)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## 6. Semafor și om de zăpadă
+## 6. Mini-proiect
 
-### Exemplul 9 — Semaforul
-
-```python
-import turtle
-
-screen = turtle.Screen()
-screen.bgcolor("lightgray")
-
-t = turtle.Turtle()
-t.hideturtle()
-t.penup()
-
-t.goto(0, 80)
-t.dot(60, "red")
-t.goto(0, 0)
-t.dot(60, "yellow")
-t.goto(0, -80)
-t.dot(60, "green")
-
-turtle.done()
-```
-
-**Ce vezi pe ecran:** pe fundal gri deschis, **trei cercuri una sub alta**: sus roșu, la mijloc galben, jos verde.
-
-Cu `penup()` și `goto` mutăm țestoasa, iar `dot` pune un cerc plin acolo.
-
-### Exemplul 10 — Omul de zăpadă
+### Exemplul 8 — Omul de zăpadă
 
 ```python
 import turtle
@@ -338,78 +293,51 @@ Cum funcționează:
 - bucla `for raza, y in [...]` primește pe rând perechile `(50, -150)`, `(35, -50)` și `(25, 20)`;
 - ochii și nasul sunt trei puncte.
 
-**Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 9** (Semaforul)  
-- [ ] Am scris și am rulat **Exemplul 10** (Omul de zăpadă)  
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 8** (Omul de zăpadă)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Omul de zăpadă”
 
-### Exercițiul A — „Omul de zăpadă” (obligatoriu)
-Pornește de la Exemplul 10 și fă-l **al tău**:
+### Minim vs Complet
+
+| | Ce trebuie |
+|--|------------|
+| **Minim** | Un triunghi umplut cu o culoare și un cerc colorat, desenate în ferestre Turtle |
+| **Complet** | Minim + omul de zăpadă al tău (cu pălărie, nasturi și un element de fundal) și un poligon cu număr de laturi la alegere |
+
+### Pasul 1 — Minim
+- [ ] Un triunghi umplut cu o culoare  
+- [ ] Un cerc colorat  
+
+### Pasul 2 — Complet
+Pornește de la Exemplul 8 și fă omul de zăpadă **al tău**:
 1. schimbă culorile (fundal, corp, ochi);
 2. adaugă **o pălărie** (un dreptunghi sau un pătrat umplut cu negru) pe cap;
 3. adaugă **nasturi** (3 puncte pe corp);
 4. adaugă un **soare** sau **nori** în colț;
-5. scrie un titlu pe ecran, cu `write`.
-
-### Exercițiul B — Ce desenează?
-Gândește-te, apoi verifică în Thonny:
-
-```python
-import turtle
-
-t = turtle.Turtle()
-t.color("red", "yellow")
-t.begin_fill()
-for i in range(5):
-    t.forward(80)
-    t.left(72)
-t.end_fill()
-
-turtle.done()
-```
-
-### Exercițiul C — Poligoane colorate
-Desenează, unul lângă altul, un **triunghi**, un **pătrat**, un **pentagon** și un **hexagon**, fiecare umplut cu altă culoare. Folosește pentru fiecare numărul de laturi și unghiul `360 / laturi`.
-
-### Exercițiul D — Găsește greșelile
-Programul are 4 greșeli. Rescrie-l corect:
-
-```text
-import turtle
-t = turtle.turtle()
-t.color("red" "yellow")
-t.begin_fill
-for i in range(4):
-t.forward(100)
-    t.left(90)
-t.end_fill()
-turtle.done()
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. De ce unghiul pentru triunghi este 120?  
-2. La ce folosesc `begin_fill()` și `end_fill()`?  
-3. Care este diferența dintre `Turtle()` și `Screen()`?
+5. scrie un titlu pe ecran, cu `write`;
+6. desenează, într-un colț, un **poligon** cu număr de laturi la alegere, cu unghiul calculat `360 / laturi`.
 
 **Gata când:**
 - [ ] Omul de zăpadă are pălărie, nasturi și un element de fundal  
 - [ ] Ai folosit cel puțin 4 culori  
-- [ ] Ai desenat cele 4 poligoane colorate  
-- [ ] Ai explicat pe foaie unghiul de 120  
+- [ ] Ai desenat poligonul, cu unghiul calculat `360 / laturi`  
+- [ ] Titlul e scris pe ecran  
 - [ ] Fișierul se numește `Prenume_Nume_P3_L2.py`  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Desenează un **curcubeu** cu 7 arce, folosind o listă de culori și `circle` cu raze diferite  
-- [ ] Desenează un **tren** din dreptunghiuri umplute și cercuri pentru roți  
-- [ ] Desenează o **față zâmbitoare** (cerc galben, doi ochi, o gură)  
-- [ ] Folosește `colormode(255)` și culori făcute de tine  
+## Bonus ★★★ — Provocare: Scena de iarnă
+*Doar dacă ai terminat Complet. Adaugă în **aceeași scenă** cu omul de zăpadă, în același program.*
+
+- [ ] Desenează o **sanie** lângă omul de zăpadă: un dreptunghi umplut și o talpă curbată în față  
+- [ ] Desenează un **fulg de nea** cu 6 brațe, fiecare cu două crenguțe, pe cer  
+- [ ] Desenează un **brad** din 3 triunghiuri verzi, unul peste altul, mai mici spre vârf, cu un trunchi maro  
+- [ ] Fă **cerul de iarnă**: fundal albastru închis, o lună galbenă și 10 stele mici, în locuri aleatoare  
+
 
 ---
 
@@ -448,11 +376,248 @@ Răspunde pe foaie:
 ---
 
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny.  
+1. Refă **Exemplele 1–8** în Thonny, scrise de mână.  
 2. Desenează un **steag** (trei dungi colorate).  
 3. Desenează **o floare**: cerc galben în mijloc și 6 cercuri roz în jur (muți țestoasa cu `goto`).  
-4. **Bonus:** desenează un **semafor** complet, cu o cutie neagră în spatele celor trei lumini.  
-5. Salvează totul ca `Tema_P3_L2_Prenume_Nume.py`.
+4. **Bonus:** desenează o **mașină** din dreptunghiuri umplute și două roți (cercuri).  
+5. **Poligoane colorate.** Desenează, unul lângă altul, un **triunghi**, un **pătrat**, un **pentagon** și un **hexagon**, fiecare umplut cu altă culoare. Folosește pentru fiecare numărul de laturi și unghiul `360 / laturi`.  
+6. Salvează totul ca `Tema_P3_L2_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le în Thonny, rulează-le și schimbă-le după preferințe.
+
+#### Acasă 1 — Culori cu cod
+
+```python
+import turtle
+
+t = turtle.Turtle()
+t.pensize(8)
+
+t.color("#ff8800")
+t.forward(100)
+
+turtle.colormode(255)
+t.color(30, 144, 255)
+t.left(90)
+t.forward(100)
+
+turtle.done()
+```
+
+**Ce vezi pe ecran:** o linie **portocalie** spre dreapta, apoi o linie **albastră** în sus.
+
+Există două feluri de a scrie o culoare cu cod:
+- **cod hexazecimal**: `"#ff8800"` (cele trei perechi sunt cantitatea de roșu, verde și albastru);
+- **trei numere** de la 0 la 255 (roșu, verde, albastru), după ce scrii `turtle.colormode(255)`.
+
+#### Acasă 2 — Semaforul
+
+```python
+import turtle
+
+screen = turtle.Screen()
+screen.bgcolor("lightgray")
+
+t = turtle.Turtle()
+t.hideturtle()
+t.penup()
+
+t.goto(0, 80)
+t.dot(60, "red")
+t.goto(0, 0)
+t.dot(60, "yellow")
+t.goto(0, -80)
+t.dot(60, "green")
+
+turtle.done()
+```
+
+**Ce vezi pe ecran:** pe fundal gri deschis, **trei cercuri una sub alta**: sus roșu, la mijloc galben, jos verde. Cu `penup()` și `goto` mutăm țestoasa, iar `dot` pune un cerc plin acolo.
+
+### Încă două exerciții
+
+**Ce desenează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+import turtle
+
+t = turtle.Turtle()
+t.color("red", "yellow")
+t.begin_fill()
+for i in range(5):
+    t.forward(80)
+    t.left(72)
+t.end_fill()
+
+turtle.done()
+```
+
+**Găsește greșelile.** Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
+
+```text
+import turtle
+t = turtle.turtle()
+t.color("red" "yellow")
+t.begin_fill
+for i in range(4):
+t.forward(100)
+    t.left(90)
+t.end_fill()
+turtle.done()
+```
+
+---
+
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit. Fiecare cod de mai jos e un program întreg: ca să le pui în scena ta, copiezi liniile care desenează în programul cu omul de zăpadă, înainte de `turtle.done()`.*
+
+### 1. Sania
+
+```python
+import turtle
+
+screen = turtle.Screen()
+screen.bgcolor("skyblue")
+
+t = turtle.Turtle()
+t.speed(0)
+t.pensize(3)
+
+# corpul saniei
+t.color("black", "brown")
+t.penup()
+t.goto(60, -150)
+t.pendown()
+t.begin_fill()
+for i in range(2):
+    t.forward(80)
+    t.left(90)
+    t.forward(25)
+    t.left(90)
+t.end_fill()
+
+# talpa, cu capătul curbat în sus
+t.pensize(5)
+t.penup()
+t.goto(50, -150)
+t.pendown()
+t.forward(100)
+t.circle(10, 180)
+
+turtle.done()
+```
+
+**Ce vezi pe ecran:** o **sanie** maro, cu talpa neagră care se curbează în sus în față. Corpul este un dreptunghi de 80 pe 25, iar `circle(10, 180)` desenează doar jumătate de cerc, pentru capătul talpii.
+
+### 2. Fulgul de nea
+
+```python
+import turtle
+
+screen = turtle.Screen()
+screen.bgcolor("navy")
+
+t = turtle.Turtle()
+t.speed(0)
+t.color("white")
+t.pensize(2)
+
+for i in range(6):
+    t.forward(40)
+    t.left(45)
+    t.forward(20)
+    t.backward(20)
+    t.right(90)
+    t.forward(20)
+    t.backward(20)
+    t.left(45)
+    t.forward(30)
+    t.left(45)
+    t.forward(15)
+    t.backward(15)
+    t.right(90)
+    t.forward(15)
+    t.backward(15)
+    t.left(45)
+    t.backward(70)
+    t.left(60)
+
+turtle.done()
+```
+
+**Ce vezi pe ecran:** un **fulg alb** cu 6 brațe. Fiecare braț are 70 de pași și două perechi de crenguțe. După fiecare braț, țestoasa se întoarce în centru (`backward(70)`) și se rotește cu `60` de grade (`360 / 6`).
+
+### 3. Bradul
+
+```python
+import turtle
+
+screen = turtle.Screen()
+screen.bgcolor("skyblue")
+
+t = turtle.Turtle()
+t.speed(0)
+
+# trunchiul
+t.color("brown")
+t.penup()
+t.goto(-10, -150)
+t.pendown()
+t.begin_fill()
+for i in range(2):
+    t.forward(20)
+    t.left(90)
+    t.forward(30)
+    t.left(90)
+t.end_fill()
+
+# trei triunghiuri, mai mici spre vârf
+t.color("darkgreen")
+for latura, y in [(100, -120), (80, -80), (60, -40)]:
+    t.penup()
+    t.goto(-latura / 2, y)
+    t.pendown()
+    t.begin_fill()
+    for i in range(3):
+        t.forward(latura)
+        t.left(120)
+    t.end_fill()
+
+t.hideturtle()
+turtle.done()
+```
+
+**Ce vezi pe ecran:** un **brad** verde din trei triunghiuri puse unul peste altul, cu un trunchi maro dedesubt. Mijlocul fiecărui triunghi e la `x = 0`, pentru că pornim din `-latura / 2`.
+
+### 4. Cerul de iarnă
+
+```python
+import random
+import turtle
+
+screen = turtle.Screen()
+screen.bgcolor("midnightblue")
+
+t = turtle.Turtle()
+t.speed(0)
+t.penup()
+t.hideturtle()
+
+t.goto(150, 100)
+t.dot(60, "yellow")
+
+for i in range(10):
+    x = random.randint(-250, 250)
+    y = random.randint(50, 250)
+    t.goto(x, y)
+    t.dot(6, "white")
+
+turtle.done()
+```
+
+**Ce vezi pe ecran:** pe fundal albastru închis, o **lună galbenă** și **10 stele mici** albe, în locuri diferite la fiecare rulare. `random.randint` știi din Modulul 1.
 
 ---
 

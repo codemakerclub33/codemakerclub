@@ -339,12 +339,13 @@ Scrie un program care:
 
 ---
 
-## Bonus ★★★ — Provocare: Calcule de zi cu zi
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Calculatorul de buzunar, versiunea PRO
+*Doar dacă ai terminat Complet. Lucrezi pe **propriul tău** calculator: păstrează-l și adaugă la sfârșit calcule cu aceleași numere `a` și `b`.*
 
-- [ ] Citește un număr și afișează dacă e par (`restul` la 2) sau impar  
-- [ ] Citește un număr de zile și afișează câte **săptămâni** și câte **zile** sunt  
-- [ ] Calculează **aria** și **perimetrul** unui pătrat, citind latura  
+- [ ] Afișează **media** celor două numere: `(a + b) / 2`  
+- [ ] Afișează **pătratul** și **cubul** lui `a` (cu `**`)  
+- [ ] Gândește-te la `a` și `b` ca la laturile unui dreptunghi și afișează **aria** și **perimetrul** lui  
+- [ ] Gândește-te la `a` ca la un număr de zile și afișează câte **săptămâni** și câte **zile** sunt (cu `//` și `%`)
 
 ---
 
@@ -458,51 +459,150 @@ print("Restul:", a % 0)
 
 ## Răspunsuri la bonus
 
-*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit. Fiecare soluție pornește de la calculatorul din Exemplul 8; ce scrie utilizatorul apare pe același rând cu întrebarea.*
 
-### 1. Par sau impar, cu restul
+### 1. Media celor două numere
 
 ```python
-n = int(input("Un numar: "))
-print("Restul la 2 este", n % 2)
-print("(0 inseamna par, 1 inseamna impar)")
+print("=== Calculator ===")
+a = int(input("Primul numar: "))
+b = int(input("Al doilea numar: "))
+print("-" * 20)
+print(a, "+", b, "=", a + b)
+print(a, "-", b, "=", a - b)
+print(a, "*", b, "=", a * b)
+print(a, "/", b, "=", a / b)
+print(a, "//", b, "=", a // b)
+print(a, "%", b, "=", a % b)
+print(a, "**", b, "=", a ** b)
+
+# Media
+print("Media:", (a + b) / 2)
 ```
 
 **Ieșire:**
 ```text
-Un numar: 7
-Restul la 2 este 1
-(0 inseamna par, 1 inseamna impar)
+=== Calculator ===
+Primul numar: 17
+Al doilea numar: 5
+--------------------
+17 + 5 = 22
+17 - 5 = 12
+17 * 5 = 85
+17 / 5 = 3.4
+17 // 5 = 3
+17 % 5 = 2
+17 ** 5 = 1419857
+Media: 11.0
 ```
 
-### 2. Săptămâni și zile
+### 2. Pătratul și cubul lui a
 
 ```python
-zile = int(input("Cate zile? "))
-print("Saptamani:", zile // 7)
-print("Zile ramase:", zile % 7)
+print("=== Calculator ===")
+a = int(input("Primul numar: "))
+b = int(input("Al doilea numar: "))
+print("-" * 20)
+print(a, "+", b, "=", a + b)
+print(a, "-", b, "=", a - b)
+print(a, "*", b, "=", a * b)
+print(a, "/", b, "=", a / b)
+print(a, "//", b, "=", a // b)
+print(a, "%", b, "=", a % b)
+print(a, "**", b, "=", a ** b)
+
+# Patratul si cubul lui a
+print("Patratul lui", a, "este", a ** 2)
+print("Cubul lui", a, "este", a ** 3)
 ```
 
 **Ieșire:**
 ```text
-Cate zile? 17
-Saptamani: 2
-Zile ramase: 3
+=== Calculator ===
+Primul numar: 17
+Al doilea numar: 5
+--------------------
+17 + 5 = 22
+17 - 5 = 12
+17 * 5 = 85
+17 / 5 = 3.4
+17 // 5 = 3
+17 % 5 = 2
+17 ** 5 = 1419857
+Patratul lui 17 este 289
+Cubul lui 17 este 4913
 ```
 
-### 3. Aria și perimetrul pătratului
+### 3. Aria și perimetrul dreptunghiului
 
 ```python
-latura = int(input("Latura: "))
-print("Aria:", latura * latura)
-print("Perimetrul:", 4 * latura)
+print("=== Calculator ===")
+a = int(input("Primul numar: "))
+b = int(input("Al doilea numar: "))
+print("-" * 20)
+print(a, "+", b, "=", a + b)
+print(a, "-", b, "=", a - b)
+print(a, "*", b, "=", a * b)
+print(a, "/", b, "=", a / b)
+print(a, "//", b, "=", a // b)
+print(a, "%", b, "=", a % b)
+print(a, "**", b, "=", a ** b)
+
+# Dreptunghiul cu laturile a si b
+print("Aria dreptunghiului:", a * b)
+print("Perimetrul dreptunghiului:", 2 * (a + b))
 ```
 
 **Ieșire:**
 ```text
-Latura: 5
-Aria: 25
-Perimetrul: 20
+=== Calculator ===
+Primul numar: 17
+Al doilea numar: 5
+--------------------
+17 + 5 = 22
+17 - 5 = 12
+17 * 5 = 85
+17 / 5 = 3.4
+17 // 5 = 3
+17 % 5 = 2
+17 ** 5 = 1419857
+Aria dreptunghiului: 85
+Perimetrul dreptunghiului: 44
+```
+
+### 4. Zilele în săptămâni și zile
+
+```python
+print("=== Calculator ===")
+a = int(input("Primul numar: "))
+b = int(input("Al doilea numar: "))
+print("-" * 20)
+print(a, "+", b, "=", a + b)
+print(a, "-", b, "=", a - b)
+print(a, "*", b, "=", a * b)
+print(a, "/", b, "=", a / b)
+print(a, "//", b, "=", a // b)
+print(a, "%", b, "=", a % b)
+print(a, "**", b, "=", a ** b)
+
+# a zile in saptamani si zile
+print(a, "zile =", a // 7, "saptamani si", a % 7, "zile")
+```
+
+**Ieșire:**
+```text
+=== Calculator ===
+Primul numar: 17
+Al doilea numar: 5
+--------------------
+17 + 5 = 22
+17 - 5 = 12
+17 * 5 = 85
+17 / 5 = 3.4
+17 // 5 = 3
+17 % 5 = 2
+17 ** 5 = 1419857
+17 zile = 2 saptamani si 3 zile
 ```
 
 ---

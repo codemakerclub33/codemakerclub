@@ -323,13 +323,13 @@ Scrie un program care:
 
 ---
 
-## Bonus ★★★ — Provocare: Vânătorul de numere prime
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Păzitorul, versiunea ta
+*Doar dacă ai terminat Complet. Lucrezi pe **propriul tău** păzitor al tezaurului: păstrează-l și îmbunătățește-l.*
 
-- [ ] Afișează toate numerele **prime** de la 2 la 50  
-- [ ] Cere un număr între 1 și 10 **până când** utilizatorul scrie unul corect  
-- [ ] Afișează numerele de la 1 la 20, **sărind** multiplii lui 3  
-- [ ] Face un joc de ghicit cu indicii „mai mare” / „mai mic” și număr limitat de încercări  
+- [ ] După fiecare greșeală, afișează **câte încercări** mai ai  
+- [ ] După a doua greșeală, dă un **indiciu**: prima literă a parolei (`parola[0]`)  
+- [ ] Un răspuns **gol** nu consumă încercarea: spune „Scrie ceva!” și folosește `continue` (ai nevoie de un `while` cu contor)  
+- [ ] Tezaurul are 100 de monede și **fiecare greșeală** scade 30. Dacă ai deschis ușa, afișează câte monede iei
 
 ---
 
@@ -463,91 +463,174 @@ while True
 
 ## Răspunsuri la bonus
 
-*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit. Fiecare soluție pornește de la păzitorul din Exemplul 8; ce scrie utilizatorul apare pe același rând cu întrebarea.*
 
-### 1. Numerele prime de la 2 la 50
-
-```python
-for n in range(2, 51):
-    prim = True
-    for i in range(2, n):
-        if n % i == 0:
-            prim = False
-            break
-    if prim:
-        print(n, end=" ")
-print()
-```
-
-**Ieșire:**
-```text
-2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 
-```
-
-### 2. Număr între 1 și 10, până e corect
+### 1. Câte încercări mai ai
 
 ```python
-while True:
-    n = int(input("Un numar intre 1 si 10: "))
-    if 1 <= n <= 10:
+parola = "comoara"
+incercari = 3
+print("Un paznic iti blocheaza drumul spre tezaur.")
+print(f"Ai {incercari} incercari sa ghicesti parola.")
+
+deschis = False
+for numar in range(1, incercari + 1):
+    raspuns = input(f"Incercarea {numar}: ").lower()
+    if raspuns == parola:
+        deschis = True
         break
-    print("Nu este bun, mai incearca!")
-print("Ai scris", n)
+    print("Paznicul rade: 'Gresit!'")
+    print(f"Incercari ramase: {incercari - numar}")
+
+print("-" * 25)
+if deschis:
+    print("Usa se deschide... Ai gasit tezaurul!")
+else:
+    print("Paznicul te alunga. Mai incearca maine!")
 ```
 
 **Ieșire:**
 ```text
-Un numar intre 1 si 10: 15
-Nu este bun, mai incearca!
-Un numar intre 1 si 10: 0
-Nu este bun, mai incearca!
-Un numar intre 1 si 10: 7
-Ai scris 7
+Un paznic iti blocheaza drumul spre tezaur.
+Ai 3 incercari sa ghicesti parola.
+Incercarea 1: aur
+Paznicul rade: 'Gresit!'
+Incercari ramase: 2
+Incercarea 2: diamant
+Paznicul rade: 'Gresit!'
+Incercari ramase: 1
+Incercarea 3: comoara
+-------------------------
+Usa se deschide... Ai gasit tezaurul!
 ```
 
-### 3. De la 1 la 20, fără multiplii lui 3
+`incercari - numar` este numărul de încercări rămase după încercarea curentă.
+
+### 2. Indiciul
 
 ```python
-for n in range(1, 21):
-    if n % 3 == 0:
+parola = "comoara"
+incercari = 3
+print("Un paznic iti blocheaza drumul spre tezaur.")
+print(f"Ai {incercari} incercari sa ghicesti parola.")
+
+deschis = False
+for numar in range(1, incercari + 1):
+    raspuns = input(f"Incercarea {numar}: ").lower()
+    if raspuns == parola:
+        deschis = True
+        break
+    print("Paznicul rade: 'Gresit!'")
+    if numar == 2:
+        print(f"Indiciu: parola incepe cu litera {parola[0]}")
+
+print("-" * 25)
+if deschis:
+    print("Usa se deschide... Ai gasit tezaurul!")
+else:
+    print("Paznicul te alunga. Mai incearca maine!")
+```
+
+**Ieșire:**
+```text
+Un paznic iti blocheaza drumul spre tezaur.
+Ai 3 incercari sa ghicesti parola.
+Incercarea 1: aur
+Paznicul rade: 'Gresit!'
+Incercarea 2: diamant
+Paznicul rade: 'Gresit!'
+Indiciu: parola incepe cu litera c
+Incercarea 3: comoara
+-------------------------
+Usa se deschide... Ai gasit tezaurul!
+```
+
+### 3. Răspuns gol, cu `continue`
+
+```python
+parola = "comoara"
+incercari = 3
+print("Un paznic iti blocheaza drumul spre tezaur.")
+print(f"Ai {incercari} incercari sa ghicesti parola.")
+
+deschis = False
+numar = 1
+while numar <= incercari:
+    raspuns = input(f"Incercarea {numar}: ").lower().strip()
+    if raspuns == "":
+        print("Scrie ceva!")
         continue
-    print(n, end=" ")
-print()
+    if raspuns == parola:
+        deschis = True
+        break
+    print("Paznicul rade: 'Gresit!'")
+    numar += 1
+
+print("-" * 25)
+if deschis:
+    print("Usa se deschide... Ai gasit tezaurul!")
+else:
+    print("Paznicul te alunga. Mai incearca maine!")
 ```
 
 **Ieșire:**
 ```text
-1 2 4 5 7 8 10 11 13 14 16 17 19 20 
+Un paznic iti blocheaza drumul spre tezaur.
+Ai 3 incercari sa ghicesti parola.
+Incercarea 1: 
+Scrie ceva!
+Incercarea 1: aur
+Paznicul rade: 'Gresit!'
+Incercarea 2:   
+Scrie ceva!
+Incercarea 2: comoara
+-------------------------
+Usa se deschide... Ai gasit tezaurul!
 ```
 
-### 4. Joc de ghicit cu încercări limitate
+Aici folosim `while` cu contorul `numar`: `numar += 1` se face doar când răspunsul nu e gol, iar `continue` sare peste restul buclei fără să consume încercarea. Un răspuns cu doar spații devine gol după `.strip()`.
+
+### 4. Monedele din tezaur
 
 ```python
-secret = 37
-ghicit = False
-for incercare in range(1, 6):
-    ghici = int(input(f"Incercarea {incercare}: "))
-    if ghici == secret:
-        print("Bravo!")
-        ghicit = True
+parola = "comoara"
+incercari = 3
+print("Un paznic iti blocheaza drumul spre tezaur.")
+print(f"Ai {incercari} incercari sa ghicesti parola.")
+
+deschis = False
+monede = 100
+for numar in range(1, incercari + 1):
+    raspuns = input(f"Incercarea {numar}: ").lower()
+    if raspuns == parola:
+        deschis = True
         break
-    elif ghici < secret:
-        print("Mai mare!")
-    else:
-        print("Mai mic!")
-if not ghicit:
-    print("Ai pierdut. Numarul era", secret)
+    print("Paznicul rade: 'Gresit!'")
+    monede -= 30
+
+print("-" * 25)
+if deschis:
+    print("Usa se deschide... Ai gasit tezaurul!")
+    print(f"Ai luat {monede} monede.")
+else:
+    print("Paznicul te alunga. Mai incearca maine!")
 ```
 
 **Ieșire:**
 ```text
-Incercarea 1: 50
-Mai mic!
-Incercarea 2: 25
-Mai mare!
-Incercarea 3: 37
-Bravo!
+Un paznic iti blocheaza drumul spre tezaur.
+Ai 3 incercari sa ghicesti parola.
+Incercarea 1: aur
+Paznicul rade: 'Gresit!'
+Incercarea 2: diamant
+Paznicul rade: 'Gresit!'
+Incercarea 3: comoara
+-------------------------
+Usa se deschide... Ai gasit tezaurul!
+Ai luat 40 monede.
 ```
+
+Au fost două greșeli, deci 100 − 30 − 30 = 40 de monede.
 
 ---
 ## Ce urmează — Lecția 5

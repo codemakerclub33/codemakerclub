@@ -315,13 +315,13 @@ Scrie un program care:
 
 ---
 
-## Bonus ★★★ — Provocare: Tabla de șah și rombul
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Atelierul de modele, mai multe modele
+*Doar dacă ai terminat Complet. Lucrezi pe **propriul tău** atelier: păstrează-l și adaugă la sfârșit, cu același `n`.*
 
-- [ ] Afișează **tabla înmulțirii 1–9** completă, frumos aliniată  
-- [ ] Desenează un **romb** din `*`  
-- [ ] Afișează o **tablă de șah** de 8×8 cu `#` și `.` alternate  
-- [ ] Afișează un triunghi **inversat** (de la 5 stele la 1)  
+- [ ] Afișează un **triunghi inversat**, de la `n` stele până la 1  
+- [ ] Afișează un **romb**: piramida cu `n` rânduri, urmată de piramida inversată cu `n - 1` rânduri  
+- [ ] Afișează o **tablă de șah** `n × n` cu `#` și `.` alternate  
+- [ ] Afișează **tabla înmulțirii** de la 1 la `n`, frumos aliniată (`{x:3}`)
 
 ---
 
@@ -431,90 +431,112 @@ print("Piramida:" * "-")
 
 ## Răspunsuri la bonus
 
-*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit. Fiecare soluție se adaugă la sfârșitul atelierului din Exemplul 8, care are deja `n`. Ieșirea arată doar partea nouă, pentru `n = 5`.*
 
-### 1. Tabla înmulțirii 1–9
+### 1. Triunghiul inversat
 
-```python
-for i in range(1, 10):
-    for j in range(1, 10):
-        print(f"{i * j:3}", end="")
-    print()
-```
-
-**Ieșire:**
-```text
-  1  2  3  4  5  6  7  8  9
-  2  4  6  8 10 12 14 16 18
-  3  6  9 12 15 18 21 24 27
-  4  8 12 16 20 24 28 32 36
-  5 10 15 20 25 30 35 40 45
-  6 12 18 24 30 36 42 48 54
-  7 14 21 28 35 42 49 56 63
-  8 16 24 32 40 48 56 64 72
-  9 18 27 36 45 54 63 72 81
-```
-
-### 2. Rombul
+Adaugă la sfârșitul programului:
 
 ```python
-n = 4
-for i in range(1, n + 1):
-    print(" " * (n - i) + "*" * (2 * i - 1))
-for i in range(n - 1, 0, -1):
-    print(" " * (n - i) + "*" * (2 * i - 1))
-```
-
-**Ieșire:**
-```text
-   *
-  ***
- *****
-*******
- *****
-  ***
-   *
-```
-
-### 3. Tabla de șah 8×8
-
-```python
-for rand in range(8):
-    for col in range(8):
-        if (rand + col) % 2 == 0:
-            print("#", end="")
-        else:
-            print(".", end="")
-    print()
-```
-
-**Ieșire:**
-```text
-#.#.#.#.
-.#.#.#.#
-#.#.#.#.
-.#.#.#.#
-#.#.#.#.
-.#.#.#.#
-#.#.#.#.
-.#.#.#.#
-```
-
-### 4. Triunghiul inversat
-
-```python
-for i in range(5, 0, -1):
+print("\nTriunghi inversat:")
+for i in range(n, 0, -1):
     print("*" * i)
 ```
 
-**Ieșire:**
+**Ieșire (doar partea nouă):**
 ```text
+
+Triunghi inversat:
 *****
 ****
 ***
 **
 *
 ```
+
+`range(n, 0, -1)` numără înapoi, de la `n` la 1, deci rândurile scad.
+
+### 2. Rombul
+
+Adaugă la sfârșitul programului:
+
+```python
+print("\nRomb:")
+for i in range(1, n + 1):
+    print(" " * (n - i) + "*" * (2 * i - 1))
+for i in range(n - 1, 0, -1):
+    print(" " * (n - i) + "*" * (2 * i - 1))
+```
+
+**Ieșire (doar partea nouă):**
+```text
+
+Romb:
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+```
+
+Prima buclă face partea de sus, a doua partea de jos, fără să repete rândul din mijloc.
+
+### 3. Tabla de șah
+
+Adaugă la sfârșitul programului:
+
+```python
+print("\nTabla de sah:")
+for rand in range(n):
+    for coloana in range(n):
+        if (rand + coloana) % 2 == 0:
+            print("#", end="")
+        else:
+            print(".", end="")
+    print()
+```
+
+**Ieșire (doar partea nouă):**
+```text
+
+Tabla de sah:
+#.#.#
+.#.#.
+#.#.#
+.#.#.
+#.#.#
+```
+
+Un pătrat este `#` când `rand + coloana` este par, altfel `.`; așa apar culorile alternate.
+
+### 4. Tabla înmulțirii de la 1 la n
+
+Adaugă la sfârșitul programului:
+
+```python
+print("\nTabla inmultirii:")
+for i in range(1, n + 1):
+    for j in range(1, n + 1):
+        print(f"{i * j:3}", end="")
+    print()
+```
+
+**Ieșire (doar partea nouă):**
+```text
+
+Tabla inmultirii:
+  1  2  3  4  5
+  2  4  6  8 10
+  3  6  9 12 15
+  4  8 12 16 20
+  5 10 15 20 25
+```
+
+`print()` de la sfârșitul buclei interioare trece pe rândul următor.
 
 ---
 ## Ce urmează — Lecția 3

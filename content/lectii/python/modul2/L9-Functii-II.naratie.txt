@@ -22,7 +22,7 @@ Greșeli frecvente. Value Error too many values to unpack: numărul de variabile
 
 Proiectul de azi. Calculatorul cu funcții. Minim înseamnă listă în funcție și două valori returnate. Complet înseamnă calculator cu meniu și main.
 
-Provocare, trei stele. Calculatorul cu memorie. Doar dacă ai terminat varianta completă. Adaugi la calculator memoria: ultimul rezultat poate fi folosit ca prim număr. Scrii o funcție care spune dacă un text este palindrom. Faci o funcție care găsește cel mai mare divizor comun. Scrii un joc de zaruri în care fiecare pas este o funcție.
+Provocare, trei stele. Calculatorul, versiunea ta. Doar dacă ai terminat varianta completă. Lucrezi pe propriul tău calculator cu funcții și adaugi, pe rând, patru idei. Memoria: după un rezultat, calculatorul întreabă dacă vrei să-l folosești ca prim număr. O opțiune nouă, media celor două numere, printr-o funcție. Încă o opțiune nouă, cel mai mare divizor comun, tot printr-o funcție. Și un contor care numără câte operații ai făcut și îl afișează înainte de pa.
 
 Recapitulare. O funcție poate primi o listă. Return a virgulă b dă două valori. Funcțiile se pot chema între ele, iar fiecare face un singur lucru. Argumentele pot fi date cu nume. Un docstring descrie funcția. Main organizează programul.
 

@@ -1,25 +1,31 @@
 Lecția opt din Modulul trei. Cursa țestoaselor.
 
-Astăzi organizezi o cursă între mai multe țestoase. Proiectul se numește Cursa țestoaselor. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L opt, punct P Y.
+Până acum aveai o singură țestoasă. Azi sunt cinci, și aleargă una contra alteia! Care ajunge prima? Nu se știe: fiecare pas este ales la întâmplare. Poți și să pariezi pe câștigătoare. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L opt, punct P Y.
 
-Obiectivul. La final creezi mai multe țestoase, le ții într-o listă, le muți cu pași aleatori, oprești cursa când una trece de linia de sosire, afli câștigătoarea, faci un clasament și construiești o cursă cu pariu. Minim: două țestoase care aleargă până la linia de sosire și un câștigător afișat. Complet: minim, plus cinci țestoase, clasament și pariu.
+Ce facem azi. La final creezi mai multe țestoase, le ții într-o listă, le muți cu pași aleatori, oprești cursa când una trece de linia de sosire, afli câștigătoarea, faci un clasament și construiești o cursă cu pariu. Aproape orice joc are mai multe personaje care se mișcă în același timp. Ca să le gestionezi, le pui într-o listă și le muți cu o buclă.
 
-Primul pas. Țestoase la start. Fiecare țestoasă este un obiect separat, cu numele ei, culoarea ei și poziția ei. Pui două țestoase, una roșie și una albastră, una deasupra celeilalte, în partea stângă. Linia de sosire este o linie trasă în partea dreaptă. O țestoasă aleargă cu pași aleatori, de la unu la cincisprezece.
+Instrucțiuni noi azi. Creezi mai multe țestoase și le păstrezi într-o listă, cu append. While repetă cursa până când o țestoasă ajunge la linie. Time punct sleep face o pauză mică, ca să vedem cursa. Max găsește valoarea cea mai mare, iar index îți spune la ce poziție se află. Sort cu reverse true sortează descrescător. Screen punct text input este ca input, dar într-o căsuță de dialog.
 
-Al doilea pas. Cursa cu două țestoase. Cu while, cursa continuă cât timp nici una nu a trecut de linia de final. La fiecare pas, fiecare țestoasă merge o distanță aleatorie. Câștigă prima care ajunge.
+Primul pas. Două țestoase la start, una roșie și una albastră, fiecare cu numele ei. Apoi linia de sosire. Start și final sunt constante: nume scrise cu litere mari pentru valori care nu se schimbă. Dacă vrei o pistă mai lungă, le schimbi într-un singur loc.
 
-Al treilea pas. Mai multe țestoase: lista. Cinci țestoase într-o listă, cu culori diferite. Le muți pe toate cu o buclă for, la fiecare pas.
+Al doilea pas. Cursa cu două țestoase. Fiecare face pași aleatori, iar bucla while merge cât timp amândouă sunt înainte de linia de sosire. Când una trece linia, afișăm câștigătoarea. Pauza dintre pași ne lasă să urmărim cursa.
 
-Al patrulea pas. Funcții: câștigătorul și clasamentul. O funcție află cine este cel mai departe, cu max și index. Altă funcție sortează pozițiile și afișează clasamentul.
+Al treilea pas. Lista de țestoase. Nu mai dăm fiecărei țestoase un nume separat. Le adăugăm într-o listă și ne referim la ele prin poziția din listă: zero, unu, doi, și așa mai departe. Variabila câștigător pornește de la minus unu, adică nimeni, și păstrează numărul țestoasei care a trecut prima linia.
 
-Al cincilea pas. Pariul. Alegi pe care țestoasă pariezi, iar la final programul îți spune dacă ai câștigat.
+Al patrulea pas. Câștigătorul și clasamentul. Funcția primește pozițiile și numele țestoaselor. Max găsește cea mai mare poziție, iar index ne spune a cui este. Pentru clasament punem fiecare poziție împreună cu numele, sortăm descrescător și păstrăm doar numele.
 
-Al șaselea pas. Mini-proiect. Cursa țestoaselor, completă, cu start, cursă, câștigător, clasament și pariu.
+Al cincilea pas. Pariul. O căsuță de dialog întreabă pe ce culoare pariezi. Dacă apeși Cancel, răspunsul este nimic și îl transformăm în text gol. Lower face literele mici, iar strip taie spațiile de la margini.
 
-Greșeli frecvente. Țestoasele merg la fel: lipsește random. Cursa nu se oprește: condiția while este greșită. Clasamentul este greșit: pozițiile și numele nu sunt în aceeași ordine.
+Al șaselea pas. Mini-proiect. Cursa țestoaselor are patru funcții: desenează pista, creează țestoasele, cursa și funcția principală. Funcția cursă returnează numărul câștigătorului, iar funcția principală folosește rezultatul.
 
-Proiectul de azi. Cursa țestoaselor. Minim înseamnă două țestoase și un câștigător. Complet înseamnă cinci țestoase, clasament și pariu.
+Greșeli frecvente. Eroare cu metoda x cor: ai uitat parantezele. Țestoasele desenează linii pe pistă: creionul este jos. Cursa nu se termină: condiția din while nu se schimbă. Cursa trece prea repede: lipsește pauza. Eroare de index: ai ales o țestoasă care nu există. Câștigătorul este greșit: pozițiile și numele nu sunt în aceeași ordine. Eroare după Cancel: răspunsul este nimic, nu text.
 
-Recapitulare. Fiecare țestoasă este un obiect separat. Mai multe țestoase se păstrează într-o listă. Cursa merge până când condiția de oprire devine adevărată. Constantele se scriu cu litere mari. Max și index ajută la câștigător.
+Proiectul de azi. Cursa țestoaselor. Minim înseamnă două țestoase care aleargă până la linia de sosire și câștigătorul afișat. Complet înseamnă și cursa ta, cu cel puțin șase țestoase într-o listă, pista desenată, pariul, mesajul final scris pe ecran și clasamentul.
 
-Succes la cursă.
+Provocare, trei stele. Cursa devine campionat. Doar dacă ai terminat varianta completă. Țestoasa norocoasă: din când în când, o țestoasă aleasă la întâmplare primește un bonus de douăzeci de pași. Zona de noroi: o fâșie maro pe pistă, în care țestoasele merg mai încet. Podiumul: la final scrii pe ecran primele trei locuri și măreși țestoasa câștigătoare. Și revanșa: după cursă întrebi dacă mai jucăm, iar punctele se adună pentru fiecare pariu câștigat.
+
+Recapitulare. Fiecare țestoasă este un obiect separat. Mai multe țestoase se păstrează într-o listă și se mută cu o buclă. Cursa merge până când condiția de oprire devine adevărată. Max, index și sort ne ajută să găsim câștigătorul și clasamentul.
+
+Ce urmează. În lecția următoare construim un joc complet: Prinde steaua, cu scor, timp și vieți.
+
+Succes cu cursa.

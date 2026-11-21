@@ -1,23 +1,29 @@
-Lecția unu din Modulul trei. Broasca țestoasă merge.
+Lecția unu din Modulul trei. Scara țestoasei.
 
 Astăzi începem să desenăm cu Python. Folosim o mică țestoasă care merge pe ecran și lasă o urmă. Proiectul se numește Scara țestoasei. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L unu, punct P Y.
 
-Obiectivul. La final pornești o fereastră Turtle, miști țestoasa cu forward, backward, left și right, desenezi un pătrat cu for, ridici și cobori creionul și muți țestoasa cu goto. Minim: o fereastră cu o linie și un pătrat desenat. Complet: minim, plus țestoasa schimbă locul fără să deseneze, afișează poziția și scrie un text pe ecran.
+Ce facem azi. La final pornești o fereastră Turtle, miști țestoasa cu forward, backward, left și right, desenezi un pătrat cu for, ridici și cobori creionul și muți țestoasa cu goto. Desenul este cea mai bună metodă să vezi ce face un program: dacă ceva nu merge, vezi imediat unde a greșit țestoasa. Desenele de azi sunt baza pentru jocurile din ultimele lecții ale modulului.
 
-Primul pas. Prima fereastră. Pentru desen folosim un modul al lui Python, numit turtle. Un modul este o cutie cu unelte pregătite. Scrii import turtle și creezi țestoasa. Se deschide o fereastră cu fundal alb, iar la final pui turtle punct done, ca fereastra să rămână deschisă. Apoi miști țestoasa: forward merge înainte, backward înapoi, left se întoarce la stânga, right la dreapta.
+Instrucțiuni noi azi. Import turtle aduce uneltele de desen. Forward merge înainte, iar left se rotește la stânga. Penup, goto și pendown mută țestoasa fără să deseneze. Write scrie text pe ecran. Turtle punct done ține fereastra deschisă.
 
-Al doilea pas. Unghiuri și pătratul. Un cerc complet are trei sute șaizeci de grade. Un colț drept, ca la caiet, are nouăzeci de grade. Pătratul se desenează cu patru laturi și patru rotiri de nouăzeci de grade. Mai întâi îl faci cu mâna, opt linii, apoi cu for, doar trei linii. Ai învățat în Modulul doi că for repetă instrucțiunile, iar acum le folosești la desen.
+Primul pas. Prima fereastră. Pentru desen folosim un modul al lui Python, numit turtle. Un modul este o cutie cu unelte pregătite. Scrii import turtle și creezi țestoasa. Se deschide o fereastră cu fundal alb, iar la final pui turtle punct done, ca fereastra să rămână deschisă. Atenție: nu salva niciodată fișierul cu numele turtle punct py, pentru că Python ar încerca să se importe pe el însuși. Apoi miști țestoasa: forward merge înainte, backward înapoi, left se întoarce la stânga, right la dreapta.
 
-Al treilea pas. Viteză, formă și creion. Poți schimba forma, din săgeată în țestoasă adevărată, și viteza. Cu penup ridici creionul, iar țestoasa se mută fără să deseneze. Cu pendown îl cobori la loc.
+Al doilea pas. Unghiuri și pătratul. Un cerc complet are trei sute șaizeci de grade. Un colț drept, ca la caiet, are nouăzeci de grade. După fiecare rotire, forward merge în noua direcție. Pătratul are patru laturi și patru rotiri de nouăzeci de grade. Cu mâna ar fi opt linii de cod, dar cu for, doar trei. Ai învățat în Modulul doi că for repetă instrucțiunile, iar acum le folosești la desen.
 
-Al patrulea pas. Unde este țestoasa. Poți afla poziția, cu xcor și ycor, și direcția, cu heading. Cu goto muți țestoasa la coordonatele dorite. Cu write scrii un text pe ecran.
+Al treilea pas. Formă, viteză și creion. Poți schimba forma, din săgeată în țestoasă adevărată, și viteza. Cu penup ridici creionul, iar țestoasa se mută fără să deseneze. Cu goto o duci direct la un punct, iar cu pendown cobori creionul la loc. Fereastra are coordonate: centrul este zero, zero, x crește spre dreapta, iar y crește în sus.
+
+Al patrulea pas. Unde este țestoasa. Poți afla poziția, cu xcor și ycor, și direcția, cu heading. Cu write scrii un text pe ecran, iar cu hideturtle ascunzi țestoasa.
 
 Al cincilea pas. Mini-proiect. Scara țestoasei: o scară cu cinci trepte. Fiecare treaptă înseamnă patruzeci spre dreapta, patruzeci în sus, apoi țestoasa se îndreaptă din nou spre dreapta.
 
-Greșeli frecvente. Țestoasa nu apare: ai uitat turtle punct done sau import turtle. Pătratul nu se închide: rotirea nu este de nouăzeci de grade. Se desenează linii nedorite: ai uitat penup înainte de goto.
+Greșeli frecvente. Fereastra se închide imediat: ai uitat turtle punct done. Țestoasa nu apare: ai uitat import turtle sau l-ai scris cu majusculă. Se desenează linii nedorite: ai uitat penup înainte de goto. Pătratul nu se închide: rotirea nu este de nouăzeci de grade.
 
-Proiectul de azi. Scara țestoasei. Minim înseamnă o linie și un pătrat. Complet înseamnă și mutare fără desen, poziție și text.
+Proiectul de azi. Scara țestoasei. Minim înseamnă o fereastră cu un pătrat desenat cu for. Complet înseamnă și o scară cu cel puțin șase trepte, încă o formă desenată în alt loc, cu penup, goto și pendown, și numele tău scris pe ecran.
+
+Provocare, trei stele. Scara cu steag. Doar dacă ai terminat varianta completă. Pornești de la scara ta și o completezi în același program. Pui un steag în vârful scării, cu un băț în sus și un dreptunghi la capătul lui. Desenezi soarele, un punct galben mare cu opt raze în jur. Numerotezi treptele cu write, în buclă. Desenezi o a doua scară, mai mică, cu trei trepte, în partea dreaptă a ferestrei.
 
 Recapitulare. Import turtle creează țestoasa. Forward, backward, left și right o mișcă și o rotesc. For repetă desenul: pătratul are patru laturi și rotiri de nouăzeci de grade. Penup, goto și pendown mută țestoasa fără să deseneze. Xcor, ycor și heading arată unde este.
+
+Ce urmează. În lecția următoare desenezi forme și culori: triunghiuri, cercuri și umplerea formelor.
 
 Succes cu țestoasa.

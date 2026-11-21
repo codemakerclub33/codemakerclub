@@ -22,7 +22,7 @@ Greșeli frecvente. Index Error: index prea mare sau listă goală, iar ultimul 
 
 Proiectul de azi. Lista de cumpărături. Minim înseamnă o listă parcursă cu for. Complet înseamnă meniu cu adăugare, afișare și ștergere.
 
-Provocare, trei stele. Magazinul mai deștept. Doar dacă ai terminat varianta completă. Adaugi o opțiune care afișează câte produse sunt în listă. Citești șase numere și afișezi lista fără numerele negative. Inversezi o listă cu o buclă. Verifici dacă un cuvânt este în lista ta de cuvinte interzise.
+Provocare, trei stele. Lista de cumpărături, mai deșteaptă. Doar dacă ai terminat varianta completă. Lucrezi pe propria ta listă și adaugi în meniu, pe rând, patru opțiuni noi. Câte produse sunt în listă, cu len. Caută un produs, cu in. Anulează ultimul produs adăugat, cu pop. Și adaugă un produs urgent, chiar pe prima poziție, cu insert.
 
 Recapitulare. O listă ține mai multe valori, în ordine, între paranteze pătrate. Indexul începe de la zero, iar minus unu este ultimul. Append adaugă la sfârșit, insert pe o poziție. Remove șterge după valoare, pop după poziție. In verifică dacă un element există.
 

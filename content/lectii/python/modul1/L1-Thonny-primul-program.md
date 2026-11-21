@@ -309,6 +309,7 @@ Scrie un program care afișează, cu `print`, o carte de vizită cu numele tău,
 ### Pasul 2 — Complet
 Îmbunătățești cartea de vizită:
 
+**Gata când:**  
 - [ ] Are un chenar de `=` sus și jos, făcut cu `"=" * ...`  
 - [ ] Afișează un calcul (de exemplu anul nașterii)  
 - [ ] Are un desen din caractere (`*`, `#`, `|`, `-`, `/`): o casă, o stea sau un robot, minimum 5 linii  
@@ -317,14 +318,13 @@ Scrie un program care afișează, cu `print`, o carte de vizită cu numele tău,
 
 ---
 
-## Bonus ★★★ — Provocare: Robotul cu numărătoare
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Cartea de vizită, versiunea ta
+*Doar dacă ai terminat Complet. Lucrezi pe **propria ta** carte de vizită: păstrează-o și adaugă pe ea.*
 
-Robotul tău numără înainte de start.
-
-- [ ] Afișează `1 - 2 - 3 - GO!` pe același rând, cu `sep` și `end`  
-- [ ] Desenează un robot mare (10 rânduri) și pune-i un comentariu la fiecare parte  
-- [ ] Afișează un mesaj pe 3 rânduri folosind **un singur** `print` și `\n`  
+- [ ] Adaugă pe carte un rând cu sloganul tău, **între ghilimele**, de exemplu `Sloganul meu: "Python e super!"` (ai nevoie de ghilimele simple în jurul textului)  
+- [ ] Desenează deasupra cărții un desen mic din caractere (o inimă sau o stea), de cel puțin 3 rânduri  
+- [ ] Afișează cartea **de două ori**, cu un rând gol între ele (`print("")` afișează un rând gol)  
+- [ ] Înainte să apară cartea, afișează numărătoarea `1 - 2 - 3 - GO!` pe același rând, cu `sep` și `end`
 
 ---
 
@@ -379,68 +379,183 @@ print("Gata!"
 
 5. Salvează totul ca `Tema_P1_L1_Prenume_Nume.py`.
 
+### Exemple pentru acasă
+Două exemple în plus, de rulat și de înțeles singur.
+
+#### Acasă 1 — Repetăm un text
+
+```python
+print("Ha! " * 3)
+print("-" * 10, "TITLU", "-" * 10)
+```
+
+**Ieșire:**
+```text
+Ha! Ha! Ha! 
+---------- TITLU ----------
+```
+
+`*` între un text și un număr repetă textul. Spațiul din `"Ha! "` se repetă și el, de aceea cele trei `Ha!` sunt despărțite.
+
+#### Acasă 2 — `sep` și `end` la lucru
+
+```python
+print("Un", "rand", "intreg", sep="")
+print("Pe", "un", "rand", sep="_")
+print("Unu", end=" / ")
+print("Doi", end=" / ")
+print("Trei")
+```
+
+**Ieșire:**
+```text
+Unrandintreg
+Pe_un_rand
+Unu / Doi / Trei
+```
+
+- `sep=""` lipește cuvintele, fără spațiu între ele, iar `sep="_"` pune `_` între ele.
+- `end=" / "` face ca următorul `print` să continue pe același rând, după ` / `.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te și scrie pe foaie ce afișează programul, apoi rulează-l ca să verifici:
+
+```python
+print("A", "B", sep="-")
+print("C", end="!")
+print("D")
+print("1\n2")
+```
+
+**Găsește greșelile.** Programul are 4 greșeli, câte una pe fiecare rând. Rescrie-l corect și explică fiecare corecție:
+
+```text
+print("Salut!"
+print('Ma numesc Ion")
+print("Am" 9 "ani")
+printt("Gata!")
+```
+
 ---
 
 ## Răspunsuri la bonus
 
-*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit. Fiecare soluție pornește de la cartea de vizită din Exemplul 8: pune în ea numele, vârsta și hobby-ul tău.*
 
-### 1. Numărătoarea cu `sep` și `end`
+### 1. Sloganul între ghilimele
 
 ```python
+# Cartea mea de vizita
+print("=" * 22)
+print("  Nume:  Alex Popescu")
+print("  Varsta:", 10)
+print("  Hobby: jocuri si Python")
+print('  Sloganul meu: "Python e super!"')
+print("=" * 22)
+```
+
+**Ieșire:**
+```text
+======================
+  Nume:  Alex Popescu
+  Varsta: 10
+  Hobby: jocuri si Python
+  Sloganul meu: "Python e super!"
+======================
+```
+
+### 2. Desenul mic deasupra cărții
+
+```python
+# Inima de deasupra
+print(" ** ** ")
+print("*******")
+print(" ***** ")
+print("  ***  ")
+print("   *   ")
+
+# Cartea mea de vizita
+print("=" * 22)
+print("  Nume:  Alex Popescu")
+print("  Varsta:", 10)
+print("  Hobby: jocuri si Python")
+print("=" * 22)
+```
+
+**Ieșire:**
+```text
+ ** ** 
+*******
+ ***** 
+  ***  
+   *   
+======================
+  Nume:  Alex Popescu
+  Varsta: 10
+  Hobby: jocuri si Python
+======================
+```
+
+### 3. Cartea afișată de două ori
+
+```python
+# Prima carte
+print("=" * 22)
+print("  Nume:  Alex Popescu")
+print("  Varsta:", 10)
+print("  Hobby: jocuri si Python")
+print("=" * 22)
+
+# Rand gol
+print("")
+
+# A doua carte
+print("=" * 22)
+print("  Nume:  Alex Popescu")
+print("  Varsta:", 10)
+print("  Hobby: jocuri si Python")
+print("=" * 22)
+```
+
+**Ieșire:**
+```text
+======================
+  Nume:  Alex Popescu
+  Varsta: 10
+  Hobby: jocuri si Python
+======================
+
+======================
+  Nume:  Alex Popescu
+  Varsta: 10
+  Hobby: jocuri si Python
+======================
+```
+
+### 4. Numărătoarea înainte de carte
+
+```python
+# Numaratoarea
 print(1, 2, 3, sep=" - ", end=" - ")
 print("GO!")
+
+# Cartea mea de vizita
+print("=" * 22)
+print("  Nume:  Alex Popescu")
+print("  Varsta:", 10)
+print("  Hobby: jocuri si Python")
+print("=" * 22)
 ```
 
 **Ieșire:**
 ```text
 1 - 2 - 3 - GO!
-```
-
-### 2. Robotul mare, cu comentarii
-
-```python
-# antena
-print("    |    ")
-# capul
-print("  _____  ")
-print(" | o o | ")
-print(" |  -  | ")
-print("  -----  ")
-# corpul
-print(" /|   |\\ ")
-print("/ |___| \\")
-# picioarele
-print("  |   |  ")
-print("  |   |  ")
-print(" _|   |_ ")
-```
-
-**Ieșire:**
-```text
-    |    
-  _____  
- | o o | 
- |  -  | 
-  -----  
- /|   |\ 
-/ |___| \
-  |   |  
-  |   |  
- _|   |_ 
-```
-
-### 3. Trei rânduri cu un singur `print`
-
-```python
-print("Primul rand\nAl doilea rand\nAl treilea rand")
-```
-
-**Ieșire:**
-```text
-Primul rand
-Al doilea rand
-Al treilea rand
+======================
+  Nume:  Alex Popescu
+  Varsta: 10
+  Hobby: jocuri si Python
+======================
 ```
 
 ---

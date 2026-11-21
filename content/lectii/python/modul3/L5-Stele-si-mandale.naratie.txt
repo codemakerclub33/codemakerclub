@@ -1,23 +1,29 @@
-Lecția cinci din Modulul trei. Stele și mandale.
+Lecția cinci din Modulul trei. Mandala mea.
 
-Astăzi desenezi stele și mandale, desene rotunde și simetrice. Proiectul se numește Mandala mea. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L cinci, punct P Y.
+Astăzi desenezi stele cu orice număr de colțuri, un cer înstelat și mandale: desene rotunde, simetrice, făcute din forme care se repetă în cerc. Proiectul se numește Mandala mea. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L cinci, punct P Y.
 
-Obiectivul. La final desenezi o stea cu cinci colțuri, o generalizezi pentru orice număr impar de colțuri, pui desenul într-o funcție, aranjezi forme în cerc în jurul unui centru și construiești o mandală cu mai multe inele. Minim: steaua cu cinci colțuri și o funcție stea. Complet: minim, plus stele cu alt număr de colțuri, un cer înstelat și mandala.
+Ce facem azi. La final desenezi o stea cu cinci colțuri, o generalizezi pentru orice număr impar de colțuri, pui desenul într-o funcție, aranjezi forme în cerc în jurul unui centru și construiești o mandală cu mai multe inele. Simetria este peste tot: în flori, în fulgi de zăpadă, în desenele de pe covoare. Un model simetric se obține repetând aceeași formă și rotind țestoasa cu trei sute șaizeci împărțit la numărul de repetări.
 
-Primul pas. Steaua cu cinci colțuri. Se desenează dintr-o singură linie continuă: mergi înainte și te rotești cu o sută patruzeci și patru de grade, de cinci ori. De ce o sută patruzeci și patru? Pentru că rotirea totală, cinci ori o sută patruzeci și patru, este șapte sute douăzeci, adică exact două ture complete. Un desen se închide când rotirea totală este un număr întreg de ture. Steaua poate fi și umplută cu culoare.
+Instrucțiuni noi azi. Right o sută patruzeci și patru: o rotire mare, care taie colțurile, așa că din cinci linii iese o stea. Una sută optzeci minus una sută optzeci împărțit la n este unghiul pentru o stea cu n colțuri, când n este impar. Right trei sute șaizeci împărțit la număr este rotirea dintre formele așezate în cerc. Forward distanță și backward distanță: mergi de la centru la locul formei, desenezi, apoi te întorci.
 
-Al doilea pas. Orice număr de colțuri. Pentru un număr impar de colțuri n, unghiul este o sută optzeci minus o sută optzeci împărțit la n. Așa poți desena stele cu cinci, șapte sau nouă colțuri.
+Primul pas. Steaua cu cinci colțuri. Surpriza este unghiul: o sută patruzeci și patru de grade, nu șaptezeci și două. Țestoasa se rotește mult, așa că linia sare peste un colț și taie steaua, în loc să facă un pentagon. În total se rotește șapte sute douăzeci de grade, adică două ture complete. Un desen se închide atunci când rotirea totală este un număr întreg de ture.
 
-Al treilea pas. Cerul înstelat. Stele la întâmplare, cu poziție, mărime și culoare alese cu random.
+Al doilea pas. Orice număr de colțuri. Funcția unghi stea primește numărul de colțuri și returnează unghiul. Cu cât steaua are mai multe colțuri, cu atât seamănă mai mult cu un cerc.
 
-Al patrulea pas. Mandale. O mandală este un desen rotund, simetric. Rețeta este mereu aceeași: desenezi o formă, o rotești cu trei sute șaizeci împărțit la n grade și o repeți de n ori. Pentru stele în cerc, mergi o distanță, desenezi, te întorci, apoi rotești. Poți face un inel de stele cu o funcție sau o spirală de stele.
+Al treilea pas. Cerul înstelat. Alegi la întâmplare poziția, mărimea și culoarea fiecărei stele, iar la final desenezi luna. Luna acoperă stelele aflate în spatele ei.
 
-Al cincilea pas. Mandala completă. Inele diferite, cu stele de mărimi și culori diferite, pe fundal albastru închis.
+Al patrulea pas. Forme în cerc. Mai întâi douăsprezece stele care se învârt în jurul aceluiași punct. Apoi funcția inel: merge distanța dorită de la centru, desenează o stea, se întoarce în centru și se rotește. Funcția stea nu primește poziția, ci desenează acolo unde se află țestoasa.
 
-Greșeli frecvente. Steaua nu se închide: unghiul nu este cel potrivit. Stelele nu sunt în cerc: ai uitat să te întorci în centru înainte de rotire. Desenul este lent: scazi numărul de forme sau crești viteza.
+Al cincilea pas. Mini-proiect. Mandala mea are patru inele de stele și un punct în centru, toate chemate dintr-o funcție mandala. După fiecare inel, țestoasa a făcut un tur complet, deci revine în centru și poți lega oricâte inele. Un inel nou este doar un rând nou în funcție.
 
-Proiectul de azi. Mandala mea. Minim înseamnă steaua și funcția. Complet înseamnă cer, inele și mandala.
+Greșeli frecvente. Steaua arată ca un pentagon: ai folosit șaptezeci și două de grade în loc de o sută patruzeci și patru. Steaua nu se închide: unghi greșit sau număr greșit de repetări. Inelul nu se închide ca un cerc: lipsește rotirea. Stelele nu sunt umplute: lipsește end fill. Toate stelele sunt în același loc: ai uitat să muți țestoasa înainte de desen. Liniile unesc stelele: creionul a rămas jos la mutare. Inelele nu au același centru: începe fiecare inel din centru, cu direcția spre dreapta.
 
-Recapitulare. Steaua cu cinci colțuri: forward și right o sută patruzeci și patru, de cinci ori. Pentru n colțuri impare, unghiul este o sută optzeci minus o sută optzeci împărțit la n. Formele în cerc se rotesc cu trei sute șaizeci împărțit la număr. Mandala are mai multe inele.
+Proiectul de azi. Mandala mea. Minim înseamnă o funcție stea și o stea cu cinci colțuri, desenată de două ori, în culori diferite. Complet înseamnă și mandala ta, cu cel puțin patru inele de stele, un punct în centru, un fundal și un titlu scris pe ecran, toate chemate dintr-o funcție mandala.
+
+Provocare, trei stele. Mandala crește. Doar dacă ai terminat varianta completă. Faci un inel colorat, în care fiecare stea ia culoarea din listă, și îl pui în jurul mandalei. Pui mandala pe un cer înstelat, cu șaizeci de stele mici, desenate înainte de mandală. Faci un inel de puncte care înconjoară mandala. Și desenezi două mandale mici, una în stânga și una în dreapta mandalei mari.
+
+Recapitulare. Steaua cu cinci colțuri se desenează cu right o sută patruzeci și patru, repetat de cinci ori. Pentru mai multe colțuri impare, folosești formula cu o sută optzeci. Un desen se închide când rotirea totală este un număr întreg de ture. Formele în cerc se fac mergând distanța, desenând, întorcându-te și rotind. Mandala înseamnă mai multe inele, iar funcția mandala le aduce împreună.
+
+Ce urmează. În lecția următoare controlăm țestoasa cu tastatura și transformăm desenul într-un joc.
 
 Succes cu mandala.

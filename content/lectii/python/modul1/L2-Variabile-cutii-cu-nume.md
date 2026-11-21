@@ -329,12 +329,13 @@ Scrie un program care:
 
 ---
 
-## Bonus ★★★ — Provocare: Cutiile magice
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Fișa de jucător, nivelul următor
+*Doar dacă ai terminat Complet. Lucrezi pe **propria ta** fișă de jucător: păstrează-o și adaugă pe ea.*
 
-- [ ] Scrie un program cu variabilele `a` și `b` și afișează suma, diferența și produsul lor  
-- [ ] Schimbă valorile a trei variabile în cerc: `a`→`b`→`c`→`a`  
-- [ ] Fă o fișă pentru un monstru de joc (nume, viață, atac, apărare) și afișează-o  
+- [ ] Jucătorul tău mai termină un nivel (+80 puncte, −1 viață) și apare **a treia fișă**  
+- [ ] Primește un bonus „puncte duble": `puncte = puncte * 2`, apoi afișează din nou punctele  
+- [ ] Creează un monstru cu `nume_monstru`, `viata_monstru` și `atac_jucator`. Jucătorul îl lovește: scade din viața monstrului și afișează viața înainte și după lovitură  
+- [ ] Creează un al doilea jucător cu `nume2` și `puncte2`. Cei doi jucători își **schimbă punctele** între ei (ca la cutiile în cerc, cu o variabilă ajutătoare)
 
 ---
 
@@ -374,7 +375,7 @@ Scrie un program care:
 
 ## Temă
 1. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).
-2. Creează o **fișă pentru animalul tău preferat** (nume, vârstă, greutate, culoare) și afișeaz-o.  
+2. Creează o **fișă pentru animalul tău preferat** (nume, vârstă, greutate, culoare) și afișează-o.  
 3. Scrie un program care calculează **câți bani strângi** în 4 săptămâni, dacă primești o sumă fixă pe săptămână (variabile + calcul).  
 4. Salvează totul ca `Tema_P1_L2_Prenume_Nume.py`.
 
@@ -443,62 +444,243 @@ print("Salut" nume)
 
 ## Răspunsuri la bonus
 
-*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit. Fiecare soluție pornește de la fișa din Exemplul 8: pune în ea valorile tale.*
 
-### 1. Suma, diferența și produsul
+### 1. A treia fișă
 
 ```python
-a = 7
-b = 3
-print("Suma:", a + b)
-print("Diferenta:", a - b)
-print("Produsul:", a * b)
+# Fisa de jucator
+nume = "Alex"
+nivel = 1
+puncte = 0
+vieti = 3
+
+print("=" * 20)
+print("Jucator:", nume)
+print("Nivel:", nivel)
+print("Puncte:", puncte)
+print("Vieti:", vieti)
+
+# Alex termina un nivel
+puncte = puncte + 50
+nivel = nivel + 1
+vieti -= 1
+
+print("=" * 20)
+print("Dupa nivelul 1:")
+print("Nivel:", nivel)
+print("Puncte:", puncte)
+print("Vieti:", vieti)
+print("=" * 20)
+
+# Alex termina inca un nivel
+puncte = puncte + 80
+nivel = nivel + 1
+vieti -= 1
+
+print("Dupa nivelul 2:")
+print("Nivel:", nivel)
+print("Puncte:", puncte)
+print("Vieti:", vieti)
+print("=" * 20)
 ```
 
 **Ieșire:**
 ```text
-Suma: 10
-Diferenta: 4
-Produsul: 21
+====================
+Jucator: Alex
+Nivel: 1
+Puncte: 0
+Vieti: 3
+====================
+Dupa nivelul 1:
+Nivel: 2
+Puncte: 50
+Vieti: 2
+====================
+Dupa nivelul 2:
+Nivel: 3
+Puncte: 130
+Vieti: 1
+====================
 ```
 
-### 2. Valorile în cerc: a → b → c → a
+### 2. Puncte duble
 
 ```python
-a = 1
-b = 2
-c = 3
-temp = c
-c = b
-b = a
-a = temp
-print(a, b, c)
+# Fisa de jucator
+nume = "Alex"
+nivel = 1
+puncte = 0
+vieti = 3
+
+print("=" * 20)
+print("Jucator:", nume)
+print("Nivel:", nivel)
+print("Puncte:", puncte)
+print("Vieti:", vieti)
+
+# Alex termina un nivel
+puncte = puncte + 50
+nivel = nivel + 1
+vieti -= 1
+
+print("=" * 20)
+print("Dupa nivelul 1:")
+print("Nivel:", nivel)
+print("Puncte:", puncte)
+print("Vieti:", vieti)
+print("=" * 20)
+
+# Bonus: puncte duble
+puncte = puncte * 2
+print("Bonus puncte duble!")
+print("Puncte:", puncte)
+print("=" * 20)
 ```
 
 **Ieșire:**
 ```text
-3 1 2
+====================
+Jucator: Alex
+Nivel: 1
+Puncte: 0
+Vieti: 3
+====================
+Dupa nivelul 1:
+Nivel: 2
+Puncte: 50
+Vieti: 2
+====================
+Bonus puncte duble!
+Puncte: 100
+====================
 ```
 
-### 3. Fișa unui monstru
+### 3. Lupta cu monstrul
 
 ```python
-nume = "Goblin"
-viata = 30
-atac = 8
-aparare = 3
-print("Monstru:", nume)
-print("Viata:", viata)
-print("Atac:", atac)
-print("Aparare:", aparare)
+# Fisa de jucator
+nume = "Alex"
+nivel = 1
+puncte = 0
+vieti = 3
+
+print("=" * 20)
+print("Jucator:", nume)
+print("Nivel:", nivel)
+print("Puncte:", puncte)
+print("Vieti:", vieti)
+
+# Alex termina un nivel
+puncte = puncte + 50
+nivel = nivel + 1
+vieti -= 1
+
+print("=" * 20)
+print("Dupa nivelul 1:")
+print("Nivel:", nivel)
+print("Puncte:", puncte)
+print("Vieti:", vieti)
+print("=" * 20)
+
+# Monstrul
+nume_monstru = "Goblin"
+viata_monstru = 30
+atac_jucator = 12
+
+print("Monstru:", nume_monstru)
+print("Viata monstrului inainte:", viata_monstru)
+viata_monstru = viata_monstru - atac_jucator
+print(nume, "a lovit! Viata monstrului dupa:", viata_monstru)
+print("=" * 20)
 ```
 
 **Ieșire:**
 ```text
+====================
+Jucator: Alex
+Nivel: 1
+Puncte: 0
+Vieti: 3
+====================
+Dupa nivelul 1:
+Nivel: 2
+Puncte: 50
+Vieti: 2
+====================
 Monstru: Goblin
-Viata: 30
-Atac: 8
-Aparare: 3
+Viata monstrului inainte: 30
+Alex a lovit! Viata monstrului dupa: 18
+====================
+```
+
+### 4. Schimb de puncte între doi jucători
+
+```python
+# Fisa de jucator
+nume = "Alex"
+nivel = 1
+puncte = 0
+vieti = 3
+
+print("=" * 20)
+print("Jucator:", nume)
+print("Nivel:", nivel)
+print("Puncte:", puncte)
+print("Vieti:", vieti)
+
+# Alex termina un nivel
+puncte = puncte + 50
+nivel = nivel + 1
+vieti -= 1
+
+print("=" * 20)
+print("Dupa nivelul 1:")
+print("Nivel:", nivel)
+print("Puncte:", puncte)
+print("Vieti:", vieti)
+print("=" * 20)
+
+# Al doilea jucator
+nume2 = "Maria"
+puncte2 = 80
+
+print("Inainte de schimb:")
+print(nume, "are", puncte, "puncte")
+print(nume2, "are", puncte2, "puncte")
+
+# Schimbam punctele, cu o variabila ajutatoare
+temp = puncte
+puncte = puncte2
+puncte2 = temp
+
+print("Dupa schimb:")
+print(nume, "are", puncte, "puncte")
+print(nume2, "are", puncte2, "puncte")
+print("=" * 20)
+```
+
+**Ieșire:**
+```text
+====================
+Jucator: Alex
+Nivel: 1
+Puncte: 0
+Vieti: 3
+====================
+Dupa nivelul 1:
+Nivel: 2
+Puncte: 50
+Vieti: 2
+====================
+Inainte de schimb:
+Alex are 50 puncte
+Maria are 80 puncte
+Dupa schimb:
+Alex are 80 puncte
+Maria are 50 puncte
+====================
 ```
 
 ---

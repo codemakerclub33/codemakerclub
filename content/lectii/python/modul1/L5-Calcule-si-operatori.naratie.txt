@@ -18,7 +18,7 @@ Greșeli frecvente. Șapte împărțit la doi dă trei virgulă cinci, nu trei: 
 
 Proiectul de azi. Calculatorul de buzunar. Citești două numere întregi și afișezi rezultatele operațiilor. Minim înseamnă patru operații. Complet înseamnă și cât, rest și putere.
 
-Provocare, trei stele. Calcule de zi cu zi. Citești un număr și afli dacă este par sau impar, transformi zilele în săptămâni și zile, și calculezi aria și perimetrul unui pătrat.
+Provocare, trei stele. Calculatorul de buzunar, versiunea pro. Lucrezi pe propriul tău calculator și adaugi la sfârșit patru calcule, cu aceleași două numere. Media lor. Pătratul și cubul primului număr. Aria și perimetrul unui dreptunghi, cu cele două numere drept laturi. Și primul număr privit ca zile, transformat în săptămâni și zile.
 
 Recapitulare. Operatorii sunt plus, minus, steluță, bară, două bare pentru cât, procent pentru rest, două steluțe pentru putere. Bara dă mereu număr cu virgulă. Un număr este par dacă n procent doi este zero.
 

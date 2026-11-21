@@ -18,7 +18,7 @@ Greșeli frecvente. Name Error random: ai uitat import random. Attribute Error: 
 
 Proiectul de azi. Oracolul. Minim înseamnă un zar cu mesaj. Complet înseamnă și o listă cu cel puțin șase răspunsuri, un număr norocos și un comentariu despre el.
 
-Provocare, trei stele. Jocuri cu noroc. Faci un joc cu două zaruri, tu contra calculatorului, un generator de nume de dragon și un program care alege cine strânge masa.
+Provocare, trei stele. Oracolul, versiunea magică. Lucrezi pe propriul tău oracol și adaugi la sfârșit patru lucruri. Sfatul zilei, ales dintr-o a doua listă. Culoarea norocoasă. Numărul norocos, făcut din suma a două zaruri. Și un mesaj special, când numărul norocos este cel mai mare posibil.
 
 Recapitulare. Un modul este o colecție de comenzi, adus cu import. Randint dă un întreg, cu capetele incluse. O listă se scrie între paranteze pătrate. Choice alege un element. Norocul se combină cu if pentru jocuri.
 

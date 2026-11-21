@@ -1,25 +1,31 @@
-Lecția patru din Modulul trei. Funcții de desen: casa și floarea.
+Lecția patru din Modulul trei. Satul meu.
 
-Astăzi scrii funcții de desen, ca să construiești forme mari din forme mici. Proiectul se numește Satul meu. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L patru, punct P Y.
+Astăzi scrii funcții de desen: o casă, o floare, un copac. Le folosești de câte ori vrei, oriunde pe ecran, cu orice culoare. Așa se construiește un sat întreg. Proiectul se numește Satul meu. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L patru, punct P Y.
 
-Obiectivul. La final scrii funcții de desen cu parametri, adică poziție, mărime și culoare, construiești forme mari din forme mici, de exemplu casa din pătrat și triunghi, desenezi o floare din petale și compui un peisaj cu mai multe funcții. Minim: o funcție pătrat cu latura și o funcție casă. Complet: minim, plus floarea, peisajul și un sat.
+Ce facem azi. La final scrii funcții de desen cu parametri, adică poziție, mărime și culoare, construiești forme mari din forme mici, de exemplu casă înseamnă pătrat plus triunghi, desenezi o floare din petale și compui un peisaj cu mai multe funcții. Un program mare nu se scrie dintr-o bucată. Se împarte în piese mici, adică funcții, iar piesele se combină. Într-un joc vei avea funcții pentru jucător, pentru inamic și altele. Azi exersăm exact asta.
 
-Primul pas. Prima funcție de desen. O funcție se definește cu def și se apelează cu numele ei. Funcția pătrat primește latura și desenează pătratul. O poți chema de mai multe ori, cu laturi diferite.
+Instrucțiuni noi azi. O funcție de desen primește poziția, mărimea și culoarea. Fiecare funcție începe cu penup, goto, setheading zero și pendown. Circle cu două numere desenează doar un arc dintr-un cerc. O funcție poate apela alte funcții: casa apelează dreptunghiul și triunghiul.
 
-Al doilea pas. Forme cu poziție și culoare. Funcția dreptunghi primește poziția, lățimea, înălțimea și culoarea. Fiecare funcție începe cu penup, goto, setheading zero și pendown, ca să pornească mereu din locul potrivit.
+Primul pas. Prima funcție de desen. Definești funcția o singură dată și o apelezi de câte ori vrei. Un parametru, de exemplu latura, îți lasă să alegi mărimea la fiecare apel.
 
-Al treilea pas. Forme mari din forme mici. Casa este un dreptunghi, un triunghi pentru acoperiș, o ușă și o fereastră. Dimensiunile se calculează dintr-o singură mărime, m, deci casa poate fi mică sau mare.
+Al doilea pas. Forme cu poziție și culoare. Dreptunghiul primește x și y, adică colțul din stânga jos, lățimea, înălțimea și culoarea. Funcția își mută singură țestoasa și o orientează spre dreapta, deci o poți apela oricând. La cerc, punem țestoasa sub centru, pentru că circle desenează în sus de la punctul de plecare. Așa x și y sunt chiar centrul cercului.
 
-Al patrulea pas. Floarea. Petalele sunt aceeași formă repetată în cerc, iar mijlocul este un cerc galben.
+Al treilea pas. Casa. Funcția casa nu desenează nimic direct, ci apelează alte funcții: un pătrat pentru corp, un triunghi pentru acoperiș, o ușă și o fereastră. Pentru că folosim mărimea peste tot, toată casa se mărește sau se micșorează odată cu ea.
 
-Al cincilea pas. Peisajul. Compui cer, iarbă, soare, o casă și o floare, fiecare cu funcția ei. Apoi un rând de case cu o buclă.
+Al patrulea pas. Floarea. Petala este făcută din două arce de șaizeci de grade, cu o rotire de o sută douăzeci între ele. La final țestoasa se întoarce exact în punctul de plecare, cu aceeași direcție, de aceea putem repeta petala. Floarea repetă petala și se rotește cu trei sute șaizeci împărțit la numărul de petale.
 
-Al șaselea pas. Mini-proiect. Satul meu: mai multe case, flori și un soare, toate făcute cu funcții.
+Al cincilea pas. Copacul și soarele. Copacul este desenat în jurul lui x: trunchiul este centrat, iar coroana este un cerc exact deasupra lui. Soarele este un cerc auriu.
 
-Greșeli frecvente. Desenul apare în alt loc: funcția nu începe cu penup și goto. Forma nu are culoarea dorită: ai uitat parametrul de culoare. Casa este deformată: dimensiunile nu depind de mărime.
+Al șaselea pas. Mini-proiect. Satul meu: șapte funcții mici și o funcție peisaj care le aduce împreună. Dacă vrei un peisaj nou, schimbi doar funcția peisaj.
 
-Proiectul de azi. Satul meu. Minim înseamnă pătratul și casa. Complet înseamnă floare, peisaj și sat.
+Greșeli frecvente. Nu se desenează nimic: ai definit funcția, dar nu ai apelat-o. Eroare de nume: ai apelat funcția înainte să o definești. Eroare de argumente: ai dat prea puține valori. Forma se desenează întoarsă: lipsește setheading zero la începutul funcției. Forma are altă culoare: pune color la începutul fiecărei funcții.
 
-Recapitulare. O funcție de desen primește poziție, mărime și culoare. Fiecare funcție începe cu penup, goto, setheading și pendown. Formele complexe se compun din cele simple. Dimensiunile se calculează dintr-o singură mărime.
+Proiectul de azi. Satul meu. Minim înseamnă o funcție pătrat și o funcție casă, apelate de câte două ori. Complet înseamnă și satul tău, cu cel puțin trei case, trei copaci, soare, nori, două funcții noi scrise de tine și o funcție peisaj.
+
+Provocare, trei stele. Satul crește. Doar dacă ai terminat varianta completă. Adaugi în același sat o funcție stradă, care desenează mai multe case una lângă alta, cu o buclă. O grădină cu cinci flori de culori diferite. O mașină parcată în sat, din dreptunghiuri, geamuri și două roți. Și noaptea: o a doua funcție, peisaj de noapte, cu fundal închis, lună și stele.
+
+Recapitulare. O funcție de desen primește poziție, mărime și culoare. Fiecare funcție începe cu penup, goto, setheading zero și pendown. Formele complexe se compun din cele simple. Circle cu două numere desenează un arc, iar din arce se fac petale. O funcție peisaj aduce împreună toate piesele.
+
+Ce urmează. În lecția următoare desenezi stele și mandale: desene din linii drepte și arce, cu modele care se repetă de zeci de ori.
 
 Succes cu satul.

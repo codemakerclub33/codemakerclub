@@ -263,12 +263,13 @@ Scrie un program care:
 
 ---
 
-## Bonus ★★★ — Provocare: Calculatoare rapide
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Interviul, mai lung
+*Doar dacă ai terminat Complet. Lucrezi pe **propriul tău** interviu: păstrează-l și adaugă la el, la sfârșit.*
 
-- [ ] Citește două numere și afișează **media** lor  
-- [ ] Citește o temperatură în Celsius și afișează-o în Fahrenheit (`c * 9 / 5 + 32`)  
-- [ ] Citește un număr și afișează dublul, triplul și pătratul lui  
+- [ ] Intervievează **încă o persoană** (un prieten): citește numele și vârsta lui, apoi afișează media celor două vârste  
+- [ ] Calculează și afișează anul nașterii tale (`2026 - varsta`)  
+- [ ] Întreabă „Câte ore joci pe zi?” (cu `float(input(...))`) și afișează câte ore joci pe **săptămână**  
+- [ ] Pune jocul preferat într-un chenar cât lungimea numelui lui (`"=" * len(joc)`), sus și jos
 
 ---
 
@@ -362,51 +363,171 @@ print("Dublul este" pret * 2)
 
 ## Răspunsuri la bonus
 
-*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit. Fiecare soluție pornește de la interviul din Exemplul 8; ce scrie utilizatorul apare pe același rând cu întrebarea.*
 
-### 1. Media a două numere
+### 1. Încă o persoană și media vârstelor
 
 ```python
-a = float(input("Primul numar: "))
-b = float(input("Al doilea numar: "))
-print("Media:", (a + b) / 2)
+print("=== Interviu ===")
+nume = input("Cum te cheama? ")
+varsta = int(input("Cati ani ai? "))
+joc = input("Care e jocul tau preferat? ")
+
+print("-" * 20)
+print("Raport:")
+print("Nume:", nume)
+print("Litere in nume:", len(nume))
+print("Varsta:", varsta)
+print("Peste 5 ani vei avea", varsta + 5, "ani")
+print("Jocul preferat:", joc)
+print("Multumesc, " + nume + "!")
+
+# Al doilea interviu
+print("--- Al doilea interviu ---")
+nume2 = input("Cum se numeste prietenul tau? ")
+varsta2 = int(input("Cati ani are? "))
+print("Media varstelor lui", nume, "si", nume2, "este", (varsta + varsta2) / 2)
 ```
 
 **Ieșire:**
 ```text
-Primul numar: 8
-Al doilea numar: 5
-Media: 6.5
+=== Interviu ===
+Cum te cheama? Alex
+Cati ani ai? 11
+Care e jocul tau preferat? Minecraft
+--------------------
+Raport:
+Nume: Alex
+Litere in nume: 4
+Varsta: 11
+Peste 5 ani vei avea 16 ani
+Jocul preferat: Minecraft
+Multumesc, Alex!
+--- Al doilea interviu ---
+Cum se numeste prietenul tau? Sofia
+Cati ani are? 9
+Media varstelor lui Alex si Sofia este 10.0
 ```
 
-### 2. Din Celsius în Fahrenheit
+### 2. Anul nașterii
 
 ```python
-c = float(input("Grade Celsius: "))
-print("Fahrenheit:", c * 9 / 5 + 32)
+print("=== Interviu ===")
+nume = input("Cum te cheama? ")
+varsta = int(input("Cati ani ai? "))
+joc = input("Care e jocul tau preferat? ")
+
+print("-" * 20)
+print("Raport:")
+print("Nume:", nume)
+print("Litere in nume:", len(nume))
+print("Varsta:", varsta)
+print("Peste 5 ani vei avea", varsta + 5, "ani")
+print("Jocul preferat:", joc)
+print("Multumesc, " + nume + "!")
+
+# Anul nasterii
+anul = 2026 - varsta
+print("Te-ai nascut in anul", anul)
 ```
 
 **Ieșire:**
 ```text
-Grade Celsius: 25
-Fahrenheit: 77.0
+=== Interviu ===
+Cum te cheama? Alex
+Cati ani ai? 11
+Care e jocul tau preferat? Minecraft
+--------------------
+Raport:
+Nume: Alex
+Litere in nume: 4
+Varsta: 11
+Peste 5 ani vei avea 16 ani
+Jocul preferat: Minecraft
+Multumesc, Alex!
+Te-ai nascut in anul 2015
 ```
 
-### 3. Dublul, triplul și pătratul
+### 3. Orele de joacă pe săptămână
 
 ```python
-n = int(input("Un numar: "))
-print("Dublul:", n * 2)
-print("Triplul:", n * 3)
-print("Patratul:", n ** 2)
+print("=== Interviu ===")
+nume = input("Cum te cheama? ")
+varsta = int(input("Cati ani ai? "))
+joc = input("Care e jocul tau preferat? ")
+
+print("-" * 20)
+print("Raport:")
+print("Nume:", nume)
+print("Litere in nume:", len(nume))
+print("Varsta:", varsta)
+print("Peste 5 ani vei avea", varsta + 5, "ani")
+print("Jocul preferat:", joc)
+print("Multumesc, " + nume + "!")
+
+# Orele de joaca
+ore = float(input("Cate ore joci pe zi? "))
+print("Pe saptamana joci", ore * 7, "ore")
 ```
 
 **Ieșire:**
 ```text
-Un numar: 4
-Dublul: 8
-Triplul: 12
-Patratul: 16
+=== Interviu ===
+Cum te cheama? Alex
+Cati ani ai? 11
+Care e jocul tau preferat? Minecraft
+--------------------
+Raport:
+Nume: Alex
+Litere in nume: 4
+Varsta: 11
+Peste 5 ani vei avea 16 ani
+Jocul preferat: Minecraft
+Multumesc, Alex!
+Cate ore joci pe zi? 1.5
+Pe saptamana joci 10.5 ore
+```
+
+### 4. Jocul preferat în chenar
+
+```python
+print("=== Interviu ===")
+nume = input("Cum te cheama? ")
+varsta = int(input("Cati ani ai? "))
+joc = input("Care e jocul tau preferat? ")
+
+print("-" * 20)
+print("Raport:")
+print("Nume:", nume)
+print("Litere in nume:", len(nume))
+print("Varsta:", varsta)
+print("Peste 5 ani vei avea", varsta + 5, "ani")
+print("Jocul preferat:", joc)
+print("Multumesc, " + nume + "!")
+
+# Jocul in chenar
+print("=" * len(joc))
+print(joc)
+print("=" * len(joc))
+```
+
+**Ieșire:**
+```text
+=== Interviu ===
+Cum te cheama? Alex
+Cati ani ai? 11
+Care e jocul tau preferat? Minecraft
+--------------------
+Raport:
+Nume: Alex
+Litere in nume: 4
+Varsta: 11
+Peste 5 ani vei avea 16 ani
+Jocul preferat: Minecraft
+Multumesc, Alex!
+=========
+Minecraft
+=========
 ```
 
 ---

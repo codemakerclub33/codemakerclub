@@ -1,4 +1,5 @@
-# LECȚIA 4 — Funcții de desen: casa și floarea
+# LECȚIA 4 — Satul meu
+### Funcții de desen: casa, floarea și copacul
 **Modulul 3 · Desenăm cu Turtle · 2 ore**  
 **Code Maker Club · Turtle Artist**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei scrii funcții de desen cu parametri (poziție, mărime, culoare), construiești forme mari din forme mici (casă = pătrat + triunghi), desenezi o floare din petale și compui un peisaj cu mai multe funcții.  
-**Minim:** o funcție `patrat(latura)` și o funcție `casa(...)`.  
-**Ținta orei (Complet):** + floarea, copacul și satul din mini-proiect.
-
-## De ce contează
-Un program mare nu se scrie dintr-o bucată. Se împarte în **piese mici** (funcții), iar piesele se combină. Într-un joc vei avea funcții pentru `deseneaza_jucator()`, `deseneaza_inamic()` și altele. Azi exersăm exact asta.
+## Ce facem azi
+La finalul orei scrii funcții de desen cu parametri (poziție, mărime, culoare), construiești forme mari din forme mici (casă = pătrat + triunghi), desenezi o floare din petale și compui un peisaj cu mai multe funcții. Un program mare nu se scrie dintr-o bucată: se împarte în **piese mici** (funcții), iar piesele se combină. Într-un joc vei avea funcții pentru `deseneaza_jucator()`, `deseneaza_inamic()` și altele. Azi exersăm exact asta.
 
 ---
 
@@ -22,13 +18,24 @@ Un program mare nu se scrie dintr-o bucată. Se împarte în **piese mici** (fun
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recapitulare L3 și funcții |
-| 10–30 | Funcție fără și cu parametri (**Exemplele 1–2**) |
-| 30–55 | Dreptunghi, triunghi, cerc cu poziție și culoare (**Exemplele 3–4**) |
-| 55–65 | `return` într-o funcție de desen (**Exemplul 5**) |
-| 65–85 | Casa (**Exemplul 6**) |
-| 85–100 | Floarea (**Exemplul 7**) |
-| 100–118 | Copacul, rândul de case, satul (**Exemplele 8–10**) |
+| 10–25 | Funcție fără și cu parametri (**Exemplele 1–2**) |
+| 25–50 | Dreptunghi, triunghi, cerc cu poziție și culoare (**Exemplele 3–4**) |
+| 50–70 | Casa (**Exemplul 5**) |
+| 70–85 | Floarea (**Exemplul 6**) |
+| 85–100 | Copacul și soarele (**Exemplul 7**) |
+| 100–118 | Mini-proiect (**Exemplul 8**) |
 | 118–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `def forma(x, y, culoare):` | O funcție de desen cu poziție și culoare | `casa(-150, -80, 120, "khaki")` |
+| `t.penup()` · `t.goto(x, y)` · `t.setheading(0)` · `t.pendown()` | Cum începe fiecare funcție de desen | în `dreptunghi`, `triunghi`, `cerc` |
+| `t.circle(raza, grade)` | Desenează doar un arc din cerc | `t.circle(80, 60)` |
+| funcție care apelează alte funcții | Forme mari din forme mici | `casa` apelează `dreptunghi` |
 
 ---
 
@@ -182,48 +189,9 @@ turtle.done()
 
 ---
 
-## 4. O funcție care dă o valoare
+## 4. Casa
 
-### Exemplul 5 — Desenăm și calculăm
-
-```python
-import turtle
-
-t = turtle.Turtle()
-t.speed(0)
-
-def patrat(latura):
-    for i in range(4):
-        t.forward(latura)
-        t.left(90)
-    return 4 * latura
-
-perimetru = patrat(70)
-print("Perimetrul este:", perimetru)
-print("Aria este:", 70 * 70)
-
-turtle.done()
-```
-
-**Ieșire:**
-```text
-Perimetrul este: 280
-Aria este: 4900
-```
-
-**Ce vezi pe ecran:** un pătrat cu latura 70.
-
-O funcție de desen poate și să **returneze** o valoare, aici perimetrul. Desenul apare pe ecran, iar numerele apar în fereastra de text din Thonny.
-
-**Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 5** (Desenăm și calculăm)  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
----
-
-## 5. Casa
-
-### Exemplul 6 — Funcția `casa()`
+### Exemplul 5 — Funcția `casa()`
 
 ```python
 import turtle
@@ -281,14 +249,14 @@ Funcția `casa` nu desenează nimic direct, ci **apelează alte funcții**:
 Pentru că folosim `m` peste tot, **toată casa se mărește sau se micșorează odată cu `m`**.
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 6** (Funcția `casa()`)  
+- [ ] Am scris și am rulat **Exemplul 5** (Funcția `casa()`)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## 6. Floarea
+## 5. Floarea
 
-### Exemplul 7 — Petala și floarea
+### Exemplul 6 — Petala și floarea
 
 ```python
 import turtle
@@ -307,7 +275,7 @@ def petala(raza, culoare):
     t.end_fill()
 
 petala(100, "pink")
-print("Dupa o petala:", round(t.xcor(), 1) + 0, round(t.ycor(), 1) + 0, round(t.heading()))
+print("Dupa o petala:", round(t.xcor(), 1) + 0, round(t.ycor(), 1) + 0, round(t.heading()) % 360)
 
 turtle.done()
 ```
@@ -319,7 +287,7 @@ Dupa o petala: 0.0 0.0 0
 
 **Ce vezi pe ecran:** o **petală roz** (formă de frunză cu două vârfuri), cu conturul negru.
 
-Petala este făcută din **două arce de 60°** (`circle(raza, 60)` desenează doar o parte din cerc). Țestoasa se rotește cu 120° între arce. La final, ea se întoarce **exact în punctul de plecare** și privește în aceeași direcție, cum arată și rândul `print`: `0.0 0.0 0`. (Adunarea cu `+ 0` doar evită afișarea unui `-0.0`, rămas uneori din calcule.) Din acest motiv putem repeta petala.
+Petala este făcută din **două arce de 60°** (`circle(raza, 60)` desenează doar o parte din cerc). Țestoasa se rotește cu 120° între arce. La final, ea se întoarce **exact în punctul de plecare** și privește în aceeași direcție, cum arată și rândul `print`: `0.0 0.0 0`. (Adunarea cu `+ 0` evită afișarea unui `-0.0`, iar `% 360` evită un `360` în loc de `0`: sunt resturi mici de la calcule.) Din acest motiv putem repeta petala.
 
 Acum **floarea**, în care petala se repetă:
 
@@ -354,14 +322,14 @@ turtle.done()
 Încearcă `floare(12, 80, "violet")` sau `floare(6, 100, "red")`: aceeași funcție, alte flori!
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 7** (Petala și floarea)  
+- [ ] Am scris și am rulat **Exemplul 6** (Petala și floarea)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## 7. Copacul și rândul de case
+## 6. Copacul și soarele
 
-### Exemplul 8 — Copacul și soarele
+### Exemplul 7 — Copacul și soarele
 
 ```python
 import turtle
@@ -413,68 +381,15 @@ turtle.done()
 
 Copacul este desenat în jurul lui `x`: trunchiul începe la `x - 8` și are lățimea 16, deci este **centrat**. Coroana este un cerc cu centrul la `y + 75`, adică exact deasupra trunchiului (care are înălțimea 50, iar raza coroanei este 35, deci coroana începe la `y + 40` și se suprapune puțin peste trunchi).
 
-### Exemplul 9 — Un rând de case, cu buclă
-
-```python
-import turtle
-
-t = turtle.Turtle()
-t.hideturtle()
-t.speed(0)
-
-def dreptunghi(x, y, l, h, culoare):
-    t.penup()
-    t.goto(x, y)
-    t.setheading(0)
-    t.pendown()
-    t.color(culoare)
-    t.begin_fill()
-    for i in range(2):
-        t.forward(l)
-        t.left(90)
-        t.forward(h)
-        t.left(90)
-    t.end_fill()
-
-def triunghi(x, y, l, culoare):
-    t.penup()
-    t.goto(x, y)
-    t.setheading(0)
-    t.pendown()
-    t.color(culoare)
-    t.begin_fill()
-    for i in range(3):
-        t.forward(l)
-        t.left(120)
-    t.end_fill()
-
-def casa(x, y, m, culoare):
-    dreptunghi(x, y, m, m, culoare)
-    triunghi(x, y + m, m, "firebrick")
-    dreptunghi(x + m * 0.4, y, m * 0.2, m * 0.4, "saddlebrown")
-
-culori = ["khaki", "lightblue", "pink", "lightgreen"]
-
-for i in range(4):
-    casa(-200 + i * 110, -80, 80, culori[i])
-
-turtle.done()
-```
-
-**Ce vezi pe ecran:** un **rând de 4 case** de aceeași mărime (80), la 110 de pași distanță, în culori diferite: nisipiu, albastru, roz și verde deschis.
-
-Bucla apelează funcția `casa` de 4 ori, iar `culori[i]` alege culoarea. O stradă întreagă a costat doar două rânduri!
-
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 8** (Copacul și soarele)  
-- [ ] Am scris și am rulat **Exemplul 9** (Un rând de case, cu buclă)  
+- [ ] Am scris și am rulat **Exemplul 7** (Copacul și soarele)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## 8. Mini-proiect
+## 7. Mini-proiect
 
-### Exemplul 10 — Satul meu
+### Exemplul 8 — Satul meu
 
 ```python
 import turtle
@@ -561,84 +476,48 @@ turtle.done()
 Programul are 7 funcții mici și o funcție `peisaj()` care le aduce împreună. Dacă vrei un peisaj nou, **schimbi doar `peisaj()`**. Rândul `screen.setup(700, 500)` stabilește mărimea ferestrei (lățime 700, înălțime 500), deci coordonatele merg de la -350 la 350 pe `x` și de la -250 la 250 pe `y`.
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** (Satul meu)  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
+- [ ] Am scris și am rulat **Exemplul 8** (Satul meu)  
+- [ ] Am schimbat o valoare din cod și am observat ce se schimbă
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Satul meu”
 
-### Exercițiul A — „Satul meu” (obligatoriu)
-Pornește de la Exemplul 10 și fă-l **al tău**. Trebuie să ai:
+### Minim vs Complet
+
+| | Ce trebuie |
+|--|------------|
+| **Minim** | O funcție `patrat(latura)` și o funcție `casa(...)`, apelate de câte două ori |
+| **Complet** | Minim + satul tău: cel puțin 3 case, 3 copaci, soare, nori, 2 funcții noi scrise de tine și o funcție `peisaj()` |
+
+### Pasul 1 — Minim
+- [ ] O funcție `patrat(latura)`  
+- [ ] O funcție `casa(x, y, m, culoare)`, apelată pentru două case diferite  
+
+### Pasul 2 — Complet
+Pornește de la Exemplul 8 și fă satul **al tău**. Trebuie să ai:
 1. cel puțin **3 case** de mărimi și culori diferite;
 2. cel puțin **3 copaci**;
 3. **soare** și **nori**;
-4. **cel puțin două funcții noi**, scrise de tine (de exemplu `gard()`, `masina()`, `floare()`, `luna()`, `pasare()`);
+4. **cel puțin două funcții noi**, scrise de tine (de exemplu `gard()`, `pasare()`, `luna()`, `biserica()`);
 5. toate apelurile grupate într-o funcție `peisaj()`.
-
-### Exercițiul B — Ce desenează?
-Gândește-te, apoi verifică în Thonny:
-
-```python
-import turtle
-
-t = turtle.Turtle()
-
-def forma(n):
-    for i in range(n):
-        t.forward(60)
-        t.left(360 / n)
-
-forma(3)
-forma(4)
-forma(6)
-
-turtle.done()
-```
-
-### Exercițiul C — Steagul
-Scrie funcția `steag(x, y, culoare1, culoare2, culoare3)` care desenează **trei dungi verticale** lipite, fiecare de câte 40 × 80, folosind funcția `dreptunghi`. Desenează steagul României: albastru, galben, roșu.
-
-### Exercițiul D — Găsește greșelile
-Programul are 4 greșeli. Rescrie-l corect:
-
-```text
-import turtle
-t = turtle.Turtle()
-triunghi(100)
-def patrat(latura)
-    for i in range(4):
-        t.forward(latura)
-        t.left(90)
-def triunghi(l):
-    for i in range(3):
-        t.forward(l)
-        t.left(120)
-patrat()
-patrat(50, 60)
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. De ce este mai bine să avem o funcție `casa` decât să copiem codul casei de 3 ori?  
-2. De ce în funcția `cerc` mutăm țestoasa la `y - r`?  
-3. De ce funcțiile noastre încep cu `setheading(0)`?
 
 **Gata când:**
 - [ ] Satul are cel puțin 3 case, 3 copaci, soare și nori  
 - [ ] Ai scris cel puțin 2 funcții noi  
 - [ ] Toate se apelează dintr-o funcție `peisaj()`  
-- [ ] Ai desenat steagul României  
-- [ ] Ai explicat pe foaie de ce folosim funcții  
+- [ ] Fiecare funcție începe cu `penup`, `goto`, `setheading(0)`, `pendown`  
 - [ ] Fișierul se numește `Prenume_Nume_P3_L4.py`  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
+## Bonus ★★★ — Provocare: Satul crește
+*Doar dacă ai terminat Complet. Adaugă în **același sat**, în același program.*
+
 - [ ] Fă o funcție `strada(numar)` care desenează `numar` case una lângă alta, cu o buclă  
-- [ ] Desenează o **grădină** cu 5 flori de culori diferite, la poziții diferite  
-- [ ] Desenează o **mașină** (dreptunghi, geamuri, 2 roți)  
-- [ ] Adaugă **noaptea**: o a doua funcție `peisaj_noapte()` cu fundal negru, lună și stele  
+- [ ] Fă o **grădină** cu 5 flori de culori diferite, la poziții diferite, cu funcțiile `petala` și `floare`  
+- [ ] Desenează o **mașină** (dreptunghiuri, geamuri, 2 roți) parcată în sat  
+- [ ] Adaugă **noaptea**: o a doua funcție `peisaj_noapte()` cu fundal închis, lună și stele  
 
 ---
 
@@ -677,11 +556,305 @@ Răspunde pe foaie:
 ---
 
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny.  
+1. Refă **Exemplele 1–8** în Thonny, scrise de mână.  
 2. Adaugă în sat o **biserică** sau o **școală** (o funcție nouă).  
 3. Desenează **o grădină** de flori cu 4 culori.  
 4. **Bonus:** pune toate casele într-o buclă, cu mărimi care cresc (`m = 60 + i * 15`).  
-5. Salvează totul ca `Tema_P3_L4_Prenume_Nume.py`.
+5. **Steagul.** Scrie funcția `steag(x, y, culoare1, culoare2, culoare3)` care desenează **trei dungi verticale** lipite, fiecare de câte 40 × 80, folosind funcția `dreptunghi`. Desenează steagul României: albastru, galben, roșu.  
+6. Salvează totul ca `Tema_P3_L4_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le în Thonny, rulează-le și schimbă-le după preferințe.
+
+#### Acasă 1 — Desenăm și calculăm
+
+```python
+import turtle
+
+t = turtle.Turtle()
+t.speed(0)
+
+def patrat(latura):
+    for i in range(4):
+        t.forward(latura)
+        t.left(90)
+    return 4 * latura
+
+perimetru = patrat(70)
+print("Perimetrul este:", perimetru)
+print("Aria este:", 70 * 70)
+
+turtle.done()
+```
+
+**Ieșire** (în fereastra Thonny, jos):
+```text
+Perimetrul este: 280
+Aria este: 4900
+```
+
+**Ce vezi pe ecran:** un pătrat cu latura 70.
+
+O funcție de desen poate și să **returneze** o valoare, aici perimetrul. Desenul apare pe ecran, iar numerele apar în fereastra de text din Thonny.
+
+#### Acasă 2 — Un rând de case, cu buclă
+
+```python
+import turtle
+
+t = turtle.Turtle()
+t.hideturtle()
+t.speed(0)
+
+def dreptunghi(x, y, l, h, culoare):
+    t.penup()
+    t.goto(x, y)
+    t.setheading(0)
+    t.pendown()
+    t.color(culoare)
+    t.begin_fill()
+    for i in range(2):
+        t.forward(l)
+        t.left(90)
+        t.forward(h)
+        t.left(90)
+    t.end_fill()
+
+def triunghi(x, y, l, culoare):
+    t.penup()
+    t.goto(x, y)
+    t.setheading(0)
+    t.pendown()
+    t.color(culoare)
+    t.begin_fill()
+    for i in range(3):
+        t.forward(l)
+        t.left(120)
+    t.end_fill()
+
+def casa(x, y, m, culoare):
+    dreptunghi(x, y, m, m, culoare)
+    triunghi(x, y + m, m, "firebrick")
+    dreptunghi(x + m * 0.4, y, m * 0.2, m * 0.4, "saddlebrown")
+
+culori = ["khaki", "lightblue", "pink", "lightgreen"]
+
+for i in range(4):
+    casa(-200 + i * 110, -80, 80, culori[i])
+
+turtle.done()
+```
+
+**Ce vezi pe ecran:** un **rând de 4 case** de aceeași mărime (80), la 110 de pași distanță, în culori diferite: nisipiu, albastru, roz și verde deschis.
+
+Bucla apelează funcția `casa` de 4 ori, iar `culori[i]` alege culoarea. O stradă întreagă a costat doar două rânduri!
+
+### Încă două exerciții
+
+**Ce desenează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+import turtle
+
+t = turtle.Turtle()
+
+def forma(n):
+    for i in range(n):
+        t.forward(60)
+        t.left(360 / n)
+
+forma(3)
+forma(4)
+forma(6)
+
+turtle.done()
+```
+
+**Găsește greșelile.** Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
+
+```text
+import turtle
+t = turtle.Turtle()
+triunghi(100)
+def patrat(latura)
+    for i in range(4):
+        t.forward(latura)
+        t.left(90)
+def triunghi(l):
+    for i in range(3):
+        t.forward(l)
+        t.left(120)
+patrat()
+patrat(50, 60)
+```
+
+---
+
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+
+Toate soluțiile pornesc de la funcțiile din Exemplul 8 și adaugă ceva în același sat. Mai jos e **începutul comun**, pe care îl copiezi o singură dată; după el vine fiecare soluție. La final, nu uita `turtle.done()` pe ultimul rând.
+
+```python
+import random
+import turtle
+
+screen = turtle.Screen()
+screen.setup(700, 500)
+screen.bgcolor("skyblue")
+
+t = turtle.Turtle()
+t.hideturtle()
+t.speed(0)
+
+def dreptunghi(x, y, l, h, culoare):
+    t.penup()
+    t.goto(x, y)
+    t.setheading(0)
+    t.pendown()
+    t.color(culoare)
+    t.begin_fill()
+    for i in range(2):
+        t.forward(l)
+        t.left(90)
+        t.forward(h)
+        t.left(90)
+    t.end_fill()
+
+def triunghi(x, y, l, culoare):
+    t.penup()
+    t.goto(x, y)
+    t.setheading(0)
+    t.pendown()
+    t.color(culoare)
+    t.begin_fill()
+    for i in range(3):
+        t.forward(l)
+        t.left(120)
+    t.end_fill()
+
+def cerc(x, y, r, culoare):
+    t.penup()
+    t.goto(x, y - r)
+    t.setheading(0)
+    t.pendown()
+    t.color(culoare)
+    t.begin_fill()
+    t.circle(r)
+    t.end_fill()
+
+def casa(x, y, m, culoare):
+    dreptunghi(x, y, m, m, culoare)
+    triunghi(x, y + m, m, "firebrick")
+    dreptunghi(x + m * 0.4, y, m * 0.2, m * 0.4, "saddlebrown")
+    dreptunghi(x + m * 0.1, y + m * 0.55, m * 0.2, m * 0.2, "lightyellow")
+
+def copac(x, y):
+    dreptunghi(x - 8, y, 16, 50, "saddlebrown")
+    cerc(x, y + 75, 35, "darkgreen")
+
+def soare(x, y):
+    cerc(x, y, 40, "gold")
+
+def peisaj():
+    dreptunghi(-350, -250, 700, 120, "forestgreen")
+    soare(260, 170)
+    casa(-250, -130, 120, "khaki")
+    copac(150, -130)
+```
+
+### 1. Strada
+
+Adaugă, după funcțiile de mai sus:
+
+```python
+def strada(numar):
+    culori = ["khaki", "lightblue", "pink", "lightgreen"]
+    for i in range(numar):
+        casa(-300 + i * 110, -130, 90, culori[i % 4])
+
+dreptunghi(-350, -250, 700, 120, "forestgreen")
+strada(5)
+```
+
+**Ce vezi pe ecran:** o **stradă de 5 case** (nisipiu, albastru, roz, verde, apoi din nou nisipiu), la 110 de pași una de alta, pe iarbă. Culoarea se alege cu `culori[i % 4]`, ca la spirala din Lecția 3.
+
+### 2. Grădina cu flori
+
+Adaugă, după funcțiile de mai sus:
+
+```python
+def petala(raza, culoare):
+    t.color("black", culoare)
+    t.begin_fill()
+    t.circle(raza, 60)
+    t.left(120)
+    t.circle(raza, 60)
+    t.left(120)
+    t.end_fill()
+
+def floare(x, y, petale, raza, culoare):
+    t.penup()
+    t.goto(x, y)
+    t.setheading(0)
+    t.pendown()
+    for i in range(petale):
+        petala(raza, culoare)
+        t.right(360 / petale)
+
+culori = ["red", "orange", "violet", "pink", "yellow"]
+
+dreptunghi(-350, -250, 700, 120, "forestgreen")
+for i in range(5):
+    floare(-200 + i * 100, -200, 6, 30, culori[i])
+```
+
+**Ce vezi pe ecran:** o **grădină** cu 5 flori cu câte 6 petale, de culori diferite, la 100 de pași una de alta. Funcția `floare` își mută singură țestoasa, deci poți pune florile oriunde.
+
+### 3. Mașina
+
+Adaugă, după funcțiile de mai sus:
+
+```python
+def masina(x, y, culoare):
+    dreptunghi(x, y + 15, 100, 25, culoare)
+    dreptunghi(x + 25, y + 40, 50, 20, culoare)
+    dreptunghi(x + 32, y + 43, 15, 14, "lightblue")
+    dreptunghi(x + 53, y + 43, 15, 14, "lightblue")
+    cerc(x + 22, y + 15, 12, "black")
+    cerc(x + 78, y + 15, 12, "black")
+
+dreptunghi(-350, -250, 700, 120, "forestgreen")
+masina(-100, -200, "red")
+masina(60, -200, "blue")
+```
+
+**Ce vezi pe ecran:** **două mașini**, una roșie și una albastră, cu geamuri deschise la culoare și roți negre. Caroseria e un dreptunghi lat, iar cabina un dreptunghi mai mic, așezat deasupra.
+
+### 4. Noaptea în sat
+
+Adaugă, după funcțiile de mai sus:
+
+```python
+def peisaj_noapte():
+    screen.bgcolor("midnightblue")
+    dreptunghi(-350, -250, 700, 120, "darkgreen")
+    cerc(260, 170, 35, "lightyellow")
+    for i in range(12):
+        x = random.randint(-330, 330)
+        y = random.randint(40, 230)
+        t.penup()
+        t.goto(x, y)
+        t.dot(5, "white")
+    casa(-250, -130, 120, "khaki")
+    casa(-60, -130, 100, "lightblue")
+    copac(150, -130)
+
+peisaj_noapte()
+```
+
+**Ce vezi pe ecran:** un peisaj de **noapte**: cer albastru închis, iarbă verde închis, o **lună** galbenă, 12 stele mici la poziții aleatoare, două case și un copac. Funcția schimbă singură fundalul, cu `screen.bgcolor`.
 
 ---
 

@@ -315,13 +315,13 @@ Scrie un program care:
 
 ---
 
-## Bonus ★★★ — Provocare: Banii și cifrele
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Pușculița, versiunea ta
+*Doar dacă ai terminat Complet. Lucrezi pe **propria ta** pușculiță: păstrează-o și îmbunătățește-o.*
 
-- [ ] Fă un program care calculează în câți ani îți dublezi banii cu o dobândă de 10% pe an  
-- [ ] Cere numere până scrii `0` și afișează **suma** lor  
-- [ ] Cere un număr și afișează cifrele lui în ordine inversă, folosind `% 10` și `// 10` într-un `while`  
-- [ ] Fă un meniu cu 4 opțiuni care se repetă până la `0`  
+- [ ] Dacă scrii `0` la o depunere, programul **se oprește** înainte de țintă (`break`), cu un mesaj potrivit  
+- [ ] După fiecare depunere afișează **cât mai ai de strâns** (doar cât timp nu ai atins ținta)  
+- [ ] La final afișează **cea mai mare depunere** (o variabilă `maxima`, actualizată cu `if`)  
+- [ ] La final afișează **media depunerilor**, cu o zecimală
 
 ---
 
@@ -457,96 +457,135 @@ while True:
 
 ## Răspunsuri la bonus
 
-*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit. Fiecare soluție pornește de la pușculița din Exemplul 8; ce scrie utilizatorul apare pe același rând cu întrebarea.*
 
-### 1. Banii se dublează
-
-```python
-bani = 1000
-tinta = bani * 2
-ani = 0
-while bani < tinta:
-    bani = bani * 1.10
-    ani += 1
-print("Dupa", ani, "ani ai", round(bani), "lei")
-```
-
-**Ieșire:**
-```text
-Dupa 8 ani ai 2144 lei
-```
-
-### 2. Suma până la 0
+### 1. Oprire cu 0
 
 ```python
-suma = 0
-n = int(input("Numar (0 = stop): "))
-while n != 0:
-    suma += n
-    n = int(input("Numar (0 = stop): "))
-print("Suma:", suma)
-```
-
-**Ieșire:**
-```text
-Numar (0 = stop): 5
-Numar (0 = stop): 3
-Numar (0 = stop): 8
-Numar (0 = stop): 0
-Suma: 16
-```
-
-### 3. Cifrele în ordine inversă
-
-```python
-n = int(input("Un numar: "))
-while n > 0:
-    print(n % 10)
-    n = n // 10
-```
-
-**Ieșire:**
-```text
-Un numar: 1234
-4
-3
-2
-1
-```
-
-### 4. Meniu cu 4 opțiuni
-
-```python
-while True:
-    print("1. Salut  2. Gluma  3. Zi buna  4. Sfat  0. Iesire")
-    alegere = input("Alege: ")
-    if alegere == "0":
+tinta = int(input("Cati lei vrei sa strangi? "))
+strans = 0
+depuneri = 0
+while strans < tinta:
+    suma = int(input(f"Ai strans {strans} lei. Cat pui acum? (0 = stop) "))
+    if suma == 0:
         break
-    elif alegere == "1":
-        print("Salut!")
-    elif alegere == "2":
-        print("De ce nu are calculatorul frig? Pentru ca are Windows... deschise!")
-    elif alegere == "3":
-        print("Sa ai o zi buna!")
-    elif alegere == "4":
-        print("Exerseaza putin in fiecare zi.")
-    else:
-        print("Optiune necunoscuta")
-print("La revedere!")
+    strans += suma
+    depuneri += 1
+print("-" * 25)
+if strans >= tinta:
+    print(f"Bravo! Ai strans {strans} lei din {depuneri} depuneri.")
+    if strans > tinta:
+        print(f"Ai depasit tinta cu {strans - tinta} lei.")
+else:
+    print(f"Te-ai oprit la {strans} lei din {tinta}. Mai ai de strans {tinta - strans} lei.")
 ```
 
 **Ieșire:**
 ```text
-1. Salut  2. Gluma  3. Zi buna  4. Sfat  0. Iesire
-Alege: 1
-Salut!
-1. Salut  2. Gluma  3. Zi buna  4. Sfat  0. Iesire
-Alege: 4
-Exerseaza putin in fiecare zi.
-1. Salut  2. Gluma  3. Zi buna  4. Sfat  0. Iesire
-Alege: 0
-La revedere!
+Cati lei vrei sa strangi? 100
+Ai strans 0 lei. Cat pui acum? (0 = stop) 30
+Ai strans 30 lei. Cat pui acum? (0 = stop) 0
+-------------------------
+Te-ai oprit la 30 lei din 100. Mai ai de strans 70 lei.
 ```
+
+Dacă scrii `0`, `break` iese din `while` imediat, iar `if`-ul de la final alege mesajul.
+
+### 2. Cât mai ai de strâns
+
+```python
+tinta = int(input("Cati lei vrei sa strangi? "))
+strans = 0
+depuneri = 0
+while strans < tinta:
+    suma = int(input(f"Ai strans {strans} lei. Cat pui acum? "))
+    strans += suma
+    depuneri += 1
+    if strans < tinta:
+        print(f"Mai ai de strans {tinta - strans} lei.")
+print("-" * 25)
+print(f"Bravo! Ai strans {strans} lei din {depuneri} depuneri.")
+if strans > tinta:
+    print(f"Ai depasit tinta cu {strans - tinta} lei.")
+```
+
+**Ieșire:**
+```text
+Cati lei vrei sa strangi? 100
+Ai strans 0 lei. Cat pui acum? 30
+Mai ai de strans 70 lei.
+Ai strans 30 lei. Cat pui acum? 50
+Mai ai de strans 20 lei.
+Ai strans 80 lei. Cat pui acum? 40
+-------------------------
+Bravo! Ai strans 120 lei din 3 depuneri.
+Ai depasit tinta cu 20 lei.
+```
+
+### 3. Cea mai mare depunere
+
+```python
+tinta = int(input("Cati lei vrei sa strangi? "))
+strans = 0
+depuneri = 0
+maxima = 0
+while strans < tinta:
+    suma = int(input(f"Ai strans {strans} lei. Cat pui acum? "))
+    strans += suma
+    depuneri += 1
+    if suma > maxima:
+        maxima = suma
+print("-" * 25)
+print(f"Bravo! Ai strans {strans} lei din {depuneri} depuneri.")
+if strans > tinta:
+    print(f"Ai depasit tinta cu {strans - tinta} lei.")
+print(f"Cea mai mare depunere: {maxima} lei")
+```
+
+**Ieșire:**
+```text
+Cati lei vrei sa strangi? 100
+Ai strans 0 lei. Cat pui acum? 30
+Ai strans 30 lei. Cat pui acum? 50
+Ai strans 80 lei. Cat pui acum? 40
+-------------------------
+Bravo! Ai strans 120 lei din 3 depuneri.
+Ai depasit tinta cu 20 lei.
+Cea mai mare depunere: 50 lei
+```
+
+`maxima` pornește de la 0 și se schimbă doar când apare o depunere mai mare.
+
+### 4. Media depunerilor
+
+```python
+tinta = int(input("Cati lei vrei sa strangi? "))
+strans = 0
+depuneri = 0
+while strans < tinta:
+    suma = int(input(f"Ai strans {strans} lei. Cat pui acum? "))
+    strans += suma
+    depuneri += 1
+print("-" * 25)
+print(f"Bravo! Ai strans {strans} lei din {depuneri} depuneri.")
+if strans > tinta:
+    print(f"Ai depasit tinta cu {strans - tinta} lei.")
+print(f"Media depunerilor: {strans / depuneri:.1f} lei")
+```
+
+**Ieșire:**
+```text
+Cati lei vrei sa strangi? 100
+Ai strans 0 lei. Cat pui acum? 30
+Ai strans 30 lei. Cat pui acum? 50
+Ai strans 80 lei. Cat pui acum? 40
+-------------------------
+Bravo! Ai strans 120 lei din 3 depuneri.
+Ai depasit tinta cu 20 lei.
+Media depunerilor: 40.0 lei
+```
+
+`strans / depuneri` este media; `:.1f` o afișează cu o zecimală.
 
 ---
 ## Ce urmează — Lecția 4

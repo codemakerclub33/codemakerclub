@@ -20,7 +20,7 @@ Greșeli frecvente. Syntax Error: ai uitat cele două puncte după for. Indentat
 
 Proiectul de azi. Numărătoarea rachetei. Minim înseamnă numerele de la unu la zece. Complet înseamnă și numărătoare inversă de la un număr citit, mesajul Decolare și un desen.
 
-Provocare, trei stele. Matematica buclelor. Doar dacă ai terminat varianta completă. Calculezi suma numerelor pare de la unu la o sută. Afișezi un pom de Crăciun din șase rânduri. Calculezi factorialul unui număr cu o buclă. Afișezi literele unui cuvânt, una pe rând, cu numărul lor de ordine.
+Provocare, trei stele. Racheta, versiunea ta. Doar dacă ai terminat varianta completă. Lucrezi pe propria ta numărătoare și adaugi patru lucruri. Citești înălțimea rachetei și o desenezi cu atâtea rânduri. Desenezi flăcările de sub ea, cu un for. Afișezi un mesaj special la T minus trei. Și calculezi suma numerelor numărate, cu un acumulator.
 
 Recapitulare. For repetă blocul indentat. Range de n dă de la zero la n minus unu. Pasul negativ numără invers. For merge și pe texte, și pe liste. Schema sumei: total egal zero, apoi total plus egal n în buclă. End schimbă ce vine după print.
 

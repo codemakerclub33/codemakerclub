@@ -295,13 +295,13 @@ Scrie un program care:
 
 ---
 
-## Bonus ★★★ — Provocare: Matematica buclelor
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Racheta, versiunea ta
+*Doar dacă ai terminat Complet. Lucrezi pe **propria ta** numărătoare a rachetei: păstrează-o și adaugă pe ea.*
 
-- [ ] Calculează suma numerelor **pare** de la 1 la 100  
-- [ ] Afișează un pom de Crăciun cu `*` din 6 rânduri  
-- [ ] Calculează **factorialul** unui număr (5! = 1·2·3·4·5) cu o buclă  
-- [ ] Afișează toate literele unui cuvânt, **una pe rând**, cu numărul lor de ordine  
+- [ ] Citește **înălțimea rachetei** cu `input` și desenează-o cu atâtea rânduri  
+- [ ] Desenează **flăcările** de sub rachetă, cu un `for` (de exemplu 3 rânduri cu `|`)  
+- [ ] Afișează un mesaj special la „T minus 3”, în interiorul numărătorii (`if i == 3:`)  
+- [ ] Calculează **suma numerelor** numărate (acumulator `total`) și afișează-o la final
 
 ---
 
@@ -419,72 +419,167 @@ for x in range(10, 0)
 
 ## Răspunsuri la bonus
 
-*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit. Fiecare soluție pornește de la numărătoarea rachetei din Exemplul 8; ce scrie utilizatorul apare pe același rând cu întrebarea.*
 
-### 1. Suma numerelor pare de la 1 la 100
+### 1. Înălțimea rachetei, citită
 
 ```python
+print("=== Centrul de control ===")
+secunde = int(input("De la cat numaram? "))
+
+for i in range(secunde, 0, -1):
+    print(f"T minus {i}...")
+print("Decolare!")
+
+print()
+inaltime = int(input("Cat de inalta e racheta? "))
+print("Racheta urca:")
+for rand in range(1, inaltime + 1):
+    print(" " * (inaltime - rand) + "^" * (2 * rand - 1))
+```
+
+**Ieșire:**
+```text
+=== Centrul de control ===
+De la cat numaram? 5
+T minus 5...
+T minus 4...
+T minus 3...
+T minus 2...
+T minus 1...
+Decolare!
+
+Cat de inalta e racheta? 6
+Racheta urca:
+     ^
+    ^^^
+   ^^^^^
+  ^^^^^^^
+ ^^^^^^^^^
+^^^^^^^^^^^
+```
+
+Racheta are exact atâtea rânduri câte ceri: aici 6.
+
+### 2. Flăcările de sub rachetă
+
+```python
+print("=== Centrul de control ===")
+secunde = int(input("De la cat numaram? "))
+
+for i in range(secunde, 0, -1):
+    print(f"T minus {i}...")
+print("Decolare!")
+
+print()
+print("Racheta urca:")
+for rand in range(1, 5):
+    print(" " * (4 - rand) + "^" * (2 * rand - 1))
+
+# Flacarile de sub racheta
+for flacara in range(3):
+    print("   |")
+```
+
+**Ieșire:**
+```text
+=== Centrul de control ===
+De la cat numaram? 5
+T minus 5...
+T minus 4...
+T minus 3...
+T minus 2...
+T minus 1...
+Decolare!
+
+Racheta urca:
+   ^
+  ^^^
+ ^^^^^
+^^^^^^^
+   |
+   |
+   |
+```
+
+### 3. Mesaj special la „T minus 3”
+
+```python
+print("=== Centrul de control ===")
+secunde = int(input("De la cat numaram? "))
+
+for i in range(secunde, 0, -1):
+    print(f"T minus {i}...")
+    if i == 3:
+        print("Atentie, motoarele pornesc!")
+print("Decolare!")
+
+print()
+print("Racheta urca:")
+for rand in range(1, 5):
+    print(" " * (4 - rand) + "^" * (2 * rand - 1))
+```
+
+**Ieșire:**
+```text
+=== Centrul de control ===
+De la cat numaram? 5
+T minus 5...
+T minus 4...
+T minus 3...
+Atentie, motoarele pornesc!
+T minus 2...
+T minus 1...
+Decolare!
+
+Racheta urca:
+   ^
+  ^^^
+ ^^^^^
+^^^^^^^
+```
+
+`if i == 3:` este în interiorul `for`, de aceea mesajul apare o singură dată, când `i` este 3.
+
+### 4. Suma numerelor numărate
+
+```python
+print("=== Centrul de control ===")
+secunde = int(input("De la cat numaram? "))
+
 total = 0
-for n in range(2, 101, 2):
-    total += n
-print(total)
+for i in range(secunde, 0, -1):
+    print(f"T minus {i}...")
+    total += i
+print("Decolare!")
+print(f"Suma numerelor numarate: {total}")
+
+print()
+print("Racheta urca:")
+for rand in range(1, 5):
+    print(" " * (4 - rand) + "^" * (2 * rand - 1))
 ```
 
 **Ieșire:**
 ```text
-2550
+=== Centrul de control ===
+De la cat numaram? 5
+T minus 5...
+T minus 4...
+T minus 3...
+T minus 2...
+T minus 1...
+Decolare!
+Suma numerelor numarate: 15
+
+Racheta urca:
+   ^
+  ^^^
+ ^^^^^
+^^^^^^^
 ```
 
-### 2. Pomul de Crăciun
-
-```python
-for i in range(1, 7):
-    print(" " * (6 - i) + "*" * (2 * i - 1))
-print(" " * 5 + "*")
-```
-
-**Ieșire:**
-```text
-     *
-    ***
-   *****
-  *******
- *********
-***********
-     *
-```
-
-### 3. Factorialul
-
-```python
-n = 5
-factorial = 1
-for i in range(1, n + 1):
-    factorial *= i
-print(f"{n}! = {factorial}")
-```
-
-**Ieșire:**
-```text
-5! = 120
-```
-
-### 4. Literele unui cuvânt, cu număr de ordine
-
-```python
-cuvant = "robot"
-for i in range(len(cuvant)):
-    print(i + 1, cuvant[i])
-```
-
-**Ieșire:**
-```text
-1 r
-2 o
-3 b
-4 o
-5 t
-```
+`total` pornește de la 0 și primește, la fiecare pas, valoarea lui `i`: 5 + 4 + 3 + 2 + 1 = 15.
 
 ---
 ## Ce urmează — Lecția 2

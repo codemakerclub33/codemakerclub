@@ -22,7 +22,7 @@ Greșeli frecvente. Ai scris print cu literă mare: trebuie litere mici. Ai uita
 
 Proiectul de azi. Cartea mea de vizită. Minim înseamnă cel puțin trei linii cu date despre tine. Complet înseamnă minim, plus chenar, un calcul, un desen și cel puțin două comentarii.
 
-Provocare, trei stele. Robotul cu numărătoare. Afișezi unu, două, trei, go, pe același rând, cu sep și end. Apoi desenezi un robot mare, cu un comentariu la fiecare parte, și afișezi un mesaj pe trei rânduri cu un singur print.
+Provocare, trei stele. Cartea de vizită, versiunea ta. Lucrezi pe propria ta carte și adaugi pe ea patru lucruri. Un slogan între ghilimele. Un desen mic deasupra, de exemplu o inimă. Cartea afișată de două ori, cu un rând gol între ele. Și, înainte de carte, numărătoarea unu, doi, trei, go, pe același rând, cu sep și end.
 
 Recapitulare. Un program este o listă de instrucțiuni executate de sus în jos. Scrii codul în editor și vezi rezultatul în Shell. Print afișează pe ecran. Fără ghilimele, print calculează. Backslash n trece pe rândul următor, iar diezul începe un comentariu. Erorile te ajută să repari.
 

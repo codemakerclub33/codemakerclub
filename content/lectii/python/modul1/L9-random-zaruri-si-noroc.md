@@ -305,12 +305,13 @@ Scrie un program care:
 
 ---
 
-## Bonus ★★★ — Provocare: Jocuri cu noroc
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Oracolul, versiunea magică
+*Doar dacă ai terminat Complet. Lucrezi pe **propriul tău** oracol: păstrează-l și adaugă la sfârșit.*
 
-- [ ] Un joc **Aruncă zarurile**: aruncă tu și calculatorul două zaruri, iar cine are suma mai mare câștigă  
-- [ ] **Generator de nume de dragon**: alege la întâmplare un prenume și un nume dintr-o listă, apoi lipește-le  
-- [ ] Un program care alege **cine strânge masa**: citește 3 nume și alege unul  
+- [ ] Adaugă „Sfatul zilei”: creează o a doua listă, `sfaturi`, cu cel puțin 4 sfaturi și afișează unul la întâmplare cu `random.choice`  
+- [ ] Adaugă „Culoarea norocoasă”, aleasă la întâmplare dintr-o listă `culori`  
+- [ ] Fă numărul norocos o **sumă de două zaruri** (`random.randint(1, 6)` de două ori)  
+- [ ] Dacă numărul norocos este cel mai mare posibil (6 în Exemplul 8, 100 la oracolul tău din 1–100), afișează un mesaj special, de exemplu „Azi ai super noroc!” (`if`)
 
 ---
 
@@ -428,68 +429,159 @@ if zar = 6:
 
 ## Răspunsuri la bonus
 
-*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit. Fiecare soluție pornește de la oracolul din Exemplul 8, cu numărul norocos de la 1 la 6; dacă al tău merge până la 100, adaptează numerele. Răspunsurile sunt la întâmplare, deci la tine vor arăta altfel. La soluția 4 am arătat o rulare în care a ieșit numărul 6.*
 
-### 1. Aruncă zarurile
-
-```python
-import random
-tu = random.randint(1, 6) + random.randint(1, 6)
-calc = random.randint(1, 6) + random.randint(1, 6)
-print("Tu:", tu)
-print("Calculatorul:", calc)
-if tu > calc:
-    print("Ai castigat!")
-elif tu < calc:
-    print("A castigat calculatorul!")
-else:
-    print("Egalitate!")
-```
-
-**Ieșire:**
-```text
-Tu: 7
-Calculatorul: 7
-Egalitate!
-```
-
-*Numerele sunt aleatoare, deci la tine ieșirea poate fi alta.*
-
-### 2. Nume de dragon
+### 1. Sfatul zilei
 
 ```python
 import random
-prenume = ["Focus", "Zmeu", "Aripa", "Cenusa"]
-nume = ["cel Mare", "de Foc", "din Nori", "cel Strasnic"]
-print(random.choice(prenume), random.choice(nume))
+
+print("=== Oracolul ===")
+intrebare = input("Pune o intrebare cu raspuns da/nu: ")
+raspunsuri = [
+    "Da, sigur!",
+    "Cu siguranta nu.",
+    "Poate...",
+    "Intreaba mai tarziu.",
+    "Stelele spun da.",
+    "Nu conta pe asta.",
+]
+numar = random.randint(1, 6)
+print("-" * 25)
+print(f"Intrebarea ta: {intrebare}")
+print("Raspunsul oracolului:", random.choice(raspunsuri))
+print(f"Numarul tau norocos: {numar}")
+
+# Sfatul zilei
+sfaturi = [
+    "Bea apa si zambeste.",
+    "Invata ceva nou azi.",
+    "Fii amabil cu cei din jur.",
+    "Fa o pauza si respira.",
+]
+print("Sfatul zilei:", random.choice(sfaturi))
 ```
 
-**Ieșire:**
+**Ieșire (exemplu):**
 ```text
-Aripa din Nori
+=== Oracolul ===
+Pune o intrebare cu raspuns da/nu: Voi lua nota 10?
+-------------------------
+Intrebarea ta: Voi lua nota 10?
+Raspunsul oracolului: Intreaba mai tarziu.
+Numarul tau norocos: 4
+Sfatul zilei: Bea apa si zambeste.
 ```
 
-*Numerele sunt aleatoare, deci la tine ieșirea poate fi alta.*
-
-### 3. Cine strânge masa
+### 2. Culoarea norocoasă
 
 ```python
 import random
-nume = []
-for i in range(3):
-    nume.append(input("Nume: "))
-print("Strange masa:", random.choice(nume))
+
+print("=== Oracolul ===")
+intrebare = input("Pune o intrebare cu raspuns da/nu: ")
+raspunsuri = [
+    "Da, sigur!",
+    "Cu siguranta nu.",
+    "Poate...",
+    "Intreaba mai tarziu.",
+    "Stelele spun da.",
+    "Nu conta pe asta.",
+]
+numar = random.randint(1, 6)
+print("-" * 25)
+print(f"Intrebarea ta: {intrebare}")
+print("Raspunsul oracolului:", random.choice(raspunsuri))
+print(f"Numarul tau norocos: {numar}")
+
+# Culoarea norocoasa
+culori = ["rosu", "albastru", "verde", "galben", "mov"]
+print("Culoarea norocoasa:", random.choice(culori))
 ```
 
-**Ieșire:**
+**Ieșire (exemplu):**
 ```text
-Nume: Ana
-Nume: Radu
-Nume: Ioana
-Strange masa: Ana
+=== Oracolul ===
+Pune o intrebare cu raspuns da/nu: Voi lua nota 10?
+-------------------------
+Intrebarea ta: Voi lua nota 10?
+Raspunsul oracolului: Intreaba mai tarziu.
+Numarul tau norocos: 4
+Culoarea norocoasa: rosu
 ```
 
-*Numerele sunt aleatoare, deci la tine ieșirea poate fi alta.*
+### 3. Suma a două zaruri
+
+```python
+import random
+
+print("=== Oracolul ===")
+intrebare = input("Pune o intrebare cu raspuns da/nu: ")
+raspunsuri = [
+    "Da, sigur!",
+    "Cu siguranta nu.",
+    "Poate...",
+    "Intreaba mai tarziu.",
+    "Stelele spun da.",
+    "Nu conta pe asta.",
+]
+zar1 = random.randint(1, 6)
+zar2 = random.randint(1, 6)
+numar = zar1 + zar2
+print("-" * 25)
+print(f"Intrebarea ta: {intrebare}")
+print("Raspunsul oracolului:", random.choice(raspunsuri))
+print(f"Zarurile: {zar1} si {zar2}")
+print(f"Numarul tau norocos: {numar}")
+```
+
+**Ieșire (exemplu):**
+```text
+=== Oracolul ===
+Pune o intrebare cu raspuns da/nu: Voi lua nota 10?
+-------------------------
+Intrebarea ta: Voi lua nota 10?
+Raspunsul oracolului: Da, sigur!
+Zarurile: 4 si 4
+Numarul tau norocos: 8
+```
+
+### 4. Mesaj special la numărul 6
+
+```python
+import random
+
+print("=== Oracolul ===")
+intrebare = input("Pune o intrebare cu raspuns da/nu: ")
+raspunsuri = [
+    "Da, sigur!",
+    "Cu siguranta nu.",
+    "Poate...",
+    "Intreaba mai tarziu.",
+    "Stelele spun da.",
+    "Nu conta pe asta.",
+]
+numar = random.randint(1, 6)
+print("-" * 25)
+print(f"Intrebarea ta: {intrebare}")
+print("Raspunsul oracolului:", random.choice(raspunsuri))
+print(f"Numarul tau norocos: {numar}")
+
+# Mesaj special
+if numar == 6:
+    print("Azi ai super noroc!")
+```
+
+**Ieșire (exemplu):**
+```text
+=== Oracolul ===
+Pune o intrebare cu raspuns da/nu: Voi lua nota 10?
+-------------------------
+Intrebarea ta: Voi lua nota 10?
+Raspunsul oracolului: Da, sigur!
+Numarul tau norocos: 6
+Azi ai super noroc!
+```
 
 ---
 ## Ce urmează — Lecția 10

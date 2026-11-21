@@ -330,12 +330,13 @@ Scrie un chestionar cu **cel puțin 4 întrebări** (cel puțin una cu număr ș
 
 ---
 
-## Bonus ★★★ — Provocare: Decizii mai grele
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Chestionarul, runda a doua
+*Doar dacă ai terminat Complet. Lucrezi pe **propriul tău** chestionar: păstrează-l și îmbunătățește-l.*
 
-- [ ] Citește trei numere și afișează-l pe cel mai mare  
-- [ ] Fă un program care citește o zi a săptămânii (1–7) și afișează numele zilei  
-- [ ] Verifică dacă un an este bisect: divizibil cu 4 (ignoră excepțiile)  
+- [ ] Adaugă o **întrebare nouă** cu răspuns număr și indiciu: dacă răspunsul e prea mic spune „Prea mic”, dacă e prea mare spune „Prea mare” (`if`, `elif`, `else`). Scorul maxim crește cu 1  
+- [ ] Adaugă o **întrebare de 2 puncte**: dacă răspunsul e corect, `scor += 2`. Scorul maxim crește cu 2  
+- [ ] Schimbă verdictul final în **4 trepte** (cu `elif`): de exemplu Excelent, Bravo, Mai încearcă, Citește din nou lecția  
+- [ ] Afișează scorul și în **procente**, cu o zecimală (`{procent:.1f}`)
 
 ---
 
@@ -460,72 +461,235 @@ if varsta > 12
 
 ## Răspunsuri la bonus
 
-*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit. Fiecare soluție pornește de la chestionarul din Exemplul 8 (cu 3 întrebări); la al tău, cu mai multe întrebări, adaptează numerele din „din 3”, „din 4” și „din 5”. Ce scrie utilizatorul apare pe același rând cu întrebarea.*
 
-### 1. Cel mai mare dintre trei
+### 1. O întrebare nouă, cu indiciu
 
 ```python
-a = int(input("Primul: "))
-b = int(input("Al doilea: "))
-c = int(input("Al treilea: "))
-if a >= b and a >= c:
-    print("Cel mai mare:", a)
-elif b >= c:
-    print("Cel mai mare:", b)
+print("=== Chestionar ===")
+scor = 0
+
+r1 = input("1. Care e capitala Romaniei? ")
+if r1.lower() == "bucuresti":
+    print("Corect!")
+    scor += 1
 else:
-    print("Cel mai mare:", c)
+    print("Gresit. Raspunsul era Bucuresti.")
+
+r2 = int(input("2. Cat face 7 * 8? "))
+if r2 == 56:
+    print("Corect!")
+    scor += 1
+else:
+    print("Gresit. Raspunsul era 56.")
+
+r3 = input("3. De ce culoare e cerul senin? ")
+if r3.lower() == "albastru":
+    print("Corect!")
+    scor += 1
+else:
+    print("Gresit. Raspunsul era albastru.")
+
+r4 = int(input("4. Cate zile are o saptamana? "))
+if r4 == 7:
+    print("Corect!")
+    scor += 1
+elif r4 < 7:
+    print("Prea mic!")
+else:
+    print("Prea mare!")
+
+print("-" * 20)
+print(f"Scor: {scor} din 4")
+if scor == 4:
+    print("Excelent!")
+elif scor >= 3:
+    print("Bravo!")
+else:
+    print("Mai incearca!")
 ```
 
 **Ieșire:**
 ```text
-Primul: 4
-Al doilea: 9
-Al treilea: 6
-Cel mai mare: 9
+=== Chestionar ===
+1. Care e capitala Romaniei? Bucuresti
+Corect!
+2. Cat face 7 * 8? 56
+Corect!
+3. De ce culoare e cerul senin? albastru
+Corect!
+4. Cate zile are o saptamana? 5
+Prea mic!
+--------------------
+Scor: 3 din 4
+Bravo!
 ```
 
-### 2. Numele zilei
+### 2. Întrebarea de 2 puncte
 
 ```python
-zi = int(input("Ziua (1-7): "))
-if zi == 1:
-    print("luni")
-elif zi == 2:
-    print("marti")
-elif zi == 3:
-    print("miercuri")
-elif zi == 4:
-    print("joi")
-elif zi == 5:
-    print("vineri")
-elif zi == 6:
-    print("sambata")
-elif zi == 7:
-    print("duminica")
+print("=== Chestionar ===")
+scor = 0
+
+r1 = input("1. Care e capitala Romaniei? ")
+if r1.lower() == "bucuresti":
+    print("Corect!")
+    scor += 1
 else:
-    print("Numar gresit")
+    print("Gresit. Raspunsul era Bucuresti.")
+
+r2 = int(input("2. Cat face 7 * 8? "))
+if r2 == 56:
+    print("Corect!")
+    scor += 1
+else:
+    print("Gresit. Raspunsul era 56.")
+
+r3 = input("3. De ce culoare e cerul senin? ")
+if r3.lower() == "albastru":
+    print("Corect!")
+    scor += 1
+else:
+    print("Gresit. Raspunsul era albastru.")
+
+r4 = int(input("4. Intrebare de 2 puncte: cat face 12 * 12? "))
+if r4 == 144:
+    print("Corect, 2 puncte!")
+    scor += 2
+else:
+    print("Gresit. Raspunsul era 144.")
+
+print("-" * 20)
+print(f"Scor: {scor} din 5")
+if scor == 5:
+    print("Excelent!")
+elif scor >= 3:
+    print("Bravo!")
+else:
+    print("Mai incearca!")
 ```
 
 **Ieșire:**
 ```text
-Ziua (1-7): 3
-miercuri
+=== Chestionar ===
+1. Care e capitala Romaniei? Bucuresti
+Corect!
+2. Cat face 7 * 8? 56
+Corect!
+3. De ce culoare e cerul senin? albastru
+Corect!
+4. Intrebare de 2 puncte: cat face 12 * 12? 144
+Corect, 2 puncte!
+--------------------
+Scor: 5 din 5
+Excelent!
 ```
 
-### 3. An bisect
+### 3. Verdict în 4 trepte
 
 ```python
-an = int(input("Anul: "))
-if an % 4 == 0:
-    print("An bisect")
+print("=== Chestionar ===")
+scor = 0
+
+r1 = input("1. Care e capitala Romaniei? ")
+if r1.lower() == "bucuresti":
+    print("Corect!")
+    scor += 1
 else:
-    print("Nu este bisect")
+    print("Gresit. Raspunsul era Bucuresti.")
+
+r2 = int(input("2. Cat face 7 * 8? "))
+if r2 == 56:
+    print("Corect!")
+    scor += 1
+else:
+    print("Gresit. Raspunsul era 56.")
+
+r3 = input("3. De ce culoare e cerul senin? ")
+if r3.lower() == "albastru":
+    print("Corect!")
+    scor += 1
+else:
+    print("Gresit. Raspunsul era albastru.")
+
+print("-" * 20)
+print(f"Scor: {scor} din 3")
+if scor == 3:
+    print("Excelent!")
+elif scor == 2:
+    print("Bravo!")
+elif scor == 1:
+    print("Mai incearca!")
+else:
+    print("Citeste din nou lectia!")
 ```
 
 **Ieșire:**
 ```text
-Anul: 2024
-An bisect
+=== Chestionar ===
+1. Care e capitala Romaniei? Bucuresti
+Corect!
+2. Cat face 7 * 8? 7
+Gresit. Raspunsul era 56.
+3. De ce culoare e cerul senin? verde
+Gresit. Raspunsul era albastru.
+--------------------
+Scor: 1 din 3
+Mai incearca!
+```
+
+### 4. Scorul în procente
+
+```python
+print("=== Chestionar ===")
+scor = 0
+
+r1 = input("1. Care e capitala Romaniei? ")
+if r1.lower() == "bucuresti":
+    print("Corect!")
+    scor += 1
+else:
+    print("Gresit. Raspunsul era Bucuresti.")
+
+r2 = int(input("2. Cat face 7 * 8? "))
+if r2 == 56:
+    print("Corect!")
+    scor += 1
+else:
+    print("Gresit. Raspunsul era 56.")
+
+r3 = input("3. De ce culoare e cerul senin? ")
+if r3.lower() == "albastru":
+    print("Corect!")
+    scor += 1
+else:
+    print("Gresit. Raspunsul era albastru.")
+
+print("-" * 20)
+print(f"Scor: {scor} din 3")
+procent = scor * 100 / 3
+print(f"Procent: {procent:.1f}%")
+if scor == 3:
+    print("Excelent!")
+elif scor >= 2:
+    print("Bravo!")
+else:
+    print("Mai incearca!")
+```
+
+**Ieșire:**
+```text
+=== Chestionar ===
+1. Care e capitala Romaniei? bucuresti
+Corect!
+2. Cat face 7 * 8? 56
+Corect!
+3. De ce culoare e cerul senin? verde
+Gresit. Raspunsul era albastru.
+--------------------
+Scor: 2 din 3
+Procent: 66.7%
+Bravo!
 ```
 
 ---

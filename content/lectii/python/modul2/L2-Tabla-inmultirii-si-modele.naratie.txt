@@ -20,7 +20,7 @@ Greșeli frecvente. Toate numerele apar pe un singur rând lung: ai uitat print 
 
 Proiectul de azi. Atelierul de modele. Minim înseamnă tabla și triunghiul. Complet înseamnă și piramida, pentru un număr citit între doi și nouă.
 
-Provocare, trei stele. Tabla de șah și rombul. Doar dacă ai terminat varianta completă. Afișezi tabla înmulțirii de la unu la nouă, frumos aliniată. Desenezi un romb din steluțe. Afișezi o tablă de șah de opt pe opt, cu diez și punct alternate. Afișezi un triunghi inversat, de la cinci steluțe la una.
+Provocare, trei stele. Atelierul de modele, mai multe modele. Doar dacă ai terminat varianta completă. Lucrezi pe propriul tău atelier și adaugi la sfârșit patru modele, cu același număr n. Un triunghi inversat. Un romb, făcut dintr-o piramidă și o piramidă inversată. O tablă de șah n pe n, cu diez și punct. Și tabla înmulțirii de la unu la n, aliniată.
 
 Recapitulare. Buclele imbricate sunt o buclă în alta. Cea din interior se repetă complet pentru fiecare pas al celei de afară. Rânduri înseamnă bucla de afară, coloane înseamnă bucla din interior. Print gol după bucla interioară trece la rândul următor. Steluța înmulțită cu un număr repetă textul.
 

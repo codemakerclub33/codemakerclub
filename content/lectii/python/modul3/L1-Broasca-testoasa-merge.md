@@ -1,4 +1,5 @@
-# LECȚIA 1 — Broasca țestoasă merge
+# LECȚIA 1 — Scara țestoasei
+### Turtle: forward, left și for
 **Modulul 3 · Desenăm cu Turtle · 2 ore**  
 **Code Maker Club · Turtle Artist**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei pornești o fereastră Turtle, miști țestoasa cu `forward`, `backward`, `left`, `right`, desenezi un pătrat cu `for`, ridici și cobori creionul și muți țestoasa cu `goto`.  
-**Minim:** o fereastră cu o linie și un pătrat desenat.  
-**Ținta orei (Complet):** + țestoasa schimbă locul fără să deseneze și desenezi „scara” din mini-proiect.
-
-## De ce contează
-Desenul este cea mai bună metodă să **vezi** ce face un program. Dacă ceva nu merge, vezi imediat unde a greșit țestoasa. Și, în plus, e distractiv: desenele de azi sunt baza pentru jocuri.
+## Ce facem azi
+La finalul orei pornești o fereastră Turtle, miști țestoasa cu `forward`, `backward`, `left` și `right`, desenezi un pătrat cu `for`, ridici și cobori creionul și muți țestoasa cu `goto`. Desenul este cea mai bună metodă să **vezi** ce face un program: dacă ceva nu merge, vezi imediat unde a greșit țestoasa. Desenele de azi sunt baza pentru jocurile din ultimele lecții ale modulului.
 
 ---
 
@@ -22,12 +18,24 @@ Desenul este cea mai bună metodă să **vezi** ce face un program. Dacă ceva n
 | Minute | Ce facem |
 |--------|----------|
 | 0–10 | Recapitulare Modulul 2 |
-| 10–30 | Prima fereastră și prima linie (**Exemplele 1–2**) |
-| 30–55 | Unghiuri și pătratul (**Exemplele 3–5**) |
-| 55–75 | Viteză, formă, creion (**Exemplele 6–7**) |
-| 75–90 | Unde este țestoasa? Text pe ecran (**Exemplele 8–9**) |
-| 90–115 | Mini-proiect (**Exemplul 10**) |
+| 10–30 | Prima fereastră și comenzile de mișcare (**Exemplele 1–2**) |
+| 30–55 | Unghiuri și pătratul (**Exemplele 3–4**) |
+| 55–75 | Formă, viteză și creion (**Exemplele 5–6**) |
+| 75–90 | Unde este țestoasa? Text pe ecran (**Exemplul 7**) |
+| 90–115 | Mini-proiect (**Exemplul 8**) |
 | 115–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `import turtle` | Aduce uneltele de desen | `t = turtle.Turtle()` |
+| `t.forward(n)` · `t.left(g)` | Merge înainte · se rotește la stânga | `t.forward(100)` |
+| `t.penup()` · `t.goto(x, y)` · `t.pendown()` | Mută țestoasa fără să deseneze | `t.goto(-100, 50)` |
+| `t.write("text")` | Scrie text pe ecran | `t.write("Salut!")` |
+| `turtle.done()` | Ține fereastra deschisă | ultima linie din program |
 
 ---
 
@@ -128,27 +136,17 @@ turtle.done()
 
 `left` o întoarce spre stânga, `right` spre dreapta. După fiecare rotire, `forward` merge în **noua** direcție.
 
-### Exemplul 4 — Pătratul „cu mâna”
+### Exemplul 4 — Pătratul cu `for`
 
-```python
-import turtle
+Pătratul are 4 laturi egale și 4 rotiri de 90°. „Cu mâna” ar însemna 8 linii de cod:
 
-t = turtle.Turtle()
+```text
 t.forward(100)
 t.left(90)
-t.forward(100)
-t.left(90)
-t.forward(100)
-t.left(90)
-t.forward(100)
-t.left(90)
-
-turtle.done()
+(...și tot așa, de 4 ori)
 ```
 
-**Ce vezi pe ecran:** un pătrat cu latura de 100. Țestoasa se întoarce la punctul de plecare și privește din nou spre dreapta.
-
-### Exemplul 5 — Pătratul cu `for`
+Cu `for`, aceleași două comenzi se repetă de 4 ori și ajung doar 3 linii:
 
 ```python
 import turtle
@@ -161,19 +159,18 @@ for i in range(4):
 turtle.done()
 ```
 
-**Ce vezi pe ecran:** exact același pătrat ca la Exemplul 4, dar cu 3 linii în loc de 8. Ai învățat în Modulul 2 că `for` repetă instrucțiunile: acum le folosești la desen.
+**Ce vezi pe ecran:** un pătrat cu latura de 100. Țestoasa se întoarce la punctul de plecare și privește din nou spre dreapta. Ai învățat în Modulul 2 că `for` repetă instrucțiunile: acum le folosești la desen.
 
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 3** (`left` și `right`)  
-- [ ] Am scris și am rulat **Exemplul 4** (Pătratul „cu mâna”)  
-- [ ] Am scris și am rulat **Exemplul 5** (Pătratul cu `for`)  
+- [ ] Am scris și am rulat **Exemplul 4** (Pătratul cu `for`)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## 4. Viteză, formă și creion
+## 4. Formă, viteză și creion
 
-### Exemplul 6 — Țestoasă adevărată și viteză
+### Exemplul 5 — Țestoasă adevărată și viteză
 
 ```python
 import turtle
@@ -195,7 +192,7 @@ turtle.done()
 | `shape("turtle")` | schimbă forma: `"arrow"`, `"turtle"`, `"circle"`, `"square"`, `"triangle"` |
 | `speed(n)` | viteza, de la `1` (lent) la `10` (rapid); `0` = cel mai rapid |
 
-### Exemplul 7 — Ridicăm creionul
+### Exemplul 6 — Ridicăm creionul
 
 ```python
 import turtle
@@ -219,15 +216,15 @@ turtle.done()
 Fereastra are un sistem de coordonate: centrul este `(0, 0)`. `x` crește spre **dreapta**, `y` crește în **sus**. Deci `(-100, 50)` este la stânga și deasupra centrului.
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 6** (Țestoasă adevărată și viteză)  
-- [ ] Am scris și am rulat **Exemplul 7** (Ridicăm creionul)  
+- [ ] Am scris și am rulat **Exemplul 5** (Țestoasă adevărată și viteză)  
+- [ ] Am scris și am rulat **Exemplul 6** (Ridicăm creionul)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 5. Unde este țestoasa?
 
-### Exemplul 8 — Poziția și direcția
+### Exemplul 7 — Poziția, direcția și textul
 
 ```python
 import turtle
@@ -239,45 +236,35 @@ t.left(90)
 t.forward(50)
 print("Acum:", round(t.xcor()), round(t.ycor()), round(t.heading()))
 
-turtle.done()
-```
-
-**Ieșire:**
-```text
-Start: 0.0 0.0 0.0
-Acum: 100 50 90
-```
-
-`xcor()` și `ycor()` dau poziția, iar `heading()` dă direcția în grade: `0` = spre dreapta, `90` = în sus, `180` = spre stânga, `270` = în jos. Folosim `round(...)` ca să scăpăm de zecimalele foarte mici care pot apărea la calcule.
-
-### Exemplul 9 — Scriem pe ecran
-
-```python
-import turtle
-
-t = turtle.Turtle()
 t.penup()
-t.goto(-100, 0)
+t.goto(-100, -60)
 t.write("Salut, Turtle!", font=("Arial", 24, "bold"))
 t.hideturtle()
 
 turtle.done()
 ```
 
-**Ce vezi pe ecran:** textul **Salut, Turtle!** scris îngroșat, pornind din stânga ecranului. Țestoasa este ascunsă.
+**Ieșire** (în fereastra Thonny, jos):
+```text
+Start: 0.0 0.0 0.0
+Acum: 100 50 90
+```
 
-`write("text", font=(nume, mărime, stil))` scrie pe ecran. `hideturtle()` ascunde țestoasa (`showturtle()` o arată din nou).
+**Ce vezi pe ecran:** o linie spre dreapta și apoi în sus, iar sub ea textul **Salut, Turtle!** scris îngroșat. Țestoasa este ascunsă.
+
+- `xcor()` și `ycor()` dau poziția, iar `heading()` dă direcția în grade: `0` = spre dreapta, `90` = în sus, `180` = spre stânga, `270` = în jos. Folosim `round(...)` ca să scăpăm de zecimalele foarte mici care pot apărea la calcule.
+- `write("text", font=(nume, mărime, stil))` scrie pe ecran.
+- `hideturtle()` ascunde țestoasa (`showturtle()` o arată din nou).
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 8** (Poziția și direcția)  
-- [ ] Am scris și am rulat **Exemplul 9** (Scriem pe ecran)  
+- [ ] Am scris și am rulat **Exemplul 7** (Poziția, direcția și textul)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 6. Mini-proiect
 
-### Exemplul 10 — Scara țestoasei
+### Exemplul 8 — Scara țestoasei
 
 ```python
 import turtle
@@ -304,72 +291,46 @@ turtle.done()
 Începem cu `penup()` și `goto`, ca desenul să nu pornească din centru. Treapta se repetă de 5 ori cu `for`.
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** (Scara țestoasei)  
+- [ ] Am scris și am rulat **Exemplul 8** (Scara țestoasei)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Scara țestoasei”
 
-### Exercițiul A — „Scara țestoasei” (obligatoriu)
-Pornește de la Exemplul 10 și fă-ți propriul desen:
-1. scara are **cel puțin 6 trepte**;
-2. treptele au altă mărime decât în exemplu;
-3. desenează **încă o formă** lângă scară (un pătrat, o linie) mutând țestoasa cu `penup`, `goto`, `pendown`;
-4. scrie pe ecran numele tău cu `write`.
+### Minim vs Complet
 
-### Exercițiul B — Ce desenează?
-Gândește-te, apoi verifică în Thonny:
+| | Ce trebuie |
+|--|------------|
+| **Minim** | O fereastră Turtle cu un pătrat desenat cu `for` |
+| **Complet** | Minim + o scară cu cel puțin 6 trepte, încă o formă desenată în alt loc (cu `penup`, `goto`, `pendown`) și numele tău scris pe ecran |
 
-```python
-import turtle
+### Pasul 1 — Minim
+- [ ] O fereastră Turtle cu un pătrat desenat cu `for`  
 
-t = turtle.Turtle()
-t.forward(100)
-t.left(90)
-t.forward(100)
-t.left(90)
-t.forward(50)
-
-turtle.done()
-```
-
-### Exercițiul C — Triunghiul
-Desenează un **triunghi** cu laturile egale. Indiciu: pătratul are 4 laturi și se rotește cu 90°. Pentru triunghi, rotirea este `360 / 3`. Câte grade e asta?
-
-### Exercițiul D — Găsește greșelile
-Programul are 4 greșeli. Rescrie-l corect:
-
-```text
-import Turtle
-t = turtle.Turtle()
-t.forward(100
-t.left(90)
-t.Forward(50)
-turtle.done
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. La ce folosește `turtle.done()`?  
-2. Care este diferența dintre `left(90)` și `right(90)`?  
-3. Ce face `penup()`?
+### Pasul 2 — Complet
+Scrie un program care:
+1. desenează o scară cu **cel puțin 6 trepte**, cu altă mărime decât în exemplu;
+2. mută țestoasa cu `penup`, `goto`, `pendown` și desenează **încă o formă** lângă scară (un pătrat sau o linie);
+3. scrie pe ecran numele tău cu `write`.
 
 **Gata când:**
 - [ ] Scara are cel puțin 6 trepte  
-- [ ] Ai desenat încă o formă, mutând țestoasa fără să deseneze  
-- [ ] Ai scris numele pe ecran  
-- [ ] Ai desenat triunghiul  
-- [ ] Ai explicat pe foaie `done()`, `left` și `penup`  
+- [ ] A doua formă e desenată în alt loc, fără o linie nedorită până la ea  
+- [ ] Numele tău e scris pe ecran  
+- [ ] Ai testat programul cu 3 mărimi diferite pentru trepte  
 - [ ] Fișierul se numește `Prenume_Nume_P3_L1.py` (nu `turtle.py`)  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Desenează un **dreptunghi** (laturi diferite, 150 și 80)  
-- [ ] Desenează inițiala numelui tău din linii  
-- [ ] Desenează o **casă** simplă: pătrat + triunghi deasupra  
-- [ ] Desenează un pătrat cu `forward` și `right` în loc de `left`; ce diferență vezi?  
+## Bonus ★★★ — Provocare: Scara cu steag
+*Doar dacă ai terminat Complet. Pornești de la scara ta din Exemplul 8 și o completezi, în același program.*
+
+- [ ] Pune un **steag** în vârful scării: un băț în sus și un dreptunghi la capătul lui  
+- [ ] Desenează **soarele**: un punct galben mare, cu 8 raze în jur  
+- [ ] **Numerotează treptele** (1, 2, 3...) cu `write`, în buclă  
+- [ ] Desenează o **a doua scară**, mai mică, cu 3 trepte, în partea dreaptă a ferestrei  
+
 
 ---
 
@@ -408,11 +369,198 @@ Răspunde pe foaie:
 ---
 
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny.  
+1. Refă **Exemplele 1–8** în Thonny, scrise de mână.  
 2. Desenează o **scară care coboară** în loc să urce.  
 3. Desenează **trei pătrate** puse unul lângă altul (mută țestoasa între ele).  
 4. **Bonus:** desenează un pătrat în care fiecare latură are altă lungime, cu `for` și lista `[50, 80, 110, 140]`.  
-5. Salvează totul ca `Tema_P3_L1_Prenume_Nume.py`.
+5. **Triunghiul.** Desenează un **triunghi** cu laturile egale. Indiciu: pătratul se rotește cu 90° (`360 / 4`). Câte grade se rotește triunghiul, la `360 / 3`?  
+6. Salvează totul ca `Tema_P3_L1_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le în Thonny, rulează-le și schimbă-le după preferințe.
+
+#### Acasă 1 — Triunghiul
+
+```python
+import turtle
+
+t = turtle.Turtle()
+for i in range(3):
+    t.forward(120)
+    t.left(120)
+
+turtle.done()
+```
+
+**Ce vezi pe ecran:** un **triunghi** cu laturile egale. Ca să se închidă, țestoasa se rotește de trei ori câte `120` de grade (`3 × 120 = 360`).
+
+#### Acasă 2 — Linia punctată
+
+```python
+import turtle
+
+t = turtle.Turtle()
+t.penup()
+t.goto(-150, 0)
+t.pendown()
+for i in range(10):
+    t.forward(15)
+    t.penup()
+    t.forward(15)
+    t.pendown()
+
+turtle.done()
+```
+
+**Ce vezi pe ecran:** o **linie punctată** de la stânga spre dreapta: 15 pași desenați, 15 pași săriți, de 10 ori. Țestoasa folosește `penup` și `pendown` în interiorul buclei.
+
+### Încă două exerciții
+
+**Ce desenează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+import turtle
+
+t = turtle.Turtle()
+t.forward(100)
+t.left(90)
+t.forward(100)
+t.left(90)
+t.forward(50)
+
+turtle.done()
+```
+
+**Găsește greșelile.** Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
+
+```text
+import Turtle
+t = turtle.Turtle()
+t.forward(100
+t.left(90)
+t.Forward(50)
+turtle.done
+```
+
+---
+
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+
+### 1. Steagul
+
+```python
+import turtle
+
+t = turtle.Turtle()
+t.speed(3)
+t.penup()
+t.goto(-120, -100)
+t.pendown()
+
+for treapta in range(5):
+    t.forward(40)
+    t.left(90)
+    t.forward(40)
+    t.right(90)
+
+# bățul steagului
+t.left(90)
+t.forward(50)
+t.right(90)
+
+# panza steagului: un dreptunghi
+t.forward(25)
+t.right(90)
+t.forward(15)
+t.right(90)
+t.forward(25)
+
+turtle.done()
+```
+
+**Ce vezi pe ecran:** scara de 5 trepte, iar în vârf un **steag**: un băț de 50 și un dreptunghi de 25 pe 15 agățat de capătul lui.
+
+### 2. Soarele
+
+```python
+import turtle
+
+t = turtle.Turtle()
+t.speed(0)
+t.penup()
+t.goto(130, 130)
+t.dot(50, "gold")
+
+for i in range(8):
+    t.forward(35)
+    t.pendown()
+    t.forward(20)
+    t.penup()
+    t.backward(55)
+    t.left(45)
+
+turtle.done()
+```
+
+**Ce vezi pe ecran:** un **soare** galben cu 8 raze negre. Fiecare rază începe la 35 de pași de centru și are 20 de pași. Țestoasa se întoarce în centru și se rotește cu `45` de grade (`360 / 8`).
+
+### 3. Treptele numerotate
+
+```python
+import turtle
+
+t = turtle.Turtle()
+t.speed(3)
+t.penup()
+t.goto(-120, -100)
+t.pendown()
+
+for treapta in range(5):
+    t.forward(40)
+    t.write(treapta + 1, font=("Arial", 14, "normal"))
+    t.left(90)
+    t.forward(40)
+    t.right(90)
+
+turtle.done()
+```
+
+**Ce vezi pe ecran:** scara, cu numerele **1, 2, 3, 4, 5** scrise la capătul fiecărei trepte. Variabila `treapta` pornește de la `0`, de aceea scriem `treapta + 1`.
+
+### 4. A doua scară, mai mică
+
+```python
+import turtle
+
+t = turtle.Turtle()
+t.speed(3)
+
+# scara mare
+t.penup()
+t.goto(-120, -100)
+t.pendown()
+for treapta in range(5):
+    t.forward(40)
+    t.left(90)
+    t.forward(40)
+    t.right(90)
+
+# scara mică, în dreapta
+t.penup()
+t.goto(110, -100)
+t.pendown()
+for treapta in range(3):
+    t.forward(20)
+    t.left(90)
+    t.forward(20)
+    t.right(90)
+
+turtle.done()
+```
+
+**Ce vezi pe ecran:** scara mare din stânga și, în dreapta, o **scară mică** de 3 trepte, cu treptele de 20. Țestoasa se mută între ele cu `penup`, `goto` și `pendown`.
 
 ---
 

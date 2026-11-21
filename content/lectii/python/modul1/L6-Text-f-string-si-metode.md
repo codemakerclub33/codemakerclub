@@ -313,12 +313,13 @@ Scrie un program care:
 
 ---
 
-## Bonus ★★★ — Provocare: Cuvinte magice
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Laboratorul de cuvinte, încă patru experimente
+*Doar dacă ai terminat Complet. Lucrezi pe **propriul tău** laborator: păstrează-l și adaugă la sfârșit.*
 
-- [ ] Citește un nume și afișează doar **inițiala** (prima literă mare) urmată de punct  
-- [ ] Verifică dacă un cuvânt este **palindrom** (se citește la fel în ambele sensuri), de exemplu `"ele"`, comparând cuvântul cu inversul lui  
-- [ ] Afișează un preț cu **două zecimale** și simbolul `lei` în f-string  
+- [ ] Afișează **inițiala** numelui, cu literă mare, urmată de punct (`nume[0].upper()`)  
+- [ ] Afișează dacă numele este **palindrom** (se citește la fel și invers), comparând `nume.lower()` cu inversul lui. Încearcă `Ana` sau `Ele`  
+- [ ] Creează un **nume de cod**: primele 3 litere ale numelui, mari, urmate de lungimea numelui (`nume[:3]`)  
+- [ ] Afișează numele cu fiecare `a` înlocuit prin `*` (`replace`)
 
 ---
 
@@ -429,47 +430,142 @@ print(nume[1:3.0])
 
 ## Răspunsuri la bonus
 
-*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit. Fiecare soluție pornește de la laboratorul din Exemplul 8; ce scrie utilizatorul apare pe același rând cu întrebarea. La soluția 2 numele scris este Ana.*
 
-### 1. Inițiala
+### 1. Inițiala cu punct
 
 ```python
-nume = input("Numele tau: ")
-print(nume[0].upper() + ".")
+nume = input("Cum te cheama? ")
+
+print("-" * 25)
+print(f"Cu litere mari:  {nume.upper()}")
+print(f"Cu litere mici:  {nume.lower()}")
+print(f"Prima litera:    {nume[0]}")
+print(f"Ultima litera:   {nume[-1]}")
+print(f"Invers:          {nume[::-1]}")
+print(f"Lungime:         {len(nume)}")
+print(f"Litere 'a':      {nume.lower().count('a')}")
+print("-" * 25)
+
+# Initiala
+print(f"Initiala:        {nume[0].upper()}.")
 ```
 
 **Ieșire:**
 ```text
-Numele tau: mihai
-M.
+Cum te cheama? Maria
+-------------------------
+Cu litere mari:  MARIA
+Cu litere mici:  maria
+Prima litera:    M
+Ultima litera:   a
+Invers:          airaM
+Lungime:         5
+Litere 'a':      2
+-------------------------
+Initiala:        M.
 ```
 
 ### 2. Palindrom
 
 ```python
-cuvant = "ele"
-inversat = cuvant[::-1]
-print(cuvant == inversat)
-cuvant = "mama"
-print(cuvant == cuvant[::-1])
+nume = input("Cum te cheama? ")
+
+print("-" * 25)
+print(f"Cu litere mari:  {nume.upper()}")
+print(f"Cu litere mici:  {nume.lower()}")
+print(f"Prima litera:    {nume[0]}")
+print(f"Ultima litera:   {nume[-1]}")
+print(f"Invers:          {nume[::-1]}")
+print(f"Lungime:         {len(nume)}")
+print(f"Litere 'a':      {nume.lower().count('a')}")
+print("-" * 25)
+
+# Palindrom
+print(f"Palindrom:       {nume.lower() == nume.lower()[::-1]}")
 ```
 
 **Ieșire:**
 ```text
-True
-False
+Cum te cheama? Ana
+-------------------------
+Cu litere mari:  ANA
+Cu litere mici:  ana
+Prima litera:    A
+Ultima litera:   a
+Invers:          anA
+Lungime:         3
+Litere 'a':      2
+-------------------------
+Palindrom:       True
 ```
 
-### 3. Prețul cu două zecimale
+### 3. Numele de cod
 
 ```python
-pret = 19.5
-print(f"Pretul este {pret:.2f} lei")
+nume = input("Cum te cheama? ")
+
+print("-" * 25)
+print(f"Cu litere mari:  {nume.upper()}")
+print(f"Cu litere mici:  {nume.lower()}")
+print(f"Prima litera:    {nume[0]}")
+print(f"Ultima litera:   {nume[-1]}")
+print(f"Invers:          {nume[::-1]}")
+print(f"Lungime:         {len(nume)}")
+print(f"Litere 'a':      {nume.lower().count('a')}")
+print("-" * 25)
+
+# Nume de cod
+print(f"Nume de cod:     {nume[:3].upper()}{len(nume)}")
 ```
 
 **Ieșire:**
 ```text
-Pretul este 19.50 lei
+Cum te cheama? Maria
+-------------------------
+Cu litere mari:  MARIA
+Cu litere mici:  maria
+Prima litera:    M
+Ultima litera:   a
+Invers:          airaM
+Lungime:         5
+Litere 'a':      2
+-------------------------
+Nume de cod:     MAR5
+```
+
+### 4. Literele „a” înlocuite
+
+```python
+nume = input("Cum te cheama? ")
+
+print("-" * 25)
+print(f"Cu litere mari:  {nume.upper()}")
+print(f"Cu litere mici:  {nume.lower()}")
+print(f"Prima litera:    {nume[0]}")
+print(f"Ultima litera:   {nume[-1]}")
+print(f"Invers:          {nume[::-1]}")
+print(f"Lungime:         {len(nume)}")
+print(f"Litere 'a':      {nume.lower().count('a')}")
+print("-" * 25)
+
+# Literele 'a' devin stelute
+print(f"Cu stelute:      {nume.lower().replace('a', '*')}")
+```
+
+**Ieșire:**
+```text
+Cum te cheama? Maria
+-------------------------
+Cu litere mari:  MARIA
+Cu litere mici:  maria
+Prima litera:    M
+Ultima litera:   a
+Invers:          airaM
+Lungime:         5
+Litere 'a':      2
+-------------------------
+Cu stelute:      m*ri*
 ```
 
 ---

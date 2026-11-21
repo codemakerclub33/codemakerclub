@@ -1,23 +1,29 @@
-Lecția nouă din Modulul trei. Joc: Prinde steaua.
+Lecția nouă din Modulul trei. Prinde steaua.
 
-Astăzi construiești un joc complet cu Turtle. Proiectul se numește Prinde steaua. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L nouă, punct P Y.
+Azi facem primul nostru joc complet! Conduci o țestoasă cu săgețile și prinzi cât mai multe stele, dar ai grijă la bomba roșie care ricoșează prin ecran. Dacă te atinge, jocul se termină. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L nouă, punct P Y.
 
-Obiectivul. La final construiești un joc cu jucător controlat de tastatură, obiecte care apar la întâmplare, coliziuni, adică atingeri, scor, cronometru, vieți, un inamic care ricoșează, niveluri și restart. Minim: jucătorul prinde steaua și scorul crește. Complet: minim, plus bombă, timp, vieți, niveluri și record.
+Ce facem azi. La final construiești un joc cu un jucător controlat de tastatură, o stea care apare la întâmplare, atingeri, scor și o bombă care ricoșează. Orice joc are aceleași părți: jucător, ținte, pericole, scor și sfârșit. Dacă înțelegi cum se leagă între ele, poți face jocuri cu orice temă. Viețile, timpul, nivelurile și recordul sunt în provocarea de la final.
 
-Primul pas. Jucătorul și steaua. Jucătorul este o țestoasă pe care o miști cu săgețile, pe un fundal albastru închis. Steaua apare în alt loc, la întâmplare.
+Instrucțiuni noi azi. Distanța dintre două țestoase, mai mică decât o limită, înseamnă atingere. Screen punct tracer zero oprește desenarea automată, iar screen punct update reîmprospătează ecranul o dată pe cadru. Screen punct on timer cu douăzeci de milisecunde este bucla jocului: funcția se programează singură. Pentru ricoșeu, la un perete vertical direcția devine una sută optzeci minus unghiul, iar la un perete orizontal devine minus unghiul. Un dicționar numit stare păstrează tot ce se schimbă în joc. Register shape creează o formă nouă, de exemplu o stea.
 
-Al doilea pas. Coliziune și scor. Când se ating două lucruri? Calculezi distanța dintre ele. Dacă distanța este mică, ele se ating. Atunci scorul crește, iar steaua apare în alt loc. Scorul se scrie pe ecran.
+Primul pas. Jucătorul și steaua. Țestoasa se mișcă cu săgețile și nu poate ieși din ecran: min și max o țin în interiorul ferestrei. Steaua este o formă nouă, pe care o copiem. La bara de spațiu, ea sare în alt loc.
 
-Al treilea pas. Pericole, timp, vieți. Bomba se mișcă și ricoșează la margini, adică își schimbă direcția când lovește peretele. Cronometrul numără timpul pe ecran. Viețile scad când atingi bomba, iar la zero jocul se termină.
+Al doilea pas. Atingerea și scorul. Două obiecte se ating dacă distanța dintre ele este mai mică decât o limită. Distanța se calculează cu Pitagora, ca în lecția cu mouse-ul. Când jucătorul ajunge la stea, scorul crește, iar steaua sare în alt loc.
 
-Al patrulea pas. Niveluri, record, restart. Cu cât scorul crește, cu atât jocul devine mai rapid. Păstrezi recordul și poți porni din nou.
+Al treilea pas. Bomba. Ea ricoșează de marginile ferestrei, ca o minge. Funcția bucla face un pas, verifică pereții, actualizează ecranul și se programează din nou peste douăzeci de milisecunde, adică de cincizeci de ori pe secundă.
 
-Al cincilea pas. Jocul complet. Starea jocului se păstrează într-un dicționar, numit stare. Bucla jocului este o funcție care se programează singură, cu ontimer, și actualizează ecranul cu update.
+Al patrulea pas. Bucla jocului. Mai întâi bomba lovește jucătorul și apare GAME OVER. Dicționarul stare ține minte dacă jocul merge. Apoi mutăm verificarea stelei în bucla jocului, ca atingerea să fie observată la fiecare cadru.
 
-Greșeli frecvente. Jucătorul nu se mișcă: ai uitat screen punct listen. Coliziunea nu merge: distanța este prea mică sau prea mare. Jocul merge prea repede sau încet: schimbi intervalul din ontimer. Scorul nu se actualizează: stare nu este modificat corect.
+Al cincilea pas. Jocul complet. Funcțiile prinde stea și lovește bomba sunt chemate din bucla jocului, deci ce se întâmplă la o atingere este scris într-un singur loc. Funcția sfârșit oprește jocul și scrie mesajul.
 
-Proiectul de azi. Prinde steaua. Minim înseamnă jucător, stea și scor. Complet înseamnă bombă, timp, vieți, niveluri și record.
+Greșeli frecvente. Nu merg tastele: lipsește listen sau fereastra nu are focus. Jocul pare înghețat: ai uitat update. Jocul merge o singură dată: lipsește on timer la finalul funcției bucla. Eroare de cheie: ai scris greșit numele din dicționar. Eroare de metodă: ai scris distance cu literă mare. Scorul nu se actualizează: ai uitat să îl scrii din nou pe ecran. Bomba iese din ecran: ai uitat verificarea pereților.
 
-Recapitulare. Un joc are jucător, țintă, pericol, scor, timp sau vieți și sfârșit. Starea se păstrează într-un dicționar. Bucla jocului se face cu ontimer și update. Coliziunea se verifică prin distanța dintre două obiecte.
+Proiectul de azi. Prinde steaua. Minim înseamnă că jucătorul prinde steaua și scorul crește. Complet înseamnă și bomba care ricoșează, GAME OVER la atingere, tema ta, cu culori și titlu, și funcțiile bucla, prinde stea, lovește bomba și sfârșit.
 
-Succes la joc.
+Provocare, trei stele. Prinde steaua crește. Doar dacă ai terminat varianta completă. Adaugi trei vieți: bomba îți ia o viață, iar GAME OVER apare abia la zero vieți. Adaugi un cronometru de treizeci de secunde. Adaugi niveluri: la fiecare cinci stele, bomba merge mai repede. Și adaugi record și joc nou: scorul cel mai bun rămâne pe ecran, iar cu spațiu începi din nou.
+
+Recapitulare. Un joc are jucător, țintă, pericol, scor și sfârșit. Starea jocului stă într-un dicționar. Bucla jocului este o funcție care se programează singură. Coliziunea înseamnă că distanța dintre două obiecte este mică. Register shape creează forme noi.
+
+Ce urmează. În lecția următoare strângem tot ce am învățat despre Turtle într-un proiect final: galeria mea de artă, cu un meniu interactiv.
+
+Succes cu jocul.

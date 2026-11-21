@@ -22,7 +22,7 @@ Greșeli frecvente. Programul stă și nu se mai oprește: bucla infinită, deci
 
 Proiectul de azi. Pușculița. Minim înseamnă un while care numără. Complet înseamnă pușculița cu țintă, sume citite și progres afișat.
 
-Provocare, trei stele. Banii și cifrele. Doar dacă ai terminat varianta completă. Calculezi în câți ani îți dublezi banii cu o dobândă de zece la sută pe an. Ceri numere până scrii zero și afișezi suma lor. Ceri un număr și afișezi cifrele lui în ordine inversă. Faci un meniu cu patru opțiuni, care se repetă până la zero.
+Provocare, trei stele. Pușculița, versiunea ta. Doar dacă ai terminat varianta completă. Lucrezi pe propria ta pușculiță și o îmbunătățești în patru feluri. Dacă scrii zero la o depunere, programul se oprește înainte de țintă, cu un break. După fiecare depunere afișezi cât mai ai de strâns. La final afișezi cea mai mare depunere. Și media depunerilor, cu o zecimală.
 
 Recapitulare. While repetă cât timp condiția este adevărată. În buclă trebuie să schimbi ceva ca bucla să se termine. O buclă infinită se oprește cu Stop sau cu Control C. While True cu break se oprește la comandă. For înseamnă că știi de câte ori, while înseamnă repeți până se schimbă ceva.
 

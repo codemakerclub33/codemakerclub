@@ -1,25 +1,31 @@
-Lecția trei din Modulul trei. Spirale și modele cu bucle.
+Lecția trei din Modulul trei. Galaxia mea.
 
-Astăzi folosești variabila i din bucla for ca să faci desene frumoase: spirale, rozete și galaxii. Proiectul se numește Galaxia mea. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L trei, punct P Y.
+Astăzi desenăm spirale, rozete, un soare și o galaxie, cu doar câteva rânduri de cod. Proiectul se numește Galaxia mea. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L trei, punct P Y.
 
-Obiectivul. La final folosești i ca să schimbi lungimea, culoarea și grosimea liniei, desenezi spirale și rozete, folosești o buclă în altă buclă și construiești un desen cu mai multe brațe colorate. Minim: o spirală pătrată și o rozetă din cercuri. Complet: minim, plus o spirală colorată, o grilă și o galaxie.
+Ce facem azi. La final folosești variabila i din bucla for ca să schimbi lungimea, culoarea și grosimea liniei, desenezi spirale și rozete, folosești o buclă în altă buclă și construiești un desen cu mai multe brațe colorate. În jocuri și în grafică, un model frumos se repetă de multe ori. Dacă înțelegi cum o variabilă dintr-o buclă creează modele, poți desena aproape orice, de la o tapetă la un fulg de zăpadă.
 
-Primul pas. Spirale. Ideea este simplă: la fiecare pas, țestoasa merge mai mult decât înainte și se rotește. Variabila i crește, deci și drumul crește. Cu rotire de nouăzeci de grade obții o spirală pătrată. Schimbi unghiul și obții altă formă: o sută douăzeci de grade dă o spirală triunghiulară.
+Instrucțiuni noi azi. Forward cu i înmulțit cu un număr face ca lungimea să depindă de i, adică o spirală. Culori cu i rest împărțit la șase parcurge o listă în cerc. Un for în alt for este o buclă în altă buclă, pentru rânduri și coloane. Home duce țestoasa în centru, iar setheading o orientează.
 
-Al doilea pas. Spirala colorată. Pui culorile într-o listă și alegi culoarea cu restul împărțirii lui i la numărul de culori. Așa parcurgi lista în cerc.
+Primul pas. Spirale. Ideea este simplă: la fiecare pas, țestoasa merge mai mult decât înainte și se rotește. Variabila i crește, deci și drumul crește. Cu rotire de nouăzeci de grade obții o spirală pătrată, iar cu o sută douăzeci, una triunghiulară. Dacă folosești un unghi aproape de nouăzeci, spirala începe să se răsucească.
 
-Al treilea pas. Cercuri și rozete. Cercuri cu raze diferite, unul în interiorul celuilalt. Rozeta: aceeași formă repetată și rotită cu trei sute șaizeci împărțit la numărul de repetări. De exemplu, treizeci și șase de cercuri, rotite cu câte zece grade, dau o rozetă. La fel pătratele rotite dau o floare geometrică.
+Al doilea pas. Spirala colorată. Folosești o listă de culori și restul împărțirii. I rest împărțit la șase ia pe rând valorile zero, unu, doi, trei, patru, cinci, apoi o ia de la capăt. Așa culorile se schimbă ciclic. Poți folosi restul ori de câte ori vrei să parcurgi o listă în cerc.
 
-Al patrulea pas. Buclă în buclă. Faci o grilă de puncte: bucla de afară alege rândul, cea din interior alege coloana. Cu un if și restul împărțirii colorezi alternativ.
+Al treilea pas. Rozete și bucla în buclă. O rozetă este aceeași formă repetată și rotită. Treizeci și șase de cercuri, rotite cu zece grade, fac un tur complet. Apoi pui un for în alt for: bucla din interior desenează un pătrat, iar cea de afară îl repetă de treizeci și șase de ori, rotit.
 
-Al cincilea pas. Soarele și spirala groasă. Soarele are treizeci și șase de raze portocalii și un disc auriu. La spirala groasă, linia crește odată cu i.
+Al patrulea pas. Grila de puncte. Pentru fiecare rând parcurgi toate coloanele: patru rânduri înmulțit cu cinci coloane fac douăzeci de puncte. Poziția fiecărui punct se calculează din rând și coloană, iar suma lor rest împărțit la doi alternează culorile.
 
-Al șaselea pas. Mini-proiect. Galaxia: o spirală cu mai multe brațe, fiecare cu altă culoare.
+Al cincilea pas. Soarele cu raze. Fiecare rază înseamnă înainte, înapoi și o rotire de zece grade, de treizeci și șase de ori. Discul auriu se desenează la urmă, ca să acopere începutul razelor.
 
-Greșeli frecvente. Spirala nu se desface: nu mărești lungimea cu i. Culorile nu se schimbă: nu folosești restul împărțirii. Desenul durează mult: crești viteza sau scazi numărul de repetări.
+Al șaselea pas. Mini-proiect. Galaxia: șase brațe curbate, fiecare de altă culoare. Home duce țestoasa în centru, setheading o orientează la șaizeci de grade unul față de altul, iar o buclă desenează un braț, cu pași tot mai lungi și o mică rotire.
 
-Proiectul de azi. Galaxia mea. Minim înseamnă spirală și rozetă. Complet înseamnă și culori, grilă și galaxie.
+Greșeli frecvente. Eroare de index: ai folosit un rest mai mare decât numărul de culori. Spirala iese din fereastră: pașii cresc prea mult. Brațele galaxiei pornesc din alt loc: lipsește home. Desenul se face foarte încet: pune speed zero.
 
-Recapitulare. Variabila i controlează lungimea, culoarea și grosimea. Spirala înseamnă pași tot mai lungi și o rotire constantă. I procent n parcurge o listă în cerc. Rozeta este aceeași formă rotită cu trei sute șaizeci împărțit la repetări.
+Proiectul de azi. Galaxia mea. Minim înseamnă o spirală, în care lungimea depinde de i, și o rozetă din cercuri. Complet înseamnă și galaxia ta, cu număr de brațe și culori la alegere, treizeci de stele aleatoare și un disc luminos în centru.
+
+Provocare, trei stele. Cerul din galaxie. Doar dacă ai terminat varianta completă. Adaugi în aceeași scenă cu galaxia ta o planetă cu inel, adică un punct mare portocaliu și un cerc gri în jurul lui. O cometă, cu puncte albe tot mai mici, în șir, ca o coadă. Stele colorate, cu culoare și mărime alese la întâmplare pentru fiecare. Și o a doua galaxie, mai mică, într-un colț al ferestrei.
+
+Recapitulare. Variabila i dintr-un for poate controla lungimea, culoarea și grosimea. Spirala are pași tot mai lungi și o rotire constantă. Restul împărțirii parcurge o listă în cerc. Rozeta este aceeași formă repetată și rotită. O buclă în altă buclă repetă de rânduri ori coloane. Home și setheading duc țestoasa în centru și o orientează.
+
+Ce urmează. În lecția următoare înveți funcții de desen: pui un desen într-o funcție și îl reutilizezi, ca să faci o casă și o floare.
 
 Succes cu galaxia.

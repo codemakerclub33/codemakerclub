@@ -348,13 +348,13 @@ Scrie un program cu un **meniu care se repetă** (`while`) și cu opțiunile:
 
 ---
 
-## Bonus ★★★ — Provocare: Magazinul mai deștept
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Lista de cumpărături, mai deșteaptă
+*Doar dacă ai terminat Complet. Lucrezi pe **propria ta** listă: păstrează-o și adaugă **opțiunea 4** în meniu, pe rând, pentru fiecare idee.*
 
-- [ ] Adaugă o opțiune care afișează **câte produse** sunt în listă  
-- [ ] Citește 6 numere și afișează lista **fără numerele negative**  
-- [ ] Inversează o listă fără `[::-1]`, cu o buclă  
-- [ ] Verifică dacă un cuvânt e în lista ta de „cuvinte interzise”  
+- [ ] Opțiune nouă: **câte produse** sunt în listă (`len`)  
+- [ ] Opțiune nouă: **caută** un produs și spune dacă e în listă (`in`)  
+- [ ] Opțiune nouă: **anulează ultimul** produs adăugat (`pop`), dacă lista nu e goală  
+- [ ] Opțiune nouă: adaugă un produs **urgent**, chiar pe prima poziție (`insert(0, ...)`)
 
 ---
 
@@ -480,73 +480,221 @@ for f in fructe
 
 ## Răspunsuri la bonus
 
-*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit. Fiecare soluție pornește de la lista din Exemplul 8 (cu opțiunile 1–3) și adaugă opțiunea 4; dacă lista ta are alt meniu, adaptează numerele. Ce scrie utilizatorul apare pe același rând cu întrebarea.*
 
-### 1. Câte produse sunt în listă
-
-```python
-lista = ["lapte", "paine", "oua"]
-print("Produse:", len(lista))
-```
-
-**Ieșire:**
-```text
-Produse: 3
-```
-
-### 2. Lista fără numerele negative
+### 1. Câte produse
 
 ```python
 lista = []
-for i in range(6):
-    n = int(input("Numar: "))
-    if n >= 0:
-        lista.append(n)
-print(lista)
+optiune = 0
+while optiune != 3:
+    print("\n1. Adauga  2. Arata lista  3. Iesire  4. Cate produse")
+    optiune = int(input("Alege: "))
+    if optiune == 1:
+        produs = input("Ce adaugi? ")
+        lista.append(produs)
+        print("Adaugat!")
+    elif optiune == 2:
+        if len(lista) == 0:
+            print("Lista este goala.")
+        else:
+            for i in range(len(lista)):
+                print(f"{i + 1}. {lista[i]}")
+    elif optiune == 4:
+        print(f"Ai {len(lista)} produse in lista.")
+print("La cumparaturi placute!")
 ```
 
 **Ieșire:**
 ```text
-Numar: 3
-Numar: -1
-Numar: 4
-Numar: -5
-Numar: 2
-Numar: -7
-[3, 4, 2]
+
+1. Adauga  2. Arata lista  3. Iesire  4. Cate produse
+Alege: 1
+Ce adaugi? lapte
+Adaugat!
+
+1. Adauga  2. Arata lista  3. Iesire  4. Cate produse
+Alege: 1
+Ce adaugi? paine
+Adaugat!
+
+1. Adauga  2. Arata lista  3. Iesire  4. Cate produse
+Alege: 4
+Ai 2 produse in lista.
+
+1. Adauga  2. Arata lista  3. Iesire  4. Cate produse
+Alege: 3
+La cumparaturi placute!
 ```
 
-### 3. Lista inversată cu o buclă
+`len(lista)` numără elementele, deci spune câte produse ai.
+
+### 2. Caută un produs
 
 ```python
-lista = [1, 2, 3, 4]
-invers = []
-for x in lista:
-    invers.insert(0, x)
-print(invers)
+lista = []
+optiune = 0
+while optiune != 3:
+    print("\n1. Adauga  2. Arata lista  3. Iesire  4. Cauta")
+    optiune = int(input("Alege: "))
+    if optiune == 1:
+        produs = input("Ce adaugi? ")
+        lista.append(produs)
+        print("Adaugat!")
+    elif optiune == 2:
+        if len(lista) == 0:
+            print("Lista este goala.")
+        else:
+            for i in range(len(lista)):
+                print(f"{i + 1}. {lista[i]}")
+    elif optiune == 4:
+        cauta = input("Ce cauti? ")
+        if cauta in lista:
+            print("Il ai in lista!")
+        else:
+            print("Nu e in lista.")
+print("La cumparaturi placute!")
 ```
 
 **Ieșire:**
 ```text
-[4, 3, 2, 1]
+
+1. Adauga  2. Arata lista  3. Iesire  4. Cauta
+Alege: 1
+Ce adaugi? lapte
+Adaugat!
+
+1. Adauga  2. Arata lista  3. Iesire  4. Cauta
+Alege: 4
+Ce cauti? lapte
+Il ai in lista!
+
+1. Adauga  2. Arata lista  3. Iesire  4. Cauta
+Alege: 4
+Ce cauti? miere
+Nu e in lista.
+
+1. Adauga  2. Arata lista  3. Iesire  4. Cauta
+Alege: 3
+La cumparaturi placute!
 ```
 
-### 4. Cuvinte interzise
+`cauta in lista` este `True` doar dacă produsul se află exact în listă.
+
+### 3. Anulează ultimul produs
 
 ```python
-interzise = ["prost", "urat"]
-cuvant = input("Scrie un cuvant: ")
-if cuvant in interzise:
-    print("Cuvantul este interzis!")
-else:
-    print("Cuvantul este bun.")
+lista = []
+optiune = 0
+while optiune != 3:
+    print("\n1. Adauga  2. Arata lista  3. Iesire  4. Anuleaza ultimul")
+    optiune = int(input("Alege: "))
+    if optiune == 1:
+        produs = input("Ce adaugi? ")
+        lista.append(produs)
+        print("Adaugat!")
+    elif optiune == 2:
+        if len(lista) == 0:
+            print("Lista este goala.")
+        else:
+            for i in range(len(lista)):
+                print(f"{i + 1}. {lista[i]}")
+    elif optiune == 4:
+        if len(lista) == 0:
+            print("Nu ai ce anula.")
+        else:
+            scos = lista.pop()
+            print(f"Am scos: {scos}")
+print("La cumparaturi placute!")
 ```
 
 **Ieșire:**
 ```text
-Scrie un cuvant: urat
-Cuvantul este interzis!
+
+1. Adauga  2. Arata lista  3. Iesire  4. Anuleaza ultimul
+Alege: 4
+Nu ai ce anula.
+
+1. Adauga  2. Arata lista  3. Iesire  4. Anuleaza ultimul
+Alege: 1
+Ce adaugi? lapte
+Adaugat!
+
+1. Adauga  2. Arata lista  3. Iesire  4. Anuleaza ultimul
+Alege: 1
+Ce adaugi? paine
+Adaugat!
+
+1. Adauga  2. Arata lista  3. Iesire  4. Anuleaza ultimul
+Alege: 4
+Am scos: paine
+
+1. Adauga  2. Arata lista  3. Iesire  4. Anuleaza ultimul
+Alege: 2
+1. lapte
+
+1. Adauga  2. Arata lista  3. Iesire  4. Anuleaza ultimul
+Alege: 3
+La cumparaturi placute!
 ```
+
+`pop()` scoate ultimul element și ți-l dă înapoi, așa că putem afișa ce a ieșit. Primul `4` arată cazul listei goale.
+
+### 4. Produs urgent
+
+```python
+lista = []
+optiune = 0
+while optiune != 3:
+    print("\n1. Adauga  2. Arata lista  3. Iesire  4. Produs urgent")
+    optiune = int(input("Alege: "))
+    if optiune == 1:
+        produs = input("Ce adaugi? ")
+        lista.append(produs)
+        print("Adaugat!")
+    elif optiune == 2:
+        if len(lista) == 0:
+            print("Lista este goala.")
+        else:
+            for i in range(len(lista)):
+                print(f"{i + 1}. {lista[i]}")
+    elif optiune == 4:
+        produs = input("Ce e urgent? ")
+        lista.insert(0, produs)
+        print("Pus pe primul loc!")
+print("La cumparaturi placute!")
+```
+
+**Ieșire:**
+```text
+
+1. Adauga  2. Arata lista  3. Iesire  4. Produs urgent
+Alege: 1
+Ce adaugi? lapte
+Adaugat!
+
+1. Adauga  2. Arata lista  3. Iesire  4. Produs urgent
+Alege: 1
+Ce adaugi? paine
+Adaugat!
+
+1. Adauga  2. Arata lista  3. Iesire  4. Produs urgent
+Alege: 4
+Ce e urgent? medicamente
+Pus pe primul loc!
+
+1. Adauga  2. Arata lista  3. Iesire  4. Produs urgent
+Alege: 2
+1. medicamente
+2. lapte
+3. paine
+
+1. Adauga  2. Arata lista  3. Iesire  4. Produs urgent
+Alege: 3
+La cumparaturi placute!
+```
+
+`insert(0, produs)` pune produsul pe poziția 0, deci primul în listă, înaintea celor adăugate înainte.
 
 ---
 ## Ce urmează — Lecția 6

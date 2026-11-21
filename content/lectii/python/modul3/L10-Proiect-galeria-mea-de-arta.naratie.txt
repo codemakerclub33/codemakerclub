@@ -1,23 +1,31 @@
-Lecția zece din Modulul trei. Proiect: galeria mea de artă.
+Lecția zece din Modulul trei. Galeria mea de artă.
 
-Aceasta este lecția de final a modulului. Faci o galerie interactivă cu opere create de tine. Proiectul se numește Galeria mea de artă. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L zece, punct P Y.
+Ai învățat să desenezi forme, culori, spirale, mandale, să folosești funcții, tastatura și mouse-ul. Azi le strângem pe toate într-o galerie de artă: apeși o tastă și apare o altă operă. Fiecare operă este o funcție, iar galeria este semnată de tine. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L zece, punct P Y.
 
-Obiectivul. La final ai o galerie interactivă cu cel puțin cinci opere, un meniu pe ecran, taste pentru fiecare operă, ștergerea ecranului și semnătura ta pe fiecare desen. Minim: trei opere care se schimbă cu tastele unu, doi și trei. Complet: minim, plus cinci opere, meniu, semnătură și o operă proprie.
+Ce facem azi. La final ai o galerie interactivă cu cel puțin cinci opere, un meniu pe ecran, taste pentru fiecare operă, ștergerea ecranului și semnătura ta pe fiecare desen. Un proiect mare nu este o singură bucată de cod, ci piese mici care se potrivesc: funcții pentru desen, un dicționar care le leagă de taste și un meniu. Poți adăuga oricând o piesă nouă.
 
-Primul pas. O operă este o funcție. Fiecare operă este o funcție, de exemplu peisajul sau mandala, care începe cu o curățare a ecranului. Legi fiecare operă de o tastă.
+Instrucțiuni noi azi. Funcția curăță este piesa de ajutor cu care începe fiecare operă. Un dicționar în care valorile sunt funcții, scrise fără paranteze, leagă tastele de opere. For tasta in opere parcurge cheile dicționarului. Opere de tastă, cu paranteze la final, apelează funcția găsită în dicționar. Screen punct text input cere un text într-o căsuță de dialog, de exemplu numele artistului.
 
-Al doilea pas. Opere cu parametri. O spirală cu poziție, culori, număr de pași și unghi. O mandală cu număr de cercuri, rază și culori. Un cer înstelat cu lună. Cu parametri, dintr-un singur cod obții multe variante.
+Primul pas. O operă este o funcție. Mai întâi un peisaj mic, cu iarbă, soare și o căsuță, făcut din funcții ajutătoare: mergi, dreptunghi și cerc. Apoi două opere pe două taste. Regula galeriei: fiecare operă începe cu curăță, care șterge desenul vechi, mută țestoasa în centru și pune fundalul alb.
 
-Al treilea pas. Meniu și semnătură. Meniul apare pe ecran și spune ce taste există: unu peisaj, doi mandală, trei spirală, patru cer, cinci floare, C șterge. Semnătura este numele artistului, scris pe fiecare desen.
+Al doilea pas. Opere cu parametri. O spirală primește centrul, culorile, numărul de pași și unghiul, așa că din același cod ies spirale diferite. Apoi un cer înstelat, cu stele la întâmplare și o semilună, făcută din două cercuri: unul deschis și, peste el, unul cu culoarea fundalului.
 
-Al patrulea pas. Funcții în dicționar. Un dicționar poate lega taste de funcții, fără paranteze. Așa codul rămâne scurt. Un alt dicționar ține catalogul galeriei, cu numele operelor.
+Al treilea pas. Meniul și semnătura. Meniul este scris de o țestoasă separată, ca să rămână pe ecran când ștergem desenul. Apoi cerem numele artistului. Dacă răspunsul lipsește sau este gol, numele rămâne Artistul. Semnătura apare jos, în fiecare operă.
 
-Al cincilea pas. Galeria completă. Pui totul laolaltă, iar la final faci galeria a ta, cu o operă proprie.
+Al patrulea pas. Funcții în dicționar. Valorile dicționarului sunt funcții, fără paranteze, iar bucla for leagă fiecare tastă de funcția ei. Ca să adaugi o operă nouă, scrii o funcție și adaugi un rând în dicționar.
 
-Greșeli frecvente. Tasta nu face nimic: ai uitat screen punct listen sau ai pus paranteze la funcție. Opera se desenează peste alta: lipsește curățarea ecranului. Meniul dispare: nu îl scrii din nou după ștergere.
+Al cincilea pas. Galeria completă. Cinci opere: peisaj, mandală, spirală, cer înstelat și floare, plus tasta c pentru ștergere. Programul este făcut din piese mici: funcțiile ajutătoare, operele, meniul și dicționarul care le leagă de taste.
 
-Proiectul de azi. Galeria mea de artă. Minim înseamnă trei opere cu taste. Complet înseamnă cinci opere, meniu, semnătură și o operă proprie.
+Greșeli frecvente. Nu se întâmplă nimic la apăsare: lipsește listen sau tasta nu este în dicționar. Operele se desenează una peste alta: lipsește curăță la început. Meniul dispare: l-ai scris cu aceeași țestoasă. Eroare de nume: ai pus funcția în dicționar înainte să o definești. Opera se desenează imediat la pornire: ai pus paranteze în dicționar. Fundalul rămâne negru: curăță nu îl resetează. Semnătura nu se vede: are culoarea fundalului.
 
-Recapitulare. O operă este o funcție, iar fiecare începe cu curăță. Funcțiile mici de ajutor fac codul scurt. Funcțiile cu parametri dau multe variante dintr-un cod. Un dicționar poate lega taste de funcții.
+Proiectul de azi. Galeria mea de artă. Minim înseamnă trei opere, fiecare într-o funcție, legate de tastele unu, doi și trei. Complet înseamnă și galeria ta, cu cele cinci opere din model plus două create de tine, meniu actualizat, semnătură pe fiecare operă și tasta c pentru ștergere.
 
-Felicitări, ai terminat Modulul trei de Python.
+Provocare, trei stele. Galeria se extinde. Doar dacă ai terminat varianta completă. Faci o tastă care alege o operă la întâmplare dintre primele cinci. Afișezi pe ecran numărul de opere văzute. Adaugi o operă cu mouse-ul, în care fiecare click desenează o stea colorată. Și adaugi un ecran de început, cu titlul galeriei, care dispare la prima operă.
+
+Recapitulare. O operă este o funcție, iar fiecare începe cu curăță. Funcțiile mici de ajutor fac codul scurt. Un dicționar poate lega taste de funcții. O țestoasă separată păstrează meniul. Un proiect mare se construiește din piese mici.
+
+Verificare Modul trei. Răspunde pe foaie la cele opt întrebări: ce face turtle punct done, unghiul hexagonului, diferența dintre penup și pendown, umplerea unei forme, funcțiile legate de taste fără paranteze, ce primește un click, tracer cu update și atingerea a două țestoase. Apoi bifează în autoevaluare ce poți face singur.
+
+Ce urmează. În Modulul patru trecem de la țestoasă la jocuri adevărate, cu Pygame: ferestre, imagini, mișcare, coliziuni și clase.
+
+Felicitări pentru galerie! Succes cu următorul modul.

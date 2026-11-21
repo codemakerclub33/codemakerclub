@@ -311,12 +311,13 @@ Scrie un program care:
 
 ---
 
-## Bonus ★★★ — Provocare: Semaforul deștept
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Poarta parcului, mai multe atracții
+*Doar dacă ai terminat Complet. Lucrezi pe **propria ta** poartă a parcului: păstrează-o și adaugă la ea.*
 
-- [ ] Verifică dacă un număr este divizibil și cu 3, și cu 5 (restul `%` la fiecare este 0)  
-- [ ] Scrie un program „Semafor deștept”: se traversează dacă lumina este verde **și** nu vine nicio mașină  
-- [ ] Fă o verificare de parolă cu cel puțin 4 reguli (lungime, nu doar cifre, nu e „parola” etc.)  
+- [ ] Adaugă o a patra atracție, **Trenulețul**, pentru cine **nu** are peste 12 ani (`not (varsta > 12)`)  
+- [ ] Adaugă **Roata mare**, doar pentru vârste între 6 și 12 ani (`6 <= varsta <= 12`)  
+- [ ] Adaugă un **bilet de familie**: se poate cumpăra dacă ești însoțit de un adult **sau** ai cel puțin 18 ani (`or`)  
+- [ ] Numără la câte atracții poți intra, cu `atractii += 1`, și afișează „Poți intra la ... atracții”
 
 ---
 
@@ -432,62 +433,185 @@ if not varsta > 5 and
 
 ## Răspunsuri la bonus
 
-*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit. Fiecare soluție pornește de la poarta din Exemplul 8; ce scrie utilizatorul apare pe același rând cu întrebarea.*
 
-### 1. Divizibil cu 3 și cu 5
+### 1. Trenulețul
 
 ```python
-n = int(input("Un numar: "))
-if n % 3 == 0 and n % 5 == 0:
-    print("Este divizibil si cu 3, si cu 5")
+print("=== Poarta parcului ===")
+varsta = int(input("Cati ani ai? "))
+inaltime = int(input("Cat de inalt esti (in cm)? "))
+adult = input("Esti insotit de un adult? (da/nu) ").lower()
+
+print("-" * 25)
+if varsta >= 8 and inaltime >= 120:
+    print("Montagne rusesti: DA")
 else:
-    print("Nu este divizibil cu amandoua")
+    print("Montagne rusesti: NU")
+
+if inaltime >= 100 or adult == "da":
+    print("Carusel: DA")
+else:
+    print("Carusel: NU")
+
+if not (varsta < 5) and (adult == "da" or varsta >= 10):
+    print("Casa groazei: DA")
+else:
+    print("Casa groazei: NU")
+
+# Atractia noua: Trenuletul
+if not (varsta > 12):
+    print("Trenuletul: DA")
+else:
+    print("Trenuletul: NU")
 ```
 
 **Ieșire:**
 ```text
-Un numar: 30
-Este divizibil si cu 3, si cu 5
+=== Poarta parcului ===
+Cati ani ai? 13
+Cat de inalt esti (in cm)? 130
+Esti insotit de un adult? (da/nu) nu
+-------------------------
+Montagne rusesti: DA
+Carusel: DA
+Casa groazei: DA
+Trenuletul: NU
 ```
 
-### 2. Semaforul deștept
+### 2. Roata mare
 
 ```python
-lumina = input("Lumina (verde/rosu): ")
-masina = input("Vine o masina? (da/nu): ")
-if lumina == "verde" and masina == "nu":
-    print("Poti traversa!")
+print("=== Poarta parcului ===")
+varsta = int(input("Cati ani ai? "))
+inaltime = int(input("Cat de inalt esti (in cm)? "))
+adult = input("Esti insotit de un adult? (da/nu) ").lower()
+
+print("-" * 25)
+if varsta >= 8 and inaltime >= 120:
+    print("Montagne rusesti: DA")
 else:
-    print("Asteapta!")
+    print("Montagne rusesti: NU")
+
+if inaltime >= 100 or adult == "da":
+    print("Carusel: DA")
+else:
+    print("Carusel: NU")
+
+if not (varsta < 5) and (adult == "da" or varsta >= 10):
+    print("Casa groazei: DA")
+else:
+    print("Casa groazei: NU")
+
+# Atractia noua: Roata mare
+if 6 <= varsta <= 12:
+    print("Roata mare: DA")
+else:
+    print("Roata mare: NU")
 ```
 
 **Ieșire:**
 ```text
-Lumina (verde/rosu): verde
-Vine o masina? (da/nu): da
-Asteapta!
+=== Poarta parcului ===
+Cati ani ai? 9
+Cat de inalt esti (in cm)? 130
+Esti insotit de un adult? (da/nu) da
+-------------------------
+Montagne rusesti: DA
+Carusel: DA
+Casa groazei: DA
+Roata mare: DA
 ```
 
-### 3. Verificare de parolă
+### 3. Biletul de familie
 
 ```python
-parola = input("Parola: ")
-if len(parola) < 8:
-    print("Prea scurta (minim 8 caractere)")
-elif parola.isdigit():
-    print("Nu poate avea doar cifre")
-elif parola == "parola":
-    print("Alege altceva decat cuvantul parola")
-elif " " in parola:
-    print("Nu poate avea spatii")
+print("=== Poarta parcului ===")
+varsta = int(input("Cati ani ai? "))
+inaltime = int(input("Cat de inalt esti (in cm)? "))
+adult = input("Esti insotit de un adult? (da/nu) ").lower()
+
+print("-" * 25)
+if varsta >= 8 and inaltime >= 120:
+    print("Montagne rusesti: DA")
 else:
-    print("Parola este buna!")
+    print("Montagne rusesti: NU")
+
+if inaltime >= 100 or adult == "da":
+    print("Carusel: DA")
+else:
+    print("Carusel: NU")
+
+if not (varsta < 5) and (adult == "da" or varsta >= 10):
+    print("Casa groazei: DA")
+else:
+    print("Casa groazei: NU")
+
+# Biletul de familie
+if adult == "da" or varsta >= 18:
+    print("Bilet de familie: DA")
+else:
+    print("Bilet de familie: NU")
 ```
 
 **Ieșire:**
 ```text
-Parola: Pisica123
-Parola este buna!
+=== Poarta parcului ===
+Cati ani ai? 9
+Cat de inalt esti (in cm)? 130
+Esti insotit de un adult? (da/nu) nu
+-------------------------
+Montagne rusesti: DA
+Carusel: DA
+Casa groazei: NU
+Bilet de familie: NU
+```
+
+### 4. Contorul de atracții
+
+```python
+print("=== Poarta parcului ===")
+varsta = int(input("Cati ani ai? "))
+inaltime = int(input("Cat de inalt esti (in cm)? "))
+adult = input("Esti insotit de un adult? (da/nu) ").lower()
+
+print("-" * 25)
+atractii = 0
+
+if varsta >= 8 and inaltime >= 120:
+    print("Montagne rusesti: DA")
+    atractii += 1
+else:
+    print("Montagne rusesti: NU")
+
+if inaltime >= 100 or adult == "da":
+    print("Carusel: DA")
+    atractii += 1
+else:
+    print("Carusel: NU")
+
+if not (varsta < 5) and (adult == "da" or varsta >= 10):
+    print("Casa groazei: DA")
+    atractii += 1
+else:
+    print("Casa groazei: NU")
+
+print("-" * 25)
+print("Poti intra la", atractii, "atractii din 3")
+```
+
+**Ieșire:**
+```text
+=== Poarta parcului ===
+Cati ani ai? 9
+Cat de inalt esti (in cm)? 110
+Esti insotit de un adult? (da/nu) nu
+-------------------------
+Montagne rusesti: NU
+Carusel: DA
+Casa groazei: NU
+-------------------------
+Poti intra la 1 atractii din 3
 ```
 
 ---

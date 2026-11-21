@@ -313,12 +313,13 @@ Scrie un program care:
 
 ---
 
-## Bonus ★★★ — Provocare: Chenarul meu
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Fișa de tipuri, versiunea extinsă
+*Doar dacă ai terminat Complet. Lucrezi pe **propria ta** fișă de tipuri: păstrează-o și adaugă pe ea.*
 
-- [ ] Afișează un chenar al cărui lățime este egală cu lungimea numelui tău (`"=" * len(nume)`)  
-- [ ] Afișează un număr rotunjit la o zecimală, apoi la două  
-- [ ] Lipește prenumele și numele într-o singură variabilă și afișează-i lungimea  
+- [ ] Pune numele într-un chenar al cărui lățime este egală cu lungimea numelui (`"=" * len(nume)`), sus și jos  
+- [ ] Afișează înălțimea în centimetri: `round(inaltime * 100, 1)`  
+- [ ] Calculează `anul = 2026 - varsta` și afișează „Anul nasterii: ..." (folosește `str()` și `+`)  
+- [ ] Afișează tipul rezultatului `varsta + inaltime` cu `type()` și explică de ce este `float`
 
 ---
 
@@ -361,7 +362,7 @@ Scrie un program care:
 ## Temă
 1. Refă **4 exemple la alegere** din cele 8, scrise de mână (nu copiate).
 2. Scrie un program care afișează **fișa unui animal** cu tipuri: nume (`str`), vârstă (`int`), greutate (`float`), vaccinat (`bool`).  
-3. Calculează **media** a trei note (de exemplu 9, 10 și 8) și afișeaz-o rotunjită la o zecimală.  
+3. Calculează **media** a trei note (de exemplu 9, 10 și 8) și afișează-o rotunjită la o zecimală.  
 4. Salvează totul ca `Tema_P1_L3_Prenume_Nume.py`.
 
 ### Exemple pentru acasă
@@ -435,12 +436,27 @@ print(type nume)
 
 ## Răspunsuri la bonus
 
-*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit. Fiecare soluție pornește de la fișa din Exemplul 8: pune în ea valorile tale.*
 
 ### 1. Chenar cât numele
 
 ```python
-nume = "Alexandru"
+# Fisa mea de tipuri
+nume = "Maria"
+varsta = 11
+inaltime = 1.45
+elev = True
+
+print("Nume:", nume, "-> tip:", type(nume))
+print("Varsta:", varsta, "-> tip:", type(varsta))
+print("Inaltime:", inaltime, "-> tip:", type(inaltime))
+print("Elev:", elev, "-> tip:", type(elev))
+
+print("Numele are", len(nume), "litere")
+print("Peste 5 ani voi avea " + str(varsta + 5) + " ani")
+print("*" * 20)
+
+# Chenar cat lungimea numelui
 print("=" * len(nume))
 print(nume)
 print("=" * len(nume))
@@ -448,40 +464,123 @@ print("=" * len(nume))
 
 **Ieșire:**
 ```text
-=========
-Alexandru
-=========
+Nume: Maria -> tip: <class 'str'>
+Varsta: 11 -> tip: <class 'int'>
+Inaltime: 1.45 -> tip: <class 'float'>
+Elev: True -> tip: <class 'bool'>
+Numele are 5 litere
+Peste 5 ani voi avea 16 ani
+********************
+=====
+Maria
+=====
 ```
 
-### 2. Rotunjiri
+### 2. Înălțimea în centimetri
 
 ```python
-x = 3.14159
-print(round(x, 1))
-print(round(x, 2))
+# Fisa mea de tipuri
+nume = "Maria"
+varsta = 11
+inaltime = 1.45
+elev = True
+
+print("Nume:", nume, "-> tip:", type(nume))
+print("Varsta:", varsta, "-> tip:", type(varsta))
+print("Inaltime:", inaltime, "-> tip:", type(inaltime))
+print("Elev:", elev, "-> tip:", type(elev))
+
+print("Numele are", len(nume), "litere")
+print("Peste 5 ani voi avea " + str(varsta + 5) + " ani")
+print("*" * 20)
+
+# Inaltimea in centimetri
+print("Inaltime in cm:", round(inaltime * 100, 1))
 ```
 
 **Ieșire:**
 ```text
-3.1
-3.14
+Nume: Maria -> tip: <class 'str'>
+Varsta: 11 -> tip: <class 'int'>
+Inaltime: 1.45 -> tip: <class 'float'>
+Elev: True -> tip: <class 'bool'>
+Numele are 5 litere
+Peste 5 ani voi avea 16 ani
+********************
+Inaltime in cm: 145.0
 ```
 
-### 3. Prenume și nume lipite
+### 3. Anul nașterii
 
 ```python
-prenume = "Ana"
-nume = "Popescu"
-complet = prenume + " " + nume
-print(complet)
-print(len(complet))
+# Fisa mea de tipuri
+nume = "Maria"
+varsta = 11
+inaltime = 1.45
+elev = True
+
+print("Nume:", nume, "-> tip:", type(nume))
+print("Varsta:", varsta, "-> tip:", type(varsta))
+print("Inaltime:", inaltime, "-> tip:", type(inaltime))
+print("Elev:", elev, "-> tip:", type(elev))
+
+print("Numele are", len(nume), "litere")
+print("Peste 5 ani voi avea " + str(varsta + 5) + " ani")
+print("*" * 20)
+
+# Anul nasterii
+anul = 2026 - varsta
+print("Anul nasterii: " + str(anul))
 ```
 
 **Ieșire:**
 ```text
-Ana Popescu
-11
+Nume: Maria -> tip: <class 'str'>
+Varsta: 11 -> tip: <class 'int'>
+Inaltime: 1.45 -> tip: <class 'float'>
+Elev: True -> tip: <class 'bool'>
+Numele are 5 litere
+Peste 5 ani voi avea 16 ani
+********************
+Anul nasterii: 2015
 ```
+
+### 4. Tipul unui calcul
+
+```python
+# Fisa mea de tipuri
+nume = "Maria"
+varsta = 11
+inaltime = 1.45
+elev = True
+
+print("Nume:", nume, "-> tip:", type(nume))
+print("Varsta:", varsta, "-> tip:", type(varsta))
+print("Inaltime:", inaltime, "-> tip:", type(inaltime))
+print("Elev:", elev, "-> tip:", type(elev))
+
+print("Numele are", len(nume), "litere")
+print("Peste 5 ani voi avea " + str(varsta + 5) + " ani")
+print("*" * 20)
+
+# Tipul unui calcul
+rezultat = varsta + inaltime
+print("Rezultat:", rezultat, "-> tip:", type(rezultat))
+```
+
+**Ieșire:**
+```text
+Nume: Maria -> tip: <class 'str'>
+Varsta: 11 -> tip: <class 'int'>
+Inaltime: 1.45 -> tip: <class 'float'>
+Elev: True -> tip: <class 'bool'>
+Numele are 5 litere
+Peste 5 ani voi avea 16 ani
+********************
+Rezultat: 12.45 -> tip: <class 'float'>
+```
+
+La ultima soluție: `varsta` este `int`, `inaltime` este `float`, iar suma lor este `float`, pentru că Python păstrează zecimalele.
 
 ---
 ## Ce urmează — Lecția 4

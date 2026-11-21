@@ -22,7 +22,7 @@ Greșeli frecvente. Name Error: ai folosit variabila înainte să o creezi sau a
 
 Proiectul de azi. Fișa de jucător, cu nume, nivel, puncte și vieți. Minim înseamnă trei variabile afișate. Complet înseamnă și modificarea scorului și un calcul.
 
-Provocare, trei stele. Cutiile magice. Calculezi suma, diferența și produsul a două variabile, rotești valorile a trei variabile și faci o fișă pentru un monstru de joc.
+Provocare, trei stele. Fișa de jucător, nivelul următor. Lucrezi pe propria ta fișă și adaugi patru lucruri. Jucătorul mai termină un nivel și apare a treia fișă. Primește puncte duble. Lovește un monstru, iar tu afișezi viața lui înainte și după lovitură. Și un al doilea jucător, cu care își schimbă punctele, folosind o variabilă ajutătoare.
 
 Recapitulare. O variabilă este o cutie cu nume în care păstrezi o valoare. Semnul egal înseamnă pune în cutie. Valoarea se poate schimba, iar cea veche dispare. Plus egal și minus egal sunt prescurtări. Scor și scor mic sunt variabile diferite.
 

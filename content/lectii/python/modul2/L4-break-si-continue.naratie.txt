@@ -22,7 +22,7 @@ Greșeli frecvente. Syntax Error break outside loop: ai pus break în afara unei
 
 Proiectul de azi. Păzitorul tezaurului. Minim înseamnă break și continue. Complet înseamnă un joc cu parolă secretă și trei încercări.
 
-Provocare, trei stele. Vânătorul de numere prime. Doar dacă ai terminat varianta completă. Afișezi toate numerele prime de la doi la cincizeci. Ceri un număr între unu și zece până când utilizatorul scrie unul corect. Afișezi numerele de la unu la douăzeci, sărind multiplii lui trei. Faci un joc de ghicit cu indicii mai mare sau mai mic și număr limitat de încercări.
+Provocare, trei stele. Păzitorul, versiunea ta. Doar dacă ai terminat varianta completă. Lucrezi pe propriul tău păzitor al tezaurului și adaugi patru lucruri. După fiecare greșeală afișezi câte încercări mai ai. După a doua greșeală dai un indiciu, prima literă a parolei. Un răspuns gol nu consumă încercarea, cu un continue. Și tezaurul are o sută de monede, iar fiecare greșeală scade treizeci.
 
 Recapitulare. Break iese complet din cea mai apropiată buclă. Continue sare la pasul următor. While True cu break este o buclă care se oprește la comandă. Else după for se execută doar dacă nu a fost break. Un steag ține minte dacă ai găsit ceva.
 

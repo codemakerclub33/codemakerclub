@@ -22,7 +22,7 @@ Greșeli frecvente. Name Error: ai apelat funcția înainte să o definești. Nu
 
 Proiectul de azi. Cutia cu unelte. Minim înseamnă două funcții. Complet înseamnă cinci funcții, cu return.
 
-Provocare, trei stele. Atelierul de funcții. Doar dacă ai terminat varianta completă. Faci o funcție care spune dacă un număr este prim. Faci o funcție care returnează media a trei numere. Faci o funcție care desenează un triunghi de steluțe cu înălțimea dată. Faci o funcție care întoarce un text invers.
+Provocare, trei stele. Cutia cu unelte, mai multe unelte. Doar dacă ai terminat varianta completă. Lucrezi în propria ta cutie și adaugi la sfârșit patru unelte noi, fiecare apelată sub un titlu. Media a trei numere. O funcție care spune dacă un număr este prim. Un triunghi de steluțe, fără return. Și un text scris invers.
 
 Recapitulare. Def definește o funcție, numele cu paranteze o apelează. Funcția trebuie definită înainte de apel. Parametrii primesc valori la apel. Return trimite o valoare înapoi și oprește funcția. Print arată, return dă înapoi. Un parametru poate avea valoare implicită.
 

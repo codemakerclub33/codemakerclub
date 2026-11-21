@@ -1,23 +1,31 @@
-Lecția șase din Modulul trei. Tastatura: țestoasa pilot.
+Lecția șase din Modulul trei. Tabla de desen.
 
-Astăzi comanzi țestoasa de la tastatură. Proiectul se numește Tabla de desen. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L șase, punct P Y.
+Până acum țestoasa făcea exact ce scria în program, de la început până la sfârșit. Azi ea ascultă de tine: apeși o săgeată și ea merge, apeși o literă și își schimbă culoarea. Așa începe orice joc: programul așteaptă ce faci tu. Proiectul se numește Tabla de desen. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L șase, punct P Y.
 
-Obiectivul. La final legi o tastă de o funcție cu onkey sau onkeypress, miști țestoasa cu săgețile, schimbi culoarea și grosimea cu litere, cobori și ridici creionul din tastatură, faci țestoasa să meargă singură, cu un cronometru, și construiești o tablă de desen. Minim: țestoasa se mișcă cu săgețile. Complet: minim, plus culori, grosime, ștergere și o tablă de desen.
+Ce facem azi. La final legi o tastă de o funcție, miști țestoasa cu săgețile, schimbi culoarea și grosimea cu litere, cobori și ridici creionul din tastatură, faci țestoasa să meargă singură cu un cronometru și construiești o tablă de desen. Acest mod de lucru se numește programare cu evenimente: programul spune, când apeși tasta, execută funcția. Vei folosi aceeași idee în Pygame.
 
-Primul pas. Prima tastă. Ca să reacționăm la o tastă, facem trei lucruri: scriem funcția, fără parametri, apelăm screen punct listen, ca ecranul să asculte, apoi legăm funcția de tastă cu onkeypress. Numele funcției se scrie fără paranteze. Poți lega toate cele patru săgeți.
+Instrucțiuni noi azi. Screen punct listen: ecranul începe să asculte tastatura. Screen punct on key press: leagă tasta de o funcție și se repetă cât ții tasta apăsată. Screen punct on key: funcția rulează o singură dată, când lași tasta. T punct is down: răspunde adevărat dacă creionul este jos. T punct clear șterge desenul, iar t punct home mută țestoasa în centru. Screen punct on timer apelează o funcție peste un număr de milisecunde.
 
-Al doilea pas. Culori, creion, grosime. Cu litere schimbi culoarea. Cu o tastă ridici sau cobori creionul. Cu alte taste crești sau scazi grosimea. Setările se păstrează într-un dicționar.
+Primul pas. O singură tastă. Scrii o funcție, spui ecranului să asculte și legi săgeata sus de funcție. Foarte important: după numele funcției nu punem paranteze. Gândește-te la un număr de telefon: îi dai ecranului numele funcției, ca un număr de telefon, ca să te sune mai târziu, când apeși tasta. Nu o suni tu acum. Dacă pui paranteze, funcția se execută imediat, o singură dată, și tasta nu mai face nimic. Dacă nu se întâmplă nimic, dă click o dată pe fereastra de desen.
 
-Al treilea pas. Ștergere și viteză. O tastă șterge desenul și întoarce țestoasa acasă. Alte taste măresc sau micșorează pasul.
+Al doilea pas. Cele patru săgeți. Sus merge înainte, jos merge înapoi, stânga și dreapta rotesc țestoasa. Numele tastelor se scriu exact, cu literă mare la început pentru săgeți: Up, Down, Left, Right. Spațiul se scrie cu litere mici.
 
-Al patrulea pas. Mișcare automată și pereți. Cu ontimer, țestoasa merge singură, iar săgețile îi schimbă direcția. Când ajunge la marginea ecranului, se întoarce, ca să nu iasă.
+Al treilea pas. Culori, creion și grosime. La literele r, g și b schimbi culoarea. La spațiu comuți creionul între sus și jos, cu un if. Aici folosim on key, pentru că vrem o singură comutare la fiecare apăsare. Grosimea o păstrăm într-un dicționar, ca să o putem schimba din mai multe funcții.
 
-Al cincilea pas. Mini-proiect. Tabla de desen, cu săgeți, culori, grosime, creion și ștergere.
+Al patrulea pas. Ștergere și acasă. La tasta c desenul dispare, iar la tasta h țestoasa se întoarce în centru.
 
-Greșeli frecvente. Tasta nu face nimic: ai uitat screen punct listen. Eroare la funcție: ai pus paranteze la numele funcției, sau funcția are parametri, iar tasta nu îi poate trimite. Țestoasa merge prea repede sau prea încet: schimbi pasul.
+Al cincilea pas. Mișcare automată. Funcția muta face un pas mic, apoi cere ecranului să o apeleze din nou peste treizeci de milisecunde. Așa țestoasa merge singură, iar tu o virezi cu săgețile. Este bucla unui joc, făcută cu cronometru.
 
-Proiectul de azi. Tabla de desen. Minim înseamnă mișcare cu săgeți. Complet înseamnă culori, grosime, ștergere și mișcare automată.
+Al șaselea pas. Mini-proiect. Tabla de desen: săgeți, patru culori, grosime, creion sus sau jos și ștergere, toate legate de taste. Funcțiile legate de taste nu au voie să aibă parametri, de aceea funcțiile de culoare apelează o funcție comună.
 
-Recapitulare. Programarea cu evenimente înseamnă când se întâmplă X, execută funcția Y. Pașii sunt: funcția, listen, apoi onkeypress. Numele funcției se dă fără paranteze. Onkeypress reacționează la apăsare, onkey la lăsarea tastei.
+Greșeli frecvente. Nu se întâmplă nimic: lipsește listen sau fereastra nu are focus. Funcția se execută o singură dată, imediat: ai pus paranteze. Eroare de argumente: funcția legată de tastă are parametri. Tasta nu merge: ai scris up cu literă mică sau Space cu literă mare. Țestoasa face un singur pas: ai folosit on key în loc de on key press. Cronometrul nu repetă: lipsește on timer în interiorul funcției.
 
-Succes la tabla de desen.
+Proiectul de azi. Tabla de desen. Minim înseamnă că țestoasa se mișcă cu cele patru săgeți. Începi cu o singură tastă, apoi adaugi pe rând celelalte. Complet înseamnă și tabla ta, cu cel puțin șase culori, grosime, creion sus sau jos, ștergere, o tastă pentru cerc sau punct și instrucțiunile în fereastra de text.
+
+Provocare, trei stele. Tabla prinde viață. Doar dacă ai terminat varianta completă. Faci o tastă care desenează o stea în locul țestoasei. Faci o tastă care pornește și oprește mersul singur al țestoasei. Adaugi o a doua țestoasă, roșie, pe care o conduci cu W, A, S, D. Și faci o tastă care alege o culoare la întâmplare dintr-o listă.
+
+Recapitulare. Programarea cu evenimente înseamnă: când se întâmplă ceva, execută funcția. Scrii funcția fără parametri, pui listen, apoi legi tasta de funcție. Numele funcției se dă fără paranteze. On key press reacționează la apăsare și se repetă, on key reacționează la lăsarea tastei. On timer apelează funcția după un timp, așa se face mișcarea automată.
+
+Ce urmează. În lecția următoare ecranul reacționează la click și la mișcarea mouse-ului.
+
+Succes cu tabla de desen.

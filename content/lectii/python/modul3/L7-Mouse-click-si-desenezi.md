@@ -1,4 +1,5 @@
-# LECȚIA 7 — Mouse: click și desenezi
+# LECȚIA 7 — Paint-ul meu
+### Mouse: click și desenezi
 **Modulul 3 · Desenăm cu Turtle · 2 ore**  
 **Code Maker Club · Turtle Artist**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei legi un click de o funcție cu `onscreenclick`, folosești coordonatele `x` și `y` ale click-ului, desenezi puncte colorate, tragi țestoasa cu mouse-ul (`ondrag`), verifici dacă ai dat click într-o zonă și construiești o paletă de culori.  
-**Minim:** la click, țestoasa merge la punctul în care ai dat click.  
-**Ținta orei (Complet):** + puncte colorate, o zonă de click și Paint-ul din mini-proiect.
-
-## De ce contează
-Click-ul este „mâna” utilizatorului în aproape orice aplicație: butoane, meniuri, jocuri. Ca să știi dacă jucătorul a lovit un inamic sau un buton, trebuie să știi **unde** a dat click. Azi exersăm exact asta.
+## Ce facem azi
+La finalul orei legi un click de o funcție cu `onscreenclick`, folosești coordonatele `x` și `y` ale click-ului, desenezi puncte colorate, tragi țestoasa cu mouse-ul (`ondrag`), verifici dacă ai dat click într-o zonă și construiești o paletă de culori. Click-ul este „mâna” utilizatorului în aproape orice aplicație: butoane, meniuri, jocuri. Ca să știi dacă jucătorul a lovit un inamic sau un buton, trebuie să știi **unde** a dat click. Azi exersăm exact asta.
 
 ---
 
@@ -23,12 +19,22 @@ Click-ul este „mâna” utilizatorului în aproape orice aplicație: butoane, 
 |--------|----------|
 | 0–10 | Recapitulare L6 |
 | 10–30 | Primul click (**Exemplele 1–2**) |
-| 30–50 | Click aleatoriu, coordonate (**Exemplele 3–4**) |
-| 50–65 | Tragem cu mouse-ul, click pe țestoasă (**Exemplele 5–6**) |
-| 65–90 | Zone de click: paleta și discul (**Exemplele 7–8**) |
-| 90–100 | Unim punctele (**Exemplul 9**) |
-| 100–118 | Mini-proiect (**Exemplul 10**) |
+| 30–50 | Coordonatele click-ului și tragerea cu mouse-ul (**Exemplele 3–4**) |
+| 50–85 | Zone de click: stânga/dreapta, paleta și discul (**Exemplele 5–7**) |
+| 85–118 | Mini-proiect (**Exemplul 8**) |
 | 118–120 | Recap și temă |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `screen.onscreenclick(functia)` | Apelează funcția la fiecare click în fereastră | `screen.onscreenclick(pune_punct)` |
+| `def click(x, y):` | Funcția de click are **exact doi parametri**: locul click-ului | `def pune_punct(x, y):` |
+| `t.ondrag(t.goto)` | Țestoasa te urmează când o tragi cu mouse-ul | desen liber |
+| `if 250 <= y <= 290:` | Verifică dacă click-ul este într-o zonă | paleta de culori |
+| `(x ** 2 + y ** 2) ** 0.5` | Distanța de la centru până la punctul `(x, y)` | click în disc |
 
 ---
 
@@ -96,36 +102,9 @@ Funcția `pune_punct(x, y)` **trebuie** să aibă exact doi parametri, `x` și `
 
 ---
 
-## 3. Alegem la întâmplare, citim coordonatele
+## 3. Coordonatele și tragerea cu mouse-ul
 
-### Exemplul 3 — Confetti
-
-```python
-import random
-import turtle
-
-screen = turtle.Screen()
-screen.bgcolor("black")
-
-t = turtle.Turtle()
-t.hideturtle()
-t.speed(0)
-t.penup()
-
-culori = ["red", "orange", "yellow", "lime", "cyan", "magenta", "white"]
-
-def confetti(x, y):
-    t.goto(x, y)
-    t.dot(random.randint(10, 40), random.choice(culori))
-
-screen.onscreenclick(confetti)
-
-turtle.done()
-```
-
-**Ce vezi pe ecran:** pe fundal negru, fiecare click aduce un **punct colorat**, de o culoare și o mărime **alese la întâmplare** (de la 10 la 40).
-
-### Exemplul 4 — Coordonatele click-ului
+### Exemplul 3 — Coordonatele click-ului
 
 ```python
 import turtle
@@ -135,32 +114,22 @@ screen = turtle.Screen()
 def arata(x, y):
     print("Click la:", round(x), round(y))
 
-arata(120.4, -80.7)
-
 screen.onscreenclick(arata)
 
 turtle.done()
 ```
 
-**Ieșire:**
+**Ieșire** (în fereastra Thonny, jos), după două click-uri:
 ```text
 Click la: 120 -81
+Click la: -200 45
 ```
 
-La început apelăm noi funcția, ca test: `arata(120.4, -80.7)` afișează `Click la: 120 -81`. Apoi, **la fiecare click** pe fereastră, Thonny afișează coordonatele locului. Centrul ferestrei este `(0, 0)`. În stânga și jos numerele sunt negative.
+La **fiecare click** pe fereastră, Thonny afișează coordonatele locului (numerele tale vor fi altele). Centrul ferestrei este `(0, 0)`. În stânga și jos numerele sunt negative.
 
 Coordonatele click-ului au zecimale (de exemplu `120.4`), de aceea le rotunjim cu `round`.
 
-**Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 3** (Confetti)  
-- [ ] Am scris și am rulat **Exemplul 4** (Coordonatele click-ului)  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
----
-
-## 4. Tragem și atingem
-
-### Exemplul 5 — Desen liber
+### Exemplul 4 — Desen liber
 
 ```python
 import turtle
@@ -185,43 +154,52 @@ turtle.done()
 - `ondrag` înseamnă „când tragi țestoasa”;
 - `shapesize(0.6)` face forma mai mică (0,6 din mărimea normală).
 
-### Exemplul 6 — Click pe țestoasă
-
-```python
-import random
-import turtle
-
-screen = turtle.Screen()
-t = turtle.Turtle()
-t.shape("turtle")
-t.shapesize(4)
-
-culori = ["red", "green", "blue", "orange", "purple", "pink"]
-
-def schimba(x, y):
-    t.color(random.choice(culori))
-
-t.onclick(schimba)
-
-turtle.done()
-```
-
-**Ce vezi pe ecran:** o **țestoasă mare** (de 4 ori mai mare ca normal), în centrul ferestrei. Dacă dai click **pe ea**, își schimbă culoarea la întâmplare. Click-urile în afara ei nu fac nimic.
-
-Aici legăm click-ul de **țestoasă** (`t.onclick`), nu de întreaga fereastră (`screen.onscreenclick`).
-
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 5** (Desen liber)  
-- [ ] Am scris și am rulat **Exemplul 6** (Click pe țestoasă)  
+- [ ] Am scris și am rulat **Exemplul 3** (Coordonatele click-ului)  
+- [ ] Am scris și am rulat **Exemplul 4** (Desen liber)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## 5. Zone de click
+## 4. Zone de click
 
 Cum aflăm dacă ai dat click într-un anumit loc? Comparăm `x` și `y` cu limitele zonei.
 
-### Exemplul 7 — Paleta de culori
+### Exemplul 5 — Stânga sau dreapta
+
+```python
+import turtle
+
+screen = turtle.Screen()
+screen.setup(600, 500)
+
+t = turtle.Turtle()
+t.hideturtle()
+t.speed(0)
+
+t.penup()
+t.goto(0, -250)
+t.pendown()
+t.goto(0, 250)
+t.penup()
+
+def click(x, y):
+    t.goto(x, y)
+    if x < 0:
+        t.dot(30, "blue")
+    else:
+        t.dot(30, "red")
+
+screen.onscreenclick(click)
+
+turtle.done()
+```
+
+**Ce vezi pe ecran:** o **linie verticală** în mijlocul ferestrei. Click în **stânga** ei pune un punct **albastru**, click în **dreapta** pune un punct **roșu**.
+
+Condiția `x < 0` împarte fereastra în două zone. Alegi zona cu `if` / `else`.
+
+### Exemplul 6 — Paleta de culori
 
 ```python
 import turtle
@@ -271,7 +249,7 @@ turtle.done()
 
 Cum aflăm pe ce pătrat ai dat click: pătratele încep la `x = -180, -90, 0, 90` și au lățimea 60. `(x + 180) // 90` dă numărul pătratului (0, 1, 2, 3), iar `(x + 180) - numar * 90 <= 60` verifică să nu fi dat click în **spațiul dintre** pătrate.
 
-### Exemplul 8 — Contor de click-uri
+### Exemplul 7 — Contor de click-uri
 
 ```python
 import turtle
@@ -307,91 +285,27 @@ def click(x, y):
         scor["click"] += 1
         scrie()
 
-click(0, 0)
-click(50, 50)
-click(300, 300)
-print("Scor dupa test:", scor["click"])
-
+scrie()
 screen.onscreenclick(click)
 
 turtle.done()
 ```
 
-**Ieșire:**
-```text
-Scor dupa test: 2
-```
+**Ce vezi pe ecran:** pe fundal negru, un **disc mare roșu** (raza 100), iar în mijloc numărul **0**, alb. La fiecare click **în interiorul** discului numărul crește cu 1. Click-urile din afara lui nu contează.
 
-**Ce vezi pe ecran:** pe fundal negru, un **disc mare roșu** (raza 100), iar în mijloc un număr alb. La fiecare click **în interiorul** discului numărul crește cu 1. Click-urile din afara lui nu contează.
-
-Formula `(x ** 2 + y ** 2) ** 0.5` este **distanța de la centru** până la punctul `(x, y)` (Pitagora!). Dacă este mai mică decât raza (100), click-ul este în disc. Cele trei apeluri de test: `(0, 0)` și `(50, 50)` sunt în disc (distanța 0 și aproximativ 70,7), iar `(300, 300)` este departe. De aceea scorul este 2.
+Formula `(x ** 2 + y ** 2) ** 0.5` este **distanța de la centru** până la punctul `(x, y)` (Pitagora!). Dacă este mai mică decât raza (100), click-ul este în disc. De exemplu, click-ul `(50, 50)` este la distanța 70,7 de centru: în disc. Click-ul `(300, 300)` este departe: în afara discului.
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 7** (Paleta de culori)  
-- [ ] Am scris și am rulat **Exemplul 8** (Contor de click-uri)  
+- [ ] Am scris și am rulat **Exemplul 5** (Stânga sau dreapta)  
+- [ ] Am scris și am rulat **Exemplul 6** (Paleta de culori)  
+- [ ] Am scris și am rulat **Exemplul 7** (Contor de click-uri)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## 6. Unim punctele
+## 5. Mini-proiect
 
-### Exemplul 9 — Poligonul din click-uri
-
-```python
-import turtle
-
-screen = turtle.Screen()
-
-t = turtle.Turtle()
-t.color("darkgreen")
-t.pensize(3)
-t.speed(0)
-
-puncte = []
-
-def click(x, y):
-    if len(puncte) == 0:
-        t.penup()
-    t.goto(x, y)
-    t.pendown()
-    t.dot(10, "red")
-    puncte.append((x, y))
-
-def inchide():
-    if len(puncte) > 2:
-        t.goto(puncte[0])
-
-click(-100, -50)
-click(100, -50)
-click(0, 100)
-inchide()
-print("Puncte:", len(puncte))
-
-screen.onscreenclick(click)
-screen.listen()
-screen.onkey(inchide, "space")
-
-turtle.done()
-```
-
-**Ieșire:**
-```text
-Puncte: 3
-```
-
-**Ce vezi pe ecran:** programul desenează singur, ca test, un **triunghi** cu vârfurile în `(-100, -50)`, `(100, -50)` și `(0, 100)`, fiecare marcat cu un **punct roșu**. Apoi poți da click și pentru alte puncte: fiecare se **leagă cu o linie** de cel precedent. Apeși **bara de spațiu** și ultima linie se închide la primul punct.
-
-Lista `puncte` memorează toate punctele (ca perechi `(x, y)`). Primul click ridică creionul, ca să nu apară o linie din centru.
-
-**Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 9** (Poligonul din click-uri)  
-- [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
-
----
-
-## 7. Mini-proiect
-
-### Exemplul 10 — Paint-ul meu
+### Exemplul 8 — Paint-ul meu
 
 ```python
 import turtle
@@ -465,7 +379,7 @@ screen.onkey(sterge, "c")
 turtle.done()
 ```
 
-**Ieșire:**
+**Ieșire** (în fereastra Thonny, jos):
 ```text
 PAINT-UL MEU
 Click pe patrat: alegi culoarea
@@ -479,82 +393,47 @@ c: stergi desenul
 De ce avem **două țestoase**? Paleta este desenată de `paleta`, iar punctele de `pensula`. Astfel, `pensula.clear()` șterge **doar** desenul, nu și paleta.
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** (Paint-ul meu)  
+- [ ] Am scris și am rulat **Exemplul 8** (Paint-ul meu)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Paint-ul meu”
 
-### Exercițiul A — „Paint-ul meu” (obligatoriu)
-Pornește de la Exemplul 10 și fă-l **al tău**:
-1. **9 culori** în paletă, alese de tine (verifică lățimea ferestrei!);
-2. o **gumă de șters**: un pătrat alb în paletă, care „desenează” cu culoarea fundalului;
-3. mărimea pensulei afișată **pe ecran** (nu doar în fereastra de text);
-4. o tastă care **schimbă fundalul** (`screen.bgcolor(...)`);
-5. un titlu și instrucțiuni.
+### Minim vs Complet
 
-### Exercițiul B — Ce se întâmplă?
-Gândește-te, apoi verifică în Thonny. Ce se întâmplă dacă dai click la `(150, 20)`? Dar la `(10, 10)`?
+| | Ce trebuie |
+|--|------------|
+| **Minim** | La click, țestoasa merge la punctul în care ai dat click și lasă un punct colorat |
+| **Complet** | Minim + Paint-ul tău: paletă cu 9 culori, o gumă, ștergere, mărimea pensulei din tastatură, titlu și instrucțiuni |
 
-```python
-import turtle
+### Pasul 1 — Minim
+- [ ] Țestoasa merge la click, ca în Exemplul 1  
+- [ ] Pune un punct colorat în fiecare loc în care dai click, ca în Exemplul 2  
 
-screen = turtle.Screen()
-t = turtle.Turtle()
-t.hideturtle()
-t.penup()
-
-def click(x, y):
-    if x > 100:
-        t.goto(x, y)
-        t.dot(30, "red")
-    else:
-        t.goto(x, y)
-        t.dot(30, "blue")
-
-screen.onscreenclick(click)
-
-turtle.done()
-```
-
-### Exercițiul C — Dreptunghi cu două click-uri
-Scrie un program în care **primul click** marchează un colț, iar **al doilea click** marchează colțul opus. După al doilea click, programul desenează dreptunghiul dintre cele două puncte. Indiciu: ține într-o listă primul punct.
-
-### Exercițiul D — Găsește greșelile
-Programul are 3 greșeli. Rescrie-l corect:
-
-```text
-import turtle
-screen = turtle.Screen()
-t = turtle.Turtle()
-def pune(x)
-    t.goto(x, y)
-    t.dot(20, "red")
-screen.onscreenclick(pune())
-turtle.done()
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. Ce reprezintă `x` și `y` în funcția legată de click?  
-2. Cum verificăm dacă un click este într-un cerc?  
-3. De ce folosim două țestoase în Paint?
+### Pasul 2 — Complet
+Pornește de la Exemplul 8 și fă Paint-ul **al tău**. Trebuie să ai:
+1. **9 culori** în paletă, alese de tine (încap în fereastră: ultimul pătrat se termină la `x = 290`);
+2. o **gumă de șters**: un pătrat `"white"` în paletă, care „desenează” cu culoarea fundalului (alb);
+3. ștergerea cu **c** și mărimea punctului cu **sus** / **jos**;
+4. un titlu pentru fereastră și instrucțiuni în fereastra de text.
 
 **Gata când:**
-- [ ] Paint-ul are 9 culori, gumă și titlu  
-- [ ] Mărimea pensulei se vede pe ecran  
-- [ ] Ai făcut dreptunghiul din două click-uri  
-- [ ] Ai explicat pe foaie `x`, `y` și zona de click  
+- [ ] Paint-ul are 9 culori și o gumă  
+- [ ] Click pe un pătrat schimbă culoarea, click în rest pune un punct  
+- [ ] Mărimea punctului și ștergerea merg din tastatură  
+- [ ] Ai explicat pe foaie ce sunt `x` și `y` și cum verifici o zonă  
 - [ ] Fișierul se numește `Prenume_Nume_P3_L7.py`  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Adaugă un buton „Salvează” care afișează în Thonny numărul de puncte desenate  
-- [ ] Desenează cu **linii** în loc de puncte: la fiecare click, o linie de la click-ul precedent  
-- [ ] Fă un joc în care apare un cerc la întâmplare și trebuie să dai click pe el  
-- [ ] Adaugă un buton „Anulează” care șterge ultimul punct (indiciu: o listă de puncte)  
+## Bonus ★★★ — Provocare: Paint-ul crește
+*Doar dacă ai terminat Complet. Adaugă în **același Paint**, în același program.*
+
+- [ ] Afișează **mărimea pensulei pe ecran**, într-un colț (cu `write`), nu doar în fereastra de text  
+- [ ] Fă o tastă `"l"` care comută între **puncte** și **linii**: în modul linii, fiecare click leagă punctul de cel precedent  
+- [ ] Fă o tastă `"u"` care **anulează ultimul punct** desenat (indiciu: o listă cu punctele desenate)  
+- [ ] Fă o tastă `"f"` care **schimbă fundalul**, pe rând, dintr-o listă de culori deschise  
 
 ---
 
@@ -576,7 +455,7 @@ Răspunde pe foaie:
 
 - `screen.onscreenclick(functia)` apelează funcția la fiecare click, cu `x` și `y`.
 - Funcția legată de click trebuie să aibă **doi parametri**.
-- `t.onclick(...)` reacționează doar la click **pe țestoasă**; `t.ondrag(t.goto)` te lasă să o tragi.
+- `t.ondrag(t.goto)` te lasă să tragi țestoasa; `t.onclick(...)` reacționează doar la click **pe țestoasă**.
 - O zonă de click se verifică cu comparații: `if 250 <= y <= 290`.
 - Distanța până la un punct: `(x ** 2 + y ** 2) ** 0.5`.
 - Cu două țestoase poți șterge desenul fără să ștergi paleta.
@@ -593,11 +472,307 @@ Răspunde pe foaie:
 ---
 
 ## Temă
-1. Refă **Exemplele 1–10** în Thonny.  
+1. Refă **Exemplele 1–8** în Thonny.  
 2. Fă un program care desenează **un cerc la fiecare click**, cu raza aleasă la întâmplare.  
 3. Fă un **buton** pătrat verde; când dai click pe el, fundalul se schimbă.  
-4. **Bonus:** fă „Paint” să deseneze linii continue când tragi cu mouse-ul (`ondrag`).  
-5. Salvează totul ca `Tema_P3_L7_Prenume_Nume.py`.
+4. Fă o **țestoasă mare** (`t.shapesize(4)`) care își schimbă culoarea la întâmplare când dai click **pe ea**, cu `t.onclick(...)`.  
+5. **Bonus — dreptunghi cu două click-uri.** Primul click marchează un colț, al doilea colțul opus; după al doilea click, programul desenează dreptunghiul dintre cele două puncte. Indiciu: ține într-o listă primul punct.  
+6. Pe foaie, răspunde: ce reprezintă `x` și `y` în funcția legată de click? Cum verifici dacă un click este într-un cerc? De ce folosim două țestoase în Paint?  
+7. Salvează totul ca `Tema_P3_L7_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le în Thonny, rulează-le și schimbă-le după preferințe.
+
+#### Acasă 1 — Confetti
+
+```python
+import random
+import turtle
+
+screen = turtle.Screen()
+screen.bgcolor("black")
+
+t = turtle.Turtle()
+t.hideturtle()
+t.speed(0)
+t.penup()
+
+culori = ["red", "orange", "yellow", "lime", "cyan", "magenta", "white"]
+
+def confetti(x, y):
+    t.goto(x, y)
+    t.dot(random.randint(10, 40), random.choice(culori))
+
+screen.onscreenclick(confetti)
+
+turtle.done()
+```
+
+**Ce vezi pe ecran:** pe fundal negru, fiecare click aduce un **punct colorat**, de o culoare și o mărime **alese la întâmplare** (de la 10 la 40).
+
+#### Acasă 2 — Poligonul din click-uri
+
+```python
+import turtle
+
+screen = turtle.Screen()
+
+t = turtle.Turtle()
+t.color("darkgreen")
+t.pensize(3)
+t.speed(0)
+
+puncte = []
+
+def click(x, y):
+    if len(puncte) == 0:
+        t.penup()
+    t.goto(x, y)
+    t.pendown()
+    t.dot(10, "red")
+    puncte.append((x, y))
+
+def inchide():
+    if len(puncte) > 2:
+        t.goto(puncte[0])
+        print("Puncte:", len(puncte))
+
+screen.onscreenclick(click)
+screen.listen()
+screen.onkey(inchide, "space")
+
+turtle.done()
+```
+
+**Ieșire** (în fereastra Thonny, jos), după 3 click-uri și o apăsare pe bara de spațiu:
+```text
+Puncte: 3
+```
+
+**Ce vezi pe ecran:** fiecare click pune un **punct roșu** și îl **leagă cu o linie** de cel precedent. Apeși **bara de spațiu** și ultima linie se închide la primul punct, deci cu 3 click-uri obții un **triunghi**.
+
+Lista `puncte` memorează toate punctele (ca perechi `(x, y)`). Primul click ridică creionul, ca să nu apară o linie din centru.
+
+### Încă două exerciții
+
+**Ce se întâmplă?** Gândește-te, apoi verifică în Thonny. Ce culoare are punctul dacă dai click la `(150, 20)`? Dar la `(-120, 0)`? Dar la `(10, 10)`?
+
+```python
+import turtle
+
+screen = turtle.Screen()
+t = turtle.Turtle()
+t.hideturtle()
+t.penup()
+
+def click(x, y):
+    t.goto(x, y)
+    if x > 100 or x < -100:
+        t.dot(30, "blue")
+    else:
+        t.dot(30, "red")
+
+screen.onscreenclick(click)
+
+turtle.done()
+```
+
+**Găsește greșelile.** Programul are 3 greșeli. Rescrie-l corect și explică fiecare corecție:
+
+```text
+import turtle
+screen = turtle.Screen()
+t = turtle.Turtle()
+def pune(x)
+    t.goto(x, y)
+    t.dot(20, "red")
+screen.onscreenclick(pune())
+turtle.done()
+```
+
+---
+
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+
+Toate soluțiile pornesc de la Paint-ul din Exemplul 8 și adaugă ceva în același program. Mai jos e **începutul comun**, pe care îl copiezi o singură dată; după el vine fiecare soluție. La final, nu uita `turtle.done()` pe ultimul rând.
+
+```python
+import turtle
+
+screen = turtle.Screen()
+screen.setup(700, 600)
+screen.title("Paint-ul meu")
+
+culori = ["black", "red", "orange", "gold", "green", "dodgerblue", "purple"]
+stare = {"culoare": "black", "marime": 12}
+
+paleta = turtle.Turtle()
+paleta.hideturtle()
+paleta.speed(0)
+
+def patrat_culoare(x, y, culoare):
+    paleta.penup()
+    paleta.goto(x, y)
+    paleta.setheading(0)
+    paleta.pendown()
+    paleta.color("black", culoare)
+    paleta.begin_fill()
+    for i in range(4):
+        paleta.forward(40)
+        paleta.left(90)
+    paleta.end_fill()
+
+def deseneaza_paleta():
+    for i in range(len(culori)):
+        patrat_culoare(-190 + i * 55, 250, culori[i])
+
+pensula = turtle.Turtle()
+pensula.hideturtle()
+pensula.speed(0)
+pensula.penup()
+
+def click(x, y):
+    if 250 <= y <= 290:
+        numar = int((x + 190) // 55)
+        if 0 <= numar < len(culori) and (x + 190) - numar * 55 <= 40:
+            stare["culoare"] = culori[numar]
+    elif y < 240:
+        pensula.goto(x, y)
+        pensula.dot(stare["marime"], stare["culoare"])
+
+def mai_mare():
+    stare["marime"] += 4
+
+def mai_mic():
+    if stare["marime"] > 4:
+        stare["marime"] -= 4
+
+def sterge():
+    pensula.clear()
+
+deseneaza_paleta()
+
+screen.listen()
+screen.onscreenclick(click)
+screen.onkey(mai_mare, "Up")
+screen.onkey(mai_mic, "Down")
+screen.onkey(sterge, "c")
+```
+
+### 1. Mărimea pe ecran
+
+Adaugă, după codul de mai sus:
+
+```python
+text = turtle.Turtle()
+text.hideturtle()
+text.penup()
+text.speed(0)
+
+def scrie_marime():
+    text.clear()
+    text.goto(-330, -280)
+    text.write("Marime: " + str(stare["marime"]), font=("Arial", 14, "bold"))
+
+def mai_mare_afisat():
+    mai_mare()
+    scrie_marime()
+
+def mai_mic_afisat():
+    mai_mic()
+    scrie_marime()
+
+scrie_marime()
+screen.onkey(mai_mare_afisat, "Up")
+screen.onkey(mai_mic_afisat, "Down")
+```
+
+**Ce vezi pe ecran:** în colțul din stânga jos apare textul **„Marime: 12”**. Când apeși **sus** sau **jos**, numărul din text se schimbă odată cu mărimea punctului. A treia țestoasă, `text`, scrie doar textul: așa îl poți șterge cu `text.clear()` fără să atingi desenul sau paleta.
+
+### 2. Puncte sau linii
+
+Adaugă, după codul de mai sus:
+
+```python
+stare["linii"] = False
+stare["ultim"] = None
+
+def click_nou(x, y):
+    if y >= 240:
+        click(x, y)
+    elif stare["linii"]:
+        pensula.color(stare["culoare"])
+        pensula.pensize(max(1, stare["marime"] // 3))
+        if stare["ultim"] is None:
+            pensula.penup()
+            pensula.goto(x, y)
+            pensula.pendown()
+        else:
+            pensula.goto(x, y)
+        stare["ultim"] = (x, y)
+    else:
+        click(x, y)
+
+def comuta_linii():
+    stare["linii"] = not stare["linii"]
+    stare["ultim"] = None
+    pensula.penup()
+
+screen.onscreenclick(click_nou)
+screen.onkey(comuta_linii, "l")
+```
+
+**Ce vezi pe ecran:** la început Paint-ul pune puncte. La tasta **l** trece în modul **linii**: primul click marchează începutul, iar fiecare click următor **trage o linie** de la precedentul. La a doua apăsare pe **l** revii la puncte. Culoarea o poți schimba din paletă și în modul linii. Grosimea liniei este o treime din mărimea punctului.
+
+### 3. Anulează ultimul punct
+
+Adaugă, după codul de mai sus:
+
+```python
+stare["istoric"] = []
+
+def click_istoric(x, y):
+    if y < 240:
+        stare["istoric"].append((x, y, stare["culoare"], stare["marime"]))
+    click(x, y)
+
+def anuleaza():
+    if len(stare["istoric"]) > 0:
+        stare["istoric"].pop()
+    pensula.clear()
+    for p in stare["istoric"]:
+        pensula.goto(p[0], p[1])
+        pensula.dot(p[3], p[2])
+
+def sterge_tot():
+    stare["istoric"] = []
+    pensula.clear()
+
+screen.onscreenclick(click_istoric)
+screen.onkey(anuleaza, "u")
+screen.onkey(sterge_tot, "c")
+```
+
+**Ce vezi pe ecran:** desenezi puncte ca de obicei. La fiecare apăsare pe **u**, **ultimul punct dispare**: programul șterge tot desenul și îl **redesenează** fără ultimul punct, pe baza listei `istoric`. Fiecare element din listă ține minte `(x, y, culoare, mărime)`. Tasta **c** golește și lista, ca `u` să nu readucă punctele șterse.
+
+### 4. Fundal care se schimbă
+
+Adaugă, după codul de mai sus:
+
+```python
+fundaluri = ["white", "lightyellow", "lightcyan", "lavender"]
+stare["fundal"] = 0
+
+def schimba_fundal():
+    stare["fundal"] = (stare["fundal"] + 1) % len(fundaluri)
+    screen.bgcolor(fundaluri[stare["fundal"]])
+
+screen.onkey(schimba_fundal, "f")
+```
+
+**Ce vezi pe ecran:** la fiecare apăsare pe **f**, fundalul trece la următoarea culoare din listă: alb, galben deschis, albastru deschis, lavandă, apoi de la capăt. Operația `% len(fundaluri)` readuce numărul la 0 după ultima culoare. Desenul și paleta rămân pe loc.
 
 ---
 

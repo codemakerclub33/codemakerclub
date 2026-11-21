@@ -383,13 +383,13 @@ Scrie propriul calculator organizat în funcții:
 
 ---
 
-## Bonus ★★★ — Provocare: Calculatorul cu memorie
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Calculatorul, versiunea ta
+*Doar dacă ai terminat Complet. Lucrezi pe **propriul tău** calculator cu funcții: păstrează-l și adaugă, pe rând, fiecare idee. Funcțiile noi se pun înainte de `main()`.*
 
-- [ ] Adaugă la calculator **memoria**: ultimul rezultat să poată fi folosit ca prim număr  
-- [ ] Scrie o funcție `este_palindrom(text)` care returnează `True` sau `False`  
-- [ ] Fă funcția `cmmdc(a, b)` care găsește cel mai mare divizor comun  
-- [ ] Scrie un joc de zaruri în care fiecare pas este o funcție  
+- [ ] Adaugă **memoria**: după un rezultat, calculatorul întreabă dacă vrei să-l folosești ca prim număr  
+- [ ] Adaugă o opțiune nouă, **Media** celor două numere, printr-o funcție `media(a, b)`  
+- [ ] Adaugă o opțiune nouă, **CMMDC** (cel mai mare divizor comun), printr-o funcție `cmmdc(a, b)`  
+- [ ] Numără **câte operații** ai făcut și afișează numărul înainte de „Pa!”
 
 ---
 
@@ -528,67 +528,114 @@ def main():
 
 ## Răspunsuri la bonus
 
-*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit. Calculatorul din Exemplul 8 e lung, așa că arătăm doar ce se schimbă și unde. Ieșirea e de la programul întreg, cu schimbarea făcută.*
 
-### 1. Calculator cu memorie
+### 1. Memoria
+
+Înlocuiește funcția `main()` cu varianta de mai jos. Fiecare operație pune acum rezultatul în `rezultat`, iar `memorie` îl ține minte.
 
 ```python
-def calculeaza(a, op, b):
-    if op == "+":
-        return a + b
-    elif op == "-":
-        return a - b
-    elif op == "*":
-        return a * b
-    return a / b
+def main():
+    print("=== CALCULATOR ===")
+    optiune = -1
+    memorie = None
+    while optiune != 0:
+        afiseaza_meniu()
+        optiune = int(input("Alege: "))
+        if optiune == 0:
+            break
+        if memorie is not None and input(f"Folosesti memoria ({memorie}) ca prim numar? (da/nu) ").lower() == "da":
+            a = memorie
+            b = int(input("Al doilea numar: "))
+        else:
+            a, b = citeste_doua_numere()
+        rezultat = None
+        if optiune == 1:
+            rezultat = aduna(a, b)
+        elif optiune == 2:
+            rezultat = scade(a, b)
+        elif optiune == 3:
+            rezultat = inmulteste(a, b)
+        elif optiune == 4:
+            rezultat = imparte(a, b)
+            if rezultat is None:
+                print("Nu se poate imparti la 0!")
+        if rezultat is not None:
+            print("Rezultat:", rezultat)
+            memorie = rezultat
+    print("Pa!")
 
-memorie = 0
-while True:
-    a = input("Primul numar (m = memoria, gata = iesire): ")
-    if a == "gata":
-        break
-    if a == "m":
-        a = memorie
-    else:
-        a = float(a)
-    op = input("Operatia (+ - *): ")
-    b = float(input("Al doilea numar: "))
-    memorie = calculeaza(a, op, b)
-    print("Rezultat:", memorie)
+main()
 ```
 
 **Ieșire:**
 ```text
-Primul numar (m = memoria, gata = iesire): 4
-Operatia (+ - *): +
+=== CALCULATOR ===
+
+1. Aduna  2. Scade  3. Inmulteste  4. Imparte  0. Iesire
+Alege: 1
+Primul numar: 10
 Al doilea numar: 5
-Rezultat: 9.0
-Primul numar (m = memoria, gata = iesire): m
-Operatia (+ - *): *
-Al doilea numar: 2
-Rezultat: 18.0
-Primul numar (m = memoria, gata = iesire): gata
+Rezultat: 15
+
+1. Aduna  2. Scade  3. Inmulteste  4. Imparte  0. Iesire
+Alege: 3
+Folosesti memoria (15) ca prim numar? (da/nu) da
+Al doilea numar: 4
+Rezultat: 60
+
+1. Aduna  2. Scade  3. Inmulteste  4. Imparte  0. Iesire
+Alege: 4
+Folosesti memoria (60) ca prim numar? (da/nu) da
+Al doilea numar: 0
+Nu se poate imparti la 0!
+
+1. Aduna  2. Scade  3. Inmulteste  4. Imparte  0. Iesire
+Alege: 0
+Pa!
 ```
 
-### 2. `este_palindrom(text)`
+După `10 + 5 = 15`, a doua operație folosește memoria ca prim număr: `15 * 4 = 60`. Împărțirea la 0 nu schimbă memoria.
+
+### 2. Opțiunea nouă: Media (5)
+
+Trei schimbări: (a) pune funcția înainte de `main()`; (b) adaugă `  5. Media` la sfârșitul textului din `afiseaza_meniu`; (c) pune ramura nouă în `main()`, după ramura lui `optiune == 4`.
 
 ```python
-def este_palindrom(text):
-    return text == text[::-1]
+# (a) funcția nouă, înainte de main()
+def media(a, b):
+    return (a + b) / 2
 
-print(este_palindrom("ele"))
-print(este_palindrom("mama"))
+# (b) în afiseaza_meniu: print("\n1. Aduna  2. Scade  3. Inmulteste  4. Imparte  0. Iesire  5. Media")
+
+# (c) în main(), după ramura lui optiune == 4
+        elif optiune == 5:
+            print("Media:", media(a, b))
 ```
 
 **Ieșire:**
 ```text
-True
-False
+=== CALCULATOR ===
+
+1. Aduna  2. Scade  3. Inmulteste  4. Imparte  0. Iesire  5. Media
+Alege: 5
+Primul numar: 8
+Al doilea numar: 5
+Media: 6.5
+
+1. Aduna  2. Scade  3. Inmulteste  4. Imparte  0. Iesire  5. Media
+Alege: 0
+Pa!
 ```
 
-### 3. `cmmdc(a, b)`
+Media lui 8 și 5 este 13 / 2 = 6.5.
+
+### 3. Opțiunea nouă: CMMDC (5)
+
+Trei schimbări, ca la media: funcția înainte de `main()`, textul din meniu și ramura nouă în `main()`. Dacă ai făcut deja opțiunea Media la numărul 5, dă-i CMMDC numărul 6, în meniu și în `elif`.
 
 ```python
+# (a) funcția nouă, înainte de main()
 def cmmdc(a, b):
     while b != 0:
         rest = a % b
@@ -596,57 +643,68 @@ def cmmdc(a, b):
         b = rest
     return a
 
-print(cmmdc(12, 18))
-print(cmmdc(100, 75))
+# (b) în afiseaza_meniu: adaugă la sfârșit "  5. CMMDC"
+
+# (c) în main(), după ramura lui optiune == 4
+        elif optiune == 5:
+            print("CMMDC:", cmmdc(a, b))
 ```
 
 **Ieșire:**
 ```text
-6
-25
+=== CALCULATOR ===
+
+1. Aduna  2. Scade  3. Inmulteste  4. Imparte  0. Iesire  5. CMMDC
+Alege: 5
+Primul numar: 12
+Al doilea numar: 18
+CMMDC: 6
+
+1. Aduna  2. Scade  3. Inmulteste  4. Imparte  0. Iesire  5. CMMDC
+Alege: 0
+Pa!
 ```
 
-### 4. Joc de zaruri cu funcții
+Algoritmul lui Euclid: `12` și `18` → `18 % 12 = 6`, apoi `12 % 6 = 0`, deci CMMDC este 6.
+
+### 4. Câte operații
+
+Trei schimbări în `main()`: pornește contorul, crește-l după citirea numerelor și afișează-l înainte de „Pa!”.
 
 ```python
-import random
+# (a) la începutul lui main(), după optiune = -1
+    operatii = 0
 
-def arunca():
-    return random.randint(1, 6)
+# (b) imediat după a, b = citeste_doua_numere()
+        operatii += 1
 
-def runda():
-    tu = arunca()
-    calc = arunca()
-    print("Tu:", tu, "| Calculatorul:", calc)
-    if tu > calc:
-        print("Ai castigat!")
-    elif tu < calc:
-        print("Ai pierdut!")
-    else:
-        print("Egalitate!")
-
-def main():
-    for i in range(3):
-        print("Runda", i + 1)
-        runda()
-
-main()
+# (c) înainte de print("Pa!")
+    print(f"Ai facut {operatii} operatii.")
 ```
 
 **Ieșire:**
 ```text
-Runda 1
-Tu: 2 | Calculatorul: 3
-Ai pierdut!
-Runda 2
-Tu: 1 | Calculatorul: 6
-Ai pierdut!
-Runda 3
-Tu: 4 | Calculatorul: 4
-Egalitate!
+=== CALCULATOR ===
+
+1. Aduna  2. Scade  3. Inmulteste  4. Imparte  0. Iesire
+Alege: 1
+Primul numar: 10
+Al doilea numar: 5
+Rezultat: 15
+
+1. Aduna  2. Scade  3. Inmulteste  4. Imparte  0. Iesire
+Alege: 3
+Primul numar: 6
+Al doilea numar: 7
+Rezultat: 42
+
+1. Aduna  2. Scade  3. Inmulteste  4. Imparte  0. Iesire
+Alege: 0
+Ai facut 2 operatii.
+Pa!
 ```
 
-*Numerele sunt aleatoare, deci la tine ieșirea poate fi alta.*
+Contorul crește o dată la fiecare operație începută, adică după ce ai citit cele două numere.
 
 ---
 ## Ce urmează — Lecția 10

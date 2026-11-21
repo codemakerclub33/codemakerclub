@@ -18,7 +18,7 @@ Greșeli frecvente. Type Error: ai lipit un text cu un număr. Zece împărțit 
 
 Proiectul de azi. Fișa mea de tipuri. Minim înseamnă tipurile a patru valori. Complet înseamnă conversii, len și un text pe mai multe rânduri.
 
-Provocare, trei stele. Chenarul meu. Afișezi un chenar cât lungimea numelui tău, rotunjești un număr la o zecimală și apoi la două, și lipești prenumele cu numele într-o singură variabilă.
+Provocare, trei stele. Fișa de tipuri, versiunea extinsă. Lucrezi pe propria ta fișă și adaugi patru lucruri. Numele într-un chenar cât lungimea lui. Înălțimea în centimetri, cu round. Anul nașterii, calculat din vârstă. Și tipul rezultatului când aduni o vârstă cu o înălțime, pe care îl explici.
 
 Recapitulare. Tipurile de bază sunt int, float, str și bool. Type arată tipul. Plus lipește texte, len le numără. Int, float și str transformă valorile. Nu poți lipi un text cu un număr fără conversie.
 

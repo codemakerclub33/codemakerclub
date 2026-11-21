@@ -1,25 +1,27 @@
-Lecția șapte din Modulul trei. Mouse: click și desenezi.
+Lecția șapte din Modulul trei. Paint-ul meu.
 
-Astăzi comanzi țestoasa cu mouse-ul. Proiectul se numește Paint-ul meu. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L șapte, punct P Y.
+Ai învățat să asculți tastatura. Acum ascultăm mouse-ul: la fiecare click, programul află unde ai dat click și poate desena acolo, schimba o culoare sau număra puncte. La final construiești un mic program de desen, ca Paint. Fișierul se numește: Prenume, linie jos, Nume, linie jos, P trei, linie jos, L șapte, punct P Y.
 
-Obiectivul. La final legi un click de o funcție cu onscreenclick, folosești coordonatele x și y ale click-ului, desenezi puncte colorate, tragi țestoasa cu mouse-ul, verifici dacă ai dat click într-o zonă și construiești o paletă de culori. Minim: la click, țestoasa merge la punctul unde ai dat click. Complet: minim, plus puncte colorate, paletă și contor de click-uri.
+Ce facem azi. La final legi un click de o funcție, folosești coordonatele x și y ale click-ului, desenezi puncte colorate, tragi țestoasa cu mouse-ul, verifici dacă ai dat click într-o zonă și construiești o paletă de culori. Ca să știi dacă jucătorul a lovit un inamic sau un buton, trebuie să știi unde a dat click.
 
-Primul pas. Primul click. Funcția legată de un click primește două numere: x și y, adică poziția exactă a mouse-ului în fereastră. Cel mai simplu: țestoasa merge la click cu goto. Sau pui un punct colorat la fiecare click.
+Instrucțiuni noi azi. Screen punct on screen click: apelează funcția la fiecare click în fereastră. Funcția de click are exact doi parametri, x și y, adică locul click-ului. T punct on drag: țestoasa te urmează când o tragi cu mouse-ul. Un if cu două comparații verifică dacă click-ul este într-o zonă. Rădăcina din x la pătrat plus y la pătrat este distanța de la centru până la punctul tău.
 
-Al doilea pas. Alegem la întâmplare, citim coordonatele. Confetti: puncte cu culori alese la întâmplare. Poți afișa coordonatele click-ului.
+Primul pas. Primul click. Țestoasa aleargă în punctul în care dai click. Apoi un punct roșu apare exact unde ai dat click. Funcția trebuie să aibă exact doi parametri, chiar dacă nu îi folosești pe amândoi. Numele funcției se dă fără paranteze, ca la tastatură.
 
-Al treilea pas. Tragem și atingem. Cu ondrag poți trage țestoasa și desena liber. Cu onclick pe țestoasă, culoarea se schimbă doar dacă ai dat click pe ea.
+Al doilea pas. Coordonatele și tragerea cu mouse-ul. Afișăm coordonatele fiecărui click: centrul ferestrei este zero, zero, iar în stânga și jos numerele sunt negative. Apoi desenul liber: prinzi țestoasa cu mouse-ul și o tragi ca pe un creion.
 
-Al patrulea pas. Zone de click. Cum aflăm dacă ai dat click într-un anumit loc? Comparăm x și y cu limitele zonei. Așa faci o paletă de culori: patru pătrate colorate, iar click-ul pe unul alege culoarea. Un contor de click-uri afișează numărul pe ecran.
+Al treilea pas. Zone de click. Mai întâi împărțim fereastra în două: click în stânga pune un punct albastru, click în dreapta pune un punct roșu. Apoi paleta de culori: comparăm x și y cu limitele fiecărui pătrat, ca să aflăm pe ce culoare ai dat click. Apoi contorul: un disc mare, iar numărul crește doar când click-ul este în interiorul discului. Distanța de la centru se calculează cu Pitagora.
 
-Al cincilea pas. Unim punctele. Fiecare click adaugă un punct într-o listă, iar țestoasa le unește într-un poligon.
+Al patrulea pas. Mini-proiect. Paint-ul meu are o paletă cu șapte culori, puncte de mărime schimbată din tastatură și ștergere. Folosim două țestoase: una pentru paletă și una pentru desen, ca ștergerea desenului să nu șteargă și paleta.
 
-Al șaselea pas. Mini-proiect. Paint-ul meu: paletă, desen liber și ștergere.
+Greșeli frecvente. Eroare de argumente: funcția de click nu are x și y. Eroare la click cu paranteze: ai scris numele funcției cu paranteze. Linie din centru la primul click: creionul este jos. Click-ul nu face nimic: ai dat click lângă țestoasă, nu pe ea. Zonele nu se potrivesc cu desenul: afișează coordonatele ca să vezi unde dai click. Paleta dispare la ștergere: ai folosit aceeași țestoasă. Punctele sunt prea sus sau prea jos: axa y crește în sus.
 
-Greșeli frecvente. Funcția de click nu are doi parametri: trebuie x și y, chiar dacă nu îi folosești. Click-ul nu face nimic: ai uitat screen punct listen. Zona de click nu merge: comparațiile sunt greșite.
+Proiectul de azi. Paint-ul meu. Minim înseamnă că țestoasa merge la click și lasă un punct colorat. Complet înseamnă și Paint-ul tău, cu paletă de nouă culori, o gumă, ștergere, mărimea pensulei din tastatură, titlu și instrucțiuni.
 
-Proiectul de azi. Paint-ul meu. Minim înseamnă țestoasa care merge la click. Complet înseamnă puncte, paletă și contor.
+Provocare, trei stele. Paint-ul crește. Doar dacă ai terminat varianta completă. Afișezi mărimea pensulei pe ecran, într-un colț. Faci o tastă care comută între puncte și linii. Faci o tastă care anulează ultimul punct desenat. Și faci o tastă care schimbă fundalul, pe rând, dintr-o listă de culori deschise.
 
-Recapitulare. Onscreenclick apelează funcția la fiecare click, cu x și y. Funcția trebuie să aibă doi parametri. Ondrag te lasă să tragi țestoasa. O zonă de click se verifică cu comparații. O listă ține punctele.
+Recapitulare. Funcția legată de click primește x și y. Zona de click se verifică cu comparații. Distanța până la un punct se calculează cu Pitagora. Cu două țestoase poți șterge desenul fără să ștergi paleta.
 
-Succes cu paint-ul.
+Ce urmează. În lecția următoare mai multe țestoase aleargă una contra alteia, iar una singură câștigă.
+
+Succes cu Paint-ul.

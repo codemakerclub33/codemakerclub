@@ -1,4 +1,5 @@
-# LECȚIA 10 — Proiect: galeria mea de artă
+# LECȚIA 10 — Galeria mea de artă
+### Proiect final Turtle
 **Modulul 3 · Desenăm cu Turtle · 2 ore**  
 **Code Maker Club · Turtle Artist**
 
@@ -7,13 +8,8 @@
 
 ---
 
-## Obiectiv
-La finalul orei ai o galerie interactivă cu cel puțin 5 opere, un meniu pe ecran, taste pentru fiecare operă, ștergerea ecranului și semnătura ta pe fiecare desen.  
-**Minim:** 3 opere care se schimbă cu tastele 1, 2, 3.  
-**Ținta orei (Complet):** + 5 opere, meniu, semnătură și o operă proprie.
-
-## De ce contează
-Un proiect mare nu este „o singură bucată de cod”, ci **piese mici care se potrivesc**: funcții pentru desen, un dicționar care le leagă de taste, un meniu. Așa arată programele adevărate, iar tu poți adăuga oricând o piesă nouă.
+## Ce facem azi
+La finalul orei ai o galerie interactivă cu cel puțin 5 opere, un meniu pe ecran, taste pentru fiecare operă, ștergerea ecranului și semnătura ta pe fiecare desen. Un proiect mare nu este „o singură bucată de cod”, ci **piese mici care se potrivesc**: funcții pentru desen, un dicționar care le leagă de taste, un meniu. Așa arată programele adevărate, iar tu poți adăuga oricând o piesă nouă.
 
 ---
 
@@ -23,11 +19,23 @@ Un proiect mare nu este „o singură bucată de cod”, ci **piese mici care se
 |--------|----------|
 | 0–10 | Recapitulare Modulul 3 |
 | 10–30 | O operă = o funcție (**Exemplele 1–2**) |
-| 30–55 | Opere cu parametri: spirală, mandală, cer (**Exemplele 3–5**) |
-| 55–75 | Meniu și semnătură (**Exemplele 6–7**) |
-| 75–95 | Funcții în dicționar și catalogul (**Exemplele 8–9**) |
-| 95–115 | Galeria completă (**Exemplul 10**) și opera ta |
+| 30–50 | Opere cu parametri: spirală și cer (**Exemplele 3–4**) |
+| 50–70 | Meniu și semnătură (**Exemplele 5–6**) |
+| 70–85 | Funcții în dicționar (**Exemplul 7**) |
+| 85–115 | Galeria completă (**Exemplul 8**) și opera ta |
 | 115–120 | Verificare Modul 3 și autoevaluare |
+
+---
+
+## Instrucțiuni noi azi
+
+| Ce scriem | Ce face | Exemplu |
+|-----------|---------|---------|
+| `def curata():` | Piesă de ajutor: începutul fiecărei opere | `curata()` |
+| `opere = {"1": peisaj, "2": mandala}` | Dicționar în care **valorile sunt funcții** (fără paranteze) | `opere["1"]` |
+| `for tasta in opere:` | Parcurge cheile dicționarului | `screen.onkey(opere[tasta], tasta)` |
+| `opere[tasta]()` | Apelează funcția găsită în dicționar (aici **cu** paranteze) | `opere["1"]()` |
+| `screen.textinput(titlu, mesaj)` | Cere un text într-o căsuță de dialog | numele artistului |
 
 ---
 
@@ -189,34 +197,7 @@ turtle.done()
 
 Funcția primește **centrul** (`x`, `y`), lista de **culori**, numărul de **pași** și **unghiul**. Cu `i % len(culori)` parcurgem lista în cerc, oricât de lungă ar fi.
 
-### Exemplul 4 — Mandala cu parametri
-
-```python
-import turtle
-
-screen = turtle.Screen()
-screen.bgcolor("black")
-
-t = turtle.Turtle()
-t.hideturtle()
-t.speed(0)
-t.pensize(2)
-
-def mandala(cercuri, raza, culori):
-    for i in range(cercuri):
-        t.color(culori[i % len(culori)])
-        t.circle(raza)
-        t.right(360 / cercuri)
-
-mandala(36, 100, ["cyan", "magenta", "yellow"])
-mandala(12, 40, ["white"])
-
-turtle.done()
-```
-
-**Ce vezi pe ecran:** pe fundal negru, o **rozetă mare** din 36 de cercuri colorate (azuriu, magenta, galben, pe rând), iar în interiorul ei o **rozetă mică**, albă, din 12 cercuri.
-
-### Exemplul 5 — Cer înstelat cu lună
+### Exemplul 4 — Cer înstelat cu lună
 
 ```python
 import random
@@ -259,15 +240,14 @@ Semiluna se obține din **două cercuri**: unul galben deschis și, peste el, un
 
 **Încearcă tu (5 min)**  
 - [ ] Am scris și am rulat **Exemplul 3** (Spirala cu parametri)  
-- [ ] Am scris și am rulat **Exemplul 4** (Mandala cu parametri)  
-- [ ] Am scris și am rulat **Exemplul 5** (Cer înstelat cu lună)  
+- [ ] Am scris și am rulat **Exemplul 4** (Cer înstelat cu lună)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 4. Meniu și semnătură
 
-### Exemplul 6 — Meniul pe ecran
+### Exemplul 5 — Meniul pe ecran
 
 ```python
 import turtle
@@ -292,7 +272,7 @@ turtle.done()
 
 Meniul este scris de **o țestoasă separată** (`meniu`). Așa, când ștergem desenul cu `t.clear()`, meniul **rămâne** pe ecran: un truc pe care îl știi de la Paint.
 
-### Exemplul 7 — Numele artistului
+### Exemplul 6 — Numele artistului
 
 ```python
 import turtle
@@ -326,15 +306,15 @@ turtle.done()
 Dacă lași căsuța goală sau apeși Cancel, numele rămâne **„Artistul”**. Condiția `nume is not None and nume.strip() != ""` verifică ambele cazuri: răspunsul există și nu este gol.
 
 **Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 6** (Meniul pe ecran)  
-- [ ] Am scris și am rulat **Exemplul 7** (Numele artistului)  
+- [ ] Am scris și am rulat **Exemplul 5** (Meniul pe ecran)  
+- [ ] Am scris și am rulat **Exemplul 6** (Numele artistului)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 5. Funcții în dicționar
 
-### Exemplul 8 — Tastele și operele într-un dicționar
+### Exemplul 7 — Tastele și operele într-un dicționar
 
 ```python
 import turtle
@@ -388,43 +368,15 @@ turtle.done()
 
 Surpriza: în dicționar, **valorile sunt funcții** (fără paranteze). `opere[tasta]` este funcția, iar bucla `for` leagă fiecare tastă de funcția ei. Dacă vrei o operă nouă, adaugi **o funcție** și **un rând** în dicționar, fără să atingi restul programului.
 
-### Exemplul 9 — Catalogul galeriei
-
-```python
-opere = {"1": "Peisaj", "2": "Mandala", "3": "Spirala", "4": "Cer", "5": "Floare"}
-
-print("CATALOG")
-for tasta in opere:
-    print("Tasta", tasta, "->", opere[tasta])
-
-print("Numar de opere:", len(opere))
-print("Exista opera 6?", "6" in opere)
-```
-
-**Ieșire:**
-```text
-CATALOG
-Tasta 1 -> Peisaj
-Tasta 2 -> Mandala
-Tasta 3 -> Spirala
-Tasta 4 -> Cer
-Tasta 5 -> Floare
-Numar de opere: 5
-Exista opera 6? False
-```
-
-Un dicționar poate să ne dea și un **catalog**: parcurgem cheile și afișăm numele operei. `len(opere)` numără operele, iar `"6" in opere` verifică dacă există cheia `"6"`.
-
-**Încearcă tu (5 min)**  
-- [ ] Am scris și am rulat **Exemplul 8** (Tastele și operele într-un dicționar)  
-- [ ] Am scris și am rulat **Exemplul 9** (Catalogul galeriei)  
+**Încearcă tu (3 min)**  
+- [ ] Am scris și am rulat **Exemplul 7** (Tastele și operele într-un dicționar)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
 ## 6. Galeria completă
 
-### Exemplul 10 — „Galeria mea de artă”
+### Exemplul 8 — „Galeria mea de artă”
 
 ```python
 import random
@@ -605,68 +557,47 @@ Fiecare operă are jos, în stânga, **semnătura ta**. (În exemplu, numele est
 Programul este făcut din **piese mici**: funcțiile ajutătoare (`mergi`, `dreptunghi`, `triunghi`, `cerc`, `curata`, `semneaza`), cele 5 opere, meniul și dicționarul `opere` care le leagă de taste. Ca să adaugi o operă nouă: scrii funcția, apoi adaugi un rând în dicționar și o mențiune în meniu.
 
 **Încearcă tu (3 min)**  
-- [ ] Am scris și am rulat **Exemplul 10** („Galeria mea de artă”)  
+- [ ] Am scris și am rulat **Exemplul 8** („Galeria mea de artă”)  
 - [ ] Am schimbat o valoare din cod și am observat ce se schimbă  
 
 ---
 
-## Proiect / exerciții de finalizat AZI
+## De făcut azi — „Galeria mea de artă”
 
-### Exercițiul A — „Galeria mea de artă” (obligatoriu)
-Pornește de la Exemplul 10 și fă-o **a ta**:
-1. păstrează cele **5 opere** și adaugă **încă 3, create de tine** (de exemplu: un oraș noaptea, un pește în acvariu, o stea mare, un robot, un curcubeu);
+### Minim vs Complet
+
+| | Ce trebuie |
+|--|------------|
+| **Minim** | 3 opere (funcții) care se schimbă cu tastele 1, 2, 3 |
+| **Complet** | Minim + galeria ta: cele 5 opere din model plus 2 create de tine, meniu actualizat, semnătură pe fiecare operă și tasta C pentru ștergere |
+
+### Pasul 1 — Minim
+- [ ] Trei opere, fiecare într-o funcție care începe cu `curata()`  
+- [ ] Tastele `"1"`, `"2"`, `"3"` le leagă de funcții (Exemplul 2 sau 7)  
+
+### Pasul 2 — Complet
+Pornește de la Exemplul 8 și fă galeria **a ta**:
+1. păstrează cele **5 opere** și adaugă **încă 2, create de tine** (de exemplu: un oraș noaptea, un pește în acvariu, o stea mare, un robot, un curcubeu);
 2. fiecare operă este o **funcție**, are semnătură și este legată de o **tastă** în dicționarul `opere`;
 3. actualizează **meniul** să arate toate operele;
-4. alege **culori și titluri** proprii;
-5. adaugă un **ecran de început** cu titlul galeriei și textul „Alege o tastă”.
-
-### Exercițiul B — Ce afișează?
-Gândește-te, apoi verifică în Thonny:
-
-```python
-opere = {"1": "Peisaj", "2": "Mandala"}
-print(len(opere))
-print(opere["2"])
-print("3" in opere)
-opere["3"] = "Spirala"
-print(len(opere))
-```
-
-### Exercițiul C — Opera cu mouse-ul
-Adaugă o operă în care **fiecare click** desenează o **stea colorată** în locul în care ai dat click (folosește ideile din Lecțiile 5 și 7).
-
-### Exercițiul D — Găsește greșelile
-Programul are 4 greșeli. Rescrie-l corect:
-
-```text
-def peisaj()
-    curata()
-    dreptunghi(0, 0, 100, 50)
-
-screen.onkey(peisaj(), "1")
-screen.onkey(mandala, "2")
-```
-
-### Exercițiul E — Explică cu cuvintele tale
-Răspunde pe foaie:
-1. De ce este mai bine ca fiecare operă să fie o funcție?  
-2. De ce meniul este scris de o altă țestoasă?  
-3. Cum adaugi o operă nouă în galerie?
+4. alege **culori și titluri** proprii.
 
 **Gata când:**
-- [ ] Galeria are cel puțin 8 opere (5 din model + 3 ale tale)  
+- [ ] Galeria are cel puțin 7 opere (5 din model + 2 ale tale)  
 - [ ] Fiecare operă este o funcție, are semnătură și tastă proprie  
-- [ ] Meniul și ecranul de început sunt corecte  
+- [ ] Meniul arată toate operele  
 - [ ] Ai explicat pe foaie cum adaugi o operă nouă  
 - [ ] Fișierul se numește `Prenume_Nume_P3_L10.py`  
 
 ---
 
-## Bonus / Provocare (dacă ai terminat)
-- [ ] Adaugă o operă **animată** (de exemplu o mașină care merge prin peisaj, cu `ontimer`)  
-- [ ] Adaugă tasta **R** care alege o operă la întâmplare  
+## Bonus ★★★ — Provocare: Galeria se extinde
+*Doar dacă ai terminat Complet. Adaugă în **aceeași galerie**, în același program.*
+
+- [ ] Fă o tastă `"r"` care alege **o operă la întâmplare** dintre primele cinci  
 - [ ] Afișează pe ecran **numărul de opere văzute**  
-- [ ] Fă un **joc de ghicit**: se desenează o operă, iar jucătorul trebuie să scrie titlul  
+- [ ] Adaugă o operă cu mouse-ul (tasta `"6"`): **fiecare click** desenează o **stea colorată** în locul în care ai dat click  
+- [ ] Adaugă un **ecran de început**, cu titlul galeriei și textul „Alege o tasta”, care dispare la prima operă  
 
 ---
 
@@ -727,7 +658,7 @@ Bifează ce poți face **singur**:
 - [ ] desenez spirale și mandale cu bucle
 - [ ] scriu funcții de desen cu parametri
 - [ ] controlez țestoasa cu tastatura și mouse-ul
-- [ ] fac un joc cu scor, timp și vieți
+- [ ] fac un joc cu scor și o bombă care ricoșează
 - [ ] organizez un proiect din piese mici
 
 ---
@@ -742,11 +673,366 @@ Bifează ce poți face **singur**:
 ---
 
 ## Temă
-1. Termină galeria cu cele 8 opere și testează fiecare tastă.  
+1. Termină galeria cu cele 7 opere și testează fiecare tastă.  
 2. Fă o fotografie sau o captură de ecran a operei tale preferate.  
 3. Arată galeria familiei și notează opera care a plăcut cel mai mult.  
 4. **Bonus:** pregătește o scurtă prezentare a galeriei pentru colegi.  
-5. Salvează totul ca `Tema_P3_L10_Prenume_Nume.py`.
+5. Pe foaie, răspunde: de ce este mai bine ca fiecare operă să fie o funcție? De ce meniul este scris de o altă țestoasă? Cum adaugi o operă nouă în galerie?  
+6. Salvează totul ca `Tema_P3_L10_Prenume_Nume.py`.
+
+### Exemple pentru acasă
+Aceste exemple folosesc exact ce ai învățat azi. Scrie-le în Thonny, rulează-le și schimbă-le după preferințe.
+
+#### Acasă 1 — Mandala cu parametri
+
+```python
+import turtle
+
+screen = turtle.Screen()
+screen.bgcolor("black")
+
+t = turtle.Turtle()
+t.hideturtle()
+t.speed(0)
+t.pensize(2)
+
+def mandala(cercuri, raza, culori):
+    for i in range(cercuri):
+        t.color(culori[i % len(culori)])
+        t.circle(raza)
+        t.right(360 / cercuri)
+
+mandala(36, 100, ["cyan", "magenta", "yellow"])
+mandala(12, 40, ["white"])
+
+turtle.done()
+```
+
+**Ce vezi pe ecran:** pe fundal negru, o **rozetă mare** din 36 de cercuri colorate (azuriu, magenta, galben, pe rând), iar în interiorul ei o **rozetă mică**, albă, din 12 cercuri.
+
+#### Acasă 2 — Catalogul galeriei
+
+```python
+opere = {"1": "Peisaj", "2": "Mandala", "3": "Spirala", "4": "Cer", "5": "Floare"}
+
+print("CATALOG")
+for tasta in opere:
+    print("Tasta", tasta, "->", opere[tasta])
+
+print("Numar de opere:", len(opere))
+print("Exista opera 6?", "6" in opere)
+```
+
+**Ieșire** (în fereastra Thonny, jos):
+```text
+CATALOG
+Tasta 1 -> Peisaj
+Tasta 2 -> Mandala
+Tasta 3 -> Spirala
+Tasta 4 -> Cer
+Tasta 5 -> Floare
+Numar de opere: 5
+Exista opera 6? False
+```
+
+Un dicționar poate să ne dea și un **catalog**: parcurgem cheile și afișăm numele operei. `len(opere)` numără operele, iar `"6" in opere` verifică dacă există cheia `"6"`.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te, apoi verifică în Thonny:
+
+```python
+opere = {"1": "Peisaj", "2": "Mandala"}
+print(len(opere))
+print(opere["2"])
+print("3" in opere)
+opere["3"] = "Spirala"
+print(len(opere))
+```
+
+**Găsește greșelile.** Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
+
+```text
+def peisaj()
+    curata()
+    dreptunghi(0, 0, 100, 50)
+
+screen.onkey(peisaj(), "1")
+screen.onkey(mandala, "2")
+```
+
+---
+
+## Răspunsuri la bonus
+
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+
+Toate soluțiile pornesc de la galeria din Exemplul 8, **fără** ultimele rânduri (cele două `print` și `turtle.done()`). Mai jos e **începutul comun**, pe care îl copiezi o singură dată; după el vine fiecare soluție. La final, nu uita `turtle.done()` pe ultimul rând.
+
+```python
+import random
+import turtle
+
+screen = turtle.Screen()
+screen.setup(800, 600)
+screen.title("Galeria mea de arta")
+
+t = turtle.Turtle()
+t.hideturtle()
+t.speed(0)
+
+meniu = turtle.Turtle()
+meniu.hideturtle()
+meniu.penup()
+
+autor = {"nume": "Artistul"}
+culori = ["red", "orange", "yellow", "green", "cyan", "violet"]
+
+def mergi(x, y):
+    t.penup()
+    t.goto(x, y)
+    t.setheading(0)
+    t.pendown()
+
+def dreptunghi(x, y, l, h, culoare):
+    mergi(x, y)
+    t.color(culoare)
+    t.begin_fill()
+    for i in range(2):
+        t.forward(l)
+        t.left(90)
+        t.forward(h)
+        t.left(90)
+    t.end_fill()
+
+def triunghi(x, y, l, culoare):
+    mergi(x, y)
+    t.color(culoare)
+    t.begin_fill()
+    for i in range(3):
+        t.forward(l)
+        t.left(120)
+    t.end_fill()
+
+def cerc(x, y, r, culoare):
+    mergi(x, y - r)
+    t.color(culoare)
+    t.begin_fill()
+    t.circle(r)
+    t.end_fill()
+
+def curata():
+    t.clear()
+    t.penup()
+    t.home()
+    t.setheading(0)
+    t.pensize(1)
+    screen.bgcolor("white")
+
+def semneaza(titlu):
+    t.penup()
+    t.color("gray")
+    t.goto(-380, -285)
+    t.write(titlu + " - de " + autor["nume"], font=("Arial", 11, "italic"))
+
+def peisaj():
+    curata()
+    screen.bgcolor("skyblue")
+    dreptunghi(-400, -300, 800, 170, "forestgreen")
+    cerc(280, 190, 50, "gold")
+    dreptunghi(-250, -130, 140, 140, "khaki")
+    triunghi(-250, 10, 140, "firebrick")
+    dreptunghi(-205, -130, 50, 70, "saddlebrown")
+    dreptunghi(160, -130, 20, 60, "saddlebrown")
+    cerc(170, -35, 45, "darkgreen")
+    semneaza("Peisaj")
+
+def mandala():
+    curata()
+    screen.bgcolor("black")
+    t.pensize(2)
+    t.pendown()
+    for i in range(36):
+        t.color(culori[i % 6])
+        t.circle(110)
+        t.right(10)
+    semneaza("Mandala")
+
+def spirala():
+    curata()
+    screen.bgcolor("black")
+    t.pensize(2)
+    t.pendown()
+    for i in range(100):
+        t.color(culori[i % 6])
+        t.forward(i * 2)
+        t.left(59)
+    semneaza("Spirala")
+
+def cer():
+    curata()
+    screen.bgcolor("midnightblue")
+    for i in range(50):
+        t.penup()
+        t.goto(random.randint(-380, 380), random.randint(-230, 230))
+        t.dot(random.randint(3, 9), random.choice(["white", "yellow", "lightblue"]))
+    cerc(-250, 150, 50, "lightyellow")
+    cerc(-225, 160, 45, "midnightblue")
+    semneaza("Cer inselat")
+
+def petala(raza, culoare):
+    t.color("black", culoare)
+    t.begin_fill()
+    t.circle(raza, 60)
+    t.left(120)
+    t.circle(raza, 60)
+    t.left(120)
+    t.end_fill()
+
+def floare():
+    curata()
+    screen.bgcolor("lightyellow")
+    t.pensize(8)
+    mergi(0, -260)
+    t.color("forestgreen")
+    t.setheading(90)
+    t.forward(210)
+    t.pensize(2)
+    mergi(0, -50)
+    for i in range(8):
+        petala(90, "orange")
+        t.right(45)
+    cerc(0, -50, 25, "saddlebrown")
+    semneaza("Floare")
+
+def scrie_meniu():
+    meniu.goto(-380, 265)
+    meniu.write("1 Peisaj   2 Mandala   3 Spirala   4 Cer   5 Floare   C Sterge", font=("Arial", 12, "bold"))
+
+def sterge():
+    curata()
+
+opere = {"1": peisaj, "2": mandala, "3": spirala, "4": cer, "5": floare, "c": sterge}
+
+nume = screen.textinput("Artist", "Cum te cheama?")
+if nume is not None and nume.strip() != "":
+    autor["nume"] = nume.strip()
+
+scrie_meniu()
+screen.listen()
+for tasta in opere:
+    screen.onkey(opere[tasta], tasta)
+```
+
+### 1. Operă la întâmplare
+
+Adaugă, după codul de mai sus:
+
+```python
+def la_intamplare():
+    litera = random.choice(["1", "2", "3", "4", "5"])
+    opere[litera]()
+
+screen.onkey(la_intamplare, "r")
+```
+
+**Ce vezi pe ecran:** la fiecare apăsare pe **r**, galeria alege la întâmplare una dintre primele cinci taste și desenează opera ei. Observă `opere[litera]()`: găsim funcția în dicționar, iar parantezele de la final o **apelează** chiar acum. (La `onkey` am dat funcția fără paranteze, ca s-o apeleze ecranul mai târziu.)
+
+### 2. Opere văzute
+
+Adaugă, după codul de mai sus:
+
+```python
+vazute = {"numar": 0}
+
+contor = turtle.Turtle()
+contor.hideturtle()
+contor.penup()
+
+def semneaza(titlu):
+    t.penup()
+    t.color("gray")
+    t.goto(-380, -285)
+    t.write(titlu + " - de " + autor["nume"], font=("Arial", 11, "italic"))
+    vazute["numar"] += 1
+    contor.clear()
+    contor.goto(250, 265)
+    contor.write("Opere vazute: " + str(vazute["numar"]), font=("Arial", 12, "bold"))
+```
+
+**Ce vezi pe ecran:** sus, în dreapta, apare **„Opere vazute: 1”** după prima operă, apoi 2, 3 și așa mai departe. Fiecare operă se termină cu `semneaza(...)`, iar noi am redefinit-o: face și semnătura, și numărătoarea. Contorul este scris de o **a treia țestoasă**, ca să nu dispară când ștergi desenul. Tasta **c** nu se numără, pentru că nu semnează nimic.
+
+### 3. Stele la click
+
+Adaugă, după codul de mai sus:
+
+```python
+def curata():
+    t.clear()
+    t.penup()
+    t.home()
+    t.setheading(0)
+    t.pensize(1)
+    screen.bgcolor("white")
+    screen.onscreenclick(None)
+
+def stea_la(x, y):
+    mergi(x, y)
+    t.color(random.choice(culori))
+    t.begin_fill()
+    for i in range(5):
+        t.forward(40)
+        t.right(144)
+    t.end_fill()
+
+def opera_stele():
+    curata()
+    screen.bgcolor("midnightblue")
+    screen.onscreenclick(stea_la)
+    semneaza("Stele la click")
+
+def scrie_meniu():
+    meniu.clear()
+    meniu.goto(-380, 265)
+    meniu.write("1 Peisaj   2 Mandala   3 Spirala   4 Cer   5 Floare   6 Stele   C Sterge", font=("Arial", 12, "bold"))
+
+opere["6"] = opera_stele
+screen.onkey(opera_stele, "6")
+scrie_meniu()
+```
+
+**Ce vezi pe ecran:** meniul are acum și **„6 Stele”**. La tasta **6**, fundalul devine albastru închis, iar **fiecare click** desenează o **stea** (latura 40), într-o culoare la întâmplare din lista `culori`. Când alegi altă operă, `curata()` **oprește click-urile** (`screen.onscreenclick(None)`), ca să nu mai apară stele în peisaj sau în mandală. Steaua folosește aceeași rotire de 144° din Lecția 5.
+
+### 4. Ecran de început
+
+Adaugă, după codul de mai sus:
+
+```python
+titlu = turtle.Turtle()
+titlu.hideturtle()
+titlu.penup()
+
+def curata():
+    titlu.clear()
+    t.clear()
+    t.penup()
+    t.home()
+    t.setheading(0)
+    t.pensize(1)
+    screen.bgcolor("white")
+
+def ecran_inceput():
+    screen.bgcolor("midnightblue")
+    titlu.color("white")
+    titlu.goto(0, 40)
+    titlu.write("Galeria lui " + autor["nume"], align="center", font=("Arial", 32, "bold"))
+    titlu.goto(0, -10)
+    titlu.write("Alege o tasta", align="center", font=("Arial", 18, "normal"))
+
+ecran_inceput()
+```
+
+**Ce vezi pe ecran:** la pornire, pe fundal albastru închis, apar scrise mari **„Galeria lui <numele tău>”** și, dedesubt, **„Alege o tasta”**, iar meniul rămâne sus. Cum apeși prima tastă, `curata()` șterge și textul de început (`titlu.clear()`), apoi se desenează opera. Textul este scris de o **țestoasă separată**, `titlu`, ca să nu se atingă de desenul făcut de `t`.
 
 ---
 

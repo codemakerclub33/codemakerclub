@@ -349,13 +349,13 @@ Scrie o agendă cu meniu care se repetă și cu opțiunile:
 
 ---
 
-## Bonus ★★★ — Provocare: Inventarul de joc
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Agenda, versiunea ta
+*Doar dacă ai terminat Complet. Lucrezi pe **propria ta** agendă: păstrează-o și îmbunătățește-o.*
 
-- [ ] Numără **cuvintele** dintr-o propoziție (nu literele) cu un dicționar  
-- [ ] Fă un **inventar de joc**: obiect → cantitate; adaugă și scoate obiecte  
-- [ ] Afișează agenda **sortată** alfabetic (folosește `sorted(agenda)`)  
-- [ ] Pune valorile într-un dicționar mai mare: fiecare contact are telefon **și** email  
+- [ ] Opțiune nouă: **schimbă telefonul** unui contact care există deja (cu verificare dacă numele e în agendă)  
+- [ ] Opțiune nouă: afișează **câte contacte** are agenda (`len`)  
+- [ ] La „Arată tot”, afișează contactele **sortate alfabetic** (`sorted(agenda)`)  
+- [ ] Fiecare contact are **telefon și email**: valoarea din agendă devine un dicționar `{"telefon": ..., "email": ...}`
 
 ---
 
@@ -475,70 +475,243 @@ for k, v in jucator:
 
 ## Răspunsuri la bonus
 
-*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit. Fiecare soluție pornește de la agenda din Exemplul 8; ce scrie utilizatorul apare pe același rând cu întrebarea. La primele două soluții, opțiunea nouă este 4.*
 
-### 1. Numărăm cuvintele
+### 1. Schimbă telefonul
 
 ```python
-text = "la mere si la pere"
-nr = {}
-for cuvant in text.split():
-    nr[cuvant] = nr.get(cuvant, 0) + 1
-print(nr)
+agenda = {}
+optiune = -1
+while optiune != 0:
+    print("\n1. Adauga  2. Cauta  3. Arata tot  0. Iesire  4. Schimba telefon")
+    optiune = int(input("Alege: "))
+    if optiune == 1:
+        nume = input("Nume: ")
+        telefon = input("Telefon: ")
+        agenda[nume] = telefon
+        print("Salvat!")
+    elif optiune == 2:
+        nume = input("Pe cine cauti? ")
+        if nume in agenda:
+            print(f"{nume}: {agenda[nume]}")
+        else:
+            print("Nu exista in agenda.")
+    elif optiune == 3:
+        if len(agenda) == 0:
+            print("Agenda este goala.")
+        for nume, telefon in agenda.items():
+            print(f"- {nume}: {telefon}")
+    elif optiune == 4:
+        nume = input("Al cui telefon il schimbi? ")
+        if nume in agenda:
+            agenda[nume] = input("Telefon nou: ")
+            print("Schimbat!")
+        else:
+            print("Nu exista in agenda.")
+print("Pe curand!")
 ```
 
 **Ieșire:**
 ```text
-{'la': 2, 'mere': 1, 'si': 1, 'pere': 1}
+
+1. Adauga  2. Cauta  3. Arata tot  0. Iesire  4. Schimba telefon
+Alege: 1
+Nume: Ana
+Telefon: 0722111222
+Salvat!
+
+1. Adauga  2. Cauta  3. Arata tot  0. Iesire  4. Schimba telefon
+Alege: 4
+Al cui telefon il schimbi? Ana
+Telefon nou: 0799000111
+Schimbat!
+
+1. Adauga  2. Cauta  3. Arata tot  0. Iesire  4. Schimba telefon
+Alege: 4
+Al cui telefon il schimbi? Radu
+Nu exista in agenda.
+
+1. Adauga  2. Cauta  3. Arata tot  0. Iesire  4. Schimba telefon
+Alege: 3
+- Ana: 0799000111
+
+1. Adauga  2. Cauta  3. Arata tot  0. Iesire  4. Schimba telefon
+Alege: 0
+Pe curand!
 ```
 
-### 2. Inventar de joc
+Cu `nume in agenda` verificăm întâi că există; apoi `agenda[nume] = ...` înlocuiește valoarea veche.
+
+### 2. Câte contacte
 
 ```python
-inventar = {"sabie": 1, "potiune": 3}
-inventar["potiune"] += 2
-inventar["scut"] = 1
-inventar["potiune"] -= 1
-del inventar["sabie"]
-print(inventar)
+agenda = {}
+optiune = -1
+while optiune != 0:
+    print("\n1. Adauga  2. Cauta  3. Arata tot  0. Iesire  4. Cate contacte")
+    optiune = int(input("Alege: "))
+    if optiune == 1:
+        nume = input("Nume: ")
+        telefon = input("Telefon: ")
+        agenda[nume] = telefon
+        print("Salvat!")
+    elif optiune == 2:
+        nume = input("Pe cine cauti? ")
+        if nume in agenda:
+            print(f"{nume}: {agenda[nume]}")
+        else:
+            print("Nu exista in agenda.")
+    elif optiune == 3:
+        if len(agenda) == 0:
+            print("Agenda este goala.")
+        for nume, telefon in agenda.items():
+            print(f"- {nume}: {telefon}")
+    elif optiune == 4:
+        print(f"Ai {len(agenda)} contacte.")
+print("Pe curand!")
 ```
 
 **Ieșire:**
 ```text
-{'potiune': 4, 'scut': 1}
+
+1. Adauga  2. Cauta  3. Arata tot  0. Iesire  4. Cate contacte
+Alege: 1
+Nume: Ana
+Telefon: 0722111222
+Salvat!
+
+1. Adauga  2. Cauta  3. Arata tot  0. Iesire  4. Cate contacte
+Alege: 1
+Nume: Mihai
+Telefon: 0733444555
+Salvat!
+
+1. Adauga  2. Cauta  3. Arata tot  0. Iesire  4. Cate contacte
+Alege: 4
+Ai 2 contacte.
+
+1. Adauga  2. Cauta  3. Arata tot  0. Iesire  4. Cate contacte
+Alege: 0
+Pe curand!
 ```
 
-### 3. Agenda sortată
+`len(agenda)` numără perechile cheie – valoare, adică contactele.
+
+### 3. Contactele sortate
 
 ```python
-agenda = {"Radu": "0722", "Ana": "0721", "Mihai": "0723"}
-for nume in sorted(agenda):
-    print(nume, agenda[nume])
+agenda = {}
+optiune = -1
+while optiune != 0:
+    print("\n1. Adauga  2. Cauta  3. Arata tot  0. Iesire")
+    optiune = int(input("Alege: "))
+    if optiune == 1:
+        nume = input("Nume: ")
+        telefon = input("Telefon: ")
+        agenda[nume] = telefon
+        print("Salvat!")
+    elif optiune == 2:
+        nume = input("Pe cine cauti? ")
+        if nume in agenda:
+            print(f"{nume}: {agenda[nume]}")
+        else:
+            print("Nu exista in agenda.")
+    elif optiune == 3:
+        if len(agenda) == 0:
+            print("Agenda este goala.")
+        for nume in sorted(agenda):
+            print(f"- {nume}: {agenda[nume]}")
+print("Pe curand!")
 ```
 
 **Ieșire:**
 ```text
-Ana 0721
-Mihai 0723
-Radu 0722
+
+1. Adauga  2. Cauta  3. Arata tot  0. Iesire
+Alege: 1
+Nume: Mihai
+Telefon: 0733444555
+Salvat!
+
+1. Adauga  2. Cauta  3. Arata tot  0. Iesire
+Alege: 1
+Nume: Ana
+Telefon: 0722111222
+Salvat!
+
+1. Adauga  2. Cauta  3. Arata tot  0. Iesire
+Alege: 1
+Nume: Radu
+Telefon: 0744555666
+Salvat!
+
+1. Adauga  2. Cauta  3. Arata tot  0. Iesire
+Alege: 3
+- Ana: 0722111222
+- Mihai: 0733444555
+- Radu: 0744555666
+
+1. Adauga  2. Cauta  3. Arata tot  0. Iesire
+Alege: 0
+Pe curand!
 ```
+
+`sorted(agenda)` dă cheile (numele) în ordine alfabetică, iar telefonul îl luăm cu `agenda[nume]`.
 
 ### 4. Telefon și email
 
 ```python
-agenda = {
-    "Ana": {"telefon": "0721", "email": "ana@mail.ro"},
-    "Radu": {"telefon": "0722", "email": "radu@mail.ro"},
-}
-for nume, date in agenda.items():
-    print(nume, date["telefon"], date["email"])
+agenda = {}
+optiune = -1
+while optiune != 0:
+    print("\n1. Adauga  2. Cauta  3. Arata tot  0. Iesire")
+    optiune = int(input("Alege: "))
+    if optiune == 1:
+        nume = input("Nume: ")
+        telefon = input("Telefon: ")
+        email = input("Email: ")
+        agenda[nume] = {"telefon": telefon, "email": email}
+        print("Salvat!")
+    elif optiune == 2:
+        nume = input("Pe cine cauti? ")
+        if nume in agenda:
+            contact = agenda[nume]
+            print(f"{nume}: {contact['telefon']}, {contact['email']}")
+        else:
+            print("Nu exista in agenda.")
+    elif optiune == 3:
+        if len(agenda) == 0:
+            print("Agenda este goala.")
+        for nume, contact in agenda.items():
+            print(f"- {nume}: {contact['telefon']}, {contact['email']}")
+print("Pe curand!")
 ```
 
 **Ieșire:**
 ```text
-Ana 0721 ana@mail.ro
-Radu 0722 radu@mail.ro
+
+1. Adauga  2. Cauta  3. Arata tot  0. Iesire
+Alege: 1
+Nume: Ana
+Telefon: 0722111222
+Email: ana@mail.ro
+Salvat!
+
+1. Adauga  2. Cauta  3. Arata tot  0. Iesire
+Alege: 2
+Pe cine cauti? Ana
+Ana: 0722111222, ana@mail.ro
+
+1. Adauga  2. Cauta  3. Arata tot  0. Iesire
+Alege: 3
+- Ana: 0722111222, ana@mail.ro
+
+1. Adauga  2. Cauta  3. Arata tot  0. Iesire
+Alege: 0
+Pe curand!
 ```
+
+Valoarea fiecărui contact este acum un dicționar mic; citești părțile lui cu `contact['telefon']` și `contact['email']`. În f-string folosim ghilimele simple înăuntru, ca să nu încurcăm ghilimelele duble de afară.
 
 ---
 ## Ce urmează — Lecția 8

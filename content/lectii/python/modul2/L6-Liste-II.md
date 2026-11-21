@@ -353,13 +353,13 @@ Scrie un program care:
 
 ---
 
-## Bonus ★★★ — Provocare: Clasamentul fără repetări
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Clasamentul, mai multe statistici
+*Doar dacă ai terminat Complet. Lucrezi pe **propriul tău** clasament: păstrează-l și adaugă la sfârșit, folosind `jucatori` și `scoruri` (lista sortată de jucători).*
 
-- [ ] Afișează clasamentul **fără** numere duplicate  
-- [ ] Citește o propoziție și afișează cuvintele **sortate alfabetic**  
-- [ ] Face o **tablă de șah** 3×3 cu liste în liste și afișeaz-o frumos  
-- [ ] Găsește al **doilea cel mai mare** scor din listă  
+- [ ] Afișează **cel mai bun** și **cel mai slab** jucător, cu scorurile lor  
+- [ ] Afișează **al doilea cel mai mare** scor (dacă sunt cel puțin 2 jucători)  
+- [ ] Afișează jucătorii cu scorul **peste medie**  
+- [ ] Citește un nume și afișează **locul** lui în clasament (sau „Nu e în clasament”)
 
 ---
 
@@ -400,7 +400,7 @@ Scrie un program care:
 ## Temă
 1. Refă **Exemplele 1–8** în Thonny, scrise de mână.  
 2. Citește **5 nume** și afișează-le în ordine alfabetică, apoi în ordine inversă.  
-3. Fă o **tabelă de înmulțire 4×4** cu liste în liste și afișeaz-o.  
+3. Fă o **tabelă de înmulțire 4×4** cu liste în liste și afișează-o.  
 4. **Bonus:** citește o propoziție și afișează-i cuvintele cu **prima literă mare** (`.capitalize()`), lipite înapoi.  
 5. **Cuvintele propoziției.** Citește o propoziție și afișează câte cuvinte are, cuvântul **cel mai lung** (folosește `max` cu `key=len`) și propoziția cu cuvintele în **ordine inversă**.
 6. Salvează totul ca `Tema_P2_L6_Prenume_Nume.py`.
@@ -477,69 +477,94 @@ print("a,b".split[","])
 
 ## Răspunsuri la bonus
 
-*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit. Fiecare soluție se adaugă la sfârșitul clasamentului din Exemplul 8. Ieșirea arată doar partea nouă, după ce am introdus jucătorii Ana 50, Mihai 80, Sofia 65 și Radu 90.*
 
-### 1. Clasament fără duplicate
+### 1. Cel mai bun și cel mai slab
 
-```python
-scoruri = [50, 80, 50, 90, 80]
-unice = []
-for s in scoruri:
-    if s not in unice:
-        unice.append(s)
-unice.sort(reverse=True)
-print(unice)
-```
-
-**Ieșire:**
-```text
-[90, 80, 50]
-```
-
-### 2. Cuvintele sortate alfabetic
+Adaugă la sfârșitul programului:
 
 ```python
-propozitie = input("Scrie o propozitie: ")
-cuvinte = propozitie.split()
-cuvinte.sort()
-print(" ".join(cuvinte))
+print()
+print(f"Cel mai bun: {jucatori[0][1]} ({jucatori[0][0]} puncte)")
+print(f"Cel mai slab: {jucatori[-1][1]} ({jucatori[-1][0]} puncte)")
 ```
 
-**Ieșire:**
+**Ieșire (doar partea nouă):**
 ```text
-Scrie o propozitie: mere pere ananas banane
-ananas banane mere pere
+
+Cel mai bun: Radu (90 puncte)
+Cel mai slab: Ana (50 puncte)
 ```
 
-### 3. Tabla de șah 3×3
+Lista e sortată descrescător, deci primul element e cel mai bun și ultimul (`[-1]`) cel mai slab.
+
+### 2. Al doilea cel mai mare scor
+
+Adaugă la sfârșitul programului:
 
 ```python
-tabla = [["X", "O", "X"],
-         ["O", "X", "O"],
-         ["X", "O", "X"]]
-for rand in tabla:
-    print(" ".join(rand))
+print()
+if len(jucatori) >= 2:
+    print("Al doilea scor ca marime:", jucatori[1][0])
+else:
+    print("Ai nevoie de cel putin 2 jucatori.")
 ```
 
-**Ieșire:**
+**Ieșire (doar partea nouă):**
 ```text
-X O X
-O X O
-X O X
+
+Al doilea scor ca marime: 80
 ```
 
-### 4. Al doilea cel mai mare scor
+Locul al doilea e la indexul 1. `if len(jucatori) >= 2` ne ferește de eroarea `IndexError` când e un singur jucător.
+
+### 3. Scor peste medie
+
+Adaugă la sfârșitul programului:
 
 ```python
-scoruri = [50, 80, 90, 70]
-ordonate = sorted(scoruri)
-print(ordonate[-2])
+print()
+media = sum(scoruri) / len(scoruri)
+print("Peste medie:")
+for j in jucatori:
+    if j[0] > media:
+        print(f"- {j[1]} ({j[0]})")
 ```
 
-**Ieșire:**
+**Ieșire (doar partea nouă):**
 ```text
-80
+
+Peste medie:
+- Radu (90)
+- Mihai (80)
 ```
+
+Media este 71.25, deci peste medie sunt Radu (90) și Mihai (80). Pentru fiecare listă mică `j`, `j[0]` este scorul și `j[1]` numele.
+
+### 4. Locul unui nume
+
+Adaugă la sfârșitul programului:
+
+```python
+print()
+cautat = input("Ce nume cauti? ")
+gasit = False
+for loc in range(len(jucatori)):
+    if jucatori[loc][1] == cautat:
+        print(f"{cautat} este pe locul {loc + 1}.")
+        gasit = True
+if not gasit:
+    print("Nu e in clasament.")
+```
+
+**Ieșire (doar partea nouă):**
+```text
+
+Ce nume cauti? Sofia
+Sofia este pe locul 3.
+```
+
+`gasit` rămâne `False` dacă bucla nu găsește numele, iar atunci se afișează mesajul final.
 
 ---
 ## Ce urmează — Lecția 7

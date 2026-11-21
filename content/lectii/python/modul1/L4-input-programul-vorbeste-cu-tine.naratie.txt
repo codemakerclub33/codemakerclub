@@ -20,7 +20,7 @@ Greșeli frecvente. Programul stă: nu ai dat click în Shell. Type Error: ai li
 
 Proiectul de azi. Interviul. Programul întreabă numele, vârsta și un lucru preferat. Minim înseamnă un mesaj cu numele și vârsta. Complet înseamnă și un calcul, și un mesaj final.
 
-Provocare, trei stele. Calculatoare rapide. Citești două numere și afișezi media lor, transformi o temperatură din Celsius în Fahrenheit și afișezi dublul, triplul și pătratul unui număr.
+Provocare, trei stele. Interviul, mai lung. Lucrezi pe propriul tău interviu și adaugi patru lucruri, la sfârșit. Intervievezi încă o persoană și afișezi media celor două vârste. Calculezi anul nașterii tale. Întrebi câte ore joci pe zi și afișezi orele pe săptămână. Și pui jocul preferat într-un chenar cât lungimea numelui lui.
 
 Recapitulare. Input afișează întrebarea și dă răspunsul ca text. Pentru numere folosim int de input sau float de input. Răspunsul se scrie în Shell, urmat de Enter. Litere unde se cere număr dau Value Error.
 

@@ -331,12 +331,13 @@ Bifează ce poți face **singur**:
 
 ---
 
-## Bonus ★★★ — Provocare: Modul tău secret
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Meniul tău, cu surprize
+*Doar dacă ai terminat Complet. Lucrezi pe **propriul tău** meniu din Exemplul 8: păstrează-l și îmbunătățește-l.*
 
-- [ ] Adaugă un al șaptelea mod, luat din lecția 8: **Poarta parcului**, cu `and` și `or`  
-- [ ] La Oracol, afișează și un mesaj special dacă numărul norocos este 6  
+- [ ] Adaugă un al șaptelea mod, luat din lecția 8: **Poarta parcului**, cu `and` și `or` (nu uita să adaugi linia în meniu și să schimbi „de la 1 la 6”)  
+- [ ] La Oracol, păstrează numărul norocos într-o variabilă și afișează un mesaj special dacă este 6  
 - [ ] Afișează la sfârșit, în orice mod, mesajul „La revedere,” urmat de numele tău  
+- [ ] Fă titlul meniului într-un chenar de `=` cât lungimea titlului (`"=" * len(titlu)`), sus și jos
 
 ---
 
@@ -380,59 +381,211 @@ Bifează ce poți face **singur**:
 3. Scrie pe o foaie **cinci lucruri** pe care le poți face acum cu Python și nu le puteai face acum 10 lecții.  
 4. Salvează totul ca `Tema_P1_L10_Prenume_Nume.py`.
 
+### Exemple pentru acasă
+Două exemple în plus, de rulat și de înțeles singur.
+
+#### Acasă 1 — Răspuns da/nu, în orice fel
+
+```python
+raspuns = input("Vrei sa continui? (da/nu) ").lower().strip()
+if raspuns == "da":
+    print("Continuam!")
+else:
+    print("Gata, ne oprim.")
+```
+
+**Ieșire:**
+```text
+Vrei sa continui? (da/nu)  DA 
+Continuam!
+```
+
+`.lower()` face literele mici, iar `.strip()` șterge spațiile din jur. Așa programul înțelege și `DA`, și ` Da `.
+
+#### Acasă 2 — Verificăm alegerea din meniu
+
+```python
+alegere = input("Alege 1, 2 sau 3: ")
+if alegere == "1" or alegere == "2" or alegere == "3":
+    print("Ai ales", alegere)
+else:
+    print("Alegere gresita")
+```
+
+**Ieșire:**
+```text
+Alege 1, 2 sau 3: 2
+Ai ales 2
+```
+Dacă alegerea nu e `"1"`, `"2"` sau `"3"`, programul spune că alegerea e greșită; la fel face `else` din meniul tău.
+
+### Încă două exerciții
+
+**Ce afișează?** Gândește-te și scrie pe foaie ce afișează programul, apoi rulează-l ca să verifici:
+
+```python
+alegere = "2"
+if alegere == 2:
+    print("A")
+elif alegere == "2":
+    print("B")
+else:
+    print("C")
+```
+
+**Găsește greșelile.** Programul are 4 greșeli. Rescrie-l corect și explică fiecare corecție:
+
+```text
+nume = input("Cum te cheama? ")
+alegere = input("Alege 1 sau 2: ")
+if alegere = "1":
+    print("Salut," nume)
+elif alegere == "2"
+print("La revedere")
+else:
+    print("Nu exista")
+```
+
 ---
 
 ## Răspunsuri la bonus
 
-*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit. Meniul din Exemplul 8 e lung, așa că arătăm doar bucata care se schimbă și unde se pune. Ieșirea e de la meniul întreg, cu numele Ana.*
 
-### 1. Poarta parcului
+### 1. Modul 7: Poarta parcului
+
+Trei schimbări: (a) adaugă în meniu, după linia `print("6. Chestionarul")`, linia de mai jos; (b) schimbă `Alege un numar de la 1 la 6: ` în `Alege un numar de la 1 la 7: `; (c) pune modul nou înainte de ultimul `else`.
 
 ```python
-varsta = int(input("Cati ani ai? "))
-insotit = input("Esti cu un adult? (da/nu) ")
-if varsta >= 12 or (varsta >= 6 and insotit == "da"):
-    print("Poti intra in parc!")
-else:
-    print("Nu poti intra.")
+# (a) in meniu
+print("7. Poarta parcului")
+
+# (c) inainte de ultimul else
+elif alegere == "7":
+    varsta = int(input("Cati ani ai? "))
+    inaltime = int(input("Cat de inalt esti (in cm)? "))
+    adult = input("Esti insotit de un adult? (da/nu) ").lower()
+    if varsta >= 8 and inaltime >= 120:
+        print("Montagne rusesti: DA")
+    else:
+        print("Montagne rusesti: NU")
+    if inaltime >= 100 or adult == "da":
+        print("Carusel: DA")
+    else:
+        print("Carusel: NU")
 ```
 
 **Ieșire:**
 ```text
-Cati ani ai? 8
-Esti cu un adult? (da/nu) da
-Poti intra in parc!
+Cum te cheama? Ana
+============================
+Meniul de proiecte al lui Ana
+============================
+1. Fisa de jucator
+2. Calculatorul
+3. Oracolul
+4. Interviul
+5. Laboratorul de cuvinte
+6. Chestionarul
+7. Poarta parcului
+Alege un numar de la 1 la 7: 7
+----------------------------
+Cati ani ai? 9
+Cat de inalt esti (in cm)? 130
+Esti insotit de un adult? (da/nu) da
+Montagne rusesti: DA
+Carusel: DA
 ```
 
-### 2. Mesaj special la numărul 6
+### 2. Mesaj special la Oracol
+
+În modul 3, înlocuiește linia `print("Numarul tau norocos:", random.randint(1, 6))` cu liniile de mai jos (au aceeași indentare ca `print` de dinainte):
 
 ```python
-import random
-numar = random.randint(1, 6)
-print("Numarul tau norocos:", numar)
-if numar == 6:
-    print("Ai numarul de aur! Vor veni vesti bune!")
+    numar = random.randint(1, 6)
+    print("Numarul tau norocos:", numar)
+    if numar == 6:
+        print("Ai numarul de aur! Vor veni vesti bune!")
 ```
 
 **Ieșire:**
 ```text
+Cum te cheama? Ana
+============================
+Meniul de proiecte al lui Ana
+============================
+1. Fisa de jucator
+2. Calculatorul
+3. Oracolul
+4. Interviul
+5. Laboratorul de cuvinte
+6. Chestionarul
+Alege un numar de la 1 la 6: 3
+----------------------------
+Pune o intrebare cu raspuns da/nu: Voi lua nota 10?
+Raspunsul oracolului: Poate...
 Numarul tau norocos: 6
 Ai numarul de aur! Vor veni vesti bune!
 ```
 
-*Numerele sunt aleatoare, deci la tine ieșirea poate fi alta.*
-
 ### 3. La revedere
 
+Adaugă la **sfârșitul** programului, lipită de marginea din stânga (fără spații în față), după ultimul `else`:
+
 ```python
-nume = input("Cum te cheama? ")
 print("La revedere,", nume)
 ```
 
 **Ieșire:**
 ```text
 Cum te cheama? Ana
+============================
+Meniul de proiecte al lui Ana
+============================
+1. Fisa de jucator
+2. Calculatorul
+3. Oracolul
+4. Interviul
+5. Laboratorul de cuvinte
+6. Chestionarul
+Alege un numar de la 1 la 6: 5
+----------------------------
+Cu litere mari: ANA
+Prima litera:   A
+Invers:         anA
+Lungime:        3
 La revedere, Ana
+```
+
+### 4. Titlul în chenar
+
+Înlocuiește cele trei linii de la începutul meniului (`print("=" * 28)`, titlul și iar `print("=" * 28)`) cu:
+
+```python
+titlu = f"Meniul de proiecte al lui {nume}"
+print("=" * len(titlu))
+print(titlu)
+print("=" * len(titlu))
+```
+
+**Ieșire:**
+```text
+Cum te cheama? Ana
+=============================
+Meniul de proiecte al lui Ana
+=============================
+1. Fisa de jucator
+2. Calculatorul
+3. Oracolul
+4. Interviul
+5. Laboratorul de cuvinte
+6. Chestionarul
+Alege un numar de la 1 la 6: 5
+----------------------------
+Cu litere mari: ANA
+Prima litera:   A
+Invers:         anA
+Lungime:        3
 ```
 
 ---

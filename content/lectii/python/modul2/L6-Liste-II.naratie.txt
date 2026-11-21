@@ -24,7 +24,7 @@ Greșeli frecvente. Sortate egal lista punct sort dă None, pentru că sort nu r
 
 Proiectul de azi. Clasamentul. Minim înseamnă scoruri sortate. Complet înseamnă nume și scoruri citite, clasament, podium și medie.
 
-Provocare, trei stele. Clasamentul fără repetări. Doar dacă ai terminat varianta completă. Afișezi clasamentul fără numere duplicate. Citești o propoziție și afișezi cuvintele sortate alfabetic. Faci o tablă de șah de trei pe trei, cu liste în liste. Găsești al doilea cel mai mare scor din listă.
+Provocare, trei stele. Clasamentul, mai multe statistici. Doar dacă ai terminat varianta completă. Lucrezi pe propriul tău clasament și adaugi la sfârșit patru lucruri. Cel mai bun și cel mai slab jucător, cu scorurile lor. Al doilea cel mai mare scor. Jucătorii cu scor peste medie. Și locul unui nume citit de la tastatură, sau un mesaj dacă numele nu este în clasament.
 
 Recapitulare. Sort sortează lista pe loc, sorted face o listă nouă. Plus lipește liste. Split face din text o listă, join face invers. O listă poate conține alte liste. Pentru o copie folosești copy.
 

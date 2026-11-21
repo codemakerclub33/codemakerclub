@@ -20,7 +20,7 @@ Greșeli frecvente. Syntax Error la if x egal cinci: ai folosit un singur egal �
 
 Proiectul de azi. Chestionarul, cu cel puțin patru întrebări, una cu număr și una cu text, și un scor. Minim înseamnă if și else. Complet înseamnă elif și scor.
 
-Provocare, trei stele. Decizii mai grele. Afișezi cel mai mare dintre trei numere, transformi un număr de la unu la șapte în numele zilei și verifici dacă un an este bisect.
+Provocare, trei stele. Chestionarul, runda a doua. Lucrezi pe propriul tău chestionar și îl îmbunătățești în patru feluri. O întrebare nouă, cu număr, la care programul spune prea mic sau prea mare. O întrebare de două puncte. Un verdict final în patru trepte. Și scorul afișat și în procente, cu o zecimală.
 
 Recapitulare. Comparațiile dau True sau False. If execută blocul indentat doar dacă este adevărată condiția. Else se execută când este falsă. Elif adaugă variante. Indentarea, cu patru spații, arată ce aparține blocului. Egal egal compară, un singur egal pune în cutie.
 

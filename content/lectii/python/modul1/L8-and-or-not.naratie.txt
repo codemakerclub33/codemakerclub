@@ -18,7 +18,7 @@ Greșeli frecvente. If x egal unu or doi se comportă ciudat, pentru că doi sin
 
 Proiectul de azi. Poarta parcului de distracții. Programul întreabă vârsta, înălțimea și dacă are un adult alături. Minim înseamnă o condiție cu and și una cu or. Complet înseamnă și not, un interval și mai multe reguli.
 
-Provocare, trei stele. Semaforul deștept. Verifici dacă un număr se împarte și la trei, și la cinci, faci un semafor deștept care lasă pietonul să treacă doar când lumina este verde și nu vine nicio mașină, și faci o verificare de parolă cu cel puțin patru reguli.
+Provocare, trei stele. Poarta parcului, mai multe atracții. Lucrezi pe propria ta poartă a parcului și adaugi patru lucruri. Trenulețul, pentru cine nu are peste doisprezece ani. Roata mare, doar între șase și doisprezece ani. Un bilet de familie, pentru cine este însoțit de un adult sau are cel puțin optsprezece ani. Și un contor care numără la câte atracții poți intra.
 
 Recapitulare. A and B este adevărat când amândouă sunt adevărate. A or B este adevărat când cel puțin una este adevărată. Not inversează. Ordinea este not, and, or. Intervalele se scriu scurt.
 

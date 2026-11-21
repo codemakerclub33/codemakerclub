@@ -18,7 +18,7 @@ Greșeli frecvente. Se afișează acoladele în loc de nume: ai uitat f înainte
 
 Proiectul de azi. Laboratorul de cuvinte. Minim înseamnă numele cu litere mari, prima literă și lungimea. Complet înseamnă și ultima literă, textul inversat și câte litere a are cuvântul, toate afișate cu f-string.
 
-Provocare, trei stele. Cuvinte magice. Afișezi inițiala unui nume urmată de punct, verifici dacă un cuvânt este palindrom și afișezi un preț cu două zecimale și cuvântul lei, într-un f-string.
+Provocare, trei stele. Laboratorul de cuvinte, încă patru experimente. Lucrezi pe propriul tău laborator și adaugi la sfârșit patru lucruri. Inițiala numelui, urmată de punct. Dacă numele este palindrom, adică se citește la fel și invers. Un nume de cod, făcut din primele trei litere și lungimea numelui. Și numele cu fiecare a înlocuit printr-o steluță.
 
 Recapitulare. F-string construiește un text cu valori din variabile. Metodele de text nu schimbă originalul. Primul index este zero, ultimul este minus unu. Paranteze pătrate cu două puncte taie bucăți de text.
 

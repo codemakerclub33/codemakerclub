@@ -329,13 +329,13 @@ Apelează-le pe toate cu cel puțin 2 valori diferite.
 
 ---
 
-## Bonus ★★★ — Provocare: Atelierul de funcții
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Cutia cu unelte, mai multe unelte
+*Doar dacă ai terminat Complet. Lucrezi în **propria ta** cutie cu unelte: păstrează-o și adaugă la sfârșit patru unelte noi. Apelează fiecare unealtă sub un `titlu(...)`.*
 
-- [ ] O funcție `este_prim(n)` care returnează `True` sau `False`  
-- [ ] O funcție `media(a, b, c)` care returnează media a trei numere  
-- [ ] O funcție care desenează un **triunghi** de `*` cu înălțimea dată  
-- [ ] O funcție care întoarce un **text invers**  
+- [ ] `media(a, b, c)`: returnează media a trei numere  
+- [ ] `este_prim(n)`: returnează `True` sau `False`  
+- [ ] `triunghi(n)`: desenează un triunghi de `*` cu înălțimea `n` (fără `return`)  
+- [ ] `invers(text)`: returnează textul scris invers
 
 ---
 
@@ -466,9 +466,35 @@ print(Rezultat)
 
 ## Răspunsuri la bonus
 
-*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit. Fiecare soluție se adaugă la sfârșitul cutiei cu unelte din Exemplul 8, care are deja funcția `titlu`. Ieșirea arată doar partea nouă.*
 
-### 1. `este_prim(n)`
+### 1. `media`
+
+Adaugă la sfârșitul programului:
+
+```python
+def media(a, b, c):
+    return (a + b + c) / 3
+
+titlu("Media")
+print("Media lui 4, 9, 5:", media(4, 9, 5))
+print("Media lui 10, 10, 10:", media(10, 10, 10))
+```
+
+**Ieșire (doar partea nouă):**
+```text
+=========
+  MEDIA
+=========
+Media lui 4, 9, 5: 6.0
+Media lui 10, 10, 10: 10.0
+```
+
+Funcția doar **returnează** rezultatul; `print` îl afișează în afara ei.
+
+### 2. `este_prim`
+
+Adaugă la sfârșitul programului:
 
 ```python
 def este_prim(n):
@@ -479,61 +505,76 @@ def este_prim(n):
             return False
     return True
 
-print(este_prim(7))
-print(este_prim(10))
+titlu("Numere prime")
+print("7 este prim?", este_prim(7))
+print("8 este prim?", este_prim(8))
+print("1 este prim?", este_prim(1))
 ```
 
-**Ieșire:**
+**Ieșire (doar partea nouă):**
 ```text
-True
-False
+================
+  NUMERE PRIME
+================
+7 este prim? True
+8 este prim? False
+1 este prim? False
 ```
 
-### 2. `media(a, b, c)`
+`return False` iese din funcție imediat ce găsește un divizor. Dacă bucla se termină fără divizor, ajunge la `return True`.
+
+### 3. `triunghi`
+
+Adaugă la sfârșitul programului:
 
 ```python
-def media(a, b, c):
-    return (a + b + c) / 3
-
-print(media(4, 6, 8))
-```
-
-**Ieșire:**
-```text
-6.0
-```
-
-### 3. Triunghi cu înălțimea dată
-
-```python
-def triunghi(inaltime):
-    for i in range(1, inaltime + 1):
+def triunghi(n):
+    for i in range(1, n + 1):
         print("*" * i)
 
+titlu("Triunghi")
 triunghi(4)
+triunghi(2)
 ```
 
-**Ieșire:**
+**Ieșire (doar partea nouă):**
 ```text
+============
+  TRIUNGHI
+============
 *
 **
 ***
 ****
+*
+**
 ```
 
-### 4. Text invers
+Funcția desenează direct, deci n-are nevoie de `return`.
+
+### 4. `invers`
+
+Adaugă la sfârșitul programului:
 
 ```python
 def invers(text):
     return text[::-1]
 
-print(invers("python"))
+titlu("Text invers")
+print(invers("Python"))
+print(invers("robot"))
 ```
 
-**Ieșire:**
+**Ieșire (doar partea nouă):**
 ```text
-nohtyp
+===============
+  TEXT INVERS
+===============
+nohtyP
+tobor
 ```
+
+`text[::-1]` ia tot textul, de la coadă la cap.
 
 ---
 ## Ce urmează — Lecția 9

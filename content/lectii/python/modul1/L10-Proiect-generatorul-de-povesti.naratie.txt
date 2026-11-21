@@ -20,7 +20,7 @@ Greșeli frecvente. Meniul nu face nimic: ai comparat cu număr, nu cu text. Ind
 
 Proiectul de azi. Meniul meu de proiecte. Minim înseamnă un meniu cu trei moduri. Complet înseamnă și celelalte trei moduri, plus o modificare a ta la fiecare.
 
-Provocare, trei stele. Modul tău secret. Adaugi un al șaptelea mod, Poarta parcului din lecția opt. La oracol afișezi un mesaj special dacă numărul norocos este șase. Și afișezi la sfârșit, în orice mod, un mesaj de rămas bun cu numele tău.
+Provocare, trei stele. Meniul tău, cu surprize. Lucrezi pe propriul tău meniu și adaugi patru lucruri. Un al șaptelea mod, Poarta parcului, din lecția opt. La oracol, un mesaj special dacă numărul norocos este șase. Un mesaj de rămas bun cu numele tău, la sfârșit. Și titlul meniului într-un chenar cât lungimea titlului.
 
 Recapitulare. Print, input, variabile și tipuri. Operatori și ordinea lor. F-string și metode de text. If, elif, else. And, or, not. Import random, randint, choice și liste simple. Un meniu cu input și elif pune proiectele laolaltă.
 

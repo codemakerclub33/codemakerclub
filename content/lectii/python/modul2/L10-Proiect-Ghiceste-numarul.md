@@ -456,13 +456,13 @@ Scrie jocul complet, cu cuvintele și ideile tale. Trebuie să aibă:
 
 ---
 
-## Bonus ★★★ — Provocare: Rolurile inversate
-*Doar dacă ai terminat Complet.*
+## Bonus ★★★ — Provocare: Jocul tău, cu surprize
+*Doar dacă ai terminat Complet. Lucrezi în **propriul tău** joc „Ghicește numărul”: păstrează-l și adaugă, pe rând, fiecare idee, ca funcții noi sau schimbări în `main()`.*
 
-- [ ] Rolurile se inversează: **tu te gândești** la un număr, iar **calculatorul** încearcă să-l ghicească (strategia mijlocului, ca în Exemplul 7)  
-- [ ] Salvează cel mai bun scor într-o listă și afișează-l la început  
-- [ ] Adaugă un mod pentru **doi jucători** (unul scrie secretul, altul ghicește)  
-- [ ] Dă un **titlu** în funcție de scor: sub 5 încercări „Geniu”, sub 8 „Bravo”  
+- [ ] **Rolurile inversate**: tu te gândești la un număr, iar calculatorul îl ghicește (strategia mijlocului, ca în Exemplul 7). Pune-l ca mod în `main()`  
+- [ ] Afișează **cel mai bun scor** (din lista `scoruri`) la începutul fiecărei runde, după prima rundă câștigată  
+- [ ] Adaugă un mod pentru **doi jucători**: unul scrie secretul, celălalt ghicește (refolosește `citeste_numar`)  
+- [ ] După o rundă câștigată, afișează un **titlu** după scor: sub 5 încercări „Geniu”, sub 8 „Bravo”, altfel „Mai incearca”
 
 ---
 
@@ -580,110 +580,167 @@ for nr in range(1, 8)
 
 ## Răspunsuri la bonus
 
-*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit.*
+*Uită-te aici doar după ce ai încercat singur. Există mai multe soluții bune; a ta poate arăta diferit. Jocul din Exemplul 8 e lung, așa că arătăm doar funcțiile noi și noua variantă a lui `main()`. Funcțiile noi se pun înainte de `main()`, iar ieșirea e de la jocul întreg.*
 
 ### 1. Calculatorul ghicește
 
+Pune funcția nouă înainte de `main()`, apoi înlocuiește în `main()` linia `rezultat = joaca_runda(100, 7)` cu alegerea modului:
+
 ```python
-mic = 1
-mare = 100
-incercari = 0
-print("Gandeste-te la un numar intre 1 si 100.")
-while True:
-    ghici = (mic + mare) // 2
-    incercari += 1
-    raspuns = input(f"Este {ghici}? (da / mai mic / mai mare) ")
-    if raspuns == "da":
-        print("Am ghicit din", incercari, "incercari!")
-        break
-    elif raspuns == "mai mic":
-        mare = ghici - 1
-    else:
-        mic = ghici + 1
+def calculatorul_ghiceste(maxim):
+    print(f"Gandeste-te la un numar intre 1 si {maxim}.")
+    mic = 1
+    mare = maxim
+    incercari = 0
+    while mic <= mare:
+        ghici = (mic + mare) // 2
+        incercari += 1
+        raspuns = input(f"Este {ghici}? (da / mai mic / mai mare) ").lower()
+        if raspuns == "da":
+            print(f"Am ghicit din {incercari} incercari!")
+            return incercari
+        elif raspuns == "mai mic":
+            mare = ghici - 1
+        else:
+            mic = ghici + 1
+    print("Ai incurcat raspunsurile!")
+    return None
+
+# in main(), in locul liniei cu joaca_runda:
+        mod = input("1 = tu ghicesti, 2 = calculatorul ghiceste: ")
+        if mod == "2":
+            rezultat = calculatorul_ghiceste(100)
+        else:
+            rezultat = joaca_runda(100, 7)
 ```
 
 **Ieșire:**
 ```text
+=== GHICESTE NUMARUL ===
+1 = tu ghicesti, 2 = calculatorul ghiceste: 2
 Gandeste-te la un numar intre 1 si 100.
 Este 50? (da / mai mic / mai mare) mai mic
-Este 25? (da / mai mic / mai mare) mai mare
-Este 37? (da / mai mic / mai mare) da
-Am ghicit din 3 incercari!
+Este 25? (da / mai mic / mai mare) mai mic
+Este 12? (da / mai mic / mai mare) mai mare
+Este 18? (da / mai mic / mai mare) da
+Am ghicit din 4 incercari!
+Mai joci? (da/nu) nu
+-------------------------
+Runde castigate: 1
+Cel mai bun scor: 4 incercari
+Media: 4.0 incercari
 ```
 
-### 2. Cel mai bun scor, afișat la început
+Calculatorul taie intervalul în două la fiecare pas. Numărul tău este 18, deci îi răspunzi „mai mic”, „mai mic”, „mai mare”, „da”. Scorul (4) intră în aceeași listă `scoruri`.
+
+### 2. Cel mai bun scor, la începutul rundei
+
+În `main()`, înainte de linia cu `joaca_runda`, adaugă:
 
 ```python
-scoruri = [6, 4]
-if len(scoruri) > 0:
-    print("Cel mai bun scor:", min(scoruri), "incercari")
-else:
-    print("Nu a jucat nimeni inca.")
-
-# dupa o runda castigata in 5 incercari:
-scoruri.append(5)
-print("Cel mai bun scor acum:", min(scoruri), "incercari")
+        if len(scoruri) > 0:
+            print("Cel mai bun scor pana acum:", min(scoruri), "incercari")
+        rezultat = joaca_runda(100, 7)
 ```
 
-**Ieșire:**
+**Ieșire (exemplu, secretul e aleator):**
 ```text
-Cel mai bun scor: 4 incercari
-Cel mai bun scor acum: 4 incercari
+=== GHICESTE NUMARUL ===
+M-am gandit la un numar intre 1 si 100. Ai 7 incercari.
+Incercarea 1: 18
+Bravo! Ai ghicit din 1 incercari!
+Mai joci? (da/nu) da
+Cel mai bun scor pana acum: 1 incercari
+M-am gandit la un numar intre 1 si 100. Ai 7 incercari.
+Incercarea 1: 18
+Bravo! Ai ghicit din 1 incercari!
+Mai joci? (da/nu) nu
+-------------------------
+Runde castigate: 2
+Cel mai bun scor: 1 incercari
+Media: 1.0 incercari
 ```
+
+La prima rundă lista `scoruri` e goală, deci nu se afișează nimic; de la a doua rundă apare cel mai bun scor. (În exemplu, secretul a fost 18 de ambele ori, ca să se vadă clar.)
 
 ### 3. Doi jucători
 
+Pune funcția nouă înainte de `main()`, apoi înlocuiește în `main()` linia `rezultat = joaca_runda(100, 7)`:
+
 ```python
-secret = int(input("Jucatorul 1, scrie numarul secret (1-100): "))
-# in joc real poti scrie print("\n" * 20), ca sa nu se mai vada secretul
-print("-" * 30)
-ghicit = False
-for nr in range(1, 8):
-    ghici = int(input(f"Jucatorul 2, incercarea {nr}: "))
-    if ghici == secret:
-        print("Bravo! Ai ghicit!")
-        ghicit = True
-        break
-    elif ghici < secret:
-        print("Prea mic!")
-    else:
-        print("Prea mare!")
-if not ghicit:
+def joaca_runda_doi(maxim, incercari):
+    secret = citeste_numar(f"Jucatorul 1, scrie numarul secret (1-{maxim}): ", 1, maxim)
+    print("-" * 30)
+    for nr in range(1, incercari + 1):
+        ghici = citeste_numar(f"Jucatorul 2, incercarea {nr}: ", 1, maxim)
+        if ghici == secret:
+            print(f"Bravo! Ai ghicit din {nr} incercari!")
+            return nr
+        elif ghici < secret:
+            print("Prea mic!")
+        else:
+            print("Prea mare!")
     print("Jucatorul 1 castiga! Numarul era", secret)
+    return None
+
+# in main(), in locul liniei cu joaca_runda:
+        mod = input("1 = un jucator, 2 = doi jucatori: ")
+        if mod == "2":
+            rezultat = joaca_runda_doi(100, 7)
+        else:
+            rezultat = joaca_runda(100, 7)
 ```
 
 **Ieșire:**
 ```text
-Jucatorul 1, scrie numarul secret (1-100): 42
+=== GHICESTE NUMARUL ===
+1 = un jucator, 2 = doi jucatori: 2
+Jucatorul 1, scrie numarul secret (1-100): 18
 ------------------------------
 Jucatorul 2, incercarea 1: 50
 Prea mare!
-Jucatorul 2, incercarea 2: 30
-Prea mic!
-Jucatorul 2, incercarea 3: 42
-Bravo! Ai ghicit!
+Jucatorul 2, incercarea 2: 18
+Bravo! Ai ghicit din 2 incercari!
+Mai joci? (da/nu) nu
+-------------------------
+Runde castigate: 1
+Cel mai bun scor: 2 incercari
+Media: 2.0 incercari
 ```
+
+Funcția refolosește `citeste_numar`, deci ambii jucători sunt protejați de numere greșite. Ca să nu se vadă secretul, jucătorii pot lăsa câteva rânduri goale între ei.
 
 ### 4. Titlu după scor
 
+Pune funcția nouă înainte de `main()`, apoi adaugă în `main()` linia cu `Titlu:`, imediat după `scoruri.append(rezultat)`:
+
 ```python
-def titlu(incercari):
+def titlu_dupa_scor(incercari):
     if incercari < 5:
         return "Geniu"
     elif incercari < 8:
         return "Bravo"
     return "Mai incearca"
 
-for scor in [3, 6, 9]:
-    print(scor, "incercari:", titlu(scor))
+# in main(), dupa scoruri.append(rezultat):
+            print("Titlu:", titlu_dupa_scor(rezultat))
 ```
 
-**Ieșire:**
+**Ieșire (exemplu, secretul e aleator):**
 ```text
-3 incercari: Geniu
-6 incercari: Bravo
-9 incercari: Mai incearca
+=== GHICESTE NUMARUL ===
+M-am gandit la un numar intre 1 si 100. Ai 7 incercari.
+Incercarea 1: 18
+Bravo! Ai ghicit din 1 incercari!
+Titlu: Geniu
+Mai joci? (da/nu) nu
+-------------------------
+Runde castigate: 1
+Cel mai bun scor: 1 incercari
+Media: 1.0 incercari
 ```
+
+Cu 1 încercare titlul este „Geniu”. Cine ghicește în 8 încercări sau mai mult primește „Mai incearca”.
 
 ---
 ## Ce urmează — Modulul 3

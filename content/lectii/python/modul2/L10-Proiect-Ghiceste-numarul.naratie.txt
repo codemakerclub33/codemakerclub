@@ -26,7 +26,7 @@ Greșeli frecvente. Type Error: ai comparat textul din input cu un număr, deci 
 
 Proiectul de azi. Ghicește numărul. Minim înseamnă o rundă cu indicii. Complet înseamnă încercări limitate, validare, runde și scor.
 
-Provocare, trei stele. Rolurile inversate. Doar dacă ai terminat varianta completă. Tu te gândești la un număr, iar calculatorul încearcă să-l ghicească, cu strategia mijlocului. Salvezi cel mai bun scor într-o listă și îl afișezi la început. Adaugi un mod pentru doi jucători. Dai un titlu după scor: sub cinci încercări, Geniu, sub opt, Bravo.
+Provocare, trei stele. Jocul tău, cu surprize. Doar dacă ai terminat varianta completă. Lucrezi în propriul tău joc și adaugi patru idei, ca funcții noi sau schimbări în main. Rolurile inversate: tu te gândești la un număr, iar calculatorul îl ghicește, cu strategia mijlocului. Cel mai bun scor, afișat la începutul fiecărei runde. Un mod pentru doi jucători, care refolosește funcția de citire. Și un titlu după scor: sub cinci încercări, Geniu, sub opt, Bravo.
 
 Recapitulare. Jocul are secret, încercări, indicii și scor. Randint alege secretul, o singură dată pe rundă. For și range dau încercări limitate. Citirea se validează cu isdigit într-o funcție reutilizabilă. Statisticile se calculează cu o listă.
 
